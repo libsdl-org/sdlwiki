@@ -1,0 +1,29 @@
+<!-- # Please edit system and help pages ONLY in the master wiki! -->
+<!-- # For more information, please see MoinMoin:MoinDev/Translation. -->
+<!-- #master-page:FrontPage -->
+<!-- format wiki -->
+<!-- language en -->
+<!-- pragma section-numbers off -->
+= Simple DirectMedia Layer 1.3 Wiki =
+The Simple DirectMedia Layer Library (SDL) is designed to make it easy to write portable multimedia application that run on Linux, *BSD, MacOS, Win32 and BeOS. By presenting a single source code level API to your application, SDL enables access to the various native high-performance media interfaces for video, audio, etc.
+
+Interesting starting points:
+
+* RecentChanges: see where people are currently working
+* WikiSandBox: feel free to change this page and experiment with editing
+* FindPage: search or browse the database in various ways
+* HelpOnMoinWikiSyntax: quick access to wiki markup
+* SiteNavigation: get an overview over this site and what it contains
+
+== How to use this site ==
+A Wiki is a collaborative site, anyone can contribute and share:
+
+* Edit any page by pressing '''<<GetText(Edit)>>''' at the top or the bottom of the page
+* Create a link to another page with joined capitalized words (like WikiSandBox) or with ```[[words in brackets]]```
+* Search for page titles or text within pages using the search box at the top of any page
+* See HelpForBeginners to get you going, HelpContents for all help pages.
+* For customizing MoinMoin's language support see HelpOnLanguages.
+
+To learn more about what a WikiWikiWeb is, read about MoinMoin:WhyWikiWorks and the MoinMoin:WikiNature. Also, consult the HelpMiscellaneous/FrequentlyAskedQuestions page.
+
+This wiki is powered by [http://moinmo.in/ MoinMoin].
