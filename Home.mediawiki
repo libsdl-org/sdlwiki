@@ -4,7 +4,7 @@
 <!-- format wiki -->
 <!-- language en -->
 <!-- pragma section-numbers off -->
-<!-- acl Lauren MacDonell:read,write SamLantinga:read,write All:read -->
+<!-- acl Lauren MacDonell:read,write Sam Lantinga:read,write All:read -->
 = Simple DirectMedia Layer 1.3 Wiki =
 The Simple !DirectMedia Layer Library (SDL) is designed to make it easy to write portable multimedia application that run on Linux, *BSD, MacOS, Win32 and BeOS. By presenting a single source code level API to your application, SDL enables access to the various native high-performance media interfaces for video, audio, etc.
 
