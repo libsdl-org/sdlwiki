@@ -20,7 +20,7 @@ Use the links under the '''Navigation''' heading on the left-hand menu to access
 * FAQs
 * forums
 
-Use the links under the ??? heading on the left-hand menu to add or update content in the wiki.
+Use the links under the '''Page Actions''' heading on the left-hand menu to add or update content in the wiki. For help using the editing functions see the [[HelpOnEditing|MoinMoin Wiki Help]] pages, also available at any time from the Wiki Help link under the '''Page Actions''' heading.
 
 == Introduction to SDL ==
 === What is SDL? ===
