@@ -6,21 +6,19 @@
 <!-- pragma section-numbers off -->
 <!-- acl Lauren MacDonell:read,write Sam Lantinga:read,write All:read -->
 = Simple DirectMedia Layer 1.3 Wiki =
-The Simple !DirectMedia Layer Library (SDL) is designed to make it easy to write portable multimedia application that run on Linux, *BSD, MacOS, Win32 and BeOS. By presenting a single source code level API to your application, SDL enables access to the various native high-performance media interfaces for video, audio, etc.
-
-== Using the SDL documentation Wiki ==
 This wiki is your portal to documentation and other resources for SDL 1.3.
 
-Use the links under the '''Navigation''' heading on the left-hand menu to access:
+== Using the SDL documentation Wiki ==
+Use the links under the '''Navigation Links''' heading on the left-hand menu to access:
 
-* user help pages
+* API reference
 * tutorials
 * articles
 * books
 * FAQs
 * forums
 
-Use the links under the '''Page Actions''' heading on the left-hand menu to add or update content in the wiki. For help using the editing functions see the [[HelpOnEditing|MoinMoin Wiki Help]] pages, also available at any time from the Wiki Help link under the '''Page Actions''' heading.
+Registered users can use the '''Edit''' links under the '''Page Actions''' heading on the left-hand menu to add or update content in the wiki. For help using the editing functions see the [[HelpOnEditing|MoinMoin Wiki Help]] pages, also available at any time from the Wiki Help link under the '''Page Actions''' heading.
 
 == Introduction to SDL ==
 === What is SDL? ===
@@ -82,16 +80,18 @@ SDL is a free cross-platform multi-media development         API, used for games
 * Safe version uses GDI for video display. High                 performance version uses !DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
 * Safe version uses waveOut APIs for sound. High                 performace version uses !DirectSound for audio                 playback.
 
-'''''BeOS'''''
-
-* BWindow is used for video display.
-* BSoundPlayer API is used for sound.
-
 '''''Mac OS'''''
 
 * more info?
 
-=== Special info about 1.3? ===
+=== Special features in SDL 1.3 ===
+* Full 3D hardware acceleration
+* Support for OpenGL 3.0
+* Support for multiple windows
+* Support for multiple displays
+* Support for multiple mice, tablets, etc.
+* Force Feedback available on Windows, Mac OS X and Linux
+
 Interesting starting points:
 
 * RecentChanges: see where people are currently working
