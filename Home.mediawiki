@@ -8,6 +8,86 @@
 = Simple DirectMedia Layer 1.3 Wiki =
 The Simple !DirectMedia Layer Library (SDL) is designed to make it easy to write portable multimedia application that run on Linux, *BSD, MacOS, Win32 and BeOS. By presenting a single source code level API to your application, SDL enables access to the various native high-performance media interfaces for video, audio, etc.
 
+== Using the SDL documentation Wiki ==
+This wiki is your portal to documentation and other resources for SDL 1.3. Use the links on the left-hand menu to access:
+
+* user help pages
+* tutorials
+* articles
+* books
+* FAQs
+* forums
+
+== Introduction to SDL ==
+=== What is SDL? ===
+SDL is a free cross-platform multi-media development         API, used for games, game SDK's, emulators, MPEG players and other applcations.
+
+=== What can SDL do? ===
+'''''Video'''''
+
+* Set a video mode at any depth (8-bpp or greater)                 with optional conversion, if the video mode is                 not supported by the hardware.
+* Write directly to a linear graphics framebuffer.
+* Create surfaces with colorkey or alpha blending                 attributes.
+* Surface blits are automatically converted to the                 target format using optimized blitters and are                 hardware accelerated, when possible. MMX                 optimized blits are available for the x86.
+* Hardware accelerated blit and fill operations are                 used if supported by the hardware.
+
+'''''Events'''''
+
+* Events provided for:
+* Application visibility changes
+* Keyboard input
+* Mouse input
+* User-requested quit
+* Each event can be enabled or disabled with                 SDL_EventState().
+* Events are passed through a user-specified filter                 function before being posted to the internal                 event queue.
+* Thread-safe event queue.
+
+'''''Audio'''''
+
+* Set audio playback of 8-bit and 16-bit audio,                 mono or stereo, with optional conversion if the                 format is not supported by the hardware.
+* Audio runs independently in a separate thread,                 filled via a user callback mechanism.
+* Designed for custom software audio mixers, but                 the example archive contains a complete                 audio/music output library.
+
+'''''Threads'''''
+
+* Simple thread creation API
+* Simple binary semaphores for synchronization
+
+'''''Timers'''''
+
+* Get the number of milliseconds elapsed
+* Wait a specified number of milliseconds
+* Set a single periodic timer with 10ms resolution
+
+'''''Endian Independence'''''
+
+* Detect the endianness of the current system
+* Routines for fast swapping of data values
+* Read and write data of a specified endianness
+
+=== What platforms does SDL run on? ===
+'''''Linux'''''
+
+* Uses X11 for video display, taking advantage of                 XFree86 DGA extensions and new MTRR acceleration                 for fullscreen display.
+* Uses the OSS API for sound.
+* Threads are implemented using either the clone()                 system call and SysV IPC, or glibc-2.1 pthreads.
+
+'''''Win32'''''
+
+* Two versions, one safe for all systems based on                 Win32 APIs, and one with higher performance,                 based on DirectX APIs.
+* Safe version uses GDI for video display. High                 performance version uses DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
+* Safe version uses waveOut APIs for sound. High                 performace version uses DirectSound for audio                 playback.
+
+'''''BeOS'''''
+
+* BWindow is used for video display.
+* BSoundPlayer API is used for sound.
+
+'''''Mac OS'''''
+
+* more info?
+
+=== Special info about 1.3? ===
 Interesting starting points:
 
 * RecentChanges: see where people are currently working
