@@ -79,8 +79,8 @@ SDL is a free cross-platform multi-media development         API, used for games
 '''''Win32'''''
 
 * Two versions, one safe for all systems based on                 Win32 APIs, and one with higher performance,                 based on DirectX APIs.
-* Safe version uses GDI for video display. High                 performance version uses DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
-* Safe version uses waveOut APIs for sound. High                 performace version uses DirectSound for audio                 playback.
+* Safe version uses GDI for video display. High                 performance version uses !DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
+* Safe version uses waveOut APIs for sound. High                 performace version uses !DirectSound for audio                 playback.
 
 '''''BeOS'''''
 
