@@ -74,7 +74,7 @@ SDL is a free cross-platform multi-media development         API, used for games
 * Uses the OSS API for sound.
 * Threads are implemented using either the clone()                 system call and SysV IPC, or glibc-2.1 pthreads.
 
-'''''Win32'''''
+'''''Windows'''''
 
 * Two versions, one safe for all systems based on                 Win32 APIs, and one with higher performance,                 based on DirectX APIs.
 * Safe version uses GDI for video display. High                 performance version uses !DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
