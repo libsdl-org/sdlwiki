@@ -1,1 +1,27 @@
-SDL tutorials available from different sources.
+= SDL Tutorials =
+There are a number of SDL tutorials available from different sources.
+
+== SDL 1.2 ==
+* The Game Programming Wiki: SDL Tutorials
+  A large number of SDL tutorials covering a variety of different topics
+* Direct3D 9.0 with SDL
+  Using SDL with Direct3D for graphics
+* SDL and OpenGL
+  Using SDL and OpenGL on Mac OS X
+* Beginning Game Programming
+  A series of tutorials on game concepts geared for SDL developers
+* SDL Corner - Audio with SDL
+  Lots of advanced information on using SDL's audio support
+* SDL Corner - Using OpenGL with SDL
+  Lots of advanced information on using SDL with OpenGL
+* Sol's Graphics for Beginners
+  Setting up SDL with Visual C++ 6.0, basic graphics programming
+* SDL Setup Guide 1.1
+  Setting up an SDL project with Visual Studio .NET
+* Tutorial / Einsteigerkurs in das Programmieren mit der SDL in C
+  The basics of using various features of SDL, in German
+* Help! How Do I Move An Image?
+  Using Pygame to move images around in a simple game
+* SDL - Grundlagen und Grafik
+  A Geman tutorial on SDL basics and graphics
+[more here]
