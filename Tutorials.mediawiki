@@ -1,6 +1,10 @@
 = SDL Tutorials =
 There are a number of SDL tutorials available from different sources.
 
+<<TableOfContents(3)>>
+== SDL 1.3 ==
+[list 1.3 tutorials here]
+
 == SDL 1.2 ==
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
