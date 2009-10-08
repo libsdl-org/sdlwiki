@@ -2,6 +2,10 @@
 There are a number of SDL tutorials available from different sources.
 
 == SDL 1.2 ==
+* [http://www.sdltutorials.com/ SDLTutorials.com]
+: Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
+* [http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2009/07/02/sdl-competition-here-i-come.aspx Matthew Casperson's SDL Tutorials]
+: SDL tutorials on a variety of topics for shoot 'em up games
 * [http://gpwiki.org/index.php/Category:All_SDL_articles The Game Programming Wiki: SDL Tutorials]
 : A large number of SDL tutorials covering a variety of different topics
 * [http://www.gamedev.net/reference/articles/article2249.asp Direct3D 9.0 with SDL]
