@@ -1,5 +1,4 @@
 = Articles Related to SDL =
-
 <<TableOfContents(3)>>
 
 == SDL 1.3 ==
@@ -7,36 +6,36 @@
 
 == SDL 1.2 ==
 * Free Software Magazine - May 2006
-: [http://www.freesoftwaremagazine.com/articles/linux_pdas The GP2x PDA]
+: [http://www.freesoftwaremagazine.com/articles/linux_pdas The GP2x PDA|target="blank"]
 * Ask Slashdot - April 2004
-: [http://slashdot.org/askslashdot/01/04/03/1747256.shtml Game Programming w/ the Simple Directmedia Layer?]
+: [http://slashdot.org/askslashdot/01/04/03/1747256.shtml Game Programming w/ the Simple Directmedia Layer?|target="blank"]
 * O'Reilly Network - October 2003
-: [http://linuxdevcenter.com/pub/a/linux/2003/10/23/sdl_anim.html Animation in SDL: OpenGL]
+: [http://linuxdevcenter.com/pub/a/linux/2003/10/23/sdl_anim.html Animation in SDL: OpenGL|target="blank"]
 * O'Reilly Network - August 2003
-: [http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Animation in SDL: Hardware Surfaces]
+: [http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Animation in SDL: Hardware Surfaces|target="blank"]
 * O'Reilly Network - May 2003
-: [http://linuxdevcenter.com/pub/a/linux/2003/05/15/sdl_anim.html Animation in SDL]
+: [http://linuxdevcenter.com/pub/a/linux/2003/05/15/sdl_anim.html Animation in SDL|target="blank"]
 * !GameProgrammer.com - August 2002
-: [http://gameprogrammer.com/sdl.html Why Use SDL?]
+: [http://gameprogrammer.com/sdl.html Why Use SDL?|target="blank"]
 * OSNews - August 2002
-: [http://www.osnews.com/story/1549 Interview with Bill Kendrick of NewBreedSoftware]
+: [http://www.osnews.com/story/1549 Interview with Bill Kendrick of NewBreedSoftware|target="blank"]
 * OSNews - August 2002
-: [http://www.osnews.com/story/1518 Interview with Michael Speck of LGames]
+: [http://www.osnews.com/story/1518 Interview with Michael Speck of LGames|target="blank"]
 * Pyrogon Developer Diary - February 2002
-: [http://www.pyrogon.com/about/diary/2_26_2002.php The Whys and Hows of Porting Software]
+: [http://www.pyrogon.com/about/diary/2_26_2002.php The Whys and Hows of Porting Software|target="blank"]
 * !GameDev.net - December 2001
-: [http://www.gamedev.net/reference/programming/features/sdl2/ The Simple DirectMedia Layer from a Win32 Perspective, Part 2: SDL Video]
+: [http://www.gamedev.net/reference/programming/features/sdl2/ The Simple DirectMedia Layer from a Win32 Perspective, Part 2: SDL Video|target="blank"]
 * !GameDev.net - December 2001
-: [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL]
+: [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL|target="blank"]
 * !GameDev.net - December 2001
-: [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL]
+: [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL|target="blank"]
 * O'Reilly Network - September 2001
-: [http://linuxdevcenter.com/pub/a/linux/2001/09/21/sdl.html SDL: The DirectX Alternative]
+: [http://linuxdevcenter.com/pub/a/linux/2001/09/21/sdl.html SDL: The DirectX Alternative|target="blank"]
 * Ask Slashdot - August 2001
-: [http://developers.slashdot.org/article.pl?sid=01/08/18/1537234 Sam Lantinga Slings Some Answers]
+: [http://developers.slashdot.org/article.pl?sid=01/08/18/1537234 Sam Lantinga Slings Some Answers|target="blank"]
 * Ask Slashdot - August 2001
-: [http://news.slashdot.org/article.pl?sid=01/08/10/1736243 Ask Sam Lantinga About SDL On PS2 And More]
+: [http://news.slashdot.org/article.pl?sid=01/08/10/1736243 Ask Sam Lantinga About SDL On PS2 And More|target="blank"]
 * TECH Linux - October 2000
-: [http://www15.big.or.jp/~yamamori/sun/tech-linux-2/index_e.html How to make CD-Rom Bootable SDL Game]
+: [http://www15.big.or.jp/~yamamori/sun/tech-linux-2/index_e.html How to make CD-Rom Bootable SDL Game|target="blank"]
 * Planète Linux - Feb. 2000
-: [http://www.megastep.org/SDL/ Programmer des jeux sous Linux avec SDL]
+: [http://www.megastep.org/SDL/ Programmer des jeux sous Linux avec SDL|target="blank"]
