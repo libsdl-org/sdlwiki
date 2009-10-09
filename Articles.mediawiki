@@ -2,7 +2,7 @@
 
 <<TableOfContents(3)>>
 
-==SDL 1.3 ==
+== SDL 1.3 ==
 [insert links here]
 
 == SDL 1.2 ==
