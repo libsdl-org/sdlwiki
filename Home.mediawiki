@@ -24,7 +24,7 @@ Registered users can use the '''Edit''' links under the '''Page Actions''' headi
 
 == Introduction to SDL ==
 === What is SDL? ===
-The Simple DirectMedia Layer library (SDL) is a general API that provides low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across multiple platforms.
+The Simple !DirectMedia Layer library (SDL) is a general API that provides low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across multiple platforms.
 
 The current version (1.3) supports Linux, Windows, Windows CE, BeOS, MacOS, Mac OS X, FreeBSD, NetBSD, OpenBSD, BSD/OS, Solaris, IRIX, and QNX. The code contains support for AIX, OSF/Tru64, RISC OS, and SymbianOS, but these are not officially supported.
 
