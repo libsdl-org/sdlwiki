@@ -1,3 +1,5 @@
+<!-- pragma section-numbers 2 -->
+
 = Articles Related to SDL =
 <<TableOfContents(3)>>
 
