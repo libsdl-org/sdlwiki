@@ -96,21 +96,21 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Read and write data of a specified endianness
 
 === What platforms does SDL run on? ===
-'''''Linux'''''
-
-* Uses X11 for video display, taking advantage of                 XFree86 DGA extensions and new MTRR acceleration                 for fullscreen display.
-* Uses the OSS API for sound.
-* Threads are implemented using either the clone()                 system call and SysV IPC, or glibc-2.1 pthreads.
-
 '''''Windows'''''
 
 * Two versions, one safe for all systems based on                 Win32 APIs, and one with higher performance,                 based on DirectX APIs.
-* Safe version uses GDI for video display. High                 performance version uses !DirectDraw for video                 display, taking advantage of hardware                 acceleration if available.
-* Safe version uses waveOut APIs for sound. High                 performace version uses !DirectSound for audio                 playback.
+* Safe version uses GDI for video display. High                 performance version uses !Direct3D for video                 display, taking advantage of modern hardware                 acceleration.
+* Safe version uses waveOut APIs for sound. High                 performance version uses !DirectSound for audio                 playback.
 
-'''''Mac OS'''''
+'''''Mac OSX'''''
 
-* more info?
+* Uses Cocoa for video display, taking advantage of OpenGL for hardware acceleration.
+* Uses Core Audio for sound.
+
+'''''Linux'''''
+
+* Uses X11 for video display, taking advantage of OpenGL for hardware acceleration.
+* Uses the ALSA, OSS, !PulseAudio APIs for sound.
 
 === Special features in SDL 1.3 ===
 * Full 3D hardware acceleration
