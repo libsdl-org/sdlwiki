@@ -41,16 +41,21 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Surface blits are automatically converted to the                 target format using optimized blitters and are                 hardware accelerated, when possible. MMX                 optimized blits are available for the x86.
 * Hardware accelerated blit and fill operations are                 used if supported by the hardware.
 
-'''''Events'''''
+'''''Input'''''
 
 * Events provided for:
 * Application visibility changes
 * Keyboard input
 * Mouse input
+* Joystick input
 * User-requested quit
 * Each event can be enabled or disabled with                 SDL_EventState().
 * Events are passed through a user-specified filter                 function before being posted to the internal                 event queue.
 * Thread-safe event queue.
+
+'''''Force Feedback'''''
+
+* Force feedback is supported under Windows, Mac OSX and Linux.
 
 '''''Audio'''''
 
