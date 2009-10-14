@@ -40,6 +40,8 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Create surfaces with colorkey or alpha blending                 attributes.
 * Surface blits are automatically converted to the                 target format using optimized blitters and are                 hardware accelerated, when possible. MMX                 optimized blits are available for the x86.
 * Hardware accelerated blit and fill operations are                 used if supported by the hardware.
+* Window Management
+* Rendering
 
 '''''Input'''''
 
@@ -62,6 +64,8 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Set audio playback of 8-bit and 16-bit audio,                 mono or stereo, with optional conversion if the                 format is not supported by the hardware.
 * Audio runs independently in a separate thread,                 filled via a user callback mechanism.
 * Designed for custom software audio mixers, but                 the example archive contains a complete                 audio/music output library.
+
+'''''File I/O Abstraction'''''
 
 '''''Shared Object Support'''''
 
