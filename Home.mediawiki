@@ -63,6 +63,11 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Audio runs independently in a separate thread,                 filled via a user callback mechanism.
 * Designed for custom software audio mixers, but                 the example archive contains a complete                 audio/music output library.
 
+'''''Shared Object Support'''''
+
+* Load shared objects (DLL on Windows, .dylib on Mac OSX, .so on Linux)
+* Lookup functions in shared objects
+
 '''''Threads'''''
 
 * Simple thread creation API
@@ -73,6 +78,12 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Get the number of milliseconds elapsed
 * Wait a specified number of milliseconds
 * Set a single periodic timer with 10ms resolution
+
+'''''CPU Feature Detection'''''
+
+'''''Power Management'''''
+
+* Querying power management status
 
 '''''Endian Independence'''''
 
