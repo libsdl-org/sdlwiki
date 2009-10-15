@@ -7,12 +7,15 @@ Use this function to create a palette structure with the specified number of col
 
 == Syntax ==
 ```python
-SDL_Palette * SDL_AllocPalette (int ncolors) 
+SDL_Palette * SDL_AllocPalette (int ncolors)
 ```
 == Function Parameters ==
 == Return Value ==
 A new palette, or NULL if there wasn't enough memory
+
+== Code Examples ==
 == Remarks ==
 The palette entries are initialized to white.
+
 == Related Functions ==
 [[SDL_FreePalette]]()
