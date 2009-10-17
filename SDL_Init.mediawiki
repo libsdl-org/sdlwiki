@@ -1,0 +1,152 @@
+<!-- pragma section-numbers 2 -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Init =
+<code>SDL_Init</code> initializes the SDL library.  This must be called before using any other SDL function.
+
+<<TableOfContents(3)>>
+
+== Syntax ==
+```c++
+#include "SDL.h"
+
+int SDL_Init (Uint32 flags);
+```
+
+== Function Parameters ==
+These are the flags which may be passed to SDL_Init() -- you should
+specify the subsystems which you will be using in your application:
+
+{|
+|SDL_INIT_TIMER
+|Initialize timer subsystem
+|-
+|SDL_INIT_AUDIO
+|Initialize audio subsystem
+|-
+|SDL_INIT_VIDEO
+|Initialize video subsystem
+|-
+|SDL_INIT_CDROM
+|Initialize CD-ROM subsystem
+|-
+|SDL_INIT_JOYSTICK
+|Initialize joystick subsystem
+|-
+|SDL_INIT_HAPTIC
+|Initialize haptic (force feedback) subsystem
+|-
+|SDL_INIT_EVERYTHING
+|Initialize all of the above subsystems
+|-
+|SDL_INIT_NOPARACHUTE
+|Don't catch fatal signals
+|-
+|SDL_INIT_EVENTTHREAD
+|Run the event loop in a separate thread (not supported by all OSs)
+|}
+
+== Return Value ==
+Returns <code>0</code> if successful, <code>-1</code> otherwise.
+
+If this function fails, you can usually get an error message through [[SDL_GetError]], but not always.  Specifically, if pth_init() fails, no error message is set.
+
+== Code Examples ==
+=== C ===
+```c++
+#include "SDL.h"
+
+int main(int, char**)  {
+    if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
+        fprintf(stderr, 
+                "\nUnable to initialize SDL:  %s\n", 
+                SDL_GetError()
+               );
+        return 1;
+    }
+    atexit(SDL_Quit);
+  
+    /* ... */
+  
+    return 0;
+}
+```
+
+=== C++ ===
+```c++
+#include <exception>
+#include <string>
+#include "SDL.h"
+
+class InitError: public std::exception {
+    public:
+        InitError();
+        InitError(const std::string&);
+        virtual ~InitError() throw();
+        virtual const char* what() const throw();
+    private:
+        std::string msg;
+};
+
+InitError::InitError():
+  exception(), msg(SDL_GetError()) {}
+InitError::InitError(const std::string& m):
+  exception(), msg(m) {}
+InitError::~InitError() throw() {}
+const char* InitError::what() const throw() {
+    return msg.c_str();
+}
+
+class SDL {
+    public:
+        SDL(Uint32 flags = 0) throw(InitError);
+        virtual ~SDL();
+};
+
+SDL::SDL(Uint32 flags) throw(InitError) {
+    if (SDL_Init(flags) != 0)
+        throw InitError();
+}
+
+SDL::~SDL() {
+    SDL_Quit();
+}
+
+/* ... */
+
+#include <iostream>
+
+int main(int argc, char **argv) {
+    try {
+        SDL sdl(SDL_INIT_VIDEO|SDL_INIT_TIMER);
+
+        /* ... */
+
+        return 0;
+    }
+
+    catch (const InitError& err) {
+        std::cerr
+            << "Error while initializing SDL:  " 
+            << err.what() << std::endl;
+    }
+    
+    return 1;
+}
+```
+
+== Remarks ==
+This function loads the SDL dynamically linked library and initializes 
+the subsystems specified by 'flags' (and those satisfying dependencies).
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup
+signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+
+You can call <code>SDL_Init(0)</code> or <code>SDL_Init(SDL_INIT_NOPARACHUTE)</code> to initialize SDL without initializing any subsystems.
+
+Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
+
+== Related Functions ==
+[[SDL_InitSubSystem]], [[SDL_WasInit]], [[SDL_Quit]]
+
+----
+[[CategoryAPI]]
