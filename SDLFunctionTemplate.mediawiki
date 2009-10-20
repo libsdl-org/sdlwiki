@@ -1,0 +1,22 @@
+<!-- pragma section-numbers 2 -->
+<!-- pragma disable-camelcase -->
+
+= SDL_FunctionName =
+
+Use this function to /insert short function description here/.
+
+<<TableOfContents(3)>>
+
+== Syntax ==
+```python
+/copy function syntax from header file/
+```
+== Function Parameters ==
+
+== Return Value ==
+
+== Code Examples ==
+
+== Remarks ==
+
+== Related Functions ==
