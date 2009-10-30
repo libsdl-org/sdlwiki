@@ -7,7 +7,7 @@
 <<TableOfContents(3)>>
 
 == Syntax ==
-```c++
+```python
 #include "SDL.h"
 
 int SDL_Init (Uint32 flags);
