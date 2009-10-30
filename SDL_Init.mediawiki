@@ -1,4 +1,3 @@
-<!-- pragma section-numbers 2 -->
 <!-- pragma disable-camelcase -->
 
 = SDL_Init =
