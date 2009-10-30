@@ -3,7 +3,6 @@
 = SDL_Init =
 <code>SDL_Init</code> initializes the SDL library.  This must be called before using any other SDL function.
 
-<<TableOfContents(3)>>
 
 == Syntax ==
 ```c++
