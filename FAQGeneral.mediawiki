@@ -8,7 +8,7 @@ The code contains support for Windows CE, AmigaOS, Dreamcast, Atari, NetBSD, AIX
 The latest stable version is 1.2 You can always get the very latest bleeding edge Subversion snapshot, which may be broken at any given time, from the Subversion page.
 
 == Where can I get it? ==
-A:      http://www.libsdl.org/
+http://www.libsdl.org/
 
 == Where do I send questions / feedback? ==
 You can send questions and feedback to the main SDL mailing list: http://www.libsdl.org/mailing-list.php
