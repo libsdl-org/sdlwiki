@@ -1,44 +1,37 @@
 = FAQs - General =
-
 == What is Simple DirectMedia Layer? ==
-Very simply, Simple DirectMedia Layer, or SDL for short, is a library that allows you low level access to a video framebuffer, audio output, mouse, keyboard, and joysticks across a wide variety of operating systems.
-== What platforms are supported?==
-The current version supports Linux, Windows, BeOS, MacOS, MacOS X, FreeBSD, OpenBSD, BSD/OS, Solaris, IRIX, and QNX.
+Very simply, Simple DirectMedia Layer, or SDL for short, is a library that allows you low level access to a video framebuffer, audio output, mouse, keyboard, and joysticks across a wide variety of operating systems. == What platforms are supported?== The current version supports Linux, Windows, BeOS, MacOS, MacOS X, FreeBSD, OpenBSD, BSD/OS, Solaris, IRIX, and QNX.
 
 The code contains support for Windows CE, AmigaOS, Dreamcast, Atari, NetBSD, AIX, OSF/Tru64, RISC OS, and SymbianOS, but these are not yet officially supported.
+
 == What is the latest version? ==
-The latest stable version is 1.2
-You can always get the very latest bleeding edge Subversion snapshot, which may be broken at any given time, from the Subversion page.
+The latest stable version is 1.2 You can always get the very latest bleeding edge Subversion snapshot, which may be broken at any given time, from the Subversion page.
+
 == Where can I get it? ==
-A:	http://www.libsdl.org/
-Q:	Where do I send questions / feedback?
-A:	You can send questions and feedback to the main SDL mailing list:
-http://www.libsdl.org/mailing-list.php
-Q:	Where do I send bug reports / patches?
-A:	You can submit bug reports and patches to the SDL bugzilla bug tracking system:
-http://bugzilla.libsdl.org/
-Q:	Is there a mailing list?
-A:	There are several SDL related mailing lists depending on your level of interest, all available from:
-http://www.libsdl.org/mailing-list.php
-Q:	Is there a newsgroup?
-A:	The nice folks at gmane.org have provided a news <-> mail gateway for the main SDL developers mailing list.
-You can access this gateway via a newsreader at:
-news://news.gmane.org/gmane.comp.lib.sdl
-You can read messages (but not post) via web interface at:
-http://news.gmane.org/thread.php?group=gmane.comp.lib.sdl
-Q:	Is there an IRC channel?
-A:	Yes, you can find people hanging out on the IRC server at irc.freenode.net on the channel #SDL
-Q:	Is there an official logo?
-A:	Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/
-Several community contributed logo ideas are also available at that URL.
-You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
-Q:	I have a project that uses SDL, how do I add it to the SDL website?
-A:	If you have a project that you feel is ready for the general public, you can add it to the SDL website:
+A:      http://www.libsdl.org/
 
-   1. Create an account under the Site Actions menu on the SDL website
-   2. Log in from the Site Actions menu with your new account
-   3. Go to the download page that matches your project (game, application, etc.)
-   4. Click on the "submit" button at the bottom of the page
+== Where do I send questions / feedback? ==
+You can send questions and feedback to the main SDL mailing list: http://www.libsdl.org/mailing-list.php
 
-Q:	What's up with SDL 2.0? Can I help?
-A:	SDL 1.3 is in development and when it matures it will become SDL 2.0. You can download a PRERELEASE version of the code from the SDL subversion page and provide feedback on the mailing list.
+== Where do I send bug reports / patches? ==
+You can submit bug reports and patches to the SDL bugzilla bug tracking system: http://bugzilla.libsdl.org/
+
+== Is there a mailing list? ==
+There are several SDL related mailing lists depending on your level of interest, all available from: http://www.libsdl.org/mailing-list.php
+
+== Is there a newsgroup? ==
+The nice folks at gmane.org have provided a news <-> mail gateway for the main SDL developers mailing list. You can access this gateway via a newsreader at: news://news.gmane.org/gmane.comp.lib.sdl You can read messages (but not post) via web interface at: http://news.gmane.org/thread.php?group=gmane.comp.lib.sdl
+
+== Is there an IRC channel? ==
+Yes, you can find people hanging out on the IRC server at irc.freenode.net on the channel #SDL
+
+== Is there an official logo? ==
+Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer. Q:      I have a project that uses SDL, how do I add it to the SDL website? A:      If you have a project that you feel is ready for the general public, you can add it to the SDL website:
+
+ 1. Create an account under the Site Actions menu on the SDL website
+ 1. Log in from the Site Actions menu with your new account
+ 1. Go to the download page that matches your project (game, application, etc.)
+ 1. Click on the "submit" button at the bottom of the page
+
+== What's up with SDL 2.0? Can I help? ==
+SDL 1.3 is in development and when it matures it will become SDL 2.0. You can download a PRERELEASE version of the code from the SDL subversion page and provide feedback on the mailing list.
