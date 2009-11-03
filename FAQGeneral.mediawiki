@@ -1,4 +1,6 @@
 = FAQs - General =
+
+
 == What is Simple DirectMedia Layer? ==
 Very simply, Simple DirectMedia Layer, or SDL for short, is a library that allows you low level access to a video framebuffer, audio output, mouse, keyboard, and joysticks across a wide variety of operating systems. 
 
