@@ -1,0 +1,120 @@
+= FAQ: Windows =
+
+
+== What is supported? ==
+SDL supports Windows 95/98/NT/ME/2000/XP.
+
+SDL can be built with Visual C++, Borland C++, Cygwin, MinGW, Dev-C++, and Watcom C++.
+
+SDL takes advantage of DirectX hardware acceleration when it is available, but falls back to the standard Win32 services if DirectX is not installed.
+
+== I'm running Windows 2000 and I can't copy SDL.dll! ==
+For some reason, archives created on Linux have the "Encrypted" property set when unpacked on Windows 2000. This can be unset by pushing Advanced from the General tab of the properties window and unchecking Encrypt contents checkbox. The files can then be copied normally.
+
+== Can I build SDL for Windows CE? ==
+SDL is not officially supported on Windows CE, but some people have successfully built and run SDL applications on Windows CE.
+
+SDL 1.2.5 and newer contain project files and information on building SDL for Windows CE. Take a look at the file README.WinCE in the source archive for more information.
+
+== How do I use SDL with Visual C++? ==
+Read the file "VisualC.html" included with both the SDL Visual C++ development archive, and the SDL source archive.
+
+== When using Visual C++ I get "fatal error C1083: Cannot open include file: 'windows.h': No such file or directory" ==
+You need to install the platform SDK, as described here:
+http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/
+
+== When using Visual C++ I get link errors relating to MSVCRT.LIB or LIBC ==
+SDL is dynamically linked with the multi-threaded version of the Microsoft Visual C runtime. You need to edit your project settings, go to the C++ language tab, change the listbox to "Code Generation" settings, and then change the runtime library to "Multi-threaded DLL". Make sure you do this with all projects that you link into your application.
+
+== When using Visual C++ 5, I get the following error message: SDL.lib : fatal error LNK1106: invalid file or disk full ==
+This happens with Visual C++ 5, if you use the prebuilt SDL library and have not updated to the latest service pack.
+
+== Why can't I use Visual C++ debugger with SDL applications? ==
+You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to make the msvc debugger work. Otherwise the debugger will be unable to trace exceptions, and other debugging features like run to cursor won't work.
+
+== Why does the Visual C++ debugger freeze at every breakpoint when debugging SDL apps? ==
+The DirectX drivers have a system lock while you have video surfaces locked. To avoid this, you can set the video driver to GDI by setting the SDL_VIDEODRIVER environment variable to: windib
+Since this changes video and mouse/keyboard input drivers, you'll see a difference in performance and features available, but you'll be able to debug your application more easily.
+
+== How do I use SDL with Borland C++? ==
+SDL 1.2.5 and newer have projects for C++ Builder 5 and 6 for Windows, Kylix 3, and the free Borland C++ command line tools. Take a look at Borland.html in the source archive.
+
+Martin Bickel writes:
+For both Watcom C/C++ and Borland C/C++ the compiler option that makes enums having the size of an int must be enabled. This is "-b" for Borland C/C++ and "-ei" for Watcom C/C++ (v11).
+
+Chris Dion wrote down his steps on building manually with the free command line tools:
+
+ 1. Run the IMPLIB utility on SDL.DLL to make a new SDL.LIB import library. Use the -a and -c switches.
+ 2. You still need the SDL_MAIN.LIB file, so that you don't need to define WinMain() and all that junky windows stuff. You have no .dll file to build this .lib from, and COFF2OMF creates a empty .lib (you can check with TDUMP, another utillity that comes with the compiler). Get the Win32 version of the SDL_main.c file from the source, and dump it in with the rest of your project.
+ 3. Compile your source (including SDL_main.c) into object files using BCC32 with the following compiler options:
+        -c (Don't link)
+        -tW (Create windows app)
+        -DWIN32 (Define WIN32, this is needed in the SDL_main.h file, and maybe others)
+ 4. Link the.obj files together using ILINK32 with the following options:
+        -aa (Create windows app, sounds redundant, but...)
+        -Tpe (Target = windows exe)
+        -c (case sensitive linking, may be the default...)
+      and the following additional files (order is important)
+* sdl.lib (created in step 1)
+* import32.lib
+* c0w32.obj
+* cw32.lib
+
+If all goes well, you should have a working .exe file. The help files that come with the command line tools are missing detailed descriptions of the various compiler/linker switches. You can download a complete help file from the Borland ftp site here:
+ftp://ftp.borland.com/pub/bcppbuilder/techpubs/bcb5/b5std.zip
+
+== How do I use SDL with gcc on Windows? ==
+You can build and use SDL with gcc natively using either Cygwin or MinGW, or you can build a gcc cross-compiler targeting Windows from another platform.
+Setting up these environments is documented at: http://www.libsdl.org/extras/win32/gcc.html
+Once the build environment is set up, you can build your applications as though you are on UNIX. See the Linux FAQ for more details on building applications in this environment.
+
+== How do I use SDL with Dev-C++? ==
+Try the Dev-C++ tutorial available at: http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/tut1.
+If you have problems, please contact the author of the tutorial.
+
+There are also step by step instructions at: http://docs.deninet.com/sdl_on_dev_c.htm
+
+== How do I use SDL with CodeWarrior for Windows? ==
+Key Swyer has contributed a set of projects for CodeWarrior 7 for Windows: SDLCW.zip.
+These are not supported, but may prove useful for you.
+
+== How do I use SDL with lcc-win32? ==
+* Download SDL for Visual C++ and SDL source code; extract them in a folder
+* From lcc-win32 IDE run "Utils->Import foreign library" specifying the path of SDL.lib taken from Visual C++ package, this will create a new lcc\lib\sdl.lib file
+* Select "Compiler->Settings", in the "compiler settings" tab, " Path" add the path to SDL include files; in the "linker settings" tab, "additional files to be included in the link" add sdl.lib
+* Select "Project->Add/Delete files...", "Add new file..." and add SDL_win32_main.c taken from the src/main/win32 directory in the SDL source code. 
+
+Now you can compile and run SDL apps.
+
+== I get "Undefined reference to 'SDL_main'" ... ==
+Make sure that you are declaring main() as:
+
+<!-- include "SDL.h" -->
+
+int main(int argc, char *argv[])
+
+You should be using main() instead of WinMain() even though you are creating a Windows application, because SDL provides a version of WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your WinMain() function so that SDL works properly.
+
+== I get "Undefined reference to 'WinMain@16'" ==
+Under Visual C++, you need to link with SDLmain.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDLmain -lSDL -mwindows
+
+== I get undefined references to various SDL functions... ==
+When you're compiling with gcc, you need to make sure the output of sdl-config follows your source file on the command line:
+gcc -o test test.c <code>sdl-config --cflags --libs</code>
+
+If you're getting undefined references to functions in SDL_image or SDL_mixer, make sure you're actually linking with those libraries as well.
+
+== Why doesn't SDL_WM_ToggleFullScreen() work on Windows? ==
+The semantics of SDL_WM_ToggleFullScreen() are that switching between fullscreen and windowed mode is transprent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
+flags ^= SDL_FULLSCREEN;
+screen = SDL_SetVideoMode(..., flags);
+
+== How do I avoid creating stdout.txt and stderr.txt? ==
+Seen here:
+http://www.libsdl.org/pipermail/sdl/2002-November/050275.html
+"I believe inside the Visual C++ project that comes with SDL there is a SDL_nostdio target you can build which does what you want(TM)."
+
+And here:
+http://www.libsdl.org/pipermail/sdl/2002-November/050277.html
+"If you define "NO_STDIO_REDIRECT" and recompile SDL, I think it will fix the problem.
+(Answer courtesy of Bill Kendrick)
