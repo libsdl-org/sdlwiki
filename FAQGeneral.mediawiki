@@ -1,4 +1,4 @@
-= FAQs - General =
+= FAQs: General =
 
 
 == What is Simple DirectMedia Layer? ==
