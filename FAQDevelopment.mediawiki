@@ -1,0 +1,77 @@
+== FAQ: Development ==
+
+
+== Is SDL multi-threaded? ==
+SDL provides simple cross-platform functions for the creation of threads and synchronization using mutexes. These are used internally by SDL for some implementations of the audio subsystem and input handling.
+
+== Can I call SDL video functions from multiple threads? ==
+No, most graphics back ends are not thread-safe, so you should only call SDL video functions from the main thread of your application.
+
+== Does SDL support 3D acceleration? ==
+Yes, SDL supports 3D acceleration using the OpenGL API.
+
+== Does SDL support networking? ==
+Networking is outside of the scope of SDL, but due to popular demand a simple cross-platform sockets wrapper called "SDL_net" is available at the SDL libraries page. A simple chat client/server is included which makes use of an example GUI library as well.
+
+== Does SDL support PCX, JPG, PNG, etc... ==
+The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is suppose to be fast and small, and so does not include any additional loaders.
+A sample image loader library called "SDL_image" is available from the SDL libraries page which supports loading BMP, PCX, GIF, JPG, PNG and TGA images to SDL surfaces.
+
+== Does SDL support MP3, Ogg Vorbis, etc... ==
+The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is suppose to be fast and small, and so does not include any additional loaders. A sample sound library called "SDL_sound" is available from the SDL libraries page which supports loading many different audio formats.
+
+== Does SDL have text drawing support? ==
+Games and operating systems vary widely in the type and availability of text drawing facilities. Instead of trying to deal with this in the core SDL library, there are several text drawing libraries designed for use with SDL on the SDL libraries page. Common tecniques include using bitmap fonts, truetype fonts, and custom images for text.
+
+== What kind of GUI's are there for SDL? ==
+There are several GUI libraries available from the SDL libraries page.
+There is also a demo on the SDL demos page of using GTk natively with SDL, which works really well for graphics output.
+Also on the demos page is a hack written by Kent Mein using Tcl/Tk with SDL.
+You may also be able to get other GUI's to work with SDL. Many of them have documentation on how to get the toolkits to work with other applications.
+
+== Do I #include <SDL.h> or <SDL/SDL.h>? ==
+The most portable way to include SDL headers is to use quotes around the header name:
+
+<!-- include "SDL.h" -->
+
+== I get the SDL_DUMMY_ENUM assertion in SDL_types.h ==
+You need to turn on the "enums as ints" option for your compiler:
+
+* For the free Borland compiler, add this command line option: -b
+* For Watcom C/C++, add this command line option: -ei
+* For Apple's MPW environment, add this command line option: -enum int
+* For CodeWarrior, go to the C/C++ Language settings menu for your project and check the "Enums Always Int" box.
+
+== I have an accelerated video card, but SDL tells me that that I have zero video memory and no acceleration!
+Not all display targets can make use of hardware acceleration. In particular, this is the case for the X11 target which always presents you with a software framebuffer. Your video memory will always be reported to be zero if no acceleration is available.
+Note that this has nothing to do with 3D acceleration, just 2D hardware acceleration support in the underlying operating system video drivers.
+
+If you want hardware acceleration on Linux, you can use the DGA driver (fullscreen-only, under X11) or the framebuffer console driver (fullscreen-only, under the console). See the Linux FAQ for more information on using these drivers.
+
+If you want hardware acceleration on Windows, make sure SDL is built with DirectX support and run your program in fullscreen mode.
+
+An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
+
+== There's no performance difference between using SDL hardware surfaces and software surfaces! ==
+You are probably not getting hardware surfaces. Check to see if the surfaces you are creating actually have the SDL_HWSURFACE flag set the surface flags after they are created. Note that most of the time you need to run your program in fullscreen mode to get hardware surfaces.
+
+An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
+
+== I'm using hardware surfaces, and performance is very bad! ==
+Try using software surfaces. It's counter-intuitive, but if you're directly accessing the pixels on a surface or the screen, it's actually faster to do all your work in system memory and then send the final result to the screen than it is to push individual pixels over the system bus to the video card. This is especially important when doing alpha blending because very few drivers expose 2D alpha blending in hardware. This means that the alpha blending is performing a read operation on the destination surface, and reading from video memory is especially slow on modern graphics hardware.
+If this is a serious problem for you, and you know your target audience has 3D hardware, you might consider using SDL with OpenGL for 3D acceleration.
+
+An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
+
+== I'm using hardware surfaces and I get very bad flicker! ==
+When you pass SDL_HWSURFACE to SDL_SetVideoMode(), SDL will try to give you direct access to the video framebuffer. If this succeeds, you're writing directly to visible video memory, and this usually results in flickering. You probably want to use SDL_SWSURFACE and then update dirty rectangles with SDL_UpdateRects(), or SDL_DOUBLEBUF and then update the entire screen with SDL_Flip() which will try to synchronize the update with the vertical retrace.
+
+An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
+
+== I'm using SDL_DOUBLEBUF and I still get tearing. ==
+If you are in windowed mode, you need to run in fullscreen mode. If you are in fullscreen mode, the system drivers probably do not support synchronizing with the vertical retrace. If you are using OpenGL with the NVidia drivers, you can enable retrace synchronized flipping using an external control panel or environment variable.
+
+An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
+
+== My mouse cursor disappears when in fullscreen mode! ==
+This happens because you're directly accessing the video memory, and the video driver doesn't support hardware cursor overlays. Simply create the cursor as a sprite and blit it onto the screen where the mouse cursor coordinates are.
