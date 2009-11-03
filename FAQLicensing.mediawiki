@@ -1,0 +1,24 @@
+= FAQ: Licensing =
+
+== What license does SDL use? ==
+SDL is freely available under the GNU LGPL license, and may be used in both free and commercial applications.
+
+== Can I use SDL in a commercial application? ==
+Yes!
+If you link dynamically (via .dll's, .so's or using other dynamic linking devices) then you do not need to do anything.
+If you link statically (include the SDL source inside your project when you compile) you have to provide some way for your customer to relink your application with a custom version of SDL.
+The details are available at: http://www.libsdl.org/license.php
+
+== Can I use SDL in an embedded application? ==
+Yes!
+The details are available at: http://www.libsdl.org/license.php
+
+== If I use SDL, do I owe any licensing fees or royalties? ==
+No!
+You may use SDL completely free of charge. If you would like to donate, you may do so via PayPal to slouken@libsdl.org
+
+== Can I use code from the test directory? From the examples? ==
+Yes, code from the test directory and from the examples in the documentation is placed in the public domain. Anyone can use it for any purpose.
+
+== Can I use code from the demos in my applications? ==
+Each of the demos has it's own licensing restrictions. See the "COPYING" file in each demo's source directory for more information on a particular demo.
