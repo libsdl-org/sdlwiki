@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_LockTexture =
+
+Use this function to /insert short function description here/.
+
+
+== Syntax ==
+```c++
+int SDL_LockTexture (SDL_TextureID textureID, const SDL_Rect *rect, int markDirty, void **pixels, int *pitch)
+```
+== Function Parameters ==
+
+{|
+|'''param'''
+|Something passed to SDL_FunctionName
+|}
+
+== Return Value ==
+
+A value returned by SDL_FunctionName
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+[[SDL_OtherFunction]]
