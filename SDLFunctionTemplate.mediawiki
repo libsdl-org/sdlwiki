@@ -8,14 +8,26 @@ Use this function to /insert short function description here/.
 
 == Syntax ==
 ```c++
-/copy function syntax from header file/
+value SDL_FunctionName (param)
 ```
 == Function Parameters ==
 
+{|
+|'''param'''
+|Something passed to SDL_FunctionName
+|}
+
 == Return Value ==
 
+A value returned by SDL_FunctionName
+
 == Code Examples ==
+```c++
+You can add your code example here
+```
 
 == Remarks ==
+You can add useful comments here
 
 == Related Functions ==
+[[SDL_OtherFunction]]
