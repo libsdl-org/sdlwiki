@@ -8,11 +8,11 @@ Use this function to /insert short function description here/.
 
 == Syntax ==
 ```c++
-int SDL_LockTexture (SDL_TextureID textureID,
+int SDL_LockTexture (SDL_TextureID   textureID,
                      const SDL_Rect *rect,
-                     int markDirty,
-                     void **pixels,
-                     int *pitch)
+                     int             markDirty,
+                     void          **pixels,
+                     int            *pitch)
 ```
 == Function Parameters ==
 
