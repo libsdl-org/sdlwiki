@@ -3,7 +3,7 @@
 
 = SDL_BuildAudioCVT =
 
-Use this function to access the raw audio mixing buffer for the SDL library.
+Use this function to initialize a SDL_AudioCVT structure for conversion.
 
 
 == Syntax ==
@@ -17,15 +17,48 @@ int SDL_BuildAudioCVT (SDL_AudioCVT    *cvt,
                        int             dst_rate)
 ```
 == Function Parameters ==
-== Return Value ==
+{|
+|'''src_format'''
+|The source and destination format of the conversion
+|-
+|'''src_channels'''
+|The number of channels in the source and destination formats
+|-
+|'''src_rate'''
+|The frequency or samples-per-second of the source and destination formats
+|-
+|'''dst_format'''
+|The source and destination format of the conversion
+|-
+|'''dst_channels'''
+|The number of channels in the source and destination formats
+|-
+|'''dst_rate'''
+|The frequency or samples-per-second of the source and destination formats
+|}
 
+== Return Value ==
+Returns 0 if the filter could not be built or a strictly positive number if it could.
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+Before an SDL_AudioCVT structure can be used to convert audio data it must be initialized with source and destination information.
+
+For information on audio formats see [[SDL_AudioSpec]].
+
+''Currently (SDL-1.2.11) only rate conversions of 2x and (1/2)x with x > 0 are done, nearing the requested rate conversion.'' 
 
 == Related Functions ==
-[[SDL_OtherFunction]]
+ [[SDL_ConvertAudio]]
+
+ [[SDL_AudioCVT]]
+
+[[SDL_ConvertAudio]],
+[[SDL_AudioCVT]]
+
+[[SDL_ConvertAudio]]
+
+[[SDL_AudioCVT]]
