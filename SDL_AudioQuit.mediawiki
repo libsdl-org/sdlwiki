@@ -1,0 +1,24 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_AudioQuit =
+
+Use this function to access the raw audio mixing buffer for the SDL library.
+
+
+== Syntax ==
+```c++
+void SDL_AudioQuit (void)
+```
+== Function Parameters ==
+== Return Value ==
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+[[SDL_OtherFunction]]
