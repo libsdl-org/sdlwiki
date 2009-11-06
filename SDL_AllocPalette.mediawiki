@@ -5,7 +5,7 @@ Use this function to create a palette structure with the specified number of col
 
 
 == Syntax ==
-```python
+```c++
 SDL_Palette * SDL_AllocPalette (int ncolors)
 ```
 == Function Parameters ==
@@ -13,6 +13,10 @@ SDL_Palette * SDL_AllocPalette (int ncolors)
 A new palette, or NULL if there wasn't enough memory
 
 == Code Examples ==
+```c++
+You can add your code example here
+```
+
 == Remarks ==
 The palette entries are initialized to white.
 
