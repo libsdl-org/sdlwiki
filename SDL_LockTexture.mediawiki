@@ -3,7 +3,7 @@
 
 = SDL_LockTexture =
 
-Use this function to /insert short function description here/.
+Use this function to lock a portion of the texture for pixel access.
 
 
 == Syntax ==
@@ -35,7 +35,7 @@ int SDL_LockTexture (SDL_TextureID   textureID,
 
 == Return Value ==
 
-A value returned by SDL_FunctionName
+0 on success, or -1 if the texture is not valid or was created with SDL_TEXTUREACCESS_STATIC
 
 == Code Examples ==
 ```c++
@@ -46,4 +46,6 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
-[[SDL_OtherFunction]]
+[[SDL_DirtyTexture()]]
+
+[[SDL_UnlockTexture()]]
