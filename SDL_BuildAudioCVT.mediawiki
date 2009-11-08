@@ -31,7 +31,7 @@ int SDL_BuildAudioCVT (SDL_AudioCVT*   cvt,
 |the frequency or samples-per-second of the source
 |-
 |'''dst_format'''
-|the destination format of the audio data
+|the destination format of the audio data; for more info see [[SDL_AudioFormat]]
 |-
 |'''dst_channels'''
 |the number of channels in the destination
