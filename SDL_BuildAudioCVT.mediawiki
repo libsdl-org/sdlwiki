@@ -48,18 +48,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-Before an SDL_AudioCVT structure can be used to convert audio data it must be initialized with source and destination information.
+Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.
 
 For information on audio formats see [[SDL_AudioSpec]].
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
-
- [[SDL_AudioCVT]]
-
-[[SDL_ConvertAudio]],
-[[SDL_AudioCVT]]
-
-[[SDL_ConvertAudio]]
-
-[[SDL_AudioCVT]]
