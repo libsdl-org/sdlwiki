@@ -41,7 +41,7 @@ int SDL_BuildAudioCVT (SDL_AudioCVT*   cvt,
 |}
 
 == Return Value ==
-Returns 0 if the filter could not be built or a strictly positive number if it could.
+Returns -1 if the format conversion is not supported, 0 if there's no conversion needed, or 1 if the audio filter is set up.
 == Code Examples ==
 ```c++
 You can add your code example here
@@ -51,8 +51,6 @@ You can add your code example here
 Before an SDL_AudioCVT structure can be used to convert audio data it must be initialized with source and destination information.
 
 For information on audio formats see [[SDL_AudioSpec]].
-
-''Currently (SDL-1.2.11) only rate conversions of 2x and (1/2)x with x > 0 are done, nearing the requested rate conversion.'' 
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
