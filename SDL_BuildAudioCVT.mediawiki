@@ -19,25 +19,25 @@ int SDL_BuildAudioCVT (SDL_AudioCVT*   cvt,
 == Function Parameters ==
 {|
 |'''cvt'''
-|A pointer to an [[SDL_AudioCVT]] structure that is filled in with audio conversion information
+|a pointer to an [[SDL_AudioCVT]] structure that is filled in with audio conversion information
 |-
 |'''src_format'''
-|The source format of the audio data; for more info see [[SDL_AudioFormat]]
+|the source format of the audio data; for more info see [[SDL_AudioFormat]]
 |-
 |'''src_channels'''
-|The number of channels in the source
+|the number of channels in the source
 |-
 |'''src_rate'''
-|The frequency or samples-per-second of the source
+|the frequency or samples-per-second of the source
 |-
 |'''dst_format'''
-|The destination format of the audio data
+|the destination format of the audio data
 |-
 |'''dst_channels'''
-|The number of channels in the destination
+|the number of channels in the destination
 |-
 |'''dst_rate'''
-|The frequency or samples-per-second of the destination
+|the frequency or samples-per-second of the destination
 |}
 
 == Return Value ==
