@@ -1,7 +1,4 @@
-<!-- pragma section-numbers 2 -->
-
 = Articles Related to SDL =
-<<TableOfContents(3)>>
 
 == SDL 1.3 ==
 [insert links here]
