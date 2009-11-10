@@ -2,7 +2,6 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioInit =
-
 Use this function to access the raw audio mixing buffer for the SDL library.
 
 
@@ -10,8 +9,11 @@ Use this function to access the raw audio mixing buffer for the SDL library.
 ```c++
 int SDL_AudioInit (const char *driver_name)
 ```
+
 == Function Parameters ==
+
 == Return Value ==
+
 == Code Examples ==
 ```c++
 You can add your code example here
@@ -21,4 +23,4 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
-[[SDL_OtherFunction]]
+ [[SDL_OtherFunction]]
