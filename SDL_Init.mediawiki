@@ -138,7 +138,7 @@ the subsystems specified by 'flags' (and those satisfying dependencies).
 Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup
 signal handlers for some commonly ignored fatal signals (like SIGSEGV).
 
-You can call <code>SDL_Init(0)</code> or <code>SDL_Init(SDL_INIT_NOPARACHUTE)</code> to initialize SDL without initializing any subsystems.
+You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
 
 Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
 
