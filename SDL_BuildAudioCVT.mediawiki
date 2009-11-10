@@ -2,7 +2,6 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_BuildAudioCVT =
-
 Use this function to initialize a SDL_AudioCVT structure for conversion.
 
 
@@ -16,6 +15,7 @@ int SDL_BuildAudioCVT (SDL_AudioCVT*   cvt,
                        Uint8           dst_channels, 
                        int             dst_rate)
 ```
+
 == Function Parameters ==
 {|
 |'''cvt'''
@@ -42,6 +42,7 @@ int SDL_BuildAudioCVT (SDL_AudioCVT*   cvt,
 
 == Return Value ==
 Returns -1 if the format conversion is not supported, 0 if there's no conversion needed, or 1 if the audio filter is set up.
+
 == Code Examples ==
 ```c++
 You can add your code example here
