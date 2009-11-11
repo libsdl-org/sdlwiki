@@ -1,12 +1,9 @@
 = FAQ: Mac OS X =
 
-
 == What is supported? ==
-SDL supports Mac OS X 10.1 and newer, using either ProjectBuilder or the classic UNIX style build system.
-Currently only ProjectBuilder can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
+SDL supports Mac OS X 10.1 and newer, using either ProjectBuilder or the classic UNIX style build system. Currently only ProjectBuilder can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
 
 == What is the difference between the ProjectBuilder/XCode and the UNIX style build system? ==
-
 The SDL-devel package contains the SDL libraries in the form of so-called FrameWorks. That is perfectly find as long as you want to develop using Project Builder / XCode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
 
 When installed as a Framework, all SDL files (the library and the header files) are aggregated into a .framework bundle, and installed together into /Library/Frameworks/ or ~/Library/Frameworks/. There, PB and XCode can find it. But packages which want to use SDL but employ a UNIX style build system are usually not able to find SDL there (there are a few exceptions where people hand modified their configure scripts to allow using Frameworks on OSX, but those are rare).
@@ -14,20 +11,20 @@ When installed as a Framework, all SDL files (the library and the header files) 
 When installing UNIX style, SDL gets installed into /usr/local/bin, /usr/local/include and /usr/local/lib (the exact path can vary, for example the Fink SDL package will use /sw instead of /usr/local by default). This way, build system tuned to support generic UNIX systems are able to find them.
 
 == How do I install SDL UNIX style? ==
-Either you can compile and install it from source (via the usual ./configure && make && make install procedure). Or install it via some kind of packaging system which ships premade packages for SDL. For example, both Fink and DarwinPorts include packages which are suitable. You can learn more about them on their respective sites.
+Either you can compile and install it from source (via the usual ./configure && make && make install procedure). Or install it via some kind of packaging system which ships premade packages for SDL. For example, both Fink and [http://www.macports.org/ MacPorts] include packages which are suitable. You can learn more about them on their respective sites.
 
 Note that as long as you static link the release builds of your application, it doesn't really matter which way you installed SDL -- for example, even if you installed it via Fink, if you static link SDL, your users do not have to install Fink.
+
 == What is SDLMain.m? Do I need it? Why is _main undefined? ==
 Just like main() is the entry point for C programs (inc. C++, Objective-C, and Objective-C++), SDL_main() is the main entry point for SDL programs. However, you don't actually write an SDL_main() function. The header file "SDL_main.h" remaps your main() function to the SDL_main() function with a function macro. Your SDL_main() function is called after the code in SDLMain.m has performed the required "bootstrap" initializations to support the SDL runtime.
 
 There are three things you have to do:
 
  1. You must include either SDLMain.m/.h or libSDLmain in your application, because this is the code that defines SDL's entry point. If you fail to do this, it is likely that "_main undefined" will be thrown by the linker.
- 2. You must give your main() procedure the following prototype:
+ 1. You must give your main() procedure the following prototype:
+: int main(int argc, char*argv[]);
 
-      int main(int argc, char*argv[]);
-
- 3. You must make sure the file containing your main() procedure #includes SDL.h.
+ 1. You must make sure the file containing your main() procedure #includes SDL.h.
 
 Otherwise, the macro will not remap main() to SDL_main(), you will get an undefined _main error, or the bootstrap process will not run, and SDL will behave strangely or your application will crash or hang.
 
@@ -39,12 +36,11 @@ You can still write your SDL application in C++. The easiest way to get started 
 If you are developing using the UNIX variant of SDL, you can link libSDLmain.a into your application, which simply contains a precompile version of SDLmain.m.
 
 So for command-line/Makefile builds, just add -lSDLmain to your build commands like any other library and add "-framework Cocoa" to the gcc or ld flags. Better yet, use the sdl-config script (in the source code distribution) which computes the correct compiler and linker flags for you.
+
 == I can't get OpenGL to work. ==
 On Mac OS X, you access the OpenGL headers like so:
 
-<!-- include <OpenGL/gl.h> -->
-<!-- include <OpenGL/glu.h> -->
-<!-- include <OpenGL/glext.h> -->
+<!-- include <OpenGL/gl.h> #include <OpenGL/glu.h> #include <OpenGL/glext.h> -->
 
 The header file "SDL_opengl.h" accounts for the first two headers shown here on all supported SDL systems.
 
@@ -53,6 +49,7 @@ If you are are using Project Builder, add OpenGL.framework to your project. On t
 -framework OpenGL
 
 to the GCC or LD arguments in your Makefile
+
 == What's the deal with windowed mode? Why is it so much slower than fullscreen? Can I make it faster? ==
 In Mac OS X, all windows are double-buffered. The application (in this case, SDL's blitting engine) draws into the back buffer. The front buffer is that actual display video memory. When the application is finished drawing, it tells the window server to display the back buffer on the screen. The window server examines the back buffer of other on-screen windows that can affect the appearance of the window you are drawing into, composites your back buffer with the other ones to create the final image which goes back to visible video memory, and you see the result. This is how Quartz can achieve all those fancy alpha affects, and get tear-free window dragging and animation.
 
@@ -85,21 +82,19 @@ Here are two workarounds, pick which one you like best (the second one is the be
 First Method: Create a "Copy Files" build phase. Here's how:
 
  1. Drag "SDL.framework" from the Finder into your project
- 2. Go to the target settings (command-option-e).
- 3. Control-click on the Build Phases and select "New Build Phase->New Copy Files Build Phase".
- 4. For "Where" enter "Frameworks"
- 5. For "Files:" drag the framework from the Groups & Files pane to the text box
+ 1. Go to the target settings (command-option-e).
+ 1. Control-click on the Build Phases and select "New Build Phase->New Copy Files Build Phase".
+ 1. For "Where" enter "Frameworks"
+ 1. For "Files:" drag the framework from the Groups & Files pane to the text box
 
 Second Method: Create a "Shell Script" build phase.
 
  1. Go to the target settings (command-option-e).
- 2. Control-click on the Build Phases and select "New Build Phase->New Shell Script Build Phase".
- 3. Enter this script:
+ 1. Control-click on the Build Phases and select "New Build Phase->New Shell Script Build Phase".
+ 1. Enter this script:
 
-DST="build/$PRODUCT_NAME.app/Contents/Frameworks"
-mkdir -p "$DST"
-/Developer/Tools/CpMac -r ~/Library/Frameworks/SDL.framework
- "$DST"
+DST="build/$PRODUCT_NAME.app/Contents/Frameworks" mkdir -p "$DST" /Developer/Tools/CpMac -r ~/Library/Frameworks/SDL.framework
 
+: "$DST"
 
 While you're at it, also remember to turn on debugging symbols and turn down the optimization level (0 is best for debugging). You will need to clean and rebuild the project for this to take effect.
