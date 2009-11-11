@@ -7,7 +7,7 @@ Initializes the SDL library.  This must be called before using any other SDL fun
 
 == Syntax ==
 ```c++
-int SDL_Init (Uint32 flags);
+int SDL_Init (Uint32 flags)
 ```
 
 == Function Parameters ==
@@ -46,7 +46,7 @@ specify the subsystems which you will be using in your application:
 == Return Value ==
 Returns 0 if successful, -1 otherwise.
 
-If this function fails, you can usually get an error message through [[SDL_GetError]], but not always.  Specifically, if pth_init() fails, no error message is set.
+If this function fails you can usually get an error message through [[SDL_GetError]], but not always.
 
 == Code Examples ==
 === C ===
