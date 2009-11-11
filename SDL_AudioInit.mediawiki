@@ -7,7 +7,7 @@ Use this function to access the raw audio mixing buffer for the SDL library.
 
 == Syntax ==
 ```c++
-int SDL_AudioInit (const char *driver_name)
+int SDL_AudioInit (const char * driver_name)
 ```
 
 == Function Parameters ==
@@ -20,7 +20,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+These functions are used internally, and should not be used unless you have a specific need to specify the audio driver you want to use.  You should normally use SDL_Init() or SDL_InitSubSystem().
 
 == Related Functions ==
  [[SDL_OtherFunction]]
