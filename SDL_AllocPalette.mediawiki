@@ -11,6 +11,10 @@ SDL_Palette * SDL_AllocPalette (int ncolors)
 ```
 
 == Function Parameters ==
+{|
+|'''ncolors'''
+|represents the number of color entries in the color palette
+|}
 
 == Return Value ==
 A new palette, or NULL if there wasn't enough memory.
