@@ -12,7 +12,7 @@ int SDL_Init (Uint32 flags)
 
 == Function Parameters ==
 These are the flags which may be passed to SDL_Init() -- you should
-specify the subsystems which you will be using in your application:
+specify the subsystems which you will be using in your application.  They should be OR'd together.  
 
 {|
 |'''SDL_INIT_TIMER'''
