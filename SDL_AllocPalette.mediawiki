@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+
 = SDL_AllocPalette =
 Use this function to create a palette structure with the specified number of color entries.
 
@@ -8,9 +9,11 @@ Use this function to create a palette structure with the specified number of col
 ```c++
 SDL_Palette * SDL_AllocPalette (int ncolors)
 ```
+
 == Function Parameters ==
+
 == Return Value ==
-A new palette, or NULL if there wasn't enough memory
+A new palette, or NULL if there wasn't enough memory.
 
 == Code Examples ==
 ```c++
@@ -21,4 +24,4 @@ You can add your code example here
 The palette entries are initialized to white.
 
 == Related Functions ==
-[[SDL_FreePalette]]()
+ [[SDL_FreePalette]]
