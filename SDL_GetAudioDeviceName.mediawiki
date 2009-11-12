@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetAudioDeviceName =
+Use this function to get the human-readable name of a specific audio device.
+
+
+== Syntax ==
+```c++
+const char * SDL_GetAudioDeviceName (int index,
+                                     int iscapture)
+```
+
+== Function Parameters ==
+
+== Return Value ==
+
+The string returned by this function is UTF-8 encoded, read-only, and managed internally. You are not to free it. If you need to keep the string for any length of time, you should make your own copy of it, as it will be invalid next time any of several other SDL functions is called.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Must be a value between 0 and (number of audio devices-1).
+Only valid after successfully initializing the audio subsystem.
+The values returned by this function reflect the latest call to [[SDL_GetNumAudioDevices]](); recall that function to redetect available hardware.
+
+
+== Related Functions ==
+:[[SDL_GetNumAudioDevices]]
