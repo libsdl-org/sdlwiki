@@ -23,4 +23,4 @@ You can add your code example here
 This function is used internally, and should not be used unless you have a specific need to specify the audio driver you want to use. You should normally use [[SDL_Init()]] or [[SDL_InitSubSystem()]]. 
 
 == Related Functions ==
- [[SDL_OtherFunction]]
+ [[ ]]
