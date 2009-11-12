@@ -1,0 +1,31 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_FreeWAV =
+Use this function to free data previously allocated with [[SDL_LoadWAV_RW]]().
+
+
+== Syntax ==
+```c++
+void SDL_FreeWAV (Uint8 * audio_buf)
+```
+
+== Function Parameters ==
+{|
+|'''audio_buf'''
+|a pointer to the buffer created by SDL_LoadWAV; for more info see [[SDL_LoadWAV]]
+|}
+
+== Return Value ==
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_LoadWAV]]
