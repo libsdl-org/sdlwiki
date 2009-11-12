@@ -1,0 +1,26 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CloseAudioDevice =
+Use this function to shut down audio processing and close the audio device.
+
+
+== Syntax ==
+```c++
+void SDL_CloseAudioDevice (SDL_AudioDeviceID dev)
+```
+
+== Function Parameters ==
+
+== Return Value ==
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[ ]]
