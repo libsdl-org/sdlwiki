@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetAudioStatus =
+Use this function to get the current audio state.
+
+
+== Syntax ==
+```c++
+SDL_audiostatus SDL_GetAudioStatus(void)
+```
+
+== Function Parameters ==
+
+{|
+|'''param'''
+|Something passed to SDL_FunctionName
+|}
+
+== Return Value ==
+Returns either SDL_AUDIO_STOPPED, SDL_AUDIO_PLAYING or SDL_AUDIO_PAUSED depending on the current audio state.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
