@@ -1,0 +1,27 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetAudioDriver =
+Use this function to return the list of built in audio drivers, in the order that they are normally initialized by default.
+
+
+== Syntax ==
+```c++
+const char * SDL_GetAudioDriver (int index)
+```
+
+== Function Parameters ==
+
+== Return Value ==
+The list of built in audio drivers, in the order that they are normally initialized by default.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is a driver discovery function.
+
+== Related Functions ==
+:[[ ]]
