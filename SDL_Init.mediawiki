@@ -46,7 +46,7 @@ specify the subsystems which you will be using in your application.  They should
 == Return Value ==
 Returns 0 if successful, -1 otherwise.
 
-If this function fails you can usually get an error message through [[SDL_GetError]], but not always.
+If this function fails you can usually get an error message through [[SDL_GetError]](), but not always.
 
 == Code Examples ==
 === C ===
