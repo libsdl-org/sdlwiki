@@ -13,7 +13,7 @@ int SDL_ConvertAudio (SDL_AudioCVT * cvt)
 == Function Parameters ==
 {|
 |'''cvt'''
-|
+|an audio conversion structure that was previously set up; see Remarks for details
 |}
 
 == Return Value ==
@@ -98,5 +98,4 @@ The data conversion may expand the size of the audio data, so the buffer cvt->bu
 If the conversion completed successfully then the converted audio data can be read from cvt->buf. The amount of valid, converted, audio data in the buffer is equal to cvt->len*cvt->len_ratio. 
  
 == Related Functions ==
-:[[SDL_BuildAudioCVT]] 
-:[[SDL_AudioCVT]] 
+:[[SDL_BuildAudioCVT]]
