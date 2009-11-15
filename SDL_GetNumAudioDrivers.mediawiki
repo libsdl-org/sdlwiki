@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetNumAudioDrivers =
+Use this function to return the number of built in audio drivers.
+
+
+== Syntax ==
+```c++
+int SDL_GetNumAudioDrivers(void)
+```
+
+== Return Value ==
+The number of built in audio drivers.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_GetAudioDriver]]
