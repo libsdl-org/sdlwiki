@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetAudioDeviceName =
-Use this function to get the human-readable name of a specific audio device.
+Use this function to get the name of a specific audio device.
 
 
 == Syntax ==
@@ -12,10 +12,16 @@ const char * SDL_GetAudioDeviceName (int index,
 ```
 
 == Function Parameters ==
+{|
+|'''index'''
+|the index of the audio device; the value ranges from 0 to 1 - [[SDL_GetNumAudioDevices]]()
+|-
+|'''iscapture'''
+|non-0 to specify a device that has recording capability
+|}
 
 == Return Value ==
-
-The string returned by this function is UTF-8 encoded, read-only, and managed internally. You are not to free it. If you need to keep the string for any length of time, you should make your own copy of it, as it will be invalid next time any of several other SDL functions is called.
+The name of the audio device at the requested index.
 
 == Code Examples ==
 ```c++
@@ -23,10 +29,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-Must be a value between 0 and (number of audio devices-1).
-Only valid after successfully initializing the audio subsystem.
-The values returned by this function reflect the latest call to [[SDL_GetNumAudioDevices]](); recall that function to redetect available hardware.
+This function is only valid after successfully initializing the audio subsystem.
+The values returned by this function reflect the latest call to [[SDL_GetNumAudioDevices]](); re-call that function to re-detect available hardware.
 
+The string returned by this function is UTF-8 encoded, read-only, and managed internally. You are not to free it. If you need to keep the string for any length of time, you should make your own copy of it, as it will be invalid next time any of several other SDL functions is called.
 
 == Related Functions ==
 :[[SDL_GetNumAudioDevices]]
