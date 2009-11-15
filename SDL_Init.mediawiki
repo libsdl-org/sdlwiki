@@ -7,7 +7,7 @@ Initializes the SDL library.  This must be called before using any other SDL fun
 
 == Syntax ==
 ```c++
-int SDL_Init (Uint32 flags)
+int SDL_Init(Uint32 flags)
 ```
 
 == Function Parameters ==
@@ -144,8 +144,8 @@ Note that the event system is actually started by the video subsystem, so using 
 
 == Related Functions ==
 :[[SDL_InitSubSystem]] 
-:[[SDL_WasInit]] 
 :[[SDL_Quit]] 
+:[[SDL_WasInit]] 
 
 ----
 :[[CategoryAPI]] 
