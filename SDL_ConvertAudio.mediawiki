@@ -11,10 +11,14 @@ int SDL_ConvertAudio (SDL_AudioCVT * cvt)
 ```
 
 == Function Parameters ==
+{|
+|'''cvt'''
+|
+|}
 
 == Return Value ==
 
-Returns 0 if the conversion was completed successfully, otherwise -1 is returned.
+Returns 0 if the conversion was completed successfully, otherwise -1 is returned and call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -87,9 +91,9 @@ SDL_ConvertAudio(&wav_cvt);
 ```
 
 == Remarks ==
-Once you have initialized the \c cvt structure using [[SDL_BuildAudioCVT]](), created an audio buffer \c cvt->buf, and filled it with \c cvt->len bytes of audio data in the source format, this function will convert it in-place to the desired format.
+Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer cvt->buf, and filled it with cvt->len bytes of audio data in the source format, this function will convert it in-place to the desired format.
 
-The data conversion may expand the size of the audio data, so the buffer \c cvt->buf should be allocated after the \c cvt structure is initialized by [[SDL_BuildAudioCVT]](), and should be \c cvt->len*cvt->len_mult bytes long.
+The data conversion may expand the size of the audio data, so the buffer cvt->buf should be allocated after the cvt structure is initialized by [[SDL_BuildAudioCVT]](), and should be cvt->len*cvt->len_mult bytes long.
 
 If the conversion completed successfully then the converted audio data can be read from cvt->buf. The amount of valid, converted, audio data in the buffer is equal to cvt->len*cvt->len_ratio. 
  
