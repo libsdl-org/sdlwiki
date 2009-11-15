@@ -24,14 +24,14 @@ The number of available devices exposed by the current driver or -1 if an explic
 int i, count = SDL_GetNumAudioDevices(0);
 
 for ( i = 0; i < count; ++i ) {
-    printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0);
+    printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0));
 }
 ```
 
 == Remarks ==
 This function is only valid after successfully initializing the audio subsystem.
 
-Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified to [[SDL_OpenAudioDevice]]().
+Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified in [[SDL_OpenAudioDevice]]().
 
 In many common cases, when this function returns a value <= 0, it can still successfully open the default device (NULL for first argument of  [[SDL_OpenAudioDevice]]()).
 
