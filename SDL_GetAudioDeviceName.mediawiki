@@ -28,7 +28,7 @@ The name of the audio device at the requested index.
 int i, count = SDL_GetNumAudioDevices(0);
 
 for ( i = 0; i < count; ++i ) {
-    printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0);
+    printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0));
 }
 ```
 
