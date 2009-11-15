@@ -25,7 +25,11 @@ The name of the audio device at the requested index.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+int i, count = SDL_GetNumAudioDevices(0);
+
+for ( i = 0; i < count; ++i ) {
+    printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0);
+}
 ```
 
 == Remarks ==
