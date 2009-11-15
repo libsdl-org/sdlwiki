@@ -7,7 +7,7 @@ Use this function to convert audio data to a desired audio format.
 
 == Syntax ==
 ```c++
-int SDL_ConvertAudio (SDL_AudioCVT * cvt)
+int SDL_ConvertAudio(SDL_AudioCVT * cvt)
 ```
 
 == Function Parameters ==
