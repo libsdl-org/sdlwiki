@@ -7,8 +7,8 @@ Use this function to get the name of a specific audio device.
 
 == Syntax ==
 ```c++
-const char * SDL_GetAudioDeviceName (int index,
-                                     int iscapture)
+const char * SDL_GetAudioDeviceName(int index,
+                                    int iscapture)
 ```
 
 == Function Parameters ==
