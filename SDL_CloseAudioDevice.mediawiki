@@ -7,12 +7,14 @@ Use this function to shut down audio processing and close the audio device.
 
 == Syntax ==
 ```c++
-void SDL_CloseAudioDevice (SDL_AudioDeviceID dev)
+void SDL_CloseAudioDevice(SDL_AudioDeviceID dev)
 ```
 
 == Function Parameters ==
-
-== Return Value ==
+{|
+|'''dev'''
+|an audio device previously opened with [[SDL_OpenAudioDevice]]()
+|}
 
 == Code Examples ==
 ```c++
@@ -23,4 +25,4 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
-:[[ ]]
+:[[SDL_OpenAudioDevice]]
