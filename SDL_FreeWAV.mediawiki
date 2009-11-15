@@ -26,4 +26,4 @@ You can add useful comments here
 
 == Related Functions ==
 :[[SDL_LoadWAV]]
-:[[SDL_LoadWAV]]
+:[[SDL_LoadWAV_RW]]
