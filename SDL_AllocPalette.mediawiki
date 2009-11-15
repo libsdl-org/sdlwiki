@@ -7,7 +7,7 @@ Use this function to create a palette structure with the specified number of col
 
 == Syntax ==
 ```c++
-SDL_Palette * SDL_AllocPalette (int ncolors)
+SDL_Palette * SDL_AllocPalette(int ncolors)
 ```
 
 == Function Parameters ==
