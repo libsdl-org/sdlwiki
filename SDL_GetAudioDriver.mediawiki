@@ -13,7 +13,7 @@ const char * SDL_GetAudioDriver (int index)
 == Function Parameters ==
 {|
 |'''index'''
-|the value ranges from 0 to 1-SDL_GetNumAudioDrivers()
+|the value ranges from 0 to 1 - [[SDL_GetNumAudioDrivers]]()
 |}
 
 == Return Value ==
