@@ -17,7 +17,7 @@ int SDL_GetNumAudioDevices (int iscapture)
 |}
 
 == Return Value ==
-The number of built in audio drivers.
+The number of available devices exposed by the current driver or -1 if an explicit list of devices can't be determined. 
 
 == Code Examples ==
 ```c++
@@ -29,9 +29,11 @@ for ( i = 0; i < count; ++i ) {
 ```
 
 == Remarks ==
-This function is only valid after successfully initializing the audio subsystem. Returns -1 if an explicit list of devices can't be determined; this is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified to [[SDL_OpenAudioDevice]]().
+This function is only valid after successfully initializing the audio subsystem.
+
+Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified to [[SDL_OpenAudioDevice]]().
 
 In many common cases, when this function returns a value <= 0, it can still successfully open the default device (NULL for first argument of  [[SDL_OpenAudioDevice]]()).
 
 == Related Functions ==
-:[[SDL_GetAudioDriver]]
+:[[SDL_GetAudioDeviceName]]
