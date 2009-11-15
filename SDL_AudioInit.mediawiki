@@ -7,7 +7,7 @@ Use this function to initialize a particular audio driver.
 
 == Syntax ==
 ```c++
-int SDL_AudioInit (const char * driver_name)
+int SDL_AudioInit(const char* driver_name)
 ```
 
 == Function Parameters ==
