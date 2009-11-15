@@ -7,7 +7,7 @@ Use this function to get the name of a built in audio driver.
 
 == Syntax ==
 ```c++
-const char * SDL_GetAudioDriver(int index)
+const char* SDL_GetAudioDriver(int index)
 ```
 
 == Function Parameters ==
