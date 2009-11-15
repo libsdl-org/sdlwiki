@@ -7,7 +7,7 @@ Use this function to free data previously allocated with [[SDL_LoadWAV]]() or [[
 
 == Syntax ==
 ```c++
-void SDL_FreeWAV(Uint8 * audio_buf)
+void SDL_FreeWAV(Uint8* audio_buf)
 ```
 
 == Function Parameters ==
