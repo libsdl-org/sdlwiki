@@ -11,7 +11,7 @@ SDL_audiostatus SDL_GetAudioStatus(void)
 ```
 
 == Return Value ==
-Returns the current audio state:
+Returns the current audio state which can be one of:
 :SDL_AUDIO_STOPPED
 :SDL_AUDIO_PLAYING
 :SDL_AUDIO_PAUSED
