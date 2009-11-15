@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioInit =
-Use this function to access the raw audio mixing buffer for the SDL library.
+Use this function to initialize a particular audio driver.
 
 
 == Syntax ==
@@ -11,8 +11,13 @@ int SDL_AudioInit (const char * driver_name)
 ```
 
 == Function Parameters ==
+{|
+|'''driver_name'''
+|the name of the desired audio driver
+|}
 
 == Return Value ==
+0 on success or -1 on failure and call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -23,4 +28,4 @@ You can add your code example here
 This function is used internally, and should not be used unless you have a specific need to specify the audio driver you want to use.  You should normally use [[SDL_Init]]() or [[SDL_InitSubSystem]]().
 
 == Related Functions ==
- [[ ]]
+ [[SDL_AudioQuit]]
