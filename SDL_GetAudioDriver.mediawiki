@@ -21,7 +21,11 @@ The name of the audio driver at the requested index.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+int i;
+
+for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
+    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i);
+}
 ```
 
 == Remarks ==
