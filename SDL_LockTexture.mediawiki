@@ -41,7 +41,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can pass 0 for '''markDirty''' and then use [[SDL_DirtyTexture]]() to mark specific subareas as dirty instead of marking the entire area dirty.
+You can pass 0 for '''markDirty''' and then use [[SDL_DirtyTexture]]() to mark specific subareas as dirty if you don't want to mark the entire area dirty.
 
 == Related Functions ==
 :[[SDL_DirtyTexture]]
