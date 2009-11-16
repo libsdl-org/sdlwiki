@@ -17,7 +17,7 @@ SDL_Palette* SDL_AllocPalette(int ncolors)
 |}
 
 == Return Value ==
-A new palette, or NULL if there wasn't enough memory.
+A new palette of type [[SDL_Palette]], or NULL if there wasn't enough memory.
 
 == Code Examples ==
 ```c++
