@@ -26,10 +26,10 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 |specifies the target audio format; see [[SDL_AudioSpec]] for more info
 |-
 |'''audio_buf'''
-|the audio buffer
+|specifies the audio buffer
 |-
 |'''audio_len'''
-|the length of the audio buffer in bytes
+|specifies the length of the audio buffer in bytes
 |}
 
 == Return Value ==
