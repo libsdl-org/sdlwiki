@@ -1,0 +1,56 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_LoadWAV_RW =
+Use this function to load a WAVE from the data source, automatically freeing that source if freesrc is non-zero.
+
+
+== Syntax ==
+```c++
+SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
+                              int            freesrc,
+                              SDL_AudioSpec* spec,
+                              Uint8**        audio_buf,
+                              Uint32*        audio_len)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|the data source for the wave file
+|-
+|'''freesrc'''
+|non-zero to automatically free the data source, 0 for no change
+|-
+|'''spec'''
+|specifies the target audio format; see [[SDL_AudioSpec]] for more info
+|-
+|'''audio_buf'''
+|the audio buffer
+|-
+|'''audio_len'''
+|the length of the audio buffer in bytes
+|}
+
+== Return Value ==
+If this function succeeds, it returns the given [[SDL_AudioSpec]], filled with the audio data format of the wave data, and sets *audio_buf to a malloc()'d buffer containing the audio data, and sets *audio_len to the length of that audio buffer, in bytes.  
+
+This function returns NULL and sets the SDL error message if the wave file cannot be opened, uses an unknown data format, or is corrupt.  Call [[SDL_GetError]]() for more information.  
+
+== Code Examples ==
+```c++
+For example, to load a WAVE file, you could do:
+\code
+SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, ...);
+\endcode
+
+```
+
+== Remarks ==
+Currently raw and MS-ADPCM WAVE files are supported.
+
+You need to free the audio buffer with [[SDL_FreeWAV]]() when you are done with it.
+
+== Related Functions ==
+:[[SDL_FreeWAV]]
+:[[SDL_LoadWAV]]
