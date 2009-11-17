@@ -19,10 +19,10 @@ void SDL_MixAudio(Uint8*       dst,
 |points to the destination for the mixed audio
 |-
 |'''src'''
-|points to the source audio to be mixed
+|points to the source audio buffers to be mixed
 |-
 |'''len'''
-|defines the length of the audio clip
+|defines the length of the audio buffers in bytes
 |-
 |'''volume'''
 |ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME for full audio volume
@@ -34,11 +34,22 @@ You can add your code example here
 ```
 
 == Remarks ==
-This takes two audio buffers of the playing audio format and mixes them, performing addition, volume adjustment, and overflow clipping.
+This takes two audio buffers of '''len''' bytes each of the playing audio format and mixes them, performing addition, volume adjustment, and overflow clipping.
 
-Note this does not change hardware volume.
+Note that this does not change hardware volume.
 
 This is provided for convenience -- you can mix your own audio data.
+
+Do not use this function for mixing together more than two streams of sample data. The output from repeated application of this function may be distorted by clipping, because there is no accumulator with greater range than the input (not to mention this being an inefficient way of doing it). Use mixing functions from SDL_mixer, OpenAL, or write your own mixer instead.
+
+It is a common misconception that this function is required to write audiodata to an outputstream in the audio-callback like: 
+```c++
+void audio_callback(void *udata, Uint8 *stream, int len)
+{
+    SDL_MixAudio(stream, audio_pos, len, SDL_MIX_MAXVOLUME);
+}
+```
+Although this works, for a single channel it's just as good as writing the audiodata directly to stream; that is if you don't need the volume adjustment. 
 
 == Related Functions ==
 :[[ ]]
