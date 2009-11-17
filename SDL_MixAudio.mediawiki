@@ -52,4 +52,4 @@ void audio_callback(void *udata, Uint8 *stream, int len)
 Although this works, for a single channel it's just as good as writing the audiodata directly to stream; that is if you don't need the volume adjustment. 
 
 == Related Functions ==
-:[[ ]]
+:[[SDL_MixAudioFormat]]
