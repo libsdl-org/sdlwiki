@@ -1,0 +1,26 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_LockAudio =
+Use this function to lock out the callback function.
+
+
+== Syntax ==
+```c++
+void SDL_LockAudio(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() pair, you can be guaranteed that the callback function is not running.  
+
+Do not call these from the callback function or you will cause deadlock.
+
+== Related Functions ==
+:[[SDL_LockAudioDevice]]
+:[[SDL_UnlockAudio]]
+:[[SDL_UnlockAudioDevice]]
