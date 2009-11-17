@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_MixAudio =
+Use this function to mix audio data.
+
+
+== Syntax ==
+```c++
+void SDL_MixAudio(Uint8*       dst, 
+                  const Uint8* src,
+                  Uint32       len, 
+                  int          volume)
+```
+
+== Function Parameters ==
+{|
+|'''dst'''
+|points to the destination for the mixed audio
+|-
+|'''src'''
+|points to the source audio to be mixed
+|-
+|'''len'''
+|defines the length of the audio clip
+|-
+|'''volume'''
+|ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME for full audio volume
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This takes two audio buffers of the playing audio format and mixes them, performing addition, volume adjustment, and overflow clipping.
+
+Note this does not change hardware volume.
+
+This is provided for convenience -- you can mix your own audio data.
+
+== Related Functions ==
+:[[ ]]
