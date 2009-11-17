@@ -23,6 +23,6 @@ The lock manipulated by these functions protects the callback function.  During 
 Do not call these from the callback function or you will cause deadlock.
 
 == Related Functions ==
+:[[SDL_LockAudio]]
 :[[SDL_LockAudioDevice]]
-:[[SDL_UnlockAudio]]
 :[[SDL_UnlockAudioDevice]]
