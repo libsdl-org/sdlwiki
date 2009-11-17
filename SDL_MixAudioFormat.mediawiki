@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_MixAudioFormat =
+Use this function to mix audio data in a specified format.
+
+
+== Syntax ==
+```c++
+void SDL_MixAudioFormat(Uint8*          dst,
+                        const Uint8*    src,
+                        SDL_AudioFormat format,
+                        Uint32          len, 
+                        int             volume)
+```
+
+== Function Parameters ==
+{|
+|'''dst'''
+|points to the destination for the mixed audio
+|-
+|'''src'''
+|points to the source audio buffers to be mixed
+|-
+|'''format'''
+|the specified audio format
+|-
+|'''len'''
+|defines the length of the audio buffers in bytes
+|-
+|'''volume'''
+|ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME for full audio volume
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This works like [[SDL_MixAudio]](), but you specify the audio '''format''' instead of using the format of audio device 1. Thus it can be used when no audio device is open at all.
+
+== Related Functions ==
+:[[SDL_MixAudio]]
