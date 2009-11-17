@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetCurrentAudioDriver =
+Use this function to return the name of the current audio driver.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetCurrentAudioDriver(void)
+```
+
+== Return Value ==
+Returns the name of the current audio driver, or NULL if no driver has been initialized.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[ ]]
