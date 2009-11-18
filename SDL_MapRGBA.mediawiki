@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_MapRGBA =
+Use this function to map an RGBA quadruple to a pixel value for a given pixel format.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_MapRGBA(const SDL_PixelFormat* format,
+                   Uint8                  r, 
+                   Uint8                  g, 
+                   Uint8                  b,
+                   Uint8                  a)
+```
+
+== Function Parameters ==
+{|
+|'''format'''
+|
+|-
+|'''r'''
+|
+|-
+|'''g'''
+|
+|-
+|'''b'''
+|
+|-
+|'''a'''
+|
+|}
+
+== Return Value ==
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_MapRGB]]
