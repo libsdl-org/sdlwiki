@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_MasksToPixelFormatEnum =
+Use this function to convert a bpp and RGBA masks to an enumerated pixel format.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
+                                  Uint32 Rmask,
+                                  Uint32 Gmask,
+                                  Uint32 Bmask,
+                                  Uint32 Amask)
+```
+
+== Function Parameters ==
+{|
+|'''bpp'''
+|
+|-
+|'''Rmask'''
+|
+|-
+|'''Gmask'''
+|
+|-
+|'''Bmask'''
+|
+|-
+|'''Amask'''
+|
+|}
+
+== Return Value ==
+The pixel format, or ::SDL_PIXELFORMAT_UNKNOWN if the conversion wasn't possible.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_PixelFormatEnumToMasks]]
