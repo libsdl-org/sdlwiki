@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_PauseAudioDevice =
+Use this function to pause and unpause audio functions on a specified device.
+
+
+== Syntax ==
+```c++
+void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
+                          int               pause_on)
+```
+
+== Function Parameters ==
+{|
+|'''dev'''
+|the device specified by [[SDL_AudioDeviceID]]
+|-
+|'''pause_on'''
+|
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function pauses and unpauses the audio callback processing. It should be called with '''pause_on'''=0 after opening the specified audio device to start playing sound. This is so you can safely initialize data for your callback function after opening the audio device. Silence will be written to the audio device during the pause.
+
+== Related Functions ==
+:[[SDL_PauseAudio]]
