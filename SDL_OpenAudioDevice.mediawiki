@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_OpenAudioDevice =
+Use this function to open a specific audio device.
+
+
+== Syntax ==
+```c++
+SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
+                                      int                  iscapture,
+                                      const SDL_AudioSpec* desired,
+                                      SDL_AudioSpec*       obtained,
+                                      int                  allowed_changes)
+```
+
+== Function Parameters ==
+{|
+|'''device'''
+|a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#Remarks|Remarks]]
+|-
+|'''iscapture'''
+|
+|-
+|'''desired'''
+|
+|-
+|'''obtained'''
+|
+|-
+|'''allowed_changes'''
+|
+|}
+
+== Return Value ==
+Returns a valid device ID that is >= 2 on success or 0 on failure; call [[SDL_GetError]]() for more information. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to calling [[SDL_OpenAudio]]()).
+The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and driver-specific strings, such as a hostname/IP address for a remote audio server, or a filename in the diskaudio driver.
+
+[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1.
+
+== Related Functions ==
+:[[SDL_GetAudioDeviceName]]
+:[[SDL_OpenAudio]]
