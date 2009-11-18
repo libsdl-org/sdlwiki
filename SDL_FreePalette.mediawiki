@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_FreePalette =
+Use this function to free a palette created with [[SDL_AllocPalette]]().
+
+
+== Syntax ==
+```c++
+void SDL_FreePalette(SDL_Palette* palette)
+```
+
+== Function Parameters ==
+{|
+|'''palette'''
+|the [[SDL_palette]] to be freed
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_AllocPalette]]
