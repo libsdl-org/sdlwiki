@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_MapRGB =
+Use this function to map an RGB triple to an opaque pixel value for a given pixel format.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_MapRGB(const SDL_PixelFormat* format,
+                  Uint8                  r, 
+                  Uint8                  g, 
+                  Uint8                  b)
+```
+
+== Function Parameters ==
+{|
+|'''format'''
+|
+|-
+|'''r'''
+|
+|-
+|'''g'''
+|
+|-
+|'''b'''
+|
+|}
+
+== Return Value ==
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_MapRGBA]]
