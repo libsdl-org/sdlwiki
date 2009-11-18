@@ -1,0 +1,48 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetRGBA =
+Use this function to map a pixel value into the RGBA components for a given pixel format.
+
+
+== Syntax ==
+```c++
+void SDL_GetRGBA(Uint32   	        pixel,
+		 const SDL_PixelFormat* format,
+		 Uint8*  	        r,
+		 Uint8*  	        g,
+		 Uint8*  	        b,
+		 Uint8*  	        a)
+```
+
+== Function Parameters ==
+{|
+|'''pixel'''
+|
+|-
+|'''format'''
+|
+|-
+|'''r'''
+|
+|-
+|'''g'''
+|
+|-
+|'''b'''
+|
+|-
+|'''a'''
+|
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_GetRGB]]
