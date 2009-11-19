@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CreateRenderer =
+Use this function to create and make active a 2D rendering context for a window.
+
+
+== Syntax ==
+```c++
+int SDL_CreateRenderer(SDL_WindowID windowID,
+                       int  	    index,
+                       Uint32  	    flags)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the window used for rendering
+|-
+|'''index'''
+|the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags
+|-
+|'''flags'''
+|[[SDL_RendererFlags]]
+|}
+
+== Return Value ==
+0 on success, -1 if there was an error creating the renderer
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_DestroyRenderer]]
+:[[SDL_GetRendererInfo]]
+:[[SDL_SelectRenderer]]
