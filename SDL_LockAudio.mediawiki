@@ -16,7 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() pair, you can be guaranteed that the callback function is not running.  
+The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() pair, you can be guaranteed that the callback function for the default audio device is not running.  
 
 Do not call these from the callback function or you will cause deadlock.
 
