@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetDisplayMode =
+Use this function to fill in information about a specific display mode.
+
+
+== Syntax ==
+```c++
+int SDL_GetDisplayMode(int              index,
+                       SDL_DisplayMode* mode)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the display mode
+|-
+|'''mode'''
+|points to the mode of the display
+|}
+
+== Return Value ==
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The display modes are sorted in this priority:
+
+* bits per pixel -> more colors to fewer colors
+* width -> largest to smallest
+* height -> largest to smallest
+* refresh rate -> highest to lowest
+
+== Related Functions ==
+:[[SDL_GetNumDisplayModes]]
