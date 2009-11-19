@@ -47,5 +47,6 @@ The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]]()
 [[SDL_OpenAudio]](), unlike this function, always acts on device ID 1.
 
 == Related Functions ==
+:[[SDL_CloseAudioDevice]]
 :[[SDL_GetAudioDeviceName]]
 :[[SDL_OpenAudio]]
