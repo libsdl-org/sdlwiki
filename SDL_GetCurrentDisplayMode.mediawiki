@@ -13,11 +13,10 @@ int SDL_GetCurrentDisplayMode(SDL_DisplayMode* mode)
 == Function Parameters ==
 {|
 |'''mode'''
-|
+|the desired display mode
 |}
 
 == Return Value ==
-
 Information about the current display mode.
 
 == Code Examples ==
@@ -29,4 +28,4 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_GetDisplayMode]]
