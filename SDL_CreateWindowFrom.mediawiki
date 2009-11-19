@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CreateWindowFrom =
+Use this function to create an SDL window struct from an existing native window.
+
+
+== Syntax ==
+```c++
+SDL_WindowID SDL_CreateWindowFrom(const void* data)
+```
+
+== Function Parameters ==
+{|
+|'''data'''
+|a pointer to driver-dependent window creation data 
+|}
+
+== Return Value ==
+The ID of the window created, or 0 if window creation failed; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+```#!wiki caution
+This function is NOT SUPPORTED, use at your own risk!
+```
+
+== Related Functions ==
+:[[SDL_DestroyWindow]]
