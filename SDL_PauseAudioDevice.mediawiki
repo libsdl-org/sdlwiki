@@ -14,7 +14,7 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
 == Function Parameters ==
 {|
 |'''dev'''
-|the device opened by [[SDL_OpenAudioDevice]]()
+|a device opened by [[SDL_OpenAudioDevice]]()
 |-
 |'''pause_on'''
 |non-zero to pause, 0 to unpause
