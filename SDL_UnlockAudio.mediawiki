@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_UnlockAudio =
-Use this function to unlock the callback function.
+Use this function to unlock the audio callback function.
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ You can add your code example here
 == Remarks ==
 Unlocks a previous [[SDL_LockAudio]]() call. 
 
-The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudio]]()/SDL_UnlockAudio() pair, you can be guaranteed that the callback function is not running.  
+The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() pair, you can be guaranteed that the callback function for the default audio device is not running.  
 
 Do not call these from the callback function or you will cause deadlock.
 
