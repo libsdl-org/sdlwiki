@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_DestroyWindow =
+Use this function to destroy a window.
+
+
+== Syntax ==
+```c++
+void SDL_DestroyWindow(SDL_WindowID windowID)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the window to destroy
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
