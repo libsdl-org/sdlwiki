@@ -39,7 +39,7 @@ This function returns NULL and sets the SDL error message if the wave file canno
 
 == Code Examples ==
 ```c++
-For example, to load a WAVE file, you could do:
+/* To load a WAVE file you could use SDL_LoadWAV() or do this: */
 SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, ...);
 ```
 
