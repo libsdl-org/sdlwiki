@@ -19,13 +19,13 @@ void SDL_MixAudio(Uint8*       dst,
 |points to the destination for the mixed audio
 |-
 |'''src'''
-|points to the source audio buffers to be mixed
+|points to the source audio buffer to be mixed
 |-
 |'''len'''
-|defines the length of the audio buffers in bytes
+|defines the length of the audio buffer in bytes
 |-
 |'''volume'''
-|ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME for full audio volume
+|ranges from 0 - 128, and should be set to SDL_MIX_MAXVOLUME for full audio volume
 |}
 
 == Code Examples ==
@@ -34,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This takes two audio buffers of '''len''' bytes each of the playing audio format and mixes them, performing addition, volume adjustment, and overflow clipping.
+This takes an audio buffer '''src''' of '''len''' bytes in the playing audio format and mixes them into '''dst''', performing addition, volume adjustment, and overflow clipping.
 
 Note that this does not change hardware volume.
 
