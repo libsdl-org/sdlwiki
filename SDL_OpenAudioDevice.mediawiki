@@ -20,13 +20,13 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#Remarks|Remarks]]
 |-
 |'''iscapture'''
-|
+|non-0 to specify a device that has recording capability
 |-
 |'''desired'''
-|
+|the desired audio parameters; see [[SDL_OpenAudio]]() for more information
 |-
 |'''obtained'''
-|
+|a pointer to an [[SDL_AudioSpec]] structure to be filled in; see [[SDL_OpenAudio]]() for more information
 |-
 |'''allowed_changes'''
 |
