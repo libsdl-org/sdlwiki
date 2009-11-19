@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_LockAudioDevice =
-Use this function to lock out the callback function for a specified device.
+Use this function to lock out the audio callback function for a specified device.
 
 
 == Syntax ==
