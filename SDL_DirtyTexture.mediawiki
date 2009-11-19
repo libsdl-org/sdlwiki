@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_DirtyTexture =
+Use this function to mark the specified rectangles of the texture as dirty.
+
+
+== Syntax ==
+```c++
+void SDL_DirtyTexture(SDL_TextureID   textureID,
+                      int             numrects,
+                      const SDL_Rect* rects) 	
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to mark dirty, which was created with SDL_TEXTUREACCESS_STREAMING
+|-
+|'''numrects'''
+|the number of rectangles pointed to by rects
+|-
+|'''rects'''
+|the pointer to an array of dirty rectangles
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_LockTexture]]
+:[[SDL_UnlockTexture]]
