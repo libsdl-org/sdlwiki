@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CreateTexture =
+Use this function to create a texture for the current rendering context.
+
+
+== Syntax ==
+```c++
+SDL_TextureID SDL_CreateTexture(Uint32 format,
+                                int    access, 
+                                int    w,
+                                int    h)
+```
+
+== Function Parameters ==
+{|
+|'''format'''
+|the format of the texture
+|-
+|'''access'''
+|one of the enumerated values in [[SDL_TextureAccess]]
+|-
+|'''w'''
+|the width of the texture in pixels
+|-
+|'''h'''
+|the height of the texture in pixels
+|}
+
+== Return Value ==
+The created texture is returned, or 0 if no rendering context was active, the format was unsupported, or the width or height were out of range. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_DestroyTexture]]
+:[[SDL_QueryTexture]]
