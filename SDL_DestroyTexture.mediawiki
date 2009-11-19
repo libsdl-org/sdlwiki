@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_DestroyTexture =
+Use this function to destroy the specified texture.
+
+
+== Syntax ==
+```c++
+void SDL_DestroyTexture(SDL_TextureID textureID)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to destroy
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_CreateTexture]]
+:[[SDL_CreateTextureFromSurface]]
