@@ -33,26 +33,19 @@ This function returns a negative error code on failure to open the audio device 
 void my_audio_callback(void *userdata, Uint8 *stream, int len);
 
 /* Open the audio device */
-SDL_AudioSpec *desired, *obtained;
-SDL_AudioSpec *hardware_spec;
-
-/* Allocate a desired SDL_AudioSpec */
-desired = malloc(sizeof(SDL_AudioSpec));
-
-/* Allocate space for the obtained SDL_AudioSpec */
-obtained = malloc(sizeof(SDL_AudioSpec));
+SDL_AudioSpec desired, obtained;
 
 /* 22050Hz - FM Radio quality */
-desired->freq=22050;
+desired.freq=22050;
 
 /* 16-bit signed audio */
-desired->format=AUDIO_S16SYS;
+desired.format=AUDIO_S16SYS;
 
-/* Mono */
-desired->channels=1;
+/* Stereo */
+desired.channels=2;
 
 /* Large audio buffer reduces risk of dropouts but increases response time */
-desired->samples=8192;
+desired->samples=4096;
 
 /* Our callback function */
 desired->callback=my_audio_callback;
@@ -60,13 +53,10 @@ desired->callback=my_audio_callback;
 desired->userdata=NULL;
 
 /* Open the audio device */
-if ( SDL_OpenAudio(desired, obtained) < 0 ){
+if ( SDL_OpenAudio(&desired, &obtained) < 0 ){
   fprintf(stderr, "Couldn't open audio: %s\n", SDL_GetError());
   exit(-1);
 }
-/* desired spec is no longer needed */
-free(desired);
-hardware_spec=obtained;
 .
 .
 /* Prepare callback for playing */
