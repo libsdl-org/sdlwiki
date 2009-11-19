@@ -20,16 +20,16 @@ void SDL_MixAudioFormat(Uint8*          dst,
 |points to the destination for the mixed audio
 |-
 |'''src'''
-|points to the source audio buffers to be mixed
+|points to the source audio buffer to be mixed
 |-
 |'''format'''
-|the specified audio format
+|the specified audio format; see [[SDL_AudioFormat]] for more information
 |-
 |'''len'''
-|defines the length of the audio buffers in bytes
+|defines the length of the audio buffer in bytes
 |-
 |'''volume'''
-|ranges from 0 - 128, and should be set to ::SDL_MIX_MAXVOLUME for full audio volume
+|ranges from 0 - 128, and should be set to SDL_MIX_MAXVOLUME for full audio volume
 |}
 
 == Code Examples ==
