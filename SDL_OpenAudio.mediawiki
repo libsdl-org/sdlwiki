@@ -45,12 +45,11 @@ desired.format=AUDIO_S16SYS;
 desired.channels=2;
 
 /* Large audio buffer reduces risk of dropouts but increases response time */
-desired->samples=4096;
+desired.samples=4096;
 
 /* Our callback function */
-desired->callback=my_audio_callback;
-
-desired->userdata=NULL;
+desired.callback=my_audio_callback;
+desired.userdata=NULL;
 
 /* Open the audio device */
 if ( SDL_OpenAudio(&desired, &obtained) < 0 ){
