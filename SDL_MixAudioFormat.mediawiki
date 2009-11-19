@@ -38,7 +38,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This works like [[SDL_MixAudio]](), but you specify the audio '''format''' instead of using the format of audio device 1. Thus it can be used when no audio device is open at all.
+This works like [[SDL_MixAudio]](), but you specify the audio format instead of using the format of the default audio device. Thus it can be used when no audio device is open at all.
 
 == Related Functions ==
 :[[SDL_MixAudio]]
