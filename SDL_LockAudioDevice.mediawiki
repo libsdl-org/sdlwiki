@@ -22,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudioDevice]]()/[[SDL_UnlockAudioDevice]]() pair, you can be guaranteed that the callback function is not running.  
+The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudioDevice]]()/[[SDL_UnlockAudioDevice]]() pair, you can be guaranteed that the callback function for that device is not running.  
 
 Do not call these from the callback function or you will cause deadlock.
 
