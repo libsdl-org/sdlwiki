@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CreateTextureFromSurface =
+Use this function to create a texture from an existing surface.
+
+
+== Syntax ==
+```c++
+SDL_TextureID SDL_CreateTextureFromSurface(Uint32       format,
+                                           SDL_Surface* surface) 			
+```
+
+== Function Parameters ==
+{|
+|'''format'''
+|the format of the texture, or 0 to pick an appropriate format
+|-
+|'''surface'''
+|the surface containing pixel data used to fill the texture
+|}
+
+== Return Value ==
+The created texture is returned, or 0 if no rendering context was active, the format was unsupported, or the surface width or height were out of range; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The surface is not modified or freed by this function.
+
+== Related Functions ==
+:[[SDL_DestroyTexture]]
+:[[SDL_QueryTexture]]
