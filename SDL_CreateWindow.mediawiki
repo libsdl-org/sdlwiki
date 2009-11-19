@@ -1,0 +1,68 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_CreateWindow =
+Use this function to create a window with the specified position, dimensions, and flags.
+
+
+== Syntax ==
+```c++
+SDL_WindowID SDL_CreateWindow(const char* title,
+                              int         x,
+                              int         y,
+                              int         w,
+                              int  	  h,
+                              Uint32      flags)
+```
+
+== Function Parameters ==
+{|
+|'''title'''
+|the title of the window, in UTF-8 encoding
+|-
+|'''x'''
+|the x position of the window, SDL_WINDOWPOS_CENTERED, or SDL_WINDOWPOS_UNDEFINED
+|-
+|'''y'''
+|the y position of the window, SDL_WINDOWPOS_CENTERED, or SDL_WINDOWPOS_UNDEFINED
+|-
+|'''w'''
+|the width of the window
+|-
+|'''h'''
+|the height of the window
+|-
+|'''flags'''
+|the flags for the window; see [[#Remarks|Remarks]] for details
+|}
+
+== Return Value ==
+The ID of the window created, or 0 if window creation failed; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+'''flags''' may be a mask of any of the following: 
+{|
+|SDL_WINDOW_FULLSCREEN
+|
+|SDL_WINDOW_OPENGL
+|-
+|SDL_WINDOW_SHOWN
+|
+|SDL_WINDOW_BORDERLESS
+|-
+|SDL_WINDOW_RESIZABLE
+|
+|SDL_WINDOW_MAXIMIZED
+|-
+|SDL_WINDOW_MINIMIZED
+|
+|SDL_WINDOW_INPUT_GRABBED
+|}
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
