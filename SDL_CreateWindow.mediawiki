@@ -48,19 +48,19 @@ You can add your code example here
 '''flags''' may be a mask of any of the following: 
 {|
 |SDL_WINDOW_FULLSCREEN
-|
+|-
 |SDL_WINDOW_OPENGL
 |-
 |SDL_WINDOW_SHOWN
-|
+|-
 |SDL_WINDOW_BORDERLESS
 |-
 |SDL_WINDOW_RESIZABLE
-|
+|-
 |SDL_WINDOW_MAXIMIZED
 |-
 |SDL_WINDOW_MINIMIZED
-|
+|-
 |SDL_WINDOW_INPUT_GRABBED
 |}
 
