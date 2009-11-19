@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetCurrentDisplayMode =
+Use this function to fill in information about the current display mode.
+
+
+== Syntax ==
+```c++
+int SDL_GetCurrentDisplayMode(SDL_DisplayMode* mode)
+```
+
+== Function Parameters ==
+{|
+|'''mode'''
+|
+|}
+
+== Return Value ==
+
+Information about the current display mode.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
