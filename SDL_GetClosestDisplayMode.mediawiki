@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetClosestDisplayMode =
+Use this function to get the closest match to the requested display mode.
+
+
+== Syntax ==
+```c++
+SDL_DisplayMode* SDL_GetClosestDisplayMode(const SDL_DisplayMode* mode,
+                                           SDL_DisplayMode*       closest)
+```
+
+== Function Parameters ==
+{|
+|'''mode'''
+|the desired display mode
+|-
+|'''closest'''
+|a pointer to a display mode to be filled in with the closest match of the available display modes
+|}
+
+== Return Value ==
+The passed in value '''closest''', or NULL if no matching video mode was available. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The available display modes are scanned, and '''closest''' is filled in with the closest mode matching the requested mode and returned. The mode format and refresh_rate default to the desktop mode if they are 0. The modes are scanned with size being first priority, format being second priority, and finally checking the refresh_rate. If all the available modes are too small, then NULL is returned.
+
+== Related Functions ==
+:[[SDL_GetDisplayMode]]
+:[[SDL_GetNumDisplayModes]]
