@@ -34,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This takes an audio buffer '''src''' of '''len''' bytes in the playing audio format and mixes them into '''dst''', performing addition, volume adjustment, and overflow clipping.
+This takes an audio buffer '''src''' of '''len''' bytes in the playing audio format and mixes it into '''dst''', performing addition, volume adjustment, and overflow clipping.
 
 Note that this does not change hardware volume.
 
