@@ -1,0 +1,31 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetDesktopDisplayMode =
+Use this function to fill in information about the desktop display mode for the current display.
+
+
+== Syntax ==
+```c++
+int SDL_GetDesktopDisplayMode(SDL_DisplayMode* mode)
+```
+
+== Function Parameters ==
+{|
+|'''mode'''
+|points to the current display mode
+|}
+
+== Return Value ==
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[ ]]
