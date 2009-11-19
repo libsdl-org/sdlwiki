@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_PauseAudio =
-Use this function to pause and unpause audio functions.
+Use this function to pause and unpause audio playback.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ void SDL_PauseAudio(int pause_on)
 
 {|
 |'''pause_on'''
-|
+|non-zero to pause, 0 to unpause
 |}
 
 == Code Examples ==
