@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_PauseAudioDevice =
-Use this function to pause and unpause audio functions on a specified device.
+Use this function to pause and unpause audio playback on a specified device.
 
 
 == Syntax ==
@@ -14,10 +14,10 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
 == Function Parameters ==
 {|
 |'''dev'''
-|the device specified by [[SDL_AudioDeviceID]]
+|the device opened by [[SDL_OpenAudioDevice]]()
 |-
 |'''pause_on'''
-|
+|non-zero to pause, 0 to unpause
 |}
 
 == Code Examples ==
