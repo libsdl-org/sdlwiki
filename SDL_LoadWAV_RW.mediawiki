@@ -17,10 +17,10 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 == Function Parameters ==
 {|
 |'''src'''
-|the data source for the wave file
+|the data source for the wave file; see [[SDL_RWFromMem]]() for more info
 |-
 |'''freesrc'''
-|non-zero to automatically free the data source, 0 for no change
+|non-zero to automatically free the data source
 |-
 |'''spec'''
 |specifies the target audio format; see [[SDL_AudioSpec]] for more info
@@ -40,10 +40,7 @@ This function returns NULL and sets the SDL error message if the wave file canno
 == Code Examples ==
 ```c++
 For example, to load a WAVE file, you could do:
-\code
 SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, ...);
-\endcode
-
 ```
 
 == Remarks ==
