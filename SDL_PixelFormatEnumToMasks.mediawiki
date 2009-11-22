@@ -24,16 +24,16 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
 |a bits per pixel value; usually 15, 16, or 32
 |-
 |'''Rmask'''
-|a pointer to a value that will be filled in with the red component
+|a pointer to a value that will be filled in with the red mask
 |-
 |'''Gmask'''
-|a pointer to a value that will be filled in with the green component
+|a pointer to a value that will be filled in with the green mask
 |-
 |'''Bmask'''
-|a pointer to a value that will be filled in with the blue component
+|a pointer to a value that will be filled in with the blue mask
 |-
 |'''Amask'''
-|a pointer to a value that will be filled in with the alpha component
+|a pointer to a value that will be filled in with the alpha mask
 |}
 
 == Return Value ==
