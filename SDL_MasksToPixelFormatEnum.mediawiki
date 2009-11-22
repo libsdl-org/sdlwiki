@@ -20,16 +20,16 @@ Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
 |a bits per pixel value; usually 15, 16, or 32
 |-
 |'''Rmask'''
-|the mask for the red component of the pixel
+|the red mask for the pixel
 |-
 |'''Gmask'''
-|the mask for the green component of the pixel
+|the green mask for the pixel
 |-
 |'''Bmask'''
-|the mask for the blue component of the pixel
+|the blue mask for the pixel
 |-
 |'''Amask'''
-|the mask for the alpha component of the pixel
+|the alpha mask for the pixel
 |}
 
 == Return Value ==
