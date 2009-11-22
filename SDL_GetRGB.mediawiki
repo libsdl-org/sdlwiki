@@ -23,13 +23,13 @@ void SDL_GetRGB(Uint32                 pixel,
 |an [[SDL_PixelFormat]] structure describing the format of the pixel
 |-
 |'''r'''
-|a pointer to a value that will be filled into the red component
+|a pointer to a value that will be filled with the red component
 |-
 |'''g'''
-|a pointer to a value that will be filled into the green component
+|a pointer to a value that will be filled with the green component
 |-
 |'''b'''
-|a pointer to a value that will be filled into the blue component
+|a pointer to a value that will be filled with the blue component
 |}
 
 == Code Examples ==
