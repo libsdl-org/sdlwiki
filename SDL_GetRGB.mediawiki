@@ -2,8 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetRGB =
-Use this function to map a pixel value into the RGB components for a given pixel format.
-??Get RGB values from a pixel in the specified pixel format?? 
+Use this function to get RGB values from a pixel in the specified format. 
 
 
 == Syntax ==
