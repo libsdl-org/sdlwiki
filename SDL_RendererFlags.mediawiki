@@ -8,8 +8,6 @@ Flags used when creating a rendering context.
 ```#!wiki comment
 start_section
 ```
-A
- <!-- start_section -->
 == Values ==
 {|
 |SDL_RENDERER_SINGLEBUFFER
@@ -33,8 +31,6 @@ A
 |SDL_RENDERER_ACCELERATED
 |the renderer uses hardware acceleration
 |}
-<!-- end_section -->
-B
 ```#!wiki comment
 end_section
 ```
