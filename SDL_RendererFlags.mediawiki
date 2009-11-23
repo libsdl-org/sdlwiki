@@ -5,6 +5,9 @@
 Flags used when creating a rendering context.
 
 
+```#!wiki comment
+start_section
+```
  <!-- start_section -->
 == Values ==
 {|
@@ -30,6 +33,7 @@ Flags used when creating a rendering context.
 |the renderer uses hardware acceleration
 |}
 <!-- end_section -->
+}}}
 
 == Code Examples ==
 ```c++
