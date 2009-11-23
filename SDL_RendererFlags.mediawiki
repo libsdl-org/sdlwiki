@@ -8,6 +8,7 @@ Flags used when creating a rendering context.
 ```#!wiki comment
 start_section
 ```
+A
  <!-- start_section -->
 == Values ==
 {|
@@ -33,6 +34,7 @@ start_section
 |the renderer uses hardware acceleration
 |}
 <!-- end_section -->
+B
 ```#!wiki comment
 end_section
 ```
