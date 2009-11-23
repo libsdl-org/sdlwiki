@@ -33,7 +33,9 @@ start_section
 |the renderer uses hardware acceleration
 |}
 <!-- end_section -->
-}}}
+```#!wiki comment
+end_section
+```
 
 == Code Examples ==
 ```c++
