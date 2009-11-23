@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RendererFlags =
+Flags used when creating a rendering context.
+
+
+== Values ==
+{|
+|SDL_RENDERER_SINGLEBUFFER
+|render directly to the window, if possible
+|-
+|SDL_RENDERER_PRESENTCOPY
+|present uses a copy from back buffer to the front buffer
+|-
+|SDL_RENDERER_PRESENTFLIP2
+|present uses a flip, swapping back buffer and front buffer
+|-
+|SDL_RENDERER_PRESENTFLIP3
+|present uses a flip, rotating between two back buffers and a front buffer
+|-
+|SDL_RENDERER_PRESENTDISCARD
+|present leaves the contents of the backbuffer undefined
+|-
+|SDL_RENDERER_PRESENTVSYNC
+|present is synchronized with the refresh rate
+|-
+|SDL_RENDERER_ACCELERATED
+|the renderer uses hardware acceleration
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_CreateRenderer]]
+
+== Related Structures ==
+:[[SDL_RendererInfo]]
