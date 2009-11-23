@@ -5,13 +5,6 @@
 Use this function to set a range of colors in a palette.
 
 
-== Syntax ==
-```c++
-int SDL_SetPaletteColors(SDL_Palette*     palette,
-                         const SDL_Color* colors,
-                         int              firstcolor, 
-                         int              ncolors)
-```
 
 == Function Parameters ==
 {|
