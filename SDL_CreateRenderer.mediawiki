@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Flags used when creating a rendering context.
+<<Include(SDL_RendererFlags)>>
 
 == Related Functions ==
 :[[SDL_DestroyRenderer]]
