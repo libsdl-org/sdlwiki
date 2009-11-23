@@ -21,7 +21,7 @@ int SDL_CreateRenderer(SDL_WindowID windowID,
 |the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags
 |-
 |'''flags'''
-|[[SDL_RendererFlags]]
+|0, or one or more [[SDL_Renderer]] flags OR'd together; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+Flags used when creating a rendering context.
 
 == Related Functions ==
 :[[SDL_DestroyRenderer]]
