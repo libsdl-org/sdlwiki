@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Include(SDL_RendererFlags,,, from="fromhere", to="tohere")>>
+<<Include(SDL_RendererFlags, "Values", 3, from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_DestroyRenderer]]
