@@ -5,9 +5,7 @@
 Flags used when creating a rendering context.
 
 
-```#!wiki comment
-fromhere
-```
+<!-- fromhere -->
 
 == Values ==
 {|
@@ -32,9 +30,7 @@ fromhere
 |SDL_RENDERER_ACCELERATED
 |the renderer uses hardware acceleration
 |}
-```#!wiki comment
-tohere
-```
+<!-- tohere -->
 
 == Code Examples ==
 ```c++
