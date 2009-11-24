@@ -95,3 +95,6 @@ The audio device starts out playing silence when it is opened, and should be ena
 :[[SDL_LockAudio]]
 :[[SDL_PauseAudio]]
 :[[SDL_UnlockAudio]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
