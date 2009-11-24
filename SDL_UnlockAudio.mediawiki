@@ -26,3 +26,6 @@ Do not call these from the callback function or you will cause deadlock.
 :[[SDL_LockAudio]]
 :[[SDL_LockAudioDevice]]
 :[[SDL_UnlockAudioDevice]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
