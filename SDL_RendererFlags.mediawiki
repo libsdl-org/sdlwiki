@@ -5,8 +5,10 @@
 Flags used when creating a rendering context.
 
 
-<!-- link to the values section only by using the following on the related function page
-<<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>> -->
+```#!wiki comment
+link to the values section only by using the following on the related function page
+<<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
+```
 
 == Values ==
 {|
