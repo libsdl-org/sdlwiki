@@ -5,7 +5,8 @@
 Flags used when creating a rendering context.
 
 
-<!-- fromhere -->
+<!-- link to the values section only by using the following on the related function page
+<<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>> -->
 
 == Values ==
 {|
@@ -30,7 +31,6 @@ Flags used when creating a rendering context.
 |SDL_RENDERER_ACCELERATED
 |the renderer uses hardware acceleration
 |}
-<!-- tohere -->
 
 == Code Examples ==
 ```c++
