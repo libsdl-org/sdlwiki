@@ -83,19 +83,19 @@ Values used when creating pixel formats.
 |
 |-
 |SDL_PIXELFORMAT_YV12
-|Planar mode: Y + V + U (3 planes)
+|planar mode: Y + V + U (3 planes)
 |-
 |SDL_PIXELFORMAT_IYUV
-|Planar mode: Y + U + V (3 planes)
+|planar mode: Y + U + V (3 planes)
 |-
 |SDL_PIXELFORMAT_YUY2
-|Packed mode: Y0+U0+Y1+V0 (1 plane)
+|packed mode: Y0+U0+Y1+V0 (1 plane)
 |-
 |SDL_PIXELFORMAT_UYVY
-|Packed mode: U0+Y0+V0+Y1 (1 plane)
+|packed mode: U0+Y0+V0+Y1 (1 plane)
 |-
 |SDL_PIXELFORMAT_YVYU
-|Packed mode: Y0+V0+Y1+U0 (1 plane)
+|packed mode: Y0+V0+Y1+U0 (1 plane)
 |}
 
 == Code Examples ==
