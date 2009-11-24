@@ -40,6 +40,9 @@ You can add your code example here
 '''format''' can have any one of these values:
 <<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
 
+'''access''' can have any one of these values:
+<<Include(SDL_TextureAccess, , , from="== Values ==", to="== Code Examples ==")>>
+
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
