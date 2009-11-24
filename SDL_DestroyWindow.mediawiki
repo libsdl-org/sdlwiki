@@ -26,3 +26,6 @@ You can add useful comments here
 
 == Related Functions ==
 :[[SDL_CreateWindow]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
