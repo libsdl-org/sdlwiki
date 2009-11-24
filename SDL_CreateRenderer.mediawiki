@@ -13,9 +13,8 @@ int SDL_CreateRenderer(SDL_WindowID windowID,
 ```
 
 ```#!html
-<!-- This is an HTML comment -->
+<MARKER>
 ```
-
 
 == Function Parameters ==
 {|
