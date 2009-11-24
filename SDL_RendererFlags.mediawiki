@@ -5,10 +5,7 @@
 Flags used when creating a rendering context.
 
 
-```#!wiki comment
-When linking only to the values section below, use the following on the related function page:
-<<Include(SDL_RendererFlags,,,from="== Values ==",to="== Code Examples ==")>>
-```
+<!-- see SDL_CreateRenderer page for Include function syntax -->
 
 == Values ==
 {|
