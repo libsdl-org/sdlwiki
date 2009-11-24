@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Enumeration =
+Flags used when /replace over slashes with description of the enum/.
+
+
+<!-- Place the following text, or something more appropriate, in the Remarks section of the related function(s)
+'''flags''' can have any number of these values OR'd in:
+<<Include(SDL_enumeration, , , from="== Values ==", to="== Code Examples ==")>> -->
+
+== Values ==
+{|
+|'''value'''
+|description
+|-
+|'''value'''
+|description
+|-
+|'''value'''
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_Function]]
+
+== Related Structures ==
+:[[SDL_Structure]]
