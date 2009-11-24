@@ -38,3 +38,6 @@ The display modes are sorted in this priority:
 
 == Related Functions ==
 :[[SDL_GetNumDisplayModes]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
