@@ -99,3 +99,6 @@ If the conversion completed successfully then the converted audio data can be re
  
 == Related Functions ==
 :[[SDL_BuildAudioCVT]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
