@@ -46,3 +46,6 @@ You can add useful comments here
 
 == Related Functions ==
 :[[SDL_GetRGB]]
+
+----
+[[CategoryAPI]], [[CategoryPixels]]
