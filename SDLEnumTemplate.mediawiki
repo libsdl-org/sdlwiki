@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_Enumeration =
-Flags used when /replace over slashes with description of the enum/.
+Flags / Values used when /choose start, replace over slashes with description of the enum/.
 
 
 <!-- Place the following text, or something more appropriate, in the Remarks section of the related function(s)
