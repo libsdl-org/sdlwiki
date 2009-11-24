@@ -16,7 +16,7 @@ SDL_TextureID SDL_CreateTexture(Uint32 format,
 == Function Parameters ==
 {|
 |'''format'''
-|the format of the texture
+|one of the enumerated values in [[SDL_PixelFormatEnum]]
 |-
 |'''access'''
 |one of the enumerated values in [[SDL_TextureAccess]]
@@ -42,3 +42,4 @@ You can add useful comments here
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
+:[[SDL_SelectRenderer]]
