@@ -37,3 +37,6 @@ The surface is not modified or freed by this function.
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
