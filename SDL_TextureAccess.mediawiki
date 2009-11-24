@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_TextureAccess =
+Values used to define access to textures.
+
+
+== Values ==
+{|
+|SDL_TEXTUREACCESS_STATIC
+|changes rarely, not lockable
+|-
+|SDL_TEXTUREACCESS_STREAMING
+|changes frequently, lockable
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_CreateTexture]]
+
+== Related Structures ==
+:[[SDL_Structure]]
