@@ -5,8 +5,6 @@
 Flags used when creating a rendering context.
 
 
-<!-- see [[SDL_CreateRenderer]] page for Include function syntax -->
-
 == Values ==
 {|
 |SDL_RENDERER_SINGLEBUFFER
