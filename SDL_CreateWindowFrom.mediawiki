@@ -31,3 +31,6 @@ This function is NOT SUPPORTED, use at your own risk!
 
 == Related Functions ==
 :[[SDL_DestroyWindow]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
