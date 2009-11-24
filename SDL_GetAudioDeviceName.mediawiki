@@ -40,3 +40,6 @@ The string returned by this function is UTF-8 encoded, read-only, and managed in
 
 == Related Functions ==
 :[[SDL_GetNumAudioDevices]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
