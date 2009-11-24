@@ -11,13 +11,13 @@ Flags used when /replace over slashes with description of the enum/.
 
 == Values ==
 {|
-|'''value'''
+|value
 |description
 |-
-|'''value'''
+|value
 |description
 |-
-|'''value'''
+|value
 |description
 |}
 
