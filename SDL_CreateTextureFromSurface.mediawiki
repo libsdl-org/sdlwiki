@@ -31,6 +31,9 @@ You can add your code example here
 == Remarks ==
 The surface is not modified or freed by this function.
 
+'''format''' can have any one of these values:
+<<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
+
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
