@@ -50,3 +50,6 @@ You need to free the audio buffer with [[SDL_FreeWAV]]() when you are done with 
 == Related Functions ==
 :[[SDL_FreeWAV]]
 :[[SDL_LoadWAV]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
