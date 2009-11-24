@@ -8,7 +8,7 @@ Use this function to create a texture from an existing surface.
 == Syntax ==
 ```c++
 SDL_TextureID SDL_CreateTextureFromSurface(Uint32       format,
-                                           SDL_Surface* surface) 			
+                                           SDL_Surface* surface)
 ```
 
 == Function Parameters ==
