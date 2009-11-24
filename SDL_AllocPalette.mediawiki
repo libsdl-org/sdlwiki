@@ -29,3 +29,5 @@ The palette entries are initialized to white.
 
 == Related Functions ==
  [[SDL_FreePalette]]
+----
+[[CategoryAPI]], [[CategoryPixels]]
