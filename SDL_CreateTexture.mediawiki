@@ -37,7 +37,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+'''format''' can have any one of these values:
+<<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_DestroyTexture]]
