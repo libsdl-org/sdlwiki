@@ -47,3 +47,6 @@ You can add your code example here
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
 :[[SDL_SelectRenderer]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
