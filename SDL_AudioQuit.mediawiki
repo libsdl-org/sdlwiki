@@ -20,3 +20,6 @@ This function is used internally, and should not be used unless you have a speci
 
 == Related Functions ==
  [[SDL_AudioInit]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
