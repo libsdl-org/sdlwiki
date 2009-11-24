@@ -27,3 +27,6 @@ This function pauses and unpauses the audio callback processing. It should be ca
 
 == Related Functions ==
 :[[SDL_PauseAudioDevice]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
