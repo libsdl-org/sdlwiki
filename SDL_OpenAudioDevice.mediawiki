@@ -64,3 +64,6 @@ The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]]()
 :[[SDL_OpenAudio]]
 :[[SDL_PauseAudioDevice]]
 :[[SDL_UnlockAudioDevice]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
