@@ -7,7 +7,7 @@ Flags used when creating a rendering context.
 
 ```#!wiki comment
 link to the values section only by using the following on the related function page
-<<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
+<<Include(SDL_RendererFlags,,,from="== Values ==",to="== Code Examples ==")>>
 ```
 
 == Values ==
