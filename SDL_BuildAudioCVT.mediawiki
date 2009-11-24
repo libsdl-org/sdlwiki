@@ -55,3 +55,6 @@ For information on audio formats see [[SDL_AudioSpec]].
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
