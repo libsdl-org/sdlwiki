@@ -42,3 +42,6 @@ This works like [[SDL_MixAudio]](), but you specify the audio format instead of 
 
 == Related Functions ==
 :[[SDL_MixAudio]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
