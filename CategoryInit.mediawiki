@@ -5,7 +5,7 @@
 
 == Initialization & Shutdown (SDL.h) ==
 
-<<FullSearchCached(category:CategoryInit)>>
+<<FullSearch(category:CategoryInit)>>
 
 ----
 CategoryCategory
