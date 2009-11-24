@@ -37,3 +37,6 @@ In many common cases, when this function returns a value <= 0, it can still succ
 
 == Related Functions ==
 :[[SDL_GetAudioDeviceName]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
