@@ -12,10 +12,6 @@ int SDL_CreateRenderer(SDL_WindowID windowID,
                        Uint32  	    flags)
 ```
 
-```#!html
-<MARKER>
-```
-
 == Function Parameters ==
 {|
 |'''windowID'''
