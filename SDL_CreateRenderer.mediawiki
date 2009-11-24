@@ -40,3 +40,6 @@ You can add your code example here
 :[[SDL_DestroyRenderer]]
 :[[SDL_GetRendererInfo]]
 :[[SDL_SelectRenderer]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
