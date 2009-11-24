@@ -46,3 +46,6 @@ It is a common misconception that this function is required to write audio data 
 
 == Related Functions ==
 :[[SDL_MixAudioFormat]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
