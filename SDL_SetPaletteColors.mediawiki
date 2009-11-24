@@ -41,3 +41,6 @@ You can add useful comments here
 
 == Related Functions ==
 :[[ ]]
+
+----
+[[CategoryAPI]], [[CategoryPixels]]
