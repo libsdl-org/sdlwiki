@@ -16,10 +16,10 @@ SDL_TextureID SDL_CreateTexture(Uint32 format,
 == Function Parameters ==
 {|
 |'''format'''
-|one of the enumerated values in [[SDL_PixelFormatEnum]]
+|one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#Remarks|Remarks]] for details
 |-
 |'''access'''
-|one of the enumerated values in [[SDL_TextureAccess]]
+|one of the enumerated values in [[SDL_TextureAccess]]; see [[#Remarks|Remarks]] for details
 |-
 |'''w'''
 |the width of the texture in pixels
