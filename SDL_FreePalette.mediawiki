@@ -13,7 +13,7 @@ void SDL_FreePalette(SDL_Palette* palette)
 == Function Parameters ==
 {|
 |'''palette'''
-|the [[SDL_palette]] to be freed
+|the [[SDL_Palette]] to be freed
 |}
 
 == Code Examples ==
@@ -26,3 +26,6 @@ You can add useful comments here
 
 == Related Functions ==
 :[[SDL_AllocPalette]]
+
+----
+[[CategoryAPI]], [[CategoryPixels]]
