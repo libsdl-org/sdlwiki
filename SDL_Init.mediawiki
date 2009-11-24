@@ -149,3 +149,4 @@ Note that the event system is actually started by the video subsystem, so using 
 
 ----
 :[[CategoryAPI]]
+:[[CategoryInit]]
