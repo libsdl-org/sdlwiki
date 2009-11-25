@@ -46,3 +46,6 @@ If you don't want to mark the entire area dirty you can pass 0 for '''markDirty'
 == Related Functions ==
 :[[SDL_DirtyTexture]]
 :[[SDL_UnlockTexture]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
