@@ -14,7 +14,7 @@ SDL_TextureID SDL_CreateTextureFromSurface(Uint32       format,
 == Function Parameters ==
 {|
 |'''format'''
-|one of the enumerated values in [[SDL_PixelFormatEnum]], or 0 to pick an appropriate format; see [[#Remarks|Remarks]] for details
+|one of the enumerated values in [[SDL_PixelFormatEnum]], or 0 to pick an appropriate format; see [[#format|Remarks]] for details
 |-
 |'''surface'''
 |the surface containing pixel data used to fill the texture
@@ -31,7 +31,7 @@ You can add your code example here
 == Remarks ==
 The surface is not modified or freed by this function.
 
-'''format''' can have any one of these values:
+<span id="format"></span> '''format''' can have any one of these values:
 <<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
