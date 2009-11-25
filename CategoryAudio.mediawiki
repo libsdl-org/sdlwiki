@@ -1,0 +1,11 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+== Audio Device Management, Playing and Recording (SDL_audio.h) ==
+
+<<FullSearchCached(category:CategoryAudio)>>
+
+----
+CategoryCategory
