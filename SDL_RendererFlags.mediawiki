@@ -37,8 +37,11 @@ You can add your code example here
 == Remarks ==
 You can add useful comments here
 
+== Related Structures ==
+:[[SDL_RendererInfo]]
+
 == Related Functions ==
 :[[SDL_CreateRenderer]]
 
-== Related Structures ==
-:[[SDL_RendererInfo]]
+----
+[[CategoryEnum]]
