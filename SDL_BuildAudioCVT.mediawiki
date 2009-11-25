@@ -41,7 +41,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 |}
 
 == Return Value ==
-Returns -1 if the format conversion is not supported, 0 if there's no conversion needed, or 1 if the audio filter is set up.
+Returns 1 if the audio filter is set up, 0 if there's no conversion needed, or -1 if the format conversion is not supported; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
