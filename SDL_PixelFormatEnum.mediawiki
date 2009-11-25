@@ -109,6 +109,12 @@ You can add useful comments here
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
+:[[SDL_MasksToPixelFormatEnum]]
+:[[SDL_PixelFormatEnumToMasks]]
+:[[SDL_QueryTexture]]
+:[[SDL_RenderReadPixels]]
+:[[SDL_RenderWritePixels]]
 
 == Related Structures ==
-:[[SDL_Structure]]
+:[[SDL_DisplayMode]]
+:[[SDL_RendererInfo]]
