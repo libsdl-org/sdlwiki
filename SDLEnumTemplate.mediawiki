@@ -29,8 +29,11 @@ You can add your code example here
 == Remarks ==
 You can add useful comments here
 
+== Related Structures ==
+:[[SDL_Structure]]
+
 == Related Functions ==
 :[[SDL_Function]]
 
-== Related Structures ==
-:[[SDL_Structure]]
+----
+[[CategoryEnum]]
