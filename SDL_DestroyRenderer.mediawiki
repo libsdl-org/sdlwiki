@@ -13,7 +13,7 @@ void SDL_DestroyRenderer(SDL_WindowID windowID)
 == Function Parameters ==
 {|
 |'''windowID'''
-|???the type of the window / the ID of the window to destroy???
+|the window associated with the renderer to be freed
 |}
 
 == Code Examples ==
