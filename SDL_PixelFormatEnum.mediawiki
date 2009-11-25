@@ -118,3 +118,6 @@ You can add useful comments here
 == Related Structures ==
 :[[SDL_DisplayMode]]
 :[[SDL_RendererInfo]]
+
+----
+[[CategoryStruct]]
