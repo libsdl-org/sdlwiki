@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_CreateWindowFrom =
-Use this function to create an SDL window struct from an existing native window.
+Use this function to create an SDL window from an existing native window.
 
 
 == Syntax ==
@@ -13,7 +13,7 @@ SDL_WindowID SDL_CreateWindowFrom(const void* data)
 == Function Parameters ==
 {|
 |'''data'''
-|a pointer to driver-dependent window creation data 
+|a pointer to driver-dependent window creation data
 |}
 
 == Return Value ==
@@ -25,9 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-```#!wiki caution
-This function is NOT SUPPORTED, use at your own risk!
-```
+
 
 == Related Functions ==
 :[[SDL_DestroyWindow]]
