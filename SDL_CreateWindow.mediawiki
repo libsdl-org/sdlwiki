@@ -33,7 +33,7 @@ SDL_WindowID SDL_CreateWindow(const char* title,
 |the height of the window
 |-
 |'''flags'''
-|the flags for the window; see [[#Remarks|Remarks]] for details
+|0, or one or more [[SDL_WindowFlags]] OR'd together; see [[#flags|Remarks]] for details
 |}
 
 == Return Value ==
@@ -45,7 +45,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-'''flags''' may be a mask of any of the following: 
+<span id="flags"></span> '''flags''' may be a mask of any of the following: 
 {|
 |SDL_WINDOW_FULLSCREEN
 |-
