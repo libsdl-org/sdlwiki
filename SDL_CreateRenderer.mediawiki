@@ -25,7 +25,7 @@ int SDL_CreateRenderer(SDL_WindowID windowID,
 |}
 
 == Return Value ==
-0 on success, -1 if there was an error creating the renderer
+0 on success, -1 if there was an error creating the renderer; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
