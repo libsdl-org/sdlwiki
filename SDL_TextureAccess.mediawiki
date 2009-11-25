@@ -22,8 +22,12 @@ You can add your code example here
 == Remarks ==
 You can add useful comments here
 
+== Related Structures ==
+
+
 == Related Functions ==
 :[[SDL_CreateTexture]]
+:[[SDL_QueryTexture]]
 
-== Related Structures ==
-:[[SDL_Structure]]
+----
+[[CategoryEnum]]
