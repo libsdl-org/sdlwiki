@@ -40,7 +40,7 @@ You can add your code example here
 <span id="format"></span> '''format''' can be one of these values:
 <<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
 
-<span id="access"></span>'''access''' can be one of these values:
+<span id="access"></span> '''access''' can be one of these values:
 <<Include(SDL_TextureAccess, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
