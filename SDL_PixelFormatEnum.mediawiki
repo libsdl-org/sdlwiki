@@ -106,6 +106,10 @@ You can add your code example here
 == Remarks ==
 You can add useful comments here
 
+== Related Structures ==
+:[[SDL_DisplayMode]]
+:[[SDL_RendererInfo]]
+
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
@@ -115,9 +119,5 @@ You can add useful comments here
 :[[SDL_RenderReadPixels]]
 :[[SDL_RenderWritePixels]]
 
-== Related Structures ==
-:[[SDL_DisplayMode]]
-:[[SDL_RendererInfo]]
-
 ----
-[[CategoryStruct]]
+[[CategoryEnum]]
