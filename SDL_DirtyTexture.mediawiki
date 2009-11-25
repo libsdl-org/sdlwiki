@@ -18,7 +18,7 @@ void SDL_DirtyTexture(SDL_TextureID   textureID,
 |the texture to mark dirty, which was created with SDL_TEXTUREACCESS_STREAMING
 |-
 |'''numrects'''
-|the number of rectangles pointed to by rects
+|the number of rectangles pointed to by '''rects'''
 |-
 |'''rects'''
 |the pointer to an array of dirty rectangles
