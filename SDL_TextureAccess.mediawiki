@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_TextureAccess =
-Values used to define access to textures.
+The access pattern allowed for a texture.
 
 
 == Values ==
