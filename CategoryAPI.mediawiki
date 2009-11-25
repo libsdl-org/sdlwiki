@@ -5,6 +5,7 @@
 
 = SDL 1.3 API by Name =
 
+
 == Enumerations ==
 
 <<FullSearchCached(category:CategoryEnum)>>
