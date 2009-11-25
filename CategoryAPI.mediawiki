@@ -5,7 +5,17 @@
 
 = SDL 1.3 API by Name =
 
-<<FullSearch(category:CategoryAPI)>>
+== Enumerations ==
+
+<<FullSearchCached(category:CategoryEnum)>>
+
+== Structures ==
+
+<<FullSearchCached(category:CategoryStruct)>>
+
+== Functions ==
+
+<<FullSearchCached(category:CategoryAPI)>>
 
 ----
 CategoryCategory
