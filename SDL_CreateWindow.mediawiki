@@ -65,7 +65,7 @@ You can add your code example here
 |}
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_DestroyWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
