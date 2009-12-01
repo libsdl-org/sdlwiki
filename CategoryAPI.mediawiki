@@ -8,15 +8,15 @@
 
 == Enumerations ==
 
-<<FullSearchCached(category:CategoryEnum)>>
+<<FullSearch(category:CategoryEnum)>>
 
 == Structures ==
 
-<<FullSearchCached(category:CategoryStruct)>>
+<<FullSearch(category:CategoryStruct)>>
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryAPI)>>
+<<FullSearch(category:CategoryAPI)>>
 
 ----
 CategoryCategory
