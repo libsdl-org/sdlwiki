@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Structure=
+/replace with brief description of the structure/.
+
+
+<!-- Remove this comment from the Struct page when creating page.  
+To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:
+<<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>> 
+-->
+
+== Data Fields ==
+{|
+|field
+|description
+|-
+|field
+|description
+|-
+|field
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Enumerations ==
+:[[SDL_EnumerationRemoveSectionIfEmpty]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]]
