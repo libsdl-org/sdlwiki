@@ -21,7 +21,7 @@ int SDL_CreateRenderer(SDL_WindowID windowID,
 |the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags
 |-
 |'''flags'''
-|0, or one or more [[SDL_RendererFlags]] OR'd together; see [[#Remarks|Remarks]] for details
+|0, or one or more [[SDL_RendererFlags]] OR'd together; see [[#flags|Remarks]] for details
 |}
 
 == Return Value ==
@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-'''flags''' can have any number of these values OR'd in:
+<span id="flags"></span> '''flags''' can have any number of these values OR'd in:
 <<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
