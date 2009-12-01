@@ -17,7 +17,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 == Function Parameters ==
 {|
 |'''device'''
-|a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#Remarks|Remarks]]
+|a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#device|Remarks]]
 |-
 |'''iscapture'''
 |non-0 to specify a device that has recording capability
@@ -29,7 +29,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |a pointer to an [[SDL_AudioSpec]] structure to be filled in; see [[SDL_OpenAudio]]() for more information
 |-
 |'''allowed_changes'''
-|0, or one or more flags OR'd together; see [[#Remarks|Remarks]] for details
+|0, or one or more flags OR'd together; see [[#allowed|Remarks]] for details
 |}
 
 == Return Value ==
@@ -41,10 +41,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to calling [[SDL_OpenAudio]]()).
+<span id="device"></span> Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to calling [[SDL_OpenAudio]]()).
 The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and driver-specific strings, such as a hostname/IP address for a remote audio server, or a filename in the diskaudio driver.
 
-'''allowed_changes''' can have the following flags OR'd together:
+<span id="allowed"></span> '''allowed_changes''' can have the following flags OR'd together:
 {|
 |SDL_AUDIO_ALLOW_FREQUENCY_CHANGE
 |-
