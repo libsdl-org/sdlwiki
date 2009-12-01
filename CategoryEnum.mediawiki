@@ -6,7 +6,7 @@
 
 = SDL 1.3 API enumerations =
 
-<<FullSearchCached(category:CategoryEnum)>>
+<<FullSearch(category:CategoryEnum)>>
 
 ----
 CategoryCategory
