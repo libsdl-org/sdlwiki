@@ -5,8 +5,8 @@
 Flags / Values used when /choose start, replace over slashes with description of the enum/.
 
 
-<!-- Place the following text, or something more appropriate, in the Remarks section of the related function(s) and remove this comment from the Enum page:
-'''flags''' can have any number of these values OR'd in:
+<!-- Remove this comment from the Enum page when creating page.  
+To automatically show Values content from this page on a function page place the following markup in the Remarks section of the related function(s), where enumeration is replaced by the actual enumeration name:
 <<Include(SDL_enumeration, , , from="== Values ==", to="== Code Examples ==")>> -->
 
 == Values ==
