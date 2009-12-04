@@ -14,7 +14,7 @@ SDL_DisplayMode* SDL_GetClosestDisplayMode(const SDL_DisplayMode* mode,
 == Function Parameters ==
 {|
 |'''mode'''
-|a pointer to an [[SDL_DisplayMode]] structure containing the desired mode information
+|a pointer to an [[SDL_DisplayMode]] structure containing the desired display mode
 |-
 |'''closest'''
 |a pointer to an [[SDL_DisplayMode]] structure to be filled in with the closest match of the available display modes
@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The available display modes are scanned and '''closest''' is filled in with the closest mode matching the requested mode and returned. The mode format and refresh rate default to the desktop mode if they are 0. The modes are scanned with size being first priority, format being second priority, and finally checking the refresh rate. If all the available modes are too small, then NULL is returned.
+The available display modes are scanned and '''closest''' is filled in with the closest mode matching the requested mode and returned. The mode format and refresh rate default to the desktop mode if they are set to 0. The modes are scanned with size being first priority, format being second priority, and finally checking the refresh rate. If all the available modes are too small, then NULL is returned.
 
 == Related Functions ==
 :[[SDL_GetDisplayMode]]
