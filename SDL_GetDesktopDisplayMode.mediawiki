@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetDesktopDisplayMode =
-Use this function to fill in information about the desktop display mode for the current display.
+Use this function to get information about the desktop display mode for the current display.
 
 
 == Syntax ==
@@ -13,11 +13,11 @@ int SDL_GetDesktopDisplayMode(SDL_DisplayMode* mode)
 == Function Parameters ==
 {|
 |'''mode'''
-|points to the current display mode
+|a pointer to an [[SDL_DisplayMode]] structure that is filled in with the current display mode
 |}
 
 == Return Value ==
-
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -28,7 +28,9 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
-:[[ ]]
+:[[SDL_GetCurrentDisplayMode]]
+:[[SDL_GetDisplayMode]]
+:[[SDL_SetDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
