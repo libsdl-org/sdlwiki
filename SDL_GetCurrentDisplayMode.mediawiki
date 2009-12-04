@@ -29,6 +29,8 @@ You can add useful comments here
 
 == Related Functions ==
 :[[SDL_GetDisplayMode]]
+:[[SDL_GetDesktopDisplayMode]]
+:[[SDL_SetDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
