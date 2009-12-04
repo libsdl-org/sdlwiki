@@ -5,7 +5,7 @@
 
 == Display Management, Window Management and Rendering (SDL_video.h) ==
 
-<<FullSearchCached(category:CategoryVideo)>>
+<<FullSearch(category:CategoryVideo)>>
 
 ----
 CategoryCategory
