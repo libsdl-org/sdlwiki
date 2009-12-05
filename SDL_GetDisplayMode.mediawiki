@@ -17,11 +17,11 @@ int SDL_GetDisplayMode(int              index,
 |the index of the display mode
 |-
 |'''mode'''
-|points to the mode of the display
+|a pointer to an [[SDL_DisplayMode]] structure that is filled in with the mode '''index'''
 |}
 
 == Return Value ==
-
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
