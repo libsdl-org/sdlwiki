@@ -30,7 +30,6 @@ You can add useful comments here
 == Related Functions ==
 :[[SDL_GetCurrentDisplayMode]]
 :[[SDL_GetDisplayMode]]
-:[[SDL_SetDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
