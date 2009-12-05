@@ -35,7 +35,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 == Return Value ==
 If this function succeeds, it returns the given [[SDL_AudioSpec]], filled with the audio data format of the wave data, and sets *'''audio_buf''' to a malloc()'d buffer containing the audio data, and sets *'''audio_len''' to the length of that audio buffer, in bytes.  
 
-This function returns NULL and sets the SDL error message if the wave file cannot be opened, uses an unknown data format, or is corrupt.  Call [[SDL_GetError]]() for more information.  
+This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.  
 
 == Code Examples ==
 ```c++
