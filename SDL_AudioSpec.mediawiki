@@ -1,0 +1,72 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_AudioSpec =
+This ''structure'' (function) is called when the audio device needs more data.
+
+
+<!-- Remove this comment from the Struct page when creating page.  
+To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:
+<<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
+
+== Syntax ==
+```c++
+void (SDLCALL* callback)
+     (void*    userdata, 
+      Uint8*   stream, 
+      int      len);
+void* userdata
+```
+
+== Structure Parameters ==
+{|
+|'''stream'''
+|a pointer to the audio data buffer
+|-
+|'''len'''
+|the length of that buffer in bytes
+|}
+
+== Data Fields ==
+{|
+|int freq
+|DSP frequency -- samples per second
+|-
+|[[SDL_AudioFormat]] format
+|audio data format
+|-
+|Uint8 channels
+|number of channels: 1 mono, 2 stereo
+|-
+|Uint8 silence
+|audio buffer silence value (calculated)
+|-
+|Uint16 samples
+|audio buffer size in samples (power of 2)
+|-
+|Uint16 padding
+|necessary for some compile environments
+|-
+|Uint32 size
+|audio buffer size in bytes (calculated)
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The calculated values in this structure are calculated by [[SDL_OpenAudio]]().
+
+Once the callback returns, the buffer will no longer be valid.
+
+Stereo samples are stored in a LRLRLR ordering.
+
+== Related Functions ==
+:[[SDL_LoadWAV_RW]]
+:[[SDL_OpenAudio]]
+:[[SDL_OpenAudioDevice]]
+
+----
+[[CategoryStruct]]
