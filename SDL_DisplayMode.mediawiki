@@ -7,19 +7,24 @@ The structure that defines a display mode.
 
 == Data Fields ==
 {|
-|Uint32 format
+|<)> ''Uint32''
+|''format''
 |pixel format
 |-
-|int w
+|<)> ''int''
+|''w''
 |width
 |-
-|int h
+|<)> ''int''
+|''h''
 |height
 |-
-|int refresh_rate
+|<)> ''int''
+|''refresh_rate''
 |refresh rate (or zero for unspecified)
 |-
-|void* driverdata
+|<)> ''void*''
+|''driverdata''
 |driver-specific data, initialize to 0
 |}
 
