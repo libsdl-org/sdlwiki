@@ -14,7 +14,7 @@ int SDL_GetDisplayMode(int              index,
 == Function Parameters ==
 {|
 |'''index'''
-|the index of the display mode
+|the index of the requested display mode
 |-
 |'''mode'''
 |a pointer to an [[SDL_DisplayMode]] structure that is filled in with the mode '''index'''
