@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetRendererInfo =
+Use this function to get information about the current rendering context.
+
+
+== Syntax ==
+```c++
+int SDL_GetRendererInfo(SDL_RendererInfo* info)
+```
+
+== Function Parameters ==
+
+{|
+|'''info'''
+|a pointer to an [[SDL_RendererInfo]] structure filled with current renderer info
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_CreateRenderer]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
