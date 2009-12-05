@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_QueryTexture =
+Use this function to query the attributes of a texture.
+
+
+== Syntax ==
+```c++
+int SDL_QueryTexture(SDL_TextureID textureID,
+                     Uint32*       format, 
+                     int*          access,
+                     int*          w, 
+                     int*          h)
+```
+
+== Function Parameters ==
+
+{|
+|'''textureID'''
+|a texture to be queried
+|-
+|'''format'''
+|a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format
+|-
+|'''access'''
+|a pointer filled in with the actual access to the texture
+|-
+|'''w'''
+|a pointer filled in with the width of the texture in pixels
+|-
+|'''h'''
+|a pointer filled in with the height of the texture in pixels
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the texture is not valid''; call [[SDL_GetError]]() for more information''.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_QueryTexturePixels]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
