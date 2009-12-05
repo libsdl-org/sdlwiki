@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_DisplayMode =
+The structure that defines a display mode.
+
+
+== Data Fields ==
+{|
+|Uint32 format
+|pixel format
+|-
+|int w
+|width
+|-
+|int h
+|height
+|-
+|int refresh_rate
+|refresh rate (or zero for unspecified)
+|-
+|void* driverdata
+|driver-specific data, initialize to 0
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_GetClosestDisplayMode]]
+:[[SDL_GetCurrentDisplayMode]]
+:[[SDL_GetDesktopDisplayMode]]
+:[[SDL_GetDisplayMode]]
+:[[SDL_GetNumDisplayModes]]
+:[[SDL_GetWindowDisplayMode]]
+:[[SDL_SetWindowDisplayMode]]
+
+----
+[[CategoryStruct]]
