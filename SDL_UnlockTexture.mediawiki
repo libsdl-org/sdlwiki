@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_UnlockTexture =
+Use this function to unlock a texture, uploading the changes to video memory, if needed.
+
+
+== Syntax ==
+```c++
+void SDL_UnlockTexture(SDL_TextureID textureID)
+```
+
+== Function Parameters ==
+
+{|
+|'''textureID'''
+|the texture locked by [[SDL_LockTexture]]() that is to be unlocked
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_DirtyTexture]]
+:[[SDL_LockTexture]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
