@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_IsScreenSaverEnabled =
+Use this function to return whether the screensaver is currently enabled (default off).
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_IsScreenSaverEnabled(void)
+```
+
+== Return Value ==
+Returns true if the screen saver is enabled, false if it is disabled.  
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here ''Should "(default off)" from above be moved down here?''
+
+== Related Functions ==
+:[[SDL_DisableScreenSaver]]
+:[[SDL_EnableScreenSaver]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
