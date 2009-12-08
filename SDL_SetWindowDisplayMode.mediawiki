@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SetWindowDisplayMode =
+Use this function to set the display mode used when a fullscreen window is visible on the currently selected display. ''By default the window's dimensions and the desktop format and refresh rate are used.''
+
+
+== Syntax ==
+```c++
+int SDL_SetWindowDisplayMode(SDL_WindowID           windowID,
+                             const SDL_DisplayMode* mode)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|-
+|'''mode'''
+|a pointer to the [[SDL_DisplayMode]] to use, or NULL for the default mode
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if setting the display mode failed; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here ''should the italicized description above be here instead?''
+
+== Related Functions ==
+:[[SDL_GetWindowDisplayMode]]
+:[[SDL_SetWindowFullscreen]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
