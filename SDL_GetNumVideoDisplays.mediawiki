@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetNumVideoDisplays =
+Use this function to return the number of available video displays.
+
+
+== Syntax ==
+```c++
+int SDL_GetNumVideoDisplays(void)
+```
+
+== Return Value ==
+Returns a number >=1 or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_SelectVideoDisplay]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
