@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetNumDisplayModes =
+Use this function to return the number of available display modes for the current display.
+
+
+== Syntax ==
+```c++
+int SDL_GetNumDisplayModes(void)
+```
+
+== Return Value ==
+Returns a number >= 1 ''on success or a negative error code on failure; call [[SDL_GetError]]() for more information''.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_GetDisplayMode]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
