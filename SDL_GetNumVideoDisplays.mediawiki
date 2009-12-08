@@ -22,6 +22,7 @@ You can add your code example here
 You can add useful comments here
 
 == Related Functions ==
+:[[SDL_GetCurrentVideoDisplay]]
 :[[SDL_SelectVideoDisplay]]
 
 ----
