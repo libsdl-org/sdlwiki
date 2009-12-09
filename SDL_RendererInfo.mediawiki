@@ -44,7 +44,7 @@ Information on the capabilities of a render driver or context.
 |the maximimum texture height
 |}
 
-<!-- Use the following to display on a related function page: <<Include(SDL_RendererInfo, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
+<!-- Use the following markup to display values on a related function page: <<Include(SDL_RendererInfo, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
 
 == Code Examples ==
 ```c++
