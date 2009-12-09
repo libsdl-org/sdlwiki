@@ -1,0 +1,65 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RendererInfo =
+Information on the capabilities of a render driver or context.
+
+
+== Data Fields ==
+{|
+|<)>const char*
+|''name
+|the name of the renderer''
+|-
+|<)>Uint32
+|flags
+|''supported'' [[SDL_RendererFlags]]
+|-
+|<)>Uint32
+|mod_modes
+|''a mask of supported channel modulation''
+|-
+|<)>Uint32
+|blend_modes
+|a mask of supported blend modes
+|-
+|<)>Uint32
+|scale_modes
+|a mask of supported scale modes
+|-
+|<)>Uint32
+|num_texture_formats
+|the number of available texture formats
+|-
+|<)>Uint32
+|texture_formats[20]
+|the available texture formats
+|-
+|<)>int
+|max_texture_width
+|the maximimum texture width
+|-
+|<)>int
+|max_texture_height
+|the maximimum texture height
+|}
+
+<!-- Use the following to display on a related function page: <<Include(SDL_RendererInfo, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Enumerations ==
+:[[SDL_PixelFormatEnum]]
+:[[SDL_RendererFlags]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]]
