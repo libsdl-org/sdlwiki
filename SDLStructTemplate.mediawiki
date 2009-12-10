@@ -11,15 +11,15 @@ To automatically show Data Fields content from this page on a function page plac
 == Data Fields ==
 {|
 |type
-|''field''
+|'''field'''
 |description
 |-
 |type
-|''field''
+|'''field'''
 |description
 |-
 |type
-|''field''
+|'''field'''
 |description
 |}
 
