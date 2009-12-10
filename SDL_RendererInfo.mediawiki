@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RendererInfo =
-A structure that contains information on the capabilities of a render driver or context.
+A structure that contains information on the capabilities of a render driver or the current render context.
 
 
 == Data Fields ==
@@ -60,13 +60,16 @@ You can add your code example here
 
 <span id="scale_modes"></span> '''scale_modes''' 
 
+<span id="texture_formats"></span> '''texture_formats''' is an array of SDL_PixelFormatEnum values representing the available texture formats for the renderer
+
 == Related Enumerations ==
 :[[SDL_PixelFormatEnum]]
 :[[SDL_RendererFlags]]
 :[[SDL_TextureModulate]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
+:[[SDL_GetRendererDriverInfo]]
+:[[SDL_GetRendererInfo]]
 
 ----
 [[CategoryStruct]]
