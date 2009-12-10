@@ -56,11 +56,11 @@ You can add your code example here
 
 <span id="mod_modes"></span> '''mod_modes''' may be SDL_TEXTUREMODULATE_NONE or a mask of any of the other [[SDL_TextureModulate]] values OR'd together:  <<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
 
-<span id="blend_modes"></span> '''blend_modes''' 
+<span id="blend_modes"></span> '''blend_modes''' may be a mask of any of the following [[SDL_BlendMode]] values OR'd together: 
 
 <span id="scale_modes"></span> '''scale_modes''' 
 
-<span id="texture_formats"></span> '''texture_formats''' is an array of SDL_PixelFormatEnum values representing the available texture formats for the renderer
+<span id="texture_formats"></span> '''texture_formats''' is an array of [[SDL_PixelFormatEnum]] values representing the available texture formats for the renderer
 
 == Related Enumerations ==
 :[[SDL_PixelFormatEnum]]
