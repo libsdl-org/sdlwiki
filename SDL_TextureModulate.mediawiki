@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_TextureModulate =
+The texture channel modulation used in [[SDL_RenderCopy]]().
+
+
+== Values ==
+{|
+|SDL_TEXTUREMODULATE_NONE = 0x00000000
+|no modulation
+|-
+|SDL_TEXTUREMODULATE_COLOR = 0x00000001
+|srcC = srcC * color
+|-
+|SDL_TEXTUREMODULATE_ALPHA = 0x00000002
+|srcA = srcA * alpha
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You can add useful comments here
+
+== Related Functions ==
+:[[SDL_RenderCopy]]
+
+----
+[[CategoryEnum]]
