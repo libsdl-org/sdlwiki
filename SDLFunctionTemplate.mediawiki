@@ -11,15 +11,14 @@ value SDL_FunctionName (param)
 ```
 
 == Function Parameters ==
-
 {|
 |'''param'''
-|Something passed to SDL_FunctionName
+|description
 |}
 
 == Return Value ==
-
-A value returned by SDL_FunctionName
+Remove this section if there is no Return Value
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
