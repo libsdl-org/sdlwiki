@@ -13,7 +13,7 @@ A structure that contains information on the capabilities of a render driver or 
 |-
 |Uint32
 |'''flags'''
-|a mask of supported [[SDL_RendererFlags]]; see [[#flags|Remarks]] for details
+|a mask of supported renderer flags; see [[#flags|Remarks]] for details
 |-
 |Uint32
 |'''mod_modes'''
@@ -52,13 +52,15 @@ You can add your code example here
 ```
 
 == Remarks ==
+<span id="flags"></span> '''flags''' may be a mask of any of the following [[SDL_RendererFlags]] values OR'd together:  <<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
+
 <span id="mod_modes"></span> '''mod_modes''' may be a mask of any of the following [[SDL_TextureModulate]] values OR'd together:  <<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
 
 
 == Related Enumerations ==
 :[[SDL_PixelFormatEnum]]
 :[[SDL_RendererFlags]]
- l[[SDL_TextureModulate]]
+:[[SDL_TextureModulate]]
 
 == Related Functions ==
 :[[SDL_FunctionLeaveSectionIfEmpty]]
