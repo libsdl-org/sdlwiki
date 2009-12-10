@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RendererInfo =
-Information on the capabilities of a render driver or context.
+A structure that contains information on the capabilities of a render driver or context.
 
 
 == Data Fields ==
