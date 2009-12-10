@@ -21,11 +21,11 @@ A structure that contains information on the capabilities of a render driver or 
 |-
 |Uint32
 |'''blend_modes'''
-|a mask of supported blend modes
+|a mask of supported blend modes; see [[#blend_modes|Remarks]] for details
 |-
 |Uint32
 |'''scale_modes'''
-|a mask of supported scale modes
+|a mask of supported scale modes; see [[#scale_modes|Remarks]] for details
 |-
 |Uint32
 |'''num_texture_formats'''
@@ -56,6 +56,9 @@ You can add your code example here
 
 <span id="mod_modes"></span> '''mod_modes''' may be a mask of any of the following [[SDL_TextureModulate]] values OR'd together:  <<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
 
+<span id="blend_modes"></span> '''blend_modes''' 
+
+<span id="scale_modes"></span> '''scale_modes''' 
 
 == Related Enumerations ==
 :[[SDL_PixelFormatEnum]]
