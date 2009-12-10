@@ -8,39 +8,39 @@ A structure that contains information on the capabilities of a render driver or 
 == Data Fields ==
 {|
 |const char*
-|''name''
+|'''name'''
 |the name of the renderer
 |-
 |Uint32
-|''flags''
-|supported [[SDL_RendererFlags]]
+|'''flags'''
+|a mask of supported [[SDL_RendererFlags]]; see [[#flags|Remarks]] for details
 |-
 |Uint32
-|''mod_modes''
-|a mask of supported channel modulation
+|'''mod_modes'''
+|a mask of supported channel modulation; see [[#mod_modes|Remarks]] for details
 |-
 |Uint32
-|''blend_modes''
+|'''blend_modes'''
 |a mask of supported blend modes
 |-
 |Uint32
-|''scale_modes''
+|'''scale_modes'''
 |a mask of supported scale modes
 |-
 |Uint32
-|''num_texture_formats''
+|'''num_texture_formats'''
 |the number of available texture formats
 |-
 |Uint32[20]
-|''texture_formats''
+|'''texture_formats'''
 |the available texture formats
 |-
 |int
-|''max_texture_width''
+|'''max_texture_width'''
 |the maximimum texture width
 |-
 |int
-|''max_texture_height''
+|'''max_texture_height'''
 |the maximimum texture height
 |}
 
@@ -52,11 +52,13 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="mod_modes"></span> '''mod_modes''' may be a mask of any of the following [[SDL_TextureModulate]] values OR'd together:  <<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
+
 
 == Related Enumerations ==
 :[[SDL_PixelFormatEnum]]
 :[[SDL_RendererFlags]]
+ l[[SDL_TextureModulate]]
 
 == Related Functions ==
 :[[SDL_FunctionLeaveSectionIfEmpty]]
