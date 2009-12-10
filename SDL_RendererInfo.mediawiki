@@ -12,35 +12,35 @@ Information on the capabilities of a render driver or context.
 |the name of the renderer
 |-
 |Uint32
-|'''flags'''
+|''flags''
 |supported [[SDL_RendererFlags]]
 |-
 |Uint32
-|'''mod_modes'''
+|''mod_modes''
 |a mask of supported channel modulation
 |-
 |Uint32
-|'''blend_modes'''
+|''blend_modes''
 |a mask of supported blend modes
 |-
 |Uint32
-|'''scale_modes'''
+|''scale_modes''
 |a mask of supported scale modes
 |-
 |Uint32
-|'''num_texture_formats'''
+|''num_texture_formats''
 |the number of available texture formats
 |-
 |Uint32[20]
-|'''texture_formats'''
+|''texture_formats''
 |the available texture formats
 |-
 |int
-|'''max_texture_width'''
+|''max_texture_width''
 |the maximimum texture width
 |-
 |int
-|'''max_texture_height'''
+|''max_texture_height''
 |the maximimum texture height
 |}
 
