@@ -2,22 +2,24 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_Structure =
-/replace with brief description of the structure/.
+A structure that contains ''replace with brief description of the structure''.
 
 
-<!-- Remove this comment from the Struct page when creating page.  
-To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:
-<<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
+<!-- #Remove this comment from the struct page when creating page.   -->
+To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:  <<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>>
 
 == Data Fields ==
 {|
-|field
+|type
+|''field''
 |description
 |-
-|field
+|type
+|''field''
 |description
 |-
-|field
+|type
+|''field''
 |description
 |}
 
@@ -27,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Enumerations ==
 :[[SDL_EnumerationRemoveSectionIfEmpty]]
