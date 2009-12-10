@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderCopy =
+Use this function to copy a portion of the texture to the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderCopy(SDL_TextureID   textureID,
+                   const SDL_Rect* srcrect,
+                   const SDL_Rect* dstrect)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the source texture; see [[#textureID|Remarks]] for details
+|-
+|'''srcrect'''
+|a pointer to the source rectangle, or NULL for the entire texture
+|-
+|'''dstrect'''
+|a pointer to the destination rectangle, or NULL for the entire rendering target
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if there is no rendering context current or the
+driver doesn't support the requested operation; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<span id="textureID"></span> The texture channel modulation is provided by the enumeration [[SDL_TextureModulate]] using these flags:
+<<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
+
+== Related Functions ==
+:[[SDL_RenderLines]]
+:[[SDL_RenderPoints]]
+:[[SDL_RenderRect]]
+:[[SDL_RenderRects]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
