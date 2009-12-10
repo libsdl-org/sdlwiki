@@ -7,13 +7,13 @@ The texture channel modulation used in [[SDL_RenderCopy]]().
 
 == Values ==
 {|
-|SDL_TEXTUREMODULATE_NONE = 0x00000000
+|SDL_TEXTUREMODULATE_NONE
 |no modulation
 |-
-|SDL_TEXTUREMODULATE_COLOR = 0x00000001
+|SDL_TEXTUREMODULATE_COLOR
 |srcC = srcC * color
 |-
-|SDL_TEXTUREMODULATE_ALPHA = 0x00000002
+|SDL_TEXTUREMODULATE_ALPHA
 |srcA = srcA * alpha
 |}
 
