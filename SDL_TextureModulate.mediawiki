@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_TextureModulate =
-The texture channel modulation used in [[SDL_RenderCopy]]().
+An enumeration that specifies the texture channel modulation used in [[SDL_RenderCopy]]().
 
 
 == Values ==
@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_RenderCopy]]
