@@ -1,0 +1,87 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_PixelFormat =
+A structure that contains pixel format information.
+
+
+<!-- #Remove these comments from the new struct page before saving.   -->
+<!-- #To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:  <<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
+
+== Data Fields ==
+{|
+|[[SDL_Palette]]
+|'''*palette'''
+|should the * be w/ SDL_Palette?
+|-
+|Uint8
+|'''BitsPerPixel'''
+|why is this field highlighted?
+|-
+|Uint8
+|'''BytesPerPixel'''
+|ditto
+|-
+|Uint8
+|'''Rloss'''
+|-
+|Uint8
+|'''Gloss'''
+|-
+|Uint8
+|'''Bloss'''
+|-
+|Uint8
+|'''Aloss'''
+|-
+|Uint8
+|'''Rshift'''
+|-
+|Uint8
+|'''Gshift'''
+|-
+|Uint8
+|'''Bshift'''
+|-
+|Uint8
+|'''Bshift'''
+|-
+|Uint8
+|'''Ashift'''
+|-
+|Uint32
+|'''Rmask'''
+|-
+|Uint32
+|'''Gmask'''
+|-
+|Uint32
+|'''Bmask'''
+|-
+|Uint32
+|'''Amask'''
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Everything in the pixel format structure is read-only.
+
+== Related Structures ==
+:[[SDL_Palette]]
+
+== Related Enumerations ==
+:[[SDL_PixelFormatEnum]]???
+
+== Related Functions ==
+:[[SDL_GetRGB]]
+:[[SDL_GetRGBA]]
+:[[SDL_MapRGB]]
+:[[SDL_MapRGBA]]
+:[[SDL_PixelFormatEnumToMasks]]???
+
+----
+[[CategoryStruct]]
