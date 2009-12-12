@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Enumeration =
+An enumeration that sets the blend mode used in [[SDL_RenderCopy]]() and drawing operations.
+
+
+== Values ==
+{|
+|SDL_BLENDMODE_NONE
+|no blending
+|-
+|SDL_BLENDMODE_MASK
+|dst = A ? src : dst (alpha is mask)
+|-
+|SDL_BLENDMODE_BLEND
+|dst = (src * A) + (dst * (1-A))
+|-
+|SDL_BLENDMODE_ADD
+|dst = (src * A) + dst
+|-
+|SDL_BLENDMODE_MOD
+|dst = src * dst
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+:[[SDL_RendererInfo]]
+
+== Related Functions ==
+:[[SDL_RenderCopy]]
+
+----
+[[CategoryEnum]]
