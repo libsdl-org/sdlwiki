@@ -18,7 +18,7 @@ value SDL_FunctionName(param)
 
 == Return Value ==
 ''Remove this section if there is no return value.
-Many SDL functions use this standard text:''
+Many SDL functions use this standard text (remove if not applicable):''
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
