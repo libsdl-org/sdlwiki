@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_AudioStatus =
+An enumeration that gets the current audio state.
+
+
+== Values ==
+{|
+|SDL_AUDIO_STOPPED
+|= 0
+|-
+|SDL_AUDIO_PLAYING
+|
+|-
+|SDL_AUDIO_PAUSED
+|
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetAudioDeviceStatus]]
+:[[SDL_GetAudioStatus]]
+
+----
+[[CategoryEnum]]
