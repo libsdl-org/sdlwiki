@@ -1,0 +1,68 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_AudioCVT =
+A structure that contains a set of audio conversion filters and buffers.
+
+
+== Data Fields ==
+{|
+|int
+|'''needed'''
+|set to 1 if conversion possible
+|-
+|[[SDL_AudioFormat]]
+|'''src_format'''
+|source audio format
+|-
+|[[SDL_AudioFormat]]
+|'''dst_format'''
+|target audio format
+|-
+|double
+|'''rate_incr'''
+|rate conversion increment
+|-
+|Uint8
+|'''^*^buf'''
+|^a pointer to a^ buffer to hold entire audio data
+|-
+|int
+|'''len'''
+|length of original audio buffer
+|-
+|int
+|'''len_cvt'''
+|length of converted audio buffer
+|-
+|int
+|'''len_mult'''
+|buffer must be len*len_mult big
+|-
+|double
+|'''len_ratio'''
+|given len, final size is len*len_ratio
+|-
+|[[SDL_AudioFilter]]
+|'''filters[10]'''
+|filter list
+|-
+|int
+|'''filter_index'''
+|current audio conversion function
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_BuildAudioCVT]]
+:[[SDL_ConvertAudio]]
+
+----
+[[CategoryStruct]]
