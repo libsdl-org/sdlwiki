@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Palette =
+A structure that contains palette information.
+
+
+== Data Fields ==
+{|
+|int
+|'''ncolors'''
+|-
+|SDL_Color
+|'''*colors'''
+|should the * be with SDL_Color?
+|-
+|int
+|'''refcount'''
+|-
+|SDL_PaletteWatch
+|'''*watch'''
+|ditto
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+:[[SDL_Color]]
+:[[SDL_PaletteWatch]]
+:[[SDL_PixelFormat]]
+
+== Related Functions ==
+:[[SDL_AddPaletteWatch]]
+:[[SDL_AllocPalette]]
+:[[SDL_DelPaletteWatch]]
+:[[SDL_FreePalette]]
+:[[SDL_SetPaletteColors]]
+
+----
+[[CategoryStruct]]
