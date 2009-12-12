@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_FunctionName =
+Use this function to get the current audio state of an audio device.
+
+
+== Syntax ==
+```c++
+SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
+```
+
+== Function Parameters ==
+{|
+|'''dev'''
+|the ID of the audio device
+|}
+
+== Return Value ==
+The status of the specified audio device which may be any of the following:
+<<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetAudioStatus]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
