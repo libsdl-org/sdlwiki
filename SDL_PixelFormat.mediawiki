@@ -5,9 +5,6 @@
 A structure that contains pixel format information.
 
 
-<!-- #Remove these comments from the new struct page before saving.   -->
-<!-- #To automatically show Data Fields content from this page on a function page place the following markup in the Remarks section of the related function(s), where structure is replaced by the actual structure name:  <<Include(SDL_structure, , , from="== Data Fields ==", to="== Code Examples ==")>> -->
-
 == Data Fields ==
 {|
 |[[SDL_Palette]]
