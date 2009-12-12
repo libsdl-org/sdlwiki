@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_FunctionName =
+= SDL_GetAudioDeviceStatus =
 Use this function to get the current audio state of an audio device.
 
 
@@ -17,7 +17,7 @@ SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
 |}
 
 == Return Value ==
-The status of the specified audio device which may be any of the following:
+Returns the status of the specified audio device which may be any of the following:
 <<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
