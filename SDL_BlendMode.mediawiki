@@ -35,7 +35,11 @@ You can add your code example here
 :[[SDL_RendererInfo]]
 
 == Related Functions ==
+:[[SDL_GetRenderDrawBlendMode]]
+:[[SDL_GetTextureBlendMode]]
 :[[SDL_RenderCopy]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetTextureBlendMode]]
 
 ----
 [[CategoryEnum]]
