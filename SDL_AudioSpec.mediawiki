@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioSpec =
-This ''structure'' (function) is called when the audio device needs more data.
+A structure that contains audio data.  This structure ''(function in header)'' is called when the audio device needs more data.
 
 
 <!-- Remove this comment from the Struct page when creating page.  
