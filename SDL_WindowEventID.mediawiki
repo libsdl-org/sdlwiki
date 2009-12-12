@@ -2,13 +2,13 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_WindowEventID =
-Event subtype for window events.
+An enumeration that sets the --(event)-- subtype for window events.
 
 
 == Values ==
 {|
 |SDL_WINDOWEVENT_NONE
-|''window'' never used
+|^window^ never used
 |-
 |SDL_WINDOWEVENT_SHOWN
 |window has been shown
@@ -35,7 +35,7 @@ Event subtype for window events.
 |window has been restored to normal size and position
 |-
 |SDL_WINDOWEVENT_ENTER
-|''THE'' window has gained mouse focus
+|,,the,, window has gained mouse focus
 |-
 |SDL_WINDOWEVENT_LEAVE
 |the window has lost mouse focus
@@ -56,7 +56,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_CreateWindow]] ?????
