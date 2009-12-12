@@ -29,25 +29,32 @@ void* userdata
 
 == Data Fields ==
 {|
-|int freq
+|int
+|'''freq'''
 |DSP frequency -- samples per second
 |-
-|[[SDL_AudioFormat]] format
+|[[SDL_AudioFormat]]
+|'''format'''
 |audio data format
 |-
-|Uint8 channels
+|Uint8
+|'''channels'''
 |number of channels: 1 mono, 2 stereo
 |-
-|Uint8 silence
+|Uint8
+|'''silence'''
 |audio buffer silence value (calculated)
 |-
-|Uint16 samples
+|Uint16
+|'''samples'''
 |audio buffer size in samples (power of 2)
 |-
-|Uint16 padding
+|Uint16
+|'''padding'''
 |necessary for some compile environments
 |-
-|Uint32 size
+|Uint32
+|'''size'''
 |audio buffer size in bytes (calculated)
 |}
 
