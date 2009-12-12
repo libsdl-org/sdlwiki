@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_TextureModulate =
-An enumeration that specifies the texture channel modulation used in [[SDL_RenderCopy]]().
+An enumeration that sets the texture channel modulation used in [[SDL_RenderCopy]]().
 
 
 == Values ==
