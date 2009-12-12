@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_TextureAccess =
-The access pattern allowed for a texture.
+An enumeration that specifies the access pattern allowed for a texture.
 
 
 == Values ==
@@ -20,7 +20,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
