@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetWindowDisplayMode =
-Use this function to set the display mode used when a fullscreen window is visible on the currently selected display. ''By default the window's dimensions and the desktop format and refresh rate are used.''
+Use this function to set the display mode used when a fullscreen window is visible on the currently selected display. __By default the window's dimensions and the desktop format and refresh rate are used.__
 
 
 == Syntax ==
@@ -29,7 +29,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here ''should the italicized description above be here instead?''
+''You can add useful comments here'' 
+__should the underlined description above be here instead?__
 
 == Related Functions ==
 :[[SDL_GetWindowDisplayMode]]
