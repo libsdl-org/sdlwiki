@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Color =
+A structure that contains color information.
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''r'''
+|-
+|Uint8
+|'''g'''
+|-
+|Uint8
+|'''b'''
+|-
+|Uint8
+|'''unused'''
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+[[SDL_Color]] and [[SDL_Colour]] are interchangeable.
+
+== Related Structures ==
+:[[SDL_Palette]]
+
+== Related Functions ==
+:[[SDL_SetPaletteColors]]
+
+----
+[[CategoryStruct]]
