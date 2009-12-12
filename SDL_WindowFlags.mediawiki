@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_WindowFlags =
-The flags on a window.
+An enumeration that sets the flags on a window.
 
 
 == Values ==
@@ -47,7 +47,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_CreateWindow]]
