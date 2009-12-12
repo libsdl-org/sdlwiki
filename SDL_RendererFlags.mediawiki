@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RendererFlags =
-Flags used when creating a rendering context.
+An enumeration that sets flags used when creating a rendering context.
 
 
 == Values ==
@@ -35,7 +35,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can add useful comments here
+''You can add useful comments here''
 
 == Related Structures ==
 :[[SDL_RendererInfo]]
