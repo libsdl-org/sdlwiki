@@ -9,7 +9,7 @@ A structure that describes a display mode.
 {|
 |Uint32
 |'''format'''
-|[[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
+|an enumerated pixel format; see [[SDL_PixelFormatEnum]] for details
 |-
 |int
 |'''w'''
@@ -21,7 +21,7 @@ A structure that describes a display mode.
 |-
 |int
 |'''refresh_rate'''
-|refresh rate (or zero for unspecified)
+|refresh rate or zero for unspecified(in Hz)
 |-
 |void*
 |'''driverdata'''
@@ -34,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="format"></span> An enumerated pixel format; see [[SDL_PixelFormatEnum]] for details.
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_GetClosestDisplayMode]]
