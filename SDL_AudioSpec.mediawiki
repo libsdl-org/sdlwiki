@@ -5,15 +5,6 @@
 A structure that contains audio data.  This structure ''(function in header)'' is called when the audio device needs more data.
 
 
-== Structure Parameters ==
-{|
-|'''stream'''
-|a pointer to the audio data buffer
-|-
-|'''len'''
-|the length of that buffer in bytes
-|}
-
 == Data Fields ==
 {|
 |int
@@ -40,12 +31,12 @@ A structure that contains audio data.  This structure ''(function in header)'' i
 |'''size'''
 |audio buffer size in bytes (calculated)
 |-
-|void*
-|'''userdata'''
-|
-|-
 |[[SDL_AudioCallback]]
 |'''callback'''
+|
+|-
+|void*
+|'''userdata'''
 |
 |}
 
@@ -63,12 +54,18 @@ Stereo samples are stored in a LRLRLR ordering.
 
 The callback is of the form:
 ```c++
-void (SDLCALL* callback)
-     (void*    userdata, 
-      Uint8*   stream, 
-      int      len);
-void* userdata
+void callback(void*  userdata, 
+              Uint8* stream, 
+              int    len);
 ```
+
+{|
+|'''stream'''
+|a pointer to the audio data buffer
+|-
+|'''len'''
+|the length of that buffer in bytes
+|}
 
 == Related Functions ==
 :[[SDL_LoadWAV_RW]]
