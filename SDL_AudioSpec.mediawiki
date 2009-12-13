@@ -37,7 +37,7 @@ A structure that describes the audio output format. It contains a callback that 
 |-
 |void*
 |'''userdata'''
-|an application-specific parameter saved in the [[SDL_AudioSpec]] structure
+|a pointer that is passed as the first parameter to '''callback'''
 |}
 
 == Code Examples ==
