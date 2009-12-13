@@ -19,7 +19,7 @@ A structure that contains palette information.
 |<style="color: #808080;">'''refcount'''
 |<style="color: #808080;">reference count (internal use)
 |-
-|<style="color: #808080;">[[SDL_PaletteWatch]]*
+|<style="color: #808080;">SDL_Palette<code></code>Watch*
 |<style="color: #808080;">'''watch'''
 |<style="color: #808080;">a list of callbacks called when this palette has changed (internal use)
 |}
