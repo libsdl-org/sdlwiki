@@ -38,6 +38,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_DestroyRenderer]]
+:[[SDL_GetNumRenderDrivers]]
 :[[SDL_GetRendererInfo]]
 :[[SDL_SelectRenderer]]
 
