@@ -9,7 +9,7 @@ A structure that describes the audio output format. It contains a callback that 
 {|
 |int
 |'''freq'''
-|DSP frequency -- samples per second
+|DSP frequency (samples per second)
 |-
 |[[SDL_AudioFormat]]
 |'''format'''
@@ -56,10 +56,12 @@ void callback(void*  userdata,
               Uint8* stream, 
               int    len);
 ```
-
 {|
+|'''userdata'''
+|an application-specific parameter saved in the SDL_AudioSpec structure
+|-
 |'''stream'''
-|a pointer to the audio data buffer
+|a pointer to the audio data buffer to be filled in by the callback
 |-
 |'''len'''
 |the length of that buffer in bytes
