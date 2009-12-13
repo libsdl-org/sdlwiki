@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetTextureAlphaMod =
+Use this function to get the additional alpha value used in render copy operations.
+
+
+== Syntax ==
+```c++
+int SDL_GetTextureAlphaMod(SDL_TextureID textureID,
+                           Uint8*        alpha)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to query
+|-
+|'''alpha'''
+|a pointer filled in with the source alpha value
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the texture is not valid; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetTextureAlphaMod]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
