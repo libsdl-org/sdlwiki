@@ -43,9 +43,9 @@ A structure that is used for audio data conversion.
 |'''len_ratio'''
 |given '''len''', final size is len*len_ratio
 |-
-|<style="color: #808080;">[[SDL_AudioFilter]][10]
+|SDL_Audio<code></code>Filter[10]
 |<style="color: #808080;">'''filters'''
-|<style="color: #808080;">filter list
+|filter list
 |-
 |int
 |<style="color: #808080;">'''filter_index'''
