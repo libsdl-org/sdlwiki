@@ -46,7 +46,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The calculated values in this structure are calculated by [[SDL_OpenAudio]]().
+The calculated values '''silence''' and '''size''' in this structure are calculated by [[SDL_OpenAudio]]().
 
 Stereo samples are stored in a LRLRLR ordering.
 
