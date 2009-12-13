@@ -79,7 +79,7 @@ The data types used to represent pixels are as follows:
 |Uint16
 |-
 |3
-|couple of Uint8 RGB values
+|tuple of Uint8 RGB values
 |-
 |4
 |Uint32
