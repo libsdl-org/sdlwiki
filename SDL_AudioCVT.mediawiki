@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioCVT =
-A structure that contains a set of audio conversion filters and buffers.
+A structure that is used for audio data conversion.
 
 
 == Data Fields ==
@@ -23,9 +23,9 @@ A structure that contains a set of audio conversion filters and buffers.
 |'''rate_incr'''
 |rate conversion increment
 |-
-|Uint8
-|'''^*^buf'''
-|^a pointer to a^ buffer to hold entire audio data
+|Uint8*
+|'''buf'''
+|a pointer to a buffer to hold entire audio data
 |-
 |int
 |'''len'''
@@ -37,14 +37,14 @@ A structure that contains a set of audio conversion filters and buffers.
 |-
 |int
 |'''len_mult'''
-|buffer must be len*len_mult big
+|'''buf''' must be len*len_mult big
 |-
 |double
 |'''len_ratio'''
-|given len, final size is len*len_ratio
+|given '''len''', final size is len*len_ratio
 |-
-|[[SDL_AudioFilter]]
-|'''filters[10]'''
+|[[SDL_AudioFilter]][10]
+|'''filters'''
 |filter list
 |-
 |int
