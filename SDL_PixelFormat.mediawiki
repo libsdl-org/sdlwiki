@@ -7,17 +7,14 @@ A structure that contains pixel format information.
 
 == Data Fields ==
 {|
-|[[SDL_Palette]]
-|'''*palette'''
-|should the * be w/ SDL_Palette?
+|[[SDL_Palette]]*
+|'''palette'''
 |-
 |Uint8
-|'''BitsPerPixel'''
-|why is this field highlighted?
+|'''Bits<code></code>Per<code></code>Pixel'''
 |-
 |Uint8
-|'''BytesPerPixel'''
-|ditto
+|'''Bytes<code></code>Per<code></code>Pixel'''
 |-
 |Uint8
 |'''Rloss'''
