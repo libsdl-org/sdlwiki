@@ -34,6 +34,9 @@ You can add your code example here
 == Related Enumerations ==
 :[[SDL_EnumerationRemoveSectionIfEmpty]]
 
+== Related Structures ==
+:[[SDL_StructureRemoveSectionIfEmpty]]
+
 == Related Functions ==
 :[[SDL_FunctionLeaveSectionIfEmpty]]
 
