@@ -10,16 +10,14 @@ A structure that contains palette information.
 |int
 |'''ncolors'''
 |-
-|[[SDL_Color]]
-|'''*colors'''
-|should the * be with SDL_Color?
+|[[SDL_Color]]*
+|'''colors'''
 |-
 |int
 |'''refcount'''
 |-
-|[[SDL_PaletteWatch]]
-|'''*watch'''
-|ditto
+|[[SDL_PaletteWatch]]*
+|'''watch'''
 |}
 
 == Code Examples ==
