@@ -33,7 +33,7 @@ Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
 |}
 
 == Return Value ==
-The pixel format enumeration.
+The pixel format enumeration; see [[SDL_PixelFormatEnum]] for details.
 
 == Code Examples ==
 ```c++
