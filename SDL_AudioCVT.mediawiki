@@ -47,9 +47,9 @@ A structure that is used for audio data conversion.
 |<style="color: #808080;">'''filters'''
 |<style="color: #808080;">filter list
 |-
-|<style="color: #6E6E6E;">int
-|<style="color: #6E6E6E;">'''filter_index'''
-|<style="color: #6E6E6E;">current audio conversion function
+|int
+|<style="color: #808080;">'''filter_index'''
+|current audio conversion function
 |}
 
 == Code Examples ==
