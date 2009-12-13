@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GetNumRenderDrivers =
+Use this function to get the number of 2D rendering drivers available for the current display.
+
+
+== Syntax ==
+```c++
+int SDL_GetNumRenderDrivers(void)
+```
+
+== Return Value ==
+Returns a number >=1 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+A render driver is a set of code that handles rendering and texture management on a particular display.  Normally there is only one, but some drivers may have several available with different capabilities.
+
+== Related Functions ==
+:[[SDL_CreateRenderer]]
+:[[SDL_GetRenderDriverInfo]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
