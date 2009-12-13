@@ -58,7 +58,7 @@ void callback(void*  userdata,
 ```
 {|
 |'''userdata'''
-|an application-specific parameter saved in the SDL_AudioSpec structure
+|an application-specific parameter saved in the [[SDL_AudioSpec]] structure
 |-
 |'''stream'''
 |a pointer to the audio data buffer to be filled in by the callback
