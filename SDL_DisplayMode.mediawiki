@@ -2,14 +2,14 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_DisplayMode =
-A structure that contains data to define a display mode.
+A structure that describes a display mode.
 
 
 == Data Fields ==
 {|
 |Uint32
 |'''format'''
-|pixel format
+|[[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
 |-
 |int
 |'''w'''
@@ -34,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="format"></span> An enumerated pixel format; see [[SDL_PixelFormatEnum]] for details.
 
 == Related Functions ==
 :[[SDL_GetClosestDisplayMode]]
