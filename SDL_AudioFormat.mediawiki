@@ -143,19 +143,38 @@ Defaults to LSB byte order.
 #endif
 ```
 
+=== Allow change flags ===
+Which audio format changes are allowed when opening a device.
+{|
+|SDL_AUDIO_ALLOW_FREQUENCY_CHANGE
+|0x00000001
+|-
+|SDL_AUDIO_ALLOW_FORMAT_CHANGE
+|0x00000002
+|-
+|SDL_AUDIO_ALLOW_CHANNELS_CHANGE
+|0x00000004
+|-
+|SDL_AUDIO_ALLOW_ANY_CHANGE
+|(SDL_AUDIO_ALLOW_FREQUENCY_CHANGE|SDL_AUDIO_ALLOW_FORMAT_CHANGE|SDL_AUDIO_ALLOW_CHANNELS_CHANGE)
+|}
+
+
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
 
 == Remarks ==
-
+''You can add useful comments here''
 
 == Related Structures ==
-:[[SDL_StructureRemoveSectionIfEmpty]]
+:[[SDL_AudioCVT]]
+:[[SDL_AudioSpec]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
+:[[SDL_BuildAudioCVT]]
+:[[SDL_MixAudioFormat]]
 
 ----
 [[CategoryEnum]]
