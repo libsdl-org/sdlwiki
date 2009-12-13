@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioSpec =
-A structure that contains audio data.  This structure ''(function in header)'' is called when the audio device needs more data.
+A structure that describes the audio output format. It contains a callback that is called when the audio device needs more data.
 
 
 == Data Fields ==
@@ -33,11 +33,11 @@ A structure that contains audio data.  This structure ''(function in header)'' i
 |-
 |[[SDL_AudioCallback]]
 |'''callback'''
-|
+|a function that is called when the audio device needs more data; see [[#callback|Remarks]] for details
 |-
 |void*
 |'''userdata'''
-|
+|an application-specific parameter saved in the [[SDL_AudioSpec]] structure
 |}
 
 == Code Examples ==
@@ -48,11 +48,9 @@ You can add your code example here
 == Remarks ==
 The calculated values in this structure are calculated by [[SDL_OpenAudio]]().
 
-Once the callback returns, the buffer will no longer be valid.
-
 Stereo samples are stored in a LRLRLR ordering.
 
-The callback is of the form:
+<span id="callback"></span> '''callback''' is of the form:
 ```c++
 void callback(void*  userdata, 
               Uint8* stream, 
@@ -66,6 +64,8 @@ void callback(void*  userdata,
 |'''len'''
 |the length of that buffer in bytes
 |}
+
+Once the callback returns, the buffer will no longer be valid.
 
 == Related Functions ==
 :[[SDL_LoadWAV_RW]]
