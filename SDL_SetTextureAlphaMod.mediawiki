@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SetTextureAlphaMod =
+Use this function to set an additional alpha value used in render copy operations.
+
+
+== Syntax ==
+```c++
+int SDL_SetTextureAlphaMod(SDL_TextureID textureID,
+                           Uint8         alpha)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to update
+|-
+|'''alpha'''
+|the source alpha value multiplied into copy operations
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the texture is not valid or alpha modulation is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetTextureAlphaMod]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
