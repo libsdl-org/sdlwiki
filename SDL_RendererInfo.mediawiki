@@ -70,7 +70,7 @@ You can add your code example here
 :[[SDL_TextureScaleMode]]
 
 == Related Functions ==
-:[[SDL_GetRendererDriverInfo]]
+:[[SDL_GetRenderDriverInfo]]
 :[[SDL_GetRendererInfo]]
 :[[SDL_RenderCopy]]
 
