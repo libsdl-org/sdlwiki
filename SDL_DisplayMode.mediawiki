@@ -21,7 +21,7 @@ A structure that describes a display mode.
 |-
 |int
 |'''refresh_rate'''
-|refresh rate or zero for unspecified (in Hz)
+|refresh rate (in Hz), or 0 for unspecified 
 |-
 |void*
 |'''driverdata'''
