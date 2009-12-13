@@ -9,15 +9,19 @@ A structure that contains palette information.
 {|
 |int
 |'''ncolors'''
+|the number of colors in the palette
 |-
 |[[SDL_Color]]*
 |'''colors'''
+|an array of colors in the palette
 |-
-|int
-|'''refcount'''
+|<style="color: #808080;">int
+|<style="color: #808080;">'''refcount'''
+|<style="color: #808080;">reference count (internal use)
 |-
-|[[SDL_PaletteWatch]]*
-|'''watch'''
+|<style="color: #808080;">[[SDL_PaletteWatch]]*
+|<style="color: #808080;">'''watch'''
+|<style="color: #808080;">a list of callbacks called when this palette has changed(internal use)
 |}
 
 == Code Examples ==
@@ -29,8 +33,6 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Structures ==
-:[[SDL_Color]]
-:[[SDL_PaletteWatch]]
 :[[SDL_PixelFormat]]
 
 == Related Functions ==
