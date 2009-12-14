@@ -24,14 +24,22 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+SDL_Rect<code></code>Empty (=define), SDL_Rect<code></code>Equals (=define) (\sa in header; should these be in Remarks?)
+
 == Related Functions ==
+:[[SDL_DirtyTexture]]?
 :[[SDL_EnclosePoints]]
+:[[SDL_GetDisplayBounds]]?
 :[[SDL_HasIntersection]]
 :[[SDL_IntersectRect]]
+:[[SDL_LockTexture]]?
+:[[SDL_RenderCopy]]?
+:[[SDL_RenderReadPixels]]?
+:[[SDL_RenderRect]]?
+:[[SDL_RenderRects]]?
+:[[SDL_RenderWritePixels]]?
 :[[SDL_UnionRect]]
-
-SDL_Rect<code></code>Empty (define)
-SDL_Rect<code></code>Equals (define) (should these be in Remarks?)
+:[[SDL_UpdateTexture]]?
 
 ----
 [[CategoryStruct]]
