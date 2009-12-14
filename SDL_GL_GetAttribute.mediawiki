@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GL_GetAttribute =
+Use this function to get the actual value for an attribute from the current context.
+
+
+== Syntax ==
+```c++
+int SDL_GL_GetAttribute(SDL_GLattr attr,
+                        int*       value)
+```
+
+== Function Parameters ==
+{|
+|'''attr'''
+|the [[SDL_GLattr]] to be queried
+|-
+|'''value'''
+|a pointer to be filled in with the current value of '''attr'''
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GL_SetAttribute]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
