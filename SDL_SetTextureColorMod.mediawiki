@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SetTextureColorMod =
+Use this function to set an additional color value used in render copy operations.
+
+
+== Syntax ==
+```c++
+int SDL_SetTextureColorMod(SDL_TextureID textureID,
+                           Uint8         r,
+                           Uint8         g,
+                           Uint8         b)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to update
+|-
+|'''r'''
+|the red source color value multiplied into copy operations
+|-
+|'''g'''
+|the green source color value multiplied into copy operations
+|-
+|'''b'''
+|the blue source color value multiplied into copy operations
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the texture is not valid or color modulation is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetTextureColorMod]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
