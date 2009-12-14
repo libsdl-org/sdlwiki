@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_Rect =
+A structure that defines a rectangle, with the origin at the upper left.
+
+
+== Data Fields ==
+{|
+|int
+|'''x, y'''
+|the x and y location of the rectangle's upper left corner
+|-
+|int
+|'''w, h'''
+|the width ('''w''') and height ('''h''') of the rectangle
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_EnclosePoints]]
+:[[SDL_HasIntersection]]
+:[[SDL_IntersectRect]]
+:[[SDL_UnionRect]]
+
+SDL_Rect<code></code>Empty (define)
+SDL_Rect<code></code>Equals (define) (should these be in Remarks?)
+
+----
+[[CategoryStruct]]
