@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderReadPixels =
+Use this function to read pixels from the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderReadPixels(const SDL_Rect* rect,
+                         Uint32          format,
+                         void*           pixels,
+                         int             pitch)
+```
+
+== Function Parameters ==
+{|
+|'''rect'''
+|a pointer to the [[SDL_Rect]] to read, or NULL for the entire render target
+|-
+|'''format'''
+|the desired format of the pixel data, or 0 to use the format of the rendering target
+|-
+|'''pixels'''
+|a pointer to be filled in with the pixel data
+|-
+|'''pitch'''
+|the pitch of the pixels parameter
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if pixel reading is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+WARNING: This is a very slow operation, and should not be used frequently. 
+
+== Related Functions ==
+:[[SDL_RenderWritePixels]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
