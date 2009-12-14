@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SetTextureBlendMode =
+Use this function to set the blend mode used for texture copy operations.
+
+
+== Syntax ==
+```c++
+int SDL_SetTextureBlendMode(SDL_TextureID textureID,
+                            int           blendMode)
+```
+
+== Function Parameters ==
+{|
+|'''textureID'''
+|the texture to update
+|-
+|'''blendMode'''
+|the [[SDL_BlendMode]] to use for texture blending
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the texture is not valid or the blend mode is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+If the blend mode is not supported, the closest supported mode is chosen.
+
+== Related Functions ==
+:[[SDL_GetTextureBlendMode]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
