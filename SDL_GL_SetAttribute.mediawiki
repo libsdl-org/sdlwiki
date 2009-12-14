@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_GL_SetAttribute =
+Use this function to set an OpenGL window attribute before window creation.
+
+
+== Syntax ==
+```c++
+int SDL_GL_SetAttribute(SDL_GLattr attr,
+                        int        value)
+```
+
+== Function Parameters ==
+{|
+|'''attr'''
+|the [[SDL_GLattr]] to be set
+|-
+|'''value'''
+|the desired value for the attribute
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GL_GetAttribute]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
