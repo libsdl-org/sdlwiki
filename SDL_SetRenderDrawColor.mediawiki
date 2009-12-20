@@ -1,0 +1,48 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SetRenderDrawColor =
+Use this function to set the color used for drawing operations (,,Fill,, ^Rect^ and Line).
+
+
+== Syntax ==
+```c++
+int SDL_SetRenderDrawColor(Uint8 r,
+                           Uint8 g,
+                           Uint8 b,
+                           Uint8 a)
+```
+
+== Function Parameters ==
+{|
+|'''r'''
+|the red value used to draw on the rendering target
+|-
+|'''g'''
+|the green value used to draw on the rendering target
+|-
+|'''b'''
+|the blue value used to draw on the rendering target
+|-
+|'''a'''
+|the alpha value used to draw on the rendering target; usually SDL_ALPHA_OPAQUE (255)
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetRenderDrawColor]]
+:[[SDL_RenderRect]]???
+:[[SDL_RenderRects]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
