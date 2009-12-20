@@ -9,14 +9,14 @@ A typedef that contains audio format data and flags.
 === Bit Meanings ===
 These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
 ```
-++-----------------------sample is signed if set
-||
-||       ++-----------sample is bigendian if set
-||       ||
-||       ||          ++---sample is float if set
-||       ||          ||
-||       ||          || +---sample bit size---+
-||       ||          || |                     |
++-----------------------sample is signed if set
+|
+|         +-----------sample is bigendian if set
+|         |
+|         |           +--sample is float if set
+|         |           |
+|         |           | +---sample bit size---+
+|         |           | |                     |
 15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0 
 ```
 Unspecified bits are always zero.  There are macros in SDL 1.3 and later to query these bits. 
