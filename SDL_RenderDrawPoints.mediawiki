@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderPoints =
+Use this function to draw some number of points on the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderPoints(const SDL_Point* points,
+                     int              count)
+```
+
+== Function Parameters ==
+{|
+|'''points'''
+|the points to draw
+|-
+|'''count'''
+|the number of points to draw
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderLine]]???
+:[[SDL_RenderLines]]???
+:[[SDL_RenderPoint]]???
+:[[SDL_RenderRect]]???
+:[[SDL_RenderRects]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
