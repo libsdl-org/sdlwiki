@@ -21,8 +21,10 @@ These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
 ```
 Unspecified bits are always zero.  There are macros in SDL 1.3 and later to query these bits. 
 
-=== Audio flags ===
 {|
+|
+|audio format macros
+|-
 |SDL_AUDIO_MASK_BITSIZE
 |(0xFF)
 |-
@@ -55,10 +57,10 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |SDL_AUDIO_ISUNSIGNED(x)
 |(!SDL_AUDIO_ISSIGNED(x))
-|}
-
-=== Audio format flags ===
-{|
+|-
+|
+|audio format values
+|-
 |AUDIO_S8
 |signed 8-bit samples
 |-
@@ -66,16 +68,16 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |unsigned 8-bit samples
 |-
 |AUDIO_S16LSB
-|signed 16-bit samples in little-endian order
+|signed 16-bit samples in little-endian byte order
 |-
 |AUDIO_S16MSB
-|signed 16-bit samples int big-endian byte order
+|signed 16-bit samples in big-endian byte order
 |-
 |AUDIO_S16SYS
 |signed 16-bit samples in native byte order
 |-
 |AUDIO_U16LSB
-|unsigned 16-bit samples in little-endian order
+|unsigned 16-bit samples in little-endian byte order
 |-
 |AUDIO_U16MSB
 |unsigned 16-bit samples in big-endian byte order
@@ -88,35 +90,41 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |AUDIO_S16
 |AUDIO_S16LSB
-|}
-
-=== int32 support ===
-(New to SDL 1.3)
-{|
+|-
+|
+|int32 support (New to SDL 1.3)
+|-
 |AUDIO_S32LSB
-|32-bit integer samples
+|32-bit integer samples in little-endian byte order
 |-
 |AUDIO_S32MSB
-|as above, but big-endian byte order
+|32-bit integer samples in big-endian byte order
+|-
+|AUDIO_S32SYS
+|32-bit integer samples in native byte order
+
 |-
 |AUDIO_S32
 |AUDIO_S32LSB
-|}
-
-=== float32 support ===
-(New to SDL 1.3)
-{|
+|-
+|
+|float32 support (New to SDL 1.3)
+|-
 |AUDIO_F32LSB
-|32-bit floating point samples
+|32-bit floating point samples in little-endian byte order
 |-
 |AUDIO_F32MSB
-|as above, but big-endian byte order
+|32-bit floating point samples in big-endian byte order
+|-
+|AUDIO_F32SYS
+|32-bit floating point samples in native byte order
+
 |-
 |AUDIO_F32
 |AUDIO_F32LSB
 |}
 
-=== Native audio byte ordering ===
+native audio byte ordering
 ```
 #if SDL_BYTEORDER == SDL_LIL_ENDIAN
 #define AUDIO_S32SYS AUDIO_S32LSB
@@ -126,23 +134,6 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 #define AUDIO_F32SYS AUDIO_F32MSB
 #endif
 ```
-
-=== Allow change flags ===
-Which audio format changes are allowed when opening a device.
-{|
-|SDL_AUDIO_ALLOW_FREQUENCY_CHANGE
-|0x00000001
-|-
-|SDL_AUDIO_ALLOW_FORMAT_CHANGE
-|0x00000002
-|-
-|SDL_AUDIO_ALLOW_CHANNELS_CHANGE
-|0x00000004
-|-
-|SDL_AUDIO_ALLOW_ANY_CHANGE
-|(SDL_AUDIO_ALLOW_FREQUENCY_CHANGE|SDL_AUDIO_ALLOW_FORMAT_CHANGE|SDL_AUDIO_ALLOW_CHANNELS_CHANGE)
-|}
-
 
 == Code Examples ==
 ```c++
