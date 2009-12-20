@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_BlendMode =
-An enumeration of blend modes.
+An enumeration of blend modes used in texture copying and drawing operations.
 
 
 == Values ==
