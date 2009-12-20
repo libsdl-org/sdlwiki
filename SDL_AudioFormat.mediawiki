@@ -23,7 +23,7 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 
 {|
 |
-|'''audio format macros'''
+|<(>'''audio format macros'''
 |-
 |SDL_AUDIO_MASK_BITSIZE
 |(0xFF)
@@ -57,12 +57,15 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |SDL_AUDIO_ISUNSIGNED(x)
 |(!SDL_AUDIO_ISSIGNED(x))
+|}
+
+
+{|
+|
+|<(> '''audio format values'''
 |-
 |
-|'''audio format values'''
-|-
-|
-|8-bit support
+|<(>8-bit support
 |-
 |AUDIO_S8
 |signed 8-bit samples
@@ -71,7 +74,7 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |unsigned 8-bit samples
 |-
 |
-|16-bit support
+|<(>16-bit support
 |-
 |AUDIO_S16LSB
 |signed 16-bit samples in little-endian byte order
@@ -81,6 +84,9 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |AUDIO_S16SYS
 |signed 16-bit samples in native byte order
+|-
+|AUDIO_S16
+|AUDIO_S16LSB
 |-
 |AUDIO_U16LSB
 |unsigned 16-bit samples in little-endian byte order
@@ -94,11 +100,8 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |AUDIO_U16
 |AUDIO_U16LSB
 |-
-|AUDIO_S16
-|AUDIO_S16LSB
-|-
 |
-|32-bit support (New to SDL 1.3)
+|<(>32-bit support (New to SDL 1.3)
 |-
 |AUDIO_S32LSB
 |32-bit integer samples in little-endian byte order
@@ -113,7 +116,7 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |AUDIO_S32LSB
 |-
 |
-|float support (New to SDL 1.3)
+|<(>float support (New to SDL 1.3)
 |-
 |AUDIO_F32LSB
 |32-bit floating point samples in little-endian byte order
