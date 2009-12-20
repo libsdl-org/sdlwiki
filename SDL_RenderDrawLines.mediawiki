@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderLines =
+Use this function to draw a series of connected lines on the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderLines(const SDL_Point* points,
+                    int              count)
+```
+
+== Function Parameters ==
+{|
+|'''points'''
+|the points along the lines
+|-
+|'''count'''
+|the number of points, drawing count-1 lines
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderLine]]???
+:[[SDL_RenderPoint]]???
+:[[SDL_RenderPoints]]???
+:[[SDL_RenderRect]]???
+:[[SDL_RenderRects]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
