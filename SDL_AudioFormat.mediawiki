@@ -102,7 +102,6 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |AUDIO_S32SYS
 |32-bit integer samples in native byte order
-
 |-
 |AUDIO_S32
 |AUDIO_S32LSB
@@ -118,7 +117,6 @@ Unspecified bits are always zero.  There are macros in SDL 1.3 and later to quer
 |-
 |AUDIO_F32SYS
 |32-bit floating point samples in native byte order
-
 |-
 |AUDIO_F32
 |AUDIO_F32LSB
