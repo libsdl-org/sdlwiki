@@ -19,7 +19,7 @@ int SDL_UpdateTexture(SDL_TextureID   textureID,
 |the texture to update
 |-
 |'''rect'''
-|a pointer to the rectangle of ^[[SDL_Rect]] with^ pixels to update, or NULL to update the entire texture
+|a pointer to the ,,rectangle of,, ^[[SDL_Rect]] with^ pixels to update, or NULL to update the entire texture
 |-
 |'''pixels'''
 |the raw pixel data
