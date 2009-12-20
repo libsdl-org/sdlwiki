@@ -15,7 +15,7 @@ int SDL_RenderCopy(SDL_TextureID   textureID,
 == Function Parameters ==
 {|
 |'''textureID'''
-|the source texture; see [[#textureID|Remarks]] for details
+|the source texture; see [[#Remarks|Remarks]] for details
 |-
 |'''srcrect'''
 |a pointer to the source rectangle, or NULL for the entire texture
@@ -34,16 +34,18 @@ You can add your code example here
 ```
 
 == Remarks ==
-The texture is blended with the destination based on the blend mode set with [[SDL_SetTextureBlendMode]]().
-<span id="textureID"></span> The texture channel modulation is provided by the enumeration [[SDL_TextureModulate]] using these flags:
-<<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
+The texture is blended with the destination based on its blend mode set with [[SDL_SetTextureBlendMode]]().
+
+The texture, color, or alpha is affected based on the channel modulation set by [[SDL_SetTextureColorMod]]() and [[SDL_SetTextureAlphaMod]]().
 
 == Related Functions ==
 :[[SDL_RenderLines]]
 :[[SDL_RenderPoints]]
 :[[SDL_RenderRect]]
 :[[SDL_RenderRects]]
+:[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
+:[[SDL_SetTextureColorMod]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
