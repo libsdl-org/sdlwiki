@@ -1,0 +1,50 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderLine =
+Use this function to draw a line on the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderLine(int x1,
+                   int y1,
+                   int x2,
+                   int y2)
+```
+
+== Function Parameters ==
+{|
+|'''x1'''
+|the x coordinate of the start point
+|-
+|'''y1'''
+|the y coordinate of the start point
+|-
+|'''x2'''
+|the x coordinate of the end point
+|-
+|'''y2'''
+|the y coordinate of the end point
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderLines]]???
+:[[SDL_RenderPoint]]???
+:[[SDL_RenderPoints]]???
+:[[SDL_RenderRect]]???
+:[[SDL_RenderRects]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
