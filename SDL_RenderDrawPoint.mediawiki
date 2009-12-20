@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderPoint =
+Use this function to draw a point on the current rendering target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderPoint(int x, 
+                    int y)
+```
+
+== Function Parameters ==
+{|
+|'''x'''
+|the x coordinate of the point
+|-
+|'''y'''
+|the y coordinate of the point
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderLine]]???
+:[[SDL_RenderLines]]???
+:[[SDL_RenderPoints]]???
+:[[SDL_RenderRect]]???
+:[[SDL_RenderRects]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
