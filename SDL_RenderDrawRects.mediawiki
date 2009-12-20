@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderRects =
+Use this function to fill some number of rectangles in the current rendering target with the drawing color.
+
+
+== Syntax ==
+```c++
+int SDL_RenderRects(const SDL_Rect** rect,
+                    int              count)
+```
+
+== Function Parameters ==
+*(typo in header \param rects, rect in syntax)*
+
+{|
+|'''rects'''
+|a pointer to an array of destination rectangles
+|-
+|'''count'''
+|the number of rectangles
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderRect]]???
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
