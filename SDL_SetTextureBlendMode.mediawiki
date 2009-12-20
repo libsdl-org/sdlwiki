@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetTextureBlendMode =
-Use this function to set the blend mode used for texture copy operations.
+Use this function to set the blend mode used by [[SDL_RenderCopy]]().
 
 
 == Syntax ==
@@ -17,7 +17,7 @@ int SDL_SetTextureBlendMode(SDL_TextureID textureID,
 |the texture to update
 |-
 |'''blendMode'''
-|the [[SDL_BlendMode]] to use for texture blending
+|the [[SDL_BlendMode]] to use for texture blending; see [[#blendMode|Remarks]] for details
 |}
 
 == Return Value ==
@@ -29,10 +29,12 @@ You can add your code example here
 ```
 
 == Remarks ==
+<span id="blendMode"></span><<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 If the blend mode is not supported, the closest supported mode is chosen.
 
 == Related Functions ==
 :[[SDL_GetTextureBlendMode]]
+:[[SDL_RenderCopy]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
