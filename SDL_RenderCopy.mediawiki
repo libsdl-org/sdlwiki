@@ -36,7 +36,7 @@ You can add your code example here
 == Remarks ==
 The texture is blended with the destination based on its blend mode set with [[SDL_SetTextureBlendMode]]().
 
-The texture, color, or alpha is affected based on the channel modulation set by [[SDL_SetTextureColorMod]]() and [[SDL_SetTextureAlphaMod]]().
+The texture color is affected based on the color modulation set by [[SDL_SetTextureColorMod]]().  The texture alpha is affected based on the alpha modulation set by [[SDL_SetTextureAlphaMod]]().
 
 == Related Functions ==
 :[[SDL_RenderLines]]
