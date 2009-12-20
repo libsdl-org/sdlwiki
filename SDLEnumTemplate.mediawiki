@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_Enumeration =
-An enumeration that sets ''replace with description of the enum''.
+An enumeration of ''replace with description of the enum''.
 
 
 <!-- Remove this comment from the new Enum page when creating page.  
