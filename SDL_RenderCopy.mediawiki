@@ -34,6 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
+The texture is blended with the destination based on the bland mode set with [[SDL_SetTextureBlendMode]]().
 <span id="textureID"></span> The texture channel modulation is provided by the enumeration [[SDL_TextureModulate]] using these flags:
 <<Include(SDL_TextureModulate, , , from="== Values ==", to="== Code Examples ==")>>
 
@@ -42,6 +43,7 @@ You can add your code example here
 :[[SDL_RenderPoints]]
 :[[SDL_RenderRect]]
 :[[SDL_RenderRects]]
+:[[SDL_SetTextureBlendMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
