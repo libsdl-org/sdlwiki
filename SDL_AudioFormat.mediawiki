@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AudioFormat =
-A typedef that contains audio format data and flags.
+An enumeration of audio formats.
 
 
 == Values ==
