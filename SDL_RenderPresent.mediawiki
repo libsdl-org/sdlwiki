@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_RenderPresent =
+Use this function to update the screen with rendering performed.
+
+
+== Syntax ==
+```c++
+void SDL_RenderPresent(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
