@@ -34,11 +34,13 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetRenderDrawColor]]???
 :[[SDL_RenderLine]]???
 :[[SDL_RenderLines]]???
 :[[SDL_RenderPoint]]???
 :[[SDL_RenderPoints]]???
 :[[SDL_RenderRect]]???
+:[[SDL_SetRenderDrawColor]]???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
