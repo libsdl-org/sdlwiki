@@ -18,19 +18,19 @@ An enumeration of pixel formats.
 |the channel bit pattern of the pixel format; see [[#layout|Remarks]] for details
 |-
 |SDL_BITSPERPIXEL(format)
-|the number of significant bits of the pixel format
+|the number of bits of color information in the pixel format
 |-
 |SDL_BYTESPERPIXEL(format)
 |the number of bytes used to represent a pixel
 |-
 |SDL_ISPIXELFORMAT_INDEXED(format)
-|is true for pixel formats that have a palette
+|true for pixel formats that have a palette
 |-
 |SDL_ISPIXELFORMAT_ALPHA(format)
-|is true for pixel formats that have an alpha channel
+|true for pixel formats that have an alpha channel
 |-
 |SDL_ISPIXELFORMAT_FOURCC(format)
-|is true for pixel formats representing unique formats
+|true for pixel formats representing unique formats, for example YUV formats
 |}
 
 === Pixel Format Values ===
