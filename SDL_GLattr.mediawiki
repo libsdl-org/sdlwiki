@@ -17,13 +17,13 @@ An enumeration of OpenGL configuration attributes.
 |the minimum number of bits for the blue channel of the color buffer; defaults to 2
 |-
 |SDL_GL_ALPHA_SIZE
-|the minimum number of bits for the alpha channel of the color buffer;defaults to 0
+|the minimum number of bits for the alpha channel of the color buffer; defaults to 0
 |-
 |SDL_GL_BUFFER_SIZE
 |defaults to 0
 |-
 |SDL_GL_DOUBLEBUFFER
-|whether the output is single or double buffered; defaults to double
+|whether the output is single or double buffered; defaults to double buffering on
 |-
 |SDL_GL_DEPTH_SIZE
 |the minimum number of bits in the depth buffer; defaults to 16
@@ -44,10 +44,10 @@ An enumeration of OpenGL configuration attributes.
 |the minimum number of bits for the alpha channel of the accumulation buffer; defaults to 0
 |-
 |SDL_GL_STEREO
-|
+|whether the output is stereo 3D; defaults to off
 |-
 |SDL_GL_MULTISAMPLEBUFFERS
-|
+|the number of buffers used for multisample anti-aliasing; defaults to 0; see [[#multisample|Remarks]] for details
 |-
 |SDL_GL_MULTISAMPLESAMPLES
 |
@@ -71,7 +71,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsample anti-aliasing defaults to off but can be turned on by setting SDL<code></code>_GL<code></code>_MULTISAMPLEBUFFERS to 1 and SDL_<code></code>GL_<code></code>MULTISAMPLESAMPLES to a value greater than 0.  
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
