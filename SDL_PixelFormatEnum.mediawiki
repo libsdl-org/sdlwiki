@@ -189,7 +189,7 @@ You can add your code example here
 |-
 |SDL_PACKEDORDER_BGRA
 |-
-|'''Array component order""" (low byte -> high byte)
+|'''Array component order''' (low byte -> high byte)
 |-
 |SDL_ARRAYORDER_NONE
 |-
@@ -206,7 +206,7 @@ You can add your code example here
 |SDL_ARRAYORDER_ABGR
 |}
 
-<span id="layout"></span> Packed pixel formats have one of the following layouts:
+<span id="layout"></span> Packed pixel formats have one of the following channel layouts:
 {|
 |SDL_PACKEDLAYOUT_NONE
 |-
