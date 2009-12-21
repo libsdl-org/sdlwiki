@@ -2,46 +2,46 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GLattr =
-An enumeration that sets OpenGL configuration attributes.
+An enumeration of OpenGL configuration attributes.
 
 
 == Values ==
 {|
 |SDL_GL_RED_SIZE
-|
+|the minimum number of bits for the red channel of the color buffer; defaults to 3
 |-
 |SDL_GL_GREEN_SIZE
-|
+|the minimum number of bits for the green channel of the color buffer; defaults to 3
 |-
 |SDL_GL_BLUE_SIZE
-|
+|the minimum number of bits for the blue channel of the color buffer; defaults to 2
 |-
 |SDL_GL_ALPHA_SIZE
-|
+|the minimum number of bits for the alpha channel of the color buffer;defaults to 0
 |-
 |SDL_GL_BUFFER_SIZE
-|
+|defaults to 0
 |-
 |SDL_GL_DOUBLEBUFFER
-|
+|whether the output is single or double buffered; defaults to double
 |-
 |SDL_GL_DEPTH_SIZE
-|
+|the minimum number of bits in the depth buffer; defaults to 16
 |-
 |SDL_GL_STENCIL_SIZE
-|
+|the minimum number of bits in the stencil buffer; defaults to 0
 |-
 |SDL_GL_ACCUM_RED_SIZE
-|
+|the minimum number of bits for the red channel of the accumulation buffer; defaults to 0
 |-
 |SDL_GL_ACCUM_GREEN_SIZE
-|
+|the minimum number of bits for the green channel of the accumulation buffer; defaults to 0
 |-
 |SDL_GL_ACCUM_BLUE_SIZE
-|
+|the minimum number of bits for the blue channel of the accumulation buffer; defaults to 0
 |-
 |SDL_GL_ACCUM_ALPHA_SIZE
-|
+|the minimum number of bits for the alpha channel of the accumulation buffer; defaults to 0
 |-
 |SDL_GL_STEREO
 |
