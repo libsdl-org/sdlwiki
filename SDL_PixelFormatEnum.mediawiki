@@ -161,7 +161,7 @@ You can add your code example here
 
 <span id="order"></span> Depending on the pixel type there are three different types of orderings - bitmapped, packed, or array.
 {|
-|Bitmap pixel order, high bit -> low bit.
+|'''Bitmap pixel order''' = high bit -> low bit
 |-
 |SDL_BITMAPORDER_NONE
 |-
@@ -169,7 +169,7 @@ You can add your code example here
 |-
 |SDL_BITMAPORDER_1234
 |-
-|Packed component order, high bit -> low bit.
+|'''Packed component order, high bit -> low bit'''
 |-
 |SDL_PACKEDORDER_NONE
 |-
@@ -189,7 +189,7 @@ You can add your code example here
 |-
 |SDL_PACKEDORDER_BGRA
 |-
-|Array component order, low byte -> high byte.
+|'''Array component order, low byte -> high byte'''
 |-
 |SDL_ARRAYORDER_NONE
 |-
@@ -226,8 +226,6 @@ You can add your code example here
 |-
 |SDL_PACKEDLAYOUT_1010102
 |}
-
-Channel ordering with SDL_<code></code>PIXELORDER and component layout using SDL_<code></code>PIXELLAYOUT together completely defines a pixel format.
 
 == Related Structures ==
 :[[SDL_DisplayMode]]
