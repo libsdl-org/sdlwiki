@@ -50,19 +50,19 @@ An enumeration of OpenGL configuration attributes.
 |the number of buffers used for multisample anti-aliasing; defaults to 0; see [[#multisample|Remarks]] for details
 |-
 |SDL_GL_MULTISAMPLESAMPLES
-|
+|the number of samples used around the current pixel used for multisample anti-aliasing; defaults to 0; see [[#multisample|Remarks]] for details
 |-
 |SDL_GL_ACCELERATED_VISUAL
-|
+|set to 1 to require hardware acceleration, set to 0 to force software rendering; defaults to allow either
 |-
-|SDL_GL_RETAINED_BACKING
-|
+|<style="color: #808080;">SDL_GL_RETAINED_BACKING
+|<style="color: #808080;">not used, deprecated
 |-
 |SDL_GL_CONTEXT_MAJOR_VERSION
-|
+|OpenGL context major version; see [[#OpenGL|Remarks]] for details
 |-
 |SDL_GL_CONTEXT_MINOR_VERSION
-|
+|OpenGL context minor version; see [[#OpenGL|Remarks]] for details
 |}
 
 == Code Examples ==
@@ -71,7 +71,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsample anti-aliasing defaults to off but can be turned on by setting SDL<code></code>_GL<code></code>_MULTISAMPLEBUFFERS to 1 and SDL_<code></code>GL_<code></code>MULTISAMPLESAMPLES to a value greater than 0.  
+<span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL<code></code>_GL<code></code>_MULTISAMPLEBUFFERS to 1 and SDL_<code></code>GL_<code></code>MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.  
+
+<span id="OpenGL"></span> SDL_<code></code>GL_<code></code>CONTEXT_<code></code>MAJOR_<code></code>VERSION and SDL_<code></code>GL_<code></code>CONTEXT_<code></code>MINOR_<code></code>VERSION are used when creating an OpenGL 3.x context. 
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
