@@ -2,10 +2,41 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_PixelFormatEnum =
-An enumeration that sets values used when creating pixel formats.
+An enumeration of pixel formats.
 
 
 == Values ==
+=== Pixel Format Macros ===
+{|
+|SDL_PIXELTYPE(X)
+|(((X) >> 24) & 0x0F)
+|returns the type of the pixel format; see [[#type|Remarks]] for details
+|-
+|SDL_PIXELORDER(X)
+|(((X) >> 20) & 0x0F)
+|the ordering of channels or bits in the pixel format; see [[#order|Remarks]] for details
+|-
+|SDL_PIXELLAYOUT(X)
+|(((X) >> 16) & 0x0F)
+|the channel bit pattern of the pixel format; see [[#layout|Remarks]] for details
+|-
+|SDL_BITSPERPIXEL(X)
+|(((X) >> 8) & 0xFF)
+|-
+|SDL_BYTESPERPIXEL(X)
+|(((X) >> 0) & 0xFF)
+|-
+|SDL_ISPIXELFORMAT_INDEXED(format)
+|
+|-
+|SDL_ISPIXELFORMAT_ALPHA(format)
+|
+|-
+|SDL_ISPIXELFORMAT_FOURCC(format)
+|
+|}
+
+=== Pixel Format Values ===
 {|
 |SDL_PIXELFORMAT_UNKNOWN
 |
@@ -104,7 +135,36 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="type"></span> The pixel type is one of the following values:
+{|
+|SDL_PIXELTYPE_UNKNOWN
+|-
+|SDL_PIXELTYPE_INDEX1
+|-
+|SDL_PIXELTYPE_INDEX4
+|-
+|SDL_PIXELTYPE_INDEX8
+|-
+|SDL_PIXELTYPE_PACKED8
+|-
+|SDL_PIXELTYPE_PACKED16
+|-
+|SDL_PIXELTYPE_PACKED32
+|-
+|SDL_PIXELTYPE_ARRAYU8
+|-
+|SDL_PIXELTYPE_ARRAYU16
+|-
+|SDL_PIXELTYPE_ARRAYU32
+|-
+|SDL_PIXELTYPE_ARRAYF16
+|-
+|SDL_PIXELTYPE_ARRAYF32
+|}
+
+<span id="order"></span> 
+
+<span id="layout"></span> 
 
 == Related Structures ==
 :[[SDL_DisplayMode]]
