@@ -169,7 +169,7 @@ You can add your code example here
 |-
 |SDL_BITMAPORDER_1234
 |-
-|'''Packed component order, high bit -> low bit'''
+|'''Packed component order''' (high bit -> low bit)
 |-
 |SDL_PACKEDORDER_NONE
 |-
