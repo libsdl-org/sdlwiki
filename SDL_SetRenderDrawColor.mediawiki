@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_SetRenderDrawColor =
 Use this function to set the color used for drawing operations (,,Fill,, ^Rect^ and Line).
