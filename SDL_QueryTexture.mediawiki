@@ -21,7 +21,7 @@ int SDL_QueryTexture(SDL_TextureID textureID,
 |a texture to be queried
 |-
 |'''format'''
-|a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format
+|a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format; see [[#format|Remarks]] for details
 |-
 |'''access'''
 |a pointer filled in with the actual access to the texture
@@ -42,7 +42,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="format"></span> The '''format''' parameter may be filled with any of the following values:
+<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
