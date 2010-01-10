@@ -1,8 +1,11 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_WindowEventID =
-An enumeration that sets the --(event)-- subtype for window events.
+An enumeration of the --(event)-- subtype for window events.
 
 
 == Values ==
