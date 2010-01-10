@@ -33,6 +33,7 @@ An enumeration of pixel formats.
 |true for pixel formats representing unique formats, for example YUV formats
 |}
 
+<span id="include"></span>
 === Pixel Format Values ===
 {|
 |SDL_PIXELFORMAT_UNKNOWN
