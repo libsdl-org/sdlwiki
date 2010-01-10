@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_RenderRects =
 Use this function to fill some number of rectangles in the current rendering target with the drawing color.
