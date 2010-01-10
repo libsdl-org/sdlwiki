@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_Rect =
 A structure that defines a rectangle, with the origin at the upper left.
