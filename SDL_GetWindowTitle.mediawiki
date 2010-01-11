@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowTitle =
+Use this function to get the title of the window, in UTF-8 format.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetWindowTitle(SDL_WindowID windowID)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the window to be queried
+|}
+
+== Return Value ==
+The title of the window in UTF-8 format.  ^What happens if it can't get the title or there is no title?^
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowTitle]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
