@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_GetWindowDisplayMode =
 Use this function to fill in information about the display mode used when a fullscreen window is visible on the currently selected display.
