@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HasIntersection =
+Use this function to determine whether two rectangles intersect.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasIntersection(const SDL_Rect* A,
+                             const SDL_Rect* B)
+```
+
+== Function Parameters ==
+{|
+|'''A'''
+|the first [[SDL_Rect]] to compare
+|-
+|'''B'''
+|the second [[SDL_Rect]] to compare
+|}
+
+== Return Value ==
+SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryRect]]
