@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_EnclosePoints =
+Use this function to calculate a minimal rectangle enclosing a set of points.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_EnclosePoints(const SDL_Point* points,
+                           int              count,
+                           const SDL_Rect*  clip,
+                           SDL_Rect*        result)
+```
+
+== Function Parameters ==
+{|
+|'''points'''
+|the points to be enclosed
+|-
+|'''count'''
+|the number of points
+|-
+|'''clip'''
+|a pointer to the [[SDL_Rect]] to be enclosed
+|-
+|'''result'''
+|the [[SDL_Rect]] to be created
+|}
+
+== Return Value ==
+Returns SDL_TRUE if any points were within the clipping rect. ^What does it do if there are no points within the clipping rect?^
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryRect]]
