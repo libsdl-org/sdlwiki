@@ -1,8 +1,11 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_RendererFlags =
-An enumeration that sets flags used when creating a rendering context.
+An enumeration of flags used when creating a rendering context.
 
 
 == Values ==
