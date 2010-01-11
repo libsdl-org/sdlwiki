@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowFlags =
+Use this function to get the window flags.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_GetWindowFlags(SDL_WindowID windowID)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|}
+
+== Return Value ==
+The window flags. -OR- One or more [[SDL_WindowFlags]]. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+See [[SDL_WindowFlags]] for details.  
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
