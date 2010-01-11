@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_VideoInit =
+Use this function to initialize the video subsystem, optionally specifying a video driver.
+
+
+== Syntax ==
+```c++
+int SDL_VideoInit(const char* driver_name,
+                  Uint32      flags)
+```
+
+== Function Parameters ==
+{|
+|'''driver_name'''
+|initialize a specific driver by name, or NULL for the default video driver
+|-
+|'''flags'''
+|<style="color: #FF0000;"> FIXME: Still needed?
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function initializes the video subsystem; setting up a connection to the window manager, etc, and determines the available display modes and pixel formats, but does not initialize a window or graphics mode.
+
+== Related Functions ==
+:[[SDL_VideoQuit]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
