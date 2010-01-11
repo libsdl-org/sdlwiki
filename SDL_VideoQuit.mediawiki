@@ -1,0 +1,26 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_VideoQuit =
+Use this function to shut down the video subsystem.
+
+
+== Syntax ==
+```c++
+void SDL_VideoQuit(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function closes all windows, and restores the original video mode.
+
+== Related Functions ==
+:[[SDL_VideoInit]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
