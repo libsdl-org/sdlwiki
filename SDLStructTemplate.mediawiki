@@ -1,6 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
+
 = SDL_Structure =
 A structure that contains ''replace with brief description of the structure''.
 
