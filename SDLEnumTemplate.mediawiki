@@ -1,6 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
+
 = SDL_Enumeration =
 An enumeration of ''replace with description of the enum''.
 
