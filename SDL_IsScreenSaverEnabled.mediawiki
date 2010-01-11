@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
+|}
 
 = SDL_IsScreenSaverEnabled =
 Use this function to return whether the screensaver is currently enabled __(default off)__.
