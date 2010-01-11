@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_IntersectRectAndLine =
+Use this function to calculate the intersection of a rectangle and line segment.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_IntersectRectAndLine(const SDL_Rect* rect,
+                                  int*            X1,
+                                  int*            Y1,
+                                  int*            X2,
+                                  int*            Y2)
+```
+
+== Function Parameters ==
+{|
+|'''rect'''
+|a pointer to the [[SDL_Rect]] to be compared
+|-
+|'''X1'''
+|a pointer to the starting X-coordinate of the line to be compared
+|-
+|'''Y1'''
+|a pointer to the starting Y-coordinate of the line to be compared
+|-
+|'''X2'''
+|a pointer to the ending X-coordinate of the line to be compared
+|-
+|'''Y2'''
+|a pointer to the ending Y-coordinate of the line to be compared
+|}
+
+== Return Value ==
+SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryRect]]
