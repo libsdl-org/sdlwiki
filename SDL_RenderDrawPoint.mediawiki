@@ -4,13 +4,13 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
 
-= SDL_RenderPoint =
+= SDL_RenderDrawPoint =
 Use this function to draw a point on the current rendering target.
 
 
 == Syntax ==
 ```c++
-int SDL_RenderPoint(int x, 
+int SDL_RenderDrawPoint(int x, 
                     int y)
 ```
 
