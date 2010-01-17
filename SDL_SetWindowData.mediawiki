@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetWindowData =
+Use this function to associate an arbitrary pointer with the window.
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowData(SDL_WindowID windowID,
+                       void*        userdata)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|-
+|'''userdata'''
+|a pointer passed as the first parameter to the callback function
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetWindowData]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
