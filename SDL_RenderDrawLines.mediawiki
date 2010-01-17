@@ -4,14 +4,14 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
 
-= SDL_RenderLines =
+= SDL_RenderDrawLines =
 Use this function to draw a series of connected lines on the current rendering target.
 
 
 == Syntax ==
 ```c++
-int SDL_RenderLines(const SDL_Point* points,
-                    int              count)
+int SDL_RenderDrawLines(const SDL_Point* points,
+                        int              count)
 ```
 
 == Function Parameters ==
@@ -35,11 +35,11 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderLine]]???
-:[[SDL_RenderPoint]]???
-:[[SDL_RenderPoints]]???
-:[[SDL_RenderRect]]???
-:[[SDL_RenderRects]]???
+:[[SDL_RenderDrawLine]]???
+:[[SDL_RenderDrawPoint]]???
+:[[SDL_RenderDrawPoints]]???
+:[[SDL_RenderDrawRect]]???
+:[[SDL_RenderDrawRects]]???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
