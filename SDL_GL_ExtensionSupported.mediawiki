@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ExtensionSupported =
+Use this function to return true if an OpenGL extension is supported for the current context.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_GL_ExtensionSupported(const char* extension)
+```
+
+== Function Parameters ==
+{|
+|'''extension'''
+|the extension to check
+|}
+
+== Return Value ==
+SDL_TRUE if the extension is supported, SDL_FALSE otherwise. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
