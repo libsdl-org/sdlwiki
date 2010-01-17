@@ -5,7 +5,7 @@
 |}
 
 = SDL_RenderDrawRects =
-Use this function to fill some number of rectangles in the current rendering target with the drawing color.
+Use this function to draw some number of rectangles in the current rendering target with the drawing color.
 
 
 == Syntax ==
