@@ -4,14 +4,14 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
 
-= SDL_RenderRects =
+= SDL_RenderDrawRects =
 Use this function to fill some number of rectangles in the current rendering target with the drawing color.
 
 
 == Syntax ==
 ```c++
-int SDL_RenderRects(const SDL_Rect** rect,
-                    int              count)
+int SDL_RenderDrawRects(const SDL_Rect** rect,
+                        int              count)
 ```
 
 == Function Parameters ==
@@ -38,11 +38,11 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetRenderDrawColor]]???
-:[[SDL_RenderLine]]???
-:[[SDL_RenderLines]]???
-:[[SDL_RenderPoint]]???
-:[[SDL_RenderPoints]]???
-:[[SDL_RenderRect]]???
+:[[SDL_RenderDrawLine]]???
+:[[SDL_RenderDrawLines]]???
+:[[SDL_RenderDrawPoint]]???
+:[[SDL_RenderDrawPoints]]???
+:[[SDL_RenderDrawRect]]???
 :[[SDL_SetRenderDrawColor]]???
 
 ----
