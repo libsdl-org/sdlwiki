@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetWindowPosition =
+Use this function to set the position of the window.
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowPosition(SDL_WindowID windowID,
+                           int          x,
+                           int          y)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the window to reposition
+|-
+|'''x'''
+|the x coordinate of the window, SDL_WINDOWPOS_CENTERED, or SDL_WINDOWPOS_UNDEFINED
+|-
+|'''y'''
+|the y coordinate of the window, SDL_WINDOWPOS_CENTERED, or SDL_WINDOWPOS_UNDEFINED
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The window coordinate origin is the upper left of the display.
+
+== Related Functions ==
+:[[SDL_GetWindowPosition]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
