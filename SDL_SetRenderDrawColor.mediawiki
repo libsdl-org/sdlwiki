@@ -44,8 +44,8 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetRenderDrawColor]]
-:[[SDL_RenderRect]]???
-:[[SDL_RenderRects]]???
+:[[SDL_RenderDrawRect]]???
+:[[SDL_RenderDrawRects]]???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
