@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GL_LoadLibrary =
+Use this function to dynamically load an OpenGL library.
+
+
+== Syntax ==
+```c++
+int SDL_GL_LoadLibrary(const char* path)
+```
+
+== Function Parameters ==
+{|
+|'''path'''
+|the platform dependent OpenGL library name, or NULL to open the default OpenGL library
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if the library couldn't be loaded; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This should be done after initializing the video driver, but before creating any OpenGL windows. If no OpenGL library is loaded, the default library will be loaded upon creation of the first OpenGL window.
+
+If you do this, you need to retrieve all of the GL functions used in your program from the dynamic library using [[SDL_GL_GetProcAddress]]().
+
+== Related Functions ==
+:[[SDL_GL_GetProcAddress]]
+:[[SDL_GL_UnloadLibrary]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
