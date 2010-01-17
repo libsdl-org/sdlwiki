@@ -48,4 +48,4 @@ You can add your code example here
 :[[SDL_SetRenderDrawColor]]
 
 ----
-[[CategoryAPI]], [[CategorVideo]]
+[[CategoryAPI]], [[CategoryVideo]]
