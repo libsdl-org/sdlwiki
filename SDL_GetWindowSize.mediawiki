@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowSize =
+Use this function to get the size of the window's client area.
+
+
+== Syntax ==
+```c++
+void SDL_GetWindowSize(SDL_WindowID windowID,
+                       int*         w,
+                       int*         h)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|-
+|'''w'''
+|the width of the window
+|-
+|'''h'''
+|the height of the window
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowSize]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
