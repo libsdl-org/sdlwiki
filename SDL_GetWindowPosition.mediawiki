@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowPosition =
+Use this function to get the position of the window.
+
+
+== Syntax ==
+```c++
+void SDL_GetWindowPosition(SDL_WindowID windowID,
+                           int*         x,
+                           int*         y)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|-
+|'''x'''
+|a pointer to the x coordinate of the window
+|-
+|'''y'''
+|a pointer to the y coordinate of the window
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowPosition]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
