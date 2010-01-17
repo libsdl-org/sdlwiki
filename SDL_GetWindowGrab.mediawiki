@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowGrab =
+Use this function to get the window's input grab mode.
+
+
+== Syntax ==
+```c++
+int SDL_GetWindowGrab(SDL_WindowID windowID)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|}
+
+== Return Value ==
+Returns 1 if input is grabbed, and 0 otherwise; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowGrab]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
