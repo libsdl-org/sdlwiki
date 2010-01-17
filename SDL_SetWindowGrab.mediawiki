@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetWindowGrab =
+Use this function to set the window's input grab mode.
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowGrab(SDL_WindowID windowID,
+                       int          mode)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|description
+|-
+|'''mode'''
+|this is 1 to grab input, and 0 to release input ^''suggest alt: 1 to grab input or 0 to release input''^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetWindowGrab]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
