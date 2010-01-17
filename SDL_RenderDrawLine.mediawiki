@@ -4,16 +4,16 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
 
-= SDL_RenderLine =
+= SDL_RenderDrawLine =
 Use this function to draw a line on the current rendering target.
 
 
 == Syntax ==
 ```c++
-int SDL_RenderLine(int x1,
-                   int y1,
-                   int x2,
-                   int y2)
+int SDL_RenderDrawLine(int x1,
+                       int y1,
+                       int x2,
+                       int y2)
 ```
 
 == Function Parameters ==
@@ -43,11 +43,11 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderLines]]???
-:[[SDL_RenderPoint]]???
-:[[SDL_RenderPoints]]???
-:[[SDL_RenderRect]]???
-:[[SDL_RenderRects]]???
+:[[SDL_RenderDrawLines]]???
+:[[SDL_RenderDrawPoint]]???
+:[[SDL_RenderDrawPoints]]???
+:[[SDL_RenderDrawRect]]???
+:[[SDL_RenderDrawRects]]???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
