@@ -11,6 +11,9 @@ Use this function to retrieve the data pointer associated with the window.
 void* SDL_GetWindowData(SDL_WindowID windowID)
 ```
 
+== Return Value ==
+*is there a RV for void*?  The pointer is passed to the callback function.???*
+
 == Function Parameters ==
 {|
 |'''windowID'''
