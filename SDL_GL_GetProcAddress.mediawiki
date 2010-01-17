@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GL_GetProcAddress =
+Use this function to get the address of an OpenGL function.
+
+
+== Syntax ==
+```c++
+void* SDL_GL_GetProcAddress(const char* proc)
+```
+
+== Function Parameters ==
+{|
+|'''proc'''
+|a pointer to an OpenGL function
+|}
+
+== Return Value ==
+*Is there a RV for void*?  The OpenGL function is passed to the callback function.???*
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GL_LoadLibrary]]
+:[[SDL_GL_UnloadLibrary]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
