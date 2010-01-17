@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowData =
+Use this function to retrieve the data pointer associated with the window.
+
+
+== Syntax ==
+```c++
+void* SDL_GetWindowData(SDL_WindowID windowID)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowData]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
