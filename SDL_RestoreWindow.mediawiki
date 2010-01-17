@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
+
+= SDL_RestoreWindow =
+Use this function to restore the size and position of a minimized or maximized window.
+
+
+== Syntax ==
+```c++
+void SDL_RestoreWindow(SDL_WindowID windowID)
+```
+== Function Parameters ==
+{|
+|'''windowID''' 
+|the window to be restored 
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+: [[SDL_MaximizeWindow]]
+: [[SDL_MinimizeWindow]]
+
+----
+[[CategoryAPI]], CategoryVideo
