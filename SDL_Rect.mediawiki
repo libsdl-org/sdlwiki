@@ -38,8 +38,8 @@ SDL_Rect<code></code>Empty (=define), SDL_Rect<code></code>Equals (=define) (\sa
 :[[SDL_LockTexture]]?
 :[[SDL_RenderCopy]]?
 :[[SDL_RenderReadPixels]]?
-:[[SDL_RenderRect]]?
-:[[SDL_RenderRects]]?
+:[[SDL_RenderDrawRect]]?
+:[[SDL_RenderDrawRects]]?
 :[[SDL_RenderWritePixels]]?
 :[[SDL_UnionRect]]
 :[[SDL_UpdateTexture]]?
