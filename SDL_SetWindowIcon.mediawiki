@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetWindowIcon =
+Use this function to set the icon of the window.
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowIcon(SDL_WindowID windowID,
+                       SDL_Surface* icon)
+```
+
+== Function Parameters ==
+{|
+|'''windowID'''
+|the type used to identify the window
+|-
+|'''icon'''
+|the icon for the window
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
