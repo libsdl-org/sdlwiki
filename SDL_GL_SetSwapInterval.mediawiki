@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GL_SetSwapInterval =
+Use this function to set the swap interval for the current OpenGL context.
+
+
+== Syntax ==
+```c++
+int SDL_GL_SetSwapInterval(int interval)
+```
+
+== Function Parameters ==
+{|
+|'''interval'''
+|0 for immediate updates, 1 for updates synchronized with the vertical retrace
+|}
+
+== Return Value ==
+Returns 0 on success or -1 if setting the swap interval is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GL_GetSwapInterval]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
