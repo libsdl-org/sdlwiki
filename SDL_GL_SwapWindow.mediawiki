@@ -8,12 +8,12 @@ Use this function to swap the OpenGL buffers for the window, if double-buffering
 
 == Syntax ==
 ```c++
-void SDL_GL_SwapWindow(SDL_WindowID windowID)
+void SDL_GL_SwapWindow(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |}
 
