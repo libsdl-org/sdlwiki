@@ -8,12 +8,12 @@ Use this function to get the title of the window, in UTF-8 format.
 
 == Syntax ==
 ```c++
-const char* SDL_GetWindowTitle(SDL_WindowID windowID)
+const char* SDL_GetWindowTitle(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to be queried
 |}
 
