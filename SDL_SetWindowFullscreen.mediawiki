@@ -10,13 +10,13 @@ Use this function to set the window's fullscreen state.
 
 == Syntax ==
 ```c++
-int SDL_SetWindowFullscreen(SDL_WindowID windowID,
-                            int          fullscreen)
+int SDL_SetWindowFullscreen(SDL_Window* window,
+                            int         fullscreen)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''fullscreen'''
