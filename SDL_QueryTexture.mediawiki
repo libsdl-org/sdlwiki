@@ -7,17 +7,17 @@ Use this function to query the attributes of a texture.
 
 == Syntax ==
 ```c++
-int SDL_QueryTexture(SDL_TextureID textureID,
-                     Uint32*       format, 
-                     int*          access,
-                     int*          w, 
-                     int*          h)
+int SDL_QueryTexture(SDL_Texture* texture,
+                     Uint32*      format, 
+                     int*         access,
+                     int*         w, 
+                     int*         h)
 ```
 
 == Function Parameters ==
 
 {|
-|'''textureID'''
+|'''texture'''
 |a texture to be queried
 |-
 |'''format'''
