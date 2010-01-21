@@ -7,12 +7,12 @@ Use this function to destroy a window.
 
 == Syntax ==
 ```c++
-void SDL_DestroyWindow(SDL_WindowID windowID)
+void SDL_DestroyWindow(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to destroy
 |}
 
