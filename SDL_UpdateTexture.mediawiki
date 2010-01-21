@@ -10,7 +10,7 @@ Use this function to update the given texture rectangle with new pixel data.
 
 == Syntax ==
 ```c++
-int SDL_UpdateTexture(SDL_TextureID   textureID,
+int SDL_UpdateTexture(SDL_Texture*    texture,
                       const SDL_Rect* rect,
                       const void*     pixels,
                       int             pitch)
@@ -18,7 +18,7 @@ int SDL_UpdateTexture(SDL_TextureID   textureID,
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to update
 |-
 |'''rect'''
