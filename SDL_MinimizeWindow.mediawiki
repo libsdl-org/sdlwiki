@@ -8,12 +8,12 @@ Use this function to minimize the window to an iconic representation.
 
 == Syntax ==
 ```c++
-void SDL_MinimizeWindow(SDL_WindowID windowID)
+void SDL_MinimizeWindow(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to be minimized
 |}
 
