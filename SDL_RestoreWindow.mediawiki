@@ -11,11 +11,11 @@ Use this function to restore the size and position of a minimized or maximized w
 
 == Syntax ==
 ```c++
-void SDL_RestoreWindow(SDL_WindowID windowID)
+void SDL_RestoreWindow(SDL_Window* window)
 ```
 == Function Parameters ==
 {|
-|'''windowID''' 
+|'''window''' 
 |the window to be restored 
 |}
 
