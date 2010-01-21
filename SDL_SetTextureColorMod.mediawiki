@@ -10,15 +10,15 @@ Use this function to set an additional color value used in render copy operation
 
 == Syntax ==
 ```c++
-int SDL_SetTextureColorMod(SDL_TextureID textureID,
-                           Uint8         r,
-                           Uint8         g,
-                           Uint8         b)
+int SDL_SetTextureColorMod(SDL_Texture* texture,
+                           Uint8        r,
+                           Uint8        g,
+                           Uint8        b)
 ```
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to update
 |-
 |'''r'''
