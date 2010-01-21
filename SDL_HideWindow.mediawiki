@@ -8,12 +8,12 @@ Use this function to hide the window.
 
 == Syntax ==
 ```c++
-void SDL_HideWindow(SDL_WindowID windowID)
+void SDL_HideWindow(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to be hidden
 |}
 
