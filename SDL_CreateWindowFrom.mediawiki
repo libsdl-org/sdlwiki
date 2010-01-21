@@ -7,7 +7,7 @@ Use this function to create an SDL window from an existing native window.
 
 == Syntax ==
 ```c++
-SDL_WindowID SDL_CreateWindowFrom(const void* data)
+SDL_Window* SDL_CreateWindowFrom(const void* data)
 ```
 
 == Function Parameters ==
