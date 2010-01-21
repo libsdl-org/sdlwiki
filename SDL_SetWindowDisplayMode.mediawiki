@@ -10,13 +10,13 @@ Use this function to set the display mode used when a fullscreen window is visib
 
 == Syntax ==
 ```c++
-int SDL_SetWindowDisplayMode(SDL_WindowID           windowID,
+int SDL_SetWindowDisplayMode(SDL_Window*            window,
                              const SDL_DisplayMode* mode)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''mode'''
