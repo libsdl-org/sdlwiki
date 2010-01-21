@@ -8,12 +8,12 @@ Use this function to get the window's input grab mode.
 
 == Syntax ==
 ```c++
-int SDL_GetWindowGrab(SDL_WindowID windowID)
+int SDL_GetWindowGrab(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |}
 
