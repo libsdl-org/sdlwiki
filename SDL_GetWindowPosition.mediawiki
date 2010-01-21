@@ -8,7 +8,7 @@ Use this function to get the position of the window.
 
 == Syntax ==
 ```c++
-void SDL_GetWindowPosition(SDL_Window window,
+void SDL_GetWindowPosition(SDL_Window* window,
                            int*        x,
                            int*        y)
 ```
