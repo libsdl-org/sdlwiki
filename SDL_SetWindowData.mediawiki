@@ -8,13 +8,13 @@ Use this function to associate an arbitrary pointer with the window.
 
 == Syntax ==
 ```c++
-void SDL_SetWindowData(SDL_WindowID windowID,
-                       void*        userdata)
+void SDL_SetWindowData(SDL_Window* window,
+                       void*       userdata)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''userdata'''
