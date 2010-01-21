@@ -8,17 +8,17 @@ Use this function to get the window flags.
 
 == Syntax ==
 ```c++
-Uint32 SDL_GetWindowFlags(SDL_WindowID windowID)
+Uint32 SDL_GetWindowFlags(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |}
 
 == Return Value ==
-The window flags. -OR- One or more [[SDL_WindowFlags]]. 
+The window flags.  ^One or more [[SDL_WindowFlags]].^
 
 == Code Examples ==
 ```c++
@@ -27,7 +27,7 @@ You can add your code example here
 
 == Remarks ==
 ''You can add useful comments here''
-See [[SDL_WindowFlags]] for details.  
+See [[SDL_WindowFlags]] for details.  ^(Should this be an Include?)^
 
 == Related Functions ==
 
