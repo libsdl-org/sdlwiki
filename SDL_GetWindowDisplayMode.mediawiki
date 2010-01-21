@@ -10,13 +10,13 @@ Use this function to fill in information about the display mode used when a full
 
 == Syntax ==
 ```c++
-int SDL_GetWindowDisplayMode(SDL_WindowID     windowID,
+int SDL_GetWindowDisplayMode(SDL_Window*      window,
                              SDL_DisplayMode* mode)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''mode'''
