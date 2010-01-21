@@ -8,14 +8,14 @@ Use this function to set the position of the window.
 
 == Syntax ==
 ```c++
-void SDL_SetWindowPosition(SDL_WindowID windowID,
-                           int          x,
-                           int          y)
+void SDL_SetWindowPosition(SDL_Window* window,
+                           int         x,
+                           int         y)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to reposition
 |-
 |'''x'''
