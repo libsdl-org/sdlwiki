@@ -7,16 +7,16 @@ Use this function to lock a portion of the texture for pixel access.
 
 == Syntax ==
 ```c++
-int SDL_LockTexture(SDL_TextureID    textureID,
-                    const SDL_Rect*  rect,
-                    int              markDirty,
-                    void**           pixels,
-                    int*             pitch)
+int SDL_LockTexture(SDL_Texture*    texture,
+                    const SDL_Rect* rect,
+                    int             markDirty,
+                    void**          pixels,
+                    int*            pitch)
 ```
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to lock for access, which was created with SDL_TEXTUREACCESS_STREAMING
 |-
 |'''rect'''
