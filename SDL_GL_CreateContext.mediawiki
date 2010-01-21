@@ -8,12 +8,12 @@ Use this function to create an OpenGL context for use with an OpenGL window, and
 
 == Syntax ==
 ```c++
-SDL_GLContext SDL_GL_CreateContext(SDL_WindowID windowID)
+SDL_GLContext SDL_GL_CreateContext(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |}
 
