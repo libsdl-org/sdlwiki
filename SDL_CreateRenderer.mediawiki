@@ -7,14 +7,14 @@ Use this function to create and make active a 2D rendering context for a window.
 
 == Syntax ==
 ```c++
-int SDL_CreateRenderer(SDL_WindowID windowID,
-                       int  	    index,
-                       Uint32  	    flags)
+int SDL_CreateRenderer(SDL_Window* window,
+                       int  	   index,
+                       Uint32  	   flags)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window where rendering is displayed
 |-
 |'''index'''
