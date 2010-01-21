@@ -8,13 +8,13 @@ Use this function to get driver specific information about a window.
 
 == Syntax ==
 ```c++
-SDL_bool SDL_GetWindowWMInfo(SDL_WindowID          windowID,
+SDL_bool SDL_GetWindowWMInfo(SDL_Window*           window,
                              struct SDL_SysWMinfo* info)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''info'''
