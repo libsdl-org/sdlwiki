@@ -8,14 +8,14 @@ Use this function to set the size of the window's client area.
 
 == Syntax ==
 ```c++
-void SDL_SetWindowSize(SDL_WindowID windowID,
-                       int          w,
-                       int          h)
+void SDL_SetWindowSize(SDL_Window* window,
+                       int         w,
+                       int         h)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''w'''
