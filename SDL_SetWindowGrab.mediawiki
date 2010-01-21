@@ -8,13 +8,13 @@ Use this function to set the window's input grab mode.
 
 == Syntax ==
 ```c++
-void SDL_SetWindowGrab(SDL_WindowID windowID,
-                       int          mode)
+void SDL_SetWindowGrab(SDL_Window* window,
+                       int         mode)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |description
 |-
 |'''mode'''
