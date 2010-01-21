@@ -8,13 +8,13 @@ Use this function to set up an OpenGL context for rendering into an OpenGL windo
 
 == Syntax ==
 ```c++
-int SDL_GL_MakeCurrent(SDL_WindowID  windowID,
+int SDL_GL_MakeCurrent(SDL_Window*   window,
                        SDL_GLContext context)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''context'''
