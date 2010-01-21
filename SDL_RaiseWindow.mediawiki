@@ -8,12 +8,12 @@ Use this function to raise the window above other windows and set the input focu
 
 == Syntax ==
 ```c++
-void SDL_RaiseWindow(SDL_WindowID windowID)
+void SDL_RaiseWindow(SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the window to be raised
 |}
 
