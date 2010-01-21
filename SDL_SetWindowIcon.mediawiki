@@ -8,13 +8,13 @@ Use this function to set the icon of the window.
 
 == Syntax ==
 ```c++
-void SDL_SetWindowIcon(SDL_WindowID windowID,
+void SDL_SetWindowIcon(SDL_Window*  window,
                        SDL_Surface* icon)
 ```
 
 == Function Parameters ==
 {|
-|'''windowID'''
+|'''window'''
 |the type used to identify the window
 |-
 |'''icon'''
