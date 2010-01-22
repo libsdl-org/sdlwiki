@@ -10,15 +10,15 @@ Use this function to get the additional color value used in render copy operatio
 
 == Syntax ==
 ```c++
-int SDL_GetTextureColorMod(SDL_TextureID textureID,
-                           Uint8*        r,
-                           Uint8*        g,
-                           Uint8*        b)
+int SDL_GetTextureColorMod(SDL_Texture* texture,
+                           Uint8*       r,
+                           Uint8*       g,
+                           Uint8*       b)
 ```
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to query
 |-
 |'''r'''
