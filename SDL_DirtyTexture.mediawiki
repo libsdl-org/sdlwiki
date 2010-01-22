@@ -7,14 +7,14 @@ Use this function to mark the specified rectangles of the texture as dirty.
 
 == Syntax ==
 ```c++
-void SDL_DirtyTexture(SDL_TextureID   textureID,
+void SDL_DirtyTexture(SDL_Texture*    texture,
                       int             numrects,
                       const SDL_Rect* rects) 	
 ```
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to mark dirty, which was created with SDL_TEXTUREACCESS_STREAMING
 |-
 |'''numrects'''
