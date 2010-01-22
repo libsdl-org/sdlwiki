@@ -3,6 +3,7 @@
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
+<<Color2(red,DRAFT)>>
 
 = SDL_Rect =
 A structure that defines a rectangle, with the origin at the upper left.
