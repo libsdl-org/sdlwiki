@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_TextureAccess =
-An enumeration that sets the access pattern allowed for a texture.
+An enumeration of texture access patterns.
 
 
 == Values ==
@@ -24,7 +24,10 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
+:[[SDL_DirtyTexture]]
+:[[SDL_LockTexture]]
 :[[SDL_QueryTexture]]
+:[[SDL_QueryTexturePixels]]
 
 ----
 [[CategoryEnum]]
