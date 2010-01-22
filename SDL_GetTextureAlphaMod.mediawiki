@@ -10,13 +10,13 @@ Use this function to get the additional alpha value used in render copy operatio
 
 == Syntax ==
 ```c++
-int SDL_GetTextureAlphaMod(SDL_TextureID textureID,
-                           Uint8*        alpha)
+int SDL_GetTextureAlphaMod(SDL_Texture* texture,
+                           Uint8*       alpha)
 ```
 
 == Function Parameters ==
 {|
-|'''textureID'''
+|'''texture'''
 |the texture to query
 |-
 |'''alpha'''
