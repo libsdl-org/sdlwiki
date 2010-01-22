@@ -1,17 +1,14 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_WindowEventID =
-An enumeration of the --(event)-- subtype for window events.
+An enumeration of window events.
 
 
 == Values ==
 {|
-|SDL_WINDOWEVENT_NONE
-|^window^ never used
+|<style="color: #808080;">SDL_WINDOWEVENT_NONE
+|<style="color: #808080;">never used
 |-
 |SDL_WINDOWEVENT_SHOWN
 |window has been shown
@@ -38,16 +35,16 @@ An enumeration of the --(event)-- subtype for window events.
 |window has been restored to normal size and position
 |-
 |SDL_WINDOWEVENT_ENTER
-|,,the,, window has gained mouse focus
+|window has gained mouse focus
 |-
 |SDL_WINDOWEVENT_LEAVE
-|the window has lost mouse focus
+|window has lost mouse focus
 |-
 |SDL_WINDOWEVENT_FOCUS_GAINED
-|the window has gained keyboard focus
+|window has gained keyboard focus
 |-
 |SDL_WINDOWEVENT_FOCUS_LOST
-|the window has lost keyboard focus
+|window has lost keyboard focus
 |-
 |SDL_WINDOWEVENT_CLOSE
 |the window manager requests that the window be closed
@@ -61,8 +58,8 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
-:[[SDL_CreateWindow]] ?????
+== Related Structures ==
+:[[SDL_WindowEvent]]
 
 ----
 [[CategoryEnum]]
