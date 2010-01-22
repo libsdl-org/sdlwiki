@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_WindowFlags =
-An enumeration that sets the flags on a window.
+An enumeration of window states.
 
 
 == Values ==
