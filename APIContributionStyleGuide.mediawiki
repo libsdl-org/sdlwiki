@@ -20,7 +20,7 @@ Please email docs@libsdl.org to request permission.
 === Opening An Editor ===
 If a page can be edited you will see two options in the left column to choose from:
  1. <<Color2(blue,Edit (Text))>>
-  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved (rendered?).
+  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved <<Color2(green,rendered)>>.
  (!) '''Specific markup instructions on this page are for use with the Text editor but should also work in the GUI editor.'''
  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
 
@@ -53,7 +53,7 @@ When you have completed adding your content and are satisfied with the formattin
 === Adding Code Examples ===
 The Code Examples section provides real-world examples of how to use a function.
 
-{OK} Please post code examples showing how you have used (implemented?) a function that may benefit other users.  
+{OK} Please post code examples showing how you have used <<Color2(green,implemented)>> a function that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
