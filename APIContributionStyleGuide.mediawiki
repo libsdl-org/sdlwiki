@@ -61,18 +61,27 @@ The Code Examples section provides real-world examples of how to use a function.
  
 ```
 }}}}
+
+<!> Do not remove or modify any existing code examples.
+
 <<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
+
 == Adding Remarks ==
 The Remarks section provides additional information about previous sections as well as a location for users to add relevant comments related to real-world application of the API.  
 
-{OK} Please post your appropriate remarks that may benefit other users.  (Do not post anything that you do not have permission to post publicly.)
+{OK} Please post your appropriate remarks that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+
 * If your remark is in reference to a specific function parameter use '''bold''' wherever the parameter's name is used.
-   ```'''parameter'''```
+   ```'''parameter'''``` = '''parameter'''
 : ''Example'': [[SDL_ConvertAudio]]()
 
 * Create hyperlinks if you reference an existing function, enumeration, or structure.
-   ```[[SDL_Function]]()``` (include open and closed parentheses after a function name, outside of the hyperlink markup)<br/>
-   ```[[SDL_Enumeration/Structure]]``` (do not use parentheses for enumerations or structures)
+  ~-''Note: Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
+  ```[[SDL_Function]]()```<br/>
+   Include open and closed parentheses after a function name, outside of the hyperlink markup.<br/>
+  ```[[SDL_Enumeration/Structure]]```<br/>
+   Do not use parentheses for enumerations or structures.
 : ''Example'': [[SDL_BuildAudioCVT]]()
 
 <!> Do not remove or modify any existing remarks.
