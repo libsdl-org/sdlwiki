@@ -6,6 +6,13 @@
 
 = SDL API Contribution Style Guide =
 
-This guide will provide general information about the Function, Enumeration, and Structure pages in this wiki, as well as the formatting instructions needed to add your own content to the Code Examples or Remarks sections.
+This guide will provide general information about the Function, Enumeration, and Structure pages in this wiki, as well as the instructions needed to add your own content to the Code Examples or Remarks sections.
 
-If you would like to contribute to or edit other sections more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
+If you would like to contribute to or edit other sections, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
+
+----
+{X} Existing content, including markup, should not be modified or removed unless specifically noted below.
+
+/!\ '''You must have permission to make major edits or create new pages.''' /!\ <br/>
+Please email docs@libsdl.org to request permission.  
+----
