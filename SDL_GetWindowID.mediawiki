@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowID =
+Use this function to get the numeric ID of the window, for logging purposes.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_GetWindowID(SDL_Window* window)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|the type used to identify the window
+|}
+
+== Return Value ==
+The Uint32 ID of the window.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetWindowFromID]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
