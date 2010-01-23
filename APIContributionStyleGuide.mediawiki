@@ -32,27 +32,27 @@ When you save your changes please include a note in the Comment field that summa
 '''Automatic Backup of Drafts'''<br/>
 (copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])
 
-Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
+ Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
 
-If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
+ If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
 
-To recover that draft, you simply edit that page again. If there is a draft, an alert message will be in the message box and a "load draft" button will be present. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
+ To recover that draft, you simply edit that page again. If there is a draft, an alert message will be in the message box and a "load draft" button will be present. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
 
-(!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
+ (!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
 
-If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
+ If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
+----
+(!) The following instructions apply to all Function, Enumeration, or Structure pages unless specifically noted.  In most cases functions will be referenced for simplicity.  This is not meant to exclude structures or enumerations.
 
-== The Basics ==
+== Adding Code Examples ==
+The Code Examples section provides real-world examples of how to use a function.
 
-== The Specifics ==
-=== Adding Code Examples ===
-
-{OK} Please post code examples showing how you have used a function that may benefit other users.  
+{OK} Please post code examples showing how you have used (implemented?) a function that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
 
-* If there are existing examples please add yours to the end, or to a related section if there are many examples.  
+* If there are existing examples please add yours to the end, or to a related section if there are many examples of various types.  
 : ''Example'': [[SDL_Init]]()
 
 * All content should be added within this markup.
@@ -61,5 +61,18 @@ If you successfully save a page, the internal draft copy of it is not needed any
  
 ```
 }}}}
+<<Color2(pink,Sam - are there any instructions about the actual code that should be included here?)>>
+== Adding Remarks ==
+The Remarks section provides additional information about previous sections as well as a location for users to add relevant comments related to real-world application of the API.  
 
-=== Adding Remarks ===
+{OK} Please post your appropriate remarks that may benefit other users.  (Do not post anything that you do not have permission to post publicly.)
+* If your remark is in reference to a specific function parameter use '''bold''' wherever the parameter's name is used.
+   ```'''parameter'''```
+: ''Example'': [[SDL_ConvertAudio]]()
+
+* Create hyperlinks if you reference an existing function, enumeration, or structure.
+   ```[[SDL_Function]]()``` (include open and closed parentheses after a function name, outside of the hyperlink markup)<br/>
+   ```[[SDL_Enumeration/Structure]]``` (do not use parentheses for enumerations or structures)
+: ''Example'': [[SDL_BuildAudioCVT]]()
+
+<!> Do not remove or modify any existing remarks.
