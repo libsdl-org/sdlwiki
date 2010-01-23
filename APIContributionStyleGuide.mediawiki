@@ -61,7 +61,7 @@ The Code Examples section provides real-world examples of how to use a function.
  
 ```
 }}}}
-<<Color2(pink,Sam - are there any instructions about the actual code that should be included here?)>>
+<<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
 == Adding Remarks ==
 The Remarks section provides additional information about previous sections as well as a location for users to add relevant comments related to real-world application of the API.  
 
