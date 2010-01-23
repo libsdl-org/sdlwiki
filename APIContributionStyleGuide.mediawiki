@@ -6,13 +6,31 @@
 
 = SDL API Contribution Style Guide =
 
-This guide will provide general information about the Function, Enumeration, and Structure pages in this wiki, as well as the instructions needed to add your own content to the Code Examples or Remarks sections.
+This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections, as well as general information about the Function, Enumeration, and Structure pages in this wiki.
+
+{X} Existing content, including markup, should not be modified or removed unless specifically noted.
 
 If you would like to contribute to or edit other sections, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
 
-----
-{X} Existing content, including markup, should not be modified or removed unless specifically noted below.
-
 /!\ '''You must have permission to make major edits or create new pages.''' /!\ <br/>
 Please email docs@libsdl.org to request permission.  
-----
+
+
+== Adding Code Examples ==
+
+{OK} Please post code examples showing how you have used a function that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+
+* If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
+
+* If there are existing examples please add yours to the end, or to a related section if there are many examples.  
+: ''Example'': [[SDL_Init]]()
+
+* All content should be added within this markup.
+   ```{
+{{{#!highlight cpp
+ 
+```
+}}}}
+
+== Adding Remarks ==
