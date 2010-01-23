@@ -6,7 +6,7 @@
 
 = SDL API Contribution Style Guide =
 
-This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections as well as general information about the setup of the Function, Enumeration, and Structure pages in this wiki.
+This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections of the Function, Enumeration, and Structure pages in this wiki.
 
 {X} ~+Existing content, including markup, should not be modified or removed unless specifically noted.+~
 
@@ -16,7 +16,8 @@ If you would like to contribute to or edit other sections, more detailed instruc
 Please email docs@libsdl.org to request permission.  
 
 
-== Getting Started ==
+== The Basics ==
+=== Opening An Editor ===
 If a page can be edited you will see two options in the left column to choose from:
  1. <<Color2(blue,Edit (Text))>>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved (rendered?).
@@ -27,7 +28,10 @@ If a page can be edited you will see two options in the left column to choose fr
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
  (!) The GUI editor is fairly self-explanatory however, if you require further assistance, see the [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor GUI editor help] for more detailed instructions.
 
-When you save your changes please include a note in the Comment field that summarizes what you have done.
+=== Saving Your Changes ===
+Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
+
+When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> link in the left column to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
 (copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])
@@ -42,9 +46,11 @@ When you save your changes please include a note in the Comment field that summa
 
  If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
 ----
+== The Specifics ==
+
 (!) The following instructions apply to all Function, Enumeration, or Structure pages unless specifically noted.  In most cases functions will be referenced for simplicity.  This is not meant to exclude structures or enumerations.
 
-== Adding Code Examples ==
+=== Adding Code Examples ===
 The Code Examples section provides real-world examples of how to use a function.
 
 {OK} Please post code examples showing how you have used (implemented?) a function that may benefit other users.  
@@ -66,7 +72,7 @@ The Code Examples section provides real-world examples of how to use a function.
 
 <<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
 
-== Adding Remarks ==
+=== Adding Remarks ===
 The Remarks section provides additional information about previous sections as well as a location for users to add relevant comments related to real-world application of the API.  
 
 {OK} Please post your appropriate remarks that may benefit other users.  
