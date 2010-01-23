@@ -6,9 +6,9 @@
 
 = SDL API Contribution Style Guide =
 
-This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections, as well as general information about the Function, Enumeration, and Structure pages in this wiki.
+This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections as well as general information about the setup of the Function, Enumeration, and Structure pages in this wiki.
 
-{X} Existing content, including markup, should not be modified or removed unless specifically noted.
+{X} ~+Existing content, including markup, should not be modified or removed unless specifically noted.+~
 
 If you would like to contribute to or edit other sections, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
 
@@ -18,11 +18,29 @@ Please email docs@libsdl.org to request permission.
 
 == Getting Started ==
 If a page can be edited you will see two options in the left column to choose from:
- 1. Edit (Text)
-  Use the Text editor to see the existing markup.  You will need to use the Preview feature to view the content as it will appear.  The Text editor provides more power/flexibility for editing but requires that you know the wiki markup.
- 1. Edit (GUI)
-  Use the GUI editor to see the content appear roughly as it would on the screen as you edit.  The GUI editor provides buttons and shortcuts, much like a simple word processor, to add formatting markup such as bolding text.  It is simpler to use but does not provide all the options that the Text editor does.
-* ''Suggestions'':  If you are familiar with the wiki markup or are simply pasting your content in you will likely find the Text editor more to your liking.<br/> If you are not familiar with the wiki markup or are adding content that will require formatting you will likely find the GUI editor more to your liking.<br/>  You can find more information about wiki markup at [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
+ 1. <<Color2(blue,Edit (Text))>>
+  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved (rendered?).
+ (!) '''Specific markup instructions on this page are for use with the Text editor but should also work in the GUI editor.'''
+ For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
+
+ 1. <<Color2(blue,Edit (GUI))>>
+  The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
+ (!) The GUI editor is fairly self-explanatory however, if you require further assistance, see the [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor GUI editor help] for more detailed instructions.
+
+When you save your changes please include a note in the Comment field that summarizes what you have done.
+
+'''Automatic Backup of Drafts'''<br/>
+(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])
+
+Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
+
+If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
+
+To recover that draft, you simply edit that page again. If there is a draft, an alert message will be in the message box and a "load draft" button will be present. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
+
+(!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
+
+If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
 
 == The Basics ==
 
@@ -45,8 +63,3 @@ If a page can be edited you will see two options in the left column to choose fr
 }}}}
 
 === Adding Remarks ===
-
-== Ready To Save ==
-When you have completed your additions you will find Save Changes and Preview options in the left column.
-* Preview will provide a draft view of the page as it will appear on the screen but it does not save your changes.  If you are happy with the result in the Preview you will still need to Save Changes.  
-* When you save your changes please include a comment that summarizes what you have done.
