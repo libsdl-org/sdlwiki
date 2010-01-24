@@ -11,10 +11,10 @@ This guide provides the instructions needed to add your own content to the Code 
 
 {X} ~+Existing content, including markup, should not be modified or removed unless specifically noted.+~
 
-If you would like to contribute to or edit other sections, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
+If you would like to contribute to or edit other sections or make more complex contributions, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
 
-/!\ '''You must have permission to make major edits or create new pages.''' /!\ <br/>
-Please email docs@libsdl.org to request permission.  
+/!\ <<Color2(green, You must have permission to make major edits or create new pages.)>> <br/>
+<<Color2(green,Please email docs@libsdl.org to request permission.)>>
 
 
 == The Basics ==
@@ -100,6 +100,8 @@ The Remarks section provides additional information related to other sections on
   ```[[SDL_Enumeration/Structure]]```<br/>
    Do not use parentheses for enumerations or structures.
 : ''Example'': [[SDL_BuildAudioCVT]]()
+
+* <<Color2(green,Should instructions for anchors and linking to function parameters be included here, or would that be considered a 'major edit' and should be reserved for the other page?)>>
 
 <!> Do not remove or modify any existing remarks.
 ----
