@@ -51,9 +51,9 @@ When you have completed adding your content and are satisfied with the formattin
 (!) The following instructions apply to all Function, Enumeration, or Structure pages unless specifically noted.  In most cases functions will be referenced for simplicity.  This is not meant to exclude structures or enumerations.
 
 === Adding Code Examples ===
-The Code Examples section provides real-world examples of how to use a function.
+The Code Examples section provides verbatim examples of the real-world application of the API.
 
-{OK} Please post code examples showing how you have used <<Color2(green,implemented)>> a function that may benefit other users.  
+{OK} Please post code examples showing how you have used <<Color2(green,implemented)>> the API that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
@@ -73,12 +73,17 @@ The Code Examples section provides real-world examples of how to use a function.
 <<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
 
 === Adding Remarks ===
-The Remarks section provides additional information about previous sections as well as a location for users to add relevant comments related to real-world application of the API.  
+The Remarks section provides additional information related to other sections on the page as well as a location for users to add relevant comments related to real-world application of the API.  
 
 {OK} Please post your appropriate remarks that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
-* If your remark is in reference to a specific function parameter use '''bold''' wherever the parameter's name is used.
+* If the Remarks section is empty please replace<br/>```''You can add useful comments here''```<br/>with your remarks.
+
+* If there are existing remarks please add yours to the end, or to a related grouping if there are remarks covering the same topic.
+ ''Example'': [[SDL_MixAudio]]()
+
+* If your remark includes a reference to a specific function parameter use '''bold''' wherever the parameter's name is used.
    ```'''parameter'''``` = '''parameter'''
 : ''Example'': [[SDL_ConvertAudio]]()
 
@@ -91,3 +96,7 @@ The Remarks section provides additional information about previous sections as w
 : ''Example'': [[SDL_BuildAudioCVT]]()
 
 <!> Do not remove or modify any existing remarks.
+----
+{i} All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org. 
+----
+Category`Support?
