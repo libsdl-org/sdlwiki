@@ -101,10 +101,10 @@ The Remarks section provides additional information related to other sections on
    Do not use parentheses for enumerations or structures.
 : ''Example'': [[SDL_BuildAudioCVT]]()
 
-* <<Color2(green,Should instructions for anchors and linking to function parameters be included here, or would that be considered a 'major edit' and should be reserved for the other page?)>>
+* <<Color2(green, Should instructions for anchors and linking to function parameters be included here or would that be considered a 'major edit' and should be reserved for the other page?)>>
 
 <!> Do not remove or modify any existing remarks.
 ----
-{i} All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org. 
+{i} <<Color2(green, All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org.)>>
 ----
-Category`Support?
+<<Color2(green, Category`Support?)>>
