@@ -31,11 +31,16 @@ If a page can be edited you will see two options in the left column to choose fr
 
 === Saving Your Changes ===
 Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
+ ''Sample comments'': 
+* added comment to end of remarks
+* added code example to C++ section
+* remarked on use of function with [sound card model]
+<<Color2(green,Sam - Are there other sample comments we could put in to illustrate the kind of info that would help you monitor changes more efficiently?)>>
 
 When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> link in the left column to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
-(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])
+~-(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
 
  Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
 
@@ -74,7 +79,7 @@ The Code Examples section provides verbatim examples of the real-world applicati
 <<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
 
 === Adding Remarks ===
-The Remarks section provides additional information related to other sections on the page as well as a location for users to add relevant comments related to real-world application of the API.  
+The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.  
 
 {OK} Please post your appropriate remarks that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
