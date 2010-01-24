@@ -3,7 +3,7 @@
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
-<<Color2(green,Note: text in green is possible alternate text or questions to be removed in future edits.)>>
+<<Color2(green,Note: text in green is possible additional/alternate text or questions to be removed in future edits.)>>
 
 = SDL API Contribution Style Guide =
 
@@ -11,7 +11,7 @@ This guide provides the instructions needed to add your own content to the Code 
 
 {X} ~+Existing content, including markup, should not be modified or removed unless specifically noted.+~
 
-If you would like to contribute to or edit other sections or make more complex contributions, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
+If you would like to contribute to or edit other sections <<Color2(green,or make more complex contributions)>>, more detailed instructions can be found at [[APIDocumentationStyleGuide]].  
 
 /!\ <<Color2(green, You must have permission to make major edits or create new pages.)>> <br/>
 <<Color2(green,Please email docs@libsdl.org to request permission.)>>
