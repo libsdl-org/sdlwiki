@@ -3,6 +3,7 @@
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
+<<Color2(green,Note: text in green is possible alternate text or questions to be removed in future edits.)>>
 
 = SDL API Contribution Style Guide =
 
