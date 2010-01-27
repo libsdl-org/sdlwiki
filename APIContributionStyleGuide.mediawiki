@@ -7,7 +7,7 @@
 
 = SDL API Contribution Style Guide =
 
-This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections of the Function, Enumeration, and Structure pages in this wiki.
+This guide provides instructions for adding your own content to the Code Examples or Remarks sections of the Function, Enumeration, and Structure pages in this wiki.
 
 ```#!wiki caution
 '''Permission Required'''
@@ -16,7 +16,6 @@ Anyone may contribute Code Examples or Remarks without permission.
 
 Permission is required to make other contributions, edit existing content, or create new pages.  Please email docs@libsdl.org to request permission.
 ```
-<<Color2(green, should permissions note be before or after ToC?)>>
 
 
 == The Basics ==
@@ -42,6 +41,7 @@ Before you save your changes please include a note in the Comment field below th
 * added comment to end of remarks
 * added code example to C++ section
 * remarked on use of function with [sound card model]
+
 <<Color2(green,Sam - Are there other sample comments we could put in to illustrate the kind of info that would help you monitor changes more efficiently?)>>
 
 When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> link in the left column to save your changes.
@@ -61,10 +61,12 @@ When you have completed adding your content and are satisfied with the formattin
 
 == The Specifics ==
 
-(!) The following instructions apply to all Function, Enumeration, or Structure pages unless specifically noted.  In most cases functions will be referenced for simplicity.  This is not meant to exclude structures or enumerations.
+```#!wiki tip
+'''The following instructions apply to all API pages unless specifically noted.'''
+```
 
 === Adding Code Examples ===
-The Code Examples section provides verbatim examples of the real-world application of the API.
+The Code Examples section provides verbatim examples of real-world applications of the API.
 
 {OK} Please post code examples showing how you have used <<Color2(green,implemented)>> the API that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
@@ -74,14 +76,14 @@ The Code Examples section provides verbatim examples of the real-world applicati
 * If there are existing examples please add yours to the end, or to a related section if there are many examples of various types.  
 : ''Example'': [[SDL_Init]]()
 
+<!> '''Do not remove or modify any existing code examples.'''
+
 * All content should be added within this markup.
    ```{
 {{{#!highlight cpp
  
 ```
 }}}}
-
-<!> Do not remove or modify any existing code examples.
 
 <<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
 
@@ -96,9 +98,14 @@ The Remarks section provides additional information related to other sections on
 * If there are existing remarks please add yours to the end, or to a related grouping if there are remarks covering the same topic.
  ''Example'': [[SDL_MixAudio]]()
 
-* If your remark includes a reference to a specific function parameter use '''bold''' wherever the parameter's name is used.
+<!> '''Do not remove or modify any existing remarks.'''
+
+* If your remark includes a reference to a specific function parameter or structure data field use '''bold''' wherever the name is used.
    ```'''parameter'''``` = '''parameter'''
 : ''Example'': [[SDL_ConvertAudio]]()
+: ''Example'': [[SDL_AudioSpec]]
+* Do NOT use bold for enumeration value names.
+: ''Example'': [[SDL_GLattr]]
 
 * Create hyperlinks if you reference an existing function, enumeration, or structure.
   ~-''Note: Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
@@ -110,8 +117,9 @@ The Remarks section provides additional information related to other sections on
 
 * <<Color2(green, Should instructions for anchors and linking to function parameters be included here or would that be considered a 'major edit' and should be reserved for the other page?)>>
 
-<!> Do not remove or modify any existing remarks.
 ----
-{i} <<Color2(green, All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org.)>>
+```#!wiki note
+<<Color2(green, All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org.)>>
+```
 ----
 <<Color2(green, Category`Support?)>>
