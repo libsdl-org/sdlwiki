@@ -9,7 +9,14 @@
 
 This guide provides the instructions needed to add your own content to the Code Examples or Remarks sections of the Function, Enumeration, and Structure pages in this wiki.
 
-{X} '''You must have permission to make other contributions, edit existing content, or create new pages.  Please email docs@libsdl.org to request permission.'''
+```#!wiki caution
+'''Permission Required'''
+
+Anyone may contribute Code Examples or Remarks without permission.  
+
+Permission is required to make other contributions, edit existing content, or create new pages.  Please email docs@libsdl.org to request permission.
+```
+<<Color2(green, should permissions note be before or after ToC?)>>
 
 
 == The Basics ==
