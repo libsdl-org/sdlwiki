@@ -20,6 +20,11 @@ Permission is required to make other contributions, edit existing content, or cr
 
 
 == The Basics ==
+
+```#!wiki warning
+'''Existing content, including markup, should not be modified or removed.'''
+```
+
 === Opening An Editor ===
 If a page can be edited you will see two options in the left column to choose from:
  1. <<Color2(blue,Edit (Text))>>
@@ -53,9 +58,7 @@ When you have completed adding your content and are satisfied with the formattin
  (!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
 
  If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
-----
-/!\ ~+<<Color2(red,Existing content,)>> <<Color2(red,including markup,)>> <<Color2(red,should not be modified or removed.)>>+~
-----
+
 == The Specifics ==
 
 (!) The following instructions apply to all Function, Enumeration, or Structure pages unless specifically noted.  In most cases functions will be referenced for simplicity.  This is not meant to exclude structures or enumerations.
