@@ -8,14 +8,15 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 === Complete ===
 * <<Color2(green, Sam: Add support for multiple windows)>>
 * <<Color2(green, Sam: Create 3D accelerated texture based rendering API)>>
+* <<Color2(green, Sam: Create API for enabling/disabling the screensaver)>>
 
 === Required ===
 * ???: Implement landscape mode for iPhone port
-* Sam: Support for multiple displays
+* Sam: Add support for multiple displays
 * <<Color2(green, Windows)>>
 * <<Color2(green, Mac OS X)>>
 * Linux
-* Sam: Support for selecting video mode refresh rate
+* Sam: Add support for selecting video mode refresh rate
 * <<Color2(green, Windows)>>
 * <<Color2(green, Mac OS X)>>
 * Linux
@@ -46,7 +47,20 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 == Audio ==
 
 === Complete ===
+* <<Color2(green, Ryan: Add support for multiple audio devices>>
+* <<Color2(green, Windows)>>
+* <<Color2(green, Mac OS X)>>
+* <<Color2(green, Linux)>>
 * <<Color2(green, Ryan: Create audio recording API)>>
+* <<Color2(green, Windows)>>
+* <<Color2(green, Mac OS X)>>
+* <<Color2(green, Linux)>>
+* <<Color2(green, Ryan: Add support for float and 32-bit int audio formats>>
+* <<Color2(green, Ryan: Add support for 7.1 speaker output>>
+
+=== Required ===
+* Ryan: Add support for non-power-of-two audio rate conversion
+* Ryan: Add support for audio device live connect and disconnect
 
 === Wishlist ===
 * PCM volume control
@@ -63,8 +77,11 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 
 == Mouse Input ==
 
+=== Complete ===
+* <<Color2(green, Sam: Mousewheel has a separate event)>>
+
 === Required ===
-* Ryan: Support for multiple mice
+* Ryan: Add support for multiple mice
 * Q: What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse?
 * Sam: Support showing / hiding the cursor
 * Sam: Reimplement mouse grab support
@@ -72,8 +89,9 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Verify proper behavior with Vista DPI scaling
 
 === Wishlist ===
-* Sam: Support color cursors
-* Sam: Support animated cursors
+* ???: Pressure/tilt support for tablet like devices
+* Sam: Add support color cursors
+* Sam: Add support animated cursors
 
 == Keyboard Input ==
 
@@ -92,10 +110,11 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 == Joystick Input ==
 
 === Required ===
-* <<Color2(green, Edgar: Create and implement Force Feedback API)>>
+* <<Color2(green, Edgar: Create Force Feedback API)>>
 * <<Color2(green, Windows)>> - need to fix building on cygwin32
 * <<Color2(green, Mac OS X)>>
 * <<Color2(green, Linux)>>
+* ???: Add support for joystick device live connect and disconnect
 
 == Multi-touch Input ==
 
@@ -109,6 +128,8 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * <<Color2(green, Windows)>>
 * <<Color2(green, Mac OS X)>>
 * <<Color2(green, Linux)>>
+* <<Color2(green, Bob: Create API for atomic operations on data)>>
+* <<Color2(green, Sam: Remove unsafe !SDL_KillThread() API)>>
 
 === Required ===
 * Sam: Create API for thread priority
@@ -123,4 +144,10 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 
 === Required ===
 * Sam: Public license for SDL_compat.c, tests, and SDL_main*
-* Sam: Create extended set of (negative) error codes and have the API functions document and return them.
+* Sam: Create extended set of (negative) error codes and have the API functions document and return them
+* Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 1.3 installations
+
+=== Wishlist ===
+* Sam: Should we add SDL_image / SDL_mixer / SDL_sound / SDL_ttf as optional modules in core SDL?
+* ???: Create an API for live video capture
+* ???: Create an API for accelerometer data
