@@ -1,0 +1,15 @@
+= SDL 1.3 Roadmap =
+
+
+== Video ==
+* <<Color2(green, Create 3D accelerated texture based API)>>
+* Implement landscape mode for iPhone port
+
+== Audio ==
+
+== Input ==
+
+== Multi-threading ==
+
+== Timers ==
+* Add higher precision timers for profiling
