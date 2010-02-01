@@ -151,3 +151,7 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 === Wishlist ===
 * ???: Create an API for live video capture
 * ???: Create an API for accelerometer data
+
+----
+Ryan has more information on the SDL 1.3 changes that you can find here: <br/>
+http://icculus.org/cgi-bin/finger/finger.pl?user=icculus&date=2007-10-07&section=sdl13
