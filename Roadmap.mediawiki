@@ -34,7 +34,7 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 
 === Required ===
 * Ryan: Support for multiple mice
-* Q: What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse?
+* Notes <!-- What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse? -->
 
 == Keyboard Input ==
 
