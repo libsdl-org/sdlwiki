@@ -1,7 +1,6 @@
 = SDL 1.3 Roadmap =
 
-== Introduction ==
-This is a list of features which are in progress for the SDL 1.3 release.  The features are organized by subsystem and assigned to developers.
+This is a list of features which are in progress for the SDL 1.3 release.  The features are organized by subsystem and assigned to developers.  Features will be added, removed, and moved between Complete, Required, and Wishlist as the design evolves.
 
 
 == Video ==
