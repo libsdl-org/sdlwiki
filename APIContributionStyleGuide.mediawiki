@@ -1,9 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
-<<Color2(green,Note: text in green is possible additional/alternate text or questions to be removed in future edits.)>>
 
 = SDL API Contribution Style Guide =
 
@@ -12,7 +8,7 @@ This guide provides instructions for adding your own content to the Code Example
 
 == Before You Start ==
 
-Anyone may contribute Code Examples or Remarks following this Style Guide.  
+Anyone may contribute Code Examples or Remarks per the instructions in this Style Guide.  
 
 If you would like to make other contributions, edit existing content, or create new pages, please email docs@libsdl.org to coordinate efforts.
 
@@ -29,7 +25,7 @@ If a page can be edited you will see two options in the left column to choose fr
 
  1. <<Color2(blue,Edit (GUI))>>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
- (!) The GUI editor is fairly self-explanatory however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+ (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
 === Saving Your Changes ===
 Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
