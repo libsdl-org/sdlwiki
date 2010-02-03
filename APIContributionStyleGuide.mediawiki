@@ -60,9 +60,9 @@ When you have completed adding your content and are satisfied with the formattin
 ```
 
 === Adding Code Examples ===
-The Code Examples section provides verbatim examples of real-world applications of the API.
+The Code Examples section provides simple examples of real-world applications of the API.
 
-{OK} Please post code examples showing how you have used <<Color2(green,implemented)>> the API that may benefit other users.  
+{OK} Please post code examples showing how you have used the API that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
@@ -78,8 +78,7 @@ The Code Examples section provides verbatim examples of real-world applications 
  
 ```
 }}}}
-
-<<Color2(green,'''Sam - are there any instructions about the actual code that should be included here?''')>>
+* Please remember to keep it simple and easy to understand.
 
 === Adding Remarks ===
 The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.  
@@ -109,11 +108,8 @@ The Remarks section provides additional information related to other sections on
    Do not use parentheses for enumerations or structures.
 : ''Example'': [[SDL_BuildAudioCVT]]()
 
-* <<Color2(green, Should instructions for anchors and linking to function parameters be included here or would that be considered a 'major edit' and should be reserved for the other page?)>>
-
 ----
+== Disclaimer ==
 ```#!wiki note
-<<Color2(green, All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki by any user at any time without notice.  You may direct questions or concerns to docs@libsdl.org.)>>
+All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to docs@libsdl.org.
 ```
-----
-<<Color2(green, Category`Support?)>>
