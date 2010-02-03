@@ -7,16 +7,16 @@
 
 = SDL API Contribution Style Guide =
 
-This guide provides instructions for adding your own content to the Code Examples or Remarks sections of the Function, Enumeration, and Structure pages in this wiki.
+This guide provides instructions for adding your own content to the Code Examples or Remarks sections of the API pages in this wiki.
+
 
 ```#!wiki caution
 '''Permission Required'''
 
-Anyone may contribute Code Examples or Remarks without permission.  
+Anyone may contribute Code Examples or Remarks.  
 
-Permission is required to make other contributions, edit existing content, or create new pages.  Please email docs@libsdl.org to request permission.
+If you would like to make other contributions, edit existing content, or create new pages, please email docs@libsdl.org to coordinate efforts.
 ```
-
 
 == The Basics ==
 
