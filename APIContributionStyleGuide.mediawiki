@@ -12,20 +12,18 @@ This guide provides instructions for adding your own content to the Code Example
 
 == Before You Start ==
 
-Anyone may contribute Code Examples or Remarks.  
+Anyone may contribute Code Examples or Remarks following this Style Guide.  
 
 If you would like to make other contributions, edit existing content, or create new pages, please email docs@libsdl.org to coordinate efforts.
 
 == The Basics ==
 
-```#!wiki warning
-'''Existing content, including markup, should not be modified or removed.'''
-```
+<!> '''Existing content, including markup, should not be modified or removed.'''
 
 === Opening An Editor ===
 If a page can be edited you will see two options in the left column to choose from:
  1. <<Color2(blue,Edit (Text))>>
-  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved <<Color2(green,rendered)>>.
+  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
  (!) '''Specific markup instructions on this page are for use with the Text editor but should also work in the GUI editor.'''
  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
 
@@ -39,8 +37,6 @@ Before you save your changes please include a note in the Comment field below th
 * added comment to end of remarks
 * added code example to C++ section
 * remarked on use of function with [sound card model]
-
-<<Color2(green,Sam - Are there other sample comments we could put in to illustrate the kind of info that would help you monitor changes more efficiently?)>>
 
 When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> link in the left column to save your changes.
 
