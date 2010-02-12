@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_PollEvent =
+Use this function to poll for currently pending events.
+
+
+== Syntax ==
+```c++
+int SDL_PollEvent(SDL_Event * event)
+```
+
+== Function Parameters ==
+{|
+|'''event'''
+|If not NULL, the next event is removed from the queue and stored in event.
+|}
+
+== Return Value ==
+Returns 1 if there are any pending events, or 0 if there are none available.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
+----
+[[CategoryAPI]]
