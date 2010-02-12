@@ -1,0 +1,112 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Enumeration =
+An enumeration of the types of events that can be delivered.
+
+
+<!-- Remove this comment from the new Enum page when creating page.  
+To automatically show Values content from this page on a function page place the following markup in the Remarks section of the related function(s), where enumeration is replaced by the actual enumeration name:
+<<Include(SDL_enumeration, , , from="== Values ==", to="== Code Examples ==")>> -->
+
+== Values ==
+{|
+|SDL_NOEVENT
+|Unused (do not remove)
+|-
+|SDL_WINDOWEVENT
+|Window state change
+|-
+|SDL_KEYDOWN
+|Keys pressed
+|-
+|SDL_KEYUP
+|Keys released
+|-
+|SDL_TEXTEDITING
+|Keyboard text editing (composition)
+|-
+|SDL_TEXTINPUT
+|Keyboard text input
+|-
+|SDL_MOUSEMOTION
+|Mouse moved
+|-
+|SDL_MOUSEBUTTONDOWN
+|Mouse button pressed
+|-
+|SDL_MOUSEBUTTONUP
+|Mouse button released
+|-
+|SDL_MOUSEWHEEL
+|Mouse wheel motion
+|-
+|SDL_JOYAXISMOTION
+|Joystick axis motion
+|-
+|SDL_JOYBALLMOTION
+|Joystick trackball motion
+|-
+|SDL_JOYHATMOTION
+|Joystick hat position change
+|-
+|SDL_JOYBUTTONDOWN
+|Joystick button pressed
+|-
+|SDL_JOYBUTTONUP
+|Joystick button released
+|-
+|SDL_QUIT
+|User-requested quit
+|-
+|SDL_SYSWMEVENT
+|System specific event
+|-
+|SDL_PROXIMITYIN
+|Proximity In event
+|-
+|SDL_PROXIMITYOUT
+|Proximity Out event
+|-
+|SDL_EVENT_RESERVED1
+|Reserved for future use...
+|-
+|SDL_EVENT_RESERVED2
+|Reserved for future use...
+|-
+|SDL_EVENT_RESERVED3
+|Reserved for future use...
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+[[SDL_KeyboardEvent]]
+[[SDL_TextEditingEvent]]
+[[SDL_TextInputEvent]]
+[[SDL_MouseMotionEvent]]
+[[SDL_MouseButtonEvent]]
+[[SDL_MouseWheelEvent]]
+[[SDL_JoyAxisEvent]]
+[[SDL_JoyBallEvent]]
+[[SDL_JoyHatEvent]]
+[[SDL_JoyButtonEvent]]
+[[SDL_QuitEvent]]
+[[SDL_UserEvent]]
+[[SDL_SysWMEvent]]
+[[SDL_ProximityEvent]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryEnum]]
+----
+CategoryEnum
