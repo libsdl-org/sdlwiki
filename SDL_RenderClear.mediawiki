@@ -25,7 +25,7 @@ int main(int argc, char** argv)
 		return 1;
 	
 	// Create the window were we will draw.
-	SDL_WindowID window = 
+	SDL_Window* window = 
 		SDL_CreateWindow("SDL_RenderClear",
 		SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 		512, 512,
