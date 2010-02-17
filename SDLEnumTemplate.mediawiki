@@ -6,10 +6,6 @@
 An enumeration of ''replace with description of the enum''.
 
 
-<!-- Remove this comment from the new Enum page when creating page.  
-To automatically show Values content from this page on a function page place the following markup in the Remarks section of the related function(s), where enumeration is replaced by the actual enumeration name:
-<<Include(SDL_enumeration, , , from="== Values ==", to="== Code Examples ==")>> -->
-
 == Values ==
 {|
 |value
