@@ -1,0 +1,65 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_CreateRGBSurface =
+Use this function to allocate ,,and free,, an RGB surface (must be called after [[SDL_SetVideoMode]]()).
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
+                                   int    width,
+                                   int    height,
+                                   int    depth,
+                                   Uint32 Rmask,
+                                   Uint32 Gmask,
+                                   Uint32 Bmask,
+                                   Uint32 Amask)
+```
+
+== Function Parameters ==
+<<Color2(green,should flags be gray?)>>
+{|
+|'''flags'''
+|the flags are obsolete and should be set to 0
+|-
+|'''width'''
+|the width of the surface
+|-
+|'''height'''
+|the height of the surface
+|-
+|'''depth'''
+|the depth of the surface in bits; see [[#Remarks|Remarks]] for details
+|-
+|'''Rmask'''
+|the red mask for the pixels
+|-
+|'''Gmask'''
+|the green mask for the pixels
+|-
+|'''Bmask'''
+|the blue mask for the pixels
+|-
+|'''Amask'''
+|the alpha mask for the pixels
+|}
+
+== Return Value ==
+A pointer to an SDL_Surface to be created.  If the function runs out of memory, it will return NULL. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the flags '[RGB]mask'. <<Color2(green,should it say flags or flag since there's only one listed?)>>
+
+== Related Functions ==
+:[[SDL_CreateRGBSurfaceFrom]]
+:[[SDL_FreeSurface]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
