@@ -1,11 +1,14 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
+'''DRAFT'''
+
 = SDL_AudioSpec =
 A structure that describes the audio output format. It contains a callback that is called when the audio device needs more data.
 
 
 == Data Fields ==
+<<Color2(green,added '''padding''' value - seems to be new)>>
 {|
 |int
 |'''freq'''
@@ -26,6 +29,10 @@ A structure that describes the audio output format. It contains a callback that 
 |Uint16
 |'''samples'''
 |audio buffer size in samples (power of 2)
+|-
+|Uint16
+|'''padding'''
+|necessary for some compile environments
 |-
 |Uint32
 |'''size'''
@@ -50,8 +57,14 @@ The calculated values '''silence''' and '''size''' are calculated by [[SDL_OpenA
 
 Stereo samples are stored in a LRLRLR ordering.
 
+<<Color2(green,Is the following still necessary w/ the creation of an SDL_Audio<code></code>Callback page? Should we just reference the page above or change this to an include?  How much of this now needs to change?)>>
 <span id="callback"></span> '''callback''' is of the form:
 ```c++
+##alt 1st line from header rev 5387?
+typedef void (SDLCALL * SDL_AudioCallback)(void*  userdata,
+##w/ wiki formatting adjustments?
+void* SDL_AudioCallback(void*  userdata,
+##original content below 
 void callback(void*  userdata, 
               Uint8* stream, 
               int    len);
