@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetClipRect =
+Use this function to get the clipping rectangle for the destination surface in a blit.
+
+
+== Syntax ==
+```c++
+void SDL_GetClipRect(SDL_Surface* surface,
+                     SDL_Rect*    rect)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to query
+|-
+|'''rect'''
+|must be a pointer to a valid rectangle which will be filled with the correct values
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetClipRect]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
