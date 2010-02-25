@@ -34,6 +34,8 @@ You can add your code example here
 == Remarks ==
 The new surface should be freed with [[SDL_FreeSurface]]().
 
+<<Color2(green,Does SDL_LoadBMP(file) belong on this page?)>>
+
 == Related Functions ==
 :[[SDL_FreeSurface]]
 
