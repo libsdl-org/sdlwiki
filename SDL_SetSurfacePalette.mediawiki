@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetSurfacePalette =
+Use this function to set the palette used by a surface.
+
+
+== Syntax ==
+```c++
+int SDL_SetSurfacePalette(SDL_Surface* surface,
+                          SDL_Palette* palette)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|a pointer to the [[SDL_Surface]]
+|-
+|'''palette'''
+|a pointer to the [[SDL_Palette]]
+|}
+
+== Return Value ==
+Returns 0, or -1 if the surface format doesn't use a palette; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+A single palette can be shared with many surfaces.
+
+== Related Functions ==
+:[[SDL_OtherFunction]] (none?)
+
+----
+[[CategoryAPI]], [[CategorySurface]]
