@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetColorKey =
+Use this function to set the color key (transparent pixel) in a blittable surface.
+
+
+== Syntax ==
+```c++
+int SDL_SetColorKey(SDL_Surface* surface,
+                    int          flag,
+                    Uint32       key)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to update
+|-
+|'''flag'''
+|non-zero to enable colorkey, 0 to disable colorkey
+|-
+|'''key'''
+|the transparent pixel in the native surface format 
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if the surface is not valid; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetColorKey]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
