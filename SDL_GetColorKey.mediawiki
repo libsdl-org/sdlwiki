@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetColorKey =
+Use this function to get the color key (transparent pixel) in a blittable surface.
+
+
+== Syntax ==
+```c++
+int SDL_GetColorKey(SDL_Surface* surface,
+                    Uint32*      key)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to update
+|-
+|'''key'''
+|a pointer filled in with the transparent pixel in the native surface format
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if the surface is not valid or colorkey is not enabled; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetColorKey]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
