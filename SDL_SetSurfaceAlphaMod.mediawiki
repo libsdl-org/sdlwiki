@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetSurfaceAlphaMod =
+Use this function to set an additional alpha value used in blit operations.
+
+
+== Syntax ==
+```c++
+int SDL_SetSurfaceAlphaMod(SDL_Surface* surface,
+                           Uint8        alpha)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to update
+|-
+|'''alpha'''
+|the source alpha value multiplied into blit operations
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if the surface is not valid; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetSurfaceAlphaMod]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
