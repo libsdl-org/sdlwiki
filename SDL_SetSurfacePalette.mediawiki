@@ -20,6 +20,7 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 |'''palette'''
 |a pointer to the [[SDL_Palette]]
 |}
+<<Color2(green,should hyperlink to SDL_Surface be removed?)>>
 
 == Return Value ==
 Returns 0, or -1 if the surface format doesn't use a palette; call [[SDL_GetError]]() for more information.
