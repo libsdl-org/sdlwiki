@@ -38,6 +38,7 @@ The new surface should be freed with [[SDL_FreeSurface]]().
 
 == Related Functions ==
 :[[SDL_FreeSurface]]
+:[[SDL_SaveBMP_RW]]???
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
