@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SaveBMP_RW =
+Use this function to save a surface to a seekable SDL data source (memory or file).
+
+
+== Syntax ==
+```c++
+int SDL_SaveBMP_RW(SDL_Surface* surface,
+                   SDL_RWops*   dst,
+                   int          freedst)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|a pointer to the [[SDL_Surface]] to be saved
+|-
+|'''dst'''
+|a pointer to a data source to save to
+|-
+|'''freedst'''
+|non-zero to close the source ''(should this be dst instead of src?)'' after being written
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_LoadBMP_RW]]???
+
+----
+[[CategoryAPI]], [[CategorySurface]]
