@@ -19,10 +19,10 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 ```
 
 == Function Parameters ==
-<<Color2(green,should flags be gray?)>>
+<<Color2(green,should flags be gray? Should \c be removed?)>>
 {|
 |'''flags'''
-|the flags are obsolete and should be set to 0
+|the \c flags are obsolete and should be set to 0
 |-
 |'''width'''
 |the width of the surface
