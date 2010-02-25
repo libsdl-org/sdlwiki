@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetClipRect =
+Use this function to set the clipping rectangle for the destination surface in a blit.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
+                         const SDL_Rect* rect)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to be updated
+|-
+|'''rect'''
+|a pointer to the [[SDL_Rect]] to be applied
+|}
+
+== Return Value ==
+If the clip rectangle doesn't intersect the surface, the function will return SDL_FALSE and blits will be completely clipped. Otherwise the function returns SDL_TRUE and blits to the surface will be clipped to the intersection of the surface area and the clipping rectangle.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+If the clip rectangle is NULL, clipping will be disabled. 
+
+Note that blits are automatically clipped to the edges of the source and destination surfaces.
+
+== Related Functions ==
+:[[SDL_GetClipRect]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
