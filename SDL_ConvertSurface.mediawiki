@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ConvertSurface =
+Use this function to create a new surface of the specified format, and then copy and map the given surface to it so the blit of the converted surface will be as fast as possible.
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
+                                SDL_PixelFormat* fmt,
+                                Uint32           flags)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|the surface to copy and map from
+|-
+|'''fmt'''
+|the [[SDL_PixelFormat]] to apply
+|-
+|'''flags'''
+|;see [[#Remarks|Remarks]] for details
+|}
+
+== Return Value ==
+Returns the new surface, or NULL if this function fails; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The ,,\c,, '''flags''' parameter is passed to [[SDL_CreateRGBSurface]]() and has those semantics. You can also pass SDL_RLEACCEL in the '''flags''' parameter and SDL will try to RLE accelerate colorkey and alpha blits in the resulting surface.
+
+This function is used internally by [[SDL_DisplayFormat]]().
+
+== Related Functions ==
+:[[SDL_DisplayFormat]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
