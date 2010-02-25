@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetSurfaceColorMod =
+Use this function to get the additional color value used in blit operations.
+
+
+== Syntax ==
+```c++
+int SDL_GetSurfaceColorMod(SDL_Surface* surface,
+                           Uint8*       r,
+                           Uint8*       g,
+                           Uint8*       b)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to query
+|-
+|'''r'''
+|a pointer filled in with the source red color value
+|-
+|'''g'''
+|a pointer filled in with the source green color value
+|-
+|'''b'''
+|a pointer filled in with the source blue color value
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if the surface is not valid; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetSurfaceColorMod]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
