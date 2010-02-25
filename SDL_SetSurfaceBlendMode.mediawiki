@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetSurfaceBlendMode =
+Use this function to set the blend mode used for blit operations.
+
+
+== Syntax ==
+```c++
+int SDL_SetSurfaceBlendMode(SDL_Surface* surface,
+                            int          blendMode)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the surface to update
+|-
+|'''blendMode'''
+|[[SDL_BlendMode]] to use for blit blending
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if the parameters are not valid; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetSurfaceBlendMode]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
