@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_LoadBMP_RW =
+Use this function to load a surface from a seekable SDL data source (memory or file).
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
+                            int        freesrc)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|the data source for the surface
+|-
+|'''freesrc'''
+|non-zero to close the source after being read
+|}
+
+<<Color2(green,see SDL_LoadWAV_RW for same parameters)>>
+
+== Return Value ==
+Returns the new surface, or NULL if there was an error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The new surface should be freed with [[SDL_FreeSurface]]().
+
+== Related Functions ==
+:[[SDL_FreeSurface]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
