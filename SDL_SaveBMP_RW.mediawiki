@@ -36,6 +36,10 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+<<Color2(green,Should the following be included on this page?)>>
+SDL_SaveBMP(surface, file) \
+SDL_SaveBMP_RW(surface, SDL_RWFromFile(file, "wb"), 1) (convenience macro)
+
 == Related Functions ==
 :[[SDL_LoadBMP_RW]]???
 
