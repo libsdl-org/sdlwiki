@@ -1,0 +1,153 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Surface =
+A structure that contains a collection of pixels used in software blitting.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''flags'''
+|internal, read-only; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_PixelFormat]]*
+|'''format'''
+|read-only
+|-
+|int
+|'''w, h'''
+|read-only
+|-
+|int
+|'''pitch'''
+|read-only
+|-
+|void*
+|'''pixels'''
+|read-write
+|-
+|<-3>''Application data associated with the surface''
+|-
+|void*
+|'''userdata'''
+|read-write
+|-
+|<-3>''Information needed for surfaces requiring locks''
+|-
+|int
+|'''locked'''
+|read-only
+|-
+|void*
+|'''lock_data'''
+|read-only
+|-
+|<-3>''Clipping information''
+|-
+|[[SDL_Rect]]
+|'''clip_rect'''
+|read-only
+|-
+|<-3>''Info for fast blit mapping to other surfaces''
+|-
+|[[SDL_BlitMap]]*
+|'''map'''
+|private (struct)
+|-
+|<-3>''Format version, bumped at every change to invalidate blit maps''
+|-
+|unsigned int ^Uint?^
+|'''format_version'''
+|private
+|-
+|<-3>''Reference count -- used when freeing surface''
+|-
+|int
+|'''refcount'''
+|read-mostly
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This structure should be treated as read-only, except for '''pixels''', which, if not NULL, contains the raw pixel data for the surface.
+
+The currently supported '''flags''' for [[SDL_Surface]] are:<br/>
+or<br/>
+'''flags''' may be 0 or any of the following:
+{|
+|SDL_PREALLOC
+|surface uses preallocated memory
+|-
+|SDL_RLEACCEL
+|surface is RLE encoded
+|}
+
+Evaluates to true if the surface needs to be locked before access.
+ ```
+#define SDL_MUSTLOCK(S) (((S)->flags & SDL_RLEACCEL) != 0)
+```
+
+== Related Structures ==
+:[[SDL_BlitMap]] <<Color2(green,should this be listed here since it's private?)>>
+:[[SDL_SDL_PixelFormat]]
+:[[SDL_Rect]]
+
+== Related Functions ==
+:[[SDL_BlendCircle]]
+:[[SDL_BlendEllipse]]
+:[[SDL_BlendFillCircle]]
+:[[SDL_BlendFillEllipse]]
+:[[SDL_BlendFillRect]]
+:[[SDL_BlendFillRects]]
+:[[SDL_BlendLine]]
+:[[SDL_BlendLines]]
+:[[SDL_BlendPoint]]
+:[[SDL_BlendPoints]]
+:[[SDL_BlendRect]]
+:[[SDL_BlendRects]]
+:[[SDL_ConvertSurface]]
+:[[SDL_CreateRGBSurface]]
+:[[SDL_CreateRGBSurfaceFrom]]
+:[[SDL_DrawCircle]]
+:[[SDL_DrawEllipse]]
+:[[SDL_DrawLine]]
+:[[SDL_DrawLines]]
+:[[SDL_DrawPoint]]
+:[[SDL_DrawPoints]]
+:[[SDL_DrawRect]]
+:[[SDL_DrawRects]]
+:[[SDL_FillCircle]]
+:[[SDL_FillEllipse]]
+:[[SDL_FillRect]]
+:[[SDL_FillRects]]
+:[[SDL_FreeSurface]]
+:[[SDL_GetClipRect]]
+:[[SDL_GetColorKey]]
+:[[SDL_GetSurfaceAlphaMod]]
+:[[SDL_GetSurfaceBlendMode]]
+:[[SDL_GetSurfaceColorMod]]
+:[[SDL_GetSurfaceScaleMode]]
+:[[SDL_LoadBMP_RW]]
+:[[SDL_LockSurface]]
+:[[SDL_LowerBlit]]
+:[[SDL_SaveBMP_RW]]
+:[[SDL_SetClipRect]]
+:[[SDL_SetColorKey]]
+:[[SDL_SetSurfaceAlphaMod]]
+:[[SDL_SetSurfaceBlendMode]]
+:[[SDL_SetSurfaceColorMod]]
+:[[SDL_SetSurfacePalette]]
+:[[SDL_SetSurfaceRLE]]
+:[[SDL_SetSurfaceScaleMode]]
+:[[SDL_SoftStretch]]
+:[[SDL_UnlockSurface]]
+:[[SDL_UpperBlit]]
+
+----
+[[CategoryStruct]]
