@@ -68,6 +68,7 @@ A structure that contains a collection of pixels used in software blitting.
 |'''refcount'''
 |read-mostly
 |}
+<<Color2(green,should map and format_version be gray because they're private?)>>
 
 == Code Examples ==
 ```c++
