@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateRGBSurface =
-Use this function to allocate ,,and free,, an RGB surface (must be called after [[SDL_SetVideoMode]]()).
+Use this function to allocate ,,and free,, an RGB surface (must be called after [[SDL_SetVideoMode]]()).  <<Color2(green,where is info on Set<code></code>Video<code></code>Mode?)>>
 
 
 == Syntax ==
@@ -19,10 +19,10 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 ```
 
 == Function Parameters ==
-<<Color2(green,should flags be gray? Should \c be removed?)>>
+<<Color2(green,should flags be gray?)>>
 {|
 |'''flags'''
-|the \c flags are obsolete and should be set to 0
+|the flags are obsolete and should be set to 0
 |-
 |'''width'''
 |the width of the surface
@@ -47,7 +47,7 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 |}
 
 == Return Value ==
-A pointer to an SDL_Surface to be created.  If the function runs out of memory, it will return NULL. 
+A pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
 
 == Code Examples ==
 ```c++
