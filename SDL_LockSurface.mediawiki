@@ -16,7 +16,6 @@ int SDL_LockSurface(SDL_Surface* surface)
 |'''surface'''
 |a pointer to the [[SDL_Surface]] to be locked
 |}
-<<Color2(green,should hyperlink be removed?)>>
 
 == Return Value ==
 Returns 0, or -1 if the surface couldn't be locked; call [[SDL_GetError]]() for more information.
@@ -27,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from \c surface->pixels, using the pixel format stored in \c surface->format. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
+Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from surface->pixels, using the pixel format stored in surface->format. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
 
 Not all surfaces require locking. If SDL_MUSTLOCK(surface) evaluates to 0, then you can read and write to the surface at any time, and the pixel format of the surface will not change.
 
