@@ -34,10 +34,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-The ,,\c,, '''flags''' parameter is passed to [[SDL_CreateRGBSurface]]() and has those semantics. You can also pass SDL_RLEACCEL in the '''flags''' parameter and SDL will try to RLE accelerate colorkey and alpha blits in the resulting surface.
+The '''flags''' parameter is passed to [[SDL_CreateRGBSurface]]() and has those semantics. You can also pass SDL_RLEACCEL in the '''flags''' parameter and SDL will try to RLE accelerate colorkey and alpha blits in the resulting surface.
 
 == Related Functions ==
-:[[SDL_DisplayFormat]]
+:[[SDL_OtherFunction]] (none?)
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
