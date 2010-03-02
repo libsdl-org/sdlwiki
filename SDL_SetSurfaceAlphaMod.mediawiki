@@ -15,7 +15,7 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to update
+|the surface / [[SDL_Surface]] to update
 |-
 |'''alpha'''
 |the source alpha value multiplied into blit operations
