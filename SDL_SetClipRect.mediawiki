@@ -15,7 +15,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to be updated
+|the surface / [[SDL_Surface]] to be updated
 |-
 |'''rect'''
 |a pointer to the [[SDL_Rect]] to be applied
