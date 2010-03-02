@@ -17,7 +17,7 @@ int SDL_SetSurfaceColorMod(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to update
+|the surface / [[SDL_Surface]] to update
 |-
 |'''r'''
 |the red source color value multiplied into blit operations
