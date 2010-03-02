@@ -16,7 +16,7 @@ int SDL_SetColorKey(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to update
+|the surface / [[SDL_Surface]] to update
 |-
 |'''flag'''
 |non-zero to enable colorkey, 0 to disable colorkey
