@@ -22,15 +22,23 @@ Returns 1 if there are any pending events, or 0 if there are none available.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+while(1){
+    SDL_Event event;
+    if(SDL_PollEvent(&event)){
+         // handle your event here
+    }
+    // do some other stuff here -- draw your app, play your music, perform other operations...
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+ SDL_PollEvent is the favored way of receiving system events since it can be done from the main loop and does not suspend the main loop while waiting on an event to be posted.
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
-
+:[[SDL_WaitEvent]], [[SDL_WaitEventTimeout]]
+:[[SDL_PeepEvents]]
+:[[SDL_PushEvent]]
+:[[SDL_SetEventFilter]], [[SDL_GetEventFilter]]
 ----
 [[CategoryAPI]], [[CategoryHeader]]
 ----
