@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateRGBSurface =
-Use this function to allocate ,,and free,, an RGB surface (must be called after [[SDL_SetVideoMode]]()).  <<Color2(green,where is info on Set<code></code>Video<code></code>Mode?)>>
+Use this function to allocate ,,and free,, an RGB surface.
 
 
 == Syntax ==
