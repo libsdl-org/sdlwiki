@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FreeSurface =
+Use this function to ,,allocate and,, free an RGB surface.
+
+
+== Syntax ==
+```c++
+void SDL_FreeSurface(SDL_Surface* surface)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|a pointer to the [[SDL_Surface]] to free
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,I don't think this note applies to this function but this function was listed with the group below in the header so I'll leave it because it's easier to delete than add when we're editing.)>>  If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the flags '[RGB]mask'. 
+
+== Related Functions ==
+:[[SDL_CreateRGBSurface]]
+:[[SDL_CreateRGBSurfaceFrom]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
