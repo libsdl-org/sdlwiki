@@ -1,0 +1,108 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_UpperBlit =
+Use this function to perform a fast blit from the source surface to the destination surface.
+
+
+== Syntax ==
+```c++
+int SDL_UpperBlit(SDL_Surface* src,
+                  SDL_Rect*    srcrect,
+                  SDL_Surface* dst,
+                  SDL_Rect*    dstrect)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|a pointer to the source surface / [[SDL_Surface]] containing '''srcrect'''
+|-
+|'''srcrect'''
+|a pointer to the source rectangle / [[SDL_Rect]] to be queried
+|-
+|'''dst'''
+|a pointer to the destination surface / [[SDL_Surface]] containing '''dstrect'''
+|-
+|'''dstrect'''
+|a pointer to the destination rectangle / [[SDL_Rect]] to be filled
+|}
+
+== Return Value ==
+If the blit is successful it returns 0, otherwise it returns -1 on failure; call [[SDL_GetError]]() for more information.
+
+See [[#video|Remarks]] for details if the return value is -2.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This assumes that the source and destination rectangles are the same size. If either '''srcrect''' or '''dstrect''' are NULL, the entire surface ('''src''' or '''dst''') is copied. The final blit rectangles are saved in '''srcrect''' and '''dstrect''' after all clipping is performed.
+
+The blit function should not be called on a locked surface. <<Color2(green,Should this be listed first in the Remarks?)>>
+
+<<Color2(green,Is the following supposed to go in Code Examples or at least in a code box?  Is it just a define that shouldn't be here at all?)>>
+
+The blit semantics for surfaces with and without alpha and colorkey are defined as follows:
+ \verbatim
+ RGBA->RGB:
+  SDL_SRCALPHA set:
+   alpha-blend (using alpha-channel).
+   SDL_SRCCOLORKEY ignored.
+  SDL_SRCALPHA not set:
+   copy RGB.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source colour key, ignoring alpha in the comparison.
+
+ RGB->RGBA:
+  SDL_SRCALPHA set:
+   alpha-blend (using the source per-surface alpha value);
+   set destination alpha to opaque.
+  SDL_SRCALPHA not set:
+   copy RGB, set destination alpha to source per-surface alpha value.
+  both:
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the source colour key.
+
+ RGBA->RGBA:
+  SDL_SRCALPHA set:
+   alpha-blend (using the source alpha channel) the RGB values;
+   leave destination alpha untouched. [Note: is this correct?]
+   SDL_SRCCOLORKEY ignored.
+  SDL_SRCALPHA not set:
+   copy all of RGBA to the destination.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source colour key, ignoring alpha in the comparison.
+
+ RGB->RGB:
+  SDL_SRCALPHA set:
+   alpha-blend (using the source per-surface alpha value).
+  SDL_SRCALPHA not set:
+   copy RGB.
+  both:
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the source colour key.
+ \endverbatim
+
+<span id="video"></span> If either of the surfaces were in video memory, and the blit returns -2, the video memory was lost, so it should be reloaded with artwork and re-blitted:
+ ```
+@code
+while ( SDL_BlitSurface(image, imgrect, screen, dstrect) == -2 ) {
+while ( SDL_LockSurface(image) < 0 )
+Sleep(10);
+-- Write image pixels to image->pixels --
+SDL_UnlockSurface(image);
+}
+@endcode
+```
+This happens under DirectX 5.0 when the system switches away from your fullscreen application. The lock will also fail until you have access to the video memory again.
+
+You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
+
+This is the public blit function, [[SDL_BlitSurface]](), and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
+
+== Related Functions ==
+:[[SDL_BlitSurface]]???
+:[[SDL_LowerBlit]]???
+
+----
+[[CategoryAPI]], [[CategorySurface]]
