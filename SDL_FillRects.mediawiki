@@ -22,7 +22,7 @@ int SDL_FillRects(SDL_Surface*     dst,
 |'''rects'''
 |a pointer to a pointer containing the rectangles / [[SDL_Rect]]s to fill
 |-
-|count
+|'''count'''
 |the number of rectangles to fill
 |-
 |'''color'''
