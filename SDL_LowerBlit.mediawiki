@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_LowerBlit =
+Use this function to perform low-level surface blitting only.
+
+
+== Syntax ==
+```c++
+int SDL_LowerBlit(SDL_Surface* src,
+                  SDL_Rect*    srcrect,
+                  SDL_Surface* dst,
+                  SDL_Rect*    dstrect)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|a pointer to the source surface / [[SDL_Surface]] containing '''srcrect'''
+|-
+|'''srcrect'''
+|a pointer to the source rectangle / [[SDL_Rect]] to be queried
+|-
+|'''dst'''
+|a pointer to the destination surface / [[SDL_Surface]] containing '''dstrect'''
+|-
+|'''dstrect'''
+|a pointer to the destination rectangle / [[SDL_Rect]] to be filled
+|}
+
+== Return Value ==
+If the blit is successful it returns 0, otherwise it returns -1 on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is a semi-private blit function and it performs low-level surface blitting only.
+
+== Related Functions ==
+:[[SDL_UpperBlit]]???
+
+----
+[[CategoryAPI]], [[CategorySurface]]
