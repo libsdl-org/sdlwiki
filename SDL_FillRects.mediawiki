@@ -8,10 +8,10 @@ Use this function to perform a fast fill of the given rectangles with color.
 
 == Syntax ==
 ```c++
-int SDLCALL SDL_FillRects(SDL_Surface*     dst,
-                          const SDL_Rect** rects,
-                          int              count,
-                          Uint32           color)
+int SDL_FillRects(SDL_Surface*     dst,
+                  const SDL_Rect** rects,
+                  int              count,
+                  Uint32           color)
 ```
 
 == Function Parameters ==
