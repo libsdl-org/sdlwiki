@@ -8,7 +8,7 @@ A structure that describes the audio output format. It contains a callback that 
 
 
 == Data Fields ==
-<<Color2(green,added '''padding''' value - seems to be new)>>
+<<Color2(green,added '''padding''' value - seems to be new; should SDL_Audio<code></code>Callback not be a link because there won't be a page?)>>
 {|
 |int
 |'''freq'''
@@ -57,7 +57,7 @@ The calculated values '''silence''' and '''size''' are calculated by [[SDL_OpenA
 
 Stereo samples are stored in a LRLRLR ordering.
 
-<<Color2(green,Is the following still necessary w/ the creation of an SDL_Audio<code></code>Callback page? Should we just reference the page above or change this to an include?  How much of this now needs to change?)>>
+<<Color2(green,No page for SDL_Audio<code></code>Callback right? Is this sufficient?)>>
 <span id="callback"></span> '''callback''' is of the form:
 ```c++
 ##alt 1st line from header rev 5387?
