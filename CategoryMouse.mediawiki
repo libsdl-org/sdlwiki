@@ -5,7 +5,7 @@
 
 == Mouse Support (SDL_mouse.h) ==
 
-<<FullSearchCached(category:CategoryMouse)>>
+<<FullSearch(category:CategoryMouse)>>
 
 ----
 CategoryCategory
