@@ -1,0 +1,78 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_CreateCursor =
+Use this function to create a cursor for the currently selected mouse, using the specified bitmap data and mask (in MSB format).
+
+
+== Syntax ==
+```c++
+SDL_Cursor* SDL_CreateCursor(const Uint8* data,
+                             const Uint8* mask,
+                             int          w,
+                             int          h,
+                             int          hot_x,
+                             int          hot_y)
+```
+
+== Function Parameters ==
+{|
+|'''data'''
+|the first part of the cursor color information; see [[#Remarks|Remarks]] for details
+|-
+|'''mask'''
+|the second part of the cursor color information; see [[#Remarks|Remarks]] for details
+|-
+|'''w'''
+|the width of the cursor; see [[#Remarks|Remarks]] for details
+|-
+|'''h'''
+|the height of the cursor ^same restrictions?^
+|-
+|'''hot_x'''
+|description
+|-
+|'''hot_y'''
+|description
+|}
+
+== Return Value ==
+A pointer to an [[SDL_Cursor]] structure filled with the cursor information. ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The cursor width ^( '''w''' )^ must be a multiple of 8 bits.
+
+The cursor is created in black and white according to the following:
+{|
+|<:> '''data'''
+|<:> '''mask'''
+|<:> Resulting Pixel on Screen
+|-
+|<:> 0
+|<:> 1
+|<:> White
+|-
+|<:> 1
+|<:> 1
+|<:> Black
+|-
+|<:> 0
+|<:> 0
+|<:> Transparent
+|-
+|<:> 1
+|<:> 0
+|<:> Inverted color if possible, black if not.
+|}
+
+== Related Functions ==
+:[[SDL_FreeCursor]]
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
