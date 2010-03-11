@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetRelativeMouseState =
+Use this function to retrieve the state of the specified mouse.
+
+
+== Syntax ==
+```c++
+Uint8 SDL_GetRelativeMouseState(int  index,
+                                int* x,
+                                int* y)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the specified mouse
+|-
+|'''x'''
+|a pointer filled with the relative x coordinate of the mouse
+|-
+|'''y'''
+|a pointer filled with the relative y coordinate of the mouse
+|}
+
+== Return Value ==
+Returns an 8 bit button bitmask of the relative button state. ??? 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros, and '''x''' and '''y''' are set to the mouse deltas since the last call to [[SDL_GetRelativeMouseState]]().
+
+== Related Functions ==
+:[[SDL_GetMouseState]] ??? Because it's essentially the same a different way
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
