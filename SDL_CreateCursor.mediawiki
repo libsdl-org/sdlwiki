@@ -28,13 +28,13 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 |the width of the cursor; see [[#Remarks|Remarks]] for details
 |-
 |'''h'''
-|the height of the cursor ^same restrictions?^
+|the height of the cursor ''(same restrictions?)''
 |-
 |'''hot_x'''
-|description
+|''description''
 |-
 |'''hot_y'''
-|description
+|''description''
 |}
 
 == Return Value ==
@@ -46,7 +46,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The cursor width ^( '''w''' )^ must be a multiple of 8 bits.
+The cursor width ''('''w''')'' must be a multiple of 8 bits.
 
 The cursor is created in black and white according to the following:
 {|
