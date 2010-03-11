@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetRelativeMouseMode =
+Use this function to query whether relative mouse mode is enabled for the specified mouse.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_GetRelativeMouseMode(int index)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the specified mouse
+|}
+
+== Return Value ==
+Returns SDL_TRUE if relative mode is enabled, or SDL_False if it is disabled.
+<<Color2(green,Is this right? What does it do if relative mode is not supported?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetRelativeMouseMode]]
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
