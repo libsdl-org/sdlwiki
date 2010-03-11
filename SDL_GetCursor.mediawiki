@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetCursor =
+Use this function to return the active cursor for the currently selected mouse.
+
+
+== Syntax ==
+```c++
+SDL_Cursor* SDL_GetCursor(void)
+```
+
+== Return Value ==
+Returns the active SDL_Cursor for the currently selected mouse.  ''<<Color2(green,Fills a pointer with the active SDL_Cursor.)>>''
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetCursor]]???
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
