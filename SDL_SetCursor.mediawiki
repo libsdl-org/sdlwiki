@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetCursor =
+Use this function to set the active cursor for the currently selected mouse.
+
+
+== Syntax ==
+```c++
+void SDL_SetCursor(SDL_Cursor* cursor)
+```
+
+== Function Parameters ==
+{|
+|'''cursor'''
+|the SDL_Cursor to apply ''(should this be linked to remarks?)''
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The cursor must have been created for the selected mouse.
+
+== Related Functions ==
+:[[SDL_CreateCursor]]???
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
