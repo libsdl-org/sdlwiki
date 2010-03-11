@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetRelativeMouseMode =
+Use this function to set relative mouse mode for the specified mouse.
+
+
+== Syntax ==
+```c++
+int SDL_SetRelativeMouseMode(int      index,
+                             SDL_bool enabled)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the specified mouse
+|-
+|'''enabled'''
+|whether or not to enable relative mode^; SDL_TRUE for enabled???^
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if relative mode is not supported; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+While the mouse is in relative mode, the cursor is hidden, and the driver will try to report continuous motion in the current window. Only relative motion events will be delivered, the mouse position will not change.
+
+This function will flush any pending mouse motion.
+
+== Related Functions ==
+:[[SDL_GetRelativeMouseMode]]
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
