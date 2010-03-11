@@ -33,6 +33,6 @@ You can add your code example here
 The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros, and '''x''' and '''y''' are set to the mouse cursor position relative to the focus window for the currently selected mouse. You can pass NULL for either '''x''' or '''y'''. 
 
 == Related Functions ==
-:[[SDL_GetRelativeMouseState]]??? because it does essentially the same thing differently?
+:[[SDL_GetRelativeMouseState]]??? ''because it does essentially the same thing differently''
 ----
 [[CategoryAPI]], [[CategoryMouse]]
