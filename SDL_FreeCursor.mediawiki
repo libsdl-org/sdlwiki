@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FreeCursor =
+Use this function to ''insert short function description here''.
+
+
+== Syntax ==
+```c++
+value SDL_FunctionName(param)
+```
+
+== Function Parameters ==
+{|
+|'''param'''
+|description
+|}
+
+== Return Value ==
+''Remove this section if there is no return value.
+Many SDL functions use this standard text (remove if not applicable):''
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
