@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ShowCursor =
+Use this function to toggle whether or not the cursor is shown for the currently selected mouse.
+
+
+== Syntax ==
+```c++
+int SDL_ShowCursor(int toggle)
+```
+
+== Function Parameters ==
+{|
+|'''toggle'''
+|1 to show the cursor, 0 to hide it, -1 to query the current state
+|}
+
+== Return Value ==
+1 if the cursor is shown, or 0 if the cursor is hidden, <<Color2(green, or a negative error code on failure; call [[SDL_GetError]]() for more information)>>.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
