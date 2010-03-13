@@ -3,24 +3,19 @@
 '''DRAFT'''
 
 = SDL_FreeCursor =
-Use this function to ''insert short function description here''.
+Use this function to free a cursor created with [[SDL_CreateCursor]]().
 
 
 == Syntax ==
 ```c++
-value SDL_FunctionName(param)
+void SDL_FreeCursor(SDL_Cursor* cursor)
 ```
 
 == Function Parameters ==
 {|
-|'''param'''
-|description
+|'''cursor'''
+|the SDL_Cursor to free
 |}
-
-== Return Value ==
-''Remove this section if there is no return value.
-Many SDL functions use this standard text (remove if not applicable):''
-Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -31,7 +26,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_CreateCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryMouse]]
