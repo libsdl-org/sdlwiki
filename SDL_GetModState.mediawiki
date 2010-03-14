@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetModState =
+Use this function to get the current key modifier state for the selected keyboard.
+
+
+== Syntax ==
+```c++
+SDLMod SDL_GetModState(void)
+```
+
+== Return Value ==
+The current key modifier state for the selected keyboard. ???  <<Color2(green,Is there a list of modifier states that should be included here like On and Off etc.?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
