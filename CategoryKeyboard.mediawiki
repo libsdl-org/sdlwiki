@@ -1,0 +1,11 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+== Keyboard Support (SDL_keyboard.h) ==
+
+<<FullSearch(category:CategoryKeyboard)>>
+
+----
+CategoryCategory
