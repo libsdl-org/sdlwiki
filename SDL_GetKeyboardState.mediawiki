@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetKeyboardState =
+Use this function to get a snapshot of the current state of the selected keyboard.
+
+
+== Syntax ==
+```c++
+Uint8* SDL_GetKeyboardState(int* numkeys)
+```
+
+== Function Parameters ==
+{|
+|'''numkeys'''
+|if non-NULL, receives the length of the returned array
+|}
+
+== Return Value ==
+An array of key states. Indexes into this array are obtained by using SDL_scancode values.
+
+== Code Examples ==
+<<Color2(green,Is this entered correctly? Does the \code and \endcode go in or is that doxygen markup in the header?)>>
+```c++
+Uint8 *state = SDL_GetKeyboardState(NULL);
+if ( state[SDL_SCANCODE_RETURN] ) {
+    printf("<RETURN> is pressed.\n");
+}
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
