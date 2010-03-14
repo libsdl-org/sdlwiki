@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetModState =
+Use this function to set the current key modifier state for the selected keyboard.
+
+
+== Syntax ==
+```c++
+void SDL_SetModState(SDLMod modstate)
+```
+
+== Function Parameters ==
+{|
+|'''modstate'''
+|the desired state of the key modifier for the current keyboard
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetModState]]
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
