@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetTextInputRect =
+Use this function to set the rectangle used to type Unicode text inputs.
+
+
+== Syntax ==
+```c++
+void SDL_SetTextInputRect(SDL_Rect* rect)
+```
+
+== Function Parameters ==
+{|
+|'''rect'''
+|a pointer to the [[SDL_Rect]] to use
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_StartTextInput]]
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
