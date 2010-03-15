@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetKeyName =
+Use this function to get a human-readable name for a key.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetKeyName(SDLKey key)
+```
+
+== Function Parameters ==
+{|
+|'''key'''
+|the desired SDLKey to query ???
+|}
+
+== Return Value ==
+A pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string ("").  <<Color2(green,Should key here be bold?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+See SDL_scancode for details. ??? <<Color2(green,There is no info to link this to a page unless it links to SDL_keysym)>>
+
+== Related Functions ==
+:[[SDL_GetKeyFromScancode]]
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
