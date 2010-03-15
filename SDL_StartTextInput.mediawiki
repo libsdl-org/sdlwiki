@@ -1,0 +1,27 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_StartTextInput =
+Use this function to start accepting Unicode text input events.
+
+
+== Syntax ==
+```c++
+void SDL_StartTextInput(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetTextInputRect]]
+:[[SDL_StopTextInput]]
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
