@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickOpen =
+Use this function to open a joystick for use.
+
+
+== Syntax ==
+```c++
+SDL_Joystick* SDL_JoystickOpen(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|the index of the joystick to query
+|}
+
+== Return Value ==
+A joystick identifier, or NULL if an error occurred.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.  <<Color2(green,Should index be changed to '''device_index''' or leave it as is per the header? Does this function effectively set the index number of each joystick device?)>>
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
