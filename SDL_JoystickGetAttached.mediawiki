@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickOpened =
+Use this function to ^get the status of a specified joystick^.
+
+
+== Syntax ==
+```c++
+int SDL_JoystickOpened(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|the index of the joystick to query
+|}
+
+== Return Value ==
+Returns 1 if the joystick has been opened, 0 if it has not, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
