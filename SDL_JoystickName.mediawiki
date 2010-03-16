@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickName =
+Use this function to get the implementation dependent name of a joystick.
+
+
+== Syntax ==
+```c++
+const char* SDL_JoystickName(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|the index of the joystick to query
+|}
+
+== Return Value ==
+The name of the selected joystick.  If no name can be found, this function returns NULL.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This can be called before any joysticks are opened. 
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
