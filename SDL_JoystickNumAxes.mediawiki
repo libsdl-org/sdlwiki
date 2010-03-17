@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickNumAxes =
+Use this function to get the number of general axis controls on a joystick.
+
+
+== Syntax ==
+```c++
+int SDL_JoystickNumAxes(SDL_Joystick* joystick)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|a pointer to a structure containing joystick information ???
+|}
+
+== Return Value ==
+Returns the ^number of axes^ on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.  <<Color2(green,Is this the number of axes like x y z or the number of pads or sticks that control movement in the 3 axes like a game pad might have two joysticks and a thumb pad?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
