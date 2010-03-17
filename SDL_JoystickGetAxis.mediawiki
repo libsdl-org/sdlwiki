@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickGetAxis =
+Use this function to get the current state of an axis control on a joystick.
+
+
+== Syntax ==
+```c++
+Sint16 SDL_JoystickGetAxis(SDL_Joystick* joystick,
+                           int           axis)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|a pointer to a structure containing joystick information ???
+|-
+|'''axis'''
+|the axis indices^;^ start^s^ at index 0
+|}
+
+== Return Value ==
+The state is a value ranging from -32768 to 32767. <<Color2(green,Is this the RV or a Remark?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
