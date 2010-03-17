@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickUpdate =
+Use this function to update the current state of the open joysticks.
+
+
+== Syntax ==
+```c++
+void SDL_JoystickUpdate(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is called automatically by the event loop if any joystick events are enabled.
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
