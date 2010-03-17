@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickNumHats =
+Use this function to get the number of POV hats on a joystick.
+
+
+== Syntax ==
+```c++
+int SDL_JoystickNumHats(SDL_Joystick* joystick)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|a pointer to a structure containing joystick information ???
+|}
+
+== Return Value ==
+Returns ^the number of POV hats^ on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
