@@ -1,0 +1,97 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticConstant =
+A structure that contains a template for a Constant effect.
+
+
+== Data Fields ==
+<<Color2(green,Not sure how to format the section titles. No other structs have this kind of separation. There are enums w/ separations - we used left-justified bold for the section titles in that case but there is no other bold in the table...)>>
+{|
+|
+|
+|<(>'''Header'''
+|-
+|Uint16
+|'''type'''
+|SDL_HAPTIC_CONSTANT
+|-
+|SDL_HapticDirection
+|'''direction'''
+|direction of the effect
+|-
+|
+|
+|<(>''Replay''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect
+|-
+|
+|
+|<(>'''''Trigger'''''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after button
+|-
+|
+|
+|<(>'''''Constant'''''
+|-
+|Sint16
+|'''level'''
+|strength of the constant effect
+|-
+|
+|
+|<(>'''''Envelope'''''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+,,The,, ^This^ struct^ure^ is exclusive to the SDL_HAPTIC_CONSTANT effect.
+
+A constant effect applies a constant force <to the joystick< in the specified direction.
+
+== Related Enumerations ==
+:[[SDL_EnumerationRemoveSectionIfEmpty]]
+
+== Related Structures ==
+:[[SDL_StructureRemoveSectionIfEmpty]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]]
