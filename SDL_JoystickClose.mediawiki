@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickClose =
+Use this function to close a joystick previously opened with [[SDL_JoystickOpen]]().
+
+
+== Syntax ==
+```c++
+void SDL_JoystickClose(SDL_Joystick* joystick)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|a pointer to a structure containing joystick information ???
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_JoystickOpen]]
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
