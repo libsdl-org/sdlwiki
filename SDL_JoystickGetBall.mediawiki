@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickGetBall =
+Use this function to get the ball axis change since the last poll.
+
+
+== Syntax ==
+```c++
+int SDL_JoystickGetBall(SDL_Joystick* joystick,
+                        int           ball,
+                        int*          dx,
+                        int*          dy)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|a pointer to a structure containing joystick information ???
+|-
+|'''ball'''
+|the ball ,,indices,, ^index;^ start^s^ at index 0
+|-
+|'''dx'''
+|the difference in the x axis since the last poll
+|-
+|'''dy'''
+|the difference in the y axis since the last poll
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 if you passed it invalid parameters; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
