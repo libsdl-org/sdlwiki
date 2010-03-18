@@ -29,6 +29,7 @@ You can add your code example here
 The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.  <<Color2(green,Should index be changed to '''device_index''' or leave it as is per the header? Does this function effectively set the index number of each joystick device?)>>
 
 == Related Functions ==
+:[[SDL_JoystickClose]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
