@@ -1,0 +1,11 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+== Force Feedback Support (SDL_haptic.h) ==
+
+<<FullSearch(category:CategoryForceFeedback)>>
+
+----
+CategoryCategory
