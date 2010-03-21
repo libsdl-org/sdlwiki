@@ -120,6 +120,8 @@ If '''type''' is ::SDL_HAPTIC_SPHERICAL, direction is encoded by two rotations. 
 |Degrees towards (0, 0, 1) (device needs at least 3 axes)
 |}
 
+== Related Structures ==
+:[[SDL_HapticPeriodic]]
 
 == Related Functions ==
 :[[SDL_HapticNumAxes]]
