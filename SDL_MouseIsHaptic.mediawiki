@@ -1,0 +1,31 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MouseIsHaptic =
+Use this function to ,,get,, ^determine/find/query^ whether or not the current mouse has haptic capabilities.
+
+
+== Syntax ==
+```c++
+int SDL_MouseIsHaptic(void)
+```
+
+<<Color2(green,'''Should this be SDL_Bool instead of int given the RVs?  Are the RVs wrong?''')>>
+
+== Return Value ==
+Returns SDL_TRUE if the mouse is haptic, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticOpenFromMouse]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
