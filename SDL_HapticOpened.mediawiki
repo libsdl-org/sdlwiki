@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticOpened =
+Use this function to check if the haptic device at ^the designated^ index has been opened.
+
+
+== Syntax ==
+```c++
+int SDL_HapticOpened(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|^the^ index ,,to check to see if it has been opened,, ^ of the device to query^
+|}
+
+== Return Value ==
+Returns 1 if it has been opened, 0 if it hasn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticIndex]]
+:[[SDL_HapticOpen]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
