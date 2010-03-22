@@ -1,0 +1,185 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticPeriodic =
+A structure that contains a template for a Periodic effect.
+
+
+== Data Fields ==
+<<Color2(green,Section title formats should be adjusted to match [[SDL_HapticConstant]] once a final format is decided.)>>
+{|
+|
+|
+|'''''Header'''''
+|-
+|Uint16
+|'''type'''
+|^the shape of the waves^ ,,one of the effects handled by this structure,,; see [[#type|Remarks]] for details
+|-
+|[[SDL_HapticDirection]]
+|'''direction'''
+|direction of the effect ^(relative to the user)^
+|-
+|
+|
+|'''''Replay'''''
+|-
+|Uint32
+|'''length'''
+|duration of the effect ^(is this the same as # of cycles? always in ms?)^
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect ^(ms?)^
+|-
+|
+|
+|'''''Trigger'''''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after button ^(delay between individual waves or before the effect can be used again?)^ ^(ms?)^
+|-
+|
+|
+|'''''Periodic'''''
+|-
+|Uint16
+|'''period'''
+|period of the wave ^(like frequency, duration from start to start?)^ ^(ms?)^
+|-
+|Sint16
+|'''magnitude'''
+|peak value ^(like amplitude?)^ ^(units?)^
+|-
+|Sint16
+|'''offset'''
+|mean value of the wave ^(what aspect of the wave is being offset from what other marker? Is this the distance between waves?)^
+|-
+|Uint16
+|'''phase'''
+|horizontal shift given by ''hundredths'' of a cycle; see [[#phase|Remarks]] for details ^(what is being shifted? Is this what creates the flat tops? What is the definition of a cycle, 1 sec?)^
+|-
+|
+|
+|'''''Envelope'''''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack ^(ms?)^
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack ^(units?)^
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade ^(ms?)^
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade ^(units?)^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<<Color2(green,There are several typing and grammatical errors in this section of the header. May not require fixing but probably should at least be looked at. Changes from header indicated in italics below.)>>
+<span id="type"></span>A periodic effect consists ''of'' a wave-shaped effect that repeats itself over time. The type determines the shape of the wave and the ^other^ parameters determine the dimensions of the wave. 
+```
+button         period
+press          |     |
+  ||      __    __    __    __    __    _
+  ||     |  |  |  |  |  |  |  |  |  |   magnitude
+  \/     |  |__|  |__|  |__|  |__|  |   _
+    -----
+      |            offset?
+    delay          phase?
+
+-------------------------------------
+              length
+===================================================
+                      interval
+```
+<<Color2(green,Does this structure warrant a simple .bmp diagram? Something that can use colors and such?)>>
+
+'''type''' may be one of the following:
+{|
+|SDL_HAPTIC_SINE
+|-
+|SDL_HAPTIC_SQUARE
+|-
+|SDL_HAPTIC_TRIANGLE
+|-
+|SDL_HAPTIC_SAWTOOTHUP
+|-
+|SDL_HAPTIC_SAWTOOTHDOWN
+|}
+
+* Examples:
+ ```
+SDL_HAPTIC_SINE
+  __      __      __      __
+ /  \    /  \    /  \    /
+/    \__/    \__/    \__/
+
+SDL_HAPTIC_SQUARE
+ __    __    __    __    __
+|  |  |  |  |  |  |  |  |  |
+|  |__|  |__|  |__|  |__|  |
+
+SDL_HAPTIC_TRIANGLE
+  /\    /\    /\    /\    /\
+ /  \  /  \  /  \  /  \  /
+/    \/    \/    \/    \/
+
+SDL_HAPTIC_SAWTOOTHUP
+  /|  /|  /|  /|  /|  /|  /|
+ / | / | / | / | / | / | / |
+/  |/  |/  |/  |/  |/  |/  |
+
+SDL_HAPTIC_SAWTOOTHDOWN
+\  |\  |\  |\  |\  |\  |\  |
+ \ | \ | \ | \ | \ | \ | \ |
+  \|  \|  \|  \|  \|  \|  \| 
+```
+<<Color2(green,For some reason when these are interpreted in the code box the angle of the slashes is changed and they look funny.  Don't know how to fix that.)>>
+
+<span id="phase"></span>'''phase''' is given by ''hundredths'' of a ''cycle,'' meaning that giving the phase a value of 9000 will displace it 25% of it's period. Here are sample values:
+{|
+|0
+|No phase displacement
+|-
+|9000
+|Displaced 25% of it's period
+|-
+|18000
+|Displaced 50% of it's period
+|-
+|27000
+|Displaced 75% of it's period
+|-
+|36000
+|Displaced 100% of it's period, same as 0, but 0 is ''preferred''
+|}
+<<Color2(green,This is not at all clear unless it is a common thing that a programmer would know.  Is phase describing the duration of an individual wave from start to finish or the duration from the start of one wave to the start of the next?
+
+== Related Enumerations ==
+:[[SDL_EnumerationRemoveSectionIfEmpty]]
+
+== Related Structures ==
+:[[SDL_HapticDirection]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]]
