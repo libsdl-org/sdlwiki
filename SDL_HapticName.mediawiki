@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticName =
+Use this function to get the implementation dependent name of a Haptic device.
+
+
+== Syntax ==
+```c++
+const char* SDL_HapticName(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|index of the device to get ,,it's name,, ^the name of^ / ^to query^
+|}
+
+== Return Value ==
+Returns the name of the device or NULL on error.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This can be called before any joysticks are opened.  If no name can be found, this function returns NULL.
+
+== Related Functions ==
+:[[SDL_NumHaptics]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
