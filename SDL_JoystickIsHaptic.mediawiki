@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoystickIsHaptic =
+Use this function to check to see if a joystick has haptic features.
+
+
+== Syntax ==
+```c++
+int SDL_JoystickIsHaptic(SDL_Joystick* joystick)
+```
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|^a pointer to the^ joystick to test for haptic capabilities
+|}
+
+== Return Value ==
+Returns 1 if the joystick is haptic, 0 if it isn't, or -1 if an error ''occurred''; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticOpenFromJoystick]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
