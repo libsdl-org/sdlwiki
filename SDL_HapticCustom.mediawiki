@@ -1,0 +1,102 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticCustom =
+A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
+
+
+== Data Fields ==
+{|
+|
+|
+|'''''Header'''''
+|-
+|Unit16
+|'''type'''
+|SDL_HAPTIC_CUSTOM
+|-
+|[[SDL_HapticDirection]]
+|'''direction'''
+|direction of the effect ^(relative to the user)^
+|-
+|
+|
+|'''''Replay'''''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect
+|-
+|
+|
+|'''''Trigger'''''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after button
+|-
+|
+|
+|'''''Custom'''''
+|-
+|Uint8
+|'''channels'''
+|axes to use, minimum of one; see [[#Remarks|Remarks]] for details
+|-
+|Uint16
+|'''period'''
+|sample periods
+|-
+|Uint16
+|'''samples'''
+|,,amount,, ^number^ of samples
+|-
+|Uint16*
+|'''data'''
+|should contain channels*samples items; see [[#Remarks|Remarks]] for details
+|-
+|
+|
+|'''''Envelope'''''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+A custom force feedback effect is much like a periodic effect, where the application can define ''its'' exact shape. You will have to allocate the data yourself.
+<<Color2(green,I think this should be a new paragraph or moved down to connect to the next one.)>> '''data''' should consist of channels * samples Uint16 samples. <<Color2(green,This is repeated above. Is there a better way to say this and still be correct and readable to programmers but also to people who speak english?)>>
+
+If '''channels''' is ''1'', the effect is rotated using the defined direction. Otherwise it uses the samples in '''data''' for the different axes. 
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
