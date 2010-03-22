@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticClose =
+Use this function to close a __H__aptic device previously opened with [[SDL_HapticOpen]]().
+
+
+== Syntax ==
+```c++
+void SDL_HapticClose(SDL_Haptic* haptic)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^the^ haptic device to close
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticOpen]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
