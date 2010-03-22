@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticNumAxes =
+Use this function to get the number of haptic axes the device has.
+
+
+== Syntax ==
+```c++
+int SDL_HapticNumAxes(SDL_Haptic* haptic)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|the haptic device to query ^for an axis count^
+|}
+
+== Return Value ==
+Returns the number of axes on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+:[[SDL_HapticDirection]]???
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
