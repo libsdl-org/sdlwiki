@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticOpen =
+Use this function to open a __H__aptic device for usage.
+
+
+== Syntax ==
+```c++
+SDL_Haptic* SDL_HapticOpen(int device_index)
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|index of the device to open
+|}
+
+== Return Value ==
+The device identifier, or NULL on error.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The index passed as an argument refers to the N'th __H__aptic device on this system.
+
+When opening a __h__aptic device, it's gain will be set to maximum and autocenter will be disabled. To modify these values use [[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
+
+== Related Functions ==
+:[[SDL_HapticClose]]
+:[[SDL_HapticIndex]]
+:[[SDL_HapticOpenFromJoystick]]
+:[[SDL_HapticOpenFromMouse]]
+:[[SDL_HapticPause]]
+:[[SDL_HapticSetAutocenter]]
+:[[SDL_HapticSetGain]]
+:[[SDL_HapticStopAll]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
