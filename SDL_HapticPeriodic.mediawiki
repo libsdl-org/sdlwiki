@@ -172,14 +172,10 @@ SDL_HAPTIC_SAWTOOTHDOWN
 |}
 <<Color2(green,This is not at all clear unless it is a common thing that a programmer would know.  Is phase describing the duration of an individual wave from start to finish or the duration from the start of one wave to the start of the next?
 
-== Related Enumerations ==
-:[[SDL_EnumerationRemoveSectionIfEmpty]]
-
 == Related Structures ==
 :[[SDL_HapticDirection]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
 
 ----
 [[CategoryStruct]]
