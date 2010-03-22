@@ -1,0 +1,96 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticRamp =
+A structure that contains a template for a Ramp effect.
+
+
+== Data Fields ==
+{|
+|
+|
+|''Header''
+|-
+|Uint16
+|'''type'''
+|SDL_HAPTIC_RAMP
+|-
+|[[SDL_HapticDirection]]
+|'''direction'''
+|direction of the effect
+|-
+|
+|
+|''Replay''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect
+|-
+|
+|
+|''Trigger''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after button
+|-
+|
+|
+|''Ramp''
+|-
+|Sint16
+|'''start'''
+|beginning strength level
+|-
+|Sint16
+|'''end'''
+|ending strength level
+|-
+|
+|
+|''Envelope''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This struct^ure^ is exclusively for the SDL_HAPTIC_RAMP effect. 
+
+The ramp effect starts at '''start''' strength and ends at '''end''' strength. It augments in linear fashion. If you use attack and fade with a ramp ''the'' effects get added to the ramp effect making the effect become quadratic instead of linear.
+
+== Related Structures ==
+:[[SDL_HapticDirection]]
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
