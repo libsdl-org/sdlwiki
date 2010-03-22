@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticQuery =
+Use this function to get the haptic devices ^device's?^ supported features in bitwise matter.
+
+
+== Syntax ==
+```c++
+unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
+```
+<<Color2(green,Should that say Uint8 or Uint16 etc instead of "unsigned int"?)>>
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|the haptic device to query
+|}
+
+== Return Value ==
+Returns haptic features in bitwise manner (OR'd), or a negative error code on failure; call [[SDL_GetError]]() for more information. <<Color2(green,It seems there is probably a more clear way to describe this but I don't think I have enough info to make a specific suggestion on this one.)>>
+
+== Code Examples ==
+```c++
+Example:
+\code
+if (SDL_HapticQueryEffects(haptic) & SDL_HAPTIC_CONSTANT) {
+printf("We have constant haptic effect!");
+}
+\endcode 
+```
+<<Color2(green,Should \code and \endcode be removed from the example? Should the word Example also be removed?)>>
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticEffectSupported]]
+:[[SDL_HapticNumEffects]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
