@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticDestroyEffect =
+Use this function to destroy a haptic effect on the device.
+
+
+== Syntax ==
+```c++
+void SDL_HapticDestroyEffect(SDL_Haptic* haptic,
+                             int         effect)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the haptic^ device to destroy the effect on
+|-
+|'''effect'''
+|^ID^ ,,identifier,, of the ^haptic^ effect to destroy
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This will stop the effect if it's running. Effects are automatically destroyed when the device is closed.
+
+== Related Functions ==
+:[[SDL_HapticNewEffect]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
