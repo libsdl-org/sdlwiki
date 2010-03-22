@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticUpdateEffect =
+Use this function to update the properties of an effect.
+
+
+== Syntax ==
+```c++
+int SDL_HapticUpdateEffect(SDL_Haptic*       haptic,
+                           int               effect,
+                           SDL_HapticEffect* data)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the^ haptic device that has the effect
+|-
+|'''effect'''
+|^the index of the^ effect to update
+|-
+|'''data'''
+|^a pointer to the^ new effect properties to use
+|}
+
+== Return Value ==
+Returns the ID of the effect on success, or -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Can be used dynamically, although ''behavior'' when dynamically changing direction may be strange. Specifically the effect may re-upload itself and start playing from the start. You ^also^ cannot change the type ,,either,, when running [[SDL_HapticUpdateEffect]]().
+
+== Related Functions ==
+:[[SDL_HapticDestroyEffect]]
+:[[SDL_HapticNewEffect]]
+:[[SDL_HapticRunEffect]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
