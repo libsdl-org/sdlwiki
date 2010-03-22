@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticRunEffect =
+Use this function to run the haptic effect on ''its associated'' haptic device.
+
+
+== Syntax ==
+```c++
+int SDL_HapticRunEffect(SDL_Haptic* haptic,
+                        int         effect,
+                        Uint32      iterations)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the^ haptic device to run the effect on
+|-
+|'''effect'''
+|^ID^ ,,identifier,, of the haptic effect to run
+|-
+|'''iterations'''
+|^the^ number of iterations to run the effect; use SDL_HAPTIC_INFINITY for infinity
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+If iterations are SDL_HAPTIC_INFINITY, it'll run the effect over and over repeating the envelope (attack and fade) every time. If you only want the effect to last forever, set SDL_HAPTIC_INFINITY in the effect's length parameter. <<Color2(green,This doesn't really make sense but I don't have enough info to suggest a fix.)>>
+
+== Related Functions ==
+:[[SDL_HapticDestroyEffect]]
+:[[SDL_HapticGetEffectStatus]]
+:[[SDL_HapticStopEffect]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
