@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticNewEffect =
+Use this function to create a new haptic effect on ,,the,, ^a specified^ device.
+
+
+== Syntax ==
+```c++
+int SDL_HapticNewEffect(SDL_Haptic*       haptic,
+                        SDL_HapticEffect* effect)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the^ haptic device to create the effect on
+|-
+|'''effect'''
+|^a pointer to the^ properties of the effect to create
+|}
+
+== Return Value ==
+Returns the ID of the effect on success, or -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticDestroyEffect]]
+:[[SDL_HapticRunEffect]]
+:[[SDL_HapticUpdateEffect]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
