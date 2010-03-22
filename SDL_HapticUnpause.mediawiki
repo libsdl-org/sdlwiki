@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticUnpause =
+Use this function to unpause a haptic device.
+
+
+== Syntax ==
+```c++
+int SDL_HapticUnpause(SDL_Haptic* haptic)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the^ haptic device to unpause
+|}
+<<Color2(green,Line 1097 - the header says pause instead of unpause)>>
+
+== Return Value ==
+Returns 0 on success, or -1 on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Call to unpause after [[SDL_HapticPause]]().
+
+== Related Functions ==
+:[[SDL_HapticPause]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
