@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HapticStopAll =
+Use this function to stop all the currently playing effects on a haptic device.
+
+
+== Syntax ==
+```c++
+int SDL_HapticStopAll(SDL_Haptic* haptic)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|^a pointer to the^ haptic device to stop
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
