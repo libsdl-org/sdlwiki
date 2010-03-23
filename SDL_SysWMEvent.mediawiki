@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SysWMEvent =
+A structure that contains a video driver dependent system event (event.syswm.*) .
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_SYSWMEVENT
+|-
+|SDL_SysWMmsg*
+|'''msg'''
+|driver dependent data, defined in SDL_syswm.h
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EventMask]]???
+:[[SDL_EventType]]???
+
+== Related Structures ==
+:[[SDL_SysWMmsg]]???
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
