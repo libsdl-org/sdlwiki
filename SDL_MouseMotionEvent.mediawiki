@@ -32,9 +32,9 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |'''y'''
 |y coordinate, relative to window
 |-
-|int
-|'''z'''
-|z coordinate, for future use
+|<style="color: #808080;">int
+|<style="color: #808080;">'''z'''
+|<style="color: #808080;">z coordinate, for future use
 |-
 |int
 |'''pressure'''
@@ -48,31 +48,30 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |'''pressure_min'''
 |minimum value of the pressure reported by the device
 |-
-|int
-|'''rotation'''
-|for future use
+|<style="color: #808080;">int
+|<style="color: #808080;">'''rotation'''
+|<style="color: #808080;">for future use
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''tilt_x'''
+|<style="color: #808080;">for future use
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''tilt_y'''
+|<style="color: #808080;">for future use
 |-
 |int
-|'''tilt_x'''
-|for future use
+|'''cursor'''
+|the cursor being used in the event
 |-
 |int
-|'''tilt_y'''
-|for future use
+|'''xrel'''
+|the relative motion in the X direction
 |-
 |int
-|'''field'''
-|description
-|-
-|int
-|'''field'''
-|description
-|-
-|int
-|'''field'''
-|description
+|'''yrel'''
+|the relative motion in the Y direction
 |}
-
 
 == Code Examples ==
 ```c++
@@ -82,14 +81,7 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Enumerations ==
-:[[SDL_EnumerationRemoveSectionIfEmpty]]
-
-== Related Structures ==
-:[[SDL_StructureRemoveSectionIfEmpty]]
-
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
 
 ----
 [[CategoryStruct]]
