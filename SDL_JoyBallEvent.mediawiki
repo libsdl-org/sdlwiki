@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoyBallEvent =
+A structure that contains joystick trackball motion event ,,structure,, ^information^ (event.jball.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_JOYBALLMOTION
+|-
+|Uint8
+|'''which'''
+|the joystick device index
+|-
+|Uint8
+|'''ball'''
+|the joystick trackball index
+|-
+|int
+|'''xrel'''
+|the relative motion in the x direction
+|-
+|int
+|'''yrel'''
+|the relative motion in the y direction
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
