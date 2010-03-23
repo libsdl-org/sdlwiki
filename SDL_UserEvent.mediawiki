@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_UserEvent =
+A structure that contains a user-defined event type (event.user.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_USEREVENT through SDL_NUMEVENTS-1
+|-
+|Uint32
+|'''windowID'''
+|the associated window, if any
+|-
+|int
+|'''code'''
+|user defined event code
+|-
+|void*
+|'''data1'''
+|user defined data pointer
+|-
+|void*
+|'''data2'''
+|user defined data pointer
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EventType]]???
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
