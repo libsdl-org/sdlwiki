@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MouseWheelEvent =
+A structure that contains mouse wheel event ,,structure,, ^information^ (event.wheel.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_MOUSEWHEEL
+|-
+|Uint32
+|'''windowID'''
+|the window with mouse focus, if any
+|-
+|Uint8
+|'''which'''
+|the mouse device index
+|-
+|int
+|'''x'''
+|the amount scrolled horizontally
+|-
+|int
+|'''y'''
+|the amount scrolled vertically
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
