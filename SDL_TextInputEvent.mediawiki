@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_TextInputEvent =
+A structure that contains keyboard text input event ,,structure,, ^information^ (event.text.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_TEXTINPUT
+|-
+|Uint32
+|'''windowID'''
+|the window with keyboard focus, if any
+|-
+|Uint8
+|'''which'''
+|the keyboard device index
+|-
+|char
+|'''text[SDL_TEXTINPUTEVENT_TEXT_SIZE]'''
+|the input text
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
