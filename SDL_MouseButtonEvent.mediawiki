@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MouseButtonEvent =
+A structure that contains mouse button event ,,structure,, ^information^ (event.button.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP
+|-
+|Uint32
+|'''windowID'''
+|the window with mouse focus, if any
+|-
+|Uint8
+|'''which'''
+|the mouse device index
+|-
+|Uint8
+|'''button'''
+|the mouse button index
+|-
+|Uint8
+|'''state'''
+|SDL_PRESSED or SDL_RELEASED
+|-
+|int
+|'''x'''
+|x coordinate, relative to window
+|-
+|int
+|'''y'''
+|y coordinate, relative to window
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
