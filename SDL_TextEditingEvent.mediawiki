@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_TextEditingEvent =
+A structure that contains keyboard text editing event ,,structure,, ^information^ (event.edit.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_TEXTEDITING
+|-
+|char
+|'''text[SDL_TEXTEDITINGEVENT_TEXT_SIZE]'''
+|the editing text
+|-
+|int
+|'''start'''
+|the start cursor of selected editing text
+|-
+|int
+|'''length'''
+|the length of selected editing text
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
