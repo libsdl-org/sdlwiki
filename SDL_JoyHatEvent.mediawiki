@@ -1,0 +1,59 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoyHatEvent =
+A structure that contains joystick hat position change event ,,structure,, ^information^ (event.jhat.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_JOYHATMOTION
+|-
+|Uint8
+|'''which'''
+|the joystick device index
+|-
+|Uint8
+|'''hat'''
+|the joystick hat index
+|-
+|Uint8
+|'''value'''
+|the hat position value; see [[#Remarks|Remarks]] for details
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+'''value''' may be any of the following:
+{|
+|SDL_HAT_LEFTUP
+|-
+|SDL_HAT_UP
+|-
+|SDL_HAT_RIGHTUP
+|-
+|SDL_HAT_LEFT
+|-
+|SDL_HAT_CENTERED
+|-
+|SDL_HAT_RIGHT
+|-
+|SDL_HAT_LEFTDOWN
+|-
+|SDL_HAT_DOWN
+|-
+|SDL_HAT_RIGHTDOWN
+|}
+Note that zero means the POV is centered. 
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
