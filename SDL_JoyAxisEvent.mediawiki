@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoyAxisEvent =
+A structure that contains joystick axis motion event ,,structure,, ^information^ (event.jaxis.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_JOYAXISMOTION
+|-
+|Uint8
+|'''which'''
+|the joystick device index
+|-
+|Uint8
+|'''axis'''
+|the joystick axis index
+|-
+|int
+|'''value'''
+|the axis value (range: -32768 to 32767)
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
