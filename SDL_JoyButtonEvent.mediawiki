@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_JoyButtonEvent =
+A structure that contains joystick button event ,,structure,, ^information^ (event.jbutton.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP
+|-
+|Uint8
+|'''which'''
+|the joystick device index
+|-
+|Uint8
+|'''button'''
+|the joystick button index
+|-
+|Uint8
+|'''state'''
+|SDL_PRESSED or SDL_RELEASED
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
