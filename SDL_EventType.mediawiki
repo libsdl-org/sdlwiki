@@ -2,78 +2,87 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_Enumeration =
+= SDL_EventType =
 An enumeration of the types of events that can be delivered.
 
 
 == Values ==
 {|
 |SDL_NOEVENT
-|Unused (do not remove)
+|unused (do not remove)
 |-
 |SDL_WINDOWEVENT
-|Window state change
+|window state change
 |-
 |SDL_KEYDOWN
-|Keys pressed
+|keys pressed
 |-
 |SDL_KEYUP
-|Keys released
+|keys released
 |-
 |SDL_TEXTEDITING
-|Keyboard text editing (composition)
+|keyboard text editing (composition)
 |-
 |SDL_TEXTINPUT
-|Keyboard text input
+|keyboard text input
 |-
 |SDL_MOUSEMOTION
-|Mouse moved
+|mouse moved
 |-
 |SDL_MOUSEBUTTONDOWN
-|Mouse button pressed
+|mouse button pressed
 |-
 |SDL_MOUSEBUTTONUP
-|Mouse button released
+|mouse button released
 |-
 |SDL_MOUSEWHEEL
-|Mouse wheel motion
+|mouse wheel motion
 |-
 |SDL_JOYAXISMOTION
-|Joystick axis motion
+|joystick axis motion
 |-
 |SDL_JOYBALLMOTION
-|Joystick trackball motion
+|joystick trackball motion
 |-
 |SDL_JOYHATMOTION
-|Joystick hat position change
+|joystick hat position change
 |-
 |SDL_JOYBUTTONDOWN
-|Joystick button pressed
+|joystick button pressed
 |-
 |SDL_JOYBUTTONUP
-|Joystick button released
+|joystick button released
 |-
 |SDL_QUIT
-|User-requested quit
+|user-requested quit
 |-
 |SDL_SYSWMEVENT
-|System specific event
+|system specific event
 |-
 |SDL_PROXIMITYIN
-|Proximity In event
+|proximity In event
 |-
 |SDL_PROXIMITYOUT
-|Proximity Out event
+|proximity Out event
 |-
 |SDL_EVENT_RESERVED1
-|Reserved for future use...
+|reserved for future use...
 |-
 |SDL_EVENT_RESERVED2
-|Reserved for future use...
+|reserved for future use...
 |-
 |SDL_EVENT_RESERVED3
-|Reserved for future use...
+|reserved for future use...
 |}
+
+<<Color2(green,Not sure what to do with this part of the enum. Does it belong here or not?)>>
+Events SDL_USEREVENT through SDL_MAXEVENTS-1 are for your use
+
+SDL_USEREVENT = 24,
+
+This last event is only for bounding internal arrays. It is the number of bits in the event mask datatype -- Uint32.
+
+SDL_NUMEVENTS = 32
 
 == Code Examples ==
 ```c++
@@ -84,25 +93,22 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Structures ==
-[[SDL_KeyboardEvent]]
-[[SDL_TextEditingEvent]]
-[[SDL_TextInputEvent]]
-[[SDL_MouseMotionEvent]]
-[[SDL_MouseButtonEvent]]
-[[SDL_MouseWheelEvent]]
-[[SDL_JoyAxisEvent]]
-[[SDL_JoyBallEvent]]
-[[SDL_JoyHatEvent]]
-[[SDL_JoyButtonEvent]]
-[[SDL_QuitEvent]]
-[[SDL_UserEvent]]
-[[SDL_SysWMEvent]]
-[[SDL_ProximityEvent]]
+: [[SDL_JoyAxisEvent]]
+: [[SDL_JoyBallEvent]]
+: [[SDL_JoyButtonEvent]]
+: [[SDL_JoyHatEvent]]
+: [[SDL_KeyboardEvent]]
+: [[SDL_MouseButtonEvent]]
+: [[SDL_MouseMotionEvent]]
+: [[SDL_MouseWheelEvent]]
+: [[SDL_ProximityEvent]]
+: [[SDL_QuitEvent]]
+: [[SDL_SysWMEvent]]
+: [[SDL_TextEditingEvent]]
+: [[SDL_TextInputEvent]]
+: [[SDL_UserEvent]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
 
-----
-[[CategoryEnum]]
 ----
 CategoryEnum
