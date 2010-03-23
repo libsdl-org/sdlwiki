@@ -1,0 +1,11 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+== Event Handling (SDL_events.h) ==
+
+<<FullSearch(category:CategoryEvents)>>
+
+----
+CategoryCategory
