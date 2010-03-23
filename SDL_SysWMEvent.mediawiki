@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If you want to use this event, you should include SDL_syswm.h.
 
 == Related Enumerations ==
 :[[SDL_EventMask]]???
