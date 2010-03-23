@@ -1,0 +1,95 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MouseMotionEvent =
+A structure that contains mouse motion event ,,structure,, ^information^ (event.motion.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_MOUSEMOTION
+|-
+|Uint32
+|'''windowID'''
+|the window with mouse focus, if any
+|-
+|Uint8
+|'''which'''
+|the mouse device index
+|-
+|Uint8
+|'''state'''
+|the current button state
+|-
+|int
+|'''x'''
+|x coordinate, relative to window
+|-
+|int
+|'''y'''
+|y coordinate, relative to window
+|-
+|int
+|'''z'''
+|z coordinate, for future use
+|-
+|int
+|'''pressure'''
+|pressure reported by tablets
+|-
+|int
+|'''pressure_max'''
+|maximum value of the pressure reported by the device
+|-
+|int
+|'''pressure_min'''
+|minimum value of the pressure reported by the device
+|-
+|int
+|'''rotation'''
+|for future use
+|-
+|int
+|'''tilt_x'''
+|for future use
+|-
+|int
+|'''tilt_y'''
+|for future use
+|-
+|int
+|'''field'''
+|description
+|-
+|int
+|'''field'''
+|description
+|-
+|int
+|'''field'''
+|description
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EnumerationRemoveSectionIfEmpty]]
+
+== Related Structures ==
+:[[SDL_StructureRemoveSectionIfEmpty]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]]
