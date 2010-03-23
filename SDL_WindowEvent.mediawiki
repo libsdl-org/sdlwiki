@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_WindowEvent =
+A structure that contains window state change event data (event.window.*).
+
+
+== Data Fields ==
+{|
+|Uint8
+|'''type'''
+|SDL_WINDOWEVENT
+|-
+|Uint32
+|'''windowID'''
+|the associated window
+|-
+|Uint8
+|'''event'''
+|[[SDL_WindowEventID]]
+|-
+|int
+|'''data1'''
+|event dependent data
+|-
+|int
+|'''data2'''
+|event dependent data
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EventType]]???
+:[[SDL_WindowEventID]]
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
