@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HasEvent =
+Use this function to check ,,to see if,, ^for^ certain event types ,,are,, in the event queue.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasEvent(Uint32 mask)
+```
+
+== Function Parameters ==
+{|
+|'''mask'''
+|^criteria by which to select events from the queue^
+|}
+
+== Return Value ==
+SDL_TRUE if events matching '''mask''' are present, or SDL_FALSE if events matching '''mask''' are not present. ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
