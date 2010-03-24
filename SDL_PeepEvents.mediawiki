@@ -49,9 +49,9 @@ You can add your code example here
 
 If '''action''' is SDL_ADDEVENT, up to '''numevents''' events will be added to the back of the event queue.
 
-If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of the event queue, matching mask, will be returned and will not be removed from the queue.
+If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will not be removed from the queue.
 
-If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, matching mask, will be returned and will be removed from the queue. 
+If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will be removed from the queue. 
 
 This function is thread-safe.
 
