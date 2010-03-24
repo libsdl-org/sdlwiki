@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_WaitEvent =
+Use this function to wait indefinitely for the next available event.
+
+
+== Syntax ==
+```c++
+int SDL_WaitEvent(SDL_Event* event)
+```
+
+== Function Parameters ==
+{|
+|'''event'''
+|if not NULL, the next event is removed from the queue and stored in that area 
+|}
+<<Color2(green, SDL_Poll<code></code>Event said 'stored in event' from another author. Is that more accurate?)>>
+
+== Return Value ==
+Returns 1, or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
