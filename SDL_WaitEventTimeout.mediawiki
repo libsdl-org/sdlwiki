@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_WaitEventTimeout =
+Use this function to wait until the specified timeout (in milliseconds) for the next available event.
+
+
+== Syntax ==
+```c++
+int SDL_WaitEventTimeout(SDL_Event* event,
+                         int        timeout)
+```
+
+== Function Parameters ==
+{|
+|'''event'''
+|if not NULL, the next event is removed from the queue and
+
+|}
+451 	* stored in that area||
+{|
+|'''timeout'''
+|description
+|}
+
+== Return Value ==
+''Remove this section if there is no return value.
+Many SDL functions use this standard text (remove if not applicable):''
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
