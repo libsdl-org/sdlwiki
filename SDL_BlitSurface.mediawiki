@@ -40,11 +40,17 @@ You can add your code example here
 ```
 
 == Remarks ==
+This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
+
+You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
+
+<<Color2(green,The above remarks were re-ordered and have been moved to the top of the section because they seem more appropriately placed there. They were at the bottom in the reverse order.)>>
+
+The blit function should not be called on a locked surface. <<Color2(green,This was listed below the following but seemed more appropriately placed here.)>>
+
 This assumes that the source and destination rectangles are the same size. If either '''srcrect''' or '''dstrect''' are NULL, the entire surface ('''src''' or '''dst''') is copied. The final blit rectangles are saved in '''srcrect''' and '''dstrect''' after all clipping is performed.
 
-The blit function should not be called on a locked surface. <<Color2(green,Should this be listed first in the Remarks?)>>
-
-<<Color2(green,Is the following supposed to go in Code Examples or at least in a code box?  Is it just a define that shouldn't be here at all?)>>
+<<Color2(green,Should the following go in a code box or is this formatting acceptable? Should \verbatim and \endverbatim be removed?)>>
 
 The blit semantics for surfaces with and without alpha and colorkey are defined as follows:
  \verbatim
@@ -94,14 +100,12 @@ SDL_UnlockSurface(image);
 }
 @endcode
 ```
+<<Color2(green,Should @code and @endcode be removed here?)>>
+
 This happens under DirectX 5.0 when the system switches away from your fullscreen application. The lock will also fail until you have access to the video memory again.
 
-You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
-
-This is the public blit function, [[SDL_BlitSurface]](), and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
-
 == Related Functions ==
-:[[SDL_LowerBlit]]???
+:[[SDL_LowerBlit]]
 :[[SDL_UpperBlit]]
 
 ----
