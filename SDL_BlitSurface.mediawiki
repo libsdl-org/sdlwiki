@@ -40,11 +40,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
+This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]](). <<Color2(green,Does this remark apply only to Upper<code></code>Blit and not to Blit<code></code>Surface?)>>
 
 You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
 
-<<Color2(green,The above remarks were re-ordered and have been moved to the top of the section because they seem more appropriately placed there. They were at the bottom in the reverse order.)>>
+<<Color2(green,The above 2 remarks were re-ordered and have been moved to the top of the section because they seem more appropriately placed there. They were at the bottom in the reverse order.)>>
 
 The blit function should not be called on a locked surface. <<Color2(green,This was listed below the following but seemed more appropriately placed here.)>>
 
