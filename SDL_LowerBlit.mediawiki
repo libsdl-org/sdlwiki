@@ -41,7 +41,8 @@ You can add your code example here
 This is a semi-private blit function and it performs low-level surface blitting only.
 
 == Related Functions ==
-:[[SDL_UpperBlit]]???
+:[[SDL_BlitSurface]]
+:[[SDL_UpperBlit]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
