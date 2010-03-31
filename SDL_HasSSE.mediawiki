@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HasSSE =
+Use this function to return true if the CPU has SSE features.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasSSE(void)
+```
+
+== Return Value ==
+Returns SDL_True if the CPU has SSE features, or SDL_False if not.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HasSSE2]] ???
+
+----
+[[CategoryAPI]], [[CategoryCPU]]
