@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HasRDTSC =
-Use this function to return true if the CPU has the RDTSC instruction.
+Use this function to ,,return true if,, ^determine whether^ the CPU has the RDTSC instruction.
 
 
 == Syntax ==
