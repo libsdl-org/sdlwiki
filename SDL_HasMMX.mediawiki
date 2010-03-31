@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HasMMX =
-Use this function to return true if the CPU has MMX features.
+Use this function to ,,return true if,, ^determine whether^ the CPU has MMX features.
 
 
 == Syntax ==
