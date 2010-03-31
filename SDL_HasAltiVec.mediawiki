@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HasAltiVec =
-Use this function to return true if the CPU has Alti<code></code>Vec features.
+Use this function to ,,return true if,, ^determine whether^ the CPU has Alti<code></code>Vec features.
 
 
 == Syntax ==
