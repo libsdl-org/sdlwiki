@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HasSSE2 =
-Use this function to return true if the CPU has SSE2 features.
+Use this function to ,,return true if,, ^determine whether^ the CPU has SSE2 features.
 
 
 == Syntax ==
