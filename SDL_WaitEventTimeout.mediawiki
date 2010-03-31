@@ -22,9 +22,7 @@ int SDL_WaitEventTimeout(SDL_Event* event,
 |}
 
 == Return Value ==
-''Remove this section if there is no return value.
-Many SDL functions use this standard text (remove if not applicable):''
-Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns 1 on success, or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -35,7 +33,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_WaitEvent]] ???
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryEvents]]
