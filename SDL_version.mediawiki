@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_Structure =
+= SDL_version =
 A structure that contains information ^about^ the version of SDL in use.
 
 
