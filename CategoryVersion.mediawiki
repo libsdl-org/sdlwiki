@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-Querying SDL Version (SDL_version.h)
+== Querying SDL Version (SDL_version.h) ==
 
 <<FullSearch(category:CategoryVersion)>>
 
