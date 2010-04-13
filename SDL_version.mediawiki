@@ -56,4 +56,4 @@ Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL
 :[[SDL_GetVersion]]
 
 ----
-[[CategoryVersion]]
+[[CategoryStruct]]
