@@ -1,0 +1,30 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetRevision =
+Use this function to get the code revision of SDL that is linked against your program.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetRevision(void)
+```
+
+== Return Value ==
+^Returns^ ,,This is ,,an arbitrary string (a hash value, ,,actually,,), and is only useful in comparing against other revisions. It is NOT an incrementing number.
+
+<<Color2(green,Should this be listed in the Remarks instead or also?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
