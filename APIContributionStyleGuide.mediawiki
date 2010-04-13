@@ -36,7 +36,7 @@ Before you save your changes please include a note in the Comment field below th
 
 {i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
 
-When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> function in the left column to save your changes.
+When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
 ~-(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
