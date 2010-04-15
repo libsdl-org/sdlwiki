@@ -13,7 +13,7 @@ This wiki is your portal to documentation and other resources for SDL 1.3.
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading on the left-hand menu to access:
 
-* API reference [[APIRefName|by name]] or [[APIRefCategory|by category]]
+* API reference [[CategoryAPI|by name]] or [[APIByCategory|by category]]
 * [[Tutorials|tutorials]]
 * [[Articles|articles]]
 * [[Books|books]]
