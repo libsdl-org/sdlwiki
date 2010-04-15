@@ -8,7 +8,7 @@
 = Simple DirectMedia Layer 1.3 Wiki =
 This wiki is your portal to documentation and other resources for SDL 1.3.
 
-<<TableOfContents(3)>>
+<<TableOfContents(2)>>
 
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading on the left-hand menu to access:
