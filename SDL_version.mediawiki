@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_version =
-A structure that contains information ^about^ the version of SDL in use.
+A structure that contains information about the version of SDL in use.
 
 
 == Data Fields ==
@@ -31,26 +31,6 @@ Represents the library's version as three levels:
 *major revision (increments with massive changes, additions, and enhancements)
 *minor revision (increments with backwards-compatible changes to the major revision), and
 *patchlevel (increments with fixes to the minor revision)
-
-
-<<Color2(green,Does the following belong to this structure?)>>
-Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL
-
-{|
-|#define
-|SDL_MAJOR_VERSION
-|1<br/>
-|-
-|#define
-|SDL_MINOR_VERSION
-|3<br/>
-|-
-|#define
-|SDL_PATCHLEVEL
-|0
-|}
-
-<<Color2(green,There are a number of macros for this header. Do they go anywhere in this wiki?)>>
 
 == Related Functions ==
 :[[SDL_GetVersion]]
