@@ -19,7 +19,9 @@ Use the links under the '''Navigation Links''' heading on the left-hand menu to 
 * [[FAQs]]
 * [http://forums.libsdl.org/ forums]
 
-Registered users can use the '''Edit''' links under the '''Page Actions''' heading on the left-hand menu to add or update content in the wiki. For help using the editing functions see the [[HelpOnEditing|MoinMoin Wiki Help]] pages, also available at any time from the Wiki Help link under the '''Navigation Links''' heading.
+<<Color2(green,Can the bullet items be capitalized to match the left column?)>>
+
+Users wishing to contribute content should follow the guidelines provided in the [http://wiki.libsdl.org/moin.cgi/APIContributionStyleGuide SDL API Contribution Style Guide].
 
 == Introduction to SDL ==
 === What is SDL? ===
@@ -29,16 +31,16 @@ The current version (1.3) supports Windows, Windows CE, Mac OS X, Linux,  FreeBS
 
 SDL is written in C, but works with C++ natively, and has bindings to several other languages, including Ada, C#, Eiffel, Erlang, Euphoria, Guile, Haskell, Java, Lisp, Lua, ML, Objective C, Pascal, Perl, PHP, Pike, Pliant, Python, Ruby, and Smalltalk.
 
-This library is distributed under GNU LGPL [<- link to licensing info] version 2. This license allows you to use SDL freely in commercial programs as long as you link with the dynamic library. A full commercial license for SDL 1.3 is available from [http://www.galaxygameworks.com Galaxy Gameworks].
+This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LGPL version 2.1]. This license allows you to use SDL freely in commercial programs as long as you link with the dynamic library. A full commercial license for SDL 1.3 is available from [http://www.galaxygameworks.com Galaxy Gameworks].
 
 === What can SDL do? ===
 ''''' Video'''''
 
 * Set a video mode at any depth (8-bpp or greater) with optional conversion, if the video mode is not supported by the hardware
 * Write directly to a linear graphics framebuffer
-* Create surfaces with colorkey or alpha blending                 attributes
-* Surface blits are automatically converted to the                 target format using optimized blitters and are                 hardware accelerated, when possible. MMX                 optimized blits are available for the x86
-* Hardware accelerated blit and fill operations are                 used if supported by the hardware
+* Create surfaces with colorkey or alpha blending attributes
+* Surface blits are automatically converted to the target format using optimized blitters and are hardware accelerated, when possible. MMX optimized blits are available for the x86
+* Hardware accelerated blit and fill operations are used if supported by the hardware
 * Window Management
 * Rendering
 
@@ -50,8 +52,8 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 * Mouse input
 * Joystick input
 * User-requested quit
-* Each event can be enabled or disabled with                 SDL_EventState()
-* Events are passed through a user-specified filter                 function before being posted to the internal                 event queue
+* Each event can be enabled or disabled with SDL_EventState()
+* Events are passed through a user-specified filter function before being posted to the internal event queue
 * Thread-safe event queue
 
 ''''' Force Feedback'''''
@@ -60,9 +62,9 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 
 '''''Audio'''''
 
-* Set audio playback of 8-bit and 16-bit audio,                 mono or stereo, with optional conversion if the                 format is not supported by the hardware
-* Audio runs independently in a separate thread,                 filled via a user callback mechanism
-* Designed for custom software audio mixers, but                 the example archive contains a complete                 audio/music output library
+* Set audio playback of 8-bit and 16-bit audio, mono or stereo, with optional conversion if the format is not supported by the hardware
+* Audio runs independently in a separate thread, filled via a user callback mechanism
+* Designed for custom software audio mixers, but the example archive contains a complete audio/music output library
 
 '''''File I/O Abstraction'''''
 
@@ -102,9 +104,9 @@ This library is distributed under GNU LGPL [<- link to licensing info] version 2
 === What platforms does SDL run on? ===
 '''''Windows'''''
 
-* Two versions, one safe for all systems based on                 Win32 APIs, and one with higher performance,                 based on DirectX APIs
-* Safe version uses GDI for video display. High                 performance version uses !Direct3D for video                 display, taking advantage of modern hardware                 acceleration
-* Safe version uses waveOut APIs for sound. High                 performance version uses !DirectSound for audio                 playback
+* Two versions, one safe for all systems based on Win32 APIs, and one with higher performance, based on DirectX APIs
+* Safe version uses GDI for video display. High performance version uses !Direct3D for video display, taking advantage of modern hardware acceleration
+* Safe version uses waveOut APIs for sound. High performance version uses !DirectSound for audio playback
 
 '''''Mac OSX'''''
 
