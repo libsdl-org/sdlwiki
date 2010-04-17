@@ -65,17 +65,19 @@ The Code Examples section provides simple examples of real-world applications of
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
 
-* If there are existing examples please add yours to the end, or to a related section if there are many examples of various types.  
-: ''Example'': [[SDL_Init]]()
-
-<!> '''Do not remove or modify any existing code examples.'''
-
-* All content should be added within this markup.
+* If there are existing examples please add a new code box to the end of the examples section, or the end of a related group if there are many examples of various types.
+* To add a new code box insert the following into the spot where your example will be located:
    ```{
 {{{#!highlight cpp
  
 ```
 }}}}
+: ''Example'': [[SDL_Init]]()
+
+* All content should be added within this markup (on the blank line with the markup above and below your example content).
+
+<!> '''Do not remove or modify any existing code examples.'''
+
 * Please remember to keep it simple and easy to understand.
 
 === Adding Remarks ===
