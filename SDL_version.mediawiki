@@ -24,7 +24,6 @@ A structure that contains information about the version of SDL in use.
 |update version 
 |}
 
-
 == Code Examples ==
 <<Include(SDL_GetVersion, , , from="== Code Examples ==", to="## End 1")>>
 
@@ -40,6 +39,33 @@ Represents the library's version as three levels:
 
 == Related Functions ==
 : [[SDL_GetVersion]]
+
+== Related Minor Macros ==
+'''SDL_VERSIONNUM'''<br/>
+This macro turns the version numbers into a numeric value:
+ ```(1,2,3) -> (1203)```
+```c++
+SDL_VERSIONNUM(X, Y, Z)
+((X)*1000 + (Y)*100 + (Z))
+```
+* This assumes that there will never be more than 100 patchlevels.
+<br/>
+
+'''SDL_COMPILEDVERSION'''<br/>
+This is the version number macro for the current SDL version.
+```c++
+SDL_COMPILEDVERSION \
+SDL_VERSIONNUM(SDL_MAJOR_VERSION, SDL_MINOR_VERSION, SDL_PATCHLEVEL)
+```
+<br/>
+
+'''SDL_VERSION_ATLEAST'''<br/>
+This macro will evaluate to true if compiled with SDL at least X.Y.Z.
+```c++
+SDL_VERSION_ATLEAST(X, Y, Z) \
+(SDL_COMPILEDVERSION >= SDL_VERSIONNUM(X, Y, Z))
+```
+<br/>
 
 ----
 CategoryStruct
