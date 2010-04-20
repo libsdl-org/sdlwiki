@@ -30,6 +30,10 @@ printf("But we linked against SDL version %d.%d.%d.\n",
        linked.major, linked.minor, linked.patch);
 ```
 
+```c++
+You can add your code example here
+```
+
 == Remarks ==
 If you are using a shared library (DLL) version of SDL, then it is possible that it will be different than the version you compiled against.  <<Color2(green,Can this function distinguish between the two? It isn't clear.)>>
 
