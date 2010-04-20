@@ -29,7 +29,7 @@ printf("We compiled against SDL version %d.%d.%d ...\n",
 printf("But we linked against SDL version %d.%d.%d.\n",
        linked.major, linked.minor, linked.patch);
 ```
-
+<!-- # End 1 -->
 ```c++
 You can add your code example here
 ```
