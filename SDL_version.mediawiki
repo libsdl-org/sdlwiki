@@ -1,6 +1,9 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL_version =
 A structure that contains information about the version of SDL in use.
@@ -8,34 +11,35 @@ A structure that contains information about the version of SDL in use.
 
 == Data Fields ==
 {|
-|Uint8
-|'''major'''
-|major version
+|Uint8 
+|'''major''' 
+|major version 
 |-
-|Uint8
-|'''minor'''
-|minor version
+|Uint8 
+|'''minor''' 
+|minor version 
 |-
-|Uint8
-|'''patch'''
-|update version
+|Uint8 
+|'''patch''' 
+|update version 
 |}
 
+
 == Code Examples ==
-<<Include(SDL_GetVersion, , , from="== Code Examples ==", to="== Remarks ==")>>
+<<Include(SDL_GetVersion, , , from="== Code Examples ==", to="## End 1")>>
 
 ```c++
 You can add your code example here
 ```
-
 == Remarks ==
-Represents the library's version as three levels: 
-*major revision (increments with massive changes, additions, and enhancements)
-*minor revision (increments with backwards-compatible changes to the major revision), and
-*patchlevel (increments with fixes to the minor revision)
+Represents the library's version as three levels:
+
+* major revision (increments with massive changes, additions, and enhancements)
+* minor revision (increments with backwards-compatible changes to the major revision), and
+* patchlevel (increments with fixes to the minor revision)
 
 == Related Functions ==
-:[[SDL_GetVersion]]
+: [[SDL_GetVersion]]
 
 ----
-[[CategoryStruct]]
+CategoryStruct
