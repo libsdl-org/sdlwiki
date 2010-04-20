@@ -22,6 +22,8 @@ A structure that contains information about the version of SDL in use.
 |}
 
 == Code Examples ==
+<<Include(SDL_GetVersion, , , from="== Code Examples ==", to="== Remarks ==")>>
+
 ```c++
 You can add your code example here
 ```
