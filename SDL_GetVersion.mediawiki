@@ -19,7 +19,6 @@ void SDL_GetVersion(SDL_version* ver)
 
 == Code Examples ==
 ```c++
-\code
 SDL_version compiled;
 SDL_version linked;
 
@@ -29,7 +28,6 @@ printf("We compiled against SDL version %d.%d.%d ...\n",
        compiled.major, compiled.minor, compiled.patch);
 printf("But we linked against SDL version %d.%d.%d.\n",
        linked.major, linked.minor, linked.patch);
-\endcode
 ```
 
 == Remarks ==
