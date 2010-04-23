@@ -8,44 +8,207 @@
 
 
 == Functions by Type ==
-A complete list of functions belonging to each header can be found on the following pages:
+''In each section below you will find:''
+
+Introduction to [Category]
+ Clicking this link will take you to a detailed description of that category in SDL 1.3.  
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|This column contains 1 or more links to pages with complete function lists.  You can jump directly from these lists to detailed pages about each function.
+|This column contains a link to the actual header file.
+|}
+
+-OR -
+
+In each section:
+* For more detailed information on each Category, including how to get started, answers to common questions and errors, and more, click the '''Introduction to...''' link in each section
+* For a list of functions found in each header click the link under '''Related Functions'''
+* You will find links to detailed pages about each function on those pages
+* For the header file itself click the link under '''Header''' in each section
+
+-OR-
+
+Each section below includes 
+* a link to introductory information about each function type including, where relevant:
+* <<Color2(green,Add a list here of the common sections found on each introductory page as the list develops.)>>
+* a link to one or more pages containing a complete list of functions belonging to each header in that category
+* listed functions link to detailed information on each
+* a link to the header page
+
 === Initialization ===
-: [[CategoryInit|Initialization & Shutdown (SDL.h)]]
+[[#InitI|Introduction to Initialization]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[CategoryInit|Initialization & Shutdown]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h]
+|}
 
 === Video ===
-: [[CategoryVideo|Display Management, Window Management and Rendering (SDL_video.h)]]
-: [[CategoryPixels|Pixel Formats and Conversion Routines (SDL_pixels.h)]]
-: [[CategoryRect|Rectangle Functions (SDL_rect.h)]]
-: [[CategorySurface|Surface Creation and Simple Drawing (SDL_surface.h)]]
+[[#VideoI|Introduction to Video]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[CategoryVideo|Display Management, Window Management and Rendering]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h]
+|-
+|[CategoryPixels|Pixel Formats and Conversion Routines]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h]
+|-
+|[CategoryRect|Rectangle Functions]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h]
+|-
+|[CategorySurface|Surface Creation and Simple Drawing]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
+|}
 
 === Input ===
-: [[CategoryJoystick|Joystick Support (SDL_joystick.h)]]
-: [[CategoryKeyboard|Keyboard Support (SDL_keyboard.h)]]
-: [[CategoryMouse|Mouse Support (SDL_mouse.h)]]
+[[#InputI|Introduction to Input]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[CategoryJoystick|Joystick Support]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h]
+|-
+|[CategoryKeyboard|Keyboard Support]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h]
+|-
+|[CategoryMouse|Mouse Support]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h]
+|}
 
 === Force Feedback ===
+[[#FFI|Introduction to Force Feedback]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Audio ===
+[[#AudioI|Introduction to Audio]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === File I/O Abstraction ===
+[[#I/OI|Introduction to File I/O Abstraction]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Shared Object Support ===
+[[#SOSI|Introduction to Shared Object Support]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Threads ===
+[[#ThreadsI|Introduction to Threads]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Timers ===
+[[#TimersI|Introduction to Timers]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === CPU Feature Detection ===
+[[#CPUI|Introduction to CPU Feature Detection]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Power Management ===
+[[#PowerI|Introduction to Power Management]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
+
 === Endian Independence ===
+[[#EndianI|Introduction to Endian]]
+
+{|
+|<tablewidth="100%">'''Related Functions'''
+|'''Header'''
+|-
+|[[]]
+|[[]]
+|}
 
 ----
 
 == Introductory Information by Category ==
 
-=== Introduction to Initialization ===
-=== Introduction to Video ===
-=== Introduction to Input ===
-=== Introduction to Force Feedback ===
-=== Introduction to Audio ===
-=== Introduction to File I/O Abstraction ===
-=== Introduction to Shared Object Support ===
-=== Introduction to Threads ===
-=== Introduction to Timers ===
-=== Introduction to CPU Feature Detection ===
-=== Introduction to Power Management ===
-=== Introduction to Endian Independence ===
+<span id="InitI"></span>'''Introduction to Initialization'''
+
+<span id="VideoI"></span>'''Introduction to Video'''
+
+<span id="InputI"></span>'''Introduction to Input'''
+
+<span id="FFI"></span>'''Introduction to Force Feedback'''
+
+<span id="AudioI"></span>'''Introduction to Audio'''
+
+<span id="I/OI"></span>'''Introduction to File I/O Abstraction'''
+
+<span id="SOSI"></span>'''Introduction to Shared Object Support'''
+
+<span id="ThreadsI"></span>'''Introduction to Threads'''
+
+<span id="TimersI"></span>'''Introduction to Timers'''
+
+<span id="CPUI"></span>'''Introduction to CPU Feature Detection'''
+
+<span id="PowerI"></span>'''Introduction to Power Management'''
+
+<span id="EndianI"></span>'''Introduction to Endian Independence'''
