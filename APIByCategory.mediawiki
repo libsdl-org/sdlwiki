@@ -10,15 +10,19 @@
 == Functions by Type ==
 A complete list of functions belonging to each header can be found on the following pages:
 === Initialization ===
-: [[CategoryInit|SDL.h]]
+: [[CategoryInit|Initialization & Shutdown (SDL.h)]]
 
 === Video ===
 : [[CategoryVideo|Display Management, Window Management and Rendering (SDL_video.h)]]
-: [[CategoryPixels|SDL_pixels.h]]
-: [[CategoryRect|SDL_rect.h]]
-: [[CategorySurface|SDL_surface.h]]
+: [[CategoryPixels|Pixel Formats and Conversion Routines (SDL_pixels.h)]]
+: [[CategoryRect|Rectangle Functions (SDL_rect.h)]]
+: [[CategorySurface|Surface Creation and Simple Drawing (SDL_surface.h)]]
 
 === Input ===
+: [[CategoryJoystick|Joystick Support (SDL_joystick.h)]]
+: [[CategoryKeyboard|Keyboard Support (SDL_keyboard.h)]]
+: [[CategoryMouse|Mouse Support (SDL_mouse.h)]]
+
 === Force Feedback ===
 === Audio ===
 === File I/O Abstraction ===
