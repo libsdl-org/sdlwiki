@@ -2,14 +2,22 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
 = SDL 1.3 API by Category =
 
 
 == Functions by Type ==
-
+A complete list of functions belonging to each header can be found on the following pages:
 === Initialization ===
+: [[CategoryInit|SDL.h]]
+
 === Video ===
+: [[CategoryVideo|Display Management, Window Management and Rendering (SDL_video.h)]]
+: [[CategoryPixels|SDL_pixels.h]]
+: [[CategoryRect|SDL_rect.h]]
+: [[CategorySurface|SDL_surface.h]]
+
 === Input ===
 === Force Feedback ===
 === Audio ===
@@ -20,6 +28,8 @@
 === CPU Feature Detection ===
 === Power Management ===
 === Endian Independence ===
+
+----
 
 == Introductory Information by Category ==
 
