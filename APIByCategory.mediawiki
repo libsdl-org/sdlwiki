@@ -1,1 +1,37 @@
-Describe APIbyCategory here.
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= SDL 1.3 API by Category =
+
+
+== Functions by Type ==
+
+=== Initialization ===
+=== Video ===
+=== Input ===
+=== Force Feedback ===
+=== Audio ===
+=== File I/O Abstraction ===
+=== Shared Object Support ===
+=== Threads ===
+=== Timers ===
+=== CPU Feature Detection ===
+=== Power Management ===
+=== Endian Independence ===
+
+== Introductory Information by Category ==
+
+=== Introduction to Initialization ===
+=== Introduction to Video ===
+=== Introduction to Input ===
+=== Introduction to Force Feedback ===
+=== Introduction to Audio ===
+=== Introduction to File I/O Abstraction ===
+=== Introduction to Shared Object Support ===
+=== Introduction to Threads ===
+=== Introduction to Timers ===
+=== Introduction to CPU Feature Detection ===
+=== Introduction to Power Management ===
+=== Introduction to Endian Independence ===
