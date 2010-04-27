@@ -18,6 +18,19 @@
 |-
 |[CategoryInit|Initialization & Shutdown]]
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h]
+|-
+|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h]
+|-
+|[CategoryVersion|Querying SDL Version]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
+|}
+
+<<Color2(green,Does SDL_error.h belong in this section?)>>
+
+{|
+|[CategoryError|Error Handling]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
 |}
 
 === Video ===
@@ -38,6 +51,9 @@
 |-
 |[CategorySurface|Surface Creation and Simple Drawing]]
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
+|-
+|[CategorySWM|Platform-specific Window Management]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h]
 |}
 
 === Input ===
@@ -110,6 +126,9 @@
 |-
 |[CategoryThread|Thread Management]]
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h]
+|-
+|[CategoryMutex|Thread Synchronization Primitives]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
 |}
 
 === Timers ===
@@ -121,6 +140,9 @@
 |-
 |[CategoryTimer|Timer Support]]
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h]
+|-
+|[CategoryEvents|Event Handling]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h]
 |}
 
 === CPU Feature Detection ===
@@ -132,6 +154,9 @@
 |-
 |[CategoryCPU|CPU Feature Detection]]
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h]
+|-
+|[CategoryPlatform|Platform Detection]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_platform.h SDL_platform.h]
 |}
 
 === Power Management ===
