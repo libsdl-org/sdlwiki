@@ -108,8 +108,8 @@
 |<tablewidth="100%">'''View a List of Functions Related to...'''
 |'''View the Header'''
 |-
-|[[CategoryThread|]]
-|[[]]
+|[CategoryThread|Thread Management]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h]
 |}
 
 === Timers ===
@@ -119,8 +119,8 @@
 |<tablewidth="100%">'''View a List of Functions Related to...'''
 |'''View the Header'''
 |-
-|[[CategoryTimer|]]
-|[[]]
+|[CategoryTimer|Timer Support]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h]
 |}
 
 === CPU Feature Detection ===
@@ -130,8 +130,8 @@
 |<tablewidth="100%">'''View a List of Functions Related to...'''
 |'''View the Header'''
 |-
-|[[CategoryCPU|]]
-|[[]]
+|[CategoryCPU|CPU Feature Detection]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h]
 |}
 
 === Power Management ===
@@ -141,19 +141,19 @@
 |<tablewidth="100%">'''View a List of Functions Related to...'''
 |'''View the Header'''
 |-
-|[[CategoryPower|]]
-|[[]]
+|[CategoryPower|Power Management Status]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h]
 |}
 
 === Endian Independence ===
-[[#EndianI|Introduction to Endian]]
+[[#EndianI|Introduction to Endian Independence (Byte Order and Byte Swapping)]]
 
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...'''
 |'''View the Header'''
 |-
-|[[CategoryEndian|]]
-|[[]]
+|[CategoryEndian|Byte Order and Byte Swapping]]
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h]
 |}
 
 ----
@@ -182,7 +182,7 @@
 
 <span id="PowerI"></span>'''Introduction to Power Management'''
 
-<span id="EndianI"></span>'''Introduction to Endian Independence'''
+<span id="EndianI"></span>'''Introduction to Endian Independence (Byte Order and Byte Swapping)'''
 
 ----
 <<Color2(green,This section is junk I don't want to lose yet but will most likely delete. Ignore it.)>>
