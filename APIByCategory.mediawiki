@@ -187,6 +187,21 @@
 
 <span id="InitI"></span>'''Introduction to Initialization'''
 
+__General__<br/>
+Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.  
+
+__Version__<br/>
+These functions are used to collect or display information about the version of SDL that is currently being used by the program.
+There are four (4) macros <<Color2(green,Create a link to a resource that describes macros)>> that apply to this header.
+* [[SDL_VERSION]]
+* This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information.
+* [[SDL_version#Related Minor Macros|SDL_VERSIONNUM]]
+* A minor macro that converts version numbers into a numeric value.
+* [[SDL_version#Related Minor Macros|SDL_COMPILEDVERSION]]
+* A minor macro that produces the current SDL version number (major.minor.patchlevel)
+* [[SDL_version#Related Minor Macros|SDL_VERSION_ATLEAST]]
+* A minor macro that confirms whether a program was compiled with a version no older than the specified version.  
+
 <span id="VideoI"></span>'''Introduction to Video'''
 
 <span id="InputI"></span>'''Introduction to Input'''
