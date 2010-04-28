@@ -37,6 +37,8 @@ Represents the library's version as three levels:
 * minor revision (increments with backwards-compatible changes to the major revision), and
 * patchlevel (increments with fixes to the minor revision)
 
+The macro [[SDL_VERSION]] can be used to populate this structure with information. 
+
 == Related Functions ==
 : [[SDL_GetVersion]]
 
