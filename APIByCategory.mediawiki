@@ -2,205 +2,237 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL 1.3 API by Category =
 
-
 == Functions by Type ==
-
 === Initialization ===
 [[#InitI|Introduction to Initialization]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryInit|Initialization & Shutdown]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h]
+|[CategoryInit|Initialization & Shutdown]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
 |-
-|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h]
+|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h] 
 |-
-|[CategoryVersion|Querying SDL Version]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
+|[CategoryVersion|Querying SDL Version]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
 |}
+
+
+
 
 <<Color2(green,Does SDL_error.h belong in this section?)>>
-
 {|
-|[CategoryError|Error Handling]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
+|[CategoryError|Error Handling]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
 |}
+
+
+
 
 === Video ===
 [[#VideoI|Introduction to Video]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryVideo|Display Management, Window Management and Rendering]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h]
+|[CategoryVideo|Display Management, Window Management and Rendering]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
 |-
-|[CategoryPixels|Pixel Formats and Conversion Routines]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h]
+|[CategoryPixels|Pixel Formats and Conversion Routines]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h] 
 |-
-|[CategoryRect|Rectangle Functions]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h]
+|[CategoryRect|Rectangle Functions]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h] 
 |-
-|[CategorySurface|Surface Creation and Simple Drawing]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
+|[CategorySurface|Surface Creation and Simple Drawing]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h] 
 |-
-|[CategorySWM|Platform-specific Window Management]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h]
+|[CategorySWM|Platform-specific Window Management]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] 
 |}
+
+
+
 
 === Input ===
 [[#InputI|Introduction to Input]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryJoystick|Joystick Support]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h]
+|[CategoryJoystick|Joystick Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
 |-
-|[CategoryKeyboard|Keyboard Support]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h]
+|[CategoryKeyboard|Keyboard Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h] 
 |-
-|[CategoryMouse|Mouse Support]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h]
+|[CategoryMouse|Mouse Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h] 
 |}
+
+
+
 
 === Force Feedback ===
 [[#FFI|Introduction to Force Feedback]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryForceFeedback|Force Feedback Support]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h]
+|[CategoryForceFeedback|Force Feedback Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h] 
 |}
+
+
+
 
 === Audio ===
 [[#AudioI|Introduction to Audio]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryAudio|Audio Device Management, Playing and Recording]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_audio.h SDL_audio.h]
+|[CategoryAudio|Audio Device Management, Playing and Recording]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_audio.h SDL_audio.h] 
 |}
+
+
+
 
 === File I/O Abstraction ===
-[[#I/OI|Introduction to File I/O Abstraction]]
-
+[[#I.2BAC8-OI|Introduction to File I/O Abstraction]]
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryIO|File I/O Abstraction]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h]
+|[CategoryIO|File I/O Abstraction]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h] 
 |}
+
+
+
 
 === Shared Object Support ===
 [[#SOSI|Introduction to Shared Object Support]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategorySharedObject|Shared Object Loading and Function Lookup]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h]
+|[CategorySharedObject|Shared Object Loading and Function Lookup]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h] 
 |}
+
+
+
 
 === Threads ===
 [[#ThreadsI|Introduction to Threads]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryThread|Thread Management]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h]
+|[CategoryThread|Thread Management]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h] 
 |-
-|[CategoryMutex|Thread Synchronization Primitives]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
+|[CategoryMutex|Thread Synchronization Primitives]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h] 
 |}
+
+
+
 
 === Timers ===
 [[#TimersI|Introduction to Timers]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryTimer|Timer Support]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h]
+|[CategoryTimer|Timer Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h] 
 |-
-|[CategoryEvents|Event Handling]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h]
+|[CategoryEvents|Event Handling]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
 |}
+
+
+
 
 === CPU Feature Detection ===
 [[#CPUI|Introduction to CPU Feature Detection]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryCPU|CPU Feature Detection]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h]
+|[CategoryCPU|CPU Feature Detection]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h] 
 |-
-|[CategoryPlatform|Platform Detection]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_platform.h SDL_platform.h]
+|[CategoryPlatform|Platform Detection]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_platform.h SDL_platform.h] 
 |}
+
+
+
 
 === Power Management ===
 [[#PowerI|Introduction to Power Management]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryPower|Power Management Status]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h]
+|[CategoryPower|Power Management Status]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h] 
 |}
+
+
+
 
 === Endian Independence ===
 [[#EndianI|Introduction to Endian Independence (Byte Order and Byte Swapping)]]
-
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View a List of Functions Related to...''' 
+|'''View the Header''' 
 |-
-|[CategoryEndian|Byte Order and Byte Swapping]]
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h]
+|[CategoryEndian|Byte Order and Byte Swapping]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h] 
 |}
+
+
+
 
 ----
 
 == Introductory Information by Category ==
-
 <span id="InitI"></span>'''Introduction to Initialization'''
 
-__General__<br/>
-Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.  
+__General__<br/> Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
 
-__Version__<br/>
-These functions are used to collect or display information about the version of SDL that is currently being used by the program.
+__Version__<br/> These functions are used to collect or display information about the version of SDL that is currently being used by the program.
+
+: The version number consists of three segments (X.Y.Z)
+* X = Major Version, which increments with massive changes, additions, and enhancements
+* Y = Minor Version, which increments with backwards-compatible changes to the major revision
+* Z = Patchlevel, which increments with fixes to the minor revision
+ ''Example:'' 1.3.0
+
 There are four (4) macros <<Color2(green,Create a link to a resource that describes macros)>> that apply to this header.
+
 * [[SDL_VERSION]]
 * This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information.
-* [[SDL_version#Related Minor Macros|SDL_VERSIONNUM]]
+* [[SDL_version#Related_Minor_Macros|SDL_VERSIONNUM]]
 * A minor macro that converts version numbers into a numeric value.
-* [[SDL_version#Related Minor Macros|SDL_COMPILEDVERSION]]
+* [[SDL_version#Related_Minor_Macros|SDL_COMPILEDVERSION]]
 * A minor macro that produces the current SDL version number (major.minor.patchlevel)
-* [[SDL_version#Related Minor Macros|SDL_VERSION_ATLEAST]]
-* A minor macro that confirms whether a program was compiled with a version no older than the specified version.  
+* [[SDL_version#Related_Minor_Macros|SDL_VERSION_ATLEAST]]
+* A minor macro that confirms whether a program was compiled with a version no older than the specified version.
 
 <span id="VideoI"></span>'''Introduction to Video'''
 
@@ -211,6 +243,7 @@ There are four (4) macros <<Color2(green,Create a link to a resource that descri
 The SDL Haptic subsystem allows you to control haptic (force feedback) devices.
 
 The basic usage is as follows:
+
  1. Initialize the Subsystem (SDL_INIT_HAPTIC)
  1. Open a Haptic Device
   a. [[SDL_HapticOpen]]() to open from index
@@ -222,6 +255,7 @@ The basic usage is as follows:
  1. Close the haptic device with [[SDL_HapticClose]]()
 
 Code Example:
+
 ```c++
 int test_haptic( SDL_Joystick * joystick ) {
  SDL_Haptic *haptic;
@@ -265,9 +299,6 @@ int test_haptic( SDL_Joystick * joystick ) {
  return 0; // Success
 }
 ```
-
-
-
 <span id="AudioI"></span>'''Introduction to Audio'''
 
 <span id="I/OI"></span>'''Introduction to File I/O Abstraction'''
@@ -285,10 +316,10 @@ int test_haptic( SDL_Joystick * joystick ) {
 <span id="EndianI"></span>'''Introduction to Endian Independence (Byte Order and Byte Swapping)'''
 
 ----
-<<Color2(green,This section is junk I don't want to lose yet but will most likely delete. Ignore it.)>>
--OR -
+<<Color2(green,This section is junk I don't want to lose yet but will most likely delete. Ignore it.)>> -OR -
 
 In each section:
+
 * For more detailed information on each Category, including how to get started, answers to common questions and errors, and more, click the '''Introduction to...''' link in each section
 * For a list of functions found in each header click the link under '''Related Functions'''
 * You will find links to detailed pages about each function on those pages
@@ -296,7 +327,8 @@ In each section:
 
 -OR-
 
-Each section below includes 
+Each section below includes
+
 * a link to introductory information about each function type including, where relevant:
 * <<Color2(green,Add a list here of the common sections found on each introductory page as the list develops.)>>
 * a link to one or more pages containing a complete list of functions belonging to each header in that category
