@@ -10,8 +10,10 @@
 = SDL 1.3 API by Category =
 
 == Functions by Type ==
+
 === Initialization ===
 [[#InitI|Introduction to Initialization]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -27,8 +29,6 @@
 |}
 
 
-
-
 <<Color2(green,Does SDL_error.h belong in this section?)>>
 {|
 |[CategoryError|Error Handling]] 
@@ -36,10 +36,9 @@
 |}
 
 
-
-
 === Video ===
 [[#VideoI|Introduction to Video]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -61,10 +60,9 @@
 |}
 
 
-
-
 === Input ===
 [[#InputI|Introduction to Input]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -80,10 +78,9 @@
 |}
 
 
-
-
 === Force Feedback ===
 [[#FFI|Introduction to Force Feedback]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -93,10 +90,9 @@
 |}
 
 
-
-
 === Audio ===
 [[#AudioI|Introduction to Audio]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -106,10 +102,9 @@
 |}
 
 
-
-
 === File I/O Abstraction ===
 [[#I.2BAC8-OI|Introduction to File I/O Abstraction]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -119,10 +114,9 @@
 |}
 
 
-
-
 === Shared Object Support ===
 [[#SOSI|Introduction to Shared Object Support]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -132,10 +126,9 @@
 |}
 
 
-
-
 === Threads ===
 [[#ThreadsI|Introduction to Threads]]
+
 {|
 |<tablewidth="100%">'''View a List of Functions Related to...''' 
 |'''View the Header''' 
@@ -146,8 +139,6 @@
 |[CategoryMutex|Thread Synchronization Primitives]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h] 
 |}
-
-
 
 
 === Timers ===
@@ -164,8 +155,6 @@
 |}
 
 
-
-
 === CPU Feature Detection ===
 [[#CPUI|Introduction to CPU Feature Detection]]
 {|
@@ -180,8 +169,6 @@
 |}
 
 
-
-
 === Power Management ===
 [[#PowerI|Introduction to Power Management]]
 {|
@@ -191,8 +178,6 @@
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h] 
 |}
-
-
 
 
 === Endian Independence ===
@@ -206,21 +191,30 @@
 |}
 
 
-
-
 ----
 
 == Introductory Information by Category ==
+
 <span id="InitI"></span>'''Introduction to Initialization'''
 
 __General__<br/> Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
 
-__Version__<br/> These functions are used to collect or display information about the version of SDL that is currently being used by the program.
+__Initialization__<br/>
+To begin using SDL in your program [[SDL_Init]]() must be called to initialize subsystems and enable use of other SDL funcions. 
+* The [[#Timers|Event Handling]], [[#File I/O Abstraction|File I/O]], and [[#Threads|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Multiple subsystems may be or'd together. 
+: ''Example:'' ```SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);```
+: Initializes the 3 default subsystems and the [[#Video|Video]] and [[#Audio|Audio]] subsystems.
 
+__Shut Down__<br/>
+[[SDL_Quit]]() should be called before an SDL application exits to shut down all subsystems, including the default ones.
+* It is not necessary to specify individual subsystems when using [[SDL_Quit]]().  It will automatically shut down all active subsystems. 
+
+__Version__<br/>
+These functions are used to collect or display information about the version of SDL that is currently being used by the program.
 : The version number consists of three segments (X.Y.Z)
 * X = Major Version, which increments with massive changes, additions, and enhancements
 * Y = Minor Version, which increments with backwards-compatible changes to the major revision
-* Z = Patchlevel, which increments with fixes to the minor revision
+* Z = Patchlevel, which increments with fixes to the minor revision<br/>
  ''Example:'' 1.3.0
 
 There are four (4) macros <<Color2(green,Create a link to a resource that describes macros)>> that apply to this header.
