@@ -208,6 +208,66 @@ There are four (4) macros <<Color2(green,Create a link to a resource that descri
 
 <span id="FFI"></span>'''Introduction to Force Feedback'''
 
+The SDL Haptic subsystem allows you to control haptic (force feedback) devices.
+
+The basic usage is as follows:
+ 1. Initialize the Subsystem (SDL_INIT_HAPTIC)
+ 1. Open a Haptic Device
+  a. [[SDL_HapticOpen]]() to open from index
+  a. [[SDL_HapticOpenFromJoystick]]() to open from an existing joystick
+ 1. Create an effect ([[SDL_HapticEffect]])  <<Color2(green,= typedef union - page? no link?)>>
+ 1. Upload the effect with [[SDL_HapticNewEffect]]()
+ 1. Run the effect with [[SDL_HapticRunEffect]]()
+ 1. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
+ 1. Close the haptic device with [[SDL_HapticClose]]()
+
+Code Example:
+```c++
+int test_haptic( SDL_Joystick * joystick ) {
+ SDL_Haptic *haptic;
+ SDL_HapticEffect effect;
+ int effect_id;
+
+ // Open the device
+ haptic = SDL_HapticOpenFromJoystick( joystick );
+ if (haptic == NULL) return -1; // Most likely joystick isn't haptic
+
+ // See if it can do sine waves
+ if ((SDL_HapticQuery(haptic) & SDL_HAPTIC_SINE)==0) {
+  SDL_HapticClose(haptic); // No sine effect
+  return -1;
+ }
+
+ // Create the effect
+ memset( &effect, 0, sizeof(SDL_HapticEffect) ); // 0 is safe default
+ effect.type = SDL_HAPTIC_SINE;
+ effect.periodic.direction.type = SDL_HAPTIC_POLAR; // Polar coordinates
+ effect.periodic.direction.dir[0] = 18000; // Force comes from south
+ effect.periodic.period = 1000; // 1000 ms
+ effect.periodic.magnitude = 20000; // 20000/32767 strength
+ effect.periodic.length = 5000; // 5 seconds long
+ effect.periodic.attack_length = 1000; // Takes 1 second to get max strength
+ effect.periodic.fade_length = 1000; // Takes 1 second to fade away
+
+ // Upload the effect
+ effect_id = SDL_HapticNewEffect( haptic, &effect );
+
+ // Test the effect
+ SDL_HapticRunEffect( haptic, effect_id, 1 );
+ SDL_Delay( 5000); // Wait for the effect to finish
+
+ // We destroy the effect, although closing the device also does this
+ SDL_HapticDestroyEffect( haptic, effect_id );
+
+ // Close the device
+ SDL_HapticClose(haptic);
+
+ return 0; // Success
+}
+```
+
+
+
 <span id="AudioI"></span>'''Introduction to Audio'''
 
 <span id="I/OI"></span>'''Introduction to File I/O Abstraction'''
