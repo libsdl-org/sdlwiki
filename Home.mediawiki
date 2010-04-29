@@ -89,15 +89,16 @@ This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LG
 
 * Detect MMX, SSE, 3DNow and AltiVec CPU features
 
-'''''Power Management'''''
-
-* Querying power management status
-
 '''''Endian Independence'''''
 
 * Detect the endianness of the current system
 * Routines for fast swapping of data values
 * Read and write data of a specified endianness
+
+'''''Power Management'''''
+
+* Querying power management status
+
 
 === What platforms does SDL run on? ===
 '''''Windows'''''
