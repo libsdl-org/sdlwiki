@@ -174,10 +174,6 @@
 ----
 <<Color2(green,Temp Section to be moved)>>
 
-Introductory Information by Category
-
-<<Color2(green,I think we decided this introductory information belongs on this page but I have a note that it should be on the Category<code></code>Header pages.  Where would you like it?)>>
-
 <span id="InitI"></span>'''Introduction to Initialization'''
 
 __General__<br/> Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
