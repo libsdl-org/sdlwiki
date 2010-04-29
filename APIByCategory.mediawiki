@@ -12,11 +12,11 @@
 == Functions by Type ==
 
 === Initialization ===
-[[#InitI|Introduction to Initialization]]
+Introduction to Initialization
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryInit|Initialization & Shutdown]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
@@ -40,8 +40,8 @@
 [[#VideoI|Introduction to Video]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryVideo|Display Management, Window Management and Rendering]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
@@ -64,8 +64,8 @@
 [[#InputI|Introduction to Input]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryJoystick|Joystick Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
@@ -82,8 +82,8 @@
 [[#FFI|Introduction to Force Feedback]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryForceFeedback|Force Feedback Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h] 
@@ -94,8 +94,8 @@
 [[#AudioI|Introduction to Audio]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryAudio|Audio Device Management, Playing and Recording]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_audio.h SDL_audio.h] 
@@ -106,8 +106,8 @@
 [[#I.2BAC8-OI|Introduction to File I/O Abstraction]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryIO|File I/O Abstraction]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h] 
@@ -118,8 +118,8 @@
 [[#SOSI|Introduction to Shared Object Support]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategorySharedObject|Shared Object Loading and Function Lookup]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h] 
@@ -130,8 +130,8 @@
 [[#ThreadsI|Introduction to Threads]]
 
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryThread|Thread Management]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h] 
@@ -143,9 +143,10 @@
 
 === Timers ===
 [[#TimersI|Introduction to Timers]]
+
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryTimer|Timer Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h] 
@@ -157,9 +158,10 @@
 
 === CPU Feature Detection ===
 [[#CPUI|Introduction to CPU Feature Detection]]
+
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryCPU|CPU Feature Detection]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h] 
@@ -171,9 +173,10 @@
 
 === Power Management ===
 [[#PowerI|Introduction to Power Management]]
+
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h] 
@@ -182,9 +185,10 @@
 
 === Endian Independence ===
 [[#EndianI|Introduction to Endian Independence (Byte Order and Byte Swapping)]]
+
 {|
-|<tablewidth="100%">'''View a List of Functions Related to...''' 
-|'''View the Header''' 
+|<tablewidth="100%">'''View Information and Functions Related to...'''
+|'''View the Header'''
 |-
 |[CategoryEndian|Byte Order and Byte Swapping]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h] 
