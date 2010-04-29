@@ -87,7 +87,7 @@ This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LG
 
 '''''CPU Feature Detection'''''
 
-* Detect MMX, SSE, 3DNow and AltiVec CPU features
+* Detect MMX, SSE, 3DNow and !AltiVec CPU features
 
 '''''Endian Independence'''''
 
