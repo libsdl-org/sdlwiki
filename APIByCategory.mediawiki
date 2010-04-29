@@ -21,23 +21,16 @@ Introduction to Initialization
 |[CategoryInit|Initialization & Shutdown]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
 |-
-|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h] 
+|[CategoryError|Error Handling]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
 |-
 |[CategoryVersion|Querying SDL Version]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
 |}
 
 
-<<Color2(green,Does SDL_error.h belong in this section?)>>
-{|
-|[CategoryError|Error Handling]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
-|}
-
-
 === Video ===
-[[#VideoI|Introduction to Video]]
+Introduction to Video
 
 {|
 |<tablewidth="100%">'''View Information and Functions Related to...'''
@@ -60,26 +53,29 @@ Introduction to Initialization
 |}
 
 
-=== Input ===
-[[#InputI|Introduction to Input]]
+=== Input Events ===
+Introduction to Input Events
 
 {|
 |<tablewidth="100%">'''View Information and Functions Related to...'''
 |'''View the Header'''
 |-
-|[CategoryJoystick|Joystick Support]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
+|[CategoryEvents|Event Handling]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
 |-
 |[CategoryKeyboard|Keyboard Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h] 
 |-
 |[CategoryMouse|Mouse Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h] 
+|-
+|[CategoryJoystick|Joystick Support]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
 |}
 
 
 === Force Feedback ===
-[[#FFI|Introduction to Force Feedback]]
+Introduction to Force Feedback
 
 {|
 |<tablewidth="100%">'''View Information and Functions Related to...'''
@@ -138,6 +134,9 @@ Introduction to Initialization
 |-
 |[CategoryMutex|Thread Synchronization Primitives]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h] 
+|-
+|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h] 
 |}
 
 
@@ -150,9 +149,6 @@ Introduction to Initialization
 |-
 |[CategoryTimer|Timer Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h] 
-|-
-|[CategoryEvents|Event Handling]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
 |}
 
 
