@@ -15,8 +15,8 @@
 Introduction to Initialization
 
 {|
-|<tablewidth="100%">'''View Information And Functions Related To...'''
-|'''View The Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryInit|Initialization & Shutdown]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
@@ -57,8 +57,8 @@ Introduction to Video
 Introduction to Input Events
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryEvents|Event Handling]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
@@ -78,8 +78,8 @@ Introduction to Input Events
 Introduction to Force Feedback
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryForceFeedback|Force Feedback Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h] 
@@ -90,8 +90,8 @@ Introduction to Force Feedback
 Introduction to Audio
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryAudio|Audio Device Management, Playing and Recording]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_audio.h SDL_audio.h] 
@@ -102,8 +102,8 @@ Introduction to Audio
 Introduction to File I/O Abstraction
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryIO|File I/O Abstraction]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h] 
@@ -114,8 +114,8 @@ Introduction to File I/O Abstraction
 [[#SOSI|Introduction to Shared Object Support]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategorySharedObject|Shared Object Loading and Function Lookup]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h] 
@@ -126,8 +126,8 @@ Introduction to File I/O Abstraction
 [[#ThreadsI|Introduction to Threads]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryThread|Thread Management]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h] 
@@ -144,8 +144,8 @@ Introduction to File I/O Abstraction
 [[#TimersI|Introduction to Timers]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryTimer|Timer Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h] 
@@ -156,8 +156,8 @@ Introduction to File I/O Abstraction
 [[#CPUI|Introduction to CPU Feature Detection]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryCPU|CPU Feature Detection]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h] 
@@ -171,8 +171,8 @@ Introduction to File I/O Abstraction
 [[#PowerI|Introduction to Power Management]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h] 
@@ -183,8 +183,8 @@ Introduction to File I/O Abstraction
 [[#EndianI|Introduction to Endian Independence (Byte Order and Byte Swapping)]]
 
 {|
-|<tablewidth="100%">'''View Information and Functions Related to...'''
-|'''View the Header'''
+|<tablewidth="100%">'''View information and functions related to...'''
+|'''View the header'''
 |-
 |[CategoryEndian|Byte Order and Byte Swapping]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h] 
