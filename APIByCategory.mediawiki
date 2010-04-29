@@ -11,8 +11,8 @@
 
 == Functions by Type ==
 
-=== Initialization ===
-Introduction to Initialization
+=== Basics ===
+Introduction to the Basics
 
 {|
 |<tablewidth="100%">'''View information and functions related to...'''
