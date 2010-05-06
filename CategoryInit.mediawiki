@@ -3,7 +3,26 @@
 <!-- format wiki -->
 <!-- language en -->
 
+<<Color2(green, Which header sizes are preferable?  I'm partial to the larger 2)>>
+
+= Initialization & Shutdown (SDL.h) =
 == Initialization & Shutdown (SDL.h) ==
+
+__Initialization__<br/>
+To begin using SDL in your program [[SDL_Init]]() must be called to initialize subsystems and enable use of other SDL functions. 
+ {i} The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Multiple subsystems may be or'd together. 
+: ''Example:''
+: ```
+SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
+```
+: Initializes the 3 default subsystems plus the [[CategoryVideo|Video]] and [[CategoryAudio|Audio]] subsystems.
+
+__Shut Down__<br/>
+[[SDL_Quit]]() should be called before an SDL application exits to shut down all subsystems, including the default ones.
+* It is not necessary to specify individual subsystems when using [[SDL_Quit]]().  It will automatically shut down all active subsystems. 
+
+== Functions ==
+=== Functions ===
 
 <<FullSearch(category:CategoryInit)>>
 
