@@ -2,11 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
 
 <<Color2(green, Which header sizes are preferable?  I'm partial to the larger 2)>>
 
 = Initialization & Shutdown (SDL.h) =
 == Initialization & Shutdown (SDL.h) ==
+
+Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
 
 __Initialization__<br/>
 To begin using SDL in your program [[SDL_Init]]() must be called to initialize subsystems and enable use of other SDL functions. 
