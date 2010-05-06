@@ -6,13 +6,18 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-<<Color2(green, Which header sizes are preferable?  I'm partial to the larger 2)>>
+<<Color2(green, Which header sizes are preferable?  I'm partial to the larger 2. Would have to be to use a ToC properly - see below.)>>
 
 = Initialization & Shutdown (SDL.h) =
 == Initialization & Shutdown (SDL.h) ==
 
 Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
 
+<<Color2(green, Do you want a ToC on these pages now that there is more content than just the functions or will the intro material be so short that it is not necessary? Would probably be better if page title isn't in ToC)>>
+
+
+== Introduction to Initialization ==
+(header to be used w/ ToC) 
 __Initialization__<br/>
 To begin using SDL in your program [[SDL_Init]]() must be called to initialize subsystems and enable use of other SDL functions. 
  {i} The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Multiple subsystems may be or'd together. 
@@ -22,6 +27,8 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 ```
 : Initializes the 3 default subsystems plus the [[CategoryVideo|Video]] and [[CategoryAudio|Audio]] subsystems.
 
+== Introduction to Shut Down ==
+(header to be used w/ ToC) 
 __Shut Down__<br/>
 [[SDL_Quit]]() should be called before an SDL application exits to shut down all subsystems, including the default ones.
 * It is not necessary to specify individual subsystems when using [[SDL_Quit]]().  It will automatically shut down all active subsystems. 
