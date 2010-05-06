@@ -6,7 +6,7 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-<<Color2(green,Format is displaying one possible option for these pages.)>>
+<<Color2(green,This format is displaying one possible option for these pages.)>>
 
 = Force Feedback Support (SDL_haptic.h) =
 
