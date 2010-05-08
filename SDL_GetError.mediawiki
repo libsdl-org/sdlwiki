@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetError =
+Use this function to ^get more information about an error^.
+
+
+== Syntax ==
+```c++
+char* SDL_GetError(void)
+```
+
+== Return Value ==
+A pointer to (a enum? filled with) information about the specific error that occurred.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_ClearError]] ???
+
+----
+[[CategoryAPI]], [[CategoryError]]
