@@ -13,6 +13,8 @@
 
 == Introduction ==
 
+<<Color2(green,Should the introduction sections include a list of the include files that are relevant to each header?  (ie: the #include items at the beginning of each header.))>>
+
 The SDL Haptic subsystem allows you to control haptic (force feedback) devices.
 
 The basic usage is as follows:
