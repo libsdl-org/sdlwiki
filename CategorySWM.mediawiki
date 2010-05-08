@@ -6,9 +6,21 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-= Platform-specific Window Management (SDL_syswm.h) =
+<<Color2(green,This is another possible format for the Category pages w/ Intro materials.  Uses bigger starting heading format.  Removes header name from title and moves it to top of Intro. Adds related headers list to beginning of Intro.  Uses Introduction and Functions secondary headers.)>>
+
+= Platform-specific Window Management =
 
 == Introduction ==
+
+<<Color2(red,SDL_syswm.h)>> - Include file ^required^ for SDL custom system window manager hooks.
+
+Related headers you may also want to include ''-or-'' Other Include files you may want to apply/load:
+* [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_stdinc.h SDL_stdinc.h]
+* [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
+* [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h]
+* [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
+
+<<Color2(green,Seems like there should be an intro to this paragraph but I'm not sure how to fill in the blanks.)>>
 
 Your application has access to a special type of event SDL_SYSWMEVENT, which contains window-manager specific information and arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
 
