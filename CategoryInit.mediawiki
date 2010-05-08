@@ -15,6 +15,8 @@ This is the main include header for the SDL library.
 
 Functions in this category are used to set up SDL 1.3 for use and generally have global effects in your program.
 
+As of version 0.5, SDL is loaded dynamically into the application.
+
 <<Color2(green, Do you want a ToC on these pages now that there is more content than just the functions or will the intro material be so short that it is not necessary?  This page shows the heading size differences to choose from.  Also possible alternative wording for headings - not so sure of those.  Need to use two intro headings because this has separate init and shut down sections in one header?)>>
 
 
