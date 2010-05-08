@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SetError =
+Use this function to ^create the content of an error message^.
+
+
+== Syntax ==
+```c++
+void SDL_SetError(const char* fmt, 
+                  ...)
+```
+
+== Function Parameters ==
+{|
+|'''fmt'''
+|a pointer to information about the format of the error ???
+|-
+|''''''
+|
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryError]]
