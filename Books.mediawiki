@@ -1,3 +1,6 @@
-RuwXxR  <a href="http://qcitugrldlnl.com/">qcitugrldlnl</a>, [url=http://htcmzwuvnnth.com/]htcmzwuvnnth[/url], [link=http://ohnhdqzspczd.com/]ohnhdqzspczd[/link], http://mjpgddbhoyzp.com/
-----
-CategoryRect
+= Books Related to SDL =
+
+* [http://www.amazon.com/Learn-Making-Games-Charles-Programming/dp/1584504552/ref=sr_1_2?ie=UTF8&s=books&qid=1255150140&sr=8-2 Learn C++ by Making Games|target="blank"] by Erik Yuzwa
+: An introduction to C++, using it to develop games with SDL
+* [http://www.amazon.com/Game-Programming-Start-Finish-Development/dp/1584504323/ref=sr_1_1?ie=UTF8&s=books&qid=1255150140&sr=8-1 Game Programming in C++ Start to Finish|target="blank"]
+: An introduction to game programming using SDL and OpenGL on Windows.
