@@ -4,3 +4,6 @@
 : An introduction to C++, using it to develop games with SDL
 * [http://www.amazon.com/Game-Programming-Start-Finish-Development/dp/1584504323/ref=sr_1_1?ie=UTF8&s=books&qid=1255150140&sr=8-1 Game Programming in C++ Start to Finish|target="blank"]
 : An introduction to game programming using SDL and OpenGL on Windows.
+* [http://www.amazon.com/Teach-Yourself-Games-Programming-Computers/dp/0071544755 Teach Yourself Games Programming] by Alan Thorne
+: "This book provides an overview of game production using C++ and either VC++2005 or Codeblocks and the SDL library." ''(from Amazon.com UK)''
+: Check out chapters 4 and 6 especially!
