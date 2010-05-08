@@ -1,0 +1,26 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ClearError =
+Use this function to ^clear an error message^.
+
+
+== Syntax ==
+```c++
+void SDL_ClearError(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetError]] ???
+
+----
+[[CategoryAPI]], [[CategoryError]]
