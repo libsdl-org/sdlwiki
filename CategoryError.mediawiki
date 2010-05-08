@@ -1,0 +1,20 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
+= Error Handling (SDL_error.h) =
+
+== Introduction ==
+
+Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  
+
+== Functions ==
+
+<<FullSearch(category:CategoryError)>>
+
+----
+CategoryCategory
