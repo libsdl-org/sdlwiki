@@ -12,7 +12,7 @@
 
 == Introduction ==
 
-<<Color2(red,SDL_syswm.h)>> - Include file ^required^ for SDL custom system window manager hooks.
+[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] - Include file ^required^ for SDL custom system window manager hooks.
 
 Related headers you may also want to include ''-or-'' Other Include files you may want to apply/load:
 * [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_stdinc.h SDL_stdinc.h]
