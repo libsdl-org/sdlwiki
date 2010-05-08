@@ -3,6 +3,8 @@
 '''DRAFT'''
 
 = SDL_VERSION =
+<<Color2(green,Should the word "Macro" be in the title above (ie: SDL_VERSION ''(Macro)'')so it is clear that this is not a true function?)>>
+
 Use this ''macro'' to determine ^the^ SDL version ^a/your^ program was compiled against.
 
 
