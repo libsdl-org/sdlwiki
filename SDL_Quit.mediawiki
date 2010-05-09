@@ -1,0 +1,27 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Quit =
+Use this function to clean up all initialized subsystems and unload the dynamically linked library.  You should call it upon all exit conditions.
+
+
+== Syntax ==
+```c++
+void SDL_Quit(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_Init]]
+:[[SDL_QuitSubSystem]]
+
+----
+[[CategoryAPI]], [[CategoryInit]]
