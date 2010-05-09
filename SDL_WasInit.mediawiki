@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_WasInit =
+Use this function to return ^a^ mask of the specified subsystems which have ^previously^ been initialized.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_WasInit(Uint32 flags)
+```
+
+== Function Parameters ==
+{|
+|'''flags'''
+|any of the flags used by [[SDL_Init]](); see [[#flags|Remarks]] for details
+|}
+
+== Return Value ==
+If flags is 0, it returns a mask of all initialized subsystems.  <<Color2(green,Otherwise it returns the initialization status of the specified subsystems. ?????)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple, specific subsystems simultaneously. 
+<<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
+
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_Init]]
+:[[SDL_InitSubSystem]]
+
+----
+[[CategoryAPI]], [[CategoryInit]]
