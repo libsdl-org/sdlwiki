@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_QuitSubSystem =
+Use this function to ,,clean up,, ^quit^ specific SDL subsystems.
+
+
+== Syntax ==
+```c++
+void SDL_QuitSubSystem(Uint32 flags);
+```
+
+== Function Parameters ==
+{|
+|'''flags'''
+|any of the flags used by [[SDL_Init]](); see [[#flags|Remarks]] for details
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously. 
+<<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
+
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_InitSubSystem]]
+:[[SDL_Quit]]
+
+----
+[[CategoryAPI]], [[CategoryInit]]
