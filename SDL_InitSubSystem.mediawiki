@@ -26,10 +26,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
 <span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously. 
 <<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
+
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_Init]]
