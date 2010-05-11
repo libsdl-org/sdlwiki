@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_PeepEvents =
-Use this function to check the event queue for messages and optionally returns them.
+Use this function to check the event queue for messages and optionally return them.
 
 
 == Syntax ==
