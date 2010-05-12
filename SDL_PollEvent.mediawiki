@@ -14,7 +14,7 @@ int SDL_PollEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|If not NULL, the next event is removed from the queue and stored in '''event'''.
+|If not NULL, the next event is removed from the queue and stored in ,,that area,, ^'''event'''^.
 |}
 
 == Return Value ==
