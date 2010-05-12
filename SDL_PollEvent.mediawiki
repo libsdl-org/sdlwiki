@@ -14,8 +14,9 @@ int SDL_PollEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|If not NULL, the next event is removed from the queue and stored in ,,that area,, ^'''event'''^.
+|If not NULL, the next event is removed from the queue and stored in that area ,,'''event''',,.
 |}
+<<Color2(green,Prior to header updates this said "in event" but now reads "in that area" which matches a few other functions w/ the same parameter.)>>
 
 == Return Value ==
 Returns 1 if there are any pending events, or 0 if there are none available; call [[SDL_GetError]]() for more information.  <<Color2(green,The previous author did not include any provision for an error RV. Can this function produce an error or only 0?  Would you still call the error function?)>>
