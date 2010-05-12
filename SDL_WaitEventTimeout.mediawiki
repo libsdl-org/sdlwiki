@@ -15,7 +15,7 @@ int SDL_WaitEventTimeout(SDL_Event* event,
 == Function Parameters ==
 {|
 |'''event'''
-|if not NULL, the next event is removed from the queue and stored in ,,that area,, ^'''event'''^
+|if not NULL, the next event is removed from the queue and stored in that area ,,'''event''',,
 |-
 |'''timeout'''
 |^the number of milliseconds to wait for the next available event^
