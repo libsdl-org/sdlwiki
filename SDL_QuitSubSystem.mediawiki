@@ -8,7 +8,7 @@ Use this function to ,,clean up,, ^quit^ specific SDL subsystems.
 
 == Syntax ==
 ```c++
-void SDL_QuitSubSystem(Uint32 flags);
+void SDL_QuitSubSystem(Uint32 flags)
 ```
 
 == Function Parameters ==
