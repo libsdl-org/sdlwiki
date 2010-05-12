@@ -9,8 +9,6 @@
 This wiki is your portal to documentation and other resources for SDL 1.3.
 
 
-/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send e-mail to slouken@libsdl.org
-
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading on the left-hand menu to access:
 
