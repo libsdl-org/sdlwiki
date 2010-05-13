@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SetError =
-Use this function to ^create the content of an error message^.
+Use this function to set the SDL error string.
 
 
 == Syntax ==
