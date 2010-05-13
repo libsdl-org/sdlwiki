@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetError =
-Use this function to ^get more information about an error^.
+Use this function to retrieve an SDL error string.
 
 
 == Syntax ==
