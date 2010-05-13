@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_ClearError =
-Use this function to ^clear an error message^.
+Use this function to clear any previous errors.
 
 
 == Syntax ==
