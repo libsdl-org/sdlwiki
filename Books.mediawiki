@@ -19,3 +19,5 @@
 * [http://www.amazon.com/Structures-Programmers-Premier-Press-Development/dp/1931841942/ref=sr_1_1?ie=UTF8&s=books&qid=1273790911&sr=1-1 Data Structures for Game Programmers] (Premier Press Game Development) by Ron Penton
 : The included CD contains an SDL Primer by Ernest Pazera.
 : ''"SDL, a cross-platform graphics library, is used for the demos and the coverage of that is almost worth the price of admission. (though I recommend Focus on SDL in addition)"'' ~-(Amazon.com)-~
+
+* [[http://www.nostarch.com/plg.htm|
