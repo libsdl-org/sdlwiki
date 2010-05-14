@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetEventFilter =
+Use this function to return the current event filter.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
+                            void**           userdata)
+```
+
+== Function Parameters ==
+{|
+|'''filter'''
+|a pointer to the SDL_EventFilter to be read/called ???
+|-
+|'''userdata'''
+|a pointer to a pointer containing user-specified data
+|}
+
+== Return Value ==
+Returns the current event filter.  If there is no event filter set, this function returns SDL_FALSE.  
+
+<<Color2(green,Does it return SDL_TRUE if there is a filter or does it return other text describing the filter?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Can be used to "chain" filters.
+
+== Related Functions ==
+:[[SDL_SetEventFilter]]
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
