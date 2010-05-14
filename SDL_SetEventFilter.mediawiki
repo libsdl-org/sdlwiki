@@ -23,6 +23,7 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 
 == Return Value ==
 <<Color2(green,RV is "void" but there is clearly a RV message in the header.  ???)>>
+<<Color2(green,Is this really a RV or just a note on how to set it up?)>>
 
 If the filter returns 1, then the event will be added to the internal queue.
 If it returns 0, then the event will be dropped from the queue, but the internal state will still be updated.  This allows selective filtering of dynamically arriving events.
