@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FilterEvents =
+Use this function to run the filter function on the current event queue, removing any events for which the filter returns 0.
+
+
+== Syntax ==
+```c++
+void SDL_FilterEvents(SDL_EventFilter filter,
+                      void*           userdata)
+```
+
+== Function Parameters ==
+{|
+|'''filter'''
+|^typedef int (SDLCALL * SDL_EventFilter) (void *userdata, SDL_Event * event); ???  the SDL_EventFilter to be referenced/run ???^
+|-
+|'''userdata'''
+|^a pointer filled with user-specified information to be filtered^
+|}
+
+== Return Value ==
+If the filter returns 1, then the event will be added to the internal queue. If it returns 0, then the event will be dropped from the queue, but the internal state will still be updated. This allows selective filtering of dynamically arriving events. 
+
+<<Color2(green,Is this really a RV or just a note on how to set it up?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
