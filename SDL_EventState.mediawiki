@@ -1,0 +1,63 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_EventState =
+Use this function to set the state of processing certain events.
+
+
+== Syntax ==
+```c++
+Uint8 SDL_EventState(Uint8 type,
+                     int   state)
+```
+
+== Function Parameters ==
+{|
+|'''type'''
+|^the type of event to be processed^
+|-
+|'''state'''
+|^the state by which to process the event^; see [[#Remarks|Remarks]] for details
+|}
+
+== Return Value ==
+<<Color2(green,Not sure if this is correct. Suspect it is not.  Not sure what Uint8 RVs look like.)>>
+
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+'''state''' may be any of the following:
+{|
+|SDL_QUERY
+|-1
+|,,[[SDL_EventState]]() will,, return^s^ the current processing state of the specified event
+|-
+|SDL_IGNORE
+|0
+|the event will automatically be dropped from the event queue and will not be filtered
+|-
+|SDL_DISABLE
+|0
+|^same as SDL_IGNORE^ ???
+|-
+|SDL_ENABLE
+|1
+|the event will be processed normally
+|}
+
+<<Color2(green,Below is the verbatim language from the header. Thought it might be better in table form above???)>>
+
+If state is set to SDL_IGNORE, that event will be automatically dropped from the event queue and will not event be filtered.<br/>
+If state is set to ::SDL_ENABLE, that event will be processed normally.<br/>
+If state is set to ::SDL_QUERY, [[SDL_EventState]]() will return the current processing state of the specified event.
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
