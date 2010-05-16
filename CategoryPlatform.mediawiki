@@ -1,0 +1,26 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+<<Color2(green,Yet another possible format for these pages.)>>
+
+= Platform Detection =
+
+Primary include file:  '''SDL_platform.h'''
+
+Optional includes:  begin_code.h
+
+
+== Introduction ==
+
+
+
+== Functions ==
+
+<<FullSearch(category:CategoryPlatform)>>
+
+----
+CategoryCategory
