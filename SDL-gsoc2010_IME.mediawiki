@@ -4,7 +4,7 @@ The code is available here:
 http://hg.libsdl.org/SDL-gsoc2010_IME
 
 
-== Status Updates ==
+== Status ==
 
 == Documentation ==
 
