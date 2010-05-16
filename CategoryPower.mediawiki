@@ -5,13 +5,15 @@
 
 = Power Management Status =
 
-Include:  '''SDL_power.h'''
+Primary Include:  '''SDL_power.h'''
+
+Other Includes:  SDL_stdinc.h
 
 <<Color2(green,Should the include note for the header be a link assuming we keep that on these pages?)>>
 
 
 == Introduction ==
-Functions in this category allow you to gather power management data. 
+This category contains the SDL power management routines. 
 
 == Functions ==
 
