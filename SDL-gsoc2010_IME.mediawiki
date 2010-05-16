@@ -1,0 +1,11 @@
+This is a scratch pad for the IME Summer of Code 2010 project, by Daniel Wyatt
+
+The code is available here:
+http://hg.libsdl.org/SDL-gsoc2010_IME
+
+
+== Status Updates ==
+
+== Documentation ==
+
+== Notes ==
