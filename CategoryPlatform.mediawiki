@@ -11,11 +11,13 @@
 
 Primary include file:  '''SDL_platform.h'''
 
-Optional includes:  begin_code.h
+Optional includes:  begin_code.h, close_code.h 
+
+<<Color2(green,The "optional includes" listed here probably aren't optional but I put them in as samples to fill the space.)>>
 
 
 == Introduction ==
-
+Functions in this category allow you to gather information about the platform you are working on / are compiling/creating for.
 
 
 == Functions ==
