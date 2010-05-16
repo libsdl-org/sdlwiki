@@ -1,0 +1,50 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetPowerInfo =
+Use this function to get the current power supply details.
+
+
+== Syntax ==
+```c++
+SDL_PowerState SDL_GetPowerInfo(int* secs,
+                                int* pct)
+```
+
+== Function Parameters ==
+{|
+|'''secs'''
+|seconds of battery life left. You can pass a NULL here if you don't care. Will return -1 if we can't determine a value, or we're not running on a battery
+|-
+|'''pct'''
+|percentage of battery life left, between 0 and 100. You can pass a NULL here if you don't care. Will return -1 if we can't determine a value, or we're not running on a battery
+|}
+
+alternative text:
+{|
+|'''secs'''
+|seconds of battery life left; pass a NULL if irrelevant/unimportant
+|-
+|'''pct'''
+|percentage of battery life left, between 0 and 100; pass a NULL if irrelevant/unimportant
+|}
+
+== Return Value ==
+Returns the state of the battery (if any).
+
+<<Color2(green,Below is text that was listed as param in the header but seems more relevant here or in Remarks.)>>
+,,Both parameters will,, return^s^ -1 if a value can't be determined, or if not running on a battery.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryPower]]
