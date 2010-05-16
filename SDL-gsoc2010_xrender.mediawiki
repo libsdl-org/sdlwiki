@@ -1,0 +1,11 @@
+This is a scratch pad for the XRender Google Summer of Code 2010 project, by Sunny Sachanandani
+
+The code is available here:
+http://hg.libsdl.org/SDL-gsoc2010_xrender
+
+
+== Status ==
+
+== Documentation ==
+
+== Notes ==
