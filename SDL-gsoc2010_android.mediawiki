@@ -1,0 +1,11 @@
+This is a scratch pad for the Android Google Summer of Code 2010 project, by Paul Hunkin
+
+The code is available here:
+http://hg.libsdl.org/SDL-gsoc2010_android
+
+
+== Status ==
+
+== Documentation ==
+
+== Notes ==
