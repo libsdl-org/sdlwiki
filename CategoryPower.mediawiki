@@ -1,0 +1,21 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= Power Management Status =
+
+Include:  '''SDL_power.h'''
+
+<<Color2(green,Should the include note for the header be a link assuming we keep that on these pages?)>>
+
+
+== Introduction ==
+Functions in this category allow you to gather power management data. 
+
+== Functions ==
+
+<<FullSearch(category:CategoryPower)>>
+
+----
+CategoryCategory
