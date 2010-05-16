@@ -31,7 +31,9 @@ alternative text:
 |}
 
 == Return Value ==
-Returns the state of the battery (if any).
+Returns the state of the battery (if any).  Return values may be any of the following:
+
+<<Include(SDL_PowerState, , , from="== Values ==", to="== Code Examples ==")>>
 
 <<Color2(green,Below is text that was listed as param in the header but seems more relevant here or in Remarks.)>>
 ,,Both parameters will,, return^s^ -1 if a value can't be determined, or if not running on a battery.
