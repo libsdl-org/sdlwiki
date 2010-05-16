@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_PowerState =
+An enumeration of the basic state ,,for,, ^of^ the system's power supply.
+
+
+== Values ==
+{|
+|SDL_POWERSTATE_UNKNOWN
+|cannot determine power status
+|-
+|SDL_POWERSTATE_ON_BATTERY
+|not plugged in, running on the battery
+|-
+|SDL_POWERSTATE_NO_BATTERY
+|plugged in, no battery available
+|-
+|SDL_POWERSTATE_CHARGING
+|plugged in, charging battery
+|-
+|SDL_POWERSTATE_CHARGED
+|plugged in, battery charged
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetPowerInfo]]
+
+----
+[[CategoryEnum]]
