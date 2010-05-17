@@ -1,0 +1,19 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= Byte Order and Byte Swapping =
+
+Primary Include: [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h]
+
+
+== Introduction ==
+This category contains functions for reading and writing endian-specific values.
+
+== Functions ==
+
+<<FullSearch(category:CategoryEndian)>>
+
+----
+CategoryCategory
