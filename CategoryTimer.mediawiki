@@ -1,0 +1,20 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= Timer Support =
+
+Primary Include:  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h]
+
+
+== Introduction ==
+
+This category contains the SDL time management routines.
+
+== Functions ==
+
+<<FullSearch(category:CategoryTimer)>>
+
+----
+CategoryCategory
