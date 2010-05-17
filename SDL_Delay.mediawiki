@@ -1,0 +1,31 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Delay =
+Use this function to wait a specified number of milliseconds before returning.
+
+
+== Syntax ==
+```c++
+void SDL_Delay(Uint32 ms)
+```
+
+== Function Parameters ==
+{|
+|'''ms'''
+|the number of milliseconds to delay (32-bit)
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryTimer]]
