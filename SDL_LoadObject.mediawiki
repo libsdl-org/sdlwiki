@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_LoadObject =
+Use this function to dynamically load a shared object and return a pointer to the object handle.
+
+
+== Syntax ==
+```c++
+void* SDL_LoadObject(const char* sofile)
+```
+
+== Function Parameters ==
+{|
+|'''sofile'''
+|a system dependent name of the object file
+|}
+
+== Return Value ==
+<<Color2(green,This has a "void" RV but this text in the description. Should this info be reported in Remarks instead?)>>
+
+Returns a pointer to the object handle (or NULL if there was an error).
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_UnloadObject]] ???
+
+----
+[[CategoryAPI]], [[CategorySharedObject]]
