@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AddTimer =
+Use this function to add a new timer to the pool of timers already running.
+
+
+== Syntax ==
+```c++
+SDL_TimerID SDL_AddTimer(Uint32               interval,
+                         SDL_NewTimerCallback callback,
+                         void*                param)
+```
+
+== Function Parameters ==
+{|
+|'''interval'''
+|^the time, in milliseconds, to wait/cycle^
+|-
+|'''callback'''
+|^the callback function to run^
+|-
+|'''param'''
+|^a pointer to the parameters of the timer^ ???
+|}
+
+== Return Value ==
+Returns a timer ID, or NULL when an error occurs; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RemoveTimer]] ???
+
+----
+[[CategoryAPI]], [[CategoryTimer]]
