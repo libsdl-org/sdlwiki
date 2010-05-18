@@ -10,7 +10,7 @@ http://hg.libsdl.org/SDL-gsoc2010_shaped_windows
 
 == Notes ==
 
-===Pre-Processing===
+=== Pre-Processing ===
 
 Possible pre-processing pipeline:
 
@@ -21,9 +21,9 @@ input_mask surface -(1)-> 8bit alpha -(2)-> 1bit mask -(3)-> 2D region -(4)-> ar
 <!--  optional, depends on architecture requirements -->
 <!--  this internal function can receive pointers to all the above and use what it needs  -->
 
-===Windows===
+=== Windows ===
 
-====Regions====
+==== Regions ====
 
 Most commonly used is code that essentially sets a "region" which defines which pixels are shown and which are not. Most algorithms uses the Win32 region functions to compose this shape which is simple but works. If Cocoa also uses a shape, it may be good to break out a common "2D shape calculation" algorithm that applies to both architectures. In any case, the input to this process is a binarized (1bit) image. Note that you don't get any "blending" on the edges with this approach.
 
@@ -34,7 +34,7 @@ Here some other sample code:
 * Form app in .Net calling the Win32 Api: http://www.codeproject.com/KB/miscctrl/AlphaForm.aspx
 * Great summary with examples for all modes in Delphi: http://melander.dk/articles/alphasplash/
 
-====Layered Window====
+==== Layered Window ====
 
 Now there is another way to provide transparency using a alpha-bitmap in Windows. The API now is the UpdateLayeredWindow() call:
 * MSDN info: http://msdn.microsoft.com/en-us/library/ms633556%28VS.85%29.aspx
