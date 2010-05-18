@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_LoadFunction =
+Use this function to look up the address of ,,the,, ^a^ named function in the shared object and return it.
+
+
+== Syntax ==
+```c++
+void* SDL_LoadFunction(void*       handle,
+                       const char* name)
+```
+
+== Function Parameters ==
+{|
+|'''handle'''
+|^a pointer to the object handle^
+|-
+|'''name'''
+|^a pointer to the named function in the shared object^
+|}
+
+== Return Value ==
+<<Color2(green,This has a "void" RV but also a pointer. Should this info be reported in Remarks instead?)>>
+
+Returns a pointer to the object handle (or NULL if there was an error).  ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This address is no longer valid after calling [[SDL_UnloadObject]]().
+
+== Related Functions ==
+:[[SDL_UnloadObject]]
+
+----
+[[CategoryAPI]], [[CategorySharedObject]]
