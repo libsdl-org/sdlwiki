@@ -13,16 +13,16 @@
 
 {|
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
-|<width="25%">'''View the header'''
+|'''View the header'''
 |-
-|<width="75%">[CategoryInit|Initialization & Shutdown]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
+|[CategoryInit|Initialization & Shutdown]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
 |-
-|<width="75%">[CategoryError|Error Handling]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
+|[CategoryError|Error Handling]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
 |-
-|<width="75%">[CategoryVersion|Querying SDL Version]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
+|[CategoryVersion|Querying SDL Version]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
 |}
 
 
@@ -30,22 +30,22 @@
 
 {|
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
-|<width="25%">'''View the header'''
+|'''View the header'''
 |-
-|<width="75%">[CategoryVideo|Display Management, Window Management and Rendering]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
+|[CategoryVideo|Display Management, Window Management and Rendering]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
 |-
-|<width="75%">[CategoryPixels|Pixel Formats and Conversion Routines]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h] 
+|[CategoryPixels|Pixel Formats and Conversion Routines]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h] 
 |-
-|<width="75%">[CategoryRect|Rectangle Functions]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h] 
+|[CategoryRect|Rectangle Functions]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h] 
 |-
-|<width="75%">[CategorySurface|Surface Creation and Simple Drawing]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h] 
+|[CategorySurface|Surface Creation and Simple Drawing]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h] 
 |-
-|<width="75%">[CategorySWM|Platform-specific Window Management]] 
-|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] 
+|[CategorySWM|Platform-specific Window Management]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] 
 |}
 
 
@@ -55,16 +55,16 @@
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|<width="75%">[CategoryEvents|Event Handling]] 
+|[CategoryEvents|Event Handling]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
 |-
-|<width="75%">[CategoryKeyboard|Keyboard Support]] 
+|[CategoryKeyboard|Keyboard Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h] 
 |-
-|<width="75%">[CategoryMouse|Mouse Support]] 
+|[CategoryMouse|Mouse Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h] 
 |-
-|<width="75%">[CategoryJoystick|Joystick Support]] 
+|[CategoryJoystick|Joystick Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
 |}
 
