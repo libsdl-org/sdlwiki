@@ -12,59 +12,59 @@
 == Basics ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
-|'''View the header'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|<width="25%">'''View the header'''
 |-
-|[CategoryInit|Initialization & Shutdown]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
+|<width="75%">[CategoryInit|Initialization & Shutdown]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL.h SDL.h] 
 |-
-|[CategoryError|Error Handling]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
+|<width="75%">[CategoryError|Error Handling]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h] 
 |-
-|[CategoryVersion|Querying SDL Version]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
+|<width="75%">[CategoryVersion|Querying SDL Version]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h] 
 |}
 
 
 == Video ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
-|'''View the header'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|<width="25%">'''View the header'''
 |-
-|[CategoryVideo|Display Management, Window Management and Rendering]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
+|<width="75%">[CategoryVideo|Display Management, Window Management and Rendering]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h] 
 |-
-|[CategoryPixels|Pixel Formats and Conversion Routines]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h] 
+|<width="75%">[CategoryPixels|Pixel Formats and Conversion Routines]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h] 
 |-
-|[CategoryRect|Rectangle Functions]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h] 
+|<width="75%">[CategoryRect|Rectangle Functions]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rect.h SDL_rect.h] 
 |-
-|[CategorySurface|Surface Creation and Simple Drawing]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h] 
+|<width="75%">[CategorySurface|Surface Creation and Simple Drawing]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h] 
 |-
-|[CategorySWM|Platform-specific Window Management]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] 
+|<width="75%">[CategorySWM|Platform-specific Window Management]] 
+|<width="25%">[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h] 
 |}
 
 
 == Input Events ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[CategoryEvents|Event Handling]] 
+|<width="75%">[CategoryEvents|Event Handling]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h] 
 |-
-|[CategoryKeyboard|Keyboard Support]] 
+|<width="75%">[CategoryKeyboard|Keyboard Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h] 
 |-
-|[CategoryMouse|Mouse Support]] 
+|<width="75%">[CategoryMouse|Mouse Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h] 
 |-
-|[CategoryJoystick|Joystick Support]] 
+|<width="75%">[CategoryJoystick|Joystick Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h] 
 |}
 
@@ -72,7 +72,7 @@
 == Force Feedback ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryForceFeedback|Force Feedback Support]] 
@@ -83,7 +83,7 @@
 == Audio ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryAudio|Audio Device Management, Playing and Recording]] 
@@ -94,7 +94,7 @@
 == File I/O Abstraction ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryIO|File I/O Abstraction]] 
@@ -105,7 +105,7 @@
 == Shared Object Support ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategorySharedObject|Shared Object Loading and Function Lookup]] 
@@ -116,7 +116,7 @@
 == Threads ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryThread|Thread Management]] 
@@ -133,7 +133,7 @@
 == Timers ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryTimer|Timer Support]] 
@@ -144,7 +144,7 @@
 == Platform and CPU Information ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryPlatform|Platform Detection]] 
@@ -161,7 +161,7 @@
 == Power Management ==
 
 {|
-|<tablewidth="100%">'''View information and functions related to...'''
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
 |[CategoryPower|Power Management Status]] 
