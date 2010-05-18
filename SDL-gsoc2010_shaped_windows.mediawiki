@@ -16,10 +16,10 @@ Possible pre-processing pipeline:
 
 input_mask surface -(1)-> 8bit alpha -(2)-> 1bit mask -(3)-> 2D region -(4)-> arch specific set shape
 
-<!--  some setting may be needed for this step, like a key color -->
-<!--  optional, may be enabled via a mode or when architecture needs it -->
-<!--  optional, depends on architecture requirements -->
-<!--  this internal function can receive pointers to all the above and use what it needs  -->
+ 1. some setting may be needed for this step, like a key color
+ 1. optional, may be enabled via a mode or when architecture needs it
+ 1. optional, depends on architecture requirements
+ 1. this internal function can receive pointers to all the above and use what it needs 
 
 === Windows ===
 
