@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ThreadID =
+Use this function to get the thread identifier for the current thread.
+
+
+== Syntax ==
+```c++
+SDL_threadID SDL_ThreadID(void)
+```
+
+== Return Value ==
+Returns the ID of the current thread.  <<Color2(green,What happens on error?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetThreadID]]
+
+----
+[[CategoryAPI]], [[CategoryThread]]
