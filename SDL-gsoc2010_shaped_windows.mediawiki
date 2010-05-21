@@ -21,6 +21,14 @@ input_mask surface -(1)-> 8bit alpha -(2)-> 1bit mask -(3)-> 2D region -(4)-> ar
  1. optional, depends on architecture requirements
  1. this internal function can receive pointers to all the above and use what it needs 
 
+=== X11 ===
+
+* Set via the "Shape Extension" http://en.wikipedia.org/wiki/Shape_extension
+* Documentation with C API http://www.xfree86.org/current/shapelib.html
+* If extension is missing from X, add Load "extmod" to the "Modules" section of the xorg.conf file (=makes for a good error message on shape extension detection).
+
+Per-pixel alpha for window-shapes require support from a "compositing window manager".
+
 === Windows ===
 
 ==== Regions ====
