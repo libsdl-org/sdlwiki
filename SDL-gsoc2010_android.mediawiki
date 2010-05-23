@@ -6,6 +6,8 @@ http://hg.libsdl.org/SDL-gsoc2010_android
 
 == Status ==
 
+* Hello world
+
 == Documentation ==
 
 == Notes ==
