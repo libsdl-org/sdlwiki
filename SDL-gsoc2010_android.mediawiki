@@ -6,7 +6,7 @@ http://hg.libsdl.org/SDL-gsoc2010_android
 
 == Status ==
 
-* Builds against the current (r4) [[Android NDK|http://developer.android.com/sdk/ndk/index.html]
+* Builds against the current (r4) [http://developer.android.com/sdk/ndk/index.html Android NDK]
 * Works enough to get a 'hello world'.
 * None of the subsystems are implemented yet
 
