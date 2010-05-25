@@ -5,7 +5,31 @@ http://hg.libsdl.org/SDL-gsoc2010_IME
 
 
 == Status ==
+I am currently writing non-SDL code to become better acquainted with the TSF.
+I will work on this until I feel confident in the use of the TSF and am ready to come up with a minimum C API for SDL (or determine the existing API is adequate).
 
 == Documentation ==
 
 == Notes ==
+There are two methods for enabling IME support on Windows:
+* [[#TSF|Text Services Framework (TSF)]]
+* [[#IMM|Input Method Manager (IMM)]]
+
+I aim to use only the TSF in this project.
+
+The TSF comes with Windows XP and newer.
+For earlier versions of Windows, you must install it separately.
+I believe the link is: [http://www.microsoft.com/downloads/details.aspx?FamilyID=b4c50c6e-e9dd-4c58-a886-75bd56985f0f&DisplayLang=en Microsoft Windows Text Services Framework Redist files]
+
+<span id="TSF"></span>
+=== TSF ===
+The TSF is the new standard for text input and supports advanced features such as dictation. It is a collection of (many) COM interfaces.
+Sources for information:
+* [http://msdn.microsoft.com/en-us/library/ms629032(VS.85).aspx MSDN Documentation]
+* [http://blogs.msdn.com/tsfaware TSF Aware]
+* DirectX SDK Samples (Direct3D/CustomUI, DXUT/Optional)
+* Mozilla (mozilla-1.9.2/widgets/src/windows/nsTextStore.cpp)
+
+<span id="IMM"></span>
+=== IMM ===
+The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes. This emulation is not perfect and there are known bugs/problems. One of the problems is that you can not do manual rendering by suppressing the rendering of the IME windows (ISC_* values are ignored). This means it may not be possible to have a fullscreen IME application.
