@@ -1,0 +1,22 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= Thread Synchronization Primitives =
+
+Primary Include:  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
+
+Other Includes:  SDL_stdinc.h, SDL_error.h
+
+
+== Introduction ==
+
+Functions in this group provide thread synchronization primitives for functions in the [[CategoryThreads]] group.
+
+== Functions ==
+
+<<FullSearch(category:CategoryMutex)>>
+
+----
+CategoryCategory
