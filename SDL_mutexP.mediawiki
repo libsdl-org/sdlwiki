@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_mutexP =
+Use this function to lock the mutex.
+
+
+== Syntax ==
+```c++
+int SDL_mutexP(SDL_mutex* mutex)
+```
+
+== Function Parameters ==
+{|
+|'''mutex'''
+|^a pointer to the SDL_mutex structure to be locked^
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<<Color2(green,define SDL_LockMutex(m)	SDL_mutexP(m))>> ???
+
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_mutexV]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
