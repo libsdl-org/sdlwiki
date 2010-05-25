@@ -1,0 +1,31 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_CreateMutex =
+Use this function to create a mutex, initialized unlocked.  
+
+<<Color2(green,Is this grammatically correct?  mutex-initialized unlock?  mutex(comma) initialized and unlocked?  '''create and initialize an unlocked mutex'''?)>>
+
+
+== Syntax ==
+```c++
+SDL_mutex* SDL_CreateMutex(void)
+```
+
+== Return Value ==
+^A pointer to an SDL_mutex structure to be initialized in an unlocked state.^
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_DestroyMutex]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
