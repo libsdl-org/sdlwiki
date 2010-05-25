@@ -27,6 +27,7 @@ The TSF is the new standard for text input and supports advanced features such a
 Sources for information:
 * [http://msdn.microsoft.com/en-us/library/ms629032(VS.85).aspx MSDN Documentation]
 * [http://blogs.msdn.com/tsfaware TSF Aware]
+* [http://msdn.microsoft.com/en-us/library/ms971336.aspx ReadComp Source (MSDN)]
 * DirectX SDK Samples (Direct3D/CustomUI, DXUT/Optional)
 * Mozilla (mozilla-1.9.2/widgets/src/windows/nsTextStore.cpp)
 
