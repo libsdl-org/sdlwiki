@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_mutexV =
+Use this function to unlock the mutex.
+
+
+== Syntax ==
+```c++
+int SDL_mutexV(SDL_mutex* mutex)
+```
+
+== Function Parameters ==
+{|
+|'''mutex'''
+|^a pointer to the SDL_mutex structure to be unlocked^
+|}
+
+== Return Value ==
+Returns 0 on success, or -1 on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+/!\ {i} It is an error to unlock a mutex that has not been locked by the current thread, and doing so results in undefined behavior.
+
+<<Color2(green,define SDL_UnlockMutex(m)	SDL_mutexV(m))>> ???
+
+== Related Functions ==
+:[[SDL_mutexP]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
