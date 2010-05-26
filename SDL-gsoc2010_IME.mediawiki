@@ -33,4 +33,4 @@ Sources for information:
 
 <span id="IMM"></span>
 === IMM ===
-The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes. This emulation is not perfect and there are known bugs/problems. One of the problems is that you can not do manual rendering by suppressing the rendering of the IME windows (ISC_* values are ignored). This means it may not be possible to have a fullscreen IME application.
+The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes. This emulation is not perfect and there are known bugs/problems. One of the problems is that you can not do manual rendering by suppressing the rendering of the IME windows (ISC_* values are ignored). This means it may not be possible to have a fullscreen IME application using only the IMM interfaces.
