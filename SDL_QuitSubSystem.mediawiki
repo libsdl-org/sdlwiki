@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_QuitSubSystem =
-Use this function to ,,clean up,, ^quit^ specific SDL subsystems.
+Use this function to shut down specific SDL subsystems.
 
 
 == Syntax ==
@@ -19,14 +19,35 @@ void SDL_QuitSubSystem(Uint32 flags)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include "SDL.h"
+
+/* ... */
+
+int main(int argc, char **argv) {
+    int sdl_initialized = 0;
+    sdl_initialized = !SDL_Init(0);
+
+    /* ... console stuff ... */
+
+    if (sdl_initialized && SDL_InitSubSystem(SDL_INIT_VIDEO)) {
+        display_graph();
+        SDL_QuitSubSystem(SDL_INIT_VIDEO);
+    }
+
+    /* ... more console stuff ... */
+
+    if (sdl_initialized) SDL_Quit();
+    return 0;
+}
 ```
 
 == Remarks ==
-<span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously. 
+<span id="flags"></span>These are the flags which may be passed to SDL_QuitSubSystem() and may be OR'd together to quit multiple subsystems simultaneously. 
 <<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
 
-''You can add useful comments here''
+If you start a subsystem using a call to that subsystem's init function (for example [[SDL_VideoInit]]()) instead of [[SDL_Init]]() or [[SDL_InitSubSystem]](), SDL_QuitSubSystem() and [[SDL_WasInit]]() will not work.  You will need to use that subsystem's quit function ([[SDL_VideoQuit]]()) directly instead.
+
+You still need to call [[SDL_Quit]]() even if you close all open subsystems with SDL_QuitSubSystem.
 
 == Related Functions ==
 :[[SDL_InitSubSystem]]
