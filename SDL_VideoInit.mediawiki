@@ -18,21 +18,52 @@ int SDL_VideoInit(const char* driver_name,
 |initialize a specific driver by name, or NULL for the default video driver
 |-
 |'''flags'''
-|<style="color: #FF0000;"> FIXME: Still needed?
+|this should be either SDL_INIT_EVENTTHREAD or 0.  See [[SDL_Init]]() for the meaning of SDL_INIT_EVENTTHREAD.
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns 0 on success or -1 on failure.  Call [[SDL_GetError]]() to retrieve the error message.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include "SDL.h"
+
+SDL_bool videoinit = SDL_FALSE;
+
+void OnQuit() {
+  if (videoinit)
+    SDL_VideoQuit();
+  SDL_Quit();
+}
+
+int main(int argc, char** argv) {
+  if (SDL_Init(0) != 0) {
+    printf("Error initializing SDL:  %s\n", SDL_GetError());
+    return 1;
+  }
+  atexit(OnQuit);
+  
+  if (SDL_VideoInit(NULL, 0) != 0) {
+    printf("Error initializing SDL video:  %s\n", SDL_GetError());
+    return 2;
+  }
+  videoinit = SDL_TRUE;
+  
+  /* ... */
+  
+  return 0;
+}
 ```
 
 == Remarks ==
-This function initializes the video subsystem; setting up a connection to the window manager, etc, and determines the available display modes and pixel formats, but does not initialize a window or graphics mode.
+This function initializes the video subsystem, setting up a connection to the window manager, etc, and determines the available display modes and pixel formats, but does not initialize a window or graphics mode.
+
+If you use this function and you haven't used the SDL_INIT_VIDEO flag with either [[SDL_Init]]() or [[SDL_InitSubSystem]](), you should call [[SDL_VideoQuit]]() before calling [[SDL_Quit]]().
+
+It is safe to call this function multiple times. [[SDL_VideoInit]]() will call [[SDL_VideoQuit]]() itself if the video subsystem has already been initialized.
 
 == Related Functions ==
+:[[SDL_InitSubSystem]]
 :[[SDL_VideoQuit]]
 
 ----
