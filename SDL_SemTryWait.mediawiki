@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SemTryWait =
+Use this function ,,to,, ^as a^ non-blocking ,,variant of,, ^alternative to^ [[SDL_SemWait]]().
+
+
+== Syntax ==
+```c++
+int SDL_SemTryWait(SDL_sem* sem)
+```
+
+== Function Parameters ==
+{|
+|'''sem'''
+|^a pointer to the SDL_sem structure to be monitored^
+|}
+
+== Return Value ==
+Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, and -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,Seems like this should have some explanation that you would choose this function if you have a thread that will be ruined if it is blocked but it would be better if it could be stalled a bit if necessary and possible.  As compared to SDL_SemWait which will block the thread regardless of the result to the thread.  Is that right?)>>
+
+== Related Functions ==
+:[[SDL_SemWait]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
