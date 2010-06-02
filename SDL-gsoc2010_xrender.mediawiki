@@ -19,7 +19,7 @@ Render protocol description: http://www.x.org/releases/X11R7.5/doc/renderproto/r
 
 The difficulty with streaming textures is because shared pixmaps are not allowed on most modern X11 drivers. Since XRender requires a Drawable type (i.e. a Pixmap or a Window) to work with, one solution (only when shared memory is available) is to use XShmPutImage to transfer texture data onto a Pixmap and then use XRender but this approach would waste memory. Where there is no shared memory support we can't even employ XPutImage since there will be a lot of overhead in transmitting the texture data to the server.
 
-As soon as the work on supporting textures is done, I will add support cool stuff like scaling, modulating etc.
+As soon as the work on supporting textures is done, I will add support for cool stuff like scaling, modulating etc.
 
 == Notes ==
 
