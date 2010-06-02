@@ -22,6 +22,8 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
 == Return Value ==
 Returns ^the current semaphore value for the resource^ on success, or NULL on failure; call [[SDL_GetError]]() for more information.
 
+<<Color2(green,-OR- does it return a positive value when the resource is available and 0 when it is in use?)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
