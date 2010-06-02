@@ -32,6 +32,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_SemWait]]
+:[[SDL_SemWaitTimeout]] ???
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
