@@ -14,6 +14,8 @@ Other Includes:  SDL_thread.h, SDL_stdinc.h, SDL_error.h
 
 ^Mutex functions are used to coordinate multiple threads using or calling the same resource to avoid interference that may cause instability in the program.  Threads take turns locking (accessing) the resource one at a time.  Waiting threads are queued up based on the mutex algorithm and take their turn locking (accessing) the shared resource as each previous function unlocks (releases) the resource.^
 
+^Semaphore functions are used to determine whether resources are available to be allocated to a process in the queue.^
+
 Functions in this group provide thread synchronization primitives for functions in the [[CategoryThreads]] group.
 
 == Functions ==
