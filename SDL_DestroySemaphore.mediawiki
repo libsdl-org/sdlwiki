@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_DestroySemaphore =
+Use this function to destroy a semaphore.
+
+
+== Syntax ==
+```c++
+void SDL_DestroySemaphore(SDL_sem* sem)
+```
+
+== Function Parameters ==
+{|
+|'''sem'''
+|^a pointer to the SDL_sem structure to be destroyed^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateSemaphore]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
