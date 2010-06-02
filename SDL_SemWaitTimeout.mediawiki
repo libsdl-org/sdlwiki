@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SemWaitTimeout =
+Use this function ,,to,, ^as a^ variant of [[SDL_SemWait]]() with a timeout in milliseconds.
+
+
+== Syntax ==
+```c++
+int SDL_SemWaitTimeout(SDL_sem* sem,
+                       Uint32   ms)
+```
+
+== Function Parameters ==
+{|
+|'''sem'''
+|^a pointer to the SDL_sem structure to monitor^
+|-
+|'''ms'''
+|the length of the timeout in milliseconds
+|}
+
+== Return Value ==
+Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait does not succeed in the allotted time, and -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+/!\ {i} On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible.
+
+== Related Functions ==
+:[[SDL_SemTryWait]] ???
+:[[SDL_SemWait]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
