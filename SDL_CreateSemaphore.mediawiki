@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_CreateSemaphore =
+Use this function to create a semaphore, initialized with value, returns NULL on failure.
+
+<<Color2(green,Should this description stop at semaphore and the remaining info be moved below?)>>
+
+
+== Syntax ==
+```c++
+SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
+```
+
+== Function Parameters ==
+{|
+|'''initial_value'''
+|^the starting value for the semaphore^
+|}
+
+== Return Value ==
+Returns ^the current semaphore value for the resource^ on success, or NULL on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_DestroySemaphore]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
