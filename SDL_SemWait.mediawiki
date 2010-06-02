@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SemWait =
+Use this function to suspend the calling thread until the semaphore pointed to by '''sem''' has a positive count, then atomically (?? automatically ??) decrease the semaphore count.
+
+
+== Syntax ==
+```c++
+int SDL_SemWait(SDL_sem* sem)
+```
+
+== Function Parameters ==
+{|
+|'''sem'''
+|^a pointer to the SDL_sem structure to be monitored^
+|}
+
+== Return Value ==
+Returns ^the count less the portion allocated when the resource becomes available and re-allocated^ ,,on success,,, ^0 on busy/unavailable^, or a negative error code on failure; call [[SDL_GetError]]() for more information. ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SemTryWait]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
