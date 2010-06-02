@@ -6,6 +6,21 @@ http://hg.libsdl.org/SDL-gsoc2010_xrender
 
 == Status ==
 
+June 2, 2010:
+'''SDL_RenderFillRect(s) should now be using XRender on supported systems.''' By default alpha blending (SDL_BLENDMODE_BLEND) is done but I will soon add support for the other blending modes as well.
+
+There is a slight difficulty in supporting streaming textures (textures with access set to SDL_TEXTUREACCESS_STREAMING). 
+
 == Documentation ==
 
+libXrender documentation: http://www.x.org/releases/X11R7.5/doc/libXrender/libXrender.txt
+
+Render protocol description: http://www.x.org/releases/X11R7.5/doc/renderproto/renderproto.txt
+
+The difficulty with streaming textures is because shared pixmaps are not allowed on most modern X11 drivers. Since XRender requires a Drawable type (i.e. a Pixmap or a Window) to work with, one solution (only when shared memory is available) is to use XShmPutImage to transfer texture data onto a Pixmap and then use XRender but this approach would waste memory. Where there is no shared memory support we can't even employ XPutImage since there will be a lot of overhead in transmitting the texture data to the server.
+
+As soon as the work on supporting textures is done, I will add support cool stuff like scaling, modulating etc.
+
 == Notes ==
+
+Remember that XRender uses 16 bit per color channel and hence there might be a slight mismatch between the intended color (which is in 8 bit per channel) and the color on the screen. Such a mismatch should not be noticeable to the human eye.
