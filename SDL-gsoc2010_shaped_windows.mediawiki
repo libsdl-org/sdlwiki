@@ -16,6 +16,13 @@ I actually want to add a few extra drawing functions to the SDL rendering API fo
 When the user is finished drawing the shape of a window using the rendering functions, they simply call SDL_RenderPresent() on that same rendering target to actually
 
 == Notes ==
+=== Compiling and Running Test Program ===
+==== Linux ====
+* obtain repository: hg pull; hg update
+* compile SDL: ./configure; make; sudo make install
+* compile test: cd test; ./configure; make
+* run test: ./testeyes
+
 === Pre-Processing ===
 Possible pre-processing pipelines:
 
