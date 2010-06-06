@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_DestroyCond =
+Use this function to destroy a condition variable.
+
+
+== Syntax ==
+```c++
+void SDL_DestroyCond(SDL_cond* cond)
+```
+
+== Function Parameters ==
+{|
+|'''cond'''
+|^a pointer to the SDL_cond structure to be destroyed^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateCond]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
