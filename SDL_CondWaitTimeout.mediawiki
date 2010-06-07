@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_CondWaitTimeout =
+Use this function to ^wait on a condition variable for a fixed delay^.
+
+<<Color2(green,The description in the header is too long and too detailed.  Tried to put in a simple summary.  Should it be the longer description?)>>
+
+
+== Syntax ==
+```c++
+int SDL_CondWaitTimeout(SDL_cond*  cond,
+                        SDL_mutex* mutex,
+                        Uint32     ms)
+```
+
+== Function Parameters ==
+{|
+|'''cond'''
+|^a pointer to the SDL_cond structure that is being applied^ ???
+|-
+|'''mutex'''
+|^a pointer to the SDL_mutex structure to be timed out^ ???
+|-
+|'''ms'''
+|^the maximum number of milliseconds to wait^
+|}
+
+== Return Value ==
+Returns 0 if the condition variable is signaled, SDL_MUTEX_TIMEDOUT if the condition is not signaled in the allotted time, and -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+/!\ {i} On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible. 
+
+== Related Functions ==
+:[[SDL_CondWait]] ???
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
