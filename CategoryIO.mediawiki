@@ -1,0 +1,21 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= File I/O Abstraction =
+
+Primary Include:  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h]
+
+Other Includes: SDL_stdinc.h, SDL_error.h 
+
+
+== Introduction ==
+This file provides a general interface for SDL to read and write data sources.  It can easily be extended to files, memory, etc.
+
+== Functions ==
+
+<<FullSearch(category:CategoryIO)>>
+
+----
+CategoryCategory
