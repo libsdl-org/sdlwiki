@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWFromFile =
+Use this function to create [[SDL_RWops]] structures from files.
+
+
+== Syntax ==
+```c++
+SDL_RWops* SDL_RWFromFile(const char* file,
+                          const char* mode)
+```
+
+== Function Parameters ==
+{|
+|'''file'''
+|^a pointer to the file containing the information to fill an [[SDL_RWops]] structure with^
+|-
+|'''mode'''
+|^a pointer to the mode to be used for/in the [[SDL_RWops]] structure^
+|}
+
+== Return Value ==
+A pointer to the [[SDL_RWops]] structure that is created.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RWFromConstMem]] ???
+:[[SDL_RWFromFP]] ???
+:[[SDL_RWFromMem]] ???
+
+----
+[[CategoryAPI]], [[CategoryIO]]
