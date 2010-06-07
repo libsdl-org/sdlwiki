@@ -1,0 +1,49 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWFromFP =
+Use this function to create [[SDL_RWops]] structures from <<Color2(green,an FP (a floating-point)???)>>.
+
+
+== Syntax ==
+```c++
+#ifdef HAVE_STDIO_H
+SDL_RWops* SDL_RWFromFP(FILE*    fp,
+                        SDL_bool autoclose)
+#else
+SDL_RWops* SDL_RWFromFP(void*    fp,
+                        SDL_bool autoclose)
+#endif
+```
+
+== Function Parameters ==
+{|
+|'''fp'''
+|^a pointer to a floating-point contained in a file to fill an [[SDL_RWops]] structure with^ ???
+|-
+|'''fp'''
+|^a pointer to a floating-point to fill an [[SDL_RWops]] structure with^ ???
+|-
+|'''autoclose'''
+|^SDL_TRUE to autoclose or SDL_FALSE to leave the structure open^ ???
+|}
+
+== Return Value ==
+A pointer to the [[SDL_RWops]] structure that is created.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RWFromConstMem]] ???
+:[[SDL_RWFromFile]] ???
+:[[SDL_RWFromMem]] ???
+
+----
+[[CategoryAPI]], [[CategoryIO]]
