@@ -11,19 +11,13 @@ Use this function to create [[SDL_RWops]] structures from <<Color2(green,an FP (
 #ifdef HAVE_STDIO_H
 SDL_RWops* SDL_RWFromFP(FILE*    fp,
                         SDL_bool autoclose)
-#else
-SDL_RWops* SDL_RWFromFP(void*    fp,
-                        SDL_bool autoclose)
-#endif
 ```
+<<Color2(green, Does the ifdef stay in?)>>
 
 == Function Parameters ==
 {|
 |'''fp'''
 |^a pointer to a floating-point contained in a file to fill an [[SDL_RWops]] structure with^ ???
-|-
-|'''fp'''
-|^a pointer to a floating-point to fill an [[SDL_RWops]] structure with^ ???
 |-
 |'''autoclose'''
 |^SDL_TRUE to autoclose or SDL_FALSE to leave the structure open^ ???
