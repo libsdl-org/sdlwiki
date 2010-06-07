@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWFromMem =
+Use this function to create [[SDL_RWops]] structures from memory.
+
+
+== Syntax ==
+```c++
+SDL_RWops* SDL_RWFromMem(void* mem,
+                         int   size)
+```
+
+== Function Parameters ==
+{|
+|'''mem'''
+|^a pointer to the memory location containing the information to fill an [[SDL_RWops]] structure with^
+|-
+|'''size'''
+|^the size of the memory location^ ???
+|}
+
+== Return Value ==
+A pointer to the [[SDL_RWops]] structure that is created.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RWFromConstMem]] ???
+:[[SDL_RWFromFile]] ???
+:[[SDL_RWFromFP]] ???
+
+
+----
+[[CategoryAPI]], [[CategoryIO]]
