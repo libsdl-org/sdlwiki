@@ -3,21 +3,19 @@
 '''DRAFT'''
 
 = SDL_RWFromFP =
-Use this function to create [[SDL_RWops]] structures from <<Color2(green,an FP (a floating-point)???)>>.
+Use this function to create [[SDL_RWops]] structures from a standard I/O file pointer.
 
 
 == Syntax ==
 ```c++
-#ifdef HAVE_STDIO_H
 SDL_RWops* SDL_RWFromFP(FILE*    fp,
                         SDL_bool autoclose)
 ```
-<<Color2(green, Does the ifdef stay in?)>>
 
 == Function Parameters ==
 {|
 |'''fp'''
-|^a pointer to a floating-point contained in a file to fill an [[SDL_RWops]] structure with^ ???
+|^a file pointer used to fill an [[SDL_RWops]] structure^ ???
 |-
 |'''autoclose'''
 |^SDL_TRUE to autoclose or SDL_FALSE to leave the structure open^ ???
