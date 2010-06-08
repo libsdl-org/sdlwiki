@@ -2,8 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Joystick Support (SDL_joystick.h) ==
+= Joystick Support =
+
+'''Primary Include:''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_joystick.h SDL_joystick.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryJoystick)>>
 
