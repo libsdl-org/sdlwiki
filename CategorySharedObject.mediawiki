@@ -2,10 +2,11 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
 = Shared Object Loading and Function Lookup =
 
-Primary Include: [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h]
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h]
 
 Other Includes: SDL_stdinc.h, SDL_error.h
 
