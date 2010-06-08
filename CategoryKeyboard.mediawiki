@@ -2,8 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Keyboard Support (SDL_keyboard.h) ==
+= Keyboard Support =
+
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryKeyboard)>>
 
