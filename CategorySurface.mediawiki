@@ -2,8 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Surface Creation and Simple Drawing (SDL_surface.h) ==
+= Surface Creation and Simple Drawing =
+
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategorySurface)>>
 
