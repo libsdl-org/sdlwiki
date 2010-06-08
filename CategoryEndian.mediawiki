@@ -2,10 +2,11 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
 = Byte Order and Byte Swapping =
 
-Primary Include: [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h]
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_endian.h SDL_endian.h]
 
 
 == Introduction ==
