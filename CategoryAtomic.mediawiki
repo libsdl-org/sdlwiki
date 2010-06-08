@@ -2,10 +2,18 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Atomic Operations for 32 and 64 Bit Values (SDL_atomic.h) ==
+= Atomic Operations for 32 and 64 Bit Values =
 
-<<FullSearchCached(category:CategoryAtomic)>>
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h]
+
+
+== Introduction ==
+
+== Functions ==
+
+<<FullSearch(category:CategoryAtomic)>>
 
 ----
 CategoryCategory
