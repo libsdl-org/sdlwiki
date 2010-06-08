@@ -8,6 +8,8 @@
 
 = Error Handling (SDL_error.h) =
 
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
+
 == Introduction ==
 
 Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  
