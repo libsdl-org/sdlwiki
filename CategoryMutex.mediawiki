@@ -2,6 +2,7 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
 = Thread Synchronization Primitives =
 
@@ -12,11 +13,21 @@ Other Includes:  SDL_thread.h, SDL_stdinc.h, SDL_error.h
 
 == Introduction ==
 
-^Mutex functions are used to coordinate multiple threads using or calling the same resource to avoid interference that may cause instability in the program.  Threads take turns locking (accessing) the resource one at a time.  Waiting threads are queued up based on the mutex algorithm and take their turn locking (accessing) the shared resource as each previous function unlocks (releases) the resource.^
+Functions in this group provide thread synchronization primitives for functions in the [[CategoryThread|Thread Management]] group.
 
-^Semaphore functions are used to determine whether resources are available to be allocated to a process in the queue.^
+=== Mutex ===
+^If you have heard the phrase "mutually exclusive" then you already know the basic idea of a mutex.  Mutex (__mut__ual __ex__clusion) functions are used to protect data structures.  By coordinating multiple threads using or calling the same data source a mutex prevents interference between threads that may cause instability in the program.  Threads take turns locking the mutex (accessing the resource) one at a time.  Waiting threads are queued up based on the mutex algorithm and take their turn locking (accessing) the shared resource as each previous thread unlocks (releases) the mutex.  Only the thread that has locked the mutex can access the data structure to read or write to it.^
+ ^''Analogy:'' This is a little like needing a key to access the restroom at a gas station.^
+*^The mutex is the clerk at the counter who controls access to the key.^
+*^The restroom is the data structure.^
+*^An individual needing to use the restroom is a thread.^
+ ^The person who currently possesses the key has access to use the restroom and everyone else must wait.  Once the key is returned to the clerk anyone waiting for the restroom may then attempt to get the key from the clerk.  Eventually each waiting person will get their turn, but the restroom cannot be used by more than one person at a time in this way.  (Please disregard the 'human factor' in this analogy, which allows individuals to break rules.  Thankfully computers are much less prone to do so.)^  ;)
 
-Functions in this group provide thread synchronization primitives for functions in the [[CategoryThreads]] group.
+=== Semaphore ===
+^Semaphore functions are used to determine whether a data structure is available to be allocated to a thread.  Semaphores count - up or down.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that^
+
+=== Condition Variable ===
+
 
 == Functions ==
 
