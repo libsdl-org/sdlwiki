@@ -2,8 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Event Handling (SDL_events.h) ==
+= Event Handling =
+
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_events.h SDL_events.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryEvents)>>
 
