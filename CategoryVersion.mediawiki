@@ -6,9 +6,12 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-== Querying SDL Version (SDL_version.h) ==
-''-or-''
-=== Querying SDL Version (SDL_version.h) ===
+= Querying SDL Version =
+
+'''Primary Include:''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
+
+
+== Introduction ==
 
 These functions are used to collect or display information about the version of SDL that is currently being used by the program.
 
@@ -16,9 +19,9 @@ These functions are used to collect or display information about the version of 
 * X = '''Major Version''', which increments with massive changes, additions, and enhancements
 * Y = '''Minor Version''', which increments with backwards-compatible changes to the major revision
 * Z = '''Patchlevel''', which increments with fixes to the minor revision<br/>
- ''Example:'' 1.3.0
+ ''Example:'' The current version is 1.3.0
 
-{i} There are four (4) macros <<Color2(green,Create a link to a resource that describes macros)>> that apply to this header.
+{i} There are four (4) macros ''(<<Color2(green,Create a link to a resource that describes macros)>>)'' that apply to this header.
 
 * [[SDL_VERSION]]
 * This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information.
@@ -30,8 +33,6 @@ These functions are used to collect or display information about the version of 
 * A minor macro that confirms whether a program was compiled with a version no older than the specified version.
 
 == Functions ==
-''-or-''
-=== Functions ===
 
 <<FullSearch(category:CategoryVersion)>>
 
