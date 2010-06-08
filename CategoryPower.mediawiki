@@ -2,14 +2,15 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
 = Power Management Status =
 
-Primary Include:  '''SDL_power.h'''
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_power.h SDL_power.h]
 
 Other Includes:  SDL_stdinc.h
 
-<<Color2(green,Should the include note for the header be a link assuming we keep that on these pages?)>>
+<<Color2(green,Is this 'other include' actually optional?  Should it be listed on every page?)>>
 
 
 == Introduction ==
