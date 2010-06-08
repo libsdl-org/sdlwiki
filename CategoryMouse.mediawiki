@@ -2,8 +2,16 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Mouse Support (SDL_mouse.h) ==
+= Mouse Support =
+
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryMouse)>>
 
