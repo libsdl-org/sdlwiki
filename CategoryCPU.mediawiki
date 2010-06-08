@@ -2,8 +2,15 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== CPU Feature Detection (SDL_cpuinfo.h) ==
+= CPU Feature Detection =
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_cpuinfo.h SDL_cpuinfo.h]
+
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryCPU)>>
 
