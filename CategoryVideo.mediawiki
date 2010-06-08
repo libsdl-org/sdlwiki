@@ -2,8 +2,15 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+'''DRAFT'''
 
-== Display Management, Window Management and Rendering (SDL_video.h) ==
+= Display Management, Window Management and Rendering =
+
+'''Primary Include''': [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h]
+
+== Introduction ==
+
+== Functions ==
 
 <<FullSearch(category:CategoryVideo)>>
 
