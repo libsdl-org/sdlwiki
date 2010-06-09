@@ -5,8 +5,13 @@ http://hg.libsdl.org/SDL-gsoc2010_IME
 
 
 == Status ==
-I am currently writing non-SDL code to become better acquainted with the TSF.
-I will work on this until I feel confident in the use of the TSF and am ready to come up with a minimum C API for SDL (or determine the existing API is adequate).
+I am mostly working on test code for using the TSF in an OpenGL application.
+The code is in EXCLUDE/GLTSF.
+I have made minimal changes to SDL itself because I am not familiar enough with the TSF just yet.
+
+Right now, IME input should work in SDL windows but not in fullscreen.
+I have tested on Windows XP SP3 and Windows 7 (in VirtualBox).
+I have not implemented the actual SDL text input functions yet.
 
 == Documentation ==
 
