@@ -6,7 +6,7 @@
 
 = Thread Synchronization Primitives =
 
-Primary Include:  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
+'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
 
 Other Includes:  SDL_thread.h, SDL_stdinc.h, SDL_error.h
 
@@ -16,17 +16,28 @@ Other Includes:  SDL_thread.h, SDL_stdinc.h, SDL_error.h
 Functions in this group provide thread synchronization primitives for functions in the [[CategoryThread|Thread Management]] group.
 
 === Mutex ===
-^If you have heard the phrase "mutually exclusive" then you already know the basic idea of a mutex.  Mutex (__mut__ual __ex__clusion) functions are used to protect data structures.  By coordinating multiple threads using or calling the same data source a mutex prevents interference between threads that may cause instability in the program.  Threads take turns locking the mutex (accessing the resource) one at a time.  Waiting threads are queued up based on the mutex algorithm and take their turn locking (accessing) the shared resource as each previous thread unlocks (releases) the mutex.  Only the thread that has locked the mutex can access the data structure to read or write to it.^
- ^''Analogy:'' This is a little like needing a key to access the restroom at a gas station.^
-*^The mutex is the clerk at the counter who controls access to the key.^
-*^The restroom is the data structure.^
-*^An individual needing to use the restroom is a thread.^
- ^The person who currently possesses the key has access to use the restroom and everyone else must wait.  Once the key is returned to the clerk anyone waiting for the restroom may then attempt to get the key from the clerk.  Eventually each waiting person will get their turn, but the restroom cannot be used by more than one person at a time in this way.  (Please disregard the 'human factor' in this analogy, which allows individuals to break rules.  Thankfully computers are much less prone to do so.)^  ;)
+~-If you understand the phrase "mutually exclusive" then you already know the basic idea of a mutex.  Mutex, or __mut__ual __ex__clusion, functions are used to protect data structures in multi-threaded processes.  By coordinating multiple threads using or calling the same data source a mutex prevents interference between threads that may cause instability in the program.  Threads take turns locking the mutex (accessing the resource) one at a time.  Waiting threads are queued up ^based on the mutex algorithm? / based on the OS?^ and take their turn locking (accessing) the shared resource as each previous thread unlocks (releases) the mutex.  Only the thread that has locked the mutex can access the data structure to read or write to it.-~
+ ~-''Analogy:'' This is similar to needing a key to access the restroom at a gas station.-~
+  ~-*The clerk at the counter who controls access to the key is like the ''mutex''.-~<br/>
+  ~-*The restroom is like the ''data structure''.-~<br/>
+  ~-*An individual needing to use the restroom is like a ''thread''.-~<br/>
+ ~-If someone (''a thread'') wants to use the bathroom (''data structure'') they must request permission from the clerk (''mutex''), who only has 1 key to give out.  The person who currently possesses the key (''locks the mutex'') has access to use the restroom and everyone else must wait.  Once the key is returned to the clerk anyone waiting for the restroom may then attempt to get the key from the clerk.  Eventually each waiting person will get their turn, but the restroom cannot be used by more than one person at a time in this way.  (Please disregard the 'human factor' in this analogy, which allows individuals to break rules.  Thankfully computers are much less prone to do so.)-~  ;)
 
 === Semaphore ===
-^Semaphore functions are used to determine whether a data structure is available to be allocated to a thread.  Semaphores count - up or down.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that^
+~-Semaphore functions are used to determine whether a data structure is available to be allocated to a thread.  Semaphores count - up from 0 or down from a preset starting point.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that something has run out.  Exactly how to use or interpret a semaphore depends upon the application.-~
+
+ ~-''Analogy - counting up:''This is similar to -~
 
 === Condition Variable ===
+~-Condition Variables in SDL are used to monitor the status of a data structure or structures and alert waiting functions when there has been a change in status.-~
+
+ ~-''Analogy:'' This is similar to -~
+
+'''''Here is an analogy that utilizes all three primitives together.'''''
+ ~-Imagine a buffet-style restaurant.  You, the customer, are one of the ''threads'' waiting to utilize the goods and services (data structures) available at this restaurant.  When you enter the restaurant you are first met by a Host(ess) (''a thread'').  (S)He asks for a number of individuals in your party and checks to see if there is an available table.  It wouldn't do to send you through the buffet line only to have you find nowhere to sit.
+*''Semaphores'' track the number of available tables of each size, counting down from the maximum number of tables of each size as patrons are seated.  The Host(ess) checks the appropriate semaphore for the table size needed for your party.  If the number is 0 you are requested to wait.  If the number is __>__1 you are allowed to enter the buffet line.  In addition, the Host(ess) ^simultaneously / also?^ decrements (reduces the count by 1) the ''semaphore'' for that size table, so (s)he knows it is taken.
+ Once a table is available you are ushered through to the next phase.  The next person you meet is the Buffet Manager (another ''thread'').  (You'll have to be a little flexible with the analogy at this point.)  One of the Buffet Manager's jobs is to ensure that no one passes through the buffet line unless a plate, cup, spoon, fork, and knife (the hardware) is available for them.  (We're not going to address the actual food here, but it could work similarly to the hardware.)  Unfortunately (s)he is not able to see the stacks of hardware at the buffet from where (s)he greets the patrons.  In addition, there must be enough available to send each entire party through together.
+*In order to know when it is OK to send someone through the buffet (s)he checks the ''semaphores'' that are monitoring the available count of each type of hardware.  In order to make the process as efficient as possible a ''condition variable'' is set up to alert the Buffet Manager whenever a semaphore count changes, rather than requiring the Buffet Manager to constantly check for changes.  This alert tells the Buffet Manager to check the numbers again to see if the count has become high enough for each type of hardware to let the next party through to the buffet line.  If, following an alert, there is still not enough hardware ready for the next party, then the Buffet Manager can go back to other tasks and ignore the counts until another alert from the ''condition variable'' comes through again.  Once there are enough pieces of hardware available for the next party to pass through, the Buffet Manager ushers them to the next step - the buffet line.-~
 
 
 == Functions ==
