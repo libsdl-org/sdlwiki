@@ -5,8 +5,7 @@ http://hg.libsdl.org/SDL-gsoc2010_IME
 
 
 == Status ==
-I am mostly working on test code for using the TSF in an OpenGL application.
-The code is in EXCLUDE/GLTSF.
+I am mostly working on test code for using the TSF in an OpenGL application (you can check it out from http://hg.libsdl.org/SDL-gsoc2010_IME/EXCLUDE/GLTSF).
 I have made minimal changes to SDL itself because I am not familiar enough with the TSF just yet.
 
 Right now, IME input should work in SDL windows but not in fullscreen.
