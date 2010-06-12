@@ -23,8 +23,7 @@ There are two methods for enabling IME support on Windows:
 I aim to use only the TSF in this project.
 
 The TSF comes with Windows XP and newer.
-For earlier versions of Windows, you must install it separately.
-I believe the link is: [http://www.microsoft.com/downloads/details.aspx?FamilyID=b4c50c6e-e9dd-4c58-a886-75bd56985f0f&DisplayLang=en Microsoft Windows Text Services Framework Redist files]
+For earlier versions of Windows, you must install it separately: [http://www.microsoft.com/downloads/details.aspx?FamilyID=b4c50c6e-e9dd-4c58-a886-75bd56985f0f&DisplayLang=en Microsoft Windows Text Services Framework Redist files]
 
 <span id="TSF"></span>
 === TSF ===
