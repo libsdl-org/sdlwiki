@@ -15,6 +15,12 @@ Other Includes:  SDL_thread.h, SDL_stdinc.h, SDL_error.h
 
 Functions in this group provide thread synchronization primitives for functions in the [[CategoryThread|Thread Management]] group.
 
+There are 3 primitives available in SDL, the:
+*[[#Mutex|Mutex]]
+*[[#Semaphore|Semaphore]]
+*[[#CondVar|Condition Variable]]
+
+<span id="Mutex"></span>
 === Mutex ===
 ~-If you understand the phrase "mutually exclusive" then you already know the basic idea of a mutex.  Mutex, or __mut__ual __ex__clusion, functions are used to protect data structures in multi-threaded processes.  By coordinating multiple threads using or calling the same data source a mutex prevents interference between threads that may cause instability in the program.  Threads take turns locking the mutex (accessing the resource) one at a time.  Waiting threads are queued up ^based on the mutex algorithm? / based on the OS?^ and take their turn locking (accessing) the shared resource as each previous thread unlocks (releases) the mutex.  Only the thread that has locked the mutex can access the data structure to read or write to it.-~
  ~-''Analogy:'' This is similar to needing a key to access the restroom at a gas station.-~
@@ -23,21 +29,38 @@ Functions in this group provide thread synchronization primitives for functions 
   ~-*An individual needing to use the restroom is like a ''thread''.-~<br/>
  ~-If someone (''a thread'') wants to use the bathroom (''data structure'') they must request permission from the clerk (''mutex''), who only has 1 key to give out.  The person who currently possesses the key (''locks the mutex'') has access to use the restroom and everyone else must wait.  Once the key is returned to the clerk anyone waiting for the restroom may then attempt to get the key from the clerk.  Eventually each waiting person will get their turn, but the restroom cannot be used by more than one person at a time in this way.  (Please disregard the 'human factor' in this analogy, which allows individuals to break rules.  Thankfully computers are much less prone to do so.)-~  ;)
 
+<span id="Semaphore"></span>
 === Semaphore ===
 ~-Semaphore functions are used to determine whether a data structure is available to be allocated to a thread.  Semaphores count - up from 0 or down from a preset starting point.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that something has run out.  Exactly how to use or interpret a semaphore depends upon the application.-~
 
  ~-''Analogy - counting up:''This is similar to -~
 
+<span id="CondVar"></span>
 === Condition Variable ===
 ~-Condition Variables in SDL are used to monitor the status of a data structure or structures and alert waiting functions when there has been a change in status.-~
 
  ~-''Analogy:'' This is similar to -~
 
-'''''Here is an analogy that utilizes all three primitives together.'''''
- ~-Imagine a buffet-style restaurant.  You, the customer, are one of the ''threads'' waiting to utilize the goods and services (data structures) available at this restaurant.  When you enter the restaurant you are first met by a Host(ess) (''a thread'').  (S)He asks for a number of individuals in your party and checks to see if there is an available table.  It wouldn't do to send you through the buffet line only to have you find nowhere to sit.
-*''Semaphores'' track the number of available tables of each size, counting down from the maximum number of tables of each size as patrons are seated.  The Host(ess) checks the appropriate semaphore for the table size needed for your party.  If the number is 0 you are requested to wait.  If the number is __>__1 you are allowed to enter the buffet line.  In addition, the Host(ess) ^simultaneously / also?^ decrements (reduces the count by 1) the ''semaphore'' for that size table, so (s)he knows it is taken.
+'''''Here is an analogy that utilizes all three primitives together:'''''
+ ~-Imagine a buffet-style restaurant.  You, the customer, are one of the ''threads'' waiting to utilize the goods and services (data structures) available at this restaurant.  When you enter the restaurant you are first met by a Host(ess) (''a thread'').  (S)He asks for the number of individuals in your party and checks to see if there is an available table.  (It wouldn't do to send you through the buffet line only to have you find nowhere to sit.)  <<Color2(green,It seems that there would be a data structure or something that would record the number in your party and transfer that information to the Buffet Manager for his/her decision-making purpose.  What form would that likely take in this analogy?  Not a semaphore right?  Just a data structure - "party size" - that is somehow attached to your group?  Could that info be passed directly to the Buffet Manager by the Host(ess) or would the Buffet Manager need to ask you again?  Would it be data associated with you/your party that would be independently queried by each restaurant worker that needed the information?)>>
+*''Semaphores'' track the number of available tables of each size.
+*They are decremented (reduced) from the maximum number of tables of each size as patrons are seated.  
+*They are increment(increased) up to the maximum as patrons leave and the tables are reset for the next guests.
+*A ''mutex'' protects the count from being changed by more than one restaurant worker at a time.  (ex: If the Host(ess) is changing the number then a Busser cannot be simultaneously changing the number.)
+*A ''condition variable'' monitors the ''semaphores'' for changes.  When a ''semaphore'' count changes the ''condition variable'' alerts the Host(ess) to check the counts to see if the next Party can be seated.
+ The Host(ess) checks the appropriate semaphore for the table size needed for your party.  If the number is 0 you are requested to wait.  If the number is __>__1 you are allowed to enter the buffet line.  
+*In addition, the Host(ess) ^simultaneously / also?^ locks the ''mutex'' and decrements (reduces the count by 1) the ''semaphore'' for that size table, so (s)he knows it is taken and does not accidentally assign it to another party while you are sitting there.  If a Busser has the ''mutex'' locked at that time the Host(ess) must wait to update the count until the Busser is done and unlocks the ''mutex''
  Once a table is available you are ushered through to the next phase.  The next person you meet is the Buffet Manager (another ''thread'').  (You'll have to be a little flexible with the analogy at this point.)  One of the Buffet Manager's jobs is to ensure that no one passes through the buffet line unless a plate, cup, spoon, fork, and knife (the hardware) is available for them.  (We're not going to address the actual food here, but it could work similarly to the hardware.)  Unfortunately (s)he is not able to see the stacks of hardware at the buffet from where (s)he greets the patrons.  In addition, there must be enough available to send each entire party through together.
-*In order to know when it is OK to send someone through the buffet (s)he checks the ''semaphores'' that are monitoring the available count of each type of hardware.  In order to make the process as efficient as possible a ''condition variable'' is set up to alert the Buffet Manager whenever a semaphore count changes, rather than requiring the Buffet Manager to constantly check for changes.  This alert tells the Buffet Manager to check the numbers again to see if the count has become high enough for each type of hardware to let the next party through to the buffet line.  If, following an alert, there is still not enough hardware ready for the next party, then the Buffet Manager can go back to other tasks and ignore the counts until another alert from the ''condition variable'' comes through again.  Once there are enough pieces of hardware available for the next party to pass through, the Buffet Manager ushers them to the next step - the buffet line.-~
+*There are 3 categories of people who interact directly with the hardware -
+*Patrons who take hardware to use, 
+*Bussers who bring clean hardware back, 
+*and the Buffet Manager who ensures that patrons will be able to find the hardware they will need to eat with before sending a party through the buffet line.  
+  To prevent confusion, there is a ''mutex'' protecting the hardware from being changed by more than one person at a time (in this case it could be as simple as the physical space to access the hardware being limited to the size of one person).
+*When a Busser adds hardware (s)he increments (increases) the count for that type of hardware by the number of pieces that are returned.
+*When a Patron takes a piece of hardware to use, the count is decremented (decreased) for that type of hardware.
+*The Buffet Manager does not send a group through the buffet line if there aren't enough pieces of all types of hardware for each member of the party to be able to take one piece.
+*In order to know when it is OK to send a party through the buffet the Buffet Manager must check the ''^semaphores? / some other quantity-tracking data structure?^'' that are monitoring the available count of each type of hardware.  Because of the ''mutex'' the Buffet Manager can only view the current counts when no one else is interacting with the hardware.  This ensures that the Buffet Manager is basing his/her decision to send a group back on current, accurate counts.
+*In order to make the process of checking as efficient as possible a ''condition variable'' is set up to alert the Buffet Manager whenever a hardware count changes, rather than requiring the Buffet Manager to constantly check for changes.  This alert tells the Buffet Manager to check the numbers again to see if the count has become high enough for each type of hardware to let the next party through the buffet line.  If, following an alert, there is still not enough hardware ready for the next party, then the Buffet Manager can go back to other tasks and ignore the counts until another alert from the ''condition variable'' comes through again.  Once there are enough pieces of hardware available for the next party to pass through, the Buffet Manager ushers them to the buffet line.-~
 
 
 == Functions ==
