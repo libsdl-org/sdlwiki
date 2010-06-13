@@ -31,9 +31,9 @@ There are 3 primitives available in SDL, the:
 
 <span id="Semaphore"></span>
 === Semaphore ===
-~-Semaphore functions are used to determine whether a data structure is available to be allocated to a thread.  Semaphores count - up from 0 or down from a preset starting point.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that something has run out.  Exactly how to use or interpret a semaphore depends upon the application.-~
+~-Semaphore functions are used to determine whether a data structure is available to be allocated to a thread, and then potentially permits multiple threads access to the data.  (Often the individual data structures are protected directly by a mutex  Semaphores count - up from 0 or down from a preset starting point.  In both cases the critical value is 0.  For a semaphore counting up, 0 indicates that there is nothing available to be used/worked on.  For a semaphore counting down, 0 indicates that something has run out.  Exactly how to use or interpret a semaphore depends upon the application.-~
 
- ~-''Analogy - counting up:''This is similar to -~
+ ~-''Analogy - counting down:''  This is similar to (count of multiple check stands)-~
 
 <span id="CondVar"></span>
 === Condition Variable ===
