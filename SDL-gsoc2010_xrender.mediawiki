@@ -9,7 +9,12 @@ http://hg.libsdl.org/SDL-gsoc2010_xrender
 June 2, 2010:
 '''SDL_RenderFillRect(s) should now be using XRender on supported systems.''' By default alpha blending (SDL_BLENDMODE_BLEND) is done but I will soon add support for the other blending modes as well.
 
-There is a slight difficulty in supporting streaming textures (textures with access set to SDL_TEXTUREACCESS_STREAMING). 
+There is a slight difficulty in supporting streaming textures (textures with access set to SDL_TEXTUREACCESS_STREAMING).
+
+June 13, 2010:
+'''SDL_RenderFillRect (s) has been changed to use XRenderCompositeTrapezoids which should be faster. SDL_RenderDrawRect (s) also uses XRender now.'''
+
+SDL_RenderDrawLine (s) will use XRender soon.
 
 == Documentation ==
 
@@ -21,6 +26,12 @@ The difficulty with streaming textures is because shared pixmaps are not allowed
 
 As soon as the work on supporting textures is done, I will add support for cool stuff like scaling, modulating etc.
 
+June 13, 2010: It has been decided that XRender won't support streaming textures since this will cause a lot of overhead since shared memory pixmaps are not common in most X11 drivers. This means that streaming textures will continue to be supported by the fallback i.e. the old rendering code.
+
 == Notes ==
 
 Remember that XRender uses 16 bit per color channel and hence there might be a slight mismatch between the intended color (which is in 8 bit per channel) and the color on the screen. Such a mismatch should not be noticeable to the human eye.
+
+Also the various geometric primitives used in XRender use the XFixed type which is basically a fixed decimal type with a scaling factor of 65536, so all SDL coordinates have to be converted with the XDoubleToFixed macro.
+
+It appears that XRenderAddTraps, which is supposed to be a better and faster alternative to XRenderCompositeTrapezoids is not well supported, at least on my hardware.
