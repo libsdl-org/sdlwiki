@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AllocRW =
+Use this function to ^allocate a read/write to a specific SDL_RWops structure^. ???
+
+
+== Syntax ==
+```c++
+SDL_RWops* SDL_AllocRW(void)
+```
+
+== Return Value ==
+^Reads or writes to the specified SDL_RWops structure.^ ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_FreeRW]] ???
+
+----
+[[CategoryAPI]], [[CategoryIO]]
