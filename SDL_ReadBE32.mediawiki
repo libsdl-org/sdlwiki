@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ReadBE32 =
+Use this function to read an item of the specified endianness and return in native format.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_ReadBE32(SDL_RWops* src)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|^the source of the big-endian data to be read^ ???
+|}
+
+== Return Value ==
+^Returns an unsigned 32-bit value equivalent to the big-endian value.^ ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_ReadLE32]]
+<<Color2(green,Should the other Read functions and/or the Write functions be listed here?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
