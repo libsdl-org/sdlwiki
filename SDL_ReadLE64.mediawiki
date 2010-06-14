@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_ReadLE64 =
+Use this function to read an item of the specified endianness and return in native format.
+
+
+== Syntax ==
+```c++
+Uint64 SDL_ReadLE64(SDL_RWops* src)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|^the source of the little-endian data to be read^ ???
+|}
+
+== Return Value ==
+^Returns an unsigned 64-bit value equivalent to the little-endian value.^ ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_ReadBE64]]
+<<Color2(green,Should the other Read functions and/or the Write functions be listed here?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
