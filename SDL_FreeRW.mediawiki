@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FreeRW =
+Use this function to ^release a specified area as a read/write target^. ???
+
+
+== Syntax ==
+```c++
+void SDL_FreeRW(SDL_RWops* area)
+```
+
+== Function Parameters ==
+{|
+|'''area'''
+|^the area being pointed to by an SDL_RWops structure to be freed^ ???
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_AllocRW]] ???
+
+----
+[[CategoryAPI]], [[CategoryIO]]
