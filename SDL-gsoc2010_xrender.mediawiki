@@ -3,6 +3,9 @@ This is a scratch pad for the XRender Google Summer of Code 2010 project, by Sun
 The code is available here:
 http://hg.libsdl.org/SDL-gsoc2010_xrender
 
+A (mostly) project blog is up at:
+http://tocodeisdivine.wordpress.com/
+
 
 == Status ==
 
