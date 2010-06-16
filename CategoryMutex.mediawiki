@@ -93,7 +93,7 @@ Note that a variable the ''condition variable'' is monitoring is generally prote
 *If the count is __>__1 the Dishwashers take turns scraping off the hardware and taking them to the dish-washers to be cleaned.  When a Dishwasher takes hardware the relevant ''semaphore(s)'' is/are decremented to indicate that there are fewer pieces of hardware remaining to be cleaned.  If the count is still __>__1 other Dishwashers will continue to take as many pieces as they can carry and will decrement the count appropriately.
 *<<Color2(green,?? Is a mutex necessary here? ??)>>
 *If the count is 0 the Dishwashers can be performing other tasks like unloading the dish-washing machines and preparing cleaned hardware for Bussers to take back to the buffet, or they can be on a break.
-*In order to ensure that dirty hardware never remains at the dirty station any longer than necessary a ''condition variable'' is in place to alert the Dishwashers whenever the count changes (?? up ??).  <<Color2(green,Can a CV be set up to only alert if the count increments or does it have to alert for any change?)  This way a Dishwasher won't stay on a break if there is work to be done.-~
+*In order to ensure that dirty hardware never remains at the dirty station any longer than necessary a ''condition variable'' is in place to alert the Dishwashers whenever the count changes (?? up ??).  <<Color2(green,Can a CV be set up to only alert if the count increments or does it have to alert for any change?)>>  This way a Dishwasher won't stay on a break if there is work to be done.-~
 
 
 == Functions ==
