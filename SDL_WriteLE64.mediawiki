@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_WriteLE64 =
+Use this function to write an item of native format to the specified endianness.
+
+
+== Syntax ==
+```c++
+size_t SDL_WriteLE64(SDL_RWops* dst,
+                     Uint64     value)
+```
+
+== Function Parameters ==
+{|
+|'''dst'''
+|^a pointer to the destination for the endian data to be written^
+|-
+|'''value'''
+|^the native format value to convert to endian format^
+|}
+
+== Return Value ==
+^A little-endian value of size_t???????????^
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_WriteBE64]]
+<<Color2(green,Should the other Read functions and/or the Write functions be listed here?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
