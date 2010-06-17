@@ -22,7 +22,7 @@ SDL_RWops* SDL_RWFromFP(FILE*    fp,
 |}
 
 == Return Value ==
-A pointer to the [[SDL_RWops]] structure that is created.
+*Returns a pointer to a new RWops structure, or NULL  if it fails. *
 
 == Code Examples ==
 ```c++
@@ -30,7 +30,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This is not available under Win32, since files opened in an application on that platform cannot be used by a dynamically linked library.
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]] ???
