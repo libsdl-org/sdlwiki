@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWFromConstMem =
-Use this function to create [[SDL_RWops]] structures from ^a memory construct^. ???
+Use this function to *prepare a constant memory area for use with RWops. *
 
 
 == Syntax ==
