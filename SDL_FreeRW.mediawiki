@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_FreeRW =
-Use this function to ^release a specified area as a read/write target^. ???
+Use this function to *free an SDL_RWops structure allocated by [[SDL_AllocRW]](). *
 
 
 == Syntax ==
@@ -14,19 +14,29 @@ void SDL_FreeRW(SDL_RWops* area)
 == Function Parameters ==
 {|
 |'''area'''
-|^the area being pointed to by an SDL_RWops structure to be freed^ ???
+|^the SDL_RWops structure to be freed^ ???
 |}
 
 == Code Examples ==
+*
 ```c++
-You can add your code example here
+#include "SDL_rwops.h"
+
+  void dumb_example()
+  {
+    SDL_RWops *rw=SDL_AllocRW();
+    if(rw==NULL) return;
+
+    SDL_FreeRW(rw);
+  }
 ```
+*
 
 == Remarks ==
-''You can add useful comments here''
+*Only use [[SDL_FreeRW]]() on memory allocated by [[SDL_AllocRW]]().  Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for it. *
 
 == Related Functions ==
-:[[SDL_AllocRW]] ???
+:[[SDL_AllocRW]] *
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
