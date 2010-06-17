@@ -50,12 +50,12 @@ Note that a ''semaphore'' can behave much like a ''mutex'' if the count never ex
 
 <span id="CondVar"></span>
 === Condition Variable ===
-~-'''''Condition variables'' in SDL are used to monitor the status of other variables and alert waiting functions when there has been a change.'''  (The ''"variable"'' that they monitor is the ''"condition"'' of another variable.)  They do not protect directly like ''mutexes'' do (and ''semaphores'' can if their max count is 1).  Instead they coordinate threads by monitoring for changes, keeping threads waiting when there is nothing to do, and alerting them when change occurs.  '''This saves time and resources by preventing threads from trying to work on data that isn't available and from constantly checking data that isn't changing.'''
+~-'''''Condition variables'' in SDL are used to monitor the status of other variables and alert waiting functions when there has been a change.'''  (The ''"variable"'' that they monitor is the ''"condition"'' (changed or unchanged) of some complex state.)  They do not protect directly like ''mutexes'' do.  Instead they coordinate threads by monitoring for changes, keeping threads waiting when there is nothing to do, and alerting them when change occurs.  '''This saves time and resources by preventing threads from trying to work on data that isn't available and from constantly checking data that isn't changing.'''
 
-Note that a variable the ''condition variable'' is monitoring is generally protected by a ''mutex'' so that when the ''condition variable'' indicates a change, only one thread at a time can read and potentially change the variable.-~
+Note that the state that the ''condition variable'' is monitoring must always be protected by a ''mutex'' so that when the ''condition variable'' indicates a change, only one thread can read and potentially change the variable at a time.-~
 
  ~-''Analogy:'' This is similar to getting an alert when you have received a text message.  The alert does not tell you who it is from or what it says (at least not on older phones), just that a message has been received.  You then have to look for the details of the message yourself.
-*The ''condition variable'' monitors your inbox and produces an alert telling you when there has been a change in the number of messages (the variable being monitored).
+*The ''condition variable'' monitors your inbox and produces an alert telling you when there has been a change in the number of messages (the state being monitored).
 *You are like a thread waiting for information to arrive in the inbox.
   It is useless to keep getting out your phone and checking the inbox if there is nothing new there.  Having an alert tell you as soon as something has arrived saves you time and energy and ensures that you know the moment a new message becomes available instead of finding it eventually when you get around to checking again.  Similarly, '''''condition variables'' help to keep threads busy when there is something to do but idle when there isn't.'''-~
 
