@@ -15,27 +15,39 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|^a pointer to a memory construct containing the information to fill an [[SDL_RWops]] structure with^
+|^a pointer to a memory location to use for an SDL_RWops structure^ ???
 |-
 |'''size'''
 |^the size of the memory location^ ???
 |}
 
 == Return Value ==
-A pointer to the [[SDL_RWops]] structure that is created.
+*Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. *
 
 == Code Examples ==
+*
 ```c++
-You can add your code example here
+char bitmap[] = {
+    66, 77, 86, 2, 0, 0, 0, 0 ...
+}
+SDL_RWops *rw;
+SDL_Surface *img;
+
+rw = SDL_RWFromConstMem(bitmap, sizeof(bitmap));
+img = SDL_LoadBMP_RW(rw, 1); // Automatically frees the RWops struct for us
+
+// Do something with img...
 ```
+*
 
 == Remarks ==
-''You can add useful comments here''
+*[[SDL_RWFromConstMem]]() sets up a ^SDL_^RWops struct based on a memory area of a certain size. It assumes the memory area is not writable. *
 
 == Related Functions ==
+:[[SDL_FreeRW]] *
 :[[SDL_RWFromFile]] ???
 :[[SDL_RWFromFP]] ???
-:[[SDL_RWFromMem]] ???
+:[[SDL_RWFromMem]] *
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
