@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_AllocRW =
-Use this function to ^allocate a read/write to a specific SDL_RWops structure^. ???
+Use this function to *allocate an empty, unpopulated SDL_RWops structure. *
 
 
 == Syntax ==
@@ -12,18 +12,68 @@ SDL_RWops* SDL_AllocRW(void)
 ```
 
 == Return Value ==
-^Reads or writes to the specified SDL_RWops structure.^ ???
+*Returns a pointer to the allocated memory on success, or NULL on error. *
 
 == Code Examples ==
+*from old wiki*
 ```c++
-You can add your code example here
+#include <string.h>    /* for memset */
+#include "SDL_error.h" /* for SDL_SetError */
+#include "SDL_rwops.h"
+
+/* These functions should not be used except from pointers in a RWops */
+static int myseekfunc(SDL_RWops *context, int offset, int whence)
+{
+  SDL_SetError("Can't seek in this kind of RWops");
+  return(-1);
+}
+
+static int myreadfunc(SDL_RWops *context, void *ptr, int size, int maxnum)
+{
+  memset(ptr,0,size*maxnum);
+  return(maxnum);
+}
+
+static int mywritefunc(SDL_RWops *context, const void *ptr, int size, int num)
+{
+  return(num);
+}
+
+static int myclosefunc(SDL_RWops *context)
+{
+  if(context->type != 0xdeadbeef)
+  {
+    SDL_SetError("Wrong kind of RWops for myclosefunc()");
+    return(-1);
+  }
+
+  free(context->hidden.unknown.data1);
+  SDL_FreeRW(context);
+  return(0);
+}
+
+/* Note that this function is NOT static -- we want it directly callable from other source files */
+SDL_RWops *MyCustomRWop()
+{
+  SDL_RWops *c=SDL_AllocRW();
+  if(c==NULL) return(NULL);
+
+  c->seek =myseekfunc;
+  c->read =myreadfunc;
+  c->write=mywritefunc;
+  c->close=myclosefunc;
+  c->type =0xdeadbeef;
+  c->hidden.unknown.data1=malloc(256);
+  return(c);
+}
+
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*You must free any memory allocated ,,with,, ^using^ [[SDL_AllocRW]]() with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. * /!\
 
 == Related Functions ==
-:[[SDL_FreeRW]] ???
+:[[SDL_FreeRW]] *
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
