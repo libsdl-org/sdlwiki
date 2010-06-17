@@ -31,7 +31,7 @@ There are 3 primitives available in SDL:
 
 <span id="Semaphore"></span>
 === Semaphore ===
-~-'''''Semaphores'' have 2 features - they count resources and they snooze threads.'''  They can either count up from 0 or down from a preset starting point.  In both cases a value of 0 indicates that there are no available resources.  '''When the count is 0 a ''semaphore'' tells threads to wait until the resource count is >0.'''  Because of the potential to permit multiple threads access to the same resource (ex: a job queue), the individual data structures are often protected directly by a mutex and the semaphore acts as a 2nd layer of regulation.
+~-'''''Semaphores'' have 2 features - they count resources and they snooze threads.'''  They can either count up from 0 or down from a preset starting point.  In both cases a value of 0 indicates that there are no available resources.  '''When the count is 0 a ''semaphore'' tells threads to wait until the resource count is >0.'''  Because of the potential to permit multiple threads access to the same resource (ex: a job queue), the individual data structures are often protected directly by a ''mutex'' and the ''semaphore'' acts as a second layer of regulation.
 
 Note that a ''semaphore'' can behave much like a ''mutex'' if the count never exceeds 1.  Like a ''mutex'', a ''semaphore'' limited to 1 can only allow 1 thread past its "check point" in the process.  This effectively removes the possibility of another thread using the same data simultaneously.-~
 
