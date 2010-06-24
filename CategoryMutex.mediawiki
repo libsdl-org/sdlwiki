@@ -6,7 +6,7 @@
 
 = Thread Synchronization Primitives =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h], [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h]
 
 
 == Introduction ==
