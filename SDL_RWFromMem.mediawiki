@@ -3,7 +3,8 @@
 '''DRAFT'''
 
 = SDL_RWFromMem =
-Use this function to create [[SDL_RWops]] structures from memory.
+Use this function to create an SDL_RWops structure from memory of a certain size.
+<<Color2(green,Currently no SDL_RWops page so no link.)>>
 
 
 == Syntax ==
@@ -15,28 +16,31 @@ SDL_RWops* SDL_RWFromMem(void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|^a pointer to the memory location containing the information to fill an [[SDL_RWops]] structure with^
+|^a pointer to the memory location^
 |-
 |'''size'''
 |^the size of the memory location^ ???
 |}
 
 == Return Value ==
-A pointer to the [[SDL_RWops]] structure that is created.
+A pointer to the SDL_RWops structure that is created, or NULL on failure.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+char bitmap[310000];
+SDL_RWops *rw;
+
+rw = SDL_RWFromMem(bitmap, sizeof(bitmap));
+SDL_SaveBMP_RW(screen, rw, 0);
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If the memory is not writable, use [[SDL_RWFromConstMem]]() instead.
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]] ???
 :[[SDL_RWFromFile]] ???
 :[[SDL_RWFromFP]] ???
-
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
