@@ -6,7 +6,7 @@
 
 = Surface Creation and Simple Drawing =
 
-'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_surface.h SDL_surface.h]
 
 
 == Introduction ==
