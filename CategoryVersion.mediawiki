@@ -8,7 +8,7 @@
 
 = Querying SDL Version =
 
-'''Primary Include:''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_version.h SDL_version.h]
 
 
 == Introduction ==
@@ -21,7 +21,7 @@ These functions are used to collect or display information about the version of 
 * Z = '''Patchlevel''', which increments with fixes to the minor revision<br/>
  ''Example:'' The current version is 1.3.0
 
-{i} There are four (4) macros ''(<<Color2(green,Create a link to a resource that describes macros)>>)'' that apply to this header.
+{i} There are four (4) macros ''(<<Color2(green,Need to create a link to a resource that introduces macros.)>>)'' that apply to this header.
 
 * [[SDL_VERSION]]
 * This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information.
