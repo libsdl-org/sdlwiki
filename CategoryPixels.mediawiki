@@ -5,7 +5,7 @@
 '''DRAFT'''
 
 = Pixel Formats and Conversion Routines =
-'''Primary Include:''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h]
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_pixels.h SDL_pixels.h]
 
 
 == Introduction ==
