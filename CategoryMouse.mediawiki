@@ -6,7 +6,7 @@
 
 = Mouse Support =
 
-'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mouse.h SDL_mouse.h]
 
 
 == Introduction ==
