@@ -3,7 +3,8 @@
 '''DRAFT'''
 
 = SDL_RWFromFP =
-Use this function to create [[SDL_RWops]] structures from a standard I/O file pointer.
+Use this function to create an SDL_RWops structure from a standard I/O file pointer.
+<<Color2(green,There is currently no page for SDL_RWops so no link.)>>
 
 
 == Syntax ==
@@ -15,18 +16,26 @@ SDL_RWops* SDL_RWFromFP(FILE*    fp,
 == Function Parameters ==
 {|
 |'''fp'''
-|^a file pointer used to fill an [[SDL_RWops]] structure^ ???
+|^a pointer to the file to open (in the structure ???)^
 |-
 |'''autoclose'''
-|^SDL_TRUE to autoclose or SDL_FALSE to leave the structure open^ ???
+|^non-0 to autoclose or 0 to leave the file open when the structure is closed^ ???
 |}
 
 == Return Value ==
-*Returns a pointer to a new RWops structure, or NULL  if it fails. *
+*Returns a pointer to a new RWops structure, or NULL if it fails. *
 
 == Code Examples ==
 ```c++
-You can add your code example here
+FILE *fp;
+SDL_RWops *rw;
+
+fp = fopen("myfile.dat", "rb");
+rw = SDL_RWFromFP(fp, 1);
+
+// Do things with rw...
+
+SDL_RWclose(rw); // Automatically does an fclose(fp)
 ```
 
 == Remarks ==
