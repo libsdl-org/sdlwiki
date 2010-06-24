@@ -8,11 +8,7 @@
 
 = Platform Detection =
 
-'''Primary include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_platform.h SDL_platform.h]
-
-Optional includes:  begin_code.h, close_code.h 
-
-<<Color2(green,The "optional includes" listed here probably aren't optional but I put them in as samples to fill the space.)>>
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_platform.h SDL_platform.h]
 
 
 == Introduction ==
