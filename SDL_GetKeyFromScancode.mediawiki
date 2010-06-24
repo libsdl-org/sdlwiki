@@ -18,7 +18,7 @@ SDLKey SDL_GetKeyFromScancode(SDL_scancode scancode)
 |}
 
 == Return Value ==
-The SDLKey that corresponds to the given SDL_scancode. ???
+The [[SDLKey]] that corresponds to the given SDL_scancode. ???
 
 == Code Examples ==
 ```c++
@@ -26,10 +26,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-See SDLKey for details. <<Color2(green, There is no info to link this to a page unless it links to SDL_keysym)>>
+See [[SDLKey]] for details.
 
 == Related Functions ==
 :[[SDL_GetKeyName]]
+:[[SDL_GetScancodeFromKey]] ???
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
