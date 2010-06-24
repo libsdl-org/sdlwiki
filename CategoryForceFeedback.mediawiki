@@ -6,14 +6,12 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-<<Color2(green,This format is displaying one possible option for these pages.)>>
-
 = Force Feedback Support (SDL_haptic.h) =
+
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h]
 
 
 == Introduction ==
-
-<<Color2(green,Should the introduction sections include a list of the include files that are relevant to each header?  (ie: the #include items at the beginning of each header.))>>
 
 The SDL Haptic subsystem allows you to control haptic (force feedback) devices.
 
