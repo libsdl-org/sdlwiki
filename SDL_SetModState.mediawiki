@@ -14,7 +14,7 @@ void SDL_SetModState(SDLMod modstate)
 == Function Parameters ==
 {|
 |'''modstate'''
-|the desired state of the key modifier for the current keyboard
+|the desired [[SDLMod]] for the current keyboard
 |}
 
 == Code Examples ==
