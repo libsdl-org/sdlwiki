@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AtomicLock =
+Use this function to lock a spin lock by setting it to a ,,none zero,, ^non-0 / non-zero^ value.
+
+
+== Syntax ==
+```c++
+void SDL_AtomicLock(SDL_SpinLock* lock)
+```
+
+== Function Parameters ==
+{|
+|'''lock'''
+|points to the lock
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+/!\ The spin lock functions and type are required and can not be emulated because they are used in the emulation code.
+
+== Related Functions ==
+:[[SDL_AtomicUnlock]]
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
