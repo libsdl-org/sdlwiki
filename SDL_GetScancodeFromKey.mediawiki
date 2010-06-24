@@ -29,6 +29,7 @@ You can add your code example here
 See SDL_scancode for details. <<Color2(green, There is no info to link this to a page unless it only links to SDLKey)>>
 
 == Related Functions ==
+:[[SDL_GetKeyFromScancode]] ???
 :[[SDL_GetScancodeName]]
 
 ----
