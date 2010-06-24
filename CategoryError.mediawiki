@@ -8,7 +8,7 @@
 
 = Error Handling (SDL_error.h) =
 
-'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_error.h SDL_error.h]
 
 
 == Introduction ==
