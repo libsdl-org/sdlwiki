@@ -12,7 +12,7 @@ SDLMod SDL_GetModState(void)
 ```
 
 == Return Value ==
-The current key modifier state for the selected keyboard. ???  <<Color2(green,Is there a list of modifier states that should be included here like On and Off etc.?)>>
+The current key modifier state for the selected keyboard. See [[SDLMod]] for details.  ???
 
 == Code Examples ==
 ```c++
