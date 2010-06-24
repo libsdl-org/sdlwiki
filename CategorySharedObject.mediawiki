@@ -6,14 +6,12 @@
 
 = Shared Object Loading and Function Lookup =
 
-'''Primary Include:'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h]
-
-Other Includes: SDL_stdinc.h, SDL_error.h
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h]
 
 
 == Introduction ==
 
-^There are some^ System dependent library loading routines.
+^There are some^ ,,S,,ystem dependent library loading routines.
 : ,,Some,, things to keep in mind:
 * These functions only work on C function names.  Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
 * Make sure you declare your function pointers with the same calling convention as the actual library function.  Your code will crash mysteriously if you do not do this.
