@@ -14,7 +14,7 @@ A structure that contains keyboard text editing event ,,structure,, ^information
 |-
 |char
 |'''text[SDL_TEXTEDITINGEVENT_TEXT_SIZE]'''
-|the editing text
+|the editing text; * at most SDL_TEXTEDITINGEVENT_TEXT_SIZE - 1 characters *
 |-
 |int
 |'''start'''
@@ -24,6 +24,7 @@ A structure that contains keyboard text editing event ,,structure,, ^information
 |'''length'''
 |the length of selected editing text
 |}
+<<Color2(green,The '''text''' field currently shows the same info in both columns because it could go in either per the header vs *old wiki*. Where should it go?)>>
 
 == Code Examples ==
 ```c++
@@ -31,9 +32,14 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+* [[SDL_TextEditingEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported. *
+
+== Related Structures ==
+:[[SDL_TextInputEvent]]
 
 == Related Functions ==
+:[[SDL_StartTextInput]]
+:[[SDL_StopTextInput]]
 
 ----
 [[CategoryStruct]]
