@@ -79,9 +79,17 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<<Color2(green,The following was taken from the old 1.2 wiki and may not be applicable to 1.3.)>>
+
+[[SDL_MouseMotionEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEMOTION is reported.
+ Simply put, a SDL_MOUSEMOTION type event occurs when a user moves the mouse within the application window or when [[SDL_WarpMouse^InWindow^???]]() is called. Both the absolute ('''x''' and '''y''') and relative ('''xrel''' and '''yrel''') coordinates are reported along with the current button states ('''state'''). The button state can be interpreted using the SDL_BUTTON macro (see [[SDL_GetMouseState]]()).
+
+If the cursor is hidden ([[SDL_ShowCursor]](0)) and the input is grabbed (SDL_WM_!GrabInput(SDL_GRAB_ON)), then the mouse will give relative motion events even when the cursor reaches the edge of the screen. This is currently only implemented on Windows and Linux/Unix-alikes. 
+
+<<Color2(green,There are currently no pages for SDL_WarpMouse or SDL_WM_!GrabInput.  Do they still exist in 1.3?  Is [[SDL_WarpMouseInWindow]] the appropriate replacement for SDL_WarpMouse?  If it is should it be listed in RFs also?)>>
 
 == Related Functions ==
+:[[SDL_MouseButtonEvent]]
 
 ----
 [[CategoryStruct]]
