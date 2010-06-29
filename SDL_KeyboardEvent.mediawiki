@@ -35,7 +35,15 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*The following is taken from the old wiki, which had fewer data fields*
+
+[[SDL_KeyboardEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.
+
+The '''type''' and '''state''' actually report the same information, they just use different values to do it. A keyboard event generally occurs when a key is released (type=SDL_KEYUP or state=SDL_RELEASED) and when a key is pressed (type=SDL_KEYDOWN or state=SDL_PRESSED). The information on what key was pressed or released is in the '''keysym''' member.
+
+The SDLK_CAPSLOCK and SDLK_NUMLOCK keys are special cases and report an SDL_KEYDOWN when first pressed, then an SDL_RELEASED when released and pressed again. For these keys KEYUP and KEYDOWN events are therefore analogous to the state of the caps lock and num lock LEDs rather than the keys themselves. These special cases are required for compatibility with Sun workstations, but may be modified for most users through adjustments around lines 403 and 449 of src/events/SDL_keyboard.c.
+
+Note: Repeating SDL_KEYDOWN events will occur if key repeat is enabled (see SDL_EnableKeyRepeat).  <<Color2(green,SDL_EnableKeyRepeat does not currently have a page and may not exist in SDL 1.3.)>>
 
 == Related Enumerations ==
 :[[SDL_EventType]]???
@@ -44,6 +52,7 @@ You can add your code example here
 :[[SDL_keysym]]???
 
 == Related Functions ==
+<<Color2(green,Listed in the old wiki but appear to be absent from 1.3: SDL_EnableKeyRepeat, SDL_EnableUNICODE)>>
 
 ----
 [[CategoryStruct]]
