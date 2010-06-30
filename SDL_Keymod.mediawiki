@@ -42,7 +42,7 @@ An enumeration of key modifier masks.
 |the Caps Lock key
 |-
 |KMOD_MODE
-|the AltGR key
+|the AltGr key
 |-
 |<style="color: #808080;">KMOD_RESERVED
 |<style="color: #808080;">reserved for future use
