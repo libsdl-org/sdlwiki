@@ -3,49 +3,49 @@
 '''DRAFT'''
 
 = SDLMod =
-An enumeration of valid key mods.
+An enumeration of key modifier masks.
 
 
 == Values ==
 {|
 |KMOD_NONE
-|0x0000
+|0
 |-
 |KMOD_LSHIFT
-|0x0001
+|the left Shift key
 |-
 |KMOD_RSHIFT
-|0x0002
+|the right Shift key
 |-
 |KMOD_LCTRL
-|0x0040
+|the left Ctrl (Control) key
 |-
 |KMOD_RCTRL
-|0x0080
+|the right Ctrl (Control) key
 |-
 |KMOD_LALT
-|0x0100
+|the left Alt (Alternate) key
 |-
 |KMOD_RALT
-|0x0200
+|the right Alt (Alternate) key
 |-
 |KMOD_LGUI
-|0x0400
+|the left GUI key (often the Windows key)
 |-
 |KMOD_RGUI
-|0x0800
+|the right GUI key (often the Windows key)
 |-
 |KMOD_NUM
-|0x1000
+|the Num Lock key (may be located on an extended keypad)
 |-
 |KMOD_CAPS
-|0x2000
+|the Caps Lock key
 |-
 |KMOD_MODE
-|0x4000
+|
 |-
-|KMOD_RESERVED
-|0x8000
+|<style="color: #808080;">KMOD_RESERVED
+|<style="color: #808080;">reserved for future use
 |}
 
 == Code Examples ==
@@ -55,9 +55,6 @@ You can add your code example here
 
 == Remarks ==
 These may be OR'd together.
-
-== Related Enumerations ==
-:[[SDLKey]]  ???  <<Color2(green,Not really an enum but definitely related. Should it be listed in Remarks instead?)>>
 
 == Related Functions ==
 :[[SDL_GetModState]]
