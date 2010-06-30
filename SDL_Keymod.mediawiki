@@ -24,10 +24,10 @@ An enumeration of key modifier masks.
 |the right Ctrl (Control) key
 |-
 |KMOD_LALT
-|the left Alt (Alternate) key
+|the left Alt key
 |-
 |KMOD_RALT
-|the right Alt (Alternate) key
+|the right Alt key
 |-
 |KMOD_LGUI
 |the left GUI key (often the Windows key)
@@ -42,7 +42,7 @@ An enumeration of key modifier masks.
 |the Caps Lock key
 |-
 |KMOD_MODE
-|
+|the AltGR key
 |-
 |<style="color: #808080;">KMOD_RESERVED
 |<style="color: #808080;">reserved for future use
