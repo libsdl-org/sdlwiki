@@ -5,12 +5,9 @@ http://hg.libsdl.org/SDL-gsoc2010_IME
 
 
 == Status ==
-I am mostly working on test code for using the TSF in an OpenGL application (you can check it out from http://hg.libsdl.org/SDL-gsoc2010_IME/EXCLUDE/GLTSF).
-I have made minimal changes to SDL itself because I am not familiar enough with the TSF just yet.
-
-Right now, IME input should work in SDL windows but not in fullscreen.
-I have tested on Windows XP SP3 and Windows 7 (in VirtualBox).
-I have not implemented the actual SDL text input functions yet.
+""June 30, 2010""
+I have decided to use an IMM implementation for the SoC.
+The TSF implementation is moving too slowly, I intend to complete it after the SoC.
 
 == Documentation ==
 
@@ -19,7 +16,7 @@ There are two methods for enabling IME support on Windows:
 * [[#TSF|Text Services Framework (TSF)]]
 * [[#IMM|Input Method Manager (IMM)]]
 
-I aim to use only the TSF in this project.
+I will write an IMM implementation for the SoC.
 
 The TSF comes with Windows XP and newer.
 For earlier versions of Windows, you must install it separately: [http://www.microsoft.com/downloads/details.aspx?FamilyID=b4c50c6e-e9dd-4c58-a886-75bd56985f0f&DisplayLang=en Microsoft Windows Text Services Framework Redist files]
@@ -36,4 +33,4 @@ Sources for information:
 
 <span id="IMM"></span>
 === IMM ===
-The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes. This emulation is not perfect and there are known bugs/problems. One of the problems is that you can not do manual rendering by suppressing the rendering of the IME windows (ISC_* values are ignored). This means it may not be possible to have a fullscreen IME application using only the IMM interfaces.
+The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes.
