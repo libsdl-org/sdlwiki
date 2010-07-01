@@ -16,25 +16,6 @@ Endianness comes in two forms - big and little.
 * SDL_LIL_ENDIAN means byte order is 1234, where the smaller (little) numbered position comes first
 * SDL_BIG_ENDIAN means byte order is 4321, where the larger (big) numbered position comes first
 
-<<Color2(green,Does the info below belong to the whole header or just to an individual function?  Seems like the whole header but not sure since this one is so different from the others in format.)>>
-
-{i} This header uses inline functions for compilers that support them, and static functions for those that do not.  Because these functions become static for compilers that do not support inline functions, this header should only be included in files that actually use them.
-
-<<Color2(green,Does the following belong on this page?  Is there an introductory sentence or phrase that would help it to be meaningful if it does?)>>
-
-```c++
-#ifndef SDL_BYTEORDER           /* Not defined in SDL_config.h? */
-#if defined(__hppa__) || \
- defined(__m68k__) || defined(mc68000) || defined(_M_M68K) || \
- (defined(__MIPS__) && defined(__MISPEB__)) || \
- defined(__ppc__) || defined(__POWERPC__) || defined(_M_PPC) || \
- defined(__sparc__)
-#define SDL_BYTEORDER	SDL_BIG_ENDIAN
-#else
-#define SDL_BYTEORDER	SDL_LIL_ENDIAN
-#endif
-#endif /* !SDL_BYTEORDER */
-```
 
 
 == Functions ==
