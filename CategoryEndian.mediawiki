@@ -16,16 +16,13 @@ Endianness comes in two forms - big and little.
 * SDL_LIL_ENDIAN means byte order is 1234, where the smaller (little) numbered position comes first
 * SDL_BIG_ENDIAN means byte order is 4321, where the larger (big) numbered position comes first
 
-: ''Example:''
-   ```
-Imagine the hexadecimal sequence in byte form of DE AD BE EF
+: ''Example:''  Imagine the hexadecimal sequence in byte form of ```DE AD BE EF```
 
-When the bytes are read as a little-endian value, the bytes are read lowest byte first, producing the value:
-0xEFBEADDE
+  When the bytes are read as a little-endian value, the bytes are read lowest byte first, producing the value:
+   ```0xEFBEADDE```
 
-When the bytes are read as a big-endian value, the bytes are read highest byte first, producing the value:
-0xDEADBEEF
-```
+  When the bytes are read as a big-endian value, the bytes are read highest byte first, producing the value:
+   ```0xDEADBEEF```
 
 SDL_BYTEORDER is a macro that corresponds to the byte order used by the processor type it was compiled for.
 * SDL_BYTEORDER is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
