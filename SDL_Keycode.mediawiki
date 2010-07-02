@@ -258,13 +258,13 @@ The SDL virtual key representation.
 |the F12 key
 |-
 |SDLK_PRINTSCREEN
-|the Print Screen key
+|the Print Screen / SysRq key
 |-
 |SDLK_SCROLLLOCK
 |the Scroll Lock key
 |-
 |SDLK_PAUSE
-|the Pause key
+|the Pause / Break key
 |-
 |SDLK_INSERT
 |the Insert key
@@ -276,7 +276,7 @@ The SDL virtual key representation.
 |the Page Up key
 |-
 |SDLK_DELETE
-|the Delete / Del key
+|the Delete key
 |-
 |SDLK_END
 |the End key
@@ -300,16 +300,16 @@ The SDL virtual key representation.
 |the Num Lock key (number keypad)
 |-
 |SDLK_KP_DIVIDE
-|the Divide (/) key (number keypad)
+|the / key (number keypad)
 |-
 |SDLK_KP_MULTIPLY
-|the Multiply (*) key (number keypad)
+|the * key (number keypad)
 |-
 |SDLK_KP_MINUS
-|the Minus (-) key (number keypad)
+|the - key (number keypad)
 |-
 |SDLK_KP_PLUS
-|the Plus (+) key (number keypad)
+|the + key (number keypad)
 |-
 |SDLK_KP_ENTER
 |the Enter key (number keypad)
@@ -348,31 +348,31 @@ The SDL virtual key representation.
 |the . key (number keypad)
 |-
 |SDLK_APPLICATION
-|the Application or Menu key (Windows keyboards)
+|the Application / Menu key (Windows keyboards)
 |-
 |SDLK_POWER
-|the Power key (extended keypad)
+|the Power key (power management keypad)
 |-
 |SDLK_KP_EQUALS
 |the = key (number keypad)
 |-
 |SDLK_F13
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F13)
+|the F13 key
 |-
 |SDLK_F14
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F14)
+|the F14 key
 |-
 |SDLK_F15
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F15)
+|the F15 key
 |-
 |SDLK_F16
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F16)
+|the F16 key
 |-
 |SDLK_F17
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F17)
+|the F17 key
 |-
 |SDLK_F18
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F18)
+|the F18 key
 |-
 |SDLK_F19
 |SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_F19)
