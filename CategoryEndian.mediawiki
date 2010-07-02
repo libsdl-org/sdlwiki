@@ -18,27 +18,25 @@ Endianness comes in two forms - big and little.
 
 : ''Example:''
    ```
-2 1 4 3 6 5 8 7   (a stored value)
-|
-4 bits
+D E A D B E E F   (a stored value)
 |_|
 8 bits = 1 byte
 |_| |_| |_| |_|
- A   B   C   D  (4 bytes; A = lowest address)
+ 1   2   3   4  (4 bytes; A = lowest address)
 |_____________|
     32 bits
 
-/* When the value is read out of memory as a little-endian value it will produce: */
-87654321
-/* When the value is read out of memory as a big-endian value it will produce: */
-21436587
+Imagine the hexadecimal sequence in byte form of DE AD BE EF
+
+When the value is read out of memory as a little-endian value it will produce:
+EFBEADDE
+When the value is read out of memory as a big-endian value it will produce:
+DEADBEEF
 ```
 
-
-
-SDL byte order corresponds to the byte order used by the processor type it was compiled for.
+SDL_byte_order corresponds to the byte order used by the processor type it was compiled for.
 * SDL byte order is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
-* SDL byte order is SDL_BIG_ENDIAN for Mac, PowerPC, and similar systems that use the big endian byte order.
+* SDL byte order is SDL_BIG_ENDIAN for PowerPC Mac and similar systems that use the big endian byte order.
 
 
 == Functions ==
