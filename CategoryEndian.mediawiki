@@ -10,7 +10,7 @@
 
 
 == Introduction ==
-This category contains functions for reading and writing endian-specific values.
+This category contains functions for handling endian-specific values.
 
 Endianness comes in two forms - big and little.  
 * SDL_LIL_ENDIAN means byte order is 1234, where the smaller (little) numbered position comes first
@@ -18,25 +18,18 @@ Endianness comes in two forms - big and little.
 
 : ''Example:''
    ```
-D E A D B E E F   (a stored value)
-|_|
-8 bits = 1 byte
-|_| |_| |_| |_|
- 1   2   3   4  (4 bytes; A = lowest address)
-|_____________|
-    32 bits
-
 Imagine the hexadecimal sequence in byte form of DE AD BE EF
 
-When the value is read out of memory as a little-endian value it will produce:
-EFBEADDE
-When the value is read out of memory as a big-endian value it will produce:
-DEADBEEF
+When the bytes are read as a little-endian value, the bytes are read lowest byte first, producing the value:
+0xEFBEADDE
+
+When the bytes are read as a big-endian value, the bytes are read highest byte first, producing the value:
+0xDEADBEEF
 ```
 
-SDL_byte_order corresponds to the byte order used by the processor type it was compiled for.
-* SDL byte order is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
-* SDL byte order is SDL_BIG_ENDIAN for PowerPC Mac and similar systems that use the big endian byte order.
+SDL_BYTEORDER is a macro that corresponds to the byte order used by the processor type it was compiled for.
+* SDL_BYTEORDER is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
+* SDL_BYTEORDER is SDL_BIG_ENDIAN for PowerPC Mac and similar systems that use the big endian byte order.
 
 
 == Functions ==
