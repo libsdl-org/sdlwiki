@@ -7,6 +7,8 @@
 <!-- acl All:read -->
 = Simple DirectMedia Layer 1.3 Wiki =
 This wiki is your portal to documentation and other resources for SDL 1.3.
+<br/>
+You can find the obsolete wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
 
 
 == Using the SDL documentation Wiki ==
