@@ -7,13 +7,7 @@ The code is available here: http://hg.libsdl.org/SDL-gsoc2010_shaped_windows
 Wrote a test program SDL_eyes and integrated it into the SDL testing framework.  Time to discuss and verify the API.
 
 == Documentation ==
-The actual API itself is simple.  SDL_[[CreateShapedWindow|!CreateShapedWindow]]() returns an SDL_Window with the correct attributes and the capability to be shaped.  From there, the user can either check if any particular window is a shaped window via a predicate function, or they can select the shape of a shaped window as a rendering target.  Once the shape of a window has been selected, rendering to it works like rendering to any other rendering target, though the internal representation used for the shape is platform-specific.  The thing to note, for users, is that whether a rendered shape is "positive" space (part of the visible window) or "negative" space (transparent) is dependent on its alpha channel.  An alpha value of 0 makes a shape or pixel transparent.  An non-zero alpha value makes a shape or pixel positive space.
-
-The "z-value" of space rendered to a window's shape is determined according to the Painter's Algorithm.  To demonstrate by example, if the user wants to draw a donut shape, they should first render a circle of positive space and then a smaller circle of negative space within it.  In my view, this is intuitive for users experienced in 2D graphics programming and allows drivers whose shaped-window implementations use vector shapes a convenient ordering by which to determine how different regions of space overlap.
-
-I actually want to add a few extra drawing functions to the SDL rendering API for circles, ellipses, and polygons.  I'm going to add those to SDL_video.h before submitting my proposed API in full
-
-When the user is finished drawing the shape of a window using the rendering functions, they simply call SDL_RenderPresent() on that same rendering target to actually
+The actual API itself is simple.  SDL_CreateShapedWindow() returns an SDL_Window with the correct attributes and the capability to be shaped.  From there, the user can either check if any particular window is a shaped window via a predicate function, or they can set the shape of a window by passing a shape surface with an alpha channel into SDL_SetWindowShape(). This function also accepts a structure of mode parameters, which are currently used to specify the cutoff value for the shape's alpha channel.  At or above that cutoff value, a pixel is visible in the shape.  Below that, it's not part of the shape.
 
 == Notes ==
 === Compiling and Running Test Program ===
@@ -38,7 +32,7 @@ input shape bitmap stored as surface or texture -(1)-> SDL rendering-from-textur
 * Documentation with C API http://www.xfree86.org/current/shapelib.html
 * If extension is missing from X, add Load "extmod" to the "Modules" section of the xorg.conf file (=makes for a good error message on shape extension detection).
 
-Per-pixel alpha for window-shapes require support from a "compositing window manager".
+Currently figuring out how to link to the shape extension.
 
 === Windows ===
 ==== Regions ====
