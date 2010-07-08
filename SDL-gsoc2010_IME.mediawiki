@@ -5,6 +5,7 @@ The code is available here: http://hg.libsdl.org/SDL-gsoc2010_IME
 
 == Status ==
 '''July 07, 2010''' Started work on SDL itself.
+
 '''June 30, 2010''' I have decided to use an IMM implementation for the SoC. The TSF implementation is moving too slowly, I intend to complete it after the SoC.
 
 == Documentation ==
