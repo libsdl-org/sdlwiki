@@ -26,6 +26,12 @@ The SDL virtual key representation.
 |SDLK_SPACE
 |the space bar key(s)
 |-
+|SDLK_CAPSLOCK
+|the Caps Lock key
+|-
+|SDLK_APPLICATION
+|the Application / Menu key (Windows keyboards)
+|-
 |SDLK_EXCLAIM
 |the ! key
 |-
@@ -218,9 +224,6 @@ The SDL virtual key representation.
 |SDLK_z
 |the z key
 |-
-|SDLK_CAPSLOCK
-|the Caps Lock key
-|-
 |SDLK_F1
 |the F1 key
 |-
@@ -258,7 +261,7 @@ The SDL virtual key representation.
 |the F12 key
 |-
 |SDLK_PRINTSCREEN
-|the Print Screen / SysRq key
+|the Print Screen key
 |-
 |SDLK_SCROLLLOCK
 |the Scroll Lock key
@@ -297,64 +300,61 @@ The SDL virtual key representation.
 |the Up arrow key (navigation keypad)
 |-
 |SDLK_NUMLOCKCLEAR
-|the Num Lock key (number keypad)
+|the Num Lock key (numeric keypad)
 |-
 |SDLK_KP_DIVIDE
-|the / key (number keypad)
+|the / key (numeric keypad)
 |-
 |SDLK_KP_MULTIPLY
-|the * key (number keypad)
+|the * key (numeric keypad)
 |-
 |SDLK_KP_MINUS
-|the - key (number keypad)
+|the - key (numeric keypad)
 |-
 |SDLK_KP_PLUS
-|the + key (number keypad)
+|the + key (numeric keypad)
 |-
 |SDLK_KP_ENTER
-|the Enter key (number keypad)
+|the Enter key (numeric keypad)
 |-
 |SDLK_KP_1
-|the 1 key (number keypad)
+|the 1 key (numeric keypad)
 |-
 |SDLK_KP_2
-|the 2 key (number keypad)
+|the 2 key (numeric keypad)
 |-
 |SDLK_KP_3
-|the 3 key (number keypad)
+|the 3 key (numeric keypad)
 |-
 |SDLK_KP_4
-|the 4 key (number keypad)
+|the 4 key (numeric keypad)
 |-
 |SDLK_KP_5
-|the 5 key (number keypad)
+|the 5 key (numeric keypad)
 |-
 |SDLK_KP_6
-|the 6 key (number keypad)
+|the 6 key (numeric keypad)
 |-
 |SDLK_KP_7
-|the 7 key (number keypad)
+|the 7 key (numeric keypad)
 |-
 |SDLK_KP_8
-|the 8 key (number keypad)
+|the 8 key (numeric keypad)
 |-
 |SDLK_KP_9
-|the 9 key (number keypad)
+|the 9 key (numeric keypad)
 |-
 |SDLK_KP_0
-|the 0 key (number keypad)
+|the 0 key (numeric keypad)
 |-
 |SDLK_KP_PERIOD
-|the . key (number keypad)
-|-
-|SDLK_APPLICATION
-|the Application / Menu key (Windows keyboards)
-|-
-|SDLK_POWER
-|the Power key (power management keypad)
+|the . key (numeric keypad)
 |-
 |SDLK_KP_EQUALS
-|the = key (number keypad)
+|the = key (numeric keypad)
+|-
+|SDLK_POWER
+|the Power key
 |-
 |SDLK_F13
 |the F13 key
@@ -435,10 +435,10 @@ The SDL virtual key representation.
 |the Volume Down key (multimedia keypad)
 |-
 |SDLK_KP_COMMA
-|the Comma key (number keypad ???)
+|the Comma key (numeric keypad ???)
 |-
 |SDLK_KP_EQUALSAS400
-|the Equals AS400 key
+|the Equals AS400 key (numeric keypad ???)
 |-
 |SDLK_ALTERASE
 |the Alt Erase key
@@ -453,283 +453,269 @@ The SDL virtual key representation.
 |the Clear key
 |-
 |SDLK_PRIOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_PRIOR)
+|the Prior key
 |-
 |SDLK_RETURN2
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RETURN2)
+|the Return2 key
 |-
 |SDLK_SEPARATOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_SEPARATOR)
+|the Separator key
 |-
 |SDLK_OUT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_OUT)
+|the Out key
 |-
 |SDLK_OPER
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_OPER)
+|the Oper key
 |-
 |SDLK_CLEARAGAIN
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CLEARAGAIN)
+|the Clear Again key
 |-
 |SDLK_CRSEL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CRSEL)
+|the CrSel key
 |-
 |SDLK_EXSEL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_EXSEL)
-|-
-|
-|
+|the ExSel key
 |-
 |SDLK_KP_00
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_00)
+|the 00 key (numeric keypad ???)
 |-
 |SDLK_KP_000
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_000)
+|the 000 key (numeric keypad ???)
 |-
 |SDLK_THOUSANDSSEPARATOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_THOUSANDSSEPARATOR)
+|the Thousands Separator key
 |-
 |SDLK_DECIMALSEPARATOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_DECIMALSEPARATOR)
+|the Decimal Separator key
 |-
 |SDLK_CURRENCYUNIT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CURRENCYUNIT)
+|the Currency Unit key
 |-
 |SDLK_CURRENCYSUBUNIT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CURRENCYSUBUNIT)
+|the Currency Subunit key
 |-
 |SDLK_KP_LEFTPAREN
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_LEFTPAREN)
+|the Left Parenthesis key (numeric keypad ???)
 |-
 |SDLK_KP_RIGHTPAREN
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_RIGHTPAREN)
+|the Right Parenthesis key (numeric keypad ???)
 |-
 |SDLK_KP_LEFTBRACE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_LEFTBRACE)
+|the Left Brace key (numeric keypad) ???
 |-
 |SDLK_KP_RIGHTBRACE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_RIGHTBRACE)
+|the Right Brace key (numeric keypad) ???
 |-
 |SDLK_KP_TAB
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_TAB)
+|the Tab key (numeric keypad ???)
 |-
 |SDLK_KP_BACKSPACE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_BACKSPACE)
+|the Backspace key (numeric keypad ???)
 |-
 |SDLK_KP_A
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_A)
+|the A key (numeric keypad ???)
 |-
 |SDLK_KP_B
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_B)
+|the B key (numeric keypad ???)
 |-
 |SDLK_KP_C
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_C)
+|the C key (numeric keypad ???)
 |-
 |SDLK_KP_D
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_D)
+|the D key (numeric keypad ???)
 |-
 |SDLK_KP_E
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_E)
+|the E key (numeric keypad ???)
 |-
 |SDLK_KP_F
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_F)
+|the F key (numeric keypad ???)
 |-
 |SDLK_KP_XOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_XOR)
+|the XOR key (numeric keypad ???)
 |-
 |SDLK_KP_POWER
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_POWER)
+|the Power key (numeric keypad ???)
 |-
 |SDLK_KP_PERCENT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_PERCENT)
+|the Percent key (numeric keypad ???)
 |-
 |SDLK_KP_LESS
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_LESS)
+|the Less key (numeric keypad ???)
 |-
 |SDLK_KP_GREATER
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_GREATER)
+|the Greater key (numeric keypad ???)
 |-
 |SDLK_KP_AMPERSAND
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_AMPERSAND)
+|the & key (numeric keypad ???)
 |-
 |SDLK_KP_DBLAMPERSAND
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_DBLAMPERSAND)
+|the && key (numeric keypad ???)
 |-
 |SDLK_KP_VERTICALBAR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_VERTICALBAR)
+|the | key (numeric keypad ???)
 |-
 |SDLK_KP_DBLVERTICALBAR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_DBLVERTICALBAR)
+|the 
+| key (numeric keypad ???)
 |-
 |SDLK_KP_COLON
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_COLON)
+|the : key (numeric keypad ???)
 |-
 |SDLK_KP_HASH
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_HASH)
+|the # key (numeric keypad ???)
 |-
 |SDLK_KP_SPACE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_SPACE)
+|the   key (numeric keypad ???)
 |-
 |SDLK_KP_AT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_AT)
+|the @ key (numeric keypad ???)
 |-
 |SDLK_KP_EXCLAM
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_EXCLAM)
+|the ! key (numeric keypad ???)
 |-
 |SDLK_KP_MEMSTORE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMSTORE)
+|the Mem Store key (numeric keypad ???)
 |-
 |SDLK_KP_MEMRECALL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMRECALL)
+|the Mem Recall key (numeric keypad ???)
 |-
 |SDLK_KP_MEMCLEAR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMCLEAR)
+|the Mem Clear key (numeric keypad ???)
 |-
 |SDLK_KP_MEMADD
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMADD)
+|the Mem Add key (numeric keypad ???)
 |-
 |SDLK_KP_MEMSUBTRACT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMSUBTRACT)
+|the Mem Subtract key (numeric keypad ???)
 |-
 |SDLK_KP_MEMMULTIPLY
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMMULTIPLY)
+|the Mem Multiply key (numeric keypad ???)
 |-
 |SDLK_KP_MEMDIVIDE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_MEMDIVIDE)
+|the Mem Divide key (numeric keypad ???)
 |-
 |SDLK_KP_PLUSMINUS
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_PLUSMINUS)
+|the +/- key (numeric keypad ???)
 |-
 |SDLK_KP_CLEAR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_CLEAR)
+|the Clear key (numeric keypad ???)
 |-
 |SDLK_KP_CLEARENTRY
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_CLEARENTRY)
+|the Clear Entry key (numeric keypad ???)
 |-
 |SDLK_KP_BINARY
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_BINARY)
+|the Binary key (numeric keypad ???)
 |-
 |SDLK_KP_OCTAL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_OCTAL)
+|the Octal key (numeric keypad ???)
 |-
 |SDLK_KP_DECIMAL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_DECIMAL)
+|the Decimal key (numeric keypad ???)
 |-
 |SDLK_KP_HEXADECIMAL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KP_HEXADECIMAL)
-|-
-|
-|
+|the Hexadecimal key (numeric keypad ???)
 |-
 |SDLK_LCTRL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LCTRL)
+|the Left Control key
 |-
 |SDLK_LSHIFT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LSHIFT)
+|the left Shift key
 |-
 |SDLK_LALT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LALT)
+|the Left Alt key
 |-
 |SDLK_LGUI
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_LGUI)
+|the left GUI key
 |-
 |SDLK_RCTRL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RCTRL)
+|the Right Control key
 |-
 |SDLK_RSHIFT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RSHIFT)
+|the Right Shift key
 |-
 |SDLK_RALT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RALT)
+|the Right Alt key
 |-
 |SDLK_RGUI
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_RGUI)
-|-
-|
-|
+|the Right GUI key
 |-
 |SDLK_MODE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_MODE)
-|-
-|
-|
+|the Mode key
 |-
 |SDLK_AUDIONEXT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AUDIONEXT)
+|the Audio Next key (multimedia keypad)
 |-
 |SDLK_AUDIOPREV
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AUDIOPREV
+|the Audio Previous key (multimedia keypad)
 |-
 |SDLK_AUDIOSTOP
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AUDIOSTOP)
+|the Audio Stop key (multimedia keypad)
 |-
 |SDLK_AUDIOPLAY
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AUDIOPLAY)
+|the Audio Play key (multimedia keypad)
 |-
 |SDLK_AUDIOMUTE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AUDIOMUTE)
+|the Audio Mute key (multimedia keypad)
 |-
 |SDLK_MEDIASELECT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_MEDIASELECT)
+|the Media Select key (multimedia keypad)
 |-
 |SDLK_WWW
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_WWW)
+|the WWW/World Wide Web key (multimedia keypad)
 |-
 |SDLK_MAIL
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_MAIL)
+|the Mail/eMail key (multimedia keypad)
 |-
 |SDLK_CALCULATOR
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CALCULATOR)
+|the Calculator key (multimedia keypad)
 |-
 |SDLK_COMPUTER
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_COMPUTER)
+|the My Computer key
 |-
 |SDLK_AC_SEARCH
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_SEARCH)
+|the Search key
 |-
 |SDLK_AC_HOME
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_HOME)
+|the Home key
 |-
 |SDLK_AC_BACK
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_BACK)
+|the Back key
 |-
 |SDLK_AC_FORWARD
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_FORWARD)
+|the Forward key
 |-
 |SDLK_AC_STOP
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_STOP)
+|the Stop key
 |-
 |SDLK_AC_REFRESH
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_REFRESH)
+|the Refresh key
 |-
 |SDLK_AC_BOOKMARKS
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_AC_BOOKMARKS)
-|-
-|
-|
+|the Bookmarks key
 |-
 |SDLK_BRIGHTNESSDOWN
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_BRIGHTNESSDOWN)
+|the Brightness Down key
 |-
 |SDLK_BRIGHTNESSUP
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_BRIGHTNESSUP)
+|the Brightness Up key
 |-
 |SDLK_DISPLAYSWITCH
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_DISPLAYSWITCH)
+|the Display Switch key
 |-
 |SDLK_KBDILLUMTOGGLE
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KBDILLUMTOGGLE)
+|the Keyboard Illumination Toggle key
 |-
 |SDLK_KBDILLUMDOWN
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KBDILLUMDOWN)
+|the Keyboard Illumination Down key
 |-
 |SDLK_KBDILLUMUP
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_KBDILLUMUP)
+|the keyboard Illumination Up key
 |-
 |SDLK_EJECT
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_EJECT)
+|the Eject key
 |-
 |SDLK_SLEEP
-|SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_SLEEP)
+|the Sleep key
 |}
 
 == Code Examples ==
