@@ -24,7 +24,7 @@ The SDL virtual key representation.
 |the Tab key
 |-
 |SDLK_SPACE
-|the space bar key(s)
+|the Space Bar key(s)
 |-
 |SDLK_CAPSLOCK
 |the Caps Lock key
@@ -444,7 +444,7 @@ The SDL virtual key representation.
 |the Alt Erase key
 |-
 |SDLK_SYSREQ
-|the SysReq key
+|the !SysReq key
 |-
 |SDLK_CANCEL
 |the Cancel key
@@ -555,8 +555,8 @@ The SDL virtual key representation.
 |the | key (numeric keypad ???)
 |-
 |SDLK_KP_DBLVERTICALBAR
-|the 
-| key (numeric keypad ???)
+|the ```
+|``` key (numeric keypad ???)
 |-
 |SDLK_KP_COLON
 |the : key (numeric keypad ???)
@@ -565,7 +565,7 @@ The SDL virtual key representation.
 |the # key (numeric keypad ???)
 |-
 |SDLK_KP_SPACE
-|the   key (numeric keypad ???)
+|the Space key (numeric keypad ???)
 |-
 |SDLK_KP_AT
 |the @ key (numeric keypad ???)
@@ -619,13 +619,13 @@ The SDL virtual key representation.
 |the Left Control key
 |-
 |SDLK_LSHIFT
-|the left Shift key
+|the Left Shift key
 |-
 |SDLK_LALT
 |the Left Alt key
 |-
 |SDLK_LGUI
-|the left GUI key
+|the Left GUI key
 |-
 |SDLK_RCTRL
 |the Right Control key
