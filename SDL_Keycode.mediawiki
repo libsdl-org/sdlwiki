@@ -300,7 +300,7 @@ The SDL virtual key representation.
 |the Up arrow key (navigation keypad)
 |-
 |SDLK_NUMLOCKCLEAR
-|the Num Lock key (numeric keypad)
+|the Num Lock key (PC) / the Clear key (Mac)
 |-
 |SDLK_KP_DIVIDE
 |the / key (numeric keypad)
