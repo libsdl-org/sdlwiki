@@ -30,7 +30,7 @@ The SDL virtual key representation.
 |the Caps Lock key
 |-
 |SDLK_APPLICATION
-|the Application / Menu key (Windows keyboards)
+|the Application / Contextual Menu key (Windows)
 |-
 |SDLK_EXCLAIM
 |the ! key
