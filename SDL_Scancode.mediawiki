@@ -762,11 +762,15 @@ The values in this enumeration are based on the USB usage page standard:
  [http://www.usb.org/developers/devclass_docs/Hut1_12.pdf]
 
 
-== Related Structures ==
-:[[SDL_StructureRemoveSectionIfEmpty]]
+== Related Enumerations ==
+:[[SDLKey]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
+:[[SDL_GetKeyboardState]]
+:[[SDL_GetKeyFromScancode]]
+:[[SDL_GetKeyName]]
+:[[SDL_GetScancodeFromKey]]
+:[[SDL_GetScancodeName]]
 
 ----
 [[CategoryEnum]]
