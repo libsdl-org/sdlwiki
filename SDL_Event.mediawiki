@@ -87,47 +87,47 @@ You can add your code example here
 The [[SDL_Event]] union is the core to all event handling in SDL; it's probably the most important structure after [[SDL_Surface]]. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event '''type'''. 
 
 {|
-|Event type
-|Event Structure
+|__Event type__
+|__Event Structure__
 |-
 |SDL_ACTIVEEVENT
-|SDL_ActiveEvent
+|[[SDL_ActiveEvent]]
 |-
 |SDL_KEYDOWN/UP
-|SDL_KeyboardEvent
+|[[SDL_KeyboardEvent]]
 |-
 |SDL_MOUSEMOTION
-|SDL_MouseMotionEvent
+|[[SDL_MouseMotionEvent]]
 |-
 |SDL_MOUSEBUTTONDOWN/UP
-|SDL_MouseButtonEvent
+|[[SDL_MouseButtonEvent]]
 |-
 |SDL_JOYAXISMOTION
-|SDL_JoyAxisEvent
+|[[SDL_JoyAxisEvent]]
 |-
 |SDL_JOYBALLMOTION
-|SDL_JoyBallEvent
+|[[SDL_JoyBallEvent]]
 |-
 |SDL_JOYHATMOTION
-|SDL_JoyHatEvent
+|[[SDL_JoyHatEvent]]
 |-
 |SDL_JOYBUTTONDOWN/UP
-|SDL_JoyButtonEvent
+|[[SDL_JoyButtonEvent]]
 |-
 |SDL_VIDEORESIZE
-|SDL_ResizeEvent
+|[[SDL_ResizeEvent]]
 |-
 |SDL_VIDEOEXPOSE
-|SDL_ExposeEvent
+|[[SDL_ExposeEvent]]
 |-
 |SDL_QUIT
-|SDL_QuitEvent
+|[[SDL_QuitEvent]]
 |-
 |SDL_USEREVENT
 |SDL_UserEvent
 |-
 |SDL_SYSWMEVENT
-|SDL_SysWMEvent
+|[[SDL_SysWMEvent]]
 |}
 
 <<Color2(green,SDL_MouseWheelEvent is missing)>>
