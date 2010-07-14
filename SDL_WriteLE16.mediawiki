@@ -5,6 +5,8 @@
 = SDL_WriteLE16 =
 Use this function to write an item of native format to the specified endianness.
 
+<<Color2(green,This is the generalized description from the header.  Should it be adjusted to be specific for each function for the wiki?  ie: Use this function to write an item of native format to little-endian format.)>>
+
 
 == Syntax ==
 ```c++
@@ -15,14 +17,14 @@ size_t SDL_WriteLE16(SDL_RWops* dst,
 == Function Parameters ==
 {|
 |'''dst'''
-|^a pointer to the destination for the endian data to be written^
+|^a pointer to the destination to be filled^
 |-
 |'''value'''
-|^the native format value to convert to endian format^
+|^the data to write as little-endian^
 |}
 
 == Return Value ==
-^A little-endian value of size_t???????????^
+The size (in bytes) of the data that was written, or 0 for error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
