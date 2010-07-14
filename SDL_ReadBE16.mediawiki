@@ -18,7 +18,7 @@ Uint16 SDL_ReadBE16(SDL_RWops* src)
 |}
 
 == Return Value ==
-^Returns an unsigned 16-bit value equivalent to the big-endian value.^ ???
+^Returns a native 16-bit value equivalent to the big-endian value.^ ???
 
 == Code Examples ==
 ```c++
