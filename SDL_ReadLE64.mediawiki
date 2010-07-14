@@ -18,7 +18,7 @@ Uint64 SDL_ReadLE64(SDL_RWops* src)
 |}
 
 == Return Value ==
-^Returns an unsigned 64-bit value equivalent to the little-endian value.^ ???
+^Returns a native 64-bit value equivalent to the little-endian value.^ ???
 
 == Code Examples ==
 ```c++
