@@ -5,6 +5,8 @@
 = SDL_ReadLE16 =
 Use this function to read an item of the specified endianness and return in native format.
 
+<<Color2(green,This is the generalized description from the header.  Should it be adjusted to be specific for each function for the wiki?  ie: Use this function to read an item of little-endian format and return in native format.)>>
+
 
 == Syntax ==
 ```c++
