@@ -1,0 +1,79 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWwrite =
+Use this function (macro) to *call the write function in an SDL_RWops structure.*
+
+
+== Syntax ==
+```c++
+SDL_RWwrite(ctx, ptr, size, n)
+```
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the 4 params be on separate lines like a regular function even though the rest of the syntax is different? Should the following be included in the syntax section?)>>
+ (ctx)->write(ctx, ptr, size, n)
+
+== Function Parameters ==
+{|
+|'''ctx'''
+|*a pointer to an SDL_RWops structure*
+|-
+|'''ptr'''
+|*a pointer to an area in memory to read data from*
+|-
+|'''size'''
+|*the size of the memory blocks to write*
+|-
+|'''n'''
+|*the exact number of memory blocks to write*
+|}
+
+== Return Value ==
+*On success, it returns the number of memory blocks you told it to write. If it couldn't write that exact number of blocks, or the write didn't work at all, it returns -1*; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+*
+```c++
+#include <stdio.h>
+#include <string.h>
+#include "SDL_rwops.h"
+
+int main()
+{
+  int written;
+  char *str="Hello World";
+
+  SDL_RWops *rw=SDL_RWFromFile("test.bin","wb");
+  if(rw==NULL)
+  {
+    fprintf(stderr,"Couldn't open test.bin\n");
+    return(1);
+  }
+
+  written=SDL_RWwrite(rw,str,1,strlen(str));
+  SDL_RWclose(rw);
+  if(written<0)
+  {
+    fprintf(stderr,"Couldn't write to test.bin\n");
+    return(2);
+  }
+
+  fprintf(stderr,"Wrote %d 1-byte blocks\n",written);
+  return(0);
+}
+```
+*
+
+== Remarks ==
+*,,Note: ,,This is not a built-in function. This is a macro that calls whatever write function happens to be in the SDL_RWops structure.*
+
+== Related Functions ==
+:[[SDL_RWclose]] (Macro) *???
+:[[SDL_RWFromFile]] *???
+:[[SDL_RWread]] (Macro) *???
+:[[SDL_RWseek]](Macro) *???
+
+<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
