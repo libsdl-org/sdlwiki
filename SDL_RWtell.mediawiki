@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWtell =
+Use this function ^(macro)^ to *perform a do-nothing seek to get the current offset in an SDL_RWops stream*.
+
+
+== Syntax ==
+```c++
+value SDL_FunctionName(param)
+```
+
+== Function Parameters ==
+{|
+|'''param'''
+|description
+|}
+
+== Return Value ==
+Returns the offset in the stream.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
