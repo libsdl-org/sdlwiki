@@ -8,28 +8,52 @@ Use this function ^(macro)^ to *perform a do-nothing seek to get the current off
 
 == Syntax ==
 ```c++
-value SDL_FunctionName(param)
+SDL_RWtell(ctx)
 ```
+
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the following be included in the syntax section?)>>
+
+```(ctx)->seek(ctx, 0, RW_SEEK_CUR)```
 
 == Function Parameters ==
 {|
-|'''param'''
-|description
+|'''ctx'''
+|*a pointer to an SDL_RWops structure*
 |}
 
 == Return Value ==
-Returns the offset in the stream.
+*Returns the ^current^ offset in the stream.*
 
 == Code Examples ==
+*
 ```c++
-You can add your code example here
+#include <stdio.h>
+#include "SDL_rwops.h"
+
+int main()
+{
+  SDL_RWops *rw=SDL_RWFromFile("test.bin","r");
+  if(rw==NULL)
+  {
+    fprintf(stderr,"Couldn't open test.bin\n");
+    return(1);
+  }
+
+  SDL_RWseek(rw,0,RW_SEEK_END);
+  fprintf(stderr,"Final position in test.bin: %d\n",SDL_RWtell(rw));
+  SDL_RWclose(rw);
+  return(0);
+}
 ```
+*
 
 == Remarks ==
-''You can add useful comments here''
+,,Note: ,,This is not a built-in function. This is a macro that calls whatever seek function that happens to be pointed to in an SDL_RWops structure.
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_RWFromFile]]???
+:[[SDL_RWSeek]]???
+<<Color2(green,Should I list all the current read and write functions?  Equivalent to SDL_RWclose?)>>
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryIO]]
