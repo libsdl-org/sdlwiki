@@ -79,10 +79,10 @@ int main()
 <<Color2(green,What does the number in the center column represent?  Thought it was the value you'd put in the macro but the code example suggests otherwise.  Is that one of those things that we're leaving out?)>>
 
 == Related Functions ==
-:[[SDL_RWclose]] (Macro) ???
-:[[SDL_RWread]] (Macro) ???
+:[[SDL_RWclose]] (Macro) *???
+:[[SDL_RWread]] (Macro) *???
 :[[SDL_RWtell]] (Macro) ???
-:[[SDL_RWwrite]] (Macro) ???
+:[[SDL_RWwrite]] (Macro) *???
 
 <<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
