@@ -1,0 +1,60 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWclose =
+Use this function (macro) to *call the close function in an SDL_RWops structure.*
+
+
+== Syntax ==
+```c++
+SDL_RWclose(ctx)
+```
+
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the following be included in the syntax section?)>>
+ (ctx)->close(ctx)
+
+== Function Parameters ==
+{|
+|'''ctx'''
+|*a pointer to an SDL_RWops structure*
+|}
+
+== Return Value ==
+*Returns 0 on success, -1 on error*; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+*
+```c++
+#include <stdio.h>
+#include "SDL_rwops.h"
+
+int main()
+{
+  SDL_RWops *rw=SDL_RWFromFile("test.bin","r");
+  if(rw==NULL)
+  {
+    fprintf(stderr,"Couldn't open test.bin\n");
+    return(1);
+  }
+  fprintf(stderr,"Opened test.bin\n");
+  SDL_RWclose(rw);
+  fprintf(stderr,"Closed test.bin\n");
+  return(0);
+}
+```
+*
+
+== Remarks ==
+*,,Note: ,,This is not a built-in function. This is a macro that calls whatever close function happens to be pointed to by an SDL_RWops structure.*
+
+== Related Functions ==
+:[[SDL_RWFromFile]] *???
+:[[SDL_RWread]] (Macro) *???
+:[[SDL_RWseek]](Macro) *???
+:[[SDL_RWwrite]] (Macro) *???
+
+<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
