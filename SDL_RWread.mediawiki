@@ -1,0 +1,79 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWread =
+Use this function ^(macro)^ to *call the function pointed to by an SDL_RWops structure's '''read''' member.*  <<Color2(green,Should read be bold here?)>>
+
+
+== Syntax ==
+```c++
+SDL_RWread(ctx, ptr, size, n)
+```
+
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the 4 params be on separate lines like a regular function even though the rest of the syntax is different? Should the following be included in the syntax section?)>>
+ ```(ctx)->read(ctx, ptr, size, n)```
+
+== Function Parameters ==
+{|
+|'''ctx'''
+|*a pointer to an SDL_RWops structure*
+|-
+|'''ptr'''
+|*a pointer to an area of memory to read data into*
+|-
+|'''size'''
+|*the size of each block of memory to read*
+|-
+|'''n'''
+|*the maximum number of memory blocks to read (it may read less)*
+|}
+
+== Return Value ==
+*Returns the number of memory blocks read, or -1 if the read failed*; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+*
+```c++
+#include <stdio.h>
+#include "SDL_rwops.h"
+int main()
+{
+  int blocks;
+  char buf[256];
+  SDL_RWops *rw=SDL_RWFromFile("file.bin","rb");
+  if(rw==NULL)
+  {
+    fprintf(stderr,"Couldn't open file.bin\n");
+    return(1);
+  }
+
+  blocks=SDL_RWread(rw,buf,16,256/16);
+  SDL_RWclose(rw);
+  if(blocks<0)
+  {
+    fprintf(stderr,"Couldn't read from file.bin\n");
+    return(2);
+  }
+
+  fprintf(stderr,"Read %d 16-byte blocks\n",blocks);
+  return(0);
+}
+```
+*
+
+== Remarks ==
+*,,Note: ,,This is not a built in function. This is a C macro that calls whatever function happens to be in the 'read' member of the SDL_RWops structure.
+
+{i} ''Bug'': until SDL 1.2.9 this function returned inconsistent values, that depend on type of underlying stream.  This bug is now solved.*
+
+== Related Functions ==
+:[[SDL_RWclose]] (Macro) *???
+:[[SDL_RWFromFile]] *???
+:[[SDL_RWseek]](Macro) *???
+:[[SDL_RWwrite]] (Macro) *???
+
+<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
