@@ -51,9 +51,13 @@ int main()
 ,,Note: ,,This is not a built-in function. This is a macro that calls whatever seek function that happens to be pointed to in an SDL_RWops structure.
 
 == Related Functions ==
-:[[SDL_RWFromFile]]???
-:[[SDL_RWSeek]]???
-<<Color2(green,Should I list all the current read and write functions?  Equivalent to SDL_RWclose?)>>
+:[[SDL_RWclose]] (Macro) *???
+:[[SDL_RWFromFile]] *???
+:[[SDL_RWread]] (Macro) *???
+:[[SDL_RWseek]](Macro) *???
+:[[SDL_RWwrite]] (Macro) *???
+
+<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
