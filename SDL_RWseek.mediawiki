@@ -79,7 +79,12 @@ int main()
 <<Color2(green,What does the number in the center column represent?  Thought it was the value you'd put in the macro but the code example suggests otherwise.  Is that one of those things that we're leaving out?)>>
 
 == Related Functions ==
-:[[SDL_OtherFunction]]  <<Color2(green,Not sure how to determine which functions to list here.  1.2 list is no longer valid (SDL_RWread SDL_RWwrite SDL_RWclose).  Not finding any that directly reference SDL_RWseek.  Should I list all the current read and write functions?)>>
+:[[SDL_RWclose]] (Macro) ???
+:[[SDL_RWread]] (Macro) ???
+:[[SDL_RWtell]] (Macro) ???
+:[[SDL_RWwrite]] (Macro) ???
+
+<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
