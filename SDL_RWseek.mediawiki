@@ -1,0 +1,84 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_RWseek =
+Use this function ^(macro)^ to *call the seek function pointer in an SDL_RWops structure*.
+
+
+== Syntax ==
+```c++
+SDL_RWseek(ctx, offset, whence)
+```
+
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax?  Should the 3 params be on separate lines like a regular function even though the rest of the syntax is different?)>>
+
+== Function Parameters ==
+{|
+|'''ctx'''
+|*a pointer to an SDL_RWops structure* <<Color2(green,why isn't there a pointer symbol?)>>
+|-
+|'''offset'''
+|*an offset in bytes^, relative to '''whence''' location^; can be negative*
+|-
+|'''whence'''
+|any of RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END; see [[#whence|Remarks]] for details
+|}
+
+== Return Value ==
+Returns the final offset in the data source. ???
+
+== Code Examples ==
+```c++
+#include <stdio.h>
+#include "SDL_rwops.h"
+
+int main()
+{
+  int length;
+  SDL_RWops *rw=SDL_RWFromFile("myfile.bin","rb");
+  if(rw==NULL)
+  {
+    fprintf(stderr,"Couldn't open myfile.bin\n");
+    return(1);
+  }
+
+  /* Seek to 0 bytes from the end of the file -- i.e. the exact end of file */
+  length=SDL_RWseek(rw,0,SEEK_END);
+  SDL_RWclose(rw);
+  if(length<0)
+  {
+    fprintf(stderr,"Could not seek inside myfile.bin\n");
+    return(2);
+  }
+
+  fprintf(stderr,"myfile.bin is %d bytes long\n",length);
+  return(0);
+}
+```
+
+== Remarks ==
+,,Note: ,,This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.
+
+<span id="whence"></span>'''whence''' may be any of the following values:
+{|
+|RW_SEEK_SET
+|0
+|seek from the beginning of data
+|-
+|RW_SEEK_CUR
+|1
+|seek relative to current read point
+|-
+|RW_SEEK_END
+|2
+|seek relative to the end of data
+|}
+
+<<Color2(green,What does the number in the center column represent?  Thought it was the value you'd put in the macro but the code example suggests otherwise.  Is that one of those things that we're leaving out?)>>
+
+== Related Functions ==
+:[[SDL_OtherFunction]]  <<Color2(green,Not sure how to determine which functions to list here.  1.2 list is no longer valid (SDL_RWread SDL_RWwrite SDL_RWclose).  Not finding any that directly reference SDL_RWseek.  Should I list all the current read and write functions?)>>
+
+----
+[[CategoryAPI]], [[CategoryIO]]
