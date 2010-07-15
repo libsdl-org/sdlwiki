@@ -30,6 +30,7 @@ SDL_RWseek(ctx, offset, whence)
 Returns the final offset in the data source. ???
 
 == Code Examples ==
+*
 ```c++
 #include <stdio.h>
 #include "SDL_rwops.h"
@@ -57,9 +58,10 @@ int main()
   return(0);
 }
 ```
+*
 
 == Remarks ==
-,,Note: ,,This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.
+*,,Note: ,,This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.*
 
 <span id="whence"></span>'''whence''' may be any of the following values:
 {|
