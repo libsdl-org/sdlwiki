@@ -4,7 +4,6 @@
 
 = SDL_RWFromFP =
 Use this function to create an SDL_RWops structure from a standard I/O file pointer.
-<<Color2(green,There is currently no page for SDL_RWops so no link.)>>
 
 
 == Syntax ==
@@ -39,12 +38,13 @@ SDL_RWclose(rw); // Automatically does an fclose(fp)
 ```
 
 == Remarks ==
-This is not available under Win32, since files opened in an application on that platform cannot be used by a dynamically linked library.
+*This is not available under Win32, since files opened in an application on that platform cannot be used by a dynamically linked library.*
 
 == Related Functions ==
+:[[SDL_RWclose]] (Macro) ???
 :[[SDL_RWFromConstMem]] ???
-:[[SDL_RWFromFile]] ???
-:[[SDL_RWFromMem]] ???
+:[[SDL_RWFromFile]] *???
+:[[SDL_RWFromMem]] *???
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
