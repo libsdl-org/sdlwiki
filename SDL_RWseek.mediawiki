@@ -11,7 +11,8 @@ Use this function ^(macro)^ to *call the seek function pointer in an SDL_RWops s
 SDL_RWseek(ctx, offset, whence)
 ```
 
-<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax?  Should the 3 params be on separate lines like a regular function even though the rest of the syntax is different?)>>
+<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax?  Should the 3 params be on separate lines like a regular function even though the rest of the syntax is different?  Should the following be included in the syntax section?
+(ctx)->seek(ctx, offset, whence))>>
 
 == Function Parameters ==
 {|
