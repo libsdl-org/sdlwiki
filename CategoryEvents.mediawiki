@@ -19,9 +19,7 @@ SDL_Init(SDL_INIT_VIDEO);
 
 Internally, SDL stores all the events waiting to be handled in an event queue. Using functions like [[SDL_PollEvent]](), [[SDL_PeepEvents]]() and [[SDL_WaitEvent]]() you can observe and handle waiting input events.
 
-The key to event handling in SDL is the SDL_Event union. The event queue itself is composed of a series of SDL_Event unions, one for each waiting event. SDL_Event unions are read from the queue with the [[SDL_PollEvent]]() function and it is then up to the application to process the information stored with them. 
-
-<<Color2(green,A page for SDL_Event is being created.  A link will be included here when it is ready.)>>
+The key to event handling in SDL is the [[SDL_Event]] union. The event queue itself is composed of a series of [[SDL_Event]] unions, one for each waiting event. [[SDL_Event]] unions are read from the queue with the [[SDL_PollEvent]]() function and it is then up to the application to process the information stored with them. 
 
 == Functions ==
 
