@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWFromFile =
-Use this function to create SDL_RWops structures from files.
+Use this function to *create a new SDL_RWops structure for reading from and/or writing to a named file*.
 
 
 == Syntax ==
@@ -22,15 +22,23 @@ SDL_RWops* SDL_RWFromFile(const char* file,
 |}
 
 == Return Value ==
-A pointer to the SDL_RWops structure that is created, *or NULL on failure*.
+Returns a pointer to the SDL_RWops structure that is created, *or NULL on failure*.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_RWops *file;
+SDL_Surface *image;
+
+file = SDL_RWFromFile("myimage.bmp", "rb");
+image = SDL_LoadBMP_RW(file, 1); // 1 means the file will be automatically closed.
+
+// Do something with image here.
 ```
 
 == Remarks ==
-*Available '''mode''' strings:
+*The '''mode''' string is treated the same as in a call to the C library's fopen().
+
+Available '''mode''' strings:
 {|
 |r
 |Open a file for reading. The file must exist.
