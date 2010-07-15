@@ -70,7 +70,7 @@ SDL_RWops *MyCustomRWop()
 ```
 
 == Remarks ==
-*You must free any memory allocated ,,with,, ^using^ [[SDL_AllocRW]]() with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. * /!\
+/!\ *You must free any memory allocated ,,with,, ^using^ [[SDL_AllocRW]]() with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. *
 
 == Related Functions ==
 :[[SDL_FreeRW]] *
