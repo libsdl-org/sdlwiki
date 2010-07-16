@@ -3,7 +3,11 @@
 '''DRAFT'''
 
 = SDL_FilterEvents =
-Use this function to run the filter function on the current event queue, removing any events for which the filter returns 0.
+Use this function to run the filter function on the current event queue, removing any events for which the filter returns 0.  
+
+<<Color2(green,I suspect that the perspective in the header where this was taken from was different and it should read:)>> 
+
+Use this function to filter the current event queue, removing any events for which the filter returns 0.
 
 
 == Syntax ==
@@ -15,16 +19,13 @@ void SDL_FilterEvents(SDL_EventFilter filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|^typedef int (SDLCALL * SDL_EventFilter) (void *userdata, SDL_Event * event); ???  the SDL_EventFilter to be referenced/run ???^
+|the SDL_EventFilter to be referenced/run ???^
 |-
 |'''userdata'''
-|^a pointer filled with user-specified information to be filtered^
+|^a pointer to the user-specified information to be filtered^
 |}
 
-== Return Value ==
-If the filter returns 1, then the event will be added to the internal queue. If it returns 0, then the event will be dropped from the queue, but the internal state will still be updated. This allows selective filtering of dynamically arriving events. 
-
-<<Color2(green,Is this really a RV or just a note on how to set it up?)>>
+<<Color2(green,There is currently no page for SDL_EventFilter.  Is it just a typedef?  Should it be referenced in Remarks based on the [[SDL_SetEventFilter]]() info?)>>
 
 == Code Examples ==
 ```c++
@@ -35,6 +36,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetEventFilter]] ???
+:[[SDL_SetEventFilter]] ???
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
