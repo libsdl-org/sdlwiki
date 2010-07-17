@@ -23,10 +23,10 @@ int SDL_PeepEvents(SDL_Event*      events,
 |^the number of events to work with^; see [[#Remarks|Remarks]] for details
 |-
 |'''action'''
-|^how to handle the events in the queue^; see [[#Remarks|Remarks]] for details
+|^how to handle the events in the queue^; see [[#action|Remarks]] for details
 |-
 |'''mask'''
-|^criteria by which to select events from the queue^
+|*a bit-wise OR of SDL_EVENTMASK(event_type), for all event types you are interested in*; see [[#mask|Remarks]] and [[SDL_EventMask]] for details ???
 |}
 
 == Return Value ==
@@ -38,14 +38,21 @@ You can add your code example here
 ```
 
 == Remarks ==
+<span id="action"></span>
 '''action''' may be any of the following (from enum SDL_eventaction):
 {|
 |SDL_ADDEVENT
+|up to '''numevents''' events will be added to the back of the event queue
 |-
 |SDL_PEEKEVENT
+|up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will not be removed from the queue
 |-
 |SDL_GETEVENT
+|up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will be removed from the queue
 |}
+
+
+<<Color2(green,The below is taken directly from the header.  The info has been transferred to the table above as an optional way of being presented.  Which should be kept?)>>
 
 If '''action''' is SDL_ADDEVENT, up to '''numevents''' events will be added to the back of the event queue.
 
@@ -53,9 +60,23 @@ If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of t
 
 If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will be removed from the queue. 
 
-This function is thread-safe.
+<span id="mask"></span>*Examples of '''mask''':
+*SDL_EVENTMASK (SDL_KEYUP)
+*(SDL_EVENTMASK (SDL_MOUSEBUTTONDOWN) | SDL_EVENTMASK (SDL_MOUSEBUTTONUP))
+*SDL_ALLEVENTS
+*SDL_KEYUPMASK
+*SDL_ALLEVENTS ^ SDL_QUITMASK
+*
+
+{i} This function is thread-safe.
+
+<<Color2(green,Is this true in 1.3?)>>
+You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
 
 == Related Functions ==
+:[[SDL_PollEvent]] *???
+:[[SDL_PumpEvents]] *???
+:[[SDL_PushEvent]] *???
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
