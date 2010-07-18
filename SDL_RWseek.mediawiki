@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RWseek =
 Use this function to seek within an SDL_RWops data source.
@@ -26,7 +25,7 @@ long SDL_RWseek(SDL_RWops* context,
 |}
 
 == Return Value ==
-Returns the final offset in the data source.
+Returns the final offset in the data source after the seek.
 
 == Code Examples ==
 ```c++
