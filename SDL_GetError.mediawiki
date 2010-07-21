@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetError =
 Use this function to retrieve a message about the last error that occurred.
@@ -12,7 +11,7 @@ char* SDL_GetError(void)
 ```
 
 == Return Value ==
-Returns a message filled with information about the specific error that occurred, or an empty string if there hasn't been an error since the last call to [[SDL_ClearError]]().
+Returns a message with information about the specific error that occurred, or an empty string if there hasn't been an error since the last call to [[SDL_ClearError]]().
 
 == Code Examples ==
 ```c++
