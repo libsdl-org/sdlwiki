@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_Quit =
 Use this function to clean up all initialized subsystems.  You should call it upon all exit conditions.
