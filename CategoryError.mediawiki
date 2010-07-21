@@ -15,7 +15,7 @@
 
 Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  
 
-These error messages are currently English text.
+The SDL error messages are in English.
 
 == Functions ==
 
