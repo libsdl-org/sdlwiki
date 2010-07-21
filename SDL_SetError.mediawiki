@@ -18,7 +18,7 @@ void SDL_SetError(const char* fmt,
 |a printf() style message format string
 |-
 |'''...'''
-|Additional parameters matching % tokens in the '''fmt''' string.
+|additional parameters matching % tokens in the '''fmt''' string
 |}
 
 == Code Examples ==
