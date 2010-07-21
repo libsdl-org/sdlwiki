@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_InitSubSystem =
-Use this function to initialize specific SDL subsystems ^after SDL has already been initialized^.
+Use this function to initialize specific SDL subsystems.
 
 
 == Syntax ==
@@ -29,7 +29,7 @@ You can add your code example here
 <span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously. 
 <<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
 
-''You can add useful comments here''
+[[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
 
 == Related Functions ==
 :[[SDL_Init]]
