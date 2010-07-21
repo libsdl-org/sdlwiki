@@ -15,9 +15,9 @@ void SDL_SetError(const char* fmt,
 == Function Parameters ==
 {|
 |'''fmt'''
-|a pointer to information about the format of the error ???
+|a printf() style message format string
 |-
-|''''''
+|'''...'''
 |
 |}
 
