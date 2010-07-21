@@ -22,7 +22,7 @@ void SDL_SetError(const char* fmt,
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_SetError("Something unexpected happened!");
 ```
 
 == Remarks ==
