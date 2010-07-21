@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_Quit =
-Use this function to clean up all initialized subsystems and unload the dynamically linked library.  You should call it upon all exit conditions.
+Use this function to clean up all initialized subsystems.  You should call it upon all exit conditions.
 
 
 == Syntax ==
