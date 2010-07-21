@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetVersion =
 Use this function to get the version of SDL that is linked against your program.
@@ -37,6 +36,7 @@ This function may be called safely at any time, even before [[SDL_Init]]().
 
 == Related Functions ==
 :[[SDL_GetRevision]]
+:[[SDL_VERSION]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
