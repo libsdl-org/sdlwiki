@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_InitSubSystem =
 Use this function to initialize specific SDL subsystems.
@@ -33,6 +32,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_Init]]
+:[[SDL_QuitSubSystem]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
