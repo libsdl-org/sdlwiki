@@ -29,19 +29,16 @@ printf("We compiled against SDL version %d.%d.%d ...\n",
 printf("But we linked against SDL version %d.%d.%d.\n",
        linked.major, linked.minor, linked.patch);
 ```
-<!-- # End 1 -->
-```c++
-You can add your code example here
-```
 
 == Remarks ==
-If you are using a shared library (DLL) version of SDL, then it is possible that it will be different than the version you compiled against.  <<Color2(green,Can this function distinguish between the two? It isn't clear.)>>
+If you are linking to SDL dynamically, then it is possible that it will be different than the version you compiled against.
 
-This is a real function; the macro SDL_VERSION() tells you what version of SDL you compiled against: <<Color2(green,This line ends w/ a colon and is immediately before the code example in the header. Is it supposed to be in the Code Examples section?  Inside the box or outside?  Also it is not clear what this sentence is saying.  How is this function different from the macro? Does it tell you 2 things while the macro only tells one?)>>
+This is a real function; the macro SDL_VERSION() tells you what version of SDL you compiled against.  If you are dynamically linking to SDL the return value of the two may be different.
 
 This function may be called safely at any time, even before [[SDL_Init]]().
 
 == Related Functions ==
+:[[SDL_GetRevision]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
