@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetError =
 Use this function to set the SDL error string.
@@ -18,7 +17,7 @@ void SDL_SetError(const char* fmt,
 |a printf() style message format string
 |-
 |'''...'''
-|additional parameters matching % tokens in the '''fmt''' string
+|additional parameters matching % tokens in the '''fmt''' string, if any
 |}
 
 == Code Examples ==
