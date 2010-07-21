@@ -12,7 +12,7 @@ const char* SDL_GetRevision(void)
 ```
 
 == Return Value ==
-Returns an arbitrary string (a hash value),uniquely identifying the exact revision of the SDL Library in use.
+Returns an arbitrary string (a hash value), uniquely identifying the exact revision of the SDL library in use.
 
 == Code Examples ==
 ```c++
@@ -20,9 +20,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This value is only useful in comparing against other revisions. 
-
-It is NOT an incrementing number.
+This value is only useful in comparing against other revisions, it is NOT an incrementing number.
 
 == Related Functions ==
 
