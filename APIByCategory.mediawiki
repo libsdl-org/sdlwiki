@@ -91,28 +91,6 @@
 |}
 
 
-== File I/O Abstraction ==
-
-{|
-|<tablewidth="100%"width="75%">'''View information and functions related to...'''
-|'''View the header'''
-|-
-|[CategoryIO|File I/O Abstraction]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h] 
-|}
-
-
-== Shared Object Support ==
-
-{|
-|<tablewidth="100%"width="75%">'''View information and functions related to...'''
-|'''View the header'''
-|-
-|[CategorySharedObject|Shared Object Loading and Function Lookup]] 
-|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h] 
-|}
-
-
 == Threads ==
 
 {|
@@ -138,6 +116,28 @@
 |-
 |[CategoryTimer|Timer Support]] 
 |[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_timer.h SDL_timer.h] 
+|}
+
+
+== File I/O Abstraction ==
+
+{|
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|'''View the header'''
+|-
+|[CategoryIO|File I/O Abstraction]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_rwops.h SDL_rwops.h] 
+|}
+
+
+== Shared Object Support ==
+
+{|
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|'''View the header'''
+|-
+|[CategorySharedObject|Shared Object Loading and Function Lookup]] 
+|[[http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_loadso.h SDL_loadso.h] 
 |}
 
 
