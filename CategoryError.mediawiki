@@ -13,7 +13,9 @@
 
 == Introduction ==
 
-Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  These error messages are not localized, but are currently English error strings.
+Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  
+
+These error messages are currently English text.
 
 == Functions ==
 
