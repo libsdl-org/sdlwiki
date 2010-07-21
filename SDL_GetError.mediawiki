@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetError =
-Use this function to retrieve an SDL error string.
+Use this function to retrieve a message about the last error that occurred.
 
 
 == Syntax ==
@@ -20,7 +20,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+It is possible for multiple errors to occur before calling [[SDL_GetError]]().  Only the last error is returned.
 
 == Related Functions ==
 :[[SDL_ClearError]] ???
