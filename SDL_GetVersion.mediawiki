@@ -31,9 +31,9 @@ printf("But we linked against SDL version %d.%d.%d.\n",
 ```
 
 == Remarks ==
-If you are linking to SDL dynamically, then it is possible that the current version will be different than the version you compiled against. 
-:[[SDL_GetVersion]]() returns the current version number.
-:[[SDL_VERSION]] is a macro that tells you what version of SDL you compiled against.
+If you are linking to SDL dynamically, then it is possible that the current version will be different than the version you compiled against.  This function returns the current version number.
+
+[[SDL_VERSION]] is a macro that tells you what version you compiled against.
 
 This function may be called safely at any time, even before [[SDL_Init]]().
 
