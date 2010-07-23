@@ -3,15 +3,13 @@
 '''DRAFT'''
 
 = SDL_SwapLE16 =
-Use this function to swap byte order from little-endian to native (if necessary).
+Use this function to swap byte order from little-endian to native ^(if necessary)^.
 
 
 == Syntax ==
 ```c++
 Uint16 SwapLE16(Uint16 x)
 ```
-
-<<Color2(green,Is the return value Uint16 in this case?)>>
 
 == Function Parameters ==
 {|
