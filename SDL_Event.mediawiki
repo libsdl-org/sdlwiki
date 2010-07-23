@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_Event =
-A ,,structure,, ^union^ that contains the general event structure.
+A ,,structure,, ^union^ that contains the ,,general,, <code>different</code> event structure.
 
 
 == Data Fields ==
@@ -71,6 +71,14 @@ A ,,structure,, ^union^ that contains the general event structure.
 |[[SDL_ProximityEvent]]
 |'''proximity'''
 |proximity In or Out event
+|-
+|<style="color: #808080;">SDL_ActiveEvent
+|<style="color: #808080;">'''active'''
+|<style="color: #808080;">deprecated
+|-
+|<style="color: #808080;">SDL_ResizeEvent
+|<style="color: #808080;">'''resize'''
+|<style="color: #808080;">deprecated
 |}
 
 == Code Examples ==
@@ -124,8 +132,6 @@ SDL_PushEvent(&user_event);
 
 == Remarks ==
 ''You can add useful comments here''
-
-<<Color2(green,There is some backward compatibility info that is not currently included here.  See the header for more info.)>>
 
 * 
 The [[SDL_Event]] union is the core to all event handling in SDL; it's probably the most important structure after [[SDL_Surface]]. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event '''type'''. 
