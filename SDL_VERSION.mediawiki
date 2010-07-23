@@ -38,8 +38,8 @@ This macro fills in an [[SDL_version]] structure with the version of the library
 
 == Related Macros ==
 :[[SDL_COMPILEDVERSION]]
-:[[SDL_VERSION_ATLEAST]]
 :[[SDL_VERSIONNUM]]
+:[[SDL_VERSION_ATLEAST]]
 
 == Related Functions ==
 :[[SDL_GetVersion]]
