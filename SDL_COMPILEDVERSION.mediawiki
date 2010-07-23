@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_COMPILEDVERSION =
+Use this macro to ^get the current SDL version number (major.minor.patchlevel)^.
+ ''-or-''
+A macro that produces the current SDL version number (major.minor.patchlevel)
+
+<<Color2(green,Is this whatever is currently in use? what was compiled against? or what the most recent available is?  It is unclear.  Does this just pull a number for each part using VERSIONNUM but then report them all together?  How is this different from SDL_VERSION?)>>
+
+
+== Syntax ==
+```c++
+SDL_COMPILEDVERSION \
+ SDL_VERSIONNUM(SDL_MAJOR_VERSION,
+                SDL_MINOR_VERSION,
+                SDL_PATCHLEVEL)
+```
+
+<<Color2(green,Do you want this listed like a function (as above) or all on one line since it is not a function?)>>
+
+== Macro Parameters ==
+{|
+|'''SDL_MAJOR_VERSION'''
+|the major version number
+|-
+|'''SDL_MINOR_VERSION'''
+|the minor version number
+|-
+|'''SDL_PATCHLEVEL'''
+|the update version number
+|}
+
+== Return Value ==
+<<Color2(green,Is this section empty or does it return X.Y.Z?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Macros ==
+:[[SDL_VERSION]]
+:[[SDL_VERSION_ATLEAST]]
+:[[SDL_VERSIONNUM]]
+
+== Related Functions ==
+:[[SDL_GetVersion]]
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
