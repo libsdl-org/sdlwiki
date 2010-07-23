@@ -50,13 +50,6 @@ SDL_VERSIONNUM(X, Y, Z)
 * This assumes that there will never be more than 100 patchlevels.
 <br/>
 
-:[[SDL_COMPILEDVERSION]]
-This is the version number macro for the current SDL version.
-```c++
-SDL_COMPILEDVERSION \
-SDL_VERSIONNUM(SDL_MAJOR_VERSION, SDL_MINOR_VERSION, SDL_PATCHLEVEL)
-```
-<br/>
 
 :[[SDL_VERSION_ATLEAST]]
 This macro will evaluate to true if compiled with SDL at least X.Y.Z.
