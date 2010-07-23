@@ -29,7 +29,7 @@ SDL_COMPILEDVERSION \
 |the minor version number
 |-
 |'''SDL_PATCHLEVEL'''
-|the update version number
+|the update version number (patchlevel)
 |}
 
 == Return Value ==
@@ -45,8 +45,8 @@ You can add your code example here
 
 == Related Macros ==
 :[[SDL_VERSION]]
-:[[SDL_VERSION_ATLEAST]]
 :[[SDL_VERSIONNUM]]
+:[[SDL_VERSION_ATLEAST]]
 
 == Related Functions ==
 :[[SDL_GetVersion]]
