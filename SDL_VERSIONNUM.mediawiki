@@ -1,0 +1,50 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_VERSIONNUM =
+Use this macro to ,,turn the,, ^convert separate^ version numbers into a ^single^ numeric value.  <<Color2(green,Should it be specified that this is the compiled or current version?)>>
+
+
+== Syntax ==
+```c++
+SDL_VERSIONNUM(X, Y, Z)						\
+ ((X)*1000 + (Y)*100 + (Z))
+```
+
+<<Color2(green,Does the backslash way off to the right belong there?  That is how it is in the header.)>>
+
+== Function Parameters ==
+{|
+|'''X'''
+|major version; reported in thousands place
+|-
+|'''Y'''
+|minor version; reported in hundreds place
+|-
+|'''Z'''
+|update version (patchlevel); reported in tens and ones places
+|}
+
+== Return Value ==
+<<Color2(green,Is the numerical value that results from this macro a return value or is this section empty?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This assumes that there will never be more than 100 patchlevels.
+ ''Example:'' ```(1,2,3) -> (1203)```
+
+== Related Macros ==
+:[[SDL_COMPILEDVERSION]]
+:[[SDL_VERSION]]
+:[[SDL_VERSION_ATLEAST]]
+
+== Related Functions ==
+:[[SDL_GetVersion]] ???
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
