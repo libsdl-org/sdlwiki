@@ -3,9 +3,9 @@
 '''DRAFT'''
 
 = SDL_VERSION =
-<<Color2(green,Should the word "Macro" be in the title above (ie: SDL_VERSION ''(Macro)'')so it is clear that this is not a true function?)>>
+<<Color2(green,Should the word "Macro" be in the title above so it is clear that this is not a true function?)>>   ie: SDL_VERSION (Macro)
 
-Use this ''macro'' to determine ^the^ SDL version ^a/your^ program was compiled against.
+Use this macro to determine ^the^ SDL version ^a/your^ program was compiled against.
 
 
 == Syntax ==
@@ -26,17 +26,18 @@ Fills the selected struct with:
 : (x)->patch = SDL_PATCHLEVEL
 
 == Code Examples ==
-<<Include(SDL_GetVersion, , , from="== Code Examples ==", to="## End 1")>>
-
-```c++
-You can add your code example here
-```
+<<Include(SDL_GetVersion, , , from="== Code Examples ==", to="== Remarks")>>
 
 == Remarks ==
-This macro fills in a [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]](), which, unlike [[SDL_VERSION]](), is not a macro.  
+This macro fills in an [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]]() which, unlike [[SDL_VERSION]](), is not a macro.  
 
 == Related Structures ==
 :[[SDL_version]]
+
+== Related Macros ==
+:[[SDL_COMPILEDVERSION]]
+:[[SDL_VERSION_ATLEAST]]
+:[[SDL_VERSIONNUM]]
 
 == Related Functions ==
 :[[SDL_GetVersion]]
