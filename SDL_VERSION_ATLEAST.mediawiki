@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_VERSION_ATLEAST =
+Use this macro to ^determine whether the SDL version compiled against was at least as new as the specified/current??? version^.
+
+''-or-''
+
+Use this macro to confirm whether a program was compiled with a version no older than the specified version.
+
+
+== Syntax ==
+```c++
+SDL_VERSION_ATLEAST(X, Y, Z) \
+ (SDL_COMPILEDVERSION >= SDL_VERSIONNUM(X, Y, Z))
+```
+
+== Function Parameters ==
+{|
+|'''X'''
+|major version
+|-
+|'''Y'''
+|minor version
+|-
+|'''Z'''
+|update version (patchlevel)
+|}
+
+== Return Value ==
+This macro will evaluate to ,,true,, ^SDL_TRUE^ if compiled with SDL ^version^ at least X.Y.Z.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Macros ==
+:[[SDL_COMPILEDVERSION]]
+:[[SDL_VERSION]]
+:[[SDL_VERSIONNUM]]
+
+== Related Functions ==
+:[[SDL_GetVersion]] ???
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
