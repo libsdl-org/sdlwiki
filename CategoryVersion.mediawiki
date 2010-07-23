@@ -27,8 +27,6 @@ Here are macros ''(<<Color2(green,Need to create a link to a resource that intro
 * This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information.
 * [[SDL_version#Related_Minor_Macros|SDL_VERSIONNUM]]
 * A macro that converts version numbers into a numeric value.
-* [[SDL_version#Related_Minor_Macros|SDL_COMPILEDVERSION]]
-* A macro that produces the current SDL version number (major.minor.patchlevel)
 * [[SDL_version#Related_Minor_Macros|SDL_VERSION_ATLEAST]]
 * A macro that confirms whether a program was compiled with a version no older than the specified version.
 
