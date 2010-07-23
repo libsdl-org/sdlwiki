@@ -673,25 +673,25 @@ The SDL virtual key representation.
 |the My Computer key
 |-
 |SDLK_AC_SEARCH
-|the Search key
+|the Search key (application control keypad)
 |-
 |SDLK_AC_HOME
-|the Home key
+|the Home key (application control keypad)
 |-
 |SDLK_AC_BACK
-|the Back key
+|the Back key (application control keypad)
 |-
 |SDLK_AC_FORWARD
-|the Forward key
+|the Forward key (application control keypad)
 |-
 |SDLK_AC_STOP
-|the Stop key
+|the Stop key (application control keypad)
 |-
 |SDLK_AC_REFRESH
-|the Refresh key
+|the Refresh key (application control keypad)
 |-
 |SDLK_AC_BOOKMARKS
-|the Bookmarks key
+|the Bookmarks key (application control keypad)
 |-
 |SDLK_BRIGHTNESSDOWN
 |the Brightness Down key
