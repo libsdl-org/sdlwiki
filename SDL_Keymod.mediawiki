@@ -44,6 +44,18 @@ An enumeration of key modifier masks.
 |KMOD_MODE
 |the !AltGr key is down
 |-
+|KMOD_CTRL
+|(KMOD_LCTRL|KMOD_RCTRL)
+|-
+|KMOD_SHIFT
+|(KMOD_LSHIFT|KMOD_RSHIFT)
+|-
+|KMOD_ALT
+|(KMOD_LALT|KMOD_RALT)
+|-
+|KMOD_GUI
+|(KMOD_LGUI|KMOD_RGUI)
+|-
 |<style="color: #808080;">KMOD_RESERVED
 |<style="color: #808080;">reserved for future use
 |}
