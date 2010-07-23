@@ -82,7 +82,9 @@ A ,,structure,, ^union^ that contains the ,,general,, <code>different</code> eve
 |}
 
 == Code Examples ==
-*
+<<Color2(green,The following seems most like it belongs in this section but with all the extra text may belong elsewhere or the text should also be in a box?)>>
+
+*<br/>
 The [[SDL_Event]] structure has two uses:
 * Reading events on the event queue
 * Placing events on the event queue 
@@ -128,12 +130,14 @@ user_event.user.data1=NULL;
 user_event.user.data2=NULL;
 SDL_PushEvent(&user_event);
 ```
-*
+<br/>*
 
 == Remarks ==
 ''You can add useful comments here''
 
-* 
+<<Color2(green,Should the following be incorporated above (params) rather than listed separately here?  Should it be left off entirely or moved to the !CategoryEvents page?)>>
+
+* <br/>
 The [[SDL_Event]] union is the core to all event handling in SDL; it's probably the most important structure after [[SDL_Surface]]. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event '''type'''. 
 
 {|
@@ -181,7 +185,7 @@ The [[SDL_Event]] union is the core to all event handling in SDL; it's probably 
 |}
 
 <<Color2(green,SDL_MouseWheelEvent is missing)>>
-*
+<br/>*
 
 == Related Enumerations ==
 :[[SDL_scancode]] ???
