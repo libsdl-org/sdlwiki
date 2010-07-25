@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SwapBE32 =
+Use this function to swap byte order from big-endian to native ^(if necessary)^.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_SwapBE32(Uint32 x)
+```
+
+== Function Parameters ==
+{|
+|'''x'''
+|the data to be swapped
+|}
+
+== Return Value ==
+The data in native Uint32 format. ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SwapLE32]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]
