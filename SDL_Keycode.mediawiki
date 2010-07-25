@@ -17,41 +17,68 @@ The SDL virtual key representation.
 |SDLK_ESCAPE
 |the Esc key
 |-
-|SDLK_BACKSPACE
-|the Back Space key
-|-
 |SDLK_TAB
 |the Tab key
-|-
-|SDLK_SPACE
-|the Space Bar key(s)
 |-
 |SDLK_CAPSLOCK
 |the Caps Lock key
 |-
+|SDLK_LSHIFT
+|the Left Shift key
+|-
+|SDLK_LCTRL
+|the Left Control key
+|-
+|SDLK_LGUI
+|the Left GUI key
+|-
+|SDLK_LALT
+|the Left Alt key
+|-
+|SDLK_SPACE
+|the Space Bar key(s)
+|-
+|SDLK_RALT
+|the Right Alt key
+|-
+|SDLK_RGUI
+|the Right GUI key
+|-
 |SDLK_APPLICATION
 |the Application / Contextual Menu key (Windows)
+|-
+|SDLK_RCTRL
+|the Right Control key
+|-
+|SDLK_RSHIFT
+|the Right Shift key
+|-
+|SDLK_BACKQUOTE
+|the ` key
 |-
 |SDLK_EXCLAIM
 |the ! key
 |-
-|SDLK_QUOTEDBL
-|the " key
+|SDLK_AT
+|the @ key
 |-
 |SDLK_HASH
 |the # key
 |-
+|SDLK_DOLLAR
+|the $ key
+|-
 |SDLK_PERCENT
 |the % key
 |-
-|SDLK_DOLLAR
-|the $ key
+|SDLK_CARET
+|the ^ key
 |-
 |SDLK_AMPERSAND
 |the & key
 |-
-|SDLK_QUOTE
-|the ' key
+|SDLK_ASTERISK
+|the * key
 |-
 |SDLK_LEFTPAREN
 |the ( key
@@ -59,23 +86,59 @@ The SDL virtual key representation.
 |SDLK_RIGHTPAREN
 |the ) key
 |-
-|SDLK_ASTERISK
-|the * key
+|SDLK_MINUS
+|the - key
+|-
+|SDLK_EQUALS
+|the = key
+|-
+|SDLK_BACKSPACE
+|the Back Space key
+|-
+|SDLK_UNDERSCORE
+|the _ key
 |-
 |SDLK_PLUS
 |the + key
 |-
+|SDLK_LEFTBRACKET
+|the [ key
+|-
+|SDLK_RIGHTBRACKET
+|the ] key
+|-
+|SDLK_SEMICOLON
+|the ; key
+|-
+|SDLK_QUOTE
+|the ' key
+|-
+|SDLK_COLON
+|the : key
+|-
+|SDLK_QUOTEDBL
+|the " key
+|-
 |SDLK_COMMA
 |the , key
-|-
-|SDLK_MINUS
-|the - key
 |-
 |SDLK_PERIOD
 |the . key
 |-
 |SDLK_SLASH
 |the / key
+|-
+|SDLK_BACKSLASH
+|the \ key
+|-
+|SDLK_LESS
+|the < key
+|-
+|SDLK_GREATER
+|the > key
+|-
+|SDLK_QUESTION
+|the ? key
 |-
 |SDLK_0
 |the 0 key
@@ -106,45 +169,6 @@ The SDL virtual key representation.
 |-
 |SDLK_9
 |the 9 key
-|-
-|SDLK_COLON
-|the : key
-|-
-|SDLK_SEMICOLON
-|the ; key
-|-
-|SDLK_LESS
-|the < key
-|-
-|SDLK_EQUALS
-|the = key
-|-
-|SDLK_GREATER
-|the > key
-|-
-|SDLK_QUESTION
-|the ? key
-|-
-|SDLK_AT
-|the @ key
-|-
-|SDLK_LEFTBRACKET
-|the [ key
-|-
-|SDLK_BACKSLASH
-|the \ key
-|-
-|SDLK_RIGHTBRACKET
-|the ] key
-|-
-|SDLK_CARET
-|the ^ key
-|-
-|SDLK_UNDERSCORE
-|the _ key
-|-
-|SDLK_BACKQUOTE
-|the ` key
 |-
 |SDLK_a
 |the a key
@@ -269,35 +293,44 @@ The SDL virtual key representation.
 |SDLK_PAUSE
 |the Pause / Break key
 |-
+|SDLK_SYSREQ
+|the !SysReq key
+|-
 |SDLK_INSERT
 |the Insert key
-|-
-|SDLK_HOME
-|the Home key
-|-
-|SDLK_PAGEUP
-|the Page Up key
 |-
 |SDLK_DELETE
 |the Delete key
 |-
+|SDLK_HOME
+|the Home key
+|-
 |SDLK_END
 |the End key
+|-
+|SDLK_PAGEUP
+|the Page Up key
 |-
 |SDLK_PAGEDOWN
 |the Page Down key
 |-
+|SDLK_LEFT
+|the Left arrow key (navigation keypad)
+|-
 |SDLK_RIGHT
 |the Right arrow key (navigation keypad)
 |-
-|SDLK_LEFT
-|the Left arrow key (navigation keypad)
+|SDLK_UP
+|the Up arrow key (navigation keypad)
 |-
 |SDLK_DOWN
 |the Down arrow key (navigation keypad)
 |-
-|SDLK_UP
-|the Up arrow key (navigation keypad)
+|SDLK_POWER
+|the Power key
+|-
+|SDLK_SLEEP
+|the Sleep key
 |-
 |SDLK_NUMLOCKCLEAR
 |the Num Lock key (PC) / the Clear key (Mac)
@@ -349,12 +382,6 @@ The SDL virtual key representation.
 |-
 |SDLK_KP_PERIOD
 |the . key (numeric keypad)
-|-
-|SDLK_KP_EQUALS
-|the = key (numeric keypad)
-|-
-|SDLK_POWER
-|the Power key
 |-
 |SDLK_F13
 |the F13 key
@@ -426,25 +453,16 @@ The SDL virtual key representation.
 |the Find key
 |-
 |SDLK_MUTE
-|the Mute key (multimedia keypad)
+|the Mute key
 |-
 |SDLK_VOLUMEUP
-|the Volume Up key (multimedia keypad)
+|the Volume Up key
 |-
 |SDLK_VOLUMEDOWN
-|the Volume Down key (multimedia keypad)
-|-
-|SDLK_KP_COMMA
-|the Comma key (numeric keypad ???)
-|-
-|SDLK_KP_EQUALSAS400
-|the Equals AS400 key (numeric keypad ???)
+|the Volume Down key
 |-
 |SDLK_ALTERASE
 |the Alt Erase key
-|-
-|SDLK_SYSREQ
-|the !SysReq key
 |-
 |SDLK_CANCEL
 |the Cancel key
@@ -476,12 +494,6 @@ The SDL virtual key representation.
 |SDLK_EXSEL
 |the ExSel key
 |-
-|SDLK_KP_00
-|the 00 key (numeric keypad ???)
-|-
-|SDLK_KP_000
-|the 000 key (numeric keypad ???)
-|-
 |SDLK_THOUSANDSSEPARATOR
 |the Thousands Separator key
 |-
@@ -494,180 +506,174 @@ The SDL virtual key representation.
 |SDLK_CURRENCYSUBUNIT
 |the Currency Subunit key
 |-
+|SDLK_KP_EQUALS
+|the = key (numeric keypad)
+|-
+|SDLK_KP_COMMA
+|the Comma key (numeric keypad)
+|-
+|SDLK_KP_EQUALSAS400
+|the Equals AS400 key (numeric keypad)
+|-
+|SDLK_KP_00
+|the 00 key (numeric keypad)
+|-
+|SDLK_KP_000
+|the 000 key (numeric keypad)
+|-
 |SDLK_KP_LEFTPAREN
-|the Left Parenthesis key (numeric keypad ???)
+|the Left Parenthesis key (numeric keypad)
 |-
 |SDLK_KP_RIGHTPAREN
-|the Right Parenthesis key (numeric keypad ???)
+|the Right Parenthesis key (numeric keypad)
 |-
 |SDLK_KP_LEFTBRACE
-|the Left Brace key (numeric keypad) ???
+|the Left Brace key (numeric keypad)
 |-
 |SDLK_KP_RIGHTBRACE
-|the Right Brace key (numeric keypad) ???
+|the Right Brace key (numeric keypad)
 |-
 |SDLK_KP_TAB
-|the Tab key (numeric keypad ???)
+|the Tab key (numeric keypad)
 |-
 |SDLK_KP_BACKSPACE
-|the Backspace key (numeric keypad ???)
+|the Backspace key (numeric keypad)
 |-
 |SDLK_KP_A
-|the A key (numeric keypad ???)
+|the A key (numeric keypad)
 |-
 |SDLK_KP_B
-|the B key (numeric keypad ???)
+|the B key (numeric keypad)
 |-
 |SDLK_KP_C
-|the C key (numeric keypad ???)
+|the C key (numeric keypad)
 |-
 |SDLK_KP_D
-|the D key (numeric keypad ???)
+|the D key (numeric keypad)
 |-
 |SDLK_KP_E
-|the E key (numeric keypad ???)
+|the E key (numeric keypad)
 |-
 |SDLK_KP_F
-|the F key (numeric keypad ???)
+|the F key (numeric keypad)
 |-
 |SDLK_KP_XOR
-|the XOR key (numeric keypad ???)
+|the XOR key (numeric keypad)
 |-
 |SDLK_KP_POWER
-|the Power key (numeric keypad ???)
+|the Power key (numeric keypad)
 |-
 |SDLK_KP_PERCENT
-|the Percent key (numeric keypad ???)
+|the Percent key (numeric keypad)
 |-
 |SDLK_KP_LESS
-|the Less key (numeric keypad ???)
+|the Less key (numeric keypad)
 |-
 |SDLK_KP_GREATER
-|the Greater key (numeric keypad ???)
+|the Greater key (numeric keypad)
 |-
 |SDLK_KP_AMPERSAND
-|the & key (numeric keypad ???)
+|the & key (numeric keypad)
 |-
 |SDLK_KP_DBLAMPERSAND
-|the && key (numeric keypad ???)
+|the && key (numeric keypad)
 |-
 |SDLK_KP_VERTICALBAR
-|the | key (numeric keypad ???)
+|the <code>|</code> key (numeric keypad)
 |-
 |SDLK_KP_DBLVERTICALBAR
-|the ```
-|``` key (numeric keypad ???)
+|the <code>
+|</code> key (numeric keypad)
 |-
 |SDLK_KP_COLON
-|the : key (numeric keypad ???)
+|the : key (numeric keypad)
 |-
 |SDLK_KP_HASH
-|the # key (numeric keypad ???)
+|the # key (numeric keypad)
 |-
 |SDLK_KP_SPACE
-|the Space key (numeric keypad ???)
+|the Space key (numeric keypad)
 |-
 |SDLK_KP_AT
-|the @ key (numeric keypad ???)
+|the @ key (numeric keypad)
 |-
 |SDLK_KP_EXCLAM
-|the ! key (numeric keypad ???)
+|the ! key (numeric keypad)
 |-
 |SDLK_KP_MEMSTORE
-|the Mem Store key (numeric keypad ???)
+|the Mem Store key (numeric keypad)
 |-
 |SDLK_KP_MEMRECALL
-|the Mem Recall key (numeric keypad ???)
+|the Mem Recall key (numeric keypad)
 |-
 |SDLK_KP_MEMCLEAR
-|the Mem Clear key (numeric keypad ???)
+|the Mem Clear key (numeric keypad)
 |-
 |SDLK_KP_MEMADD
-|the Mem Add key (numeric keypad ???)
+|the Mem Add key (numeric keypad)
 |-
 |SDLK_KP_MEMSUBTRACT
-|the Mem Subtract key (numeric keypad ???)
+|the Mem Subtract key (numeric keypad)
 |-
 |SDLK_KP_MEMMULTIPLY
-|the Mem Multiply key (numeric keypad ???)
+|the Mem Multiply key (numeric keypad)
 |-
 |SDLK_KP_MEMDIVIDE
-|the Mem Divide key (numeric keypad ???)
+|the Mem Divide key (numeric keypad)
 |-
 |SDLK_KP_PLUSMINUS
-|the +/- key (numeric keypad ???)
+|the +/- key (numeric keypad)
 |-
 |SDLK_KP_CLEAR
-|the Clear key (numeric keypad ???)
+|the Clear key (numeric keypad)
 |-
 |SDLK_KP_CLEARENTRY
-|the Clear Entry key (numeric keypad ???)
+|the Clear Entry key (numeric keypad)
 |-
 |SDLK_KP_BINARY
-|the Binary key (numeric keypad ???)
+|the Binary key (numeric keypad)
 |-
 |SDLK_KP_OCTAL
-|the Octal key (numeric keypad ???)
+|the Octal key (numeric keypad)
 |-
 |SDLK_KP_DECIMAL
-|the Decimal key (numeric keypad ???)
+|the Decimal key (numeric keypad)
 |-
 |SDLK_KP_HEXADECIMAL
-|the Hexadecimal key (numeric keypad ???)
-|-
-|SDLK_LCTRL
-|the Left Control key
-|-
-|SDLK_LSHIFT
-|the Left Shift key
-|-
-|SDLK_LALT
-|the Left Alt key
-|-
-|SDLK_LGUI
-|the Left GUI key
-|-
-|SDLK_RCTRL
-|the Right Control key
-|-
-|SDLK_RSHIFT
-|the Right Shift key
-|-
-|SDLK_RALT
-|the Right Alt key
-|-
-|SDLK_RGUI
-|the Right GUI key
+|the Hexadecimal key (numeric keypad)
 |-
 |SDLK_MODE
 |the Mode key
 |-
 |SDLK_AUDIONEXT
-|the Audio Next key (multimedia keypad)
+|the Audio Next key
 |-
 |SDLK_AUDIOPREV
-|the Audio Previous key (multimedia keypad)
+|the Audio Previous key
 |-
 |SDLK_AUDIOSTOP
-|the Audio Stop key (multimedia keypad)
+|the Audio Stop key
 |-
 |SDLK_AUDIOPLAY
-|the Audio Play key (multimedia keypad)
+|the Audio Play key
 |-
 |SDLK_AUDIOMUTE
-|the Audio Mute key (multimedia keypad)
+|the Audio Mute key
 |-
 |SDLK_MEDIASELECT
-|the Media Select key (multimedia keypad)
+|the Media Select key
+|-
+|SDLK_EJECT
+|the Eject key
 |-
 |SDLK_WWW
-|the WWW/World Wide Web key (multimedia keypad)
+|the WWW/World Wide Web key
 |-
 |SDLK_MAIL
-|the Mail/eMail key (multimedia keypad)
+|the Mail/eMail key
 |-
 |SDLK_CALCULATOR
-|the Calculator key (multimedia keypad)
+|the Calculator key
 |-
 |SDLK_COMPUTER
 |the My Computer key
@@ -710,12 +716,6 @@ The SDL virtual key representation.
 |-
 |SDLK_KBDILLUMUP
 |the keyboard Illumination Up key
-|-
-|SDLK_EJECT
-|the Eject key
-|-
-|SDLK_SLEEP
-|the Sleep key
 |}
 
 == Code Examples ==
