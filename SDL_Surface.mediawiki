@@ -68,7 +68,7 @@ A structure that contains a collection of pixels used in software blitting.
 |'''refcount'''
 |read-mostly
 |}
-<<Color2(green,should map and format_version be gray because they're private?)>>
+<<Color2(green,Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?)>>
 
 == Code Examples ==
 ```c++
