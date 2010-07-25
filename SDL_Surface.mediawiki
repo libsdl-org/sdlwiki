@@ -8,9 +8,9 @@ A structure that contains a collection of pixels used in software blitting.
 
 == Data Fields ==
 {|
-|Uint32
-|'''flags'''
-|internal, read-only; see [[#Remarks|Remarks]] for details
+|<style="color: #808080;">Uint32
+|<style="color: #808080;">'''flags'''
+|<style="color: #808080;">internal, read-only; see [[#Remarks|Remarks]] for details
 |-
 |[[SDL_PixelFormat]]*
 |'''format'''
