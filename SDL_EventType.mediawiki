@@ -65,14 +65,14 @@ An enumeration of the types of events that can be delivered.
 |SDL_PROXIMITYOUT
 |proximity Out event
 |-
-|SDL_EVENT_RESERVED1
-|reserved for future use...
+|<style="color: #808080;">SDL_EVENT_RESERVED1
+|<style="color: #808080;">reserved for future use...
 |-
-|SDL_EVENT_RESERVED2
-|reserved for future use...
+|<style="color: #808080;">SDL_EVENT_RESERVED2
+|<style="color: #808080;">reserved for future use...
 |-
-|SDL_EVENT_RESERVED3
-|reserved for future use...
+|<style="color: #808080;">SDL_EVENT_RESERVED3
+|<style="color: #808080;">reserved for future use...
 |}
 
 <<Color2(green,Not sure what to do with this part of the enum. Does it belong here or not?)>>
