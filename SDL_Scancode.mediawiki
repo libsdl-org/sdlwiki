@@ -449,17 +449,17 @@ An enumeration of the SDL keyboard scancode representation.
 |SDL_SCANCODE_LANG5
 |148; Zenkaku/Hankaku
 |-
-|SDL_SCANCODE_LANG6
-|149; reserved
+|<style="color: #808080;">SDL_SCANCODE_LANG6
+|<style="color: #808080;">149; reserved
 |-
-|SDL_SCANCODE_LANG7
-|150; reserved
+|<style="color: #808080;">SDL_SCANCODE_LANG7
+|<style="color: #808080;">150; reserved
 |-
-|SDL_SCANCODE_LANG8
-|151; reserved
+|<style="color: #808080;">SDL_SCANCODE_LANG8
+|<style="color: #808080;">151; reserved
 |-
-|SDL_SCANCODE_LANG9
-|152; reserved
+|<style="color: #808080;">SDL_SCANCODE_LANG9
+|<style="color: #808080;">152; reserved
 |-
 |SDL_SCANCODE_ALTERASE
 |153; Erase-Eaze
@@ -654,7 +654,7 @@ An enumeration of the SDL keyboard scancode representation.
 |229
 |-
 |SDL_SCANCODE_RALT
-|230; alt gr, option ???
+|230; alt gr (Windows), option (Mac) ???
 |-
 |SDL_SCANCODE_RGUI
 |231; windows, command (apple), meta ???
