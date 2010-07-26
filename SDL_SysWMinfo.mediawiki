@@ -38,7 +38,7 @@ A structure that contains <code>system-dependent window manager information</cod
 |-
 |struct ???
 |'''info.x11'''
-|^the struct containing video info^ ???
+|^the native x11 info structure^ ???
 |-
 |Display
 |'''info.x11.*display'''
