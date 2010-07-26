@@ -1,0 +1,71 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SysWMmsg =
+A structure that contains <code>system-dependent window manager messages</code> ''-or-'' <code>platform-specific windowing messages</code>.
+
+
+== Data Fields ==
+{|
+|
+|
+|''For Win32 window management systems (Windows)''
+|-
+|SDL_version
+|'''version'''
+|<code>a field you fill in before you call a function</code>
+|-
+|HWND
+|'''hwnd'''
+|the window for the message
+|-
+|UINT
+|'''msg'''
+|the type of message
+|-
+|WPARAM
+|'''wParam'''
+|WORD message parameter
+|-
+|LPARAM
+|'''lParam'''
+|LONG message parameter
+|-
+|
+|
+|''For X11 window management systems (Unix)''
+|-
+|SDL_version
+|'''version'''
+|<code>a version field you fill in before you call a function</code>
+|-
+|SDL_SYSWM_TYPE
+|'''subsystem'''
+|^the window manager type^; see [[#Remarks|Remarks]] for details
+|-
+|union ???
+|'''event'''
+|<code>a union containing XEvent</code>
+|-
+|XEvent ???
+|'''event.xevent'''
+|<code>the native x11 event structure</code>
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+'''SDL_SYSWM_TYPE''' currently has only 1 value: <code>SDL_SYSWM_X11</code>
+
+== Related Structures ==
+:[[SDL_SysWMinfo]]
+
+== Related Functions ==
+
+----
+[[CategoryStruct]]
