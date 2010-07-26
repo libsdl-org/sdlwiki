@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SysWMinfo =
-A structure that contains <<Color2(purple,system-dependent window manager information)>>.
+A structure that contains <code>system-dependent window manager information</code>.
 
 
 == Data Fields ==
@@ -14,7 +14,7 @@ A structure that contains <<Color2(purple,system-dependent window manager inform
 |-
 |SDL_version
 |'''version'''
-|^the version of SDL in use^
+|<code>a version field you fill in before you call a function</code>
 |-
 |HWND
 |'''window'''
@@ -26,7 +26,7 @@ A structure that contains <<Color2(purple,system-dependent window manager inform
 |-
 |SDL_version
 |'''version'''
-|^the version of SDL in use^
+|<code>a version field you fill in before you call a function</code>
 |-
 |SDL_SYSWM_TYPE
 |'''subsystem'''
@@ -34,11 +34,11 @@ A structure that contains <<Color2(purple,system-dependent window manager inform
 |-
 |union ???
 |'''info'''
-|^a union of window manager information^ ???
+|<code>a union containing window manager information</code> ???
 |-
 |struct ???
 |'''info.x11'''
-|^the struct containing window manager info^ ???
+|^the struct containing video info^ ???
 |-
 |Display
 |'''info.x11.*display'''
