@@ -103,6 +103,9 @@ When this structure is returned, it holds information about which low level syst
 
 *This structure is filled in by [[SDL_GetWMInfo]].*  <<Color2(green,Was this function replaced by SDL_GetWindowWMInfo?  Does the general idea of this remark still apply in 1.3?)>>
 
+== Related Structures ==
+:[[SDL_SysWMmsg]]
+
 == Related Functions ==
 :[[SDL_GetWindowWMInfo]]
 
