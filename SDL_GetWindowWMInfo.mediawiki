@@ -35,7 +35,7 @@ if ( SDL_GetWindowWMInfo(&info) ) { ... }
 == Remarks ==
 Include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
 
-'''info''' ^requires that^ this structure must be initialized with the SDL version, and is then filled in with information about the given window.
+'''info''' ^requires that^ this structure^, [[SDL_SysWMinfo]],^ must be initialized with the SDL version, and is then filled in with information about the given window.
 
 == Related Functions ==
 
