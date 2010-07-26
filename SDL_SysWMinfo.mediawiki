@@ -1,0 +1,110 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SysWMinfo =
+A structure that contains <<Color2(purple,system-dependent window manager information)>>.
+
+
+== Data Fields ==
+{|
+|
+|
+|''For Win32 window management systems (Windows)''
+|-
+|SDL_version
+|'''version'''
+|^the version of SDL in use^
+|-
+|HWND
+|'''window'''
+|the Win32 display window
+|-
+|
+|
+|''For X11 window management systems (Unix)''
+|-
+|SDL_version
+|'''version'''
+|^the version of SDL in use^
+|-
+|SDL_SYSWM_TYPE
+|'''subsystem'''
+|^the window manager type; see [[#Remarks|Remarks]] for details
+|-
+|union ???
+|'''info'''
+|^a union of window manager information^ ???
+|-
+|struct ???
+|'''info.x11'''
+|^the struct containing window manager info^ ???
+|-
+|Display
+|'''info.x11.*display'''
+|the X11 display
+|-
+|Window
+|'''info.x11.window'''
+|the X11 display window
+|}
+
+== Code Examples ==
+For Win32 window management systems (Windows):
+<br/>*<br/>
+```c++
+typedef struct {
+  SDL_version version;
+  HWND window;                    /* The Win32 display window */
+} SDL_SysWMinfo;
+```
+<<Color2(green,Removed <code>HGLRC hglrc; <!-- The OpenGL context if any --></code> from old wiki example.)>><br/>
+*
+
+For X11 window management systems (Unix):
+<br/>*<br/>
+<<Color2(green,Should some of this example be changed/removed for 1.3 purposes?)>><br/>
+```c++
+typedef enum {
+  SDL_SYSWM_X11
+} SDL_SYSWM_TYPE;
+
+typedef struct {
+  SDL_version version;
+  SDL_SYSWM_TYPE subsystem;
+  union {
+    struct {
+      Display *display;       /* The X11 display */
+      Window window;          /* The X11 display window */
+      /* These locking functions should be called around
+         any X11 functions using the display variable.
+         They lock the event thread, so should not be
+         called around event functions or from event filters.
+      */
+      void (*lock_func)(void);
+      void (*unlock_func)(void);
+
+      /* Introduced in SDL 1.0.2 */
+      Window fswindow;        /* The X11 fullscreen window */
+      Window wmwindow;        /* The X11 managed input window */
+
+      /* Introduced in SDL 1.2.12 */
+      Display *gfxdisplay;      /* The X11 display to which rendering is done */
+    } x11;
+  } info;
+} SDL_SysWMinfo;
+```<<BR>>
+*
+
+== Remarks ==
+'''SDL_SYSWM_TYPE''' currently has only 1 value:  <code>SDL_SYSWM_X11</code>
+
+When this structure is returned, it holds information about which low level system it is using, and will be one of SDL_SYSWM_TYPE.
+
+*This structure is filled in by [[SDL_GetWMInfo]].*  <<Color2(green,Was this function replaced by SDL_GetWindowWMInfo?  Does the general idea of this remark still apply in 1.3?)>>
+
+== Related Functions ==
+:[[SDL_GetWindowWMInfo]]
+
+----
+[[CategoryStruct]]
