@@ -27,10 +27,12 @@ SDL_TRUE if the function is implemented and the '''version''' member the '''info
 == Code Examples ==
 ```c++
 //You typically use this function like this:
-SDL_SysWMInfo info;
+SDL_SysWMinfo info;
 SDL_VERSION(&info.version);
 if ( SDL_GetWindowWMInfo(&info) ) { ... }
 ```
+
+<<Color2(green,There is a typo in the header - SysWMInfo should be SysWMinfo. Corrected above already.)>>
 
 == Remarks ==
 Include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
