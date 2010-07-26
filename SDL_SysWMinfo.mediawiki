@@ -30,7 +30,7 @@ A structure that contains <code>system-dependent window manager information</cod
 |-
 |SDL_SYSWM_TYPE
 |'''subsystem'''
-|^the window manager type; see [[#Remarks|Remarks]] for details
+|^the window manager type^; see [[#Remarks|Remarks]] for details
 |-
 |union ???
 |'''info'''
