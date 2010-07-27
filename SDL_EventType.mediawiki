@@ -8,11 +8,26 @@ An enumeration of the types of events that can be delivered.
 
 == Values ==
 {|
-|SDL_NOEVENT
-|unused (do not remove)
+|<style="color: #808080;">SDL_FIRSTEVENT
+|<style="color: #808080;">unused (do not remove)
+|-
+|
+|''Application events''
+|-
+|SDL_QUIT
+|user-requested quit
+|-
+|
+|''Window events''
 |-
 |SDL_WINDOWEVENT
 |window state change
+|-
+|SDL_SYSWMEVENT
+|system specific event
+|-
+|
+|''Keyboard events''
 |-
 |SDL_KEYDOWN
 |keys pressed
@@ -26,6 +41,9 @@ An enumeration of the types of events that can be delivered.
 |SDL_TEXTINPUT
 |keyboard text input
 |-
+|
+|''Mouse events''
+|-
 |SDL_MOUSEMOTION
 |mouse moved
 |-
@@ -37,6 +55,30 @@ An enumeration of the types of events that can be delivered.
 |-
 |SDL_MOUSEWHEEL
 |mouse wheel motion
+|-
+|
+|''Tablet or multiple mice input device events''
+|-
+|SDL_INPUTMOTION
+|input moved
+|-
+|SDL_INPUTBUTTONDOWN
+|input button pressed
+|-
+|SDL_INPUTBUTTONUP
+|input button released
+|-
+|SDL_INPUTWHEEL
+|input wheel motion
+|-
+|SDL_INPUTPROXIMITYIN
+|input pen entered proximity
+|-
+|SDL_INPUTPROXIMITYOUT
+|input pen left proximity
+|-
+|
+|''Joystick events''
 |-
 |SDL_JOYAXISMOTION
 |joystick axis motion
@@ -53,36 +95,45 @@ An enumeration of the types of events that can be delivered.
 |SDL_JOYBUTTONUP
 |joystick button released
 |-
-|SDL_QUIT
-|user-requested quit
+|
+|''Clipboard events''
 |-
-|SDL_SYSWMEVENT
-|system specific event
+|SDL_CLIPBOARDUPDATE
+|the clipboard changed
 |-
+|
+|''Obsolete events''
+|-
+|<style="color: #808080;">SDL_EVENT_COMPAT1
+|<style="color: #808080;">SDL 1.2 events for compatibility
+|-
+|<style="color: #808080;">SDL_EVENT_COMPAT2
+|<style="color: #808080;">SDL 1.2 events for compatibility
+|-
+|<style="color: #808080;">SDL_EVENT_COMPAT3
+|<style="color: #808080;">SDL 1.2 events for compatibility
+|-
+|
+|''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
+|-
+|SDL_USEREVENT
+|^a user-specified event^
+|-
+|SDL_LASTEVENT
+|only for bounding internal arrays
+|}
+
+
+
+<<Color2(green,I think these remaining ones are removed after the last changes but I want to be sure before I delete them.)>>
+
+{|
 |SDL_PROXIMITYIN
 |proximity In event
 |-
 |SDL_PROXIMITYOUT
 |proximity Out event
-|-
-|<style="color: #808080;">SDL_EVENT_RESERVED1
-|<style="color: #808080;">reserved for future use...
-|-
-|<style="color: #808080;">SDL_EVENT_RESERVED2
-|<style="color: #808080;">reserved for future use...
-|-
-|<style="color: #808080;">SDL_EVENT_RESERVED3
-|<style="color: #808080;">reserved for future use...
 |}
-
-<<Color2(green,Not sure what to do with this part of the enum. Does it belong here or not?)>>
-Events SDL_USEREVENT through SDL_MAXEVENTS-1 are for your use
-
-SDL_USEREVENT = 24,
-
-This last event is only for bounding internal arrays. It is the number of bits in the event mask datatype -- Uint32.
-
-SDL_NUMEVENTS = 32
 
 == Code Examples ==
 ```c++
