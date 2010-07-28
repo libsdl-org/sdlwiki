@@ -3,12 +3,13 @@
 '''DRAFT'''
 
 = SDL_Event =
-A ,,structure,, ^union^ that contains the ,,general,, <code>different</code> event structure.
+A union that contains the different event structures.
+<<Color2(green,The header says "General event structure".)>>
 
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |event type, shared with all events
 |-
@@ -68,17 +69,21 @@ A ,,structure,, ^union^ that contains the ,,general,, <code>different</code> eve
 |'''syswm'''
 |system dependent window event data
 |-
-|[[SDL_ProximityEvent]]
-|'''proximity'''
-|proximity In or Out event
-|-
 |<style="color: #808080;">SDL_ActiveEvent
 |<style="color: #808080;">'''active'''
-|<style="color: #808080;">deprecated
+|<style="color: #808080;">deprecated; for backwards compatibility
 |-
 |<style="color: #808080;">SDL_ResizeEvent
 |<style="color: #808080;">'''resize'''
-|<style="color: #808080;">deprecated
+|<style="color: #808080;">deprecated; for backwards compatibility
+|}
+
+<<Color2(green,The following appears to have been removed in a recent revision.  Correct?)>>
+
+{|
+|[[SDL_ProximityEvent]]
+|'''proximity'''
+|proximity In or Out event
 |}
 
 == Code Examples ==
