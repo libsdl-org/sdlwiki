@@ -8,17 +8,23 @@ Use this function to check ,,to see if,, ^for^ certain event types ,,are,, in th
 
 == Syntax ==
 ```c++
-SDL_bool SDL_HasEvent(Uint32 mask)
+SDL_bool SDL_HasEvent(Uint32 type)
 ```
 
 == Function Parameters ==
+{|
+|'''type'''
+|^the type of event to check for^
+|}
+
+<<Color2(green,Was this really removed entirely?)>>
 {|
 |'''mask'''
 |^criteria by which to select events from the queue^
 |}
 
 == Return Value ==
-SDL_TRUE if events matching '''mask''' are present, or SDL_FALSE if events matching '''mask''' are not present. ???
+SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present. ???
 
 == Code Examples ==
 ```c++
@@ -29,6 +35,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_HasEvents]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
