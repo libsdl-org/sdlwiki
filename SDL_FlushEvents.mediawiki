@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FlushEvents =
+Use this function to clear events from the event queue.
+
+
+== Syntax ==
+```c++
+void SDL_FlushEvents(Uint32 minType,
+                     Uint32 maxType)
+```
+
+== Function Parameters ==
+{|
+|'''minType'''
+|^the minimum number of the specified type of event^
+|-
+|'''maxType'''
+|^the maximum number of the specified type of event^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_FlushEvent]]
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
