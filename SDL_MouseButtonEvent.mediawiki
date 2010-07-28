@@ -8,17 +8,13 @@ A structure that contains mouse button event ,,structure,, ^information^ ,,(even
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP
 |-
 |Uint32
 |'''windowID'''
 |the window with mouse focus, if any
-|-
-|Uint8
-|'''which'''
-|the mouse device index
 |-
 |Uint8
 |'''button'''
@@ -28,13 +24,21 @@ A structure that contains mouse button event ,,structure,, ^information^ ,,(even
 |'''state'''
 |SDL_PRESSED or SDL_RELEASED
 |-
+|Uint8
+|'''padding1'''
+|
+|-
+|Uint8
+|'''padding2'''
+|
+|-
 |int
 |'''x'''
-|x coordinate, relative to window
+|X coordinate, relative to window
 |-
 |int
 |'''y'''
-|y coordinate, relative to window
+|Y coordinate, relative to window
 |}
 
 == Code Examples ==
