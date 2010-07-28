@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_FlushEvent =
+Use this function to clear ^an^ event,,s,, from the event queue.
+
+
+== Syntax ==
+```c++
+void SDL_FlushEvent(Uint32 type)
+```
+
+== Function Parameters ==
+{|
+|'''type'''
+|^the type of event to be queried ???; see [[SDL_Event]]/[[SDL_EventType]] ??? for details^
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_FlushEvents]]
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
