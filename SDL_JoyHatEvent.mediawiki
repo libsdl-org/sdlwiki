@@ -8,7 +8,7 @@ A structure that contains joystick hat position change event ,,structure,, ^info
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_JOYHATMOTION
 |-
@@ -23,6 +23,10 @@ A structure that contains joystick hat position change event ,,structure,, ^info
 |Uint8
 |'''value'''
 |the hat position value; see [[#Remarks|Remarks]] for details
+|-
+|Uint8
+|'''padding1'''
+|
 |}
 
 == Code Examples ==
@@ -49,6 +53,29 @@ You can add your code example here
 |-
 |SDL_HAT_DOWN
 |-
+|SDL_HAT_RIGHTDOWN
+|}
+Note that zero means the POV is centered. 
+
+''-or-''
+
+{|
+|SDL_HAT_LEFTUP
+|
+|SDL_HAT_UP
+|
+|SDL_HAT_RIGHTUP
+|-
+|SDL_HAT_LEFT
+|
+|SDL_HAT_CENTERED
+|
+|SDL_HAT_RIGHT
+|-
+|SDL_HAT_LEFTDOWN
+|
+|SDL_HAT_DOWN
+|
 |SDL_HAT_RIGHTDOWN
 |}
 Note that zero means the POV is centered. 
