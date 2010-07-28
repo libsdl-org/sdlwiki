@@ -8,7 +8,7 @@ A structure that contains joystick trackball motion event ,,structure,, ^informa
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_JOYBALLMOTION
 |-
@@ -20,13 +20,21 @@ A structure that contains joystick trackball motion event ,,structure,, ^informa
 |'''ball'''
 |the joystick trackball index
 |-
+|Uint8
+|'''padding1'''
+|
+|-
+|Uint8
+|'''padding2'''
+|
+|-
 |int
 |'''xrel'''
-|the relative motion in the x direction
+|the relative motion in the X direction
 |-
 |int
 |'''yrel'''
-|the relative motion in the y direction
+|the relative motion in the Y direction
 |}
 
 == Code Examples ==
