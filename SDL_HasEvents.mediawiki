@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_HasEvents =
+Use this function to check ,,to see if,, ^for^ certain event types ,,are,, in the event queue.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasEvents(Uint32 minType,
+                       Uint32 maxType)
+```
+
+== Function Parameters ==
+{|
+|'''minType'''
+|^the minimum number of the specified type of event^
+|-
+|'''maxType'''
+|^the maximum number of the specified type of event^
+|}
+
+== Return Value ==
+SDL_TRUE if ??? are present, or SDL_FALSE if ??? are not present.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HasEvent]]
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
