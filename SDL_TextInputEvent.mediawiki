@@ -8,17 +8,13 @@ A structure that contains keyboard text input event ,,structure,, ^information^ 
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_TEXTINPUT
 |-
 |Uint32
 |'''windowID'''
 |the window with keyboard focus, if any
-|-
-|Uint8
-|'''which'''
-|the keyboard device index
 |-
 |char
 |'''text[SDL_TEXTINPUTEVENT_TEXT_SIZE]'''
