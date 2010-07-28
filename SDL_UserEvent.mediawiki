@@ -8,7 +8,7 @@ A structure that contains a user-defined event type (event.user.*).
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_USEREVENT through SDL_NUMEVENTS-1
 |-
