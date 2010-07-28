@@ -8,17 +8,13 @@ A structure that contains mouse wheel event ,,structure,, ^information^ (event.w
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_MOUSEWHEEL
 |-
 |Uint32
 |'''windowID'''
 |the window with mouse focus, if any
-|-
-|Uint8
-|'''which'''
-|the mouse device index
 |-
 |int
 |'''x'''
