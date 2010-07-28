@@ -8,9 +8,13 @@ A structure that contains keyboard text editing event ,,structure,, ^information
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_TEXTEDITING
+|-
+|Uint32
+|'''windowID'''
+|the window with keyboard focus, if any
 |-
 |char
 |'''text[SDL_TEXTEDITINGEVENT_TEXT_SIZE]'''
