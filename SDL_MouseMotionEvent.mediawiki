@@ -8,7 +8,7 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 
 == Data Fields ==
 {|
-|Uint8
+|Uint32
 |'''type'''
 |SDL_MOUSEMOTION
 |-
@@ -17,21 +17,41 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |the window with mouse focus, if any
 |-
 |Uint8
-|'''which'''
-|the mouse device index
-|-
-|Uint8
 |'''state'''
 |the current button state
 |-
+|Uint8
+|'''padding1'''
+|
+|-
+|Uint8
+|'''padding2'''
+|
+|-
+|Uint8
+|'''padding3'''
+|
+|-
 |int
 |'''x'''
-|x coordinate, relative to window
+|X coordinate, relative to window
 |-
 |int
 |'''y'''
-|y coordinate, relative to window
+|Y coordinate, relative to window
 |-
+|int
+|'''xrel'''
+|the relative motion in the X direction
+|-
+|int
+|'''yrel'''
+|the relative motion in the Y direction
+|}
+
+<<Color2(green,I think the remainder of these are to be deleted but want to be sure first.)>>
+
+{|
 |<style="color: #808080;">int
 |<style="color: #808080;">'''z'''
 |<style="color: #808080;">z coordinate, for future use
@@ -63,14 +83,6 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |int
 |'''cursor'''
 |the cursor being used in the event
-|-
-|int
-|'''xrel'''
-|the relative motion in the X direction
-|-
-|int
-|'''yrel'''
-|the relative motion in the Y direction
 |}
 
 == Code Examples ==
