@@ -51,8 +51,15 @@ Now there is another way to provide transparency using an alpha-bitmap in Window
 
 * MSDN info: [http://msdn.microsoft.com/en-us/library/ms633556(VS.85).aspx http://msdn.microsoft.com/en-us/library/ms633556%28VS.85%29.aspx]
 * Sample code: http://www.nuonsoft.com/blog/2009/05/27/how-to-use-updatelayeredwindow/
+* Sample code: Per Pixel Alpha Blend http://www.codeproject.com/kb/gdi/pxalphablend.aspx
 
 Even with this approach a shape vector may still be important, to get rid of clicks to the window - a window that is almost transparent (i.e. alpha=1) seems to have no shape, but will still receive clicks on those pixels. Note also, that the layered window API is not supported on WinCE (but the shape API is).
+
+==== DirectX OnPaint ====
+
+The OnPaint functions makes the background transparent by drawing black on it.
+
+* http://stackoverflow.com/questions/148275/how-do-i-draw-transparent-directx-content-in-a-transparent-window
 
 === OSX ===
 If Cocoa also uses also a shape, it may be good to break out a common "2D shape calculation" algorithm that applies to both architectures.
