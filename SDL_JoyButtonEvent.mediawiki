@@ -35,7 +35,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_JoyButtonEvent]]() is a member of the [[SDL_Event]]()??? union and is used when an event of type SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP is reported.
+*<br/>[[SDL_JoyButtonEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP is reported.
 
 An SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP event occurs whenever a user presses or releases a button on a joystick. ,,The field '''which''' is the index of the joystick that reported the event and '''button''' is the index of the button ,,<<Color2(orange,(for a more detailed explanation see the Joystick section))>>. ,,'''state''' is the current state of the button which is either SDL_PRESSED or SDL_RELEASED.,, <br/>*
 
