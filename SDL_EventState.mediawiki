@@ -8,8 +8,8 @@ Use this function to set the state of processing ,,certain,, events ^by '''type'
 
 == Syntax ==
 ```c++
-Uint8 SDL_EventState(Uint8 type,
-                     int   state)
+Uint8 SDL_EventState(Uint32 type,
+                     int    state)
 ```
 
 == Function Parameters ==
@@ -24,7 +24,7 @@ Uint8 SDL_EventState(Uint8 type,
 == Return Value ==
 <<Color2(green,These RVs are a total guess...)>>
 
-Returns an 8-bit bitmask of the current processing '''state''' (see [[#Remarks|Remarks]]), 1 if the event is processed successfully, 0 if it is ignored or disabled, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns an 8-bit bitmask of the current processing '''state''' (see [[#Remarks|Remarks]]): 1 if the event is processed successfully, 0 if it is ignored or disabled, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
