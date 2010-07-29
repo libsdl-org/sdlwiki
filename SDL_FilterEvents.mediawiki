@@ -19,7 +19,7 @@ void SDL_FilterEvents(SDL_EventFilter filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|the SDL_EventFilter to be referenced/run ???^
+|^the SDL_EventFilter to be referenced/run ???^
 |-
 |'''userdata'''
 |^a pointer to the user-specified information to be filtered^
