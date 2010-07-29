@@ -15,10 +15,10 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|a pointer to the SDL_EventFilter to be read/called ???
+|^a pointer to the SDL_EventFilter to be read/called^ ???
 |-
 |'''userdata'''
-|a pointer to a pointer containing user-specified data
+|^a pointer to a pointer containing user-specified data^
 |}
 
 == Return Value ==
@@ -33,6 +33,8 @@ You can add your code example here
 
 == Remarks ==
 Can be used to "chain" filters.
+
+*<<Color2(green,This functions appears to have changed dramatically since 1.2.  Is that correct?)>>*
 
 == Related Functions ==
 :[[SDL_SetEventFilter]]
