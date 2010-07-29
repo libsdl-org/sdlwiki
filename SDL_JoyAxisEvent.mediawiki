@@ -39,7 +39,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_JoyAxisEvent]]() is a member of the [[SDL_Event]]()??? union and is used when an event of type SDL_JOYAXISMOTION is reported.
+*<br/>[[SDL_JoyAxisEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYAXISMOTION is reported.
 
 A SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick. ,,The field '''which''' is the index of the joystick that reported the event and '''axis''' is the index of the axis,, <<Color2(orange,(for a more detailed explanation see the Joystick section))>>. ,,'''value''' is the current position of the axis.,, <br/>*
 
