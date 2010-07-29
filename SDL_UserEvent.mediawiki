@@ -30,17 +30,26 @@ A structure that contains a user-defined event type (event.user.*).
 |}
 
 == Code Examples ==
+*<br/>
 ```c++
-You can add your code example here
-```
+SDL_Event event;
+
+event.type = SDL_USEREVENT;
+event.user.code = my_event_code;
+event.user.data1 = significant_data;
+event.user.data2 = 0;
+SDL_PushEvent(&event);
+```<<BR>>*
+<<Color2(green,Does this example need the '''windowID''' param added?)>>
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>[[SDL_UserEvent]] is in the '''user''' member of the ,,structure,, [[SDL_Event]]()??? ^union^. This event is unique; it is never created by SDL but only by the user. The event can be pushed onto the event queue using [[SDL_PushEvent]](). The contents of the structure members <<Color2(green,(SDL_UserEvent or SDL_Event?  Unclear.)>> are completely up to the programmer, <<Color2(green,not sure of the comma here. Consider ; . -)>> the only requirement is that '''type''' is a value from SDL_USEREVENT to SDL_NUMEVENTS-1 (inclusive). <br/>*
 
 == Related Enumerations ==
 :[[SDL_EventType]]???
 
 == Related Functions ==
+:[[SDL_PushEvent]] *
 
 ----
 [[CategoryStruct]]
