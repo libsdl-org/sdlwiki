@@ -58,8 +58,8 @@ If state is set to SDL_IGNORE, that event will be automatically dropped from the
 If state is set to SDL_ENABLE, that event will be processed normally.<br/>
 If state is set to SDL_QUERY, [[SDL_EventState]]() will return the current processing state of the specified event.
 
-<<Color2(green,Does the following still apply in 1.3?  SDL_VideoInfo seems to be a read-only struct.  Should it have a page?)>><br/>
-[[SDL_EventState]]() must be called following the [[SDL_VideoInfo]] call. Otherwise the back-end data structure will be erased.
+*<<Color2(green,Does the following still apply in 1.3?  SDL_VideoInfo seems to be a read-only struct.  Should it have a page?)>><br/>
+[[SDL_EventState]]() must be called following the [[SDL_VideoInfo]] call. Otherwise the back-end data structure will be erased.*
 
 == Related Functions ==
 
