@@ -19,7 +19,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_QuitEvent]] is a member of the [[SDL_Event]]()??? union and is used when an event of type SDL_QUIT is reported.
+*<br/>[[SDL_QuitEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_QUIT is reported.
 
 ,,As can be seen, ,,the [[SDL_QuitEvent]] structure serves no useful purpose ^itself^. The event ,,itself,, ^it describes/defines/contains???^, on the other hand, is very important. If you filter out or ignore a quit event then it is impossible for the user to close the window. On the other hand, if you do accept a quit event then the application window will be closed, and screen updates will still report success even though the application will no longer be visible.
  Note: The macro SDL_QuitRequested will return non-zero if a quit event is pending. <br/>*  <<Color2(green,SDL_QuitRequested seems to be a define in quit.h.  Don't see it as a macro.)>>
