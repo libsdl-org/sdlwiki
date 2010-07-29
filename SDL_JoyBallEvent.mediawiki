@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_JoyBallEvent]]() is a member of the [[SDL_Event]]()??? union and is used when an event of type SDL_JOYBALLMOTION is reported.
+*<br/>[[SDL_JoyBallEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYBALLMOTION is reported.
 
 A SDL_JOYBALLMOTION event occurs when a user moves a trackball on the joystick. ,,The field '''which''' is the index of the joystick that reported the event and '''ball''' is the index of the trackball,, <<Color2(orange,(for a more detailed explanation see the Joystick section))>>. Trackballs only return relative motion, <<Color2(green,suggest a hyphen here instead of a comma)>> this is the change in position on the ball since it was last polled (last cycle of the event loop) <<Color2(green,suggest a hyphen here)>> and it is stored in '''xrel''' and '''yrel'''.<br/>*
 
