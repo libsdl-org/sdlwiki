@@ -25,14 +25,21 @@ You can add your code example here
 == Remarks ==
 If you want to use this event, you should include SDL_syswm.h.
 
+*<br/>If you want to obtain system-specific information about the window manager, you can fill in the '''version''' member of an [[SDL_SysWMinfo]] structure (details can be found in SDL_syswm.h, ,,which must be included,,) using the [[SDL_VERSION]]() macro found in SDL_version.h, and pass it to the function* ,,[[SDL_GetWMInfo]](),,.  <<Color2(green,I think this function has been replaced by [[SDL_GetWindowWMInfo]]().  Is that right?  Old wiki included)>> ```
+int SDL_GetWMInfo(SDL_SysWMinfo *info);
+```
+
 == Related Enumerations ==
 :[[SDL_EventMask]]???
 :[[SDL_EventType]]???
 
 == Related Structures ==
+:[[SDL_SysWMinfo]]
 :[[SDL_SysWMmsg]]???
 
 == Related Functions ==
+:[[SDL_EventState]] *
+:[[SDL_GetWindowWMInfo]] *???
 
 ----
 [[CategoryStruct]]
