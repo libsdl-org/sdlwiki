@@ -80,7 +80,7 @@ Note that zero means the POV is centered.
 |}
 Note that zero means the POV is centered. 
 
-*<br/>[[SDL_JoyHatEvent]]() is a member of the [[SDL_Event]]()??? union and is used when an event of type SDL_JOYHATMOTION is reported.
+*<br/>[[SDL_JoyHatEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYHATMOTION is reported.
 
 A SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.<br/>*
 
