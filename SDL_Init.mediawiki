@@ -1,8 +1,13 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
 
 = SDL_Init =
 Use this function to initialize the SDL library.  This must be called before using any other SDL function.
+
+<<Color2(green,Should we highlight the importance of using this function first by using an icon like {i} or /!\ ?)>>
 
 
 == Syntax ==
@@ -11,44 +16,31 @@ int SDL_Init(Uint32 flags)
 ```
 
 == Function Parameters ==
-These are the flags which may be passed to SDL_Init() -- you should
-specify the subsystems which you will be using in your application.  They should be OR'd together.  
-
 {|
-|'''SDL_INIT_TIMER'''
-|initialize timer subsystem
-|-
-|'''SDL_INIT_AUDIO'''
-|initialize audio subsystem
-|-
-|'''SDL_INIT_VIDEO'''
-|initialize video subsystem
-|-
-|'''SDL_INIT_CDROM'''
-|initialize CD-ROM subsystem
-|-
-|'''SDL_INIT_JOYSTICK'''
-|initialize joystick subsystem
-|-
-|'''SDL_INIT_HAPTIC'''
-|initialize haptic (force feedback) subsystem
-|-
-|'''SDL_INIT_EVERYTHING'''
-|initialize all of the above subsystems
-|-
-|'''SDL_INIT_NOPARACHUTE'''
-|don't catch fatal signals
-|-
-|'''SDL_INIT_EVENTTHREAD'''
-|run the event loop in a separate thread (not supported by all OSs)
+|'''flags'''
+|^subsystem initialization flags^; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
-Returns 0 if successful, -1 otherwise.
+,,Returns 0 if successful, -1 otherwise.,,
 
-If this function fails you can usually get an error message through [[SDL_GetError]](), but not always.
+,,If this function fails you can usually get an error message through [[SDL_GetError]](), but not always.,,
+
+<<Color2(green,the standard rv would be the following:)>>
+Returns 0 on success or -1 on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
+*<br/>
+<<Color2(green,Should aspects of this code example (like the comment) from the old wiki be incorporated into the existing examples or is it unnecessary?)>>
+
+```c++
+// Initializes the video subsystem
+if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    fprintf(stderr, "Unable to init SDL: %s\n", SDL_GetError());
+    exit(1);
+}
+```<<BR>>*
+
 === C ===
 ```c++
 #include "SDL.h"
@@ -133,14 +125,53 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
-This function loads the SDL dynamically linked library and initializes 
-the subsystems specified by 'flags' (and those satisfying dependencies).
-Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup
-signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems ^that you will be using in your application^ you must specifically call them.  You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
 
-You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
+<<Color2(green,Consider replacing the purple with the orange.)>>
+
+<<Color2(purple,These are the '''flags''' which may be passed to [[SDL_Init]]() -- you should specify the subsystems which you will be using in your application.  They should be OR'd together.)>>
+
+<<Color2(orange,'''flags''' may be 0 or a mask of any of the following subsystems OR'd together:)>>
+''-or-''
+<<Color2(orange,These are the '''flags''' which may be passed to [[SDL_Init]]() and may be OR'd together to initiate multiple subsystems.)>>
+
+{|
+|'''SDL_INIT_TIMER'''
+|initialize timer subsystem
+|-
+|'''SDL_INIT_AUDIO'''
+|initialize audio subsystem
+|-
+|'''SDL_INIT_VIDEO'''
+|initialize video subsystem
+|-
+|'''SDL_INIT_CDROM'''
+|initialize CD-ROM subsystem
+|-
+|'''SDL_INIT_JOYSTICK'''
+|initialize joystick subsystem
+|-
+|'''SDL_INIT_HAPTIC'''
+|initialize haptic (force feedback) subsystem
+|-
+|'''SDL_INIT_EVERYTHING'''
+|initialize all of the above subsystems
+|-
+|'''SDL_INIT_NOPARACHUTE'''
+|don't catch fatal signals
+|-
+|'''SDL_INIT_EVENTTHREAD'''
+|run the event loop in a separate thread (not supported by all OSs)
+|}
+
+This function loads the SDL dynamically linked library and initializes 
+the subsystems specified by '''flags''' (and those satisfying dependencies).
+Unless ,,the,, SDL_INIT_NOPARACHUTE ,,flag is set,, ^is set in '''flags'''^, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+<<Color2(green,flag seems like it should be bolded but grammatically it doesn't work as flags like in the param. solution in superscript?  Can signal handlers also be avoided with flag as 0?)>>
 
 Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
+
+*<br/>,,Typical cause of this error,, ^The most common cause for error^ is using a particular display without having ,,according,, ^the corresponding^ subsystem support^ed^, such as missing ^a^ mouse driver when using ^<<Color2(green,using what? SDL? A mouse?)>>^ with ^a^ framebuffer <<Color2(green,Should framebuffer be set apart somehow like <code>framebuffer</code>?)>> device. In this case you can either compile SDL without ^a^ mouse device, or set ^the^ "SDL_NOMOUSE=1" environment variable before running your application. <br/>*
 
 == Related Functions ==
 :[[SDL_InitSubSystem]] 
