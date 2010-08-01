@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= SDL 1.3 API structures =
+= SDL 1.3 API Structures =
 
 <<FullSearch(category:CategoryStruct)>>
 
