@@ -26,7 +26,7 @@ You can add your code example here
 
 == Remarks ==
 <span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously. 
-<<Include(SDL_Init, , , from="OR'd together.", to="== Return Value ==")>>
+<<Include(SDL_Init, , , from="initiate multiple subsystems.", to="This function loads")>>
 
 [[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
 
