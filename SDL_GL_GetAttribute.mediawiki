@@ -32,9 +32,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_GL_GetAttribute]]() places the value of the SDL/OpenGL attribute '''attr''' into '''value'''. This is useful after a call to [[SDL_SetVideoMode]]() to check whether your attributes have been set as you expected.<br/>*
+*<br/>[[SDL_GL_GetAttribute]]() places the value of the SDL/OpenGL attribute '''attr''' into '''value'''. This is useful after ,,a call to [[SDL_SetVideoMode]](),, ^initializing the video driver^ to check whether your attributes have been set as you expected.<br/>*
 
-<<Color2(green,Can't find SDL_SetVideoMode.  Has it been replaced by a function with a different name?  Found SDL_GetDisplayMode as the next closest sounding function.)>>
+<<Color2(green,Can't find SDL_SetVideoMode. Has it been replaced?  Is the superscript from SDL_GL_!LoadLibrary the correct replacement for the above?)>>
 
 == Related Functions ==
 :[[SDL_GL_SetAttribute]]
