@@ -38,10 +38,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>This function uses the entire 8-bit [0..255] range when converting color components from pixel formats with less than 8-bits per RGB component (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff, 0xff, 0xff] not [0xf8, 0xfc, 0xf8]). <br/>*
 
 == Related Functions ==
 :[[SDL_GetRGBA]]
+:[[SDL_MapRGB]] *
+:[[SDL_MapRGBA]] *
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
