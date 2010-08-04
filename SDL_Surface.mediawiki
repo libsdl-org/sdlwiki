@@ -68,7 +68,7 @@ A structure that contains a collection of pixels used in software blitting.
 |'''refcount'''
 |read-mostly
 |}
-<<Color2(green,Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?)>>
+<<Color2(green,Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?  There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
 
 == Code Examples ==
 ```c++
@@ -80,7 +80,7 @@ This structure should be treated as read-only, except for '''pixels''', which, i
 
 The currently supported '''flags''' for [[SDL_Surface]] are:<br/>
 or<br/>
-'''flags''' may be 0 or any of the following:
+'''flags''' may be 0 or any of the following OR'd together:
 {|
 |SDL_PREALLOC
 |surface uses preallocated memory
@@ -89,13 +89,20 @@ or<br/>
 |surface is RLE encoded
 |}
 
-Evaluates to true if the surface needs to be locked before access.
+<<Color2(green,There are MANY more flags listed in the old wiki.  Should any of them be moved here?  http://www.libsdl.org/cgi/docwiki.cgi/SDL_Surface)>>
+
+^The following^ Evaluates to true if the surface needs to be locked before access.
  ```
 #define SDL_MUSTLOCK(S) (((S)->flags & SDL_RLEACCEL) != 0)
 ```
+<<Color2(green,I don't know where the above came from...)>>
+
+*<br/>An [[SDL_Surface]] represents an area of graphical memory that can be drawn to. The video framebuffer is returned as an [[SDL_Surface]] by [[SDL_SetVideoMode]]() and [[SDL_GetVideoSurface]](). 
+
+<<Color2(green,The two above functions are not in 1.3.  Have they been replaced?)>><br/>*
 
 == Related Structures ==
-:[[SDL_BlitMap]] <<Color2(green,should this be listed here since it's private?)>>
+:[[SDL_BlitMap]] <<Color2(green,should this be removed since there's no page?)>>
 :[[SDL_SDL_PixelFormat]]
 :[[SDL_Rect]]
 
