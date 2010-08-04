@@ -30,7 +30,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>Each pixel in an 8-bit surface is an index into the '''colors''' field of the [[SDL_Palette]] structure stored in [[SDL_PixelFormat]]. An [[SDL_Palette]] should never need to be created manually. It is automatically created when SDL allocates an [[SDL_PixelFormat]] for a surface. The '''colors''' values of an [[SDL_Surface]]'s palette can be set with [[SDL_SetColors]]().
+
+<<Color2(green,Is SDL_SetColors now SDL_SetPaletteColors?)>><br/>*
 
 == Related Structures ==
 :[[SDL_PixelFormat]]
