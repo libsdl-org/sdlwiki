@@ -24,15 +24,32 @@ int SDL_GL_SetAttribute(SDL_GLattr attr,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns 0 on success or ,,a negative error code,, ^* -1 *^ on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
+*<br/>
 ```c++
-You can add your code example here
+SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 5 );
+SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 5 );
+SDL_GL_SetAttribute( SDL_GL_BLUE_SIZE, 5 );
+SDL_GL_SetAttribute( SDL_GL_DEPTH_SIZE, 16 );
+SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 );
+if ( (screen=SDL_SetVideoMode( 640, 480, 16, SDL_OPENGL )) == NULL ) {
+    fprintf(stderr, "Couldn't set GL mode: %s\n", SDL_GetError());
+    SDL_Quit();
+    return;
+}
 ```
+<br/>*
+
+<<Color2(green,Seems like the SDL_SetVideoMode part of the example needs to be updated?)>>
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes will take effect after ,,a call to SDL_SetVideoMode,, ^initializing the video driver^. You should use [[SDL_GL_GetAttribute]]() to check the values after ,,a call to SDL_SetVideoMode,, ^initializing the video driver^, since the values obtained can differ from the requested ones.
+
+Note: The SDL_DOUBLEBUF flag is not required to enable double buffering when setting an OpenGL video mode. Double buffering is enabled or disabled using the SDL_GL_DOUBLEBUFFER attribute. <br/>*
+
+<<Color2(green,Should SDL_GL_DOUBLEBUFFER be hyperlinked to SDL_GLattr like [[SDL_GLattr|SDL_GL_DOUBLEBUFFER]]?  It could also go to an anchor at that value specifically instead of just to the page.  Is there a link for SDL_DOUBLEBUF?  Does it still exist?)>>
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
