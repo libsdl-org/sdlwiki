@@ -3,7 +3,6 @@
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
 |}
-<<Color2(red,DRAFT)>>
 
 = SDL_Rect =
 A structure that defines a rectangle, with the origin at the upper left.
@@ -28,9 +27,24 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-SDL_Rect<code></code>Empty (=define), SDL_Rect<code></code>Equals (=define) (\sa in header; should these be in Remarks?)
+<<Color2(green,Below are listed as \sa in header. Should these be in Remarks?)>>
+SDL_Rect<code></code>Empty
+ Returns true if the rectangle has no area.
+ ```
+#define SDL_RectEmpty(X)    (((X)->w <= 0) || ((X)->h <= 0))
+```
+
+SDL_Rect<code></code>Equals
+ Returns true if the two rectangles are equal.
+ ```
+#define SDL_RectEquals(A, B)   (((A)->x == (B)->x) && ((A)->y == (B)->y) && \
+((A)->w == (B)->w) && ((A)->h == (B)->h))
+```
+
+*<br/>An [[SDL_Rect]] defines a rectangular area of pixels. It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.<br/>*
 
 == Related Functions ==
+:[[SDL_BlitSurface]] *
 :[[SDL_DirtyTexture]]?
 :[[SDL_EnclosePoints]]
 :[[SDL_GetDisplayBounds]]?
