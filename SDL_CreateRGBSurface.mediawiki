@@ -19,7 +19,7 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 ```
 
 == Function Parameters ==
-<<Color2(green,should flags be gray?)>>
+<<Color2(green,Should flags be gray?  Why is there so much reference to '''flags''' if they're obsolete? (See below and [[SDL_ConvertSurface]] for example.))>>
 {|
 |'''flags'''
 |the flags are obsolete and should be set to 0
@@ -50,16 +50,49 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 A pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
 
 == Code Examples ==
+<<Color2(green,The following code example is from the old wiki but the params are no longer exactly the same.  Should it be removed or updated?)>>
 ```c++
-You can add your code example here
+    /* Create a 32-bit surface with the bytes of each pixel in R,G,B,A order,
+       as expected by OpenGL for textures */
+    SDL_Surface *surface;
+    Uint32 rmask, gmask, bmask, amask;
+
+    /* SDL interprets each pixel as a 32-bit number, so our masks must depend
+       on the endianness (byte order) of the machine */
+#if SDL_BYTEORDER == SDL_BIG_ENDIAN
+    rmask = 0xff000000;
+    gmask = 0x00ff0000;
+    bmask = 0x0000ff00;
+    amask = 0x000000ff;
+#else
+    rmask = 0x000000ff;
+    gmask = 0x0000ff00;
+    bmask = 0x00ff0000;
+    amask = 0xff000000;
+#endif
+
+    surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, 32,
+                                   rmask, gmask, bmask, amask);
+    if(surface == NULL) {
+        fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
+        exit(1);
+    }
+
+    /* or using the default masks for the depth: */
+    surface=SDL_CreateRGBSurface(SDL_SWSURFACE,width,height,32,0,0,0,0);
 ```
 
 == Remarks ==
-If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the flags '[RGB]mask'. <<Color2(green,should it say flags or flag since there's only one listed?)>>
+If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the '''flags''' '[RGB]mask'. 
+
+<<Color2(green,There is a lot of extra info in the old wiki but most relates to '''flags'''. Should any of it be transferred here?)>>
 
 == Related Functions ==
+:[[SDL_ConvertSurface]] ???
 :[[SDL_CreateRGBSurfaceFrom]]
 :[[SDL_FreeSurface]]
+:[[SDL_LockSurface]] *
+:[[SDL_SetColorKey]] *
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
