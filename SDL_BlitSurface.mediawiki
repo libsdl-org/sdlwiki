@@ -40,15 +40,24 @@ You can add your code example here
 ```
 
 == Remarks ==
+<<Color2(green,Should colour be changed to color?)>>
+
 This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]](). <<Color2(green,Does this remark apply only to Upper<code></code>Blit and not to Blit<code></code>Surface?)>>
 
 You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
 
 <<Color2(green,The above 2 remarks were re-ordered and have been moved to the top of the section because they seem more appropriately placed there. They were at the bottom in the reverse order.)>>
 
-The blit function should not be called on a locked surface. <<Color2(green,This was listed below the following but seemed more appropriately placed here.)>>
+The blit function should not be called on a locked surface. <<Color2(green,This was listed below the following but seemed more appropriately placed here.)>> *<br/>(i.e. when you use your own drawing functions you may need to lock a surface, but this is not the case with [[SDL_BlitSurface]]().)<br/>
+Like most surface manipulation functions in SDL, it should not be used together with OpenGL.<br/>*
 
 This assumes that the source and destination rectangles are the same size. If either '''srcrect''' or '''dstrect''' are NULL, the entire surface ('''src''' or '''dst''') is copied. The final blit rectangles are saved in '''srcrect''' and '''dstrect''' after all clipping is performed.
+
+*<br/><<Color2(green,Is this redundant to above? Should some of it be kept because it says more? Is this wording preferable?)>> The width and height in '''srcrect''' determine the size of the copied rectangle. Only the position is used in the '''dstrect''' (the width and height are ignored). Blits with negative '''dstrect''' coordinates will be clipped properly.
+
+If '''srcrect''' is NULL, the entire surface is copied. If '''dstrect''' is NULL, then the destination position (upper left corner) is (0, 0).
+
+The final blit rectangle is saved in '''dstrect''' after all clipping is performed ('''srcrect''' is not modified). <br/>*
 
 <<Color2(green,Should the following go in a code box or is this formatting acceptable? Should \verbatim and \endverbatim be removed?)>>
 
@@ -103,6 +112,29 @@ SDL_UnlockSurface(image);
 <<Color2(green,Should @code and @endcode be removed here?)>>
 
 This happens under DirectX 5.0 when the system switches away from your fullscreen application. The lock will also fail until you have access to the video memory again.
+
+*<br/>The results of blitting operations vary greatly depending on whether SDL_SRCALPHA is set or not. See SDL_SetAlpha (<<Color2(green,This does not have a page. Does it still exist?)>>) for an explanation of how this affects your results. Colorkeying and alpha attributes also interact with surface blitting, as the following pseudo-code should hopefully explain. 
+```
+if (source surface has SDL_SRCALPHA set) {
+    if (source surface has alpha channel (that is, format->Amask != 0))
+        blit using per-pixel alpha, ignoring any colour key
+    else {
+        if (source surface has SDL_SRCCOLORKEY set)
+            blit using the colour key AND the per-surface alpha value
+        else
+            blit using the per-surface alpha value
+    }
+} else {
+    if (source surface has SDL_SRCCOLORKEY set)
+        blit using the colour key
+    else
+        ordinary opaque rectangular blit
+}
+```
+
+Note: the SDL blitter does not (yet) have the capability of scaling the blitted surfaces up or down like it is the case with other more sophisticated blitting mechanisms. You have to figure something out for yourself if you want to scale images (e.g. use SDL_gfx).
+
+Note: when you're blitting between two alpha surfaces, normally the alpha of the destination acts as a mask. If you want to just do a "dumb copy" that doesn't blend, you have to turn off the SDL_SRCALPHA flag on the source surface. This is how it's supposed to work, but can be surprising when you're trying to combine one image with another and both have transparent backgrounds. <br/>*
 
 == Related Functions ==
 :[[SDL_LowerBlit]]
