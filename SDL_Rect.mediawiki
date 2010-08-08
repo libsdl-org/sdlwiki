@@ -28,6 +28,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 <<Color2(green,Below are listed as \sa in header. Should these be in Remarks?)>>
+
 SDL_Rect<code></code>Empty
  Returns true if the rectangle has no area.
  ```
