@@ -30,7 +30,7 @@ if ( state[SDL_SCANCODE_RETURN] ) {
 ```
 
 == Remarks ==
-*<<Color2(green,From SDL_GetKeyState in old wiki.)>><br/>
+*<<Color2(green,From [[SDL_GetKeyState]] in old wiki.)>><br/>
 Note: Use [[SDL_PumpEvents]]() to update the state array.
 
 Note: This function gives you the current state after all events have been processed, so if a key or button has been pressed and released before you process events, then the pressed state will never show up in the <code>getstate</code> <<Color2(green,formatting here ok?)>> calls.
