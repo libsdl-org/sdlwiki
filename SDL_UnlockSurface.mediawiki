@@ -19,34 +19,7 @@ void SDL_UnlockSurface(SDL_Surface* surface)
 <<Color2(green,Global decision - should the hyperlink to the struct be replaced by just the word surface?)>>
 
 == Code Examples ==
-*
-```c++
-SDL_Surface* surface = NULL;
-
-/* Assign a surface pointer to surface */
-
-SDL_LockSurface( surface );
-
-/* Surface is locked */
-/* Direct pixel access on surface here */
-
-SDL_LockSurface( surface );
-
-/* More direct pixel access on surface */
-
-SDL_UnlockSurface( surface );
-
-/* Surface is still locked */
-/* Note: In versions < 1.1.8, the surface would have been */
-/* no longer locked at this stage                         */
-
-SDL_UnlockSurface( surface );
-/* Surface is now unlocked */
-
-SDL_FreeSurface( surface );
-surface = NULL;
-```
-*
+<<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
 Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from <code>surface->pixels</code>, using the pixel format stored in <code>surface->format</code>. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
