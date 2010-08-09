@@ -36,6 +36,10 @@ The new surface should be freed with [[SDL_FreeSurface]]().
 
 <<Color2(green,Does SDL_LoadBMP(file) belong on this page?)>>
 
+*<br/><<Color2(green,This is from SDL_LoadBMP in the old wiki.  Does it still apply?)>>  
+
+Note: When loading a 24-bit Windows BMP file, pixel data points are loaded as blue, green, red, and NOT red, green, blue (as one might expect).<br/>*
+
 == Related Functions ==
 :[[SDL_FreeSurface]]
 :[[SDL_SaveBMP_RW]]???
