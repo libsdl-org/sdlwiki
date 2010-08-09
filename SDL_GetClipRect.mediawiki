@@ -15,7 +15,7 @@ void SDL_GetClipRect(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to query
+|^the surface to query^ ''-or-'' ^a pointer to the destination surface^
 |-
 |'''rect'''
 |must be a pointer to a valid rectangle which will be filled with the correct values
@@ -29,7 +29,12 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+*<br/>When this '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
+
+The rectangle pointed to by '''rect''' will be filled with the clipping rectangle of the '''surface'''.<br/>*
+
 == Related Functions ==
+:[[SDL_BlitSurface]] *
 :[[SDL_SetClipRect]]
 
 ----
