@@ -60,6 +60,12 @@ You can add your code example here
 == Remarks ==
 If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the flags '[RGB]mask'. <<Color2(green,Should it still mention flags since there is no flag param in this function?  Should it instead say using the source pixel format?)>>
 
+*<br/>No copy is made from the pixel data. A special undocumented [[SDL_Surface]] flag is set. The pixel data won't be deallocated automatically when [[SDL_FreeSurface]]() is invoked with the surface and it should not be freed until the surface has been freed. The data stored in '''pixels''' is assumed to have '''depth''' bits per pixel. '''pitch''' is the size of the scanline of the surface, in bytes (i.e. <code>widthInPixels*bytesPerPixel</code>). The scanline is the width of the image multiplied by bytes per pixel, plus any bytes added for alignment (that is if '''pixels''' points to the leftmost pixel on the first row of the surface, then '''pixels'''+'''pitch''' points to the leftmost pixel on the second row of the surface).
+
+<<Color2(green,If the above text is to remain should words like scanline be formatted differently - like <code>scanline</code>?)>>
+
+The pixel data is considered to be in software memory. If the pixel data lies in hardware memory (as pixel data from a hardware surface), the appropriate surface flag has to be set manually. <br/>*
+
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
 :[[SDL_FreeSurface]]
