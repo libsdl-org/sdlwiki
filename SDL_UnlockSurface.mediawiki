@@ -14,21 +14,48 @@ void SDL_UnlockSurface(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|a pointer to the [[SDL_Surface]] to be locked
+|a pointer to the [[SDL_Surface]] unlock
 |}
-<<Color2(green,should hyperlink be removed?)>>
+<<Color2(green,Global decision - should the hyperlink to the struct be replaced by just the word surface?)>>
 
 == Code Examples ==
+*
 ```c++
-You can add your code example here
+SDL_Surface* surface = NULL;
+
+/* Assign a surface pointer to surface */
+
+SDL_LockSurface( surface );
+
+/* Surface is locked */
+/* Direct pixel access on surface here */
+
+SDL_LockSurface( surface );
+
+/* More direct pixel access on surface */
+
+SDL_UnlockSurface( surface );
+
+/* Surface is still locked */
+/* Note: In versions < 1.1.8, the surface would have been */
+/* no longer locked at this stage                         */
+
+SDL_UnlockSurface( surface );
+/* Surface is now unlocked */
+
+SDL_FreeSurface( surface );
+surface = NULL;
 ```
+*
 
 == Remarks ==
-Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from surface->pixels, using the pixel format stored in surface->format. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
+Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from <code>surface->pixels</code>, using the pixel format stored in <code>surface->format</code>. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
 
 Not all surfaces require locking. If SDL_MUSTLOCK(surface) evaluates to 0, then you can read and write to the surface at any time, and the pixel format of the surface will not change.
 
 No operating system or library calls should be made between lock/unlock pairs, as critical system locks may be held during this time. 
+
+*<br/>Note : Since 1.1.8, the surface locks are recursive. See [[SDL_LockSurface]]() for more information. <br/>*
 
 == Related Functions ==
 :[[SDL_LockSurface]]
