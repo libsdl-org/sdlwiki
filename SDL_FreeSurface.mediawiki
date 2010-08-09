@@ -3,9 +3,7 @@
 '''DRAFT'''
 
 = SDL_FreeSurface =
-Use this function to allocate and free an RGB surface.  
-
-<<Color2(green,Should this be free and allocate? Does it free first?  Is it freeing the surface or the resources or is that the same?)>>
+Use this function to ,,allocate and,, free an RGB surface.  
 
 
 == Syntax ==
