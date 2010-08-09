@@ -35,6 +35,7 @@ If the clip rectangle is NULL, clipping will be disabled.
 Note that blits are automatically clipped to the edges of the source and destination surfaces.
 
 == Related Functions ==
+:[[SDL_BlitSurface]] *
 :[[SDL_GetClipRect]]
 
 ----
