@@ -38,6 +38,8 @@ You can add your code example here
 
 *<br/>RLE acceleration can substantially speed up blitting of images with large horizontal runs of transparent pixels (i.e., pixels that match the key value). The '''key''' must be of the same pixel format as the '''surface''', [[SDL_MapRGB]]() is often useful for obtaining an acceptable value.
 
+<<Color2(green,There are several instances of surface here where it is unclear whether it should be bolded as the param.)>>
+
 If '''flag''' is SDL_SRCCOLORKEY then '''key''' is the transparent pixel value in the source image of a blit.
 
 If '''flag''' is OR'd with SDL_RLEACCEL then the surface will be drawn using RLE acceleration when drawn with [[SDL_BlitSurface]](). The surface will actually be encoded for RLE acceleration the first time [[SDL_BlitSurface]]() or SDL_DisplayFormat is called on the surface.  <<Color2(green,SDL_DisplayFormat is not in 1.3.)>>
@@ -45,7 +47,9 @@ If '''flag''' is OR'd with SDL_RLEACCEL then the surface will be drawn using RLE
 If '''flag''' is 0, this function clears any current color key. <br/>*
 
 == Related Functions ==
+:[[SDL_BlitSurface]] *
 :[[SDL_GetColorKey]]
+:[[SDL_MapRGB]] *
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
