@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateCursor =
-Use this function to create a cursor for the currently selected mouse, using the specified bitmap data and mask (in MSB format).
+Use this function to create a cursor ^?for the currently selected mouse,?^ using the specified bitmap data and mask (in MSB format).
 
 
 == Syntax ==
@@ -19,22 +19,22 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 == Function Parameters ==
 {|
 |'''data'''
-|the first part of the cursor color information; see [[#Remarks|Remarks]] for details
+|^the color value for each pixel of the cursor^; see [[#Remarks|Remarks]] for details
 |-
 |'''mask'''
-|the second part of the cursor color information; see [[#Remarks|Remarks]] for details
+|^the mask value for each pixel of the cursor^; see [[#Remarks|Remarks]] for details
 |-
 |'''w'''
-|the width of the cursor; see [[#Remarks|Remarks]] for details
+|^the width of the cursor^; see [[#Remarks|Remarks]] for details
 |-
 |'''h'''
-|the height of the cursor ''(same restrictions?)''
+|^the height of the cursor^ ''(same restrictions as w?)''
 |-
 |'''hot_x'''
-|''description''
+|^the X-axis location of the upper left corner of the cursor relative to the actual mouse position^???
 |-
 |'''hot_y'''
-|''description''
+|^the Y-axis location of the upper left corner of the cursor relative to the actual mouse position^???
 |}
 
 == Return Value ==
@@ -128,7 +128,7 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 *
 
 == Remarks ==
-The cursor width ''('''w''')'' must be a multiple of 8 bits.
+The cursor width ^('''w''')^ must be a multiple of 8 bits.
 
 The cursor is created in black and white according to the following:
 {|
@@ -155,11 +155,11 @@ The cursor is created in black and white according to the following:
 
 *<br/>Cursors created with this function must be freed with [[SDL_FreeCursor]]().
 
-If you want to have a color cursor then this function is not for you; instead, you must hide the normal system cursor ([[SDL_ShowCursor]]) and in your main loop, when you draw graphics, also draw an [[SDL_Surface]] at the location of the mouse cursor. 
+If you want to have color cursor, then this function is not for you; instead, you must hide the normal system cursor ([[SDL_ShowCursor]]) and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor. 
 
 <<Color2(green,Should the above comment about color cursors be rephrased to be less conversational?  Example below:)>><br/>*
 
-^To create a color cursor hide the normal system cursor ([[SDL_ShowCursor]]) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^
+^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]] to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^
 
 == Related Functions ==
 :[[SDL_FreeCursor]]
