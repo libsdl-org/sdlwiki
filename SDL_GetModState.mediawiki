@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetModState =
-Use this function to get the current key modifier state for the selected keyboard.
+Use this function to get the current key modifier state for the ^?selected?^ keyboard.
 
 
 == Syntax ==
@@ -12,7 +12,7 @@ SDLMod SDL_GetModState(void)
 ```
 
 == Return Value ==
-The current key modifier state for the selected keyboard. See [[SDLMod]] for details.  ???
+^Returns an OR'd combination of the modifier keys for the selected keyboard. See [[SDLMod]] for details.^  ???
 
 == Code Examples ==
 ```c++
@@ -23,6 +23,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetKeyboardState]] *
 :[[SDL_SetModState]]
 
 ----
