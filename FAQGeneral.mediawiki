@@ -30,7 +30,10 @@ The nice folks at gmane.org have provided a news <-> mail gateway for the main S
 Yes, you can find people hanging out on the IRC server at irc.freenode.net on the channel #SDL
 
 == Is there an official logo? ==
-Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer. Q:      I have a project that uses SDL, how do I add it to the SDL website? A:      If you have a project that you feel is ready for the general public, you can add it to the SDL website:
+Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
+
+== I have a project that uses SDL, how do I add it to the SDL website? ==
+If you have a project that you feel is ready for the general public, you can add it to the SDL website:
 
  1. Create an account under the Site Actions menu on the SDL website
  1. Log in from the Site Actions menu with your new account
@@ -38,4 +41,4 @@ Yes, the official SDL logo was created by Arne Claus, and is available here: htt
  1. Click on the "submit" button at the bottom of the page
 
 == What's up with SDL 2.0? Can I help? ==
-SDL 1.3 is in development and when it matures it will become SDL 2.0. You can download a PRERELEASE version of the code from the SDL subversion page and provide feedback on the mailing list.
+SDL 1.3 is in development and when it matures it will become SDL 2.0. You can download a PRERELEASE version of the code from the SDL Mercurial page (http://www.libsdl.org/hg.php) and provide feedback on the mailing list.
