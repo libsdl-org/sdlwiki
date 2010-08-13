@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_ShowCursor =
-Use this function to toggle whether or not the cursor is shown for the currently selected mouse.
+Use this function to toggle whether or not the cursor is shown.
 
 
 == Syntax ==
