@@ -123,18 +123,6 @@ An enumeration of the types of events that can be delivered.
 |only for bounding internal arrays
 |}
 
-
-
-<<Color2(green,I think these remaining ones are removed after the last changes but I want to be sure before I delete them.)>>
-
-{|
-|SDL_PROXIMITYIN
-|proximity In event
-|-
-|SDL_PROXIMITYOUT
-|proximity Out event
-|}
-
 == Code Examples ==
 ```c++
 You can add your code example here
