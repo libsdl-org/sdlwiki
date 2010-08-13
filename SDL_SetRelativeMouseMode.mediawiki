@@ -3,20 +3,16 @@
 '''DRAFT'''
 
 = SDL_SetRelativeMouseMode =
-Use this function to set relative mouse mode for the specified mouse.
+Use this function to set ^the^ relative mouse mode.
 
 
 == Syntax ==
 ```c++
-int SDL_SetRelativeMouseMode(int      index,
-                             SDL_bool enabled)
+int SDL_SetRelativeMouseMode(SDL_bool enabled)
 ```
 
 == Function Parameters ==
 {|
-|'''index'''
-|the index of the specified mouse
-|-
 |'''enabled'''
 |whether or not to enable relative mode^; SDL_TRUE for enabled???^
 |}
