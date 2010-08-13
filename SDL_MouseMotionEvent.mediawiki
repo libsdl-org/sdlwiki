@@ -49,41 +49,6 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |the relative motion in the Y direction
 |}
 
-<<Color2(green,I think the remainder of these are to be deleted but want to be sure first.)>>
-
-{|
-|<style="color: #808080;">int
-|<style="color: #808080;">'''z'''
-|<style="color: #808080;">z coordinate, for future use
-|-
-|int
-|'''pressure'''
-|pressure reported by tablets
-|-
-|int
-|'''pressure_max'''
-|maximum value of the pressure reported by the device
-|-
-|int
-|'''pressure_min'''
-|minimum value of the pressure reported by the device
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''rotation'''
-|<style="color: #808080;">for future use
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''tilt_x'''
-|<style="color: #808080;">for future use
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''tilt_y'''
-|<style="color: #808080;">for future use
-|-
-|int
-|'''cursor'''
-|the cursor being used in the event
-|}
 
 == Code Examples ==
 ```c++
