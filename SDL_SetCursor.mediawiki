@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SetCursor =
-Use this function to set the active cursor for the currently selected mouse.
+Use this function to set the active cursor.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ void SDL_SetCursor(SDL_Cursor* cursor)
 == Function Parameters ==
 {|
 |'''cursor'''
-|the SDL_Cursor to apply ''(should this be linked to remarks?)''
+|the SDL_Cursor to apply <<Color2(green,(Should this be linked to Remarks?))>>
 |}
 
 == Code Examples ==
@@ -23,10 +23,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-The cursor must have been created for the selected mouse.
+''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CreateCursor]]???
+:[[SDL_CreateCursor]] ???
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
