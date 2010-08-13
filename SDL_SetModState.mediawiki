@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SetModState =
-Use this function to set the current key modifier state for the ^?selected?^ keyboard.
+Use this function to set the current key modifier state for the keyboard.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ void SDL_SetModState(SDLMod modstate)
 == Function Parameters ==
 {|
 |'''modstate'''
-|the desired [[SDLMod]] for the current keyboard
+|the desired [[SDLMod]] for the keyboard
 |}
 
 == Code Examples ==
