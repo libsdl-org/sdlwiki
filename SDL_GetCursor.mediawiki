@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetCursor =
-Use this function to return the active cursor for the currently selected mouse.
+Use this function to return the active cursor.
 
 
 == Syntax ==
@@ -12,7 +12,7 @@ SDL_Cursor* SDL_GetCursor(void)
 ```
 
 == Return Value ==
-Returns the active SDL_Cursor for the currently selected mouse.  ''<<Color2(green,Fills a pointer with the active SDL_Cursor.)>>''
+Returns the active SDL_Cursor.  ''-or-'' <<Color2(green,Returns a pointer filled with the active SDL_Cursor.)>>
 
 == Code Examples ==
 ```c++
