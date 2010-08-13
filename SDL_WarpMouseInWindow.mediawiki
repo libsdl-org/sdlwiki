@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_WarpMouseInWindow =
-Use this function to move the currently selected mouse to the given position within the window.
+Use this function to move the mouse to the given position within the window.
 
 
 == Syntax ==
