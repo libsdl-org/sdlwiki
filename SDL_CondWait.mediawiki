@@ -9,7 +9,7 @@ Use this function to wait on the condition variable, unlocking the provided mute
 == Syntax ==
 ```c++
 int SDL_CondWait(SDL_cond*  cond,
-                 SDL_mutex* mut)
+                 SDL_mutex* mutex)
 ```
 
 == Function Parameters ==
@@ -17,7 +17,7 @@ int SDL_CondWait(SDL_cond*  cond,
 |'''cond'''
 |^a pointer to the SDL_cond structure that is being applied^ ???
 |-
-|'''mut'''
+|'''mutex'''
 |^a pointer to the SDL_mutex structure that is to be unlocked^
 |}
 
