@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetKeyboardFocus =
+Use this function to get the window which currently has keyboard focus.
+
+
+== Syntax ==
+```c++
+SDL_Window* SDL_GetKeyboardFocus(void)
+```
+
+== Return Value ==
+^A pointer to the SDL_Window with keyboard focus.^
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryKeyboard]]
