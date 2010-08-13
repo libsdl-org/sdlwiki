@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetRelativeMouseState =
-Use this function to retrieve the current state of the mouse.
+Use this function to retrieve the relative state of the mouse.
 
 
 == Syntax ==
