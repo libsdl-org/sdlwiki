@@ -1,0 +1,39 @@
+= Text Input in SDL =
+
+== Why? ==
+Why does SDL need a text input API?
+
+=== Common Misconceptions ===
+Question:
+
+When I press a key on my keyboard, my program receives a character event, right?
+
+=== The Truth ===
+Answer:
+
+Well, it's not always that simple. Sometimes it can take multiple key presses to produce a character. Sometimes a single key press can produce multiple characters.
+
+Text input is not as simple as it seems, particularly when you consider International users (and you should). It's not hard to figure out why that is when you look at languages like Chinese, Japanese, and Korean. These languages, collectively referred to as the CJK, have thousands of symbols.
+
+It would not be feasible to have a keyboard with over ten-thousand keys, would it? The solution to this is a software input method.
+
+A software input method generally sits somewhere between the keyboard and the application.
+
+== Common Terms ==
+* IME - Input Method Editor. A software input method. In Windows, this often specifically refers to the program that
+* Composition
+* Candidate
+* Candidate List
+
+== Basic Workflow ==
+TODO
+
+== SDL ==
+So how does SDL handle text input?
+
+=== Functions ===
+* [[SDL_StartTextInput]]
+* [[SDL_StopTextInput]]
+* [[SDL_SetTextInputRect]]
+
+=== Events ===
