@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling audio devices and audio input/output.
+
 == Functions ==
 
 <<FullSearch(category:CategoryAudio)>>
