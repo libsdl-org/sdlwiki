@@ -11,7 +11,7 @@
 
 == Introduction ==
 
-This category contains the SDL time management routines.
+This category contains functions for handling the SDL time management routines.
 
 == Functions ==
 
