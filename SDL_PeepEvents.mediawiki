@@ -45,16 +45,16 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,NOTE: Recent changes have removed the '''mask''' param but the following information has not been adjusted to reflect this change yet.)>> <span id="action"></span> '''action''' may be any of the following <<Color2(green,(from enum SDL_eventaction which has no page))>>:
+<span id="action"></span> '''action''' may be any of the following <<Color2(green,(from enum SDL_eventaction which has no page))>>:
 {|
 |SDL_ADDEVENT 
 |up to '''numevents''' events will be added to the back of the event queue 
 |-
 |SDL_PEEKEVENT 
-|up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will not be removed from the queue 
+|up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will not be removed from the queue
 |-
 |SDL_GETEVENT 
-|up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will be removed from the queue 
+|up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will be removed from the queue
 |}
 
 
@@ -62,28 +62,20 @@ You can add your code example here
 
 If '''action''' is SDL_ADDEVENT, up to '''numevents''' events will be added to the back of the event queue.
 
-If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will not be removed from the queue.
+If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will not be removed from the queue.
 
-If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, matching '''mask''', will be returned and will be removed from the queue.
+If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will be removed from the queue.
 
-<span id="mask"></span>*Examples of '''mask''':
-
-* SDL_EVENTMASK (SDL_KEYUP)
-* (SDL_EVENTMASK (SDL_MOUSEBUTTONDOWN) | SDL_EVENTMASK (SDL_MOUSEBUTTONUP))
-* SDL_ALLEVENTS
-* SDL_KEYUPMASK
-* SDL_ALLEVENTS ^ SDL_QUITMASK
-
-*
 
 {i} This function is thread-safe.
 
-<<Color2(green,Is the following true in 1.3?)>> You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
+*<br/>
+<<Color2(green,Is the following true in 1.3?)>> You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().<br/>*
 
 == Related Functions ==
-: [[SDL_PollEvent]] *???
-: [[SDL_PumpEvents]] *???
-: [[SDL_PushEvent]] *???
+: [[SDL_PollEvent]] *
+: [[SDL_PumpEvents]] *
+: [[SDL_PushEvent]] *
 
 ----
 [[CategoryAPI]], CategoryEvents
