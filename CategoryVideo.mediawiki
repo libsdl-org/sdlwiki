@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling display, window, and rendering actions.
+
 == Functions ==
 
 <<FullSearch(category:CategoryVideo)>>
