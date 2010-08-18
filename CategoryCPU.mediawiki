@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for ^gathering information about your processor's features.^
+
 == Functions ==
 
 <<FullSearch(category:CategoryCPU)>>
