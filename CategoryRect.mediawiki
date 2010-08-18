@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling simple rectangle drawing including overlaps and merges.
+
 == Functions ==
 
 <<FullSearchCached(category:CategoryRect)>>
