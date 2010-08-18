@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling surface creation and blitting as well as simple drawing tasks including points, lines, circles, ellipses, and rectangles.
+
 == Functions ==
 
 <<FullSearch(category:CategorySurface)>>
