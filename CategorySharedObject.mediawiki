@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling shared objects and additional functions.
+
 ^There are some^ ,,S,,ystem dependent library loading routines.
 : ,,Some,, things to keep in mind:
 * These functions only work on C function names.  Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
