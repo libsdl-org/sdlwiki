@@ -10,7 +10,7 @@
 
 
 == Introduction ==
-This category contains the SDL power management routines. 
+^This category contains functions for handling^ ,,This category contains,, the SDL power management routines. 
 
 == Functions ==
 
