@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling atomic operations in both 32-bit and 64-bit platforms.
+
 == Functions ==
 
 <<FullSearch(category:CategoryAtomic)>>
