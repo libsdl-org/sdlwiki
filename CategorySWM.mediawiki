@@ -12,7 +12,9 @@
 
 
 == Introduction ==
-<<Color2(green,Seems like there should be an intro to this paragraph but I'm not sure how to fill in the blanks.)>>
+<<Color2(green,Seems like there should be an intro to the paragraph below from the header but I'm not sure how to fill in the blanks.  How is the following in purple?)>>
+
+<<Color2(purple,This category contains functions for handling advanced,)>><<Color2(purple, platform-specific window management tasks.)>>
 
 Your application has access to a special type of event SDL_SYSWMEVENT, which contains window-manager specific information and arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
 
