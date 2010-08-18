@@ -12,7 +12,7 @@
 
 
 == Introduction ==
-Functions in this category allow you to gather information about the platform you are working on / are compiling/creating for.
+^This category contains functions for handling information about the current platform.^ ,,Functions in this category allow you to gather information about the platform you are working on / are compiling/creating for.,,
 
 
 == Functions ==
