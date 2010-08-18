@@ -11,6 +11,8 @@
 
 == Introduction ==
 
+This category contains functions for handling keyboard inputs.
+
 == Functions ==
 
 <<FullSearch(category:CategoryKeyboard)>>
