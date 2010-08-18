@@ -10,6 +10,8 @@
 
 == Introduction ==
 
+This category contains functions for handling pixel, palette, and color formats and conversions.
+
 == Functions ==
 
 <<FullSearchCached(category:CategoryPixels)>>
