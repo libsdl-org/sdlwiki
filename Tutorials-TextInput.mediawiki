@@ -21,7 +21,7 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
  1. The user activates an input method. This is typically done via a hotkey or by selecting an input method in a GUI.
  1. The user begins to type in their selected language, starting a [[#Composition|Composition]].
  1. The [[#IME|IME]] intercepts the key press events and interprets them.
- 1. The user determines the composition is satisfactor and commits it (usually with the enter key). The user may instead choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]].
+ 1. The user determines the composition is satisfactory and commits it (usually with the enter key). The user may instead choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]].
  1. The [[#IME|IME]] passes on the text that has been generated.
 
 While this provides a good overview, it may not be accurate for all platforms.
