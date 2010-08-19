@@ -1,15 +1,9 @@
-= Text Input in SDL =
+= Text Input =
 
 == Why? ==
 Why does SDL need a text input API?
 
-=== Common Misconceptions ===
-Question:
-
 When I press a key on my keyboard, my program receives a character event, right?
-
-=== The Truth ===
-Answer:
 
 Well, it's not always that simple. Sometimes it can take multiple key presses to produce a character. Sometimes a single key press can produce multiple characters.
 
@@ -17,16 +11,22 @@ Text input is not as simple as it seems, particularly when you consider Internat
 
 It would not be feasible to have a keyboard with over ten-thousand keys, would it? The solution to this is a software input method.
 
-A software input method generally sits somewhere between the keyboard and the application.
-
-== Common Terms ==
-* IME - Input Method Editor. A software input method. In Windows, this often specifically refers to the program that
-* Composition
-* Candidate
-* Candidate List
+== Terms ==
+* <span id="IME"></span>'''IME''' - Input Method Editor. A software input method. This is typically a program that intercepts key presses and interprets them before (eventually) passing them onto the application.
+* <span id="Composition"></span>'''Composition''' - The text a user is currently inputting. This text is not yet finalized (committed) and the IME may modify it.
+* <span id="Candidate"></span>'''Candidate''' - An optional alternative text for the composition, gathered by the IME in the Candidate List.
+* <span id="CandidateList"></span>'''Candidate List''' - A list of Candidates, used when there is any ambiguity.
 
 == Basic Workflow ==
-TODO
+ 1. The user activates an input method. This is typically done via a hotkey or by selecting an input method in a GUI.
+ 1. The user begins to type in their selected language, starting a [[#Composition|Composition]].
+ 1. The [[#IME|IME]] intercepts the key press events and interprets them.
+ 1. The user determines the composition is satisfactor and commits it (usually with the enter key). The user may instead choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]].
+ 1. The [[#IME|IME]] passes on the text that has been generated.
+
+While this provides a good overview, it may not be accurate for all platforms.
+
+Whenever the [[#Composition|Composition]] is changed, the application can retrieve it.
 
 == SDL ==
 So how does SDL handle text input?
@@ -37,3 +37,5 @@ So how does SDL handle text input?
 * [[SDL_SetTextInputRect]]
 
 === Events ===
+* [[SDL_TextEditingEvent]]
+* [[SDL_TextInputEvent]]
