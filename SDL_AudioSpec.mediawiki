@@ -59,8 +59,11 @@ You can add your code example here
 
 '''freq''' ^specifies^ the number of samples sent to the sound device ,,every,, ^per^ second. Common values are 11025, 22050 and 44100. The higher the better. <<Color2(green,I think this info could be moved to Params above and this paragraph removed.)>><<Color2(green,I think "The higher the better." implies that the programmer has a choice and should choose the higher number.  I suspect that the value is actually dictated by the audio data.  Perhaps rewording to say "Higher values produce higher quality sounds/audio output" might be preferable?)>>
 
-'''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^It may be one of the following values:^
+'''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^Audio format flags may be one of the following values:^
 {|
+|
+|''Default,,s,, to LSB byte order'' -or- ''Basic'' ???
+|-
 |AUDIO_U8
 |unsigned 8-bit samples.
 |-
@@ -79,12 +82,42 @@ You can add your code example here
 |AUDIO_S16MSB
 |not supported by all hardware (signed 16-bit big-endian)
 |-
+|
+|''int32 support''
+|-
+|AUDIO_S32 or AUDIO_S32LSB
+|32-bit integer samples
+|-
+|AUDIO_S32MSB
+|as above, but big-endian byte order
+|-
+|
+|''float32 support''
+|-
+|AUDIO_F32 or AUDIO_F32LSB
+|32-bit floating point samples
+|-
+|AUDIO_F32MSB
+|as above, but big-endian byte order
+|-
+|
+|''Native audio byte ordering''
+|-
 |AUDIO_U16SYS
 |either AUDIO_U16LSB or AUDIO_U16MSB depending on hardware CPU endianness
 |-
 |AUDIO_S16SYS
 |either AUDIO_S16LSB or AUDIO_S16MSB depending on hardware CPU endianness
+|-
+|AUDIO_S32SYS
+|either AUDIO_S32LSB or AUDIO_S32MSB depending on hardware CPU endianness
+|-
+|AUDIO_F32SYS
+|either AUDIO_F32LSB or AUDIO_F32MSB depending on hardware CPU endianness
 |}
+
+
+<<Color2(green,This list was taken from the header.  A portion was listed in the old wiki as well.  Is it correct that audio change flags and audio flags (as opposed to the above audio format flags) should not be included here?)>>
 
 '''channels''' ^specifies^ the number of separate sound channels. 1 is mono (single channel), 2 is stereo (dual channel). <<Color2(green,I think this paragraph is redundant with Params above and can be removed.)>>
 
