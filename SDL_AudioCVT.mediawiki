@@ -26,11 +26,11 @@ A structure that is used for audio data conversion.
 |-
 |Uint8*
 |'''buf'''
-|a pointer to a buffer to hold entire audio data; see [[#buf|Remarks]] for more info
+|a pointer to a buffer to hold entire audio data; see [[#buf|Remarks]] for details
 |-
 |int
 |'''len'''
-|length of original audio buffer; see [[#len|Remarks]] for more info
+|length of original audio buffer; see [[#len|Remarks]] for details
 |-
 |int
 |'''len_cvt'''
@@ -38,11 +38,11 @@ A structure that is used for audio data conversion.
 |-
 |int
 |'''len_mult'''
-|'''buf''' must be len*len_mult big; see [[#len_mult|Remarks]] for more info
+|'''buf''' must be len*len_mult big; see [[#len_mult|Remarks]] for details
 |-
 |double
 |'''len_ratio'''
-|given '''len''', final size is len*len_ratio; see [[#len_ratio|Remarks]] for more info
+|given '''len''', final size is len*len_ratio; see [[#len_ratio|Remarks]] for details
 |-
 |<style="color: #808080;">SDL_Audio<code></code>Filter[10]
 |<style="color: #808080;">'''filters'''
