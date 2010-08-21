@@ -1,8 +1,9 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_BuildAudioCVT =
-Use this function to initialize a SDL_AudioCVT structure for conversion.
+Use this function to initialize an [[SDL_AudioCVT]] structure for conversion.
 
 
 == Syntax ==
@@ -40,6 +41,8 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 |the frequency or samples-per-second of the destination
 |}
 
+<<Color2(green,Should "frequency or samples-per-second" be changed to "frequency (samples per second)" or can rate be two different types of units?)>>
+
 == Return Value ==
 Returns 1 if the audio filter is set up, 0 if there's no conversion needed, or -1 if the format conversion is not supported; call [[SDL_GetError]]() for more information.
 
@@ -52,6 +55,8 @@ You can add your code example here
 Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.
 
 For information on audio formats see [[SDL_AudioSpec]].
+
+*<br/>Currently only rate conversions of 2^x^ and (1/2)^x^ with x > 0 are done, ,,nearing,, ^whichever most closely approximates^ the requested rate conversion.<br/>*
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
