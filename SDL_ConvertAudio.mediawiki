@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_ConvertAudio =
 Use this function to convert audio data to a desired audio format.
@@ -18,7 +19,7 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 
 == Return Value ==
 
-Returns 0 if the conversion was completed successfully, otherwise -1 is returned and call [[SDL_GetError]]() for more information.
+Returns 0 if the conversion was completed successfully, ,,otherwise,, ^or^ -1 ,,is returned and,, ^on error;^ call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -91,12 +92,25 @@ SDL_ConvertAudio(&wav_cvt);
 ```
 
 == Remarks ==
-<span id="cvt"></span> Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer cvt->buf, and filled it with cvt->len bytes of audio data in the source format, this function will convert it in-place to the desired format.
+<<Color2(green,Does [[SDL_BuildAudioCVT]]() initialize the structure create the buffer and fill it with audio data or does it require other actions to create the buffer and fill it with data?  If the function does all of the above then the second paragraph below should probably replace the first.  If not then the first paragraph below should be kept and possibly modified to include information about how to create the buffer and fill it.)>>
 
-The data conversion may expand the size of the audio data, so the buffer cvt->buf should be allocated after the '''cvt''' structure is initialized by [[SDL_BuildAudioCVT]](), and should be cvt->len*cvt->len_mult bytes long.
+<span id="cvt"></span> Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
 
-If the conversion completed successfully then the converted audio data can be read from cvt->buf. The amount of valid, converted, audio data in the buffer is equal to cvt->len*cvt->len_ratio. 
- 
+''-or-''
+
+<span id="cvt"></span> Once you have initialized the '''cvt''' structure, created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format using [[SDL_BuildAudioCVT]](), ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
+
+
+
+<<Color2(green,How do you allocate the buffer?  Should that info be included here or is that common knowledge?)>>
+
+The data conversion may expand the size of the audio data, so the buffer <code>cvt->buf</code> should be allocated after the '''cvt''' structure is initialized by [[SDL_BuildAudioCVT]](), and should be <code>cvt->len*cvt->len_mult</code> bytes long.
+
+
+
+If the conversion completed successfully then the converted audio data can be read from <code>cvt->buf</code>. The amount of valid, converted, audio data in the buffer is equal to <code>cvt->len*cvt->len_ratio</code>. 
+
+
 == Related Functions ==
 :[[SDL_BuildAudioCVT]]
 
