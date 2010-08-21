@@ -22,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>After a WAVE file has been opened with [[SDL_LoadWAV]]() or [[SDL_LoadWAV_RW]]() its data can eventually be freed with [[SDL_FreeWAV]]().<br/>*
 
 == Related Functions ==
 :[[SDL_LoadWAV]]
