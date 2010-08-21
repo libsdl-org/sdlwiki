@@ -18,10 +18,39 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
 * <span id="CandidateList"></span>'''Candidate List''' - A list of Candidates, used when there is any ambiguity.
 
 == Basic Workflow ==
- 1. The user activates an input method ([[#IME|IME]]). This is typically done via a hotkey or by selecting an input method in a GUI.
- 1. The user begins to type in their selected language, starting a [[#Composition|Composition]].
+{|
+|<tablewidth="400px"> 
+|Description
+|Example
+|}
+
+{|
+|<tablewidth="400px">1
+| 
+| {{attachment:TextInput1.png|TextInput1|width=100}} 
+|-
+|2
+| 
+| {{attachment:TextInput2.png|TextInput2|width=100}} 
+|-
+|3
+| 
+| {{attachment:TextInput3.png|TextInput3|width=100}} 
+|-
+|4
+| 
+| {{attachment:TextInput4.png|TextInput4|width=100}} 
+|-
+|5
+| 
+| {{attachment:TextInput5.png|TextInput5|width=100}} 
+|}
+
+
+ 1. The user activates an input method ([[#IME|IME]]). This is typically done via a hotkey or by selecting an input method in a GUI. {{attachment:TextInput1.png|TextInput1|width="100"}}
+ 1. The user begins to type in their selected language, starting a [[#Composition|Composition]]. {{attachment:TextInput2.png|TextInput1|align="right"}}
  1. The [[#IME|IME]] intercepts the key press events and interprets them.
- 1. The user determines the composition is satisfactory and commits it (usually with the enter key). Alternatively, the user may choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]].
+ 1. The user determines the composition is satisfactory and commits it (usually with the enter key). Alternatively, the user may choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]]. {{attachment:TextInput3.png|TextInput1|align="right"}}
  1. The [[#IME|IME]] passes on the committed text to the application.
 
 While this provides a good overview, it may not be accurate for all platforms.
