@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_MixAudio =
 Use this function to mix audio data.
@@ -32,6 +33,8 @@ void SDL_MixAudio(Uint8*       dst,
 ```c++
 You can add your code example here
 ```
+<<Color2(green,There is a reference to the following in the old wiki. Do any of these examples belong in the new wiki?)>>
+http://www.libsdl.org/cgi/docwiki.cgi/Audio_Examples
 
 == Remarks ==
 This takes an audio buffer '''src''' of '''len''' bytes in the playing audio format and mixes it into '''dst''', performing addition, volume adjustment, and overflow clipping.
@@ -44,8 +47,17 @@ Do not use this function for mixing together more than two streams of sample dat
 
 It is a common misconception that this function is required to write audio data to an output stream in the audio-callback.  While you can do that, [[SDL_MixAudio]]() is really only needed when you're mixing a single audio stream with a volume adjustment.
 
+*<br/><<Color2(green,The following example is in the old wiki between "in the audio-callback." and "While you can do that".  Should it be included here or is it unnecessary?)>>
+```
+void audio_callback(void *udata, Uint8 *stream, int len)
+{
+    SDL_MixAudio(stream, audio_pos, len, SDL_MIX_MAXVOLUME);
+}
+```<<BR>>*
+
 == Related Functions ==
 :[[SDL_MixAudioFormat]]
+:[[SDL_OpenAudio]] *
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
