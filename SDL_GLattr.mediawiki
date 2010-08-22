@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_GLattr =
 An enumeration of OpenGL configuration attributes.
