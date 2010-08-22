@@ -3,25 +3,22 @@
 '''DRAFT'''
 
 = SDL_RWclose =
-Use this function (macro) to *call the close function in an SDL_RWops structure.*
+Use this function to close and free an allocated SDL_RWops structure ''-or-'' *call the close function in an SDL_RWops structure*.
 
 
 == Syntax ==
 ```c++
-SDL_RWclose(ctx)
+int SDL_RWclose(struct SDL_RWops* context)
 ```
-
-<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the following be included in the syntax section?)>>
- (ctx)->close(ctx)
 
 == Function Parameters ==
 {|
-|'''ctx'''
-|*a pointer to an SDL_RWops structure*
+|'''context'''
+|a pointer to an SDL_RWops structure
 |}
 
 == Return Value ==
-*Returns 0 on success, -1 on error*; call [[SDL_GetError]]() for more information.
+Returns 0 if successful or -1 on write error when flushing data; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 *
@@ -46,13 +43,13 @@ int main()
 *
 
 == Remarks ==
-*,,Note: ,,This is not a built-in function. This is a macro that calls whatever close function happens to be pointed to by an SDL_RWops structure.*
+*<br/>This is not a built-in function. This is a macro that calls whatever close function happens to be pointed to by an SDL_RWops structure.<br/>*
 
 == Related Functions ==
-:[[SDL_RWFromFile]] *???
-:[[SDL_RWread]] (Macro) *???
-:[[SDL_RWseek]](Macro) *???
-:[[SDL_RWwrite]] (Macro) *???
+:[[SDL_RWFromFile]] *
+:[[SDL_RWread]] (Macro) *
+:[[SDL_RWseek]](Macro) *
+:[[SDL_RWwrite]] (Macro) *
 
 <<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
