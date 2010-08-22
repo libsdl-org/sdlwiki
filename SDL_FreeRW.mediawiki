@@ -14,7 +14,7 @@ void SDL_FreeRW(SDL_RWops* area)
 == Function Parameters ==
 {|
 |'''area'''
-|^the SDL_RWops structure to be freed^ ???
+|^the SDL_RWops structure to be freed^
 |}
 
 == Code Examples ==
@@ -33,7 +33,7 @@ void SDL_FreeRW(SDL_RWops* area)
 *
 
 == Remarks ==
-*Only use [[SDL_FreeRW]]() on memory allocated by [[SDL_AllocRW]]().  Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for it. *
+*<br/>Only use [[SDL_FreeRW]]() on memory allocated by [[SDL_AllocRW]]().  Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for it. <br/>*
 
 == Related Functions ==
 :[[SDL_AllocRW]] *
