@@ -3,22 +3,21 @@
 '''DRAFT'''
 
 = SDL_RWtell =
-Use this function ^(macro)^ to *perform a do-nothing seek to get the current offset in an SDL_RWops stream*.
+Use this function to *perform a do-nothing seek to get the current offset in an SDL_RWops stream*.
 
 
 == Syntax ==
 ```c++
-SDL_RWtell(ctx)
+long SDL_RWtell(struct SDL_RWops* context)
 ```
 
-<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the following be included in the syntax section?)>>
-
-```(ctx)->seek(ctx, 0, RW_SEEK_CUR)```
+<<Color2(green,Begin comment that requires commas and therefore can't easily be in green:)>>
+The old wiki says this has only 1 param - ctx - but both the old wiki and header also list the following ```(ctx)->seek(ctx, 0, RW_SEEK_CUR)``` which appears to specify 3 params.  Does the SDL_RWtell macro call the seek function of the SDL_RWops struct then uses the given '''context''' + an '''offset''' of 0  + '''whence''' of RW_SEEK_CUR as the settings to find the current location in the data?  I don't know how to properly represent that here.  See purple below for my attempt.)<br/><<Color2(green,End comment.)>>
 
 == Function Parameters ==
 {|
-|'''ctx'''
-|*a pointer to an SDL_RWops structure*
+|'''context'''
+|a pointer to an SDL_RWops structure
 |}
 
 == Return Value ==
@@ -48,14 +47,16 @@ int main()
 *
 
 == Remarks ==
-,,Note: ,,This is not a built-in function. This is a macro that calls whatever seek function that happens to be pointed to in an SDL_RWops structure.
+*<br/>This is not a built-in function. This is a macro that calls whatever seek function that happens to be pointed to in an SDL_RWops structure.<br/>*
+
+<<Color2(purple,[[SDL_RWtell]] calls the seek function in the SDL_RWops struct which uses the specified '''context''' pointer)>><<Color2(purple, ,, an '''offset''' of 0)>><<Color2(purple,, , and a '''whence''' of RW_SEEK_CUR to find the current location in the data.)>>
 
 == Related Functions ==
-:[[SDL_RWclose]] (Macro) *???
-:[[SDL_RWFromFile]] *???
-:[[SDL_RWread]] (Macro) *???
-:[[SDL_RWseek]](Macro) *???
-:[[SDL_RWwrite]] (Macro) *???
+:[[SDL_RWclose]] (Macro) *
+:[[SDL_RWFromFile]] *
+:[[SDL_RWread]] (Macro) *
+:[[SDL_RWseek]](Macro) *
+:[[SDL_RWwrite]] (Macro) *
 
 <<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
