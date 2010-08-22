@@ -12,6 +12,8 @@ long SDL_RWseek(SDL_RWops* context,
                 int        whence)
 ```
 
+<<Color2(green,Seems like the type for '''context''' might have changed from SDL_RWops* to struct SDL_RWops*.  Which is correct?)>>
+
 == Function Parameters ==
 {|
 |'''context'''
