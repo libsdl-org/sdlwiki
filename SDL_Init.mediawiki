@@ -109,7 +109,7 @@ int main(int argc, char **argv) {
 == Remarks ==
 The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
 
-These are the '''flags''' which may be passed to [[SDL_Init]]() and may be OR'd together to initialize multiple subsystems.
+These are the flags which may be passed to [[SDL_Init]]() and may be OR'd together to initialize multiple subsystems.
 
 {|
 |'''SDL_INIT_TIMER'''
@@ -137,10 +137,8 @@ These are the '''flags''' which may be passed to [[SDL_Init]]() and may be OR'd 
 |run the event loop in a separate thread (not supported by all OSs)
 |}
 
-This function loads the SDL dynamically linked library and initializes 
-the subsystems specified by '''flags''' (and those satisfying dependencies).
-Unless ,,the,, SDL_INIT_NOPARACHUTE ,,flag is set,, ^is set in '''flags'''^, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
-<<Color2(green,flag seems like it should be bolded but grammatically it doesn't work as flags like in the param. solution in superscript?<br/>Can signal handlers also be avoided with flags as 0?)>>
+This function initializes the subsystems specified by '''flags'''.
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
 
 Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
 
