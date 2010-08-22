@@ -3,21 +3,21 @@
 '''DRAFT'''
 
 = SDL_RWread =
-Use this function ^(macro)^ to *call the function pointed to by an SDL_RWops structure's '''read''' member.*  <<Color2(green,Should read be bold here?)>>
+Use this function to read from a data source ''-or-'' *call the function pointed to by an SDL_RWops structure's read member.*
 
 
 == Syntax ==
 ```c++
-SDL_RWread(ctx, ptr, size, n)
+size_t SDL_RWread(struct SDL_RWops* context,
+                  void*             ptr,
+                  size_t            size,
+                  size_t            maxnum)
 ```
-
-<<Color2(green,Should there be anything to indicate a RV at the beginning of the syntax? Should the 4 params be on separate lines like a regular function even though the rest of the syntax is different? Should the following be included in the syntax section?)>>
- ```(ctx)->read(ctx, ptr, size, n)```
 
 == Function Parameters ==
 {|
-|'''ctx'''
-|*a pointer to an SDL_RWops structure*
+|'''context'''
+|a pointer to an SDL_RWops structure
 |-
 |'''ptr'''
 |*a pointer to an area of memory to read data into*
@@ -25,11 +25,15 @@ SDL_RWread(ctx, ptr, size, n)
 |'''size'''
 |*the size of each block of memory to read*
 |-
-|'''n'''
+|'''maxnum'''
 |*the maximum number of memory blocks to read (it may read less)*
 |}
 
 == Return Value ==
+Returns the number of objects read, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
+
+''-or-''
+
 *Returns the number of memory blocks read, or -1 if the read failed*; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
@@ -63,15 +67,15 @@ int main()
 *
 
 == Remarks ==
-*,,Note: ,,This is not a built in function. This is a C macro that calls whatever function happens to be in the 'read' member of the SDL_RWops structure.
+*<br/>This is not a built in function. This is a C macro that calls whatever function happens to be in the 'read' member of the SDL_RWops structure.<br/>*
 
-{i} ''Bug'': until SDL 1.2.9 this function returned inconsistent values, that depend on type of underlying stream.  This bug is now solved.*
+[[SDL_RWread]] reads up to '''maxnum''' objects each of size '''size''' from the data source to the area pointed at by '''ptr'''.  <<Color2(green,Should SDL_RWread have () like a function even though it's a macro?)>>
 
 == Related Functions ==
-:[[SDL_RWclose]] (Macro) *???
-:[[SDL_RWFromFile]] *???
-:[[SDL_RWseek]](Macro) *???
-:[[SDL_RWwrite]] (Macro) *???
+:[[SDL_RWclose]] (Macro) *
+:[[SDL_RWFromFile]] *
+:[[SDL_RWseek]](Macro) *
+:[[SDL_RWwrite]] (Macro) *
 
 <<Color2(green,Should the current read and write functions (not macros) be listed?)>>
 
