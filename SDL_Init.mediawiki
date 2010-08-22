@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 = SDL_Init =
 Use this function to initialize the SDL library.  This must be called before using any other SDL function.
