@@ -18,7 +18,7 @@ SDL_RWops* SDL_RWFromMem(void* mem,
 |^a pointer to the memory location^
 |-
 |'''size'''
-|^the size of the memory location^ ???
+|^the size of the memory location^
 |}
 
 == Return Value ==
@@ -36,7 +36,7 @@ SDL_SaveBMP_RW(screen, rw, 0);
 *
 
 == Remarks ==
-* {i} NOTE: If the memory is not writable, use [[SDL_RWFromConstMem]]() instead.*
+*<br/>If the memory is not writable, use [[SDL_RWFromConstMem]]() instead.<br/>*
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]] ???
