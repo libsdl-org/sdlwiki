@@ -15,14 +15,14 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|^a pointer to a memory location to use for an SDL_RWops structure^ ???
+|^a pointer to a memory location to use for an SDL_RWops structure^
 |-
 |'''size'''
-|^the size of the memory location^ ???
+|^the size of the memory location^
 |}
 
 == Return Value ==
-*Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. *
+*<br/>Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. <br/>*
 
 == Code Examples ==
 *
@@ -41,7 +41,7 @@ img = SDL_LoadBMP_RW(rw, 1); // Automatically frees the RWops struct for us
 *
 
 == Remarks ==
-*[[SDL_RWFromConstMem]]() sets up a ^SDL_^RWops struct based on a memory area of a certain size. It assumes the memory area is not writable. *
+*<br/>[[SDL_RWFromConstMem]]() sets up a^n^ ^SDL_^RWops struct based on a memory area of a certain size. It assumes the memory area is not writable. <br/>*
 
 == Related Functions ==
 :[[SDL_FreeRW]] *
