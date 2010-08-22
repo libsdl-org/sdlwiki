@@ -107,9 +107,9 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
-This function initializes the subsystems specified by '''flags'''.  The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).  You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
+The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  You must specifically initialize other subsystems if you use them in your application.
 
-These are the flags which may be passed to [[SDL_Init]]() and may be OR'd together to initialize multiple subsystems.
+'''flags''' may be any of the following OR'd together:
 
 {|
 |'''SDL_INIT_TIMER'''
@@ -136,6 +136,8 @@ These are the flags which may be passed to [[SDL_Init]]() and may be OR'd togeth
 |'''SDL_INIT_EVENTTHREAD'''
 |run the event loop in a separate thread (not supported by all OSs)
 |}
+
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).  
 
 Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
 
