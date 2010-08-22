@@ -25,6 +25,7 @@ SDL_RWops* SDL_RWFromFile(const char* file,
 Returns a pointer to the SDL_RWops structure that is created, *or NULL on failure*.
 
 == Code Examples ==
+*<br/>
 ```c++
 SDL_RWops *file;
 SDL_Surface *image;
@@ -33,10 +34,10 @@ file = SDL_RWFromFile("myimage.bmp", "rb");
 image = SDL_LoadBMP_RW(file, 1); // 1 means the file will be automatically closed.
 
 // Do something with image here.
-```
+```<<BR>>*
 
 == Remarks ==
-*The '''mode''' string is treated the same as in a call to the C library's fopen().
+*<br/>The '''mode''' string is treated the same as in a call to the C library's fopen().
 
 Available '''mode''' strings:
 {|
@@ -59,7 +60,7 @@ Available '''mode''' strings:
 |Open a file for reading and appending. All writing operations are performed at the end of the file, protecting the previous content to be overwritten. You can reposition (fseek, rewind) the internal pointer to anywhere in the file for reading, but writing operations will move it back to the end of file. The file is created if it does not exist.
 |}
 
-NOTE: In order to open a file as a binary file, a "b" character has to be included in the '''mode''' string. This additional "b" character can either be appended at the end of the string (thus making the following compound modes: "rb", "wb", "ab", "r+b", "w+b", "a+b") or be inserted between the letter and the "+" sign for the mixed modes ("rb+", "wb+", "ab+"). Additional characters may follow the sequence, although they should have no effect. For example, "t" is sometimes appended to make explicit the file is a text file. *
+NOTE: In order to open a file as a binary file, a "b" character has to be included in the '''mode''' string. This additional "b" character can either be appended at the end of the string (thus making the following compound modes: "rb", "wb", "ab", "r+b", "w+b", "a+b") or be inserted between the letter and the "+" sign for the mixed modes ("rb+", "wb+", "ab+"). Additional characters may follow the sequence, although they should have no effect. For example, "t" is sometimes appended to make explicit the file is a text file. <br/>*
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]] ???
