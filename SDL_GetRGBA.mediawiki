@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_GetRGBA =
 Use this function to get RGBA values from a pixel in the specified format.
