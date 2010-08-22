@@ -26,6 +26,8 @@ You can add your code example here
 This function pauses and unpauses the audio callback processing. It should be called with '''pause_on'''=0 after opening the audio device to start playing sound. This is so you can safely initialize data for your callback function after opening the audio device. Silence will be written to the audio device during the pause.
 
 == Related Functions ==
+:[[SDL_GetAudioStatus]] *
+:[[SDL_OpenAudio]] *
 :[[SDL_PauseAudioDevice]]
 
 ----
