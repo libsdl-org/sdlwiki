@@ -107,7 +107,13 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
-The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
+This function initializes the subsystems specified by '''flags'''.  
+
+The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  
+
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+
+You can call SDL_Init(0) or SDL_Init(SDL_INIT_NOPARACHUTE) to initialize SDL without initializing any subsystems.
 
 These are the flags which may be passed to [[SDL_Init]]() and may be OR'd together to initialize multiple subsystems.
 
@@ -137,12 +143,7 @@ These are the flags which may be passed to [[SDL_Init]]() and may be OR'd togeth
 |run the event loop in a separate thread (not supported by all OSs)
 |}
 
-This function initializes the subsystems specified by '''flags'''.
-Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
-
 Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
-
-*<br/>,,Typical cause of this error,, ^The most common cause for error^ is using a particular display without having ,,according,, ^the corresponding^ subsystem support^ed^, such as missing ^a^ mouse driver when using ^<<Color2(green,using what? SDL? A mouse?)>>^ with ^a^ framebuffer <<Color2(green,Should framebuffer be set apart somehow like <code>framebuffer</code>?)>> device. In this case you can either compile SDL without ^a^ mouse device, or set ^the^ "SDL_NOMOUSE=1" environment variable before running your application. <br/>*
 
 == Related Functions ==
 :[[SDL_InitSubSystem]] 
