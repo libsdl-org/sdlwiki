@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_MapRGBA =
 Use this function to map an RGBA quadruple to a pixel value for a given pixel format.
