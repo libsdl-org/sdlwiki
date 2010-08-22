@@ -32,7 +32,7 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
 |<style="text-align: right">[[attachment:TextInput2.png|{{attachment:TextInput2.png|TextInput2|width="150"}}]] 
 |-
 |3 
-|The user continued typing until the composition is satisfactory. 
+|The user continues typing until the composition is satisfactory. 
 |<style="text-align: right">[[attachment:TextInput3.png|{{attachment:TextInput3.png|TextInput3|width="150"}}]] 
 |-
 |4 
