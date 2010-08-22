@@ -30,6 +30,7 @@ long SDL_RWseek(SDL_RWops* context,
 Returns the final offset in the data source after the seek.
 
 == Code Examples ==
+*<br/>
 ```c++
 #include <stdio.h>
 #include "SDL_rwops.h"
@@ -56,10 +57,10 @@ int main()
   fprintf(stderr,"myfile.bin is %d bytes long\n",length);
   return(0);
 }
-```
+```<<BR>>*
 
 == Remarks ==
-This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.
+*<br/>This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.<br/>*
 
 <span id="whence"></span>'''whence''' may be any of the following values:
 {|
