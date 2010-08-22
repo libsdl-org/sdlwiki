@@ -63,7 +63,7 @@ You can add your code example here
 
 Many of the fields in the [[SDL_AudioCVT]] structure should be considered private and their function will not be discussed here. 
 
-<span id="buf"></span>'''buf''' points to the audio data that will be used in the conversion. It is both the source and the destination, which means the converted audio data overwrites the original data. It also means that the converted data may be larger than the original data (if you were converting from 8-bit to 16-bit, for instance), so you must ensure '''buf''' is large enough. See '''len-mult''' below for more info.
+<span id="buf"></span>'''buf''' points to the audio data that will be used in the conversion. It is both the source and the destination, which means the converted audio data overwrites the original data. It also means that the converted data may be larger than the original data (if you were converting from 8-bit to 16-bit, for instance), so you must ensure '''buf''' is large enough. See '''len_mult''' below for more info.
 
 <span id="len"></span>'''len''' is the length of the original audio data in bytes. 
 
