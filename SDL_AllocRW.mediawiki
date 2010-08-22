@@ -15,7 +15,7 @@ SDL_RWops* SDL_AllocRW(void)
 *Returns a pointer to the allocated memory on success, or NULL on error. *
 
 == Code Examples ==
-*from old wiki*
+*<br/>
 ```c++
 #include <string.h>    /* for memset */
 #include "SDL_error.h" /* for SDL_SetError */
@@ -66,11 +66,13 @@ SDL_RWops *MyCustomRWop()
   c->hidden.unknown.data1=malloc(256);
   return(c);
 }
-
-```
+```<<BR>>*
 
 == Remarks ==
-/!\ *You must free any memory allocated ,,with,, ^using^ [[SDL_AllocRW]]() with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. *
+*<br/>
+/!\ You must free any memory allocated ,,with,, ^using^ [[SDL_AllocRW]]() with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. <br/>*
+
+<<Color2(green,Should malloc() and free() be formatted <code>malloc()</code> and <code>free()</code>?)>>
 
 == Related Functions ==
 :[[SDL_FreeRW]] *
