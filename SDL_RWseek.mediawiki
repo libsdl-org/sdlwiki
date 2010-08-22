@@ -62,6 +62,8 @@ int main()
 == Remarks ==
 *<br/>This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.<br/>*
 
+[[SDL_RWseek]] seeks to '''offset''' relative to '''whence'''. <<Color2(green,Should SDL_RWseek have () like a function even though it's a macro?)>>
+
 <span id="whence"></span>'''whence''' may be any of the following values:
 {|
 |RW_SEEK_SET
