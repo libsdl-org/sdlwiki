@@ -137,25 +137,22 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 
 {|
 |'''SDL_INIT_TIMER'''
-|initialize timer subsystem
+|timer subsystem
 |-
 |'''SDL_INIT_AUDIO'''
-|initialize audio subsystem
+|audio subsystem
 |-
 |'''SDL_INIT_VIDEO'''
-|initialize video subsystem
-|-
-|'''SDL_INIT_CDROM'''
-|initialize CD-ROM subsystem
+|video subsystem
 |-
 |'''SDL_INIT_JOYSTICK'''
-|initialize joystick subsystem
+|joystick subsystem
 |-
 |'''SDL_INIT_HAPTIC'''
-|initialize haptic (force feedback) subsystem
+|haptic (force feedback) subsystem
 |-
 |'''SDL_INIT_EVERYTHING'''
-|initialize all of the above subsystems
+|all of the above subsystems
 |-
 |'''SDL_INIT_NOPARACHUTE'''
 |don't catch fatal signals
