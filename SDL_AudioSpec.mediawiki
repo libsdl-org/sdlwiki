@@ -154,4 +154,4 @@ Once the callback returns, the buffer will no longer be valid.
 :[[SDL_OpenAudioDevice]]
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryAudioStruct]]
