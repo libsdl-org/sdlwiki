@@ -27,4 +27,4 @@ You can add your code example here
 :[[SDL_GetAudioStatus]]
 
 ----
-[[CategoryEnum]], [[CategoryAudioEmum]]
+[[CategoryEnum]], [[CategoryAudioEnum]]
