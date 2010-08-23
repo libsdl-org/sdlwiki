@@ -210,4 +210,4 @@ The [[SDL_Event]] union is the core to all event handling in SDL; it's probably 
 :[[SDL_WaitEventTimeout]]
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryEventsStruct]]
