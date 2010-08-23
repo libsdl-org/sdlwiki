@@ -32,6 +32,10 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
 :[[SDL_CreateRGBSurfaceFrom]]
+:[[SDL_LoadBMP]]
+:[[SDL_LoadBMP_RW]]
+:[[SDL_SaveBMP]]
+:[[SDL_SaveBMP_RW]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
