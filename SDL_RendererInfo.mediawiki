@@ -75,4 +75,4 @@ You can add your code example here
 :[[SDL_RenderCopy]]
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryVideoStruct]]
