@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SaveBMP =
+Use this function to save a surface to a file.
+
+
+== Syntax ==
+```c++
+int SDL_SaveBMP(SDL_Surface* surface,
+                const char*  file)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|^a pointer to the surface to save^
+|-
+|'''file'''
+|^a pointer to the file to fill with the surface data^
+|}
+
+== Return Value ==
+Returns 0 if successful or -1 if there was an error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_LoadBMP]]
+:[[SDL_SaveBMP_RW]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
