@@ -29,9 +29,7 @@ SDL_AudioSpec* SDL_LoadWAV(const char*    filename,
 |}
 
 == Return Value ==
-If this function succeeds, it returns the given [[SDL_AudioSpec]], filled with the audio data format of the wave data, fils '''audio_buf''' with a pointer to a malloc()'d buffer containing the audio data, and fills '''audio_len''' with a pointer to the length of that audio buffer, in bytes.
-
-This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.
+<<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
 
 == Code Examples ==
 ```c++
@@ -56,9 +54,7 @@ SDL_FreeWAV(wav_buffer);
 
 
 == Remarks ==
-Currently raw and MS-ADPCM WAVE files are supported.
-
-You need to free the audio buffer with [[SDL_FreeWAV]]() when you are done with it.
+<<Include(SDL_LoadWAV_RW, , , from="== Remarks ==", to="== Related Functions ==")>>
 
 == Related Functions ==
 : [[SDL_FreeWAV]]
