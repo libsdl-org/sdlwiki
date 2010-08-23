@@ -44,4 +44,4 @@ An SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP event occurs whenever a user presses or 
 :[[SDL_JoystickGetButton]] *
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryEventsStruct]]
