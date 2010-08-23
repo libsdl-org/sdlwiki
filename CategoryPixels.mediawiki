@@ -12,6 +12,12 @@
 
 This category contains functions for handling pixel, palette, and color formats and conversions.
 
+== Enumerations ==
+<<FullSearch(category:CategoryPixelsEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryPixelsStruct)>>
+
 == Functions ==
 
 <<FullSearchCached(category:CategoryPixels)>>
