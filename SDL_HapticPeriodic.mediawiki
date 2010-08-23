@@ -178,4 +178,4 @@ SDL_HAPTIC_SAWTOOTHDOWN
 == Related Functions ==
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryForceFeedbackStruct]]
