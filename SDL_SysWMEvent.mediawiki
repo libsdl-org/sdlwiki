@@ -42,4 +42,4 @@ int SDL_GetWMInfo(SDL_SysWMinfo *info);
 :[[SDL_GetWindowWMInfo]] *???
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryEventsStruct]]
