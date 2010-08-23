@@ -13,6 +13,12 @@
 
 This category contains functions for handling inputs from joysticks.
 
+== Enumerations ==
+<<FullSearch(category:CategoryJoystickEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryJoystickStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryJoystick)>>
