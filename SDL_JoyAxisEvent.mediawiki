@@ -48,4 +48,4 @@ A SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick. 
 :[[SDL_JoystickGetAxis]] *
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryEventsStruct]]
