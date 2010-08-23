@@ -19,6 +19,12 @@ This category contains functions for handling shared objects and additional func
 * Make sure you declare your function pointers with the same calling convention as the actual library function.  Your code will crash mysteriously if you do not do this.
 * Avoid namespace collisions.  If you load a symbol from the library, it is not defined ,,whether or not,, ^as to whether^ it goes into the global symbol namespace for the application ^or not^.  If it does and it conflicts with symbols in your code or other shared libraries, you will not get the results you expect. :)  ''or''  ;)
 
+== Enumerations ==
+<<FullSearch(category:CategorySharedObjectEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategorySharedObjectStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategorySharedObject)>>
