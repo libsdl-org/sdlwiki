@@ -93,4 +93,4 @@ The ramp effect starts at '''start''' strength and ends at '''end''' strength. I
 == Related Functions ==
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryForceFeedbackStruct]]
