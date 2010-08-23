@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_LoadWAV_RW =
-Use this function to load a WAVE from the data source, automatically freeing that source if freesrc is non-zero.
+Use this function to load a WAVE from the data source, automatically freeing that source if '''freesrc''' is non-zero.
 
 
 == Syntax ==
@@ -33,7 +33,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 |}
 
 == Return Value ==
-If this function succeeds, it returns the given [[SDL_AudioSpec]], filled with the audio data format of the wave data, and sets *'''audio_buf''' to a malloc()'d buffer containing the audio data, and sets *'''audio_len''' to the length of that audio buffer, in bytes.  
+If this function succeeds, it returns the given [[SDL_AudioSpec]], filled with the audio data format of the wave data, fills '''audio_buf''' with a pointer to a malloc()'d buffer containing the audio data, and fills '''audio_len''' with a pointer to the length of that audio buffer, in bytes.
 
 This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.  
 
