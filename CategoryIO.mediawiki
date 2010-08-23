@@ -12,6 +12,12 @@
 == Introduction ==
 ^This category contains functions for handling^ ,,This file provides a,, ^the^ general interface for SDL to read and write data sources.  It can easily be extended to files, memory, etc.
 
+== Enumerations ==
+<<FullSearch(category:CategoryIOEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryIOStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryIO)>>
