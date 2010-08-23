@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_LoadBMP =
+Use this function to load a surface from a file.
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_LoadBMP(const char* file)
+```
+
+== Function Parameters ==
+{|
+|'''file'''
+|^a pointer to the file containing the surface information^
+|}
+
+== Return Value ==
+<<Include(SDL_LoadBMP_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<<Include(SDL_LoadBMP_RW, , , from="== Remarks ==", to="== Related Functions ==")>>
+
+== Related Functions ==
+:[[SDL_FreeSurface]]
+:[[SDL_LoadBMP_RW]]
+:[[SDL_SaveBMP]] *
+
+----
+[[CategoryAPI]], [[CategorySurface]]
