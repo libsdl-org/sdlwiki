@@ -61,4 +61,4 @@ SDL_Rect<code></code>Equals
 :[[SDL_UpdateTexture]]?
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryRectStruct]]
