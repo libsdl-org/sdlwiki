@@ -127,7 +127,8 @@
 |}
 
 
-== Shared Object Support ===
+== Shared Object Support ==
+
 {|
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
