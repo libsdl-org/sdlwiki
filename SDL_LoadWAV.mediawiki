@@ -29,7 +29,7 @@ SDL_AudioSpec* SDL_LoadWAV(const char*    filename,
 |}
 
 == Return Value ==
-<<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
+<<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples")>>
 
 == Code Examples ==
 ```c++
