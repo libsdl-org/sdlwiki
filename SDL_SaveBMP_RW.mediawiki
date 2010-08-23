@@ -25,7 +25,7 @@ int SDL_SaveBMP_RW(SDL_Surface* surface,
 |non-zero to close the source after being written
 |}
 
-<<Color2(green,Why is it free''dst'' and it's the ''source'' that is closed?)>> 
+<<Color2(green,Why is it free''dst'' and it's the ''source'' that is closed?  Why not free''src''?)>> 
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
@@ -38,12 +38,9 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-<<Color2(green,Should the following be included on this page?)>>
-SDL_SaveBMP(surface, file) \
-SDL_SaveBMP_RW(surface, SDL_RWFromFile(file, "wb"), 1) (convenience macro)
-
 == Related Functions ==
-:[[SDL_LoadBMP_RW]]???
+:[[SDL_LoadBMP_RW]] ???
+:[[SDL_SaveBMP]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
