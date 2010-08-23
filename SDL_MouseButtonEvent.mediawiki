@@ -61,4 +61,4 @@ Mouse wheel events are reported as buttons 4 (up) and 5 (down). Two events are g
 == Related Functions ==
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryEventsStruct]]
