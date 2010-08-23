@@ -105,4 +105,4 @@ You can add your code example here
 == Related Functions ==
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryForceFeedbackStruct]]
