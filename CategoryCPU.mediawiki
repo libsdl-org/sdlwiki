@@ -13,6 +13,12 @@
 
 This category contains functions for ^gathering information about your processor's features.^
 
+== Enumerations ==
+<<FullSearch(category:CategoryCPUEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryCPUStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryCPU)>>
