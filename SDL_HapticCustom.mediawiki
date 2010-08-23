@@ -99,4 +99,4 @@ If '''channels''' is ''1'', the effect is rotated using the defined direction. O
 == Related Functions ==
 
 ----
-[[CategoryStruct]]
+[[CategoryStruct]], [[CategoryForceFeedbackStruct]]
