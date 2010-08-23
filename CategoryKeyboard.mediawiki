@@ -13,6 +13,12 @@
 
 This category contains functions for handling keyboard inputs.
 
+== Enumerations ==
+<<FullSearch(category:CategoryKeyboardEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryKeyboardStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryKeyboard)>>
