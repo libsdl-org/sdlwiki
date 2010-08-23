@@ -21,6 +21,12 @@ Internally, SDL stores all the events waiting to be handled in an event queue. U
 
 The key to event handling in SDL is the [[SDL_Event]] union. The event queue itself is composed of a series of [[SDL_Event]] unions, one for each waiting event. [[SDL_Event]] unions are read from the queue with the [[SDL_PollEvent]]() function and it is then up to the application to process the information stored with them. 
 
+== Enumerations ==
+<<FullSearch(category:CategoryEventsEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryEventsStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryEvents)>>
