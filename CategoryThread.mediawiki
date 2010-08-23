@@ -24,6 +24,12 @@ Always use the _beginthread() and _endthread() of the calling runtime library!
 
 <<Color2(green,There is a lot of info in the header that looks like it might be code examples or coding info but is formatted more like complex defines.  Does any of that belong here?)>>
  
+== Enumerations ==
+<<FullSearch(category:CategoryThreadEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryThreadStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryThread)>>
