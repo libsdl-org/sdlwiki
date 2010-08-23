@@ -73,6 +73,12 @@ int test_haptic( SDL_Joystick * joystick ) {
 }
 ```
 
+== Enumerations ==
+<<FullSearch(category:CategoryForceFeedbackEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryForceFeedbackStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryForceFeedback)>>
