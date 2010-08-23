@@ -21,10 +21,8 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
 |non-zero to close the source after being read
 |}
 
-<<Color2(green,see SDL_LoadWAV_RW for same parameters)>>
-
 == Return Value ==
-Returns the new surface, or NULL if there was an error; call [[SDL_GetError]]() for more information.
+Returns the new surface or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -34,15 +32,14 @@ You can add your code example here
 == Remarks ==
 The new surface should be freed with [[SDL_FreeSurface]]().
 
-<<Color2(green,Does SDL_LoadBMP(file) belong on this page?)>>
-
-*<br/><<Color2(green,This is from SDL_LoadBMP in the old wiki.  Does it still apply?)>>  
+*<br/><<Color2(green,This is from SDL_LoadBMP in the old wiki.  Does it apply here?)>>  
 
 Note: When loading a 24-bit Windows BMP file, pixel data points are loaded as blue, green, red, and NOT red, green, blue (as one might expect).<br/>*
 
 == Related Functions ==
 :[[SDL_FreeSurface]]
-:[[SDL_SaveBMP_RW]]???
+:[[SDL_LoadBMP]]
+:[[SDL_SaveBMP_RW]] ???
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
