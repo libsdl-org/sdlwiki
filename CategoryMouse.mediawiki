@@ -24,6 +24,12 @@ Those two APIs are incompatible, and you usually should not use both at the same
 The other API is in [http://hg.libsdl.org/SDL/file/100f7ab48946/include/SDL_input.h SDL_input.h]
 
 
+== Enumerations ==
+<<FullSearch(category:CategoryMouseEnum)>>
+
+== Structures ==
+<<FullSearch(category:CategoryMouseStruct)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryMouse)>>
