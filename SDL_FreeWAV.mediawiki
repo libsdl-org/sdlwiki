@@ -17,9 +17,7 @@ void SDL_FreeWAV(Uint8* audio_buf)
 |}
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_LoadWAV, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
 *<br/>After a WAVE file has been opened with [[SDL_LoadWAV]]() or [[SDL_LoadWAV_RW]]() its data can eventually be freed with [[SDL_FreeWAV]]().<br/>*
