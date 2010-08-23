@@ -58,6 +58,7 @@ if( SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL ){
 SDL_FreeWAV(wav_buffer);
 ```
 
+
 == Remarks ==
 Currently raw and MS-ADPCM WAVE files are supported.
 
