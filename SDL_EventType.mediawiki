@@ -150,4 +150,4 @@ You can add your code example here
 == Related Functions ==
 
 ----
-CategoryEnum
+CategoryEnum, CategoryEventsEnum
