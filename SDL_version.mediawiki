@@ -46,4 +46,4 @@ The macro [[SDL_VERSION]] can be used to populate this structure with informatio
 : [[SDL_GetVersion]]
 
 ----
-[[CategoryStruct]], [[CategoryVersionStruct]]
+[[CategoryStruct]], [[#CategoryVersion|CategoryVersionStruct]]
