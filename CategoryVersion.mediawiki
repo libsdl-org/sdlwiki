@@ -32,7 +32,7 @@ These functions are used to collect or display information about the version of 
 
 == Functions ==
 
-<<FullSearch(category:CategoryVersion)>>
+<<FullSearch(category:CategoryVersion -CategoryStruct -CategoryEnum)>>
 
 ----
 CategoryCategory
