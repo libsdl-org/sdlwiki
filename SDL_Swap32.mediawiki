@@ -18,7 +18,7 @@ Uint32 SDL_Swap32(Uint32 x)
 |}
 
 == Return Value ==
-The swapped data.  ???
+Returns the swapped data.  ???
 
 == Code Examples ==
 ```c++
