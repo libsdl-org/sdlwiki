@@ -18,7 +18,7 @@ float SDL_SwapFloatBE(float x)
 |}
 
 == Return Value ==
-The data in a native format the compiler will accept. ???
+Returns the data in a native format the compiler will accept. ???
 
 == Code Examples ==
 ```c++
