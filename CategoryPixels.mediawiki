@@ -13,10 +13,10 @@
 This category contains functions for handling pixel, palette, and color formats and conversions.
 
 == Enumerations ==
-<<FullSearch(category:CategoryPixelsEnum)>>
+<<FullSearch(category:CategoryEnum "Pixels Group")>>
 
 == Structures ==
-<<FullSearch(category:CategoryPixelsStruct)>>
+<<FullSearch(category:CategoryStruct "Pixels Group")>>
 
 == Functions ==
 
