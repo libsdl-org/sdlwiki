@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SwapFloat =
+Use this function to swap byte order.
+
+
+== Syntax ==
+```c++
+float SDL_SwapFloat(float x)
+
+```
+
+== Function Parameters ==
+{|
+|'''x'''
+|the data to be swapped
+|}
+
+== Return Value ==
+Returns the swapped data.  ???
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SwapFloatBE]]
+:[[SDL_SwapFloatLE]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]
