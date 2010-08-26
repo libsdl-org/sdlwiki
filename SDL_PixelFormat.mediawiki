@@ -193,4 +193,4 @@ If you wish to do pixel level modifications on a surface, then understanding how
 :[[SDL_MapRGBA]]
 
 ----
-[[CategoryStruct]], [[CategoryPixelsStruct]]
+[[CategoryStruct]], [[CategoryPixels|Pixels Group]]
