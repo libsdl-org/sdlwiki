@@ -241,4 +241,4 @@ You can add your code example here
 :[[SDL_RenderWritePixels]]
 
 ----
-[[CategoryEnum]], [[CategoryPixelsEnum]]
+[[CategoryEnum]], [[CategoryPixels|Pixels Group]]
