@@ -11,7 +11,7 @@
 
 == Introduction ==
 
-This category contains functions for ^gathering information about your processor's features.^
+This category contains functions for ,,CPU feature detection for SDL,, ^gathering information about the processor's features.^
 
 == Enumerations ==
 <<FullSearch(category:CategoryCPUEnum)>>
