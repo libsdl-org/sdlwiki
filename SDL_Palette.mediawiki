@@ -46,4 +46,4 @@ You can add your code example here
 :[[SDL_SetPaletteColors]]
 
 ----
-[[CategoryStruct]], [[CategoryPixelsStruct]]
+[[CategoryStruct]], [[CategoryPixels|Pixels Group]]
