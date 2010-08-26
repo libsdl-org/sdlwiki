@@ -13,6 +13,10 @@
 
 This category contains functions for handling atomic operations in both 32-bit and 64-bit platforms.
 
+These operations may, or may not, actually be implemented using processor specific atomic operations. When possible they are implemented as true processor specific atomic operations. When that is not possible they are implemented using locks that *do* use the available atomic operations.  <<Color2(green,Should *do* be bold or italics instead?)>>
+
+At the very minimum spin locks must be implemented. Without spin locks it is not possible (AFAICT) to emulate the rest of the atomic operations.
+
 == Enumerations ==
 <<FullSearch(category:CategoryAtomicEnum)>>
 
