@@ -18,7 +18,7 @@ Uint32 SDL_SwapBE32(Uint32 x)
 |}
 
 == Return Value ==
-The data in native Uint32 format. ???
+Returns the data in native Uint32 format. ???
 
 == Code Examples ==
 ```c++
