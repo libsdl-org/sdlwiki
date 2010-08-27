@@ -15,26 +15,56 @@ void* SDL_LoadFunction(void*       handle,
 == Function Parameters ==
 {|
 |'''handle'''
-|^a pointer to the object handle^
+|*a valid shared object handle returned by [[SDL_LoadObject]]()*
 |-
 |'''name'''
-|^a pointer to the named function in the shared object^
+|^a pointer to the named function in the shared object^ ''-or-'' *the null terminated string of the function's name to look up*
 |}
 
 == Return Value ==
-<<Color2(green,This has a "void" RV but also a pointer. Should this info be reported in Remarks instead?)>>
+<<Color2(green,This has a "void" RV but also a pointer. Should this info be reported in Remarks instead because it's not really a RV?)>>
 
-Returns a pointer to the object handle (or NULL if there was an error).  ???
+*<br/>Returns a pointer to the function or NULL if there was an error; call [[SDL_GetError]]() for more information.<br/>*
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include "SDL_loadso.h"
+
+// Variable declaration
+void* myHandle = NULL;
+char* myFunctionName = "myFancyFunction";
+void (*myFancyFunction)(int anInt);
+
+// Dynamically load mylib.so
+myHandle = SDL_LoadObject("mylib.so");
+
+// Load the exported function from mylib.so
+// The exported function has the following prototype
+// void myFancyFunction(int anInt);
+myFancyFunction = (void (*)(int))SDL_LoadFunction( myHandle, myFunctionName );
+
+// Call myFancyFunction with a random integer
+if (myFancyFunction != NULL) {
+    myFancyFunction( 15 );
+}
+else {
+   // Error handling here
+}
 ```
 
 == Remarks ==
 This address is no longer valid after calling [[SDL_UnloadObject]]().
 
+*<br/>Given a valid shared object handle returned by [[SDL_LoadObject]](), this function looks up the address of the named function in the shared object and returns it. 
+
+These functions only work on C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
+
+Make sure you declare your function pointers with the same calling convention as the actual library function. Your code will crash mysteriously if you do not do this.
+
+Avoid namespace collisions. If you load a symbol from the library, it is not defined whether or not it goes into the global symbol namespace for the application. If it does and it conflicts with symbols in your code or other shared libraries, you will not get the results you expect.<br/>*
+
 == Related Functions ==
+:[[SDL_LoadObject]]
 :[[SDL_UnloadObject]]
 
 ----
