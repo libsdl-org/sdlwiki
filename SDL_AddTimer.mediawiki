@@ -31,6 +31,7 @@ SDL_TimerID SDL_AddTimer(Uint32               interval,
 Returns a timer ID or NULL when an error occurs^; call [[SDL_GetError]]() for more information.^
 
 == Code Examples ==
+*
 ```c++
 /* Start the timer; the callback below will be executed after the delay */
 
@@ -89,6 +90,7 @@ while (SDL_PollEvent (&event))
     }
 }
 ```
+*
 
 == Remarks ==
 *<br/>The granularity of the timer ^used by '''interval'''^ is platform-dependent, but you should count on it being at least 10 ms as this is the most common number. This means that if you request a 16 ms timer, your callback will run approximately 20 ms later on an unloaded system. If you wanted to set a flag signaling a frame update at 30 frames per second (every 33 ms), you might set a timer for 30 ms (see [[#Code Example|Code Example]]). 
