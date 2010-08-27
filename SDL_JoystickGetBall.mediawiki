@@ -34,13 +34,22 @@ Returns 0 on success, or -1 if you passed it invalid parameters; call [[SDL_GetE
 
 == Code Examples ==
 ```c++
-You can add your code example here
+int delta_x, delta_y;
+SDL_Joystick *joy;
+.
+.
+.
+SDL_JoystickUpdate();
+if(SDL_JoystickGetBall(joy, 0, &delta_x, &delta_y)==-1)
+  printf("TrackBall Read Error!\n");
+printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''. <br/>*
 
 == Related Functions ==
+:[[SDL_JoystickNumBalls]] *
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
