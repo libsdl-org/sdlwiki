@@ -12,11 +12,14 @@ void SDL_ClearError(void)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+if (strlen(SDL_GetError()) != 0) {
+  printf("SDL_Error : %s\n", SDL_GetError());
+  SDL_ClearError();
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>[[SDL_ClearError]]() deletes all information about the last internal SDL error. ^This is particularly^ useful if the error has been handled by the program. <br/>*
 
 == Related Functions ==
 :[[SDL_GetError]]
