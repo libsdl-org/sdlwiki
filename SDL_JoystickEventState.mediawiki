@@ -21,13 +21,23 @@ int SDL_JoystickEventState(int state)
 == Return Value ==
 Returns ^1 if enabled, 0 if disabled^, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
+*<br/>If '''state''' is SDL_QUERY then the current state is returned, otherwise the new processing state is returned. <br/>*
+
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
 
 == Remarks ==
+*<br/>This function is used to enable or disable joystick event processing. <br/>*
+
 If joystick events are disabled, you must call [[SDL_JoystickUpdate]]() yourself ,,and,, ^to manually?^ check the state of the joystick when you want joystick information.
+
+*<br/>Note: Joystick event handling is preferred.
+
+Note: Even if joystick event processing is enabled, individual joysticks must be opened before they generate events.
+
+Warning: Calling this function may delete all events currently in SDL's event queue. <br/>*
 
 == Related Functions ==
 
