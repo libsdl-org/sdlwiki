@@ -18,20 +18,28 @@ void* SDL_LoadObject(const char* sofile)
 |}
 
 == Return Value ==
-<<Color2(green,This has a "void" RV but this text in the description. Should this info be reported in Remarks instead?)>>
+<<Color2(green,This has a "void" RV but this text in the description. Should this info be reported in Remarks instead because it's not really a RV?)>>
 
-Returns a pointer to the object handle (or NULL if there was an error).
+Returns a pointer to the object handle or NULL if there was an error.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include "SDL_loadso.h"
+
+// Dynamically load mylib.so
+SDL_LoadObject("mylib.so");
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>These functions only work on C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
+
+Make sure you declare your function pointers with the same calling convention as the actual library function. Your code will crash mysteriously if you do not do this.
+
+Avoid namespace collisions. If you load a symbol from the library, it is not defined whether or not it goes into the global symbol namespace for the application. If it does and it conflicts with symbols in your code or other shared libraries, you will not get the results you expect.<br/>*
 
 == Related Functions ==
-:[[SDL_UnloadObject]] ???
+:[[SDL_LoadFunction]] *
+:[[SDL_UnloadObject]] *
 
 ----
 [[CategoryAPI]], [[CategorySharedObject]]
