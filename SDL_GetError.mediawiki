@@ -13,16 +13,23 @@ char* SDL_GetError(void)
 == Return Value ==
 Returns a message with information about the specific error that occurred, or an empty string if there hasn't been an error since the last call to [[SDL_ClearError]]().
 
+*<br/>This string is statically allocated and must not be freed by the user. <br/>*
+
 == Code Examples ==
 ```c++
-You can add your code example here
+if (SDL_Init( SDL_INIT_EVERYTHING ) == -1) {
+    // Unrecoverable error, exit here.
+    printf("SDL_Init failed: %s\n", SDL_GetError());
+}
 ```
+*<br/>Note: Although this example uses [[SDL_Init]](), [[SDL_GetError]]() provides an error message for any failed SDL operation. <br/>*
 
 == Remarks ==
 It is possible for multiple errors to occur before calling [[SDL_GetError]]().  Only the last error is returned.
 
 == Related Functions ==
 :[[SDL_ClearError]]
+:[[SDL_SetError]] *
 
 ----
 [[CategoryAPI]], [[CategoryError]]
