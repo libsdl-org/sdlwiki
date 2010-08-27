@@ -13,7 +13,7 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
 
 == Terms ==
 * <span id="IME"></span>'''IME''' - Input Method Editor. A software input method. This is typically a program that intercepts key presses and interprets them before (eventually) passing them onto the application.
-* <span id="Composition"></span>'''Composition''' - The text a user is currently inputting. This text is not yet finalized (committed) and the IME may modify it.
+* <span id="Composition"></span>'''Composition''' - The text a user is currently inputting. This text is not yet finalized (committed) and the IME may modify it. Conventionally, this text is drawn with a solid or dotted line under it.
 * <span id="Candidate"></span>'''Candidate''' - An optional alternative text for the composition, gathered by the IME in the Candidate List.
 * <span id="CandidateList"></span>'''Candidate List''' - A list of [[#Candidate|Candidate]]s, used when there is any ambiguity.
 
@@ -52,6 +52,42 @@ There are multiple input method styles which you can read about [http://www.mozi
 == SDL ==
 So how does SDL handle text input?
 
+First, an example:
+
+=== Example ===
+```#!cplusplus
+int main()
+{
+    InitVideo();
+    /* ... */
+
+    SDL_StartTextInput();
+    while (!done)
+    {
+        if (SDL_PollEvent(&event))
+        {
+            switch (event.type)
+            {
+                case SDL_TEXTINPUT:
+                    /* Add new text onto the end of our text */
+                    strcat(text, event.text.text);
+                    break;
+                case SDL_TEXTEDITING:
+                    /*
+                    Update the composition text.
+                    Update the cursor position.
+                    Update the selection length (if any).
+                    */
+                    composition = event.edit.text;
+                    cursor = event.edit.start;
+                    selection_len = event.edit.length;
+                    break;
+            }
+        }
+        Redraw();
+    }
+}
+```
 === Functions ===
 * [[SDL_StartTextInput]]
 * [[SDL_StopTextInput]]
@@ -62,3 +98,7 @@ So how does SDL handle text input?
 * [[SDL_TextInputEvent]]
 
 One important thing to notice is that the application can enable and disable text input arbitrarily with [[SDL_StartTextInput]] and [[SDL_StopTextInput]]. [[SDL_SetTextInputRect]] controls where the [[#CandidateList|Candidate List]] will open, if supported.
+
+The application will receive an [[SDL_TextEditingEvent]] when a composition is changed (or started). This event contains the composition text as well as the cursor position within the composition. It also contains a length member that determines the length of the text selection, if any.
+
+The application will receive an [[SDL_TextInputEvent]] when a composition is committed and also for normal (non-IME) text input. Receiving this event implies that a composition has been committed or a composition never began (direct text input).
