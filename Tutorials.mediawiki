@@ -3,7 +3,7 @@ There are a number of SDL tutorials available from different sources.
 
 
 == SDL 1.3 ==
-[list 1.3 tutorials here]
+[[Tutorials/TextInput|Text Input]]
 
 == SDL 1.2 ==
 * [http://www.sdltutorials.com/ SDLTutorials.com]
