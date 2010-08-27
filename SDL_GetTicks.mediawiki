@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_SDL_GetTicks =
+= SDL_GetTicks =
 Use this function to get the number of milliseconds since the SDL library initialization.
 
 
@@ -12,7 +12,11 @@ Uint32 SDL_GetTicks(void)
 ```
 
 == Return Value ==
-A 32-bit value representing the number of milliseconds since the SDL library initialized. ???
+A 32-bit value representing the number of milliseconds since the SDL library initialized. 
+
+''-or-''
+
+*<br/>An unsigned 32 bit integer number.  The returned value represents the number of milliseconds since SDL library initialization <br/>*
 
 == Code Examples ==
 ```c++
@@ -22,7 +26,11 @@ You can add your code example here
 == Remarks ==
 Note that this value wraps if the program runs for more than ~49 days.
 
+*<br/>
+{i} This function can be used to build a double click handling routine. In fact, there is currently no such mouse event in the SDL event subsystem. One solution consists of calculating the interval between two mouse clicks by saving the values returned by [[SDL_GetTicks]](). Then if the difference between two values returned by [[SDL_GetTicks]]() is inside a predefined threshold, the application can fire a software double click event. <br/>*
+
 == Related Functions ==
+:[[SDL_Delay]] * <<Color2(green,This isn't reciprocal yet.)>>
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
