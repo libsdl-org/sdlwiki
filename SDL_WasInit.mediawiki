@@ -17,7 +17,7 @@ Uint32 SDL_WasInit(Uint32 flags)
 |}
 
 == Return Value ==
-If flags is 0 it returns a mask of all initialized subsystems, otherwise it returns the initialization status of the specified subsystems.
+If '''flags''' is 0 it returns a mask of all initialized subsystems, otherwise it returns the initialization status of the specified subsystems.
 
 == Code Examples ==
 ```c++
@@ -26,7 +26,7 @@ You can add your code example here
 
 == Remarks ==
 <span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple, specific subsystems simultaneously. 
-<<Include(SDL_Init, , , from="multiple subsystems.", to="This function loads")>>
+<<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
 
 == Related Functions ==
 :[[SDL_Init]]
