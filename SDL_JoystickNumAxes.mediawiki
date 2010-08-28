@@ -18,7 +18,9 @@ int SDL_JoystickNumAxes(SDL_Joystick* joystick)
 |}
 
 == Return Value ==
-Returns the ^number of axes^ on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.  <<Color2(green,Is this the number of axes like x y z or the number of pads or sticks that control movement in the 3 axes like a game pad might have two joysticks and a thumb pad?)>>
+Returns the ^number of axis controls^/^number of axes^ on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+<<Color2(green,Is this the number of axes like x y z or the number of pads or sticks that control movement in the 3 axes like a game pad might have two joysticks and a thumb pad?)>>
 
 == Code Examples ==
 ```c++
@@ -29,6 +31,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_JoystickGetAxis]] *
+:[[SDL_JoystickOpen]] *
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
