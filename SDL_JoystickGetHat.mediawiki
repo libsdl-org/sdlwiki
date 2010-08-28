@@ -42,7 +42,22 @@ The return value is one of the following positions:
 |-
 |SDL_HAT_LEFTDOWN
 |}
-<<Color2(green,Should the defines/descriptions for each be included here? Should it be a list instead of a 'table'?)>>
+<<Color2(green,Should the defines/descriptions for each be included here since the RV is actually a Uint8 or will the user never see those? Should it be a list instead of a table?)>>
+
+<<Color2(green,Is this alternative table structure better?)>>
+{|
+|SDL_HAT_LEFTUP
+|SDL_HAT_UP
+|SDL_HAT_RIGHTUP
+|-
+|SDL_HAT_LEFT
+|SDL_HAT_CENTERED
+|SDL_HAT_RIGHT
+|-
+|SDL_HAT_LEFTDOWN
+|SDL_HAT_DOWN
+|SDL_HAT_RIGHTDOWN
+|}
 
 == Code Examples ==
 ```c++
@@ -53,6 +68,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_JoystickNumHats]] *
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
