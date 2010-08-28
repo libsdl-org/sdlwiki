@@ -22,14 +22,42 @@ A joystick identifier, or NULL if an error occurred.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Joystick *joy;
+
+// Initialize the joystick subsystem
+SDL_InitSubSystem(SDL_INIT_JOYSTICK);
+
+// Check for joystick
+if(SDL_NumJoysticks()>0){
+  // Open joystick
+  joy=SDL_JoystickOpen(0);
+  
+  if(joy)
+  {
+    printf("Opened Joystick 0\n");
+    printf("Name: %s\n", SDL_JoystickName(0));
+    printf("Number of Axes: %d\n", SDL_JoystickNumAxes(joy));
+    printf("Number of Buttons: %d\n", SDL_JoystickNumButtons(joy));
+    printf("Number of Balls: %d\n", SDL_JoystickNumBalls(joy));
+  }
+  else
+    printf("Couldn't open Joystick 0\n");
+  
+  // Close if opened
+  if(SDL_JoystickOpened(0))
+    SDL_JoystickClose(joy);
+}
 ```
 
 == Remarks ==
-The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.  <<Color2(green,Should index be changed to '''device_index''' or leave it as is per the header? Does this function effectively set the index number of each joystick device?)>>
+The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.  <<Color2(green,Should index be changed to '''device_index''' or leave it as is per the header because it is not being used as the param name here? Does this function effectively set the index number of each joystick device?)>>
+
+*<br/>Remember to initialize the joystick subsystem<br/>* <<Color2(green,The joystick subsystem must be initialized before a joystick can be opened for use.)>>
 
 == Related Functions ==
 :[[SDL_JoystickClose]]
+
+<<Color2(green,There are a number of functions that list this one as a RF based on the old wiki. Do we want them all to be reciprocated here?)>>
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
