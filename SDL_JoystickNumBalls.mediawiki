@@ -29,6 +29,8 @@ You can add your code example here
 Joystick trackballs have only relative motion events associated with them and their state cannot be polled.
 
 == Related Functions ==
+:[[SDL_JoystickGetBall]] *
+:[[SDL_JoystickOpen]] *
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
