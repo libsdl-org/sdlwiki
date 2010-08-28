@@ -22,7 +22,7 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
 |}
 
 == Return Value ==
-The value indicating the state of the specified button ???
+^Returns 1 if the specified button is pressed, 0 otherwise.^*
 
 == Code Examples ==
 ```c++
@@ -33,6 +33,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_JoystickNumButtons]] *
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
