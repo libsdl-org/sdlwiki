@@ -2,9 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 = Querying SDL Version =
 
@@ -13,7 +10,7 @@
 
 == Introduction ==
 
-These functions are used to collect or display information about the version of SDL that is currently being used by the program ^or that it was complied against^.
+These functions are used to collect or display information about the version of SDL that is currently being used by the program or that it was compiled against.
 
 : The version number consists of three segments (X.Y.Z)
 * X = '''Major Version''', which increments with massive changes, additions, and enhancements
