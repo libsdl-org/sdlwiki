@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetWindowFlags =
 Use this function to get the window flags.
@@ -14,11 +13,11 @@ Uint32 SDL_GetWindowFlags(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to query
 |}
 
 == Return Value ==
-The window flags.  ^One or more [[SDL_WindowFlags]].^
+Returns the [[SDL_WindowFlags]]; see [[#Remarks|Remarks]] for details.
 
 == Code Examples ==
 ```c++
@@ -26,10 +25,16 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-See [[SDL_WindowFlags]] for details.  ^(Should this be an Include?)^
+The flags may be any of the following OR'd together:
+<<Include(SDL_WindowFlags, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+:[[SDL_HideWindow]]
+:[[SDL_MaximizeWindow]]
+:[[SDL_MinimizeWindow]]
+:[[SDL_SetWindowFullscreen]]
+:[[SDL_SetWindowGrab]]
+:[[SDL_ShowWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
