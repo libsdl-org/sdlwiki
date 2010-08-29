@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_ExtensionSupported =
 Use this function to return true if an OpenGL extension is supported for the current context.
@@ -14,7 +13,7 @@ SDL_bool SDL_GL_ExtensionSupported(const char* extension)
 == Function Parameters ==
 {|
 |'''extension'''
-|the extension to check
+|the name of the extension to check
 |}
 
 == Return Value ==
