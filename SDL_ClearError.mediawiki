@@ -12,8 +12,9 @@ void SDL_ClearError(void)
 
 == Code Examples ==
 ```c++
-if (strlen(SDL_GetError()) != 0) {
-  printf("SDL_Error : %s\n", SDL_GetError());
+const char *error = SDL_GetError();
+if (*error) {
+  printf("SDL_Error : %s\n", error);
   SDL_ClearError();
 }
 ```
