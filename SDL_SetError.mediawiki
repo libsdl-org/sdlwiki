@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetError =
 Use this function to set the SDL error string.
@@ -25,25 +24,13 @@ void SDL_SetError(const char* fmt,
 ```c++
 SDL_SetError("Something unexpected happened!");
 ```
-*<br/><<Color2(green,Should this old wiki example be included here?)>>
-```c++
-#include "SDL_error.h"
-
-int main()      {
-        char buffer[BUFSIZ+1];
-        SDL_memset(buffer, '1', BUFSIZ);
-        buffer[BUFSIZ] = 0;
-        SDL_SetError("This is the error: %s (%f)", buffer, 1.0);
-        printf("Error 1: %s\n", SDL_GetError());
-}
-```<<BR>>*
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_ClearError]] *
-:[[SDL_GetError]] *
+:[[SDL_ClearError]]
+:[[SDL_GetError]]
 
 ----
 [[CategoryAPI]], [[CategoryError]]
