@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_GetDisplayBounds =
 Use this function to get the desktop area represented by a display, with the primary display located at 0,0.
@@ -17,14 +14,14 @@ int SDL_GetDisplayBounds(int       index,
 == Function Parameters ==
 {|
 |'''index'''
-|the index of the display
+|the index of the display to query
 |-
 |'''rect'''
-|a pointer to the [[SDL_Rect]] to query
+|a pointer to the [[SDL_Rect]] to fill with the display bounds
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if the index is out of range; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
