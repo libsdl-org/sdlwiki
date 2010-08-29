@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_DeleteContext =
 Use this function to delete an OpenGL context.
@@ -14,7 +13,7 @@ void SDL_GL_DeleteContext(SDL_GLContext context)
 == Function Parameters ==
 {|
 |'''context'''
-|the SDL_GLContext to be deleted
+|the context to be deleted
 |}
 
 == Code Examples ==
