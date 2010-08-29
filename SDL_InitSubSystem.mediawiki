@@ -19,8 +19,6 @@ int SDL_InitSubSystem(Uint32 flags)
 == Return Value ==
 Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-*<br/><<Color2(green,Old wiki says error code is -1. Is it still?)>><br/>*
-
 == Code Examples ==
 ```c++
 /* Separating Joystick and Video initialization. */
@@ -44,10 +42,10 @@ SDL_Quit();
 ```
 
 == Remarks ==
+After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().
+
 <span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously. 
 <<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
-
-*<br/>After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().<br/>*
 
 [[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
 
