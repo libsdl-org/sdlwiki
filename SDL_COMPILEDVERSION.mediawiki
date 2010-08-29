@@ -19,12 +19,9 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Macros ==
-:[[SDL_VERSION]]
 :[[SDL_VERSIONNUM]]
-:[[SDL_VERSION_ATLEAST]]
 
 == Related Functions ==
-:[[SDL_GetVersion]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
