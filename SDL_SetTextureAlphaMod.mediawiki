@@ -29,12 +29,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-When a texture is copied, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
+When a texture is rendered, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
  <code>srcA = srcA * alpha</code>
 
-Alpha modulation is not always supported by the driver; it will return -1 if alpha modulation is unsupported.
+Alpha modulation is not always supported by the driver; it will return -1 if alpha modulation is not supported.
 
-You can call [[SDL_GetRendererInfo]] to get information about the current renderer.  The current renderer has a mask of supported channel modulations which will have SDL_TEXTUREMODULATE_ALPHA set if alpha modulation is supported.
+You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer.  This structure will have SDL_TEXTUREMODULATE_ALPHA set in 'mod_modes' if alpha modulation is supported.
 
 == Related Functions ==
 :[[SDL_GetTextureAlphaMod]]
