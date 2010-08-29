@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_CreateContext =
 Use this function to create an OpenGL context for use with an OpenGL window, and make it current.
@@ -14,11 +13,11 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to query
 |}
 
 == Return Value ==
-The SDL_GLContext associated with the OpenGL Window.
+The OpenGL context associated with the Window.
 
 == Code Examples ==
 ```c++
@@ -30,6 +29,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GL_DeleteContext]]
+:[[SDL_GL_MakeCurrent]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
