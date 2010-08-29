@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetWindowID =
-Use this function to get the numeric ID of the window, for logging purposes.
+Use this function to get the numeric ID of the window.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ Uint32 SDL_GetWindowID(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to query
 |}
 
 == Return Value ==
-The Uint32 ID of the window.
+The ID of the window.
 
 == Code Examples ==
 ```c++
