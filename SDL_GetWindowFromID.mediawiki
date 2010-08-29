@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetWindowFromID =
-Use this function to get a window from a stored ID,, , or NULL if it doesn't exist,,.
+Use this function to get a window from a stored ID.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ SDL_Window* SDL_GetWindowFromID(Uint32 id)
 == Function Parameters ==
 {|
 |'''id'''
-|the Uint32 ID of the window
+|the ID of the window
 |}
 
 == Return Value ==
-The window associated with the desired ID or NULL if it doesn't exist.
+The window associated with the '''id''' or NULL if it doesn't exist.
 
 == Code Examples ==
 ```c++
