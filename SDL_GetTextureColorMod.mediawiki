@@ -19,13 +19,13 @@ int SDL_GetTextureColorMod(SDL_Texture* texture,
 |the texture to query
 |-
 |'''r'''
-|a pointer filled in with the source red color value
+|a pointer filled in with the current red color value
 |-
 |'''g'''
-|a pointer filled in with the source green color value
+|a pointer filled in with the current green color value
 |-
 |'''b'''
-|a pointer filled in with the source blue color value
+|a pointer filled in with the current blue color value
 |}
 
 == Return Value ==
