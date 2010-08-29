@@ -17,14 +17,14 @@ int SDL_GL_GetAttribute(SDL_GLattr attr,
 == Function Parameters ==
 {|
 |'''attr'''
-|the [[SDL_GLattr]] to be queried
+|the [[SDL_GLattr]] to query
 |-
 |'''value'''
 |a pointer to be filled in with the current value of '''attr'''
 |}
 
 == Return Value ==
-Returns 0 on success or ,,a negative error code,, ^* -1 *^ on failure; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -32,9 +32,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_GL_GetAttribute]]() places the value of the SDL/OpenGL attribute '''attr''' into '''value'''. This is useful after ,,a call to [[SDL_SetVideoMode]](),, ^initializing the video driver^ to check whether your attributes have been set as you expected.<br/>*
-
-<<Color2(green,Can't find SDL_SetVideoMode. Has it been replaced?  Is the superscript from SDL_GL_!LoadLibrary the correct replacement for the above?)>>
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_GL_SetAttribute]]
