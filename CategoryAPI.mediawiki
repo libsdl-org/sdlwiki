@@ -8,15 +8,15 @@
 
 == Enumerations ==
 
-<<FullSearch(category:CategoryEnum)>>
+<<FullSearch(category:CategoryEnum -SDLEnumTemplate)>>
 
 == Structures ==
 
-<<FullSearch(category:CategoryStruct)>>
+<<FullSearch(category:CategoryStruct -SDLStructTemplate)>>
 
 == Functions ==
 
-<<FullSearch(category:CategoryAPI)>>
+<<FullSearch(category:CategoryAPI -SDLFunctionTemplate)>>
 
 ----
 CategoryCategory
