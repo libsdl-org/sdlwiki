@@ -32,7 +32,7 @@ You can add your code example here
 When a texture is rendered, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
  <code>srcA = srcA * alpha</code>
 
-Alpha modulation is not always supported by the driver; it will return -1 if alpha modulation is not supported.
+Alpha modulation is not always supported by the renderer; it will return -1 if alpha modulation is not supported.
 
 You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer.  This structure will have SDL_TEXTUREMODULATE_ALPHA set in 'mod_modes' if alpha modulation is supported.
 
