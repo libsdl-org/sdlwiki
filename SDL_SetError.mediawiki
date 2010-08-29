@@ -30,7 +30,7 @@ SDL_SetError("Something unexpected happened: Error Code %d", -37);
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Calling this function will replace any previous error message that was set.
 
 == Related Functions ==
 :[[SDL_ClearError]]
