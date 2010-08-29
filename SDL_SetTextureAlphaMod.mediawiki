@@ -34,7 +34,7 @@ When a texture is rendered, during the copy operation the source alpha value is 
 
 Alpha modulation is not always supported by the renderer; it will return -1 if alpha modulation is not supported.
 
-You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer.  This structure will have SDL_TEXTUREMODULATE_ALPHA set in 'mod_modes' if alpha modulation is supported.
+You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer.  This structure will have SDL_TEXTUREMODULATE_ALPHA set in <code>mod_modes</code> if alpha modulation is supported.
 
 == Related Functions ==
 :[[SDL_GetTextureAlphaMod]]
