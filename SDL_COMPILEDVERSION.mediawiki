@@ -21,7 +21,5 @@ You can add your code example here
 == Related Macros ==
 :[[SDL_VERSIONNUM]]
 
-== Related Functions ==
-
 ----
 [[CategoryAPI]], [[CategoryVersion]]
