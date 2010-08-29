@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_GetProcAddress =
-Use this function to get the address of an OpenGL function.
+Use this function to get an OpenGL function by name.
 
 
 == Syntax ==
@@ -14,16 +13,13 @@ void* SDL_GL_GetProcAddress(const char* proc)
 == Function Parameters ==
 {|
 |'''proc'''
-|a pointer to an OpenGL function
+|the name of an OpenGL function
 |}
 
 == Return Value ==
-*<br/>Returns the address of the GL function proc, or NULL  if the function is not found.<br/>*
-
-<<Color2(green,Is there a RV for void*?  The OpenGL function is passed to the callback function.???)>>
+Returns a pointer to the named OpenGL function, or NULL if the function is not found.  The returned pointer should be cast to the type of function you expect.
 
 == Code Examples ==
-*<br/>
 ```c++
 typedef void (APIENTRY * GL_ActiveTextureARB_Func)(unsigned int);
 GL_ActiveTextureARB_Func glActiveTextureARB_ptr = 0;
@@ -53,7 +49,6 @@ else{
   .
 }
 ```
-<br/>*
 
 == Remarks ==
 *<br/>If the GL library is loaded at runtime with [[SDL_GL_LoadLibrary]](), then all GL functions must be retrieved this way. Usually this is used to retrieve function pointers to OpenGL extensions. Note that this function needs an OpenGL context to ,,function,, ^work^ properly, so it should be called after ,,[[SDL_SetVideoMode]]() has been called (with the SDL_OPENGL flag),, ^initializing the video driver^.
