@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_VERSION =
-<<Color2(green,Should the word "Macro" be in the title above so it is clear that this is not a true function?)>>   ie: SDL_VERSION (Macro)
-
-Use this macro to determine ^the^ SDL version ^a/your^ program was compiled against.
+Use this macro to determine the SDL version your program was compiled against.
 
 
 == Syntax ==
@@ -31,15 +28,8 @@ Fills the selected struct with:
 == Remarks ==
 This macro fills in an [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]]() which, unlike [[SDL_VERSION]](), is not a macro.  
 
-??? This macro gathers information from SDL_MAJOR_VERSION, SDL_MINOR_VERSION, AND SDL_PATCHLEVEL (#defines) and fills the structure [[SDL_version]] with that information. ???
-
 == Related Structures ==
 :[[SDL_version]]
-
-== Related Macros ==
-:[[SDL_COMPILEDVERSION]]
-:[[SDL_VERSIONNUM]]
-:[[SDL_VERSION_ATLEAST]]
 
 == Related Functions ==
 :[[SDL_GetVersion]]
