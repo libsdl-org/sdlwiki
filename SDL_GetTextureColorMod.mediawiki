@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_GetTextureColorMod =
-Use this function to get the additional color value used in render copy operations.
+Use this function to get the additional color value multiplied into render copy operations.
 
 
 == Syntax ==
@@ -32,7 +29,7 @@ int SDL_GetTextureColorMod(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if the texture is not valid; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -43,6 +40,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetTextureAlphaMod]]
 :[[SDL_SetTextureColorMod]]
 
 ----
