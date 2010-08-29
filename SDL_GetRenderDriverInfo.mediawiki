@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_GetRenderDriverInfo =
 Use this function to get information about a specific 2D rendering driver for the current display.
@@ -24,7 +21,7 @@ int SDL_GetRenderDriverInfo(int               index,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if the index was out of range; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
