@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_GetSwapInterval =
 Use this function to get the swap interval for the current OpenGL context.
@@ -12,7 +11,7 @@ int SDL_GL_GetSwapInterval(void)
 ```
 
 == Return Value ==
-Returns 0 if there is no vertical retrace synchronization, 1 if the buffer swap is synchronized with the vertical retrace, and -1 if getting the swap interval is not supported; call [[SDL_GetError]]() for more information.
+Returns 0 if there is no vertical retrace synchronization, 1 if the buffer swap is synchronized with the vertical retrace, -1 if getting the swap interval is not supported; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
