@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetWindowGrab =
 Use this function to get the window's input grab mode.
@@ -14,11 +13,11 @@ int SDL_GetWindowGrab(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to query
 |}
 
 == Return Value ==
-Returns 1 if input is grabbed, and 0 otherwise; call [[SDL_GetError]]() for more information.
+Returns 1 if input is grabbed and 0 otherwise.
 
 == Code Examples ==
 ```c++
