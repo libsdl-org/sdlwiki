@@ -52,6 +52,12 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_CreateWindow]]
 :[[SDL_GetWindowFlags]]
+:[[SDL_HideWindow]]
+:[[SDL_MaximizeWindow]]
+:[[SDL_MinimizeWindow]]
+:[[SDL_SetWindowFullscreen]]
+:[[SDL_SetWindowGrab]]
+:[[SDL_ShowWindow]]
 
 ----
 [[CategoryEnum]], [[CategoryVideoEnum]]
