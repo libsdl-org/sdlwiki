@@ -37,7 +37,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-When a texture is rendered, during the copy operation each source color value is modulated by the appropriate color value according to the following formula:
+When a texture is rendered, during the copy operation each source color channel is modulated by the appropriate color value according to the following formula:
  <code>srcC = srcC * color</code>
 
 Color modulation is not always supported by the renderer; it will return -1 if color modulation is not supported.
