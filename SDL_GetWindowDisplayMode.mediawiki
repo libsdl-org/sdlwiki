@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_GetWindowDisplayMode =
-Use this function to fill in information about the display mode used when a fullscreen window is visible on the currently selected display.
+Use this function to fill in information about the display mode to use when a window is visible at fullscreen.
 
 
 == Syntax ==
@@ -17,7 +14,7 @@ int SDL_GetWindowDisplayMode(SDL_Window*      window,
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to query
 |-
 |'''mode'''
 |a pointer to the [[SDL_DisplayMode]] to be filled in
