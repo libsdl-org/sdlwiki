@@ -17,7 +17,7 @@ Uint32 SDL_GetWindowFlags(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns the [[SDL_WindowFlags]]; see [[#Remarks|Remarks]] for details.
+Returns the [[SDL_WindowFlags]] associated with the '''window'''; see [[#Remarks|Remarks]] for details.
 
 == Code Examples ==
 ```c++
