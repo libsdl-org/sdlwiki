@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetWindowData =
-Use this function to associate an arbitrary pointer with the window.
+Use this function to associate an arbitrary pointer with a window.
 
 
 == Syntax ==
@@ -15,10 +14,10 @@ void SDL_SetWindowData(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to associate with the pointer
 |-
 |'''userdata'''
-|a pointer passed as the first parameter to the callback function
+|the associated pointer
 |}
 
 == Code Examples ==
