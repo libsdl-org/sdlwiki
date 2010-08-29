@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_MakeCurrent =
 Use this function to set up an OpenGL context for rendering into an OpenGL window.
@@ -15,10 +14,10 @@ int SDL_GL_MakeCurrent(SDL_Window*   window,
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to associate with the context
 |-
 |'''context'''
-|the SDL_GLContext associated with the window
+|the OpenGL context to associate with the window
 |}
 
 == Return Value ==
@@ -33,7 +32,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_GL_CreateContext]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
