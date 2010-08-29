@@ -17,7 +17,7 @@ void* SDL_GL_GetProcAddress(const char* proc)
 |}
 
 == Return Value ==
-Returns a pointer to the named OpenGL function, or NULL if the function is not found.  The returned pointer should be cast to the type of function you expect.
+Returns a pointer to the named OpenGL function, or NULL if the function is not found.  The returned pointer should be cast to the appropriate function signature.
 
 == Code Examples ==
 ```c++
@@ -51,11 +51,9 @@ else{
 ```
 
 == Remarks ==
-*<br/>If the GL library is loaded at runtime with [[SDL_GL_LoadLibrary]](), then all GL functions must be retrieved this way. Usually this is used to retrieve function pointers to OpenGL extensions. Note that this function needs an OpenGL context to ,,function,, ^work^ properly, so it should be called after ,,[[SDL_SetVideoMode]]() has been called (with the SDL_OPENGL flag),, ^initializing the video driver^.
+If the GL library is loaded at runtime with [[SDL_GL_LoadLibrary]](), then all GL functions must be retrieved this way. Usually this is used to retrieve function pointers to OpenGL extensions. Note that this function needs an OpenGL context to work properly, so it should be called after creating the OpenGL context.
 
-<<Color2(green,Can't find SDL_SetVideoMode. Has it been replaced?  Is the superscript from SDL_GL_!LoadLibrary the correct replacement for the above?)>>
-
-OpenGL function pointers must be declared APIENTRY as in the example code. This will ensure the proper calling convention is followed on platforms where this matters (Win32) thereby avoiding stack corruption. In a Win32 build environment, APIENTRY should be defined as <code>__stdcall</code>. <br/>*
+OpenGL function pointers must be declared <code>APIENTRY</code> as in the example code. This will ensure the proper calling convention is followed on platforms where this matters (Win32) thereby avoiding stack corruption.
 
 == Related Functions ==
 :[[SDL_GL_LoadLibrary]]
