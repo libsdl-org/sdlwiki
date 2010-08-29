@@ -17,7 +17,7 @@ SDL_Window* SDL_GetWindowFromID(Uint32 id)
 |}
 
 == Return Value ==
-The window associated with the '''id''' or NULL if it doesn't exist.
+The window associated with '''id''' or NULL if it doesn't exist.
 
 == Code Examples ==
 ```c++
