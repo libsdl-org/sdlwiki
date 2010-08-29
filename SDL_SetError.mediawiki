@@ -25,6 +25,10 @@ void SDL_SetError(const char* fmt,
 SDL_SetError("Something unexpected happened!");
 ```
 
+```c++
+SDL_SetError("Something unexpected happened: Error Code %d", -37);
+```
+
 == Remarks ==
 ''You can add useful comments here''
 
