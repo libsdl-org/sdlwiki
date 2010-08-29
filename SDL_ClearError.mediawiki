@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_ClearError =
 Use this function to clear any previous error message.
@@ -20,7 +19,7 @@ if (strlen(SDL_GetError()) != 0) {
 ```
 
 == Remarks ==
-*<br/>[[SDL_ClearError]]() deletes all information about the last internal SDL error. ^This is particularly^ useful if the error has been handled by the program. <br/>*
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_GetError]]
