@@ -38,3 +38,6 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]], [[CategoryHeaderStruct]]
