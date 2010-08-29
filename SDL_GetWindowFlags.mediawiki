@@ -29,6 +29,7 @@ The flags may be any of the following OR'd together:
 <<Include(SDL_WindowFlags, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+:[[SDL_CreateWindow]]
 :[[SDL_HideWindow]]
 :[[SDL_MaximizeWindow]]
 :[[SDL_MinimizeWindow]]
