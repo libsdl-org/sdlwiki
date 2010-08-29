@@ -34,4 +34,4 @@ You can add your code example here
 :[[SDL_FunctionLeaveSectionIfEmpty]]
 
 ----
-[[CategoryEnum]], [[CategoryHeaderEnum]]
+[[CategoryEnum]], [[CategoryHeader]]
