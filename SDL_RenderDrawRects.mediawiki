@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RenderDrawRects =
-Use this function to draw some number of rectangles in the current rendering target.
+Use this function to draw some number of rectangles on the current rendering target.
 
 
 == Syntax ==
@@ -37,6 +37,8 @@ You can add your code example here
 :[[SDL_RenderDrawPoint]]
 :[[SDL_RenderDrawPoints]]
 :[[SDL_RenderDrawRect]]
+:[[SDL_RenderFillRect]]
+:[[SDL_RenderFillRects]]
 :[[SDL_SetRenderDrawBlendMode]]
 :[[SDL_SetRenderDrawColor]]
 
