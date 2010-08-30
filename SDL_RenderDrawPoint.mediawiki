@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_RenderDrawPoint =
 Use this function to draw a point on the current rendering target.
@@ -24,7 +21,7 @@ int SDL_RenderDrawPoint(int x,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -35,11 +32,13 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderDrawLine]]???
-:[[SDL_RenderDrawLines]]???
-:[[SDL_RenderDrawPoints]]???
-:[[SDL_RenderDrawRect]]???
-:[[SDL_RenderDrawRects]]???
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoints]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
