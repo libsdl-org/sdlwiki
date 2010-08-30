@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_RenderDrawPoints =
-Use this function to draw some number of points on the current rendering target.
+Use this function to draw multiple points on the current rendering target.
 
 
 == Syntax ==
@@ -24,7 +21,7 @@ int SDL_RenderDrawPoints(const SDL_Point* points,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -35,11 +32,13 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderDrawLine]]???
-:[[SDL_RenderDrawLines]]???
-:[[SDL_RenderDrawPoint]]???
-:[[SDL_RenderDrawRect]]???
-:[[SDL_RenderDrawRects]]???
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoint]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
