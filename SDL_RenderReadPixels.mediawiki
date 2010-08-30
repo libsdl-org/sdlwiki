@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_RenderReadPixels =
 Use this function to read pixels from the current rendering target.
@@ -19,7 +16,7 @@ int SDL_RenderReadPixels(const SDL_Rect* rect,
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the [[SDL_Rect]] to read, or NULL for the entire render target
+|a pointer to the rectangle of type [[SDL_Rect]] to read, or NULL for the entire render target
 |-
 |'''format'''
 |the desired format of the pixel data, or 0 to use the format of the rendering target; see [[#format|Remarks]] for details
@@ -32,7 +29,7 @@ int SDL_RenderReadPixels(const SDL_Rect* rect,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if pixel reading is not supported; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -45,8 +42,6 @@ WARNING: This is a very slow operation, and should not be used frequently.
 <span id="format"></span> '''format''' can be one of these values:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
-== Related Functions ==
-:[[SDL_RenderWritePixels]]???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
