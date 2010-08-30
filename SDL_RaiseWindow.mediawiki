@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RaiseWindow =
 Use this function to raise the window above other windows and set the input focus.
@@ -26,7 +25,6 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
