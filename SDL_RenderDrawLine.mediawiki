@@ -45,6 +45,8 @@ You can add your code example here
 :[[SDL_RenderDrawPoints]]
 :[[SDL_RenderDrawRect]]
 :[[SDL_RenderDrawRects]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
