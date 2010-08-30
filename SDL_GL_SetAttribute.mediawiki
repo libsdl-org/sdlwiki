@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_SetAttribute =
 Use this function to set an OpenGL window attribute before window creation.
@@ -25,25 +24,36 @@ int SDL_GL_SetAttribute(SDL_GLattr attr,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*<br/>
 ```c++
-SDL_GL_SetAttribute( SDL_GL_RED_SIZE, 5 );
-SDL_GL_SetAttribute( SDL_GL_GREEN_SIZE, 5 );
-SDL_GL_SetAttribute( SDL_GL_BLUE_SIZE, 5 );
-SDL_GL_SetAttribute( SDL_GL_DEPTH_SIZE, 16 );
-SDL_GL_SetAttribute( SDL_GL_DOUBLEBUFFER, 1 );
-if ( (screen=SDL_SetVideoMode( 640, 480, 16, SDL_OPENGL )) == NULL ) {
-    fprintf(stderr, "Couldn't set GL mode: %s\n", SDL_GetError());
-    SDL_Quit();
+SDL_Window *window;
+SDL_GLContext context;
+
+SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 5);
+SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 5);
+SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
+SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 16);
+SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
+
+window = SDL_CreateWindow("OpenGL Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
+if (!window) {
+    fprintf(stderr, "Couldn't create window: %s\n", SDL_GetError());
     return;
 }
-```
-<br/>*
 
-<<Color2(green,The SDL_SetVideoMode part of the example needs to be updated.)>>
+context = SDL_GL_CreateContext(window);
+if (!context) {
+    fprintf(stderr, "Couldn't create context: %s\n", SDL_GetError());
+    return;
+}
+
+printf("Red size: %d, Green size: %d, Blue size: %d\n",
+    SDL_GL_GetAttribute(SDL_GL_RED_SIZE),
+    SDL_GL_GetAttribute(SDL_GL_GREEN_SIZE),
+    SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE));
+```
 
 == Remarks ==
-This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes will take effect after creating an OpenGL context. You should use [[SDL_GL_GetAttribute]]() to check the values after creating the context, since the values obtained can differ from the requested ones.
+This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes should be set before creating an OpenGL window. You should use [[SDL_GL_GetAttribute]]() to check the values after creating the OpenGL context, since the values obtained can differ from the requested ones.
 
 '''attr''' can be one of these values:
 <<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
