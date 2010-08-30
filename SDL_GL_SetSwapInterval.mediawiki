@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_SetSwapInterval =
 Use this function to set the swap interval for the current OpenGL context.
