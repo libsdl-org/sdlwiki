@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RenderFillRect =
 Use this function to fill a rectangle on the current rendering target with the drawing color.
@@ -14,11 +13,11 @@ int SDL_RenderFillRect(const SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the destination rectangle, or NULL for the entire rendering target
+|a pointer to the destination rectangle of type [[SDL_Rect]], or NULL for the entire rendering target
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -29,7 +28,9 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderFillRects]]???
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_RenderFillRects]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
