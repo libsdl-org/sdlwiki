@@ -24,7 +24,5 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
-
 ----
 [[CategoryAPI]], [[CategoryVideo]]
