@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_RenderDrawRect =
-Use this function to draw a rectangle on the current rendering target with the drawing color.
+Use this function to draw a rectangle on the current rendering target.
 
 
 == Syntax ==
@@ -16,11 +13,11 @@ int SDL_RenderDrawRect(const SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the destination ,,rectangle,, ^[[SDL_Rect]]^, or NULL to outline the entire rendering target
+|a pointer to the destination rectangle of type [[SDL_Rect]], or NULL to outline the entire rendering target
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -31,13 +28,13 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_GetRenderDrawColor]]???
-:[[SDL_RenderDrawLine]]???
-:[[SDL_RenderDrawLines]]???
-:[[SDL_RenderDrawPoint]]???
-:[[SDL_RenderDrawPoints]]???
-:[[SDL_RenderDrawRects]]???
-:[[SDL_SetRenderDrawColor]]???
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoint]]
+:[[SDL_RenderDrawPoints]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
