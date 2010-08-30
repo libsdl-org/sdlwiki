@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GL_SwapWindow =
-Use this function to swap the OpenGL buffers for the window, if double-buffering is supported.
+Use this function to update the display with OpenGL rendering for double-buffered OpenGL contexts.
 
 
 == Syntax ==
@@ -22,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is typically used after doing OpenGL rendering to update the display.
+''You can add useful comments here''
 
 == Related Functions ==
 
