@@ -40,7 +40,7 @@ if ( (screen=SDL_SetVideoMode( 640, 480, 16, SDL_OPENGL )) == NULL ) {
 ```
 <br/>*
 
-<<Color2(green,Seems like the SDL_SetVideoMode part of the example needs to be updated?)>>
+<<Color2(green,The SDL_SetVideoMode part of the example needs to be updated.)>>
 
 == Remarks ==
 *<br/>This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes will take effect after creating an OpenGL context. You should use [[SDL_GL_GetAttribute]]() to check the values after creating the context, since the values obtained can differ from the requested ones.
