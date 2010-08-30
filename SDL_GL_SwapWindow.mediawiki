@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GL_SwapWindow =
 Use this function to swap the OpenGL buffers for the window, if double-buffering is supported.
@@ -14,7 +13,7 @@ void SDL_GL_SwapWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to update
 |}
 
 == Code Examples ==
@@ -23,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function is typically used after doing OpenGL rendering to update the display.
 
 == Related Functions ==
 
