@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_IsScreenSaverEnabled =
-Use this function to return whether the screensaver is currently enabled __(default off)__.
+Use this function to return whether the screensaver is currently enabled.
 
 
 == Syntax ==
@@ -14,7 +11,7 @@ SDL_bool SDL_IsScreenSaverEnabled(void)
 ```
 
 == Return Value ==
-Returns true if the screen saver is enabled, false if it is disabled.  
+Returns SDL_TRUE if the screensaver is enabled, SDL_FALSE if it is disabled.  
 
 == Code Examples ==
 ```c++
@@ -22,8 +19,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here'' 
-__Should "(default off)" from above be moved down here?__
+The screensaver is enabled by default.
 
 == Related Functions ==
 :[[SDL_DisableScreenSaver]]
