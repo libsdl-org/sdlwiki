@@ -29,7 +29,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+'''attr''' can be one of these values:
+<<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_GL_SetAttribute]]
