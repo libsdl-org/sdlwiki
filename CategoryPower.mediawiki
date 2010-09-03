@@ -13,14 +13,11 @@
 ^This category contains functions for handling^ ,,This category contains,, the SDL power management routines. 
 
 == Enumerations ==
-<<FullSearch(category:CategoryPowerEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryPowerStruct)>>
+<<FullSearch(category:CategoryEnum CategoryPower)>>
 
 == Functions ==
 
-<<FullSearch(category:CategoryPower)>>
+<<FullSearch(category:CategoryPower -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
