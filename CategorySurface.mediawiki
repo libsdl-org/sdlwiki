@@ -13,15 +13,12 @@
 
 This category contains functions for handling surface creation and blitting as well as simple drawing tasks including points, lines, circles, ellipses, and rectangles.
 
-== Enumerations ==
-<<FullSearch(category:CategorySurfaceEnum)>>
-
 == Structures ==
-<<FullSearch(category:CategorySurfaceStruct)>>
+<<FullSearch(category:CategoryStruct CategorySurface)>>
 
 == Functions ==
 
-<<FullSearch(category:CategorySurface)>>
+<<FullSearch(category:CategorySurface -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
