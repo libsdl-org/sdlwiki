@@ -13,15 +13,9 @@
 
 This category contains functions for ,,CPU feature detection for SDL,, ^gathering information about the processor's features.^
 
-== Enumerations ==
-<<FullSearch(category:CategoryCPUEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryCPUStruct)>>
-
 == Functions ==
 
-<<FullSearch(category:CategoryCPU)>>
+<<FullSearch(category:CategoryCPU -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
