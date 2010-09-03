@@ -127,4 +127,4 @@ If '''type''' is ::SDL_HAPTIC_SPHERICAL, direction is encoded by two rotations. 
 :[[SDL_HapticNumAxes]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedbackStruct]]
+[[CategoryStruct]], [[CategoryForceFeedback]]
