@@ -17,15 +17,9 @@ These operations may, or may not, actually be implemented using processor specif
 
 At the very minimum spin locks must be implemented. Without spin locks it is not possible (AFAICT) to emulate the rest of the atomic operations.
 
-== Enumerations ==
-<<FullSearch(category:CategoryAtomicEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryAtomicStruct)>>
-
 == Functions ==
 
-<<FullSearch(category:CategoryAtomic)>>
+<<FullSearch(category:CategoryAtomic -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
