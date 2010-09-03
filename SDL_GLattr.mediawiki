@@ -82,4 +82,4 @@ While you can set most OpenGL attributes normally, the attributes listed above m
 :[[SDL_GL_SetAttribute]]
 
 ----
-[[CategoryEnum]], [[CategoryVideoEnum]]
+[[CategoryEnum]], [[CategoryVideo]]
