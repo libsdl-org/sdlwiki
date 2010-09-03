@@ -63,4 +63,4 @@ Note: Repeating SDL_KEYDOWN events will occur if key repeat is enabled (see SDL_
 <<Color2(green,Listed in the old wiki but appear to be absent from 1.3: SDL_EnableKeyRepeat, SDL_EnableUNICODE)>>
 
 ----
-[[CategoryStruct]], [[CategoryEventsStruct]]
+[[CategoryStruct]], [[CategoryEvents]]
