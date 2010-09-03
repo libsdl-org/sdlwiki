@@ -110,4 +110,4 @@ When this structure is returned, it holds information about which low level syst
 :[[SDL_GetWindowWMInfo]]
 
 ----
-[[CategoryStruct]], [[CategorySWMStruct]]
+[[CategoryStruct]], [[CategorySWM]]
