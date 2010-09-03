@@ -13,15 +13,9 @@
 
 This category contains functions for handling the SDL time management routines.
 
-== Enumerations ==
-<<FullSearch(category:CategoryTimerEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryTimerStruct)>>
-
 == Functions ==
 
-<<FullSearch(category:CategoryTimer)>>
+<<FullSearch(category:CategoryTimer -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
