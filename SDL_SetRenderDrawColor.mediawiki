@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_SetRenderDrawColor =
-Use this function to set the color used for drawing operations (,,Fill,, ^Rect^ and Line).
+Use this function to set the color used for drawing operations.
 
 
 == Syntax ==
@@ -32,7 +29,7 @@ int SDL_SetRenderDrawColor(Uint8 r,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if there is no rendering context current; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -44,9 +41,15 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetRenderDrawColor]]
-:[[SDL_RenderClear]]???
-:[[SDL_RenderDrawRect]]???
-:[[SDL_RenderDrawRects]]???
+:[[SDL_RenderClear]]
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoint]]
+:[[SDL_RenderDrawPoints]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_RenderFillRect]]
+:[[SDL_RenderFillRects]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
