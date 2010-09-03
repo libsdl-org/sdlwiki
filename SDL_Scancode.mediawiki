@@ -773,4 +773,4 @@ The values in this enumeration are based on the USB usage page standard:
 :[[SDL_GetScancodeName]]
 
 ----
-[[CategoryEnum]]
+[[CategoryEnum]], [[CategoryKeyboard]]
