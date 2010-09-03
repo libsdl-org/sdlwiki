@@ -27,15 +27,9 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 [[SDL_Quit]]() should be called before an SDL application exits to shut down all subsystems, including the default ones.
 * It is not necessary to specify individual subsystems when using [[SDL_Quit]]().  It will automatically shut down all active subsystems. 
 
-== Enumerations ==
-<<FullSearch(category:CategoryInitEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryInitStruct)>>
-
 == Functions ==
 
-<<FullSearch(category:CategoryInit)>>
+<<FullSearch(category:CategoryInit -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
