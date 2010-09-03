@@ -76,4 +76,4 @@ Many of the fields in the [[SDL_AudioCVT]] structure should be considered privat
 :[[SDL_ConvertAudio]]
 
 ----
-[[CategoryStruct]], [[CategoryAudioStruct]]
+[[CategoryStruct]], [[CategoryAudio]]
