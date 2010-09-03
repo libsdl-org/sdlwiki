@@ -735,4 +735,4 @@ Values of this type are used to represent keyboard keys using the current layout
 :[[SDL_GetScancodeFromKey]]
 
 ----
-[[CategoryEnum]]
+[[CategoryEnum]], [[CategoryKeyboard]]
