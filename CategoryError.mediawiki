@@ -14,15 +14,9 @@ Functions in this category provide simple error message routines for SDL. These 
 
 The SDL error messages are in English.
 
-== Enumerations ==
-<<FullSearch(category:CategoryErrorEnum)>>
-
-== Structures ==
-<<FullSearch(category:CategoryErrorStruct)>>
-
 == Functions ==
 
-<<FullSearch(category:CategoryError)>>
+<<FullSearch(category:CategoryError -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
