@@ -158,4 +158,4 @@ or<br/>
 :[[SDL_UpperBlit]]
 
 ----
-[[CategoryStruct]], [[CategorySurfaceStruct]]
+[[CategoryStruct]], [[CategorySurface]]
