@@ -36,4 +36,4 @@ You can add your code example here
 == Related Functions ==
 
 ----
-[[CategoryStruct]], [[CategoryEventsStruct]]
+[[CategoryStruct]], [[CategoryEvents]]
