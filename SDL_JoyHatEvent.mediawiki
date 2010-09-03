@@ -89,4 +89,4 @@ A SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.<br/
 :[[SDL_JoystickGetHat]] *
 
 ----
-[[CategoryStruct]], [[CategoryEventsStruct]]
+[[CategoryStruct]], [[CategoryEvents]]
