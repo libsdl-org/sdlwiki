@@ -21,7 +21,7 @@ int SDL_SetTextureBlendMode(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or -1 if the texture is not valid or the blend mode is not supported; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
