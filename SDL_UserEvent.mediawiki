@@ -52,4 +52,4 @@ SDL_PushEvent(&event);
 :[[SDL_PushEvent]] *
 
 ----
-[[CategoryStruct]], [[CategoryEventsStruct]]
+[[CategoryStruct]], [[CategoryEvents]]
