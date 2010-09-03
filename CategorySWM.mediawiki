@@ -18,15 +18,12 @@
 
 Your application has access to a special type of event SDL_SYSWMEVENT, which contains window-manager specific information and arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
 
-== Enumerations ==
-<<FullSearch(category:CategorySWMEnum)>>
-
 == Structures ==
-<<FullSearch(category:CategorySWMStruct)>>
+<<FullSearch(category:CategoryStruct CategorySWM)>>
 
 == Functions ==
 
-<<FullSearch(category:CategorySWM)>>
+<<FullSearch(category:CategorySWM -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
