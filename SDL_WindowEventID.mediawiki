@@ -62,4 +62,4 @@ You can add your code example here
 :[[SDL_WindowEvent]]
 
 ----
-[[CategoryEnum]], [[CategoryVideoEnum]]
+[[CategoryEnum]], [[CategoryVideo]]
