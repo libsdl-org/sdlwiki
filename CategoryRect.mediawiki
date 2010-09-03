@@ -13,15 +13,12 @@
 
 This category contains functions for handling simple rectangle drawing including overlaps and merges.
 
-== Enumerations ==
-<<FullSearch(category:CategoryRectEnum)>>
-
 == Structures ==
-<<FullSearch(category:CategoryRectStruct)>>
+<<FullSearch(category:CategoryStruct CategoryRect)>>
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryRect)>>
+<<FullSearchCached(category:CategoryRect -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
