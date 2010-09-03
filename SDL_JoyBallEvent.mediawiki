@@ -52,4 +52,4 @@ A SDL_JOYBALLMOTION event occurs when a user moves a trackball on the joystick. 
 :[[SDL_JoystickGetBall]]
 
 ----
-[[CategoryStruct]], [[CategoryEventsStruct]]
+[[CategoryStruct]], [[CategoryEvents]]
