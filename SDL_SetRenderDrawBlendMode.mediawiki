@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetRenderDrawBlendMode =
-Use this function to set the blend mode used for drawing operations (Fill, Line, and Point).
+Use this function to set the blend mode used for drawing operations.
 
 
 == Syntax ==
@@ -29,6 +29,15 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetRenderDrawBlendMode]]
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoint]]
+:[[SDL_RenderDrawPoints]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_RenderFillRect]]
+:[[SDL_RenderFillRects]]
+
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
