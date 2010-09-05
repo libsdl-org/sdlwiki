@@ -6,7 +6,7 @@
 
 = Thread Management =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_thread.h SDL_thread.h], [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_mutex.h SDL_mutex.h] ^(contains thread synchronization primitives)^
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_thread.h SDL_thread.h], [http://hg.libsdl.org/SDL/file/tip/include/SDL_mutex.h SDL_mutex.h] ^(contains thread synchronization primitives)^
 
 
 == Introduction ==
