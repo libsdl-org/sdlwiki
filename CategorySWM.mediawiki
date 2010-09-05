@@ -8,7 +8,7 @@
 
 = Platform-specific Window Management =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_syswm.h SDL_syswm.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_syswm.h SDL_syswm.h]
 
 
 == Introduction ==
