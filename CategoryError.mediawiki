@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= Error Handling (SDL_error.h) =
+= Error Handling =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_error.h SDL_error.h]
 
