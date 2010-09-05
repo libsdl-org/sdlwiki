@@ -6,7 +6,7 @@
 
 = Display Management, Window Management and Rendering =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_video.h SDL_video.h]
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/tip/include/SDL_video.h SDL_video.h]
 
 
 == Introduction ==
