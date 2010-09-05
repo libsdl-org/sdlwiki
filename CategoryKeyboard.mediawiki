@@ -6,9 +6,8 @@
 
 = Keyboard Support =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_keyboard.h SDL_keyboard.h], [[|SDL_keysym.h]], [[|SDL_scancode.h]]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_keyboard.h SDL_keyboard.h], [http://hg.libsdl.org/SDL/file/tip/include/SDL_keysym.h SDL_keysym.h], [http://hg.libsdl.org/SDL/file/tip/include/SDL_scancode.h SDL_scancode.h]
 
-<<Color2(green,Links to header files are being updated...)>>
 
 
 == Introduction ==
