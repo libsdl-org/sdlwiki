@@ -8,7 +8,7 @@ This guide provides instructions for adding your own content to the Code Example
 
 == Before You Start ==
 
-Anyone may contribute Code Examples or Remarks per the instructions in this Style Guide.  
+Anyone may contribute Code Examples or Remarks per the instructions in this Style Guide.  Please check back periodically for changes.
 
 /!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send e-mail to slouken@libsdl.org
 
@@ -67,7 +67,7 @@ The Code Examples section provides simple examples of real-world applications of
 
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
 
-* If there are existing examples please add a new code box to the end of the examples section, or the end of a related group if there are many examples of various types.
+* If there are existing examples please add a new code box to the end of the examples section, or add your code to the end of a related group if there are many examples of various types.
 * To add a new code box insert the following into the spot where your example will be located:
    ```{
 {{{#!highlight cpp
@@ -95,12 +95,15 @@ The Remarks section provides additional information related to other sections on
 
 <!> '''Do not remove or modify any existing remarks.'''
 
-* If your remark includes a reference to a specific function parameter or structure data field use '''bold''' wherever the name is used.
+* If your remark includes a reference to a function parameter or structure data field directly related to that page's topic use '''bold''' wherever the name is used (except in the Syntax section where formatting is automatic).
    ```'''parameter'''``` = '''parameter'''
 : ''Example'': [[SDL_ConvertAudio]]()
 : ''Example'': [[SDL_AudioSpec]]
 * Do NOT use bold for enumeration value names.
 : ''Example'': [[SDL_GLattr]]
+: If your remark includes a reference to a parameter or data field in another function or structure than the one specifically discussed on that page (such as referencing a member of a structure on a function's page), use <code>monospace</code> wherever the name is used.
+   ```<code>member</code>``` = <code>member</code>
+: ''Example'': [[SDL_OpenAudio]]()
 
 * Create hyperlinks if you reference an existing function, enumeration, or structure.
   ~-''Note: Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
@@ -109,6 +112,16 @@ The Remarks section provides additional information related to other sections on
   ```[[SDL_Enumeration/Structure]]```<br/>
    Do not use parentheses for enumerations or structures.
 : ''Example'': [[SDL_BuildAudioCVT]]()
+
+
+----
+== The Bottom Line ==
+
+When in doubt
+ a) look for another page that contains the same thing you want to do and copy all the basics as much as applicable.  
+ b) send a comment or question to docs@libsdl.org.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact docs@libsdl.org with your thoughts.  We are happy to have the participation!
 
 ----
 == Disclaimer ==
