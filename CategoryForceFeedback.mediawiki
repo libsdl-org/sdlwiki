@@ -6,9 +6,9 @@
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
 
-= Force Feedback Support (SDL_haptic.h) =
+= Force Feedback Support =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_haptic.h SDL_haptic.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_haptic.h SDL_haptic.h]
 
 
 == Introduction ==
