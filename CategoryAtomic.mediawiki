@@ -6,7 +6,7 @@
 
 = Atomic Operations for 32 and 64 Bit Values =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/68dfd6df47da/include/SDL_atomic.h SDL_atomic.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_atomic.h SDL_atomic.h]
 
 
 == Introduction ==
