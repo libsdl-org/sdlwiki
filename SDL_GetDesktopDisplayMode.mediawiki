@@ -30,6 +30,7 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_GetCurrentDisplayMode]]
 :[[SDL_GetDisplayMode]]
+:[[SDL_SelectVideoDisplay]]
 :[[SDL_SetWindowDisplayMode]]
 
 ----
