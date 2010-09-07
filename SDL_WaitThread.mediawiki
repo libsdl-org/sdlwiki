@@ -32,6 +32,7 @@ The return code for the thread function is placed in the area pointed to by '''s
 <<Color2(green,Should anything be included here (or in Return Value?) that indicates what the "return code" might be?  Seems like maybe 1 for waiting 0 for done -1 for error?  Why is that not a Return Value?  Just because it fills a pointer with it?)>>
 
 == Related Functions ==
+:[[SDL_CreateThread]] ???
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
