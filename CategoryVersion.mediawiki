@@ -22,11 +22,11 @@ These functions are used to collect or display information about the version of 
  ''Example:'' The current version is 1300
 
 == Structures ==
-<<FullSearch(category:CategoryStruct CategoryVersion)>>
+<<FullSearchCached(category:CategoryStruct CategoryVersion)>>
 
 == Functions ==
 
-<<FullSearch(category:CategoryVersion -CategoryStruct -CategoryEnum)>>
+<<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum)>>
 
 ----
 CategoryCategory
