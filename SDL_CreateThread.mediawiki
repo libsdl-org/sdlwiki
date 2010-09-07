@@ -58,4 +58,4 @@ Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code
 :[[SDL_WaitThread]] ???
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryThread]]
