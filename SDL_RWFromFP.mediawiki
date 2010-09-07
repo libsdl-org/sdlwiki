@@ -42,7 +42,7 @@ SDL_RWclose(rw); // Automatically does an fclose(fp)
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>This is not available under Win32, since files opened in an application on that platform cannot be used by a dynamically linked library.<br/>*
 
 == Related Functions ==
 :[[SDL_RWclose]] (Macro) ???
