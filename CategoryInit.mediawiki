@@ -29,7 +29,7 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 
 == Functions ==
 
-<<FullSearch(category:CategoryInit -CategoryEnum -CategoryStruct)>>
+<<FullSearchCached(category:CategoryInit -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
