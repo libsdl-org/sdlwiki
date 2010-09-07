@@ -34,6 +34,7 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_CreateRenderer]]
 :[[SDL_GetNumRenderDrivers]]
+:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
