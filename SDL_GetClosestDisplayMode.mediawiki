@@ -34,6 +34,7 @@ The available display modes are scanned and '''closest''' is filled in with the 
 == Related Functions ==
 :[[SDL_GetDisplayMode]]
 :[[SDL_GetNumDisplayModes]]
+:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
