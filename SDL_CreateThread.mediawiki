@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateThread =
-Use this function to create a ^new^ thread *with the same properties as the parent thread*.
+Use this function to create a ^new^ thread *with the same properties as the parent thread* ''-and/or-'' <code>that does SDL_ThreadFunction() with the '''data'''</code>.
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 |^the function to be run in the new thread^; see [[#Remarks|Remarks]] for details
 |-
 |'''data'''
-|a void* user context parameter ''-or-'' ^a pointer to the data to be passed to the function in the new thread^
+|a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^
 |}
 
 == Return Value ==
