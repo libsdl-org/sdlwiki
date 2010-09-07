@@ -66,6 +66,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_DestroyWindow]]
+:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
