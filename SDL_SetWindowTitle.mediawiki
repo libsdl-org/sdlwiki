@@ -15,7 +15,7 @@ void SDL_SetWindowTitle(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the type used to identify the window
+|the window to change
 |-
 |'''title'''
 |the desired window title
