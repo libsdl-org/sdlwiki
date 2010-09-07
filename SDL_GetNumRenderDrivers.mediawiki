@@ -24,6 +24,7 @@ A render driver is a set of code that handles rendering and texture management o
 == Related Functions ==
 :[[SDL_CreateRenderer]]
 :[[SDL_GetRenderDriverInfo]]
+:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
