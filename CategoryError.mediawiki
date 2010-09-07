@@ -16,7 +16,7 @@ The SDL error messages are in English.
 
 == Functions ==
 
-<<FullSearch(category:CategoryError -CategoryEnum -CategoryStruct)>>
+<<FullSearchCached(category:CategoryError -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
