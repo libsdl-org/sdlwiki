@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SemTryWait =
-Use this function ,,to,, ^as a^ non-blocking ,,variant of,, ^alternative to^ [[SDL_SemWait]]().
+Use this function ,,to,, ^as a^ non-blocking ,,variant of,, ^alternative to^ [[SDL_SemWait]]()  ''-or-''  ...*to attempt to lock a semaphore but ,,don't,, ^not^ suspend the thread*.
 
 
 == Syntax ==
@@ -14,25 +14,47 @@ int SDL_SemTryWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^a pointer to the SDL_sem structure to be monitored^
+|^a pointer to the SDL_sem structure / semaphore to be decremented^
 |}
 
 == Return Value ==
-Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, and -1 on error; call [[SDL_GetError]]() for more information.
+Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, and ,,-1 on error,, ^a negative error code on failure^; call [[SDL_GetError]]() for more information.
+
+''-or-''
+
+*<br/><<Color2(green,Modified slightly from the old wiki:)>>  Returns 0 if the semaphore was successfully locked ^(and decremented)^, SDL_MUTEX_TIMEDOUT if the thread would have suspended, or ,,-1 if there was an error,, ^a negative error code on failure^.
+
+If the semaphore was not successfully locked, the semaphore will be unchanged. <br/>*
 
 == Code Examples ==
 ```c++
-You can add your code example here
+res = SDL_SemTryWait(my_sem);
+
+if (res == SDL_MUTEX_TIMEDOUT) {
+        return TRY_AGAIN;
+}
+if (res == -1) {
+        return WAIT_ERROR;
+}
+
+...
+
+SDL_SemPost(my_sem);
 ```
 
 == Remarks ==
 ''You can add useful comments here''
 
+*<br/>[[SDL_SemTryWait]]() is a non-blocking variant of [[SDL_SemWait]](). If the value of the semaphore pointed to by '''sem''' is positive it will atomically decrement the semaphore value and return 0, otherwise it will return SDL_MUTEX_TIMEDOUT instead of suspending the thread.
+
+After [[SDL_SemTryWait]]() is successful, the semaphore can be released and its count atomically incremented by a successful call to [[SDL_SemPost]](). <br/>*
+
 <<Color2(green,Seems like this should have some explanation that you would choose this function if you have a thread that will be ruined if it is blocked but it would be better if it could be stalled a bit if necessary and possible.  As compared to SDL_SemWait which will block the thread regardless of the result to the thread.  Is that right?)>>
 
 == Related Functions ==
-:[[SDL_SemWait]]
-:[[SDL_SemWaitTimeout]] ???
+:[[SDL_SemPost]] *
+:[[SDL_SemWait]] *
+:[[SDL_SemWaitTimeout]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
