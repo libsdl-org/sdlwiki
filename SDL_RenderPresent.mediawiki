@@ -17,6 +17,7 @@ void SDL_RenderPresent(void)
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_RenderClear]] ???
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
@@ -25,6 +26,8 @@ void SDL_RenderPresent(void)
 :[[SDL_RenderDrawRects]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
+:[[SDL_SetRenderDrawBlendMode]] ???
+:[[SDL_SetRenderDrawColor]] ???
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
