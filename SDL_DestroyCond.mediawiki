@@ -14,7 +14,7 @@ void SDL_DestroyCond(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the SDL_cond structure to be destroyed^
+|^a pointer to the SDL_cond structure / condition variable to be destroyed^
 |}
 
 == Code Examples ==
@@ -26,7 +26,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CreateCond]]
+:[[SDL_CreateCond]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
