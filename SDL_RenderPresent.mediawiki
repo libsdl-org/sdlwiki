@@ -26,8 +26,8 @@ void SDL_RenderPresent(void)
 :[[SDL_RenderDrawRects]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
-:[[SDL_SetRenderDrawBlendMode]] ???
-:[[SDL_SetRenderDrawColor]] ???
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
