@@ -3,9 +3,9 @@
 '''DRAFT'''
 
 = SDL_CondWaitTimeout =
-Use this function to ^wait on a condition variable for a fixed delay^.
+Use this function to ^wait on a condition variable for a fixed delay^ ''-or-'' *with timeout*.
 
-<<Color2(green,The description in the header is too long and too detailed.  Tried to put in a simple summary.  Should it be the longer description?)>>
+<<Color2(green,The description in the header is too long and too detailed.  Tried to write a simple summary.  Should it be the longer description here instead?<br/>Waits for at most '''ms''' milliseconds and returns 0 if the condition variable is signaled SDL_MUTEX_TIMEDOUT if the condition is not signaled in the allotted time and -1 on error. (with appropriate commas that don't work in green))>>
 
 
 == Syntax ==
@@ -18,17 +18,17 @@ int SDL_CondWaitTimeout(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the SDL_cond structure that is being applied^ ???
+|^a pointer to the condition variable that is being applied^ ???
 |-
 |'''mutex'''
-|^a pointer to the SDL_mutex structure to be timed out^ ???
+|^a pointer to the mutex to be timed out^ ???
 |-
 |'''ms'''
 |^the maximum number of milliseconds to wait^
 |}
 
 == Return Value ==
-Returns 0 if the condition variable is signaled, SDL_MUTEX_TIMEDOUT if the condition is not signaled in the allotted time, and -1 on error; call [[SDL_GetError]]() for more information.
+Returns 0 if the condition variable is signaled, SDL_MUTEX_TIMEDOUT if the condition is not signaled in the allotted time, and ,,-1 on error,, ^a negative error code on failure^; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -36,10 +36,14 @@ You can add your code example here
 ```
 
 == Remarks ==
-/!\ {i} On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible. 
+*<br/>'''mutex''' is unlocked so it must be locked when the function is called and it will ,,re-,, ^un^lock afterward.
+
+<<Color2(green,Is this a typo in the old wiki - ''re'' vs ''un''lock?  Does the function handle the locking/unlocking or does the programmer need to do that?)>><br/>*
+
+On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible. 
 
 == Related Functions ==
-:[[SDL_CondWait]] ???
+:[[SDL_CondWait]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
