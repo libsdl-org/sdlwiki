@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_mutexV =
-Use this function to unlock the mutex.
+Use this function to unlock ,,the,, ^a^ mutex.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ int SDL_mutexV(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex'''
-|^a pointer to the SDL_mutex structure to be unlocked^
+|^a pointer to the SDL_mutex structure / mutex to be unlocked^
 |}
 
 == Return Value ==
@@ -28,10 +28,21 @@ You can add your code example here
 == Remarks ==
 It is an error to unlock a mutex that has not been locked by the current thread, and doing so results in undefined behavior.
 
-<<Color2(green,define SDL_UnlockMutex(m)	SDL_mutexV(m))>> ???
+*<br/>SDL also defines a macro <code>#define SDL_UnlockMutex(m) SDL_mutexV(m)</code>. <br/>*
+
+''-or-''
+
+[[SDL_mutexV]](m) and SDL_UnlockMutex(m) are equivalent.
+
+''-or-'' 
+
+The macro SDL_UnlockMutex(m) will call [[SDL_mutexV]](m).
+
+<<Color2(green,I'm guessing this !UnlockMutex part will actually be omitted but I left it in since it was mentioned in the old wiki.)>>
 
 == Related Functions ==
-:[[SDL_mutexP]]
+:[[SDL_CreateMutex]] *
+:[[SDL_mutexP]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
