@@ -39,6 +39,7 @@ You can add your code example here
 :[[SDL_RenderDrawRect]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
+:[[SDL_RenderPresent]]
 :[[SDL_SetRenderDrawBlendMode]]
 :[[SDL_SetRenderDrawColor]]
 
