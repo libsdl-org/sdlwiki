@@ -3,7 +3,9 @@
 '''DRAFT'''
 
 = SDL_CondWait =
-Use this function to wait on the condition variable, unlocking the provided mutex.
+Use this function to wait on the condition variable, unlocking the provided mutex.  <<Color2(green, Alternate:  ...unlock the provided mutex and wait on the condition variable.)>>
+
+<<Color2(green,I expect that this works on the current thread or the one that it is called from within.  Is that correct?  Is there any need to specify any of this here?)>>
 
 
 == Syntax ==
@@ -15,14 +17,14 @@ int SDL_CondWait(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the SDL_cond structure that is being applied^ ???
+|^a pointer to the condition variable that is being applied^ ???
 |-
 |'''mutex'''
-|^a pointer to the SDL_mutex structure that is to be unlocked^
+|^a pointer to the mutex that is to be unlocked^
 |}
 
 == Return Value ==
-Returns 0 when it is signaled, or -1 on error; call [[SDL_GetError]]() for more information.
+Returns 0 when it is signaled or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -30,10 +32,17 @@ You can add your code example here
 ```
 
 == Remarks ==
-/!\ {i} The mutex must be locked before entering this function!  The mutex is re-locked once the condition variable is signaled.
+The mutex must be locked before entering this function!  The mutex is re-locked once the condition variable is signaled *^by^ another thread call^ing^ [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.*
+
+<<Color2(green,Alternate version:)>>
+The mutex must be locked before entering this function!  <<Color2(green,This line may be moved to the end instead.)>>
+
+This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  The mutex is re-locked once the condition variable is signaled.
 
 == Related Functions ==
-:[[SDL_CondWaitTimeout]] ???
+:[[SDL_CondSignal]] *
+:[[SDL_CondWaitTimeout]] *
+:[[SDL_mutexP]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
