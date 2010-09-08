@@ -14,7 +14,7 @@ int SDL_CondSignal(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the SDL_cond structure that is being applied^ ???
+|^a pointer to the condition variable regulating the thread^ ???
 |}
 
 == Return Value ==
