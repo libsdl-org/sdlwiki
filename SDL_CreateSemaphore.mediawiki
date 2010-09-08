@@ -3,9 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateSemaphore =
-Use this function to create a semaphore, initialized with value, returns NULL on failure.
-
-<<Color2(green,Should this description stop at semaphore and the remaining info be moved below?)>>
+Use this function to create a semaphore, initialized with ^a^ value,, returns NULL on failure,,  *create a new semaphore and assign an initial value to it*.
 
 
 == Syntax ==
@@ -20,20 +18,31 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
 |}
 
 == Return Value ==
-Returns ^the current semaphore value for the resource^ on success, or NULL on failure; call [[SDL_GetError]]() for more information.
+*<br/>Returns a pointer to an initialized semaphore or NULL if there was an error.<br/>*
 
-<<Color2(green,-OR- does it return a positive value when the resource is available and 0 when it is in use?)>>
+; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_sem *my_sem;
+
+my_sem = SDL_CreateSemaphore(INITIAL_SEM_VALUE);
+
+if (my_sem == NULL) {
+        return CREATE_SEM_FAILED;
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+*<br/>[[SDL_CreateSemaphore]]() creates a new semaphore and initializes it with the value '''initial_value'''. Each locking operation on the semaphore by [[SDL_SemWait]](), [[SDL_SemTryWait]]() or [[SDL_SemWaitTimeout]]() will atomically decrement the semaphore value. The locking operation will be blocked if the semaphore value is not positive (greater than zero). Each unlock operation by [[SDL_SemPost]]() will atomically increment the semaphore value. <br/>*
 
 == Related Functions ==
-:[[SDL_DestroySemaphore]] ???
+:[[SDL_DestroySemaphore]] *
+:[[SDL_SemPost]] *
+:[[SDL_SemTryWait]] *
+:[[SDL_SemValue]] *
+:[[SDL_SemWait]] *
+:[[SDL_SemWaitTimeout]]*
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
