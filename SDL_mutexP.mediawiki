@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_mutexP =
-Use this function to lock the mutex.
+Use this function to lock ,,the,, ^a^ mutex.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ int SDL_mutexP(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex'''
-|^a pointer to the SDL_mutex structure to be locked^
+|^a pointer to the SDL_mutex structure / mutex to be locked^
 |}
 
 == Return Value ==
@@ -26,12 +26,21 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,define SDL_LockMutex(m)	SDL_mutexP(m))>> ???
+*<br/>[[SDL_mutexP]]() locks the mutex, which was previously created with [[SDL_CreateMutex]](). If the mutex is already locked by another thread then [[SDL_mutexP]]() will not return until the thread that locked it unlocks it (with [[SDL_mutexV]]()). If called repeatedly on a mutex, [[SDL_mutexV]]() must be called ^an^ equal ,,amount,, ^number^ of times to return the mutex to ^the/an^ unlocked state.
 
-''You can add useful comments here''
+SDL also defines a macro <code>#define SDL_LockMutex(m) SDL_mutexP(m)</code>. <br/>*
+
+''-or-''
+
+[[SDL_mutexP]](m) and SDL_LockMutex(m) are equivalent.
+
+''-or-'' The macro SDL_LockMutex(m) will call [[SDL_mutexP]](m).
+
+<<Color2(green,I'm guessing this !LockMutex part will actually be omitted but I left it in since it was mentioned in the old wiki.)>>
 
 == Related Functions ==
-:[[SDL_mutexV]] ???
+:[[SDL_CreateMutex]] *
+:[[SDL_mutexV]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
