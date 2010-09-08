@@ -3,9 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateMutex =
-Use this function to create a mutex, initialized unlocked.  
-
-<<Color2(green,Is this grammatically correct?  mutex-initialized unlock?  mutex(comma) initialized and unlocked?  '''create and initialize an unlocked mutex'''?)>>
+Use this function to create a mutex, initialized unlocked  *...create a new, unlocked mutex*  ^create and initialize an unlocked mutex^.
 
 
 == Syntax ==
@@ -18,14 +16,34 @@ SDL_mutex* SDL_CreateMutex(void)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_mutex *mut;
+
+mut=SDL_CreateMutex();
+.
+.
+if(SDL_mutexP(mut)==-1){
+  fprintf(stderr, "Couldn't lock mutex\n");
+  exit(-1);
+}
+.
+/* Do stuff while mutex is locked */
+.
+.
+if(SDL_mutexV(mut)==-1){
+  fprintf(stderr, "Couldn't unlock mutex\n");
+  exit(-1);
+}
+
+SDL_DestroyMutex(mut);
 ```
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_DestroyMutex]] ???
+:[[SDL_DestroyMutex]] *
+:[[SDL_mutexP]] *
+:[[SDL_mutexV]] *
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
