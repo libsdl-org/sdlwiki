@@ -29,7 +29,7 @@ You can add your code example here
 ^This function is^ equivalent to [[SDL_ThreadID]]() if the specified thread is NULL.
 
 == Related Functions ==
-:[[SDL_CreateThread]] ???
+:[[SDL_CreateThread]] *
 :[[SDL_ThreadID]]
 
 ----
