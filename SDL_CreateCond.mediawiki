@@ -27,7 +27,8 @@ cond=SDL_CreateCond();
 .
 SDL_DestroyCond(cond);
 ```
-*
+*<br/>
+<<Color2(green,Should this example be Included on the SDL_DestroyCond page?)>>
 
 == Remarks ==
 ''You can add useful comments here''
