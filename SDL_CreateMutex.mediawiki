@@ -37,7 +37,7 @@ if(SDL_mutexV(mut)==-1){
 
 SDL_DestroyMutex(mut);
 ```
-*
+*<br/><<Color2(green,Should this example be Included on the SDL_DestroyMutex page? What about SDL_mutexP or SDL_mutexV?)>>
 
 == Remarks ==
 ''You can add useful comments here''
