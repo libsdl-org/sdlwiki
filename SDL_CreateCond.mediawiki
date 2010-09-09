@@ -15,6 +15,7 @@ SDL_cond* SDL_CreateCond(void)
 Returns ^a pointer to the SDL_cond structure that is created / filled with the condition variable^.
 
 == Code Examples ==
+*
 ```c++
 SDL_cond *cond;
 
@@ -26,6 +27,7 @@ cond=SDL_CreateCond();
 .
 SDL_DestroyCond(cond);
 ```
+*
 
 == Remarks ==
 ''You can add useful comments here''
