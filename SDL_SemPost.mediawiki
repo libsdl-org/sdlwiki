@@ -23,9 +23,11 @@ int SDL_SemPost(SDL_sem* sem)
 Returns 0 on success ^(and increments the semaphore count)^ or a negative error code on failure *(leaving the semaphore unchanged)*; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
+*
 ```c++
 SDL_SemPost(my_sem);
 ```
+*
 
 == Remarks ==
 *<br/>[[SDL_SemPost]]() unlocks the semaphore pointed to by '''sem''' and atomically increments the semaphore's value. Threads that were blocking on the semaphore may be scheduled after this call succeeds.
