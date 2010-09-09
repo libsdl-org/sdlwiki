@@ -34,9 +34,11 @@ If you are linking to SDL dynamically, then it is possible that the current vers
 
 This function may be called safely at any time, even before [[SDL_Init]]().
 
+== Related Macros ==
+:[[SDL_VERSION]]
+
 == Related Functions ==
 :[[SDL_GetRevision]]
-:[[SDL_VERSION]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
