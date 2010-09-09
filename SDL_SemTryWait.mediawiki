@@ -27,6 +27,7 @@ Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, and 
 If the semaphore was not successfully locked, the semaphore will be unchanged. <br/>*
 
 == Code Examples ==
+*
 ```c++
 res = SDL_SemTryWait(my_sem);
 
@@ -41,6 +42,7 @@ if (res == -1) {
 
 SDL_SemPost(my_sem);
 ```
+*
 
 == Remarks ==
 ''You can add useful comments here''
