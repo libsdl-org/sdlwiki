@@ -23,6 +23,7 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
 ; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
+*
 ```c++
 SDL_sem *my_sem;
 
@@ -32,6 +33,7 @@ if (my_sem == NULL) {
         return CREATE_SEM_FAILED;
 }
 ```
+*
 
 == Remarks ==
 *<br/>[[SDL_CreateSemaphore]]() creates a new semaphore and initializes it with the value '''initial_value'''. Each locking operation on the semaphore by [[SDL_SemWait]](), [[SDL_SemTryWait]]() or [[SDL_SemWaitTimeout]]() will atomically decrement the semaphore value. The locking operation will be blocked if the semaphore value is not positive (greater than zero). Each unlock operation by [[SDL_SemPost]]() will atomically increment the semaphore value. <br/>*
