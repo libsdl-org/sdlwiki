@@ -15,6 +15,7 @@ SDL_mutex* SDL_CreateMutex(void)
 ^A pointer to an SDL_mutex structure to be initialized in an unlocked state.^
 
 == Code Examples ==
+*
 ```c++
 SDL_mutex *mut;
 
@@ -36,6 +37,7 @@ if(SDL_mutexV(mut)==-1){
 
 SDL_DestroyMutex(mut);
 ```
+*
 
 == Remarks ==
 ''You can add useful comments here''
