@@ -24,7 +24,6 @@ You can add your code example here
 == Remarks ==
 This is used with double-buffered OpenGL contexts, which are the default.
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
