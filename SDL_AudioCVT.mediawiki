@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_AudioCVT =
-A structure that ^contains^ ,,is used for,, audio data conversion ^information^.
+A structure that contains audio data conversion ^information^.
 
 
 == Data Fields ==
