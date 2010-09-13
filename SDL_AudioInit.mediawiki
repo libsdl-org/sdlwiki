@@ -13,7 +13,7 @@ int SDL_AudioInit(const char* driver_name)
 == Function Parameters ==
 {|
 |'''driver_name'''
-|the name of the desired audio driver
+|^a pointer to^ the name of the desired audio driver
 |}
 
 == Return Value ==
@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is used internally, and should not be used unless you have a specific need to specify the audio driver you want to use.  You should normally use [[SDL_Init]]() or [[SDL_InitSubSystem]]().
+This function is used internally, and should not be used unless you have a specific need to ^designate^ ,,specify,, the audio driver you want to use.  You should normally use [[SDL_Init]]() or [[SDL_InitSubSystem]]().
 
 == Related Functions ==
  [[SDL_AudioQuit]]
