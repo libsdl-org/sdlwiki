@@ -18,11 +18,11 @@ int SDL_HapticEffectSupported(SDL_Haptic*       haptic,
 |^a pointer to the^ haptic device to ,,check on,, ^query^
 |-
 |'''effect'''
-|^a pointer to the^ effect to check ^for support^ ,,to see if it is supported,,
+|^a pointer to the desired^ effect ,,to check to see if it is supported,,
 |}
 
 == Return Value ==
-Returns 1 if effect is supported, 0 if it isn't, or -1 on error; call [[SDL_GetError]]() for more information.
+Returns 1 if effect is supported, 0 if it isn't, ^or a negative error code on failure^,, or -1 on error,,; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
