@@ -14,12 +14,12 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 == Function Parameters ==
 {|
 |'''cvt'''
-|an [[SDL_AudioCVT]] structure that was previously set up; see [[#cvt|Remarks]] for details
+|^a pointer to^ an [[SDL_AudioCVT]] structure that was previously set up; see [[#cvt|Remarks]] for details
 |}
 
 == Return Value ==
 
-Returns 0 if the conversion was completed successfully, ,,otherwise,, ^or^ -1 ,,is returned and,, ^on error;^ call [[SDL_GetError]]() for more information.
+Returns 0 if the conversion was completed successfully ,,,otherwise -1 is returned and,, ^or a negative error code on failure^; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
