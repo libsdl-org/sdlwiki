@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_AtomicLock =
-Use this function to lock a spin lock ,,by setting it to a none zero ^non-0 / non-zero^ value,,.
+Use this function to lock a spin lock by setting it to a ,,none zero,, ^non-0 / non-zero^ value.
 
 
 == Syntax ==
@@ -14,9 +14,9 @@ void SDL_AtomicLock(SDL_SpinLock* lock)
 == Function Parameters ==
 {|
 |'''lock'''
-|,,points to the lock,, ^a pointer to the desired spin lock; non-zero to lock^
+|,,points to the lock,, ^a pointer to the desired spin lock^
 |}
-<<Color2(green,If '''lock''' is for the address of the lock to use, where do you set it to non-0?  It seems like there should be another param or something...?)>>
+<<Color2(green,Does the function change the setting of the lock struct to non-0 automatically when it is called?  Unlock changes it back to 0?)>>
 
 == Code Examples ==
 ```c++
