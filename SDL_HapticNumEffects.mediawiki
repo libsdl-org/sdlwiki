@@ -18,7 +18,7 @@ int SDL_HapticNumEffects(SDL_Haptic* haptic)
 |}
 
 == Return Value ==
-Returns the number of effects the haptic device can store, or -1 on error; call [[SDL_GetError]]() for more information.
+Returns the number of effects the haptic device can store^or a negative error code on failure^,,, or -1 on error,,; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -26,7 +26,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-On some platforms this isn't fully supported, and therefore is an ''approximation''. Always check to see if your created effect was actually created and do not rely solely on [[SDL_HapticNumEffects]]().
+On some platforms this isn't fully supported, and therefore is an approximation.  Always check to see if your created effect was actually created and do not rely solely on [[SDL_HapticNumEffects]]().
+
+<<Color2(green,Is it important to specify ''how'' to check to see if your effect was created or is listing the query function below sufficient?)>>
 
 == Related Functions ==
 :[[SDL_HapticNumEffectsPlaying]]
