@@ -22,7 +22,7 @@ int SDL_HapticNewEffect(SDL_Haptic*       haptic,
 |}
 
 == Return Value ==
-Returns the ID of the effect on success, or -1 on error; call [[SDL_GetError]]() for more information.
+Returns the ID of the effect on success ^or a negative error code on failure^,,, or -1 on error,,; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
