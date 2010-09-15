@@ -61,7 +61,7 @@ If you use this function and you haven't used the SDL_INIT_VIDEO flag with eithe
 
 It is safe to call this function multiple times. [[SDL_VideoInit]]() will call [[SDL_VideoQuit]]() itself if the video subsystem has already been initialized.
 
-You can use [[SDL_GetNumVideoDrivers]]() or [[SDL_GetVideoDriver]]() to find a specific '''driver_name'''.
+You can use [[SDL_GetNumVideoDrivers]]() and [[SDL_GetVideoDriver]]() to find a specific '''driver_name'''.
 
 == Related Functions ==
 :[[SDL_GetNumVideoDrivers]]
