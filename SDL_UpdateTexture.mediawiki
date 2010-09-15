@@ -37,7 +37,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is a fairly slow function.  It is not intended for use with streaming textures.
+This is a fairly slow function.  It is intended for use with static textures.
 
 
 ----
