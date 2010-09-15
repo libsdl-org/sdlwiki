@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_UnlockTexture =
 Use this function to unlock a texture, uploading the changes to video memory, if needed.
@@ -17,7 +14,7 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 
 {|
 |'''texture'''
-|the texture locked by [[SDL_LockTexture]]() that is to be unlocked
+|the texture locked by [[SDL_LockTexture]]()
 |}
 
 == Code Examples ==
