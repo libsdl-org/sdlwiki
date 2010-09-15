@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetWindowIcon =
 Use this function to set the icon of the window.
@@ -29,7 +28,6 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
