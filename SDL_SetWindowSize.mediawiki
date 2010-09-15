@@ -30,11 +30,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function sets the size for a windowed window.  To change the size of a fullscreen window use [[SDL_SetWindowDisplayMode]]() instead.
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_GetWindowSize]]
-:[[SDL_SetWindowDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
