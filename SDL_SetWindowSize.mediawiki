@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetWindowSize =
 Use this function to set the size of the window's client area.
@@ -19,10 +18,10 @@ void SDL_SetWindowSize(SDL_Window* window,
 |the window to change
 |-
 |'''w'''
-|the width of the window ^in pixels^
+|the width of the window in pixels
 |-
 |'''h'''
-|the height of the window ^in pixels^
+|the height of the window in pixels
 |}
 
 == Code Examples ==
@@ -31,10 +30,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-You can't change the size of a fullscreen window, it automatically matches the size of the display mode.
+This function sets the size for a windowed window.  To change the size of a fullscreen window use [[SDL_SetWindowDisplayMode]]() instead.
 
 == Related Functions ==
 :[[SDL_GetWindowSize]]
+:[[SDL_SetWindowDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
