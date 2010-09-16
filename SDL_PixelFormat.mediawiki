@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_PixelFormat =
 A structure that contains pixel format information.
@@ -74,7 +73,7 @@ A structure that contains pixel format information.
 |}
 
 == Code Examples ==
-*<br/>8-bit pixel formats are the easiest to understand. Since its an 8-bit format, we have 8 '''!BitsPerPixel''' and 1 '''!BytesPerPixel'''. Since '''!BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:<br/>
+8-bit pixel formats are the easiest to understand. Since its an 8-bit format, we have 8 '''!BitsPerPixel''' and 1 '''!BytesPerPixel'''. Since '''!BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:<br/>
 ```c++
 SDL_Surface *surface;
 SDL_PixelFormat *fmt;
@@ -153,7 +152,6 @@ printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha
 .
 .
 ```
-<br/>*
 
 == Remarks ==
 Everything in the pixel format structure is read-only.
@@ -178,9 +176,9 @@ A pixel format has either a palette or masks.  If a palette is used '''Rmask''',
 |Uint32
 |}
 
-*<br/>An [[SDL_PixelFormat]] describes the format of the pixel data stored at the '''pixels''' field of an [[SDL_Surface]]. Every surface stores an [[SDL_PixelFormat]] in the '''format''' field.
+An [[SDL_PixelFormat]] describes the format of the pixel data stored at the '''pixels''' field of an [[SDL_Surface]]. Every surface stores an [[SDL_PixelFormat]] in the '''format''' field.
 
-If you wish to do pixel level modifications on a surface, then understanding how SDL stores its color information is essential. <br/>*  See [[#Code Examples|Code Examples]] above for more information.
+If you wish to do pixel level modifications on a surface, then understanding how SDL stores its color information is essential.  See [[#Code Examples|Code Examples]] above for more information.
 
 == Related Structures ==
 :[[SDL_Surface]]
