@@ -10,7 +10,7 @@
 
 == Introduction ==
 
-This category contains functions for handling pixel, palette, and color formats and conversions.
+This category contains functions for handling pixel formats and palettes.
 
 == Enumerations ==
 <<FullSearch(category:CategoryEnum CategoryPixels)>>
