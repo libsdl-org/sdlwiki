@@ -17,7 +17,7 @@ void SDL_RenderPresent(void)
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_RenderClear]] ???
+:[[SDL_RenderClear]] 
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
