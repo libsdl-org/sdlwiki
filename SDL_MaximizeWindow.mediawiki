@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_MaximizeWindow =
-Use this function to make the window as large as possible.
+Use this function to make a window as large as possible.
 
 
 == Syntax ==
