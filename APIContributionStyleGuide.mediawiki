@@ -10,7 +10,7 @@ This guide provides instructions for adding your own content to the Code Example
 
 Anyone may contribute '''Code Examples''' or '''Remarks''' per the instructions in this Style Guide.  Please check back periodically for updates.
 
-/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send an e-mail to slouken@libsdl.org
+/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send an e-mail to docs@libsdl.org so we can give you write access.
 
 If you would like to make other contributions beyond code examples and remarks, such as editing existing content or developing tutorials, please email docs@libsdl.org to coordinate efforts.
 
