@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetWindowIcon =
-Use this function to set the icon of the window.
+Use this function to set the icon of a window.
 
 
 == Syntax ==
@@ -17,7 +17,7 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 |the window to change
 |-
 |'''icon'''
-|the icon for the window
+|the icon for a window
 |}
 
 == Code Examples ==
