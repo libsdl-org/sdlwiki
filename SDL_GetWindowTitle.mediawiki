@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetWindowTitle =
-Use this function to get the title of the window, in UTF-8 format.
+Use this function to get the title of a window.
 
 
 == Syntax ==
