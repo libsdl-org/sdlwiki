@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetWindowTitle =
-Use this function to set the title of the window.
+Use this function to set the title of a window.
 
 
 == Syntax ==
