@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SetWindowSize =
-Use this function to set the size of the window's client area.
+Use this function to set the size of a window's client area.
 
 
 == Syntax ==
