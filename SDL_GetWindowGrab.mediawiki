@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetWindowGrab =
-Use this function to get the window's input grab mode.
+Use this function to get a window's input grab mode.
 
 
 == Syntax ==
