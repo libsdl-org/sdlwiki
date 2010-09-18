@@ -6,6 +6,9 @@ There are a number of SDL tutorials available from different sources.
 * [[Tutorials/TextInput|Text Input]]
 : Using SDL for text inputs with specific consideration for international users.
 
+* [http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_(C_/_SDL) OpenGL 3.2 and SDL]
+: Creating a Cross Platform OpenGL 3.2 Context in SDL
+
 == SDL 1.2 ==
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
