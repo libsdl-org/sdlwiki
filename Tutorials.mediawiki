@@ -3,6 +3,8 @@ There are a number of SDL tutorials available from different sources.
 
 
 == SDL 1.3 ==
+* [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 1.3 Haptic Interface]
+: Covers the basics of how to create and playback simple force feedback effects with SDL.
 * [http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_(C_/_SDL) OpenGL 3.2 and SDL]
 : Creating a Cross Platform OpenGL 3.2 Context in SDL
 
