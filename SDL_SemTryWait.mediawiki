@@ -18,11 +18,11 @@ int SDL_SemTryWait(SDL_sem* sem)
 |}
 
 == Return Value ==
-Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, and ,,-1 on error,, ^a negative error code on failure^; call [[SDL_GetError]]() for more information.
+Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 ''-or-''
 
-*<br/><<Color2(green,Modified slightly from the old wiki:)>>  Returns 0 if the semaphore was successfully locked ^(and decremented)^, SDL_MUTEX_TIMEDOUT if the thread would have suspended, or ,,-1 if there was an error,, ^a negative error code on failure^.
+*<br/><<Color2(green,Modified slightly from the old wiki:)>>  Returns 0 if the semaphore was successfully locked ^(and decremented)^, SDL_MUTEX_TIMEDOUT if the thread would have suspended, or a negative error code on failure.
 
 If the semaphore was not successfully locked, the semaphore will be unchanged. <br/>*
 
