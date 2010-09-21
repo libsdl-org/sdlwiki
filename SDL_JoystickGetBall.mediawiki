@@ -17,7 +17,7 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|a pointer to a structure containing joystick information ???
+|^a pointer to the joystick to query^
 |-
 |'''ball'''
 |the ball ,,indices,, ^index;^ start^s^ at index 0
@@ -31,6 +31,9 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 
 == Return Value ==
 Returns 0 on success, or -1 if you passed it invalid parameters; call [[SDL_GetError]]() for more information.
+
+<<Color2(green,Suggested alternate text here and in Remarks:)>><br/>
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.
 
 == Code Examples ==
 ```c++
@@ -46,6 +49,8 @@ printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 ```
 
 == Remarks ==
+<<Color2(green,Alt text continued:)>><br/>This function will return -1 if it is passed invalid parameters.
+
 *<br/>Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''. <br/>*
 
 == Related Functions ==
