@@ -46,8 +46,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 == Return Value ==
 Returns 1 if the audio filter is set up, 0 if there's no conversion needed, or ^a negative error code on failure^ ,,-1 if the format conversion is not supported,,; call [[SDL_GetError]]() for more information.
 
-<<Color2(green,Alternate text suggestion here and in Remarks:)>><br/>
-Returns 1 if the audio filter is set up, 0 if there is no conversion needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.
+<<Color2(green,Suggested alternate text here and in Remarks:)>><br/><<Color2(purple,Returns 1 if the audio filter is set up,)>> <<Color2(purple,0 if there is no conversion needed,)>> <<Color2(purple,or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.)>>
 
 
 == Code Examples ==
@@ -62,7 +61,7 @@ For information on audio formats see [[SDL_AudioSpec]].
 
 *<br/>Currently only rate conversions of 2^x^ and (1/2)^x^ with x > 0 are done, ,,nearing,, ^whichever most closely approximates^ the requested rate conversion.<br/>*
 
-<<Color2(green,If audio format conversion is not supported this function returns -1.)>>
+<<Color2(purple,If audio format conversion is not supported this function returns -1.)>>
 
 <<Color2(green,Is there a 'you can call' function to "automatically" get more information in this case like there was for [[SDL_SetTextureScaleMode]] [[SDL_SetTextureColorMod]] [[SDL_SetTextureBlendMode]] [[SDL_SetTextureAlphaMod]] etc?  I thought it would be [[SDL_ConvertAudio]]() but that seems to ''use'' the struct not set it up.  If this is the only other RF then does the programmer need to determine whether conversion is possible and manually set that as a fixed data value when the struct is first set up?)>>
 
