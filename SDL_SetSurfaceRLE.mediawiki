@@ -32,6 +32,8 @@ You can add your code example here
 == Remarks ==
 If RLE is enabled, colorkey and alpha blending blits are much faster, but the surface must be locked before directly accessing the pixels. 
 
+<<Color2(purple,This function returns -1 if the surface is not valid.)>>
+
 == Related Functions ==
 :[[SDL_LockSurface]]
 :[[SDL_UnlockSurface]]
