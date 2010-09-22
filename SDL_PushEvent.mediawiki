@@ -20,7 +20,9 @@ int SDL_PushEvent(SDL_Event* event)
 <<Color2(green,Most other functions w/ the event param say "If not NULL the next event is removed from the queue and stored in that area.")>>
 
 == Return Value ==
-Returns 1 on success, 0 if the event was filtered, or -1 if the event queue was full or there was some other error; call [[SDL_GetError]]() for more information.
+Returns 1 on success, 0 if the event was filtered, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+<<Color2(purple,If the event queue was full it returns -1.)>>
 
 == Code Examples ==
 ```c++
