@@ -22,7 +22,7 @@ int SDL_SetSurfaceBlendMode(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success, or -1 if the parameters are not valid; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
