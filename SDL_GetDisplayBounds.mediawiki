@@ -17,7 +17,7 @@ int SDL_GetDisplayBounds(int       index,
 |the index of the display to query
 |-
 |'''rect'''
-|a pointer to the [[SDL_Rect]] to fill with the display bounds
+|a pointer to the rectangle of type [[SDL_Rect]] to fill with the display bounds
 |}
 
 == Return Value ==
