@@ -25,8 +25,9 @@ int SDL_RenderCopy(SDL_Texture*    texture,
 |}
 
 == Return Value ==
-Returns 0 on success, or -1 if there is no rendering context current or the
-driver doesn't support the requested operation; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+<<Color2(purple,If there is no rendering context current or the driver doesn't support the requested operation it returns -1.)>>
 
 == Code Examples ==
 ```c++
