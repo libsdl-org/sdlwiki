@@ -18,7 +18,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 |a pointer to the surface of type [[SDL_Surface]] to be updated
 |-
 |'''rect'''
-|a pointer to a rectangle of type [[SDL_Rect]], or NULL for the entire render target
+|a pointer to a rectangle of type [[SDL_Rect]]'', or NULL for the entire render target''
 |}
 
 == Return Value ==
