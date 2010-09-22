@@ -22,7 +22,9 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0, or -1 if the surface format doesn't use a palette; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+<<Color2(purple,If the surface format doesn't use a palette it returns -1.)>>
 
 == Code Examples ==
 ```c++
@@ -33,7 +35,7 @@ You can add your code example here
 A single palette can be shared with many surfaces.
 
 == Related Functions ==
-:[[SDL_OtherFunction]] (none?)
+
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
