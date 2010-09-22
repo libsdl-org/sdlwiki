@@ -16,10 +16,10 @@ int SDL_FillRect(SDL_Surface*    dst,
 == Function Parameters ==
 {|
 |'''dst'''
-|a pointer to the destination surface / [[SDL_Surface]] containing the rectangle
+|a pointer to the surface of type [[SDL_Surface]] containing the rectangle
 |-
 |'''rect'''
-|a pointer to the rectangle / [[SDL_Rect]] to fill
+|a pointer to the rectangle of type [[SDL_Rect]] to fill'', or NULL for the entire render target''
 |-
 |'''color'''
 |the color to fill the rectangle with
