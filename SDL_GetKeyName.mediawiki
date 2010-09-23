@@ -18,7 +18,7 @@ const char* SDL_GetKeyName(SDLKey key)
 |}
 
 == Return Value ==
-A pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string ("").  <<Color2(green,Should key here be bold?  Don't think so.)>>
+Returns a pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string ("").  <<Color2(green,Should key here be bold?  Don't think so.)>>
 
 == Code Examples ==
 ```c++
@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-See SDL_scancode for details. ??? <<Color2(green,There is no info to link this to a page unless it links to SDL_keysym.  Should this section mention SDLKey?)>>
+See [[SDL_scancode]] for details. ??? <<Color2(green,There is no info to link this to a page unless it links to SDL_keysym which doesn't have a page.  Should this section mention [[SDLKey]]?)>>
 
 == Related Functions ==
 :[[SDL_GetKeyFromScancode]]
