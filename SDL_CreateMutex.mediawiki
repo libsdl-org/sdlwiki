@@ -12,7 +12,9 @@ SDL_mutex* SDL_CreateMutex(void)
 ```
 
 == Return Value ==
-^A pointer to an SDL_mutex structure to be initialized in an unlocked state.^
+Returns ^a pointer to an SDL_mutex structure to be initialized in an unlocked state.^
+
+<<Color2(green,What if it fails?  NULL?  Negative error code?)>>
 
 == Code Examples ==
 *
