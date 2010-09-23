@@ -14,11 +14,11 @@ SDLKey SDL_GetKeyFromScancode(SDL_scancode scancode)
 == Function Parameters ==
 {|
 |'''scancode'''
-|the desired SDL_scancode to query ???
+|the desired [[SDL_scancode]] to query ???
 |}
 
 == Return Value ==
-The [[SDLKey]] that corresponds to the given SDL_scancode. ???
+Returns the [[SDLKey]] that corresponds to the given [[SDL_scancode]]. ???
 
 == Code Examples ==
 ```c++
