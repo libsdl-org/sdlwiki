@@ -17,7 +17,9 @@ const char* SDL_GetAudioDriver(int index)
 |}
 
 == Return Value ==
-The name of the audio driver at the requested index.  
+Returns the name of the audio driver at the requested index.  
+
+<<Color2(green,What happens if it fails or there is no driver?  Empty ""?)>>
 
 == Code Examples ==
 ```c++
