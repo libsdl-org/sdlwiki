@@ -9,7 +9,7 @@ A structure that contains pixel format information.
 {|
 |[[SDL_Palette]]*
 |'''palette'''
-|a palette associated with this pixel format
+|a palette of type [[SDL_Palette]] associated with this pixel format
 |-
 |Uint8
 |'''Bits<code></code>Per<code></code>Pixel'''
