@@ -50,7 +50,7 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom (void*  pixels,
 |}
 
 == Return Value ==
-A pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
+Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
 
 == Code Examples ==
 ```c++
