@@ -38,7 +38,7 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 |}
 
 == Return Value ==
-A pointer to an [[SDL_Cursor]] structure filled with the cursor information. ???
+Returns a pointer to an [[SDL_Cursor]] structure filled with the cursor information. ???
 
 == Code Examples ==
 *
