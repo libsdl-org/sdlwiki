@@ -12,7 +12,7 @@ SDL_Window* SDL_GetKeyboardFocus(void)
 ```
 
 == Return Value ==
-^A pointer to the SDL_Window with keyboard focus.^
+Returns ^a pointer to the SDL_Window with keyboard focus.^  <<Color2(green,What happens on error?)>>
 
 == Code Examples ==
 ```c++
