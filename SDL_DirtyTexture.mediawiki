@@ -21,7 +21,7 @@ void SDL_DirtyTexture(SDL_Texture*    texture,
 |the number of rectangles pointed to by '''rects'''
 |-
 |'''rects'''
-|the pointer to an array of dirty rectangles
+|a pointer to an array of dirty rectangles of type [[SDL_Rect]]
 |}
 
 == Code Examples ==
