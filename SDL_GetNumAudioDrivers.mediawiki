@@ -11,7 +11,7 @@ int SDL_GetNumAudioDrivers(void)
 ```
 
 == Return Value ==
-The number of built in audio drivers.
+Returns the number of built in audio drivers.  <<Color2(green,Does this have an error state?)>>
 
 == Code Examples ==
 ```c++
