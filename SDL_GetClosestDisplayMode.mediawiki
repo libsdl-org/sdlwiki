@@ -21,7 +21,7 @@ SDL_DisplayMode* SDL_GetClosestDisplayMode(const SDL_DisplayMode* mode,
 |}
 
 == Return Value ==
-The passed in value '''closest''', or NULL if no matching video mode was available. 
+Returns the passed in value '''closest''', or NULL if no matching video mode was available. 
 
 == Code Examples ==
 ```c++
