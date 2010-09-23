@@ -47,7 +47,7 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 |}
 
 == Return Value ==
-A pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
+Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
 
 == Code Examples ==
 <<Color2(green,The following code example is from the old wiki but the params are no longer exactly the same.  Should it be removed or updated?)>>
