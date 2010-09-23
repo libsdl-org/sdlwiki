@@ -37,7 +37,7 @@ SDL_Window* SDL_CreateWindow(const char* title,
 |}
 
 == Return Value ==
-The ID of the window created, or 0 if window creation failed; call [[SDL_GetError]]() for more information.
+Returns the ID of the window created or 0 if window creation failed; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
