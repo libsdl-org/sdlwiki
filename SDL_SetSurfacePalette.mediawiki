@@ -15,10 +15,10 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|a pointer to the [[SDL_Surface]]
+|a pointer to the surface of type [[SDL_Surface]] ^to update^
 |-
 |'''palette'''
-|a pointer to the [[SDL_Palette]]
+|a pointer to the palette of type [[SDL_Palette]] ^to apply^
 |}
 
 == Return Value ==
