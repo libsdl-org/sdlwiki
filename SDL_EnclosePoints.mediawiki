@@ -30,7 +30,9 @@ SDL_bool SDL_EnclosePoints(const SDL_Point* points,
 |}
 
 == Return Value ==
-Returns SDL_TRUE if any points were within the clipping rect. ^What does it do if there are no points within the clipping rect?^
+Returns SDL_TRUE if any points were within the clipping rect. 
+
+<<Color2(green,What does it do if there are no points within the clipping rect?)>>
 
 == Code Examples ==
 ```c++
