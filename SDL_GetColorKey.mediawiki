@@ -22,7 +22,9 @@ int SDL_GetColorKey(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success, or -1 if the surface is not valid or colorkey is not enabled; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+If the surface is not valid or colorkey is not enabled it returns -1.  <<Color2(green,Where is "colorkey" from?  Is that in a struct or is it related to the '''key''' param?  Should it be in monospace?)>>
 
 == Code Examples ==
 ```c++
