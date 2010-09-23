@@ -22,7 +22,7 @@ Uint8 SDL_GetRelativeMouseState(int* x,
 |}
 
 == Return Value ==
-Returns an 8 bit button bitmask of the relative button state. ??? 
+Returns an 8 bit button bitmask of the relative button state. ???  <<Color2(green,Does this have an error state?)>>
 
 == Code Examples ==
 ```c++
