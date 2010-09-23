@@ -11,7 +11,7 @@ const char* SDL_GetCurrentVideoDriver(void)
 ```
 
 == Return Value ==
-The name of the current video driver or NULL if no driver has been initialized.
+Returns the name of the current video driver or NULL if no driver has been initialized.
 
 == Code Examples ==
 ```c++
