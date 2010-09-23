@@ -22,7 +22,7 @@ Uint8 SDL_GetMouseState(int* x,
 |}
 
 == Return Value ==
-Returns an 8 bit button bitmask of the current button state.
+Returns an 8 bit button bitmask of the current button state.  <<Color2(green,Does this have an error state?)>>
 
 == Code Examples ==
 ```c++
