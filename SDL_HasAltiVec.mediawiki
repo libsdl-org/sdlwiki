@@ -12,7 +12,7 @@ SDL_bool SDL_HasAltiVec(void)
 ```
 
 == Return Value ==
-Returns SDL_TRUE if the CPU has Alti<code></code>Vec features, or SDL_FALSE if not.
+Returns SDL_TRUE if the CPU has Alti<code></code>Vec features or SDL_FALSE if not.
 
 == Code Examples ==
 ```c++
