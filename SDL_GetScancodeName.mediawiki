@@ -14,7 +14,7 @@ const char* SDL_GetScancodeName(SDL_scancode scancode)
 == Function Parameters ==
 {|
 |'''scancode'''
-|the desired SDL_scancode to query ???
+|the desired [[SDL_scancode]] to query ???
 |}
 
 == Return Value ==
