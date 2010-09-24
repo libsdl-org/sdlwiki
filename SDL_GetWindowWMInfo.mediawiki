@@ -22,7 +22,7 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
 |}
 
 == Return Value ==
-SDL_TRUE if the function is implemented and the '''version''' member the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information. 
+Returns SDL_TRUE if the function is implemented and the <code>version</code> member of the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information. 
 
 == Code Examples ==
 ```c++
