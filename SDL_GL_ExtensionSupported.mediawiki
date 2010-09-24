@@ -17,7 +17,7 @@ SDL_bool SDL_GL_ExtensionSupported(const char* extension)
 |}
 
 == Return Value ==
-SDL_TRUE if the extension is supported, SDL_FALSE otherwise. 
+Returns SDL_TRUE if the extension is supported, SDL_FALSE otherwise. 
 
 == Code Examples ==
 ```c++
