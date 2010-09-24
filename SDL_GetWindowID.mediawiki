@@ -17,7 +17,7 @@ Uint32 SDL_GetWindowID(SDL_Window* window)
 |}
 
 == Return Value ==
-The ID of the window.
+Returns the ID of the window.
 
 == Code Examples ==
 ```c++
