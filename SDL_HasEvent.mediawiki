@@ -24,7 +24,7 @@ SDL_bool SDL_HasEvent(Uint32 type)
 |}
 
 == Return Value ==
-SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present. ???
+Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present. ???
 
 == Code Examples ==
 ```c++
