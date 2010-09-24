@@ -12,7 +12,7 @@ SDL_bool SDL_HasSSE2(void)
 ```
 
 == Return Value ==
-Returns SDL_True if the CPU has SSE2 features, or SDL_False if not.
+Returns SDL_TRUE if the CPU has SSE2 features or SDL_FALSE if not.
 
 == Code Examples ==
 ```c++
