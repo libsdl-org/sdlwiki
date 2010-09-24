@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticOpen =
-Use this function to open a __H__aptic device for usage.
+Use this function to open a Haptic device for usage.  <<Color2(green,Is Haptic supposed to be capitalized?)>>
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ SDL_Haptic* SDL_HapticOpen(int device_index)
 |}
 
 == Return Value ==
-The device identifier, or NULL on error.
+Returns the device identifier or NULL on error.
 
 == Code Examples ==
 ```c++
