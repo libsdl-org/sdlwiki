@@ -12,11 +12,11 @@ Uint32 SDL_GetTicks(void)
 ```
 
 == Return Value ==
-A 32-bit value representing the number of milliseconds since the SDL library initialized. 
+Returns a 32-bit value representing the number of milliseconds since the SDL library initialized. 
 
 ''-or-''
 
-*<br/>An unsigned 32 bit integer number.  The returned value represents the number of milliseconds since SDL library initialization <br/>*
+*<br/>Returns an unsigned 32 bit integer number.  The returned value represents the number of milliseconds since SDL library initialization. <br/>*
 
 == Code Examples ==
 ```c++
