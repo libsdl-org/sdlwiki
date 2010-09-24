@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticStopEffect =
-Use this function to stop the haptic effect on ''its associated'' haptic device.
+Use this function to stop the haptic effect on its associated haptic device.
 
 
 == Syntax ==
