@@ -12,7 +12,7 @@ SDL_bool SDL_Has3DNow(void)
 ```
 
 == Return Value ==
-Returns SDL_TRUE if the CPU has 3DNow!\ features, or SDL_FALSE if not. 
+Returns SDL_TRUE if the CPU has 3DNow!\ features or SDL_FALSE if not. 
 
 == Code Examples ==
 ```c++
