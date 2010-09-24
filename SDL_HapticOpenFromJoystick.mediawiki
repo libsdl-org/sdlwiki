@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticOpenFromJoystick =
-Use this function to open a __H__aptic device for ,,usage,, ^use^ from a Joystick device.
+Use this function to open a Haptic device for ,,usage,, ^use^ from a Joystick device.  <<Color2(green,Is Haptic supposed to be capitalized?)>>
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick* joystick)
 |}
 
 == Return Value ==
-Returns valid haptic device identifier on success, or NULL on error; call [[SDL_GetError]]() for more information.
+Returns a valid haptic device identifier on success or NULL on error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
