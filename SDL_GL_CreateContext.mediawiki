@@ -17,7 +17,7 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window* window)
 |}
 
 == Return Value ==
-The OpenGL context associated with '''window'''.
+Returns the OpenGL context associated with '''window'''.
 
 == Code Examples ==
 ```c++
