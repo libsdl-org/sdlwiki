@@ -22,7 +22,7 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 |}
 
 == Return Value ==
-The return value is one of the following positions:
+Returns one of the following ,,positions,,:
 {|
 |SDL_HAT_CENTERED
 |-
