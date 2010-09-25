@@ -25,8 +25,6 @@ void* SDL_LoadFunction(void*       handle,
 |}
 
 == Return Value ==
-<<Color2(green,This has a "void" RV but also a pointer. Should this info be reported in Remarks instead because it's not really a RV?)>>
-
 *<br/>Returns a pointer to the function or NULL if there was an error.<br/>*
 
 == Code Examples ==
