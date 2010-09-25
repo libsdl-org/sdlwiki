@@ -35,6 +35,8 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 == Return Value ==
 Returns a valid device ID that is >= 2 on success or 0 on failure; call [[SDL_GetError]]() for more information. 
 
+<<Color2(green,Although it is implied here and in Remarks would it be of value to specify that the ID is >=2 because device 1 is already open or is otherwise the default?)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
