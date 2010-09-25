@@ -18,8 +18,6 @@ void* SDL_LoadObject(const char* sofile)
 |}
 
 == Return Value ==
-<<Color2(green,This has a "void" RV but this text in the description. Should this info be reported in Remarks instead because it's not really a RV?)>>
-
 Returns a pointer to the object handle or NULL if there was an error.
 
 == Code Examples ==
