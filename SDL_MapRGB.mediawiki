@@ -30,9 +30,9 @@ Uint32 SDL_MapRGB(const SDL_PixelFormat* format,
 |}
 
 == Return Value ==
-A pixel value.
+Returns a pixel value.
 
-*<br/>Maps the RGB color value to the specified pixel format and returns the pixel value as a 32-bit int best approximating the given RGB color value for the given pixel format.
+*<br/>^This function^ Maps the RGB color value to the specified pixel format and returns the pixel value as a 32-bit int best approximating the given RGB color value for the given pixel format.
 
 If the format has a palette (8-bit) the index of the closest matching color in the palette will be returned.
 
