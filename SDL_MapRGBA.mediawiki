@@ -34,7 +34,7 @@ Uint32 SDL_MapRGBA(const SDL_PixelFormat* format,
 |}
 
 == Return Value ==
-A *32-bit* pixel value.
+Returns a *32-bit* pixel value.
 
 If the format has a palette (8-bit) the index of the closest matching color in the palette will be returned.
 
