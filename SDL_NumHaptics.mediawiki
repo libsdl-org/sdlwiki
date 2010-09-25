@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_NumHaptics =
-Use this function to count the number of __joysticks__ attached to the system.
+Use this function to count the number of ,,joysticks,, ^haptic devices^ attached to the system.
 
 
 == Syntax ==
@@ -12,7 +12,7 @@ int SDL_NumHaptics(void)
 ```
 
 == Return Value ==
-Returns the number of __haptic__ devices detected on the system, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the number of haptic devices detected on the system or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
