@@ -18,7 +18,9 @@ int SDL_PollEvent(SDL_Event* event)
 |}
 
 == Return Value ==
-Returns 1 if there are any pending events, or 0 if there are none available; call [[SDL_GetError]]() for more information.  <<Color2(green,Can this function produce an error or only 0?  Would you still call the error function?)>>
+Returns 1 if there are any pending events or 0 if there are none available; call [[SDL_GetError]]() for more information.  
+
+<<Color2(green,Can this function produce an error or only 0?  Would you still call the error function?)>>
 
 == Code Examples ==
 ```c++
