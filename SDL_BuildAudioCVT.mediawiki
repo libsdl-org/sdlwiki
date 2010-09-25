@@ -44,10 +44,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 <<Color2(green,Should "frequency or samples-per-second" be changed to "frequency (samples per second)" or can rate be two different types of units?)>>
 
 == Return Value ==
-Returns 1 if the audio filter is set up, 0 if there's no conversion needed, or ^a negative error code on failure^ ,,-1 if the format conversion is not supported,,; call [[SDL_GetError]]() for more information.
-
-<<Color2(green,Suggested alternate text here and in Remarks:)>><br/><<Color2(purple,Returns 1 if the audio filter is set up,)>> <<Color2(purple,0 if there is no conversion needed,)>> <<Color2(purple,or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.)>>
-
+Returns 1 if the audio filter is set up, 0 if there is no conversion needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
