@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SysWMinfo =
 A structure that contains system-dependent information about a window.
@@ -51,10 +50,13 @@ You can add your code example here
 == Remarks ==
 ''For X11 window management systems (Unix)''
 
- This structure is filled in by [[SDL_GetWindowWMInfo]]().
+This structure is filled in by [[SDL_GetWindowWMInfo]]().
 
- When [[SDL_GetWindowWMInfo]]() returns the structure holds information specific to the low level windowing system being used, which is one of SDL_SYSWM_TYPE.
- ||SDL_SYSWM_X11||the X11 windowing system||
+When [[SDL_GetWindowWMInfo]]() returns the structure holds information specific to the low level windowing system being used, which is one of SDL_SYSWM_TYPE.
+{|
+|SDL_SYSWM_X11
+|the X11 windowing system
+|}
 
 == Related Functions ==
 :[[SDL_GetWindowWMInfo]]
