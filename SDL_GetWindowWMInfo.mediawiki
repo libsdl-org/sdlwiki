@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetWindowWMInfo =
 Use this function to get driver specific information about a window.
@@ -15,10 +14,10 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
 == Function Parameters ==
 {|
 |'''window'''
-|^a pointer to^ the window about which information is being requested
+|the window about which information is being requested
 |-
 |'''info'''
-|^a pointer to the [[SDL_SysWMinfo]] structure to query^; see [[#Remarks|Remarks]] for details
+|a pointer to a structure that gets filled in; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
@@ -26,20 +25,18 @@ Returns SDL_TRUE if the function is implemented and the <code>version</code> mem
 
 == Code Examples ==
 ```c++
-//You typically use this function like this:
+#include "SDL_syswm.h"
+
 SDL_SysWMinfo info;
 SDL_VERSION(&info.version);
 if ( SDL_GetWindowWMInfo(&info) ) { ... }
 ```
 
-<<Color2(green,There is a typo in the header - SysWMInfo should be SysWMinfo. Corrected above already.)>>
-
 == Remarks ==
-Include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
+You must include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
 
-'''info''' ^requires that^ this structure^, [[SDL_SysWMinfo]],^ must be initialized with the SDL version, and is then filled in with information about the given window.
+The '''info''' structure must be initialized with the SDL version, and is then filled in with information about the given window, as shown in the [[#Code Examples|Code Example]].
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
