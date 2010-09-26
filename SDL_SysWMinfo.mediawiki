@@ -14,7 +14,7 @@ A structure that contains system-dependent information about a window.
 |-
 |SDL_version
 |'''version'''
-|the version field you fill in before you call [[SDL_GetWindowWMInfo]]()
+|the [[SDL_Version]] structure you fill in before you call [[SDL_GetWindowWMInfo]]()
 |-
 |HWND
 |'''window'''
@@ -26,7 +26,7 @@ A structure that contains system-dependent information about a window.
 |-
 |SDL_version
 |'''version'''
-|the version field you fill in before you call [[SDL_GetWindowWMInfo]]()
+|the [[SDL_Version]] structure you fill in before you call [[SDL_GetWindowWMInfo]]()
 |-
 |SDL_SYSWM_TYPE
 |'''subsystem'''
