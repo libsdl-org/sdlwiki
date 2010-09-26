@@ -22,11 +22,42 @@ SDL_bool SDL_EnclosePoints(const SDL_Point* points,
 |the number of points
 |-
 |'''clip'''
+|an optional rectangle of type [[SDL_Rect]]; see [[#Remarks|Remarks]] for details
+|-
+|'''result'''
+|a pointer to an [[SDL_Rect]] to be filled in
+|}
+<br/>
+<br/>
+{|
+|'''points'''
+|a pointer to an array of points ([[SDL_Points]]) to be enclosed
+|-
+|'''count'''
+|the number of points
+|-
+|'''clip'''
 |an optional rectangle ([[SDL_Rect]]); see [[#Remarks|Remarks]] for details
+|-
+|'''result'''
+|a pointer to a rectangle ([[SDL_Rect]]) to be filled in
+|}
+<br/>
+<br/>
+{|
+|'''points'''
+|a pointer to an array of [[SDL_Points|points]] to be enclosed
+|-
+|'''count'''
+|the number of points
+|-
+|'''clip'''
+|an optional [[SDL_Rect|rectangle]]; see [[#Remarks|Remarks]] for details
 |-
 |'''result'''
 |a pointer to a [[SDL_Rect|rectangle]] to be filled in
 |}
+
 
 == Return Value ==
 Returns SDL_TRUE if any points were within the clipping rect. 
