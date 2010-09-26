@@ -19,7 +19,7 @@ int SDL_SetPaletteColors(SDL_Palette*     palette,
 |the palette of type [[SDL_Palette]] to modify
 |-
 |'''colors'''
-|an array of [[SDL_Color]] entries to copy into the palette
+|a pointer to an array of [[SDL_Color]] entries to copy into the palette
 |-
 |'''firstcolor'''
 |the index of the first palette entry to modify
@@ -40,7 +40,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[ ]]
+:[[SDL_AllocPalette]]
+:[[SDL_CreateSurface]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
