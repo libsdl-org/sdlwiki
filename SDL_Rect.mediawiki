@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_Rect =
 A structure that defines a rectangle, with the origin at the upper left.
@@ -11,12 +8,20 @@ A structure that defines a rectangle, with the origin at the upper left.
 == Data Fields ==
 {|
 |int
-|'''x, y'''
-|the x and y location of the rectangle's upper left corner
+|'''x'''
+|the x location of the rectangle's upper left corner
 |-
 |int
-|'''w, h'''
-|the width ('''w''') and height ('''h''') of the rectangle
+|'''y'''
+|the y location of the rectangle's upper left corner
+|-
+|int
+|'''w'''
+|the height of the rectangle
+|-
+|int
+|'''h'''
+|the width of the rectangle
 |}
 
 == Code Examples ==
@@ -25,40 +30,23 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Below are listed as \sa in header. Should these be in Remarks?)>>
-
-SDL_Rect<code></code>Empty
- Returns true if the rectangle has no area.
- ```
-#define SDL_RectEmpty(X)    (((X)->w <= 0) || ((X)->h <= 0))
-```
-
-SDL_Rect<code></code>Equals
- Returns true if the two rectangles are equal.
- ```
-#define SDL_RectEquals(A, B)   (((A)->x == (B)->x) && ((A)->y == (B)->y) && \
-((A)->w == (B)->w) && ((A)->h == (B)->h))
-```
-
-*<br/>An [[SDL_Rect]] defines a rectangular area of pixels. It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.<br/>*
+An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.
 
 == Related Functions ==
-:[[SDL_BlitSurface]] *
-:[[SDL_DirtyTexture]]?
+:[[SDL_BlitSurface]] 
+:[[SDL_DirtyTexture]]
 :[[SDL_EnclosePoints]]
-:[[SDL_GetDisplayBounds]]?
+:[[SDL_GetDisplayBounds]]
 :[[SDL_HasIntersection]]
 :[[SDL_IntersectRect]]
-:[[SDL_LockTexture]]?
-:[[SDL_RenderCopy]]?
-:[[SDL_RenderReadPixels]]?
-:[[SDL_RenderDrawRect]]?
-:[[SDL_RenderDrawRects]]?
-:[[SDL_RenderWritePixels]]?
+:[[SDL_LockTexture]]
+:[[SDL_RenderCopy]]
+:[[SDL_RenderReadPixels]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_RenderWritePixels]]
 :[[SDL_UnionRect]]
-:[[SDL_UpdateTexture]]?
+:[[SDL_UpdateTexture]]
 
 ----
 [[CategoryStruct]], [[CategoryRect]]
