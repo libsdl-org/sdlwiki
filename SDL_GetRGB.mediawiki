@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetRGB =
 Use this function to get RGB values from a pixel in the specified format. 
@@ -39,12 +38,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>This function uses the entire 8-bit [0..255] range when converting color components from pixel formats with less than 8-bits per RGB component (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff, 0xff, 0xff] not [0xf8, 0xfc, 0xf8]). <br/>*
+This function uses the entire 8-bit [0..255] range when converting color components from pixel formats with less than 8-bits per RGB component (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff, 0xff, 0xff] not [0xf8, 0xfc, 0xf8]). 
 
 == Related Functions ==
 :[[SDL_GetRGBA]]
-:[[SDL_MapRGB]] *
-:[[SDL_MapRGBA]] *
+:[[SDL_MapRGB]]
+:[[SDL_MapRGBA]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
