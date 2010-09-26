@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Rectangle Functions =
 
@@ -11,14 +10,14 @@
 
 == Introduction ==
 
-This category contains functions for handling simple rectangle drawing including overlaps and merges.
+This category contains functions for handling simple rectangles including overlaps and merges.
 
 == Structures ==
 <<FullSearch(category:CategoryStruct CategoryRect)>>
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryRect -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryRect -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
