@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Point =
+A structure that contains ^the definition / location of a point^.
+
+
+== Data Fields ==
+{|
+|int
+|'''x'''
+|the x coordinate of the point
+|-
+|int
+|'''y'''
+|the y coordinate of the point
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+
+== Related Structures ==
+
+
+== Related Functions ==
+:[[SDL_EnclosePoints]]
+
+----
+[[CategoryStruct]], [[CategoryRect]]
