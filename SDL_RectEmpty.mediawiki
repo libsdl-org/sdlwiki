@@ -5,6 +5,8 @@
 = SDL_RectEmpty =
 Use this function to ^report if a rectangle has no area^.
 
+<<Color2(green,Is this one of those macros that should be labeled as a macro?  ie: the above would read "Use this macro to..." instead.)>>
+
 
 == Syntax ==
 ```c++
