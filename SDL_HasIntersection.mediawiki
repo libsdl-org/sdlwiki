@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_HasIntersection =
 Use this function to determine whether two rectangles intersect.
@@ -15,10 +14,10 @@ SDL_bool SDL_HasIntersection(const SDL_Rect* A,
 == Function Parameters ==
 {|
 |'''A'''
-|a pointer to a rectangle of type [[SDL_Rect]]
+|the first [[SDL_Rect]]
 |-
 |'''B'''
-|a pointer to another rectangle of type [[SDL_Rect]]
+|the second [[SDL_Rect]]
 |}
 
 == Return Value ==
@@ -33,7 +32,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_IntersectRect]]
 
 ----
 [[CategoryAPI]], [[CategoryRect]]
