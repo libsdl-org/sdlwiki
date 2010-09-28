@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_UnionRect =
 Use this function to calculate the union of two rectangles.
@@ -16,13 +15,13 @@ void SDL_UnionRect(const SDL_Rect* A,
 == Function Parameters ==
 {|
 |'''A'''
-|the first [[SDL_Rect]] to unite
+|the first [[SDL_Rect]]
 |-
 |'''B'''
-|the second [[SDL_Rect]] to unite
+|the second [[SDL_Rect]]
 |-
 |'''result'''
-|the [[SDL_Rect]] that represents the union
+|a pointer to an [[SDL_Rect]] that is filled with the union of rectangles '''A''' and '''B'''
 |}
 
 == Code Examples ==
@@ -32,9 +31,6 @@ You can add your code example here
 
 == Remarks ==
 ''You can add useful comments here''
-
-== Related Functions ==
-:[[SDL_OtherFunction]]
 
 ----
 [[CategoryAPI]], [[CategoryRect]]
