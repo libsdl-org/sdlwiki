@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_IntersectRectAndLine =
 Use this function to calculate the intersection of a rectangle and line segment.
@@ -18,19 +17,19 @@ SDL_bool SDL_IntersectRectAndLine(const SDL_Rect* rect,
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the rectangle of type [[SDL_Rect]] to be compared
+|the [[SDL_Rect]] to be compared
 |-
 |'''X1'''
-|a pointer to the starting X-coordinate of the line to be compared
+|a pointer to the starting X-coordinate of the line
 |-
 |'''Y1'''
-|a pointer to the starting Y-coordinate of the line to be compared
+|a pointer to the starting Y-coordinate of the line
 |-
 |'''X2'''
-|a pointer to the ending X-coordinate of the line to be compared
+|a pointer to the ending X-coordinate of the line
 |-
 |'''Y2'''
-|a pointer to the ending Y-coordinate of the line to be compared
+|a pointer to the ending Y-coordinate of the line
 |}
 
 == Return Value ==
@@ -42,7 +41,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function is used to clip a line segment to a rectangle.  The end points are modified from the starting coordinates ('''X1''', '''Y1''', '''X2''', and '''Y2''') to reflect any clipping that occurs.  A line segment contained entirely within the rectangle or that does not intersect will remain unchanged.  A line segment that crosses the rectangle at either or both ends will be clipped to the boundary of the rectangle and the new coordinates passed to '''X1''', '''Y1''', '''X2''', and/or '''Y2''' as necessary.
 
 == Related Functions ==
 :[[SDL_OtherFunction]]
