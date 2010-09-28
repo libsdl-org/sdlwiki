@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_IntersectRect =
 Use this function to calculate the intersection of two rectangles.
@@ -16,13 +15,13 @@ SDL_bool SDL_IntersectRect(const SDL_Rect* A,
 == Function Parameters ==
 {|
 |'''A'''
-|a pointer to a rectangle of type [[SDL_Rect]]
+|the first [[SDL_Rect]]
 |-
 |'''B'''
-|a pointer to another rectangle of type [[SDL_Rect]]
+|the second [[SDL_Rect]]
 |-
 |'''result'''
-|a pointer to be filled with the rectangle of type [[SDL_Rect]] that represents the intersection of '''A''' and '''B'''
+|a pointer to an [[SDL_Rect]] that is filled with the intersection of rectangles '''A''' and '''B'''
 |}
 
 == Return Value ==
@@ -37,7 +36,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_OtherFunction]]
+:[[SDL_HasIntersection]]
 
 ----
 [[CategoryAPI]], [[CategoryRect]]
