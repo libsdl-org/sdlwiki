@@ -41,10 +41,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is used to clip a line segment to a rectangle.  The end points are modified from the starting coordinates ('''X1''', '''Y1''', '''X2''', and '''Y2''') to reflect any clipping that occurs.  A line segment contained entirely within the rectangle or that does not intersect will remain unchanged.  A line segment that crosses the rectangle at either or both ends will be clipped to the boundary of the rectangle and the new coordinates passed to '''X1''', '''Y1''', '''X2''', and/or '''Y2''' as necessary.
-
-== Related Functions ==
-:[[SDL_OtherFunction]]
+This function is used to clip a line segment to a rectangle.  A line segment contained entirely within the rectangle or that does not intersect will remain unchanged.  A line segment that crosses the rectangle at either or both ends will be clipped to the boundary of the rectangle and the new coordinates saved in '''X1''', '''Y1''', '''X2''', and/or '''Y2''' as necessary.
 
 ----
 [[CategoryAPI]], [[CategoryRect]]
