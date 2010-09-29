@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_SYSWM_TYPE =
+An enumeration of the various supported windowing subsystems.
+
+
+== Values ==
+{|
+|SDL_SYSWM_UNKNOWN
+|description
+|-
+|SDL_SYSWM_WINDOWS
+|description
+|-
+|SDL_SYSWM_X11
+|description
+|-
+|SDL_SYSWM_DIRECTFB
+|description
+|-
+|SDL_SYSWM_COCOA
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+:[[SDL_SysWMinfo]]
+:[[SDL_SysWMmsg]]
+
+== Related Functions ==
+:[[SDL_GetWindowWMInfo]]???
+
+----
+[[CategoryEnum]], [[CategorySWM]]
