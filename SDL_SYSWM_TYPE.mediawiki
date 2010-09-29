@@ -9,19 +9,19 @@ An enumeration of the various supported windowing subsystems.
 == Values ==
 {|
 |SDL_SYSWM_UNKNOWN
-|description
+|^subsystem unknown^
 |-
 |SDL_SYSWM_WINDOWS
-|description
+|^Win32-based systems^
 |-
 |SDL_SYSWM_X11
-|description
+|^Apple-based systems^
 |-
 |SDL_SYSWM_DIRECTFB
 |description
 |-
 |SDL_SYSWM_COCOA
-|description
+|^Apple OS X-based systems^
 |}
 
 == Code Examples ==
