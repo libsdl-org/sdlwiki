@@ -8,6 +8,21 @@ A structure that contains system-dependent window manager messages.
 
 == Data Fields ==
 {|
+|SDL_version
+|'''version'''
+|an [[SDL_version]] structure that contains the current SDL version
+|-
+|SDL_SYSWM_TYPE
+|'''subsystem'''
+|the windowing system type; see [[#Remarks|Remarks]] for details
+|-
+|union
+|'''msg'''
+|the type of message ''-or'' ^the message to display^
+|}
+
+<<Color2(green,Below is old content temporarily here for reference.)>>
+{|
 |
 |
 |''For Windows''
@@ -57,7 +72,7 @@ You can add your code example here
 
 == Remarks ==
 SDL_SYSWM_TYPE may be one of the following:
-<<Include(SDL_SysWMinfo, , , from="of SDL_SYSWM_TYPE.", to="== Related Functions ==")>>
+<<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>
 
 
 ----
