@@ -10,7 +10,7 @@ A structure that contains system-dependent information about a window.
 {|
 |
 |
-|''For All''
+|''For All Subsystems''
 |-
 |SDL_version
 |'''version'''
@@ -22,7 +22,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''When subsystem is SDL_SYSWM_WINDOWS''
+|''For SDL_SYSWM_WINDOWS''
 |-
 |HWND
 |'''window'''
@@ -30,7 +30,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''When'' '''subsystem''' ''is SDL_SYSWM_X11
+|''For SDL_SYSWM_X11''
 |-
 |Display
 |'''info.x11.display'''
