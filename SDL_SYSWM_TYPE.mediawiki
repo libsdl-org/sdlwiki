@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SYSWM_TYPE =
 An enumeration of the various supported windowing subsystems.
@@ -8,20 +7,17 @@ An enumeration of the various supported windowing subsystems.
 
 == Values ==
 {|
-|SDL_SYSWM_UNKNOWN
-|^subsystem unknown^
-|-
 |SDL_SYSWM_WINDOWS
-|^Win32-based systems^
+|Microsoft Windows^®^
 |-
 |SDL_SYSWM_X11
-|^Apple-based systems^
+|X Window System
 |-
 |SDL_SYSWM_DIRECTFB
-|description
+|[http://www.directfb.org DirectFB]
 |-
 |SDL_SYSWM_COCOA
-|^Apple OS X-based systems^
+|Apple OS X
 |}
 
 == Code Examples ==
@@ -37,7 +33,7 @@ You can add your code example here
 :[[SDL_SysWMmsg]]
 
 == Related Functions ==
-:[[SDL_GetWindowWMInfo]]???
+:[[SDL_GetWindowWMInfo]]
 
 ----
 [[CategoryEnum]], [[CategorySWM]]
