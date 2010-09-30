@@ -17,16 +17,16 @@ int SDL_LowerBlit(SDL_Surface* src,
 == Function Parameters ==
 {|
 |'''src'''
-|a pointer to the source surface / [[SDL_Surface]] containing '''srcrect'''
+|a pointer to the [[SDL_Surface]] containing '''srcrect'''
 |-
 |'''srcrect'''
-|a pointer to the source rectangle / [[SDL_Rect]] to be queried
+|a pointer to the source [[SDL_Rect]] to be queried
 |-
 |'''dst'''
-|a pointer to the destination surface / [[SDL_Surface]] containing '''dstrect'''
+|a pointer to the destination [[SDL_Surface]] containing '''dstrect'''
 |-
 |'''dstrect'''
-|a pointer to the destination rectangle / [[SDL_Rect]] to be filled
+|a pointer to the destination [[SDL_Rect]] to be filled
 |}
 
 == Return Value ==
