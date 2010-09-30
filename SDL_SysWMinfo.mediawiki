@@ -8,6 +8,10 @@ A structure that contains system-dependent information about a window.
 
 == Data Fields ==
 {|
+|
+|
+|''For All''
+|-
 |SDL_version
 |'''version'''
 |an [[SDL_version]] structure that contains the current SDL version
@@ -16,20 +20,9 @@ A structure that contains system-dependent information about a window.
 |'''subsystem'''
 |the windowing system type; see [[#Remarks|Remarks]] for details
 |-
-|union
-|'''info'''
-|^the type of window^; see [[#Remarks|Remarks]] for details
-|}
-
-<<Color2(green,Below is old content temporarily here for reference only.)>>
-{|
 |
 |
-|''For Windows''
-|-
-|SDL_version
-|'''version'''
-|the [[SDL_version]] structure you fill in before you call [[SDL_GetWindowWMInfo]]()
+|''When subsystem is SDL_SYSWM_WINDOWS''
 |-
 |HWND
 |'''window'''
@@ -37,15 +30,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''For X11 window management systems (Unix)''
-|-
-|SDL_version
-|'''version'''
-|the [[SDL_version]] structure you fill in before you call [[SDL_GetWindowWMInfo]]()
-|-
-|SDL_SYSWM_TYPE
-|'''subsystem'''
-|the windowing system type; see [[#Remarks|Remarks]] for details
+|''When'' '''subsystem''' ''is SDL_SYSWM_X11
 |-
 |Display
 |'''info.x11.display'''
