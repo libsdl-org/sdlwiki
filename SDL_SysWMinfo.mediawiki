@@ -71,11 +71,9 @@ You can add your code example here
 ```
 
 == Remarks ==
---(''For X11 window management systems (Unix)'')--
-
 This structure is filled in by [[SDL_GetWindowWMInfo]]().
 
-When this structure is returned, it holds information about which low level system it is using, and ^'''info'''^ will be one of [[SDL_SYSWM_TYPE]]:
+When this structure is filled in it holds information about the window and '''subsystem''' will be one of [[SDL_SYSWM_TYPE]] corresponding to the windowing system in use:
 <<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>
 
 
