@@ -14,7 +14,7 @@ int SDL_RenderFillRects(const SDL_Rect** rect,
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to an array of destination rectangles of type [[SDL_Rect]]
+|a pointer to an array of destination [[SDL_Rect]] structures
 |-
 |'''count'''
 |the number of rectangles
