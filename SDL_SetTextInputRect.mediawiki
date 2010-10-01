@@ -14,7 +14,7 @@ void SDL_SetTextInputRect(SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the rectangle of type [[SDL_Rect]]'', or NULL for the entire render target''
+|the [[SDL_Rect]] to receive text^, or NULL for the entire render target^
 |}
 
 == Code Examples ==
