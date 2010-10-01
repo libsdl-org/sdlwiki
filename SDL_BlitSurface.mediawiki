@@ -17,23 +17,19 @@ int SDL_BlitSurface(SDL_Surface* src,
 == Function Parameters ==
 {|
 |'''src'''
-|a pointer to the source surface / [[SDL_Surface]] containing '''srcrect'''
+|a pointer to the source [[SDL_Surface]] containing '''srcrect'''
 |-
 |'''srcrect'''
-|a pointer to the source rectangle / [[SDL_Rect]] to be queried
+|a pointer to the [[SDL_Rect]] containing the source pixels
 |-
 |'''dst'''
-|a pointer to the destination surface / [[SDL_Surface]] containing '''dstrect'''
+|a pointer to the destination [[SDL_Surface]] containing '''dstrect'''
 |-
 |'''dstrect'''
-|a pointer to the destination rectangle / [[SDL_Rect]] to be filled
+|a pointer to the destination [[SDL_Rect]] to be filled
 |}
 
 == Return Value ==
-If the blit is successful it returns 0, otherwise it returns ^a negative error code on failure^ ,,-1 on failure,,; call [[SDL_GetError]]() for more information.
-
-''-or-''
-
 Returns 0 if the blit is successful or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 See [[#video|Remarks]] for details if the return value is -2.
