@@ -19,7 +19,7 @@ int SDL_UpdateTexture(SDL_Texture*    texture,
 |the texture to update
 |-
 |'''rect'''
-|a pointer to the [[SDL_Rect]] to update, or NULL to update the entire texture
+|a pointer to the [[SDL_Rect]] representing the area to update, or NULL to update the entire texture
 |-
 |'''pixels'''
 |the raw pixel data
