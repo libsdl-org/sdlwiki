@@ -13,7 +13,7 @@ int SDL_RenderFillRect(const SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|a pointer to the destination [[SDL_Rect]] to fill, or NULL for the entire rendering target
+|a pointer to the [[SDL_Rect]] representing the area to fill, or NULL for the entire rendering target
 |}
 
 == Return Value ==
