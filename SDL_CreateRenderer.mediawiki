@@ -15,7 +15,7 @@ int SDL_CreateRenderer(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window where rendering is displayed
+|the SDL_Window where rendering is displayed
 |-
 |'''index'''
 |the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags
