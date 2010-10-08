@@ -17,7 +17,7 @@ SDL_Texture* SDL_CreateTextureFromSurface(Uint32       format,
 |one of the enumerated values in [[SDL_PixelFormatEnum]], or 0 to pick an appropriate format; see [[#format|Remarks]] for details
 |-
 |'''surface'''
-|the surface containing pixel data used to fill the texture
+|the [[SDL_Surface]] containing pixel data used to fill the texture
 |}
 
 == Return Value ==
