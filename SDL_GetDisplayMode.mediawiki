@@ -17,7 +17,7 @@ int SDL_GetDisplayMode(int              index,
 |the index of the requested display mode
 |-
 |'''mode'''
-|a pointer to an [[SDL_DisplayMode]] structure that is filled in with the mode '''index'''
+|an [[SDL_DisplayMode]] structure that is filled in with the mode '''index'''
 |}
 
 == Return Value ==
