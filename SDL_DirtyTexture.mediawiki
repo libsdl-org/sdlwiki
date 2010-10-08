@@ -15,13 +15,13 @@ void SDL_DirtyTexture(SDL_Texture*    texture,
 == Function Parameters ==
 {|
 |'''texture'''
-|the texture to mark dirty, which was created with SDL_TEXTUREACCESS_STREAMING
+|the SDL_Texture to mark dirty, which was created with SDL_TEXTUREACCESS_STREAMING
 |-
 |'''numrects'''
 |the number of rectangles pointed to by '''rects'''
 |-
 |'''rects'''
-|a pointer to an array of dirty rectangles of type [[SDL_Rect]]
+|an array of [[SDL_Rect]] structures representing dirty rectangles
 |}
 
 == Code Examples ==
