@@ -13,7 +13,7 @@ void SDL_DestroyRenderer(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window associated with the renderer to be freed
+|the SDL_Window associated with the renderer to be freed
 |}
 
 == Code Examples ==
