@@ -17,7 +17,7 @@ int SDL_GetRenderDriverInfo(int               index,
 |the index of the driver to query information about
 |-
 |'''info'''
-|a pointer to an [[SDL_RendererInfo]] struct to be filled with information on the rendering driver
+|an [[SDL_RendererInfo]] structure to be filled with information on the rendering driver
 |}
 
 == Return Value ==
