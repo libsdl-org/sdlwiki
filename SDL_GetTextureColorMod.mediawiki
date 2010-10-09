@@ -16,7 +16,7 @@ int SDL_GetTextureColorMod(SDL_Texture* texture,
 == Function Parameters ==
 {|
 |'''texture'''
-|the texture to query
+|the SDL_Texture to query
 |-
 |'''r'''
 |a pointer filled in with the current red color value
