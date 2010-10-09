@@ -15,7 +15,7 @@ void SDL_SetWindowSize(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to change
+|the SDL_Window to change
 |-
 |'''w'''
 |the width of the window in pixels
