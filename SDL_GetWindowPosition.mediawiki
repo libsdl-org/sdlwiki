@@ -15,7 +15,7 @@ void SDL_GetWindowPosition(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to query
+|the SDL_Window to query
 |-
 |'''x'''
 |a pointer filled in with the x coordinate of the window
