@@ -13,7 +13,7 @@ void SDL_GL_SwapWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to update
+|the SDL_Window to update
 |}
 
 == Code Examples ==
