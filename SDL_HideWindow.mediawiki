@@ -13,7 +13,7 @@ void SDL_HideWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to be hidden
+|the SDL_Window to be hidden
 |}
 
 == Code Examples ==
