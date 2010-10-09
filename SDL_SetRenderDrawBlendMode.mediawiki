@@ -13,7 +13,7 @@ int SDL_SetRenderDrawBlendMode(int blendMode)
 == Function Parameters ==
 {|
 |'''blendMode'''
-|[[SDL_BlendMode]] to use for blending; see [[#blendMode|Remarks]] for details
+|the [[SDL_BlendMode]] to use for blending; see [[#blendMode|Remarks]] for details
 |}
 
 == Return Value ==
