@@ -14,10 +14,10 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window about which information is being requested
+|the SDL_Window about which information is being requested
 |-
 |'''info'''
-|a pointer to an [[SDL_SysWMinfo]] structure that is filled in with window information; see [[#Remarks|Remarks]] for details
+|an [[SDL_SysWMinfo]] structure that is filled in with window information; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
