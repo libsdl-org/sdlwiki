@@ -14,7 +14,7 @@ void SDL_SetWindowGrab(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to change
+|the SDL_Window to change
 |-
 |'''mode'''
 |1 to grab input or 0 to release input
