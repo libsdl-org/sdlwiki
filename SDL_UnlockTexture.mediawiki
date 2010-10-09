@@ -14,7 +14,7 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 
 {|
 |'''texture'''
-|the texture locked by [[SDL_LockTexture]]()
+|the SDL_Texture structure locked by [[SDL_LockTexture]]()
 |}
 
 == Code Examples ==
