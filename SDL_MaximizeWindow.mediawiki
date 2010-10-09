@@ -13,7 +13,7 @@ void SDL_MaximizeWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to be maximized
+|the SDL_Window to be maximized
 |}
 
 == Code Examples ==
