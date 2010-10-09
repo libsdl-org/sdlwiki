@@ -14,7 +14,7 @@ int SDL_RenderDrawLines(const SDL_Point* points,
 == Function Parameters ==
 {|
 |'''points'''
-|the points along the lines
+|an array of [[SDL_Point]] structures representing points along the lines
 |-
 |'''count'''
 |the number of points, drawing count-1 lines
