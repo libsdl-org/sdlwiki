@@ -13,7 +13,7 @@ void SDL_RaiseWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to be raised
+|the SDL_Window to be raised
 |}
 
 == Code Examples ==
