@@ -16,10 +16,10 @@ int SDL_UpdateTexture(SDL_Texture*    texture,
 == Function Parameters ==
 {|
 |'''texture'''
-|the texture to update
+|the SDL_Texture to update
 |-
 |'''rect'''
-|a pointer to the [[SDL_Rect]] representing the area to update, or NULL to update the entire texture
+|the [[SDL_Rect]] structure representing the area to update, or NULL to update the entire texture
 |-
 |'''pixels'''
 |the raw pixel data
