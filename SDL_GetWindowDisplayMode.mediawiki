@@ -14,10 +14,10 @@ int SDL_GetWindowDisplayMode(SDL_Window*      window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to query
+|the SDL_Window to query
 |-
 |'''mode'''
-|a pointer to the [[SDL_DisplayMode]] to be filled in
+|the [[SDL_DisplayMode]] structure to be filled in
 |}
 
 == Return Value ==
