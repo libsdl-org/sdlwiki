@@ -13,7 +13,7 @@ void SDL_GL_DeleteContext(SDL_GLContext context)
 == Function Parameters ==
 {|
 |'''context'''
-|the context to be deleted
+|the SDL_GLContext to be deleted
 |}
 
 == Code Examples ==
