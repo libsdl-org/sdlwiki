@@ -13,7 +13,7 @@ Uint32 SDL_GetWindowFlags(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to query
+|the SDL_Window to query
 |}
 
 == Return Value ==
