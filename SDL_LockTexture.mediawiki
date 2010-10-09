@@ -20,7 +20,7 @@ int SDL_LockTexture(SDL_Texture*    texture,
 |the SDL_Texture to lock for access, which was created with SDL_TEXTUREACCESS_STREAMING
 |-
 |'''rect'''
-|the [[SDL_Rect]] structure representing the area to lock for access; NULL to lock the entire texture
+|an [[SDL_Rect]] structure representing the area to lock for access; NULL to lock the entire texture
 |-
 |'''markDirty'''
 |if this is non-zero the locked area will be marked dirty when the texture is unlocked
