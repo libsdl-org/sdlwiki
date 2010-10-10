@@ -30,7 +30,7 @@ int SDL_ConvertPixels(int         width,
 |the format of the source pixels, in bits
 |-
 |'''src'''
-|a pointer to the source pixels
+|,,a pointer to,, the source pixels
 |-
 |'''src_pitch'''
 |the pitch of the block to copy
@@ -39,7 +39,7 @@ int SDL_ConvertPixels(int         width,
 |the format of the destination pixels, in bits
 |-
 |'''dst'''
-|a pointer to be filled with new pixel data
+|^a pointer to ^be filled with new pixel data
 |-
 |'''dst_pitch'''
 |the pitch of the destination pixels
