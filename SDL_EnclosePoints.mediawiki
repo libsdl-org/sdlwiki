@@ -16,7 +16,7 @@ SDL_bool SDL_EnclosePoints(const SDL_Point* points,
 == Function Parameters ==
 {|
 |'''points'''
-|a pointer to an array of [[SDL_Point]] structures representing points to be enclosed
+|an array of [[SDL_Point]] structures representing points to be enclosed
 |-
 |'''count'''
 |the number of structures in the '''points''' array
@@ -25,7 +25,7 @@ SDL_bool SDL_EnclosePoints(const SDL_Point* points,
 |an [[SDL_Rect]] used for clipping or NULL to enclose all points; see [[#Remarks|Remarks]] for details
 |-
 |'''result'''
-|a pointer to an [[SDL_Rect]] to be filled in
+|--(a pointer to)-- an [[SDL_Rect]] to be filled in
 |}
 
 
