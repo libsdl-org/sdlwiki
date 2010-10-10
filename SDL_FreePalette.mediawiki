@@ -13,7 +13,7 @@ void SDL_FreePalette(SDL_Palette* palette)
 == Function Parameters ==
 {|
 |'''palette'''
-|the palette of type [[SDL_Palette]] to be freed
+|the [[SDL_Palette]] to be freed
 |}
 
 == Code Examples ==
