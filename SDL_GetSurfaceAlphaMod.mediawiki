@@ -15,10 +15,10 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to query
+|the [[SDL_Surface]] to query
 |-
 |'''alpha'''
-|a pointer filled in with the source alpha value
+|,,a pointer filled in with ,,the source alpha value
 |}
 
 == Return Value ==
