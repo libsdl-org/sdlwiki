@@ -15,10 +15,10 @@ void SDL_GetClipRect(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|^the surface to query^ ''-or-'' ^a pointer to the destination surface^
+|^the [[SDL_Surface]] to clip / fill^ ''-or-'' ^the destination [[SDL_Surface]]^
 |-
 |'''rect'''
-|must be a pointer to a valid rectangle which will be filled with the correct values
+|must be ,,a pointer to ,,a valid ,,rectangle,, ^[[SDL_Rect]]^ which will be filled with the correct values
 |}
 
 == Code Examples ==
