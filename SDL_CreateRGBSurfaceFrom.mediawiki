@@ -22,7 +22,7 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom (void*  pixels,
 == Function Parameters ==
 {|
 |'''pixels'''
-|a pointer to a set of pixels to use on the surface
+|,,a pointer to ,,a set of pixels to use on the surface
 |-
 |'''width'''
 |the width of the surface
