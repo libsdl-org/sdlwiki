@@ -17,16 +17,16 @@ int SDL_BlitSurface(SDL_Surface* src,
 == Function Parameters ==
 {|
 |'''src'''
-|a pointer to the source [[SDL_Surface]] containing '''srcrect'''
+|the ,,source,, [[SDL_Surface]] ^structure^ containing '''srcrect''' / the source rectangle
 |-
 |'''srcrect'''
-|a pointer to the [[SDL_Rect]] containing the source pixels
+|the [[SDL_Rect]] ^structure representing / describing^ ,,containing,, the source pixels
 |-
 |'''dst'''
-|a pointer to the destination [[SDL_Surface]] containing '''dstrect'''
+|the ,,destination,, [[SDL_Surface]] ^structure^ containing '''dstrect''' / the destination rectangle
 |-
 |'''dstrect'''
-|a pointer to the destination [[SDL_Rect]] to be filled
+|the destination [[SDL_Rect]] ^structure^ to be filled ^with / by the blit^
 |}
 
 == Return Value ==
@@ -40,7 +40,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,Should colour be changed to color?)>>
+<<Color2(green,Changed colour to color.)>>
 
 This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]](). <<Color2(green,Does this remark apply only to Upper<code></code>Blit and not to Blit<code></code>Surface?)>>
 
@@ -69,7 +69,7 @@ The blit semantics for surfaces with and without alpha and colorkey are defined 
    SDL_SRCCOLORKEY ignored.
   SDL_SRCALPHA not set:
    copy RGB.
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source colour key, ignoring alpha in the comparison.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source color key, ignoring alpha in the comparison.
 
  RGB->RGBA:
   SDL_SRCALPHA set:
@@ -78,7 +78,7 @@ The blit semantics for surfaces with and without alpha and colorkey are defined 
   SDL_SRCALPHA not set:
    copy RGB, set destination alpha to source per-surface alpha value.
   both:
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the source colour key.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the source color key.
 
  RGBA->RGBA:
   SDL_SRCALPHA set:
@@ -87,7 +87,7 @@ The blit semantics for surfaces with and without alpha and colorkey are defined 
    SDL_SRCCOLORKEY ignored.
   SDL_SRCALPHA not set:
    copy all of RGBA to the destination.
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source colour key, ignoring alpha in the comparison.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source color key, ignoring alpha in the comparison.
 
  RGB->RGB:
   SDL_SRCALPHA set:
@@ -95,7 +95,7 @@ The blit semantics for surfaces with and without alpha and colorkey are defined 
   SDL_SRCALPHA not set:
    copy RGB.
   both:
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the source colour key.
+   if SDL_SRCCOLORKEY set, only copy the pixels matching the source color key.
  \endverbatim
 
 <span id="video"></span> If either of the surfaces were in video memory, and the blit returns -2, the video memory was lost, so it should be reloaded with artwork and re-blitted:
@@ -117,16 +117,16 @@ This happens under DirectX 5.0 when the system switches away from your fullscree
 ```
 if (source surface has SDL_SRCALPHA set) {
     if (source surface has alpha channel (that is, format->Amask != 0))
-        blit using per-pixel alpha, ignoring any colour key
+        blit using per-pixel alpha, ignoring any color key
     else {
         if (source surface has SDL_SRCCOLORKEY set)
-            blit using the colour key AND the per-surface alpha value
+            blit using the color key AND the per-surface alpha value
         else
             blit using the per-surface alpha value
     }
 } else {
     if (source surface has SDL_SRCCOLORKEY set)
-        blit using the colour key
+        blit using the color key
     else
         ordinary opaque rectangular blit
 }
