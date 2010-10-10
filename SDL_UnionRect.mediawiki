@@ -21,7 +21,7 @@ void SDL_UnionRect(const SDL_Rect* A,
 |the second [[SDL_Rect]]
 |-
 |'''result'''
-|a pointer to an [[SDL_Rect]] that is filled with the union of rectangles '''A''' and '''B'''
+|--(a pointer to)-- an [[SDL_Rect]] that is filled with the union of rectangles '''A''' and '''B'''
 |}
 
 == Code Examples ==
