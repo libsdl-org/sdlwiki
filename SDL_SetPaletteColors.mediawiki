@@ -16,10 +16,10 @@ int SDL_SetPaletteColors(SDL_Palette*     palette,
 == Function Parameters ==
 {|
 |'''palette'''
-|the palette of type [[SDL_Palette]] to modify
+|the [[SDL_Palette]] to modify
 |-
 |'''colors'''
-|a pointer to an array of [[SDL_Color]] entries to copy into the palette
+|an array of [[SDL_Color]] entries to copy into the palette
 |-
 |'''firstcolor'''
 |the index of the first palette entry to modify
