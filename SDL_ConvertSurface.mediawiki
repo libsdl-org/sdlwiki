@@ -16,7 +16,7 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
 == Function Parameters ==
 {|
 |'''src'''
-|the surface to copy and map from
+|the [[SDL_Surface]] to copy and map from
 |-
 |'''fmt'''
 |the [[SDL_PixelFormat]] to apply
