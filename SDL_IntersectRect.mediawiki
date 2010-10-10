@@ -21,7 +21,7 @@ SDL_bool SDL_IntersectRect(const SDL_Rect* A,
 |the second [[SDL_Rect]]
 |-
 |'''result'''
-|a pointer to an [[SDL_Rect]] that is filled with the intersection of rectangles '''A''' and '''B'''
+|--(a pointer to)-- an [[SDL_Rect]] that is filled with the intersection of rectangles '''A''' and '''B'''
 |}
 
 == Return Value ==
