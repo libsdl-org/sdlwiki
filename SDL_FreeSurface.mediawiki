@@ -14,7 +14,7 @@ void SDL_FreeSurface(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|^a pointer to the [[SDL_Surface]] to free^ ''--or--'' *a pointer to the surface to delete; ,,it is safe to pass NULL as surface,,, ^may be NULL^ in which case [[SDL_FreeSurface]]() will do nothing*
+|^the [[SDL_Surface]] to free^ ''--or--'' *,,a pointer to,, the surface to delete; ,,it is safe to pass NULL as surface,,, ^if NULL^ ,,in which case,, [[SDL_FreeSurface]]() will do nothing*
 |}
 
 == Code Examples ==
