@@ -22,15 +22,15 @@ A structure that contains mouse motion event ,,structure,, ^information^ (event.
 |-
 |Uint8
 |'''padding1'''
-|
+|^8 empty bits to total 32^???
 |-
 |Uint8
 |'''padding2'''
-|
+|^8 empty bits to total 32^???
 |-
 |Uint8
 |'''padding3'''
-|
+|^8 empty bits to total 32^???
 |-
 |int
 |'''x'''
