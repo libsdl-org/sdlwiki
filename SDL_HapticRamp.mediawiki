@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticRamp =
-A structure that contains a template for a Ramp effect.
+A structure that contains a template for a ramp effect.
 
 
 == Data Fields ==
@@ -42,7 +42,7 @@ A structure that contains a template for a Ramp effect.
 |-
 |Uint16
 |'''interval'''
-|how soon it can be triggered again after button
+|how soon it can be triggered again after '''button'''
 |-
 |
 |
