@@ -15,10 +15,10 @@ int SDL_HapticEffectSupported(SDL_Haptic*       haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device to ,,check on,, ^query^
+|^the^ SDL_Haptic device to ,,check on,, ^query^
 |-
 |'''effect'''
-|^a pointer to the desired^ effect ,,to check to see if it is supported,,
+|^the desired^ effect ,,to check to see if it is supported,,
 |}
 
 == Return Value ==
