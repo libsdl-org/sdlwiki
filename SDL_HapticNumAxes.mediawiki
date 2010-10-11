@@ -14,7 +14,7 @@ int SDL_HapticNumAxes(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|the haptic device to query ^for an axis count^
+|the SDL_Haptic device to query
 |}
 
 == Return Value ==
