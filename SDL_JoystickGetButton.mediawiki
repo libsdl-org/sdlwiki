@@ -15,11 +15,13 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|a pointer to a structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information ???
 |-
 |'''button'''
 |the button ,,indices,, ^index;^ start^s^ at index 0
 |}
+
+<<Color2(green,Is it possible to use more than one index at a time for '''button'''?)>>
 
 == Return Value ==
 *<br/>Returns 1 if the specified button is pressed, 0 otherwise.<br/>*
