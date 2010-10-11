@@ -16,7 +16,7 @@ int SDL_SetColorKey(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface / [[SDL_Surface]] to update
+|the [[SDL_Surface]] to update
 |-
 |'''flag'''
 |non-zero to enable colorkey, 0 to disable colorkey^; see [[#Remarks|Remarks]] for details^
@@ -26,7 +26,7 @@ int SDL_SetColorKey(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success, or -1 if the surface is not valid; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
