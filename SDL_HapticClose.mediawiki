@@ -14,7 +14,7 @@ void SDL_HapticClose(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ haptic device to close
+|the SDL_Haptic device to close
 |}
 
 == Code Examples ==
