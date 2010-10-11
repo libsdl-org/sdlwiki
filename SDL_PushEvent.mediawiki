@@ -14,10 +14,10 @@ int SDL_PushEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|^a pointer to the [[SDL_Event]] to be added to the queue^
+|^the [[SDL_Event]] to be added to the queue^
 |}
 
-<<Color2(green,Most other functions w/ the event param say "If not NULL the next event is removed from the queue and stored in that area.")>>
+<<Color2(green,Most other functions w/ the event param say "If not NULL the next event is removed from the queue and stored in that area."  Does that apply here?)>>
 
 == Return Value ==
 Returns 1 on success, 0 if the event was filtered, or a negative error code on failure; call [[SDL_GetError]]() for more information.
