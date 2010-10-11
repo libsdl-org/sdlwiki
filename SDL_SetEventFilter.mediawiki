@@ -21,6 +21,8 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 |^a pointer filled with user-specified information to be filtered^
 |}
 
+<<Color2(green,Should SDL_EventFilter have a page? Be detailed in Remarks?  Is userdata an exception to the 'pointer rule'?)>>
+
 == Code Examples ==
 <<Color2(green,Does this belong in Syntax or Remarks instead?)>>
 ```c++
