@@ -14,7 +14,7 @@ void SDL_FlushEvent(Uint32 type)
 == Function Parameters ==
 {|
 |'''type'''
-|^the type of event to be queried ???; see [[SDL_Event]]/[[SDL_EventType]] ??? for details^
+|^the type of event to be cleared???; see [[SDL_Event]]/[[SDL_EventType]] ??? for details^
 |}
 
 == Code Examples ==
