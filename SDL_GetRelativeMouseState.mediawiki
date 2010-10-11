@@ -15,11 +15,13 @@ Uint8 SDL_GetRelativeMouseState(int* x,
 == Function Parameters ==
 {|
 |'''x'''
-|^a pointer filled with the last recorded x coordinate of the mouse^
+|,,a pointer filled with ,,^the last recorded x coordinate of the mouse^
 |-
 |'''y'''
-|^a pointer filled with the last recorded y coordinate of the mouse^
+|,,a pointer filled with ,,^the last recorded y coordinate of the mouse^
 |}
+
+<<Color2(green,Should this be an exception to the 'pointer rule'?)>>
 
 == Return Value ==
 Returns an 8 bit button bitmask of the relative button state. ???  <<Color2(green,Does this have an error state?)>>
