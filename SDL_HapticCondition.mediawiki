@@ -7,8 +7,6 @@ A structure that contains a template for a condition effect.
 
 
 == Data Fields ==
-<<Color2(green,Section title formats should be adjusted to match [[SDL_HapticConstant]] once a final format is decided.)>>
-
 {|
 |
 |
