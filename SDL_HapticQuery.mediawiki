@@ -15,7 +15,7 @@ unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|the haptic device to query
+|the SDL_Haptic device to query
 |}
 
 == Return Value ==
