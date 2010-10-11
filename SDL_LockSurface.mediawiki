@@ -14,7 +14,7 @@ int SDL_LockSurface(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|a pointer to the [[SDL_Surface]] to be locked
+|the [[SDL_Surface]] to be locked
 |}
 
 == Return Value ==
