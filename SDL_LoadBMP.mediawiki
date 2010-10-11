@@ -14,7 +14,7 @@ SDL_Surface* SDL_LoadBMP(const char* file)
 == Function Parameters ==
 {|
 |'''file'''
-|^a pointer to the file containing the surface information^
+|^the file containing surface information^
 |}
 
 == Return Value ==
