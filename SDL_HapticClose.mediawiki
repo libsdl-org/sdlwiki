@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticClose =
-Use this function to close a __H__aptic device previously opened with [[SDL_HapticOpen]]().
+Use this function to close a haptic device previously opened with [[SDL_HapticOpen]]().
 
 
 == Syntax ==
