@@ -15,7 +15,7 @@ int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ haptic device to query ^for^ ,,the,, effect status ,,on,,
+|^the^ SDL_Haptic device to query ^for^ ,,the,, effect status ,,on,,
 |-
 |'''effect'''
 |^the ID^ ,,identifier,, of the ^haptic^ effect to query ,,it's status,,
