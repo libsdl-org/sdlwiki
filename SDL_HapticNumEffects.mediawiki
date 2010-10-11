@@ -14,7 +14,7 @@ int SDL_HapticNumEffects(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|the haptic device to query ^for^ effect max
+|the SDL_Haptic device to query
 |}
 
 == Return Value ==
