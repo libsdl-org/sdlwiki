@@ -26,7 +26,7 @@ A structure that contains joystick hat position change event ,,structure,, ^info
 |-
 |Uint8
 |'''padding1'''
-|
+|^8 empty bits to total 32^???
 |}
 
 == Code Examples ==
