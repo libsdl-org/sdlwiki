@@ -15,10 +15,10 @@ int SDL_GetSurfaceBlendMode(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to query
+|the [[SDL_Surface]] to query
 |-
 |'''blendMode'''
-|a pointer filled in with the current ,,blend mode,, ^[[SDL_BlendMode]]^
+|,,a pointer filled in with ,,the current ,,blend mode,, ^[[SDL_BlendMode]]^
 |}
 
 == Return Value ==
