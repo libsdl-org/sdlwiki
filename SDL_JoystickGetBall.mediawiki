@@ -17,23 +17,22 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|^a pointer to the joystick to query^
+|^the SDL_Joystick to query^
 |-
 |'''ball'''
 |the ball ,,indices,, ^index;^ start^s^ at index 0
 |-
 |'''dx'''
-|the difference in the x axis since the last poll
+|the difference in the x axis ^position^ since the last poll
 |-
 |'''dy'''
-|the difference in the y axis since the last poll
+|the difference in the y axis ^position^ since the last poll
 |}
 
-== Return Value ==
-Returns 0 on success, or -1 if you passed it invalid parameters; call [[SDL_GetError]]() for more information.
+<<Color2(green,Is it possible to use more than one index for '''ball'''?)>>
 
-<<Color2(green,Suggested alternate text here and in Remarks:)>><br/>
-<<Color2(purple,Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.)>>
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -49,8 +48,6 @@ printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 ```
 
 == Remarks ==
-<<Color2(purple,This function will return -1 if it is passed invalid parameters.)>>
-
 *<br/>Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''. <br/>*
 
 == Related Functions ==
