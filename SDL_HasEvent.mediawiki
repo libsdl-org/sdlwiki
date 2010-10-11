@@ -17,12 +17,6 @@ SDL_bool SDL_HasEvent(Uint32 type)
 |^the type of event to be queried ???; see [[SDL_Event]]/[[SDL_EventType]] ??? for details^
 |}
 
-<<Color2(green,Was this really removed entirely?)>>
-{|
-|'''mask'''
-|^criteria by which to select events from the queue^
-|}
-
 == Return Value ==
 Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present. ???
 
