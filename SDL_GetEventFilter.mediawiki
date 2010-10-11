@@ -21,6 +21,8 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
 |^a pointer to a pointer containing user-specified data^
 |}
 
+<<Color2(green,Is userdata an exception to the 'pointer rule'?)>>
+
 == Return Value ==
 Returns the current event filter.  If there is no event filter set, this function returns SDL_FALSE.  
 
