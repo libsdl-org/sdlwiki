@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticCustom =
-A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
+A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ effect.
 
 
 == Data Fields ==
