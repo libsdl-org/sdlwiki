@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticDirection =
-A structure that contains a ^description/definition of a^ haptic direction. ???  <<Color2(green,Does this structure define individual directions or a set of directions used by a particular device?  Seems like you'd have to create an awful lot of these structures to make anything with any complexity.  Am I understanding this correctly?)>>
+A structure that contains a ^template for a^ haptic direction ^effect^. ???  <<Color2(green,Does this structure define individual directions or a set of directions used by a particular device?  Seems like you'd have to create an awful lot of these structures to make anything with any complexity.  Am I understanding this correctly?)>>
 
 
 == Data Fields ==
