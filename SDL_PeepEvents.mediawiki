@@ -21,10 +21,10 @@ int SDL_PeepEvents(SDL_Event*      events,
 == Function Parameters ==
 {|
 |'''events''' 
-|^a pointer to the ID of the event queue to query^ 
+|^the [[SDL_Event]] queue to query^???
 |-
 |'''numevents''' 
-|^the number of events to work with^; see [[#Remarks|Remarks]] for details 
+|^the number of events in the queue^???; see [[#Remarks|Remarks]] for details 
 |-
 |'''action''' 
 |^how to handle the events in the queue^; see [[#action|Remarks]] for details 
