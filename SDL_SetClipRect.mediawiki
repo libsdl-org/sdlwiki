@@ -15,7 +15,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|a pointer to the [[SDL_Surface]] to be clipped
+|the [[SDL_Surface]] to be clipped
 |-
 |'''rect'''
 |the clipping [[SDL_Rect]]^, or NULL for the entire render target^
