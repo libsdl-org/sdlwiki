@@ -10,7 +10,7 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
 {|
 |
 |
-|'''''Header'''''
+|''Header''
 |-
 |Unit16
 |'''type'''
@@ -22,7 +22,7 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
 |-
 |
 |
-|'''''Replay'''''
+|''Replay''
 |-
 |Uint32
 |'''length'''
@@ -34,7 +34,7 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
 |-
 |
 |
-|'''''Trigger'''''
+|''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -42,15 +42,15 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
 |-
 |Uint16
 |'''interval'''
-|how soon it can be triggered again after button
+|how soon it can be triggered again after '''button'''
 |-
 |
 |
-|'''''Custom'''''
+|''Custom''
 |-
 |Uint8
 |'''channels'''
-|axes to use, minimum of one; see [[#Remarks|Remarks]] for details
+|axes to use, minimum of 1; see [[#Remarks|Remarks]] for details
 |-
 |Uint16
 |'''period'''
@@ -62,11 +62,11 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM effect.
 |-
 |Uint16*
 |'''data'''
-|should contain channels*samples items; see [[#Remarks|Remarks]] for details
+|should contain '''channels'''*'''samples''' items; see [[#Remarks|Remarks]] for details
 |-
 |
 |
-|'''''Envelope'''''
+|''Envelope''
 |-
 |Uint16
 |'''attack_length'''
@@ -92,9 +92,9 @@ You can add your code example here
 
 == Remarks ==
 A custom force feedback effect is much like a periodic effect, where the application can define ''its'' exact shape. You will have to allocate the data yourself.
-<<Color2(green,I think this should be a new paragraph or moved down to connect to the next one.)>> '''data''' should consist of channels * samples Uint16 samples. <<Color2(green,This is repeated above. Is there a better way to say this and still be correct and readable to programmers but also to people who speak english?)>>
+<<Color2(green,I think this should be a new paragraph or moved down to connect to the next one.)>> '''data''' should consist of '''channels''' * '''samples''' Uint16 samples. <<Color2(green,This is basically repeated above. Is there a better way to say this and still be correct and readable to programmers but also to people who speak english?)>>
 
-If '''channels''' is ''1'', the effect is rotated using the defined direction. Otherwise it uses the samples in '''data''' for the different axes. 
+If '''channels''' is 1, the effect is rotated using the defined direction. Otherwise it uses the samples in '''data''' for the different axes. 
 
 == Related Functions ==
 
