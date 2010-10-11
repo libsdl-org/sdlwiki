@@ -3,15 +3,14 @@
 '''DRAFT'''
 
 = SDL_HapticPeriodic =
-A structure that contains a template for a Periodic effect.
+A structure that contains a template for a periodic effect.
 
 
 == Data Fields ==
-<<Color2(green,Section title formats should be adjusted to match [[SDL_HapticConstant]] once a final format is decided.)>>
 {|
 |
 |
-|'''''Header'''''
+|''Header''
 |-
 |Uint16
 |'''type'''
@@ -23,7 +22,7 @@ A structure that contains a template for a Periodic effect.
 |-
 |
 |
-|'''''Replay'''''
+|''Replay''
 |-
 |Uint32
 |'''length'''
@@ -35,7 +34,7 @@ A structure that contains a template for a Periodic effect.
 |-
 |
 |
-|'''''Trigger'''''
+|''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -43,11 +42,11 @@ A structure that contains a template for a Periodic effect.
 |-
 |Uint16
 |'''interval'''
-|how soon it can be triggered again after button ^(delay between individual waves or before the effect can be used again?)^ ^(ms?)^
+|how soon it can be triggered again after '''button''' ^(delay between individual waves or before the effect can be used again?)^ ^(ms?)^
 |-
 |
 |
-|'''''Periodic'''''
+|''Periodic''
 |-
 |Uint16
 |'''period'''
@@ -67,7 +66,7 @@ A structure that contains a template for a Periodic effect.
 |-
 |
 |
-|'''''Envelope'''''
+|''Envelope''
 |-
 |Uint16
 |'''attack_length'''
@@ -151,7 +150,7 @@ SDL_HAPTIC_SAWTOOTHDOWN
  \ | \ | \ | \ | \ | \ | \ |
   \|  \|  \|  \|  \|  \|  \| 
 ```
-<<Color2(green,For some reason when these are interpreted in the code box the angle of the slashes is changed and they look funny.  Don't know how to fix that.)>>
+<<Color2(green,For some reason when these are interpreted in the code box the angle of the slashes is changed and they look funny.  Don't know how to fix that unless there is a way to change font or if we use an actual image.)>>
 
 <span id="phase"></span>'''phase''' is given by ''hundredths'' of a ''cycle,'' meaning that giving the phase a value of 9000 will displace it 25% of it's period. Here are sample values:
 {|
