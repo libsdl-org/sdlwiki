@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticName =
-Use this function to get the implementation dependent name of a Haptic device.
+Use this function to get the implementation dependent name of a haptic device.
 
 
 == Syntax ==
