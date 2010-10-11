@@ -14,7 +14,7 @@ int SDL_HapticIndex(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device to ,,get the index of,, ^query^
+|^the^ SDL_Haptic device to ,,get the index of,, ^query^
 |}
 
 == Return Value ==
