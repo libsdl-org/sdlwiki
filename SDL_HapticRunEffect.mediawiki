@@ -16,7 +16,7 @@ int SDL_HapticRunEffect(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device to run the effect ,,on,,
+|^the^ SDL_Haptic device to run the effect on
 |-
 |'''effect'''
 |^the ID^ ,,identifier,, of the haptic effect to run
