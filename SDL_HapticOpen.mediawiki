@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticOpen =
-Use this function to open a Haptic device for usage.  <<Color2(green,Is Haptic supposed to be capitalized?)>>
+Use this function to open a haptic device for us,,ag,,e.
 
 
 == Syntax ==
