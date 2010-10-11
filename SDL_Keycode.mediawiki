@@ -489,10 +489,10 @@ The SDL virtual key representation.
 |the Clear Again key
 |-
 |SDLK_CRSEL
-|the CrSel key
+|the Cr<code></code>Sel key
 |-
 |SDLK_EXSEL
-|the ExSel key
+|the Ex<code></code>Sel key
 |-
 |SDLK_THOUSANDSSEPARATOR
 |the Thousands Separator key
