@@ -7,23 +7,22 @@ A structure that contains a template for a Constant effect.
 
 
 == Data Fields ==
-<<Color2(green,Not sure how to format the section titles. No other structs have this kind of separation. There are enums w/ separations - we used left-justified bold for the section titles in that case but there is no other bold in the table...)>>
 {|
 |
 |
-|<(>'''Header'''
+|''Header''
 |-
 |Uint16
 |'''type'''
 |SDL_HAPTIC_CONSTANT
 |-
-|SDL_HapticDirection
+|[[SDL_HapticDirection]]
 |'''direction'''
 |direction of the effect
 |-
 |
 |
-|<(>''Replay''
+|''Replay''
 |-
 |Uint32
 |'''length'''
@@ -35,7 +34,7 @@ A structure that contains a template for a Constant effect.
 |-
 |
 |
-|<(>'''''Trigger'''''
+|''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -47,7 +46,7 @@ A structure that contains a template for a Constant effect.
 |-
 |
 |
-|<(>'''''Constant'''''
+|''Constant''
 |-
 |Sint16
 |'''level'''
@@ -55,7 +54,7 @@ A structure that contains a template for a Constant effect.
 |-
 |
 |
-|<(>'''''Envelope'''''
+|''Envelope''
 |-
 |Uint16
 |'''attack_length'''
@@ -82,7 +81,7 @@ You can add your code example here
 == Remarks ==
 ,,The,, ^This^ struct^ure^ is exclusive to the SDL_HAPTIC_CONSTANT effect.
 
-A constant effect applies a constant force <to the joystick< in the specified direction.
+A constant effect applies a constant force <to the joystick< in the specified direction <<.
 
 == Related Functions ==
 
