@@ -18,7 +18,7 @@ SDL_scancode SDL_GetScancodeFromKey(SDLKey key)
 |}
 
 == Return Value ==
-The [[SDL_scancode]] that corresponds to the given [[SDLKey]]. ???
+Returns the [[SDL_scancode]] that corresponds to the given [[SDLKey]]. ???
 
 == Code Examples ==
 ```c++
