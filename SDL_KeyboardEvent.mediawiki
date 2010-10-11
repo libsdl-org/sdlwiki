@@ -26,11 +26,11 @@ A structure that contains keyboard button event ,,structure,, ^information^ (eve
 |-
 |Uint8
 |'''padding2'''
-|
+|^8 empty bits to total 32^???
 |-
 |Uint8
 |'''padding3'''
-|
+|^8 empty bits to total 32^???
 |-
 |SDL_keysym
 |'''keysym'''
