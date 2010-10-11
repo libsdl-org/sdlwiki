@@ -14,9 +14,8 @@ void SDL_UnlockSurface(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|a pointer to the [[SDL_Surface]] to be unlocked
+|the [[SDL_Surface]] to be unlocked
 |}
-<<Color2(green,Global decision - should the hyperlink to the struct be replaced by just the word surface?)>>
 
 == Code Examples ==
 <<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>
