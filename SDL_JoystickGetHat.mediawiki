@@ -15,11 +15,13 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|a pointer to a structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information ???
 |-
 |'''hat'''
 |the hat ,,indices,, ^index;^ start^s^ at index 0
 |}
+
+<<Color2(green,Is it possible to use more than one index at the same time for '''hat'''?)>>
 
 == Return Value ==
 Returns one of the following ,,positions,,:
