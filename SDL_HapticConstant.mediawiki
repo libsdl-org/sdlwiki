@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticConstant =
-A structure that contains a template for a Constant effect.
+A structure that contains a template for a constant effect.
 
 
 == Data Fields ==
