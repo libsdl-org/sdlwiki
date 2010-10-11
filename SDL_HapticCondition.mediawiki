@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticCondition =
-A structure that contains a template for a Condition effect.
+A structure that contains a template for a condition effect.
 
 
 == Data Fields ==
