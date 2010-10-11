@@ -17,17 +17,20 @@ int SDL_LowerBlit(SDL_Surface* src,
 == Function Parameters ==
 {|
 |'''src'''
-|a pointer to the [[SDL_Surface]] containing '''srcrect'''
+|the [[SDL_Surface]] containing '''srcrect''' / the source rectangle
 |-
 |'''srcrect'''
-|a pointer to the source [[SDL_Rect]] to be queried
+|the [[SDL_Rect]] ^structure representing / describing^ ,,containing,, the source pixels
 |-
 |'''dst'''
-|a pointer to the destination [[SDL_Surface]] containing '''dstrect'''
+|the [[SDL_Surface]] containing '''dstrect''' / the destination rectangle
 |-
 |'''dstrect'''
-|a pointer to the destination [[SDL_Rect]] to be filled
+|the [[SDL_Rect]] ^structure^ to be filled ^with / by the blit^
 |}
+
+
+<<Color2(green,Note: This should probably end up looking a lot like BlitSurface after it is edited.)>>
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
