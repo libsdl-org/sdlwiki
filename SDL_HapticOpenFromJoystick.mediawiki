@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticOpenFromJoystick =
-Use this function to open a Haptic device for ,,usage,, ^use^ from a Joystick device.  <<Color2(green,Is Haptic supposed to be capitalized?)>>
+Use this function to open a haptic device for ,,usage,, ^use^ from a joystick device.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick* joystick)
 == Function Parameters ==
 {|
 |'''joystick'''
-|^a pointer to a^ joystick to create a haptic device from
+|^the^ SDL_Joystick to create a haptic device from
 |}
 
 == Return Value ==
