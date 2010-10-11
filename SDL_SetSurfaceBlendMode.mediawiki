@@ -15,10 +15,10 @@ int SDL_SetSurfaceBlendMode(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface / [[SDL_Surface]] to update
+|the [[SDL_Surface]] to update
 |-
 |'''blendMode'''
-|[[SDL_BlendMode]] to use for blit blending
+|the [[SDL_BlendMode]] to use for blit blending
 |}
 
 == Return Value ==
