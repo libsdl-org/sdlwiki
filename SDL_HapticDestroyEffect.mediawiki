@@ -15,7 +15,7 @@ void SDL_HapticDestroyEffect(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the haptic^ device to destroy the effect on
+|^the SDL_Haptic^ device to destroy the effect on
 |-
 |'''effect'''
 |^ID^ ,,identifier,, of the ^haptic^ effect to destroy
