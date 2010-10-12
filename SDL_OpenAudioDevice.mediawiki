@@ -23,10 +23,10 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |non-0 to specify a device that has recording capability
 |-
 |'''desired'''
-|the desired audio parameters; see [[SDL_OpenAudio]]() for more information
+|the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
 |-
 |'''obtained'''
-|a pointer to an [[SDL_AudioSpec]] structure to be filled in; see [[SDL_OpenAudio]]() for more information
+|an [[SDL_AudioSpec]] structure to be filled in; see [[SDL_OpenAudio]]() for more information
 |-
 |'''allowed_changes'''
 |0, or one or more flags OR'd together; see [[#allowed|Remarks]] for details
