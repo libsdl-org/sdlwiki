@@ -16,13 +16,13 @@ int SDL_HapticUpdateEffect(SDL_Haptic*       haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device that has the effect
+|^the^ SDL_Haptic device that has the effect
 |-
 |'''effect'''
 |^the index of the^ effect to update
 |-
 |'''data'''
-|^a pointer to the^ new effect properties to use
+|^an [[SDL_HapticEffect]] structure containing the^ new effect properties to use
 |}
 
 == Return Value ==
