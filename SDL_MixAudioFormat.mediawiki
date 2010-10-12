@@ -17,16 +17,16 @@ void SDL_MixAudioFormat(Uint8*          dst,
 == Function Parameters ==
 {|
 |'''dst'''
-|points to the destination for the mixed audio
+|the destination for the mixed audio
 |-
 |'''src'''
-|points to the source audio buffer to be mixed
+|the source audio buffer to be mixed
 |-
 |'''format'''
-|the specified audio format; see [[SDL_AudioFormat]] for more information
+|the specified audio format; see [[SDL_AudioFormat]] for more information ''-or-'' the [[SDL_AudioFormat]] structure representing the desired audio format
 |-
 |'''len'''
-|defines the length of the audio buffer in bytes
+|,,defines ,,the length of the audio buffer in bytes
 |-
 |'''volume'''
 |ranges from 0 - 128, and should be set to SDL_MIX_MAXVOLUME for full audio volume
