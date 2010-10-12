@@ -14,7 +14,7 @@ int SDL_CondBroadcast(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the condition variable that is being applied^ ???
+|^the SDL_cond that is being applied^ ???
 |}
 
 == Return Value ==
