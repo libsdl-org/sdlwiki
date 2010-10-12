@@ -13,8 +13,10 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
 == Function Parameters ==
 {|
 |'''dev'''
-|the ID of the device to be locked
+|the ID of the device ^previously opened with [[SDL_OpenAudioDevice]]()^ to be locked
 |}
+
+<<Color2(green,The addition above is for consistency only.  Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
 
 == Code Examples ==
 ```c++
