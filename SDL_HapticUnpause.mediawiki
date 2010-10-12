@@ -14,7 +14,7 @@ int SDL_HapticUnpause(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device to unpause
+|^the^ SDL_Haptic device to unpause
 |}
 <<Color2(green,Line 1097 - the header says pause instead of unpause)>>
 
