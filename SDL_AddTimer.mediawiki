@@ -13,19 +13,19 @@ SDL_TimerID SDL_AddTimer(Uint32               interval,
                          void*                param)
 ```
 
-<<Color2(green,Should the callback function SDL_NewTimerCallback be listed here or in Remarks?)>>
-
 == Function Parameters ==
 {|
 |'''interval'''
-|^the time, in milliseconds, to wait/cycle^; see [[#Remarks|Remarks]] for details
+|^the time, in milliseconds, for the new timer to wait/cycle^; see [[#Remarks|Remarks]] for details
 |-
 |'''callback'''
-|^the callback function to run^ ''-or-'' *the SDL timer callback function which is called when the specified '''interval''' elapses*
+|^the callback function to run/call^ ''-or-'' *the SDL timer callback function which is called when the specified '''interval''' elapses*; see [[#callback|Remarks]] for details
 |-
 |'''param'''
-|^a pointer to the parameters of the timer^ ''-or-'' *the user parameter which is passed to the callback function*
+|^the parameters of the timer^ ''-or-'' *the user parameter which is passed to the callback function*
 |}
+
+<<Color2(green,Should the callback function SDL_NewTimerCallback details be listed here instead of in Remarks?)>>
 
 == Return Value ==
 Returns a timer ID or NULL when an error occurs^; call [[SDL_GetError]]() for more information.^
@@ -95,13 +95,26 @@ while (SDL_PollEvent (&event))
 == Remarks ==
 *<br/>The granularity of the timer ^used by '''interval'''^ is platform-dependent, but you should count on it being at least 10 ms as this is the most common number. This means that if you request a 16 ms timer, your callback will run approximately 20 ms later on an unloaded system. If you wanted to set a flag signaling a frame update at 30 frames per second (every 33 ms), you might set a timer for 30 ms (see [[#Code Example|Code Example]]). 
 
-^[[SDL_AddTimer]]()^ adds a callback function to be run after the specified number of milliseconds has elapsed. The callback function is passed the current timer interval and the user supplied parameter from the [[SDL_AddTimer]]() call and returns the next timer interval. If the returned value from the callback is the same as the one passed in, the timer continues at the same rate. If the returned value from the callback is 0, the timer is cancelled.
+<span id="callback"></span>
+''^[[SDL_AddTimer]]()^ adds a callback function to be run after the specified number of milliseconds has elapsed.'' 
+The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
+
+<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  Which is the better version?)>>
+
+The callback function is passed the current timer interval and returns the next timer interval.  If the returned value is the same as the one passed in, the ''periodic alarm'' continues, ''otherwise a new alarm is scheduled''.  If the ''callback returns'' 0, the ''periodic alarm'' is canceled.
+
+The '''callback''' parameters are as follows:
+ ```
+Uint32 SDL_NewTimerCallback(Uint32 interval, 
+                            void*  param)
+```
 
 Another way to cancel a currently-running timer is by calling [[SDL_RemoveTimer]]() with the timer's ID (which was returned from [[SDL_AddTimer]]()).
 
 The timer callback function may run in a different thread than your main program, and so shouldn't call any functions from within itself. However, you may always call [[SDL_PushEvent]]().
 
 If you use this function, you need to pass SDL_INIT_TIMER to SDL_Init. <br/>*
+
 
 == Related Functions ==
 :[[SDL_PushEvent]] *
