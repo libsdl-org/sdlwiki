@@ -7,7 +7,7 @@ Use this function to get the current audio state.
 
 == Syntax ==
 ```c++
-SDL_audiostatus SDL_GetAudioStatus(void)
+SDL_AudioStatus SDL_GetAudioStatus(void)
 ```
 
 == Return Value ==
@@ -15,6 +15,8 @@ Returns the current audio state, which can be one of:
 :SDL_AUDIO_STOPPED
 :SDL_AUDIO_PLAYING
 :SDL_AUDIO_PAUSED
+
+<<Color2(green,Should there be a link to [[SDL_AudioStatus]] somewhere on here?)>>
 
 == Code Examples ==
 ```c++
