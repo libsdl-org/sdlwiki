@@ -16,6 +16,8 @@ void SDL_CloseAudioDevice(SDL_AudioDeviceID dev)
 |an audio device previously opened with [[SDL_OpenAudioDevice]]()
 |}
 
+<<Color2(green,Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
