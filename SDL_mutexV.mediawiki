@@ -14,7 +14,7 @@ int SDL_mutexV(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex'''
-|^a pointer to the SDL_mutex structure / mutex to be unlocked^
+|^the SDL_mutex to be unlocked^
 |}
 
 == Return Value ==
