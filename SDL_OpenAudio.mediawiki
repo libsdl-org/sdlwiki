@@ -14,10 +14,10 @@ int SDL_OpenAudio(SDL_AudioSpec* desired,
 == Function Parameters ==
 {|
 |'''desired'''
-|the desired audio parameters; see [[#desired|Remarks]] for more information
+|the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[#desired|Remarks]] for more information
 |-
 |'''obtained'''
-|a pointer to an [[SDL_AudioSpec]] structure to be filled in
+|an [[SDL_AudioSpec]] structure to be filled in
 |}
 
 == Return Value ==
