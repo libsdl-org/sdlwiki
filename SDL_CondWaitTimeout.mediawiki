@@ -18,10 +18,10 @@ int SDL_CondWaitTimeout(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the condition variable that is being applied^ ???
+|^the applicable SDL_cond^ ???
 |-
 |'''mutex'''
-|^a pointer to the mutex to be timed out^ ???
+|^a pointer to the SDL_mutex to be timed out^ ???
 |-
 |'''ms'''
 |^the maximum number of milliseconds to wait^
