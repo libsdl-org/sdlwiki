@@ -53,6 +53,8 @@ A structure that contains audio data conversion ^information^.
 |<style="color: #808080;">current audio conversion function (internal use)
 |}
 
+<<Color2(green,Is '''buf''' an exception to the 'pointer rule'?)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
