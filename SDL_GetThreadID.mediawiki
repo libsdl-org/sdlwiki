@@ -14,7 +14,7 @@ SDL_threadID SDL_GetThreadID(SDL_Thread* thread)
 == Function Parameters ==
 {|
 |'''thread'''
-|^a pointer to the desired/specified thread^
+|^the desired/specified SDL_Thread to query^
 |}
 
 == Return Value ==
