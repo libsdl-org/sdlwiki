@@ -99,7 +99,7 @@ while (SDL_PollEvent (&event))
 ''^[[SDL_AddTimer]]()^ adds a callback function to be run after the specified number of milliseconds has elapsed.'' 
 The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
 
-<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  Which is the better version?)>>
+<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  It also seems to be identical to the one for SDL_SetTimer.  Which is the better version?)>>
 
 The callback function is passed the current timer interval and returns the next timer interval.  If the returned value is the same as the one passed in, the ''periodic alarm'' continues, ''otherwise a new alarm is scheduled''.  If the ''callback returns'' 0, the ''periodic alarm'' is canceled.
 
