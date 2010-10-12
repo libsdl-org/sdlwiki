@@ -20,6 +20,8 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
 |non-zero to pause, 0 to unpause
 |}
 
+<<Color2(green,Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
