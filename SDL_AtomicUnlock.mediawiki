@@ -14,9 +14,10 @@ void SDL_AtomicUnlock(SDL_SpinLock* lock)
 == Function Parameters ==
 {|
 |'''lock'''
-|,,points to the lock,, ^a pointer to the desired spin lock^
+|,,points to the lock,, ^the desired spin lock^
 |}
-<<Color2(green,Does the function change the setting of the lock struct to 0 automatically when it is called?  Lock changes it back to non-0?)>>
+
+<<Color2(green,Does the function change the setting of the lock struct/typedef to 0 automatically when it is called?  Lock changes it back to non-0?)>>
 
 == Code Examples ==
 ```c++
