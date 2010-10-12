@@ -20,7 +20,7 @@ int SDL_CondWait(SDL_cond*  cond,
 |^the applicable SDL_cond^ ???
 |-
 |'''mutex'''
-|^the mutex that is to be unlocked^
+|^the SDL_mutex that is to be unlocked^
 |}
 
 == Return Value ==
