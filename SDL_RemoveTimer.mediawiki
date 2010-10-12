@@ -5,7 +5,7 @@
 = SDL_RemoveTimer =
 Use this function to remove one of the ,,multiple,, timers ^created with [[SDL_AddTimer]](),^ knowing its ID.
 
-<<Color2(green,How do you get the ID?  Should that info be included on this page?)>>
+<<Color2(green,How do you get the ID?  Should that info be included on this page?  Does it have to be "multiple" timers or could you remove the only timer?)>>
 
 
 == Syntax ==
@@ -20,11 +20,11 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID t)
 |}
 
 == Return Value ==
-Returns SDL_TRUE on success or SDL_FALSE on failure; call [[SDL_GetError]]() for more information. <<Color2(green,Does !GetError work with this type?)>>
-
-''-OR-''
-
 Returns a boolean value indicating success or failure.
+
+''-or-''
+
+Returns SDL_TRUE on success or SDL_FALSE on failure; call [[SDL_GetError]]() for more information. <<Color2(green,Does SDL_GetError work with this type?)>>
 
 == Code Examples ==
 ```c++
@@ -38,6 +38,8 @@ my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
 
 SDL_RemoveTimer(my_timer_id);
 ```
+
+<<Color2(green,I don't think that math works...  33/10*10 is still 33.)>>
 
 == Remarks ==
 ''You can add useful comments here''
