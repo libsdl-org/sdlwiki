@@ -14,7 +14,7 @@ void SDL_DestroySemaphore(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^a pointer to the SDL_sem structure / semaphore to be destroyed^
+|^the SDL_sem to be destroyed^
 |}
 
 == Code Examples ==
