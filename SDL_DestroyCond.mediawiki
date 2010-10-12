@@ -14,7 +14,7 @@ void SDL_DestroyCond(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^a pointer to the SDL_cond structure / condition variable to be destroyed^
+|^the SDL_cond to be destroyed^
 |}
 
 == Code Examples ==
