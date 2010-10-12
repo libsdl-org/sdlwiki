@@ -14,7 +14,7 @@ int SDL_SemWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^a pointer to the SDL_sem structure / semaphore to be monitored^
+|^the SDL_sem to be monitored^
 |}
 
 == Return Value ==
