@@ -14,7 +14,7 @@ int SDL_HapticStopAll(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^a pointer to the^ haptic device to stop
+|^the^ SDL_Haptic device to stop
 |}
 
 == Return Value ==
