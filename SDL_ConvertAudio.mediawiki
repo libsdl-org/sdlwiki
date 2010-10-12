@@ -14,7 +14,7 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 == Function Parameters ==
 {|
 |'''cvt'''
-|^a pointer to^ an [[SDL_AudioCVT]] structure that was previously set up; see [[#cvt|Remarks]] for details
+|an [[SDL_AudioCVT]] structure that was previously set up; see [[#cvt|Remarks]] for details
 |}
 
 == Return Value ==
@@ -94,11 +94,12 @@ SDL_ConvertAudio(&wav_cvt);
 == Remarks ==
 <<Color2(green,Does [[SDL_BuildAudioCVT]]() initialize the structure create the buffer and fill it with audio data or does it require other actions to create the buffer and fill it with data?  If the function does all of the above then the second paragraph below should probably replace the first.  If not then the first paragraph below should be kept and possibly modified to include information about how to create the buffer and fill it.)>>
 
-<span id="cvt"></span> Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
+<span id="cvt"></span> 
+Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
 
 ''-or-''
 
-<span id="cvt"></span> Once you have initialized the '''cvt''' structure, created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format using [[SDL_BuildAudioCVT]](), ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
+Once you have initialized the '''cvt''' structure, created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format using [[SDL_BuildAudioCVT]](), ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
 
 
 
