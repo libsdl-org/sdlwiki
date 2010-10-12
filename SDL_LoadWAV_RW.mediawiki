@@ -23,17 +23,17 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 |non-zero to automatically free the data source
 |-
 |'''spec'''
-|specifies the target audio format; see [[SDL_AudioSpec]] for more info
+|,,specifies ,,the target audio format; see [[SDL_AudioSpec]] for more info ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format
 |-
 |'''audio_buf'''
-|specifies the audio buffer
+|,,specifies ,,the audio buffer
 |-
 |'''audio_len'''
-|specifies the length of the audio buffer in bytes
+|,,specifies ,,the length of the audio buffer in bytes
 |}
 
 == Return Value ==
-If this function succeeds it returns the given [[SDL_AudioSpec]] filled with the audio data format of the wave data, fills '''audio_buf''' with a pointer to a malloc()'d buffer containing the audio data, and fills '''audio_len''' with a pointer to the length of that audio buffer (in bytes).
+If this function succeeds it returns ^a pointer to an^ ,,the given,, [[SDL_AudioSpec]] ^structure^ filled with the audio data format of the wave data, fills '''audio_buf''' with a pointer to a malloc()'d buffer containing the audio data, and fills '''audio_len''' with a pointer to the length of that audio buffer (in bytes).
 
 This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.  
 
