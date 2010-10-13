@@ -17,7 +17,7 @@ long SDL_RWseek(SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|a pointer to an SDL_RWops structure
+|an SDL_RWops structure ^containing the seek function???^
 |-
 |'''offset'''
 |an offset in bytes, relative to '''whence''' location; can be negative
