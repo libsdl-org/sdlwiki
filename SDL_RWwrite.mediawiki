@@ -17,7 +17,7 @@ size_t SDL_RWwrite(struct SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|a pointer to an SDL_RWops structure
+|an SDL_RWops structure ^containing the write function^
 |-
 |'''ptr'''
 |*a pointer to an area in memory to read data from*
@@ -29,12 +29,14 @@ size_t SDL_RWwrite(struct SDL_RWops* context,
 |*the exact number of memory blocks to write*
 |}
 
+<<Color2(green,I think '''ptr''' is an exception to the 'pointer rule'.)>>
+
 == Return Value ==
 Returns the number of objects written, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
 
 ''-or-''
 
-*On success, it returns the number of memory blocks you told it to write. If it couldn't write that exact number of blocks, or the write didn't work at all, it returns -1*; call [[SDL_GetError]]() for more information.
+*>>On success,>> ,,it ,,returns the number of memory blocks you told it to write >> >>. If it couldn't write that exact number of blocks, or the write didn't work at all, it returns ,,-1,, ^a negative error code^*; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 *
