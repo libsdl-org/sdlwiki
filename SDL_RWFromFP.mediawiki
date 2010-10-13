@@ -19,7 +19,7 @@ SDL_RWops* SDL_RWFromFP(void*    fp,
 == Function Parameters ==
 {|
 |'''fp'''
-|^a pointer to the file to open (in the structure ???)^
+|,,a pointer to ,,^the file to open (in the new structure ???)^
 |-
 |'''autoclose'''
 |^non-0 to autoclose or 0 to leave the file open when the structure is closed^ ???
