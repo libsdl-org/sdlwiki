@@ -17,7 +17,7 @@ size_t SDL_WriteLE32(SDL_RWops* dst,
 == Function Parameters ==
 {|
 |'''dst'''
-|^a pointer to the destination to be filled^
+|^the SDL_RWops structure to be filled^
 |-
 |'''value'''
 |^the data to write as little-endian^
