@@ -15,11 +15,13 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|^a pointer to a memory location to use for an SDL_RWops structure^
+|,,a pointer to,, ^a memory location to use for an SDL_RWops structure^
 |-
 |'''size'''
 |^the size of the memory location^
 |}
+
+<<Color2(green,Is '''mem''' an exception to the 'pointer rule'?)>>
 
 == Return Value ==
 *<br/>Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. <br/>*
