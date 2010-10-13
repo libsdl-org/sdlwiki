@@ -24,19 +24,21 @@ SDL_PowerState SDL_GetPowerInfo(int* secs,
 alternative text:
 {|
 |'''secs'''
-|seconds of battery life left; pass a NULL if irrelevant/unimportant
+|seconds of battery life left; NULL if irrelevant/unimportant
 |-
 |'''pct'''
-|percentage of battery life left, between 0 and 100; pass a NULL if irrelevant/unimportant
+|percent of battery life left (0 - 100); NULL if irrelevant/unimportant
 |}
 
 == Return Value ==
-Returns the state of the battery (if any).  Return values may be any of the following (see [[SDL_PowerState]] for more info):
+Returns the state of the battery, if any.  Return values may be any of the following:
 
 <<Include(SDL_PowerState, , , from="== Values ==", to="== Code Examples ==")>>
 
+See [[SDL_PowerState]] for more info.
+
 <<Color2(green,Above is an include from the enum.  Below is text that was listed as param in the header but seems more relevant here or in Remarks.)>>
-,,Both parameters will,, return^s^ -1 if a value can't be determined, or if not running on a battery.
+,,Both parameters will,, return^s^ ,,-1 ,,^a negative error code^ if a value can't be determined, or if not running on a battery.
 
 == Code Examples ==
 ```c++
