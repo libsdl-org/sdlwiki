@@ -17,7 +17,7 @@ size_t SDL_RWread(struct SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|a pointer to an SDL_RWops structure
+|,,a pointer to ,,an SDL_RWops structure ^containing the read function^???
 |-
 |'''ptr'''
 |*a pointer to an area of memory to read data into*
@@ -28,6 +28,8 @@ size_t SDL_RWread(struct SDL_RWops* context,
 |'''maxnum'''
 |*the maximum number of memory blocks to read (it may read less)*
 |}
+
+<<Color2(green,I think '''ptr''' is an exception to the 'pointer rule'.)>>
 
 == Return Value ==
 Returns the number of objects read, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
