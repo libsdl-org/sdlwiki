@@ -15,11 +15,13 @@ SDL_RWops* SDL_RWFromMem(void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|^a pointer to the memory location^
+|,,a pointer to ,,^the memory location^
 |-
 |'''size'''
 |^the size of the memory location^
 |}
+
+<<Color2(green,Is '''mem''' an exception to the 'pointer rule'?)>>
 
 == Return Value ==
 A pointer to the SDL_RWops structure that is created, or NULL on failure.
