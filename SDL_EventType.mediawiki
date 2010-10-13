@@ -12,13 +12,13 @@ An enumeration of the types of events that can be delivered.
 |<style="color: #808080;">unused (do not remove)
 |-
 |
-|''Application events''
+|<bgcolor="#F8F8F8">''Application events''
 |-
 |SDL_QUIT
 |user-requested quit
 |-
 |
-|''Window events''
+|<bgcolor="#F0F0F0">''Window events''
 |-
 |SDL_WINDOWEVENT
 |window state change
@@ -27,7 +27,7 @@ An enumeration of the types of events that can be delivered.
 |system specific event
 |-
 |
-|''Keyboard events''
+|<bgcolor="#E0E0E0">''Keyboard events''
 |-
 |SDL_KEYDOWN
 |keys pressed
@@ -42,7 +42,7 @@ An enumeration of the types of events that can be delivered.
 |keyboard text input
 |-
 |
-|''Mouse events''
+|<bgcolor="#D0D0D0">''Mouse events''
 |-
 |SDL_MOUSEMOTION
 |mouse moved
@@ -57,7 +57,7 @@ An enumeration of the types of events that can be delivered.
 |mouse wheel motion
 |-
 |
-|''Tablet or multiple mice input device events''
+|<bgcolor="#C0C0C0">''Tablet or multiple mice input device events''
 |-
 |SDL_INPUTMOTION
 |input moved
