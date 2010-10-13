@@ -14,7 +14,7 @@ int SDL_RWclose(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context'''
-|a pointer to an SDL_RWops structure
+|the SDL_RWops structure to close
 |}
 
 == Return Value ==
