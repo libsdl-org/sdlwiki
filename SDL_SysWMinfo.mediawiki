@@ -9,7 +9,7 @@ A structure that contains system-dependent information about a window.
 {|
 |
 |
-|''All Subsystems''
+|<bgcolor="#F0F0F0">''All Subsystems''
 |-
 |SDL_version
 |'''version'''
@@ -21,7 +21,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''SDL_SYSWM_WINDOWS''
+|<bgcolor="#F0F0F0">'''SDL_SYSWM_WINDOWS'''
 |-
 |HWND
 |'''win.window'''
@@ -29,7 +29,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''SDL_SYSWM_X11''
+|<bgcolor="#F0F0F0">SDL_SYSWM_X11
 |-
 |Display*
 |'''x11.display'''
@@ -41,7 +41,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''SDL_SYSWM_DIRECTFB''
+|<bgcolor="#F0F0F0">''SDL_SYSWM_DIRECTFB''
 |-
 |IDirectFB*
 |'''dfb.dfb'''
@@ -57,7 +57,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-|''SDL_SYSWM_COCOA''
+|<bgcolor="#F0F0F0">''SDL_SYSWM_COCOA''
 |-
 |NSWindow*
 |'''cocoa.window'''
