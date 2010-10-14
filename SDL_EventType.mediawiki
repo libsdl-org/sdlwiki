@@ -12,13 +12,13 @@ An enumeration of the types of events that can be delivered.
 |<style="color: #808080;">unused (do not remove)
 |-
 |
-|<bgcolor="#F8F8F8">''Application events''
+|<bgcolor="#F5F5F5">''Application events''
 |-
 |SDL_QUIT
 |user-requested quit
 |-
 |
-|<bgcolor="#F0F0F0">''Window events''
+|<bgcolor="#F5F5F5">''Window events''
 |-
 |SDL_WINDOWEVENT
 |window state change
@@ -27,7 +27,7 @@ An enumeration of the types of events that can be delivered.
 |system specific event
 |-
 |
-|<bgcolor="#E0E0E0">''Keyboard events''
+|<bgcolor="#F5F5F5">''Keyboard events''
 |-
 |SDL_KEYDOWN
 |keys pressed
@@ -42,7 +42,7 @@ An enumeration of the types of events that can be delivered.
 |keyboard text input
 |-
 |
-|<bgcolor="#D0D0D0">''Mouse events''
+|<bgcolor="#F5F5F5">''Mouse events''
 |-
 |SDL_MOUSEMOTION
 |mouse moved
@@ -57,7 +57,7 @@ An enumeration of the types of events that can be delivered.
 |mouse wheel motion
 |-
 |
-|<bgcolor="#C0C0C0">''Tablet or multiple mice input device events''
+|<bgcolor="#F5F5F5">''Tablet or multiple mice input device events''
 |-
 |SDL_INPUTMOTION
 |input moved
@@ -78,7 +78,7 @@ An enumeration of the types of events that can be delivered.
 |input pen left proximity
 |-
 |
-|''Joystick events''
+|<bgcolor="#F5F5F5">''Joystick events''
 |-
 |SDL_JOYAXISMOTION
 |joystick axis motion
@@ -96,13 +96,13 @@ An enumeration of the types of events that can be delivered.
 |joystick button released
 |-
 |
-|''Clipboard events''
+|<bgcolor="#F5F5F5">''Clipboard events''
 |-
 |SDL_CLIPBOARDUPDATE
 |the clipboard changed
 |-
 |
-|''Obsolete events''
+|<bgcolor="#F5F5F5">''Obsolete events''
 |-
 |<style="color: #808080;">SDL_EVENT_COMPAT1
 |<style="color: #808080;">SDL 1.2 events for compatibility
@@ -114,7 +114,7 @@ An enumeration of the types of events that can be delivered.
 |<style="color: #808080;">SDL 1.2 events for compatibility
 |-
 |
-|''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
+|<bgcolor="#F5F5F5">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
 |-
 |SDL_USEREVENT
 |^a user-specified event^
