@@ -17,7 +17,7 @@ SDL_DisplayMode* SDL_GetClosestDisplayMode(const SDL_DisplayMode* mode,
 |an [[SDL_DisplayMode]] structure containing the desired display mode
 |-
 |'''closest'''
-|an [[SDL_DisplayMode]] structure to be filled in with the closest match of the available display modes
+|an [[SDL_DisplayMode]] structure filled in with the closest match of the available display modes
 |}
 
 == Return Value ==
