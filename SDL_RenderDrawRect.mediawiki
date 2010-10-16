@@ -13,7 +13,7 @@ int SDL_RenderDrawRect(const SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|the destination [[SDL_Rect]] structure, or NULL to outline the entire rendering target
+|an [[SDL_Rect]] structure representing the rectangle to draw, or NULL to outline the entire rendering target
 |}
 
 == Return Value ==
