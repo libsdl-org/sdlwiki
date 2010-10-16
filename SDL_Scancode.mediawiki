@@ -12,7 +12,7 @@ An enumeration of the SDL keyboard scancode representation.
 |0
 |-
 |
-|''These values are from usage page 0x07 (USB keyboard page).''
+|<bgcolor="#EDEDED">''These values are from usage page 0x07 (USB keyboard page)''
 |-
 |SDL_SCANCODE_A
 |4
@@ -663,7 +663,7 @@ An enumeration of the SDL keyboard scancode representation.
 |257; I'm not sure if this is really not covered by any of the above, but since there's a special KMOD_MODE for it I'm adding it here
 |-
 |
-|''These values are mapped from usage page 0x0C (USB consumer page).''
+|<bgcolor="#EDEDED">''These values are mapped from usage page 0x0C (USB consumer page)''
 |-
 |SDL_SCANCODE_AUDIONEXT
 |258
@@ -717,7 +717,7 @@ An enumeration of the SDL keyboard scancode representation.
 |274
 |-
 |
-|''These are values that Christian Walther added (for mac keyboard?).''
+|<bgcolor="#EDEDED">''These are values that Christian Walther added (for mac keyboard?)''
 |-
 |SDL_SCANCODE_BRIGHTNESSDOWN
 |275
@@ -744,7 +744,7 @@ An enumeration of the SDL keyboard scancode representation.
 |282
 |-
 |
-|''Other''
+|<bgcolor="#EDEDED">''Other''
 |-
 |SDL_NUM_SCANCODES
 |512; not a key, just marks the number of scancodes for array bounds
@@ -756,7 +756,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Values of this type are used to represent keyboard keys, among other places in the SDL_keysym::scancode key.keysym.scancode field of the [[SDL_Event]] ,,structure,, ^union^.
+Values of this type are used to represent keyboard keys, among other places in the <code>SDL_keysym::scancode</code> <code>key.keysym.scancode</code> field of the [[SDL_Event]] ,,structure,, ^union^.
 
 The values in this enumeration are based on the USB usage page standard:
  [http://www.usb.org/developers/devclass_docs/Hut1_12.pdf]
