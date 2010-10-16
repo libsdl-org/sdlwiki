@@ -16,16 +16,16 @@ int SDL_RenderReadPixels(const SDL_Rect* rect,
 == Function Parameters ==
 {|
 |'''rect'''
-|the [[SDL_Rect]] structure to read, or NULL for the entire render target
+|an[[SDL_Rect]] structure representing the area to read, or NULL for the entire render target
 |-
 |'''format'''
 |the desired format of the pixel data, or 0 to use the format of the rendering target; see [[#format|Remarks]] for details
 |-
 |'''pixels'''
-|a pointer to be filled in with the pixel data
+|a pointer filled in with the pixel data
 |-
 |'''pitch'''
-|the pitch of the pixels parameter
+|the pitch of the '''pixels''' parameter
 |}
 
 == Return Value ==
