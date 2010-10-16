@@ -14,10 +14,10 @@ int SDL_GetWindowDisplayMode(SDL_Window*      window,
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to query
+|the window to query
 |-
 |'''mode'''
-|the [[SDL_DisplayMode]] structure to be filled in
+|an [[SDL_DisplayMode]] structure filled in with the fullscreen display mode
 |}
 
 == Return Value ==
