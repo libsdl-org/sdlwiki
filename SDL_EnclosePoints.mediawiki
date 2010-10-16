@@ -22,10 +22,10 @@ SDL_bool SDL_EnclosePoints(const SDL_Point* points,
 |the number of structures in the '''points''' array
 |-
 |'''clip'''
-|an [[SDL_Rect]] used for clipping or NULL to enclose all points; see [[#Remarks|Remarks]] for details
+|an [[SDL_Rect]] structure used for clipping or NULL to enclose all points; see [[#Remarks|Remarks]] for details
 |-
 |'''result'''
-|--(a pointer to)-- an [[SDL_Rect]] to be filled in
+|an [[SDL_Rect]] structure filled in with the minimal enclosing rectangle
 |}
 
 
