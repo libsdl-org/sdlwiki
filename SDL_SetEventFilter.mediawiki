@@ -15,13 +15,11 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|^typedef int (SDLCALL * SDL_EventFilter) (void *userdata, SDL_Event * event); ???  the SDL_EventFilter to be referenced/run ???^
+|the name of a function that gets called when an event happens; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|^a pointer filled with user-specified information to be filtered^
+|^a pointer filled in with user-specified information to be filtered^
 |}
-
-<<Color2(green,Should SDL_EventFilter have a page? Be detailed in Remarks?  Is userdata an exception to the 'pointer rule'?)>>
 
 == Code Examples ==
 <<Color2(green,Does this belong in Syntax or Remarks instead?)>>
@@ -34,6 +32,8 @@ You can add your code example here
 ```
 
 == Remarks ==
+typedef int (SDLCALL * SDL_EventFilter) (void *userdata, SDL_Event * event);
+
 If the ^resulting^ filter returns 1, then the event will be added to the internal queue.
 If it returns 0, then the event will be dropped from the queue, but the internal state will still be updated.  This allows selective filtering of dynamically arriving events.
 
