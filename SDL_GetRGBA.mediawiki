@@ -24,16 +24,16 @@ void SDL_GetRGBA(Uint32   	        pixel,
 |an [[SDL_PixelFormat]] structure describing the format of the pixel
 |-
 |'''r'''
-|a pointer to a value that will be filled with the red component
+|a pointer filled in with the red component
 |-
 |'''g'''
-|a pointer to a value that will be filled with the green component
+|a pointer filled in with the green component
 |-
 |'''b'''
-|a pointer to a value that will be filled with the blue component
+|a pointer filled in with the blue component
 |-
 |'''a'''
-|a pointer to a value that will be filled with the alpha component
+|a pointer filled in with the alpha component
 |}
 
 == Code Examples ==
