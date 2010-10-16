@@ -17,7 +17,7 @@ SDL_bool SDL_IntersectRectAndLine(const SDL_Rect* rect,
 == Function Parameters ==
 {|
 |'''rect'''
-|an [[SDL_Rect]] structure that represents the rectangle to intersect
+|an [[SDL_Rect]] structure representing the rectangle to intersect
 |-
 |'''X1'''
 |a pointer to the starting X-coordinate of the line
