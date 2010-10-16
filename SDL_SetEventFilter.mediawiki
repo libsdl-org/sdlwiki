@@ -28,7 +28,7 @@ You can add your code example here
 
 == Remarks ==
 The '''filter''' function has the following form:
- ```c++
+ ```
 int SDL_EventFilter(void *userdata, SDL_Event * event);
 ```
 
