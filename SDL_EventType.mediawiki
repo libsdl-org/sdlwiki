@@ -12,13 +12,13 @@ An enumeration of the types of events that can be delivered.
 |<style="color: #808080;">unused (do not remove)
 |-
 |
-|<bgcolor="#F5F5F5">''Application events''
+|<bgcolor="#EDEDED">''Application events''
 |-
 |SDL_QUIT
 |user-requested quit
 |-
 |
-|<bgcolor="#F5F5F5">''Window events''
+|<bgcolor="#EDEDED">''Window events''
 |-
 |SDL_WINDOWEVENT
 |window state change
@@ -27,7 +27,7 @@ An enumeration of the types of events that can be delivered.
 |system specific event
 |-
 |
-|<bgcolor="#F5F5F5">''Keyboard events''
+|<bgcolor="#EDEDED">''Keyboard events''
 |-
 |SDL_KEYDOWN
 |keys pressed
@@ -42,7 +42,7 @@ An enumeration of the types of events that can be delivered.
 |keyboard text input
 |-
 |
-|<bgcolor="#F5F5F5">''Mouse events''
+|<bgcolor="#EDEDED">''Mouse events''
 |-
 |SDL_MOUSEMOTION
 |mouse moved
@@ -57,7 +57,7 @@ An enumeration of the types of events that can be delivered.
 |mouse wheel motion
 |-
 |
-|<bgcolor="#F5F5F5">''Tablet or multiple mice input device events''
+|<bgcolor="#EDEDED">''Tablet or multiple mice input device events''
 |-
 |SDL_INPUTMOTION
 |input moved
@@ -78,7 +78,7 @@ An enumeration of the types of events that can be delivered.
 |input pen left proximity
 |-
 |
-|<bgcolor="#F5F5F5">''Joystick events''
+|<bgcolor="#EDEDED">''Joystick events''
 |-
 |SDL_JOYAXISMOTION
 |joystick axis motion
@@ -96,13 +96,13 @@ An enumeration of the types of events that can be delivered.
 |joystick button released
 |-
 |
-|<bgcolor="#F5F5F5">''Clipboard events''
+|<bgcolor="#EDEDED">''Clipboard events''
 |-
 |SDL_CLIPBOARDUPDATE
 |the clipboard changed
 |-
 |
-|<bgcolor="#F5F5F5">''Obsolete events''
+|<bgcolor="#EDEDED">''Obsolete events''
 |-
 |<style="color: #808080;">SDL_EVENT_COMPAT1
 |<style="color: #808080;">SDL 1.2 events for compatibility
@@ -114,7 +114,7 @@ An enumeration of the types of events that can be delivered.
 |<style="color: #808080;">SDL 1.2 events for compatibility
 |-
 |
-|<bgcolor="#F5F5F5">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
+|<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
 |-
 |SDL_USEREVENT
 |^a user-specified event^
