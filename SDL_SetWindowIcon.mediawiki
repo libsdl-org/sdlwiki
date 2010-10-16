@@ -14,10 +14,10 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to change
+|the window to change
 |-
 |'''icon'''
-|the [[SDL_Surface]] structure containing the icon for the window
+|an [[SDL_Surface]] structure containing the icon for the window
 |}
 
 == Code Examples ==
