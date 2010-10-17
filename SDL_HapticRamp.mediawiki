@@ -10,7 +10,7 @@ A structure that contains a template for a ramp effect.
 {|
 |
 |
-|''Header''
+|<bgcolor="#EDEDED">''Header''
 |-
 |Uint16
 |'''type'''
@@ -22,7 +22,7 @@ A structure that contains a template for a ramp effect.
 |-
 |
 |
-|''Replay''
+|<bgcolor="#EDEDED">''Replay''
 |-
 |Uint32
 |'''length'''
@@ -34,7 +34,7 @@ A structure that contains a template for a ramp effect.
 |-
 |
 |
-|''Trigger''
+|<bgcolor="#EDEDED">''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -46,7 +46,7 @@ A structure that contains a template for a ramp effect.
 |-
 |
 |
-|''Ramp''
+|<bgcolor="#EDEDED">''Ramp''
 |-
 |Sint16
 |'''start'''
@@ -58,7 +58,7 @@ A structure that contains a template for a ramp effect.
 |-
 |
 |
-|''Envelope''
+|<bgcolor="#EDEDED">''Envelope''
 |-
 |Uint16
 |'''attack_length'''
