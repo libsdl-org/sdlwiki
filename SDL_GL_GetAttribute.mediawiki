@@ -14,10 +14,10 @@ int SDL_GL_GetAttribute(SDL_GLattr attr,
 == Function Parameters ==
 {|
 |'''attr'''
-|the [[SDL_GLattr]] to query
+|the [[SDL_GLattr]] structure to query
 |-
 |'''value'''
-|a pointer to be filled in with the current value of '''attr'''
+|a pointer filled in with the current value of '''attr'''
 |}
 
 == Return Value ==
