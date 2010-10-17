@@ -10,7 +10,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 {|
 |
 |
-|''Header''
+|<bgcolor="#EDEDED">''Header''
 |-
 |Unit16
 |'''type'''
@@ -22,7 +22,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |-
 |
 |
-|''Replay''
+|<bgcolor="#EDEDED">''Replay''
 |-
 |Uint32
 |'''length'''
@@ -34,7 +34,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |-
 |
 |
-|''Trigger''
+|<bgcolor="#EDEDED">''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -46,7 +46,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |-
 |
 |
-|''Custom''
+|<bgcolor="#EDEDED">''Custom''
 |-
 |Uint8
 |'''channels'''
@@ -66,7 +66,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |-
 |
 |
-|''Envelope''
+|<bgcolor="#EDEDED">''Envelope''
 |-
 |Uint16
 |'''attack_length'''
