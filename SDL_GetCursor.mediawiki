@@ -12,7 +12,7 @@ SDL_Cursor* SDL_GetCursor(void)
 ```
 
 == Return Value ==
-Returns the active SDL_Cursor.  ''-or-'' Returns a pointer to the active SDL_Cursor.
+Returns the active cursor.
 
 <<Color2(green,What happens on error?)>>
 
