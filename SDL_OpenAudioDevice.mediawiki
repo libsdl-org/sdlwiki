@@ -26,7 +26,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
 |-
 |'''obtained'''
-|an [[SDL_AudioSpec]] structure to be filled in; see [[SDL_OpenAudio]]() for more information
+|an [[SDL_AudioSpec]] structure filled in with the actual output format; see [[SDL_OpenAudio]]() for more information
 |-
 |'''allowed_changes'''
 |0, or one or more flags OR'd together; see [[#allowed|Remarks]] for details
