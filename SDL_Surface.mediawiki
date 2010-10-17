@@ -28,13 +28,13 @@ A structure that contains a collection of pixels used in software blitting.
 |'''pixels'''
 |read-write
 |-
-|<-3>''Application data associated with the surface''
+|<bgcolor="#EDEDED"-3>''Application data associated with the surface''
 |-
 |void*
 |'''userdata'''
 |read-write
 |-
-|<-3>''Information needed for surfaces requiring locks''
+|<bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
 |-
 |int
 |'''locked'''
@@ -44,31 +44,31 @@ A structure that contains a collection of pixels used in software blitting.
 |'''lock_data'''
 |read-only
 |-
-|<-3>''Clipping information''
+|<bgcolor="#EDEDED"-3>''Clipping information''
 |-
 |[[SDL_Rect]]
 |'''clip_rect'''
 |read-only
 |-
-|<-3>''Info for fast blit mapping to other surfaces''
+|<bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
 |-
 |[[SDL_BlitMap]]*
 |'''map'''
 |private (struct)
 |-
-|<-3>''Format version, bumped at every change to invalidate blit maps''
+|<bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
 |-
 |unsigned int ^Uint?^
 |'''format_version'''
 |private
 |-
-|<-3>''Reference count -- used when freeing surface''
+|<bgcolor="#EDEDED"-3>''Reference count -- used when freeing surface''
 |-
 |int
 |'''refcount'''
 |read-mostly
 |}
-<<Color2(green,Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?  There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
+<<Color2(green,Should the gray rows be centered or leave them like this since they are a little different?  Would it be more consistent to move the italics text into the description cells?  Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?  There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
 
 == Code Examples ==
 ```c++
