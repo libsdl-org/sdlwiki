@@ -14,7 +14,7 @@ void SDL_FreeCursor(SDL_Cursor* cursor)
 == Function Parameters ==
 {|
 |'''cursor'''
-|the SDL_Cursor to free
+|the cursor to free
 |}
 
 == Code Examples ==
