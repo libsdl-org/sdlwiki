@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-See [[SDL_scancode]] for details. ??? <<Color2(green,There is no info to link this to a page unless it links to SDL_keysym which doesn't have a page.  Should this section mention [[SDLKey]]?)>>
+See [[SDL_scancode]] for details. ??? <<Color2(green,Should this section mention [[SDLKey]]?)>>
 
 == Related Functions ==
 :[[SDL_GetKeyFromScancode]]
