@@ -20,7 +20,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 == Function Parameters ==
 {|
 |'''cvt'''
-|an [[SDL_AudioCVT]] structure that is filled in with audio conversion information
+|an [[SDL_AudioCVT]] structure filled in with audio conversion information
 |-
 |'''src_format'''
 |the source format of the audio data; for more info see [[SDL_AudioFormat]]
