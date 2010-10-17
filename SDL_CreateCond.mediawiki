@@ -12,7 +12,7 @@ SDL_cond* SDL_CreateCond(void)
 ```
 
 == Return Value ==
-Returns ^a pointer to the SDL_cond structure that is created / filled with the condition variable^.
+Returns ^the condition variable that is created^.
 
 == Code Examples ==
 *
