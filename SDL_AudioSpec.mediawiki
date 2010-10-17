@@ -61,6 +61,7 @@ You can add your code example here
 
 '''freq''' ^specifies^ the number of samples sent to the sound device ,,every,, ^per^ second. Common values are 11025, 22050 and 44100. The higher the better. <<Color2(green,I think this info could be moved to Params above and this paragraph removed.)>><<Color2(green,I think "The higher the better." implies that the programmer has a choice and should choose the higher number.  I suspect that the value is actually dictated by the audio data.  Perhaps rewording to say "Higher values produce higher quality sounds/audio output" might be preferable?)>>
 
+<<Color2(green,Should this be an include from [[SDL_AudioFormat]] instead?)>>
 '''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^Audio format flags may be one of the following values:^
 {|
 |
