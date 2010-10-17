@@ -17,7 +17,7 @@ int SDL_OpenAudio(SDL_AudioSpec* desired,
 |the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[#desired|Remarks]] for more information
 |-
 |'''obtained'''
-|an [[SDL_AudioSpec]] structure to be filled in
+|an [[SDL_AudioSpec]] structure filled in with the actual parameters
 |}
 
 == Return Value ==
