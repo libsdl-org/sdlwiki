@@ -13,7 +13,7 @@ int SDL_GetCurrentDisplayMode(SDL_DisplayMode* mode)
 == Function Parameters ==
 {|
 |'''mode'''
-|an [[SDL_DisplayMode]] structure that is filled in with the current display mode
+|an [[SDL_DisplayMode]] structure filled in with the current display mode
 |}
 
 == Return Value ==
