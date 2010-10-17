@@ -10,9 +10,9 @@ This guide provides instructions for adding your own content to the Code Example
 
 Anyone may contribute '''Code Examples''' or '''Remarks''' per the instructions in this Style Guide.  Please check back periodically for updates.
 
-/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send an e-mail to docs@libsdl.org so we can give you write access.
+/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send an e-mail to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> so we can give you write access.
 
-If you would like to make other contributions beyond code examples and remarks, such as editing existing content or developing tutorials, please email docs@libsdl.org to coordinate efforts.
+If you would like to make other contributions beyond code examples and remarks, such as editing existing content or developing tutorials, please email <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to coordinate efforts.
 
 == The Basics ==
 
@@ -125,12 +125,12 @@ The Remarks section provides additional information related to other sections on
 
 When in doubt
  a) look for another page that contains the same thing you want to do and copy all the basics as much as applicable.  
- b) send a comment or question to docs@libsdl.org for clarification.
+ b) send a comment or question to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> for clarification.
 
-If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact docs@libsdl.org with your thoughts.  We are happy to have the participation!
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> with your thoughts.  We are happy to have the participation!
 
 ----
 == Disclaimer ==
 ```#!wiki note
-All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to docs@libsdl.org.
+All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>>.
 ```
