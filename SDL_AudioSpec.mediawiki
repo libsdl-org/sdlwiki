@@ -144,7 +144,7 @@ void callback(void*  userdata,
 ```
  ^with the following parameters:^
  ||'''userdata'''||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
- ||'''stream'''||a pointer to the audio data buffer to be filled in by the callback||
+ ||'''stream'''||a pointer to the audio data buffer filled in by the callback||
  ||'''len'''||the length of that buffer in bytes||
 
 Once the callback returns, the buffer will no longer be valid.
