@@ -10,7 +10,7 @@ A structure that contains a template for a condition effect.
 {|
 |
 |
-|''Header''
+|<bgcolor="#EDEDED">''Header''
 |-
 |Uint16
 |'''type'''
@@ -22,7 +22,7 @@ A structure that contains a template for a condition effect.
 |-
 |
 |
-|''Replay''
+|<bgcolor="#EDEDED">''Replay''
 |-
 |Uint32
 |'''length'''
@@ -34,7 +34,7 @@ A structure that contains a template for a condition effect.
 |-
 |
 |
-|''Trigger''
+|<bgcolor="#EDEDED">''Trigger''
 |-
 |Uint16
 |'''button'''
@@ -46,7 +46,7 @@ A structure that contains a template for a condition effect.
 |-
 |
 |
-|''Condition''
+|<bgcolor="#EDEDED">''Condition''
 |-
 |Uint16
 |'''right_sat'''
