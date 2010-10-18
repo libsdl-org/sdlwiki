@@ -14,7 +14,7 @@ Uint32 SDL_SemValue(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the SDL_sem to query^
+|^the semaphore to query^
 |}
 
 == Return Value ==
