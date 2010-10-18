@@ -15,7 +15,7 @@ void SDL_SetWindowPosition(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to reposition
+|the window to reposition
 |-
 |'''x'''
 |the x coordinate of the window, SDL_WINDOWPOS_CENTERED, or SDL_WINDOWPOS_UNDEFINED
