@@ -14,7 +14,7 @@ void SDL_DestroyMutex(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex'''
-|^the SDL_mutex to be destroyed^
+|^the mutex to destroy^
 |}
 
 == Code Examples ==
