@@ -13,7 +13,7 @@ void SDL_GetVersion(SDL_version* ver)
 == Function Parameters ==
 {|
 |'''ver'''
-|a pointer to the [[SDL_version]] structure that contains the version information
+|the [[SDL_version]] structure that contains the version information
 |}
 
 == Code Examples ==
