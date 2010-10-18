@@ -13,7 +13,7 @@ SDL_VERSION(x)
 == Function Parameters ==
 {|
 |'''x'''
-|a pointer to an [[SDL_version]] struct to initialize
+|an [[SDL_version]] structure to initialize
 |}
 
 == Return Value ==
