@@ -14,7 +14,7 @@ void SDL_SetWindowData(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to associate with the pointer
+|the window to associate with the pointer
 |-
 |'''userdata'''
 |the associated pointer
