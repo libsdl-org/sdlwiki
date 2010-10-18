@@ -14,7 +14,7 @@ int SDL_SetWindowFullscreen(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to change
+|the window to change
 |-
 |'''fullscreen'''
 |1 for fullscreen or 0 for windowed
