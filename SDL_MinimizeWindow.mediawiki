@@ -13,7 +13,7 @@ void SDL_MinimizeWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the SDL_Window to be minimized
+|the window to minimize
 |}
 
 == Code Examples ==
