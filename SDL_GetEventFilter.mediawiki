@@ -15,13 +15,11 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|^a pointer to the SDL_EventFilter to be read/called^ ???
+|^a pointer to fill in with the function to call when an event happens^ ???
 |-
 |'''userdata'''
-|^a pointer to a pointer containing user-specified data^
+|^a pointer to a pointer filled in with user-specified data^
 |}
-
-<<Color2(green,Is userdata an exception to the 'pointer rule'?)>>
 
 == Return Value ==
 Returns the current event filter.  If there is no event filter set, this function returns SDL_FALSE.  
