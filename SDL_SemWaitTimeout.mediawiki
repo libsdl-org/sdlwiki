@@ -15,7 +15,7 @@ int SDL_SemWaitTimeout(SDL_sem* sem,
 == Function Parameters ==
 {|
 |'''sem'''
-|^the SDL_sem to monitor^
+|^the semaphore to monitor^
 |-
 |'''ms'''
 |the length of the timeout in milliseconds
