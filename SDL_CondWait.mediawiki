@@ -17,10 +17,10 @@ int SDL_CondWait(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond'''
-|^the applicable SDL_cond^ ???
+|^the applicable condition variable^ ???
 |-
 |'''mutex'''
-|^the SDL_mutex that is to be unlocked^
+|^the mutex to unlock^
 |}
 
 == Return Value ==
