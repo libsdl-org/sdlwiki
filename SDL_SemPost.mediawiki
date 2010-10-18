@@ -16,7 +16,7 @@ int SDL_SemPost(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the SDL_sem to be incremented^
+|^the semaphore to increment^
 |}
 
 == Return Value ==
