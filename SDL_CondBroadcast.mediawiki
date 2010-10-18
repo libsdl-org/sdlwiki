@@ -14,7 +14,7 @@ int SDL_CondBroadcast(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^the applicable SDL_cond^ ???
+|^the applicable condition variable^ ???
 |}
 
 == Return Value ==
