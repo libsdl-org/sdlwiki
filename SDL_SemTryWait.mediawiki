@@ -14,7 +14,7 @@ int SDL_SemTryWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the SDL_sem to be decremented^
+|^the semaphore to decrement^
 |}
 
 == Return Value ==
