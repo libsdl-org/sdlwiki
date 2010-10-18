@@ -29,10 +29,12 @@ You can add your code example here
 == Remarks ==
 The '''filter''' function has the following form:
  ```
-int SDL_EventFilter(void *userdata, SDL_Event * event)
+int SDL_EventFilter(void* userdata, SDL_Event* event)
 ```
+where '''userdata''' is the event queue to filter and '''event''' is the desired event to pull from the queue.
+<<Color2(green,Should this be formatted more like the syntax section?)>>
 
-If the ^resulting^ filter returns 1, then the event will be added to the internal queue.
+If the '''filter''' returns 1, then the event will be added to the internal queue.
 If it returns 0, then the event will be dropped from the queue, but the internal state will still be updated.  This allows selective filtering of dynamically arriving events.
 
 /!\ Be very careful of what you do in the event filter function, as it may run in a different thread!
