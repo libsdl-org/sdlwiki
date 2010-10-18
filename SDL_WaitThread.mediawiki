@@ -15,10 +15,10 @@ void SDL_WaitThread(SDL_Thread* thread,
 == Function Parameters ==
 {|
 |'''thread'''
-|^the [[SDL_Thread]] to wait for^
+|^the thread to wait for^
 |-
 |'''status'''
-|^status data^; see [[#Remarks|Remarks]] for details
+|^the pointer to receive the return code???^; see [[#Remarks|Remarks]] for details
 |}
 
 <<Color2(green,Is '''status''' an exception to the 'pointer rule'?)>>
