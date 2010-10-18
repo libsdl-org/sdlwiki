@@ -14,7 +14,7 @@ int SDL_SemWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the SDL_sem to be monitored^
+|^the semaphore to monitor^
 |}
 
 == Return Value ==
