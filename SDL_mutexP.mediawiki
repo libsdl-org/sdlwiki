@@ -14,7 +14,7 @@ int SDL_mutexP(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex'''
-|^the SDL_mutex to be locked^
+|^the mutex to lock^
 |}
 
 == Return Value ==
