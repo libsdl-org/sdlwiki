@@ -13,7 +13,7 @@ void SDL_RestoreWindow(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window''' 
-|the SDL_Window to be restored 
+|the window to be restored 
 |}
 
 == Code Examples ==
