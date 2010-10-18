@@ -22,7 +22,7 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 |}
 
 == Return Value ==
-^Returns a pointer to the new thread.^  <<Color2(green,Is this RV effectively the thread ID?)>>
+^Returns the new thread.^  <<Color2(green,Is this RV effectively the thread ID?)>>
 
 <<Color2(green,Should it be mentioned here that the function '''fn''' itself returns an int or is it sufficient to note that in the Remarks?)>>
 
