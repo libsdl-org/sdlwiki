@@ -10,7 +10,7 @@ A structure that contains a collection of pixels used in software blitting.
 {|
 |<style="color: #808080;">Uint32
 |<style="color: #808080;">'''flags'''
-|<style="color: #808080;">internal, read-only; see [[#Remarks|Remarks]] for details
+|<style="color: #808080;">internal
 |-
 |[[SDL_PixelFormat]]*
 |'''format'''
@@ -54,13 +54,13 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |<style="color: #808080;">SDL_BlitMap*
 |<style="color: #808080;">'''map'''
-|<style="color: #808080;">Internal (struct)
+|<style="color: #808080;">internal
 |-
 |<:bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
 |-
 |unsigned int ^Uint?^
 |'''format_version'''
-|private
+|<style="color: #808080;">internal
 |-
 |<:bgcolor="#EDEDED"-3>''Reference count -- used when freeing surface''
 |-
@@ -68,7 +68,7 @@ A structure that contains a collection of pixels used in software blitting.
 |'''refcount'''
 |read-mostly
 |}
-<<Color2(green,Should the gray rows be centered or leave them like this since they are a little different?  Would it be more consistent to move the italics text into the description cells?  Should map and format_version be gray because they're private?  Should SDL_BlitMap have a page or have the link removed?  There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
+<<Color2(green,There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
 
 == Code Examples ==
 ```c++
@@ -76,30 +76,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-This structure should be treated as read-only, except for '''pixels''', which, if not NULL, contains the raw pixel data for the surface.
+An [[SDL_Surface]] structure represents an area of graphical memory that can be drawn to.
 
-The currently supported '''flags''' for [[SDL_Surface]] are:<br/>
-or<br/>
-'''flags''' may be 0 or any of the following OR'd together:
-{|
-|SDL_PREALLOC
-|surface uses preallocated memory
-|-
-|SDL_RLEACCEL
-|surface is RLE encoded
-|}
-
-<<Color2(green,There are MANY more flags listed in the old wiki.  Should any of them be moved here?  http://www.libsdl.org/cgi/docwiki.cgi/SDL_Surface)>>
-
-^The following^ Evaluates to true if the surface needs to be locked before access.
- ```
-#define SDL_MUSTLOCK(S) (((S)->flags & SDL_RLEACCEL) != 0)
-```
-<<Color2(green,I don't know where the above came from...)>>
-
-*<br/>An [[SDL_Surface]] represents an area of graphical memory that can be drawn to. The video framebuffer is returned as an [[SDL_Surface]] by [[SDL_SetVideoMode]]() and [[SDL_GetVideoSurface]](). 
-
-<<Color2(green,The two above functions are not in 1.3.  Have they been replaced?)>><br/>*
+This structure should be treated as read-only, except for '''pixels''' which, if not NULL, contains the raw pixel data for the surface.
 
 == Related Structures ==
 :[[SDL_SDL_PixelFormat]]
@@ -143,6 +122,7 @@ or<br/>
 :[[SDL_LoadBMP_RW]]
 :[[SDL_LockSurface]]
 :[[SDL_LowerBlit]]
+:[[SDL_MUSTLOCK]]
 :[[SDL_SaveBMP_RW]]
 :[[SDL_SetClipRect]]
 :[[SDL_SetColorKey]]
