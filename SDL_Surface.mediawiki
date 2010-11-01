@@ -14,25 +14,25 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |[[SDL_PixelFormat]]*
 |'''format'''
-|read-only
+|the format of the pixels stored in the surface; ,,see [[SDL_PixelFormat]],, (read-only)
 |-
 |int
 |'''w, h'''
-|read-only
+|the surface width and height in pixels (read-only)
 |-
 |int
 |'''pitch'''
-|read-only
+|the length of a surface scanline in bytes (read-only)
 |-
 |void*
 |'''pixels'''
-|read-write
+|the pointer to the actual pixel data; the surface should be locked by [[SDL_LockSurface]]() before accessing this field (read-write)
 |-
 |<:bgcolor="#EDEDED"-3>''Application data associated with the surface''
 |-
 |void*
 |'''userdata'''
-|read-write
+|,,a pointer to user-specified content???,, (read-write)
 |-
 |<:bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
 |-
@@ -48,7 +48,7 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |[[SDL_Rect]]
 |'''clip_rect'''
-|read-only
+|the surface clip rectangle which can be set by [[SDL_SetClipRect]]() (read-only)
 |-
 |<:bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
 |-
@@ -62,18 +62,19 @@ A structure that contains a collection of pixels used in software blitting.
 |'''format_version'''
 |<style="color: #808080;">internal
 |-
-|<:bgcolor="#EDEDED"-3>''Reference count -- used when freeing surface''
+|<:bgcolor="#EDEDED"-3>'',,Reference count --,, used when freeing surface''
 |-
 |int
 |'''refcount'''
 |read-mostly
 |}
-<<Color2(green,There are more descriptions in the old wiki such as "the length of a surface scanline in bytes" for '''pitch'''.  Should any of those be moved here to clarify the information that this struct holds even though it's mostly read-only?)>>
 
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
+
+<<Color2(green,Should any of the User Comments from the old wiki be included here?)>>
 
 == Remarks ==
 An [[SDL_Surface]] structure represents an area of graphical memory that can be drawn to.
