@@ -28,13 +28,13 @@ A structure that contains a collection of pixels used in software blitting.
 |'''pixels'''
 |read-write
 |-
-|<bgcolor="#EDEDED"-3>''Application data associated with the surface''
+|<:bgcolor="#EDEDED"-3>''Application data associated with the surface''
 |-
 |void*
 |'''userdata'''
 |read-write
 |-
-|<bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
+|<:bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
 |-
 |int
 |'''locked'''
@@ -44,25 +44,25 @@ A structure that contains a collection of pixels used in software blitting.
 |'''lock_data'''
 |read-only
 |-
-|<bgcolor="#EDEDED"-3>''Clipping information''
+|<:bgcolor="#EDEDED"-3>''Clipping information''
 |-
 |[[SDL_Rect]]
 |'''clip_rect'''
 |read-only
 |-
-|<bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
+|<:bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
 |-
-|[[SDL_BlitMap]]*
-|'''map'''
-|private (struct)
+|<style="color: #808080;">SDL_BlitMap*
+|<style="color: #808080;">'''map'''
+|<style="color: #808080;">Internal (struct)
 |-
-|<bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
+|<:bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
 |-
 |unsigned int ^Uint?^
 |'''format_version'''
 |private
 |-
-|<bgcolor="#EDEDED"-3>''Reference count -- used when freeing surface''
+|<:bgcolor="#EDEDED"-3>''Reference count -- used when freeing surface''
 |-
 |int
 |'''refcount'''
@@ -102,7 +102,6 @@ or<br/>
 <<Color2(green,The two above functions are not in 1.3.  Have they been replaced?)>><br/>*
 
 == Related Structures ==
-:[[SDL_BlitMap]] <<Color2(green,should this be removed since there's no page?)>>
 :[[SDL_SDL_PixelFormat]]
 :[[SDL_Rect]]
 
