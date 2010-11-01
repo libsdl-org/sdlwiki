@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MUSTLOCK =
+Use this function to ^determine whether a surface must be locked for access^.
+
+
+== Syntax ==
+```c++
+SDL_Bool SDL_MUSTLOCK(SDL_Surface* surface)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the [[SDL_Surface]] structure to check
+|}
+
+== Return Value ==
+Returns SDL_TRUE if the surface must be locked for access, SDL_FALSE if not.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_LockSurface]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
