@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Surface Creation and Simple Drawing =
 
@@ -11,7 +10,7 @@
 
 == Introduction ==
 
-This category contains functions for handling surface creation and blitting as well as simple drawing tasks including points, lines, circles, ellipses, and rectangles.
+This category contains functions for handling surface creation and blitting as well as simple drawing tasks including points, lines, and rectangles.
 
 == Structures ==
 <<FullSearch(category:CategoryStruct CategorySurface)>>
