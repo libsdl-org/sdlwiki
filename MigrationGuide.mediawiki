@@ -1,0 +1,6 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL 1.2 to 1.3 Migration Guide =
+
