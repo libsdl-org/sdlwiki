@@ -58,7 +58,7 @@ You update the physical screen using [[SDL_RenderPresent]], which replaces ```SD
 
 === Alpha-blending ===
 
-Use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of SDL_SetAlpha.
+Use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of ```SDL_SetAlpha```.
 
 === Color modulation ===
 
