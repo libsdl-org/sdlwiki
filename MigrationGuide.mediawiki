@@ -9,6 +9,13 @@
 
 This page describes what changed from SDL 1.2 to SDL 1.3, the new features, and upgrade tips.
 
+== Looking for information ==
+
+The best place for information are:
+* this wiki :)
+* the tests included in SDL, in the ```test/``` directory ([http://hg.libsdl.org/SDL/file/tip/test browse online])
+* the SDL [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list]
+
 == Compatibility mode ==
 
 There are good chances that your current 1.2 code will directly compile under 1.3.  Check ```include/SDL_compat.h``` and  {{{SDL/src/SDL_compat.c}}} to get an idea.
@@ -27,11 +34,13 @@ Now, we have two structures:
 * [[SDL_Surface]]: software surfaces, working like in 1.2, but never accelerated
 * SDL_Texture: hardware surfaces, whose pixels are not directly accessible (not ```->pixels``` field)
 
-SDL_Texture are typically OpenGL textures or X11 pixmaps, stored as near to the graphics hardware as possible.
+Textures are typically OpenGL textures or X11 pixmaps, stored as near to the graphics hardware as possible.
 
-SDL_Textures cannot be blit on each others.  They can be blit to the screen using [[SDL_RenderCopy]].
+Textures cannot be blit on each others.  They can be blit to the screen using [[SDL_RenderCopy]].
 
-Textures are created with a [[SDL_TextureAccess]] ```SDL_TEXTUREACCESS_STATIC``` or {{{SDL_TEXTUREACCESS_STREAMING}}}.  Static means the texture doesn't change often, streaming means you can be access to its pixels using [[SDL_QueryTexturePixels]].
+Textures are created with a [[SDL_TextureAccess]] ```SDL_TEXTUREACCESS_STATIC``` or {{{SDL_TEXTUREACCESS_STREAMING}}}.  Static means the texture doesn't change often, streaming means you can access its pixels using [[SDL_QueryTexturePixels]].  It's used by the SDL engine to manage memory.
+
+Textures may be stored in unaccelerated memory, for instance if there's not enough memory in the graphics card.
 
 === Screen(s) ===
 
@@ -39,7 +48,7 @@ You now can create multiple screens (for instance: multiple windows). Each windo
 
 There is a complete example at [[SDL_RenderPresent]].
 
-The renderer replaces your previous ```SDL_Surface *screen``` object.  It has a few methods to draw points, lines, rectangles, blit textures, etc.  It also has a few dedicated postprocessors for alpha-blending, masks, as well as add/multiply mode, cf. [[SDL_BlendMode]] and [[SDL_SetRenderDrawBlendMode]].  Introspection can be achieved using [[SDL_RendererInfo]].
+The renderer replaces your previous ```SDL_Surface *screen``` object.  It has a few methods to draw points, lines, rectangles, blit textures, etc.  It also has a few dedicated post-processors for alpha-blending, masks, as well as add/multiply mode, cf. [[SDL_BlendMode]] and [[SDL_SetRenderDrawBlendMode]].  Introspection can be achieved using [[SDL_RendererInfo]].
 
 Instead of passing around a pointer to the current screen everywhere in your code, you specify the currently active screen using [[SDL_SelectRenderer]].
 
