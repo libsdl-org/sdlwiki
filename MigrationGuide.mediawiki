@@ -16,14 +16,6 @@ The best place for information are:
 * the tests included in SDL, in the ```test/``` directory ([http://hg.libsdl.org/SDL/file/tip/test browse online])
 * the SDL [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list]
 
-== Compatibility mode ==
-
-There are good chances that your current 1.2 code will directly compile under 1.3.  Check ```include/SDL_compat.h``` and  {{{SDL/src/SDL_compat.c}}} to get an idea.
-
-Your code will probably run slower though; in particular there will be no hardware surfaces.
-
-Compatibility is not 100% correct though; for instance ```SDL_SetPalette``` flags are currently ignored.
-
 == Video ==
 
 === Hardware surfaces ===
@@ -106,3 +98,36 @@ The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net can be compile
 Changes related to software surfaces manipulation are usually trivial, so more extensions should be rebuildable.
 
 However, this multi-support can lead to delicate situations in the context of shared libraries (when using GNU/Linux distros package dependencies, or when using ms windows .dll's).  For example, if your new 1.3 game links against ```libSDL_image-1.2.so.0```, it will not be able to know whether SDL_image is itself linked against SDL 1.2 or SDL 1.3, especially if SDL_image is provided by the distro and not compiled by you.
+
+== Strategies ==
+
+Here we discuss migration strategies for your code base.
+
+Basic technique: here's how to detect the current SDL version:
+```
+#if SDL_VERSION_ATLEAST(1,3,0)
+/* SDL 1.3 code */
+#else
+/* SDL 1.2 code */
+#endif
+```
+
+=== Rewrite ===
+
+The most obvious one: drop SDL 1.2 and rewrite everything for 1.3.
+
+=== Backward-compatibility ===
+
+There are good chances that your current 1.2 code will directly compile under 1.3.  Check ```include/SDL_compat.h``` and  {{{SDL/src/SDL_compat.c}}} to get an idea.
+
+Your code will probably run slower though; in particular there will be no hardware surfaces.
+
+Compatibility is not 100% correct though; for instance ```SDL_SetPalette``` flags are currently ignored.
+
+=== Forward-compatibility ===
+
+You may want to support both libraries, for instance because SDL 1.2 is currently better supported on your platform, or better packaged in GNU/Linux distros.
+
+The !AlienBlaster code, in the Android port repository, uses a few additional functions on top of SDL, that will use either SDL 1.2 or 1.3 seemlessly, and minimise the amount of #ifdef.  It's not completely fool-proof though, for instance blits between hardware surfaces will result in a no-op under 1.3.  Check the C++ code at:
+
+[http://github.com/pelya/commandergenius/blob/sdl_android/project/jni/application/alienblaster/SdlForwardCompat.h]
