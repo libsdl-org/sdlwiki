@@ -4,7 +4,7 @@ The code is available here: http://hg.libsdl.org/SDL-gsoc2010_shaped_windows
 
 
 == Status ==
-Wrote a test program SDL_eyes and integrated it into the SDL testing framework.  Time to discuss and verify the API.
+GSoC code submitted and merged with 1.3 branch.
 
 == Documentation ==
 The actual API itself is simple.  SDL_CreateShapedWindow() returns an SDL_Window with the correct attributes and the capability to be shaped.  From there, the user can either check if any particular window is a shaped window via a predicate function, or they can set the shape of a window by passing a shape surface with an alpha channel into SDL_SetWindowShape(). This function also accepts a structure of mode parameters, which are currently used to specify the cutoff value for the shape's alpha channel.  At or above that cutoff value, a pixel is visible in the shape.  Below that, it's not part of the shape.
@@ -15,7 +15,17 @@ The actual API itself is simple.  SDL_CreateShapedWindow() returns an SDL_Window
 * obtain repository: hg pull; hg update
 * compile SDL: ./configure; make; sudo make install
 * compile test: cd test; ./configure; make
-* run test: ./testeyes
+* run test: ./testeyes shapes/file.bmp
+
+==== OSX (MacPorts) ====
+* obtain/install MacPort (https://trac.macports.org/wiki/InstallingMacPorts)
+* obtain repository: hg pull; hg update
+* compile SDL: ./autogen.sh; ./configure; make; sudo make install
+* compile test: cd test; ./configure; make
+* run test: ./testeyes shapes/file.bmp
+
+==== Win32 (VS) ====
+* open solution file and build
 
 === Pre-Processing ===
 Possible pre-processing pipelines:
