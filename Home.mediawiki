@@ -126,4 +126,8 @@ This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LG
 * Support for multiple mice, tablets, etc.
 * Force Feedback available on Windows, Mac OS X and Linux
 
+=== Transitioning from SDL 1.2 to 1.3 ===
+* [http://wiki.libsdl.org/moin.cgi/MigrationGuide Migration Guide]
+
+----
 This wiki is powered by [http://moinmo.in/ MoinMoin].
