@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Texture =
+A structure that contains an efficient, driver-specific representation of pixel data.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateTexture]]
+:[[SDL_CreateTextureFromSurface]]
+:[[SDL_DestroyTexture]]
+:[[SDL_DirtyTexture]]
+:[[SDL_GetTextureAlphaMod]]
+:[[SDL_GetTextureBlendMode]]
+:[[SDL_GetTextureColorMod]]
+:[[SDL_GetTexturePalette]]
+:[[SDL_GetTextureScaleMode]]
+:[[SDL_]]
+:[[SDL_LockTexture]]
+:[[SDL_]]
+:[[SDL_]]
+:[[SDL_]]
+:[[SDL_QueryTexture]]
+:[[SDL_QueryTexturePixels]]
+:[[SDL_RenderCopy]]
+:[[SDL_SetTextureAlphaMod]]
+:[[SDL_SetTextureBlendMode]]
+:[[SDL_SetTextureColorMod]]
+:[[SDL_SetTexturePalette]]
+:[[SDL_SetTextureScaleMode]]
+:[[SDL_UnlockTexture]]
+:[[SDL_UpdateTexture]]
+
+----
+[[CategoryStruct]], !CategoryVideo
