@@ -9,7 +9,7 @@ A structure that describes a display mode.
 {|
 |Uint32
 |'''format'''
-|an enumerated pixel format; see [[SDL_PixelFormatEnum]] for details
+|,,an enumerated pixel format; see,, one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
 |-
 |int
 |'''w'''
@@ -34,7 +34,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+'''format''' can be one of these values:
+<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_GetClosestDisplayMode]]
