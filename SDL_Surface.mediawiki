@@ -1,9 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_Surface =
 A structure that contains a collection of pixels used in software blitting.
