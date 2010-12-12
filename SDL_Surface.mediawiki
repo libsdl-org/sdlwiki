@@ -63,7 +63,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-With most surfaces you can access the pixels directly,  Surfaces that have been run-length-encoded by [[SDL_SetSurfaceRLE]]() should be locked by [[SDL_LockSurface]]() before accessing this field.  When you are done accessing the pixels they should be unlocked with [[SDL_UnlockSurface]]() before blitting.
+With most surfaces you can access the pixels directly.  Surfaces that have been optimized with [[SDL_SetSurfaceRLE]]() should be locked with [[SDL_LockSurface]]() before accessing '''pixels'''.  When you are done you should call [[SDL_UnlockSurface]]() before blitting.
 
 == Related Functions ==
 : [[SDL_BlendFillRect]]
