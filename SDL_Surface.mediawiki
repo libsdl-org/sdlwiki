@@ -21,7 +21,7 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |int 
 |'''pitch''' 
-|the length of a scanline in bytes (read-only) 
+|the length of a row of pixels in bytes (read-only) 
 |-
 |void* 
 |'''pixels''' 
