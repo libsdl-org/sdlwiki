@@ -58,11 +58,11 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |<:bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
 |-
-|<style="color: #808080;">unsigned int ^Uint?^
+|<style="color: #808080;">int
 |<style="color: #808080;">'''format_version'''
 |<style="color: #808080;">internal
 |-
-|<:bgcolor="#EDEDED"-3>'',,Reference count --,, used when freeing surface''
+|<:bgcolor="#EDEDED"-3>''Used when freeing surface''
 |-
 |int
 |'''refcount'''
@@ -74,24 +74,16 @@ A structure that contains a collection of pixels used in software blitting.
 You can add your code example here
 ```
 
-<<Color2(green,Should any of the User Comments from the old wiki be included here?)>>
 
 == Remarks ==
-An [[SDL_Surface]] structure represents an area of graphical memory that can be drawn to.
+''You can add useful comments here''
 
-This structure should be treated as read-only, except for '''pixels''' which, if not NULL, contains the raw pixel data for the surface.
-
-<<Color2(green,Should [[SDL_PixelFormat]] be included here and linked to the data fields?)>>
 
 == Related Structures ==
 :[[SDL_SDL_PixelFormat]]
 :[[SDL_Rect]]
 
 == Related Functions ==
-:[[SDL_BlendCircle]]
-:[[SDL_BlendEllipse]]
-:[[SDL_BlendFillCircle]]
-:[[SDL_BlendFillEllipse]]
 :[[SDL_BlendFillRect]]
 :[[SDL_BlendFillRects]]
 :[[SDL_BlendLine]]
@@ -103,16 +95,12 @@ This structure should be treated as read-only, except for '''pixels''' which, if
 :[[SDL_ConvertSurface]]
 :[[SDL_CreateRGBSurface]]
 :[[SDL_CreateRGBSurfaceFrom]]
-:[[SDL_DrawCircle]]
-:[[SDL_DrawEllipse]]
 :[[SDL_DrawLine]]
 :[[SDL_DrawLines]]
 :[[SDL_DrawPoint]]
 :[[SDL_DrawPoints]]
 :[[SDL_DrawRect]]
 :[[SDL_DrawRects]]
-:[[SDL_FillCircle]]
-:[[SDL_FillEllipse]]
 :[[SDL_FillRect]]
 :[[SDL_FillRects]]
 :[[SDL_FreeSurface]]
