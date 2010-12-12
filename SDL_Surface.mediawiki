@@ -69,10 +69,6 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Structures ==
-: [[SDL_SDL_PixelFormat]]
-: [[SDL_Rect]]
-
 == Related Functions ==
 : [[SDL_BlendFillRect]]
 : [[SDL_BlendFillRects]]
