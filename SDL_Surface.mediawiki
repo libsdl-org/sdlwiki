@@ -14,15 +14,15 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |[[SDL_PixelFormat]]*
 |'''format'''
-|,,the format of the pixels stored in the surface; see [[SDL_PixelFormat]] for details,, ''-or-'' ^the [[SDL_PixelFormat]] of the pixels stored in the surface^ (read-only)
+|the format of the pixels stored in the surface; see [[SDL_PixelFormat]] for details (read-only)
 |-
 |int
 |'''w, h'''
-|the surface width and height in pixels (read-only)
+|the width and height in pixels (read-only)
 |-
 |int
 |'''pitch'''
-|the length of a surface scanline in bytes (read-only)
+|the length of a scanline in bytes (read-only)
 |-
 |void*
 |'''pixels'''
@@ -32,23 +32,23 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |void*
 |'''userdata'''
-|,,a pointer to user-specified content???,, (read-write)
+|an arbitrary pointer you can set (read-write)
 |-
 |<:bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
 |-
-|int
-|'''locked'''
-|read-only
+|<style="color: #808080;">int
+|<style="color: #808080;">'''locked'''
+|<style="color: #808080;">read-only
 |-
-|void*
-|'''lock_data'''
-|read-only
+|<style="color: #808080;">void*
+|<style="color: #808080;">'''lock_data'''
+|<style="color: #808080;">read-only
 |-
 |<:bgcolor="#EDEDED"-3>''Clipping information''
 |-
 |[[SDL_Rect]]
 |'''clip_rect'''
-|the surface clip rectangle which can be set by [[SDL_SetClipRect]]() (read-only)
+|an [[SDL_Rect]] structure used to clip blits to the surface which can be set by [[SDL_SetClipRect]]() (read-only)
 |-
 |<:bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
 |-
@@ -58,15 +58,15 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |<:bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
 |-
-|unsigned int ^Uint?^
-|'''format_version'''
+|<style="color: #808080;">unsigned int ^Uint?^
+|<style="color: #808080;">'''format_version'''
 |<style="color: #808080;">internal
 |-
 |<:bgcolor="#EDEDED"-3>'',,Reference count --,, used when freeing surface''
 |-
 |int
 |'''refcount'''
-|read-mostly
+|internal reference count that can be incremented by the application
 |}
 
 == Code Examples ==
