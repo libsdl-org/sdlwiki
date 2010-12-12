@@ -28,45 +28,33 @@ A structure that contains a collection of pixels used in software blitting.
 |'''pixels'''
 |the pointer to the actual pixel data; the surface should be locked by [[SDL_LockSurface]]() before accessing this field (read-write)
 |-
-|<:bgcolor="#EDEDED"-3>''Application data associated with the surface''
-|-
 |void*
 |'''userdata'''
 |an arbitrary pointer you can set (read-write)
 |-
-|<:bgcolor="#EDEDED"-3>''Information needed for surfaces requiring locks''
-|-
 |<style="color: #808080;">int
 |<style="color: #808080;">'''locked'''
-|<style="color: #808080;">read-only
+|<style="color: #808080;">internal
 |-
 |<style="color: #808080;">void*
 |<style="color: #808080;">'''lock_data'''
-|<style="color: #808080;">read-only
-|-
-|<:bgcolor="#EDEDED"-3>''Clipping information''
+|<style="color: #808080;">internal
 |-
 |[[SDL_Rect]]
 |'''clip_rect'''
 |an [[SDL_Rect]] structure used to clip blits to the surface which can be set by [[SDL_SetClipRect]]() (read-only)
 |-
-|<:bgcolor="#EDEDED"-3>''Info for fast blit mapping to other surfaces''
-|-
 |<style="color: #808080;">SDL_BlitMap*
 |<style="color: #808080;">'''map'''
-|<style="color: #808080;">internal
-|-
-|<:bgcolor="#EDEDED"-3>''Format version, bumped at every change to invalidate blit maps''
+|<style="color: #808080;">internal; info for fast blit mapping to other surfaces
 |-
 |<style="color: #808080;">int
 |<style="color: #808080;">'''format_version'''
-|<style="color: #808080;">internal
-|-
-|<:bgcolor="#EDEDED"-3>''Used when freeing surface''
+|<style="color: #808080;">internal; bumped at every change to invalidate blit maps''
 |-
 |int
 |'''refcount'''
-|internal reference count that can be incremented by the application
+|reference count that can be incremented by the application
 |}
 
 == Code Examples ==
