@@ -14,7 +14,7 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |[[SDL_PixelFormat]]*
 |'''format'''
-|the format of the pixels stored in the surface; ,,see [[SDL_PixelFormat]],, (read-only)
+|,,the format of the pixels stored in the surface; see [[SDL_PixelFormat]] for details,, ''-or-'' ^the [[SDL_PixelFormat]] of the pixels stored in the surface^ (read-only)
 |-
 |int
 |'''w, h'''
@@ -80,6 +80,8 @@ You can add your code example here
 An [[SDL_Surface]] structure represents an area of graphical memory that can be drawn to.
 
 This structure should be treated as read-only, except for '''pixels''' which, if not NULL, contains the raw pixel data for the surface.
+
+<<Color2(green,Should [[SDL_PixelFormat]] be included here and linked to the data fields?)>>
 
 == Related Structures ==
 :[[SDL_SDL_PixelFormat]]
