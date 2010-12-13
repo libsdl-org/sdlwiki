@@ -8,17 +8,17 @@ Use this function to get the blend mode used for blit operations.
 
 == Syntax ==
 ```c++
-int SDL_GetSurfaceBlendMode(SDL_Surface* surface,
-                            int*         blendMode)
+int SDL_GetSurfaceBlendMode(SDL_Surface*   surface,
+                            SDL_BlendMode* blendMode)
 ```
 
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to query
+|the [[SDL_Surface]] structure to query
 |-
 |'''blendMode'''
-|the current [[SDL_BlendMode]]; see [[#Remarks|Remarks]] for details
+|a pointer filled in with the current [[SDL_BlendMode]] structure; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
