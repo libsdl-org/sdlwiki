@@ -8,8 +8,8 @@ Use this function to set the blend mode used for blit operations.
 
 == Syntax ==
 ```c++
-int SDL_SetSurfaceBlendMode(SDL_Surface* surface,
-                            int          blendMode)
+int SDL_SetSurfaceBlendMode(SDL_Surface*  surface,
+                            SDL_BlendMode blendMode)
 ```
 
 == Function Parameters ==
