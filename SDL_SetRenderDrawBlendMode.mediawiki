@@ -7,7 +7,7 @@ Use this function to set the blend mode used for drawing operations.
 
 == Syntax ==
 ```c++
-int SDL_SetRenderDrawBlendMode(int blendMode)
+int SDL_SetRenderDrawBlendMode(SDL_BlendMode blendMode)
 ```
 
 == Function Parameters ==
