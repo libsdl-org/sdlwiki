@@ -7,14 +7,14 @@ Use this function to get the blend mode used for texture copy operations.
 
 == Syntax ==
 ```c++
-int SDL_GetTextureBlendMode(SDL_Texture* texture,
-                            int*         blendMode)
+int SDL_GetTextureBlendMode(SDL_Texture*   texture,
+                            SDL_BlendMode* blendMode)
 ```
 
 == Function Parameters ==
 {|
 |'''texture'''
-|the SDL_Texture to query
+|the texture to query
 |-
 |'''blendMode'''
 |a pointer filled in with the current [[SDL_BlendMode]]; see [[#Remarks|Remarks]] for details
