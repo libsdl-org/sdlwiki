@@ -7,8 +7,8 @@ Use this function to set the blend mode for a texture, used by [[SDL_RenderCopy]
 
 == Syntax ==
 ```c++
-int SDL_SetTextureBlendMode(SDL_Texture* texture,
-                            int          blendMode)
+int SDL_SetTextureBlendMode(SDL_Texture*  texture,
+                            SDL_BlendMode blendMode)
 ```
 
 == Function Parameters ==
