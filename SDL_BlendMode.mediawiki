@@ -36,9 +36,11 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetRenderDrawBlendMode]]
+:[[SDL_GetSurfaceBlendMode]]
 :[[SDL_GetTextureBlendMode]]
 :[[SDL_RenderCopy]]
 :[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetSurfaceBlendMode]]
 :[[SDL_SetTextureBlendMode]]
 
 ----
