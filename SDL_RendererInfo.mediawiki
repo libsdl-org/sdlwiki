@@ -56,7 +56,7 @@ You can add your code example here
 
 <span id="blend_modes"></span> '''blend_modes''' may be SDL_BLENDMODE_NONE or a mask of any of the other [[SDL_BlendMode]] values OR'd together: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
-<span id="scale_modes"></span> '''scale_modes''' may be SDL_TEXTURESCALEMODE_NONE or a mask of any of the other [[SDL_TextureScaleMode]] values OR'd together: <<Include(SDL_TextureScaleMode, , , from="== Values ==", to="== Code Examples ==")>>
+<span id="scale_modes"></span> '''scale_modes''' may be SDL_SCALEMODE_NONE or a mask of any of the other [[SDL_ScaleMode]] values OR'd together: <<Include(SDL_ScaleMode, , , from="== Values ==", to="== Code Examples ==")>>
 
 <span id="texture_formats"></span> '''texture_formats''' is an array of [[SDL_PixelFormatEnum]] values representing the available texture formats for the renderer <<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
 
