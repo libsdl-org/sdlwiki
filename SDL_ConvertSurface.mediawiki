@@ -16,17 +16,17 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
 == Function Parameters ==
 {|
 |'''src'''
-|the [[SDL_Surface]] to copy and map from
+|the [[SDL_Surface]] structure to copy and map from
 |-
 |'''fmt'''
-|the [[SDL_PixelFormat]] to apply
+|an [[SDL_PixelFormat]] structure to apply
 |-
 |'''flags'''
 |^the type of surface to be created^???;see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
-Returns *a pointer to* the new surface or NULL if ,,this function,, ^it^ fails; call [[SDL_GetError]]() for more information.
+Returns *a pointer to* the new [[SDL_Surface]] ^structure that is created^ or NULL if ,,this function,, ^it^ fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -54,12 +54,11 @@ The '''flags''' parameter is passed to [[SDL_CreateRGBSurface]]() and has those 
 |}
 
 This function is used internally by [[SDL_DisplayFormat]]().
-
+<<Color2(green,Replaced in 1.3?)>>
 This function can only be called after [[SDL_Init]](). <br/>*
 
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
-:[[SDL_DisplayFormat]] *<<Color2(green,Not in 1.3?)>>
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
