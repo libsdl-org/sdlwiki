@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateRGBSurface =
-Use this function to allocate and free an RGB surface.
+Use this function to allocate ,,and free,, an RGB surface.
 
 
 == Syntax ==
