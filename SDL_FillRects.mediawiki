@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_FillRects =
-Use this function to perform a fast fill of the given rectangles with color.
+Use this function to perform a fast fill of ,,the given,, ^a set of^ rectangles with ^a specific^ color.
 
 
 == Syntax ==
