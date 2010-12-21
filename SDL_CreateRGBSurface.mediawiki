@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateRGBSurface =
-Use this function to allocate ,,and free,, an RGB surface.
+Use this function to allocate and free an RGB surface.
 
 
 == Syntax ==
@@ -85,7 +85,7 @@ Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out
 == Remarks ==
 If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the '''flags''' '[RGB]mask'. 
 
-<<Color2(green,There is a lot of extra info in the old wiki but most relates to '''flags'''. Should any of it be transferred here?)>>
+<<Color2(green,There is a lot of extra info in the old wiki but most relates to '''flags'''. Should any of it be transferred here?  http://www.libsdl.org/cgi/docwiki.cgi/SDL_CreateRGBSurface)>>
 
 == Related Functions ==
 :[[SDL_ConvertSurface]] ???
