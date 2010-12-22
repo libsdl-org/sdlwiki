@@ -17,16 +17,16 @@ int SDL_LowerBlit(SDL_Surface* src,
 == Function Parameters ==
 {|
 |'''src'''
-|the [[SDL_Surface]] containing '''srcrect''' / the source rectangle
+|the [[SDL_Surface]] structure containing '''srcrect''' / the source rectangle
 |-
 |'''srcrect'''
-|the [[SDL_Rect]] ^structure representing / describing^ ,,containing,, the source pixels
+|the [[SDL_Rect]] structure ^representing / describing^ ,,containing,, the source pixels
 |-
 |'''dst'''
-|the [[SDL_Surface]] containing '''dstrect''' / the destination rectangle
+|the [[SDL_Surface]] structure containing '''dstrect''' / the destination rectangle
 |-
 |'''dstrect'''
-|the [[SDL_Rect]] ^structure^ to be filled ^with / by the blit^
+|the [[SDL_Rect]] structure to be filled ^with / by the blit^
 |}
 
 
