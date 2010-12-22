@@ -15,7 +15,7 @@ int SDL_GetColorKey(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the surface to ,,update,, ^query^
+|the [[SDL_Surface]] structure to ,,update,, ^query^
 |-
 |'''key'''
 |a pointer filled in with the transparent pixel in the native surface format
