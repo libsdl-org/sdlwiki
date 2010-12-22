@@ -15,10 +15,10 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to be clipped
+|the [[SDL_Surface]] structure to be clipped
 |-
 |'''rect'''
-|the clipping [[SDL_Rect]]^, or NULL for the entire render target^
+|the [[SDL_Rect]] structure defining the clipping rectangle^, or NULL for the entire render target/to disable clipping???^
 |}
 
 == Return Value ==
@@ -30,7 +30,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If the clip rectangle is NULL, clipping will be disabled. 
+If the clip rectangle is NULL, clipping will be disabled. <<Color2(green,Can this be moved to params?)>>
 
 Note that blits are automatically clipped to the edges of the source and destination surfaces.
 
