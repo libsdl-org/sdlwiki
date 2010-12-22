@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_SetColorKey =
-Use this function to set the color key (transparent pixel) in a blittable surface *???and enable or disable RLE blit acceleration???*.
+Use this function to set the color key (transparent pixel) in a blittable surface *and enable or disable RLE blit acceleration???*.
 
 
 == Syntax ==
@@ -16,7 +16,7 @@ int SDL_SetColorKey(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to update
+|the [[SDL_Surface]] structure to update
 |-
 |'''flag'''
 |non-zero to enable colorkey, 0 to disable colorkey^; see [[#Remarks|Remarks]] for details^
