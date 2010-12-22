@@ -15,7 +15,7 @@ int SDL_SaveBMP(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|^the [[SDL_Surface]] to save^
+|the [[SDL_Surface]] structure to save
 |-
 |'''file'''
 |,,a pointer to ,,^the file to fill with the surface data^
