@@ -24,7 +24,7 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
 <<Color2(green,There is no page for SDL_RWops.  Should there be?  Should it be mentioned in the param description?)>>
 
 == Return Value ==
-Returns a pointer to a new [[SDL_Surface]] or NULL if there was an error; call [[SDL_GetError]]() for more information.
+Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
