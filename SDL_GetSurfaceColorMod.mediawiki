@@ -17,7 +17,7 @@ int SDL_GetSurfaceColorMod(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to query
+|the [[SDL_Surface]] structure to query
 |-
 |'''r'''
 |,,a pointer filled in with ,,the source red color value
