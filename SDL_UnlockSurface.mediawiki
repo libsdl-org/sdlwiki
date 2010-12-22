@@ -14,7 +14,7 @@ void SDL_UnlockSurface(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to be unlocked
+|the [[SDL_Surface]] structure to be unlocked
 |}
 
 == Code Examples ==
