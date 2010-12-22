@@ -15,7 +15,7 @@ int SDL_SetSurfaceRLE(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to set
+|the [[SDL_Surface]] structure to ,,set,, ^optimize???^
 |-
 |'''flag'''
 |0 to ^disable?^, non-zero to ^enable?^ RLE acceleration
