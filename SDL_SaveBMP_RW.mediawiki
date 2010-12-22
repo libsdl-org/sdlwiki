@@ -16,7 +16,7 @@ int SDL_SaveBMP_RW(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] to be saved
+|the [[SDL_Surface]] structure to be saved
 |-
 |'''dst'''
 |a data source to save to
