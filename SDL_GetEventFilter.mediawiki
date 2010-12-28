@@ -34,7 +34,14 @@ You can add your code example here
 == Remarks ==
 Can be used to "chain" filters.
 
-*<<Color2(green,This functions appears to have changed dramatically since 1.2.  Is that correct?)>>*
+*<br/><<Color2(green,This functions appears to have changed dramatically since 1.2.  Is that correct?)>><br/>*
+
+<<Color2(green,Should the following be included here as it is in [[SDL_SetEventFilter]]()?)>>
+The '''filter''' function has the following form:
+ ```
+int SDL_EventFilter(void* userdata, SDL_Event* event)
+```
+where '''userdata''' is the event queue to filter and '''event''' is the desired event to pull from the queue.
 
 == Related Functions ==
 :[[SDL_SetEventFilter]]
