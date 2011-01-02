@@ -15,13 +15,13 @@ int SDL_RenderCopy(SDL_Texture*    texture,
 == Function Parameters ==
 {|
 |'''texture'''
-|the source SDL_Texture; see [[#Remarks|Remarks]] for details
+|the source texture; see [[#Remarks|Remarks]] for details
 |-
 |'''srcrect'''
-|the source [[SDL_Rect]] or NULL for the entire texture
+|the source [[SDL_Rect]] structure or NULL for the entire texture
 |-
 |'''dstrect'''
-|the destination [[SDL_Rect]] or NULL for the entire rendering target
+|the destination [[SDL_Rect]] structure or NULL for the entire rendering target
 |}
 
 == Return Value ==
