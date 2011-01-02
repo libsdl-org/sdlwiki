@@ -14,7 +14,7 @@ int SDL_GL_SetAttribute(SDL_GLattr attr,
 == Function Parameters ==
 {|
 |'''attr'''
-|the [[SDL_GLattr]] to set; see [[#Remarks|Remarks]] for details
+|the [[SDL_GLattr]] enumeration to set; see [[#Remarks|Remarks]] for details
 |-
 |'''value'''
 |the desired value for the attribute
