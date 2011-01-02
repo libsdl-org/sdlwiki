@@ -13,7 +13,7 @@ A structure that contains palette information.
 |-
 |[[SDL_Color]]*
 |'''colors'''
-|an array of colors in the palette
+|an array of [[SDL_Color]] structures representing the palette
 |-
 |<style="color: #808080;">int
 |<style="color: #808080;">'''refcount'''
