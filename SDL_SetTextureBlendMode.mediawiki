@@ -14,10 +14,10 @@ int SDL_SetTextureBlendMode(SDL_Texture*  texture,
 == Function Parameters ==
 {|
 |'''texture'''
-|the SDL_Texture to update
+|the texture to update
 |-
 |'''blendMode'''
-|the [[SDL_BlendMode]] to use for texture blending; see [[#blendMode|Remarks]] for details
+|the [[SDL_BlendMode]] ,,enumeration,, ^value^ to use for texture blending; see [[#blendMode|Remarks]] for details
 |}
 
 == Return Value ==
