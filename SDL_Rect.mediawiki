@@ -17,11 +17,11 @@ A structure that defines a rectangle, with the origin at the upper left.
 |-
 |int
 |'''w'''
-|the height of the rectangle
+|the width of the rectangle
 |-
 |int
 |'''h'''
-|the width of the rectangle
+|the height of the rectangle
 |}
 
 == Code Examples ==
