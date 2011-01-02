@@ -14,10 +14,10 @@ SDL_bool SDL_RectEquals(const SDL_Rect* A,
 == Function Parameters ==
 {|
 |'''A'''
-|the first [[SDL_Rect]]
+|the first [[SDL_Rect]] structure
 |-
 |'''B'''
-|the second [[SDL_Rect]]
+|the second [[SDL_Rect]] structure
 |}
 
 == Return Value ==
