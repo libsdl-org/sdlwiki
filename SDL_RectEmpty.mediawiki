@@ -13,7 +13,7 @@ SDL_bool SDL_RectEmpty(const SDL_Rect* rect)
 == Function Parameters ==
 {|
 |'''rect'''
-|the [[SDL_Rect]] to check
+|the [[SDL_Rect]] structure representing the rectangle to check
 |}
 
 == Return Value ==
