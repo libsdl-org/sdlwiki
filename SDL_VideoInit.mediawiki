@@ -14,7 +14,7 @@ int SDL_VideoInit(const char* driver_name,
 == Function Parameters ==
 {|
 |'''driver_name'''
-|the name of a driver to initialize, or NULL for the default video driver
+|the name of a video driver to initialize, or NULL for the default driver
 |-
 |'''flags'''
 |SDL_INIT_EVENTTHREAD or 0; see [[#Remarks|Remarks]] for details
