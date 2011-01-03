@@ -16,7 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-SDL_EnableScreenSaver() is automatically called when shutting down SDL, so you don't have to worry about restoring the original state yourself.
+[[SDL_EnableScreenSaver]]() is automatically called when shutting down SDL, so you don't have to worry about restoring the original state yourself.
 
 == Related Functions ==
 :[[SDL_EnableScreenSaver]]
