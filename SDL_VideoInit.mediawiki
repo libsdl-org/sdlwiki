@@ -14,10 +14,10 @@ int SDL_VideoInit(const char* driver_name,
 == Function Parameters ==
 {|
 |'''driver_name'''
-|initialize a specific driver by name, or NULL for the default video driver
+|the name of a driver to initialize, or NULL for the default video driver
 |-
 |'''flags'''
-|this should be either SDL_INIT_EVENTTHREAD or 0.  See [[SDL_Init]]() for the meaning of SDL_INIT_EVENTTHREAD.
+|SDL_INIT_EVENTTHREAD or 0; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
@@ -56,6 +56,8 @@ int main(int argc, char** argv) {
 
 == Remarks ==
 This function initializes the video subsystem, setting up a connection to the window manager, etc, and determines the available display modes and pixel formats, but does not initialize a window or graphics mode.
+
+If '''flags''' is set to SDL_INIT_EVENTTHREAD it will run the event loop in a separate thread (not supported by all OSs).
 
 If you use this function and you haven't used the SDL_INIT_VIDEO flag with either [[SDL_Init]]() or [[SDL_InitSubSystem]](), you should call [[SDL_VideoQuit]]() before calling [[SDL_Quit]]().
 
