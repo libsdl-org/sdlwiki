@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetSurfaceBlendMode =
 Use this function to set the blend mode used for blit operations.
