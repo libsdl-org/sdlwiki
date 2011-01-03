@@ -18,7 +18,7 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
 == Function Parameters ==
 {|
 |'''format'''
-|,,an enumerated pixel format; see,, one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
+|one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
 |-
 |'''bpp'''
 |a bits per pixel value; usually 15, 16, or 32
