@@ -20,20 +20,20 @@ Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
 |a bits per pixel value; usually 15, 16, or 32
 |-
 |'''Rmask'''
-|the red mask for the pixel
+|the red mask for the pixel format
 |-
 |'''Gmask'''
-|the green mask for the pixel
+|the green mask for the pixel format
 |-
 |'''Bmask'''
-|the blue mask for the pixel
+|the blue mask for the pixel format
 |-
 |'''Amask'''
-|the alpha mask for the pixel
+|the alpha mask for the pixel format
 |}
 
 == Return Value ==
-Returns ,,the pixel format enumeration; see,, one of the [[SDL_PixelFormatEnum]] values.
+Returns one of the following [[SDL_PixelFormatEnum]] values:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
 == Code Examples ==
