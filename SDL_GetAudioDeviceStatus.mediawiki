@@ -22,7 +22,7 @@ SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
 <<Color2(green,Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
 
 == Return Value ==
-Returns the status of the specified audio device which may be any of the following:
+Returns the status of the specified audio device which may be one of the following:
 <<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
