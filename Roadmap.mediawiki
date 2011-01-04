@@ -14,7 +14,7 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * <<Color2(green, Sam: Create API for clipboard support (check out !PyGame))>>
 
 === Required ===
-* ???: Implement landscape mode for iPhone port
+* Ryan: Implement landscape mode for iPhone port
 * Sam: Add support for multiple displays
 * <<Color2(green, Windows)>>
 * <<Color2(green, Mac OS X)>>
@@ -114,7 +114,7 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * <<Color2(green, Edgar: Create Force Feedback API)>>
 
 === Required ===
-* ???: Add support for joystick device live connect and disconnect
+* Ryan: Add support for joystick device live connect and disconnect
 
 == Multi-touch Input ==
 
