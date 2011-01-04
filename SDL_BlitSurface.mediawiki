@@ -9,7 +9,7 @@ Use this function to perform a fast blit from the source surface to the destinat
 == Syntax ==
 ```c++
 int SDL_BlitSurface(SDL_Surface* src,
-                    SDL_Rect*    srcrect,
+                    const SDL_Rect*    srcrect,
                     SDL_Surface* dst,
                     SDL_Rect*    dstrect)
 ```
@@ -32,7 +32,6 @@ int SDL_BlitSurface(SDL_Surface* src,
 == Return Value ==
 Returns 0 if the blit is successful or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-See [[#video|Remarks]] for details if the return value is -2.
 
 == Code Examples ==
 ```c++
@@ -40,29 +39,22 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,Changed colour to color.)>>
-
-This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]](). <<Color2(green,Does this remark apply only to Upper<code></code>Blit and not to Blit<code></code>Surface?)>>
-
 You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.
 
-<<Color2(green,The above 2 remarks were re-ordered and have been moved to the top of the section because they seem more appropriately placed there. They were at the bottom in the reverse order.)>>
+This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
 
-The blit function should not be called on a locked surface. <<Color2(green,This was listed below the following but seemed more appropriately placed here.)>> *<br/>(i.e. when you use your own drawing functions you may need to lock a surface, but this is not the case with [[SDL_BlitSurface]]().)<br/>
-Like most surface manipulation functions in SDL, it should not be used together with OpenGL.<br/>*
+The blit function should not be called on a locked surface.  
 
-This assumes that the source and destination rectangles are the same size. If either '''srcrect''' or '''dstrect''' are NULL, the entire surface ('''src''' or '''dst''') is copied. The final blit rectangles are saved in '''srcrect''' and '''dstrect''' after all clipping is performed.
-
-*<br/><<Color2(green,Is this redundant to above? Should some of it be kept because it says more? Is this wording preferable?)>> The width and height in '''srcrect''' determine the size of the copied rectangle. Only the position is used in the '''dstrect''' (the width and height are ignored). Blits with negative '''dstrect''' coordinates will be clipped properly.
+The width and height in '''srcrect''' determine the size of the copied rectangle. Only the position is used in the '''dstrect''' (the width and height are ignored). Blits with negative '''dstrect''' coordinates will be clipped properly.
 
 If '''srcrect''' is NULL, the entire surface is copied. If '''dstrect''' is NULL, then the destination position (upper left corner) is (0, 0).
 
-The final blit rectangle is saved in '''dstrect''' after all clipping is performed ('''srcrect''' is not modified). <br/>*
+The final blit rectangle is saved in '''dstrect''' after all clipping is performed ('''srcrect''' is not modified).
 
-<<Color2(green,Should the following go in a code box or is this formatting acceptable? Should \verbatim and \endverbatim be removed?)>>
 
+<<Color2(green,This section needs to be modified to reflect the concepts in the new version.  alpha and colorkey have been replaced in 1.3.)>>
 The blit semantics for surfaces with and without alpha and colorkey are defined as follows:
- \verbatim
+
  RGBA->RGB:
   SDL_SRCALPHA set:
    alpha-blend (using alpha-channel).
@@ -96,22 +88,6 @@ The blit semantics for surfaces with and without alpha and colorkey are defined 
    copy RGB.
   both:
    if SDL_SRCCOLORKEY set, only copy the pixels matching the source color key.
- \endverbatim
-
-<span id="video"></span> If either of the surfaces were in video memory, and the blit returns -2, the video memory was lost, so it should be reloaded with artwork and re-blitted:
- ```
-@code
-while ( SDL_BlitSurface(image, imgrect, screen, dstrect) == -2 ) {
-while ( SDL_LockSurface(image) < 0 )
-Sleep(10);
--- Write image pixels to image->pixels --
-SDL_UnlockSurface(image);
-}
-@endcode
-```
-<<Color2(green,Should @code and @endcode be removed here?)>>
-
-This happens under DirectX 5.0 when the system switches away from your fullscreen application. The lock will also fail until you have access to the video memory again.
 
 *<br/>The results of blitting operations vary greatly depending on whether SDL_SRCALPHA is set or not. See SDL_SetAlpha (<<Color2(green,This does not have a page. Does it still exist?)>>) for an explanation of how this affects your results. Colorkeying and alpha attributes also interact with surface blitting, as the following pseudo-code should hopefully explain. 
 ```
