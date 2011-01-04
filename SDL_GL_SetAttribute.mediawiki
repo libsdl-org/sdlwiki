@@ -55,7 +55,7 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n",
 == Remarks ==
 This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes should be set before creating an OpenGL window. You should use [[SDL_GL_GetAttribute]]() to check the values after creating the OpenGL context, since the values obtained can differ from the requested ones.
 
-'''attr''' can be one of the following [[SDL_GLattr]] values:
+'''attr''' may be one of the following [[SDL_GLattr]] values:
 <<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
