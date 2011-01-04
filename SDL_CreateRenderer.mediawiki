@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="flags"></span> '''flags''' can have any number of these values OR'd in:
+<span id="flags"></span> '''flags''' may be any of the following OR'd together:
 <<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
