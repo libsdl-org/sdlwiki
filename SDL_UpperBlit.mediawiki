@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_UpperBlit =
-Use this function to perform rectangle validation and clipping before passing blit data to [[SDL_LowerBlit]](). ???
+Use this function to perform a fast blit from the source surface to the destination surface.  / Use this function to perform rectangle validation and clipping before passing blit data to [[SDL_LowerBlit]](). ???
 
 
 == Syntax ==
@@ -16,7 +16,7 @@ int SDL_UpperBlit(SDL_Surface* src,
 ```
 
 == Function Parameters ==
-<<Color2(green,Note: Include from Blit<code></code>Surface starts here and extends through Remarks. Is this correct?)>>
+<<Color2(green,Note: Include from Blit<code></code>Surface starts here and extends through Remarks.)>>
 <<Include(SDL_BlitSurface, , , from="== Function Parameters ==", to="== Related Functions ==")>>
 
 
