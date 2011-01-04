@@ -37,10 +37,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="format"></span> '''format''' can be one of these values:
+<span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
-<span id="access"></span> '''access''' can be one of these values:
+<span id="access"></span> '''access''' may be one of the following:
 <<Include(SDL_TextureAccess, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
