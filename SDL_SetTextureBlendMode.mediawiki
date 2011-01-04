@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="blendMode"></span> '''blendMode''' can be one of these values:
+<span id="blendMode"></span> '''blendMode''' may be one of the following:
 <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
 If the blend mode is not supported, the closest supported mode is chosen and this function returns -1. 
