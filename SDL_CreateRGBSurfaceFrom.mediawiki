@@ -59,7 +59,7 @@ You can add your code example here
 == Remarks ==
 <<Include(SDL_CreateRGBSurface, , , from="== Remarks ==", to="== Related Functions ==")>>
 
-No copy is made of the pixel data.  Pixel data is not managed automatically.  The surface must be freed before the pixel data. 
+No copy is made of the pixel data.  Pixel data is not managed automatically; you must free the surface before you free the pixel data. 
 
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
