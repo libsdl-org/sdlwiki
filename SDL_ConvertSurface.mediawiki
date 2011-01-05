@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_ConvertSurface =
-Use this function to copy an existing surface into a new surface that is optimized for a specified pixel format. 
+Use this function to copy an existing surface into a new one that is optimized for blitting to a surface of a specified pixel format. 
 
 
 
@@ -20,14 +20,14 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
 |the existing [[SDL_Surface]] structure to convert
 |-
 |'''fmt'''
-|the new [[SDL_PixelFormat]] structure
+|the [[SDL_PixelFormat]] structure that the new surface is optimized for
 |-
 |'''flags'''
 |unused; set to 0
 |}
 
 == Return Value ==
-Returns *a pointer to* the new [[SDL_Surface]] ^structure that is created^ or NULL if ,,this function,, ^it^ fails; call [[SDL_GetError]]() for more information.
+Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -35,6 +35,10 @@ You can add your code example here
 ```
 
 == Remarks ==
+This function is used to optimize images for faster ''repeat'' blitting.  Rather than converting with each blit this function stores the output of an initial blit requiring conversion as a new surface that then becomes the source for future blits.
+
+This function creates an intermediate surface of an optimized format allowing the future blits to be as fast as possible.
+
 ''You can add useful comments here''
 
 == Related Functions ==
