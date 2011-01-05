@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_CreateRGBSurface =
-Use this function to allocate ,,and free,, an RGB surface.
+Use this function to allocate a new RGB surface.
 
 
 == Syntax ==
@@ -19,10 +19,9 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 ```
 
 == Function Parameters ==
-<<Color2(green,Should flags be gray?  Why is there so much reference to '''flags''' if they're obsolete? (See below and [[SDL_ConvertSurface]] for example.))>>
 {|
 |'''flags'''
-|the flags are obsolete and should be set to 0
+|the flags are unused and should be set to 0
 |-
 |'''width'''
 |the width of the surface
@@ -47,7 +46,7 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 |}
 
 == Return Value ==
-Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out of memory, it will return NULL. 
+Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information. 
 
 == Code Examples ==
 <<Color2(green,The following code example is from the old wiki but the params are no longer exactly the same.  Should it be removed or updated?)>>
@@ -71,7 +70,7 @@ Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out
     amask = 0xff000000;
 #endif
 
-    surface = SDL_CreateRGBSurface(SDL_SWSURFACE, width, height, 32,
+    surface = SDL_CreateRGBSurface(0, width, height, 32,
                                    rmask, gmask, bmask, amask);
     if(surface == NULL) {
         fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
@@ -79,13 +78,18 @@ Returns a pointer to an [[SDL_Surface]] to be created.  If the function runs out
     }
 
     /* or using the default masks for the depth: */
-    surface=SDL_CreateRGBSurface(SDL_SWSURFACE,width,height,32,0,0,0,0);
+    surface = SDL_CreateRGBSurface(0,width,height,32,0,0,0,0);
 ```
 
 == Remarks ==
-If ,,the,, '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If ,,the,, '''depth''' is greater than 8 bits, the pixel format is set using the '''flags''' '[RGB]mask'. 
+If '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If '''depth''' is greater than 8 bits, the pixel format is set using the [RGBA]mask parameters. 
 
-<<Color2(green,There is a lot of extra info in the old wiki but most relates to '''flags'''. Should any of it be transferred here?  http://www.libsdl.org/cgi/docwiki.cgi/SDL_CreateRGBSurface)>>
+The [RGBA]mask parameters are the bitmasks used to extract that color from a pixel. For instance, '''Rmask''' being FF000000 means the red data is stored in the most  significant byte. Using zeros for the RGB masks sets a default value, based on the depth. (e.g. SDL_CreateRGBSurface(0,w,h,32,0,0,0,0);) However, using zero for the Amask results in an Amask of 0.
+
+By default surfaces with an alpha mask are set up for blending as with 
+:```SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND)```  
+You can change this by calling [[SDL_SetSurfaceBlendMode]]() and selecting a different <code>blendMode</code>.
+
 
 == Related Functions ==
 :[[SDL_ConvertSurface]] ???
