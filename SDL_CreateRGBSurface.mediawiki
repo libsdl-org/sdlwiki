@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_CreateRGBSurface =
 Use this function to allocate a new RGB surface.
@@ -49,7 +48,6 @@ SDL_Surface* SDL_CreateRGBSurface (Uint32 flags,
 Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information. 
 
 == Code Examples ==
-<<Color2(green,The following code example is from the old wiki but the params are no longer exactly the same.  Should it be removed or updated?)>>
 ```c++
     /* Create a 32-bit surface with the bytes of each pixel in R,G,B,A order,
        as expected by OpenGL for textures */
@@ -92,11 +90,8 @@ You can change this by calling [[SDL_SetSurfaceBlendMode]]() and selecting a dif
 
 
 == Related Functions ==
-:[[SDL_ConvertSurface]] ???
 :[[SDL_CreateRGBSurfaceFrom]]
 :[[SDL_FreeSurface]]
-:[[SDL_LockSurface]] *
-:[[SDL_SetColorKey]] *
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
