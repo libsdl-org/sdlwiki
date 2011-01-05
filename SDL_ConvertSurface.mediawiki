@@ -1,9 +1,9 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_ConvertSurface =
-Use this function to create a new surface of the specified format, and then copy and map the given surface to it so the blit of the converted surface will be as fast as possible.
+Use this function to copy an existing surface into a new surface that is optimized for a specified pixel format. 
+
 
 
 == Syntax ==
@@ -13,16 +13,17 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
                                 Uint32           flags)
 ```
 
+
 == Function Parameters ==
 {|
 |'''src'''
-|the [[SDL_Surface]] structure to copy and map from
+|the existing [[SDL_Surface]] structure to convert
 |-
 |'''fmt'''
-|an [[SDL_PixelFormat]] structure to apply
+|the new [[SDL_PixelFormat]] structure
 |-
 |'''flags'''
-|^the type of surface to be created^???;see [[#Remarks|Remarks]] for details
+|unused; set to 0
 |}
 
 == Return Value ==
@@ -34,28 +35,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The '''flags''' parameter is passed to [[SDL_CreateRGBSurface]]() and has those semantics. You can also pass SDL_RLEACCEL in the '''flags''' parameter and SDL will try to RLE accelerate colorkey and alpha blits in the resulting surface.
-
-<<Color2(green,SDL_CreateRGBSurface() says '''flags''' param is obsolete and should be set to 0.  Does that affect this function?)>>
-
-*<br/><<Color2(green,'''flags''' in 1.2 were:)>>
-{|
-|SDL_SWSURFACE
-|SDL will create the surface in system memory. This improves the performance of pixel level access, however you may not be able to take advantage of some types of hardware blitting.
-|-
-|SDL_HWSURFACE
-|SDL will attempt to create the surface in video memory. This will allow SDL to take advantage of Video->Video blits (which are often accelerated).
-|-
-|SDL_SRCCOLORKEY
-|This flag turns on color keying for blits from this surface. If SDL_HWSURFACE is also specified and color keyed blits are hardware-accelerated, then SDL will attempt to place the surface in video memory. If the screen is a hardware surface and color keyed blits are hardware-accelerated then the SDL_HWSURFACE flag will be set. Use [[SDL_SetColorKey]]() to set or clear this flag after surface creation.
-|-
-|SDL_SRCALPHA
-|This flag turns on alpha-blending for blits from this surface. If SDL_HWSURFACE is also specified and alpha-blending blits are hardware-accelerated, then the surface will be placed in video memory if possible. If the screen is a hardware surface and alpha-blending blits are hardware-accelerated then the SDL_HWSURFACE flag will be set. Use SDL_SetAlpha to set or clear this flag after surface creation.<<Color2(green,SDL_SetAlpha does not have a page in 1.3.  Is it the same as SDL_SetSurfaceAlphaMod?)>>
-|}
-
-This function is used internally by [[SDL_DisplayFormat]]().
-<<Color2(green,Replaced in 1.3?)>>
-This function can only be called after [[SDL_Init]](). <br/>*
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
