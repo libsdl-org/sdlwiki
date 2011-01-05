@@ -35,11 +35,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is used to optimize images for faster ''repeat'' blitting.  Rather than converting with each blit this function stores the output of an initial blit requiring conversion as a new surface that then becomes the source for future blits.
+This function is used to optimize images for faster ''repeat'' blitting.  This is accomplished by converting the original and storing the result as a new surface. The new, optimized surface can then be used as the source for future blits, making them faster.
 
-This function creates an intermediate surface of an optimized format allowing the future blits to be as fast as possible.
-
-''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
