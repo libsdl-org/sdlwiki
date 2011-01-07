@@ -42,6 +42,7 @@ When this surface is blitted, during the blit operation each source color channe
 
 == Related Functions ==
 :[[SDL_GetSurfaceColorMod]]
+:[[SDL_SetSurfaceAlphaMod]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
