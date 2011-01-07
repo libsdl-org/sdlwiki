@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetClipRect =
-Use this function to get the clipping rectangle for the destination surface in a blit.
+Use this function to get the clipping rectangle for a surface.
 
 
 == Syntax ==
@@ -18,7 +17,7 @@ void SDL_GetClipRect(SDL_Surface* surface,
 |the [[SDL_Surface]] structure representing the surface to be clipped
 |-
 |'''rect'''
-|,,must be a pointer to a valid rectangle which will be filled with the correct values,, ''-or-'' an [[SDL_Rect]] structure filled in with the clipping rectangle for the surface^; see [[#Remarks|Remarks]] for details^
+|an [[SDL_Rect]] structure filled in with the clipping rectangle for the surface; see [[#Remarks|Remarks]] for details
 |}
 
 == Code Examples ==
@@ -27,20 +26,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-*<br/>When this '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
-
-The rectangle pointed to by '''rect''' will be filled with the clipping rectangle of the '''surface'''.<br/>*
-
-<<Color2(green,Should this state somewhere that the clipping rectangle is established by the blit function and not by this function?  Is that correct?  Does this function pull the info from <code>srcrect</code> or <code>dstrect</code> in [[SDL_BlitSurface]]() and fill '''rect''' here with it?  Or from <code>rect</code> in [[SDL_SetClipRect]]()?)>><br/>
-<<Color2(green,Possible corresponding alternate text to replace the above between *?)>>
-When '''surface''' is the destination of a blit, '''rect''' is filled with the clipping rectangle for that surface from the <code>dstrect</code> component of [[SDL_BlitSurface]]() or <code>rect</code> from [[SDL_SetClipRect]]().
-
+When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
 
 
 == Related Functions ==
-:[[SDL_BlitSurface]] *
+:[[SDL_BlitSurface]]
 :[[SDL_SetClipRect]]
 
 ----
