@@ -38,8 +38,6 @@ The color key defines a pixel value that will be treated as transparent in a bli
 
 RLE acceleration can substantially speed up blitting of images with large horizontal runs of transparent pixels.  See [[SDL_SetSurfaceRLE]]() for details.
 
-(i.e., pixels that match the key value)
-
 
 == Related Functions ==
 :[[SDL_BlitSurface]] 
