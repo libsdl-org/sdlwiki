@@ -29,8 +29,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-When a texture is rendered, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
- <code>srcA = srcA * alpha</code>
+When this texture is rendered, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
+ <code>srcA = srcA * (alpha / 255)</code>
 
 Alpha modulation is not always supported by the renderer; it will return -1 if alpha modulation is not supported.
 
