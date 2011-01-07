@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetSurfaceAlphaMod =
 Use this function to get the additional alpha value used in blit operations.
@@ -18,7 +17,7 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
 |the [[SDL_Surface]] structure to query
 |-
 |'''alpha'''
-|,,a pointer filled in with ,,the source alpha value
+|a pointer filled in with the source alpha value
 |}
 
 == Return Value ==
@@ -33,6 +32,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetSurfaceColorMod]]
 :[[SDL_SetSurfaceAlphaMod]]
 
 ----
