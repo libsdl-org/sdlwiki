@@ -19,13 +19,13 @@ int SDL_SetTextureColorMod(SDL_Texture* texture,
 |the texture to update
 |-
 |'''r'''
-|the red source color value multiplied into copy operations
+|the red color value multiplied into copy operations
 |-
 |'''g'''
-|the green source color value multiplied into copy operations
+|the green color value multiplied into copy operations
 |-
 |'''b'''
-|the blue source color value multiplied into copy operations
+|the blue color value multiplied into copy operations
 |}
 
 == Return Value ==
@@ -37,8 +37,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-When a texture is rendered, during the copy operation each source color channel is modulated by the appropriate color value according to the following formula:
- <code>srcC = srcC * color</code>
+When this texture is rendered, during the copy operation each source color channel is modulated by the appropriate color value according to the following formula:
+ <code>srcC = srcC * (color / 255)</code>
 
 Color modulation is not always supported by the renderer; it will return -1 if color modulation is not supported.
 
