@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetClipRect =
-Use this function to set the clipping rectangle for the destination surface in a blit.
+Use this function to set the clipping rectangle for a surface.
 
 
 == Syntax ==
@@ -18,7 +17,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 |the [[SDL_Surface]] structure to be clipped
 |-
 |'''rect'''
-|the [[SDL_Rect]] structure defining the clipping rectangle^, or NULL for the entire render target/to disable clipping???^
+|the [[SDL_Rect]] structure defining the clipping rectangle, or NULL to disable clipping
 |}
 
 == Return Value ==
@@ -30,12 +29,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-If the clip rectangle is NULL, clipping will be disabled. <<Color2(green,Can this be moved to params?)>>
+When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
 
 Note that blits are automatically clipped to the edges of the source and destination surfaces.
 
 == Related Functions ==
-:[[SDL_BlitSurface]] *
+:[[SDL_BlitSurface]]
 :[[SDL_GetClipRect]]
 
 ----
