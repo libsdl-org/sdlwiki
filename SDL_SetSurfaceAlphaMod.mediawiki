@@ -17,7 +17,7 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface* surface,
 |the [[SDL_Surface]] structure to update
 |-
 |'''alpha'''
-|the source alpha value multiplied into blit operations
+|the alpha value multiplied into blit operations
 |}
 
 == Return Value ==
