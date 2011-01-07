@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetSurfaceColorMod =
-Use this function to get the additional color value used in blit operations.
+Use this function to get the additional color value multiplied into blit operations.
 
 
 == Syntax ==
@@ -20,13 +19,13 @@ int SDL_GetSurfaceColorMod(SDL_Surface* surface,
 |the [[SDL_Surface]] structure to query
 |-
 |'''r'''
-|,,a pointer filled in with ,,the source red color value
+|a pointer filled in with the current red color value
 |-
 |'''g'''
-|,,a pointer filled in with ,,the source green color value
+|a pointer filled in with the current green color value
 |-
 |'''b'''
-|,,a pointer filled in with ,,the source blue color value
+|a pointer filled in with the current blue color value
 |}
 
 == Return Value ==
@@ -41,6 +40,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_GetSurfaceAlphaMod]]
 :[[SDL_SetSurfaceColorMod]]
 
 ----
