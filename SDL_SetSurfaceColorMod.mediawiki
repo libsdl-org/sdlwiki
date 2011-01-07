@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetSurfaceColorMod =
-Use this function to set an additional color value used in blit operations.
+Use this function to set an additional color value multiplied into blit operations.
 
 
 == Syntax ==
@@ -20,13 +19,13 @@ int SDL_SetSurfaceColorMod(SDL_Surface* surface,
 |the [[SDL_Surface]] structure to update
 |-
 |'''r'''
-|the red source color value multiplied into blit operations
+|the red color value multiplied into blit operations
 |-
 |'''g'''
-|the green source color value multiplied into blit operations
+|the green color value multiplied into blit operations
 |-
 |'''b'''
-|the blue source color value multiplied into blit operations
+|the blue color value multiplied into blit operations
 |}
 
 == Return Value ==
@@ -38,7 +37,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+When this surface is blitted, during the blit operation each source color channel is modulated by the appropriate color value according to the following formula:
+ <code>srcC = srcC * (color / 255)</code>
 
 == Related Functions ==
 :[[SDL_GetSurfaceColorMod]]
