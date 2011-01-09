@@ -122,6 +122,7 @@ The Remarks section provides additional information related to other sections on
 
 ----
 == The Bottom Line ==
+Our goal is to create clean, consistent, helpful, user-friendly documentation.  Please try to make your changes or additions fit into the existing framework, and retain the same look and feel as much as possible.  
 
 When in doubt
  a) look for another page that contains the same thing you want to do and copy all the basics as much as applicable.  
