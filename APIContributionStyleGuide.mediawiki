@@ -68,6 +68,8 @@ The Code Examples section provides simple examples of real-world applications of
 {OK} Please post code examples showing how you have used the API that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 
+* Code examples should have adequate comments to make them clear and useful.
+
 * If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
 
 * If there are existing examples please add a new code box to the end of the examples section, or add your code to the end of a related group if there are many examples of various types.
