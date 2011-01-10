@@ -1,0 +1,304 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL API Documentation Style Guide: Getting Started =
+
+This guide provides the basic instructions needed to get started editing this wiki.
+
+
+```#!wiki caution
+'''Before You Start'''
+
+Anyone may contribute '''Code Examples''' or '''Remarks''' following the<<BR>> [[APIContributionStyleGuide|SDL API Contribution Style Guide]].  Please check periodically for updates.
+
+If you would like to make '''other contributions''' - edit existing content, create new pages, develop tutorials, etc. - we welcome your contribution!  
+
+Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to be given write access, ensure that you have the appropriate Style Guides, and to coordinate efforts.
+
+Thank you!
+```
+
+
+
+<span id="ToC"></span>
+<<TableOfContents(2,4)>> 
+
+
+== Editing Pages ==
+The following instructions cover both modification of existing page contents and modification of new pages based on a template.
+* Contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> if the page you wish to edit does not already exist.
+
+=== Edit Mode Options ===
+There are two options for editing pages - Text Mode and GUI Mode.  Once on the page you wish to edit:
+* Click <<Color2(blue,Edit (Text))>> in the left sidebar to use the text editor.
+* Click <<Color2(blue,Edit (GUI))>> in the left sidebar to use the GUI editor.
+
+ The specific markup instructions and examples provided here apply in the Text editor.  For instructions on using the GUI editor see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor].  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
+
+=== Saving Your Changes ===
+<<Color2(green,There is a formatting issue with using Color2 inline and then transferring it using an Include. See Preview and Save Changes below.  I will see what I can find out to fix it but most likely this section will need to be copied and pasted from the Contribution guide instead of being an Include.)>>
+<<Include(APIContributionStyleGuide, , , from="=== Saving Your Changes ===", to="== The Specifics ==")>>
+
+
+
+
+[[#ToC|Return to Table of Contents]]
+
+
+
+
+<span id="markup"></span>
+== Some Wiki Markup Basics ==
+A good starting place for basic markup is [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar in Edit mode for some of the most common markup.  Below is a summary of the most commonly used markup in this wiki and some hints and tricks for using it.
+<<TableOfContents(5)>>
+
+<!-- #use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
+
+<span id="spacing"></span>
+===== Spacing =====
+* <span id="indent"></span>Indenting: Place blank spaces at the beginning of a line of text. (this line has 1 space)
+* Use one space for each indent level desired. (this line has 2 spaces)
+
+: Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
+   ''Example'': ``` . This line starts with a period   ``` ''generates''<br/>
+: This line starts with a period
+
+
+* <span id="break"></span>Hard Line Break: ```<br/>```
+  Place the above markup wherever you want to force the following text onto the next line but keep it in the same paragraph.<br/>
+* Note that you cannot change indent level immediately following a hard line break.
+   ''Example'': Typing the following in the text editor ```
+    1 first line<<BR>>    2 this line typed on same line after hard line break markup, same indent<<BR>>     3 this line typed on same line after hard line break markup, +1 indent<<BR>>    4 this line typed on same line after hard line break markup, -1 indent<<BR>>    . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
+```
+   ''Generates'':
+    1 first line<br/>    2 this line typed on same line after hard line break markup, same indent<br/>     3 this line typed on same line after hard line break markup, +1 indent<br/>    4 this line typed on same line after hard line break markup, -1 indent<br/>    . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
+
+ {i} A hard return (Enter key) is not always recognized as a line break.<br/>
+ {i} Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
+  ''Example'': Typing the following in the text editor ```
+1 hard return followed by next line same indent
+2 hard return followed by next line +1 indent
+ 3 hard return followed by next line same indent using period
+ . 4 hard return followed by next line same indent, no period
+ 5 hard return followed by next line -1 indent
+6 hard return after hard line break markup, followed by next line same indent<<BR>>
+7<<BR>>8 next line typed on same line after hard line break markup, same indent
+```
+  ''Generates'':
+: 1 hard return followed by next line same indent
+  2 hard return followed by next line +1 indent
+   3 hard return followed by next line same indent using period
+: 4 hard return followed by next line same indent, no period
+   5 hard return followed by next line -1 indent
+  6 hard return after hard line break markup, followed by next line same indent<br/>
+  7<br/>8 next line typed on same line after hard line break markup, same indent
+
+* To ensure that the next line is treated as a separate line (paragraph)
+  a. use two consecutive hard returns (```Enter key```)
+   ~-Note that this will leave a larger space between lines (usually a double-space)-~
+  a. use a [[#break|hard line break]]
+  a. [[#indent|indent]] more (farther right)
+  a. use a [[#indent|period]] at the beginning of the line after indenting the same amount
+  a. [[#indent|indent]] less (farther left)
+
+[[#markup|Back to Markup Basics start]]
+
+<span id="headers"></span>
+===== Headers =====
+ Use one to five equals signs (=) surrounding header text, with a space between markup and text.
+  One equals sign is the highest level header (largest) ''Example'': = Title =<br/>
+  Five equals signs is the lowest level header (smallest) ''Example'': ===== Minor =====<br/>
+ ''Example'': ```=== Some Wiki Markup Basics ===```<br/>
+ Headers will appear in an automatically generated [[#ToC|Table of Contents]].
+: More (but not much) wiki markup for headers can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnHeadlines HelpOnHeadlines].
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="formatting"></span>
+===== Text Formatting =====
+* '''Bold''': Place three apostrophes surrounding text to be bolded, without a space between markup and text.
+  ''Example'': ```'''bold text'''``` generates '''bold text'''
+
+* ''Italics'': Place two apostrophes surrounding text to be italicized, without a space between markup and text.
+  ''Example'': ```''italics text''``` generates ''italics text''
+
+* <code>Monospace</code>: Place a backquote on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
+  ''Example'': ```'monospace text'``` generates <code>monospace text</code>
+
+* ```Code (or Verbatim Text)```: Use three curly brackets surrounding text to be rendered as code.
+* Place the brackets inline with the text to display the code formatting inline. 
+   ''Example'': ```{
+{{{Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
+}}}}
+   produces
+   ```Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
+* Place the brackets above and below the text to display the code formatting inside a box.
+   ''Example'': ```{
+{{{
+Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
+```
+}}}}
+   produces
+   ```
+Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
+```
+
+* ~-Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.-~ 
+
+ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="lists"></span>
+===== Lists =====
+* Bullet Lists:  Begin a line with a space followed by an asterisk to create a bulleted line of text (space after asterisk is optional but seems to be preferred)
+ ''Example'': ```  * First line of bullet list```<br/>
+    produces<br/>
+* First line of bullet list<br/>
+* Numbered Lists:  Begin a line with a space followed by the number 1 and a period (or the beginning of another number format such as i or a).  
+  Note: Each line that should be part of the list begins with the same starting number. The wiki will generate sequential numbers in preview mode or after saving.
+
+: ''Example'': ```
+   1. First line of numbered list
+   1. Second line of numbered list
+```
+: produces<br/>
+
+   1. First line of numbered list
+   1. Second line of numbered list
+
+ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists]
+
+{i} If a list is interrupted by another item (like a box of code) with less indent (farther left) than the previous line of the list, it may interfere with the correct parsing of the next line of the list after the interruption.  (It seems to default to a first level indent after an interruption.)
+* One possible workaround is to place a blank line containing a ```space period space``` ( . ) between the interfering content and the next line.  (See [[#example|below]] for an example. In edit mode look for {{{<span id="example"></span>}}}.)  This seems to allow the wiki parser to interpret the indent count correctly on the next line and effectively continue the list.
+* It may be necessary to indent to one level less (farther left) than the line that is not being parsed correctly.  For example, if you need a line following an interruption to be at 3 indents, put the space-period-space immediately above it at 2 indents (ie: ```space space period space;  . ```).
+* A numbered list may require that the correct start number be manually entered, however this may not always work.  See [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists] for details on forcing a start number/letter.
+* For more information about this 'bug' and another possible workaround see [http://moinmo.in/MoinMoinBugs/BlockElementsInListBreakIndent BlockElementsInListBreakIndent].
+{i} A related issue is trying to use a mixed list where bullets follow numbers on the same indent level.  This will likely parse as the next consecutive number regardless of your use of an asterisk to indicate the use of a bullet.  The same workaround seems to resolve this issue as well.
+* For more information about this 'bug' and another possible workaround see [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists MixedNumberedAndUnorderedLists].
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="tables"></span>
+===== Tables =====
+ Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
+  It is important that there are no blank spaces or other characters after the closing pipes on a line.
+ ''Example'': 
+  ```
+||row 1 column 1||row 1 column 2||row 1 column 3||
+||row 2 column 1||row 2 column 2||row 2 column 3||
+```
+   produces
+  ||row 1 column 1||row 1 column 2||row 1 column 3||
+  ||row 2 column1||row 2 column 2||row 2 column 3||
+ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="anchors"></span>
+===== Anchors =====
+ ```<span id="anchorname"></span>```<br/>
+ Place the above markup in the location where you wish to create an anchor, replacing ```anchorname``` with a word (or phrase) that has meaning in that application.<br/>
+ ''Example'': ```<span id="hyperlinks"></span>``` would create an anchor called hyperlinks that would be located at the beginning of a section related to hyperlinks.<br/>
+ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking] and [http://wiki.libsdl.org/moin.cgi/HelpOnMacros HelpOnMacros].
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="hyperlinks"></span>
+===== Hyperlinks =====
+ Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so it is important that you manually hyperlink these.  
+* A hyperlink to another page (especially within the wiki) is created, in most cases, by enclosing the text to be linked in double brackets:<br/> ```[[linktarget]]```
+: ''Example'':  Typing ```SDL_VideoInit``` will produce SDL_VideoInit, an incomplete hyperlink, because only the CamelCase portion of the name is automatically recognized by the wiki as a hyperlink.  You will need to type {{{[[SDL_VideoInit]]}}} to include the SDL_ in the link ([[SDL_VideoInit]]).
+* If a hyperlink is automatically created where you __don't__ want one, adding 2 backticks (```<code></code>```) to interrupt the linked phrase or an exclamation mark (!) at the beginning of the incorrect link will usually remove the automatic link without appearing in the displayed text.
+: ''Example'':  If typed verbatim, the data field ```BitsPerPixel``` is automatically linked, as shown here (BitsPerPixel).  This is pointless because individual data fields will not have their own pages, making this a useless, dead link.  Typing {{{Bits<code></code>Per<code></code>Pixel}}}  or {{{!BitsPerPixel}}} will prevent it from becoming a link, as shown here (Bits<code></code>Per<code></code>Pixel).
+* A hyperlink to an anchor (or any unique text on a page) is created, in most cases, by<br/>
+   ```[[#anchorname|description]]```<br/>
+   where ```anchorname``` is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{description}}} is the text that will actually appear as the link.<br/>
+   ''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
+* A hyperlink to an outside web or email address may be created by simply typing or pasting in the address.
+* To create a link with link text other than the address itself, enclose the address followed by a pipe and the alternate link text in double brackets.  
+   ''Example'': ```[[link address|alternate text]]``` produces [[link address|alternate text]]
+ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
+
+[[#markup|Back to Markup Basics start]]
+
+
+<span id="include"></span>
+===== Include =====
+ An include enables you to copy all or a portion of a page onto another page, allowing changes to one page to be automatically updated on another.  This is especially useful for listing enumeration values for a function parameter on the function page, for example.<br/>
+ To create an Include place the following markup in the location where you wish the data to begin on the recipient page.
+  For copying values from an enumeration:<br/>
+  ```
+<<Include(SDL_Enumeration, , , from="== Values ==", to="== Code Examples ==")>>
+```
+   where ```SDL_Enumeration``` is replaced by the Enumeration's name.<br/>
+  For copying data fields from a structure:<br/>
+  ```
+<<Include(SDL_Structure, , , from="== Data Fields ==", to="== Code Examples ==")>>
+```
+   where ```SDL_Structure``` is replaced by the Structure's name.<br/>
+  The basic format is ```
+<<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>>
+```
+   See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
+  {i} The from= and to= start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose from= and to= parameters carefully.
+
+[[#markup|Back to Markup Basics start]]
+
+
+
+[[#ToC|Return to Table of Contents]]
+
+
+------
+
+
+
+== Miscellaneous Notes ==
+
+If you have questions, problems, or suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> with your thoughts. We are happy to have the participation!  
+
+
+{*}
+Some other wiki help that might be of interest or helpful to find quickly:
+:[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnEditing HelpOnEditing]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys HelpOnSmileys]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions HelpOnAdmonitions]
+
+{*}
+We have the Color2 macro installed.  
+: It will colorize text outside of tables using the following syntax:<br/>
+  ```<<Color2(colorname,text to be colorized)>>```<br/>
+* ```colorname``` may be most any simple color name like blue or red or green
+* If ```text to be colorized``` must contain commas each section must be colorized separately.  Place the comma at the end of each string and the space after between colorized sections to accomplish this.
+: ''Example'': 
+: Incorrect - 
+    ```<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>```
+     generates
+    <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
+: Correct - 
+    ```<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>```
+     generates
+    <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+
+
+{*}
+Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>tip</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+
+[[#ToC|Return to Table of Contents]]
+
+
+
+------
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>>.
+```
