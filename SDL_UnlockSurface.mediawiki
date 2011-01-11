@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_UnlockSurface =
-Use this function to ,,set up,, ^release^ a surface ,,for,, ^after^ directly accessing the pixels.
+Use this function to release a surface after directly accessing the pixels.
 
 
 == Syntax ==
@@ -21,13 +20,7 @@ void SDL_UnlockSurface(SDL_Surface* surface)
 <<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
-Between calls to [[SDL_LockSurface]]() / [[SDL_UnlockSurface]](), you can write to and read from <code>surface->pixels</code>, using the pixel format stored in <code>surface->format</code>. Once you are done accessing the surface, you should use [[SDL_UnlockSurface]]() to release it.
-
-Not all surfaces require locking. If SDL_MUSTLOCK(surface) evaluates to 0, then you can read and write to the surface at any time, and the pixel format of the surface will not change.
-
-No operating system or library calls should be made between lock/unlock pairs, as critical system locks may be held during this time. 
-
-*<br/>Note : Since 1.1.8, the surface locks are recursive. See [[SDL_LockSurface]]() for more information. <br/>*
+<<Include(SDL_LockSurface, , , from="== Remarks ==", to="== Related Functions ==")>>
 
 == Related Functions ==
 :[[SDL_LockSurface]]
