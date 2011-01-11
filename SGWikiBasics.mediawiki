@@ -45,19 +45,20 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 * Use one space for each indent level desired. (this line has 2 spaces)
 
 : Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
-  ''Example'': ``` . This line starts with a period   ``` ''generates''<br/>
+  ''Example'': ``` . This line starts with a period   ``` 
+   ''generates''<br/>
 : This line starts with a period
 
 <span id="break"></span>
 ==== Hard Line Break ====
  ```<br/>```
 * Place the above markup wherever you want to force the following text onto the next line but keep it in the same paragraph.<br/>
-* Note that you cannot change indent level immediately following a hard line break.
+* Note that you cannot change indent level immediately following a hard line break.  (Seems like a hard break forces the next line into the same paragraph.)
   ''Example'': Typing the following in the text editor ```
    1 first line<<BR>>   2 this line typed on same line after hard line break markup, same indent<<BR>>    3 this line typed on same line after hard line break markup, +1 indent<<BR>>   4 this line typed on same line after hard line break markup, -1 indent<<BR>>   . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
 ```
-  ''Generates'':
-   1 first line<br/>   2 this line typed on same line after hard line break markup, same indent<br/>    3 this line typed on same line after hard line break markup, +1 indent<br/>   4 this line typed on same line after hard line break markup, -1 indent<br/>   . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
+   ''generates''
+: 1 first line<br/>   2 this line typed on same line after hard line break markup, same indent<br/>    3 this line typed on same line after hard line break markup, +1 indent<br/>   4 this line typed on same line after hard line break markup, -1 indent<br/>   . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
 
   {i} A hard return (Enter key) is not always recognized as a line break.<br/>
   {i} Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
@@ -70,7 +71,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
  6 hard return after hard line break markup, followed by next line same indent<<BR>>
  7<<BR>> 8 next line typed on same line after hard line break markup, same indent
 ```
-  ''Generates'':
+   ''generates''
 : 1 hard return followed by next line same indent
    2 hard return followed by next line +1 indent
     3 hard return followed by next line same indent using period
@@ -111,7 +112,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
    ''Example'': ```{
 {{{Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
 }}}}
-   ''Generates'':
+    ''generates''
    ```Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
 * Place the brackets above and below the text to display the code formatting inside a box.
    ''Example'': ```{
@@ -119,7 +120,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
 ```
 }}}}
-   ''Generates'':
+    ''generates''
    ```
 Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
 ```
