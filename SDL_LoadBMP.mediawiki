@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_LoadBMP =
-Use this function to load a surface from a file.
+Use this function to load a surface from a BMP file.
 
 
 == Syntax ==
@@ -14,7 +13,7 @@ SDL_Surface* SDL_LoadBMP(const char* file)
 == Function Parameters ==
 {|
 |'''file'''
-|^the file containing surface information^
+|the file containing a BMP image
 |}
 
 == Return Value ==
@@ -31,7 +30,7 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_FreeSurface]]
 :[[SDL_LoadBMP_RW]]
-:[[SDL_SaveBMP]] *
+:[[SDL_SaveBMP]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
