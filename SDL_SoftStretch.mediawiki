@@ -25,7 +25,7 @@ int SDL_SoftStretch(SDL_Surface*    src,
 |the [[SDL_Surface]] structure that is the blit target
 |-
 |'''dstrect'''
-|the [[SDL_Rect]] structure representing the rectangle that is copied into
+|the [[SDL_Rect]] structure representing the rectangle that is copied into, or NULL to copy into the entire surface
 |}
 
 == Return Value ==
