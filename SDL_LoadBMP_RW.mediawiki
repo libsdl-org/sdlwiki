@@ -14,7 +14,7 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
 == Function Parameters ==
 {|
 |'''src'''
-|the data source for the surface
+|the data stream for the surface
 |-
 |'''freesrc'''
 |non-zero to close the source after being read
