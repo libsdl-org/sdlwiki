@@ -114,6 +114,7 @@ Note: when you're blitting between two alpha surfaces, normally the alpha of the
 
 == Related Functions ==
 :[[SDL_LowerBlit]]
+:[[SDL_SoftStretch]]
 :[[SDL_UpperBlit]]
 
 ----
