@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetSurfaceRLE =
 Use this function to set the RLE acceleration hint for a surface.
@@ -15,10 +14,10 @@ int SDL_SetSurfaceRLE(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure to ,,set,, ^optimize???^
+|the [[SDL_Surface]] structure to optimize
 |-
 |'''flag'''
-|0 to ^disable?^, non-zero to ^enable?^ RLE acceleration
+|0 to disable, non-zero to enable RLE acceleration
 |}
 
 == Return Value ==
@@ -30,9 +29,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-If RLE is enabled, colorkey and alpha blending blits are much faster, but the surface must be locked before directly accessing the pixels. 
+If RLE is enabled, color key and alpha blending blits are much faster, but the surface must be locked before directly accessing the pixels. 
 
 == Related Functions ==
+:[[SDL_BlitSurface]]
 :[[SDL_LockSurface]]
 :[[SDL_UnlockSurface]]
 
