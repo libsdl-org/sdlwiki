@@ -1,14 +1,13 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_MUSTLOCK =
-Use this function to ^determine whether a surface must be locked for access^.
+Use this function to determine whether a surface must be locked for access.
 
 
 == Syntax ==
 ```c++
-SDL_Bool SDL_MUSTLOCK(SDL_Surface* surface)
+SDL_bool SDL_MUSTLOCK(SDL_Surface* surface)
 ```
 
 == Function Parameters ==
