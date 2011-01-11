@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SaveBMP =
-Use this function to save a surface to a file.
+Use this function to save a surface to a BMP file.
 
 
 == Syntax ==
@@ -15,10 +14,10 @@ int SDL_SaveBMP(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure to save
+|the [[SDL_Surface]] structure containing the image to be saved
 |-
 |'''file'''
-|,,a pointer to ,,^the file to fill with the surface data^
+|the file to be saved to
 |}
 
 == Return Value ==
