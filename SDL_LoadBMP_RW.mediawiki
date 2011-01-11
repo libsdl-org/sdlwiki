@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_LoadBMP_RW =
 Use this function to load a surface from a seekable SDL data source (memory or file).
@@ -21,8 +20,6 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
 |non-zero to close the source after being read
 |}
 
-<<Color2(green,There is no page for SDL_RWops.  Should there be?  Should it be mentioned in the param description?)>>
-
 == Return Value ==
 Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
@@ -32,16 +29,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-The new surface should be freed with [[SDL_FreeSurface]]().
-
-*<br/><<Color2(green,This is from SDL_LoadBMP in the old wiki.  Does it apply here?)>>  
-
-Note: When loading a 24-bit Windows BMP file, pixel data points are loaded as blue, green, red, and NOT red, green, blue (as one might expect).<br/>*
+The new surface should be freed with [[SDL_FreeSurface]]().  
 
 == Related Functions ==
 :[[SDL_FreeSurface]]
 :[[SDL_LoadBMP]]
-:[[SDL_SaveBMP_RW]] ???
+:[[SDL_SaveBMP_RW]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
