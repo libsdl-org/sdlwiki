@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SetSurfacePalette =
 Use this function to set the palette used by a surface.
@@ -15,10 +14,10 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure ^to update^
+|the [[SDL_Surface]] structure to update
 |-
 |'''palette'''
-|the [[SDL_Palette]] structure ^to apply^
+|the [[SDL_Palette]] structure to use
 |}
 
 == Return Value ==
@@ -31,8 +30,6 @@ You can add your code example here
 
 == Remarks ==
 A single palette can be shared with many surfaces.
-
-== Related Functions ==
 
 
 ----
