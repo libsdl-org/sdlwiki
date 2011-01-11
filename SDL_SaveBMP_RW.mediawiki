@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SaveBMP_RW =
-Use this function to save a surface to a seekable SDL data source (memory or file).
+Use this function to save a surface to a seekable SDL data stream (memory or file) in BMP format.
 
 
 == Syntax ==
@@ -16,16 +15,15 @@ int SDL_SaveBMP_RW(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure to be saved
+|the [[SDL_Surface]] structure containing the image to be saved
 |-
 |'''dst'''
-|a data source to save to
+|a data stream to save to
 |-
 |'''freedst'''
-|non-zero to close the source after being written
+|non-zero to close the stream after being written
 |}
-
-<<Color2(green,Why is it free''dst'' and it's the ''source'' that is closed?  Why not free''src''?  There is no page for SDL_RWops.  Should there be?  Should it be specifically mentioned in the param anyway?)>> 
+ 
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
@@ -39,7 +37,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_LoadBMP_RW]] ???
+:[[SDL_LoadBMP_RW]]
 :[[SDL_SaveBMP]]
 
 ----
