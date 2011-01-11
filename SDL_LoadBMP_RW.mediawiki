@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_LoadBMP_RW =
-Use this function to load a surface from a seekable SDL data source (memory or file).
+Use this function to load a surface from a seekable SDL data stream (memory or file).
 
 
 == Syntax ==
