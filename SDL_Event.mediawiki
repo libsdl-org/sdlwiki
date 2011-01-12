@@ -100,7 +100,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event type. 
+The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL.  Using it is a simple matter of knowing which union member relates to which event type. 
 
 {|
 |<bgcolor="#EDEDED">''Event Type''
@@ -115,11 +115,11 @@ The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Even
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
 |-
-|SDL_FINGERMOTION, SDL_FINGERDOWN/UP
+|SDL_FINGERMOTION<br/>SDL_FINGERDOWN<br/>SDL_FINGERUP
 |[[SDL_TouchFingerEvent]]
 |'''tfinger'''
 |-
-|SDL_KEYDOWN/UP
+|SDL_KEYDOWN<br/>SDL_KEYUP
 |[[SDL_KeyboardEvent]]
 |'''key'''
 |-
@@ -135,7 +135,7 @@ The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Even
 |[[SDL_JoyHatEvent]]
 |'''jhat'''
 |-
-|SDL_JOYBUTTONDOWN/UP
+|SDL_JOYBUTTONDOWN<br/>SDL_JOYBUTTONUP
 |[[SDL_JoyButtonEvent]]
 |'''jbutton'''
 |-
@@ -143,7 +143,7 @@ The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Even
 |[[SDL_MouseMotionEvent]]
 |'''motion'''
 |-
-|SDL_MOUSEBUTTONDOWN/UP
+|SDL_MOUSEBUTTONDOWN<br/>SDL_MOUSEBUTTONUP
 |[[SDL_MouseButtonEvent]]
 |'''button'''
 |-
@@ -171,7 +171,7 @@ The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Even
 |[[SDL_TextInputEvent]]
 |'''text'''
 |-
-|SDL_TOUCHBUTTONUP/DOWN
+|SDL_TOUCHBUTTONDOWN<br/>SDL_TOUCHBUTTONUP
 |[[SDL_TouchButtonEvent]]
 |'''tbutton'''
 |-
@@ -236,19 +236,17 @@ SDL_PushEvent(&user_event);
 ```
 
 == Related Enumerations ==
-:[[SDL_scancode]] ???
+:[[SDL_EventType]]
 
 == Related Structures ==
 :[[SDL_StructureRemoveSectionIfEmpty]]
 
-<<Color2(green,Should all the events.h structures be listed here?)>>
+<<Color2(green,Should all the events.h structures be listed here?  Yes)>>
 
 == Related Functions ==
-:[[SDL_FilterEvents]] ???
 :[[SDL_PeepEvents]]
 :[[SDL_PollEvent]]
 :[[SDL_PushEvent]]
-:[[SDL_SetEventFilter]] ???
 :[[SDL_WaitEvent]]
 :[[SDL_WaitEventTimeout]]
 
