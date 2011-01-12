@@ -28,7 +28,7 @@ A structure that contains keyboard text editing event ,,structure,, ^information
 |'''length'''
 |the length of selected editing text
 |}
-<<Color2(green,The '''text''' field currently shows the same info in both columns because it could go in either per the header vs *old wiki*. Where should it go?)>>
+<<Color2(green,The '''text''' field currently shows the same info in both columns because it could go in either per the header vs *old wiki*. Where should it go?  There is also a #define SDL_TEXTEDITINGEVENT_TEXT_SIZE (32).  Should that info be included anywhere?)>>
 
 == Code Examples ==
 ```c++
