@@ -1,0 +1,82 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_TouchFingerEvent =
+A structure that contains touch finger motion,,/finger event structure,, ^information^.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP
+|-
+|Uint32
+|'''windowID'''
+|the window with mouse focus, if any
+|-
+|SDL_TouchID
+|'''touchId'''
+|the touch device id
+|-
+|SDL_FingerID
+|'''fingerId'''
+|description
+|-
+|Uint8
+|'''state'''
+|the current button state
+|-
+|Uint8
+|'''padding1'''
+|description
+|-
+|Uint8
+|'''padding2'''
+|description
+|-
+|Uint8
+|'''padding3'''
+|description
+|-
+|Uint16
+|'''x'''
+|description
+|-
+|Uint16
+|'''y'''
+|description
+|-
+|Uint16
+|'''dx'''
+|description
+|-
+|Uint16
+|'''dy'''
+|description
+|-
+|Uint16
+|'''pressure'''
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
