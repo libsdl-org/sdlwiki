@@ -61,6 +61,8 @@ A structure that contains touch finger motion,,/finger event structure,, ^inform
 |description
 |}
 
+<<Color2(green,Note that touchID is described as "the touch device index" in SDL_TouchButtonEvent.  They should be consistent.  Also note that SDL_TouchID and SDL_FingerID are not defined in this header.)>>
+
 == Code Examples ==
 ```c++
 You can add your code example here
