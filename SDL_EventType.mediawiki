@@ -96,6 +96,36 @@ An enumeration of the types of events that can be delivered.
 |joystick button released
 |-
 |
+|<bgcolor="#EDEDED">''Touch events''
+|-
+|SDL_FINGERDOWN
+|
+|-
+|SDL_FINGERUP
+|
+|-
+|SDL_FINGERMOTION
+|
+|-
+|SDL_TOUCHBUTTONDOWN
+|
+|-
+|SDL_TOUCHBUTTONUP
+|
+|-
+|
+|<bgcolor="#EDEDED">''Gesture events''
+|-
+|SDL_DOLLARGESTURE
+|
+|-
+|SDL_DOLLARRECORD
+|
+|-
+|SDL_MULTIGESTURE
+|
+|-
+|
 |<bgcolor="#EDEDED">''Clipboard events''
 |-
 |SDL_CLIPBOARDUPDATE
