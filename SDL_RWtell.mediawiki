@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWtell =
-Use this function to *perform a do-nothing seek to get the current offset in an SDL_RWops stream*.
+Use this function to *perform a do-nothing seek to get the current offset in an SDL_RWops ^data^ stream*.
 
 
 == Syntax ==
@@ -16,7 +16,7 @@ long SDL_RWtell(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context'''
-|an SDL_RWops structure ^containing the tell function???^
+|^a data stream containing the tell function???^
 |}
 
 == Return Value ==
