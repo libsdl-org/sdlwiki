@@ -3,8 +3,7 @@
 '''DRAFT'''
 
 = SDL_Event =
-A union that contains the different event structures.
-<<Color2(green,The header says "General event structure".)>>
+A union that contains structures for the different event types.
 
 
 == Data Fields ==
@@ -69,6 +68,22 @@ A union that contains the different event structures.
 |'''syswm'''
 |system dependent window event data
 |-
+|[[SDL_TouchFingerEvent]]
+|'''tfinger'''
+|touch finger event data
+|-
+|[[SDL_TouchButtonEvent]]
+|'''tbutton'''
+|touch button event data
+|-
+|[[SDL_MultiGestureEvent]]
+|'''mgesture'''
+|multi finger gesture data
+|-
+|[[SDL_DollarGestureEvent]]
+|'''dgesture'''
+|multi finger gesture data
+|-
 |<style="color: #808080;">SDL_ActiveEvent
 |<style="color: #808080;">'''active'''
 |<style="color: #808080;">deprecated; for backwards compatibility
@@ -78,33 +93,117 @@ A union that contains the different event structures.
 |<style="color: #808080;">deprecated; for backwards compatibility
 |}
 
-<<Color2(green,The following appears to have been removed in a recent revision.  Correct?)>>
-
-{|
-|[[SDL_ProximityEvent]]
-|'''proximity'''
-|proximity In or Out event
-|}
 
 == Code Examples ==
-<<Color2(green,The following seems most like it belongs in this section but with all the extra text may belong elsewhere or the text should also be in a box?)>>
+```c++
+You can add your code example here
+```
 
-*<br/>
+== Remarks ==
+The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event type. 
+
+{|
+|__Event Type__
+|__Event Structure__
+|__SDL_Event Field__
+|-
+|<style="color: #808080;">SDL_ACTIVEEVENT
+|<style="color: #808080;">[[SDL_ActiveEvent]]
+|<style="color: #808080;">'''active'''
+|-
+|SDL_DOLLARGESTURE
+|[[SDL_DollarGestureEvent]]
+|'''dgesture'''
+|-
+|SDL_FINGERMOTION, SDL_FINGERDOWN/UP
+|[[SDL_TouchFingerEvent]]
+|'''tfinger'''
+|-
+|SDL_KEYDOWN/UP
+|[[SDL_KeyboardEvent]]
+|'''key'''
+|-
+|SDL_JOYAXISMOTION
+|[[SDL_JoyAxisEvent]]
+|'''jaxis'''
+|-
+|SDL_JOYBALLMOTION
+|[[SDL_JoyBallEvent]]
+|'''jball'''
+|-
+|SDL_JOYHATMOTION
+|[[SDL_JoyHatEvent]]
+|'''jhat'''
+|-
+|SDL_JOYBUTTONDOWN/UP
+|[[SDL_JoyButtonEvent]]
+|'''jbutton'''
+|-
+|SDL_MOUSEMOTION
+|[[SDL_MouseMotionEvent]]
+|'''motion'''
+|-
+|SDL_MOUSEBUTTONDOWN/UP
+|[[SDL_MouseButtonEvent]]
+|'''button'''
+|-
+|SDL_MOUSEWHEEL
+|[[SDL_MouseWheelEvent]]
+|'''wheel'''
+|-
+|SDL_MULTIGESTURE
+|[[SDL_MultiGestureEvent]]
+|'''mgesture'''
+|-
+|SDL_QUIT
+|[[SDL_QuitEvent]]
+|'''quit'''
+|-
+|SDL_SYSWMEVENT
+|[[SDL_SysWMEvent]]
+|'''syswm'''
+|-
+|SDL_TEXTEDITING
+|[[SDL_TextEditingEvent]]
+|'''edit'''
+|-
+|SDL_TEXTINPUT
+|[[SDL_TextInputEvent]]
+|'''text'''
+|-
+|SDL_TOUCHBUTTONUP/DOWN
+|[[SDL_TouchButtonEvent]]
+|'''tbutton'''
+|-
+|SDL_USEREVENT
+|[[SDL_UserEvent]]
+|'''user'''
+|-
+|<style="color: #808080;">SDL_VIDEORESIZE
+|<style="color: #808080;">[[SDL_ResizeEvent]]
+|<style="color: #808080;">'''resize'''
+|-
+|SDL_WINDOWEVENT
+|[[SDL_WindowEvent]]
+|'''window'''
+|}
+
+
 The [[SDL_Event]] structure has two uses:
 * Reading events on the event queue
 * Placing events on the event queue 
 
-Reading events from the event queue is done with either [[SDL_PollEvent]] or [[SDL_PeepEvents]]. We'll use [[SDL_PollEvent]] and step through an example.
+Reading events from the event queue is done with either [[SDL_PollEvent]]() or [[SDL_PeepEvents]](). We'll use [[SDL_PollEvent]]() and step through an example.
 
 First off, we create an empty [[SDL_Event]] structure.
 ```c++
 SDL_Event test_event;
 ```
-[[SDL_PollEvent]] removes the next event from the event queue.  If there are no events on the queue it returns 0, otherwise it returns 1. We use a ```while``` loop to process each event in turn. 
+[[SDL_PollEvent]]() removes the next event from the event queue.  If there are no events on the queue it returns 0, otherwise it returns 1. We use a ```while``` loop to process each event in turn. 
 ```c++
 while(SDL_PollEvent(&test_event)) {
 ```
-The [[SDL_PollEvent]] function takes a pointer to an [[SDL_Event]] structure that is to be filled with event information. We know that if [[SDL_PollEvent]] removes an event from the queue then the event information will be placed in our test_event structure, but we also know that the type of event will be placed in the '''type''' member of test_event. So to handle each event type separately we use a ```switch``` statement.
+The [[SDL_PollEvent]]() function takes a pointer to an [[SDL_Event]] structure that is to be filled with event information. We know that if [[SDL_PollEvent]]() removes an event from the queue then the event information will be placed in our test_event structure, but we also know that the type of event will be placed in the '''type''' member of test_event. So to handle each event type separately we use a ```switch``` statement.
 ```#!highlightcpp
   switch(test_event.type) {
 ```
@@ -125,7 +224,7 @@ All we need do now is read the information out of the '''motion''' member of tes
 printf("Event queue empty.\n");
 ```
 
-It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [[SDL_PushEvent]] and [[SDL_PeepEvents]] allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the '''type''' member and filling the appropriate member structure with information. 
+It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [[SDL_PushEvent]]() and [[SDL_PeepEvents]]() allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the '''type''' member and filling the appropriate member structure with information. 
 ```c++
 SDL_Event user_event;
 
@@ -135,62 +234,6 @@ user_event.user.data1=NULL;
 user_event.user.data2=NULL;
 SDL_PushEvent(&user_event);
 ```
-<br/>*
-
-== Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Should the following be incorporated above (params) rather than listed separately here?  Should it be left off entirely or moved to the !CategoryEvents page?)>>
-
-* <br/>
-The [[SDL_Event]] union is the core to all event handling in SDL; it's probably the most important structure after [[SDL_Surface]]. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event '''type'''. 
-
-{|
-|__Event type__
-|__Event Structure__
-|-
-|SDL_ACTIVEEVENT
-|[[SDL_ActiveEvent]]
-|-
-|SDL_KEYDOWN/UP
-|[[SDL_KeyboardEvent]]
-|-
-|SDL_MOUSEMOTION
-|[[SDL_MouseMotionEvent]]
-|-
-|SDL_MOUSEBUTTONDOWN/UP
-|[[SDL_MouseButtonEvent]]
-|-
-|SDL_JOYAXISMOTION
-|[[SDL_JoyAxisEvent]]
-|-
-|SDL_JOYBALLMOTION
-|[[SDL_JoyBallEvent]]
-|-
-|SDL_JOYHATMOTION
-|[[SDL_JoyHatEvent]]
-|-
-|SDL_JOYBUTTONDOWN/UP
-|[[SDL_JoyButtonEvent]]
-|-
-|SDL_VIDEORESIZE
-|[[SDL_ResizeEvent]]
-|-
-|SDL_VIDEOEXPOSE
-|[[SDL_ExposeEvent]]
-|-
-|SDL_QUIT
-|[[SDL_QuitEvent]]
-|-
-|SDL_USEREVENT
-|[[SDL_UserEvent]]
-|-
-|SDL_SYSWMEVENT
-|[[SDL_SysWMEvent]]
-|}
-
-<<Color2(green,SDL_MouseWheelEvent is missing)>>
-<br/>*
 
 == Related Enumerations ==
 :[[SDL_scancode]] ???
