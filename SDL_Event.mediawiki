@@ -100,7 +100,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL.  Using it is a simple matter of knowing which union member relates to which event type. 
+The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL.  Using it is a simple matter of knowing which union member relates to which event type. The [[#table|table]] below lists these relationships.
 
 The [[SDL_Event]] structure has two uses:
 * Reading events on the event queue
@@ -149,6 +149,7 @@ SDL_PushEvent(&user_event);
 ```
 
 <span id="table"></span>
+__Relationships between event types and union members__
 {|
 |<bgcolor="#EDEDED">''Event Type''
 |<bgcolor="#EDEDED">''Event Structure''
