@@ -30,10 +30,10 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''Keyboard events''
 |-
 |SDL_KEYDOWN
-|keys pressed
+|key pressed
 |-
 |SDL_KEYUP
-|keys released
+|key released
 |-
 |SDL_TEXTEDITING
 |keyboard text editing (composition)
@@ -117,7 +117,7 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
 |-
 |SDL_USEREVENT
-|^a user-specified event^
+|a user-specified event
 |-
 |SDL_LASTEVENT
 |only for bounding internal arrays
