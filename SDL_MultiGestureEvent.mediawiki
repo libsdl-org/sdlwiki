@@ -1,0 +1,66 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_MultiGestureEvent =
+A structure that contains multiple finger gesture event ^information^.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_MULTIGESTURE
+|-
+|Uint32
+|'''windowID'''
+|the window with mouse focus, if any
+|-
+|SDL_TouchID
+|'''touchId'''
+|the touch device index
+|-
+|float
+|'''dTheta'''
+|description
+|-
+|float
+|'''dDist'''
+|description
+|-
+|float
+|'''x'''
+|//currently 0...1. Change to screen coords?
+|-
+|float
+|'''y'''
+|description
+|-
+|Uint16
+|'''numFingers'''
+|description
+|-
+|Uint16
+|'''padding'''
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+
+== Related Functions ==
+:[[SDL_FunctionLeaveSectionIfEmpty]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
