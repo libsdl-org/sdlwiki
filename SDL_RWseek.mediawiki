@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RWseek =
-Use this function to seek within an SDL_RWops data source.
+Use this function to seek within an SDL_RWops data stream.
 
 
 == Syntax ==
@@ -17,7 +17,7 @@ long SDL_RWseek(SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|an SDL_RWops structure ^containing the seek function???^
+|^a data stream containing the seek function???^
 |-
 |'''offset'''
 |an offset in bytes, relative to '''whence''' location; can be negative
@@ -27,7 +27,7 @@ long SDL_RWseek(SDL_RWops* context,
 |}
 
 == Return Value ==
-Returns the final offset in the data source after the seek.
+Returns the final offset in the data stream after the seek.
 
 == Code Examples ==
 *<br/>
