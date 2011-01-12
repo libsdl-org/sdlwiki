@@ -103,9 +103,9 @@ You can add your code example here
 The [[SDL_Event]] structure is the core to all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL, using it is a simple matter of knowing which union member relates to which event type. 
 
 {|
-|__Event Type__
-|__Event Structure__
-|__SDL_Event Field__
+|<bgcolor="#EDEDED">''Event Type''
+|<bgcolor="#EDEDED">''Event Structure''
+|<bgcolor="#EDEDED">''SDL_Event Field''
 |-
 |<style="color: #808080;">SDL_ACTIVEEVENT
 |<style="color: #808080;">[[SDL_ActiveEvent]]
