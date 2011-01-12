@@ -105,7 +105,8 @@ The [[SDL_Event]] structure is the core of all event handling in SDL. [[SDL_Even
 The [[SDL_Event]] structure has two uses:
 * [[#reading|Reading events from the event queue]]
 * [[#push|Placing events on the event queue]]
-
+<br/>
+<br/>
 <span id="reading"></span>
 __Reading events from the event queue__
 
@@ -139,8 +140,8 @@ All we need do now is read the information out of the '''motion''' member of tes
 }
 printf("Event queue empty.\n");
 ```
-
-
+<br/>
+<br/>
 <span id="push"></span>
 __Placing events on the event queue__
 
@@ -154,7 +155,8 @@ user_event.user.data1=NULL;
 user_event.user.data2=NULL;
 SDL_PushEvent(&user_event);
 ```
-
+<br/>
+<br/>
 <span id="table"></span>
 __Relationships between event types and union members__
 {|
