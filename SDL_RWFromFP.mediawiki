@@ -22,7 +22,7 @@ SDL_RWops* SDL_RWFromFP(void*    fp,
 |,,a pointer to ,,^the file to open (in the new structure ???)^
 |-
 |'''autoclose'''
-|^non-0 to autoclose or 0 to leave the file open when the structure is closed^ ???
+|^non-zero to autoclose or 0 to leave the file open when the structure is closed^ ???
 |}
 
 == Return Value ==
