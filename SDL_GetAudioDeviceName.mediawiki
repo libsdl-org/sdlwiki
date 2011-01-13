@@ -17,7 +17,7 @@ const char* SDL_GetAudioDeviceName(int index,
 |the index of the audio device; the value ranges from 0 to 1 - [[SDL_GetNumAudioDevices]]()
 |-
 |'''iscapture'''
-|non-0 to specify a device that has recording capability
+|non-zero to specify a device that has recording capability
 |}
 
 == Return Value ==
