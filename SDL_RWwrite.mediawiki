@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWwrite =
-Use this function to write to a data source ''-or-'' *call the write function in an SDL_RWops structure.*
+Use this function to write to a data stream ''-or-'' *call the write function in an SDL_RWops structure.*
 
 
 == Syntax ==
@@ -28,8 +28,6 @@ size_t SDL_RWwrite(struct SDL_RWops* context,
 |'''num'''
 |*the exact number of memory blocks to write*
 |}
-
-<<Color2(green,I think '''ptr''' is an exception to the 'pointer rule'.)>>
 
 == Return Value ==
 Returns the number of objects written, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
@@ -74,7 +72,7 @@ int main()
 == Remarks ==
 *<br/>This is not a built-in function. This is a macro that calls whatever write function happens to be in the SDL_RWops structure.<br/>*
 
-[[SDL_RWwrite]] writes exactly '''num''' objects each of size '''size''' from the area pointed at by '''ptr''' to data source.  <<Color2(green,Should SDL_RWwrite have () like a function even though it's a macro?)>>
+[[SDL_RWwrite]] writes exactly '''num''' objects each of size '''size''' from the area pointed at by '''ptr''' to data ,,source,, ^stream^.  <<Color2(green,Should SDL_RWwrite have () like a function even though it's a macro?)>>
 
 == Related Functions ==
 :[[SDL_RWclose]] (Macro) *
