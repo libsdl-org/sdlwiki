@@ -14,7 +14,7 @@ int SDL_GetNumAudioDevices(int iscapture)
 == Function Parameters ==
 {|
 |'''iscapture'''
-|non-0 to specify a device that has recording capability
+|non-zero to specify a device that has recording capability
 |}
 
 == Return Value ==
