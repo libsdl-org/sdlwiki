@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_AtomicLock =
-Use this function to lock a spin lock by setting it to a ,,none zero,, ^non-0 / non-zero^ value.
+Use this function to lock a spin lock by setting it to a ,,none zero,, ^non-zero^ value.
 
 
 == Syntax ==
