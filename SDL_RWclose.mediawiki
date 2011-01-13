@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWclose =
-Use this function to close and free an allocated SDL_RWops structure ''-or-'' *call the close function in an SDL_RWops structure*.
+Use this function to close and free an allocated SDL_RWops structure ''-or-'' *call the close function in an SDL_RWops structure*.  <<Color2(green,Should the wording here be changed to reflect the data stream concept as with other references to SDL_RWops?)>>
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ int SDL_RWclose(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context'''
-|the SDL_RWops structure to close
+|the ,,SDL_RWops structure,, ^data stream^ to close
 |}
 
 == Return Value ==
