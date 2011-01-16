@@ -756,7 +756,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-Values of this type are used to represent keyboard keys, among other places in the <code>SDL_keysym::scancode</code> <code>key.keysym.scancode</code> field of the [[SDL_Event]] ,,structure,, ^union^.
+^Values of this type are used to represent the physical location of a keyboard key on the keyboard.  This is correlated to the [[SDLKey]] associated with that location to give a key press meaning.^
+
+^These are used in many places, including ^,,Values of this type are used to represent keyboard keys, among other places ,,in the <code>SDL_keysym::scancode</code> <code>key.keysym.scancode</code> field of the [[SDL_Event]] structure.
 
 The values in this enumeration are based on the USB usage page standard:
  [http://www.usb.org/developers/devclass_docs/Hut1_12.pdf]
