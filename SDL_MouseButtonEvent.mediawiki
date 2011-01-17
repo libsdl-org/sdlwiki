@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_MouseButtonEvent =
 A structure that contains mouse button event information.
@@ -18,7 +17,7 @@ A structure that contains mouse button event information.
 |-
 |Uint8
 |'''button'''
-|the index of the button that reported the event
+|the button that changed; see [[#Remarks|Remarks]] for details
 |-
 |Uint8
 |'''state'''
@@ -41,12 +40,20 @@ You can add your code example here
 == Remarks ==
 [[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP is reported.
 
-An SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP event occurs whenever a user presses a button on a mouse.
+An SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP event occurs whenever a user presses or releases a button on a mouse.
 
-When a mouse button press or release is detected the number of the button pressed (from 1 to 255, with 1 usually being the left button and 2 the right) is placed into '''button''', the position of the mouse when this event occurred is stored in the '''x''' and the '''y'''  fields. ,,Like [[SDL_KeyboardEvent]], ,,information on whether the event was a press or a release event is stored in both the '''type''' and '''state''' fields, ,,but this should be obvious,,.
-
-Mouse wheel events are reported as buttons 4 (up) and 5 (down). Two events are generated i.e. you get an SDL_MOUSEBUTTONDOWN followed by an SDL_MOUSEBUTTONUP event.*
-<<Color2(green,Should it read 4 (forward) and 5 (backward) instead of up and down or is a mouse wheel event a click on the wheel like a center button instead of a roll action?)>>
+'''button''' may be one of:
+{|
+|SDL_BUTTON_LEFT
+|-
+|SDL_BUTTON_MIDDLE
+|-
+|SDL_BUTTON_RIGHT
+|-
+|SDL_BUTTON_X1
+|-
+|SDL_BUTTON_X2
+|}
 
 == Related Enumerations ==
 :[[SDL_EventType]]
@@ -56,6 +63,8 @@ Mouse wheel events are reported as buttons 4 (up) and 5 (down). Two events are g
 :[[SDL_MouseWheelEvent]]
 
 == Related Functions ==
+:[[SDL_GetMouseState]]
+:[[SDL_GetRelativeMouseState]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
