@@ -71,6 +71,7 @@ Relative motion is stored in '''xrel''' and '''yrel''' and is relative to the la
 
 == Related Functions ==
 :[[SDL_GetMouseState]]
+:[[SDL_GetRelativeMouseState]]
 :[[SDL_SetRelativeMouseMode]]
 
 ----
