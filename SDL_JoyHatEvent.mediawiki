@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_JoyHatEvent =
-A structure that contains joystick hat position change event ,,structure,, ^information^ (event.jhat.*).
+A structure that contains joystick hat position change event information.
 
 
 == Data Fields ==
@@ -14,19 +14,15 @@ A structure that contains joystick hat position change event ,,structure,, ^info
 |-
 |Uint8
 |'''which'''
-|the joystick device index ^*the index of the joystick that reported the event*^
+|the index of the joystick that reported the event
 |-
 |Uint8
 |'''hat'''
-|the joystick hat index ^*the index of the hat*^
+|the index of the hat that changed
 |-
 |Uint8
 |'''value'''
-|the hat position value ^*the current position of the hat*^; see [[#Remarks|Remarks]] for details
-|-
-|Uint8
-|'''padding1'''
-|^8 empty bits to total 32^???
+|the current position of the hat; see [[#Remarks|Remarks]] for details
 |}
 
 == Code Examples ==
@@ -35,6 +31,10 @@ You can add your code example here
 ```
 
 == Remarks ==
+[[SDL_JoyHatEvent]]() is a member of the [[SDL_Event]] structure and is used when an event of type SDL_JOYHATMOTION is reported.
+
+An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
+
 '''value''' may be any of the following ^*a bitwise OR'd combination of* any of *the following*^:
 {|
 |SDL_HAT_LEFTUP
@@ -80,13 +80,14 @@ Note that zero means the POV is centered.
 |}
 Note that zero means the POV is centered. 
 
-*<br/>[[SDL_JoyHatEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYHATMOTION is reported.
-
-A SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.<br/>*
+== Related Structures ==
+:[[SDL_JoyAxisEvent]]
+:[[SDL_JoyBallEvent]]
+:[[SDL_JoyButtonEvent]]
 
 == Related Functions ==
-:[[SDL_JoystickEventState]] *
-:[[SDL_JoystickGetHat]] *
+:[[SDL_JoystickEventState]]
+:[[SDL_JoystickGetHat]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
