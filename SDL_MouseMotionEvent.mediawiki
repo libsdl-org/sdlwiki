@@ -65,8 +65,14 @@ If the cursor is hidden ([[SDL_ShowCursor]](0)) and the input is grabbed (SDL_WM
 
 <<Color2(green,There are currently no pages for SDL_WarpMouse or SDL_WM_!GrabInput.  Do they still exist in 1.3?  Is [[SDL_WarpMouseInWindow]] the appropriate replacement for SDL_WarpMouse?  If it is should it be listed in RFs also?)>>
 
-== Related Functions ==
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
 :[[SDL_MouseButtonEvent]]
+:[[SDL_MouseWheelEvent]]
+
+== Related Functions ==
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
