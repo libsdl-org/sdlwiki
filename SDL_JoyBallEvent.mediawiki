@@ -40,6 +40,9 @@ An SDL_JOYBALLMOTION event occurs when a user moves a trackball on the joystick.
 
 Trackballs only return relative motion. This is the change in position of the ball since it was last polled (last cycle of the event loop).
 
+== Related Enumerations ==
+:[[SDL_EventType]]
+
 == Related Structures ==
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyButtonEvent]]
