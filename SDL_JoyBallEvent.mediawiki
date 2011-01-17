@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_JoyBallEvent =
 A structure that contains joystick trackball motion event information.
