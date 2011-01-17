@@ -37,7 +37,7 @@ You can add your code example here
 == Remarks ==
 [[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.
 
-An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a joystick. The information on what key was pressed or released is in the '''keysym''' member.
+An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
 
 Note: Repeating SDL_KEYDOWN events will occur if key repeat is enabled (see SDL_EnableKeyRepeat).  <<Color2(green,SDL_EnableKeyRepeat does not currently have a page and may not exist in SDL 1.3.)>>
 
