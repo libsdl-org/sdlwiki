@@ -17,7 +17,7 @@ A structure that contains joystick axis motion event information.
 |-
 |Uint8
 |'''axis'''
-|the axis that changed
+|the index of the axis that changed
 |-
 |int
 |'''value'''
