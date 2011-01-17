@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_KeyboardEvent =
-A structure that contains keyboard button event ,,structure,, ^information^ (event.key.*).
+A structure that contains keyboard button event information.
 
 
 == Data Fields ==
@@ -24,14 +24,6 @@ A structure that contains keyboard button event ,,structure,, ^information^ (eve
 |'''repeat'''
 |non-zero if this is a key repeat
 |-
-|Uint8
-|'''padding2'''
-|^8 empty bits to total 32^???
-|-
-|Uint8
-|'''padding3'''
-|^8 empty bits to total 32^???
-|-
 |SDL_keysym
 |'''keysym'''
 |the key that was pressed or released
@@ -43,9 +35,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<<Color2(green,The following is taken from the old wiki which had fewer/different data fields)>>*
-
-[[SDL_KeyboardEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.
+[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.
 
 The '''type''' and '''state''' actually report the same information, they just use different values to do it. A keyboard event generally occurs when a key is released (type=SDL_KEYUP or state=SDL_RELEASED) and when a key is pressed (type=SDL_KEYDOWN or state=SDL_PRESSED). The information on what key was pressed or released is in the '''keysym''' member.
 
