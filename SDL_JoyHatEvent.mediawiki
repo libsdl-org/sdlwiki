@@ -30,7 +30,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_JoyHatEvent]]() is a member of the [[SDL_Event]] structure and is used when an event of type SDL_JOYHATMOTION is reported.
+[[SDL_JoyHatEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_JOYHATMOTION is reported.
 
 An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
 
