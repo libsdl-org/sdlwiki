@@ -33,6 +33,13 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_MouseButtonEvent]]
+:[[SDL_MouseMotionEvent]]
+
 == Related Functions ==
 
 ----
