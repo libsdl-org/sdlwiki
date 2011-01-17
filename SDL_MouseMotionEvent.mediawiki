@@ -48,23 +48,20 @@ You can add your code example here
 
 An SDL_MOUSEMOTION event occurs whenever a user moves the mouse within the application window or when [[SDL_WarpMouseInWindow]]() is called. 
 
-'''state''' is an 8-bit button bitmask of the current button state and is the same as that returned by [[SDL_GetMouseState]]().  You can test different buttons by using the SDL_BUTTON(X) macros with the following masks:
+'''state''' is an 8-bit button bitmask of the current button state and is the same as that returned by [[SDL_GetMouseState]]().  You can test different buttons by using the following masks:
 {|
 |SDL_BUTTON_LMASK
-|SDL_BUTTON(SDL_BUTTON_LEFT)
 |-
 |SDL_BUTTON_MMASK
-|SDL_BUTTON(SDL_BUTTON_MIDDLE)
 |-
 |SDL_BUTTON_RMASK
-|SDL_BUTTON(SDL_BUTTON_RIGHT)
 |-
 |SDL_BUTTON_X1MASK
-|SDL_BUTTON(SDL_BUTTON_X1)
 |-
 |SDL_BUTTON_X2MASK
-|SDL_BUTTON(SDL_BUTTON_X2)
 |}
+
+'''xrel''' and '''yrel''' are relative to the last SDL_MOUSEMOTIONEVENT.
 
 If the cursor is hidden ([[SDL_ShowCursor]](0)) and the input is grabbed (SDL_WM_!GrabInput(SDL_GRAB_ON)), then the mouse will give relative motion events even when the cursor reaches the edge of the screen. This is currently only implemented on Windows and Linux/Unix-alikes. 
 
