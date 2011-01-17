@@ -57,10 +57,11 @@ You can add your code example here
 :[[SDL_EventType]]
 
 == Related Structures ==
+ ,[[SDL_DollarGestureEvent]]
 :[[SDL_Event]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
+
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
