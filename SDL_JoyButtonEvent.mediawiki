@@ -34,6 +34,9 @@ You can add your code example here
 
 An SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP event occurs whenever a user presses or releases a button on a joystick.
 
+== Related Enumerations ==
+:[[SDL_EventType]]
+
 == Related Structures ==
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
