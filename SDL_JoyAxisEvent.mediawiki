@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_JoyAxisEvent =
-A structure that contains joystick axis motion event ,,structure,, ^information^ (event.jaxis.*).
+A structure that contains joystick axis motion event information.
 
 
 == Data Fields ==
@@ -14,23 +13,15 @@ A structure that contains joystick axis motion event ,,structure,, ^information^
 |-
 |Uint8
 |'''which'''
-|the joystick device index ^*the index of the joystick that reported the event*^
+|the index of the joystick that reported the event
 |-
 |Uint8
 |'''axis'''
-|the joystick axis index ^*the index of the axis*^
-|-
-|Uint8
-|'''padding1'''
-|^8 empty bits to total 32^???
-|-
-|Uint8
-|'''padding2'''
-|^8 empty bits to total 32^???
+|the axis that changed
 |-
 |int
 |'''value'''
-|the axis value ^the current position of the axis^ (range: -32768 to 32767)
+|the current position of the axis (range: -32768 to 32767)
 |}
 
 == Code Examples ==
@@ -39,13 +30,19 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>[[SDL_JoyAxisEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYAXISMOTION is reported.
+[[SDL_JoyAxisEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_JOYAXISMOTION is reported.
 
-A SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick. ,,The field '''which''' is the index of the joystick that reported the event and '''axis''' is the index of the axis,, <<Color2(orange,(for a more detailed explanation see the Joystick section))>>. ,,'''value''' is the current position of the axis.,, <br/>*
+A SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick.
+
+== Related Structures ==
+:[[SDL_JoyAxisEvent]]
+:[[SDL_JoyBallEvent]]
+:[[SDL_JoyButtonEvent]]
+:[[SDL_JoyHatEvent]]
 
 == Related Functions ==
-:[[SDL_JoystickEventState]] *
-:[[SDL_JoystickGetAxis]] *
+:[[SDL_JoystickEventState]]
+:[[SDL_JoystickGetAxis]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
