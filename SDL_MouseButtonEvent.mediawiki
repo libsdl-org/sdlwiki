@@ -54,9 +54,12 @@ When a mouse button press or release is detected the number of the button presse
 Mouse wheel events are reported as buttons 4 (up) and 5 (down). Two events are generated i.e. you get an SDL_MOUSEBUTTONDOWN followed by an SDL_MOUSEBUTTONUP event.*
 <<Color2(green,Should it read 4 (forward) and 5 (backward) instead of up and down or is a mouse wheel event a click on the wheel like a center button instead of a roll action?)>>
 
+== Related Enumerations ==
+:[[SDL_EventType]]
+
 == Related Structures ==
-:[[SDL_MouseMotionEvent]] *???
-:[[SDL_MouseWheelEvent]] ???
+:[[SDL_MouseMotionEvent]]
+:[[SDL_MouseWheelEvent]]
 
 == Related Functions ==
 
