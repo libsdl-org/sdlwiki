@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_MouseWheelEvent =
-A structure that contains mouse wheel event ,,structure,, ^information^ (event.wheel.*).
+A structure that contains mouse wheel event information.
 
 
 == Data Fields ==
@@ -33,14 +33,17 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+[[SDL_MouseWheelEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEWHEEL is reported.
+
+An SDL_MOUSEWHEEL event occurs whenever a user moves the mouse wheel. 
+
+
 == Related Enumerations ==
 :[[SDL_EventType]]
 
 == Related Structures ==
 :[[SDL_MouseButtonEvent]]
 :[[SDL_MouseMotionEvent]]
-
-== Related Functions ==
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
