@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_MouseButtonEvent =
-A structure that contains mouse button event ,,structure,, ^information^ ,,(event.button.*),,.
+A structure that contains mouse button event information.
 
 
 == Data Fields ==
@@ -18,19 +18,11 @@ A structure that contains mouse button event ,,structure,, ^information^ ,,(even
 |-
 |Uint8
 |'''button'''
-|the mouse button index
+|the index of the button that reported the event
 |-
 |Uint8
 |'''state'''
 |SDL_PRESSED or SDL_RELEASED
-|-
-|Uint8
-|'''padding1'''
-|^8 empty bits to total 32^???
-|-
-|Uint8
-|'''padding2'''
-|^8 empty bits to total 32^???
 |-
 |int
 |'''x'''
@@ -47,9 +39,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-*[[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP is reported.
+[[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP is reported.
 
-When a mouse button press or release is detected the number of the button pressed (from 1 to 255, with 1 usually being the left button and 2 the right) is placed into '''button''', the position of the mouse when this event occured is stored in the '''x''' and the '''y'''  fields. ,,Like [[SDL_KeyboardEvent]], ,,information on whether the event was a press or a release event is stored in both the '''type''' and '''state''' fields, ,,but this should be obvious,,.
+An SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP event occurs whenever a user presses a button on a mouse.
+
+When a mouse button press or release is detected the number of the button pressed (from 1 to 255, with 1 usually being the left button and 2 the right) is placed into '''button''', the position of the mouse when this event occurred is stored in the '''x''' and the '''y'''  fields. ,,Like [[SDL_KeyboardEvent]], ,,information on whether the event was a press or a release event is stored in both the '''type''' and '''state''' fields, ,,but this should be obvious,,.
 
 Mouse wheel events are reported as buttons 4 (up) and 5 (down). Two events are generated i.e. you get an SDL_MOUSEBUTTONDOWN followed by an SDL_MOUSEBUTTONUP event.*
 <<Color2(green,Should it read 4 (forward) and 5 (backward) instead of up and down or is a mouse wheel event a click on the wheel like a center button instead of a roll action?)>>
