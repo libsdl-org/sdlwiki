@@ -56,6 +56,9 @@ An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
 |}
 Note that zero means the POV is centered. 
 
+== Related Enumerations ==
+:[[SDL_EventType]]
+
 == Related Structures ==
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
