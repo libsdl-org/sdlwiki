@@ -76,9 +76,9 @@ You can add your code example here
 
 == Related Structures ==
 :[[SDL_Event]]
+:[[SDL_TouchButtonEvent]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
