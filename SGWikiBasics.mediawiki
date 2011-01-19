@@ -125,7 +125,26 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
 ```
 
-* ~-Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.-~ 
+ <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,Text)>>
+
+  We have the Color2 macro installed. It will colorize text outside of tables using the following syntax:<br/>
+   ```<<Color2(colorname,text to be colorized)>>```<br/>
+* ```colorname``` may be most any simple color name like blue or red or green
+* If ```text to be colorized``` must contain commas each section must be colorized separately.  Place the comma at the end of each string and the space after between colorized sections to accomplish this.
+: ''Example'': 
+: Incorrect - 
+     ```<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>```
+     ''generates''
+     <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
+: Correct - 
+     ```<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>```
+     ''generates''
+     <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+  <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
+
+
+
+{i} Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
 
  More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
 
@@ -252,15 +271,11 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 
 == Miscellaneous Notes ==
-
-{*}
+<<Color2(green,Which symbol is preferable?)>>
+{*} {o} {i} (!) (./)
 Some terms used in the Style Guides:
 : '''API Pages''': Refer to Function, Structure, and Enumeration pages.
-: '''Category Pages''': Each major category found in the <<Color2(blue,API by Category)>> list contains a page which includes a basic introduction to that category and an alphabetical list of all API pages in that category.
-
-
-{*}
-If you have questions, problems, or suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> with your thoughts. We are happy to have the participation!  
+: '''Category Pages''': Each major category found in the <<Color2(blue,API by Category)>> list contains a page which includes a basic introduction to that category and an alphabetical list of all API pages in that category, separated by type.
 
 
 {*}
@@ -270,22 +285,6 @@ Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpOnEditing HelpOnEditing]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys HelpOnSmileys]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions HelpOnAdmonitions]
-
-{*}
-We have the Color2 macro installed.  
-: It will colorize text outside of tables using the following syntax:<br/>
-  ```<<Color2(colorname,text to be colorized)>>```<br/>
-* ```colorname``` may be most any simple color name like blue or red or green
-* If ```text to be colorized``` must contain commas each section must be colorized separately.  Place the comma at the end of each string and the space after between colorized sections to accomplish this.
-: ''Example'': 
-: Incorrect - 
-    ```<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>```
-     generates
-    <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
-: Correct - 
-    ```<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>```
-     generates
-    <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
 
 
 {*}
