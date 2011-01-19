@@ -19,6 +19,16 @@ Together this Style Guide and the [[APIContributionStyleGuide|SDL API Contributi
 If you would like to make '''other contributions''' beyond Code Examples or Remarks we welcome your contribution!  If you haven't already, please email <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to receive additional Style Guides and to coordinate efforts.
 
 
+```#!wiki tip
+'''Send Feedback or Join the Mailing List'''
+
+If you have not already joined, we have set up a mailing list ([[http://lists.libsdl.org/listinfo.cgi/docs-libsdl.org|docs-libsdl.org]]) for discussions of documentation, including the style guides.  
+
+If you would prefer not to join the mailing list you can always submit feedback about anything on the wiki, including the style guides, using the Feedback form above.
+
+''We hope to hear from you!''
+```
+
 
 
 <span id="ToC"></span>
