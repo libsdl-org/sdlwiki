@@ -1,31 +1,11 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+
 '''DRAFT'''
 
-= Wiki Basics =
-
-```#!wiki important
-Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to be given write access, to ensure that you receive the appropriate Style Guides, and to coordinate efforts.
-
-Thank you!
-```
-
-<<<Color2(green,New text for Front Page.)>>
-Users wishing to contribute content can use the feedback form for quick suggestions or can go to [http://wiki.libsdl.org/moin.cgi/ContributingDocumentation Contributing Documentation] for more information about contributing.
-
-== Before You Start ==
-
-Together this Style Guide and the [[APIContributionStyleGuide|SDL API Contribution Style Guide]] provide the basic information needed to get started making the most common edits to this wiki - '''Code Examples''' and '''Remarks'''.
-
-If you would like to make '''other contributions''' beyond Code Examples or Remarks we welcome your contribution!  If you haven't already, please email <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to receive additional Style Guides and to coordinate efforts.
-
-
-
-
+= Style Guide: Wiki Basics =
 
 <span id="ToC"></span>
-
-
 
 
 <span id="markup"></span>
@@ -34,8 +14,6 @@ Below is a summary of the most commonly used markup in this wiki and some hints 
 
 A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar in Edit mode for some of the most common markup.  
 
-
-<!-- #To include an embedded ToC (eg: <<TableOfContents(3)>>) use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
 
 
 <span id="spacing"></span>
@@ -96,18 +74,19 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 
 <span id="formatting"></span>
 === Text Formatting ===
+==== Bold ====
  '''Bold'''
 * Place three apostrophes surrounding text to be bolded, without a space between markup and text.
   ''Example'': ```'''bold text'''``` generates '''bold text'''
-
+==== Italics ====
  ''Italics''
 * Place two apostrophes surrounding text to be italicized, without a space between markup and text.
   ''Example'': ```''italics text''``` generates ''italics text''
-
+==== Monospace ====
  <code>Monospace</code>
 * Place a backquote on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
   ''Example'': ```'monospace text'``` generates <code>monospace text</code>
-
+==== Code ====
  ```Code (or Verbatim Text)```
 * Use three curly brackets surrounding text to be rendered as code.
 * Place the brackets inline with the text to display the code formatting inline. 
@@ -126,8 +105,8 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
    ```
 Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
 ```
-
- <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,Text)>>
+==== Colored Text ====
+ <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>>
 
   We have the Color2 macro installed. It will colorize text outside of tables using the following syntax:<br/>
    ```<<Color2(colorname,text to be colorized)>>```<br/>
@@ -142,8 +121,8 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
      ```<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>```
      ''generates''
      <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
-  <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
-
+  To colorize text within a table see [[#tables|Tables]] below.
+ <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
 
 
 {i} Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
@@ -225,6 +204,13 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
   ''Generates'':
   ||row 1 column 1||row 1 column 2||row 1 column 3||
   ||row 2 column1||row 2 column 2||row 2 column 3||
+
+ To add color within a table use the following markup:
+  ||<code><style="color: #FF0000;"></code>||set text color||
+  ||<code><bgcolor="#XXXXXX"></code>||set cell background color||
+  ||<code><rowbgcolor="#XXXXXX"></code>||set row background color (only valid in first cell)||
+  ||<code><tablebgcolor="#XXXXXX"></code>||set table background color||
+
  More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
 
 [[#ToC|Return to Table of Contents]]
@@ -266,6 +252,8 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 [[#ToC|Return to Table of Contents]]
 
+
+<!-- #To include an embedded ToC (eg: <<TableOfContents(3)>>) use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
 
 
 ------
