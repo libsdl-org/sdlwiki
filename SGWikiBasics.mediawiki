@@ -10,7 +10,8 @@ Due to spammers, write access to this wiki is disabled by default.  If you haven
 Thank you!
 ```
 
-
+<<<Color2(green,New text for Front Page.)>>
+Users wishing to contribute content can use the feedback form for quick suggestions or can go to [http://wiki.libsdl.org/moin.cgi/ContributingDocumentation Contributing Documentation] for more information about contributing.
 
 == Before You Start ==
 
