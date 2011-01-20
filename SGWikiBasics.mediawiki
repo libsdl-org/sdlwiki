@@ -9,10 +9,10 @@
 
 
 <span id="markup"></span>
-== Some Wiki Markup Basics ==
+== Some Markup Basics ==
 Below is a summary of the most commonly used markup in this wiki and some hints and tricks for using it.
 
-A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar in Edit mode for some of the most common markup.  
+A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
 
 
 
@@ -40,7 +40,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
    ''generates''
 : 1 first line<br/>   2 this line typed on same line after hard line break markup, same indent<br/>    3 this line typed on same line after hard line break markup, +1 indent<br/>   4 this line typed on same line after hard line break markup, -1 indent<br/>   . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
 
-  {i} A hard return (Enter key) is not always recognized as a line break.<br/>
+  {i} A hard return (Enter key) is often not recognized as a line break.<br/>
   {i} Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
 : ''Example'': Typing the following in the text editor ```
  1 hard return followed by next line same indent
@@ -113,14 +113,18 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 * ```colorname``` may be most any simple color name like blue or red or green
 * If ```text to be colorized``` must contain commas each section must be colorized separately.  Place the comma at the end of each string and the space after between colorized sections to accomplish this.
 : ''Example'': 
-: Incorrect - 
-     ```<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>```
-     ''generates''
-     <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
-: Correct - 
-     ```<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>```
-     ''generates''
-     <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+: ''Correct'' 
+     ```
+<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+```
+      ''generates''
+: <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+: ''Incorrect'' (note that the beginning of the sentence is missing)
+     ```
+<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
+```
+      ''generates''
+: <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
   To colorize text within a table see [[#tables|Tables]] below.
  <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
 
