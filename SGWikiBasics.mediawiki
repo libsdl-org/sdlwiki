@@ -235,7 +235,7 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 
 <span id="include"></span>
-=== Include ===
+=== Includes ===
  An include enables you to copy all or a portion of a page onto another page, allowing changes to one page to be automatically updated on another.  This is especially useful for listing enumeration values for a function parameter on the function page, for example.<br/>
  To create an Include place the following markup in the location where you wish the data to begin on the recipient page.
   For copying values from an enumeration:<br/>
