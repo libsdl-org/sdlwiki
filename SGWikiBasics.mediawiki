@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL API Documentation Style Guide: Getting Started =
+= Wiki Basics =
 
 ```#!wiki important
 Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to be given write access, to ensure that you receive the appropriate Style Guides, and to coordinate efforts.
