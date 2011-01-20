@@ -74,6 +74,9 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 
 <span id="formatting"></span>
 === Text Formatting ===
+
+{i} Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
+
 ==== Bold ====
  '''Bold'''
 * Place three apostrophes surrounding text to be bolded, without a space between markup and text.
@@ -125,11 +128,11 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 ```
       ''generates''
 : <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
+
   To colorize text within a table see [[#tables|Tables]] below.
- <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
 
+  <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
 
-{i} Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
 
  More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
 
