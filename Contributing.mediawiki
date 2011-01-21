@@ -15,7 +15,6 @@ Thank you!
 ```
 
 
-
 == Before You Start ==
 
 Our goal is to create the best documentation for SDL possible.  To this end we have adopted the following guiding principles and would appreciate your keeping them in mind as you create your contributions.
