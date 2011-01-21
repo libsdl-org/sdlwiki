@@ -41,9 +41,9 @@ These are the core of our contribution resources.  There is a style guide for ea
 
 It is very important to us that this wiki remains as friendly and professional as possible.  We have created detailed style guides to help you ensure that your contributions fit in seamlessly and help to make the wiki that much better for other users.  
 
-If you ever find something that is not addressed in a style guide please post your questions using the feedback form, on the mailing list, or email ANTI SPAM wiki AT libsdl DOT org
+If you ever find something that is not addressed in a style guide please post your questions using the feedback form, on the mailing list, or email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>
 
 === Email Contact ===
-For anything that is not addressed in the above you can always send an email to ANTI SPAM wiki AT libsdl DOT org.
+For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
  
