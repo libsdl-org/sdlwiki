@@ -8,6 +8,13 @@
 
 We are very pleased that you are interested in contributing!  Here's what you need to know:
 
+```#!wiki important
+Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to be given write access and to coordinate efforts.
+
+Thank you!
+```
+
+
 
 == Before You Start ==
 
@@ -18,12 +25,6 @@ Our goal is to create the best documentation for SDL possible.  To this end we h
 * be accurate
 * contain high quality information
 * be as simple and straight forward as possible
-
-```#!wiki important
-Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to be given write access and to coordinate efforts.
-
-Thank you!
-```
 
 To help you with this we have created a series of resources.
 
