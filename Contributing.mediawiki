@@ -11,12 +11,6 @@ We are very pleased that you are interested in contributing!  Here's what you ne
 
 == Before You Start ==
 
-```#!wiki important
-Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to be given write access and to coordinate efforts.
-
-Thank you!
-```
-
 Our goal is to create the best documentation for SDL possible.  To this end we have adopted the following guiding principles and would appreciate your keeping them in mind as you create your contributions.
 : This wiki should:
 * have a consistent look and feel throughout
@@ -25,14 +19,15 @@ Our goal is to create the best documentation for SDL possible.  To this end we h
 * contain high quality information
 * be as simple and straight forward as possible
 
+```#!wiki important
+Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the type(s) of edits you would like to make to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to be given write access and to coordinate efforts.
+
+Thank you!
+```
+
 To help you with this we have created a series of resources.
 
-== Resources for Contributors ==
-
-We have put together a set of resources that should help you to make your contributions the best possible.  We hope you will take full advantage of these resources and let us know if you have ideas for others. 
-
-They include:
-
+== Resources ==
 === Feedback Form ===
 Every page of the wiki contains a Feedback form where you can post quick content ideas, questions, suggestions, etc.  Simply click the down arrow, fill in the text field with your contribution, and click Submit.  We'll take it from there!
 
