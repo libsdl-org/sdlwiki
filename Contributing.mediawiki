@@ -8,6 +8,7 @@
 
 We are very pleased that you are interested in contributing!  Here's what you need to know:
 
+
 == Before You Start ==
 
 ```#!wiki important
@@ -22,6 +23,7 @@ Our goal is to create the best documentation for SDL possible.  To this end we h
 * be easy to use
 * be accurate
 * contain high quality information
+* be as simple and straight forward as possible
 
 To help you with this we have created a series of resources.
 
@@ -31,18 +33,20 @@ We have put together a set of resources that should help you to make your contri
 
 They include:
 
+=== Feedback Form ===
+Every page of the wiki contains a Feedback form where you can post quick content ideas, questions, suggestions, etc.  Simply click the down arrow, fill in the text field with your contribution, and click Submit.  We'll take it from there!
+
+=== Mailing List ===
+The [http://lists.libsdl.org/listinfo.cgi/docs-libsdl.org Documentation Mailing List] has been set up to allow users to discuss documentation-related topics.  Anything from content to conventions, questions and comments can be shared in the Mailing List.  Plus, keep up with what others are saying and doing on the wiki.  
+
+We encourage all contributors to join the mailing list and participate in the discussions there.  It is a great place to discuss areas that need contributions and to let others know what you are working on or if you are able to help address a request.
+
 === Style Guides by Topic ===
 These are the core of our contribution resources.  There is a style guide for each type of contribution you may wish to make.  
 
 It is very important to us that this wiki remains as friendly and professional as possible.  We have created detailed style guides to help you ensure that your contributions fit in seamlessly and help to make the wiki that much better for other users.  
 
 If you ever find something that is not addressed in a style guide please post your questions using the feedback form, on the mailing list, or email ANTI SPAM wiki AT libsdl DOT org
-
-=== Feedback Form ===
-Every page of the wiki contains a Feedback form where you can post quick content ideas, questions, suggestions, etc.  
-
-=== Mailing List ===
-We encourage all contributors to join the mailing list and participate in the discussions there.  It is a great place to discuss areas that need contributions and to let others know what you are working on or if you are able to help address a request.
 
 === Email Contact ===
 For anything that is not addressed in the above you can always send an email to ANTI SPAM wiki AT libsdl DOT org.
