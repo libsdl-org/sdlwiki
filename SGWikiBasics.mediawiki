@@ -294,5 +294,5 @@ Any link referencing the header files should replace the version number (12-digi
 ------
 == Disclaimer ==
 ```#!wiki note
-All content modifications are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>>.
+All content modifications are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 ```
