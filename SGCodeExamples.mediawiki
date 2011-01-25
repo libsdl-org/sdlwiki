@@ -1,0 +1,66 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= Style Guide: Code Examples =
+All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Miscellaneous_Notes API pages] in this wiki contain a section for Code Examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
+
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+'''The Code Examples section should provide simple examples of real-world applications of the API.'''
+
+Please post code examples showing how you have used the API that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+
+* Code examples should have adequate comments to make them clear and useful.
+
+* Please remember to keep it simple and easy to understand.
+
+For assistance with editing, saving, or wiki-appropriate markup please see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+
+
+== Adding the First Code Example ==
+If there are no Code Examples in the section please replace the following with your code:
+ ```You can add your code example here```
+
+* Do not change or remove any of the markup immediately above or below that line.
+
+
+== Adding Additional Code Examples ==
+
+If there are existing examples in the section please add a new code box to the end of the examples section, or add your code to the end of a related group if there are many examples of various types.
+* To add a new code box insert the following into the spot where your example will be located:
+  ```{
+{{{#!highlight cpp
+ 
+```
+}}}}
+: ''Example'': [[SDL_Init]]()
+* All content should be added within this markup (on the blank line with the markup above and below your example content).
+
+
+
+[[#ToC|Return to Table of Contents]]
+
+----
+== Reminders ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
+
+If you still have questions about Code Examples:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
+
+------
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+```
