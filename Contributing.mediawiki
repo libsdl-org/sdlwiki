@@ -41,16 +41,16 @@ These are the core of our contribution resources.  There is a style guide for ea
 |Table with links to each style guide
 |Basic description of SG contents
 |-
-|[[#|Wiki Basics]]
+|[http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics]
 |quick reference for wiki markup used in this wiki<br/>miscellaneous helpful notes
 |-
-|[[#|Code Examples]]
+|[[|Code Examples]]
 |information on adding Code Examples to any API page
 |-
-|[[#|Remarks]]
+|[[|Remarks]]
 |information on adding Remarks to any API page
 |-
-|[[#|Tutorials]]
+|[[|Tutorials]]
 |information on adding a tutorial to the tutorials page<br/>information on creating a new tutorial within the wiki
 |}
 
