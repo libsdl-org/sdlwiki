@@ -1,42 +1,47 @@
 = FAQ: Windows =
 
 
-== What is supported? ==
+== General ==
+=== What is supported? ===
 SDL supports Windows 95/98/NT/ME/2000/XP.
 
 SDL can be built with Visual C++, Borland C++, Cygwin, MinGW, Dev-C++, and Watcom C++.
 
 SDL takes advantage of DirectX hardware acceleration when it is available, but falls back to the standard Win32 services if DirectX is not installed.
 
-== I'm running Windows 2000 and I can't copy SDL.dll! ==
+
+== Windows 2000 ==
+=== I'm running Windows 2000 and I can't copy SDL.dll! ===
 For some reason, archives created on Linux have the "Encrypted" property set when unpacked on Windows 2000. This can be unset by pushing Advanced from the General tab of the properties window and unchecking Encrypt contents checkbox. The files can then be copied normally.
 
-== Can I build SDL for Windows CE? ==
+== Windows CE ==
+=== Can I build SDL for Windows CE? ===
 SDL is not officially supported on Windows CE, but some people have successfully built and run SDL applications on Windows CE.
 
 SDL 1.2.5 and newer contain project files and information on building SDL for Windows CE. Take a look at the file README.WinCE in the source archive for more information.
 
-== How do I use SDL with Visual C++? ==
+== Visual C++ ==
+=== How do I use SDL with Visual C++? ===
 Read the file "VisualC.html" included with both the SDL Visual C++ development archive, and the SDL source archive.
 
-== When using Visual C++ I get "fatal error C1083: Cannot open include file: 'windows.h': No such file or directory" ==
+=== When using Visual C++ I get "fatal error C1083: Cannot open include file: 'windows.h': No such file or directory" ===
 You need to install the platform SDK, as described here:
 http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/
 
-== When using Visual C++ I get link errors relating to MSVCRT.LIB or LIBC ==
+=== When using Visual C++ I get link errors relating to MSVCRT.LIB or LIBC ===
 SDL is dynamically linked with the multi-threaded version of the Microsoft Visual C runtime. You need to edit your project settings, go to the C++ language tab, change the listbox to "Code Generation" settings, and then change the runtime library to "Multi-threaded DLL". Make sure you do this with all projects that you link into your application.
 
-== When using Visual C++ 5, I get the following error message: SDL.lib : fatal error LNK1106: invalid file or disk full ==
+=== When using Visual C++ 5, I get the following error message: SDL.lib : fatal error LNK1106: invalid file or disk full ===
 This happens with Visual C++ 5, if you use the prebuilt SDL library and have not updated to the latest service pack.
 
-== Why can't I use Visual C++ debugger with SDL applications? ==
+=== Why can't I use Visual C++ debugger with SDL applications? ===
 You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to make the msvc debugger work. Otherwise the debugger will be unable to trace exceptions, and other debugging features like run to cursor won't work.
 
-== Why does the Visual C++ debugger freeze at every breakpoint when debugging SDL apps? ==
+=== Why does the Visual C++ debugger freeze at every breakpoint when debugging SDL apps? ===
 The DirectX drivers have a system lock while you have video surfaces locked. To avoid this, you can set the video driver to GDI by setting the SDL_VIDEODRIVER environment variable to: windib
 Since this changes video and mouse/keyboard input drivers, you'll see a difference in performance and features available, but you'll be able to debug your application more easily.
 
-== How do I use SDL with Borland C++? ==
+=== How do I use SDL with Borland C++? ===
 SDL 1.2.5 and newer have projects for C++ Builder 5 and 6 for Windows, Kylix 3, and the free Borland C++ command line tools. Take a look at Borland.html in the source archive.
 
 Martin Bickel writes:
@@ -63,12 +68,18 @@ Chris Dion wrote down his steps on building manually with the free command line 
 If all goes well, you should have a working .exe file. The help files that come with the command line tools are missing detailed descriptions of the various compiler/linker switches. You can download a complete help file from the Borland ftp site here:
 ftp://ftp.borland.com/pub/bcppbuilder/techpubs/bcb5/b5std.zip
 
-== How do I use SDL with gcc on Windows? ==
+
+
+
+=== How do I use SDL with gcc on Windows? ===
 You can build and use SDL with gcc natively using either Cygwin or MinGW, or you can build a gcc cross-compiler targeting Windows from another platform.
 Setting up these environments is documented at: http://www.libsdl.org/extras/win32/gcc.html
 Once the build environment is set up, you can build your applications as though you are on UNIX. See the Linux FAQ for more details on building applications in this environment.
 
-== How do I use SDL with Dev-C++? ==
+
+
+
+=== How do I use SDL with Dev-C++? ===
 Try the Dev-C++ tutorial available at: http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/tut1.
 If you have problems, please contact the author of the tutorial.
 
