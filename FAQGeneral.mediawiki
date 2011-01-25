@@ -15,7 +15,7 @@ The latest stable version is 1.2 You can always get the very latest bleeding edg
 http://www.libsdl.org/
 
 == Where do I send questions / feedback? ==
-You can send questions and feedback to the main SDL mailing list: http://www.libsdl.org/mailing-list.php
+You can send questions and feedback through the Feedback form (above right) or to the main SDL mailing list: http://www.libsdl.org/mailing-list.php
 
 == Where do I send bug reports / patches? ==
 You can submit bug reports and patches to the SDL bugzilla bug tracking system: http://bugzilla.libsdl.org/
