@@ -43,9 +43,6 @@ You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to ma
 The DirectX drivers have a system lock while you have video surfaces locked. To avoid this, you can set the video driver to GDI by setting the SDL_VIDEODRIVER environment variable to: windib
 Since this changes video and mouse/keyboard input drivers, you'll see a difference in performance and features available, but you'll be able to debug your application more easily.
 
-=== mingw ===
-==== When compiling with mingw (and more specifically, using the "dev-cpp" IDE), choosing "console application" in the project parameters will result in generating a program that will *systematically* make Vista users crash. ====
-Choose "gui application" instead of "console application" when compiling for Vista.
 
 === gcc ===
 ==== How do I use SDL with gcc on Windows? ====
@@ -60,6 +57,10 @@ Try the Dev-C++ tutorial available at: http://cone3d.gamedev.net/cgi-bin/index.p
 If you have problems, please contact the author of the tutorial.
 
 There are also step by step instructions at: http://docs.deninet.com/sdl_on_dev_c.htm
+
+==== Choosing "console application" in the project parameters will result in generating a program that will *systematically* make Vista users crash. ====
+Choose "gui application" instead of "console application" when compiling for Vista.
+
 
 === Miscellaneous ===
 ==== I get "Undefined reference to 'SDL_main'" ... ====
