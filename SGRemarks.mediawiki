@@ -1,0 +1,99 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= Style Guide: Remarks =
+All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki contain a section for remarks.  This guide provides instructions for adding your own content to the Remarks section of these pages. 
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+'''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.'''
+
+Please post your appropriate remarks that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+* Remarks should have adequate references to make them clear and useful.
+* Please remember to keep it simple and easy to understand.
+
+For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+
+
+== Adding the First Remark ==
+
+Replace the following with your remarks:
+ ```''You can add useful comments here''```
+
+
+== Adding Additional Remarks ==
+Add your remarks to the end of the Remarks section, or to a related grouping if there are existing remarks covering the same topic.
+ ''Example'': [[SDL_MixAudio]]()
+
+[[#ToC|Return to Table of Contents]]
+
+
+== Formatting Remarks ==
+
+=== Referencing Function Parameters ===
+If the reference is to a parameter on that page:
+* Use '''bold''' wherever the name is used in the remark
+:''Markup'':  use 3 apostrophes surrounding the text for bold.
+    ```'''parameter'''``` = '''parameter'''
+: ''Example'': [[SDL_ConvertAudio]]()
+: ''Example'': [[SDL_AudioSpec]]
+If the reference is to a parameter from another function:
+* Use <code>monospace</code> wherever the name is used in the remark
+:''Markup'':  use a single backtick surrounding the text for monospace.
+    ```<code>member</code>``` = <code>member</code>
+: ''Example'': [[SDL_OpenAudio]]()
+
+
+=== Referencing Structure Data Fields ===
+Same as for function parameters above.
+
+
+=== Referencing Enumeration Values ===
+These are generally in ALL CAPS anyway and do not require special formatting.
+: ''Example'': [[SDL_GLattr]]
+
+
+=== Referencing Other API Components ===
+If you reference an existing function, enumeration, or structure:
+* Create a hyperlink to its page
+
+  {i} ~-''Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
+
+: ''Markup'':  use two brackets surrounding the page name (must be exact) for a link.
+: Include open and closed parentheses outside of the hyperlink markup after a function name.
+     ```[[SDL_Function]]()``` = [[SDL_Function]]()
+: Do not use parentheses for enumerations or structures.
+:```[[SDL_Enumeration/Structure]]```
+: ''Example'': [[SDL_SetTextureScaleMode]]()
+
+For more information on markup see [http://wiki.libsdl.org/moin.cgi/SGWikiBasics]
+
+[[#ToC|Return to Table of Contents]]
+
+
+----
+== Resources ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
+as possible.
+
+If you have questions that aren't addressed here:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and 
+include a way to contact you.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
+
+------
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to 
+<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+```
