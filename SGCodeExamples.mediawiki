@@ -50,7 +50,7 @@ If there are existing examples in the section please add a new code box to the e
 
 Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
 
-If you still have questions about Code Examples:
+If you have questions that aren't addressed here:
  a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
  a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
  a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
