@@ -19,11 +19,12 @@ Please post code examples showing how you have used the API that may benefit oth
 
 * Please remember to keep it simple and easy to understand.
 
-For assistance with editing, saving, or wiki-appropriate markup please see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
 
 == Adding the First Code Example ==
-If there are no Code Examples in the section please replace the following with your code:
+
+Replace the following with your code:
  ```You can add your code example here```
 
 * Do not change or remove any of the markup immediately above or below that line.
@@ -31,22 +32,23 @@ If there are no Code Examples in the section please replace the following with y
 
 == Adding Additional Code Examples ==
 
-If there are existing examples in the section please add a new code box to the end of the examples section, or add your code to the end of a related group if there are many examples of various types.
-* To add a new code box insert the following into the spot where your example will be located:
+Add a new code box with your code to the end of the Code Examples section.  
+* If there are many examples of various kinds add your code box to the end of a related group, if any.
+'''To add a new code box''' 
+: Insert the following into the spot where your example will be located and place your content on the blank line between the markup:
   ```{
 {{{#!highlight cpp
  
 ```
 }}}}
 : ''Example'': [[SDL_Init]]()
-* All content should be added within this markup (on the blank line with the markup above and below your example content).
 
 
 
 [[#ToC|Return to Table of Contents]]
 
 ----
-== Reminders ==
+== Resources ==
 
 Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
 
