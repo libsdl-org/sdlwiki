@@ -4,7 +4,7 @@
 '''DRAFT'''
 
 = Style Guide: Code Examples =
-All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Miscellaneous_Notes API pages] in this wiki contain a section for Code Examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
+All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki contain a section for Code Examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
 
 
 <span id="ToC"></span>
