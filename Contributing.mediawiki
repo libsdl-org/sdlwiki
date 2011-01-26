@@ -10,8 +10,7 @@ Thank you!
 
 = Contributing =
 
-We are very pleased that you are interested in contributing!  Here's what you need to know:
-
+We are very pleased that you are interested in contributing!  
 
 Our goal is to create the best documentation for SDL possible.  To this end we have adopted the following guiding principles and would appreciate your keeping them in mind as you create your contributions.
 : This wiki should:
@@ -39,30 +38,19 @@ To help you with this we have created a series of resources:
 
 : '''We recommend that you begin with Wiki Basics and then dive into the topic-specific guides that interest you before you begin to edit.'''  Please check back periodically for reminders and updates!
 
-{|
-|<bgcolor="#EDEDED">''Style Guide''
-|<bgcolor="#EDEDED">''Topics Covered''
-|-
-|[http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics]
-|starting to edit<br/>saving changes<br/>quick reference for wiki markup used in this wiki<br/>miscellaneous notes
-|-
-|[http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples]
-|adding Code Examples to any API page
-|-
-|[[|Remarks]]
-|adding Remarks to any API page
-|-
-|''Coming Soon!''
-|adding an existing tutorial to the tutorials page<br/>creating a new tutorial within the wiki
-|}
+ ||<bgcolor="#EDEDED">''Style Guide''||<bgcolor="#EDEDED">''Topics Covered''||
+ ||[http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics]||starting to edit<br/>saving changes<br/>quick reference for wiki markup used in this wiki<br/>miscellaneous notes||
+ ||[http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples]||adding Code Examples to any API page||
+ ||[[|Remarks]]||adding Remarks to any API page||
+ ||''Coming Soon!''||adding an existing tutorial to the tutorials page<br/>creating a new tutorial within the wiki||
 
-It is very important to us that this wiki remains as friendly and professional as possible.  We have created detailed style guides to help you ensure that your contributions fit in seamlessly and help to make the wiki that much better for other users.  
+: It is very important to us that this wiki remains as friendly and professional as possible.  We have created detailed style guides to help you ensure that your contributions fit in seamlessly and help to make the wiki that much better for other users.  
 
-If you find something that is not addressed or is unclear in a style guide please post your questions using the feedback form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+: If you find something that is not addressed or is unclear in a style guide please post your questions using the feedback form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 <span id="email"></span>
 === Email Contact ===
-For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+: For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 ------
 == Disclaimer ==
