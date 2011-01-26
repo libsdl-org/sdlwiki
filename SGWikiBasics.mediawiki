@@ -199,6 +199,8 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 * A hyperlink to an outside web or email address may be created by simply typing or pasting in the address.
 * To create a link with link text other than the address itself, enclose the address followed by a pipe and the alternate link text in double brackets.  
    ''Example'': ```[[link address|alternate text]]``` produces [[link address|alternate text]]
+*Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>tip</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+
  More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
 
 [[#ToC|Return to Table of Contents]]
@@ -314,14 +316,12 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 
 == Miscellaneous Notes ==
-<<Color2(green,Which symbol is preferable?)>>
-{*} {o} {i} (!) (./)
 Some terms used in the Style Guides:
-: '''API Pages''': Refer to Function, Structure, and Enumeration pages.
-: '''Category Pages''': Each major category found in the <<Color2(blue,API by Category)>> list contains a page which includes a basic introduction to that category and an alphabetical list of all API pages in that category, separated by type.
+: <span id="api"></span>'''API Page''': Refers to any Function, Structure, or Enumeration page.
+: <span id="category"></span>'''Category Page''': Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
 
 
-{*}
+
 Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting]
@@ -330,11 +330,23 @@ Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions HelpOnAdmonitions]
 
 
-{*}
-Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>tip</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
-
 [[#ToC|Return to Table of Contents]]
 
+
+
+----
+== Reminders ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
+
+If you still have questions about Code Examples:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
 
 
 ------
