@@ -2,17 +2,15 @@
 <!-- pragma disable-camelcase -->
 <!-- acl All:read -->
 
-'''DRAFT'''
-
-= Contributing =
-
-We are very pleased that you are interested in contributing!  Here's what you need to know:
-
 ```#!wiki important
 Due to spammers, write access to this wiki is disabled by default.  If you haven't already, please email your wiki username and the kind(s) of edits you would like to make to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to be given write access and to coordinate efforts.
 
 Thank you!
 ```
+
+= Contributing =
+
+We are very pleased that you are interested in contributing!  Here's what you need to know:
 
 
 Our goal is to create the best documentation for SDL possible.  To this end we have adopted the following guiding principles and would appreciate your keeping them in mind as you create your contributions.
