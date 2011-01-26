@@ -22,16 +22,13 @@ There are a number of SDL tutorials available from different sources.
 : A large number of SDL tutorials covering a variety of different topics
 
 * [http://lazyfoo.net/SDL_tutorials/index.php Beginning Game Programming]
-: Tutorials (currently 36!) are written using C++ as the programming language and SDL as the API.
+: A series of tutorials on game concepts geared for SDL developers.  Tutorials (currently 36!) are written using C++ as the programming language and SDL as the API.
 
 * [http://www.gamedev.net/reference/articles/article2249.asp Direct3D 9.0 with SDL]
 : Using SDL with Direct3D for graphics
 
 * [http://www.meandmark.com/sdlopenglpart1.html SDL and OpenGL]
 : Using SDL and OpenGL on Mac OS X
-
-* [http://lazyfoo.net/SDL_tutorials/index.php Beginning Game Programming]
-: A series of tutorials on game concepts geared for SDL developers
 
 * [http://osdl.sourceforge.net/main/documentation/rendering/SDL-audio.html SDL Corner - Audio with SDL]
 : Lots of advanced information on using SDL's audio support
