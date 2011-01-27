@@ -35,7 +35,7 @@ Add your remarks to the end of the Remarks section, or to a related grouping if 
 == Formatting Remarks ==
 
 === Referencing Function Parameters ===
-If the reference is to a parameter on that page:
+''If the reference is to a parameter on that page:''
 * Use '''bold''' wherever the name is used in the remark
 :''Markup'':  use 3 apostrophes surrounding the text for bold.
     ```'''parameter'''``` = '''parameter'''
