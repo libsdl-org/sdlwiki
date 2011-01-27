@@ -18,7 +18,7 @@ Please post your appropriate remarks that may benefit other users.
 
 For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
-
+----
 == Adding the First Remark ==
 
 Replace the following with your remarks:
@@ -31,11 +31,11 @@ Add your remarks to the end of the Remarks section, or to a related grouping if 
 
 [[#ToC|Return to Table of Contents]]
 
-
+----
 == Formatting Remarks ==
 
 === Referencing Function Parameters ===
-''If the reference is to a parameter on that page:''
+If the reference is to a parameter on that page:
 * Use '''bold''' wherever the name is used in the remark
 :''Markup'':  use 3 apostrophes surrounding the text for bold.
     ```'''parameter'''``` = '''parameter'''
