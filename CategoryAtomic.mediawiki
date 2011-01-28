@@ -37,7 +37,7 @@ These operations may or may not actually be implemented using processor specific
 
 All of the atomic operations that modify memory are full memory barriers.
 
-
+<<Color2(green,Does the comment in the header about intrin.h belong here?)>>
 
 == Functions ==
 
