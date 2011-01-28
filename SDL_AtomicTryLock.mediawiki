@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= SDL_AtomicTryLock =
+Use this function to try to lock a spin lock by setting it to a non-zero value.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_AtomicTryLock(SDL_SpinLock* lock)
+```
+
+== Function Parameters ==
+{|
+|'''lock'''
+|points to the lock
+|}
+
+== Return Value ==
+Returns SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already held.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
