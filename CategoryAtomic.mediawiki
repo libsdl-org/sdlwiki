@@ -11,11 +11,33 @@
 
 == Introduction ==
 
-This category contains functions for handling atomic operations in both 32-bit and 64-bit platforms.
+This category contains functions for handling atomic operations in both 32-bit and 64-bit platforms.  <<Color2(green,Seems like this is still valid.)>>
 
-These operations may, or may not, actually be implemented using processor specific atomic operations. When possible they are implemented as true processor specific atomic operations. When that is not possible they are implemented using locks that *do* use the available atomic operations.  <<Color2(green,Should *do* be bold or italics instead?)>>
+At the very minimum spin locks must be implemented. Without spin locks it is not possible (AFAICT) to emulate the rest of the atomic operations.  <<Color2(green,Should this be moved to the end?)>>
 
-At the very minimum spin locks must be implemented. Without spin locks it is not possible (AFAICT) to emulate the rest of the atomic operations.
+<<Color2(green,This section is the new intro text after the header revisions.)>>
+
+/!\ IMPORTANT:
+: If you are not an expert in concurrent lockless programming, you should only be using the atomic lock and reference counting functions in this file.  In all other cases you should be protecting your data structures with full mutexes.
+
+The list of "safe" functions to use are:
+* [[SDL_AtomicLock]]()
+* [[SDL_AtomicUnlock]]()
+* [[SDL_AtomicIncRef]]()
+* [[SDL_AtomicDecRef]]()
+''Seriously, here be dragons!''
+
+You can find out a little more about lockless programming and the subtle issues that can arise here:
+ http://msdn.microsoft.com/en-us/library/ee418650%28v=vs.85%29.aspx
+
+There's also lots of good information here:
+ http://www.1024cores.net/home/lock-free-algorithms
+
+These operations may or may not actually be implemented using processor specific atomic operations. When possible they are implemented as true processor specific atomic operations. When that is not possible the are implemented using locks that *do* use the available atomic operations.  <<Color2(green,Should *do* be bold or italics instead?)>>
+
+All of the atomic operations that modify memory are full memory barriers.
+
+
 
 == Functions ==
 
