@@ -1,6 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-<!-- acl All: read -->
+<!-- acl All:read -->
 '''DRAFT'''
 
 = SDL_FunctionName =
