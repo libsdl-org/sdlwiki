@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AtomicCASPtr =
+Use this function to set a pointer to a new value if it is currently an old value.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_AtomicCASPtr_(void** a,
+                           void*  oldval,
+                           void*  newval)
+```
+
+== Function Parameters ==
+{|
+|'''a'''
+|^a pointer to a pointer to an atomic variable^
+|-
+|'''oldval'''
+|a pointer to the old value
+|-
+|'''newval'''
+|a pointer to the new value
+|}
+
+== Return Value ==
+Returns SDL_TRUE if the pointer was set, SDL_FALSE otherwise.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+/!\ If you don't know what this function is for, you shouldn't use it!
+
+
+== Related Functions ==
+:[[SDL_AtomicGetPtr]]
+:[[SDL_AtomicSetPtr]]
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
