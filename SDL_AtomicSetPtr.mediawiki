@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AtomicSetPtr =
+Use this function to set a pointer to a value atomically.
+
+
+== Syntax ==
+```c++
+void* SDL_AtomicSetPtr(void** a,
+                       void*  v)
+```
+
+== Function Parameters ==
+{|
+|'''a'''
+|^a pointer to a pointer to an atomic variable^
+|-
+|'''v'''
+|^a pointer to the desired value^
+|}
+
+== Return Value ==
+Returns the previous value of the pointer.  <<Color2(green,This doesn't seem like the right RV for a void*.)>>
+
+Returns ^a pointer to the previous value^ on success.
+
+<<Color2(green,What happens on failure?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_AtomicCASPtr]]
+:[[SDL_AtomicGetPtr]]
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
