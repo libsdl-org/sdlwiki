@@ -1,6 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-<!-- acl All: read -->
+<!-- acl All:read -->
 '''DRAFT'''
 
 = SDL_Enumeration =
@@ -31,7 +31,7 @@ You can add your code example here
 :[[SDL_StructureRemoveSectionIfEmpty]]
 
 == Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
+:[[SDL_FunctionRemoveSectionIfEmpty]]
 
 ----
 [[CategoryEnum]], [[CategoryHeader]]
