@@ -3,15 +3,15 @@
 <!-- acl All:read -->
 '''DRAFT'''
 
-= SDL_AtomicCAS_ =
+= SDL_AtomicCAS =
 Use this function to set an atomic variable to a new value if it is currently an old value.
 
 
 == Syntax ==
 ```c++
-SDL_bool SDL_AtomicCAS_(SDL_atomic_t* a,
-                        int           oldval,
-                        int           newval)
+SDL_bool SDL_AtomicCAS(SDL_atomic_t* a,
+                       int           oldval,
+                       int           newval)
 ```
 
 == Function Parameters ==
@@ -36,10 +36,6 @@ You can add your code example here
 
 == Remarks ==
 ''You can add useful comments here''
-
-<!-- ifndef SDL_AtomicCAS<br/> -->
-<!-- define SDL_AtomicCAS SDL_AtomicCAS_<br/> -->
-<!-- endif -->
 
 /!\ If you don't know what this function is for, you shouldn't use it!
 
