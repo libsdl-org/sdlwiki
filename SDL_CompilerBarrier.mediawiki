@@ -1,0 +1,26 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= SDL_CompilerBarrier =
+Use this function to prevent the compiler from reordering reads and writes to globally visible variables across the call.
+
+
+== Syntax ==
+```c++
+void SDL_CompilerBarrier(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
