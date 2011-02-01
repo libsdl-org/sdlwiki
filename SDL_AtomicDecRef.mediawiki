@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= SDL_AtomicDecRef =
+Use this function to decrement an atomic variable used as a reference count.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_AtomicDecRef(SDL_atomic_t* a)
+```
+
+== Function Parameters ==
+{|
+|'''a'''
+|^the [[SDL_atomic_t]] structure filled in with the variable^
+|}
+
+== Return Value ==
+Returns SDL_TRUE if the variable reached zero after decrementing, SDL_FALSE otherwise.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_AtomicAdd]]
+:[[SDL_AtomicIncRef]]
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
