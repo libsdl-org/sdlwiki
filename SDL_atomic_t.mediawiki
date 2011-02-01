@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_atomic_t =
+A structure that contains a type representing an atomic integer value.
+
+
+== Data Fields ==
+{|
+|int
+|'''value'''
+|the atomic integer value
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+[[SDL_atomic_t]] is a structure so people don't accidentally use numeric operations on it.  Instead, you should use [[SDL_AtomicSet]](), [[SDL_AtomicGet]](), [[SDL_AtomicAdd]](), [[SDL_AtomicIncRef]](), [[SDL_AtomicDecRef]](), or [[SDL_AtomicCAS]]() to work with the integer value.  
+
+
+== Related Functions ==
+:[[SDL_AtomicAdd]]
+:[[SDL_AtomicCAS]]
+:[[SDL_AtomicDecRef]]
+:[[SDL_AtomicGet]]
+:[[SDL_AtomicIncRef]]
+:[[SDL_AtomicSet]]
+
+----
+[[CategoryStruct]], [[CategoryAtomic]]
