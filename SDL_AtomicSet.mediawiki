@@ -22,7 +22,7 @@ int SDL_AtomicSet(SDL_atomic_t* a,
 |}
 
 == Return Value ==
-Returns the previous value of the atomic variable, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the previous value of the atomic variable on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
