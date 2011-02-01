@@ -16,7 +16,7 @@ SDL_bool SDL_AtomicCAS(SDL_atomic_t* a,
 == Function Parameters ==
 {|
 |'''a'''
-|^the atomic variable to set^
+|^the [[SDL_atomic_t]] structure filled in with the variable^
 |-
 |'''oldval'''
 |the old value
