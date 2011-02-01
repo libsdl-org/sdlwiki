@@ -100,7 +100,7 @@
 |[CategoryMutex|Thread Synchronization Primitives]] 
 |[[http://hg.libsdl.org/SDL/file/tip/include/SDL_mutex.h SDL_mutex.h] 
 |-
-|[CategoryAtomic|Atomic Operations for 32 and 64 Bit Values]] 
+|[CategoryAtomic|Atomic Operations]] 
 |[[http://hg.libsdl.org/SDL/file/tip/include/SDL_atomic.h SDL_atomic.h] 
 |}
 
