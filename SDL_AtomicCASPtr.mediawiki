@@ -38,6 +38,7 @@ You can add your code example here
 
 
 == Related Functions ==
+:[[SDL_AtomicCAS]]
 :[[SDL_AtomicGetPtr]]
 :[[SDL_AtomicSetPtr]]
 
