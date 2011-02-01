@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AtomicGet =
+Use this function to get the value of an atomic variable.
+
+
+== Syntax ==
+```c++
+int SDL_AtomicGet(SDL_atomic_t* a)
+```
+
+== Function Parameters ==
+{|
+|'''a'''
+|^the [[SDL_atomic_t]] structure to query^
+|}
+
+== Return Value ==
+Returns the current value of the atomic variable on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_AtomicGetPtr]]
+:[[SDL_AtomicSet]]
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
