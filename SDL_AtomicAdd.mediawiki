@@ -1,0 +1,39 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_AtomicAdd =
+Use this function to add to an atomic variable.
+
+
+== Syntax ==
+```c++
+int SDL_AtomicAdd(SDL_atomic_t* a,
+                  int           v)
+```
+
+== Function Parameters ==
+{|
+|'''a'''
+|^the [[SDL_atomic_t]] structure filled in with the variable^
+|-
+|'''v'''
+|^the desired value to add^
+|}
+
+== Return Value ==
+Returns the previous value of the atomic variable on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_AtomicIncRef]] ???
+
+----
+[[CategoryAPI]], [[CategoryAtomic]]
