@@ -22,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Include(CategoryAtomic, , , from="Start include here.", to="##The Include ends here")>>
+<<Include(CategoryAtomic, , , from="Start Include here.", to="##End Include here")>>
 
 == Related Functions ==
 :[[SDL_AtomicUnlock]]
