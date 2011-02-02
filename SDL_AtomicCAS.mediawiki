@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_AtomicCAS =
 Use this function to set an atomic variable to a new value if it is currently an old value.
@@ -16,7 +15,7 @@ SDL_bool SDL_AtomicCAS(SDL_atomic_t* a,
 == Function Parameters ==
 {|
 |'''a'''
-|^the [[SDL_atomic_t]] structure filled in with the variable^
+|a pointer to an [[SDL_atomic_t]] variable to be modified
 |-
 |'''oldval'''
 |the old value
@@ -35,9 +34,6 @@ You can add your code example here
 
 == Remarks ==
 ''You can add useful comments here''
-
-/!\ If you don't know what this function is for, you shouldn't use it!
-
 
 == Related Functions ==
 :[[SDL_AtomicCASPtr]]
