@@ -32,13 +32,15 @@ These operations may or may not actually be implemented using processor specific
 
 All of the atomic operations that modify memory are full memory barriers.
 
+<!-- #An Include begins here and is included on SDL_AtomicLock and SDL_AtomicTryLock.  Any changes between these comments will be reflected on those pages.  Please use caution when editing. -->
+
 === Atomic Locks ===
 
 The atomic locks are efficient spinlocks using CPU instructions, but are vulnerable to starvation and can spin forever if a thread holding a lock has been terminated.  For this reason you should minimize the code executed inside an atomic lock and never do expensive things like API or system calls while holding them.
 
 /!\ The atomic locks are not safe to lock recursively.
 
-
+<!-- #The Include ends here -->
 == Structures ==
 
 <<FullSearch(category:CategoryAtomic CategoryStruct)>>
