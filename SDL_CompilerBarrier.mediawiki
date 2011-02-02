@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_CompilerBarrier =
 Use this function to prevent the compiler from reordering reads and writes to globally visible variables across the call.
@@ -17,9 +16,13 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function only prevents the compiler from reordering reads and writes, it does not prevent the CPU from reordering reads and writes.  However, all of the atomic operations that modify memory are full memory barriers.
+
+This function is used in [[SDL_AtomicGet]]() and [[SDL_AtomicGetPtr]]().
 
 == Related Functions ==
+:[[SDL_AtomicGet]]
+:[[SDL_AtomicGetPtr]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
