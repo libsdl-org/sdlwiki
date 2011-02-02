@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_AtomicLock =
 Use this function to lock a spin lock by setting it to a non-zero value.
@@ -14,10 +13,8 @@ void SDL_AtomicLock(SDL_SpinLock* lock)
 == Function Parameters ==
 {|
 |'''lock'''
-|,,points to the lock,, ^the desired SDL_SpinLock to lock^
+|a pointer to a lock variable
 |}
-
-<<Color2(green,Should SDL_SpinLock be changed to spin lock because it's a typedef with no page?  Does this function change the setting of a lock struct (typedef?) to non-0 automatically when it is called?  Unlock changes it back to 0?)>>
 
 == Code Examples ==
 ```c++
@@ -25,10 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The spin lock functions and type are required and can not be emulated because they are used in the emulation code.
-
-<<Color2(green,Would the following site be a relevant link here or perhaps in a more detailed section on this topic?)>>
-http://en.wikipedia.org/wiki/Spin_lock
+<<Include(CategoryAtomic, , , from="Start include here.", to="##The Include ends here")>>
 
 == Related Functions ==
 :[[SDL_AtomicUnlock]]
