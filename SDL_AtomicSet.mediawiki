@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_AtomicSet =
 Use this function to set an atomic variable to a value.
@@ -15,14 +14,14 @@ int SDL_AtomicSet(SDL_atomic_t* a,
 == Function Parameters ==
 {|
 |'''a'''
-|^the [[SDL_atomic_t]] structure filled in with the variable^
+|a pointer to an [[SDL_atomic_t]] variable to be modified
 |-
 |'''v'''
-|^the desired value^
+|the desired value
 |}
 
 == Return Value ==
-Returns the previous value of the atomic variable on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the previous value of the atomic variable.
 
 == Code Examples ==
 ```c++
@@ -34,7 +33,6 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_AtomicGet]]
-:[[SDL_AtomicSetPtr]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
