@@ -129,14 +129,9 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |-
 |'''SDL_INIT_NOPARACHUTE'''
 |don't catch fatal signals
-|-
-|'''SDL_INIT_EVENTTHREAD'''
-|run the event loop in a separate thread (not supported by all OSs)
 |}
 
 Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).  
-
-Note that the event system is actually started by the video subsystem, so using SDL_INIT_EVENTTHREAD without SDL_INIT_VIDEO is pointless.
 
 If you want to initialize subsystems separately you would call [[SDL_Init]](0) followed by [[SDL_InitSubSystem]]() with the desired subsystem flag.
 
