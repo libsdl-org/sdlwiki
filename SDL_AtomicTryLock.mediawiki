@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_AtomicTryLock =
 Use this function to try to lock a spin lock by setting it to a non-zero value.
@@ -14,7 +13,7 @@ SDL_bool SDL_AtomicTryLock(SDL_SpinLock* lock)
 == Function Parameters ==
 {|
 |'''lock'''
-|points to the lock
+|a pointer to a lock variable
 |}
 
 == Return Value ==
@@ -26,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<<Include(CategoryAtomic, , , from="Start Include here.", to="##End Include here")>>
 
 == Related Functions ==
 :[[SDL_AtomicLock]]
