@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_atomic_t =
-A structure that contains a type representing an atomic integer value.
+A structure representing an atomic integer value.
 
 
 == Data Fields ==
@@ -19,7 +18,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_atomic_t]] is a structure so people don't accidentally use numeric operations on it.  Instead, you should use [[SDL_AtomicSet]](), [[SDL_AtomicGet]](), [[SDL_AtomicAdd]](), [[SDL_AtomicIncRef]](), [[SDL_AtomicDecRef]](), or [[SDL_AtomicCAS]]() to work with the integer value.  
+[[SDL_atomic_t]] is a structure so people don't accidentally use numeric operations on it.  Instead, you should use the atomic operation functions to work with the integer value.  
 
 
 == Related Functions ==
