@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_AtomicGetPtr =
 Use this function to get the value of a pointer atomically.
@@ -14,11 +13,11 @@ void* SDL_AtomicGetPtr(void** a)
 == Function Parameters ==
 {|
 |'''a'''
-|^a pointer to a pointer to an atomic variable^
+|a pointer to a pointer
 |}
 
 == Return Value ==
-Returns ^a pointer to the current value^ on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns a pointer to the current value.
 
 == Code Examples ==
 ```c++
@@ -30,7 +29,6 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_AtomicCASPtr]]
-:[[SDL_AtomicGet]]
 :[[SDL_AtomicSetPtr]]
 
 ----
