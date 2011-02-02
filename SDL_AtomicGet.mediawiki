@@ -13,7 +13,7 @@ int SDL_AtomicGet(SDL_atomic_t* a)
 == Function Parameters ==
 {|
 |'''a'''
-|a pointer to an [[SDL_atomic_t]] variable to be modified
+|a pointer to an [[SDL_atomic_t]] variable
 |}
 
 == Return Value ==
