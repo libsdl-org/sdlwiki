@@ -37,6 +37,8 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_AtomicCASPtr]]
+:[[SDL_AtomicGet]]
+:[[SDL_AtomicSet]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
