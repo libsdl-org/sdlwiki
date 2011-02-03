@@ -100,7 +100,7 @@ When your remark includes a reference to an existing function, enumeration, or s
 |''Example'': [[SDL_SetTextureScaleMode]]()
 |}
 
-For more information on markup see [http://wiki.libsdl.org/moin.cgi/SGWikiBasics]
+For more information on markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
 [[#ToC|Return to Table of Contents]]
 
