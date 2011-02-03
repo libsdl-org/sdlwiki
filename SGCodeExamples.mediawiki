@@ -33,10 +33,11 @@ Place your code example in the ```== Code Examples ==``` section:
 |-
 |Note: Do not change or remove any of the markup immediately above or below that line
 |-
-|<|3>there are __existing code examples__ on the page
+|<|4>there are __existing code examples__ on the page
 |add a new code box with your code to the end of the Code Examples section,<br/>or to a related grouping if there are existing code examples covering the same topic
 |-
-|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<<MiniPage(<code>```c++</code><br/><br/><code>```</code>)>>
+|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||<<MiniPage(`{{{#!highlight cpp`<<BR>><<BR>>`````)>>||
+
 |-
 |''Example'': [[SDL_Init]]()
 |}
