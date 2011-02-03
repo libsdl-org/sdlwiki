@@ -22,28 +22,26 @@ Please post code examples showing how you have used the API that may benefit oth
 For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
 
-== Adding the First Code Example ==
+== Adding Your Code Examples ==
+Place your code example in the ```== Code Examples ==``` section:
+{|
+|<width="30%" bgcolor="#EDEDED">If...
+|<bgcolor="#EDEDED">Then...
+|-
+|<|2>your code example is the __first on the page__
+|replace the following with your code<br/>```You can add your code example here```
+|-
+|Note: Do not change or remove any of the markup immediately above or below that line
+|-
+|<|3>there are __existing code examples__ on the page
+|add a new code box with your code to the end of the Code Examples section,<br/>or to a related grouping if there are existing code examples covering the same topic
+|-
+|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<<MiniPage(<code>```c++</code><br/><br/><code>```</code>)>>
+|-
+|''Example'': [[SDL_Init]]()
+|}
 
-Replace the following with your code:
- ```You can add your code example here```
-
-* Do not change or remove any of the markup immediately above or below that line.
-
-
-== Adding Additional Code Examples ==
-
-Add a new code box with your code to the end of the Code Examples section.  
-* If there are many examples of various kinds add your code box to the end of a related group, if any.
-'''To add a new code box''' 
-: Insert the following into the spot where your example will be located and place your content on the blank line between the markup:
-  ```{
-{{{#!highlight cpp
- 
-```
-}}}}
-: ''Example'': [[SDL_Init]]()
-
-
+For more information on markup see [http://wiki.libsdl.org/moin.cgi/SGWikiBasics]
 
 [[#ToC|Return to Table of Contents]]
 
