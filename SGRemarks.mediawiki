@@ -35,21 +35,28 @@ Add your remarks to the end of the Remarks section, or to a related grouping if 
 == Formatting Remarks ==
 
 === Referencing Function Parameters ===
-If the reference is to a parameter on that page:
-* Use '''bold''' wherever the name is used in the remark
-:''Markup'':  use 3 apostrophes surrounding the text for bold.
-    ```'''parameter'''``` = '''parameter'''
-: ''Example'': [[SDL_ConvertAudio]]()
-: ''Example'': [[SDL_AudioSpec]]
-If the reference is to a parameter from another function:
-* Use <code>monospace</code> wherever the name is used in the remark
-:''Markup'':  use a single backtick surrounding the text for monospace.
-    ```<code>member</code>``` = <code>member</code>
-: ''Example'': [[SDL_OpenAudio]]()
+{|
+|<|3>If a parameter '''on that page''' is referenced
+|Use '''bold''' wherever the name is used in the remark
+|-
+|''Markup'':  3 apostrophes surrounding the text for bold<br/>```'''parameter'''``` = '''parameter'''
+|-
+|''Example'': [[SDL_ConvertAudio]]()
+|}
+
+{|
+|<|3>If a parameter '''from another function''' is referenced
+|Use <code>monospace</code> wherever the name is used in the remark
+|-
+|''Markup'':  a single backtick surrounding the text for monospace<br/>```<code>member</code>``` = <code>member</code>
+|-
+|''Example'': [[SDL_OpenAudio]]()
+|}
 
 
 === Referencing Structure Data Fields ===
 Same as for function parameters above.
+: ''Example'': [[SDL_AudioSpec]]
 
 
 === Referencing Enumeration Values ===
