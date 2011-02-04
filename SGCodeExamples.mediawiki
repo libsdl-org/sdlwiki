@@ -10,39 +10,43 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 <span id="ToC"></span>
 
 == General Guidelines ==
-'''The Code Examples section should provide simple examples of real-world applications of the API.'''
+''The Code Examples section should provide simple examples of real-world applications of the API.''
 
-Please post code examples showing how you have used the API that may benefit other users.  
+'''Please post code examples showing how you have used the API that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
-
 * Code examples should have adequate comments to make them clear and useful.
-
-* Please remember to keep it simple and easy to understand.
-
-For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
-
-
+* Please remember to keep it simple and easy to understand.'''
+<br/>
+<br/>
+<br/>
 == Adding Your Code Examples ==
-Place your code example in the ```== Code Examples ==``` section:
+ 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+  ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section that begins with ```== Code Examples ==```.  Add your content below this header following the conventions in this style guide.
+ 1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
+ 1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
+For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+<br/>
+<br/>
+<br/>
+<span id="formatting"></span>
+== Formatting Your Code Examples ==
+
+=== Location ===
 {|
-|<width="30%" bgcolor="#EDEDED">If...
-|<bgcolor="#EDEDED">Then...
+|<( |3 30%>''If'' your code example is the __first on the page__
+|''Action'': Replace the following text with your code<br/>```You can add your code example here```
 |-
-|<|2>your code example is the __first on the page__
-|replace the following with your code<br/>```You can add your code example here```
+|''Note'': Do not change or remove any of the markup immediately above or below that line
 |-
-|Note: Do not change or remove any of the markup immediately above or below that line
+|''Example'': [[SDL_StopTextInput]]()<br/> ~-(Code Examples were empty at the time this was selected.-~)
 |-
-|<|4>there are __existing code examples__ on the page
-|add a new code box with your code to the end of the Code Examples section,<br/>or to a related grouping if there are existing code examples covering the same topic
+|<( |4>''If'' there are __existing code examples__ on the page
+|''Action'': Add a new code box with your code to the end of the Code Examples section, or to a related grouping if there are existing code examples covering the same topic
 |-
-|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||<<MiniPage({{{#!highlight cpp<<BR>><<BR>>```)>>||
-
-|-
-|''Example'': [[SDL_Init]]()
-|}
-
-For more information on markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||''Note'': Do not change or remove any of the existing content.||
+||''Example'': [[SDL_Init]]()||
 
 
 [[#ToC|Return to Table of Contents]]
@@ -54,15 +58,15 @@ Our goal is to create accurate, consistent, helpful, user-friendly documentation
 
 If you have questions that aren't addressed here:
  a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
- a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
- a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
- a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Check the other SDL [[http://wiki.libsdl.org/moin.cgi/Contributing#guides|Style Guides]].
+ a. Post a question to [[http://wiki.libsdl.org/moin.cgi/Contributing#form|Feedback]] and include a way to contact you.
+ a. Post a question to the [[http://wiki.libsdl.org/moin.cgi/Contributing#list|Mailing List]]
  a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
 
 If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
 
 ------
 == Disclaimer ==
-```#!wiki note
+{{{#!wiki note
 All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 ```
