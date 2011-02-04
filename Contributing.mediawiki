@@ -40,9 +40,9 @@ To help you with this we have created a series of resources:
 
  ||<bgcolor="#EDEDED">''Style Guide''||<bgcolor="#EDEDED">''Topics Covered''||
  ||[http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics]||Starting to edit<br/>Saving changes<br/>Quick reference for wiki markup used in this wiki<br/>Miscellaneous notes||
- ||[http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples]||Adding Code Examples to any API page||
- ||[http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks]||Adding Remarks to any API page||
- ||''Coming Soon!''||Adding an existing tutorial to the tutorials page<br/>Creating a new tutorial within the wiki||
+ ||[http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples]||Adding Code Examples to any [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API page]||
+ ||[http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks]||Adding Remarks to any [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API page]||
+ ||''Coming Soon!''||Adding an existing tutorial to the Tutorials page<br/>Creating a new tutorial within the wiki||
 
 : If you find something that is not addressed or is unclear in a style guide please post your questions using the feedback form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
