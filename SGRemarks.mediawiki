@@ -20,11 +20,10 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 <br/>
 <br/>
 <br/>
-<br/>
 == Adding Your Remarks ==
 Place your remark in the ```== Remarks ==``` section:
 {|
-|''If'' your remark is the __first on the page__
+|<30%>''If'' your remark is the __first on the page__
 |''Action'': Replace the following with your remarks<br/>```''You can add useful comments here''```
 |-
 |''If'' there are __existing remarks__ on the page
@@ -38,16 +37,12 @@ Place your remark in the ```== Remarks ==``` section:
 <br/>
 <br/>
 <br/>
-<br/>
 == Formatting Your Remarks ==
 
 === Referencing Function Parameters ===
 When your remark includes a reference to a function parameter:
 {|
-|<width="30%" bgcolor="#EDEDED">''Condition''
-|<bgcolor="#EDEDED">''Action''
-|-
-|<|3>''If'' you are referencing a parameter __on the same page__
+|<|3 30%>''If'' you are referencing a parameter __on the same page__
 |''Action'': Use '''bold''' wherever the name is used in the remark
 |-
 |''Markup'':  3 apostrophes surrounding the text for bold<br/>```'''parameter'''``` = '''parameter'''
@@ -84,10 +79,7 @@ When your remark includes a reference to an existing function, enumeration, or s
 : ''Markup'':  use two brackets surrounding the page name (must be exact) for a link.
 
 {|
-|<width="30%" bgcolor="#EDEDED">If...
-|<bgcolor="#EDEDED">Then...
-|-
-|<|2>''If'' it is a __function__
+|<|2> 30%''If'' it is a __function__
 |''Action'': Include open and closed parentheses outside of the hyperlink markup
 |-
 |''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()
