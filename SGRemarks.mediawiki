@@ -4,96 +4,96 @@
 '''DRAFT'''
 
 = Style Guide: Remarks =
+
 All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki contain a section for remarks.  This guide provides instructions for adding your own content to the Remarks section of these pages. 
 
 <span id="ToC"></span>
 
 == General Guidelines ==
-'''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.'''
+''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.''
 
-Please post your appropriate remarks that may benefit other users.  
+'''Please post your appropriate remarks that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 * Remarks should have adequate references to make them clear and useful.
-* Please remember to keep it simple and easy to understand.
-
-For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+* Please remember to keep it simple and easy to understand.'''
 <br/>
 <br/>
 <br/>
 == Adding Your Remarks ==
-Place your remark in the ```== Remarks ==``` section:
-{|
-|<30%>''If'' your remark is the __first on the page__
-|''Action'': Replace the following with your remarks<br/>```''You can add useful comments here''```
-|-
-|''If'' there are __existing remarks__ on the page
-|''Action'': Add your remarks to the end of the Remarks section,<br/>or to a related grouping if there are existing remarks covering the same topic
-|-
-|
-|<(>''Example'': [[SDL_MixAudio]]()
-|}
-
-~-[[#ToC|Return to Table of Contents]]-~
+ 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+  ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this header following the conventions in this style guide.
+ 1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
+ 1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
+For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 <br/>
 <br/>
 <br/>
+<span id="formatting"></span>
 == Formatting Your Remarks ==
 
+=== Location ===
+{|
+|<( |2 30%>''If'' your remark is the __first on the page__
+|''Action'': Replace the following text and markup with your remarks:<br/>```''You can add useful comments here''```
+|-
+|''Example'': [[SDL_StopTextInput]]()<br/>~-(Remarks were empty at the time this was selected.-~)
+|-
+|<( |3>''If'' there are __existing remarks__ on the page
+|''Action'': Add your remarks to the end of the Remarks section, or to a related grouping if there are existing remarks covering the same topic.
+|-
+|''Note'': Do not change or remove any of the existing content.
+|-
+|''Example'': [[SDL_MixAudio]]()
+|}
+
+<span id="params"></span>
 === Referencing Function Parameters ===
 When your remark includes a reference to a function parameter:
 {|
-|<|3 30%>''If'' you are referencing a parameter __on the same page__
-|''Action'': Use '''bold''' wherever the name is used in the remark
+|<( |3 30%>''If'' you are referencing a parameter __on the same page__
+|''Action'': Use '''bold''' wherever the name is used in the remark.
 |-
-|''Markup'':  3 apostrophes surrounding the text for bold<br/>```'''parameter'''``` = '''parameter'''
+|''Markup'':  Use 3 apostrophes on either side of the text for bold.<br/>```'''parameter'''``` = '''parameter'''
 |-
 |''Example'': [[SDL_ConvertAudio]]()
 |-
-|<|3>''If'' you are referencing a parameter __from another page__
-|''Action'': Use <code>monospace</code> wherever the name is used in the remark
+|<( |3>''If'' you are referencing a parameter __from another page__
+|''Action'': Use <code>monospace</code> wherever the name is used in the remark.
 |-
-|''Markup'':  a single backtick surrounding the text for monospace<br/>```<code>member</code>``` = <code>member</code>
+|''Markup'':  Use a single backtick on either side of the text for monospace.<br/>```<code>member</code>``` = <code>member</code>
 |-
 |''Example'': [[SDL_OpenAudio]]()
 |}
 
 
 === Referencing Structure Data Fields ===
-When your remark includes a reference to a structure data field:
-* Use the same formatting as for function parameters above.
+''If'' your remark includes a reference to a structure data field:
+: ''Action'': Use the same formatting as for [[#params|function parameters]] above.
 : ''Example'': [[SDL_AudioSpec]]
 
 
 === Referencing Enumeration Values ===
-When your remark includes a reference to an enumeration value:
-: ''Action'': no special formatting is required since these are generally already in ALL CAPS.
+''If'' your remark includes a reference to an enumeration value:
+: ''Action'': No special formatting is required since these are generally already in ALL CAPS.
 : ''Example'': [[SDL_GLattr]]
 
 
 === Referencing Other API Components ===
-When your remark includes a reference to an existing function, enumeration, or structure:
-* ''Action'': Create a hyperlink to its page
+''If'' your remark includes a reference to an SDL function, enumeration, or structure:
+: ''Action'': Create a hyperlink to its page.
+: ~-Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.-~<br/>
 
-  {i} ~-''Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
+: ''Markup'':  Use two brackets surrounding the page name (```[[ ]]```) to create a link.
+: ~-Using the full page address is not necessary.  The page name portion (end of address) is sufficient but must be exact.-~
 
-: ''Markup'':  use two brackets surrounding the page name (must be exact) for a link.
+ ||<( |2 30%>''If'' you reference a __function__||''Action'': Include open and closed parentheses outside of the hyperlink markup.||
+ ||''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()||
+ ||<( |2>''If'' you reference a __structure__ or __enumeration__||''Action'': Do not use parentheses.||
+ ||''Markup'':  ```[[SDL_Enumeration/Structure]]``` = [[SDL_Enumeration/Structure]]||
+ ||||<(>''Example'': [[SDL_SetTextureScaleMode]]()||
 
-{|
-|<|2 30%>''If'' it is a __function__
-|''Action'': Include open and closed parentheses outside of the hyperlink markup
-|-
-|''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()
-|-
-|<|2>''If'' it is a __structure__ or __enumeration__
-|''Action'': Do not use parentheses
-|-
-|''Markup'':  ```[[SDL_Enumeration/Structure]]```
-|-
-|
-|<(>''Example'': [[SDL_SetTextureScaleMode]]()
-|}
-
-For more information on markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
