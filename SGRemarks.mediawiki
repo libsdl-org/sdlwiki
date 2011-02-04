@@ -79,7 +79,7 @@ When your remark includes a reference to an existing function, enumeration, or s
 : ''Markup'':  use two brackets surrounding the page name (must be exact) for a link.
 
 {|
-|<|2> 30%''If'' it is a __function__
+|<|2 30%>''If'' it is a __function__
 |''Action'': Include open and closed parentheses outside of the hyperlink markup
 |-
 |''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()
