@@ -29,20 +29,23 @@
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[CategoryVideo|Display Management, Window Management and Rendering]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_video.h SDL_video.h] 
+|[CategoryVideo|Display Management, Window Management]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_video.h SDL_video.h] 
+|-
+|[CategoryRender|2D Accelerated Rendering]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_render.h SDL_render.h] 
 |-
 |[CategoryPixels|Pixel Formats and Conversion Routines]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_pixels.h SDL_pixels.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_pixels.h SDL_pixels.h] 
 |-
 |[CategoryRect|Rectangle Functions]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_rect.h SDL_rect.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_rect.h SDL_rect.h] 
 |-
 |[CategorySurface|Surface Creation and Simple Drawing]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_surface.h SDL_surface.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_surface.h SDL_surface.h] 
 |-
 |[CategorySWM|Platform-specific Window Management]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_syswm.h SDL_syswm.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_syswm.h SDL_syswm.h] 
 |}
 
 
@@ -53,16 +56,16 @@
 |'''View the header'''
 |-
 |[CategoryEvents|Event Handling]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_events.h SDL_events.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_events.h SDL_events.h] 
 |-
 |[CategoryKeyboard|Keyboard Support]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_keyboard.h SDL_keyboard.h]<br/>[http://hg.libsdl.org/SDL/file/tip/include/SDL_keysym.h SDL_keysym.h]<br/>[http://hg.libsdl.org/SDL/file/tip/include/SDL_scancode.h SDL_scancode.h]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_keysym.h SDL_keysym.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
 |-
 |[CategoryMouse|Mouse Support]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_mouse.h SDL_mouse.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h] 
 |-
 |[CategoryJoystick|Joystick Support]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_joystick.h SDL_joystick.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_joystick.h SDL_joystick.h] 
 |}
 
 
@@ -73,7 +76,7 @@
 |'''View the header'''
 |-
 |[CategoryForceFeedback|Force Feedback Support]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_haptic.h SDL_haptic.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_haptic.h SDL_haptic.h] 
 |}
 
 
@@ -84,7 +87,7 @@
 |'''View the header'''
 |-
 |[CategoryAudio|Audio Device Management, Playing and Recording]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_audio.h SDL_audio.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_audio.h SDL_audio.h] 
 |}
 
 
@@ -95,13 +98,13 @@
 |'''View the header'''
 |-
 |[CategoryThread|Thread Management]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_thread.h SDL_thread.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_thread.h SDL_thread.h] 
 |-
 |[CategoryMutex|Thread Synchronization Primitives]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_mutex.h SDL_mutex.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_mutex.h SDL_mutex.h] 
 |-
 |[CategoryAtomic|Atomic Operations]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_atomic.h SDL_atomic.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h SDL_atomic.h] 
 |}
 
 
@@ -112,7 +115,7 @@
 |'''View the header'''
 |-
 |[CategoryTimer|Timer Support]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_timer.h SDL_timer.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_timer.h SDL_timer.h] 
 |}
 
 
@@ -123,7 +126,7 @@
 |'''View the header'''
 |-
 |[CategoryIO|File I/O Abstraction]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_rwops.h SDL_rwops.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_rwops.h SDL_rwops.h] 
 |}
 
 
@@ -134,7 +137,7 @@
 |'''View the header'''
 |-
 |[CategorySharedObject|Shared Object Loading and Function Lookup]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_loadso.h SDL_loadso.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_loadso.h SDL_loadso.h] 
 |}
 
 
@@ -145,13 +148,13 @@
 |'''View the header'''
 |-
 |[CategoryPlatform|Platform Detection]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_platform.h SDL_platform.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_platform.h SDL_platform.h] 
 |-
 |[CategoryCPU|CPU Feature Detection]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_cpuinfo.h SDL_cpuinfo.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_cpuinfo.h SDL_cpuinfo.h] 
 |-
 |[CategoryEndian|Byte Order and Byte Swapping]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_endian.h SDL_endian.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_endian.h SDL_endian.h] 
 |}
 
 
@@ -162,4 +165,4 @@
 |'''View the header'''
 |-
 |[CategoryPower|Power Management Status]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_power.h SDL_power.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_power.h SDL_power.h] 
