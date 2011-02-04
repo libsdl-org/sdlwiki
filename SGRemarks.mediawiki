@@ -17,44 +17,45 @@ Please post your appropriate remarks that may benefit other users.
 * Please remember to keep it simple and easy to understand.
 
 For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
-
-----
+<br/>
+<br/>
+<br/>
+<br/>
 == Adding Your Remarks ==
 Place your remark in the ```== Remarks ==``` section:
 {|
-|<width="30%" bgcolor="#EDEDED">If...
-|<bgcolor="#EDEDED">Then...
+|''If'' your remark is the __first on the page__
+|''Action'': Replace the following with your remarks<br/>```''You can add useful comments here''```
 |-
-|your remark is the __first on the page__
-|replace the following with your remarks<br/>```''You can add useful comments here''```
-|-
-|there are __existing remarks__ on the page
-|add your remarks to the ''end'' of the Remarks section,<br/>or to a related grouping if there are existing remarks covering the same topic
+|''If'' there are __existing remarks__ on the page
+|''Action'': Add your remarks to the end of the Remarks section,<br/>or to a related grouping if there are existing remarks covering the same topic
 |-
 |
-|''Example'': [[SDL_MixAudio]]()
+|<(>''Example'': [[SDL_MixAudio]]()
 |}
 
-[[#ToC|Return to Table of Contents]]
-
-----
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<br/>
+<br/>
 == Formatting Your Remarks ==
 
 === Referencing Function Parameters ===
 When your remark includes a reference to a function parameter:
 {|
-|<width="30%" bgcolor="#EDEDED">If...
-|<bgcolor="#EDEDED">Then...
+|<width="30%" bgcolor="#EDEDED">''Condition''
+|<bgcolor="#EDEDED">''Action''
 |-
-|<|3>a parameter __on the same page__ is referenced
-|use '''bold''' wherever the name is used in the remark
+|<|3>''If'' you are referencing a parameter __on the same page__
+|''Action'': Use '''bold''' wherever the name is used in the remark
 |-
 |''Markup'':  3 apostrophes surrounding the text for bold<br/>```'''parameter'''``` = '''parameter'''
 |-
 |''Example'': [[SDL_ConvertAudio]]()
 |-
-|<|3>a parameter __from another page__ is referenced
-|use <code>monospace</code> wherever the name is used in the remark
+|<|3>''If'' you are referencing a parameter __from another page__
+|''Action'': Use <code>monospace</code> wherever the name is used in the remark
 |-
 |''Markup'':  a single backtick surrounding the text for monospace<br/>```<code>member</code>``` = <code>member</code>
 |-
@@ -64,19 +65,19 @@ When your remark includes a reference to a function parameter:
 
 === Referencing Structure Data Fields ===
 When your remark includes a reference to a structure data field:
-* use the same formatting as for function parameters above.
+* Use the same formatting as for function parameters above.
 : ''Example'': [[SDL_AudioSpec]]
 
 
 === Referencing Enumeration Values ===
 When your remark includes a reference to an enumeration value:
-* no special formatting is required since these are generally already in ALL CAPS.
+: ''Action'': no special formatting is required since these are generally already in ALL CAPS.
 : ''Example'': [[SDL_GLattr]]
 
 
 === Referencing Other API Components ===
 When your remark includes a reference to an existing function, enumeration, or structure:
-* Create a hyperlink to its page
+* ''Action'': Create a hyperlink to its page
 
   {i} ~-''Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
 
@@ -86,23 +87,23 @@ When your remark includes a reference to an existing function, enumeration, or s
 |<width="30%" bgcolor="#EDEDED">If...
 |<bgcolor="#EDEDED">Then...
 |-
-|<|2>it is a __function__
-|include open and closed parentheses outside of the hyperlink markup
+|<|2>''If'' it is a __function__
+|''Action'': Include open and closed parentheses outside of the hyperlink markup
 |-
-|```[[SDL_Function]]()``` = [[SDL_Function]]()
+|''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()
 |-
-|<|2>it is a __structure__ or __enumeration__
-|do not use parentheses
+|<|2>''If'' it is a __structure__ or __enumeration__
+|''Action'': Do not use parentheses
 |-
-|```[[SDL_Enumeration/Structure]]```
+|''Markup'':  ```[[SDL_Enumeration/Structure]]```
 |-
 |
-|''Example'': [[SDL_SetTextureScaleMode]]()
+|<(>''Example'': [[SDL_SetTextureScaleMode]]()
 |}
 
 For more information on markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 ----
