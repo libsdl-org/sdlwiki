@@ -4,7 +4,7 @@
 <!-- language en -->
 '''DRAFT'''
 
-= Display Management, Window Management and Rendering =
+= Display Management, Window Management =
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/tip/include/SDL_video.h SDL_video.h]
 
