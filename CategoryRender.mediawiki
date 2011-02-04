@@ -1,0 +1,44 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+'''DRAFT'''
+
+= 2D Accelerated Rendering =
+
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_render.h SDL_render.h]
+
+
+== Introduction ==
+This category contains functions for 2D accelerated rendering.
+
+This API supports the following features:
+
+* single pixel points
+* single pixel lines
+* filled rectangles
+* texture images
+
+,,The primitives,, ^All of these^ may be drawn in opaque, blended, or additive modes.
+
+The texture images ,,may be drawn in opaque, blended, or additive modes.  They,, can have an additional color tint or alpha modulation applied to them, and may also be stretched with linear interpolation.
+
+This API is designed to accelerate simple 2D operations. You may want more functionality such as rotation and particle effects and in that case you should use SDL's OpenGL/Direct3D support or one of the many good 3D engines.
+
+
+
+== Enumerations ==
+
+<<FullSearch(category:CategoryEnum CategoryRender)>>
+
+== Structures ==
+
+<<FullSearch(category:CategoryStruct CategoryRender)>>
+
+== Functions ==
+
+<<FullSearch(category:CategoryRender -CategoryEnum -CategoryStruct)>>
+
+
+----
+CategoryCategory
