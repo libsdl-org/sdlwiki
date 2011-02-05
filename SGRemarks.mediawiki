@@ -18,7 +18,6 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 * Please remember to keep it simple and easy to understand.'''
 <br/>
 <br/>
-<br/>
 == Adding Your Remarks ==
  1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
   ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
