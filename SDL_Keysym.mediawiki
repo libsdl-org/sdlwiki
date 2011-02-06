@@ -1,0 +1,50 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_KeySym =
+A structure that contains ^key codes^ used in key events.
+
+
+== Data Fields ==
+{|
+|SDL_ScanCode
+|'''scancode'''
+|SDL physical key code - see [[SDL_ScanCode]] for details
+|-
+|SDLKey
+|'''sym'''
+|SDL virtual key code - see [[SDLKey]] for details
+|-
+|Uint16
+|'''mod'''
+|current key modifiers
+|-
+|Uint32
+|'''unicode'''
+|deprecated use [[SDL_TextInputEvent]] instead
+|}
+
+<<Color2(green,SDL_ScanCode does not exist but there is a page for [[SDL_scancode]].  Is that a typo?  Should '''mod''' reference [[SDLMod]]?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Enumerations ==
+:[[SDLKey]]
+:[[SDLMod]]
+:[[SDL_scancode]]
+
+== Related Structures ==
+:[[SDL_KeyboardEvent]]
+:[[SDL_TextInputEvent]]
+
+== Related Functions ==
+
+----
+[[CategoryStruct]], [[CategoryKeyboard]]
