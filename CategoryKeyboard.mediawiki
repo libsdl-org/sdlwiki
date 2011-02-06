@@ -18,6 +18,10 @@ This category contains functions for handling keyboard inputs.  ^Keysym and scan
 
 <<FullSearch(category:CategoryEnum CategoryKeyboard)>>
 
+== Structures ==
+
+<<FullSearch(category:CategoryStruct CategoryKeyboard)>>
+
 == Functions ==
 
 <<FullSearch(category:CategoryKeyboard -CategoryEnum -CategoryStruct)>>
