@@ -8,17 +8,17 @@ Use this function to get the key code corresponding to the given scancode accord
 
 == Syntax ==
 ```c++
-SDLKey SDL_GetKeyFromScancode(SDL_scancode scancode)
+SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode)
 ```
 
 == Function Parameters ==
 {|
 |'''scancode'''
-|the desired [[SDL_scancode]] to query ???
+|the desired [[SDL_Scancode]] to query ???
 |}
 
 == Return Value ==
-Returns the [[SDLKey]] that corresponds to the given [[SDL_scancode]]. ???
+Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]]. ???
 
 == Code Examples ==
 ```c++
@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-See [[SDLKey]] for details.
+See [[SDL_Keycode]] for details.
 
 == Related Functions ==
 :[[SDL_GetKeyName]]
