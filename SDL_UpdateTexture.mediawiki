@@ -37,8 +37,13 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is a fairly slow function.  It is intended for use with static textures.
+This is a fairly slow function, intended for use with static textures.
 
+This function will work with streaming textures, but for optimization reasons you may not get the pixels back if you lock the texture afterward.
+
+== Related Functions ==
+:[[SDL_LockTexture]]
+:[[SDL_UnlockTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
