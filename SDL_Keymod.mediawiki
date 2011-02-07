@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDLMod =
+= SDL_Mod =
 An enumeration of key modifier masks.
 
 
