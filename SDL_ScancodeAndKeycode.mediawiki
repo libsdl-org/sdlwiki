@@ -41,7 +41,9 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 ```
 
 == Remarks ==
-''You can add useful comments here''
+To look up a scancode or keycode by decimal or hexadecimal value you can use the following tables:
+:[[SDLScancodeLookup|SDL Scancode Lookup Table]]
+:[[SDLKeycodeLookup|SDL Keycode Lookup Table]]
 
 == Related Enumerations ==
 :[[SDL_Keycode]]
