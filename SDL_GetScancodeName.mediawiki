@@ -8,7 +8,7 @@ Use this function to get a human-readable name for a scancode.
 
 == Syntax ==
 ```c++
-const char* SDL_GetScancodeName(SDL_scancode scancode)
+const char* SDL_GetScancodeName(SDL_Scancode scancode)
 ```
 
 == Function Parameters ==
