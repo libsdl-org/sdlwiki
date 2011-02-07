@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDLKey =
+= SDL_Key =
 The SDL virtual key representation.
 
 
