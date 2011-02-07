@@ -1,0 +1,10 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL Scancode Lookup Table =
+
+{|
+|<bgcolor="#EDEDED">''Decimal Value''
+|<bgcolor="#EDEDED">''Hexadecimal Value''
+|<bgcolor="#EDEDED">''SDL_Scancode Symbol''
