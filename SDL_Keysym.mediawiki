@@ -12,9 +12,9 @@ A structure that contains ^key codes^ used in key events.
 |'''scancode'''
 |SDL physical key code - see [[SDL_Scancode]] for details
 |-
-|SDLKey
+|SDL_Keycode
 |'''sym'''
-|SDL virtual key code - see [[SDL_Key]] for details
+|SDL virtual key code - see [[SDL_Keycode]] for details
 |-
 |Uint16
 |'''mod'''
@@ -36,8 +36,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Enumerations ==
-:[[SDLKey]]
-:[[SDLMod]]
+:[[SDL_Keycode]]
+:[[SDL_Mod]]
 :[[SDL_scancode]]
 
 == Related Structures ==
