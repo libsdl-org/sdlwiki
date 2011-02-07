@@ -8,7 +8,7 @@ Use this function to get the scancode corresponding to the given key code accord
 
 == Syntax ==
 ```c++
-SDL_scancode SDL_GetScancodeFromKey(SDL_Keycode key)
+SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key)
 ```
 
 == Function Parameters ==
