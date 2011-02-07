@@ -14,7 +14,7 @@ A structure that contains ^key codes^ used in key events.
 |-
 |SDLKey
 |'''sym'''
-|SDL virtual key code - see [[SDLKey]] for details
+|SDL virtual key code - see [[SDL_Key]] for details
 |-
 |Uint16
 |'''mod'''
@@ -25,7 +25,7 @@ A structure that contains ^key codes^ used in key events.
 |deprecated use [[SDL_TextInputEvent]] instead
 |}
 
-<<Color2(green,Should '''mod''' reference [[SDLMod]]?)>>
+<<Color2(green,Should '''mod''' reference [[SDL_Mod]]?)>>
 
 == Code Examples ==
 ```c++
