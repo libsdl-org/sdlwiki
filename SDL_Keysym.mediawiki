@@ -38,7 +38,7 @@ You can add your code example here
 == Related Enumerations ==
 :[[SDL_Keycode]]
 :[[SDL_Mod]]
-:[[SDL_scancode]]
+:[[SDL_Scancode]]
 
 == Related Structures ==
 :[[SDL_KeyboardEvent]]
