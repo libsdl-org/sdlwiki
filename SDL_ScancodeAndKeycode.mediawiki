@@ -14,19 +14,19 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |-
 |scancode
 |keycode
-|'''name'''(description if necessary)
+|name (description if necessary)
 |-
 |scancode
 |keycode
-|'''name'''(description)
+|name (description)
 |-
 |scancode
 |keycode
-|'''name'''(description)
+|name (description)
 |-
 |SDL_SCANCODE_SPACE
 |SDLK_SPACE
-|'''Space'''(space bar)
+|Space (space bar)
 |}
 
 <<Color2(green,Note: the last line is an example of the type of data that belongs in each column.  The table should be organized alphabetically by scancode.  Remove (description) if it is unnecessary.)>>
@@ -43,7 +43,12 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 == Remarks ==
 ''You can add useful comments here''
 
+== Related Enumerations ==
+:[[SDL_Keycode]]
+:[[SDL_Scancode]]
+
 == Related Structures ==
+:[[SDL_KeyboardEvent]]
 :[[SDL_Keysym]]
 
 == Related Functions ==
