@@ -8,7 +8,7 @@ Use this function to get the current key modifier state for the keyboard.
 
 == Syntax ==
 ```c++
-SDLMod SDL_GetModState(void)
+SDL_Mod SDL_GetModState(void)
 ```
 
 == Return Value ==
