@@ -7,7 +7,7 @@
 {|
 |<bgcolor="#EDEDED">''Decimal Value''
 |<bgcolor="#EDEDED">''Hexadecimal Value''
-|<bgcolor="#EDEDED">''SDL_Keycode Symbol''
+|<bgcolor="#EDEDED">''SDL_Keycode Constant''
 |-
 |decimal
 |hex
