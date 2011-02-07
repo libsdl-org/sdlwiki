@@ -8,3 +8,20 @@
 |<bgcolor="#EDEDED">''Decimal Value''
 |<bgcolor="#EDEDED">''Hexadecimal Value''
 |<bgcolor="#EDEDED">''SDL_Scancode Symbol''
+|-
+|decimal
+|hex
+|symbol
+|-
+|decimal
+|hex
+|symbol
+|-
+|4
+|0x4
+|SDL_SCANCODE_A
+|}
+
+<<Color2(green,Note: the last line is an example of the type of data that belongs in each column.)>>
+
+<<Color2(green,Note: the table is to be organized numerically by the first column.)>>
