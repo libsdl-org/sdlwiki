@@ -765,7 +765,7 @@ The values in this enumeration are based on the USB usage page standard:
 
 
 == Related Enumerations ==
-:[[SDLKey]]
+:[[SDL_Key]]
 
 == Related Functions ==
 :[[SDL_GetKeyboardState]]
