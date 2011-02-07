@@ -75,7 +75,7 @@ SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN
 == Keys ==
 
 You'll note that there are two kinds of key numbers:
-* [[SDL_Keycode]]: key codes, using SDL_Key's SDLK constants; note that SDLK_LAST disappeared, because new values cover most of 32bits. Keys associated with printable characters are compatible with Unicode UTF16.
+* [[SDL_Keycode]]: key codes, using SDL_Keycode's SDLK constants; note that SDLK_LAST disappeared, because new values cover most of 32bits. Keys associated with printable characters are compatible with Unicode UTF16.
 * [[SDL_Scancode]]: scan codes, representing layout-independent key locations
 
 There is now a dedicated API for textual input (e.g. to enter a small text, rather than combining keys); check [[Tutorials/TextInput]] for an introduction.
