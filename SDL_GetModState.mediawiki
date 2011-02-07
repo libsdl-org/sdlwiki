@@ -12,7 +12,7 @@ SDLMod SDL_GetModState(void)
 ```
 
 == Return Value ==
-^Returns an OR'd combination of the modifier keys for the keyboard. See [[SDLMod]] for details.^  ???
+^Returns an OR'd combination of the modifier keys for the keyboard. See [[SDL_Mod]] for details.^  ???
 
 == Code Examples ==
 ```c++
@@ -22,9 +22,10 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
-:[[SDL_GetKeyboardState]] *
+== See Also ==
+:[[SDL_GetKeyboardState]]
 :[[SDL_SetModState]]
+:[[SDL_Mod]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
