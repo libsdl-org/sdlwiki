@@ -1,0 +1,54 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_Scancode and SDL_Keycode =
+Enumerations of the SDL physical (scancode) and virtual (keycode) key representations.
+
+
+== Values ==
+{|
+|<bgcolor="#EDEDED">''SDL_Scancode Value''
+|<bgcolor="#EDEDED">''SDL_Keycode Value''
+|<bgcolor="#EDEDED">''Key Name''
+|-
+|scancode
+|keycode
+|'''name'''(description if necessary)
+|-
+|scancode
+|keycode
+|'''name'''(description)
+|-
+|scancode
+|keycode
+|'''name'''(description)
+|-
+|SDL_SCANCODE_SPACE
+|SDLK_SPACE
+|'''Space'''(space bar)
+|}
+
+<<Color2(green,Note: the last line is an example of the type of data that belongs in each column.  The table should be organized alphabetically by scancode.  Remove (description) if it is unnecessary.)>>
+
+== Code Examples ==
+```c++
+  //checks if a key is being remapped and prints what the remapping is
+  if(event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
+    printf("Physical %s key acting as %s key",
+      SDL_GetScancodeName(event->key.keysym.scancode),
+      SDL_GetKeyName(event->key.keysym.sym));
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Structures ==
+:[[SDL_Keysym]]
+
+== Related Functions ==
+:[[SDL_GetKeyboardState]]
+:[[SDL_GetKeyFromScancode]]
+:[[SDL_GetScancodeFromKey]]
+:[[SDL_GetKeyName]]
+:[[SDL_GetScancodeName]]
