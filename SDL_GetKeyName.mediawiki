@@ -8,13 +8,13 @@ Use this function to get a human-readable name for a key.
 
 == Syntax ==
 ```c++
-const char* SDL_GetKeyName(SDLKey key)
+const char* SDL_GetKeyName(SDL_Keycode key)
 ```
 
 == Function Parameters ==
 {|
 |'''key'''
-|the desired [[SDLKey]] to query ???
+|the desired [[SDL_Keycode]] to query ???
 |}
 
 == Return Value ==
@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-See [[SDL_scancode]] for details. ??? <<Color2(green,Should this section mention [[SDLKey]]?)>>
+See [[SDL_Scancode]] for details. ??? <<Color2(green,Should this section mention [[SDL_Keycode]]?)>>
 
 == Related Functions ==
 :[[SDL_GetKeyFromScancode]]
