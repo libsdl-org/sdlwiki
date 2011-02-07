@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_scancode =
+= SDL_ScanCode =
 An enumeration of the SDL keyboard scancode representation.
 
 
