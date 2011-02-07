@@ -22,7 +22,7 @@ SDL uses two different types of values to represent keys on the keyboard - scanc
 
 The main difference between these two values comes into play in situations where the operating system is mapping the physical keyboard keys to different virtual letters. For instance, when a standard QWERTY keyboard is mapped to a German QWERTZ layout, the "Y" key will generate events with a scancode of SDL_SCANCODE_Y, but a keycode of SDLK_z. Which one to use is left to the application: scancodes are suited in situations where controls are layout-dependent (eg. the "WASD" keys as left-handed arrow keys), whereas keycodes are better suited to situations where controls are character-dependent (eg. the "I" key for '''I'''nventory).
 
-Scancode constants use the symbol name prefixed with SDL_SCANCODE_. Keycode constants use the symbol name (lowercased for letters) prefixed with SDLK_.
+Scancode constants use the symbol name prefixed with SDL_SCANCODE_ (eg: SDL_SCANCODE_SPACE). Keycode constants use the symbol name (lowercased for letters) prefixed with SDLK_ (eg: SDLK_SPACE).
 
 == Enumerations ==
 
