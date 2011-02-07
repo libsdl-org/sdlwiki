@@ -1,3 +1,4 @@
+<!-- # page was renamed from SDL_Key -->
 <!-- # page was renamed from SDL_Keycode -->
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
