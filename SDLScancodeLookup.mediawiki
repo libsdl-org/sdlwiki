@@ -7,7 +7,7 @@
 {|
 |<bgcolor="#EDEDED">''Decimal Value''
 |<bgcolor="#EDEDED">''Hexadecimal Value''
-|<bgcolor="#EDEDED">''SDL_Scancode Symbol''
+|<bgcolor="#EDEDED">''SDL_Scancode Constant''
 |-
 |decimal
 |hex
