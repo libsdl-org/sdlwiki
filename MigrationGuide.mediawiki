@@ -20,11 +20,11 @@ The best place for information are:
 
 === Hardware surfaces ===
 
-The main change is the separation between software surfaces and hardware (accelerated) surfaces.  Previously both were ```SDL_surface``` structures, and hardware surfaces had the {{{SDL_HWSURFACE}}} flag on.
+The main change is the separation between software surfaces and hardware (accelerated) surfaces.  Previously both were ```SDL_Surface``` structures, and hardware surfaces had the {{{SDL_HWSURFACE}}} flag on.
 
 Now, we have two structures:
 * [[SDL_Surface]]: software surfaces, working like in 1.2, but never accelerated
-* SDL_Texture: hardware surfaces, whose pixels are not directly accessible (no ```->pixels``` field)
+* [[SDL_Texture]]: hardware surfaces, whose pixels are not directly accessible (no ```->pixels``` field)
 
 Textures are typically OpenGL textures or X11 pixmaps, stored as near to the graphics hardware as possible.
 
@@ -75,8 +75,8 @@ SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN
 == Keys ==
 
 You'll note that there are two kinds of key numbers:
-* [[SDLKey]]: key codes, using SDL_Key's SDLK constants; note that SDLK_LAST disappeared, because new values cover most of 32bits. Keys associated with printable characters are compatible with Unicode UTF16.
-* [[SDL_scancode]]: scan codes, representing layout-independant key locations
+* [[SDL_Keycode]]: key codes, using SDL_Key's SDLK constants; note that SDLK_LAST disappeared, because new values cover most of 32bits. Keys associated with printable characters are compatible with Unicode UTF16.
+* [[SDL_Scancode]]: scan codes, representing layout-independent key locations
 
 There is now a dedicated API for textual input (e.g. to enter a small text, rather than combining keys); check [[Tutorials/TextInput]] for an introduction.
 
