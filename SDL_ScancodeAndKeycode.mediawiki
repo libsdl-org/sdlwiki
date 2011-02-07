@@ -6,6 +6,7 @@
 Enumerations of the SDL physical (scancode) and virtual (keycode) key representations.
 
 
+<!-- #Include will begin here at a later date. -->
 == Values ==
 {|
 |<bgcolor="#EDEDED">''SDL_Scancode Value''
@@ -30,6 +31,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |}
 
 <<Color2(green,Note: the last line is an example of the type of data that belongs in each column.  The table should be organized alphabetically by scancode.  Remove (description) if it is unnecessary.)>>
+<!-- #Include will end here at a later date. -->
 
 == Code Examples ==
 ```c++
@@ -41,6 +43,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 ```
 
 == Remarks ==
+
 To look up a scancode or keycode by decimal or hexadecimal value you can use the following tables:
 :[[SDLScancodeLookup|SDL Scancode Lookup Table]]
 :[[SDLKeycodeLookup|SDL Keycode Lookup Table]]
