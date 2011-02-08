@@ -28,6 +28,9 @@ There are a number of SDL tutorials available from different sources.
 * [http://lazyfoo.net/SDL_tutorials/index.php Beginning Game Programming]
 : A series of tutorials on game concepts geared for SDL developers.  Tutorials (currently 36!) are written using C++ as the programming language and SDL as the API.
 
+* [http://rainwarrior.thenoos.net/dragon/sdl_glsl.html Using GLSL with SDL]
+: A tutorial on enabling and using GLSL extensions with SDL.
+
 * [http://www.gamedev.net/reference/articles/article2249.asp Direct3D 9.0 with SDL]
 : Using SDL with Direct3D for graphics
 
