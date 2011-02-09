@@ -1,0 +1,128 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= Style Guide: Tutorials =
+
+The [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page provides links to many different resources for help with using SDL.  This guide provides instructions for adding your tutorial to the Tutorials page. 
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+''Most tutorials on the Tutorials page are external resources.  This guide will help you add an external tutorial to the list as well as detail how to create a new tutorial from within the wiki if you prefer.''
+
+'''Please post appropriate tutorials that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.'''
+<br/>
+<br/>
+== Adding An Existing Tutorial ==
+''The following instructions apply if you have already created your tutorial.  If you still need to create your tutorial see [[Creating A New Tutorial]] below first.''
+ 1. Begin by going to the [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+  ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section that best fits your tutorial (eg: ```== Video ==```, {{{== Audio ==}}}, etc.).
+: See [[heading|Creating A New Heading]] if one does not exist.
+ 1. Find information relevant to your tutorial in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
+ 1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
+For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+<br/>
+<br/>
+<br/>
+<span id="formatting"></span>
+== Formatting Your Tutorial ==
+
+=== Location ===
+You may place your tutorial listing anywhere within the relevant section.  
+: It is our hope that tutorials discussing the same specific topic will be grouped together within each section.
+
+<span id="heading"></span>
+=== Creating A New Heading ===
+'''Please use existing headings as much as possible.'''
+
+''If'' your tutorial does not fit into any of the existing headings you may create a new heading for it.  The headings should roughly match those found on the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] page.  
+
+To create a new heading:
+: ''Markup'': Place the following markup at the location for the new heading.
+  ```== Heading ==```
+: Replace "<code>Heading</code>" with the new heading name (ie: Initialization, Events, etc.)
+: Return to [[Adding An Existing Tutorial]] to complete the process.
+
+
+
+
+
+
+
+
+
+===  ===
+When your remark includes a reference to a function parameter:
+{|
+|<( |3 30%>''If'' you are referencing a parameter __on the same page__
+|''Action'': Use '''bold''' wherever the name is used in the remark.
+|-
+|''Markup'':  Use 3 apostrophes on either side of the text for bold.<br/>```'''parameter'''``` = '''parameter'''
+|-
+|''Example'': [[SDL_ConvertAudio]]()
+|-
+|<( |3>''If'' you are referencing a parameter __from another page__
+|''Action'': Use <code>monospace</code> wherever the name is used in the remark.
+|-
+|''Markup'':  Use a single backtick on either side of the text for monospace.<br/>```<code>member</code>``` = <code>member</code>
+|-
+|''Example'': [[SDL_OpenAudio]]()
+|}
+
+
+=== Referencing Structure Data Fields ===
+''If'' your remark includes a reference to a structure data field:
+: ''Action'': Use the same formatting as for [[#params|function parameters]] above.
+: ''Example'': [[SDL_AudioSpec]]
+
+
+=== Referencing Enumeration Values ===
+''If'' your remark includes a reference to an enumeration value:
+: ''Action'': No special formatting is required since these are generally already in ALL CAPS.
+: ''Example'': [[SDL_GLattr]]
+
+
+=== Referencing Other API Components ===
+''If'' your remark includes a reference to an SDL function, enumeration, or structure:
+: ''Action'': Create a hyperlink to its page.
+: ~-Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.-~<br/>
+
+: ''Markup'':  Use two brackets surrounding the page name (```[[ ]]```) to create a link.
+: ~-Using the full page address is not necessary.  The page name portion (end of address) is sufficient but must be exact.-~
+
+ ||<( |2 30%>''If'' you reference a __function__||''Action'': Include open and closed parentheses outside of the hyperlink markup.||
+ ||''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()||
+ ||<( |2>''If'' you reference a __structure__ or __enumeration__||''Action'': Do not use parentheses.||
+ ||''Markup'':  ```[[SDL_Enumeration/Structure]]``` = [[SDL_Enumeration/Structure]]||
+ ||||<(>''Example'': [[SDL_SetTextureScaleMode]]()||
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+----
+== Resources ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
+as possible.
+
+If you have questions that aren't addressed here:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
+
+------
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to 
+<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+```
