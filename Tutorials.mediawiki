@@ -4,13 +4,17 @@ There are a number of SDL tutorials available from different sources.
 
 == SDL 1.3 ==
 
+* [http://rainwarrior.thenoos.net/dragon/sdl_glsl.html Using GLSL with SDL]
+: A tutorial on enabling and using GLSL extensions with SDL.
+
 * [http://www.g-truc.net/post-0204.html OpenGL 3 Samples Pack]
 : Using SDL 1.3 beta with OpenGL 3
 
-* [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 1.3 Haptic Interface]
-: Covers the basics of how to create and playback simple force feedback effects with SDL.
 * [http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_(C_/_SDL) OpenGL 3.2 and SDL]
 : Creating a Cross Platform OpenGL 3.2 Context in SDL
+
+* [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 1.3 Haptic Interface]
+: Covers the basics of how to create and playback simple force feedback effects with SDL.
 
 * [[Tutorials/TextInput|Text Input]]
 : Using SDL for text inputs with specific consideration for international users.
@@ -28,20 +32,29 @@ There are a number of SDL tutorials available from different sources.
 * [http://lazyfoo.net/SDL_tutorials/index.php Beginning Game Programming]
 : A series of tutorials on game concepts geared for SDL developers.  Tutorials (currently 36!) are written using C++ as the programming language and SDL as the API.
 
-* [http://rainwarrior.thenoos.net/dragon/sdl_glsl.html Using GLSL with SDL]
-: A tutorial on enabling and using GLSL extensions with SDL.
+* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index GFX with SDL (by Marius)]
+: A very nice set of tutorials covering using SDL with Dev-C++, 2D graphics and sound
+
+* [http://de.wikibooks.org/wiki/SDL Tutorial / Einsteigerkurs in das Programmieren mit der SDL in C]
+: The basics of using various features of SDL, in German
+
+* [http://www.pro-linux.de/work/sdl/ SDL - Grundlagen und Grafik]
+: A German tutorial on SDL basics and graphics
 
 * [http://www.gamedev.net/reference/articles/article2249.asp Direct3D 9.0 with SDL]
 : Using SDL with Direct3D for graphics
 
+* [http://osdl.sourceforge.net/main/documentation/rendering/SDL-openGL.html SDL Corner - Using OpenGL with SDL]
+: Lots of advanced information on using SDL with OpenGL
+
 * [http://www.meandmark.com/sdlopenglpart1.html SDL and OpenGL]
 : Using SDL and OpenGL on Mac OS X
 
-* [http://osdl.sourceforge.net/main/documentation/rendering/SDL-audio.html SDL Corner - Audio with SDL]
-: Lots of advanced information on using SDL's audio support
+* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/ogladv/index OpenGL Tutorials (by Marius)]
+: Setting up SDL and OpenGL, Quake 2 models, OpenGL graphics topics
 
-* [http://osdl.sourceforge.net/main/documentation/rendering/SDL-openGL.html SDL Corner - Using OpenGL with SDL]
-: Lots of advanced information on using SDL with OpenGL
+* [http://braindeadclown.com/GLUT_SDL_VS08.html SDL in Visual Studio 2008]
+: A very basic guide for setting up SDL for OpenGL development in Visual Studio 2008
 
 * [http://sol.gfxile.net/gp/ Sol's Graphics for Beginners]
 : Setting up SDL with Visual C++ 6.0, basic graphics programming
@@ -49,29 +62,17 @@ There are a number of SDL tutorials available from different sources.
 * [http://pgdc.purdue.org/sdltutorial/sdl_setup.html SDL Setup Guide 1.1]
 : Setting up an SDL project with Visual Studio .NET
 
-* [http://de.wikibooks.org/wiki/SDL Tutorial / Einsteigerkurs in das Programmieren mit der SDL in C]
-: The basics of using various features of SDL, in German
-
-* [http://pygame.org/docs/tut/MoveIt.html Help! How Do I Move An Image?]
-: Using Pygame to move images around in a simple game
-
-* [http://www.pro-linux.de/work/sdl/ SDL - Grundlagen und Grafik]
-: A German tutorial on SDL basics and graphics
-
-* [http://dungeonmaker.sourceforge.net/manual/tutorial1_1.html How I Rendered the Dungeons on SDL]
-: Exploring the code used to render 2D mazes in DungeonMaker
-
-* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/ogladv/index OpenGL Tutorials (by Marius)]
-: Setting up SDL and OpenGL, Quake 2 models, OpenGL graphics topics
-
-* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index GFX with SDL (by Marius)]
-: A very nice set of tutorials covering using SDL with Dev-C++, 2D graphics and sound
+* [http://osdl.sourceforge.net/main/documentation/rendering/SDL-audio.html SDL Corner - Audio with SDL]
+: Lots of advanced information on using SDL's audio support
 
 * [http://kekkai.org/roger/sdl/ Roger's SDL Tutorials]
 : SDL_mixer, SDL_RWops
 
+* [http://pygame.org/docs/tut/MoveIt.html Help! How Do I Move An Image?]
+: Using Pygame to move images around in a simple game
+
+* [http://dungeonmaker.sourceforge.net/manual/tutorial1_1.html How I Rendered the Dungeons on SDL]
+: Exploring the code used to render 2D mazes in Dungeon<code></code>Maker
+
 * [http://ansuz.sooke.bc.ca/software/sdl-condvars.php Condition variables in SDL]
 : A good discussion of condition variables, in computer science rather than gaming context. Some mention of mutex and semaphore use.
-
-* [http://braindeadclown.com/GLUT_SDL_VS08.html SDL in Visual Studio 2008]
-: A very basic guide for setting up SDL for OpenGL development in Visual Studio 2008
