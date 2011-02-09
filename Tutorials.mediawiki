@@ -11,6 +11,7 @@ There are a number of SDL tutorials available from different sources.
 
 * [http://rainwarrior.thenoos.net/dragon/sdl_glsl.html Using GLSL with SDL]
 : A tutorial on enabling and using GLSL extensions with SDL.
+: Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also.
 
 * [http://www.g-truc.net/post-0204.html OpenGL 3 Samples Pack]
 : Using SDL 1.3 beta with OpenGL 3
