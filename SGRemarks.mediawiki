@@ -12,7 +12,7 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 == General Guidelines ==
 ''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.''
 
-'''Please post your appropriate remarks that may benefit other users.  
+'''Please post appropriate remarks that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 * Remarks should have adequate references to make them clear and useful.
 * Please remember to keep it simple and easy to understand.'''
