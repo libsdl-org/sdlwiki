@@ -21,7 +21,7 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 == Adding Your Remarks ==
  1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
   ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
- 1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this header following the conventions in this style guide.
+ 1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this heading following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
  1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
