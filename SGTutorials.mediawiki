@@ -17,11 +17,10 @@ The [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page provides links to
 <br/>
 <br/>
 == Adding An Existing Tutorial ==
-''The following instructions apply if you have already created your tutorial.  If you still need to create your tutorial see [[Creating A New Tutorial]] below first.''
+''The following instructions apply if you have already created your tutorial.  If you still need to create your tutorial see [[#creating|Creating A New Tutorial]] below first.''
  1. Begin by going to the [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
   ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
- 1. Scroll down in the edit window to the section that best fits your tutorial (eg: ```== Video ==```, {{{== Audio ==}}}, etc.).
-: See [[heading|Creating A New Heading]] if one does not exist.
+ 1. Scroll down in the edit window to the section that best fits your tutorial (eg: ```== Video ==```, {{{== Audio ==}}}, etc.).<br/> See [[#heading|Creating A New Heading]] if one does not exist.
  1. Find information relevant to your tutorial in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
  1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
@@ -30,11 +29,30 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 <br/>
 <br/>
 <span id="formatting"></span>
-== Formatting Your Tutorial ==
+== Formatting Your Entry ==
 
 === Location ===
-You may place your tutorial listing anywhere within the relevant section.  
-: It is our hope that tutorials discussing the same specific topic will be grouped together within each section.
+: ''Action'': Place your tutorial listing anywhere within the relevant section.  
+: Tutorials discussing the same specific topic should be grouped together within each major section.
+: ''Markup'': see [[#Format|Format]] for details
+
+=== Format ===
+ 1. ''Action'': Create a linked title for your tutorial.<br/> ''Markup'':  Place a single space followed by an asterisk (and an optional space) before your link.  A link is created by surrounding the link address and link text, separated by a pipe with no spaces, by double brackets: ```
+ * [[link address|link text]]
+```
+ 1. ''Action'': Add a ''brief'' description of what the tutorial covers on the line below the link.<br/> ''Markup'': Place two blank spaces followed by a period (and an optional space) before your description text.
+: ```
+  . Description text
+```
+
+ The addition should appear as follows (existing header shown to illustrate spacing more clearly):
+ ```
+== Audio ==
+ * [[http://your.tutorial.html|Using Audio in SDL]]
+  . This tutorial discusses how to set up audio playback using SDL 1.3.
+```
+ ''Example'': See other entries on the [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page for examples.
+
 
 <span id="heading"></span>
 === Creating A New Heading ===
@@ -52,6 +70,8 @@ To create a new heading:
 
 
 
+<span id="creating"></span>
+== Creating A New Tutorial ==
 
 
 
