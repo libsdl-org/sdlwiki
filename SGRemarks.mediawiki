@@ -1,7 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 <!-- acl All:read -->
-'''DRAFT'''
 
 = Style Guide: Remarks =
 
@@ -42,7 +41,7 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |<( |3>''If'' there are __existing remarks__ on the page
 |''Action'': Add your remarks to the end of the Remarks section, or to a related grouping if there are existing remarks covering the same topic.
 |-
-|''Note'': Do not change or remove any of the existing content.
+|<<Color2(red,''Important!'')>> Do not change or remove any of the existing content.
 |-
 |''Example'': [[SDL_MixAudio]]()
 |}
