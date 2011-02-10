@@ -37,14 +37,14 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |<( |3 30%>''If'' your code example is the __first on the page__
 |''Action'': Replace the following text with your code<br/>```You can add your code example here```
 |-
-|<<Color2(red,''Important!'')>>: Do not change or remove any of the markup immediately above or below that line
+|<<Color2(red,''Important!'')>> Do not change or remove any of the markup immediately above or below that line.
 |-
 |''Example'': [[SDL_StopTextInput]]()<br/> ~-(Code Examples were empty at the time this was selected.-~)
 |-
 |<( |4>''If'' there are __existing code examples__ on the page
 |''Action'': Add a new code box with your code to the end of the Code Examples section, or to a related grouping if there are existing code examples covering the same topic
 |-
-|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||''Note'': Do not change or remove any of the existing content.||
+|''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||<<Color2(red,''Important!'')>> Do not change or remove any of the existing content.||
 ||''Example'': [[SDL_Init]]()||
 
 
