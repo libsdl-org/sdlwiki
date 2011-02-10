@@ -175,7 +175,7 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
       ''generates''
 : <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
 
-  To colorize text within a table see [[#tables|Tables]] below.
+  The Color2 macro will work within a table also!  However, there are other options for colorizing text (and backgrounds) in tables.  See [[#tables|Tables]] below for more info.
 
   <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
 
