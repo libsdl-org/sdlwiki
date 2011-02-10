@@ -35,7 +35,7 @@ Before you save your changes please include a note in the Comment field below th
 
 {i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
 
-When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
+When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
 ~-(from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
@@ -133,8 +133,8 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
   ''Example'': ```''italics text''``` generates ''italics text''
 ==== Monospace ====
  <code>Monospace</code>
-* Place a backquote on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
-  ''Example'': ```'monospace text'``` generates <code>monospace text</code>
+* Place a backtick on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
+  ''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
 ==== Code ====
  ```Code (or Verbatim Text)```
 * Use three curly brackets surrounding text to be rendered as code.
@@ -190,7 +190,7 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
  Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so it is important that you manually hyperlink these.  
 * A hyperlink to another page (especially within the wiki) is created, in most cases, by enclosing the text to be linked in double brackets:<br/> ```[[linktarget]]```
 : ''Example'':  Typing ```SDL_VideoInit``` will produce SDL_VideoInit, an incomplete hyperlink, because only the CamelCase portion of the name is automatically recognized by the wiki as a hyperlink.  You will need to type {{{[[SDL_VideoInit]]}}} to include the SDL_ in the link ([[SDL_VideoInit]]).
-* If a hyperlink is automatically created where you __don't__ want one, adding 2 backticks (```<code></code>```) to interrupt the linked phrase or an exclamation mark (!) at the beginning of the incorrect link will usually remove the automatic link without appearing in the displayed text.
+* If a hyperlink is automatically created where you __don't__ want one, adding 2 backticks (```<code></code>```) to interrupt the linked phrase or an exclamation mark ({{{!}}}) at the beginning of the incorrect link will usually remove the automatic link without appearing in the displayed text.
 : ''Example'':  If typed verbatim, the data field ```BitsPerPixel``` is automatically linked, as shown here (BitsPerPixel).  This is pointless because individual data fields will not have their own pages, making this a useless, dead link.  Typing {{{Bits<code></code>Per<code></code>Pixel}}}  or {{{!BitsPerPixel}}} will prevent it from becoming a link, as shown here (Bits<code></code>Per<code></code>Pixel).
 * A hyperlink to an anchor (or any unique text on a page) is created, in most cases, by<br/>
    ```[[#anchorname|description]]```<br/>
