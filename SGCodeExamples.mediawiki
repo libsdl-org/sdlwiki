@@ -37,7 +37,7 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |<( |3 30%>''If'' your code example is the __first on the page__
 |''Action'': Replace the following text with your code<br/>```You can add your code example here```
 |-
-|''Note'': Do not change or remove any of the markup immediately above or below that line
+|<<Color2(red,''Important!'')>>: Do not change or remove any of the markup immediately above or below that line
 |-
 |''Example'': [[SDL_StopTextInput]]()<br/> ~-(Code Examples were empty at the time this was selected.-~)
 |-
