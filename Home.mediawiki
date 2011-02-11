@@ -14,13 +14,19 @@ You can find the old SDL 1.2 wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading in the left-hand menu to access:
 
+* [[Introduction]]
+: An introduction to the features in SDL 1.3.
 * API reference [[CategoryAPI|by Name]] or [[APIByCategory|by Category]]
+: The official documentation for the API.  Look here to find detailed information about the functions, structures, and enumerations.
 * [[Tutorials]]
+: Want to learn about a feature in SDL you haven't used before?  Here's a great place to get started!
 * [[Articles]]
+: A sampling of the articles that have been written about SDL.
 * [[Books]]
+: Looking for more information than you can get online?  Check out the books listed here.
 * [[FAQs]]
+: A few of the most commonly asked questions about using SDL are answered here.
 * [http://forums.libsdl.org/ Forums]
-
-For an introduction to the features in SDL 1.3 check out the [http://wiki.libsdl.org/moin.cgi/Introduction Introduction] page.
-
-Users wishing to contribute content should follow the guidelines provided in the [http://wiki.libsdl.org/moin.cgi/Contributing Contributing] guide.
+: A great place to keep up with the latest news, help other users out, and ask questions.
+* [[Contributing]]
+: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
