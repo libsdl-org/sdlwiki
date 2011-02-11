@@ -21,7 +21,7 @@ Use the links under the '''Navigation Links''' heading on the left-hand menu to 
 * [[FAQs]]
 * [http://forums.libsdl.org/ Forums]
 
-Users wishing to contribute content should follow the guidelines provided in the [http://wiki.libsdl.org/moin.cgi/APIContributionStyleGuide SDL API Contribution Style Guide].
+Users wishing to contribute content should follow the guidelines provided in the [http://wiki.libsdl.org/moin.cgi/Contributing Contributing] guide.
 
 == Introduction to SDL ==
 === What is SDL? ===
