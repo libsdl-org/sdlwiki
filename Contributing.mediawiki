@@ -46,6 +46,8 @@ To help you with this we have created a series of resources:
 
 : If you find something that is not addressed or is unclear in a style guide please post your questions using the feedback form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
+: ''More guides will be added over the coming weeks!''
+
 <span id="email"></span>
 === Email Contact ===
 : For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
