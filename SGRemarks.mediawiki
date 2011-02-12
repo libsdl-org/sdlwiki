@@ -23,7 +23,7 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
  1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this heading following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
- 1. Save your work when you are satisfied with your edits by clicking <<Color2(blue,Save Changes)>> in the left column.  
+ 1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box.  
 For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
 <br/>
 <br/>
