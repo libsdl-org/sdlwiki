@@ -316,12 +316,30 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 
 == Miscellaneous Notes ==
-Some terms used in the Style Guides:
-: <span id="api"></span>'''API Page''': Refers to any Function, Structure, or Enumeration page.
-: <span id="category"></span>'''Category Page''': Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
+
+=== Style Guide Terminology ===
+Here are some terms used in the style guides that are intended to have specific meanings or purposes that may or may not be intuitively clear:
+<span id="api"></span>
+: '''API Page'''
+: Refers to any Function, Structure, or Enumeration page.
+<span id="category"></span>
+: '''Category Page'''
+: Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
+: '''''Action'':'''
+: The instructions immediately following ''Action'': indicate what you should do to apply the style guide guidelines.  In some cases you will select the ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action''.
+: ''Action'' is almost always followed by ''Markup'' and may also be followed by ''Note'', ''<<Color2(red,Important!)>>'', and/or ''Example'' (see below).
+: '''''Markup'':'''
+: The instructions immediately following ''Markup'': indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.
+: '''''Note'':'''
+: The instructions immediately following ''Note'': should be taken into consideration as necessary.  
+: '''''<<Color2(red,Important!)>>'''''
+: Similar to a ''Note'', but indicates that the noted information should be heeded by all contributors. 
+: '''''Example'':'''
+: Points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
 
 
 
+=== Other Help ===
 Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting]
