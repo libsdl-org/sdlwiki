@@ -125,3 +125,6 @@ Note the different entries for 8 & 16 bit screendepth. I.e. the 320x240 resoluti
 
 To test these entries, restart X after you modified XF86Config and press ctrl-alt-plus and ctrl-alt-minus to cycle through the resolutions.
 -- contributed by Andreas Umbach
+
+== How do I get all the dependencies for building SDL on Ubuntu? ==
+Run the following command: sudo apt-get build-dep libsdl1.2
