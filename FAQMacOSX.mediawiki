@@ -98,3 +98,6 @@ DST="build/$PRODUCT_NAME.app/Contents/Frameworks" mkdir -p "$DST" /Developer/Too
 : "$DST"
 
 While you're at it, also remember to turn on debugging symbols and turn down the optimization level (0 is best for debugging). You will need to clean and rebuild the project for this to take effect.
+
+== How do I include the SDL framework in my application? ==
+One good strategy can be found here:  [http://overooped.com/post/42240519/properly-bundling-frameworks-in-your-application Properly bundling .frameworks in your application package]
