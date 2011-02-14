@@ -66,7 +66,7 @@ You can add your code example here
 '''subsystem''' may be one of the following:
 <<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>
 
-There are currently no Cocoa window events.
+There are currently no Cocoa or UIKit window events.
 
 ----
 [[CategoryStruct]], [[CategorySWM]]
