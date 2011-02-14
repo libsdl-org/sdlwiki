@@ -3,9 +3,9 @@
 '''DRAFT'''
 
 = SDL_RemoveTimer =
-Use this function to remove one of the ,,multiple,, timers ^created with [[SDL_AddTimer]](),^ knowing its ID.
+Use this function to remove a timer, ^created with [[SDL_AddTimer]](),^ knowing its ID.
 
-<<Color2(green,How do you get the ID?  Should that info be included on this page?  Does it have to be "multiple" timers or could you remove the only timer?)>>
+<<Color2(green,How do you get the ID?  Should that info be included on this page?)>>
 
 
 == Syntax ==
@@ -42,7 +42,7 @@ SDL_RemoveTimer(my_timer_id);
 <<Color2(green,I don't think that math works...  33/10*10 is still 33.)>>
 
 == Remarks ==
-''You can add useful comments here''
+/!\ It is not safe to remove a timer multiple times.
 
 == Related Functions ==
 :[[SDL_AddTimer]]
