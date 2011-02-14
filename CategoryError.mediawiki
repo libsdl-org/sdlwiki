@@ -5,7 +5,7 @@
 
 = Error Handling =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_error.h SDL_error.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_error.h SDL_error.h]
 
 
 == Introduction ==
