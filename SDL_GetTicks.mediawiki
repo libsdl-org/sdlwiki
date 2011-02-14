@@ -24,7 +24,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Note that this value wraps if the program runs for more than ~49 days.
+This value wraps if the program runs for more than ~49 days.
 
 *<br/>
 {i} This function can be used to build a double click handling routine. In fact, there is currently no such mouse event in the SDL event subsystem. One solution consists of calculating the interval between two mouse clicks by saving the values returned by [[SDL_GetTicks]](). Then if the difference between two values returned by [[SDL_GetTicks]]() is inside a predefined threshold, the application can fire a software double click event. <br/>*
