@@ -5,7 +5,7 @@
 
 = Initialization & Shutdown =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/tip/include/SDL.h SDL.h]
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL.h SDL.h]
 
 
 == Introduction ==
