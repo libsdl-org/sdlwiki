@@ -6,7 +6,7 @@
 
 = Audio Device Management, Playing and Recording =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_audio.h SDL_audio.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_audio.h SDL_audio.h]
 
 
 == Introduction ==
