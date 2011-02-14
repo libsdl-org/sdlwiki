@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_SYSWM_TYPE =
 An enumeration of the various supported windowing subsystems.
@@ -7,6 +8,9 @@ An enumeration of the various supported windowing subsystems.
 
 == Values ==
 {|
+|SDL_SYSWM_UNKNOWN
+|
+|-
 |SDL_SYSWM_WINDOWS
 |Microsoft Windows^®^
 |-
@@ -18,6 +22,9 @@ An enumeration of the various supported windowing subsystems.
 |-
 |SDL_SYSWM_COCOA
 |Apple OS X
+|-
+|SDL_SYSWM_UIKIT
+|
 |}
 
 == Code Examples ==
