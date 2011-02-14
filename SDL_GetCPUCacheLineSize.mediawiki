@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetCPUCacheLineSize =
+Use this function to return the L1 cache line size of the CPU.
+
+
+== Syntax ==
+```c++
+int SDL_GetCPUCacheLineSize(void)
+```
+
+== Return Value ==
+Returns the L1 cache line size of the CPU on success^, or a negative error code on failure; call [[SDL_GetError]]() for more information^.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is useful for determining multi-threaded structure padding or SIMD prefetch sizes.
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryCPU]]
