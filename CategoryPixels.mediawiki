@@ -4,7 +4,7 @@
 <!-- language en -->
 
 = Pixel Formats and Conversion Routines =
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/tip/include/SDL_pixels.h SDL_pixels.h]
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_pixels.h SDL_pixels.h]
 
 
 == Introduction ==
