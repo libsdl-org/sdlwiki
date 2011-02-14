@@ -13,13 +13,13 @@
 |'''View the header'''
 |-
 |[CategoryInit|Initialization & Shutdown]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL.h SDL.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL.h SDL.h] 
 |-
 |[CategoryError|Error Handling]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_error.h SDL_error.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_error.h SDL_error.h] 
 |-
 |[CategoryVersion|Querying SDL Version]] 
-|[[http://hg.libsdl.org/SDL/file/tip/include/SDL_version.h SDL_version.h] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h] 
 |}
 
 
