@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+'''DRAFT'''
 
 = SDL_SysWMinfo =
 A structure that contains system-dependent information about a window.
@@ -62,6 +63,14 @@ A structure that contains system-dependent information about a window.
 |NSWindow*
 |'''cocoa.window'''
 |the Cocoa window
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_UIKIT''
+|-
+|UIWindow*
+|'''uikit.window'''
+|the UIKit window
 |}
 
 == Code Examples ==
