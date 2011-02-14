@@ -8,9 +8,9 @@ Use this function to add a new timer to the pool of timers already running.
 
 == Syntax ==
 ```c++
-SDL_TimerID SDL_AddTimer(Uint32               interval,
-                         SDL_NewTimerCallback callback,
-                         void*                param)
+SDL_TimerID SDL_AddTimer(Uint32            interval,
+                         SDL_TimerCallback callback,
+                         void*             param)
 ```
 
 == Function Parameters ==
@@ -24,8 +24,6 @@ SDL_TimerID SDL_AddTimer(Uint32               interval,
 |'''param'''
 |^the parameters of the timer^ ''-or-'' *the user parameter which is passed to the callback function*
 |}
-
-<<Color2(green,Should the callback function SDL_NewTimerCallback details be listed here instead of in Remarks?)>>
 
 == Return Value ==
 Returns a timer ID or NULL when an error occurs^; call [[SDL_GetError]]() for more information.^
@@ -99,14 +97,14 @@ while (SDL_PollEvent (&event))
 ''^[[SDL_AddTimer]]()^ adds a callback function to be run after the specified number of milliseconds has elapsed.'' 
 The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
 
-<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  It also seems to be identical to the one for SDL_SetTimer.  Which is the better version?)>>
+<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  Which is the better version?)>>
 
 The callback function is passed the current timer interval and returns the next timer interval.  If the returned value is the same as the one passed in, the ''periodic alarm'' continues, ''otherwise a new alarm is scheduled''.  If the ''callback returns'' 0, the ''periodic alarm'' is canceled.
 
 The '''callback''' parameters are as follows:
  ```
-Uint32 SDL_NewTimerCallback(Uint32 interval, 
-                            void*  param)
+Uint32 SDL_TimerCallback(Uint32 interval, 
+                         void*  param)
 ```
 
 Another way to cancel a currently-running timer is by calling [[SDL_RemoveTimer]]() with the timer's ID (which was returned from [[SDL_AddTimer]]()).
