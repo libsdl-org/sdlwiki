@@ -8,7 +8,7 @@
 
 = Force Feedback Support =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/tip/include/SDL_haptic.h SDL_haptic.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_haptic.h SDL_haptic.h]
 
 
 == Introduction ==
