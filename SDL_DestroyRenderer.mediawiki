@@ -28,4 +28,4 @@ You can add your code example here
 :[[SDL_CreateRenderer]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
