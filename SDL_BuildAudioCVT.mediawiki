@@ -60,7 +60,7 @@ For information on audio formats see [[SDL_AudioSpec]].
 
 *<br/>Currently only rate conversions of 2^x^ and (1/2)^x^ with x > 0 are done, ,,nearing,, ^whichever most closely approximates^ the requested rate conversion.<br/>*
 
-<<Color2(green,Is there a 'you can call' function to "automatically" get more information in this case like there was for [[SDL_SetTextureScaleMode]] [[SDL_SetTextureColorMod]] [[SDL_SetTextureBlendMode]] [[SDL_SetTextureAlphaMod]] etc?  I thought it would be [[SDL_ConvertAudio]]() but that seems to ''use'' the struct not set it up.  If this is the only other RF then does the programmer need to determine whether conversion is possible and manually set that as a fixed data value when the struct is first set up?)>>
+<<Color2(green,Is there a 'you can call' function to "automatically" get more information in this case like there was for [[SDL_SetTextureColorMod]] [[SDL_SetTextureBlendMode]] [[SDL_SetTextureAlphaMod]] etc?  I thought it would be [[SDL_ConvertAudio]]() but that seems to ''use'' the struct not set it up.  If this is the only other RF then does the programmer need to determine whether conversion is possible and manually set that as a fixed data value when the struct is first set up?)>>
 
 ^You can call [[some function]]() to fill in an [[SDL_AudioCVT]] structure with the remaining information about the current audio converter.  This structure will have the <code>needed</code> member/mask set to 1 if conversion is possible.^
 
