@@ -42,4 +42,4 @@ You can add your code example here
 :[[SDL_RenderPresent]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
