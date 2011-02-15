@@ -14,14 +14,14 @@
 This category contains functions for handling display, window, and rendering actions.
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryVideo)>>
+<<FullSearch(category:CategoryEnum CategoryVideo)>>
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryVideo)>>
+<<FullSearch(category:CategoryStruct CategoryVideo)>>
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryVideo -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryVideo -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
