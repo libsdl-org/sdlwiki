@@ -49,4 +49,4 @@ You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] struct
 :[[SDL_SetTextureAlphaMod]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
