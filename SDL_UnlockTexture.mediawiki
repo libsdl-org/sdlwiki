@@ -30,4 +30,4 @@ You can add your code example here
 :[[SDL_LockTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
