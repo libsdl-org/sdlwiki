@@ -48,4 +48,4 @@ If you don't want to mark the entire area dirty you can pass 0 for '''markDirty'
 :[[SDL_UnlockTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
