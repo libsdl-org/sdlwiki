@@ -35,4 +35,4 @@ You can add your code example here
 :[[SDL_SetTextureBlendMode]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
