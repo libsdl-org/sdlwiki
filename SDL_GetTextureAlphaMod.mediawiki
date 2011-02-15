@@ -36,4 +36,4 @@ You can add your code example here
 :[[SDL_SetTextureAlphaMod]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
