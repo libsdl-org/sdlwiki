@@ -30,4 +30,4 @@ void SDL_RenderPresent(void)
 :[[SDL_SetRenderDrawColor]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
