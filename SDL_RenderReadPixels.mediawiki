@@ -44,4 +44,4 @@ WARNING: This is a very slow operation, and should not be used frequently.
 
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
