@@ -18,7 +18,7 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 |a function that gets called when an event happens; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|^a pointer filled in with user-specified information to be filtered^
+|^a pointer to the event queue to filter^
 |}
 
 == Code Examples ==
