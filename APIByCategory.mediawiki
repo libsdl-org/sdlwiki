@@ -29,7 +29,7 @@
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[CategoryVideo|Display Management, Window Management]] 
+|[CategoryVideo|Display and Window Management]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_video.h SDL_video.h] 
 |-
 |[CategoryRender|2D Accelerated Rendering]] 
