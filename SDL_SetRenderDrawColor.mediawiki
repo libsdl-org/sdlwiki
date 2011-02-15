@@ -52,4 +52,4 @@ You can add your code example here
 :[[SDL_RenderFillRects]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
