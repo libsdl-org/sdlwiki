@@ -37,4 +37,4 @@ You can add your code example here
 :[[SDL_UnlockTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
