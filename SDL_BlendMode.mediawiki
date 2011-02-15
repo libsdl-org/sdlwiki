@@ -10,17 +10,11 @@ An enumeration of blend modes used in [[SDL_RenderCopy]]() and drawing operation
 |SDL_BLENDMODE_NONE
 |no blending
 |-
-|SDL_BLENDMODE_MASK
-|dst = A ? src : dst (alpha is mask)
-|-
 |SDL_BLENDMODE_BLEND
 |dst = (src * A) + (dst * (1-A))
 |-
 |SDL_BLENDMODE_ADD
 |dst = (src * A) + dst
-|-
-|SDL_BLENDMODE_MOD
-|dst = src * dst
 |}
 
 == Code Examples ==
