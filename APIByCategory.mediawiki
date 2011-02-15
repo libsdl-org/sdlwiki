@@ -12,7 +12,7 @@
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[CategoryInit|Initialization & Shutdown]] 
+|[CategoryInit|Initialization and Shutdown]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL.h SDL.h] 
 |-
 |[CategoryError|Error Handling]] 
