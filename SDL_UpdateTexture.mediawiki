@@ -46,4 +46,4 @@ This function will work with streaming textures, but for optimization reasons yo
 :[[SDL_UnlockTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
