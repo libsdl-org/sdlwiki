@@ -39,4 +39,4 @@ The surface is not modified or freed by this function.
 :[[SDL_QueryTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
