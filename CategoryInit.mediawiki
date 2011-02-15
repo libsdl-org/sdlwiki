@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= Initialization & Shutdown =
+= Initialization and Shutdown =
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL.h SDL.h]
 
