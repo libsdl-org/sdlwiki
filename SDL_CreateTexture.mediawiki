@@ -49,4 +49,4 @@ You can add your code example here
 :[[SDL_SelectRenderer]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
