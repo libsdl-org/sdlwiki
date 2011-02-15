@@ -30,4 +30,4 @@ You can add your code example here
 :[[SDL_QueryTexturePixels]]
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryEnum]], [[CategoryRenderer]]
