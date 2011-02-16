@@ -7,12 +7,16 @@ Use this function to create a texture from an existing surface.
 
 == Syntax ==
 ```c++
-SDL_Texture* SDL_CreateTextureFromSurface(Uint32       format,
-                                          SDL_Surface* surface)
+SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
+                                          Uint32        format,
+                                          SDL_Surface*  surface)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|^the rendering context to use^
+|-
 |'''format'''
 |one of the enumerated values in [[SDL_PixelFormatEnum]], or 0 to pick an appropriate format; see [[#format|Remarks]] for details
 |-
