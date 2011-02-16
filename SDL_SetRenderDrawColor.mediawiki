@@ -17,7 +17,7 @@ int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
 == Function Parameters ==
 {|
 |'''renderer'''
-|^the rendering context^
+|the rendering context
 |-
 |'''r'''
 |the red value used to draw on the rendering target
