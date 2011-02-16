@@ -7,11 +7,15 @@ Use this function to get the blend mode used for drawing operations.
 
 == Syntax ==
 ```c++
-int SDL_GetRenderDrawBlendMode(SDL_BlendMode* blendMode)
+int SDL_GetRenderDrawBlendMode(SDL_Renderer*  renderer,
+                               SDL_BlendMode* blendMode)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''blendMode'''
 |a pointer filled in with the current [[SDL_BlendMode]]; see [[#blendMode|Remarks]] for details
 |}
