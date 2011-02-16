@@ -7,8 +7,14 @@ Use this function to clear the current rendering target with the drawing color.
 
 == Syntax ==
 ```c++
-int SDL_RenderClear(void)
+int SDL_RenderClear(SDL_Renderer* renderer)
 ```
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the rendering context
+|}
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
