@@ -2,12 +2,12 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_CreateRenderer =
-Use this function to create and make active a 2D rendering context for a window.
+Use this function to create a 2D rendering context for a window.
 
 
 == Syntax ==
 ```c++
-int SDL_CreateRenderer(SDL_Window* window,
+SDL_Renderer* SDL_CreateRenderer(SDL_Window* window,
                        int  	   index,
                        Uint32  	   flags)
 ```
@@ -25,7 +25,7 @@ int SDL_CreateRenderer(SDL_Window* window,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns a valid rendering context or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -40,7 +40,6 @@ You can add your code example here
 :[[SDL_DestroyRenderer]]
 :[[SDL_GetNumRenderDrivers]]
 :[[SDL_GetRendererInfo]]
-:[[SDL_SelectRenderer]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
