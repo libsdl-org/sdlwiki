@@ -33,7 +33,7 @@ The '''filter''' function has the following form:
  ```
 int SDL_EventFilter(void* userdata, SDL_Event* event)
 ```
-where '''userdata''' is the event queue to filter and '''event''' is the desired event to pull from the queue.
+where <code>userdata</code> is the event queue to filter and <code>event</code> is the desired event to pull from the queue.
 <<Color2(green,Should this be formatted more like the syntax section?)>>
 <!-- #End Include here -->
 
