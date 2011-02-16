@@ -7,7 +7,8 @@ Use this function to read pixels from the current rendering target.
 
 == Syntax ==
 ```c++
-int SDL_RenderReadPixels(const SDL_Rect* rect,
+int SDL_RenderReadPixels(SDL_Renderer*   renderer,
+                         const SDL_Rect* rect,
                          Uint32          format,
                          void*           pixels,
                          int             pitch)
@@ -15,6 +16,9 @@ int SDL_RenderReadPixels(const SDL_Rect* rect,
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''rect'''
 |an [[SDL_Rect]] structure representing the area to read, or NULL for the entire render target
 |-
