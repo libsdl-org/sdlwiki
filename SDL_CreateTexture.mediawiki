@@ -2,19 +2,23 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_CreateTexture =
-Use this function to create a texture for the current rendering context.
+Use this function to create a texture for a rendering context.
 
 
 == Syntax ==
 ```c++
-SDL_Texture* SDL_CreateTexture(Uint32 format,
-                               int    access, 
-                               int    w,
-                               int    h)
+SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
+                               Uint32        format,
+                               int           access, 
+                               int           w,
+                               int           h)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|^the rendering context^
+|-
 |'''format'''
 |one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
 |-
