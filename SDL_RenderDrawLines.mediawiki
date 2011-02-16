@@ -7,12 +7,16 @@ Use this function to draw a series of connected lines on the current rendering t
 
 == Syntax ==
 ```c++
-int SDL_RenderDrawLines(const SDL_Point* points,
+int SDL_RenderDrawLines(SDL_Renderer*    renderer,
+                        const SDL_Point* points,
                         int              count)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''points'''
 |an array of [[SDL_Point]] structures representing points along the lines
 |-
