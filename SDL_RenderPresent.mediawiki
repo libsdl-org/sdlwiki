@@ -7,8 +7,14 @@ Use this function to update the screen with rendering performed.
 
 == Syntax ==
 ```c++
-void SDL_RenderPresent(void)
+void SDL_RenderPresent(SDL_Renderer* renderer)
 ```
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the rendering context
+|}
 
 == Code Examples ==
 <<Include(SDL_RenderClear, , , from="== Code Examples ==", to="== Remarks ==")>>
