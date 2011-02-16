@@ -7,12 +7,16 @@ Use this function to draw a point on the current rendering target.
 
 == Syntax ==
 ```c++
-int SDL_RenderDrawPoint(int x, 
-                        int y)
+int SDL_RenderDrawPoint(SDL_Renderer* renderer,
+                        int           x, 
+                        int           y)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''x'''
 |the x coordinate of the point
 |-
