@@ -42,7 +42,7 @@ There is a complete example at [[SDL_RenderPresent]].
 
 The renderer replaces your previous ```SDL_Surface *screen``` object.  It has a few methods to draw points, lines, rectangles, blit textures, etc.  It also has a few dedicated post-processors for alpha-blending, masks, as well as add/multiply mode, cf. [[SDL_BlendMode]] and [[SDL_SetRenderDrawBlendMode]].  Introspection can be achieved using [[SDL_RendererInfo]].
 
-Instead of passing around a pointer to the current screen everywhere in your code, you specify the currently active screen using [[SDL_SelectRenderer]].
+Instead of passing around a pointer to the current screen everywhere in your code, you specify the currently active screen using --([[SDL_SelectRenderer]])--.
 
 You update the physical screen using [[SDL_RenderPresent]], which replaces ```SDL_Flip``` and {{{SDL_UpdateRects}}}.
 
