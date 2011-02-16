@@ -7,13 +7,13 @@ Use this function to destroy the rendering context for a window and free associa
 
 == Syntax ==
 ```c++
-void SDL_DestroyRenderer(SDL_Window* window)
+void SDL_DestroyRenderer(SDL_Renderer* renderer)
 ```
 
 == Function Parameters ==
 {|
-|'''window'''
-|the window associated with the renderer to be freed
+|'''renderer'''
+|the rendering context
 |}
 
 == Code Examples ==
