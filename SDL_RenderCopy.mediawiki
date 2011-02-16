@@ -7,13 +7,17 @@ Use this function to copy a portion of the texture to the current rendering targ
 
 == Syntax ==
 ```c++
-int SDL_RenderCopy(SDL_Texture*    texture,
+int SDL_RenderCopy(SDL_Renderer*   renderer,
+                   SDL_Texture*    texture,
                    const SDL_Rect* srcrect,
                    const SDL_Rect* dstrect)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''texture'''
 |the source texture; see [[#Remarks|Remarks]] for details
 |-
@@ -26,8 +30,6 @@ int SDL_RenderCopy(SDL_Texture*    texture,
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
-
-<<Color2(purple,If there is no rendering context current or the driver doesn't support the requested operation it returns -1.)>>
 
 == Code Examples ==
 ```c++
