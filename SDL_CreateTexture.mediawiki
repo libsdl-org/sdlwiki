@@ -17,7 +17,7 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
 == Function Parameters ==
 {|
 |'''renderer'''
-|^the rendering context^
+|the rendering context
 |-
 |'''format'''
 |one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
