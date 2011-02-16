@@ -50,7 +50,6 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
-:[[SDL_SelectRenderer]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
