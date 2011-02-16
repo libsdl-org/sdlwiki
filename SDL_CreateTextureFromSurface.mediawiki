@@ -15,7 +15,7 @@ SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
 == Function Parameters ==
 {|
 |'''renderer'''
-|^the rendering context to use^
+|the rendering context
 |-
 |'''format'''
 |one of the enumerated values in [[SDL_PixelFormatEnum]], or 0 to pick an appropriate format; see [[#format|Remarks]] for details
