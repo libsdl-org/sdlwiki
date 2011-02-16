@@ -7,14 +7,18 @@ Use this function to get the color used for drawing operations.
 
 == Syntax ==
 ```c++
-int SDL_GetRenderDrawColor(Uint8* r,
-                           Uint8* g,
-                           Uint8* b,
-                           Uint8* a)
+int SDL_GetRenderDrawColor(SDL_Renderer* renderer,
+                           Uint8*        r,
+                           Uint8*        g,
+                           Uint8*        b,
+                           Uint8*        a)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''r'''
 |a pointer filled in with the red value used to draw on the rendering target
 |-
