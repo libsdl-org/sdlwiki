@@ -7,14 +7,18 @@ Use this function to draw a line on the current rendering target.
 
 == Syntax ==
 ```c++
-int SDL_RenderDrawLine(int x1,
-                       int y1,
-                       int x2,
-                       int y2)
+int SDL_RenderDrawLine(SDL_Renderer* renderer,
+                       int           x1,
+                       int           y1,
+                       int           x2,
+                       int           y2)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''x1'''
 |the x coordinate of the start point
 |-
