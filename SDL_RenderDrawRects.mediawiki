@@ -7,12 +7,16 @@ Use this function to draw some number of rectangles on the current rendering tar
 
 == Syntax ==
 ```c++
-int SDL_RenderDrawRects(const SDL_Rect** rects,
+int SDL_RenderDrawRects(SDL_Renderer*    renderer,
+                        const SDL_Rect** rects,
                         int              count)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''rects'''
 |a pointer to an array of destination [[SDL_Rect]] structures
 |-
