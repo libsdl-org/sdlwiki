@@ -7,11 +7,15 @@ Use this function to fill a rectangle on the current rendering target with the d
 
 == Syntax ==
 ```c++
-int SDL_RenderFillRect(const SDL_Rect* rect)
+int SDL_RenderFillRect(SDL_Renderer*   renderer,
+                       const SDL_Rect* rect)
 ```
 
 == Function Parameters ==
 {|
+|'''renderer'''
+|the rendering context
+|-
 |'''rect'''
 |the [[SDL_Rect]] structure representing the area to fill, or NULL for the entire rendering target
 |}
