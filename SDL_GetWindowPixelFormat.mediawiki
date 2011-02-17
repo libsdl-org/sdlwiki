@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_GetWindowPixelFormat =
+Use this function to get the pixel format associated with the window.
+
+
+== Syntax ==
+```c++
+Uint32 SDL_GetWindowPixelFormat(SDL_Window* window)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to query
+|}
+
+== Return Value ==
+Returns the pixel format of the window on success, or ,,a negative error code,, ^an empty string^ on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
