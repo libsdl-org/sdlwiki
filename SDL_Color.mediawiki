@@ -43,8 +43,6 @@ If you have HTML color codes you would use hexidecimal values in this struct.
 :[[SDL_Palette]]
 
 == Related Functions ==
-:[[SDL_GetDisplayPalette]]
-:[[SDL_SetDisplayPalette]]
 :[[SDL_SetPaletteColors]]
 
 ----
