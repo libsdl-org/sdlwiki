@@ -46,8 +46,6 @@ If you have HTML color codes you would use hexidecimal values in this struct.
 :[[SDL_GetDisplayPalette]]
 :[[SDL_SetDisplayPalette]]
 :[[SDL_SetPaletteColors]]
-:[[SDL_GetTexturePalette]]
-:[[SDL_SetTexturePalette]]
 
 ----
 [[CategoryStruct]], [[CategoryPixels]]
