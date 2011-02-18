@@ -1,0 +1,21 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+'''DRAFT'''
+
+= SDL_REVISION =
+This macro is a string describing the source at a particular point in development.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+SDL_revision.h must be included in your program explicitly if you want to use the SDL_REVISION constant.
+
+== Related Functions ==
+:[[SDL_GetRevision]]
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
