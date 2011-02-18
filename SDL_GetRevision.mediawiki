@@ -11,7 +11,7 @@ const char* SDL_GetRevision(void)
 ```
 
 == Return Value ==
-Returns an arbitrary string (a hash value), uniquely identifying the exact revision of the SDL library in use.  (''Example'':  ```hg-5344:94189aa89b54```)
+Returns an arbitrary string, uniquely identifying the exact revision of the SDL library in use.  
 
 == Code Examples ==
 ```c++
@@ -19,7 +19,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-This value is the revision of the code you are linked with and may be different from the code you are compiling with.  It is only useful in comparing against other revisions, it is NOT an incrementing number.
+<<Include(SDL_REVISION, , , from="Start Include here.", to="##End Include here")>>
+
+This value is the revision of the code you are linked with and may be different from the code you are compiling with, which is found in the constant [[SDL_REVISION]].  It is only useful in comparing against other revisions, it is NOT an incrementing number.
 
 == Related Functions ==
 :[[SDL_GetVersion]]
