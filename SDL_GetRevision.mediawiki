@@ -21,7 +21,7 @@ You can add your code example here
 == Remarks ==
 <<Include(SDL_REVISION, , , from="Start Include here.", to="##End Include here")>>
 
-This value is the revision of the code you are linked with and may be different from the code you are compiling with, which is found in the constant [[SDL_REVISION]].  It is only useful in comparing against other revisions, it is NOT an incrementing number.
+This value is the revision of the code you are linked with and may be different from the code you are compiling with, which is found in the constant [[SDL_REVISION]].
 
 == Related Functions ==
 :[[SDL_GetVersion]]
