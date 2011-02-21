@@ -1,10 +1,12 @@
 = FAQ: Mac OS X =
 
 == What is supported? ==
-SDL supports Mac OS X 10.1 and newer, using either ProjectBuilder or the classic UNIX style build system. Currently only ProjectBuilder can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
+SDL supports Mac OS X 10.4 and newer, using either Project<code></code>Builder or the classic UNIX style build system. Currently only ProjectBuilder can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
+
+For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
 
 == What is the difference between the ProjectBuilder/XCode and the UNIX style build system? ==
-The SDL-devel package contains the SDL libraries in the form of so-called FrameWorks. That is perfectly find as long as you want to develop using Project Builder / XCode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
+The SDL-devel package contains the SDL libraries in the form of so-called Frame<code></code>Works. That is perfectly fine as long as you want to develop using Project Builder / XCode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
 
 When installed as a Framework, all SDL files (the library and the header files) are aggregated into a .framework bundle, and installed together into /Library/Frameworks/ or ~/Library/Frameworks/. There, PB and XCode can find it. But packages which want to use SDL but employ a UNIX style build system are usually not able to find SDL there (there are a few exceptions where people hand modified their configure scripts to allow using Frameworks on OSX, but those are rare).
 
