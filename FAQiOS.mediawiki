@@ -1,8 +1,12 @@
 = FAQ: iOS =
 
 
-<!-- #== Using SDL == -->
-<!-- #=== General === -->
+== Using SDL ==
+=== General ===
+==== What is supported? ====
+SDL supports iOS 3.2+
+
+For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
 
 == Developing with SDL ==
 === General ===
