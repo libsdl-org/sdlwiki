@@ -4,18 +4,17 @@
 == Using SDL ==
 === General ===
 ==== What is supported? ====
-SDL supports Windows XP, Vista, and 7.
+SDL supports Windows XP, Vista, and Windows 7.
 
-SDL can be built with Visual C++, Borland C++, Cygwin, MinGW, Dev-C++, and Watcom C++.
-
-SDL takes advantage of DirectX hardware acceleration when it is available, but falls back to the standard Win32 services if DirectX is not installed.
+SDL can be built with Visual C++, Cygwin, MinGW, and Dev-C++.
 
 For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
 
 
 === Windows 2000 ===
 ==== I'm running Windows 2000 and I can't copy SDL.dll! ====
-For some reason, archives created on Linux have the "Encrypted" property set when unpacked on Windows 2000. This can be unset by pushing Advanced from the General tab of the properties window and unchecking Encrypt contents checkbox. The files can then be copied normally.
+For some reason, archives created on Linux have the "Encrypted" property set when unpacked on Windows 2000. This can be unset by pushing Advanced from the General tab of the properties window and unchecking Encrypt contents check box. The files can then be copied normally.
+
 
 == Developing with SDL ==
 === Windows CE ===
