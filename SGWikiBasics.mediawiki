@@ -329,15 +329,17 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : Found at the beginning of detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suit your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
 : In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
 : '''''Action'':'''
-: The instructions immediately following ''Action'': indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
-: ''Action'' is almost always followed by ''Markup'' and may also be followed by ''Note'', ''<<Color2(red,Important!)>>'', and/or ''Example'' (see below).
+: The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
+: ''Action'' is almost always followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
 : /!\ Please read any ''Note'' or ''<<Color2(red,Important!)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped.
 : '''''Markup'':'''
-: The instructions immediately following ''Markup'': indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.
+: The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
+: '''''How'':'''
+: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.
 : '''''Note'':'''
 : The instructions immediately following ''Note'': should be taken into consideration as necessary.  
 : '''''<<Color2(red,Important!)>>'''''
-: Similar to a ''Note'', but indicates that the noted information should be heeded by all contributors. 
+: Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
 : '''''Example'':'''
 : Points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
 <br/>
