@@ -4,7 +4,7 @@
 == Using SDL ==
 === General ===
 ==== What is supported? ====
-SDL supports Windows 95/98/NT/ME/2000/XP.
+SDL supports Windows XP, Vista, and 7.
 
 SDL can be built with Visual C++, Borland C++, Cygwin, MinGW, Dev-C++, and Watcom C++.
 
