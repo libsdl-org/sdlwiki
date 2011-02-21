@@ -10,6 +10,8 @@ SDL can be built with Visual C++, Borland C++, Cygwin, MinGW, Dev-C++, and Watco
 
 SDL takes advantage of DirectX hardware acceleration when it is available, but falls back to the standard Win32 services if DirectX is not installed.
 
+For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
+
 
 === Windows 2000 ===
 ==== I'm running Windows 2000 and I can't copy SDL.dll! ====
