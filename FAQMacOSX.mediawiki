@@ -1,14 +1,14 @@
 = FAQ: Mac OS X =
 
 == What is supported? ==
-SDL supports Mac OS X 10.4 and newer, using either Project<code></code>Builder or the classic UNIX style build system. Currently only ProjectBuilder can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
+SDL supports Mac OS X 10.4 and newer, using either Xcode or the classic UNIX style build system. Currently only Xcode can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
 
 For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
 
-== What is the difference between the ProjectBuilder/XCode and the UNIX style build system? ==
-The SDL-devel package contains the SDL libraries in the form of so-called Frame<code></code>Works. That is perfectly fine as long as you want to develop using Project Builder / XCode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
+== What is the difference between the Xcode and the UNIX style build system? ==
+The SDL-devel package contains the SDL libraries in the form of so-called Frame<code></code>Works. That is perfectly fine as long as you want to develop using Xcode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
 
-When installed as a Framework, all SDL files (the library and the header files) are aggregated into a .framework bundle, and installed together into /Library/Frameworks/ or ~/Library/Frameworks/. There, PB and XCode can find it. But packages which want to use SDL but employ a UNIX style build system are usually not able to find SDL there (there are a few exceptions where people hand modified their configure scripts to allow using Frameworks on OSX, but those are rare).
+When installed as a Framework, all SDL files (the library and the header files) are aggregated into a .framework bundle, and installed together into /Library/Frameworks/ or ~/Library/Frameworks/. There, Xcode can find it. But packages which want to use SDL but employ a UNIX style build system are usually not able to find SDL there (there are a few exceptions where people hand modified their configure scripts to allow using Frameworks on OSX, but those are rare).
 
 When installing UNIX style, SDL gets installed into /usr/local/bin, /usr/local/include and /usr/local/lib (the exact path can vary, for example the Fink SDL package will use /sw instead of /usr/local by default). This way, build system tuned to support generic UNIX systems are able to find them.
 
@@ -17,27 +17,7 @@ Either you can compile and install it from source (via the usual ./configure && 
 
 Note that as long as you static link the release builds of your application, it doesn't really matter which way you installed SDL -- for example, even if you installed it via Fink, if you static link SDL, your users do not have to install Fink.
 
-== What is SDLMain.m? Do I need it? Why is _main undefined? ==
-Just like main() is the entry point for C programs (inc. C++, Objective-C, and Objective-C++), SDL_main() is the main entry point for SDL programs. However, you don't actually write an SDL_main() function. The header file "SDL_main.h" remaps your main() function to the SDL_main() function with a function macro. Your SDL_main() function is called after the code in SDLMain.m has performed the required "bootstrap" initializations to support the SDL runtime.
 
-There are three things you have to do:
-
- 1. You must include either SDLMain.m/.h or libSDLmain in your application, because this is the code that defines SDL's entry point. If you fail to do this, it is likely that "_main undefined" will be thrown by the linker.
- 1. You must give your main() procedure the following prototype:
-: int main(int argc, char*argv[]);
-
- 1. You must make sure the file containing your main() procedure #includes SDL.h.
-
-Otherwise, the macro will not remap main() to SDL_main(), you will get an undefined _main error, or the bootstrap process will not run, and SDL will behave strangely or your application will crash or hang.
-
-== Is there a way to avoid SDLMain.m and Objective-C in my program? I want a pure C/C++ program. ==
-If you are using ProjectBuilder or XCode, then the answer is no. SDLMain.m must be included in your application, which requires Cocoa/Objective-C.
-
-You can still write your SDL application in C++. The easiest way to get started with this is to rename "main.c" in the project stationary to "main.cpp" and recompile your application.
-
-If you are developing using the UNIX variant of SDL, you can link libSDLmain.a into your application, which simply contains a precompile version of SDLmain.m.
-
-So for command-line/Makefile builds, just add -lSDLmain to your build commands like any other library and add "-framework Cocoa" to the gcc or ld flags. Better yet, use the sdl-config script (in the source code distribution) which computes the correct compiler and linker flags for you.
 
 == I can't get OpenGL to work. ==
 On Mac OS X, you access the OpenGL headers like so:
@@ -46,60 +26,11 @@ On Mac OS X, you access the OpenGL headers like so:
 
 The header file "SDL_opengl.h" accounts for the first two headers shown here on all supported SDL systems.
 
-If you are are using Project Builder, add OpenGL.framework to your project. On the command line, add:
+If you are are using Xcode, add OpenGL.framework to your project. On the command line, add:
 
 -framework OpenGL
 
 to the GCC or LD arguments in your Makefile
-
-== What's the deal with windowed mode? Why is it so much slower than fullscreen? Can I make it faster? ==
-In Mac OS X, all windows are double-buffered. The application (in this case, SDL's blitting engine) draws into the back buffer. The front buffer is that actual display video memory. When the application is finished drawing, it tells the window server to display the back buffer on the screen. The window server examines the back buffer of other on-screen windows that can affect the appearance of the window you are drawing into, composites your back buffer with the other ones to create the final image which goes back to visible video memory, and you see the result. This is how Quartz can achieve all those fancy alpha affects, and get tear-free window dragging and animation.
-
-The downside is that in the worst case you have to process 2X as many pixels as you normally would, and worse still if there is lots of compositing to do. In fullscreen mode, we bypass the window server and draw directly to video memory, which is why that is so much faster. We can't get away with that in windowed mode.
-
-You may be able to make things faster by calling SDL_UpdateRects() instead of SDL_UpdateRect() or SDL_Flip(). With SDL_UpdateRects() you can tell SDL exactly what rectangles of the surface you painted, and they will all be handed to the window server at once. That way, the window server does the least amount of work possible. Try using the QuartzDebug tool to investigate what areas of the screen you are telling the window server to redraw. If large areas aren't changing but are being updated, this optimization will really help you.
-
-If you must scroll/redraw the entire window every frame, try OpenGL. OpenGL will use graphics hardware in windowed mode, thus bypassing the window server's compositing engine. Just about every system that can run Mac OS X has hardware OpenGL support.
-
-Mac OS 10.2 (Jaguar) changes things a bit with QuartzExtreme. QuartzExtreme offloads compositing to the graphics hardware, so it can be much faster at some tasks. In addition, it uses busmaster DMA to transfer the backbuffer as a texture to the OpenGL compositor. This second point is of interest, since the backbuffer can be transferred while leaving the CPU free for other tasks. To get the best performance on 10.2, you have to take advantage of those idle CPU cycles.
-
-Since the DMA transfer occurs in SDL_UpdateRects()(or SDL_Flip() or SDL_UpdateRect()), try to delay all drawing to the screen surface until just before SDL_UpdateRects() is called so you can overlap the DMA transfer with other tasks. Also, you can use a double-buffered SDL surface (which translates to triple buffering). That way, you can overlap screen blitting operations with the DMA transfer. Remember the aformentioned 10.1 optimizations still apply (though to a lesser extent). In 10.2, you are optimizing the amount of data being DMA'd, not the amount of compositing done in the window server.
-
-Also in QE, the OpenGL compositor always uses 32-bit textures. So depending on the application, you may see better performance by using a 32-bit SDL surface since you avoid pixel format conversion. Note that you might not see a speedup since DMA overlap may be decreased if you're not careful. Remember that you can't draw into a surface while it is being DMA'd to video memory. If you try to, you'll just stall your application as it waits for the DMA transfer to complete, thus wasting valuable CPU cycles.
-
-== Why doesn't page flipping work? ==
-The SDL_DOUBLEBUF flag (and hence page flipping) is unsupported on Mac OS X. There is no support in the operating system for this feature.
-
-Prior to version 1.2.6, SDL did not report an error when SDL_DOUBLEBUF was used, but instead returned a single-buffered surface. This resulted in various visual anomalies, depending on the application.
-
-The only good alternatives are to use a software surface instead (SDL_SWSURFACE), or use OpenGL. With OpenGL, you'll have to write your own blitting engine, or borrow someone elses.
-
-Update: SDL 1.2.6 has added experimental retrace-synchronized software "flipping". You access it by using SDL_DOUBLBUF|SDL_HWSURFACE|SDL_FULLSCREEN passed to SDL_SetVideoMode. SDL_Flip() will return immediately and the flip will be performed asynchronously in a separate thread.
-
-== I can't get debugging to work in Project Builder. ==
-If the debugger seems to do nothing when you start debugging, and you have the Dec. 2002 Developer Tools installed, you've probably hit a known bug gdb introduced in this version of the developer tools. To get around this bug, the SDL framework must reside in YourApp.app/Contents/Frameworks/
-
-Here are two workarounds, pick which one you like best (the second one is the better choice, IMHO).
-
-First Method: Create a "Copy Files" build phase. Here's how:
-
- 1. Drag "SDL.framework" from the Finder into your project
- 1. Go to the target settings (command-option-e).
- 1. Control-click on the Build Phases and select "New Build Phase->New Copy Files Build Phase".
- 1. For "Where" enter "Frameworks"
- 1. For "Files:" drag the framework from the Groups & Files pane to the text box
-
-Second Method: Create a "Shell Script" build phase.
-
- 1. Go to the target settings (command-option-e).
- 1. Control-click on the Build Phases and select "New Build Phase->New Shell Script Build Phase".
- 1. Enter this script:
-
-DST="build/$PRODUCT_NAME.app/Contents/Frameworks" mkdir -p "$DST" /Developer/Tools/CpMac -r ~/Library/Frameworks/SDL.framework
-
-: "$DST"
-
-While you're at it, also remember to turn on debugging symbols and turn down the optimization level (0 is best for debugging). You will need to clean and rebuild the project for this to take effect.
 
 == How do I include the SDL framework in my application? ==
 One good strategy can be found here:  [http://overooped.com/post/42240519/properly-bundling-frameworks-in-your-application Properly bundling .frameworks in your application package]
