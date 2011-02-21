@@ -21,3 +21,6 @@
 |-
 |<style="border:0">[[FAQMacOSX|Mac OS X]] 
 |<style="border:0">Questions regarding SDL on Mac OS X 
+|-
+|<style="border:0">[[FAQiOS|iOS]] 
+|<style="border:0">Questions regarding SDL on iOS 
