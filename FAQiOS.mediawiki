@@ -1,0 +1,15 @@
+= FAQ: iOS =
+
+
+<!-- #== Using SDL == -->
+<!-- #=== General === -->
+
+== Developing with SDL ==
+=== General ===
+==== I'm getting EXC_BAD_ACCESS in the function _class_getMeta, what do I do? ====
+
+Go to the Xcode menu Project -> Edit Project Settings, scroll down to the Linking section, and add -ObjC to the "Other Linker Flags" option.  If you have target specific settings for your linker flags, you'll need to add this at the target level instead, by right clicking the target and selecting the "Get Info" menu option.
+
+==== Why does my application quit at the loading screen on systems running iOS 3.1? ====
+
+These devices are probably using the arm6 processor instead of the arm7 processor.  Try changing your "Active Architecture" to arm6 in the Xcode main project window.
