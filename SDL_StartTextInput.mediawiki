@@ -12,7 +12,8 @@ void SDL_StartTextInput(void)
 ```
 
 == Code References ==
-Declared at [http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h#l143 include/SDL_keyboard.h line 143]
+Declared at [http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h#l143 include/SDL_keyboard.h line 143]<br/>
+Defined at [http://hg.libsdl.org/SDL/file/default/src/video/SDL_video.c#l2470 src/video/SDL_video.c line 2470]
 
 == Code Examples ==
 ```c++
