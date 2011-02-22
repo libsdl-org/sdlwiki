@@ -340,6 +340,8 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : The instructions immediately following ''Note'': should be taken into consideration as necessary.  
 : '''''<<Color2(red,Important!)>>'''''
 : Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
+<!-- # . '''''Hint'':''' -->
+<!-- #  . A ''Hint'' provides additional information, usually about an ''Action'' or ''Markup'' that isn't quite the same as a ''Note''. -->
 : '''''Example'':'''
 : Points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
 <br/>
