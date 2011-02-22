@@ -15,7 +15,6 @@ The [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page provides links to
 '''Please post appropriate tutorials that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.'''
 <br/>
-<br/>
 <span id="existing"></span>
 == Adding An Existing Tutorial ==
 ''The following instructions apply if you have already created your tutorial.  If you still need to create your tutorial see ''[[#creating|Creating A New Tutorial]]'' below first and then return here.''
@@ -87,11 +86,9 @@ Assuming your tutorial does not fit into any of the existing headings:
 : It is preferable to have a blank space above and below a heading.
 
 Return to [[#existing|Adding An Existing Tutorial]] to complete the process.
-
-
-
-
-
+<br/>
+<br/>
+<br/>
 <span id="creating"></span>
 == Creating A New Tutorial ==
  1. ''Action'': Create an address for your tutorial.
