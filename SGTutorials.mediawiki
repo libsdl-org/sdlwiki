@@ -53,7 +53,9 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 
 : A link is created by placing double brackets (```[[ ]]```) on either side of the <code>link address</code> and <code>link text</code>, which are separated by a pipe (|) with no spaces.
 
-: <code>link text</code> should be a short, simple title for your tutorial.
+: <code>link address</code> should be the complete web address for the tutorial.
+
+: <code>link text</code> should be a short, simple title for your tutorial.  It does not need to exactly match the address and may have blank spaces so it is grammatically correct.
  ```
  * [[link address|link text]]
 ```
@@ -110,7 +112,7 @@ http://wiki.libsdl.org/moin.cgi/PageName
  ''Example'': The address for the page [[SDL_BuildAudioCVT]]() is<br/>```http://wiki.libsdl.org/moin.cgi/SDL_BuildAudioCVT```
 
  <<Color2(red,''Important!'')>> Page addresses are case-sensitive. Be careful to name and spell accurately when creating a new page!
- ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': Copy all of your contents, cancel the page, and start over.<br/>Paste your contents into the new page and continue editing.||
+ ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': Copy all of your contents, cancel or close the page, and start over.<br/>Paste your contents into the new page and continue editing.||
  ||''Note'': Your old page and address will not be saved.||
  ||<( |2>''If'' you discover a typo in the address __after you saved the page__||''Action'': Send a message via ''Feedback'' or to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> requesting a correction.||
  ||''Note'': You will not be able to correct it yourself.||
@@ -126,7 +128,7 @@ http://wiki.libsdl.org/moin.cgi/PageName
 : If you prefer to use the GUI editor click <<Color2(blue,GUI/Text Mode)>> in the left column to switch to the GUI editor.
 
 
- 1.#3 ''Action'': Create your tutorial! Your tutorial page may have any formatting you feel suits the contents best. It is preferred that the general appearance remain consistent (or at least compatible) with the rest of the wiki as much as possible.
+ 1.#3 ''Action'': Create your tutorial!<br/>Your tutorial page may have any formatting you feel suits the contents best. It is preferred that the general appearance remain consistent (or at least compatible) with the rest of the wiki as much as possible.
 
  ''Note'': For information on markup see [http://wiki.libsdl.org/moin.cgi/SGWikiBasics]
 
