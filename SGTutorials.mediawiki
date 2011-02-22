@@ -25,7 +25,7 @@ The [http://wiki.libsdl.org/moin.cgi/Tutorials Tutorials] page provides links to
 
  1. Scroll down in the edit window to the section that best fits your tutorial (eg: ```== Video ==```, {{{== Audio ==}}}, etc.).<br/> See [[#heading|Creating A New Heading]] if one does not exist.
 
- 1. Find information relevant to your tutorial in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
+ 1. See [[#formatting|Formatting Your Entry]] below to find information relevant to your tutorial and apply the appropriate formatting as you create your entry.
 
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
 
@@ -38,16 +38,10 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 <span id="formatting"></span>
 == Formatting Your Entry ==
 
-=== Location ===
-: ''Action'': Place your tutorial listing anywhere within the relevant section.  
-: Tutorials discussing the same specific sub-topic should be grouped together within each major section.
-
-: ''Markup'': see [[#Format|Format]] below for specific instructions
-
-: ''Note'': It is preferable to have a blank line above and below your entry, separating it from any other entries or markup.
-
-=== Format ===
- 1. ''Action'': Create a linked title for your tutorial.
+=== Basic Format ===
+ 1. ''Action'': Create a linked title for your tutorial.  
+: It should be located under the appropriate section heading.
+: ''If'' there are other tutorials you may add yours anywhere in the section (top, middle, bottom) where it logically fits in.
 
  ''Markup'':  Place a single space followed by an asterisk (and an optional space) before your link.
 
@@ -59,6 +53,8 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
  ```
  * [[link address|link text]]
 ```
+
+: ''Note'': It is preferable to have a blank line above and below your entry, separating it from any other entries or markup.
 
  1. ''Action'': Add a ''brief'' description of what the tutorial covers on the line below the link.
 
