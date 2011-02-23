@@ -64,30 +64,37 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 
 <span id="spacing"></span>
 === Spacing ===
+Both vertical and horizontal spacing can be rendered differently depending upon the combination of formatting markup that is used.  If your formatting is not working out the way you want check the notes below on other formatting that you have used nearby that may be affecting how the local formatting is interpreted.
+ ''Example'': If you try to pick up a numbered list down the page after placing unnumbered lines at the same indent level, the next number in the numbered list will still count the unnumbered lines.  
+: See sections below for notes on known interference between markup.
+: <<Color2(red,''Important!'')>> Using a hard return (Enter key) at the end of a line is often '''not''' parsed as a line break.  To end a line and begin another either press the Enter key ''twice'' to put a space between paragraphs, or use a [[#break|Hard Line Break]] as described below.  
+: ''Note'': Indenting can affect vertical spacing.  See ''[[#vertical|Note]]'' below for details.
 
 <span id="indent"></span>
 ==== Indenting ====
-* Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
+: ''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
 * Use one space for each indent level desired. (this line has 2 spaces)
 
-: Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
-  ''Example'': ``` . This line starts with a period   ``` 
-   ''generates''<br/>
+: ''Note'': Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
+
+: ''Example'': ``` . This line starts with a period   ``` 
+  ''generates''<br/>
 : This line starts with a period
+
+: ''<<Color2(red,Important!)>>'' Indenting often leads to inadvertent creating of a list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
 
 <span id="break"></span>
 ==== Hard Line Break ====
- ```<br/>```
+ ''Markup'': ```<br/>```
 * Place the above markup wherever you want to force the following text onto the next line but keep it in the same paragraph.<br/>
-* Note that you cannot change indent level immediately following a hard line break.  (Seems like a hard break forces the next line into the same paragraph.)
-  ''Example'': Typing the following in the text editor ```
-   1 first line<<BR>>   2 this line typed on same line after hard line break markup, same indent<<BR>>    3 this line typed on same line after hard line break markup, +1 indent<<BR>>   4 this line typed on same line after hard line break markup, -1 indent<<BR>>   . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
+* ''Note'': You cannot change indent level immediately following a hard line break.  (Seems like a hard break forces the next line into the same paragraph.)
+: ''Example'': Typing the following in the text editor ```
+  1 first line<<BR>>  2 this line typed on same line after hard line break markup, same indent<<BR>>   3 this line typed on same line after hard line break markup, +1 indent<<BR>>  4 this line typed on same line after hard line break markup, -1 indent<<BR>>  . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
 ```
    ''generates''
-: 1 first line<br/>   2 this line typed on same line after hard line break markup, same indent<br/>    3 this line typed on same line after hard line break markup, +1 indent<br/>   4 this line typed on same line after hard line break markup, -1 indent<br/>   . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
+: 1 first line<br/>  2 this line typed on same line after hard line break markup, same indent<br/>   3 this line typed on same line after hard line break markup, +1 indent<br/>  4 this line typed on same line after hard line break markup, -1 indent<br/>  . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
 
-  {i} A hard return (Enter key) is often not recognized as a line break.<br/>
-  {i} Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
+:<span id="vertical"></span> ''Note'': Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
 : ''Example'': Typing the following in the text editor ```
  1 hard return followed by next line same indent
  2 hard return followed by next line +1 indent
@@ -340,8 +347,6 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : The instructions immediately following ''Note'': should be taken into consideration as necessary.  
 : '''''<<Color2(red,Important!)>>'''''
 : Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
-<!-- # . '''''Hint'':''' -->
-<!-- #  . A ''Hint'' provides additional information, usually about an ''Action'' or ''Markup'' that isn't quite the same as a ''Note''. -->
 : '''''Example'':'''
 : Points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
 <br/>
