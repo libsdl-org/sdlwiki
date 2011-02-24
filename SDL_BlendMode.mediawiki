@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_BlendMode =
 An enumeration of blend modes used in [[SDL_RenderCopy]]() and drawing operations.
@@ -29,14 +29,6 @@ You can add your code example here
 :[[SDL_RendererInfo]]
 
 == Related Functions ==
-:[[SDL_BlendFillRect]]
-:[[SDL_BlendFillRects]]
-:[[SDL_BlendLine]]
-:[[SDL_BlendLines]]
-:[[SDL_BlendPoint]]
-:[[SDL_BlendPoints]]
-:[[SDL_BlendRect]]
-:[[SDL_BlendRects]]
 :[[SDL_GetRenderDrawBlendMode]]
 :[[SDL_GetSurfaceBlendMode]]
 :[[SDL_GetTextureBlendMode]]
