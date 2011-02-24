@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetWindowSurface =
+Use this function to get an SDL surface associated with the window.
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to query
+|}
+
+== Return Value ==
+Returns a surface in the optimal format for the window, or NULL on error.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+You may not combine this with 3D or the rendering API on this window.
+
+== Related Functions ==
+:[[SDL_UpdateWindowSurface]]
+:[[SDL_UpdateWindowSurfaceRects]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
