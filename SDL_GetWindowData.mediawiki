@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetWindowData =
 Use this function to retrieve the data pointer associated with a window.
@@ -7,17 +7,21 @@ Use this function to retrieve the data pointer associated with a window.
 
 == Syntax ==
 ```c++
-void* SDL_GetWindowData(SDL_Window* window)
+void* SDL_GetWindowData(SDL_Window* window,
+                        const char* name)
 ```
 
 == Function Parameters ==
 {|
 |'''window'''
 |the window to query
+|-
+|'''name'''
+|the name of the pointer
 |}
 
 == Return Value ==
-Returns a data pointer associated with the window by the function [[SDL_SetWindowData]]().
+Returns the value associated with '''name'''.
 
 == Code Examples ==
 ```c++
