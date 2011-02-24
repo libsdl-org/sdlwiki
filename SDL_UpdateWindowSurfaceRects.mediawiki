@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_UpdateWindowSurfaceRects =
+Use this function to copy a number of rectangles on the window surface to the screen.
+
+
+== Syntax ==
+```c++
+int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
+                                 SDL_Rect*   rects,
+                                 int         numrects)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|^the window containing the rectangle(s)^
+|-
+|'''rects'''
+|the rectangle(s) to copy
+|-
+|'''numrects'''
+|the number of rectangles
+|}
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetWindowSurface]]
+:[[SDL_UpdateWindowSurfaceRect]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
