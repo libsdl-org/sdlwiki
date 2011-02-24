@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_CreateSoftwareRenderer =
+Use this function to create a 2D software rendering context for a surface.
+
+
+== Syntax ==
+```c++
+SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface* surface)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|the [[SDL_Surface]] structure representing the surface where rendering is done
+|}
+
+== Return Value ==
+Returns a valid rendering context or NULL if there was an error.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateRenderer]]
+:[[SDL_DestroyRenderer]]
+
+----
+[[CategoryAPI]], [[CategoryRender]]
