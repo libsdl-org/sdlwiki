@@ -1,13 +1,14 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_SetWindowData =
-Use this function to associate an arbitrary pointer with a window.
+Use this function to associate an arbitrary named pointer with a window.
 
 
 == Syntax ==
 ```c++
-void SDL_SetWindowData(SDL_Window* window,
+void* SDL_SetWindowData(SDL_Window* window,
+                       const char* name,
                        void*       userdata)
 ```
 
@@ -16,9 +17,15 @@ void SDL_SetWindowData(SDL_Window* window,
 |'''window'''
 |the window to associate with the pointer
 |-
+|'''name'''
+|the name of the pointer
+|-
 |'''userdata'''
 |the associated pointer
 |}
+
+== Return Value ==
+Returns the previous value associated with '''name'''.
 
 == Code Examples ==
 ```c++
@@ -26,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+'''name''' is case-sensitive.
 
 == Related Functions ==
 :[[SDL_GetWindowData]]
