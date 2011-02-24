@@ -21,7 +21,7 @@ SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns the created texture or 0 if no rendering context was active, the format was unsupported, or the surface width or height were out of range; call [[SDL_GetError]]() for more information.
+Returns the created texture or 0 on error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
