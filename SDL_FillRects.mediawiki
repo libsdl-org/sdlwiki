@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_FillRects =
 Use this function to perform a fast fill of a set of rectangles with a specific color.
@@ -42,16 +42,6 @@ You can add your code example here
 If there is a clip rectangle set on the destination (set via [[SDL_SetClipRect]]()), then this function will fill based on the intersection of the clip rectangle and '''rects'''.
 
 == Related Functions ==
-:[[SDL_BlendFillRect]]
-:[[SDL_BlendFillRects]]
-:[[SDL_BlendRect]]
-:[[SDL_BlendRects]]
-:[[SDL_DrawLine]]
-:[[SDL_DrawLines]]
-:[[SDL_DrawPoint]]
-:[[SDL_DrawPoints]]
-:[[SDL_DrawRect]]
-:[[SDL_DrawRects]]
 :[[SDL_FillRect]]
 
 ----
