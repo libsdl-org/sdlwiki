@@ -39,16 +39,6 @@ If there is a clip rectangle set on the destination (set via [[SDL_SetClipRect]]
 
 
 == Related Functions ==
-:[[SDL_BlendFillRect]]
-:[[SDL_BlendFillRects]]
-:[[SDL_BlendRect]]
-:[[SDL_BlendRects]]
-:[[SDL_DrawLine]]
-:[[SDL_DrawLines]]
-:[[SDL_DrawPoint]]
-:[[SDL_DrawPoints]]
-:[[SDL_DrawRect]]
-:[[SDL_DrawRects]]
 :[[SDL_FillRects]]
 
 ----
