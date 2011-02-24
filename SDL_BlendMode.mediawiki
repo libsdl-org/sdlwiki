@@ -15,6 +15,9 @@ An enumeration of blend modes used in [[SDL_RenderCopy]]() and drawing operation
 |-
 |SDL_BLENDMODE_ADD
 |dst = (src * A) + dst
+|-
+|SDL_BLENDMODE_MOD
+|dst = src * dst
 |}
 
 == Code Examples ==
