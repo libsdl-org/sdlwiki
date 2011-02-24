@@ -125,7 +125,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 
 <span id="lists"></span>
 ==== Lists ====
-<<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with anything that interrupts a list!
+<<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with anything that interrupts a list!   
 
 Bullet Lists
 : ''Markup'': Begin a line with a space followed by an asterisk to create a bulleted line of text (space after asterisk is optional but seems to be preferred)
@@ -147,6 +147,10 @@ Numbered Lists
 
 <span id="problems1"></span>
 ==== Some Known Problems and Solutions ====
+
+<<Color2(green,This is a new section and is currently undergoing revisions.  Please forgive any incomplete or displaced portions and odd/inconsistent formatting.)>>
+
+
 {|
 |
 |<bgcolor="#EDEDED">''Problem Category'': Vertical spacing isn't working properly
@@ -172,46 +176,43 @@ Numbered Lists
 |
 |<bgcolor="#EDEDED">''Problem Category'': My list isn't working properly
 |-
-|<( |6 30%>''Problem'': The __numbering__ in my list started over
+|<( |9 30%>''Problem'': The __numbering__ in my list started over
 |''Cause'': Most likely your numbering restarted because something broke the list into two parts.
 |-
 |''Solution 1'': Remove the interfering item or change it's indent to be subordinate in the list (add more spaces to indent more).
 |-
+|''Note'': This is the most successful solution.
+|-
 |''Solution 2'': Try forcing a new starting number/letter.
 |-
-|''Markup'': place a <code>#value</code>, where # is the symbol and <code>value</code> is a number like 2, 3, 4... ('''not''' the character you want), immediately after the starting numbering markup.
+|''Markup'': place <code>#value</code>, where # is the hash symbol and <code>value</code> is a number (like 2, 3, 4...; '''not''' the character you want), immediately after the starting numbering markup.
 |-
 |''Example'': ``` 1.#4 text``` should force the list item to begin with the number 4.<br/>{{{a.#4 text}}} should force the list item to begin with the letter d.
 |-
 |<<Color2(red,''Important!'')>> This fix does not always work!!!
 |-
-|<( |5 30%>''Problem'': The indenting of my next list item is wrong
-|''Cause 1'': The list is interrupted by another item (like a box of code) with __less indent__ (farther left) than the previous line of the list
-|-
-|''Result'': The interfering block forces the end of a list so the list begun after it is treated as a new list.<br/>~-(It also seems to default to a first level indent after an interruption regardless of the number of spaces you actually put in.)-~
-|-
-|''Solution'': One __possible__ workaround is to place a blank line containing a ```space period space``` ( . ) between the interfering content and the next line.<br/>~-''Note'': This seems to allow the wiki parser to interpret the indent count on the next line correctly but likely won't continue the list.  It does not always work!-~
-|-
-|''Note'': It may be necessary to indent one level ''less'' (farther left) than the line that is not being parsed correctly.  For example, if you need a line following an interruption to be at 3 indents, put the space-period-space ''fix'' immediately above it at 2 indents (ie: ```space space period space;  . ```).
-|-
-|<<Color2(red,''Important!'')>> Some list breaks cannot currently be fixed so you should be very careful when interrupting a list as it may force formatting you will not want.<br/>See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
-|-
-|<( |3 30%>''Cause 2'': A numbered list is interrupted by unnumbered items (like an indented line starting with a period) at the __same indent__ level
-|''Result'': A numbered list skips numbers.
-|-
-|''Solution 1'': Put an extra space (Enter key) between list items and then force a number (or other sequential) value by adding #<code>value</code> immediately after the numbering markup, where 'value' is the number (or letter, etc.) that you would like to be in that location.
+|''Solution 3'': Put a blank line (Enter key) between list items and then force a number (or other sequential) value by using the ''Markup'' from ''Solution 2'' above.
 |-
 |''Example'': See the Basic Format section of [http://wiki.libsdl.org/moin.cgi/SGTutorials#Basic_Format SGTutorials] then go into edit mode to see the markup.
+|-
+|<( |4 30%>''Problem'': The __indenting__ of my next list item is wrong
+|''Cause'': The list is interrupted by another item (like a box of code) with __less indent__ (farther left) than the previous line of the list
+|-
+|''Result'': The interfering block forces the end of a list so the list begun after it is treated as a new list.  It also seems to default to a first level indent after an interruption of this type regardless of the number of spaces you actually put before your next line.
+|-
+|''Solution'': One __possible__ workaround is to place a blank line containing a ```space(s) period space``` ( . ) between the interfering content and the next line.<br/>~-''Note'': This seems to allow the wiki parser to interpret the indent count on the next line correctly but likely won't continue the list.  It does not always work!-~
+|-
+|''Note'': It may be necessary to indent one level ''less'' (farther left) than the line that is not being parsed correctly.  For example, if you want a line following an interruption to be at 3 indents, put the space-period-space fix immediately above it at 2 indents (ie: ```space space period space;  . ```).
+|-
+|<( |3 30%>''Problem'': I want to use a __mixed list__ where bullets follow numbers on the same indent level (or similar) but it just keeps numbering
+|''Cause'': This wiki seems to parse lists based on how they start and where they end.  If they are not broken/ended it seems to ignore the actual intervening markup (except usually lines starting with a period).
+|-
+|''Solution'': The same workarounds as above may or may not be able to resolve this issue as well.  Your goal is to end one list and begin the next with new formatting.  You may have to try several tricks to make this happen.
 |}
 
+<<Color2(red,''Important!'')>> Some list breaks cannot currently be fixed so you should be very careful when interrupting a list as it may force formatting you will not want.<br/>See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
 
 
-
-
-* A numbered list may require that the correct start number be manually entered, however this may not always work.  See [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists] for details on forcing a start number/letter.
-* For more information about this 'bug' and another possible workaround see [http://moinmo.in/MoinMoinBugs/BlockElementsInListBreakIndent BlockElementsInListBreakIndent].
-{i} A related issue is trying to use a mixed list where bullets follow numbers on the same indent level.  This will likely parse as the next consecutive number regardless of your use of an asterisk to indicate the use of a bullet.  The same workaround seems to resolve this issue as well.
-* For more information about this 'bug' and another possible workaround see [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists MixedNumberedAndUnorderedLists].
 
 [[#ToC|Return to Table of Contents]]
 
