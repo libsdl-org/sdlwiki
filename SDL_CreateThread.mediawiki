@@ -6,7 +6,7 @@
 
 
 = SDL_CreateThread =
-Use this function to create a new hread with the same properties as the parent thread.
+Use this function to create a new thread with the same properties as the parent thread.
 
 
 == Syntax ==
