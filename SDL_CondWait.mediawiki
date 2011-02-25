@@ -17,10 +17,10 @@ int SDL_CondWait(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond''' 
-|^the applicable condition variable^ ??? 
+|^The condition pointer whose signal will be waited on.^ 
 |-
 |'''mutex''' 
-|^the mutex to unlock^ 
+|^Mutex pointer used to gate thread access.^ 
 |}
 
 
