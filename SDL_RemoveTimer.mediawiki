@@ -39,8 +39,6 @@ my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
 SDL_RemoveTimer(my_timer_id);
 ```
 
-<<Color2(green,I don't think that math works...  33/10*10 is still 33.)>>
-
 == Remarks ==
 /!\ It is not safe to remove a timer multiple times.
 
