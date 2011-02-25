@@ -17,7 +17,7 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 == Function Parameters ==
 {|
 |'''fn''' 
-|^The function to be run in the new thread, see [[#Remarks|remarks]] for details.^ 
+|^The function to be run in the new thread, see remarks for details.^ 
 |-
 |'''data''' 
 |a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^ 
