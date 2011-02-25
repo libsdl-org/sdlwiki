@@ -6,7 +6,7 @@
 
 
 = SDL_CondWaitTimeout =
-Use this function to coordinate threads in a multi-threaded environment. This function will wait for the condition variable to be signaled for the number of milliseconds passed in. If the time length requested elapses prior to the condition being signaled, this function returns with a SDL_MUTEX_TIMEDOUT value, otherwise it returns '0' meaning that the condition has been signaled. Thus function also unlocks the passed in mutex prior to waiting on the condition signal, and locks the mutex upon the condition being signaled, or the timeout.
+Use this function to coordinate threads in a multi-threaded environment. This function will wait for the condition variable to be signaled or for the number of milliseconds passed in to elapse. If the time length requested elapses prior to the condition being signaled, this function returns with a SDL_MUTEX_TIMEDOUT value, otherwise it returns '0' meaning that the condition has been signaled. Thus function also unlocks the passed in mutex prior to waiting on the condition signal, and locks the mutex upon the condition being signaled, or the timeout.
 
 
 == Syntax ==
