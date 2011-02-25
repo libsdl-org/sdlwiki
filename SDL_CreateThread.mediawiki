@@ -1,9 +1,12 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL_CreateThread =
-Use this function to create a ^new^ thread *with the same properties as the parent thread* ''-and/or-'' <code>that does SDL_ThreadFunction() with the '''data'''</code>.
+Use this function to create a new hread with the same properties as the parent thread.
 
 
 == Syntax ==
@@ -11,18 +14,18 @@ Use this function to create a ^new^ thread *with the same properties as the pare
 SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
                              void*              data)
 ```
-
 == Function Parameters ==
 {|
-|'''fn'''
-|^the function to be run in the new thread^; see [[#Remarks|Remarks]] for details
+|'''fn''' 
+|^The function to be run in the new thread, see [[#Remarks|remarks]] for details.^ 
 |-
-|'''data'''
-|a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^
+|'''data''' 
+|a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^ 
 |}
 
+
 == Return Value ==
-^Returns the new thread.^  <<Color2(green,Is this RV effectively the thread ID?)>>
+Returns the new thread pointer. This is a pointer to an SDL defined device independent thread information structure. The returned thread pointer will be used for any subsuequent calls to manage this thread.
 
 <<Color2(green,Should it be mentioned here that the function '''fn''' itself returns an int or is it sufficient to note that in the Remarks?)>>
 
@@ -30,13 +33,12 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 ```c++
 You can add your code example here
 ```
-
 == Remarks ==
 *<br/>[[SDL_CreateThread]]() creates a new thread of execution that shares all of its parent's global memory, signal handlers, file descriptors, etc, and runs the function '''fn''', passing it the void pointer '''data'''.  The thread quits when '''fn''' returns. <br/>*
 
-'''fn''' is the function passed to [[SDL_CreateThread]]() ^and has the following syntax^.  ,,It is passed a void* user context parameter and returns an int.,,  
- ```int (SDLCALL * SDL_ThreadFunction) (void *data)```<br/>
- <<Color2(green,Should this be in a gray box instead?)>>
+'''fn''' is the function passed to [[SDL_CreateThread]]() ^and has the following syntax^.  ,,It is passed a void* user context parameter and returns an int.,,
+
+: ```int (SDLCALL * SDL_ThreadFunction) (void *data)```<br/> <<Color2(green,Should this be in a gray box instead?)>>
 
 Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code> APIs to start a new thread. This way, if it's the SDL.DLL which uses this API, then the RTL of SDL.DLL will be used to create the new thread, and if it's the application, then the RTL of the application will be used.  <<Color2(green,This information is also listed on the main Category page in more detail but it seems relevant to list at least some of it here as well.  Should the header to referenced as a link for more information?)>>
 
@@ -46,16 +48,16 @@ Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code
 
 (SDL 1.2.7) Even after the procedure started in the thread returns, there still exist some resources allocated to the thread. To free these resources use [[SDL_WaitThread]]() to wait for the thread to finish and obtain the status code of the thread. If not done so, [[SDL_CreateThread]]() will hang after about 1010 successfully created threads (tested on GNU/Linux). This is consistent with POSIX threads behavior where unless threads are explicitly detached using <code>pthread_detach()</code> or created using a <code>pthread_attr</code> initialized using <code>pthread_attr_setdetachstate()</code> passed at <code>pthread_create()</code>, they must be waited for using <code>pthread_join()</code> for their resources to be released. The SDL threads abstraction library does not provide the functions to detach a thread ^or^ to launch a thread in detached mode.
 
-(SDL 1.2.8) On win32, keystrokes are caught in correctly in a thread, but SDL_EnableUNICODE <<Color2(green,(Does this function still exist in 1.3?  It does not have a page currently.))>> does not work correctly. Specifically, <code>.unicode</code> contains the same value as <code>.sym</code>, not the modified version for SHFT, CTRL, etc. 
+(SDL 1.2.8) On win32, keystrokes are caught in correctly in a thread, but SDL_EnableUNICODE <<Color2(green,(Does this function still exist in 1.3?  It does not have a page currently.))>> does not work correctly. Specifically, <code>.unicode</code> contains the same value as <code>.sym</code>, not the modified version for SHFT, CTRL, etc.
 
 (SDL 1.2.9) On win32 (this wasn't observed on unix), the initial thread must be the one polling the SDL events. Otherwise, keyboard events are no longer caught. Moreover, it is recommended to use SDL_mixer and SDL blitting functions from within that initial thread as well, otherwise the system becomes unstable (also only under win32) despite the proper use of mutexes and conditional variables. This unfortunately limits a lot ^of^ the usefulness of threads when the software is also expected to run on win32.<br/>*
 
 <<Color2(green,Is there a way to kill/destroy/end/close a thread?  Should it be listed here if there is?)>>
 
 == Related Functions ==
-:[[SDL_GetThreadID]] ???
-:[[SDL_ThreadID]] ???
-:[[SDL_WaitThread]] ???
+: [[SDL_GetThreadID]] ???
+: [[SDL_ThreadID]] ???
+: [[SDL_WaitThread]] ???
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[[CategoryAPI]], CategoryThread
