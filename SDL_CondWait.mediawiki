@@ -1,11 +1,12 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL_CondWait =
-Use this function to wait on the condition variable, unlocking the provided mutex.  <<Color2(green, Alternate:  ...unlock the provided mutex and wait on the condition variable.)>>
-
-<<Color2(green,I expect that this works on the current thread or the one that it is called from within.  Is that correct?  Is there any need to specify any of this here?)>>
+Use this function to coordinate threads in a multi-threaded environment.  This function will unlock the provided mutex and wait for the condition variable to be signaled. Once the condition variable is signaled this function will re-lock the mutex and return.
 
 
 == Syntax ==
@@ -13,15 +14,15 @@ Use this function to wait on the condition variable, unlocking the provided mute
 int SDL_CondWait(SDL_cond*  cond,
                  SDL_mutex* mutex)
 ```
-
 == Function Parameters ==
 {|
-|'''cond'''
-|^the applicable condition variable^ ???
+|'''cond''' 
+|^the applicable condition variable^ ??? 
 |-
-|'''mutex'''
-|^the mutex to unlock^
+|'''mutex''' 
+|^the mutex to unlock^ 
 |}
+
 
 == Return Value ==
 Returns 0 when it is signaled or a negative error code on failure; call [[SDL_GetError]]() for more information.
@@ -30,19 +31,17 @@ Returns 0 when it is signaled or a negative error code on failure; call [[SDL_Ge
 ```c++
 You can add your code example here
 ```
-
 == Remarks ==
-The mutex must be locked before entering this function!  The mutex is re-locked once the condition variable is signaled *^by^ another thread call^ing^ [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.*
+This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  The '''mutex''' is re-locked once the condition variable is signaled.
 
-<<Color2(green,Alternate version:)>>
-The mutex must be locked before entering this function!  <<Color2(green,This line may be moved to the end instead.)>>
+The mutex must be locked before entering this function.
 
-This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  The mutex is re-locked once the condition variable is signaled.
+This function is the equivalent of calling [[SDL_CondWaitTimeout]] with a time length of SDL_MUTEX_MAXWAIT.
 
 == Related Functions ==
-:[[SDL_CondSignal]] *
-:[[SDL_CondWaitTimeout]] *
-:[[SDL_mutexP]] *
+: [[SDL_CondSignal]] *
+: [[SDL_CondWaitTimeout]] *
+: [[SDL_mutexP]] *
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[[CategoryAPI]], CategoryMutex
