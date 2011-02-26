@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HINT_FRAMEBUFFER_ACCELERATION =
+A hint that specifies a variable controlling how 3D acceleration is used to accelerate the SDL 1.2 screen surface.
+
+
+== Values ==
+{|
+|0
+|disable 3D acceleration
+|-
+|1
+|enable 3D acceleration, using the default renderer
+|-
+|X
+|enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.
+|}
+
+== Default ==
+By default SDL tries to make a best guess whether to use acceleration or not ,,for,, ^on^ each platform.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+SDL can try to accelerate the screen surface returned by [[SDL_SetVideoMode]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
