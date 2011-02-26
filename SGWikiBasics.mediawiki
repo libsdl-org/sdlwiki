@@ -58,6 +58,8 @@ When you have finished adding your content and filling in the Comment field, and
 == Some Markup Basics ==
 Below is a summary of the most commonly used markup in this wiki and some hints and tricks for using it.
 
+<!> '''The following is provided for your convenience and is meant to be general information.  The other [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides] describe where this formatting should be applied and where exceptions may exist.'''
+
 A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
 
 
@@ -220,21 +222,27 @@ Numbered Lists
 
 <span id="formatting"></span>
 === Text Formatting ===
+''Note'': Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
 
-{i} Note: Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
+
+==== Font Types & Sizes ====
+<<Color2(red,''Important!'')>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.  
 
 ==== Bold ====
  '''Bold'''
 * Place three apostrophes surrounding text to be bolded, without a space between markup and text.
   ''Example'': ```'''bold text'''``` generates '''bold text'''
+
 ==== Italics ====
  ''Italics''
 * Place two apostrophes surrounding text to be italicized, without a space between markup and text.
   ''Example'': ```''italics text''``` generates ''italics text''
+
 ==== Monospace ====
  <code>Monospace</code>
 * Place a backtick on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
   ''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
+
 ==== Code ====
  ```Code (or Verbatim Text)```
 * Use three curly brackets surrounding text to be rendered as code.
@@ -254,6 +262,7 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
    ```
 Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
 ```
+
 ==== Colored Text ====
  <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>>
 
@@ -395,6 +404,8 @@ Some terms used in the style guides are intended to have specific meanings or pu
 <span id="category"></span>
 : '''Category Page'''
 : Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
+ ||<tablewidth="50%" style="color: #FF0000;" :> DRAFT||
+: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the editing process.  ''Thank you!''
 : '''''If...'''''
 : Found at the beginning of detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suit your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
 : In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
@@ -411,7 +422,7 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : '''''<<Color2(red,Important!)>>'''''
 : Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
 : '''''Example'':'''
-: Points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
+: Provides a direct example of the markup or points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
 <br/>
 <br/>
 === Other Help ===
