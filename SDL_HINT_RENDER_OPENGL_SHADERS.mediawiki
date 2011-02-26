@@ -1,0 +1,30 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HINT_RENDER_OPENGL_SHADERS =
+A hint that specifies a variable controlling whether the OpenGL render driver uses shaders if they are available.
+
+
+== Values ==
+{|
+|0
+|disable shaders
+|-
+|1
+|enable shaders
+|}
+
+== Default ==
+By default shaders are used if OpenGL supports them
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+----
+[[CategoryDefine]], [[CategoryHints]]
