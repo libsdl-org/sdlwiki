@@ -27,7 +27,7 @@ In general these hints are just that - they may or may not be supported or appli
 
 == Functions ==
 
-<<FullSearch(category:CategoryHints -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine)>>
 
 
 ----
