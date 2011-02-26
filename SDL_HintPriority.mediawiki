@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HintPriority =
+An enumeration of hint priorities.
+
+
+== Values ==
+{|
+|SDL_HINT_DEFAULT
+|description
+|-
+|SDL_HINT_NORMAL
+|description
+|-
+|SDL_HINT_OVERRIDE
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetHintWithPriority]]
+
+----
+[[CategoryEnum]], [[CategoryHints]]
