@@ -19,7 +19,7 @@ In general these hints are just that - they may or may not be supported or appli
 
 == Hints ==
 
-<<FullSearch(category:CategoryDefines CategoryHints)>>
+<<FullSearch(category:CategoryDefine CategoryHints)>>
 
 == Enumerations ==
 
