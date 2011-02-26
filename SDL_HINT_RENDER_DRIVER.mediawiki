@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HINT_RENDER_DRIVER =
+A hint that specifies a variable specifying which render driver to use.
+
+
+== Values ==
+{|
+|direct3d
+|-
+|opengl
+|-
+|opengles2
+|-
+|opengles
+|-
+|software
+|}
+
+== Default ==
+By default ,,the default varies by platform, but it's,, the first one in the list that is available on the current platform ^is chosen^.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The variables are case-insensitive.
+
+If the application doesn't pick a specific renderer to use, this variable specifies the name of the preferred renderer.  If the preferred renderer can't be initialized, the normal default renderer is used.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
