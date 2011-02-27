@@ -28,7 +28,8 @@ cond=SDL_CreateCond();
 SDL_DestroyCond(cond);
 ```
 *<br/>
-<<Color2(green,Should this example be Included on the SDL_DestroyCond page?)>>
+
+<!-- Should this example be Included on the SDL_DestroyCond page? -->
 
 == Remarks ==
 Typical use of condition variables:
@@ -53,7 +54,7 @@ There is some discussion whether to signal the condition variable with the mutex
 In general it's safer to signal the condition variable while the mutex is locked.
 
 
-<<Color2(green,Since this has no params does it actually ''create'' the structure or does it just assign an existing structure to a thread?)>>
+<!-- Since this has no params does it actually ''create'' the structure or does it just assign an existing structure to a thread? -->
 
 == Related Functions ==
 :[[SDL_CondSignal]] *
