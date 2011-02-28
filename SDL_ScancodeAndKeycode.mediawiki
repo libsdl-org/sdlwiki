@@ -6,10 +6,8 @@
 Enumerations of the SDL physical (scancode) and virtual (keycode) key representations.
 
 
-<!-- #The following is included on SDL_Scancode and SDL_Keycode.  Any changes  -->
-between these comments will be reflected on those pages.  Please use 
-caution when editing.  Start Include here.
 == Values ==
+<!-- #The following is included on SDL_Scancode and SDL_Keycode.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start include here. -->
 {|
 |<bgcolor="#EDEDED">''Key Name''
 |<bgcolor="#EDEDED">''SDL_Scancode Value''
