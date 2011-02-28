@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_HINT_FRAMEBUFFER_ACCELERATION =
-A hint that specifies a variable controlling how 3D acceleration is used to accelerate the SDL 1.2 screen surface.
+A hint that specifies how 3D acceleration is used to accelerate the SDL 1.2 screen surface.
 
 
 == Values ==
