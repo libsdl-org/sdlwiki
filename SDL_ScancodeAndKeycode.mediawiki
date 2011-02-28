@@ -6,7 +6,9 @@
 Enumerations of the SDL physical (scancode) and virtual (keycode) key representations.
 
 
-<!-- #Include will begin here at a later date. -->
+<!-- #The following is included on SDL_Scancode and SDL_Keycode.  Any changes  -->
+between these comments will be reflected on those pages.  Please use 
+caution when editing.  Start Include here.
 == Values ==
 {|
 |<bgcolor="#EDEDED">''Key Name''
@@ -1057,7 +1059,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |''(none)''
 |SDLK_UNDERSCORE
 |}
-<!-- #Include will end here at a later date. -->
+<!-- #End Include here -->
 
 == Code Examples ==
 ```c++
