@@ -9,13 +9,13 @@ An enumeration of hint priorities.
 == Values ==
 {|
 |SDL_HINT_DEFAULT
-|description
+|low priority, used for default values
 |-
 |SDL_HINT_NORMAL
-|description
+|medium priority, 
 |-
 |SDL_HINT_OVERRIDE
-|description
+|high priority
 |}
 
 == Code Examples ==
