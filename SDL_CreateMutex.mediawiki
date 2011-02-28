@@ -1,23 +1,24 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL_CreateMutex =
-Use this function to create a mutex, initialized unlocked  *...create a new, unlocked mutex*  ^create and initialize an unlocked mutex^.
+Use this function to create a new mutex. The mutex is returned as an initialized and unlocked mutex.
 
 
 == Syntax ==
 ```c++
 SDL_mutex* SDL_CreateMutex(void)
 ```
-
 == Return Value ==
-Returns ^the initialized and unlocked mutex.^
+Returns the initialized and unlocked mutex. This is a pointer to SDL's internal mutex data structure.
 
-<<Color2(green,What if it fails?  NULL?  Negative error code?)>>
+On error, NULL is returned. To retrieve error description, call SDL_GetError();
 
 == Code Examples ==
-*
 ```c++
 SDL_mutex *mut;
 
@@ -45,9 +46,9 @@ SDL_DestroyMutex(mut);
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_DestroyMutex]] *
-:[[SDL_mutexP]] *
-:[[SDL_mutexV]] *
+: [[SDL_DestroyMutex]] *
+: [[SDL_mutexP]] *
+: [[SDL_mutexV]] *
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[[CategoryAPI]], CategoryMutex
