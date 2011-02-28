@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_HINT_FRAMEBUFFER_ACCELERATION =
 A hint that specifies a variable controlling how 3D acceleration is used to accelerate the SDL 1.2 screen surface.
@@ -19,7 +18,7 @@ A hint that specifies a variable controlling how 3D acceleration is used to acce
 |}
 
 == Default ==
-By default SDL tries to make a best guess whether to use acceleration or not ,,for,, ^on^ each platform.
+By default SDL tries to make a best guess whether to use acceleration or not on each platform.
 
 == Code Examples ==
 ```c++
