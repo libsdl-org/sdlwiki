@@ -15,7 +15,7 @@ A hint that specifies whether sync to vertical refresh is enabled or disabled in
 |}
 
 == Default ==
-By default SDL uses the flag passed into [[SDL_CreateRenderer]]().
+By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [[SDL_CreateRenderer]]().
 
 == Code Examples ==
 ```c++
@@ -23,8 +23,6 @@ You can add your code example here
 ```
 
 == Remarks ==
-This hint overrides SDL_RENDERER_PRESENTVSYNC in [[SDL_CreateRenderer]]().  
-
 If framebuffer acceleration is enabled this will affect the surface returned by [[SDL_SetVideoMode]]().
 
 ----
