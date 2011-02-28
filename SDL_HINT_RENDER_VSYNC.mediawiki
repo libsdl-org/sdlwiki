@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_HINT_RENDER_VSYNC =
-A hint that specifies a variable controlling whether updates to the SDL 1.2 screen surface should be synchronized with the vertical refresh, to avoid tearing.
+A hint that specifies whether sync to vertical refresh is enabled or disabled in [[SDL_CreateRenderer]]() to avoid tearing.
 
 
 == Values ==
@@ -16,7 +15,7 @@ A hint that specifies a variable controlling whether updates to the SDL 1.2 scre
 |}
 
 == Default ==
-By default SDL does not sync screen surface updates with vertical refresh.
+By default SDL uses the flag passed into [[SDL_CreateRenderer]]().
 
 == Code Examples ==
 ```c++
@@ -24,9 +23,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This hint overrides SDL_RENDERER_PRESENTVSYNC in [[SDL_CreateRenderer]]().  
 
-<<Color2(green,Should there be a remark linking back to SDL_SetVideoMode here?)>>
+If framebuffer acceleration is enabled this will affect the surface returned by [[SDL_SetVideoMode]]().
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
