@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_HINT_RENDER_OPENGL_SHADERS =
 A hint that specifies whether the OpenGL render driver uses shaders.
