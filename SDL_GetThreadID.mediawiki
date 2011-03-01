@@ -27,6 +27,55 @@ If the passed-in SDL_Thread pointer is NULL, this function will always return an
 
 == Code Examples ==
 ```c++
+
+#include <stdio.h>
+#include <SDL_thread.h>
+#include <SDL_timer.h>
+
+int TestThread( void *ptr );
+
+int main(int argc, char *argv[])
+{
+        SDL_Thread   *thread;
+        SDL_threadID threadID;
+        int          threadReturnValue;
+
+        printf("\nSimple SDL_CreateThread test:");
+
+        // Simply create a thread
+        thread = SDL_CreateThread( TestThread, (void *)NULL);
+
+        if( NULL == thread )
+        {
+           printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
+           exit(-1);
+        }
+        
+        // Retrieve the ID for the newly launched thread
+        threadID = SDL_GetThreadID( thread );
+
+        // Wait for the thread to complete and get the return code
+        SDL_WaitThread( thread, &threadReturnValue);
+        printf("\nThread returned value:%d", threadReturnValue);
+
+        return 1;
+}
+
+// Very simple thread - counts 0 to 9 delaying 50ms between increments
+int TestThread( void *ptr )
+{
+        int        cnt;
+
+        for(cnt=0;cnt<10;cnt++)
+        {
+                printf( "\nThread counter: %d", cnt);
+                SDL_Delay(50);
+        }
+
+        return cnt;
+}
+
+
 ```
 == Remarks ==
 If the SDL thread pointer passed to this function is NULL, this function will return the SDL_ThreadID of the current thread.
