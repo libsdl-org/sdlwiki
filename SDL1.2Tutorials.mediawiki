@@ -1,3 +1,5 @@
+<!-- pragma camelcase off -->
+
 = SDL 1.2 Tutorials =
 There are a number of SDL tutorials available from different sources.
 
@@ -17,6 +19,9 @@ There are a number of SDL tutorials available from different sources.
 
 * [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index GFX with SDL (by Marius)]
 : A very nice set of tutorials covering using SDL with Dev-C++, 2D graphics and sound
+
+* [http://www.noquarterarcade.com/xcode-sdl-development-setup Xcode SDL Development Setup]
+: This tutorial covers setting up an Xcode project with SDL 1.2.14, SDL_image, SDL_mixer, SDL_ttf, and the Boost C++ libraries (header files only) on OS X 10.6 Snow Leopard. It uses Xcode version 3.2.5 and the Classic Invaders source (2 MB) files.
 
 * [http://de.wikibooks.org/wiki/SDL Tutorial / Einsteigerkurs in das Programmieren mit der SDL in C]
 : The basics of using various features of SDL, in German
