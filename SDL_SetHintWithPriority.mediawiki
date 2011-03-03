@@ -16,13 +16,13 @@ SDL_bool SDL_SetHintWithPriority(const char*      name,
 == Function Parameters ==
 {|
 |'''name'''
-|^the hint to set; see [[#Remarks|Remarks]] for details^
+|the hint to set; see the list of Hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
 |-
 |'''value'''
-|^the value of the hint variable; see [[#Remarks|Remarks]] for details^
+|the value of the hint variable; see the individual Hint for details
 |-
 |'''priority'''
-|^the priority level for the hint; see [[#Remarks|Remarks]] for details^
+|the [[SDL_HintPriority]] level for the hint
 |}
 
 == Return Value ==
@@ -36,71 +36,8 @@ You can add your code example here
 == Remarks ==
 The priority controls the behavior when setting a hint that already has a value.  Hints will replace existing hints of their priority and lower.  Environment variables are considered to have override priority.
 
-'''name''' and '''value''' may be one of the following pairs:
-{|
-|<bgcolor="#EDEDED">'''name'''
-|<bgcolor="#EDEDED">'''value'''
-|<bgcolor="#EDEDED">''description''
-|-
-|<( |4>SDL_HINT_FRAMEBUFFER_ACCELERATION
-|0
-|disable 3D acceleration
-|-
-|1
-|enable 3D acceleration, using the default renderer
-|-
-|X
-|enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.)
-|-
-|
-|(default is best guess for platform)
-|-
-|<( |6>SDL_HINT_RENDER_DRIVER
-|direct3d
-|
-|-
-|opengl
-|
-|-
-|opengles2
-|
-|-
-|opengles
-|
-|-
-|software
-|
-|-
-|
-|(defaults by platform to first supported in list)
-|-
-|<( |2>SDL_HINT_RENDER_OPENGL_SHADERS
-|0
-|disable shaders
-|-
-|1
-|enable shaders (default if supported by OpenGL)
-|-
-|<( |2>SDL_HINT_RENDER_VSYNC
-|0
-|disable vsync (default)
-|-
-|1
-|enable vsync
-|}
-
-'''priority''' may be one of the following:
-{|
-|SDL_HINT_DEFAULT
-|-
-|SDL_HINT_NORMAL
-|-
-|SDL_HINT_OVERRIDE
-|}
-
-
 == Related Functions ==
-:[[SDL_SetHint]] ???
+:[[SDL_SetHint]]
 
 ----
 [[CategoryAPI]], [[CategoryHints]]
