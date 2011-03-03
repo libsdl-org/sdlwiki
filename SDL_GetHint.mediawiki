@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetHint =
+Use this function to get ^the value of^ a hint.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetHint(const char* name)
+```
+
+== Function Parameters ==
+{|
+|'''name'''
+|the hint to query; see the list of Hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
+|}
+
+== Return Value ==
+Returns the string value of a hint variable.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetHint]]
+
+----
+[[CategoryAPI]], [[CategoryHints]]
