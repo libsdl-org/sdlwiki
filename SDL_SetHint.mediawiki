@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_SetHint =
+Use this function to set a hint with normal priority.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_SetHint(const char* name,
+                     const char* value)
+```
+
+== Function Parameters ==
+{|
+|'''name'''
+|the hint to set; see the list of Hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
+|-
+|'''value'''
+|the value of the hint variable; see the individual Hint for details
+|}
+
+== Return Value ==
+Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_ClearHints]] ???
+:[[SDL_GetHint]]
+:[[SDL_SetHintWithPriority]]
+
+----
+[[CategoryAPI]], [[CategoryHints]]
