@@ -1,0 +1,28 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_ClearHints =
+Use this function to clear all hints.
+
+
+== Syntax ==
+```c++
+void SDL_ClearHints(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function is called during [[SDL_Quit]]() to free stored hints.
+
+== Related Functions ==
+:[[SDL_Quit]]
+:[[SDL_SetHint]] ???
+:[[SDL_SetHintWithPriority]] ???
+
+----
+[[CategoryAPI]], [[CategoryHints]]
