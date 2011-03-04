@@ -7,14 +7,18 @@ Use this function to fill in information about a specific display mode.
 
 == Syntax ==
 ```c++
-int SDL_GetDisplayMode(int              index,
+int SDL_GetDisplayMode(int              displayIndex,
+                       int              modeIndex,
                        SDL_DisplayMode* mode)
 ```
 
 == Function Parameters ==
 {|
-|'''index'''
-|the index of the requested display mode
+|'''displayIndex'''
+|the index of the display to query
+|-
+|'''modeIndex'''
+|^the index of the requested display mode^
 |-
 |'''mode'''
 |an [[SDL_DisplayMode]] structure filled in with the mode '''index'''
@@ -38,7 +42,6 @@ The display modes are sorted in this priority:
 
 == Related Functions ==
 :[[SDL_GetNumDisplayModes]]
-:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
