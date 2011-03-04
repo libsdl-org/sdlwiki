@@ -7,7 +7,7 @@ Use this function to get information about the desktop display mode.
 
 == Syntax ==
 ```c++
-int SDL_GetDesktopDisplayMode(int              displayIndex
+int SDL_GetDesktopDisplayMode(int              displayIndex,
                               SDL_DisplayMode* mode)
 ```
 
