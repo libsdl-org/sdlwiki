@@ -24,7 +24,6 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_GetCurrentVideoDisplay]]
 :[[SDL_GetDisplayBounds]]
-:[[SDL_SelectVideoDisplay]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
