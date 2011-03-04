@@ -7,11 +7,15 @@ Use this function to get information about the current display mode.
 
 == Syntax ==
 ```c++
-int SDL_GetCurrentDisplayMode(SDL_DisplayMode* mode)
+int SDL_GetCurrentDisplayMode(int              displayIndex,
+                              SDL_DisplayMode* mode)
 ```
 
 == Function Parameters ==
 {|
+|'''displayIndex'''
+|the index of the display to query
+|-
 |'''mode'''
 |an [[SDL_DisplayMode]] structure filled in with the current display mode
 |}
@@ -30,7 +34,6 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_GetDesktopDisplayMode]]
 :[[SDL_GetDisplayMode]]
-:[[SDL_SelectVideoDisplay]]
 :[[SDL_SetWindowDisplayMode]]
 
 ----
