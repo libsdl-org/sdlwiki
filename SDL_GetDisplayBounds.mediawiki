@@ -7,13 +7,13 @@ Use this function to get the desktop area represented by a display, with the pri
 
 == Syntax ==
 ```c++
-int SDL_GetDisplayBounds(int       index,
+int SDL_GetDisplayBounds(int       displayIndex,
                          SDL_Rect* rect)
 ```
 
 == Function Parameters ==
 {|
-|'''index'''
+|'''displayIndex'''
 |the index of the display to query
 |-
 |'''rect'''
