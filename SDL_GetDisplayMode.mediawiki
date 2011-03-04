@@ -18,7 +18,7 @@ int SDL_GetDisplayMode(int              displayIndex,
 |the index of the display to query
 |-
 |'''modeIndex'''
-|^the index of the requested display mode^
+|the index of the requested display mode
 |-
 |'''mode'''
 |an [[SDL_DisplayMode]] structure filled in with the mode '''index'''
