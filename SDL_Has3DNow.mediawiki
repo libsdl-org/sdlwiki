@@ -23,7 +23,6 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_Has3DNowExt]] ???
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
