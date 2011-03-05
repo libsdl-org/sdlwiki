@@ -17,14 +17,11 @@ void SDL_WaitThread(SDL_Thread* thread,
 == Function Parameters ==
 {|
 |'''thread''' 
-|^the thread to wait for^ 
+|The SDL_Thread point that was returned from the SDL_CreateThread call that started this thread 
 |-
 |'''status''' 
-|^the pointer to receive the return code???^; see [[#Remarks|Remarks]] for details 
+|Pointer to an integer that will receive the value returned from the thread function by its 'return', see [[#Remarks|Remarks]] for details 
 |}
-
-
-<<Color2(green,Is '''status''' an exception to the 'pointer rule'?)>>
 
 == Code Examples ==
 ```c++
@@ -50,6 +47,10 @@ int main(int argc, char *argv[])
            printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
         else
         {
+
+           // Wait for the thread to complete. The thread functions return code will
+           //       be placed in the "threadReturnValue" variable when it completes.
+           //
            SDL_WaitThread( thread, &threadReturnValue);
            printf("\nThread returned value:%d", threadReturnValue);
         }
@@ -68,14 +69,13 @@ int TestThread( void *ptr )
                 SDL_Delay(50);
         }
 
+        // Return the final value to the SDL_WaitThread function above
         return cnt;
 }
-
 ```
 == Remarks ==
-The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL.
+The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL. The return code is the value returned by the 'return' call in the thread function. This can be a 'status' on the thread, or the result of a computation the thread was created to perform.
 
-<<Color2(green,Should anything be included here (or in Return Value?) that indicates what the "return code" might be?  Seems like maybe 1 for waiting 0 for done -1 for error?  Why is that not a Return Value?  Just because it fills a pointer with it?)>>
 
 == Related Functions ==
 : [[SDL_CreateThread]] *
