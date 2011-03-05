@@ -1,6 +1,9 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
+
 
 = SDL_WaitThread =
 Use this function to wait for a thread to finish.
@@ -11,30 +14,71 @@ Use this function to wait for a thread to finish.
 void SDL_WaitThread(SDL_Thread* thread,
                     int*        status)
 ```
-
 == Function Parameters ==
 {|
-|'''thread'''
-|^the thread to wait for^
+|'''thread''' 
+|^the thread to wait for^ 
 |-
-|'''status'''
-|^the pointer to receive the return code???^; see [[#Remarks|Remarks]] for details
+|'''status''' 
+|^the pointer to receive the return code???^; see [[#Remarks|Remarks]] for details 
 |}
+
 
 <<Color2(green,Is '''status''' an exception to the 'pointer rule'?)>>
 
 == Code Examples ==
 ```c++
-You can add your code example here
-```
+Toggle line numbers
 
+#include <stdio.h>
+#include <SDL_thread.h>
+#include <SDL_timer.h>
+
+int TestThread( void *ptr );
+
+int main(int argc, char *argv[])
+{
+        SDL_Thread *thread;
+        int         threadReturnValue;
+
+        printf("\nSimple SDL_CreateThread test:");
+
+        // Simply create a thread
+        thread = SDL_CreateThread( TestThread, (void *)NULL);
+
+        if( NULL == thread )
+           printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
+        else
+        {
+           SDL_WaitThread( thread, &threadReturnValue);
+           printf("\nThread returned value:%d", threadReturnValue);
+        }
+
+        return 1;
+}
+
+// Very simple thread - counts 0 to 9 delaying 50ms between increments
+int TestThread( void *ptr )
+{
+        int        cnt;
+
+        for(cnt=0;cnt<10;cnt++)
+        {
+                printf( "\nThread counter: %d", cnt);
+                SDL_Delay(50);
+        }
+
+        return cnt;
+}
+
+```
 == Remarks ==
 The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL.
 
 <<Color2(green,Should anything be included here (or in Return Value?) that indicates what the "return code" might be?  Seems like maybe 1 for waiting 0 for done -1 for error?  Why is that not a Return Value?  Just because it fills a pointer with it?)>>
 
 == Related Functions ==
-:[[SDL_CreateThread]] *
+: [[SDL_CreateThread]] *
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[[CategoryAPI]], CategoryThread
