@@ -23,7 +23,7 @@ SDL_threadID SDL_GetThreadID(SDL_Thread* thread)
 == Return Value ==
 Returns the ID of the specified thread.  This thread identifier is as reported by the underlying operating system. If SDL is running on a platform that does not support threads the return value will always be zero.
 
-If the passed-in SDL_Thread pointer is NULL, this function will always return an SDL_threadID of zero.
+If the passed-in SDL_Thread pointer is NULL, this function will behave as if the call was to SDL_ThreadID() and return the ID of the currently running thread.
 
 == Code Examples ==
 ```c++
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
            printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
            exit(-1);
         }
-        
+
         // Retrieve the ID for the newly launched thread
         threadID = SDL_GetThreadID( thread );
 
@@ -74,8 +74,6 @@ int TestThread( void *ptr )
 
         return cnt;
 }
-
-
 ```
 == Remarks ==
 If the SDL thread pointer passed to this function is NULL, this function will return the SDL_ThreadID of the current thread.
