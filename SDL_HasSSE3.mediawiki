@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HasSSE3 =
+Use this function to ,,return true if,, ^determine whether^ the CPU has SSE3 features.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasSSE3(void)
+```
+
+== Return Value ==
+Returns SDL_TRUE if the CPU has SSE3 features or SDL_FALSE if not. 
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HasSSE]]
+:[[SDL_HasSSE2]]
+:[[SDL_HasSSE41]]
+:[[SDL_HasSSE42]]
+
+----
+[[CategoryAPI]], [[CategoryCPU]]
