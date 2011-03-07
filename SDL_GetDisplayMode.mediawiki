@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetDisplayMode =
-Use this function to fill in information about a specific display mode.
+Use this function to get information about a specific display mode.
 
 
 == Syntax ==
@@ -18,10 +18,10 @@ int SDL_GetDisplayMode(int              displayIndex,
 |the index of the display to query
 |-
 |'''modeIndex'''
-|the index of the requested display mode
+|the index of the display mode to query
 |-
 |'''mode'''
-|an [[SDL_DisplayMode]] structure filled in with the mode '''index'''
+|an [[SDL_DisplayMode]] structure filled in with the mode at '''modeIndex'''
 |}
 
 == Return Value ==
