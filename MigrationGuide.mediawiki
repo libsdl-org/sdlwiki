@@ -46,7 +46,7 @@ Instead of passing around a pointer to the current screen everywhere in your cod
 
 You update the physical screen using [[SDL_RenderPresent]], which replaces ```SDL_Flip``` and {{{SDL_UpdateRects}}}.
 
-```SDL_SetVideoMode``` from 1.2 is now just a compatibility function, you will not use it anymore.
+```SDL_SetVideoMode``` from 1.2 is now just a compatibility function, you will not use it anymore.  You can use [[SDL_GetWindowSurface]] to get a 1.2 style surface for a window if necessary.
 
 === Alpha-blending ===
 
