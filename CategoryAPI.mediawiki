@@ -5,8 +5,6 @@
 
 = SDL 1.3 API by Name =
 
-<!-- This page contains an alphabetical list of the available enumerations, structures, and functions is SDL 1.3.  It is designed to expedite finding information about a specific item that you know you are looking for.  If you would like more detailed information about a group of functions (ie: audio, video, etc.), and their related enumerations and structures, see [[APIByCategory]] instead.  You can also click on the Category<Group> link at the bottom of each page to go to the group page for more information or other parts of the API related to the page you are on. -->
-
 
 == Enumerations ==
 
