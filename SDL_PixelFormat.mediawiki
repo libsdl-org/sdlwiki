@@ -72,13 +72,13 @@ A structure that contains pixel format information.
 |<style="color: #808080;">'''Ashift'''
 |<style="color: #808080;">(internal use)
 |-
-|int
-|'''refcount'''
-|
+|<style="color: #808080;">int
+|<style="color: #808080;">'''refcount'''
+|<style="color: #808080;">(internal use)
 |-
-|SDL_PixelFormat*
-|'''next'''
-|
+|<style="color: #808080;">SDL_PixelFormat*
+|<style="color: #808080;">'''next'''
+|<style="color: #808080;">(internal use)
 |}
 
 == Code Examples ==
