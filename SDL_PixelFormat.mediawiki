@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
 
 = SDL_PixelFormat =
 A structure that contains pixel format information.
@@ -7,17 +8,37 @@ A structure that contains pixel format information.
 
 == Data Fields ==
 {|
+|Uint32
+|'''format'''
+|one of the [[SDL_PixelForamtEnum]] values
+|-
 |[[SDL_Palette]]*
 |'''palette'''
 |an [[SDL_Palette]] structure associated with this pixel format, or NULL if the format doesn't have a palette
 |-
 |Uint8
-|'''Bits<code></code>Per<code></code>Pixel'''
+|'''BitsPerPixel'''
 |the number of significant bits in a pixel value, eg: 8, 15, 16, 24, 32
 |-
 |Uint8
-|'''Bytes<code></code>Per<code></code>Pixel'''
+|'''BytesPerPixel'''
 |the number of bytes required to hold a pixel value, eg: 1, 2, 3, 4; see [[#bytesperpixel|Remarks]] for related data type
+|-
+|Uint32
+|'''Rmask'''
+|a mask representing the location of the red component of the pixel
+|-
+|Uint32
+|'''Gmask'''
+|a mask representing the location of the green component of the pixel
+|-
+|Uint32
+|'''Bmask'''
+|a mask representing the location of the blue component of the pixel
+|-
+|Uint32
+|'''Amask'''
+|a mask representing the location of the alpha component of the pixel or 0 if the pixel format doesn't have any alpha information
 |-
 |<style="color: #808080;">Uint8
 |<style="color: #808080;">'''Rloss'''
@@ -48,32 +69,20 @@ A structure that contains pixel format information.
 |<style="color: #808080;">(internal use)
 |-
 |<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Bshift'''
-|<style="color: #808080;">(internal use)
-|-
-|<style="color: #808080;">Uint8
 |<style="color: #808080;">'''Ashift'''
 |<style="color: #808080;">(internal use)
 |-
-|Uint32
-|'''Rmask'''
-|a mask representing the location of the red component of the pixel
+|int
+|'''refcount'''
+|
 |-
-|Uint32
-|'''Gmask'''
-|a mask representing the location of the green component of the pixel
-|-
-|Uint32
-|'''Bmask'''
-|a mask representing the location of the blue component of the pixel
-|-
-|Uint32
-|'''Amask'''
-|a mask representing the location of the alpha component of the pixel or 0 if the pixel format doesn't have any alpha information
+|SDL_PixelFormat*
+|'''next'''
+|
 |}
 
 == Code Examples ==
-8-bit pixel formats are the easiest to understand. Since its an 8-bit format, we have 8 '''!BitsPerPixel''' and 1 '''!BytesPerPixel'''. Since '''!BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:<br/>
+8-bit pixel formats are the easiest to understand. Since its an 8-bit format, we have 8 '''BitsPerPixel''' and 1 '''BytesPerPixel'''. Since '''BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:<br/>
 ```c++
 SDL_Surface *surface;
 SDL_PixelFormat *fmt;
@@ -108,7 +117,7 @@ printf("Pixel Color-> Red: %d, Green: %d, Blue: %d. Index: %d\n",
 .
 .
 ```
-Pixel formats above 8-bit are an entirely different experience. They are considered to be "!TrueColor" formats and the color information is stored in the pixels themselves, not in a palette. The '''mask''', '''shift''' and '''loss''' fields tell us how the color information is encoded. The '''mask''' fields allow us to isolate each color component, the '''shift''' fields tell us the number of bits to the right of each component in the pixel value and the '''loss''' fields tell us the number of bits lost from each component when packing 8-bit color component in a pixel.
+Pixel formats above 8-bit are an entirely different experience. They are considered to be "TrueColor" formats and the color information is stored in the pixels themselves, not in a palette. The '''mask''', '''shift''' and '''loss''' fields tell us how the color information is encoded. The '''mask''' fields allow us to isolate each color component, the '''shift''' fields tell us the number of bits to the right of each component in the pixel value and the '''loss''' fields tell us the number of bits lost from each component when packing 8-bit color component in a pixel.
 ```c++
 /* Extracting color components from a 32-bit color value */
 SDL_PixelFormat *fmt;
@@ -176,7 +185,7 @@ A pixel format has either a palette or masks.  If a palette is used '''Rmask''',
 |Uint32
 |}
 
-An [[SDL_PixelFormat]] describes the format of the pixel data stored at the '''pixels''' field of an [[SDL_Surface]]. Every surface stores an [[SDL_PixelFormat]] in the '''format''' field.
+An [[SDL_PixelFormat]] describes the format of the pixel data stored at the <code>pixels</code> field of an [[SDL_Surface]]. Every surface stores an [[SDL_PixelFormat]] in the <code>format</code> field.
 
 If you wish to do pixel level modifications on a surface, then understanding how SDL stores its color information is essential.  See [[#Code Examples|Code Examples]] above for more information.
 
