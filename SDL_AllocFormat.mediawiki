@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_AllocFormat =
+Use this function to create an [[SDL_PixelFormat]] structure from an ,,a pixel format enum,, [[SDL_PixelFormatEnum]].
+
+
+== Syntax ==
+```c++
+SDL_PixelFormat* SDL_AllocFormat(Uint32 pixel_format)
+```
+
+== Function Parameters ==
+{|
+|'''pixel_format'''
+|one of the [[SDL_PixelFormatEnum]] values
+|}
+
+== Return Value ==
+Returns the new [[SDL_PixelFormat]] structure or NULL on error.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_FreeFormat]]
+:[[SDL_InitFormat]]
+
+----
+[[CategoryAPI]], [[CategoryPixels]]
