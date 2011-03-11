@@ -30,7 +30,6 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_FreeFormat]]
-:[[SDL_InitFormat]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
