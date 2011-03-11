@@ -23,7 +23,10 @@ An enumeration of window events.
 |window has been moved to data1, data2
 |-
 |SDL_WINDOWEVENT_RESIZED
-|window size changed to data1xdata2
+|window has been resized to data1xdata2
+|-
+|SDL_WINDOWEVENT_SIZE_CHANGED
+|window size has changed, either as a result of an API call or through the system or user changing the window size
 |-
 |SDL_WINDOWEVENT_MINIMIZED
 |window has been minimized
