@@ -24,17 +24,17 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Sam: Add support for render targets
 * Sam: Add support for OpenGL context profiles
 * Sam: Create flags for specifying foreign window event behavior
-
-=== Wishlist ===
-* Create desktop video mode change notification
-* Support video modes with alpha channels
-* <<Color2(green, Support shaped windows)>>
+* <<Color2(green, Andreas: Support shaped windows)>>
 * <<Color2(green, Windows)>>
 * Mac OS X
 * <<Color2(green, Linux)>>
-* Support always-on-top window styles
-* Implement NET_WM_PING and NET_WM_PID/WM_CLIENT_MACHINE (http://standards.freedesktop.org/wm-spec/wm-spec-1.3.html#KILLINGWINDOWS)
-* Support desktop windows
+
+=== Wishlist ===
+* <<Color2(gray, Create desktop video mode change notification)>>
+* <<Color2(gray, Support always-on-top window styles)>>
+* <<Color2(gray, Support multiple icon sizes (e.g. for Windows Vista))>>
+* <<Color2(gray, Implement NET_WM_PING and NET_WM_PID/WM_CLIENT_MACHINE (http://standards.freedesktop.org/wm-spec/wm-spec-1.3.html#KILLINGWINDOWS))>>
+* <<Color2(gray, Support desktop windows)>>
    ```c++
         setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
         setWindowFlags(Qt::SplashScreen);
@@ -44,7 +44,6 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
             flags |= Qt::Tool;
             flags |= Qt::WindowStaysOnBottomHint;
 ```
-* Support multiple icon sizes (e.g. for Windows Vista)
 
 == Audio ==
 
@@ -65,7 +64,7 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Ryan: Add support for non-power-of-two audio rate conversion
 
 === Wishlist ===
-* PCM volume control
+* <<Color2(gray, PCM volume control)>>
 
 == Event ==
 
@@ -76,8 +75,8 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Sam: Add modifier state to key and button events
 
 === Wishlist ===
-* ???: Add a timestamp to events
-* ???: Add a timeout parameter for [[SDL_WaitEvent]]() (http://lists.libsdl.org/pipermail/sdl-libsdl.org/2008-May/thread.html#65067)
+* <<Color2(gray, Add a timestamp to events)>>
+* <<Color2(gray, Add a timeout parameter for [[SDL_WaitEvent]]() (http://lists.libsdl.org/pipermail/sdl-libsdl.org/2008-May/thread.html#65067))>>
 
 == Mouse Input ==
 
@@ -92,10 +91,10 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Verify proper behavior with Vista DPI scaling
 
 === Wishlist ===
-* Ryan: Add support for multiple mice
+* <<Color2(gray, Ryan: Add support for multiple mice)>>
 * Q: What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse?
-* ???: Pressure/tilt support for tablet like devices
-* ???: Add support animated cursors
+* <<Color2(gray, Pressure/tilt support for tablet like devices)>>
+* <<Color2(gray, Add support animated cursors)>>
 
 == Keyboard Input ==
 
@@ -152,9 +151,9 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * Sheena: Finish 1.3 API documentation
 
 === Wishlist ===
-* ???: Create an API for live video capture
-* ???: Create an API for accelerometer data
-* ???: Create extended set of (negative) error codes and have the API functions document and return them
+* <<Color2(gray, Create an API for live video capture)>>
+* <<Color2(gray, Create an API for accelerometer data)>>
+* <<Color2(gray, Create extended set of (negative) error codes and have the API functions document and return them)>>
 
 ----
 Ryan has more information on the SDL 1.3 changes that you can find here: <br/>
