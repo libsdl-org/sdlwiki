@@ -7,9 +7,9 @@ Use this function to fill some number of rectangles on the current rendering tar
 
 == Syntax ==
 ```c++
-int SDL_RenderFillRects(SDL_Renderer*    renderer,
-                        const SDL_Rect** rect,
-                        int              count)
+int SDL_RenderFillRects(SDL_Renderer*   renderer,
+                        const SDL_Rect* rect,
+                        int             count)
 ```
 
 == Function Parameters ==
