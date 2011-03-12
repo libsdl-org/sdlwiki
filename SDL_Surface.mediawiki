@@ -47,10 +47,6 @@ A structure that contains a collection of pixels used in software blitting.
 |<style="color: rgb(128, 128, 128);">'''map''' 
 |<style="color: rgb(128, 128, 128);">internal; info for fast blit mapping to other surfaces 
 |-
-|<style="color: rgb(128, 128, 128);">int 
-|<style="color: rgb(128, 128, 128);">'''format_version''' 
-|<style="color: rgb(128, 128, 128);">internal; bumped at every change to invalidate blit maps 
-|-
 |int 
 |'''refcount''' 
 |reference count that can be incremented by the application 
