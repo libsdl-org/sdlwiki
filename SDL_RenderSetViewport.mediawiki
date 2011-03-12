@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_RenderSetViewport =
+Use this function to set the drawing area for rendering on the current target.
+
+
+== Syntax ==
+```c++
+int SDL_RenderSetViewport(SDL_Renderer*   renderer,
+                          const SDL_Rect* rect)
+```
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the rendering context
+|-
+|'''rect'''
+|the [[SDL_Rect]] structure representing the drawing area, or NULL to set the viewport to the entire target
+|}
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The <code>x</code> and <code>y</code> of the viewport '''rect''' represent the origin for rendering.
+
+When the window is resized, the current viewport is automatically centered within the new window size.
+
+== Related Functions ==
+:[[SDL_GetWindowSize]] ???
+:[[SDL_RenderGetViewport]]
+
+----
+[[CategoryAPI]], [[CategoryRenderer]]
