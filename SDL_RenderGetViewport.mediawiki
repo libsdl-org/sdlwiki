@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_RenderGetViewport =
+Use this function to get the drawing area for the current target.
+
+
+== Syntax ==
+```c++
+void SDL_RenderGetViewport(SDL_Renderer* renderer,
+                           SDL_Rect*     rect)
+```
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the rendering context
+|-
+|'''rect'''
+|the [[SDL_Rect]] structure representing the drawing area
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderSetViewport]]
+
+----
+[[CategoryAPI]], [[CategoryRenderer]]
