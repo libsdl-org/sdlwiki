@@ -1,0 +1,49 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_BlitScaled =
+Use this function to perform a fast, low quality, stretch blit between two surfaces of ,,the,, different pixel formats.
+
+
+== Syntax ==
+```c++
+int SDL_BlitScaled(SDL_Surface*    src,
+                   const SDL_Rect* srcrect,
+                   SDL_Surface*    dst,
+                   const SDL_Rect* dstrect)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|the [[SDL_Surface]] structure to be copied from
+|-
+|'''srcrect'''
+|the [[SDL_Rect]] structure representing the rectangle to be copied
+|-
+|'''dst'''
+|the [[SDL_Surface]] structure that is the blit target
+|-
+|'''dstrect'''
+|the [[SDL_Rect]] structure representing the rectangle that is copied into
+|}
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function calls [[SDL_SoftStretch]]() or [[SDL_LowerBlit]]().
+
+== Related Functions ==
+:[[SDL_LowerBlit]]
+:[[SDL_SetClipRect]] ???
+:[[SDL_SoftStretch]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
