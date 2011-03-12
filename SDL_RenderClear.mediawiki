@@ -61,7 +61,7 @@ int main(int argc, char* argv[])
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function clears the entire rendering target, ignoring the viewport.
 
 == Related Functions ==
 :[[SDL_SetRenderDrawColor]]
