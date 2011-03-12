@@ -7,10 +7,10 @@ Use this function to perform a fast fill of a set of rectangles with a specific 
 
 == Syntax ==
 ```c++
-int SDL_FillRects(SDL_Surface*     dst,
-                  const SDL_Rect** rects,
-                  int              count,
-                  Uint32           color)
+int SDL_FillRects(SDL_Surface*    dst,
+                  const SDL_Rect* rects,
+                  int             count,
+                  Uint32          color)
 ```
 
 == Function Parameters ==
