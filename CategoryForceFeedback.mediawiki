@@ -27,8 +27,30 @@ The basic usage is as follows:
  1. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
  1. Close the haptic device with [[SDL_HapticClose]]()
 
-Code Example:
+== Code Examples ==
+Simple rumble example:
+```c++
+SDL_Haptic *haptic;
 
+// Open the device
+haptic = SDL_HapticOpen( 0 );
+if (haptic == NULL)
+   return -1;
+
+// Initialize simple rumble
+if (SDL_HapticRumbleInit( haptic ) != 0)
+   return -1;
+
+// Play effect at 50% strength for 2 seconds
+if (SDL_HapticRumblePlay( haptic, 0.5, 2000 ) != 0)
+   return -1;
+SDL_Delay( 2000 );
+
+// Clean up
+SDL_HapticClose( haptic );
+```
+
+Complete example:
 ```c++
 int test_haptic( SDL_Joystick * joystick ) {
  SDL_Haptic *haptic;
