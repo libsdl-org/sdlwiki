@@ -7,6 +7,9 @@ An enumeration of flags used when creating a rendering context.
 
 == Values ==
 {|
+|SDL_RENDERER_SOFTWARE
+|the renderer is a software fallback
+|-
 |SDL_RENDERER_ACCELERATED
 |the renderer uses hardware acceleration
 |-
