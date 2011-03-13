@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetRevisionNumber =
+Use this function to get the revision number of SDL that is linked against your program.
+
+
+== Syntax ==
+```c++
+int SDL_GetRevisionNumber(void)
+```
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+Returns a number uniquely identifying the exact revision of the SDL library in use. It is an incrementing number based on commits to hg.libsdl.org.
+
+== Related Functions ==
+:[[SDL_GetRevision]]
+
+----
+[[CategoryAPI]], [[CategoryVersion]]
