@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetWindowGrab =
 Use this function to get a window's input grab mode.
@@ -7,7 +7,7 @@ Use this function to get a window's input grab mode.
 
 == Syntax ==
 ```c++
-int SDL_GetWindowGrab(SDL_Window* window)
+SDL_bool SDL_GetWindowGrab(SDL_Window* window)
 ```
 
 == Function Parameters ==
@@ -17,7 +17,7 @@ int SDL_GetWindowGrab(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns 1 if input is grabbed, 0 otherwise.
+Returns SDL_TRUE if input is grabbed, SDL_FALSE otherwise.
 
 == Code Examples ==
 ```c++
