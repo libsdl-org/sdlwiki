@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_WindowFlags =
 An enumeration of window states.
@@ -8,13 +8,16 @@ An enumeration of window states.
 == Values ==
 {|
 |SDL_WINDOW_FULLSCREEN
-|fullscreen window, implies borderless
+|fullscreen window
 |-
 |SDL_WINDOW_OPENGL
 |window usable with OpenGL context
 |-
 |SDL_WINDOW_SHOWN
 |window is visible
+|-
+|SDL_WINDOW_HIDDEN
+|window is not visible
 |-
 |SDL_WINDOW_BORDERLESS
 |no window decoration
