@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_SetWindowGrab =
 Use this function to set a window's input grab mode.
@@ -8,7 +8,7 @@ Use this function to set a window's input grab mode.
 == Syntax ==
 ```c++
 void SDL_SetWindowGrab(SDL_Window* window,
-                       int         mode)
+                       SDL_bool    mode)
 ```
 
 == Function Parameters ==
@@ -17,7 +17,7 @@ void SDL_SetWindowGrab(SDL_Window* window,
 |the window to change
 |-
 |'''mode'''
-|1 to grab input or 0 to release input
+|SDL_TRUE to grab input, SDL_FALSE to release input
 |}
 
 == Code Examples ==
