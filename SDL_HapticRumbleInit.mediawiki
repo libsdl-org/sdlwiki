@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HapticRumbleInit =
+Use this function to initialize ,,the,, ^a^ haptic device for simple rumble playback.
+
+
+== Syntax ==
+```c++
+int SDL_HapticRumbleInit(SDL_Haptic* haptic)
+```
+
+== Function Parameters ==
+{|
+|'''haptic'''
+|the haptic device to initialize
+|}
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_HapticOpen]]
+:[[SDL_HapticRumblePlay]]
+:[[SDL_HapticRumbleStop]]
+:[[SDL_HapticRumbleSupported]]
+
+----
+[[CategoryAPI]], [[CategoryForceFeedback]]
