@@ -22,7 +22,7 @@ int SDL_HapticEffectSupported(SDL_Haptic*       haptic,
 |}
 
 == Return Value ==
-Returns 1 if the effect is supported, 0 if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
