@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_ConvertSurfaceFormat =
+Use this function to create a new surface of the specified format, and then copy and map the given surface to it so the blit of the converted surface will be as fast as possible.
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
+                                      Uint32       pixel_format,
+                                      Uint32       flags)
+```
+
+== Function Parameters ==
+{|
+|'''src'''
+|the [[SDL_Surface]] structure representing the surface to convert
+|-
+|'''pixel_format'''
+|one of the [[SDL_PixelFormatEnum]] values
+|-
+|'''flags'''
+|the flags are unused and should be set to 0 ???
+|}
+
+== Return Value ==
+Returns the new surface, or NULL on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,Should the SDL_PixelFormatEnum values be included here?)>>
+
+== Related Functions ==
+:[[SDL_AllocFormat]] ???
+:[[SDL_ConvertSurface]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
