@@ -18,7 +18,7 @@ int SDL_RenderFillRects(SDL_Renderer*   renderer,
 |the rendering context
 |-
 |'''rects'''
-|an array of [[SDL_Rect]] structures representing the rectangles to be drawn
+|an array of [[SDL_Rect]] structures representing the rectangles to be filled
 |-
 |'''count'''
 |the number of rectangles
