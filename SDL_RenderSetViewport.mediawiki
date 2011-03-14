@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_RenderSetViewport =
 Use this function to set the drawing area for rendering on the current target.
@@ -30,13 +29,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-The <code>x</code> and <code>y</code> of the viewport '''rect''' represent the origin for rendering.
-
 When the window is resized, the current viewport is automatically centered within the new window size.
 
 == Related Functions ==
-:[[SDL_GetWindowSize]] ???
 :[[SDL_RenderGetViewport]]
 
 ----
-[[CategoryAPI]], [[CategoryRenderer]]
+[[CategoryAPI]], [[CategoryRender]]
