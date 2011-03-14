@@ -8,7 +8,7 @@ Use this function to fill some number of rectangles on the current rendering tar
 == Syntax ==
 ```c++
 int SDL_RenderFillRects(SDL_Renderer*   renderer,
-                        const SDL_Rect* rect,
+                        const SDL_Rect* rects,
                         int             count)
 ```
 
@@ -17,8 +17,8 @@ int SDL_RenderFillRects(SDL_Renderer*   renderer,
 |'''renderer'''
 |the rendering context
 |-
-|'''rect'''
-|an array of [[SDL_Rect]] structures representing areas to fill
+|'''rects'''
+|an array of [[SDL_Rect]] structures representing the rectangles to be drawn
 |-
 |'''count'''
 |the number of rectangles
