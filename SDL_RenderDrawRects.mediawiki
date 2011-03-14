@@ -18,7 +18,7 @@ int SDL_RenderDrawRects(SDL_Renderer*   renderer,
 |the rendering context
 |-
 |'''rects'''
-|a pointer to an array of destination [[SDL_Rect]] structures
+|an array of [[SDL_Rect]] structures representing the rectangles to be drawn
 |-
 |'''count'''
 |the number of rectangles
