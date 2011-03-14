@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_RenderGetViewport =
 Use this function to get the drawing area for the current target.
@@ -18,7 +17,7 @@ void SDL_RenderGetViewport(SDL_Renderer* renderer,
 |the rendering context
 |-
 |'''rect'''
-|the [[SDL_Rect]] structure representing the drawing area
+|an [[SDL_Rect]] structure filled in with the current drawing area
 |}
 
 == Code Examples ==
@@ -33,4 +32,4 @@ You can add your code example here
 :[[SDL_RenderSetViewport]]
 
 ----
-[[CategoryAPI]], [[CategoryRenderer]]
+[[CategoryAPI]], [[CategoryRender]]
