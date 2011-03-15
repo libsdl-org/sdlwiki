@@ -3,6 +3,8 @@
 <!-- acl All:read -->
 '''DRAFT'''
 
+<<Color2(red,Please note that the formatting of this page is currently in transition.  It will look a little funny/disorganized for a while as I get it all shifted over.  I hope you will bear with me.  I'll get it all adjusted as quickly as possible. Thanks!)>>
+
 = Style Guide: Wiki Basics =
 
 <span id="ToC"></span>
@@ -52,6 +54,23 @@ When you have finished adding your content and filling in the Comment field, and
 
 [[#ToC|Return to Table of Contents]]
 
+
+
+== General Guidelines ==
+
+''<<Color2(red,Important!)>>'' Never remove DRAFT from any page!
+
+The top of (nearly) every page begins with the following:
+  ```
+#pragma section-numbers off
+#pragma camelcase off
+```
+ Any new or in progress page will also include:
+ ```
+||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
+```
+
+Never change the Category links at the bottom of a page.
 
 
 <span id="markup"></span>
@@ -296,19 +315,25 @@ Verbatim text as it should be typed, or appear as code or with markup. This will
 
 <span id="hyperlinks"></span>
 === Hyperlinks ===
- Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so it is important that you manually hyperlink these.  
-* A hyperlink to another page (especially within the wiki) is created, in most cases, by enclosing the text to be linked in double brackets:<br/> ```[[linktarget]]```
-: ''Example'':  Typing ```SDL_VideoInit``` will produce SDL_VideoInit, an incomplete hyperlink, because only the CamelCase portion of the name is automatically recognized by the wiki as a hyperlink.  You will need to type {{{[[SDL_VideoInit]]}}} to include the SDL_ in the link ([[SDL_VideoInit]]).
-* If a hyperlink is automatically created where you __don't__ want one, adding 2 backticks (```<code></code>```) to interrupt the linked phrase or an exclamation mark ({{{!}}}) at the beginning of the incorrect link will usually remove the automatic link without appearing in the displayed text.
-: ''Example'':  If typed verbatim, the data field ```BitsPerPixel``` is automatically linked, as shown here (BitsPerPixel).  This is pointless because individual data fields will not have their own pages, making this a useless, dead link.  Typing {{{Bits<code></code>Per<code></code>Pixel}}}  or {{{!BitsPerPixel}}} will prevent it from becoming a link, as shown here (Bits<code></code>Per<code></code>Pixel).
-* A hyperlink to an anchor (or any unique text on a page) is created, in most cases, by<br/>
+ Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via the following markup at the top of every page:
+ ```
+#pragma camelcase off
+```
+Therefore, it is important that you manually create hyperlinks!
+: ''Action'': Always create a hyperlink to any API page.
+: ''Action'': Do not create hyperlinks to portions of the API that do not have their own page.
+: ''Hint'': If you are unsure, check the [http://wiki.libsdl.org/moin.cgi/CategoryAPI API By name] page.
+: ''Markup'': A hyperlink to another page (especially within the wiki) is created, in most cases, by enclosing the text to be linked in double brackets:<br/> ```[[linktarget]]```
+: ''Example'':  ```[[SDL_VideoInit]]``` generates [[SDL_VideoInit]]
+* If a hyperlink is automatically created where you __don't__ want one check to ensure that the #pragma markup mentioned [[#hyperlinks|above]] is correct at the top of the page.  If it is not, correct or add it.  This should resolve the issue.
+* A hyperlink to an [[#anchors|anchor]] (or any unique text on a page) is created, in most cases, by<br/>
    ```[[#anchorname|description]]```<br/>
    where ```anchorname``` is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{description}}} is the text that will actually appear as the link.<br/>
   ''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
-* A hyperlink to an outside web or email address may be created by simply typing or pasting in the address.
+* A hyperlink to an outside web or email address may be created by simply typing or pasting in the address.  The wiki should auto-recognize and link these standard forms.
 * To create a link with link text other than the address itself, enclose the address followed by a pipe and the alternate link text in double brackets.  
    ''Example'': ```[[link address|alternate text]]``` produces [[link address|alternate text]]
-*Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>tip</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+*Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
 
  More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
 
