@@ -59,7 +59,7 @@
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_events.h SDL_events.h] 
 |-
 |[CategoryKeyboard|Keyboard Support]] 
-|[[http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_keysym.h SDL_keysym.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_keycode.h SDL_keycode.h]<br/>[http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
 |-
 |[CategoryMouse|Mouse Support]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h] 
