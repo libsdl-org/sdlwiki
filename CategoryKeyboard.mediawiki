@@ -5,7 +5,7 @@
 
 = Keyboard Support =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_keysym.h SDL_keysym.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_keycode.h SDL_keycode.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
 
 
 
