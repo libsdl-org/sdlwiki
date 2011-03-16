@@ -56,6 +56,42 @@ When you have finished adding your content and filling in the Comment field, and
 <br/>
 <br/>
 
+== Style Guide Terminology ==
+Some terms used in the style guides are intended to have specific meanings or purposes that may or may not be as intuitively clear as we hope.  Explanations are provided here to avoid any potential confusion.
+<span id="api"></span>
+: '''API Page'''
+: Refers to any Function, Structure, or Enumeration page.
+<span id="category"></span>
+: '''Category Page'''
+: Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
+ ||<tablewidth="50%" style="color: #FF0000;" :> DRAFT||
+: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the editing process.  ''Thank you!''
+: '''''If...'''''
+: Found at the beginning of some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
+: In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
+: '''''Action'':'''
+: The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
+: Sometimes ''Action'' will include a number (ie: ''Action 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
+: ''Action'' is almost always followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
+: /!\ Please read any ''Note'' or ''<<Color2(red,Important!)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped unless you are having trouble.
+: '''''Markup'':'''
+: The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
+: Sometimes ''Markup'' will include a number (ie: ''Markup 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
+: '''''How'':'''
+: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.
+: '''''Note'':'''
+: The instructions immediately following ''Note'': should be taken into consideration as necessary.  
+: '''''<<Color2(red,Important!)>>'''''
+: Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
+: '''''Example'':'''
+: Provides a direct example of the markup or points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
+<br/>
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+
 == General Guidelines ==
 
 This section contains general information that applies to nearly every page in the wiki.  Please review this section periodically for updates.  
@@ -73,8 +109,10 @@ The top of (nearly) every page begins with the following, which should not be ed
  ```
 ||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
 ```
-
-
+<br/>
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
 
 
 <span id="markup"></span>
@@ -93,6 +131,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
  ''Example'': If you try to pick up a numbered list down the page after using unnumbered lines at the same indent level, the next number in the numbered list will count the unnumbered lines.
 : See [[#problems1|Some Known Problems and Solutions]] below for notes on known markup misbehavior.
 
+
 <span id="indent"></span>
 ==== Indenting ====
 : ''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
@@ -106,6 +145,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 
 : ''<<Color2(red,Important!)>>'' Indenting often leads to inadvertent creating of a list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
 
+
 <span id="break"></span>
 ==== Hard Line Break ====
  ''Markup'': ```<br/>```
@@ -116,6 +156,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 ```
    ''generates''
 : 1 first line<br/>  2 this line typed on same line after hard line break markup, same indent<br/>   3 this line typed on same line after hard line break markup, +1 indent<br/>  4 this line typed on same line after hard line break markup, -1 indent<br/>  . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
+
 
 <span id="vertical"></span>
 : ''Note'': Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
@@ -169,6 +210,7 @@ Numbered Lists
   1. Second line of numbered list
 
  More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists]
+
 
 <span id="problems1"></span>
 ==== Some Known Problems and Solutions ====
@@ -247,9 +289,7 @@ Numbered Lists
 === Text Formatting ===
 ''Note'': Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
 
-
-==== Font Types & Sizes ====
-<<Color2(red,''Important!'')>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.  
+'''<<Color2(red,''Important!'')>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.'''
 
 {|
 |<bgcolor="#EDEDED">Style
@@ -275,11 +315,11 @@ Numbered Lists
 |<( |5 30%>```Code (or Verbatim Text)```
 |''Markup'': Use three curly brackets surrounding text to be rendered as code.
 |-
-|''Option 1'': Place the brackets inline with the text to display the code formatting inline.
+|''Markup 1'': Place the brackets inline with the text to display the code formatting inline.
 |-
 |See ''[[#example1|Example 1]]'' below the table.
 |-
-|''Option 2'': Place the brackets above and below the text to display the code formatting inside a box.
+|''Markup 2'': Place the brackets above and below the text to display the code formatting inside a box.
 |-
 |See ''[[#example2|Example 2]]'' below the table.
 |-
@@ -383,22 +423,24 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 |<( 30%>Link to an __outside page or email address__
 |''Markup'': Type or paste in the address.  The wiki should auto-recognize and link these standard forms.
 |-
-|<( |3 30%>Link with __alternate link text__ (other than the address itself)
-|''Markup'': Enclose the standard address (as above) followed by a pipe and the alternate link text in double brackets.
+|<( |3 30%>Link with __alternate link text__
+|''Markup'': Enclose the standard address (as above) followed by a pipe and the alternate link text in double brackets to create linked text that is different from the actual address.
 |-
 |''Example'': ```[[normal link address|alternate text]]```<br/>produces<br/>[[normal link address|alternate text]]
 |-
-|''Note'': Alternate link text is optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
+|''Note'': Alternate link text is generally optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
 |-
 |<( |2 30%>Link __referencing the header files__
 |''<<Color2(red,Important!)>>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
 |-
 |''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h so the link always points to the most current file.
 |-
-|<( |2 30%>Link to an __anchor__ (or most any unique text) __on the same page__
-|''Markup'': ```[[#anchorname|description]]``` where {{{anchorname}}} is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{description}}} is the text that will actually appear as the link.
+|<( |3 30%>Link to an __anchor__ (or most any unique text) __on the same page__
+|''Markup'': ```[[#anchorname|link text]]``` where {{{anchorname}}} is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{link text}}} is the text that will actually appear as the link.
 |-
 |''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
+|-
+|''Note'': In the case of anchors it is important to use the alternate text, even if it is identical to the anchor name, to make the link look nice.  Without it the # appears in the link.
 |-
 |<( |3 30%>Link to an __anchor on another page__
 |''Action'': Insert the page address before the # in the address section of an anchor link.
@@ -415,35 +457,135 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 
 <span id="anchors"></span>
 ==== Anchors ====
- ```<span id="anchorname"></span>```<br/>
+''Markup'': ```<span id="anchorname"></span>```
 * Place the above markup in the location where you wish to create an anchor, replacing ```anchorname``` with a word (or phrase) that has meaning in that application.
-: ''Example'': ```<span id="hyperlinks"></span>``` would create an anchor called hyperlinks that would be located at the beginning of a section related to hyperlinks.<br/>
- More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking] and [http://wiki.libsdl.org/moin.cgi/HelpOnMacros HelpOnMacros].
+* Anchors will not appear on the saved page or take space on the page but can be referenced in [[#hyperlinks|hyperlinks]].
+''Example'': ```<span id="hyperlinks"></span>``` creates an anchor called hyperlinks that could be located at the beginning of a section related to hyperlinks.
 
-[[#ToC|Return to Table of Contents]]
+''Note'': In some cases you cannot place anchor markup on the same line as other text, such as headings, without affecting the formatting following the anchor.  It is preferable to place the anchor markup on its own line to avoid these conflicts.
+
+''Note'': It is best to place your anchor on the line ''above'' the beginning of the section you are marking with the anchor.  This is because the next line after the anchor will be aligned with the top of the viewing window when it is used.  If the anchor is below something like a heading the heading will be off screen when the anchor is used.  The exception to this is if the anchor is very close to the bottom of the page, in which case it will be moved as close to the top of the screen as possible.
+
+More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking] and [http://wiki.libsdl.org/moin.cgi/HelpOnMacros HelpOnMacros].
+
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 
 <span id="tables"></span>
 === Tables ===
- Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
+''Action'': To create a basic table with default spacing and styling.
+
+''Markup'': Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
 * It is important that there are no blank spaces or other characters after the closing pipes on a line.
-  ''Example'': 
-  ```
+
+''Example'': 
+ ```
 ||row 1 column 1||row 1 column 2||row 1 column 3||
 ||row 2 column 1||row 2 column 2||row 2 column 3||
 ```
   ''Generates'':
-  ||row 1 column 1||row 1 column 2||row 1 column 3||
-  ||row 2 column1||row 2 column 2||row 2 column 3||
+ ||row 1 column 1||row 1 column 2||row 1 column 3||
+ ||row 2 column1||row 2 column 2||row 2 column 3||
 
- To add color within a table use the following markup:
-  ||<code><style="color: #FF0000;"></code>||set text color||
-  ||<code><bgcolor="#XXXXXX"></code>||set cell background color||
-  ||<code><rowbgcolor="#XXXXXX"></code>||set row background color (only valid in first cell)||
-  ||<code><tablebgcolor="#XXXXXX"></code>||set table background color||
 
- More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
+''Action'': To create non-default formatting in tables place any of the following markup within <> at the beginning of the cell, row, column, or table to be formatted.  
+* All formatting markup can be placed within the same <>, separated by spaces.
+* If markup conflicts the last option in the list wins.
+
+''Markup 1'': 
+: ''If'' you know CSS formatted <code>style</code> markup you can append most any common formatting into the ```<style="...">``` markup to create table formatting.  You can also use <code>class</code> markup to some extent.  
+: See [http://wiki.libsdl.org/moin.cgi/HelpOnTables Help On Tables] for details.
+
+''Markup 2'': 
+: ''If'' you would prefer to use the wiki markup or do not know CSS styles see the table below.
+
+{|
+|
+|<rowbgcolor="#EDEDED">''Colors''
+|-
+|<( |4 30%>To colorize __text in a cell__
+|''Markup 1'': use <<Color2(green,Colored Text)>> described [[#formatting|above]]
+|-
+|''Markup 2'': ```style="color: #XXXXXX;"```
+|-
+|<style="color:#339933;"> ''Example'': this is sample color text
+|-
+|''Note'': ''Markup 2'' can only be used to colorize all of the text within a cell.  See ''Markup 1'' to colorize only some text in a cell.
+|-
+|To set __cell background color__
+|''Markup'': ```bgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|<( |2 30%>To set __row background color__
+|''Markup'': ```rowbgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|''Note'': This is only valid in the first cell of a row
+|-
+|<( |2 30%>To set __table background color__
+|''Markup'': ```tablebgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|''Note'': This is valid in the first cell of the table
+|-
+|
+|<rowbgcolor="#EDEDED">''Alignment''
+|-
+|<( |2 30%>To control __horizontal text alignment__
+|''Markup'':<br/>left = (<br/>centered = ''':'''<br/>right = )
+|-
+|''Example'': The first column in this table uses ( 
+|-
+|<( |2 30%>To control __vertical text alignment__
+|''Markup'':<br/>top = ^<br/>bottom = v
+|-
+|''Note'': middle is the default so there is no markup for it.
+|-
+|
+|<rowbgcolor="#EDEDED">''Sizes''
+|-
+|<( |2 30%>To control __table width__
+|''Markup'': ```tablewidth="x%"``` where 0 < x < 100
+|-
+|''Note'': This is only valid in the first cell of the table.
+|-
+|<( |3 30%>To control __column width__
+|''Markup'': In the column you wish to control, use ```x%``` or {{{width="x%"}}} where 0 < x < 100.
+|-
+|''Note'': The remaining columns will auto-balance using the remaining percentage of table width and the size of the cell contents.  (It may be the case that setting the column width in one cell will affect the whole table.  I have not tested this extensively.)
+|-
+|''Example'': This table uses <code>30%</code> in the first column
+|-
+|
+|<rowbgcolor="#EDEDED">''Spanning''
+|-
+|<( |3 30%>To cause a cell to __span multiple rows__
+|''Markup'': ```|x``` where x is the number of rows to span including the first
+|-
+|''Note'': When creating the table, the cell(s) in the first row to span should be included on the same line as the spanning cell as usual.  Each additional row should be on it's own table line, omitting the spanning cell.
+|-
+|''Example'': Go into <<Color2(blue,Edit (Text))>> mode and look at most any of the tables in this document.
+|-
+|<( |5 30%>To cause a cell to __span multiple columns__
+|''Markup 1'': Create empty cells at the beginning of the row equaling the number of cells to skip/span, then place your text in the last cell of that row.
+|-
+|''Example'': ```
+|
+|
+|cell spanning 3 columns
+|```
+|-
+|''Note'': Total number of columns should equal that of the table.
+|-
+|''Markup 2'': Use ```-x``` where x is the number of columns to span including the first
+|-
+|''Example'': ```
+|<-3>text spanning 3 columns
+|```
+|}
+
+
+
+
+More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
 
 [[#ToC|Return to Table of Contents]]
 
@@ -494,35 +636,7 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 
 == Miscellaneous Notes ==
 
-=== Style Guide Terminology ===
-Some terms used in the style guides are intended to have specific meanings or purposes that may or may not be as intuitively clear as we hope.  Explanations are provided here to avoid any potential confusion.
-<span id="api"></span>
-: '''API Page'''
-: Refers to any Function, Structure, or Enumeration page.
-<span id="category"></span>
-: '''Category Page'''
-: Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
- ||<tablewidth="50%" style="color: #FF0000;" :> DRAFT||
-: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the editing process.  ''Thank you!''
-: '''''If...'''''
-: Found at the beginning of detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suit your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
-: In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
-: '''''Action'':'''
-: The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
-: ''Action'' is almost always followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
-: /!\ Please read any ''Note'' or ''<<Color2(red,Important!)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped.
-: '''''Markup'':'''
-: The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
-: '''''How'':'''
-: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.
-: '''''Note'':'''
-: The instructions immediately following ''Note'': should be taken into consideration as necessary.  
-: '''''<<Color2(red,Important!)>>'''''
-: Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
-: '''''Example'':'''
-: Provides a direct example of the markup or points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
-<br/>
-<br/>
+
 === Other Help ===
 Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
