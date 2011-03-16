@@ -8,15 +8,13 @@
 = Simple DirectMedia Layer =
 
 == What is it? ==
-SDL drastically reduces the time you spend bringing your game to desktop and mobile platforms.
-
-It is designed to cleanly replace the platform-specific code you have for:
+SDL drastically reduces the time you spend bringing your game to desktop and mobile platforms, cleanly replacing platform specific code for:
 * window and display management
 * interactive input
 * advanced multi-threading
 * ... and much more.
 
-SDL fully supports modern 3D graphics using Direct3D and OpenGL, and has a 2D graphics API for emulators and classic games.
+SDL fully supports high end 3D graphics using Direct3D and OpenGL, and has a 2D graphics API for emulators and classic games.
 
 This wiki is your portal to documentation and other resources for SDL 1.3.
 <br/>
