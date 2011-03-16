@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 <!-- acl All:read -->
 '''DRAFT'''
 
@@ -52,15 +52,19 @@ When you have finished adding your content and filling in the Comment field, and
 
  If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
 
-[[#ToC|Return to Table of Contents]]
-
-
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
 
 == General Guidelines ==
 
-''<<Color2(red,Important!)>>'' Never remove DRAFT from any page!
+This section contains general information that applies to nearly every page in the wiki.  Please review this section periodically for updates.  
 
-The top of (nearly) every page begins with the following:
+''<<Color2(red,Important!)>>'' Do not remove DRAFT from any page!
+
+''<<Color2(red,Important!)>>'' Do not change the Category links at the bottom of a page.
+
+The top of (nearly) every page begins with the following, which should not be edited:
   ```
 #pragma section-numbers off
 #pragma camelcase off
@@ -70,7 +74,7 @@ The top of (nearly) every page begins with the following:
 ||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
 ```
 
-Never change the Category links at the bottom of a page.
+
 
 
 <span id="markup"></span>
@@ -87,7 +91,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 === Spacing ===
 Both vertical and horizontal spacing can be rendered differently depending upon the combination of formatting markup that is used.  If your formatting is not working out the way you want check the notes below on other formatting that you have used nearby that may be affecting how the local formatting is interpreted.
  ''Example'': If you try to pick up a numbered list down the page after using unnumbered lines at the same indent level, the next number in the numbered list will count the unnumbered lines.
-: See [[#problems1|Some Known Problems and Solutions]] below for notes on known interference between markup.
+: See [[#problems1|Some Known Problems and Solutions]] below for notes on known markup misbehavior.
 
 <span id="indent"></span>
 ==== Indenting ====
@@ -141,12 +145,12 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
    a. use a [[#indent|period]] at the beginning of the line after indenting the same amount
    a. [[#indent|indent]] less (farther left)
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 <span id="lists"></span>
 ==== Lists ====
-<<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with anything that interrupts a list!   
+<<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
 
 Bullet Lists
 : ''Markup'': Begin a line with a space followed by an asterisk to create a bulleted line of text (space after asterisk is optional but seems to be preferred)
@@ -235,10 +239,10 @@ Numbered Lists
 
 
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
-
-
+<br/>
+<br/>
 <span id="formatting"></span>
 === Text Formatting ===
 ''Note'': Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
@@ -247,93 +251,162 @@ Numbered Lists
 ==== Font Types & Sizes ====
 <<Color2(red,''Important!'')>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.  
 
-==== Bold ====
- '''Bold'''
-* Place three apostrophes surrounding text to be bolded, without a space between markup and text.
-  ''Example'': ```'''bold text'''``` generates '''bold text'''
+{|
+|<bgcolor="#EDEDED">Style
+|<bgcolor="#EDEDED">Details
+|-
+|<( |2 30%>'''Bold'''
+|''Markup'': Place three apostrophes surrounding text to be bolded, without a space between markup and text.
+|-
+|''Example'': ```'''bold text'''``` generates '''bold text'''
+|-
+|<( |2 30%>''Italics''
+|''Markup'': Place two apostrophes surrounding text to be italicized, without a space between markup and text.
+|-
+|''Example'': ```''italics text''``` generates ''italics text''
+|-
+|<( |3 30%><code>Monospace</code>
+|''Markup'': Place a backtick on either side of the text, without a space between markup and text.
+|-
+|''Note'': This may resemble inline code (see below) in many cases, but will not behave the same.
+|-
+|''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
+|-
+|<( |5 30%>```Code (or Verbatim Text)```
+|''Markup'': Use three curly brackets surrounding text to be rendered as code.
+|-
+|''Option 1'': Place the brackets inline with the text to display the code formatting inline.
+|-
+|See ''[[#example1|Example 1]]'' below the table.
+|-
+|''Option 2'': Place the brackets above and below the text to display the code formatting inside a box.
+|-
+|See ''[[#example2|Example 2]]'' below the table.
+|-
+|<( |6 30%><<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>>
+|<<Color2(red,''Important!'')>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
+|-
+|''Note'': We have the Color2 macro installed. It will colorize text inside or outside of tables.
+|-
+|''Markup'':```<<Color2(colorname,text to be colorized)>>``` where {{{colorname}}} may be most any simple color name like blue or red or green
+|-
+|''Note'': If ```text to be colorized``` must contain commas each section must be colorized separately, breaking at each comma.
+|-
+|See ''[[#example3|Example 3]]'' below table.
+|-
+|''Note'': There are other options for colorizing text (and backgrounds) within tables.  See [[#tables|Tables]] below for more info.
+|}
 
-==== Italics ====
- ''Italics''
-* Place two apostrophes surrounding text to be italicized, without a space between markup and text.
-  ''Example'': ```''italics text''``` generates ''italics text''
-
-==== Monospace ====
- <code>Monospace</code>
-* Place a backtick on either side of the text, without a space between markup and text.  (Note: This may resemble inline code (see below) in many cases, but will not behave the same.)
-  ''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
-
-==== Code ====
- ```Code (or Verbatim Text)```
-* Use three curly brackets surrounding text to be rendered as code.
-* Place the brackets inline with the text to display the code formatting inline. 
-   ''Example'': ```{
-{{{Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
+<span id="example1"></span>
+: ''Example 1'':
+  ```{
+{{{Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap.```
 }}}}
-    ''generates''
-   ```Verbatim text as it should be typed, or appear as code or with markup. If it is too long for the line it will not wrap.```
-* Place the brackets above and below the text to display the code formatting inside a box.
-   ''Example'': ```{
+: ''Generates''
+  ```Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap.```
+
+<span id="example2"></span>
+: ''Example 2'':
+  ```{
 {{{
-Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line.
 ```
 }}}}
-    ''generates''
-   ```
-Verbatim text as it should be typed, or appear as code or with markup. This will word wrap if it is too long for one line.
+: ''Generates''
+  ```
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line.
 ```
 
-==== Colored Text ====
- <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>>
-
-  We have the Color2 macro installed. It will colorize text outside of tables using the following syntax:<br/>
-   ```<<Color2(colorname,text to be colorized)>>```<br/>
-* ```colorname``` may be most any simple color name like blue or red or green
-* If ```text to be colorized``` must contain commas each section must be colorized separately.  Place the comma at the end of each string and the space after between colorized sections to accomplish this.
-: ''Example'': 
+<span id="example3"></span>
+: ''Example 3'': 
 : ''Correct'' 
-     ```
+  ```
 <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
 ```
-      ''generates''
+: ''Generates''
 : <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
-: ''Incorrect'' (note that the beginning of the sentence is missing)
-     ```
+: ''Incorrect''
+  ```
 <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
 ```
-      ''generates''
+:''Generates''
 : <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
+: ''Note'': the beginning of the sentence is missing in this version
 
-  The Color2 macro will work within a table also!  However, there are other options for colorizing text (and backgrounds) in tables.  See [[#tables|Tables]] below for more info.
+More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
 
-  <!> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.  
-
-
- More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
-
-[[#ToC|Return to Table of Contents]]
-
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
 
 <span id="hyperlinks"></span>
 === Hyperlinks ===
- Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via the following markup at the top of every page:
+<<Color2(red,''Important!'')>>  Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via CamelCase recognition using the following markup at the top of every page:
  ```
 #pragma camelcase off
 ```
-Therefore, it is important that you manually create hyperlinks!
-: ''Action'': Always create a hyperlink to any API page.
-: ''Action'': Do not create hyperlinks to portions of the API that do not have their own page.
-: ''Hint'': If you are unsure, check the [http://wiki.libsdl.org/moin.cgi/CategoryAPI API By name] page.
-: ''Markup'': A hyperlink to another page (especially within the wiki) is created, in most cases, by enclosing the text to be linked in double brackets:<br/> ```[[linktarget]]```
-: ''Example'':  ```[[SDL_VideoInit]]``` generates [[SDL_VideoInit]]
-* If a hyperlink is automatically created where you __don't__ want one check to ensure that the #pragma markup mentioned [[#hyperlinks|above]] is correct at the top of the page.  If it is not, correct or add it.  This should resolve the issue.
-* A hyperlink to an [[#anchors|anchor]] (or any unique text on a page) is created, in most cases, by<br/>
-   ```[[#anchorname|description]]```<br/>
-   where ```anchorname``` is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{description}}} is the text that will actually appear as the link.<br/>
-  ''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
-* A hyperlink to an outside web or email address may be created by simply typing or pasting in the address.  The wiki should auto-recognize and link these standard forms.
-* To create a link with link text other than the address itself, enclose the address followed by a pipe and the alternate link text in double brackets.  
-   ''Example'': ```[[link address|alternate text]]``` produces [[link address|alternate text]]
-*Any link referencing the header files should replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+'''Therefore, it is necessary for you to manually create most hyperlinks!'''
+: ''Note'': If a hyperlink is automatically created where you __don't__ want one check to ensure that this <code>#pragma</code> markup is correct at the top of the page.  If it is not, please correct or add it.  This should resolve the issue if it is related to CamelCase text.
+
+{|
+|<( |3 30%>''If'' you reference something that __has a page in the wiki__
+|''Action'': Always create a hyperlink to any existing API page.  It is preferable to create a link to any page in the wiki that is referenced.
+|-
+|''Note'': Include () after a function name, outside the link, except in the Related Functions section of a page.  Do not use parens for structures or enumerations.
+|-
+|See the [[#linktype|next table]] for how to create different links.
+|-
+|<( |2 30%>''If'' you reference something that __does not have a page__ in the wiki
+|''Action'': Do not create hyperlinks to pages that do not already exist unless you are 100% sure the page will exist very soon after creating the link.
+|-
+|''Hint'': If you are unsure whether a page exists check the [http://wiki.libsdl.org/moin.cgi/CategoryAPI API By Name] page or try typing it into the browser.
+|-
+|<( |2 30%>''If'' you reference an __outside page or email address__
+|''Action'': In most cases the wiki will automatically create the link for you.
+|-
+|''Note'': See the [[#linktype|next table]] for options.
+|}
+
+
+<span id="linktype"></span>
+{|
+|<bgcolor="#EDEDED">Type of link
+|<bgcolor="#EDEDED">How to create it
+|-
+|<( |3 30%>Link to another page __within the wiki__
+|''Markup'': Enclose the page name in double brackets:<br/> ```[[pagename]]```
+|-
+|''Note'': It is not necessary to include the wiki address ```http://wiki.libsdl.org/moin.cgi/``` for intra-wiki pages.
+|-
+|''Example'':  ```[[SDL_VideoInit]]``` generates [[SDL_VideoInit]]
+|-
+|<( 30%>Link to an __outside page or email address__
+|''Markup'': Type or paste in the address.  The wiki should auto-recognize and link these standard forms.
+|-
+|<( |3 30%>Link with __alternate link text__ (other than the address itself)
+|''Markup'': Enclose the standard address (as above) followed by a pipe and the alternate link text in double brackets.
+|-
+|''Example'': ```[[normal link address|alternate text]]```<br/>produces<br/>[[normal link address|alternate text]]
+|-
+|''Note'': Alternate link text is optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
+|-
+|<( |2 30%>Link __referencing the header files__
+|''<<Color2(red,Important!)>>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+|-
+|''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h so the link always points to the most current file.
+|-
+|<( |2 30%>Link to an __anchor__ (or most any unique text) __on the same page__
+|''Markup'': ```[[#anchorname|description]]``` where {{{anchorname}}} is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{description}}} is the text that will actually appear as the link.
+|-
+|''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
+|-
+|<( |3 30%>Link to an __anchor on another page__
+|''Action'': Insert the page address before the # in the address section of an anchor link.
+|-
+|''Markup'': ```[[address#anchor|optional alternate text]]```
+|-
+|''Example'': ```[http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]``` creates the following link with alternate text and that takes you to that anchor on the other page [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]
+|}
 
  More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
 
