@@ -5,15 +5,25 @@
 <!-- language en -->
 <!-- pragma section-numbers off -->
 <!-- acl All:read -->
-= Simple DirectMedia Layer 1.3 Wiki =
+= Simple DirectMedia Layer =
 
-~+Welcome to SDL 1.3!+~
+== What is it? ==
+SDL drastically reduces the time you spend bringing your game to desktop and mobile platforms.
+
+It is designed to cleanly replace the platform-specific code you have for:
+* window and display management
+* interactive input
+* advanced multi-threading
+* ... and much more.
+
+SDL fully supports modern 3D graphics using Direct3D and OpenGL, and has a 2D graphics API for emulators and classic games.
 
 This wiki is your portal to documentation and other resources for SDL 1.3.
 <br/>
 You can find the old SDL 1.2 wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
 <br/>
 <br/>
+
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading in the left-hand menu to access:
 
