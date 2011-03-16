@@ -418,7 +418,7 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 |-
 |''Note'': It is not necessary to include the wiki address ```http://wiki.libsdl.org/moin.cgi/``` for intra-wiki pages.
 |-
-|''Example'':  ```[[SDL_VideoInit]]``` generates [[SDL_VideoInit]]
+|''Example'':  ```[[SDL_VideoInit]]()``` generates [[SDL_VideoInit]]()
 |-
 |<( 30%>Link to an __outside page or email address__
 |''Markup'': Type or paste in the address.  The wiki should auto-recognize and link these standard forms.
@@ -426,7 +426,7 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 |<( |3 30%>Link with __alternate link text__
 |''Markup'': Enclose the standard address (as above) followed by a pipe and the alternate link text in double brackets to create linked text that is different from the actual address.
 |-
-|''Example'': ```[[normal link address|alternate text]]```<br/>produces<br/>[[normal link address|alternate text]]
+|''Example'': ```[[normal link address|alternate text]]``` produces [[normal link address|alternate text]]
 |-
 |''Note'': Alternate link text is generally optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
 |-
@@ -442,17 +442,15 @@ More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moi
 |-
 |''Note'': In the case of anchors it is important to use the alternate text, even if it is identical to the anchor name, to make the link look nice.  Without it the # appears in the link.
 |-
-|<( |3 30%>Link to an __anchor on another page__
-|''Action'': Insert the page address before the # in the address section of an anchor link.
-|-
-|''Markup'': ```[[address#anchor|optional alternate text]]```
+|<( |2 30%>Link to an __anchor on another page__
+|''Markup'': Insert the page address before the # in the address section of an anchor link.<br/>```[[address#anchor|optional alternate text]]```
 |-
 |''Example'': ```[http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]``` creates the following link with alternate text and that takes you to that anchor on the other page [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]
 |}
 
  More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 <span id="anchors"></span>
@@ -477,7 +475,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 ''Action'': To create a basic table with default spacing and styling.
 
 ''Markup'': Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
-* It is important that there are no blank spaces or other characters after the closing pipes on a line.
+: ''<<Color2(red,Important!)>>'' There can be no blank spaces or other characters after the closing pipes on a line.
 
 ''Example'': 
  ```
@@ -505,11 +503,11 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |<rowbgcolor="#EDEDED">''Colors''
 |-
 |<( |4 30%>To colorize __text in a cell__
-|''Markup 1'': use <<Color2(green,Colored Text)>> described [[#formatting|above]]
+|''Markup 1'': use <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>> described [[#formatting|above]]
 |-
-|''Markup 2'': ```style="color: #XXXXXX;"```
+|''Markup 2'': ```style="color: #XXXXXX;"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
 |-
-|<style="color:#339933;"> ''Example'': this is sample color text
+|<style="color:#339933;">''Example'': this cells began with ```<style="color:#339933;">```
 |-
 |''Note'': ''Markup 2'' can only be used to colorize all of the text within a cell.  See ''Markup 1'' to colorize only some text in a cell.
 |-
@@ -554,8 +552,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |-
 |''Example'': This table uses <code>30%</code> in the first column
 |-
-|
-|<rowbgcolor="#EDEDED">''Spanning''
+|<rowbgcolor="#EDEDED" : -2>''Spanning''
 |-
 |<( |3 30%>To cause a cell to __span multiple rows__
 |''Markup'': ```|x``` where x is the number of rows to span including the first
@@ -564,30 +561,32 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |-
 |''Example'': Go into <<Color2(blue,Edit (Text))>> mode and look at most any of the tables in this document.
 |-
-|<( |5 30%>To cause a cell to __span multiple columns__
+|<( |7 30%>To cause a cell to __span multiple columns__
 |''Markup 1'': Create empty cells at the beginning of the row equaling the number of cells to skip/span, then place your text in the last cell of that row.
 |-
 |''Example'': ```
 |
 |
 |cell spanning 3 columns
-|```
+|```; grey "Sizes" cell in this table
 |-
 |''Note'': Total number of columns should equal that of the table.
+|-
+|''Note'': Centers text in the spanning row by default.
 |-
 |''Markup 2'': Use ```-x``` where x is the number of columns to span including the first
 |-
 |''Example'': ```
 |<-3>text spanning 3 columns
-|```
+|```; grey "Spanning" cell in this table
+|-
+|''Note'': Left justifies text in the spanning row by default.
 |}
-
-
 
 
 More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 <span id="headers"></span>
