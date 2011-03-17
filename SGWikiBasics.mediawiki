@@ -97,7 +97,7 @@ This section contains general information that applies to nearly every page in t
 
 ''<<Color2(red,Important!)>>'' Do not remove DRAFT from any page!
 
-''<<Color2(red,Important!)>>'' Do not change the Category links at the bottom of a page.
+Do not change the Category links at the bottom of a page.
 
 The top of (nearly) every page begins with the following, which should not be edited:
   ```
@@ -108,6 +108,15 @@ The top of (nearly) every page begins with the following, which should not be ed
  ```
 ||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
 ```
+
+''<<Color2(red,Important!)>>'' If you begin to edit a page that contains the following comments, please check the page(s) listed in the comments before making any changes within this section to ensure that the changes are appropriate to ''all'' pages.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
+DO NOT change these comments except to update included <code><PageName></code>s as necessary.
+ ```
+##The following content is included on <PageName>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
+   <intervening content>
+##End Include here.
+```
+: See [[#include|Includes]] for more information.
 <br/>
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -233,7 +242,9 @@ Numbered Lists
 |-
 |''Solution'': You can force __additional__ space between lines of text using [[#break|Hard Line Breaks]].
 |-
-|''Note'': You '''cannot''' force __less__ space between lines of text in separate paragraphs.  The only option for keeping lines of text close together is to use [[#break|Hard Line Breaks]] to keep lines within a paragraph.<br/><<Color2(red,''Important!'')>> There are limits to how you can change formatting within a paragraph.
+|''Note'': You '''cannot''' force __less__ space between lines of text in separate paragraphs.  The only option for keeping lines of text close together is to use [[#break|Hard Line Breaks]] to keep lines within a paragraph.
+|-
+|<<Color2(red,''Important!'')>> There are limits to how you can change formatting within a paragraph.
 |-
 |''Note'': Indenting can affect vertical spacing.  See ''[[#vertical|Note]]'' above for details.
 |}
@@ -270,7 +281,7 @@ Numbered Lists
 |-
 |''Note'': It may be necessary to indent one level ''less'' (farther left) than the line that is not being parsed correctly.  For example, if you want a line following an interruption to be at 3 indents, put the space-period-space fix immediately above it at 2 indents (ie: ```space space period space;  . ```).
 |-
-|<( |3 30%>''Problem'': I want to use a __mixed list__ where bullets follow numbers on the same indent level (or similar) but it just keeps numbering
+|<( |2 30%>''Problem'': I want to use a __mixed list__ where bullets follow numbers on the same indent level (or similar) but it just keeps numbering
 |''Cause'': This wiki seems to parse lists based on how they start and where they end.  If they are not broken/ended it seems to ignore the actual intervening markup (except usually lines starting with a period).
 |-
 |''Solution'': The same workarounds as above may or may not be able to resolve this issue as well.  Your goal is to end one list and begin the next with new formatting.  You may have to try several tricks to make this happen.
@@ -311,7 +322,7 @@ Numbered Lists
 |-
 |''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
 |-
-|<( |5 30%>```Code (or Verbatim Text)```
+|<( |7 30%>```Code (or Verbatim Text)```
 |''Markup'': Use three curly brackets surrounding text to be rendered as code.
 |-
 |''Markup 1'': Place the brackets inline with the text to display the code formatting inline.
@@ -321,6 +332,10 @@ Numbered Lists
 |''Markup 2'': Place the brackets above and below the text to display the code formatting inside a box.
 |-
 |See ''[[#example2|Example 2]]'' below the table.
+|-
+|''Note'': Add ```c++``` immediately following the opening braces on the first line to automatically colorize as cpp code.
+|-
+|''Example'': see [[SDL_Event]]
 |-
 |<( |6 30%><<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>>
 |<<Color2(red,''Important!'')>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
@@ -613,31 +628,44 @@ More (but not much) wiki markup for headings can be found at [http://wiki.libsdl
 ''Markup'': ```<<TableOfContents()>>```
 : Place this markup on the page where you want a Table of Contents to appear.  There should be no other markup on the same line.
 
-''Note'': All level 2 and lower headings will be included by default.  The numbering scheme is set by a <code>#pragma</code>. 
+''Note'': All level 2 and lower headings will be included by default.  The numbering scheme is set by a <code>#pragma</code> and, in most cases, should not be changed. 
 
-<!-- #To include an embedded ToC (eg: <<TableOfContents(3)>>) use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
+<!-- #To include an embedded ToC or otherwise limit which headings a ToC shows use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens (eg: <<TableOfContents(3)>> lists up to level 3 but not 1 or 2).  First # is highest level, 2nd number is lowest level to include. (ie: 2,4 includes levels 2-4.) -->
 
 
 
 <span id="include"></span>
 === Includes ===
- An include enables you to copy all or a portion of a page onto another page, allowing changes to one page to be automatically updated on another.  This is especially useful for listing enumeration values for a function parameter on the function page, for example.<br/>
- To create an Include place the following markup in the location where you wish the data to begin on the recipient page.
-  For copying values from an enumeration:<br/>
+An include enables you to copy all or a portion of a page onto another page, allowing changes to one page to be automatically updated on another.  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
+
+''Markup'': To create an Include is a 3 step process:
+ 1. Place the following markup in the location where you wish the data to begin on the __recipient page__ (the page with the copy).  Replace <code><PageName></code> with the name of the page to copy from (where the original content is located).
   ```
-<<Include(SDL_Enumeration, , , from="== Values ==", to="== Code Examples ==")>>
+<<Include(<PageName>, , , from="Start Include here.", to="##End Include here.")>>
 ```
-   where ```SDL_Enumeration``` is replaced by the Enumeration's name.<br/>
-  For copying data fields from a structure:<br/>
+: ''Example'': To copy content from [[SDL_GLattr]]
+   ```<<Include(<SDL_GLattr>, , , from="Start Include here.", to="##End Include here.")>>```
+
+ 1. Place the following markup on the line immediately before the point where you wish to begin the include (to start copying content) on the __source page__.  
+: ''<<Color2(red,Important!)>>'' Replace <code><PageName></code> with the name of the page to receive the Include.  If this include will be used on more than one page add additional page names.  Linking markup may be left out.
   ```
-<<Include(SDL_Structure, , , from="== Data Fields ==", to="== Code Examples ==")>>
+##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
 ```
-   where ```SDL_Structure``` is replaced by the Structure's name.<br/>
-  The basic format is ```
-<<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>>
+: ''Example'': If this include will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() the comment on the source page should read:
+   ```##The following content is included on SDL_GL_GetAttribute and SDL_GL_SetAttribute...```
+
+ 1. Place the following markup on the line immediately after the point where you want to end the include (to stop copying content) on the __source page__.
+  ```
+##End Include here.
 ```
-   See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
-  {i} The <code>from=</code> and <code>to=</code> start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose <code>from=</code> and <code>to=</code> parameters carefully.
+
+''Note'': All content between the two ##comments, beginning with the character immediately following "<code>...here.</code>" and ending with the character immediately before "<code>##End...</code>", will be copied onto the recipient page, so be careful that you intend to include ''all'' content!
+
+See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
+
+<!-- #The basic Include format is <<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>> -->
+
+<!-- #The <code>from=</code> and <code>to=</code> start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose <code>from=</code> and <code>to=</code> parameters carefully. -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
