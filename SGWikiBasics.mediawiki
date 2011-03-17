@@ -3,7 +3,6 @@
 <!-- acl All:read -->
 '''DRAFT'''
 
-<<Color2(red,Please note that the formatting of this page is currently in transition.  It will look a little funny/disorganized for a while as I get it all shifted over.  I hope you will bear with me.  I'll get it all adjusted as quickly as possible. Thanks!)>>
 
 = Style Guide: Wiki Basics =
 
@@ -590,17 +589,34 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 
 
 <span id="headers"></span>
-=== Headers ===
- Use one to five equals signs (=) surrounding header text, with a space between markup and text.
-* One equals sign is the highest level header (largest)
+=== Section Headings ===
+''Markup'': Use 1 to 5 equals signs (=) surrounding header text, with a space between markup and text.
+* One equals sign is the highest level heading (largest)
 : ''Example'': = Title =<br/>
-* Five equals signs is the lowest level header (smallest) 
-: ''Example'': ===== Minor =====<br/>
- ''Example'': ```=== Some Wiki Markup Basics ===```<br/>
- Headers will appear in an automatically generated [[#ToC|Table of Contents]].
-: More (but not much) wiki markup for headers can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnHeadlines HelpOnHeadlines].
+: ''Note'': In this wiki a level 1 heading is reserved for the title of the page
+* Five equals signs is the lowest level heading (smallest) 
+: ''Example'': ===== Minor =====
 
-[[#ToC|Return to Table of Contents]]
+''<<Color2(red,Important!)>>'' Heading lines must stand alone with no other markup on the same line or within the heading.
+
+''Example'': ```== Some Wiki Markup Basics ==```
+
+''Note'': All level 2 and lower headings will appear in an automatically generated [[#contents|Table of Contents]].  
+
+More (but not much) wiki markup for headings can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnHeadlines HelpOnHeadlines].
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="contents"></span>
+=== Table of Contents ===
+''Markup'': ```<<TableOfContents()>>```
+: Place this markup on the page where you want a Table of Contents to appear.  There should be no other markup on the same line.
+
+''Note'': All level 2 and lower headings will be included by default.  The numbering scheme is set by a <code>#pragma</code>. 
+
+<!-- #To include an embedded ToC (eg: <<TableOfContents(3)>>) use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
+
 
 
 <span id="include"></span>
@@ -623,10 +639,8 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
    See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
   {i} The <code>from=</code> and <code>to=</code> start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose <code>from=</code> and <code>to=</code> parameters carefully.
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
-
-<!-- #To include an embedded ToC (eg: <<TableOfContents(3)>>) use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens.  First # is highest level, 2nd number is lowest level to include. ie: 2,4 includes levels 2-4. -->
 
 
 ------
@@ -639,13 +653,14 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 === Other Help ===
 Some other wiki help that might be of interest or helpful to find quickly:
 :[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnEditing HelpOnEditing]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys HelpOnSmileys]
 :[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions HelpOnAdmonitions]
 
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 <!-- #This is a test of the hidden comment system.  This is only a test.  An include begins here.  It is used on all other SG pages.  Please note that any change between this note and the next will be reflected on every SG page as well.  Consider edits carefully. -->
