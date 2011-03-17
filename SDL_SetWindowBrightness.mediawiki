@@ -1,0 +1,42 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_SetWindowBrightness =
+Use this function to set the brightness (gamma correction) for a window.
+
+
+== Syntax ==
+```c++
+int SDL_SetWindowBrightness(SDL_Window* window,
+                            float       brightness)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|^the window to change^
+|-
+|'''brightness'''
+|the brightness (gamma) value to set, 0.0 to 1.0
+|}
+
+== Return Value ==
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+,,This function will fail if setting the brightness is not supported.,,
+
+== Related Functions ==
+:[[SDL_GetWindowBrightness]]
+:[[SDL_SetWindowGammaRamp]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
