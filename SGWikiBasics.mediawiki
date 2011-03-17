@@ -680,12 +680,12 @@ See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] 
 
 === Other Help ===
 Some other wiki help that might be of interest or helpful to find quickly:
-:[http://wiki.libsdl.org/moin.cgi/HelpIndex HelpIndex]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnEditing HelpOnEditing]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys HelpOnSmileys]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions HelpOnAdmonitions]
+:[http://wiki.libsdl.org/moin.cgi/HelpIndex Help Index]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax Help On Moin Wiki Syntax]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting Help On Formatting]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys Help On Smileys]
+:[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions Help  On  Admonitions]
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
