@@ -109,8 +109,8 @@ The top of (nearly) every page begins with the following, which should not be ed
 ||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
 ```
 
-''<<Color2(red,Important!)>>'' If you begin to edit a page that contains the following comments, please check the page(s) listed in the comments before making any changes within this section to ensure that the changes are appropriate to ''all'' pages.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
-DO NOT change these comments except to update included <code><PageName></code>s as necessary.
+''<<Color2(red,Important!)>>'' If you encounter the following comments while editing a page, please ensure that any changes to the <code><intervening content></code> are appropriate to ''all'' pages listed in the first comment.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
+'''DO NOT''' change these comments except to update included <code><PageName></code>s if necessary.
  ```
 ##The following content is included on <PageName>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
    <intervening content>
