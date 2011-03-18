@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
@@ -31,6 +31,7 @@ Returns 0 when it is signaled or a negative error code on failure; call [[SDL_Ge
 ```c++
 You can add your code example here
 ```
+
 == Remarks ==
 This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  The '''mutex''' is re-locked once the condition variable is signaled.
 
@@ -44,4 +45,4 @@ This function is the equivalent of calling [[SDL_CondWaitTimeout]] with a time l
 : [[SDL_mutexP]] *
 
 ----
-[[CategoryAPI]], CategoryMutex
+[[CategoryAPI]], [[CategoryMutex]]
