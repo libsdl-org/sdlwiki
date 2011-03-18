@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
@@ -17,7 +17,7 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 == Function Parameters ==
 {|
 |'''fn''' 
-|^The function to be run in the new thread, see remarks for details.^ 
+|The function to be run in the new thread, see [[#Remarks|Remarks]] for details.
 |-
 |'''data''' 
 |a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^ 
@@ -115,4 +115,4 @@ Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code
 : [[SDL_WaitThread]] ???
 
 ----
-[[CategoryAPI]], CategoryThread
+[[CategoryAPI]], [[CategoryThread]]
