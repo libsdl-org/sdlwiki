@@ -20,13 +20,13 @@ int SDL_SetWindowGammaRamp(SDL_Window*   window,
 |the window to change
 |-
 |'''red'''
-|the red gamma ramp
+|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL
 |-
 |'''green'''
-|the green gamma ramp
+|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL
 |-
 |'''blue'''
-|the blue gamma ramp
+|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL
 |}
 
 == Return Value ==
