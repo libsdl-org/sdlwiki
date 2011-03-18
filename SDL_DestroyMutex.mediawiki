@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
@@ -13,6 +13,7 @@ Use this function to destroy a mutex.
 ```c++
 void SDL_DestroyMutex(SDL_mutex* mutex)
 ```
+
 == Function Parameters ==
 {|
 |'''mutex''' 
@@ -40,7 +41,7 @@ else
   SDL_DestroyMutex( mutex );
 ```
 == Remarks ==
-SDL_DestroyMutex must be called on any mutex that is no longer needed. Failure to destroy a mutex will result in a system memory or resource leak. While it is safe to destroy a mutex that is UNLOCKED, it is not safe to attempt to destroy a locked mutex and may result in undefined behavior depending on the platform.
+[[SDL_DestroyMutex]] must be called on any mutex that is no longer needed. Failure to destroy a mutex will result in a system memory or resource leak. While it is safe to destroy a mutex that is UNLOCKED, it is not safe to attempt to destroy a locked mutex and may result in undefined behavior depending on the platform.
 
 Any attempt to reference a mutex after it has been destroyed will cause access to an invalid memory pointer which may lead to memory corruption or a segmentation fault.
 
@@ -48,4 +49,4 @@ Any attempt to reference a mutex after it has been destroyed will cause access t
 : [[SDL_CreateMutex]] *
 
 ----
-[[CategoryAPI]], CategoryMutex
+[[CategoryAPI]], [[CategoryMutex]]
