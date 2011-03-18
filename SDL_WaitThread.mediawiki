@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
@@ -81,4 +81,4 @@ The return code for the thread function is placed in the area pointed to by '''s
 : [[SDL_CreateThread]] *
 
 ----
-[[CategoryAPI]], CategoryThread
+[[CategoryAPI]], [[CategoryThread]]
