@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_CreateColorCursor =
+Use this function to create a color cursor.
+
+
+== Syntax ==
+```c++
+SDL_Cursor* SDL_CreateColorCursor(SDL_Surface* surface,
+                                  int          hot_x,
+                                  int          hot_y)
+```
+
+== Function Parameters ==
+{|
+|'''surface'''
+|an [[SDL_Surface]] structure representing the cursor
+|-
+|'''hot_x'''
+|the x position of the cursor hot spot
+|-
+|'''hot_y'''
+|the y position of the cursor hot spot
+|}
+
+== Return Value ==
+Returns the new cursor on success, or NULL on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,Should it be mentioned that the cursor must be SDL_PIXELFORMAT_ARGB8888 and will be converted if the surface isn't already or is that internal only?)>>
+
+== Related Functions ==
+:[[SDL_FreeCursor]]
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
