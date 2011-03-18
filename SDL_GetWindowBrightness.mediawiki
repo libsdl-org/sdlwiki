@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetWindowBrightness =
+Use this function to get the brightness (gamma correction) for a window.
+
+
+== Syntax ==
+```c++
+float SDL_GetWindowBrightness(SDL_Window* window)
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to query
+|}
+
+== Return Value ==
+Returns the last brightness value passed to [[SDL_SetWindowBrightness]]() on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_SetWindowBrightness]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
