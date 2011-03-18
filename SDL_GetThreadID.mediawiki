@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
 |}
@@ -83,4 +83,4 @@ If the SDL thread pointer passed to this function is NULL, this function will re
 : [[SDL_ThreadID]]
 
 ----
-[[CategoryAPI]], CategoryThread
+[[CategoryAPI]], [[CategoryThread]]
