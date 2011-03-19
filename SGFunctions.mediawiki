@@ -1,0 +1,187 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= Style Guide: Function Pages =
+This guide provides specific instructions for editing or adding your own content to each section of the Function pages in this wiki.
+
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+'''Function pages should provide basic information about the SDL functions to allow users to most effectively utilize them in their projects.'''
+
+Please observe the following:  
+* Do not post anything that you do not have permission to post publicly.
+
+* Sections other than Code Examples and Remarks should have adequate details to make them clear and useful while remaining brief wherever possible.
+
+* Please remember to keep it simple and easy to understand.
+
+* Do not remove, modify, or add section headings unless specifically mentioned below.
+
+For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+== Editing Specific Sections ==
+=== Title ===
+'''''Do not edit the Title.'''''
+
+The Title section consists of the page heading ```= SDL_FunctionName =``` and should match the address of the page and the function described on the page.
+
+If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Description ===
+The Description section does not have a heading but immediately follows the page title.
+
+All function descriptions begin with:
+ ```Use this function to```
+: followed by a ''clear and concise'' description of what the function does.  
+
+''Note'': Information presented in this section is limited.  Extended description information for more complicated functions should be placed in the [[#Remarks|Remarks]] section instead.  
+
+<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the description if additional information is located there.  
+
+''Note'': As always, if another API page is referenced in the description be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Table of Contents ===
+'''''Do not edit the Table of Contents.'''''
+
+The Table of Contents consists of the following markup and is generated automatically on the parsed page.
+ ```<<TableOfContents()>>```
+
+If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Syntax ===
+The Syntax section consists of a code box that contains the basic format and components of the function with some specific formatting conventions.  Please apply the following conventions when editing this section.
+
+The basic format is as follows:
+```{
+{{{#!highlight cpp
+returnType* SDL_FunctionName(type1  parameter1,
+                             type2* parameter2,
+                             ...
+                             typeN  parameterN)
+```
+}}}}
+
+<<Color2(red,''Important!'')>> All types and parameters should be vertically aligned.
+* Spacing for parameter types is left-aligned to the first line.
+* Spacing for parameters is left-aligned to the longest param type so that there is only 1 space between the longest type and its parameter. 
+ ''Markup'': Use spaces as necessary to create the correct alignment.  Within a code box spacing is fixed-width.
+
+''Note'': __Pointers__ (*, **) should be aligned next to the types (no space between) and should have at least one space following.
+
+''Note'': __To be omitted__
+* All additional text that may be found in the header or elsewhere, such as extern, SDLCALL, etc.
+* The space between <code>SDL_FunctionName</code> and (.
+* Ending semi-colon (;)
+
+''Note'': __To be included__
+* A space between <code>returnType</code> and <code>SDL_FunctionName</code>
+* Commas at the end of each line if there is more than 1 param
+
+''Note'': Do not remove or alter the code box markup surrounding the function syntax.
+
+''Example'': ```{
+{{{#!highlight cpp
+
+           1 space      no space  spaces (as needed)
+              |             \    |_________|
+SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
+                              int            freesrc,
+                              SDL_AudioSpec* spec,     <- longest type
+                              Uint8**        audio_buf,   sets alignment
+                              Uint32*        audio_len)
+||||||||||||||||||||||||||||||      \       |
+      spaces (as needed)          no space  1 space
+```
+}}}}
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Function Parameters ===
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Return Value ===
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Code Examples ===
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Remarks ===
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Related Functions ===
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Footer ===
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+----
+== Resources ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
+as possible.
+
+If you have questions that aren't addressed here:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and 
+include a way to contact you.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
+
+------
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to 
+<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+```
