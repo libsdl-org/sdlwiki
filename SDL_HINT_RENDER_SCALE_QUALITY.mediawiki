@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_HINT_RENDER_SCALE_QUALITY =
 A hint that specifies scaling quality.
@@ -8,13 +7,13 @@ A hint that specifies scaling quality.
 
 == Values ==
 {|
-|"0" or "nearest"
+|0 or nearest
 |nearest pixel sampling
 |-
-|"1" or "linear"
+|1 or linear
 |linear filtering (supported by OpenGL and Direct3D)
 |-
-|"2" or "best"
+|2 or best
 |anisotropic filtering (supported by Direct3D)
 |}
 
