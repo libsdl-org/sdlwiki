@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_FreeFormat =
-Use this function to free an [[SDL_PixelFormat]] structure.
+Use this function to free an [[SDL_PixelFormat]] structure allocated by [[SDL_AllocFormat]].
 
 
 == Syntax ==
@@ -14,7 +13,7 @@ void SDL_FreeFormat(SDL_PixelFormat* format)
 == Function Parameters ==
 {|
 |'''format'''
-|the [[SDL_PixelFormat]] to free
+|the [[SDL_PixelFormat]] structure to free
 |}
 
 == Code Examples ==
