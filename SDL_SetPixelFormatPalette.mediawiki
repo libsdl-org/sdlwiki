@@ -33,6 +33,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_AllocPalette]]
+:[[SDL_FreePalette]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
