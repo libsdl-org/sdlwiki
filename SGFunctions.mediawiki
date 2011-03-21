@@ -15,7 +15,7 @@ This guide provides specific instructions for editing or adding your own content
 Please observe the following:  
 * Do not post anything that you do not have permission to post publicly.
 
-* Sections other than Code Examples and Remarks should have adequate details to make them clear and useful while remaining brief wherever possible.
+* Sections other than Code Examples and Remarks should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive, as necessary.
 
 * Please remember to keep it simple and easy to understand.
 
@@ -70,7 +70,7 @@ If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wik
 <br/>
 <br/>
 === Syntax ===
-The Syntax section consists of a code box that contains the basic format and components of the function with some specific formatting conventions.  Please apply the following conventions when editing this section.
+The Syntax section consists of a code box that displays the basic components of the function using some specific formatting conventions.  Please apply the following conventions when editing this section.
 
 The basic format is as follows:
 ```{
@@ -83,11 +83,11 @@ returnType* SDL_FunctionName(type1  parameter1,
 }}}}
 
 <<Color2(red,''Important!'')>> All types and parameters should be vertically aligned.
-* Spacing for parameter types is left-aligned to the first line.
-* Spacing for parameters is left-aligned to the longest param type so that there is only 1 space between the longest type and its parameter. 
- ''Markup'': Use spaces as necessary to create the correct alignment.  Within a code box spacing is fixed-width.
+* Spacing for parameter __types__ is left-aligned to the type on the first line.
+* Spacing for __parameters__ is left-aligned to the longest param type so that there is only 1 space between the longest type (with any pointers) and its parameter. 
+* __Pointers__ (*, **) should be aligned next to the types (no space between) and should have at least one space following.
 
-''Note'': __Pointers__ (*, **) should be aligned next to the types (no space between) and should have at least one space following.
+''Markup'': Use spaces as necessary to create the correct alignment.  Within a code box spacing is fixed-width.
 
 ''Note'': __To be omitted__
 * All additional text that may be found in the header or elsewhere, such as extern, SDLCALL, etc.
@@ -121,6 +121,60 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 <br/>
 <br/>
 === Function Parameters ===
+The Function Parameters section provides basic information about each parameter in the function and is presented in table format.
+
+The basic format is as follows:
+
+```
+||'''parameter1'''||description||
+||'''parameter2'''||description||
+||'''parameterN'''||description||
+```
+
+* The __first column__ contains all of the parameter names, without types, in bold.
+* The __second column__ contains a simple description of each parameter.
+: ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally not complete sentences.
+* There are a few content-dependent conventions we have chosen for consistency across pages - see the table below for details. 
+
+''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
+
+''Example'': [[SDL_SetColorKey]]()
+
+{|
+|
+|<bgcolor="#EDEDED">''Content-dependent formatting''
+|-
+|<( |2 30%>''If'' __more than one statement__ must be included in the description
+|''Action'': Separate them with a semi-colon (;)
+|-
+|''Note'': This should be avoided whenever possible.  See the next ''If'' statement in this table for more information.
+|-
+|<( |3 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
+|''Action 1'' : Appended the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
+|-
+|''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section
+|-
+|''Action 3'': See the next ''If'' in this table
+|-
+|<( |3 30%>''If'' the __Remarks section is large__
+|''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section
+|-
+|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 2'' above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
+|-
+|''Markup'': Use ```<span id="anchorname"></span>``` to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
+|-
+|<( |2 30%>''If'' __there is a pointer__ associated with the parameter
+|''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*, int*)
+|-
+|''Example'': [[SDL_SetColorKey]]()
+|-
+|<( |2 30%>''If'' a pointer points to __something that is filled in by the function__
+|''Action'': Use the phrase <code>"filled in with"</code> in the description
+|-
+|''Example'': [[SDL_QueryTexturePixels]]()
+|}
+
+
 
 
 
