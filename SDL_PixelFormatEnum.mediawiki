@@ -33,6 +33,7 @@ An enumeration of pixel formats.
 |true for pixel formats representing unique formats, for example YUV formats
 |}
 
+<!-- #The following content is included on to SDL_RendererInfo, SDL_CreateTexture, SDL_RenderWritePixels, SDL_RenderReadPixels, SDL_QueryTexture, SDL_CreateTextureFromSurface, SDL_AllocFormat.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
 === Pixel Format Values ===
 {|
 |SDL_PIXELFORMAT_UNKNOWN
@@ -137,6 +138,8 @@ An enumeration of pixel formats.
 |SDL_PIXELFORMAT_YVYU
 |packed mode: Y0+V0+Y1+U0 (1 plane)
 |}
+<!-- #End Include here. -->
+
 
 == Code Examples ==
 ```c++
