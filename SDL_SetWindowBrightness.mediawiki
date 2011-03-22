@@ -17,7 +17,7 @@ int SDL_SetWindowBrightness(SDL_Window* window,
 |the window to update
 |-
 |'''brightness'''
-|the brightness value to set where 0.0 is completely dark and 1.0 is normal brightness
+|the brightness (gamma) value to set where 0.0 is completely dark and 1.0 is normal brightness
 |}
 
 == Return Value ==
