@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_CalculateGammaRamp =
 Use this function to calculate a 256 entry gamma ramp for a gamma value.
@@ -15,10 +14,10 @@ void SDL_CalculateGammaRamp(float   gamma,
 == Function Parameters ==
 {|
 |'''gamma'''
-|^a gamma value between 0.0 (black) and 1.0 (identity)^
+|a gamma value where 0.0 is black and 1.0 is identity
 |-
 |'''ramp'''
-|^a pointer to the calculated gamma ramp array^
+|an array of 256 values filled in with the gamma ramp
 |}
 
 == Code Examples ==
@@ -30,8 +29,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_GetWindowGammaRamp]] ???
-:[[SDL_SetWindowGammaRamp]] ???
+:[[SDL_SetWindowGammaRamp]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
