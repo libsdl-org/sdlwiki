@@ -4,7 +4,7 @@
 <!-- language en -->
 '''DRAFT'''
 
-= SDL Configuration Variables =
+= Configuration Variables =
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_hints.h SDL_hints.h]
 
