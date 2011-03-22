@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_SetWindowGammaRamp =
 Use this function to set the gamma ramp for a window.
@@ -17,16 +16,16 @@ int SDL_SetWindowGammaRamp(SDL_Window*   window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to change
+|the window to update
 |-
 |'''red'''
-|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the red channel, or NULL
+|a 256 element array of 16-bit quantities representing the translation table for the red channel, or NULL
 |-
 |'''green'''
-|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the green channel, or NULL
+|a 256 element array of 16-bit quantities representing the translation table for the green channel, or NULL
 |-
 |'''blue'''
-|a pointer to the 256 element array of 16-bit quantities filled in with the translation table for the blue channel, or NULL
+|a 256 element array of 16-bit quantities representing the translation table for the blue channel, or NULL
 |}
 
 == Return Value ==
