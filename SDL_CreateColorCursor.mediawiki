@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_CreateColorCursor =
 Use this function to create a color cursor.
@@ -16,7 +15,7 @@ SDL_Cursor* SDL_CreateColorCursor(SDL_Surface* surface,
 == Function Parameters ==
 {|
 |'''surface'''
-|an [[SDL_Surface]] structure representing the cursor
+|an [[SDL_Surface]] structure representing the cursor image
 |-
 |'''hot_x'''
 |the x position of the cursor hot spot
@@ -36,9 +35,8 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-<<Color2(green,Should it be mentioned that the cursor must be SDL_PIXELFORMAT_ARGB8888 and will be converted if the surface isn't already or is that internal only?)>>
-
 == Related Functions ==
+:[[SDL_CreateCursor]]
 :[[SDL_FreeCursor]]
 
 ----
