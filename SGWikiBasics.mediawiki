@@ -12,7 +12,8 @@
 == Getting Started ==
 
 <!> '''In general, existing content, including markup, should not be modified or removed.'''
-
+<br/>
+<br/>
 === Opening An Editor ===
 If a page can be edited you will see two options to choose from in the left column:
  1. <<Color2(blue,Edit (Text))>>
@@ -27,18 +28,7 @@ If a page can be edited you will see two options to choose from in the left colu
 Note that some formatting will appear slightly different in preview mode than on the finished screen.
 
 
-=== Saving Your Changes ===
-Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
- ''Sample comments'': 
-* added comment to end of remarks
-* added code example to C++ section
-* remarked on use of function with [sound card model]
-
-{i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
-
-When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
-
-'''Automatic Backup of Drafts'''<br/>
+=== Automatic Backup of Drafts ===
 ~-(from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
 
  Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
@@ -50,6 +40,19 @@ When you have finished adding your content and filling in the Comment field, and
  (!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
 
  If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
+
+
+=== Saving Your Changes ===
+Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
+ ''Sample comments'': 
+* added comment to end of remarks
+* added code example to C++ section
+* remarked on use of function with [sound card model]
+
+{i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
+
+When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
+
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -63,10 +66,10 @@ Some terms used in the style guides are intended to have specific meanings or pu
 <span id="category"></span>
 : '''Category Page'''
 : Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
- ||<tablewidth="50%" style="color: #FF0000;" :> DRAFT||
+: '''Draft Page'''
 : Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the editing process.  ''Thank you!''
 : '''''If...'''''
-: Found at the beginning of some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
+: Found in some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
 : In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
 : '''''Action'':'''
 : The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
@@ -95,9 +98,9 @@ Some terms used in the style guides are intended to have specific meanings or pu
 
 This section contains general information that applies to nearly every page in the wiki.  Please review this section periodically for updates.  
 
-''<<Color2(red,Important!)>>'' Do not remove DRAFT from any page!
+''<<Color2(red,Important!)>>'' Do not change the Category links at the bottom of any page.
 
-Do not change the Category links at the bottom of a page.
+Please do not remove DRAFT from any page!
 
 The top of (nearly) every page begins with the following, which should not be edited:
   ```
@@ -201,23 +204,32 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 ==== Lists ====
 <<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
 
-Bullet Lists
+__Bullet Lists__
+
 : ''Markup'': Begin a line with a space followed by an asterisk to create a bulleted line of text (space after asterisk is optional but seems to be preferred)
+
 : ''Example'': ```  * First line of bullet list```<br/>
    ''Generates'':
 * First line of bullet list<br/>
-Numbered Lists
-: ''Markup'': Begin a line with a space followed by the number 1 and a period (or choose another number format such as i or a).
-: ''Note'': Each line that should be part of the list begins with the same starting number. The wiki will generate sequential numbers in preview mode or after saving.
-: ''Example'': ```
+
+__Numbered Lists__
+
+ ''Markup'': Begin a line with a space followed by the number 1 and a period (or choose another number format such as i or a).
+
+ ''Note'': Each line that should be part of the list begins with the same starting number. The wiki will generate sequential numbers in preview mode or after saving.
+
+ ''Example'': 
+  ```
  1. First line of numbered list
  1. Second line of numbered list
 ```
-  ''Generates'':
+
+: ''Generates'':
+: 
   1. First line of numbered list
   1. Second line of numbered list
 
- More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists]
+More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists]
 
 
 <span id="problems1"></span>
