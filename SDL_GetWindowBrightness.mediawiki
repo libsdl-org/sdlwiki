@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetWindowBrightness =
 Use this function to get the brightness (gamma correction) for a window.
@@ -18,7 +17,7 @@ float SDL_GetWindowBrightness(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns the last brightness value passed to [[SDL_SetWindowBrightness]]() on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the brightness for the window where 0.0 is completely dark and 1.0 is normal brightness.
 
 == Code Examples ==
 ```c++
