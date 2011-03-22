@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_KeyboardEvent =
@@ -24,9 +24,9 @@ A structure that contains keyboard button event information.
 |'''repeat'''
 |non-zero if this is a key repeat
 |-
-|SDL_keysym
+|SDL_Keysym
 |'''keysym'''
-|the [[SDL_keysym]] representing the key that was pressed or released
+|the [[SDL_Keysym]] representing the key that was pressed or released
 |}
 
 == Code Examples ==
