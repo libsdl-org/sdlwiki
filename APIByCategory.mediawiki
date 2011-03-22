@@ -20,6 +20,9 @@
 |-
 |[CategoryVersion|Querying SDL Version]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h] 
+|-
+|[CategoryHints|SDL Configuration Variables]]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_hints.h SDL_hints.h]
 |}
 
 
