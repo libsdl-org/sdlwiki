@@ -29,9 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-Hints may not be set if there is an existing override hint or environment variable that takes precedence.  You can use [[SDL_SetHintWithPriority]]() to set the hint with override priority instead.
+Hints will not be set if there is an existing override hint or environment variable that takes precedence.  You can use [[SDL_SetHintWithPriority]]() to set the hint with override priority instead.
 
 == Related Functions ==
 :[[SDL_GetHint]]
