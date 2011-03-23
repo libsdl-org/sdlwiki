@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_SetHintWithPriority =
 Use this function to set a hint with a specific priority.
@@ -16,10 +15,10 @@ SDL_bool SDL_SetHintWithPriority(const char*      name,
 == Function Parameters ==
 {|
 |'''name'''
-|the hint to set; see the list of Hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
+|the hint to set; see the list of hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
 |-
 |'''value'''
-|the value of the hint variable; see the individual Hint for details
+|the value of the hint variable
 |-
 |'''priority'''
 |the [[SDL_HintPriority]] level for the hint
@@ -37,6 +36,7 @@ You can add your code example here
 The priority controls the behavior when setting a hint that already has a value.  Hints will replace existing hints of their priority and lower.  Environment variables are considered to have override priority.
 
 == Related Functions ==
+:[[SDL_GetHint]]
 :[[SDL_SetHint]]
 
 ----
