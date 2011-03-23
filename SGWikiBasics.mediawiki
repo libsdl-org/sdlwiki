@@ -128,7 +128,7 @@ The top of (nearly) every page begins with the following, which should not be ed
 
 <span id="markup"></span>
 == Some Markup Basics ==
-Below is a summary of the most commonly used markup in this wiki and some hints and tricks for using it.
+Below is a summary of the most commonly used markup in this wiki, as well as some very rarely used, and some hints and tricks for using it.
 
 <!> '''The following is provided for your convenience and is meant to be general information.  The other [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides] describe where this formatting should be applied and where exceptions may exist.'''
 
@@ -138,40 +138,43 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 
 <span id="spacing"></span>
 === Spacing ===
-Both vertical and horizontal spacing can be rendered differently depending upon the combination of formatting markup that is used.  If your formatting is not working out the way you want check the notes below on other formatting that you have used nearby that may be affecting how the local formatting is interpreted.
- ''Example'': If you try to pick up a numbered list down the page after using unnumbered lines at the same indent level, the next number in the numbered list will count the unnumbered lines.
+Both vertical and horizontal spacing can be rendered differently depending upon the combination of formatting markup that is used.  If your formatting is not working out the way you want check the notes below on other formatting that you have used nearby, especially the [[#lists|Lists]] section, that may be affecting how the local formatting is interpreted.
+ ''Example'': If you try to pick up a numbered list down the page after using unnumbered lines at the same indent level, the next number in the numbered list may count the unnumbered lines.
 : See [[#problems1|Some Known Problems and Solutions]] below for notes on known markup misbehavior.
-
-
-<span id="indent"></span>
-==== Indenting ====
-: ''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
-* Use one space for each indent level desired. (this line has 2 spaces)
-
-: ''Note'': Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
-
-: ''Example'': ``` . This line starts with a period   ``` 
-  ''generates''<br/>
-: This line starts with a period
-
-: ''<<Color2(red,Important!)>>'' Indenting often leads to inadvertent creating of a list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
 
 
 <span id="break"></span>
 ==== Hard Line Break ====
- ''Markup'': ```<br/>```
+''Markup'': ```<br/>```
 * Place the above markup wherever you want to force the following text onto the next line but keep it in the same paragraph.<br/>
 * ''Note'': You cannot change indent level immediately following a hard line break.  (The next line is still part of the same paragraph.)
-: ''Example'': Typing the following in the text editor ```
+''Example'': Typing the following in the text editor 
+ ```
   1 first line<<BR>>  2 this line typed on same line after hard line break markup, same indent<<BR>>   3 this line typed on same line after hard line break markup, +1 indent<<BR>>  4 this line typed on same line after hard line break markup, -1 indent<<BR>>  . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
 ```
    ''generates''
 : 1 first line<br/>  2 this line typed on same line after hard line break markup, same indent<br/>   3 this line typed on same line after hard line break markup, +1 indent<br/>  4 this line typed on same line after hard line break markup, -1 indent<br/>  . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
 
 
+<span id="indent"></span>
+==== Indenting ====
+''<<Color2(red,Important!)>>'' Indenting often leads to inadvertent creation of an unnumbered list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
+
+''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
+* Use one space for each indent level desired. (this line has 2 spaces)
+
+''Note'': Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
+
+''Example'': ``` . This line starts with a period   ``` 
+  ''generates''<br/>
+: This line starts with a period
+
+
 <span id="vertical"></span>
-: ''Note'': Spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
-: ''Example'': Typing the following in the text editor ```
+''Note'': Paragraph breaks and spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
+
+''Example'': Typing the following in the text editor
+ ```
  1 hard return followed by next line same indent
  2 hard return followed by next line +1 indent
   3 hard return followed by next line same indent using period
@@ -179,30 +182,43 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
   5 hard return followed by next line -1 indent
  6 hard return after hard line break markup, followed by next line same indent<<BR>>
  7<<BR>> 8 next line typed on same line after hard line break markup, same indent
-```
-   ''generates''
-: 1 hard return followed by next line same indent
-   2 hard return followed by next line +1 indent
-    3 hard return followed by next line same indent using period
-: 4 hard return followed by next line same indent, no period
-    5 hard return followed by next line -1 indent
-   6 hard return after hard line break markup, followed by next line same indent<br/>
-   7<br/> 8 next line typed on same line after hard line break markup, same indent
 
-* To ensure that the next line is treated as a separate line (not necessarily a separate paragraph!)
-   a. use two consecutive hard returns (```Enter key```)
-    ~-''Note'': this will leave a larger space between lines (usually a double-space) but it is treated as a new paragraph-~
-   a. use a [[#break|hard line break]]
-   a. [[#indent|indent]] more (farther right)
-   a. use a [[#indent|period]] at the beginning of the line after indenting the same amount
-   a. [[#indent|indent]] less (farther left)
+ 9 next line typed after double Enter (1 blank line), same indent, no starting period
+
+ . 10 last line typed after double Enter (1 blank line), same indent, with starting period
+```
+  ''generates''
+: 1 hard return followed by next line same indent
+ 2 hard return followed by next line +1 indent
+  3 hard return followed by next line same indent using period
+: 4 hard return followed by next line same indent, no period
+  5 hard return followed by next line -1 indent
+ 6 hard return after hard line break markup, followed by next line same indent<br/>
+ 7<br/> 8 next line typed on same line after hard line break markup, same indent
+
+ 9 next line typed after double Enter (1 blank line), same indent, no starting period
+
+: 10 last line typed after double Enter (1 blank line), same indent, with starting period
+
+''Note'': To ensure that the next line is treated as a separate line (not necessarily a separate paragraph!) try the following:
+ a. use two consecutive hard returns (```Enter key```)
+  ~-''Note'': this will leave a larger space between lines (usually a double-space) but it is treated as a new paragraph-~
+ a. use a [[#break|hard line break]]
+ a. [[#indent|indent]] more (farther right)
+ a. use a [[#indent|period]] at the beginning of the line after indenting the same amount or less
+ a. [[#indent|indent]] less (farther left)
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
 
 <span id="lists"></span>
-==== Lists ====
+=== Lists ===
 <<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
+
+__Unnumbered Lists__
+
+See [[#indent|Indenting]] above.
+
 
 __Bullet Lists__
 
