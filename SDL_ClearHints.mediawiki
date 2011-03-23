@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_ClearHints =
 Use this function to clear all hints.
@@ -17,12 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is called during [[SDL_Quit]]() to free stored hints.
-
-== Related Functions ==
-:[[SDL_Quit]]
-:[[SDL_SetHint]] ???
-:[[SDL_SetHintWithPriority]] ???
+This function is automatically called during [[SDL_Quit]]().
 
 ----
 [[CategoryAPI]], [[CategoryHints]]
