@@ -17,7 +17,7 @@ const char* SDL_GetHint(const char* name)
 |}
 
 == Return Value ==
-Returns the string value of a hint variable or NULL if the hint isn't set.
+Returns the string value of a hint or NULL if the hint isn't set.
 
 == Code Examples ==
 ```c++
