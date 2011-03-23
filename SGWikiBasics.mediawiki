@@ -1,8 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 <!-- acl All:read -->
-'''DRAFT'''
-
 
 = Style Guide: Wiki Basics =
 
