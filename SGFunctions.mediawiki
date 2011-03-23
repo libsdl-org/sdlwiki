@@ -17,7 +17,7 @@ Please observe the following:
 
 * Sections other than Code Examples and Remarks should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive, as necessary.
 
-* Please remember to keep it simple and easy to understand.
+* Please remember to keep it accurate, simple, and easy to understand.
 
 * Do not remove, modify, or add section headings unless specifically mentioned below.
 
@@ -131,8 +131,8 @@ The basic format is as follows:
 ||'''parameterN'''||description||
 ```
 
-* The __first column__ contains all of the parameter names, without types, in bold.
-* The __second column__ contains a simple description of each parameter.
+* The __first column__ contains all of the parameter names, without types or pointers, in bold.
+* The __second column__ contains a simple description of each parameter using some specific formatting conventions.
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally not complete sentences.
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the table below for details. 
 
@@ -164,7 +164,7 @@ The basic format is as follows:
 |''Markup'': Use ```<span id="anchorname"></span>``` to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
 |-
 |<( |2 30%>''If'' __there is a pointer__ associated with the parameter
-|''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*, int*)
+|''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*)
 |-
 |''Example'': [[SDL_SetColorKey]]()
 |-
@@ -172,6 +172,32 @@ The basic format is as follows:
 |''Action'': Use the phrase <code>"filled in with"</code> in the description
 |-
 |''Example'': [[SDL_QueryTexturePixels]]()
+|-
+|<( |3 30%>''If'' the description mentions a __structure that has a page__
+|''Action'': Use the following pattern to describe the parameter:<br/><code>The/An</code> ```[[SDL_StructureName]]``` <code>structure representing <some piece of information></code>
+|-
+|''Note'': Be sure to hyperlink the structure name as shown.
+|-
+|''Example'': [[SDL_UnionRect]]()
+|-
+|<( |2 30%>''If'' the description mentions a __structure that ''does not'' have a page__
+|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == window).
+|-
+|''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
+|-
+|<( |3 30%>''If'' a description is referring to something that could be __any one of a group of similar items__ (ie: rectangles)
+|''Action'': Begin the description with <code>a/an</code>
+|-
+|''Example'': [[SDL_HasIntersection]]()
+|-
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) 
+|-
+|<( |3 30%>''If'' the description is referring __to a specific item from a group__ (ie: a window)
+|''Action'': Begin the description with <code>the</code>
+|-
+|''Example'': [[SDL_BlitScaled]]()
+|-
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) 
 |}
 
 
