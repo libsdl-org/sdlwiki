@@ -208,7 +208,54 @@ The basic format is as follows:
 <br/>
 <br/>
 === Return Value ===
+The Return Value section provides basic information about what, if anything, a function will return.  
 
+Most return values follow one of these 2 basic formats, depending upon whether a call to [[SDL_GetError]]() is relevant:
+ ```
+Returns <something> on success or <something else> on failure.
+```
+ ''or''
+ ```
+Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
+```
+
+Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with in the applicable standard statement or when some other action is required.
+{|
+|
+|<bgcolor="#EDEDED">''How to use the Options table''
+|-
+|<( |2 30%>''If'' a __simple replacement__ is all that is required
+|''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
+|-
+|''Example'': If the second column says<br/>''Action'': <code>0</code><br/><code>a negative error code</code><br/>then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
+|-
+|<( 30%>''If'' a __complex replacement or other action__ is required
+|''Action'' will detail what to do instead.
+|}
+
+{|
+|
+|<bgcolor="#EDEDED">''Options''
+|-
+|<( 30%>''If'' the return value is __0 or < 0__
+|''Action'': <code>0</code><br/><code>a negative error code</code>
+|-
+|<( 30%>''If'' the return value is __an int other than above__
+|''Action'': Replace <code><something></code> and <code><something else></code> with the applicable integers.
+|-
+|<( 30%>''If'' the return value is __boolean__
+|''Action'':<code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
+|-
+|<( |2 30%>''If'' the return value is __a structure__
+|''Action'': Ideally, you would search for other functions using the same return value and replicate the formatting.  If this is not possible the general format will approximate: <code>a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what it is.  See other ''If''s for options.
+|-
+|''Example'': [[SDL_CreateRGBSurfaceFrom]]()
+|-
+|<( |2 30%>''If'' the return value is __void__
+|''Action'': Delete the entire Return Value section, including the header.
+|-
+|''Example'': [[SDL_FreeSurface]]()
+|}
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
