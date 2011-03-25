@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_HapticOpen =
@@ -18,7 +18,7 @@ SDL_Haptic* SDL_HapticOpen(int device_index)
 |}
 
 == Return Value ==
-Returns the device identifier or NULL on error.
+Returns the device identifier or NULL on failure.
 
 == Code Examples ==
 ```c++
