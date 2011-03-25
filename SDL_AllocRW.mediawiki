@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_AllocRW =
@@ -12,7 +12,7 @@ SDL_RWops* SDL_AllocRW(void)
 ```
 
 == Return Value ==
-*Returns a pointer to ,,the allocated memory on success,, ^a data stream^, or NULL on error. *
+*Returns a pointer to ,,the allocated memory on success,, ^a data stream^, or NULL on failure. *
 
 == Code Examples ==
 *<br/>
