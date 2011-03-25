@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_CreateTextureFromSurface =
 Use this function to create a texture from an existing surface.
@@ -21,7 +21,7 @@ SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns the created texture or 0 on error; call [[SDL_GetError]]() for more information.
+Returns the created texture or 0 on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
