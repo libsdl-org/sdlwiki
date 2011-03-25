@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_HapticName =
@@ -18,7 +18,7 @@ const char* SDL_HapticName(int device_index)
 |}
 
 == Return Value ==
-Returns the name of the device or NULL on error.
+Returns the name of the device or NULL on failure.
 
 == Code Examples ==
 ```c++
