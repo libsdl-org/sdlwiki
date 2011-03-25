@@ -18,7 +18,7 @@ SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns a surface in the optimal format for the window, or NULL on error.
+Returns a surface in the optimal format for the window, or NULL on failure.
 
 == Code Examples ==
 ```c++
