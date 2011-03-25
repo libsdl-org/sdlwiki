@@ -12,7 +12,7 @@ SDL_Haptic* SDL_HapticOpenFromMouse(void)
 ```
 
 == Return Value ==
-Returns the haptic device identifier or NULL on error.
+Returns the haptic device identifier or NULL on failure.
 
 == Code Examples ==
 ```c++
