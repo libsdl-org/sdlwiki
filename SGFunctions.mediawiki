@@ -134,7 +134,16 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 === Function Parameters ===
 The Function Parameters section provides basic information about each parameter in the function and is presented in table format.
 
-The basic format is as follows:
+''<<Color2(red,Important!)>>''
+{|
+|<( |2 30%>''If'' the parameter is __void__
+|''Action'': Delete the entire Function Parameters section, including the header.
+|-
+|''Example'': [[SDL_AllocRW]]()
+|}
+
+
+Otherwise, the basic format is as follows:
 
 ```
 ||'''parameter1'''||description||
@@ -241,7 +250,7 @@ Returns <something> on success or <something else> on failure.
 Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
 ```
 
-Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with in the applicable standard statement or when some other action is required.
+Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, or when some other action is required.
 {|
 |
 |<bgcolor="#EDEDED">''How to use the Options table''
@@ -259,19 +268,37 @@ Use the following tables to determine what to replace <code><something></code> a
 |
 |<bgcolor="#EDEDED">''Options''
 |-
-|<( 30%>''If'' the return value is __0 or < 0__
+|<( 30%>''If'' the return value is __0 or <0__
 |''Action'': <code>0</code><br/><code>a negative error code</code>
 |-
-|<( 30%>''If'' the return value is __an int other than above__
+|<( |2 30%>''If'' the return value is __other ints than above__
 |''Action'': Replace <code><something></code> and <code><something else></code> with the applicable integers.
 |-
-|<( 30%>''If'' the return value is __boolean__
+|''Example'': Returns 1 on success or 0 on failure.
+|-
+|<( 30%>''If'' the return value is __SDL_bool__
 |''Action'':<code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
 |-
-|<( |2 30%>''If'' the return value is __a structure__
-|''Action'': Ideally, you would search for other functions using the same return value and replicate the formatting.  If this is not possible the general format will approximate: <code>a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what it is.  See other ''If''s for options.
+|<( |3 30%>''If'' the return value is __a pointer or NULL__
+|''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
+|-
+|''Note'': See "''If'' the return value type is a structure" below for more details.
+|-
+|''Example'': [[SDL_SetVideoMode]]()
+|-
+|<( |3 30%>''If'' the return value type is __a structure__
+|''Action'': The general format will approximate: <code>Returns a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what it is.  See other ''If''s for options.
+|-
+|''Note'': Ideally in this case, you would search for other functions using the same return value and replicate the phrasing of others as appropriate.
 |-
 |''Example'': [[SDL_CreateRGBSurfaceFrom]]()
+|-
+|<( |3 30%>''If'' the return value is __void*__
+|''Action'':See "''If'' the return value is a pointer or NULL" above.
+|-
+|''Note'': In some cases it will be appropriate to mention the pointer.  Ideally, look at other similar functions for guidance.
+|-
+|''Example'': [[SDL_LoadFunction]](), [[SDL_SetWindowData]]()
 |-
 |<( |2 30%>''If'' the return value is __void__
 |''Action'': Delete the entire Return Value section, including the header.
