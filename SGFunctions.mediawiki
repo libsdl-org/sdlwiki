@@ -357,6 +357,8 @@ The Code Examples section is meant to contain simple, meaningful examples of how
 
 This is one of the few sections that is intended to grow and adjust as users discover more information about a function that would be helpful to share with other users.
 
+For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
+
 Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.
 
 
@@ -364,10 +366,12 @@ Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] St
 <br/>
 <br/>
 === Remarks ===
-The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the function.  
+The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the function in real-world applications.  
 * Unlike other sections which should rarely require editing once DRAFT is removed unless there are changes to the API, this section is expected to change over time.
 
-This is one of the few sections that is intended to grow and adjust as users discover more information about how a function behaves under different circumstances.  We hope that it will be populated with comments that may help other users.  
+This is one of the few sections that is intended to grow and adjust as users discover more information about how a function behaves under different circumstances.
+
+For the most part the contents of the Remarks section will be user-generated and this section will remain as-is until users input their comments. 
 
 ''Note'': This is not a good place to post questions or comments that require feedback.  Please use the other communication channels available to you, especially the forums and Feedback form, for these types of remarks.
 
@@ -378,6 +382,53 @@ Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide f
 <br/>
 <br/>
 === Related Functions ===
+The Related Functions section provides a list of other functions specifically referenced by that function or otherwise ''closely'' related to it.
+* In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
+
+This list __should not__ include:
+* every function that might be considered "related" as there can be an argument made for a "relationship" between large numbers of functions, making these lists less valuable
+* all functions of similar type or action
+* all functions of a related category
+* functions that are indirectly related
+
+This list __should__ include:
+* the opposite function in a function pair (ie: get/set, do/undo)
+* functions that represent close alternatives (general and specific versions)
+* functions that are called by or otherwise very closely related to the actions of that function
+
+''Example'': Get and Set or Open and Close pairs would be listed here, but all other Window or all other Create functions would not.
+
+The basic format for the Related Functions list is:
+```
+== Related Functions ==
+ .[[SDL_FunctionName]]
+ .[[SDL_FunctionName]]
+```
+: ~-''Note'': The heading was included to more clearly illustrate the blank space before the period at the beginning of each list line.  Without this markup the format will not parse correctly.-~
+
+''If'' there is __more than one function__ in the list list them in __alphabetical order__.
+
+''Note'': Do not include the empty parentheses after the function names in this section.
+
+
+
+
+The Related Functions section provides a list of other functions specifically referenced by that function or otherwise ''closely'' related.
+ {i} In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
+  ''Example'': Get and Set or Open and Close pairs would be listed here, but all other Window or all other Create functions would not.
+* ~-This list should ''not'' include every function that might be considered "related" as there can be an argument made for a "relationship" between large numbers of functions, making these lists less valuable.-~
+* Related Functions should be listed in alphabetical order.
+* Replace ```OtherFunction``` in {{{ .[[SDL_OtherFunction]]}}} with the related function's name.
+* The single, blank space at the beginning of the line must remain.
+* The period (.) after the space must remain. 
+  (!) If there are multiple related functions it may be easier to copy and paste this line from the template as many times as there are functions and then edit each name rather than typing out all of the markup for new lines.
+* Do not use () after the function names in this section.
+ {i} On occasion related functions will be listed in the header file, usually following ```\sa```.  Note that some items following {{{\sa}}} are not ''functions'' and should not be listed in Related Functions!
+
+If a function does not currently have any related functions this section may be removed and added back at a later time.
+
+(!) You may find more broadly related functions listed by category via the Category links in the [[#Footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(to be created)'')>>.
+
 
 
 
