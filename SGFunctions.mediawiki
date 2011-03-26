@@ -205,7 +205,7 @@ Otherwise, the basic format is as follows:
 |-
 |''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
 |-
-|<( |2 30%>''If'' a description refers to any other __page in the API__
+|<( |2 30%>''If'' a description must refer to any other __page in the API__
 |''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
 |-
 |''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
@@ -241,7 +241,18 @@ Otherwise, the basic format is as follows:
 === Return Value ===
 The Return Value section provides basic information about what, if anything, a function will return upon success or failure.  
 
-Most return values follow one of these 2 basic formats, depending upon whether a call to [[SDL_GetError]]() is relevant:
+''<<Color2(red,Important!)>>''
+{|
+|<( |3 30%>''If'' the return value is __void__
+|''Note'': This is '''not''' the same as __void*__!  See table below for void* return values.
+|-
+|''Action'': Delete the entire Return Value section, including the header.
+|-
+|''Example'': [[SDL_FreeSurface]]()
+|}
+
+
+Otherwise, return values follow one of these 2 basic formats, depending upon whether a call to [[SDL_GetError]]() is relevant:
  ```
 Returns <something> on success or <something else> on failure.
 ```
@@ -250,29 +261,20 @@ Returns <something> on success or <something else> on failure.
 Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
 ```
 
-Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, or when some other action is required.
-{|
-|
-|<bgcolor="#EDEDED">''How to use the Options table''
-|-
-|<( |2 30%>''If'' a __simple replacement__ is all that is required
-|''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
-|-
-|''Example'': If the second column says<br/>''Action'': <code>0</code><br/><code>a negative error code</code><br/>then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
-|-
-|<( 30%>''If'' a __complex replacement or other action__ is required
-|''Action'' will detail what to do instead.
-|}
+Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, and to determine when some other action is required.
+* For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
+: ''Example'': If the second column says<br/>''Action'': <code>0</code><br/><code>a negative error code</code><br/>then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
+* For __complex replacements or other actions__ ''Action'' will detail what to do instead.
 
 {|
 |
-|<bgcolor="#EDEDED">''Options''
+|<bgcolor="#EDEDED">''Options by Type''
 |-
 |<( 30%>''If'' the return value is __0 or <0__
 |''Action'': <code>0</code><br/><code>a negative error code</code>
 |-
-|<( |2 30%>''If'' the return value is __other ints than above__
-|''Action'': Replace <code><something></code> and <code><something else></code> with the applicable integers.
+|<( |2 30%>''If'' the return value is __a float or other int than above__
+|''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
 |-
 |''Example'': Returns 1 on success or 0 on failure.
 |-
@@ -287,7 +289,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_SetVideoMode]]()
 |-
 |<( |3 30%>''If'' the return value type is __a structure__
-|''Action'': The general format will approximate: <code>Returns a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what it is.  See other ''If''s for options.
+|''Action'': The general format will approximate: <code>Returns a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what is returned.  See other ''If''s for options.
 |-
 |''Note'': Ideally in this case, you would search for other functions using the same return value and replicate the phrasing of others as appropriate.
 |-
@@ -300,10 +302,49 @@ Use the following tables to determine what to replace <code><something></code> a
 |-
 |''Example'': [[SDL_LoadFunction]](), [[SDL_SetWindowData]]()
 |-
-|<( |2 30%>''If'' the return value is __void__
-|''Action'': Delete the entire Return Value section, including the header.
+|<( |3 30%>''If'' the return value type is __a Uint__
+|''Action'': Replace <code><something></code> with a brief, appropriate description of the Uint.
 |-
-|''Example'': [[SDL_FreeSurface]]()
+|''Example'': [[SDL_MapRGBA]](), [[SDL_WasInit]]()
+|-
+|''Note'': Very rarely the Uint that is returned is a mask of enumerated values.  See [[SDL_MasksToPixelFormatEnum]]() for an example of how to handle this.
+|-
+|<( |2 30%>''If'' the return value type is __a char or const char__
+|''Action'': Replace <code><something></code> with a brief, appropriate description of the returned string.
+|-
+|''Example'': [[SDL_GetCurrentVideoDriver]]()
+|}
+
+
+{|
+|
+|<bgcolor="#EDEDED">''Non-type formatting conventions''
+|-
+|<( |4 30%>''If'' __a parameter__ on that page is referenced in the return value
+|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window) rather than ''directly'' to the parameter itself (ie: window) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_LoadWAV_RW]](), [[SDL_GL_CreateContext]]()
+|-
+|<( |3 30%>''If'' the return value mentions __a structure that has a page__
+|''Action'': Use the following pattern to describe the return value:<br/>Returns <code>the/an</code> ```[[SDL_StructureName]]``` <code>structure representing <some piece of information></code>
+|-
+|''Note'': Be sure to hyperlink the structure name as shown.
+|-
+|''Example'': [[SDL_UnionRect]]()
+|-
+|<( |2 30%>''If'' the return value mentions __a structure that ''does not'' have a page__
+|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == window).
+|-
+|''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
+|-
+|<( |2 30%>''If'' the return value must refer to any other __page in the API__
+|''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
+|-
+|''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
 |}
 
 
