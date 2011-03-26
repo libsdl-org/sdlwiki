@@ -352,14 +352,26 @@ Use the following tables to determine what to replace <code><something></code> a
 <br/>
 <br/>
 === Code Examples ===
+The Code Examples section is meant to contain simple, meaningful examples of how to use the function in a program.  
+* Unlike other sections which should rarely require editing once DRAFT is removed unless there are changes to the API, this section is expected to change over time.
 
+This is one of the few sections that is intended to grow and adjust as users discover more information about a function that would be helpful to share with other users.
+
+Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
 === Remarks ===
+The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the function.  
+* Unlike other sections which should rarely require editing once DRAFT is removed unless there are changes to the API, this section is expected to change over time.
 
+This is one of the few sections that is intended to grow and adjust as users discover more information about how a function behaves under different circumstances.  We hope that it will be populated with comments that may help other users.  
+
+''Note'': This is not a good place to post questions or comments that require feedback.  Please use the other communication channels available to you, especially the forums and Feedback form, for these types of remarks.
+
+Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
