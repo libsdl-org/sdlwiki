@@ -14,7 +14,9 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 '''Please post appropriate remarks that may benefit other users.  
 * Do not post anything that you do not have permission to post publicly.
 * Remarks should have adequate references to make them clear and useful.
-* Please remember to keep it simple and easy to understand.'''
+* Please remember to keep it simple and easy to understand.
+* ''<<Color2(red,Important!)>>'' The Remarks section is not a discussion board.  This is not an appropriate place to post questions, unrelated comments, or general commentary.  Only constructive information is to be posted in the Remarks section.'''
+: Please use the [http://forums.libsdl.org/ forums], [http://www.libsdl.org/mailing-list.php mailing lists], Feedback form (upper right corner), or email (<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>) if you have questions or need to discuss some aspect of the API.
 <br/>
 <br/>
 == Adding Your Remarks ==
