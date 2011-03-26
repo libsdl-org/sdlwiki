@@ -34,7 +34,7 @@ Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
 
 == Return Value ==
 Returns one of the following [[SDL_PixelFormatEnum]] values:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
+<<Include(SDL_PixelFormatEnum, , , from="Start Include here.", to="##End Include here.")>>
 
 == Code Examples ==
 ```c++
