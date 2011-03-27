@@ -13,7 +13,7 @@ SDL_bool SDL_MUSTLOCK(SDL_Surface* surface)
 == Function Parameters ==
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure to check
+|the [[SDL_Surface]] structure to query
 |}
 
 == Return Value ==
