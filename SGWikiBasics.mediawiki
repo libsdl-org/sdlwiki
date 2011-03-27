@@ -157,7 +157,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 |<( |3 30%><code>Monospace</code>
 |''Markup'': Place a backtick on either side of the text, without a space between markup and text.
 |-
-|''Note'': This may resemble inline code (see below) in many cases, but will not behave the same.
+|''Note'': This may resemble inline code (see below) in many cases, but will not usually behave the same.  It may, however, interfere with word wrapping, especially in tables.  It may be necessary to break up a long monospace string using extra markup to allow proper word wrapping.
 |-
 |''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
 |-
