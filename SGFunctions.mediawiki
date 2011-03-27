@@ -190,22 +190,24 @@ Otherwise, the basic format is as follows:
 |-
 |''Example'': [[SDL_SetColorKey]]()
 |-
-|<( |2 30%>''If'' a pointer points to __something that is filled in by the function__
+|<( |2 30%>''If'' a pointer points to __something that is filled in by the function__ or that __has been filled in__
 |''Action'': Use the phrase <code>filled in with</code> in the description
 |-
 |''Example'': [[SDL_QueryTexturePixels]]()
 |-
-|<( |3 30%>''If'' the description mentions __a structure that has a page__
-|''Action'': Use the following pattern to describe the parameter:<br/><code>The/An</code> ```[[SDL_StructureName]]``` <code>structure representing <some piece of information></code>
+|<( |4 30%>''If'' the description mentions __a structure that has a page__
+|''Action 1'': Use the following pattern to describe the parameter:<br/><code>the/an</code> ```[[SDL_StructureName]]``` <code>structure to <action></code> or <code>representing <some piece of information></code>
+|-
+|''Action 2'': Check the table below for structure-specific phrasing.
 |-
 |''Note'': Be sure to hyperlink the structure name as shown.
 |-
 |''Example'': [[SDL_UnionRect]]()
 |-
 |<( |2 30%>''If'' the description mentions __a structure that ''does not'' have a page__
-|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == window).
+|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == <code>the window</code>) and omit the hyperlink.
 |-
-|''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
+|''Note'': These structures may eventually have pages or other references worth linking to, so please check for current status and follow the instructions above for linking to items with pages of their own if this is the case.
 |-
 |<( |2 30%>''If'' a description must refer to any other __page in the API__
 |''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
@@ -241,34 +243,54 @@ Otherwise, the basic format is as follows:
 |
 |<bgcolor="#EDEDED">''Content-dependent formatting: Specific''
 |-
+|<( |4 30%>''If'' the parameter is __SDL_Rect* rect(s)__
+|''Action 1 - rect'': Most often this description begins with <code>the/an</code> ```[[SDL_Rect]]``` <code>structure</code> <code>representing the rectangle to</code>, followed by the action (ie: fill, draw, intersect, etc).
+|-
+|''Action 2 - rects'': When the parameter is plural it refers to an array and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by the action
+|-
+|''Note'': A text search for "SDL_Rect* rect" should provide you with plenty of examples of both the singular and plural parameters.
+|-
+|''Example'': [[SDL_FillRect]](), [[SDL_RenderDrawRect]](), [[SDL_IntersectRectAndLine]](), [[SDL_RenderDrawRects]]()
+|}
+
+{|
+|<( |4 30%>''If'' the parameter is __SDL_Surface* surface__
+|''Action 1'': Most often this description begins with <code></code>, followed by what is being done (ie: ).
+|-
+|''Action 2'': The most common versions are <code></code> or <code></code>.  Use as applicable.
+|-
+|''Note'': A text search for "" should provide you with plenty of examples.
+|-
+|''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()
+|}
+
+{|
+|<( |4 30%>''If'' the parameter is __SDL_Texture* texture__
+|''Action 1'': Most often this description begins with <code>the texture to</code>, followed by what is being done (see ''Action 2'').
+|-
+|''Action 2'': The most common versions are <code>the texture to update</code> or <code>the texture to query</code>.  Use as applicable.
+|-
+|''Note'': A text search for "SDL_Texture* texture" should provide you with plenty of examples.
+|-
+|''Example'': [[SDL_SetTextureAlphaMod]](), [[SDL_QueryTexturePixels]](), [[SDL_UnlockTexture]]()
+|-
 |<( |4 30%>''If'' the parameter is __SDL_Window* window__
-|''Action 1'': Most often this description begins with <code>the window to</code> followed by what is being done (ie: minimize, maximize, show, etc).
+|''Action 1'': Most often this description begins with <code>the window to</code>, followed by what is being done (ie: minimize, maximize, show, etc).
 |-
-|''Action 2'': The most common versions are <code>the window to change</code> or <code>the window to query</code>.  Use as applicable.
+|''Action 2'': The most common versions are <code>the window to change</code> (often with Set functions) or <code>the window to query</code> (often with Get functions).  Use as applicable.
 |-
-|''Note'': A text search for "SDL_Window* window" will provide you with plenty of examples.
+|''Note'': A text search for "SDL_Window* window" should provide you with plenty of examples.
 |-
 |''Example'': [[SDL_RestoreWindow]](), [[SDL_SetWindowTitle]](), [[SDL_GetWindowFlags]]()
 |}
 
 {|
 |<( |4 30%>''If'' the parameter is ____
-|''Action 1'': Most often this description begins with <code></code> followed by what is being done (ie: ).
+|''Action 1'': Most often this description begins with <code></code>, followed by what is being done (ie: ).
 |-
 |''Action 2'': The most common versions are <code></code> or <code></code>.  Use as applicable.
 |-
-|''Note'': A text search for "" will provide you with plenty of examples.
-|-
-|''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()
-|}
-
-{|
-|<( |4 30%>''If'' the parameter is ____
-|''Action 1'': Most often this description begins with <code></code> followed by what is being done (ie: ).
-|-
-|''Action 2'': The most common versions are <code></code> or <code></code>.  Use as applicable.
-|-
-|''Note'': A text search for "" will provide you with plenty of examples.
+|''Note'': A text search for "" should provide you with plenty of examples.
 |-
 |''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()
 |}
