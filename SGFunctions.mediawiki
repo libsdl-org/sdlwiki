@@ -335,20 +335,27 @@ Returns <something> on success or <something else> on failure; call [[SDL_GetErr
 
 Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, and to determine when some other action is required.
 * For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
-: ''Example'': If the second column says<br/>''Action'': <code>0</code><br/><code>a negative error code</code><br/>then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
+: ''Example'': If the second column says
+: ''Action'': <code>0</code><br/><code>a negative error code</code>
+: then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
 * For __complex replacements or other actions__ ''Action'' will detail what to do instead.
+* Please check both tables.
 
 {|
 |
-|<bgcolor="#EDEDED">''Options by Type''
+|<bgcolor="#EDEDED">''Options by type''
 |-
 |<( 30%>''If'' the return value is __0 or <0__
 |''Action'': <code>0</code><br/><code>a negative error code</code>
 |-
-|<( |2 30%>''If'' the return value is __a float or other int than above__
+|<( |4 30%>''If'' the return value is __a float or other int than above__
 |''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
 |-
 |''Example'': Returns 1 on success or 0 on failure.
+|-
+|''Note'': Occasionally there are more than 2 possible return values.  Add any additional values as necessary, keeping the primary success and primary failure values first and last, respectively.
+|-
+|''Example'': [[SDL_HapticOpened]]()
 |-
 |<( 30%>''If'' the return value is __SDL_bool__
 |''Action'':<code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
@@ -361,9 +368,9 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_SetVideoMode]]()
 |-
 |<( |3 30%>''If'' the return value type is __a structure__
-|''Action'': The general format will approximate: <code>Returns a/an/the [[SDL_StructureName]] representing...</code> for success.  Failure statement will depend upon what is returned.  See other ''If''s for options.
+|''Action'': The general format will approximate: <code>Returns an/the</code> ```[[SDL_StructureName]]``` <code>representing</code> <code><what it represents></code>, for success.  The failure statement will depend upon what is returned on failure, if anything.  See other ''If''s for options.
 |-
-|''Note'': Ideally in this case, you would search for other functions using the same return value and replicate the phrasing of others as appropriate.
+|''Note'': Ideally in this case, you would search for other functions using the same return value (eg: "returnValue SDL_") and replicate the phrasing of others as appropriate.
 |-
 |''Example'': [[SDL_CreateRGBSurfaceFrom]]()
 |-
@@ -385,12 +392,18 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Action'': Replace <code><something></code> with a brief, appropriate description of the returned string.
 |-
 |''Example'': [[SDL_GetCurrentVideoDriver]]()
+|-
+|<( |2 30%>''If'' there is __no return value for failure__ (rare)
+|''Action'': Omit that part of the statement.
+|-
+|''Example'': [[SDL_GetAudioDeviceStatus]]()
 |}
+
 
 
 {|
 |
-|<bgcolor="#EDEDED">''Non-type formatting conventions''
+|<bgcolor="#EDEDED">''Options by other criteria''
 |-
 |<( |4 30%>''If'' __a parameter__ on that page is referenced in the return value
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
