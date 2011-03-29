@@ -255,13 +255,13 @@ Otherwise, the basic format is as follows:
 
 {|
 |<( |4 30%>''If'' the parameter is __SDL_Surface* surface__
-|''Action 1'': Most often this description begins with <code></code>, followed by what is being done (ie: ).
+|''Action 1'': Most often this description begins with <code>the [[SDL_Surface]] structure to</code>, followed by what is being done (ie: optimize, ).
 |-
-|''Action 2'': The most common versions are <code></code> or <code></code>.  Use as applicable.
+|''Action 2'': The most common versions are <code>the [[SDL_Surface]] structure to update</code> or <code></code>.  Use as applicable.
 |-
 |''Note'': A text search for "" should provide you with plenty of examples.
 |-
-|''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()
+|''Example'': [[SDL_SetSurfaceRLE]](), [[SDL_]](), [[SDL_]]()
 |}
 
 {|
