@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_ThreadPriority =
+An enumeration of the SDL thread priority.
+
+
+== Values ==
+{|
+|SDL_THREAD_PRIORITY_LOW
+|description
+|-
+|SDL_THREAD_PRIORITY_NORMAL
+|description
+|-
+|SDL_THREAD_PRIORITY_HIGH
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+On many systems ,,you require,, special privileges ^are required^ to set high priority.
+
+== Related Functions ==
+:[[SDL_SetThreadPriority]]
+
+----
+[[CategoryEnum]], [[CategoryThread]]
