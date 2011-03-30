@@ -2,16 +2,16 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
-= SDL_BlitScaled =
-Use this function to perform a fast, low quality, stretch blit between two surfaces of ,,the,, different pixel formats.
+= SDL_UpperBlitScaled =
+Use this function to perform rectangle validation and clipping before passing it to [[SDL_LowerBlitScaled]]().
 
 
 == Syntax ==
 ```c++
-int SDL_BlitScaled(SDL_Surface*    src,
-                   const SDL_Rect* srcrect,
-                   SDL_Surface*    dst,
-                   const SDL_Rect* dstrect)
+int SDL_UpperBlitScaled(SDL_Surface*    src,
+                        const SDL_Rect* srcrect,
+                        SDL_Surface*    dst,
+                        SDL_Rect*       dstrect)
 ```
 
 == Function Parameters ==
@@ -38,12 +38,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function calls [[SDL_SoftStretch]]() or [[SDL_LowerBlit]]().
+This is the public scaled blit function.  This function calls [[SDL_LowerBlitScaled]]() ^to complete the blit^.
 
 == Related Functions ==
-:[[SDL_LowerBlit]]
+:[[SDL_LowerBlitScaled]]
 :[[SDL_SetClipRect]] ???
-:[[SDL_SoftStretch]]
+:[[SDL_SoftStretch]] ???
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
