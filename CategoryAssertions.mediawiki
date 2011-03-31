@@ -1,0 +1,29 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+'''DRAFT'''
+
+= Assertions =
+
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_assert.h SDL_assert.h]
+
+
+== Introduction ==
+This category contains functions for ^managing SDL assertions^.
+
+== Enumerations ==
+
+<<FullSearch(category:CategoryEnum CategoryAssertions)>>
+
+== Structures ==
+
+<<FullSearch(category:CategoryStruct CategoryAssertions)>>
+
+== Functions ==
+
+<<FullSearch(category:CategoryAssertions -CategoryEnum -CategoryStruct)>>
+
+
+----
+CategoryCategory
