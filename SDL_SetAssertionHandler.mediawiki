@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_SetAssertionHandler =
+Use this function to set an application-defined assertion handler.
+
+
+== Syntax ==
+```c++
+void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
+                             void*                userdata)
+```
+
+== Function Parameters ==
+{|
+|'''handler'''
+|the callback function called when an assertion fails; see [[#Remarks|Remarks]] for details
+|-
+|'''userdata'''
+|a pointer passed to the callback as-is
+|}
+
+== Return Value ==
+Returns an [[SDL_assert_state]] value of how to handle the assertion failure.
+
+<<Color2(green,This seems to be the RV for the callback. Since this function has a void RV.  Should it be listed here anyway?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This ^function^ allows an app to show its own assertion UI and/or force the response to an assertion failure. If the app doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
+
+'''handler''' calls the following callback function:
+ ```
+SDL_assert_state (SDLCALL *SDL_AssertionHandler)(
+                           const SDL_assert_data*, void* userdata)
+```
+
+This callback may fire from any thread, but it runs wrapped in a mutex, so it will only fire from one thread at a time.
+
+Setting the callback to NULL restores SDL's original internal handler.
+
+This callback is NOT reset to SDL's internal handler upon [[SDL_Quit]]()!
+
+
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryAssertions]]
