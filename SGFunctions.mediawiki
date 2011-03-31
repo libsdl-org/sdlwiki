@@ -305,7 +305,7 @@ Otherwise, the basic format is as follows:
 <!-- #||''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()|| -->
 <!-- #||''Note'': Of course there are some other phrases to describe this parameter.  A text search for "" should provide you with plenty of examples.|| -->
 
-''Note'': Please do not use Includes in this section.  It may occasionally be appropriate to copy and paste the parameters and descriptions from one function to another (perhaps with minor changes).  This is the preferred method to using an Include.
+''Note'': Please do not use Includes in this section.  It may occasionally be appropriate to copy and paste the parameters and descriptions from one function to another (perhaps with minor changes).  This is the preferred method over using an Include.
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -432,7 +432,8 @@ Use the following tables to determine what to replace <code><something></code> a
 |''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
 |}
 
-''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an include in the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics] style guide, and the Include section of the [http://wiki.libsdl.org/moin.cgi/SGRemarks#Using_an_Include Remarks] style guide for details.
+''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an Include in the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics] style guide, and the Include section of the [http://wiki.libsdl.org/moin.cgi/SGRemarks#Using_an_Include Remarks] style guide for details.
+* ''If'' you use an Include in this section, please email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> telling us what page received the Include and what page was used as the source.  We are keeping a list of all pages using Includes for future reference and this will help us to keep this list up to date.  We appreciate your taking time for this extra step to help us keep our records accurate and useful.  Thank you!
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -480,7 +481,7 @@ This list __should not__ include:
 
 This list __should__ include:
 * the opposite function in a function pair (ie: get/set, do/undo)
-* functions that represent close alternatives (general and specific versions)
+* functions that represent close alternatives (ie: general and specific versions)
 * functions that are called by or otherwise very closely related to the actions of that function
 
 ''Example'': Get and Set or Open and Close pairs would be listed here, but all other Window or all other Create functions would not.
@@ -493,37 +494,31 @@ The basic format for the Related Functions list is:
 ```
 : ~-''Note'': The heading was included to more clearly illustrate the blank space before the period at the beginning of each list line.  Without this markup the format will not parse correctly.-~
 
-''If'' there is __more than one function__ in the list list them in __alphabetical order__.
-
 ''Note'': Do not include the empty parentheses after the function names in this section.
 
+{|
+|<( 30%>''If'' there is __more than one function__ in the list
+|''Action'': List the functions in alphabetical order.
+|-
+|<( 30%>''If'' there are currently __no related functions__
+|''Action'': This section may be removed entirely (including the heading) and added back at a later time if necessary.
+|}
 
-
-
-The Related Functions section provides a list of other functions specifically referenced by that function or otherwise ''closely'' related.
- {i} In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
-  ''Example'': Get and Set or Open and Close pairs would be listed here, but all other Window or all other Create functions would not.
-* ~-This list should ''not'' include every function that might be considered "related" as there can be an argument made for a "relationship" between large numbers of functions, making these lists less valuable.-~
-* Related Functions should be listed in alphabetical order.
-* Replace ```OtherFunction``` in {{{ .[[SDL_OtherFunction]]}}} with the related function's name.
-* The single, blank space at the beginning of the line must remain.
-* The period (.) after the space must remain. 
-  (!) If there are multiple related functions it may be easier to copy and paste this line from the template as many times as there are functions and then edit each name rather than typing out all of the markup for new lines.
-* Do not use () after the function names in this section.
- {i} On occasion related functions will be listed in the header file, usually following ```\sa```.  Note that some items following {{{\sa}}} are not ''functions'' and should not be listed in Related Functions!
-
-If a function does not currently have any related functions this section may be removed and added back at a later time.
-
-(!) You may find more broadly related functions listed by category via the Category links in the [[#Footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(to be created)'')>>.
-
-
-
+<!-- #''Note'': You may find more broadly related functions listed by category via the Category links in the [[#footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(still to be created)'')>>. -->
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
+<span id="footer"></span>
 === Footer ===
+
+
+
+
+
+
+
 
 
 
