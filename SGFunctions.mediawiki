@@ -305,7 +305,7 @@ Otherwise, the basic format is as follows:
 <!-- #||''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()|| -->
 <!-- #||''Note'': Of course there are some other phrases to describe this parameter.  A text search for "" should provide you with plenty of examples.|| -->
 
-
+''Note'': Please do not use Includes in this section.  It may occasionally be appropriate to copy and paste the parameters and descriptions from one function to another (perhaps with minor changes).  This is the preferred method to using an Include.
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -431,6 +431,8 @@ Use the following tables to determine what to replace <code><something></code> a
 |-
 |''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
 |}
+
+''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an include in the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics] style guide, and the Include section of the [http://wiki.libsdl.org/moin.cgi/SGRemarks#Using_an_Include Remarks] style guide for details.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
