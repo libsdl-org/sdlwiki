@@ -1,0 +1,54 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= SDL_assert_data =
+A structure that contains ^assertion criteria^???.
+
+
+== Data Fields ==
+{|
+|int
+|'''always_ignore'''
+|description
+|-
+|unsigned int
+|'''trigger_count'''
+|description
+|-
+|const char*
+|'''condition'''
+|description
+|-
+|const char*
+|'''filename'''
+|description
+|-
+|int
+|'''linenum'''
+|description
+|-
+|const char*
+|'''function'''
+|description
+|-
+|const struct [[SDL_assert_data]]*
+|'''next'''
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetAssertionReport]] ???
+:[[SDL_ReportAssertion]] ???
+
+----
+[[CategoryStruct]], [[CategoryAssertions]]
