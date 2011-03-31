@@ -70,29 +70,89 @@ When your remark includes a reference to a function parameter:
 
 === Referencing Structure Data Fields ===
 ''If'' your remark includes a reference to a structure data field:
-: ''Action'': Use the same formatting as for [[#params|function parameters]] above.
-: ''Example'': [[SDL_AudioSpec]]
+
+''Action'': Use the same formatting as for [[#params|function parameters]] above.
+
+''Example'': [[SDL_AudioSpec]]
 
 
 === Referencing Enumeration Values ===
 ''If'' your remark includes a reference to an enumeration value:
-: ''Action'': No special formatting is required since these are generally already in ALL CAPS.
-: ''Example'': [[SDL_GLattr]]
+
+''Action'': No special formatting is required since these are generally already in ALL CAPS.
+
+''Example'': [[SDL_GLattr]]
+
+==== Using an Include ====
+''If'' your remark uses an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Include] to copy content from another page into the Remarks section, see the guidelines below.
+
+{|
+|<( 30%>''If'' your Include is copying __stand-alone content__ into the Remarks
+|''Action'': A tie-in statement is not likely necessary.  In that case, simply follow the instructions for creating an Include in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics]
+|-
+|<( |2 30%>''If'' your Include is used to copy __values from a related enumeration__ that was mentioned in the Function Parameters section (''most common use'')
+|''Action'': See the following table for tie-in text options to precede the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Include].
+|-
+|''Note'': In these examples, replace <code><parameter></code> with the relevant parameter name and replace <code><enumeration></code> with the name of the enumeration or other page being referenced.
+|-
+|<( 30%>''If'' your Include is for __some other purpose__
+|''Action'': Please apply the closest appropriate match from the other two options (above) with minimal modifications, or contact us if you are unsure what to do.
+|}
+
+''Action'': If required (see table above), select from the following introductory phrases to explain the relationship of the included material to the page:
+
+{|
+|<( |2 30%>''If'' the Include contains a list from which __only one option__ may be selected
+|''Action'': Place the following phrase on the line above the Include markup<br/><code>'''<parameter>'''may</code> <code>be</code> <code>one</code> <code>of</code> <code>the</code> <code>following:</code>
+|-
+|''Example'': [[SDL_CreateTexture]](), [[SDL_SetThreadPriority]]()
+|-
+|<( |2 30%>''If'' the Include contains a list from which __more than one option__ may be selected
+|''Action'': Place the following phrase on the line above the Include markup<br/><code>'''<parameter>''' may be</code> <code>any</code> <code>of</code> <code>the</code> <code>following</code> <code>OR'd</code> <code>together:</code>
+|-
+|''Example'': [[SDL_CreateRenderer]]()
+|-
+|<( |2 30%>''If'' the Include contains a list from which __only one value will be used to fill a parameter__
+|''Action'': Place the following phrase on the line above the Include markup<br/><code>'''parameter''' will</code> <code>be filled</code> <code>in</code> <code>with</code> <code>one</code> <code>of</code> <code>the</code> <code>following:</code>
+|-
+|''Example'': [[SDL_GetTextureBlendMode]]()
+|-
+|<( |2 30%>''If'' the Include contains a list from which __more than one option may be selected or the value may be 0__
+|''Action'': Place the following phrase on the line above the Include markup<br/><code>'''parameter''' may be</code> <code>0 or a</code> <code>mask</code> <code>of</code> <code>any</code> <code>of</code> <code>the</code> <code>following</code> <code>SDL_<enumeration></code> <code>values</code> <code>OR'd</code> <code>together:</code>
+|-
+|''Example'': [[SDL_RendererInfo]]
+|-
+|<( |2 30%>''If'' the Include contains a list from which __one or more than one__ option may be selected
+|''Action'': Place the following phrase on the line above the Include markup<br/><code>'''parameter''' may be <option that</code> <code>cannot be OR'd</code> <code>(ie: SDL_x_NONE)> or</code> <code>a mask of any</code> <code>of the other</code> <code>SDL_<enumeration></code> <code>values</code> <code>OR'd together:</code>
+|-
+|''Example'': [[SDL_RendererInfo]], [[SDL_SetRenderDrawBlendMode]]()
+|}
+
 
 
 === Referencing Other API Components ===
 ''If'' your remark includes a reference to an SDL function, enumeration, or structure:
-: ''Action'': Create a hyperlink to its page.
+
+''Action'': Create a hyperlink to its page.
 : ~-Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.-~<br/>
 
-: ''Markup'':  Use two brackets surrounding the page name (```[[ ]]```) to create a link.
-: ~-Using the full page address is not necessary.  The page name portion (end of address) is sufficient but must be exact.-~
+''Markup'':  Use two brackets surrounding the page name (```[[ ]]```) to create a link.
+: ~-Using the full page address is not necessary.  The page name portion (end of address) is sufficient, but must be exact.-~
 
- ||<( |2 30%>''If'' you reference a __function__||''Action'': Include open and closed parentheses outside of the hyperlink markup.||
- ||''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()||
- ||<( |2>''If'' you reference a __structure__ or __enumeration__||''Action'': Do not use parentheses.||
- ||''Markup'':  ```[[SDL_Enumeration/Structure]]``` = [[SDL_Enumeration/Structure]]||
- ||||<(>''Example'': [[SDL_SetTextureScaleMode]]()||
+{|
+|<( |2 30%>''If'' you reference a __function__
+|''Action'': Include open and closed parentheses outside of the hyperlink markup.
+|-
+|''Markup'':  ```[[SDL_Function]]()``` = [[SDL_Function]]()
+|-
+|<( |2>''If'' you reference a __structure__ or __enumeration__
+|''Action'': Do not use parentheses.
+|-
+|''Markup'':  ```[[SDL_Enumeration/Structure]]``` = [[SDL_Enumeration/Structure]]
+|-
+|
+|<(>''Example'': [[SDL_SetTextureScaleMode]]()
+|}
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
