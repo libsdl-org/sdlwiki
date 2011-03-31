@@ -46,6 +46,23 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||<<Color2(red,''Important!'')>> Do not change or remove any of the existing content.||
 ||''Example'': [[SDL_Init]]()||
 
+=== Using an Include ===
+Since many functions commonly occur in programs as pairs or small groups of related functions, it may occasionally be appropriate to repeat the same code example on more than one page.
+
+In general this is best accomplished by copying and pasting and keeping pages separate.  
+
+Very occasionally it may be appropriate to use an [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes|Include]] to link the pages together and automatically copy the example (and any future changes) from one "source" page to one or more other pages.
+
+<<Color2(red,''Important!'')>> This should only be done if the code example:
+  a. shows a fundamental use of all functions it is copied to
+  a. is not repeating the same information as another existing example on any of the pages (no unnecessary redundancy)
+  a. offers useful information to users on every page it is copied to
+
+''If'' it is determined that an Include is the best way to go, please follow these guidelines:
+
+''Action'': In addition to following the other guidelines in this style guide, also follow the general instructions found in the [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes|Wiki Basics]] style guide to create the Include markup on each page.
+
+''Action'': We are keeping a list of all pages using Includes for future reference.  In order to keep this list up to date, please email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with a list of all pages that received the include and what page was used as the source.  We appreciate your taking time for this extra step to help us keep our records accurate and useful.  Thank you!
 
 [[#ToC|Return to Table of Contents]]
 
