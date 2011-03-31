@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetPerformanceFrequency =
+Use this function to get the count per second of the high resolution counter.
+
+
+== Syntax ==
+```c++
+Uint64 SDL_GetPerformanceFrequency(void)
+```
+
+== Return Value ==
+Returns the count per second ,,on success, or a negative error code on failure; call [[SDL_GetError]]() for more information,,.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetPerformanceCounter]] ???
+
+----
+[[CategoryAPI]], [[CategoryTimer]]
