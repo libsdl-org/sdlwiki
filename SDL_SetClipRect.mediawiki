@@ -17,7 +17,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 |the [[SDL_Surface]] structure to be clipped
 |-
 |'''rect'''
-|the [[SDL_Rect]] structure defining the clipping rectangle, or NULL to disable clipping
+|the [[SDL_Rect]] structure representing the clipping rectangle, or NULL to disable clipping
 |}
 
 == Return Value ==
