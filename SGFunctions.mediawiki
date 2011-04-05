@@ -111,6 +111,15 @@ returnType* SDL_FunctionName(type1  parameter1,
 
 ''Note'': Do not remove or alter the code box markup surrounding the function syntax.
 
+{|
+|<( |3 30%>''If'' a function refers to a __callback function__
+|''Action'': Place any relevant info about the callback function in the [[#Remarks|Remarks]] section and place a link in the parameters section as described [[#parameters|below]].
+|-
+|''Note'': Callback functions do not get their own pages.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|}
+
 ''Example'': ```{
 {{{#!highlight cpp
 
@@ -131,6 +140,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
+<span id="parameters"></span>
 === Function Parameters ===
 The Function Parameters section provides basic information about each parameter in the function and is presented in table format.
 
