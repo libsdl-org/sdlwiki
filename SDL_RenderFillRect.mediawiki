@@ -17,7 +17,7 @@ int SDL_RenderFillRect(SDL_Renderer*   renderer,
 |the rendering context
 |-
 |'''rect'''
-|the [[SDL_Rect]] structure representing the area to fill, or NULL for the entire rendering target
+|the [[SDL_Rect]] structure representing the rectangle to fill, or NULL for the entire rendering target
 |}
 
 == Return Value ==
