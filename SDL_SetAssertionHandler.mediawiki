@@ -40,6 +40,8 @@ SDL_assert_state (SDLCALL *SDL_AssertionHandler)(
                            const SDL_assert_data*, void* userdata)
 ```
 
+<<Color2(green,Should the callback params be described here? ie: where <code>SDL_assert_data</code> is <something> and <code>userdata</code> is <something>.)>>
+
 This callback may fire from any thread, but it runs wrapped in a mutex, so it will only fire from one thread at a time.
 
 Setting the callback to NULL restores SDL's original internal handler.
