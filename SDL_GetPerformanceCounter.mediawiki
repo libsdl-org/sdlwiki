@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetPerformanceCounter =
 Use this function to get the current value of the high resolution counter.
@@ -12,7 +11,7 @@ Uint64 SDL_GetPerformanceCounter(void)
 ```
 
 == Return Value ==
-Returns the counter value on success, or ^a default value^ on failure,,; call [[SDL_GetError]]() for more information,,.
+Returns the current counter value.
 
 == Code Examples ==
 ```c++
@@ -20,11 +19,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+These counter values are only meaningful relative to each other.  Differences between values can be converted to times by using [[SDL_GetPerformanceFrequency]]().
 
 == Related Functions ==
-:[[SDL_GetPerformanceFrequency]] ???
-:[[SDL_GetTicks]] ???
+:[[SDL_GetPerformanceFrequency]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
