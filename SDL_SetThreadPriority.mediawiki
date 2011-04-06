@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_SetThreadPriority =
 Use this function to set the priority for the current thread.
@@ -28,9 +27,6 @@ You can add your code example here
 == Remarks ==
 '''priority''' may be one of the following:
 <<Include(SDL_ThreadPriority, , , from="Start Include here.", to="##End Include here.")>>
-
-== Related Functions ==
-:[[SDL_CreateThread]] ???
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
