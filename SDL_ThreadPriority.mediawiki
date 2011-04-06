@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_ThreadPriority =
-An enumeration of the SDL thread priority.
+An enumeration of the available thread priorities.
 
 
 == Values ==
