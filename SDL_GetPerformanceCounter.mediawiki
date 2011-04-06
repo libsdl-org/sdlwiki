@@ -21,7 +21,7 @@ You can add your code example here
 == Remarks ==
 This function is typically used for profiling.  
 
-These counter values are only meaningful relative to each other.  Differences between values can be converted to times by using [[SDL_GetPerformanceFrequency]]().
+The counter values are only meaningful relative to each other.  Differences between values can be converted to times by using [[SDL_GetPerformanceFrequency]]().
 
 == Related Functions ==
 :[[SDL_GetPerformanceFrequency]]
