@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_ThreadPriority =
 An enumeration of the SDL thread priority.
@@ -16,7 +15,7 @@ An enumeration of the SDL thread priority.
 |for general purpose processing (default)
 |-
 |SDL_THREAD_PRIORITY_HIGH
-|for timing-critical threads
+|for timing-critical processing
 |}
 <!-- #End Include here. -->
 
@@ -26,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-On many systems ,,you require,, special privileges ^are required^ to set high priority.
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_SetThreadPriority]]
