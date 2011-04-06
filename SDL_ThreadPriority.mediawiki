@@ -10,13 +10,13 @@ An enumeration of the SDL thread priority.
 <!-- #The following content is included on <code>SDL_SetThreadPriority</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
 {|
 |SDL_THREAD_PRIORITY_LOW
-|description
+|for non-urgent, background timing
 |-
 |SDL_THREAD_PRIORITY_NORMAL
-|description
+|for general case timing
 |-
 |SDL_THREAD_PRIORITY_HIGH
-|description
+|for timing-critical threads
 |}
 <!-- #End Include here. -->
 
