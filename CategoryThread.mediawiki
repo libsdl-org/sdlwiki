@@ -13,7 +13,7 @@
 The SDL thread structure is defined in SDL_thread.c.<br/>
 : ```typedef struct SDL_Thread SDL_Thread;```
 
-We compile SDL into a DLL. This means that it's the DLL which creates a new thread for the calling process with the [[SDL_CreateThread]]() API. <<Color2(green,Should SDL_CreateThread be un-hyperlinked here?  No page yet.  Doesn't look like it'll have one?)>>  There is a problem with this, that only the RTL of the SDL.DLL will be initialized for those threads, and not the RTL of the calling application!
+We compile SDL into a DLL. This means that it's the DLL which creates a new thread for the calling process with the [[SDL_CreateThread]]() API.  There is a problem with this, that only the RTL of the SDL.DLL will be initialized for those threads, and not the RTL of the calling application!
 
 To solve this, we make a little hack here.  <<Color2(green,Could this line and the next paragraph be joined and made a little less informal?  Example:  To solve this we will always use... -or- To solve this requires a little hack.  We'll always use...)>>
 
@@ -23,6 +23,8 @@ So, in short:
 Always use the _beginthread() and _endthread() of the calling runtime library!
 
 <<Color2(green,There is a lot of info in the header that looks like it might be code examples or coding info but is formatted more like complex defines.  Does any of that belong here?)>>
+
+''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list].
  
 == Enumerations ==
 <<FullSearch(category:CategoryEnum CategoryThread)>>
