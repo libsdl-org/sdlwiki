@@ -10,7 +10,36 @@
 
 
 == Introduction ==
-This category contains functions for ^managing SDL assertions^.
+This category contains functions for managing assertions.
+
+The following table describes each SDL_ASSERT_LEVEL setting and the corresponding impact on the 3 SDL_assert functions:
+
+{|
+|<rowbgcolor="#EDEDED">'''SDL_ASSERT_LEVEL'''
+|'''Description'''
+|'''Function'''
+|'''Function Status'''
+|-
+|0
+|assertions disabled
+|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
+|disabled<br/>disabled<br/>disabled
+|-
+|1
+|default for release
+|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
+|disabled<br/>enabled<br/>disabled
+|-
+|2
+|default for debugging
+|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
+|enabled<br/>enabled<br/>disabled
+|-
+|3
+|stringent for detailed checking
+|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
+|enabled<br/>enabled<br/>enabled
+|}
 
 == Enumerations ==
 
