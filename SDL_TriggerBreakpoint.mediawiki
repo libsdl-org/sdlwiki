@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_TriggerBreakpoint =
+Use this function to ^trigger a manual breakpoint during debugging^.
+
+
+== Syntax ==
+```c++
+void SDL_TriggerBreakpoint(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+
+----
+[[CategoryAPI]], [[CategoryAssertions]]
