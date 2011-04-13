@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_assert =
+Use this function to ^create an assertion for debugging^.
+
+
+== Syntax ==
+```c++
+void SDL_assert(condition)
+```
+
+== Function Parameters ==
+{|
+|'''condition'''
+|the ^expression^ ,,condition,, to check
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This function is enabled and available for use only if the SDL_ASSERT_LEVEL is set to 2 or 3, otherwise it is disabled.  See the [[CategoryAssertions|Assertions]] Category page for details.
+
+== Related Functions ==
+:[[SDL_assert_paranoid]]
+:[[SDL_assert_release]]
+
+----
+[[CategoryAPI]], [[CategoryAssertions]]
