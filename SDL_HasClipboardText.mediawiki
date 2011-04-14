@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_HasClipboardText =
+Use this function to return whether the clipboard has text.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_HasClipboardText(void)
+```
+
+== Return Value ==
+Returns SDL_TRUE if the clipboard has text, or SDL_FALSE if it does not.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetClipboardText]]
+
+----
+[[CategoryAPI]], [[CategoryClipboard]]
