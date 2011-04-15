@@ -14,13 +14,11 @@ int SDL_SetClipboardText(const char* text)
 == Function Parameters ==
 {|
 |'''text'''
-|the desired text
+|the text to store in the clipboard
 |}
 
 == Return Value ==
-Returns 0 on success,,, or a negative error code on failure; call [[SDL_GetError]]() for more information,,.
-
-<<Color2(green,I don't think it returns a negative error code on failure but I haven't come up with a better general description yet.  This one may not have a failure value (other than empty string?).)>>
+Returns 0 on success, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
