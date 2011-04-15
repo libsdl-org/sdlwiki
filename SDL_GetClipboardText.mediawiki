@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetClipboardText =
 Use this function to get UTF-8 text from the clipboard, which must be freed with SDL_free().
@@ -12,9 +11,7 @@ char* SDL_GetClipboardText(void)
 ```
 
 == Return Value ==
-Returns the clipboard text on success,,, or a negative error code on failure; call [[SDL_GetError]]() for more information,,.
-
-<<Color2(green,Not sure of RV.)>>
+Returns the clipboard text on success, or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
