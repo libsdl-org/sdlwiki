@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Clipboard Handling =
 
@@ -10,7 +9,7 @@
 
 
 == Introduction ==
-This category contains functions for SDL clipboard handling.
+This category contains functions for clipboard handling.
 
 <!-- #== Enumerations == -->
 
