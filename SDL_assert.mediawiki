@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_assert =
-Use this function to ^create an assertion for debugging^.
+Use this function to create an assertion for debugging.
 
 
 == Syntax ==
@@ -23,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is enabled only when the SDL_ASSERT_LEVEL is set to 2 or 3, otherwise it is disabled.  See the [[CategoryAssertions|Assertions]] Category page for details.
+This function is enabled only when the SDL_ASSERT_LEVEL is set to 2 or 3, otherwise it is disabled.  See the [[CategoryAssertions|Assertions Category page]] for details.
 
 == Related Functions ==
 :[[SDL_assert_paranoid]]
