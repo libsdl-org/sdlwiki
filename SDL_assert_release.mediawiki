@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions]] Category page for details.
+This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions Category page]] for details.
 
 == Related Functions ==
 :[[SDL_assert]]
