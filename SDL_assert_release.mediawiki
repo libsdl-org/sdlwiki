@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_assert_release =
-Use this function to ^create an assertion for release^.
+Use this function to ^create an assertion for release builds^.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ void SDL_assert_release(condition)
 == Function Parameters ==
 {|
 |'''condition'''
-|the ^expression^ ,,condition,, to check
+|the expression to check
 |}
 
 == Code Examples ==
@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function is enabled and available for use by default.  If the SDL_ASSERT_LEVEL is set to 0 it is disabled.  See the [[CategoryAssertions|Assertions]] Category page for details.
+This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions]] Category page for details.
 
 == Related Functions ==
 :[[SDL_assert]]
