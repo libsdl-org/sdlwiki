@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_assert_state =
-An enumeration of ^assertion states^.
+An enumeration of assertion ^handler^ states.
 
 
 == Values ==
@@ -31,6 +31,8 @@ You can add your code example here
 
 == Remarks ==
 ''You can add useful comments here''
+
+This enumeration is used by the callback function in [[SDL_SetAssertionHandler]]() to determine the response to failed assertions.  
 
 == Related Functions ==
 :[[SDL_ReportAssertion]] ???
