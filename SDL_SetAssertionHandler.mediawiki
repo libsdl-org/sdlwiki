@@ -21,25 +21,21 @@ void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
 |a pointer passed to the callback as-is
 |}
 
-== Return Value ==
-Returns a value from the callback. ???  or delete this section?
-
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
 
 == Remarks ==
-This ^function^ allows an app to show its own assertion UI and/or force the response to an assertion failure. If the app doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
+This function allows an app to show its own assertion UI and/or force the response to an assertion failure. If the app doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
 
 '''handler''' has the following form:
  ```
-SDL_assert_state (SDLCALL *SDL_AssertionHandler)(
-                           const SDL_assert_data*, void* userdata)
+SDL_assert_state YourAssertionHandler(const SDL_assert_data* data,
+                                      void*                  userdata)
 ```
-<<Color2(green,Should this be formatted like a regular function?)>>
-: where <code>(SDLCALL *SDL_AssertionHandler)</code> is the name of the callback, <code>data</code> is a pointer to an [[SDL_assert_data]] struct, and <code>userdata</code> takes what is passed in '''userdata'''.
-<<Color2(green,Should the callback info be described here?)>>
+: where <code>YourAssertionHandler</code> is the name of your callback function, <code>data</code> is a pointer to the [[SDL_assert_data]] struct corresponding to the current assertion, and <code>userdata</code> is what was passed as '''userdata'''.
+
 :The callback returns an [[SDL_assert_state]] value of how to handle the assertion failure.
 
 <<Color2(green,This seems to be the RV for the callback. Since this function has a void RV.  Should it be listed here anyway?)>>
