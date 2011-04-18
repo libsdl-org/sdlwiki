@@ -12,7 +12,11 @@
 == Introduction ==
 This category contains functions for managing assertions.
 
-The following table describes each SDL_ASSERT_LEVEL setting and the corresponding impact on the 3 SDL_assert functions:
+SDL_ASSERT_LEVEL affects which assertions, if any, are processed during compiling based on which function was used to create the assertion (see functions below).  
+
+If not otherwise set, SDL_ASSERT_LEVEL will default to level 2 for debugging ^or compiling with GNUC or MSC_VER^ or level 1 otherwise.  SDL_ASSERT_LEVEL may also be set to 0 or 3.  
+
+The following table describes each SDL_ASSERT_LEVEL setting and the corresponding impact on the three SDL_assert functions:
 
 {|
 |<rowbgcolor="#EDEDED">'''SDL_ASSERT_LEVEL'''
@@ -20,25 +24,25 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 |'''Function'''
 |'''Function Status'''
 |-
-|0
-|assertions disabled
+|'''0'''
+|all assertions disabled
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
 |disabled<br/>disabled<br/>disabled
 |-
-|1
-|default for release
+|'''1'''
+|for release (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|disabled<br/>enabled<br/>disabled
+|disabled<br/>'''enabled'''<br/>disabled
 |-
-|2
-|default for debugging
+|'''2'''
+|for debugging (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|enabled<br/>enabled<br/>disabled
+|'''enabled'''<br/>'''enabled'''<br/>disabled
 |-
-|3
+|'''3'''
 |stringent for detailed checking
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|enabled<br/>enabled<br/>enabled
+|'''enabled'''<br/>'''enabled'''<br/>'''enabled'''
 |}
 
 == Enumerations ==
