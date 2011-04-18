@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_assert_state =
-An enumeration of assertion ^handler^ states.
+An enumeration of assertion handling states.
 
 
 == Values ==
@@ -12,7 +11,7 @@ An enumeration of assertion ^handler^ states.
 |retry the assert immediately
 |-
 |SDL_ASSERTION_BREAK
-|make the debugger trigger a breakpoint
+|trigger a breakpoint under the debugger
 |-
 |SDL_ASSERTION_ABORT
 |terminate the program
@@ -30,12 +29,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-This enumeration is used by the callback function in [[SDL_SetAssertionHandler]]() to determine the response to failed assertions.  
+This enumeration is returned by the callback function in [[SDL_SetAssertionHandler]]() to determine the response to failed assertions.  
 
 == Related Functions ==
-:[[SDL_ReportAssertion]] ???
 :[[SDL_SetAssertionHandler]]
 
 ----
