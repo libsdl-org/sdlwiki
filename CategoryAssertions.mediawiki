@@ -24,22 +24,22 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 |'''Function'''
 |'''Function Status'''
 |-
-|'''0'''
+|<:>'''0'''
 |all assertions disabled
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
 |disabled<br/>disabled<br/>disabled
 |-
-|'''1'''
+|<:>'''1'''
 |for release (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
 |disabled<br/>'''enabled'''<br/>disabled
 |-
-|'''2'''
+|<:>'''2'''
 |for debugging (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
 |'''enabled'''<br/>'''enabled'''<br/>disabled
 |-
-|'''3'''
+|<:>'''3'''
 |stringent for detailed checking
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
 |'''enabled'''<br/>'''enabled'''<br/>'''enabled'''
