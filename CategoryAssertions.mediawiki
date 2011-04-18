@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Assertions =
 
@@ -27,17 +26,17 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 |<:>'''0'''
 |all assertions disabled
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|<<Color2(gray,disabled)>><br/><<Color2(gray,disabled)>><br/><<Color2(gray,disabled)>>
+|disabled<br/>disabled<br/>disabled
 |-
 |<:>'''1'''
 |for release (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|<<Color2(gray,disabled)>><br/>'''enabled'''<br/><<Color2(gray,disabled)>>
+|disabled<br/>'''enabled'''<br/>disabled
 |-
 |<:>'''2'''
 |for debugging (default)
 |SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|enabled<br/>enabled<br/><<Color2(gray,disabled)>>
+|'''enabled'''<br/>'''enabled'''<br/>disabled
 |-
 |<:>'''3'''
 |stringent for detailed checking
