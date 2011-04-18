@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_assert_release =
-Use this function to ^create an assertion for release builds^.
+Use this function to create an assertion for release builds.
 
 
 == Syntax ==
