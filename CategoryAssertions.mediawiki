@@ -13,7 +13,7 @@ This category contains functions for managing assertions.
 
 SDL_ASSERT_LEVEL affects which assertions, if any, are processed during compiling based on which function was used to create the assertion (see functions below).  
 
-SDL_ASSERT_LEVEL can be defined in your project.  If not otherwise set, SDL_ASSERT_LEVEL will default to level 2 for debug builds or level 1 for release builds.  SDL_ASSERT_LEVEL may also be set to 0 or 3.  
+SDL_ASSERT_LEVEL can be defined in your project.  If not otherwise set, SDL_ASSERT_LEVEL will default to level 2 for debug builds or level 1 for release builds.  
 
 The following table describes each SDL_ASSERT_LEVEL setting and the corresponding impact on the three SDL_assert functions:
 
