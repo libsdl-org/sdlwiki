@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_assert_paranoid =
-Use this function to ^create a stringent assertion for detailed checking^.
+Use this function to create an assertion for detailed checking.
 
 
 == Syntax ==
