@@ -16,7 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If the program is running under a debugger this function will trigger a breakpoint.  It is typically used with other conditions or temporarily during debugging.
+If the program is running under a debugger this function will trigger a breakpoint.  It is typically used temporarily during debugging or with other error handling.
 
 ----
 [[CategoryAPI]], [[CategoryAssertions]]
