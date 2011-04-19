@@ -523,6 +523,140 @@ The basic format for the Related Functions list is:
 <span id="footer"></span>
 === Footer ===
 
+The Footer section consists of a dividing line and two links separated by a comma.  
+
+''Markup'': ```[[CategoryAPI]], [[CategoryHeader]]```
+: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific based on the function's header file.
+
+: <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following table for the correct name to use so the function will appear in the correct list(s).
+
+''Action 1'': Do not edit the <code>CategoryAPI</code> link!  
+
+''Action 2'': The <code>CategoryHeader</code> link may be edited ''if'' the function has been relocated to another header (very rare) or if it still says ```[[CategoryHeader]]```.
+
+''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use.
+
+{|
+|<rowbgcolor="#EDEDED">''Header File''
+|''Corresponding Category Name''
+|-
+|SDL.h
+|CategoryInit
+|-
+|SDL_assert.h
+|CategoryAssertions
+|-
+|SDL_atomic.h
+|CategoryAtomic
+|-
+|SDL_audio.h
+|CategoryAudio
+|-
+|SDL_clipboard.h
+|CategoryClipboard
+|}
+<!-- #||SDL_compat.h||CategoryCompat|| -->
+<!-- #||SDL_copying.h|||| -->
+{|
+|SDL_cpuinfo.h
+|CategoryCPU
+|-
+|SDL_endian.h
+|CategoryEndian
+|-
+|SDL_error.h
+|CategoryError
+|-
+|SDL_events.h
+|CategoryEvents
+|}
+<!-- #||SDL_gesture.h|||| -->
+{|
+|SDL_haptic.h
+|CategoryForceFeedback
+|-
+|SDL_hints.h
+|CategoryHints
+|}
+<!-- #||SDL_input.h|||| -->
+{|
+|SDL_joystick.h
+|CategoryJoystick
+|-
+|SDL_keyboard.h
+|CategoryKeyboard
+|-
+|SDL_keycode.h
+|CategoryKeyboard
+|-
+|SDL_loadso.h
+|CategorySharedObject
+|}
+<!-- #||SDL_log.h|||| -->
+<!-- #||SDL_main.h|||| -->
+{|
+|SDL_mouse.h
+|CategoryMouse
+|-
+|SDL_mutex.h
+|CategoryMutex
+|}
+<!-- #||SDL_name.h|||| -->
+<!-- #||SDL_opengl.h||CategoryOpenGL|| -->
+<!-- #||SDL_opengles.h||CategoryOpenGL|| -->
+<!-- #||SDL_opengles2.h||CategoryOpenGL|| -->
+{|
+|SDL_pixels.h
+|CategoryPixels
+|-
+|SDL_platform.h
+|CategoryPlatform
+|-
+|SDL_power.h
+|CategoryPower
+|}
+<!-- #||SDL_quit.h|||| -->
+{|
+|SDL_rect.h
+|CategoryRect
+|-
+|SDL_render.h
+|CategoryRender
+|}
+<!-- #||SDL_revision.h|||| -->
+{|
+|SDL_rwops.h
+|CategoryIO
+|-
+|SDL_scancode.h
+|CategoryKeyboard
+|}
+<!-- #||SDL_shape.h|||| -->
+<!-- #||SDL_stdinc.h|||| -->
+{|
+|SDL_surface.h
+|CategorySurface
+|-
+|SDL_syswm.h
+|CategorySWM
+|-
+|SDL_thread.h
+|CategoryThread
+|-
+|SDL_timer.h
+|CategoryTimer
+|}
+<!-- #||SDL_touch.h|||| -->
+<!-- #||SDL_types.h|||| -->
+{|
+|SDL_version.h
+|CategoryVersion
+|-
+|SDL_video.h
+|CategoryVideo
+|}
+
+
 
 
 
