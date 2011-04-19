@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetAssertionReport =
 Use this function to get a list of all assertion failures.
@@ -12,13 +11,13 @@ const SDL_assert_data* SDL_GetAssertionReport(void)
 ```
 
 == Return Value ==
-Returns a list of all failed assertions.  This never returns NULL, even if there are no items.
+Returns a list of all failed assertions or NULL if the list is empty.
 
 == Code Examples ==
 The proper way to examine this data looks something like this:
 ```c++
 const SDL_assert_data *item = SDL_GetAssertionReport();
-while (item->condition) {
+while (item) {
      printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\n",
           item->condition, item->function, item->filename,
           item->linenum, item->trigger_count,
