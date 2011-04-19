@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
+'''DRAFT'''
 
 = SDL_GetAssertionReport =
 Use this function to get a list of all assertion failures.
