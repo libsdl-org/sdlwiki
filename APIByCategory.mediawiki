@@ -52,6 +52,9 @@
 |-
 |[CategorySWM|Platform-specific Window Management]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_syswm.h SDL_syswm.h] 
+|-
+|[CategoryClipboard|Clipboard Handling]]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_clipboard.h SDL_clipboard.h]
 |}
 
 
