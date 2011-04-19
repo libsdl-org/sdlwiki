@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_ResetAssertionReport =
-Use this function to reset the list of all assertion failures.
+Use this function to clear the list of all assertion failures.
 
 
 == Syntax ==
@@ -19,7 +18,7 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-^This function will clear^ ,,reset,, ^the^ list of all assertions triggered ^up to that point^.
+This function will clear the list of all assertions triggered up to that point.
 
 == Related Functions ==
 :[[SDL_GetAssertionReport]]
