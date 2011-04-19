@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetAssertionReport =
 Use this function to get a list of all assertion failures.
@@ -12,20 +11,11 @@ const SDL_assert_data* SDL_GetAssertionReport(void)
 ```
 
 == Return Value ==
-Returns a list of all ^failed???^ assertions.  This never returns NULL, even if there are no items.
+Returns a list of all failed assertions.  This never returns NULL, even if there are no items.
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
-
-== Remarks ==
-^This function^ get^s^ all assertions triggered since ^the^ last call to [[SDL_ResetAssertionReport]](), or the start of the program.
-
-<<Color2(green,Should this be in the Code Examples section instead?)>>
-
 The proper way to examine this data looks something like this:
- ```
+```c++
 const SDL_assert_data *item = SDL_GetAssertionReport();
 while (item->condition) {
      printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\n",
@@ -35,6 +25,10 @@ while (item->condition) {
      item = item->next;
 }
 ```
+
+== Remarks ==
+This function gets all assertions triggered since the last call to [[SDL_ResetAssertionReport]](), or the start of the program.
+
 
 == Related Functions ==
 :[[SDL_ResetAssertionReport]]
