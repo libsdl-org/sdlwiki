@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_TriggerBreakpoint =
-Use this function to ^trigger a manual breakpoint during debugging^.
+Use this function to trigger a breakpoint during debugging.
 
 
 == Syntax ==
@@ -17,9 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-== Related Functions ==
+If the program is running under a debugger this function will trigger a breakpoint.  It is typically used with other conditions or temporarily during debugging.
 
 ----
 [[CategoryAPI]], [[CategoryAssertions]]
