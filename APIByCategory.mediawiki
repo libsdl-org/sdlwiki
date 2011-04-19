@@ -21,6 +21,9 @@
 |[CategoryError|Error Handling]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_error.h SDL_error.h] 
 |-
+|[CategoryAssertions|Assertions]]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_assert.h SDL_assert.h]
+|-
 |[CategoryVersion|Querying SDL Version]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h] 
 |}
