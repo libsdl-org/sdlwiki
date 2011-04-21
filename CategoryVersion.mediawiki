@@ -24,11 +24,11 @@ These functions are used to collect or display information about the version of 
 SDL_revision.h must be included in your program explicitly if you want to use the SDL_REVISION constant.
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryVersion)>>
+<<FullSearch(category:CategoryStruct CategoryVersion)>>
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum)>>
+<<FullSearch(category:CategoryVersion -CategoryStruct -CategoryEnum)>>
 
 ----
 CategoryCategory
