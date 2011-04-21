@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetRenderer =
 Use this function to get the renderer associated with a window.
@@ -18,7 +17,7 @@ SDL_Renderer* SDL_GetRenderer(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns ^the rendering context^ on success, or ^NULL ???^ on failure,,; call [[SDL_GetError]]() for more information,,.
+Returns the rendering context on success, or NULL on failure.
 
 == Code Examples ==
 ```c++
@@ -29,7 +28,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_GetWindowData]] ???
+:[[SDL_CreateRenderer]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
