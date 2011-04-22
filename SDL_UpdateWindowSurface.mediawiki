@@ -14,7 +14,7 @@ int SDL_UpdateWindowSurface(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|^the window containing the surface^
+|the window to update
 |}
 
 == Return Value ==
@@ -26,7 +26,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function is used to reflect any changes to the surface on the screen.
+
+This function is equivalent to the SDL 1.2 API SDL_Flip().
 
 == Related Functions ==
 :[[SDL_GetWindowSurface]]
