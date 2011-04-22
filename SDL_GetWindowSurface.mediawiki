@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetWindowSurface =
-Use this function to get an SDL surface associated with the window.
+Use this function to get the SDL surface associated with the window.
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
 |}
 
 == Return Value ==
-Returns a surface in the optimal format for the window, or NULL on failure.
+Returns the surface associated with the window, or NULL on failure.
 
 == Code Examples ==
 ```c++
@@ -26,6 +26,8 @@ You can add your code example here
 ```
 
 == Remarks ==
+A new surface will be created with the optimal format for the window, if necessary. This surface will be freed when the window is destroyed.
+
 You may not combine this with 3D or the rendering API on this window.
 
 == Related Functions ==
