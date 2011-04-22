@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_SetWindowFullscreen =
 Use this function to set a window's fullscreen state.
@@ -18,7 +17,7 @@ int SDL_SetWindowFullscreen(SDL_Window* window,
 |the window to change
 |-
 |'''fullscreen'''
-|^SDL_TRUE^ for fullscreen or ^SDL_FALSE^ for windowed
+|SDL_TRUE for fullscreen or SDL_FALSE for windowed
 |}
 
 == Return Value ==
