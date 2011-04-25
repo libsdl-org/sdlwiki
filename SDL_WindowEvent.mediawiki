@@ -33,8 +33,7 @@ A structure that contains window state change event data.
 ```c++
 void PrintEvent(const SDL_Event * event)
 {
-    switch (event->type) {
-    case SDL_WINDOWEVENT:
+    if (event->type == SDL_WINDOWEVENT) {
         switch (event->window.event) {
         case SDL_WINDOWEVENT_SHOWN:
             fprintf(stderr, "Window %d shown", event->window.windowID);
@@ -87,7 +86,6 @@ void PrintEvent(const SDL_Event * event)
                     event->window.windowID, event->window.event);
             break;
         }
-        break;
     }
 }
 ```
