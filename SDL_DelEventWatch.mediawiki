@@ -28,8 +28,7 @@ You can add your code example here
 
 == Remarks ==
 <<Include(SDL_SetEventFilter, , , from="Start Include here.", to="##End Include here")>>
-
-''You can add useful comments here''
+:where <code>YourEventFilter</code> is the name of your function, <code>userdata</code> is is what was passed as '''userdata''' to [[SDL_DelEventWatch]]() and <code>event</code> is the event that triggered the callback.
 
 == Related Functions ==
 :[[SDL_AddEventWatch]]
