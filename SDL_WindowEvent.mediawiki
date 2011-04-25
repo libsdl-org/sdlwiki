@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_WindowEvent =
-A structure that contains window state change event data (event.window.*).
+A structure that contains window state change event data.
 
 
 == Data Fields ==
@@ -20,18 +20,6 @@ A structure that contains window state change event data (event.window.*).
 |'''event'''
 |[[SDL_WindowEventID]]
 |-
-|Uint8
-|'''padding1'''
-|^8 empty bits to total 32^???
-|-
-|Uint8
-|'''padding2'''
-|^8 empty bits to total 32^???
-|-
-|Uint8
-|'''padding3'''
-|^8 empty bits to total 32^???
-|-
 |int
 |'''data1'''
 |event dependent data
@@ -47,13 +35,14 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+[[SDL_WindowEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_WINDOWEVENT is reported.  You would access it through the event's window field.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
 :[[SDL_WindowEventID]]
 
-== Related Functions ==
+== Related Structures ==
+:[[SDL_Event]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]], [[CategoryVideo]]
