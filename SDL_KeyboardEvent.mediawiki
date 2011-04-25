@@ -10,7 +10,7 @@ A structure that contains keyboard button event information.
 {|
 |Uint32
 |'''type'''
-|SDL_KEYDOWN or SDL_KEYUP
+|the event type; SDL_KEYDOWN or SDL_KEYUP
 |-
 |Uint32
 |'''windowID'''
@@ -18,7 +18,7 @@ A structure that contains keyboard button event information.
 |-
 |Uint8
 |'''state'''
-|SDL_PRESSED or SDL_RELEASED
+|the state of the key; SDL_PRESSED or SDL_RELEASED
 |-
 |Uint8
 |'''repeat'''
@@ -35,17 +35,19 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.
+[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.  You would access it through the event's key field. 
 
 An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
-
-Note: Repeating SDL_KEYDOWN events will occur if key repeat is enabled (see SDL_EnableKeyRepeat).  <<Color2(green,SDL_EnableKeyRepeat does not currently have a page and may not exist in SDL 1.3.)>>
 
 == Related Enumerations ==
 :[[SDL_EventType]]
 
+== Related Structures ==
+:[[SDL_Event]]
+
 == Related Functions ==
-<<Color2(green,Listed in the old wiki but appear to be absent from 1.3: SDL_EnableKeyRepeat, SDL_EnableUNICODE)>>
+:[[SDL_GetKeyboardState]]
+:[[SDL_GetModState]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
