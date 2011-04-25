@@ -90,7 +90,7 @@ void PrintEvent(const SDL_Event * event)
 ```
 
 == Remarks ==
-[[SDL_WindowEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_WINDOWEVENT is reported.  You would access it through the event's window field.
+[[SDL_WindowEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_WINDOWEVENT is reported.  You would access it through the event's <code>window</code> field.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
