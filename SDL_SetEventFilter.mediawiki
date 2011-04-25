@@ -31,7 +31,7 @@ You can add your code example here
 
 The '''filter''' function has the following form:
  ```
-int SDL_YourEventFilter(void*      userdata,
+int YourEventFilter(void*      userdata,
                     SDL_Event* event)
 ```
 <!-- #End Include here -->
