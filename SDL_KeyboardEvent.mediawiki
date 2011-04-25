@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_KeyboardEvent =
 A structure that contains keyboard button event information.
@@ -35,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.  You would access it through the event's key field. 
+[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.  You would access it through the event's <code>key</code> field. 
 
 An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
 
