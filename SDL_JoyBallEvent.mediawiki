@@ -44,6 +44,7 @@ Trackballs only return relative motion. This is the change in position of the ba
 :[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_Event]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyButtonEvent]]
 :[[SDL_JoyHatEvent]]
