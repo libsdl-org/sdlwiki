@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_JoyAxisEvent =
 A structure that contains joystick axis motion event information.
@@ -38,6 +38,7 @@ An SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick.
 :[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_Event]]
 :[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
 :[[SDL_JoyHatEvent]]
