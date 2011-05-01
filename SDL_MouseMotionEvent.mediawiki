@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEMOTION is reported.  You would access it through the event's <code>motion</code> field.
+[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEMOTION is reported.  You would access it through the event's <code>motion</code> field.
 
 An SDL_MOUSEMOTION event occurs whenever a user moves the mouse within the application window or when [[SDL_WarpMouseInWindow]]() is called. 
 
