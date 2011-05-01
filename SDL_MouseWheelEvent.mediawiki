@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_MouseWheelEvent =
@@ -31,7 +31,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_MouseWheelEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEWHEEL is reported.
+[[SDL_MouseWheelEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEWHEEL is reported.  You would access it through the event's <code>wheel</code> field.
 
 An SDL_MOUSEWHEEL event occurs whenever a user moves the mouse wheel.
 
@@ -41,6 +41,7 @@ Movements to the left generate negative '''x''' values and to the right generate
 :[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_Event]]
 :[[SDL_MouseButtonEvent]]
 :[[SDL_MouseMotionEvent]]
 
