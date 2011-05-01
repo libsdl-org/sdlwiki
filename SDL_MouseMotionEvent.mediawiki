@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_MouseMotionEvent =
 A structure that contains mouse motion event information.
@@ -9,7 +9,7 @@ A structure that contains mouse motion event information.
 {|
 |Uint32
 |'''type'''
-|SDL_MOUSEMOTION
+|the event type; SDL_MOUSEMOTION
 |-
 |Uint32
 |'''windowID'''
@@ -17,7 +17,7 @@ A structure that contains mouse motion event information.
 |-
 |Uint8
 |'''state'''
-|the current button state; see [[#Remarks|Remarks]] for details
+|the state of the button; see [[#Remarks|Remarks]] for details
 |-
 |int
 |'''x'''
@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEMOTION is reported.
+[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] structure and is used when an event of type SDL_MOUSEMOTION is reported.  You would access it through the event's <code>motion</code> field.
 
 An SDL_MOUSEMOTION event occurs whenever a user moves the mouse within the application window or when [[SDL_WarpMouseInWindow]]() is called. 
 
@@ -66,6 +66,7 @@ Relative motion is stored in '''xrel''' and '''yrel''' and is relative to the la
 :[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_Event]]
 :[[SDL_MouseButtonEvent]]
 :[[SDL_MouseWheelEvent]]
 
