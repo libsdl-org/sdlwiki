@@ -28,18 +28,6 @@ A structure that contains touch finger motion,,/finger event structure,, ^inform
 |'''state'''
 |the current button state
 |-
-|Uint8
-|'''padding1'''
-|description
-|-
-|Uint8
-|'''padding2'''
-|description
-|-
-|Uint8
-|'''padding3'''
-|description
-|-
 |Uint16
 |'''x'''
 |description
