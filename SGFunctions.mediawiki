@@ -46,13 +46,16 @@ All function descriptions begin with:
  ```Use this function to```
 : followed by a ''clear and concise'' description of what the function does.  
 
+<span id="note1"></span>
 ''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated functions should be placed in the [[#Remarks|Remarks]] section instead.  
 
-<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the description if additional information is located there.  (See the above ''Note''.)
+<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the Description if additional information is located there.
 
 {|
-|<( 30%>''If'' __another API page__ is referenced in the description
+|<( |2 30%>''If'' __another API page__ is referenced in the description
 |''Action'': As always,  be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|-
+|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
 |-
 |<( |3 30%>''If'' __a parameter__ on that page is referenced in the description
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
@@ -109,7 +112,7 @@ returnType* SDL_FunctionName(type1  parameter1,
 * A space between <code>returnType</code> and <code>SDL_FunctionName</code>
 * Commas at the end of each line if there is more than 1 param
 
-''Note'': Do not remove or alter the code box markup surrounding the function syntax.
+''Note'': Do not remove or alter the code box markup surrounding the function syntax.  The starting and ending markup must remain on separate lines from the rest of the content in order to generate the code box.
 
 {|
 |<( |3 30%>''If'' a function refers to a __callback function__
@@ -174,10 +177,12 @@ Otherwise, the basic format is as follows:
 |
 |<bgcolor="#EDEDED">''Content-dependent formatting: General''
 |-
-|<( |2 30%>''If'' __more than one statement__ must be included in the description
+|<( |3 30%>''If'' __more than one statement__ must be included in the description
 |''Action'': Separate them with a semi-colon (;)
 |-
 |''Note'': This should be avoided whenever possible.  See the next ''If'' statement in this table for more information.
+|-
+|''Example'': [[SDL_PixelFormatEnumToMasks]]()
 |-
 |<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
 |''Action 1'' : Appended the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
@@ -229,14 +234,14 @@ Otherwise, the basic format is as follows:
 |-
 |''Example'': [[SDL_HasIntersection]]()
 |-
-|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) 
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |-
 |<( |3 30%>''If'' a description is referring __to a specific item from a group__ (ie: a window)
 |''Action'': Begin the description with <code>the</code>
 |-
 |''Example'': [[SDL_BlitScaled]]()
 |-
-|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) 
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |-
 |<( |3 30%>''If'' __a parameter__ on that page is referenced in another parameter's description
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
@@ -343,6 +348,8 @@ Returns <something> on success or <something else> on failure.
 Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
 ```
 
+''Note'': Most often the 2nd, longer version is used unless the function does not have a failure state.
+
 Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, and to determine when some other action is required.
 * For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
 : ''Example'': If the second column says
@@ -380,7 +387,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |<( |3 30%>''If'' the return value type is __a structure__
 |''Action'': The general format will approximate: <code>Returns an/the</code> ```[[SDL_StructureName]]``` <code>representing</code> <code><what it represents></code>, for success.  The failure statement will depend upon what is returned on failure, if anything.  See other ''If''s for options.
 |-
-|''Note'': Ideally in this case, you would search for other functions using the same return value (eg: "returnValue SDL_") and replicate the phrasing of others as appropriate.
+|''Note'': Ideally in this case, you would search for other functions using the same return value and replicate the phrasing of others as appropriate. (Example search: "<code>returnValue</code> SDL_", where <code>returnValue</code> is replaced with the value you are interested in.)
 |-
 |''Example'': [[SDL_CreateRGBSurfaceFrom]]()
 |-
@@ -425,7 +432,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_LoadWAV_RW]](), [[SDL_GL_CreateContext]]()
 |-
 |<( |3 30%>''If'' the return value mentions __a structure that has a page__
-|''Action'': Use the following pattern to describe the return value:<br/>Returns <code>the/an</code> ```[[SDL_StructureName]]``` <code>structure representing <some piece of information></code>
+|''Action'': Use the following pattern to describe the return value:<br/>Returns <code>the/an</code> ```[[SDL_StructureName]]``` <code>structure</code> <code>representing <some piece</code> <code>of information></code>
 |-
 |''Note'': Be sure to hyperlink the structure name as shown.
 |-
