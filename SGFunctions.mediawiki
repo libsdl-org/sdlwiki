@@ -458,7 +458,7 @@ Use the following tables to determine what to replace <code><something></code> a
 <br/>
 === Code Examples ===
 The Code Examples section is meant to contain simple, meaningful examples of how to use the function in a program.  
-* Unlike other sections which should rarely require editing once DRAFT is removed unless there are changes to the API, this section is expected to change over time.
+* Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
 
 This is one of the few sections that is intended to grow and adjust as users discover more information about a function that would be helpful to share with other users.
 
@@ -472,13 +472,13 @@ Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] St
 <br/>
 === Remarks ===
 The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the function in real-world applications.  
-* Unlike other sections which should rarely require editing once DRAFT is removed unless there are changes to the API, this section is expected to change over time.
+* Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
 
 This is one of the few sections that is intended to grow and adjust as users discover more information about how a function behaves under different circumstances.
 
 For the most part the contents of the Remarks section will be user-generated and this section will remain as-is until users input their comments. 
 
-''Note'': This is not a good place to post questions or comments that require feedback.  Please use the other communication channels available to you, especially the forums and Feedback form, for these types of remarks.
+''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the forums and Feedback form, for these types of remarks.
 
 Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.
 
@@ -491,17 +491,20 @@ The Related Functions section provides a list of other functions specifically re
 * In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
 
 This list __should not__ include:
-* every function that might be considered "related" as there can be an argument made for a "relationship" between large numbers of functions, making these lists less valuable
+* the primary function on that page
+* every other function that might be considered "related" 
+: ~-An argument can usually be made for a "relationship" between large numbers of functions. Using all of them would make these lists less valuable.-~
 * all functions of similar type or action
 * all functions of a related category
-* functions that are indirectly related
+* functions that are indirectly related (ie: it might be common to use them together)
+* functions that do not have a page in the wiki (usually because they are not public functions)
 
 This list __should__ include:
 * the opposite function in a function pair (ie: get/set, do/undo)
-* functions that represent close alternatives (ie: general and specific versions)
+* functions that represent close alternatives (ie: general and specific versions, singular and plural versions)
 * functions that are called by or otherwise very closely related to the actions of that function
 
-''Example'': Get and Set or Open and Close pairs would be listed here, but all other Window or all other Create functions would not.
+''Example'': The other member of a Get and Set or Open and Close pair should be listed here, but all other Window or all other Create functions should not.
 
 The basic format for the Related Functions list is:
 ```
@@ -517,9 +520,11 @@ The basic format for the Related Functions list is:
 |<( 30%>''If'' there is __more than one function__ in the list
 |''Action'': List the functions in alphabetical order.
 |-
-|<( 30%>''If'' there are currently __no related functions__
-|''Action'': This section may be removed entirely (including the heading) and added back at a later time if necessary.
+|<( 30%>''If'' there are __no related functions__
+|''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |}
+
+''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are related structures or enumerations they are included in the body of the page as links (usually in the Remarks section).  If you feel it is critical that a distinct section for one of these groups is included on a specific function page please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
 
 <!-- #''Note'': You may find more broadly related functions listed by category via the Category links in the [[#footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(still to be created)'')>>. -->
 
@@ -530,10 +535,13 @@ The basic format for the Related Functions list is:
 <span id="footer"></span>
 === Footer ===
 
-The Footer section consists of a dividing line and two links separated by a comma.  
+The Footer section consists of a horizontal rule followed by two links separated by a comma.  
 
-''Markup'': ```[[CategoryAPI]], [[CategoryHeader]]```
-: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific based on the function's header file.
+''Markup'': ```
+----
+[[CategoryAPI]], [[CategoryHeader]]
+```
+: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific  where <code>Header</code> varies based on the function's header file.
 
 : <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following table for the correct name to use so the function will appear in the correct list(s).
 
@@ -544,7 +552,7 @@ The Footer section consists of a dividing line and two links separated by a comm
 ''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use.
 
 {|
-|<rowbgcolor="#EDEDED">''Header File''
+|<rowbgcolor="#EDEDED">''Header File Containing the Function''
 |''Corresponding Category Name''
 |-
 |SDL.h
