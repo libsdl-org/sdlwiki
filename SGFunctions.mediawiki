@@ -541,13 +541,13 @@ The Footer section consists of a horizontal rule followed by two links separated
 ----
 [[CategoryAPI]], [[CategoryHeader]]
 ```
-: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific  where <code>Header</code> varies based on the function's header file.
+: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
 
-: <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following table for the correct name to use so the function will appear in the correct list(s).
+<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following table for the correct name to use so the function will appear in the correct list(s).
 
 ''Action 1'': Do not edit the <code>CategoryAPI</code> link!  
 
-''Action 2'': The <code>CategoryHeader</code> link may be edited ''if'' the function has been relocated to another header (very rare) or if it still says ```[[CategoryHeader]]```.
+''Action 2'': The <code>CategoryHeader</code> link may be edited ''if'' the function has been relocated to another header (very rare) or if it still says ```[[CategoryHeader]]``` (as on a new page).
 
 ''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use.
 
@@ -693,8 +693,7 @@ as possible.
 If you have questions that aren't addressed here:
  a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
  a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
- a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and 
-include a way to contact you.
+ a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and ''include a way to contact you''.
  a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
  a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
 
