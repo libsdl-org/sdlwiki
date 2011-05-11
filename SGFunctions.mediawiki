@@ -15,13 +15,19 @@ This guide provides specific instructions for editing or adding your own content
 Please observe the following for all function pages:  
 * Do not post anything that you do not have permission to post publicly.
 
-* Sections other than Code Examples and Remarks should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive, as necessary.
+* Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
 
 * Please remember to keep it accurate, simple, and easy to understand.
 
+* Do not remove, modify, or add to the markup (#pragma, etc.) above the page title.
+
 * Do not remove, modify, or add section headings unless specifically mentioned below.
 
-For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+* In general, we prefer that you do not remove or modify existing content unless it is clearly incorrect or out of date.
+
+* Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
+
+For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -31,7 +37,11 @@ For assistance with editing, saving, or wiki-appropriate markup see the [http://
 === Title ===
 '''''Do not edit the Title.'''''
 
-The Title section consists of the page heading ```= SDL_FunctionName =``` and should match the address of the page and the function described on the page.
+The Title section consists of the page heading and its markup:
+
+ ```= SDL_FunctionName =``` 
+
+It should match the address of the page and the function described on the page.
 
 If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
@@ -44,6 +54,7 @@ The Description section immediately follows the page title and does not have it'
 
 All function descriptions begin with:
  ```Use this function to```
+
 : followed by a ''clear and concise'' description of what the function does.  
 
 <span id="note1"></span>
@@ -110,9 +121,10 @@ returnType* SDL_FunctionName(type1  parameter1,
 
 ''Note'': __To be included__
 * A space between <code>returnType</code> and <code>SDL_FunctionName</code>
-* Commas at the end of each line if there is more than 1 param
+* Commas at the end of each line if there is more than 1 parameter
+* The colorizing markup ```c++```
 
-''Note'': Do not remove or alter the code box markup surrounding the function syntax.  The starting and ending markup must remain on separate lines from the rest of the content in order to generate the code box.
+''Note'': Do not remove or alter the code box markup surrounding the function syntax.  The starting and ending markup must remain on separate lines above and below the rest of the content in order to generate the code box.
 
 {|
 |<( |3 30%>''If'' a function refers to a __callback function__
@@ -219,10 +231,12 @@ Otherwise, the basic format is as follows:
 |-
 |''Example'': [[SDL_UnionRect]]()
 |-
-|<( |2 30%>''If'' the description mentions __a structure that ''does not'' have a page__
+|<( |3 30%>''If'' the description mentions __a structure that ''does not'' have a page__
 |''Action'': Use the plain English term to describe the structure (ie: SDL_Window == <code>the window</code>) and omit the hyperlink.
 |-
-|''Note'': These structures may eventually have pages or other references worth linking to, so please check for current status and follow the instructions above for linking to items with pages of their own if this is the case.
+|''Note'': Mention here does not necessarily indicate that a page does not exist.  Please check the current wiki before selecting this option for wording, as a page may have been created since this was written.
+|-
+|''Example'': [[SDL_RenderClear]]()
 |-
 |<( |2 30%>''If'' a description must refer to any other __page in the API__
 |''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
@@ -236,19 +250,21 @@ Otherwise, the basic format is as follows:
 |-
 |''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |-
-|<( |3 30%>''If'' a description is referring __to a specific item from a group__ (ie: a window)
+|<( |3 30%>''If'' a description is referring __to a specific item from a group__ (ie: a specific window)
 |''Action'': Begin the description with <code>the</code>
 |-
 |''Example'': [[SDL_BlitScaled]]()
 |-
 |''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |-
-|<( |3 30%>''If'' __a parameter__ on that page is referenced in another parameter's description
+|<( |4 30%>''If'' __a parameter references another parameter__ on that same page
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
 |''Note'': If the reference is to the parameter as a ''concept'' (ie: the window) rather than ''directly'' to the parameter itself (ie: window) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_EnclosePoints]]()
 |}
 
 ''Note'': It would only rarely be appropriate to use the exact same description of a common parameter every time that parameter appears in the API.  However, the same or very similar description can be used for many occurrences of the same parameter, enhancing consistency across pages.  The following table provides a list of these commonly used descriptions.
@@ -262,7 +278,7 @@ Otherwise, the basic format is as follows:
 |<( |4 30%>''If'' the parameter is __SDL_Palette* palette__
 |''Action 1'': Most often this description begins with <code>the [[SDL_Palette]] structure to</code>, followed by what to do with the palette.
 |-
-|''Action 2'': The most common version is <code>the [[SDL_Palette]] structure to use</code>.  Use as applicable.
+|''Action 2'': The most common version is <code>the [[SDL_Palette]] structure to use</code>
 |-
 |''Example'': [[SDL_SetSurfacePalette]](), [[SDL_FreePalette]]()
 |-
@@ -287,7 +303,7 @@ Otherwise, the basic format is as follows:
 |<( |5 30%>''If'' the parameter is __SDL_Surface* surface__
 |''Action 1'': Most often this description begins with <code>the [[SDL_Surface]] structure to</code>, followed by what is happening with the structure (ie: optimize, be locked, etc.).
 |-
-|''Action 2'': The most common versions are <code>the [[SDL_Surface]] structure to update</code> (often used with Set functions) or <code>the [[SDL_Surface]] structure to query</code> (often used with Get functions).  Use as applicable.
+|''Action 2'': The most common versions are <code>the [[SDL_Surface]] structure to update</code> (often used with Set functions) or <code>the [[SDL_Surface]] structure to query</code> (often used with Get functions).
 |-
 |''Action 3'': Some will be best described by the following instead:  <code>the [[SDL_Surface]] structure representing</code> <something>.
 |-
@@ -298,7 +314,7 @@ Otherwise, the basic format is as follows:
 |<( |4 30%>''If'' the parameter is __SDL_Texture* texture__
 |''Action 1'': Most often this description begins with <code>the texture to</code>, followed by what is being done (see ''Action 2'').
 |-
-|''Action 2'': The most common versions are <code>the texture to update</code> (often used with Set functions) or <code>the texture to query</code> (often used with Get functions).  Use as applicable.
+|''Action 2'': The most common versions are <code>the texture to update</code> (often used with Set functions) or <code>the texture to query</code> (often used with Get functions).
 |-
 |''Example'': [[SDL_SetTextureAlphaMod]](), [[SDL_QueryTexturePixels]](), [[SDL_UnlockTexture]]()
 |-
@@ -307,7 +323,7 @@ Otherwise, the basic format is as follows:
 |<( |4 30%>''If'' the parameter is __SDL_Window* window__
 |''Action 1'': Most often this description begins with <code>the window to</code>, followed by what is being done (ie: minimize, maximize, show, etc).
 |-
-|''Action 2'': The most common versions are <code>the window to change</code> (often used with Set functions) or <code>the window to query</code> (often used with Get functions).  Use as applicable.
+|''Action 2'': The most common versions are <code>the window to change</code> (often used with Set functions) or <code>the window to query</code> (often used with Get functions).
 |-
 |''Example'': [[SDL_RestoreWindow]](), [[SDL_SetWindowTitle]](), [[SDL_GetWindowFlags]]()
 |-
