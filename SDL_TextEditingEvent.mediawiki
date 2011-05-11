@@ -1,9 +1,9 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_TextEditingEvent =
-A structure that contains keyboard text editing event ,,structure,, ^information^ (event.edit.*).
+A structure that contains keyboard text editing event information.
 
 
 == Data Fields ==
@@ -17,18 +17,19 @@ A structure that contains keyboard text editing event ,,structure,, ^information
 |the window with keyboard focus, if any
 |-
 |char
-|'''text[SDL_TEXTEDITINGEVENT_TEXT_SIZE]'''
+|'''text'''
 |the editing text; * at most SDL_TEXTEDITINGEVENT_TEXT_SIZE - 1 characters *
 |-
 |int
 |'''start'''
-|the start cursor of selected editing text
+|,,the start cursor of selected editing text,, ^the location to begin editing from^
 |-
 |int
 |'''length'''
-|the length of selected editing text
+|,,the length of selected editing text,, ^the number of characters to edit from the start point^
 |}
-<<Color2(green,The '''text''' field currently shows the same info in both columns because it could go in either per the header vs *old wiki*. Where should it go?  There is also a #define SDL_TEXTEDITINGEVENT_TEXT_SIZE (32).  Should that info be included anywhere?)>>
+
+<<Color2(green,The '''text''' field includes SDL_TEXTEDITINGEVENT_TEXT_SIZE per the header but that would be highly irregular for the formatting of this wiki. Where should it go?  There is also a #define SDL_TEXTEDITINGEVENT_TEXT_SIZE (32).  Should that info be included anywhere?)>>
 
 == Code Examples ==
 ```c++
@@ -36,7 +37,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-* [[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported. *
+[[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
