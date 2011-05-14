@@ -355,43 +355,33 @@ The Return Value section provides basic information about what, if anything, a f
 |}
 
 
-Otherwise, return values follow one of these 2 basic formats, depending upon whether a call to [[SDL_GetError]]() is relevant:
- ```
-Returns <something> on success or <something else> on failure.
-```
- ''or''
+Otherwise, return values follow this basic format:
  ```
 Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
 ```
 
-''Note'': Most often the 2nd, longer version is used unless the function does not have a failure state.
-
-Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with using the applicable standard statement above, and to determine when some other action is required.
+Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with in the standard statement above, and to determine whether some other action is required.
 * For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
 : ''Example'': If the second column says
-: ''Action'': <code>0</code><br/><code>a negative error code</code>
+: ''Action'':<br/><code>0</code><br/><code>a negative error code</code>
 : then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
-* For __complex replacements or other actions__ ''Action'' will detail what to do instead.
+* For __complex replacements or other actions__ ''Action'' and/or a ''Note'' will detail what to do instead or as well.
 * Please check both tables.
 
 {|
 |
-|<bgcolor="#EDEDED">''Options by type''
+|<bgcolor="#EDEDED">''Replacements by type''
 |-
-|<( 30%>''If'' the return value is __0 or <0__
-|''Action'': <code>0</code><br/><code>a negative error code</code>
+|<( 30%>''If'' the return value is __an int (0 or <0)__
+|''Action'':<br/><code>0</code><br/><code>a negative error code</code>
 |-
-|<( |4 30%>''If'' the return value is __a float or other int than above__
+|<( |2 30%>''If'' the return value is __an int other than above or a float__
 |''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
 |-
 |''Example'': Returns 1 on success or 0 on failure.
 |-
-|''Note'': Occasionally there are more than 2 possible return values.  Add any additional values as necessary, keeping the primary success and primary failure values first and last, respectively.
-|-
-|''Example'': [[SDL_HapticOpened]]()
-|-
 |<( 30%>''If'' the return value is __SDL_bool__
-|''Action'':<code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
+|''Action'':<br/><code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
 |-
 |<( |3 30%>''If'' the return value is __a pointer or NULL__
 |''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
@@ -427,16 +417,20 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_GetCurrentVideoDriver]]()
 |-
 |<( |2 30%>''If'' there is __no return value for failure__ (rare)
-|''Action'': Omit that part of the statement.
+|''Action'': Omit that part of the statement and omit the call to SDL_GetError().
 |-
 |''Example'': [[SDL_GetAudioDeviceStatus]]()
+|-
+|<( |2 30%>''If'' there are __more than 2__ possible return values
+|''Action'': Add any additional values following the applicable rules above.  Keep the primary success and primary failure values first and last, respectively, or place them in some other logical order (such as numerical).
+|-
+|''Example'': [[SDL_HapticOpened]]()
 |}
-
 
 
 {|
 |
-|<bgcolor="#EDEDED">''Options by other criteria''
+|<bgcolor="#EDEDED">''Replacements by other criteria''
 |-
 |<( |4 30%>''If'' __a parameter__ on that page is referenced in the return value
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
