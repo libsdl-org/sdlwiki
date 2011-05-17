@@ -29,7 +29,7 @@ int SDL_LockTexture(SDL_Texture*    texture,
 |}
 
 == Return Value ==
-Returns 0 on success, or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STATIC; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STATIC; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
