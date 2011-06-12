@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_QuitRequested =
-Use this function to see whether an SLD_QUIT event is queued.
+Use this function to see whether an SDL_QUIT event is queued.
 
 
 == Syntax ==
@@ -11,7 +11,7 @@ SDL_bool SDL_QuitRequested(void)
 ```
 
 == Return Value ==
-Returns SDL_TRUE if it is queued or SDL_FALSE otherwise.
+Returns SDL_TRUE if SDL_QUIT is queued or SDL_FALSE otherwise.
 
 == Code Examples ==
 ```c++
