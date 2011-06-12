@@ -22,7 +22,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_Quit]]
+:[[SDL_PollEvent]]
+:[[SDL_WaitEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
