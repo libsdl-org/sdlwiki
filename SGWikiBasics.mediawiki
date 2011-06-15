@@ -424,7 +424,7 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 <span id="anchors"></span>
 ==== Anchors ====
 ''Markup'': ```<span id="anchorname"></span>```
-* Place the above markup in the location where you wish to create an anchor, replacing ```anchorname``` with a word (or phrase) that has meaning in that application.
+* Place the above markup in the location where you wish to create an anchor, replacing ```anchorname``` with a word (or phrase) of your choosing that has meaning in that application.  Short but clear names are usually best. 
 * Anchors will not appear on the saved page or take space on the page but can be referenced in [[#hyperlinks|hyperlinks]].
 ''Example'': ```<span id="hyperlinks"></span>``` creates an anchor called hyperlinks that could be located at the beginning of a section related to hyperlinks.
 
@@ -433,6 +433,8 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 ''Note'': It is best to place your anchor on the line ''above'' the beginning of the section you are marking with the anchor.  This is because the next line after the anchor will be aligned with the top of the viewing window when it is used.  If the anchor is below something like a heading the heading will be off screen when the anchor is used.  The exception to this is if the anchor is very close to the bottom of the page, in which case it will be moved as close to the top of the screen as possible.
 
 More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking] and [http://wiki.libsdl.org/moin.cgi/HelpOnMacros HelpOnMacros].
+
+<!-- #Note:  Anchors can be used in tables but must follow any table formatting markup in order to not disturb the table format.  Also, the anchor jump point will align with the parsed formatting so put it at the highest point in a section if you wish the whole section to appear on the screen when the anchor is used. See http://wiki.libsdl.org/moin.cgi/SGFunctions#Function_Parameters 2nd and 3rd ''If''s for an example.   -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
