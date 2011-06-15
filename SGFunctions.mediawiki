@@ -423,15 +423,19 @@ Use the following tables to determine what to replace <code><something></code> a
 |-
 |''Example'': [[SDL_GetCurrentVideoDriver]]()
 |-
-|<( |2 30%>''If'' there is __no return value for failure__ (rare)
-|''Action'': Omit that part of the statement and omit the call to SDL_GetError().
-|-
-|''Example'': [[SDL_GetAudioDeviceStatus]]()
-|-
 |<( |2 30%>''If'' there are __more than 2__ possible return values
 |''Action'': Add any additional values following the applicable rules above.  Keep the primary success and primary failure values first and last, respectively, or place them in some other logical order (such as numerical).
 |-
 |''Example'': [[SDL_HapticOpened]]()
+|-
+|<( |4 30%>''If'' the function __does not have a failure state__
+|''Note'': It is ''very rare'' for a function to be unable to fail.  This option covers those rare cases only.
+|-
+|''Action 1'': ''If'' the function only has 1 return value state:<br/>Omit the second part of the statement and omit the call to SDL_GetError().
+|-
+|''Action 2'': ''If'' the function has 2 return values but they don't represent success and failure:<br/>Use <code>Returns <something></code> <code><in this case> or</code> <code><something else> otherwise.</code><br/>and omit the call to SDL_GetError().
+|-
+|''Example'': only 1 return state [[SDL_GetAudioDeviceStatus]](); alternate return state [[SDL_QuitRequested]]()
 |}
 
 
