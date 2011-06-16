@@ -367,11 +367,11 @@ Returns <something> on success or <something else> on failure; call [[SDL_GetErr
 ```
 
 Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with in the standard statement above, and to determine whether some other action is required.
-* For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>).
-: ''Example'': If the second column says
-: ''Action'':<br/><code>0</code><br/><code>a negative error code</code>
-: then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>.
-* For __complex replacements or other actions__ ''Action'' and/or a ''Note'' will detail what to do instead or as well.
+<!-- # * For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>). -->
+<!-- # . ''Example'': If the second column says -->
+<!-- #  . ''Action'':<br/><code>0</code><br/><code>a negative error code</code> -->
+<!-- # . then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>. -->
+<!-- # * For __complex replacements or other actions__ ''Action'' and/or a ''Note'' will detail what to do instead or as well. -->
 * Please check both tables.
 
 {|
@@ -384,10 +384,10 @@ Use the following tables to determine what to replace <code><something></code> a
 |<( |2 30%>''If'' the return value is __an int other than above or a float__
 |''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
 |-
-|''Example'': Returns 1 on success or 0 on failure.
+|''Example'': <code>Returns 1</code> <code>on success</code> <code>or 0 on</code> <code>failure;</code> <code>call</code> <code>[[SDL_GetError]]()</code> <code>for more</code> <code>information.</code>
 |-
 |<( 30%>''If'' the return value is __SDL_bool__
-|''Action'':<code>Returns SDL_TRUE</code> <code>on success</code> <code>or SDL_FALSE</code> on failure;<code> </code>call [[SDL_GetError]]()<code> </code>for more information.`
+|''Action'': Use <code>Returns</code> <code>SDL_TRUE</code> <code>on success</code> <code>or</code> <code>SDL_FALSE</code> <code>on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for more information.</code>
 |-
 |<( |3 30%>''If'' the return value is __a pointer or NULL__
 |''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
