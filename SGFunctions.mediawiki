@@ -159,24 +159,21 @@ The Function Parameters section provides basic information about each parameter 
 
 ''<<Color2(red,Important!)>>''
 {|
-|<( |2 30%>''If'' the parameter is __void__
+|<( |2 30%>''If'' the only parameter is __void__
 |''Action'': Delete the entire Function Parameters section, including the header.
 |-
 |''Example'': [[SDL_AllocRW]]()
-|-
-|<30%>''If'' the function __has parameters__
-|''Action'': See the remainder of this section for details.
 |}
 
-''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
-
-The basic format is as follows:
+Otherwise, function parameters follow this basic format: 
 
 ```
 ||'''parameter1'''||description||
 ||'''parameter2'''||description||
 ||'''parameterN'''||description||
 ```
+
+''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
 
 * The __first column__ contains all of the parameter names, without types or pointers, in bold.
 * The __second column__ contains a simple description of each parameter using some specific formatting conventions.
@@ -296,14 +293,14 @@ The basic format is as follows:
 |<( |4 30%>''If'' the parameter is __SDL_Rect* rect(s)__
 |''Action 1 - '''rect''''': Most often this description begins with <code>the/an</code> ```[[SDL_Rect]]``` <code>structure</code> <code>representing the rectangle to</code>, followed by what the rectangle is for (ie: fill, draw, intersect, etc).
 |-
-|''Action 2 - '''rects''''': When the parameter is plural it refers to an array and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangle is for.
+|''Action 2 - '''rects''''': When the parameter is plural it refers to an array of rectangles and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangles are for.
 |-
 |''Example'': [[SDL_FillRect]](), [[SDL_RenderDrawRect]](), [[SDL_IntersectRectAndLine]](), [[SDL_RenderDrawRects]]()
 |-
 |''Note'': Of course there are some other phrases to describe these parameters.  A text search for "SDL_Rect* rect" should provide you with plenty of other examples of both the singular and plural parameters.
 |-
 |<( |3 30%>''If'' the parameter is __SDL_Renderer* renderer__
-|''Action 1'': A rare exception, this description is __always__ <code>the rendering context</code> (at least so far).
+|''Action 1'': A rare exception (at least so far), this description is __always__ <code>the rendering context</code>.
 |-
 |''<<Color2(red,Important!)>>'' Please use this description for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
 |-
@@ -353,8 +350,9 @@ The basic format is as follows:
 === Return Value ===
 The Return Value section provides basic information about what, if anything, a function will return upon success or failure.  
 
+''<<Color2(red,Important!)>>''
 {|
-|<( |3 30%>''<<Color2(red,Important!)>>''<br/>''If'' the return value is __void__
+|<( |3 30%>''If'' the return value is __void__
 |''Note'': This is '''not''' the same as __void*__!  See table below for void* return values.
 |-
 |''Action'': Delete the entire Return Value section, including the header.
@@ -381,7 +379,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |<bgcolor="#EDEDED">''Replacements by type''
 |-
 |<( 30%>''If'' the return value is __an int (0 or <0)__
-|''Action'':<br/><code>0</code><br/><code>a negative error code</code>
+|''Action'': Use <code>Returns 0</code> <code>on success or</code> <code>a negative error</code> <code>code on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for more information.</code>
 |-
 |<( |2 30%>''If'' the return value is __an int other than above or a float__
 |''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
@@ -389,7 +387,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': Returns 1 on success or 0 on failure.
 |-
 |<( 30%>''If'' the return value is __SDL_bool__
-|''Action'':<br/><code>SDL_TRUE</code><br/><code>SDL_FALSE</code>
+|''Action'':<code>Returns SDL_TRUE</code> <code>on success</code> <code>or SDL_FALSE</code> on failure;<code> </code>call [[SDL_GetError]]()<code> </code>for more information.`
 |-
 |<( |3 30%>''If'' the return value is __a pointer or NULL__
 |''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
