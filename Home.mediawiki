@@ -44,4 +44,6 @@ Use the links under the '''Navigation Links''' heading in the left-hand menu to 
 
 We hope you find everything you are looking for and enjoy using SDL.  If anything is not addressed somewhere here feel free to take advantage of the Feedback form in the upper right or send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
+<!-- #''Please note that the Feedback form is __not__ for SDL technical support.  Please direct technical questions about SDL to the appropriate [http://forums.libsdl.org/ Forum] or to one of the [http://www.libsdl.org/mailing-list.php Mailing Lists].'' -->
+
 ~+Enjoy!+~
