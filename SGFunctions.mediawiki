@@ -425,7 +425,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |<( |2 30%>''If'' there are __more than 2__ possible return values
 |''Action'': Add any additional values following the applicable rules above.  Keep the primary success and primary failure values first and last, respectively, or place them in some other logical order (such as numerical).
 |-
-|''Example'': [[SDL_HapticOpened]]()
+|''Example'': [[SDL_HapticOpened]](), [[SDL_OpenAudio]]()
 |-
 |<( |4 30%>''If'' the function __does not have a failure state__
 |''Note'': It is ''very rare'' for a function to be unable to fail.  This option covers those rare cases only.
