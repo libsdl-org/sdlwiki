@@ -20,7 +20,7 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
 == Return Value ==
 ^Returns the semaphore or NULL if there was an error^; call [[SDL_GetError]]() for more information.
 
-*<br/>Returns a pointer to an initialized semaphore or NULL if there was an error.<br/>*
+*<br/>Returns a pointer to an initialized semaphore or NULL if there was an error<br/>*<br/>; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 *
