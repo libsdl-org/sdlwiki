@@ -54,8 +54,66 @@ An enumeration of window events.
 |}
 
 == Code Examples ==
+<<Include(<SDL_WindowEvent>, , , from="##Example1 Start", to="##End")>>
+
 ```c++
-You can add your code example here
+#include "SDL.h"
+
+int main(int, char**)  {
+  int width = 640;
+  int height = 480;
+  
+  if (SDL_Init(SDL_INIT_VIDEO) != 0)  {
+    return 1;
+  }
+  atexit(SDL_Quit);
+  
+  SDL_Window* window = SDL_CreateWindow(
+    "Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
+    width, height, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE
+  );
+  Uint32 windowID = SDL_GetWindowFromID(window);
+  
+  while (true)  {
+    SDL_Event event;
+    while (SDL_PollEvent(&event))  {
+      switch (event.type)  {
+        
+        case SDL_WINDOWEVENT:  {
+          if (event.window.windowID == windowID)  {
+            switch (event.window.event)  {
+              
+              case SDL_WINDOWEVENT_SIZE_CHANGED:  {
+                width = event.window.data1;
+                height = event.window.data2;
+                break;
+              }
+              
+              case SDL_WINDOWEVENT_CLOSE:  {
+                event.type = SDL_QUIT;
+                SDL_PushEvent(&event);
+                break;
+              }
+              
+            }
+          }
+          break;
+        }
+        
+        case SDL_QUIT:  {
+          return 0;
+        }
+        
+        /* ... */
+        
+      }
+    }
+    
+    /* ... */
+    
+    SDL_Sleep(1);
+  }
+}
 ```
 
 == Remarks ==
