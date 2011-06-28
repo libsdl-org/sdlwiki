@@ -29,6 +29,7 @@ A structure that contains window state change event data.
 |}
 
 == Code Examples ==
+<!-- #Example1 Start -->
 ```c++
 void PrintEvent(const SDL_Event * event)
 {
@@ -88,6 +89,7 @@ void PrintEvent(const SDL_Event * event)
     }
 }
 ```
+<!-- #End Example1 -->
 
 == Remarks ==
 [[SDL_WindowEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_WINDOWEVENT is reported.  You would access it through the event's <code>window</code> field.
