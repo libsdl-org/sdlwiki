@@ -24,7 +24,7 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 <<Color2(green,Is '''mem''' an exception to the 'pointer rule'?)>>
 
 == Return Value ==
-*<br/>Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. <br/>*
+*<br/>Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. <br/>*<br/>; call [[SDL_GetError]]() for more information.???
 
 == Code Examples ==
 *
