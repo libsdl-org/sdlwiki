@@ -18,7 +18,7 @@ const char* SDL_JoystickName(int device_index)
 |}
 
 == Return Value ==
-Returns the name of the selected joystick.  If no name can be found, this function returns NULL.
+Returns the name of the selected joystick.  If no name can be found, this function returns NULL; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 *
