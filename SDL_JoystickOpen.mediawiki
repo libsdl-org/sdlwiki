@@ -18,7 +18,7 @@ SDL_Joystick* SDL_JoystickOpen(int device_index)
 |}
 
 == Return Value ==
-Returns a joystick identifier or NULL if an error occurred.
+Returns a joystick identifier or NULL if an error occurred; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
