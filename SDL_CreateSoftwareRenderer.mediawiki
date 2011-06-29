@@ -17,7 +17,7 @@ SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface* surface)
 |}
 
 == Return Value ==
-Returns a valid rendering context or NULL if there was an error.
+Returns a valid rendering context or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
