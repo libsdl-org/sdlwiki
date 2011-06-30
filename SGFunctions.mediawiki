@@ -527,7 +527,7 @@ This list __should not__ include:
 
 ''Note'': In most cases a Related Function reference should be reciprocal - if you include function B on the page for function A then function A should be included on the page for function B.
 
-''Markup'': Each function name should follow a single blank space and a period and should be enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
+''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
 : ''Note'': Do not include empty parentheses after the function names in this section.  They are all functions so it should be understood/unnecessary.
 
 : The basic format for the Related Functions list is:
@@ -546,7 +546,7 @@ This list __should not__ include:
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |}
 
-''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are important related structures or enumerations they are to be included in the body of the page as links (usually in the Remarks section).  If you feel it is critical that a distinct section for one of these groups be included on a specific function page please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
+''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are important related structures or enumerations they are to be included in the body of the page as links (usually in the Function Parameters or Remarks section).  If you feel it is critical that a distinct section for one of these groups be included on a specific function page please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
 
 <!-- #''Note'': You may find more broadly related functions listed by category via the Category links in the [[#footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(still to be created)'')>>. -->
 
