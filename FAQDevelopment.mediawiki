@@ -52,21 +52,6 @@ If you want hardware acceleration on Windows, make sure SDL is built with Direct
 
 An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
 
-== There's no performance difference between using SDL hardware surfaces and software surfaces! ==
-You are probably not getting hardware surfaces. Check to see if the surfaces you are creating actually have the SDL_HWSURFACE flag set the surface flags after they are created. Note that most of the time you need to run your program in fullscreen mode to get hardware surfaces.
-
-An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
-
-== I'm using hardware surfaces, and performance is very bad! ==
-Try using software surfaces. It's counter-intuitive, but if you're directly accessing the pixels on a surface or the screen, it's actually faster to do all your work in system memory and then send the final result to the screen than it is to push individual pixels over the system bus to the video card. This is especially important when doing alpha blending because very few drivers expose 2D alpha blending in hardware. This means that the alpha blending is performing a read operation on the destination surface, and reading from video memory is especially slow on modern graphics hardware.
-If this is a serious problem for you, and you know your target audience has 3D hardware, you might consider using SDL with OpenGL for 3D acceleration.
-
-An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
-
-== I'm using hardware surfaces and I get very bad flicker! ==
-When you pass SDL_HWSURFACE to SDL_SetVideoMode(), SDL will try to give you direct access to the video framebuffer. If this succeeds, you're writing directly to visible video memory, and this usually results in flickering. You probably want to use SDL_SWSURFACE and then update dirty rectangles with SDL_UpdateRects(), or SDL_DOUBLEBUF and then update the entire screen with SDL_Flip() which will try to synchronize the update with the vertical retrace.
-
-An excellent article by Bob Pendleton covering SDL hardware surfaces is available at the O'Reilly Network
 
 == I'm using SDL_DOUBLEBUF and I still get tearing. ==
 If you are in windowed mode, you need to run in fullscreen mode. If you are in fullscreen mode, the system drivers probably do not support synchronizing with the vertical retrace. If you are using OpenGL with the NVidia drivers, you can enable retrace synchronized flipping using an external control panel or environment variable.
