@@ -725,8 +725,14 @@ Some other wiki help that might be of interest or helpful to find quickly:
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
+<!-- #This section is for Sheena's use only -- -->
+<!-- #Markup for pages that need to be deleted by Sam: -->
+<!-- #||<: tablewidth="100%"><<Color2(purple,THIS FUNCTION HAS BEEN REMOVED FROM THE API.)>><br/><<Color2(purple,THIS PAGE WILL BE DELETED.)>>|| -->
+<!-- #Markup for draft pages: -->
+<!-- #'''DRAFT''' -->
 
-<!-- #This is a test of the hidden comment system.  This is only a test.  An include begins here.  It is used on all other SG pages.  Please note that any change between this note and the next will be reflected on every SG page as well.  Consider edits carefully. -->
+
+<!-- #An include begins here.  It is used on all other SG pages.  Please note that any change between this note and the next will be reflected on every SG page as well.  Consider edits carefully. -->
 ----
 == Resources ==
 
