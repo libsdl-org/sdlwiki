@@ -1,5 +1,9 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
+
+{|
+|<: tablewidth="100%"><<Color2(purple,THIS FUNCTION HAS BEEN REMOVED FROM THE API.)>><br/><<Color2(purple,THIS PAGE WILL BE DELETED.)>>
+|}
 
 = SDL_DirtyTexture =
 Use this function to mark the specified rectangles of the texture as dirty.
