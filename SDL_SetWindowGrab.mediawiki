@@ -8,7 +8,7 @@ Use this function to set a window's input grab mode.
 == Syntax ==
 ```c++
 void SDL_SetWindowGrab(SDL_Window* window,
-                       SDL_bool    mode)
+                       SDL_bool    grabbed)
 ```
 
 == Function Parameters ==
@@ -16,7 +16,7 @@ void SDL_SetWindowGrab(SDL_Window* window,
 |'''window'''
 |the window to change
 |-
-|'''mode'''
+|'''grabbed'''
 |SDL_TRUE to grab input, SDL_FALSE to release input
 |}
 
