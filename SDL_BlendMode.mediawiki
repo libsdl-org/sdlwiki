@@ -42,3 +42,5 @@ You can add your code example here
 
 ----
 [[CategoryEnum]], [[CategoryVideo]]
+
+<!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->
