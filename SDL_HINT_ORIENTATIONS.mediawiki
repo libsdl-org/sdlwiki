@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HINT_ORIENTATIONS =
-A hint that specifies a variable controlling which orientations are allowed on iOS
+A hint that specifies a variable controlling which orientations are allowed on iOS.
 
 
 == Values ==
