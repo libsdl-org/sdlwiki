@@ -40,3 +40,5 @@ The '''info''' structure must be initialized with the SDL version, and is then f
 
 ----
 [[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
+
+<!-- #Actually from SDL_syswm.h header but listed in both categories for the wiki. -->
