@@ -103,3 +103,5 @@ void PrintEvent(const SDL_Event * event)
 
 ----
 [[CategoryStruct]], [[CategoryEvents]], [[CategoryVideo]]
+
+<!-- #Actually from the SDL_events.h header but listed in both categories for the wiki. -->
