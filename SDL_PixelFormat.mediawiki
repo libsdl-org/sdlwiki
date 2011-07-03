@@ -40,45 +40,45 @@ A structure that contains pixel format information.
 |'''Amask'''
 |a mask representing the location of the alpha component of the pixel or 0 if the pixel format doesn't have any alpha information
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Rloss'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Rloss'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Gloss'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Gloss'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Bloss'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Bloss'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Aloss'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Aloss'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Rshift'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Rshift'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Gshift'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Gshift'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Bshift'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Bshift'''
+|(internal use)
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''Ashift'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">Uint8
+|'''Ashift'''
+|(internal use)
 |-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''refcount'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">int
+|'''refcount'''
+|(internal use)
 |-
-|<style="color: #808080;">SDL_PixelFormat*
-|<style="color: #808080;">'''next'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">[[SDL_PixelFormat]]*
+|'''next'''
+|(internal use)
 |}
 
 == Code Examples ==
