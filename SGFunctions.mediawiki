@@ -241,11 +241,11 @@ Otherwise, function parameters follow this basic format:
 |''Note'': ''If'' the description mentions an __enumeration__ it is not necessary to describe it as an enumeration as above for structures, but do hyperlink if there is a page.
 |-
 |<( |2 30%>''If'' the parameter is __for internal use, deprecated, or read-only__
-|''Action'': Include the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowbgcolor="#808080">```
+|''Action'': Include the following, verbatim, in each cell of the row between the starting table/cell markup and the text:<br/>```<style="color: #808080;">```
 |-
 |''Example'': ```
-|<rowbgcolor="#808080">'''param'''
-|description
+|<style="color: #808080;">'''param'''
+|<style="color: #808080;">description
 |```
 |-
 |<( |4 30%>''If'' __a parameter references another parameter__ on that same page
