@@ -240,13 +240,15 @@ Otherwise, function parameters follow this basic format:
 |-
 |''Note'': ''If'' the description mentions an __enumeration__ it is not necessary to describe it as an enumeration as above for structures, but do hyperlink if there is a page.
 |-
-|<( |2 30%>''If'' the parameter is __for internal use, deprecated, or read-only__
-|''Action'': Include the following, verbatim, in each cell of the row between the starting table/cell markup and the text:<br/>```<style="color: #808080;">```
+|<( |3 30%>''If'' the parameter is __for internal use, deprecated, or read-only__
+|''Action'': Include the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
 |-
 |''Example'': ```
-|<style="color: #808080;">'''param'''
-|<style="color: #808080;">description
+|<rowstyle="color: #808080;">'''param'''
+|description
 |```
+|-
+|''Note'': Although a rare case, any other table style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
 |-
 |<( |4 30%>''If'' __a parameter references another parameter__ on that same page
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
