@@ -565,18 +565,19 @@ The Footer section consists of a horizontal rule followed by two links separated
 ----
 [[CategoryAPI]], [[CategoryHeader]]
 ```
-: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
+: where ```CategoryAPI``` is the same for every function page and {{{CategoryHeader}}} is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
 
-<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following table for the correct name to use so the function will appear in the correct list(s).
+<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the function will appear in the correct list(s).
 
-''Action 1'': Do not edit the <code>CategoryAPI</code> link!  
+''Action 1'': Do not edit the ```CategoryAPI``` link!  
 
-''Action 2'': The <code>CategoryHeader</code> link may be edited ''if'' the page still says ```[[CategoryHeader]]``` (as on a new page) or ''if'' the function has been relocated to another header (very rare).
+''Action 2'': The ```CategoryHeader``` link may be edited ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
 
 ''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please contact us using the Feedback form or by email at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
 ''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use  if you are unsure or if the category appears to be missing.
 
+<span id="CategoryTable"></span>
 {|
 |<rowbgcolor="#EDEDED">''Header File Containing the Function*''
 |''Corresponding Category Name''
