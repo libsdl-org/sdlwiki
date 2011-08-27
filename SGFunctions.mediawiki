@@ -561,9 +561,10 @@ This list __should not__ include:
 
 The Footer section consists of a horizontal rule followed by two links separated by a comma.  
 
-''Markup'': ```
+''Markup'': 
+```
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[Category API]], [[CategoryHeader]]
 ```
 : where <code>Categor</code><code>yAPI</code> is the same for every function page and <code>Categor</code><code>yHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
 
