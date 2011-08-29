@@ -59,61 +59,24 @@ You can add your code example here
 
 <<Color2(green,Should this be an include from [[SDL_AudioFormat]] instead?)>>
 '''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^Audio format flags may be one of the following values:^
-{|
-|
-|''Default,,s,, to LSB byte order'' -or- ''Basic'' ???
-|-
-|AUDIO_U8
-|unsigned 8-bit samples.
-|-
-|AUDIO_S8
-|signed 8-bit samples.
-|-
-|AUDIO_U16 or AUDIO_U16LSB
-|not supported by all hardware (unsigned 16-bit little-endian)
-|-
-|AUDIO_S16 or AUDIO_S16LSB
-|not supported by all hardware (signed 16-bit little-endian)
-|-
-|AUDIO_U16MSB
-|not supported by all hardware (unsigned 16-bit big-endian)
-|-
-|AUDIO_S16MSB
-|not supported by all hardware (signed 16-bit big-endian)
-|-
-|
-|''int32 support''
-|-
-|AUDIO_S32 or AUDIO_S32LSB
-|32-bit integer samples
-|-
-|AUDIO_S32MSB
-|as above, but big-endian byte order
-|-
-|
-|''float32 support''
-|-
-|AUDIO_F32 or AUDIO_F32LSB
-|32-bit floating point samples
-|-
-|AUDIO_F32MSB
-|as above, but big-endian byte order
-|-
-|
-|''Native audio byte ordering''
-|-
-|AUDIO_U16SYS
-|either AUDIO_U16LSB or AUDIO_U16MSB depending on hardware CPU endianness
-|-
-|AUDIO_S16SYS
-|either AUDIO_S16LSB or AUDIO_S16MSB depending on hardware CPU endianness
-|-
-|AUDIO_S32SYS
-|either AUDIO_S32LSB or AUDIO_S32MSB depending on hardware CPU endianness
-|-
-|AUDIO_F32SYS
-|either AUDIO_F32LSB or AUDIO_F32MSB depending on hardware CPU endianness
-|}
+ ||||''Default,,s,, to LSB byte order'' -or- ''Basic'' ???||
+ ||AUDIO_U8||unsigned 8-bit samples.||
+ ||AUDIO_S8||signed 8-bit samples.||
+ ||AUDIO_U16 or AUDIO_U16LSB||not supported by all hardware (unsigned 16-bit little-endian)||
+ ||AUDIO_S16 or AUDIO_S16LSB||not supported by all hardware (signed 16-bit little-endian)||
+ ||AUDIO_U16MSB||not supported by all hardware (unsigned 16-bit big-endian)||
+ ||AUDIO_S16MSB||not supported by all hardware (signed 16-bit big-endian)||
+ ||||''int32 support''||
+ ||AUDIO_S32 or AUDIO_S32LSB||32-bit integer samples||
+ ||AUDIO_S32MSB||as above, but big-endian byte order||
+ ||||''float32 support''||
+ ||AUDIO_F32 or AUDIO_F32LSB||32-bit floating point samples||
+ ||AUDIO_F32MSB||as above, but big-endian byte order||
+ ||||''Native audio byte ordering''||
+ ||AUDIO_U16SYS||either AUDIO_U16LSB or AUDIO_U16MSB depending on hardware CPU endianness||
+ ||AUDIO_S16SYS||either AUDIO_S16LSB or AUDIO_S16MSB depending on hardware CPU endianness||
+ ||AUDIO_S32SYS||either AUDIO_S32LSB or AUDIO_S32MSB depending on hardware CPU endianness||
+ ||AUDIO_F32SYS||either AUDIO_F32LSB or AUDIO_F32MSB depending on hardware CPU endianness||
 
 
 <<Color2(green,This list was taken from the header.  A portion was listed in the old wiki as well.  Is it correct that audio change flags and audio flags (as opposed to the above audio format flags) should not be included here?)>>
@@ -127,17 +90,12 @@ The ,,calculated,, values '''silence''' and '''size''' are calculated by [[SDL_O
 
 Stereo samples are stored in a LRLRLR ordering.
 
-<<Color2(green,No page for SDL_Audio<code></code>Callback right? Is this sufficient?)>>
-<span id="callback"></span> '''callback''' is of the form:
-```c++
-##alt 1st line from header rev 5387?
-typedef void (SDLCALL * SDL_AudioCallback)(void*  userdata,
-##w/ wiki formatting adjustments?
-void* SDL_AudioCallback(void*  userdata,
-##original content below 
-void callback(void*  userdata, 
-              Uint8* stream, 
-              int    len);
+<span id="callback"></span>
+'''callback''' is of the form:
+ ```
+void SDL_AudioCallback(void*  userdata,
+                       Uint8* stream,
+                       int    len)
 ```
  ^with the following parameters:^
  ||'''userdata'''||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
