@@ -33,4 +33,4 @@ You can add your code example here
 :[[SDL_UpdateTexture]]
 
 ----
-[[CategoryStruct]], Category<code></code>Render
+Category<code></code>Struct, Category<code></code>Render
