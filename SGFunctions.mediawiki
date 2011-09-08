@@ -178,7 +178,7 @@ Otherwise, function parameters follow this basic format:
 
 * The __first column__ contains the parameter names, without types or pointers, in bold.
 * The __second column__ contains a simple description of each parameter using some specific formatting conventions.
-: ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally not complete sentences.
+: ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
 
 ''Example'': [[SDL_SetColorKey]]()
@@ -294,9 +294,9 @@ Otherwise, function parameters follow this basic format:
 |''Note'': Of course other phrases to describe this parameter may become necessary.  A text search for "SDL_Palette* palette" should provide you with other descriptions if they arise.
 |-
 |<( |4 30%>''If'' the parameter is __SDL_Rect* rect(s)__
-|''Action 1 - '''rect''''': Most often this description begins with <code>the/an</code> ```[[SDL_Rect]]``` <code>structure</code> <code>representing the rectangle to</code>, followed by what the rectangle is for (ie: fill, draw, intersect, etc).
+|''Action 1 - __rect__'': Most often this description begins with <code>the/an</code> ```[[SDL_Rect]]``` <code>structure</code> <code>representing the rectangle to</code>, followed by what the rectangle is for (ie: fill, draw, intersect, etc).
 |-
-|''Action 2 - '''rects''''': When the parameter is plural it refers to an array of rectangles and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangles are for.
+|''Action 2 - __rects__'': When the parameter is plural it refers to an array of rectangles and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangles are for.
 |-
 |''Example'': [[SDL_FillRect]](), [[SDL_RenderDrawRect]](), [[SDL_IntersectRectAndLine]](), [[SDL_RenderDrawRects]]()
 |-
@@ -393,11 +393,11 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Action'': Use <code>Returns</code> <code>SDL_TRUE</code> <code>on success</code> <code>or</code> <code>SDL_FALSE</code> <code>on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for</code> <code>more</code> <code>information.</code>
 |-
 |<( |3 30%>''If'' the return value is __a pointer or NULL__
-|''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
+|<span id="null*"></span>''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
 |-
 |''Note'': See "''If'' the return value type is __a structure__" below for more details.
 |-
-|''Example'': [[SDL_SetVideoMode]]()
+|''Example'': [[SDL_HapticOpen]](), [[SDL_GetRenderer]]()
 |-
 |<( |3 30%>''If'' the return value type is __a structure__
 |''Action'': The general format will approximate: <code>Returns an/the</code> ```[[SDL_StructureName]]``` <code>representing</code> <code><what it represents></code>, for success.  The failure statement will depend upon what is returned on failure, if anything.  See other ''If''s for options.
@@ -407,9 +407,9 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_CreateRGBSurfaceFrom]]()
 |-
 |<( |3 30%>''If'' the return value is __void*__
-|''Action'':See "''If'' the return value is a pointer or NULL" above.
+|''Action'':See "''If'' the return value is __[[#null*|a pointer or NULL]]__" above.
 |-
-|''Note'': In some cases it will be appropriate to mention the pointer.  Ideally, look at other similar functions for guidance.
+|''Note'': In most cases it ''will'' be appropriate to mention the pointer for void*.  Ideally, look at other similar functions for guidance.
 |-
 |''Example'': [[SDL_LoadFunction]](), [[SDL_SetWindowData]]()
 |-
