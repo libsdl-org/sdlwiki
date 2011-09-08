@@ -4,7 +4,7 @@
 '''DRAFT'''
 
 = Style Guide: Function Pages =
-This guide provides specific instructions for editing or adding your own content to each section of the Function pages in this wiki.
+This guide provides specific instructions for editing or adding your own content to each section of a Function page in this wiki.
 
 
 <span id="ToC"></span>
@@ -45,7 +45,7 @@ For function pages this is the name of the function being described on the page 
 
 ''Example'': Page address ```http://wiki.libsdl.org/moin.cgi/SDL_CreateWindow``` should have matching title {{{SDL_CreateWindow}}} and describe the [[SDL_CreateWindow]]() function.
 
-If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -90,7 +90,7 @@ All function descriptions begin with:
 The Table of Contents consists of the following markup and is generated automatically on the parsed page.
  ```<<TableOfContents()>>```
 
-If you believe a change is necessary please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -117,7 +117,7 @@ returnType* SDL_FunctionName(type1  parameter1,
 ''Markup'': Use spaces as necessary to create the correct alignment.  Within a code box spacing is fixed-width.
 
 ''Note'': __To be omitted__
-* All additional text that may be found in the header or elsewhere, such as extern, SDLCALL, etc.
+* All additional text that may be found in the header or elsewhere, such as <code>extern</code>, <code>SDLCALL</code>, etc.
 * The space between <code>SDL_FunctionName</code> and (.
 * Ending semi-colon (;)
 
@@ -170,12 +170,13 @@ Otherwise, function parameters follow this basic format:
 ```
 ||'''parameter1'''||description||
 ||'''parameter2'''||description||
+...
 ||'''parameterN'''||description||
 ```
 
 ''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
 
-* The __first column__ contains all of the parameter names, without types or pointers, in bold.
+* The __first column__ contains the parameter names, without types or pointers, in bold.
 * The __second column__ contains a simple description of each parameter using some specific formatting conventions.
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally not complete sentences.
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
@@ -189,25 +190,25 @@ Otherwise, function parameters follow this basic format:
 |<( |3 30%>''If'' __more than one statement__ must be included in the description
 |''Action'': Separate them with a semi-colon (;)
 |-
-|''Note'': This should be avoided whenever possible.  See the next ''If'' statement in this table for more information.
+|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" below for more details.
 |-
 |''Example'': [[SDL_PixelFormatEnumToMasks]]()
 |-
 |<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
-|<span id="details"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
+|<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
 |-
 |''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section
 |-
-|''Action 3'': See the next ''If'' in this table
+|''Action 3'': See "''If'' the __[[#large|Remarks section is large]]__" below for more details.
 |-
 |''Example'': [[SDL_CreateWindow]]()
 |-
 |<( |3 30%>''If'' the __Remarks section is large__
-|''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section
+|<span id="large"></span>''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section
 |-
 |''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
 |-
-|''Action 2'': Modify the Remarks link in the parameter description (see ''[[#details|Action 1]]'' in the previous ''If'') to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
+|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
 |-
 |<( |2 30%>''If'' __there is a pointer__ associated with the parameter
 |''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*)
@@ -284,7 +285,7 @@ Otherwise, function parameters follow this basic format:
 |<bgcolor="#EDEDED">''Content-dependent formatting: Specific''
 |-
 |<( |4 30%>''If'' the parameter is __SDL_Palette* palette__
-|''Action 1'': Most often this description begins with <code>the [[SDL_Palette]] structure to</code>, followed by what to do with the palette.
+|''Action 1'': Most often this description begins with <code>the [[SDL_Palette]] structure to</code>, followed by what to do with the palette (ie: free, modify, etc.).
 |-
 |''Action 2'': The most common version is <code>the [[SDL_Palette]] structure to use</code>
 |-
@@ -304,7 +305,7 @@ Otherwise, function parameters follow this basic format:
 |<( |3 30%>''If'' the parameter is __SDL_Renderer* renderer__
 |''Action 1'': A rare exception (at least so far), this description is __always__ <code>the rendering context</code>.
 |-
-|''<<Color2(red,Important!)>>'' Please use this description for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
+|''<<Color2(red,Important!)>>'' Please use <code>the rendering context</code> for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
 |-
 |''Example'': [[SDL_RenderPresent]](), [[SDL_RenderDrawLine]](), [[SDL_CreateTexture]]()
 |-
@@ -320,7 +321,7 @@ Otherwise, function parameters follow this basic format:
 |''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Surface* surface" should provide you with plenty of other examples.
 |-
 |<( |4 30%>''If'' the parameter is __SDL_Texture* texture__
-|''Action 1'': Most often this description begins with <code>the texture to</code>, followed by what is being done (see ''Action 2'').
+|''Action 1'': Most often this description begins with <code>the texture to</code>, followed by what is being done (ie: create, destroy, etc.).
 |-
 |''Action 2'': The most common versions are <code>the texture to update</code> (often used with Set functions) or <code>the texture to query</code> (often used with Get functions).
 |-
@@ -389,12 +390,12 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': <code>Returns 1</code> <code>on success</code> <code>or 0 on</code> <code>failure;</code> <code>call</code> <code>[[SDL_GetError]]()</code> <code>for more</code> <code>information.</code>
 |-
 |<( 30%>''If'' the return value is __SDL_bool__
-|''Action'': Use <code>Returns</code> <code>SDL_TRUE</code> <code>on success</code> <code>or</code> <code>SDL_FALSE</code> <code>on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for more information.</code>
+|''Action'': Use <code>Returns</code> <code>SDL_TRUE</code> <code>on success</code> <code>or</code> <code>SDL_FALSE</code> <code>on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for</code> <code>more</code> <code>information.</code>
 |-
 |<( |3 30%>''If'' the return value is __a pointer or NULL__
 |''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
 |-
-|''Note'': See "''If'' the return value type is a structure" below for more details.
+|''Note'': See "''If'' the return value type is __a structure__" below for more details.
 |-
 |''Example'': [[SDL_SetVideoMode]]()
 |-
