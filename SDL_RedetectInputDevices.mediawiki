@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_RedetectInputDevices =
+Use this function to ^detect input devices after initializing SDL^.
+
+
+== Syntax ==
+```c++
+int SDL_RedetectInputDevices(void)
+```
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  ???
+~-<<Color2(green,Source?)>>-~
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,From header. Belongs here?)>>
+This invalidates all existing device information from previous queries!
+
+There is an implicit (re)detect upon [[SDL_Init]]().
+
+
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryInput]]
