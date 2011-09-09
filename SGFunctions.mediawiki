@@ -501,7 +501,7 @@ This is one of the few sections that is intended to grow and adjust as users dis
 
 For the most part the contents of the Remarks section will be user-generated and this section will remain as-is until users input their comments. 
 
-''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the forums and Feedback form, for these types of remarks.
+''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
 
 Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.
 
@@ -549,7 +549,7 @@ This list __should not__ include:
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |}
 
-''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are important related structures or enumerations they are to be included in the body of the page as links (usually in the Function Parameters or Remarks section).  If you feel it is critical that a distinct section for one of these groups be included on a specific function page please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
+''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are important related structures or enumerations they are to be included in the body of the page as links (usually in the Function Parameters or Remarks section).  If you feel it is critical that a distinct section for one of these groups be included on a specific function page please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
 
 <!-- #''Note'': You may find more broadly related functions listed by category via the Category links in the [[#footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(still to be created)'')>>. -->
 
@@ -575,9 +575,9 @@ The Footer section consists of a horizontal rule followed by two links separated
 
 ''Action 2'': The ```CategoryHeader``` link may be edited ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
 
-''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please contact us using the Feedback form or by email at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
+''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
-''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use  if you are unsure or if the category appears to be missing.
+''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
 
 <span id="CategoryTable"></span>
 {|
@@ -598,8 +598,10 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_clipboard.h
 |CategoryClipboard
+|-
+|SDL_compat.h
+|CategoryCompat
 |}
-<!-- #||SDL_compat.h||CategoryCompat|| -->
 <!-- #||SDL_copying.h|||| -->
 {|
 |SDL_cpuinfo.h
@@ -719,14 +721,13 @@ The Footer section consists of a horizontal rule followed by two links separated
 ----
 == Resources ==
 
-Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
-as possible.
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
 
 If you have questions that aren't addressed here:
  a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
  a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
- a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and ''include a way to contact you''.
- a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List]
+ a. Post a question to ''[http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback]'' and ''include a way to contact you''.
+ a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Documentation Mailing List]
  a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
 
 If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
@@ -734,6 +735,5 @@ If you have suggestions for changes or additions to this document or any other p
 ------
 == Disclaimer ==
 ```#!wiki note
-All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to 
-<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 ```
