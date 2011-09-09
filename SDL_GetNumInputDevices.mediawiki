@@ -1,0 +1,32 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetNumInputDevices =
+Use this function to get the number of mouse input devices available.
+
+
+== Syntax ==
+```c++
+int SDL_GetNumInputDevices(void)
+```
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  ???
+<<Color2(green,Source?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,Does it only look for mice or other input devices as well?)>>
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryInput]]
