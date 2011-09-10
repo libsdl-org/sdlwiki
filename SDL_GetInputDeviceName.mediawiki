@@ -1,0 +1,36 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetInputDeviceName =
+Use this function to get the name of a device with the given index.
+
+
+== Syntax ==
+```c++
+const char* SDL_GetInputDeviceName(int index)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the device ^to query^,, whose name is to be returned,,
+|}
+
+== Return Value ==
+Returns the name of the device with the specified '''index''',,; call [[SDL_GetError]]() for more information,,.
+<<Color2(green,Error state?  Source?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GetNumInputDevices]] ???
+
+----
+[[CategoryAPI]], [[CategoryInput]]
