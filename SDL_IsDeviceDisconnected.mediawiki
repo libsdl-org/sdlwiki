@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_IsDeviceDisconnected =
+Use this function to check whether an input device is disconnected.
+
+
+== Syntax ==
+```c++
+int SDL_IsDeviceDisconnected(int index)
+```
+
+== Function Parameters ==
+{|
+|'''index'''
+|the index of the device to query
+|}
+
+== Return Value ==
+Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_GetError]]() for more information,,.
+
+<<Color2(green,Can't find reference for values. Need source. Error state for this one?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RedetectInputDevices]] ???
+
+----
+[[CategoryAPI]], [[CategoryInput]]
