@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_IsDeviceDisconnected =
-Use this function to check whether an input device is disconnected.
+Use this function to check whether a,,n,, ^specific^ input device is disconnected.
 
 
 == Syntax ==
