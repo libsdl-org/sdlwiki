@@ -1,5 +1,6 @@
 <!-- #master-page:CategoryTemplate -->
 <!-- #master-date:Unknown-Date -->
+<!-- pragma camelcase off -->
 <!-- format wiki -->
 <!-- language en -->
 
