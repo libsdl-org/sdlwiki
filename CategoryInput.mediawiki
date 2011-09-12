@@ -1,0 +1,36 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- pragma camelcase off -->
+<!-- format wiki -->
+<!-- language en -->
+'''DRAFT'''
+
+= Input Device Support =
+
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h]
+
+Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
+
+
+== Introduction ==
+
+This category contains functions for lowlevel SDL input device handling.  
+
+This covers individual devices, not the system cursor. If you just want to know when the user moves the pointer somewhere in your window, this is NOT the API you want. This one handles things like multi-touch, drawing tablets, and multiple, separate mice.
+
+The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h].  See [[CategoryMouse|Mouse Support]] for more.
+
+
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryInput)>> -->
+
+<!-- #== Structures == -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryInput)>> -->
+
+
+== Functions ==
+
+<<FullSearch(category:CategoryInput -CategoryEnum -CategoryStruct)>>
+
+----
+CategoryCategory
