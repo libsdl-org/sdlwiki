@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_LogSetPriority =
+Use this function to set the priority of a particular log category.
+
+
+== Syntax ==
+```c++
+void SDL_LogSetPriority(int             category,
+                        SDL_LogPriority priority)
+```
+
+== Function Parameters ==
+{|
+|'''category'''
+|the category to assign a priority to
+|-
+|'''priority'''
+|the [[SDL_LogPriority]] to assign; see [[#Remarks|Remarks]] for details
+|}
+
+<<Color2(green,'''category''' int values come from a singly-linked list?  Accessed using SDL_LogGetPriority or is there a better/another way?  Should there be a reference here or in Remarks?)>>
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,Should a reference to [[SDL_LOG_CATEGORY]] be included here somewhere?  Associated with the '''category''' param?)>>
+
+'''priority''' may be one of the following ^or NULL ???^:
+<<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
+
+
+== Related Functions ==
+:[[SDL_LogGetPriority]]
+:[[SDL_LogSetAllPriority]]
+
+----
+[[CategoryAPI]], [[CategoryBasics]]
