@@ -25,7 +25,7 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-'''priority''' may be one of the following:
+'''priority''' may be one of the following ^or NULL ???^:
 <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 == Related Functions ==
