@@ -7,6 +7,7 @@ An enumeration of the predefined log priorities.
 
 
 == Values ==
+<!-- #The following content is included on <code>SDL_LogSetAllPriority, SDL_LogSetPriority, SDL_LogMessage, SDL_LogMessageV</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
 {|
 |SDL_LOG_PRIORITY_VERBOSE
 |= 1
@@ -29,6 +30,7 @@ An enumeration of the predefined log priorities.
 |SDL_NUM_LOG_PRIORITIES
 |description
 |}
+<!-- #End Include here. -->
 
 == Code Examples ==
 ```c++
