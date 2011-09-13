@@ -1,0 +1,54 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_LogPriority =
+An enumeration of the predefined log priorities.
+
+
+== Values ==
+{|
+|SDL_LOG_PRIORITY_VERBOSE
+|= 1
+|-
+|SDL_LOG_PRIORITY_DEBUG
+|description
+|-
+|SDL_LOG_PRIORITY_INFO
+|description
+|-
+|SDL_LOG_PRIORITY_WARN
+|description
+|-
+|SDL_LOG_PRIORITY_ERROR
+|description
+|-
+|SDL_LOG_PRIORITY_CRITICAL
+|description
+|-
+|SDL_NUM_LOG_PRIORITIES
+|description
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<<Color2(green,There are comments about several of the values that could be included here.  Ex: WARN is useful for debugging, CRITICAL is default for most log categories, etc. Should they be included here?)>>
+
+<<Color2(green,Does this belong on this page as well?)>>
+By default the SDL_LOG_CATEGORY_APPLICATION category is enabled at the INFO level and all other [[SDL_LOG_CATEGORY]] categories are enabled at the CRITICAL level.
+
+
+== Related Functions ==
+:[[SDL_LogMessage]]
+:[[SDL_LogMessageV]]
+:[[SDL_LogSetAllPriority]]
+:[[SDL_LogSetPriority]]
+
+----
+[[CategoryEnum]], [[CategoryBasics]]
