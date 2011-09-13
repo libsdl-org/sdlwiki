@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-By default the APPLICATION category is enabled at the ^SDL_LOG_PRIORITY_^INFO level, and all other categories are enabled at the ^SDL_LOG_PRIORITY_^CRITICAL level.  See [[SDL_LogPriority]] for details.
+By default the APPLICATION category is enabled at the ^SDL_LOG_PRIORITY_^INFO level and all other categories are enabled at the ^SDL_LOG_PRIORITY_^CRITICAL level.  See [[SDL_LogPriority]] for details.
 
 SDL_LOG_CATEGORY_CUSTOM is reserved for application use; for example:
  ```
