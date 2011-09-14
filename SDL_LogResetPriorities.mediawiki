@@ -1,0 +1,27 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_LogResetPriorities =
+Use this function to reset all priorities to default.
+
+
+== Syntax ==
+```c++
+void SDL_LogResetPriorities(void)
+```
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is called in [[SDL_Quit]]().
+
+== Related Functions ==
+:[[SDL_LogSetAllPriority]]
+:[[SDL_LogSetPriority]]
+
+----
+[[CategoryAPI]], [[CategoryBasics]]
