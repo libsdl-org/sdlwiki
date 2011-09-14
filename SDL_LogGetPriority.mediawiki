@@ -1,0 +1,35 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_LogGetPriority =
+Use this function to get the priority of a particular log category.
+
+
+== Syntax ==
+```c++
+SDL_LogPriority SDL_LogGetPriority(int category)
+```
+
+== Function Parameters ==
+{|
+|'''category'''
+|the category to query ^or SDL_LOG_CATEGORY_APPLICATION ???^
+|}
+
+== Return Value ==
+Returns the [[SDL_LogPriority]] for the requested category, SDL_application_priority if '''category''' is SDL_LOG_CATEGORY_APPLICATION, or SDL_default_priority otherwise,,; call [[SDL_GetError]]() for more information,,.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_LogSetPriority]]
+
+----
+[[CategoryAPI]], [[CategoryBasics]]
