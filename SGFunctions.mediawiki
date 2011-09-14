@@ -275,6 +275,7 @@ Otherwise, function parameters follow this basic format:
 |''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |}
 
+
 ''Note'': It would only rarely be appropriate to use the exact same description of a common parameter every time that parameter appears in the API.  However, the same or very similar description can be used for many occurrences of the same parameter, enhancing consistency across pages.  The following table provides a list of these commonly used descriptions.
 
 ''Action'': When choosing a description phrase for a parameter please check this list to see if any of these common descriptions is applicable, even if a minor modification is required.
@@ -303,7 +304,7 @@ Otherwise, function parameters follow this basic format:
 |''Note'': Of course there are some other phrases to describe these parameters.  A text search for "SDL_Rect* rect" should provide you with plenty of other examples of both the singular and plural parameters.
 |-
 |<( |3 30%>''If'' the parameter is __SDL_Renderer* renderer__
-|''Action 1'': A rare exception (at least so far), this description is __always__ <code>the rendering context</code>.
+|''Action'': A rare exception (at least so far), this description is __always__ <code>the rendering context</code>.
 |-
 |''<<Color2(red,Important!)>>'' Please use <code>the rendering context</code> for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
 |-
@@ -337,7 +338,15 @@ Otherwise, function parameters follow this basic format:
 |''Example'': [[SDL_RestoreWindow]](), [[SDL_SetWindowTitle]](), [[SDL_GetWindowFlags]]()
 |-
 |''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Window* window" should provide you with plenty of examples.
+|-
+|<( |3 30%>''If'' the parameters are __fmt and '''...'''__
+|''Action'': For fmt use <code>a</code> <code>printf()</code> <code>style</code> <code>message</code> <code>format</code> <code>string</code><br/>For '''...''' use <code>additional</code> <code>parameters</code> <code>matching</code> <code>% tokens</code> <code>in</code> <code>the</code> <code>'''fmt'''</code> <code>string,</code> <code>if</code> <code>any</code>.
+|-
+|''Note'': To date this is the only context for the '''...''' parameter.  If your case does not follow this pattern exactly it may be necessary to make some adjustments.  Please keep them as minimal as possible while creating an accurate wiki entry.
+|-
+|''Example'': [[SDL_SetError]](), [[SDL_Log]]()
 |}
+
 
 <!-- #Standardized table block for specific table: -->
 <!-- #||<( |4 30%>''If'' the parameter is ____||''Action 1'': Most often this description begins with <code></code>, followed by what is being done (ie: ).|| -->
