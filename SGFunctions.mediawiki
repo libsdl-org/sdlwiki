@@ -339,7 +339,7 @@ Otherwise, function parameters follow this basic format:
 |-
 |''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Window* window" should provide you with plenty of examples.
 |-
-|<( |3 30%>''If'' the parameters are __fmt and '''...'''__
+|<( |3 30%>''If'' the parameters include __fmt and '''...'''__
 |''Action'': For fmt use <code>a</code> <code>printf()</code> <code>style</code> <code>message</code> <code>format</code> <code>string</code><br/>For '''...''' use <code>additional</code> <code>parameters</code> <code>matching</code> <code>% tokens</code> <code>in</code> <code>the</code> <code>'''fmt'''</code> <code>string,</code> <code>if</code> <code>any</code>.
 |-
 |''Note'': To date this is the only context for the '''...''' parameter.  If your case does not follow this pattern exactly it may be necessary to make some adjustments.  Please keep them as minimal as possible while creating an accurate wiki entry.
