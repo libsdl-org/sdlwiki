@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_LogGetOutputFunction =
+Use this function to get the current log output function.
+
+
+== Syntax ==
+```c++
+void SDL_LogGetOutputFunction(SDL_LogOutputFunction* callback,
+                              void**                 userdata)
+```
+
+== Function Parameters ==
+{|
+|'''callback'''
+|the callback function to get; see [[#Remarks|Remarks]] for details
+|-
+|'''userdata'''
+|a pointer to a pointer that is passed to '''callback'''
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+The function prototype for '''callback''' is:
+ ```
+void* SDL_LogOutputFunction(void*           userdata,
+                            int             category,
+                            SDL_LogPriority priority,
+                            const char*     message)
+```
+ where
+ ||<code>userdata</code>||is passed as '''userdata''' to [[SDL_LogGetOutputFunction]]()||
+ ||<code>category</code>||^the category to query^||
+ ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#Remarks|below]] for details||
+ ||<code>message</code>||^the log output message ???^||
+ and
+ <code>priority</code> may be one of the following ^or NULL ???^:
+ <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
+
+ <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
+
+
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_LogSetOutputFunction]]
+
+----
+[[CategoryAPI]], [[CategoryBasics]]
