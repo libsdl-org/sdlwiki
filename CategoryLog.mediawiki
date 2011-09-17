@@ -1,0 +1,43 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- pragma camelcase off -->
+<!-- format wiki -->
+<!-- language en -->
+'''DRAFT'''
+
+= Log Handling =
+
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_log.h SDL_log.h]
+
+
+== Introduction ==
+
+This category contains functions for handling simple log messages with categories and priorities.
+
+By default logs are quiet, but if you're debugging SDL you might want:
+
+ <code>SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);</code>
+
+Here's where the messages go on different platforms:
+:Windows: debug output stream
+:Android: log output
+:Others: standard error output (stderr)
+ <<Color2(green,Table instead?)>>
+
+Messages longer than the maximum size (4096 ^bits???^) will be truncated.
+
+
+
+== Enumerations ==
+<<FullSearch(category:CategoryEnum CategoryLog)>>
+
+
+<!-- #== Structures == -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryLog)>> -->
+
+
+== Functions ==
+<<FullSearch(category:CategoryLog -CategoryEnum -CategoryStruct)>>
+
+----
+CategoryCategory
