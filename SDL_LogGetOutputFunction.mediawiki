@@ -52,4 +52,4 @@ void* SDL_LogOutputFunction(void*           userdata,
 :[[SDL_LogSetOutputFunction]]
 
 ----
-[[CategoryAPI]], [[CategoryBasics]]
+[[CategoryAPI]], [[CategoryLog]]
