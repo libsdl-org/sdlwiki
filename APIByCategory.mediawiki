@@ -21,12 +21,16 @@
 |[CategoryError|Error Handling]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_error.h SDL_error.h] 
 |-
+|[CategoryLog|Log Handling]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_log.h SDL_log.h] 
+|-
 |[CategoryAssertions|Assertions]]
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_assert.h SDL_assert.h]
 |-
 |[CategoryVersion|Querying SDL Version]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h] 
 |}
+
 
 
 == Video ==
@@ -175,3 +179,14 @@
 |-
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_power.h SDL_power.h] 
+|}
+
+
+== 1.2 Compatibility ==
+
+{|
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|'''View the header'''
+|-
+|[CategoryCompat|SDL 1.2 Compatibility API]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_compat.h SDL_compat.h] 
