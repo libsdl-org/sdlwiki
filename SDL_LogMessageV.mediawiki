@@ -5,6 +5,8 @@
 = SDL_LogMessageV =
 Use this function to log a message with the specified category and priority.
 
+<<Color2(green,Should this description be adjusted to more clearly differentiate this function from [[SDL_LogMessage]]()?)>>
+
 
 == Syntax ==
 ```c++
@@ -53,4 +55,4 @@ You can add your code example here
 :[[SDL_LogWarn]]
 
 ----
-[[CategoryAPI]], [[CategoryBasics]]
+[[CategoryAPI]], [[CategoryLog]]
