@@ -24,4 +24,4 @@ This is called in [[SDL_Quit]]().
 :[[SDL_LogSetPriority]]
 
 ----
-[[CategoryAPI]], [[CategoryBasics]]
+[[CategoryAPI]], [[CategoryLog]]
