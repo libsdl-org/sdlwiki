@@ -53,4 +53,4 @@ By default the SDL_LOG_CATEGORY_APPLICATION category is enabled at the INFO leve
 :[[SDL_LogSetPriority]]
 
 ----
-[[CategoryEnum]], [[CategoryBasics]]
+[[CategoryEnum]], [[CategoryLog]]
