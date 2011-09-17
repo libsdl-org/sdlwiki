@@ -61,4 +61,4 @@ enum {
 :[[SDL_LogMessageV]] ???
 
 ----
-[[CategoryEnum]], [[CategoryBasics]]
+[[CategoryEnum]], [[CategoryLog]]
