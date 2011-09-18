@@ -1,0 +1,104 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+<!-- acl All:read -->
+'''DRAFT'''
+
+= Style Guide: Structure Pages =
+This guide provides specific instructions for editing or adding your own content to each section of a Structure page in this wiki.
+
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+'''Structure pages should provide basic information about the SDL structures to allow users to most effectively utilize them in their projects.'''
+
+Please observe the following for all structure pages:  
+* Do not post anything that you do not have permission to post publicly.
+
+* Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
+
+* Please remember to keep it accurate, simple, and easy to understand.
+
+* Do not remove, modify, or add to the markup (#pragma, etc.) above the page title.
+
+* Do not remove, modify, or add section headings unless specifically mentioned below.
+
+* In general, we prefer that you do not remove or modify existing content unless it is clearly incorrect or out of date.
+
+* Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
+
+For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+== Editing Specific Sections ==
+=== Title ===
+'''''Do not edit the Title.'''''
+
+The Title section consists of the page heading and its markup:
+
+ ```= SDL_StructureName =``` 
+
+For structure pages this is the name of the structure being described on the page and should match the address of the page.
+
+''Example'': Page address ```http://wiki.libsdl.org/moin.cgi/SDL_PixelFormat``` should have matching title {{{= SDL_PixelFormat =}}} and describe the [[SDL_PixelFormat]] structure.
+
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Description ===
+The Description section immediately follows the page title and does not have it's own heading.
+
+Structure descriptions begin with:
+ ```A structure that contains```
+  or very rarely
+ ```A union that contains```
+
+: followed by a ''clear and concise'' description of what the structure (or union) holds.  
+
+<span id="note1"></span>
+''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated structures should be placed in the [[#Remarks|Remarks]] section instead.  
+
+<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the Description if additional information is located there.
+
+''Note'': Exceptions to the basic description are very unusual.  Follow established patterns in the wiki (based on similar pages which may be found by text search) whenever possible if an exception seems appropriate.  
+
+{|
+|<( |2 30%>''If'' __another API page__ is referenced in the description
+|''Action'': As always, be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|-
+|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
+|-
+|<( |3 30%>''If'' __a parameter__ on that page is referenced in the description
+|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|}
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Table of Contents ===
+'''''Do not edit the Table of Contents.'''''
+
+The Table of Contents consists of the following markup and is generated automatically on the parsed page.
+ ```<<TableOfContents()>>```
+
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Syntax ===
+The Syntax section consists of
