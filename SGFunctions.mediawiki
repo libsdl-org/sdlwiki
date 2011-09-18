@@ -43,7 +43,7 @@ The Title section consists of the page heading and its markup:
 
 For function pages this is the name of the function being described on the page and should match the address of the page.
 
-''Example'': Page address ```http://wiki.libsdl.org/moin.cgi/SDL_CreateWindow``` should have matching title {{{SDL_CreateWindow}}} and describe the [[SDL_CreateWindow]]() function.
+''Example'': Page address ```http://wiki.libsdl.org/moin.cgi/SDL_CreateWindow``` should have matching title {{{= SDL_CreateWindow =}}} and describe the [[SDL_CreateWindow]]() function.
 
 If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
@@ -66,7 +66,7 @@ All function descriptions begin with:
 
 {|
 |<( |2 30%>''If'' __another API page__ is referenced in the description
-|''Action'': As always,  be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|''Action'': As always, be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
 |-
