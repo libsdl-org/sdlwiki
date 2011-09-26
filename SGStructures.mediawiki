@@ -12,7 +12,12 @@ This guide provides specific instructions for editing or adding your own content
 == General Guidelines ==
 '''Structure pages should provide basic information about the SDL structures to allow users to most effectively utilize them in their projects.'''
 
-Please observe the following for all structure pages:  
+{|
+|<<Color2(red,''Important note about '''Unions''''')>> <br/> The basic structure template is also used for unions that have pages in the wiki.  For simplicity, the following guidelines for structures will also apply to unions unless a specific difference is noted.
+|}
+
+
+'''Please observe the following for all structure pages''':
 * Do not post anything that you do not have permission to post publicly.
 
 * Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
