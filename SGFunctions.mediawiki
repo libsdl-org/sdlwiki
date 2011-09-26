@@ -12,7 +12,11 @@ This guide provides specific instructions for editing or adding your own content
 == General Guidelines ==
 '''Function pages should provide basic information about the SDL functions to allow users to most effectively utilize them in their projects.'''
 
-Please observe the following for all function pages:  
+{|
+|<<Color2(red,''Important note about '''Macros''''')>><br/>The basic function template is also used for macros that have pages in the wiki.  For simplicity, the following guidelines for functions will also apply to macros unless a specific difference is noted.
+|}
+
+'''Please observe the following for all function pages''':
 * Do not post anything that you do not have permission to post publicly.
 
 * Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
