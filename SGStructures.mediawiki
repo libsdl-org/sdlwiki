@@ -13,7 +13,7 @@ This guide provides specific instructions for editing or adding your own content
 '''Structure pages should provide basic information about the SDL structures to allow users to most effectively utilize them in their projects.'''
 
 {|
-|<<Color2(red,''Important note about '''Unions''''')>> <br/> The basic structure template is also used for unions that have pages in the wiki.  For simplicity, the following guidelines for structures will also apply to unions unless a specific difference is noted.
+|<<Color2(red,Important note about '''Unions''')>> <br/> The basic structure template is also used for unions that have pages in the wiki.  For simplicity, the following guidelines for structures will also apply to unions unless a specific difference is noted.
 |}
 
 
@@ -48,7 +48,7 @@ The Title section consists of the page heading and its markup:
 
 For structure pages this is the name of the structure being described on the page and should match the address of the page.
 
-''Example'': Page address ```http://wiki.libsdl.org/moin.cgi/SDL_PixelFormat``` should have matching title {{{= SDL_PixelFormat =}}} and describe the [[SDL_PixelFormat]] structure.
+''Example'': The page address ```http://wiki.libsdl.org/moin.cgi/SDL_PixelFormat``` should have matching title {{{SDL_PixelFormat}}} and describe the [[SDL_PixelFormat]] structure.
 
 If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
@@ -59,23 +59,27 @@ If you believe a change is necessary please submit ''Feedback'' from that page o
 === Description ===
 The Description section immediately follows the page title and does not have it's own heading.
 
-Structure descriptions begin with:
- ```A structure that contains```
+'''Structure descriptions begin with:
+ ```A structure that contains```'''
   or very rarely
  ```A union that contains```
 
-: followed by a ''clear and concise'' description of what the structure (or union) holds.  
+: followed by a ''clear and concise'' description of what the structure contains.
 
 <span id="note1"></span>
 ''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated structures should be placed in the [[#Remarks|Remarks]] section instead.  
-
-<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the Description if additional information is located there.
+* The Description should not contain a link to the Remarks section even if additional information is located there.
 
 ''Note'': Exceptions to the basic description are very unusual.  Follow established patterns in the wiki (based on similar pages which may be found by text search) whenever possible if an exception seems appropriate.  
 
 {|
+|<( |2 30%>''If'' the page describes __a union__ rather than a structure
+|''Action'': Use the alternate description (<code>A union that contains...</code>) and, if necessary, replace the word <code>structure</code> with the word <code>union</code> where appropriate throughout the page.
+|-
+|''Example'': [[SDL_Event]]
+|-
 |<( |2 30%>''If'' __another API page__ is referenced in the description
-|''Action'': As always, be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
 |-
