@@ -13,10 +13,10 @@ This guide provides specific instructions for editing or adding your own content
 '''Function pages should provide basic information about the SDL functions to allow users to most effectively utilize them in their projects.'''
 
 {|
-|<<Color2(red,''Important note about '''Macros''''')>><br/>The basic function template is also used for macros that have pages in the wiki.  For simplicity, the following guidelines for functions will also apply to macros unless a specific difference is noted.
+|<<Color2(red,Important note about '''Macros''')>><br/>The basic function template is also used for macros that have pages in the wiki.  For simplicity, the following guidelines for functions will also apply to macros unless a specific difference is noted.
 |}
 
-'''Please observe the following for all function pages''':
+'''Please observe the following for all function pages:'''
 * Do not post anything that you do not have permission to post publicly.
 
 * Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
@@ -58,19 +58,27 @@ If you believe a change is necessary please submit ''Feedback'' from that page o
 === Description ===
 The Description section immediately follows the page title and does not have it's own heading.
 
-All function descriptions begin with:
- ```Use this function to```
+'''All function descriptions begin with:
+ ```Use this function to```'''
+  or very rarely
+ ```Use this macro to```
 
 : followed by a ''clear and concise'' description of what the function does.  
 
 <span id="note1"></span>
 ''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated functions should be placed in the [[#Remarks|Remarks]] section instead.  
-
-<<Color2(red,''Important!'')>> Do not create a link to the Remarks section in the Description if additional information is located there.
+* The Description should not contain a link to the Remarks section even if additional information is located there. 
 
 {|
+|<( |3 30%>''If'' the page describes __a macro__ rather than a function
+|''Action'': Use the alternate description (<code>Use this macro to...</code>) and, if necessary, replace the word <code>function</code> with the word <code>macro</code> where appropriate throughout the page.
+|-
+|''Note'': In some rare cases it has been deemed appropriate to refer to a macro as a function in the wiki.  This is not accidental.  Please do not "correct" these instances.  If you feel strongly that a change should be made please contact us.
+|-
+|''Example'': [[SDL_VERSION]]()
+|-
 |<( |2 30%>''If'' __another API page__ is referenced in the description
-|''Action'': As always, be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
 |-
@@ -103,7 +111,7 @@ If you believe a change is necessary please submit ''Feedback'' from that page o
 === Syntax ===
 The Syntax section consists of a code box that displays the basic components of the function using some specific formatting conventions.  Please apply the following conventions when editing this section.
 
-The basic format is as follows:
+'''The basic format is as follows:'''
 ```{
 {{{#!highlight cpp
 returnType* SDL_FunctionName(type1  parameter1,
@@ -163,13 +171,13 @@ The Function Parameters section provides basic information about each parameter 
 
 ''<<Color2(red,Important!)>>''
 {|
-|<( |2 30%>''If'' the only parameter is __void__
+|<( |2 30%>''If'' the only parameter is '''__void__'''
 |''Action'': Delete the entire Function Parameters section, including the header.
 |-
 |''Example'': [[SDL_AllocRW]]()
 |}
 
-Otherwise, function parameters follow this basic format: 
+Otherwise, '''function parameters follow this basic format:''' 
 
 ```
 ||'''parameter1'''||description||
@@ -368,8 +376,8 @@ The Return Value section provides basic information about what, if anything, a f
 
 ''<<Color2(red,Important!)>>''
 {|
-|<( |3 30%>''If'' the return value is __void__
-|''Note'': This is '''not''' the same as __void*__!  See table below for void* return values.
+|<( |3 30%>''If'' the return value is '''__void__'''
+|''Note'': This is '''not''' the same as __void*__!  See the table below for [[#void*|void*]] return values.
 |-
 |''Action'': Delete the entire Return Value section, including the header.
 |-
@@ -377,7 +385,7 @@ The Return Value section provides basic information about what, if anything, a f
 |}
 
 
-Otherwise, return values follow this basic format:
+Otherwise, '''return values follow this basic format:'''
  ```
 Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
 ```
@@ -420,7 +428,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Example'': [[SDL_CreateRGBSurfaceFrom]]()
 |-
 |<( |3 30%>''If'' the return value is __void*__
-|''Action'':See "''If'' the return value is __[[#null*|a pointer or NULL]]__" above.
+|<span id="void*"></span>''Action'':See "''If'' the return value is __[[#null*|a pointer or NULL]]__" above.
 |-
 |''Note'': In most cases it ''will'' be appropriate to mention the pointer for void*.  Ideally, look at other similar functions for guidance.
 |-
@@ -500,7 +508,7 @@ This is one of the few sections that is intended to grow and adjust as users dis
 
 For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
 
-Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.
+'''Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -516,7 +524,7 @@ For the most part the contents of the Remarks section will be user-generated and
 
 ''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
 
-Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.
+'''Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -526,12 +534,12 @@ Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide f
 The Related Functions section provides a list of other functions specifically referenced by that function or otherwise ''closely'' related to it.
 * In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
 
-This list __should__ include:
+'''This list __should__ include:'''
 * the opposite function in a function pair (ie: get/set, do/undo)
 * functions that represent close alternatives (ie: general and specific versions, singular and plural versions)
 * functions that are called by or otherwise very closely related to the actions of the primary function on the page
 
-This list __should not__ include:
+'''This list __should not__ include:'''
 * the primary function on that page
 * every other function that might be considered "related" 
 : ~-An argument can usually be made for a "relationship" between many functions. Including all of them would make these lists much less valuable.-~
@@ -546,7 +554,7 @@ This list __should not__ include:
 ''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
 : ''Note'': Do not include empty parentheses after the function names in this section.  They are all functions so it should be understood/unnecessary.
 
-: The basic format for the Related Functions list is:
+: '''The basic format for the Related Functions list is:'''
 ```
 == Related Functions ==
  .[[SDL_FunctionName]]
@@ -584,9 +592,9 @@ The Footer section consists of a horizontal rule followed by two links separated
 
 <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the function will appear in the correct list(s).
 
-''Action 1'': Do not edit the <code>Categor</code><code>yAPI</code> link!  
+''Action 1'': '''Do not edit the <code>Categor</code><code>yAPI</code> link!'''
 
-''Action 2'': The ```CategoryHeader``` link may be edited ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
+''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
 
 ''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
@@ -650,8 +658,10 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_loadso.h
 |CategorySharedObject
+|-
+|SDL_log.h
+|CategoryLog
 |}
-<!-- #||SDL_log.h|||| -->
 <!-- #||SDL_main.h|||| -->
 {|
 |SDL_mouse.h
