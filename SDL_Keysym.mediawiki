@@ -8,11 +8,11 @@ A structure that contains ^key codes^ used in key events.
 
 == Data Fields ==
 {|
-|SDL_Scancode
+|[[SDL_Scancode]]
 |'''scancode'''
 |SDL physical key code; see [[SDL_Scancode]] for details
 |-
-|SDL_Keycode
+|[[SDL_Keycode]]
 |'''sym'''
 |SDL virtual key code; see [[SDL_Keycode]] for details
 |-
