@@ -24,7 +24,9 @@ This guide provides specific instructions for editing or adding your own content
 
 * Please remember to keep it accurate, simple, and easy to understand.
 
-* Do not remove, modify, or add to the markup (#pragma, etc.) above the page title.
+* Do not remove, modify, or add to the markup above the page title (<code>#pragma</code> or <code>#acl</code> processing instructions, etc.) except:
+* On CategoryC<code></code>ompat pages, place the following markup above the page title, below the processing instructions or <<Color2(red,DRAFT)>> markup if present:
+: ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
 
 * Do not remove, modify, or add section headings unless specifically mentioned below.
 
@@ -132,24 +134,58 @@ The Data Fields section provides basic information about each field in the struc
 
 {|
 |
-|<bgcolor="#EDEDED">''First Column (type)''
+|<bgcolor="#EDEDED">''General (whole table)''
 |-
-|<( |2 30%>''If'' __another API page__ is referenced in the type column
+|<( |2 30%>''If'' __another API page__ is referenced
 |''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it.
 |-
 |''Example'': [[SDL_Event]], [[SDL_AudioSpec]]
 |-
+|<( |3 30%>''If'' there are __important, distinct groups of fields__ within the structure
+|''Action'': Place a full-width row with a grey background and centered, italics title above each section.
+|-
+|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/>   <code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
+|-
+|''Example'': this table, [[SDL_HapticConstant]], [[SDL_HapticRamp]]
+|-
+|<( |3 30%>''If'' the field is __for internal use, deprecated, unused, or read-only__
+|''Action'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|-
+|''Example'': ```
+|<rowstyle="color: #808080;">
+|type
+|'''field'''
+|description
+|```
+|-
+|''Note'': Although a rare case, any other table style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
+|-
+|
+|<bgcolor="#EDEDED">''First Column (type)''
+|-
 |<( |2 30%>''If'' there is __a pointer__ associated with the field
 |''Action'': Place the pointer symbol(s) at the end of the type with no space between.
 |-
-|''Example'': [[SDL_Surface]]
-|}
-
-{|
+|''Example'': [[SDL_Surface]], [[SDL_assert_data]]
+|-
+|<( |2 30%>''If''
+|''Action'':
+|-
+|''Example'':
+|-
 |
 |<bgcolor="#EDEDED">''Second Column (field)''
 |-
 |
 |<bgcolor="#EDEDED">''Third Column (description)''
+|-
+|<( |4 30%>''If'' __a field references another field__ on that same page
+|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the field name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the field as a ''concept'' rather than ''directly'' to the field itself do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_AudioCVT]]()
 |}
 large remarks SDL_RendererInfo
