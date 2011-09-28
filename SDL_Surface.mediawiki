@@ -9,7 +9,7 @@ A structure that contains a collection of pixels used in software blitting.
 {|
 |<style="color: rgb(128, 128, 128);">Uint32 
 |<style="color: rgb(128, 128, 128);">'''flags''' 
-|<style="color: rgb(128, 128, 128);">internal 
+|<style="color: rgb(128, 128, 128);">(internal use)
 |-
 |[[SDL_PixelFormat]]* 
 |'''format''' 
@@ -33,11 +33,11 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |<style="color: rgb(128, 128, 128);">int 
 |<style="color: rgb(128, 128, 128);">'''locked''' 
-|<style="color: rgb(128, 128, 128);">internal; used for surfaces that require locking 
+|<style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)
 |-
 |<style="color: rgb(128, 128, 128);">void* 
 |<style="color: rgb(128, 128, 128);">'''lock_data''' 
-|<style="color: rgb(128, 128, 128);">internal; used for surfaces that require locking 
+|<style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)
 |-
 |[[SDL_Rect]] 
 |'''clip_rect''' 
@@ -45,7 +45,7 @@ A structure that contains a collection of pixels used in software blitting.
 |-
 |<style="color: rgb(128, 128, 128);">SDL_BlitMap* 
 |<style="color: rgb(128, 128, 128);">'''map''' 
-|<style="color: rgb(128, 128, 128);">internal; info for fast blit mapping to other surfaces 
+|<style="color: rgb(128, 128, 128);">info for fast blit mapping to other surfaces (internal use)
 |-
 |int 
 |'''refcount''' 
