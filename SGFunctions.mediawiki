@@ -254,7 +254,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |''Note'': ''If'' the description mentions an __enumeration__ it is not necessary to describe it as an enumeration as above for structures, but do hyperlink if there is a page.
 |-
 |<( |3 30%>''If'' the parameter is __for internal use, deprecated, or read-only__
-|''Action'': Include the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|''Action'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
 |-
 |''Example'': ```
 |<rowstyle="color: #808080;">'''param'''
