@@ -24,8 +24,8 @@ This guide provides specific instructions for editing or adding your own content
 
 * Please remember to keep it accurate, simple, and easy to understand.
 
-* Do not remove, modify, or add to the markup above the page title (<code>#pragma</code> or <code>#acl</code> processing instructions, etc.) except:
-* On CategoryC<code></code>ompat pages, place the following markup above the page title, below the processing instructions or <<Color2(red,DRAFT)>> markup if present:
+* Do not remove, modify, or add to the markup above the page title ~-(processing instructions (ie: <code>#pragma</code>, <code>#acl</code>), <<Color2(red,DRAFT)>> markup, etc.)-~ except:
+* On CategoryC<code></code>ompat pages, place the following markup above the page title and below the processing instructions or draft markup, if present:
 : ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
 
 * Do not remove, modify, or add section headings unless specifically mentioned below.
@@ -117,7 +117,8 @@ The Data Fields section provides basic information about each field in the struc
 '''The basic format is as follows:'''
 ```
 ||type1||'''field1'''||description||
-||type2||'''field2'''||description||
+||type2*||'''field2'''||description||
+||[[type3]]||'''field3'''||description||
 ...
 ||typeN||'''fieldN'''||description||
 ```
@@ -130,35 +131,37 @@ The Data Fields section provides basic information about each field in the struc
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
 
-''Example'': [[SDL_JoyButtonEvent]], [[SDL_HapticCondition]]
+''Example'': [[SDL_Surface]], [[SDL_JoyButtonEvent]], [[SDL_Palette]], [[SDL_HapticCondition]]
 
 {|
 |
 |<bgcolor="#EDEDED">''General (whole table)''
 |-
 |<( |2 30%>''If'' __another API page__ is referenced
-|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it.
+|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
 |''Example'': [[SDL_Event]], [[SDL_AudioSpec]]
 |-
-|<( |3 30%>''If'' there are __important, distinct groups of fields__ within the structure
-|''Action'': Place a full-width row with a grey background and centered, italics title above each section.
+|<( |4 30%>''If'' there are __important, distinct groups of fields__ within the structure
+|''Action'': Create sections by placing a full-width row with a grey background and centered, italics title above each group.
 |-
-|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/>   <code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
+|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/><code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
+|-
+|''Note'': This is a rare occurrence.  Do not use sections unless they significantly improve the meaning, clarity, or usability of the information.
 |-
 |''Example'': this table, [[SDL_HapticConstant]], [[SDL_HapticRamp]]
 |-
 |<( |3 30%>''If'' the field is __for internal use, deprecated, unused, or read-only__
-|''Action'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|''Action'': In addition to the notation (ie: deprecated), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|-
+|''Note'': Although a rare case, any other style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
 |-
 |''Example'': ```
 |<rowstyle="color: #808080;">
 |type
 |'''field'''
 |description
-|```
-|-
-|''Note'': Although a rare case, any other table style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
+|```, [[SDL_Palette]], [[SDL_Color]]
 |-
 |
 |<bgcolor="#EDEDED">''First Column (type)''
@@ -166,7 +169,9 @@ The Data Fields section provides basic information about each field in the struc
 |<( |2 30%>''If'' there is __a pointer__ associated with the field
 |''Action'': Place the pointer symbol(s) at the end of the type with no space between.
 |-
-|''Example'': [[SDL_Surface]], [[SDL_assert_data]]
+|''Example'': ```
+|type*
+|...```, [[SDL_Surface]], [[SDL_assert_data]]
 |-
 |<( |2 30%>''If''
 |''Action'':
