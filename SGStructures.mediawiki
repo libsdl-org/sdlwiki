@@ -135,7 +135,7 @@ The Data Fields section provides basic information about each field in the struc
 
 {|
 |
-|<bgcolor="#EDEDED">''General (whole table)''
+|<bgcolor="#EDEDED"><span id="general"></span>''General (whole table)''
 |-
 |<( |2 30%>''If'' __another API page__ is referenced
 |''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
@@ -172,7 +172,7 @@ The Data Fields section provides basic information about each field in the struc
 |<bgcolor="#EDEDED">''First Column (type)''
 |-
 |<( |2 30%>''If'' there is __a pointer__ associated with the field
-|''Action'': Place the pointer symbol(s) at the end of the type text with no space between.
+|''Action'': Place the pointer symbol(s) at the end of the type with no space between.
 |-
 |''Example'': ```
 |type*
@@ -182,7 +182,7 @@ The Data Fields section provides basic information about each field in the struc
 |<bgcolor="#EDEDED">''Second Column (field)''
 |-
 |
-|<(>There are currently no special formatting instructions for this column other than above.
+|<(>There are currently no special formatting instructions just for this column.  See [[#general|''General'']] above.
 |-
 |
 |<bgcolor="#EDEDED">''Third Column (description)''
