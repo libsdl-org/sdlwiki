@@ -188,11 +188,12 @@ Otherwise, '''function parameters follow this basic format:'''
 ||'''parameterN'''||description||
 ```
 
-''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
+''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup. All text in the table is left-justified. 
 
 * The __first column__ contains the parameter names, without types or pointers, in bold.
 * The __second column__ contains a simple description of each parameter using some specific formatting conventions.
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
+
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
 
 ''Example'': [[SDL_SetColorKey]]()
