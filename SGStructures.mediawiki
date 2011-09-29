@@ -122,15 +122,16 @@ The Data Fields section provides basic information about each field in the struc
 ||typeN||'''fieldN'''||description||
 ```
 
-''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each field name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.
+''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each field name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.  All text in the table is left-justified.
 
 * The __first column__ contains the field type and any pointers if applicable.
 * The __second column__ contains the field name, without types or pointers, in bold.
 * The __third column__ contains a simple description of each field using some specific formatting conventions.
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
-* There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
 
 ''Example'': [[SDL_Surface]], [[SDL_JoyButtonEvent]], [[SDL_Palette]], [[SDL_HapticCondition]]
+
+''Action'': There are a few content-dependent conventions we have chosen for consistency across pages.  See the tables below for details. 
 
 {|
 |
@@ -162,11 +163,16 @@ The Data Fields section provides basic information about each field in the struc
 |description
 |```, [[SDL_Palette]], [[SDL_Color]]
 |-
+|<( |2 30%>''If'' the structure includes __padding__ fields
+|''Action'': Omit all <code>padding</code> fields from the wiki page.
+|-
+|''Example'': [[SDL_AudioSpec]], [[SDL_WindowEvent]]
+|-
 |
 |<bgcolor="#EDEDED">''First Column (type)''
 |-
 |<( |2 30%>''If'' there is __a pointer__ associated with the field
-|''Action'': Place the pointer symbol(s) at the end of the type with no space between.
+|''Action'': Place the pointer symbol(s) at the end of the type text with no space between.
 |-
 |''Example'': ```
 |type*
