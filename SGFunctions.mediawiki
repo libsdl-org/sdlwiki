@@ -210,16 +210,16 @@ Otherwise, '''function parameters follow this basic format:'''
 |''Example'': [[SDL_PixelFormatEnumToMasks]]()
 |-
 |<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
-|<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
+|<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```.
 |-
-|''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section
+|''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section.
 |-
 |''Action 3'': See "''If'' the __[[#large|Remarks section is large]]__" below for more details.
 |-
 |''Example'': [[SDL_CreateWindow]]()
 |-
 |<( |3 30%>''If'' the __Remarks section is large__
-|<span id="large"></span>''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section
+|<span id="large"></span>''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section.
 |-
 |''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
 |-
