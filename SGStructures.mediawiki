@@ -168,21 +168,20 @@ The Data Fields section provides basic information about each field in the struc
 |-
 |''Example'': [[SDL_AudioSpec]], [[SDL_WindowEvent]]
 |-
-|
-|<bgcolor="#EDEDED">''First Column (type)''
+|<( |3 30%>''If'' there is __a pointer__ associated with the field
+|''Action 1'': Place the pointer symbol(s) at the end of the type in the ''first column'' with no space between.
 |-
-|<( |2 30%>''If'' there is __a pointer__ associated with the field
-|''Action'': Place the pointer symbol(s) at the end of the type with no space between.
+|''Action 2'': In general, avoid mentioning the pointer in the description unless it is necessary to understand the field.
 |-
 |''Example'': ```
 |type*
 |...```, [[SDL_Surface]], [[SDL_assert_data]]
 |-
 |
-|<bgcolor="#EDEDED">''Second Column (field)''
+|<bgcolor="#EDEDED">''First Column (type) & Second Column (field)''
 |-
 |
-|<(>There are currently no special formatting instructions just for this column.  See [[#general|''General'']] above.
+|<(>There are currently no special formatting instructions just for these columns.  See [[#general|''General'']] above.
 |-
 |
 |<bgcolor="#EDEDED">''Third Column (description)''
@@ -220,10 +219,8 @@ The Data Fields section provides basic information about each field in the struc
 |''Note'': If the reference is to the field as a ''concept'' rather than ''directly'' to the field itself do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
 |-
 |''Example'': [[SDL_AudioCVT]], [[SDL_HapticCustom]]
-|}
-
-{|
-|<( |2 30%>''If''
-|''Action'':
 |-
-|''Example'':
+|<( |2 30%>''If'' there is __no relevant description text__
+|''Action'': It is acceptable to leave the description cell blank, although it is preferable to put some information there even if it is redundant with the field name or otherwise does not really provide any new information.
+|-
+|''Example'': [[SDL_Color]]
