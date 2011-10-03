@@ -2,6 +2,7 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = Thread Management =
@@ -10,8 +11,12 @@
 
 
 == Introduction ==
+This category contains functions for system independent thread management routines.
+
 The SDL thread structure is defined in SDL_thread.c.<br/>
 : ```typedef struct SDL_Thread SDL_Thread;```
+
+<<Color2(green,Should SDL_thread.c be hyperlinked?)>>
 
 We compile SDL into a DLL. This means that it's the DLL which creates a new thread for the calling process with the [[SDL_CreateThread]]() API.  There is a problem with this, that only the RTL of the SDL.DLL will be initialized for those threads, and not the RTL of the calling application!
 
