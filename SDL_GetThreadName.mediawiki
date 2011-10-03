@@ -1,0 +1,37 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetThreadName =
+Use this function to get the thread name as it was specified in [[SDL_CreateThread]]().
+
+
+== Syntax ==
+```c++
+const char* SDL_GetThreadName(SDL_Thread* thread)
+```
+
+== Function Parameters ==
+{|
+|'''thread'''
+|the thread to query
+|}
+
+== Return Value ==
+Returns a pointer to a UTF-8 string that names the specified thread, or NULL if it doesn't have a name,,; call [[SDL_GetError]]() for more information,,.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+This is internal memory, not to be free()'d by the caller, and remains valid until the specified thread is cleaned up by [[SDL_WaitThread]]().
+
+
+== Related Functions ==
+:[[SDL_CreateThread]]
+:[[SDL_WaitThread]]
+
+----
+[[CategoryAPI]], [[CategoryThread]]
