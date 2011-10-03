@@ -82,7 +82,7 @@ The Description section immediately follows the page title and does not have it'
 |<( |2 30%>''If'' __another API page__ is referenced in the description
 |''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
-|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```
+|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
 |-
 |<( |3 30%>''If'' __a parameter__ on that page is referenced in the description
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
