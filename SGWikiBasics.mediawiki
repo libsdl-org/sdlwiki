@@ -732,7 +732,7 @@ Some other wiki help that might be of interest or helpful to find quickly:
 <!-- #'''DRAFT''' -->
 
 
-<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following )-> Start Include here. -->
+<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following... Start Include here. -->
 ----
 == Resources ==
 
