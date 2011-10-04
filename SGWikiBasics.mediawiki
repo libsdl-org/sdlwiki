@@ -732,7 +732,7 @@ Some other wiki help that might be of interest or helpful to find quickly:
 <!-- #'''DRAFT''' -->
 
 
-<!-- #An include begins here.  It is used on all other SG pages.  Please note that any change between this note and the next will be reflected on every SG page as well.  Consider edits carefully. -->
+<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following>> Start Include here. -->
 ----
 == Resources ==
 
@@ -754,4 +754,4 @@ If you have suggestions for changes or additions to this document or any other p
 ```#!wiki note
 All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 ```
-<!-- #This concludes the test of the hidden comment system.  This was only a test.  The include which began just above Resources concludes here.  Note that this include is applied on every other SG page and should be edited carefully with that in mind. -->
+<!-- #End Include here.  <<DO NOT change the preceding.  Reminder: This include is applied on __every other SG page__ and should be edited carefully with that in mind. -->
