@@ -732,7 +732,7 @@ Some other wiki help that might be of interest or helpful to find quickly:
 <!-- #'''DRAFT''' -->
 
 
-<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following... Start Include here. -->
+<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following )-> Start SG Include here. -->
 ----
 == Resources ==
 
@@ -754,4 +754,5 @@ If you have suggestions for changes or additions to this document or any other p
 ```#!wiki note
 All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 ```
-<!-- #End Include here.  <-( DO NOT change the preceding.  Reminder: This include is applied on __every other SG page__ and should be edited carefully with that in mind. -->
+
+<!-- #End SG Include here.  <-( DO NOT change the preceding.  Reminder: This include is applied on __every other SG page__ and should be edited carefully with that in mind.  (Note that this is slightly different from other includes because of the above include instructions which confuse the pattern recognition.) -->
