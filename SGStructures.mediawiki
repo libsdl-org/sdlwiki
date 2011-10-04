@@ -553,22 +553,5 @@ The Footer section consists of a horizontal rule followed by two links separated
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
-----
-== Resources ==
 
-Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much as possible.
-
-If you have questions that aren't addressed here:
- a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
- a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
- a. Post a question to ''[http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback]'' and ''include a way to contact you''.
- a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Documentation Mailing List]
- a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
-
-If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
-
-------
-== Disclaimer ==
-```#!wiki note
-All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
-```
+<<Include(SGWikiBasics, , , from="Start SG Include here.", to="##End SG Include here.")>>
