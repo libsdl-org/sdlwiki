@@ -730,6 +730,9 @@ Some other wiki help that might be of interest or helpful to find quickly:
 <!-- #||<: tablewidth="100%"><<Color2(purple,THIS FUNCTION HAS BEEN REMOVED FROM THE API.)>><br/><<Color2(purple,THIS PAGE WILL BE DELETED.)>>|| -->
 <!-- #Markup for draft pages: -->
 <!-- #'''DRAFT''' -->
+<!-- #Markup for Resources and Disclaimer section on SG pages (remove backticks): -->
+<!-- #<<Include(SGWikiBasics, , , from="Start SG<code></code> Include here.", to="##End SG<code></code> Include here.")>> -->
+
 
 
 <!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following )-> Start SG Include here. -->
