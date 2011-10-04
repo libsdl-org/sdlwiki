@@ -589,13 +589,13 @@ The Footer section consists of a horizontal rule followed by two links separated
 ''Markup'': 
 ```
 ----
-[[Category API]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryHeader]]
 ```
-: where <code>Categor</code><code>yAPI</code> is the same for every function page and <code>Categor</code><code>yHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
+: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
 
 <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the function will appear in the correct list(s).
 
-''Action 1'': '''Do not edit the <code>Categor</code><code>yAPI</code> link!'''
+''Action 1'': '''Do not edit the <code>CategoryAPI</code> link!'''
 
 ''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
 
