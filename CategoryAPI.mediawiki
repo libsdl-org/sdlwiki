@@ -8,19 +8,19 @@
 
 == Hints ==
 
-<<FullSearch(category:CategoryDefine)>>
+<<FullSearch(category:CategoryDefine -SGHints)>>
 
 == Enumerations ==
 
-<<FullSearch(category:CategoryEnum -SDLEnumTemplate)>>
+<<FullSearch(category:CategoryEnum -SDLEnumTemplate -SGEnumerations)>>
 
 == Structures ==
 
-<<FullSearch(category:CategoryStruct -SDLStructTemplate)>>
+<<FullSearch(category:CategoryStruct -SDLStructTemplate -SGStructures)>>
 
 == Functions ==
 
-<<FullSearch(category:CategoryAPI -SDLFunctionTemplate)>>
+<<FullSearch(category:CategoryAPI -SDLFunctionTemplate -SGFunctions)>>
 
 ----
 CategoryCategory
