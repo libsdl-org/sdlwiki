@@ -75,7 +75,7 @@ The Description section immediately follows the page title and does not have it'
 |<( |3 30%>''If'' the page describes __a macro__ rather than a function
 |''Action'': Use the alternate description (<code>Use this macro to...</code>) and, if necessary, replace the word <code>function</code> with the word <code>macro</code> where appropriate throughout the page.
 |-
-|''Note'': In some rare cases it has been deemed appropriate to refer to a macro as a function in the wiki.  This is not accidental.  Please do not "correct" these instances.  If you feel strongly that a change should be made please contact us.
+|''Note'': In some rare cases it has been deemed appropriate to refer to a macro as a function in the wiki.  (eg: [[SDL_QuitRequested]]())  This is not accidental.  Please do not "correct" these instances.  If you feel strongly that a change should be made please contact us.
 |-
 |''Example'': [[SDL_VERSION]]()
 |-
@@ -686,9 +686,10 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_power.h
 |CategoryPower
-|}
-<!-- #||SDL_quit.h|||| -->
-{|
+|-
+|SDL_quit.h
+|CategoryEvents
+|-
 |SDL_rect.h
 |CategoryRect
 |-
