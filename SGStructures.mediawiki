@@ -84,12 +84,14 @@ The Description section immediately follows the page title and does not have it'
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
 |-
-|<( |3 30%>''If'' __a parameter on that page__ is referenced in the description
+|<( |4 30%>''If'' __a parameter on that page__ is referenced in the description
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
 |''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_LoadWAV_RW]]
 |}
 
 
@@ -189,7 +191,7 @@ The Data Fields section provides basic information about each field in the struc
 |<( |3 30%>''If'' __more than one statement__ must be included in the description
 |''Action'': Separate them with a semi-colon (;)
 |-
-|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" below for more details.
+|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a field" below for more details.
 |-
 |''Example'': [[SDL_JoyButtonEvent]], [[SDL_Keysym]]
 |-
@@ -207,7 +209,7 @@ The Data Fields section provides basic information about each field in the struc
 |-
 |''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
 |-
-|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
+|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a field" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
 |-
 |''Example'': [[SDL_RendererInfo]]
 |-
@@ -221,7 +223,7 @@ The Data Fields section provides basic information about each field in the struc
 |''Example'': [[SDL_AudioCVT]], [[SDL_HapticCustom]]
 |-
 |<( |2 30%>''If'' there is __no relevant description text__
-|''Action'': It is acceptable to leave the description cell blank, although it is preferable to put some information there even if it is redundant with the field name or otherwise does not really provide any new information.
+|''Action'': It is acceptable to leave the description cell blank, although it is preferable to put some information there even if it is redundant with the field name or otherwise does not really provide any novel information.
 |-
 |''Example'': [[SDL_Color]]
 |}
@@ -403,17 +405,17 @@ The Footer section consists of a horizontal rule followed by two links separated
 ----
 [[CategoryStruct]], [[CategoryHeader]]
 ```
-: where <code>Categor</code><code>yStruct</code> is the same for every structure page and <code>Categor</code><code>yHeader</code> is structure-specific with <code>Header</code> varying based on the header file containing the structure (see below).
+: where <code>CategoryStruct</code> is the same for every structure page and <code>CategoryHeader</code> is structure-specific with <code>Header</code> varying based on the header file containing the structure (see below).
 
 <<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the structure will appear in the correct list(s).
 
-''Action 1'': '''Do not edit the <code>Categor</code><code>yStruct</code> link!'''
+''Action 1'': '''Do not edit the <code>CategoryStruct</code> link!'''
 
 ''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the structure has been relocated to another header (very rare).
 
 ''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
-''Markup'': Replace <code>Categor</code><code>yHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
+''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
 
 <span id="CategoryTable"></span>
 {|
@@ -543,12 +545,6 @@ The Footer section consists of a horizontal rule followed by two links separated
 |
 |~-*Some exceptions exist.  See above.-~
 |}
-
-
-
-
-
-
 
 
 
