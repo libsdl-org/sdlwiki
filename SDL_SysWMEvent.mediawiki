@@ -33,9 +33,10 @@ int SDL_GetWMInfo(SDL_SysWMinfo *info);
 
 == Related Enumerations ==
 :[[SDL_EventMask]]???
-:[[SDL_EventType]]???
+:[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_Event]]
 :[[SDL_SysWMinfo]]
 :[[SDL_SysWMmsg]]???
 
