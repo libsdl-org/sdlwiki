@@ -12,7 +12,7 @@ A structure that contains system-dependent information about a window.
 |
 |<bgcolor="#EDEDED">''All Subsystems''
 |-
-|SDL_version
+|[[SDL_version]]
 |'''version'''
 |an [[SDL_version]] structure that contains the current SDL version
 |-
@@ -84,6 +84,11 @@ This structure is filled in by [[SDL_GetWindowWMInfo]]().
 This structure holds low level information about the window and '''subsystem''' is set to the windowing system in use, one of:
 <<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>
 
+== Related Enumerations ==
+:[[SDL_SYSWM_TYPE]]
+
+== Related Structures ==
+:[[SDL_version]]
 
 == Related Functions ==
 :[[SDL_GetWindowWMInfo]]
