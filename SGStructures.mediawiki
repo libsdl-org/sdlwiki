@@ -139,22 +139,22 @@ The Data Fields section provides basic information about each field in the struc
 |
 |<bgcolor="#EDEDED"><span id="general"></span>''General (whole table)''
 |-
-|<( |2 30%>''If'' __another API page__ is referenced
-|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|below]])
+|''Action'': DO NOT hyperlink the page in the type column.
+|-
+|''Action 2'': List the page, with a hyperlink, in the description and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
+|-
+|''Example'': [[SDL_Event]]
+|-
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [#grey|below]])
+|''Action1'': Be sure to [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|-
+|''Action 2'': List the page in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
 |''Example'': [[SDL_Event]], [[SDL_AudioSpec]], [[SDL_SysWMinfo]]
 |-
-|<( |4 30%>''If'' there are __important, distinct groups of fields__ within the structure
-|''Action'': Create sections by placing a full-width row with a grey background and centered, italics title above each group.
-|-
-|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/><code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
-|-
-|''Note'': This is a rare occurrence.  Do not use sections unless they significantly improve the meaning, clarity, or usability of the information.
-|-
-|''Example'': this table, [[SDL_HapticConstant]], [[SDL_HapticRamp]]
-|-
-|<( |3 30%>''If'' the field is __for internal use, deprecated, unused, or read-only__
-|''Action'': In addition to the notation (ie: deprecated), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|<( |3 30%>''If'' the field is __for internal use, deprecated, unused, or read-only__ (greyed out)
+|<span id="grey"></span>''Action'': In addition to the text notation (ie: deprecated), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
 |-
 |''Note'': Although a rare case, any other style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
 |-
@@ -164,6 +164,15 @@ The Data Fields section provides basic information about each field in the struc
 |'''field'''
 |description
 |```, [[SDL_Palette]], [[SDL_Color]]
+|-
+|<( |4 30%>''If'' there are __important, distinct groups of fields__ within the structure
+|''Action'': Create sections by placing a full-width row with a grey background and centered, italics title above each group.
+|-
+|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/><code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
+|-
+|''Note'': This is a rare occurrence.  Do not use sections unless they significantly improve the meaning, clarity, or usability of the information.
+|-
+|''Example'': this table, [[SDL_HapticConstant]], [[SDL_HapticRamp]]
 |-
 |<( |2 30%>''If'' the structure includes __padding__ fields
 |''Action'': Omit all <code>padding</code> fields from the wiki page.
@@ -267,21 +276,21 @@ For the most part the contents of the Remarks section will be user-generated and
 === Related Enumerations ===
 The Related Enumerations section provides a list of enumerations specifically referenced by the structure or otherwise ''closely'' related to it.
 
-''Note'': '''In most cases this section will be empty and should be removed from the page.'''
-
 '''This list __should__ include:'''
 * enumerations that are specifically referenced in the structure
-* enumerations that are indirectly referenced by but closely related to the structure
+* enumerations that are indirectly referenced by but still closely related to the structure
+: ~-(ie: the enum is not a field type but its values are used to fill in a field as with [[SDL_EventType]] for the <code>type</code> field in many event structures)-~
 
 '''This list __should not__ include:'''
-* the primary enumeration on that page
-* every other enumeration that might be considered "related" 
+* every enumeration that might be considered "related" to the structure or any other listed enumerations
 : ~-Including too many would make these lists much less valuable.-~
 * all enumerations of similar type
 * all enumerations of a related category
-* enumerations that are indirectly related (ie: it might be common to use them together)
+* enumerations that are indirectly related 
+: ~-(ie: it might be common to use them together)-~
 * enumerations that do not have a page in the wiki
-* non-enumerations (ie: do not include functions or structures in this list)
+* non-enumerations 
+: ~-(ie: do not include functions or structures in this list)-~
 
 ''Markup'': Each line should begin with a single blank space and a period followed by the enumeration name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
 : ''Note'': Do not include empty parentheses after the name.
@@ -298,8 +307,13 @@ The Related Enumerations section provides a list of enumerations specifically re
 |<( 30%>''If'' there is __more than one enumeration__ in the list
 |''Action'': List the enumerations in alphabetical order.
 |-
-|<( 30%>''If'' there are __no related enumerations__
+|<( 30%>''If'' the structure is __a member of the [[SDL_Event]] union__
+|''Action'': Include [[SDL_EventType]] in this section of the page.
+|-
+|<( |2 30%>''If'' there are __no related enumerations__
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
+|-
+|''Note'': It is common for this section to be empty and removed from the page.
 |}
 
 ''Example'': [[SDL_Event]], [[SDL_Keysym]], [[SDL_WindowEvent]]
@@ -309,13 +323,13 @@ The Related Enumerations section provides a list of enumerations specifically re
 <br/>
 <br/>
 === Related Structures ===
-The Related Structures section provides a list of other structures specifically referenced by the structure or otherwise ''closely'' related to it.
+The Related Structures section provides a list of other structures (or unions) specifically referenced by the structure or otherwise ''closely'' related to it.
 
-''Note'': '''In most cases this section will be empty and should be removed from the page.'''
 
 '''This list __should__ include:'''
 * other structures that are specifically referenced in the structure
-* other structures that are indirectly referenced by but closely related to the structure
+* other structures that are indirectly referenced by but closely related to the structure 
+: ~-This is uncommon.-~
 
 '''This list __should not__ include:'''
 * the primary structure on that page
@@ -323,9 +337,11 @@ The Related Structures section provides a list of other structures specifically 
 : ~-Including too many would make these lists much less valuable.-~
 * all structures of similar type
 * all structures of a related category
-* structures that are indirectly related (ie: it might be common to use them together)
+* structures that are indirectly related 
+: ~-(ie: it might be common to use them together)-~
 * structures that do not have a page in the wiki
-* non-structures (ie: do not include functions or enumerations in this list)
+* non-structures 
+: ~-(ie: do not include functions or enumerations in this list)-~
 
 ''Markup'': Each line should begin with a single blank space and a period followed by the structure name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
 : ''Note'': Do not include empty parentheses after the name.
@@ -342,12 +358,27 @@ The Related Structures section provides a list of other structures specifically 
 |<( 30%>''If'' there is __more than one structure__ in the list
 |''Action'': List the structures in alphabetical order.
 |-
-|<( 30%>''If'' there are __no related structures__
+|<( 30%>''If'' the structure is __a member of the [[SDL_Event]] union__
+|''Action'': Include [[SDL_Event]] in this section of the page.
+|-
+|<( |2 30%>''If'' there are __no related structures__
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
+|-
+|''Note'': It is common for this section to be empty and removed from the page.
 |}
 
 ''Example'': [[SDL_Event]], [[SDL_Color]], [[SDL_HapticDirection]]
 
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<span id="RFs"></span>
+=== Related Macros ===
+{i} This is a custom section that should not be used except in the most specific circumstances.  
+''Example'': [[SDL_version]]
+The Related Macros section provides a list of functions specifically associated with that structure or otherwise ''closely'' related to it.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
