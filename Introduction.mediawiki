@@ -14,7 +14,9 @@ For the latest information on what is supported see http://hg.libsdl.org/SDL/fil
 
 SDL is written in C, but works with C++ natively, and has bindings to several other languages, including Ada, C#, Eiffel, Erlang, Euphoria, Guile, Haskell, Java, Lisp, Lua, ML, Objective C, Pascal, Perl, PHP, Pike, Pliant, Python, Ruby, and Smalltalk.
 
-This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LGPL version 2.1]. This license allows you to use SDL freely in commercial programs as long as you link with the dynamic library. A full commercial license for SDL 1.3 is available from [http://www.galaxygameworks.com Galaxy Gameworks].
+SDL 1.3 is under the [http://www.zlib.net/zlib_license.html zlib] license, which allows free use for commercial and non-commercial purposes.  
+
+<!-- #This library is distributed under [http://www.libsdl.org/license-lgpl.php GNU LGPL version 2.1]. This license allows you to use SDL freely in commercial programs as long as you link with the dynamic library. A full commercial license for SDL 1.3 is available from [http://www.galaxygameworks.com Galaxy Gameworks]. -->
 
 === What can SDL do? ===
 ''''' Video'''''
