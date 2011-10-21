@@ -24,11 +24,11 @@ To help you with this we have created a series of resources:
 
 <span id="form"></span>
 === Feedback Form ===
-: This is the quickest and simplest way for anyone to contribute!  There is no sign up and no permissions are required to use this option.  Every page of the wiki contains a drop down ''Feedback'' form (upper right) where you can post quick content ideas, questions, suggestions, etc.  Simply click the form tab, fill in the text field with your contribution, include your contact information if you would like a reply, and click ''Submit''.  We'll take it from there!
+: This is the quickest and simplest way for anyone to contribute to the wiki!  There is no sign up and no permissions are required to use this option.  Every page of the wiki contains a drop down ''Feedback'' form (upper right) where you can post quick content ideas, questions, suggestions, etc.  Simply click the form tab, fill in the text field with your contribution, include your contact information if you would like a reply, and click ''Submit''.  We'll take it from there!
 
 <span id="list"></span>
 === Mailing List ===
-: The [http://lists.libsdl.org/listinfo.cgi/docs-libsdl.org Documentation Mailing List] has been set up to allow users to share documentation-related topics.  Anything from conventions to needed content, questions or comments, can be posted to the Mailing List.  Plus, keep up with what others are saying and doing on the wiki.  
+: The [http://lists.libsdl.org/listinfo.cgi/docs-libsdl.org Documentation Mailing List] has been set up to allow users to share documentation-related topics.  (There is a separate mailing list for development-related topics.)  Anything from conventions to needed content, questions or comments, can be posted to the Mailing List.  Plus, keep up with what others are saying and doing on the wiki.  
 
 : We encourage all contributors to join the mailing list and participate in the discussions there.  It is a great place to discuss areas that need contributions and to let others know what you are working on or if you are able to help address a request.
 
@@ -48,7 +48,7 @@ To help you with this we have created a series of resources:
 
 : If you find something that is not addressed or is unclear in a style guide please post your questions using the ''Feedback'' form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
-: ''More guides will be added over the coming weeks!''
+: ''More guides will be added over time!''
 
 <span id="email"></span>
 === Email Contact ===
