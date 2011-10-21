@@ -51,7 +51,7 @@ To help you with this we have created a series of resources:
 : ''More guides will be added over time!''
 
 <span id="email"></span>
-=== Email Contact ===
+=== Email ===
 : For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 ------
