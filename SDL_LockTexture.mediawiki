@@ -1,5 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
+
+'''DRAFT'''
+
 
 = SDL_LockTexture =
 Use this function to lock a portion of the texture for pixel access.
@@ -29,7 +32,7 @@ int SDL_LockTexture(SDL_Texture*    texture,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STATIC; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STREAMING; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -37,7 +40,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If you don't want to mark the entire area dirty you can pass 0 for '''markDirty''' and then use [[SDL_DirtyTexture]]() to mark specific subareas dirty.
+Use this function to lock the existing pixel data for editing.  You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any changes.
 
 == Related Functions ==
 :[[SDL_UnlockTexture]]
