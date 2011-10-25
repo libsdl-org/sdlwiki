@@ -16,4 +16,4 @@ Go to the Xcode menu Project -> Edit Project Settings, scroll down to the Linkin
 
 ==== Why does my application quit at the loading screen on systems running iOS 3.1? ====
 
-These devices are probably using the arm6 processor instead of the arm7 processor.  Try changing your "Active Architecture" to arm6 in the Xcode main project window.
+These devices are probably using the ARMv6 architecture instead of the ARMv7 architecture.  Try changing your "Active Architecture" to ARMv6 in the Xcode main project window.
