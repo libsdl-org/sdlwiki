@@ -28,7 +28,7 @@ void SDL_LogMessageV(int             category,
 |a printf() style message format string
 |-
 |'''ap'''
-|^a variable argument list to reference ???^
+|a variable argument list
 |}
 
 == Code Examples ==
