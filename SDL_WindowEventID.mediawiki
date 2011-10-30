@@ -8,7 +8,7 @@ An enumeration of window events.
 == Values ==
 {|
 |<style="color: #808080;">SDL_WINDOWEVENT_NONE
-|<style="color: #808080;">never used
+|<style="color: #808080;">(never used)
 |-
 |SDL_WINDOWEVENT_SHOWN
 |window has been shown
@@ -111,7 +111,7 @@ int main(int, char**)  {
     
     /* ... */
     
-    SDL_Sleep(1);
+    SDL_Delay(1);
   }
 }
 ```
