@@ -45,6 +45,9 @@ void fill_audio(void *udata, Uint8 *stream, int len)
     if ( audio_len == 0 )
         return;
 
+/* Empty any old data in the buffer */
+    SDL_memset(stream, 0, len);
+
 /* Mix as much data as possible */
     len = ( len > audio_len ? audio_len : len );
     SDL_MixAudio(stream, audio_pos, len, SDL_MIX_MAXVOLUME);
@@ -82,14 +85,6 @@ This is provided for convenience -- you can mix your own audio data.
 Do not use this function for mixing together more than two streams of sample data. The output from repeated application of this function may be distorted by clipping, because there is no accumulator with greater range than the input (not to mention this being an inefficient way of doing it). Use mixing functions from SDL_mixer, OpenAL, or write your own mixer instead.
 
 It is a common misconception that this function is required to write audio data to an output stream in the audio-callback.  While you can do that, [[SDL_MixAudio]]() is really only needed when you're mixing a single audio stream with a volume adjustment.
-
-*<br/><<Color2(green,The following example is in the old wiki between "in the audio-callback." and "While you can do that".  Should it be included here or is it unnecessary?)>>
-```
-void audio_callback(void *udata, Uint8 *stream, int len)
-{
-    SDL_MixAudio(stream, audio_pos, len, SDL_MIX_MAXVOLUME);
-}
-```<<BR>>*
 
 == Related Functions ==
 :[[SDL_MixAudioFormat]]
