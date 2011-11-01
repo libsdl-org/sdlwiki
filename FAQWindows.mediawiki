@@ -1,3 +1,5 @@
+<!-- pragma camelcase off -->
+
 = FAQ: Windows =
 
 
@@ -92,11 +94,11 @@ flags ^= SDL_FULLSCREEN;
 screen = SDL_SetVideoMode(..., flags);
 
 ==== How do I avoid creating stdout.txt and stderr.txt? ====
-Seen here:
-http://www.libsdl.org/pipermail/sdl/2002-November/050275.html
+<!-- #Seen here: -->
+<!-- #http://www.libsdl.org/pipermail/sdl/2002-November/050275.html -->
 "I believe inside the Visual C++ project that comes with SDL there is a SDL_nostdio target you can build which does what you want(TM)."
 
-And here:
-http://www.libsdl.org/pipermail/sdl/2002-November/050277.html
-"If you define "NO_STDIO_REDIRECT" and recompile SDL, I think it will fix the problem.
+<!-- #And here: -->
+<!-- #http://www.libsdl.org/pipermail/sdl/2002-November/050277.html -->
+"If you define "NO_STDIO_REDIRECT" and recompile SDL, I think it will fix the problem."
 (Answer courtesy of Bill Kendrick)
