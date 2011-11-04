@@ -2,6 +2,10 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
+```#!wiki warning
+'''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''
+```
+
 = SDL_IsDeviceDisconnected =
 Use this function to check whether a,,n,, ^specific^ input device is disconnected.
 
@@ -34,4 +38,4 @@ You can add your code example here
 :[[SDL_RedetectInputDevices]] ???
 
 ----
-[[CategoryAPI]], [[CategoryInput]]
+Category<code></code>API, [[CategoryInput]]
