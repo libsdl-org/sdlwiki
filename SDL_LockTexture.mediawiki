@@ -40,7 +40,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-Use this function to lock the existing pixel data for editing.  You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any changes.
+The pixels made available for editing don't necessarily contain the old data.  This is specifically ''not'' guaranteed.  
+
+You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any changes.
 
 == Related Functions ==
 :[[SDL_UnlockTexture]]
