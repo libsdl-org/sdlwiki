@@ -33,4 +33,4 @@ You can add your code example here
 :[[SDL_GetNumInputDevices]] ???
 
 ----
-[[CategoryAPI]], [[CategoryInput]]
+Category<code></code>API, [[CategoryInput]]
