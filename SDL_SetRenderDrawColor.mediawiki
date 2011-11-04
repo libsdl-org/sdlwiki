@@ -41,6 +41,8 @@ You can add your code example here
 ```
 
 == Remarks ==
+Use this function to set the color for drawing ^or filling^ rectangles, lines, ^and points,^ and for [[SDL_RenderClear]]().
+
 ''You can add useful comments here''
 
 == Related Functions ==
