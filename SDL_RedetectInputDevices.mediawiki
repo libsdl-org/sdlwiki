@@ -2,6 +2,10 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
+```#!wiki warning
+'''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''
+```
+
 = SDL_RedetectInputDevices =
 Use this function to ^detect input devices after initializing SDL^.
 
@@ -34,4 +38,4 @@ There is an implicit (re)detect upon [[SDL_Init]]().
 :[[SDL_OtherFunction]]
 
 ----
-[[CategoryAPI]], [[CategoryInput]]
+Category!API, [[CategoryInput]]
