@@ -2,6 +2,10 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
+```#!wiki warning
+'''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''
+```
+
 = SDL_GetInputDeviceName =
 Use this function to get the name of a device with the given index.
 
