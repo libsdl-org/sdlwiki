@@ -1,8 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_SetRenderDrawColor =
-Use this function to set the color used for drawing operations.
+Use this function to set the color used for drawing operations (Rect, Line and Clear).
 
 
 == Syntax ==
