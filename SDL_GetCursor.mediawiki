@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_GetCursor =
@@ -22,6 +22,8 @@ You can add your code example here
 ```
 
 == Remarks ==
+This function returns a pointer to the current cursor which is owned by the library.  It is not necessary to free the cursor with [[SDL_FreeCursor]]()
+
 ''You can add useful comments here''
 
 == Related Functions ==
