@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_RemoveTimer =
@@ -20,11 +20,7 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID t)
 |}
 
 == Return Value ==
-Returns a boolean value indicating success or failure.
-
-''-or-''
-
-Returns SDL_TRUE on success or SDL_FALSE on failure; call [[SDL_GetError]]() for more information. <<Color2(green,Does SDL_GetError work with this type?)>>
+Returns SDL_TRUE if the timer is removed or SDL_FALSE on failure; call [[SDL_GetError]]() for more information. <<Color2(green,Call SDL_GetError here?)>>
 
 == Code Examples ==
 ```c++
