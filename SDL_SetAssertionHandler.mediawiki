@@ -14,10 +14,10 @@ void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
 == Function Parameters ==
 {|
 |'''handler'''
-|the callback function called when an assertion fails or NULL for the default handler; see [[#Remarks|Remarks]] for details
+|the function to call when an assertion fails or NULL for the default handler; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|a pointer passed to the callback as-is
+|a pointer that is passed to '''handler'''
 |}
 
 == Code Examples ==
@@ -28,14 +28,14 @@ You can add your code example here
 == Remarks ==
 This function allows an application to show its own assertion UI and/or force the response to an assertion failure. If the application doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
 
-'''handler''' is a callback function of the following form:
+The function prototype for '''handler''' is:
  ```
 SDL_assert_state YourAssertionHandler(const SDL_assert_data* data,
                                       void*                  userdata)
 ```
 : where <code>YourAssertionHandler</code> is the name of your function, <code>data</code> is a pointer to the [[SDL_assert_data]] struct corresponding to the current assertion, and <code>userdata</code> is what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]().
 
-:This callback should return an [[SDL_assert_state]] value of how to handle the assertion failure.
+:This callback should return an [[SDL_assert_state]] value indicating how to handle the assertion failure.
 
 This callback may fire from any thread, but it runs wrapped in a mutex, so it will only fire from one thread at a time.
 
