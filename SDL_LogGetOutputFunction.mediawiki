@@ -34,16 +34,16 @@ void* SDL_LogOutputFunction(void*           userdata,
                             SDL_LogPriority priority,
                             const char*     message)
 ```
- where
- ||<code>userdata</code>||is passed as '''userdata''' to [[SDL_LogGetOutputFunction]]()||
- ||<code>category</code>||^the category to query^||
- ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#Remarks|below]] for details||
+: where its parameters are:
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogGetOutputFunction]]()||
+ ||<code>category</code>||^the log category to query^||
+ ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#priority|below]] for details||
  ||<code>message</code>||^the log output message ???^||
- and
- <code>priority</code> may be one of the following ^or NULL ???^:
- <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
+<span id="priority"></span>
+: <code>priority</code> may be one of the following ^or NULL ???^:
+: <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
- <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
+: <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
 
 
 ''You can add useful comments here''
