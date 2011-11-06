@@ -100,15 +100,17 @@ The function prototype for '''callback''' is:
 Uint32 SDL_TimerCallback(Uint32 interval, 
                          void*  param)
 ```
-: where <code>interval</code> and <code>param</code> are what were passed as '''interval''' and '''param''' to [[SDL_AddTimer]]().
+: where its parameters are:
+ ||<code>interval</code>||what was passed as '''interval''' to [[SDL_AddTimer]]()||
+ ||<code>param</code>||what was passed as '''param''' to [[SDL_AddTimer]]()||
 
-The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
+: The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
 
-<<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  Which is the better version?)>>
+: <<Color2(green,The next paragraph is from the current header and seems to be redundant with the above except for the parts in italics.  Which is the better version?)>>
 
-The callback function is passed the current timer interval and returns the next timer interval.  If the returned value is the same as the one passed in, the ''periodic alarm'' continues, ''otherwise a new alarm is scheduled''.  If the ''callback returns'' 0, the ''periodic alarm'' is canceled.
+: The callback function is passed the current timer interval and returns the next timer interval.  If the returned value is the same as the one passed in, the ''periodic alarm'' continues, ''otherwise a new alarm is scheduled''.  If the ''callback returns'' 0, the ''periodic alarm'' is canceled.
 
-Another way to cancel a currently-running timer is by calling [[SDL_RemoveTimer]]() with the timer's ID (which was returned from [[SDL_AddTimer]]()).
+,,Another way,, ^To cancel a currently-running timer^ ,,is by calling,, ^call^ [[SDL_RemoveTimer]]() with the timer's ID (which was returned from [[SDL_AddTimer]]()).
 
 The granularity of the timer ^used by '''interval'''^ is platform-dependent, but you should count on it being at least 10 ms as this is the most common number. This means that if you request a 16 ms timer, your callback will run approximately 20 ms later on an unloaded system. If you wanted to set a flag signaling a frame update at 30 frames per second (every 33 ms), you might set a timer for 30 ms (see [[#Code Example|Code Example]]). 
 
