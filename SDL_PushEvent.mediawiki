@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_PushEvent =
@@ -36,11 +36,15 @@ Note: Pushing device input events onto the queue doesn't modify the state of the
 
 This function is thread safe, and can be called from other threads safely. *
 
-<<Color2(green,This was listed after the function description. Does it belong on this page?)>>
- typedef int (SDLCALL * SDL_EventFilter) (void *userdata, SDL_Event * event);
+<!-- #<<Color2(green,This was listed after the function description. Does it belong on this page?)>> -->
+<!-- # ``` -->
+##int SDL_EventFilter(void*      userdata,
+##                    SDL_Event* event);
+##```
 
 *<<Color2(green,The following was a note on the [[SDL_SetEventFilter]] page from 1.2.  Is it incorrect given the RV for this function regarding filtering?  Or is there another way to filter that this function can't bypass?  Should this note be removed from [[SDL_SetEventFilter]]?)>>
- Note: Events pushed onto the queue with [[SDL_PushEvent]]() or [[SDL_PeepEvents]]() do not get passed through the event filter. *
+
+Note: Events pushed onto the queue with [[SDL_PushEvent]]() or [[SDL_PeepEvents]]() do not get passed through the event filter. *
 
 == Related Functions ==
 :[[SDL_PeepEvents]] *???
