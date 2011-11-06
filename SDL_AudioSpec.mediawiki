@@ -95,7 +95,7 @@ void SDL_AudioCallback(void*  userdata,
                        Uint8* stream,
                        int    len)
 ```
- ^with the following parameters:^
+: where its parameters are:
  ||'''userdata'''||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
  ||'''stream'''||a pointer to the audio data buffer filled in by the callback||
  ||'''len'''||the length of that buffer in bytes||
