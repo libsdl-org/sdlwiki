@@ -15,7 +15,7 @@ void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback,
 == Function Parameters ==
 {|
 |'''callback'''
-|the callback function to set; see [[#Remarks|Remarks]] for details
+|the log output function to set; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
 |a pointer that is passed to '''callback'''
@@ -27,22 +27,20 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,Should this prototype be included here if the user is creating their own callback?)>>
-
-The ^default^ function prototype for '''callback''' is:
+The function prototype for '''callback''' is:
  ```
 void* SDL_LogOutputFunction(void*           userdata,
                             int             category,
                             SDL_LogPriority priority,
                             const char*     message)
 ```
- where
- ||<code>userdata</code>||is passed as '''userdata''' ^from^ [[SDL_LogSetOutputFunction]]()||
- ||<code>category</code>||^the category to query^||
- ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#Remarks|below]] for details||
+: where its parameters are:
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
+ ||<code>category</code>||^the log category to query ???^||
+ ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#priority|below]] for details||
  ||<code>message</code>||^the log output message ???^||
- and
- <code>priority</code> may be one of the following ^or NULL ???^:
+ <span id="priority"></span>
+: <code>priority</code> may be one of the following ^or NULL ???^:
  <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
  <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
