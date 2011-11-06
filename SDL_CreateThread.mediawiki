@@ -18,20 +18,18 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 == Function Parameters ==
 {|
 |'''fn''' 
-|the function to be run in the new thread; see [[#Remarks|Remarks]] for details
+|the function to call in the new thread; see [[#Remarks|Remarks]] for details
 |-
 |'''name'''
 |the name of the thread; see [[#name|Remarks]] for details
 |-
 |'''data''' 
-|a void* user context parameter ''-and/or-'' <code>passed directly to the thread function</code> ''-or-'' ^a pointer to the data to be passed to the function in the new thread^ 
+|a pointer that is passed to '''fn'''
 |}
 
 
 == Return Value ==
 Returns the new thread pointer on success, NULL if the new thread could not be created. This is a pointer to an SDL defined device independent thread information structure. The returned thread pointer will be used for any subsequent calls to manage this thread.
-
-<<Color2(green,Should it be mentioned here that the function '''fn''' itself returns an int or is it sufficient to note that in the Remarks?)>>
 
 == Code Examples ==
 ```c++
@@ -97,9 +95,12 @@ Thread returned value:10
 == Remarks ==
 *<br/>[[SDL_CreateThread]]() creates a new thread of execution that shares all of its parent's global memory, signal handlers, file descriptors, etc, and runs the function '''fn''', passing it the void pointer '''data'''.  The thread quits when '''fn''' returns. <br/>*
 
-'''fn''' is the function passed to [[SDL_CreateThread]]() ^and has the following syntax^.  ,,It is passed a void* user context parameter and returns an int.,,
-
-: ```int (SDLCALL * SDL_ThreadFunction) (void *data)```<br/> <<Color2(green,Should this be in a gray box instead?)>>
+The function prototype for '''fn''' is:
+ ```
+int SDL_ThreadFunction(void* data)
+```
+: where its parameter is:
+ ||<code>data</code>||what was passed as '''data''' to [[SDL_CreateThread]]()||
 
 Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code> APIs to start a new thread. This way, if it's the SDL.DLL which uses this API, then the RTL of SDL.DLL will be used to create the new thread, and if it's the application, then the RTL of the application will be used.  <<Color2(green,This information is also listed on the main Category page in more detail but it seems relevant to list at least some of it here as well.  Should the header be referenced as a link for more information?)>>
 
