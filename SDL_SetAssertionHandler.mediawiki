@@ -33,7 +33,7 @@ The function prototype for '''handler''' is:
 SDL_assert_state YourAssertionHandler(const SDL_assert_data* data,
                                       void*                  userdata)
 ```
-: where <code>YourAssertionHandler</code> is the name of your function, and its parameters are:
+: where <code>YourAssertionHandler</code> is the name of your function and its parameters are:
  ||<code>data</code>||a pointer to the [[SDL_assert_data]] structure corresponding to the current assertion||
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]()||
 
