@@ -16,13 +16,13 @@ SDL_TimerID SDL_AddTimer(Uint32            interval,
 == Function Parameters ==
 {|
 |'''interval'''
-|the timer delay (ms) passed to '''callback'''; see [[#Remarks|Remarks]] for details
+|the timer delay (ms) passed to '''callback'''
 |-
 |'''callback'''
-|the callback function to call when the specified '''interval''' elapses; see [[#callback|Remarks]] for details
+|the function to call when the specified '''interval''' elapses; see [[#Remarks|Remarks]] for details
 |-
 |'''param'''
-|the user parameter passed to '''callback'''; see [[#callback|Remarks]] for details
+|a pointer that is passed to '''callback'''
 |}
 
 == Return Value ==
@@ -100,7 +100,7 @@ The function prototype for '''callback''' is:
 Uint32 SDL_TimerCallback(Uint32 interval, 
                          void*  param)
 ```
-: where <code>interval</code> and <code>param</code> are passed in as-is from [[SDL_AddTimer]]().
+: where <code>interval</code> and <code>param</code> are what were passed as '''interval''' and '''param''' to [[SDL_AddTimer]]().
 
 The callback function is passed the current timer interval ''and the user supplied parameter from the [[SDL_AddTimer]]() call'' and returns the next timer interval. If the returned value ''from the callback'' is the same as the one passed in, the ''timer'' continues ''at the same rate''. If the ''returned value from the callback is'' 0, the ''timer'' is canceled.
 
