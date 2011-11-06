@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_SetEventFilter =
@@ -35,7 +35,7 @@ int YourEventFilter(void*      userdata,
                     SDL_Event* event)
 ```
 <!-- #End Include here -->
-where <code>YourEventFilter</code> is the name of your function, <code>userdata</code> is is what was passed as '''userdata''' to [[SDL_SetEventFilter]]() and <code>event</code> is the event that triggered the callback.
+where <code>YourEventFilter</code> is the name of your function, <code>userdata</code> is what was passed as '''userdata''' to [[SDL_SetEventFilter]](), and <code>event</code> is the event that triggered the callback.
 
 
 If the '''filter''' returns 1, then the event will be added to the internal queue.
