@@ -33,7 +33,9 @@ The function prototype for '''handler''' is:
 SDL_assert_state YourAssertionHandler(const SDL_assert_data* data,
                                       void*                  userdata)
 ```
-: where <code>YourAssertionHandler</code> is the name of your function, <code>data</code> is a pointer to the [[SDL_assert_data]] struct corresponding to the current assertion, and <code>userdata</code> is what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]().
+: where <code>YourAssertionHandler</code> is the name of your function, and its parameters are:
+ ||<code>data</code>||a pointer to the [[SDL_assert_data]] structure corresponding to the current assertion||
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]()||
 
 :This callback should return an [[SDL_assert_state]] value indicating how to handle the assertion failure.
 
