@@ -76,7 +76,7 @@ A structure that contains pixel format information.
 |'''refcount'''
 |(internal use)
 |-
-|<rowstyle="color: #808080;">[[SDL_PixelFormat]]*
+|<rowstyle="color: #808080;">SDL_PixelFormat*
 |'''next'''
 |(internal use)
 |}
