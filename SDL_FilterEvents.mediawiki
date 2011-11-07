@@ -1,13 +1,12 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_FilterEvents =
 Use this function to run the filter function on the current event queue, removing any events for which the filter returns 0.  
 
-<<Color2(green,I suspect that the perspective in the header where this was taken from was different and it should read:)>> 
-
-Use this function to filter the current event queue, removing any events for which the filter returns 0.
+<<Color2(green,Is this more appropriate wording for this context?)>> <br/>
+Use this function to filter the current event queue and remove filtered events.
 
 
 == Syntax ==
@@ -19,10 +18,10 @@ void SDL_FilterEvents(SDL_EventFilter filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|a function that gets called when an event happens; see [[#Remarks|Remarks]] for details
+|the function to call when an event happens; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|^a pointer filled in with user-specified information to be filtered^
+|a pointer that is passed to '''filter'''
 |}
 
 == Code Examples ==
@@ -31,18 +30,20 @@ You can add your code example here
 ```
 
 == Remarks ==
-The '''filter''' function has the following form:
+The function prototype for '''filter''' is:
+ ```
+int SDL_EventFilter(void*      userdata, 
+                    SDL_Event* event)
 ```
-int SDL_EventFilter(void* userdata, SDL_Event* event)
-```
-where '''userdata''' is the event queue to filter and '''event''' is the desired event to pull from the queue.
-<<Color2(green,Should this be formatted like the syntax section?)>>
+: where its parameters are:
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_FilterEvents]]()||
+ ||<code>event</code>||the desired event to pull from the queue||
 
 See [[SDL_SetEventFilter]]() for more information.
 
 == Related Functions ==
-:[[SDL_GetEventFilter]] ???
-:[[SDL_SetEventFilter]] ???
+:[[SDL_GetEventFilter]]
+:[[SDL_SetEventFilter]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
