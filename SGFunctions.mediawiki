@@ -143,7 +143,7 @@ returnType* SDL_FunctionName(type1  parameter1,
 
 ''Note'': Do not remove or alter the code box markup surrounding the function syntax.  The starting and ending markup must remain on separate lines above and below the rest of the content in order to generate the code box.
 
-||<( |3 30%>''If'' a function refers to a __callback function__||''Action'': Place any relevant info about the callback function in the [[#Remarks|Remarks]] section and place a link in the parameters section as described [[#parameters|below]].||
+||<( |3 30%>''If'' a function refers to a __callback function__||''Action'': See the special section on callback functions [[#callback|below]].||
 ||''Note'': Callback functions do not get their own pages.||
 ||''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()||
 
@@ -240,7 +240,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Action 2'': Check the [[#specific|table below]] for structure-specific phrasing.
 |-
-|''Note'': Be sure to hyperlink the structure name as shown in ''Action 1''.
+|''Note'': Be sure to hyperlink the structure name as shown in ''Action 1'' in the type and description columns (as appropriate) '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
 |-
 |''Example'': [[SDL_UnionRect]]()
 |-
@@ -251,20 +251,34 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Example'': [[SDL_RenderClear]]()
 |-
-|<( |2 30%>''If'' a description must refer to any other __page in the API__
-|''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
+|<( |2 30%>''If'' the description mentions __an enumeration__
+|''Action'': It is not necessary to specifically describe it as an enumeration as above for structures, but DO hyperlink if it has a page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
 |-
-|''Note'': ''If'' the description mentions an __enumeration__ it is not necessary to describe it as an enumeration as above for structures, but do hyperlink if there is a page.
+|''Example'': [[SDL_PixelFormat]]
 |-
-|<( |3 30%>''If'' the parameter is __for internal use, deprecated, or read-only__
-|''Action'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|<( |1 30%>''If'' a description must refer to any other __page in the API__
+|''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
+|-
+|<( |5 30%>''If'' the parameter is __for internal use, deprecated, or private__
+|<span id="grey"></span>''Action 1'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|-
+|''Action 2'': Include the reason (ie: internal use, etc.) in parentheses at the end of the description.
+|-
+|''Action 3'': DO NOT hyperlink any related API pages (ie: structure type) on greyed out parameters.
 |-
 |''Example'': ```
 |<rowstyle="color: #808080;">'''param'''
-|description
-|```
+|description (reason)
+|```, [[SDL_PixelFormat]]
 |-
 |''Note'': Although a rare case, any other table style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
+|-
+|<( |3 30%>''If'' a function refers to a __callback function__
+|''Action'': See the special section on callback functions [[#callback|below]].
+|-
+|''Note'': Callback functions do not get their own pages.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
 |-
 |<( |4 30%>''If'' __a parameter references another parameter__ on that same page
 |''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
@@ -738,5 +752,65 @@ The Footer section consists of a horizontal rule followed by two links separated
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
+
+
+
+=== Special ===
+This section contains details for special formatting circumstances that affect several sections of a page at once but that don't affect every function page.
+
+<span id="callback"></span>
+==== Callback Functions ====
+The presence of a callback function will affect two (2) sections of the main function's page - Function Parameters and Remarks.
+
+''Action'': '''Use the following formatting specifics in addition to those listed for the main function above:'''
+
+: ''Note'': For simplicity these instructions will use the parameter '''callback''' to represent any function parameter that refers to a callback function.  The ''actual'' parameter name may be different (ie: filter).<br/>The parameter '''userdata''' will be used here to refer to any corresponding function parameter that is passed directly to the callback function and carries user-specific data (usually a pointer).  Again, the ''actual'' parameter name may vary.
+
+: __Function Parameters__
+: '''The callback-related parameters should be listed like any others with the following specific wording conventions''' (modified as necessary):
+   ||'''callback'''||the function to call when <callback trigger/reason>; see [[#Remarks|Remarks]] for details||
+   ||'''userdata'''||a pointer that is passed to '''callback'''||
+: ''Example'': [[SDL_AddTimer]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]]()
+: ''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_SetEventFilter]](), [[SDL_GetEventFilter]]()
+: __Remarks__
+: '''The basic text and format for displaying the callback function syntax and its parameters is shown here and is detailed below.'''
+: ''Markup'': Use 
+   ```{
+The function prototype for '''callback''' is:
+ {{{#!highlight cpp
+callback syntax
+```
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+ ||<code>callback parameter</code>||description||
+: optional discussion or details...
+}}}}
+: to display
+The function prototype for '''callback''' is:
+ ```c++
+callback syntax
+```
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+ ||<code>callback parameter</code>||description||
+: optional discussion or details...
+<br/>
+: Use the same text as above except:
+* Replace <code>callback syntax</code> with the callback function's syntax formatted the same as the main function's syntax (see [[#Syntax|above]]).
+* Replace <code>callback parameter</code> with the name of each callback function parameter using the same formatting instructions as the main function '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
+* Replace "description" with an appropriate description of the callback's parameter.
+* For the <code>userdata</code> parameter (or comparable) use the following text (modified as necessary):
+: ```what was passed as '''userdata''' to [[SDL_MainFunctionName]]()```<br/>replacing <code>MainFunctionName</code> with the name of the primary function on the page.
+
+''Note'': Only the first line should be left-justified.  Everything else related directly to the callback should be indented one level (or more) under that line to indicate it's relationship to the callback as opposed to the main function.
+: ''Markup'': Use a single space in front of the code box opening curly braces and the table markup, use a space-period-space in front of the other text to create the indent.  Use additional leading spaces (before the period, if present) if further indenting is required.  (See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Indenting Wiki Basics] for further information about indenting.)
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
 
 <<Include(SGWikiBasics, , , from="Start SG Include here.", to="##End SG Include here.")>>
