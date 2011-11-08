@@ -83,7 +83,18 @@ When your remark includes a reference to a function parameter:
 
 ''Example'': [[SDL_GLattr]]
 
-==== Using an Include ====
+
+=== Referencing A Callback Function ===
+''If'' your remark is describing a callback function:
+
+''Action'': See the special section on callback functions in the [[SGFunctions#Callback_Functions|Function Pages]] Style Guide.
+
+''Note'': Callback functions do not get their own pages.
+
+''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+
+
+=== Using an Include ===
 ''If'' your remark uses an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Include] to copy content from another page into the Remarks section, see the guidelines below.
 
 {|
