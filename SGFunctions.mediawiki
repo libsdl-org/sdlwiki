@@ -770,8 +770,6 @@ The presence of a callback function will affect two (2) sections of the main fun
 : '''The callback-related parameters should be listed like any others with the following specific wording conventions''' (modified as necessary):
    ||'''callback'''||the function to call when <callback trigger/reason>; see [[#Remarks|Remarks]] for details||
    ||'''userdata'''||a pointer that is passed to '''callback'''||
-: ''Example'': [[SDL_AddTimer]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]]()
-: ''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_SetEventFilter]](), [[SDL_GetEventFilter]]()
 : __Remarks__
 : '''The basic text and format for displaying the callback function syntax and its parameters is shown here and is detailed below.'''
 : ''Markup'': Use 
@@ -804,6 +802,9 @@ callback syntax
 
 ''Note'': Only the first line should be left-justified.  Everything else related directly to the callback should be indented one level (or more) under that line to indicate it's relationship to the callback as opposed to the main function.
 : ''Markup'': Use a single space in front of the code box opening curly braces and the table markup, use a space-period-space in front of the other text to create the indent.  Use additional leading spaces (before the period, if present) if further indenting is required.  (See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Indenting Wiki Basics] for further information about indenting.)
+
+''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddTimer]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetEventFilter]](), [[SDL_GetEventFilter]]()
+
 
 
 
