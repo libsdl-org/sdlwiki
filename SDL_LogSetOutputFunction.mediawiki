@@ -15,7 +15,7 @@ void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback,
 == Function Parameters ==
 {|
 |'''callback'''
-|the log output function to set; see [[#Remarks|Remarks]] for details
+|the function to call instead of the default; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
 |a pointer that is passed to '''callback'''
