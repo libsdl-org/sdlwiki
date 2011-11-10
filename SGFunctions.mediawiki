@@ -756,30 +756,94 @@ The Footer section consists of a horizontal rule followed by two links separated
 
 
 === Special ===
-This section contains details for special formatting circumstances that are best described separately.
+This section contains details for special formatting circumstances that are best described separately from the average function page.  In general these guidelines should be used in conjunction with the above.
 
 <span id="callback"></span>
 ==== Callback Functions ====
 The presence of a callback function will affect two (2) sections of the main function's page - Function Parameters and Remarks.
 
-''Action'': '''Use the following formatting specifics in addition to those listed for the main function above:'''
+''Action'': '''Use the following formatting specifics in addition to those listed for the main function [[#Function Parameters|above]] whenever a callback function is included on a function page:'''
 
-: ''Note'': For simplicity these instructions will use the parameter '''callback''' to represent any function parameter that refers to a callback function.  The ''actual'' parameter name may be different (ie: filter).<br/>The parameter '''userdata''' will be used here to refer to any corresponding function parameter that is passed directly to the callback function and carries user-specific data (usually a pointer).  Again, the ''actual'' parameter name may vary.
+{|
+|
+|<bgcolor="#EDEDED">''Function Parameters Section''
+|-
+|<( |3 30%>For the parameter that refers to the __callback__ function
+|''Action'': Use the following wording, modified as necessary, to describe the parameter:<br/><code>the</code> <code>function</code> <code>to</code> <code>call</code> <code><when</code><code>/</code><code>why>;</code> <code>see</code> <code>[[#Remarks|Remarks]]</code> <code>for</code> <code>details</code><br/>where the text in <code><></code> is replaced with an appropriate description of when or why the callback would be called.
+|-
+|''Note'': This parameter is often named '''callback''' but may have other names (such as '''filter''', '''fn''', or '''handler''').
+|-
+|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( |4 30%>For the parameter that carries __user data__ to the callback
+|<span id="UserData"></span>''Action'': Use the following wording, modified as necessary, to describe the parameter:<br/><code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code><br/>where <code>callback</code> is replaced with the callback function parameter name (if necessary).
+|-
+|''Note'': In rare cases, often 'Get' functions, this is a pointer to a pointer and should be described as<br/><code>a</code> <code>pointer</code> <code>to</code> <code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code> instead.
+|-
+|''Note'': This parameter is often named '''userdata''', but may have other names (such as '''data''' or '''param''').  It is important to distinguish the '''userdata''' type parameter from other parameters that are passed to the callback also, but that are not strictly carrying "user data" (such as '''interval''') and from other parameters that are unrelated to the callback function (such as '''name''').  See below for details.
+|-
+|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_CreateThread]](), [[SDL_AddTimer]](), [[SDL_LogGetOutputFunction]]()
+|-
+|<( |2 30%>For other parameters __related to the callback__
+|''Action'': There may be other parameters that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions, though.
+|-
+|''Example'': [[SDL_AddTimer]](), [[SDL_SetTimer]]()
+|-
+|<( |2 30%>For additional function parameters __''not'' related to the callback__
+|<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Function Parameters|above]]
+|-
+|''Example'': [[SDL_CreateThread]]()
+|-
+|
+|<bgcolor="#EDEDED">''Remarks Section''
+|-
+|<( 30%>For the basic text and format for displaying the __callback function syntax and parameters__
+|''Action'': '''See ''Markup'' immediately below this table and the remainder of this section for details...'''
+|-
+|<( 30%>__Location__
+|''Action'': Generally the callback details should be located at the top of the Remarks section, but below any fundamental or critical remarks about the main function, if present.
+|-
+|<( 30%>__Alignment__
+|''Action'': Only the first line should be left-justified.  Everything else related directly to the callback should be [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Indenting indented] one level (or more) under that line to indicate it's relationship to the callback as opposed to the main function.
+|-
+|<( 30%>''If'' the callback parameter is __not '''callback'''__
+|''Action'': Replace '''callback''' with the function parameter name used in the main function to refer to the callback function.
+|-
+|<( 30%>__<code>callback syntax</code>__
+|''Action'': Replace <code>callback syntax</code> with the callback function's syntax formatted the same as the main function's syntax (see [[#Syntax|Syntax]] above).
+|-
+|<( |2 30%>''If'' the __callback function name__ requires any explanation
+|''Action'': Replace "where its __parameters__ are:" with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><Callbackname></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name.
+|-
+|''Example'': [[SDL_AddEventWatch]]()
+|-
+|<( |3 30%>__<code>
+|callback parameter
+|</code>description<code>
+|</code>__
+|''Action 1'': Duplicate the line for each parameter in the callback (ie: there should be 2 lines for 2 parameters).
+|-
+|''Action 2'': Replace <code>callback parameter</code> with the name of each callback function parameter using the same formatting instructions as the main function '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
+|-
+|''Action 3'': Replace "description" with an appropriate description of the callback's parameter. See the following for specific parameters.
+|-
+|<( 30%>For the __<code>userdata</code>__ parameter (or comparable)
+|''Action'': Use the following text (modified as necessary):<br/>```what was passed as '''userdata''' to [[SDL_MainFunctionName]]()```<br/>replacing <code>MainFunctionName</code> with the name of the primary function on the page.
+|-
+|<( 30%>''If'' there is __"optional discussion or details"__
+|''Action'': Replace that text with any relevant information about the callback function.  Be sure to indent any additional text at least one level.
+|-
+|
+|<(>''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddTimer]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetEventFilter]](), [[SDL_GetEventFilter]]()
+|}
 
-: __Function Parameters__
-: '''The callback-related parameters should be listed like any others with the following specific wording conventions''' (modified as necessary):
-   ||'''callback'''||the function to call when <callback trigger/reason>; see [[#Remarks|Remarks]] for details||
-   ||'''userdata'''||a pointer that is passed to '''callback'''||
-: __Remarks__
-: '''The basic text and format for displaying the callback function syntax and its parameters is shown here and is detailed below.'''
-: ''Markup'': Use 
+: ''Markup'': To detail the syntax and parameters of the callback function use:
    ```{
 The function prototype for '''callback''' is:
  {{{#!highlight cpp
 callback syntax
 ```
 : where its parameters are:
- ||<code>callback parameter</code>||description||
  ||<code>callback parameter</code>||description||
 : optional discussion or details...
 }}}}
@@ -790,25 +854,15 @@ callback syntax
 ```
 : where its parameters are:
  ||<code>callback parameter</code>||description||
- ||<code>callback parameter</code>||description||
 : optional discussion or details...
-<br/>
-: Use the same text as above except:
-* Replace <code>callback syntax</code> with the callback function's syntax formatted the same as the main function's syntax (see [[#Syntax|above]]).
-* Replace <code>callback parameter</code> with the name of each callback function parameter using the same formatting instructions as the main function '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
-* Replace "description" with an appropriate description of the callback's parameter.
-* For the <code>userdata</code> parameter (or comparable) use the following text (modified as necessary):
-: ```what was passed as '''userdata''' to [[SDL_MainFunctionName]]()```<br/>replacing <code>MainFunctionName</code> with the name of the primary function on the page.
 
-''Note'': Only the first line should be left-justified.  Everything else related directly to the callback should be indented one level (or more) under that line to indicate it's relationship to the callback as opposed to the main function.
-: ''Markup'': Use a single space in front of the code box opening curly braces and the table markup, use a space-period-space in front of the other text to create the indent.  Use additional leading spaces (before the period, if present) if further indenting is required.  (See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Indenting Wiki Basics] for further information about indenting.)
 
-''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddTimer]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetEventFilter]](), [[SDL_GetEventFilter]]()
+<!-- #Need to distribute examples and reword left column better. -->
 
 
 
 ==== Compatibility Functions ====
-Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the above guidelines for formatting pages in <code>CategoryCompat</code> with the following exceptions''':
+Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed for the main function above for [[#CategoryCompat|CategoryCompat]] pages:''':
 
 ''Action 1'': The top of every compatibility function page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
  ```
