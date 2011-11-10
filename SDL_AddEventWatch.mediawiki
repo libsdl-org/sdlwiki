@@ -32,7 +32,7 @@ You can add your code example here
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_AddEventWatch]]()||
  ||<code>event</code>||the event that triggered the callback||
 
-If '''filter''' returns 0 then the event will be dropped from the queue, otherwise the event queue will be preserved.
+: If '''filter''' returns 0 then the event will be dropped from the queue, otherwise the event queue will be preserved.
 
 /!\ Be very careful of what you do in the event filter function, as it may run in a different thread!
 
