@@ -96,9 +96,9 @@ void SDL_AudioCallback(void*  userdata,
                        int    len)
 ```
 : where its parameters are:
- ||'''userdata'''||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
- ||'''stream'''||a pointer to the audio data buffer filled in by the callback||
- ||'''len'''||the length of that buffer in bytes||
+ ||<code>userdata</code>||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
+ ||<code>stream</code>||a pointer to the audio data buffer filled in by SDL_AudioCallback()||
+ ||<code>len</code>||the length of that buffer in bytes||
 
 Once the callback returns, the buffer will no longer be valid.
 
