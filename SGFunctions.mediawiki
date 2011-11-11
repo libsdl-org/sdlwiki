@@ -882,8 +882,11 @@ Compatibility functions are present in the API for backward compatibility only a
 ```
 
 ''Action 2'': 
- ||<( 30%>''If'' SDL 1.3 __includes one or more functions that have replaced__ the compatibility function||''Action'': See ''Markup A'' below.||
- ||<( 30%>''If'' SDL 1.3 __does NOT include any equivalent function__||''Action'': See ''Markup B'' below.||
+ ||<( 30%>''If'' __one SDL 1.3 function__ replaces the compatibility function||''Action'': See ''Markup A'' below.||
+ ||<( |3 30%>''If'' __more than one SDL 1.3 function__ has replaced the compatibility function||''Action'': See ''Markup A'' below and create a list of functions, placing the most direct counterpart (or pair) first and alphabetizing any additional functions below that using the same markup for each additional function.||
+ ||''Note'': Please avoid making this list any larger than necessary.  This is NOT a related functions list!||
+ ||''Example'': [[SDL_AudioDriverName]](), [[SDL_WM_ToggleFullScreen]]()||
+ ||<( 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup B'' below.||
 <br/>
 : ''Markup A'': Add the following section to the end of the page above the footer, and replace <code>SDL_Function</code> with the name of the function in SDL 1.3 that has replaced the compatibility function on that page:
   ```
@@ -891,15 +894,13 @@ Compatibility functions are present in the API for backward compatibility only a
 '''<<Color2(black,Darkorange,This function has been replaced by the following in SDL 1.3:)>>'''
  .[[SDL_Function]]
 ```
-: ''Note'': ''If'' more than 1 function in SDL 1.3 has replaced the SDL 1.2 function, create a list placing the most direct counterpart (or pair) first and alphabetizing any additional functions below that using the same markup for each additional function.  
-* Please avoid making this list any larger than necessary.  This is NOT a related functions list!
-: ''Example'': [[SDL_AudioDriverName]](), [[SDL_WM_ToggleFullScreen]]()
 <br/>
-: ''Markup B'': Add the following section to the end of the page above the footer, and replace <code>Other alternate here</code> with text describing other options in 1.3 that could be used to accomplish the same goal (see other compat pages for examples):
+: ''Markup B'': Add the following section to the end of the page above the footer, and replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal (see other [[CategoryCompat]] pages for examples):
   ```
 == SDL 1.3 Replacement(s) ==
 '''<<Color2(black,Darkorange,There are currently no equivalent functions in SDL 1.3.)>>'''
-Other alternate here
+
+Other options here
 ```
 : ''Example'': [[SDL_EnableKeyRepeat]]()
 
