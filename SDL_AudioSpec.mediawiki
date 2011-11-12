@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 '''DRAFT'''
 
@@ -57,7 +57,7 @@ You can add your code example here
 
 <<Color2(green,Should this be an include from [[SDL_AudioFormat]] instead?)>>
 '''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^Audio format flags may be one of the following values:^
- ||||''Default,,s,, to LSB byte order'' -or- ''Basic'' ???||
+ ||||''Defaults to LSB byte order'' -or- ''Basic'' ???||
  ||AUDIO_U8||unsigned 8-bit samples.||
  ||AUDIO_S8||signed 8-bit samples.||
  ||AUDIO_U16 or AUDIO_U16LSB||not supported by all hardware (unsigned 16-bit little-endian)||
