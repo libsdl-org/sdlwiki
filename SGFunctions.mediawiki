@@ -778,9 +778,9 @@ The presence of a callback function will affect two (2) sections of the main fun
 |<( |4 30%>For the parameter that passes __user data__ to the callback
 |<span id="UserData"></span>''Action'': Use the following wording, modified as necessary, to describe the parameter:<br/><code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code><br/>where <code>callback</code> is replaced with the callback function parameter name (if necessary).
 |-
-|''Note'': In rare cases, often 'Get' functions, this is a pointer to a pointer and should be described as<br/><code>a</code> <code>pointer</code> <code>to</code> <code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code> instead.
+|''Note'': In rare cases, often 'Get' functions, this is a pointer to a pointer and should be described as such.
 |-
-|''Note'': This parameter is often named '''userdata''', but may have other names (such as '''data''' or '''param''').  It is important to distinguish the '''userdata''' type parameter from other parameters that are passed to the callback also, but that are not strictly carrying "user data" (such as '''interval''') and from other parameters that are unrelated to the callback function (such as '''name''').  See below for details.
+|''Note'': This parameter is often named '''userdata''', but may have other names (such as '''data''' or '''param''').  It is important to distinguish this parameter from other parameters that are passed to the callback also, but that are not strictly carrying "user data" (such as '''interval''') and from other parameters that are unrelated to the callback function (such as '''name''').  See below for details.
 |-
 |''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_CreateThread]](), [[SDL_AddTimer]](), [[SDL_LogGetOutputFunction]]()
 |-
@@ -822,7 +822,7 @@ callback syntax
 |<bgcolor="#EDEDED">''Remarks Section Formatting Details''
 |-
 |<( |2 30%>__Location__
-|''Action'': Generally the callback details should be located at the top of the Remarks section, but below any fundamental or critical remarks about the main function, if present.  But, logic should prevail in determining where to place this information if the Remarks section is large. This is not a hard and fast rule.
+|''Action'': Generally the Remarks section is roughly organized in the same order as the function parameters.  Callback details should be located accordingly, or at the top of the Remarks section if there isn't much else, but below any fundamental or critical remarks about the main function as a whole, if present.  But, logic should prevail in determining where to place this information if the Remarks section is large. The callback information should be prominent.
 |-
 |''Example'': [[SDL_CreateThread]](), [[SDL_AddEventWatch]](), [[SDL_SetAssertionHandler]]()
 |-
@@ -874,7 +874,7 @@ callback syntax
 
 
 ==== Compatibility Functions ====
-Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed for the main function above for [[#CategoryCompat|CategoryCompat]] pages:''':
+Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed above for [[#CategoryCompat|CategoryCompat]] pages:''':
 
 ''Action 1'': The top of every compatibility function page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
  ```
