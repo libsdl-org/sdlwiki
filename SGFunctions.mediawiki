@@ -838,7 +838,7 @@ callback syntax
 |''Action'': Replace "callback syntax" with the callback function's syntax formatted the same as the main function's syntax. (See [[#Syntax|Syntax]] above for details.)
 |-
 |<( |2 30%>''If'' the __callback function name__ requires any explanation
-|''Action'': Replace "where its __parameters__ are:" in the [[#prototype|basic format]] above with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><Callbackname></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name (ie: your function name).
+|''Action'': Replace "where its parameters are:" in the [[#prototype|basic format]] above with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><Callbackname></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name (ie: your function name).
 |-
 |''Example'': [[SDL_AddEventWatch]]()
 |-
