@@ -585,4 +585,165 @@ The Footer section consists of a horizontal rule followed by two links separated
 <br/>
 <br/>
 
+=== Special ===
+This section contains details for special formatting circumstances that are best described separately from the average structure page.  In general these guidelines should be used in conjunction with the above.
+
+<span id="callback"></span>
+==== Callback Functions ====
+Although having a callback function associated with a structure is rare, it does occasionally occur.  Documenting this will affect two (2) sections of the structure's page - Data Fields and Remarks.
+
+: ''Note'': Because callback functions are so rare with structures most of the examples listed here will be on function pages.  This is for illustrative purposes only.  '''As of this writing the only callback associated with a structure is the audio callback, found with [[SDL_AudioSpec]].'''  Because of this rarity many of the guidelines below will not currently apply to a structure-based callback, but this is being written with the future possibilities in mind.
+
+''Action 1'': '''Use the following formatting specifics in addition to those listed [[#Data Fields|above]] for the structure whenever a callback function is included on a structure page:'''
+
+{|
+|
+|<bgcolor="#EDEDED">''Data Fields Section Formatting Details''
+|-
+|<( |3 30%>For the field that refers to the __callback__ function
+|''Action'': Use the following wording, modified as necessary, to describe the field:<br/><code>the</code> <code>function</code> <code>to</code> <code>call</code> <code><when</code><code>/</code><code>why>;</code> <code>see</code> <code>[[#Remarks|Remarks]]</code> <code>for</code> <code>details</code><br/>where the text in <code><></code> is replaced with an appropriate description of when or why the callback would be called.
+|-
+|''Note'': This parameter is often named '''callback''' but may have other names.
+|-
+|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( |4 30%>For the field that passes __user data__ to the callback
+|<span id="UserData"></span>''Action'': Use the following wording, modified as necessary, to describe the field:<br/><code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code><br/>where <code>callback</code> is replaced with the callback function field name (if necessary).
+|-
+|''Note'': In rare cases this may be a pointer to a pointer and should be described as such.
+|-
+|''Note'': This field is often named '''userdata''', but may have other names.  It is important to distinguish this field from other fields that are passed to the callback also, but that are not strictly carrying "user data", and from other fields that are unrelated to the callback function (such as '''samples''', '''channels''').  See below for details.
+|-
+|''Example'': [[SDL_AudioSpec]], [[SDL_LogSetOutputFunction]](), [[SDL_CreateThread]]()
+|-
+|<( |2 30%>For other fields __related to the callback__
+|''Action'': There may be other fields that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions.
+|-
+|''Example'': [[SDL_AddTimer]](), [[SDL_SetTimer]]()
+|-
+|<( |2 30%>For additional data fields __''not'' related to the callback__
+|<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Data Fields|above]]
+|-
+|''Example'': [[SDL_CreateThread]]()
+|}
+
+<span id="prototype"></span>
+''Action 2'': '''Detail the syntax and parameters of the callback function in the Remarks section using the following __basic format__ with the changes listed in the table below:'''
+   ```{
+The function prototype for '''callback''' is:
+ {{{#!highlight cpp
+callback syntax
+```
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+: optional return value info...
+: optional remarks or details...
+}}}}
+: to display
+The function prototype for '''callback''' is:
+ ```c++
+callback syntax
+```
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+: optional return value info...
+: optional remarks or details...
+
+{|
+|
+|<bgcolor="#EDEDED">''Remarks Section Formatting Details''
+|-
+|<( |2 30%>__Location__
+|''Action'': Generally the Remarks section is roughly organized in the same order as the data fields.  Callback details should be located in the appropriate region of the Remarks section or at the top if all other Remarks are less directly related to a particular data field.  But, logic should prevail in determining where to place this information if the Remarks section is large. The callback information should be prominent.
+|-
+|''Example'': [[SDL_CreateThread]](), [[SDL_AddEventWatch]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( 30%>__Alignment__
+|''Action'': As shown in the [[#prototype|basic format]] above, only the first line should be left-justified.  Everything else related directly to the callback should be [[SGWikiBasics#Indenting|indented]] one level (or more) to indicate it's relationship to the callback as opposed to the structure.
+|-
+|<( |2 30%>''If'' the callback field is __not '''callback'''__
+|''Action'': Replace '''callback''' in the [[#prototype|basic format]] above with the data field name used in the structure to refer to the callback function.
+|-
+|''Example'': [[SDL_SetEventFilter]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( 30%>For __"callback syntax"__ in the [[#prototype|basic format]] above
+|''Action'': Replace "callback syntax" with the callback function's syntax formatted the same as [[SGFunctions#Syntax|regular functions]].
+|-
+|<( |2 30%>''If'' the __callback function name__ requires any explanation
+|''Action'': Replace "where its parameters are:" in the [[#prototype|basic format]] above with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><CallbackName></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name (ie: your function name).
+|-
+|''Example'': [[SDL_AddEventWatch]]()
+|-
+|<( |4 30%>For __| <code>callback parameter</code> | description |__ in the [[#prototype|basic format]] above
+|''Action 1'': Duplicate the line from above for each parameter in the callback (ie: there should be 2 lines for 2 parameters).
+|-
+|''Action 2'': Replace "callback parameter" with the name of each callback function parameter using the same formatting instructions as [[SGFunctions#Syntax|regular functions]] '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
+|-
+|''Action 3'': Replace "description" with an appropriate description of the callback's parameter. See the following for specific parameters.
+|-
+|''Example'': [[SDL_FilterEvents]](), [[SDL_LogSetOutputFunction]]()
+|-
+|<( |2 30%>For the __<code>userdata</code>__ parameter (or comparable)
+|''Action'': Use the following text (modified as necessary):<br/><code>an</code> <code>application-</code><code>specific</code> <code>parameter</code> <code>saved</code> <code>as</code> '''<code>userdata</code>''' <code>in</code> <code>[[SDL_StructureName]]()</code><br/>replacing '''userdata''' with the appropriate parameter name if necessary, and replacing <code>StructureName</code> with the name of the structure on the page.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|-
+|<( |3 30%>''If'' the callback function's __return value__ is important
+|''Action 1'': Replace "optional return value info..." in the [[#prototype|basic format]] above with the relevant return value information.  Be sure to indent text one level as shown.
+|-
+|''Note'': Callback return value information may be omitted if it is not important.  It may be left-justified if it is discussed in the context of the structure rather than the callback itself.
+|-
+|''Example'': [[SDL_AudioSpec]], [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|-
+|<( |2 30%>''If'' there are __"optional remarks or details"__
+|''Action'': Replace "optional remarks or details..." in the [[#prototype|basic format]] above with any other relevant information about the callback function.  Be sure to indent text at least one level as shown.
+|-
+|''Example'': [[SDL_LogGetOutputFunction]](), [[SDL_LogSetOutputFunction]]()
+|}
+
+
+<br/>
+
+
+==== Compatibility Structures ====
+Compatibility Structures are present in the API for backward compatibility only and thus are treated slightly differently than structures from the current version.  '''Use the following formatting specifics in addition to those listed above for [[#CategoryCompat|CategoryCompat]] pages:''':
+
+''Action 1'': The top of every compatibility structure page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
+ ```
+||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <<BR>>~+For Backward Compatibility Only+~<<BR>><<BR>> ||
+```
+
+''Action 2'': 
+ ||<( 30%>''If'' __one SDL 1.3 structure__ replaces the compatibility structure||''Action'': See ''Markup A'' below.||
+ ||<( |3 30%>''If'' __more than one SDL 1.3 structure__ has replaced the compatibility structure||''Action'': See ''Markup A'' below and create a list of structures, placing the most direct counterpart first and alphabetizing any additional structures below that using the same markup for each additional structure.||
+ ||''Note'': Please avoid making this list any larger than necessary.  This is NOT a related structures list!||
+ ||''Example'': [[SDL_ActiveEvent]], [[SDL_Overlay]], [[SDL_VideoInfo]]||
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ ||<( 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup B'' below.||
+<br/>
+: ''Markup A'': Add the following section to the end of the page above the footer, and replace <code>SDL_Function</code> with the name of the function in SDL 1.3 that has replaced the compatibility function on that page:
+  ```
+== SDL 1.3 Replacement(s) ==
+'''<<Color2(black,Darkorange,This function has been replaced by the following in SDL 1.3:)>>'''
+ .[[SDL_Function]]
+```
+<br/>
+: ''Markup B'': Add the following section to the end of the page above the footer, and replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal (see other [[CategoryCompat]] pages for examples):
+  ```
+== SDL 1.3 Replacement(s) ==
+'''<<Color2(black,Darkorange,There are currently no equivalent functions in SDL 1.3.)>>'''
+
+Other options here
+```
+: ''Example'': [[SDL_EnableKeyRepeat]]()
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+
 <<Include(SGWikiBasics, , , from="Start SG Include here.", to="##End SG Include here.")>>
