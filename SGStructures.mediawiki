@@ -715,28 +715,32 @@ Compatibility Structures are present in the API for backward compatibility only 
 
 ''Action 2'': 
  ||<( 30%>''If'' __only one SDL 1.3 structure__ replaces the compatibility structure||''Action'': See ''Markup A'' below.||
- ||<( |3 30%>''If'' __more than one SDL 1.3 structure__ has replaced the compatibility structure||''Action'': See ''Markup A'' below and create a list of structures, placing the most direct counterpart first and alphabetizing any additional structures below that using the same markup for each additional structure.||
- ||''Note'': This should occur very rarely if at all.  Please avoid making the list any larger than necessary.  This is NOT a related structures list!||
- ||''Example'': [[SDL_ActiveEvent]], [[SDL_Overlay]], [[SDL_VideoInfo]]||
- ||<( 30%>''If'' there are __no equivalent structures__ in SDL 1.3||''Action'': See ''Markup B'' below.||
+ ||<( |2 30%>''If'' __more than one SDL 1.3 structure__ has replaced the compatibility structure||''Action'': See ''Markup B'' below.||
+ ||''Note'': This should occur only very rarely, if at all.  Please avoid making the list any larger than necessary.  This is NOT a related structures list!||
+ ||<( 30%>''If'' there are __no equivalent structures__ in SDL 1.3||''Action'': See ''Markup C'' below.||
+ ||||''Example'': [[SDL_ActiveEvent]], [[SDL_Overlay]], [[SDL_VideoInfo]]||
 <br/>
-: ''Markup A'': Add the following section to the end of the page above the footer, and replace <code>SDL_Structure</code> with the name of the structure in SDL 1.3 that has replaced the compatibility structure on that page:
+: ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Structure</code> with the name of the appropriate SDL 1.3 structure:
   ```
 == SDL 1.3 Replacement(s) ==
-'''<<Color2(black,Darkorange,This structure has been replaced by the following in SDL 1.3:)>>'''
- .[[SDL_Structure]]
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]]'''||
 ```
-: Repeat <code>.[[SDL_Structure]]</code> on the next line if more than one structure must be listed.
 <br/>
-: ''Markup B'': Add the following section to the end of the page above the footer, and replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal (see other [[CategoryCompat]] pages for examples):
+: ''Markup B'': Add the following section to the end of the page above the footer.  Create a list of structures by repeating the <code>[[SDL_Structure]]</code> markup, separating each member of the list with a comma, and placing the most direct counterpart first, alphabetizing any additional structures after that.
   ```
 == SDL 1.3 Replacement(s) ==
-'''<<Color2(black,Darkorange,There are currently no equivalent structures in SDL 1.3.)>>'''
-
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]], [[SDL_Structure]]'''||
+```
+<br/>
+: ''Markup C'': Add the following section to the end of the page above the footer.  Replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal, or remove it if there is no applicable text:
+  ```
+== SDL 1.3 Replacement(s) ==
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''There are currently no equivalent structures in SDL 1.3.'''||
 Other options here
 ```
 
-
+''Example'': See other [[CategoryCompat]] pages for examples
+<!-- #Specific examples need to be added in this section, but at this time it is unclear which will serve as the best examples so specifics are being left out at present. -->
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
