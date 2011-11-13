@@ -706,7 +706,7 @@ callback syntax
 
 
 ==== Compatibility Structures ====
-Compatibility Structures are present in the API for backward compatibility only and thus are treated slightly differently than structures from the current version.  '''Use the following formatting specifics in addition to those listed above for [[#CategoryCompat|CategoryCompat]] pages:''':
+Compatibility Structures are present in the API for backward compatibility only and thus are treated slightly differently than structures from the current version.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryCompat|CategoryCompat]] pages:''':
 
 ''Action 1'': The top of every compatibility structure page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
  ```
@@ -714,28 +714,27 @@ Compatibility Structures are present in the API for backward compatibility only 
 ```
 
 ''Action 2'': 
- ||<( 30%>''If'' __one SDL 1.3 structure__ replaces the compatibility structure||''Action'': See ''Markup A'' below.||
+ ||<( 30%>''If'' __only one SDL 1.3 structure__ replaces the compatibility structure||''Action'': See ''Markup A'' below.||
  ||<( |3 30%>''If'' __more than one SDL 1.3 structure__ has replaced the compatibility structure||''Action'': See ''Markup A'' below and create a list of structures, placing the most direct counterpart first and alphabetizing any additional structures below that using the same markup for each additional structure.||
- ||''Note'': Please avoid making this list any larger than necessary.  This is NOT a related structures list!||
+ ||''Note'': This should occur very rarely if at all.  Please avoid making the list any larger than necessary.  This is NOT a related structures list!||
  ||''Example'': [[SDL_ActiveEvent]], [[SDL_Overlay]], [[SDL_VideoInfo]]||
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
- ||<( 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup B'' below.||
+ ||<( 30%>''If'' there are __no equivalent structures__ in SDL 1.3||''Action'': See ''Markup B'' below.||
 <br/>
-: ''Markup A'': Add the following section to the end of the page above the footer, and replace <code>SDL_Function</code> with the name of the function in SDL 1.3 that has replaced the compatibility function on that page:
+: ''Markup A'': Add the following section to the end of the page above the footer, and replace <code>SDL_Structure</code> with the name of the structure in SDL 1.3 that has replaced the compatibility structure on that page:
   ```
 == SDL 1.3 Replacement(s) ==
-'''<<Color2(black,Darkorange,This function has been replaced by the following in SDL 1.3:)>>'''
- .[[SDL_Function]]
+'''<<Color2(black,Darkorange,This structure has been replaced by the following in SDL 1.3:)>>'''
+ .[[SDL_Structure]]
 ```
+: Repeat <code>.[[SDL_Structure]]</code> on the next line if more than one structure must be listed.
 <br/>
 : ''Markup B'': Add the following section to the end of the page above the footer, and replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal (see other [[CategoryCompat]] pages for examples):
   ```
 == SDL 1.3 Replacement(s) ==
-'''<<Color2(black,Darkorange,There are currently no equivalent functions in SDL 1.3.)>>'''
+'''<<Color2(black,Darkorange,There are currently no equivalent structures in SDL 1.3.)>>'''
 
 Other options here
 ```
-: ''Example'': [[SDL_EnableKeyRepeat]]()
 
 
 
