@@ -874,7 +874,7 @@ callback syntax
 
 
 ==== Compatibility Functions ====
-Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed above for [[#CategoryCompat|CategoryCompat]] pages:''':
+Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryCompat|CategoryCompat]] pages:''':
 
 ''Action 1'': The top of every compatibility function page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
  ```
@@ -882,9 +882,9 @@ Compatibility functions are present in the API for backward compatibility only a
 ```
 
 ''Action 2'': 
- ||<( 30%>''If'' __one SDL 1.3 function__ replaces the compatibility function||''Action'': See ''Markup A'' below.||
+ ||<( 30%>''If'' __only one SDL 1.3 function__ replaces the compatibility function||''Action'': See ''Markup A'' below.||
  ||<( |3 30%>''If'' __more than one SDL 1.3 function__ has replaced the compatibility function||''Action'': See ''Markup A'' below and create a list of functions, placing the most direct counterpart (or pair) first and alphabetizing any additional functions below that using the same markup for each additional function.||
- ||''Note'': Please avoid making this list any larger than necessary.  This is NOT a related functions list!||
+ ||''Note'': Listing more than two replacement functions should occur only rarely if at all.  Please avoid making this list any larger than necessary.  This is NOT a related functions list!||
  ||''Example'': [[SDL_AudioDriverName]](), [[SDL_WM_ToggleFullScreen]]()||
  ||<( 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup B'' below.||
 <br/>
