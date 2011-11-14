@@ -107,9 +107,15 @@ Note that the state that the ''condition variable'' is monitoring must always be
   *In order to ensure that dirty Hardware never remains at the dirty station any longer than necessary a ''condition variable'' is in place to alert the Dishwashers whenever the count changes (?? up ??).  <<Color2(green,Can a CV be set up to only alert if the count increments or does it have to alert for any change?)>>  This way a Dishwasher won't stay on a break if there is work to be done.-~
 ```
 
-== Functions ==
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryMutex -SGEnumerations)>> -->
 
-<<FullSearch(category:CategoryMutex -CategoryEnum -CategoryStruct)>>
+<!-- #== Structures == -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryMutex -SGStructures)>> -->
+
+== Functions ==
+<<FullSearch(category:CategoryMutex -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
