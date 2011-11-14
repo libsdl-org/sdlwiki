@@ -12,12 +12,15 @@
 
 This category contains functions for handling simple rectangles including overlaps and merges.
 
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryRect -SGEnumerations)>> -->
+
 == Structures ==
-<<FullSearch(category:CategoryStruct CategoryRect)>>
+<<FullSearch(category:CategoryStruct CategoryRect -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryRect -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryRect -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
