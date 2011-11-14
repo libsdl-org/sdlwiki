@@ -46,16 +46,13 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 
 
 == Enumerations ==
-
-<<FullSearch(category:CategoryEnum CategoryAssertions)>>
+<<FullSearch(category:CategoryEnum CategoryAssertions -SGEnumerations)>>
 
 == Structures ==
-
-<<FullSearch(category:CategoryStruct CategoryAssertions)>>
+<<FullSearch(category:CategoryStruct CategoryAssertions -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryAssertions -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryAssertions -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 
 ----
