@@ -27,17 +27,15 @@ Here's where the messages go on different platforms:
 Messages longer than the maximum size (4096 ^bits???^) will be truncated.
 
 
-
 == Enumerations ==
-<<FullSearch(category:CategoryEnum CategoryLog)>>
+<<FullSearch(category:CategoryEnum CategoryLog -SGEnumerations)>>
 
-
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryLog)>> -->
-
+<!-- #<<FullSearch(category:CategoryStruct CategoryLog -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryLog -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryLog -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
