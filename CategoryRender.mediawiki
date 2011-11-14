@@ -27,16 +27,13 @@ This API is designed to accelerate simple 2D operations. You may want more funct
 
 
 == Enumerations ==
-
-<<FullSearch(category:CategoryEnum CategoryRender)>>
+<<FullSearch(category:CategoryEnum CategoryRender -SGEnumerations)>>
 
 == Structures ==
-
-<<FullSearch(category:CategoryStruct CategoryRender)>>
+<<FullSearch(category:CategoryStruct CategoryRender -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryRender -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryRender -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 
 ----
