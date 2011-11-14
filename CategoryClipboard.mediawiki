@@ -11,17 +11,15 @@
 == Introduction ==
 This category contains functions for clipboard handling.
 
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-
-<!-- #<<FullSearch(category:CategoryEnum CategoryClipboard)>> -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryClipboard -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-
-<!-- #<<FullSearch(category:CategoryStruct CategoryClipboard)>> -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryClipboard -SGStructures)>> -->
 
 == Functions ==
-
-<<FullSearch(category:CategoryClipboard -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryClipboard -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 
 ----
