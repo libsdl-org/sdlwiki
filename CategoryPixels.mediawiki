@@ -12,14 +12,13 @@
 This category contains functions for handling pixel formats and palettes.
 
 == Enumerations ==
-<<FullSearch(category:CategoryEnum CategoryPixels)>>
+<<FullSearch(category:CategoryEnum CategoryPixels -SGEnumerations)>>
 
 == Structures ==
-<<FullSearch(category:CategoryStruct CategoryPixels)>>
+<<FullSearch(category:CategoryStruct CategoryPixels -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryPixels -CategoryStruct -CategoryEnum)>>
+<<FullSearch(category:CategoryPixels -CategoryStruct -CategoryEnum -SGFunctions)>>
 
 ----
 CategoryCategory
