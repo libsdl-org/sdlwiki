@@ -42,13 +42,16 @@ The atomic locks are efficient spinlocks using CPU instructions, but are vulnera
 /!\ The atomic locks are not safe to lock recursively.
 
 <!-- #End Include here -->
-== Structures ==
 
-<<FullSearch(category:CategoryAtomic CategoryStruct)>>
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryAtomic -SGEnumerations)>> -->
+
+== Structures ==
+<<FullSearch(category:CategoryAtomic CategoryStruct -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryAtomic -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryAtomic -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
