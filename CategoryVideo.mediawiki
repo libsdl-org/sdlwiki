@@ -20,7 +20,6 @@ This category contains functions for handling display and window actions.
 <<FullSearch(category:CategoryStruct CategoryVideo -SGStructures)>>
 
 == Functions ==
-
 <<FullSearch(category:CategoryVideo -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
