@@ -96,12 +96,16 @@ int test_haptic( SDL_Joystick * joystick ) {
 ```
 You can find more information in this blog by Edgar Simo Serra: [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ SDL Haptic In Depth]
 
+
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum Category##### -SGEnumerations)>> -->
+
 == Structures ==
-<<FullSearch(category:CategoryStruct CategoryForceFeedback)>>
+<<FullSearch(category:CategoryStruct CategoryForceFeedback -SGStructures)>>
 
 == Functions ==
-
-<<FullSearch(category:CategoryForceFeedback -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryForceFeedback -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
