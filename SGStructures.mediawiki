@@ -741,6 +741,9 @@ Other options here
 
 ''Example'': See other [[CategoryCompat]] pages for examples
 <!-- #Specific examples need to be added in this section, but at this time it is unclear which will serve as the best examples so specifics are being left out at present. -->
+<!-- #Alternate text if it's worded better:  This is deprecated in favor of [[SDL_Structure]].  This is only for backward compatibility. -->
+
+
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
