@@ -1,0 +1,43 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_DropEvent =
+A structure that contains an event used to request a file open by the system.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|the event type; SDL_DROPFILE
+|-
+|char*
+|'''file'''
+|the file name, which should be freed with SDL_free()
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+[[SDL_DropEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_DROPFILE is reported. You would access it through the event's <code>drop</code> field.
+
+This event is disabled by default.  You can enable it with [[SDL_EventState]]().  
+
+If you enable this event you must free the filename in the event.
+
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+
+== Related Functions ==
+:[[SDL_EventState]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
