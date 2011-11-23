@@ -132,6 +132,12 @@ An enumeration of the types of events that can be delivered.
 |the clipboard changed
 |-
 |
+|<bgcolor="#EDEDED">''Drag and drop events''
+|-
+|SDL_DROPFILE
+|the system requests a file open
+|-
+|
 |<bgcolor="#EDEDED">''Obsolete events''
 |-
 |<style="color: #808080;">SDL_EVENT_COMPAT1
