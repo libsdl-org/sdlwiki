@@ -83,6 +83,10 @@ A union that contains structures for the different event types.
 |'''dgesture'''
 |multi finger gesture data
 |-
+|[[SDL_DropEvent]]
+|'''drop'''
+|drag and drop event data
+|-
 |<style="color: #808080;">SDL_ActiveEvent
 |<style="color: #808080;">'''active'''
 |<style="color: #808080;">deprecated; for backwards compatibility
@@ -169,6 +173,10 @@ SDL_PushEvent(&user_event);
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
 |-
+|SDL_DROPFILE
+|[[SDL_DropEvent]]
+|'''drop'''
+|-
 |SDL_FINGERMOTION<br/>SDL_FINGERDOWN<br/>SDL_FINGERUP
 |[[SDL_TouchFingerEvent]]
 |'''tfinger'''
@@ -248,6 +256,7 @@ SDL_PushEvent(&user_event);
 == Related Structures ==
 :[[SDL_ActiveEvent]]
 :[[SDL_DollarGestureEvent]]
+:[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
