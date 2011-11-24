@@ -23,7 +23,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-If you want to use this event, you should include SDL_syswm.h.
+This event is disabled by default.  You can enable it with [[SDL_EventState]]()
+
+If you want to use this event you should include SDL_syswm.h.
 
 [[SDL_SysWMEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_SYSWMEVENT is reported. You would access it through the event's <code>syswm</code> field. 
 
@@ -41,7 +43,7 @@ int SDL_GetWMInfo(SDL_SysWMinfo *info);
 :[[SDL_SysWMmsg]]???
 
 == Related Functions ==
-:[[SDL_EventState]] *
+:[[SDL_EventState]]
 :[[SDL_GetWindowWMInfo]] *???
 
 ----
