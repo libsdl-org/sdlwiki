@@ -12,7 +12,7 @@ SDL_Window* SDL_GetMouseFocus(void)
 ```
 
 == Return Value ==
-Returns ^a pointer to the SDL_Window with mouse focus.^
+Returns the window with mouse focus.
 
 == Code Examples ==
 ```c++
