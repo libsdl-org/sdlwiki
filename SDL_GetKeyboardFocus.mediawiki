@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_GetKeyboardFocus =
@@ -12,7 +12,7 @@ SDL_Window* SDL_GetKeyboardFocus(void)
 ```
 
 == Return Value ==
-Returns ^a pointer to the SDL_Window with keyboard focus.^  <<Color2(green,What happens on error?)>>
+Returns the window with keyboard focus.
 
 == Code Examples ==
 ```c++
