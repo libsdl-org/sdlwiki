@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_CreateWindowFrom =
 Use this function to create an SDL window from an existing native window.
@@ -17,7 +17,7 @@ SDL_Window* SDL_CreateWindowFrom(const void* data)
 |}
 
 == Return Value ==
-Returns the ID of the window created or 0 if window creation failed; call [[SDL_GetError]]() for more information.
+Returns the window that was created or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
