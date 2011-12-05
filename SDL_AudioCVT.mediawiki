@@ -1,9 +1,9 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_AudioCVT =
-A structure that contains audio data conversion ^information^.
+A structure that contains audio data conversion information.
 
 
 == Data Fields ==
@@ -26,7 +26,7 @@ A structure that contains audio data conversion ^information^.
 |-
 |Uint8*
 |'''buf'''
-|a pointer to a buffer to hold entire audio data; see [[#buf|Remarks]] for details
+|the buffer to hold entire audio data; see [[#buf|Remarks]] for details
 |-
 |int
 |'''len'''
@@ -44,16 +44,14 @@ A structure that contains audio data conversion ^information^.
 |'''len_ratio'''
 |given '''len''', final size is len*len_ratio; see [[#len_ratio|Remarks]] for details
 |-
-|<style="color: #808080;">SDL_Audio<code></code>Filter[10]
-|<style="color: #808080;">'''filters'''
-|<style="color: #808080;">filter list (internal use)
+|<rowstyle="color: #808080;">SDL_Audio<code></code>Filter[10]
+|'''filters'''
+|filter list (internal use)
 |-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''filter_index'''
-|<style="color: #808080;">current audio conversion function (internal use)
+|<rowstyle="color: #808080;">int
+|'''filter_index'''
+|current audio conversion function (internal use)
 |}
-
-<<Color2(green,Is '''buf''' an exception to the 'pointer rule'?)>>
 
 == Code Examples ==
 ```c++
