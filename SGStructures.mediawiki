@@ -139,31 +139,37 @@ The Data Fields section provides basic information about each field in the struc
 |
 |<bgcolor="#EDEDED"><span id="general"></span>''General (whole table)''
 |-
-|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|below]])
+|<( |3 30%>''If'' the field is __read-only__
+|''Action'': Use the text notation <code>(read-only)</code> in parentheses at the end of the description.
+|-
+|''Note'': This also applies to the rare "<code>(read-write)</code>" field.<br/>Do not grey out the line.
+|-
+|''Example'': [[SDL_Surface]], [[SDL_Overlay]]
+|-
+|<( |3 30%>''If'' the field is __for internal use, deprecated, or unused__ (greyed out)
+|<span id="grey"></span>''Action'': In addition to a text notation in parentheses at the ''end'' of the description (ie: <code>(deprecated)</code>), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|-
+|''Note'': Although a rare case, any other style markup for that row/cell should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
+|-
+|''Example'': ```
+|<rowstyle="color: #808080;">type
+|'''field'''
+|description
+|```, [[SDL_Palette]], [[SDL_Color]]
+|-
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|above]])
 |''Action'': DO NOT hyperlink the page in the type column.
 |-
 |''Action 2'': List the page, with a hyperlink, in the description and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
 |''Example'': [[SDL_Event]]
 |-
-|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [#grey|below]])
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [#grey|above]])
 |''Action1'': Be sure to [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
 |-
 |''Action 2'': List the page in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
 |''Example'': [[SDL_Event]], [[SDL_AudioSpec]], [[SDL_SysWMinfo]]
-|-
-|<( |3 30%>''If'' the field is __for internal use, deprecated, unused, or read-only__ (greyed out)
-|<span id="grey"></span>''Action'': In addition to the text notation (ie: deprecated), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
-|-
-|''Note'': Although a rare case, any other style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
-|-
-|''Example'': ```
-|<rowstyle="color: #808080;">
-|type
-|'''field'''
-|description
-|```, [[SDL_Palette]], [[SDL_Color]]
 |-
 |<( |4 30%>''If'' there are __important, distinct groups of fields__ within the structure
 |''Action'': Create sections by placing a full-width row with a grey background and centered, italics title above each group.
