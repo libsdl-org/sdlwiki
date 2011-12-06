@@ -1,9 +1,9 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_EventState =
-Use this function to set the state of processing ,,certain,, events ^by '''type'''^.
+Use this function to set the state of processing events by type.
 
 
 == Syntax ==
@@ -15,16 +15,14 @@ Uint8 SDL_EventState(Uint32 type,
 == Function Parameters ==
 {|
 |'''type'''
-|^the type of event to be processed / regulated???; see [[SDL_Event]] for details^
+|the type of event; see [[SDL_EventType]] for details
 |-
 |'''state'''
-|^how to process the event '''type'''^; see [[#Remarks|Remarks]] for details
+|how to process the event; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
-<<Color2(green,These RVs are a total guess...)>>
-
-Returns an 8-bit bitmask of the current processing '''state''' (see [[#Remarks|Remarks]]): 1 if the event is processed successfully, 0 if it is ignored or disabled, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns an 8-bit bitmask of the current processing state.  See [[#Remarks|Remarks]] for details; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -34,31 +32,24 @@ You can add your code example here
 == Remarks ==
 '''state''' may be any of the following:
 {|
-|SDL_QUERY
 |-1
-|returns the current processing state of the specified event '''type'''
+|SDL_QUERY
+|returns the current processing state of the specified event
 |-
+|0
 |SDL_IGNORE
-|0
-|the event '''type''' will automatically be dropped from the event queue and will not be filtered
+|the event will automatically be dropped from the event queue and will not be filtered
 |-
+|0
 |SDL_DISABLE
-|0
-|^same as SDL_IGNORE^ ???  ^the event '''type''' will not be processed^ ???
+|the event type will be disabled (blocked) and pending events discarded
 |-
-|SDL_ENABLE
 |1
-|the event '''type''' will be processed normally
+|SDL_ENABLE
+|the event will be processed normally
 |}
-<<Color2(green,Are the #s above the RVs or should they be removed?  The current header does not specify the word "type" but it seems relevant.  Should it remain or be removed above?)>>
 
-<<Color2(green,Below is the verbatim language from the header. Thought it might be better in table form above...)>>
-
-If state is set to SDL_IGNORE, that event will be automatically dropped from the event queue and will not event be filtered.<br/>
-If state is set to SDL_ENABLE, that event will be processed normally.<br/>
-If state is set to SDL_QUERY, [[SDL_EventState]]() will return the current processing state of the specified event.
-
-*<<Color2(green,Does the following still apply in 1.3?  SDL_VideoInfo seems to be a read-only struct.  Should it have a page?)>><br/>
+*<<Color2(green,Does the following still apply in 1.3?)>><br/>
 [[SDL_EventState]]() must be called following the [[SDL_VideoInfo]] call. Otherwise the back-end data structure will be erased.*
 
 == Related Functions ==
