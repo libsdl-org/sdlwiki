@@ -32,9 +32,9 @@ A structure that contains information about an assertion.
 |'''function'''
 |the function containing the assertion
 |-
-|<style="color: #808080;">const struct [[SDL_assert_data]]*
-|<style="color: #808080;">'''next'''
-|<style="color: #808080;">(internal use)
+|<rowstyle="color: #808080;">const struct SDL_assert_data*
+|'''next'''
+|(internal use)
 |}
 
 == Code Examples ==
