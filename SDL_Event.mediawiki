@@ -87,13 +87,13 @@ A union that contains structures for the different event types.
 |'''drop'''
 |drag and drop event data
 |-
-|<style="color: #808080;">SDL_ActiveEvent
-|<style="color: #808080;">'''active'''
-|<style="color: #808080;">deprecated; for backwards compatibility
+|<rowstyle="color: #808080;">SDL_ActiveEvent
+|'''active'''
+|for backwards compatibility (deprecated)
 |-
-|<style="color: #808080;">SDL_ResizeEvent
-|<style="color: #808080;">'''resize'''
-|<style="color: #808080;">deprecated; for backwards compatibility
+|<rowstyle="color: #808080;">SDL_ResizeEvent
+|'''resize'''
+|for backwards compatibility (deprecated)
 |}
 
 
