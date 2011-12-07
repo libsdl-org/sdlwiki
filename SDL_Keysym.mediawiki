@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_Keysym =
@@ -20,9 +20,9 @@ A structure that contains ^key codes^ used in key events.
 |'''mod'''
 |current key modifiers^; see [[SDL_Keymod]] for details^
 |-
-|Uint32
+|<rowstyle="color: #808080;">Uint32
 |'''unicode'''
-|deprecated, use [[SDL_TextInputEvent]] instead
+|use [[SDL_TextInputEvent]] instead (deprecated)
 |}
 
 == Code Examples ==
