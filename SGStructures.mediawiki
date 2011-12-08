@@ -139,15 +139,10 @@ The Data Fields section provides basic information about each field in the struc
 |
 |<bgcolor="#EDEDED"><span id="general"></span>''General (whole table)''
 |-
-|<( |3 30%>''If'' the field is __read-only__
-|''Action'': Use the text notation <code>(read-only)</code> in parentheses at the end of the description.
+|<( |4 30%>''If'' the field is __for internal use, deprecated, or unused__ (greyed out)
+|<span id="grey"></span>''Action 1'': Place a text notation in parentheses at the ''end'' of the description (ie: <code>(deprecated)</code>)
 |-
-|''Note'': This also applies to the rare "<code>(read-write)</code>" field.<br/>Do not grey out the line.
-|-
-|''Example'': [[SDL_Surface]], [[SDL_Overlay]]
-|-
-|<( |3 30%>''If'' the field is __for internal use, deprecated, or unused__ (greyed out)
-|<span id="grey"></span>''Action'': In addition to a text notation in parentheses at the ''end'' of the description (ie: <code>(deprecated)</code>), make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|''Action 2'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
 |-
 |''Note'': Although a rare case, any other style markup for that row/cell should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
 |-
@@ -157,8 +152,15 @@ The Data Fields section provides basic information about each field in the struc
 |description
 |```, [[SDL_Palette]], [[SDL_Color]]
 |-
+|<( |3 30%>''If'' the field is __read-only__
+|''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.
+|-
+|''Note'': This also applies to the rare "<code>(read-write)</code>" field.
+|-
+|''Example'': [[SDL_Surface]], [[SDL_Overlay]]
+|-
 |<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|above]])
-|''Action'': DO NOT hyperlink the page in the type column.
+|''Action 1'': DO NOT hyperlink the page in the type column.
 |-
 |''Action 2'': List the page, with a hyperlink, in the description and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
@@ -198,7 +200,7 @@ The Data Fields section provides basic information about each field in the struc
 |<bgcolor="#EDEDED">''First Column (type) & Second Column (field)''
 |-
 |
-|<(>There are currently no special formatting instructions just for these columns.  See [[#general|''General'']] above.
+|<(>There are currently no special formatting instructions that affect only these columns.  See [[#general|''General'']] above.
 |-
 |
 |<bgcolor="#EDEDED">''Third Column (description)''
