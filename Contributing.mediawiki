@@ -34,17 +34,17 @@ To help you with this we have created a series of resources:
 
 <span id="guides"></span>
 === Style Guides by Topic ===
-: These are the core of our contribution resources.  There is a style guide for each type of contribution you may wish to make as well as the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] guide which contains global information that all contributors should have.  
+: These are the core of our contribution resources.  There is a style guide for each type of contribution you may wish to make as well as the [[SGWikiBasics|Wiki Basics]] guide which contains global information that all contributors should have.  
 
-: '''We recommend that you begin with [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] and then dive into the topic-specific guides that interest you before you begin to edit.'''  Please check back periodically for reminders and updates!
+: '''We recommend that you begin with [[SGWikiBasics|Wiki Basics]] and then dive into the topic-specific guides that interest you before you begin to edit.'''  Please check back periodically for reminders and updates!
 
  ||<bgcolor="#EDEDED">''Style Guide''||<bgcolor="#EDEDED">''Topics Covered''||
- ||[http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics]||Starting to edit<br/>Saving changes<br/>Style Guide basics<br/>Quick reference for wiki markup used in this wiki<br/>Miscellaneous notes||
- ||[http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples]||Adding Code Examples to any [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API page]||
- ||[http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks]||Adding Remarks to any [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API page]||
- ||[http://wiki.libsdl.org/moin.cgi/SGTutorials Tutorials]||Adding an existing tutorial to the Tutorials page<br/>Creating a new tutorial within the wiki||
- ||[http://wiki.libsdl.org/moin.cgi/SGFunctions Function Pages]||Editing Function pages<br/>Editing Macro pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
-<!-- # ||<:>''Coming Soon!''||Editing Structure pages<br/>Editing Union pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~|| -->
+ ||[[SGWikiBasics|Wiki Basics]]||Starting to edit<br/>Saving changes<br/>Style Guide basics<br/>Quick reference for wiki markup used in this wiki<br/>Miscellaneous notes||
+ ||[[SGCodeExamples|Code Examples]]||Adding Code Examples to any [[SGWikiBasics#api|API page]]||
+ ||[[SGRemarks|Remarks]]||Adding Remarks to any [[SGWikiBasics#api|API page]]||
+ ||[[SGTutorials|Tutorials]]||Adding an existing tutorial to the Tutorials page<br/>Creating a new tutorial within the wiki||
+ ||[[SGFunctions|Function Pages]]||Editing Function pages<br/>Editing Macro pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
+ ||[[SGStructures|Structure Pages]]||Editing Structure pages<br/>Editing Union pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
 
 : If you find something that is not addressed or is unclear in a style guide please post your questions using the ''Feedback'' form, the mailing list, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
