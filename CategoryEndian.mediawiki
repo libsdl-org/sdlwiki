@@ -29,9 +29,15 @@ SDL_BYTEORDER is a macro that corresponds to the byte order used by the processo
 * SDL_BYTEORDER is SDL_BIG_ENDIAN for PowerPC and similar systems that use the big endian byte order.
 
 
-== Functions ==
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryEndian -SGEnumerations)>> -->
 
-<<FullSearch(category:CategoryEndian -CategoryEnum -CategoryStruct)>>
+<!-- #== Structures == -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryEndian -SGStructures)>> -->
+
+== Functions ==
+<<FullSearch(category:CategoryEndian -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
