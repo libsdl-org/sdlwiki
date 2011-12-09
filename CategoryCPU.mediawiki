@@ -11,11 +11,17 @@
 
 == Introduction ==
 
-This category contains functions for ,,CPU feature detection for SDL,, ^gathering information about the processor's features.^
+This category contains functions for gathering information about the processor's features.
+
+<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearch(category:CategoryEnum CategoryCPU-SGEnumerations)>> -->
+
+<!-- #== Structures == -->
+<!-- #<<FullSearch(category:CategoryStruct CategoryCPU -SGStructures)>> -->
 
 == Functions ==
-
-<<FullSearch(category:CategoryCPU -CategoryEnum -CategoryStruct)>>
+<<FullSearch(category:CategoryCPU -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
