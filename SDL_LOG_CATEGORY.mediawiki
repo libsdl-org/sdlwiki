@@ -9,25 +9,25 @@ An enumeration of the predefined log categories.
 == Values ==
 {|
 |SDL_LOG_CATEGORY_APPLICATION
-|description
+|application log
 |-
 |SDL_LOG_CATEGORY_ERROR
-|description
+|error log
 |-
 |SDL_LOG_CATEGORY_SYSTEM
-|description
+|system log
 |-
 |SDL_LOG_CATEGORY_AUDIO
-|description
+|audio log
 |-
 |SDL_LOG_CATEGORY_VIDEO
-|description
+|video log
 |-
 |SDL_LOG_CATEGORY_RENDER
-|description
+|render log
 |-
 |SDL_LOG_CATEGORY_INPUT
-|description
+|input log
 |-
 |<rowstyle="color: #808080;">SDL_LOG_CATEGORY_RESERVED#
 |# = 1-10; reserved for future SDL library use
@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-By default the APPLICATION category is enabled at the ^SDL_LOG_PRIORITY_^INFO level and all other categories are enabled at the ^SDL_LOG_PRIORITY_^CRITICAL level.  See [[SDL_LogPriority]] for details.
+By default the APPLICATION category is enabled at the SDL_LOG_PRIORITY_INFO level and all other categories are enabled at the SDL_LOG_PRIORITY_CRITICAL level.  See [[SDL_LogPriority]] for details.
 
 SDL_LOG_CATEGORY_CUSTOM is reserved for application use; for example:
  ```
@@ -58,7 +58,7 @@ enum {
 == Related Functions ==
 :[[SDL_Log]]
 :[[SDL_LogMessage]]
-:[[SDL_LogMessageV]] ???
+:[[SDL_LogMessageV]]
 
 ----
 [[CategoryEnum]], [[CategoryLog]]
