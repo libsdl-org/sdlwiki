@@ -24,7 +24,7 @@ This guide provides specific instructions for editing or adding your own content
 * Please remember to keep it accurate, simple, and easy to understand.
 
 * Do not remove, modify, or add to the markup above the page title ~-(processing instructions (ie: <code>#pragma</code>, <code>#acl</code>), <<Color2(red,DRAFT)>> markup, etc.)-~ except:
-* On CategoryC<code></code>ompat pages, place the following markup above the page title and below the processing instructions or draft markup, if present:
+* On C<code></code>ategoryCompat pages, place the following markup above the page title and below the processing instructions or DRAFT markup, if present:
 : ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
 
 * Do not remove, modify, or add section headings unless specifically mentioned below.
@@ -33,7 +33,9 @@ This guide provides specific instructions for editing or adding your own content
 
 * Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
 
-For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+''Note'': All markup examples in these Style Guides are specifically for use in the text editor (<<Color2(blue,Edit (text))>> in the left column).  You are welcome to use the GUI editor (<<Color2(blue,Edit (GUI))>> in the left column) instead of you prefer but some formatting details may be different.  
+
+For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
