@@ -16,12 +16,12 @@
 If a page can be edited you will see two options to choose from in the left column:
  1. <<Color2(blue,Edit (Text))>>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
- (!) Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.<br/>
+ {i} Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.<br/>
  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
 
  1. <<Color2(blue,Edit (GUI))>>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
- (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+ {i} The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
 Note that some formatting will appear slightly different in preview mode than on the finished screen.
 
@@ -33,9 +33,9 @@ Note that some formatting will appear slightly different in preview mode than on
 
  If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
 
- To recover that draft, you simply edit that page again. If there is a draft, an alert message will be in the message box [at the top] and a "load draft" button will be present [in the left column]. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
+ '''To recover that draft''', you simply edit that page again. If there is a draft, an alert message will be in the message box [at the top] and a "load draft" button will be present [in the left column]. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
 
- (!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
+ /!\ Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
 
  If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
 
@@ -63,22 +63,22 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : Refers to any Function, Structure, or Enumeration page.
 <span id="category"></span>
 : '''Category Page'''
-: Refers to the front page of each major category found in the [http://wiki.libsdl.org/moin.cgi/APIByCategory API by Category] list.
+: Refers to the front page of each major category found in the [[APIByCategory|API by Category]] list.
 : '''Draft Page'''
-: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the editing process.  ''Thank you!''
+: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the final editing process.  ''Thank you!''
 : '''''If...'''''
 : Found in some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
 : In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
 : '''''Action'':'''
 : The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
-: Sometimes ''Action'' will include a number (ie: ''Action 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
-: ''Action'' is almost always followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
+: Sometimes ''Action'' will include a number (ie: ''Action 2'') to indicate that there is more than one way to achieve the same result or that more than one step is required.  Read carefully to determine which apply to your circumstance.
+: ''Action'' is occasionally followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
 : /!\ Please read any ''Note'' or ''<<Color2(red,Important!)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped unless you are having trouble.
 : '''''Markup'':'''
 : The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
 : Sometimes ''Markup'' will include a number (ie: ''Markup 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
 : '''''How'':'''
-: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.
+: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.  (This is somewhat rare.)
 : '''''Note'':'''
 : The instructions immediately following ''Note'': should be taken into consideration as necessary.  
 : '''''<<Color2(red,Important!)>>'''''
@@ -128,7 +128,7 @@ The top of (nearly) every page begins with the following, which should not be ed
 == Some Markup Basics ==
 Below is a summary of the most commonly used markup in this wiki, as well as some very rarely used, and some hints and tricks for using it.
 
-<!> '''The following is provided for your convenience and is meant to be general information.  The other [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides] describe where this formatting should be applied and where exceptions may exist.'''
+<!> '''The following is provided for your convenience and is meant to be general information.  The other [[Contributing#guides|Style Guides]] describe where this formatting should be applied and where exceptions may exist.'''
 
 A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
 
@@ -193,21 +193,21 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 <span id="example1"></span>
 : ''Example 1'':
   ```{
-{{{Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap.```
+{{{Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap when parsed (this is more of an issue for smaller monitors) but will also not appear in a box.```
 }}}}
 : ''Generates''
-  ```Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap.```
+  ```Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap when parsed (this is more of an issue for smaller monitors) but will also not appear in a box.```
 
 <span id="example2"></span>
 : ''Example 2'':
   ```{
 {{{
-Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line.
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line but it will also appear in a box.
 ```
 }}}}
 : ''Generates''
   ```
-Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line.
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line but it will also appear in a box.
 ```
 
 <span id="example3"></span>
@@ -352,7 +352,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
  ```
 #pragma camelcase off
 ```
-'''Therefore, it '''is''' necessary for you to manually create most hyperlinks!'''
+'''Therefore, it __is__ necessary for you to manually create most hyperlinks!'''
 : ''Note'': If a hyperlink is automatically created where you __don't__ want one check to ensure that this <code>#pragma</code> markup is correct at the top of the page.  If it is not, please correct or add it.  This should resolve the issue if it is related to CamelCase text.
 
 ''Action'':
@@ -367,7 +367,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 |<( |2 30%>''If'' you reference something that __does not have a page__ in the wiki
 |''Action'': Do not create hyperlinks to pages that do not already exist unless you are 100% sure the page will exist very soon after creating the link.
 |-
-|''Hint'': If you are unsure whether a page exists check the [http://wiki.libsdl.org/moin.cgi/CategoryAPI API By Name] page or try typing it into the browser.
+|''Hint'': If you are unsure whether a page exists check the [[CategoryAPI|API By Name]] page or try typing it into the browser.
 |-
 |<( |2 30%>''If'' you reference an __outside page or email address__
 |''Action'': In most cases the wiki will automatically create the link for you.
@@ -413,7 +413,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 |<( |2 30%>Link to an __anchor on another page__
 |''Markup'': Insert the page address before the # in the address section of an anchor link.<br/>```[[address#anchor|optional alternate text]]```
 |-
-|''Example'': ```[http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]``` creates the following link with alternate text and that takes you to that anchor on the other page [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides]
+|''Example'': ```[[Contributing#guides|Style Guides]]``` creates the following link with alternate text and that takes you to that anchor on the other page [[Contributing#guides|Style Guides]]
 |}
 
 More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
@@ -592,25 +592,29 @@ More (but not much) wiki markup for headings can be found at [http://wiki.libsdl
 
 <span id="include"></span>
 === Includes ===
-An include enables you to copy all or a portion of a page onto another page, allowing changes to one page to be automatically updated on another.  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
+An include enables you to dynamically copy all or a portion of a page onto another page, allowing changes to one page (source) to be automatically updated on another (recipient).  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
+
+''<<Color2(red,Important!)>>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is important that the content remain up to date on the recipient page if a source page changes or if the two (or more) pages are unlikely to ever require different information for that included content because they are so closely related.  In many cases it is better to do a one time copy and paste operation instead.
+
+''Note'': Please choose the source page carefully.  It should reflect the most primary version of the copied information.  (For example, you should use the actual enumeration page as the source rather than another function page that also references the enumeration details.)  
 
 ''Markup'': To create an Include is a 3 step process:
- ''Action 1'': Place the following markup in the location where you wish the data to begin on the __recipient page__ (the page with the copy).  Replace <code><PageName></code> with the name of the page to copy from (where the original content is located).
+ ''Action 1'': __On the recipient page__ place the following markup in the location where you wish the copied content to begin.  Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
   ```
 <<Include(<PageName>, , , from="Start Include here.", to="##End Include here.")>>
 ```
 : ''Example'': To copy content from [[SDL_GLattr]]
-   ```<<Include(<SDL_GLattr>, , , from="Start Include here.", to="##End Include here.")>>```
+   ```<<Include(SDL_GLattr, , , from="Start Include here.", to="##End Include here.")>>```
 
- ''Action 2'': Place the following markup on the line immediately before the point where you wish to begin the include (to start copying content) on the __source page__.  
-: ''<<Color2(red,Important!)>>'' Replace <code><PageName></code> with the name of the page to receive the Include.  If this include will be used on more than one page add additional page names.  Linking markup may be left out.
+ ''Action 2'': __On the source page__ place the following markup on the line immediately ''before'' the point where you wish to begin the include (to start copying content).  
+: ''<<Color2(red,Important!)>>'' Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup should be left out.
   ```
 ##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
 ```
 : ''Example'': If this include will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() the comment on the source page should read:
    ```##The following content is included on SDL_GL_GetAttribute and SDL_GL_SetAttribute...```
 
- ''Action 3'': Place the following markup on the line immediately after the point where you want to end the include (to stop copying content) on the __source page__.
+ ''Action 3'': __On the source page__ place the following markup on the line immediately ''after'' the point where you want to end the include (to stop copying content).
   ```
 ##End Include here.
 ```
@@ -633,8 +637,7 @@ See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] 
 
 <span id="problems"></span>
 === Some Known Problems and Solutions ===
-
-<<Color2(green,This is a new section and is currently undergoing revisions.  Please forgive any incomplete or displaced portions and odd/inconsistent formatting.)>>
+While creating this wiki we encountered several formatting challenges.  This section reflects some of the solutions that we discovered in the process.  Hopefully you will find them helpful if you encounter these same difficulties.  Please note that updates to the wiki or various add-ons may change these at any time.
 
 <span id="problems1"></span>
 {|
@@ -681,7 +684,7 @@ See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] 
 |-
 |''Solution 3'': Put a blank line (Enter key) between list items and then force a number (or other sequential) value by using the ''Markup'' from ''Solution 2'' above.
 |-
-|''Example'': See the Basic Format section of [http://wiki.libsdl.org/moin.cgi/SGTutorials#Basic_Format SGTutorials] then go into edit mode to see the markup.
+|''Example'': See the Basic Format section of [[SGTutorials#Basic_Format|SGTutorials]] then go into edit mode to see the markup.
 |-
 |<( |4 30%>''Problem'': The __indenting__ of my next list item is wrong
 |''Cause'': The list is interrupted by another item (like a box of code) with __less indent__ (farther left) than the previous line of the list
@@ -744,9 +747,9 @@ as possible.
 
 If you have questions that aren't addressed here:
  a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
- a. Check the other SDL [http://wiki.libsdl.org/moin.cgi/Contributing#guides Style Guides].
- a. Post a question to [http://wiki.libsdl.org/moin.cgi/Contributing#form Feedback] and include a way to contact you.
- a. Post a question to the [http://wiki.libsdl.org/moin.cgi/Contributing#list Mailing List].
+ a. Check the other SDL [[Contributing#guides|Style Guides]].
+ a. Post a question to [[Contributing#form|Feedback]] and include a way to contact you.
+ a. Post a question to the [[Contributing#list|Mailing List]].
  a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
 
 If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
