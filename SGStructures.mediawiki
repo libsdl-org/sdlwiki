@@ -33,7 +33,7 @@ This guide provides specific instructions for editing or adding your own content
 
 * Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
 
-''Note'': All markup examples in these Style Guides are specifically for use in the text editor (<<Color2(blue,Edit (text))>> in the left column).  You are welcome to use the GUI editor (<<Color2(blue,Edit (GUI))>> in the left column) instead of you prefer but some formatting details may be different.  
+''Note'': All markup examples in these Style Guides are specifically for use in the text editor ~-(<<Color2(blue,Edit (text))>> in the left column)-~.  You are welcome to use the GUI editor ~-(<<Color2(blue,Edit (GUI))>> in the left column)-~ instead of you prefer but some formatting details may be different.  
 
 For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
@@ -82,12 +82,12 @@ The Description section immediately follows the page title and does not have it'
 |''Example'': [[SDL_Event]]
 |-
 |<( |2 30%>''If'' __another API page__ is referenced in the description
-|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|''Action'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
 |-
 |<( |4 30%>''If'' __a parameter on that page__ is referenced in the description
-|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
@@ -126,7 +126,7 @@ The Data Fields section provides basic information about each field in the struc
 ||typeN||'''fieldN'''||description||
 ```
 
-''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each field name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup.  All text in the table is left-justified.
+''Markup'': Use [[SGWikiBasics#Tables|basic table markup]] and enclose each field name in [[SGWikiBasics#Text_Formatting|bold]] markup.  All text in the table is left-justified.
 
 * The __first column__ contains the field type and any pointers if applicable.
 * The __second column__ contains the field name, without types or pointers, in bold.
@@ -168,8 +168,8 @@ The Data Fields section provides basic information about each field in the struc
 |-
 |''Example'': [[SDL_Event]]
 |-
-|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [#grey|above]])
-|''Action1'': Be sure to [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [[#grey|above]])
+|''Action1'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
 |-
 |''Action 2'': List the page in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
@@ -224,16 +224,16 @@ The Data Fields section provides basic information about each field in the struc
 |''Example'': [[SDL_RendererInfo]], [[SDL_HapticEffect]]
 |-
 |<( |4 30%>''If'' the __Remarks section is large__
-|<span id="large"></span>''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section.
+|<span id="large"></span>''Action 1'': Create an [[SGWikiBasics#Anchors|anchor]] immediately before the additional comments you are adding to the Remarks section.
 |-
-|''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
+|''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [[SGWikiBasics#Anchors|Anchors]] for details.
 |-
 |''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a field" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
 |-
 |''Example'': [[SDL_RendererInfo]]
 |-
 |<( |4 30%>''If'' __a field references another field__ on that same page
-|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the field name.
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the field name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
@@ -261,7 +261,7 @@ This is one of the few sections that is intended to grow and adjust as users dis
 
 For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
 
-'''Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.'''
+'''Please see the [[SGCodeExamples|Code Examples]] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -277,7 +277,7 @@ For the most part the contents of the Remarks section will be user-generated and
 
 ''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
 
-'''Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.'''
+'''Please see the [[SGRemarks|Remarks]] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -302,7 +302,7 @@ The Related Enumerations section provides a list of enumerations specifically re
 * non-enumerations 
 : ~-(ie: do not include functions or structures in this list)-~
 
-''Markup'': Each line should begin with a single blank space and a period followed by the enumeration name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
+''Markup'': Each line should begin with a single blank space and a period followed by the enumeration name enclosed in double brackets to create a [[SGWikiBasics#Hyperlinks|hyperlink]].
 : ''Note'': Do not include empty parentheses after the name.
 
 : '''The basic format for the Related Enumerations list is:'''
@@ -353,7 +353,7 @@ The Related Structures section provides a list of other structures (or unions) s
 * non-structures 
 : ~-(ie: do not include functions or enumerations in this list)-~
 
-''Markup'': Each line should begin with a single blank space and a period followed by the structure name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
+''Markup'': Each line should begin with a single blank space and a period followed by the structure name enclosed in double brackets to create a [[SGWikiBasics#Hyperlinks|hyperlink]].
 : ''Note'': Do not include empty parentheses after the name.
 
 : '''The basic format for the Related Structures list is:'''
@@ -411,7 +411,7 @@ The Related Functions section provides a list of functions specifically associat
 * functions that do not have a page in the wiki
 * non-functions (ie: do not include structures or enumerations in this list)
 
-''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
+''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [[SGWikiBasics#Hyperlinks|hyperlink]].
 : ''Note'': Do not include empty parentheses after the function names in this section.  They are all functions so it should be understood/unnecessary.
 
 : '''The basic format for the Related Functions list is:'''
