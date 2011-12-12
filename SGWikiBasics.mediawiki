@@ -677,13 +677,11 @@ An include enables you to dynamically copy all or a portion of a page onto anoth
    ```##2End Include here.```
 
 ''<<Color2(red,Important!)>>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
-: ''Note'': This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance trackability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
+: ''Note'': The use of hidden comments to create include tags is deliberate.  This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance traceability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
 
 See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
 
 <!-- #The basic Include format is <<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>> -->
-
-<!-- #The <code>from=</code> and <code>to=</code> start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose <code>from=</code> and <code>to=</code> parameters carefully. -->
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
