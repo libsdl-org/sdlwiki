@@ -4,11 +4,12 @@
 '''DRAFT'''
 
 = SDL_AudioSpec =
-A structure that contains the audio output format. It ^also^ contains a callback that is called when the audio device needs more data.
+A structure that contains the audio output format. It also contains a callback that is called when the audio device needs more data.
 
 
 == Data Fields ==
-<<Color2(green,Can '''channels''' only be 1 or 2 or can it handle more? Old wiki lists 4 for surround and 6 for surround w/ center and lfe (sub?).  Should it be 1=mono instead of just 1 mono etc.?)>>
+<!-- Can '''channels''' only be 1 or 2 or can it handle more? Old wiki lists 4 for surround and 6 for surround w/ center and lfe (sub?). -->
+
 {|
 |int
 |'''freq'''
@@ -20,7 +21,7 @@ A structure that contains the audio output format. It ^also^ contains a callback
 |-
 |Uint8
 |'''channels'''
-|number of channels: 1 mono, 2 stereo; see [[#Remarks|Remarks]] for details
+|number of separate sound channels: 1 = mono, 2 = stereo
 |-
 |Uint8
 |'''silence'''
@@ -49,14 +50,16 @@ You can add your code example here
 ```
 
 == Remarks ==
-<<Color2(green,Should the functions [[SDL_LoadWAV_RW]] and [[SDL_OpenAudioDevice]] be added into this remark?  Do they behave like their similarly named counterparts with respect to this struct?)>>
+<!-- Should the functions [[SDL_LoadWAV_RW]] and [[SDL_OpenAudioDevice]] be added into this remark?  Do they behave like their similarly named counterparts with respect to this struct? -->
 
-*<br/>The [[SDL_AudioSpec]] structure is used to describe the format of some audio data. This structure is used by [[SDL_OpenAudio]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudio]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]](). ,,We will detail these common members here:,,
+*<br/>The [[SDL_AudioSpec]] structure is used to describe the format of some audio data. This structure is used by [[SDL_OpenAudio]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudio]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
 
-'''freq''' ^specifies^ the number of samples sent to the sound device ,,every,, ^per^ second. Common values are 11025, 22050 and 44100. The higher the better. <<Color2(green,I think this info could be moved to Params above and this paragraph removed.)>><<Color2(green,I think "The higher the better." implies that the programmer has a choice and should choose the higher number.  I suspect that the value is actually dictated by the audio data.  Perhaps rewording to say "Higher values produce higher quality sounds/audio output" might be preferable?)>>
+'''freq''' specifies the number of samples sent to the sound device per second. Common values are 11025, 22050 and 44100. The higher the better. 
+<!-- I think this info could be moved to Params above and this paragraph removed. -->
+<!-- I think "The higher the better." implies that the programmer has a choice and should choose the higher number.  I suspect that the value is actually dictated by the audio data.  Perhaps rewording to say "Higher values produce higher quality sounds/audio output" might be preferable? -->
 
-<<Color2(green,Should this be an include from [[SDL_AudioFormat]] instead?)>>
-'''format''' specifies the size and type of each sample element. ,,Values it can take are:,, ^Audio format flags may be one of the following values:^
+<!-- Should this be an include from [[SDL_AudioFormat]] instead? -->
+'''format''' specifies the size and type of each sample element and may be one of the following:
  ||||''Defaults to LSB byte order'' -or- ''Basic'' ???||
  ||AUDIO_U8||unsigned 8-bit samples.||
  ||AUDIO_S8||signed 8-bit samples.||
@@ -77,14 +80,13 @@ You can add your code example here
  ||AUDIO_F32SYS||either AUDIO_F32LSB or AUDIO_F32MSB depending on hardware CPU endianness||
 
 
-<<Color2(green,This list was taken from the header.  A portion was listed in the old wiki as well.  Is it correct that audio change flags and audio flags (as opposed to the above audio format flags) should not be included here?)>>
+<!-- This list was taken from the header.  A portion was listed in the old wiki as well.  Is it correct that audio change flags and audio flags (as opposed to the above audio format flags) should not be included here? -->
 
-'''channels''' ^specifies^ the number of separate sound channels. 1 is mono (single channel), 2 is stereo (dual channel). <<Color2(green,I think this paragraph is redundant with Params above and can be removed.)>>
-
-'''samples''' ^specifies a unit of audio data.^ When used with [[SDL_OpenAudio]]() this refers to the size of the audio buffer in samples. A sample is a chunk of audio data of the size specified in '''format''' multiplied by the number of channels. When the [[SDL_AudioSpec]] is used with [[SDL_LoadWAV]]() '''samples''' is set to 4096. <<Color2(green,Params above specifies that this is a "power of 2". Would it be appropriate to show how to determine/calculate this value here?)>>
+'''samples''' specifies a unit of audio data.  When used with [[SDL_OpenAudio]]() this refers to the size of the audio buffer in samples. A sample is a chunk of audio data of the size specified in '''format''' multiplied by the number of channels. When the [[SDL_AudioSpec]] is used with [[SDL_LoadWAV]]() '''samples''' is set to 4096. 
+<!-- Params above specifies that this is a "power of 2". Would it be appropriate to show how to determine/calculate this value here? -->
 <br/>*
 
-The ,,calculated,, values '''silence''' and '''size''' are calculated by [[SDL_OpenAudio]]().
+The values '''silence''' and '''size''' are calculated by [[SDL_OpenAudio]]().
 
 Stereo samples are stored in a LRLRLR ordering.
 
