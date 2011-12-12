@@ -594,50 +594,90 @@ More (but not much) wiki markup for headings can be found at [http://wiki.libsdl
 === Includes ===
 An include enables you to dynamically copy all or a portion of a page onto another page, allowing changes to one page (source) to be automatically updated on another page (recipient).  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
 
-''<<Color2(red,Important!)>>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is important that the content remain up to date on the recipient page if a source page changes or if the two (or more) pages are unlikely to ever require different information for that included content because they are so closely related.  In many cases it is better to do a one time copy and paste operation instead.
+''<<Color2(red,Important!)>>'' While very few pages have includes, it is important to scan over the source page for existing include markup before creating a new include.  More than one set of include markup on a source page will cause conflicts on all pages using that source.  See the table below to determine the best course of action.
+
+''<<Color2(red,Important!)>>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is critical that the content remain up to date on the recipient page if the source page changes.  In many cases it is better to do a one time copy and paste operation instead.
 
 ''Note'': Please choose the source page carefully.  It should reflect the most primary version of the copied information.  (For example, you should use the actual enumeration page as the source rather than another function page that also references the enumeration details.)  
 
 ''Markup'': To create an Include is a 3 step process:
- ''Action 1'': __On the recipient page__ place the following markup in the location where you wish the copied content to begin.  Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
+ ''Action 1'': __On the recipient page__ place the following markup, verbatim, in the location where you wish the copied content to begin.
+* Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
   ```
 <<Include(<PageName>, , , from="Start Include here.", to="##End Include here.")>>
 ```
 : ''Example'': To copy content from [[SDL_GLattr]]
    ```<<Include(SDL_GLattr, , , from="Start Include here.", to="##End Include here.")>>```
+: ''Example'': See the Remarks section of [[SDL_GetRevision]]()  or the Return Value section of [[SDL_MasksToPixelFormatEnum]]() in the text editor.
 
- ''Action 2'': __On the source page__ place the following markup on the line immediately ''before'' the point where you wish to begin the include (to start copying content).  
-: ''<<Color2(red,Important!)>>'' Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup should be left out.
+ ''Action 2'': __On the source page__ place the following markup, verbatim, on the line immediately ''before'' the point where you wish to begin the include (to start copying content).
+* Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup and () after functions should be left out.
   ```
 ##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
 ```
 : ''Example'': If this include will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() the comment on the source page should read:
    <code>#</code><code>#</code><code>The</code> <code>following</code> <code>content</code> <code>is</code> <code>included</code> <code>on</code> <code>SDL_GL_GetAttribute</code> <code>and</code> <code>SDL_GL_SetAttribute.</code>  <code>Any</code> <code>changes</code> <code>between</code> <code>these</code> <code>comments</code> <code>will</code> <code>be</code> <code>reflected</code> <code>there</code> <code>as</code> <code>well.</code>  <code>Please</code> <code>use</code> <code>caution</code> <code>when</code> <code>editing.</code>  <code>Start</code> <code>Include</code> <code>here.</code>
+: ''Example'': See the Remarks section of [[SDL_REVISION]] or Pixel Format Values on [[SDL_PixelFormatEnum]] in the text editor.
 
- ''Action 3'': __On the source page__ place the following markup on the line immediately ''after'' the point where you want to end the include (to stop copying content).
+ ''Action 3'': __On the source page__ place the following markup, verbatim, on the line immediately ''after'' the point where you want to end the include (to stop copying content).
   ```
 ##End Include here.
 ```
+: ''Example'': See the Remarks section of [[SDL_REVISION]] or Pixel Format Values on [[SDL_PixelFormatEnum]] in the text editor.
 
-''Note'': Includes are very literal.  All content between the two <code>##comments</code>, beginning with the character immediately following "<code>The following...here.</code>" and ending with the character immediately before "<code>##End...</code>", will be copied onto the recipient page, so be careful that you intend to include ''all'' content!
+''Note'': Includes are very literal.  All content between the two <code>##comments</code>, beginning with the character immediately following "<code>Start Include here.</code>" and ending with the character immediately before "<code>##End...</code>", will be copied onto the recipient page, so be careful that you intend to include ''all'' content!
 
 {|
-|<( |3 30%>''If'' a source page __does not already have an include on it__
+|<( 30%>''If'' a source page __does not already have an include on it__
 |''Action 1'': Follow the instructions above to create a new include.
-|-
-|''Action 2'': Please email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
-|-
-|''<<Color2(red,Important!)>>'' While this is by far the most common scenario it is important to scan over a source page for existing include markup before creating a new include.  More than one set of include markup on a source page will cause conflicts on all pages using that source.  See the rest of this table if include markup is discovered to determine the best course of action.
 |-
 |<( 30%>''If'' a source page has an __existing Include that already contains the content that you need__ to include on another page
 |''Action'': Use ''Action 1'' above, add the name of the new recipient page to the existing markup on the source page (see ''Action 2'' above), and skip ''Action 3''.
 |-
-|<( 30%>''If'' a source page has an __existing Include that does not contain the content that you need__ to include on another page
-|''Action'': Please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.  The resolution will depend upon the nature of the interaction between the two includes on the page and should be considered carefully.
+|<( |2 30%>''If'' a source page has an __existing Include that does not contain the content that you need__ to include on another page
+|''Action'': See ''Alternative Markup: Action A-C'' below.
 |-
-|<( 30%>''If'' you want to __create an include using more than one continuous section__ on the source page (copying separate blocks)
-|''Action'': Please contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.  The resolution will depend upon the nature of the interaction between the two includes on the page and should be considered carefully.
+|''Note'': It is exceedingly rare to need more than one include on a page and should be avoided if at all possible.
+|-
+|<( |2 30%>''If'' you want to __create an include using more than one continuous section__ on the source page (copying separate blocks)
+|''Action'': See ''Alternative Markup: Action A-C'' below.
+|-
+|''Note'': It is exceedingly rare to need more than one include on a page and should be avoided if at all possible.
 |}
+
+''Alternative Markup'': For pages needing more than one Include use the following:
+ ''Action A'': __On the recipient page__ place the following markup, verbatim, in the location where you wish the copied content to begin.
+* Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
+* Replace X (at the end of the <code>from=</code> parameter) with a number.
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+  ```
+<<Include(<PageName>, , , from="Start Include here.X", to="##XEnd Include here.")>>
+```
+: ''Example'': To copy a second block of content from [[SDL_GLattr]]
+   ```<<Include(SDL_GLattr, , , from="Start Include here.2", to="##2End Include here.")>>```
+
+ ''Action B'': __On the source page__ place the following markup, verbatim, on the line immediately ''before'' the point where you wish to begin the additional include (to define the start of a different block of content).
+* Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup should be left out.
+* Replace X (at the end) with a number.  
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+
+  ```
+##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.X
+```
+: ''Example'': If this is the 2nd include on the source page and will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() recipient pages the comment on the source page should read:
+   <code>#</code><code>#</code><code>The</code> <code>following</code> <code>content</code> <code>is</code> <code>included</code> <code>on</code> <code>SDL_GL_GetAttribute</code> <code>and</code> <code>SDL_GL_SetAttribute.</code>  <code>Any</code> <code>changes</code> <code>between</code> <code>these</code> <code>comments</code> <code>will</code> <code>be</code> <code>reflected</code> <code>there</code> <code>as</code> <code>well.</code>  <code>Please</code> <code>use</code> <code>caution</code> <code>when</code> <code>editing.</code>  <code>Start</code> <code>Include</code> <code>here.</code><code>2</code>
+
+ ''Action C'': __On the source page__ place the following markup, verbatim, on the line immediately ''after'' the point where you want to end the include (to stop copying content).
+* Replace X (at the beginning) with a number.
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+  ```
+##XEnd Include here.
+```
+: ''Example'': If this is the 2nd include on the source page it should read:
+   ```##2End Include here.```
+
+''<<Color2(red,Important!)>>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
+: ''Note'': This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance trackability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
 
 See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
 
@@ -645,8 +685,6 @@ See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] 
 
 <!-- #The <code>from=</code> and <code>to=</code> start markers are very literal!  They will include ''everything'' following the end of the start marker and up to but not including the beginning of the end marker.  (This is why the header markup is included in the above statements.)  When creating an Include statement choose <code>from=</code> and <code>to=</code> parameters carefully. -->
 
-<!-- #If multiple includes must be used on a page modify the [[#include|above]] markup (''Actions 1-3'') as follows: -->
-<!-- # . >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
