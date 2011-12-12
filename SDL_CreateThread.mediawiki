@@ -102,9 +102,10 @@ int SDL_ThreadFunction(void* data)
 : where its parameter is:
  ||<code>data</code>||what was passed as '''data''' to [[SDL_CreateThread]]()||
 
-Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code> APIs to start a new thread. This way, if it's the SDL.DLL which uses this API, then the RTL of SDL.DLL will be used to create the new thread, and if it's the application, then the RTL of the application will be used.  <<Color2(green,This information is also listed on the main Category page in more detail but it seems relevant to list at least some of it here as well.  Should the header be referenced as a link for more information?)>>
+Always use the caller's <code>_beginthread()</code> and <code>_endthread()</code> APIs to start a new thread. This way, if it's the SDL.DLL which uses this API, then the RTL of SDL.DLL will be used to create the new thread, and if it's the application, then the RTL of the application will be used.  
+<!-- This information is also listed on the main Category page in more detail but it seems relevant to list at least some of it here as well.  Should the header be referenced as a link for more information? -->
 
-<<Color2(green,Is the int that is returned equivalent to the thread ID or is it just an integer to indicate success or failure?  Should it be further defined here?)>>
+<!-- Is the int that is returned equivalent to the thread ID or is it just an integer to indicate success or failure?  Should it be further defined here? -->
 
 <span id="name"></span>
 Thread naming is a little complicated: Most systems have very small limits for the string length (BeOS has 32 bytes, Linux currently has 16, Visual C++ 6.0 has nine!), and possibly other arbitrary rules. You'll have to see what happens with your system's debugger. The name should be UTF-8 (but using the naming limits of C identifiers is a better bet).  
@@ -113,20 +114,23 @@ There are no requirements for thread naming conventions, so long as the string i
 : http://stackoverflow.com/questions/149932/naming-conventions-for-threads
 If a system imposes requirements, SDL will try to munge the string for it (truncate, etc), but the original string contents will be available from [[SDL_GetThreadName]]().
 
-*<br/><<Color2(green,The following bugs were listed in the old wiki. Do any still apply in 1.3 or were they resolved by adding the instructions about <code>_beginthread()</code> and <code>_endthread()</code>?)>>
+```#!wiki comment
+<<Color2(green,The following bugs were listed in the old wiki. Do any still apply in 1.3 or were they resolved by adding the instructions about `_beginthread()` and `_endthread()`?)>>
 
-(SDL 1.2.7) Even after the procedure started in the thread returns, there still exist some resources allocated to the thread. To free these resources use [[SDL_WaitThread]]() to wait for the thread to finish and obtain the status code of the thread. If not done so, [[SDL_CreateThread]]() will hang after about 1010 successfully created threads (tested on GNU/Linux). This is consistent with POSIX threads behavior where unless threads are explicitly detached using <code>pthread_detach()</code> or created using a <code>pthread_attr</code> initialized using <code>pthread_attr_setdetachstate()</code> passed at <code>pthread_create()</code>, they must be waited for using <code>pthread_join()</code> for their resources to be released. The SDL threads abstraction library does not provide the functions to detach a thread ^or^ to launch a thread in detached mode.
+(SDL 1.2.7) Even after the procedure started in the thread returns, there still exist some resources allocated to the thread. To free these resources use [[SDL_WaitThread]]() to wait for the thread to finish and obtain the status code of the thread. If not done so, [[SDL_CreateThread]]() will hang after about 1010 successfully created threads (tested on GNU/Linux). This is consistent with POSIX threads behavior where unless threads are explicitly detached using `pthread_detach()` or created using a `pthread_attr` initialized using `pthread_attr_setdetachstate()` passed at `pthread_create()`, they must be waited for using `pthread_join()` for their resources to be released. The SDL threads abstraction library does not provide the functions to detach a thread ^or^ to launch a thread in detached mode.
 
-(SDL 1.2.8) On win32, keystrokes are caught in correctly in a thread, but SDL_EnableUNICODE <<Color2(green,(Does this function still exist in 1.3?  It does not have a page currently.))>> does not work correctly. Specifically, <code>.unicode</code> contains the same value as <code>.sym</code>, not the modified version for SHFT, CTRL, etc.
+(SDL 1.2.8) On win32, keystrokes are caught in correctly in a thread, but SDL_EnableUNICODE <<Color2(green,(Does this function still exist in 1.3?  It does not have a page currently.))>> does not work correctly. Specifically, `.unicode` contains the same value as `.sym`, not the modified version for SHFT, CTRL, etc.
 
-(SDL 1.2.9) On win32 (this wasn't observed on unix), the initial thread must be the one polling the SDL events. Otherwise, keyboard events are no longer caught. Moreover, it is recommended to use SDL_mixer and SDL blitting functions from within that initial thread as well, otherwise the system becomes unstable (also only under win32) despite the proper use of mutexes and conditional variables. This unfortunately limits a lot ^of^ the usefulness of threads when the software is also expected to run on win32.<br/>*
+(SDL 1.2.9) On win32 (this wasn't observed on unix), the initial thread must be the one polling the SDL events. Otherwise, keyboard events are no longer caught. Moreover, it is recommended to use SDL_mixer and SDL blitting functions from within that initial thread as well, otherwise the system becomes unstable (also only under win32) despite the proper use of mutexes and conditional variables. This unfortunately limits a lot ^of^ the usefulness of threads when the software is also expected to run on win32.<<BR>>*
 
 <<Color2(green,Is there a way to kill/destroy/end/close a thread?  Should it be listed here if there is?)>>
+```
 
 == Related Functions ==
 : [[SDL_GetThreadID]] ???
+: [[SDL_GetThreadName]]
 : [[SDL_ThreadID]] ???
-: [[SDL_WaitThread]] ???
+<!-- . [[SDL_WaitThread]] ??? -->
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
