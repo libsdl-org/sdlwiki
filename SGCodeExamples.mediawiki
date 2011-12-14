@@ -5,18 +5,18 @@
 = Style Guide: Code Examples =
 All [[SGWikiBasics#api|API pages]] in this wiki contain a section for code examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
 
+'''The Code Examples section should provide simple examples of real-world applications of the API.'''
 
 <span id="ToC"></span>
 
 == General Guidelines ==
-''The Code Examples section should provide simple examples of real-world applications of the API.''
-
-'''Please post code examples showing how you have used the API that may benefit other users.  
+'''Please post code examples showing how you have used the API that may benefit other users.'''
 * Do not post anything that you do not have permission to post publicly.
 * Code examples should have adequate comments to make them clear and useful.
-* Please remember to keep it simple and easy to understand.'''
-<br/>
-<br/>
+* Please remember to keep it accurate, simple, and easy to understand.
+
+~-[[#ToC|Return to Table of Contents]]-~
+
 == Adding Your Code Examples ==
  1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
   {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
@@ -25,9 +25,9 @@ All [[SGWikiBasics#api|API pages]] in this wiki contain a section for code examp
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
  1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
 For additional assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide.
-<br/>
-<br/>
-<br/>
+
+~-[[#ToC|Return to Table of Contents]]-~
+
 <span id="formatting"></span>
 == Formatting Your Code Examples ==
 
@@ -45,6 +45,8 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |-
 |''Markup'': Insert the following into the spot where your example will be located and place your content on the blank line between the markup:<br/><code>```</code>```c++```<br/><br/><code>}}}</code>||<<Color2(red,''Important!'')>> Do not change or remove any of the existing content.||
 ||''Example'': [[SDL_Init]]()||
+
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Using an Include ===
 Since many functions commonly occur in programs as pairs or small groups of related functions, it may occasionally be appropriate to repeat the same code example on more than one page.
@@ -64,7 +66,7 @@ Very occasionally it may be appropriate to use an [[SGWikiBasics#Includes|Includ
 
 ''Action'': We are keeping a list of all pages using Includes for future reference.  In order to keep this list up to date, please email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with a list of all pages that received the Include and what page was used as the source.  We appreciate your taking time for this extra step to help us keep our records accurate and useful.  Thank you!
 
-[[#ToC|Return to Table of Contents]]
+~-[[#ToC|Return to Table of Contents]]-~
 
 
 
