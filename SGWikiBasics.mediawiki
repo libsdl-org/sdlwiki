@@ -753,7 +753,9 @@ While creating this wiki we encountered several formatting challenges.  This sec
 |''Solution'': The same workarounds as above may or may not be able to resolve this issue as well.  Your goal is to end one list and begin the next with new formatting.  You may have to try several tricks to make this happen.
 |}
 
-<<Color2(red,''Important!'')>> Some list breaks cannot currently be fixed without major formatting compromises so you should be very careful when interrupting a list as it may force formatting you will not want.<br/>See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
+<<Color2(red,''Important!'')>> Some list breaks cannot currently be fixed without major formatting compromises so you should be very careful when interrupting a list as it may force formatting you will not want.
+
+See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
 
 
 
