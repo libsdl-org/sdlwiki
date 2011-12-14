@@ -33,14 +33,27 @@ This guide provides specific instructions for editing or adding your own content
 
 * Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
 
-''Note'': All markup examples in these Style Guides are specifically for use in the text editor ~-(<<Color2(blue,Edit (text))>> in the left column)-~.  You are welcome to use the GUI editor ~-(<<Color2(blue,Edit (GUI))>> in the left column)-~ instead of you prefer but some formatting details may be different.  
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+== Getting Started ==
+ 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+  {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
+ 1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+: ~-(Keep in mind that a few things (like Color2 text) don't preview exactly as they parse.)-~
+ 1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
 
 For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
+<span id="specifics"></span>
 == Editing Specific Sections ==
 === Title ===
 '''''Do not edit the Title.'''''
