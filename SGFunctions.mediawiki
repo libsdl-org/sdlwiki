@@ -33,12 +33,28 @@ This guide provides specific instructions for editing or adding your own content
 
 * Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
 
-For assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
+== Getting Started ==
+ 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+  {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
+ 1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+: ~-(Keep in mind that a few things (like Color2 text) don't preview exactly as they parse.)-~
+ 1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
+
+For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<span id="specifics"></span>
 == Editing Specific Sections ==
 === Title ===
 '''''Do not edit the Title.'''''
@@ -80,12 +96,12 @@ The Description section immediately follows the page title and does not have it'
 |''Example'': [[SDL_VERSION]]()
 |-
 |<( |2 30%>''If'' __another API page__ is referenced in the description
-|''Action'': Be sure to [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] it and use () outside the link markup if it is a function.
+|''Action'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
 |-
 |<( |3 30%>''If'' __a parameter__ on that page is referenced in the description
-|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
@@ -188,7 +204,7 @@ Otherwise, '''function parameters follow this basic format:'''
 ||'''parameterN'''||description||
 ```
 
-''Markup'': Use [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Tables basic table markup] and enclose each parameter name in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold] markup. All text in the table is left-justified. 
+''Markup'': Use [[SGWikiBasics#Tables|basic table markup]] and enclose each parameter name in [[SGWikiBasics#Text_Formatting|bold]] markup. All text in the table is left-justified. 
 
 * The __first column__ contains the parameter names, without types or pointers, in bold.
 * The __second column__ contains a simple description of each parameter using some specific formatting conventions.
@@ -219,9 +235,9 @@ Otherwise, '''function parameters follow this basic format:'''
 |''Example'': [[SDL_CreateWindow]]()
 |-
 |<( |3 30%>''If'' the __Remarks section is large__
-|<span id="large"></span>''Action 1'': Create an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors anchor] immediately before the additional comments you are adding to the Remarks section.
+|<span id="large"></span>''Action 1'': Create an [[SGWikiBasics#Anchors|anchor]] immediately before the additional comments you are adding to the Remarks section.
 |-
-|''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Anchors Anchors] for details.
+|''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [[SGWikiBasics#Anchors|Anchors]] for details.
 |-
 |''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
 |-
@@ -257,7 +273,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |''Example'': [[SDL_PixelFormat]]
 |-
 |<( |1 30%>''If'' a description must refer to any other __page in the API__
-|''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
+|''Action'': Create a [[SGWikiBasics#Hyperlinks|hyperlink]] to the page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
 |-
 |<( |5 30%>''If'' the parameter is __for internal use, deprecated, or private__
 |<span id="grey"></span>''Action 1'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
@@ -281,7 +297,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
 |-
 |<( |4 30%>''If'' __a parameter references another parameter__ on that same page
-|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
@@ -484,7 +500,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |<bgcolor="#EDEDED">''Replacements by other criteria''
 |-
 |<( |4 30%>''If'' __a parameter__ on that page is referenced in the return value
-|''Action'': Use '''[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Text_Formatting bold]''' for the parameter name.
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
@@ -505,12 +521,12 @@ Use the following tables to determine what to replace <code><something></code> a
 |''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
 |-
 |<( |2 30%>''If'' the return value must refer to any other __page in the API__
-|''Action'': Create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink] to the page.
+|''Action'': Create a [[SGWikiBasics#Hyperlinks|hyperlink]] to the page.
 |-
 |''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
 |}
 
-''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an Include in the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics] style guide, and the Include section of the [http://wiki.libsdl.org/moin.cgi/SGRemarks#Using_an_Include Remarks] style guide for details.
+''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an Include in the [[SGWikiBasics#Includes|Wiki Basics]] style guide, and the Include section of the [[SGRemarks#Using_an_Include|Remarks]] style guide for details.
 * ''If'' you use an Include in this section, please email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> telling us what page received the Include and what page was used as the source.  We are keeping a list of all pages using Includes for future reference and this will help us to keep this list up to date.  We appreciate your taking time for this extra step to help us keep our records accurate and useful.  Thank you!
 
 
@@ -525,7 +541,7 @@ This is one of the few sections that is intended to grow and adjust as users dis
 
 For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
 
-'''Please see the [http://wiki.libsdl.org/moin.cgi/SGCodeExamples Code Examples] Style Guide for details on editing this section.'''
+'''Please see the [[SGCodeExamples|Code Examples]] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -541,7 +557,7 @@ For the most part the contents of the Remarks section will be user-generated and
 
 ''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
 
-'''Please see the [http://wiki.libsdl.org/moin.cgi/SGRemarks Remarks] Style Guide for details on editing this section.'''
+'''Please see the [[SGRemarks|Remarks]] Style Guide for details on editing this section.'''
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -568,7 +584,7 @@ The Related Functions section provides a list of other functions specifically re
 
 ''Note'': In most cases a Related Function reference should be reciprocal - if you include function B on the page for function A then function A should be included on the page for function B.
 
-''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Hyperlinks hyperlink].
+''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [[SGWikiBasics#Hyperlinks|hyperlink]].
 : ''Note'': Do not include empty parentheses after the function names in this section.  They are all functions so it should be understood/unnecessary.
 
 : '''The basic format for the Related Functions list is:'''
@@ -827,7 +843,7 @@ callback syntax
 |''Example'': [[SDL_CreateThread]](), [[SDL_AddEventWatch]](), [[SDL_SetAssertionHandler]]()
 |-
 |<( 30%>__Alignment__
-|''Action'': As shown in the [#prototype|basic format]] above, only the first line should be left-justified.  Everything else related directly to the callback should be [[http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Indenting indented] one level (or more) to indicate it's relationship to the callback as opposed to the main function.
+|''Action'': As shown in the [[#prototype|basic format]] above, only the first line should be left-justified.  Everything else related directly to the callback should be [[SGWikiBasics#Indenting|indented]] one level (or more) to indicate it's relationship to the callback as opposed to the main function.
 |-
 |<( |2 30%>''If'' the callback parameter is __not '''callback'''__
 |''Action'': Replace '''callback''' in the [[#prototype|basic format]] above with the function parameter name used in the main function to refer to the callback function.
