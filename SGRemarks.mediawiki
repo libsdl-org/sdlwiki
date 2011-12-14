@@ -6,19 +6,21 @@
 
 All [[SGWikiBasics#api|API pages]] in this wiki contain a section for remarks.  This guide provides instructions for adding your own content to the Remarks section of these pages. 
 
+'''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.'''
+
 <span id="ToC"></span>
 
 == General Guidelines ==
-''The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.''
 
-'''Please post appropriate remarks that may benefit other users.  
+'''Please post appropriate remarks that may benefit other users.'''
 * Do not post anything that you do not have permission to post publicly.
 * Remarks should have adequate references to make them clear and useful.
-* Please remember to keep it simple and easy to understand.
-* ''<<Color2(red,Important!)>>'' The Remarks section is not a discussion board.  This is not an appropriate place to post questions, unrelated comments, or general commentary.  Only constructive information is to be posted in the Remarks section.'''
+* Please remember to keep it accurate, simple, and easy to understand.
+* ''<<Color2(red,Important!)>>'' The Remarks section is not a discussion board.  This is not an appropriate place to post questions, unrelated comments, or general commentary.  Only constructive information is to be posted in the Remarks section.
 : Please use the [http://forums.libsdl.org/ forums], [http://www.libsdl.org/mailing-list.php mailing lists], ''Feedback'' form (upper right corner), or email (<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>) if you have questions or need to discuss some aspect of the API.
-<br/>
-<br/>
+
+~-[[#ToC|Return to Table of Contents]]-~
+
 == Adding Your Remarks ==
  1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
   {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
@@ -28,8 +30,9 @@ All [[SGWikiBasics#api|API pages]] in this wiki contain a section for remarks.  
   ~-(Keep in mind that a few things (like Color2 text) don't preview exactly as they parse.)-~
  1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box.  
 For additional assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide.
-<br/>
-<br/>
+
+
+~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <span id="formatting"></span>
 == Formatting Your Remarks ==
@@ -48,6 +51,8 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |-
 |''Example'': [[SDL_MixAudio]]()
 |}
+
+~-[[#ToC|Return to Table of Contents]]-~
 
 <span id="params"></span>
 === Referencing Function Parameters ===
@@ -68,6 +73,7 @@ When your remark includes a reference to a function parameter:
 |''Example'': [[SDL_OpenAudio]]()
 |}
 
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Referencing Structure Data Fields ===
 ''If'' your remark includes a reference to a structure data field:
@@ -76,6 +82,7 @@ When your remark includes a reference to a function parameter:
 
 ''Example'': [[SDL_AudioSpec]]
 
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Referencing Enumeration Values ===
 ''If'' your remark includes a reference to an enumeration value:
@@ -84,6 +91,7 @@ When your remark includes a reference to a function parameter:
 
 ''Example'': [[SDL_GLattr]]
 
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Referencing A Callback Function ===
 ''If'' your remark is describing a callback function:
@@ -94,6 +102,7 @@ When your remark includes a reference to a function parameter:
 
 ''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
 
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Using an Include ===
 ''If'' your remark uses an [[SGWikiBasics#Includes|Include]] to copy content from another page into the Remarks section, see the guidelines below.
@@ -140,7 +149,7 @@ When your remark includes a reference to a function parameter:
 |''Example'': [[SDL_RendererInfo]], [[SDL_SetRenderDrawBlendMode]]()
 |}
 
-
+~-[[#ToC|Return to Table of Contents]]-~
 
 === Referencing Other API Components ===
 ''If'' your remark includes a reference to an SDL function, enumeration, or structure:
