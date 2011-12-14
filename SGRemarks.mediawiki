@@ -4,7 +4,7 @@
 
 = Style Guide: Remarks =
 
-All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki contain a section for remarks.  This guide provides instructions for adding your own content to the Remarks section of these pages. 
+All [[SGWikiBasics#api|API pages]] in this wiki contain a section for remarks.  This guide provides instructions for adding your own content to the Remarks section of these pages. 
 
 <span id="ToC"></span>
 
@@ -21,12 +21,13 @@ All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki co
 <br/>
 == Adding Your Remarks ==
  1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
-  ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
+  {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
  1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this heading following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
- 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting.
+  ~-(Keep in mind that a few things (like Color2 text) don't preview exactly as they parse.)-~
  1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box.  
-For additional assistance with editing, saving, or wiki-appropriate markup see the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics Wiki Basics] Style Guide.
+For additional assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide.
 <br/>
 <br/>
 <br/>
@@ -95,14 +96,14 @@ When your remark includes a reference to a function parameter:
 
 
 === Using an Include ===
-''If'' your remark uses an [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Include] to copy content from another page into the Remarks section, see the guidelines below.
+''If'' your remark uses an [[SGWikiBasics#Includes|Include]] to copy content from another page into the Remarks section, see the guidelines below.
 
 {|
 |<( 30%>''If'' your Include is copying __stand-alone content__ into the Remarks
-|''Action'': A tie-in statement is not likely necessary.  In that case, simply follow the instructions for creating an Include in [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Wiki Basics]
+|''Action'': A tie-in statement is not likely necessary.  In that case, simply follow the instructions for creating an Include in [[SGWikiBasics#Includes|Wiki Basics]]
 |-
 |<( |2 30%>''If'' your Include is used to copy __values from a related enumeration__ that was mentioned in the Function Parameters section (''most common use'')
-|''Action'': See the following table for tie-in text options to precede the [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#Includes Include].
+|''Action'': See the following table for tie-in text options to precede the [[SGWikiBasics#Includes|Include]].
 |-
 |''Note'': In these examples, replace <code><parameter></code> with the relevant parameter name and replace <code><enumeration></code> with the name of the enumeration or other page being referenced.
 |-
