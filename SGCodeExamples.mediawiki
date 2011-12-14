@@ -3,7 +3,7 @@
 <!-- acl All:read -->
 
 = Style Guide: Code Examples =
-All [http://wiki.libsdl.org/moin.cgi/SGWikiBasics#api API pages] in this wiki contain a section for code examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
+All [[SGWikiBasics#api|API pages]] in this wiki contain a section for code examples.  This guide provides instructions for adding your own content to the Code Examples section of these pages.
 
 
 <span id="ToC"></span>
