@@ -43,7 +43,7 @@ This guide provides specific instructions for editing or adding your own content
  1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
-: ~-(Keep in mind that a few things (like Color2 text) don't preview exactly as they parse.)-~
+: ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
  1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
 
 For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
