@@ -30,7 +30,8 @@ The [[Tutorials|Tutorials]] page provides links to many different resources for 
 
  1. See [[#formatting|Formatting Your Entry]] below to find information relevant to your tutorial and apply the appropriate formatting as you create your entry.
 
- 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  
+ 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+: ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
 
  1. When you are satisfied with your content and have filled in the Comment field under the editing box, save your work by clicking <<Color2(blue,Save Changes)>> in the left column.
 
