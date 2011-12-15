@@ -177,7 +177,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 |''Example'': see [[SDL_Event]]
 |-
 |<( |6 30%><<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>> (Color2 macro)
-|<<Color2(red,''Important!'')>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
+|<span id="color2"></span><<Color2(red,''Important!'')>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
 |-
 |''Note'': We have the Color2 macro installed. It will colorize text inside or outside of tables.
 |-
