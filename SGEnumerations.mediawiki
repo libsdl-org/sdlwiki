@@ -43,12 +43,12 @@ This guide provides specific instructions for editing or adding your own content
  1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
  1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
-: ~-(Keep in mind that a few things (like [[SGWikiBasics#Text_Formatting|Color2 text]]) don't preview exactly as they parse.)-~
+: ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
  1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
 
 For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
-<!-- ############################################################ -->
+
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -60,14 +60,14 @@ For assistance with editing, saving, or wiki-appropriate markup see the [[SGWiki
 
 The Title section consists of the page heading and its markup:
 
- ```= SDL_StructureName =``` 
+ ```= SDL_EnumerationName =``` 
 
-For structure pages this is the name of the structure being described on the page and should match the address of the page.
+For enumeration pages this is the name of the enumeration being described on the page and should match the address of the page.
 
-''Example'': The page address ```http://wiki.libsdl.org/moin.cgi/SDL_PixelFormat``` should have matching title {{{SDL_PixelFormat}}} and describe the [[SDL_PixelFormat]] structure.
+''Example'': The page address ```http://wiki.libsdl.org/moin.cgi/SDL_EventType``` should have matching title {{{SDL_EventType}}} and describe the [[SDL_EventType]] structure.
 
 If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
-
+<!-- ############################################################ -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
