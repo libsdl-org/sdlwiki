@@ -99,14 +99,14 @@ The Description section immediately follows the page title and does not have it'
 |-
 |''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
 |-
-|<( |4 30%>''If'' __a parameter on that page__ is referenced in the description
-|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
+|<( |4 30%>''If'' __a data field on that page__ is referenced in the description
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the field name.
 |-
 |''Note'': This is a very rare occurrence.
 |-
-|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|''Note'': If the reference is to the data field as a ''concept'' (ie: the refresh rate) rather than ''directly'' to the parameter itself (ie: <code>refresh_rate</code>) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
 |-
-|''Example'': [[SDL_LoadWAV_RW]]
+|''Example'': [[SDL_LoadWAV_RW]](), [[SDL_DisplayMode]], [[SDL_Surface]]
 |}
 
 
