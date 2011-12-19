@@ -177,7 +177,7 @@ The Data Fields section provides basic information about each field in the struc
 |<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|above]])
 |''Action 1'': DO NOT hyperlink the page in the type column.
 |-
-|''Action 2'': List the page, with a hyperlink, in the description and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
+|''Action 2'': List the page, with a hyperlink, in the description, Remarks, and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
 |''Example'': [[SDL_Event]]
 |-
