@@ -9,18 +9,25 @@ A hint that specifies a variable controlling which orientations are allowed on i
 == Values ==
 {|
 |LandscapeLeft
+|top of device left
 |-
 |LandscapeRight
+|top of device right
 |-
 |Portrait
+|top of device up
 |-
 |PortraitUpsideDown
+|top of device down
 |}
 
-<<Color2(green,Descriptions have been removed as unnecessary but should be put back if more detailed/descriptive information is available.)>>
 
 == Default ==
-By default...<br/><<Color2(green,This hint appears to have no default.)>>
+By default all orientations are allowed.  ???
+
+```#!wiki comment
+This hint appears to have no default.
+```
 
 == Code Examples ==
 ```c++
@@ -30,7 +37,11 @@ You can add your code example here
 == Remarks ==
 In some circumstances it is necessary to be able to explicitly control which UI orientations are allowed.
 
-This variable is a space delimited list of the above values.  <<Color2(green,Could this statement be reworded to be more clear esp. for non-English speakers?  Maybe - These values may be combined by using a space between them. Or - Separate multiple values by a space.)>>
+This variable is a space delimited list of the above values.  
+
+```#!wiki comment
+Could this statement be reworded to be more clear esp. for non-English speakers?  Maybe - These values may be combined by using a space between them. Or - Separate multiple values by a space.
+```
 
 
 ----
