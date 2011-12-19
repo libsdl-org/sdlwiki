@@ -67,7 +67,7 @@ For enumeration pages this is the name of the enumeration being described on the
 ''Example'': The page address ```http://wiki.libsdl.org/moin.cgi/SDL_EventType``` should have matching title {{{SDL_EventType}}} and describe the [[SDL_EventType]] structure.
 
 If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
-<!-- ############################################################ -->
+
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -75,42 +75,35 @@ If you believe a change is necessary please submit ''Feedback'' from that page o
 === Description ===
 The Description section immediately follows the page title and does not have it's own heading.
 
-'''Structure descriptions begin with:
- ```A structure that contains```'''
+'''Enumeration descriptions begin with:
+ ```An enumeration of```'''
   or very rarely
- ```A union that contains```
+ ```A hint that specifies```
 
-: followed by a ''clear and concise'' description of what the structure contains.
+: followed by a ''clear and concise'' description of what the enumeration (or hint) is.
 
 <span id="note1"></span>
-''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated structures should be placed in the [[#Remarks|Remarks]] section instead.  
+''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated enumerations should be placed in the [[#Remarks|Remarks]] section instead.  
 * The Description should not contain a link to the Remarks section even if additional information is located there.
 
 ''Note'': Exceptions to the basic description are very unusual.  Follow established patterns in the wiki (based on similar pages which may be found by text search) whenever possible if an exception seems appropriate.  
 
 {|
-|<( |2 30%>''If'' the page describes __a union__ rather than a structure
-|''Action'': Use the alternate description (<code>A union that contains...</code>) and, if necessary, replace the word <code>structure</code> with the word <code>union</code> where appropriate throughout the page.
+|<( |2 30%>''If'' the page describes __a hint__ rather than an enumeration
+|''Action'': Use the alternate description (<code>A hint that specifies...</code>) and, if necessary, replace the word <code>enumeration</code> with the word <code>hint</code> where appropriate throughout the page.
 |-
-|''Example'': [[SDL_Event]]
+|''Example'': [[SDL_EventType]], [[SDL_HINT_RENDER_SCALE_QUALITY]]
 |-
 |<( |2 30%>''If'' __another API page__ is referenced in the description
 |''Action'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
 |-
-|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
+|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_BlendMode]]
 |-
-|<( |4 30%>''If'' __a parameter on that page__ is referenced in the description
-|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
-|-
-|''Note'': This is a very rare occurrence.
-|-
-|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
-|-
-|''Example'': [[SDL_LoadWAV_RW]]
+|<( 30%>''If'' __a value on that page__ is referenced in the description
+|''Action'': There is no special formatting for enumeration values since most are already in all caps and distinct enough. (This is different from function parameters or structure data values.)
 |}
 
-
-
+<!-- ################################################################# -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
