@@ -3,7 +3,6 @@
 <!-- format wiki -->
 <!-- language en -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = Thread Management =
 
@@ -12,22 +11,6 @@
 
 == Introduction ==
 This category contains functions for system independent thread management routines.
-
-The SDL thread structure is defined in SDL_thread.c.<br/>
-: ```typedef struct SDL_Thread SDL_Thread;```
-
-<<Color2(green,Should SDL_thread.c be hyperlinked?)>>
-
-We compile SDL into a DLL. This means that it's the DLL which creates a new thread for the calling process with the [[SDL_CreateThread]]() API.  There is a problem with this, that only the RTL of the SDL.DLL will be initialized for those threads, and not the RTL of the calling application!
-
-To solve this, we make a little hack here.  <<Color2(green,Could this line and the next paragraph be joined and made a little less informal?  Example:  To solve this we will always use... -or- To solve this requires a little hack.  We'll always use...)>>
-
-We'll always use the caller's _beginthread() and _endthread() APIs to start a new thread. This way, if it's the SDL.DLL which uses this API, then the RTL of SDL.DLL will be used to create the new thread, and if it's the application, then the RTL of the application will be used.
-
-So, in short:
-Always use the _beginthread() and _endthread() of the calling runtime library!
-
-<<Color2(green,There is a lot of info in the header that looks like it might be code examples or coding info but is formatted more like complex defines.  Does any of that belong here?)>>
 
 ''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] or [http://forums.libsdl.org/viewtopic.php?t=5973 forum].
  
