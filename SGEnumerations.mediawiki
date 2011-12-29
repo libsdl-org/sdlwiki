@@ -231,10 +231,10 @@ The Values section provides basic information about each value in the enumeratio
 <br/>
 <br/>
 === Code Examples ===
-The Code Examples section is meant to contain simple, meaningful examples of how to use the structure in a program.  
+The Code Examples section is meant to contain simple, meaningful examples of how to use the enumeration in a program.  
 * Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
 
-This is one of the few sections that is intended to grow and adjust as users discover more information about a structure that would be helpful to share with other users.
+This is one of the few sections that is intended to grow and adjust as users discover more information about an enumeration that would be helpful to share with other users.
 
 For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
 
@@ -245,14 +245,14 @@ For the most part the contents of the Code Examples section will be user-generat
 <br/>
 <br/>
 === Remarks ===
-The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the structure in real-world applications.  
+The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the enumeration in real-world applications.  
 * Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
 
-This is one of the few sections that is intended to grow and adjust as users discover more information about how a structure behaves under different circumstances.
+This is one of the few sections that is intended to grow and adjust as users discover more information about how an enumeration behaves under different circumstances.
 
 For the most part the contents of the Remarks section will be user-generated and this section will remain as-is until users input their comments. 
 
-''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
+''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and [http://www.libsdl.org/mailing-list.php mailing lists], for these types of remarks.
 
 '''Please see the [[SGRemarks|Remarks]] Style Guide for details on editing this section.'''
 
@@ -261,15 +261,17 @@ For the most part the contents of the Remarks section will be user-generated and
 <br/>
 <br/>
 === Related Enumerations ===
-The Related Enumerations section provides a list of enumerations specifically referenced by the structure or otherwise ''closely'' related to it.
+The Related Enumerations section provides a list of enumerations specifically referenced by the enumeration or otherwise ''closely'' related to it.  '''This section is very rarely used.'''
 
 '''This list __should__ include:'''
-* enumerations that are specifically referenced in the structure
-* enumerations that are indirectly referenced by but still closely related to the structure
-: ~-(ie: the enum is not a field type but its values are used to fill in a field as with [[SDL_EventType]] for the <code>type</code> field in many event structures)-~
+* other enumerations that are specifically referenced in the enumeration (may never occur)
+* other enumerations that are indirectly referenced by or ''very'' closely related to the enumeration
+: ~-(ie: the enum is not used as a value but its values are used to fill in a value or they are different aspects of the same idea)-~
+: ~-This is very uncommon.-~
 
 '''This list __should not__ include:'''
-* every enumeration that might be considered "related" to the structure or any other listed enumerations
+* the primary enumeration on that page
+* every enumeration that might be considered "related" to the enumeration or any other listed enumerations
 : ~-Including too many would make these lists much less valuable.-~
 * all enumerations of similar type
 * all enumerations of a related category
@@ -294,32 +296,28 @@ The Related Enumerations section provides a list of enumerations specifically re
 |<( 30%>''If'' there is __more than one enumeration__ in the list
 |''Action'': List the enumerations in alphabetical order.
 |-
-|<( 30%>''If'' the structure is __a member of the [[SDL_Event]] union__
-|''Action'': Include [[SDL_EventType]] in this section of the page.
-|-
 |<( |2 30%>''If'' there are __no related enumerations__
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |-
 |''Note'': It is common for this section to be empty and removed from the page.
 |}
 
-''Example'': [[SDL_Event]], [[SDL_Keysym]], [[SDL_WindowEvent]]
+''Example'': [[SDL_Keycode]], [[SDL_Scancode]]
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
 === Related Structures ===
-The Related Structures section provides a list of other structures (or unions) specifically referenced by the structure or otherwise ''closely'' related to it.
+The Related Structures section provides a list of structures (or unions) specifically referenced by the enumeration or otherwise ''closely'' related to it.
 
 
 '''This list __should__ include:'''
-* other structures that are specifically referenced in the structure
-* other structures that are indirectly referenced by but closely related to the structure 
+* structures that specifically reference the enumeration
+* structures that indirectly reference but are closely related to the enumeration
 : ~-This is uncommon.-~
 
 '''This list __should not__ include:'''
-* the primary structure on that page
 * every other structure that might be considered "related" 
 : ~-Including too many would make these lists much less valuable.-~
 * all structures of similar type
@@ -354,18 +352,8 @@ The Related Structures section provides a list of other structures (or unions) s
 |''Note'': It is common for this section to be empty and removed from the page.
 |}
 
-''Example'': [[SDL_Event]], [[SDL_Color]], [[SDL_HapticDirection]]
+''Example'': [[SDL_AudioFormat]], [[SDL_BlendMode]], [[SDL_PixelFormatEnum]]
 
-
-
-~-[[#ToC|Return to Table of Contents]]-~
-<br/>
-<br/>
-<span id="RFs"></span>
-=== Related Macros ===
-{i} This is a custom section that should not be used except in the most specific circumstances.  
-''Example'': [[SDL_version]]
-The Related Macros section provides a list of functions specifically associated with that structure or otherwise ''closely'' related to it.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -373,11 +361,11 @@ The Related Macros section provides a list of functions specifically associated 
 <br/>
 <span id="RFs"></span>
 === Related Functions ===
-The Related Functions section provides a list of functions specifically associated with that structure or otherwise ''closely'' related to it.
-* In general, a "Related Function" is one that __uses the given structure__.
+The Related Functions section provides a list of functions specifically associated with that enumeration or otherwise ''closely'' related to it.
+* In general, a "Related Function" is one that __uses the given enumeration__.
 
 '''This list __should__ include:'''
-* functions that use or are otherwise very closely related to the structure
+* functions that use or are otherwise very closely related to the enumeration
 
 '''This list __should not__ include:'''
 * every other function that might be considered "related" 
@@ -407,7 +395,7 @@ The Related Functions section provides a list of functions specifically associat
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |}
 
-''Example'': [[SDL_TextInputEvent]](), [[SDL_SysWMinfo]]()
+''Example'': [[SDL_AudioStatus]], [[SDL_HintPriority]], [[SDL_TextureAccess]]
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -575,162 +563,18 @@ The Footer section consists of a horizontal rule followed by two links separated
 === Special ===
 This section contains details for special formatting circumstances that are best described separately from the average structure page.  In general these guidelines should be used in conjunction with the above.
 
-<span id="callback"></span>
-==== Callback Functions ====
-Although having a callback function associated with a structure is rare, it does occasionally occur.  Documenting this will affect two (2) sections of the structure's page - Data Fields and Remarks.
+<span id="hints"></span>
+==== Hint Pages ====
+Hint pages are present in the API and are treated slightly differently than enumerations.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryHints|CategoryHints]] pages:''':
 
-: ''Note'': Because callback functions are so rare with structures most of the examples listed here will be on function pages.  This is for illustrative purposes only.  '''As of this writing the only callback associated with a structure is the audio callback, found with [[SDL_AudioSpec]].'''  Because of this rarity many of the guidelines below will not currently apply to a structure-based callback, but this is being written with the future possibilities in mind.
+''Action 1'': All Hint pages contain an additional section not present on enumeration pages - Default
 
-''Action 1'': '''Use the following formatting specifics in addition to those listed [[#Data Fields|above]] for the structure whenever a callback function is included on a structure page:'''
-
-{|
-|
-|<bgcolor="#EDEDED">''Data Fields Section Formatting Details''
-|-
-|<( |3 30%>For the field that refers to the __callback__ function
-|''Action'': Use the following wording, modified as necessary, to describe the field:<br/><code>the</code> <code>function</code> <code>to</code> <code>call</code> <code><when</code><code>/</code><code>why>;</code> <code>see</code> <code>[[#Remarks|Remarks]]</code> <code>for</code> <code>details</code><br/>where the text in <code><></code> is replaced with an appropriate description of when or why the callback would be called.
-|-
-|''Note'': This parameter is often named '''callback''' but may have other names.
-|-
-|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
-|-
-|<( |4 30%>For the field that passes __user data__ to the callback
-|<span id="UserData"></span>''Action'': Use the following wording, modified as necessary, to describe the field:<br/><code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code><br/>where <code>callback</code> is replaced with the callback function field name (if necessary).
-|-
-|''Note'': In rare cases this may be a pointer to a pointer and should be described as such.
-|-
-|''Note'': This field is often named '''userdata''', but may have other names.  It is important to distinguish this field from other fields that are passed to the callback also, but that are not strictly carrying "user data", and from other fields that are unrelated to the callback function (such as '''samples''', '''channels''').  See below for details.
-|-
-|''Example'': [[SDL_AudioSpec]], [[SDL_LogSetOutputFunction]](), [[SDL_CreateThread]]()
-|-
-|<( |2 30%>For other fields __related to the callback__
-|''Action'': There may be other fields that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions.
-|-
-|''Example'': [[SDL_AddTimer]](), [[SDL_SetTimer]]()
-|-
-|<( |2 30%>For additional data fields __''not'' related to the callback__
-|<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Data Fields|above]]
-|-
-|''Example'': [[SDL_CreateThread]]()
-|}
-
-<span id="prototype"></span>
-''Action 2'': '''Detail the syntax and parameters of the callback function in the Remarks section using the following __basic format__ with the changes listed in the table below:'''
-   ```{
-The function prototype for '''callback''' is:
- {{{#!highlight cpp
-callback syntax
-```
-: where its parameters are:
- ||<code>callback parameter</code>||description||
-: optional return value info...
-: optional remarks or details...
-}}}}
-: to display
-The function prototype for '''callback''' is:
- ```c++
-callback syntax
-```
-: where its parameters are:
- ||<code>callback parameter</code>||description||
-: optional return value info...
-: optional remarks or details...
-
-{|
-|
-|<bgcolor="#EDEDED">''Remarks Section Formatting Details''
-|-
-|<( |2 30%>__Location__
-|''Action'': Generally the Remarks section is roughly organized in the same order as the data fields.  Callback details should be located in the appropriate region of the Remarks section or at the top if all other Remarks are less directly related to a particular data field.  But, logic should prevail in determining where to place this information if the Remarks section is large. The callback information should be prominent.
-|-
-|''Example'': [[SDL_CreateThread]](), [[SDL_AddEventWatch]](), [[SDL_SetAssertionHandler]]()
-|-
-|<( 30%>__Alignment__
-|''Action'': As shown in the [[#prototype|basic format]] above, only the first line should be left-justified.  Everything else related directly to the callback should be [[SGWikiBasics#Indenting|indented]] one level (or more) to indicate it's relationship to the callback as opposed to the structure.
-|-
-|<( |2 30%>''If'' the callback field is __not '''callback'''__
-|''Action'': Replace '''callback''' in the [[#prototype|basic format]] above with the data field name used in the structure to refer to the callback function.
-|-
-|''Example'': [[SDL_SetEventFilter]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
-|-
-|<( 30%>For __"callback syntax"__ in the [[#prototype|basic format]] above
-|''Action'': Replace "callback syntax" with the callback function's syntax formatted the same as [[SGFunctions#Syntax|regular functions]].
-|-
-|<( |2 30%>''If'' the __callback function name__ requires any explanation
-|''Action'': Replace "where its parameters are:" in the [[#prototype|basic format]] above with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><CallbackName></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name (ie: your function name).
-|-
-|''Example'': [[SDL_AddEventWatch]]()
-|-
-|<( |4 30%>For __| <code>callback parameter</code> | description |__ in the [[#prototype|basic format]] above
-|''Action 1'': Duplicate the line from above for each parameter in the callback (ie: there should be 2 lines for 2 parameters).
-|-
-|''Action 2'': Replace "callback parameter" with the name of each callback function parameter using the same formatting instructions as [[SGFunctions#Syntax|regular functions]] '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
-|-
-|''Action 3'': Replace "description" with an appropriate description of the callback's parameter. See the following for specific parameters.
-|-
-|''Example'': [[SDL_FilterEvents]](), [[SDL_LogSetOutputFunction]]()
-|-
-|<( |2 30%>For the __<code>userdata</code>__ parameter (or comparable)
-|''Action'': Use the following text (modified as necessary):<br/><code>an</code> <code>application-</code><code>specific</code> <code>parameter</code> <code>saved</code> <code>as</code> '''<code>userdata</code>''' <code>in</code> <code>[[SDL_StructureName]]()</code><br/>replacing '''userdata''' with the appropriate parameter name if necessary, and replacing <code>StructureName</code> with the name of the structure on the page.
-|-
-|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
-|-
-|<( |3 30%>''If'' the callback function's __return value__ is important
-|''Action 1'': Replace "optional return value info..." in the [[#prototype|basic format]] above with the relevant return value information.  Be sure to indent text one level as shown.
-|-
-|''Note'': Callback return value information may be omitted if it is not important.  It may be left-justified if it is discussed in the context of the structure rather than the callback itself.
-|-
-|''Example'': [[SDL_AudioSpec]], [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
-|-
-|<( |2 30%>''If'' there are __"optional remarks or details"__
-|''Action'': Replace "optional remarks or details..." in the [[#prototype|basic format]] above with any other relevant information about the callback function.  Be sure to indent text at least one level as shown.
-|-
-|''Example'': [[SDL_LogGetOutputFunction]](), [[SDL_LogSetOutputFunction]]()
-|}
-
-
-<br/>
-
-
-==== Compatibility Structures ====
-Compatibility Structures are present in the API for backward compatibility only and thus are treated slightly differently than structures from the current version.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryCompat|CategoryCompat]] pages:''':
-
-''Action 1'': The top of every compatibility structure page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
- ```
-||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <<BR>>~+For Backward Compatibility Only+~<<BR>><<BR>> ||
-```
-
-''Action 2'': 
- ||<( 30%>''If'' __only one SDL 1.3 structure__ replaces the compatibility structure||''Action'': See ''Markup A'' below.||
- ||<( |2 30%>''If'' __more than one SDL 1.3 structure__ has replaced the compatibility structure||''Action'': See ''Markup B'' below.||
- ||''Note'': This should occur only very rarely, if at all.  Please avoid making the list any larger than necessary.  This is NOT a related structures list!||
- ||<( 30%>''If'' there are __no equivalent structures__ in SDL 1.3||''Action'': See ''Markup C'' below.||
- ||||''Example'': [[SDL_ActiveEvent]], [[SDL_Overlay]], [[SDL_VideoInfo]]||
-<br/>
-: ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Structure</code> with the name of the appropriate SDL 1.3 structure:
+''Markup'': Add the following section .  Replace <code></code> with :
   ```
-== SDL 1.3 Replacement(s) ==
-||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]]'''||
-```
-<br/>
-: ''Markup B'': Add the following section to the end of the page above the footer.  Create a list of structures by repeating the <code>[[SDL_Structure]]</code> markup, separating each member of the list with a comma, and placing the most direct counterpart first, alphabetizing any additional structures after that.
-  ```
-== SDL 1.3 Replacement(s) ==
-||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]], [[SDL_Structure]]'''||
-```
-<br/>
-: ''Markup C'': Add the following section to the end of the page above the footer.  Replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal, or remove it if there is no applicable text:
-  ```
-== SDL 1.3 Replacement(s) ==
-||<tablewidth="100%" #000000 style="color: #FF8C00;">'''There are currently no equivalent structures in SDL 1.3.'''||
-Other options here
+==  ==
 ```
 
-''Example'': See other [[CategoryCompat]] pages for examples
-<!-- #Specific examples need to be added in this section, but at this time it is unclear which will serve as the best examples so specifics are being left out at present. -->
-<!-- #Alternate text if it's worded better:  This is deprecated in favor of [[SDL_Structure]].  This is only for backward compatibility. -->
-
-
+''Example'': 
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
