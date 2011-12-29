@@ -24,7 +24,7 @@ Here's where the messages go on different platforms:
 :Others: standard error output (stderr)
  <<Color2(green,Table instead?)>>
 
-Messages longer than the maximum size (4096 ^bits???^) will be truncated.
+Messages longer than the maximum size (4096 bytes) will be truncated.
 
 
 == Enumerations ==
