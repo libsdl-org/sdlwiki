@@ -443,7 +443,7 @@ The Related Functions section provides a list of functions specifically associat
 |''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
 |}
 
-''Example'': [[SDL_TextInputEvent]](), [[SDL_SysWMinfo]]()
+''Example'': [[SDL_TextInputEvent]], [[SDL_SysWMinfo]]
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
