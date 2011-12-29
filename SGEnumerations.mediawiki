@@ -103,7 +103,6 @@ The Description section immediately follows the page title and does not have it'
 |''Action'': There is no special formatting for enumeration values since most are already in all caps and distinct enough. (This is different from function parameters or structure data values.)
 |}
 
-<!-- ################################################################# -->
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -120,26 +119,24 @@ If you believe a change is necessary please submit ''Feedback'' from that page o
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
-=== Data Fields ===
-The Data Fields section provides basic information about each field in the structure and is presented in table format.
+=== Values ===
+The Values section provides basic information about each value in the enumeration and is presented in table format.
 
 '''The basic format is as follows:'''
 ```
-||type1||'''field1'''||description||
-||type2*||'''field2'''||description||
-||[[type3]]||'''field3'''||description||
+||value1||description||
+||value2||description||
 ...
-||typeN||'''fieldN'''||description||
+||valueN||description||
 ```
 
-''Markup'': Use [[SGWikiBasics#Tables|basic table markup]] and enclose each field name in [[SGWikiBasics#Text_Formatting|bold]] markup.  All text in the table is left-justified.
+''Markup'': Use [[SGWikiBasics#Tables|basic table markup]].  All text in the table is left-justified.  Do not use bold.
 
-* The __first column__ contains the field type and any pointers if applicable.
-* The __second column__ contains the field name, without types or pointers, in bold.
-* The __third column__ contains a simple description of each field using some specific formatting conventions.
+* The __first column__ contains the value name, usually in all caps (format as in the API).
+* The __second column__ contains a simple description of each value using some specific formatting conventions.
 : ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
 
-''Example'': [[SDL_Surface]], [[SDL_JoyButtonEvent]], [[SDL_Palette]], [[SDL_HapticCondition]]
+''Example'': [[SDL_BlendMode]], [[SDL_HintPriority]], [[SDL_PowerState]], [[SDL_WindowFlags]]
 
 ''Action'': There are a few content-dependent conventions we have chosen for consistency across pages.  See the tables below for details. 
 
@@ -147,110 +144,84 @@ The Data Fields section provides basic information about each field in the struc
 |
 |<bgcolor="#EDEDED"><span id="general"></span>''General (whole table)''
 |-
-|<( |4 30%>''If'' the field is __for internal use, deprecated, or unused__ (greyed out)
+|<( |5 30%>''If'' the value is __for internal use, deprecated, or unused__ (greyed out)
 |<span id="grey"></span>''Action 1'': Place a text notation in parentheses at the ''end'' of the description (ie: <code>(deprecated)</code>)
 |-
 |''Action 2'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
 |-
 |''Note'': Although a rare case, any other style markup for that row/cell should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
 |-
-|''Example'': ```
-|<rowstyle="color: #808080;">type
-|'''field'''
+|''Markup'': ```
+|<rowstyle="color: #808080;">value
 |description
-|```, [[SDL_Palette]], [[SDL_Color]]
+|```
 |-
-|<( |3 30%>''If'' the field is __read-only__
+|''Example'': [[SDL_EventType]], [[SDL_LOG_CATEGORY]]
+|-
+|<( |3 30%>''If'' the value is specified as __read-only__
 |''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.
 |-
-|''Note'': This also applies to the rare "<code>(read-write)</code>" field.
+|''Note'': This also applies to the rare case that "<code>(read-write)</code>" is specified.
 |-
-|''Example'': [[SDL_Surface]], [[SDL_Overlay]]
+|''Example'': There are currently no enumeration examples of this.  [[SDL_Surface]], [[SDL_Overlay]]
 |-
-|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|above]])
-|''Action 1'': DO NOT hyperlink the page in the type column.
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the value is greyed out__ (see [[#grey|above]])
+|''Action 1'': DO NOT hyperlink the page in the table.
 |-
 |''Action 2'': List the page, with a hyperlink, in the description and/or in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
-|''Example'': [[SDL_Event]]
+|''Example'': There are currently no enumeration examples of this.  [[SDL_Event]]
 |-
-|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is ''not'' greyed out__ (see [[#grey|above]])
+|<( |3 30%>''If'' __another API page__ is referenced ''and'' __the value is ''not'' greyed out__ (see [[#grey|above]])
 |''Action1'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
 |-
 |''Action 2'': List the page in the appropriate "Related" section at the bottom of the page, if appropriate.
 |-
-|''Example'': [[SDL_Event]], [[SDL_AudioSpec]], [[SDL_SysWMinfo]]
+|''Example'': There are currently no enumeration examples of this.  [[SDL_Event]], [[SDL_BlendMode]]
 |-
-|<( |4 30%>''If'' there are __important, distinct groups of fields__ within the structure
+|<( |4 30%>''If'' there are __important, distinct groups of values__ within the enumeration
 |''Action'': Create sections by placing a full-width row with a grey background and centered, italics title above each group.
 |-
-|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 2 empty cells for a 3 column table).  Place the following markup in the next cell<br/><code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
+|''Markup'': Begin the row with empty table cells equal to the number of columns in the table -1 (ie: 1 empty cell for a 2 column table).  Place the following markup in the last cell<br/><code><bgcolor="#EDEDED">''Section Title''</code><br/>Replace <code>Section Title</code> with appropriate text and close the last column.
 |-
 |''Note'': This is a rare occurrence.  Do not use sections unless they significantly improve the meaning, clarity, or usability of the information.
 |-
-|''Example'': this table, [[SDL_HapticConstant]], [[SDL_HapticRamp]]
-|-
-|<( |2 30%>''If'' the structure includes __padding__ fields
-|''Action'': Omit all <code>padding</code> fields from the wiki page.
-|-
-|''Example'': [[SDL_AudioSpec]], [[SDL_WindowEvent]]
-|-
-|<( |3 30%>''If'' there is __a pointer__ associated with the field
-|''Action 1'': Place the pointer symbol(s) at the end of the type in the ''first column'' with no space between.
-|-
-|''Action 2'': In general, avoid mentioning the pointer in the description unless it is necessary to understand the field.
-|-
-|''Example'': ```
-|type*
-|...```, [[SDL_Surface]], [[SDL_assert_data]]
+|''Example'': this table, [[SDL_AudioFormat]], [[SDL_EventType]]
 |-
 |
-|<bgcolor="#EDEDED">''First Column (type) & Second Column (field)''
-|-
-|
-|<(>There are currently no special formatting instructions that affect only these columns.  See [[#general|''General'']] above.
-|-
-|
-|<bgcolor="#EDEDED">''Third Column (description)''
+|<bgcolor="#EDEDED">''Specific (description column)''
 |-
 |<( |3 30%>''If'' __more than one statement__ must be included in the description
 |''Action'': Separate them with a semi-colon (;)
 |-
-|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a field" below for more details.
+|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a value" below for more details.
 |-
-|''Example'': [[SDL_JoyButtonEvent]], [[SDL_Keysym]]
+|''Example'': [[SDL_HintPriority]], [[SDL_GLattr]]
 |-
-|<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a field
+|<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a value
 |<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```
 |-
 |''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section.
 |-
 |''Action 3'': See "''If'' the __[[#large|Remarks section is large]]__" below for more details.
 |-
-|''Example'': [[SDL_RendererInfo]], [[SDL_HapticEffect]]
+|''Example'': [[SDL_PixelFormatEnum]], [[SDL_GLattr]]
 |-
 |<( |4 30%>''If'' the __Remarks section is large__
 |<span id="large"></span>''Action 1'': Create an [[SGWikiBasics#Anchors|anchor]] immediately before the additional comments you are adding to the Remarks section.
 |-
 |''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [[SGWikiBasics#Anchors|Anchors]] for details.
 |-
-|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a field" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
+|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a value" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
 |-
-|''Example'': [[SDL_RendererInfo]]
+|''Example'': [[SDL_GLattr]], [[SDL_PixelFormatEnum]]
 |-
-|<( |4 30%>''If'' __a field references another field__ on that same page
-|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the field name.
-|-
-|''Note'': This is a very rare occurrence.
-|-
-|''Note'': If the reference is to the field as a ''concept'' rather than ''directly'' to the field itself do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
-|-
-|''Example'': [[SDL_AudioCVT]], [[SDL_HapticCustom]]
-|-
-|<( |2 30%>''If'' there is __no relevant description text__
+|<( |3 30%>''If'' there is __no relevant description text__
 |''Action'': It is acceptable to leave the description cell blank, although it is preferable to put some information there even if it is redundant with the field name or otherwise does not really provide any novel information.
 |-
-|''Example'': [[SDL_Color]]
+|''Note'': If ''none'' of the values has relevant description text it is acceptable to remove the entire description column, but this should be done with caution and only extremely rarely.
+|-
+|''Example'': [[SDL_PixelFormatEnum]], [[SDL_AudioStatus]], [[SDL_HINT_RENDER_DRIVER]]
 |}
 
 
