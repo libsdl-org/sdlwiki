@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Shared Object Loading and Function Lookup =
 
