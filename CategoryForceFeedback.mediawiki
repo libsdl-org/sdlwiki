@@ -2,9 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 = Force Feedback Support =
 
@@ -21,7 +18,7 @@ The basic usage is as follows:
  1. Open a Haptic Device
   a. [[SDL_HapticOpen]]() to open from index
   a. [[SDL_HapticOpenFromJoystick]]() to open from an existing joystick
- 1. Create an effect ([[SDL_HapticEffect]])  <<Color2(green,= typedef union - page? no link?)>>
+ 1. Create an effect ([[SDL_HapticEffect]])
  1. Upload the effect with [[SDL_HapticNewEffect]]()
  1. Run the effect with [[SDL_HapticRunEffect]]()
  1. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
