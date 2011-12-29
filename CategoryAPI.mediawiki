@@ -16,7 +16,7 @@
 
 == Structures ==
 
-<<FullSearch(category:CategoryStruct -SDLStructTemplate -SGStructures)>>
+<<FullSearch(category:CategoryStruct -SDLStructTemplate -SGStructures -SGEnumerations)>>
 
 == Functions ==
 
