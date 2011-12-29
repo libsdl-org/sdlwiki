@@ -403,23 +403,26 @@ The Related Functions section provides a list of functions specifically associat
 <br/>
 <span id="footer"></span>
 === Footer ===
+{|
+|<tablewidth="100%" ><<Color2(red,''Important!'')>><br/>See [[#hints|Hint Pages]] below for details on how this section is different for Hint pages.
+|}
 
 The Footer section consists of a horizontal rule followed by two links separated by a comma.  
 
 ''Markup'': 
 ```
 ----
-[[CategoryStruct]], [[CategoryHeader]]
+[[CategoryEnum]], [[CategoryHeader]]
 ```
-: where <code>CategoryStruct</code> is the same for every structure page and <code>CategoryHeader</code> is structure-specific with <code>Header</code> varying based on the header file containing the structure (see below).
+: where <code>CategoryEnum</code> is the same for every enumeration page and <code>CategoryHeader</code> is enumeration-specific with <code>Header</code> varying based on the header file containing the enumeration (see below).
 
-<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the structure will appear in the correct list(s).
+<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the enumeration will appear in the correct list(s).
 
-''Action 1'': '''Do not edit the <code>CategoryStruct</code> link!'''
+''Action 1'': '''Do not edit the <code>CategoryEnum</code> link!'''
 
 ''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the structure has been relocated to another header (very rare).
 
-''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
+''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file according to the table).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit your concern in the [http://forums.libsdl.org/ forums] or [http://www.libsdl.org/mailing-list.php mailing lists] or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
 ''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
 
@@ -559,23 +562,31 @@ The Footer section consists of a horizontal rule followed by two links separated
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
-
+<!-- ############################################################ -->
 === Special ===
-This section contains details for special formatting circumstances that are best described separately from the average structure page.  In general these guidelines should be used in conjunction with the above.
+This section contains details for special formatting circumstances that are best described separately from the average enumeration page.  In general these guidelines should be used in conjunction with the above.
 
 <span id="hints"></span>
 ==== Hint Pages ====
-Hint pages are present in the API and are treated slightly differently than enumerations.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryHints|CategoryHints]] pages:''':
+In some cases Hints are formatted slightly differently than enumerations.  '''Use the following formatting specifics in addition to those listed above for all [[CategoryHints|CategoryHints]] pages:''':
 
 ''Action 1'': All Hint pages contain an additional section not present on enumeration pages - Default
 
-''Markup'': Add the following section .  Replace <code></code> with :
+''Markup'': Add the following section to all <code>CategoryHints</code> pages between the Values and Code Examples sections.
   ```
-==  ==
+== Default ==
 ```
+: ''Action'': Immediately under this section include at least one sentence beginning with the following, and describing the default state, if any, for that hint:
+  <code>By default...</code>
 
-''Example'': 
+''Example'': [[SDL_HINT_FRAMEBUFFER_ACCELERATION]], [[SDL_HINT_RENDER_SCALE_QUALITY]]
 
+
+''Action 2'': The [[#Footer|Footer]] section of a Hint page follows the same guidelines as for an enumeration page with the following differences:
+: Use ```[[CategoryDefine]], [[CategoryHints]]``` as the link pair at the bottom instead.
+: The table above is irrelevant to this section since they are all the same.
+
+''Note'': To date there are no Related Enumerations, Related Structures, or Related Functions listed on any Hint page.  Should there be, follow the same general guidelines as for enumerations.  
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
