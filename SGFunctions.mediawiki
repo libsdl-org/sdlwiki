@@ -888,12 +888,14 @@ callback syntax
 
 <br/>
 
+```{#!wiki comment
+'''''This section has been left in for future reference if a compat section or similar is ever added back. It does not currently apply to any pages.'''''
 
 ==== Compatibility Functions ====
 Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryCompat|CategoryCompat]] pages:''':
 
 ''Action 1'': The top of every compatibility function page should include the following, verbatim, to be placed below the pragma markup, below <<Color2(red,DRAFT)>> if present, and above the page title:
- ```
+ {{{
 ||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <<BR>>~+For Backward Compatibility Only+~<<BR>><<BR>> ||
 ```
 
@@ -928,7 +930,7 @@ Other options here
 ```
 : ''Example'': [[SDL_EnableKeyRepeat]]() (see other [[CategoryCompat]] pages for more examples)
 <!-- #Specific examples need to be added here -->
-
+}}}}
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
