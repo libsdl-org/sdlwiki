@@ -179,14 +179,3 @@
 |-
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_power.h SDL_power.h] 
-|}
-
-
-== 1.2 Compatibility ==
-
-{|
-|<tablewidth="100%"width="75%">'''View information and functions related to...'''
-|'''View the header'''
-|-
-|[CategoryCompat|SDL 1.2 Compatibility API]] 
-|[[http://hg.libsdl.org/SDL/file/default/include/SDL_compat.h SDL_compat.h] 
