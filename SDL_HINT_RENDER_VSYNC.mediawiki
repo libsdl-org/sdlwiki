@@ -23,7 +23,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-If framebuffer acceleration is enabled this will affect the surface returned by [[SDL_SetVideoMode]]().
+''You can add useful comments here''
+
+<!-- #If framebuffer acceleration is enabled this will affect the surface returned by [[SDL_SetVideoMode]](). -->
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
