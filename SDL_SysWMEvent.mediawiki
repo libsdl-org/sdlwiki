@@ -29,7 +29,8 @@ If you want to use this event you should include SDL_syswm.h.
 
 [[SDL_SysWMEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_SYSWMEVENT is reported. You would access it through the event's <code>syswm</code> field. 
 
-*<br/>If you want to obtain system-specific information about the window manager, you can fill in the <code>version</code> member of an [[SDL_SysWMinfo]] structure (details can be found in SDL_syswm.h, ,,which must be included,,) using the [[SDL_VERSION]]() macro found in SDL_version.h, and pass it to the function[[SDL_GetWindowWMInfo]](). ```
+If you want to obtain system-specific information about the window manager you can fill in the <code>version</code> member of an [[SDL_SysWMinfo]] structure (details can be found in SDL_syswm.h) using the [[SDL_VERSION]]() macro found in SDL_version.h, and pass it to the function [[SDL_GetWindowWMInfo]]().
+ ```
 int SDL_GetWindowWMInfo(SDL_SysWMinfo *info);
 ```
 
