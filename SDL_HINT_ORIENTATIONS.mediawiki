@@ -23,11 +23,7 @@ A hint that specifies a variable controlling which orientations are allowed on i
 
 
 == Default ==
-By default all orientations are allowed.  ???
-
-```#!wiki comment
-This hint appears to have no default.
-```
+By default all orientations are allowed.
 
 == Code Examples ==
 ```c++
