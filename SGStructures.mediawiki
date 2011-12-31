@@ -168,11 +168,11 @@ The Data Fields section provides basic information about each field in the struc
 |```, [[SDL_Palette]], [[SDL_Color]]
 |-
 |<( |3 30%>''If'' the field is __read-only__
-|''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.
+|''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.<br/>If ''all'' fields are read-only notate it in the Remarks instead.
 |-
 |''Note'': This also applies to the rare "<code>(read-write)</code>" field.
 |-
-|''Example'': [[SDL_Surface]], [[SDL_Overlay]]
+|''Example'': [[SDL_Surface]], [[SDL_PixelFormat]]
 |-
 |<( |3 30%>''If'' __another API page__ is referenced ''and'' __the field is greyed out__ (see [[#grey|above]])
 |''Action 1'': DO NOT hyperlink the page in the type column.
@@ -642,7 +642,7 @@ Although having a callback function associated with a structure is rare, it does
 |<( |2 30%>For other fields __related to the callback__
 |''Action'': There may be other fields that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions.
 |-
-|''Example'': [[SDL_AddTimer]](), [[SDL_SetTimer]]()
+|''Example'': [[SDL_AddTimer]]()
 |-
 |<( |2 30%>For additional data fields __''not'' related to the callback__
 |<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Data Fields|above]]
