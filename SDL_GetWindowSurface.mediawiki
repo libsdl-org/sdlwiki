@@ -29,6 +29,8 @@ A new surface will be created with the optimal format for the window, if necessa
 
 You may not combine this with 3D or the rendering API on this window.
 
+This function is affected by [[SDL_HINT_FRAMEBUFFER_ACCELERATION]].
+
 == Related Functions ==
 :[[SDL_UpdateWindowSurface]]
 :[[SDL_UpdateWindowSurfaceRects]]
