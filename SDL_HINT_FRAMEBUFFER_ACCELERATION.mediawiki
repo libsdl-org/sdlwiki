@@ -26,7 +26,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-SDL can try to accelerate the screen surface returned by [[SDL_SetVideoMode]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done.
+''You can add useful comments here''
+<!-- SDL can try to accelerate the screen surface returned by [[SDL_SetVideoMode]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done. -->
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
