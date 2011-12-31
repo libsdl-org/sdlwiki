@@ -159,11 +159,11 @@ The Values section provides basic information about each value in the enumeratio
 |''Example'': [[SDL_EventType]], [[SDL_LOG_CATEGORY]]
 |-
 |<( |3 30%>''If'' the value is specified as __read-only__
-|''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.
+|''Action'': Place the text notation <code>(read-only)</code> in parentheses at the end of the description.<br/>Do not grey out the line.<br/>If ''all'' values are read-only notate it in the Remarks instead.
 |-
 |''Note'': This also applies to the rare case that "<code>(read-write)</code>" is specified.
 |-
-|''Example'': There are currently no enumeration examples of this.  [[SDL_Surface]], [[SDL_Overlay]]
+|''Example'': There are currently no enumeration examples of this.  [[SDL_Surface]], [[SDL_PixelFormat]]
 |-
 |<( |3 30%>''If'' __another API page__ is referenced ''and'' __the value is greyed out__ (see [[#grey|above]])
 |''Action 1'': DO NOT hyperlink the page in the table.
