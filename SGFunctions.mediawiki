@@ -803,7 +803,7 @@ The presence of a callback function will affect two (2) sections of the main fun
 |<( |2 30%>For other parameters __related to the callback__
 |''Action'': There may be other parameters that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions.
 |-
-|''Example'': [[SDL_AddTimer]](), [[SDL_SetTimer]]()
+|''Example'': [[SDL_AddTimer]]()
 |-
 |<( |2 30%>For additional function parameters __''not'' related to the callback__
 |<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Function Parameters|above]]
@@ -906,7 +906,7 @@ Compatibility functions are present in the API for backward compatibility only a
  ||''Note'': Listing more than two replacement functions should occur only rarely, if at all.  Please avoid making this list any larger than necessary.  This is NOT a related functions list!||
  ||''Example'': [[SDL_AudioDriverName]](), [[SDL_WM_ToggleFullScreen]]()||
  ||<( |2 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup C'' below.||
- ||''Example'': [[]](), [[]]()||
+ ||''Example'': [[SDL_Flip]](), [[]]()||
 <br/>
 : ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Function</code> with the name of the appropriate SDL 1.3 function:
   ```
