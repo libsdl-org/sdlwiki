@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_HINT_FRAMEBUFFER_ACCELERATION =
-A hint that specifies how 3D acceleration is used to accelerate the SDL 1.2 screen surface.
+A hint that specifies how 3D acceleration is used with [[SDL_GetWindowSurface]]().
 
 
 == Values ==
@@ -26,9 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-<!-- SDL can try to accelerate the screen surface returned by [[SDL_SetVideoMode]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done. -->
+SDL can try to accelerate the screen surface returned by [[SDL_GetWindowSurface]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done.
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
