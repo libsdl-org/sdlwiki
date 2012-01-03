@@ -29,13 +29,13 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 
 <!-- #Remove this line and the ## in front of the following if they become relevant to this category to activate them. -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryInit -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryInit -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryInit -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryInit -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryInit -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryInit -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
