@@ -17,13 +17,13 @@ The SDL error messages are in English.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryError -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryError -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryError -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryError -SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryError -CategoryEnum -CategoryStruct)>>
+<<FullSearchCachedCached(category:CategoryError -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
