@@ -3,7 +3,6 @@
 <!-- pragma camelcase off -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Log Handling =
 
