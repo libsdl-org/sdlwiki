@@ -14,13 +14,13 @@ This category contains functions for gathering information about the processor's
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryCPU-SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryCPU-SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryCPU -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryCPU -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryCPU -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryCPU -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
