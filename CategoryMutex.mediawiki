@@ -20,13 +20,13 @@ There are 3 primitives available in SDL:
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryMutex -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryMutex -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryMutex -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryMutex -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryMutex -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryMutex -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
