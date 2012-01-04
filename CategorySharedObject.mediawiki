@@ -20,13 +20,13 @@ There are some system dependent library loading routines.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategorySharedObject -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategorySharedObject -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategorySharedObject -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategorySharedObject -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategorySharedObject -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategorySharedObject -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
