@@ -2,7 +2,6 @@
 <!-- #master-date:Unknown-Date -->
 <!-- format wiki -->
 <!-- language en -->
-'''DRAFT'''
 
 = Mouse Support =
 
@@ -26,13 +25,13 @@ Those two APIs are incompatible, and you usually should not use both at the same
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryMouse -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryMouse -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryMouse -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryMouse -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryMouse -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryMouse -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
