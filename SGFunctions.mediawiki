@@ -652,10 +652,8 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_clipboard.h
 |CategoryClipboard
-|-
-|SDL_compat.h
-|CategoryCompat
 |}
+<!-- #||SDL_compat.h||CategoryCompat|| -->
 <!-- #||SDL_copying.h|||| -->
 {|
 |SDL_cpuinfo.h
