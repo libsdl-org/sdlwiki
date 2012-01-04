@@ -13,13 +13,13 @@ This category contains functions for clipboard handling.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryClipboard -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryClipboard -SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryClipboard -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryClipboard -SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryClipboard -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryClipboard -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 
 ----
