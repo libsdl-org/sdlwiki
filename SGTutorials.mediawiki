@@ -113,7 +113,7 @@ http://wiki.libsdl.org/moin.cgi/PageName
  ''Example'': The address for the page [[SDL_BuildAudioCVT]]() is
 : ```http://wiki.libsdl.org/moin.cgi/SDL_BuildAudioCVT```
 
- <<Color2(red,''Important!'')>> Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page name after the page is created and saved. 
+ <<Color2(red,''Important!'')>> Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page address after the page is created and saved. 
  ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': Copy all of your contents, cancel or close the page, and start over.<br/>Paste your contents into the new page and continue editing.||
  ||''Note'': Your old page and address will not be saved.||
  ||<( |2>''If'' you discover a typo in the address __after you saved the page__||''Action'': Send a message via ''Feedback'' or to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> requesting a correction.||
