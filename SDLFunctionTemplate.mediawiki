@@ -3,8 +3,17 @@
 <!-- acl All:read -->
 '''DRAFT'''
 
-= SDL_FunctionName =
-Use this function to ''insert short function description here''.
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_Function =
+Use this function to ******.
+
+<!-- #Replace SDL_Function with the name of the function and ****** with a short description of the function according to the Style Guide, then delete this comment. -->
+
+
 
 
 == Syntax ==
@@ -12,27 +21,44 @@ Use this function to ''insert short function description here''.
 value SDL_FunctionName(param)
 ```
 
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
 == Function Parameters ==
 {|
 |'''param'''
 |description
 |}
 
+<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
+
+
 == Return Value ==
-''Remove this section if there is no return value.
-Many SDL functions use this standard text (remove if not applicable):''
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns ......; call [[SDL_GetError]]() for more information.
+
+<!-- #For many functions (esp for int return values) replace the ...... above with     0 on success or a negative error code on failure    , then delete these comments.  --OR-- -->
+<!-- #Replace ...... above with another appropriate description per the Style Guide, then delete these comments.  --OR-- -->
+<!-- #Remove this section if there is no return value, then delete these comments. -->
+
 
 == Code Examples ==
 ```c++
 You can add your code example here
 ```
 
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
 == Remarks ==
 ''You can add useful comments here''
 
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
 == Related Functions ==
 :[[SDL_OtherFunction]]
+<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryHeader]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
