@@ -7,9 +7,11 @@
 
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
 
+
 = SDL_Enumeration =
 An enumeration of ******.
-<!-- #Replace SDL_Enumeration with the name of the enum and ****** with a description of the enum, then delete this comment. -->
+
+<!-- #Replace SDL_Enumeration with the name of the enum and ****** with a brief description of the enum according to the Style Guide, then delete this comment. -->
 
 
 
@@ -27,6 +29,7 @@ An enumeration of ******.
 |}
 
 <!-- #Fill in the above table per the Style Guide, then delete this comment. -->
+
 
 == Code Examples ==
 ```c++
