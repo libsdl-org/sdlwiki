@@ -91,3 +91,9 @@ http://wiki.libsdl.org/moin.cgi/PageName
  ||<<Color2(blue,SDLStructTemplate)>>||to create a page for a Structure or Union||
 
 ''Action 2'': There are some very basic instructions commented (after ## at the beginning of a line) into the 3 templates, but these will be inadequate in most cases.  Depending upon the type of API page, see the appropriate [[Contributing#guides|Style Guide]] for further details.
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+
+<<Include(SGWikiBasics, , , from="Start SG Include here.", to="##End SG Include here.")>>
