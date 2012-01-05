@@ -66,11 +66,10 @@ http://wiki.libsdl.org/moin.cgi/PageName
 
  ||<( |2 30%>''If'' you need to create a new __Category page__||''Action 1'': Select <code>CategoryTemplate</code> in the left column of the table||
  ||''Action 2'': See [[#category|Creating a Category Page]] below for further details||
- ||<( |3 30%>''If'' you need to create a new __API page__||''Action 1'': Click on the appropriate template in the ''left'' column of the table on the screen.||
- ||''Note'': Click on <code>SDLEnumTemplate</code> to create a page for Enumerations or Hints, <code>SDLFunctionTemplate</code> for Functions, or <code>SDLStructTemplate</code> for Structures or Unions.||
+ ||<( |2 30%>''If'' you need to create a new __API page__||''Action 1'': In the ''__left__'' column of the table click on:<br/> <code>SDLEnumTemplate</code> to create a page for Enumerations or Hints,<br/><code>SDLFunctionTemplate</code> for Functions, or<br/><code>SDLStructTemplate</code> for Structures or Unions.||
  ||''Action 2'': See [[#api|Creating an API page]] below for further details||
 
- ''Note'': When creating a new page the default is the Text editor.  If you prefer to use the GUI editor click <<Color2(blue,GUI/Text Mode)>> in the left column to switch to the GUI editor once on the new page.
+ ''Note'': When editing a new page the default method is the Text editor.  If you prefer to use the GUI editor click <<Color2(blue,GUI/Text Mode)>> in the left column to switch to the GUI editor once on the new page.
 
  ''Note'': For information on markup used in this wiki see [[SGWikiBasics]].
 
@@ -79,11 +78,10 @@ http://wiki.libsdl.org/moin.cgi/PageName
 <br/>
 <span id="category"></span>
 === Creating a Category Page ===
-
+''Action'': Follow the commented instructions (following ## at the beginning of a line) on the Category template page and use other Category pages as examples.  Contact us if you need help or have questions.
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <span id="api"></span>
 === Creating an API Page ===
-Depending upon the type of API page, see the appropriate [[Contributing#guides|Style Guide]] for further details
-Once you have created a new page address and 
+''Action'': There are some very basic instructions commented (following ## at the beginning of a line) into the 3 templates, but these will be inadequate in most cases.  Depending upon the type of API page, see the appropriate [[Contributing#guides|Style Guide]] for further details.
