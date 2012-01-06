@@ -1,7 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 <!-- acl All:read -->
-'''DRAFT'''
 
 = Style Guide: Enumerations Pages =
 This guide provides specific instructions for editing or adding your own content to each section of an Enumeration page in this wiki.
