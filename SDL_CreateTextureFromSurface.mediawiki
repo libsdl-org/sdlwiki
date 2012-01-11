@@ -31,9 +31,6 @@ You can add your code example here
 == Remarks ==
 The surface is not modified or freed by this function.
 
-<span id="format"></span> '''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
-
 == Related Functions ==
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
