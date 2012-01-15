@@ -29,7 +29,7 @@ int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
 |the blue value used to draw on the rendering target
 |-
 |'''a'''
-|the alpha value used to draw on the rendering target; usually SDL_ALPHA_OPAQUE (255)
+|the alpha value used to draw on the rendering target; usually SDL_ALPHA_OPAQUE (255). Use [[SDL_SetDrawBlendMode]] to specify how the alpha channel is used
 |}
 
 == Return Value ==
@@ -37,7 +37,14 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
+SDL_Rect rectangle;
+
+rectangle.x = 0;
+rectangle.y = 0;
+rectangle.w = 50;
+rectangle.h = 50;
+SDL_RenderFillRect(renderer, &rectangle);
 ```
 
 == Remarks ==
