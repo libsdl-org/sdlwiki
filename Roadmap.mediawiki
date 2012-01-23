@@ -1,8 +1,8 @@
 <!-- pragma camelcase off -->
 
-= SDL 1.3 Roadmap =
+= SDL 2.0 Roadmap =
 
-This is a list of features which are in progress for the SDL 1.3 release.  The features are organized by subsystem and assigned to developers.  Features will move around as the design evolves.
+This is a list of features which are in progress for the SDL 2.0 release.  The features are organized by subsystem and assigned to developers.  Features will move around as the design evolves.
 
 <<TableOfContents(2, 2)>>
 
@@ -143,9 +143,9 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 
 === Required ===
 * Sam: Public license for SDL_compat.c, tests, and SDL_main*
-* Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 1.3 installations
-* Sam: Write introductions for SDL 1.3 API documentation
-* Sheena: Finish 1.3 API documentation
+* Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 2.0 installations
+* Sam: Write introductions for SDL 2.0 API documentation
+* Sheena: Finish 2.0 API documentation
 
 === Wishlist ===
 * <<Color2(gray, Create an API for live video capture)>>
@@ -153,5 +153,5 @@ This is a list of features which are in progress for the SDL 1.3 release.  The f
 * <<Color2(gray, Create extended set of (negative) error codes and have the API functions document and return them)>>
 
 ----
-Ryan has more information on the SDL 1.3 changes that you can find here: <br/>
+Ryan has more information on the SDL 2.0 changes that you can find here: <br/>
 http://icculus.org/cgi-bin/finger/finger.pl?user=icculus&date=2007-10-07&section=sdl13
