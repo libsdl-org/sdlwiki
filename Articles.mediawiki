@@ -1,7 +1,7 @@
 = Articles Related to SDL =
 
-== SDL 1.3 ==
-If you know of an article about SDL 1.3 that should be linked here please let us know either using ''Feedback'' above or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.  Thanks!
+== SDL 2.0 ==
+If you know of an article about SDL 2.0 that should be linked here please let us know either using ''Feedback'' above or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.  Thanks!
 
 == SDL 1.2 ==
 * Free Software Magazine - May 2006
