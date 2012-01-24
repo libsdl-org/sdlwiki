@@ -52,7 +52,7 @@ If '''srcrect''' is NULL, the entire surface is copied. If '''dstrect''' is NULL
 The final blit rectangle is saved in '''dstrect''' after all clipping is performed ('''srcrect''' is not modified).
 
 
-<<Color2(green,This section needs to be modified to reflect the concepts in the new version.  alpha and colorkey have been replaced in 1.3.)>>
+<<Color2(green,This section needs to be modified to reflect the concepts in the new version.  alpha and colorkey have been replaced in 2.0.)>>
 The blit semantics for surfaces with and without alpha and colorkey are defined as follows:
 
  RGBA->RGB:
