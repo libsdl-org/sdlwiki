@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= SDL 1.3 API Structures =
+= SDL 2.0 API Structures =
 
 
 == Introduction ==
