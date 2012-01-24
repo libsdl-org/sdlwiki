@@ -30,7 +30,7 @@ You can add your code example here
 
 The current state of the mouse cursor can be queried by passing SDL_QUERY; either SDL_DISABLE or SDL_ENABLE will be returned.<br/>*
 
-<<Color2(green,The above has been rearranged from the original.  Do these apply in 1.3?)>>
+<<Color2(green,The above has been rearranged from the original.  Do these apply in 2.0?)>>
 
 == Related Functions ==
 :[[SDL_CreateCursor]] *
