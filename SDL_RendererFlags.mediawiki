@@ -15,6 +15,9 @@ An enumeration of flags used when creating a rendering context.
 |-
 |SDL_RENDERER_PRESENTVSYNC
 |present is synchronized with the refresh rate
+|-
+|SDL_RENDERER_TARGETTEXTURE
+|the renderer supports rendering to texture
 |}
 
 == Code Examples ==
