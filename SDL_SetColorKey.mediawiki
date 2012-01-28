@@ -18,7 +18,7 @@ int SDL_SetColorKey(SDL_Surface* surface,
 |the [[SDL_Surface]] structure to update
 |-
 |'''flag'''
-|1 to enable color key, 0 to disable color key; see [[#Remarks|Remarks]] for details
+|SDL_TRUE to enable color key, SDL_FALSE to disable color key
 |-
 |'''key'''
 |the transparent pixel
