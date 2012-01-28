@@ -16,7 +16,7 @@ SDL drastically reduces the time you spend bringing your game to desktop and mob
 
 SDL fully supports high end 3D graphics using Direct3D and OpenGL, and has a 2D graphics API for emulators and classic games.
 
-This wiki is your portal to documentation and other resources for SDL 1.3.
+This wiki is your portal to documentation and other resources for SDL 2.0.
 <br/>
 You can find the old SDL 1.2 wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
 <br/>
@@ -26,7 +26,7 @@ You can find the old SDL 1.2 wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
 Use the links under the '''Navigation Links''' heading in the left-hand menu to access:
 
 * [[Introduction]]
-: An introduction to the features in SDL 1.3.<br/>Includes a Migration Guide from 1.2 to 1.3!
+: An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 2.0!
 * API reference [[CategoryAPI|by Name]] or [[APIByCategory|by Category]]
 : The official documentation for the API.  Look here to find detailed information about the functions, structures, and enumerations.
 * [[Tutorials]]
