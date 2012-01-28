@@ -52,6 +52,10 @@ You update the physical screen using [[SDL_RenderPresent]], which replaces ```SD
 
 Use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of ```SDL_SetAlpha```.
 
+=== Colorkey ===
+
+When calling [[SDL_SetColorKey]](), you should pass SDL_TRUE instead of SDL_SRCCOLORKEY
+ 
 === Color modulation ===
 
 Some renderer now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]] for details.
