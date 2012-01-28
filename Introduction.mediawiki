@@ -93,7 +93,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 * Safe version uses GDI for video display. High performance version uses !Direct3D for video display, taking advantage of modern hardware acceleration
 * Safe version uses waveOut APIs for sound. High performance version uses !DirectSound for audio playback
 
-'''''Mac OSX'''''
+'''''Mac OS X'''''
 
 * Uses Cocoa for video display, taking advantage of OpenGL for hardware acceleration
 * Uses Core Audio for sound
@@ -102,6 +102,16 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 
 * Uses X11 for video display, taking advantage of OpenGL for hardware acceleration
 * Uses the ALSA, OSS and !PulseAudio APIs for sound
+
+'''''iOS'''''
+
+* Uses UIKit for video display, taking advantage of OpenGL ES 2.0 for hardware acceleration
+* Uses Core Audio for sound
+
+'''''Android'''''
+
+* Uses JNI interfaces for video display, taking advantage of OpenGL ES 1.1 and 2.0 for hardware acceleration
+* Uses JNI audio callbacks for sound
 
 == Special features in SDL 2.0 ==
 * Full 3D hardware acceleration
