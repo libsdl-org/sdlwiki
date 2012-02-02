@@ -7,7 +7,7 @@ SDL supports all known Linux hardware with GNU libc and kernel version 2.6 or ne
 For the latest information see http://hg.libsdl.org/SDL/file/default/README.Platforms
 
 == How do I add SDL to my project? ==
-The short answer is use the output of the command "sdl-config --cflags --libs" for SDL 1.2 or "sdl2-config --cflags --libs", for example: gcc -o test test.c &#x60;sdl-config --cflags --libs\&#x60;
+The short answer is use the output of the command "sdl-config --cflags --libs" for SDL 1.2 or "sdl2-config --cflags --libs", for example: gcc -o test test.c &#x60;sdl-config --cflags --libs&#x60;
 
 If you are using home-grown Makefiles for your project, you can get the proper CFLAGS and LDFLAGS for SDL by adding the following lines to your Makefile:
 
