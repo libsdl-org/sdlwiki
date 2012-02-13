@@ -45,9 +45,6 @@ There are a number of SDL tutorials available from different sources.
 * [http://www.meandmark.com/sdlopenglpart1.html SDL and OpenGL]
 : Using SDL and OpenGL on Mac OS X
 
-* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/ogladv/index OpenGL Tutorials (by Marius)]
-: Setting up SDL and OpenGL, Quake 2 models, OpenGL graphics topics
-
 * [http://braindeadclown.com/GLUT_SDL_VS08.html SDL in Visual Studio 2008]
 : A very basic guide for setting up SDL for OpenGL development in Visual Studio 2008
 
