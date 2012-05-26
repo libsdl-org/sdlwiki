@@ -23,7 +23,7 @@ The SDL error messages are in English.
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryError -SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCachedCached(category:CategoryError -CategoryEnum -CategoryStruct)>>
+<<FullSearchCached(category:CategoryError -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
