@@ -25,6 +25,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
+
 // Using SDL2's SDL_GetCurrentDisplayMode()
 #include <SDL2/SDL.h>   
 #include <iostream>   
@@ -38,23 +39,27 @@ int main(int argc, char* argv[]){
   // Declare display mode structure to be filled in.
   SDL_DisplayMode current;
 
-  // Get current display mode of primary display (0).
-  int should_be_zero = SDL_GetCurrentDisplayMode(0, &current);
+  // Get current display mode of all displays.
+  for(int i=0; i < SDL_GetNumVideoDisplays(); ++i){
   
-  if(should_be_zero != 0)
-    // In case of error...
-    cout << "Could not get current display mode: " << SDL_GetError();
-  
-  else 
-    // On success, print the current display mode.
-    cout << "Current display mode is " << current.w << 'x' << current.h << "px @ " << current.refresh_rate << "hz. \n";
-
+    int should_be_zero = SDL_GetCurrentDisplayMode(i, &current);
     
+    if(should_be_zero != 0)
+      // In case of error...
+      cout << "Could not get display mode for video display #" << i << ": " << SDL_GetError();
+    
+    else 
+      // On success, print the current display mode.
+      cout << "Display #" << i << ": current display mode is " << current.w << 'x' << current.h << "px @ " << current.refresh_rate << "hz. \n";
+
+  }
+ 
   // Clean up and exit the program.
   SDL_Quit();     
   return 0;   
  
 }
+
 ```
 
 == Remarks ==
