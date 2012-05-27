@@ -64,6 +64,6 @@ int main(int argc, char* argv[]){
 :[[SDL_GetDesktopDisplayMode]]
 :[[SDL_GetDisplayMode]]
 :[[SDL_SetWindowDisplayMode]]
-:[[SDL_SDL_GetNumVideoDisplays]]
+:[[SDL_GetNumVideoDisplays]]
 ----
 [[CategoryAPI]], [[CategoryVideo]]
