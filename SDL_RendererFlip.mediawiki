@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= SDL_RendererFlags =
+An enumeration of flags that can be used in the flip parameter for [[SDL_RenderCopyEx]].
+
+
+== Values ==
+{|
+|SDL_FLIP_NONE
+|do not flip
+|-
+|SDL_FLIP_HORIZONTAL
+|flip horizontally
+|-
+|SDL_FLIP_VERTICAL
+|flip vertically
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_RenderCopyEx]]
+
+----
+[[CategoryEnum]], [[CategoryRender]]
