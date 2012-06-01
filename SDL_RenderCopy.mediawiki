@@ -47,6 +47,7 @@ The texture alpha is affected based on its alpha modulation set by [[SDL_SetText
 :[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
 :[[SDL_SetTextureColorMod]]
+:[[SDL_RenderCopyEx]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
