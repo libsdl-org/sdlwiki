@@ -33,7 +33,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 |}
 
 == Return Value ==
-If this function succeeds it returns ^a pointer to an^ ,,the given,, [[SDL_AudioSpec]] ^structure^ filled with the audio data format of the wave data, fills '''audio_buf''' with a pointer to a malloc()'d buffer containing the audio data, and fills '''audio_len''' with a pointer to the length of that audio buffer (in bytes).
+This function, if successfully called, returns a pointer to an [[SDL_AudioSpec]] structure filled with the audio data format of the wave source data. '''audio_buf''' is filled with a pointer to a malloc()'d buffer containing the audio data, and '''audio_len''' is filled with the length of that audio buffer in bytes.
 
 This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.  
 
