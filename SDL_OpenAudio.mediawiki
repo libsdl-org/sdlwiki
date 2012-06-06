@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-
 = SDL_OpenAudio =
 Use this function to open the audio device with the desired parameters.
 
@@ -10,20 +9,20 @@ Use this function to open the audio device with the desired parameters.
 int SDL_OpenAudio(SDL_AudioSpec* desired,
                   SDL_AudioSpec* obtained)
 ```
-
 == Function Parameters ==
 {|
-|'''desired'''
-|the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[#desired|Remarks]] for more information
+|'''desired''' 
+|the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[#desired|Remarks]] for more information 
 |-
-|'''obtained'''
-|an [[SDL_AudioSpec]] structure filled in with the actual parameters
+|'''obtained''' 
+|an [[SDL_AudioSpec]] structure filled in with the actual parameters 
 |}
 
-== Return Value ==
-This function opens the audio device with the desired parameters, and returns 0 if successful, placing the actual hardware parameters in the structure pointed to by '''obtained'''.  
 
-If '''obtained''' is NULL, the audio data passed to the callback function will be guaranteed to be in the requested format, and will be automatically converted to the hardware audio format if necessary.  
+== Return Value ==
+This function opens the audio device with the desired parameters, and returns 0 if successful, placing the actual hardware parameters in the structure pointed to by '''obtained'''.
+
+If '''obtained''' is NULL, the audio data passed to the callback function will be guaranteed to be in the requested format, and will be automatically converted to the hardware audio format if necessary.
 
 This function returns a negative error code on failure to open the audio device or failure to set up the audio thread; call [[SDL_GetError]]() for more information.
 
@@ -65,24 +64,24 @@ if ( SDL_OpenAudio(&desired, &obtained) < 0 ){
 /* Start playing */
 SDL_PauseAudio(0);
 ```
-
 == Remarks ==
-<span id="desired"></span> To open the audio device a desired [[SDL_AudioSpec]] must be created. 
+<span id="desired"></span> To open the audio device a desired [[SDL_AudioSpec]] must be created.
+
 ```c++
 SDL_AudioSpec *desired;
 .
 .
 desired = malloc(sizeof(SDL_AudioSpec));
 ```
-When filling in the '''desired''' audio spec structure, 
-*<code>desired->freq</code> should be the desired audio frequency in samples-per-second
-*<code>desired->format</code> should be the desired audio format
-*<code>desired->samples</code> is the desired size of the audio buffer, in samples.  This number should be a power of two, and may be adjusted by the audio driver to a value more suitable for the hardware.  Good values seem to range between 512 and 8096 inclusive, depending on the application and CPU speed.  Smaller values yield faster response time, but can lead to underflow if the application is doing heavy processing and cannot fill the audio buffer in time.  A stereo sample consists of both right and left channels in LR ordering.
- Note that the number of samples is directly related to time by the following formula:  ms = (samples*1000)/freq
-*<code>desired->size</code> is the size in bytes of the audio buffer, and is calculated by [[SDL_OpenAudio]]()
-*<code>desired->silence</code> is the value used to set the buffer to silence, and is calculated by [[SDL_OpenAudio]]()
-*<code>desired->callback</code> should be set to a function that will be called when the audio device is ready for more data.  It is passed a pointer to the audio buffer, and the length in bytes of the audio buffer.  This function usually runs in a separate thread, so you should protect data structures that it accesses by calling [[SDL_LockAudio]]() and [[SDL_UnlockAudio]]() in your code.
-*<code>desired->userdata</code> is passed as the first parameter to your callback function.
+When filling in the '''desired''' audio spec structure,
+
+* <code>desired->freq</code> should be the desired audio frequency in samples-per-second
+* <code>desired->format</code> should be the desired audio format
+* <code>desired->samples</code> is the desired size of the audio buffer, in samples.  This number should be a power of two, and may be adjusted by the audio driver to a value more suitable for the hardware.  Good values seem to range between 512 and 8096 inclusive, depending on the application and CPU speed.  Smaller values yield faster response time, but can lead to underflow if the application is doing heavy processing and cannot fill the audio buffer in time.  A stereo sample consists of both right and left channels in LR ordering. Note that the number of samples is directly related to time by the following formula:  ms = (samples*1000)/freq
+* <code>desired->size</code> is the size in bytes of the audio buffer, and is calculated by [[SDL_OpenAudio]]()
+* <code>desired->silence</code> is the value used to set the buffer to silence, and is calculated by [[SDL_OpenAudio]]()
+* <code>desired->callback</code> should be set to a function that will be called when the audio device is ready for more data.  It is passed a pointer to the audio buffer, and the length in bytes of the audio buffer.  This function usually runs in a separate thread, so you should protect data structures that it accesses by calling [[SDL_LockAudio]]() and [[SDL_UnlockAudio]]() in your code. '''Note''': You should not call [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() from within your callback code, as it may cause a deadlock.
+* <code>desired->userdata</code> is passed as the first parameter to your callback function.
 
 [[SDL_OpenAudio]]() reads these fields from '''desired''' and attempts to find a matching audio configuration. As mentioned above, if '''obtained''' is NULL then SDL with convert from your desired audio settings to the hardware settings as it plays.
 
@@ -91,10 +90,10 @@ If '''obtained''' is NULL then '''desired''' is your working specification, othe
 The audio device starts out playing silence when it is opened, and should be enabled for playing by calling [[SDL_PauseAudio]](0) when you are ready for your audio callback function to be called.  Since the audio driver may modify the requested size of the audio buffer, you should allocate any local mixing buffers after you open the audio device.
 
 == Related Functions ==
-:[[SDL_CloseAudio]]
-:[[SDL_LockAudio]]
-:[[SDL_PauseAudio]]
-:[[SDL_UnlockAudio]]
+: [[SDL_CloseAudio]]
+: [[SDL_LockAudio]]
+: [[SDL_PauseAudio]]
+: [[SDL_UnlockAudio]]
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[[CategoryAPI]], CategoryAudio
