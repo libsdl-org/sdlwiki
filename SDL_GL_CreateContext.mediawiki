@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-
 = SDL_GL_CreateContext =
 Use this function to create an OpenGL context for use with an OpenGL window, and make it current.
 
@@ -9,12 +8,12 @@ Use this function to create an OpenGL context for use with an OpenGL window, and
 ```c++
 SDL_GLContext SDL_GL_CreateContext(SDL_Window* window)
 ```
-
 == Function Parameters ==
 {|
-|'''window'''
-|the window to associate with the context
+|'''window''' 
+|the window to associate with the context 
 |}
+
 
 == Return Value ==
 Returns the OpenGL context associated with '''window'''.
@@ -26,12 +25,12 @@ Returns the OpenGL context associated with '''window'''.
 int main(int argc, char* argv[]){
 
   SDL_Init(SDL_INIT_VIDEO); // Init SDL2
-  
+
   // Create a window. Window mode MUST include SDL_WINDOW_OPENGL for use with OpenGL.
   SDL_Window *window = SDL_CreateWindow(
     "SDL2/OpenGL Demo", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE
   );
-  
+
   // Create an OpenGL context associated with the window.
   SDL_GLContext GLContext = SDL_GL_CreateContext(window);
 
@@ -39,48 +38,47 @@ int main(int argc, char* argv[]){
   glMatrixMode(GL_PROJECTION|GL_MODELVIEW);
   glLoadIdentity();
   glOrtho(-200,200,200,-200,0,1);
- 
+
   // ... can be used alongside SDL2.
-  SDL_Event e; 
+  SDL_Event e;
   while(e.type!=SDL_QUIT){  // Enter main loop.
-    
+
     SDL_PollEvent(&e);      // Check for events.
-    
+
     glClearColor(0,0,0,1);          // Draw with OpenGL.
-    glClear(GL_COLOR_BUFFER_BIT); 
+    glClear(GL_COLOR_BUFFER_BIT);
     glRotatef(1.0,0.0,0.0,1.0);
-    glBegin(GL_LINE_LOOP);     
+    glBegin(GL_LINE_LOOP);
       glColor3f(1.0,0.0,0.0);   glVertex2f(   0,100);
       glColor3f(0.0,1.0,0.0);   glVertex2f( 100,-50);
       glColor3f(1.0,0.0,1.0);   glVertex2f(-100,-50);
     glEnd();
-    
-    
+
+
     // Swap the window/buffer to display the result.
-    SDL_GL_SwapWindow(window);    
+    SDL_GL_SwapWindow(window);
     // Pause briefly before moving on to the next cycle.
-    SDL_Delay(10);                
-    
-  } 
-  
-  
+    SDL_Delay(10);
+
+  }
+
+
   // Once finished with OpenGL functions, the SDL_GLContext can be deleted.
-  SDL_GL_DeleteContext(GLContext);  
-  
-  // Done! Close the window, clean-up and exit the program. 
+  SDL_GL_DeleteContext(GLContext);
+
+  // Close the window, clean-up and exit the program.
   SDL_DestroyWindow(window);
   SDL_Quit();
   return 0;
-  
+
 }
 ```
-
 == Remarks ==
-''You can add useful comments here''
+Windows users new to OpenGL should note that, for historical reasons, GL functions added after OpenGL version 1.1 are not available by default. Those functions must be loaded at run-time, either with an OpenGL extension-handling library or with [[SDL_GL_GetProcAddress]] and its related functions.
 
 == Related Functions ==
-:[[SDL_GL_DeleteContext]]
-:[[SDL_GL_MakeCurrent]]
+: [[SDL_GL_DeleteContext]]
+: [[SDL_GL_MakeCurrent]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], CategoryVideo
