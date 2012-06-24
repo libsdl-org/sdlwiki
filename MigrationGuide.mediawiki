@@ -95,7 +95,7 @@ CD-ROM support was dropped in 2.0.  There is no replacement.
 
 == Extensions compatibility ==
 
-The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes.
+The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
 
 [http://www.ferzkopp.net/joomla/content/view/19/14/ SDL_gfx] can also be compiled with 2.0 starting since 2.0.21 (May 2010).
 
