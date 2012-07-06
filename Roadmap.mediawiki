@@ -74,6 +74,7 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 
 === Required ===
 * Sam: Add modifier state to key and button events
+* Sam: Resolve question of how to represent iOS events which need to be handled before dispatch returns
 
 === Wishlist ===
 * <<Color2(gray, Add a timestamp to events)>>
