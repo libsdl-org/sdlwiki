@@ -85,9 +85,9 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * <<Color2(green, Sam: Mousewheel has a separate event)>>
 * <<Color2(green, Sam: Support showing / hiding the cursor)>>
 * <<Color2(green, Sam: Add support color cursors)>>
-* <<Color2(green, Sam, Patrick Baggett: Reimplement mouse grab support)>>
 
 === Required ===
+* Sam: Reimplement mouse grab support
 * Verify cursor location is correct when ungrabbed
 * Verify proper behavior with Vista DPI scaling
 
