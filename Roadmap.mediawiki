@@ -17,11 +17,11 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * <<Color2(green, Sam: Add support for multiple displays)>>
 * <<Color2(green, Sam: Add concept of viewport to fullscreen windows)>>
 * <<Color2(green, Sam: Add support for synchronizing 2D updates with vblank, using SDL_HINT_RENDER_VSYNC)>>
+* <<Color2(green, Mason Wheeler and Gabriel Jacobo: Add support for render targets)>>
 
 
 === Required ===
 * Ryan: Implement landscape mode for iPhone port
-* Sam: Add support for render targets
 * Sam: Add support for OpenGL context profiles
 * Sam: Create flags for specifying foreign window event behavior
 * <<Color2(green, Andreas: Support shaped windows)>>
@@ -140,12 +140,12 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 
 === Complete ===
 * <<Color2(green, Ryan: Create API for assertions)>>
+* <<Color2(green, Sam: Public license for SDL_compat.c, tests, and SDL_main*)>>
+* <<Color2(green, Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 2.0 installations)>>
+* <<Color2(green, Sheena: Finish 2.0 API documentation)>>
 
 === Required ===
-* Sam: Public license for SDL_compat.c, tests, and SDL_main*
-* Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 2.0 installations
 * Sam: Write introductions for SDL 2.0 API documentation
-* Sheena: Finish 2.0 API documentation
 
 === Wishlist ===
 * <<Color2(gray, Create an API for live video capture)>>
