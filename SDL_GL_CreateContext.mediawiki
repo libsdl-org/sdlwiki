@@ -16,7 +16,7 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window* window)
 
 
 == Return Value ==
-Returns the OpenGL context associated with '''window'''.
+Returns the OpenGL context associated with '''window''' or NULL on error; call [[SDL_GetError]]() for more details.
 
 == Code Examples ==
 ```c++
@@ -33,6 +33,9 @@ int main(int argc, char* argv[]){
 
   // Create an OpenGL context associated with the window.
   SDL_GLContext GLContext = SDL_GL_CreateContext(window);
+  if(!GLContext){
+    // ... handle error
+  }
 
   // Now, regular OpenGL functions ...
   glMatrixMode(GL_PROJECTION|GL_MODELVIEW);
