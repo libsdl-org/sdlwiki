@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-
 = SDL_RenderCopy =
 Use this function to copy a portion of the texture to the current rendering target.
 
@@ -12,42 +11,118 @@ int SDL_RenderCopy(SDL_Renderer*   renderer,
                    const SDL_Rect* srcrect,
                    const SDL_Rect* dstrect)
 ```
-
 == Function Parameters ==
 {|
-|'''renderer'''
-|the rendering context
+|'''renderer''' 
+|the rendering context 
 |-
-|'''texture'''
-|the source texture; see [[#Remarks|Remarks]] for details
+|'''texture''' 
+|the source texture; see [[#Remarks|Remarks]] for details 
 |-
-|'''srcrect'''
-|the source [[SDL_Rect]] structure or NULL for the entire texture
+|'''srcrect''' 
+|the source [[SDL_Rect]] structure or NULL for the entire texture 
 |-
-|'''dstrect'''
-|the destination [[SDL_Rect]] structure or NULL for the entire rendering target
+|'''dstrect''' 
+|the destination [[SDL_Rect]] structure or NULL for the entire rendering target 
 |}
+
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
-You can add your code example here
-```
 
+#include <SDL/SDL.h>
+#define SHAPE_SIZE 16
+
+int main()
+{
+  SDL_Window* Main_Window;
+  SDL_Renderer* Main_Renderer;
+  SDL_Surface* Loading_Surf;
+  SDL_Texture* Background_Tx;
+  SDL_Texture* BlueShapes;
+
+/*For loop counters*/
+  int i;
+  int n;
+
+/*Rects for drawing. Probably overkill, but defining too much is certainly better than errors from uninitilization*/
+  SDL_Rect SrcR;
+  SDL_Rect DestR;
+
+  SrcR.x = 0;
+  SrcR.y = 0;
+  SrcR.w = SHAPE_SIZE;
+  SrcR.h = SHAPE_SIZE;
+
+  DestR.x = 640 / 2 - SHAPE_SIZE / 2;
+  DestR.y = 580 / 2 - SHAPE_SIZE / 2;
+  DestR.w = SHAPE_SIZE;
+  DestR.h = SHAPE_SIZE;
+
+/*The creation of all the necessary stuff*/
+  Main_Window = SDL_CreateWindow("SDL_RenderCopy Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 580, SDL_WINDOW_SHOWN);
+  Main_Renderer = SDL_CreateRenderer(Main_Window, -1, SDL_RENDERER_ACCELERATED);
+
+/*The loading of the background texture. I think using CreateTextureFromSurface
+is the best way to do this without using SDL_image. My background of choice is a calming field picture*/
+  Loading_Surf = SDL_LoadBMP("Background.bmp");
+  SDL_Texture = SDL_CreateTextureFromSurface(Main_Renderer, Loading_Surf);
+
+/*Clear the loading surface, load a new one, and creating the second texture.
+This one has a 2x2 grid of blue shapes on a black background.*/
+  Loading_Surf = NULL;
+  Loading_Surf = SDL_LoadBMP("Blueshapes.bmp");
+  BlueShapes = SDL_CreateTextureFromSurface(Main_Renderer, Loading_Surf);
+  SDL_FreeSurface(Loading_Surf); //always good to free stuff as soon as you're done with it
+
+/*now onto the fun part. This will render a rotating selection of the blue shapes in the middle of the screen*/
+  for(i=0;i<2;i++)
+  {
+    for(n=0;n<4;n++)
+    {
+      SrcR.x = SHAPE_SIZE * (n % 2);
+      if(n > 1)
+      {
+        SrcR.y = SHAPE_SIZE;
+      }
+      else
+      {
+        SrcR.y = 0;
+      }
+      SDL_RenderCopy (Main_Renderer,Background_Tx,NULL,NULL);
+      SDL_RenderCopy (Main_Renderer,BlueShapes,SrcR,DestR);
+      SDL_RenderPresent(Main_Renderer);
+      SDL_Delay(500);
+    }
+  }
+
+/* in my mind, I think of the renderer as a big canvis, and when you RenderCopy you are adding paint on it, each time adding it over top. You can change how it blends with the stuff that the new data goes over. If you're stuck on the whole renderer idea, coming from 1.2 surfaces and bliting, think of the renderer as your main surface, and RenderCopy as the blit function to that main surface, with RenderPresent as the old flip function.*/
+
+  SDL_DestroyTexture(BlueShapes);
+  SDL_DestroyTexture(Background_Tx);
+  SDL_DestroyRenderer(Main_Renderer);
+  SDL_DestroyWindow(Main_Window);
+  SDL_Quit();
+
+  return 1;
+}
+```
 == Remarks ==
 The texture is blended with the destination based on its blend mode set with [[SDL_SetTextureBlendMode]]().
 
-The texture color is affected based on its color modulation set by [[SDL_SetTextureColorMod]]().  
+The texture color is affected based on its color modulation set by [[SDL_SetTextureColorMod]]().
 
 The texture alpha is affected based on its alpha modulation set by [[SDL_SetTextureAlphaMod]]().
 
 == Related Functions ==
-:[[SDL_SetTextureAlphaMod]]
-:[[SDL_SetTextureBlendMode]]
-:[[SDL_SetTextureColorMod]]
-:[[SDL_RenderCopyEx]]
+: [[SDL_SetTextureAlphaMod]]
+: [[SDL_SetTextureBlendMode]]
+: [[SDL_SetTextureColorMod]]
+: [[SDL_RenderCopyEx]]
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+
+[[CategoryAPI]], CategoryRender
