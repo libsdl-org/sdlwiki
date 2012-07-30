@@ -12,7 +12,7 @@ const char* SDL_GetPlatform (void)
 ```
 
 == Return Value ==
-Returns the name of the platform.  <<Color2(green,What if there is an error?  Is that possible?)>>
+Returns the name of the platform. If the correct platform name is not available, returns a string beginning with the text "Unknown".
 
 == Code Examples ==
 ```c++
@@ -21,8 +21,6 @@ You can add your code example here
 
 == Remarks ==
 Try to get a standard set of platform defines.
-
-<<Color2(green,Does this comment and all the code-looking stuff below it in the header belong on this page?)>>
 
 ''You can add useful comments here''
 
