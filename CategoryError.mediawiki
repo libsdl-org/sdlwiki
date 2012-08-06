@@ -11,7 +11,7 @@
 
 == Introduction ==
 
-Functions in this category provide simple error message routines for SDL. These functions can be called for nearly every other function to determine what problems are occurring.  
+Functions in this category provide simple error message routines for SDL. SDL_GetError() can be called for almost all SDL functions to determine what problems are occurring. Check the wiki page of each specific SDL function to see whether SDL_GetError() is usable for them or not.
 
 The SDL error messages are in English.
 
