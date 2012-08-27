@@ -1,11 +1,12 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color:#FF0000;      ;text-align:center">DRAFT 
+|}
 
 
 = SDL_LockTexture =
-Use this function to lock a portion of the texture for pixel access.
+Use this function to lock a portion of the texture for pixel access.''' Warning: See''' [http://bugzilla.libsdl.org/show_bug.cgi?id=1586 Bug No. 1586] ''' before using SDL_LockTexture() and''' [[SDL_UnlockTexture]]().
 
 
 == Syntax ==
@@ -15,21 +16,21 @@ int SDL_LockTexture(SDL_Texture*    texture,
                     void**          pixels,
                     int*            pitch)
 ```
-
 == Function Parameters ==
 {|
-|'''texture'''
-|the texture to lock for access, which was created with SDL_TEXTUREACCESS_STREAMING
+|'''texture''' 
+|the texture to lock for access, which was created with SDL_TEXTUREACCESS_STREAMING 
 |-
-|'''rect'''
-|an [[SDL_Rect]] structure representing the area to lock for access; NULL to lock the entire texture
+|'''rect''' 
+|an [[SDL_Rect]] structure representing the area to lock for access; NULL to lock the entire texture 
 |-
-|'''pixels'''
-|this is filled in with a pointer to the locked pixels, appropriately offset by the locked area
+|'''pixels''' 
+|this is filled in with a pointer to the locked pixels, appropriately offset by the locked area 
 |-
-|'''pitch'''
-|this is filled in with the pitch of the locked pixels
+|'''pitch''' 
+|this is filled in with the pitch of the locked pixels 
 |}
+
 
 == Return Value ==
 Returns 0 on success or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STREAMING; call [[SDL_GetError]]() for more information.
@@ -38,14 +39,13 @@ Returns 0 on success or a negative error code if the texture is not valid or was
 ```c++
 You can add your code example here
 ```
-
 == Remarks ==
-The pixels made available for editing don't necessarily contain the old data.  This is specifically ''not'' guaranteed.  
+The pixels made available for editing don't necessarily contain the old data.  This is specifically ''not'' guaranteed.
 
 You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any changes.
 
 == Related Functions ==
-:[[SDL_UnlockTexture]]
+: [[SDL_UnlockTexture]]
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[[CategoryAPI]], !CategoryRender
