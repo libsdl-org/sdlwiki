@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_Keysym =
-A structure that contains ^key codes^ used in key events.
+A structure that contains key information used in key events.
 
 
 == Data Fields ==
@@ -18,7 +17,7 @@ A structure that contains ^key codes^ used in key events.
 |-
 |Uint16
 |'''mod'''
-|current key modifiers^; see [[SDL_Keymod]] for details^
+|current key modifiers; see [[SDL_Keymod]] for details
 |-
 |<rowstyle="color: #808080;">Uint32
 |'''unicode'''
@@ -35,7 +34,7 @@ You can add your code example here
 
 == Related Enumerations ==
 :[[SDL_Keycode]]
-:[[SDL_Mod]]
+:[[SDL_Keymod]]
 :[[SDL_Scancode]]
 
 == Related Structures ==
