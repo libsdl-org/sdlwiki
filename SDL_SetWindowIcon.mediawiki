@@ -22,22 +22,19 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 
 == Code Examples ==
 ```c++
-
 // Using SDL2 to set a window icon
 #include <SDL2/SDL.h>   
-
-using namespace std;
 
 int main(int argc, char* argv[]){
 
   SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL2
 
-  SDL_Window *pWindow = SDL_CreateWindow(    // Open a new window
+  SDL_Window *window = SDL_CreateWindow(    // Open a new window
     "SDL2 window icon demo", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN|SDL_WINDOW_RESIZABLE
   );
   
   SDL_Surface *surface;     // Declare an SDL_Surface to be filled in with pixel data from an image file
-  Uint16 pixels[16*16] = {  // ...or with raw pixel data.
+  Uint16 pixels[16*16] = {  // ...or with raw pixel data:
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 
@@ -72,27 +69,21 @@ int main(int argc, char* argv[]){
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff 
   }; 
   surface = SDL_CreateRGBSurfaceFrom(pixels,16,16,16,16*2,0x0f00,0x00f0,0x000f,0xf000);
-  
-  
-  
-  SDL_SetWindowIcon(pWindow, surface); 
-  // The icon is attached to the window pointer
 
+  // The icon is attached to the window pointer
+  SDL_SetWindowIcon(window, surface); 
   
   // ...and the surface containing the icon pixel data is no longer required.
   SDL_FreeSurface(surface);
   
-  SDL_Event e;
-  while(e.type!=SDL_QUIT) SDL_PollEvent(&e);  // Loop until the user closes the window.
+  // Loop until the user closes the window or presses any key.
+  for(SDL_Event e; e.type!=SDL_QUIT&&e.type!=SDL_KEYDOWN; SDL_PollEvent(&e)); 
   
-  SDL_DestroyWindow(pWindow);   // Close and destroy the window.
-  SDL_Quit();                  // Uninitialize SDL2 and exit the program.
+  SDL_DestroyWindow(window);   // Close and destroy the window.
+  SDL_Quit();                  // Clean up and exit.
   return 0;   
  
 }
-
-
-
 ```
 
 == Remarks ==
