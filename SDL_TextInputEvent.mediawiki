@@ -14,13 +14,12 @@ A structure that contains keyboard text input event ,,structure,, ^information^ 
 |-
 |Uint32
 |'''windowID'''
-|the window with keyboard focus, if any
+|The window with keyboard focus, if any
 |-
 |char
 |'''text[SDL_TEXTINPUTEVENT_TEXT_SIZE]'''
-|the input text; *at most SDL_TEXTINPUTEVENT_TEXT_SIZE - 1 characters*
+|The input text; at most SDL_TEXTINPUTEVENT_TEXT_SIZE - 1 characters
 |}
-<<Color2(green,The '''text''' field currently shows the same info in both columns because it could go in either per the header vs *old wiki*.  Where should it go?)>>
 
 == Code Examples ==
 ```c++
@@ -28,7 +27,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-* [[SDL_TextInputEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported. *
+[[SDL_TextInputEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
