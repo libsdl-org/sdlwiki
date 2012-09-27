@@ -20,11 +20,8 @@ Returns the OpenGL context associated with '''window''' or NULL on error; call [
 
 == Code Examples ==
 ```c++
-#include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
-
-using std::cout;
 
 int main(int argc, char* argv[]){
 
