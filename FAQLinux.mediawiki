@@ -129,3 +129,7 @@ To test these entries, restart X after you modified XF86Config and press ctrl-al
 
 == How do I get all the dependencies for building SDL on Ubuntu? ==
 Run the following command: sudo apt-get build-dep libsdl1.2
+
+Or you can get all the dependencies individually:
+
+sudo apt-get install build-essential mercurial make autoconf automake libtool libasound2-dev libpulse-dev libaudio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxxf86vm-dev libxss-dev libgl1-mesa-dev libesd0-dev 
