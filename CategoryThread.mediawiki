@@ -3,9 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 <!-- pragma camelcase off -->
-
 = Thread Management =
-
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_thread.h SDL_thread.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_mutex.h SDL_mutex.h] ^(contains thread synchronization primitives)^
 
 
@@ -13,16 +11,20 @@
 This category contains functions for system independent thread management routines.
 
 ''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] or [http://forums.libsdl.org/viewtopic.php?t=5973 forum].
- 
+
+''NOTE'': Avoid creating threads or synchronization primitives prior to calling [http://wiki.libsdl.org/moin.cgi/SDL_Init SDL_Init]. While on some platforms (i.e. Windows) these functions will work correctly before SDL initialization, other platforms (i.e. Linux) may not.
+
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryThread -SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryThread -SGStructures)>> -->
-
 == Functions ==
 <<FullSearchCached(category:CategoryThread -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
-CategoryCategory
+!CategoryCategory
+
+----
+!CategoryThread
