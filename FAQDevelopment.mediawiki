@@ -21,7 +21,7 @@ A sample image loader library called "SDL_image" is available from the SDL libra
 The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is suppose to be fast and small, and so does not include any additional loaders. A sample sound library called "SDL_sound" is available from the SDL libraries page which supports loading many different audio formats.
 
 == Does SDL have text drawing support? ==
-Games and operating systems vary widely in the type and availability of text drawing facilities. Instead of trying to deal with this in the core SDL library, there are several text drawing libraries designed for use with SDL on the SDL libraries page. Common tecniques include using bitmap fonts, truetype fonts, and custom images for text.
+Games and operating systems vary widely in the type and availability of text drawing facilities. Instead of trying to deal with this in the core SDL library, there are several text drawing libraries designed for use with SDL on the SDL libraries page. Common techniques include using bitmap fonts, truetype fonts, and custom images for text.
 
 == What kind of GUI's are there for SDL? ==
 There are several GUI libraries available from the SDL libraries page.
