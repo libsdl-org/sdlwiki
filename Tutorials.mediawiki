@@ -12,7 +12,7 @@ There are a number of SDL tutorials available from different sources.
 * [http://slouken.blogspot.com/2011/02/streaming-textures-with-sdl-13.html Streaming textures with SDL 2.0]
 : A quick guide to streaming textures.
 
-* [http://rainwarrior.thenoos.net/dragon/sdl_glsl.html Using GLSL with SDL]
+* [http://rainwarrior.ca/dragon/sdl_glsl.html Using GLSL with SDL]
 : A tutorial on enabling and using GLSL extensions with SDL.
 : Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also.
 
