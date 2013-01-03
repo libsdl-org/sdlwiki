@@ -10,6 +10,9 @@ An enumeration of window states.
 |SDL_WINDOW_FULLSCREEN
 |fullscreen window
 |-
+|SDL_WINDOW_FULLSCREEN_DESKTOP
+|fullscreen window at the current desktop resolution
+|-
 |SDL_WINDOW_OPENGL
 |window usable with OpenGL context
 |-
