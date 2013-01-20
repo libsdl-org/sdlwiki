@@ -50,7 +50,7 @@ You update the physical screen using [[SDL_RenderPresent]], which replaces ```SD
 
 === Alpha-blending ===
 
-Use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of ```SDL_SetAlpha```.
+Use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of ```SDL_SetAlpha```.  Alpha-blending on surfaces can be disabled via [[SDL_SetSurfaceBlendMode]] and on textures with [[SDL_SetTextureBlendMode]].
 
 === Colorkey ===
 
