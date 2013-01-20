@@ -28,7 +28,7 @@ Now, we have two structures:
 
 Textures are typically OpenGL textures or X11 pixmaps, stored as near to the graphics hardware as possible.
 
-Textures cannot be blit on each others.  They can be blit to the screen using [[SDL_RenderCopy]].
+You can create textures from an [[SDL_Surface]] by using [[SDL_CreateTextureFromSurface]].  Textures cannot be blit on each others, so you should do your manipulations on the surfaces first.  They can be blit to the screen using [[SDL_RenderCopy]].
 
 Textures are created with a [[SDL_TextureAccess]] ```SDL_TEXTUREACCESS_STATIC``` or {{{SDL_TEXTUREACCESS_STREAMING}}}.  Static means the texture doesn't change often, streaming means you can access its pixels using [[SDL_QueryTexturePixels]].  It's used by the SDL engine to manage memory.
 
