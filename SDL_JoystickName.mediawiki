@@ -36,7 +36,6 @@ for(i = 0; i < num_joy; i++)
 *
 
 == Remarks ==
-This can be called before any joysticks are opened.
 
 == Related Functions ==
 :[[SDL_JoystickOpen]] *
