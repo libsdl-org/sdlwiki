@@ -7,7 +7,7 @@
 
 == Introduction ==
 
-This page describes what changed from SDL 1.2 to SDL 2.0, the new features, and upgrade tips.
+This page describes what changed from SDL 1.2 to SDL 2.0, the new features, and upgrade tips.  Most code written for SDL 1.2 will need to be updated (perhaps only slightly) to work properly with the new API.
 
 == Looking for information ==
 
@@ -130,16 +130,12 @@ The most obvious one: drop SDL 1.2 and rewrite everything for 2.0.
 
 === Backward-compatibility ===
 
-There are good chances that your current 1.2 code will directly compile under 2.0.  Check ```include/SDL_compat.h``` and  {{{SDL/src/SDL_compat.c}}} to get an idea.
-
-Your code will probably run slower though; in particular there will be no hardware surfaces.
-
-Compatibility is not 100% correct though; for instance ```SDL_SetPalette``` flags are currently ignored.
+Backward-compatibility was dropped from SDL 2.0, since such an interface would be imperfect and the API and performance would both suffer.
 
 === Forward-compatibility ===
 
 You may want to support both libraries, for instance because SDL 1.2 is currently better supported on your platform, or better packaged in GNU/Linux distros.
 
-The !AlienBlaster code, in the Android port repository, uses a few additional functions on top of SDL, that will use either SDL 1.2 or 2.0 seemlessly, and minimise the amount of #ifdef.  It's not completely fool-proof though, for instance blits between hardware surfaces will result in a no-op under 2.0.  Check the C++ code at:
+The !AlienBlaster code, in the Android port repository, uses a few additional functions on top of SDL, that will use either SDL 1.2 or 2.0 seamlessly, and minimise the amount of #ifdef.  It's not completely fool-proof though, for instance blits between hardware surfaces will result in a no-op under 2.0.  Check the C++ code at:
 
 [http://github.com/pelya/commandergenius/blob/sdl_android/project/jni/application/alienblaster/SdlForwardCompat.h]
