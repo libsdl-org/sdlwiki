@@ -25,7 +25,7 @@ Returns the OpenGL context associated with '''window''' or NULL on error; call [
 
 int main(int argc, char* argv[]){
 
-  SDL_Init(SDL_INIT_VIDEO); // Init SDL2
+  SDL_Init(SDL_INIT_VIDEO); // Init SDL2 (you should check for errors)
   
   // Create a window. Window mode MUST include SDL_WINDOW_OPENGL for use with OpenGL.
   SDL_Window *window = SDL_CreateWindow(
@@ -41,13 +41,18 @@ int main(int argc, char* argv[]){
   glOrtho(-320,320,240,-240,0,1);
  
   // ... can be used alongside SDL2.
-  SDL_Event e; 
   float x = 0.0, y = 30.0;
-  
-  while(e.type!=SDL_KEYDOWN&&e.type!=SDL_QUIT){  // Enter main loop.
-    
-    SDL_PollEvent(&e);      // Check for events.
-    
+
+  SDL_Event event; 
+  Uint8 done = 0;
+  while(!done)  // Enter main loop.
+  {
+    while(SDL_PollEvent(&event))      // Check for events.
+    {
+        if(event.type == SDL_QUIT || event.type == SDL_QUIT)
+            done = 1;
+    }
+
     // Draw:
     glClearColor(0,0,0,1); // Use OpenGL commands, see the OpenGL reference.
     glClear(GL_COLOR_BUFFER_BIT); // clearing screen
