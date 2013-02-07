@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
   }
   atexit(OnQuit);
   
-  if (SDL_VideoInit(NULL, 0) != 0) {
+  if (SDL_VideoInit(NULL) != 0) {
     printf("Error initializing SDL video:  %s\n", SDL_GetError());
     return 2;
   }
