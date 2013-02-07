@@ -8,13 +8,13 @@ Use this function to set the current key modifier state for the keyboard.
 
 == Syntax ==
 ```c++
-void SDL_SetModState(SDL_Mod modstate)
+void SDL_SetModState(SDL_Keymod modstate)
 ```
 
 == Function Parameters ==
 {|
 |'''modstate'''
-|the desired [[SDL_Mod]] for the keyboard
+|the desired [[SDL_Keymod]] for the keyboard
 |}
 
 == Code Examples ==
@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>The inverse of [[SDL_GetModState]](), [[SDL_SetModState]]() allows you to impose modifier key states on your application.  Simply pass your desired modifier states into '''modstate'''. This value may be a bitwise, OR'd combination of* ^[[SDL_Mod]] values^.
+*<br/>The inverse of [[SDL_GetModState]](), [[SDL_SetModState]]() allows you to impose modifier key states on your application.  Simply pass your desired modifier states into '''modstate'''. This value may be a bitwise, OR'd combination of* ^[[SDL_Keymod]] values^.
 
 This does not change the keyboard state, only the key modifier flags.
 
