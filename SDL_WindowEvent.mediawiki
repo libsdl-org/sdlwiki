@@ -36,53 +36,53 @@ void PrintEvent(const SDL_Event * event)
     if (event->type == SDL_WINDOWEVENT) {
         switch (event->window.event) {
         case SDL_WINDOWEVENT_SHOWN:
-            fprintf(stderr, "Window %d shown", event->window.windowID);
+            SDL_Log("Window %d shown", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_HIDDEN:
-            fprintf(stderr, "Window %d hidden", event->window.windowID);
+            SDL_Log("Window %d hidden", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_EXPOSED:
-            fprintf(stderr, "Window %d exposed", event->window.windowID);
+            SDL_Log("Window %d exposed", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_MOVED:
-            fprintf(stderr, "Window %d moved to %d,%d",
+            SDL_Log("Window %d moved to %d,%d",
                     event->window.windowID, event->window.data1,
                     event->window.data2);
             break;
         case SDL_WINDOWEVENT_RESIZED:
-            fprintf(stderr, "Window %d resized to %dx%d",
+            SDL_Log("Window %d resized to %dx%d",
                     event->window.windowID, event->window.data1,
                     event->window.data2);
             break;
         case SDL_WINDOWEVENT_MINIMIZED:
-            fprintf(stderr, "Window %d minimized", event->window.windowID);
+            SDL_Log("Window %d minimized", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_MAXIMIZED:
-            fprintf(stderr, "Window %d maximized", event->window.windowID);
+            SDL_Log("Window %d maximized", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_RESTORED:
-            fprintf(stderr, "Window %d restored", event->window.windowID);
+            SDL_Log("Window %d restored", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_ENTER:
-            fprintf(stderr, "Mouse entered window %d",
+            SDL_Log("Mouse entered window %d",
                     event->window.windowID);
             break;
         case SDL_WINDOWEVENT_LEAVE:
-            fprintf(stderr, "Mouse left window %d", event->window.windowID);
+            SDL_Log("Mouse left window %d", event->window.windowID);
             break;
         case SDL_WINDOWEVENT_FOCUS_GAINED:
-            fprintf(stderr, "Window %d gained keyboard focus",
+            SDL_Log("Window %d gained keyboard focus",
                     event->window.windowID);
             break;
         case SDL_WINDOWEVENT_FOCUS_LOST:
-            fprintf(stderr, "Window %d lost keyboard focus",
+            SDL_Log("Window %d lost keyboard focus",
                     event->window.windowID);
             break;
         case SDL_WINDOWEVENT_CLOSE:
-            fprintf(stderr, "Window %d closed", event->window.windowID);
+            SDL_Log("Window %d closed", event->window.windowID);
             break;
         default:
-            fprintf(stderr, "Window %d got unknown event %d",
+            SDL_Log("Window %d got unknown event %d",
                     event->window.windowID, event->window.event);
             break;
         }
