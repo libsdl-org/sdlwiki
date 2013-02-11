@@ -14,14 +14,14 @@ const char* SDL_JoystickNameForIndex(int device_index)
 == Function Parameters ==
 {|
 |'''device_index'''
-|^the index of the joystick to query^ ''-or-'' *the N'th joystick on the system*
+|the index of the joystick to query (the N'th joystick on the system)
 |}
 
 == Return Value ==
 Returns the name of the selected joystick.  If no name can be found, this function returns NULL; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
+
 ```c++
 /* Print the names of all attached joysticks */
 int num_joy, i;
@@ -30,14 +30,13 @@ printf("%d joysticks found\n", num_joy);
 for(i=0;i<num_joy;i++)
   printf("%s\n", SDL_JoystickNameForIndex(i));
 ```
-*
 
 == Remarks ==
 This can be called before any joysticks are opened.
 
 == Related Functions ==
-:[[SDL_JoystickOpen]] *
-:[[SDL_JoystickName]] *
+:[[SDL_JoystickOpen]]
+:[[SDL_JoystickName]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
