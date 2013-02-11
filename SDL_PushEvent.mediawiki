@@ -14,15 +14,13 @@ int SDL_PushEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|^the [[SDL_Event]] to be added to the queue^
+| the [[SDL_Event]] to be added to the queue
 |}
 
 <<Color2(green,Most other functions w/ the event param say "If not NULL the next event is removed from the queue and stored in that area."  Does that apply here?)>>
 
 == Return Value ==
-Returns 1 on success, 0 if the event was filtered, or a negative error code on failure; call [[SDL_GetError]]() for more information.
-
-<<Color2(purple,If the event queue was full it returns -1.)>>
+Returns 1 on success, 0 if the event was filtered, or a negative error code on failure; call [[SDL_GetError]]() for more information.  A common error, if the event queue was full, returns -1.
 
 == Code Examples ==
 ```c++
@@ -47,8 +45,8 @@ This function is thread safe, and can be called from other threads safely. *
 Note: Events pushed onto the queue with [[SDL_PushEvent]]() or [[SDL_PeepEvents]]() do not get passed through the event filter. *
 
 == Related Functions ==
-:[[SDL_PeepEvents]] *???
-:[[SDL_PollEvent]] *???
+:[[SDL_PeepEvents]]
+:[[SDL_PollEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
