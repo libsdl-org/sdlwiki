@@ -41,9 +41,6 @@ You can add your code example here
 <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for '''category'''?)>>
 
 
-''You can add useful comments here''
-
-
 == Related Functions ==
 :[[SDL_Log]]
 :[[SDL_LogCritical]]
