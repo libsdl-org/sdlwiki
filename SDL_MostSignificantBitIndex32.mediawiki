@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_MostSignificantBitIndex32 =
+Use this function to get the index of the most significant (set) bit in a
+32-bit number. This is also the same as the base 2 logarithm of the number.
+
+
+
+
+== Syntax ==
+```c++
+Sint8 SDL_MostSignificantBitIndex32(Uint32 x)
+```
+
+
+== Function Parameters ==
+{|
+|'''x'''
+|the number to find the MSB of
+|}
+
+
+== Return Value ==
+Returns the index of the most significant bit if x is > 0, otherwise output is undefined.
+
+== Code Examples ==
+```c++
+if (bitmask) {
+    Sint8 index = SDL_MostSignificantBitIndex32(bitmask);
+}
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+----
+[[CategoryAPI]], [[CategoryBits]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
