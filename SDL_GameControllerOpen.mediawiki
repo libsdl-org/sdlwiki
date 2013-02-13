@@ -49,7 +49,7 @@ joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]].
 
 == Related Functions ==
 :[[SDL_IsGameController]]
-:[[SDL_GameControllerOpen]]
+:[[SDL_GameControllerNameForIndex]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
