@@ -1,0 +1,56 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerOpen =
+Use this function to open a gamecontroller for use.
+
+
+
+
+== Syntax ==
+```c++
+SDL_GameController *SDL_GameControllerOpen(int joystick_index)
+```
+
+== Function Parameters ==
+{|
+|'''joystick_index'''
+|the device_index of a device, up to [[SDL_NumJoysticks]]()
+|}
+
+== Return Value ==
+Returns a gamecontroller identifier or NULL if an error occurred; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+/* Open the first available controller. */
+SDL_GameController *controller = NULL;
+for (int i = 0; i < SDL_NumJoysticks(); ++i) {
+    if (SDL_IsGameController(i)) {
+        controller = SDL_GameControllerOpen(i);
+        if (controller) {
+            break;
+        } else {
+            fprintf(stderr, "Could not open gamecontroller %i: %s\n", i, SDL_GetError());
+        }
+    }
+}
+```
+
+
+== Remarks ==
+joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]].
+
+
+== Related Functions ==
+:[[SDL_IsGameController]]
+:[[SDL_GameControllerOpen]]
+
+----
+[[CategoryAPI]], [[CategoryGameController]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
