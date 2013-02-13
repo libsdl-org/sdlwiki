@@ -53,4 +53,3 @@ joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]].
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
