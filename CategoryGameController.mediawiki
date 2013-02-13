@@ -28,7 +28,7 @@ This category contains functions for handling gamecontrollers and for mapping jo
 
 
 == Functions ==
-<<FullSearch(category:CategoryGameController -CategoryEnum -CategoryStruct SGFunctions)>>
+<<FullSearch(category:CategoryGameController -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
