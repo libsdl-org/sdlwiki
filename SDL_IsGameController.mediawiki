@@ -20,7 +20,7 @@ SDL_bool SDL_IsGameController(int joystick_index)
 == Function Parameters ==
 {|
 |'''joystick_index'''
-|the device_index of a device, up to SDL_NumJoysticks
+|the device_index of a device, up to [[SDL_NumJoysticks]]()
 |}
 
 <!-- #Fill in the above table per the Style Guide, then delete this comment. -->
@@ -31,7 +31,11 @@ Returns SDL_TRUE if the given joystick is supported by the game controller inter
 
 == Code Examples ==
 ```c++
-You can add your code example here
+for (int i = 0; i < SDL_NumJoysticks(); ++i) {
+    if (SDL_IsGameController(i)) {
+        printf("Joystick %i is supported by the game controller interface!\n");
+    }
+}
 ```
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
