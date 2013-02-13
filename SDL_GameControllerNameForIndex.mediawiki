@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerNameForIndex =
+Use this function to get the implementation dependent name for the game controller.
+
+
+
+
+== Syntax ==
+```c++
+char *SDL_GameControllerNameForIndex(int joystick_index)
+```
+
+
+== Function Parameters ==
+{|
+|'''joystick_index'''
+|the device_index of a device, up to [[SDL_NumJoysticks]]()
+|}
+
+
+== Return Value ==
+Returns the implementation dependent name for the game controller, or NULL if there is no name or the index is invalid.
+
+== Code Examples ==
+```c++
+for (int i = 0; i < SDL_NumJoysticks(); ++i) {
+    char *name = SDL_GameControllerNameForIndex(i);
+    if (name) {
+        printf("Joystick %i has game controller name '%s'\n", name);
+    } else {
+        printf("Joystick %i has no game controller name.\n");
+    }
+}
+```
+
+
+== Remarks ==
+joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]].
+
+
+== Related Functions ==
+:[[SDL_IsGameController]]
+:[[SDL_GameControllerOpen]]
+
+----
+[[CategoryAPI]], [[CategoryGameController]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
