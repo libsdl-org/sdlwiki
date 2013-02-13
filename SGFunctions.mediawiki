@@ -651,6 +651,9 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_clipboard.h
 |CategoryClipboard
+|-
+|SDL_bits.h
+|CategoryBits
 |}
 <!-- #||SDL_compat.h||CategoryCompat|| -->
 <!-- #||SDL_copying.h|||| -->
@@ -666,6 +669,9 @@ The Footer section consists of a horizontal rule followed by two links separated
 |-
 |SDL_events.h
 |CategoryEvents
+|-
+|SDL_gamecontroller.h
+|CategoryGameController
 |}
 <!-- #||SDL_gesture.h|||| -->
 {|
