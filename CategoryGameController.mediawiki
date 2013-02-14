@@ -16,7 +16,9 @@
 
 == Introduction ==
 
-This category contains functions for handling game controllers and for mapping joysticks to game controller semantics.
+This category contains functions for handling game controllers and for mapping joysticks to game controller semantics. This is built on top of the existing joystick API.
+
+If you are running your game from Steam, the game controller mapping is automatically provided for your game.
 
 
 == Enumerations ==
