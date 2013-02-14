@@ -33,7 +33,7 @@ This category contains functions for bit-level operations ("bit-twiddling").
 
 <!-- #If this category includes functions change CategoryHeader below to the appropriate category name that will be used in the footer of the corresponding API pages.  See the Footer section of the Functions Style Guide for details.  Remove the ## in front of the next 2 lines to automatically create a list on the page.  Remove this comment. -->
 == Functions ==
-<<FullSearchCached(category:CategoryBits -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearch(category:CategoryBits -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
