@@ -79,6 +79,9 @@
 |-
 |[CategoryJoystick|Joystick Support]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_joystick.h SDL_joystick.h] 
+|-
+|[CategoryGameController|Game Controller Support]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_gamecontroller.h SDL_gamecontroller.h] 
 |}
 
 
@@ -168,6 +171,9 @@
 |-
 |[CategoryEndian|Byte Order and Byte Swapping]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_endian.h SDL_endian.h] 
+|-
+|[CategoryBits|Bit Manipulation]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_bits.h SDL_bits.h] 
 |}
 
 
