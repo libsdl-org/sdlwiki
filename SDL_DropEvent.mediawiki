@@ -29,6 +29,8 @@ This event is disabled by default.  You can enable it with [[SDL_EventState]]().
 
 If you enable this event you must free the filename in the event.
 
+=== Mac OSX ===
+To enable drag&drop on your SDL app, you must ''also'' edit your info.plist file. Add/Modify '''Document Types.''' For example, to enable all document types, add the "public.data" mime type as a document type.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
