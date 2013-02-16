@@ -130,6 +130,8 @@ To test these entries, restart X after you modified XF86Config and press ctrl-al
 == How do I get all the dependencies for building SDL on Fedora? ==
 
 You can install these packages for building SDL 2.0 on Fedora:
+
+sudo yum install
 rpm-build
 alsa-lib-devel
 libX11-devel
