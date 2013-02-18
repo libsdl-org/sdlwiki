@@ -1,0 +1,62 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+
+= SDL_CreateWindowAndRenderer =
+Use this function to create a window and default renderer.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_CreateWindowAndRenderer(int width, int height, Uint32 window_flags,
+                                SDL_Window **window, SDL_Renderer **renderer)
+```
+
+
+
+== Function Parameters ==
+{|
+|'''width'''
+|The width of the window
+|-
+|'''height'''
+|The height of the window
+|-
+|'''window_flags'''
+|The flags used to create the window (see [[SDL_CreateWindow]]())
+|-
+|'''window'''
+|A pointer filled with the window, or NULL on error
+|-
+|'''renderer'''
+|A pointer filled with the renderer, or NULL on error
+|}
+
+
+
+== Return Value ==
+Returns 0 on success, or -1 on error; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+
+== Remarks ==
+''You can add useful comments here''
+
+
+
+== Related Functions ==
+:[[SDL_CreateWindow]]
+:[[SDL_CreateRenderer]]
+
+----
+[[CategoryAPI]], [[CategoryRender]], [[CategoryVideo]]
