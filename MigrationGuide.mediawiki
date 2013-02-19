@@ -82,7 +82,7 @@ SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN
 
 You'll note that there are two kinds of key numbers:
 * [[SDL_Keycode]] (previously ```SDLKey```): key codes, using SDL_Keycode's SDLK constants; note that SDLK_LAST disappeared, because new values cover most of 32bits. Keys associated with printable characters are compatible with Unicode UTF16.
-* [[SDL_Scancode]]: scan codes, representing layout-independent key locations
+* [[SDL_Scancode]]: scan codes, representing layout-independent key locations.  Keyboard events have this value in ^event.key.keysym.scancode^.
 
 ```SDLMod``` is now [[SDL_Keymod]].
 
@@ -90,7 +90,7 @@ You'll note that there are two kinds of key numbers:
 
 There is now a dedicated API for textual input (e.g. to enter a small text, rather than combining keys); check [[Tutorials/TextInput]] for an introduction.
 
-```SDL_GetKeyState``` has been renamed to [[SDL_GetKeyboardState]].
+```SDL_GetKeyState``` has been renamed to [[SDL_GetKeyboardState]].  The returned array should now be indexed by SDL_SCANCODE_* values (see [[SDL_Scancode]]) instead of [[SDL_Keysym]] values.
 
 == Audio ==
 
