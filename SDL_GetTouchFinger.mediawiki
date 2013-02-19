@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetTouch =
+Use this function to get the touch device object at a specified touch device ID.
+
+
+
+
+
+== Syntax ==
+```c++
+SDL_Touch* SDL_GetTouch(SDL_TouchID id)
+```
+
+
+
+== Function Parameters ==
+{|
+|'''id'''
+|the ID of the requested touch device
+|}
+
+
+
+== Return Value ==
+Returns a pointer to the SDL_Touch object or NULL if no object at the given ID could be found.
+
+
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+
+== Remarks ==
+The returned resource is owned by SDL and should not be deallocated.
+
+
+== Related Functions ==
+:[[SDL_RecordGesture]]
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
