@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_RecordGesture =
+Use this function to begin recording a gesture on a specified touch device or all touch devices.
+
+
+
+
+
+== Syntax ==
+```c++
+int SDL_RecordGesture(SDL_TouchID touchId)
+```
+
+
+
+== Function Parameters ==
+{|
+|touchId
+|the touch device index, or -1 for all touch devices
+|}
+
+
+
+
+== Return Value ==
+Returns 1 on success or 0 if the specified device could not be found.
+
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+
+== Remarks ==
+If the parameter is -1 (i.e., all devices), this function will always return 1, regardless of whether there actually are any devices.
+
+
+
+== Related Functions ==
+:[[SDL_GetTouch]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
