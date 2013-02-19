@@ -1,0 +1,116 @@
+This page is intended to help focus the efforts of the SDL Documentation Wiki contributors.
+
+=== Missing functions ===
+The following functions are found in the header files, but not (yet) on the wiki. Some pages just need to be categorized, others don't exist yet and need to be made, and some might not belong on the wiki anyway (for example, none of the internal SDL_cstdlib functions have been listed here). 
+
+SDL_assert.h
+
+* [[SDL_ReportAssertion]]
+
+SDL_error.h
+
+* [[SDL_Error]]
+
+SDL_gamecontroller.h
+
+* [[SDL_IsGameController]]
+* [[SDL_GameControllerNameForIndex]]
+* [[SDL_GameControllerOpen]]
+* [[SDL_GameControllerName]]
+* [[SDL_GameControllerGetAttached]]
+* [[SDL_GameControllerGetJoystick]]
+* [[SDL_GameControllerEventState]]
+* [[SDL_GameControllerGetAxisFromString]]
+* [[SDL_GameControllerGetButtonFromString]]
+* [[SDL_GameControllerGetButton]]
+* [[SDL_GameControllerClose]]
+
+SDL_gesture.h
+
+* [[SDL_RecordGesture]]
+* [[SDL_SaveAllDollarTemplates]]
+* [[SDL_SaveDollarTemplate]]
+* [[SDL_LoadDollarTemplates]]
+
+SDL_input.h
+
+* [[SDL_RedetectInputDevices]]
+* [[SDL_GetNumInputDevices]]
+* [[SDL_GetInputDeviceName]]
+* [[SDL_IsDeviceDisconnected]]
+
+SDL_joystick.h
+
+* [[SDL_JoystickNameForIndex]]
+* [[SDL_JoystickGetDeviceGUID]]
+* [[SDL_JoystickGetGUID]]
+* [[SDL_JoystickGetGUIDString]]
+* [[SDL_JoystickGetGUIDFromString]]
+* [[SDL_JoystickGetAttached]]
+* [[SDL_JoystickInstanceID]]
+
+SDL_keyboard.h
+
+* [[SDL_IsTextInputActive]]
+* [[SDL_HasScreenKeyboardSupport]]
+* [[SDL_IsScreenKeyboardShown]]
+
+SDL_main.h
+
+* [[SDL_RegisterApp]]
+* [[SDL_UnregisterApp]]
+
+SDL_messagebox.h
+
+* [[SDL_ShowMessageBox]]
+* [[SDL_ShowSimpleMessageBox]]
+
+SDL_mouse.h
+
+* [[SDL_CreateSystemCursor]]
+
+SDL_render.h
+
+* [[SDL_CreateWindowAndRenderer]]
+* [[SDL_RenderTargetSupported]]
+* [[SDL_GetRenderTarget]]
+* [[SDL_RenderSetLogicalSize]]
+* [[SDL_RenderGetLogicalSize]]
+* [[SDL_RenderSetScale]]
+* [[SDL_RenderGetScale]]
+
+SDL_rwops.h
+
+* [[SDL_ReadU8]]
+* [[SDL_WriteU8]]
+
+SDL_shape.h
+
+* [[SDL_CreateShapedWindow]]
+* [[SDL_IsShapedWindow]]
+* [[SDL_SetWindowShape]]
+* [[SDL_GetShapedWindowMode]]
+
+SDL_system.h
+
+* [[SDL_iPhoneSetAnimationCallback]]
+* [[SDL_iPhoneSetEventPump]]
+* [[SDL_AndroidGetJNIEnv]]
+* [[SDL_AndroidGetActivity]]
+* [[SDL_AndroidGetInternalStoragePath]]
+* [[SDL_AndroidGetExternalStorageState]]
+* [[SDL_AndroidGetExternalStoragePath]]
+
+SDL_touch.h
+
+* [[SDL_GetTouch]]
+
+SDL_video.h
+
+* [[SDL_GetDisplayName]]
+* [[SDL_GetWindowDisplayIndex]]
+* [[SDL_SetWindowMinimumSize]]
+* [[SDL_GetWindowMinimumSize]]
+* [[SDL_SetWindowMaximumSize]]
+* [[SDL_GetWindowMaximumSize]]
+* [[SDL_SetWindowBordered]]
