@@ -5,7 +5,7 @@
 |}
 
 
-= SDL_Function =
+= SDL_GameControllerGetAttached =
 Use this function to check if a controller has been opened and is currently connected.
 
 
