@@ -1,0 +1,38 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+{|
+|<tablewidth="100%"style="color:#FF0000; ;text-align:center">DRAFT 
+|}
+
+
+= SDL_Function =
+Use this function to check if a controller has been opened and is currently connected.
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller)
+```
+== Function Parameters ==
+{|
+|gamecontroller 
+|a game controller identifier previously returned by [[SDL_GameControllerOpen()]] 
+|}
+
+
+== Return Value ==
+Returns SDL_TRUE if the controller has been opened and currently connected, or SDL_FALSE if it has not.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_GameControllerOpen]]
+:[[SDL_GameControllerClose]]
+
+----
+[[CategoryAPI]], CategoryGameController
