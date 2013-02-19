@@ -5,14 +5,17 @@ The following functions are found in the header files, but not (yet) on the wiki
 
 SDL_assert.h
 
+These functions are for internal use and not meant to be documented:
 * [[SDL_ReportAssertion]]
 
 SDL_error.h
 
+These functions are for internal use and not meant to be documented:
 * [[SDL_Error]]
 
 SDL_gamecontroller.h
 
+These functions are in the process of being documented by Jorgen
 * [[SDL_IsGameController]]
 * [[SDL_GameControllerNameForIndex]]
 * [[SDL_GameControllerOpen]]
@@ -34,6 +37,7 @@ SDL_gesture.h
 
 SDL_input.h
 
+The input API was never implemented and needs to be removed.
 * [[SDL_RedetectInputDevices]]
 * [[SDL_GetNumInputDevices]]
 * [[SDL_GetInputDeviceName]]
@@ -57,6 +61,7 @@ SDL_keyboard.h
 
 SDL_main.h
 
+These functions are platform specific and were left undocumented because they require advanced knowledge of Windows functionality.  You may document them but will need to explain when and why you should use them.
 * [[SDL_RegisterApp]]
 * [[SDL_UnregisterApp]]
 
@@ -86,6 +91,7 @@ SDL_rwops.h
 
 SDL_shape.h
 
+These functions need testing on all supported platforms and possibly implementation as well.
 * [[SDL_CreateShapedWindow]]
 * [[SDL_IsShapedWindow]]
 * [[SDL_SetWindowShape]]
