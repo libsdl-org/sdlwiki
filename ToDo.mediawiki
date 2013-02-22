@@ -37,7 +37,7 @@ SDL_gesture.h
 
 SDL_input.h
 
-The input API was never implemented and needs to be removed.
+The input API was never implemented and has been removed, so ignore these functions.
 * [[SDL_RedetectInputDevices]]
 * [[SDL_GetNumInputDevices]]
 * [[SDL_GetInputDeviceName]]
