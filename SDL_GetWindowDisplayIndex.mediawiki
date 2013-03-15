@@ -1,13 +1,13 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-= SDL_GetWindowDisplay =
+= SDL_GetWindowDisplayIndex =
 Use this function to get the index of the display associated with a window.
 
 
 == Syntax ==
 ```c++
-int SDL_GetWindowDisplay(SDL_Window* window)
+int SDL_GetWindowDisplayIndex(SDL_Window* window)
 ```
 
 == Function Parameters ==
