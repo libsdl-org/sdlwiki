@@ -185,6 +185,7 @@ An SDL_QUIT event is generated when the user tries to close the application wind
 : [[SDL_TextEditingEvent]]
 : [[SDL_TextInputEvent]]
 : [[SDL_UserEvent]]
+: [[SDL_WindowEvent]]
 
 == Related Functions ==
 
