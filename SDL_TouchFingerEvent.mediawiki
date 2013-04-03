@@ -14,7 +14,11 @@ A structure that contains finger touch event information.
 |-
 |Uint32
 |'''windowID'''
-|the window with mouse focus, if any
+|the window with mouse focus, if any.  ''this field may no longer exist''
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
 |-
 |SDL_TouchID
 |'''touchId'''
@@ -26,27 +30,27 @@ A structure that contains finger touch event information.
 |-
 |Uint8
 |'''state'''
-|the current button state
+|the current button state.  ''this field may no longer exist''
 |-
-|Uint16
+|float
 |'''x'''
-|^the x-axis location of the touch event^
+|^the normalized x-axis location of the touch event^
 |-
-|Uint16
+|float
 |'''y'''
-|^the y-axis location of the touch event^
+|^the normalized y-axis location of the touch event^
 |-
-|Uint16
+|float
 |'''dx'''
-|^the distance moved in the x-axis^
+|^the distance moved in the x-axis, normalized^
 |-
-|Uint16
+|float
 |'''dy'''
-|^the distance moved in the y-axis^
+|^the distance moved in the y-axis, normalized^
 |-
-|Uint16
+|float
 |'''pressure'''
-|^the quantity of pressure applied^
+|^the quantity of pressure applied, normalized (0...1)^
 |}
 
 <<Color2(green,Note that touchID is described as "the touch device index" in all 3 other similar functions.)>>
