@@ -13,10 +13,6 @@ A structure that contains finger touch event information.
 |SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP
 |-
 |Uint32
-|'''windowID'''
-|the window with mouse focus, if any.  ,,''this field may no longer exist'',,
-|-
-|Uint32
 |'''timestamp'''
 |timestamp of the event
 |-
@@ -27,10 +23,6 @@ A structure that contains finger touch event information.
 |SDL_FingerID
 |'''fingerId'''
 |
-|-
-|Uint8
-|'''state'''
-|the current button state.  ,,''this field may no longer exist'',,
 |-
 |float
 |'''x'''
