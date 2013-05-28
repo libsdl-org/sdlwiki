@@ -9,7 +9,7 @@
 === What is SDL? ===
 The Simple DirectMedia Layer library (SDL) is a general API that provides low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across multiple platforms.
 
-The current version supports Windows XP, Windows Vista, Windows 7, Mac OS X, Linux, iOS, and Android. The code contains support for other operating systems but those are not officially supported.
+The current version supports Windows XP/Vista/7/8, Mac OS X, Linux, iOS, and Android. The code contains support for other operating systems but those are not officially supported.
 : For the latest information on what is supported see http://hg.libsdl.org/SDL/file/default/README-platforms.txt
 
 SDL is written in C, but works with C++ natively, and has bindings to several other languages, including Ada, C#, Eiffel, Erlang, Euphoria, Guile, Haskell, Java, Lisp, Lua, ML, Objective C, Pascal, Perl, PHP, Pike, Pliant, Python, Ruby, and Smalltalk.
