@@ -60,6 +60,9 @@ When calling [[SDL_SetColorKey]](), you should pass SDL_TRUE instead of SDL_SRCC
 
 Some renderer now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]] for details.
 
+=== Color alpha ===
+[[SDL_Color]] struct now contains a fourth, "alpha" component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value, in 2.0, you should.
+
 == Events ==
 
 Events mask are now specified using intervals:
