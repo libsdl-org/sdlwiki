@@ -22,7 +22,7 @@ int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
 |}
 
 == Return Value ==
-Returns 0 if it isn't playing, SDL_HAPTIC_PLAYING if it is playing, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns 0 if it isn't playing, 1 if it is playing, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
