@@ -18,6 +18,27 @@ An enumeration of the types of events that can be delivered.
 |user-requested quit; see [[#Remarks|Remarks]] for details
 |-
 |
+|<bgcolor="#EDEDED">''Android and iOS events''
+|-
+|SDL_APP_TERMINATING
+|
+|-
+|SDL_APP_LOWMEMORY
+|
+|-
+|SDL_APP_WILLENTERBACKGROUND
+|
+|-
+|SDL_APP_DIDENTERBACKGROUND
+|
+|-
+|SDL_APP_WILLENTERFOREGROUND
+|
+|-
+|SDL_APP_DIDENTERFOREGROUND
+|
+|-
+|
 |<bgcolor="#EDEDED">''Window events''
 |-
 |SDL_WINDOWEVENT
@@ -73,6 +94,33 @@ An enumeration of the types of events that can be delivered.
 |-
 |SDL_JOYBUTTONUP
 |joystick button released
+|-
+|SDL_JOYDEVICEADDED
+|joystick connected
+|-
+|SDL_JOYDEVICEREMOVED
+|joystick disconnected
+|-
+|
+|<bgcolor="#EDEDED">''Controller events''
+|-
+|SDL_CONTROLLERAXISMOTION
+|controller axis motion
+|-
+|SDL_CONTROLLERBUTTONDOWN
+|controller button pressed
+|-
+|SDL_CONTROLLERBUTTONUP
+|controller button released
+|-
+|SDL_CONTROLLERDEVICEADDED
+|controller connected
+|-
+|SDL_CONTROLLERDEVICEREMOVED
+|controller disconnected
+|-
+|SDL_CONTROLLERDEVICEREMAPPED
+|controller mapping updated
 |-
 |
 |<bgcolor="#EDEDED">''Touch events''
