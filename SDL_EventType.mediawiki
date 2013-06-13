@@ -134,12 +134,6 @@ An enumeration of the types of events that can be delivered.
 |SDL_FINGERMOTION
 |
 |-
-|SDL_TOUCHBUTTONDOWN
-|
-|-
-|SDL_TOUCHBUTTONUP
-|
-|-
 |
 |<bgcolor="#EDEDED">''Gesture events''
 |-
@@ -163,18 +157,6 @@ An enumeration of the types of events that can be delivered.
 |-
 |SDL_DROPFILE
 |the system requests a file open
-|-
-|
-|<bgcolor="#EDEDED">''Obsolete events''
-|-
-|<style="color: #808080;">SDL_EVENT_COMPAT1
-|<style="color: #808080;">SDL 1.2 events for compatibility (deprecated)
-|-
-|<style="color: #808080;">SDL_EVENT_COMPAT2
-|<style="color: #808080;">SDL 1.2 events for compatibility (deprecated)
-|-
-|<style="color: #808080;">SDL_EVENT_COMPAT3
-|<style="color: #808080;">SDL 1.2 events for compatibility (deprecated)
 |-
 |
 |<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
