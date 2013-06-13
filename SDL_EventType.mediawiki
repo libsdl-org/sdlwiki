@@ -57,27 +57,6 @@ An enumeration of the types of events that can be delivered.
 |mouse wheel motion
 |-
 |
-|<bgcolor="#EDEDED">''Tablet or multiple mice input device events''
-|-
-|SDL_INPUTMOTION
-|input moved
-|-
-|SDL_INPUTBUTTONDOWN
-|input button pressed
-|-
-|SDL_INPUTBUTTONUP
-|input button released
-|-
-|SDL_INPUTWHEEL
-|input wheel motion
-|-
-|SDL_INPUTPROXIMITYIN
-|input pen entered proximity
-|-
-|SDL_INPUTPROXIMITYOUT
-|input pen left proximity
-|-
-|
 |<bgcolor="#EDEDED">''Joystick events''
 |-
 |SDL_JOYAXISMOTION
@@ -179,7 +158,6 @@ An SDL_QUIT event is generated when the user tries to close the application wind
 : [[SDL_MouseButtonEvent]]
 : [[SDL_MouseMotionEvent]]
 : [[SDL_MouseWheelEvent]]
-: [[SDL_ProximityEvent]]
 : [[SDL_QuitEvent]]
 : [[SDL_SysWMEvent]]
 : [[SDL_TextEditingEvent]]
