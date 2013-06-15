@@ -35,7 +35,7 @@ Returns the final offset in the data stream after the seek or -1 on error.
 #include <stdio.h>
 #include "SDL_rwops.h"
 
-int main()
+int main(int argc, char *argv[])
 {
   Sint64 length;
   SDL_RWops *rw=SDL_RWFromFile("myfile.bin","rb");
