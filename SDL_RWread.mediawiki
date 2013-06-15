@@ -43,7 +43,8 @@ Returns the number of objects read, or 0 at error or end of file; call [[SDL_Get
 ```c++
 #include <stdio.h>
 #include "SDL_rwops.h"
-int main()
+
+int main(int argc, char *argv[])
 {
   int blocks;
   char buf[256];
