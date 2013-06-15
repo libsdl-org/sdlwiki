@@ -5,14 +5,14 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 
-= SDL_RenderGetClipRect =
-Use this function to get the clip rectangle for the current target.
+= SDL_RenderSetClipRect =
+Use this function to set the clip rectangle for rendering on the specified target.
 
 
 
 == Syntax ==
 ```c++
-void SDL_RenderGetClipRect(SDL_Renderer* renderer,
+void SDL_RenderSetClipRect(SDL_Renderer* renderer,
                            SDL_Rect*     rect);
 ```
 
@@ -23,9 +23,11 @@ void SDL_RenderGetClipRect(SDL_Renderer* renderer,
 |the rendering context
 |-
 |'''rect'''
-|an [[SDL_Rect]] structure filled in with the current clipping area
+|an [[SDL_Rect]] structure representing the clip area, or NULL to disable clipping
 |}
 
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -38,7 +40,7 @@ You can add your code example here
 
 
 == Related Functions ==
-:[[SDL_RenderSetClipRect]]
+:[[SDL_RenderGetClipRect]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
