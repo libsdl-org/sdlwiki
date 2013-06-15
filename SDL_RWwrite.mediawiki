@@ -43,7 +43,7 @@ Returns the number of objects written, or 0 at error or end of file; call [[SDL_
 #include <string.h>
 #include "SDL_rwops.h"
 
-int main()
+int main(int argc, char *argv[])
 {
   int written;
   char *str="Hello World";
