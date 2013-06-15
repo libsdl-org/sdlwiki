@@ -2,7 +2,7 @@
 
 
 == What license does SDL use? ==
-SDL is freely available under the GNU LGPL license, and may be used in both free and commercial applications.
+SDL 1.2 is freely available under the GNU LGPL license, and may be used in both free and commercial applications.
 
 == Can I use SDL in a commercial application? ==
 Yes!
