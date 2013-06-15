@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_RenderGetClipRect =
+Use this function to get the clip rectangle for the current target.
+
+
+
+== Syntax ==
+```c++
+void SDL_RenderGetClipRect(SDL_Renderer* renderer,
+                           SDL_Rect*     rect);
+```
+
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the rendering context
+|-
+|'''rect'''
+|an [[SDL_Rect]] structure filled in with the current clipping area
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+== Remarks ==
+''You can add useful comments here''
+
+
+== Related Functions ==
+:[[SDL_RenderSetClipRect]]
+
+----
+[[CategoryAPI]], [[CategoryRender]]
