@@ -8,7 +8,7 @@ Use this function to seek within an SDL_RWops data stream.
 == Syntax ==
 ```c++
 Sint64 SDL_RWseek(SDL_RWops* context,
-                  long       offset, 
+                  Sint64     offset, 
                   int        whence)
 ```
 
