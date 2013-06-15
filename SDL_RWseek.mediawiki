@@ -7,9 +7,9 @@ Use this function to seek within an SDL_RWops data stream.
 
 == Syntax ==
 ```c++
-long SDL_RWseek(SDL_RWops* context,
-                long       offset, 
-                int        whence)
+Sint64 SDL_RWseek(SDL_RWops* context,
+                  long       offset, 
+                  int        whence)
 ```
 
 <<Color2(green,Seems like the type for '''context''' might have changed from SDL_RWops* to struct SDL_RWops*.  Which is correct?)>>
@@ -27,7 +27,7 @@ long SDL_RWseek(SDL_RWops* context,
 |}
 
 == Return Value ==
-Returns the final offset in the data stream after the seek.
+Returns the final offset in the data stream after the seek or -1 on error.
 
 == Code Examples ==
 *<br/>
@@ -37,7 +37,7 @@ Returns the final offset in the data stream after the seek.
 
 int main()
 {
-  long length;
+  Sint64 length;
   SDL_RWops *rw=SDL_RWFromFile("myfile.bin","rb");
   if(rw==NULL)
   {
