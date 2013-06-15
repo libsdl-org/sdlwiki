@@ -28,7 +28,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 #include <stdio.h>
 #include "SDL_rwops.h"
 
-int main()
+int main(int argc, char *argv[])
 {
   SDL_RWops *rw=SDL_RWFromFile("test.bin","r");
   if(rw==NULL)
