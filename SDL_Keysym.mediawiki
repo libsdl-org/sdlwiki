@@ -21,7 +21,7 @@ A structure that contains key information used in key events.
 |-
 |<rowstyle="color: #808080;">Uint32
 |'''unicode'''
-|use [[SDL_TextInputEvent]] instead (deprecated)
+|use [[SDL_TextInputEvent]] instead (deprecated and always 0 on most platforms with SDL 2.0)
 |}
 
 == Code Examples ==
