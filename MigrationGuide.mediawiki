@@ -65,6 +65,8 @@ Some renderer now support a global color alteration (```srcC = srcC * color```),
 
 == Events ==
 
+[[SDL_PushEvent]]() now returns ```1``` on success instead of {{{0}}}.
+
 Events mask are now specified using intervals:
 
 ```
