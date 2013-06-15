@@ -101,6 +101,10 @@ There is now a dedicated API for textual input (e.g. to enter a small text, rath
 
 Audio is very similar to 1.2.  The driver detection/priority changed, you may need to test again your target configurations.
 
+In 2.0 the buffer passed to the audio callback is no more filled with silence (as it used to be on some platforms in 1.2).
+If [[SDL_MixAudio]]() should be used inside the audio callback then the buffer now must be manually filled with silence before mixing.
+
+
 == CD-ROM ==
 
 CD-ROM support was dropped in 2.0.  There is no replacement.
