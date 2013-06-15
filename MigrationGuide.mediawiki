@@ -110,6 +110,12 @@ If [[SDL_MixAudio]]() should be used inside the audio callback then the buffer n
 CD-ROM support was dropped in 2.0.  There is no replacement.
 
 
+== RWops ==
+
+[[SDL_RWread]]() and [[SDL_RWwrite]]() now return ```0``` on error instead of {{{-1}}}.
+Also the return types are now ```size_t``` instead of {{{int}}}.
+
+
 == Extensions compatibility ==
 
 The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
