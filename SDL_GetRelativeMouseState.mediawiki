@@ -8,8 +8,8 @@ Use this function to retrieve the relative state of the mouse.
 
 == Syntax ==
 ```c++
-Uint8 SDL_GetRelativeMouseState(int* x,
-                                int* y)
+Uint32 SDL_GetRelativeMouseState(int* x,
+                                 int* y)
 ```
 
 == Function Parameters ==
@@ -24,7 +24,7 @@ Uint8 SDL_GetRelativeMouseState(int* x,
 <<Color2(green,Should this be an exception to the 'pointer rule'?)>>
 
 == Return Value ==
-Returns an 8 bit button bitmask of the relative button state. ???  <<Color2(green,Does this have an error state?)>>
+Returns a 32 bit button bitmask of the relative button state. ???  <<Color2(green,Does this have an error state?)>>
 
 == Code Examples ==
 ```c++
