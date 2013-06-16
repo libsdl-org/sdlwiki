@@ -16,7 +16,7 @@ A structure that contains a user-defined event type (event.user.*).
 |'''windowID'''
 |the associated window, if any
 |-
-|int
+|Sint32
 |'''code'''
 |user defined event code
 |-
