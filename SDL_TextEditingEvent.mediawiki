@@ -20,11 +20,11 @@ A structure that contains keyboard text editing event information.
 |'''text'''
 |the editing text; * at most SDL_TEXTEDITINGEVENT_TEXT_SIZE - 1 characters *
 |-
-|int
+|Sint32
 |'''start'''
 |,,the start cursor of selected editing text,, ^the location to begin editing from^
 |-
-|int
+|Sint32
 |'''length'''
 |,,the length of selected editing text,, ^the number of characters to edit from the start point^
 |}
