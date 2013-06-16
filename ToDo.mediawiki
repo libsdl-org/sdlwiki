@@ -120,3 +120,12 @@ SDL_video.h
 * [[SDL_SetWindowMaximumSize]]
 * [[SDL_GetWindowMaximumSize]]
 * [[SDL_SetWindowBordered]]
+
+=== Missing structures ===
+
+SDL_events.h
+
+* [[SDL_JoyDeviceEvent]]
+* [[SDL_ControllerAxisEvent]]
+* [[SDL_ControllerButtonEvent]]
+* [[SDL_ControllerDeviceEvent]]
