@@ -32,7 +32,6 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_SetRenderDrawColor]]
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
@@ -41,6 +40,7 @@ You can add your code example here
 :[[SDL_RenderDrawRects]]
 :[[SDL_RenderFillRects]]
 :[[SDL_RenderPresent]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
