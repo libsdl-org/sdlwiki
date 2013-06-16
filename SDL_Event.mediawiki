@@ -55,6 +55,22 @@ A union that contains structures for the different event types.
 |'''jbutton'''
 |joystick button event data
 |-
+|[[SDL_JoyDeviceEvent]]
+|'''jdevice'''
+|joystick device event data
+|-
+|[[SDL_ControllerAxisEvent]]
+|'''caxis'''
+|game controller axis event data
+|-
+|[[SDL_ControllerButtonEvent]]
+|'''cbutton'''
+|game controller button event data
+|-
+|[[SDL_ControllerDeviceEvent]]
+|'''cdevice'''
+|game controller device event data
+|-
 |[[SDL_QuitEvent]]
 |'''quit'''
 |quit request event data
@@ -71,10 +87,6 @@ A union that contains structures for the different event types.
 |'''tfinger'''
 |touch finger event data
 |-
-|[[SDL_TouchButtonEvent]]
-|'''tbutton'''
-|touch button event data
-|-
 |[[SDL_MultiGestureEvent]]
 |'''mgesture'''
 |multi finger gesture data
@@ -86,16 +98,7 @@ A union that contains structures for the different event types.
 |[[SDL_DropEvent]]
 |'''drop'''
 |drag and drop event data
-|-
-|<rowstyle="color: #808080;">SDL_ActiveEvent
-|'''active'''
-|for backwards compatibility (deprecated)
-|-
-|<rowstyle="color: #808080;">SDL_ResizeEvent
-|'''resize'''
-|for backwards compatibility (deprecated)
 |}
-
 
 == Code Examples ==
 ```c++
