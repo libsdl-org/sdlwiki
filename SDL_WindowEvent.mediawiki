@@ -19,11 +19,11 @@ A structure that contains window state change event data.
 |'''event'''
 |[[SDL_WindowEventID]]
 |-
-|int
+|Sint32
 |'''data1'''
 |event dependent data
 |-
-|int
+|Sint32
 |'''data2'''
 |event dependent data
 |}
