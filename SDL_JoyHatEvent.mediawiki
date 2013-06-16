@@ -11,7 +11,7 @@ A structure that contains joystick hat position change event information.
 |'''type'''
 |SDL_JOYHATMOTION
 |-
-|Uint8
+|SDL_JoystickID
 |'''which'''
 |the index of the joystick that reported the event
 |-
