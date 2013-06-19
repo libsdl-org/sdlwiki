@@ -44,6 +44,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetWindowMinimumSize]]
+:[[SDL_SetWindowMaximumSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
