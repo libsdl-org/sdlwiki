@@ -1,0 +1,50 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_SetWindowMinimumSize =
+Use this function to set the minimum size of a window's client area.
+
+
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowMinimumSize(SDL_Window* window,
+                              int         w,
+                              int         h)
+```
+
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to change
+|-
+|'''w'''
+|the minimum width of the window in pixels
+|-
+|'''h'''
+|the minimum height of the window in pixels
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+== Remarks ==
+''You can add useful comments here''
+
+
+== Related Functions ==
+:[[SDL_GetWindowMinimumSize]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
