@@ -33,7 +33,7 @@ int main( void )
 ''This function is defined in SDL_main.h, along with the preprocessor rule to redefine main() as SDL_main().  Thus to ensure that your main() function will not be changed it is necessary to define SDL_MAIN_HANDLED before including SDL.h''
 
 == Related Functions ==
-: [[SDL_Init()]]
+: [[SDL_Init]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
