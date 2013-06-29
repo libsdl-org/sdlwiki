@@ -36,11 +36,4 @@ int main( void )
 : [[SDL_Init()]]
 
 ----
-[[CategoryAPI]], !CategoryHeader
-
-<!-- #See the Style Guide for instructions on editing the footer. -->
-----
-!CategoryInit
-
-----
-!CategoryInit
+[[CategoryAPI]], [[CategoryInit]]
