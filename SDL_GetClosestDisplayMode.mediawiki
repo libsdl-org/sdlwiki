@@ -29,7 +29,8 @@ Returns the passed in value '''closest''' or NULL if no matching video mode was 
 == Code Examples ==
 ```c++
 // Using SDL2's SDL_GetClosestDisplayMode()
-#include <SDL2/SDL.h>
+
+#include "SDL.h"
 #include <cstdio>
 
 int main(int argc, char* argv[]){
