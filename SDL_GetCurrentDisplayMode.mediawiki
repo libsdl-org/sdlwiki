@@ -27,7 +27,8 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ```c++
 
 // Using SDL2's SDL_GetCurrentDisplayMode()
-#include <SDL2/SDL.h>   
+
+#include "SDL.h"
 #include <iostream>   
 
 using namespace std;
