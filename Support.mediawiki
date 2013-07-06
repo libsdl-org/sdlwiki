@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 <!-- acl All:read -->
 
-= SDL 1.3 Information & Support =
+= SDL 2.0 Information & Support =
 
 <br/>
 == Information Sources ==
@@ -10,18 +10,18 @@
 ```#!wiki tip
 '''Tip'''
 
-Although there is some overlap between SDL version 1.2 and 1.3, the information in this wiki is specifically for SDL version 1.3.  For SDL 1.2 see http://www.libsdl.org/index.php and http://www.libsdl.org/cgi/docwiki.cgi.
+Although there is some overlap between SDL version 1.2 and 2.0, the information in this wiki is specifically for SDL version 2.0.  For SDL 1.2 see http://www.libsdl.org/index.php and http://www.libsdl.org/cgi/docwiki.cgi.
 ```
 
-For help switching over from version 1.2 to 1.3 check out this [[MigrationGuide|Migration Guide]].
+For help switching over from version 1.2 to 2.0 check out this [[MigrationGuide|Migration Guide]].
 
-Once you're using version 1.3 of the Simple DirectMedia Layer (SDL) API, there are a number of sources for basic information.  Here are a few:
+Once you're using version 2.0 of the Simple DirectMedia Layer (SDL) API, there are a number of sources for basic information.  Here are a few:
 
 === Documentation ===
-Congratulations!  You already found this one.  Use the left sidebar to navigate through the SDL 1.3 documentation provided in this wiki.
+Congratulations!  You already found this one.  Use the left sidebar to navigate through the SDL 2.0 documentation provided in this wiki.
 
 === Header Files ===
-The SDL 1.3 header files can be found here:
+The SDL 2.0 header files can be found here:
 http://hg.libsdl.org/SDL/file/default/include
 
 === Articles ===
