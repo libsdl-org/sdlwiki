@@ -31,14 +31,14 @@ Returns the passed in value '''closest''' or NULL if no matching video mode was 
 // Using SDL2's SDL_GetClosestDisplayMode()
 
 #include "SDL.h"
-#include <cstdio>
+#include <stdio.h>
 
 int main(int argc, char* argv[]){
 
-  SDL_Init(SDL_INIT_VIDEO);
-
   // Declare structures to be filled in.
   SDL_DisplayMode target, closest;
+
+  SDL_Init(SDL_INIT_VIDEO);
 
   // Set the desired resolution, etc.
   target.w = 600;
