@@ -46,14 +46,14 @@ Returns the window that was created or NULL on failure; call [[SDL_GetError]]() 
 // Using SDL2 to create an application window
 
 #include "SDL.h"
-#include <iostream>
+#include <stdio.h>
 
 int main(int argc, char* argv[]){
 
-  SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL2
-  
   SDL_Window *window;        // Declare a pointer to an SDL_Window
-  
+
+  SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL2
+
   // Create an application window with the following settings:
   window = SDL_CreateWindow( 
     "An SDL2 window",                  //    window title
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]){
   // Check that the window was successfully made
   if(window==NULL){   
     // In the event that the window could not be made...
-    std::cout << "Could not create window: " << SDL_GetError() << '\n';
+    printf("Could not create window: %s\n", SDL_GetError());
     return 1;
   }
   
