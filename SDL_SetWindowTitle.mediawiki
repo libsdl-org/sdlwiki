@@ -23,7 +23,8 @@ void SDL_SetWindowTitle(SDL_Window* window,
 == Code Examples ==
 ```c++
 // dynamically setting a window title
-#include <SDL2/SDL.h>
+
+#include "SDL.h"
 #include <string>
 
 using std::string;
