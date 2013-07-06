@@ -23,7 +23,8 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 == Code Examples ==
 ```c++
 // Using SDL2 to set a window icon
-#include <SDL2/SDL.h>   
+
+#include "SDL.h"
 
 int main(int argc, char* argv[]){
 
