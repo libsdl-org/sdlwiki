@@ -11,7 +11,7 @@ Use this function to perform a do-nothing seek to get the current offset in an S
 
 == Syntax ==
 ```c++
-long SDL_RWtell(struct SDL_RWops* context)
+Sint64 SDL_RWtell(struct SDL_RWops* context)
 ```
 
 ```{#!wiki comment
