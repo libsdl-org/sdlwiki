@@ -63,6 +63,18 @@ An enumeration of OpenGL configuration attributes.
 |-
 |SDL_GL_CONTEXT_MINOR_VERSION
 |OpenGL context minor version; see [[#OpenGL|Remarks]] for details
+|-
+|SDL_GL_CONTEXT_EGL
+|set to 1 to use EGL; default is platform-dependent
+|-
+|SDL_GL_CONTEXT_FLAGS
+|some combination of 0 or more of elements of the [[SDL_GLcontextFlag]] enumeration; defaults to 0
+|-
+|SDL_GL_CONTEXT_PROFILE_MASK
+|one of the members of the [[SDL_GLprofile]] enumeration or 0 to allow any profile; defaults to 0
+|-
+|SDL_GL_SHARE_WITH_CURRENT_CONTEXT
+|OpenGL context sharing; defaults to 0
 |}
 
 == Code Examples ==
