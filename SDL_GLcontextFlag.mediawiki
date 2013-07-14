@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+= SDL_GLcontextFlag =
+An enumeration of OpenGL context configuration flags.
+
+
+
+
+== Values ==
+{|
+|SDL_GL_CONTEXT_DEBUG_FLAG
+|enable debugging
+|-
+|SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG
+|forward compatible OpenGL context
+|-
+|SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG
+|(not sure what this does)
+|-
+|SDL_GL_CONTEXT_RESET_ISOLATION_FLAG
+|(not sure what this does)
+|}
+
+
+== Code Examples ==
+```c++
+SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
+```
+
+
+== Remarks ==
+This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_GLattr|SDL_GL_CONTEXT_FLAGS]].  Multiple flags can be OR'd together.
+
+
+== Related Enumerations ==
+:[[SDL_GLattr]] 
+
+== Related Functions ==
+:[[SDL_GL_GetAttribute]]
+:[[SDL_GL_SetAttribute]]
+
+----
+[[CategoryEnum]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
