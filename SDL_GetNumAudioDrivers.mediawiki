@@ -18,7 +18,7 @@ Returns the number of built in audio drivers.  <<Color2(green,Does this have an 
 int i;
 
 for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
-    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i);
+    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
 ```
 
