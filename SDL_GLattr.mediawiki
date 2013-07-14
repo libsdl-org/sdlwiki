@@ -19,8 +19,8 @@ An enumeration of OpenGL configuration attributes.
 |SDL_GL_ALPHA_SIZE
 |the minimum number of bits for the alpha channel of the color buffer; defaults to 0
 |-
-|SDL_GL_BUFFER_SIZE
-|defaults to 0
+|<rowstyle="color: #808080;">SDL_GL_BUFFER_SIZE
+|not used (deprecated)
 |-
 |SDL_GL_DOUBLEBUFFER
 |whether the output is single or double buffered; defaults to double buffering on
