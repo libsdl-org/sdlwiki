@@ -21,7 +21,16 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-You can add your code example here
+int i;
+
+for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
+    const char* driver_name = SDL_GetAudioDriver(i);
+    if (SDL_AudioInit(driver_name)) {
+        printf("Audio driver failed to initialize: %s\n", driver_name);
+        continue;
+    }
+    SDL_AudioQuit();
+}
 ```
 
 == Remarks ==
