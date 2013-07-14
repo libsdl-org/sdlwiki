@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_PauseAudio =
-Use this function to pause and unpause audio playback.
+Use this function to pause and unpause audio playback for the default audio device.
 
 
 == Syntax ==
@@ -24,7 +24,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function pauses and unpauses the audio callback processing. It should be called with '''pause_on'''=0 after opening the audio device to start playing sound. This is so you can safely initialize data for your callback function after opening the audio device. Silence will be written to the audio device during the pause.
+This function pauses and unpauses the audio callback processing for the default audio device. It should be called with '''pause_on'''=0 after opening the default audio device to start playing sound. This is so you can safely initialize data for your callback function after opening the audio device. Silence will be written to the audio device during the pause.
+
+Use [[SDL_PauseAudioDevice]] to pause a non-default audio device.  [[SDL_PauseAudio]]('''pause_on''') is equivalent to [[SDL_PauseAudioDevice]](1, '''pause_on''').
 
 == Related Functions ==
 :[[SDL_GetAudioStatus]] *
