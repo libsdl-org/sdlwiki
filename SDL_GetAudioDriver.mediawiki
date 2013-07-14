@@ -25,7 +25,7 @@ Returns the name of the audio driver at the requested index.
 int i;
 
 for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
-    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i);
+    printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
 ```
 == Remarks ==
