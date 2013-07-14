@@ -15,7 +15,13 @@ Returns the name of the current audio driver or NULL if no driver has been initi
 
 == Code Examples ==
 ```c++
-You can add your code example here
+const char* driver_name = SDL_GetCurrentAudioDriver();
+
+if ( driver_name ) {
+    printf("Audio subsystem initialized; driver = %s.\n", driver_name);
+} else {
+    printf("Audio subsystem not initialized.\n");
+}
 ```
 
 == Remarks ==
