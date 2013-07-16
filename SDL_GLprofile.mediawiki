@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
-= SDL_Enumeration =
+= SDL_GLprofile =
 An enumeration of OpenGL profiles.
 
 
