@@ -45,3 +45,5 @@ This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_G
 ----
 [[CategoryEnum]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+----
+CategoryVideo
