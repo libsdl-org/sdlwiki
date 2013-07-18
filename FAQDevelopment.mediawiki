@@ -8,7 +8,7 @@ SDL provides simple cross-platform functions for the creation of threads and syn
 No, most graphics back ends are not thread-safe, so you should only call SDL video functions from the main thread of your application.
 
 == Does SDL support 3D acceleration? ==
-Yes, SDL supports 3D acceleration: you can use the OpenGL API directly, for 2d and 3d graphics. Alternatively, you can use [[CategoryRender|SDL's 2d accelerated renderer api]] using SDL_Texture for pure 2d graphics, and you'll get additional Direct3D support on Windows (but it supports OpenGL too).
+Yes, SDL supports 3D acceleration: you can use the OpenGL API directly, for 2d and 3d graphics. Alternatively, you can use [[CategoryRender|SDL's 2d accelerated renderer api]] using SDL_Texture for pure 2d graphics, which uses either OpenGL or Direct3D for acceleration.
 
 == Does SDL support networking? ==
 Networking is outside of the scope of SDL, but due to popular demand a simple cross-platform sockets wrapper called "SDL_net" is available at the SDL libraries page. A simple chat client/server is included which makes use of an example GUI library as well.
