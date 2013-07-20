@@ -29,7 +29,7 @@ Returns a valid rendering context or NULL if there was an error; call [[SDL_GetE
 
 == Code Examples ==
 ```c++
-#include <SDL/SDL.h>
+#include "SDL.h"
 
 int main(int argc, char *argv[]) {
 	SDL_Window *win = NULL;
