@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 
   /* Before we can render anything, we need a window and a renderer */
   Main_Window = SDL_CreateWindow("SDL_RenderCopy Example",
-  SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 580, SDL_WINDOW_SHOWN);
+  SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 580, 0);
   Main_Renderer = SDL_CreateRenderer(Main_Window, -1, SDL_RENDERER_ACCELERATED);
 
   /* The loading of the background texture. Since SDL_LoadBMP returns
