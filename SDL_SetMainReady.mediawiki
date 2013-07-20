@@ -20,7 +20,7 @@ void SDL_SetMainReady(void)
 == Code Examples ==
 ```c++
 #define SDL_MAIN_HANDLED
-#include <SDL.h>
+#include "SDL.h"
 
 int main( void )
 {
