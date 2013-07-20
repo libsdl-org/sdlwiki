@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
         window = SDL_CreateWindow("SDL_RenderClear",
                         SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                         512, 512,
-                        SDL_WINDOW_SHOWN);
+                        0);
 
         // We must call SDL_CreateRenderer in order for draw calls to affect this window.
         renderer = SDL_CreateRenderer(window, -1, 0);
