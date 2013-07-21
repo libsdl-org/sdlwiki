@@ -18,7 +18,6 @@ You can add your code example here
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
 :[[SDL_DestroyTexture]]
-:[[SDL_DirtyTexture]]
 :[[SDL_GetTextureAlphaMod]]
 :[[SDL_GetTextureBlendMode]]
 :[[SDL_GetTextureColorMod]]
