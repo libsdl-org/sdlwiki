@@ -27,7 +27,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 * Hardware accelerated blit and fill operations are used if supported by the hardware
 * Window Management
 * Rendering
-* OpenGL api support for 3d games and engines
+* OpenGL API support for 3D games and engines
 
 '''''Input Events'''''
 
