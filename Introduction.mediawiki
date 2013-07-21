@@ -64,6 +64,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 '''''Threads'''''
 
 * Simple thread creation API
+* Simple thread local storage API
 * Simple binary semaphores for synchronization
 
 '''''Timers'''''
