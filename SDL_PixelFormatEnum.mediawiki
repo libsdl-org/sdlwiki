@@ -259,7 +259,6 @@ You can add your code example here
 :[[SDL_PixelFormatEnumToMasks]]
 :[[SDL_QueryTexture]]
 :[[SDL_RenderReadPixels]]
-:[[SDL_RenderWritePixels]]
 
 ----
 [[CategoryEnum]], [[CategoryPixels]]
