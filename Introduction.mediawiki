@@ -43,7 +43,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 
 ''''' Force Feedback'''''
 
-* Force feedback is supported under Windows, Mac OSX and Linux
+* Force feedback is supported under Windows, Mac OS X and Linux
 
 '''''Audio'''''
 
@@ -58,7 +58,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 
 '''''Shared Object Support'''''
 
-* Load shared objects (DLL on Windows, .dylib on Mac OSX, .so on Linux)
+* Load shared objects (DLL on Windows, .dylib on Mac OS X, .so on Linux)
 * Lookup functions in shared objects
 
 '''''Threads'''''
