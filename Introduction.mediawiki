@@ -1,6 +1,5 @@
 <!-- pragma section-numbers 2 -->
 <!-- pragma camelcase off -->
-<!-- acl All:read -->
 
 = Introduction to SDL 2.0 =
 
