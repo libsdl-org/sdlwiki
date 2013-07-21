@@ -39,7 +39,7 @@ You can add your code example here
 
 == Related Functions ==
 : [[SDL_AllocPalette]]
-: [[SDL_CreateSurface|SDL_CreateRGBSurface]]
+: [[SDL_CreateRGBSurface|SDL_CreateRGBSurface]]
 
 ----
 [[CategoryAPI]], CategoryPixels
