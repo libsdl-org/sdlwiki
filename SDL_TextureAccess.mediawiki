@@ -24,7 +24,6 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
-:[[SDL_DirtyTexture]]
 :[[SDL_LockTexture]]
 :[[SDL_QueryTexture]]
 :[[SDL_QueryTexturePixels]]
