@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-
 = SDL_SetPaletteColors =
 Use this function to set a range of colors in a palette.
 
@@ -9,24 +8,24 @@ Use this function to set a range of colors in a palette.
 ```c++
 int SDL_SetPaletteColors(SDL_Palette*     palette,
                          const SDL_Color* colors,
-                         int              firstcolor, 
+                         int              firstcolor,
                          int              ncolors)
 ```
-
 == Function Parameters ==
 {|
-|'''palette'''
-|the [[SDL_Palette]] structure to modify
+|'''palette''' 
+|the [[SDL_Palette]] structure to modify 
 |-
-|'''colors'''
-|an array of [[SDL_Color]] structures to copy into the palette
+|'''colors''' 
+|an array of [[SDL_Color]] structures to copy into the palette 
 |-
-|'''firstcolor'''
-|the index of the first palette entry to modify
+|'''firstcolor''' 
+|the index of the first palette entry to modify 
 |-
-|'''ncolors'''
-|the number of entries to modify
+|'''ncolors''' 
+|the number of entries to modify 
 |}
+
 
 == Return Value ==
 Returns 0 on success or a negative error code if not all of the colors could be set; call [[SDL_GetError]]() for more information.
@@ -35,13 +34,12 @@ Returns 0 on success or a negative error code if not all of the colors could be 
 ```c++
 You can add your code example here
 ```
-
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_AllocPalette]]
-:[[SDL_CreateSurface]]
+: [[SDL_AllocPalette]]
+: [[SDL_CreateSurface|SDL_CreateRGBSurface]]
 
 ----
-[[CategoryAPI]], [[CategoryPixels]]
+[[CategoryAPI]], CategoryPixels
