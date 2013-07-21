@@ -34,7 +34,6 @@ An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_B
 
 == Related Functions ==
 :[[SDL_BlitSurface]] 
-:[[SDL_DirtyTexture]]
 :[[SDL_EnclosePoints]]
 :[[SDL_GetDisplayBounds]]
 :[[SDL_HasIntersection]]
@@ -44,7 +43,6 @@ An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_B
 :[[SDL_RenderReadPixels]]
 :[[SDL_RenderDrawRect]]
 :[[SDL_RenderDrawRects]]
-:[[SDL_RenderWritePixels]]
 :[[SDL_UnionRect]]
 :[[SDL_UpdateTexture]]
 
