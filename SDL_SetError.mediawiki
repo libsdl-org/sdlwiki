@@ -1,30 +1,27 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-
 = SDL_SetError =
 Use this function to set the SDL error string.
 
 
 == Syntax ==
 ```c++
-void SDL_SetError(const char* fmt, 
-                  ...)
+void SDL_SetError(const char* fmt, ...)
 ```
-
 == Function Parameters ==
 {|
-|'''fmt'''
-|a printf() style message format string
+|'''fmt''' 
+|a printf() style message format string 
 |-
-|'''...'''
-|additional parameters matching % tokens in the '''fmt''' string, if any
+|'''...''' 
+|additional parameters matching % tokens in the '''fmt''' string, if any 
 |}
+
 
 == Code Examples ==
 ```c++
 SDL_SetError("Something unexpected happened!");
 ```
-
 ```c++
 int errorCode = 0;
 ...
@@ -33,13 +30,12 @@ errorCode = -37;
 if (errorCode < 0)
     SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
 ```
-
 == Remarks ==
 Calling this function will replace any previous error message that was set.
 
 == Related Functions ==
-:[[SDL_ClearError]]
-:[[SDL_GetError]]
+: [[SDL_ClearError]]
+: [[SDL_GetError]]
 
 ----
-[[CategoryAPI]], [[CategoryError]]
+[[CategoryAPI]], CategoryError
