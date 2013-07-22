@@ -3,23 +3,23 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_JoystickOpened =
-Use this function to ^get the status of a specified joystick^.
+= SDL_JoystickGetAttached =
+Use this function to get the status of a specified joystick.
 
 
 == Syntax ==
 ```c++
-int SDL_JoystickOpened(int device_index)
+SDL_bool SDL_JoystickGetAttached(SDL_Joystick* joystick)
 ```
 
 == Function Parameters ==
 {|
-|'''device_index'''
-|^the index of the joystick to query^ / *the N'th joystick on the system*
+|'''joystick'''
+|the joystick to query
 |}
 
 == Return Value ==
-Returns 1 if the joystick has been opened, 0 if it has not, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns SDL_TRUE if the joystick has been opened, SDL_FALSE if it has not; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
