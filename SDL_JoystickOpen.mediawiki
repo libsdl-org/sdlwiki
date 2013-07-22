@@ -44,7 +44,7 @@ if(SDL_NumJoysticks()>0){
     printf("Couldn't open Joystick 0\n");
   
   // Close if opened
-  if(SDL_JoystickOpened(0))
+  if(SDL_JoystickGetAttached(joy))
     SDL_JoystickClose(joy);
 }
 ```
