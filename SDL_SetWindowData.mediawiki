@@ -8,8 +8,8 @@ Use this function to associate an arbitrary named pointer with a window.
 == Syntax ==
 ```c++
 void* SDL_SetWindowData(SDL_Window* window,
-                       const char* name,
-                       void*       userdata)
+                        const char* name,
+                        void*       userdata)
 ```
 
 == Function Parameters ==
