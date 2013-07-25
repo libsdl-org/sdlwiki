@@ -31,8 +31,8 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 * Accelerated 2d render api:
 * Supports easy rotation, scaling and alpha blending, all accelerated using modern 3d apis
 * Acceleration is supported using OpenGL or Direct3D, and there is a software fallback
-* OpenGL 3d
-* 3d graphics with the OpenGL api
+* 3d graphics:
+* SDL can be used in combination with the OpenGL api or Direct3D api for 3d graphics
 * Window Management
 
 '''''Input Events'''''
