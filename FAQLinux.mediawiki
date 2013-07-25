@@ -11,19 +11,23 @@ The short answer is use the output of the command "sdl-config --cflags --libs" f
 
 If you are using home-grown Makefiles for your project, you can get the proper CFLAGS and LDFLAGS for SDL by adding the following lines to your Makefile:
 
+```bash
 SDL_CFLAGS := $(shell sdl-config --cflags)
 SDL_LDFLAGS := $(shell sdl-config --libs)
+```
 
 If you are using autoconf and automake for your project, you can copy the contents of 'sdl.m4' into your acinclude.m4 file, and then add the following to your configure.in file:
 
-dnl Check for SDL
-SDL_VERSION=1.2.0
-AM_PATH_SDL($SDL_VERSION,
+```m4
+  dnl Check for SDL
+  SDL_VERSION=1.2.0
+  AM_PATH_SDL($SDL_VERSION,
             :,
             AC_MSG_ERROR([*** SDL version $SDL_VERSION not found!])
-)
-CFLAGS="$CFLAGS $SDL_CFLAGS"
-LIBS="$LIBS $SDL_LIBS"
+  )
+  CFLAGS="$CFLAGS $SDL_CFLAGS"
+  LIBS="$LIBS $SDL_LIBS"
+```
 
 == I installed the SDL RPM, but can't compile SDL applications ==
 You need to install the SDL-devel RPM, available from: http://www.libsdl.org/download.php
@@ -40,7 +44,9 @@ As root, run /sbin/ldconfig
 
 Make sure /usr/local/bin is in your execution path:
 
-        export PATH=$PATH:/usr/local/bin/
+```bash
+export PATH=$PATH:/usr/local/bin/
+```
 
 Make sure that there aren't any other versions of SDL on your system, and that you have removed any file named "config.cache" from the directory of the software that refuses to build.
 
