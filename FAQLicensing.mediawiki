@@ -2,16 +2,28 @@
 
 
 == What license does SDL use? ==
-SDL 1.2 is freely available under the GNU LGPL license, and may be used in both free and commercial applications.
+SDL 2.0 is freely available under the terms of the zlib license, and SDL 1.2 is freely available under the GNU LGPL license.
+
+Both may be used in both free and commercial applications.
+
+You can read the detailed license text at http://www.libsdl.org/license.php
 
 == Can I use SDL in a commercial application? ==
 Yes!
-If you link dynamically (via .dll's, .so's or using other dynamic linking devices) then you do not need to do anything.
-If you link statically (include the SDL source inside your project when you compile) you have to provide some way for your customer to relink your application with a custom version of SDL.
+
+SDL 2.0 can be freely embedded either as static library or as linked .dll (or .so or other sorts of dynamic libraries).
+
+For SDL 1.2, the GNU LGPL license requires you to adhere to this additional restriction:
+
+* If you link dynamically (via .dll's, .so's or using other dynamic linking devices) then you do not need to do anything.
+
+* If you link statically (include the SDL source inside your project when you compile) you have to provide some way for your customer to relink your application with a custom version of SDL.
+
 The details are available at: http://www.libsdl.org/license.php
 
 == Can I use SDL in an embedded application? ==
-Yes!
+Yes! However, for SDL 1.2 you will either need to publish the source code of your program if you're statically linking, or provide tools and object files required to link against another version of SDL.
+
 The details are available at: http://www.libsdl.org/license.php
 
 == If I use SDL, do I owe any licensing fees or royalties? ==
