@@ -18,6 +18,8 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 
 
 === What can SDL do? ===
+Read ahead for an overview of what SDL is capable off. If you're simply interested in the changes from 1.2 to 2.0, check out the [[Migration Guide]].
+
 ''''' Video'''''
 
 * Set a video mode at any depth (8-bpp or greater) with optional conversion, if the video mode is not supported by the hardware
@@ -118,13 +120,9 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 * Uses JNI interfaces for video display, taking advantage of OpenGL ES 1.1 and 2.0 for hardware acceleration
 * Uses JNI audio callbacks for sound
 
-== Special features in SDL 2.0 ==
-* Full 3D hardware acceleration
-* Support for OpenGL 3.0+
-* Support for multiple windows
-* Support for multiple displays
-* Support for multiple mice, tablets, etc.
-* Force Feedback available on Windows, Mac OS X and Linux
+== Transitioning from SDL 1.2 to 2.0 ==
+If you used SDL 1.2 previously and you want to use SDL 2.0, please note there are some API changes and some of your code will need to be adapted.
 
-=== Transitioning from SDL 1.2 to 2.0 ===
-* [http://wiki.libsdl.org/moin.cgi/MigrationGuide Migration Guide]
+The migration guide lists the feature differences and how to adapt old code to the new SDL 2.0:
+
+* [[Migration Guide]]
