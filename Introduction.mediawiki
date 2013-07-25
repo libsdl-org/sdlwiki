@@ -18,7 +18,7 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 
 
 === What can SDL do? ===
-Read ahead for an overview of what SDL is capable off. If you're simply interested in the changes from 1.2 to 2.0, check out the [[Migration Guide]].
+Read ahead for an overview of what SDL is capable of. If you're simply interested in the changes from 1.2 to 2.0, check out the [[Migration Guide]].
 
 ''''' Video'''''
 
