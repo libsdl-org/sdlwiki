@@ -28,7 +28,7 @@ The details are available at: http://www.libsdl.org/license.php
 
 == If I use SDL, do I owe any licensing fees or royalties? ==
 No!
-You may use SDL completely free of charge. If you would like to donate, you may do so via PayPal to <<MailTo(ANTI SPAM slouken AT libsdl DOT org)>>.
+You may use SDL completely free of charge.
 
 == Can I use code from the test directory? From the examples? ==
 Yes, code from the test directory and from the examples in the documentation is placed in the public domain. Anyone can use it for any purpose.
