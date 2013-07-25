@@ -21,13 +21,17 @@ SDL 2.0 is under the [http://www.zlib.net/zlib_license.html zlib] license, which
 ''''' Video'''''
 
 * Set a video mode at any depth (8-bpp or greater) with optional conversion, if the video mode is not supported by the hardware
+* Software surface blitting:
 * Write directly to a linear graphics framebuffer
 * Create surfaces with color key or alpha blending attributes
 * Surface blits are automatically converted to the target format using optimized blitters and are hardware accelerated, when possible. MMX optimized blits are available for the x86
 * Hardware accelerated blit and fill operations are used if supported by the hardware
+* Accelerated 2d render api:
+* Supports easy rotation, scaling and alpha blending, all accelerated using modern 3d apis
+* Acceleration is supported using OpenGL or Direct3D, and there is a software fallback
+* OpenGL 3d
+* 3d graphics with the OpenGL api
 * Window Management
-* Rendering
-* OpenGL API support for 3D games and engines
 
 '''''Input Events'''''
 
