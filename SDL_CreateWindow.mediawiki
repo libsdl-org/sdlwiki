@@ -87,25 +87,34 @@ int main(int argc, char* argv[]){
 ```
 
 == Remarks ==
-<span id="flags"></span> '''flags''' may be a mask of any of the following: 
+<span id="flags"></span> '''flags''' may be any of the following OR'd together:
 {|
 |SDL_WINDOW_FULLSCREEN
+|fullscreen window
 |-
 |SDL_WINDOW_FULLSCREEN_DESKTOP
+|fullscreen window at the current desktop resolution
 |-
 |SDL_WINDOW_OPENGL
+|window usable with OpenGL context
 |-
 |SDL_WINDOW_HIDDEN
+|window is not visible
 |-
 |SDL_WINDOW_BORDERLESS
+|no window decoration
 |-
 |SDL_WINDOW_RESIZABLE
-|-
-|SDL_WINDOW_MAXIMIZED
+|window can be resized
 |-
 |SDL_WINDOW_MINIMIZED
+|window is minimized
+|-
+|SDL_WINDOW_MAXIMIZED
+|window is maximized
 |-
 |SDL_WINDOW_INPUT_GRABBED
+|window has grabbed input focus
 |}
 
 == Related Functions ==
