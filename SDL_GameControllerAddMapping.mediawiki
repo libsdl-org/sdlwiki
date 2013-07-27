@@ -57,4 +57,3 @@ This string shows an example of a valid mapping for a controller:
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
