@@ -22,7 +22,7 @@ All of these may be drawn in opaque, blended, or additive modes.
 
 The texture images can have an additional color tint or alpha modulation applied to them, and may also be stretched with linear interpolation, rotated or flipped/mirrored.
 
-For advanced functionality like particle effects or actual 3d you should use SDL's OpenGL/Direct3D support or one of the many good 3D engines.
+For advanced functionality like particle effects or actual 3D you should use SDL's OpenGL/Direct3D support or one of the many good 3D engines.
 
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryRender -title:SGEnumerations)>>
