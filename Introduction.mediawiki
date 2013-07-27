@@ -28,11 +28,11 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 * Create surfaces with color key or alpha blending attributes
 * Surface blits are automatically converted to the target format using optimized blitters and are hardware accelerated, when possible. MMX optimized blits are available for the x86
 * Hardware accelerated blit and fill operations are used if supported by the hardware
-* Accelerated 2d render api:
-* Supports easy rotation, scaling and alpha blending, all accelerated using modern 3d apis
+* Accelerated 2D render API:
+* Supports easy rotation, scaling and alpha blending, all accelerated using modern 3D APIs
 * Acceleration is supported using OpenGL or Direct3D, and there is a software fallback
-* 3d graphics:
-* SDL can be used in combination with the OpenGL api or Direct3D api for 3d graphics
+* 3D graphics:
+* SDL can be used in combination with the OpenGL API or Direct3D API for 3D graphics
 * Window Management
 
 '''''Input Events'''''
