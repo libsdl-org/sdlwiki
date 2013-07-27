@@ -20,7 +20,7 @@
 
 == Functions ==
 
-<<FullSearchCached(category:CategoryAPI -SDLFunctionTemplate)>>
+<<FullSearchCached(category:CategoryAPI -SDLFunctionTemplate -title:SGFunctions)>>
 
 ----
 CategoryCategory
