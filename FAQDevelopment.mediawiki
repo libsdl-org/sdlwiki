@@ -9,7 +9,7 @@ No, most graphics back ends are not thread-safe, so you should only call SDL vid
 
 == Does SDL support 3D acceleration? ==
 Yes, SDL supports 3D acceleration:
-* You can use the OpenGL api or the Direct3D api in combination with SDL, for 2D and 3D graphics.
+* You can use the OpenGL API or the Direct3D API in combination with SDL, for 2D and 3D graphics.
 * Alternatively, you can use [[CategoryRender|SDL's 2D accelerated render API]] using [[SDL_Texture]] for pure 2D graphics which itself uses either OpenGL or Direct3D for acceleration (but it is easier to use than OpenGL/Direct3D directly and you get support for both for free).
 
 == Does SDL support networking? ==
