@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticNewEffect =
-Use this function to create a new haptic effect on ,,the,, ^a specified^ device.
+Use this function to create a new haptic effect on a specified device.
 
 
 == Syntax ==
@@ -15,10 +15,10 @@ int SDL_HapticNewEffect(SDL_Haptic*       haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to create the effect on
+|an SDL_Haptic device to create the effect on
 |-
 |'''effect'''
-|^the [[SDL_HapticEffect]] structure containing the^ properties of the effect to create
+|an [[SDL_HapticEffect]] structure containing the properties of the effect to create
 |}
 
 == Return Value ==
