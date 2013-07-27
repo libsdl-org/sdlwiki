@@ -56,7 +56,7 @@ This string shows an example of a valid mapping for a controller:
 :[[SDL_GameControllerMapping]]
 
 ----
-[[CategoryAPI]], [[CategoryHeader]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 ----
 CategoryGameController
