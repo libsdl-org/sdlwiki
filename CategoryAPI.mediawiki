@@ -12,11 +12,11 @@
 
 == Enumerations ==
 
-<<FullSearchCached(category:CategoryEnum -SDLEnumTemplate -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum -SDLEnumTemplate -title:SGEnumerations)>>
 
 == Structures ==
 
-<<FullSearchCached(category:CategoryStruct -SDLStructTemplate -SGStructures)>>
+<<FullSearchCached(category:CategoryStruct -SDLStructTemplate -title:SGStructures)>>
 
 == Functions ==
 
