@@ -24,6 +24,8 @@ The texture images can have an additional color tint or alpha modulation applied
 
 For advanced functionality like particle effects or actual 3D you should use SDL's OpenGL/Direct3D support or one of the many available 3D engines.
 
+This API is not designed to be used from multiple threads, see [http://bugzilla.libsdl.org/show_bug.cgi?id=1995 this bug] for details.
+
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryRender -title:SGEnumerations)>>
 
