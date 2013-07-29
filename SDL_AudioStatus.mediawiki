@@ -2,21 +2,47 @@
 <!-- pragma camelcase off -->
 
 = SDL_AudioStatus =
-An enumeration of audio device states.
+An enumeration of audio device states. Opened devices are always PLAYING or PAUSED in normal circumstances.
 
 
 == Values ==
 {|
 |SDL_AUDIO_STOPPED
+|Audio device is stopped
 |-
 |SDL_AUDIO_PLAYING
+|Audio device is playing
 |-
 |SDL_AUDIO_PAUSED
+|Audio device is paused
 |}
 
 == Code Examples ==
 ```c++
-You can add your code example here
+void printStatus(SDL_AudioDeviceID dev)
+{
+    switch (SDL_GetAudioDeviceStatus(dev))
+    {
+        case SDL_AUDIO_STOPPED: printf("stopped\n"); break;
+        case SDL_AUDIO_PLAYING: printf("playing\n"); break;
+        case SDL_AUDIO_PAUSED: printf("paused\n"); break;
+        default: printf("???"); break;
+    }
+}
+
+// device starts paused
+SDL_AudioDeviceID dev;
+dev = SDL_OpenAudioDevice(NULL, 0, &desired, &obtained, 0);  
+if (dev != 0)
+{
+     printStatus(dev);  // prints "paused"
+     SDL_PauseAudioDevice(dev, 0);
+     printStatus(dev);  // prints "playing"
+     SDL_PauseAudioDevice(dev, 1);
+     printStatus(dev);  // prints "paused"
+     SDL_CloseAudioDevice(dev);
+     printStatus(dev);  // prints "stopped"
+}
 ```
 
 == Remarks ==
