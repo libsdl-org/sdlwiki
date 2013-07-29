@@ -16,9 +16,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-This function will clear the list of all assertions triggered up to that point.
+This function will clear the list of all assertions triggered up to that point. Immediately following this call, [[SDL_GetAssertionReport]] will return no items. In addition, any previously-triggered assertions will be reset to a trigger_count of zero, and their always_ignore state will be false.
 
 == Related Functions ==
 :[[SDL_GetAssertionReport]]
