@@ -21,22 +21,22 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''Android and iOS events; see [[#Android and iOS Events|Remarks]] for details''
 |-
 |SDL_APP_TERMINATING
-|
+|OS is terminating the application
 |-
 |SDL_APP_LOWMEMORY
-|
+|OS is low on memory; free some
 |-
 |SDL_APP_WILLENTERBACKGROUND
-|
+|Application is entering background
 |-
 |SDL_APP_DIDENTERBACKGROUND
-|
+|Application entered background
 |-
 |SDL_APP_WILLENTERFOREGROUND
-|
+|Application is entering foreground
 |-
 |SDL_APP_DIDENTERFOREGROUND
-|
+|Application entered foreground
 |-
 |
 |<bgcolor="#EDEDED">''Window events''
