@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_FreeCursor =
-Use this function to free a cursor created with [[SDL_CreateCursor]]().
+Use this function to free a cursor created with [[SDL_CreateCursor]]() and [[SDL_CreateColorCursor]]().
 
 
 == Syntax ==
@@ -27,6 +27,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_CreateCursor]]
+:[[SDL_CreateColorCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
