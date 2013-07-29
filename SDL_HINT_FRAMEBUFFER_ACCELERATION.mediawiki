@@ -14,7 +14,7 @@ A hint that specifies how 3D acceleration is used with [[SDL_GetWindowSurface]](
 |enable 3D acceleration, using the default renderer
 |-
 |X
-|enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.
+|enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.)
 |}
 
 == Default ==
