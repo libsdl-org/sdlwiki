@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_AudioStatus =
-An enumeration of audio device states. Opened devices are always PLAYING or PAUSED in normal circumstances.
+An enumeration of audio device states.
 
 
 == Values ==
@@ -46,7 +46,7 @@ if (dev != 0)
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Opened devices are always PLAYING or PAUSED in normal circumstances. A failing device may change its status to STOPPED at any time, and closing a device will progress to STOPPED, too. Asking for the state on an unopened device ID will report STOPPED.
 
 == Related Functions ==
 :[[SDL_GetAudioDeviceStatus]]
