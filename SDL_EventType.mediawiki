@@ -126,21 +126,21 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''Touch events''
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERDOWN]]
-|
+|User has touched input device
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERUP]]
-|
+|User stopped touching input device
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERMOTION]]
-|
+|User is dragging finger on input device
 |-
 |
 |<bgcolor="#EDEDED">''Gesture events''
 |-
-|[[SDL_MultiGestureEvent|SDL_DOLLARGESTURE]]
+|[[SDL_DollarGestureEvent|SDL_DOLLARGESTURE]]
 |
 |-
-|[[SDL_MultiGestureEvent|SDL_DOLLARRECORD]]
+|[[SDL_DollarGestureEvent|SDL_DOLLARRECORD]]
 |
 |-
 |[[SDL_MultiGestureEvent|SDL_MULTIGESTURE]]
