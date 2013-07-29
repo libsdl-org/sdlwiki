@@ -41,109 +41,109 @@ An enumeration of the types of events that can be delivered.
 |
 |<bgcolor="#EDEDED">''Window events''
 |-
-|SDL_WINDOWEVENT
+|[[SDL_WindowEvent|SDL_WINDOWEVENT]]
 |window state change
 |-
-|SDL_SYSWMEVENT
+|[[SDL_SysWMEvent|SDL_SYSWMEVENT]]
 |system specific event
 |-
 |
 |<bgcolor="#EDEDED">''Keyboard events''
 |-
-|SDL_KEYDOWN
+|[[SDL_KeyEvent|SDL_KEYDOWN]]
 |key pressed
 |-
-|SDL_KEYUP
+|[[SDL_KeyEvent|SDL_KEYUP]]
 |key released
 |-
-|SDL_TEXTEDITING
+|[[SDL_TextEditingEvent|SDL_TEXTEDITING]]
 |keyboard text editing (composition)
 |-
-|SDL_TEXTINPUT
+|[[SDL_TextInputEvent|SDL_TEXTINPUT]]
 |keyboard text input
 |-
 |
 |<bgcolor="#EDEDED">''Mouse events''
 |-
-|SDL_MOUSEMOTION
+|[[SDL_MouseMotionEvent|SDL_MOUSEMOTION]]
 |mouse moved
 |-
-|SDL_MOUSEBUTTONDOWN
+|[[SDL_MouseButtonEvent|SDL_MOUSEBUTTONDOWN]]
 |mouse button pressed
 |-
-|SDL_MOUSEBUTTONUP
+|[[SDL_MouseButtonEvent|SDL_MOUSEBUTTONUP]]
 |mouse button released
 |-
-|SDL_MOUSEWHEEL
+|[[SDL_MouseWheelEvent|SDL_MOUSEWHEEL]]
 |mouse wheel motion
 |-
 |
 |<bgcolor="#EDEDED">''Joystick events''
 |-
-|SDL_JOYAXISMOTION
+|[[SDL_JoyAxisEvent|SDL_JOYAXISMOTION]]
 |joystick axis motion
 |-
-|SDL_JOYBALLMOTION
+|[[SDL_JoyBallEvent|SDL_JOYBALLMOTION]]
 |joystick trackball motion
 |-
-|SDL_JOYHATMOTION
+|[[SDL_JoyHatEvent|SDL_JOYHATMOTION]]
 |joystick hat position change
 |-
-|SDL_JOYBUTTONDOWN
+|[[SDL_JoyButtonEvent|SDL_JOYBUTTONDOWN]]
 |joystick button pressed
 |-
-|SDL_JOYBUTTONUP
+|[[SDL_JoyButtonEvent|SDL_JOYBUTTONUP]]
 |joystick button released
 |-
-|SDL_JOYDEVICEADDED
+|[[SDL_JoyDeviceEvent|SDL_JOYDEVICEADDED]]
 |joystick connected
 |-
-|SDL_JOYDEVICEREMOVED
+|[[SDL_JoyDeviceEvent|SDL_JOYDEVICEREMOVED]]
 |joystick disconnected
 |-
 |
 |<bgcolor="#EDEDED">''Controller events''
 |-
-|SDL_CONTROLLERAXISMOTION
+|[[SDL_ControllerAxisEvent|SDL_CONTROLLERAXISMOTION]]
 |controller axis motion
 |-
-|SDL_CONTROLLERBUTTONDOWN
+|[[SDL_ControllerButtonEvent|SDL_CONTROLLERBUTTONDOWN]]
 |controller button pressed
 |-
-|SDL_CONTROLLERBUTTONUP
+|[[SDL_ControllerButtonEvent|SDL_CONTROLLERBUTTONUP]]
 |controller button released
 |-
-|SDL_CONTROLLERDEVICEADDED
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEADDED]]
 |controller connected
 |-
-|SDL_CONTROLLERDEVICEREMOVED
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEREMOVED]]
 |controller disconnected
 |-
-|SDL_CONTROLLERDEVICEREMAPPED
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEREMAPPED]]
 |controller mapping updated
 |-
 |
 |<bgcolor="#EDEDED">''Touch events''
 |-
-|SDL_FINGERDOWN
+|[[SDL_TouchFingerEvent|SDL_FINGERDOWN]]
 |
 |-
-|SDL_FINGERUP
+|[[SDL_TouchFingerEvent|SDL_FINGERUP]]
 |
 |-
-|SDL_FINGERMOTION
+|[[SDL_TouchFingerEvent|SDL_FINGERMOTION]]
 |
 |-
 |
 |<bgcolor="#EDEDED">''Gesture events''
 |-
-|SDL_DOLLARGESTURE
+|[[SDL_MultiGestureEvent|SDL_DOLLARGESTURE]]
 |
 |-
-|SDL_DOLLARRECORD
+|[[SDL_MultiGestureEvent|SDL_DOLLARRECORD]]
 |
 |-
-|SDL_MULTIGESTURE
+|[[SDL_MultiGestureEvent|SDL_MULTIGESTURE]]
 |
 |-
 |
@@ -155,7 +155,7 @@ An enumeration of the types of events that can be delivered.
 |
 |<bgcolor="#EDEDED">''Drag and drop events''
 |-
-|SDL_DROPFILE
+|[[SDL_DropEvent|SDL_DROPFILE]]
 |the system requests a file open
 |-
 |
@@ -228,6 +228,10 @@ This is how these events currently map to the underlying OS:
 : [[SDL_JoyBallEvent]]
 : [[SDL_JoyButtonEvent]]
 : [[SDL_JoyHatEvent]]
+: [[SDL_JoyDeviceEvent]]
+: [[SDL_ControllerAxisEvent]]
+: [[SDL_ControllerButtonEvent]]
+: [[SDL_ControllerDeviceEvent]]
 : [[SDL_KeyboardEvent]]
 : [[SDL_MouseButtonEvent]]
 : [[SDL_MouseMotionEvent]]
@@ -238,6 +242,11 @@ This is how these events currently map to the underlying OS:
 : [[SDL_TextInputEvent]]
 : [[SDL_UserEvent]]
 : [[SDL_WindowEvent]]
+: [[SDL_DropEvent]]
+: [[SDL_TouchFingerEvent]]
+: [[SDL_DollarGestureEvent]]
+: [[SDL_MultiGestureEvent]]
+
 
 == Related Functions ==
 
