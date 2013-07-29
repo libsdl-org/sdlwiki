@@ -12,7 +12,10 @@ void SDL_ResetAssertionReport(void)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_assert(1+1 == 3);  // trigger an assertion.
+printf("%p\n", SDL_GetAssertionReport());  // not NULL.
+SDL_ResetAssertionReport();
+printf("%p\n", SDL_GetAssertionReport());  // NULL.
 ```
 
 == Remarks ==
