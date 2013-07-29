@@ -11,7 +11,9 @@
 == Introduction ==
 This category contains functions for managing assertions.
 
-SDL_ASSERT_LEVEL affects which assertions, if any, are processed during compiling based on which function was used to create the assertion (see functions below).  
+A fairly detailed discussion of the features of SDL_assert vs the standard assert() macro, and some technical explanation about how this is implemented can be found [https://plus.google.com/103391075724026391227/posts/KzV6sLdALX7 in this Google+ post from Ryan].
+
+SDL_ASSERT_LEVEL affects which assertions, if any, are processed during compiling based on which function was used to create the assertion (see functions below).
 
 SDL_ASSERT_LEVEL can be defined in your project.  If not otherwise set, SDL_ASSERT_LEVEL will default to level 2 for debug builds or level 1 for release builds.  
 
