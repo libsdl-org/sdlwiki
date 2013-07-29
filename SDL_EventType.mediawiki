@@ -50,10 +50,10 @@ An enumeration of the types of events that can be delivered.
 |
 |<bgcolor="#EDEDED">''Keyboard events''
 |-
-|[[SDL_KeyEvent|SDL_KEYDOWN]]
+|[[SDL_KeyboardEvent|SDL_KEYDOWN]]
 |key pressed
 |-
-|[[SDL_KeyEvent|SDL_KEYUP]]
+|[[SDL_KeyboardEvent|SDL_KEYUP]]
 |key released
 |-
 |[[SDL_TextEditingEvent|SDL_TEXTEDITING]]
