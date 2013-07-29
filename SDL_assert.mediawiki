@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_assert =
-Use this function to create an assertion for debugging.
+Use this macro to create an assertion for debugging.
 
 
 == Syntax ==
@@ -18,7 +18,8 @@ void SDL_assert(condition)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_assert(1 == 0);  // triggers an assertion.
+SDL_assert(1 == 1);  // does NOT trigger an assertion.
 ```
 
 == Remarks ==
