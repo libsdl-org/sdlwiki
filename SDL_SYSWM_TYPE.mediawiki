@@ -21,10 +21,10 @@ An enumeration of the various supported windowing subsystems.
 |[http://www.directfb.org DirectFB]
 |-
 |SDL_SYSWM_COCOA
-|Apple OS X
+|Apple Mac OS X
 |-
 |SDL_SYSWM_UIKIT
-|
+|Apple iOS
 |}
 
 == Code Examples ==
