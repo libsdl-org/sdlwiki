@@ -12,16 +12,16 @@ An enumeration of OpenGL context configuration flags.
 == Values ==
 {|
 |SDL_GL_CONTEXT_DEBUG_FLAG
-|enable debugging
+|see [[#SDL_GL_CONTEXT_DEBUG_FLAG|Remarks]]
 |-
 |SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG
-|forward compatible OpenGL context
+|see [[#SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG|Remarks]]
 |-
 |SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG
-|(not sure what this does)
+|see [[#SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG|Remarks]]
 |-
 |SDL_GL_CONTEXT_RESET_ISOLATION_FLAG
-|(not sure what this does)
+|see [[#SDL_GL_CONTEXT_RESET_ISOLATION_FLAG|Remarks]]
 |}
 
 
@@ -34,6 +34,23 @@ SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
 == Remarks ==
 This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_GLattr|SDL_GL_CONTEXT_FLAGS]].  Multiple flags can be OR'd together.
 
+=== SDL_GL_CONTEXT_DEBUG_FLAG ===
+
+This flag maps to GLX_CONTEXT_DEBUG_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_create_context.txt GLX_ARB_create_context] extension for X11 and WGL_CONTEXT_DEBUG_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt WGL_ARB_create_context] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality.
+
+=== SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG ===
+
+This flag maps to GLX_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_create_context.txt GLX_ARB_create_context] extension for X11 and WGL_CONTEXT_FORWARD_COMPATIBLE_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt WGL_ARB_create_context] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality.
+
+
+=== SDL_GL_CONTEXT_ROBUST_ACCESS_FLAG ===
+
+This flag maps to GLX_CONTEXT_ROBUST_ACCESS_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_create_context_robustness.txt GLX_ARB_create_context_robustness] extension for X11 and WGL_CONTEXT_ROBUST_ACCESS_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_create_context_robustness.txt WGL_ARB_create_context_robustness] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality.
+
+
+=== SDL_GL_CONTEXT_RESET_ISOLATION_FLAG ===
+
+This flag maps to GLX_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_robustness_isolation.txt GLX_ARB_robustness_isolation] extension for X11 and WGL_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_robustness_isolation.txt WGL_ARB_create_context_robustness] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality.
 
 == Related Enumerations ==
 :[[SDL_GLattr]] 
