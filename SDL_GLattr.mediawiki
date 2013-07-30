@@ -79,11 +79,18 @@ An enumeration of OpenGL configuration attributes.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
+SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
+SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
+SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
+SDL_GL_SetAttribute(SDL_DOUBLEBUFFER, 1);
+SDL_GL_CreateContext(window);
 ```
 
 == Remarks ==
 While you can set most OpenGL attributes normally, the attributes listed above must be known before SDL creates an OpenGL context. These attributes are set and read with [[SDL_GL_SetAttribute]]() and [[SDL_GL_GetAttribute]]().
+
+In some cases, these attributes are minimum requests; the GL does not promise to give you exactly what you asked for. It's possible to ask for a 16-bit depth buffer and get a 24-bit one instead, for example, or to ask for no stencil buffer and still have one available. Context creation should fail if the GL can't provide your requested attributes at a minimum, but you should check to see exactly what you got.
 
 <span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL_GL_MULTISAMPLEBUFFERS to 1 and SDL_GL_MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.  
 
