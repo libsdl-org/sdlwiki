@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticRumbleSupported =
-Use this function to check ,,to see if,, ^whether^ rumble is supported on a haptic device.
+Use this function to check whether rumble is supported on a haptic device.
 
 
 == Syntax ==
@@ -14,7 +14,7 @@ int SDL_HapticRumbleSupported(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|haptic device to check ,,to see if it supports rumble,, ^for rumble support^
+|haptic device to check for rumble support
 |}
 
 == Return Value ==
