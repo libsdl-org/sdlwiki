@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_PowerState =
-An enumeration of the basic state ,,for,, ^of^ the system's power supply.
+An enumeration of the basic state of the system's power supply.
 
 
 == Values ==
@@ -26,11 +26,13 @@ An enumeration of the basic state ,,for,, ^of^ the system's power supply.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+if (SDL_GetPowerState(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
+    printf("You should plug in your laptop before running this update.\n");
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Not all machines can have batteries at all, and not all platforms can report battery status. Those that do can still having minor moments of confusion about the state of the battery. As such, you should always be prepared to get an otherwise-unexpected SDL_POWERSTATE_UNKNOWN from [[SDL_GetPowerInfo]](). Also, batteries are fickle hardware: reported status can flicker between two states for no obvious reason on occasion.
 
 == Related Functions ==
 :[[SDL_GetPowerInfo]]
