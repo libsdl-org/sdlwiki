@@ -23,3 +23,7 @@
 * [http://www.nostarch.com/plg.htm Programming Linux Games] by Loki Software, Inc. with John R. Hall
 : Building Multimedia Applications with SDL, OpenAL^(tm)^, and Other APIs
 : ''"This is the sort of book that could kickstart a new movement in Linux game development."'' ~-(Slashdot)-~
+
+* [http://www.packtpub.com/simple-directmedia-layer-game-development/book SDL Game Development] (Packt Publishing) by Shaun Mitchell
+: SDL Game Development guides you through creating your first 2D game using SDL and C++. It takes a clear and practical approach to SDL game development, ensuring that the focus remains on creating awesome games.
+: ''"Written as a practical and engaging tutorial, SDL Game Development guides you through the development of your own framework and the creation of two exciting, fully-featured games."'' ~-(Packt Publishing)-~
