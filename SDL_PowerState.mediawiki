@@ -26,7 +26,7 @@ An enumeration of the basic state of the system's power supply.
 
 == Code Examples ==
 ```c++
-if (SDL_GetPowerState(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
+if (SDL_GetPowerInfo(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
     printf("You should plug in your laptop before running this update.\n");
 }
 ```
