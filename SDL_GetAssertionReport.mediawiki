@@ -11,7 +11,7 @@ const SDL_assert_data* SDL_GetAssertionReport(void)
 ```
 
 == Return Value ==
-Returns a list of all failed assertions or NULL if the list is empty.
+Returns a list of all failed assertions or NULL if the list is empty. This memory should not be modified or freed by the application.
 
 == Code Examples ==
 The proper way to examine this data looks something like this:
