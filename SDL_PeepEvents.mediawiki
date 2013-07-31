@@ -20,20 +20,20 @@ int SDL_PeepEvents(SDL_Event*      events,
 
 == Function Parameters ==
 {|
-|'''events''' 
-|^the [[SDL_Event]] queue to query^???
+|'''events'''    
+| Destination buffer for the retrieved events. 
 |-
 |'''numevents''' 
-|^the number of events in the queue^???; see [[#Remarks|Remarks]] for details 
+| If action is SDL_ADDEVENT, the number of events to add back to the event queue.  If action is SDL_PEEKEVENT or SDL_GETEVENT, the maximum number of events to retrieve.  
 |-
-|'''action''' 
-|^how to handle the events in the queue^; see [[#action|Remarks]] for details 
+|'''action'''    
+| Action to take; see [[#action|Remarks]] for details 
 |-
-|'''minType''' 
-|^the minimum number of events of a specified type^ ??? 
+|'''minType'''   
+| Minimum value of the event type to be considered.  SDL_FIRSTEVENT is a safe choice. 
 |-
-|'''maxType''' 
-|^the maximum number of events of a specified type^ ??? 
+|'''maxType'''   
+| Maximum value of the event type to be considered.  SDL_LASTEVENT is a safe choice. 
 |}
 
 == Return Value ==
@@ -41,7 +41,7 @@ Returns the number of events actually stored or a negative error code on failure
 
 == Code Examples ==
 ```c++
-You can add your code example here
+Add a code example here.
 ```
 
 == Remarks ==
