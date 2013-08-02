@@ -13,11 +13,29 @@ This page describes what changed from SDL 1.2 to SDL 2.0, the new features, and 
 These are the most important new features SDL 2 introduces:
 
 * Full 3D hardware acceleration
-* Support for OpenGL 3.0+
+* Support for OpenGL 3.0+ in various profiles (core, compatibility, debug, robust, etc)
+* Support for OpenGL ES
 * Support for multiple windows
 * Support for multiple displays
+* Support for multiple audio devices
 * Support for multiple mice, tablets, etc.
+* Android and iOS support
 * Force Feedback available on Windows, Mac OS X and Linux
+* Atomic operations
+* Power management (exposes battery life remaining, etc)
+* Shaped windows
+* 32-bit audio (int and float)
+* Simplified Game Controller API (the Joystick API is still here, too!)
+* Touch support (multitouch, gestures, etc)
+* Better fullscreen support
+* Better keyboard support (scancodes vs keycodes, etc).
+* Message boxes
+* Clipboard support
+* Basic Drag'n'Drop support
+* Proper unicode input and IME support
+* [[CategoryAssertions|A really powerful assert macro]]
+* Lots of old annoyances from 1.2 are gone
+* Many other things!
 
 The [[Introduction]] page has a more extensive listing about what features SDL offers in overall (including old 1.2 features).
 
