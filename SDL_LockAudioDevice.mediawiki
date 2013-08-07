@@ -16,8 +16,6 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
 |the ID of the device to be locked
 |}
 
-<<Color2(green,The addition above is for consistency only.  Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
-
 == Code Examples ==
 ```c++
 void myAudioCallback(void *userdata, Uint8* stream, int len)
