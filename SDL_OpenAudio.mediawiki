@@ -12,7 +12,7 @@ int SDL_OpenAudio(SDL_AudioSpec* desired, SDL_AudioSpec* obtained)
 == Function Parameters ==
 {|
 |'''desired''' 
-|an [[SDL_AudioSpec]] structure representing the desired output format; see [[#desired|Remarks]] for more information
+|an [[SDL_AudioSpec]] structure representing the desired output format
 |-
 |'''obtained''' 
 |an [[SDL_AudioSpec]] structure filled in with the actual parameters, or NULL
