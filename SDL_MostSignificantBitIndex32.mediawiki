@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
@@ -14,7 +13,7 @@ Use this function to get the index of the most significant (set) bit in a
 
 == Syntax ==
 ```c++
-Sint8 SDL_MostSignificantBitIndex32(Uint32 x)
+int SDL_MostSignificantBitIndex32(Uint32 x)
 ```
 
 
@@ -26,12 +25,12 @@ Sint8 SDL_MostSignificantBitIndex32(Uint32 x)
 
 
 == Return Value ==
-Returns the index of the most significant bit if x is > 0, otherwise output is undefined.
+Returns the index of the most significant bit of x, or -1 if x is 0.
 
 == Code Examples ==
 ```c++
 if (bitmask) {
-    Sint8 index = SDL_MostSignificantBitIndex32(bitmask);
+    int index = SDL_MostSignificantBitIndex32(bitmask);
 }
 ```
 
