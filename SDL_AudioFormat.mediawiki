@@ -129,22 +129,10 @@ Unspecified bits are always zero, but may be used in later versions of SDL.  The
 
 == Code Examples ==
 ```c++
-void renderAudio(SDL_AudioFormat format, void *buf, size_t buflen)
-{
-    if (SDL_AUDIO_ISFLOAT(format)) {
-        renderAudioAsFloatingPoint(buf, buflen);
-    } else if (SDL_AUDIO_BITSIZE(format) == 16) {
-        renderAudioAsInt16(buf, buflen);
-    } else if (SDL_AUDIO_BITSIZE(format) == 32) {
-        renderAudioAsInt32(buf, buflen);
-    } else {
-        SDL_assert(0 && "uhoh, we should write this.");
-    }
-}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Be careful about assuming details of a data format. If you only check SDL_AUDIO_ISFLOAT, you might be surprised to find a later version of SDL adds Float64 support when you expected there to be only 32-bit data, for example.
 
 == Related Structures ==
 :[[SDL_AudioCVT]]
