@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 = SDL_CloseAudio =
-Use this function to shut down audio processing and close the audio device.
+This function is a legacy means of closing the audio device. New programs might want to use [[SDL_CloseAudioDevice]]() instead.
 
 
 == Syntax ==
@@ -11,11 +11,22 @@ void SDL_CloseAudio(void)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+extern SDL_AudioSpec want;
+if (SDL_OpenAudio(&want, NULL) == 0) {
+    SDL_PauseAudio(0);
+    SDL_Delay(5000);  // let audio callback run for 5 seconds.
+    SDL_CloseAudio();
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function is equivalent to calling
+
+```c++
+SDL_CloseAudioDevice(1);
+```
+
+and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
 : [[SDL_OpenAudio]]
