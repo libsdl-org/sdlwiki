@@ -37,12 +37,8 @@ You can add your code example here
 |returns the current processing state of the specified event
 |-
 |0
-|SDL_IGNORE
+|SDL_IGNORE (aka SDL_DISABLE)
 |the event will automatically be dropped from the event queue and will not be filtered
-|-
-|0
-|SDL_DISABLE
-|the event type will be disabled (blocked) and pending events discarded
 |-
 |1
 |SDL_ENABLE
