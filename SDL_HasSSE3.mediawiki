@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_HasSSE3 =
-Use this function to ,,return true if,, ^determine whether^ the CPU has SSE3 features.
+Use this function to determine whether the CPU has SSE3 features.
 
 
 == Syntax ==
@@ -23,6 +22,10 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_Has3DNow]]
+:[[SDL_HasAltiVec]]
+:[[SDL_HasMMX]]
+:[[SDL_HasRDTSC]]
 :[[SDL_HasSSE]]
 :[[SDL_HasSSE2]]
 :[[SDL_HasSSE41]]
