@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_Has3DNow =
-Use this function to ,,return true if,, ^determine whether^ the CPU has 3DNow! features.
+Use this function to determine whether the CPU has 3DNow! features.
 
 
 == Syntax ==
