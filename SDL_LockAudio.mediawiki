@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_LockAudio =
-Use this function to lock out the audio callback function.
+This function is a legacy means of locking the audio device. New programs might want to use SDL_LockAudioDevice() instead.
 
 
 == Syntax ==
@@ -12,15 +12,31 @@ void SDL_LockAudio(void)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+void myAudioCallback(void *userdata, Uint8* stream, int len)
+{
+    printf("The audio callback is running!\n");
+    SDL_memset(stream, 0, len);  // just silence.
+    printf("The audio callback is done!\n");
+}
+
+// don't lock for 2 seconds at a time in real life, please.
+SDL_Delay(2000);  // callback runs for 2 seconds.
+SDL_LockAudio();
+printf("The audio callback can't be running right now!\n");
+SDL_Delay(2000);  // callback doesn't run for 2 seconds.
+printf("Ok, unlocking!\n");
+SDL_UnlockAudio();
+SDL_Delay(2000);  // callback runs for 2 seconds.
 ```
 
 == Remarks ==
-The lock manipulated by these functions protects the callback function.  During an [[SDL_LockAudio]]()/[[SDL_UnlockAudio]]() pair you can be guaranteed that the callback function for the default audio device is not running.  Use [[SDL_LockAudioDevice]] if you need to lock a different audio device.  [[SDL_LockAudio]]() is equivalent to [[SDL_LockAudioDevice]](1).
+This function is equivalent to calling
 
-[[SDL_LockAudio]]() is not a re-entrant function and can potentially block if it is called more than once from the same thread before a call to [[SDL_Unlock]]() is made.
+```c++
+SDL_LockAudioDevice(1);
+```
 
-Do not call these from the callback function or you will cause deadlock.
+and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
 :[[SDL_LockAudioDevice]]
