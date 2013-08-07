@@ -1,15 +1,11 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-'''DRAFT'''
-
 = SDL_AudioSpec =
 A structure that contains the audio output format. It also contains a callback that is called when the audio device needs more data.
 
 
 == Data Fields ==
-<!-- Can '''channels''' only be 1 or 2 or can it handle more? Old wiki lists 4 for surround and 6 for surround w/ center and lfe (sub?). -->
-
 {|
 |int
 |'''freq'''
@@ -21,7 +17,7 @@ A structure that contains the audio output format. It also contains a callback t
 |-
 |Uint8
 |'''channels'''
-|number of separate sound channels: 1 = mono, 2 = stereo
+|number of separate sound channels: see [[#Remarks|Remarks]] for details
 |-
 |Uint8
 |'''silence'''
@@ -41,7 +37,7 @@ A structure that contains the audio output format. It also contains a callback t
 |-
 |void*
 |'''userdata'''
-|a pointer that is passed to '''callback'''
+|a pointer that is passed to '''callback''' (otherwise ignored by SDL)
 |}
 
 == Code Examples ==
@@ -50,64 +46,40 @@ You can add your code example here
 ```
 
 == Remarks ==
-<!-- Should the functions [[SDL_LoadWAV_RW]] and [[SDL_OpenAudioDevice]] be added into this remark?  Do they behave like their similarly named counterparts with respect to this struct? -->
+This structure is used by [[SDL_OpenAudioDevice]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudioDevice]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
 
-*<br/>The [[SDL_AudioSpec]] structure is used to describe the format of some audio data. This structure is used by [[SDL_OpenAudio]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudio]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
+'''freq''' specifies the number of sample frames sent to the sound device per second. Common values are 11025, 22050, 44100 and 48000. Larger values produce cleaner audio, in much the same way that larger resolutions produce cleaner graphics.
 
-'''freq''' specifies the number of samples sent to the sound device per second. Common values are 11025, 22050 and 44100. The higher the better. 
-<!-- I think this info could be moved to Params above and this paragraph removed. -->
-<!-- I think "The higher the better." implies that the programmer has a choice and should choose the higher number.  I suspect that the value is actually dictated by the audio data.  Perhaps rewording to say "Higher values produce higher quality sounds/audio output" might be preferable? -->
-
-<!-- Should this be an include from [[SDL_AudioFormat]] instead? -->
 '''format''' specifies the size and type of each sample element and may be one of the following:
- ||||''Defaults to LSB byte order'' -or- ''Basic'' ???||
- ||AUDIO_U8||unsigned 8-bit samples.||
- ||AUDIO_S8||signed 8-bit samples.||
- ||AUDIO_U16 or AUDIO_U16LSB||not supported by all hardware (unsigned 16-bit little-endian)||
- ||AUDIO_S16 or AUDIO_S16LSB||not supported by all hardware (signed 16-bit little-endian)||
- ||AUDIO_U16MSB||not supported by all hardware (unsigned 16-bit big-endian)||
- ||AUDIO_S16MSB||not supported by all hardware (signed 16-bit big-endian)||
- ||||''int32 support''||
- ||AUDIO_S32 or AUDIO_S32LSB||32-bit integer samples||
- ||AUDIO_S32MSB||as above, but big-endian byte order||
- ||||''float32 support''||
- ||AUDIO_F32 or AUDIO_F32LSB||32-bit floating point samples||
- ||AUDIO_F32MSB||as above, but big-endian byte order||
- ||||''Native audio byte ordering''||
- ||AUDIO_U16SYS||either AUDIO_U16LSB or AUDIO_U16MSB depending on hardware CPU endianness||
- ||AUDIO_S16SYS||either AUDIO_S16LSB or AUDIO_S16MSB depending on hardware CPU endianness||
- ||AUDIO_S32SYS||either AUDIO_S32LSB or AUDIO_S32MSB depending on hardware CPU endianness||
- ||AUDIO_F32SYS||either AUDIO_F32LSB or AUDIO_F32MSB depending on hardware CPU endianness||
+<<Include(SDL_AudioFormat, , , from="=== Audio Format Values ===", to="== Code Examples ==")>>
 
+See [[SDL_AudioFormat]] for more info.
 
-<!-- This list was taken from the header.  A portion was listed in the old wiki as well.  Is it correct that audio change flags and audio flags (as opposed to the above audio format flags) should not be included here? -->
+'''channels''' specifies the number of output channels. As of SDL 2.0, supported values are 1 (mono), 2 (stereo), 4 (quad), and 6 (5.1).
 
-'''samples''' specifies a unit of audio data.  When used with [[SDL_OpenAudio]]() this refers to the size of the audio buffer in samples. A sample is a chunk of audio data of the size specified in '''format''' multiplied by the number of channels. When the [[SDL_AudioSpec]] is used with [[SDL_LoadWAV]]() '''samples''' is set to 4096. 
-<!-- Params above specifies that this is a "power of 2". Would it be appropriate to show how to determine/calculate this value here? -->
-<br/>*
+'''samples''' specifies a unit of audio data.  When used with [[SDL_OpenAudioDevice]]() this refers to the size of the audio buffer in sample frames. A sample frame is a chunk of audio data of the size specified in '''format''' multiplied by the number of channels. When the [[SDL_AudioSpec]] is used with [[SDL_LoadWAV]]() '''samples''' is set to 4096. This field's value must be a power of two.
 
-The values '''silence''' and '''size''' are calculated by [[SDL_OpenAudio]]().
+The values '''silence''' and '''size''' are calculated by [[SDL_OpenAudioDevice]]().
 
-Stereo samples are stored in a LRLRLR ordering.
+Channel data is interleaved. Stereo samples are stored in left/right ordering. Quad is stored in front-left/front-right/rear-left/rear-right order. 5.1 is stored in front-left/front-right/center/low-freq/rear-left/rear-right ordering ("low-freq" is the ".1" speaker).
 
 <span id="callback"></span>
 The function prototype for '''callback''' is:
- ```
-void SDL_AudioCallback(void*  userdata,
-                       Uint8* stream,
-                       int    len)
+```c++
+void SDL_AudioCallback(void* userdata, Uint8* stream, int len);
 ```
 : where its parameters are:
- ||<code>userdata</code>||an application-specific parameter saved in the [[SDL_AudioSpec]] structure||
+ ||<code>userdata</code>||an application-specific parameter saved in the [[SDL_AudioSpec]] structure's '''userdata''' field||
  ||<code>stream</code>||a pointer to the audio data buffer filled in by SDL_AudioCallback()||
  ||<code>len</code>||the length of that buffer in bytes||
 
 Once the callback returns, the buffer will no longer be valid.
 
+The callback ''must'' completely initialize the buffer; as of SDL 2.0, this buffer is not initialized before the callback is called. If there is nothing to play, the callback should fill the buffer with silence.
+
 == Related Functions ==
-:[[SDL_LoadWAV]] *
+:[[SDL_LoadWAV]]
 :[[SDL_LoadWAV_RW]]
-:[[SDL_OpenAudio]]
 :[[SDL_OpenAudioDevice]]
 
 ----
