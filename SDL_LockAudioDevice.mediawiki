@@ -13,20 +13,39 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
 == Function Parameters ==
 {|
 |'''dev'''
-|the ID of the device ^previously opened with [[SDL_OpenAudioDevice]]()^ to be locked
+|the ID of the device to be locked
 |}
 
 <<Color2(green,The addition above is for consistency only.  Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
 
 == Code Examples ==
 ```c++
-You can add your code example here
+void myAudioCallback(void *userdata, Uint8* stream, int len)
+{
+    printf("The audio callback is running!\n");
+    SDL_memset(stream, 0, len);  // just silence.
+    printf("The audio callback is done!\n");
+}
+
+// don't lock for 2 seconds at a time in real life, please.
+extern SDL_AudioDeviceID devid;
+SDL_Delay(2000);  // callback runs for 2 seconds.
+SDL_LockAudioDevice(devid);
+printf("The audio callback can't be running right now!\n");
+SDL_Delay(2000);  // callback doesn't run for 2 seconds.
+printf("Ok, unlocking!\n");
+SDL_UnlockAudioDevice(devid);
+SDL_Delay(2000);  // callback runs for 2 seconds.
 ```
 
 == Remarks ==
-The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudioDevice]]()/[[SDL_UnlockAudioDevice]]() pair, you can be guaranteed that the callback function for that device is not running.  
+The lock manipulated by these functions protects the callback function.  During a [[SDL_LockAudioDevice]]()/[[SDL_UnlockAudioDevice]]() pair, you can be guaranteed that the callback function for that device is not running, even if the device is not paused.
 
-Do not call these from the callback function or you will cause deadlock.
+Calling this function from inside your callback is unnecessary (SDL obtains this lock before calling your function, and releases it when the function returns).
+
+You should not hold the lock longer that absolutely necessary. If you hold it too long, you'll experience dropouts in your audio playback. Ideally, your application locks the device, sets a few variables and unlocks again. Do not do heavy work while holding the lock for a device.
+
+It is safe to lock the audio device multiple times, as long as you unlock it an equivalent number of times. The callback will not run until the device has been unlocked completely in this way. If your application fails to unlock the device, it's likely that [[SDL_CloseAudioDevice]]() will deadlock.
 
 == Related Functions ==
 :[[SDL_LockAudio]]
