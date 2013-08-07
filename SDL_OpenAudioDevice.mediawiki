@@ -23,7 +23,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |non-zero to specify a device should be opened for recording, not playback.
 |-
 |'''desired'''
-|the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
+|an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
 |-
 |'''obtained'''
 |an [[SDL_AudioSpec]] structure filled in with the actual output format; see [[SDL_OpenAudio]]() for more information
