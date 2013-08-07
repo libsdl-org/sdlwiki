@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_SwapFloatBE =
-Use this function to swap the byte order of a big endian floating point value to native ordering.
+Use this function to swap the byte order of a big-endian floating point value to native ordering.
 
 
 == Syntax ==
