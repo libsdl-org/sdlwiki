@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_LockAudio =
-This function is a legacy means of locking the audio device. New programs might want to use SDL_LockAudioDevice() instead.
+This function is a legacy means of locking the audio device. New programs might want to use [[SDL_LockAudioDevice]]() instead.
 
 
 == Syntax ==
