@@ -8,8 +8,7 @@ Use this function to get the current power supply details.
 
 == Syntax ==
 ```c++
-SDL_PowerState SDL_GetPowerInfo(int* secs,
-                                int* pct)
+SDL_PowerState SDL_GetPowerInfo(int* secs, int* pct)
 ```
 
 == Function Parameters ==
@@ -21,15 +20,6 @@ SDL_PowerState SDL_GetPowerInfo(int* secs,
 |percentage of battery life left, between 0 and 100. You can pass a NULL here if you don't care. Will return -1 if we can't determine a value, or we're not running on a battery
 |}
 
-alternative text:
-{|
-|'''secs'''
-|seconds of battery life left; NULL if irrelevant/unimportant
-|-
-|'''pct'''
-|percent of battery life left (0 - 100); NULL if irrelevant/unimportant
-|}
-
 == Return Value ==
 Returns the state of the battery, if any.  Return values may be any of the following:
 
@@ -37,18 +27,31 @@ Returns the state of the battery, if any.  Return values may be any of the follo
 
 See [[SDL_PowerState]] for more info.
 
-<<Color2(green,Above is an include from the enum.  Below is text that was listed as param in the header but seems more relevant here or in Remarks.)>>
-,,Both parameters will,, return^s^ ,,-1 ,,^a negative error code^ if a value can't be determined, or if not running on a battery.
+Both parameters will return -1 if a value can't be determined, or if not running on a battery.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+int secs, pct; 
+if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
+    printf("Battery is draining: ");
+    if (secs == -1) {
+        printf("(unknown time left)\n");
+    } else {
+        printf("(%d seconds left)\n", secs);
+    }
+
+    if (pct == -1) {
+        printf("(unknown percentage left)\n");
+    } else {
+        printf("(%d percent left)\n", pct);
+    }
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+You should never take a battery status as absolute truth. Batteries (especially failing batteries) are delicate hardware, and the values reported here are best estimates based on what that hardware supports. It's not uncommon for older batteries to lose stored power much faster than it reports, or completely drain when reporting it has 20 percent left, etc.
 
-== Related Functions ==
+Battery status can change at any time; if you are concerned with power state, you should call this function frequently, and perhaps ignore changes until they seem to be stable for a few seconds.
 
 ----
 [[CategoryAPI]], [[CategoryPower]]
