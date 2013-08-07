@@ -22,7 +22,14 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_HasSSE2]] ???
+:[[SDL_Has3DNow]]
+:[[SDL_HasAltiVec]]
+:[[SDL_HasMMX]]
+:[[SDL_HasRDTSC]]
+:[[SDL_HasSSE2]]
+:[[SDL_HasSSE3]]
+:[[SDL_HasSSE41]]
+:[[SDL_HasSSE42]]
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
