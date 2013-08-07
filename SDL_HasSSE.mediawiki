@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_HasSSE =
-Use this function to ,,return true if,, ^determine whether^ the CPU has SSE features.
+Use this function to determine whether the CPU has SSE features.
 
 
 == Syntax ==
