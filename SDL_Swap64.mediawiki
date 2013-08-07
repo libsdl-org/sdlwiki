@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_Swap64 =
-Use this function to swap byte order.
+Use this function to swap the byte order of a 64-bit value.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ Uint64 SDL_Swap64(Uint64 x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the swapped data.  ???
+Returns the swapped value.
 
 == Code Examples ==
 ```c++
