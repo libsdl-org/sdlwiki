@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_Swap32 =
-Use this function to swap byte order.
+Use this function to swap the byte order of a 32-bit value.
 
 
 == Syntax ==
@@ -14,11 +14,11 @@ Uint32 SDL_Swap32(Uint32 x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the swapped data.  ???
+Returns the swapped value.
 
 == Code Examples ==
 ```c++
