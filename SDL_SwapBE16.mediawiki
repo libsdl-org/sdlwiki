@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SwapBE16 =
-Use this function to swap byte order from big-endian to native ^(if necessary)^.
+Use this function to swap the byte order of a 16-bit big-endian value to native ordering.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ Uint16 SDL_SwapBE16(Uint16 x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the data in native Uint16 format. ???
+Returns the native 16-bit value.
 
 == Code Examples ==
 ```c++
