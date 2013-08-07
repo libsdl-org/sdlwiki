@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SwapFloatBE =
-Use this function to swap byte order from big-endian to native.
+Use this function to swap the byte order of a big endian floating point value to native ordering.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ float SDL_SwapFloatBE(float x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the data in a native format the compiler will accept. ???
+Returns the native floating point value.
 
 == Code Examples ==
 ```c++
@@ -28,9 +27,8 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-???  This is mainly to keep compilers from complaining in SDL code.  If there is no real 64-bit datatype, then compilers will complain about the fake 64-bit datatype that SDL provides when it compiles user code.
-
 == Related Functions ==
+:[[SDL_SwapFloat]]
 :[[SDL_SwapFloatLE]]
 
 ----
