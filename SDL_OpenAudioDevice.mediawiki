@@ -20,7 +20,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#device|Remarks]]
 |-
 |'''iscapture'''
-|non-zero to specify a device that has recording capability
+|non-zero to specify a device should be opened for recording, not playback.
 |-
 |'''desired'''
 |the desired audio parameters ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
@@ -33,9 +33,9 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |}
 
 == Return Value ==
-Returns a valid device ID that is >= 2 on success or 0 on failure; call [[SDL_GetError]]() for more information. 
+Returns a valid device ID that is > 0 on success or 0 on failure; call [[SDL_GetError]]() for more information. 
 
-<<Color2(green,Although it is implied here and in Remarks would it be of value to specify that the ID is >=2 because device 1 is already open or is otherwise the default?)>>
+For compatibility with SDL 1.2, this will never return 1, since SDL reserves that ID for the legacy [[SDL_OpenAudio|SDL_OpenAudio]]() function.
 
 == Code Examples ==
 ```c++
@@ -43,7 +43,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="device"></span> Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to calling [[SDL_OpenAudio]]()).
+<span id="device"></span> Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to what [[SDL_OpenAudio]]() does to choose a device).
 The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and driver-specific strings, such as a hostname/IP address for a remote audio server, or a filename in the diskaudio driver.
 
 <span id="allowed"></span> '''allowed_changes''' can have the following flags OR'd together:
@@ -57,7 +57,11 @@ The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]]()
 |SDL_AUDIO_ALLOW_ANY_CHANGE
 |}
 
-[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1.
+These flags specify how SDL should behave when a device cannot offer a specific feature. If the application requests a feature that the hardware doesn't offer, SDL will always try to get the closest equivalent.
+
+For example, if you ask for float32 audio format, but the sound card only supports int16, SDL will set the hardware to int16. If SDL_AUDIO_ALLOW_FORMAT_CHANGE is set, SDL will change the format in the '''obtained''' structure. If the SDL_AUDIO_ALLOW_FORMAT_CHANGE is ''not'' set, SDL will prepare to convert your callback's float32 audio to int16 before feeding it to the hardware.
+
+[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As such, this function will never return a 1 so as not to conflict with the legacy function.
 
 == Related Functions ==
 :[[SDL_CloseAudioDevice]]
