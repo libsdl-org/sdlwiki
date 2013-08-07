@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetPlatform =
 Use this function to get the name of the platform.
@@ -20,9 +19,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-Try to get a standard set of platform defines.
-
-''You can add useful comments here''
+Here are the names returned for some supported platforms:
+* Windows
+* Mac OS X
+* Linux
+* iOS
+* Android
 
 == Related Functions ==
 
