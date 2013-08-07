@@ -39,10 +39,33 @@ For compatibility with SDL 1.2, this will never return 1, since SDL reserves tha
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_AudioSpec want, have;
+SDL_AudioDeviceID dev;
+
+SDL_zero(want);
+want.freq = 48000;
+want.format = AUDIO_F32;
+want.channels = 2;
+want.samples = 4096;
+want.callback = MyAudioCallback;  // you wrote this function elsewhere.
+
+dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
+if (dev == 0) {
+    printf("Failed to open audio: %s\n", SDL_GetError());
+} else {
+    if (have.format != want.format)  // we let this one thing change.
+        printf("We didn't get Float32 audio format.\n");
+    SDL_PauseAudioDevice(dev, 0);  // start audio playing.
+    SDL_Delay(5000);  // let the audio callback play some sound for 5 seconds.
+    SDL_CloseAudioDevice(dev);
+}
 ```
 
 == Remarks ==
+[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As such, this function will never return a 1 so as not to conflict with the legacy function.
+
+Please note that SDL 2.0 does not support recording yet; as such, this function will fail if '''iscapture''' is not zero. In the future, when recording is implemented, this value can be non-zero.
+
 <span id="device"></span> Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to what [[SDL_OpenAudio]]() does to choose a device).
 The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and driver-specific strings, such as a hostname/IP address for a remote audio server, or a filename in the diskaudio driver.
 
@@ -59,9 +82,9 @@ The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]]()
 
 These flags specify how SDL should behave when a device cannot offer a specific feature. If the application requests a feature that the hardware doesn't offer, SDL will always try to get the closest equivalent.
 
-For example, if you ask for float32 audio format, but the sound card only supports int16, SDL will set the hardware to int16. If SDL_AUDIO_ALLOW_FORMAT_CHANGE is set, SDL will change the format in the '''obtained''' structure. If the SDL_AUDIO_ALLOW_FORMAT_CHANGE is ''not'' set, SDL will prepare to convert your callback's float32 audio to int16 before feeding it to the hardware.
+For example, if you ask for float32 audio format, but the sound card only supports int16, SDL will set the hardware to int16. If you had set SDL_AUDIO_ALLOW_FORMAT_CHANGE, SDL will change the format in the '''obtained''' structure. If that flag was ''not'' set, SDL will prepare to convert your callback's float32 audio to int16 before feeding it to the hardware and will keep the originally requested format in the '''obtained''' structure.
 
-[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As such, this function will never return a 1 so as not to conflict with the legacy function.
+If your application can only handle one specific data format, pass a zero for '''allowed_changes''' and let SDL transparently handle any differences.
 
 == Related Functions ==
 :[[SDL_CloseAudioDevice]]
