@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SwapBE64 =
-Use this function to swap byte order from big-endian to native ^(if necessary)^.
+Use this function to swap the byte order of a 64-bit big-endian value to native ordering.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ Uint64 SDL_SwapBE64(Uint64 x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the data in native Uint64 format. ???
+Returns the native 64-bit value.
 
 == Code Examples ==
 ```c++
@@ -29,6 +28,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
+:[[SDL_Swap64]]
 :[[SDL_SwapLE64]]
 
 ----
