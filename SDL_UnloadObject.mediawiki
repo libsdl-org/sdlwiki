@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_UnloadObject =
 Use this function to unload a shared object from memory.
@@ -23,15 +22,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>These functions only work on C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
-
-Make sure you declare your function pointers with the same calling convention as the actual library function. Your code will crash mysteriously if you do not do this.
-
-Avoid namespace collisions. If you load a symbol from the library, it is not defined whether or not it goes into the global symbol namespace for the application. If it does and it conflicts with symbols in your code or other shared libraries, you will not get the results you expect.<br/>*
+''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_LoadObject]] *
-:[[SDL_LoadFunction]] *
+:[[SDL_LoadObject]]
+:[[SDL_LoadFunction]]
 
 ----
 [[CategoryAPI]], [[CategorySharedObject]]
