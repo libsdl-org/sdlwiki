@@ -19,7 +19,7 @@ These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
  |        |           |  |                    |
 15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0 
 ```
-Unspecified bits are always zero.  There are macros in SDL 2.0 and later to query these bits. 
+Unspecified bits are always zero, but may be used in later versions of SDL.  There are macros to query the specified bits. 
 
 === Audio Format Macros ===
 {|
@@ -129,7 +129,18 @@ Unspecified bits are always zero.  There are macros in SDL 2.0 and later to quer
 
 == Code Examples ==
 ```c++
-You can add your code example here
+void renderAudio(SDL_AudioFormat format, void *buf, size_t buflen)
+{
+    if (SDL_AUDIO_ISFLOAT(format)) {
+        renderAudioAsFloatingPoint(buf, buflen);
+    } else if (SDL_AUDIO_BITSIZE(format) == 16) {
+        renderAudioAsInt16(buf, buflen);
+    } else if (SDL_AUDIO_BITSIZE(format) == 32) {
+        renderAudioAsInt32(buf, buflen);
+    } else {
+        SDL_assert(0 && "uhoh, we should write this.");
+    }
+}
 ```
 
 == Remarks ==
