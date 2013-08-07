@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SwapLE64 =
 Use this function to swap the byte order of a 64-bit little-endian value to native ordering.
