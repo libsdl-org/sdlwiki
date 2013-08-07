@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SwapFloat =
-Use this function to swap byte order.
+Use this function to swap the byte order of a floating point value.
 
 
 == Syntax ==
@@ -15,11 +14,11 @@ float SDL_SwapFloat(float x)
 == Function Parameters ==
 {|
 |'''x'''
-|the data to be swapped
+|the value to be swapped
 |}
 
 == Return Value ==
-Returns the swapped data.  ???
+Returns the swapped value.
 
 == Code Examples ==
 ```c++
