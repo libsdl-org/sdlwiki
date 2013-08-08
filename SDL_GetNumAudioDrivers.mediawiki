@@ -11,19 +11,20 @@ int SDL_GetNumAudioDrivers(void)
 ```
 
 == Return Value ==
-Returns the number of built in audio drivers.  <<Color2(green,Does this have an error state?)>>
+Returns the number of built in audio drivers.
 
 == Code Examples ==
 ```c++
 int i;
-
 for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
     printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function returns a hardcoded number. This never returns a negative value; if there are no drivers compiled into this build of SDL, this function returns zero. The presence of a driver in this list does not mean it will function, it just means SDL is capable of interacting with that interface. For example, a build of SDL might have PulseAudio support, but if there's no PulseAudio server available, SDL's PulseAudio driver would fail if used.
+
+By default, SDL tries all drivers, in its preferred order, until one is found to be usable.
 
 == Related Functions ==
 :[[SDL_GetAudioDriver]]
