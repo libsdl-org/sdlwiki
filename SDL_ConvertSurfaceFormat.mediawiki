@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_ConvertSurfaceFormat =
-Use this function to create a new surface of the specified format, and then copy and map the given surface to it so the blit of the converted surface will be as fast as possible.
+Use this function to copy an existing surface to a new surface of the specified format.
 
 
 == Syntax ==
@@ -19,10 +18,10 @@ SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
 |the [[SDL_Surface]] structure representing the surface to convert
 |-
 |'''pixel_format'''
-|one of the [[SDL_PixelFormatEnum]] values
+|one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
 |-
 |'''flags'''
-|the flags are unused and should be set to 0 ???
+|the flags are unused and should be set to 0
 |}
 
 == Return Value ==
@@ -34,12 +33,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Should the SDL_PixelFormatEnum values be included here?)>>
+<span id="format"></span> '''format''' may be one of the following:
+<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
 == Related Functions ==
-:[[SDL_AllocFormat]] ???
 :[[SDL_ConvertSurface]]
 
 ----
