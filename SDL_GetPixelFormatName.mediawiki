@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetPixelFormatName =
 Use this function to get the human readable name of a pixel format.
@@ -18,7 +17,7 @@ const char* SDL_GetPixelFormatName(Uint32 format)
 |}
 
 == Return Value ==
-Returns ^the human readable name of the specified pixel format.^  <<Color2(green,Is there an error value?)>>
+Returns the human readable name of the specified pixel format or <code>"SDL_PIXELFORMAT_UNKNOWN"</code> if the format isn't recognized.
 
 == Code Examples ==
 ```c++
