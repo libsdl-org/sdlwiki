@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogGetPriority =
 Use this function to get the priority of a particular log category.
@@ -14,11 +13,11 @@ SDL_LogPriority SDL_LogGetPriority(int category)
 == Function Parameters ==
 {|
 |'''category'''
-|the category to query ^or SDL_LOG_CATEGORY_APPLICATION ???^
+|the category to query; see [[#category|Remarks]] for details
 |}
 
 == Return Value ==
-Returns the [[SDL_LogPriority]] for the requested category, SDL_application_priority if '''category''' is SDL_LOG_CATEGORY_APPLICATION, or SDL_default_priority otherwise,,; call [[SDL_GetError]]() for more information,,.
+Returns the [[SDL_LogPriority]] for the requested category; see [[#priority|Remarks]] for details.
 
 == Code Examples ==
 ```c++
@@ -26,7 +25,13 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+ <span id="category"></span>
+ The '''category''' can be one of:
+ <<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
+
+ <span id="priority"></span>
+ The returned priority will be one of:
+ <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 == Related Functions ==
 :[[SDL_LogSetPriority]]
