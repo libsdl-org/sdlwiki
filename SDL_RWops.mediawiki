@@ -1,0 +1,99 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_RWops =
+A structure that provides an abstract interface to stream I/O.
+
+
+== Data Fields ==
+{|
+|Sint64 (*)(SDL_RWops *)
+|'''size'''
+|Callback that reports stream size; see [[#size|Remarks]]
+|-
+|Sint64 (*)(SDL_RWops *, Sint64, int)
+|'''seek'''
+|Callback that seeks in stream; see [[#seek|Remarks]]
+|-
+|size_t (*)(SDL_RWops *, void *, size_t, size_t)
+|'''read'''
+|Callback that reads from the stream; see [[#read|Remarks]]
+|-
+|size_t (*)(SDL_RWops *, const void *, size_t, size_t)
+|'''write'''
+|Callback that writes to the stream; see [[#write|Remarks]]
+|-
+|int (*)(SDL_RWops *)
+|'''close'''
+|Callback that closes the stream; see [[#close|Remarks]]
+|-
+|Uint32
+|'''type'''
+|Type of stream; see [[#type|Remarks]]
+|-
+|union
+|'''hidden'''
+|Type-specific data; see [[#hidden|Remarks]]
+|}
+
+
+== Code Examples ==
+```c++
+SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
+if (io != NULL) {
+    char name[256];
+    if (io->read(io, name, sizeof (name), 1) > 0) {
+        printf("Hello, %s!\n", name);
+    }
+    io->close(io);
+}
+```
+
+
+== Remarks ==
+SDL_RWops is an abstraction over I/O. It provides interfaces to read, write and seek data in a stream, without the caller needing to know where the data is coming from.
+
+For example, a RWops might be fed by a memory buffer, or a file on disk, or a connection to a web server, without any changes to how the caller consumes the data.
+
+SDL provides some internal methods for reading from common stream types, like files and memory buffers, but this structure can be used by the application or third party libraries to implement whatever type of stream it pleases.
+
+Most of the fields of this structure are function pointers that are used as callbacks to implement the stream interface. All of them use SDLCALL calling convention.
+
+Please note that many of these function pointers used ints in SDL 1.2; to give them a better range, they have become Sint64 in SDL 2.0.
+
+=== size ===
+'''size''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
+
+=== seek ===
+'''seek''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
+
+{|
+|Identifier
+|Value
+|Explanation
+|-
+|RW_SEEK_SET
+|0
+|Seek from the beginning of data
+|-
+|RW_SEEK_CUR
+|1
+|Seek relative to current read point
+|-
+|RW_SEEK_END
+|2
+|Seek relative to the end of data
+|}
+
+
+== Related Functions ==
+:[[SDL_AllocRW]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
+:[[SDL_RWFromConstMem]]
+:[[SDL_FreeRW]]
+
+----
+[[CategoryStruct]], [[CategoryIO]]
