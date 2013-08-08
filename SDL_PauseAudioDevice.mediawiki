@@ -34,7 +34,6 @@ Pausing state does not stack; even if you pause a device several times, a single
 If you just need to protect a few variables from race conditions vs your callback, you shouldn't pause the audio device, as it will lead to dropouts in the audio playback. Instead, you should use [[SDL_LockAudioDevice]]().
 
 == Related Functions ==
-:[[SDL_UnpauseAudioDevice]]
 :[[SDL_LockAudioDevice]]
 
 ----
