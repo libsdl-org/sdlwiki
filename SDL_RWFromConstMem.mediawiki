@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RWFromConstMem =
-Use this function to *prepare a constant memory area for use with RWops. *
+Use this function to prepare a read-only memory buffer for use with RWops.
 
 
 == Syntax ==
@@ -15,41 +14,40 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 == Function Parameters ==
 {|
 |'''mem'''
-|,,a pointer to,, ^a memory location to use for an SDL_RWops structure^
+|a pointer to a read-only buffer to feed an [[SDL_RWops]] stream
 |-
 |'''size'''
-|^the size of the memory location^
+|the buffer size, in bytes
 |}
 
-<<Color2(green,Is '''mem''' an exception to the 'pointer rule'?)>>
-
 == Return Value ==
-*<br/>Returns a pointer to a new ^SDL_^RWops structure, or NULL if it fails. <br/>*<br/>; call [[SDL_GetError]]() for more information.???
+Returns a pointer to a new [[SDL_RWops]] structure, or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
 ```c++
 char bitmap[] = {
     66, 77, 86, 2, 0, 0, 0, 0 ...
-}
-SDL_RWops *rw;
-SDL_Surface *img;
-
-rw = SDL_RWFromConstMem(bitmap, sizeof(bitmap));
-img = SDL_LoadBMP_RW(rw, 1); // Automatically frees the RWops struct for us
-
-// Do something with img...
+};
+SDL_RWops *rw = SDL_RWFromConstMem(bitmap, sizeof(bitmap));
+SDL_Surface *img = SDL_LoadBMP_RW(rw, 1); /* Automatically frees the RWops struct for us */
+/* Do something with img... */
 ```
-*
 
 == Remarks ==
-*<br/>[[SDL_RWFromConstMem]]() sets up a^n^ ^SDL_^RWops struct based on a memory area of a certain size. It assumes the memory area is not writable. <br/>*
+This function sets up an [[SDL_RWops]] struct based on a memory area of a certain size. It assumes the memory area is not writable.
+
+Attempting to write to this RWops stream will report an error without writing to the memory buffer.
+
+This memory buffer is not copied by the RWops; the pointer you provide must remain valid until you close the stream. Closing the stream will not free the original buffer.
+
+If you need to write to a memory buffer, you should use [[SDL_RWFromMem]] with a writable buffer of memory instead.
 
 == Related Functions ==
-:[[SDL_FreeRW]] *
-:[[SDL_RWFromFile]] ???
-:[[SDL_RWFromFP]] ???
 :[[SDL_RWFromMem]] *
+:[[SDL_RWclose]]
+:[[SDL_RWread]]
+:[[SDL_RWseek]]
+:[[SDL_RWtell]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
