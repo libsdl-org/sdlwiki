@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetAudioStatus =
-Use this function to get the current audio state.
+This function is a legacy means of querying the audio device. New programs might want to use [[SDL_GetAudioDeviceStatus]]() instead.
 
 
 == Syntax ==
@@ -11,24 +11,45 @@ SDL_AudioStatus SDL_GetAudioStatus(void)
 ```
 
 == Return Value ==
-Returns the current audio state, which can be one of:
-:SDL_AUDIO_STOPPED
-:SDL_AUDIO_PLAYING
-:SDL_AUDIO_PAUSED
-
-<<Color2(green,Should there be a link to [[SDL_AudioStatus]] somewhere on here?)>>
+Returns the [[SDL_AudioStatus]] of the specified audio device which may be one of the following:
+<<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
 ```c++
-You can add your code example here
+void printStatus(void)
+{
+    switch (SDL_GetAudioStatus())
+    {
+        case SDL_AUDIO_STOPPED: printf("stopped\n"); break;
+        case SDL_AUDIO_PLAYING: printf("playing\n"); break;
+        case SDL_AUDIO_PAUSED: printf("paused\n"); break;
+        default: printf("???"); break;
+    }
+}
+
+// device starts paused
+if (SDL_OpenAudio(&desired, &obtained) == 0) {
+     printStatus();  // prints "paused"
+     SDL_PauseAudio(0);
+     printStatus();  // prints "playing"
+     SDL_PauseAudio(1);
+     printStatus();  // prints "paused"
+     SDL_CloseAudio();
+     printStatus();  // prints "stopped"
+}
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This function is equivalent to calling
+
+```c++
+SDL_GetAudioDeviceStatus(1);
+```
+
+and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
 :[[SDL_GetAudioDeviceStatus]]
-:[[SDL_PauseAudio]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
