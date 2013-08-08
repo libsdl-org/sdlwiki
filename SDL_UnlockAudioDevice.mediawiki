@@ -37,7 +37,7 @@ SDL_Delay(2000);  // callback runs for 2 seconds.
 ```
 
 == Remarks ==
-Unlocks a previous [[SDL_LockAudioDevice]]() call. Please see [[SDL_LockAudioDevice#Remarks|that function's Remarks]] for more details.
+Unlocks a previous [[SDL_LockAudioDevice]]() call. Please see [[SDL_LockAudioDevice#Remarks|that function's remarks]] for more details.
 
 == Related Functions ==
 :[[SDL_LockAudioDevice]]
