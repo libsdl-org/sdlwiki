@@ -34,7 +34,7 @@ SDL_ConvertAudio(cvt);
 ```
 
 == Remarks ==
-This function does the actual audio data conversion, after using [[SDL_BuildAudioCVT]]() to prepare the conversion information and then filled in the buffer details.
+This function does the actual audio data conversion, after the application has called [[SDL_BuildAudioCVT]]() to prepare the conversion information and then filled in the buffer details.
 
 Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, this function will convert it in-place to the desired format.
 
