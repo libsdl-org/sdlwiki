@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_PixelFormat =
 A structure that contains pixel format information.
