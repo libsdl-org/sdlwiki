@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 = SDL_RWops =
 A structure that provides an abstract interface to stream I/O. Applications can generally ignore the specifics of this structure's internals and treat them as opaque pointers. The details are important to lower-level code that might need to implement one of these, however.
@@ -141,7 +138,7 @@ Applications and libraries rolling their own RWops implementations should use SD
 
 === Hidden Union ===
 
-(write me.)
+Applications can ignore this union completely. All of the fields in this union are platform-specific and off-limits, used internally by SDL, with one exception. You may use the '''unknown'' struct to store your own RWops implementation's data, possibly cleaning it up during the '''close''' method. If your data doesn't fit in two pointers, use these pointers to hold an allocated structure that contains the real data.
 
 == Related Functions ==
 :[[SDL_AllocRW]]
