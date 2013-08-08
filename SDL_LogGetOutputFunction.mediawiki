@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogGetOutputFunction =
 Use this function to get the current log output function.
@@ -15,10 +14,10 @@ void SDL_LogGetOutputFunction(SDL_LogOutputFunction* callback,
 == Function Parameters ==
 {|
 |'''callback'''
-|the callback function to get; see [[#Remarks|Remarks]] for details
+|a pointer filled in with the current log callback; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|a pointer to a pointer that is passed to '''callback'''
+|a pointer filled in with the pointer that is passed to '''callback'''
 |}
 
 == Code Examples ==
@@ -35,18 +34,18 @@ void* SDL_LogOutputFunction(void*           userdata,
                             const char*     message)
 ```
 : where its parameters are:
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogGetOutputFunction]]()||
- ||<code>category</code>||^the log category to query^||
- ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#priority|below]] for details||
- ||<code>message</code>||^the log output message ???^||
-<span id="priority"></span>
-: <code>priority</code> may be one of the following ^or NULL ???^:
-: <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
+ ||<code>category</code>||the category of the message; see [[#category|Remarks]] for details||
+ ||<code>priority</code>||the priority of the message; see [[#priority|Remarks]] for details||
+ ||<code>message</code>||the message being output||
 
-: <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
+ <span id="category"></span>
+ The <code>category</code> will be one of:
+ <<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
 
-
-''You can add useful comments here''
+ <span id="priority"></span>
+ The <code>priority</code> will be one of:
+ <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 == Related Functions ==
 :[[SDL_LogSetOutputFunction]]
