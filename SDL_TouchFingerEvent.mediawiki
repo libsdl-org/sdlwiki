@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_TouchFingerEvent =
 A structure that contains finger touch event information.
@@ -18,34 +17,32 @@ A structure that contains finger touch event information.
 |-
 |SDL_TouchID
 |'''touchId'''
-|the touch device ,,id,, ^index^
+|the touch device index
 |-
 |SDL_FingerID
 |'''fingerId'''
-|
+|the finger index
 |-
 |float
 |'''x'''
-|^the normalized x-axis location of the touch event^
+|the x-axis location of the touch event, normalized (0...1)
 |-
 |float
 |'''y'''
-|^the normalized y-axis location of the touch event^
+|the y-axis location of the touch event, normalized (0...1)
 |-
 |float
 |'''dx'''
-|^the distance moved in the x-axis, normalized^
+|the distance moved in the x-axis, normalized (0...1)
 |-
 |float
 |'''dy'''
-|^the distance moved in the y-axis, normalized^
+|the distance moved in the y-axis, normalized (0...1)
 |-
 |float
 |'''pressure'''
-|^the quantity of pressure applied, normalized (0...1)^
+|the quantity of pressure applied, normalized (0...1)
 |}
-
-<<Color2(green,Note that touchID is described as "the touch device index" in all 3 other similar functions.)>>
 
 == Code Examples ==
 ```c++
