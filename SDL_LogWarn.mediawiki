@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogWarn =
 Use this function to log a message with SDL_LOG_PRIORITY_WARN.
