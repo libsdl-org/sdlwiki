@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogSetAllPriority =
 Use this function to set the priority of all log categories.
@@ -14,7 +13,7 @@ void SDL_LogSetAllPriority(SDL_LogPriority priority)
 == Function Parameters ==
 {|
 |'''priority'''
-|the [[SDL_LogPriority]] to assign; see [[#Remarks|Remarks]] for details
+|the [[SDL_LogPriority]] to assign; see [[#priority|Remarks]] for details
 |}
 
 == Code Examples ==
@@ -23,9 +22,8 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-'''priority''' may be one of the following ^or NULL ???^:
+<span id="priority"></span>
+The '''priority''' can be one of:
 <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 == Related Functions ==
