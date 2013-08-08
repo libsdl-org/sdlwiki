@@ -13,7 +13,7 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 == Function Parameters ==
 {|
 |'''cvt'''
-|an [[SDL_AudioCVT]] structure that was previously set up; see [[Remarks]] for details
+|an [[SDL_AudioCVT]] structure that was previously set up; see [[#Remarks]] for details
 |}
 
 == Return Value ==
