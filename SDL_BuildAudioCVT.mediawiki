@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_BuildAudioCVT =
 Use this function to initialize an [[SDL_AudioCVT]] structure for conversion.
@@ -29,7 +28,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 |the number of channels in the source
 |-
 |'''src_rate'''
-|the frequency or samples-per-second of the source
+|the frequency (samples-frames-per-second) of the source
 |-
 |'''dst_format'''
 |the destination format of the audio data; for more info see [[SDL_AudioFormat]]
@@ -38,32 +37,23 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 |the number of channels in the destination
 |-
 |'''dst_rate'''
-|the frequency or samples-per-second of the destination
+|the frequency (samples-frames-per-second) of the destination
 |}
 
-<<Color2(green,Should "frequency or samples-per-second" be changed to "frequency (samples per second)" or can rate be two different types of units?)>>
-
 == Return Value ==
-Returns 1 if the audio filter is set up, 0 if there is no conversion needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.
-
-<<Color2(purple,If audio format conversion is not supported this function returns -1.)>>
+Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+// Change stereo audio at 48000Hz from Float32 to Int16.
+SDL_AudioCVT cvt;
+SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
 ```
 
 == Remarks ==
 Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.
 
 For information on audio formats see [[SDL_AudioSpec]].
-
-*<br/>Currently only rate conversions of 2^x^ and (1/2)^x^ with x > 0 are done, ,,nearing,, ^whichever most closely approximates^ the requested rate conversion.<br/>*
-
-<<Color2(green,Is there a 'you can call' function to "automatically" get more information in this case like there was for [[SDL_SetTextureColorMod]] [[SDL_SetTextureBlendMode]] [[SDL_SetTextureAlphaMod]] etc?  I thought it would be [[SDL_ConvertAudio]]() but that seems to ''use'' the struct not set it up.  If this is the only other RF then does the programmer need to determine whether conversion is possible and manually set that as a fixed data value when the struct is first set up?)>>
-
-^You can call [[some function]]() to fill in an [[SDL_AudioCVT]] structure with the remaining information about the current audio converter.  This structure will have the <code>needed</code> member/mask set to 1 if conversion is possible.^
-
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
