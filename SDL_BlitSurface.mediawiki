@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_BlitSurface =
 Use this function to perform a fast blit from the source surface to the destination surface.
@@ -51,66 +50,44 @@ If '''srcrect''' is NULL, the entire surface is copied. If '''dstrect''' is NULL
 
 The final blit rectangle is saved in '''dstrect''' after all clipping is performed ('''srcrect''' is not modified).
 
+The blit semantics for surfaces with and without blending and colorkey are defined as follows:
+    RGBA->RGB:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source alpha-channel and per-surface alpha)
+        SDL_SRCCOLORKEY ignored.
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB.
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        RGB values of the source color key, ignoring alpha in the
+        comparison.
 
-<<Color2(green,This section needs to be modified to reflect the concepts in the new version.  alpha and colorkey have been replaced in 2.0.)>>
-The blit semantics for surfaces with and without alpha and colorkey are defined as follows:
+    RGB->RGBA:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source per-surface alpha)
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB, set destination alpha to source per-surface alpha value.
+      both:
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        source color key.
 
- RGBA->RGB:
-  SDL_SRCALPHA set:
-   alpha-blend (using alpha-channel).
-   SDL_SRCCOLORKEY ignored.
-  SDL_SRCALPHA not set:
-   copy RGB.
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source color key, ignoring alpha in the comparison.
+    RGBA->RGBA:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source alpha-channel and per-surface alpha)
+        SDL_SRCCOLORKEY ignored.
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy all of RGBA to the destination.
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        RGB values of the source color key, ignoring alpha in the
+        comparison.
 
- RGB->RGBA:
-  SDL_SRCALPHA set:
-   alpha-blend (using the source per-surface alpha value);
-   set destination alpha to opaque.
-  SDL_SRCALPHA not set:
-   copy RGB, set destination alpha to source per-surface alpha value.
-  both:
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the source color key.
-
- RGBA->RGBA:
-  SDL_SRCALPHA set:
-   alpha-blend (using the source alpha channel) the RGB values;
-   leave destination alpha untouched. [Note: is this correct?]
-   SDL_SRCCOLORKEY ignored.
-  SDL_SRCALPHA not set:
-   copy all of RGBA to the destination.
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the RGB values of the source color key, ignoring alpha in the comparison.
-
- RGB->RGB:
-  SDL_SRCALPHA set:
-   alpha-blend (using the source per-surface alpha value).
-  SDL_SRCALPHA not set:
-   copy RGB.
-  both:
-   if SDL_SRCCOLORKEY set, only copy the pixels matching the source color key.
-
-*<br/>The results of blitting operations vary greatly depending on whether SDL_SRCALPHA is set or not. See SDL_SetAlpha (<<Color2(green,This does not have a page. Does it still exist?)>>) for an explanation of how this affects your results. Colorkeying and alpha attributes also interact with surface blitting, as the following pseudo-code should hopefully explain. 
-```
-if (source surface has SDL_SRCALPHA set) {
-    if (source surface has alpha channel (that is, format->Amask != 0))
-        blit using per-pixel alpha, ignoring any color key
-    else {
-        if (source surface has SDL_SRCCOLORKEY set)
-            blit using the color key AND the per-surface alpha value
-        else
-            blit using the per-surface alpha value
-    }
-} else {
-    if (source surface has SDL_SRCCOLORKEY set)
-        blit using the color key
-    else
-        ordinary opaque rectangular blit
-}
-```
-
-Note: the SDL blitter does not (yet) have the capability of scaling the blitted surfaces up or down like it is the case with other more sophisticated blitting mechanisms. You have to figure something out for yourself if you want to scale images (e.g. use SDL_gfx).
-
-Note: when you're blitting between two alpha surfaces, normally the alpha of the destination acts as a mask. If you want to just do a "dumb copy" that doesn't blend, you have to turn off the SDL_SRCALPHA flag on the source surface. This is how it's supposed to work, but can be surprising when you're trying to combine one image with another and both have transparent backgrounds. <br/>*
+    RGB->RGB:
+      Source surface blend mode set to SDL_BLENDMODE_BLEND:
+        alpha-blend (using the source per-surface alpha)
+      Source surface blend mode set to SDL_BLENDMODE_NONE:
+        copy RGB.
+      both:
+        if SDL_SRCCOLORKEY set, only copy the pixels matching the
+        source color key.
 
 == Related Functions ==
 :[[SDL_LowerBlit]]
