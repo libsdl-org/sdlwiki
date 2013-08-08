@@ -168,10 +168,6 @@ SDL_PushEvent(&user_event);
 |<bgcolor="#EDEDED">''Event Structure''
 |<bgcolor="#EDEDED">''SDL_Event Field''
 |-
-|<style="color: #808080;">SDL_ACTIVEEVENT
-|<style="color: #808080;">[[SDL_ActiveEvent]]
-|<style="color: #808080;">'''active'''
-|-
 |SDL_DOLLARGESTURE
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
@@ -243,10 +239,6 @@ SDL_PushEvent(&user_event);
 |SDL_USEREVENT
 |[[SDL_UserEvent]]
 |'''user'''
-|-
-|<style="color: #808080;">SDL_VIDEORESIZE
-|<style="color: #808080;">[[SDL_ResizeEvent]]
-|<style="color: #808080;">'''resize'''
 |-
 |SDL_WINDOWEVENT
 |[[SDL_WindowEvent]]
