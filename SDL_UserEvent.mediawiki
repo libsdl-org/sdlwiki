@@ -31,7 +31,7 @@ A structure that contains an application-defined event type.
 == Code Examples ==
 ```c++
 Uint32 myEventType = SDL_RegisterEvents(1);
-if (myEventType != -1) {
+if (myEventType != ((Uint32)-1)) {
     SDL_Event event;
     SDL_zero(event);
     event.type = myEventType;
