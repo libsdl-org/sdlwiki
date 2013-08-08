@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_EventState =
 Use this function to set the state of processing events by type.
@@ -22,7 +21,7 @@ Uint8 SDL_EventState(Uint32 type,
 |}
 
 == Return Value ==
-Returns an 8-bit bitmask of the current processing state.  See [[#Remarks|Remarks]] for details; call [[SDL_GetError]]() for more information.
+Returns SDL_DISABLE or SDL_ENABLE, representing the processing state of the event before this function makes any changes to it.
 
 == Code Examples ==
 ```c++
@@ -44,7 +43,6 @@ You can add your code example here
 |SDL_ENABLE
 |the event will be processed normally
 |}
-
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
