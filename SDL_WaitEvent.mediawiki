@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_WaitEvent =
 Use this function to wait indefinitely for the next available event.
@@ -14,7 +13,7 @@ int SDL_WaitEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|if not NULL, the next event is removed from the queue and stored in that area ''-or-'' ^the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL^
+|the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL
 |}
 
 == Return Value ==
@@ -26,14 +25,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Is this true in 2.0?)>>
-*As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode. *  
+/!\As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
 
 == Related Functions ==
-:[[SDL_PollEvent]] *???
-:[[SDL_WaitEventTimeout]]???
+:[[SDL_PumpEvents]]
+:[[SDL_PollEvent]]
+:[[SDL_WaitEventTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
