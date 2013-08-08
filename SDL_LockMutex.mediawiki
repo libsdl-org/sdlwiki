@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= SDL_LockMutex =
+Use this function to lock a mutex created with [[SDL_CreateMutex]]().
+
+
+== Syntax ==
+```c++
+void SDL_LockMutex(SDL_mutex* mutex)
+```
+
+== Function Parameters ==
+{|
+|'''mutex''' 
+|the mutex to lock
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateMutex]]
+:[[SDL_DestroyMutex]]
+:[[SDL_UnlockMutex]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
