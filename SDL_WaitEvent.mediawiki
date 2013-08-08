@@ -27,6 +27,8 @@ You can add your code example here
 == Remarks ==
 /!\As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
 
+If event is not NULL, the next event is removed from the queue and stored in the SDL_Event structure pointed to by event.
+
 == Related Functions ==
 :[[SDL_PumpEvents]]
 :[[SDL_PollEvent]]
