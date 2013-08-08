@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_MixAudio =
-Use this function to mix audio data.
+This function is a legacy means of mixing audio. New programs might want to use [[SDL_MixAudioFormat]]() instead.
 
 
 == Syntax ==
@@ -76,19 +76,17 @@ SDL_CloseAudio();
 ```
 
 == Remarks ==
-This takes an audio buffer '''src''' of '''len''' bytes in the playing audio format and mixes it into '''dst''', performing addition, volume adjustment, and overflow clipping.
 
-Note that this does not change hardware volume.
+This function is equivalent to calling
 
-This is provided for convenience -- you can mix your own audio data.
+```c++
+SDL_MixAudioFormat(dst, src, format, len, volume);
+```
 
-Do not use this function for mixing together more than two streams of sample data. The output from repeated application of this function may be distorted by clipping, because there is no accumulator with greater range than the input (not to mention this being an inefficient way of doing it). Use mixing functions from SDL_mixer, OpenAL, or write your own mixer instead.
-
-It is a common misconception that this function is required to write audio data to an output stream in the audio-callback.  While you can do that, [[SDL_MixAudio]]() is really only needed when you're mixing a single audio stream with a volume adjustment.
+where '''format''' is the obtained format of the audio device from the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
 :[[SDL_MixAudioFormat]]
-:[[SDL_OpenAudio]] *
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
