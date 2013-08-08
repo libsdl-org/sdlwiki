@@ -12,12 +12,10 @@ Sint64 SDL_RWseek(SDL_RWops* context,
                   int        whence)
 ```
 
-<<Color2(green,Seems like the type for '''context''' might have changed from SDL_RWops* to struct SDL_RWops*.  Which is correct?)>>
-
 == Function Parameters ==
 {|
 |'''context'''
-|^a data stream containing the seek function???^
+|A pointer to an [[SDL_RWops]] structure
 |-
 |'''offset'''
 |an offset in bytes, relative to '''whence''' location; can be negative
@@ -30,39 +28,22 @@ Sint64 SDL_RWseek(SDL_RWops* context,
 Returns the final offset in the data stream after the seek or -1 on error.
 
 == Code Examples ==
-*<br/>
 ```c++
-#include <stdio.h>
-#include "SDL_rwops.h"
-
-int main(int argc, char *argv[])
-{
-  Sint64 length;
-  SDL_RWops *rw=SDL_RWFromFile("myfile.bin","rb");
-  if(rw==NULL)
-  {
-    fprintf(stderr,"Couldn't open myfile.bin\n");
-    return(1);
-  }
-
-  /* Seek to 0 bytes from the end of the file -- i.e. the exact end of file */
-  length=SDL_RWseek(rw,0,SEEK_END);
-  SDL_RWclose(rw);
-  if(length<0)
-  {
-    fprintf(stderr,"Could not seek inside myfile.bin\n");
-    return(2);
-  }
-
-  fprintf(stderr,"myfile.bin is %d bytes long\n",length);
-  return(0);
+SDL_RWops *rw = SDL_RWFromFile("myfile.bin","rb");
+if (rw != NULL) {
+    /* Seek to 0 bytes from the end of the file */
+    Sint64 length = SDL_RWseek(rw,0,SEEK_END);
+    SDL_RWclose(rw);
+    if (length < 0) {
+        printf("Could not seek inside myfile.bin\n");
+    } else {
+        printf("myfile.bin is %d bytes long\n",length);
+    }
 }
-```<<BR>>*
+```
 
 == Remarks ==
-*<br/>This is not a predefined function, just a macro that calls whatever seek function has been placed in the SDL_RWops structure.<br/>*
-
-[[SDL_RWseek]] seeks to '''offset''' relative to '''whence'''. <<Color2(green,Should SDL_RWseek have () like a function even though it's a macro?)>>
+This function seeks to '''offset''' relative to '''whence'''
 
 <span id="whence"></span>'''whence''' may be any of the following values:
 {|
@@ -75,6 +56,10 @@ int main(int argc, char *argv[])
 |RW_SEEK_END
 |seek relative to the end of data
 |}
+
+If this stream can not seek, it will return -1.
+
+SDL_RWseek is actually a macro that calls the SDL_RWops's ''''seek''' method appropriately, to simplify application development.
 
 == Related Functions ==
 :[[SDL_RWclose]]
