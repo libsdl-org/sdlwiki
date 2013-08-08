@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_EventType =
 An enumeration of the types of events that can be delivered.
@@ -170,19 +169,24 @@ An enumeration of the types of events that can be delivered.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Event e;
+while (SDL_PollEvent(&e) {
+    if (e.type == SDL_KEYDOWN) {
+        printf("User just pressed down a key!\n");
+    }
+}
 ```
 
 == Remarks ==
 === Application Events ===
-An SDL_QUIT event is generated when the user tries to close the last remaining SDL_Window.  If it is ignored or filtered out, the window will remain open.  If it is not ignored or filtered, it is queued normally and the window is allowed to close.  When the window is closed, screen updates will complete, but have no effect.
+An SDL_QUIT event is generated when the last existing window is destroyed via [[SDL_DestroyWindow]]. If the application continues after this event and creates another window, SDL_QUIT will be sent again next time the last remaining window is destroyed.
 
-On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event. The application is still responsible for terminating itself, however.
+SDL_QUIT is not limited to window destruction. On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event. The application is still responsible for terminating itself, however. Applications that ignore Command-Q will fail Mac App Store certification.
 
 [[SDL_Init]]() installs signal handlers for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
 
 === Android and iOS Events ===
-What we currently label as "Android and iOS events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent|SDL_PollEvent()]] loop, but you should set up a callback with [[SDL_SetEventFilter|SDL_SetEventFilter()]] for these specific events.
+What we currently label as "Android and iOS events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent|SDL_PollEvent()]] loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
 
 This is how these events currently map to the underlying OS:
 
@@ -194,33 +198,33 @@ This is how these events currently map to the underlying OS:
 |-
 |SDL_APP_TERMINATING
 |The application is being terminated by the OS.
-|applicationWillTerminate()
-|onDestroy()
+|<code>applicationWillTerminate()</code>
+|<code>onDestroy()</code>
 |-
 |SDL_APP_LOWMEMORY
 |The application is low on memory, free memory if possible.
-|applicationDidReceiveMemoryWarning()
-|onLowMemory()
+|<code>applicationDidReceiveMemoryWarning()</code>
+|<code>onLowMemory()</code>
 |-
 |SDL_APP_WILLENTERBACKGROUND
 |The application is about to enter the background.
-|applicationWillResignActive()
-|onPause()
+|<code>applicationWillResignActive()</code>
+|<code>onPause()</code>
 |-
 |SDL_APP_DIDENTERBACKGROUND
 |The application did enter the background and may not get CPU for some time.
-|applicationDidEnterBackground()
-|onPause()
+|<code>applicationDidEnterBackground()</code>
+|<code>onPause()</code>
 |-
 |SDL_APP_WILLENTERFOREGROUND
 |The application is about to enter the foreground.
-|applicationWillEnterForeground()
-|onResume()
+|<code>applicationWillEnterForeground()</code>
+|<code>onResume()</code>
 |-
 |SDL_APP_DIDENTERFOREGROUND
 |The application is now interactive.
-|applicationDidBecomeActive()
-|onResume()
+|<code>applicationDidBecomeActive()</code>
+|<code>onResume()</code>
 |}
 
 == Related Structures ==
@@ -249,6 +253,8 @@ This is how these events currently map to the underlying OS:
 
 
 == Related Functions ==
+: [[SDL_PollEvent]]
+: [[SDL_SetEventFilter]]
 
 ----
 [[CategoryEnum]], [[CategoryEvents]]
