@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_ReadLE16 =
+= SDL_ReadLE32 =
 Use this function to read 32 bits of little-endian data from an [[SDL_RWops]] and return in native format.
 
 
