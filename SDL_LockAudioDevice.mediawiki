@@ -41,7 +41,7 @@ The lock manipulated by these functions protects the audio callback function spe
 
 Calling this function from inside your audio callback is unnecessary. SDL obtains this lock before calling your function, and releases it when the function returns.
 
-You should not hold the lock longer that absolutely necessary. If you hold it too long, you'll experience dropouts in your audio playback. Ideally, your application locks the device, sets a few variables and unlocks again. Do not do heavy work while holding the lock for a device.
+You should not hold the lock longer than absolutely necessary. If you hold it too long, you'll experience dropouts in your audio playback. Ideally, your application locks the device, sets a few variables and unlocks again. Do not do heavy work while holding the lock for a device.
 
 It is safe to lock the audio device multiple times, as long as you unlock it an equivalent number of times. The callback will not run until the device has been unlocked completely in this way. If your application fails to unlock the device appropriately, your callback will never run, you might hear repeating bursts of audio, and [[SDL_CloseAudioDevice]]() will probably deadlock.
 
