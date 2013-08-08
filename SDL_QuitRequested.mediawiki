@@ -19,11 +19,14 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This is actually a macro that calls [[SDL_PumpEvents]]() followed by [[SDL_PeepEvents]](). Since it pumps the event queue, it can only be used in the main thread.
+
+It's perfectly normal for applications to just look for SDL_QUIT in their event loop, too, without using this macro.
 
 == Related Functions ==
 :[[SDL_PollEvent]]
 :[[SDL_WaitEvent]]
+:[[SDL_PumpEvents]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
