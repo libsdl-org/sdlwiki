@@ -20,7 +20,7 @@ This category contains functions for handling surface creation and blitting as w
 <<FullSearchCached(category:CategoryStruct CategorySurface -SGStructures)>>
 
 == Functions ==
-<<FullSearch(category:CategorySurface -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategorySurface -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
