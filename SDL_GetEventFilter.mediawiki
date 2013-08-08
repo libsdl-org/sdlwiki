@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_GetEventFilter =
-Use this function to return the current event filter.
+Use this function to query the current event filter.
 
 
 == Syntax ==
@@ -15,16 +14,14 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
 == Function Parameters ==
 {|
 |'''filter'''
-|the callback function to get; see [[#Remarks|Remarks]] for details
+|the current callback function will be stored here; see [[#Remarks|Remarks]] for details
 |-
 |'''userdata'''
-|a pointer to a pointer that is passed to '''filter'''
+|the pointer that is passed to the current event filter will be stored here
 |}
 
 == Return Value ==
-Returns SDL_TRUE on success or SDL_FALSE if there is no event filter set,,; call [[SDL_GetError]]() for more information.,,  
-
-<<Color2(green,The header says it "Returns the current event filter" but I suspect this isn't referring to the actual return value but the output of the function.  Should that be included here?)>>
+Returns SDL_TRUE on success or SDL_FALSE if there is no event filter set.
 
 == Code Examples ==
 ```c++
@@ -32,17 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function can be used to "chain" filters.
-
-<<Color2(green,Should the following be included here as it is in [[SDL_SetEventFilter]]()?  Right now this is different.)>>
-The function prototype for '''filter''' is:
- ```
-int SDL_EventFilter(void*      userdata,
-                    SDL_Event* event)
-```
-: where its parameters are:
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_GetEventFilter]]()||
- ||<code>event</code>||the desired event to query from the queue ???||
+This function can be used to "chain" filters, by saving the existing filter before replacing it with a function that will call that saved filter.
 
 == Related Functions ==
 :[[SDL_SetEventFilter]]
