@@ -62,6 +62,8 @@ SDL_RWops *MyCustomRWop()
 ```
 
 == Remarks ==
+Applications do not need to use this function unless they are providing their own RWops implementation. If you just need a RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc.
+
 You must free the returned pointer with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. Since all RWops must free themselves when their '''close''' method is called, all RWops must be allocated through this function, so they can all be freed correctly with [[SDL_FreeRW]]().
 
 == Related Functions ==
