@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= Audio Device Management, Playing and Recording =
+= Audio Device Management and Audio Playback =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_audio.h SDL_audio.h]
 
