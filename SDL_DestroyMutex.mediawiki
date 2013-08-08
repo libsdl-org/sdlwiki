@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_DestroyMutex =
-Use this function to destroy a mutex.
+Use this function to destroy a mutex created with [[SDL_CreateMutex]]().
 
 
 == Syntax ==
@@ -17,36 +13,20 @@ void SDL_DestroyMutex(SDL_mutex* mutex)
 == Function Parameters ==
 {|
 |'''mutex''' 
-|^the mutex to destroy^ 
+|the mutex to destroy
 |}
 
 
 == Code Examples ==
-```c++
-SDL_mutex *mutex;
+<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
-//First create the mutex..
-mutex = SDL_CreateMutex();
-
-// ... use mutex in code
-
-
-// When done using the mutex, destroy it
-
-// MAKE sure to unlock the mutex prior to destroying it
-if( SDL_mutexV( mutex ) )
-  printf("\nSDL Mutex unlock error:%s", SDL_GetError());
-else
-  // When done with the mutex delete it
-  SDL_DestroyMutex( mutex );
-```
 == Remarks ==
-[[SDL_DestroyMutex]] must be called on any mutex that is no longer needed. Failure to destroy a mutex will result in a system memory or resource leak. While it is safe to destroy a mutex that is UNLOCKED, it is not safe to attempt to destroy a locked mutex and may result in undefined behavior depending on the platform.
-
-Any attempt to reference a mutex after it has been destroyed will cause access to an invalid memory pointer which may lead to memory corruption or a segmentation fault.
+This function must be called on any mutex that is no longer needed. Failure to destroy a mutex will result in a system memory or resource leak. While it is safe to destroy a mutex that is UNLOCKED, it is not safe to attempt to destroy a locked mutex and may result in undefined behavior depending on the platform.
 
 == Related Functions ==
-: [[SDL_CreateMutex]] *
+:[[SDL_CreateMutex]]
+:[[SDL_LockMutex]]
+:[[SDL_UnlockMutex]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
