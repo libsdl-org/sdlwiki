@@ -1,6 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
+{|
+|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
+|}
 
 = SDL_RWops =
 A structure that provides an abstract interface to stream I/O.
@@ -10,31 +12,31 @@ A structure that provides an abstract interface to stream I/O.
 {|
 |Sint64 (*)(SDL_RWops *)
 |'''size'''
-|Callback that reports stream size; see [[#size|Remarks]]
+|Callback that reports stream size; see [[#Size Function|Remarks]]
 |-
 |Sint64 (*)(SDL_RWops *, Sint64, int)
 |'''seek'''
-|Callback that seeks in stream; see [[#seek|Remarks]]
+|Callback that seeks in stream; see [[#Seek Function|Remarks]]
 |-
 |size_t (*)(SDL_RWops *, void *, size_t, size_t)
 |'''read'''
-|Callback that reads from the stream; see [[#read|Remarks]]
+|Callback that reads from the stream; see [[#Read Function|Remarks]]
 |-
 |size_t (*)(SDL_RWops *, const void *, size_t, size_t)
 |'''write'''
-|Callback that writes to the stream; see [[#write|Remarks]]
+|Callback that writes to the stream; see [[#Write Function|Remarks]]
 |-
 |int (*)(SDL_RWops *)
 |'''close'''
-|Callback that closes the stream; see [[#close|Remarks]]
+|Callback that closes the stream; see [[#Close Function|Remarks]]
 |-
 |Uint32
 |'''type'''
-|Type of stream; see [[#type|Remarks]]
+|Type of stream; see [[#Stream Type|Remarks]]
 |-
 |union
 |'''hidden'''
-|Type-specific data; see [[#hidden|Remarks]]
+|Type-specific data; see [[#Hidden Union|Remarks]]
 |}
 
 
@@ -62,12 +64,14 @@ Most of the fields of this structure are function pointers that are used as call
 
 Please note that many of these function pointers used ints in SDL 1.2; to give them a better range, they have become Sint64 in SDL 2.0.
 
-=== size ===
+=== Size Function ===
 '''size''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
 
-=== seek ===
-'''seek''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
+=== Seek Function ===
+'''seek''' is a function pointer that positions the next read/write operation in the stream. This seeks in byte offsets. If the stream can not seek (either because it doesn't make sense for the stream type, or there was an error), this function returns -1, otherwise it returns the new position.
+Seeking zero bytes from RW_SEEK_CUR is a common way to determine the current stream position.
 
+The final argument works like the standard fseek() "whence":
 {|
 |Identifier
 |Value
@@ -86,6 +90,22 @@ Please note that many of these function pointers used ints in SDL 1.2; to give t
 |Seek relative to the end of data
 |}
 
+=== Read Function ===
+'''read''' is a function pointer that reads from the stream. It reads up to num objects each of size bytes into the buffer pointer to by ptr. Returns the number of objects read, which may be less than requested. Returns 0 on error or EOF.
+
+=== Write Function ===
+'''write''' is a function pointer that writes to the stream. It writes exactly num objects each of size bytes from the buffer pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
+
+=== Close Function ===
+'''close''' is a fucntion pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
+
+=== Stream Type ===
+
+(write me.)
+
+=== Hidden Union ===
+
+(write me.)
 
 == Related Functions ==
 :[[SDL_AllocRW]]
