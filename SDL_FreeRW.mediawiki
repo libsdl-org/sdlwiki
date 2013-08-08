@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_FreeRW =
-Use this function to *free an SDL_RWops structure allocated by [[SDL_AllocRW]](). *
+Use this function to free an SDL_RWops structure allocated by [[SDL_AllocRW]]().
 
 
 == Syntax ==
@@ -14,26 +13,23 @@ void SDL_FreeRW(SDL_RWops* area)
 == Function Parameters ==
 {|
 |'''area'''
-|^the SDL_RWops structure to be freed^
+|the SDL_RWops structure to be freed
 |}
 
 == Code Examples ==
-*
 ```c++
-#include "SDL_rwops.h"
-
-  void dumb_example()
-  {
-    SDL_RWops *rw=SDL_AllocRW();
-    if(rw==NULL) return;
-
-    SDL_FreeRW(rw);
-  }
+/* this would be your RWops implementation's "close" method. */
+void close_my_rwops(SDL_RWops *rw)
+{
+    if(rw != NULL) {
+        /* close any other resources. */
+        SDL_FreeRW(rw);
+    }
+}
 ```
-*
 
 == Remarks ==
-*<br/>Only use [[SDL_FreeRW]]() on memory allocated by [[SDL_AllocRW]]().  Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for it. <br/>*
+Only use [[SDL_FreeRW]]() on pointers returned by [[SDL_AllocRW]](). The pointer is invalid as soon as this function returns. Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for managing that memory in their '''close''' method.
 
 == Related Functions ==
 :[[SDL_AllocRW]] *
