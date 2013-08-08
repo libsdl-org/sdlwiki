@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RegisterEvents =
 Use this function to allocate a set of user-defined events, and return the beginning event number for that set of events.
@@ -14,25 +13,20 @@ Uint32 SDL_RegisterEvents(int numevents)
 == Function Parameters ==
 {|
 |'''numevents'''
-|^the number of events to be allocated^
+|the number of events to be allocated
 |}
 
 == Return Value ==
 The beginning event number, or (Uint32)-1 if there are not enough user-defined events left.
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_UserEvent, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Is this a remark also or only a return value?)>>
-If there aren't enough user-defined events left, this function returns (Uint32)-1.
-
+Registering zero events is an error and will return (Uint32)-1.
 
 == Related Functions ==
+:[[SDL_PushEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
