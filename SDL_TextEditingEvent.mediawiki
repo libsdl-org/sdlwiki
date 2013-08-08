@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_TextEditingEvent =
 A structure that contains keyboard text editing event information.
@@ -18,18 +17,16 @@ A structure that contains keyboard text editing event information.
 |-
 |char
 |'''text'''
-|the editing text; * at most SDL_TEXTEDITINGEVENT_TEXT_SIZE - 1 characters *
+|the editing text
 |-
 |Sint32
 |'''start'''
-|,,the start cursor of selected editing text,, ^the location to begin editing from^
+|the location to begin editing from
 |-
 |Sint32
 |'''length'''
-|,,the length of selected editing text,, ^the number of characters to edit from the start point^
+|the number of characters to edit from the start point
 |}
-
-<<Color2(green,The '''text''' field includes SDL_TEXTEDITINGEVENT_TEXT_SIZE per the header but that would be highly irregular for the formatting of this wiki. Where should it go?  There is also a #define SDL_TEXTEDITINGEVENT_TEXT_SIZE (32).  Should that info be included anywhere?)>>
 
 == Code Examples ==
 ```c++
