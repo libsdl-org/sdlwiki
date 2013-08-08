@@ -45,15 +45,23 @@ Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or a ne
 
 == Code Examples ==
 ```c++
-// Change stereo audio at 48000Hz from Float32 to Int16.
+// Change 1024 stereo sample frames at 48000Hz from Float32 to Int16.
 SDL_AudioCVT cvt;
 SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
+SDL_assert(cvt.needed); // obviously, this one is always needed.
+cvt.len = 1024 * 2 * 4;  // 1024 stereo float32 sample frames.
+cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
+// read your float32 data into cvt.buf here.
+SDL_ConvertAudio(cvt);
+// cvt.buf has cvt.len_cvt bytes of converted data now.
 ```
 
 == Remarks ==
 Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.
 
-For information on audio formats see [[SDL_AudioSpec]].
+This function will zero out every field of the [[SDL_AudioCVT]], so it must be called before the application fills in the final buffer information.
+
+Once this function has returned successfully, and reported that a conversion is necessary, the application fills in the rest of the fields in [[SDL_AudioCVT]], now that it knows how large a buffer it needs to allocate, and then can call [[SDL_ConvertAudio]]() to complete the conversion.
 
 == Related Functions ==
  [[SDL_ConvertAudio]]
