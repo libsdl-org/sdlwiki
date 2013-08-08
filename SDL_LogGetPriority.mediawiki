@@ -25,13 +25,13 @@ You can add your code example here
 ```
 
 == Remarks ==
- <span id="category"></span>
- The '''category''' can be one of:
- <<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
+<span id="category"></span>
+The '''category''' can be one of:
+<<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
 
- <span id="priority"></span>
- The returned priority will be one of:
- <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
+<span id="priority"></span>
+The returned priority will be one of:
+<<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 == Related Functions ==
 :[[SDL_LogSetPriority]]
