@@ -41,10 +41,7 @@ You can add your code example here
 This is a semi-private function and it performs low-level surface blitting, assuming the input rectangles have already been clipped.
 
 == Related Functions ==
-:[[SDL_LowerBlit]] ???
-:[[SDL_SetClipRect]] ???
-:[[SDL_SoftStretch]] ???
-:[[SDL_UpperScaledBlit]]
+:[[SDL_BlitScaled]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
