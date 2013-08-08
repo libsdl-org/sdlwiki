@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogPriority =
 An enumeration of the predefined log priorities.
@@ -38,11 +37,25 @@ You can add your code example here
 ```
 
 == Remarks ==
-By default logs are quiet, but if you're debugging SDL you might want:
+<!-- # Start Include Default Priority -->
+The default log priorities are as follows:
+{|
+|<code>SDL_LOG_CATEGORY_APPLICATION</code>
+|<code>SDL_LOG_PRIORITY_INFO</code>
+|-
+|<code>SDL_LOG_CATEGORY_ASSERT</code>
+|<code>SDL_LOG_PRIORITY_WARN</code>
+|-
+|<code>SDL_LOG_CATEGORY_TEST</code>
+|<code>SDL_LOG_PRIORITY_VERBOSE</code>
+|-
+|everything else
+|<code>SDL_LOG_PRIORITY_CRITICAL</code>
+|}
+<!-- # End Include Default Priority -->
+
+If you're debugging SDL you might want to call:
  ```SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);```
-
-By default the SDL_LOG_CATEGORY_APPLICATION category is enabled at the INFO level and all other [[SDL_LOG_CATEGORY]] categories are enabled at the CRITICAL level.
-
 
 == Related Functions ==
 :[[SDL_LogMessage]]
