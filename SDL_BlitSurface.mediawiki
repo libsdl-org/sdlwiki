@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_BlitSurface =
-Use this function to perform a fast blit from the source surface to the destination surface.
+Use this function to perform a fast surface copy to a destination surface.
 
 
 == Syntax ==
@@ -90,9 +90,8 @@ The blit semantics for surfaces with and without blending and colorkey are defin
         source color key.
 
 == Related Functions ==
+:[[SDL_BlitScaled]]
 :[[SDL_LowerBlit]]
-:[[SDL_SoftStretch]]
-:[[SDL_UpperBlit]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
