@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_WaitThread =
-Use this function to wait for a thread to finish. As a side effect, the function will free the memory allocated to the SDL_Thread structure.
+Use this function to wait for a thread to finish.
 
 
 == Syntax ==
@@ -17,7 +13,7 @@ void SDL_WaitThread(SDL_Thread* thread,
 == Function Parameters ==
 {|
 |'''thread''' 
-|The SDL_Thread pointer that was returned from the SDL_CreateThread call that started this thread. Note that the pointer becomes invalid after SDL_WaitThread finishes, because this function will free the memory pointed to. 
+|The SDL_Thread pointer that was returned from the [[SDL_CreateThread]]() call that started this thread.
 |-
 |'''status''' 
 |Pointer to an integer that will receive the value returned from the thread function by its 'return', see [[#Remarks|Remarks]] for details 
@@ -73,12 +69,14 @@ int TestThread( void *ptr )
         return cnt;
 }
 ```
-== Remarks ==
-The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL. The return code is the value returned by the 'return' call in the thread function. This can be a 'status' on the thread, or the result of a computation the thread was created to perform.
 
+== Remarks ==
+The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL. The return code is the value returned by the 'return' statement in the thread function.
+
+Note that the thread pointer is freed by this function and is not valid afterward.
 
 == Related Functions ==
-: [[SDL_CreateThread]] *
+: [[SDL_CreateThread]]
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
