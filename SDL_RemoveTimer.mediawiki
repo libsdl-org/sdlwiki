@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_RemoveTimer =
-Use this function to remove a timer, ^created with [[SDL_AddTimer]](),^ knowing its ID.
-
-<<Color2(green,How do you get the ID?  Should that info be included on this page?)>>
+Use this function to remove a timer created with [[SDL_AddTimer]]().
 
 
 == Syntax ==
@@ -20,7 +17,7 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID t)
 |}
 
 == Return Value ==
-Returns SDL_TRUE if the timer is removed or SDL_FALSE on failure; call [[SDL_GetError]]() for more information. <<Color2(green,Call SDL_GetError here?)>>
+Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't found.
 
 == Code Examples ==
 ```c++
@@ -36,7 +33,7 @@ SDL_RemoveTimer(my_timer_id);
 ```
 
 == Remarks ==
-/!\ It is not safe to remove a timer multiple times.
+''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_AddTimer]]
