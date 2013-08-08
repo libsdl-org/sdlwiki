@@ -48,7 +48,7 @@ SDL_FreeWAV(wav_buffer);
 
 
 == Remarks ==
-This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryFileIO|RWOPS]] API.
+This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryIO|RWOPS]] API.
 
 == Related Functions ==
 : [[SDL_LoadWAV_RW]]
