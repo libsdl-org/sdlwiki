@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
-
-
 
 = SDL_CreateWindowAndRenderer =
 Use this function to create a window and default renderer.
@@ -51,10 +48,8 @@ You can add your code example here
 ```
 
 
-
 == Remarks ==
 ''You can add useful comments here''
-
 
 
 == Related Functions ==
