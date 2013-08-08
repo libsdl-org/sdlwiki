@@ -101,7 +101,39 @@ The final argument works like the standard fseek() "whence":
 
 === Stream Type ===
 
-(write me.)
+The '''type''' field is currently one of these values. An application can usually ignore this information.
+
+{|
+|Identifier
+|Value
+|Description
+|-
+|SDL_RWOPS_UNKNOWN
+|0
+|Unknown stream type or application-defined
+|-
+|SDL_RWOPS_WINFILE
+|1
+|Win32 file handle
+|-
+|SDL_RWOPS_STDFILE
+|2
+|stdio.h <code>FILE*</code>
+|-
+|SDL_RWOPS_JNIFILE
+|3
+|Android asset
+|-
+|SDL_RWOPS_MEMORY
+|4
+|Memory stream (read/write)
+|-
+|SDL_RWOPS_MEMORY_RO
+|5
+|Memory stream (read-only)
+|}
+
+Applications and libraries rolling their own RWops implementations should use SDL_RWOPS_UNKNOWN. All other values are currently reserved for SDL's internal use.
 
 === Hidden Union ===
 
