@@ -17,29 +17,42 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 == Function Parameters ==
 {|
 |'''src'''
-|the data source for the wave file; see [[SDL_RWFromMem]]() for more info
+|the data source for the wave file; see [[CategoryIO|the RWOPS interface]]() for more info
 |-
 |'''freesrc'''
 |non-zero to automatically free the data source
 |-
 |'''spec'''
-|,,specifies ,,the target audio format; see [[SDL_AudioSpec]] for more info ''-or-'' an [[SDL_AudioSpec]] structure representing the desired output format
+|an [[SDL_AudioSpec]] structure representing the desired output format
 |-
 |'''audio_buf'''
-|,,specifies ,,the audio buffer
+|the audio buffer
 |-
 |'''audio_len'''
-|,,specifies ,,the length of the audio buffer in bytes
+|the length of the audio buffer in bytes
 |}
 
 == Return Value ==
-This function, if successfully called, returns a pointer to an [[SDL_AudioSpec]] structure filled with the audio data format of the wave source data. '''audio_buf''' is filled with a pointer to a malloc()'d buffer containing the audio data, and '''audio_len''' is filled with the length of that audio buffer in bytes.
+This function, if successfully called, returns a pointer to an [[SDL_AudioSpec]] structure filled with the audio data format of the wave source data. '''audio_buf''' is filled with a pointer to an allocated buffer containing the audio data, and '''audio_len''' is filled with the length of that audio buffer in bytes.
 
-This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.  
+This function returns NULL if the wave file cannot be opened, uses an unknown data format, or is corrupt; call [[SDL_GetError]]() for more information.
+
+When the application is done with the data returned in '''audio_buf''', it should call [[SDL_FreeWAV]]() to dispose of it.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+extern SDL_RWops *myRWops;
+SDL_AudioSpec wav_spec;
+Uint32 wav_length;
+Uint8 *wav_buffer;
+
+/* Load the WAV */
+if( SDL_LoadWAV_RW(myRWops, 1, &wav_spec, &wav_buffer, &wav_length) == NULL ){
+    fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
+} else {
+    /* Do stuff with the WAV data, and then... */
+    SDL_FreeWAV(wav_buffer);
+}
 ```
 
 == Remarks ==
