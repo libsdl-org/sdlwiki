@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_SysWMmsg =
 A structure that contains system-dependent window manager messages.
@@ -19,6 +18,10 @@ A structure that contains system-dependent window manager messages.
 |[[SDL_SYSWM_TYPE]]
 |'''subsystem'''
 |the windowing system type; see [[#Remarks|Remarks]] for details
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''dummy'''
+|<style="color: #808080;">unused (to help compilers when no specific system is available)
 |-
 |
 |
@@ -56,7 +59,6 @@ A structure that contains system-dependent window manager messages.
 |'''dfb.event'''
 |the DirectFB event
 |}
-
 
 == Code Examples ==
 ```c++
