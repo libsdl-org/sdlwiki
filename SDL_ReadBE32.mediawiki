@@ -17,7 +17,7 @@ Uint32 SDL_ReadBE32(SDL_RWops* src)
 |}
 
 == Return Value ==
-Returns 32-bits of data in the native byte order of the platform.
+Returns 32 bits of data in the native byte order of the platform.
 
 == Code Examples ==
 ```c++
