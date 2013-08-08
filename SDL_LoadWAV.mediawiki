@@ -36,14 +36,12 @@ Uint32 wav_length;
 Uint8 *wav_buffer;
 
 /* Load the WAV */
-if( SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL ){
-  fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
-  exit(-1);
+if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
+    fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
+} else {
+    /* Do stuff with the WAV data, and then... */
+    SDL_FreeWAV(wav_buffer);
 }
-
-/* Do stuff with the WAV data. */
-
-SDL_FreeWAV(wav_buffer);
 ```
 
 
