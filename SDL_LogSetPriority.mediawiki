@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogSetPriority =
 Use this function to set the priority of a particular log category.
@@ -15,13 +14,11 @@ void SDL_LogSetPriority(int             category,
 == Function Parameters ==
 {|
 |'''category'''
-|the category to assign a priority to
+|the category to assign a priority to; see [[#category|Remarks]] for details
 |-
 |'''priority'''
-|the [[SDL_LogPriority]] to assign; see [[#Remarks|Remarks]] for details
+|the [[SDL_LogPriority]] to assign; see [[#priority|Remarks]] for details
 |}
-
-<<Color2(green,'''category''' int values come from a singly-linked list?  Accessed using SDL_LogGetPriority or is there a better/another way?  Should there be a reference here or in Remarks?)>>
 
 == Code Examples ==
 ```c++
@@ -29,11 +26,12 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+<span id="category"></span>
+The '''category''' can be one of:
+<<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
 
-<<Color2(green,Should a reference to [[SDL_LOG_CATEGORY]] be included here somewhere?  Associated with the '''category''' param?)>>
-
-'''priority''' may be one of the following ^or NULL ???^:
+<span id="priority"></span>
+The '''priority''' can be one of:
 <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
 
 
