@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_TextInputEvent =
-A structure that contains keyboard text input event ,,structure,, ^information^ (event.text.*).
+A structure that contains keyboard text input event information.
 
 
 == Data Fields ==
@@ -17,8 +16,8 @@ A structure that contains keyboard text input event ,,structure,, ^information^ 
 |The window with keyboard focus, if any
 |-
 |char
-|'''text[SDL_TEXTINPUTEVENT_TEXT_SIZE]'''
-|The input text; at most SDL_TEXTINPUTEVENT_TEXT_SIZE - 1 characters
+|'''text'''
+|The null-terminated input text in UTF-8 encoding
 |}
 
 == Code Examples ==
@@ -27,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_TextInputEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported.
+[[SDL_TextInputEvent]]() is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported. You would access it through the event's <code>text</code> field.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
