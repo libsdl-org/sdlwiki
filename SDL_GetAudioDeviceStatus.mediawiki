@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT
-|}
 
 = SDL_GetAudioDeviceStatus =
 Use this function to get the current audio state of an audio device.
@@ -16,25 +13,21 @@ SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
 == Function Parameters ==
 {|
 |'''dev'''
-|the ID of ,,the,, ^an^ audio device ^previously opened with [[SDL_OpenAudioDevice]]()^
+|the ID of an audio device previously opened with [[SDL_OpenAudioDevice]]()
 |}
-
-<<Color2(green,Should SDL_Audio<code></code>DeviceID be specifically mentioned like a struct would be although it is a typedef? It has no page.)>>
 
 == Return Value ==
 Returns the status of the specified audio device which may be one of the following:
 <<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_AudioStatus, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
-''You can add useful comments here''
+<<Include(SDL_AudioStatus, , , from="== Remarks ==", to="== Related Functions ==")>>
 
 == Related Functions ==
-:[[SDL_GetAudioStatus]]
+:[[SDL_PauseAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
