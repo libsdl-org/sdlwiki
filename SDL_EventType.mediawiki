@@ -179,9 +179,11 @@ while (SDL_PollEvent(&e) {
 
 == Remarks ==
 === Application Events ===
-An SDL_QUIT event is generated when the last existing window is destroyed via [[SDL_DestroyWindow]]. If the application continues after this event and creates another window, SDL_QUIT will be sent again next time the last remaining window is destroyed.
+SDL_QUIT events are generated for a variety of reasons. An application can choose to ignore the event, for example, if it wants to offer a prompt asking the user to save the current work.
 
-SDL_QUIT is not limited to window destruction. On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event. The application is still responsible for terminating itself, however. Applications that ignore Command-Q will fail Mac App Store certification.
+An SDL_QUIT event is generated when the user clicks on the close button of the last existing window. This happens in addition to the SDL_WINDOWEVENT/SDL_WINDOWEVENT_CLOSE event, so the application can check whichever is appropriate, or both, or neither. If the application ignores this event and creates another window, SDL_QUIT will be sent again the next time the user clicks on the last remaining window's close button.
+
+SDL_QUIT is not limited to window closing. On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event, regardless of what windows exist at the time. The application is still responsible for terminating itself properly, however. Applications that completely ignore Command-Q will fail Mac App Store certification.
 
 [[SDL_Init]]() installs signal handlers for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
 
