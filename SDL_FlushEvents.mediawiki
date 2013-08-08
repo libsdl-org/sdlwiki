@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_FlushEvents =
 Use this function to clear events from the event queue.
@@ -15,10 +14,10 @@ void SDL_FlushEvents(Uint32 minType,
 == Function Parameters ==
 {|
 |'''minType'''
-|^the minimum number of the specified type of event^
+|the minimum event type to be cleared; see [[SDL_EventType]] for details
 |-
 |'''maxType'''
-|^the maximum number of the specified type of event^
+|the maximum event type to be cleared; see [[SDL_EventType]] for details
 |}
 
 == Code Examples ==
@@ -27,7 +26,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+This will unconditionally remove any events from the queue that match the specified type range. If you need to remove a single event type, you can use [[SDL_FlushEvent]]() instead.
+
+It's also normal to just ignore events you don't care about in your event loop without calling this function.
 
 == Related Functions ==
 :[[SDL_FlushEvent]]
