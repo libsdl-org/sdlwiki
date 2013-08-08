@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_RWclose =
-Use this function to close and free an allocated SDL_RWops structure ''-or-'' *call the close function in an SDL_RWops structure*.  <<Color2(green,Should the wording here be changed to reflect the data stream concept as with other references to SDL_RWops?)>>
+Use this function to close and free an allocated SDL_RWops structure.
 
 
 == Syntax ==
@@ -14,46 +14,31 @@ int SDL_RWclose(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context'''
-|the ,,SDL_RWops structure,, ^data stream^ to close
+|SDL_RWops structure to close
 |}
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-<<Color2(purple,If a write error occurs when flushing data it returns -1.)>>
-
 == Code Examples ==
-*
 ```c++
-#include <stdio.h>
-#include "SDL_rwops.h"
-
-int main(int argc, char *argv[])
-{
-  SDL_RWops *rw=SDL_RWFromFile("test.bin","r");
-  if(rw==NULL)
-  {
-    fprintf(stderr,"Couldn't open test.bin\n");
-    return(1);
-  }
-  fprintf(stderr,"Opened test.bin\n");
+SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
+if(rw != NULL) {
+  extern Uint8 buf[256];
+  SDL_RWread(rw, buf, sizeof (buf));
   SDL_RWclose(rw);
-  fprintf(stderr,"Closed test.bin\n");
-  return(0);
 }
 ```
-*
 
 == Remarks ==
-*<br/>This is not a built-in function. This is a macro that calls whatever close function happens to be pointed to by an SDL_RWops structure.<br/>*
+Note that if this fails to flush the stream to disk, this function reports an error, but the RWops is still invalid once this function returns.
+
+SDL_RWclose is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
 
 == Related Functions ==
-:[[SDL_RWFromFile]] *
-:[[SDL_RWread]] (Macro) *
-:[[SDL_RWseek]](Macro) *
-:[[SDL_RWwrite]] (Macro) *
-
-<<Color2(green,Should the current read and write functions (not macros) be listed?)>>
+:[[SDL_RWread]]
+:[[SDL_RWseek]]
+:[[SDL_RWwrite]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
