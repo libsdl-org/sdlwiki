@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If you need to check for a range of event types, use [[SDL_HasEvents]] instead.
+If you need to check for a range of event types, use [[SDL_HasEvents]]() instead.
 
 == Related Functions ==
 :[[SDL_HasEvents]]
