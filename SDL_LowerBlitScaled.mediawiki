@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LowerBlitScaled =
 Use this function to perform low-level surface scaled blitting only.
@@ -39,7 +38,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is a semi-private blit function.
+This is a semi-private function and it performs low-level surface blitting, assuming the input rectangles have already been clipped.
 
 == Related Functions ==
 :[[SDL_LowerBlit]] ???
