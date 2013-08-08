@@ -1,12 +1,9 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 
 = SDL_LoadFunction =
-Use this function to look up the address of ,,the,, ^a^ named function in the shared object and return it.
+Use this function to look up the address of the named function in the shared object and return it.
 
 
 == Syntax ==
@@ -18,14 +15,14 @@ void* SDL_LoadFunction(void*       handle,
 == Function Parameters ==
 {|
 |'''handle''' 
-|*a valid shared object handle returned by [[SDL_LoadObject]]()* 
+|a valid shared object handle returned by [[SDL_LoadObject]]()
 |-
 |'''name''' 
-|^a pointer to the named function in the shared object^ ''-or-'' *the null terminated string of the function's name to look up* 
+|the name of the function to look up
 |}
 
 == Return Value ==
-*<br/>Returns a pointer to the function or NULL if there was an error.<br/>*
+Returns a pointer to the function or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -54,19 +51,16 @@ else {
 ```
 
 == Remarks ==
-This address is no longer valid after calling [[SDL_UnloadObject]]().
+This function pointer is no longer valid after calling [[SDL_UnloadObject]]().
 
-*<br/>Given a valid shared object handle returned by [[SDL_LoadObject]](), this function looks up the address of the named function in the shared object and returns it.
-
-These functions only work on C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
+This function can only look up C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
 
 Make sure you declare your function pointers with the same calling convention as the actual library function. Your code will crash mysteriously if you do not do this.
 
-Avoid namespace collisions. If you load a symbol from the library, it is not defined whether or not it goes into the global symbol namespace for the application. If it does and it conflicts with symbols in your code or other shared libraries, you will not get the results you expect.<br/>*
 
 == Related Functions ==
-: [[SDL_LoadObject]] *
-: [[SDL_UnloadObject]] *
+: [[SDL_LoadObject]]
+: [[SDL_UnloadObject]]
 
 ----
 [[CategoryAPI]], CategorySharedObject
