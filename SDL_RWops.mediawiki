@@ -5,7 +5,7 @@
 |}
 
 = SDL_RWops =
-A structure that provides an abstract interface to stream I/O.
+A structure that provides an abstract interface to stream I/O. Applications can generally ignore the specifics of this structure's internals and treat them as opaque pointers. The details are important to lower-level code that might need to implement one of these, however.
 
 
 == Data Fields ==
@@ -63,6 +63,10 @@ SDL provides some internal methods for reading from common stream types, like fi
 Most of the fields of this structure are function pointers that are used as callbacks to implement the stream interface. All of them use SDLCALL calling convention.
 
 Please note that many of these function pointers used ints in SDL 1.2; to give them a better range, they have become Sint64 in SDL 2.0.
+
+Applications shouldn't have to care about the internals of this structure. They can treat it as an opaque data pointer and use the [[SDL_RWread]](), [[SDL_RWwrite]](), [[SDL_RWseek]](), [[SDL_RWtell]]() and [[SDL_RWclose]]() functions on them. Applications almost never create or modify these structures either, instead favoring creation functions like [[SDL_RWFromFile]](), [[SDL_RWFromMem]](), etc.
+
+Third-party libraries and special, low-level code may need to know how to properly implement this struct, however.
 
 === Size Function ===
 '''size''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
