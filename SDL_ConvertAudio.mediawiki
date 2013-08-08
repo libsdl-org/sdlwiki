@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_ConvertAudio =
 Use this function to convert audio data to a desired audio format.
@@ -14,7 +13,7 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 == Function Parameters ==
 {|
 |'''cvt'''
-|an [[SDL_AudioCVT]] structure that was previously set up; see [[#cvt|Remarks]] for details
+|an [[SDL_AudioCVT]] structure that was previously set up; see [[Remarks]] for details
 |}
 
 == Return Value ==
@@ -23,94 +22,25 @@ Returns 0 if the conversion was completed successfully or a negative error code 
 
 == Code Examples ==
 ```c++
-/* Converting some WAV data to hardware format */
-void my_audio_callback(void *userdata, Uint8 *stream, int len);
-
-SDL_AudioSpec *desired, *obtained;
-SDL_AudioSpec wav_spec;
-SDL_AudioCVT  wav_cvt;
-Uint32 wav_len;
-Uint8 *wav_buf;
-int ret;
-
-/* Allocated audio specs */
-desired = malloc(sizeof(SDL_AudioSpec));
-obtained = malloc(sizeof(SDL_AudioSpec));
-
-/* Set desired format */
-desired->freq=22050;
-desired->format=AUDIO_S16LSB;
-desired->samples=8192;
-desired->callback=my_audio_callback;
-desired->userdata=NULL;
-
-/* Open the audio device */
-if ( SDL_OpenAudio(desired, obtained) < 0 ){
-  fprintf(stderr, "Couldn't open audio: %s\n", SDL_GetError());
-  exit(-1);
-}
-        
-free(desired);
-
-/* Load the test.wav */
-if( SDL_LoadWAV("test.wav", &wav_spec, &wav_buf, &wav_len) == NULL ){
-  fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
-  SDL_CloseAudio();
-  free(obtained);
-  exit(-1);
-}
-                                            
-/* Build AudioCVT */
-ret = SDL_BuildAudioCVT(&wav_cvt,
-                        wav_spec.format, wav_spec.channels, wav_spec.freq,
-                        obtained->format, obtained->channels, obtained->freq);
-
-/* Check that the convert was built */
-if(ret==-1){
-  fprintf(stderr, "Couldn't build converter!\n");
-  SDL_CloseAudio();
-  free(obtained);
-  SDL_FreeWAV(wav_buf);
-}
-
-/* Setup for conversion, copy original data to new buffer*/
-wav_cvt.buf = malloc(wav_len * wav_cvt.len_mult);
-wav_cvt.len = wav_len;
-memcpy(wav_cvt.buf, wav_buf, wav_len);
-
-/* We can delete to original WAV data now */
-SDL_FreeWAV(wav_buf);
-
-/* And now we're ready to convert */
-SDL_ConvertAudio(&wav_cvt);
-
-/* do whatever */
-.
-.
-.
-.
+// Change 1024 stereo sample frames at 48000Hz from Float32 to Int16.
+SDL_AudioCVT cvt;
+SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
+SDL_assert(cvt.needed); // obviously, this one is always needed.
+cvt.len = 1024 * 2 * 4;  // 1024 stereo float32 sample frames.
+cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
+// read your float32 data into cvt.buf here.
+SDL_ConvertAudio(cvt);
+// cvt.buf has cvt.len_cvt bytes of converted data now.
 ```
 
 == Remarks ==
-<<Color2(green,Does [[SDL_BuildAudioCVT]]() initialize the structure create the buffer and fill it with audio data or does it require other actions to create the buffer and fill it with data?  If the function does all of the above then the second paragraph below should probably replace the first.  If not then the first paragraph below should be kept and possibly modified to include information about how to create the buffer and fill it.)>>
+This function does the actual audio data conversion, after using [[SDL_BuildAudioCVT]]() to prepare the conversion information and then filled in the buffer details.
 
-<span id="cvt"></span> 
-Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
+Once you have initialized the '''cvt''' structure using [[SDL_BuildAudioCVT]](), created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format, this function will convert it in-place to the desired format.
 
-''-or-''
+The data conversion may go through several passes; any given pass may possibly temporarily increase the size of the data. For example, SDL might expand 16-bit data to 32 bits before resampling to a lower frequency, shrinking the data size that had just grown. Since the buffer you supply will be both the source and destination, converting as necessary in-place, you must allocate a buffer that will fully contain the data during it's largest conversion pass. After [[SDL_BuildAudioCVT]]() returns, the application should set the the '''cvt''' structure's '''len''' field to the size, in bytes, of the source data, and allocate a buffer that is '''len''' * '''len_mult''' bytes long for the '''buf''' field.
 
-Once you have initialized the '''cvt''' structure, created an audio buffer <code>cvt->buf</code>, and filled it with <code>cvt->len</code> bytes of audio data in the source format using [[SDL_BuildAudioCVT]](), ^the structure can be passed to^ this function ^which^ will convert it in-place to the desired format.
-
-
-
-<<Color2(green,How do you allocate the buffer?  Should that info be included here or is that common knowledge?)>>
-
-The data conversion may expand the size of the audio data, so the buffer <code>cvt->buf</code> should be allocated after the '''cvt''' structure is initialized by [[SDL_BuildAudioCVT]](), and should be <code>cvt->len*cvt->len_mult</code> bytes long.
-
-
-
-If the conversion completed successfully then the converted audio data can be read from <code>cvt->buf</code>. The amount of valid, converted, audio data in the buffer is equal to <code>cvt->len*cvt->len_ratio</code>. 
-
+The source data should be copied into this buffer before the call to [[SDL_ConvertAudio]](). Upon successful return, this buffer will contain the converted audio, and the '''cvt''' structure's '''len_cvt''' field will be the size of the converted data, in bytes. Any bytes in the buffer past '''len_cvt''' are undefined.
 
 == Related Functions ==
 :[[SDL_BuildAudioCVT]]
