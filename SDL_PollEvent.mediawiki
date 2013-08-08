@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_PollEvent =
 Use this function to poll for currently pending events.
@@ -14,50 +13,27 @@ int SDL_PollEvent(SDL_Event* event)
 == Function Parameters ==
 {|
 |'''event'''
-|,,if not NULL, the next event is removed from the queue and stored in that area,, ''-or-'' ^the [[SDL_Event]] structure to be filled with the next event from the queue, or NULL^
+|the [[SDL_Event]] structure to be filled with the next event from the queue, or NULL
 |}
 
 == Return Value ==
-Returns 1 if there are ,,any,, pending events or 0 if there are none available; call [[SDL_GetError]]() for more information.  
-
-<<Color2(green,Can this function produce an error or only 0?  Would you still call the error function?)>>
+Returns 1 if there is a pending event or 0 if there are none available.
 
 == Code Examples ==
 ```c++
-while(1){
+while (1) {
     SDL_Event event;
-    if(SDL_PollEvent(&event)){
+    while (SDL_PollEvent(&event)) {
          // handle your event here
     }
-    // do some other stuff here -- draw your app, play your music, perform other operations...
-}
-```
-```c++
-SDL_Event event; /* Event structure */
-
-.
-.
-.
-/* Check for events */
-while(SDL_PollEvent(&event)) {  /* Loop until there are no events left on the queue */
-  switch(event.type) { /* Process the appropriate event type */
-    case SDL_KEYDOWN:  /* Handle a KEYDOWN event */
-      printf("Oh! Key press\n");
-      break;
-    case SDL_MOUSEMOTION:
-      .
-      .
-      .
-    default: /* Report an unhandled event */
-      printf("I don't know what this event is!\n");
-  }
+    // do some other stuff here -- draw your app, etc.
 }
 ```
 
 == Remarks ==
-*If '''event''' is not NULL, the next event is removed from the queue and stored in the [[SDL_Event]] ,,structure,, ^union^ pointed to by '''event'''.
+If '''event''' is not NULL, the next event is removed from the queue and stored in the [[SDL_Event]] structure pointed to by '''event'''.
 
-As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode. *  <<Color2(green,Is this true in 1.3?)>>
+As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
 
 [[SDL_PollEvent]]() is the favored way of receiving system events since it can be done from the main loop and does not suspend the main loop while waiting on an event to be posted.
 
