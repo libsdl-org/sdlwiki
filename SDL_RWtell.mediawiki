@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color:#FF0000; ;text-align:center">DRAFT 
-|}
-
 
 = SDL_RWtell =
-Use this function to perform a do-nothing seek to get the current offset in an SDL_RWops data stream.
+Use this function to determine the current read/write offset in an SDL_RWops data stream.
 
 
 == Syntax ==
@@ -21,44 +17,25 @@ Sint64 SDL_RWtell(struct SDL_RWops* context)
 |}
 
 == Return Value ==
-*Returns the current offset in the stream.*
+Returns the current offset in the stream, or -1 if the information can not be determined.
 
 == Code Examples ==
-*
-
 ```c++
-#include <stdio.h>
-#include "SDL_rwops.h"
-
-int main(int argc, char *argv[])
-{
-  SDL_RWops *rw=SDL_RWFromFile("test.bin","r");
-  if(rw==NULL)
-  {
-    fprintf(stderr,"Couldn't open test.bin\n");
-    return(1);
-  }
-
-  SDL_RWseek(rw,0,RW_SEEK_END);
-  fprintf(stderr,"Final position in test.bin: %d\n",SDL_RWtell(rw));
-  SDL_RWclose(rw);
-  return(0);
+extern SDL_RWops *rw;
+printf("Current position in test.bin: %lld\n", (long long) SDL_RWtell(rw));
+if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
+    printf("Final position in test.bin: %lld\n", (long long) SDL_RWtell(rw));
 }
 ```
-*
 
 == Remarks ==
-*<br/>This is not a built-in function. This is a macro that calls whatever seek function that happens to be pointed to in an SDL_RWops structure.<br/>*
+SDL_RWtell is actually a macro that calls the SDL_RWops's '''seek''' method, with an offset of 0 bytes from RW_SEEK_CUR, to simplify application development.
 
 == Related Functions ==
-: [[SDL_RWclose]] (Macro) *
-: [[SDL_RWFromFile]] *
-: [[SDL_RWread]] (Macro) *
-: [[SDL_RWseek]](Macro) *
-: [[SDL_RWwrite]] (Macro) *
+: [[SDL_RWclose]]
+: [[SDL_RWread]]
+: [[SDL_RWseek]]
+: [[SDL_RWwrite]]
 
-```#!wiki comment
-Should the current read and write functions (not macros) be listed?  Should macros be identified as macros here?
-```
 ----
 [[CategoryAPI]], [[CategoryIO]]
