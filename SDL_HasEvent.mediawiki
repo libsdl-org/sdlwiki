@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_HasEvent =
-Use this function to check ,,to see if,, ^for^ certain event types ,,are,, in the event queue.
+Use this function to check for the existence of certain event types in the event queue.
 
 
 == Syntax ==
@@ -14,11 +13,11 @@ SDL_bool SDL_HasEvent(Uint32 type)
 == Function Parameters ==
 {|
 |'''type'''
-|^the type of event to be queried ???; see [[SDL_Event]]/[[SDL_EventType]] ??? for details^
+|the type of event to be queried; see [[SDL_EventType]] for details
 |}
 
 == Return Value ==
-Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present. ???
+Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present.
 
 == Code Examples ==
 ```c++
@@ -26,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If you need to check for a range of event types, use [[SDL_HasEvents]] instead.
 
 == Related Functions ==
 :[[SDL_HasEvents]]
