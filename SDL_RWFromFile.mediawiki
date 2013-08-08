@@ -14,7 +14,7 @@ SDL_RWops* SDL_RWFromFile(const char* file,
 == Function Parameters ==
 {|
 |'''file'''
-|the filename to open, in UTF-8 encoding
+|a UTF-8 string representing the filename to open
 |-
 |'''mode'''
 |an ASCII string representing the mode to be used for opening the file; see [[#Remarks|Remarks]] for details
@@ -55,6 +55,8 @@ Available '''mode''' strings:
 |}
 
 NOTE: In order to open a file as a binary file, a "b" character has to be included in the '''mode''' string. This additional "b" character can either be appended at the end of the string (thus making the following compound modes: "rb", "wb", "ab", "r+b", "w+b", "a+b") or be inserted between the letter and the "+" sign for the mixed modes ("rb+", "wb+", "ab+"). Additional characters may follow the sequence, although they should have no effect. For example, "t" is sometimes appended to make explicit the file is a text file.
+
+This function supports Unicode filenames, but they must be encoded in UTF-8 format, regardless of the underlying operating system.
 
 Closing the [[SDL_RWops]] will close the file handle SDL is holding internally.
 
