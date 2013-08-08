@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogCritical =
 Use this function to log a message with SDL_LOG_PRIORITY_CRITICAL.
@@ -16,7 +15,7 @@ void SDL_LogCritical(int         category,
 == Function Parameters ==
 {|
 |'''category'''
-|the category to ^query / monitor^
+|the category of the message; see [[#category|Remarks]] for details
 |-
 |'''fmt'''
 |a printf() style message format string
@@ -31,9 +30,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
-
-<<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for '''category'''?)>>
+<span id="category"></span>
+The '''category''' can be one of:
+<<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_Log]]
