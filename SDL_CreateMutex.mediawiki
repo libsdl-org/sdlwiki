@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_CreateMutex =
-Use this function to create a new mutex. ,,The mutex is returned as an initialized and unlocked mutex.,,
+Use this function to create a new mutex.
 
 
 == Syntax ==
@@ -17,39 +13,35 @@ SDL_mutex* SDL_CreateMutex(void)
 == Return Value ==
 Returns the initialized and unlocked mutex or NULL on failure; call [[SDL_GetError]]() for more information.  
 
-,,This is a pointer to SDL's internal mutex data structure.,,
-
 == Code Examples ==
+<!-- # Begin Mutex Example -->
 ```c++
-SDL_mutex *mut;
+SDL_mutex *mutex;
 
-mut=SDL_CreateMutex();
-.
-.
-if(SDL_mutexP(mut)==-1){
+mutex = SDL_CreateMutex();
+if (!mutex) {
+  fprintf(stderr, "Couldn't create mutex\n");
+  return;
+}
+
+if (SDL_LockMutex(mutex) == 0) {
+  /* Do stuff while mutex is locked */
+  SDL_UnlockMutex(mutex);
+} else {
   fprintf(stderr, "Couldn't lock mutex\n");
-  exit(-1);
-}
-.
-/* Do stuff while mutex is locked */
-.
-.
-if(SDL_mutexV(mut)==-1){
-  fprintf(stderr, "Couldn't unlock mutex\n");
-  exit(-1);
 }
 
-SDL_DestroyMutex(mut);
+SDL_DestroyMutex(mutex);
 ```
-*<br/><<Color2(green,Should this example be Included on the SDL_DestroyMutex page? What about SDL_mutexP or SDL_mutexV?)>>
+<!-- # End Mutex Example -->
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-: [[SDL_DestroyMutex]] *
-: [[SDL_mutexP]] *
-: [[SDL_mutexV]] *
+:[[SDL_DestroyMutex]]
+:[[SDL_LockMutex]]
+:[[SDL_UnlockMutex]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
