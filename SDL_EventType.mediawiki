@@ -178,8 +178,7 @@ while (SDL_PollEvent(&e) {
 ```
 
 == Remarks ==
-=== Application Events ===
-==== SDL_QUIT ====
+=== SDL_QUIT ===
 SDL_QUIT events are generated for a variety of reasons. An application can choose to ignore the event, for example, if it wants to offer a prompt asking the user to save the current work.
 
 An SDL_QUIT event is generated when the user clicks on the close button of the last existing window. This happens in addition to the SDL_WINDOWEVENT/SDL_WINDOWEVENT_CLOSE event, so the application can check whichever is appropriate, or both, or neither. If the application ignores this event and creates another window, SDL_QUIT will be sent again the next time the user clicks on the last remaining window's close button.
