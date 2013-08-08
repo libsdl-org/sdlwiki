@@ -1,20 +1,19 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_RWFromConstMem =
+= SDL_RWFromMem =
 Use this function to prepare a read-only memory buffer for use with RWops.
 
 
 == Syntax ==
 ```c++
-SDL_RWops* SDL_RWFromConstMem(const void* mem,
-                              int         size)
+SDL_RWops* SDL_RWFromMem(void* mem, int size)
 ```
 
 == Function Parameters ==
 {|
 |'''mem'''
-|a pointer to a read-only buffer to feed an [[SDL_RWops]] stream
+|a pointer to a buffer to feed an [[SDL_RWops]] stream
 |-
 |'''size'''
 |the buffer size, in bytes
