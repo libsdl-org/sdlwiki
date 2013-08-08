@@ -1,0 +1,34 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= SDL_UnlockMutex =
+Use this function to unlock a mutex created with [[SDL_CreateMutex]]().
+
+
+== Syntax ==
+```c++
+int SDL_UnlockMutex(SDL_mutex* mutex)
+```
+
+== Function Parameters ==
+{|
+|'''mutex''' 
+|the mutex to unlock
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+
+== Remarks ==
+''You can add useful comments here''
+
+== Related Functions ==
+:[[SDL_CreateMutex]]
+:[[SDL_DestroyMutex]]
+:[[SDL_LockMutex]]
+
+----
+[[CategoryAPI]], [[CategoryMutex]]
