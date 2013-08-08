@@ -7,7 +7,7 @@ Use this function to get the current audio state of an audio device.
 
 == Syntax ==
 ```c++
-SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
+SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
 ```
 
 == Function Parameters ==
@@ -17,7 +17,7 @@ SDL_audiostatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
 |}
 
 == Return Value ==
-Returns the status of the specified audio device which may be one of the following:
+Returns the [[SDL_AudioStatus]] of the specified audio device which may be one of the following:
 <<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
