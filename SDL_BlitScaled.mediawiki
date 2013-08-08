@@ -19,13 +19,13 @@ int BlitScaled(SDL_Surface*    src,
 |the [[SDL_Surface]] structure to be copied from
 |-
 |'''srcrect'''
-|the [[SDL_Rect]] structure representing the rectangle to be copied
+|the [[SDL_Rect]] structure representing the rectangle to be copied, or NULL to copy the entire surface
 |-
 |'''dst'''
 |the [[SDL_Surface]] structure that is the blit target
 |-
 |'''dstrect'''
-|the [[SDL_Rect]] structure representing the rectangle that is copied into
+|the [[SDL_Rect]] structure representing the rectangle that is copied into, or NULL to copy into the entire surface
 |}
 
 == Return Value ==
@@ -40,6 +40,7 @@ You can add your code example here
 This is the public scaled blit function.  This function calls [[SDL_LowerBlitScaled]]() internally.
 
 == Related Functions ==
+:[[SDL_BlitSurface]]
 :[[SDL_LowerBlitScaled]]
 
 ----
