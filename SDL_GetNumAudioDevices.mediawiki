@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_GetNumAudioDevices =
 Use this function to return the number of built in audio devices.
@@ -18,14 +17,11 @@ int SDL_GetNumAudioDevices(int iscapture)
 |}
 
 == Return Value ==
-Returns the number of available devices exposed by the current driver or -1 if an explicit list of devices can't be determined. 
-
-<<Color2(green,Suggested alternate text here and in Remarks:)>><br/><<Color2(purple,Returns the number of available devices exposed by the current driver or a negative error code on failure; call [[SDL_GetError]]() for more information.  See [[#Remarks|Remarks]] for details.)>>
+Returns the number of available devices exposed by the current driver or -1 if an explicit list of devices can't be determined. A return value of -1 does not necessarily mean an error condition. See [[#Remarks|Remarks]] for details.
 
 == Code Examples ==
 ```c++
 int i, count = SDL_GetNumAudioDevices(0);
-
 for ( i = 0; i < count; ++i ) {
     printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0));
 }
@@ -34,13 +30,15 @@ for ( i = 0; i < count; ++i ) {
 == Remarks ==
 This function is only valid after successfully initializing the audio subsystem.
 
-<<Color2(purple,This function will return -1 if an explicit list of devices can't be determined.)>>
-Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified in [[SDL_OpenAudioDevice]]().
+Note that audio capture support is not implemented as of SDL 2.0.0, so the '''iscapture''' parameter is for future expansion and should always be zero for now.
 
-In many common cases, when this function returns a value <= 0, it can still successfully open the default device (NULL for first argument of  [[SDL_OpenAudioDevice]]()).
+This function will return -1 if an explicit list of devices can't be determined. Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified in [[SDL_OpenAudioDevice]]().
+
+In many common cases, when this function returns a value <= 0, it can still successfully open the default device (NULL for first argument of [[SDL_OpenAudioDevice]]()).
 
 == Related Functions ==
 :[[SDL_GetAudioDeviceName]]
+:[[SDL_OpenAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
