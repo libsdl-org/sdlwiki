@@ -22,9 +22,9 @@ Returns the current offset in the stream, or -1 if the information can not be de
 == Code Examples ==
 ```c++
 extern SDL_RWops *rw;
-printf("Current position in test.bin: %lld\n", (long long) SDL_RWtell(rw));
+printf("Current position in stream: %lld\n", (long long) SDL_RWtell(rw));
 if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
-    printf("Final position in test.bin: %lld\n", (long long) SDL_RWtell(rw));
+    printf("Final position in stream: %lld\n", (long long) SDL_RWtell(rw));
 }
 ```
 
