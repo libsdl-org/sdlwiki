@@ -1,8 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
 
 
 = SDL_GetThreadID =
@@ -16,14 +13,12 @@ SDL_threadID SDL_GetThreadID(SDL_Thread* thread)
 == Function Parameters ==
 {|
 |'''thread''' 
-|^The desired/specified thread to query^ 
+|The thread to query
 |}
 
 
 == Return Value ==
-Returns the ID of the specified thread.  This thread identifier is as reported by the underlying operating system. If SDL is running on a platform that does not support threads the return value will always be zero.
-
-If the passed-in SDL_Thread pointer is NULL, this function will behave as if the call was to SDL_ThreadID() and return the ID of the currently running thread.
+Returns the ID of the specified thread, or the ID of the current thread if '''thread''' is NULL.
 
 == Code Examples ==
 ```c++
@@ -76,10 +71,9 @@ int TestThread( void *ptr )
 }
 ```
 == Remarks ==
-If the SDL thread pointer passed to this function is NULL, this function will return the SDL_ThreadID of the current thread.
+This thread identifier is as reported by the underlying operating system. If SDL is running on a platform that does not support threads the return value will always be zero.
 
 == Related Functions ==
-: [[SDL_CreateThread]] *
 : [[SDL_ThreadID]]
 
 ----
