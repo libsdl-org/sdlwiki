@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_ReadBE16 =
-Use this function to read 16 bits of bigendian data from an [[SDL_RWops]] and return in native format.
+Use this function to read 16 bits of big-endian data from an [[SDL_RWops]] and return in native format.
 
 
 == Syntax ==
