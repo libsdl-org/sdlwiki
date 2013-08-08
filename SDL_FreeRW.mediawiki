@@ -34,7 +34,7 @@ Applications do not need to use this function unless they are providing their ow
 Only use [[SDL_FreeRW]]() on pointers returned by [[SDL_AllocRW]](). The pointer is invalid as soon as this function returns. Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for managing that memory in their '''close''' method.
 
 == Related Functions ==
-:[[SDL_AllocRW]] *
+:[[SDL_AllocRW]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
