@@ -1,30 +1,26 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_WriteLE16 =
-Use this function to write an item of native format to the specified endianness.
-
-<<Color2(green,This is the generalized description from the header.  Should it be adjusted to be specific for each function for the wiki?  ie: Use this function to write an item of native format to little-endian format.)>>
+Use this function to write 16 bits in native format to a [[SDL_RWops]] as little-endian data.
 
 
 == Syntax ==
 ```c++
-size_t SDL_WriteLE16(SDL_RWops* dst,
-                     Uint16     value)
+size_t SDL_WriteLE16(SDL_RWops* dst, Uint16 value)
 ```
 
 == Function Parameters ==
 {|
 |'''dst'''
-|^the SDL_RWops structure to be filled^
+|the stream to which data will be written
 |-
 |'''value'''
-|^the data to write as little-endian^
+|the data to be written, in native format
 |}
 
 == Return Value ==
-The size (in bytes) of the data that was written, or 0 for error; call [[SDL_GetError]]() for more information.
+Returns 1 on successful write, 0 on error.
 
 == Code Examples ==
 ```c++
@@ -32,11 +28,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+SDL byteswaps the data only if necessary, so the application always specifies native format, and the data written will be in big-endian format.
 
 == Related Functions ==
 :[[SDL_WriteBE16]]
-<<Color2(green,Should the other Read functions and/or the Write functions be listed here?)>>
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
