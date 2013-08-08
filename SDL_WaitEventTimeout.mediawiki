@@ -1,8 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
-= SDL_WaitEventTimeout =
+= SDL_WaitEvent =
 Use this function to wait until the specified timeout (in milliseconds) for the next available event.
 
 
@@ -15,14 +14,14 @@ int SDL_WaitEventTimeout(SDL_Event* event,
 == Function Parameters ==
 {|
 |'''event'''
-|,,if not NULL, the next event is removed from the queue and stored in that area,, ''-or-'' ^the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL^
+|the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL
 |-
 |'''timeout'''
-|^the number of milliseconds to wait for the next available event^
+|the maximum number of milliseconds to wait for the next available event
 |}
 
 == Return Value ==
-Returns 1 on success or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information.
+Returns 1 on success or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information. This also returns 0 if the timeout elapsed without an event arriving.
 
 == Code Examples ==
 ```c++
@@ -30,11 +29,16 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If '''event''' is not NULL, the next event is removed from the queue and stored in the SDL_Event structure pointed to by '''event'''.
+
+As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
+
+As of SDL 2.0, this function does not put the application's process to sleep waiting for events; it polls for events in a loop internally. This may change in the future to improve power savings.
 
 == Related Functions ==
-:[[SDL_PollEvent]] ???
-:[[SDL_WaitEvent]] ???
+:[[SDL_PumpEvents]]
+:[[SDL_PollEvent]]
+:[[SDL_WaitEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
