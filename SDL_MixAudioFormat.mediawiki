@@ -41,7 +41,7 @@ void myAudioCallback(void *udata, Uint8 *stream, int len)
     extern const Uint8 *mixData;
     SDL_memset(stream, 0, len);  // make sure this is silence.
     // mix our audio against the silence, at 50% volume.
-    SDL_MixAudioFormat(stream, mixData, 0, deviceFormat, len, SDL_MIX_MAXVOLUME / 2);
+    SDL_MixAudioFormat(stream, mixData, deviceFormat, len, SDL_MIX_MAXVOLUME / 2);
 }
 ```
 
