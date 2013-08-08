@@ -1,18 +1,13 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_FilterEvents =
-Use this function to run the filter function on the current event queue, removing any events for which the filter returns 0.  
-
-<<Color2(green,Is this more appropriate wording for this context?)>> <br/>
-Use this function to filter the current event queue and remove filtered events.
+Use this function to run a specific filter function on the current event queue, removing any events for which the filter returns 0.
 
 
 == Syntax ==
 ```c++
-void SDL_FilterEvents(SDL_EventFilter filter,
-                      void*           userdata)
+void SDL_FilterEvents(SDL_EventFilter filter, void* userdata)
 ```
 
 == Function Parameters ==
@@ -31,15 +26,14 @@ You can add your code example here
 
 == Remarks ==
 The function prototype for '''filter''' is:
- ```
-int SDL_EventFilter(void*      userdata, 
-                    SDL_Event* event)
+```
+int SDL_EventFilter(void* userdata, SDL_Event* event)
 ```
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_FilterEvents]]()||
  ||<code>event</code>||the desired event to pull from the queue||
 
-See [[SDL_SetEventFilter]]() for more information.
+See [[SDL_SetEventFilter]]() for more information. Unlike [[SDL_SetEventFilter]](), this function does not change the filter permanently, it only uses the supplied filter until this function returns.
 
 == Related Functions ==
 :[[SDL_GetEventFilter]]
