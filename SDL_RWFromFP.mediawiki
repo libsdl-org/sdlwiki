@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RWFromFP =
 Use this function to create an SDL_RWops structure from a standard I/O file pointer (stdio.h's <code>FILE*</code>).
