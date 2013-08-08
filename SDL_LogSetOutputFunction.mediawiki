@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_LogSetOutputFunction =
 Use this function to replace the default log output function with one of your own.
@@ -36,17 +35,17 @@ void* SDL_LogOutputFunction(void*           userdata,
 ```
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
- ||<code>category</code>||^the log category to query ???^||
- ||<code>priority</code>||the [[SDL_LogPriority]] ^to query^; see [[#priority|below]] for details||
- ||<code>message</code>||^the log output message ???^||
+ ||<code>category</code>||the category of the message; see [[#category|Remarks]] for details||
+ ||<code>priority</code>||the priority of the message; see [[#priority|Remarks]] for details||
+ ||<code>message</code>||the message being output||
+
+ <span id="category"></span>
+ The <code>category</code> will be one of:
+ <<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
+
  <span id="priority"></span>
-: <code>priority</code> may be one of the following ^or NULL ???^:
+ The <code>priority</code> will be one of:
  <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
-
- <<Color2(green,Should there be some reference to [[SDL_LOG_CATEGORY]] for <code>category</code>?)>>
-
-
-''You can add useful comments here''
 
 == Related Functions ==
 :[[SDL_LogGetOutputFunction]]
