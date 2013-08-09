@@ -33,7 +33,7 @@ This API is not designed to be used from multiple threads, see [http://bugzilla.
 <<FullSearchCached(category:CategoryStruct CategoryRender -title:SGStructures)>>
 
 == Functions ==
-<<FullSearch(category:CategoryRender -CategoryEnum -CategoryStruct -title:SGFunctions)>>
+<<FullSearchCached(category:CategoryRender -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 
 ----
