@@ -1,46 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_SoftStretch =
-Use this function to perform a fast, low quality, stretch blit between two surfaces of the same pixel format.
-
-
-== Syntax ==
-```c++
-int SDL_SoftStretch(SDL_Surface*    src,
-                    const SDL_Rect* srcrect,
-                    SDL_Surface*    dst,
-                    const SDL_Rect* dstrect)
-```
-
-== Function Parameters ==
-{|
-|'''src'''
-|the [[SDL_Surface]] structure to be copied from
-|-
-|'''srcrect'''
-|the [[SDL_Rect]] structure representing the rectangle to be copied, or NULL to copy the entire surface
-|-
-|'''dst'''
-|the [[SDL_Surface]] structure that is the blit target
-|-
-|'''dstrect'''
-|the [[SDL_Rect]] structure representing the rectangle that is copied into, or NULL to copy into the entire surface
-|}
-
-== Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
-
-== Code Examples ==
-```c++
-You can add your code example here
-```
-
-== Remarks ==
-This function uses a static buffer and is not thread-safe.
-
-== Related Functions ==
-:[[SDL_BlitSurface]]
-
-----
-[[CategoryAPI]], [[CategorySurface]]
+SDL_SoftStretch has been replaced by [[SDL_BlitScaled]]
