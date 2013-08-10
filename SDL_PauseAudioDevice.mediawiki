@@ -24,7 +24,7 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev, int pause_on)
 extern SDL_AudioDeviceID devid;
 SDL_PauseAudioDevice(devid, 1);  // audio callback is stopped when this returns.
 SDL_Delay(5000);  // audio device plays silence for 5 seconds
-SDL_PauseAudio(devid, 0);  // audio callback starts running again.
+SDL_PauseAudioDevice(devid, 0);  // audio callback starts running again.
 ```
 
 == Remarks ==
