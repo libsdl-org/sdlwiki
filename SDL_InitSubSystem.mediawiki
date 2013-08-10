@@ -23,23 +23,19 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ```c++
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
-.
-.
+
 SDL_Window* window = SDL_CreateWindow("A Window", 
     SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480,
     SDL_WINDOW_FULLSCREEN);
 SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
-.
+
 /* Do Some Video stuff */
-.
-.
+
 /* Initialize the joystick subsystem */
 SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 
 /* Do some stuff with video and joystick */
-.
-.
-.
+
 /* Shut them both down */
 SDL_Quit();
 ```
