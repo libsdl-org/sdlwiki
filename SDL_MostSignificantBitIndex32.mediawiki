@@ -29,6 +29,8 @@ Returns the index of the most significant bit of x, or -1 if x is 0.
 
 == Code Examples ==
 ```c++
+#include "SDL_bits.h"
+
 if (bitmask) {
     int index = SDL_MostSignificantBitIndex32(bitmask);
 }
