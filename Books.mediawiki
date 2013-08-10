@@ -1,5 +1,9 @@
 = Books Related to SDL =
 
+* [http://www.packtpub.com/simple-directmedia-layer-game-development/book SDL Game Development] (Packt Publishing) by Shaun Mitchell
+: SDL Game Development guides you through creating your first 2D game using SDL and C++. It takes a clear and practical approach to SDL game development, ensuring that the focus remains on creating awesome games.
+: ''"Written as a practical and engaging tutorial, SDL Game Development guides you through the development of your own framework and the creation of two exciting, fully-featured games."'' ~-(Packt Publishing)-~
+
 * [http://www.amazon.com/Learn-Making-Games-Charles-Programming/dp/1584504552/ref=sr_1_2?ie=UTF8&s=books&qid=1255150140&sr=8-2 Learn C++ by Making Games|target="blank"] by Erik Yuzwa & Francois Dominic Laramee
 : An introduction to C++, using it to develop games with SDL
 : ''"The book concludes with an exploration of how to use the Simple Direct<code></code>Media Layer to display graphics and handle basic input, sound, linked lists, templates, along with a variety of more advanced topics, including using SDL to create a simple demo."'' ~-(Amazon.com)-~
@@ -23,7 +27,3 @@
 * [http://www.nostarch.com/plg.htm Programming Linux Games] by Loki Software, Inc. with John R. Hall
 : Building Multimedia Applications with SDL, OpenAL^(tm)^, and Other APIs
 : ''"This is the sort of book that could kickstart a new movement in Linux game development."'' ~-(Slashdot)-~
-
-* [http://www.packtpub.com/simple-directmedia-layer-game-development/book SDL Game Development] (Packt Publishing) by Shaun Mitchell
-: SDL Game Development guides you through creating your first 2D game using SDL and C++. It takes a clear and practical approach to SDL game development, ensuring that the focus remains on creating awesome games.
-: ''"Written as a practical and engaging tutorial, SDL Game Development guides you through the development of your own framework and the creation of two exciting, fully-featured games."'' ~-(Packt Publishing)-~
