@@ -31,7 +31,7 @@ Returns SDL_TRUE if the given joystick is supported by the game controller inter
 ```c++
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
-        printf("Joystick %i is supported by the game controller interface!\n");
+        printf("Joystick %i is supported by the game controller interface!\n", i);
     }
 }
 ```
