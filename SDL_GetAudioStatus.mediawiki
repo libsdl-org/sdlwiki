@@ -27,6 +27,9 @@ void printStatus(void)
     }
 }
 
+extern SDL_AudioSpec desired;
+extern SDL_AudioSpec obtained;
+
 // device starts paused
 if (SDL_OpenAudio(&desired, &obtained) == 0) {
      printStatus();  // prints "paused"
