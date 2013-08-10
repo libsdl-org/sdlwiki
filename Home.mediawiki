@@ -4,23 +4,20 @@
 <!-- format wiki -->
 <!-- language en -->
 <!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
 <!-- acl All:read -->
 = Simple DirectMedia Layer =
 
 == What is it? ==
-SDL drastically reduces the time you spend bringing your game to desktop and mobile platforms, cleanly replacing platform specific code for:
-* window and display management
-* interactive input
-* advanced multi-threading
-* ... and much more.
+Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D. It is used by video playback software, emulators, and popular games including [http://valvesoftware.com Valve]'s award winning catalog and many [https://www.humblebundle.com Humble Bundle] games.
 
-SDL fully supports high end 3D graphics using Direct3D and OpenGL, and has a 2D graphics API for emulators and classic games.
+SDL officially supports Windows, Mac OS X, Linux, iOS, and Android. Support for other platforms may be found in the source code.
+
+SDL is written in C, works natively with C++, and there are bindings available for several other languages, including C# and Python.
+
+SDL 2.0 is distributed under the [http://www.gzip.org/zlib/zlib_license.html zlib license]. This license allows you to use SDL freely in any software.
 
 This wiki is your portal to documentation and other resources for SDL 2.0.
-<br/>
-You can find the old SDL 1.2 wiki at: http://www.libsdl.org/cgi/docwiki.cgi.
-<br/>
-<br/>
 
 == Using the SDL documentation Wiki ==
 Use the links under the '''Navigation Links''' heading in the left-hand menu to access:
