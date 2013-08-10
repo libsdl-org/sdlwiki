@@ -22,6 +22,7 @@ Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a negative er
 
 == Code Examples ==
 ```c++
+extern SDL_Haptic* dev;
 if (SDL_HapticRumbleSupported(dev)) {
     SDL_HapticRumbleInit(dev);
     SDL_HapticRumblePlay(dev, 1.0f, 3000);
