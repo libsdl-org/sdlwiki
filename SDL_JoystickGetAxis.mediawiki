@@ -28,12 +28,11 @@ The state is a value ranging from -32768 to 32767. <<Color2(green,Is this the RV
 
 == Code Examples ==
 ```c++
+extern SDL_Joystick* joy1;
 Sint16 x_move, y_move;
-SDL_Joystick *joy1;
-.
-.
-x_move=SDL_JoystickGetAxis(joy1, 0);
-y_move=SDL_JoystickGetAxis(joy1, 1);
+
+x_move = SDL_JoystickGetAxis(joy1, 0);
+y_move = SDL_JoystickGetAxis(joy1, 1);
 ```
 
 == Remarks ==
