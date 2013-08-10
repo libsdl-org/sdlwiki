@@ -30,11 +30,11 @@ Returns the implementation dependent name for the game controller, or NULL if th
 == Code Examples ==
 ```c++
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
-    char *name = SDL_GameControllerNameForIndex(i);
+    const char *name = SDL_GameControllerNameForIndex(i);
     if (name) {
-        printf("Joystick %i has game controller name '%s'\n", name);
+        printf("Joystick %i has game controller name '%s'\n", i, name);
     } else {
-        printf("Joystick %i has no game controller name.\n");
+        printf("Joystick %i has no game controller name.\n", i);
     }
 }
 ```
