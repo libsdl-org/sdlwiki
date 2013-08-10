@@ -25,8 +25,9 @@ Returns ^a list of supported^ haptic features in bitwise manner (OR'd), or a neg
 
 == Code Examples ==
 ```c++
-if (SDL_HapticQueryEffects(haptic) & SDL_HAPTIC_CONSTANT) {
-printf("We have constant haptic effect!");
+extern SDL_Haptic *haptic;
+if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
+    printf("We have constant haptic effect!");
 }
 ```
 
