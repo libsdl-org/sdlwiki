@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_Init =
 Use this function to initialize the SDL library.  This must be called before using any other SDL function.
