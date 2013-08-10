@@ -29,7 +29,7 @@ SDL_assert(cvt.needed); // obviously, this one is always needed.
 cvt.len = 1024 * 2 * 4;  // 1024 stereo float32 sample frames.
 cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
 // read your float32 data into cvt.buf here.
-SDL_ConvertAudio(cvt);
+SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
 ```
 
