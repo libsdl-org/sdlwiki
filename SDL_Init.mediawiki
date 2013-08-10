@@ -23,8 +23,10 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 === C ===
 ```c++
 #include "SDL.h"
+#include <stdio.h> /* for fprintf() */
+#include <stdlib.h> /* for atexit() */
 
-int main(int, char**)  {
+int main(int argv, char** argc)  {
     if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
         fprintf(stderr, 
                 "\nUnable to initialize SDL:  %s\n", 
