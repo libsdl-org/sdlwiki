@@ -28,12 +28,28 @@ These functions are in the process of being documented by Jorgen
 * [[SDL_GameControllerGetButton]]
 * [[SDL_GameControllerClose]]
 
+These functions are currently undocumented:
+
+* [[SDL_GameControllerMapping]]
+* [[SDL_GameControllerMappingForGUID]]
+* [[SDL_GameControllerGetAxis]]
+* [[SDL_GameControllerGetBindForAxis]]
+* [[SDL_GameControllerGetBindForButton]]
+* [[SDL_GameControllerGetStringForAxis]]
+* [[SDL_GameControllerGetStringForButton]]
+* [[SDL_GameControllerUpdate]] (maybe)
+
 SDL_gesture.h
 
 * [[SDL_RecordGesture]]
 * [[SDL_SaveAllDollarTemplates]]
 * [[SDL_SaveDollarTemplate]]
 * [[SDL_LoadDollarTemplates]]
+
+SDL_hints.h
+
+* [[SDL_AddHintCallback]]
+* [[SDL_DelHintCallback]]
 
 SDL_input.h
 
