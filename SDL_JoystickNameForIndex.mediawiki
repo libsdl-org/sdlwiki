@@ -25,10 +25,11 @@ Returns the name of the selected joystick.  If no name can be found, this functi
 ```c++
 /* Print the names of all attached joysticks */
 int num_joy, i;
-num_joy=SDL_NumJoysticks();
+num_joy = SDL_NumJoysticks();
 printf("%d joysticks found\n", num_joy);
-for(i=0;i<num_joy;i++)
-  printf("%s\n", SDL_JoystickNameForIndex(i));
+for (i = 0; i < num_joy; ++i) {
+    printf("%s\n", SDL_JoystickNameForIndex(i));
+}
 ```
 
 == Remarks ==
