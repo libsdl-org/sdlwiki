@@ -12,7 +12,7 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
                                     Uint32* Rmask,
                                     Uint32* Gmask,
                                     Uint32* Bmask,
-                                    Uint32* Amask)		
+                                    Uint32* Amask)
 ```
 
 == Function Parameters ==
