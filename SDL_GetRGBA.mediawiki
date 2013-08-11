@@ -7,12 +7,12 @@ Use this function to get RGBA values from a pixel in the specified format.
 
 == Syntax ==
 ```c++
-void SDL_GetRGBA(Uint32   	        pixel,
-		 const SDL_PixelFormat* format,
-		 Uint8*  	        r,
-		 Uint8*  	        g,
-		 Uint8*  	        b,
-		 Uint8*  	        a)
+void SDL_GetRGBA(Uint32                 pixel,
+                 const SDL_PixelFormat* format,
+                 Uint8*                 r,
+                 Uint8*                 g,
+                 Uint8*                 b,
+                 Uint8*                 a)
 ```
 
 == Function Parameters ==
