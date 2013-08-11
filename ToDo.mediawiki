@@ -139,7 +139,6 @@ SDL_touch.h
 
 * [[SDL_GetNumTouchDevices]]
 * [[SDL_GetNumTouchFingers]]
-* [[SDL_GetTouch]]
 * [[SDL_GetTouchDevice]]
 * [[SDL_GetTouchFinger]]
 
