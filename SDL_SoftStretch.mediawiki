@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 SDL_SoftStretch has been replaced by [[SDL_BlitScaled]]
