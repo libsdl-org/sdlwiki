@@ -13,7 +13,7 @@ Use this function to set the clip rectangle for rendering on the specified targe
 == Syntax ==
 ```c++
 void SDL_RenderSetClipRect(SDL_Renderer* renderer,
-                           SDL_Rect*     rect);
+                     const SDL_Rect*     rect);
 ```
 
 
