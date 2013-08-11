@@ -8,7 +8,7 @@ Use this function to copy areas of the window surface to the screen.
 == Syntax ==
 ```c++
 int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
-                                 SDL_Rect*   rects,
+                           const SDL_Rect*   rects,
                                  int         numrects)
 ```
 
