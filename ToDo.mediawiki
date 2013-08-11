@@ -89,11 +89,17 @@ SDL_messagebox.h
 SDL_mouse.h
 
 * [[SDL_CreateSystemCursor]]
+* [[SDL_GetDefaultCursor]]
+
+SDL_mutex.h
+
+* [[SDL_TryLockMutex]]
 
 SDL_render.h
 
 * [[SDL_CreateWindowAndRenderer]]
 * [[SDL_RenderTargetSupported]]
+* [[SDL_GetRendererOutputSize]]
 * [[SDL_GetRenderTarget]]
 * [[SDL_RenderSetLogicalSize]]
 * [[SDL_RenderGetLogicalSize]]
@@ -123,13 +129,25 @@ SDL_system.h
 * [[SDL_AndroidGetExternalStorageState]]
 * [[SDL_AndroidGetExternalStoragePath]]
 
+SDL_thread.h
+
+* [[SDL_TLSCreate]]
+* [[SDL_TLSGet]]
+* [[SDL_TLSSet]]
+
 SDL_touch.h
 
+* [[SDL_GetNumTouchDevices]]
+* [[SDL_GetNumTouchFingers]]
 * [[SDL_GetTouch]]
+* [[SDL_GetTouchDevice]]
+* [[SDL_GetTouchFinger]]
 
 SDL_video.h
 
 * [[SDL_GetDisplayName]]
+* [[SDL_GL_GetCurrentContext]]
+* [[SDL_GL_GetCurrentWindow]]
 * [[SDL_GetWindowDisplayIndex]]
 * [[SDL_SetWindowMinimumSize]]
 * [[SDL_GetWindowMinimumSize]]
