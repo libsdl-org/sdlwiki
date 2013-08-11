@@ -7,12 +7,12 @@ Use this function to remove a timer created with [[SDL_AddTimer]]().
 
 == Syntax ==
 ```c++
-SDL_bool SDL_RemoveTimer(SDL_TimerID t)
+SDL_bool SDL_RemoveTimer(SDL_TimerID id)
 ```
 
 == Function Parameters ==
 {|
-|'''t'''
+|'''id'''
 |^the ID of the timer to remove^
 |}
 
