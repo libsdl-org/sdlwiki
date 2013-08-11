@@ -13,8 +13,8 @@ Use this function to set the minimum size of a window's client area.
 == Syntax ==
 ```c++
 void SDL_SetWindowMinimumSize(SDL_Window* window,
-                              int         w,
-                              int         h)
+                              int         min_w,
+                              int         min_h)
 ```
 
 
@@ -23,10 +23,10 @@ void SDL_SetWindowMinimumSize(SDL_Window* window,
 |'''window'''
 |the window to change
 |-
-|'''w'''
+|'''min_w'''
 |the minimum width of the window in pixels
 |-
-|'''h'''
+|'''min_h'''
 |the minimum height of the window in pixels
 |}
 
