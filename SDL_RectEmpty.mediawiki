@@ -7,12 +7,12 @@ Use this function to check whether a rectangle has no area.
 
 == Syntax ==
 ```c++
-SDL_bool SDL_RectEmpty(const SDL_Rect* rect)
+SDL_bool SDL_RectEmpty(const SDL_Rect* r)
 ```
 
 == Function Parameters ==
 {|
-|'''rect'''
+|'''r'''
 |the [[SDL_Rect]] structure representing the rectangle to check
 |}
 
@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If the rectangle defined by '''rect''' is NULL or has a width or height <= 0 it has no area and this function returns SDL_TRUE.  If both width and height are > 0 the rectangle has area and this function returns SDL_FALSE.
+If the rectangle defined by '''r''' is NULL or has a width or height <= 0 it has no area and this function returns SDL_TRUE.  If both width and height are > 0 the rectangle has area and this function returns SDL_FALSE.
 
 
 ----
