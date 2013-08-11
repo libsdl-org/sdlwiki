@@ -7,16 +7,16 @@ Use this function to check whether two rectangles are equal.
 
 == Syntax ==
 ```c++
-SDL_bool SDL_RectEquals(const SDL_Rect* A,
-                        const SDL_Rect* B)
+SDL_bool SDL_RectEquals(const SDL_Rect* a,
+                        const SDL_Rect* b)
 ```
 
 == Function Parameters ==
 {|
-|'''A'''
+|'''a'''
 |an [[SDL_Rect]] structure representing the first rectangle
 |-
-|'''B'''
+|'''b'''
 |an [[SDL_Rect]] structure representing the second rectangle
 |}
 
