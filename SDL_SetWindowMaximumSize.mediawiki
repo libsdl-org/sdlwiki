@@ -13,8 +13,8 @@ Use this function to set the maximum size of a window's client area.
 == Syntax ==
 ```c++
 void SDL_SetWindowMaximumSize(SDL_Window* window,
-                              int         w,
-                              int         h)
+                              int         max_w,
+                              int         max_h)
 ```
 
 
@@ -23,10 +23,10 @@ void SDL_SetWindowMaximumSize(SDL_Window* window,
 |'''window'''
 |the window to change
 |-
-|'''w'''
+|'''max_w'''
 |the maximum width of the window in pixels
 |-
-|'''h'''
+|'''max_h'''
 |the maximum height of the window in pixels
 |}
 
