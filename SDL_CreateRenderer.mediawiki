@@ -8,7 +8,7 @@ Use this function to create a 2D rendering context for a window.
 == Syntax ==
 ```c++
 SDL_Renderer* SDL_CreateRenderer(SDL_Window* window,
-                                 int  	     index,
+                                 int         index,
                                  Uint32      flags)
 ```
 
@@ -32,38 +32,38 @@ Returns a valid rendering context or NULL if there was an error; call [[SDL_GetE
 #include "SDL.h"
 
 int main(int argc, char *argv[]) {
-	SDL_Window *win = NULL;
-	SDL_Renderer *renderer = NULL;
-	SDL_Texture *bitmapTex = NULL;
-	SDL_Surface *bitmapSurface = NULL;
-	int posX = 100, posY = 100, width = 320, height = 240;
+    SDL_Window *win = NULL;
+    SDL_Renderer *renderer = NULL;
+    SDL_Texture *bitmapTex = NULL;
+    SDL_Surface *bitmapSurface = NULL;
+    int posX = 100, posY = 100, width = 320, height = 240;
 
-	win = SDL_CreateWindow("Hello World", posX, posY, width, height, 0);
+    win = SDL_CreateWindow("Hello World", posX, posY, width, height, 0);
 
-	renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
+    renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
 
-	bitmapSurface = SDL_LoadBMP("img/hello.bmp");
-	bitmapTex = SDL_CreateTextureFromSurface(renderer, bitmapSurface);
-	SDL_FreeSurface(bitmapSurface);
+    bitmapSurface = SDL_LoadBMP("img/hello.bmp");
+    bitmapTex = SDL_CreateTextureFromSurface(renderer, bitmapSurface);
+    SDL_FreeSurface(bitmapSurface);
 
-	while (1) {
-		SDL_Event e;
-		if (SDL_PollEvent(&e)) {
-			if (e.type == SDL_QUIT) {
-				break;
-			}	
-		}
+    while (1) {
+        SDL_Event e;
+        if (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT) {
+                break;
+            }	
+        }
 
-		SDL_RenderClear(renderer);
-		SDL_RenderCopy(renderer, bitmapTex, NULL, NULL);
-		SDL_RenderPresent(renderer);
-	}
+        SDL_RenderClear(renderer);
+        SDL_RenderCopy(renderer, bitmapTex, NULL, NULL);
+        SDL_RenderPresent(renderer);
+    }
 
-	SDL_DestroyTexture(bitmapTex);
-	SDL_DestroyRenderer(renderer);
-	SDL_DestroyWindow(win);
+    SDL_DestroyTexture(bitmapTex);
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(win);
 
-	return 0;
+    return 0;
 }
 ```
 
