@@ -7,8 +7,8 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 
-= SDL_GetTouch =
-Use this function to get the touch device object at a specified touch device ID.
+= SDL_GetTouchFinger =
+Use this function to get the finger object for specified touch device ID and finger index.
 
 
 
@@ -16,21 +16,24 @@ Use this function to get the touch device object at a specified touch device ID.
 
 == Syntax ==
 ```c++
-SDL_Touch* SDL_GetTouch(SDL_TouchID id)
+SDL_Finger* SDL_GetTouchFinger(SDL_TouchID touchID, int index)
 ```
 
 
 
 == Function Parameters ==
 {|
-|'''id'''
+|'''touchID'''
 |the ID of the requested touch device
+|-
+|'''index'''
+|the index of the requested finger
 |}
 
 
 
 == Return Value ==
-Returns a pointer to the SDL_Touch object or NULL if no object at the given ID could be found.
+Returns a pointer to the SDL_Finger object or NULL if no object at the given ID and index could be found.
 
 
 
