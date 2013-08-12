@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_CondWait =
-Use this function to coordinate threads in a multi-threaded environment.  This function will unlock the provided mutex and wait for the condition variable to be signaled. Once the condition variable is signaled this function will re-lock the mutex and return.
+Use this function to wait until a condition variable is signaled.
 
 
 == Syntax ==
@@ -17,32 +13,31 @@ int SDL_CondWait(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond''' 
-|^the condition pointer whose signal will be waited on.^ 
+|the condition variable to wait on
 |-
 |'''mutex''' 
-|^mutex pointer used to gate thread access.^ 
+|the mutex used to coordinate thread access
 |}
-
 
 == Return Value ==
 Returns 0 when it is signaled or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
 == Remarks ==
-This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  The '''mutex''' is re-locked once the condition variable is signaled.
+This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  Once the condition variable is signaled, the mutex is re-locked and the function returns.
 
-The mutex must be locked before entering this function.
+The mutex must be locked before calling this function.
 
-This function is the equivalent of calling [[SDL_CondWaitTimeout]] with a time length of SDL_MUTEX_MAXWAIT.
+This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a time length of SDL_MUTEX_MAXWAIT.
 
 == Related Functions ==
-: [[SDL_CondSignal]] *
-: [[SDL_CondWaitTimeout]] *
-: [[SDL_mutexP]] *
+:[[SDL_CreateCond]]
+:[[SDL_CondBroadcast]]
+:[[SDL_CondSignal]]
+:[[SDL_CondWaitTimeout]]
+:[[SDL_DestroyCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
