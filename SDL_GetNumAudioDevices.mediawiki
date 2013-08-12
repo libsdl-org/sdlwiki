@@ -22,7 +22,7 @@ Returns the number of available devices exposed by the current driver or -1 if a
 == Code Examples ==
 ```c++
 int i, count = SDL_GetNumAudioDevices(0);
-for ( i = 0; i < count; ++i ) {
+for (i = 0; i < count; ++i) {
     printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0));
 }
 ```
@@ -35,6 +35,15 @@ Note that audio capture support is not implemented as of SDL 2.0.0, so the '''is
 This function will return -1 if an explicit list of devices can't be determined. Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified in [[SDL_OpenAudioDevice]]().
 
 In many common cases, when this function returns a value <= 0, it can still successfully open the default device (NULL for first argument of [[SDL_OpenAudioDevice]]()).
+
+This function may trigger a complete redetect of available hardware. It should not be called for each iteration of a loop, but rather once at the start of a loop:
+
+```c++
+// Don't do this: for (int i = 0; i < SDL_GetNumAudioDevices(0); i++)
+// do this instead:
+const int count = SDL_GetNumAudioDevices(0);
+for (int i = 0; i < count; ++i) { /* do something here. */ }
+```
 
 == Related Functions ==
 :[[SDL_GetAudioDeviceName]]
