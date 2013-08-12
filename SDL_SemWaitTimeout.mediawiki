@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_SemWaitTimeout =
-Use this function to *lock a semaphore* ^with a timeout^ ''-or-''  ^as a^ variant of [[SDL_SemWait]]() with a timeout in milliseconds.
+Use this function wait until a semaphore has a positive value and then decrements it.
 
 
 == Syntax ==
@@ -15,7 +14,7 @@ int SDL_SemWaitTimeout(SDL_sem* sem,
 == Function Parameters ==
 {|
 |'''sem'''
-|^the semaphore to monitor^
+|the semaphore to wait on
 |-
 |'''ms'''
 |the length of the timeout in milliseconds
@@ -24,38 +23,19 @@ int SDL_SemWaitTimeout(SDL_sem* sem,
 == Return Value ==
 Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait does not succeed in the allotted time, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-*<br/>If the semaphore was not successfully locked, the semaphore will be unchanged.<br/>*
-
 == Code Examples ==
-*
-```c++
-res = SDL_SemWaitTimeout(my_sem, WAIT_TIMEOUT_MILLISEC);
-
-if (res == SDL_MUTEX_TIMEDOUT) {
-        return TRY_AGAIN;
-}
-if (res == -1) {
-        return WAIT_ERROR;
-}
-
-...
-
-SDL_SemPost(my_sem);
-```
-*<br/><<Color2(green,Note that the 1.2 ver used a different param so this example should be checked for compliance with the current syntax.)>>
+<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
 == Remarks ==
-On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible.
-
-*<br/>[[SDL_SemWaitTimeout]]() is a variant of [[SDL_SemWait]]() with a maximum timeout value. If the value of the semaphore pointed to by '''sem''' is positive, it will atomically decrement the semaphore value and return 0, otherwise it will wait up to '''ms''' milliseconds trying to lock the semaphore. ,,This function is to be avoided if possible since on some platforms it is implemented by polling the semaphore every millisecond in a busy loop.,,
-
-After [[SDL_SemWaitTimeout]]() is successful, the semaphore can be released and its count atomically incremented by a successful call to [[SDL_SemPost]]().<br/>*
+This function suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value, the call is interrupted by a signal or error, or the specified time has elapsed. If the call is successful it will atomically decrement the semaphore value.
 
 == Related Functions ==
-:[[SDL_SemPost]] *
-:[[SDL_SemTryWait]] *
-:[[SDL_SemValue]] *
-:[[SDL_SemWait]] *
+:[[SDL_CreateSemaphore]]
+:[[SDL_DestroySemaphore]]
+:[[SDL_SemPost]]
+:[[SDL_SemTryWait]]
+:[[SDL_SemValue]]
+:[[SDL_SemWait]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
