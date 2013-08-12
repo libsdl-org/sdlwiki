@@ -1,11 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_SemPost =
-Use this function to *unlock a semaphore and* atomically increase the semaphore's count ,,(not blocking),,.
-
-<<Color2(green,See Remarks.)>>
+Use this function to atomically increment a semaphore's value and wake waiting threads.
 
 
 == Syntax ==
@@ -16,31 +13,25 @@ int SDL_SemPost(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the semaphore to increment^
+|the semaphore to increment
 |}
 
 == Return Value ==
-Returns 0 on success ^(and increments the semaphore count)^ or a negative error code on failure *(leaving the semaphore unchanged)*; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure ; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
-```c++
-SDL_SemPost(my_sem);
-```
-*
+<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
 == Remarks ==
-*<br/>[[SDL_SemPost]]() unlocks the semaphore pointed to by '''sem''' and atomically increments the semaphore's value. Threads that were blocking on the semaphore may be scheduled after this call succeeds.
-
-[[SDL_SemPost]]() should be called after a semaphore is locked by a successful call to [[SDL_SemWait]](), [[SDL_SemTryWait]]() or [[SDL_SemWaitTimeout]](). <br/>*
-
-<<Color2(green,Should the (not blocking) addendum from the header description be moved down here and explained more fully?)>>
+''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_SemTryWait]] *
-:[[SDL_SemValue]] *
-:[[SDL_SemWait]] *
-:[[SDL_SemWaitTimeout]] *
+:[[SDL_CreateSemaphore]]
+:[[SDL_DestroySemaphore]]
+:[[SDL_SemTryWait]]
+:[[SDL_SemValue]]
+:[[SDL_SemWait]]
+:[[SDL_SemWaitTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
