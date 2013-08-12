@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_SemValue =
-Use this function to return the current count of ,,the,, ^a^ semaphore.
+Use this function to get the current value of a semaphore.
 
 
 == Syntax ==
@@ -14,27 +13,22 @@ Uint32 SDL_SemValue(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the semaphore to query^
+|the semaphore to query
 |}
 
 == Return Value ==
-Returns the current count of the semaphore or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the current value of the semaphore.
 
 == Code Examples ==
-*
 ```c++
-sem_value = SDL_SemValue(my_sem);
+You can add your code example here
 ```
-*
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_SemPost]] *
-:[[SDL_SemTryWait]] *
-:[[SDL_SemWait]] *
-:[[SDL_SemWaitTimeout]] *
+:[[SDL_CreateSemaphore]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
