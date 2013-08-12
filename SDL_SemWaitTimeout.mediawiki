@@ -24,7 +24,36 @@ int SDL_SemWaitTimeout(SDL_sem* sem,
 Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait does not succeed in the allotted time, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
+```c++
+SDL_atomic_t done;
+SDL_sem *sem;
+
+SDL_AtomicSet(&done, 0);
+sem = SDL_CreateSemaphore(0);
+.
+.
+Thread A:
+    while (!SDL_AtomicGet(&done)) {
+        add_data_to_queue();
+        SDL_SemPost(sem);
+    }
+
+Thread B:
+    const Uint32 timeout = 1000; /* wake up every second */
+
+    while (!SDL_AtomicGet(&done)) {
+        if (SDL_SemWaitTimeout(sem, timeout) == 0 && data_available()) {
+            get_data_from_queue();
+        }
+        ... do other processing
+    }
+.
+.
+SDL_AtomicSet(&done, 1);
+SDL_SemPost(sem);
+wait_for_threads();
+SDL_DestroySemaphore(sem);
+```
 
 == Remarks ==
 This function suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value, the call is interrupted by a signal or error, or the specified time has elapsed. If the call is successful it will atomically decrement the semaphore value.
