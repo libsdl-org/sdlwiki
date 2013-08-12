@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_SemTryWait =
-Use this function ,,to,, ^as a^ non-blocking ,,variant of,, ^alternative to^ [[SDL_SemWait]]()  ''-or-''  ...*to attempt to lock a semaphore but ,,don't,, ^not^ suspend the thread*.
+Use this function see if a semaphore has a positive value and decrement it if it does.
 
 
 == Syntax ==
@@ -14,49 +13,52 @@ int SDL_SemTryWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the semaphore to decrement^
+|the semaphore to wait on
 |}
 
 == Return Value ==
 Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-''-or-''
-
-*<br/><<Color2(green,Modified slightly from the old wiki:)>>  Returns 0 if the semaphore was successfully locked ^(and decremented)^, SDL_MUTEX_TIMEDOUT if the thread would have suspended, or a negative error code on failure.
-
-If the semaphore was not successfully locked, the semaphore will be unchanged. <br/>*
-
 == Code Examples ==
-*
 ```c++
-res = SDL_SemTryWait(my_sem);
+SDL_atomic_t done;
+SDL_sem *sem;
 
-if (res == SDL_MUTEX_TIMEDOUT) {
-        return TRY_AGAIN;
-}
-if (res == -1) {
-        return WAIT_ERROR;
-}
+SDL_AtomicSet(&done, 0);
+sem = SDL_CreateSemaphore(0);
+.
+.
+Thread A:
+    while (!SDL_AtomicGet(&done)) {
+        add_data_to_queue();
+        SDL_SemPost(sem);
+    }
 
-...
-
-SDL_SemPost(my_sem);
+Thread B:
+    while (!SDL_AtomicGet(&done)) {
+        if (SDL_SemTryWait(sem) == 0 && data_available()) {
+            get_data_from_queue();
+        }
+        ... do other processing
+    }
+.
+.
+SDL_AtomicSet(&done, 1);
+SDL_SemPost(sem);
+wait_for_threads();
+SDL_DestroySemaphore(sem);
 ```
-*
 
 == Remarks ==
-''You can add useful comments here''
-
-*<br/>[[SDL_SemTryWait]]() is a non-blocking variant of [[SDL_SemWait]](). If the value of the semaphore pointed to by '''sem''' is positive it will atomically decrement the semaphore value and return 0, otherwise it will return SDL_MUTEX_TIMEDOUT instead of suspending the thread.
-
-After [[SDL_SemTryWait]]() is successful, the semaphore can be released and its count atomically incremented by a successful call to [[SDL_SemPost]](). <br/>*
-
-<<Color2(green,Seems like this should have some explanation that you would choose this function if you have a thread that will be ruined if it is blocked but it would be better if it could be stalled a bit if necessary and possible.  As compared to SDL_SemWait which will block the thread regardless of the result to the thread.  Is that right?)>>
+This function checks to see if the semaphore pointed to by '''sem''' has a positive value and atomically decrements the semaphore value if it does.  If the semaphore doesn't have a positive value, the function immediately returns SDL_MUTEX_TIMEDOUT.
 
 == Related Functions ==
-:[[SDL_SemPost]] *
-:[[SDL_SemWait]] *
-:[[SDL_SemWaitTimeout]] *
+:[[SDL_CreateSemaphore]]
+:[[SDL_DestroySemaphore]]
+:[[SDL_SemPost]]
+:[[SDL_SemValue]]
+:[[SDL_SemWait]]
+:[[SDL_SemWaitTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
