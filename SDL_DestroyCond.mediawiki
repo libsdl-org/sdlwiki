@@ -24,6 +24,10 @@ void SDL_DestroyCond(SDL_cond* cond)
 
 == Related Functions ==
 :[[SDL_CreateCond]]
+:[[SDL_CondBroadcast]]
+:[[SDL_CondSignal]]
+:[[SDL_CondWait]]
+:[[SDL_CondWaitTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
