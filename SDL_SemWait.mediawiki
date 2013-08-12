@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_SemWait =
-Use this function to suspend the calling thread until the semaphore pointed to by '''sem''' has a positive count, then atomically decrease the semaphore count  ''-or-''  ^...suspend the calling thread until the semaphore can be atomically decremented^ ''-or-''  *lock a semaphore and suspend the thread if the semaphore value is zero*.
+Use this function wait until a semaphore has a positive value and then decrements it.
 
 
 == Syntax ==
@@ -14,39 +13,28 @@ int SDL_SemWait(SDL_sem* sem)
 == Function Parameters ==
 {|
 |'''sem'''
-|^the semaphore to monitor^
+|the semaphore wait on
 |}
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-If the semaphore was not successfully locked, the semaphore will be unchanged.  ???
-
 == Code Examples ==
-*
-```c++
-if (SDL_SemWait(my_sem) == -1) {
-        return WAIT_FAILED;
-}
-
-...
-
-SDL_SemPost(my_sem);
-```
-*
+<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
 == Remarks ==
-*<br/>[[SDL_SemWait]]() suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value or the call is interrupted by a signal or error. If the call is successful it will atomically decrement the semaphore value.
+This function suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value or the call is interrupted by a signal or error. If the call is successful it will atomically decrement the semaphore value.
 
-After [[SDL_SemWait]]() is successful, the semaphore can be released and its count atomically incremented by a successful call to [[SDL_SemPost]](). <br/>*
-
-<<Color2(green,Should the Remarks include any discussion of locking and unlocking for clarity?  For example is the lock/unlock pair a built-in feature of this function or does the programmer have to 'manually' lock then unlock the semaphore  or thread when using this function?  Would it be beneficial to a user to have some discussion of that here or is it just understood/given?)>>
+This function is the equivalent of calling [[SDL_SemWaitTimeout]]() with a time length of SDL_MUTEX_MAXWAIT.
 
 == Related Functions ==
-:[[SDL_SemPost]] *
-:[[SDL_SemTryWait]] *
-:[[SDL_SemValue]] *
-:[[SDL_SemWaitTimeout]] *
+:[[SDL_CreateSemaphore]]
+:[[SDL_DestroySemaphore]]
+:[[SDL_SemPost]]
+:[[SDL_SemTryWait]]
+:[[SDL_SemValue]]
+:[[SDL_SemWait]]
+:[[SDL_SemWaitTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
