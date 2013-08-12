@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_DestroyCond =
 Use this function to destroy a condition variable.
@@ -14,19 +13,17 @@ void SDL_DestroyCond(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^the condition variable to destroy^
+|the condition variable to destroy
 |}
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CreateCond]] *
+:[[SDL_CreateCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
