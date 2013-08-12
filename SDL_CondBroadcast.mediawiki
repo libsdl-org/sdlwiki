@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_CondBroadcast =
 Use this function to restart all threads that are waiting on the condition variable.
@@ -14,7 +13,7 @@ int SDL_CondBroadcast(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^the applicable condition variable^ ???
+|the condition variable to signal
 |}
 
 == Return Value ==
@@ -22,15 +21,50 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_bool condition = SDL_FALSE;
+SDL_mutex *lock;
+SDL_cond *cond;
+
+lock = SDL_CreateMutex();
+cond = SDL_CreateCond();
+.
+.
+Thread A:
+    SDL_LockMutex(lock);
+    while ( !condition ) {
+        SDL_CondWait(cond, lock);
+    }
+    SDL_UnlockMutex(lock);
+
+Thread B:
+    SDL_LockMutex(lock);
+    while ( !condition ) {
+        SDL_CondWait(cond, lock);
+    }
+    SDL_UnlockMutex(lock);
+
+Thread C:
+    SDL_LockMutex(lock);
+    ...
+    condition = SDL_TRUE;
+    ...
+    SDL_CondBroadcast(cond);
+    SDL_UnlockMutex(lock);
+.
+.
+SDL_DestroyCond(cond);
+SDL_DestroyMutex(lock);
 ```
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CondSignal]] *
-:[[SDL_CondWait]] *
+:[[SDL_CreateCond]]
+:[[SDL_CondSignal]]
+:[[SDL_CondWait]]
+:[[SDL_CondWaitTimeout]]
+:[[SDL_DestroyCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
