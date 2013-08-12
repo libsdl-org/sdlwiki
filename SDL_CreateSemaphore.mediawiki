@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_CreateSemaphore =
-Use this function to create a semaphore, initialized with ^a^ value,, returns NULL on failure,,  *create a new semaphore and assign an initial value to it*.
+Use this function to create a semaphore.
 
 
 == Syntax ==
@@ -14,37 +13,55 @@ SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
 == Function Parameters ==
 {|
 |'''initial_value'''
-|^the starting value for the semaphore^
+|the starting value of the semaphore
 |}
 
 == Return Value ==
-^Returns the semaphore or NULL if there was an error^; call [[SDL_GetError]]() for more information.
-
-*<br/>Returns a pointer to an initialized semaphore or NULL if there was an error<br/>*<br/>; call [[SDL_GetError]]() for more information.
+Returns a new semaphore or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
+<!-- # Begin Semaphore Example -->
+Typical use of semaphores:
 ```c++
-SDL_sem *my_sem;
+SDL_atomic_t done;
+SDL_sem *sem;
 
-my_sem = SDL_CreateSemaphore(INITIAL_SEM_VALUE);
+SDL_AtomicSet(&done, 0);
+sem = SDL_CreateSemaphore(0);
+.
+.
+Thread A:
+    while (!SDL_AtomicGet(&done)) {
+        add_data_to_queue();
+        SDL_SemPost(sem);
+    }
 
-if (my_sem == NULL) {
-        return CREATE_SEM_FAILED;
-}
+Thread B:
+    while (!SDL_AtomicGet(&done)) {
+        SDL_SemWait(sem);
+        if (data_available()) {
+            get_data_from_queue();
+        }
+    }
+.
+.
+SDL_AtomicSet(&done, 1);
+SDL_SemPost(sem);
+wait_for_threads();
+SDL_DestroySemaphore(sem);
 ```
-*<br/><<Color2(green,Should this example be merged with the one on the SDL_DestroySemaphore page and then used as an Include there instead?)>>
+<!-- # End Semaphore Example -->
 
 == Remarks ==
-*<br/>[[SDL_CreateSemaphore]]() creates a new semaphore and initializes it with the value '''initial_value'''. Each locking operation on the semaphore by [[SDL_SemWait]](), [[SDL_SemTryWait]]() or [[SDL_SemWaitTimeout]]() will atomically decrement the semaphore value. The locking operation will be blocked if the semaphore value is not positive (greater than zero). Each unlock operation by [[SDL_SemPost]]() will atomically increment the semaphore value. <br/>*
+This function creates a new semaphore and initializes it with the value '''initial_value'''. Each wait operation on the semaphore will atomically decrement the semaphore value and potentially block if the semaphore value is 0. Each post operation will atomically increment the semaphore value and wake waiting threads and allow them to retry the wait operation.
 
 == Related Functions ==
-:[[SDL_DestroySemaphore]] *
-:[[SDL_SemPost]] *
-:[[SDL_SemTryWait]] *
-:[[SDL_SemValue]] *
-:[[SDL_SemWait]] *
-:[[SDL_SemWaitTimeout]]*
+:[[SDL_DestroySemaphore]]
+:[[SDL_SemPost]]
+:[[SDL_SemTryWait]]
+:[[SDL_SemValue]]
+:[[SDL_SemWait]]
+:[[SDL_SemWaitTimeout]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
