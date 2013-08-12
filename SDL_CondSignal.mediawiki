@@ -1,9 +1,8 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_CondSignal =
-Use this function to restart one of the threads that ,,are,, ^is^ waiting on the condition variable.
+Use this function to restart one of the threads that are waiting on the condition variable.
 
 
 == Syntax ==
@@ -14,23 +13,24 @@ int SDL_CondSignal(SDL_cond* cond)
 == Function Parameters ==
 {|
 |'''cond'''
-|^the applicable condition variable^ ???
+|the condition variable to signal
 |}
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
-You can add your code example here
-```
+<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
 == Remarks ==
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CondBroadcast]] *
-:[[SDL_CondWait]] *
+:[[SDL_CreateCond]]
+:[[SDL_CondBroadcast]]
+:[[SDL_CondWait]]
+:[[SDL_CondWaitTimeout]]
+:[[SDL_DestroyCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
