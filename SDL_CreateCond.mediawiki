@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
-'''DRAFT'''
+<!-- pragma camelcase off -->
 
 = SDL_CreateCond =
 Use this function to create a condition variable.
@@ -12,31 +11,23 @@ SDL_cond* SDL_CreateCond(void)
 ```
 
 == Return Value ==
-Returns ^the condition variable that is created^.
+Returns a new condition variable or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
+<!-- # Begin Condition Variable Example -->
+Typical use of condition variables:
 ```c++
+SDL_bool condition = SDL_FALSE;
+SDL_mutex *lock;
 SDL_cond *cond;
 
-cond=SDL_CreateCond();
+lock = SDL_CreateMutex();
+cond = SDL_CreateCond();
 .
 .
-/* Do stuff */
-.
-.
-SDL_DestroyCond(cond);
-```
-*<br/>
-
-<!-- Should this example be Included on the SDL_DestroyCond page? -->
-
-== Remarks ==
-Typical use of condition variables:
- ```
 Thread A:
     SDL_LockMutex(lock);
-    while ( ! condition ) {
+    while ( !condition ) {
         SDL_CondWait(cond, lock);
     }
     SDL_UnlockMutex(lock);
@@ -44,22 +35,24 @@ Thread A:
 Thread B:
     SDL_LockMutex(lock);
     ...
-    condition = true;
+    condition = SDL_TRUE;
     ...
     SDL_CondSignal(cond);
     SDL_UnlockMutex(lock);
+.
+.
+SDL_DestroyCond(cond);
+SDL_DestroyMutex(lock);
 ```
-There is some discussion whether to signal the condition variable with the mutex locked or not.  There is some potential performance benefit to unlocking first on some platforms, but there are some potential race conditions depending on how your code is structured.
+<!-- # End Condition Variable Example -->
 
-In general it's safer to signal the condition variable while the mutex is locked.
-
-
-<!-- Since this has no params does it actually ''create'' the structure or does it just assign an existing structure to a thread? -->
+== Remarks ==
+''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CondSignal]] *
-:[[SDL_CondWait]] *
-:[[SDL_DestroyCond]] *
+:[[SDL_CondSignal]]
+:[[SDL_CondWait]]
+:[[SDL_DestroyCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
