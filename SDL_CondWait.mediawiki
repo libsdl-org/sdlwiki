@@ -26,7 +26,7 @@ Returns 0 when it is signaled or a negative error code on failure; call [[SDL_Ge
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
 == Remarks ==
-This function unlocks the specified '''mutex''' and waits on another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  Once the condition variable is signaled, the mutex is re-locked and the function returns.
+This function unlocks the specified '''mutex''' and waits for another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  Once the condition variable is signaled, the mutex is re-locked and the function returns.
 
 The mutex must be locked before calling this function.
 
