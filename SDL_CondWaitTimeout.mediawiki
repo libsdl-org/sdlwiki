@@ -1,12 +1,8 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
 
 = SDL_CondWaitTimeout =
-Use this function to coordinate threads in a multi-threaded environment. 
+Use this function to wait until a condition variable is signaled or a specified amount of time has passed.
 
 
 == Syntax ==
@@ -18,13 +14,13 @@ int SDL_CondWaitTimeout(SDL_cond*  cond,
 == Function Parameters ==
 {|
 |'''cond''' 
-|^the condition pointer whose signal will be waited on ^ 
+|the condition variable to wait on
 |-
 |'''mutex''' 
-|^mutex pointer used by user code to gate thread access ^ 
+|the mutex used to coordinate thread access
 |-
 |'''ms''' 
-|^the maximum time to wait in milliseconds, set to SDL_MUTEX_MAXWAIT for infinite wait^ 
+|the maximum time to wait in milliseconds, or SDL_MUTEX_MAXWAIT to wait indefinitely
 |}
 
 == Return Value ==
@@ -32,22 +28,55 @@ Returns 0 if the condition variable is signaled, SDL_MUTEX_TIMEDOUT if the condi
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_bool condition = SDL_FALSE;
+SDL_mutex *lock;
+SDL_cond *cond;
+
+lock = SDL_CreateMutex();
+cond = SDL_CreateCond();
+.
+.
+Thread A:
+    const Uint32 timeout = 1000; /* wake up every second */
+
+    while (!done) {
+        SDL_LockMutex(lock);
+        while (!condition && SDL_CondWaitTimeout(cond, lock, timeout) == 0) {
+            continue;
+        }
+        SDL_UnlockMutex(lock);
+
+        if (condition) {
+            ...
+        }
+
+        ... do some periodic work
+    }
+
+Thread B:
+    SDL_LockMutex(lock);
+    ...
+    condition = SDL_TRUE;
+    ...
+    SDL_CondSignal(cond);
+    SDL_UnlockMutex(lock);
+.
+.
+SDL_DestroyCond(cond);
+SDL_DestroyMutex(lock);
 ```
 
 == Remarks ==
-This function will wait for the condition variable to be signaled or for the number of milliseconds passed in to elapse. If the time length requested elapses prior to the condition being signaled, this function returns with a SDL_MUTEX_TIMEDOUT value, otherwise it returns '0' meaning that the condition has been signaled. This function also unlocks the passed in mutex prior to waiting on the condition signal, and locks the mutex upon the condition being signaled, or the timeout.
+This function unlocks the specified '''mutex''' and waits for another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond''', or for the specified time to elapse.  Once the condition variable is signaled or the time elapsed, the mutex is re-locked and the function returns.
 
-'''mutex''' must be locked prior to calling this function. This function unlocks '''mutex''', and it remains unlocked while this function waits for the condition signal, or the timeout to occur. In this way other threads within your program are free to make use of the shared resources while this function is in the waiting state.
-
-When either the condition is signaled, or the timeout occurs, this function will lock '''mutex, '''prior to returning.
-
-<<Color2(green,Some of this seems redundant and will be re-organized upon further editing.)>>
-
-On some platforms this function is implemented by looping with a delay of 1 ms, and so should be avoided if possible.
+The mutex must be locked before calling this function.
 
 == Related Functions ==
-: [[SDL_CondWait]] *
+:[[SDL_CreateCond]]
+:[[SDL_CondBroadcast]]
+:[[SDL_CondSignal]]
+:[[SDL_CondWait]]
+:[[SDL_DestroyCond]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
