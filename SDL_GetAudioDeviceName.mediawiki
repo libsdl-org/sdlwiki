@@ -21,9 +21,7 @@ const char* SDL_GetAudioDeviceName(int index,
 |}
 
 == Return Value ==
-Returns the name of the audio device at the requested index.
-
-<<Color2(green,What happens if it fails?  Empty ""?)>>
+Returns the name of the audio device at the requested index, or NULL on error.
 
 == Code Examples ==
 ```c++
