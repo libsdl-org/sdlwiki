@@ -13,7 +13,7 @@ int SDL_GL_SetSwapInterval(int interval)
 == Function Parameters ==
 {|
 |'''interval'''
-|0 for immediate updates, 1 for updates synchronized with the vertical retrace
+|0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for late swap tearing; see [[#Remarks|Remarks]]
 |}
 
 == Return Value ==
@@ -25,7 +25,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Some systems can specify -1 for the interval, which uses late swap tearing. That is to say, it works like specifying a 1, but if you've already missed the vertical retrace for a given frame, it swaps immediately, which for small drops in framerate might be less distracting. If the system can't support late swap tearing, this function will fail. In such a case, you should probably retry the call with 1 for the interval.
+
+Late swap tearing is implemented for some glX drivers with [http://www.opengl.org/registry/specs/EXT/glx_swap_control_tear.txt GLX_EXT_swap_control_tear] and for some Windows drivers with [http://www.opengl.org/registry/specs/EXT/wgl_swap_control_tear.txt WGL_EXT_swap_control_tear].
 
 == Related Functions ==
 :[[SDL_GL_GetSwapInterval]]
