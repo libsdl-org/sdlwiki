@@ -296,7 +296,7 @@ Keycodes are meant to be layout-dependent. Think of this as "the user pressed th
 
 In example, if you pressed the key that's two keys to the right of CAPS LOCK on a US QWERTY keyboard, it'll report a scancode of SDL_SCANCODE_S and a keycode of SDLK_S. The same key on a Dvorak keyboard, will report a scancode of SDL_SCANCODE_S and a keycode of SDLK_O.
 
-Note that both keycodes and scancodes are now 32 bits, and use a wide range of numbers. There's no <code>SDLK_LAST</code> anymore. If your program had a lookup table of SDLK_LAST elements, to map between SDL keys and whatever your application wanted internally, that's no longer feasible. Use a hash table instead. A <code>std::map</code> will do.
+Note that both keycodes and scancodes are now 32 bits, and use a wide range of numbers. There's no <code>SDLK_LAST</code> anymore. If your program had a lookup table of SDLK_LAST elements, to map between SDL keys and whatever your application wanted internally, that's no longer feasible. Use a hash table instead. A <code>std::map</code> will do. If you're mapping scancodes instead of keycodes, there's '''SDL_NUM_SCANCODES''', which you can use for array bounds. It's 512 at the moment.
 
 <code>SDLMod</code> is now [[SDL_Keymod]] and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
 
