@@ -12,7 +12,7 @@ This category contains all the (public) structures for SDL.
 
 == Structures ==
 
-<<FullSearch(category:CategoryStruct)>>
+<<FullSearchCached(category:CategoryStruct)>>
 
 ----
 CategoryCategory
