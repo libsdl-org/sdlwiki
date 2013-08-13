@@ -13,7 +13,7 @@ This category contains all the (public) hint defines for SDL.
 
 == Hints ==
 
-<<FullSearch(category:CategoryDefine)>>
+<<FullSearchCached(category:CategoryDefine)>>
 
 ----
 CategoryCategory
