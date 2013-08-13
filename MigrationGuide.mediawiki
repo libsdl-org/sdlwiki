@@ -13,7 +13,7 @@ We are quite proud of it, and we'd like games that are using SDL 1.2 to move up 
 We think you'll be very happy with SDL 2.0, both for the new features and the better experience over SDL 1.2. This document doesn't try to cover all the awesome new things in SDL2--and there are many--but just the things you need to do to get running ''right now''. Once you've ported your code, definitely check out the new stuff, you'll probably want to add some of it to your application, too.
 
 === Overview of new features ===
-These are the most important new features SDL 2 introduces:
+These are the most important new features in SDL 2.0:
 
 * Full 3D hardware acceleration
 * Support for OpenGL 3.0+ in various profiles (core, compatibility, debug, robust, etc)
