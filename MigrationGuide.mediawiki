@@ -1,12 +1,16 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL 1.2 to 2.0 Migration Guide =
 
 
 == Introduction ==
 
-This page describes what changed from SDL 1.2 to SDL 2.0, the new features, and upgrade tips.  Most code written for SDL 1.2 will need to be updated (perhaps only slightly) to work properly with the new API.
+After many years in development, SDL 2.0.0 has finally been released!
+
+We are quite proud of it, and we'd like games that are using SDL 1.2 to move up right away. As this can feel like a daunting task, this document is a simple walkthrough of how to migrate to the new library. We think you'll find it's not as hard as you think, and often times, you'll be either replacing function calls with direct equivalents or undoing some hacks in your code to deal with 1.2 deficiencies.
+
+We think you'll be very happy with SDL 2.0, both for the new features and the better experience over SDL 1.2. This document doesn't try to cover all the awesome new things in SDL2--and there are many--but just the things you need to do to get running ''right now''. Once you've ported your code, definitely check out the new stuff, you'll probably want to add some of it to your application, too.
 
 === Overview of new features ===
 These are the most important new features SDL 2 introduces:
@@ -39,7 +43,7 @@ These are the most important new features SDL 2 introduces:
 
 The [[Introduction]] page has a more extensive listing about what features SDL offers in overall (including old 1.2 features).
 
-=== Looking for information ===
+=== Looking for more information ===
 
 The best place for information are:
 * this wiki :)
@@ -48,13 +52,6 @@ The best place for information are:
 
 
 == Moving from SDL 1.2 to 2.0 ==
-
-After many years in development, SDL 2.0.0 has finally been released!
-
-We are quite proud of it, and we'd like games that are using SDL 1.2 to move up right away. As this can feel like a daunting task, this document is a simple walkthrough of how to migrate to the new library. We think you'll find it's not as hard as you think, and often times, you'll be either replacing function calls with direct equivalents or undoing some hacks in your code to deal with 1.2 deficiencies.
-
-We think you'll be very happy with SDL 2.0, both for the new features and the better experience over SDL 1.2. This document doesn't try to cover all the awesome new things in SDL2--and there are many--but just the things you need to do to get running ''right now''. Once you've ported your code, definitely check out the new stuff, you'll probably want to add some of it to your application, too.
-
 
 === Some general truths ===
 
@@ -264,10 +261,10 @@ There are more features to the Render API, some of which may be able to replace 
 
 You can do some simple effects with the render API without having to get down into direct pixel manipulation. Some of these were available on 1.2 surfaces.
 
+* Color alpha: [[SDL_Color]] now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named <code>unused</code>). In 2.0, you should.
 * Alpha blending: use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of <code>SDL_SetAlpha()</code>.  Alpha-blending on surfaces can be disabled via [[SDL_SetSurfaceBlendMode]]() and on textures with [[SDL_SetTextureBlendMode]]().
 * Colorkey: When calling [[SDL_SetColorKey]](), you should pass <code>SDL_TRUE</code> instead of <code>SDL_SRCCOLORKEY</code>.
 * Color modulation: Some renderers now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]]() for details.
-* Color alpha: [[SDL_Color]] now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named <code>unused</code>). In 2.0, you should.
 
 
 === OpenGL ===
@@ -409,7 +406,7 @@ SDL_AddEventWatch(myEventFilter, data);
 
 Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, mutliple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for SDL_FINGER in SDL_events.h.
 
-There are a handful of other mobile-friendly functions, like SDL_StartTextInput(), which will show the on-screen keyboard. Make use of them.
+There are a handful of other mobile-friendly functions, like [[SDL_StartTextInput]](), which will show the on-screen keyboard. Make use of them.
 
 In addition, there are also Android and iOS specific functions, to let you access platform-specific features that wouldn't make sense in a general API. Refer to SDL_system.h for a list of these functions.
 
