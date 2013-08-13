@@ -27,15 +27,15 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 
 
 <!-- #== Enumerations == -->
-<!-- #<<FullSearch(category:CategoryEnum CategoryInput)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryInput)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearch(category:CategoryStruct CategoryInput)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryInput)>> -->
 
 
 == Functions ==
 
-<<FullSearch(category:CategoryInput -CategoryEnum -CategoryStruct)>>
+<<FullSearchCached(category:CategoryInput -CategoryEnum -CategoryStruct)>>
 
 ----
 CategoryCategory
