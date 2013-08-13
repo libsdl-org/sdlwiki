@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Some systems can specify -1 for the interval, which uses late swap tearing. That is to say, it works like specifying a 1, but if you've already missed the vertical retrace for a given frame, it swaps immediately, which for small drops in framerate might be less distracting. If the system can't support late swap tearing, this function will fail. In such a case, you should probably retry the call with 1 for the interval.
+Some systems allow specifying -1 for the interval, to enable late swap tearing. Late swap tearing works the same as vsync, but if you've already missed the vertical retrace for a given frame, it swaps buffers immediately, which might be less jarring for the user during occasional framerate drops. If application requests late swap tearing and the system does not support it, this function will fail and return -1. In such a case, you should probably retry the call with 1 for the interval.
 
 Late swap tearing is implemented for some glX drivers with [http://www.opengl.org/registry/specs/EXT/glx_swap_control_tear.txt GLX_EXT_swap_control_tear] and for some Windows drivers with [http://www.opengl.org/registry/specs/EXT/wgl_swap_control_tear.txt WGL_EXT_swap_control_tear].
 
