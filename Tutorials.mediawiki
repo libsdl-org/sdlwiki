@@ -4,6 +4,9 @@ There are a number of SDL tutorials available from different sources.
 
 == Multi-Subject ==
 
+* [http://twinklebeardev.blogspot.com/p/sdl-20-tutorial-index.html TwinklebearDev]
+: Tutorials covering a wide variety of introductory topics with SDL 2.0
+
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
