@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_ShowSimpleMessageBox =
+Use this function to display a simple message box.
+
+
+== Syntax ==
+```c++
+int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *message, SDL_Window *window)
+```
+
+== Function Parameters ==
+{|
+|'''flags'''
+|An SDL_MessageBoxFlag; see Remarks for details;
+|-
+|'''title'''
+|UTF-8 title text
+|-
+|'''message'''
+|UTF-8 message text
+|-
+|'''window'''
+|the parent window, or NULL for no parent
+|}
+
+== Return Value ==
+0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+<span id="flags"></span> '''flags''' may be any of the following:
+{|
+|SDL_MESSAGEBOX_ERROR
+|error dialog
+|-
+|SDL_MESSAGEBOX_WARNING
+|warning dialog
+|-
+|SDL_MESSAGEBOX_INFORMATION
+|informational dialog
+|}
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
+----
+[[CategoryAPI]]
