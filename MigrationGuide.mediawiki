@@ -38,6 +38,7 @@ These are the most important new features in SDL 2.0:
 * Basic Drag'n'Drop support
 * Proper unicode input and IME support
 * [[CategoryAssertions|A really powerful assert macro]]
+* zlib license instead of LGPL.
 * Lots of old annoyances from 1.2 are gone
 * Many other things!
 
