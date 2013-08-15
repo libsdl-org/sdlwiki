@@ -233,7 +233,7 @@ SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
 
 ```c++
 // if all this hex scares you, check out SDL_PixelFormatEnumToMasks()!
-SDL_Surface *screen = SDL_CreateSurface(0, 640, 480, 32,
+SDL_Surface *screen = SDL_CreateRGBSurface(0, 640, 480, 32,
                                         0x00FF000,
                                         0x0000FF00,
                                         0x000000FF,
