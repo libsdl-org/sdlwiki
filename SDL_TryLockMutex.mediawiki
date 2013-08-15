@@ -1,0 +1,68 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+'''DRAFT'''
+
+= SDL_TryLockMutex(SDL_mutex * mutex) =
+Use this function to try to lock a mutex without blocking.
+
+
+
+== Syntax ==
+```c++
+int SDL_LockMutex(SDL_mutex * mutex)
+```
+
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
+== Function Parameters ==
+{|
+|'''mutex'''
+|the mutex to try to lock
+|}
+
+== Return Value ==
+Returns return 0, SDL_MUTEX_TIMEDOUT, or -1 on error; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+int status;
+SDL_mutex *mutex;
+
+mutex = SDL_CreateMutex();
+if (!mutex) {
+  fprintf(stderr, "Couldn't create mutex\n");
+  return;
+}
+
+status = SDL_TryLockMutex(mutex);
+
+if (status == 0) {
+  printf("Locked mutex\n");
+  SDL_UnlockMutex(mutex);
+} else if (status == SDL_MUTEX_TIMEDOUT) {
+  /* Mutex not available for locking right now */
+} else {
+  fprintf(stderr, "Couldn't lock mutex\n");
+}
+
+SDL_DestroyMutex(mutex)
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Related Functions ==
+:[[SDL_LockMutex]]
+:[[SDL_UnlockMutex]]
+:[[SDL_CreateMutex]]
+:[[SDL_DestroyMutex]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
+----
+CategoryMutex
