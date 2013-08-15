@@ -103,7 +103,7 @@ The setup looks like this.
 
 <code>SDL_SetVideoMode()</code> becomes [[SDL_CreateWindow]](), as we discussed before. But what do we put for the resolution? If your game was hardcoded to 640x480, for example, you probably were running into monitors that couldn't do that fullscreen resolution at this point, and in windowed mode, your game probably looked like an animated postage stamp on really high-end monitors. There's a better solution in SDL2.
 
-We don't call <code>SDL_ListModes()</code> anymore. There's an equivalent function in SDL2, but instead we're going to use a new feature called "fullscreen desktop," which tells SDL "give me the whole screen and don't change the resolution." For our hypothetical 640x480 game, it might look like this:
+We don't call <code>SDL_ListModes()</code> anymore. There's an equivalent in SDL2 (call [[SDL_GetDisplayMode]]() in a loop, [[SDL_GetNumDisplayModes]]() times), but instead we're going to use a new feature called "fullscreen desktop," which tells SDL "give me the whole screen and don't change the resolution." For our hypothetical 640x480 game, it might look like this:
 
 ```c++
 SDL_Window *sdlWindow = SDL_CreateWindow(title,
