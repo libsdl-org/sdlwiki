@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 = SDL_ShowSimpleMessageBox =
 Use this function to display a simple message box.
@@ -14,7 +13,7 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 == Function Parameters ==
 {|
 |'''flags'''
-|An SDL_MessageBoxFlag; see Remarks for details;
+|An SDL_MessageBoxFlag; see [[#flags|Remarks]] for details;
 |-
 |'''title'''
 |UTF-8 title text
@@ -31,7 +30,10 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, 
+                         "Missing file",
+                         "File is missing. Please reinstall the program.",
+                         NULL);
 ```
 
 == Remarks ==
@@ -47,7 +49,11 @@ You can add your code example here
 |informational dialog
 |}
 
-----
-[[CategoryAPI]], [[CategoryHeader]]
+This function may be called at any time, even before SDL_Init(). This makes it useful for reporting errors like a failure to create a renderer or OpenGL context.
+
+On X11, SDL rolls its own dialog box with X11 primitives instead of a formal toolkit like GTK+ or Qt.
+
+Note that if SDL_Init() would fail because there isn't any available video target, this function is likely to fail for the same reasons. If this is a concern, check the return value from this function and fall back to writing to stderr if you can.
+
 ----
 [[CategoryAPI]]
