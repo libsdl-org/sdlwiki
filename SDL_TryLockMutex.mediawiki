@@ -3,7 +3,7 @@
 
 '''DRAFT'''
 
-= SDL_TryLockMutex(SDL_mutex * mutex) =
+= SDL_TryLockMutex =
 Use this function to try to lock a mutex without blocking.
 
 
