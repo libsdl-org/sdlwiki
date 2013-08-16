@@ -232,10 +232,6 @@ SDL_PushEvent(&user_event);
 |[[SDL_TextInputEvent]]
 |'''text'''
 |-
-|SDL_TOUCHBUTTONDOWN<br/>SDL_TOUCHBUTTONUP
-|[[SDL_TouchButtonEvent]]
-|'''tbutton'''
-|-
 |SDL_USEREVENT
 |[[SDL_UserEvent]]
 |'''user'''
