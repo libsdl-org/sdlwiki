@@ -49,7 +49,7 @@ SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
 |informational dialog
 |}
 
-This function may be called at any time, even before SDL_Init(). This makes it useful for reporting errors like a failure to create a renderer or OpenGL context.
+This function may be called at any time, even before [[SDL_Init]](). This makes it useful for reporting errors like a failure to create a renderer or OpenGL context.
 
 On X11, SDL rolls its own dialog box with X11 primitives instead of a formal toolkit like GTK+ or Qt.
 
