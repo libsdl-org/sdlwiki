@@ -307,12 +307,6 @@ SDL_events.h
 * [[SDL_ControllerButtonEvent]]
 * [[SDL_ControllerDeviceEvent]]
 
-=== Old structures ===
-
-SDL_events.h
-
-* [[SDL_TouchButtonEvent]] (not part of SDL 2.0)
-
 === See also ===
 
 * [[temp]]
