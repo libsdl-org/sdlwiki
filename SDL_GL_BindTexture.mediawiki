@@ -41,22 +41,22 @@ void RocketSDLRenderInterfaceOpenGL::RenderGeometry(Rocket::Core::Vertex* vertic
     float texw, texh;
 
     SDL_Texture* sdl_texture = NULL;
-    if(texture)
-    {
+    if(texture) {
         render_data.glEnableClientState(GL_TEXTURE_COORD_ARRAY);
         sdl_texture = (SDL_Texture *) texture;
         SDL_GL_BindTexture(sdl_texture, &texw, &texh);
     }
 
-    for(int  i = 0; i < num_vertices; i++) {
+    for (int  i = 0; i < num_vertices; i++) {
         Positions[i] = vertices[i].position;
         Colors[i] = vertices[i].colour;
         if (sdl_texture) {
             TexCoords[i].x = vertices[i].tex_coord.x * texw;
             TexCoords[i].y = vertices[i].tex_coord.y * texh;
+        } else {
+            TexCoords[i] = vertices[i].tex_coord;
         }
-        else TexCoords[i] = vertices[i].tex_coord;
-    };
+    }
 
     render_data.glEnableClientState(GL_VERTEX_ARRAY);
     render_data.glEnableClientState(GL_COLOR_ARRAY);
@@ -96,26 +96,26 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     float texw, texh;
 
     SDL_Texture* sdl_texture = NULL;
-    if(texture)
-    {
+    if(texture) {
         render_data.glEnableClientState(GL_TEXTURE_COORD_ARRAY);
         sdl_texture = (SDL_Texture *) texture;
         SDL_GL_BindTexture(sdl_texture, &texw, &texh);
     }
 
-    for(int  i = 0; i < num_vertices; i++) {
+    for (int  i = 0; i < num_vertices; i++) {
         Positions[i] = vertices[i].position;
         Colors[i] = vertices[i].colour;
         if (sdl_texture) {
             TexCoords[i].x = vertices[i].tex_coord.x * texw;
             TexCoords[i].y = vertices[i].tex_coord.y * texh;
+        } else {
+            TexCoords[i] = vertices[i].tex_coord;
         }
-	else TexCoords[i] = vertices[i].tex_coord;
-    };
+    }
 
     unsigned short newIndicies[num_indices];
     for (int i = 0; i < num_indices; i++) {
-      newIndicies[i] = (unsigned short) indices[i];
+        newIndicies[i] = (unsigned short) indices[i];
     }
 
     render_data.glEnableClientState(GL_VERTEX_ARRAY);
@@ -182,8 +182,7 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     if (texture) {
         render_data.glUniformMatrix4fv(u_texture_projection, 1, GL_FALSE, (GLfloat *)projection);
         render_data.glUniform2f(u_texture_translation, translation.x, translation.y);
-    }
-    else {
+    } else {
         render_data.glUniformMatrix4fv(u_color_projection, 1, GL_FALSE, (GLfloat *)projection);
         render_data.glUniform2f(u_color_translation, translation.x, translation.y);
     }
@@ -194,8 +193,7 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     float texw, texh;
 
     unsigned short newIndicies[num_indices];
-    for (int i = 0; i < num_indices; i++)
-    {
+    for (int i = 0; i < num_indices; i++) {
       newIndicies[i] = (unsigned short) indices[i];
     }
 
@@ -205,13 +203,12 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     render_data.glEnableVertexAttribArray(ROCKETGLUE_ATTRIBUTE_TEXCOORD);
     render_data.glEnableVertexAttribArray(ROCKETGLUE_ATTRIBUTE_COLOR);
 
-    if(texture) {
+    if (texture) {
         sdl_texture = (SDL_Texture *) texture;
         SDL_GL_BindTexture(sdl_texture, &texw, &texh);
         render_data.glUniform1i(u_texture, 0);
         glVertexAttribPointer(ROCKETGLUE_ATTRIBUTE_TEXCOORD, 2, GL_FLOAT, GL_FALSE, sizeof(Rocket::Core::Vertex), &vertices[0].tex_coord);
-    }
-    else {
+    } else {
         render_data.glActiveTexture(GL_TEXTURE0);
         render_data.glDisable(GL_TEXTURE_2D);
         render_data.glDisableVertexAttribArray(ROCKETGLUE_ATTRIBUTE_TEXCOORD);
