@@ -98,7 +98,7 @@ You can see that this maps pretty closely to 1.2. The difference is that you can
 
 Extra credit for letting users specify a display for the window: SDL2 also allows you to manage systems with multiple monitors. Don't worry about that right now, though.
 
-So now that your window is back on the screen, let's talk strategy. SDL2 still has SDL_Surface, but what you want, if possible, is the new SDL_Texture. Surfaces are always in system RAM now, and are always operated on by the CPU, so we want to get away from there. SDL2 has a new rendering API. It's meant for use by simple 2D games, but most notably, it's meant to get all that software rendering into video RAM and onto the GPU. And even if you just want to use it to get your software renderer's work to the screen, it brings some very nice benefits: if possible, it will use OpenGL or Direct3D behind the scenes, which means you'll get faster blits, a working Steam Overlay, and scaling for free.
+So now that your window is back on the screen, let's talk strategy. SDL2 still has [[SDL_Surface]], but what you want, if possible, is the new [[SDL_Texture]]. Surfaces are always in system RAM now, and are always operated on by the CPU, so we want to get away from there. SDL2 has a new rendering API. It's meant for use by simple 2D games, but most notably, it's meant to get all that software rendering into video RAM and onto the GPU. And even if you just want to use it to get your software renderer's work to the screen, it brings some very nice benefits: if possible, it will use OpenGL or Direct3D behind the scenes, which means you'll get faster blits, a working Steam Overlay, and scaling for free.
 
 The setup looks like this.
 
@@ -158,7 +158,7 @@ Now we're ready to start drawing for real.
 
 ==== If your game just wants to get fully-rendered frames to the screen ====
 
-An example of a game like this is Doom, or Duke Nukem 3D, or many others. The application wants to draw every pixel itself and get that final set of pixels to the screen efficiently in one big blit.
+An example of a game like this is ''Doom'', or ''Duke Nukem 3D'', or many others. The application wants to draw every pixel itself and get that final set of pixels to the screen efficiently in one big blit.
 
 For this, you're going to want a single SDL_Texture that will represent the screen. Let's create one now for our 640x480 game:
 
@@ -301,7 +301,7 @@ Note that both keycodes and scancodes are now 32 bits, and use a wide range of n
 
 <code>SDLMod</code> is now [[SDL_Keymod]] and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
 
-<code>SDL_GetKeyState()</code> has been renamed to [[SDL_GetKeyboardState]]{}.  The returned array should now be indexed by SDL_SCANCODE_* values (see [[SDL_Scancode]]) instead of [[SDL_Keysym]] values.
+<code>SDL_GetKeyState()</code> has been renamed to [[SDL_GetKeyboardState]]().  The returned array should now be indexed by SDL_SCANCODE_* values (see [[SDL_Scancode]]) instead of [[SDL_Keysym]] values.
 
 Now, for mouse input.
 
@@ -405,7 +405,7 @@ int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 SDL_AddEventWatch(myEventFilter, data);
 ```
 
-Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, mutliple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for SDL_FINGER in SDL_events.h.
+Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for SDL_FINGER* in SDL_events.h.
 
 There are a handful of other mobile-friendly functions, like [[SDL_StartTextInput]](), which will show the on-screen keyboard. Make use of them.
 
@@ -423,7 +423,7 @@ There is also a '''size''' method to RWops, now. This lets a RWops report the si
 
 === Add-on libraries ===
 
-The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
+The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL 2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
 
 These libraries will not be supporting 1.2 going forward, and any compatibility with 1.2 is likely to vanish at some point from newer versions.
 
