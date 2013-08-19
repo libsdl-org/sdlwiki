@@ -3,23 +3,23 @@
 <!-- pragma disable-camelcase -->
 '''DRAFT'''
 
-= SDL_JoystickIndex =
+= SDL_JoystickInstanceID =
 Use this function to get the device index of an opened joystick.
 
 
 == Syntax ==
 ```c++
-int SDL_JoystickIndex(SDL_Joystick* joystick)
+SDL_JoystickID SDL_JoystickInstanceID(SDL_Joystick* joystick)
 ```
 
 == Function Parameters ==
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information
 |}
 
 == Return Value ==
-Returns the index of the specified joystick on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the instance ID of the specified joystick on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
