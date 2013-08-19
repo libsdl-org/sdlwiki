@@ -11,7 +11,7 @@ An enumeration of the various supported windowing subsystems.
 |
 |-
 |SDL_SYSWM_WINDOWS
-|Microsoft Windows^®^
+|Microsoft Windows
 |-
 |SDL_SYSWM_X11
 |X Window System
