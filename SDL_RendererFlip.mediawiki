@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-= SDL_RendererFlags =
+= SDL_RendererFlip =
 An enumeration of flags that can be used in the flip parameter for [[SDL_RenderCopyEx]].
 
 
