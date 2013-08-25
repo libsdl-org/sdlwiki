@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_ExtensionSupported =
+= SDL_GL_ExtensionSupported =
 Use this function to return true if an OpenGL extension is supported for the current context.
 
 
