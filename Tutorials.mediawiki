@@ -10,6 +10,11 @@ There are a number of SDL tutorials available from different sources.
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
+== Android ==
+
+* [http://www.dinomage.com/2013/01/howto-sdl-on-android/]
+: An example of setting up SDL on Android
+
 == Video ==
 
 * [http://slouken.blogspot.com/2011/02/streaming-textures-with-sdl-13.html Streaming textures with SDL 2.0]
