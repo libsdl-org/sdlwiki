@@ -9,7 +9,7 @@
 = SDL_GetNumInputDevices =
 Use this function to get the number of ,,mouse,, input devices available.
 
-<<Color2(green,This API is not limited to mice. Should it say "pointing" or similar instead to specify the type of input device (ie: not a keyboard) without being overly specific?)>>
+<span style="color: green;">This API is not limited to mice. Should it say "pointing" or similar instead to specify the type of input device (ie: not a keyboard) without being overly specific?</span>
 
 
 == Syntax ==
@@ -19,7 +19,7 @@ int SDL_GetNumInputDevices(void)
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  ???
-<<Color2(green,Source?)>>
+<span style="color: green;">Source?</span>
 
 == Code Examples ==
 ```c++
@@ -29,7 +29,7 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-<<Color2(green,Would it be helpful to mention the types of input devices it would or would not count?)>>
+<span style="color: green;">Would it be helpful to mention the types of input devices it would or would not count?</span>
 
 == Related Functions ==
 :[[SDL_OtherFunction]]
