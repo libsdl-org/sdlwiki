@@ -9,32 +9,32 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 == Video ==
 
 === Complete ===
-* <<Color2(green, Sam: Add support for multiple windows)>>
-* <<Color2(green, Sam: Create 3D accelerated texture based rendering API)>>
-* <<Color2(green, Sam: Create API for enabling/disabling the screensaver)>>
-* <<Color2(green, Sam: Add support for selecting video mode refresh rate)>>
-* <<Color2(green, Sam: Create API for clipboard support (check out !PyGame))>>
-* <<Color2(green, Sam: Add support for multiple displays)>>
-* <<Color2(green, Sam: Add concept of viewport to fullscreen windows)>>
-* <<Color2(green, Sam: Add support for synchronizing 2D updates with vblank, using SDL_HINT_RENDER_VSYNC)>>
-* <<Color2(green, Mason Wheeler and Gabriel Jacobo: Add support for render targets)>>
+* <span style="color: green;">Sam: Add support for multiple windows</span>
+* <span style="color: green;">Sam: Create 3D accelerated texture based rendering API</span>
+* <span style="color: green;">Sam: Create API for enabling/disabling the screensaver</span>
+* <span style="color: green;">Sam: Add support for selecting video mode refresh rate</span>
+* <span style="color: green;">Sam: Create API for clipboard support (check out !PyGame)</span>
+* <span style="color: green;">Sam: Add support for multiple displays</span>
+* <span style="color: green;">Sam: Add concept of viewport to fullscreen windows</span>
+* <span style="color: green;">Sam: Add support for synchronizing 2D updates with vblank, using SDL_HINT_RENDER_VSYNC</span>
+* <span style="color: green;">Mason Wheeler and Gabriel Jacobo: Add support for render targets</span>
 
 
 === Required ===
 * Ryan: Implement landscape mode for iPhone port
 * Sam: Add support for OpenGL context profiles
 * Sam: Create flags for specifying foreign window event behavior
-* <<Color2(green, Andreas: Support shaped windows)>>
-* <<Color2(green, Windows)>>
+* <<Color2(col=green, text=Andreas: Support shaped windows")>>
+* <<Color2(col=green, text=Windows")>>
 * Mac OS X
-* <<Color2(green, Linux)>>
+* <<Color2(col=green, text=Linux")>>
 
 === Wishlist ===
-* <<Color2(gray, Create desktop video mode change notification)>>
-* <<Color2(gray, Support always-on-top window styles)>>
-* <<Color2(gray, Support multiple icon sizes (e.g. for Windows Vista))>>
-* <<Color2(gray, Implement NET_WM_PING and NET_WM_PID/WM_CLIENT_MACHINE (http://standards.freedesktop.org/wm-spec/wm-spec-1.3.html#KILLINGWINDOWS))>>
-* <<Color2(gray, Support desktop windows)>>
+* <span style="color: gray;">Create desktop video mode change notification</span>
+* <span style="color: gray;">Support always-on-top window styles</span>
+* <span style="color: gray;">Support multiple icon sizes (e.g. for Windows Vista)</span>
+* <span style="color: gray;">Implement NET_WM_PING and NET_WM_PID/WM_CLIENT_MACHINE (http://standards.freedesktop.org/wm-spec/wm-spec-1.3.html#KILLINGWINDOWS)</span>
+* <span style="color: gray;">Support desktop windows</span>
    ```c++
         setAttribute(Qt::WA_X11NetWmWindowTypeDesktop);
         setWindowFlags(Qt::SplashScreen);
@@ -48,15 +48,15 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 == Audio ==
 
 === Complete ===
-* <<Color2(green, Ryan: Add support for float and 32-bit int audio formats)>>
-* <<Color2(green, Ryan: Add support for 7.1 speaker output)>>
+* <span style="color: green;">Ryan: Add support for float and 32-bit int audio formats</span>
+* <span style="color: green;">Ryan: Add support for 7.1 speaker output</span>
 
 === Required ===
-* <<Color2(green, Ryan: Create audio recording API)>>
+* <span style="color: green;">Ryan: Create audio recording API</span>
 * Windows
 * Mac OS X
 * Linux
-* <<Color2(green, Ryan: Add support for multiple audio devices)>>
+* <span style="color: green;">Ryan: Add support for multiple audio devices</span>
 * Windows
 * Mac OS X
 * Linux
@@ -64,27 +64,27 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * Ryan: Add support for non-power-of-two audio rate conversion
 
 === Wishlist ===
-* <<Color2(gray, PCM volume control)>>
+* <span style="color: gray;">PCM volume control</span>
 
 == Event ==
 
 === Complete ===
-* <<Color2(green, Sam: Add a way to dynamically register for custom event types)>>
-* <<Color2(green, Add a timeout parameter for [[SDL_WaitEvent]]() (http://lists.libsdl.org/pipermail/sdl-libsdl.org/2008-May/thread.html#65067))>>
+* <span style="color: green;">Sam: Add a way to dynamically register for custom event types</span>
+* <span style="color: green;">Add a timeout parameter for [[SDL_WaitEvent]]() (http://lists.libsdl.org/pipermail/sdl-libsdl.org/2008-May/thread.html#65067)</span>
 
 === Required ===
 * Sam: Add modifier state to key and button events
 * Sam: Resolve question of how to represent iOS events which need to be handled before dispatch returns
 
 === Wishlist ===
-* <<Color2(gray, Add a timestamp to events)>>
+* <span style="color: gray;">Add a timestamp to events</span>
 
 == Mouse Input ==
 
 === Complete ===
-* <<Color2(green, Sam: Mousewheel has a separate event)>>
-* <<Color2(green, Sam: Support showing / hiding the cursor)>>
-* <<Color2(green, Sam: Add support color cursors)>>
+* <span style="color: green;">Sam: Mousewheel has a separate event</span>
+* <span style="color: green;">Sam: Support showing / hiding the cursor</span>
+* <span style="color: green;">Sam: Add support color cursors</span>
 
 === Required ===
 * Sam: Reimplement mouse grab support
@@ -92,29 +92,29 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * Verify proper behavior with Vista DPI scaling
 
 === Wishlist ===
-* <<Color2(gray, Ryan: Add support for multiple mice)>>
+* <span style="color: gray;">Ryan: Add support for multiple mice</span>
 * Q: What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse?
-* <<Color2(gray, Pressure/tilt support for tablet like devices)>>
-* <<Color2(gray, Add support animated cursors)>>
+* <span style="color: gray;">Pressure/tilt support for tablet like devices</span>
+* <span style="color: gray;">Add support animated cursors</span>
 
 == Keyboard Input ==
 
 === Complete ===
-* <<Color2(green, Sam: Create new text input event separate from key events)>>
+* <span style="color: green;">Sam: Create new text input event separate from key events</span>
 
 === Required ===
 * Q: When you're enabling or disabling text events via keystroke, how do you ignore the text generated by the key that is toggling text input?
     A: Key events are guaranteed to happen first
 * Sam/Jiang/Daniel: Create IME API and support system IME interfaces
-* <<Color2(green, Windows)>>
-* <<Color2(green, Mac OS X)>>
+* <span style="color: green;">Windows</span>
+* <span style="color: green;">Mac OS X</span>
 * Linux
 * Sam: Add name to keysym and name to scancode lookup functions
 
 == Joystick Input ==
 
 === Complete ===
-* <<Color2(green, Edgar: Create Force Feedback API)>>
+* <span style="color: green;">Edgar: Create Force Feedback API</span>
 
 === Required ===
 * Ryan: Add support for joystick device live connect and disconnect
@@ -122,36 +122,36 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 == Multi-touch Input ==
 
 === Complete ===
-* <<Color2(green, Jim: Create multi-touch input API)>>
+* <span style="color: green;">Jim: Create multi-touch input API</span>
 
 == Multi-threading ==
 
 === Complete ===
-* <<Color2(green, Sam: Create API for getting the number of CPUs)>>
-* <<Color2(green, Bob: Create API for atomic operations on data)>>
-* <<Color2(green, Sam: Remove unsafe SDL_KillThread() API)>>
-* <<Color2(green, Sam: Create API for thread priority)>>
+* <span style="color: green;">Sam: Create API for getting the number of CPUs</span>
+* <span style="color: green;">Bob: Create API for atomic operations on data</span>
+* <span style="color: green;">Sam: Remove unsafe SDL_KillThread() API</span>
+* <span style="color: green;">Sam: Create API for thread priority</span>
 
 == Timers ==
 
 === Complete ===
-* <<Color2(green, Sam: Add higher precision timers for profiling)>>
+* <span style="color: green;">Sam: Add higher precision timers for profiling</span>
 
 == General ==
 
 === Complete ===
-* <<Color2(green, Ryan: Create API for assertions)>>
-* <<Color2(green, Sam: Public license for SDL_compat.c, tests, and SDL_main*)>>
-* <<Color2(green, Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 2.0 installations)>>
-* <<Color2(green, Sheena: Finish 2.0 API documentation)>>
+* <span style="color: green;">Ryan: Create API for assertions</span>
+* <span style="color: green;">Sam: Public license for SDL_compat.c, tests, and SDL_main*</span>
+* <span style="color: green;">Sam: Figure out the best way to support simultaneous SDL 1.2 and SDL 2.0 installations</span>
+* <span style="color: green;">Sheena: Finish 2.0 API documentation</span>
 
 === Required ===
 * Sam: Write introductions for SDL 2.0 API documentation
 
 === Wishlist ===
-* <<Color2(gray, Create an API for live video capture)>>
-* <<Color2(gray, Create an API for accelerometer data)>>
-* <<Color2(gray, Create extended set of (negative) error codes and have the API functions document and return them)>>
+* <span style="color: gray;">Create an API for live video capture</span>
+* <span style="color: gray;">Create an API for accelerometer data</span>
+* <span style="color: gray;">Create extended set of (negative) error codes and have the API functions document and return them</span>
 
 ----
 Ryan has more information on the SDL 2.0 changes that you can find here: <br/>
