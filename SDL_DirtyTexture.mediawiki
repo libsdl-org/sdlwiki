@@ -1,2 +1,2 @@
 {|
-|<: tablewidth="100%"><<Color2(purple,THIS FUNCTION HAS BEEN REMOVED FROM THE API.)>><br/><<Color2(purple,THIS PAGE WILL BE DELETED.)>>
+|<: tablewidth="100%"><span style="color: purple;">THIS FUNCTION HAS BEEN REMOVED FROM THE API.</span><br/><span style="color: purple;">THIS PAGE WILL BE DELETED.</span>
