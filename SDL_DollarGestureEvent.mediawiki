@@ -37,8 +37,8 @@ A structure that contains ^complex gesture event information^???.
 |description
 |}
 
-<<Color2(green,Note that SDL_GestureID is not defined in this header.)>>
-<<Color2(green,Worth changing touchId and gestureId to touchID and gestureID for consistency?)>>
+<span style="color: green;">Note that SDL_GestureID is not defined in this header.</span>
+<span style="color: green;">Worth changing touchId and gestureId to touchID and gestureID for consistency?</span>
 
 == Code Examples ==
 ```c++
