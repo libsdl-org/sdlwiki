@@ -14,7 +14,7 @@ void SDL_SetCursor(SDL_Cursor* cursor)
 == Function Parameters ==
 {|
 |'''cursor'''
-|a cursor to make active <<Color2(green,(Should this be linked to Remarks?))>>
+|a cursor to make active <span style="color: green;">(Should this be linked to Remarks?)</span>
 |}
 
 == Code Examples ==
