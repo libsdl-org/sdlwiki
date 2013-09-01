@@ -14,7 +14,7 @@ SDL_Cursor* SDL_GetCursor(void)
 == Return Value ==
 Returns the active cursor ^or NULL if there is no mouse^.
 
-<<Color2(green,Call for error?)>>
+<span style="color: green;">Call for error?</span>
 
 == Code Examples ==
 ```c++
