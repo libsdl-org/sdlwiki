@@ -21,7 +21,7 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 |the hat ,,indices,, ^index;^ start^s^ at index 0
 |}
 
-<<Color2(green,Is it possible to use more than one index at the same time for '''hat'''?)>>
+<span style="color: green;">Is it possible to use more than one index at the same time for '''hat'''?</span>
 
 == Return Value ==
 Returns one of the following ,,positions,,:
@@ -44,9 +44,9 @@ Returns one of the following ,,positions,,:
 |-
 |SDL_HAT_LEFTDOWN
 |}
-<<Color2(green,Should the defines/descriptions for each be included here since the RV is actually a Uint8 or will the user never see those? Should it be a list instead of a table?)>>
+<span style="color: green;">Should the defines/descriptions for each be included here since the RV is actually a Uint8 or will the user never see those? Should it be a list instead of a table?</span>
 
-<<Color2(green,Is this alternative table structure better?)>>
+<span style="color: green;">Is this alternative table structure better?</span>
 {|
 |SDL_HAT_LEFTUP
 |SDL_HAT_UP
