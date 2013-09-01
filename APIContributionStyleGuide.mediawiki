@@ -20,12 +20,12 @@ If you would like to make other contributions beyond code examples and remarks, 
 
 === Opening An Editor ===
 If a page can be edited you will see two options to choose from in the left column:
- 1. <<Color2(blue,Edit (Text))>>
+ 1. <span style="color: blue;">Edit (Text)</span>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
  (!) '''Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.'''
  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
 
- 1. <<Color2(blue,Edit (GUI))>>
+ 1. <span style="color: blue;">Edit (GUI)</span>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
  (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
@@ -39,9 +39,9 @@ Before you save your changes please include a note in the Comment field below th
 * added code example to C++ section
 * remarked on use of function with [sound card model]
 
-{i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
+{i} Especially when using the text editor, use the <span style="color: blue;">Preview</span> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
 
-When you have completed adding your content and are satisfied with the formatting use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
+When you have completed adding your content and are satisfied with the formatting use the <span style="color: blue;">Save Changes</span> function in the left sidebar to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
 ~-(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
