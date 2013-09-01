@@ -13,7 +13,7 @@ SDL_bool SDL_GetRelativeMouseMode(void)
 
 == Return Value ==
 Returns SDL_TRUE if relative mode is enabled or SDL_FALSE if it is disabled.
-''<<Color2(green,Is this right? What does it do if relative mode is not supported?)>>''
+''<span style="color: green;">Is this right? What does it do if relative mode is not supported?</span>''
 
 == Code Examples ==
 ```c++
