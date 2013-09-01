@@ -18,7 +18,7 @@ int SDL_ShowCursor(int toggle)
 |}
 
 == Return Value ==
-Returns 1 if the cursor is shown, or 0 if the cursor is hidden, <<Color2(green, or a negative error code on failure; call [[SDL_GetError]]() for more information)>>.
+Returns 1 if the cursor is shown, or 0 if the cursor is hidden, <span style="color: green;">or a negative error code on failure; call [[SDL_GetError]]() for more information</span>.
 
 == Code Examples ==
 ```c++
@@ -30,7 +30,7 @@ You can add your code example here
 
 The current state of the mouse cursor can be queried by passing SDL_QUERY; either SDL_DISABLE or SDL_ENABLE will be returned.<br/>*
 
-<<Color2(green,The above has been rearranged from the original.  Do these apply in 2.0?)>>
+<span style="color: green;">The above has been rearranged from the original.  Do these apply in 2.0?</span>
 
 == Related Functions ==
 :[[SDL_CreateCursor]] *
