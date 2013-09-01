@@ -24,7 +24,7 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick* joystick,
 == Return Value ==
 *<br/>Returns a 16-bit signed integer representing the current position of the axis ^or 0 on failure; call [[SDL_GetError]]() for more information^.<br/>*
 
-The state is a value ranging from -32768 to 32767. <<Color2(green,Is this the RV or a Remark?)>>
+The state is a value ranging from -32768 to 32767. <span style="color: green;">Is this the RV or a Remark?</span>
 
 == Code Examples ==
 ```c++
