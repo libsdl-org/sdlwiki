@@ -10,7 +10,7 @@ Use this function to get the haptic ,,devices,, ^device's^ supported features in
 ```c++
 unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 ```
-<<Color2(green,Should that say Uint8 or Uint16 etc instead of "unsigned int"?)>>
+<span style="color: green;">Should that say Uint8 or Uint16 etc instead of "unsigned int"?</span>
 
 == Function Parameters ==
 {|
@@ -21,7 +21,7 @@ unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 == Return Value ==
 Returns ^a list of supported^ haptic features in bitwise manner (OR'd), or a negative error code on failure; call [[SDL_GetError]]() for more information. 
 
-<<Color2(green,It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?)>>
+<span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span>
 
 == Code Examples ==
 ```c++
