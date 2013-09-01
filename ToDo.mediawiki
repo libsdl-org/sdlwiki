@@ -319,6 +319,10 @@ SDL_events.h
 * [[SDL_ControllerButtonEvent]]
 * [[SDL_ControllerDeviceEvent]]
 
+=== Not linked pages ===
+
+* [[SDL_DirtyTexture]]
+
 === See also ===
 
 * [[temp]]
