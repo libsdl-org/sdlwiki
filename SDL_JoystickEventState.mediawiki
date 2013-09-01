@@ -16,7 +16,7 @@ int SDL_JoystickEventState(int state)
 |'''state'''
 |can be one of SDL_QUERY, SDL_ENABLE or SDL_IGNORE
 |}
-<<Color2(green,Confused - seems like '''state''' should be an integer but these are not integers.  Since RV is also an integer I'm not sure where this info belongs.  Is this an error?  Should this be somehow liked to [[SDL_EventState]]()?)>>
+<span style="color: green;">Confused - seems like '''state''' should be an integer but these are not integers.  Since RV is also an integer I'm not sure where this info belongs.  Is this an error?  Should this be somehow liked to [[SDL_EventState]]()?</span>
 
 == Return Value ==
 Returns ^1 if enabled, 0 if disabled^, or a negative error code on failure; call [[SDL_GetError]]() for more information.
