@@ -43,7 +43,7 @@ SDL_Texture* source;
 // loading etc ...
 
 int w, h;
-SDL_QueryTexture(source, nullptr, nullptr, &w, &h);
+SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
 ```
 
