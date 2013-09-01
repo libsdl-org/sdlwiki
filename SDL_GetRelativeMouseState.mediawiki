@@ -21,10 +21,10 @@ Uint32 SDL_GetRelativeMouseState(int* x,
 |,,a pointer filled with ,,^the last recorded y coordinate of the mouse^
 |}
 
-<<Color2(green,Should this be an exception to the 'pointer rule'?)>>
+<span style="color: green;">Should this be an exception to the 'pointer rule'?</span>
 
 == Return Value ==
-Returns a 32 bit button bitmask of the relative button state. ???  <<Color2(green,Does this have an error state?)>>
+Returns a 32 bit button bitmask of the relative button state. ???  <span style="color: green;">Does this have an error state?</span>
 
 == Code Examples ==
 ```c++
@@ -32,7 +32,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros *(where X is generally 1 for the left, 2 for middle, 3 for the right button)(<<Color2(green,parens is from SDL_GetMouseState because remark is otherwise the same)>>)*, and '''x''' and '''y''' are set to the mouse deltas since the last call to [[SDL_GetRelativeMouseState]]() *or since event initialization. You can pass NULL for either '''x''' or '''y'''.*
+The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros *(where X is generally 1 for the left, 2 for middle, 3 for the right button)(<span style="color: green;">parens is from SDL_GetMouseState because remark is otherwise the same</span>)*, and '''x''' and '''y''' are set to the mouse deltas since the last call to [[SDL_GetRelativeMouseState]]() *or since event initialization. You can pass NULL for either '''x''' or '''y'''.*
 
 == Related Functions ==
 :[[SDL_GetMouseState]] *
