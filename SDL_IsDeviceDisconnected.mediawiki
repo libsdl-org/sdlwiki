@@ -24,7 +24,7 @@ int SDL_IsDeviceDisconnected(int index)
 == Return Value ==
 Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_GetError]]() for more information,,.
 
-<<Color2(green,Can't find reference for values. Need source. Error state for this one?)>>
+<span style="color: green;">Can't find reference for values. Need source. Error state for this one?</span>
 
 == Code Examples ==
 ```c++
