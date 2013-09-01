@@ -17,7 +17,7 @@ int SDL_RedetectInputDevices(void)
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  ???
-~-<<Color2(green,Source?)>>-~
+~-<span style="color: green;">Source?</span>-~
 
 == Code Examples ==
 ```c++
@@ -27,7 +27,7 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-<<Color2(green,From header. Belongs here?)>>
+<span style="color: green;">From header. Belongs here?</span>
 This invalidates all existing device information from previous queries!
 
 There is an implicit (re)detect upon [[SDL_Init]]().
