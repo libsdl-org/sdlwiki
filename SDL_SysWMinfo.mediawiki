@@ -19,6 +19,10 @@ A structure that contains system-dependent information about a window.
 |'''subsystem'''
 |the windowing system type; see [[#Remarks|Remarks]] for details
 |-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''dummy'''
+|<style="color: #808080;">unused (to help compilers when no specific system is available)
+|-
 |
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_WINDOWS''
