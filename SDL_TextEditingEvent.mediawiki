@@ -12,6 +12,10 @@ A structure that contains keyboard text editing event information.
 |SDL_TEXTEDITING
 |-
 |Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
 |'''windowID'''
 |the window with keyboard focus, if any
 |-
