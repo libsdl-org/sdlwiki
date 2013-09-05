@@ -27,6 +27,10 @@ A structure that contains the audio output format. It also contains a callback t
 |'''samples'''
 |audio buffer size in samples (power of 2); see [[#Remarks|Remarks]] for details
 |-
+|<style="color: #808080;">Uint16
+|<style="color: #808080;">'''padding'''
+|<style="color: #808080;">
+|-
 |Uint32
 |'''size'''
 |audio buffer size in bytes (calculated)
