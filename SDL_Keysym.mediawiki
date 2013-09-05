@@ -18,6 +18,10 @@ A structure that contains key information used in key events.
 |Uint16
 |'''mod'''
 |current key modifiers; see [[SDL_Keymod]] for details
+|-
+|<style="color: #808080;">Uint32
+|<style="color: #808080;">'''unused'''
+|<style="color: #808080;">
 |}
 
 == Code Examples ==
