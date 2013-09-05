@@ -12,6 +12,10 @@ A structure that contains ^complex gesture event information^???.
 |'''type'''
 |SDL_DOLLARGESTURE
 |-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
 |SDL_TouchID
 |'''touchId'''
 |the touch device index
