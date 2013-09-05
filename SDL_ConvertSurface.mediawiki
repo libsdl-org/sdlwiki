@@ -8,9 +8,9 @@ Use this function to copy an existing surface into a new one that is optimized f
 
 == Syntax ==
 ```c++
-SDL_Surface* SDL_ConvertSurface(SDL_Surface*     src,
-                                SDL_PixelFormat* fmt,
-                                Uint32           flags)
+SDL_Surface* SDL_ConvertSurface(SDL_Surface*           src,
+                                const SDL_PixelFormat* fmt,
+                                Uint32                 flags)
 ```
 
 
