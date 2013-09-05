@@ -11,6 +11,10 @@ A structure that contains joystick button event information.
 |'''type'''
 |the event type; SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP
 |-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
 |SDL_JoystickID
 |'''which'''
 |the index of the joystick that reported the event
@@ -22,6 +26,14 @@ A structure that contains joystick button event information.
 |Uint8
 |'''state'''
 |the state of the button; SDL_PRESSED or SDL_RELEASED
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding1'''
+|<style="color: #808080;">
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding2'''
+|<style="color: #808080;">
 |}
 
 == Code Examples ==
