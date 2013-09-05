@@ -315,9 +315,46 @@ These functions maybe do not need to be documented here
 SDL_events.h
 
 * [[SDL_JoyDeviceEvent]]
+* [[SDL_CommonEvent]]
 * [[SDL_ControllerAxisEvent]]
 * [[SDL_ControllerButtonEvent]]
 * [[SDL_ControllerDeviceEvent]]
+* [[SDL_OSEvent]]
+
+SDL_gamecontroller.h
+* [[SDL_GameControllerButtonBind]]
+
+SDL_haptic.h
+* [[SDL_HapticLeftRight]]
+
+SDL_joystick.h
+* [[SDL_JoystickGUID]]
+
+SDL_messagebox.h
+* [[SDL_MessageBoxButtonData]]
+* [[SDL_MessageBoxColor]]
+* [[SDL_MessageBoxColorScheme]]
+* [[SDL_MessageBoxData]]
+
+SDL_shape.h
+* [[SDL_WindowShapeMode]]
+
+SDL_touch.h
+* [[SDL_Finger]]
+
+SDL2_test
+* [[SDLTest_CommonState]]
+* [[SDLTest_Crc32Context]]
+* [[SDLTest_Md5Context]]
+* [[SDLTest_RandomContext]]
+* [[SDLTest_SurfaceImage_t]]
+* [[SDLTest_TestCaseReference]]
+* [[SDLTest_TestSuiteReference]]
+
+=== Missing unions ===
+
+SDL_shape.h
+* [[SDL_WindowShapeParams]]
 
 === Not linked pages ===
 
