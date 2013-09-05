@@ -12,6 +12,10 @@ A structure that contains mouse motion event information.
 |the event type; SDL_MOUSEMOTION
 |-
 |Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
 |'''windowID'''
 |the window with mouse focus, if any
 |-
