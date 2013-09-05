@@ -28,6 +28,10 @@ A union that contains the generic template for any haptic effect.
 |'''ramp'''
 |ramp effect; see [[#Remarks|Remarks]] for details
 |-
+|[[SDL_HapticLeftRight]]
+|'''leftright'''
+|left/right effect; see [[#Remarks|Remarks]] for details
+|-
 |[[SDL_HapticCustom]]
 |'''custom'''
 |custom effect; see [[#Remarks|Remarks]] for details
