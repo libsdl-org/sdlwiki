@@ -12,12 +12,28 @@ A structure that contains window state change event data.
 |SDL_WINDOWEVENT
 |-
 |Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
 |'''windowID'''
 |the associated window
 |-
 |Uint8
 |'''event'''
 |[[SDL_WindowEventID]]
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding1'''
+|<style="color: #808080;">
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding2'''
+|<style="color: #808080;">
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding3'''
+|<style="color: #808080;">
 |-
 |Sint32
 |'''data1'''
