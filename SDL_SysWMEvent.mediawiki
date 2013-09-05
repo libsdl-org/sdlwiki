@@ -11,6 +11,10 @@ A structure that contains a video driver dependent system event.
 |'''type'''
 |SDL_SYSWMEVENT
 |-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
 |[[SDL_SysWMmsg]]*
 |'''msg'''
 |driver dependent data, defined in SDL_syswm.h
