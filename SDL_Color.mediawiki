@@ -19,9 +19,9 @@ A structure that represents a color.
 |'''b'''
 |the blue component in the range 0-255
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''unused'''
-|<style="color: #808080;">
+|Uint8
+|'''a'''
+|the alpha component in the range 0-255
 |}
 
 == Code Examples ==
