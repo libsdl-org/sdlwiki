@@ -11,6 +11,10 @@ A structure that contains joystick trackball motion event information.
 |'''type'''
 |SDL_JOYBALLMOTION
 |-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
 |SDL_JoystickID
 |'''which'''
 |the index of the joystick that reported the event
@@ -18,6 +22,18 @@ A structure that contains joystick trackball motion event information.
 |Uint8
 |'''ball'''
 |the index of the trackball that changed
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding1'''
+|<style="color: #808080;">
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding2'''
+|<style="color: #808080;">
+|-
+|<style="color: #808080;">Uint8
+|<style="color: #808080;">'''padding3'''
+|<style="color: #808080;">
 |-
 |Sint16
 |'''xrel'''
