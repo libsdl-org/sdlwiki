@@ -11,6 +11,10 @@ A structure that contains an event used to request a file open by the system.
 |'''type'''
 |the event type; SDL_DROPFILE
 |-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
 |char*
 |'''file'''
 |the file name, which should be freed with SDL_free()
