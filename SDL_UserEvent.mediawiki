@@ -12,6 +12,10 @@ A structure that contains an application-defined event type.
 |Value obtained from [[SDL_RegisterEvents]]()
 |-
 |Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
 |'''windowID'''
 |the associated window, if any
 |-
