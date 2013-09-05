@@ -11,6 +11,10 @@ A union that contains structures for the different event types.
 |'''type'''
 |event type, shared with all events
 |-
+|[[SDL_CommonEvent]]
+|'''common'''
+|common event data
+|-
 |[[SDL_WindowEvent]]
 |'''window'''
 |window event data
