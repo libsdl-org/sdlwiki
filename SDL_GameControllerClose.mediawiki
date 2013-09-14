@@ -32,7 +32,7 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
         SDL_GameController *controller = SDL_GameControllerOpen(i);
         if (controller) {
-            SDL_GameControllerClose(i);
+            SDL_GameControllerClose(controller);
         } else {
             fprintf(stderr, "Could not open gamecontroller %i: %s\n", i, SDL_GetError());
         }
@@ -51,5 +51,7 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 :[[SDL_GameControllerOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+----
+CategoryInput
