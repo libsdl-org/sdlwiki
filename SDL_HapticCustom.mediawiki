@@ -12,7 +12,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |
 |<bgcolor="#EDEDED">''Header''
 |-
-|Unit16
+|Uint16
 |'''type'''
 |SDL_HAPTIC_CUSTOM
 |-
