@@ -13,8 +13,8 @@ int SDL_GetCPUCount(void)
 Returns the total number of logical CPU cores. On CPUs that include technologies such as hyperthreading, the number of logical cores may be more than the number of physical cores.
 
 == Code Example ==
-```
-printf( "Number of logical CPU cores: %d\n", SDL_GetCPUCount() );
+```c++
+printf("Number of logical CPU cores: %d\n", SDL_GetCPUCount());
 ```
 == Related Functions ==
 ----
