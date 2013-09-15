@@ -49,7 +49,7 @@ int main(int argc, char *argv[]) {
     }
     
     SDL_Event event;                        //  Define event handle
-    char* droped_filedir;                   //  Pointer for directory of droped file
+    char* dropped_filedir;                  //  Pointer for directory of dropped file
     
     for(;;) {                               //  Program loop
         while (SDL_PollEvent(&event)) {
@@ -58,16 +58,16 @@ int main(int argc, char *argv[]) {
                 return 0;
               }
 
-              case (SDL_DROPFILE): {        //  In case if Droped file
-                droped_filedir = event.drop.file;
-                //  Shows directory of droped file
+              case (SDL_DROPFILE): {        //  In case if dropped file
+                dropped_filedir = event.drop.file;
+                //  Shows directory of dropped file
                 SDL_ShowSimpleMessageBox(
                     SDL_MESSAGEBOX_INFORMATION,
-                   "File droped on window",
-                   droped_filedir,
-                  window
+                    "File dropped on window",
+                    dropped_filedir,
+                    window
                 );
-                SDL_free(droped_filedir);    //  Free droped_filedir memory
+                SDL_free(dropped_filedir);    //  Free dropped_filedir memory
                 break;
               }
             }
@@ -89,7 +89,7 @@ This event is disabled by default.  You can enable it with [[SDL_EventState]]().
 
 If you enable this event you must free the filename in the event.
 
-=== Mac OSX ===
+=== Mac OS X ===
 To enable drag&drop on your SDL app, you must ''also'' edit your info.plist file. Add/Modify '''Document Types.''' For example, to enable all document types, add the "public.data" mime type as a document type.
 
 == Related Enumerations ==
