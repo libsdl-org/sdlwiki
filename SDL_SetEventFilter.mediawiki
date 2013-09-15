@@ -29,7 +29,7 @@ You can add your code example here
 <!-- #The following is included on SDL_AddEventWatch and SDL_DelEventWatch.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start Include here. -->
 
 The function prototype for '''filter''' is:
- ```
+```c++
 int YourEventFilter(void*      userdata,
                     SDL_Event* event)
 ```
