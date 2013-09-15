@@ -15,7 +15,7 @@ SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller)
 ```
 == Function Parameters ==
 {|
-|gamecontroller 
+|'''gamecontroller'''
 |a game controller identifier previously returned by [[SDL_GameControllerOpen]] 
 |}
 
