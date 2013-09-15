@@ -17,7 +17,7 @@ A structure that contains an event used to request a file open by the system.
 |-
 |char*
 |'''file'''
-|the file name, which should be freed with SDL_free()
+|the file name, which should be freed with [[SDL_free]]()
 |}
 
 == Code Examples ==
