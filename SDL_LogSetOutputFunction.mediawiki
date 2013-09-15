@@ -27,7 +27,7 @@ You can add your code example here
 
 == Remarks ==
 The function prototype for '''callback''' is:
- ```
+ ```c++
 void* SDL_LogOutputFunction(void*           userdata,
                             int             category,
                             SDL_LogPriority priority,
