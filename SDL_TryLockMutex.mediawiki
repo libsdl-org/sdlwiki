@@ -63,6 +63,4 @@ SDL_DestroyMutex(mutex)
 :[[SDL_DestroyMutex]]
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
-----
-CategoryMutex
+[[CategoryAPI]], [[CategoryMutex]], [[CategoryHeader]]
