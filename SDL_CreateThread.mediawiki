@@ -71,7 +71,7 @@ int TestThread( void *ptr )
         return cnt;
 }
 ```
-```
+```c++
 Output:
 
 Simple SDL_CreateThread test:
@@ -93,7 +93,7 @@ Thread returned value:10
 
 The function prototype for '''fn''' is:
 
- ```
+```c++
 int SDL_ThreadFunction(void* data)
 ```
 : where its parameter is:
