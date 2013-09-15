@@ -27,5 +27,3 @@ See [[SDL_GL_BindTexture]] for examples on how to use these functions
 
 ----
 [[CategoryAPI]], CategoryVideo
-----
-[[CategoryAPI]]
