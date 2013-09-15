@@ -53,5 +53,3 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
-----
-CategoryInput
