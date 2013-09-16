@@ -2,16 +2,16 @@
 <!-- pragma camelcase off -->
 
 = SDL_bool =
-An simple enumeration of boolean value.
+An enumeration of boolean values.
 
 
 == Values ==
 {|
 |SDL_FALSE
-|Value which is equal to 0 or ''false''
+|value which is equal to 0 or ''false''
 |-
 |SDL_TRUE
-|Value which is equal to 1 or ''true''
+|value which is equal to 1 or ''true''
 |}
 
 == Code Examples ==
