@@ -1,0 +1,27 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= SDL_bool =
+An simple enumeration of boolean value.
+
+
+== Values ==
+{|
+|SDL_TRUE
+|Value which is equal to 1 or ''true''
+|-
+|SDL_FALSE
+|Value which is equal to 0 or ''false''
+|}
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+== Remarks ==
+Every function, structure, class etc. will work with SDL_bool.
+
+----
+[[CategoryEnum]], [[CategoryAdditionalOther]]
