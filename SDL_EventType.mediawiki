@@ -26,16 +26,16 @@ An enumeration of the types of events that can be delivered.
 |OS is low on memory; free some
 |-
 |SDL_APP_WILLENTERBACKGROUND
-|Application is entering background
+|application is entering background
 |-
 |SDL_APP_DIDENTERBACKGROUND
-|Application entered background
+|application entered background
 |-
 |SDL_APP_WILLENTERFOREGROUND
-|Application is entering foreground
+|application is entering foreground
 |-
 |SDL_APP_DIDENTERFOREGROUND
-|Application entered foreground
+|application entered foreground
 |-
 |
 |<bgcolor="#EDEDED">''Window events''
@@ -125,13 +125,13 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''Touch events''
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERDOWN]]
-|User has touched input device
+|user has touched input device
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERUP]]
-|User stopped touching input device
+|user stopped touching input device
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERMOTION]]
-|User is dragging finger on input device
+|user is dragging finger on input device
 |-
 |
 |<bgcolor="#EDEDED">''Gesture events''
