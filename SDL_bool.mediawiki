@@ -7,11 +7,11 @@ An simple enumeration of boolean value.
 
 == Values ==
 {|
-|SDL_TRUE
-|Value which is equal to 1 or ''true''
-|-
 |SDL_FALSE
 |Value which is equal to 0 or ''false''
+|-
+|SDL_TRUE
+|Value which is equal to 1 or ''true''
 |}
 
 == Code Examples ==
