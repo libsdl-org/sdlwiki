@@ -24,6 +24,4 @@ You can add your code example here
 Every function, structure, class etc. will work with SDL_bool.
 
 ----
-[[CategoryEnum]], [[CategoryAdditionalOther]]
-----
-CategoryEnum
+CategoryEnum CategoryAdditionalOther
