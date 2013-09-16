@@ -8,13 +8,13 @@ An enumeration of audio device states.
 == Values ==
 {|
 |SDL_AUDIO_STOPPED
-|Audio device is stopped
+|audio device is stopped
 |-
 |SDL_AUDIO_PLAYING
-|Audio device is playing
+|audio device is playing
 |-
 |SDL_AUDIO_PAUSED
-|Audio device is paused
+|audio device is paused
 |}
 
 == Code Examples ==
