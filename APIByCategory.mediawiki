@@ -185,3 +185,14 @@
 |-
 |[CategoryPower|Power Management Status]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_power.h SDL_power.h] 
+|}
+
+
+== Additional ==
+
+{|
+|<tablewidth="100%"width="75%">'''View information and functions related to...'''
+|'''View the header'''
+|-
+|[CategoryAdditionalOther|Other]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h] 
