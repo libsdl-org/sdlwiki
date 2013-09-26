@@ -376,7 +376,7 @@ The 1.2 CD API is completely gone. There's no replacement. Chances are you aren'
 
 === Dead platforms ===
 
-We ripped out a bunch of old platforms, like OS/2 and Mac OS 9. It would be easier to list the ones we still support: Windows, Linux, Mac OS X, iOS, Android.  In SDL tradition, there are others on the periphery that work but aren't heavily supported, like Haiku and Sony PSP. We'll add any platform that someone sends patches for, but it seemed like it was time to say goodbye to some old friends when moving to the new version.
+We ripped out a bunch of old platforms, like OS/2 and Mac OS 9. It would be easier to list the ones we still support: Windows (XP and later), Linux, Mac OS X, iOS, Android.  In SDL tradition, there are others on the periphery that work but aren't heavily supported, like Haiku and Sony PSP. We'll add any platform that someone sends patches for, but it seemed like it was time to say goodbye to some old friends when moving to the new version.
 
 
 === Mobile platforms ===
