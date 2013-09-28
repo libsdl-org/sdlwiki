@@ -48,7 +48,7 @@ methods will delete the last candidate character typed and SDL app
 will receive a new SDL_TEXTEDITING event (let's say user typed a, b,
 backspace, c, then the application will receive 4 events containing
 'a', 'ab', 'a', 'ac' each).
-SDL_SetTextInputRect() gives the OS a hint for where to show the
+[[SDL_SetTextInputRect]]() gives the OS a hint for where to show the
 candidate text list, since the OS doesn't know where you want to draw
 the text you received via SDL_TEXTEDITING event.
 
