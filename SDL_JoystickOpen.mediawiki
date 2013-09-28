@@ -50,7 +50,7 @@ if (SDL_NumJoysticks() > 0) {
 ```
 
 == Remarks ==
-The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.  <span style="color: green;">Should index be changed to '''device_index''' or leave it as is per the header because it is not being used as the param name here? Does this function effectively set the index number of each joystick device?</span>
+The index passed as an argument refers to the N'th joystick on the system.  This index is the value which will identify this joystick in future joystick events.
 
 * The joystick subsystem must be initialized before a joystick can be opened for use.
 
