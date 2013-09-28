@@ -45,6 +45,9 @@ An enumeration of window states.
 |-
 |SDL_WINDOW_FOREIGN
 |window not created by SDL
+|-
+|SDL_WINDOW_ALLOW_HIGHDPI
+|window should be created in high-DPI mode if supported (> SDL 2.0.0)
 |}
 
 == Code Examples ==
