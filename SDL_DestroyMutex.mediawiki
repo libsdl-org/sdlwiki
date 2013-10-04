@@ -26,6 +26,7 @@ This function must be called on any mutex that is no longer needed. Failure to d
 == Related Functions ==
 :[[SDL_CreateMutex]]
 :[[SDL_LockMutex]]
+:[[SDL_TryLockMutex]]
 :[[SDL_UnlockMutex]]
 
 ----
