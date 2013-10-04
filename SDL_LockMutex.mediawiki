@@ -28,6 +28,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 == Related Functions ==
 :[[SDL_CreateMutex]]
 :[[SDL_DestroyMutex]]
+:[[SDL_TryLockMutex]]
 :[[SDL_UnlockMutex]]
 
 ----
