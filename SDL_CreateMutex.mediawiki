@@ -41,6 +41,7 @@ SDL_DestroyMutex(mutex);
 == Related Functions ==
 :[[SDL_DestroyMutex]]
 :[[SDL_LockMutex]]
+:[[SDL_TryLockMutex]]
 :[[SDL_UnlockMutex]]
 
 ----
