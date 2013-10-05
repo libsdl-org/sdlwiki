@@ -12,7 +12,7 @@ Use this function to get the Joystick ID from a Game Controller. The game contro
 
 == Syntax ==
 ```c++
-SDL_Joystick joy =  SDL_GameControllerGetJoystick(SDL_GameController* cont)
+SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController* gamecontroller)
 ```
 
 <!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
