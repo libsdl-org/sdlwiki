@@ -45,5 +45,3 @@ Any number can be passed to SDL_GameControllerEventState, but only -1, 0, and 1 
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
-----
-CategoryGameController
