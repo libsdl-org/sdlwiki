@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_SemTryWait =
-Use this function see if a semaphore has a positive value and decrement it if it does.
+Use this function to see if a semaphore has a positive value and decrement it if it does.
 
 
 == Syntax ==
