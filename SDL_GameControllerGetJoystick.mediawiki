@@ -63,5 +63,3 @@ This function will give you a SDL_Joystick object, which allows you to use the S
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
-----
-CategoryGameController CategoryGameController CategoryGameController
