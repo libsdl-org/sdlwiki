@@ -4,7 +4,7 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 
-= SDL_Function =
+= SDL_GameControllerGetJoystick =
 Use this function to get the Joystick ID from a Game Controller. The game controller builds on the Joystick API, but to be able to use the Joystick's functions with a gamepad, you need to use this first to get the joystick object.
 
 
