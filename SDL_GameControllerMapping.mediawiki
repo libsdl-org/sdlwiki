@@ -13,7 +13,7 @@ Use this function to get the current mapping of a Game Controller.
 
 == Syntax ==
 ```c++
-string map = SDL_GameControllerMapping(ctrl)
+char* SDL_GameControllerMapping(SDL_GameController* gamecontroller)
 ```
 
 
