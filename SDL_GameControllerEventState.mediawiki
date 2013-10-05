@@ -1,0 +1,49 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerEventState =
+Use this function to find the current state of, enable, or disable events dealing with Game Controllers. This will not disable Joystick events, which can also be fired by a controller (See [[SDL_JoystickEventState]])
+
+
+
+
+== Syntax ==
+```c++
+int SDL_GameControllerEventState(int state)
+```
+
+
+== Function Parameters ==
+{|
+|'''State'''
+|can be one of SDL_QUERY, SDL_IGNORE, or SDL_ENABLE
+|}
+Note: You may use -1, 0, or 1 in place of SDL_QUERY, SDL_IGNORE, or SDL_ENABLE respectively.
+
+
+== Return Value ==
+Returns the same value passed to the function, with exception to -1 (SDL_QUERY), which will return the current state.
+
+== Code Examples ==
+```c++
+cout << SDL_GameControllerEventState(SDL_QUERY)  << endl; // 1
+cout << SDL_GameControllerEventState(SDL_IGNORE) << endl; // 0
+cout << SDL_GameControllerEventState(SDL_QUERY)  << endl; // 0
+```
+
+
+== Remarks ==
+Any number can be passed to SDL_GameControllerEventState, but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
+
+
+== Related Functions ==
+:[[SDL_JoystickEventState]]
+
+----
+[[CategoryAPI]], [[CategoryGameController]]
+----
+CategoryGameController
