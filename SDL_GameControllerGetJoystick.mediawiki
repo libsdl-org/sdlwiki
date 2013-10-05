@@ -1,0 +1,67 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_Function =
+Use this function to get the Joystick ID from a Game Controller. The game controller builds on the Joystick API, but to be able to use the Joystick's functions with a gamepad, you need to use this first to get the joystick object.
+
+
+
+
+== Syntax ==
+```c++
+SDL_Joystick joy =  SDL_GameControllerGetJoystick(SDL_GameController* cont)
+```
+
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
+== Function Parameters ==
+{|
+|'''SDL_GameController'''
+|The game controller object that you want to get a Joystick object from.
+|}
+
+<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
+
+
+== Return Value ==
+Returns a SDL_Joystick object; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+#include <cstdio> //printf function
+. . .
+SDL_GameController *ctrl;
+SDL_Joystick *joy;
+for(int i = 0; i < SDL_NumJoysticks(); i++)
+{
+  if (SDL_IsGameController(i))
+  {
+    printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
+    ctrl = SDL_GameControllerOpen(i);
+    joy = SDL_GameControllerGetJoystick(ctrl);
+  }
+  else
+  {
+    cout << "Index \'" << i << "\' is not a compatible controller." << endl;
+  }
+}
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This function will give you a SDL_Joystick object, which allows you to use the SDL_Joystick functions with a SDL_GameController object. This would be useful for getting a joystick's position at any given time, even if it hasn't moved (moving it would produce an event, which would have the axis' value).
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+----
+[[CategoryAPI]], [[CategoryGameController]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
+----
+CategoryGameController CategoryGameController CategoryGameController
