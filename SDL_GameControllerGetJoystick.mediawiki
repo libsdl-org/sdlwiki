@@ -20,8 +20,8 @@ SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController* gamecontroller)
 
 == Function Parameters ==
 {|
-|'''SDL_GameController'''
-|The game controller object that you want to get a Joystick object from.
+|'''gamecontroller'''
+|the game controller object that you want to get a joystick from
 |}
 
 <!-- #Fill in the above table per the Style Guide, then delete this comment. -->
