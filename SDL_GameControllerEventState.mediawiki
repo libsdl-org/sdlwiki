@@ -19,7 +19,7 @@ int SDL_GameControllerEventState(int state)
 
 == Function Parameters ==
 {|
-|'''State'''
+|'''state'''
 |can be one of SDL_QUERY, SDL_IGNORE, or SDL_ENABLE
 |}
 Note: You may use -1, 0, or 1 in place of SDL_QUERY, SDL_IGNORE, or SDL_ENABLE respectively.
