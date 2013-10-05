@@ -9,7 +9,7 @@ A structure that contains an application-defined event type.
 {|
 |Uint32
 |'''type'''
-|Value obtained from [[SDL_RegisterEvents]]()
+|value obtained from [[SDL_RegisterEvents]]()
 |-
 |Uint32
 |'''timestamp'''
