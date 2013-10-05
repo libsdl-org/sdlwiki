@@ -1,0 +1,65 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerMapping =
+Use this function to get the current mapping of a Game Controller.
+
+
+
+
+== Syntax ==
+```c++
+string map = SDL_GameControllerMapping(ctrl)
+```
+
+
+== Function Parameters ==
+{|
+|'''SDL_GameController'''
+|The game controller you want to get the current mapping for.
+|}
+
+
+== Return Value ==
+Returns a string that has the controller's mapping. More information about the mapping can be found on [[SDL_GameControllerAddMapping]]; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+#include <cstdio> // the printf function
+. . .
+SDL_GameController *ctrl
+for(int i = 0; i < SDL_NumJoysticks(); i++)
+{
+  if (SDL_IsGameController(i))
+  {
+    printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
+    ctrl = SDL_GameControllerOpen(i);
+    printf("Controller %i is mapped as \"%s\".\n", i, SDL_GameControllerMapping(ctrl);
+  }
+  else
+  {
+    printf("Index \'%i\' is not a compatible controller.", i);
+  }
+}
+```
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Related Functions ==
+:[[SDL_GameControllerAddMapping]]
+:[[SDL_GameControllerMappingForGUID]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryGameController]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
+----
+CategoryGameController
