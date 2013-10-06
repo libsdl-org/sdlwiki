@@ -1,0 +1,44 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_JoystickGetGUID =
+Use this function to get the implementation-dependent GUID for the joystick.
+
+
+
+== Syntax ==
+```c++
+value SDL_JoystickGetDeviceGUID(SDL_Joystick* joystick)
+```
+
+
+== Function Parameters ==
+{|
+|'''joystick'''
+|an open joystick
+|}
+
+
+== Return Value ==
+Returns the GUID of the given joystick.  If called on an invalid index, this function returns a zero GUID; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+
+== Remarks ==
+This function requires an open joystick.
+
+
+== Related Functions ==
+:[[SDL_JoystickGetDeviceGUID]]
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
