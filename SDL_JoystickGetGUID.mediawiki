@@ -39,6 +39,7 @@ This function requires an open joystick.
 
 == Related Functions ==
 :[[SDL_JoystickGetDeviceGUID]]
+:[[SDL_JoystickGetGUIDString]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
