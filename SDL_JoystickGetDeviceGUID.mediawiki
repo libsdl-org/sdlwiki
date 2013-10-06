@@ -39,6 +39,7 @@ This function can be called before any joysticks are opened.
 
 == Related Functions ==
 :[[SDL_JoystickGetGUID]]
+:[[SDL_JoystickGetGUIDString]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
