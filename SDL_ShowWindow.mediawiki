@@ -18,11 +18,12 @@ void SDL_ShowWindow(SDL_Window* window)
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_ShowWindow(window);
 ```
 
 == Remarks ==
-''You can add useful comments here''
+In SDL 1.2 you might have used ShowWindow(info.window, SW_SHOWNORMAL) for Win32. That is not needed anymore...
+
 
 == Related Functions ==
 :[[SDL_HideWindow]]
