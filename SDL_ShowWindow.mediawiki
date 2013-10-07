@@ -22,12 +22,7 @@ SDL_ShowWindow(window);
 ```
 
 == Remarks ==
-In SDL 1.2 you might have used BOOL WINAPI ShowWindow(
-  _In_  HWND hWnd,
-  _In_  int nCmdShow
-); 
-
-for Win32. SDL_ShowWindow replaces this
+In SDL 1.2 you might have used BOOL WINAPI ShowWindow(_In_  HWND hWnd, _In_  int nCmdShow) for Win32 Builds. SDL_ShowWindow replaces this.
 
 
 == Related Functions ==
