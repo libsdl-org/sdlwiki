@@ -12,7 +12,7 @@ Use this function to get the implementation-dependent GUID for the joystick at a
 
 == Syntax ==
 ```c++
-value SDL_JoystickGetDeviceGUID(int device_index)
+SDL_JoystickGUID SDL_JoystickGetDeviceGUID(int device_index)
 ```
 
 
