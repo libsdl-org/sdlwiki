@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_ShowWindow =
 Use this function to show a window.
@@ -22,7 +22,7 @@ SDL_ShowWindow(window);
 ```
 
 == Remarks ==
-In SDL 1.2 you might have used BOOL WINAPI ShowWindow(_In_  HWND hWnd, _In_  int nCmdShow) for Win32 Builds. SDL_ShowWindow replaces this.
+In SDL 1.2 you might have used BOOL WINAPI ShowWindow(_In_  HWND hWnd, _In_  int nCmdShow) for Win32 builds. SDL_ShowWindow() replaces this.
 
 
 == Related Functions ==
