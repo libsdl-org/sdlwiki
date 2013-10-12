@@ -22,15 +22,15 @@ If you are running your game from Steam, the game controller mapping is automati
 
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryGameController CategoryEnum -SGEnumerations)>>
+<<FullSearchCached(category:CategoryGameController CategoryEnum -title:SGEnumerations)>>
 
 
 == Structures ==
-<<FullSearchCached(category:CategoryGameController CategoryStruct -SGStructures)>>
+<<FullSearchCached(category:CategoryGameController CategoryStruct -title:SGStructures)>>
 
 
 == Functions ==
-<<FullSearchCached(category:CategoryGameController -CategoryEnum -CategoryStruct)>>
+<<FullSearchCached(category:CategoryGameController -CategoryEnum -title:CategoryStruct)>>
 
 ----
 CategoryCategory
