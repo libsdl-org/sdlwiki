@@ -25,13 +25,13 @@ Those two APIs are incompatible, and you usually should not use both at the same
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryMouse -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryMouse -title:SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryMouse -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryMouse -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryMouse -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryMouse -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
