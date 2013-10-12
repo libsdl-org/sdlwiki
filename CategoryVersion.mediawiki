@@ -25,13 +25,13 @@ SDL_revision.h must be included in your program explicitly if you want to use th
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryVersion -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryVersion -title:SGEnumerations)>> -->
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryVersion -SGStructures)>>
+<<FullSearchCached(category:CategoryStruct CategoryVersion -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum -SGFunctions)>>
+<<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
 ----
 CategoryCategory
