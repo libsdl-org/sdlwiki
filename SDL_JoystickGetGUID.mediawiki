@@ -2,9 +2,6 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
-<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_JoystickGetGUID =
 Use this function to get the implementation-dependent GUID for the joystick.
 
