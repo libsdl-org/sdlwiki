@@ -43,5 +43,3 @@ This function requires an open joystick.
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
-----
-CategoryJoystick CategoryJoystick
