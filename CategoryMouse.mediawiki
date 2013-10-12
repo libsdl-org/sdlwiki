@@ -7,7 +7,7 @@
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
 
-<<Color2(col=green,text=Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h])>>
+<!-- #<<Color2(col=green,text=Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h])>> -->
 
 
 == Introduction ==
@@ -16,11 +16,11 @@ This category contains functions for handling inputs from mice and other similar
 
 Please note that this ONLY discusses "mice" with the notion of the desktop GUI. You (usually) have one system cursor, and the OS hides the hardware details from you. If you plug in 10 mice, all ten move that one cursor. For many applications and games this is perfect, and this API has served hundreds of SDL programs well since its birth.
 
-It's not the whole picture, though. If you want more lowlevel control, SDL offers a different API that gives you visibility into each input device, multi-touch interfaces, etc. 
+<!-- #It's not the whole picture, though. If you want more lowlevel control, SDL offers a different API that gives you visibility into each input device, multi-touch interfaces, etc.  -->
 
-The other API is in [http://hg.libsdl.org/SDL/file/100f7ab48946/include/SDL_input.h SDL_input.h].  See [[CategoryInput|Input Device Support]] for more.  
+<!-- #The other API is in [http://hg.libsdl.org/SDL/file/100f7ab48946/include/SDL_input.h SDL_input.h].  See [[CategoryInput|Input Device Support]] for more.   -->
 
-Those two APIs are incompatible, and you usually should not use both at the same time. But for legacy purposes, this API refers to a "mouse" when it actually means the system pointer and not a physical mouse.
+<!-- #Those two APIs are incompatible, and you usually should not use both at the same time. But for legacy purposes, this API refers to a "mouse" when it actually means the system pointer and not a physical mouse. -->
 
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
