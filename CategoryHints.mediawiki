@@ -20,14 +20,14 @@ In general these hints are just that - they may or may not be supported or appli
 <<FullSearchCached(category:CategoryDefine CategoryHints)>>
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryHints -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum CategoryHints -title:SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct Category Hints -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct Category Hints -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine -SGFunctions)>>
+<<FullSearchCached(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine -title:SGFunctions)>>
 
 
 ----
