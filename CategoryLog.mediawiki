@@ -27,14 +27,14 @@ Messages longer than the maximum size (4096 bytes) will be truncated.
 
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryLog -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum CategoryLog -title:SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryLog -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryLog -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryLog -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryLog -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
