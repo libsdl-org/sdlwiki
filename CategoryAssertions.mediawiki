@@ -48,13 +48,13 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryAssertions -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum CategoryAssertions -title:SGEnumerations)>>
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryAssertions -SGStructures)>>
+<<FullSearchCached(category:CategoryStruct CategoryAssertions -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryAssertions -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryAssertions -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 
 ----
