@@ -20,7 +20,7 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 : This initializes the 3 default subsystems plus the [[CategoryVideo|Video]] and [[CategoryAudio|Audio]] subsystems.
 :
 
-It should be noted that on some operating systems, [[SDL_Init]]() will fail if [[SDL_main]]() has not been defined as the entry point for the program.  Calling [[SDL_SetMainReady]]() prior to [[SDL_Init]]() will circumvent this faliure condition, however, users should be careful when calling [[SDL_SetMainReady]]() as improper initalization may cause crashes and hard to diagnose problems.
+It should be noted that on some operating systems, [[SDL_Init]]() will fail if [[SDL_main]]() has not been defined as the entry point for the program.  Calling [[SDL_SetMainReady]]() prior to [[SDL_Init]]() will circumvent this failure condition, however, users should be careful when calling [[SDL_SetMainReady]]() as improper initalization may cause crashes and hard to diagnose problems.
 
 === Introduction to Shut Down ===
 [[SDL_Quit]]() should be called before an SDL application exits to safely shut down all subsystems, including the default ones.
@@ -29,11 +29,11 @@ It should be noted that on some operating systems, [[SDL_Init]]() will fail if [
 
 <!-- #Remove this line and the ## in front of the following if they become relevant to this category to activate them. -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryInit -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryInit -title:SGEnumerations)>> -->
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryInit -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryInit -title:SGStructures)>> -->
 == Functions ==
-<<FullSearchCached(category:CategoryInit -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryInit -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
