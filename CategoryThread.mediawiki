@@ -24,7 +24,4 @@ This category contains functions for system independent thread management routin
 <<FullSearchCached(category:CategoryThread -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
-!CategoryCategory
-
-----
-!CategoryThread
+[[CategoryCategory]]
