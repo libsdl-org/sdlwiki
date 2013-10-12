@@ -45,13 +45,13 @@ The atomic locks are efficient spinlocks using CPU instructions, but are vulnera
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryAtomic -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryAtomic -title:SGEnumerations)>> -->
 
 == Structures ==
-<<FullSearchCached(category:CategoryAtomic CategoryStruct -SGStructures)>>
+<<FullSearchCached(category:CategoryAtomic CategoryStruct -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryAtomic -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryAtomic -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
