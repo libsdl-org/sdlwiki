@@ -16,13 +16,13 @@
 This category contains additional functions, enums and defines for SDL. Including math, memory, c-string, PI Number etc...
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryAdditionalOther -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum CategoryAdditionalOther -title:SGEnumerations)>>
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryAdditionalOther -SGStructures)>>
+<<FullSearchCached(category:CategoryStruct CategoryAdditionalOther -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryAdditionalOther -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryAdditionalOther -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
