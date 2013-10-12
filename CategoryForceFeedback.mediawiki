@@ -96,13 +96,13 @@ You can find more information in this blog by Edgar Simo Serra: [http://bobbens.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum Category##### -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum Category##### -title:SGEnumerations)>> -->
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryForceFeedback -SGStructures)>>
+<<FullSearchCached(category:CategoryStruct CategoryForceFeedback -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryForceFeedback -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryForceFeedback -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
