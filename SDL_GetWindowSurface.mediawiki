@@ -21,7 +21,34 @@ Returns the surface associated with the window, or NULL on failure; call [[SDL_G
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include "SDL2/SDL.h" // include SDL header
+
+int main (int argc, char* argv[])
+{
+    SDL_Surface *screen; // even with SDL2, we can still bring ancient code back
+
+    SDL_Init(SDL_INIT_EVERYTHING); // lazy, so init everything
+
+    // create the window like normal
+    SDL_Window *window = SDL_CreateWindow("SDL2 Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
+    
+    // but instead of creating a renderer, we can draw directly to the screen
+    screen = SDL_GetWindowSurface(window);
+
+    // lets just show some classic code for reference
+    SDL_Surface *image = SDL_LoadBMP("box.bmp"); // loads image
+    SDL_BlitSurface(image,NULL,screen,NULL); // blit it to the screen
+    SDL_FreeSurface(image);
+
+    // this works just like SDL_Flip
+    SDL_UpdateWindowSurface(window);
+
+    // show image for 2 seconds
+    SDL_Delay(2000);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return 0;
+}
 ```
 
 == Remarks ==
