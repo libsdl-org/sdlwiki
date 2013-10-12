@@ -30,13 +30,13 @@ SDL_BYTEORDER is a macro that corresponds to the byte order used by the processo
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryEndian -SGEnumerations)>> -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategoryEndian -title:SGEnumerations)>> -->
 
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryEndian -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryEndian -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryEndian -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryEndian -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
