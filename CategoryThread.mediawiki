@@ -15,13 +15,13 @@ This category contains functions for system independent thread management routin
 ''NOTE'': Avoid creating threads or synchronization primitives prior to calling [[SDL_Init]]. While on some platforms (i.e. Windows) these functions will work correctly before SDL initialization, other platforms (i.e. Linux) may not.
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryThread -SGEnumerations)>>
+<<FullSearchCached(category:CategoryEnum CategoryThread -title:SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryThread -SGStructures)>> -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategoryThread -title:SGStructures)>> -->
 == Functions ==
-<<FullSearchCached(category:CategoryThread -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryThread -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 !CategoryCategory
