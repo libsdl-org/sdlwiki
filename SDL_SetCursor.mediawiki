@@ -20,7 +20,7 @@ void SDL_SetCursor(SDL_Cursor* cursor)
 == Code Examples ==
 *
 ```c++
-int main(int argc, char** argc) {
+int main(int argc, char** argv) {
      SDL_ShowCursor(SDL_DISABLE);
      ...
 }
