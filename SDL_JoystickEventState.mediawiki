@@ -25,9 +25,9 @@ If '''state''' is SDL_QUERY then the current state is returned, otherwise the ne
 
 == Code Examples ==
 ```c++
-cout << SDL_JoystickEventState(SDL_QUERY)  << endl;  // 1
-cout << SDL_JoystickEventState(SDL_IGNORE) << endl;  // 0
-cout << SDL_JoystickEventState(SDL_QUERY)  << endl;  // 0
+printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 1 */
+printf("%i\n", SDL_JoystickEventState(SDL_IGNORE)); /* prints 0 */
+printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 0 */
 ```
 
 == Remarks ==
