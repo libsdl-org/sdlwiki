@@ -28,27 +28,28 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 SDL_bool videoinit = SDL_FALSE;
 
 void OnQuit(void) {
-  if (videoinit)
-    SDL_VideoQuit();
-  SDL_Quit();
+    if (videoinit) {
+        SDL_VideoQuit();
+    }
+    SDL_Quit();
 }
 
 int main(int argc, char** argv) {
-  if (SDL_Init(0) != 0) {
-    printf("Error initializing SDL:  %s\n", SDL_GetError());
-    return 1;
-  }
-  atexit(OnQuit);
-  
-  if (SDL_VideoInit(NULL) != 0) {
-    printf("Error initializing SDL video:  %s\n", SDL_GetError());
-    return 2;
-  }
-  videoinit = SDL_TRUE;
-  
-  /* ... */
-  
-  return 0;
+    if (SDL_Init(0) != 0) {
+        printf("Error initializing SDL:  %s\n", SDL_GetError());
+        return 1;
+    }
+    atexit(OnQuit);
+
+    if (SDL_VideoInit(NULL) != 0) {
+        printf("Error initializing SDL video:  %s\n", SDL_GetError());
+        return 2;
+    }
+    videoinit = SDL_TRUE;
+
+    /* ... */
+
+    return 0;
 }
 ```
 
