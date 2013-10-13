@@ -30,11 +30,10 @@ Returns the same value passed to the function, with exception to -1 (SDL_QUERY),
 
 == Code Examples ==
 ```c++
-cout << SDL_GameControllerEventState(SDL_QUERY)  << endl; // 1
-cout << SDL_GameControllerEventState(SDL_IGNORE) << endl; // 0
-cout << SDL_GameControllerEventState(SDL_QUERY)  << endl; // 0
+printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 1 */
+printf("%i\n", SDL_GameControllerEventState(SDL_IGNORE)); /* prints 0 */
+printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 ```
-
 
 == Remarks ==
 Any number can be passed to SDL_GameControllerEventState, but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
