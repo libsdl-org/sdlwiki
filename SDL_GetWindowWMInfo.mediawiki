@@ -28,15 +28,16 @@ Returns SDL_TRUE if the function is implemented and the <code>version</code> mem
 #include "SDL.h"
 #include "SDL_syswm.h"
 
-
 int main(int argc, char *argv[]) {
-  SDL_Init(0);
-  SDL_Window* window = SDL_CreateWindow("",0,0,0,0,SDL_WINDOW_HIDDEN);
-  
+  SDL_Window* window;
   SDL_SysWMinfo info;
-  
+
+  SDL_Init(0);
+
+  window = SDL_CreateWindow("", 0, 0, 0, 0, SDL_WINDOW_HIDDEN);
+
   SDL_VERSION(&info.version); // initialize info structure with SDL version info
-  
+
   if(SDL_GetWindowWMInfo(window,&info)) { // the call returns true on success
     // success
     const char *subsystem = "an unknown system!";
@@ -54,15 +55,15 @@ int main(int argc, char *argv[]) {
         (int)info.version.minor,
         (int)info.version.patch,
         subsystem);
-    
   } else {
     // call failed
     SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Couldn't get window information: %s\n", SDL_GetError());
   }
-  
+
   SDL_DestroyWindow(window);
   SDL_Quit();
-  
+
+  return 0;
 }
 
 ```
