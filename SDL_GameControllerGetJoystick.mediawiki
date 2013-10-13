@@ -33,22 +33,22 @@ Returns a SDL_Joystick object; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
-#include <cstdio> //printf function
-. . .
+#include <stdio.h> /* for printf() */
+
+/* ... */
+
 SDL_GameController *ctrl;
 SDL_Joystick *joy;
-for(int i = 0; i < SDL_NumJoysticks(); i++)
-{
-  if (SDL_IsGameController(i))
-  {
-    printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
-    ctrl = SDL_GameControllerOpen(i);
-    joy = SDL_GameControllerGetJoystick(ctrl);
-  }
-  else
-  {
-    cout << "Index \'" << i << "\' is not a compatible controller." << endl;
-  }
+int i;
+
+for(i = 0; i < SDL_NumJoysticks(); ++i) {
+    if (SDL_IsGameController(i)) {
+        printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
+        ctrl = SDL_GameControllerOpen(i);
+        joy = SDL_GameControllerGetJoystick(ctrl);
+    } else {
+        printf("Index \'%i\' is not a compatible controller.\n", i);
+    }
 }
 ```
 
