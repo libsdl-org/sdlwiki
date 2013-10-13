@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
     SDL_Window *window;
     SDL_Surface *image;
 
-    SDL_Init(SDL_INIT_EVERYTHING); // lazy, so init everything
+    SDL_Init(SDL_INIT_VIDEO); // init video
 
     // create the window like normal
     window = SDL_CreateWindow("SDL2 Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_SHOWN);
