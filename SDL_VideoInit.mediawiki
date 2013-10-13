@@ -22,10 +22,12 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 == Code Examples ==
 ```c++
 #include "SDL.h"
+#include <stdio.h> /* for printf() */
+#include <stdlib.h> /* for atexit() */
 
 SDL_bool videoinit = SDL_FALSE;
 
-void OnQuit() {
+void OnQuit(void) {
   if (videoinit)
     SDL_VideoQuit();
   SDL_Quit();
