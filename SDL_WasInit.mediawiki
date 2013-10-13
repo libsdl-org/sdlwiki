@@ -26,30 +26,32 @@ The return value does not include SDL_INIT_NOPARACHUTE.
 /* Get init data on all the subsystems */
 Uint32 subsystem_init;
 
-subsystem_init=SDL_WasInit(SDL_INIT_EVERYTHING);
+subsystem_init = SDL_WasInit(SDL_INIT_EVERYTHING);
 
-if(subsystem_init&SDL_INIT_VIDEO)
-  printf("Video is initialized.\n");
-else
-  printf("Video is not initialized.\n");
+if (subsystem_init & SDL_INIT_VIDEO) {
+    printf("Video is initialized.\n");
+} else {
+    printf("Video is not initialized.\n");
+}
 ```
 ```c++
 /* Just check for one specific subsystem */
 
-if(SDL_WasInit(SDL_INIT_VIDEO)!=0)
-  printf("Video is initialized.\n");
-else
-  printf("Video is not initialized.\n");
+if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
+    printf("Video is initialized.\n");
+} else {
+    printf("Video is not initialized.\n");
+}
 ```
 ```c++
 /* Check for two subsystems */
+Uint32 subsystem_mask = SDL_INIT_VIDEO | SDL_INIT_AUDIO;
 
-Uint32 subsystem_mask=SDL_INIT_VIDEO|SDL_INIT_AUDIO;
-
-if(SDL_WasInit(subsystem_mask)==subsystem_mask)
-  printf("Video and Audio initialized.\n");
-else
-  printf("Video and Audio not initialized.\n");
+if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
+    printf("Video and Audio initialized.\n");
+} else {
+    printf("Video and Audio not initialized.\n");
+}
 ```
 
 == Remarks ==
