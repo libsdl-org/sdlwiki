@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
         printf("\nSimple SDL_CreateThread test:");
 
         // Simply create a thread
-        thread = SDL_CreateThread( TestThread, (void *)NULL);
+        thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
         if( NULL == thread )
         {
