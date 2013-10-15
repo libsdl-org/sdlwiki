@@ -44,5 +44,3 @@ Performs no error checking.  If this function is given a string containing an in
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
-----
-CategoryJoystick
