@@ -1,0 +1,33 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerUpdate =
+Use this function to manually pump GameController updates if not using the loop.
+
+
+
+
+== Syntax ==
+```c++
+void SDL_GameControllerUpdate(void)
+```
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This function is called automatically by the event loop if events are enabled.  Under such circumstances, it will not be necessary to call this function.
+
+
+----
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
