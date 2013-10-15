@@ -12,7 +12,7 @@ Use this function to convert a GUID string into a SDL_JoystickGUID structure.
 
 == Syntax ==
 ```c++
-SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char *pchGUID)
+SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char* pchGUID)
 ```
 
 
