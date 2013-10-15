@@ -20,7 +20,7 @@ This category contains functions for handling inputs from joysticks.
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryJoystick -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearch(category:CategoryJoystick -CategoryEnum -CategoryStruct -title:SGFunctions)>>
+<<FullSearchCached(category:CategoryJoystick -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
