@@ -52,5 +52,3 @@ You should supply at least 33 bytes for pszGUID.
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
-----
-CategoryJoystick
