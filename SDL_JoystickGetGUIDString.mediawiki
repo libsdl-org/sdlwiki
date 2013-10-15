@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+= SDL_JoystickGetGUIDString =
+Use this function to get an ASCII string representation for a given SDL_JoystickGUID.
+
+
+
+== Syntax ==
+```c++
+value SDL_FunctionName(param)
+void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid,
+                               char*            pszGUID,
+                               int              cbGUID)
+```
+
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
+== Function Parameters ==
+{|
+|'''guid'''
+|The SDL_JoystickGUID you wish to convert to string
+|-
+|'''pszGUID'''
+|buffer in which to write the ASCII string
+|-
+|'''cbGUID'''
+|The size of pszGUID
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+You should supply at least 33 bytes for pszGUID.
+
+
+== Related Functions ==
+:[[SDL_JoystickGetDeviceGUID]]
+:[[SDL_JoystickGetGUID]]
+
+----
+[[CategoryAPI]], [[CategoryJoystick]]
+----
+CategoryJoystick
