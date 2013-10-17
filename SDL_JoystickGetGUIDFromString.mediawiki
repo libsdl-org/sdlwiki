@@ -19,7 +19,7 @@ SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char* pchGUID)
 == Function Parameters ==
 {|
 |'''pchGUID'''
-|String containing an ASCII representation of a GUID
+|string containing an ASCII representation of a GUID
 |}
 
 
