@@ -30,4 +30,4 @@ This function is called automatically by the event loop if events are enabled.  
 
 
 ----
-[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
+[[CategoryAPI]], [[CategoryGameController]]
