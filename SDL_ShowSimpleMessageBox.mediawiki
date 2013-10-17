@@ -16,7 +16,7 @@ int SDL_ShowSimpleMessageBox(Uint32      flags,
 == Function Parameters ==
 {|
 |'''flags'''
-|an SDL_MessageBoxFlag; see [[#flags|Remarks]] for details for details.
+|an SDL_MessageBoxFlag; see [[#flags|Remarks]] for details.
 |-
 |'''title'''
 |UTF-8 title text
