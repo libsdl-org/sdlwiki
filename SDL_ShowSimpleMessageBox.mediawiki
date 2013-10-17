@@ -7,13 +7,16 @@ Use this function to display a simple message box.
 
 == Syntax ==
 ```c++
-int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *message, SDL_Window *window)
+int SDL_ShowSimpleMessageBox(Uint32      flags,
+                             const char* title,
+                             const char* message,
+                             SDL_Window* window)
 ```
 
 == Function Parameters ==
 {|
 |'''flags'''
-|An SDL_MessageBoxFlag; see [[#flags|Remarks]] for details;
+|an SDL_MessageBoxFlag; see [[#flags|Remarks]] for details for details.
 |-
 |'''title'''
 |UTF-8 title text
@@ -26,7 +29,7 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 |}
 
 == Return Value ==
-0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
