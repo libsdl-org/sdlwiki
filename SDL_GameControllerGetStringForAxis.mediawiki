@@ -20,7 +20,7 @@ const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis)
 == Function Parameters ==
 {|
 |'''axis'''
-|An enum value for a given GameController axis
+|an enum value for a given GameController axis
 |}
 
 
@@ -49,4 +49,4 @@ You can add your code example here
 <!-- #At the very least this should refer to its opposite. -->
 
 ----
-[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
+[[CategoryAPI]], [[CategoryGameController]]
