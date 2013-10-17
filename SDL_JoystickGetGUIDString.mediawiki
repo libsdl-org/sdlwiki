@@ -22,13 +22,13 @@ void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid,
 == Function Parameters ==
 {|
 |'''guid'''
-|The SDL_JoystickGUID you wish to convert to string
+|the SDL_JoystickGUID you wish to convert to string
 |-
 |'''pszGUID'''
 |buffer in which to write the ASCII string
 |-
 |'''cbGUID'''
-|The size of pszGUID
+|the size of pszGUID
 |}
 
 
