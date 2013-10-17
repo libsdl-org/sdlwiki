@@ -19,7 +19,7 @@ char* SDL_GameControllerMappingForGUID(SDL_JoystickGUID guid)
 == Function Parameters ==
 {|
 |'''guid'''
-|A structure containing the GUID for which a mapping is desired
+|a structure containing the GUID for which a mapping is desired
 |}
 
 
@@ -46,5 +46,5 @@ You can add your code example here
 :[[SDL_JoystickGetGUID]]
 
 ----
-[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
+[[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
