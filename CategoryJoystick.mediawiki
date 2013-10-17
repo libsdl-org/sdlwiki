@@ -22,5 +22,7 @@ This category contains functions for handling inputs from joysticks.
 == Functions ==
 <<FullSearchCached(category:CategoryJoystick -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
+<!-- # You may refresh cache using "?action=refresh" in URL or "More Actions -> Delete Cache" in menu. -->
+
 ----
 CategoryCategory
