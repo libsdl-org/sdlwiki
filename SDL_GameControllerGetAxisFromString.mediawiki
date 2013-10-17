@@ -45,5 +45,5 @@ This function is called internally to translate GameController mapping strings f
 <!-- #Will discuss on the docs list about what related functions to include here. -->
 
 ----
-[[CategoryAPI]], [[CategoryGameController]], [[CategoryInput]]
+[[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
