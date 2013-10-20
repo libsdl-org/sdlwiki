@@ -267,7 +267,6 @@ You can do some simple effects with the render API without having to get down in
 * Colorkey: When calling [[SDL_SetColorKey]](), you should pass <code>SDL_TRUE</code> instead of <code>SDL_SRCCOLORKEY</code>.
 * Color modulation: Some renderers now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]]() for details.
 
-
 === OpenGL ===
 
 If you were already using OpenGL directly, your migration is pretty simple. Change your <code>SDL_SetVideoMode()</code> call to [[SDL_CreateWindow]]() followed by [[SDL_GL_CreateContext]](), and your <code>SDL_GL_SwapBuffers()</code> call to [[SDL_GL_SwapWindow]](window). All the actual calls into the GL are exactly the same.
@@ -428,6 +427,17 @@ The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version
 These libraries will not be supporting 1.2 going forward, and any compatibility with 1.2 is likely to vanish at some point from newer versions.
 
 [http://www.ferzkopp.net/joomla/content/view/19/14/ SDL_gfx] can also be compiled with 2.0 starting since 2.0.21 (May 2010).
+
+
+=== Summary of some renamed or replaced things ===
+
+A short cheat sheet where some of the old functions and other stuff went:
+* SDL_SetVideoMode: use [[SDL_CreateWindow]] instead (along with [[SDL_CreateRenderer]] if you want to do classic 2d rendering and not OpenGL)
+* SDL_ListModes: use [[SDL_GetDisplayMode]]/[[SDL_GetNumDisplayModes]] instead
+* SDL_UpdateRect/SDL_Flip: use [[SDL_RenderPresent]] instead
+* SDL_Surface/2d rendering: surfaces still exist, but it is recommended that instead of using SDL_Surfaces, you use [[SDL_Texture]]s with an 2d accelerated renderer ([[SDL_CreateRenderer]]) where possible
+* SDL_VideoInfo: use [[SDL_GetRendererInfo]]/[[SDL_GetRenderDriverInfo]] instead
+* SDL_GetCurrentVideoDisplay: use [[SDL_GetWindowDisplayIndex]] instead
 
 
 === Other stuff ===
