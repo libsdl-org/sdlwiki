@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_GetBasePath =
+Use this function to get the directory where the application was run from.  This is where the application data directory is.
+
+
+== Syntax ==
+```c++
+char *SDL_GetBasePath(void)
+```
+
+== Return Value ==
+Returns the an absolute path in UTF-8 encoding do the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
+
+The return path will be gauranteed to end with a path separator ('\' on Windows, '/' most other platforms)
+
+The pointer returned is owned by you. Please call SDL_free on the pointer when you are done with it. 
+
+== Code Examples ==
+```c++
+
+char *data_path = NULL;
+
+int InitializeDataPath() {
+    char *base_path = SDL_GetBasePath();
+    if (base_path) {
+        data_path = SDL_strdup(base_path);
+        SDL_free(base_path);
+    } else {
+        data_path = SDL_strdup("./");
+    }
+}
+
+```
+
+
+== Remarks ==
+
+This is not necessarily a fast call, though, so you should call this once near startup and save the string if you need it.
+
+== Related Functions ==
+:[[SDL_GetPrefPath]]
+
+----
+[[CategoryAPI]], [[CategoryFilesystem]]
