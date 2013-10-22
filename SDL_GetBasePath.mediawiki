@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
-= SDL_GetBasePath =
+= SDL_GetBasePath (SDL 2.0.1+) =
 Use this function to get the directory where the application was run from.  This is where the application data directory is.
 
 
