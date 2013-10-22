@@ -46,13 +46,16 @@ If the application is in a ".app" bundle, this function returns the Resource dir
 Supported values for the SDL_FILESYSTEM_BASE_DIR_TYPE property (Given an application in /Applications/SDLApp/MyApp.app)
 {|
 |'''resource'''
-|The bundle resource directory - /Applications/SDLApp/MyApp.app/Contents/Resources (the default)
+|The bundle resource directory (the default)
+|/Applications/SDLApp/MyApp.app/Contents/Resources
 |-
 |'''bundle'''
-|The Bundle directory - /Applications/SDLApp/MyApp.app/
+|The Bundle directory
+|/Applications/SDLApp/MyApp.app/
 |-
 |'''parent'''
-|The containing directory of the bundle - /Applications/SDLApp/
+|The containing directory of the bundle
+|/Applications/SDLApp/
 |}
 
 == Related Functions ==
