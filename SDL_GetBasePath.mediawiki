@@ -8,15 +8,15 @@ Use this function to get the directory where the application was run from.  This
 
 == Syntax ==
 ```c++
-char *SDL_GetBasePath(void)
+char* SDL_GetBasePath(void)
 ```
 
 == Return Value ==
-Returns the an absolute path in UTF-8 encoding do the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
+Returns the an absolute path in UTF-8 encoding to the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
 
-The return path will be gauranteed to end with a path separator ('\' on Windows, '/' most other platforms)
+The return path will be guaranteed to end with a path separator ('\' on Windows, '/' on most other platforms)
 
-The pointer returned is owned by you. Please call SDL_free on the pointer when you are done with it. 
+The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it. 
 
 == Code Examples ==
 ```c++
