@@ -75,6 +75,9 @@ An enumeration of OpenGL configuration attributes.
 |-
 |SDL_GL_SHARE_WITH_CURRENT_CONTEXT
 |OpenGL context sharing; defaults to 0
+|-
+|SDL_GL_FRAMEBUFFER_SRGB_CAPABLE
+|requests sRGB capable visual; defaults to 0 (>= SDL 2.0.1)
 |}
 
 == Code Examples ==
@@ -92,9 +95,9 @@ While you can set most OpenGL attributes normally, the attributes listed above m
 
 In some cases, these attributes are minimum requests; the GL does not promise to give you exactly what you asked for. It's possible to ask for a 16-bit depth buffer and get a 24-bit one instead, for example, or to ask for no stencil buffer and still have one available. Context creation should fail if the GL can't provide your requested attributes at a minimum, but you should check to see exactly what you got.
 
-<span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL_GL_MULTISAMPLEBUFFERS to 1 and SDL_GL_MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.  
+<span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL_GL_MULTISAMPLEBUFFERS to 1 and SDL_GL_MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.
 
-<span id="OpenGL"></span> SDL_GL_CONTEXT_MAJOR_VERSION and SDL_GL_CONTEXT_MINOR_VERSION are used when creating an OpenGL 3.x context. 
+<span id="OpenGL"></span> SDL_GL_CONTEXT_MAJOR_VERSION and SDL_GL_CONTEXT_MINOR_VERSION are used when creating an OpenGL 3.x context.
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
