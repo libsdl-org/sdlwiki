@@ -135,11 +135,14 @@
 |}
 
 
-== File I/O Abstraction ==
+== File Abstraction ==
 
 {|
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
+|-
+|[CategoryFilesystem|Filesystem Paths]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_filesystem.h SDL_filesystem.h] 
 |-
 |[CategoryIO|File I/O Abstraction]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_rwops.h SDL_rwops.h] 
