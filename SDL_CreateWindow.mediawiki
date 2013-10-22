@@ -116,7 +116,7 @@ int main(int argc, char* argv[]) {
 |window has grabbed input focus
 |-
 |SDL_WINDOW_ALLOW_HIGHDPI
-|window should be created in high-DPI mode if supported (> SDL 2.0.0)
+|window should be created in high-DPI mode if supported (>= SDL 2.0.1)
 |}
 
 == Related Functions ==
