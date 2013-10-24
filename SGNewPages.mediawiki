@@ -6,14 +6,14 @@
 
 This guide provides instructions for adding new pages to this wiki. 
 
-'''Most of the pages in the SDL 1.3 API already exist and will only require editing as time goes on.  See the other [[Contributing#guides|Style Guides]] for details on editing existing pages.  But, if you encounter a component of the API that should have a page in this wiki but does not, this guide is your starting point.'''
+'''Most of the pages in the SDL API already exist and will only require editing as time goes on.  See the other [[Contributing#guides|Style Guides]] for details on editing existing pages.  But, if you encounter a component of the API that should have a page in this wiki but does not, this guide is your starting point.'''
 
 
 <span id="ToC"></span>
 
 == General Guidelines ==
 ''This wiki contains the following page types:''
- ||[[CategoryAPI|API pages]]||pages describing the various Hints, Enumerations, Structures, and Functions of SDL version 1.3||
+ ||[[CategoryAPI|API pages]]||pages describing the various Hints, Enumerations, Structures, and Functions of SDL||
  ||[[APIByCategory|Category pages]]||pages that list all parts of the API related to a specific topic, or category, and may contain some introductory discussion about the topic||
  ||[[Tutorials]]||pages that help people use SDL||
  ||Administrative pages||these include most of the other pages linked in the left sidebar, such as the [[FrontPage]], [[Introduction]], [[Support]], and [[Contributing]] pages||
