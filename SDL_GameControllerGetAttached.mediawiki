@@ -11,12 +11,12 @@ Use this function to check if a controller has been opened and is currently conn
 
 == Syntax ==
 ```c++
-SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller)
+SDL_bool SDL_GameControllerGetAttached(SDL_GameController* gamecontroller)
 ```
 == Function Parameters ==
 {|
 |'''gamecontroller'''
-|a game controller identifier previously returned by [[SDL_GameControllerOpen]] 
+|a game controller identifier previously returned by [[SDL_GameControllerOpen]]() 
 |}
 
 
@@ -27,6 +27,7 @@ Returns SDL_TRUE if the controller has been opened and currently connected, or S
 ```c++
 You can add your code example here
 ```
+
 == Remarks ==
 ''You can add useful comments here''
 
