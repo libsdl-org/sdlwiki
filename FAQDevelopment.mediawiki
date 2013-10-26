@@ -16,11 +16,11 @@ Yes, SDL supports 3D acceleration:
 Networking is outside of the scope of SDL, but due to popular demand a simple cross-platform sockets wrapper called "SDL_net" is available at the SDL libraries page. A simple chat client/server is included which makes use of an example GUI library as well.
 
 == Does SDL support PCX, JPG, PNG, etc... ==
-The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is suppose to be fast and small, and so does not include any additional loaders.
+The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is supposed to be fast and small, and so does not include any additional loaders.
 A sample image loader library called "SDL_image" is available from the SDL libraries page which supports loading BMP, PCX, GIF, JPG, PNG and TGA images to SDL surfaces.
 
 == Does SDL support MP3, Ogg Vorbis, etc... ==
-The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is suppose to be fast and small, and so does not include any additional loaders. A sample sound library called "SDL_sound" is available from the SDL libraries page which supports loading many different audio formats.
+The BMP and WAV file loaders included with SDL are simple examples demonstrating how to load an image and sound format. You should be able to write your own reader for any format. The main library is supposed to be fast and small, and so does not include any additional loaders. A sample sound library called "SDL_sound" is available from the SDL libraries page which supports loading many different audio formats.
 
 == Does SDL have text drawing support? ==
 Games and operating systems vary widely in the type and availability of text drawing facilities. Instead of trying to deal with this in the core SDL library, there are several text drawing libraries designed for use with SDL on the SDL libraries page. Common techniques include using bitmap fonts, truetype fonts, and custom images for text.
