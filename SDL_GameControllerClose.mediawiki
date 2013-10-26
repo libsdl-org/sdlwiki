@@ -14,7 +14,7 @@ Use this function to close a game controller previously opened with [[SDL_GameCo
 
 == Syntax ==
 ```c++
-void SDL_GameControllerClose(SDL_GameController * gamecontroller);
+void SDL_GameControllerClose(SDL_GameController* gamecontroller)
 ```
 
 
