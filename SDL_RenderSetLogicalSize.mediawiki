@@ -1,0 +1,59 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_RenderSetLogicalSize =
+Use this function to set a device independent resolution for rendering.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_RenderSetLogicalSize(SDL_Renderer* renderer,
+                             int           w,
+                             int           h)
+```
+
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the renderer for which resolution should be set
+|-
+|'''w'''
+|the width of the logical resolution
+|-
+|'''h'''
+|the height of the logical resolution
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+:[[SDL_RenderGetLogicalSize]]
+
+----
+[[CategoryAPI]], [[CategoryRender]]
