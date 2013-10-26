@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 '''DRAFT'''
 
-= SDL_GetBasePath (SDL 2.0.1+) =
+= SDL_GetBasePath =
 Use this function to get the directory where the application was run from.  This is where the application data directory is.
 
 
@@ -62,6 +62,9 @@ Supported values for the SDL_FILESYSTEM_BASE_DIR_TYPE property (Given an applica
 |The containing directory of the bundle
 |/Applications/SDLApp/
 |}
+
+== Version ==
+This function is available since SDL 2.0.1.
 
 == Related Functions ==
 :[[SDL_GetPrefPath]]
