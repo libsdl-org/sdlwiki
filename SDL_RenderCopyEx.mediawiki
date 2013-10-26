@@ -7,13 +7,13 @@ Use this function to copy a portion of the texture to the current rendering targ
 
 == Syntax ==
 ```c++
-int SDL_RenderCopyEx(SDL_Renderer*   renderer,
-                   SDL_Texture*    texture,
-                   const SDL_Rect* srcrect,
-                   const SDL_Rect* dstrect,
-                   const double angle,
-                   const SDL_Point *center,
-                   const SDL_RendererFlip flip);
+int SDL_RenderCopyEx(SDL_Renderer*          renderer,
+                     SDL_Texture*           texture,
+                     const SDL_Rect*        srcrect,
+                     const SDL_Rect*        dstrect,
+                     const double           angle,
+                     const SDL_Point*       center,
+                     const SDL_RendererFlip flip)
 ```
 
 == Function Parameters ==
