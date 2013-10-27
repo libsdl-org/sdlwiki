@@ -12,7 +12,7 @@ Use this function to get the implementation dependent name for an opened game co
 
 == Syntax ==
 ```c++
-const char *SDL_GameControllerName(SDL_GameController *gamecontroller); 
+const char* SDL_GameControllerName(SDL_GameController* gamecontroller)
 ```
 
 
@@ -40,7 +40,6 @@ if (controller) {
     printf("Found a valid controller, named: %s\n", SDL_GameControllerName(controller));
 }
 ```
-
 
 
 == Remarks ==
