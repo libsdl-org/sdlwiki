@@ -26,7 +26,5 @@ Here are the names returned for some supported platforms:
 * iOS
 * Android
 
-== Related Functions ==
-
 ----
 [[CategoryAPI]], [[CategoryPlatform]]
