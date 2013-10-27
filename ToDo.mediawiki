@@ -359,7 +359,3 @@ SDL_shape.h
 === Not linked pages ===
 
 * [[SDL_DirtyTexture]]
-
-=== See also ===
-
-* [[temp]]
