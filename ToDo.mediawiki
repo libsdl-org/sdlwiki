@@ -28,7 +28,7 @@ These functions are in the process of being documented by Jorgen
 * [[SDL_GameControllerGetButton]]
 * [[SDL_GameControllerClose]]
 
-These functions are currently undocumented:
+These functions are currently documented as "draft" only and need improvements:
 
 * [[SDL_GameControllerMapping]]
 * [[SDL_GameControllerMappingForGUID]]
@@ -37,7 +37,7 @@ These functions are currently undocumented:
 * [[SDL_GameControllerGetBindForButton]]
 * [[SDL_GameControllerGetStringForAxis]]
 * [[SDL_GameControllerGetStringForButton]]
-* [[SDL_GameControllerUpdate]] (maybe)
+* [[SDL_GameControllerUpdate]]
 
 SDL_gesture.h
 
