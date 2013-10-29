@@ -39,9 +39,9 @@ You can add your code example here
 This function is called internally to translate GameController mapping strings for the underlying joystick device into the consistent GameController mapping.  You do not normally need to call this function unless you are parsing GameController mappings in your own code.
 
 
-<!-- #== Related Functions == -->
-<!-- # .[[SDL_OtherFunction]] -->
-<!-- #Remove this section if empty -->
+== Related Functions ==
+:[[SDL_GameControllerGetStringForAxis]]
+
 <!-- #Will discuss on the docs list about what related functions to include here. -->
 
 ----
