@@ -19,7 +19,7 @@ SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char* pchString
 == Function Parameters ==
 {|
 |'''pchString'''
-|String representing a GameController axis
+|string representing a GameController axis
 |}
 
 
