@@ -1,19 +1,20 @@
 This page is intended to help focus the efforts of the SDL Documentation Wiki contributors.
 
+
 === Missing functions ===
 The following functions are found in the header files, but not (yet) on the wiki. Some pages just need to be categorized, others don't exist yet and need to be made, and some might not belong on the wiki anyway (for example, none of the internal SDL_cstdlib functions have been listed here). 
 
-SDL_assert.h
+==== SDL_assert.h ====
 
 These functions are for internal use and not meant to be documented:
 * [[SDL_ReportAssertion]]
 
-SDL_error.h
+==== SDL_error.h ====
 
 These functions are for internal use and not meant to be documented:
 * [[SDL_Error]]
 
-SDL_gamecontroller.h
+==== SDL_gamecontroller.h ====
 
 These functions are in the process of being documented by Jorgen
 * [[SDL_IsGameController]]
@@ -39,19 +40,19 @@ These functions are currently documented as "draft" only and need improvements:
 * [[SDL_GameControllerGetStringForButton]]
 * [[SDL_GameControllerUpdate]]
 
-SDL_gesture.h
+==== SDL_gesture.h ====
 
 * [[SDL_RecordGesture]]
 * [[SDL_SaveAllDollarTemplates]]
 * [[SDL_SaveDollarTemplate]]
 * [[SDL_LoadDollarTemplates]]
 
-SDL_hints.h
+==== SDL_hints.h ====
 
 * [[SDL_AddHintCallback]]
 * [[SDL_DelHintCallback]]
 
-SDL_input.h
+==== SDL_input.h ====
 
 The input API was never implemented and has been removed, so ignore these functions.
 * [[SDL_RedetectInputDevices]]
@@ -59,7 +60,7 @@ The input API was never implemented and has been removed, so ignore these functi
 * [[SDL_GetInputDeviceName]]
 * [[SDL_IsDeviceDisconnected]]
 
-SDL_joystick.h
+==== SDL_joystick.h ====
 
 * [[SDL_JoystickNameForIndex]]
 * [[SDL_JoystickGetDeviceGUID]]
@@ -69,33 +70,33 @@ SDL_joystick.h
 * [[SDL_JoystickGetAttached]]
 * [[SDL_JoystickInstanceID]]
 
-SDL_keyboard.h
+==== SDL_keyboard.h ====
 
 * [[SDL_IsTextInputActive]]
 * [[SDL_HasScreenKeyboardSupport]]
 * [[SDL_IsScreenKeyboardShown]]
 
-SDL_main.h
+==== SDL_main.h ====
 
 These functions are platform specific and were left undocumented because they require advanced knowledge of Windows functionality.  You may document them but will need to explain when and why you should use them.
 * [[SDL_RegisterApp]]
 * [[SDL_UnregisterApp]]
 
-SDL_messagebox.h
+==== SDL_messagebox.h ====
 
 * [[SDL_ShowMessageBox]]
 * [[SDL_ShowSimpleMessageBox]]
 
-SDL_mouse.h
+==== SDL_mouse.h ====
 
 * [[SDL_CreateSystemCursor]]
 * [[SDL_GetDefaultCursor]]
 
-SDL_mutex.h
+==== SDL_mutex.h ====
 
 * [[SDL_TryLockMutex]]
 
-SDL_render.h
+==== SDL_render.h ====
 
 * [[SDL_CreateWindowAndRenderer]]
 * [[SDL_RenderTargetSupported]]
@@ -106,12 +107,12 @@ SDL_render.h
 * [[SDL_RenderSetScale]]
 * [[SDL_RenderGetScale]]
 
-SDL_rwops.h
+==== SDL_rwops.h ====
 
 * [[SDL_ReadU8]]
 * [[SDL_WriteU8]]
 
-SDL_shape.h
+==== SDL_shape.h ====
 
 These functions need testing on all supported platforms and possibly implementation as well.
 * [[SDL_CreateShapedWindow]]
@@ -119,7 +120,7 @@ These functions need testing on all supported platforms and possibly implementat
 * [[SDL_SetWindowShape]]
 * [[SDL_GetShapedWindowMode]]
 
-SDL_system.h
+==== SDL_system.h ====
 
 * [[SDL_iPhoneSetAnimationCallback]]
 * [[SDL_iPhoneSetEventPump]]
@@ -129,20 +130,20 @@ SDL_system.h
 * [[SDL_AndroidGetExternalStorageState]]
 * [[SDL_AndroidGetExternalStoragePath]]
 
-SDL_thread.h
+==== SDL_thread.h ====
 
 * [[SDL_TLSCreate]]
 * [[SDL_TLSGet]]
 * [[SDL_TLSSet]]
 
-SDL_touch.h
+==== SDL_touch.h ====
 
 * [[SDL_GetNumTouchDevices]]
 * [[SDL_GetNumTouchFingers]]
 * [[SDL_GetTouchDevice]]
 * [[SDL_GetTouchFinger]]
 
-SDL_video.h
+==== SDL_video.h ====
 
 * [[SDL_GetDisplayName]]
 * [[SDL_GL_GetCurrentContext]]
@@ -154,7 +155,7 @@ SDL_video.h
 * [[SDL_GetWindowMaximumSize]]
 * [[SDL_SetWindowBordered]]
 
-SDL_stdinc.h
+==== SDL_stdinc.h ====
 
 These functions maybe do not need to be documented here
 * [[SDL_abs]]
@@ -228,7 +229,7 @@ These functions maybe do not need to be documented here
 * [[SDL_wcslcpy]]
 * [[SDL_wcslen]]
 
-SDL2_test
+==== SDL2_test ====
 
 These functions maybe do not need to be documented here
 * [[SDLTest_Assert]]
@@ -312,7 +313,7 @@ These functions maybe do not need to be documented here
 
 === Missing structures ===
 
-SDL_events.h
+==== SDL_events.h ====
 
 * [[SDL_JoyDeviceEvent]]
 * [[SDL_CommonEvent]]
@@ -321,28 +322,28 @@ SDL_events.h
 * [[SDL_ControllerDeviceEvent]]
 * [[SDL_OSEvent]]
 
-SDL_gamecontroller.h
+==== SDL_gamecontroller.h ====
 * [[SDL_GameControllerButtonBind]]
 
-SDL_haptic.h
+==== SDL_haptic.h ====
 * [[SDL_HapticLeftRight]]
 
-SDL_joystick.h
+==== SDL_joystick.h ====
 * [[SDL_JoystickGUID]]
 
-SDL_messagebox.h
+==== SDL_messagebox.h ====
 * [[SDL_MessageBoxButtonData]]
 * [[SDL_MessageBoxColor]]
 * [[SDL_MessageBoxColorScheme]]
 * [[SDL_MessageBoxData]]
 
-SDL_shape.h
+==== SDL_shape.h ====
 * [[SDL_WindowShapeMode]]
 
-SDL_touch.h
+==== SDL_touch.h ====
 * [[SDL_Finger]]
 
-SDL2_test
+==== SDL2_test ====
 * [[SDLTest_CommonState]]
 * [[SDLTest_Crc32Context]]
 * [[SDLTest_Md5Context]]
@@ -353,7 +354,7 @@ SDL2_test
 
 === Missing unions ===
 
-SDL_shape.h
+==== SDL_shape.h ====
 * [[SDL_WindowShapeParams]]
 
 === Not linked pages ===
