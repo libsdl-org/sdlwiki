@@ -42,6 +42,7 @@ These functions are currently documented as "draft" only and need improvements:
 
 ==== SDL_gesture.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_RecordGesture]]
 * [[SDL_SaveAllDollarTemplates]]
 * [[SDL_SaveDollarTemplate]]
@@ -62,6 +63,7 @@ The input API was never implemented and has been removed, so ignore these functi
 
 ==== SDL_joystick.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_JoystickNameForIndex]]
 * [[SDL_JoystickGetDeviceGUID]]
 * [[SDL_JoystickGetGUID]]
@@ -94,6 +96,7 @@ These functions are platform specific and were left undocumented because they re
 
 ==== SDL_mutex.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_TryLockMutex]]
 
 ==== SDL_render.h ====
