@@ -16,7 +16,8 @@ Use this function to get the finger object for specified touch device ID and fin
 
 == Syntax ==
 ```c++
-SDL_Finger* SDL_GetTouchFinger(SDL_TouchID touchID, int index)
+SDL_Finger* SDL_GetTouchFinger(SDL_TouchID touchID,
+                               int         index)
 ```
 
 
