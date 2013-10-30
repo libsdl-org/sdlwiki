@@ -74,6 +74,7 @@ These functions are currently documented as "draft" only and need improvements:
 
 ==== SDL_keyboard.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_IsTextInputActive]]
 * [[SDL_HasScreenKeyboardSupport]]
 * [[SDL_IsScreenKeyboardShown]]
@@ -86,11 +87,13 @@ These functions are platform specific and were left undocumented because they re
 
 ==== SDL_messagebox.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_ShowMessageBox]]
 * [[SDL_ShowSimpleMessageBox]]
 
 ==== SDL_mouse.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_CreateSystemCursor]]
 * [[SDL_GetDefaultCursor]]
 
