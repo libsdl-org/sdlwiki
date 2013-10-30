@@ -59,4 +59,4 @@ On X11, SDL rolls its own dialog box with X11 primitives instead of a formal too
 Note that if SDL_Init() would fail because there isn't any available video target, this function is likely to fail for the same reasons. If this is a concern, check the return value from this function and fall back to writing to stderr if you can.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryVideo]]
