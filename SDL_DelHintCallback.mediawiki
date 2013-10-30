@@ -1,0 +1,66 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_DelHintCallback =
+Use this function to remove a function watching a particular hint.
+
+
+
+
+== Syntax ==
+```c++
+void SDL_DelHintCallback(const char*      name,
+                         SDL_HintCallback callback,
+                         void*            userdata)
+```
+
+
+== Function Parameters ==
+{|
+|'''name'''
+|the hint being watched
+|-
+|'''callback'''
+|the function being called when the hint value changes
+|-
+|'''userdata'''
+|a pointer being passed to the callback function
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The function prototype for '''callback''' is:
+ ```c++
+void SDL_HintCallback(void*       userdata,
+                      const char* name,
+                      const char* oldValue,
+                      const char* newValue)
+```
+: where its parameters are:
+ ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_DelHintCallback]]()||
+ ||<code>name</code>||what was passed as '''name''' to [[SDL_DelHintCallback]]()||
+ ||<code>oldValue</code>||the old value||
+ ||<code>newValue</code>||the new value||
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+:[[SDL_AddHintCallback]]
+
+----
+[[CategoryAPI]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
