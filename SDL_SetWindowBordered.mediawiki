@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_SetWindowBordered =
+Use this function to set the border state of a window.
+
+
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowBordered(SDL_Window* window,
+                           SDL_bool    bordered)
+```
+
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window of which to change the border state
+|-
+|'''bordered'''
+|SDL_FALSE to remove border, SDL_TRUE to add border
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This will add or remove the window's SDL_WINDOW_BORDERLESS flag and add or remove the border from the actual window. This is a no-op if the window's border already matches the requested state.
+
+You can't change the border state of a fullscreen window.
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+:[[SDL_GetWindowFlags]]
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
