@@ -13,7 +13,7 @@ Use this function to get the clip rectangle for the current target.
 == Syntax ==
 ```c++
 void SDL_RenderGetClipRect(SDL_Renderer* renderer,
-                           SDL_Rect*     rect);
+                           SDL_Rect*     rect)
 ```
 
 
