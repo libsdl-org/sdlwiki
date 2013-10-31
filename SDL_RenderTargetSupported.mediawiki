@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_RenderTargetSupported =
+Use this function to determine whether a window supports the use of render targets.
+
+
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_RenderTargetSupported(SDL_Renderer* renderer)
+```
+
+
+== Function Parameters ==
+{|
+|'''renderer'''
+|the renderer that will be checked
+|}
+
+
+== Return Value ==
+Returns SDL_TRUE if supported or SDL_FALSE if not.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+:[[SDL_SetRenderTarget]]
+
+----
+[[CategoryAPI]], [[CategoryRender]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
