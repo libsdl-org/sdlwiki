@@ -7,7 +7,8 @@ Use this function to prepare a read-only memory buffer for use with RWops.
 
 == Syntax ==
 ```c++
-SDL_RWops* SDL_RWFromMem(void* mem, int size)
+SDL_RWops* SDL_RWFromMem(void* mem,
+                         int   size)
 ```
 
 == Function Parameters ==
