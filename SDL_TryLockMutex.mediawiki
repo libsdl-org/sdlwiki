@@ -10,10 +10,8 @@ Use this function to try to lock a mutex without blocking.
 
 == Syntax ==
 ```c++
-int SDL_TryLockMutex(SDL_mutex * mutex)
+int SDL_TryLockMutex(SDL_mutex* mutex)
 ```
-
-<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
 
 
 == Function Parameters ==
@@ -63,4 +61,4 @@ SDL_DestroyMutex(mutex)
 :[[SDL_DestroyMutex]]
 
 ----
-[[CategoryAPI]], [[CategoryMutex]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryMutex]]
