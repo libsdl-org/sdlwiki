@@ -25,7 +25,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
 if(rw != NULL) {
   extern Uint8 buf[256];
-  SDL_RWread(rw, buf, sizeof (buf));
+  SDL_RWread(rw, buf, sizeof (buf), 1);
   SDL_RWclose(rw);
 }
 ```
