@@ -104,6 +104,7 @@ These functions are currently documented as "draft" only and need improvements:
 
 ==== SDL_render.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_CreateWindowAndRenderer]]
 * [[SDL_RenderTargetSupported]]
 * [[SDL_GetRendererOutputSize]]
@@ -151,6 +152,7 @@ These functions need testing on all supported platforms and possibly implementat
 
 ==== SDL_video.h ====
 
+These functions are currently documented as "draft" only and need improvements:
 * [[SDL_GetDisplayName]]
 * [[SDL_GL_GetCurrentContext]]
 * [[SDL_GL_GetCurrentWindow]]
