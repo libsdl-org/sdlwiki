@@ -36,7 +36,7 @@ Returns the number of objects read, or 0 at error or end of file; call [[SDL_Get
 SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
 if (rw != NULL) {
   extern Uint8 buf[256];
-  SDL_RWread(rw, buf, sizeof (buf));
+  SDL_RWread(rw, buf, 1, sizeof (buf));
   SDL_RWclose(rw);
 }
 ```
@@ -46,6 +46,20 @@ This function reads up to '''maxnum''' objects each of size '''size''' from the 
 
 SDL_RWread is actually a macro that calls the SDL_RWops's '''read''' method appropriately, to simplify application development.
 
+'''More Examples'''
+```#! highlight cpp
+int buffer[10]
+SDL_RWread(rwop, buffer, 4, sizeof(buffer) )
+```
+This will read 40 bytes of data, and put it into 'buffer', which is intended to hold 32-bit integers. Each int is 4 bytes, or 32-bits.
+
+
+
+```#! highlight cpp
+long buffer[10]
+SDL_RWread(rwop, buffer, 8, sizeof(buffer) )
+```
+This will read 80 bytes of data, and place them into 'buffer', which is now designed for 64-bit integers (long values). Each int (long) is 8 bytes, and we are reading 10 of them (as shown by buffer[10] when we make it).
 == Related Functions ==
 :[[SDL_RWclose]]
 :[[SDL_RWseek]]
