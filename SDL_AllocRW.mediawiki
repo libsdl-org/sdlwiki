@@ -18,38 +18,36 @@ Returns a pointer to the allocated memory on success, or NULL on failure; call [
 /* These functions should not be used except from pointers in a RWops */
 static int myseekfunc(SDL_RWops *context, int offset, int whence)
 {
-  SDL_SetError("Can't seek in this kind of RWops");
-  return(-1);
+  return SDL_SetError("Can't seek in this kind of RWops");
 }
 
 static int myreadfunc(SDL_RWops *context, void *ptr, int size, int maxnum)
 {
   SDL_memset(ptr,0,size*maxnum);
-  return(maxnum);
+  return maxnum;
 }
 
 static int mywritefunc(SDL_RWops *context, const void *ptr, int size, int num)
 {
-  return(num);
+  return num;
 }
 
 static int myclosefunc(SDL_RWops *context)
 {
   if(context->type != 0xdeadbeef)
   {
-    SDL_SetError("Wrong kind of RWops for myclosefunc()");
-    return(-1);
+    return SDL_SetError("Wrong kind of RWops for myclosefunc()");
   }
 
   free(context->hidden.unknown.data1);
   SDL_FreeRW(context);
-  return(0);
+  return 0;
 }
 
 SDL_RWops *MyCustomRWop()
 {
   SDL_RWops *c=SDL_AllocRW();
-  if(c==NULL) return(NULL);
+  if(c==NULL) return NULL;
 
   c->seek =myseekfunc;
   c->read =myreadfunc;
@@ -57,7 +55,7 @@ SDL_RWops *MyCustomRWop()
   c->close=myclosefunc;
   c->type =0xdeadbeef;
   c->hidden.unknown.data1=malloc(256);
-  return(c);
+  return c;
 }
 ```
 
