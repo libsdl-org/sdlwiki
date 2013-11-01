@@ -16,17 +16,17 @@ char* SDL_GetPrefPath(const char* org,
 == Function Parameters ==
 {|
 |'''org'''
-|The name of your organization
+|the name of your organization
 |-
 |'''app'''
-|The name of your application
+|the name of your application
 |}
 
 
 == Return Value ==
-Returns a UTF-8 string of the user dire in platform-depende3nt notation. NULL if there's a problem (creating directory failed, etc.).
+Returns a UTF-8 string of the user directory in platform-dependent notation. NULL if there's a problem (creating directory failed, etc.).
 
-The return path will be guaranteed to end with a path separator ('\' on Windows, '/' on most other platforms)
+The return path will be guaranteed to end with a path separator ('\' on Windows, '/' on most other platforms).
 
 The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it.
 
@@ -47,7 +47,7 @@ int InitializePrefPath() {
 
 
 == Remarks ==
-You should assume the path returned by this function is the only safe place to write files (and that SDL_GetBasePath(), while it might be writable, or even the parent of the returned path, aren't where you should be writing things).
+You should assume the path returned by this function is the only safe place to write files (and that [[SDL_GetBasePath]](), while it might be writable, or even the parent of the returned path, aren't where you should be writing things).
 
 Both the org and app strings may become part of a directory name, so please follow these rules:
 
