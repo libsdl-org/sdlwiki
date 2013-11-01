@@ -23,7 +23,7 @@ The pointer returned is owned by you. Please call SDL_free() on the pointer when
 
 char *data_path = NULL;
 
-int InitializeDataPath() {
+void InitializeDataPath() {
     char *base_path = SDL_GetBasePath();
     if (base_path) {
         data_path = SDL_strdup(base_path);
