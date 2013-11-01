@@ -3,8 +3,6 @@
 <!-- format wiki -->
 <!-- language en -->
 
-'''DRAFT'''
-
 = Filesystem Paths =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_filesystem.h SDL_filesystem.h]
