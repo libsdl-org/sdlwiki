@@ -1,0 +1,67 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_TLSSet =
+Use this function to set the value associated with a thread local storage ID for the current thread.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_TLSSet(SDL_TLSID   id,
+               const void* value,
+               void (*destructor)(void*))
+```
+
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
+== Function Parameters ==
+{|
+|'''id'''
+|the thread local storage ID
+|-
+|'''value'''
+|the value to associate with the ID for the current thread
+|-
+|'''destructor'''
+|a function called when the thread exits, to free the value
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The function prototype for '''destructor''' is:
+ ```c++
+void destructor(void* value)
+```
+: where its parameters are:
+ ||<code>value</code>||what was passed as '''value''' to [[SDL_TLSSet]]()||
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+:[[SDL_TLSCreate]]
+:[[SDL_TLSGet]]
+
+----
+[[CategoryAPI]], [[CategoryThread]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
