@@ -14,13 +14,13 @@ Use this function to save all currently loaded Dollar Gesture templates.
 
 == Syntax ==
 ```c++
-int SDL_SaveAllDollarTemplates(SDL_RWops* src)
+int SDL_SaveAllDollarTemplates(SDL_RWops* dst)
 ```
 
 
 == Function Parameters ==
 {|
-|'''src'''
+|'''dst'''
 |a SDL_RWops to save to
 |}
 
