@@ -1,0 +1,60 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_TICKS_PASSED =
+Use this macro to compare SDL ticks values.
+
+
+
+
+== Syntax ==
+```c++
+SDL_TICKS_PASSED(A, B)
+```
+
+<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
+
+
+== Function Parameters ==
+{|
+|'''A'''
+|the first ticks values
+|-
+|'''B'''
+|the second ticks values
+|}
+
+
+== Return Value ==
+Returns return "true" if A has passed B.
+
+
+== Code Examples ==
+```c++
+/* if you want to wait 100 ms, you could do this: */
+Uint32 timeout = SDL_GetTicks() + 100;
+while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
+    /* ... do work until timeout has elapsed */
+}
+```
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This function is available since SDL 2.0.1.
+
+== Related Functions ==
+:[[SDL_GetTicks]]
+
+----
+[[CategoryAPI]], [[CategoryTimer]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
