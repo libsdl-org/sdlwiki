@@ -14,7 +14,7 @@ int SDL_HapticStopAll(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to stop
+|the SDL_Haptic device to stop
 |}
 
 == Return Value ==
@@ -28,7 +28,6 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
