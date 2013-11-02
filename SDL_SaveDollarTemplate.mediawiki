@@ -15,7 +15,7 @@ Use this function to save a currently loaded Dollar Gesture template.
 == Syntax ==
 ```c++
 int SDL_SaveDollarTemplate(SDL_GestureID gestureId,
-                           SDL_RWops*    src)
+                           SDL_RWops*    dst)
 ```
 
 
@@ -24,7 +24,7 @@ int SDL_SaveDollarTemplate(SDL_GestureID gestureId,
 |'''gestureId'''
 |a gesture id
 |-
-|'''src'''
+|'''dst'''
 |a SDL_RWops to save to
 |}
 
