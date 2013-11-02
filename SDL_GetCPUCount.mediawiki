@@ -16,6 +16,6 @@ Returns the total number of logical CPU cores. On CPUs that include technologies
 ```c++
 printf("Number of logical CPU cores: %d\n", SDL_GetCPUCount());
 ```
-== Related Functions ==
+
 ----
 [[CategoryAPI]], [[CategoryCPU]]
