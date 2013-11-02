@@ -8,13 +8,13 @@ Use this function to get the implementation dependent name of a joystick.
 
 == Syntax ==
 ```c++
-const char* SDL_JoystickName(SDL_Joystick *joystick)
+const char* SDL_JoystickName(SDL_Joystick* joystick)
 ```
 
 == Function Parameters ==
 {|
 |'''joystick'''
-|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]] 
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
 |}
 
 == Return Value ==
@@ -35,6 +35,12 @@ for(i = 0; i < num_joy; i++)
 ```
 
 == Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This function is available since SDL 2.0.0.
 
 == Related Functions ==
 :[[SDL_JoystickOpen]]
