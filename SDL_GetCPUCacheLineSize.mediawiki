@@ -21,7 +21,6 @@ You can add your code example here
 == Remarks ==
 This is useful for determining multi-threaded structure padding or SIMD prefetch sizes.
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
