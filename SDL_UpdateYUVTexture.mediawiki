@@ -69,7 +69,7 @@ You can add your code example here
 You can use [[SDL_UpdateTexture]]() as long as your pixel data is a contiguous block of Y and U/V planes in the proper order, but this function is available if your pixel data is not contiguous.
 
 == Version ==
-This function is available since SDL 2.0.0.
+This function is available since SDL 2.0.1.
 
 == Related Functions ==
 :[[SDL_UpdateTexture]]
