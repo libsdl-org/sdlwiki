@@ -33,7 +33,6 @@ You can add your code example here
 == Remarks ==
 This function generates a mouse motion event.
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
