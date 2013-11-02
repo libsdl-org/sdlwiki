@@ -6,7 +6,7 @@
 
 == Introduction ==
 
-After many years in development, SDL 2.0.0 has finally been released!
+After many years in development, SDL 2.0 has finally been released!
 
 We are quite proud of it, and we'd like games that are using SDL 1.2 to move up right away. As this can feel like a daunting task, this document is a simple walkthrough of how to migrate to the new library. We think you'll find it's not as hard as you think, and often times, you'll be either replacing function calls with direct equivalents or undoing some hacks in your code to deal with 1.2 deficiencies.
 
@@ -58,7 +58,7 @@ The best place for information are:
 
 There is no compatibility layer built in to SDL2. If an API changed for 2.0, we've changed or removed the old functions where it makes sense. If you point your 1.2 program at the 2.0 headers, it will probably fail to compile. This document will try to talk you through the most important changes, and the ones most likely to trip you up.
 
-There's no SDL_main!  Well, okay, there ''is'', and it now does what it was always meant to: be a small piece of code that hides the difference between <code>main()</code> and <code>WinMain()</code> on Windows. There's no initialization code in it, and it's completely optional. This means you can use SDL without it taking over your mainline, which is nice for plugins that use SDL, or scripting languages with an SDL module. All the stuff you'd want the 1.2 SDL_main for is now in SDL_Init() where it belongs.
+There's no SDL_main! Well, okay, there ''is'', and it now does what it was always meant to: be a small piece of code that hides the difference between <code>main()</code> and <code>WinMain()</code> on Windows. There's no initialization code in it, and it's completely optional. This means you can use SDL without it taking over your mainline, which is nice for plugins that use SDL, or scripting languages with an SDL module. All the stuff you'd want the 1.2 SDL_main for is now in SDL_Init() where it belongs.
 
 There's no SDL parachute anymore. What 1.2 called <code>SDL_INIT_NOPARACHUTE</code> is a default and only state now. This would cause problems if something other than the main thread crashed, and it would interfere with apps setting up their own signal/exception handlers. On the downside, some platforms don't clean up fullscreen video well when crashing. You should install your own crash handler, or call [[SDL_Quit]]() in an <code>atexit()</code> function or whatnot if this is a concern. Note that on Unix platforms, SDL still catches <code>SIGINT</code> and maps it to an [[SDL_EventType|SDL_QUIT]] event.
 
@@ -263,7 +263,7 @@ There are more features to the Render API, some of which may be able to replace 
 You can do some simple effects with the render API without having to get down into direct pixel manipulation. Some of these were available on 1.2 surfaces.
 
 * Color alpha: [[SDL_Color]] now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named <code>unused</code>). In 2.0, you should.
-* Alpha blending: use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of <code>SDL_SetAlpha()</code>.  Alpha-blending on surfaces can be disabled via [[SDL_SetSurfaceBlendMode]]() and on textures with [[SDL_SetTextureBlendMode]]().
+* Alpha blending: use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of <code>SDL_SetAlpha()</code>. Alpha-blending on surfaces can be disabled via [[SDL_SetSurfaceBlendMode]]() and on textures with [[SDL_SetTextureBlendMode]]().
 * Colorkey: When calling [[SDL_SetColorKey]](), you should pass <code>SDL_TRUE</code> instead of <code>SDL_SRCCOLORKEY</code>.
 * Color modulation: Some renderers now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]]() for details.
 
@@ -292,7 +292,7 @@ If all you care about is whether the user pressed a certain key, that's still [[
 
 Scancodes are meant to be layout-independent. Think of this as "the user pressed the Q key as it would be on a US QWERTY keyboard" regardless of whether this is actually a European keyboard or a Dvorak keyboard or whatever. The scancode is always the same key position.
 
-Keycodes are meant to be layout-dependent. Think of this as "the user pressed the key that is labelled 'Q' on his specific keyboard." 
+Keycodes are meant to be layout-dependent. Think of this as "the user pressed the key that is labelled 'Q' on his specific keyboard."
 
 In example, if you pressed the key that's two keys to the right of CAPS LOCK on a US QWERTY keyboard, it'll report a scancode of SDL_SCANCODE_S and a keycode of SDLK_S. The same key on a Dvorak keyboard, will report a scancode of SDL_SCANCODE_S and a keycode of SDLK_O.
 
@@ -300,7 +300,7 @@ Note that both keycodes and scancodes are now 32 bits, and use a wide range of n
 
 <code>SDLMod</code> is now [[SDL_Keymod]] and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
 
-<code>SDL_GetKeyState()</code> has been renamed to [[SDL_GetKeyboardState]]().  The returned array should now be indexed by SDL_SCANCODE_* values (see [[SDL_Scancode]]) instead of [[SDL_Keysym]] values.
+<code>SDL_GetKeyState()</code> has been renamed to [[SDL_GetKeyboardState]](). The returned array should now be indexed by SDL_SCANCODE_* values (see [[SDL_Scancode]]) instead of [[SDL_Keysym]] values.
 
 Now, for mouse input.
 
@@ -375,7 +375,7 @@ The 1.2 CD API is completely gone. There's no replacement. Chances are you aren'
 
 === Dead platforms ===
 
-We ripped out a bunch of old platforms, like OS/2 and Mac OS 9. It would be easier to list the ones we still support: Windows (XP and later), Linux, Mac OS X, iOS, Android.  In SDL tradition, there are others on the periphery that work but aren't heavily supported, like Haiku and Sony PSP. We'll add any platform that someone sends patches for, but it seemed like it was time to say goodbye to some old friends when moving to the new version.
+We ripped out a bunch of old platforms, like OS/2 and Mac OS 9. It would be easier to list the ones we still support: Windows (XP and later), Linux, Mac OS X, iOS, Android. In SDL tradition, there are others on the periphery that work but aren't heavily supported, like Haiku and Sony PSP. We'll add any platform that someone sends patches for, but it seemed like it was time to say goodbye to some old friends when moving to the new version.
 
 
 === Mobile platforms ===
