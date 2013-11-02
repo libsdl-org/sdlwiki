@@ -23,7 +23,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ```c++
 int i;
 
-for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
+for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     const char* driver_name = SDL_GetAudioDriver(i);
     if (SDL_AudioInit(driver_name)) {
         printf("Audio driver failed to initialize: %s\n", driver_name);
@@ -37,7 +37,7 @@ for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
 This function is used internally, and should not be used unless you have a specific need to designate the audio driver you want to use.  You should normally use [[SDL_Init]]() or [[SDL_InitSubSystem]]().
 
 == Related Functions ==
- [[SDL_AudioQuit]]
+:[[SDL_AudioQuit]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
