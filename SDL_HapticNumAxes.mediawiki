@@ -32,7 +32,6 @@ You can add your code example here
 :[[SDL_HapticDirection]]???
 <span style="color: green;">No other function page includes this section so it should be deleted when major editing is done.  Should this information be included in the Remarks instead?</span>
 
-== Related Functions ==
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
