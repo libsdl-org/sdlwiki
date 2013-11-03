@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-<span id="blendMode"></span> '''blendMode''' may be SDL_BLENDMODE_NONE or a mask of any of the other [[SDL_BlendMode]] values OR'd together: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
+<span id="blendMode"></span> '''blendMode''' may be one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
 :[[SDL_GetRenderDrawBlendMode]]
