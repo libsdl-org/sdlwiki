@@ -13,7 +13,7 @@ void SDL_ClearError(void)
 == Code Examples ==
 ```c++
 const char *error = SDL_GetError();
-if (error) {
+if (*error) {
   printf("SDL_Error : %s\n", error);
   SDL_ClearError();
 }
