@@ -54,6 +54,8 @@ The texture color is affected based on its color modulation set by [[SDL_SetText
 
 The texture alpha is affected based on its alpha modulation set by [[SDL_SetTextureAlphaMod]]().
 
+It is currently impossible to do a diagonal flip (both horizontal and vertical) in one function call.
+
 == Related Functions ==
 :[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
