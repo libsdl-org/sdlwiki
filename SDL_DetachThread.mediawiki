@@ -36,6 +36,8 @@ You may not call [[SDL_WaitThread]]() on a thread that has been detached. Use ei
 
 It is safe to pass NULL to this function; it is a no-op.
 
+== Version ==
+This function is available since SDL 2.0.2.
 
 == Related Functions ==
 : [[SDL_CreateThread]]
