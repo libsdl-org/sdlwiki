@@ -20,7 +20,9 @@ An enumeration of flags that can be used in the flip parameter for [[SDL_RenderC
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL;
+
+SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, &angle, &center, flip);
 ```
 
 == Remarks ==
