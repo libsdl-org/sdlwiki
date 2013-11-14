@@ -26,7 +26,19 @@ A structure that defines a rectangle, with the origin at the upper left.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Rect srcrect;
+SDL_Rect dstrect;
+
+srcrect.x = 0;
+srcrect.y = 0;
+srcrect.w = 32;
+srcrect.h = 32;
+dstrect.x = 640/2;
+dstrect.y = 480/2;
+dstrect.w = 32;
+dstrect.h = 32;
+
+SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 ```
 
 == Remarks ==
