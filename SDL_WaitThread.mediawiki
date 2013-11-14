@@ -67,7 +67,16 @@ int TestThread(void *ptr)
 ```
 
 == Remarks ==
-The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL. The return code is the value returned by the 'return' statement in the thread function.
+
+Wait for a thread to finish. Threads that haven't been detached will remain (as a "zombie") until this function cleans them up. Not doing so is a resource leak.
+
+Once a thread has been cleaned up through this function, the [[SDL_Thread]] that references it becomes invalid and should not be referenced again. As such, only one thread may call SDL_WaitThread() on another.
+
+The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL.
+
+You may not wait on a thread that has been used in a call to SDL_DetachThread(). Use either that function or this one, but not both, or behavior is undefined.
+
+It is safe to pass NULL to this function; it is a no-op.
 
 Note that the thread pointer is freed by this function and is not valid afterward.
 
