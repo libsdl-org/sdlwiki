@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This only affects the display mode used when the window is fullscreen. To change the window size when the window is not full screen, use [[SDL_SetWindowSize]]()
+This only affects the display mode used when the window is fullscreen. To change the window size when the window is not fullscreen, use [[SDL_SetWindowSize]]().
 
 == Related Functions ==
 :[[SDL_GetWindowDisplayMode]]
