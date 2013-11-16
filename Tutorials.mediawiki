@@ -15,7 +15,7 @@ There are a number of SDL tutorials available from different sources.
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler
 
 * [https://www.youtube.com/watch?v=wWGtuc5uqF4]
-: A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler with opengl 3.0+ & compiling GLEW libraries
+: A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler with OpenGL 3.0+ & compiling GLEW libraries
 
 == Android ==
 
