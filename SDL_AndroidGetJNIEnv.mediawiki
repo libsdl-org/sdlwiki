@@ -1,0 +1,53 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+= SDL_AndroidGetJNIEnv =
+Use this function to retrieve the Java native interface object (JNIEnv) of the current thread on Android builds.
+
+
+
+== Syntax ==
+```c++
+JNIEnv* SDL_AndroidGetJNIEnv(void)
+```
+
+== Return Value ==
+Returns a pointer to Java native interface object to which the current thread is attached, or 0 on error.
+
+== Code Examples ==
+```c++
+// Calls the void MyActivity.showHome() method of the Java instance of MyActivity.
+void showHome(void)
+{
+    // retrieve the JNI environment.
+    JNIEnv* env = (JNIEnv*)SDL_AndroidGetJNIEnv();
+
+    // retrieve the Java instance of the SDLActivity
+    jobject activity = (jobject)SDL_AndroidGetActivity();
+
+    // find the Java class of the activity. It should be SDLActivity or a subclass of it.
+    jclass clazz( env->GetObjectClass(activity) );
+
+    // find the identifier of the method to call
+    jmethodID method_id = env->GetMethodID( clazz, "showHome", "()V" );
+
+    // effectively call the Java method
+    env->CallVoidMethod( activity, method_id );
+    
+    // clean up the local references.
+    env->DeleteLocalRef(activity);
+}
+```
+
+== Remarks ==
+The prototype of the function in SDL's code actually declare a void* return type, even if the implementation returns a pointer to a JNIEnv. The rationale being that it allows not to include jni.h in the headers of the SDL.
+
+== Version ==
+This function is available in SDL 2.0.0
+
+== Related Functions ==
+:[[SDL_AndroidGetActivity]]
+
+----
+[[CategoryAPI]], [[CategoryHeader]]
