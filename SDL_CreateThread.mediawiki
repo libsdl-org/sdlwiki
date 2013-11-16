@@ -31,8 +31,8 @@ Returns an opaque pointer to the new thread object on success, NULL if the new t
 == Code Examples ==
 ```c++
 #include <stdio.h>
-#include <SDL_thread.h>
-#include <SDL_timer.h>
+#include "SDL_thread.h"
+#include "SDL_timer.h"
 
 int TestThread( void *ptr );
 
