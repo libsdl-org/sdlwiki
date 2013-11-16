@@ -24,8 +24,8 @@ Returns the ID of the specified thread, or the ID of the current thread if '''th
 ```c++
 
 #include <stdio.h>
-#include <SDL_thread.h>
-#include <SDL_timer.h>
+#include "SDL_thread.h"
+#include "SDL_timer.h"
 
 int TestThread( void *ptr );
 
