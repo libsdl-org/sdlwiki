@@ -23,8 +23,8 @@ void SDL_WaitThread(SDL_Thread* thread,
 ```c++
 
 #include <stdio.h>
-#include <SDL_thread.h>
-#include <SDL_timer.h>
+#include "SDL_thread.h"
+#include "SDL_timer.h"
 
 int TestThread(void *ptr);
 
