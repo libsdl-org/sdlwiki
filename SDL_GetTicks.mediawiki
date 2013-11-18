@@ -15,7 +15,18 @@ Returns an unsigned 32-bit value representing the number of milliseconds since t
 
 == Code Examples ==
 ```c++
-You can add your code example here
+unsigned int lastTime = 0, currentTime;
+while (!quit) {
+  // do stuff
+  // ...
+
+  // Print a report once per second
+  currentTime = SDL_GetTicks();
+  if (currentTime > lastTime + 1000) {
+    printf("Report: %d\n", variable);
+    lastTime = currentTime;
+  }
+}
 ```
 
 == Remarks ==
