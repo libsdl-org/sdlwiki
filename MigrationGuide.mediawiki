@@ -348,9 +348,9 @@ That one really important exception: The audio callback does NOT start with a fu
 
 === Joysticks ===
 
-This is almost completely compatible with 1.2. The only real exception is that joystick events now refer to an SDL_JoystickID. This is because SDL 2.0 can handle joysticks coming and going, as devices are plugged in and pulled out during your game's lifetime, so the index into the device list that 1.2 uses would be meaningless as the available device list changes.
+Joystick events now refer to an SDL_JoystickID. This is because SDL 2.0 can handle joysticks coming and going, as devices are plugged in and pulled out during your game's lifetime, so the index into the device list that 1.2 uses would be meaningless as the available device list changes.
 
-To get an SDL_JoystickID for your opened [[SDL_Joystick]]*, just call:
+To get an SDL_JoystickID for your opened [[SDL_Joystick]]*, call:
 
 ```c++
 SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
@@ -358,7 +358,9 @@ SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
 
 And compare the joystick events' '''which''' field against <code>myID</code>. If you aren't using the event queue for joysticks, [[SDL_JoystickGetAxis]]() and friends work just like SDL 1.2.
 
-You should also check out the new [[CategoryGameController|Game Controller API]] too, because it's cool, and maybe you did a lot of tap dancing with the 1.2 API that this new code would solve more cleanly. You can find it in SDL_gamecontroller.h. As an added bonus: the Game Controller API integrates really nicely with Steam Big Picture Mode: you get automatic configuration of most controllers, and a nice UI if you have to manually configure it. In either case, Steam passes this configuration on to your SDL application.
+You should also check out the new [[CategoryGameController|Game Controller API]] too, because it's cool, and maybe you did a lot of tap dancing with the 1.2 API that this new code would solve more cleanly. You can find it in SDL_gamecontroller.h. The Game Controller API integrates really nicely with Steam Big Picture Mode: you get automatic configuration of most controllers, and a nice UI if you have to manually configure it. In either case, Steam passes this configuration on to your SDL application.
+
+Support for the older joystick API (/dev/input/js*) for Linux has been dropped from SDL2. SDL2 only supports the newer events API (/dev/input/event*) for joysticks. These events are not normally readable for normal user accounts, so even if joysticks are plugged in you will likely have none detected. This is something that end users will have to configure for themselves.
 
 
 === Threads ===
