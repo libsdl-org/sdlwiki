@@ -25,11 +25,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-The displayIndex needs to be in the range from 0 to [[SDL_GetNumDisplayModes]]() - 1. This allows you to supporting multiple screens.
+The displayIndex needs to be in the range from 0 to [[SDL_GetNumVideoDisplays]]() - 1. This allows you to supporting multiple screens.
 
 == Related Functions ==
 :[[SDL_GetDisplayMode]]
-:[[SDL_GetNumDisplayModes]]
+:[[SDL_GetNumVideoDisplays]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
