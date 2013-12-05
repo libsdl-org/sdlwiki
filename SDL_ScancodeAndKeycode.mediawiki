@@ -98,7 +98,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |-
 |"'''&#39;'''"
 |SDL_SCANCODE_APOSTROPHE
-|SDLK_APOSTROPHE
+|SDLK_QUOTE
 |-
 |"'''Application'''" (the Application / Compose / Context Menu (Windows) key )
 |SDL_SCANCODE_APPLICATION
@@ -354,7 +354,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |-
 |"'''&#96;'''" (Located in the top left corner (on both ANSI and ISO keyboards). Produces GRAVE ACCENT and TILDE in a US Windows layout and in US and UK Mac layouts on ANSI keyboards, GRAVE ACCENT and NOT SIGN in a UK Windows layout, SECTION SIGN and PLUS-MINUS SIGN in US and UK Mac layouts on ISO keyboards, SECTION SIGN and DEGREE SIGN in a Swiss German layout (Mac: only on ISO keyboards), CIRCUMFLEX ACCENT and DEGREE SIGN in a German layout (Mac: only on ISO keyboards), SUPERSCRIPT TWO and TILDE in a French Windows layout, COMMERCIAL AT and NUMBER SIGN in a French Mac layout on ISO keyboards, and LESS-THAN SIGN and GREATER-THAN SIGN in a Swiss German, German, or French Mac layout on ANSI keyboards.)
 |SDL_SCANCODE_GRAVE
-|SDLK_GRAVE
+|SDLK_BACKQUOTE
 |-
 |"'''H'''"
 |SDL_SCANCODE_H
