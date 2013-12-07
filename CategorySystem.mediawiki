@@ -1,0 +1,24 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- format wiki -->
+<!-- language en -->
+
+= Platform-specific Window Management =
+
+'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h]
+
+
+== Introduction ==
+This category contains functions for advanced, platform-specific functionality.
+
+== Enumerations ==
+<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>>
+
+== Structures ==
+<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>>
+
+== Functions ==
+<<FullSearchCached(category:CategorySystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
+
+----
+CategoryCategory
