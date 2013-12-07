@@ -21,7 +21,7 @@ const Uint8* SDL_GetKeyboardState(int* numkeys)
 Returns a pointer to an array of key states. A value of 1 means that the key is pressed and a value of 0 means that it is not. Indexes into this array are obtained by using [[SDL_Scancode]] values. The pointer returned is a pointer to an internal SDL array. It will be valid for the whole lifetime of the application and should not be freed by the caller.
 
 == Code Examples ==
-<span style="color: green;">Is this entered correctly? Does the \code and \endcode go in or is that doxygen markup in the header?  There is a different example in the old wiki.</span>
+<span style="color: green;">There is a different example in the old wiki.</span>
 ```c++
 const Uint8 *state = SDL_GetKeyboardState(NULL);
 if (state[SDL_SCANCODE_RETURN]) {
