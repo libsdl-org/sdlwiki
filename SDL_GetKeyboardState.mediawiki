@@ -18,7 +18,7 @@ const Uint8* SDL_GetKeyboardState(int* numkeys)
 |}
 
 == Return Value ==
-Returns ^a pointer to^ an array of key states. A value of 1 means that the key is pressed and a value of 0 means that it is not. Indexes into this array are obtained by using [[SDL_Scancode]] values. The pointer returned is a pointer to an internal SDL array. It will be valid for the whole lifetime of the application and should not be freed by the caller.
+Returns a pointer to an array of key states. A value of 1 means that the key is pressed and a value of 0 means that it is not. Indexes into this array are obtained by using [[SDL_Scancode]] values. The pointer returned is a pointer to an internal SDL array. It will be valid for the whole lifetime of the application and should not be freed by the caller.
 
 == Code Examples ==
 <span style="color: green;">Is this entered correctly? Does the \code and \endcode go in or is that doxygen markup in the header?  There is a different example in the old wiki.</span>
@@ -33,7 +33,7 @@ if (state[SDL_SCANCODE_RETURN]) {
 <span style="color: green;">From [[SDL_GetKeyState]] in old wiki.</span><br/>
 Note: Use [[SDL_PumpEvents]]() to update the state array.
 
-Note: This function gives you the current state after all events have been processed, so if a key or button has been pressed and released before you process events, then the pressed state will never show up in the <code>getstate</code> <span style="color: green;">formatting here ok?</span> calls.
+Note: This function gives you the current state after all events have been processed, so if a key or button has been pressed and released before you process events, then the pressed state will never show up in the [[SDL_GetKeyboardState]]() <span style="color: green;">formatting here ok?</span> calls.
 
 Note: This function doesn't take into account whether shift has been pressed or not. <br/>
 
