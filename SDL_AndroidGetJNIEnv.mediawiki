@@ -9,11 +9,11 @@ Use this function to retrieve the Java native interface object (JNIEnv) of the c
 
 == Syntax ==
 ```c++
-JNIEnv* SDL_AndroidGetJNIEnv(void)
+void* SDL_AndroidGetJNIEnv(void)
 ```
 
 == Return Value ==
-Returns a pointer to Java native interface object to which the current thread is attached, or 0 on error.
+Returns a pointer to Java native interface object (JNIEnv) to which the current thread is attached, or 0 on error.
 
 == Code Examples ==
 ```c++
