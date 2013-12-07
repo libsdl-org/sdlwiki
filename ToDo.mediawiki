@@ -137,6 +137,8 @@ These functions need testing on all supported platforms and possibly implementat
 * [[SDL_AndroidGetInternalStoragePath]]
 * [[SDL_AndroidGetExternalStorageState]]
 * [[SDL_AndroidGetExternalStoragePath]]
+* [[SDL_Direct3D9GetAdapterIndex]]
+* [[SDL_RenderGetD3D9Device]]
 
 ==== SDL_thread.h ====
 
