@@ -32,5 +32,8 @@ while (!quit) {
 == Remarks ==
 This value wraps if the program runs for more than ~49 days.
 
+== Related Functions ==
+:[[SDL_TICKS_PASSED]]
+
 ----
 [[CategoryAPI]], [[CategoryTimer]]
