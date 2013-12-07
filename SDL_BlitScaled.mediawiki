@@ -8,9 +8,9 @@ Use this function to perform a scaled surface copy to a destination surface.
 == Syntax ==
 ```c++
 int SDL_BlitScaled(SDL_Surface*    src,
-               const SDL_Rect* srcrect,
-               SDL_Surface*    dst,
-               SDL_Rect*       dstrect)
+                   const SDL_Rect* srcrect,
+                   SDL_Surface*    dst,
+                   SDL_Rect*       dstrect)
 ```
 
 == Function Parameters ==
