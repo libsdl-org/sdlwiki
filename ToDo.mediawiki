@@ -172,6 +172,8 @@ These functions are currently documented as "draft" only and need improvements:
 
 These functions maybe do not need to be documented here
 * [[SDL_abs]]
+* [[SDL_acos]]
+* [[SDL_asin]]
 * [[SDL_atan]]
 * [[SDL_atan2]]
 * [[SDL_atof]]
