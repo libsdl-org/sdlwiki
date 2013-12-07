@@ -72,7 +72,7 @@ int main(int, char**)  {
     "Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 
     width, height, SDL_WINDOW_RESIZABLE
   );
-  Uint32 windowID = SDL_GetWindowFromID(window);
+  Uint32 windowID = SDL_GetWindowID(window);
   
   while (true)  {
     SDL_Event event;
@@ -121,6 +121,10 @@ int main(int, char**)  {
 
 == Related Structures ==
 :[[SDL_WindowEvent]]
+
+== Related Functions ==
+:[[SDL_GetWindowID]]
+:[[SDL_GetWindowFromID]]
 
 ----
 [[CategoryEnum]], [[CategoryVideo]], [[CategoryEvents]]
