@@ -130,22 +130,22 @@ press          |     |
 |<code>\  |\  |\  |\  |\  |\  |\  |</code><br/><code> \ | \ | \ | \ | \ | \ | \ |</code><br/><code>  \|  \|  \|  \|  \|  \|  \| </code>
 |}
 
-<span id="phase"></span>'''phase''' is given by hundredths of a cycle, meaning that giving the phase a value of 9000 will displace it 25% of it's period. Here are sample values:
+<span id="phase"></span>'''phase''' is given by hundredths of a cycle, meaning that giving the phase a value of 9000 will displace it 25% of its period. Here are sample values:
 {|
 |0
 |No phase displacement
 |-
 |9000
-|Displaced 25% of it's period
+|Displaced 25% of its period
 |-
 |18000
-|Displaced 50% of it's period
+|Displaced 50% of its period
 |-
 |27000
-|Displaced 75% of it's period
+|Displaced 75% of its period
 |-
 |36000
-|Displaced 100% of it's period, same as 0, but 0 is preferred
+|Displaced 100% of its period, same as 0, but 0 is preferred
 |}
 <!-- This is not at all clear unless it is a common thing that a programmer would know.  Is phase describing the duration of an individual wave from start to finish or the duration from the start of one wave to the start of the next? -->
 
