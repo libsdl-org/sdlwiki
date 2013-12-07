@@ -50,4 +50,4 @@ This function is available in SDL 2.0.0
 :[[SDL_AndroidGetActivity]]
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategorySystem]]
