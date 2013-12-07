@@ -39,14 +39,13 @@ myHandle = SDL_LoadObject("mylib.so");
 // Load the exported function from mylib.so
 // The exported function has the following prototype
 // void myFancyFunction(int anInt);
-myFancyFunction = (void (*)(int))SDL_LoadFunction( myHandle, myFunctionName );
+myFancyFunction = (void (*)(int))SDL_LoadFunction(myHandle, myFunctionName);
 
 // Call myFancyFunction with a random integer
 if (myFancyFunction != NULL) {
-    myFancyFunction( 15 );
-}
-else {
-   // Error handling here
+    myFancyFunction(15);
+} else {
+    // Error handling here
 }
 ```
 
