@@ -15,7 +15,7 @@ Use this function to get the size of a window's underlying drawable (for use wit
 ```c++
 void SDL_GL_GetDrawableSize(SDL_Window* window,
                             int*        w,
-                            int*        h);
+                            int*        h)
 ```
 
 
