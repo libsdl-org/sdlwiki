@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= Platform-specific Window Management =
+= Platform-specific functionality =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h]
 
@@ -11,11 +11,11 @@
 == Introduction ==
 This category contains functions for advanced, platform-specific functionality.
 
-== Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>>
+<!-- #== Enumerations == -->
+<!-- #<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>> -->
 
-== Structures ==
-<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>>
+<!-- #== Structures == -->
+<!-- #<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>> -->
 
 == Functions ==
 <<FullSearchCached(category:CategorySystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
