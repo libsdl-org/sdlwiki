@@ -34,4 +34,4 @@ You may use SDL completely free of charge.
 Yes, code from the test directory and from the examples in the documentation is placed in the public domain. Anyone can use it for any purpose.
 
 == Can I use code from the demos in my applications? ==
-Each of the demos has it's own licensing restrictions. See the "COPYING" file in each demo's source directory for more information on a particular demo.
+Each of the demos has its own licensing restrictions. See the "COPYING" file in each demo's source directory for more information on a particular demo.
