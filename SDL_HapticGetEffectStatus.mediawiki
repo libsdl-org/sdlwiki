@@ -18,7 +18,7 @@ int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
 |^the^ SDL_Haptic device to query ^for^ ,,the,, effect status ,,on,,
 |-
 |'''effect'''
-|^the ID^ ,,identifier,, of the ^haptic^ effect to query ,,it's status,,
+|^the ID^ ,,identifier,, of the ^haptic^ effect to query ,,its status,,
 |}
 
 == Return Value ==
