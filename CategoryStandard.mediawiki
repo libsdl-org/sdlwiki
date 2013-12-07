@@ -13,7 +13,7 @@
 
 
 == Introduction ==
-This category contains additional functions, enums and defines for SDL. Including math, memory, c-string, PI Number etc...
+This category contains additional functions, enums and defines for SDL. Including math, memory, C string, PI number etc...
 
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryAdditionalOther -title:SGEnumerations)>>
