@@ -24,7 +24,7 @@ Returns ^a pointer to^ an array of key states. *A value of 1 means that the key 
 <span style="color: green;">Is this entered correctly? Does the \code and \endcode go in or is that doxygen markup in the header?  There is a different example in the old wiki.</span>
 ```c++
 const Uint8 *state = SDL_GetKeyboardState(NULL);
-if ( state[SDL_SCANCODE_RETURN] ) {
+if (state[SDL_SCANCODE_RETURN]) {
     printf("<RETURN> is pressed.\n");
 }
 ```
