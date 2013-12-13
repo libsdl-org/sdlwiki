@@ -64,22 +64,21 @@ An enumeration of OpenGL configuration attributes.
 |SDL_GL_CONTEXT_MINOR_VERSION
 |OpenGL context minor version; see [[#OpenGL|Remarks]] for details
 |-
-|SDL_GL_CONTEXT_EGL
-|set to 1 to use EGL; default is platform-dependent
-|-
 |SDL_GL_CONTEXT_FLAGS
 |some combination of 0 or more of elements of the [[SDL_GLcontextFlag]] enumeration; defaults to 0
 |-
 |SDL_GL_CONTEXT_PROFILE_MASK
-|one of the members of the [[SDL_GLprofile]] enumeration or 0 to allow any profile; defaults to 0
+|type of GL context (Core, Compatibility, ES). See [[SDL_GLprofile]]; default value depends on platform
 |-
 |SDL_GL_SHARE_WITH_CURRENT_CONTEXT
 |OpenGL context sharing; defaults to 0
 |-
 |SDL_GL_FRAMEBUFFER_SRGB_CAPABLE
 |requests sRGB capable visual; defaults to 0 (>= SDL 2.0.1)
+|-
+|<rowstyle="color: #808080;">SDL_GL_CONTEXT_EGL
+|not used (deprecated)
 |}
-
 == Code Examples ==
 ```c++
 SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
@@ -91,13 +90,13 @@ SDL_GL_CreateContext(window);
 ```
 
 == Remarks ==
-While you can set most OpenGL attributes normally, the attributes listed above must be known before SDL creates an OpenGL context. These attributes are set and read with [[SDL_GL_SetAttribute]]() and [[SDL_GL_GetAttribute]]().
+While you can set most OpenGL attributes normally, the attributes listed above must be known before SDL creates the window that will be used with the OpenGL context. These attributes are set and read with [[SDL_GL_SetAttribute]]() and [[SDL_GL_GetAttribute]]().
 
 In some cases, these attributes are minimum requests; the GL does not promise to give you exactly what you asked for. It's possible to ask for a 16-bit depth buffer and get a 24-bit one instead, for example, or to ask for no stencil buffer and still have one available. Context creation should fail if the GL can't provide your requested attributes at a minimum, but you should check to see exactly what you got.
 
 <span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL_GL_MULTISAMPLEBUFFERS to 1 and SDL_GL_MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.
 
-<span id="OpenGL"></span> SDL_GL_CONTEXT_MAJOR_VERSION and SDL_GL_CONTEXT_MINOR_VERSION are used when creating an OpenGL 3.x context.
+<span id="OpenGL"></span> SDL_GL_CONTEXT_PROFILE_MASK determines the type of context created, while both SDL_GL_CONTEXT_MAJOR_VERSION and SDL_GL_CONTEXT_MINOR_VERSION determine which version. All three attributes must be set prior to creating the first window, and in general you can't change the value of SDL_GL_CONTEXT_PROFILE_MASK without first destroying all windows created with the previous setting.
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
