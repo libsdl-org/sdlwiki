@@ -4,6 +4,11 @@
 = SDL 1.2 to 2.0 Migration Guide =
 
 
+== Translations ==
+
+* Une traduction de cette page par Developpez.com est disponible [http://jeux.developpez.com/tutoriels/sdl-2/guide-migration/ ici].
+* If you want to translate this page to other languages, let Ryan know: icculus@icculus.org
+
 == Introduction ==
 
 After many years in development, SDL 2.0 has finally been released!
