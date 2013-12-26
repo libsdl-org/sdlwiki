@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetNumAudioDrivers =
 Use this function to return the number of built in audio drivers.
@@ -16,7 +16,8 @@ Returns the number of built in audio drivers.
 == Code Examples ==
 ```c++
 int i;
-for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
+
+for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
 ```
