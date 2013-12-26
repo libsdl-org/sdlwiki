@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetAudioDeviceName =
 Use this function to get the name of a specific audio device.
@@ -27,7 +27,7 @@ Returns the name of the audio device at the requested index, or NULL on error.
 ```c++
 int i, count = SDL_GetNumAudioDevices(0);
 
-for ( i = 0; i < count; ++i ) {
+for (i = 0; i < count; ++i) {
     printf("Audio device %d: %s\n", i, SDL_GetAudioDeviceName(i, 0));
 }
 ```
