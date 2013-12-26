@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
+
 = SDL_GetAudioDriver =
 Use this function to get the name of a built in audio driver.
 
@@ -21,7 +22,8 @@ Returns the name of the audio driver at the requested index, or NULL if an inval
 == Code Examples ==
 ```c++
 int i;
-for ( i = 0; i < SDL_GetNumAudioDrivers(); ++i ) {
+
+for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
 ```
