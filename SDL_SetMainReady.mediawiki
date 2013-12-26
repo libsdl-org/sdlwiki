@@ -24,13 +24,13 @@ void SDL_SetMainReady(void)
 
 int main(int argc, char *argv[])
 {
-    SDL_SetMainReady( );
-    SDL_Init( SDL_INIT_VIDEO );
+    SDL_SetMainReady();
+    SDL_Init(SDL_INIT_VIDEO);
     ...
 }
 ```
 == Remarks ==
-''This function is defined in SDL_main.h, along with the preprocessor rule to redefine main() as SDL_main().  Thus to ensure that your main() function will not be changed it is necessary to define SDL_MAIN_HANDLED before including SDL.h''
+This function is defined in SDL_main.h, along with the preprocessor rule to redefine main() as SDL_main().  Thus to ensure that your main() function will not be changed it is necessary to define SDL_MAIN_HANDLED before including SDL.h.
 
 == Related Functions ==
 : [[SDL_Init]]
