@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetCurrentAudioDriver =
 Use this function to return the name of the current audio driver.
@@ -17,7 +17,7 @@ Returns the name of the current audio driver or NULL if no driver has been initi
 ```c++
 const char* driver_name = SDL_GetCurrentAudioDriver();
 
-if ( driver_name ) {
+if (driver_name) {
     printf("Audio subsystem initialized; driver = %s.\n", driver_name);
 } else {
     printf("Audio subsystem not initialized.\n");
