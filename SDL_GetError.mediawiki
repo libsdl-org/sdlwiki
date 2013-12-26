@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_GetError =
 Use this function to retrieve a message about the last error that occurred.
@@ -17,7 +17,7 @@ This string is statically allocated and must not be freed by the application.
 
 == Code Examples ==
 ```c++
-if (SDL_Init( SDL_INIT_EVERYTHING ) < 0) {
+if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
     // Unrecoverable error, exit here.
     printf("SDL_Init failed: %s\n", SDL_GetError());
 }
