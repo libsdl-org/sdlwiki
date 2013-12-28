@@ -69,6 +69,7 @@ There's no SDL parachute anymore. What 1.2 called <code>SDL_INIT_NOPARACHUTE</co
 
 
 === Video ===
+==== Setting up a game with the new video api ====
 
 The video API is the most dramatic change from 1.2. Needs have changed a great deal since SDL's API was designed in the late 1990's. To deal with modern hardware and OS features, we have almost completely replaced the old 1.2 video API.
 
