@@ -164,7 +164,7 @@ Now we're ready to start drawing for real.
 
 ==== If your game just wants to get fully-rendered frames to the screen ====
 
-An example of a game like this is ''Doom'', or ''Duke Nukem 3D'', or many others. The application wants to draw every pixel itself and get that final set of pixels to the screen efficiently in one big blit.
+A special case for old school software rendered games: the application wants to draw every pixel itself and get that final set of pixels to the screen efficiently in one big blit. An example of a game like this is ''Doom'', or ''Duke Nukem 3D'', or many others. 
 
 For this, you're going to want a single SDL_Texture that will represent the screen. Let's create one now for our 640x480 game:
 
