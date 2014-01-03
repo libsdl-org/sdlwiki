@@ -21,12 +21,20 @@ Returns SDL_TRUE if the extension is supported, SDL_FALSE otherwise.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+
+    if (SDL_GL_ExtensionSupported("GL_EXT_framebuffer_blit")) {
+        draw_to_the_screen_with_framebuffer_blit();   // faster!
+    } else {
+        draw_to_the_screen_with_a_textured_quad();  // slower!
+    }
+
 ```
 
 == Remarks ==
-''You can add useful comments here''
 
+This function operates on the current GL context; you must have created a context and it must be current before calling this function. Do not assume that all contexts you create will have the same set of extensions available, or that recreating an existing context will offer the same extensions again.
+
+While it's probably not a massive overhead, this function is not an O(1) operation. Check the extensions you care about after creating the GL context and save that information somewhere instead of calling the function every time you need to know.
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
