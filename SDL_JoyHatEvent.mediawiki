@@ -26,14 +26,6 @@ A structure that contains joystick hat position change event information.
 |Uint8
 |'''value'''
 |the new position of the hat; see [[#Remarks|Remarks]] for details
-|-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''padding1'''
-|<style="color: #808080;">
-|-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''padding2'''
-|<style="color: #808080;">
 |}
 
 == Code Examples ==
