@@ -1,0 +1,63 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_ControllerAxisEvent =
+A structure that contains game controller axis motion event information.
+
+
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_ CONTROLLERAXISMOTION
+|-
+|Uint32
+|'''timestamp'''
+|the timestamp of the event
+|-
+|SDL_JoystickID
+|'''which'''
+|the joystick instance id
+|-
+|Uint8
+|'''axis'''
+|the controller axis ([[SDL_GameControllerAxis]])
+|-
+|Sint16
+|'''value'''
+|the axis value (range: -32768 to 32767)
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+
+== Related Functions ==
+:[[SDL_GameControllerEventState]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
