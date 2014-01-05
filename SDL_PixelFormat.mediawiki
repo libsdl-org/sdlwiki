@@ -23,10 +23,6 @@ A structure that contains pixel format information.
 |'''BytesPerPixel'''
 |the number of bytes required to hold a pixel value, eg: 1, 2, 3, 4; see [[#bytesperpixel|Remarks]] for related data type
 |-
-|<style="color: #808080;">Uint16
-|<style="color: #808080;">'''padding'''
-|<style="color: #808080;">
-|-
 |Uint32
 |'''Rmask'''
 |a mask representing the location of the red component of the pixel
