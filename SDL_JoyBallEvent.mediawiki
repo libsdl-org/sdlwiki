@@ -23,18 +23,6 @@ A structure that contains joystick trackball motion event information.
 |'''ball'''
 |the index of the trackball that changed
 |-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''padding1'''
-|<style="color: #808080;">
-|-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''padding2'''
-|<style="color: #808080;">
-|-
-|<style="color: #808080;">Uint8
-|<style="color: #808080;">'''padding3'''
-|<style="color: #808080;">
-|-
 |Sint16
 |'''xrel'''
 |the relative motion in the X direction
