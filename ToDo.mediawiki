@@ -330,12 +330,15 @@ These functions maybe do not need to be documented here
 
 ==== SDL_events.h ====
 
+* --(SDL_CommonEvent)-- (shared)
+* --(SDL_OSEvent)-- (unused)
+
+These structures are currently documented as "draft" only and need improvements: 
+
 * [[SDL_JoyDeviceEvent]]
-* [[SDL_CommonEvent]]
 * [[SDL_ControllerAxisEvent]]
 * [[SDL_ControllerButtonEvent]]
 * [[SDL_ControllerDeviceEvent]]
-* [[SDL_OSEvent]]
 
 ==== SDL_gamecontroller.h ====
 * [[SDL_GameControllerButtonBind]]
