@@ -412,7 +412,7 @@ int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 SDL_AddEventWatch(myEventFilter, data);
 ```
 
-Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for SDL_FINGER* in SDL_events.h.
+Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for [[SDL_Finger]]* in SDL_events.h.
 
 There are a handful of other mobile-friendly functions, like [[SDL_StartTextInput]](), which will show the on-screen keyboard. Make use of them.
 
