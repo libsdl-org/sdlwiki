@@ -28,10 +28,10 @@ You can add your code example here
 == Remarks ==
 The function prototype for '''callback''' is:
  ```c++
-void* SDL_LogOutputFunction(void*           userdata,
-                            int             category,
-                            SDL_LogPriority priority,
-                            const char*     message)
+void SDL_LogOutputFunction(void*           userdata,
+                           int             category,
+                           SDL_LogPriority priority,
+                           const char*     message)
 ```
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
