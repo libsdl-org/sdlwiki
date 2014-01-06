@@ -27,7 +27,8 @@ You can add your code example here
 == Remarks ==
 The function prototype for '''filter''' is:
 ```c++
-int SDL_EventFilter(void* userdata, SDL_Event* event)
+int SDL_EventFilter(void*      userdata,
+                    SDL_Event* event)
 ```
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_FilterEvents]]()||
