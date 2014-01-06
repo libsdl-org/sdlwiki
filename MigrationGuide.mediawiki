@@ -290,7 +290,7 @@ In 1.2, many applications that only cared about US English still called <code>SD
 
 It turns out, i18n is hard.
 
-SDL changed this. <code>SDL_EnableUNICODE()</code> is gone, and so is [[SDL_keysym]]'s <code>unicode</code> field. You no longer get character input from [[SDL_EventType|SDL_KEYDOWN]] events. Use [[SDL_EventType|SDL_KEYDOWN]] to treat the keyboard like a 101-button joystick now. Text input comes from somewhere else.
+SDL changed this. <code>SDL_EnableUNICODE()</code> is gone, and so is [[SDL_Keysym]]'s <code>unicode</code> field. You no longer get character input from [[SDL_EventType|SDL_KEYDOWN]] events. Use [[SDL_EventType|SDL_KEYDOWN]] to treat the keyboard like a 101-button joystick now. Text input comes from somewhere else.
 
 The new event is [[SDL_EventType|SDL_TEXTINPUT]]. This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding.
 
@@ -356,7 +356,7 @@ That one really important exception: The audio callback does NOT start with a fu
 
 Joystick events now refer to an SDL_JoystickID. This is because SDL 2.0 can handle joysticks coming and going, as devices are plugged in and pulled out during your game's lifetime, so the index into the device list that 1.2 uses would be meaningless as the available device list changes.
 
-To get an SDL_JoystickID for your opened [[SDL_Joystick]]*, call:
+To get an SDL_JoystickID for your opened SDL_Joystick*, call:
 
 ```c++
 SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
