@@ -75,7 +75,9 @@ Channel data is interleaved. Stereo samples are stored in left/right ordering. Q
 <span id="callback"></span>
 The function prototype for '''callback''' is:
 ```c++
-void SDL_AudioCallback(void* userdata, Uint8* stream, int len)
+void SDL_AudioCallback(void*  userdata,
+                       Uint8* stream,
+                       int    len)
 ```
 : where its parameters are:
  ||<code>userdata</code>||an application-specific parameter saved in the [[SDL_AudioSpec]] structure's '''userdata''' field||
