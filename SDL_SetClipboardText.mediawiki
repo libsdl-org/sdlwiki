@@ -29,6 +29,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_GetClipboardText]]
+:[[SDL_HasClipboardText]]
 
 ----
 [[CategoryAPI]], [[CategoryClipboard]]
