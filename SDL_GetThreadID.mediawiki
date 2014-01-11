@@ -56,9 +56,9 @@ int main(int argc, char *argv[])
 }
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
-int TestThread( void *ptr )
+int TestThread(void *ptr)
 {
-    int        cnt;
+    int cnt;
 
     for (cnt = 0 ; cnt < 10; ++cnt) {
         printf("\nThread counter: %d", cnt);
