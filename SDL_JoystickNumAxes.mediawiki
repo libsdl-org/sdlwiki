@@ -31,8 +31,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_JoystickGetAxis]] *
-:[[SDL_JoystickOpen]] *
+:[[SDL_JoystickGetAxis]]
+:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
