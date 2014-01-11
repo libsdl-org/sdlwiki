@@ -18,7 +18,7 @@ int SDL_JoystickNumButtons(SDL_Joystick* joystick)
 |}
 
 == Return Value ==
-Returns ^the number of buttons^ on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the number of buttons on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -29,8 +29,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_JoystickGetButton]] *
-:[[SDL_JoystickOpen]] *
+:[[SDL_JoystickGetButton]]
+:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
