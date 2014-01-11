@@ -23,8 +23,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_JoystickName]] *
-:[[SDL_JoystickOpen]] *
+:[[SDL_JoystickName]]
+:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
