@@ -23,12 +23,12 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ```c++
 /* Make the pixels pointer valid in the surface */
 
-SDL_LockSurface( surface );
+SDL_LockSurface(surface);
 
 /* Surface is locked */
 /* Direct pixel access on surface here */
 
-SDL_UnlockSurface( surface );
+SDL_UnlockSurface(surface);
 
 /* Surface is now unlocked */
 ```
