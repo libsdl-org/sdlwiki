@@ -41,7 +41,7 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 Returns a new cursor with the specified parameters. ???
 
 == Code Examples ==
-*
+
 ```c++
 /* Stolen from the mailing list */
 /* Creates a new mouse cursor from an XPM */
@@ -125,7 +125,6 @@ static SDL_Cursor *init_system_cursor(const char *image[])
   return SDL_CreateCursor(data, mask, 32, 32, hot_x, hot_y);
 }
 ```
-*
 
 == Remarks ==
 The cursor width ^('''w''')^ must be a multiple of 8 bits.
@@ -153,18 +152,18 @@ The cursor is created in black and white according to the following:
 |<:> Inverted color if possible, black if not.
 |}
 
-*<br/>Cursors created with this function must be freed with [[SDL_FreeCursor]]().
+Cursors created with this function must be freed with [[SDL_FreeCursor]]().
 
 If you want to have color cursor, then this function is not for you; instead, you must hide the normal system cursor ([[SDL_ShowCursor]]) and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor. 
 
-<span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span><br/>*
+<span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span>
 
 ^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]] to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^
 
 == Related Functions ==
 :[[SDL_FreeCursor]]
-:[[SDL_SetCursor]] *
-:[[SDL_ShowCursor]] *
+:[[SDL_SetCursor]]
+:[[SDL_ShowCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
