@@ -17,7 +17,7 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|^the SDL_Joystick to query^
+|the SDL_Joystick to query
 |-
 |'''ball'''
 |the ball ,,indices,, ^index;^ start^s^ at index 0
@@ -48,10 +48,10 @@ printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 ```
 
 == Remarks ==
-*<br/>Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''. <br/>*
+Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''.
 
 == Related Functions ==
-:[[SDL_JoystickNumBalls]] *
+:[[SDL_JoystickNumBalls]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
