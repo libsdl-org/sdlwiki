@@ -45,16 +45,16 @@ int main(int argc, char *argv[])
         //       be placed in the "threadReturnValue" variable when it completes.
         //
         SDL_WaitThread(thread, &threadReturnValue);
-        printf("\nThread returned value:%d", threadReturnValue);
+        printf("\nThread returned value: %d", threadReturnValue);
     }
 
-    return 1;
+    return 0;
 }
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
 int TestThread(void *ptr)
 {
-    int        cnt;
+    int cnt;
 
     for (cnt = 0; cnt < 10; cnt++) {
         printf("\nThread counter: %d", cnt);
