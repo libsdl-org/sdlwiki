@@ -27,7 +27,7 @@ cond = SDL_CreateCond();
 .
 Thread A:
     SDL_LockMutex(lock);
-    while ( !condition ) {
+    while (!condition) {
         SDL_CondWait(cond, lock);
     }
     SDL_UnlockMutex(lock);
