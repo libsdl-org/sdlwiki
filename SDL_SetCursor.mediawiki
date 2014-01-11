@@ -21,8 +21,9 @@ void SDL_SetCursor(SDL_Cursor* cursor)
 
 ```c++
 int main(int argc, char** argv) {
-     SDL_ShowCursor(SDL_DISABLE);
-     ...
+    SDL_ShowCursor(SDL_DISABLE);
+    ...
+    return 0;
 }
 /* creates a blank cursor */
 ```
