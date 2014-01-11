@@ -20,7 +20,7 @@ You can add your code example here
 This is called automatically by the event loop if any joystick events are enabled.
 
 == Related Functions ==
-:[[SDL_JoystickEventState]] *
+:[[SDL_JoystickEventState]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
