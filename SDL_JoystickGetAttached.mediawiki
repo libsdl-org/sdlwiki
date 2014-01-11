@@ -30,8 +30,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_JoystickClose]] *
-:[[SDL_JoystickOpen]] *
+:[[SDL_JoystickClose]]
+:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
