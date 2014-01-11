@@ -50,10 +50,10 @@ int main(int argc, char *argv[])
         printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
     } else {
         SDL_WaitThread(thread, &threadReturnValue);
-        printf("\nThread returned value:%d", threadReturnValue);
+        printf("\nThread returned value: %d", threadReturnValue);
     }
 
-    return 1;
+    return 0;
 }
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
@@ -83,7 +83,7 @@ Thread counter: 6
 Thread counter: 7
 Thread counter: 8
 Thread counter: 9
-Thread returned value:10
+Thread returned value: 10
 ```
 
 == Remarks ==
