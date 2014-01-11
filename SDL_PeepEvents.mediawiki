@@ -69,13 +69,12 @@ If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of th
 
 {i} This function is thread-safe.
 
-*<br/>
-<span style="color: green;">Is the following true in 2.0?</span> You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().<br/>*
+<span style="color: green;">Is the following true in 2.0?</span> You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
 
 == Related Functions ==
-: [[SDL_PollEvent]] *
-: [[SDL_PumpEvents]] *
-: [[SDL_PushEvent]] *
+: [[SDL_PollEvent]]
+: [[SDL_PumpEvents]]
+: [[SDL_PushEvent]]
 
 ----
 [[CategoryAPI]], CategoryEvents
