@@ -188,7 +188,7 @@ SDL_QUIT is not limited to window closing. On Mac OS X, pressing Command-Q (the 
 [[SDL_Init]]() installs signal handlers for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
 
 === Android and iOS Events ===
-What we currently label as "Android and iOS events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent|SDL_PollEvent()]] loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
+What we currently label as "Android and iOS events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent]]() loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
 
 This is how these events currently map to the underlying OS:
 
