@@ -23,7 +23,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>The inverse of [[SDL_GetModState]](), [[SDL_SetModState]]() allows you to impose modifier key states on your application.  Simply pass your desired modifier states into '''modstate'''. This value may be a bitwise, OR'd combination of* ^[[SDL_Keymod]] values^.
+The inverse of [[SDL_GetModState]](), [[SDL_SetModState]]() allows you to impose modifier key states on your application.  Simply pass your desired modifier states into '''modstate'''. This value may be a bitwise, OR'd combination of [[SDL_Keymod]] values.
 
 This does not change the keyboard state, only the key modifier flags.
 
