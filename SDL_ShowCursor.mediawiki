@@ -18,7 +18,7 @@ int SDL_ShowCursor(int toggle)
 |}
 
 == Return Value ==
-Returns 1 if the cursor is shown, or 0 if the cursor is hidden, <span style="color: green;">or a negative error code on failure; call [[SDL_GetError]]() for more information</span>.
+Returns 1 if the cursor is shown, or 0 if the cursor is hidden, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -26,15 +26,15 @@ You can add your code example here
 ```
 
 == Remarks ==
-*<br/>The cursor starts off displayed but can be turned off.  Passing SDL_ENABLE displays the cursor and passing SDL_DISABLE hides it. 
+The cursor starts off displayed but can be turned off.  Passing SDL_ENABLE displays the cursor and passing SDL_DISABLE hides it. 
 
-The current state of the mouse cursor can be queried by passing SDL_QUERY; either SDL_DISABLE or SDL_ENABLE will be returned.<br/>*
+The current state of the mouse cursor can be queried by passing SDL_QUERY; either SDL_DISABLE or SDL_ENABLE will be returned.
 
 <span style="color: green;">The above has been rearranged from the original.  Do these apply in 2.0?</span>
 
 == Related Functions ==
-:[[SDL_CreateCursor]] *
-:[[SDL_SetCursor]] *
+:[[SDL_CreateCursor]]
+:[[SDL_SetCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
