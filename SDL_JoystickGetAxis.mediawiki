@@ -18,11 +18,11 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick* joystick,
 |an SDL_Joystick structure containing joystick information ???
 |-
 |'''axis'''
-|^the axis to query^; the axis indices start at index 0; see [[#Remarks|Remarks]] for details
+|the axis to query; the axis indices start at index 0; see [[#Remarks|Remarks]] for details
 |}
 
 == Return Value ==
-*<br/>Returns a 16-bit signed integer representing the current position of the axis ^or 0 on failure; call [[SDL_GetError]]() for more information^.<br/>*
+Returns a 16-bit signed integer representing the current position of the axis or 0 on failure; call [[SDL_GetError]]() for more information.
 
 The state is a value ranging from -32768 to 32767. <span style="color: green;">Is this the RV or a Remark?</span>
 
@@ -36,12 +36,12 @@ y_move = SDL_JoystickGetAxis(joy1, 1);
 ```
 
 == Remarks ==
-*<br/>On most modern joysticks the X axis is usually represented by '''axis''' 0 and the Y axis by '''axis''' 1. The value returned by [[SDL_JoystickGetAxis]]() is a signed integer (-32768 to 32767) representing the current position of the axis.  It may be necessary to impose certain tolerances on these values to account for jitter.
+On most modern joysticks the X axis is usually represented by '''axis''' 0 and the Y axis by '''axis''' 1. The value returned by [[SDL_JoystickGetAxis]]() is a signed integer (-32768 to 32767) representing the current position of the axis.  It may be necessary to impose certain tolerances on these values to account for jitter.
 
-Some joysticks use axes 2 and 3 for extra buttons.<br/>*
+Some joysticks use axes 2 and 3 for extra buttons.
 
 == Related Functions ==
-:[[SDL_JoystickNumAxes]] *
+:[[SDL_JoystickNumAxes]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
