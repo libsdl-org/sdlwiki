@@ -18,7 +18,7 @@ int SDL_JoystickNumBalls(SDL_Joystick* joystick)
 |}
 
 == Return Value ==
-Returns ^the number of trackballs^ on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the number of trackballs on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -29,8 +29,8 @@ You can add your code example here
 Joystick trackballs have only relative motion events associated with them and their state cannot be polled.
 
 == Related Functions ==
-:[[SDL_JoystickGetBall]] *
-:[[SDL_JoystickOpen]] *
+:[[SDL_JoystickGetBall]]
+:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
