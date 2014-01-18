@@ -31,9 +31,7 @@ You can add your code example here
 == Remarks ==
 If '''event''' is not NULL, the next event is removed from the queue and stored in the SDL_Event structure pointed to by '''event'''.
 
-As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
-
-As of SDL 2.0, this function does not put the application's process to sleep waiting for events; it polls for events in a loop internally. This may change in the future to improve power savings.
+As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that initialized the video subsystem.
 
 == Related Functions ==
 :[[SDL_PumpEvents]]
