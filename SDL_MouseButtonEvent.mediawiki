@@ -31,6 +31,10 @@ A structure that contains mouse button event information.
 |'''state'''
 |the state of the button; SDL_PRESSED or SDL_RELEASED
 |-
+|Uint8
+|'''clicks'''
+|1 for single-click, 2 for double-click, etc. (>= SDL 2.0.2)
+|-
 |Sint32
 |'''x'''
 |X coordinate, relative to window
