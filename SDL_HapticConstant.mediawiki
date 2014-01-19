@@ -84,6 +84,7 @@ You can add your code example here
 A constant effect applies a constant force <to the joystick< in the specified direction <<.
 
 == Related Functions ==
+:[[SDL_HapticNewEffect]]
 
 ----
 [[CategoryStruct]], [[CategoryForceFeedback]]
