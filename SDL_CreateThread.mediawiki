@@ -109,4 +109,4 @@ If a system imposes requirements, SDL will try to munge the string for it (trunc
 : [[SDL_WaitThread]]
 
 ----
-[[CategoryAPI]], !CategoryThread
+[[CategoryAPI]], [[CategoryThread]]
