@@ -1,3 +1,5 @@
+<!-- pragma camelcase off -->
+
 This page is intended to help focus the efforts of the SDL Documentation Wiki contributors.
 
 
