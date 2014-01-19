@@ -48,4 +48,4 @@ You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any changes.
 : [[SDL_UnlockTexture]]
 
 ----
-[[CategoryAPI]], !CategoryRender
+[[CategoryAPI]], [[CategoryRender]]
