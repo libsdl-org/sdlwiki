@@ -37,4 +37,4 @@ The names of drivers are all simple, low-ASCII identifiers, like "alsa", "coreau
 : [[SDL_GetNumAudioDrivers]]
 
 ----
-[[CategoryAPI]], CategoryAudio
+[[CategoryAPI]], [[CategoryAudio]]
