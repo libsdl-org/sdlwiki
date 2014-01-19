@@ -97,6 +97,7 @@ A custom force feedback effect is much like a periodic effect, where the applica
 If '''channels''' is 1, the effect is rotated using the defined direction. Otherwise it uses the samples in '''data''' for the different axes. 
 
 == Related Functions ==
+:[[SDL_HapticNewEffect]]
 
 ----
 [[CategoryStruct]], [[CategoryForceFeedback]]
