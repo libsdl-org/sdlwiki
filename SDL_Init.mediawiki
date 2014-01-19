@@ -26,18 +26,18 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 #include <stdio.h> /* for fprintf() */
 #include <stdlib.h> /* for atexit() */
 
-int main(int argv, char** argc)  {
+int main(int argv, char** argc) {
     if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
         fprintf(stderr, 
-                "\nUnable to initialize SDL:  %s\n", 
+                "\nUnable to initialize SDL:  %s\n",
                 SDL_GetError()
                );
         return 1;
     }
     atexit(SDL_Quit);
-  
+
     /* ... */
-  
+
     return 0;
 }
 ```
@@ -97,10 +97,10 @@ int main(int argc, char **argv) {
 
     catch (const InitError& err) {
         std::cerr
-            << "Error while initializing SDL:  " 
+            << "Error while initializing SDL:  "
             << err.what() << std::endl;
     }
-    
+
     return 1;
 }
 ```
@@ -139,7 +139,7 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |don't catch fatal signals
 |}
 
-Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).  
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
 
 If you want to initialize subsystems separately you would call [[SDL_Init]](0) followed by [[SDL_InitSubSystem]]() with the desired subsystem flag.
 
