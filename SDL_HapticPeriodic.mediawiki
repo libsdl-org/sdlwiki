@@ -152,7 +152,8 @@ press          |     |
 == Related Structures ==
 :[[SDL_HapticDirection]]
 
-<!-- #== Related Functions == -->
+== Related Functions ==
+:[[SDL_HapticNewEffect]]
 
 ----
 [[CategoryStruct]], [[CategoryForceFeedback]]
