@@ -101,6 +101,7 @@ You can add your code example here
 :[[SDL_HapticDirection]]
 
 == Related Functions ==
+:[[SDL_HapticNewEffect]]
 
 ----
 [[CategoryStruct]], [[CategoryForceFeedback]]
