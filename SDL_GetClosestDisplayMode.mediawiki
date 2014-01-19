@@ -33,7 +33,7 @@ Returns the passed in value '''closest''' or NULL if no matching video mode was 
 #include "SDL.h"
 #include <stdio.h>
 
-int main(int argc, char* argv[]){
+int main(int argc, char* argv[]) {
 
   // Declare structures to be filled in.
   SDL_DisplayMode target, closest;
@@ -50,7 +50,7 @@ int main(int argc, char* argv[]){
 
   // Pass the display mode structures by reference to SDL_GetClosestDisplay
   // and check whether the result is a null pointer.
-  if(SDL_GetClosestDisplayMode(0, &target, &closest)==NULL)
+  if (SDL_GetClosestDisplayMode(0, &target, &closest) == NULL)
 
     // If the returned pointer is null, no match was found.
     printf("\nNo suitable display mode was found!\n\n");
@@ -74,4 +74,4 @@ The available display modes are scanned and '''closest''' is filled in with the 
 : [[SDL_GetNumDisplayModes]]
 
 ----
-[[CategoryAPI]], !CategoryVideo
+[[CategoryAPI]], [[CategoryVideo]]
