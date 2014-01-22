@@ -24,6 +24,19 @@ SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id)
 |a system cursor enum value
 |}
 
+Valid ids are:
+* SDL_SYSTEM_CURSOR_ARROW
+* SDL_SYSTEM_CURSOR_IBEAM
+* SDL_SYSTEM_CURSOR_WAIT
+* SDL_SYSTEM_CURSOR_CROSSHAIR
+* SDL_SYSTEM_CURSOR_WAITARROW
+* SDL_SYSTEM_CURSOR_SIZENWSE
+* SDL_SYSTEM_CURSOR_SIZENESW
+* SDL_SYSTEM_CURSOR_SIZEWE
+* SDL_SYSTEM_CURSOR_SIZENS
+* SDL_SYSTEM_CURSOR_SIZEALL
+* SDL_SYSTEM_CURSOR_NO
+* SDL_SYSTEM_CURSOR_HAND
 
 == Return Value ==
 Returns a cursor on success or NULL on failure; call [[SDL_GetError]]() for more information.
@@ -31,10 +44,10 @@ Returns a cursor on success or NULL on failure; call [[SDL_GetError]]() for more
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Cursor* cursor;
+cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
+SDL_SetCursor(cursor);
 ```
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 
 == Remarks ==
