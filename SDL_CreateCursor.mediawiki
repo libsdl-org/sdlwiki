@@ -5,6 +5,8 @@
 = SDL_CreateCursor =
 Use this function to create a cursor using the specified bitmap data and mask (in MSB format).
 
+Note that, since SDL 2.0.0, [[SDL_CreateSystemCursor]] is available, which provides twelve readily available system cursors to pick from.
+
 
 == Syntax ==
 ```c++
