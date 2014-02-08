@@ -33,6 +33,7 @@ You can add your code example here
 <<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+:[[SDL_GL_ResetAttributes]]
 :[[SDL_GL_SetAttribute]]
 
 ----
