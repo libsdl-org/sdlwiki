@@ -1,0 +1,52 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetAssertionHandler =
+Use this function to get the current assertion handler.
+
+
+
+
+== Syntax ==
+```c++
+SDL_AssertionHandler SDL_GetAssertionHandler(void** puserdata)
+```
+
+
+== Function Parameters ==
+{|
+|'''puserdata'''
+|pointer which is filled with the "userdata" pointer that was passed to [[SDL_SetAssertionHandler]](); see [[#Remarks|Remarks]] for details
+|}
+
+
+== Return Value ==
+Returns the SDL_AssertionHandler that is called when an assert triggers.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This returns the function pointer that is called when an assertion is triggered. This is either the value last passed to [[SDL_SetAssertionHandler]](), or if no application-specified function is set, is equivalent to calling [[SDL_GetDefaultAssertionHandler]]().
+
+The parameter '''puserdata''' Pointer to a void*, which will store the "userdata" pointer that was passed to [[SDL_SetAssertionHandler]](). This value will always be NULL for the default handler. If you don't care about this data, it is safe to pass a NULL pointer to this function to ignore it.
+
+== Version ==
+This function is available since SDL 2.0.2.
+
+== Related Functions ==
+:[[SDL_SetAssertionHandler]]
+
+----
+[[CategoryAPI]], [[CategoryAssertions]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
