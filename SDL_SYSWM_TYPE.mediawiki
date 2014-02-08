@@ -24,6 +24,12 @@ An enumeration of the various supported windowing subsystems.
 |-
 |SDL_SYSWM_UIKIT
 |Apple iOS
+|-
+|SDL_SYSWM_WAYLAND
+|Wayland (>= SDL 2.0.2)
+|-
+|SDL_SYSWM_MIR
+|Mir (>= SDL 2.0.2)
 |}
 
 == Code Examples ==
