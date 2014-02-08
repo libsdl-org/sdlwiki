@@ -24,6 +24,7 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_Has3DNow]]
 :[[SDL_HasAltiVec]]
+:[[SDL_HasAVX]]
 :[[SDL_HasRDTSC]]
 :[[SDL_HasSSE]]
 :[[SDL_HasSSE2]]
