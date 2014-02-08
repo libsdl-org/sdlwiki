@@ -43,5 +43,8 @@ This callback may fire from any thread, but it runs wrapped in a mutex, so it wi
 
 This callback is NOT reset to SDL's internal handler upon [[SDL_Quit]]()!
 
+== Related Functions ==
+:[[SDL_GetAssertionHandler]]
+
 ----
 [[CategoryAPI]], [[CategoryAssertions]]
