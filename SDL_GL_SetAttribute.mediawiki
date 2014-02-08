@@ -59,6 +59,7 @@ This function sets the OpenGL attribute '''attr''' to '''value'''. The requested
 <<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+:[[SDL_GL_ResetAttributes]]
 :[[SDL_GL_GetAttribute]]
 
 ----
