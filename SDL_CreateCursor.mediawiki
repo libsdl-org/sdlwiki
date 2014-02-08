@@ -101,9 +101,9 @@ static SDL_Cursor *init_system_cursor(const char *image[])
   int hot_x, hot_y;
 
   i = -1;
-  for ( row=0; row<32; ++row ) {
-    for ( col=0; col<32; ++col ) {
-      if ( col % 8 ) {
+  for (row=0; row<32; ++row) {
+    for (col=0; col<32; ++col) {
+      if (col % 8) {
         data[i] <<= 1;
         mask[i] <<= 1;
       } else {
