@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
+<!-- pragma camelcase off -->
 
 = SDL_SysWMinfo =
 A structure that contains system-dependent information about a window.
@@ -74,6 +74,34 @@ A structure that contains system-dependent information about a window.
 |UIWindow*
 |'''uikit.window'''
 |the UIKit window
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)
+|-
+|wl_display*
+|'''display'''
+|the Wayland display
+|-
+|wl_surface*
+|'''surface'''
+|the Wayland surface
+|-
+|wl_shell_surface*
+|'''shell_surface'''
+|the Wayland shell_surface (window manager handle)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
+|-
+|MirConnection*
+|'''connection'''
+|the Mir display server connection
+|-
+|MirSurface*
+|'''surface'''
+|the Mir surface
 |}
 
 == Code Examples ==
