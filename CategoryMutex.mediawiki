@@ -17,6 +17,8 @@ There are 3 primitives available in SDL:
 * Semaphore
 * Condition Variable
 
+The SDL mutex is implemented as a recursive mutex so you can nest lock and unlock calls to the same mutex.
+
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
