@@ -7,7 +7,6 @@
 == Translations ==
 
 * Une traduction de cette page par Developpez.com est disponible [http://jeux.developpez.com/tutoriels/sdl-2/guide-migration/ ici].
-* Er is een [[Migratiehandleiding|Nederlandse vertaling]] van deze pagina beschikbaar.
 * If you want to translate this page to other languages, let Ryan know: icculus@icculus.org
 
 == Introduction ==
