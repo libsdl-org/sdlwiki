@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS =
+An hint that specifies if a SDL_Window is minimized if it loses key focus when in fullscreen mode.
+
+
+
+
+== Values ==
+{|
+|0
+|do not minimize SDL_Window if it loses key focus when in fullscreen mode
+|-
+|1
+|do minimize the SDL_Window if it loses key focus when in fullscreen mode
+|}
+
+<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
+
+
+== Default ==
+By default a SDL_Window is minimized if it loses key focus when in fullscreen mode.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
