@@ -21,19 +21,19 @@ int SDL_CreateWindowAndRenderer(int            width,
 == Function Parameters ==
 {|
 |'''width'''
-|The width of the window
+|the width of the window
 |-
 |'''height'''
-|The height of the window
+|the height of the window
 |-
 |'''window_flags'''
-|The flags used to create the window (see [[SDL_CreateWindow]]())
+|the flags used to create the window (see [[SDL_CreateWindow]]())
 |-
 |'''window'''
-|A pointer filled with the window, or NULL on error
+|a pointer filled with the window, or NULL on error
 |-
 |'''renderer'''
-|A pointer filled with the renderer, or NULL on error
+|a pointer filled with the renderer, or NULL on error
 |}
 
 
