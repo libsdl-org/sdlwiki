@@ -31,7 +31,7 @@ You can add your code example here
 <!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
-This function is available since in SDL 2.0.2.
+This function is available since SDL 2.0.2.
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
