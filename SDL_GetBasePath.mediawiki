@@ -50,15 +50,15 @@ Supported values for the SDL_FILESYSTEM_BASE_DIR_TYPE property (Given an applica
 |''Example returned path''
 |-
 |'''resource'''
-|The bundle resource directory (the default)
+|the bundle resource directory (the default)
 |/Applications/SDLApp/MyApp.app/Contents/Resources
 |-
 |'''bundle'''
-|The Bundle directory
+|the Bundle directory
 |/Applications/SDLApp/MyApp.app/
 |-
 |'''parent'''
-|The containing directory of the bundle
+|the containing directory of the bundle
 |/Applications/SDLApp/
 |}
 
