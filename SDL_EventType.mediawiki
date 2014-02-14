@@ -158,6 +158,12 @@ An enumeration of the types of events that can be delivered.
 |the system requests a file open
 |-
 |
+|<bgcolor="#EDEDED">''Render events''
+|-
+|SDL_RENDER_TARGETS_RESET
+|the render targets have been reset (>= SDL 2.0.2)
+|-
+|
 |<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
 |-
 |SDL_USEREVENT
