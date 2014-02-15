@@ -30,7 +30,7 @@ You can add your code example here
 
 == Remarks ==
 The surface is not modified or freed by this function. 
-The access hint for the created texture is SDL_TEXTUREACCESS_STATIC.
+The [[SDL_TextureAccess]] hint for the created texture is SDL_TEXTUREACCESS_STATIC.
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
