@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_JOYSTICK_ALLOW_BACKGROUND_EVENTS =
+A hint that specifies if joystick (and gamecontroller) events are enabled even when the application is in the background.
+
+
+
+
+== Values ==
+{|
+|0
+|disable joystick & gamecontroller input events when the application is in the background
+|-
+|1
+|enable joystick & gamecontroller input events when the application is in the background
+|}
+
+
+== Default ==
+By default joystick (and gamecontroller) events are not enabled when the application is in the background.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint may be set at any time.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
