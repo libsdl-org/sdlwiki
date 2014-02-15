@@ -188,6 +188,10 @@ An [[SDL_PixelFormat]] describes the format of the pixel data stored at the <cod
 
 If you wish to do pixel level modifications on a surface, then understanding how SDL stores its color information is essential.  See [[#Code Examples|Code Examples]] above for more information.
 
+For information on modern pixel colorspaces, see the following wikipedia article:
+http://en.wikipedia.org/wiki/RGBA_color_space
+
+
 == Related Structures ==
 :[[SDL_Surface]]
 
