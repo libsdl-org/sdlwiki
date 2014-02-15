@@ -1,0 +1,48 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_WIN_D3DCOMPILER =
+A hint that specifies which shader compiler to preload when using the Chrome ANGLE binaries.
+
+
+
+
+== Values ==
+{|
+|d3dcompiler_46.dll
+|default, best for Vista or later
+|-
+|d3dcompiler_43.dll
+|for XP support
+|-
+|none
+|do not load any library, useful if you compiled ANGLE from source and included the compiler in your binaries
+|}
+
+
+== Default ==
+By default "d3dcompiler_46.dll" will be used.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+SDL has EGL and OpenGL ES2 support on Windows via the ANGLE project. It can use two different sets of binaries, those compiled by the user from source or those provided by the Chrome browser. In the later case, these binaries require that SDL loads a DLL providing the shader compiler.
+
+
+== Version ==
+This hint is available since SDL 2.0.2.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
