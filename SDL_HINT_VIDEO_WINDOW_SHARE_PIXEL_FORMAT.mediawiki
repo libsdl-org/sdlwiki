@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT =
+A hint that specifies the address of another SDL_Window* (as a hex string formatted with "%p").
+
+
+
+
+== Values ==
+{|
+|X
+|the address (as a string "%p") of the SDL_Window* that new windows created with [[SDL_CreateWindowFrom]]() should share a pixel format with
+|}
+
+
+== Default ==
+By default this hint is not set.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+If this hint is set before [[SDL_CreateWindowFrom]]() and the SDL_Window* it is set to has SDL_WINDOW_OPENGL set (and running on WGL only, currently), then two things will occur on the newly created SDL_Window:
+
+ 1. Its pixel format will be set to the same pixel format as this SDL_Window.  This is needed for example when sharing an OpenGL context across multiple windows.
+
+ 1. The flag SDL_WINDOW_OPENGL will be set on the new window so it can be used for OpenGL rendering.
+
+
+== Version ==
+This hint is available since SDL 2.0.2.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
