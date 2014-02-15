@@ -6,7 +6,7 @@
 
 
 = SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS =
-An hint that specifies if a SDL_Window is minimized if it loses key focus when in fullscreen mode.
+A hint that specifies if a SDL_Window is minimized if it loses key focus when in fullscreen mode.
 
 
 
@@ -19,8 +19,6 @@ An hint that specifies if a SDL_Window is minimized if it loses key focus when i
 |1
 |do minimize the SDL_Window if it loses key focus when in fullscreen mode
 |}
-
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
 
 
 == Default ==
