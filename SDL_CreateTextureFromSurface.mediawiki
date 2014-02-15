@@ -32,6 +32,7 @@ You can add your code example here
 The surface is not modified or freed by this function.
 
 == Related Functions ==
+:[[SDL_CreateTexture]]
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
 
