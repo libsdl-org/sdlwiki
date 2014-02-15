@@ -1,0 +1,40 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_GAMECONTROLLERCONFIG =
+A hint that specifies extra gamecontroller db entries.
+
+
+
+
+== Values ==
+{|
+|X
+|a newline delimited rows of gamecontroller config data, see SDL_gamecontroller.h
+|}
+
+
+== Default ==
+By default no extra gamecontroller db entries are specified.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint must be set before calling [[SDL_Init]](SDL_INIT_GAMECONTROLLER).
+
+You can update mappings after the system is initialized with [[SDL_GameControllerMappingForGUID]]() and [[SDL_GameControllerAddMapping]]().
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
