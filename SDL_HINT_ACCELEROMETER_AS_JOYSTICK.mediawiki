@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_ACCEL_AS_JOY =
+A hint that specifies whether an Android built-in accelerometer should be listed as a joystick device, rather than listing actual joysticks only.
+
+
+
+
+== Values ==
+{|
+|0
+|list only real joysticks and accept input from them
+|-
+|1
+|list real joysticks along with the accelerometer as if it were a 3 axis joystick (the default)
+|}
+
+
+== Default ==
+By default SDL will list real joysticks along with the accelerometer as if it were a 3 axis joystick.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This hint is available since SDL 2.0.2.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
