@@ -31,6 +31,9 @@ You can add your code example here
 == Remarks ==
 '''blendMode''' may be one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
+To copy a surface to another surface (or texture) without blending with the existing data, the blendmode of the SOURCE surface should be set to 'SDL_BLENDMODE_NONE'.
+
+
 == Related Functions ==
 :[[SDL_GetSurfaceBlendMode]]
 
