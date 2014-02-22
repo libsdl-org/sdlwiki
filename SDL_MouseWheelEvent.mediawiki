@@ -25,11 +25,11 @@ A structure that contains mouse wheel event information.
 |-
 |Sint32
 |'''x'''
-|the amount scrolled horizontally
+|the amount scrolled horizontally, positive to the right and negative to the left
 |-
 |Sint32
 |'''y'''
-|the amount scrolled vertically
+|the amount scrolled vertically, positive away from the user and negative toward the user
 |}
 
 == Code Examples ==
