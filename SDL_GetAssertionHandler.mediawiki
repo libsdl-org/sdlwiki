@@ -39,7 +39,7 @@ You can add your code example here
 == Remarks ==
 This returns the function pointer that is called when an assertion is triggered. This is either the value last passed to [[SDL_SetAssertionHandler]](), or if no application-specified function is set, is equivalent to calling [[SDL_GetDefaultAssertionHandler]]().
 
-The parameter '''puserdata''' Pointer to a void*, which will store the "userdata" pointer that was passed to [[SDL_SetAssertionHandler]](). This value will always be NULL for the default handler. If you don't care about this data, it is safe to pass a NULL pointer to this function to ignore it.
+The parameter '''puserdata''' is a pointer to a void*, which will store the "userdata" pointer that was passed to [[SDL_SetAssertionHandler]](). This value will always be NULL for the default handler. If you don't care about this data, it is safe to pass a NULL pointer to this function to ignore it.
 
 == Version ==
 This function is available since SDL 2.0.2.
