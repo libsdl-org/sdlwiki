@@ -9,31 +9,31 @@ A structure that provides an abstract interface to stream I/O. Applications can 
 {|
 |Sint64 (*)(SDL_RWops *)
 |'''size'''
-|Callback that reports stream size; see [[#Size Function|Remarks]]
+|callback that reports stream size; see [[#Size Function|Remarks]]
 |-
 |Sint64 (*)(SDL_RWops *, Sint64, int)
 |'''seek'''
-|Callback that seeks in stream; see [[#Seek Function|Remarks]]
+|callback that seeks in stream; see [[#Seek Function|Remarks]]
 |-
 |size_t (*)(SDL_RWops *, void *, size_t, size_t)
 |'''read'''
-|Callback that reads from the stream; see [[#Read Function|Remarks]]
+|callback that reads from the stream; see [[#Read Function|Remarks]]
 |-
 |size_t (*)(SDL_RWops *, const void *, size_t, size_t)
 |'''write'''
-|Callback that writes to the stream; see [[#Write Function|Remarks]]
+|callback that writes to the stream; see [[#Write Function|Remarks]]
 |-
 |int (*)(SDL_RWops *)
 |'''close'''
-|Callback that closes the stream; see [[#Close Function|Remarks]]
+|callback that closes the stream; see [[#Close Function|Remarks]]
 |-
 |Uint32
 |'''type'''
-|Type of stream; see [[#Stream Type|Remarks]]
+|type of stream; see [[#Stream Type|Remarks]]
 |-
 |union
 |'''hidden'''
-|Type-specific data; see [[#Hidden Union|Remarks]]
+|type-specific data; see [[#Hidden Union|Remarks]]
 |}
 
 
