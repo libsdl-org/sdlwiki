@@ -1,3 +1,4 @@
+<!-- # page was renamed from SDL_GameControllerAddMappingsFromFile -->
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 '''DRAFT'''
