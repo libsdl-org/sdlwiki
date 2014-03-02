@@ -1,3 +1,4 @@
+<!-- # page was renamed from SDL_HINT_ACCEL_AS_JOY -->
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
