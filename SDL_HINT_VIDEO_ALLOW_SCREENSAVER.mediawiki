@@ -1,0 +1,48 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_ALLOW_SCREENSAVER =
+A hint that specifies whether the screensaver is enabled.
+
+
+
+
+== Values ==
+{|
+|0
+|disable screensaver
+|-
+|1
+|enable screensaver
+|}
+
+== Default ==
+By default SDL will disable the screensaver.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Version ==
+This hint is available since SDL 2.0.2.
+
+----
+[[CategoryEnum]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
