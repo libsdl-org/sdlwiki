@@ -5,7 +5,7 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
 
 
-= SDL_HINT_ACCEL_AS_JOY =
+= SDL_HINT_ACCELEROMETER_AS_JOYSTICK =
 A hint that specifies whether an Android built-in accelerometer should be listed as a joystick device, rather than listing actual joysticks only.
 
 
