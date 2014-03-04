@@ -11,7 +11,7 @@ char* SDL_GetBasePath(void)
 ```
 
 == Return Value ==
-Returns the an absolute path in UTF-8 encoding to the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
+Returns an absolute path in UTF-8 encoding to the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
 
 The return path will be guaranteed to end with a path separator ('\' on Windows, '/' on most other platforms)
 
