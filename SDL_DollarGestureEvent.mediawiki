@@ -61,8 +61,5 @@ You can add your code example here
 :[[SDL_Event]]
 :[[SDL_MultiGestureEvent]]
 
-== Related Functions ==
-:[[SDL_FunctionLeaveSectionIfEmpty]]
-
 ----
 [[CategoryStruct]], [[CategoryEvents]]
