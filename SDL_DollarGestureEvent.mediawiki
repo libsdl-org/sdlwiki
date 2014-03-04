@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_DollarGestureEvent =
-A structure that contains ^complex gesture event information^???.
+A structure that contains complex gesture event information.
 
 
 == Data Fields ==
