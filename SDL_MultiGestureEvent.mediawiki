@@ -18,27 +18,27 @@ A structure that contains multiple finger gesture event information.
 |-
 |SDL_TouchID
 |'''touchId'''
-|the touch device index
+|the touch device id
 |-
 |float
 |'''dTheta'''
-|description
+|the amount that the fingers rotated during this motion
 |-
 |float
 |'''dDist'''
-|description
+|the amount that the fingers pinched during this motion
 |-
 |float
 |'''x'''
-|description
+|the normalized center of gesture
 |-
 |float
 |'''y'''
-|description
+|the normalized center of gesture
 |-
 |Uint16
 |'''numFingers'''
-|description
+|the number of fingers used in the gesture
 |}
 
 == Code Examples ==
