@@ -47,7 +47,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_MultiGestureEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MULTIGESTURE is reported. You would access it through the event's <code>mgesture</code> field. 
+[[SDL_MultiGestureEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MULTIGESTURE is reported. You would access it through the event's <code>mgesture</code> field.
+
+For more information see: [http://hg.libsdl.org/SDL/file/default/README-gesture.txt README-gesture.txt]
 
 == Related Enumerations ==
 :[[SDL_EventType]]
