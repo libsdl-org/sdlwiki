@@ -56,7 +56,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The SDL_WINDOW_OPENGL flag prepares your window for use with OpenGL, but you will still need to create an OpenGL context using [[SDL_GL_CreateContext]] after window creation, before calling any OpenGL functions.
+The SDL_WINDOW_OPENGL flag prepares your window for use with OpenGL, but you will still need to create an OpenGL context using [[SDL_GL_CreateContext]]() after window creation, before calling any OpenGL functions.
 
 == Related Functions ==
 :[[SDL_CreateWindow]]
