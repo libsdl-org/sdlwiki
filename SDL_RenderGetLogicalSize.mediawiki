@@ -42,7 +42,7 @@ You can add your code example here
 
 
 == Remarks ==
-If this function is called on an SDL_Renderer who never had it's logical size set by [[SDL_RenderSetLogicalSize]], this function sets both 'w' and 'h' to 0.
+If this function is called on an SDL_Renderer who never had its logical size set by [[SDL_RenderSetLogicalSize]](), this function sets both '''w''' and '''h''' to 0.
 
 == Version ==
 This function is available since SDL 2.0.0.
