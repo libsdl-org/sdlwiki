@@ -22,23 +22,23 @@ A structure that contains complex gesture event information.
 |-
 |SDL_GestureID
 |'''gestureId'''
-|description
+|the unique id of the closest gesture to the performed stroke
 |-
 |Uint32
 |'''numFingers'''
-|description
+|the number of fingers used to draw the stroke
 |-
 |float
 |'''error'''
-|description
+|the difference between the gesture template and the actual performed gesture (lower error is a better match)
 |-
 |float
 |'''x'''
-|normalized center of gesture
+|the normalized center of gesture
 |-
 |float
 |'''y'''
-|normalized center of gesture
+|the normalized center of gesture
 |}
 
 <span style="color: green;">Note that SDL_GestureID is not defined in this header.</span>
