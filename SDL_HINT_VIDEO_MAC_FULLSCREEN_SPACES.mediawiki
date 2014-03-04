@@ -1,3 +1,4 @@
+<!-- # page was renamed from SDL_HINT_VIDEO_FULLSCREEN_SPACES -->
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
