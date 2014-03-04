@@ -6,8 +6,8 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
 
 
-= SDL_HINT_VIDEO_FULLSCREEN_SPACES =
-A hint that specifies whether windows go fullscreen in their own spaces on Mac OS X.
+= SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES =
+A hint that dictates policy for fullscreen Spaces on Mac OS X.
 
 
 
@@ -15,15 +15,15 @@ A hint that specifies whether windows go fullscreen in their own spaces on Mac O
 == Values ==
 {|
 |0
-|fullscreen windows will use classic fullscreen mode
+|disable Spaces support (FULLSCREEN_DESKTOP won't use them and SDL_WINDOW_RESIZABLE windows won't offer the "fullscreen" button on their titlebars)
 |-
 |1
-|fullscreen windows will use fullscreen spaces
+|enable Spaces support (FULLSCREEN_DESKTOP will use them and SDL_WINDOW_RESIZABLE windows will offer the "fullscreen" button on their titlebars)
 |}
 
 
 == Default ==
-By default SDL will use the classic fullscreen mode.
+By default Spaces support is enabled.
 
 
 == Code Examples ==
@@ -35,9 +35,9 @@ You can add your code example here
 
 
 == Remarks ==
-''You can add useful comments here''
+This hint only applies to Mac OS X.
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+Spaces are disabled regardless of this hint if the OS isn't at least Mac OS X Lion (10.7). This hint must be set before any windows are created.
 
 == Version ==
 This hint is available since SDL 2.0.2.
