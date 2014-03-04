@@ -56,8 +56,5 @@ You can add your code example here
 :[[SDL_DollarGestureEvent]]
 :[[SDL_Event]]
 
-== Related Functions ==
-
-
 ----
 [[CategoryStruct]], [[CategoryEvents]]
