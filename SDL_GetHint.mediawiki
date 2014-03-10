@@ -13,7 +13,7 @@ const char* SDL_GetHint(const char* name)
 == Function Parameters ==
 {|
 |'''name'''
-|the hint to query; see the list of hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
+|the hint to query; see the list of hints on [[CategoryHints#Hints|CategoryHints]] for details
 |}
 
 == Return Value ==
