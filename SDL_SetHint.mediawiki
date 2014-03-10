@@ -14,7 +14,7 @@ SDL_bool SDL_SetHint(const char* name,
 == Function Parameters ==
 {|
 |'''name'''
-|the hint to set; see the list of hints on [http://wiki.libsdl.org/moin.cgi/CategoryHints#Hints CategoryHints] for details
+|the hint to set; see the list of hints on [[CategoryHints#Hints|CategoryHints]] for details
 |-
 |'''value'''
 |the value of the hint variable
