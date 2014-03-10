@@ -14,7 +14,7 @@ Event handling allows your application to receive input from the user. Event han
  ```
 SDL_Init(SDL_INIT_VIDEO);
 ```
- (''see'' [http://wiki.libsdl.org/moin.cgi/CategoryInit Initialization & Shutdown] and [[SDL_Init]]() ''for details'')
+ (''see'' [[CategoryInit|Initialization & Shutdown]] and [[SDL_Init]]() ''for details'')
 
 Internally, SDL stores all the events waiting to be handled in an event queue.  Using functions like [[SDL_PollEvent]](), [[SDL_PeepEvents]]() and [[SDL_WaitEvent]]() you can observe and handle waiting input events.
 
