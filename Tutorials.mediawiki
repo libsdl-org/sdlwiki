@@ -63,4 +63,4 @@ There are a number of SDL tutorials available from different sources.
 : A good discussion of condition variables, in computer science rather than gaming context. Some mention of mutex and semaphore use.
 
 == SDL 1.2 ==
-: [http://wiki.libsdl.org/moin.cgi/SDL1.2Tutorials SDL 1.2 Tutorials]
+: [[SDL1.2Tutorials|SDL 1.2 Tutorials]]
