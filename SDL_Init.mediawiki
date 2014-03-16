@@ -144,10 +144,10 @@ Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal hand
 If you want to initialize subsystems separately you would call [[SDL_Init]](0) followed by [[SDL_InitSubSystem]]() with the desired subsystem flag.
 
 == Related Functions ==
-:[[SDL_InitSubSystem]] 
-:[[SDL_Quit]] 
-:[[SDL_WasInit]] 
-:[[SDL_SetMainReady]] 
+:[[SDL_InitSubSystem]]
+:[[SDL_Quit]]
+:[[SDL_WasInit]]
+:[[SDL_SetMainReady]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
