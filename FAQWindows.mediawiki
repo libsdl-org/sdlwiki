@@ -67,7 +67,7 @@ Choose "gui application" instead of "console application" when compiling for Vis
 
 === MinGW/MYSYS ===
 ==== How do I use SDL with MinGW/MYSYS? ====
-See the [http://wiki.libsdl.org/moin.cgi/SDL1.2Tutorials#Setup SDL and MYSYS/MinGW] Tutorial
+See the [[SDL1.2Tutorials#Setup|SDL and MYSYS/MinGW]] Tutorial
 
 === Miscellaneous ===
 ==== I get "Undefined reference to 'SDL_main'" ... ====
