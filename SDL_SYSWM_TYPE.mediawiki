@@ -30,6 +30,9 @@ An enumeration of the various supported windowing subsystems.
 |-
 |SDL_SYSWM_MIR
 |Mir (>= SDL 2.0.2)
+|-
+|SDL_SYSWM_WINRT
+|WinRT (>= SDL 2.0.3)
 |}
 
 == Code Examples ==
