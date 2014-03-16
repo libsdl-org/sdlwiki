@@ -44,4 +44,4 @@ If you have a project that you feel is ready for the general public, you can add
  1. Fill in the form and click Submit at the bottom
 
 == What's up with SDL 2.0? Can I help? ==
-SDL 2.0 is in development. You can download a PRERELEASE version of the code from the SDL Mercurial page (http://www.libsdl.org/hg.php) and provide feedback on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org Development mailing list].<br/>If you want to contribute to the wiki check out the [http://wiki.libsdl.org/moin.cgi/Contributing Contributing] page.
+SDL 2.0 is in development. You can download a PRERELEASE version of the code from the SDL Mercurial page (http://www.libsdl.org/hg.php) and provide feedback on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org Development mailing list].<br/>If you want to contribute to the wiki check out the [[Contributing]] page.
