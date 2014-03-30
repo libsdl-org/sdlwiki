@@ -42,7 +42,7 @@ You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting w
 
 This is the public blit function, and it performs rectangle validation and clipping before passing it to [[SDL_LowerBlit]]().
 
-The blit function should not be called on a locked surface.  
+The blit function should not be called on a locked surface.
 
 The width and height in '''srcrect''' determine the size of the copied rectangle. Only the position is used in the '''dstrect''' (the width and height are ignored). Blits with negative '''dstrect''' coordinates will be clipped properly.
 
