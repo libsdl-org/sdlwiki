@@ -26,7 +26,7 @@ Fills the selected struct with:
 <<Include(SDL_GetVersion, , , from="== Code Examples ==", to="== Remarks")>>
 
 == Remarks ==
-This macro fills in an [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]]() which, unlike [[SDL_VERSION]](), is not a macro.  
+This macro fills in an [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]]() which, unlike [[SDL_VERSION]](), is not a macro.
 
 == Related Structures ==
 :[[SDL_version]]
