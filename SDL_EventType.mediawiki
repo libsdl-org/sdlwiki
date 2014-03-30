@@ -161,7 +161,10 @@ An enumeration of the types of events that can be delivered.
 |<bgcolor="#EDEDED">''Render events''
 |-
 |SDL_RENDER_TARGETS_RESET
-|the render targets have been reset (>= SDL 2.0.2)
+|the render targets have been reset and their contents need to be updated (>= SDL 2.0.2)
+|-
+|SDL_RENDER_DEVICE_RESET
+|the device has been reset and all textures need to be recreated (>= SDL 2.0.4)
 |-
 |
 |<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
