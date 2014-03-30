@@ -34,7 +34,7 @@ You can add your code example here
 
 
 == Remarks ==
-The mapping string has the format "GUID,name,mapping", where GUID is the string value from SDL_JoystickGetGUIDString(), name is the human readable string for the device and mappings are controller mappings to joystick ones.  Under Windows there is a reserved GUID of "xinput" that covers all XInput devices.  The mapping format for joystick is:
+The mapping string has the format "GUID,name,mapping", where GUID is the string value from [[SDL_JoystickGetGUIDString]](), name is the human readable string for the device and mappings are controller mappings to joystick ones.  Under Windows there is a reserved GUID of "xinput" that covers all XInput devices.  The mapping format for joystick is:
 {|
 |bX
 |a joystick button, index X
