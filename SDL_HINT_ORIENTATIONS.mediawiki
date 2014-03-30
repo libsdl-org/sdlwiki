@@ -33,7 +33,7 @@ You can add your code example here
 == Remarks ==
 In some circumstances it is necessary to be able to explicitly control which UI orientations are allowed.
 
-This variable is a space delimited list of the above values.  
+This variable is a space delimited list of the above values.
 
 ```#!wiki comment
 Could this statement be reworded to be more clear esp. for non-English speakers?  Maybe - These values may be combined by using a space between them. Or - Separate multiple values by a space.
