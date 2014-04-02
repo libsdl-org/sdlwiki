@@ -42,8 +42,6 @@ When this texture is rendered, during the copy operation each source color chann
 
 Color modulation is not always supported by the renderer; it will return -1 if color modulation is not supported.
 
-You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer.  This structure will have SDL_TEXTUREMODULATE_COLOR set in the <code>mod_modes</code> mask if color modulation is supported.
-
 == Related Functions ==
 :[[SDL_GetTextureColorMod]]
 :[[SDL_SetTextureAlphaMod]]
