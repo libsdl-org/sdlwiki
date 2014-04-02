@@ -34,8 +34,6 @@ You can add your code example here
 
 If the blend mode is not supported, the closest supported mode is chosen and this function returns -1. 
 
-You can call [[SDL_GetRendererInfo]]() to fill in an [[SDL_RendererInfo]] structure with the information about the current renderer. This structure will have a mask of supported [[SDL_BlendMode]] values in the <code>blend_modes</code> member.
-
 == Related Functions ==
 :[[SDL_GetTextureBlendMode]]
 :[[SDL_RenderCopy]]
