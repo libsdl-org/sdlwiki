@@ -12,6 +12,9 @@ An enumeration of texture access patterns.
 |-
 |SDL_TEXTUREACCESS_STREAMING
 |changes frequently, lockable
+|-
+|SDL_TEXTUREACCESS_TARGET
+|can be used as a render target
 |}
 
 == Code Examples ==
