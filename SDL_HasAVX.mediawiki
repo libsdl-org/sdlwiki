@@ -5,7 +5,7 @@
 
 
 = SDL_HasAVX =
-Use this function to to determine whether the CPU has AVX features.
+Use this function to determine whether the CPU has AVX features.
 
 
 
