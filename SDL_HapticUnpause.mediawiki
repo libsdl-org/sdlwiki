@@ -14,9 +14,8 @@ int SDL_HapticUnpause(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to unpause
+|the SDL_Haptic device to unpause
 |}
-<span style="color: green;">Line 1097 - the header says pause instead of unpause</span>
 
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
