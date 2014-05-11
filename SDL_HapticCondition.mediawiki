@@ -16,7 +16,7 @@ A structure that contains a template for a condition effect.
 |'''type'''
 |one of the effects handled by this structure; see [[#type|Remarks]] for details
 |-
-|<style="color: #808080;">SDL_HapticDirection
+|<style="color: #808080;">[[SDL_HapticDirection]]
 |<style="color: #808080;">'''direction'''
 |<style="color: #808080;">direction of the effect - not used at the moment; see [[#direction|Remarks]] for details
 |-
