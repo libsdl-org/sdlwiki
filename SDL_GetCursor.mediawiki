@@ -12,9 +12,7 @@ SDL_Cursor* SDL_GetCursor(void)
 ```
 
 == Return Value ==
-Returns the active cursor ^or NULL if there is no mouse^.
-
-<span style="color: green;">Call for error?</span>
+Returns the active cursor or NULL if there is no mouse.
 
 == Code Examples ==
 ```c++
@@ -22,12 +20,10 @@ You can add your code example here
 ```
 
 == Remarks ==
-This function returns a pointer to the current cursor which is owned by the library.  It is not necessary to free the cursor with [[SDL_FreeCursor]]()
-
-''You can add useful comments here''
+This function returns a pointer to the current cursor which is owned by the library.  It is not necessary to free the cursor with [[SDL_FreeCursor]]().
 
 == Related Functions ==
-:[[SDL_SetCursor]]???
+:[[SDL_SetCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
