@@ -81,7 +81,7 @@ For 2D graphics, SDL 1.2 offered a concept called "surfaces," which were memory 
 
 If you have a 2D game, chances are you've taken one of three approaches to rendering. We'll go through them all, but first, let's talk about introductory stuff.
 
-Remember SDL_SetVideoMode()? It's completely gone. SDL 2.0 allows you to have multiple windows, so the old function didn't make sense any more.
+Remember <code>SDL_SetVideoMode()</code>? It's completely gone. SDL 2.0 allows you to have multiple windows, so the old function didn't make sense any more.
 
 So you might have had something like this:
 
