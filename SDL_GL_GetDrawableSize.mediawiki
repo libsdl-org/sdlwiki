@@ -22,13 +22,13 @@ void SDL_GL_GetDrawableSize(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the Window from which the drawable size should be queried
+|the window from which the drawable size should be queried
 |-
 |'''w'''
-|a Pointer to variable for storing the width, may be NULL
+|a pointer to variable for storing the width, may be NULL
 |-
 |'''h'''
-|a Pointer to variable for storing the height, may be NULL
+|a pointer to variable for storing the height, may be NULL
 |}
 
 
@@ -42,7 +42,7 @@ You can add your code example here
 
 == Remarks ==
 
-This may differ from [[SDL_GetWindowSize]] if we're rendering to a high-DPI drawable, i.e. the window was created with [[SDL_WINDOW_ALLOW_HIGHDPI]] on a platform with high-DPI support (Apple calls this "Retina"), and not disabled by the [[SDL_HINT_VIDEO_HIGHDPI_DISABLED]] hint.
+This may differ from [[SDL_GetWindowSize]]() if we're rendering to a high-DPI drawable, i.e. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with high-DPI support (Apple calls this "Retina"), and not disabled by the [[SDL_HINT_VIDEO_HIGHDPI_DISABLED]] hint.
 
 == Version ==
 This function is available since SDL 2.0.1.
