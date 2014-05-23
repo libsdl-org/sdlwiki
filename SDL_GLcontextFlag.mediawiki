@@ -33,6 +33,8 @@ SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
 == Remarks ==
 This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_GLattr|SDL_GL_CONTEXT_FLAGS]].  Multiple flags can be OR'd together.
 
+If you don't know what this is, you should assume the defaults are already fine and shouldn't use these flags.
+
 === SDL_GL_CONTEXT_DEBUG_FLAG ===
 
 This flag maps to GLX_CONTEXT_DEBUG_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_create_context.txt GLX_ARB_create_context] extension for X11 and WGL_CONTEXT_DEBUG_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_create_context.txt WGL_ARB_create_context] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality.
