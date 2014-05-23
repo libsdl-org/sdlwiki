@@ -33,7 +33,7 @@ SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
 == Remarks ==
 This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_GLattr|SDL_GL_CONTEXT_FLAGS]].  Multiple flags can be OR'd together.
 
-If you don't know what this is, you should assume the defaults are already fine and shouldn't use these flags.
+If you don't know what these values do, you should assume the defaults are already fine and shouldn't use these flags. Not only are they not available on all platforms and GPU drivers, they can also have dramatic consequences for OpenGL functionality and performance, so please research them heavily before putting these flags to use.
 
 === SDL_GL_CONTEXT_DEBUG_FLAG ===
 
