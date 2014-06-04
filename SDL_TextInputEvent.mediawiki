@@ -18,7 +18,7 @@ A structure that contains keyboard text input event information.
 |'''windowID''' 
 |The window with keyboard focus, if any 
 |-
-|char 
+|char* 
 |'''text''' 
 |The null-terminated input text in UTF-8 encoding 
 |}
