@@ -110,6 +110,18 @@ A structure that contains system-dependent information about a window.
 |MirSurface*
 |'''surface'''
 |the Mir surface
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)
+|-
+|ANativeWindow*
+|'''window'''
+|the Android native window
+|-
+|EGLSurface*
+|'''surface'''
+|the Android EGL surface
 |}
 
 == Code Examples ==
