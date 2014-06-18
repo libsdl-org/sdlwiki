@@ -9,7 +9,7 @@
 === What is SDL? ===
 Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D. It is used by video playback software, emulators, and popular games including [http://valvesoftware.com Valve]'s award winning catalog and many [https://www.humblebundle.com Humble Bundle] games.
 
-SDL officially supports Windows, Mac OS X, Linux, iOS, and Android. Support for other platforms may be found in the source code.
+SDL officially supports Windows, Mac OS X, Linux, iOS, and [[Android]]. Support for other platforms may be found in the source code.
 : For the latest information on what is supported see http://hg.libsdl.org/SDL/file/default/README-platforms.txt
 
 SDL is written in C, works natively with C++, and there are bindings available for several other languages, including C# and Python.
@@ -117,6 +117,7 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 
 * Uses JNI interfaces for video display, taking advantage of OpenGL ES 1.1 and 2.0 for hardware acceleration
 * Uses JNI audio callbacks for sound
+* See also [[Android]]
 
 == Transitioning from SDL 1.2 to 2.0 ==
 If you used SDL 1.2 previously and you want to use SDL 2.0, please note there are some API changes and some of your code will need to be adapted.
