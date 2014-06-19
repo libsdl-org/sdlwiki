@@ -28,7 +28,7 @@ PATH="$PATH:/usr/src/android-sdk-linux/tools"
 ```
 
 Notes:
-* triple taret armeabi/armeabi-v7a/x86 compilation!
+* triple target armeabi/armeabi-v7a/x86 compilation!
 * application doesn't quit
 
 
