@@ -42,7 +42,7 @@ To compile: ```
  cd /usr/src/SDL2/build/org.libsdl.showimage/
  ln -s /usr/src/SDL2_image jni/
  ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
- # - Edit jni/Android.mk
+ # - Edit jni/src/Android.mk
  #   LOCAL_SHARED_LIBRARIES := ... SDL2_image
  # - Edit android-project/src/org/libsdl/app/SDLActivity.java:
  #   System.loadLibrary("SDL2_image");
