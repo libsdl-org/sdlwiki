@@ -68,6 +68,8 @@ Notes:
 
 You use autotools in your project and can't be bothering understanding ndk-build's cryptic errors? This guide is for you!
 
+Note: this environment can be used for CMake too.
+
 === Compile a shared binaries bundle for SDL and SDL_* ===
 
 * Start with a minimal build: ```
@@ -245,3 +247,23 @@ ant installd
 adb shell am start -a android.intenon.MAIN -n org.libsdl.app/org.libsdl.app.SDLActivity  # replace with your app package
 ```
 * Your SDL2 Android app is running!
+
+=== Build your CMake app ===
+
+(Work In Progress)
+
+You can use our Android GCC toolchain using a simple toolchain file: ```
+# CMake toolchain file
+SET(CMAKE_SYSTEM_NAME Linux)  # Tell CMake we're cross-compiling
+include(CMakeForceCompiler)
+# Prefix detection only works with compiler id "GNU"
+CMAKE_FORCE_C_COMPILER(arm-linux-androideabi-gcc GNU)
+SET(ANDROID TRUE)
+```
+
+You then call CMake like this: ```
+PATH=/usr/src/ndk-standalone-12/bin:$PATH
+cmake \
+  -D CMAKE_TOOLCHAIN_FILE=../android_toolchain.cmake \
+  ...
+```
