@@ -1,10 +1,16 @@
-== Building SDL2 for Android ==
+<!-- pragma section-numbers 2 -->
 
-First, a lot of information can be found in [https://hg.libsdl.org/SDL/file/tip/README-android.txt SDL2/README-android.txt].
+= Building SDL2 for Android =
 
-The following offers simple walkthroughs to compile SDL Android apps.
 
-=== Pre-requisites ===
+== Existing documentation ==
+
+A lot of information can be found in [https://hg.libsdl.org/SDL/file/tip/README-android.txt SDL2/README-android.txt].
+
+This page is more walkthrough-oriented.
+
+
+== Pre-requisites ==
 
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
 sudo apt-get install openjdk-7-jdk ant
@@ -15,6 +21,9 @@ sudo apt-get install openjdk-7-jdk ant
 PATH="$PATH:/usr/src/android-ndk-r9d"
 PATH="$PATH:/usr/src/android-sdk-linux/tools"
 ```
+
+
+== Simple builds ==
 
 === SDL wrapper for simple programs ===
 
@@ -55,6 +64,10 @@ Notes:
 * application doesn't restart properly
 
 
+== Build an autotools-friendly environment ==
+
+You use autotools in your project and can't be bothering understanding ndk-build's cryptic errors? This guide is for you!
+
 === Compile a shared binaries bundle for SDL and SDL_* ===
 
 * Start with a minimal build: ```
@@ -92,16 +105,12 @@ ndk-build -j$(nproc)
 ```
 
 
-=== Build an autotools-friendly environment ===
+=== Install SDL in a GCC toolchain ===
 
-You use autotools in your project and can't be bothering understanding ndk-build's cryptic errors? This guide is for you!
-
-First build a SDL + SDL_* bundle as explained above.
-
-Then:
+Now:
 * Copy the NDK into a traditional GCC toolchain: ```
 /usr/src/android-ndk-r9d/build/tools/make-standalone-toolchain.sh \
-  --platform=android-12 --install-dir=/usr/src/ndk-standalone-12
+  --platform=android-12 --install-dir=/usr/src/ndk-standalone-12 --arch=arm
 ```
 * Set your PATH (important, do it before any build): ```
 PATH=/usr/src/ndk-standalone-12/bin:$PATH
@@ -196,6 +205,13 @@ Static builds (<code>--disable-shared</code>) is recommended for simplificity (n
 
 === Build your autotools app ===
 
+First, prepare an Android project:
+* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step (but apply the bundle fixes to <code>SDLActivity.java</code>) .
+* Copy the SDL binaries as well: ```
+cp -a /usr/src/SDL2/build/org.libsdl/libs/armeabi/* libs/armeabi/
+```
+
+Make your project Android-aware:
 * Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h")
 * In your ```configure.ac```, detect Android: {{{
 AM_CONDITIONAL(ANDROID, test "$host" == "arm-unknown-linux-androideabi")
@@ -216,13 +232,12 @@ cd cross-android/
   --with-your-option --enable-your-other-option ...
 make
 ```
-* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step (but apply the bundle fixes to <code>SDLActivity.java</code>) .
-* Copy the SDL binaries as well: ```
-cp -a /usr/src/SDL2/build/org.libsdl/libs/armeabi/* libs/armeabi/
-```
+* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it)
+
+Now you can install your pre-built binaries and build the Android project:
 * Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
 * Build your Android <code>.apk</code>: ```
-android update project --name freedink --path . --target "android-12"
+android update project --name your_app --path . --target "android-12"
 ant debug
 ant installd
 ```
