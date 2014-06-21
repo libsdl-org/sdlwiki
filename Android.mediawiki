@@ -16,7 +16,7 @@ PATH="$PATH:/usr/src/android-ndk-r9d"
 PATH="$PATH:/usr/src/android-sdk-linux/tools"
 ```
 
-=== Test 1: SDL wrapper for simple programs ===
+=== SDL wrapper for simple programs ===
 
 * Compile a sample app (calls ndk-build): ```
  cd /usr/src/SDL2/build-scripts/
@@ -32,11 +32,11 @@ Notes:
 * application doesn't quit
 
 
-=== Test 2: SDL wrapper + SDL_image ===
+=== SDL wrapper + SDL_image NDK module ===
 
-First, modify showimage.c to show a simple embedded image (e.g. XPM).
+Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
 
-To compile: ```
+Then let's make an Android app out of it. To compile: ```
  cd /usr/src/SDL2/build-scripts/
  ./androidbuild.sh org.libsdl.showimage /usr/src/SDL2_image/showimage.c
  cd /usr/src/SDL2/build/org.libsdl.showimage/
@@ -53,3 +53,180 @@ To compile: ```
 
 Notes:
 * application doesn't restart properly
+
+
+=== Compile a shared binaries bundle for SDL and SDL_* ===
+
+* Start with a minimal build: ```
+cd /usr/src/SDL2/
+cd build-scripts/
+./androidbuild.sh org.libsdl /dev/null
+cd ../build/org.libsdl/
+```
+* Reference SDL_image, SDL_mixer, SDL_ttf, and their dependencies, as NDK modules: ```
+ln -s /usr/src/SDL2_image jni/
+ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
+ln -s /usr/src/SDL2_mixer jni/
+ln -s /usr/src/SDL2_mixer/external/libmikmod-3.1.12 jni/libmikmod
+ln -s /usr/src/SDL2_mixer/external/smpeg2-2.0.0 jni/smpeg2
+ln -s /usr/src/SDL2_ttf jni/
+```
+* Reference the libraries to the NDK build system: edit <code>jni/src/Android.mk</code>: ```
+LOCAL_SHARED_LIBRARIES := ... SDL2_image SDL2_mixer SDL2_ttf
+```
+* Optionnaly edit <code>jni/SDL2_mixer/Android.mk</code> to disable some formats
+* Reference the libraries in the Java bootstrap: edit <code>android-project/src/org/libsdl/app/SDLActivity.java</code>: ```
+    // Load the .so
+    static {
+        System.loadLibrary("SDL2");
+        System.loadLibrary("SDL2_image");
+        System.loadLibrary("SDL2_mixer");
+        //System.loadLibrary("SDL2_net"); // TODO
+        System.loadLibrary("SDL2_ttf");
+        System.loadLibrary("main");
+    }
+```
+* Edit <code>jni/Application.mk</code> and remove x86 where jpeg-9 doesn't build (as of 2014-06)
+* Launch the build! ```
+ndk-build -j$(nproc)
+```
+
+
+=== Build an autotools-friendly environment ===
+
+You use autotools in your project and can't be bothering understanding ndk-build's cryptic errors? This guide is for you!
+
+First build a SDL + SDL_* bundle as explained above.
+
+Then:
+* Copy the NDK into a traditional GCC toolchain: ```
+/usr/src/android-ndk-r9d/build/tools/make-standalone-toolchain.sh \
+  --platform=android-12 --install-dir=/usr/src/ndk-standalone-12
+```
+* Set your PATH (important, do it before any build): ```
+PATH=/usr/src/ndk-standalone-12/bin:$PATH
+```
+* Install the SDL2 binaries in the toolchain: ```
+cd /usr/src/SDL2/build/
+rm libs/armeabi/libmain.so
+for i in libs/armeabi/*; do ln -nfs $(pwd)/$i /usr/src/ndk-standalone-12/sysroot/usr/lib/; done
+mkdir /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
+cp jni/SDL/include/* /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
+cp jni/*/SDL*.h /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
+```
+* Install pkg-config <code>.pc</code> files for SDL: ```
+cat <<'EOF' > /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/sdl2.pc
+prefix=/usr/src/ndk-standalone-12/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: sdl2
+Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Version: 2.0.3
+Requires:
+Conflicts:
+Libs: -lSDL2
+Cflags: -I${includedir}/SDL2   -D_REENTRANT
+EOF
+
+cat <<'EOF' > /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/SDL2_image.pc
+prefix=/usr/src/ndk-standalone-12/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_image
+Description: image loading library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_image
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/SDL2_mixer.pc
+prefix=/usr/src/ndk-standalone-12/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_mixer
+Description: mixer library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_mixer
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/SDL2_ttf.pc
+prefix=/usr/src/ndk-standalone-12/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_ttf
+Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
+Version: 2.0.13
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_ttf
+Cflags: -I${includedir}/SDL2
+EOF
+```
+* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH: ```
+VERSION=0.9.6
+$WGET http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
+tar xf pkgconf-$VERSION.tar.gz
+cd pkgconf-$VERSION
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12/sysroot/usr
+make -j$(nproc)
+make install
+ln -s ../sysroot/usr/bin/pkgconf /usr/src/ndk-standalone-12/bin/arm-linux-androideabi-pkg-config
+mkdir /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/
+```
+
+
+Note: you can add any other library using the same instructions (e.g.: freetype, gettext, gmp... and yours!): ```
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12/sysroot/usr \
+  --with-some-option --enable-another-option \
+  --disable-shared
+make -j$(nproc)
+make install
+```
+
+Static builds (<code>--disable-shared</code>) is recommended for simplificity (no additional <code>.so</code> to declare). 
+
+
+=== Build your autotools app ===
+
+* Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h")
+* In your ```configure.ac```, detect Android: {{{
+AM_CONDITIONAL(ANDROID, test "$host" == "arm-unknown-linux-androideabi")
+}}}
+* In your ```Makefile.am```, tell Automake you'll build executables as libraries, using something like: {{{
+if ANDROID
+<!--  Build .so JNI libs rather than executables -->
+  AM_CFLAGS = -fPIC
+  AM_LDFLAGS += -shared
+  COMMON_OBJS += SDL_android_main.c
+endif
+}}}
+* Cross-compile your project using the GCC toolchain environment we created: ```
+PATH=/usr/src/ndk-standalone-12/bin:$PATH
+mkdir cross-android/
+cd cross-android/
+../configure --host=arm-linux-androideabi \
+  --with-your-option --enable-your-other-option ...
+make
+```
+* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step (but apply the bundle fixes to <code>SDLActivity.java</code>) .
+* Copy the SDL binaries as well: ```
+cp -a /usr/src/SDL2/build/org.libsdl/libs/armeabi/* libs/armeabi/
+```
+* Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
+* Build your Android <code>.apk</code>: ```
+android update project --name freedink --path . --target "android-12"
+ant debug
+ant installd
+```
+* You can run the application remotely: ```
+adb shell am start -a android.intenon.MAIN -n org.libsdl.app/org.libsdl.app.SDLActivity  # replace with your app package
+```
+* Your SDL2 Android app is running!
