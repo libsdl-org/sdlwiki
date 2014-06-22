@@ -194,7 +194,7 @@ EOF
 
 === Building other dependencies ===
 
-You can add any other libraries (e.g.: freetype, gettext, gmp...) using commands like: ```
+You can add any other libraries (e.g.: SDL2_gfx, freetype, gettext, gmp...) using commands like: ```
 mkdir cross-android/ && cd cross-android/
 ../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr \
   --with-some-option --enable-another-option \
@@ -204,6 +204,19 @@ make install
 ```
 
 Static builds (<code>--disable-shared</code>) are recommended for simplicity (no additional <code>.so</code> to declare).
+
+Example with SDL2_gfx: ```
+VERSION=1.0.1
+wget http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-$VERSION.tar.gz
+tar xf SDL2_gfx-$VERSION.tar.gz
+mv SDL2_gfx-$VERSION/ SDL2_gfx/
+cd SDL2_gfx/
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr \
+  --disable-shared --disable-mmx
+make -j$(nproc)
+make install
+```
 
 You can compile YOUR application using this technique, with some more steps to tell Android how to run it using JNI.
 
