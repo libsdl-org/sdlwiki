@@ -92,6 +92,7 @@ ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
 ln -s /usr/src/SDL2_mixer jni/
 ln -s /usr/src/SDL2_mixer/external/libmikmod-3.1.12 jni/libmikmod
 ln -s /usr/src/SDL2_mixer/external/smpeg2-2.0.0 jni/smpeg2
+ln -s /usr/src/SDL2_net jni/
 ln -s /usr/src/SDL2_ttf jni/
 ```
 * Optionnaly edit <code>jni/Android.mk</code> to disable some formats, e.g.: ```
@@ -172,6 +173,19 @@ Description: mixer library for Simple DirectMedia Layer
 Version: 2.0.1
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_mixer
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/SDL2_net.pc
+prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_net
+Description: net library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_net
 Cflags: -I${includedir}/SDL2
 EOF
 
