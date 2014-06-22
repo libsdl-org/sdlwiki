@@ -260,7 +260,14 @@ mkdir cross-android/ && cd cross-android/
   --with-your-option --enable-your-other-option ...
 make
 ```
-* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it)
+* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it); something like: ```
+mkdir cross-android-v7a/ && cd cross-android-v7a/
+# .o: -march=armv5te -mtune=xscale -msoft-float -mthumb  =>  -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb
+# .so: -march=armv7-a -Wl,--fix-cortex-a8
+CFLAGS="-g -O2 -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb" LFDLAGS="-march=armv7-a -Wl,--fix-cortex-a8" \
+  ../configure --host=arm-linux-androideabi \
+  ...
+```
 
 Now you can install your pre-built binaries and build the Android project:
 * Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
