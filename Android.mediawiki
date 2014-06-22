@@ -125,6 +125,18 @@ mkdir /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
 cp jni/SDL/include/* /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
 cp jni/*/SDL*.h /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
 ```
+* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH (auto-detected by autoconf): ```
+VERSION=0.9.6
+wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
+tar xf pkgconf-$VERSION.tar.gz
+cd pkgconf-$VERSION
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12/sysroot/usr
+make -j$(nproc)
+make install
+ln -s ../sysroot/usr/bin/pkgconf /usr/src/ndk-standalone-12/bin/arm-linux-androideabi-pkg-config
+mkdir /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/
+```
 * Install pkg-config <code>.pc</code> files for SDL: ```
 cat <<'EOF' > /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/sdl2.pc
 prefix=/usr/src/ndk-standalone-12/sysroot/usr
@@ -178,18 +190,6 @@ Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_ttf
 Cflags: -I${includedir}/SDL2
 EOF
-```
-* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH: ```
-VERSION=0.9.6
-$WGET http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
-tar xf pkgconf-$VERSION.tar.gz
-cd pkgconf-$VERSION
-mkdir cross-android/ && cd cross-android/
-../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12/sysroot/usr
-make -j$(nproc)
-make install
-ln -s ../sysroot/usr/bin/pkgconf /usr/src/ndk-standalone-12/bin/arm-linux-androideabi-pkg-config
-mkdir /usr/src/ndk-standalone-12/sysroot/usr/lib/pkgconfig/
 ```
 
 
