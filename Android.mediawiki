@@ -53,8 +53,6 @@ Then let's make an Android app out of it. To compile: ```
  ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
  # - Edit jni/src/Android.mk
  #   LOCAL_SHARED_LIBRARIES := ... SDL2_image
- # - Edit android-project/src/org/libsdl/app/SDLActivity.java:
- #   System.loadLibrary("SDL2_image");
  # - Edit jni/Application.mk: remove x86 where jpeg-9 doesn't build
  ndk-build -j$(nproc)
  ant debug install
@@ -78,6 +76,16 @@ cd build-scripts/
 ./androidbuild.sh org.libsdl /dev/null
 cd ../build/org.libsdl/
 ```
+* Remove reference to our dummy file: ```
+rm -rf jni/src/
+```
+* Get the latests SDL2_* libs from Mercurial (they fix a few bugs): ```
+cd /usr/src/
+hg clone http://hg.libsdl.org/SDL_image SDL2_image
+hg clone http://hg.libsdl.org/SDL_mixer SDL2_mixer
+hg clone http://hg.libsdl.org/SDL_net   SDL2_net
+hg clone http://hg.libsdl.org/SDL_ttf   SDL2_ttf
+```
 * Reference SDL_image, SDL_mixer, SDL_ttf, and their dependencies, as NDK modules: ```
 ln -s /usr/src/SDL2_image jni/
 ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
@@ -86,25 +94,15 @@ ln -s /usr/src/SDL2_mixer/external/libmikmod-3.1.12 jni/libmikmod
 ln -s /usr/src/SDL2_mixer/external/smpeg2-2.0.0 jni/smpeg2
 ln -s /usr/src/SDL2_ttf jni/
 ```
-* Reference the libraries to the NDK build system: edit <code>jni/src/Android.mk</code>: ```
-LOCAL_SHARED_LIBRARIES := ... SDL2_image SDL2_mixer SDL2_ttf
+* Optionnaly edit <code>jni/Android.mk</code> to disable some formats, e.g.: ```
+SUPPORT_MP3_SMPEG := false
+include $(call all-subdir-makefiles)
 ```
-* Optionnaly edit <code>jni/SDL2_mixer/Android.mk</code> to disable some formats
-* Reference the libraries in the Java bootstrap: edit <code>android-project/src/org/libsdl/app/SDLActivity.java</code>: ```
-    // Load the .so
-    static {
-        System.loadLibrary("SDL2");
-        System.loadLibrary("SDL2_image");
-        System.loadLibrary("SDL2_mixer");
-        //System.loadLibrary("SDL2_net"); // TODO
-        System.loadLibrary("SDL2_ttf");
-        System.loadLibrary("main");
-    }
-```
-* Edit <code>jni/Application.mk</code> and remove x86 where jpeg-9 doesn't build (as of 2014-06)
 * Launch the build! ```
 ndk-build -j$(nproc)
 ```
+
+Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.java</code>, your application will be linked to them and Android's Linux loads them automatically.
 
 
 === Install SDL in a GCC toolchain ===
@@ -119,7 +117,6 @@ PATH=/usr/src/ndk-standalone-12-arm/bin:$PATH
 ```
 * Install the SDL2 binaries in the toolchain: ```
 cd /usr/src/SDL2/build/org.libsdl/
-rm -f libs/armeabi/libmain.so
 for i in libs/armeabi/*; do ln -nfs $(pwd)/$i /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/; done
 mkdir /usr/src/ndk-standalone-12-arm/sysroot/usr/include/SDL2/
 \cp jni/SDL/include/* /usr/src/ndk-standalone-12-arm/sysroot/usr/include/SDL2/
@@ -224,7 +221,7 @@ You can compile YOUR application using this technique, with some more steps to t
 === Build your autotools app ===
 
 First, prepare an Android project:
-* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step (but apply the bundle fixes to <code>SDLActivity.java</code>) .
+* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step.
 * Copy the SDL binaries as well: ```
 cp -a /usr/src/SDL2/build/org.libsdl/libs/armeabi/* libs/armeabi/
 ```
