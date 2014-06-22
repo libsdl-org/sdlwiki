@@ -4,7 +4,7 @@ This page is intended to help focus the efforts of the SDL Documentation Wiki co
 
 
 === Missing functions ===
-The following functions are found in the header files, but not (yet) on the wiki. Some pages just need to be categorized, others don't exist yet and need to be made, and some might not belong on the wiki anyway --((for example, none of the internal SDL_cstdlib functions have been listed here))--. 
+The following functions are found in the header files, but not (yet) on the wiki. Some pages just need to be categorized, others don't exist yet and need to be made, and some might not belong on the wiki anyway --((for example, none of the internal SDL_cstdlib functions have been listed here))--.
 
 ==== SDL_assert.h ====
 
@@ -335,7 +335,7 @@ These functions maybe do not need to be documented here
 * --(SDL_CommonEvent)-- (shared)
 * --(SDL_OSEvent)-- (unused)
 
-These structures are currently documented as "draft" only and need improvements: 
+These structures are currently documented as "draft" only and need improvements:
 
 * [[SDL_JoyDeviceEvent]]
 * [[SDL_ControllerAxisEvent]]
@@ -380,3 +380,8 @@ These structures are currently documented as "draft" only and need improvements:
 === Not linked pages ===
 
 * [[SDL_DirtyTexture]]
+* [[SDL-gsoc2010_android]]
+* [[SDL-gsoc2010_gesture]]
+* [[SDL-gsoc2010_IME]]
+* [[SDL-gsoc2010_shaped_windows]]
+* [[SDL-gsoc2010_xrender]]
