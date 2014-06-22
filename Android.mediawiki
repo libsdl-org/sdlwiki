@@ -118,8 +118,8 @@ Now:
 PATH=/usr/src/ndk-standalone-12/bin:$PATH
 ```
 * Install the SDL2 binaries in the toolchain: ```
-cd /usr/src/SDL2/build/
-rm libs/armeabi/libmain.so
+cd /usr/src/SDL2/build/org.libsdl/
+\rm libs/armeabi/libmain.so
 for i in libs/armeabi/*; do ln -nfs $(pwd)/$i /usr/src/ndk-standalone-12/sysroot/usr/lib/; done
 mkdir /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
 cp jni/SDL/include/* /usr/src/ndk-standalone-12/sysroot/usr/include/SDL2/
