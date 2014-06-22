@@ -18,8 +18,8 @@ sudo apt-get install openjdk-7-jdk ant
 * Install NDK (tested with r9d)
 * Install the latest SDK, run <code>android</code> and install API 12
 * Configure your environment variables, e.g.: ```
-PATH="$PATH:/usr/src/android-ndk-r9d"
-PATH="$PATH:/usr/src/android-sdk-linux/tools"
+PATH="$PATH:/usr/src/android-ndk-r9d"          # for 'ndk-build'
+PATH="$PATH:/usr/src/android-sdk-linux/tools"  # for 'android'
 ```
 
 
