@@ -203,17 +203,10 @@ make -j$(nproc)
 make install
 ```
 
-
----- /!\ '''Edit conflict - other version:''' ----
 Static builds (<code>--disable-shared</code>) are recommended for simplicity (no additional <code>.so</code> to declare).
-
-
----- /!\ '''Edit conflict - your version:''' ----
-Static builds (<code>--disable-shared</code>) are recommended for simplificity (no additional <code>.so</code> to declare). 
 
 You can compile YOUR application using this technique, with some more steps to tell Android how to run it using JNI.
 
----- /!\ '''End of edit conflict''' ----
 
 === Build your autotools app ===
 
