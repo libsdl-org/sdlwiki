@@ -131,7 +131,7 @@ wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
 tar xf pkgconf-$VERSION.tar.gz
 cd pkgconf-$VERSION
 mkdir native/ && cd native/
-../configure --prefix=/usr/src/ndk-standalone-12/sysroot/usr
+../configure --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
 make -j$(nproc)
 make install
 ln -s ../sysroot/usr/bin/pkgconf /usr/src/ndk-standalone-12-arm/bin/arm-linux-androideabi-pkg-config
@@ -196,7 +196,7 @@ EOF
 
 You can add any other libraries (e.g.: freetype, gettext, gmp...) using commands like: ```
 mkdir cross-android/ && cd cross-android/
-../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12/sysroot/usr \
+../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr \
   --with-some-option --enable-another-option \
   --disable-shared
 make -j$(nproc)
