@@ -202,7 +202,7 @@ make -j$(nproc)
 make install
 ```
 
-Static builds (<code>--disable-shared</code>) is recommended for simplificity (no additional <code>.so</code> to declare). 
+Static builds (<code>--disable-shared</code>) are recommended for simplificity (no additional <code>.so</code> to declare). 
 
 
 === Build your autotools app ===
