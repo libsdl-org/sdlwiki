@@ -27,7 +27,13 @@ This macro will evaluate to true if compiled with SDL version at least X.Y.Z.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+#include <iso646.h>
+#include <stdlib.h>
+
+if (not SDL_VERSION_ATLEAST(2,0,0)) {
+    SDL_Log("SDL_VERSION %i not at least 2", SDL_MAJOR_VERSION);
+    exit(EXIT_FAILURE);
+}
 ```
 
 == Remarks ==
