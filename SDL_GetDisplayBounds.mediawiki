@@ -25,7 +25,11 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Rect r;
+if (SDL_GetDisplayBounds(0, &r) != 0) {
+    SDL_Log("SDL_GetDisplayBounds failed: %s", SDL_GetError());
+    return 1;
+}
 ```
 
 == Remarks ==
