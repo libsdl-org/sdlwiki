@@ -33,7 +33,7 @@ if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
 ```
 
 == Remarks ==
-There's a difference between this function and [[SDL_GetCurrentDisplayMode]] when SDL runs fullscreen and has changed the resolution. In that case this function will return the previous native display mode, and not the current display mode.
+There's a difference between this function and [[SDL_GetCurrentDisplayMode]]() when SDL runs fullscreen and has changed the resolution. In that case this function will return the previous native display mode, and not the current display mode.
 
 == Related Functions ==
 :[[SDL_GetCurrentDisplayMode]]
