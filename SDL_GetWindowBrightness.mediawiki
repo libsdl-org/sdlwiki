@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_GetWindowBrightness =
-Use this function to get the brightness (gamma correction) for a window.
+Use this function to get the brightness (gamma multiplier) for the display that owns the given window.
 
 
 == Syntax ==
@@ -13,11 +13,11 @@ float SDL_GetWindowBrightness(SDL_Window* window)
 == Function Parameters ==
 {|
 |'''window'''
-|the window to query
+|the window used to select the display whose brightness will be queried
 |}
 
 == Return Value ==
-Returns the brightness for the window where 0.0 is completely dark and 1.0 is normal brightness.
+Returns the brightness for the display where 0.0 is completely dark and 1.0 is normal brightness.
 
 == Code Examples ==
 ```c++
@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+Despite the name and signature, this method retrieves the brightness of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]].)
 
 == Related Functions ==
 :[[SDL_SetWindowBrightness]]
