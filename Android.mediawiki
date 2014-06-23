@@ -237,6 +237,7 @@ You can compile YOUR application using this technique, with some more steps to t
 First, prepare an Android project:
 * Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.txt</code>. You can leave it as-is in a first step.
 * Make links to the SDL binaries as well: ```
+mkdir -p libs/armeabi/
 for i in /usr/src/SDL2/build/org.libsdl/libs/armeabi/*; do ln -nfs $i libs/armeabi/; done
 ```
 
