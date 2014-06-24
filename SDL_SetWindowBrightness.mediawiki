@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Despite the name and signature, this method sets the brightness of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]].) The brightness set will not follow the window if it is moved to another display.
+Despite the name and signature, this method sets the brightness of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().) The brightness set will not follow the window if it is moved to another display.
 
 == Related Functions ==
 :[[SDL_GetWindowBrightness]]
