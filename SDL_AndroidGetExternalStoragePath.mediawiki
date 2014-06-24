@@ -32,6 +32,8 @@ You can add your code example here
 == Remarks ==
 This path is unique to your application, but is public and can be written to by other applications.
 
+Your internal storage path is typically: <code>/storage/sdcard0/Android/data/your.app.package/files</code>. 
+
 == Version ==
 This function is available since SDL 2.0.0.
 
