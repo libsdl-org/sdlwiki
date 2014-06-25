@@ -14,12 +14,12 @@
 <br/>
 === Opening An Editor ===
 If a page can be edited you will see two options to choose from in the left column:
- 1. <<Color2(blue,Edit (Text))>>
+ 1. <<Color2(Edit (Text),blue)>>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
  {i} Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.<br/>
  For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
 
- 1. <<Color2(blue,Edit (GUI))>>
+ 1. <<Color2(Edit (GUI),blue)>>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
  {i} The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
@@ -47,10 +47,10 @@ Before you save your changes please include a note in the Comment field below th
 * added code example to C++ section
 * remarked on use of function with [sound card model]
 
-{i} Especially when using the text editor, use the <<Color2(blue,Preview)>> function in the left sidebar often and before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
+{i} Especially when using the text editor, use the <<Color2(Preview,blue)>> function in the left sidebar often and before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
 : ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
 
-When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <<Color2(blue,Save Changes)>> function in the left sidebar to save your changes.
+When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <<Color2(Save Changes,blue)>> function in the left sidebar to save your changes.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
@@ -66,7 +66,7 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : '''Category Page'''
 : Refers to the front page of each major category found in the [[APIByCategory|API by Category]] list.
 : '''Draft Page'''
-: Any page with <<Color2(red,DRAFT)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(red,DRAFT)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(red,DRAFT)>> is removed.  Please bear with us while they are in place as they help to speed up the final editing process.  ''Thank you!''
+: Any page with <<Color2(DRAFT,red)>> at the top is incomplete.  It should not be used as a formatting example until <<Color2(DRAFT,red)>> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <<Color2(DRAFT,red)>> is removed.  Please bear with us while they are in place as they help to speed up the final editing process.  ''Thank you!''
 : '''''If...'''''
 : Found in some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
 : In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
@@ -74,7 +74,7 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
 : Sometimes ''Action'' will include a number (ie: ''Action 2'') to indicate that there is more than one way to achieve the same result or that more than one step is required.  Read carefully to determine which apply to your circumstance.
 : ''Action'' is occasionally followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
-: /!\ Please read any ''Note'' or ''<<Color2(red,Important!)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped unless you are having trouble.
+: /!\ Please read any ''Note'' or ''<<Color2(Important!,red)>>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped unless you are having trouble.
 : '''''Markup'':'''
 : The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
 : Sometimes ''Markup'' will include a number (ie: ''Markup 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
@@ -82,7 +82,7 @@ Some terms used in the style guides are intended to have specific meanings or pu
 : Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.  (This is somewhat rare.)
 : '''''Note'':'''
 : The instructions immediately following ''Note'': should be taken into consideration as necessary.  
-: '''''<<Color2(red,Important!)>>'''''
+: '''''<<Color2(Important!,red)>>'''''
 : Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
 : '''''Example'':'''
 : Provides a direct example of the markup or points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
@@ -97,7 +97,7 @@ Some terms used in the style guides are intended to have specific meanings or pu
 
 This section contains general information that applies to nearly every page in the wiki.  Please review this section periodically for updates.  
 
-''<<Color2(red,Important!)>>'' Do not change the Category links at the bottom of any page.
+''<<Color2(Important!,red)>>'' Do not change the Category links at the bottom of any page.
 
 Please do not remove DRAFT from any page!
 
@@ -111,7 +111,7 @@ The top of (nearly) every page begins with the following, which should not be ed
 ||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
 ```
 
-''<<Color2(red,Important!)>>'' If you encounter the following comments while editing a page, please ensure that any changes to the <code><intervening content></code> are appropriate to ''all'' pages listed in the first comment.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
+''<<Color2(Important!,red)>>'' If you encounter the following comments while editing a page, please ensure that any changes to the <code><intervening content></code> are appropriate to ''all'' pages listed in the first comment.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
 '''DO NOT''' change these comments except to update included <code><PageName></code>s if necessary.
  ```
 ##The following content is included on <PageName>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
@@ -139,7 +139,7 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 === Text Formatting ===
 ''Note'': Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
 
-'''<<Color2(red,''Important!'')>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.'''
+'''<<Color2(''Important!'',red)>> The wiki's default font type, font colors, and font sizes should be used in almost all cases.'''
 
 {|
 |<bgcolor="#EDEDED">Style
@@ -177,12 +177,12 @@ A good place to look for additional information on MoinMoin wiki markup is  [htt
 |-
 |''Example'': see [[SDL_Event]]
 |-
-|<( |6 30%><<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>> (Color2 macro)
-|<span id="color2"></span><<Color2(red,''Important!'')>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
+|<( |6 30%><<Color2(C,red)>><<Color2(o,orange)>><<Color2(l,yellow)>><<Color2(o,green)>><<Color2(r,blue)>><<Color2(e,indigo)>><<Color2(d,violet)>> <<Color2(T,brown)>><<Color2(e,pink)>><<Color2(x,grey)>><<Color2(t,purple)>> (Color2 macro)
+|<span id="color2"></span><<Color2(''Important!'',red)>> Please use colored text sparingly if at all. As a general convention we use <<Color2(blue,blue)>> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
 |-
 |''Note'': We have the Color2 macro installed. It will colorize text inside or outside of tables.
 |-
-|''Markup'':```<<Color2(colorname,text to be colorized)>>``` where {{{colorname}}} may be most any simple color name like blue or red or green
+|''Markup'':```<<Color2(text to be colorized,colorname)>>``` where {{{colorname}}} may be most any simple color name like blue or red or green
 |-
 |''Note'': If ```text to be colorized``` must contain commas each section must be colorized separately, breaking at each comma.
 |-
@@ -215,17 +215,10 @@ Verbatim text as it should be typed, appear as code, or show markup. This will w
 : ''Example 3'': 
 : ''Correct'' 
   ```
-<<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
+<<Color2("A sentence that contains commas, such as this one, must be quoted in order for the commas to appear correctly.",purple)>>
 ```
 : ''Generates''
-: <<Color2(purple,A sentence that contains commas,)>> <<Color2(purple,such as this one,)>> <<Color2(purple,must be broken into parts or the text before the first comma will not appear when parsed.)>>
-: ''Incorrect''
-  ```
-<<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
-```
-:''Generates''
-: <<Color2(purple,A sentence that contains commas, such as this one, must be broken into parts or the text before the first comma will not appear when parsed.)>>
-: ''Note'': the beginning of the sentence is missing in this version
+: <<Color2("A sentence that contains commas, such as this one, must be quoted in order for the commas to appear correctly.",purple)>>
 
 More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
 
@@ -255,7 +248,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 
 <span id="indent"></span>
 ==== Indenting ====
-''<<Color2(red,Important!)>>'' Indenting often leads to inadvertent creation of an unnumbered list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
+''<<Color2(Important!,red)>>'' Indenting often leads to inadvertent creation of an unnumbered list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
 
 ''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
 * Use one space for each indent level desired. (this line has 2 spaces)
@@ -310,7 +303,7 @@ Both vertical and horizontal spacing can be rendered differently depending upon 
 
 <span id="lists"></span>
 === Lists ===
-<<Color2(red,''Important!'')>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
+<<Color2(''Important!'',red)>> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
 
 If you have trouble with lists see [[#problems2|Some Known Problems and Solutions]] below.
 
@@ -349,7 +342,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 
 <span id="hyperlinks"></span>
 === Hyperlinks ===
-<<Color2(red,''Important!'')>>  Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via CamelCase recognition using the following markup at the top of every page:
+<<Color2(''Important!'',red)>>  Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via CamelCase recognition using the following markup at the top of every page:
  ```
 #pragma camelcase off
 ```
@@ -400,7 +393,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 |''Note'': Alternate link text is generally optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
 |-
 |<( |2 30%>Link __referencing the header files__
-|''<<Color2(red,Important!)>>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+|''<<Color2(Important!,red)>>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
 |-
 |''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h so the link always points to the most current file.
 |-
@@ -446,7 +439,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 ''Action'': To create a basic table with default spacing and styling.
 
 ''Markup'': Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
-: ''<<Color2(red,Important!)>>'' There can be no blank spaces or other characters after the closing pipes on a line.
+: ''<<Color2(Important!,red)>>'' There can be no blank spaces or other characters after the closing pipes on a line.
 
 ''Example'': 
  ```
@@ -474,7 +467,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |<rowbgcolor="#EDEDED">''Colors''
 |-
 |<( |4 30%>To colorize __text in a cell__
-|''Markup 1'': use <<Color2(red,C)>><<Color2(orange,o)>><<Color2(yellow,l)>><<Color2(green,o)>><<Color2(blue,r)>><<Color2(indigo,e)>><<Color2(violet,d)>> <<Color2(brown,T)>><<Color2(pink,e)>><<Color2(grey,x)>><<Color2(purple,t)>> described [[#formatting|above]]
+|''Markup 1'': use <<Color2(C,red)>><<Color2(o,orange)>><<Color2(l,yellow)>><<Color2(o,green)>><<Color2(r,blue)>><<Color2(e,indigo)>><<Color2(d,violet)>> <<Color2(T,brown)>><<Color2(e,pink)>><<Color2(x,grey)>><<Color2(t,purple)>> described [[#formatting|above]]
 |-
 |''Markup 2'': ```style="color: #XXXXXX;"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
 |-
@@ -530,7 +523,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |-
 |''Note'': When creating the table, the cell(s) in the first row to span should be included on the same line as the spanning cell as usual.  Each additional row should be on it's own table line, omitting the spanning cell.
 |-
-|''Example'': Go into <<Color2(blue,Edit (Text))>> mode and look at most any of the tables in this document.
+|''Example'': Go into <<Color2(Edit (Text),blue)>> mode and look at most any of the tables in this document.
 |-
 |<( |7 30%>To cause a cell to __span multiple columns__
 |''Markup 1'': Create empty cells at the beginning of the row equaling the number of cells to skip/span, then place your text in the last cell of that row.
@@ -569,7 +562,7 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 * Five equals signs is the lowest level heading (smallest) 
 : ''Example'': ===== Minor =====
 
-''<<Color2(red,Important!)>>'' Heading lines must stand alone with no other markup on the same line or within the heading.
+''<<Color2(Important!,red)>>'' Heading lines must stand alone with no other markup on the same line or within the heading.
 
 ''Example'': ```== Some Wiki Markup Basics ==```
 
@@ -595,9 +588,9 @@ More (but not much) wiki markup for headings can be found at [http://wiki.libsdl
 === Includes ===
 An include enables you to dynamically copy all or a portion of a page onto another page, allowing changes to one page (source) to be automatically updated on another page (recipient).  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
 
-''<<Color2(red,Important!)>>'' While very few pages have includes, it is important to scan over the source page for existing include markup before creating a new include.  More than one set of include markup on a source page will cause conflicts on all pages using that source.  See the table below to determine the best course of action.
+''<<Color2(Important!,red)>>'' While very few pages have includes, it is important to scan over the source page for existing include markup before creating a new include.  More than one set of include markup on a source page will cause conflicts on all pages using that source.  See the table below to determine the best course of action.
 
-''<<Color2(red,Important!)>>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is critical that the content remain up to date on the recipient page if the source page changes.  In many cases it is better to do a one time copy and paste operation instead.
+''<<Color2(Important!,red)>>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is critical that the content remain up to date on the recipient page if the source page changes.  In many cases it is better to do a one time copy and paste operation instead.
 
 ''Note'': Please choose the source page carefully.  It should reflect the most primary version of the copied information.  (For example, you should use the actual enumeration page as the source rather than another function page that also references the enumeration details.)  
 
@@ -677,7 +670,7 @@ An include enables you to dynamically copy all or a portion of a page onto anoth
 : ''Example'': If this is the 2nd include on the source page it should read:
    ```##2End Include here.```
 
-''<<Color2(red,Important!)>>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
+''<<Color2(Important!,red)>>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
 : ''Note'': The use of hidden comments to create include tags is deliberate.  This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance traceability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
 
 See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
@@ -711,7 +704,7 @@ While creating this wiki we encountered several formatting challenges.  This sec
 |-
 |''Note'': You '''cannot''' force __less__ space between lines of text in separate paragraphs.  The only option for keeping lines of text close together is to use [[#break|Hard Line Breaks]] to keep lines within a paragraph.
 |-
-|<<Color2(red,''Important!'')>> There are limits to how you can change formatting within a paragraph.
+|<<Color2(''Important!'',red)>> There are limits to how you can change formatting within a paragraph.
 |-
 |''Note'': Indenting can affect vertical spacing.  See ''[[#vertical|Note]]'' above for details.
 |}
@@ -733,7 +726,7 @@ While creating this wiki we encountered several formatting challenges.  This sec
 |-
 |''Example'': ``` 1.#4 text``` should force the list item to begin with the number 4.<br/>{{{a.#4 text}}} should force the list item to begin with the letter d.
 |-
-|<<Color2(red,''Important!'')>> This fix does not always work!!!
+|<<Color2(''Important!'',red)>> This fix does not always work!!!
 |-
 |''Solution 3'': Put a blank line (Enter key) between list items and then force a number (or other sequential) value by using the ''Markup'' from ''Solution 2'' above.
 |-
@@ -754,7 +747,7 @@ While creating this wiki we encountered several formatting challenges.  This sec
 |''Solution'': The same workarounds as above may or may not be able to resolve this issue as well.  Your goal is to end one list and begin the next with new formatting.  You may have to try several tricks to make this happen.
 |}
 
-<<Color2(red,''Important!'')>> Some list breaks cannot currently be fixed without major formatting compromises so you should be very careful when interrupting a list as it may force formatting you will not want.
+<<Color2(''Important!'',red)>> Some list breaks cannot currently be fixed without major formatting compromises so you should be very careful when interrupting a list as it may force formatting you will not want.
 
 See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
 
@@ -785,7 +778,7 @@ Some other wiki help that might be of interest or helpful to find quickly:
 
 <!-- #This section is for Sheena's use only -- -->
 <!-- #Markup for pages that need to be deleted by Sam: -->
-<!-- #||<: tablewidth="100%"><<Color2(purple,THIS FUNCTION HAS BEEN REMOVED FROM THE API.)>><br/><<Color2(purple,THIS PAGE WILL BE DELETED.)>>|| -->
+<!-- #||<: tablewidth="100%"><<Color2(THIS FUNCTION HAS BEEN REMOVED FROM THE API.,purple)>><br/><<Color2(THIS PAGE WILL BE DELETED.,purple)>>|| -->
 <!-- #Markup for draft pages: -->
 <!-- #'''DRAFT''' -->
 <!-- #Markup for Resources and Disclaimer section on SG pages (remove backticks): -->
