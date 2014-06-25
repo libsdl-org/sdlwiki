@@ -128,7 +128,7 @@ VERSION=0.9.6
 wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
 tar xf pkgconf-$VERSION.tar.gz
 cd pkgconf-$VERSION
-mkdir native/ && cd native/
+mkdir native-android/ && cd native-android/
 ../configure --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
 make -j$(nproc)
 make install
