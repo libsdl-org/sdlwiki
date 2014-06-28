@@ -37,7 +37,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Despite the name and signature, this method retrieves the gamma ramp of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]].) 
+Despite the name and signature, this method retrieves the gamma ramp of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().)
 
 == Related Functions ==
 :[[SDL_SetWindowGammaRamp]]
