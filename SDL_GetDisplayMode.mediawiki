@@ -41,8 +41,8 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
         SDL_Log("SDL_GetDisplayMode failed: %s", SDL_GetError());
         exit(EXIT_FAILURE);       
     }
-    SDL_Log("SDL_GetDisplayMode(0, 0, &mode):\t\t%i bpp\t%i x %i", SDL_BITSPERPIXEL(mode.format), mode.w, mode.h);
-
+    SDL_Log("SDL_GetDisplayMode(0, 0, &mode):\t\t%i bpp\t%i x %i",
+    SDL_BITSPERPIXEL(mode.format), mode.w, mode.h);
 ```
 
 == Remarks ==
