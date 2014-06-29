@@ -39,7 +39,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
     if (SDL_GetDisplayMode(display_index, mode_index, &mode) != 0) {
         SDL_Log("SDL_GetDisplayMode failed: %s", SDL_GetError());
-        exit(EXIT_FAILURE);       
+        return 1;       
     }
     SDL_Log("SDL_GetDisplayMode(0, 0, &mode):\t\t%i bpp\t%i x %i",
     SDL_BITSPERPIXEL(mode.format), mode.w, mode.h);
