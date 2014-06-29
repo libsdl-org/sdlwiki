@@ -35,9 +35,10 @@ You can add your code example here
 == Remarks ==
 The display modes are sorted in this priority:
 
-* bits per pixel -> more colors to fewer colors
 * width -> largest to smallest
 * height -> largest to smallest
+* bits per pixel -> more colors to fewer colors
+* packed pixel layout -> largest to smallest
 * refresh rate -> highest to lowest
 
 == Related Functions ==
