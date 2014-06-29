@@ -35,7 +35,7 @@ A structure that describes a display mode.
 
     int i, display_mode_count;
     SDL_DisplayMode mode;
-    uint32_t f;
+    Uint32 f;
 
     SDL_Log("SDL_GetNumVideoDisplays(): %i", SDL_GetNumVideoDisplays());
     
