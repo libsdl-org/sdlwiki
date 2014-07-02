@@ -38,7 +38,7 @@ y_move = SDL_JoystickGetAxis(joy1, 1);
 == Remarks ==
 On most modern joysticks the X axis is usually represented by '''axis''' 0 and the Y axis by '''axis''' 1. The value returned by [[SDL_JoystickGetAxis]]() is a signed integer (-32768 to 32767) representing the current position of the axis.  It may be necessary to impose certain tolerances on these values to account for jitter.
 
-Some joysticks use axes 2 and 3 for extra buttons.
+Some joysticks use axes 2 and 3 for extra buttons. <span style="color: green;">Or 3 and 4?</span>
 
 == Related Functions ==
 :[[SDL_JoystickNumAxes]]
