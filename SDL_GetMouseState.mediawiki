@@ -27,8 +27,9 @@ Returns a 32 bit button bitmask of the current button state.
 == Code Examples ==
 ```c++
 SDL_PumpEvents();
-if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT))
-  printf("Mouse Button 1(left) is pressed.\n");
+if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+    SDL_Log("Mouse Button 1 (left) is pressed.");
+}
 ```
 
 == Remarks ==
