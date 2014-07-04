@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticRumblePlay =
-Use this function to run ^a^ simple rumble ^effect^ on a haptic device.
+Use this function to run a simple rumble effect on a haptic device.
 
 
 == Syntax ==
