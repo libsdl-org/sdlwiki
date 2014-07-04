@@ -181,7 +181,7 @@ An enumeration of the types of events that can be delivered.
 SDL_Event e;
 while (SDL_PollEvent(&e)) {
     if (e.type == SDL_KEYDOWN) {
-        printf("User just pressed down a key!\n");
+        SDL_Log("User just pressed down a key!");
     }
 }
 ```
