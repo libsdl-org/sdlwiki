@@ -23,7 +23,6 @@ You can add your code example here
 :[[SDL_GetTextureColorMod]]
 :[[SDL_LockTexture]]
 :[[SDL_QueryTexture]]
-:[[SDL_QueryTexturePixels]]
 :[[SDL_RenderCopy]]
 :[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
