@@ -29,7 +29,6 @@ You can add your code example here
 :[[SDL_CreateTexture]]
 :[[SDL_LockTexture]]
 :[[SDL_QueryTexture]]
-:[[SDL_QueryTexturePixels]]
 
 ----
 [[CategoryEnum]], [[CategoryRender]]
