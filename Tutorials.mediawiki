@@ -31,11 +31,11 @@ There are a number of SDL tutorials available from different sources.
 == Video ==
 
 * [http://slouken.blogspot.com/2011/02/streaming-textures-with-sdl-13.html Streaming textures with SDL 2.0]
-: A quick guide to streaming textures.
+: A quick guide to streaming textures
 
 * [http://rainwarrior.ca/dragon/sdl_glsl.html Using GLSL with SDL]
-: A tutorial on enabling and using GLSL extensions with SDL.
-: Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also.
+: A tutorial on enabling and using GLSL extensions with SDL
+: Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also
 
 === OpenGL ===
 * [http://www.g-truc.net/post-0204.html OpenGL 3 Samples Pack]
@@ -50,17 +50,17 @@ There are a number of SDL tutorials available from different sources.
 == Haptic ==
 
 * [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 2.0 Haptic Interface]
-: Covers the basics of how to create and playback simple force feedback effects with SDL.
+: Covers the basics of how to create and playback simple force feedback effects with SDL
 
 == Input ==
 
 * [[Tutorials/TextInput|Text Input]]
-: Using SDL for text inputs with specific consideration for international users.
+: Using SDL for text inputs with specific consideration for international users
 
 == Threads ==
 
 * [http://ansuz.sooke.bc.ca/software/sdl-condvars.php Condition variables in SDL]
-: A good discussion of condition variables, in computer science rather than gaming context. Some mention of mutex and semaphore use.
+: A good discussion of condition variables, in computer science rather than gaming context. Some mention of mutex and semaphore use
 
 == SDL 1.2 ==
 : [[SDL1.2Tutorials|SDL 1.2 Tutorials]]
