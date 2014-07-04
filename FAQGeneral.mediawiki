@@ -17,7 +17,6 @@ http://www.libsdl.org/
 
 == Where do I send questions / feedback? ==
 You can send questions and feedback through an SDL forum (http://forums.libsdl.org/) or mailing list (http://www.libsdl.org/mailing-list.php) or using the ''Feedback'' form (above right).
-<!-- # broken link - missing page - http://www.libsdl.org/mailing-list.phpthrough -->
 
 == Where do I send bug reports / patches? ==
 You can submit bug reports and patches to the SDL bugzilla bug tracking system: http://bugzilla.libsdl.org/
