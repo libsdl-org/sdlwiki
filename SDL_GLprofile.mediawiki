@@ -20,7 +20,7 @@ An enumeration of OpenGL profiles.
 
 == Code Examples ==
 ```c++
-SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_ES);
+SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
 ```
 
 
@@ -29,7 +29,7 @@ This enumeration is used in conjunction with [[SDL_GL_SetAttribute]] and [[SDL_G
 
 
 == Related Enumerations ==
-:[[SDL_GLattr]] 
+:[[SDL_GLattr]]
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
