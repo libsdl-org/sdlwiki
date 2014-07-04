@@ -31,7 +31,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ```c++
 SDL_Surface *s = NULL; //Declaring the surface.
 
-s = SDL_CreateRGBSurface(SDL_HWSURFACE, width, height, 32, 0, 0, 0, 0); //Creating the surface.
+s = SDL_CreateRGBSurface(0, width, height, 32, 0, 0, 0, 0); //Creating the surface.
 SDL_FillRect(s, NULL, SDL_MapRGB(s->format, 255, 0, 0)) //Filling the surface with red colour.
 ```
 
