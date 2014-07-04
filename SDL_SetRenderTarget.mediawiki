@@ -17,7 +17,7 @@ int SDL_SetRenderTarget(SDL_Renderer *renderer,
 |the rendering context
 |-
 |'''texture'''
-|the targeted texture, which must be created with the SDL_TEXTUREACCESS_TARGET flag, or NULL for the default render target
+|the targeted texture, which must be created with the [[SDL_TextureAccess|SDL_TEXTUREACCESS_TARGET]] flag, or NULL for the default render target
 |}
 
 
