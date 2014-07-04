@@ -55,9 +55,9 @@ Returns arc cosine of '''x'''.
 
 
 == Remarks ==
-The definition of y = acos('''x''') is '''x''' = cos(y). <br />
-Domain: -1 <= x <= 1 <br />
-Range:   0 <= y <= Pi <br />
+The definition of y = acos('''x''') is '''x''' = cos(y). <br/>
+Domain: -1 <= x <= 1 <br/>
+Range:   0 <= y <= Pi <br/>
 
 
 == Version ==
