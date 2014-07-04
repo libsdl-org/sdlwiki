@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_NumHaptics =
-Use this function to count the number of ,,joysticks,, ^haptic devices^ attached to the system.
+Use this function to count the number of haptic devices attached to the system.
 
 
 == Syntax ==
