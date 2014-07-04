@@ -39,7 +39,7 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_HapticRumbleInit]]
 :[[SDL_HapticRumbleStop]]
-:[[SDL_apticRumbleSupported]]
+:[[SDL_HapticRumbleSupported]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
