@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 = SDL_GL_UnbindTexture =
-Use this function to bind an OpenGL/ES/ES2 texture to the current context for use with when rendering OpenGL primitives directly.
+Use this function to unbind an OpenGL/ES/ES2 texture from the current context.
 
 
 == Syntax ==
