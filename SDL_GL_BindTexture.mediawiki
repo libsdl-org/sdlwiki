@@ -240,4 +240,4 @@ In most cases, both will be 1.0, however, on systems that support the GL_ARB_tex
 : [[SDL_GL_MakeCurrent]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryRender]]
