@@ -21,6 +21,8 @@ You can add your code example here
 This function will start accepting Unicode text input events in the focused SDL window, and start emitting SDL_TEXTINPUT and SDL_TEXTEDITING events.
 Please use this function in pair with [[SDL_StopTextInput]]().
 
+On some platforms using this function activates the screen keyboard.
+
 == Related Functions ==
 :[[SDL_SetTextInputRect]]
 :[[SDL_StopTextInput]]
