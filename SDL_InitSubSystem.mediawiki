@@ -24,7 +24,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
 
-SDL_Window* window = SDL_CreateWindow("A Window", 
+SDL_Window* window = SDL_CreateWindow("A Window",
     SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480,
     SDL_WINDOW_FULLSCREEN);
 SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
@@ -43,10 +43,12 @@ SDL_Quit();
 == Remarks ==
 After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().
 
-<span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously. 
+<span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously.
 <<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
 
 [[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
+
+Subsystem initialization is ref-counted, you must call [[SDL_QuitSubSystem]]() for each SDL_InitSubSystem() to correctly shutdown a subsystem manually (or call [[SDL_Quit]]() to force shutdown). If a subsystem is already loaded then this call will increase the ref-count and return.
 
 == Related Functions ==
 :[[SDL_Init]]
