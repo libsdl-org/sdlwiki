@@ -8,9 +8,9 @@ Use this function to query the attributes of a texture.
 == Syntax ==
 ```c++
 int SDL_QueryTexture(SDL_Texture* texture,
-                     Uint32*      format, 
+                     Uint32*      format,
                      int*         access,
-                     int*         w, 
+                     int*         w,
                      int*         h)
 ```
 
@@ -53,7 +53,6 @@ SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
 == Related Functions ==
 :[[SDL_CreateTexture]]
-:[[SDL_QueryTexturePixels]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
