@@ -139,7 +139,7 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |don't catch fatal signals
 |}
 
-Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGSEGV).
+Unless the SDL_INIT_NOPARACHUTE flag is set, it will install cleanup signal handlers for some commonly ignored fatal signals (like SIGTERM).
 
 If you want to initialize subsystems separately you would call [[SDL_Init]](0) followed by [[SDL_InitSubSystem]]() with the desired subsystem flag.
 
