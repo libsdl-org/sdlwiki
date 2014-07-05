@@ -291,8 +291,8 @@ Keycodes for keys with printable characters are represented by the character byt
 |0x7A ('z')
 |SDLK_z
 |-
-|177
-|0xB1 ('\177')
+|127
+|0x7F ('\177')
 |SDLK_DELETE
 |-
 |1073741881
