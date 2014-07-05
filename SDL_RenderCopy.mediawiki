@@ -82,17 +82,12 @@ int main(int argc, char *argv[])
   in the middle of the screen */
   int i;
   int n;
-  for(i=0;i<2;i++)
-  {
-    for(n=0;n<4;n++)
-    {
+  for (i = 0; i < 2; ++i) {
+    for(n = 0; n < 4; ++n) {
       SrcR.x = SHAPE_SIZE * (n % 2);
-      if(n > 1)
-      {
+      if (n > 1) {
         SrcR.y = SHAPE_SIZE;
-      }
-      else
-      {
+      } else {
         SrcR.y = 0;
       }
 
@@ -101,7 +96,7 @@ int main(int argc, char *argv[])
       SDL_RenderCopy(Main_Renderer, Background_Tx, NULL, NULL);
 
       /* render the current animation step of our shape */
-      SDL_RenderCopy(Main_Renderer, BlueShapes, &SrcR, &DestR);  
+      SDL_RenderCopy(Main_Renderer, BlueShapes, &SrcR, &DestR);
       SDL_RenderPresent(Main_Renderer);
       SDL_Delay(500);
     }
