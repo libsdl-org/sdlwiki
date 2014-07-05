@@ -38,7 +38,7 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 * Keyboard input
 * Joystick and game controller input
 * Multitouch gestures
-* Each event can be enabled or disabled with SDL_EventState()
+* Each event can be enabled or disabled with [[SDL_EventState]]()
 * Events are passed through a user-specified filter function before being posted to the internal event queue
 * Thread-safe event queue
 
