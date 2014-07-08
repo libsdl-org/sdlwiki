@@ -77,7 +77,7 @@ Make sure that you are declaring main() as:
 
 int main(int argc, char *argv[])
 
-You should be using main() instead of WinMain() even though you are creating a Windows application, because SDL provides a version of WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your WinMain() function so that SDL works properly.
+You should be using main() instead of !WinMain() even though you are creating a Windows application, because SDL provides a version of !WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use !WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your !WinMain() function so that SDL works properly.
 
 ==== I get "Undefined reference to 'WinMain@16'" ====
 Under Visual C++, you need to link with SDLmain.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDLmain -lSDL -mwindows
@@ -89,7 +89,7 @@ gcc -o test test.c <code>sdl-config --cflags --libs</code>
 If you're getting undefined references to functions in SDL_image or SDL_mixer, make sure you're actually linking with those libraries as well.
 
 ==== Why doesn't SDL_WM_ToggleFullScreen() work on Windows? ====
-The semantics of SDL_WM_ToggleFullScreen() are that switching between fullscreen and windowed mode is transprent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
+The semantics of SDL_WM_!ToggleFullScreen() are that switching between fullscreen and windowed mode is transprent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
 ```c++
 flags ^= SDL_FULLSCREEN;
 screen = SDL_SetVideoMode(..., flags);
