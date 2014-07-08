@@ -39,7 +39,7 @@ SDL is dynamically linked with the multi-threaded version of the Microsoft Visua
 ==== When using Visual C++ 5, I get the following error message: SDL.lib : fatal error LNK1106: invalid file or disk full ====
 This happens with Visual C++ 5, if you use the prebuilt SDL library and have not updated to the latest service pack.
 
-==== Why can't I use Visual C++ debugger with SDL applications? ====
+==== Why can't I use Visual C++ debugger with SDL 1.2 applications? ====
 You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to make the msvc debugger work. Otherwise the debugger will be unable to trace exceptions, and other debugging features like run to cursor won't work.
 
 ==== Why does the Visual C++ debugger freeze at every breakpoint when debugging SDL apps? ====
