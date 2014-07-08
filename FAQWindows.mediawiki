@@ -90,8 +90,10 @@ If you're getting undefined references to functions in SDL_image or SDL_mixer, m
 
 ==== Why doesn't SDL_WM_ToggleFullScreen() work on Windows? ====
 The semantics of SDL_WM_ToggleFullScreen() are that switching between fullscreen and windowed mode is transprent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
+```c++
 flags ^= SDL_FULLSCREEN;
 screen = SDL_SetVideoMode(..., flags);
+```
 
 ==== How do I avoid creating stdout.txt and stderr.txt? ====
 <!-- #Seen here: -->
