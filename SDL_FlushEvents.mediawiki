@@ -30,6 +30,8 @@ This will unconditionally remove any events from the queue that match the specif
 
 It's also normal to just ignore events you don't care about in your event loop without calling this function.
 
+This function only affects currently queued events. If you want to make sure that all pending OS events are flushed, you can call [[SDL_PumpEvents]]() on the main thread immediately before the flush call.
+
 == Related Functions ==
 :[[SDL_FlushEvent]]
 
