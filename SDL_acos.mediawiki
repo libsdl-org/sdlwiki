@@ -26,7 +26,7 @@ double SDL_acos(double x)
 == Function Parameters ==
 {|
 |'''x'''
-|floating point value, in radians.
+|floating point value, in radians
 |}
 
 
@@ -44,7 +44,7 @@ Returns arc cosine of '''x'''.
     /* acos(x) = Pi/2 - asin(x) */
     SDL_Log("acos(0):\t\t%f", SDL_acos(0));
     SDL_Log("Pi/2 - asin(0):\t%f\n", M_PI / 2 - SDL_asin(0));
- 
+
     /* acos(-x) = Pi  - acos(x) */
     SDL_Log("acos(-(-1)):\t%f", SDL_acos(-(-1)));
     SDL_Log("Pi - acos(-1):\t%f\n", M_PI - SDL_acos(-1));
