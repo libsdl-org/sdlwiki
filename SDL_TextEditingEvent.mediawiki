@@ -19,7 +19,7 @@ A structure that contains keyboard text editing event information.
 |'''windowID'''
 |the window with keyboard focus, if any
 |-
-|char
+|char[32]
 |'''text'''
 |the editing text
 |-
