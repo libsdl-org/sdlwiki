@@ -21,7 +21,7 @@ A structure that contains keyboard text editing event information.
 |-
 |char[32]
 |'''text'''
-|the editing text
+|the null-terminated editing text in UTF-8 encoding
 |-
 |Sint32
 |'''start'''
