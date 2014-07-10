@@ -134,7 +134,6 @@ Note that either the '''attack_level''' or the '''fade_level''' may be above the
 :[[SDL_HapticCondition]]
 :[[SDL_HapticConstant]]
 :[[SDL_HapticCustom]]
-:[[SDL_HapticDirection]] ??? <!-- (from header but not referenced in the union) -->
 :[[SDL_HapticLeftRight]]
 :[[SDL_HapticPeriodic]]
 :[[SDL_HapticRamp]]
