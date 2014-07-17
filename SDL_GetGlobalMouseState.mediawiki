@@ -1,0 +1,58 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetGlobalMouseState =
+Use this function to get the current state of the mouse in relation to the desktop.
+
+
+
+
+== Syntax ==
+```c++
+Uint32 SDL_GetGlobalMouseState(int* x,
+                               int* y)
+```
+
+
+== Function Parameters ==
+{|
+|'''x'''
+|filled in with the current X coord relative to the desktop; can be NULL
+|-
+|'''y'''
+|filled in with the current Y coord relative to the desktop; can be NULL
+|}
+
+
+== Return Value ==
+Returns the current button state as a bitmask which can be tested using the SDL_BUTTON(X) macros.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This works just like [[SDL_GetMouseState]](), but the coordinates will be reported relative to the top-left of the desktop. This can be useful if you need to track the mouse outside of a specific window and [[SDL_CaptureMouse]]() doesn't fit your needs. For example, it could be useful if you need to track the mouse while dragging a window, where
+coordinates relative to a window might not be in sync at all times.
+
+/!\ [[SDL_GetMouseState]]() returns the mouse position as SDL understands it from the last pump of the event queue. This function, however, queries the OS for the current mouse position, and as such, might be a slightly less efficient function. Unless you know what you're doing and have a good reason to use this function, you probably want [[SDL_GetMouseState]]() instead.
+
+== Version ==
+This function is available since SDL 2.0.4.
+
+== Related Functions ==
+:[[SDL_CaptureMouse]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryMouse]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
