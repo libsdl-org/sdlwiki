@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 
     // Check that the window was successfully made
     if (window == NULL) {
-        printf("Could not create window: %s\n", SDL_GetError());
+        SDL_Log("Could not create window: %s", SDL_GetError());
         return 1;
     }
 
@@ -59,7 +59,7 @@ int main(int argc, char *argv[]) {
         &mouse_position.y
     );
 
-    printf("Mouse position: x=%i y=%i\n", //    Print mouse position
+    SDL_Log("Mouse position: x=%i y=%i",  //    Print mouse position
          mouse_position.x, mouse_position.y
     );
 
