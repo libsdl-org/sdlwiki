@@ -1,0 +1,73 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HitTestResult =
+An enumeration of possible return values from the [[SDL_HitTest]]() callback.
+
+
+
+
+== Values ==
+
+{|
+|SDL_HITTEST_NORMAL
+|region is normal and has no special properties
+|-
+|SDL_HITTEST_DRAGGABLE
+|region can drag entire window
+|-
+|SDL_HITTEST_RESIZE_TOPLEFT
+|region can resize top left window
+|-
+|SDL_HITTEST_RESIZE_TOP
+|region can resize top window
+|-
+|SDL_HITTEST_RESIZE_TOPRIGHT
+|region can resize top right window
+|-
+|SDL_HITTEST_RESIZE_RIGHT
+|region can resize right window
+|-
+|SDL_HITTEST_RESIZE_BOTTOMRIGHT
+|region can resize bottom right window
+|-
+|SDL_HITTEST_RESIZE_BOTTOM
+|region can resize bottom window
+|-
+|SDL_HITTEST_RESIZE_BOTTOMLEFT
+|region can resize bottom left window
+|-
+|SDL_HITTEST_RESIZE_LEFT
+|region can resize left window
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Version ==
+This enumeration is available since SDL 2.0.4.
+
+
+== Related Functions ==
+:[[SDL_SetWindowHitTest]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryEnum]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
