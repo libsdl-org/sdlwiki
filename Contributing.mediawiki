@@ -48,7 +48,7 @@ To help you with this we have created a series of resources:
  ||[[SGEnumerations|Enumeration Pages]]||Editing Enumeration pages<br/>Editing Hint pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
  ||[[SGNewPages|New Pages]]||Creating new pages in the wiki<br/>~-This is supplemental to the other Style Guides-~||
 
-: If you find something that is not addressed or is unclear in a style guide please post your questions to the Documentation mailing list, on a Forum, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+: If you find something that is not addressed or is unclear in a style guide, please post your questions to the Documentation mailing list, on a Forum, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
 <span id="email"></span>
 === Email ===
