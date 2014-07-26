@@ -37,7 +37,7 @@ A structure that contains system-dependent information about a window.
 |-
 |IInspectable*
 |'''win.window'''
-|the WinRT CoreWindow
+|the WinRT !CoreWindow
 |-
 |
 |
