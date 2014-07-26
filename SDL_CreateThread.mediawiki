@@ -34,7 +34,7 @@ Returns an opaque pointer to the new thread object on success, NULL if the new t
 #include "SDL_thread.h"
 #include "SDL_timer.h"
 
-int TestThread(void *ptr);
+static int TestThread(void *ptr);
 
 int main(int argc, char *argv[])
 {
@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 }
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
-int TestThread(void *ptr)
+static int TestThread(void *ptr)
 {
     int cnt;
 
