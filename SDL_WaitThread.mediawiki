@@ -70,7 +70,7 @@ static int TestThread(void *ptr)
 
 Wait for a thread to finish. Threads that haven't been detached will remain (as a "zombie") until this function cleans them up. Not doing so is a resource leak.
 
-Once a thread has been cleaned up through this function, the [[SDL_Thread]] that references it becomes invalid and should not be referenced again. As such, only one thread may call SDL_WaitThread() on another.
+Once a thread has been cleaned up through this function, the SDL_Thread that references it becomes invalid and should not be referenced again. As such, only one thread may call SDL_WaitThread() on another.
 
 The return code for the thread function is placed in the area pointed to by '''status''', if '''status''' is not NULL.
 
