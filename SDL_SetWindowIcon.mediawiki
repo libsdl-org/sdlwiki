@@ -28,6 +28,8 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 
 int main(int argc, char* argv[]){
 
+  SDL_Event e;
+
   SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL2
 
   SDL_Window *window = SDL_CreateWindow(    // Open a new window
@@ -78,7 +80,7 @@ int main(int argc, char* argv[]){
   SDL_FreeSurface(surface);
   
   // Loop until the user closes the window or presses any key.
-  for(SDL_Event e; e.type!=SDL_QUIT&&e.type!=SDL_KEYDOWN; SDL_PollEvent(&e)); 
+  for( ; e.type != SDL_QUIT && e.type != SDL_KEYDOWN; SDL_PollEvent(&e)); 
   
   SDL_DestroyWindow(window);   // Close and destroy the window.
   SDL_Quit();                  // Clean up and exit.
