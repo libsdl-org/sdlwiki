@@ -34,9 +34,8 @@ You can add your code example here
 
 
 == Remarks ==
-''You can add useful comments here''
+For details about the referenced window manager issues see the following message (and its thread) on the SDL mailing list: http://lists.libsdl.org/pipermail/sdl-libsdl.org/2012-October/651919.html
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
