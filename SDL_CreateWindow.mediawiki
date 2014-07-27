@@ -119,6 +119,8 @@ int main(int argc, char* argv[]) {
 |window should be created in high-DPI mode if supported (>= SDL 2.0.1)
 |}
 
+SDL_WINDOW_SHOWN is ignored by SDL_CreateWindow(). The SDL_Window is implicitly shown if SDL_WINDOW_HIDDEN is not set. SDL_WINDOW_SHOWN may be queried later using [[SDL_GetWindowFlags]]().
+
 == Related Functions ==
 :[[SDL_DestroyWindow]]
 
