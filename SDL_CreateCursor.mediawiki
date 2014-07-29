@@ -5,8 +5,6 @@
 = SDL_CreateCursor =
 Use this function to create a cursor using the specified bitmap data and mask (in MSB format).
 
-Note that, since SDL 2.0.0, [[SDL_CreateSystemCursor]]() is available, which provides twelve readily available system cursors to pick from.
-
 
 == Syntax ==
 ```c++
@@ -161,6 +159,8 @@ If you want to have color cursor, then this function is not for you; instead, yo
 <span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span>
 
 ^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]] to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^
+
+Note that, since SDL 2.0.0, [[SDL_CreateSystemCursor]]() is available, which provides twelve readily available system cursors to pick from.
 
 == Related Functions ==
 :[[SDL_FreeCursor]]
