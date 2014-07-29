@@ -7,7 +7,7 @@
 Very simply, Simple !DirectMedia Layer, or SDL for short, is a library that allows you low level access to a video framebuffer, audio output, mouse, keyboard, and joysticks across a wide variety of operating systems.
 
 == What platforms are supported? ==
-The current version supports Windows XP and newer, MacOS X 10.5+, Linux 2.6+, iOS 5.1.1+, and Android 2.3.3+.  SDL includes code for other operating systems but they are not officially supported.  See [http://hg.libsdl.org/SDL/file/default/README-platforms.txt] for the most recent list.
+The current version supports Windows XP and newer, MacOS X 10.5+, Linux 2.6+, iOS 5.1.1+, and Android 2.3.3+.  SDL includes code for other operating systems but they are not officially supported.  See [http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md] for the most recent list.
 
 == What is the latest version? ==
 The latest stable version is 2.0. You can always get the very latest bleeding edge Mercurial snapshot, which may be broken at any given time, from the Mercurial page (http://www.libsdl.org/hg.php).
