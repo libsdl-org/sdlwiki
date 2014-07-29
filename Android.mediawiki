@@ -5,7 +5,7 @@
 
 == Existing documentation ==
 
-A lot of information can be found in [https://hg.libsdl.org/SDL/file/tip/README-android.txt SDL2/README-android.txt].
+A lot of information can be found in [https://hg.libsdl.org/SDL/file/tip/docs/README-android.md SDL/docs/README-android.md].
 
 This page is more walkthrough-oriented.
 
