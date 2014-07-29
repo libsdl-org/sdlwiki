@@ -32,7 +32,8 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== Related Functions ==
+== Related Functions == 
+:[[SDL_GetWindowSize]]
 :[[SDL_SetWindowSize]]
 
 ----
