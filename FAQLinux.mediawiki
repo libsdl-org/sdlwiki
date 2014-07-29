@@ -4,7 +4,7 @@
 == What is supported? ==
 SDL supports all known Linux hardware with GNU libc and kernel version 2.6 or newer.
 
-For the latest information see http://hg.libsdl.org/SDL/file/default/README-platforms.txt
+For the latest information see http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md
 
 == How do I add SDL to my project? ==
 The short answer is use the output of the command "sdl-config --cflags --libs" for SDL 1.2 or "sdl2-config --cflags --libs", for example: gcc -o test test.c &#x60;sdl-config --cflags --libs&#x60;
