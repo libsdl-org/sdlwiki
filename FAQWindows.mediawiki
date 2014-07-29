@@ -10,7 +10,7 @@ SDL supports Windows XP, Vista, and Windows 7.
 
 SDL can be built with Visual C++, Cygwin, MinGW, and Dev-C++.
 
-For the latest information see http://hg.libsdl.org/SDL/file/default/README-platforms.txt
+For the latest information see http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md
 
 
 === Windows 2000 ===
