@@ -54,7 +54,7 @@ You can add your code example here
 
 '''x''' and '''y''' are in range 0 to 1.
 
-For more information see: [http://hg.libsdl.org/SDL/file/default/README-gesture.txt README-gesture.txt]
+For more information see: [http://hg.libsdl.org/SDL/file/default/docs/README-gesture.md README-gesture.md]
 
 == Related Enumerations ==
 :[[SDL_EventType]]
