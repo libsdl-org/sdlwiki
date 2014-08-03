@@ -25,7 +25,7 @@ Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_SetHint (SDL_HINT_RENDER_SCALE_QUALITY, Value);
 ```
 
 == Remarks ==
