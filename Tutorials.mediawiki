@@ -49,7 +49,7 @@ There are a number of SDL tutorials available from different sources.
 
 == Haptic ==
 
-* [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 2.0 Haptic Interface]
+* [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ The SDL 2.0 Haptic Interface] ([https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic/ Archive])
 : Covers the basics of how to create and playback simple force feedback effects with SDL
 
 == Input ==
