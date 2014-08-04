@@ -5,14 +5,14 @@ There are a number of SDL tutorials available from different sources.
 
 
 == Setup ==
-* [http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ SDL and MYSYS/MinGW]
+* [http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ SDL and MYSYS/MinGW] ([https://web.archive.org/web/20120820141724/http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ Archive])
 : A tutorial detailing how to set up the MSYS/MinGW build system for compiling SDL/OpenGL applications
 
 == Multi-Subject ==
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : Wow! A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
-* [http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2009/07/02/sdl-competition-here-i-come.aspx Matthew Casperson's SDL Tutorials]
+* [http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2009/07/02/sdl-competition-here-i-come.aspx Matthew Casperson's SDL Tutorials] ([https://web.archive.org/web/20110906002735/http://www.brighthub.com/hubfolio/matthew-casperson/blog/archive/2009/07/02/sdl-competition-here-i-come.aspx Archive])
 : SDL tutorials on a variety of topics for shoot 'em up games
 
 * [http://gpwiki.org/index.php/Category:All_SDL_articles The Game Programming Wiki: SDL Tutorials]
@@ -21,7 +21,7 @@ There are a number of SDL tutorials available from different sources.
 * [http://lazyfoo.net/SDL_tutorials/index.php Beginning Game Programming]
 : A series of tutorials on game concepts geared for SDL developers.  Tutorials (currently 36!) are written using C++ as the programming language and SDL as the API.
 
-* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index GFX with SDL (by Marius)]
+* [http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index GFX with SDL (by Marius)] ([https://web.archive.org/web/20120102224037/http://cone3d.gamedev.net/cgi-bin/index.pl?page=tutorials/gfxsdl/index Archive])
 : A very nice set of tutorials covering using SDL with Dev-C++, 2D graphics and sound
 
 * [http://www.noquarterarcade.com/xcode-sdl-development-setup Xcode SDL Development Setup]
@@ -51,7 +51,7 @@ There are a number of SDL tutorials available from different sources.
 * [http://sol.gfxile.net/gp/ Sol's Graphics for Beginners]
 : Setting up SDL with Visual C++ 6.0, basic graphics programming
 
-* [http://pgdc.purdue.org/sdltutorial/sdl_setup.html SDL Setup Guide 1.1]
+* [http://pgdc.purdue.org/sdltutorial/sdl_setup.html SDL Setup Guide 1.1] ([https://web.archive.org/web/20100808144235/http://pgdc.purdue.org/sdltutorial/sdl_setup.html Archive])
 : Setting up an SDL project with Visual Studio .NET
 
 * [http://pygame.org/docs/tut/MoveIt.html Help! How Do I Move An Image?]
