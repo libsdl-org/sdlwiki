@@ -298,7 +298,7 @@ If all you care about is whether the user pressed a certain key, that's still [[
 
 Scancodes are meant to be layout-independent. Think of this as "the user pressed the Q key as it would be on a US QWERTY keyboard" regardless of whether this is actually a European keyboard or a Dvorak keyboard or whatever. The scancode is always the same key position.
 
-Keycodes are meant to be layout-dependent. Think of this as "the user pressed the key that is labelled 'Q' on his specific keyboard."
+Keycodes are meant to be layout-dependent. Think of this as "the user pressed the key that is labelled 'Q' on a specific keyboard."
 
 In example, if you pressed the key that's two keys to the right of CAPS LOCK on a US QWERTY keyboard, it'll report a scancode of SDL_SCANCODE_S and a keycode of SDLK_S. The same key on a Dvorak keyboard, will report a scancode of SDL_SCANCODE_S and a keycode of SDLK_O.
 
