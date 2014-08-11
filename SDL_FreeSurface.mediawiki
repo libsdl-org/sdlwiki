@@ -24,6 +24,8 @@ You can add your code example here
 == Remarks ==
 If the surface was created using [[SDL_CreateRGBSurfaceFrom]]() then the pixel data is not freed.
 
+It is safe to pass NULL to this function.
+
 == Related Functions ==
 :[[SDL_CreateRGBSurface]]
 :[[SDL_CreateRGBSurfaceFrom]]
