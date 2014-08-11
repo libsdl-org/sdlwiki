@@ -379,6 +379,7 @@ These structures are currently documented as "draft" only and need improvements:
 
 === Not linked pages ===
 
+* [[Test]]
 * [[SDL_DirtyTexture]]
 * [[SDL-gsoc2010_android]]
 * [[SDL-gsoc2010_gesture]]
