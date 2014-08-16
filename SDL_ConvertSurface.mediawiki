@@ -23,7 +23,7 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*           src,
 |the [[SDL_PixelFormat]] structure that the new surface is optimized for
 |-
 |'''flags'''
-|the flags are unused and should be set to 0
+|the flags are unused and should be set to 0. This is a leftover from SDL 1.2's API.
 |}
 
 == Return Value ==
