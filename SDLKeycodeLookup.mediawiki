@@ -4,7 +4,7 @@
 
 = SDL Keycode Lookup Table =
 
-Keycodes for keys with printable characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their [[SDL_Scancode|scancode]] bitwise AND-ed with <code>1<<30</code> (0x40000000).
+Keycodes for keys with printable characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their [[SDL_Scancode|scancode]] bitwise OR-ed with <code>1<<30</code> (0x40000000).
 
 {|
 |<bgcolor="#EDEDED">''Decimal Value''
