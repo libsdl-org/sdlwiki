@@ -244,7 +244,7 @@ for i in /usr/src/SDL2/build/org.libsdl/libs/armeabi/*; do ln -nfs $i libs/armea
 Make your project Android-aware:
 * Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h")
 * In your ```configure.ac```, detect Android: {{{
-AM_CONDITIONAL(ANDROID, test "$host" == "arm-unknown-linux-androideabi")
+AM_CONDITIONAL(ANDROID, test "$host" = "arm-unknown-linux-androideabi")
 }}}
 * In your ```Makefile.am```, tell Automake you'll build executables as libraries, using something like: {{{
 if ANDROID
