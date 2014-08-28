@@ -46,10 +46,12 @@ if (!context) {
     return;
 }
 
-printf("Red size: %d, Green size: %d, Blue size: %d\n",
-    SDL_GL_GetAttribute(SDL_GL_RED_SIZE),
-    SDL_GL_GetAttribute(SDL_GL_GREEN_SIZE),
-    SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE));
+int r, g, b;
+SDL_GL_GetAttribute(SDL_GL_RED_SIZE, &r);
+SDL_GL_GetAttribute(SDL_GL_GREEN_SIZE, &g);
+SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &b);
+
+printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 ```
 
 == Remarks ==
