@@ -74,7 +74,7 @@ int main(int argc, char *argv[])  {
   );
   Uint32 windowID = SDL_GetWindowID(window);
   
-  while (true)  {
+  while (1)  {
     SDL_Event event;
     while (SDL_PollEvent(&event))  {
       switch (event.type)  {
