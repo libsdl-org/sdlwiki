@@ -59,7 +59,7 @@ An enumeration of window events.
 ```c++
 #include "SDL.h"
 
-int main(int, char**)  {
+int main(int argc, char *argv[])  {
   int width = 640;
   int height = 480;
   
