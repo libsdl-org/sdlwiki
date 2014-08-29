@@ -32,8 +32,8 @@ Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for more inf
 ```c++
 /* Start the timer; the callback below will be executed after the delay */
 
-delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
-my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
+Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
+SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
 
 ...
 
