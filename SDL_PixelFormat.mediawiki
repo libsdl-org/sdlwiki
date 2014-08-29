@@ -107,7 +107,7 @@ SDL_LockSurface(surface);
 
 /* Get the topleft pixel */
 index=*(Uint8 *)surface->pixels;
-color=fmt->palette->colors[index];
+color=&fmt->palette->colors[index];
 
 /* Unlock the surface */
 SDL_UnlockSurface(surface);
