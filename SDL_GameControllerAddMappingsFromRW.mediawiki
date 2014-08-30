@@ -8,7 +8,7 @@
 
 = SDL_GameControllerAddMappingsFromRW =
 Use this function to load a set of [[CategoryGameController|Game Controller]] mappings from a seekable SDL data stream (memory or file), filtered by the current [[SDL_GetPlatform]]().
-A community sourced database of controllers is available [https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt here|target="_blank"] (on GitHub).
+A community sourced database of controllers is available [https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt here|target="_blank"] (on !GitHub).
 
 
 
