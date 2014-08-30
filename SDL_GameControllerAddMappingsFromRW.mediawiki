@@ -35,7 +35,7 @@ Returns the number of mappings added or -1 on error; call [[SDL_GetError]]() for
 
 == Code Examples ==
 ```c++
-SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile("gamecontrollerdb.txt", "rb"), 1)
+SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile("gamecontrollerdb.txt", "rb"), 1);
 ```
 
 
