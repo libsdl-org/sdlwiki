@@ -45,7 +45,7 @@ if (status == 0) {
   fprintf(stderr, "Couldn't lock mutex\n");
 }
 
-SDL_DestroyMutex(mutex)
+SDL_DestroyMutex(mutex);
 ```
 
 == Remarks ==
