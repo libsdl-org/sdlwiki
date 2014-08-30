@@ -17,6 +17,7 @@ Use this function to circumvent failure of SDL_Init() when not using SDL_main() 
 ```c++
 void SDL_SetMainReady(void)
 ```
+
 == Code Examples ==
 ```c++
 #define SDL_MAIN_HANDLED
@@ -26,7 +27,10 @@ int main(int argc, char *argv[])
 {
     SDL_SetMainReady();
     SDL_Init(SDL_INIT_VIDEO);
+
     ...
+
+    return 0;
 }
 ```
 == Remarks ==
