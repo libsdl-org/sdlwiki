@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_IME_INTERNAL_EDITING =
+A hint that specifies whether certain IMEs should handle text editing internally instead of sending [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.
+
+
+
+
+== Values ==
+{|
+|0
+|[[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text. (default)
+|-
+|1
+|If supported by the IME then [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are not sent, and text that is being composed will be rendered in its own UI.
+|}
+
+
+== Default ==
+By default [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Version ==
+This hint is available since SDL 2.0.4.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
