@@ -16,7 +16,7 @@ SDL_CFLAGS := $(shell sdl-config --cflags)
 SDL_LDFLAGS := $(shell sdl-config --libs)
 ```
 
-If you are using autoconf and automake for your project, you can copy the contents of '[https://hg.libsdl.org/SDL/file/SDL-1.2/sdl.m4 sdl.m4]' ([https://hg.libsdl.org/SDL/file/tip/sdl2.m4 sdl2.m4]) into your acinclude.m4 file, and then add the following to your configure.in file:
+If you are using autoconf and automake for your project, you can copy the contents of '[https://hg.libsdl.org/SDL/file/SDL-1.2/sdl.m4 sdl.m4]' ([https://hg.libsdl.org/SDL/file/tip/sdl2.m4 sdl2.m4]) into your acinclude.m4 file, and then add the following to your configure.in file (for SDL 1.2):
 
 ```m4
   dnl Check for SDL
@@ -38,7 +38,9 @@ There is a bug in the nasm assembler version 0.98 - the version shipped with Red
 == I installed SDL from source but can't build or run SDL applications ==
 Edit the file /etc/ld.so.conf, and make sure it contains the line:
 
+```
 /usr/local/lib
+```
 
 As root, run /sbin/ldconfig
 
@@ -55,7 +57,7 @@ If all of the above still don't work, send e-mail to the SDL mailing list with t
 * which sdl-config
 * sdl-config --version
 * locate libSDL
-* tail config.log 
+* tail config.log
 
 == I'm running Mandrake or Slackware and applications can't find SDL! ==
 You probably have a version of SDL built with aRts sound support, and the KDE libraries are not installed in a system standard location. You need to add the directory containing libartsc.so.0 to the file /etc/ld.so.conf and then run the command "ldconfig". On newer versions of Mandrake, this directory is:
@@ -65,10 +67,14 @@ You probably have a version of SDL built with aRts sound support, and the KDE li
 How to set an environment variable depends on your login shell:
 
 For Bourne shell derivatives: (sh, ash, ksh, zsh, bash, etc.)
+```bash
 VARIABLE='value'; export VARIABLE
+```
 
 For C shell derivatives: (csh, tcsh, etc.)
+```c++sh
 setenv VARIABLE 'value'
+```
 
 == I get the error: "no video devices available" ==
 SDL doesn't use the X11 video driver if it can't open the X display, and if no other drivers are available, it will report this error.
@@ -110,6 +116,7 @@ X needs to be able to switch to the desired resolution. For this to work, your m
 The following example is taken from my config for XFree86 4.0.1, but 3.3.x is similiar. Note that if your monitor isn't capable of using these video modes, the X server will drop these modes from the list of available video modes.
 Example:
 
+```
 Section "Screen"
     Identifier  "Screen 1"
     Device      "3dfx"
@@ -127,6 +134,7 @@ Section "Screen"
         ViewPort    0 0
     EndSubsection
 EndSection
+```
 
 Note the different entries for 8 & 16 bit screendepth. I.e. the 320x240 resolution is *not* available when X is started with 16bit depth (the default).
 
@@ -159,4 +167,4 @@ Run the following command: sudo apt-get build-dep libsdl1.2
 
 Or you can get all the dependencies individually:
 
-sudo apt-get install build-essential mercurial make autoconf automake libtool libasound2-dev libpulse-dev libaudio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxxf86vm-dev libxss-dev libgl1-mesa-dev libesd0-dev 
+sudo apt-get install build-essential mercurial make autoconf automake libtool libasound2-dev libpulse-dev libaudio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxxf86vm-dev libxss-dev libgl1-mesa-dev libesd0-dev
