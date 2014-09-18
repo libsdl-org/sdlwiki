@@ -16,7 +16,7 @@ SDL_CFLAGS := $(shell sdl-config --cflags)
 SDL_LDFLAGS := $(shell sdl-config --libs)
 ```
 
-If you are using autoconf and automake for your project, you can copy the contents of 'sdl.m4' into your acinclude.m4 file, and then add the following to your configure.in file:
+If you are using autoconf and automake for your project, you can copy the contents of 'sdl.m4' ([https://hg.libsdl.org/SDL/file/tip/sdl2.m4 sdl2.m4]) into your acinclude.m4 file, and then add the following to your configure.in file:
 
 ```m4
   dnl Check for SDL
