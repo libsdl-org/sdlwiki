@@ -103,11 +103,11 @@ A structure that contains system-dependent information about a window.
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
 |-
-|MirConnection*
+|!MirConnection*
 |'''connection'''
 |the Mir display server connection
 |-
-|MirSurface*
+|!MirSurface*
 |'''surface'''
 |the Mir surface
 |-
