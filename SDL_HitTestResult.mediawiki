@@ -6,7 +6,7 @@
 
 
 = SDL_HitTestResult =
-An enumeration of possible return values from the [[SDL_HitTest]]() callback.
+An enumeration of possible return values from the [[SDL_SetWindowHitTest|SDL_HitTest]]() callback.
 
 
 
