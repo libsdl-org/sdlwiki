@@ -319,14 +319,16 @@ These functions maybe do not need to be documented here
 === Missing enumerations ===
 
 * [[SDL_eventaction]]
-* [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerBindType]]
-* [[SDL_GameControllerButton]]
 * [[SDL_MessageBoxButtonFlags]]
 * [[SDL_MessageBoxColorType]]
 * [[SDL_MessageBoxFlags]]
 * [[SDL_SystemCursor]]
 * [[WindowShapeMode]]
+
+These structures are currently documented as "draft" only and need improvements:
+* [[SDL_GameControllerAxis]]
+* [[SDL_GameControllerButton]]
 
 === Missing structures ===
 
@@ -346,6 +348,7 @@ These structures are currently documented as "draft" only and need improvements:
 * [[SDL_GameControllerButtonBind]]
 
 ==== SDL_haptic.h ====
+These structures are currently documented as "draft" only and need improvements:
 * [[SDL_HapticLeftRight]]
 
 ==== SDL_joystick.h ====
@@ -361,6 +364,7 @@ These structures are currently documented as "draft" only and need improvements:
 * [[SDL_WindowShapeMode]]
 
 ==== SDL_touch.h ====
+These structures are currently documented as "draft" only and need improvements:
 * [[SDL_Finger]]
 
 ==== SDL2_test ====
