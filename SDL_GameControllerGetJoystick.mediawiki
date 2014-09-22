@@ -60,7 +60,7 @@ This function will give you a SDL_Joystick object, which allows you to use the S
 
 <!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
-The pointer returned is owned by the GameController.  You should not call [[SDL_JoystickClose]]() on it, for example, since doing so will likely cause SDL to crash.
+The pointer returned is owned by the SDL_GameController.  You should not call [[SDL_JoystickClose]]() on it, for example, since doing so will likely cause SDL to crash.
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
