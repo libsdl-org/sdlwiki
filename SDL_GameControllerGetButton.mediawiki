@@ -24,7 +24,7 @@ Uint8 SDL_GameControllerGetButton(SDL_GameController*      gamecontroller,
 |a game controller
 |-
 |'''button'''
-|a button index
+|a button index (one of the [[SDL_GameControllerButton]] values)
 |}
 
 <!-- #Fill in the above table per the Style Guide, then delete this comment. -->
