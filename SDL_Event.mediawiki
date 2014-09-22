@@ -249,7 +249,6 @@ SDL_PushEvent(&user_event);
 :[[SDL_EventType]]
 
 == Related Structures ==
-:[[SDL_ActiveEvent]]
 :[[SDL_DollarGestureEvent]]
 :[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
@@ -262,12 +261,10 @@ SDL_PushEvent(&user_event);
 :[[SDL_MouseWheelEvent]]
 :[[SDL_MultiGestureEvent]]
 :[[SDL_QuitEvent]]
-:[[SDL_ResizeEvent]]
 :[[SDL_SysWMEvent]]
 :[[SDL_TextEditingEvent]]
 :[[SDL_TextInputEvent]]
 :[[SDL_TouchFingerEvent]]
-:[[SDL_TouchButtonEvent]]
 :[[SDL_UserEvent]]
 :[[SDL_WindowEvent]]
 
