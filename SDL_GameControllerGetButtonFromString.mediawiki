@@ -25,7 +25,7 @@ SDL_GameControllerButton SDL_GameControllerGetButtonFromString(const char* pchSt
 
 
 == Return Value ==
-Returns a button mapping on success or SDL_CONTROLLER_BUTTON_INVALID on failure.
+Returns a button mapping ([[SDL_GameControllerButton]]) on success or SDL_CONTROLLER_BUTTON_INVALID on failure.
 
 
 == Code Examples ==
