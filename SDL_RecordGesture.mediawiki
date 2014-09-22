@@ -47,7 +47,7 @@ If the parameter is -1 (i.e., all devices), this function will always return 1, 
 
 
 == Related Functions ==
-:[[SDL_GetTouch]]
+:[[SDL_GetTouchDevice]]
 <!-- #Remove this section if empty -->
 
 ----
