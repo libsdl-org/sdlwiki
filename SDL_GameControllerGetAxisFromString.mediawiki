@@ -5,7 +5,7 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 = SDL_GameControllerGetAxisFromString =
-Use this function to convert a string into an enum representation for a GameController axis.
+Use this function to convert a string into an enum representation for an [[SDL_GameControllerAxis]].
 
 
 
@@ -19,12 +19,12 @@ SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char* pchString
 == Function Parameters ==
 {|
 |'''pchString'''
-|string representing a GameController axis
+|string representing a SDL_GameController axis
 |}
 
 
 == Return Value ==
-Returns the GameController axis enum corresponding to the input string, or SDL_CONTROLLER_AXIS_INVALID if no match was found.
+Returns the [[SDL_GameControllerAxis]] enum corresponding to the input string, or SDL_CONTROLLER_AXIS_INVALID if no match was found.
 
 
 == Code Examples ==
@@ -36,7 +36,7 @@ You can add your code example here
 
 
 == Remarks ==
-This function is called internally to translate GameController mapping strings for the underlying joystick device into the consistent GameController mapping.  You do not normally need to call this function unless you are parsing GameController mappings in your own code.
+This function is called internally to translate SDL_GameController mapping strings for the underlying joystick device into the consistent SDL_GameController mapping.  You do not normally need to call this function unless you are parsing SDL_GameController mappings in your own code.
 
 
 == Related Functions ==
