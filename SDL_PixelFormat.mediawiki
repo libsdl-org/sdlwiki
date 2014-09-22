@@ -75,7 +75,7 @@ A structure that contains pixel format information.
 |'''refcount'''
 |(internal use)
 |-
-|<rowstyle="color: #808080;">SDL_PixelFormat*
+|<rowstyle="color: #808080;">[[SDL_PixelFormat]]*
 |'''next'''
 |(internal use)
 |}
@@ -164,7 +164,7 @@ printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha
 == Remarks ==
 Everything in the pixel format structure is read-only.
 
-A pixel format has either a palette or masks.  If a palette is used '''Rmask''', '''Gmask''', '''Bmask''', and '''Amask''' will be 0.  
+A pixel format has either a palette or masks.  If a palette is used '''Rmask''', '''Gmask''', '''Bmask''', and '''Amask''' will be 0.
 
 <span id="bytesperpixel"></span> The data types used to represent pixels are as follows:
 {|
