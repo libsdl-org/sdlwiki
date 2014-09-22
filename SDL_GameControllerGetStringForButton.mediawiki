@@ -23,7 +23,7 @@ const char* SDL_GameControllerGetStringForButton(SDL_GameControllerButton button
 == Function Parameters ==
 {|
 |'''button'''
-|a button enum value
+|a button enum value (one of the [[SDL_GameControllerButton]] values)
 |}
 
 
