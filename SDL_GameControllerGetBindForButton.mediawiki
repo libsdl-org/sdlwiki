@@ -25,12 +25,12 @@ SDL_GameControllerButtonBind SDL_GameControllerGetBindForButton(SDL_GameControll
 |a game controller
 |-
 |'''button'''
-|a button enum value
+|a button enum value (one of the [[SDL_GameControllerButton]] values)
 |}
 
 
 == Return Value ==
-Returns a binding on success or an empty binding on failure. 
+Returns a binding on success or an empty binding on failure.
 
 
 == Code Examples ==
