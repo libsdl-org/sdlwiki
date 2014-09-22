@@ -24,7 +24,7 @@ int SDL_QueryTexture(SDL_Texture* texture,
 |a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format; see [[#format|Remarks]] for details
 |-
 |'''access'''
-|a pointer filled in with the actual access to the texture
+|a pointer filled in with the actual access to the texture (one of the [[SDL_TextureAccess]] values)
 |-
 |'''w'''
 |a pointer filled in with the width of the texture in pixels
