@@ -37,9 +37,7 @@ Each pixel in an 8-bit surface is an index into the '''colors''' field of the [[
 :[[SDL_PixelFormat]]
 
 == Related Functions ==
-:[[SDL_AddPaletteWatch]]
 :[[SDL_AllocPalette]]
-:[[SDL_DelPaletteWatch]]
 :[[SDL_FreePalette]]
 :[[SDL_SetPaletteColors]]
 
