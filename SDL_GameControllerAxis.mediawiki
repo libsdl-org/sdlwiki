@@ -1,0 +1,67 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerAxis =
+An enumeration of axes available from a controller.
+
+
+
+
+== Values ==
+{|
+|SDL_CONTROLLER_AXIS_INVALID      
+| 
+|-
+|SDL_CONTROLLER_AXIS_LEFTX        
+| 
+|-
+|SDL_CONTROLLER_AXIS_LEFTY        
+| 
+|-
+|SDL_CONTROLLER_AXIS_RIGHTX       
+| 
+|-
+|SDL_CONTROLLER_AXIS_RIGHTY       
+| 
+|-
+|SDL_CONTROLLER_AXIS_TRIGGERLEFT  
+| 
+|-
+|SDL_CONTROLLER_AXIS_TRIGGERRIGHT 
+| 
+|-
+|SDL_CONTROLLER_AXIS_MAX          
+| 
+|}
+
+<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Related Functions ==
+:[[SDL_GameControllerGetAxis]]
+:[[SDL_GameControllerGetAxisFromString]]
+:[[SDL_GameControllerGetBindForAxis]]
+:[[SDL_GameControllerGetStringForAxis]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryEnum]], [[CategoryGameController]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
