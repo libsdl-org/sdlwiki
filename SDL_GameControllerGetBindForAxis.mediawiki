@@ -25,7 +25,7 @@ SDL_GameControllerButtonBind SDL_GameControllerGetBindForAxis(SDL_GameController
 |a game controller
 |-
 |'''axis'''
-|an axis enum value
+|an axis enum value (one of the [[SDL_GameControllerAxis]] values)
 |}
 
 
