@@ -33,7 +33,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR, 
+SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
                          "Missing file",
                          "File is missing. Please reinstall the program.",
                          NULL);
@@ -56,7 +56,7 @@ This function may be called at any time, even before [[SDL_Init]](). This makes 
 
 On X11, SDL rolls its own dialog box with X11 primitives instead of a formal toolkit like GTK+ or Qt.
 
-Note that if SDL_Init() would fail because there isn't any available video target, this function is likely to fail for the same reasons. If this is a concern, check the return value from this function and fall back to writing to stderr if you can.
+Note that if [[SDL_Init]]() would fail because there isn't any available video target, this function is likely to fail for the same reasons. If this is a concern, check the return value from this function and fall back to writing to stderr if you can.
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
