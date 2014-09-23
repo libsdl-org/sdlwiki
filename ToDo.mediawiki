@@ -326,7 +326,7 @@ These functions maybe do not need to be documented here
 * [[SDL_SystemCursor]]
 * [[WindowShapeMode]]
 
-These structures are currently documented as "draft" only and need improvements:
+These enumerations are currently documented as "draft" only and need improvements:
 * [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerButton]]
 
