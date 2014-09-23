@@ -29,15 +29,15 @@ Returns the final offset in the data stream after the seek or -1 on error.
 
 == Code Examples ==
 ```c++
-SDL_RWops *rw = SDL_RWFromFile("myfile.bin","rb");
+SDL_RWops *rw = SDL_RWFromFile("myfile.bin", "rb");
 if (rw != NULL) {
     /* Seek to 0 bytes from the end of the file */
-    Sint64 length = SDL_RWseek(rw,0,SEEK_END);
+    Sint64 length = SDL_RWseek(rw, 0, RW_SEEK_END);
     SDL_RWclose(rw);
     if (length < 0) {
         printf("Could not seek inside myfile.bin\n");
     } else {
-        printf("myfile.bin is %d bytes long\n",length);
+        printf("myfile.bin is %d bytes long\n", length);
     }
 }
 ```
