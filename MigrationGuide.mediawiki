@@ -425,7 +425,7 @@ In addition, there are also Android and iOS specific functions, to let you acces
 
 If you wrote your own [[SDL_RWops]] implementation, the function signatures have changed. Functions now use <code>Sint64</code> and <code>size_t</code> instead of <code>int</code> so they can work with large files. In many cases, you can just update your function signatures and keep working as before, but if you had bumped up against these limitations, you might be happy to have a solution. Calling applications should know that the return values have changed.
 
-There is also a '''size''' method to RWops, now. This lets a RWops report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
+There is also a '''size''' method to RWops, now. It is called [[SDL_RWsize]](). This lets a RWops report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
 
 
 === Add-on libraries ===
