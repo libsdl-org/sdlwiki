@@ -22,7 +22,7 @@ int SDL_ShowMessageBox(const SDL_MessageBoxData* messageboxdata,
 == Function Parameters ==
 {|
 |'''messageboxdata'''
-|the SDL_MessageBoxData structure with title, text and other options
+|the [[SDL_MessageBoxData]] structure with title, text and other options
 |-
 |'''buttonid'''
 |the pointer to which user id of hit button should be copied
