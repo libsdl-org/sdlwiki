@@ -1,0 +1,49 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_RWsize =
+Use this macro to get the size of the data stream in an [[SDL_RWops]].
+
+
+
+
+== Syntax ==
+```c++
+Sint64 SDL_RWsize(SDL_RWops* context)
+```
+
+
+== Function Parameters ==
+{|
+|'''context'''
+|the [[SDL_RWops]] to get the size of the data stream from
+|}
+
+
+== Return Value ==
+Returns the size of the size of the data stream in the [[SDL_RWops]] on success, -1 if unknown or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+----
+[[CategoryAPI]], [[CategoryIO]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
