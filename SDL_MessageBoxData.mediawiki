@@ -6,7 +6,7 @@
 
 
 = SDL_MessageBoxData =
-A structure that contains title, text, window and other date for a message box.
+A structure that contains title, text, window and other data for a message box.
 
 
 
