@@ -10,8 +10,8 @@ There are a number of SDL tutorials available from different sources.
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
-* [http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2. Migrating a C++ game from SDL 1.2 to SDL 2]
-: An example of a project upgrade from SDL 1.2 to SDL 2
+* [http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2. Migrating a C++ game from SDL 1.2 to SDL 2.0]
+: An example of a project upgrade from SDL 1.2 to SDL 2.0
 
 * [http://lazyfoo.net/tutorials/SDL/index.php Beginning Game Programming v2.0]
 : A collection of detailed tutorials for game programming using SDL 2.0 with C++
