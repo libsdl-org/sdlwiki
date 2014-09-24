@@ -1,0 +1,58 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_MessageBoxButtonData =
+A structure that contains individual button data for a message box.
+
+
+
+
+== Data Fields ==
+{|
+| Uint32      
+|'''flags'''    
+| one of the values from [[SDL_MessageBoxButtonFlags]] 
+|-
+| int         
+|'''buttonid''' 
+| user defined button id (value returned via [[SDL_ShowMessageBox]]()) 
+|-
+| const char* 
+|'''text'''     
+| the UTF-8 button text 
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Related Enumerations ==
+:[[SDL_MessageBoxButtonFlags]]
+<!-- #Remove this section if empty -->
+
+== Related Structures ==
+:[[SDL_MessageBoxData]]
+<!-- #Remove this section if empty -->
+
+== Related Functions ==
+:[[SDL_ShowMessageBox]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryStruct]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
