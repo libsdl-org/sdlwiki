@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_ShowSimpleMessageBox =
-Use this function to display a simple message box.
+Use this function to display a simple modal message box.
 
 
 == Syntax ==
