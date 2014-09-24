@@ -320,15 +320,15 @@ These functions maybe do not need to be documented here
 
 * [[SDL_eventaction]]
 * [[SDL_GameControllerBindType]]
-* [[SDL_MessageBoxButtonFlags]]
-* [[SDL_MessageBoxColorType]]
-* [[SDL_MessageBoxFlags]]
 * [[SDL_SystemCursor]]
 * [[WindowShapeMode]]
 
 These enumerations are currently documented as "draft" only and need improvements:
 * [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerButton]]
+* [[SDL_MessageBoxButtonFlags]]
+* [[SDL_MessageBoxColorType]]
+* [[SDL_MessageBoxFlags]]
 
 === Missing structures ===
 
@@ -355,6 +355,7 @@ These structures are currently documented as "draft" only and need improvements:
 * [[SDL_JoystickGUID]]
 
 ==== SDL_messagebox.h ====
+These structures are currently documented as "draft" only and need improvements:
 * [[SDL_MessageBoxButtonData]]
 * [[SDL_MessageBoxColor]]
 * [[SDL_MessageBoxColorScheme]]
