@@ -20,9 +20,15 @@ int SDL_ShowCursor(int toggle)
 == Return Value ==
 Returns 1 if the cursor is shown, or 0 if the cursor is hidden, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
+
 == Code Examples ==
 ```c++
-You can add your code example here
+int main(int argc, char** argv) {
+    SDL_ShowCursor(SDL_DISABLE);
+    ...
+    return 0;
+}
+/* creates a blank cursor */
 ```
 
 == Remarks ==
