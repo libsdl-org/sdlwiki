@@ -50,9 +50,9 @@ if (SDL_NumJoysticks() > 0) {
 ```
 
 == Remarks ==
-* The device_index passed as an argument refers to the N'th joystick presently recognized by SDL on the system.  It is '''NOT''' the same as the instance ID used to identify the joystick in future events.  See [[SDL_JoystickInstanceID]] for more details about instance IDs.
+The device_index passed as an argument refers to the N'th joystick presently recognized by SDL on the system.  It is '''NOT''' the same as the instance ID used to identify the joystick in future events.  See [[SDL_JoystickInstanceID]]() for more details about instance IDs.
 
-* The joystick subsystem must be initialized before a joystick can be opened for use.
+The joystick subsystem must be initialized before a joystick can be opened for use.
 
 == Related Functions ==
 :[[SDL_JoystickClose]]
