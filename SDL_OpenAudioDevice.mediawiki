@@ -20,7 +20,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |a UTF-8 string reported by [[SDL_GetAudioDeviceName]](); see [[#device|Remarks]]
 |-
 |'''iscapture'''
-|non-zero to specify a device should be opened for recording, not playback.
+|non-zero to specify a device should be opened for recording, not playback
 |-
 |'''desired'''
 |an [[SDL_AudioSpec]] structure representing the desired output format; see [[SDL_OpenAudio]]() for more information
@@ -33,7 +33,7 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
 |}
 
 == Return Value ==
-Returns a valid device ID that is > 0 on success or 0 on failure; call [[SDL_GetError]]() for more information. 
+Returns a valid device ID that is > 0 on success or 0 on failure; call [[SDL_GetError]]() for more information.
 
 For compatibility with SDL 1.2, this will never return 1, since SDL reserves that ID for the legacy [[SDL_OpenAudio|SDL_OpenAudio]]() function.
 
