@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
     if (buttonid == -1) {
         SDL_Log("no selection");
     } else {
-       SDL_Log("selection was %s", buttons[buttonid].text);
+        SDL_Log("selection was %s", buttons[buttonid].text);
     }
     return 0;
 }
