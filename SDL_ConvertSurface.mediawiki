@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_ConvertSurface =
-Use this function to copy an existing surface into a new one that is optimized for blitting to a surface of a specified pixel format. 
+Use this function to copy an existing surface into a new one that is optimized for blitting to a surface of a specified pixel format.
 
 
 
@@ -23,7 +23,7 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*           src,
 |the [[SDL_PixelFormat]] structure that the new surface is optimized for
 |-
 |'''flags'''
-|the flags are unused and should be set to 0. This is a leftover from SDL 1.2's API.
+|the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API
 |}
 
 == Return Value ==
