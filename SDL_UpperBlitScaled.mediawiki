@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-SDL_UpperBlitScaled has been replaced with [[SDL_BlitScaled]]
+SDL_UpperBlitScaled() has been replaced with [[SDL_BlitScaled]]()
