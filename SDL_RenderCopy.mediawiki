@@ -23,7 +23,7 @@ int SDL_RenderCopy(SDL_Renderer*   renderer,
 |the source [[SDL_Rect]] structure or NULL for the entire texture 
 |-
 |'''dstrect''' 
-|the destination [[SDL_Rect]] structure or NULL for the entire rendering target.  The texture will be stretched to fill the given rectangle. 
+|the destination [[SDL_Rect]] structure or NULL for the entire rendering target; the texture will be stretched to fill the given rectangle 
 |}
 
 
