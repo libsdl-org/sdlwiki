@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RWFromMem =
-Use this function to prepare a read-only memory buffer for use with RWops.
+Use this function to prepare a read-write memory buffer for use with RWops.
 
 
 == Syntax ==
