@@ -33,6 +33,7 @@ Yes, you can find people hanging out on the IRC server at irc.freenode.net on th
 == Is there an official logo? ==
 Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple !DirectMedia Layer.
 
+```#!wiki comment
 == I have a project that uses SDL, how do I add it to the SDL website? ==
 If you have a project that you feel is ready for the general public, you can add it to the SDL website:
 
@@ -41,3 +42,4 @@ If you have a project that you feel is ready for the general public, you can add
  1. Go to the Download page that matches your project type (Games, Applications, etc.)
  1. Click on the "submit" button at the bottom of the page
  1. Fill in the form and click Submit at the bottom
+```
