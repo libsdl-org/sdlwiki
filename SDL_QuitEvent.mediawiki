@@ -19,12 +19,10 @@ A structure that contains the "quit requested" event.
 == Code Examples ==
 ```c++
 SDL_Event e;
-for (;;)
-{
+for (;;) {
     SDL_PollEvent(&e);
-    if (e.type == SDL_QUIT)
-    {
-        std::cout << "Program quit after " << e.quit.timestamp << " ticks" << std::endl;
+    if (e.type == SDL_QUIT) {
+        SDL_Log("Program quit after %i ticks", e.quit.timestamp);
         break;
     }
 }
