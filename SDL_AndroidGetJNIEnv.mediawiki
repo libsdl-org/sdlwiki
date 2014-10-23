@@ -17,7 +17,7 @@ Returns a pointer to Java native interface object (JNIEnv) to which the current 
 
 == Code Examples ==
 ```c++
-// Calls the void MyActivity.showHome() method of the Java instance of MyActivity.
+// Calls the void showHome() method of the Java instance of MyActivity.
 void showHome(void)
 {
     // retrieve the JNI environment.
