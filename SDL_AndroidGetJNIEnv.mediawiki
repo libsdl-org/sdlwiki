@@ -44,7 +44,7 @@ void showHome(void)
 The prototype of the function in SDL's code actually declare a void* return type, even if the implementation returns a pointer to a JNIEnv. The rationale being that it allows not to include jni.h in the headers of the SDL.
 
 == Version ==
-This function is available in SDL 2.0.0
+This function is available since SDL 2.0.0.
 
 == Related Functions ==
 :[[SDL_AndroidGetActivity]]
