@@ -14,7 +14,7 @@ void* SDL_AndroidGetActivity(void)
 == Return Value ==
 Returns the jobject representing the instance of the Activity class of the Android application, or NULL on error.
 
-The jobject returned by the function is a local reference and must be released by the caller. See the PushLocalFrame()/PopLocalFrame() or DeleteLocalRef() functions of the Java native interface ([http://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html in Oracle's documentation]).
+The jobject returned by the function is a local reference and must be released by the caller. See the !PushLocalFrame() and !PopLocalFrame() or !DeleteLocalRef() functions of the Java native interface ([http://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html in Oracle's documentation]).
 
 == Code Examples ==
 ```c++
