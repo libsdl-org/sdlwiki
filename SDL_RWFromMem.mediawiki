@@ -27,7 +27,7 @@ Returns a pointer to a new [[SDL_RWops]] structure, or NULL if it fails; call [[
 ```c++
 char bitmap[310000];
 SDL_RWops *rw = SDL_RWFromMem(bitmap, sizeof(bitmap));
-SDL_SaveBMP_RW(screen, rw, 1);  /* closes RWOPS, leaves us memory buffer of data */
+SDL_SaveBMP_RW(screen, rw, 1);  /* closes SDL_RWops, leaves us memory buffer of data */
 ```
 
 == Remarks ==
