@@ -35,7 +35,7 @@ This function sets up an [[SDL_RWops]] struct based on a memory area of a certai
 
 This memory buffer is not copied by the RWops; the pointer you provide must remain valid until you close the stream. Closing the stream will not free the original buffer.
 
-If you need to make sure the RWops never writes to the memory buffer, you should use [[SDL_RWFromConstMem]] with a read-only buffer of memory instead.
+If you need to make sure the RWops never writes to the memory buffer, you should use [[SDL_RWFromConstMem]]() with a read-only buffer of memory instead.
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]]
