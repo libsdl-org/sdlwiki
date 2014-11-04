@@ -23,7 +23,7 @@ An enumeration of flags that can be used in the flip parameter for [[SDL_RenderC
 /* casts may be necessary for some compiler settings or languages (e.g. C++) */
 SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL;
 
-SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, &angle, &center, flip);
+SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, angle, &center, flip);
 ```
 
 == Remarks ==
