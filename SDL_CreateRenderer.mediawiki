@@ -38,6 +38,8 @@ int main(int argc, char *argv[]) {
     SDL_Surface *bitmapSurface = NULL;
     int posX = 100, posY = 100, width = 320, height = 240;
 
+    SDL_Init(SDL_INIT_VIDEO);
+
     win = SDL_CreateWindow("Hello World", posX, posY, width, height, 0);
 
     renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
@@ -62,6 +64,8 @@ int main(int argc, char *argv[]) {
     SDL_DestroyTexture(bitmapTex);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(win);
+
+    SDL_Quit();
 
     return 0;
 }
