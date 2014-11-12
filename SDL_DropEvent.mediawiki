@@ -29,6 +29,7 @@ A structure that contains an event used to request a file open by the system.
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
+    SDL_bool done;
     SDL_Window *window;
     SDL_Event event;                        //  Declare event handle
     char* dropped_filedir;                  //  Pointer for directory of dropped file
@@ -48,14 +49,17 @@ int main(int argc, char *argv[]) {
     if (window == NULL) {
         // In the event that the window could not be made...
         printf("Could not create window: %s\n", SDL_GetError());
+        SDL_Quit();
         return 1;
     }
 
-    for(;;) {                               //  Program loop
-        while (SDL_PollEvent(&event)) {
+    done = SDL_FALSE;
+    while (!done) {                               //  Program loop
+        while (!done && SDL_PollEvent(&event)) {
             switch (event.type) {
                 case (SDL_QUIT): {          //  In case of exit
-                    return 0;               //  This skips the clean up
+                    done = SDL_TRUE;
+                    break;
                 }
 
                 case (SDL_DROPFILE): {      //  In case if dropped file
