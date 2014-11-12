@@ -30,12 +30,12 @@ A structure that contains an event used to request a file open by the system.
 int main(int argc, char *argv[]) {
     SDL_bool done;
     SDL_Window *window;
-    SDL_Event event;                        //  Declare event handle
-    char* dropped_filedir;                  //  Pointer for directory of dropped file
+    SDL_Event event;                        // Declare event handle
+    char* dropped_filedir;                  // Pointer for directory of dropped file
 
-    SDL_Init(SDL_INIT_VIDEO);               //  SDL2 initialization
+    SDL_Init(SDL_INIT_VIDEO);               // SDL2 initialization
 
-    window = SDL_CreateWindow(  //  Create a window
+    window = SDL_CreateWindow(  // Create a window
         "SDL_DropEvent usage, please drop the file on window",
         SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED,
@@ -53,24 +53,24 @@ int main(int argc, char *argv[]) {
     }
 
     done = SDL_FALSE;
-    while (!done) {                               //  Program loop
+    while (!done) {                         // Program loop
         while (!done && SDL_PollEvent(&event)) {
             switch (event.type) {
-                case (SDL_QUIT): {          //  In case of exit
+                case (SDL_QUIT): {          // In case of exit
                     done = SDL_TRUE;
                     break;
                 }
 
-                case (SDL_DROPFILE): {      //  In case if dropped file
+                case (SDL_DROPFILE): {      // In case if dropped file
                     dropped_filedir = event.drop.file;
-                    //  Shows directory of dropped file
+                    // Shows directory of dropped file
                     SDL_ShowSimpleMessageBox(
                         SDL_MESSAGEBOX_INFORMATION,
                         "File dropped on window",
                         dropped_filedir,
                         window
                     );
-                    SDL_free(dropped_filedir);    //  Free dropped_filedir memory
+                    SDL_free(dropped_filedir);    // Free dropped_filedir memory
                     break;
                }
             }
@@ -78,9 +78,9 @@ int main(int argc, char *argv[]) {
         SDL_Delay(0);
     }
 
-    SDL_DestroyWindow(window);        //  Close and destroy the window
+    SDL_DestroyWindow(window);        // Close and destroy the window
 
-    SDL_Quit();                       //  Clean up
+    SDL_Quit();                       // Clean up
     return 0;
 }
 ```
@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
 == Remarks ==
 [[SDL_DropEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_DROPFILE is reported. You would access it through the event's <code>drop</code> field.
 
-This event is disabled by default.  You can enable it with [[SDL_EventState]]().  
+This event is disabled by default.  You can enable it with [[SDL_EventState]]().
 
 If you enable this event you must free the filename in the event.
 
