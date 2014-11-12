@@ -55,7 +55,7 @@ So how does SDL handle text input?
 First, an example:
 
 === Example ===
-```#!cplusplus
+```c++
 #include "SDL.h"
 
 int main(int argc, char *argv[])
