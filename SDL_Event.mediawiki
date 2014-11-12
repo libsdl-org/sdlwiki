@@ -127,11 +127,11 @@ SDL_Event test_event;
 ```
 [[SDL_PollEvent]]() removes the next event from the event queue.  If there are no events on the queue it returns 0, otherwise it returns 1. We use a ```while``` loop to process each event in turn.
 ```c++
-while(SDL_PollEvent(&test_event)) {
+while (SDL_PollEvent(&test_event)) {
 ```
 The [[SDL_PollEvent]]() function takes a pointer to an [[SDL_Event]] structure that is to be filled with event information. We know that if [[SDL_PollEvent]]() removes an event from the queue then the event information will be placed in our test_event structure, but we also know that the type of event will be placed in the '''type''' member of test_event. So to handle each event type separately we use a ```switch``` statement.
-```#!highlightcpp
-  switch(test_event.type) {
+```c++
+  switch (test_event.type) {
 ```
 We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_MOUSEMOTION is, more than likely, the event we're looking for. Looking at the [[#table|table]] below tells us that SDL_MOUSEMOTION events are handled within the [[SDL_MouseMotionEvent]] structure which is the '''motion''' member of [[SDL_Event]]. We can check for the SDL_MOUSEMOTION event '''type''' within our ```switch``` statement like so:
 ```c++
@@ -158,10 +158,10 @@ It is also possible to push events onto the event queue and so use it as a two-w
 ```c++
 SDL_Event user_event;
 
-user_event.type=SDL_USEREVENT;
-user_event.user.code=2;
-user_event.user.data1=NULL;
-user_event.user.data2=NULL;
+user_event.type = SDL_USEREVENT;
+user_event.user.code = 2;
+user_event.user.data1 = NULL;
+user_event.user.data2 = NULL;
 SDL_PushEvent(&user_event);
 ```
 
