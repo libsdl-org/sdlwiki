@@ -26,7 +26,6 @@ A structure that contains an event used to request a file open by the system.
 // SDL_DropEvent usage
 
 #include "SDL.h"
-#include <stdio.h>
 
 int main(int argc, char *argv[]) {
     SDL_bool done;
@@ -48,7 +47,7 @@ int main(int argc, char *argv[]) {
     // Check that the window was successfully made
     if (window == NULL) {
         // In the event that the window could not be made...
-        printf("Could not create window: %s\n", SDL_GetError());
+        SDL_Log("Could not create window: %s", SDL_GetError());
         SDL_Quit();
         return 1;
     }
