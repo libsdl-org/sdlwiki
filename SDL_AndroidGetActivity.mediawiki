@@ -18,6 +18,9 @@ The jobject returned by the function is a local reference and must be released b
 
 == Code Examples ==
 ```c++
+#include "SDL.h"
+#include <jni.h>
+
 // Calls the void showHome() method of the Java instance of the activity.
 void showHome(void)
 {
