@@ -38,6 +38,7 @@ void showHome(void)
 
     // clean up the local references.
     env->DeleteLocalRef(activity);
+    env->DeleteLocalRef(clazz);
 }
 ```
 
