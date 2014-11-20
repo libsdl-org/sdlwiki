@@ -17,6 +17,9 @@ Returns a pointer to Java native interface object (JNIEnv) to which the current 
 
 == Code Examples ==
 ```c++
+#include "SDL.h"
+#include <jni.h>
+
 // Calls the void showHome() method of the Java instance of MyActivity.
 void showHome(void)
 {
