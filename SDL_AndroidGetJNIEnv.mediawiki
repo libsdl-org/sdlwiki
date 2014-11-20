@@ -41,6 +41,12 @@ void showHome(void)
     // clean up the local references.
     env->DeleteLocalRef(activity);
     env->DeleteLocalRef(clazz);
+
+    // Warning (and discussion of implementation details of SDL for Android):
+    // Local references are automatically deleted if a native function called
+    // from Java side returns. For SDL this native function is main() itself.
+    // Therefore references need to be manually deleted because otherwise the
+    // references will first be cleaned if main() returns (application exit).
 }
 ```
 
