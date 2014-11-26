@@ -91,6 +91,8 @@ Build SDL "the Unix way" with the configure or CMake scripts.
 
 !!! WRITE ME
 
+See [[Android|Building SDL2 for Android]]
+
 === Raspberry Pi ===
 
 !!! WRITE ME
