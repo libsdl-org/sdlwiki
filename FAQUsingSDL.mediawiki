@@ -79,7 +79,7 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |dsp                        
 |(default) Use the OSS API by opening /dev/dsp
 | yes 
-|     
+| yes 
 |-
 |dma                        
 |Use the OSS API to perform DMA access on /dev/dsp
@@ -89,12 +89,32 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |esd                        
 |Connect to the ESound audio daemon
 | yes 
-|     
+| yes 
 |-
 |artsc                      
 |Connect to the ARTS audio daemon  
 | yes 
 |     
+|-
+|pulse                      
+|Use !PulseAudio                   
+| yes 
+|     
+|-
+|alsa                       
+|Use ALSA PCM audio                
+| yes 
+| yes 
+|-
+|arts                       
+|Use Analog !RealTime Synthesizer  
+| yes 
+| yes 
+|-
+|pulseaudio                 
+|Use !PulseAudio                   
+|     
+| yes 
 |}
 
 === Win32 ===
@@ -113,6 +133,16 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |Use the Win32 !MultiMedia API     
 | yes 
 |     
+|-
+|directsound                
+|Use !DirectSound                  
+|     
+| yes 
+|-
+|winmm                      
+|Use Windows Waveform Audio        
+|     
+| yes 
 |}
 
 == What environment variables are used by SDL? ==
