@@ -24,7 +24,7 @@ SDL supports most popular flavors of Unix: Linux, the various BSDs, Solaris, and
 
 First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!
 
-Debian-based systems (including Ubuntu) can simply do "sudo apt-get install libsdl2-2.0" to get the library installed system-wide, and all sorts of other useful dependencies, too. "sudo apt-get install libsdl2-dev" will install everything necessary to build programs that use SDL. Please see docs/README-linux.md in SDL's source code for a more complete discussion of packages involved.
+Debian-based systems (including Ubuntu) can simply do "sudo apt-get install libsdl2-2.0" to get the library installed system-wide, and all sorts of other useful dependencies, too. "sudo apt-get install libsdl2-dev" will install everything necessary to build programs that use SDL. Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-linux.md docs/README-linux.md] for a more complete discussion of packages involved.
 
 Red Hat-based systems (including Fedora) can simply do "sudo yum install SDL2" to get the library installed system-wide, or "sudo yum install SDL2-devel" to get headers and other build requirements ready for compiling your own SDL programs.
 
@@ -57,13 +57,15 @@ Once you have the library installed, you can use the sdl2-config program to help
 
     ```gcc -o myprogram myprogram.c <code>sdl2-config --cflags --libs</code>```
 
-SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See docs/README-linux.md for more details.
+SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See [https://hg.libsdl.org/SDL/file/tip/docs/README-linux.md docs/README-linux.md] for more details.
 
 === SteamOS ===
 
 If you are shipping a Linux game on Steam, or explicitly targeting SteamOS, the system is guaranteed to provide SDL. Steam will set up the dynamic loader path so that a known-good copy of SDL is available to any program that needs it. Steam provides both SDL 1.2 and 2.0 in this manner, for both x86 and amd64, in addition to several add-on libraries like SDL_mixer. When shipping a Linux game on Steam, do not ship a build of SDL with your game. Link against SDL as normal, and expect it to be available on the player's system. This allows Valve to make fixes and improvements to their SDL and those fixes to flow on to your game.
 
 We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build your game using the Steam Runtime SDK or just about any old copy of SDL2, it ''should'' work with the one that ships with Steam.
+
+In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime if you plan to ship a Linux game for non-Steam platforms, too, since you know it's definitely built sanely.
 
 === Windows ===
 
@@ -97,17 +99,21 @@ See [[Android|Building SDL2 for Android]]
 
 If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, and also can do OpenGL ES rendering directly to the screen without an X server, to save resources. In theory, Wayland could also be supported, but at the time of this writing it doesn't configure/compile correctly (send patches!).
 
-Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll instead headers, libraries, and sdl2-config in /usr/local (or install wherever).
+Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 === NaCL ===
 
-!!! WRITE ME
+SDL can target Google Chrome's Native Client, aka "NaCL", which is, more or less, native binaries as web apps. We've tested with "PNaCL" specifically, but you can probably make this work with other compilers too.
 
-Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll instead headers, libraries, and sdl2-config in /usr/local (or install wherever).
+Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-nacl.md docs/README-nacl.md] for more details, including how to use our build scripts to generate an SDL build.
+
+Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 === HTML5 ===
 
 !!! WRITE ME
+
+This hasn't landed in SDL's repository yet, but will shortly. Stay tuned!
 
 === WinRT/Windows 8/WinPhone ===
 
