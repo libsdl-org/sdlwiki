@@ -15,7 +15,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |x11                        
 | (default) Use the X11 windowing system 
 | yes 
-|     
+| yes 
 |-
 |dga                        
 |Use XFree86 DGA 2.0 for fullscreen hardware acceleration 
@@ -30,7 +30,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |directfb                   
 |Use the DirectFB API                    
 | yes 
-|     
+| yes 
 |-
 |svgalib                    
 |Use the SVGAlib API                     
@@ -64,6 +64,11 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |Use the standard Win32 GDI        
 | yes 
 |     
+|-
+|windows                    
+|Use SDL Windows video driver      
+|     
+| yes 
 |}
 
 == How do I choose a specific audio driver? ==
