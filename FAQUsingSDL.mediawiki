@@ -4,29 +4,116 @@
 == How do I choose a specific video driver? ==
 
 You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
-* Linux:
-* x11 - (default) Use the X11 windowing system
-* dga - Use XFree86 DGA 2.0 for fullscreen hardware acceleration
-* fbcon - Use the framebuffer console
-* directfb - Use the DirectFB API
-* svgalib - Use the SVGAlib API
-* ggi - Use the General Graphics Interface API
-* aalib - Use the Ascii Art library 
-* Win32:
-* directx - (default) Use the !DirectDraw API
-* windib - Use the standard Win32 GDI 
+
+=== Linux ===
+{|
+|<bgcolor="#EDEDED">''Name''
+|<bgcolor="#EDEDED">''Description''
+|<bgcolor="#EDEDED">''1.2''
+|<bgcolor="#EDEDED">''2.0''
+|-
+|x11                        
+| (default) Use the X11 windowing system 
+| yes 
+|     
+|-
+|dga                        
+|Use XFree86 DGA 2.0 for fullscreen hardware acceleration 
+| yes 
+|     
+|-
+|fbcon                      
+|Use the framebuffer console             
+| yes 
+|     
+|-
+|directfb                   
+|Use the DirectFB API                    
+| yes 
+|     
+|-
+|svgalib                    
+|Use the SVGAlib API                     
+| yes 
+|     
+|-
+|ggi                        
+|Use the General Graphics Interface API  
+| yes 
+|     
+|-
+|aalib                      
+|Use the Ascii Art library               
+| yes 
+|     
+|}
+
+=== Win32 ===
+{|
+|<bgcolor="#EDEDED">''Name''
+|<bgcolor="#EDEDED">''Description''
+|<bgcolor="#EDEDED">''1.2''
+|<bgcolor="#EDEDED">''2.0''
+|-
+|directx                    
+|(default) Use the !DirectDraw API 
+| yes 
+|     
+|-
+|windib                     
+|Use the standard Win32 GDI        
+| yes 
+|     
+|}
 
 == How do I choose a specific audio driver? ==
 You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver you want to use. The drivers available depend on the platform and SDL compile-time options. Here is a partial list for some platforms:
 
-* Linux:
-* dsp - (default) Use the OSS API by opening /dev/dsp
-* dma - Use the OSS API to perform DMA access on /dev/dsp
-* esd - Connect to the ESound audio daemon
-* artsc - Connect to the ARTS audio daemon 
-* Win32:
-* dsound - (default) Use the !DirectSound API
-* waveout - Use the Win32 !MultiMedia API 
+=== Linux ===
+{|
+|<bgcolor="#EDEDED">''Name''
+|<bgcolor="#EDEDED">''Description''
+|<bgcolor="#EDEDED">''1.2''
+|<bgcolor="#EDEDED">''2.0''
+|-
+|dsp                        
+|(default) Use the OSS API by opening /dev/dsp
+| yes 
+|     
+|-
+|dma                        
+|Use the OSS API to perform DMA access on /dev/dsp
+| yes 
+|     
+|-
+|esd                        
+|Connect to the ESound audio daemon
+| yes 
+|     
+|-
+|artsc                      
+|Connect to the ARTS audio daemon  
+| yes 
+|     
+|}
+
+=== Win32 ===
+{|
+|<bgcolor="#EDEDED">''Name''
+|<bgcolor="#EDEDED">''Description''
+|<bgcolor="#EDEDED">''1.2''
+|<bgcolor="#EDEDED">''2.0''
+|-
+|dsound                     
+|(default) Use the !DirectSound API
+| yes 
+|     
+|-
+|waveout                    
+|Use the Win32 !MultiMedia API     
+| yes 
+|     
+|}
 
 == What environment variables are used by SDL? ==
 Mattias Engdegård has made a partial list of the environment variables that SDL may use. Keep in mind that these environment variables are not officially supported, and may change or go away at any time.
