@@ -13,7 +13,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 * ggi - Use the General Graphics Interface API
 * aalib - Use the Ascii Art library 
 * Win32:
-* directx - (default) Use the DirectDraw API
+* directx - (default) Use the !DirectDraw API
 * windib - Use the standard Win32 GDI 
 
 == How do I choose a specific audio driver? ==
@@ -25,8 +25,8 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 * esd - Connect to the ESound audio daemon
 * artsc - Connect to the ARTS audio daemon 
 * Win32:
-* dsound - (default) Use the DirectSound API
-* waveout - Use the Win32 MultiMedia API 
+* dsound - (default) Use the !DirectSound API
+* waveout - Use the Win32 !MultiMedia API 
 
 == What environment variables are used by SDL? ==
 Mattias Engdegård has made a partial list of the environment variables that SDL may use. Keep in mind that these environment variables are not officially supported, and may change or go away at any time.
