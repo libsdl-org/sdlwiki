@@ -44,7 +44,7 @@ You need to turn on the "enums as ints" option for your compiler:
 * For Apple's MPW environment, add this command line option: -enum int
 * For !CodeWarrior, go to the C/C++ Language settings menu for your project and check the "Enums Always Int" box.
 
-== I have an accelerated video card, but SDL tells me that that I have zero video memory and no acceleration! ==
+== I have an accelerated video card, but SDL tells me that I have zero video memory and no acceleration! ==
 Not all display targets can make use of hardware acceleration. In particular, this is the case for the X11 target which always presents you with a software framebuffer. Your video memory will always be reported to be zero if no acceleration is available.
 Note that this has nothing to do with 3D acceleration, just 2D hardware acceleration support in the underlying operating system video drivers.
 
