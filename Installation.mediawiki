@@ -30,7 +30,6 @@ Red Hat-based systems (including Fedora) can simply do "sudo yum install SDL2" t
 
 Gentoo users can "sudo emerge libsdl2" to get everything they need.
 
-
 If you're compiling SDL yourself, here's what we refer to as "the Unix way" of building:
 * Get a copy of the source code, either from Mercurial or an official tarball or whatever.
 * Make a separate build directory (SDL will refuse to build in the base of the source tree).
@@ -58,11 +57,21 @@ Once you have the library installed, you can use the sdl2-config program to help
 
     ```gcc -o myprogram myprogram.c <code>sdl2-config --cflags --libs</code>```
 
+SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See docs/README-linux.md for more details.
+
+=== SteamOS ===
+
+If you are shipping a Linux game on Steam, or explicitly targeting SteamOS, the system is guaranteed to provide SDL. Steam will set up the dynamic loader path so that a known-good copy of SDL is available to any program that needs it. Steam provides both SDL 1.2 and 2.0 in this manner, for both x86 and amd64, in addition to several add-on libraries like SDL_mixer. When shipping a Linux game on Steam, do not ship a build of SDL with your game. Link against SDL as normal, and expect it to be available on the player's system. This allows Valve to make fixes and improvements to their SDL and those fixes to flow on to your game.
+
+We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build your game using the Steam Runtime SDK or just about any old copy of SDL2, it ''should'' work with the one that ships with Steam.
+
 === Windows ===
 
 SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers.
 
 !!! WRITE ME cygwin, mingw64, cmake, buildbot pregenerated builds, etc.
+
+On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain() does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
 
 === Mac OS X ===
 
