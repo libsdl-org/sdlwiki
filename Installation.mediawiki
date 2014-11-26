@@ -71,7 +71,7 @@ SDL currently provides Visual Studio project files for Visual Studio 2008, 2010,
 
 !!! WRITE ME cygwin, mingw64, cmake, buildbot pregenerated builds, etc.
 
-On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain() does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
+On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain()) does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
 
 === Mac OS X ===
 
@@ -81,11 +81,13 @@ You can build for Mac OS X "the Unix way" with the configure or CMake scripts, a
 
 === Haiku ===
 
-Build SDL "the Unix way" with the configure or CMake scripts.
+Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built with either Haiku's gcc4 compiler or their legacy, BeOS-compatible gcc 2.95.
 
 === iOS ===
 
 !!! WRITE ME
+
+SDL ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator.
 
 === Android ===
 
@@ -93,11 +95,15 @@ See [[Android|Building SDL2 for Android]]
 
 === Raspberry Pi ===
 
-!!! WRITE ME
+If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, and also can do OpenGL ES rendering directly to the screen without an X server, to save resources. In theory, Wayland could also be supported, but at the time of this writing it doesn't configure/compile correctly (send patches!).
+
+Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll instead headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 === NaCL ===
 
 !!! WRITE ME
+
+Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll instead headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 === HTML5 ===
 
