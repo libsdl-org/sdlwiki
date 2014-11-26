@@ -51,7 +51,7 @@ The [[Introduction]] page has a more extensive listing about what features SDL o
 
 === Looking for more information ===
 
-The best place for information are:
+The best places for information are:
 * this wiki :)
 * the tests included in SDL, in the ```test/``` directory ([http://hg.libsdl.org/SDL/file/default/test browse online])
 * the SDL [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list]
