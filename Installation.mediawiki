@@ -79,6 +79,14 @@ On Windows, SDL does not depend on a C runtime at all, not even for malloc(). Th
 
 You can build for Mac OS X "the Unix way" with the configure or CMake scripts, and Xcode projects are also provided. You can ship an SDL.framework, or just build the .dylib file and ship it with an appropriate install_name to ship beside your program's binary.
 
+If you are building "the Unix way," we encourage you to use [https://hg.libsdl.org/SDL/file/tip/build-scripts/gcc-fat.sh build-scripts/gcc-fat.sh] in the SDL source tree for your compiler:
+
+    ```mkdir build ; cd build ; CC=/where/i/cloned/SDL/build-scripts/gcc-fat.sh ../configure ; make```
+
+This will accomplish two important things. First, it will build an x86/x86-64 "universal" version of the library. Second, it will make sure the library is compiled and linked with <code>-mmacosx-version-min=10.5</code>, so that the library will work on any Mac OS X version back to 10.5.0, regardless of what version of Xcode you compiled on and what platform SDK. Without this, you are likely to build something that only works on the latest version of Mac OS X!
+
+SDL2 has dropped support for PowerPC Macs and OS X versions older than 10.5 (SDL 1.2 still supports PPC and 10.0, though). That being said, some small changes can make it work, but they make the codebase uglier for small gains, and it's getting hard to find older macs to test on, so we probably will not be restoring official support.
+
 !!! WRITE ME cmake, buildbot pregenerated builds, etc.
 
 === Haiku ===
@@ -87,19 +95,19 @@ Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built 
 
 === iOS ===
 
-!!! WRITE ME
-
-SDL ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator.
+SDL ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
 
 === Android ===
 
-See [[Android|Building SDL2 for Android]]
+See [[Android|Building SDL2 for Android]].
 
 === Raspberry Pi ===
 
 If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, and also can do OpenGL ES rendering directly to the screen without an X server, to save resources. In theory, Wayland could also be supported, but at the time of this writing it doesn't configure/compile correctly (send patches!).
 
 Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
+
+The actual shell script our buildbot uses to run the Raspberry Pi build is [https://hg.libsdl.org/SDL/file/tip/build-scripts/raspberrypi-buildbot.sh build-scripts/raspberrypi-buildbot.sh] in the SDL source tree. It expects a cross-compiler in /opt/rpi-tools and a copy of the root filesystem from a RPi in /opt/rpi-sysroot. You can see some current quirks we work around in there (send patches!).
 
 === NaCL ===
 
@@ -111,20 +119,24 @@ Our buildbot tries to build for Native Client for each commit, and uploads succe
 
 === HTML5 ===
 
-!!! WRITE ME
+There is work-in-progress to make SDL compile with Emscripten, so you can compile your SDL2-based C/C++ application to JavaScript/asm.js code, and render with OpenGL ES (which becomes WebGL calls in the end). This work is already very promising, as Humble Bundle is shipping several games as web apps that use it.
 
-This hasn't landed in SDL's repository yet, but will shortly. Stay tuned!
+However, this hasn't landed in SDL's repository yet, but will shortly. Stay tuned!
 
 === WinRT/Windows 8/WinPhone ===
 
-!!! WRITE ME
+There are Visual Studio project files for Windows Phone and WinRT, versions 8.0 (using Visual Studio 2012) and 8.1 (using Visual Studio 2013). These are in the "VisualC-WinRT" directory.
+
+WinRT isn't hooked up to our buildbot yet (soon!), but the .bat file we intend to use with it is [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use PowerShell to do some magic, which you can see in [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
+
+=== Ouya ===
+
+SDL apps work on the Ouya! Just build like a standard Android application and side-load it on the device to test.
 
 
+== Not supported or abandoned ==
 
-
-== Not supported ==
-
-If your favorite system is listed here, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports these systems.
+If your favorite system is listed here, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports some of these systems.
 
 === Consoles (PlayStation, XBox, Wii, etc) ===
 
@@ -140,7 +152,7 @@ This worked at some point using a homebrew toolkit, but we removed it due to bit
 
 === Sony PSP ===
 
-This worked at some point using a homebrew toolkit, and while it is currently still in the source tree, no one is working on it. 1.2 did not support the PSP either.
+This worked at some point using a homebrew toolkit, and while it is currently still in the source tree, no one is working on it. 1.2 did not support the PSP either. We will likely remove this from SDL2 sooner than later, unless a maintainer steps up to improve support.
 
 === Mac OS 9 ("Mac OS Classic") ===
 
@@ -164,7 +176,7 @@ Support was removed in SDL 2.0 (and later versions of 1.2, too). There are forks
 
 === Dreamcast ===
 
-Support was removed in SDL 2.0. SDL 1.2 had homebrew support for the Dreamcast.
+Support was removed in SDL 2.0. SDL 1.2 had limited homebrew support for the Dreamcast.
 
 === Atari MiNT ===
 
