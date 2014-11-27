@@ -121,7 +121,7 @@ Our buildbot tries to build for Native Client for each commit, and uploads succe
 
 === HTML5 ===
 
-There is work-in-progress to make SDL compile with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES (which becomes WebGL calls in the end). This work is already very promising, as Humble Bundle is shipping several games as web apps that use it.
+There is work-in-progress to make SDL compile with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES (which become WebGL calls in the end). This work is already very promising, as Humble Bundle is shipping several games as web apps that use it.
 
 However, this hasn't landed in SDL's repository yet, but will shortly. Stay tuned!
 
