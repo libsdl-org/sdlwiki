@@ -61,7 +61,9 @@ SDL on Unix should only link against the C runtime (glibc). Every thing else it 
 
 === SteamOS ===
 
-If you are shipping a Linux game on Steam, or explicitly targeting SteamOS, the system is guaranteed to provide SDL. Steam will set up the dynamic loader path so that a known-good copy of SDL is available to any program that needs it. Steam provides both SDL 1.2 and 2.0 in this manner, for both x86 and amd64, in addition to several add-on libraries like SDL_mixer. When shipping a Linux game on Steam, do not ship a build of SDL with your game. Link against SDL as normal, and expect it to be available on the player's system. This allows Valve to make fixes and improvements to their SDL and those fixes to flow on to your game.
+SteamOS is literally a Linux system, and uses the same binaries you distribute to generic Linux Steam users, so generally speaking, all the other Linux advice applies.
+
+If you are shipping a Linux game on Steam, or explicitly targeting SteamOS, the system is guaranteed to provide SDL. The Steam Client will set up the dynamic loader path so that a known-good copy of SDL is available to any program that needs it before launching a game. Steam provides both SDL 1.2 and 2.0 in this manner, for both x86 and amd64, in addition to several add-on libraries like SDL_mixer. When shipping a Linux game on Steam, do not ship a build of SDL with your game. Link against SDL as normal, and expect it to be available on the player's system. This allows Valve to make fixes and improvements to their SDL and those fixes to flow on to your game.
 
 We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build your game using the Steam Runtime SDK or just about any old copy of SDL2, it ''should'' work with the one that ships with Steam.
 
