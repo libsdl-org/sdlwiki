@@ -8,8 +8,6 @@ SDL's rendering functions operate on a backbuffer; that is, calling a rendering 
 
 Therefore, when using SDL's rendering API, one does all drawing intended for the frame, and then calls this function once per frame to present the final drawing to the user.
 
-The backbuffer should be considered invalidated after each present; do not assume that previous contents will exist between frames. You are strongly encouraged to call [[SDL_RenderClear]]() to initialize the backbuffer before starting each new frame's drawing, even if you plan to overwrite every pixel.
-
 
 == Syntax ==
 ```c++
@@ -26,7 +24,7 @@ void SDL_RenderPresent(SDL_Renderer* renderer)
 <<Include(SDL_RenderClear, , , from="== Code Examples ==", to="== Remarks ==")>>
 
 == Remarks ==
-''You can add useful comments here''
+The backbuffer should be considered invalidated after each present; do not assume that previous contents will exist between frames. You are strongly encouraged to call [[SDL_RenderClear]]() to initialize the backbuffer before starting each new frame's drawing, even if you plan to overwrite every pixel.
 
 == Related Functions ==
 :[[SDL_RenderClear]] 
