@@ -25,7 +25,7 @@ int SDL_UpdateTexture(SDL_Texture*    texture,
 |the raw pixel data
 |-
 |'''pitch'''
-|the number of bytes between rows of pixel data
+|the number of bytes in a row of pixel data, including padding between lines
 |}
 
 == Return Value ==
