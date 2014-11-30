@@ -54,7 +54,7 @@ A structure that contains a template for a periodic effect.
 |-
 |Sint16
 |'''magnitude'''
-|peak value <!-- (units?) (like amplitude?) --> 
+|peak value; if negative, equivalent to 180 degrees extra phase shift <!-- (units?) (like amplitude?) --> 
 |-
 |Sint16
 |'''offset'''
@@ -62,7 +62,7 @@ A structure that contains a template for a periodic effect.
 |-
 |Uint16
 |'''phase'''
-|horizontal shift given by hundredths of a cycle; see [[#phase|Remarks]] for details <!-- (what is being shifted? Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) --> 
+|positive phase shift given by hundredth of a degree; see [[#phase|Remarks]] for details <!-- (Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) --> 
 |-
 |
 |
@@ -94,7 +94,7 @@ You can add your code example here
 <!-- There are several typing and grammatical errors in this section of the header. May not require fixing but probably should at least be looked at. Changes from header have been made below. -->
 
 <span id="type"></span>
-A periodic effect consists of a wave-shaped effect that repeats itself over time. The type determines the shape of the wave and the other parameters determine the dimensions of the wave. 
+A periodic effect consists of a wave-shaped effect that repeats itself over time. The type determines the shape of the wave and the other parameters determine the dimensions of the wave.
 ```
 button         period
 press          |     |
