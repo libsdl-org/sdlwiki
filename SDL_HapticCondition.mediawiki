@@ -50,11 +50,11 @@ A structure that contains a template for a condition effect.
 |-
 |Uint16
 |'''right_sat'''
-|level when joystick is to the positive side
+|level when joystick is to the positive side; max 0xFFFF
 |-
 |Uint16
 |'''left_sat'''
-|level when joystick is to the negative side
+|level when joystick is to the negative side; max 0xFFFF
 |-
 |Sint16
 |'''right_coeff'''
@@ -66,7 +66,7 @@ A structure that contains a template for a condition effect.
 |-
 |Uint16
 |'''deadband'''
-|size of the dead zone ^(units)?^
+|size of the dead zone; max 0xFFFF: whole axis-range when 0-centered ^(units)?^
 |-
 |Sint16
 |'''center'''
