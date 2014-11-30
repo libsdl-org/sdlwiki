@@ -19,7 +19,7 @@ A structure that contains a ^template for a^ haptic direction ^effect^. ???  <sp
 <span style="color: green;">There was a [3] attached to '''dir''' but I thought I remembered that we aren't including those details here.  Is that right or should I put it back in because it's important?</span>
 
 == Code Examples ==
-Example of force coming from the south with all encodings (force coming from the south means the user will have to pull the stick to counteract): 
+Example of force coming from the south with all encodings (force coming from the south means the user will have to pull the stick to counteract):
 ```c++
 SDL_HapticDirection direction;
 
@@ -39,9 +39,11 @@ direction.dir[0] = 9000; // Since we only have two axes we don't need more param
 ```
 
 == Remarks ==
+This is the direction where the force comes from, instead of the direction in which the force is exerted.
+
 Cardinal directions of the haptic device are relative to the positioning of the device. North is considered to be away from the user. ^South is toward the user, east is right, and west is left of the user.^
 
-The following diagram represents the cardinal directions: 
+The following diagram represents the cardinal directions:
 ```
                .--.
                |__| .-------.
