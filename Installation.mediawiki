@@ -89,8 +89,6 @@ This will accomplish two important things. First, it will build an x86/x86-64 "u
 
 SDL2 has dropped support for PowerPC Macs and OS X versions older than 10.5 (SDL 1.2 still supports PPC and 10.0, though). That being said, some small changes can make it work, but they make the codebase uglier for small gains, and it's getting hard to find older macs to test on, so we probably will not be restoring official support.
 
-!!! WRITE ME cmake, buildbot pregenerated builds, etc.
-
 === Haiku ===
 
 Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built with either Haiku's gcc4 compiler or their legacy, BeOS-compatible gcc 2.95.
