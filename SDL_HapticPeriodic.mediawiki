@@ -130,7 +130,7 @@ press          |     |
 |<code>\  |\  |\  |\  |\  |\  |\  |</code><br/><code> \ | \ | \ | \ | \ | \ | \ |</code><br/><code>  \|  \|  \|  \|  \|  \|  \| </code>
 |}
 
-<span id="phase"></span>'''phase''' is given by hundredths of a cycle, meaning that giving the phase a value of 9000 will displace it 25% of its period. Here are sample values:
+<span id="phase"></span>'''phase''' is given by hundredths of a degree, meaning that giving the phase a value of 9000 will displace it 25% of its period. Here are sample values:
 {|
 |0
 |No phase displacement
