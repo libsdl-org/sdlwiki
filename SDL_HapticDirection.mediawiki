@@ -54,15 +54,15 @@ The following diagram represents the cardinal directions:
                 [ COMPUTER ]
 
 
-                North (0,-1)
-                     ^
-                     |
-                     |
-(1,0) West <----[ HAPTIC ]----> East (-1,0)
-                     |
-                     |
-                     v
-                South (0,1)
+                 North (0,-1)
+                      ^
+                      |
+                      |
+(-1,0) West <----[ HAPTIC ]----> East (1,0)
+                      |
+                      |
+                      v
+                 South (0,1)
 
 
                  [ USER ]
@@ -105,13 +105,13 @@ If '''type''' is SDL_HAPTIC_CARTESIAN, direction is encoded by three positions (
 | 0,-1, 0 
 |-
 |East
-| -1, 0, 0 
+| 1, 0, 0 
 |-
 |South
 | 0, 1, 0 
 |-
 |West
-| 1, 0, 0 
+| -1, 0, 0 
 |}
  The Z axis represents the height of the effect if supported, otherwise it's unused. In cartesian encoding (1, 2) would be the same as (2, 4), you can use any multiple you want, only the direction matters.
 
