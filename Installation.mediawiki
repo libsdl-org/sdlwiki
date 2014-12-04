@@ -71,11 +71,13 @@ In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime
 
 === Windows ===
 
-SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers.
+SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
 
-!!! WRITE ME cygwin, mingw64, cmake, buildbot pregenerated builds, etc.
+As of SDL 2.0.3, the codebase still compiles on Cygwin and MingW32, but we expect these to stop working in the future. MingW64 is still supported (and despite the name, can also build 32-bit binaries). Note that the Visual Studio builds produce standard Windows .DLLs, which are usable with any compiler that can link to them, and we care about making sure the public SDL headers work with any compiler, but making sure SDL itself builds with some of these compilers has become time-consuming and messy for diminishing returns. For simple fixes, we will always accept patches, though!
 
 On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain()) does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
+
+Our buildbot tries to build for Win32 for each commit, and uploads successful Visual Studio 2010 builds to a public webserver. If you want to grab these, it can save you time, if you just want to use a bleeding-edge SDL2.dll without compiling one yourself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-visualstudio/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These builds should work with just about any Windows compiler. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unzip the archive, point your project at its "include" directory for headers, and link against SDL2.lib (and optionally, SDLmain.lib if you want SDL to provide a WinMain() that calls your standard Unix-like main() function). Distribute the SDL2.dll with your app's .exe file, and you're good to go!
 
 === Mac OS X ===
 
