@@ -6,7 +6,7 @@
 
 How to install SDL varies depending on your platform.
 
-SDL 1.2 isn't covered here. It can be installed on legacy platforms that SDL2 doesn't support, such as Mac OS 9 or OS/2, but settling for 1.2 would not be a drop-in replacement for 2.0. Most of these installation instructions happen to work with 1.2, however, on the platforms we cover.
+SDL 1.2 isn't covered here. It can be installed on legacy platforms that SDL2 doesn't support, such as Mac OS 9 or OS/2, but settling for 1.2 would not be a drop-in replacement for 2.0. Some of these installation instructions happen to work with 1.2, however, on the platforms we cover.
 
 == Static linking ==
 
