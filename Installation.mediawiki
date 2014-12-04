@@ -3,8 +3,6 @@
 
 = Installing SDL =
 
-(This page is a work in progress.)
-
 
 How to install SDL varies depending on your platform.
 
