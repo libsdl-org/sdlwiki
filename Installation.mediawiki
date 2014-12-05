@@ -127,7 +127,7 @@ However, this hasn't landed in SDL's repository yet, but will shortly. Stay tune
 
 There are Visual Studio project files for Windows Phone and WinRT, versions 8.0 (using Visual Studio 2012) and 8.1 (using Visual Studio 2013). These are in the "VisualC-WinRT" directory.
 
-WinRT isn't hooked up to our buildbot yet (soon!), but the .bat file we intend to use with it is [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use PowerShell to do some magic, which you can see in [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
+WinRT isn't hooked up to our buildbot yet (soon!), but the .bat file we intend to use with it is [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use !PowerShell to do some magic, which you can see in [https://hg.libsdl.org/SDL/file/tip/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
 
 === Ouya ===
 
