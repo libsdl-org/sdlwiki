@@ -17,7 +17,7 @@ A structure that contains joystick trackball motion event information.
 |-
 |SDL_JoystickID
 |'''which'''
-|the index of the joystick that reported the event
+|the instance id of the joystick that reported the event
 |-
 |Uint8
 |'''ball'''
