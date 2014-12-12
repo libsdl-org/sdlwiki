@@ -29,7 +29,7 @@ void close_my_rwops(SDL_RWops *rw)
 ```
 
 == Remarks ==
-Applications do not need to use this function unless they are providing their own RWops implementation. If you just need a RWops to read/write a common data source, you should use the built-in implementations in SDL, like SDL_RWFromFile() or SDL_RWFromMem(), etc, and call the '''close''' method on those SDL_RWops pointers when you are done with them.
+Applications do not need to use this function unless they are providing their own RWops implementation. If you just need a RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc, and call the '''close''' method on those SDL_RWops pointers when you are done with them.
 
 Only use [[SDL_FreeRW]]() on pointers returned by [[SDL_AllocRW]](). The pointer is invalid as soon as this function returns. Any extra memory allocated during creation of the RWops is not freed by [[SDL_FreeRW]](); the programmer must be responsible for managing that memory in their '''close''' method.
 
