@@ -18,7 +18,7 @@ You can add your code example here
 
 == Remarks ==
 
-This function will start accepting Unicode text input events in the focused SDL window, and start emitting SDL_TEXTINPUT and SDL_TEXTEDITING events.
+This function will start accepting Unicode text input events in the focused SDL window, and start emitting [[SDL_TextInputEvent|SDL_TEXTINPUT]] and [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.
 Please use this function in pair with [[SDL_StopTextInput]]().
 
 On some platforms using this function activates the screen keyboard.
