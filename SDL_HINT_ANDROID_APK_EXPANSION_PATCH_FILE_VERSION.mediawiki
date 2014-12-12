@@ -18,6 +18,10 @@ A hint that specifies the Android APK expansion patch file version.
 |}
 
 
+== Default ==
+By default this hint is not set.
+
+
 == Code Examples ==
 ```c++
 You can add your code example here
