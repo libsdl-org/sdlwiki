@@ -30,7 +30,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+NULL can safely be passed as the '''w''' or '''h''' parameter if the width or height value is not desired.
 
 == Related Functions ==
 :[[SDL_GL_GetDrawableSize]]
