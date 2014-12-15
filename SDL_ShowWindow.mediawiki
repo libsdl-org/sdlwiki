@@ -27,6 +27,7 @@ In SDL 1.2 you might have used BOOL WINAPI ShowWindow(_In_  HWND hWnd, _In_  int
 
 == Related Functions ==
 :[[SDL_HideWindow]]
+:[[SDL_RaiseWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
