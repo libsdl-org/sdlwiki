@@ -28,7 +28,7 @@ int SDL_LockTexture(SDL_Texture*    texture,
 |this is filled in with a pointer to the locked pixels, appropriately offset by the locked area 
 |-
 |'''pitch''' 
-|this is filled in with the pitch of the locked pixels 
+|this is filled in with the pitch of the locked pixels.  The pitch is the length of one row in bytes. 
 |}
 
 
