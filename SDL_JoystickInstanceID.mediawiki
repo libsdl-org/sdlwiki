@@ -4,7 +4,7 @@
 '''DRAFT'''
 
 = SDL_JoystickInstanceID =
-Use this function to get the device index of an opened joystick.
+Use this function to get the instance ID of an opened joystick.
 
 
 == Syntax ==
