@@ -6,7 +6,7 @@
 
 
 = SDL_HINT_VIDEO_X11_XVIDMODE =
-A hint that specifies whether the X11 VidMode extension should be used.
+A hint that specifies whether the X11 !VidMode extension should be used.
 
 
 
