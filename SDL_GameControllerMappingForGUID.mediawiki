@@ -5,7 +5,7 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 = SDL_GameControllerMappingForGUID =
-Use this function to get the GameController mapping string for a given GUID.
+Use this function to get the game controller mapping string for a given GUID.
 
 
 
