@@ -15,7 +15,7 @@ Returns an absolute path in UTF-8 encoding to the application data directory. NU
 
 The return path will be guaranteed to end with a path separator ('\' on Windows, '/' on most other platforms)
 
-The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it. 
+The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it.
 
 == Code Examples ==
 ```c++
@@ -40,7 +40,7 @@ void InitializeDataPath() {
 This is not necessarily a fast call, though, so you should call this once near startup and save the string if you need it.
 
 *Mac OS X and iOS Specific Functionality*
-If the application is in a ".app" bundle, this function returns the Resource directory (e.g. MyApp.app/Contents/Resources/). This behaviour can be overridden by adding a property to the Info.plist file. Adding a string key with the name SDL_FILESYSTEM_BASE_DIR_TYPE with a supported value will change the behaviour. 
+If the application is in a ".app" bundle, this function returns the Resource directory (e.g. !MyApp.app/Contents/Resources/). This behaviour can be overridden by adding a property to the Info.plist file. Adding a string key with the name SDL_FILESYSTEM_BASE_DIR_TYPE with a supported value will change the behaviour.
 
 Supported values for the SDL_FILESYSTEM_BASE_DIR_TYPE property (Given an application in /Applications/SDLApp/MyApp.app):
 
