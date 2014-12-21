@@ -15,7 +15,7 @@ Returns a pointer to the allocated memory on success, or NULL on failure; call [
 
 == Code Examples ==
 ```c++
-/* These functions should not be used except from pointers in a RWops */
+/* These functions should not be used except from pointers in an SDL_RWops */
 static int myseekfunc(SDL_RWops *context, int offset, int whence)
 {
   return SDL_SetError("Can't seek in this kind of RWops");
