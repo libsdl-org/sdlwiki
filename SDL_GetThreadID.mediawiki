@@ -13,7 +13,7 @@ SDL_threadID SDL_GetThreadID(SDL_Thread* thread)
 == Function Parameters ==
 {|
 |'''thread''' 
-|The thread to query
+|the thread to query
 |}
 
 
