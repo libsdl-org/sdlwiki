@@ -42,7 +42,7 @@ An enumeration of key modifier masks.
 |the Caps Lock key is down
 |-
 |KMOD_MODE
-|the AltGr key is down
+|the !AltGr key is down
 |-
 |KMOD_CTRL
 |(KMOD_LCTRL|KMOD_RCTRL)
