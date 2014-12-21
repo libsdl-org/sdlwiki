@@ -21,7 +21,7 @@ void SDL_FreeRW(SDL_RWops* area)
 /* this would be your RWops implementation's "close" method. */
 void close_my_rwops(SDL_RWops *rw)
 {
-    if(rw != NULL) {
+    if (rw != NULL) {
         /* close any other resources. */
         SDL_FreeRW(rw);
     }
