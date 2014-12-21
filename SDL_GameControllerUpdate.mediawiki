@@ -6,7 +6,7 @@
 
 
 = SDL_GameControllerUpdate =
-Use this function to manually pump GameController updates if not using the loop.
+Use this function to manually pump game controller updates if not using the loop.
 
 
 
