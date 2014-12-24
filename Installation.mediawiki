@@ -117,11 +117,11 @@ Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-nacl.md docs/README-n
 
 Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
-=== HTML5 ===
+=== Emscripten ===
 
-There is work-in-progress to make SDL compile with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES (which become WebGL calls in the end). This work is already very promising, as Humble Bundle is shipping several games as web apps that use it.
+SDL, as of 2.0.4, can be built with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES 2 (which becomes WebGL calls in the end). This port is currently considered experimental, but is already very promising; Humble Bundle is shipping several games as web apps that use it.
 
-However, this hasn't landed in SDL's repository yet, but will shortly. Stay tuned!
+This port is generally built "the Unix way," but with a little wrapper script over the configure script or CMake to smooth out some quirks. Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-emscripten.txt docs/README-emscripten.txt] for more details.
 
 === WinRT/Windows 8/WinPhone ===
 
