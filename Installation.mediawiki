@@ -121,7 +121,11 @@ Our buildbot tries to build for Native Client for each commit, and uploads succe
 
 SDL, as of 2.0.4, can be built with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES 2 (which becomes WebGL calls in the end). This port is currently considered experimental, but is already very promising; Humble Bundle is shipping several games as web apps that use it.
 
-This port is generally built "the Unix way," but with a little wrapper script over the configure script or CMake to smooth out some quirks. Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-emscripten.txt docs/README-emscripten.txt] for more details.
+This port is generally built "the Unix way," but with a little wrapper script over the configure script or CMake to smooth out some quirks. At the end, you should have a libSDL2.a static library to link against your Emscripten-compiled app.
+
+Please see [https://hg.libsdl.org/SDL/file/tip/docs/README-emscripten.txt docs/README-emscripten.txt] for more details.
+
+Also note that Emscripten has a simple implementation of SDL 1.2's API built in. This is written by hand in Javascript and is unrelated to the SDL codebase. The SDL2 port literally uses Emscripten to compile SDL's C code and link it to your app.
 
 === WinRT/Windows 8/WinPhone ===
 
