@@ -1,0 +1,54 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_EMSCRIPTEN_KEYBOARD_ELEMENT =
+A hint that specifies a value to override the binding element for keyboard inputs for Emscripten builds.
+
+
+
+
+== Values ==
+{|
+|#window
+|the !JavaScript window object (this is the default)
+|-
+|#document
+|the !JavaScript document object
+|-
+|#screen
+|the !JavaScript window.screen object
+|-
+|#canvas
+|the default WebGL canvas element
+|}
+
+Any other string without a leading # sign applies to the element on the page with that ID.
+
+
+== Default ==
+By default SDL will use the !JavaScript window object.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint only applies to the Emscripten platform.
+
+
+== Version ==
+This hint is available since SDL 2.0.4.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
