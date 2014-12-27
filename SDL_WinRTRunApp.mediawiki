@@ -1,0 +1,60 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_WinRTRunApp =
+Use this function to initialize and launch an SDL/WinRT application.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_WinRTRunApp(MainFunction mainFunction
+                    void*        reserved)
+```
+
+
+== Function Parameters ==
+{|
+|'''mainFunction'''
+|the SDL app's C-style main(); see [[#Remarks|Remarks]] for details
+|-
+|'''reserved'''
+|reserved for future use; should be NULL
+|}
+
+
+== Return Value ==
+Returns 0 on success or -1 on failure; call [[SDL_GetError]]() to retrieve more more information on the failure.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The function prototype for '''mainFunction''' is:
+
+```c++
+int MainFunction(int argc, char **argv)
+```
+: where its parameter are:
+ ||<code>argc</code> ||the number of arguments ||
+ ||<code>argv</code> ||an array of arguments ||
+
+
+== Version ==
+This function is available since SDL 2.0.3.
+
+
+----
+[[CategoryAPI]], [[CategoryInit]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
