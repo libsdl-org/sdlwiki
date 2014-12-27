@@ -11,8 +11,8 @@
 == Introduction ==
 This category contains functions for advanced, platform-specific functionality.
 
-<!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>> -->
+== Enumerations ==
+<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>>
 
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>> -->
