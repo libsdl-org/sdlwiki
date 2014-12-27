@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_WinRT_Path =
+An enumeration of WinRT / Windows Phone path types.
+
+
+
+
+== Values ==
+{|
+|SDL_WINRT_PATH_INSTALLED_LOCATION
+|the installed app's root directory; files here are likely to be read-only
+|-
+|SDL_WINRT_PATH_LOCAL_FOLDER
+|the app's local data store; files may be written here
+|-
+|SDL_WINRT_PATH_ROAMING_FOLDER
+|the app's roaming data store (unsupported on Windows Phone); files written here may be copied to other machines via a network connection
+|-
+|SDL_WINRT_PATH_TEMP_FOLDER
+|the app's temporary data store (unsupported on Windows Phone); files written here may be deleted at any time
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Version ==
+This enumeration is available since SDL 2.0.3.
+
+
+== Related Functions ==
+:[[SDL_WinRTGetFSPathUNICODE]]
+:[[SDL_WinRTGetFSPathUTF8]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryEnum]], [[CategorySystem]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
