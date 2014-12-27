@@ -13,7 +13,7 @@ This category contains all the (public) enumerations for SDL.
 
 == Enumerations ==
 
-<<FullSearchCached(category:CategoryEnum)>>
+<<FullSearchCached(category:CategoryEnum -title:SDLEnumTemplate -title:SGEnumerations)>>
 
 ----
 CategoryCategory
