@@ -1,0 +1,56 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_WinRTGetFSPathUNICODE =
+Use this function to retrieve a WinRT defined path on the local file system.
+
+
+
+
+== Syntax ==
+```c++
+const wchar_t* SDL_WinRTGetFSPathUNICODE(SDL_WinRT_Path pathType)
+```
+
+
+== Function Parameters ==
+{|
+|'''pathType'''
+|the type of path to retrieve, one of [[SDL_WinRT_Path]]
+|}
+
+
+== Return Value ==
+Returns a UTF-8 string (8-bit, multi-byte) containing the path, or NULL if the path is not available for any reason; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+
+Not all paths are available on all versions of Windows.  This is especially true on Windows Phone.  Check the documentation for the given [[SDL_WinRT_Path]] for more information on which path types are supported where.
+
+Documentation on most app-specific path types on WinRT can be found on MSDN, at the URL: http://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
+
+
+== Version ==
+This function is available in SDL 2.0.3.
+
+
+== Related Functions ==
+:[[SDL_WinRTGetFSPathUTF8]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategorySystem]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
