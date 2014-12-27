@@ -1,0 +1,46 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_RENDER_DIRECT3D11_DEBUG =
+A hint that specifies a variable controlling whether to enable Direct3D 11+'s Debug Layer.
+
+
+
+
+== Values ==
+{|
+|0
+|disable Debug Layer use
+|-
+|1
+|enable Debug Layer use
+|}
+
+
+== Default ==
+By default SDL does not use Direct3D Debug Layer.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This variable does not have any effect on the Direct3D 9 based renderer.
+
+
+== Version ==
+This hint is available since SDL 2.0.3.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
