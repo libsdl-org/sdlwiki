@@ -36,7 +36,9 @@ SDL_DestroyMutex(mutex);
 <!-- # End Mutex Example -->
 
 == Remarks ==
-''You can add useful comments here''
+Calls to this function do not return immediately if the mutex is already locked by another thread. See [[SDL_TryLockMutex]] to attempt to lock without blocking.
+
+SDL mutexes are reentrant.
 
 == Related Functions ==
 :[[SDL_DestroyMutex]]
