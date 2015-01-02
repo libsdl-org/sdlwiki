@@ -45,7 +45,7 @@ Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or a ne
 
 == Code Examples ==
 ```c++
-// Change 1024 stereo sample frames at 48000Hz from Float32 to Int16.
+// Change 1024 stereo sample frames at 48000Hz from float32 to int16.
 SDL_AudioCVT cvt;
 SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
 SDL_assert(cvt.needed); // obviously, this one is always needed.
