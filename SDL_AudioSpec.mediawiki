@@ -53,7 +53,7 @@ want.samples = 4096;
 want.callback = MyAudioCallback;  // you wrote this function elsewhere.
 dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 ```
-5
+
 == Remarks ==
 This structure is used by [[SDL_OpenAudioDevice]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudioDevice]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
 
