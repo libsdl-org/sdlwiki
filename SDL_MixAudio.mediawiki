@@ -22,7 +22,7 @@ void SDL_MixAudio(Uint8*       dst,
 |the source audio buffer to be mixed
 |-
 |'''len'''
-|,,defines ,,the length of the audio buffer in bytes
+|the length of the audio buffer in bytes
 |-
 |'''volume'''
 |ranges from 0 - 128, and should be set to SDL_MIX_MAXVOLUME for full audio volume
