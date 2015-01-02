@@ -10,7 +10,7 @@ Use this function to mix audio data in a specified format.
 void SDL_MixAudioFormat(Uint8*          dst,
                         const Uint8*    src,
                         SDL_AudioFormat format,
-                        Uint32          len, 
+                        Uint32          len,
                         int             volume)
 ```
 
@@ -35,7 +35,7 @@ void SDL_MixAudioFormat(Uint8*          dst,
 == Code Examples ==
 ```c++
 
-void myAudioCallback(void *udata, Uint8 *stream, int len)
+void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
     extern SDL_AudioFormat deviceFormat;
     extern const Uint8 *mixData;
