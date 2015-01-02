@@ -110,6 +110,8 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 
 '''flags''' may be any of the following OR'd together:
 
+<!-- #The following content is included on <code>SDL_InitSubSystem</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
+
 {|
 |'''SDL_INIT_TIMER'''
 |timer subsystem
@@ -138,6 +140,8 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |'''SDL_INIT_NOPARACHUTE'''
 |compatibility; this flag is ignored
 |}
+
+<!-- #End Include here. -->
 
 If you want to initialize subsystems separately you would call [[SDL_Init]](0) followed by [[SDL_InitSubSystem]]() with the desired subsystem flag.
 
