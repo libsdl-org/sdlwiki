@@ -7,9 +7,9 @@ This function is a legacy means of mixing audio. New programs might want to use 
 
 == Syntax ==
 ```c++
-void SDL_MixAudio(Uint8*       dst, 
+void SDL_MixAudio(Uint8*       dst,
                   const Uint8* src,
-                  Uint32       len, 
+                  Uint32       len,
                   int          volume)
 ```
 
@@ -30,7 +30,7 @@ void SDL_MixAudio(Uint8*       dst,
 
 == Code Examples ==
 ```c++
-void myAudioCallback(void *udata, Uint8 *stream, int len)
+void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
     extern const Uint8 *mixData;
     SDL_memset(stream, 0, len);  // make sure this is silence.
