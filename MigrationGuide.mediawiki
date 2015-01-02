@@ -378,7 +378,7 @@ Support for the older joystick API (/dev/input/js*) for Linux has been dropped f
 
 === Audio CDs ===
 
-The 1.2 CD API is completely gone. There's no replacement. Chances are you aren't shipping your music as CD-Audio tracks on a disc at this point, if you're shipping a disc at all. You can use [http://www.vorbis.com/ Ogg Vorbis] or some other audio file format for music, many of which are provided by SDL_mixer.
+The 1.2 CD API is completely gone. There's no replacement. Chances are you aren't shipping your music as CD-Audio tracks on a disc at this point, if you're shipping a disc at all. You can use [http://www.vorbis.com/ Ogg Vorbis] or some other audio file format for music, many of which are provided by [http://www.libsdl.org/projects/SDL_mixer/ SDL_mixer].
 
 
 === Dead platforms ===
