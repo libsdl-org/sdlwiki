@@ -11,7 +11,7 @@ SDL_mutex* SDL_CreateMutex(void)
 ```
 
 == Return Value ==
-Returns the initialized and unlocked mutex or NULL on failure; call [[SDL_GetError]]() for more information.  
+Returns the initialized and unlocked mutex or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 <!-- # Begin Mutex Example -->
@@ -36,7 +36,7 @@ SDL_DestroyMutex(mutex);
 <!-- # End Mutex Example -->
 
 == Remarks ==
-Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]] to attempt to lock without blocking.
+Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock without blocking.
 
 SDL mutexes are reentrant.
 
