@@ -17,9 +17,9 @@ These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
  |        |           |
  |        |           |  +--sample bit size---+
  |        |           |  |                    |
-15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0 
+15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0
 ```
-Unspecified bits are always zero, but may be used in later versions of SDL.  There are macros to query the specified bits. 
+Unspecified bits are always zero, but may be used in later versions of SDL.  There are macros to query the specified bits.
 
 === Audio Format Macros ===
 {|
@@ -139,7 +139,7 @@ printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
 ```
 
 == Remarks ==
-Be careful about assuming details of a data format. If you only check SDL_AUDIO_ISFLOAT, you might be surprised to find a later version of SDL adds Float64 support when you expected there to be only 32-bit data, for example.
+Be careful about assuming details of a data format. If you only check SDL_AUDIO_ISFLOAT(), you might be surprised to find a later version of SDL adds Float64 support when you expected there to be only 32-bit data, for example.
 
 == Related Structures ==
 :[[SDL_AudioCVT]]
