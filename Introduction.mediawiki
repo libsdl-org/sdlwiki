@@ -50,7 +50,7 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 
 * Set audio playback of 8-bit and 16-bit audio, mono stereo or 5.1 surround sound, with optional conversion if the format is not supported by the hardware
 * Audio runs independently in a separate thread, filled via a user callback mechanism
-* Designed for custom software audio mixers, but SDL_mixer provides a complete audio/music output library
+* Designed for custom software audio mixers, but [http://www.libsdl.org/projects/SDL_mixer/ SDL_mixer] provides a complete audio/music output library
 
 '''''File I/O Abstraction'''''
 
