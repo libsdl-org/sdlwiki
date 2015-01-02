@@ -23,7 +23,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
 == Remarks ==
-Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]] to attempt to lock the mutex without blocking.
+Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock the mutex without blocking.
 
 SDL mutexes are recursive.
 
