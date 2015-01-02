@@ -44,7 +44,7 @@ SDL_Quit();
 After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().
 
 <span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously.
-<<Include(SDL_Init, , , from="OR'd together:", to="If you want to initialize")>>
+<<Include(SDL_Init, , , from="Start Include here.", to="##End Include here.")>>
 
 [[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
 
