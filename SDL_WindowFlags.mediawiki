@@ -61,6 +61,8 @@ You can add your code example here
 == Remarks ==
 The SDL_WINDOW_OPENGL flag prepares your window for use with OpenGL, but you will still need to create an OpenGL context using [[SDL_GL_CreateContext]]() after window creation, before calling any OpenGL functions.
 
+On OS X you '''must''' set the NSHighResolutionCapable Info.plist property to YES, otherwise you will not receive a High DPI OpenGL canvas. 
+
 == Related Functions ==
 :[[SDL_CreateWindow]]
 :[[SDL_GetWindowFlags]]
