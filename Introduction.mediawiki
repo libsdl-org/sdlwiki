@@ -119,6 +119,9 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 * Uses JNI audio callbacks for sound
 * See also [[Android]]
 
+== How to get and install SDL ==
+You can [[SourceCode|get the source code]] and [[Installation|build and install it]].
+
 == Transitioning from SDL 1.2 to 2.0 ==
 If you used SDL 1.2 previously and you want to use SDL 2.0, please note there are some API changes and some of your code will need to be adapted.
 
