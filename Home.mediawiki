@@ -26,7 +26,7 @@ Use the links under the '''Navigation Links''' heading in the left-hand menu to 
 
 * [[Introduction]]
 : An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 2.0!
-* [[SourceCode]]
+* [[SourceCode|Source Code]]
 : How to download the source code to SDL.
 * [[Installation]]
 : How to install SDL on your platform of choice and link your program against it.
