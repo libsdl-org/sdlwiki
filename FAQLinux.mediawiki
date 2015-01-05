@@ -29,7 +29,7 @@ If you are using autoconf and automake for your project, you can copy the conten
   LIBS="$LIBS $SDL_LIBS"
 ```
 
-For SDL 2.0, the <code>AM_PATH_SDL</code> above will be <code>AM_PATH_SDL2</code>.
+For SDL 2.0, the <code>AM_PATH_SDL</code> above will be <code>AM_PATH_SDL2</code> and <code>SDL_VERSION</code> should also be set appropriately.
 
 == I installed the SDL RPM, but can't compile SDL applications ==
 You need to install the SDL-devel RPM, available from: http://www.libsdl.org/download.php
