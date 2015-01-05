@@ -12,7 +12,7 @@ Building and installing SDL for your platform (including how to obtain prebuilt 
 
 The source code to the latest official release of SDL2 is [https://libsdl.org/download-2.0.php here].
 
-If you want up to the minute bug fixes and improvements, you can track our work in our [http://mercurial.selenic.com/ Mercurial] repository:
+If you want up to the minute bug fixes and improvements, you can track our work in SDL's [http://mercurial.selenic.com/ Mercurial] repository:
 
 ```
 hg clone https://hg.libsdl.org/SDL SDL
