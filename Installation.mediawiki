@@ -4,7 +4,7 @@
 = Installing SDL =
 
 
-How to install SDL varies depending on your platform.
+How to install SDL varies depending on your platform. You will need to [[SourceCode|download the source code]] first for most of them, unless prebuilt binaries are available.
 
 SDL 1.2 isn't covered here. It can be installed on legacy platforms that SDL2 doesn't support, such as Mac OS 9 or OS/2, but settling for 1.2 would not be a drop-in replacement for 2.0. Some of these installation instructions happen to work with 1.2, however, on the platforms we cover.
 
