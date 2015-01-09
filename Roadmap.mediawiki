@@ -24,10 +24,10 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * Ryan: Implement landscape mode for iPhone port
 * Sam: Add support for OpenGL context profiles
 * Sam: Create flags for specifying foreign window event behavior
-* <<Color2(col=green, text=Andreas: Support shaped windows")>>
-* <<Color2(col=green, text=Windows")>>
+* <span style="color: green;">Andreas: Support shaped windows</span>
+* <span style="color: green;">Windows</span>
 * Mac OS X
-* <<Color2(col=green, text=Linux")>>
+* <span style="color: green;">Linux</span>
 
 === Wishlist ===
 * <span style="color: gray;">Create desktop video mode change notification</span>
