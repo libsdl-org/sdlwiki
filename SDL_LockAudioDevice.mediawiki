@@ -18,7 +18,7 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
 
 == Code Examples ==
 ```c++
-void myAudioCallback(void *userdata, Uint8* stream, int len)
+void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
     printf("The audio callback is running!\n");
     SDL_memset(stream, 0, len);  // just silence.
