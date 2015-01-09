@@ -4,7 +4,7 @@
 
 This is a list of features which are in progress for the SDL 2.0 release.  The features are organized by subsystem and assigned to developers.  Features will move around as the design evolves.
 
-<<TableOfContents(2, 2)>>
+<<TableOfContents(2)>>
 
 == Video ==
 
