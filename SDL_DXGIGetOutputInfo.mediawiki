@@ -1,0 +1,55 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_DXGIGetOutputInfo =
+Use this function to get the DXGI Adapter and Output indices for the specified display index.
+
+
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_DXGIGetOutputInfo(int  displayIndex,
+                               int* adapterIndex,
+                               int* outputIndex)
+```
+
+
+== Function Parameters ==
+{|
+|'''displayIndex'''
+|the display index for which to get both indices
+|-
+|'''adapterIndex'''
+|a pointer to be filled in with the adapter index
+|-
+|'''outputIndex''' 
+|a pointer to be filled in with the output index
+|}
+
+
+== Return Value ==
+Returns SDL_TRUE on success or SDL_FALSE on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The DXGI Adapter and Output indices can be passed to <code>EnumAdapters</code> and <code>EnumOutputs</code> respectively to get the objects required to create a DX10 or DX11 device and swap chain.
+
+== Version ==
+This function is available since SDL 2.0.2.
+
+----
+[[CategoryAPI]], [[CategorySystem]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
