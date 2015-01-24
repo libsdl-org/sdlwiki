@@ -88,15 +88,15 @@ A structure that contains system-dependent information about a window.
 |<bgcolor="#EDEDED">''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)
 |-
 |wl_display*
-|'''display'''
+|'''wl.display'''
 |the Wayland display
 |-
 |wl_surface*
-|'''surface'''
+|'''wl.surface'''
 |the Wayland surface
 |-
 |wl_shell_surface*
-|'''shell_surface'''
+|'''wl.shell_surface'''
 |the Wayland shell_surface (window manager handle)
 |-
 |
@@ -104,11 +104,11 @@ A structure that contains system-dependent information about a window.
 |<bgcolor="#EDEDED">''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
 |-
 |!MirConnection*
-|'''connection'''
+|'''mir.connection'''
 |the Mir display server connection
 |-
 |!MirSurface*
-|'''surface'''
+|'''mir.surface'''
 |the Mir surface
 |-
 |
@@ -116,11 +116,11 @@ A structure that contains system-dependent information about a window.
 |<bgcolor="#EDEDED">''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)
 |-
 |ANativeWindow*
-|'''window'''
+|'''android.window'''
 |the Android native window
 |-
 |EGLSurface*
-|'''surface'''
+|'''android.surface'''
 |the Android EGL surface
 |}
 
