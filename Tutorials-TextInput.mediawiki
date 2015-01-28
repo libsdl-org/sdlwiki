@@ -74,13 +74,10 @@ int main(int argc, char *argv[])
     /* ... */
 
     SDL_StartTextInput();
-    while (!done)
-    {
+    while (!done) {
         SDL_Event event;
-        if (SDL_PollEvent(&event))
-        {
-            switch (event.type)
-            {
+        if (SDL_PollEvent(&event)) {
+            switch (event.type) {
                 case SDL_QUIT:
                     /* Quit */
                     done = SDL_TRUE;
