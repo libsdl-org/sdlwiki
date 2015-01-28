@@ -33,8 +33,9 @@ You can add your code example here
 
 There is a [[Tutorials/TextInput|tutorial]].
 
-'''Detailed explanation''' (by Jiang Jiang <gzjjgod@gmail.com>)
+'''Detailed explanation''' (from [http://lists.libsdl.org/pipermail/sdl-libsdl.org/2013-August/090073.html SDL mailing list] by Jiang Jiang <gzjjgod at gmail.com>)
 
+```
 In a typical GUI application, the OS will be responsible for telling
 you the candidate text (via SDL_TEXTEDITING), you can choose how (and
 where) to show it in your UI.
@@ -50,12 +51,11 @@ methods will delete the last candidate character typed and SDL app
 will receive a new SDL_TEXTEDITING event (let's say user typed a, b,
 backspace, c, then the application will receive 4 events containing
 'a', 'ab', 'a', 'ac' each).
+
 [[SDL_SetTextInputRect]]() gives the OS a hint for where to show the
 candidate text list, since the OS doesn't know where you want to draw
 the text you received via SDL_TEXTEDITING event.
-
-
-
+```
 
 == Related Enumerations ==
 : [[SDL_EventType]]
