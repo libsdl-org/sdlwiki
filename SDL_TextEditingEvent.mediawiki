@@ -40,6 +40,8 @@ You can add your code example here
 == Remarks ==
 [[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
 
+There is a [[Tutorials/TextInput|tutorial]].
+
 == Related Enumerations ==
 :[[SDL_EventType]]
 
