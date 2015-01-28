@@ -23,6 +23,8 @@ Please use this function in pair with [[SDL_StopTextInput]]().
 
 On some platforms using this function activates the screen keyboard.
 
+There is a [[Tutorials/TextInput|tutorial]].
+
 == Related Functions ==
 :[[SDL_SetTextInputRect]]
 :[[SDL_StopTextInput]]
