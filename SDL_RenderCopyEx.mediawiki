@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RenderCopyEx =
-Use this function to copy a portion of the texture to the current rendering target, optionally rotating it by angle around the given center and also flipping it top-bottom and/or left-right
+Use this function to copy a portion of the texture to the current rendering target, optionally rotating it by angle around the given center and also flipping it top-bottom and/or left-right.
 
 
 == Syntax ==
@@ -34,7 +34,7 @@ int SDL_RenderCopyEx(SDL_Renderer*          renderer,
 |an angle in degrees that indicates the rotation that will be applied to dstrect
 |-
 |'''center'''
-|a pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done aroud dstrect.w/2, dstrect.h/2)
+|a pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2)
 |-
 |'''flip'''
 |a [[SDL_RendererFlip]] value stating which flipping actions should be performed on the texture
