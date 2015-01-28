@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
 * [[SDL_TextEditingEvent]]
 * [[SDL_TextInputEvent]]
 
-One important thing to notice is that the application can enable and disable text input arbitrarily with [[SDL_StartTextInput]] and [[SDL_StopTextInput]]. [[SDL_SetTextInputRect]] controls where the [[#CandidateList|Candidate List]] will open, if supported.
+One important thing to notice is that the application can enable and disable text input arbitrarily with [[SDL_StartTextInput]]() and [[SDL_StopTextInput]](). [[SDL_SetTextInputRect]]() controls where the [[#CandidateList|Candidate List]] will open, if supported.
 
 The application will receive an [[SDL_TextEditingEvent]] when a composition is changed (or started). This event contains the composition text as well as the cursor position within the composition. It also contains a length member that determines the length of the text selection, if any.
 
