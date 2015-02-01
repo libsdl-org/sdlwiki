@@ -54,7 +54,9 @@ int main(int argc, char* argv[])
 ```
 
 == Remarks ==
-A new surface will be created with the optimal format for the window, if necessary. This surface will be freed when the window is destroyed.
+A new surface will be created with the optimal format for the window, if necessary. This surface will be freed when the window is destroyed. Do not free this surface.
+
+This surface will be invalidated if the window is resized. After resizing a window this function must be called again to return a valid surface.
 
 You may not combine this with 3D or the rendering API on this window.
 
