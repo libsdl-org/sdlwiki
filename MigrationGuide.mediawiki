@@ -15,7 +15,7 @@ After many years in development, SDL 2.0 has finally been released!
 
 We are quite proud of it, and we'd like games that are using SDL 1.2 to move up right away. As this can feel like a daunting task, this document is a simple walkthrough of how to migrate to the new library. We think you'll find it's not as hard as you think, and often times, you'll be either replacing function calls with direct equivalents or undoing some hacks in your code to deal with 1.2 deficiencies.
 
-We think you'll be very happy with SDL 2.0, both for the new features and the better experience over SDL 1.2. This document doesn't try to cover all the awesome new things in SDL2--and there are many--but just the things you need to do to get running ''right now''. Once you've ported your code, definitely check out the new stuff, you'll probably want to add some of it to your application, too.
+We think you'll be very happy with SDL 2.0, both for the new features and the better experience over SDL 1.2. This document doesn't try to cover all the awesome new things in SDL2--and there are many--but just the things you need to do to get running ''right now''. Once you've ported your code, definitely check out the new stuff; you'll probably want to add some of it to your application, too.
 
 === Overview of new features ===
 These are the most important new features in SDL 2.0:
