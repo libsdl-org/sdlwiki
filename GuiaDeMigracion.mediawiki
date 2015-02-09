@@ -1,0 +1,449 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= Guía de migración a SDL 2.0 =
+
+
+== Introducción ==
+
+Luego de muchos años de desarrollo, ¡SDL 2.0 ha sido publicada finalmente!
+
+Estamos bastante orgullosos de esto, y nos gustaría que los juegos que utilizan SDL 1.2 migraran rápido. Como sabemos que puede ser una tarea intimidante, este documento es una simple guía de cómo migrar a la nueva biblioteca. Creemos que descubrirás que no es tan difícil como piensas y, muchas veces, simplemente tendrás que reemplazar algunas llamadas a función o deshacer "hacks" en tu código causados por deficiencias de la versión 1.2.
+
+Creemos que SDL 2.0 va a satisfacerte tanto por sus características nuevas y por una mejor experiencia con respecto a SDL 1.2. Este documento no trata de cubrir todas las funcionalidades nuevas de SDL2 - que son muchas - sino sólo aquellas cosas que necesitas para empezar a trabajar. Una vez que hayas portado tu código, no dudes en probar todo lo nuevo: probablemente quieras utilizarlo en tus aplicaciones.
+
+=== Vistazo de características nuevas ===
+
+Estas son las características nuevas más importantes de SDL 2.0
+
+* Aceleración 3D por hardware
+* Soporte de OpenGL 2.0+ con múltiples perfiles (core, compatibilidad, depuración, robusto, etc)
+* Soporte de OpenGL ES
+* Soporte de ventanas múltiples
+* Soporte de pantallas múltiples
+* Soporte de dispositivos de audio múltiples
+* Soporte de Android e iOS
+* API 2D simple que puede utilizar Direct3D, OpenGL, OpenGL ES o renderizado por software.
+* Soporte Force Feedback en Windows, Mac OSX X y Linux
+* Soporte XInput y XAudio2 en Windows
+* Operaciones atómicas
+* Manejo de energía (muestra batería restante, etc)
+* Ventanas con formas arbitrarias
+* Audio 32 bit (int y float)
+* API de controladores de juego simplificada (¡la API de Joystick todavía sigue existiendo!)
+* Soporte de control táctil (multitoques, gestos, etc)
+* Mejorado el soporte de pantalla completa
+* Mejorado el soporte de teclado (scancodes vs keycodes, etc)
+* Ventanas de mensaje
+* Soporte de portapapeles
+* Soporte básico Drag'n'Drop
+* Soporte para entrada IME y unicode
+* [[CategoryAssertions|Potente sistema de macros para asserts]]
+* Cambiada la licencia LGPL por zlib
+* Muchas de las molestias de 1.2 ya no existen
+* ¡Y mucho más!
+
+[[Introduction|La página de Introducción]] posee una lista más exhaustiva de las características ofrecidas por SDL en general (incluyendo las ya provistas por 1.2)
+
+=== Más información ===
+
+Los mejores lugares para ver más información son:
+
+* [https://wiki.libsdl.org El wiki de SDL] :)
+* los tests incluídos con SDL, en el directorio ```test/``` ([http://hg.libsdl.org/SDL/file/default/test ver online])
+* la [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org lista de correo] de SDL
+
+== Migrando de SDL 1.2 a 2.0 ==
+
+=== Consideraciones generales ===
+
+No hay una capa de compatibilidad en SDL2. Si una API cambió en 2.0, quiere decir que cambiamos o eliminamos el código antiguo donde fuese necesario. Si te limitas a compilar tu aplicación basada en 1.2 contra las cabeceras de 2.0, probablemente no compile. Este documento intentará guiarte con respecto a los cambios más importantes y algunos problemas con los que tropieces probablemente.
+
+¡Ya no existe SDL_main! Bueno, en realidad existe, y ahora es lo que siempre se supuso que debía ser: un pequeño trozo de código que oculta la differencia entre <code>main()</code> y <code>WinMain()</code> en Windows. No posee código de inicialización y es completamente opcional- Esto significa que ahora es posible utilizar SDL sin sobreescribir tu main, lo cual es bueno para plugins que utilicen SDL, o lenguajes script que utilicen SDL como un módulo. Todo lo que en 1.2 se hacía en SDL_main ahora se hace en SDL_Init(), donde corresponde.
+
+El "paracaídas" de SDL no ya existe. Lo que en 1.2 se llamaba <code>SDL_INIT_NOPARACHUTE</code> es ahora la opción por defecto. Causaba problemas en caso de que hubiera problemas en threads que no fueran el principal así como con aplicaciones que utilizaran su propio sistema de señales o manejo de excepciones. Lamentablemente, algunas plataformas no limpian el sistema de vídeo a pantalla completa en caso de errores críticos, así que deberías configurar un manejador de crashes propio o llamar a [[SDL_Quit]]() en un <code>atexit()</code>, en caso de ser necesario.
+Ten en cuenta que en plataformas Unix, SDL sigue interceptando <code>SIGINT</code> y lo convierte en un evento [[SDL_EventType|SDL_QUIT]].
+
+=== Video ===
+==== Configurando la nueva API de video ====
+
+La API de video es el cambio más importante con respecto a 1.2. Los requerimientos de los sistemas de video han cambiado muchos desde los años noventa. Para poder hacer uso del hardware moderno y nuevas funcionalidades de los SO, tuvimos que cambiar la API de video casi de manera completa.
+
+No te preocupes, la API nueva es muy buena y una vez comprendas las diferencias vas a estar muy satisfecho con las cosas nuevas que trae consigo. Pero dejemos eso para más tarde.
+
+Las buenas noticias: si tu juego utilizaba OpenGL, probablemente no tengas mucho que tocar: llega con intercambiar las llamadas a función con sus equivalentes de SDL2.
+
+Para gráficos 2D, SDL 1.2 ofrecía algo llamado "surfaces", que eran búfers de pixels en memoria. Incluso la misma pantalla era una "surface" y SDL ofrecía funciones para copiar ("blit") pixels entre "surfaces", convirtiendo entre formatos si era necesario. La mayor parte del tiempo te encontrabas trabajando con el CPU y la memoria de sistema en vez de utilizar el GPU y la memoria de video. Esto cambia en SDL 2.0; ahora se utiliza aceleración por hardware la mayor parte del tiempo y es por esto que hemos tenido que cambiar la API.
+
+Si tu juego es 2D, lo más probable es que hayas seguido alguna de las siguientes tres rutas con respecto al renderizado. Vamos a analizarlas a todas, pero empecemos por el principio.
+
+¿Recuerdas a <code>SDL_SetVideoMode()</code>? Ya no existe. SDL 2.0 te permite tener varias ventanas, así que esa función ya no tendría mucho sentido.
+
+Así que probablemente algo así:
+
+```c++
+SDL_WM_SetCaption("My Game Window", "game");
+SDL_Surface *screen = SDL_SetVideoMode(640, 480, 0, SDL_FULLSCREEN | SDL_OPENGL);
+```
+
+Ahora debería ser:
+
+```c++
+SDL_Window *screen = SDL_CreateWindow("My Game Window", 
+			SDL_WINDOWPOS_UNDEFINED, 
+			SDL_WINDOWPOS_UNDEFINED, 
+			640, 480, 
+			SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
+```
+
+Notarás que es bastante similar a 1.2. La diferencia es que ahora es posible tener varias ventanas (si quieres) y que tienes más control sobre ellas. SDL_WM_SetCaption ya no existe, porque es necesario que cada ventana pueda tener un título propio (puedes cambiarlo usando [[SDL_SetWindowTitle]]()) y que sea posible darle una posición específica. En este caso utilizamos <code>SDL_WINDOWPOS_UNDEFINED</code> porque no nos preocupa dónde se ubique la ventana. También es posible utilizar <code>SDL_WINDOWPOS_CENTERED</code>.
+
+Además, es posible especificar una pantalla: SDL2 te permite trabajar con equipos con monitores múltiples. Sin embargo, no es necesario que te preocupes por eso por ahora mismo.
+
+Ahora que tu ventana esta lista, hablemos de estrategia. SDL2 sigue teniendo [[SDL_Surface]] pero, de ser posible, deberías utilizar [[SDL_Texture]]. Ahora las "surface" siempre se encuentran en RAM y son controladas por el CPU, así que es mejor evitarlas. SDL2 tiene una API de renderizado nueva, pensada para juegos 2D simples pero por sobre todo para utilizar el GPU y la memoria de video lo más posible. Incluso si sólo deseas mostrar en pantalla tu render por software, tienes la siguiente ventaja: de ser posible se utilizará OpenGL o Direct3D lo cual significa que tendrás "blits" más rápidos, reescalado de pantalla "gratis" y será posible utilizar el Steam Overlay.
+
+El procedimiento ahora es así:
+
+Como ya dijimos, en vez de <code>SDL_SetVideoMode()</code> utilizamos [[SDL_CreateWindow]](). ¿Pero qué resolución utilizamos? Si tu juego tenía una resolución fija de 640x480, por ejemplo, seguramente ciertos monitores no podían poner ese tamaño en pantalla completa y en ventana tu juego se veía demasiado pequeño. Con SDL2 es posible solucionarlo.
+
+Ya no utilizamos <code>SDL_ListModes()</code>. Hay algo parecido en SDL2 (llamar [[SDL_GetDisplayMode]]() en un bucle tantas veces como diga [[SDL_GetNumDisplayModes]](), pero en vez de eso vamos a utilizar una nueva característica llamada "escritorio a pantalla completa" que básicamente le dice a SDL: "dame la pantalla completa y no cambies la resolución". Para nuestro juego a 640x480, sería algo así:
+
+```c++
+SDL_Window *sdlWindow = SDL_CreateWindow(title,
+			SDL_WINDOWPOS_UNDEFINED,
+			SDL_WINDOWPOS_UNDEFINED,
+			0, 0,
+			SDL_WINDOW_FULLSCREEN_DESKTOP);
+```
+
+Si te fijas, no especificamos 640 o 480... escritorio a pantalla completa te da justamente la pantalla completa e ignora las dimensiones que le pases. La ventana de tu juego debería aparecer instantáneamente en vez de esperar a que el monitor cambie de resolución y con esto vamos a utilizar el GPU para escalar todo a la resolución del escritorio. Esto es generalmente lo mejor y más rápido en caso de que una pantalla LCD esté simulando correr a una resolución menor. Como "bonus": no es necesario redimensionar el resto de las ventanas que estén corriendo.
+
+Ahora necesitamos un contexto de renderizado.
+
+```c++
+SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, -1, 0);
+```
+
+El "renderer" abstrae todos los detalles de cómo se dibuja en la ventana. Puede estar utilizando Direct3D, OpenGL, OpenGL ES o "software surfaces", dependiendo del sistema, pero tu código siempre será el mismo. Es posible, sin embargo, forzar un renderer específico. Si deseas forzar la sincronización con vblank para reducir artefactos gráficos, puedes utilizar <code>SDL_RENDERER_PRESENTVSYNC</code> en vez de cero como tercer parámetro. No deberías especificar <code>SDL_WINDOW_OPENGL</code> directamente: si [[SDL_CreateRenderer]]() decide utilizar OpenGL, actualizará la ventana de manera apropiada.
+
+Ahora que sabes cómo funciona esto, es posible hacerlo en un sólo paso utilizando [[SDL_CreateWindowAndRenderer]](). Un ejemplo simple:
+
+```c++
+SDL_Window *sdlWindow;
+SDL_Renderer *sdlRenderer;
+SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, 
+			&sdlWindow, &sdlRenderer);
+```
+
+Asumiendo que ninguna de las funciones falló (¡siempre hay que comprobar NULLs!), estamos listos para comenzar a dibujar en la pantalla. Empecemos por "limpiarla" usando color negro:
+
+```c++
+SDL_SetRenderDrawColor(sdlRenderer, 0, 0, 0, 255);
+SDL_RenderClear(sdlRenderer);
+SDL_RenderPresent(sdlRenderer);
+```
+
+Probablemente te imagines cómo funciona esto: dibujamos con color negro (r, g y b en cero, alpha opaco), limpiamos la ventana completa y presentamos la ventana limpia en la pantalla. De la misma manera que antes usaba <code>SDL_UpdateRect()</code> o <code>SDL_Flip()</code>, ahora se utiliza [[SDL_RenderPresent]]().
+
+Una cosa más: Como estamos utilizando <code>SDL_WINDOW_FULLSCREEN_DESKTOP</code>, no sabemos realmente el tamaño de la pantalla en la que estamos dibujando. Afortunadamente, no necesitamos saberlo. Una de las mejores cosas de 1.2 es que era posible decirle "Quiero una ventana de 640x480 y no me importa cómo lo logres", incluso si eso implicaba mostrar una ventana pequeña centrada en una resolución más grande.
+
+En 2.0, la API de render nos permite hacer lo siguiente:
+
+```c++
+// hacemos que el render escalado se vea mejor
+SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  
+SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
+```
+
+Esto nos permite tener tener una resolución lógica independiente de la resolución final de presentación. Gracias a esto, en vez de tratar de hacer que el sistema funcione a la resolución que nosotros renderizamos, cambiamos la resolución de renderizado para que funcione acorde al sistema. En mi pantalla de 1920x1200, esta aplicación cree que está trabajando con una pantalla 640x480, pero SDL está utilizando el GPU para escalar el renderizado y utilizar todos los pixels. Es importante tener en cuenta que 640x480 y 1920x1200 no tienen la misma relación de aspecto: SDL tratará de escalar lo más que pueda e incluirá un marco de color para la diferencia.
+
+Ya podemos empezar a dibujar de verdad.
+
+==== Si tu juego sólo necesita dibujar frames completos en la pantalla ====
+
+Un caso particular para juegos de la vieja escuelta que utilizan renderizado por software: la aplicación quiere dibujar cada pixel por sí misma y luego plasmar todo eso directamente en la pantalla en un solo "blit". Ejemplos de este tipo de juegos serían Doom, Duke Nukem 3D, entre otros.
+
+Para esto, sólo necesitas una SDL_Texture que represente la pantalla. Hagamos eso para nuestro juego a 640x480:
+
+```c++
+sdlTexture = SDL_CreateTexture(sdlRenderer,
+			SDL_PIXELFORMAT_ARGB8888,
+			SDL_TEXTUREACCESS_STREAMING,
+			640, 480);
+```
+
+Esto representa una textura en la GPU. La idea es generar cada frame guardando pixels en esta textura, dibujar la textura en la ventana y presentar la misma en la pantalla. <code>SDL_TEXTUREACCESS_STREAMING</code> le indica a SDL que el contenido de esta textura cambiará de manera frecuente.
+
+Probablemente hayas utilizado antes una [[SDL_Surface]] dedicada a la pantalla y luego llamaras SDL_Flip() para mostrarla. Ahora es posible crear una [[SDL_Surface]] en RAM en vez de utilizar la que te hubiera dado <code>SDL_SetVideoMode()</code> o incluso simplemente utilizar <code>malloc()</code> para generar un bloque de pixels al cual puedas escribir. Idealmente, tus buffers deberían contener pixels RGBA, pero de todas maneras es posible realizar conversiones.
+
+```c++
+// esto puede ser surface->pixels, un buffer de malloc() o lo que sea.
+extern Uint32 *myPixels;  
+```
+
+Al final del frame, necesitamos actualizar nuestra textura de la siguiente manera:
+
+```c++
+SDL_UpdateTexture(sdlTexture, NULL, myPixels, 640 * sizeof (Uint32));
+```
+
+Esto va a "subir" nuestros pixels a memoria del GPU. En vez de NULL, es posible especificar un área en caso de utilizar "dirty rectangles", pero lo más probable es que no sea necesario gracias al hardware moderno. El último parametro es el "pitch" -el número de bytes desde el principio de una fila hasta la siguiente- y si tenemos en cuenta que en este ejemplo utilizamos un búfer RGBA lineal, el "pitch" es 640 veces 4 (r, g, b, a).
+
+Ahora pongamos esta textura en pantalla:
+
+```c++
+SDL_RenderClear(sdlRenderer);
+SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
+SDL_RenderPresent(sdlRenderer);
+```
+
+Y eso es todo. [[SDL_RenderClear]]() limpia el contenido del framebuffer (por las dudas de que, digamos, el Steam Overlay lo haya modificado en el cuadro anterior), [[SDL_RenderCopy]]() mueve el contenido de la textura al framebuffer (y gracias a [[SDL_RenderSetLogicalSize]](), lo hará de manera escalada/centrada como si el monitor fuera de 640x480) y [[SDL_RenderPresent]]() lo presentará en la pantalla.
+
+==== Si tu juego requiere "blitear" surfaces a la pantalla ====
+
+En este ejemplo suponemos que tu juego basado en SDL 1.2 carga imágenes desde archivo y las guarda en [[SDL_Surface|SDL_Surfaces]], probablemente tratando de ubicarlas en memoria de video utilizando <code>SDL_HWSURFACE</code>. Las cargas una vez y las "bliteas" una y otra vez en el framebuffer tanto como sea necesario, en general sin modificarlas. Como haríamos en un plataformero 2D simple, por poner un ejemplo. En líneas generales, si utilizas tus surfaces como "sprites", probablemente este sea tu caso de uso.
+
+Puedes crear texturas individuales (surfaces ubicadas en memoria de GPU) de la misma manera que hicimos para la textura grande:
+
+```c++
+sdlTexture = SDL_CreateTexture(sdlRenderer,
+			SDL_PIXELFORMAT_ARGB8888,
+			SDL_TEXTUREACCESS_STATIC,
+			myWidth, myHeight);
+```
+
+En este caso, utilizamos <code>SDL_TEXTUREACCESS_STATIC</code>, porque vamos a "subir" los pixels sólo una vez y no repetidas veces. Pero sería una mejor solución:
+
+```c++
+sdlTexture = SDL_CreateTextureFromSurface(sdlRenderer, mySurface);
+```
+
+De esta manera, cargas tu [[SDL_Surface]] de la manera usual pero al final creamos una textura a partur de la misma. Una vez que tienes tu [[SDL_Texture]] es posible liberar la surface original.
+
+En este momento, tu juego utilizando SDL 1.2 tendría unas cuantas [[SDL_Surface|SDL_Surfaces]] que dibujarias en la surface de pantalla utilizando [[SDL_BlitSurface]]() para componer el framebuffer final, utilizando finalmente SDL_Flip() para presentarlo en pantalla. En SDL 2.0 tendrás [[SDL_Texture|SDL_Textures]] que vas a copiar a tu Renderer con [[SDL_RenderCopy]]() para componer el mismo framebuffer, presentándolo en pantalla a su vez con [[SDL_RenderPresent]](). Así de simple. Si nunca modificas dichas texturas, probablemente notes un aumento considerable en tu framerate.
+
+==== Si necesitas ambas ====
+
+La cosa se complica un poco si necesitas blitear surfaces y modificar pixels individuales en el framebuffer. Leer y escribir datos desde texturas de GPU puede ser terriblemente costoso en cuanto a rendimiento; en líneas generales lo mejor es enviar los datos siempre en el mismo sentido. En este caso, la mejor idea es mantener todo en modo software hasta que esté listo para ser enviado a la pantalla. Para ello, vamos a combinar las dos técnicas anteriores.
+
+La buena noticia es que la API de [[SDL_Surface]] se mantiene prácticamente completa con respecto a SDL 1.2. Así que puedes cambiar tu surface de pantalla de esto:
+
+```c++
+SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
+```
+
+A esto:
+
+```c++
+// si no quieres utilizar hexadecimal, puedes usar SDL_PixelFormatEnumToMasks()!
+SDL_Surface *screen = SDL_CreateRGBSurface(0, 640, 480, 32,
+			0x00FF0000,
+			0x0000FF00,
+			0x000000FF,
+			0xFF000000);
+
+SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
+			SDL_PIXELFORMAT_ARGB8888,
+			SDL_TEXTUREACCESS_STREAMING,
+			640, 480);
+```
+:..y sigue bliteando cosas y modificando pixels como lo hacías antes, componiendo tu framebuffer final dentro de esta [[SDL_Surface]]. Una vez que esté listo para mostrarse en pantalla, puedes hacer como en el primer caso:
+
+```c++
+SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
+SDL_RenderClear(sdlRenderer);
+SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
+SDL_RenderPresent(sdlRenderer);
+```
+
+Ten en cuenta que crear texturas no es gratis: no llames [[SDL_CreateTextureFromSurface]]() todos los frames. Crea una textura y una surface y actualiza la primera en base a la segunda.
+
+La API de Render posee muchas otras características, algunas de las cuales probablemente puedan reemplazar código que antes escribías a mano: escalado, dibujado de líneas, etc. Si tus necesidades a la hora del renderizado no son muy complejas, es posible que te convenga dejar de modificar pixels a mano y mover todo al GPU. Tu programa funcionará más rápido y probablemente puedas simplificar notablemente tu código.
+
+==== Misceláneas sobre la Renderer API ====
+
+Puedes realizar algunos efectos simples con la Renderer API sin necesidad de manipular directamente información de pixels. Algunos de los siguientes se soportaban en surfaces de SDL 1.2.
+
+* Alpha de color: [[SDL_Color]] ahora tiene un cuarto componente dedicado al valor de alpha (transparencia). Probablemente tu código no utilizaba este valor en 1.2, pero en 2.0 deberías hacerlo.
+* Alpha blending: utiliza [[SDL_SetSurfaceAlphaMod]] y [[SDL_SetTextureAlphaMod]] en vez de <code>SDL_SetAlpha()</code>. Es posible desactivar alpha blending en surfaces usando [[SDL_SetSurfaceBlendMode]]() y en texturas utilizando [[SDL_SetTextureBlendMode]]().
+* Colorkey: Cuando llames [[SDL_SetColorKey]](), deberás pasarle como parámetro <code>SDL_TRUE</code> en vez de <code>SDL_SRCCOLORKEY</code>.
+* Modulación de color: Algunos renderer soportan alteraciones globales de color (srcC = srcC * color), puedes ver más detalles en [[SDL_SetTextureColorMod]]().
+
+=== OpenGL ===
+
+Si ya estabas utilizando OpenGL directamente, la migración es bastante simple. Necesitas reemplazar tu llamada a <code>SDL_SetVideoMode()</code> por [[SDL_CreateWindow]]() seguida de [[SDL_GL_CreateContext]](). Luego cambia SDL_GL_SwapBuffers() por [[SDL_GL_SwapWindow]](window). Las llamadas de funciones de OpenGL no cambian.
+
+Si utilizabas [[SDL_GL_SetAttribute]]<code>(SDL_GL_SWAP_CONTROL, x)</code>, necesitas hacer algunos cambios: ahora existe la función [[SDL_GL_SetSwapInterval]](x) que te permitirá modificar esto en un contexto GL existente.
+
+Ahora, con SDL 2.0 es posible intercambiar entre modo ventana / pantalla completa sin perder el contexto de OpenGL (¡hurra!). Puedes controlar esto usando [[SDL_SetWindowFullscreen]]().
+
+=== Entrada ===
+
+La buena noticia es que con SDL 2.0 es posible utilizar entrada Unicode. Las mala es que serán necesarios algunos cambios menores en tu aplicación.
+
+En SDL 1.2, muchas aplicaciones sólo soportaban Inglés de USA, pero llamaban de todas maneras a <code>SDL_EnableUNICODE(1)</code> porque les resultaba útil tener el caracter asociado con cada presión de tecla. Sin embargo, esto no funcionaba muy bien fuera del idioma Inglés y no funcionaba en absoluto en el caso de idiomas asiáticos.
+
+Al parecer, soportar i18n es complicado.
+
+SDL 2.0 cambia todo esto. <code>SDL_EnableUNICODE()</code> ya no existe, ni el campo unicode de [[SDL_Keysym]]. Ya no recibes la información de caracter en los eventos [[SDL_EventType|SDL_KEYDOWN]]. Ahora, si usas [[SDL_EventType|SDL_KEYDOWN]] debes tratarlo como si se tratara de un joystick con 101 botones. La entrada de texto viene por otro medio.
+
+El nuevo evento es [[SDL_EventType|SDL_TEXTINPUT]]. Este evento se dispara siempre que el usuario introduzca texto. Ten en cuenta que este texto puede provenir del teclado o de algún tipo de IME (que es un método de introducir texto complejo con varios caracteres). Este evento devuelte cadenas de texto completas, que puede ser de uno o más caracteres, siempre codificado en UTF-8.
+
+Si sólo te interesa saber si el usuario presionó tal o cual tecla, puedes seguir utilizando [[SDL_EventType|SDL_KEYDOWN]], con la diferencia que ahora el sistema se encuentra dividido en dos partes con respecto a SDL 1.2: "keycodes" y "scancodes".
+
+Los scancodes son independientes de la disposición del teclado. Puedes pensar en ellos como "el usuario preionó la tecla Q" independientemente de que el teclado sea Americano, Europeo, Dvorak, etc. El scancode siempre indica el mismo caracter.
+
+Los keycodes, por otra parte, sí dependen de la disposición del teclado. Piensa en ellos como "el usuario presionó la tecla Q en un teclado de idioma o disposición específico".
+
+Por ejemplo, si presionas la tecla que se encuentra a dos posiciones de distancia de la tecla CAPS LOCK en un teclado QWERTY americano, se reportará como el scancode <code>SDL_SCANCODE_S</code> y el kaycode <code>SDLK_S</code>. La misma tecla en un teclado Dvorak será reportada como el scancode <code>SDL_SCANCODE_S</code> y el keycode <code>SDLK_O</code>.
+
+Presta atención a que ahora los scancodes ocupan 32 bits y usan un amplio rango de números. Ya no existe <code>SDLK_LAST</code>. Si tu programa chequeaba elementos <code>SDLK_LAST</code> para mapear entre teclas de SDL y lo que necesitara tu aplicación internamente, ten en cuenta que eso ya no es posible. Tendrás que usar una hash table, como por ejemplo std::map. Si estabas mapeando scancodes en vez de keycodes, ahora existe la constante SDL_NUM_SCANCODES para realizar chequeos de límites de array. En este momento, su valor es 512.
+
+Ahora <code>SDLMod</code> se llama [[SDL_Keymod]] y sus teclas "META" (la tecla "Windows") se llaman ahora teclas "GUI".
+
+<code>SDL_GetKeyState()</code> ha sido renombrada como [[SDL_GetKeyboardState]](). El array retornado por dicha función debe ser accedido ahora utilizando valores <code>SDL_SCANCODE_*</code> (puedes ver [[SDL_Scancode]]) en vez de valores [[SDL_Keysym]].
+
+Ahora veamos la entrada de ratón.
+
+El primer cambio, básicamente, es que la rueda del ratón ya no se trata como un botón. Se trataba de un error histórico en la biblioteca y lo corregimos en SDL 2.0. Ahora deberás chequear eventos [[SDL_EventType|SDL_MOUSEWHEEL]]. Hay soporte tanto para ruedas verticales como horizontales y algunas plataformas pueden reportar scroll con dos dedos en trackpads como eventos de rueda de ratón. Ya no recibirás eventos [[SDL_EventType|SDL_BUTTONDOWN]] relacionados con la rueda y ahora los botones 4 y 5 son tratados como verdaderos eventos de botón de ratón.
+
+Si tu juego requería que el mouse se desplazara indefinidamente en una dirección, por ejemplo para permitirle al jugador en un FPS girar continuamente sin que el ratón se detuviera al borde de la pantalla, probablemente ocultabas el cursor e interceptabas la entrada:
+
+```c++
+SDL_ShowCursor(0);
+SDL_WM_GrabInput(SDL_GRAB_ON);
+```
+
+En SDL2, esto funciona un poco distinto. Sólo tienes que llamar:
+
+```c++
+SDL_SetRelativeMouseMode(SDL_TRUE);
+```
+
+:.. y SDL se ocupa del resto.
+
+=== Eventos ===
+
+[[SDL_PushEvent]]() ahora retorna 1 en caso de éxito en vez de 0.
+
+Las máscaras de evento ahora se especifican como rangos, así que
+
+```c++
+SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_EVENTMASK(SDL_MOUSEBUTTONDOWN));
+```
+
+se convierte en:
+
+```c++
+SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN);
+```
+
+=== Audio ===
+
+Lo bueno es que, con una sola excepción, SDL 2.0 es completamente compatible con SDL 1.2. Si quieres utilizar las nuevas funcionalidades, ¡adelante!, pero es probable que puedas compilar y correr tu aplicación sin necesidad de utilizarlas.
+
+Ahora, la excepción: el "callback" de audio ya NO comienza con su bufer parcialmente inicializado. En todos los casos debes rellenar completamente el bufer. Si no tienes suficiente audio para hacerlo, tu callback deberá escribir silencio. Si no lo haces, escucharás el audio repetido o simple ruido. Si quieres volver al comportamiento anterior del bufer inicializado desde el vamos, deberás llamar <code>SDL_memset(stream, 0, len)</code> al comienzo de tu callback.
+
+=== Joysticks ===
+
+Los eventos de Joystick ahora hacen referencia a un <code>SDL_JoystickID</code>. Esto es así porque SDL 2.0 ahora soporta joysticks que pueden ser conectados y desconectados en tiempo de ejecución de tu juego, haciendo inútil la lista de dispositivos usada por 1.2.
+
+Para conseguir un <code>SDL_JoystickID</code> a partir de un <code>SDL_Joystick*</code> abierto, usa:
+
+```c++
+SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
+```
+
+Y compara la propiedad which del evento contra myID. Si no utilizas la cola de eventos para joysticks, [[SDL_JoystickGetAxis]]() y demás funcionan exactamente igual que en SDL 1.2.
+
+Deberías revisar la nueva [[CategoryGameController|API Game Controller]], es muy buena y probablemente te ahorre muchos dolores de cabeza que antes te producía SDL 1.2. Puedes encontrarla en SDL_gamecontroller.h. La API Game Controller se integra muy bien con el modo Big Picture de Steam: ofrece configuración automática para la mayoría de controladores y una buena interfaz visual si necesitas configurar algo a mano. En cualquier caso, Steam pasa el control de esta configuración a tu aplicación.
+
+La API antigua de joysticks para Linux (/dev/input/js*) ha sido eliminada de SDL2. Ahora sólo se soporta la nueva API de eventos (/dev/input/event*) para joysticks. Normalmente estos eventos no son recibidos en cuentas de usuario comunes, así que incluso si se enchufan joysticks nuevos probablemente no se detecten. Esto es algo que los usuarios finales tendrán que configurar por su cuenta.
+
+=== Hilos ===
+
+<code>SDL_KillThread()</code> ya no existe porque nunca fue lo suficientemente segura o confiable. La mejor manera de reemplazarla es asignar un "flag" que le indique a un hilo que debe finalizar. El hilo deberá chequear este flag regularmente y luego el hilo "asesino" deberá llamar a [[SDL_WaitThread]]() para limpiar todo.
+
+Ahora [[SDL_CreateThread]]() recibe un parámetro extra: un nombre para el hilo que puede ser utilizado por depuradores para identificarlo. Si no te interesa usarlo, puedes simplemente pasarle NULL.
+
+=== CDs de audio ===
+
+La API de CD de SDL 1.2 fue eliminada por completo, y no hay reemplazo. Lo más probable es que a estas alturas no suministres tu música en Audio CD, si es que siquiera distribuyas tu aplicación en CD. Puedes usar [Ogg Vorbis](http://www.vorbis.com/) o algún otro tipo de archivo de audio para tu música, la mayoría de los cuales son soportados por [http://www.libsdl.org/projects/SDL_mixer/ SDL_Mixer].
+
+=== Plataformas abandonadas ===
+
+Eliminamos el soporte para unas cuantas plataformas antiguas, como OS/2 y Mac OS 9. Es más fácil enumerar las que todavía soportamos: Windows (XP y superior), Linux, Mac OS X, iOS y Android. Siguiendo la tradición de SDL, hay algunas otras plataformas externas que funcionan pero no son soportadas de manera completa, como Haiku y Sony PSP. En general, agregamos cualquier plataforma para la cual recibamos parches, pero nos pareció que ya era hora de decirle adiós a algunas de ellas al movernos a la nueva versión.
+
+=== Plataformas móviles ===
+
+Hace bastante que existen ports no oficiales de SDL 1.2 para iOS y Android. Ahora SDL soporta esas plataformas directamente y la API 2.0 es más apropiada para las mismas. La mayor parte del contenido de este documento es válido en estas plataformas, pero existen algunas cosas que es necesario tener en cuenta.
+
+Lo primero es que existen eventos que sólo tienen sentido en dispositivos móviles o, mejor dicho, que están sujetos a la manera en la que los sistemas operativos móviles funcionan en el mundo post-iPhone. Originalmente tratábamos de equiparar estos comportamientos a eventos ya existentes en SDL (como por ejemplo "tu aplicación pasa a segundo plano" emulado como una ventana perdiendo el foco), pero hay un problema importante: la mayoría de estos eventos requieren una respuesta inmediata y, si la aplicación no la provee, el SO cerrará tu aplicación inmediatamente.
+
+Por eso hemos agregado nuevos eventos de SDL para ciertos detalles específicos de Android e iOS, pero tendrás que configurar un filtro de eventos para detectarlos tan pronto como el SO los reporte, porque si esperas hasta la próxima llamada a [[SDL_PollEvent]]() ya será demasiado tarde.
+
+Por ejemplo: tenemos <code>SDL_APP_WILLENTERBACKGROUND</code>, que es el equivalente de <code>applicationWillResignActive()</code> en iOS. Si dibujas algo después de que ese evento se dispare, iOS cerrará tu aplicación. Por eso, necesitas interceptarlo de manera inmediata:
+
+```c++
+int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
+{
+    if (event->type == SDL_APP_WILLENTERBACKGROUND) {
+        // liberamos recursos y NO DIBUJAMOS MAS hasta que recuperemos el foco!
+    }
+    // etc
+    return 1;
+}
+
+// cerca del inicio del programa...
+
+// esto llama myEventFilter(data, event) ni bien se genera un evento.
+SDL_AddEventWatch(myEventFilter, data);
+```
+
+Además, ahora hay eventos de toque reales en vez de asignarlos al ratón. Puedes rastrear toques, de varios dedos e incluso gestos complejos. Puedes ver la lista completa de funciones en SDL_touch.h y eventos [[SDL_Finger]]* en SDL_events.h.
+
+Hay algunas otras funciones pensadas para plataformas móviles, como [[SDL_StartTextInput]]() que mostrarán el teclado en pantalla. Úsalas.
+
+Finalmente, hay algunas funciones específicas de Android e iOS para permitirte acceder a funcionalidades específicas de cada plataforma que no tendría mucho sentido agregar en una API general. Puedes ver la lista de estas funciones en SDL_system.h.
+
+=== RWops ===
+
+Tanto [[SDL_RWread]]() como [[SDL_RWwrite]]() ahora devuelven 0 en caso de error en vez de -1.
+
+Si escribiste tu propia implementación de [[SDL_RWops]], ten en cuenta que las declaraciones de las funciones han cambiado. Ahora utilizan Sint64 y size_t en vez de int para poder utilizar archivos grandes. En muchos casos, deberías poder actualizar las declaraciones únicamente, pero si te habías topado con estos problemas, seguramente te alegrarás de saber que ya están solucionados. Las aplicaciones que invoquen a dichas funciones deben estar al tanto de que los valores de retorno han cambiado.
+
+También se ha agregado a RWops un método para calcular tamaños: [[SDL_RWsize]](). Esto permite a un RWops reportar el tamaño del "stream" sin obligar a la aplicación a realizar una "seek" hasta los cero bytes desde el final; en otras palabras, puedes reportar un tamaño para aquellas streams que no soporten seek. Si ni siquiera esto es posible, puedes retornar -1.
+
+=== Bibliotecas complementarias ===
+
+Las extensiones oficiales SDL_image, SDL_ttf, SDL_mixer y SDL_net ya tienen versiones correspondientes a SDL 2.0: SDL2_image, SDL2_ttf, SDL2_mixer y SDL2_net. Puedes que tengas que bajarlas desde los [http://hg.libsdl.org/ repositorios de mercurial] para tener las últimas correcciones. Ahora tu programa deberá linkear a, por ejemplo, SDL2_image en vez de SDL_image para poder compilar.
+
+De ahora en adelante, estas bibliotecas no seguirán dando soporte a 1.2, y probablemente la compatibilidad con 1.2 desaparezca finalmente con las nuevas versiones.
+
+A partir de la versión 2.0.21 (Mayo 2010), es posible compilar [http://www.ferzkopp.net/joomla/content/view/19/14/ SDL_gfx] con SDL 2.0.
+
+=== Resumen de cosas renombradas o reemplazadas ===
+
+* SDL_SetVideoMode(): usa [[SDL_CreateWindow]]() (junto con [[SDL_CreateRenderer]]() si quieres hacer 2D clásico en vez de OpenGL)
+* SDL_ListModes(): usa [[SDL_GetDisplayMode]]()/[[SDL_GetNumDisplayModes]]()
+* SDL_UpdateRect()/SDL_Flip(): usa [[SDL_RenderPresent]]()
+* SDL_Surface/2D rendering: todavía hay surfaces, pero es recomendable que uses [[SDL_Texture|SDL_Textures]] con un renderer 2D acelerado ([[SDL_CreateRenderer]]()) de ser posible.
+* SDL_VideoInfo: usa [[SDL_GetRendererInfo]]()/[[SDL_GetRenderDriverInfo]]()
+* SDL_GetCurrentVideoDisplay(): usa [[SDL_GetWindowDisplayIndex]]()
+* evento SDL_VIDEORESIZE: usa su equivalente [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZE]]
+
+=== El resto ===
+
+Hay una gran cantidad de cosas nuevas e interesantes en SDL 2.0 de las cuales 1.2 ni siquiera hubiera podido soñar. Aquí sólo tratamos de explicar aquello que puede que tengas que hacer para que tu programa compatible con 1.2 funcione con 2.0, pero realmente es recomendable que explores la documentación. Probablemente ecuentres cosas que te hubiera gustado tener pero descartaste en su momento porque simplemente no existían. Por ejemplo: para cada juego que porté terminé con una función de mensaje de texto similar a esta:
+
+```c++
+#if USING_SDL
+fprintf(stderr, "MSGBOX: %s\n%s\n", title, text);   // bueno, vaya.
+#endif
+```
+
+Ahora puedes usar [[SDL_ShowSimpleMessageBox]](). ¡De nada!
+
+¡Si te salteaste alguna parte, puedes volver y chequear todas las funcionalidades nuevas en [[#Vistazo_de_características_nuevas|el resumen]]!
+
+Nota: No dudes comunicarme cualquier problema o correción sobre la traducción de esta guía. Puedes dejar un comentario en esta misma página o contactarme directamente a través de alguno de los servicios al pie :)
