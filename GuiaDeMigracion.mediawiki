@@ -97,7 +97,7 @@ SDL_Window *screen = SDL_CreateWindow("My Game Window",
 			SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 ```
 
-Notarás que es bastante similar a 1.2. La diferencia es que ahora es posible tener varias ventanas (si quieres) y que tienes más control sobre ellas. SDL_WM_SetCaption ya no existe, porque es necesario que cada ventana pueda tener un título propio (puedes cambiarlo usando [[SDL_SetWindowTitle]]()) y que sea posible darle una posición específica. En este caso utilizamos <code>SDL_WINDOWPOS_UNDEFINED</code> porque no nos preocupa dónde se ubique la ventana. También es posible utilizar <code>SDL_WINDOWPOS_CENTERED</code>.
+Notarás que es bastante similar a 1.2. La diferencia es que ahora es posible tener varias ventanas (si quieres) y que tienes más control sobre ellas. SDL_WM_!SetCaption ya no existe, porque es necesario que cada ventana pueda tener un título propio (puedes cambiarlo usando [[SDL_SetWindowTitle]]()) y que sea posible darle una posición específica. En este caso utilizamos <code>SDL_WINDOWPOS_UNDEFINED</code> porque no nos preocupa dónde se ubique la ventana. También es posible utilizar <code>SDL_WINDOWPOS_CENTERED</code>.
 
 Además, es posible especificar una pantalla: SDL2 te permite trabajar con equipos con monitores múltiples. Sin embargo, no es necesario que te preocupes por eso por ahora mismo.
 
@@ -272,7 +272,7 @@ Puedes realizar algunos efectos simples con la Renderer API sin necesidad de man
 
 === OpenGL ===
 
-Si ya estabas utilizando OpenGL directamente, la migración es bastante simple. Necesitas reemplazar tu llamada a <code>SDL_SetVideoMode()</code> por [[SDL_CreateWindow]]() seguida de [[SDL_GL_CreateContext]](). Luego cambia SDL_GL_SwapBuffers() por [[SDL_GL_SwapWindow]](window). Las llamadas de funciones de OpenGL no cambian.
+Si ya estabas utilizando OpenGL directamente, la migración es bastante simple. Necesitas reemplazar tu llamada a <code>SDL_SetVideoMode()</code> por [[SDL_CreateWindow]]() seguida de [[SDL_GL_CreateContext]](). Luego cambia SDL_GL_!SwapBuffers() por [[SDL_GL_SwapWindow]](window). Las llamadas de funciones de OpenGL no cambian.
 
 Si utilizabas [[SDL_GL_SetAttribute]]<code>(SDL_GL_SWAP_CONTROL, x)</code>, necesitas hacer algunos cambios: ahora existe la función [[SDL_GL_SetSwapInterval]](x) que te permitirá modificar esto en un contexto GL existente.
 
