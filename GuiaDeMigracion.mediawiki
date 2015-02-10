@@ -17,14 +17,14 @@ Creemos que SDL 2.0 va a satisfacerte tanto por sus características nuevas y po
 Estas son las características nuevas más importantes de SDL 2.0
 
 * Aceleración 3D por hardware
-* Soporte de OpenGL 2.0+ con múltiples perfiles (core, compatibilidad, depuración, robusto, etc)
+* Soporte de OpenGL 3.0+ con múltiples perfiles (core, compatibilidad, depuración, robusto, etc)
 * Soporte de OpenGL ES
 * Soporte de ventanas múltiples
 * Soporte de pantallas múltiples
 * Soporte de dispositivos de audio múltiples
 * Soporte de Android e iOS
 * API 2D simple que puede utilizar Direct3D, OpenGL, OpenGL ES o renderizado por software.
-* Soporte Force Feedback en Windows, Mac OSX X y Linux
+* Soporte Force Feedback en Windows, Mac OS X y Linux
 * Soporte XInput y XAudio2 en Windows
 * Operaciones atómicas
 * Manejo de energía (muestra batería restante, etc)
@@ -89,10 +89,10 @@ SDL_Surface *screen = SDL_SetVideoMode(640, 480, 0, SDL_FULLSCREEN | SDL_OPENGL)
 Ahora debería ser:
 
 ```c++
-SDL_Window *screen = SDL_CreateWindow("My Game Window", 
-			SDL_WINDOWPOS_UNDEFINED, 
-			SDL_WINDOWPOS_UNDEFINED, 
-			640, 480, 
+SDL_Window *screen = SDL_CreateWindow("My Game Window",
+			SDL_WINDOWPOS_UNDEFINED,
+			SDL_WINDOWPOS_UNDEFINED,
+			640, 480,
 			SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 ```
 
@@ -131,7 +131,7 @@ Ahora que sabes cómo funciona esto, es posible hacerlo en un sólo paso utiliza
 ```c++
 SDL_Window *sdlWindow;
 SDL_Renderer *sdlRenderer;
-SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, 
+SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP,
 			&sdlWindow, &sdlRenderer);
 ```
 
@@ -151,7 +151,7 @@ En 2.0, la API de render nos permite hacer lo siguiente:
 
 ```c++
 // hacemos que el render escalado se vea mejor
-SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  
+SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
 SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
 ```
 
@@ -178,7 +178,7 @@ Probablemente hayas utilizado antes una [[SDL_Surface]] dedicada a la pantalla y
 
 ```c++
 // esto puede ser surface->pixels, un buffer de malloc() o lo que sea.
-extern Uint32 *myPixels;  
+extern Uint32 *myPixels;
 ```
 
 Al final del frame, necesitamos actualizar nuestra textura de la siguiente manera:
