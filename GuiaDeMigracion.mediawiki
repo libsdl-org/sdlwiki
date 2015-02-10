@@ -23,6 +23,7 @@ Estas son las características nuevas más importantes de SDL 2.0
 * Soporte de pantallas múltiples
 * Soporte de dispositivos de audio múltiples
 * Soporte de Android e iOS
+* Soporte de Emscripten e Native Client 
 * API 2D simple que puede utilizar Direct3D, OpenGL, OpenGL ES o renderizado por software.
 * Soporte Force Feedback en Windows, Mac OS X y Linux
 * Soporte XInput y XAudio2 en Windows
