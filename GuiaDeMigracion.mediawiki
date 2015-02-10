@@ -445,5 +445,3 @@ fprintf(stderr, "MSGBOX: %s\n%s\n", title, text);   // bueno, vaya.
 Ahora puedes usar [[SDL_ShowSimpleMessageBox]](). ¡De nada!
 
 ¡Si te salteaste alguna parte, puedes volver y chequear todas las funcionalidades nuevas en [[#Vistazo_de_características_nuevas|el resumen]]!
-
-Nota: No dudes comunicarme cualquier problema o correción sobre la traducción de esta guía. Puedes dejar un comentario en esta misma página o contactarme directamente a través de alguno de los servicios al pie :)
