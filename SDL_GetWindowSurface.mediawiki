@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
     SDL_BlitSurface(image, NULL, screen, NULL); // blit it to the screen
     SDL_FreeSurface(image);
 
-    // this works just like SDL_Flip
+    // this works just like SDL_Flip() in SDL 1.2
     SDL_UpdateWindowSurface(window);
 
     // show image for 2 seconds
