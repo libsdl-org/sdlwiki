@@ -91,10 +91,10 @@ Ahora debería ser:
 
 ```c++
 SDL_Window *screen = SDL_CreateWindow("My Game Window",
-			SDL_WINDOWPOS_UNDEFINED,
-			SDL_WINDOWPOS_UNDEFINED,
-			640, 480,
-			SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
+                          SDL_WINDOWPOS_UNDEFINED,
+                          SDL_WINDOWPOS_UNDEFINED,
+                          640, 480,
+                          SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 ```
 
 Notarás que es bastante similar a 1.2. La diferencia es que ahora es posible tener varias ventanas (si quieres) y que tienes más control sobre ellas. <code>SDL_WM_SetCaption()</code> ya no existe, porque es necesario que cada ventana pueda tener un título propio (puedes cambiarlo usando [[SDL_SetWindowTitle]]()) y que sea posible darle una posición específica. En este caso utilizamos <code>SDL_WINDOWPOS_UNDEFINED</code> porque no nos preocupa dónde se ubique la ventana. También es posible utilizar <code>SDL_WINDOWPOS_CENTERED</code>.
@@ -111,10 +111,10 @@ Ya no utilizamos <code>SDL_ListModes()</code>. Hay algo parecido en SDL2 (llamar
 
 ```c++
 SDL_Window *sdlWindow = SDL_CreateWindow(title,
-			SDL_WINDOWPOS_UNDEFINED,
-			SDL_WINDOWPOS_UNDEFINED,
-			0, 0,
-			SDL_WINDOW_FULLSCREEN_DESKTOP);
+                          SDL_WINDOWPOS_UNDEFINED,
+                          SDL_WINDOWPOS_UNDEFINED,
+                          0, 0,
+                          SDL_WINDOW_FULLSCREEN_DESKTOP);
 ```
 
 Si te fijas, no especificamos 640 o 480... escritorio a pantalla completa te da justamente la pantalla completa e ignora las dimensiones que le pases. La ventana de tu juego debería aparecer instantáneamente en vez de esperar a que el monitor cambie de resolución y con esto vamos a utilizar el GPU para escalar todo a la resolución del escritorio. Esto es generalmente lo mejor y más rápido en caso de que una pantalla LCD esté simulando correr a una resolución menor. Como "bonus": no es necesario redimensionar el resto de las ventanas que estén corriendo.
@@ -132,8 +132,7 @@ Ahora que sabes cómo funciona esto, es posible hacerlo en un sólo paso utiliza
 ```c++
 SDL_Window *sdlWindow;
 SDL_Renderer *sdlRenderer;
-SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP,
-			&sdlWindow, &sdlRenderer);
+SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, &sdlWindow, &sdlRenderer);
 ```
 
 Asumiendo que ninguna de las funciones falló (¡siempre hay que comprobar NULLs!), estamos listos para comenzar a dibujar en la pantalla. Empecemos por "limpiarla" usando color negro:
@@ -151,8 +150,7 @@ Una cosa más: Como estamos utilizando <code>SDL_WINDOW_FULLSCREEN_DESKTOP</code
 En 2.0, la API de render nos permite hacer lo siguiente:
 
 ```c++
-// hacemos que el render escalado se vea mejor
-SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");
+SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  // hacemos que el render escalado se vea mejor
 SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
 ```
 
@@ -168,9 +166,9 @@ Para esto, sólo necesitas una SDL_Texture que represente la pantalla. Hagamos e
 
 ```c++
 sdlTexture = SDL_CreateTexture(sdlRenderer,
-			SDL_PIXELFORMAT_ARGB8888,
-			SDL_TEXTUREACCESS_STREAMING,
-			640, 480);
+                               SDL_PIXELFORMAT_ARGB8888,
+                               SDL_TEXTUREACCESS_STREAMING,
+                               640, 480);
 ```
 
 Esto representa una textura en la GPU. La idea es generar cada frame guardando pixels en esta textura, dibujar la textura en la ventana y presentar la misma en la pantalla. <code>SDL_TEXTUREACCESS_STREAMING</code> le indica a SDL que el contenido de esta textura cambiará de manera frecuente.
@@ -208,9 +206,9 @@ Puedes crear texturas individuales (surfaces ubicadas en memoria de GPU) de la m
 
 ```c++
 sdlTexture = SDL_CreateTexture(sdlRenderer,
-			SDL_PIXELFORMAT_ARGB8888,
-			SDL_TEXTUREACCESS_STATIC,
-			myWidth, myHeight);
+                               SDL_PIXELFORMAT_ARGB8888,
+                               SDL_TEXTUREACCESS_STATIC,
+                               myWidth, myHeight);
 ```
 
 En este caso, utilizamos <code>SDL_TEXTUREACCESS_STATIC</code>, porque vamos a "subir" los pixels sólo una vez y no repetidas veces. Pero sería una mejor solución:
@@ -238,15 +236,15 @@ A esto:
 ```c++
 // si no quieres utilizar hexadecimal, puedes usar SDL_PixelFormatEnumToMasks()!
 SDL_Surface *screen = SDL_CreateRGBSurface(0, 640, 480, 32,
-			0x00FF0000,
-			0x0000FF00,
-			0x000000FF,
-			0xFF000000);
+                                        0x00FF0000,
+                                        0x0000FF00,
+                                        0x000000FF,
+                                        0xFF000000);
 
 SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
-			SDL_PIXELFORMAT_ARGB8888,
-			SDL_TEXTUREACCESS_STREAMING,
-			640, 480);
+                                            SDL_PIXELFORMAT_ARGB8888,
+                                            SDL_TEXTUREACCESS_STREAMING,
+                                            640, 480);
 ```
 :..y sigue bliteando cosas y modificando pixels como lo hacías antes, componiendo tu framebuffer final dentro de esta [[SDL_Surface]]. Una vez que esté listo para mostrarse en pantalla, puedes hacer como en el primer caso:
 
