@@ -101,7 +101,7 @@ SDL_Window *screen = SDL_CreateWindow("My Game Window",
                           SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 ```
 
-You can see that this maps pretty closely to 1.2. The difference is that you can have multiple windows (if you want), and you can control them more. <code>SDL_WM_SetCaption</code> is gone, because we want to allow each window to have its own title (you can change it later with [[SDL_SetWindowTitle]]()), and we want to let you specify a window position (or, in this case, use '''SDL_WINDOWPOS_UNDEFINED''' since we don't care where the system places it. '''SDL_WINDOWPOS_CENTERED''' is also a good choice).
+You can see that this maps pretty closely to 1.2. The difference is that you can have multiple windows (if you want), and you can control them more. <code>SDL_WM_SetCaption()</code> is gone, because we want to allow each window to have its own title (you can change it later with [[SDL_SetWindowTitle]]()), and we want to let you specify a window position (or, in this case, use '''SDL_WINDOWPOS_UNDEFINED''' since we don't care where the system places it. '''SDL_WINDOWPOS_CENTERED''' is also a good choice).
 
 Extra credit for letting users specify a display for the window: SDL2 also allows you to manage systems with multiple monitors. Don't worry about that right now, though.
 
