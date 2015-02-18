@@ -44,7 +44,7 @@ You can add your code example here
 == Remarks ==
 The axis indices start at index 0.
 
-The state is a value ranging from -32768 to 32767.
+The state is a value ranging from -32768 to 32767. Triggers, however, range from 0 to 32767 (they never return a negative value).
 
 == Version ==
 This function is available since SDL 2.0.0.
