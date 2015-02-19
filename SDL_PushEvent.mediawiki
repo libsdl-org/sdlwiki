@@ -32,9 +32,9 @@ Returns 1 on success, 0 if the event was filtered, or a negative error code on f
 == Remarks ==
 The event queue can actually be used as a two way communication channel. Not only can events be read from the queue, but the user can also push their own events onto it. '''event''' is a pointer to the event structure you wish to push onto the queue. The event is copied into the queue, and the caller may dispose of the memory pointed to after [[SDL_PushEvent]]() returns.
 
-Note: Pushing device input events onto the queue doesn't modify the state of the device within SDL. 
+Note: Pushing device input events onto the queue doesn't modify the state of the device within SDL.
 
-This function is thread safe, and can be called from other threads safely.
+{i} This function is thread-safe, and can be called from other threads safely.
 
 Note: Events pushed onto the queue with [[SDL_PushEvent]]() or [[SDL_PeepEvents]]() do not get passed through the event filter.
 
