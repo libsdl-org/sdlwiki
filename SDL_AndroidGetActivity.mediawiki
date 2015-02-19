@@ -21,6 +21,8 @@ The jobject returned by the function is a local reference and must be released b
 #include "SDL.h"
 #include <jni.h>
 
+// This example requires C++
+
 // Calls the void showHome() method of the Java instance of the activity.
 void showHome(void)
 {
