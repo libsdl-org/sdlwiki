@@ -18,7 +18,7 @@ SDL 2.0, unlike 1.2, uses [[FAQLicensing|the zlib license]], which means you can
 
 Several other platforms will be built "the Unix way," so we'll describe this platform first.
 
-SDL supports most popular flavors of Unix: Linux, the various BSDs, Solaris, and other things like them.
+SDL supports most popular flavors of Unix: Linux 2.6+, the various BSDs (FreeBSD, NetBSD, OpenBSD), Solaris, and other things like them.
 
 First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!
 
@@ -67,7 +67,7 @@ We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build
 
 In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime if you plan to ship a Linux game for non-Steam platforms, too, since you know it's definitely built sanely.
 
-=== Windows ===
+=== Windows XP/Vista/7 ===
 
 SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
 
@@ -95,9 +95,11 @@ Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built 
 
 === iOS ===
 
-SDL ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
+SDL supports iOS 5.1.1+ and ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
 
 === Android ===
+
+SDL supports Android 2.3.3+.
 
 See [[Android|Building SDL2 for Android]].
 
@@ -156,6 +158,10 @@ This probably works, or could be made to work, using the Haiku target, but there
 === Nintendo DS ===
 
 This worked at some point using a homebrew toolkit, but we removed it due to bitrot. There's some rudimentary support in SDL 1.2.
+
+=== Pandora ===
+
+This worked at some point.
 
 === Sony PSP ===
 
