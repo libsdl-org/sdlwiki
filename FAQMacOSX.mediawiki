@@ -3,7 +3,7 @@
 == What is supported? ==
 SDL supports Mac OS X 10.4 and newer, using either Xcode or the classic UNIX style build system. Currently only Xcode can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
 
-For the latest information see http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md
+For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
 
 == What is the difference between the Xcode and the UNIX style build system? ==
 The SDL-devel package contains the SDL libraries in the form of a Framework. That is perfectly fine as long as you want to develop using Xcode. However, applications which use a configure script almost always require SDL to be installed UNIX style.
