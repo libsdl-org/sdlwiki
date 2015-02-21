@@ -4,7 +4,8 @@
 == Using SDL ==
 === General ===
 ==== What is supported? ====
-SDL supports iOS 3.1.3 or newer.
+
+SDL 2.0.0 supported iOS 5.1.1 or newer. Older versions of SDL supported iOS 3.1.3 or newer.
 
 For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
 
