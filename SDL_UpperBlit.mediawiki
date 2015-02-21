@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-SDL_UpperBlit() has been replaced with [[SDL_BlitSurface]]()
+SDL_UpperBlit() has been replaced by [[SDL_BlitSurface]]().
