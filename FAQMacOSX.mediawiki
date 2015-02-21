@@ -1,7 +1,7 @@
 = FAQ: Mac OS X =
 
 == What is supported? ==
-SDL supports Mac OS X 10.4 and newer, using either Xcode or the classic UNIX style build system. Currently only Xcode can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
+SDL 2.0.0 supports Mac OS X 10.5 and newer, using either Xcode or the classic UNIX style build system. Currently only Xcode can be used to build the SDL Framework. The UNIX build system creates classic shared and static versions of the SDL library.
 
 For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
 
