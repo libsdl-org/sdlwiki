@@ -2,7 +2,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-= SDL_assert_state =
+= SDL_AssertState =
 An enumeration of assertion handling states.
 
 
