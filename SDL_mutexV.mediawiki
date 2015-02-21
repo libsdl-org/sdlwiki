@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-SDL_mutexV has been replaced with [[SDL_UnlockMutex]]
+SDL_mutexV() has been replaced by [[SDL_UnlockMutex]]().
