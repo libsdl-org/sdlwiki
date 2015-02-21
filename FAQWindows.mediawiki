@@ -6,7 +6,7 @@
 == Using SDL ==
 === General ===
 ==== What is supported? ====
-SDL supports Windows XP, Vista, and Windows 7.
+SDL 2.0.0 supports Windows XP, Windows Vista, Windows 7 and Windows 8.
 
 SDL can be built with Visual C++, Cygwin, MinGW, and Dev-C++.
 
