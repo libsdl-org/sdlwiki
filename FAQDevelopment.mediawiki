@@ -48,7 +48,7 @@ You need to turn on the "enums as ints" option for your compiler:
 Not all display targets can make use of hardware acceleration. In particular, this is the case for the X11 target which always presents you with a software framebuffer. Your video memory will always be reported to be zero if no acceleration is available.
 Note that this has nothing to do with 3D acceleration, just 2D hardware acceleration support in the underlying operating system video drivers.
 
-If you want hardware acceleration on Linux, you can use the DGA driver (fullscreen-only, under X11) or the framebuffer console driver (fullscreen-only, under the console). See the Linux FAQ for more information on using these drivers.
+If you want hardware acceleration on Linux, you can use the DGA driver (fullscreen-only, under X11) or the framebuffer console driver (fullscreen-only, under the console). See the [[FAQLinux|Linux FAQ]] for more information on using these drivers.
 
 If you want hardware acceleration on Windows, make sure SDL is built with DirectX support and run your program in fullscreen mode.
 
