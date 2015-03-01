@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_AtomicSet =
-Use this function to set an atomic variable to a value.
+Use this function to set an atomic variable to a value. This function also acts as a full memory barrier.
 
 
 == Syntax ==
