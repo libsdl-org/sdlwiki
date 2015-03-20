@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 You should be using main() instead of !WinMain() even though you are creating a Windows application, because SDL provides a version of !WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use !WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your !WinMain() function so that SDL works properly.
 
 ==== I get "Undefined reference to 'WinMain@16'" ====
-Under Visual C++, you need to link with SDLmain.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDLmain -lSDL -mwindows
+Under Visual C++, you need to link with SDL2main.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDL2main -lSDL2 -mwindows
 
 ==== I get undefined references to various SDL functions... ====
 When you're compiling with gcc, you need to make sure the output of sdl-config follows your source file on the command line:
