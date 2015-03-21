@@ -158,6 +158,15 @@ An enumeration of the types of events that can be delivered.
 |the system requests a file open
 |-
 |
+|<bgcolor="#EDEDED">''Audio hotplug events''
+|-
+|[[SDL_AudioDeviceEvent|SDL_AUDIODEVICEADDED]]
+|a new audio device is available (>= SDL 2.0.4)
+|-
+|[[SDL_AudioDeviceEvent|SDL_AUDIODEVICEREMOVED]]
+|an audio device has been removed (>= SDL 2.0.4)
+|-
+|
 |<bgcolor="#EDEDED">''Render events''
 |-
 |SDL_RENDER_TARGETS_RESET
@@ -258,6 +267,7 @@ This is how these events currently map to the underlying OS:
 : [[SDL_UserEvent]]
 : [[SDL_WindowEvent]]
 : [[SDL_DropEvent]]
+: [[SDL_AudioDeviceEvent]]
 : [[SDL_TouchFingerEvent]]
 : [[SDL_DollarGestureEvent]]
 : [[SDL_MultiGestureEvent]]
