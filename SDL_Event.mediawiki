@@ -186,7 +186,7 @@ SDL_PushEvent(&user_event);
 |-
 |SDL_CONTROLLERBUTTONDOWN<br/>SDL_CONTROLLERBUTTONUP
 |[[SDL_ControllerButtonEvent]]
-|cbutton
+|'''cbutton'''
 |-
 |SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
 |[[SDL_ControllerDeviceEvent]]
