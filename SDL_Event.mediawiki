@@ -180,6 +180,14 @@ SDL_PushEvent(&user_event);
 |[[SDL_AudioDeviceEvent]]
 |'''adevice'''
 |-
+|SDL_CONTROLLERAXISMOTION
+|[[SDL_ControllerAxisEvent]]
+|'''caxis'''
+|-
+|SDL_CONTROLLERBUTTONDOWN<br/>SDL_CONTROLLERBUTTONUP
+|[[SDL_ControllerButtonEvent]]
+|cbutton
+|-
 |SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
 |[[SDL_ControllerDeviceEvent]]
 |'''cdevice'''
