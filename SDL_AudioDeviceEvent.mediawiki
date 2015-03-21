@@ -1,0 +1,66 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_AudioDeviceEvent =
+A structure that contains Audio device event information.
+
+
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_AUDIODEVICEADDED, or SDL_AUDIODEVICEREMOVED
+|-
+|Uint32
+|'''timestamp'''
+|the timestamp of the event
+|-
+|Uint32
+|'''which'''
+|the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [[SDL_GetNumAudioDevices]]() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event
+|-
+|Uint8
+|'''iscapture'''
+|zero if an audio output device, non-zero if an audio capture device
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+''You can add useful comments here''
+
+<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Version ==
+This structure is available since SDL 2.0.4.
+
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+<!-- #Remove this section if empty -->
+
+== Related Structures ==
+:[[SDL_Event]]
+<!-- #Remove this section if empty -->
+
+== Related Functions ==
+:[[SDL_GetNumAudioDevices]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
