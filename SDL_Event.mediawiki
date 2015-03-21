@@ -180,6 +180,10 @@ SDL_PushEvent(&user_event);
 |[[SDL_AudioDeviceEvent]]
 |'''adevice'''
 |-
+|SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
+|[[SDL_ControllerDeviceEvent]]
+|'''cdevice'''
+|-
 |SDL_DOLLARGESTURE
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
@@ -211,6 +215,10 @@ SDL_PushEvent(&user_event);
 |SDL_JOYBUTTONDOWN<br/>SDL_JOYBUTTONUP
 |[[SDL_JoyButtonEvent]]
 |'''jbutton'''
+|-
+|SDL_JOYDEVICEADDED<br/>SDL_JOYDEVICEREMOVED
+|[[SDL_JoyDeviceEvent]]
+|'''jdevice'''
 |-
 |SDL_MOUSEMOTION
 |[[SDL_MouseMotionEvent]]
