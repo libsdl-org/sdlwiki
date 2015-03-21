@@ -75,6 +75,10 @@ A union that contains structures for the different event types.
 |'''cdevice'''
 |game controller device event data
 |-
+|[[SDL_AudioDeviceEvent]]
+|'''adevice'''
+|audio device event data (>= SDL 2.0.4)
+|-
 |[[SDL_QuitEvent]]
 |'''quit'''
 |quit request event data
@@ -172,6 +176,10 @@ SDL_PushEvent(&user_event);
 |<bgcolor="#EDEDED">''Event Structure''
 |<bgcolor="#EDEDED">''SDL_Event Field''
 |-
+|SDL_AUDIODEVICEADDED<br/>SDL_AUDIODEVICEREMOVED
+|[[SDL_AudioDeviceEvent]]
+|'''adevice'''
+|-
 |SDL_DOLLARGESTURE
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
@@ -249,6 +257,7 @@ SDL_PushEvent(&user_event);
 :[[SDL_EventType]]
 
 == Related Structures ==
+:[[SDL_AudioDeviceEvent]]
 :[[SDL_DollarGestureEvent]]
 :[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
