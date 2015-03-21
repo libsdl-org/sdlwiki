@@ -192,7 +192,7 @@ SDL_PushEvent(&user_event);
 |[[SDL_ControllerDeviceEvent]]
 |'''cdevice'''
 |-
-|SDL_DOLLARGESTURE
+|SDL_DOLLARGESTURE<br/>SDL_DOLLARRECORD
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
 |-
