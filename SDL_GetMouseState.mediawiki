@@ -15,10 +15,10 @@ Uint32 SDL_GetMouseState(int* x,
 == Function Parameters ==
 {|
 |'''x'''
-|^the x coordinate of the mouse cursor position relative to the focus window^
+|the x coordinate of the mouse cursor position relative to the focus window
 |-
 |'''y'''
-|^the y coordinate of the mouse cursor position relative to the focus window^
+|the y coordinate of the mouse cursor position relative to the focus window
 |}
 
 == Return Value ==
@@ -33,7 +33,7 @@ if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
 ```
 
 == Remarks ==
-The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros (where X is generally 1 for the left, 2 for middle, 3 for the right button), and '''x''' and '''y''' are set to the mouse cursor position relative to the focus window for the current,,ly selected,, mouse. You can pass NULL for either '''x''' or '''y'''.
+The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros (where X is generally 1 for the left, 2 for middle, 3 for the right button), and '''x''' and '''y''' are set to the mouse cursor position relative to the focus window for the currently selected mouse. You can pass NULL for either '''x''' or '''y'''.
 
 <span style="color: green;">Suggest splitting the first sentence into two.  Should the subscripted portion be removed to reflect the lack of multi-mouse support?</span>
 
