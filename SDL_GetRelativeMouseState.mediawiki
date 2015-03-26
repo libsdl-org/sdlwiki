@@ -21,7 +21,7 @@ Uint32 SDL_GetRelativeMouseState(int* x,
 |a pointer filled with the last recorded y coordinate of the mouse
 |}
 
-<span style="color: green;">Should this be an exception to the 'pointer rule'?</span>
+<!-- <span style="color: green;">Should this be an exception to the 'pointer rule'?</span> -->
 
 == Return Value ==
 Returns a 32 bit button bitmask of the relative button state.
