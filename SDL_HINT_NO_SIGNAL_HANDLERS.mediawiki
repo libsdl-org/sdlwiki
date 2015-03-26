@@ -21,6 +21,10 @@ A hint that specifies not to catch the SIGINT or SIGTERM signals.
 |}
 
 
+== Default ==
+By default install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_QUIT event.
+
+
 == Code Examples ==
 ```c++
 You can add your code example here
