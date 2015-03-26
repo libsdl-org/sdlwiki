@@ -32,7 +32,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros (where X is generally 1 for the left, 2 for middle, 3 for the right button)(<span style="color: green;">parens is from SDL_GetMouseState because remark is otherwise the same</span>), and '''x''' and '''y''' are set to the mouse deltas since the last call to [[SDL_GetRelativeMouseState]]() or since event initialization. You can pass NULL for either '''x''' or '''y'''.
+The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros (where X is generally 1 for the left, 2 for middle, 3 for the right button), and '''x''' and '''y''' are set to the mouse deltas since the last call to [[SDL_GetRelativeMouseState]]() or since event initialization. You can pass NULL for either '''x''' or '''y'''.
 
 == Related Functions ==
 :[[SDL_GetMouseState]]
