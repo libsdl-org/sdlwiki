@@ -31,6 +31,10 @@ A structure that contains system-dependent information about a window.
 |'''win.window'''
 |the window handle
 |-
+|HDC 
+|'''win.hdc'''   
+|the window device context (>= SDL 2.0.4)
+|-
 |
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)
