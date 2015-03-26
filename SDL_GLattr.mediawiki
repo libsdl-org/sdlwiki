@@ -76,9 +76,13 @@ An enumeration of OpenGL configuration attributes.
 |SDL_GL_FRAMEBUFFER_SRGB_CAPABLE
 |requests sRGB capable visual; defaults to 0 (>= SDL 2.0.1)
 |-
+|SDL_GL_CONTEXT_RELEASE_BEHAVIOR
+|sets context the release behavior; defaults to 1 (>= SDL 2.0.4)
+|-
 |<rowstyle="color: #808080;">SDL_GL_CONTEXT_EGL
 |not used (deprecated)
 |}
+
 == Code Examples ==
 ```c++
 SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
@@ -97,6 +101,8 @@ In some cases, these attributes are minimum requests; the GL does not promise to
 <span id="multisample"></span> [http://en.wikipedia.org/wiki/Multisample_anti-aliasing Multisample anti-aliasing] is a type of full screen anti-aliasing.  Multipsampling defaults to off but can be turned on by setting SDL_GL_MULTISAMPLEBUFFERS to 1 and SDL_GL_MULTISAMPLESAMPLES to a value greater than 0.  Typical values are 2 and 4.
 
 <span id="OpenGL"></span> SDL_GL_CONTEXT_PROFILE_MASK determines the type of context created, while both SDL_GL_CONTEXT_MAJOR_VERSION and SDL_GL_CONTEXT_MINOR_VERSION determine which version. All three attributes must be set prior to creating the first window, and in general you can't change the value of SDL_GL_CONTEXT_PROFILE_MASK without first destroying all windows created with the previous setting.
+
+SDL_GL_CONTEXT_RELEASE_BEHAVIOR can be set to SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE or SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH.
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
