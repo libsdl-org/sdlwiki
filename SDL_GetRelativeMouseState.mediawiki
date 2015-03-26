@@ -15,10 +15,10 @@ Uint32 SDL_GetRelativeMouseState(int* x,
 == Function Parameters ==
 {|
 |'''x'''
-|,,a pointer filled with ,,^the last recorded x coordinate of the mouse^
+|a pointer filled with the last recorded x coordinate of the mouse
 |-
 |'''y'''
-|,,a pointer filled with ,,^the last recorded y coordinate of the mouse^
+|a pointer filled with the last recorded y coordinate of the mouse
 |}
 
 <span style="color: green;">Should this be an exception to the 'pointer rule'?</span>
