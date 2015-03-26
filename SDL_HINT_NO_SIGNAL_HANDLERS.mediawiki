@@ -1,0 +1,41 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_NO_SIGNAL_HANDLERS =
+A hint that specifies not to catch the SIGINT or SIGTERM signals.
+
+
+
+
+== Values ==
+{|
+|0
+|SDL will install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_QUIT event
+|-
+|1
+|SDL will not install a signal handler at all
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint only applies to Unix-like platforms.
+
+
+== Version ==
+This hint is available since SDL 2.0.4.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
