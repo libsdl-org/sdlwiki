@@ -14,10 +14,10 @@ void SDL_SetWindowGrab(SDL_Window* window,
 == Function Parameters ==
 {|
 |'''window'''
-|the window to change
+|the window for which the input grab mode should be set
 |-
 |'''grabbed'''
-|SDL_TRUE to grab input, SDL_FALSE to release input
+|SDL_TRUE to grab input or SDL_FALSE to release input
 |}
 
 == Code Examples ==
@@ -27,6 +27,8 @@ You can add your code example here
 
 == Remarks ==
 When input is grabbed the mouse is confined to the window.
+
+If the caller enables a grab while another window is currently grabbed, the other window loses its grab in favor of the caller's window.
 
 == Related Functions ==
 :[[SDL_GetGrabbedWindow]]
