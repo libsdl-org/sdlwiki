@@ -21,9 +21,11 @@ For some reason, archives created on Linux have the "Encrypted" property set whe
 == Developing with SDL ==
 === Windows CE ===
 ==== Can I build SDL for Windows CE? ====
-SDL is not officially supported on Windows CE, but some people have successfully built and run SDL applications on Windows CE.
+SDL 1.2 is not officially supported on Windows CE, but some people have successfully built and run SDL applications on Windows CE.
 
-SDL 1.2.5 and newer contain project files and information on building SDL for Windows CE. Take a look at the file README.WinCE in the source archive for more information.
+SDL 1.2.5 and newer contain project files and information on building SDL 1.2 for Windows CE. Take a look at the file README.WinCE in the source archive for more information.
+
+There is no support for Windows CE in SDL 2.0.
 
 === Visual C++ ===
 ==== How do I use SDL with Visual C++? ====
