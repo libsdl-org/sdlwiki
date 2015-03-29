@@ -29,6 +29,7 @@ You can add your code example here
 When input is grabbed the mouse is confined to the window.
 
 == Related Functions ==
+:[[SDL_GetGrabbedWindow]]
 :[[SDL_GetWindowGrab]]
 
 ----
