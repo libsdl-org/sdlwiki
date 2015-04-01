@@ -33,6 +33,8 @@ while (1) {
 == Remarks ==
 If '''event''' is not NULL, the next event is removed from the queue and stored in the [[SDL_Event]] structure pointed to by '''event'''.
 
+If '''event''' is NULL, it simply return 1 if there is an event in the queue, but will not remove it.
+
 As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
 
 [[SDL_PollEvent]]() is the favored way of receiving system events since it can be done from the main loop and does not suspend the main loop while waiting on an event to be posted.
