@@ -57,19 +57,9 @@ Add a code example here.
 |up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will be removed from the queue
 |}
 
-
-<span style="color: green;">The below is taken directly from the header.  The info has been transferred to the table above as an optional way of being presented.  Which should be kept?</span>
-
-If '''action''' is SDL_ADDEVENT, up to '''numevents''' events will be added to the back of the event queue.
-
-If '''action''' is SDL_PEEKEVENT, up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will not be removed from the queue.
-
-If '''action''' is SDL_GETEVENT, up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will be removed from the queue.
-
-
 {i} This function is thread-safe.
 
-<span style="color: green;">Is the following true in 2.0?</span> You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
+You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
 
 == Related Functions ==
 : [[SDL_PollEvent]]
