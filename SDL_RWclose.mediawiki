@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
-'''DRAFT'''
 
 = SDL_RWclose =
 Use this function to close and free an allocated SDL_RWops structure.
@@ -22,16 +21,19 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
+Uint8 buf[256];
 SDL_RWops *rw = SDL_RWFromFile("test.bin", "r");
 if (rw != NULL) {
-    extern Uint8 buf[256];
     SDL_RWread(rw, buf, sizeof (buf), 1);
     SDL_RWclose(rw);
 }
+// Go on and use the data in buf...
 ```
 
 == Remarks ==
-Note that if this fails to flush the stream to disk, this function reports an error, but the RWops is still invalid once this function returns.
+SDL_RWclose closes and cleans up the SDL_RWops stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]]. This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
+
+Note that if this fails to flush the stream to disk, this function reports an error, but the SDL_RWops is still invalid once this function returns.
 
 SDL_RWclose is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
 
@@ -39,6 +41,10 @@ SDL_RWclose is actually a macro that calls the SDL_RWops's '''close''' method ap
 :[[SDL_RWread]]
 :[[SDL_RWseek]]
 :[[SDL_RWwrite]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
+:[[SDL_RWFromConstMem]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
