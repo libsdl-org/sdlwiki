@@ -111,7 +111,7 @@ The final argument works like the standard fseek() "whence":
 '''write''' is a function pointer that writes to the stream. It writes exactly num objects each of size bytes from the buffer pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
 
 === Close Function ===
-'''close''' is a fucntion pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
+'''close''' is a function pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
 
 === Stream Type ===
 
