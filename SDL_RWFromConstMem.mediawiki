@@ -44,6 +44,9 @@ If you need to write to a memory buffer, you should use [[SDL_RWFromMem]]() with
 
 == Related Functions ==
 :[[SDL_RWFromMem]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromConstMem]]
 :[[SDL_RWclose]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]
