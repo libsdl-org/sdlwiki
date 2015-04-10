@@ -39,6 +39,9 @@ If you need to make sure the RWops never writes to the memory buffer, you should
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
 :[[SDL_RWclose]]
 :[[SDL_RWread]]
 :[[SDL_RWwrite]]
