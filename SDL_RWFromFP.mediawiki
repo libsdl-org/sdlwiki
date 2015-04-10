@@ -41,6 +41,11 @@ On some platforms, the first parameter is a <code>void*</code>, on others, it's 
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
 :[[SDL_RWFromMem]]
+:[[SDL_RWread]]
+:[[SDL_RWwrite]]
+:[[SDL_RWseek]]
+:[[SDL_RWtell]]
+:[[SDL_RWclose]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
