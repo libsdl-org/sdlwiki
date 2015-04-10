@@ -32,10 +32,14 @@ if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
 SDL_RWtell is actually a macro that calls the SDL_RWops's '''seek''' method, with an offset of 0 bytes from RW_SEEK_CUR, to simplify application development.
 
 == Related Functions ==
-: [[SDL_RWclose]]
-: [[SDL_RWread]]
-: [[SDL_RWseek]]
-: [[SDL_RWwrite]]
+:[[SDL_RWwrite]]
+:[[SDL_RWread]]
+:[[SDL_RWseek]]
+:[[SDL_RWclose]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
+:[[SDL_RWFromConstMem]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
