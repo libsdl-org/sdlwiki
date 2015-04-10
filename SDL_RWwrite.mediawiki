@@ -52,9 +52,13 @@ This function writes exactly '''num''' objects each of size '''size''' from the 
 SDL_RWwrite is actually a macro that calls the SDL_RWops's '''write''' method appropriately, to simplify application development.
 
 == Related Functions ==
-:[[SDL_RWclose]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]
+:[[SDL_RWclose]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
+:[[SDL_RWFromConstMem]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
