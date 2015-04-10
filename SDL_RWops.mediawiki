@@ -160,6 +160,11 @@ Applications can ignore this union completely. All of the fields in this union a
 :[[SDL_RWFromMem]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_FreeRW]]
+:[[SDL_RWread]]
+:[[SDL_RWwrite]]
+:[[SDL_RWseek]]
+:[[SDL_RWtell]]
+:[[SDL_RWclose]]
 
 ----
 [[CategoryStruct]], [[CategoryIO]]
