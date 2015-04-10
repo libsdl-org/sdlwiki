@@ -61,9 +61,13 @@ SDL_RWread(rwop, buffer, sizeof(buffer), 8);
 ```
 This will read 80 bytes of data, and place them into 'buffer', which is now designed for 64-bit integers (long values). Each int (long) is 8 bytes, and we are reading 10 of them (as shown by buffer[10] when we make it).
 == Related Functions ==
-:[[SDL_RWclose]]
-:[[SDL_RWseek]]
 :[[SDL_RWwrite]]
+:[[SDL_RWseek]]
+:[[SDL_RWclose]]
+:[[SDL_RWFromFile]]
+:[[SDL_RWFromFP]]
+:[[SDL_RWFromMem]]
+:[[SDL_RWFromConstMem]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
