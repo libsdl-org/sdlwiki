@@ -49,6 +49,19 @@ if (io != NULL) {
 }
 ```
 
+The following is functionally identical to the above example, but uses the recommended macro interface.
+
+```c++
+SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
+if (io != NULL) {
+    char name[256];
+    if (SDL_RWread(io, name, sizeof (name), 1) > 0) {
+        printf("Hello, %s!\n", name);
+    }
+    SDL_RWclose(io);
+}
+```
+
 
 == Remarks ==
 SDL_RWops is an abstraction over I/O. It provides interfaces to read, write and seek data in a stream, without the caller needing to know where the data is coming from.
