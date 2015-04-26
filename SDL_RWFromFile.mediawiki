@@ -61,14 +61,14 @@ This function supports Unicode filenames, but they must be encoded in UTF-8 form
 Closing the [[SDL_RWops]] will close the file handle SDL is holding internally.
 
 == Related Functions ==
+:[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWread]]
-:[[SDL_RWwrite]]
 :[[SDL_RWseek]]
 :[[SDL_RWtell]]
-:[[SDL_RWclose]]
+:[[SDL_RWwrite]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
