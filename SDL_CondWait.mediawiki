@@ -33,10 +33,10 @@ The mutex must be locked before calling this function.
 This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a time length of SDL_MUTEX_MAXWAIT.
 
 == Related Functions ==
-:[[SDL_CreateCond]]
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWaitTimeout]]
+:[[SDL_CreateCond]]
 :[[SDL_DestroyCond]]
 
 ----
