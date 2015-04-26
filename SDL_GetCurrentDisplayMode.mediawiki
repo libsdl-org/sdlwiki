@@ -64,7 +64,7 @@ int main(int argc, char* argv[]){
 ```
 
 == Remarks ==
-There's a difference between this function and [[SDL_GetDesktopDisplayMode]] when SDL runs fullscreen and has changed the resolution. In that case this function will return the current display mode, and not the previous native display mode.
+There's a difference between this function and [[SDL_GetDesktopDisplayMode]]() when SDL runs fullscreen and has changed the resolution. In that case this function will return the current display mode, and not the previous native display mode.
 
 == Related Functions ==
 :[[SDL_GetDesktopDisplayMode]]
