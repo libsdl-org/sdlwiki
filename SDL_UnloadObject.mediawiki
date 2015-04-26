@@ -25,8 +25,8 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_LoadObject]]
 :[[SDL_LoadFunction]]
+:[[SDL_LoadObject]]
 
 ----
 [[CategoryAPI]], [[CategorySharedObject]]
