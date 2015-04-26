@@ -13,7 +13,7 @@ Use this function to get the window that currently has an input grab enabled.
 
 == Syntax ==
 ```c++
-SDL_Window* SDL_GetGrabbedWindow()
+SDL_Window* SDL_GetGrabbedWindow(void)
 ```
 
 
