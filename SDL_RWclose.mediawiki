@@ -31,11 +31,11 @@ if (rw != NULL) {
 ```
 
 == Remarks ==
-SDL_RWclose closes and cleans up the SDL_RWops stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]]. This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
+SDL_RWclose() closes and cleans up the SDL_RWops stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
 
 Note that if this fails to flush the stream to disk, this function reports an error, but the SDL_RWops is still invalid once this function returns.
 
-SDL_RWclose is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
+SDL_RWclose() is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
 
 == Related Functions ==
 :[[SDL_RWFromConstMem]]
