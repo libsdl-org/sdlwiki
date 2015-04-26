@@ -53,8 +53,8 @@ You can add your code example here
 
 
 == Related Functions ==
-:[[SDL_CreateWindow]]
 :[[SDL_CreateRenderer]]
+:[[SDL_CreateWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]], [[CategoryVideo]]
