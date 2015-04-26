@@ -105,9 +105,9 @@ In some cases, these attributes are minimum requests; the GL does not promise to
 SDL_GL_CONTEXT_RELEASE_BEHAVIOR can be set to SDL_GL_CONTEXT_RELEASE_BEHAVIOR_NONE or SDL_GL_CONTEXT_RELEASE_BEHAVIOR_FLUSH.
 
 == Related Functions ==
+:[[SDL_GL_CreateContext]]
 :[[SDL_GL_GetAttribute]]
 :[[SDL_GL_SetAttribute]]
-:[[SDL_GL_CreateContext]]
 
 ----
 [[CategoryEnum]], [[CategoryVideo]]
