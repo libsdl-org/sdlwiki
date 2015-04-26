@@ -30,8 +30,8 @@ If '''event''' is not NULL, the next event is removed from the queue and stored 
 As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that initialized the video subsystem.
 
 == Related Functions ==
-:[[SDL_PumpEvents]]
 :[[SDL_PollEvent]]
+:[[SDL_PumpEvents]]
 :[[SDL_WaitEventTimeout]]
 
 ----
