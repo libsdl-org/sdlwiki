@@ -39,8 +39,8 @@ This function is available since SDL 2.0.4.
 
 == Related Functions ==
 :[[SDL_Has3DNow]]
-:[[SDL_HasAVX]]
 :[[SDL_HasAltiVec]]
+:[[SDL_HasAVX]]
 :[[SDL_HasMMX]]
 :[[SDL_HasRDTSC]]
 :[[SDL_HasSSE]]
