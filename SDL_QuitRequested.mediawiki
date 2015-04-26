@@ -25,8 +25,8 @@ It's perfectly normal for applications to just look for SDL_QUIT in their event 
 
 == Related Functions ==
 :[[SDL_PollEvent]]
-:[[SDL_WaitEvent]]
 :[[SDL_PumpEvents]]
+:[[SDL_WaitEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
