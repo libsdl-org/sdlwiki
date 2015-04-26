@@ -72,10 +72,10 @@ This function unlocks the specified '''mutex''' and waits for another thread to 
 The mutex must be locked before calling this function.
 
 == Related Functions ==
-:[[SDL_CreateCond]]
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWait]]
+:[[SDL_CreateCond]]
 :[[SDL_DestroyCond]]
 
 ----
