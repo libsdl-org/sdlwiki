@@ -62,14 +62,14 @@ If this stream can not seek, it will return -1.
 SDL_RWseek is actually a macro that calls the SDL_RWops's '''seek''' method appropriately, to simplify application development.
 
 == Related Functions ==
-:[[SDL_RWtell]]
-:[[SDL_RWread]]
-:[[SDL_RWwrite]]
 :[[SDL_RWclose]]
+:[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
 :[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
-:[[SDL_RWFromConstMem]]
+:[[SDL_RWread]]
+:[[SDL_RWtell]]
+:[[SDL_RWwrite]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
