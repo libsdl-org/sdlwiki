@@ -22,10 +22,9 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
-== See Also ==
+== Related Functions ==
 :[[SDL_GetKeyboardState]]
 :[[SDL_SetModState]]
-:[[SDL_Keymod]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
