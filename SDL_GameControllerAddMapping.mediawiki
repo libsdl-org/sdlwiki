@@ -52,8 +52,8 @@ This string shows an example of a valid mapping for a controller:
 
 
 == Related Functions ==
-:[[SDL_GameControllerMappingForGUID]]
 :[[SDL_GameControllerMapping]]
+:[[SDL_GameControllerMappingForGUID]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
