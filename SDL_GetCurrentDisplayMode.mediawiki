@@ -69,7 +69,8 @@ There's a difference between this function and [[SDL_GetDesktopDisplayMode]]() w
 == Related Functions ==
 :[[SDL_GetDesktopDisplayMode]]
 :[[SDL_GetDisplayMode]]
-:[[SDL_SetWindowDisplayMode]]
 :[[SDL_GetNumVideoDisplays]]
+:[[SDL_SetWindowDisplayMode]]
+
 ----
 [[CategoryAPI]], [[CategoryVideo]]
