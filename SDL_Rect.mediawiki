@@ -45,16 +45,16 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.
 
 == Related Functions ==
-:[[SDL_BlitSurface]] 
+:[[SDL_BlitSurface]]
 :[[SDL_EnclosePoints]]
 :[[SDL_GetDisplayBounds]]
 :[[SDL_HasIntersection]]
 :[[SDL_IntersectRect]]
 :[[SDL_LockTexture]]
 :[[SDL_RenderCopy]]
-:[[SDL_RenderReadPixels]]
 :[[SDL_RenderDrawRect]]
 :[[SDL_RenderDrawRects]]
+:[[SDL_RenderReadPixels]]
 :[[SDL_UnionRect]]
 :[[SDL_UpdateTexture]]
 
