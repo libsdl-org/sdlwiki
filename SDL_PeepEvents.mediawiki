@@ -45,7 +45,7 @@ Add a code example here.
 ```
 
 == Remarks ==
-<span id="action"></span> '''action''' may be any of the following <span style="color: green;">(from enum SDL_eventaction which has no page)</span>:
+<span id="action"></span> '''action''' may be any of the following: <!-- <span style="color: green;">(from enum SDL_eventaction which has no page)</span> -->
 {|
 |SDL_ADDEVENT 
 |up to '''numevents''' events will be added to the back of the event queue 
