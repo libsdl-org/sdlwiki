@@ -42,9 +42,9 @@ There are some quirks to looking up OpenGL functions that require some extra car
 * OpenGL function pointers must be declared <code>APIENTRY</code> as in the example code. This will ensure the proper calling convention is followed on platforms where this matters (Win32) thereby avoiding stack corruption.
 
 == Related Functions ==
+:[[SDL_GL_ExtensionSupported]]
 :[[SDL_GL_LoadLibrary]]
 :[[SDL_GL_UnloadLibrary]]
-:[[SDL_GL_ExtensionSupported]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
