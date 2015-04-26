@@ -26,10 +26,10 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 ''You can add useful comments here''
 
 == Related Functions ==
-:[[SDL_CreateCond]]
 :[[SDL_CondBroadcast]]
 :[[SDL_CondWait]]
 :[[SDL_CondWaitTimeout]]
+:[[SDL_CreateCond]]
 :[[SDL_DestroyCond]]
 
 ----
