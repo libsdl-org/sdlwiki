@@ -53,8 +53,8 @@ if (myEventType != ((Uint32)-1)) {
 :[[SDL_EventType]]
 
 == Related Functions ==
-:[[SDL_RegisterEvents]]
 :[[SDL_PushEvent]]
+:[[SDL_RegisterEvents]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
