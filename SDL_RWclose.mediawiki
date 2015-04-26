@@ -38,13 +38,13 @@ Note that if this fails to flush the stream to disk, this function reports an er
 SDL_RWclose is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
 
 == Related Functions ==
-:[[SDL_RWread]]
-:[[SDL_RWseek]]
-:[[SDL_RWwrite]]
+:[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
 :[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
-:[[SDL_RWFromConstMem]]
+:[[SDL_RWread]]
+:[[SDL_RWseek]]
+:[[SDL_RWwrite]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
