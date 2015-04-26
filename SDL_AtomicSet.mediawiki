@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
- This function also acts as a full memory barrier.
+This function also acts as a full memory barrier.
 
 == Related Functions ==
 :[[SDL_AtomicGet]]
