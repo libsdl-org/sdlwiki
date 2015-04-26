@@ -3,14 +3,14 @@
 '''DRAFT'''
 
 = SDL_HapticQuery =
-Use this function to get the haptic ,,devices,, ^device's^ supported features in bitwise ,,matter,, ^manner^.
+Use this function to get the haptic device's supported features in bitwise manner.
 
 
 == Syntax ==
 ```c++
 unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 ```
-<span style="color: green;">Should that say Uint8 or Uint16 etc instead of "unsigned int"?</span>
+<!-- <span style="color: green;">Should that say Uint8 or Uint16 etc instead of "unsigned int"?</span> -->
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 |}
 
 == Return Value ==
-Returns ^a list of supported^ haptic features in bitwise manner (OR'd), or a negative error code on failure; call [[SDL_GetError]]() for more information. 
+Returns a list of supported haptic features in bitwise manner (OR'd), or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-<span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span>
+<!-- <span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span> -->
 
 == Code Examples ==
 ```c++
