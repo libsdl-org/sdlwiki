@@ -48,8 +48,8 @@ This may differ from [[SDL_GetWindowSize]]() if we're rendering to a high-DPI dr
 This function is available since SDL 2.0.1.
 
 == Related Functions ==
-:[[SDL_GetWindowSize]]
 :[[SDL_CreateWindow]]
+:[[SDL_GetWindowSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
