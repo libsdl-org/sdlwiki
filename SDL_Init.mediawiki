@@ -148,8 +148,8 @@ If you want to initialize subsystems separately you would call [[SDL_Init]](0) f
 == Related Functions ==
 :[[SDL_InitSubSystem]]
 :[[SDL_Quit]]
-:[[SDL_WasInit]]
 :[[SDL_SetMainReady]]
+:[[SDL_WasInit]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
