@@ -28,6 +28,7 @@ You can add your code example here
 In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows) the hint [[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT]] needs to be configured before using SDL_CreateWindowFrom().
 
 == Related Functions ==
+:[[SDL_CreateWindow]]
 :[[SDL_DestroyWindow]]
 
 ----
