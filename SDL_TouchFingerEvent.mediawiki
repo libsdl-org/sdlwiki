@@ -33,11 +33,11 @@ A structure that contains finger touch event information.
 |-
 |float
 |'''dx'''
-|the distance moved in the x-axis, normalized (0...1)
+|the distance moved in the x-axis, normalized (-1...1)
 |-
 |float
 |'''dy'''
-|the distance moved in the y-axis, normalized (0...1)
+|the distance moved in the y-axis, normalized (-1...1)
 |-
 |float
 |'''pressure'''
