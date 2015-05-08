@@ -122,6 +122,7 @@ int main(int argc, char* argv[]) {
 SDL_WINDOW_SHOWN is ignored by SDL_CreateWindow(). The SDL_Window is implicitly shown if SDL_WINDOW_HIDDEN is not set. SDL_WINDOW_SHOWN may be queried later using [[SDL_GetWindowFlags]]().
 
 == Related Functions ==
+:[[SDL_CreateWindowFrom]]
 :[[SDL_DestroyWindow]]
 
 ----
