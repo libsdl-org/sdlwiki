@@ -36,8 +36,7 @@ char *pref_path = NULL;
 void InitializePrefPath() {
     char *base_path = SDL_GetPrefPath("My Company", "My Awesome SDL 2 Game");
     if (base_path) {
-        pref_path = SDL_strdup(base_path);
-        SDL_free(base_path);
+        pref_path = base_path;
     } else {
         /* Do something to disable writing in-game */
     }
