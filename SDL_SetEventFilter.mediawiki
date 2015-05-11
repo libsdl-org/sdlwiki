@@ -50,7 +50,7 @@ Note: Disabled events never make it to the event filter function; see [[SDL_Even
 
 Note: If you just want to inspect events without filtering, you should use [[SDL_AddEventWatch]]() instead.
 
-Note: Events pushed onto the queue with [[SDL_PushEvent]]() get passed through the event filter, but events pushed onto the queue with or [[SDL_PeepEvents]]() do not. 
+Note: Events pushed onto the queue with [[SDL_PushEvent]]() get passed through the event filter, but events pushed onto the queue with [[SDL_PeepEvents]]() do not. 
 
 == Related Functions ==
 :[[SDL_AddEventWatch]]
