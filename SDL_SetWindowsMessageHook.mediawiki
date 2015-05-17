@@ -1,0 +1,60 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_SetWindowsMessageHook =
+Use this function to set a function that is called for every windows message, before !TranslateMessage().
+
+
+
+
+== Syntax ==
+```c++
+void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback,
+                               void*                  userdata)
+```
+
+
+== Function Parameters ==
+{|
+|'''callback'''
+|the function to call for every message; see [[#Remarks|Remarks]] for details
+|-
+|'''userdata'''
+|a pointer that is passed to '''callback'''
+|}
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This function is available on Microsoft Windows.
+
+The function prototype for '''callback''' is:
+
+```c++
+void SDL_WindowsMessageHook(void*        userdata,
+                            void*        hWnd,
+                            unsigned int message,
+                            Uint64       wParam,
+                            Sint64       lParam)
+```
+: where its parameter is:
+ ||<code>userdata</code> ||what was passed as '''userdata''' to [[SDL_SetWindowsMessageHook]]() ||
+
+
+== Version ==
+This function is available since SDL 2.0.4.
+
+----
+[[CategoryAPI]], [[CategorySystem]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
