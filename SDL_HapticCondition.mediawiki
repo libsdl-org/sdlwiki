@@ -72,7 +72,7 @@ A structure that contains a template for a condition effect.
 |'''center'''
 |position of the dead zone
 |}
-<span style="color: green;">All of the Condition fields had a [3] that was left out. Should it be in?</span>
+<!-- <span style="color: green;">All of the Condition fields had a [3] that was left out. Should it be in?</span> -->
 
 == Code Examples ==
 ```c++
