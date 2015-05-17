@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticDirection =
-A structure that contains a ^template for a^ haptic direction ^effect^. ???  <span style="color: green;">Does this structure define individual directions or a set of directions used by a particular device?  Seems like you'd have to create an awful lot of these structures to make anything with any complexity.  Am I understanding this correctly?</span>
+A structure that contains a ^template for a^ haptic direction ^effect^. ??? <!-- <span style="color: green;">Does this structure define individual directions or a set of directions used by a particular device?  Seems like you'd have to create an awful lot of these structures to make anything with any complexity.  Am I understanding this correctly?</span> -->
 
 
 == Data Fields ==
@@ -16,7 +16,7 @@ A structure that contains a ^template for a^ haptic direction ^effect^. ???  <sp
 |'''dir'''
 |the encoded direction; see [[#type|Remarks]] for details
 |}
-<span style="color: green;">There was a [3] attached to '''dir''' but I thought I remembered that we aren't including those details here.  Is that right or should I put it back in because it's important?</span>
+<!-- <span style="color: green;">There was a [3] attached to '''dir''' but I thought I remembered that we aren't including those details here.  Is that right or should I put it back in because it's important?</span> -->
 
 == Code Examples ==
 Example of force coming from the south with all encodings (force coming from the south means the user will have to pull the stick to counteract):
@@ -71,7 +71,7 @@ The following diagram represents the cardinal directions:
              ---ooO-(_)-Ooo---
 ```
 
-<span id="type"></span> <span style="color: green;">The following paragraph was at the beginning in the header. Seemed to logically fit better here.</span><br/>
+<span id="type"></span> <!-- <span style="color: green;">The following paragraph was at the beginning in the header. Seemed to logically fit better here.</span> --> <br/>
 Directions can be specified by:
 {|
 |SDL_HAPTIC_POLAR
