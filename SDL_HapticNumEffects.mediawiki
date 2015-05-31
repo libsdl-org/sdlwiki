@@ -28,7 +28,7 @@ You can add your code example here
 == Remarks ==
 On some platforms this isn't fully supported, and therefore is an approximation.  Always check to see if your created effect was actually created and do not rely solely on [[SDL_HapticNumEffects]]().
 
-<span style="color: green;">Is it important to specify ''how'' to check to see if your effect was created or is listing the query function below sufficient?</span>
+<!-- <span style="color: green;">Is it important to specify ''how'' to check to see if your effect was created or is listing the query function below sufficient?</span> -->
 
 == Related Functions ==
 :[[SDL_HapticNumEffectsPlaying]]
