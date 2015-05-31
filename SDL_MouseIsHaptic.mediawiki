@@ -11,8 +11,6 @@ Use this function to ,,get,, ^determine/find/query^ whether or not the current m
 int SDL_MouseIsHaptic(void)
 ```
 
-<span style="color: green;">Should this be SDL_bool instead of int given the RVs?  Are the RVs wrong?</span>
-
 == Return Value ==
 Returns SDL_TRUE if the mouse is haptic, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
