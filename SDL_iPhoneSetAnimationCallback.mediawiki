@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-SDL_iPhoneSetAnimationCallback() has been replaced by [[SDL_iOSSetAnimationCallback]]().
+SDL_iPhoneSetAnimationCallback() has been replaced by [[SDL_iOSSetAnimationCallback]]() in SDL 2.0.4.
