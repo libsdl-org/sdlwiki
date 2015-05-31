@@ -14,11 +14,11 @@ SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode)
 == Function Parameters ==
 {|
 |'''scancode'''
-|the desired [[SDL_Scancode]] to query ???
+|the desired [[SDL_Scancode]] to query
 |}
 
 == Return Value ==
-Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]]. ???
+Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]].
 
 == Code Examples ==
 ```c++
@@ -30,7 +30,7 @@ See [[SDL_Keycode]] for details.
 
 == Related Functions ==
 :[[SDL_GetKeyName]]
-:[[SDL_GetScancodeFromKey]] ???
+:[[SDL_GetScancodeFromKey]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
