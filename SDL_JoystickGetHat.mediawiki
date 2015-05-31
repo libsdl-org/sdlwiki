@@ -43,9 +43,9 @@ Returns one of the following ,,positions,,:
 |-
 |SDL_HAT_LEFTDOWN
 |}
-<span style="color: green;">Should the defines/descriptions for each be included here since the RV is actually a Uint8 or will the user never see those? Should it be a list instead of a table?</span>
+<!-- <span style="color: green;">Should the defines/descriptions for each be included here since the RV is actually a Uint8 or will the user never see those? Should it be a list instead of a table?</span> -->
 
-<span style="color: green;">Is this alternative table structure better?</span>
+<!-- <span style="color: green;">Is this alternative table structure better?</span> -->
 {|
 |SDL_HAT_LEFTUP
 |SDL_HAT_UP
