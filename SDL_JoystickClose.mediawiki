@@ -14,7 +14,7 @@ void SDL_JoystickClose(SDL_Joystick* joystick)
 == Function Parameters ==
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information
 |}
 
 == Code Examples ==
