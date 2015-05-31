@@ -58,7 +58,7 @@ The joystick subsystem must be initialized before a joystick can be opened for u
 :[[SDL_JoystickClose]]
 :[[SDL_JoystickInstanceID]]
 
-<span style="color: green;">There are a number of functions that list this one as a RF based on the old wiki. Do we want them all to be reciprocated here?</span>
+<!-- <span style="color: green;">There are a number of functions that list this one as a RF based on the old wiki. Do we want them all to be reciprocated here?</span> -->
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
