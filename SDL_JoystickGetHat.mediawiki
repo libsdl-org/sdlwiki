@@ -15,7 +15,7 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 == Function Parameters ==
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information
 |-
 |'''hat'''
 |the hat index to get the state from; hat indices start at index 0
