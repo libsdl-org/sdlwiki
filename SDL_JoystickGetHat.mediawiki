@@ -21,7 +21,6 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 |the hat ,,indices,, ^index;^ start^s^ at index 0
 |}
 
-<span style="color: green;">Is it possible to use more than one index at the same time for '''hat'''?</span>
 
 == Return Value ==
 Returns one of the following ,,positions,,:
