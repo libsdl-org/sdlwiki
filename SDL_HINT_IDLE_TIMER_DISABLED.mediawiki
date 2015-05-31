@@ -16,7 +16,7 @@ A hint that specifies a variable controlling whether the idle timer is disabled 
 |}
 
 == Default ==
-By default the idle timer is enabled. ???
+By default the idle timer is enabled.
 
 == Code Examples ==
 ```c++
