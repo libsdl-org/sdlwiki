@@ -38,6 +38,10 @@ Use this hint in case you need to set SDL's threads stack size to other than the
 
 Support for this hint is currently available only in the pthread backend.
 
+== Version ==
+
+This hint is available since SDL 2.0.4.
+
 ----
 [[CategoryDefine]], [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
