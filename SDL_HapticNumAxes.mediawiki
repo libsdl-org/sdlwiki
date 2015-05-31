@@ -29,7 +29,7 @@ You can add your code example here
 ''You can add useful comments here''
 
 == Related Structures ==
-:[[SDL_HapticDirection]]???
+:[[SDL_HapticDirection]]
 <!-- <span style="color: green;">No other function page includes this section so it should be deleted when major editing is done.  Should this information be included in the Remarks instead?</span> -->
 
 
