@@ -70,9 +70,9 @@ loop()
 			return;
 		}
 	}
-	
+
 	DrawChessBoard(renderer);
-	
+
 	/* Got everything on rendering surface,
 	   now Update the drawing image on window screen */
 	SDL_UpdateWindowSurface(window);
@@ -100,7 +100,7 @@ main(int argc, char *argv[])
 	{
 		SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Window creation fail : %s\n",SDL_GetError());
 		return 1;
-	}	
+	}
 	surface = SDL_GetWindowSurface(window);
 	renderer = SDL_CreateSoftwareRenderer(surface);
 	if(!renderer)
@@ -126,7 +126,7 @@ main(int argc, char *argv[])
 ```
 
 == Remarks ==
-''Two other API which can be used to create SDL_Renderer:<br/>1) [[SDL_CreateRenderer]]<br/>2) [[SDL_CreateWindowAndRenderer]]''
+Two other API which can be used to create SDL_Renderer:<br/>1) [[SDL_CreateRenderer]]()<br/>2) [[SDL_CreateWindowAndRenderer]]()
 
 == Related Functions ==
 :[[SDL_CreateRenderer]]
