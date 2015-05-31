@@ -31,10 +31,10 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 |the height of the cursor ''(same restrictions as w?)''
 |-
 |'''hot_x'''
-|the X-axis location of the upper left corner of the cursor relative to the actual mouse position???
+|the X-axis location of the upper left corner of the cursor relative to the actual mouse position
 |-
 |'''hot_y'''
-|the Y-axis location of the upper left corner of the cursor relative to the actual mouse position???
+|the Y-axis location of the upper left corner of the cursor relative to the actual mouse position
 |}
 
 == Return Value ==
