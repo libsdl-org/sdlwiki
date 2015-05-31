@@ -21,8 +21,6 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
 |the button ,,indices,, ^index;^ start^s^ at index 0
 |}
 
-<span style="color: green;">Is it possible to use more than one index at a time for '''button'''?</span>
-
 == Return Value ==
 Returns 1 if the specified button is pressed, 0 otherwise.
 
