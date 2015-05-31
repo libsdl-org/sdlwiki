@@ -34,13 +34,13 @@ You can add your code example here
 ```
 
 == Remarks ==
-If '''iterations''' are SDL_HAPTIC_INFINITY, it'll run the effect over and over repeating the envelope (attack and fade) every time. If you only want the effect to last forever, set SDL_HAPTIC_INFINITY in the effect's <code>length</code> parameter. 
+If '''iterations''' are SDL_HAPTIC_INFINITY, it'll run the effect over and over repeating the envelope (attack and fade) every time. If you only want the effect to last forever, set SDL_HAPTIC_INFINITY in the effect's <code>length</code> parameter.
 
 ''-or-''
 
 To repeat the effect over and over indefinitely, set '''iterations''' to SDL_HAPTIC_INFINITY.  (Repeats the envelope - attack and fade.)  To make one instance of the effect last indefinitely (so the effect does not fade), set the effect's <code>length</code> ^in its structure/union^ to SDL_HAPTIC_INFINITY ^instead^.
 
-<span style="color: green;">Is it important to say how to end an effect that has an SDL_HAPTIC_INFINITY setting or is it enough to list the destroy function below?</span>
+<!-- <span style="color: green;">Is it important to say how to end an effect that has an SDL_HAPTIC_INFINITY setting or is it enough to list the destroy function below?</span> -->
 
 
 == Related Functions ==
