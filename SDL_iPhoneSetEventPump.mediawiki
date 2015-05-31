@@ -1,4 +1,4 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 
-SDL_iPhoneSetEventPump() has been replaced by [[SDL_iOSSetEventPump]]().
+SDL_iPhoneSetEventPump() has been replaced by [[SDL_iOSSetEventPump]]() in SDL 2.0.4.
