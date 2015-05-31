@@ -20,13 +20,13 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 |the SDL_Joystick to query
 |-
 |'''ball'''
-|the ball ,,indices,, ^index;^ start^s^ at index 0
+|the ball index to query; ball indices start at index 0
 |-
 |'''dx'''
-|the difference in the x axis ^position^ since the last poll
+|the difference in the x axis position since the last poll
 |-
 |'''dy'''
-|the difference in the y axis ^position^ since the last poll
+|the difference in the y axis position since the last poll
 |}
 
 == Return Value ==
