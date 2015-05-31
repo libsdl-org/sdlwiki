@@ -30,9 +30,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-Autocenter should be between 0 and 100. Setting it to 0 will disable autocentering. <span style="color: green;">This is redundant w/ the FP section and could all be contained there (as shown). Should it be removed from here?</span>
+Autocenter should be between 0 and 100. Setting it to 0 will disable autocentering. <!-- <span style="color: green;">This is redundant w/ the FP section and could all be contained there (as shown). Should it be removed from here?</span> -->
 
-Device must support the SDL_HAPTIC_AUTOCENTER feature. 
+Device must support the SDL_HAPTIC_AUTOCENTER feature.
 
 == Related Functions ==
 :[[SDL_HapticQuery]]
