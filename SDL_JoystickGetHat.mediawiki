@@ -18,12 +18,12 @@ Uint8 SDL_JoystickGetHat(SDL_Joystick* joystick,
 |an SDL_Joystick structure containing joystick information ???
 |-
 |'''hat'''
-|the hat ,,indices,, ^index;^ start^s^ at index 0
+|the hat index to get the state from; hat indices start at index 0
 |}
 
 
 == Return Value ==
-Returns one of the following ,,positions,,:
+Returns one of the following positions:
 {|
 |SDL_HAT_CENTERED
 |-
