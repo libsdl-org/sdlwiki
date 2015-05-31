@@ -15,7 +15,7 @@ Sint64 SDL_RWseek(SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|A pointer to an [[SDL_RWops]] structure
+|a pointer to an [[SDL_RWops]] structure
 |-
 |'''offset'''
 |an offset in bytes, relative to '''whence''' location; can be negative
@@ -59,7 +59,7 @@ This function seeks to '''offset''' relative to '''whence'''
 
 If this stream can not seek, it will return -1.
 
-SDL_RWseek is actually a macro that calls the SDL_RWops's '''seek''' method appropriately, to simplify application development.
+SDL_RWseek() is actually a macro that calls the [[SDL_RWops]]'s '''seek''' method appropriately, to simplify application development.
 
 == Related Functions ==
 :[[SDL_RWclose]]
