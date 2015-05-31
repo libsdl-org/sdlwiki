@@ -18,7 +18,7 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
 |an SDL_Joystick structure containing joystick information ???
 |-
 |'''button'''
-|the button ,,indices,, ^index;^ start^s^ at index 0
+|the button index to get the state from; indices start at index 0
 |}
 
 == Return Value ==
