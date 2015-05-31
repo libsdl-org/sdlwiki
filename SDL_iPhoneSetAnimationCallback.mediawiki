@@ -1,0 +1,4 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+SDL_iPhoneSetAnimationCallback() has been replaced by [[SDL_iOSSetAnimationCallback]]().
