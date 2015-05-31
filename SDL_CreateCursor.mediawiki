@@ -154,11 +154,11 @@ The cursor is created in black and white according to the following:
 
 Cursors created with this function must be freed with [[SDL_FreeCursor]]().
 
-If you want to have color cursor, then this function is not for you; instead, you must hide the normal system cursor ([[SDL_ShowCursor]]) and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor. 
+If you want to have color cursor, then this function is not for you; instead, you must hide the normal system cursor ([[SDL_ShowCursor]]) and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor.
 
-<span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span>
+<!-- <span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span> -->
 
-^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]] to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^
+<!-- ^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]] to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^ -->
 
 Note that, since SDL 2.0.0, [[SDL_CreateSystemCursor]]() is available, which provides twelve readily available system cursors to pick from.
 
