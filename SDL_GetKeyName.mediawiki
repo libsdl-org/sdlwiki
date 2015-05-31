@@ -18,7 +18,7 @@ const char* SDL_GetKeyName(SDL_Keycode key)
 |}
 
 == Return Value ==
-Returns a pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string ("").  <span style="color: green;">Should key here be bold?  Don't think so.</span>
+Returns a pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string (""). <!-- <span style="color: green;">Should key here be bold?  Don't think so.</span> -->
 
 == Code Examples ==
 ```c++
