@@ -14,7 +14,7 @@ const char* SDL_GetKeyName(SDL_Keycode key)
 == Function Parameters ==
 {|
 |'''key'''
-|the desired [[SDL_Keycode]] to query ???
+|the desired [[SDL_Keycode]] to query
 |}
 
 == Return Value ==
@@ -26,11 +26,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-See [[SDL_Scancode]] and [[SDL_Keycode]] for details. ???
+See [[SDL_Scancode]] and [[SDL_Keycode]] for details.
 
 == Related Functions ==
 :[[SDL_GetKeyFromScancode]]
-:[[SDL_GetScancodeFromKey]] ???
+:[[SDL_GetScancodeFromKey]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
