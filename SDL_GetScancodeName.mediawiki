@@ -18,9 +18,9 @@ const char* SDL_GetScancodeName(SDL_Scancode scancode)
 |}
 
 == Return Value ==
-Returns a pointer to the name for the scancode. If the scancode doesn't have a name this function returns an empty string ("").  
+Returns a pointer to the name for the scancode. If the scancode doesn't have a name this function returns an empty string ("").
 
-<span style="color: green;">Should scancode here be bold?  Should the pointer be mentioned?  Any error state?</span>
+<!-- <span style="color: green;">Should scancode here be bold?  Should the pointer be mentioned?  Any error state?</span> -->
 
 == Code Examples ==
 ```c++
@@ -28,7 +28,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-See [[SDL_Scancode]] for details. 
+See [[SDL_Scancode]] for details.
 
 == Related Functions ==
 :[[SDL_GetScancodeFromKey]]
