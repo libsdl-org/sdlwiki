@@ -18,7 +18,7 @@ int SDL_HapticNumEffectsPlaying(SDL_Haptic* haptic)
 |}
 
 == Return Value ==
-Returns the number of effects the haptic device can play at the same time or a negative error code on failure; call [[SDL_GetError]]() for more information. <span style="color: green;">Should there be a link to Remarks here?</span>
+Returns the number of effects the haptic device can play at the same time or a negative error code on failure; call [[SDL_GetError]]() for more information. <!-- <span style="color: green;">Should there be a link to Remarks here?</span> -->
 
 == Code Examples ==
 ```c++
@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is not supported on all platforms, but will always return a value. ^This function is available/included^ ,,Added here,, for the sake of completeness. <span style="color: green;">Is it important to note what the value would be if it is not supported?  Would it just be 1 or 0?</span>
+This is not supported on all platforms, but will always return a value. ^This function is available/included^ ,,Added here,, for the sake of completeness. <!-- <span style="color: green;">Is it important to note what the value would be if it is not supported?  Would it just be 1 or 0?</span> -->
 
 == Related Functions ==
 :[[SDL_HapticNumEffects]]
