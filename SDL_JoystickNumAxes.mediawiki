@@ -14,7 +14,7 @@ int SDL_JoystickNumAxes(SDL_Joystick* joystick)
 == Function Parameters ==
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information ???
+|an SDL_Joystick structure containing joystick information
 |}
 
 == Return Value ==
