@@ -41,6 +41,7 @@ You can add your code example here
 
 == Related Functions ==
 :[[SDL_RenderGetClipRect]]
+:[[SDL_RenderIsClipEnabled]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
