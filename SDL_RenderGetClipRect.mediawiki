@@ -20,10 +20,10 @@ void SDL_RenderGetClipRect(SDL_Renderer* renderer,
 == Function Parameters ==
 {|
 |'''renderer'''
-|the rendering context
+|the rendering context from which clip rectangle should be queried
 |-
 |'''rect'''
-|an [[SDL_Rect]] structure filled in with the current clipping area
+|an [[SDL_Rect]] structure filled in with the current clipping area or an empty rectangle if clipping is disabled
 |}
 
 
