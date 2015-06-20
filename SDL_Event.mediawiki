@@ -274,11 +274,11 @@ SDL_PushEvent(&user_event);
 
 == Related Structures ==
 :[[SDL_AudioDeviceEvent]]
-:[[SDL_DollarGestureEvent]]
-:[[SDL_DropEvent]]
 :[[SDL_ControllerAxisEvent]]
 :[[SDL_ControllerButtonEvent]]
 :[[SDL_ControllerDeviceEvent]]
+:[[SDL_DollarGestureEvent]]
+:[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
