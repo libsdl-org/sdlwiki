@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RWclose =
-Use this function to close and free an allocated SDL_RWops structure.
+Use this function to close and free an allocated [[SDL_RWops]] structure.
 
 
 == Syntax ==
@@ -13,7 +13,7 @@ int SDL_RWclose(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context'''
-|SDL_RWops structure to close
+|[[SDL_RWops]] structure to close
 |}
 
 == Return Value ==
@@ -31,7 +31,7 @@ if (rw != NULL) {
 ```
 
 == Remarks ==
-SDL_RWclose() closes and cleans up the SDL_RWops stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
+SDL_RWclose() closes and cleans up the [[SDL_RWops]] stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
 
 Note that if this fails to flush the stream to disk, this function reports an error, but the SDL_RWops is still invalid once this function returns.
 
