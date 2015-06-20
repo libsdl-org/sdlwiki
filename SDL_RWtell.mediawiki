@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_RWtell =
-Use this function to determine the current read/write offset in an SDL_RWops data stream.
+Use this function to determine the current read/write offset in an [[SDL_RWops]] data stream.
 
 
 == Syntax ==
@@ -13,7 +13,7 @@ Sint64 SDL_RWtell(struct SDL_RWops* context)
 == Function Parameters ==
 {|
 |'''context''' 
-|a SDL_RWops data stream object from which to get the current offset
+|a [[SDL_RWops]] data stream object from which to get the current offset
 |}
 
 == Return Value ==
@@ -29,7 +29,7 @@ if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
 ```
 
 == Remarks ==
-SDL_RWtell is actually a macro that calls the SDL_RWops's '''seek''' method, with an offset of 0 bytes from RW_SEEK_CUR, to simplify application development.
+SDL_RWtell is actually a macro that calls the [[SDL_RWops]]'s '''seek''' method, with an offset of 0 bytes from RW_SEEK_CUR, to simplify application development.
 
 == Related Functions ==
 :[[SDL_RWclose]]
