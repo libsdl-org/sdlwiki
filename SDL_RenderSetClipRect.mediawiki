@@ -12,15 +12,15 @@ Use this function to set the clip rectangle for rendering on the specified targe
 
 == Syntax ==
 ```c++
-int SDL_RenderSetClipRect(SDL_Renderer*      renderer,
-                          const SDL_Rect*    rect)
+int SDL_RenderSetClipRect(SDL_Renderer*   renderer,
+                          const SDL_Rect* rect)
 ```
 
 
 == Function Parameters ==
 {|
 |'''renderer'''
-|the rendering context
+|the rendering context for which clip rectangle should be set
 |-
 |'''rect'''
 |an [[SDL_Rect]] structure representing the clip area, or NULL to disable clipping
