@@ -52,6 +52,8 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    SDL_EventState(SDL_DROPFILE, SDL_ENABLE);
+
     done = SDL_FALSE;
     while (!done) {                         // Program loop
         while (!done && SDL_PollEvent(&event)) {
