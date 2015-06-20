@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RWwrite =
-Use this function to write to a data stream.
+Use this function to write to an [[SDL_RWops]] data stream.
 
 
 == Syntax ==
@@ -16,7 +16,7 @@ size_t SDL_RWwrite(struct SDL_RWops* context,
 == Function Parameters ==
 {|
 |'''context'''
-|a pointer to an SDL_RWops structure
+|a pointer to an [[SDL_RWops]] structure
 |-
 |'''ptr'''
 |a pointer to a buffer containing data to write
@@ -49,7 +49,7 @@ if(rw != NULL) {
 == Remarks ==
 This function writes exactly '''num''' objects each of size '''size''' from the area pointed at by '''ptr''' to the stream. If this fails for any reason, it'll return less than '''num''' to demonstrate how far the write progressed. On success, it returns '''num'''.
 
-SDL_RWwrite is actually a macro that calls the SDL_RWops's '''write''' method appropriately, to simplify application development.
+SDL_RWwrite is actually a macro that calls the [[SDL_RWops]]'s '''write''' method appropriately, to simplify application development.
 
 == Related Functions ==
 :[[SDL_RWclose]]
