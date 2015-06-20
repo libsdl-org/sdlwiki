@@ -12,8 +12,6 @@ This category contains functions for system independent thread management routin
 
 ''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] or [http://forums.libsdl.org/viewtopic.php?t=5973 forum].
 
-''NOTE'': Avoid creating threads or synchronization primitives prior to calling [[SDL_Init]](). While on some platforms (i.e. Windows) these functions will work correctly before SDL initialization, other platforms (i.e. Linux) may not.
-
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryThread -title:SGEnumerations)>>
 
