@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RWseek =
-Use this function to seek within an SDL_RWops data stream.
+Use this function to seek within an [[SDL_RWops]] data stream.
 
 
 == Syntax ==
