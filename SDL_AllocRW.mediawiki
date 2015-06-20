@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_AllocRW =
-Use this function to allocate an empty, unpopulated SDL_RWops structure.
+Use this function to allocate an empty, unpopulated [[SDL_RWops]] structure.
 
 
 == Syntax ==
@@ -18,7 +18,7 @@ Returns a pointer to the allocated memory on success, or NULL on failure; call [
 /* These functions should not be used except from pointers in an SDL_RWops */
 static int myseekfunc(SDL_RWops *context, int offset, int whence)
 {
-  return SDL_SetError("Can't seek in this kind of RWops");
+  return SDL_SetError("Can't seek in this kind of SDL_RWops");
 }
 
 static int myreadfunc(SDL_RWops *context, void *ptr, int size, int maxnum)
@@ -36,7 +36,7 @@ static int myclosefunc(SDL_RWops *context)
 {
   if(context->type != 0xdeadbeef)
   {
-    return SDL_SetError("Wrong kind of RWops for myclosefunc()");
+    return SDL_SetError("Wrong kind of SDL_RWops for myclosefunc()");
   }
 
   free(context->hidden.unknown.data1);
@@ -60,9 +60,9 @@ SDL_RWops *MyCustomRWop()
 ```
 
 == Remarks ==
-Applications do not need to use this function unless they are providing their own RWops implementation. If you just need a RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc.
+Applications do not need to use this function unless they are providing their own [[SDL_RWops]] implementation. If you just need a SDL_RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc.
 
-You must free the returned pointer with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. Since all RWops must free themselves when their '''close''' method is called, all RWops must be allocated through this function, so they can all be freed correctly with [[SDL_FreeRW]]().
+You must free the returned pointer with [[SDL_FreeRW]](). Depending on your operating system and compiler, there may be a difference between the malloc() and free() your program uses and the versions SDL calls internally. Trying to mix the two can cause crashing such as segmentation faults. Since all SDL_RWops must free themselves when their '''close''' method is called, all SDL_RWops must be allocated through this function, so they can all be freed correctly with [[SDL_FreeRW]]().
 
 == Related Functions ==
 :[[SDL_FreeRW]]
