@@ -27,6 +27,8 @@ By default all orientations are allowed.
 
 == Code Examples ==
 ```c++
+#include "SDL.h"
+
 int main(int argc, char* argv[])
 {
     SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight");
