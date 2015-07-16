@@ -121,6 +121,8 @@ int main(int argc, char* argv[]) {
 
 SDL_WINDOW_SHOWN is ignored by SDL_CreateWindow(). The SDL_Window is implicitly shown if SDL_WINDOW_HIDDEN is not set. SDL_WINDOW_SHOWN may be queried later using [[SDL_GetWindowFlags]]().
 
+On Apple's OS X you '''must''' set the NSHighResolutionCapable Info.plist property to YES, otherwise you will not receive a High DPI OpenGL canvas. 
+
 == Related Functions ==
 :[[SDL_CreateWindowFrom]]
 :[[SDL_DestroyWindow]]
