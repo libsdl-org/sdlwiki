@@ -34,7 +34,18 @@ Returns an opaque pointer to the new thread object on success, NULL if the new t
 #include "SDL_thread.h"
 #include "SDL_timer.h"
 
-static int TestThread(void *ptr);
+// Very simple thread - counts 0 to 9 delaying 50ms between increments
+static int TestThread(void *ptr)
+{
+    int cnt;
+
+    for (cnt = 0; cnt < 10; ++cnt) {
+        printf("\nThread counter: %d", cnt);
+        SDL_Delay(50);
+    }
+
+    return cnt;
+}
 
 int main(int argc, char *argv[])
 {
@@ -54,19 +65,6 @@ int main(int argc, char *argv[])
     }
 
     return 0;
-}
-
-// Very simple thread - counts 0 to 9 delaying 50ms between increments
-static int TestThread(void *ptr)
-{
-    int cnt;
-
-    for (cnt = 0; cnt < 10; ++cnt) {
-        printf("\nThread counter: %d", cnt);
-        SDL_Delay(50);
-    }
-
-    return cnt;
 }
 ```
 ```c++
