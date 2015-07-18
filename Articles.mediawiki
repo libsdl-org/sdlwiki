@@ -26,8 +26,6 @@ If you know of an article about SDL 2.0 that should be linked here please let us
 : [http://www.gamedev.net/reference/programming/features/sdl2/ The Simple DirectMedia Layer from a Win32 Perspective, Part 2: SDL Video|target="blank"]
 * !GameDev.net - December 2001
 : [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL|target="blank"]
-* !GameDev.net - December 2001
-: [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL|target="blank"]
 * O'Reilly Network - September 2001
 : [http://linuxdevcenter.com/pub/a/linux/2001/09/21/sdl.html SDL: The DirectX Alternative|target="blank"]
 * Ask Slashdot - August 2001
