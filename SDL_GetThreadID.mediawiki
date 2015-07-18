@@ -22,12 +22,22 @@ Returns the ID of the specified thread, or the ID of the current thread if '''th
 
 == Code Examples ==
 ```c++
-
 #include <stdio.h>
 #include "SDL_thread.h"
 #include "SDL_timer.h"
 
-int TestThread(void *ptr);
+// Very simple thread - counts 0 to 9 delaying 50ms between increments
+int TestThread(void *ptr)
+{
+    int cnt;
+
+    for (cnt = 0; cnt < 10; ++cnt) {
+        printf("\nThread counter: %d", cnt);
+        SDL_Delay(50);
+    }
+
+    return cnt;
+}
 
 int main(int argc, char *argv[])
 {
@@ -53,19 +63,6 @@ int main(int argc, char *argv[])
     printf("\nThread returned value: %d", threadReturnValue);
 
     return 0;
-}
-
-// Very simple thread - counts 0 to 9 delaying 50ms between increments
-int TestThread(void *ptr)
-{
-    int cnt;
-
-    for (cnt = 0; cnt < 10; ++cnt) {
-        printf("\nThread counter: %d", cnt);
-        SDL_Delay(50);
-    }
-
-    return cnt;
 }
 ```
 
