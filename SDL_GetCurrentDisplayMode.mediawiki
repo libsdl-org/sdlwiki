@@ -29,10 +29,9 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 // Using SDL2's SDL_GetCurrentDisplayMode()
 
 #include "SDL.h"
-#include <stdio.h>
 
-int main(int argc, char* argv[]){
-
+int main(int argc, char* argv[])
+{
   int i;
 
   // Declare display mode structure to be filled in.
