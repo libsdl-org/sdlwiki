@@ -58,7 +58,24 @@ A structure that contains system-dependent window manager messages.
 |DFBEvent
 |'''dfb.event'''
 |the DirectFB event
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_COCOA''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''cocoa.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.4)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_UIKIT''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''uikit.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.4)
 |}
+
 
 == Code Examples ==
 ```c++
