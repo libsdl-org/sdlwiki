@@ -19,7 +19,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The screensaver is enabled by default.
+The screensaver is disabled by default.
 
 == Related Functions ==
 :[[SDL_DisableScreenSaver]]
