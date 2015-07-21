@@ -48,9 +48,7 @@ SDL_RenderFillRect(renderer, &rectangle);
 ```
 
 == Remarks ==
-Use this function to set the color for drawing ^or filling^ rectangles, lines, ^and points,^ and for [[SDL_RenderClear]]().
-
-''You can add useful comments here''
+Use this function to set the color for drawing or filling rectangles, lines, and points, and for [[SDL_RenderClear]]().
 
 == Related Functions ==
 :[[SDL_GetRenderDrawColor]]
