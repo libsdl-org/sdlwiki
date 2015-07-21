@@ -10,7 +10,7 @@
 
 * [http://www.amazon.com/Game-Programming-Start-Finish-Development/dp/1584504323/ref=sr_1_1?ie=UTF8&s=books&qid=1255150140&sr=8-1 Game Programming in C++ Start to Finish|target="blank"] by Erik Yuzwa
 : An introduction to game programming using SDL and OpenGL on Windows.
-: ''"As you work through the book, you’ll build the SuperAsteriodArena game, beginning with engine creation and 3D programming with SDL and OpenGL. From there you’ll move on to animation effects, audio, collision detection, networking, and finalizing the game. A variety of tools are used throughout, including Visual Studio and OpenGL, SDL, Autodesk 3ds Max, and the Audacity sound tool. "'' ~-(Amazon.com)-~
+: ''"As you work through the book, you’ll build the !SuperAsteriodArena game, beginning with engine creation and 3D programming with SDL and OpenGL. From there you’ll move on to animation effects, audio, collision detection, networking, and finalizing the game. A variety of tools are used throughout, including Visual Studio and OpenGL, SDL, Autodesk 3ds Max, and the Audacity sound tool. "'' ~-(Amazon.com)-~
 
 * [http://www.amazon.com/Teach-Yourself-Games-Programming-Computers/dp/0071544755 Teach Yourself Games Programming] by Alan Thorne
 : Check out chapters 4 and 6 especially!
