@@ -88,11 +88,11 @@ A structure that contains system-dependent information about a window.
 |the UIKit window
 |-
 |GLuint   
-|'''framebuffer''' 
+|'''uikit.framebuffer''' 
 |the GL view's Framebuffer Object; it must be bound when rendering to the screen using GL (>= SDL 2.0.4)
 |-
 |GLuint   
-|'''colorbuffer''' 
+|'''uikit.colorbuffer''' 
 |the GL view's color Renderbuffer Object; it must be bound when [[SDL_GL_SwapWindow]]() is called (>= SDL 2.0.4)
 |-
 |
