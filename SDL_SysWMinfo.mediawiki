@@ -95,6 +95,10 @@ A structure that contains system-dependent information about a window.
 |'''uikit.colorbuffer''' 
 |the GL view's color Renderbuffer Object; it must be bound when [[SDL_GL_SwapWindow]]() is called (>= SDL 2.0.4)
 |-
+|GLuint   
+|'''uikit.resolveFramebuffer''' 
+|the Framebuffer Object which holds the resolve color Renderbuffer, when MSAA is used (>= SDL 2.0.4)
+|-
 |
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)
