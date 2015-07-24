@@ -15,13 +15,14 @@ This page is more walkthrough-oriented.
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
 sudo apt-get install openjdk-7-jdk ant
 ```
-* Install NDK (tested with r9d)
-* Install the latest SDK, run <code>android</code> and install API 12
+* Install NDK (tested with r8c)
+* Install the latest SDK, run <code>android</code> and install one API (>=10)
 * Configure your environment variables, e.g.: ```
-PATH="/usr/src/android-ndk-r9d:$PATH"          # for 'ndk-build'
-PATH="/usr/src/android-sdk-linux/tools:$PATH"  # for 'android'
+PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
+PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
+PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 ```
-
+* Edit ```build-scripts/androidbuild.sh```, find the {{{android update project}}} line, and add {{{--target 'android-XX'}}} to it (replace XX with your installed API number above).
 
 == Simple builds ==
 
