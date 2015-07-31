@@ -1,0 +1,47 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_MAC_BACKGROUND_APP =
+A hint that specifies if the SDL app should not be forced to become a foreground process on Mac OS X.
+
+
+
+
+== Values ==
+{|
+|0
+|force the SDL app to become a foreground process (default)
+|-
+|1
+|do not force the SDL app to become a foreground process
+|}
+
+
+== Default ==
+By default the SDL app will be forced to become a foreground process on Mac OS X.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint only applies to Mac OS X.
+
+
+== Version ==
+
+This hint is available since SDL 2.0.4.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
