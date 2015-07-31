@@ -52,7 +52,7 @@ You can add your code example here
 
 
 == Remarks ==
-See [[SDL_ShowMessageBox]] for a complete code example.
+See [[SDL_ShowMessageBox]]() for a complete code example.
 
 == Related Enumerations ==
 :[[SDL_MessageBoxFlags]]
