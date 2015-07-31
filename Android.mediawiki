@@ -16,7 +16,7 @@ This page is more walkthrough-oriented.
 sudo apt-get install openjdk-7-jdk ant
 ```
 * Install NDK (tested with r8c)
-* Install the latest SDK, run <code>android</code> and install one API (>=10)
+* Install the latest SDK, run <code>android</code> and install one API (>=12)
 * Configure your environment variables, e.g.: ```
 PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
