@@ -22,7 +22,7 @@ PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 ```
-* Edit ```build-scripts/androidbuild.sh```, find the {{{android update project}}} line, and add {{{--target 'android-XX'}}} to it (replace XX with your installed API number above).
+* Edit ```build-scripts/androidbuild.sh```, find the {{{$ANDROID update project}}} line, and add {{{--target 'android-XX'}}} to it (replace XX with your installed API number above).
 
 == Simple builds ==
 
