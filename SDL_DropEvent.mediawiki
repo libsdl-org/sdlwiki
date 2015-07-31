@@ -90,9 +90,9 @@ int main(int argc, char *argv[]) {
 == Remarks ==
 [[SDL_DropEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_DROPFILE is reported. You would access it through the event's <code>drop</code> field.
 
-This event is disabled by default.  You can enable it with [[SDL_EventState]]().
+This event is enabled by default.  You can disable it with [[SDL_EventState]]().
 
-If you enable this event you must free the filename in the event.
+If this event is enabled you must free the filename in the event using SDL_free().
 
 === Mac OS X ===
 To enable drag&drop on your SDL app, you must ''also'' edit your info.plist file. Add/Modify '''Document Types.''' For example, to enable all document types, add the "public.data" mime type as a document type.
