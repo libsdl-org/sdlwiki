@@ -1,0 +1,65 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetDisplayDPI =
+Use this function to get the dots/pixels-per-inch for a display.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_GetDisplayDPI(int    displayIndex,
+                      float* ddpi,
+                      float* hdpi,
+                      float* vdpi)
+```
+
+
+== Function Parameters ==
+{|
+|'''displayIndex'''
+|the index of the display from which DPI information should be queried
+|-
+|'''ddpi'''
+|a pointer filled in with the diagonal DPI of the display; may be NULL
+|-
+|'''hdpi'''
+|a pointer filled in with the horizontal DPI of the display; may be NULL
+|-
+|'''vdpi'''
+|a pointer filled in with the vertical DPI of the display; may be NULL
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+Diagonal, horizontal and vertical DPI can all be optionally returned if the parameter is non-NULL.
+
+A failure of this function usually means that either no DPI information is available or the '''displayIndex''' is out of range.
+
+== Version ==
+This function is available since SDL 2.0.4.
+
+== Related Functions ==
+:[[SDL_GetNumVideoDisplays]]
+
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
