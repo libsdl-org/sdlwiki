@@ -15,14 +15,14 @@ This page is more walkthrough-oriented.
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
 sudo apt-get install openjdk-7-jdk ant
 ```
-* Install NDK (tested with r8c)
+* Install NDK (tested with [http://dl.google.com/android/ndk/android-ndk-r8c-linux-x86.tar.bz2 r8c])
 * Install the latest SDK, run <code>android</code> and install one API (>=12)
 * Configure your environment variables, e.g.: ```
 PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 ```
-* Edit ```build-scripts/androidbuild.sh```, find the {{{$ANDROID update project}}} line, and add {{{--target 'android-XX'}}} to it (replace XX with your installed API number above).
+* Edit ```build-scripts/androidbuild.sh```, find the {{{android update project}}} line, and add {{{--target android-XX}}} to it (replace XX with your installed API number above).
 
 == Simple builds ==
 
@@ -74,7 +74,10 @@ Note: this environment can be used for CMake too.
 * Start with a minimal build: ```
 cd /usr/src/SDL2/
 cd build-scripts/
+hg revert --all  # remove traces of previous builds
+# edit androidbuild.sh and modify android update project --target android-XX
 ./androidbuild.sh org.libsdl /dev/null
+# doesn't matter if the actual build fails, it's just for setup
 cd ../build/org.libsdl/
 ```
 * Remove reference to our dummy file: ```
@@ -111,34 +114,36 @@ Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.
 
 Now:
 * Copy the NDK into a traditional GCC toolchain: ```
-/usr/src/android-ndk-r9d/build/tools/make-standalone-toolchain.sh \
-  --platform=android-12 --install-dir=/usr/src/ndk-standalone-12-arm --arch=arm
+/usr/src/android-ndk-r8c/build/tools/make-standalone-toolchain.sh \
+  --platform=android-14 --install-dir=/usr/src/ndk-standalone-14-arm --arch=arm
 ```
 * Set your PATH (important, do it before any build): ```
-PATH=/usr/src/ndk-standalone-12-arm/bin:$PATH
+NDK_STANDALONE=/usr/src/ndk-standalone-14-arm
+PATH=$NDK_STANDALONE/bin:$PATH
 ```
 * Install the SDL2 binaries in the toolchain: ```
 cd /usr/src/SDL2/build/org.libsdl/
-for i in libs/armeabi/*; do ln -nfs $(pwd)/$i /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/; done
-mkdir /usr/src/ndk-standalone-12-arm/sysroot/usr/include/SDL2/
-\cp jni/SDL/include/* /usr/src/ndk-standalone-12-arm/sysroot/usr/include/SDL2/
-\cp jni/*/SDL*.h /usr/src/ndk-standalone-12-arm/sysroot/usr/include/SDL2/
+for i in libs/armeabi/*; do ln -nfs $(pwd)/$i $NDK_STANDALONE/sysroot/usr/lib/; done
+mkdir $NDK_STANDALONE/sysroot/usr/include/SDL2/
+\cp jni/SDL/include/* $NDK_STANDALONE/sysroot/usr/include/SDL2/
+\cp jni/*/SDL*.h $NDK_STANDALONE/sysroot/usr/include/SDL2/
 ```
 * Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH (auto-detected by autoconf): ```
-VERSION=0.9.6
+VERSION=0.9.12
+cd /usr/src/
 wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
 tar xf pkgconf-$VERSION.tar.gz
 cd pkgconf-$VERSION
 mkdir native-android/ && cd native-android/
-../configure --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+../configure --prefix=$NDK_STANDALONE/sysroot/usr
 make -j$(nproc)
 make install
-ln -s ../sysroot/usr/bin/pkgconf /usr/src/ndk-standalone-12-arm/bin/arm-linux-androideabi-pkg-config
-mkdir /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/
+ln -s ../sysroot/usr/bin/pkgconf $NDK_STANDALONE/bin/arm-linux-androideabi-pkg-config
+mkdir $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/
 ```
 * Install pkg-config <code>.pc</code> files for SDL: ```
-cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/sdl2.pc
-prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/sdl2.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -151,8 +156,8 @@ Libs: -lSDL2
 Cflags: -I${includedir}/SDL2   -D_REENTRANT
 EOF
 
-cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/SDL2_image.pc
-prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_image.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -164,8 +169,8 @@ Libs: -L${libdir} -lSDL2_image
 Cflags: -I${includedir}/SDL2
 EOF
 
-cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/SDL2_mixer.pc
-prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_mixer.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -177,8 +182,8 @@ Libs: -L${libdir} -lSDL2_mixer
 Cflags: -I${includedir}/SDL2
 EOF
 
-cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/SDL2_net.pc
-prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_net.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -190,8 +195,8 @@ Libs: -L${libdir} -lSDL2_net
 Cflags: -I${includedir}/SDL2
 EOF
 
-cat <<'EOF' > /usr/src/ndk-standalone-12-arm/sysroot/usr/lib/pkgconfig/SDL2_ttf.pc
-prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_ttf.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
@@ -208,7 +213,7 @@ EOF
 
 You can add any other libraries (e.g.: SDL2_gfx, freetype, gettext, gmp...) using commands like: ```
 mkdir cross-android/ && cd cross-android/
-../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr \
+../configure --host=arm-linux-androideabi --prefix=$NDK_STANDALONE/sysroot/usr \
   --with-some-option --enable-another-option \
   --disable-shared
 make -j$(nproc)
@@ -224,7 +229,7 @@ tar xf SDL2_gfx-$VERSION.tar.gz
 mv SDL2_gfx-$VERSION/ SDL2_gfx/
 cd SDL2_gfx/
 mkdir cross-android/ && cd cross-android/
-../configure --host=arm-linux-androideabi --prefix=/usr/src/ndk-standalone-12-arm/sysroot/usr \
+../configure --host=arm-linux-androideabi --prefix=$NDK_STANDALONE/sysroot/usr \
   --disable-shared --disable-mmx
 make -j$(nproc)
 make install
@@ -243,7 +248,7 @@ for i in /usr/src/SDL2/build/org.libsdl/libs/armeabi/*; do ln -nfs $i libs/armea
 ```
 
 Make your project Android-aware:
-* Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h")
+* Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h"). Compile it as C (not C++).
 * In your ```configure.ac```, detect Android: {{{
 AM_CONDITIONAL(ANDROID, test "$host" = "arm-unknown-linux-androideabi")
 }}}
@@ -256,7 +261,7 @@ if ANDROID
 endif
 }}}
 * Cross-compile your project using the GCC toolchain environment we created: ```
-PATH=/usr/src/ndk-standalone-12-arm/bin:$PATH
+PATH=$NDK_STANDALONE/bin:$PATH
 mkdir cross-android/ && cd cross-android/
 ../configure --host=arm-linux-androideabi \
   --with-your-option --enable-your-other-option ...
@@ -274,7 +279,7 @@ CFLAGS="-g -O2 -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb" LFDLAG
 Now you can install your pre-built binaries and build the Android project:
 * Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
 * Build your Android <code>.apk</code>: ```
-android update project --name your_app --path . --target "android-12"
+android update project --name your_app --path . --target android-XX
 ant debug
 ant installd
 ```
@@ -297,7 +302,7 @@ SET(ANDROID TRUE)
 ```
 
 You then call CMake like this: ```
-PATH=/usr/src/ndk-standalone-12-arm/bin:$PATH
+PATH=$NDK_STANDALONE/bin:$PATH
 cmake \
   -D CMAKE_TOOLCHAIN_FILE=../android_toolchain.cmake \
   ...
