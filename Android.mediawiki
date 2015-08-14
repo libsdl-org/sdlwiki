@@ -144,7 +144,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: sdl2
 Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
-Version: 2.0.3
+Version: 2.0.2.scm
 Requires:
 Conflicts:
 Libs: -lSDL2
@@ -158,7 +158,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_image
 Description: image loading library for Simple DirectMedia Layer
-Version: 2.0.1
+Version: 2.0.0.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_image
 Cflags: -I${includedir}/SDL2
@@ -171,7 +171,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_mixer
 Description: mixer library for Simple DirectMedia Layer
-Version: 2.0.1
+Version: 2.0.0.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_mixer
 Cflags: -I${includedir}/SDL2
@@ -184,7 +184,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_net
 Description: net library for Simple DirectMedia Layer
-Version: 2.0.1
+Version: 2.0.0.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_net
 Cflags: -I${includedir}/SDL2
@@ -197,7 +197,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_ttf
 Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
-Version: 2.0.13
+Version: 2.0.12.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_ttf
 Cflags: -I${includedir}/SDL2
