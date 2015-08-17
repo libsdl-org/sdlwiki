@@ -47,6 +47,8 @@ You can add your code example here
 <span id="access"></span> '''access''' may be one of the following:
 <<Include(SDL_TextureAccess, , , from="== Values ==", to="== Code Examples ==")>>
 
+You can set the texture scaling method by setting [[SDL_HINT_RENDER_SCALE_QUALITY]] before creating the texture.
+
 == Related Functions ==
 :[[SDL_CreateTextureFromSurface]]
 :[[SDL_DestroyTexture]]
