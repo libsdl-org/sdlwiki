@@ -42,6 +42,7 @@ This is a fairly slow function, intended for use with static textures that do no
 If the texture is intended to be updated often, it is preferred to create the texture as streaming and use the locking functions referenced below. While this function will work with streaming textures, for optimization reasons you may not get the pixels back if you lock the texture afterward.
 
 == Related Functions ==
+:[[SDL_CreateTexture]]
 :[[SDL_LockTexture]]
 :[[SDL_UnlockTexture]]
 
