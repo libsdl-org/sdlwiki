@@ -52,9 +52,7 @@ Then let's make an Android app out of it. To compile: ```
  cd /usr/src/SDL2/build/org.libsdl.showimage/
  ln -s /usr/src/SDL2_image jni/
  ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
- # - Edit jni/src/Android.mk
- #   LOCAL_SHARED_LIBRARIES := ... SDL2_image
- # - Edit jni/Application.mk: remove x86 where jpeg-9 doesn't build
+ sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' jni/src/Android.mk
  ndk-build -j$(nproc)
  ant debug install
 ```
