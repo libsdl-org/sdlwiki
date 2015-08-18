@@ -134,10 +134,10 @@ The texture color is affected based on its color modulation set by [[SDL_SetText
 The texture alpha is affected based on its alpha modulation set by [[SDL_SetTextureAlphaMod]]().
 
 == Related Functions ==
-: [[SDL_SetTextureAlphaMod]]
-: [[SDL_SetTextureBlendMode]]
-: [[SDL_SetTextureColorMod]]
-: [[SDL_RenderCopyEx]]
+:[[SDL_RenderCopyEx]]
+:[[SDL_SetTextureAlphaMod]]
+:[[SDL_SetTextureBlendMode]]
+:[[SDL_SetTextureColorMod]]
 
 ----
 
