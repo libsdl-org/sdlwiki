@@ -28,7 +28,7 @@ SDL_TimerID SDL_AddTimer(Uint32            interval,
 Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-*
+
 ```c++
 /* Start the timer; the callback below will be executed after the delay */
 
@@ -58,7 +58,7 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     return(interval);
 }
 ```
-Note that it is possible to avoid the multithreading problems with SDL timers by giving to <code>userevent.data1</code> the address of a function you want to be executed and to <code>userevent.data2</code> its params, and then deal with it in the event loop. 
+Note that it is possible to avoid the multithreading problems with SDL timers by giving to <code>userevent.data1</code> the address of a function you want to be executed and to <code>userevent.data2</code> its params, and then deal with it in the event loop.
 ```c++
 /* with the same code as before: */
 Uint32 my_callbackfunc(Uint32 interval, void *param)
@@ -98,7 +98,7 @@ while (SDL_PollEvent (&event))
     }
 }
 ```
-*
+
 
 == Remarks ==
 
