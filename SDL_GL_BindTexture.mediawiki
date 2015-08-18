@@ -239,8 +239,8 @@ You need a renderer to create a SDL_Texture, therefore you can only use this fun
 If you need control over your OpenGL context, you need to write your own texture-loading methods.
 
 == Related Functions ==
-: [[SDL_GL_UnbindTexture]]
-: [[SDL_GL_MakeCurrent]]
+:[[SDL_GL_MakeCurrent]]
+:[[SDL_GL_UnbindTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
