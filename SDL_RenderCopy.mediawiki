@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
   SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 580, 0);
   Main_Renderer = SDL_CreateRenderer(Main_Window, -1, SDL_RENDERER_ACCELERATED);
 
-  /* The loading of the background texture. Since SDL_LoadBMP returns
+  /* The loading of the background texture. Since SDL_LoadBMP() returns
   a surface, we convert it to a texture afterwards for fast accelerated
   blitting. */
   Loading_Surf = SDL_LoadBMP("Background.bmp");
@@ -104,17 +104,17 @@ int main(int argc, char *argv[])
 
 
   /* The renderer works pretty much like a big canvas:
-  when you RenderCopy you are adding paint, each time adding it
+  when you RenderCopy() you are adding paint, each time adding it
   on top.
   You can change how it blends with the stuff that
   the new data goes over.
   When your 'picture' is complete, you show it
-  by using SDL_RenderPresent. */
+  by using SDL_RenderPresent(). */
 
   /* SDL 1.2 hint: If you're stuck on the whole renderer idea coming
   from 1.2 surfaces and blitting, think of the renderer as your
-  main surface, and SDL_RenderCopy as the blit function to that main
-  surface, with SDL_RenderPresent as the old SDL_Flip function.*/
+  main surface, and SDL_RenderCopy() as the blit function to that main
+  surface, with SDL_RenderPresent() as the old SDL_Flip() function.*/
 
   SDL_DestroyTexture(BlueShapes);
   SDL_DestroyTexture(Background_Tx);
