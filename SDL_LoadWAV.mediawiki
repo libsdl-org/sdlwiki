@@ -53,8 +53,8 @@ SDL_LoadWAV is a convenience macro that calls [[SDL_LoadWAV_RW]]().
 This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryIO|RWops]] API.
 
 == Related Functions ==
-: [[SDL_LoadWAV_RW]]
-: [[SDL_FreeWAV]]
+:[[SDL_FreeWAV]]
+:[[SDL_LoadWAV_RW]]
 
 ----
 [[CategoryAPI]], CategoryAudio
