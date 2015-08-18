@@ -22,7 +22,8 @@ Note that as long as you static link the release builds of your application, it 
 On Mac OS X, you access the OpenGL headers like so:
 
 ```
-#include <OpenGL/gl.h> #include <OpenGL/glext.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glext.h>
 ```
 
 The header file "SDL_opengl.h" includes these headers on all supported SDL systems.
