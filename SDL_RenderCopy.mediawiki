@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
   blitting. */
   Loading_Surf = SDL_LoadBMP("Background.bmp");
   Background_Tx = SDL_CreateTextureFromSurface(Main_Renderer, Loading_Surf);
-  SDL_FreeSurface(Loading_Surf);  // we got the texture now -> free surface
+  SDL_FreeSurface(Loading_Surf); /* we got the texture now -> free surface */
 
   /* Load an additional texture */
   Loading_Surf = SDL_LoadBMP("Blueshapes.bmp");
