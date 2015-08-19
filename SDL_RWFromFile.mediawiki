@@ -58,6 +58,8 @@ NOTE: In order to open a file as a binary file, a "b" character has to be includ
 
 This function supports Unicode filenames, but they must be encoded in UTF-8 format, regardless of the underlying operating system.
 
+As a fallback, SDL_RWFromFile will transparently open a matching filename in Android ```assets```.
+
 Closing the [[SDL_RWops]] will close the file handle SDL is holding internally.
 
 == Related Functions ==
