@@ -238,6 +238,8 @@ In most cases, both will be 1.0, however, on systems that support the GL_ARB_tex
 You need a renderer to create a [[SDL_Texture]], therefore you can only use this function with an implicit OpenGL context from [[SDL_CreateRenderer]](), not with your own OpenGL context.
 If you need control over your OpenGL context, you need to write your own texture-loading methods.
 
+Also note that SDL may upload RGB textures as BGR (or vice-versa), and re-order the color channels in the shaders phase, so the uploaded texture may have swapped color channels.
+
 == Related Functions ==
 :[[SDL_GL_MakeCurrent]]
 :[[SDL_GL_UnbindTexture]]
