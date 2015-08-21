@@ -41,7 +41,6 @@ Returns the window that was created or NULL on failure; call [[SDL_GetError]]() 
 
 == Code Examples ==
 ```c++
-
 // Example program:
 // Using SDL2 to create an application window
 
@@ -64,14 +63,14 @@ int main(int argc, char* argv[]) {
         SDL_WINDOW_OPENGL                  // flags - see below
     );
 
-    // Check that the window was successfully made
+    // Check that the window was successfully created
     if (window == NULL) {
-        // In the event that the window could not be made...
+        // In the case that the window could not be made...
         printf("Could not create window: %s\n", SDL_GetError());
         return 1;
     }
 
-    // The window is open: enter program loop (see SDL_PollEvent)
+    // The window is open: could enter program loop here (see SDL_PollEvent())
 
     SDL_Delay(3000);  // Pause execution for 3000 milliseconds, for example
 
