@@ -268,9 +268,9 @@ SDL_PushEvent(&user_event);
 |[[SDL_WindowEvent]]
 |'''window'''
 |-
-|SDL_APP_TERMINATING<br/>SDL_APP_LOWMEMORY<br/>SDL_APP_WILLENTERBACKGROUND<br/>SDL_APP_DIDENTERBACKGROUND<br/>SDL_APP_WILLENTERFOREGROUND<br/>SDL_APP_DIDENTERFOREGROUND
+|Other events
 |SDL_CommonEvent
-|none, use .type
+|none, use [[SDL_EventType|.type]]
 |}
 
 == Related Enumerations ==
