@@ -36,7 +36,7 @@ SDL_DestroyMutex(mutex);
 <!-- # End Mutex Example -->
 
 == Remarks ==
-Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock without blocking.
+Calls to [[SDL_LockMutex]]() will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock without blocking.
 
 SDL mutexes are reentrant.
 
