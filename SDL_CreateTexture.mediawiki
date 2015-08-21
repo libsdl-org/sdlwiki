@@ -9,7 +9,7 @@ Use this function to create a texture for a rendering context.
 ```c++
 SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
                                Uint32        format,
-                               int           access, 
+                               int           access,
                                int           w,
                                int           h)
 ```
@@ -33,7 +33,7 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns a pointer to the created texture or 0 if no rendering context was active, the format was unsupported, or the width or height were out of range; call [[SDL_GetError]]() for more information. 
+Returns a pointer to the created texture or NULL if no rendering context was active, the format was unsupported, or the width or height were out of range; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
