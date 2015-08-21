@@ -39,8 +39,8 @@ This function is used to optimize images for faster ''repeat'' blitting.  This i
 
 
 == Related Functions ==
-:[[SDL_CreateRGBSurface]]
 :[[SDL_ConvertSurfaceFormat]]
+:[[SDL_CreateRGBSurface]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
