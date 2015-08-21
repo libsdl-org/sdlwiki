@@ -22,7 +22,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-If '''window''' is NULL, this function will return immediately after setting the SDL error message to "Invalid window". See [[SDL_GetError]].
+If '''window''' is NULL, this function will return immediately after setting the SDL error message to "Invalid window". See [[SDL_GetError]]().
 
 == Related Functions ==
 :[[SDL_CreateWindow]]
