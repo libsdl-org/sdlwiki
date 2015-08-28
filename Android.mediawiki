@@ -22,7 +22,7 @@ PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 ```
-* Edit ```build-scripts/androidbuild.sh```, find the {{{android update project}}} line, and add {{{--target android-XX}}} to it (replace XX with your installed API number above).
+* Edit ```build-scripts/androidbuild.sh```, find the {{{android update project}}} line (or {{{$ANDROID update project}}} since 2.0.4), and add {{{--target android-XX}}} to it (replace XX with your installed API number above).
 
 == Simple builds ==
 
@@ -74,6 +74,7 @@ cd /usr/src/SDL2/
 cd build-scripts/
 hg revert --all  # remove traces of previous builds
 # edit androidbuild.sh and modify android update project --target android-XX
+# (or since 2.0.4: $ANDROID update project --target android-XX)
 ./androidbuild.sh org.libsdl /dev/null
 # doesn't matter if the actual build fails, it's just for setup
 cd ../build/org.libsdl/
