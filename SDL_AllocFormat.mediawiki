@@ -19,6 +19,8 @@ SDL_PixelFormat* SDL_AllocFormat(Uint32 pixel_format)
 == Return Value ==
 Returns the new [[SDL_PixelFormat]] structure or NULL on failure; call [[SDL_GetError]]() for more information.
 
+Returned structured may come from a shared global cache (i.e. not newly allocated), and hence should not be modified, especially the palette. Weird errors such as ```Blit combination not supported``` may occur.
+
 == Code Examples ==
 ```c++
 You can add your code example here
