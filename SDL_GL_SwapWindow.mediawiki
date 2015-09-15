@@ -24,6 +24,7 @@ You can add your code example here
 == Remarks ==
 This is used with double-buffered OpenGL contexts, which are the default.
 
+On OS X make sure you bind 0 to the draw framebuffer before swapping the window, otherwise nothing will happen. [http://renderingpipeline.com/2012/05/nsopenglcontext-flushbuffer-might-not-do-what-you-think/ more info]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
