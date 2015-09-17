@@ -30,11 +30,11 @@ You can add your code example here
 ```
 
 == Remarks ==
-[[SDL_Color]] and SDL_<code></code>Colour are interchangeable.
+[[SDL_Color]] and SDL_Colour are interchangeable.
 
-If you have RGB color values you would use decimal values in this struct.  
- ''Example'': orange = 255,165,0 so set r=255, g=165, b=0, a=255.  
-If you have HTML color codes you would use hexidecimal values in this struct.  
+If you have RGB color values you would use decimal values in this struct.
+ ''Example'': orange = 255,165,0 so set r=255, g=165, b=0, a=255.
+If you have HTML color codes you would use hexidecimal values in this struct.
  ''Example'': orange = #FFA500 so set r=0xFF, g=0xA5, b=0x00, a=0xFF.
 
 [[SDL_Color]] describes a color in a format independent way. You can convert an [[SDL_Color]] to a pixel value for a certain pixel format using [[SDL_MapRGB]]().
