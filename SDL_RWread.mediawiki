@@ -35,9 +35,9 @@ Returns the number of objects read, or 0 at error or end of file; call [[SDL_Get
 ```c++
 SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
 if (rw != NULL) {
-  extern Uint8 buf[256];
-  SDL_RWread(rw, buf, sizeof (buf), 1);
-  SDL_RWclose(rw);
+    extern Uint8 buf[256];
+    SDL_RWread(rw, buf, sizeof (buf), 1);
+    SDL_RWclose(rw);
 }
 ```
 
@@ -46,7 +46,7 @@ Read a complete file in memory (assuming size can be detected) (from [https://gi
 char* file_read(const char* filename) {
 	SDL_RWops *rw = SDL_RWFromFile(filename, "rb");
 	if (rw == NULL) return NULL;
-	
+
 	Sint64 res_size = SDL_RWsize(rw);
 	char* res = (char*)malloc(res_size + 1);
 
@@ -62,7 +62,7 @@ char* file_read(const char* filename) {
 		free(res);
 		return NULL;
 	}
-	
+
 	res[nb_read_total] = '\0';
 	return res;
 }
@@ -71,7 +71,7 @@ char* file_read(const char* filename) {
 == Remarks ==
 This function reads up to '''maxnum''' objects each of size '''size''' from the data source to the area pointed at by '''ptr'''. This function may read less objects than requested. It will return zero when there has been an error or the data stream is completely read.
 
-SDL_RWread is actually a macro that calls the [[SDL_RWops]]'s '''read''' method appropriately, to simplify application development.
+SDL_RWread() is actually a macro that calls the [[SDL_RWops]]'s '''read''' method appropriately, to simplify application development.
 
 '''More Examples'''
 ```#! highlight cpp
