@@ -49,10 +49,10 @@ This flag maps to GLX_CONTEXT_ROBUST_ACCESS_BIT_ARB in the [http://www.opengl.or
 
 === SDL_GL_CONTEXT_RESET_ISOLATION_FLAG ===
 
-This flag maps to GLX_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_robustness_isolation.txt GLX_ARB_robustness_isolation] extension for X11 and WGL_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_robustness_isolation.txt WGL_ARB_create_context_robustness] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality. This flag is intended to require the GL to make promises about what to do in the face of driver or hardware failure.
+This flag maps to GLX_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/glx_robustness_isolation.txt GLX_ARB_robustness_isolation] extension for X11 and WGL_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.org/registry/specs/ARB/wgl_robustness_isolation.txt WGL_ARB_robustness_isolation] extension for Windows. This flag is currently ignored on other targets that don't support equivalent functionality. This flag is intended to require the GL to make promises about what to do in the face of driver or hardware failure.
 
 == Related Enumerations ==
-:[[SDL_GLattr]] 
+:[[SDL_GLattr]]
 
 == Related Functions ==
 :[[SDL_GL_GetAttribute]]
