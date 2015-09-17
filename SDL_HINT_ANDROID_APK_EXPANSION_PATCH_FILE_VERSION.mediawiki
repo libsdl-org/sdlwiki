@@ -31,9 +31,11 @@ You can add your code example here
 
 
 == Remarks ==
-''You can add useful comments here''
+This hint must be set together with the hint [[SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION]].
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+If both hints were set then [[SDL_RWFromFile]]() will look into expansion files after a given relative path was not found in the internal storage and assets.
+
+By default this hint is not set and the APK expansion files are not searched.
 
 
 == Version ==
