@@ -232,7 +232,7 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
 
 
 == Remarks ==
-If provided, texw and texh will be filled with the width and height values suitable for the provided texture.
+If provided, '''texw''' and '''texh''' will be filled with the width and height values suitable for the provided texture.
 In most cases, both will be 1.0, however, on systems that support the GL_ARB_texture_rectangle extension, these values will actually be the pixel width and height used to create the texture, so this factor needs to be taken into account when providing texture coordinates to OpenGL.
 
 You need a renderer to create a [[SDL_Texture]], therefore you can only use this function with an implicit OpenGL context from [[SDL_CreateRenderer]](), not with your own OpenGL context.
