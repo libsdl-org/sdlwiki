@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetScancodeName =
-Use this function to get a human-readable name for a scancode.
+Use this function to get a human-readable name for a scancode.  WARNING: this name is by design not stable across platforms, e.g. the name for SDL_SCANCODE_LGUI is "Left GUI" under Linux but "Left Windows" under Windows, and some scancodes like SDL_SCANCODE_NONUSBACKSLASH don't have any name at all.  There are even scancodes that share names, e.g. SDL_SCANCODE_RETURN and SDL_SCANCODE_RETURN2 (both called "Return").  This function is therefore unsuitable for creating a stable cross-platform two-way mapping between strings and scancodes.
 
 
 == Syntax ==
