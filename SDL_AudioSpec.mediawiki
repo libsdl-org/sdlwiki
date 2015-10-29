@@ -45,7 +45,7 @@ A structure that contains the audio output format. It also contains a callback t
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
 
-SDL_zero(want);
+SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
 want.freq = 48000;
 want.format = AUDIO_F32;
 want.channels = 2;
