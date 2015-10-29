@@ -22,8 +22,8 @@ You can add your code example here
 This functions returns NULL if there was not enough memory left for a copy of the clipboard's content.
 
 == Related Functions ==
-:[[SDL_SetClipboardText]]
 :[[SDL_HasClipboardText]]
+:[[SDL_SetClipboardText]]
 
 ----
 [[CategoryAPI]], [[CategoryClipboard]]
