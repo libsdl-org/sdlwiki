@@ -30,7 +30,7 @@ This function returns a negative error code on failure to open the audio device 
 ```c++
 SDL_AudioSpec want, have;
 
-SDL_zero(want);
+SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
 want.freq = 48000;
 want.format = AUDIO_F32;
 want.channels = 2;
