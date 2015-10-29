@@ -42,7 +42,7 @@ For compatibility with SDL 1.2, this will never return 1, since SDL reserves tha
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
 
-SDL_zero(want);
+SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
 want.freq = 48000;
 want.format = AUDIO_F32;
 want.channels = 2;
