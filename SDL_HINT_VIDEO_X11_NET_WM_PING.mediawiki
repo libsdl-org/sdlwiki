@@ -1,0 +1,45 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_X11_NET_WM_PING =
+A hint that specifies whether the X11 _NET_WM_PING protocol should be supported.
+
+
+
+
+== Values ==
+{|
+|0
+|disable _NET_WM_PING
+|-
+|1
+|enable _NET_WM_PING
+|}
+
+
+== Default ==
+By default SDL will use _NET_WM_PING, but for applications that know they will not always be able to respond to ping requests in a timely manner they can turn it off to avoid the window manager thinking the app is hung.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The hint is checked in [[SDL_CreateWindow]]().
+
+
+== Version ==
+This hint is available since SDL 2.0.4.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
