@@ -37,7 +37,6 @@ Returns a pointer to the created texture or NULL if no rendering context was act
 
 == Code Examples ==
 ```c++
-#include<stdlib.h>
 #include"SDL.h"
 // Moving Rectangle
 int main()
