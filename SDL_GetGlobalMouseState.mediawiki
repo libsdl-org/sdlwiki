@@ -44,7 +44,7 @@ You can add your code example here
 This works just like [[SDL_GetMouseState]](), but the coordinates will be reported relative to the top-left of the desktop. This can be useful if you need to track the mouse outside of a specific window and [[SDL_CaptureMouse]]() doesn't fit your needs. For example, it could be useful if you need to track the mouse while dragging a window, where
 coordinates relative to a window might not be in sync at all times.
 
-/!\ [[SDL_GetMouseState]]() returns the mouse position as SDL understands it from the last pump of the event queue. This function, however, queries the OS for the current mouse position, and as such, might be a slightly less efficient function. Unless you know what you're doing and have a good reason to use this function, you probably want [[SDL_GetMouseState]]() instead.
+{i} Note: [[SDL_GetMouseState]]() returns the mouse position as SDL understands it from the last pump of the event queue. This function, however, queries the OS for the current mouse position, and as such, might be a slightly less efficient function. Unless you know what you're doing and have a good reason to use this function, you probably want [[SDL_GetMouseState]]() instead.
 
 == Version ==
 This function is available since SDL 2.0.4.
