@@ -34,7 +34,8 @@ printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 0 */
 If joystick events are disabled, you must call [[SDL_JoystickUpdate]]() yourself and manually check the state of the joystick when you want joystick information.
 
 Note: It is recommended that you leave Joystick Event Handling enabled.
-Warning: Calling this function may delete all events currently in SDL's event queue.
+
+/!\ WARNING: Calling this function may delete all events currently in SDL's event queue.
 
 == Related Functions ==
 :[[SDL_GameControllerEventState]]
