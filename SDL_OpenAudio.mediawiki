@@ -66,7 +66,6 @@ With two notable exceptions:
 : [[SDL_LockAudio]]
 : [[SDL_PauseAudio]]
 : [[SDL_UnlockAudio]]
-: [[SDL_zero]]
 
 
 ----
