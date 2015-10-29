@@ -122,7 +122,7 @@ Make sure that you have XFree86 4.01 or newer, run the program as root, set the 
 == When I specify SDL_FULLSCREEN in X11, the screen goes black and my window is centered in the middle, instead of covering the whole screen! ==
 X needs to be able to switch to the desired resolution. For this to work, your monitor must support the resolution, and you need to have the resolution listed in your X server configuration.
 
-The following example is taken from my config for XFree86 4.0.1, but 3.3.x is similiar. Note that if your monitor isn't capable of using these video modes, the X server will drop these modes from the list of available video modes.
+The following example is taken from my config for XFree86 4.0.1, but 3.3.x is similar. Note that if your monitor isn't capable of using these video modes, the X server will drop these modes from the list of available video modes.
 Example:
 
 ```
