@@ -20,7 +20,7 @@ SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 : This initializes the 3 default subsystems plus the [[CategoryVideo|Video]] and [[CategoryAudio|Audio]] subsystems.
 :
 
-It should be noted that on some operating systems, [[SDL_Init]]() will fail if SDL_main() has not been defined as the entry point for the program.  Calling [[SDL_SetMainReady]]() prior to [[SDL_Init]]() will circumvent this failure condition, however, users should be careful when calling [[SDL_SetMainReady]]() as improper initalization may cause crashes and hard to diagnose problems.
+It should be noted that on some operating systems, [[SDL_Init]]() will fail if SDL_main() has not been defined as the entry point for the program.  Calling [[SDL_SetMainReady]]() prior to [[SDL_Init]]() will circumvent this failure condition, however, users should be careful when calling [[SDL_SetMainReady]]() as improper initialization may cause crashes and hard to diagnose problems.
 
 === Introduction to Shut Down ===
 [[SDL_Quit]]() should be called before an SDL application exits to safely shut down all subsystems, including the default ones.
