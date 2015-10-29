@@ -30,7 +30,7 @@ You can add your code example here
 == Remarks ==
 See [[SDL_Scancode]] for details.
 
-/!\ WARNING: This name is by design not stable across platforms, e.g. the name for SDL_SCANCODE_LGUI is "Left GUI" under Linux but "Left Windows" under Windows, and some scancodes like SDL_SCANCODE_NONUSBACKSLASH don't have any name at all.  There are even scancodes that share names, e.g. SDL_SCANCODE_RETURN and SDL_SCANCODE_RETURN2 (both called "Return").  This function is therefore unsuitable for creating a stable cross-platform two-way mapping between strings and scancodes.
+/!\ WARNING: The returned name is by design not stable across platforms, e.g. the name for SDL_SCANCODE_LGUI is "Left GUI" under Linux but "Left Windows" under Microsoft Windows, and some scancodes like SDL_SCANCODE_NONUSBACKSLASH don't have any name at all.  There are even scancodes that share names, e.g. SDL_SCANCODE_RETURN and SDL_SCANCODE_RETURN2 (both called "Return").  This function is therefore unsuitable for creating a stable cross-platform two-way mapping between strings and scancodes.
 
 == Related Functions ==
 :[[SDL_GetScancodeFromKey]]
