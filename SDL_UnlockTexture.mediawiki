@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 = SDL_UnlockTexture =
-Use this function to unlock a texture, uploading the changes to video memory, if needed. ''' Warning: See''' [http://bugzilla.libsdl.org/show_bug.cgi?id=1586 Bug No. 1586] ''' before using this function!<br/>'''
+Use this function to unlock a texture, uploading the changes to video memory, if needed.
 
 
 == Syntax ==
@@ -20,7 +20,7 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 You can add your code example here
 ```
 == Remarks ==
-''You can add useful comments here''
+''' Warning: See''' [http://bugzilla.libsdl.org/show_bug.cgi?id=1586 Bug No. 1586] ''' before using this function!<br/>'''
 
 == Related Functions ==
 : [[SDL_LockTexture]]
