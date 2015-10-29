@@ -41,7 +41,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-WARNING: This is a very slow operation, and should not be used frequently. 
+/!\ WARNING: This is a very slow operation, and should not be used frequently.
 
 <span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
