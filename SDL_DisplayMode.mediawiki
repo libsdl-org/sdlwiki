@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_DisplayMode =
-A structure that describes a display mode.
+A structure that contains the description of a display mode.
 
 
 == Data Fields ==
@@ -38,7 +38,7 @@ A structure that describes a display mode.
     Uint32 f;
 
     SDL_Log("SDL_GetNumVideoDisplays(): %i", SDL_GetNumVideoDisplays());
-    
+
     display_mode_count = SDL_GetNumDisplayModes(display_in_use);
     if (display_mode_count < 1) {
         SDL_Log("SDL_GetNumDisplayModes failed: %s", SDL_GetError());
@@ -52,7 +52,7 @@ A structure that describes a display mode.
             return 1;
         }
         f = mode.format;
-        
+
         SDL_Log("Mode %i\tbpp %i\t%s\t%i x %i", i,
         SDL_BITSPERPIXEL(f), SDL_GetPixelFormatName(f), mode.w, mode.h);
     }
