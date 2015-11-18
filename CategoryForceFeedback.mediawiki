@@ -91,7 +91,7 @@ int test_haptic( SDL_Joystick * joystick ) {
  return 0; // Success
 }
 ```
-You can find more information in this blog by Edgar Simo Serra: [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ SDL Haptic In Depth]
+You can find more information in this blog by Edgar Simo Serra: [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ SDL Haptic In Depth]([https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic/ Archive])
 
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
