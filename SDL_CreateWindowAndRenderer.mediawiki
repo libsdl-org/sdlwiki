@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
         return 3;
     }
     texture = SDL_CreateTextureFromSurface(renderer, surface);
-    if (!surface) {
+    if (!texture) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create texture from surface: %s", SDL_GetError());
         return 3;
     }
