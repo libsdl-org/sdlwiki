@@ -13,7 +13,7 @@ Use this function to get the SDL_GameController associated with an instance id.
 
 == Syntax ==
 ```c++
-SDL_GameController SDL_GameControllerFromInstanceID(SDL_JoystickID joyid)
+SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid)
 ```
 
 
