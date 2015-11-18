@@ -55,17 +55,25 @@ int main(int argc, char *argv[])
     SDL_Event event;
 
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s", SDL_GetError());
         return 3;
     }
 
     if (SDL_CreateWindowAndRenderer(320, 240, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
         return 3;
     }
 
     surface = SDL_LoadBMP("sample.bmp");
+    if (!surface) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create surface from image: %s", SDL_GetError());
+        return 3;
+    }
     texture = SDL_CreateTextureFromSurface(renderer, surface);
+    if (!surface) {
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create texture from surface: %s", SDL_GetError());
+        return 3;
+    }
     SDL_FreeSurface(surface);
 
     while (1) {
