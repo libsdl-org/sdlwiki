@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
                 return 3;
         }
 
-        if(SDL_CreateWindowAndRenderer(320,240,SDL_WINDOW_RESIZABLE,&window,&renderer)) {
+        if (SDL_CreateWindowAndRenderer(320, 240, SDL_WINDOW_RESIZABLE, &window, &renderer)) {
                 SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s\n", SDL_GetError());
                 return 3;
         }
@@ -67,10 +67,9 @@ int main(int argc, char *argv[])
         surface = SDL_LoadBMP("sample.bmp");
         texture = SDL_CreateTextureFromSurface(renderer, surface);
         SDL_FreeSurface(surface);
-        while(1) {
-
+        while (1) {
                 SDL_PollEvent(&event);
-                if(event.type == SDL_QUIT)
+                if (event.type == SDL_QUIT)
                         break;
                 SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
                 SDL_RenderClear(renderer);
