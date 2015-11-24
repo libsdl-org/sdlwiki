@@ -30,7 +30,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If you do not need the value for one of the dimensions a NULL may be passed in the X or Y parameter.
 
 == Related Functions ==
 :[[SDL_SetWindowPosition]]
