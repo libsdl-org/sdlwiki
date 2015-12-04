@@ -24,10 +24,10 @@ void SDL_GetWindowMinimumSize(SDL_Window* window,
 |the window to query
 |-
 |'''w'''
-|a pointer filled in with the minimum width of the window
+|a pointer filled in with the minimum width of the window, may be NULL
 |-
 |'''h'''
-|a pointer filled in with the minimum height of the window
+|a pointer filled in with the minimum height of the window, may be NULL
 |}
 
 
