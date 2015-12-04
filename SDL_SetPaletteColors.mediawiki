@@ -40,7 +40,6 @@ You can add your code example here
 == Related Functions ==
 :[[SDL_AllocPalette]]
 :[[SDL_CreateRGBSurface]]
-:[[SDL_RenderCopy]]
 
 ----
 [[CategoryAPI]], CategoryPixels
