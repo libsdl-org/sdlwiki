@@ -38,6 +38,7 @@ You can add your code example here
 This function is available since SDL 2.0.4.
 
 == Related Functions ==
+:[[SDL_GetWindowGrab]]
 :[[SDL_SetWindowGrab]]
 <!-- #Remove this section if empty -->
 
