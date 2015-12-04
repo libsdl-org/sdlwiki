@@ -159,4 +159,8 @@ Many applications using SDL are games or screensavers or media players where the
 
 You can disable this behavior by setting the environment variable:
 SDL_VIDEO_ALLOW_SCREENSAVER=1
-This can be set globally for the user or on a per-application basis in code. 
+This can be set globally for the user or on a per-application basis in code.
+
+In SDL 2.0.2 this can also be changed by setting the hint [[SDL_HINT_VIDEO_ALLOW_SCREENSAVER]].
+
+Additionally, SDL 2.0 provides the function [[SDL_EnableScreenSaver]]().
