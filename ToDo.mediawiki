@@ -121,6 +121,8 @@ These functions are currently documented as "draft" only and need improvements:
 
 ==== SDL_rwops.h ====
 
+These functions are currently documented as "draft" only and need improvements:
+
 * [[SDL_ReadU8]]
 * [[SDL_WriteU8]]
 
@@ -133,6 +135,8 @@ These functions need testing on all supported platforms and possibly implementat
 * [[SDL_GetShapedWindowMode]]
 
 ==== SDL_system.h ====
+
+These functions are currently documented as "draft" only and need improvements:
 
 * [[SDL_iPhoneSetAnimationCallback]]
 * [[SDL_iPhoneSetEventPump]]
