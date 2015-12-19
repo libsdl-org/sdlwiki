@@ -6,7 +6,8 @@ This function is a legacy means of opening the audio device. New programs might 
 
 == Syntax ==
 ```c++
-int SDL_OpenAudio(SDL_AudioSpec* desired, SDL_AudioSpec* obtained)
+int SDL_OpenAudio(SDL_AudioSpec* desired,
+                  SDL_AudioSpec* obtained)
 ```
 
 == Function Parameters ==
