@@ -45,7 +45,7 @@ There are a number of SDL tutorials available from different sources.
 : Using SDL 2.0 beta with OpenGL 3
 
 * [http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_(C_/_SDL) OpenGL 3.2 and SDL]
-: Using SDL 1.3 alpha with OpenGL 3.2 Context.
+: Using SDL 1.3 alpha with OpenGL 3.2 Context
 
 * [http://iphonesdkdev.blogspot.com/2009/04/opengl-es-for-iphone-simple-tutorial.html OpenGL ES for iPhone : A Simple Tutorial]
 : A brief introduction to OpenGL ES
