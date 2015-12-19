@@ -13,10 +13,10 @@ SDL_PowerState SDL_GetPowerInfo(int* secs, int* pct)
 == Function Parameters ==
 {|
 |'''secs'''
-|seconds of battery life left. You can pass a NULL here if you don't care. Will return -1 if we can't determine a value, or we're not running on a battery
+|seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
 |-
 |'''pct'''
-|percentage of battery life left, between 0 and 100. You can pass a NULL here if you don't care. Will return -1 if we can't determine a value, or we're not running on a battery
+|percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
 |}
 
 == Return Value ==
@@ -30,7 +30,7 @@ Both parameters will return -1 if a value can't be determined, or if not running
 
 == Code Examples ==
 ```c++
-int secs, pct; 
+int secs, pct;
 if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
     printf("Battery is draining: ");
     if (secs == -1) {
