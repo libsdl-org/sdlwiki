@@ -7,7 +7,8 @@ Use this function to pause and unpause audio playback on a specified device.
 
 == Syntax ==
 ```c++
-void SDL_PauseAudioDevice(SDL_AudioDeviceID dev, int pause_on)
+void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
+                          int               pause_on)
 ```
 
 == Function Parameters ==
