@@ -7,7 +7,8 @@ Use this function to run a specific filter function on the current event queue, 
 
 == Syntax ==
 ```c++
-void SDL_FilterEvents(SDL_EventFilter filter, void* userdata)
+void SDL_FilterEvents(SDL_EventFilter filter,
+                      void*           userdata)
 ```
 
 == Function Parameters ==
