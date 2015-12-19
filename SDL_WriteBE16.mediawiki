@@ -7,7 +7,8 @@ Use this function to write 16 bits in native format to a [[SDL_RWops]] as big-en
 
 == Syntax ==
 ```c++
-size_t SDL_WriteBE16(SDL_RWops* dst, Uint16 value)
+size_t SDL_WriteBE16(SDL_RWops* dst,
+                     Uint16     value)
 ```
 
 == Function Parameters ==
