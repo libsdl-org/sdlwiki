@@ -6,7 +6,9 @@ Use this function to bind an OpenGL/ES/ES2 texture to the current context for us
 
 == Syntax ==
 ```c++
-int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh)
+int SDL_GL_BindTexture(SDL_Texture* texture,
+                       float*       texw,
+                       float*       texh)
 ```
 == Function Parameters ==
 {|
