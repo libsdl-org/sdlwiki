@@ -23,7 +23,7 @@ Estas son las características nuevas más importantes de SDL 2.0
 * Soporte de pantallas múltiples
 * Soporte de dispositivos de audio múltiples
 * Soporte de Android e iOS
-* Soporte de Emscripten e Native Client 
+* Soporte de Emscripten e Native Client
 * API 2D simple que puede utilizar Direct3D, OpenGL, OpenGL ES o renderizado por software.
 * Soporte Force Feedback en Windows, Mac OS X y Linux
 * Soporte XInput y XAudio2 en Windows
@@ -429,7 +429,7 @@ A partir de la versión 2.0.21 (Mayo 2010), es posible compilar [http://www.ferz
 * SDL_Surface/2D rendering: todavía hay surfaces, pero es recomendable que uses [[SDL_Texture|SDL_Textures]] con un renderer 2D acelerado ([[SDL_CreateRenderer]]()) de ser posible.
 * SDL_VideoInfo: usa [[SDL_GetRendererInfo]]()/[[SDL_GetRenderDriverInfo]]()
 * SDL_GetCurrentVideoDisplay(): usa [[SDL_GetWindowDisplayIndex]]()
-* evento SDL_VIDEORESIZE: usa su equivalente [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZE]]
+* evento SDL_VIDEORESIZE: usa su equivalente [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZED]]
 
 === El resto ===
 
