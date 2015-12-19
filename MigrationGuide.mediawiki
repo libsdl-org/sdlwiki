@@ -448,7 +448,7 @@ A short cheat sheet where some of the old functions and other stuff went:
 * SDL_Surface/2D rendering: surfaces still exist, but it is recommended that instead of using SDL_Surfaces, you use [[SDL_Texture]]s with an 2D accelerated renderer ([[SDL_CreateRenderer]]()) where possible
 * SDL_VideoInfo: use [[SDL_GetRendererInfo]]()/[[SDL_GetRenderDriverInfo]]() instead
 * SDL_GetCurrentVideoDisplay(): use [[SDL_GetWindowDisplayIndex]]() instead
-* SDL_VIDEORESIZE event: the new equivalent is [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZE]]
+* SDL_VIDEORESIZE event: the new equivalent is [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZED]]
 
 
 === Other stuff ===
