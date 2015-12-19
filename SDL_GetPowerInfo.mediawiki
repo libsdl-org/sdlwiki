@@ -7,7 +7,8 @@ Use this function to get the current power supply details.
 
 == Syntax ==
 ```c++
-SDL_PowerState SDL_GetPowerInfo(int* secs, int* pct)
+SDL_PowerState SDL_GetPowerInfo(int* secs,
+                                int* pct)
 ```
 
 == Function Parameters ==
