@@ -24,6 +24,6 @@
 : The included CD contains an SDL Primer by Ernest Pazera.
 : ''"SDL, a cross-platform graphics library, is used for the demos and the coverage of that is almost worth the price of admission. (though I recommend Focus on SDL in addition)"'' ~-(Amazon.com)-~
 
-* [http://www.nostarch.com/plg.htm Programming Linux Games] by Loki Software, Inc. with John R. Hall
+* [http://www.nostarch.com/plg.htm Programming Linux Games] ([https://web.archive.org/web/20150626175448/http://www.nostarch.com/plg.htm Archive]) by Loki Software, Inc. with John R. Hall
 : Building Multimedia Applications with SDL, OpenAL^(tm)^, and Other APIs
 : ''"This is the sort of book that could kickstart a new movement in Linux game development."'' ~-(Slashdot)-~
