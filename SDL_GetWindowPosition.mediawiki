@@ -18,10 +18,10 @@ void SDL_GetWindowPosition(SDL_Window* window,
 |the window to query
 |-
 |'''x'''
-|a pointer filled in with the x position of the window, may be NULL
+|a pointer filled in with the x position of the window, in screen coordinates, may be NULL
 |-
 |'''y'''
-|a pointer filled in with the y position of the window, may be NULL
+|a pointer filled in with the y position of the window, in screen coordinates, may be NULL
 |}
 
 == Code Examples ==
