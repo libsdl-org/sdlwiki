@@ -12,7 +12,7 @@
 : An introduction to game programming using SDL and OpenGL on Windows.
 : ''"As you work through the book, you’ll build the !SuperAsteriodArena game, beginning with engine creation and 3D programming with SDL and OpenGL. From there you’ll move on to animation effects, audio, collision detection, networking, and finalizing the game. A variety of tools are used throughout, including Visual Studio and OpenGL, SDL, Autodesk 3ds Max, and the Audacity sound tool. "'' ~-(Amazon.com)-~
 
-* [http://www.amazon.com/Teach-Yourself-Games-Programming-Computers/dp/0071544755 Teach Yourself Games Programming] by Alan Thorne
+* [http://www.amazon.com/Teach-Yourself-Games-Programming-Computers/dp/0071544755 Teach Yourself Games Programming] by Alan Thorn
 : Check out chapters 4 and 6 especially!
 : ''"This book provides an overview of game production using C++ and either VC++2005 or Codeblocks and the SDL library."'' ~-(Amazon.com UK)-~
 
