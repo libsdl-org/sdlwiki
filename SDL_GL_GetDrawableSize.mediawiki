@@ -6,7 +6,7 @@
 
 
 = SDL_GL_GetDrawableSize =
-Use this function to get the size of a window's underlying drawable (for use with glViewport).
+Use this function to get the size of a window's underlying drawable in pixels (for use with glViewport).
 
 
 
@@ -25,10 +25,10 @@ void SDL_GL_GetDrawableSize(SDL_Window* window,
 |the window from which the drawable size should be queried
 |-
 |'''w'''
-|a pointer to variable for storing the width, may be NULL
+|a pointer to variable for storing the width in pixels, may be NULL
 |-
 |'''h'''
-|a pointer to variable for storing the height, may be NULL
+|a pointer to variable for storing the height in pixels, may be NULL
 |}
 
 
