@@ -18,10 +18,10 @@ void SDL_SetWindowSize(SDL_Window* window,
 |the window to change
 |-
 |'''w'''
-|the width of the window in pixels
+|the width of the window in pixels, in screen coordinates, must be > 0
 |-
 |'''h'''
-|the height of the window in pixels
+|the height of the window in pixels, in screen coordinates, must be > 0
 |}
 
 == Code Examples ==
