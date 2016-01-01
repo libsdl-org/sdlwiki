@@ -7,7 +7,7 @@
 
 
 = SDL_GetRendererOutputSize =
-Use this function to get the output size of a rendering context.
+Use this function to get the output size in pixels of a rendering context.
 
 
 
