@@ -29,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+The current drawing color is set by [[SDL_SetRenderDrawColor]], and the color's alpha value is ignored unless blending is enabled with the appropriate call to [[SDL_SetRenderDrawBlendMode]].
 
 == Related Functions ==
 :[[SDL_RenderDrawLine]]
@@ -41,6 +41,7 @@ You can add your code example here
 :[[SDL_RenderFillRects]]
 :[[SDL_RenderPresent]]
 :[[SDL_SetRenderDrawColor]]
+:[[SDL_SetRenderDrawBlendMode]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
