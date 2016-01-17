@@ -12,12 +12,13 @@ The functions in this category are used to set up SDL for use and generally have
 === Introduction to Initialization ===
 To begin using SDL in your program [[SDL_Init]]() must be called before most other SDL functions.  The role of [[SDL_Init]]() is to properly initialize the SDL library and start each of the various subsystems requested as part of the call.
 
-: {i} The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Multiple subsystems may be OR'd together.
+: {i} The [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  To initialize other subsystems you must specifically call them.  Multiple subsystems may be OR'd together.
 : ''Example:''
 : ```
 SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO);
 ```
-: This initializes the 3 default subsystems plus the [[CategoryVideo|Video]] and [[CategoryAudio|Audio]] subsystems.
+: This initializes the 2 default subsystems plus the [[CategoryVideo|Video]], [[CategoryAudio|Audio]], and [[CategoryEvents|Event Handling]] subsystems.
+: The event subsystem is initialized implicitly by the [[CategoryVideo|Video]] subsystem.
 :
 
 It should be noted that on some operating systems, [[SDL_Init]]() will fail if SDL_main() has not been defined as the entry point for the program.  Calling [[SDL_SetMainReady]]() prior to [[SDL_Init]]() will circumvent this failure condition, however, users should be careful when calling [[SDL_SetMainReady]]() as improper initialization may cause crashes and hard to diagnose problems.
