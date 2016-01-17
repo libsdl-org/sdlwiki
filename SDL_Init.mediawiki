@@ -106,6 +106,8 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
+[[SDL_Init]] simply forwards to calling [[SDL_InitSubSystem]].  Therefore, the two may be used interchangeably. Though for readability of your code [[SDL_InitSubSystem]] might be preferred.
+ 
 The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryThread|Threading]] subsystems are initialized by default.  You must specifically initialize other subsystems if you use them in your application.
 
 '''flags''' may be any of the following OR'd together:
@@ -120,7 +122,7 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |audio subsystem
 |-
 |'''SDL_INIT_VIDEO'''
-|video subsystem
+|video subsystem. Automatically initializes the SDL_INIT_EVENTS subsystem
 |-
 |'''SDL_INIT_JOYSTICK'''
 |joystick subsystem
@@ -129,7 +131,7 @@ The [[CategoryEvents|Event Handling]], [[CategoryIO|File I/O]], and [[CategoryTh
 |haptic (force feedback) subsystem
 |-
 |'''SDL_INIT_GAMECONTROLLER'''
-|controller subsystem
+|controller subsystem.  Automatically initializes the SDL_INIT_JOYSTICK subsystem
 |-
 |'''SDL_INIT_EVENTS'''
 |events subsystem
