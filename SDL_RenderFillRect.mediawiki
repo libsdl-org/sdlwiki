@@ -40,8 +40,8 @@ The current drawing color is set by [[SDL_SetRenderDrawColor]], and the color's 
 :[[SDL_RenderDrawRects]]
 :[[SDL_RenderFillRects]]
 :[[SDL_RenderPresent]]
-:[[SDL_SetRenderDrawColor]]
 :[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
