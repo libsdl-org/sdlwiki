@@ -1,0 +1,66 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetDisplayUsableBounds =
+Use this function to get the usable desktop area represented by a display, with the primary display located at 0,0.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_GetDisplayUsableBounds(int       displayIndex,
+                               SDL_Rect* rect)
+```
+
+
+== Function Parameters ==
+{|
+|'''displayIndex'''
+|the index of the display to query the usable bounds from
+|-
+|'''rect'''
+|the [[SDL_Rect]] structure filled in with the display bounds
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This is the same area as [[SDL_GetDisplayBounds]]() reports, but with portions reserved by the system removed. For example, on Apple Mac OS X, this subtracts the area occupied by the menu bar and dock.
+
+Setting a window to be fullscreen generally bypasses these unusable areas, so these are good guidelines for the maximum space available to a non-fullscreen window.
+
+The parameter '''rect''' is ignored if it is NULL.
+
+This function also returns -1 if the parameter '''displayIndex''' is out of range.
+
+
+== Version ==
+This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+
+
+== Related Functions ==
+:[[SDL_GetDisplayBounds]]
+:[[SDL_GetNumVideoDisplays]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
