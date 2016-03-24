@@ -13,7 +13,7 @@ Use this function to get the implementation dependent name for the game controll
 
 == Syntax ==
 ```c++
-const char *SDL_GameControllerNameForIndex(int joystick_index)
+const char* SDL_GameControllerNameForIndex(int joystick_index)
 ```
 
 
