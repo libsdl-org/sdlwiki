@@ -1,0 +1,75 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetWindowBordersSize =
+Use this function to get the size of a window's borders (decorations) around the client area.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_GetWindowBordersSize(SDL_Window* window,
+                             int*        top,
+                             int*        left,
+                             int*        bottom,
+                             int*        right)
+```
+
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to query the size values of the border (decorations) from
+|-
+|'''top'''
+|pointer to variable for storing the size of the top border; NULL is permitted
+|-
+|'''left'''
+|pointer to variable for storing the size of the left border; NULL is permitted
+|-
+|'''bottom'''
+|pointer to variable for storing the size of the bottom border; NULL is permitted
+|-
+|'''right'''
+|pointer to variable for storing the size of the right border; NULL is permitted
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+Note: If this function fails (returns -1), the size values will be initialized to 0, 0, 0, 0 (if a non-NULL pointer is provided), as if the window in question was borderless.
+
+This function also returns -1 if getting the information is not supported.
+
+This function is only supported on X11.
+
+
+== Version ==
+This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+
+
+== Related Functions ==
+:[[SDL_GetWindowSize]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
