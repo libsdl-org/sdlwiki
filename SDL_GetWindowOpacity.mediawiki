@@ -1,0 +1,65 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetWindowOpacity =
+Use this function to get the opacity of a window.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_GetWindowOpacity(SDL_Window* window,
+                         float*      opacity)
+```
+
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window to get the current opacity value from
+|-
+|'''opacity'''
+|the float filled in (0.0f - transparent, 1.0f - opaque)
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+If transparency isn't supported on this platform, opacity will be reported as 1.0f without error.
+
+The parameter '''opacity''' is ignored if it is NULL.
+
+This function also returns -1 if an invalid window was provided.
+
+This function is only supported on DirectFB, X11, Cocoa (Apple Mac OS X) and Microsoft Windows.
+
+
+== Version ==
+This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+
+
+== Related Functions ==
+:[[SDL_SetWindowOpacity]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategoryVideo]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
