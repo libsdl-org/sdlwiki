@@ -14,7 +14,7 @@ Use this function to check whether the screen keyboard is shown for given window
 
 == Syntax ==
 ```c++
-SDL_bool SDL_IsScreenKeyboardShown(SDL_Window *window)
+SDL_bool SDL_IsScreenKeyboardShown(SDL_Window* window)
 ```
 
 
