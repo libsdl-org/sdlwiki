@@ -13,7 +13,7 @@ Use this function to open a gamecontroller for use.
 
 == Syntax ==
 ```c++
-SDL_GameController *SDL_GameControllerOpen(int joystick_index)
+SDL_GameController* SDL_GameControllerOpen(int joystick_index)
 ```
 
 == Function Parameters ==
