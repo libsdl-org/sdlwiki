@@ -10,7 +10,7 @@ SDL 1.2 isn't covered here. It can be installed on legacy platforms that SDL2 do
 
 == Static linking ==
 
-SDL 2.0, unlike 1.2, uses [[FAQLicensing|the zlib license]], which means you can build a static library linked directly to your program, or just compile SDL's C code directly as part of your project. You are completely allowed to do that. However, we encourage you to ''not'' do this for various technical and moral reasons, and won't cover the details of how to in this document. You may not statically link SDL 1.2 in most cases due to its LGPL licensing, but you should really stop using SDL 1.2 anyhow.
+SDL 2.0, unlike 1.2, uses [FAQLicensing|the zlib license]], which means you can build a static library linked directly to your program, or just compile SDL's C code directly as part of your project. You are completely allowed to do that. However, we encourage you to ''not'' do this for various technical and moral reasons, and won't cover the details of how to in this document (see [[https://hg.libsdl.org/SDL/file/tip/docs/README-dynapi.md docs/README-dynapi.md]). You may not statically link SDL 1.2 in most cases due to its LGPL licensing, but you should really stop using SDL 1.2 anyhow.
 
 == Supported platforms ==
 
