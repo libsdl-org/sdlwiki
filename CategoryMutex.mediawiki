@@ -12,7 +12,7 @@
 
 Functions in this group provide thread synchronization primitives for multi-threaded programing.
 
-There are 3 primitives available in SDL:
+There are three primitives available in SDL:
 * Mutex
 * Semaphore
 * Condition Variable
