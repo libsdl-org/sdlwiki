@@ -6,8 +6,6 @@
 
 '''DRAFT'''
 
-<!-- #Sorry, I don't know how to name this page. If you have any idea, feel free to change it ;] -->
-
 = Additional Other =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h]
