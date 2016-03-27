@@ -28,7 +28,9 @@ You can find out a little more about lockless programming and the subtle issues 
 There's also lots of good information here:
  http://www.1024cores.net/home/lock-free-algorithms
 
-These operations may or may not actually be implemented using processor specific atomic operations. When possible they are implemented as true processor specific atomic operations. When that is not possible the are implemented using locks that '''do''' use the available atomic operations.  
+ http://preshing.com/
+
+These operations may or may not actually be implemented using processor specific atomic operations. When possible they are implemented as true processor specific atomic operations. When that is not possible the are implemented using locks that '''do''' use the available atomic operations.
 
 All of the atomic operations that modify memory are full memory barriers.
 
