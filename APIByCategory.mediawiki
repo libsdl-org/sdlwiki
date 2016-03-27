@@ -191,7 +191,7 @@
 |}
 
 
-== Additional ==
+== Additional Functionality ==
 
 {|
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
@@ -200,5 +200,5 @@
 |[CategorySystem|Platform-specific functionality]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h] 
 |-
-|[CategoryAdditionalOther|Other]] 
+|[CategoryStandard|Standard library functionality]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h] 
