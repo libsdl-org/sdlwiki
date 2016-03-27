@@ -16,10 +16,10 @@ These functions are used to collect or display information about the version of 
 * X = '''Major Version''', which increments with massive changes, additions, and enhancements
 * Y = '''Minor Version''', which increments with backwards-compatible changes to the major revision
 * Z = '''Patchlevel''', which increments with fixes to the minor revision<br/>
- ''Example:'' The current version is 2.0.0
+ ''Example:'' The first version of SDL 2 was 2.0.0
 
-: The version may also be reported as a 4-digit numeric value where the thousands place represents the major version, the hundreds place represents the minor version, and the tens and ones places represent the patchlevel (update version).  
- ''Example:'' The current version number is 2000
+: The version may also be reported as a 4-digit numeric value where the thousands place represents the major version, the hundreds place represents the minor version, and the tens and ones places represent the patchlevel (update version).
+ ''Example:'' The first version number of SDL 2 was 2000
 
 SDL_revision.h must be included in your program explicitly if you want to use the SDL_REVISION constant.
 
