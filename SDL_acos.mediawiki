@@ -63,9 +63,6 @@ Range:   0 <= y <= Pi <br/>
 == Version ==
 This function is available since SDL 2.0.2.
 
-== Related Functions ==
-:[[SDL_cos]]
-
 
 ----
 [[CategoryAPI]], [[CategoryStandard]]
