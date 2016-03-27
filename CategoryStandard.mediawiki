@@ -12,7 +12,7 @@
 
 
 == Introduction ==
-This category contains additional functions, enums and defines for SDL. Including math, memory, C string, PI number etc...
+This category contains additional types, functions, enums and defines for SDL. They provide standard library functionality including math functions, memory management, C string handling and a PI number.
 
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryStandard -title:SGEnumerations)>>
