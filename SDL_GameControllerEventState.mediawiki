@@ -36,7 +36,7 @@ printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 ```
 
 == Remarks ==
-Any number can be passed to SDL_GameControllerEventState, but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
+Any number can be passed to [[SDL_GameControllerEventState]], but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
 
 
 == Related Functions ==
