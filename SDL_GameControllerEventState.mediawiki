@@ -6,7 +6,7 @@
 
 
 = SDL_GameControllerEventState =
-Use this function to find the current state of, enable, or disable events dealing with Game Controllers. This will not disable Joystick events, which can also be fired by a controller (See [[SDL_JoystickEventState]])
+Use this function to find the current state of, enable, or disable events dealing with Game Controllers. This will not disable Joystick events, which can also be fired by a controller (see [[SDL_JoystickEventState]]()).
 
 
 
@@ -36,7 +36,7 @@ printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 ```
 
 == Remarks ==
-Any number can be passed to [[SDL_GameControllerEventState]], but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
+Any number can be passed to [[SDL_GameControllerEventState]](), but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
 
 
 == Related Functions ==
