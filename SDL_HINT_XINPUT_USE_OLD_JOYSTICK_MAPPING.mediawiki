@@ -34,7 +34,7 @@ You can add your code example here
 
 
 == Remarks ==
-This hint is for backwards compatibility only and will be removed in SDL 2.1
+This hint is for backwards compatibility only and will be removed in SDL 2.1.
 
 The default value is "0".  This hint must be set before [[SDL_Init]]().
 
