@@ -17,7 +17,7 @@ An enumeration of the types of events that can be delivered.
 |user-requested quit; see [[#Remarks|Remarks]] for details
 |-
 |
-|<bgcolor="#EDEDED">''Android and iOS events; see [[#Android and iOS Events|Remarks]] for details''
+|<bgcolor="#EDEDED">''Android, iOS and WinRT events; see [[#Android, iOS and WinRT Events|Remarks]] for details''
 |-
 |SDL_APP_TERMINATING
 |OS is terminating the application
@@ -208,8 +208,8 @@ SDL_QUIT is not limited to window closing. On Mac OS X, pressing Command-Q (the 
 
 On POSIX systems, [SDL_Init]]() installs [[http://en.wikipedia.org/wiki/Unix_signal signal handlers] for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
 
-=== Android and iOS Events ===
-What we currently label as "Android and iOS events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent]]() loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
+=== Android, iOS and WinRT Events ===
+What we currently label as "Android, iOS and WinRT events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent]]() loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
 
 This is how these events currently map to the underlying OS:
 
@@ -218,36 +218,43 @@ This is how these events currently map to the underlying OS:
 |What
 |iOS
 |Android
+| WinRT
 |-
 |SDL_APP_TERMINATING
 |The application is being terminated by the OS.
 |<code>applicationWillTerminate()</code>
 |<code>onDestroy()</code>
+| <code>OnExiting()</code>
 |-
 |SDL_APP_LOWMEMORY
 |The application is low on memory, free memory if possible.
 |<code>applicationDidReceiveMemoryWarning()</code>
 |<code>onLowMemory()</code>
+| --
 |-
 |SDL_APP_WILLENTERBACKGROUND
 |The application is about to enter the background.
 |<code>applicationWillResignActive()</code>
 |<code>onPause()</code>
+| <code>OnSuspending()</code>
 |-
 |SDL_APP_DIDENTERBACKGROUND
 |The application did enter the background and may not get CPU for some time.
 |<code>applicationDidEnterBackground()</code>
 |<code>onPause()</code>
+| <code>OnSuspending()</code>
 |-
 |SDL_APP_WILLENTERFOREGROUND
 |The application is about to enter the foreground.
 |<code>applicationWillEnterForeground()</code>
 |<code>onResume()</code>
+| <code>OnResuming()</code>
 |-
 |SDL_APP_DIDENTERFOREGROUND
 |The application is now interactive.
 |<code>applicationDidBecomeActive()</code>
 |<code>onResume()</code>
+| <code>OnResuming()</code>
 |}
 
 == Related Structures ==
