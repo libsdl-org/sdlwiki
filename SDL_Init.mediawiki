@@ -106,7 +106,7 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
-[[SDL_Init]] simply forwards to calling [[SDL_InitSubSystem]].  Therefore, the two may be used interchangeably. Though for readability of your code [[SDL_InitSubSystem]] might be preferred.
+[[SDL_Init]]() simply forwards to calling [[SDL_InitSubSystem]]().  Therefore, the two may be used interchangeably. Though for readability of your code [[SDL_InitSubSystem]]() might be preferred.
 
 The [[CategoryIO|File I/O]] and [[CategoryThread|Threading]] subsystems are initialized by default.  You must specifically initialize other subsystems if you use them in your application.
 
