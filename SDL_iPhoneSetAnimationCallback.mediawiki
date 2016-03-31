@@ -1,4 +1,77 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
+'''DRAFT'''
 
-SDL_iPhoneSetAnimationCallback() has been replaced by [[SDL_iOSSetAnimationCallback]]() in SDL 2.0.4.
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_iPhoneSetAnimationCallback =
+Use this function to set the animation callback on Apple iOS.
+
+
+
+
+== Syntax ==
+```c++
+int SDL_iPhoneSetAnimationCallback(SDL_Window*   window,
+                                   int           interval,
+                                   void (*callback)(void*),
+                                   void*         callbackParam)
+```
+
+
+== Function Parameters ==
+{|
+|'''window'''
+|the window for which the animation callback should be set
+|-
+|'''interval'''
+|the number of frames after which '''callback''' will be called
+|-
+|'''callback'''
+|the function to call for every frame; see [[#Remarks|Remarks]] for details
+|-
+|'''callbackParam'''
+|a pointer that is passed to '''callback'''
+|}
+
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+The function prototype for '''callback''' is:
+ ```c++
+void callback(void* callbackParam)
+```
+: where its parameters are:
+ ||<code>callbackParam</code>||what was passed as '''callbackParam''' to [[SDL_iPhoneSetAnimationCallback]]()||
+
+This function is only available on Apple iOS.
+
+For more information see: [https://hg.libsdl.org/SDL/file/default/docs/README-ios.md README-ios.md]
+
+This functions is also accessible using the macro [[SDL_iOSSetAnimationCallback]]() since SDL 2.0.4.
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+
+== Related Functions ==
+:[[SDL_iPhoneSetEventPump]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategorySystem]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
