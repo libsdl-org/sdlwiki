@@ -29,7 +29,7 @@ Returns a string that has the controller's mapping. More information about the m
 
 == Code Examples ==
 ```c++
-#include <stdio.h> /* for printf() */
+#include "SDL.h"
 
 /* ... */
 
@@ -40,11 +40,11 @@ SDL_Init(SDL_INIT_GAMECONTROLLER);
 
 for (i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
-        printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
+        SDL_Log("Index \'%i\' is a compatible controller, named \'%s\'", i, SDL_GameControllerNameForIndex(i));
         ctrl = SDL_GameControllerOpen(i);
-        printf("Controller %i is mapped as \"%s\".\n", i, SDL_GameControllerMapping(ctrl));
+        SDL_Log("Controller %i is mapped as \"%s\".", i, SDL_GameControllerMapping(ctrl));
     } else {
-        printf("Index \'%i\' is not a compatible controller.", i);
+        SDL_Log("Index \'%i\' is not a compatible controller.", i);
     }
 }
 ```
