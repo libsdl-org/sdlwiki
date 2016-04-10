@@ -1,0 +1,48 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #You will need to remove the line #acl All:read above in order to be able to save the new page.  Do not remove any other content above this comment.  You may delete this comment before you save. -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_MAC_MOUSE_FOCUS_CLICKTHROUGH =
+A hint that specifies if mouse click events are sent when clicking to focus an SDL window on Apple Mac OS X.
+
+
+
+
+== Values ==
+{|
+|0
+|no mouse click events are sent when clicking to focus
+|-
+|1
+|mouse click events are sent when clicking to focus
+|}
+
+
+== Default ==
+By default no mouse click events are sent when clicking to focus.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+This hint only applies to Apple Mac OS X.
+
+
+== Version ==
+This hint is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
