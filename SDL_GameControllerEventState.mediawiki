@@ -41,6 +41,10 @@ If controller events are disabled, you must call [[SDL_GameControllerUpdate]]() 
 Any number can be passed to [[SDL_GameControllerEventState]](), but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
 
 
+== Version ==
+This function is available since SDL 2.0.0.
+
+
 == Related Functions ==
 :[[SDL_JoystickEventState]]
 
