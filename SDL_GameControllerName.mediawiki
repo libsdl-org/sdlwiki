@@ -43,7 +43,7 @@ if (controller) {
 
 
 == Remarks ==
-This is the same name as returned by [[SDL_GameControllerNameForIndex]], but it takes a controller identifier instead of the (unstable) device index.
+This is the same name as returned by [[SDL_GameControllerNameForIndex]](), but it takes a controller identifier instead of the (unstable) device index.
 
 
 == Related Functions ==
