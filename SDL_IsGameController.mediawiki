@@ -38,7 +38,7 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 
 
 == Remarks ==
-joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]].
+joystick_index is the same as the device_index passed to [[SDL_JoystickOpen]]().
 
 
 == Related Functions ==
