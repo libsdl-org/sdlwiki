@@ -29,6 +29,7 @@ You can add your code example here
 See [[SDL_Scancode]] and [[SDL_Keycode]] for details.
 
 == Related Functions ==
+:[[SDL_GetKeyFromName]]
 :[[SDL_GetKeyFromScancode]]
 :[[SDL_GetScancodeFromKey]]
 
