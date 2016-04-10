@@ -36,6 +36,8 @@ Returns a string that has the controller's mapping. More information about the m
 SDL_GameController *ctrl;
 int i;
 
+SDL_Init(SDL_INIT_GAMECONTROLLER);
+
 for (i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
         printf("Index \'%i\' is a compatible controller, named \'%s\'\n", i, SDL_GameControllerNameForIndex(i));
