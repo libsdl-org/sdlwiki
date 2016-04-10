@@ -25,7 +25,7 @@ char* SDL_GameControllerMapping(SDL_GameController* gamecontroller)
 
 
 == Return Value ==
-Returns a string that has the controller's mapping. More information about the mapping can be found on the page for [[SDL_GameControllerAddMapping]](); call [[SDL_GetError]]() for more information.
+Returns a string that has the controller's mapping or NULL if no mapping is available; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -54,6 +54,8 @@ for (i = 0; i < SDL_NumJoysticks(); ++i) {
 
 == Remarks ==
 The returned string must be freed with SDL_free().
+
+More information about the mapping can be found on the page for [[SDL_GameControllerAddMapping]]().
 
 
 == Related Functions ==
