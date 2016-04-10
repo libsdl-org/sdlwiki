@@ -40,9 +40,12 @@ SDL_Init(SDL_INIT_GAMECONTROLLER);
 
 for (i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
+        char *mapping;
         SDL_Log("Index \'%i\' is a compatible controller, named \'%s\'", i, SDL_GameControllerNameForIndex(i));
         ctrl = SDL_GameControllerOpen(i);
-        SDL_Log("Controller %i is mapped as \"%s\".", i, SDL_GameControllerMapping(ctrl));
+        mapping = SDL_GameControllerMapping(ctrl);
+        SDL_Log("Controller %i is mapped as \"%s\".", i, mapping);
+        SDL_free(mapping);
     } else {
         SDL_Log("Index \'%i\' is not a compatible controller.", i);
     }
