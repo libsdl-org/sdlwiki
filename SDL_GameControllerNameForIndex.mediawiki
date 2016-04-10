@@ -41,6 +41,8 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 
 
 == Remarks ==
+This function can be called before any controllers are opened.
+
 '''joystick_index''' is the same as the <code>device_index</code> passed to [[SDL_JoystickOpen]]().
 
 
