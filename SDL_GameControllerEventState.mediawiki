@@ -36,6 +36,8 @@ printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 ```
 
 == Remarks ==
+If controller events are disabled, you must call [[SDL_GameControllerUpdate]]() yourself and check the state of the controller when you want controller information.
+
 Any number can be passed to [[SDL_GameControllerEventState]](), but only -1, 0, and 1 will have any effect. Other numbers will just be returned.
 
 
