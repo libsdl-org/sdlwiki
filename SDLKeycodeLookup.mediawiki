@@ -40,7 +40,7 @@ Keycodes for keys with printable characters are represented by the character byt
 |SDLK_EXCLAIM
 |-
 |34
-|0x22 ('\"')
+|0x22 ('"')
 |SDLK_QUOTEDBL
 |-
 |35
