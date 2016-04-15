@@ -8,7 +8,7 @@ Use this function to set a window's fullscreen state.
 == Syntax ==
 ```c++
 int SDL_SetWindowFullscreen(SDL_Window* window,
-                            Uint32 flags)
+                            Uint32      flags)
 ```
 
 == Function Parameters ==
