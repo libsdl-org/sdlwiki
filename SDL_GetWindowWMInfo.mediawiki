@@ -84,6 +84,9 @@ You must include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
 The '''info''' structure must be initialized with the SDL version, and is then filled in with information about the given window, as shown in the [[#Code Examples|Code Example]].
 
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
 
