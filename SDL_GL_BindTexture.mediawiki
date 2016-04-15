@@ -24,7 +24,7 @@ int SDL_GL_BindTexture(SDL_Texture* texture,
 
 
 == Return Value ==
-Returns 0 on success, or -1 if the operation is not supported
+Returns 0 on success, or -1 if the operation is not supported; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 The following are three examples extracted from the [http://ignifuga.org Ignifuga Game Engine] that show how to integrate [http://librocket.com libRocket] (which uses OpenGL for rendering) with SDL2.
