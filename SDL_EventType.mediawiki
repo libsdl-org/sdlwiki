@@ -224,7 +224,7 @@ This is how these events currently map to the underlying OS:
 |The application is being terminated by the OS.
 |<code>applicationWillTerminate()</code>
 |<code>onDestroy()</code>
-| <code>OnExiting()</code>
+| <code>Exiting()</code>
 |-
 |SDL_APP_LOWMEMORY
 |The application is low on memory, free memory if possible.
@@ -236,25 +236,25 @@ This is how these events currently map to the underlying OS:
 |The application is about to enter the background.
 |<code>applicationWillResignActive()</code>
 |<code>onPause()</code>
-| <code>OnSuspending()</code>
+| <code>Suspending()</code>
 |-
 |SDL_APP_DIDENTERBACKGROUND
 |The application did enter the background and may not get CPU for some time.
 |<code>applicationDidEnterBackground()</code>
 |<code>onPause()</code>
-| <code>OnSuspending()</code>
+| <code>Suspending()</code>
 |-
 |SDL_APP_WILLENTERFOREGROUND
 |The application is about to enter the foreground.
 |<code>applicationWillEnterForeground()</code>
 |<code>onResume()</code>
-| <code>OnResuming()</code>
+| <code>Resuming()</code>
 |-
 |SDL_APP_DIDENTERFOREGROUND
 |The application is now interactive.
 |<code>applicationDidBecomeActive()</code>
 |<code>onResume()</code>
-| <code>OnResuming()</code>
+| <code>Resuming()</code>
 |}
 
 == Related Structures ==
