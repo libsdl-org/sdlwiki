@@ -95,6 +95,11 @@ exit:
 == Remarks ==
 ''You can add useful comments here''
 
+
+== Version ==
+This function is available since SDL 2.0.0.
+
+
 == Related Functions ==
 :[[SDL_CreateCursor]]
 :[[SDL_FreeCursor]]
