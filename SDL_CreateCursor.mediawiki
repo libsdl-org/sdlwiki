@@ -127,6 +127,8 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 ```
 
 == Remarks ==
+'''mask''' has to be in MSB (Most Significant Bit) format.
+
 The cursor width ('''w''') must be a multiple of 8 bits.
 
 The cursor is created in black and white according to the following:
