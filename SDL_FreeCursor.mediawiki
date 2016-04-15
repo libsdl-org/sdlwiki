@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_FreeCursor =
-Use this function to free a cursor created with [[SDL_CreateCursor]]() and [[SDL_CreateColorCursor]]().
+Use this function to free a cursor created with [[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or [[SDL_CreateSystemCursor]]().
 
 
 == Syntax ==
