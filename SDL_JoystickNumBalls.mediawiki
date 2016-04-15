@@ -30,7 +30,6 @@ Joystick trackballs have only relative motion events associated with them and th
 
 == Related Functions ==
 :[[SDL_JoystickGetBall]]
-:[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
