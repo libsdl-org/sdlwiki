@@ -21,7 +21,7 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
 |}
 
 == Return Value ==
-Returns SDL_TRUE if the function is implemented and the <code>version</code> member of the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information. 
+Returns SDL_TRUE if the function is implemented and the <code>version</code> member of the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -60,14 +60,14 @@ int main(int argc, char *argv[]) {
 #endif
     }
 
-    SDL_Log("This program is running SDL version %d.%d.%d on %s\n", 
+    SDL_Log("This program is running SDL version %d.%d.%d on %s",
         (int)info.version.major,
         (int)info.version.minor,
         (int)info.version.patch,
         subsystem);
   } else {
     // call failed
-    SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Couldn't get window information: %s\n", SDL_GetError());
+    SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Couldn't get window information: %s", SDL_GetError());
   }
 
   SDL_DestroyWindow(window);
