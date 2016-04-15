@@ -21,22 +21,9 @@ SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id)
 == Function Parameters ==
 {|
 |'''id'''
-|a system cursor enum value
+|a system cursor enum value; see [[#Remarks|Remarks]] for details
 |}
 
-Valid ids are:
-* SDL_SYSTEM_CURSOR_ARROW
-* SDL_SYSTEM_CURSOR_IBEAM
-* SDL_SYSTEM_CURSOR_WAIT
-* SDL_SYSTEM_CURSOR_CROSSHAIR
-* SDL_SYSTEM_CURSOR_WAITARROW
-* SDL_SYSTEM_CURSOR_SIZENWSE
-* SDL_SYSTEM_CURSOR_SIZENESW
-* SDL_SYSTEM_CURSOR_SIZEWE
-* SDL_SYSTEM_CURSOR_SIZENS
-* SDL_SYSTEM_CURSOR_SIZEALL
-* SDL_SYSTEM_CURSOR_NO
-* SDL_SYSTEM_CURSOR_HAND
 
 == Return Value ==
 Returns a cursor on success or NULL on failure; call [[SDL_GetError]]() for more information.
@@ -51,9 +38,20 @@ SDL_SetCursor(cursor);
 
 
 == Remarks ==
-''You can add useful comments here''
+Valid ids are:
+* SDL_SYSTEM_CURSOR_ARROW
+* SDL_SYSTEM_CURSOR_IBEAM
+* SDL_SYSTEM_CURSOR_WAIT
+* SDL_SYSTEM_CURSOR_CROSSHAIR
+* SDL_SYSTEM_CURSOR_WAITARROW
+* SDL_SYSTEM_CURSOR_SIZENWSE
+* SDL_SYSTEM_CURSOR_SIZENESW
+* SDL_SYSTEM_CURSOR_SIZEWE
+* SDL_SYSTEM_CURSOR_SIZENS
+* SDL_SYSTEM_CURSOR_SIZEALL
+* SDL_SYSTEM_CURSOR_NO
+* SDL_SYSTEM_CURSOR_HAND
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
 This function is available since SDL 2.0.0.
