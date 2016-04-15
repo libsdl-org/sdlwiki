@@ -50,7 +50,7 @@ int main(int argc, char* argv[])
 
     else
       // On success, print the current display mode.
-      SDL_Log("Display #%d: current display mode is %dx%dpx @ %dhz. \n", i, current.w, current.h, current.refresh_rate);
+      SDL_Log("Display #%d: current display mode is %dx%dpx @ %dhz.", i, current.w, current.h, current.refresh_rate);
 
   }
 
