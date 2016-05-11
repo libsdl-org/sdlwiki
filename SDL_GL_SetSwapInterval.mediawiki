@@ -29,6 +29,9 @@ Some systems allow specifying -1 for the interval, to enable late swap tearing. 
 
 Late swap tearing is implemented for some glX drivers with [http://www.opengl.org/registry/specs/EXT/glx_swap_control_tear.txt GLX_EXT_swap_control_tear] and for some Windows drivers with [http://www.opengl.org/registry/specs/EXT/wgl_swap_control_tear.txt WGL_EXT_swap_control_tear].
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_GL_GetSwapInterval]]
 
