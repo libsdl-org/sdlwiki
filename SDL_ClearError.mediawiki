@@ -24,6 +24,7 @@ if (*error) {
 
 == Related Functions ==
 :[[SDL_GetError]]
+:[[SDL_SetError]]
 
 ----
 [[CategoryAPI]], [[CategoryError]]
