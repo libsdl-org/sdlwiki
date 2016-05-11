@@ -32,6 +32,9 @@ You can add your code example here
 == Remarks ==
 Before using this function, you should check the SDL_RENDERER_TARGETTEXTURE bit in the flags of [[SDL_RendererInfo]] to see if render targets are supported.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_RenderCopy]]
 
