@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_LogMessageV =
-Use this function to log a message with the specified category and priority.  This version of [[SDL_LogMessage]] uses a stdarg variadic argument list.
+Use this function to log a message with the specified category and priority.  This version of [[SDL_LogMessage]]() uses a stdarg variadic argument list.
 
 
 == Syntax ==
