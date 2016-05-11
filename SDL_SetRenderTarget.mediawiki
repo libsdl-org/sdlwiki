@@ -38,6 +38,7 @@ The default render target is the window for which the renderer was created.
 This function is available since SDL 2.0.0.
 
 == Related Functions ==
+:[[SDL_GetRenderTarget]]
 :[[SDL_RenderCopy]]
 
 ----
