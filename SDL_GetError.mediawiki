@@ -11,7 +11,7 @@ const char* SDL_GetError(void)
 ```
 
 == Return Value ==
-Returns a message with information about the specific error that occurred, or an empty string if there hasn't been an error since the last call to [[SDL_ClearError]]().  Without calling [[SDL_ClearError]](), the message is only applicable when an SDL function has signaled an error.  You must check the return values of SDL function calls to determine when to appropriately call [[SDL_GetError]]().
+Returns a message with information about the specific error that occurred, or an empty string if there hasn't been an error message set since the last call to [[SDL_ClearError]](). <!-- Without calling [[SDL_ClearError]](), the --> The message is only applicable when an SDL function has signaled an error.  You must check the return values of SDL function calls to determine when to appropriately call [[SDL_GetError]]().
 
 == Code Examples ==
 ```c++
