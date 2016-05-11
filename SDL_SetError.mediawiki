@@ -6,7 +6,8 @@ Use this function to set the SDL error string.
 
 == Syntax ==
 ```c++
-int SDL_SetError(const char* fmt, ...)
+int SDL_SetError(const char* fmt,
+                 ...)
 ```
 == Function Parameters ==
 {|
