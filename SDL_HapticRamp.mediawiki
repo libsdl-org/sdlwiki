@@ -83,7 +83,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This struct^ure^ is exclusively for the SDL_HAPTIC_RAMP effect. 
+This struct is exclusively for the SDL_HAPTIC_RAMP effect.
 
 The ramp effect starts at '''start''' strength and ends at '''end''' strength. It augments in linear fashion. If you use attack and fade with a ramp ''the'' effects get added to the ramp effect making the effect become quadratic instead of linear.
 
