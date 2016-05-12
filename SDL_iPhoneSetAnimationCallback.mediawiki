@@ -55,7 +55,7 @@ The function prototype for '''callback''' is:
  ```c++
 void callback(void* callbackParam)
 ```
-: where its parameters are:
+: where its parameter is:
  ||<code>callbackParam</code>||what was passed as '''callbackParam''' to [[SDL_iPhoneSetAnimationCallback]]()||
 
 This function is only available on Apple iOS.
