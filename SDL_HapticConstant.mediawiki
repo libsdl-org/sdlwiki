@@ -79,7 +79,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-,,The,, ^This^ struct^ure^ is exclusive to the SDL_HAPTIC_CONSTANT effect.
+This struct is exclusively for the SDL_HAPTIC_CONSTANT effect.
 
 A constant effect applies a constant force <to the joystick< in the specified direction <<.
 
