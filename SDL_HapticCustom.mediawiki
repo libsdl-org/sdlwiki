@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticCustom =
-A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ effect.
+A structure that contains a template for the SDL_HAPTIC_CUSTOM (a custom) effect.
 
 
 == Data Fields ==
@@ -58,7 +58,7 @@ A structure that contains a template for ,,the SDL_HAPTIC_CUSTOM ,,^a custom^ ef
 |-
 |Uint16
 |'''samples'''
-|,,amount,, ^number^ of samples
+| amount (number) of samples
 |-
 |Uint16*
 |'''data'''
