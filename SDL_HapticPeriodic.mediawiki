@@ -117,9 +117,6 @@ press          |     |
 |SDL_HAPTIC_SINE
 |<code>  __      __      __      __</code><br/><code> /  \    /  \    /  \    /</code><br/><code>/    \__/    \__/    \__/</code>
 |-
-|SDL_HAPTIC_SQUARE
-|<code> __    __    __    __    __</code><br/><code>|  |  |  |  |  |  |  |  |  |</code><br/><code>|  |__|  |__|  |__|  |__|  |</code>
-|-
 |SDL_HAPTIC_TRIANGLE
 |<code>  /\    /\    /\    /\    /\</code><br/><code> /  \  /  \  /  \  /  \  /</code><br/><code>/    \/    \/    \/    \/</code>
 |-
@@ -129,6 +126,8 @@ press          |     |
 |SDL_HAPTIC_SAWTOOTHDOWN
 |<code>\  |\  |\  |\  |\  |\  |\  |</code><br/><code> \ | \ | \ | \ | \ | \ | \ |</code><br/><code>  \|  \|  \|  \|  \|  \|  \| </code>
 |}
+
+<!-- ||SDL_HAPTIC_SQUARE||<code> __    __    __    __    __</code><br/><code>|  |  |  |  |  |  |  |  |  |</code><br/><code>|  |__|  |__|  |__|  |__|  |</code>|| -->
 
 <span id="phase"></span>'''phase''' is given by hundredths of a degree, meaning that giving the phase a value of 9000 will displace it 25% of its period. Here are sample values:
 {|
