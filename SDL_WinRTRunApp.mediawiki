@@ -46,7 +46,7 @@ The function prototype for '''mainFunction''' is:
 ```c++
 int MainFunction(int argc, char **argv)
 ```
-: where its parameter are:
+: where its parameters are:
  ||<code>argc</code> ||the number of arguments ||
  ||<code>argv</code> ||an array of arguments ||
 
