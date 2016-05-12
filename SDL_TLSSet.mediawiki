@@ -52,7 +52,7 @@ The function prototype for '''destructor''' is:
  ```c++
 void destructor(void* value)
 ```
-: where its parameters are:
+: where its parameter is:
  ||<code>value</code>||what was passed as '''value''' to [[SDL_TLSSet]]()||
 
 == Version ==
