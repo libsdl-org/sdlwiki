@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetCurrentVideoDriver =
-Use this function to return the name of the currently initialized video driver.
+Use this function to get the name of the currently initialized video driver.
 
 
 == Syntax ==
