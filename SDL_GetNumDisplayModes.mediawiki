@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetNumDisplayModes =
-Use this function to return the number of available display modes.
+Use this function to get the number of available display modes.
 
 
 == Syntax ==
