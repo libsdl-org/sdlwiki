@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GL_ExtensionSupported =
-Use this function to return true if an OpenGL extension is supported for the current context.
+Use this function to check if an OpenGL extension is supported for the current context.
 
 
 == Syntax ==
