@@ -57,7 +57,7 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 == Remarks ==
 <span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple subsystems simultaneously.
 
-<<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
+<<Include(SDL_Init, , , from="OR'd together:", to="If you want to initialize")>>
 
 == Related Functions ==
 :[[SDL_Init]]
