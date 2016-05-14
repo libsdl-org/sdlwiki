@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetNumAudioDevices =
-Use this function to return the number of built-in audio devices.
+Use this function to get the number of built-in audio devices.
 
 
 == Syntax ==
