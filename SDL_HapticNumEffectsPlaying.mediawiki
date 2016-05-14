@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticNumEffectsPlaying =
-Use this function to return the number of effects a haptic device can play at the same time.
+Use this function to get the number of effects a haptic device can play at the same time.
 
 
 == Syntax ==
