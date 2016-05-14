@@ -30,7 +30,7 @@ for (i = 0; i < count; ++i) {
 == Remarks ==
 This function is only valid after successfully initializing the audio subsystem.
 
-Note that audio capture support is not implemented as of SDL 2.0.1, so the '''iscapture''' parameter is for future expansion and should always be zero for now.
+Note that audio capture support is not implemented as of SDL 2.0.4, so the '''iscapture''' parameter is for future expansion and should always be zero for now.
 
 This function will return -1 if an explicit list of devices can't be determined. Returning -1 is not an error. For example, if SDL is set up to talk to a remote audio server, it can't list every one available on the Internet, but it will still allow a specific host to be specified in [[SDL_OpenAudioDevice]]().
 
