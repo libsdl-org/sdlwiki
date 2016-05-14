@@ -27,6 +27,9 @@ if (driver_name) {
 == Remarks ==
 The returned string points to internal static memory and thus never becomes invalid, even if you quit the audio subsystem and initialize a new driver (although such a case would return a different static string from another call to this function, of course). As such, you should not modify or free the returned string.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_AudioInit]]
 
