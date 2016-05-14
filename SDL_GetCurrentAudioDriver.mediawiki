@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_GetCurrentAudioDriver =
-Use this function to return the name of the current audio driver.
+Use this function to get the name of the current audio driver.
 
 
 == Syntax ==
