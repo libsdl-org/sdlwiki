@@ -17,5 +17,8 @@ Returns the total number of logical CPU cores. On CPUs that include technologies
 printf("Number of logical CPU cores: %d\n", SDL_GetCPUCount());
 ```
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryCPU]]
