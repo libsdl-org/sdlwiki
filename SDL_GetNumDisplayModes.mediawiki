@@ -25,7 +25,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-The displayIndex needs to be in the range from 0 to [[SDL_GetNumVideoDisplays]]() - 1.
+The '''displayIndex''' needs to be in the range from 0 to [[SDL_GetNumVideoDisplays]]() - 1.
 
 This allows you to support multiple screens.
 
