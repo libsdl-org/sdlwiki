@@ -30,6 +30,9 @@ On some platforms this isn't fully supported, and therefore is an approximation.
 
 <!-- <span style="color: green;">Is it important to specify ''how'' to check to see if your effect was created or is listing the query function below sufficient?</span> -->
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_HapticNumEffectsPlaying]]
 :[[SDL_HapticQuery]]
