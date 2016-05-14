@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticNumEffects =
-Use this function to return the number of effects a haptic device can store.
+Use this function to get the number of effects a haptic device can store.
 
 
 == Syntax ==
