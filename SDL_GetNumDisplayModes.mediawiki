@@ -29,6 +29,9 @@ The '''displayIndex''' needs to be in the range from 0 to [[SDL_GetNumVideoDispl
 
 This allows you to support multiple screens.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_GetDisplayMode]]
 :[[SDL_GetNumVideoDisplays]]
