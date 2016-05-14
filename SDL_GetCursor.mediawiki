@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_GetCursor =
-Use this function to return the active cursor.
+Use this function to get the active cursor.
 
 
 == Syntax ==
