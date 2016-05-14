@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_GetCPUCount =
-Use this function to return the number of CPU cores available.
+Use this function to get the number of CPU cores available.
 
 
 == Syntax ==
