@@ -27,6 +27,9 @@ This function returns a hardcoded number. This never returns a negative value; i
 
 By default, SDL tries all drivers, in its preferred order, until one is found to be usable.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_GetAudioDriver]]
 
