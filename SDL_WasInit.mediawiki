@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_WasInit =
-Use this function to return a mask of the specified subsystems which have previously been initialized.
+Use this function to get a mask of the specified subsystems which have previously been initialized.
 
 
 == Syntax ==
@@ -55,7 +55,7 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 ```
 
 == Remarks ==
-<span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple subsystems simultaneously. 
+<span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple subsystems simultaneously.
 
 <<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
 
