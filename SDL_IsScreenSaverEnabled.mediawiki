@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_IsScreenSaverEnabled =
-Use this function to return whether the screensaver is currently enabled.
+Use this function to check whether the screensaver is currently enabled.
 
 
 == Syntax ==
