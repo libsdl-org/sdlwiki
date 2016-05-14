@@ -14,7 +14,7 @@ int SDL_HapticNumEffectsPlaying(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|the SDL_Haptic device to query ,,maximum playing effects,,
+|the SDL_Haptic device to query maximum playing effects
 |}
 
 == Return Value ==
@@ -26,7 +26,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is not supported on all platforms, but will always return a value. ^This function is available/included^ ,,Added here,, for the sake of completeness. <!-- <span style="color: green;">Is it important to note what the value would be if it is not supported?  Would it just be 1 or 0?</span> -->
+This is not supported on all platforms, but will always return a value. <!-- ^This function is available/included^ --> Added here for the sake of completeness. <!-- <span style="color: green;">Is it important to note what the value would be if it is not supported?  Would it just be 1 or 0?</span> -->
 
 == Related Functions ==
 :[[SDL_HapticNumEffects]]
