@@ -1,6 +1,6 @@
 This is a scratch pad for the Shaped Windows Google Summer of Code 2010 project, by Eli Gottlieb
 
-The code is available here: http://hg.libsdl.org/SDL-gsoc2010_shaped_windows
+The code is available here: --( http://hg.libsdl.org/SDL/gsoc2010_shaped_windows )--
 
 
 == Status ==
