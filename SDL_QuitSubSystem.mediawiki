@@ -41,8 +41,8 @@ int main(int argc, char **argv) {
 ```
 
 == Remarks ==
-<span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously. 
-<<Include(SDL_Init, , , from="OR'd together:", to="Unless the")>>
+<span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously.
+<<Include(SDL_Init, , , from="OR'd together:", to="If you want to initialize")>>
 
 If you start a subsystem using a call to that subsystem's init function (for example [[SDL_VideoInit]]()) instead of [[SDL_Init]]() or [[SDL_InitSubSystem]](), [[SDL_QuitSubSystem]]() and [[SDL_WasInit]]() will not work.  You will need to use that subsystem's quit function ([[SDL_VideoQuit]]()) directly instead.
 
