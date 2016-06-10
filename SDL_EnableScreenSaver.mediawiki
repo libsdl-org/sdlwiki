@@ -18,6 +18,9 @@ You can add your code example here
 == Remarks ==
 ''You can add useful comments here''
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_DisableScreenSaver]]
 :[[SDL_IsScreenSaverEnabled]]
