@@ -197,8 +197,8 @@
 |<tablewidth="100%"width="75%">'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[CategorySystem|Platform-specific functionality]] 
+|[CategorySystem|Platform-specific Functionality]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h] 
 |-
-|[CategoryStandard|Standard library functionality]] 
+|[CategoryStandard|Standard Library Functionality]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h] 
