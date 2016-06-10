@@ -6,7 +6,7 @@
 
 '''DRAFT'''
 
-= Standard library functionality =
+= Standard Library Functionality =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h]
 
