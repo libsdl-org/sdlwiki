@@ -18,7 +18,7 @@ The actual API itself is simple.  SDL_CreateShapedWindow() returns an SDL_Window
 * run test: ./testeyes shapes/file.bmp
 
 ==== OSX (MacPorts) ====
-* obtain/install MacPort (https://trac.macports.org/wiki/InstallingMacPorts)
+* obtain/install !MacPort (https://trac.macports.org/wiki/InstallingMacPorts)
 * obtain repository: hg pull; hg update
 * compile SDL: ./autogen.sh; ./configure; make; sudo make install
 * compile test: cd test; ./configure; make
@@ -57,7 +57,7 @@ Here some other sample code:
 * Great summary with examples for all modes in Delphi: http://melander.dk/articles/alphasplash/
 
 ==== Layered Window ====
-Now there is another way to provide transparency using an alpha-bitmap in Windows. The API to be used is the UpdateLayeredWindow() call:
+Now there is another way to provide transparency using an alpha-bitmap in Windows. The API to be used is the !UpdateLayeredWindow() call:
 
 * MSDN info: [http://msdn.microsoft.com/en-us/library/ms633556(VS.85).aspx http://msdn.microsoft.com/en-us/library/ms633556%28VS.85%29.aspx]
 * Sample code: http://www.nuonsoft.com/blog/2009/05/27/how-to-use-updatelayeredwindow/
@@ -67,7 +67,7 @@ Even with this approach a shape vector may still be important, to get rid of cli
 
 ==== DirectX OnPaint ====
 
-The OnPaint functions makes the background transparent by drawing black on it.
+The !OnPaint functions makes the background transparent by drawing black on it.
 
 * http://stackoverflow.com/questions/148275/how-do-i-draw-transparent-directx-content-in-a-transparent-window
 
