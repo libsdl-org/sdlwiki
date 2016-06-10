@@ -3,7 +3,7 @@
 <!-- format wiki -->
 <!-- language en -->
 
-= Platform-specific functionality =
+= Platform-specific Functionality =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h]
 
