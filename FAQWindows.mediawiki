@@ -75,9 +75,11 @@ See the [[SDL1.2Tutorials#Setup|SDL and MYSYS/MinGW]] Tutorial
 ==== I get "Undefined reference to 'SDL_main'" ... ====
 Make sure that you are declaring main() as:
 
-<!-- include "SDL.h" -->
+```c++
+#include "SDL.h"
 
 int main(int argc, char *argv[])
+```
 
 You should be using main() instead of !WinMain() even though you are creating a Windows application, because SDL provides a version of !WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use !WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your !WinMain() function so that SDL works properly.
 
