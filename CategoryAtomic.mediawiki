@@ -12,7 +12,7 @@
 
 This category contains functions for handling atomic operations.
 
-/!\ IMPORTANT:
+/!\ ''IMPORTANT'':
 : If you are not an expert in concurrent lockless programming, you should only be using the atomic lock and reference counting functions in this file.  In all other cases you should be protecting your data structures with full mutexes.  ''Seriously, here be dragons!''
 
 "Safe" functions to use are:
