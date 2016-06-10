@@ -18,6 +18,9 @@ SDL_DisableScreenSaver();
 == Remarks ==
 If you disable the screensaver, it is automatically re-enabled when SDL quits.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_EnableScreenSaver]]
 :[[SDL_IsScreenSaverEnabled]]
