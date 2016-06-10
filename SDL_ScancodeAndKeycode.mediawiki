@@ -100,7 +100,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |SDL_SCANCODE_APOSTROPHE
 |SDLK_QUOTE
 |-
-|"'''Application'''" (the Application / Compose / Context Menu (Windows) key )
+|"'''Application'''" (the Application / Compose / Context Menu (Windows) key)
 |SDL_SCANCODE_APPLICATION
 |SDLK_APPLICATION
 |-
