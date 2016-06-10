@@ -432,7 +432,7 @@ There is also a '''size''' method to RWops, now. It is called [[SDL_RWsize]](). 
 
 === Add-on libraries ===
 
-The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL 2.0 : SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
+The official extensions SDL_image, SDL_ttf, SDL_mixer and SDL_net have a version dedicated to SDL 2.0: SDL2_image, SDL2_ttf, SDL2_mixer and SDL2_net. You may need to download them from the [http://hg.libsdl.org/ mercurial repositories] for the latest fixes. Subsequently, of course, you will have to link e.g. SDL2_image, not SDL_image, to compile your program.
 
 These libraries will not be supporting 1.2 going forward, and any compatibility with 1.2 is likely to vanish at some point from newer versions.
 
