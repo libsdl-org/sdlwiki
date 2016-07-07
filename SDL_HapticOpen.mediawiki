@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticOpen =
-Use this function to open a haptic device for us,,ag,,e.
+Use this function to open a haptic device for use.
 
 
 == Syntax ==
@@ -26,9 +26,9 @@ You can add your code example here
 ```
 
 == Remarks ==
-The index passed as an argument refers to the N'th __H__aptic device on this system.
+The index passed as an argument refers to the N'th haptic device on this system.
 
-When opening a __h__aptic device, its gain will be set to maximum and autocenter will be disabled. To modify these values use [[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
+When opening a haptic device, its gain will be set to maximum and autocenter will be disabled. To modify these values use [[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
 
 == Version ==
 This function is available since SDL 2.0.0.
