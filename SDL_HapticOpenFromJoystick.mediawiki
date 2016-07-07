@@ -14,7 +14,7 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick* joystick)
 == Function Parameters ==
 {|
 |'''joystick'''
-|^the^ SDL_Joystick to create a haptic device from
+|the SDL_Joystick to create a haptic device from
 |}
 
 == Return Value ==
