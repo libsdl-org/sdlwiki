@@ -30,6 +30,9 @@ The index passed as an argument refers to the N'th __H__aptic device on this sys
 
 When opening a __h__aptic device, its gain will be set to maximum and autocenter will be disabled. To modify these values use [[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_HapticClose]]
 :[[SDL_HapticIndex]]
