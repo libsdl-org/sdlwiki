@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_MouseIsHaptic =
-Use this function to ,,get,, ^determine/find/query^ whether or not the current mouse has haptic capabilities.
+Use this function to get <!-- determine/find/query --> whether or not the current mouse has haptic capabilities.
 
 
 == Syntax ==
