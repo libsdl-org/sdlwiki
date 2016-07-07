@@ -14,7 +14,7 @@ int SDL_JoystickIsHaptic(SDL_Joystick* joystick)
 == Function Parameters ==
 {|
 |'''joystick'''
-|^the^ SDL_Joystick to test for haptic capabilities
+|the SDL_Joystick to test for haptic capabilities
 |}
 
 == Return Value ==
