@@ -16,13 +16,13 @@ int SDL_HapticRunEffect(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to run the effect on
+|the SDL_Haptic device to run the effect on
 |-
 |'''effect'''
-|^the ID^ ,,identifier,, of the haptic effect to run
+|the <!-- ID --> identifier of the haptic effect to run
 |-
 |'''iterations'''
-|^the^ number of iterations to run the effect; use SDL_HAPTIC_INFINITY for infinity ''-or-'' ^the number of times to repeat the effect; see [[#Remarks|Remarks]] for details^
+|the number of iterations to run the effect; use SDL_HAPTIC_INFINITY for infinity <!-- ''-or-'' the number of times to repeat the effect; see [[#Remarks|Remarks]] for details --> 
 |}
 
 == Return Value ==
@@ -36,9 +36,9 @@ You can add your code example here
 == Remarks ==
 If '''iterations''' are SDL_HAPTIC_INFINITY, it'll run the effect over and over repeating the envelope (attack and fade) every time. If you only want the effect to last forever, set SDL_HAPTIC_INFINITY in the effect's <code>length</code> parameter.
 
-''-or-''
+<!-- ''-or-'' -->
 
-To repeat the effect over and over indefinitely, set '''iterations''' to SDL_HAPTIC_INFINITY.  (Repeats the envelope - attack and fade.)  To make one instance of the effect last indefinitely (so the effect does not fade), set the effect's <code>length</code> ^in its structure/union^ to SDL_HAPTIC_INFINITY ^instead^.
+<!-- To repeat the effect over and over indefinitely, set '''iterations''' to SDL_HAPTIC_INFINITY.  (Repeats the envelope - attack and fade.)  To make one instance of the effect last indefinitely (so the effect does not fade), set the effect's <code>length</code> in its structure/union to SDL_HAPTIC_INFINITY instead. -->
 
 <!-- <span style="color: green;">Is it important to say how to end an effect that has an SDL_HAPTIC_INFINITY setting or is it enough to list the destroy function below?</span> -->
 
