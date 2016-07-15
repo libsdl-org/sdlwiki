@@ -36,6 +36,9 @@ You can add your code example here
 == Remarks ==
 Can be used dynamically, although behavior when dynamically changing direction may be strange. Specifically the effect may re-upload itself and start playing from the start. You ^also^ cannot change the type ,,either,, when running [[SDL_HapticUpdateEffect]]().
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_HapticDestroyEffect]]
 :[[SDL_HapticNewEffect]]
