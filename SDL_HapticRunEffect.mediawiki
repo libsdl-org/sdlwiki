@@ -42,6 +42,8 @@ To repeat the effect over and over indefinitely, set '''iterations''' to SDL_HAP
 
 <!-- <span style="color: green;">Is it important to say how to end an effect that has an SDL_HAPTIC_INFINITY setting or is it enough to list the destroy function below?</span> -->
 
+== Version ==
+This function is available since SDL 2.0.0.
 
 == Related Functions ==
 :[[SDL_HapticDestroyEffect]]
