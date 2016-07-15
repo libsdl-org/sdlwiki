@@ -14,11 +14,11 @@ int SDL_HapticIndex(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to ,,get the index of,, ^query^
+|the SDL_Haptic device to get the index of <!-- query--> 
 |}
 
 == Return Value ==
-Returns the index of the ^specified^ haptic device or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the index of the specified haptic device or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
