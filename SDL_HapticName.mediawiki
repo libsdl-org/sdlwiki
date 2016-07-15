@@ -14,7 +14,7 @@ const char* SDL_HapticName(int device_index)
 == Function Parameters ==
 {|
 |'''device_index'''
-|index of the device to get ,,its name,, ^the name of^ / ^to query^
+|index of the device to get its name <!-- the name of / to query --> 
 |}
 
 == Return Value ==
