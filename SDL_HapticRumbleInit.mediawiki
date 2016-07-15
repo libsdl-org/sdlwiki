@@ -14,7 +14,7 @@ int SDL_HapticRumbleInit(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|the haptic device to initialize
+|the haptic device to initialize for simple rumble playback
 |}
 
 == Return Value ==
