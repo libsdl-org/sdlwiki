@@ -29,6 +29,9 @@ You can add your code example here
 == Remarks ==
 This will stop the effect if it's running. Effects are automatically destroyed when the device is closed.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_HapticNewEffect]]
 
