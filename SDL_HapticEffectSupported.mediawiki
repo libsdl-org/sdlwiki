@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticEffectSupported =
-Use this function to ,,check to,, see if ^an^ effect is supported by ^a^ haptic ^device^.
+Use this function to check to see if an effect is supported by a haptic device.
 
 
 == Syntax ==
@@ -15,10 +15,10 @@ int SDL_HapticEffectSupported(SDL_Haptic*       haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to ,,check on,, ^query^
+|the SDL_Haptic device to check on <!-- query --> 
 |-
 |'''effect'''
-|^the desired^ effect ,,to check to see if it is supported,,
+|the desired effect to check to see if it is supported
 |}
 
 == Return Value ==
