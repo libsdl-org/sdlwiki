@@ -28,6 +28,9 @@ You can add your code example here
 == Remarks ==
 This can be called before any joysticks are opened.  If no name can be found, this function returns NULL.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_NumHaptics]]
 
