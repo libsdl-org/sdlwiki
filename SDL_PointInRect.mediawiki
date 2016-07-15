@@ -6,7 +6,7 @@
 
 
 = SDL_PointInRect =
-Use this function to check if a point resides inside a rectangle
+Use this function to check if a point resides inside a rectangle.
 
 
 
