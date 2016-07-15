@@ -16,13 +16,13 @@ int SDL_HapticUpdateEffect(SDL_Haptic*       haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device that has the effect
+|the SDL_Haptic device that has the effect
 |-
 |'''effect'''
-|^the index of the^ effect to update
+|the index of the effect to update
 |-
 |'''data'''
-|^an [[SDL_HapticEffect]] structure containing the^ new effect properties to use
+|an [[SDL_HapticEffect]] structure containing the new effect properties to use
 |}
 
 == Return Value ==
@@ -34,7 +34,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-Can be used dynamically, although behavior when dynamically changing direction may be strange. Specifically the effect may re-upload itself and start playing from the start. You ^also^ cannot change the type ,,either,, when running [[SDL_HapticUpdateEffect]]().
+Can be used dynamically, although behavior when dynamically changing direction may be strange. Specifically the effect may re-upload itself and start playing from the start. You also cannot change the type either when running [[SDL_HapticUpdateEffect]]().
 
 == Version ==
 This function is available since SDL 2.0.0.
