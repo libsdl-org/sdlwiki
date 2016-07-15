@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticGetEffectStatus =
-Use this function to get the status of the current effect on the ^specified^ haptic device.
+Use this function to get the status of the current effect on the specified haptic device.
 
 
 == Syntax ==
@@ -15,10 +15,10 @@ int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to query ^for^ ,,the,, effect status ,,on,,
+|the SDL_Haptic device to query for the effect status on
 |-
 |'''effect'''
-|^the ID^ ,,identifier,, of the ^haptic^ effect to query ,,its status,,
+|the <!-- ID --> identifier of the haptic effect to query its status
 |}
 
 == Return Value ==
