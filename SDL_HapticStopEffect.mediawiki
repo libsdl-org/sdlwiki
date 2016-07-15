@@ -15,10 +15,10 @@ int SDL_HapticStopEffect(SDL_Haptic* haptic,
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to stop the effect on
+|the SDL_Haptic device to stop the effect on
 |-
 |'''effect'''
-|^ID^ ,,identifier,, of the ^haptic^ effect to stop
+|the <!-- ID --> identifier of the haptic effect to stop
 |}
 
 == Return Value ==
