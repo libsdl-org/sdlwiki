@@ -22,7 +22,6 @@ SDL_bool SDL_HasIntersection(const SDL_Rect* A,
 
 == Return Value ==
 Returns SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
-If either pointer is NULL the function will return SDL_FALSE.
 
 == Code Examples ==
 ```c++
@@ -30,7 +29,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If either pointer is NULL the function will return SDL_FALSE.
 
 == Version ==
 This function is available since SDL 2.0.0.
