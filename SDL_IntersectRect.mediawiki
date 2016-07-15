@@ -33,7 +33,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-''You can add useful comments here''
+If '''result''' is NULL then this function will return SDL_FALSE.
 
 == Version ==
 This function is available since SDL 2.0.0.
