@@ -3,7 +3,7 @@
 '''DRAFT'''
 
 = SDL_HapticRumbleInit =
-Use this function to initialize ,,the,, ^a^ haptic device for simple rumble playback.
+Use this function to initialize the <!-- a --> haptic device for simple rumble playback.
 
 
 == Syntax ==
