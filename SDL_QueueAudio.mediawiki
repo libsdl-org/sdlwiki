@@ -45,6 +45,8 @@ You can add your code example here
 
 
 == Remarks ==
+If you are looking to retrieve queued audio from a non-callback capture device, you want [[SDL_DequeueAudio]]() instead.  SDL_QueueAudio() will return -1 to signify an error if you use it with capture devices.
+
 SDL offers two ways to feed audio to the device: you can either supply a callback that SDL triggers with some frequency to obtain more audio (pull method), or you can supply no callback, and then SDL will expect you to supply data at regular intervals (push method) with this function.
 
 There are no limits on the amount of data you can queue, short of exhaustion of address space. Queued data will drain to the device as necessary without further intervention from you. If the device needs audio but there is not enough queued, it will play silence to make up the difference. This means you will have skips in your audio playback if you aren't routinely queueing sufficient data.
