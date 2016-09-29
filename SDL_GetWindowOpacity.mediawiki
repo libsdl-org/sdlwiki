@@ -53,7 +53,7 @@ This function is only supported on DirectFB, X11, Cocoa (Apple Mac OS X) and Mic
 
 
 == Version ==
-This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+This function is available since SDL 2.0.5.
 
 
 == Related Functions ==
