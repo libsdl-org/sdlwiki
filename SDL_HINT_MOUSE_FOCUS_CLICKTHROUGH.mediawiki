@@ -1,3 +1,4 @@
+<!-- # page was renamed from SDL_HINT_MAC_MOUSE_FOCUS_CLICKTHROUGH -->
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
 '''DRAFT'''
