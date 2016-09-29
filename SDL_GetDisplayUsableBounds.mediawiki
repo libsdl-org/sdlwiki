@@ -53,7 +53,7 @@ This function also returns -1 if the parameter '''displayIndex''' is out of rang
 
 
 == Version ==
-This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+This function is available since SDL 2.0.5.
 
 
 == Related Functions ==
