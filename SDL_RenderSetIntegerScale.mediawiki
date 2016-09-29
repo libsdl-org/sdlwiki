@@ -47,7 +47,7 @@ This function restricts the logical viewport to integer values - that is, when a
 
 
 == Version ==
-This function is available in ''unstable'' versions newer than (stable) SDL 2.0.4.
+This function is available since SDL 2.0.5.
 
 
 == Related Functions ==
