@@ -51,6 +51,21 @@ An enumeration of window states.
 |-
 |SDL_WINDOW_MOUSE_CAPTURE
 |window has mouse captured (unrelated to INPUT_GRABBED, >= SDL 2.0.4)
+|-
+|SDL_WINDOW_ALWAYS_ON_TOP
+| window should always be above others (X11 only, >= SDL 2.0.5)
+|-
+|SDL_WINDOW_SKIP_TASKBAR
+|window should not be added to the taskbar (X11 only, >= SDL 2.0.5)
+|-
+|SDL_WINDOW_UTILITY
+|window should be treated as a utility window (X11 only, >= SDL 2.0.5)
+|-
+|SDL_WINDOW_TOOLTIP
+|window should be treated as a tooltip (X11 only, >= SDL 2.0.5)
+|-
+|SDL_WINDOW_POPUP_MENU
+|window should be treated as a popup menu (X11 only, >= SDL 2.0.5)
 |}
 
 == Code Examples ==
