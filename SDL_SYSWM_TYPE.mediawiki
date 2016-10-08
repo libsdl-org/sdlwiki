@@ -36,6 +36,9 @@ An enumeration of the various supported windowing subsystems.
 |-
 |SDL_SYSWM_ANDROID
 |Android (>= SDL 2.0.4)
+|-
+|SDL_SYSWM_VIVANTE
+|Vivante (>= SDL 2.0.5)
 |}
 
 == Code Examples ==
