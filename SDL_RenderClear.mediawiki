@@ -63,6 +63,9 @@ int main(int argc, char* argv[])
 == Remarks ==
 This function clears the entire rendering target, ignoring the viewport.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_SetRenderDrawColor]]
 
