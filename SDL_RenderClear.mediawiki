@@ -61,7 +61,7 @@ int main(int argc, char* argv[])
 ```
 
 == Remarks ==
-This function clears the entire rendering target, ignoring the viewport.
+This function clears the entire rendering target, ignoring the viewport and the clip rectangle.
 
 == Version ==
 This function is available since SDL 2.0.0.
