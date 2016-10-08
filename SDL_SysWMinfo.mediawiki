@@ -135,9 +135,21 @@ A structure that contains system-dependent information about a window.
 |'''android.window'''
 |the Android native window
 |-
-|EGLSurface*
+|EGLSurface
 |'''android.surface'''
 |the Android EGL surface
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_VIVANTE'' (>= SDL 2.0.5)
+|-
+|EGLNativeDisplayType
+|'''vivante.display'''
+|the Vivante EGL display type
+|-
+|EGLNativeWindowType
+|'''vivante.window'''
+|the Vivante EGL window type
 |}
 
 == Code Examples ==
