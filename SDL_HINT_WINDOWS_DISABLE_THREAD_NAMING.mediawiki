@@ -1,0 +1,51 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING =
+A hint that specifies whether SDL should not name threads on Microsoft Windows.
+
+
+
+
+== Values ==
+{|
+|0
+|threads will be named
+|-
+|1
+|threads will not be named
+|}
+
+
+== Default ==
+By default SDL will name threads on Microsoft Windows.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+If the hint is not set then SDL will raise the 0x406D1388 Exception to name threads.  This is the default behavior of SDL.
+
+If the hint is set then SDL will not raise this exception, and threads will be unnamed.  For .NET languages this is required when running under a debugger.
+
+== Version ==
+This hint is available since SDL 2.0.5.
+
+
+== Related Functions ==
+:[[SDL_CreateThread]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
