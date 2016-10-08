@@ -1,0 +1,74 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+'''DRAFT'''
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_CreateRGBSurfaceWithFormatFrom =
+Use this function to allocate an RGB surface from provided pixel data.
+
+
+
+
+== Syntax ==
+```c++
+SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom(void*  pixels,
+                                                int    width,
+                                                int    height,
+                                                int    depth,
+                                                int    pitch,
+                                                Uint32 format)
+```
+
+
+== Function Parameters ==
+{|
+|'''pixels'''
+|the pixel data to create the surface from
+|-
+|'''width'''
+|the width in pixels of the surface to create
+|-
+|'''height'''
+|the height in pixels of the surface to create
+|-
+|'''depth'''
+|the depth in bits of the surface to create
+|-
+|'''pitch'''
+|the number of bytes in a row in '''pixels'''
+|-
+|'''format'''
+|the format of the surface to create
+|}
+
+
+== Return Value ==
+Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+
+
+== Remarks ==
+If the function runs out of memory, it will return NULL.
+
+
+== Version ==
+This function is available since SDL 2.0.5.
+
+
+== Related Functions ==
+:[[SDL_CreateRGBSurfaceWithFormat]]
+:[[SDL_FreeSurface]]
+<!-- #Remove this section if empty -->
+
+----
+[[CategoryAPI]], [[CategorySurface]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
