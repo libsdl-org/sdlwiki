@@ -74,8 +74,15 @@ A structure that contains system-dependent window manager messages.
 |<style="color: #808080;">int
 |<style="color: #808080;">'''uikit.dummy'''
 |<style="color: #808080;">unused (>= SDL 2.0.4)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_VIVANTE''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''vivante.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.5)
 |}
-
 
 == Code Examples ==
 ```c++
