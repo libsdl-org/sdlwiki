@@ -90,6 +90,14 @@ void PrintEvent(const SDL_Event * event)
         case SDL_WINDOWEVENT_CLOSE:
             SDL_Log("Window %d closed", event->window.windowID);
             break;
+#if SDL_VERSION_ATLEAST(2, 0, 5)
+        case SDL_WINDOWEVENT_TAKE_FOCUS:
+            SDL_Log("Window %d is offered a focus", event->window.windowID);
+            break;
+        case SDL_WINDOWEVENT_HIT_TEST:
+            SDL_Log("Window %d has a special hit test", event->window.windowID);
+            break;
+#endif
         default:
             SDL_Log("Window %d got unknown event %d",
                     event->window.windowID, event->window.event);
