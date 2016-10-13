@@ -9,7 +9,7 @@ A structure that contains an event used to request a file open by the system.
 {|
 |Uint32
 |'''type'''
-|the event type; SDL_DROPFILE
+|the event type; SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, or SDL_DROPCOMPLETE
 |-
 |Uint32
 |'''timestamp'''
@@ -17,7 +17,11 @@ A structure that contains an event used to request a file open by the system.
 |-
 |char*
 |'''file'''
-|the file name, which should be freed with SDL_free()
+|the file name, which should be freed with SDL_free(), is NULL on BEGIN/COMPLETE
+|-
+|Uint32
+|'''windowID'''
+|the window that was dropped on, if any
 |}
 
 == Code Examples ==
