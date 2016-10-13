@@ -92,6 +92,10 @@ An opened audio device starts out paused, and should be enabled for playing by c
 The audio callback runs in a separate thread in most cases; you can prevent race conditions between your callback and other threads without fully pausing playback with [[SDL_LockAudioDevice]]().
 
 
+== Version ==
+This function is available since SDL 2.0.0.
+
+
 == Related Functions ==
 :[[SDL_CloseAudioDevice]]
 :[[SDL_GetAudioDeviceName]]
