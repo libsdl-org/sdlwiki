@@ -1,5 +1,6 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
+
 = SDL_OpenAudio =
 This function is a legacy means of opening the audio device. New programs might want to use [[SDL_OpenAudioDevice]]() instead.
 
@@ -51,7 +52,7 @@ if (SDL_OpenAudio(&want, &have) < 0) {
 
 == Remarks ==
 
-This function remains for compatibility with SDL 1.2, but also because it's slightly easier to use than the new functions in SDL2. The new, more powerful, and preferred way to do this is [[SDL_OpenAudioDevice]]().
+This function remains for compatibility with SDL 1.2, but also because it's slightly easier to use than the new functions in SDL 2.0. The new, more powerful, and preferred way to do this is [[SDL_OpenAudioDevice]]().
 
 This function is roughly equivalent to:
 ```c++
@@ -63,10 +64,10 @@ With two notable exceptions:
 * The return value is always success or failure, and not a device ID, which means you can only have one device open at a time with this function.
 
 == Related Functions ==
-: [[SDL_CloseAudio]]
-: [[SDL_LockAudio]]
-: [[SDL_PauseAudio]]
-: [[SDL_UnlockAudio]]
+:[[SDL_CloseAudio]]
+:[[SDL_LockAudio]]
+:[[SDL_PauseAudio]]
+:[[SDL_UnlockAudio]]
 
 
 ----
