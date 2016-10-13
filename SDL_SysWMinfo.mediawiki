@@ -40,7 +40,7 @@ A structure that contains system-dependent information about a window.
 |<bgcolor="#EDEDED">''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)
 |-
 |IInspectable*
-|'''win.window'''
+|'''winrt.window'''
 |the WinRT !CoreWindow
 |-
 |
