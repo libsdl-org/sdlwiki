@@ -99,6 +99,11 @@ SDL_DROPTEXT, SDL_DROPBEGIN, and SDL_DROPCOMPLETE are available since SDL 2.0.5.
 === Mac OS X ===
 To enable drag&drop on your SDL app, you must ''also'' edit your info.plist file. Add/Modify '''Document Types.''' For example, to enable all document types, add the "public.data" mime type as a document type.
 
+
+== Version ==
+This structure is available since SDL 2.0.0.
+
+
 == Related Enumerations ==
 :[[SDL_EventType]]
 
