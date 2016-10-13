@@ -40,10 +40,10 @@ want.samples = 4096;
 want.callback = MyAudioCallback;  // you wrote this function elsewhere.
 
 if (SDL_OpenAudio(&want, &have) < 0) {
-    printf("Failed to open audio: %s\n", SDL_GetError());
+    SDL_Log("Failed to open audio: %s", SDL_GetError());
 } else {
     if (have.format != want.format)
-        printf("We didn't get Float32 audio format.\n");
+        SDL_Log("We didn't get Float32 audio format.");
     SDL_PauseAudio(0);  // start audio playing.
     SDL_Delay(5000);  // let the audio callback play some sound for 5 seconds.
     SDL_CloseAudio();
