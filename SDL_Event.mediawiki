@@ -196,7 +196,7 @@ SDL_PushEvent(&user_event);
 |[[SDL_DollarGestureEvent]]
 |'''dgesture'''
 |-
-|SDL_DROPFILE
+|SDL_DROPFILE<br/>SDL_DROPTEXT<br/>SDL_DROPBEGIN<br/>SDL_DROPCOMPLETE
 |[[SDL_DropEvent]]
 |'''drop'''
 |-
