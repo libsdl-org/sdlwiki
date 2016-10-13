@@ -51,6 +51,12 @@ An enumeration of window events.
 |-
 |SDL_WINDOWEVENT_CLOSE
 |the window manager requests that the window be closed
+|-
+|SDL_WINDOWEVENT_TAKE_FOCUS
+|window is being offered a focus (should [[SDL_SetWindowInputFocus]]() on itself or a subwindow, or ignore) (>= SDL 2.0.5)
+|-
+|SDL_WINDOWEVENT_HIT_TEST
+|window had a hit test that wasn't SDL_HITTEST_NORMAL (>= SDL 2.0.5)
 |}
 
 == Code Examples ==
