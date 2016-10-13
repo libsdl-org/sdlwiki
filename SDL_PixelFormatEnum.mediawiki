@@ -129,6 +129,18 @@ An enumeration of pixel formats.
 |SDL_PIXELFORMAT_ARGB2101010
 |
 |-
+|SDL_PIXELFORMAT_RGBA32
+|alias for RGBA byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_ARGB32
+|alias for ARGB byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_BGRA32
+|alias for BGRA byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_ABGR32
+|alias for ABGR byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
 |SDL_PIXELFORMAT_YV12
 |planar mode: Y + V + U (3 planes)
 |-
@@ -143,6 +155,12 @@ An enumeration of pixel formats.
 |-
 |SDL_PIXELFORMAT_YVYU
 |packed mode: Y0+V0+Y1+U0 (1 plane)
+|-
+|SDL_PIXELFORMAT_NV12
+|planar mode: Y + U/V interleaved (2 planes) (>= SDL 2.0.4)
+|-
+|SDL_PIXELFORMAT_NV21
+|planar mode: Y + V/U interleaved (2 planes) (>= SDL 2.0.4)
 |}
 <!-- #End Include here. -->
 
