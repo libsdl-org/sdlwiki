@@ -65,7 +65,7 @@ if (dev == 0) {
 == Remarks ==
 [[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As such, this function will never return a 1 so as not to conflict with the legacy function.
 
-Please note that SDL 2.0 does not support recording yet; as such, this function will fail if '''iscapture''' is not zero. In the future, when recording is implemented, this value can be non-zero.
+Please note that SDL 2.0 before 2.0.5 did not support recording; as such, this function was failing if '''iscapture''' was not zero. Starting with SDL 2.0.5 recording is implemented and this value can be non-zero.
 
 <span id="device"></span> Passing in a '''device''' name of NULL requests the most reasonable default (and is equivalent to what [[SDL_OpenAudio]]() does to choose a device).
 The '''device''' name is a UTF-8 string reported by [[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and driver-specific strings, such as a hostname/IP address for a remote audio server, or a filename in the diskaudio driver.
