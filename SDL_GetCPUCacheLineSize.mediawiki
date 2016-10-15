@@ -11,7 +11,7 @@ int SDL_GetCPUCacheLineSize(void)
 ```
 
 == Return Value ==
-Returns the L1 cache line size of the CPU, in kilobytes.
+Returns the L1 cache line size of the CPU, in bytes.
 
 == Code Examples ==
 ```c++
