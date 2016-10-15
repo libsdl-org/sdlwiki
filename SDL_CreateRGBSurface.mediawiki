@@ -90,6 +90,7 @@ You can change this by calling [[SDL_SetSurfaceBlendMode]]() and selecting a dif
 
 
 == Related Functions ==
+:[[SDL_CreateRGBSurfaceWithFormat]]
 :[[SDL_CreateRGBSurfaceFrom]]
 :[[SDL_FreeSurface]]
 
