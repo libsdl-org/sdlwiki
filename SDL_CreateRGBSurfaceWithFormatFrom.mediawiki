@@ -40,7 +40,7 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom(void*  pixels,
 |the number of bytes in a row in '''pixels'''
 |-
 |'''format'''
-|the format of the surface to create
+|the [[SDL_PixelFormatEnum|pixel format]] of the surface to create
 |}
 
 
