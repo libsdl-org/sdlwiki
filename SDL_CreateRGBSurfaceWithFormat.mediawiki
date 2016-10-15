@@ -46,10 +46,16 @@ Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError
 
 == Code Examples ==
 ```c++
-You can add your code example here
-```
+    /* Create a 32-bit surface with the bytes of each pixel in R,G,B,A order,
+       as expected by OpenGL for textures */
 
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+    SDL_Surface* surf;
+    surf = SDL_CreateRGBSurfaceWithFormat(0, width, height, 32, SDL_PIXELFORMAT_RGBA32);
+    if(surf == NULL) {
+        fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
+        exit(1);
+    }
+```
 
 
 == Remarks ==
