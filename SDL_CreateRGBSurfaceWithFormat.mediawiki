@@ -36,7 +36,7 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormat(Uint32 flags,
 |the depth in bits of the surface to create
 |-
 |'''format'''
-|the format of the surface to create
+|the [[SDL_PixelFormatEnum|pixel format]] of the surface to create
 |}
 
 
