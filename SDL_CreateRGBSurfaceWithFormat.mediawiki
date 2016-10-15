@@ -61,6 +61,7 @@ This function is available since SDL 2.0.5.
 
 
 == Related Functions ==
+:[[SDL_CreateRGBSurface]]
 :[[SDL_CreateRGBSurfaceWithFormatFrom]]
 :[[SDL_FreeSurface]]
 <!-- #Remove this section if empty -->
