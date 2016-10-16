@@ -97,6 +97,9 @@ stbi_image_free(data);
 == Remarks ==
 If the function runs out of memory, it will return NULL.
 
+<!-- # TODO: something about depth being 4 or 8 and palettes, like in SDL_CreateRGBSurface ? -->
+
+No copy is made of the pixel data.  Pixel data is not managed automatically; you must free the surface before you free the pixel data.
 
 == Version ==
 This function is available since SDL 2.0.5.
