@@ -96,6 +96,7 @@ SDL_Surface* surf = SDL_CreateRGBSurfaceFrom((void*)data, width, height, depth, 
 
 if(surf == NULL) {
 	fprintf(stderr, "Creating surface failed: %s\n", SDL_GetError());
+	stbi_image_free(data);
 	exit(1);
 }
 
