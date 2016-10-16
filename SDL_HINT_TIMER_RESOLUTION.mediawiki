@@ -31,7 +31,7 @@ You can add your code example here
 
 
 == Remarks ==
-The higher resolution the timer, the more frequently the CPU services timer interrupts, and the more precise delays are, but this takes up power and CPU time. This hint is only used on Windows 7 and earlier.
+The higher resolution the timer, the more frequently the CPU services timer interrupts, and the more precise delays are, but this takes up power and CPU time. This hint is only used on Windows, but not supported on WinRT.
 
 See this blog post for more information:
 http://randomascii.wordpress.com/2013/07/08/windows-timer-resolution-megawatts-wasted/
