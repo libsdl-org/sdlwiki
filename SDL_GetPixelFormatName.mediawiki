@@ -21,7 +21,12 @@ Returns the human readable name of the specified pixel format or <code>"SDL_PIXE
 
 == Code Examples ==
 ```c++
-You can add your code example here
+SDL_Surface* surface = ...; // a valid surface from wherever.
+SDL_PixelFormat* pixelFormat = surface->format;
+Uint32 pixelFormatEnum = pixelFormat->format;
+const char* surfacePixelFormatName = SDL_GetPixelFormatName(pixelFormatEnum);
+printf("The surface's pixelformat is %s\n", surfacePixelFormatName);
+// prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
 ```
 
 == Remarks ==
