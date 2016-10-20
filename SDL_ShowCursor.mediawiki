@@ -23,7 +23,7 @@ Returns SDL_ENABLE if the cursor is shown, or SDL_DISABLE if the cursor is hidde
 
 == Code Examples ==
 ```c++
-int main(int argc, char** argv) {
+int main(int argc, char *argv[]) {
     /* creates a blank cursor */
     SDL_ShowCursor(SDL_DISABLE);
     /* ... */
