@@ -70,13 +70,13 @@ Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; c
 
     surface = SDL_CreateRGBSurface(0, width, height, 32,
                                    rmask, gmask, bmask, amask);
-    if(surface == NULL) {
-        fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
+    if (surface == NULL) {
+        SDL_Log("CreateRGBSurface failed: %s", SDL_GetError());
         exit(1);
     }
 
     /* or using the default masks for the depth: */
-    surface = SDL_CreateRGBSurface(0,width,height,32,0,0,0,0);
+    surface = SDL_CreateRGBSurface(0, width, height, 32, 0, 0, 0, 0);
 ```
 
 == Remarks ==
