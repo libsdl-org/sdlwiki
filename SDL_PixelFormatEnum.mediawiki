@@ -269,7 +269,7 @@ You can add your code example here
 === SDL_PIXELFORMAT_*32 aliases ===
 SDL_PIXELFORMAT_RGBA32 is an alias for SDL_PIXELFORMAT_RGBA8888 on big endian machines and for SDL_PIXELFORMAT_ABGR8888 on little endian machines, so you can use it to specify that your pixels are represented as RGBA byte arrays, like SDL_PIXELFORMAT_RGB24 is for RGB byte arrays. <br/>
 However, being just an alias, it has the exact same value of the aliased type so [[SDL_GetPixelFormatName]](SDL_PIXELFORMAT_RGBA32) will return the name of the aliased type (e.g. "SDL_PIXELFORMAT_ABGR8888"), depending on your platform.<br/>
-The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXELFORMAT_ABGR32 (with the only difference that they alias other pixelformats, of course). The SDL_PIXELFORMAT_*32 aliases are available since SDL 2.0.5.
+The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXELFORMAT_ABGR32 (with the only difference that they alias other pixel formats, of course). The SDL_PIXELFORMAT_*32 aliases are available since SDL 2.0.5.
 
 == Related Structures ==
 :[[SDL_DisplayMode]]
@@ -278,11 +278,11 @@ The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXEL
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
+:[[SDL_GetPixelFormatName]]
 :[[SDL_MasksToPixelFormatEnum]]
 :[[SDL_PixelFormatEnumToMasks]]
 :[[SDL_QueryTexture]]
 :[[SDL_RenderReadPixels]]
-:[[SDL_GetPixelFormatName]]
 
 ----
 [[CategoryEnum]], [[CategoryPixels]]
