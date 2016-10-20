@@ -62,8 +62,8 @@ int req_format = STBI_rgb_alpha;
 int width, height, orig_format;
 unsigned char* data = stbi_load("./test.png", &width, &height, &orig_format, req_format);
 if(data == NULL) {
-	fprintf(stderr, "Loading image failed: %s\n", stbi_failure_reason());
-	exit(1);
+  SDL_Log("Loading image failed: %s", stbi_failure_reason());
+  exit(1);
 }
 
 // Set up the pixel format color masks for RGB(A) byte arrays.
@@ -83,21 +83,21 @@ Uint32 rmask, gmask, bmask, amask;
 #endif
 
 int depth, pitch;
-if(req_format == STBI_rgb) {
-	depth = 24;
-	pitch = 3*width; // 3 bytes per pixel * pixels per row
+if (req_format == STBI_rgb) {
+  depth = 24;
+  pitch = 3*width; // 3 bytes per pixel * pixels per row
 } else { // STBI_rgb_alpha (RGBA)
-	depth = 32;
-	pitch = 4*width;
+  depth = 32;
+  pitch = 4*width;
 }
 
 SDL_Surface* surf = SDL_CreateRGBSurfaceFrom((void*)data, width, height, depth, pitch,
-					     rmask, gmask, bmask, amask);
+                                             rmask, gmask, bmask, amask);
 
-if(surf == NULL) {
-	fprintf(stderr, "Creating surface failed: %s\n", SDL_GetError());
-	stbi_image_free(data);
-	exit(1);
+if (surf == NULL) {
+  SDL_Log("Creating surface failed: %s", SDL_GetError());
+  stbi_image_free(data);
+  exit(1);
 }
 
 // ... do something useful with the surface ...
