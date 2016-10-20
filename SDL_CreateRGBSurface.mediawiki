@@ -45,7 +45,7 @@ SDL_Surface* SDL_CreateRGBSurface(Uint32 flags,
 |}
 
 == Return Value ==
-Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information. 
+Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
 ```c++
@@ -80,18 +80,18 @@ Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; c
 ```
 
 == Remarks ==
-If '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If '''depth''' is greater than 8 bits, the pixel format is set using the [RGBA]mask parameters. 
+If '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If '''depth''' is greater than 8 bits, the pixel format is set using the [RGBA]mask parameters.
 
 The [RGBA]mask parameters are the bitmasks used to extract that color from a pixel. For instance, '''Rmask''' being FF000000 means the red data is stored in the most  significant byte. Using zeros for the RGB masks sets a default value, based on the depth. (e.g. SDL_CreateRGBSurface(0,w,h,32,0,0,0,0);) However, using zero for the Amask results in an Amask of 0.
 
-By default surfaces with an alpha mask are set up for blending as with 
-:```SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND)```  
+By default surfaces with an alpha mask are set up for blending as with
+:```SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND)```
 You can change this by calling [[SDL_SetSurfaceBlendMode]]() and selecting a different <code>blendMode</code>.
 
 
 == Related Functions ==
-:[[SDL_CreateRGBSurfaceWithFormat]]
 :[[SDL_CreateRGBSurfaceFrom]]
+:[[SDL_CreateRGBSurfaceWithFormat]]
 :[[SDL_FreeSurface]]
 
 ----
