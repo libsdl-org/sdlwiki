@@ -71,7 +71,7 @@ Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; c
     surface = SDL_CreateRGBSurface(0, width, height, 32,
                                    rmask, gmask, bmask, amask);
     if (surface == NULL) {
-        SDL_Log("CreateRGBSurface failed: %s", SDL_GetError());
+        SDL_Log("SDL_CreateRGBSurface() failed: %s", SDL_GetError());
         exit(1);
     }
 
