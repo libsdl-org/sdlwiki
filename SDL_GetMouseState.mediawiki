@@ -39,6 +39,7 @@ The current button state is returned as a button bitmask, which can be tested us
 
 == Related Functions ==
 :[[SDL_GetRelativeMouseState]]
+:[[SDL_GetGlobalMouseState]]
 :[[SDL_PumpEvents]]
 
 ----
