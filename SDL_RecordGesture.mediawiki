@@ -45,6 +45,9 @@ You can add your code example here
 If the parameter is -1 (i.e., all devices), this function will always return 1, regardless of whether there actually are any devices.
 
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 
 == Related Functions ==
 :[[SDL_GetTouchDevice]]
