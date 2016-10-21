@@ -6,7 +6,7 @@
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
 
-= SDL_SaveAllDollarTemplates  =
+= SDL_SaveAllDollarTemplates =
 Use this function to save all currently loaded Dollar Gesture templates.
 
 
@@ -21,7 +21,7 @@ int SDL_SaveAllDollarTemplates(SDL_RWops* dst)
 == Function Parameters ==
 {|
 |'''dst'''
-|a SDL_RWops to save to
+|a [[SDL_RWops]] to save to
 |}
 
 == Return Value ==
