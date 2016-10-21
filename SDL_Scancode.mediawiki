@@ -11,11 +11,12 @@ An enumeration of the SDL keyboard scancode representation.
 
 == Code Examples ==
 ```c++
-  //checks if a key is being remapped and prints what the remapping is
-  if(event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
-    printf("Physical %s key acting as %s key",
+  /* checks if a key is being remapped and prints what the remapping is */
+  if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym)) {
+    SDL_Log("Physical %s key acting as %s key",
       SDL_GetScancodeName(event->key.keysym.scancode),
       SDL_GetKeyName(event->key.keysym.sym));
+  }
 ```
 
 == Remarks ==
