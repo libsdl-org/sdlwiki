@@ -33,6 +33,10 @@ You can add your code example here
 == Remarks ==
 This is also known as Z-order.  The variable can take a negative or positive value.
 
+
+== Version ==
+This hint is available since SDL 2.0.5.
+
 ----
 [[CategoryDefine]], [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
