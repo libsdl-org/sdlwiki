@@ -25,6 +25,8 @@ The beginning event number, or (Uint32)-1 if there are not enough user-defined e
 == Remarks ==
 Calling this function with '''numevents''' <= 0 is an error and will return (Uint32)-1.
 
+Note,  (Uint32)-1 means the maximum unsigned 32bit integer value (or 0xFFFFFFFF), but is clearer to write.
+
 == Related Functions ==
 :[[SDL_PushEvent]]
 
