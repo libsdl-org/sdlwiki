@@ -63,7 +63,6 @@ This structure is available since SDL 2.0.0.
 == Related Structures ==
 :[[SDL_Event]]
 
-== Related Functions ==
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]
