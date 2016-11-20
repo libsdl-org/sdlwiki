@@ -17,11 +17,11 @@ A structure that contains finger touch event information.
 |-
 |SDL_TouchID
 |'''touchId'''
-|the touch device index
+|the touch device id
 |-
 |SDL_FingerID
 |'''fingerId'''
-|the finger index
+|the finger id
 |-
 |float
 |'''x'''
