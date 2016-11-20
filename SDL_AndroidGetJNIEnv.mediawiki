@@ -9,7 +9,7 @@ Use this function to retrieve the Java native interface object (JNIEnv) of the c
 
 == Syntax ==
 ```c++
-void* SDL_AndroidGetJNIEnv(void)
+void* SDL_AndroidGetJNIEnv()
 ```
 
 == Return Value ==
