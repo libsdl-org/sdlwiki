@@ -15,7 +15,7 @@ A structure that contains touch information.
 {|
 |SDL_FingerID
 |'''id'''
-|the finger index
+|the finger id
 |-
 |float
 |'''x'''
