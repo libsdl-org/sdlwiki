@@ -8,7 +8,7 @@ Use this function to retrieve the Java instance of the activity class in an Andr
 
 == Syntax ==
 ```c++
-void* SDL_AndroidGetActivity(void)
+void* SDL_AndroidGetActivity()
 ```
 
 == Return Value ==
