@@ -24,9 +24,9 @@ Returns 1 if there is a pending event or 0 if there are none available.
 while (1) {
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
-         // handle your event here
+        /* handle your event here */
     }
-    // do some other stuff here -- draw your app, etc.
+    /* do some other stuff here -- draw your app, etc. */
 }
 ```
 
