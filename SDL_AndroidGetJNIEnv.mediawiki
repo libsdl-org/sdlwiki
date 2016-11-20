@@ -20,9 +20,9 @@ Returns a pointer to Java native interface object (JNIEnv) to which the current 
 #include "SDL.h"
 #include <jni.h>
 
-// This example requires C++
+// This example requires C++ and a custom Java method named "void showHome()"
 
-// Calls the void showHome() method of the Java instance of MyActivity.
+// Calls the void showHome() method of the Java instance of the activity.
 void showHome(void)
 {
     // retrieve the JNI environment.
