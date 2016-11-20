@@ -52,6 +52,11 @@ You can add your code example here
 == Remarks ==
 [[SDL_TouchFingerEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP is reported.  You would access it through the event's <code>tfinger</code> field.
 
+
+== Version ==
+This structure is available since SDL 2.0.0.
+
+
 == Related Enumerations ==
 :[[SDL_EventType]]
 
