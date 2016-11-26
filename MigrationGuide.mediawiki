@@ -27,10 +27,11 @@ These are the most important new features in SDL 2.0:
 * Support for multiple windows
 * Support for multiple displays
 * Support for multiple audio devices
+* Audio recording support
 * Android and iOS support
 * Emscripten and Native Client support
 * Simple 2D rendering API that can use Direct3D, OpenGL, OpenGL ES, or software rendering behind the scenes
-* Force Feedback available on Windows, Mac OS X and Linux
+* Force Feedback
 * XInput and XAudio2 support for Windows
 * Atomic operations
 * Power management (exposes battery life remaining, etc)
@@ -42,6 +43,7 @@ These are the most important new features in SDL 2.0:
 * Better keyboard support (scancodes vs keycodes, etc).
 * Message boxes
 * Clipboard support
+* APIs for building robust GUI toolkits on top of SDL
 * Basic Drag'n'Drop support
 * Proper unicode input and IME support
 * [[CategoryAssertions|A really powerful assert macro]]
