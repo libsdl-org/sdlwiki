@@ -418,6 +418,8 @@ SDL_AddEventWatch(myEventFilter, data);
 
 Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to SDL_touch.h for a list of these functions, and look for [[SDL_Finger]]* in SDL_events.h.
 
+Note that SDL will also map simple touches to look like mouse events (with the mouse event's "which" field set to SDL_TOUCH_MOUSEID), which means that if you don't care about more complex touch interfaces, your existing desktop app might still work out of the box on a phone where the user is poking the screen with a finger. As such: mobile-aware apps should probably ignore SDL_TOUCH_MOUSEID events, but still respect "real" mouse events in addition to the touch events--some mobile devices support USB and Bluetooth mice, after all!--but this is something to consider more deeply when you start to polish your app, after you are up and running on SDL2.
+
 There are a handful of other mobile-friendly functions, like [[SDL_StartTextInput]](), which will show the on-screen keyboard. Make use of them.
 
 In addition, there are also Android and iOS specific functions, to let you access platform-specific features that wouldn't make sense in a general API. Refer to SDL_system.h for a list of these functions.
