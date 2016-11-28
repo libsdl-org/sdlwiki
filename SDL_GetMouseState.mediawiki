@@ -38,8 +38,8 @@ The current button state is returned as a button bitmask, which can be tested us
 <!-- <span style="color: green;">Suggest splitting the first sentence into two.  Should the subscripted portion be removed to reflect the lack of multi-mouse support?</span> -->
 
 == Related Functions ==
-:[[SDL_GetRelativeMouseState]]
 :[[SDL_GetGlobalMouseState]]
+:[[SDL_GetRelativeMouseState]]
 :[[SDL_PumpEvents]]
 
 ----
