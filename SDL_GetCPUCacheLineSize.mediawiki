@@ -21,6 +21,9 @@ You can add your code example here
 == Remarks ==
 This is useful for determining multi-threaded structure padding or SIMD prefetch sizes.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
