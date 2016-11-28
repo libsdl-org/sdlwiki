@@ -13,6 +13,9 @@ An enumeration of the predefined log categories.
 |SDL_LOG_CATEGORY_ERROR
 |error log
 |-
+|SDL_LOG_CATEGORY_ASSERT
+|assert log
+|-
 |SDL_LOG_CATEGORY_SYSTEM
 |system log
 |-
@@ -27,6 +30,9 @@ An enumeration of the predefined log categories.
 |-
 |SDL_LOG_CATEGORY_INPUT
 |input log
+|-
+|SDL_LOG_CATEGORY_TEST
+|test log
 |-
 |<rowstyle="color: #808080;">SDL_LOG_CATEGORY_RESERVED#
 |# = 1-10; reserved for future SDL library use
