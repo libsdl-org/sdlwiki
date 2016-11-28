@@ -22,7 +22,7 @@ Uint32 SDL_GetMouseState(int* x,
 |}
 
 == Return Value ==
-Returns a 32 bit button bitmask of the current button state.
+Returns a 32-bit button bitmask of the current button state.
 
 == Code Examples ==
 ```c++
