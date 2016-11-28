@@ -27,6 +27,9 @@ Calling this function with '''numevents''' <= 0 is an error and will return (Uin
 
 Note, (Uint32)-1 means the maximum unsigned 32-bit integer value (or 0xFFFFFFFF), but is clearer to write.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_PushEvent]]
 
