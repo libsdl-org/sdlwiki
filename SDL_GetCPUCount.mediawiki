@@ -14,7 +14,7 @@ Returns the total number of logical CPU cores. On CPUs that include technologies
 
 == Code Examples ==
 ```c++
-printf("Number of logical CPU cores: %d\n", SDL_GetCPUCount());
+SDL_Log("Number of logical CPU cores: %d", SDL_GetCPUCount());
 ```
 
 == Remarks ==
