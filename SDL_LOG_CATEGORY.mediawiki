@@ -51,7 +51,7 @@ You can add your code example here
 By default the APPLICATION category is enabled at the SDL_LOG_PRIORITY_INFO level and all other categories are enabled at the SDL_LOG_PRIORITY_CRITICAL level.  See [[SDL_LogPriority]] for details.
 
 SDL_LOG_CATEGORY_CUSTOM is reserved for application use; for example:
- ```
+ ```c++
 enum {
       MYAPP_CATEGORY_AWESOME1 = SDL_LOG_CATEGORY_CUSTOM,
       MYAPP_CATEGORY_AWESOME2,
