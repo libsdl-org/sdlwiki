@@ -35,6 +35,10 @@ A structure that contains system-dependent information about a window.
 |'''win.hdc'''   
 |the window device context (>= SDL 2.0.4)
 |-
+|HINSTANCE 
+|'''win.hinstance'''   
+|the window hinstance (>= SDL 2.0.6)
+|-
 |
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)
