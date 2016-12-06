@@ -47,7 +47,7 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
 
 While this provides a good overview, it may not be accurate for all platforms.
 
-There are multiple input method styles which you can read about [http://www.mozilla.org/projects/intl/input-method-spec.html here]. SDL supports "on-the-spot" mode. This has an important implication: the application is responsible for drawing the composition.
+There are multiple input method styles which you can read about [http://www-archive.mozilla.org/projects/intl/input-method-spec.html here]. SDL supports "on-the-spot" mode. This has an important implication: the application is responsible for drawing the composition.
 
 == SDL ==
 So how does SDL handle text input?
