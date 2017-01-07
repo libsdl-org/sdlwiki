@@ -28,14 +28,15 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 int main(int argc, char** argv) {
     if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
         fprintf(stderr,
-                "\nUnable to initialize SDL:  %s\n",
+                "Unable to initialize SDL: %s\n",
                 SDL_GetError()
                );
         return 1;
     }
-    atexit(SDL_Quit);
 
     /* ... */
+
+    SDL_Quit();
 
     return 0;
 }
