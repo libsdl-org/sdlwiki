@@ -83,6 +83,9 @@ int main(int argc, char* argv[])
 == Remarks ==
 [[SDL_RenderDrawLine]]() draws the line to include both end points.  If you want to draw multiple, connecting lines use [[SDL_RenderDrawLines]]() instead.
 
+== Version ==
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
