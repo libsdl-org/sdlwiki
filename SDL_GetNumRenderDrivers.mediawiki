@@ -21,6 +21,8 @@ You can add your code example here
 == Remarks ==
 A render driver is a set of code that handles rendering and texture management on a particular display.  Normally there is only one, but some drivers may have several available with different capabilities.
 
+There may be none if SDL was compiled without render support.
+
 == Related Functions ==
 :[[SDL_CreateRenderer]]
 :[[SDL_GetRenderDriverInfo]]
