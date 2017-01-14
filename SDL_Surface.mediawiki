@@ -64,7 +64,7 @@ void WipeSurface(SDL_Surface *surface)
     SDL_LockSurface(surface);
 
     /* This assumes that color value zero is black. Use
-       SDL_MapRGBA() for more robust surface color mapping!. */
+       SDL_MapRGBA() for more robust surface color mapping! */
     /* height times pitch is the size of the surface's whole buffer. */
     SDL_memset(surface->pixels, 0, surface->h * surface->pitch);
 
