@@ -26,7 +26,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 #include <stdlib.h> /* for atexit() */
 
 int main(int argc, char** argv) {
-    if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) != 0) {
+    if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0) {
         fprintf(stderr,
                 "Unable to initialize SDL: %s\n",
                 SDL_GetError()
