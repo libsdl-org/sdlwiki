@@ -22,15 +22,11 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 == Code Examples ==
 ```c++
 #include "SDL.h"
-#include <stdio.h> /* for fprintf() and stderr */
 
 int main(int argc, char* argv[])
 {
     if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) != 0) {
-        fprintf(stderr,
-                "Unable to initialize SDL: %s\n",
-                SDL_GetError()
-               );
+        SDL_Log("Unable to initialize SDL: %s\n", SDL_GetError());
         return 1;
     }
 
