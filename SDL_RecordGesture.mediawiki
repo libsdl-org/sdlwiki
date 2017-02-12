@@ -23,7 +23,7 @@ int SDL_RecordGesture(SDL_TouchID touchId)
 == Function Parameters ==
 {|
 |'''touchId'''
-|the touch device index, or -1 for all touch devices
+|the touch device id, or -1 for all touch devices
 |}
 
 
