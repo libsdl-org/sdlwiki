@@ -17,14 +17,16 @@ Endianness comes in two forms - big and little.
 * SDL_LIL_ENDIAN means byte order is 1234, where the least significant byte is stored first
 * SDL_BIG_ENDIAN means byte order is 4321, where the most significant byte is stored last
 
-: ''Example:''  Imagine the 32bit integer number ```16,909,060``` in decimal.  In hexadecimal that would be {{{0x01020304}}}. 
-0x01 is the most significant byte (the one that increases the value the most.  0x04 is the least significant byte (as it increases the value the least).
 
-  When that is stored in memory on a little-endian system they are stored with the least significant byte first, producing the byte stream:
- ```0x04 0x03 0x02 0x01```
+''Example:''  Imagine the 32bit integer number ```16,909,060``` in decimal.
+ In hexadecimal that would be ~+```0x01020304```+~. <br/>
+ ```0x01``` is the most significant byte (the one that increases the value the most.  {{{0x04}}} is the least significant byte (as it increases the value the least).<br/>
 
-  When that is stored in memory on a big-endian system they are stored with the most significant byte first, producing the byte stream:
- ```0x01 0x02 0x03 0x04```
+ When that is stored in memory on a little-endian system they are stored with the least significant byte first, producing the byte stream:
+  ```0x04 0x03 0x02 0x01```<br/>
+
+ When that is stored in memory on a big-endian system they are stored with the most significant byte first, producing the byte stream:
+  ```0x01 0x02 0x03 0x04```<br/>
 
 For further information ab out Endianness read the [https://en.wikipedia.org/wiki/Endianness Wikipedia] article on the subject.
 
