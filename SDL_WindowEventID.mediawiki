@@ -63,6 +63,7 @@ An enumeration of window events.
 <<Include(<SDL_WindowEvent>, , , from="##Example1 Start", to="##End")>>
 
 ```c++
+#include <stdlib.h>
 #include "SDL.h"
 
 int main(int argc, char *argv[])  {
