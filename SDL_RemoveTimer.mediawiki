@@ -23,11 +23,11 @@ Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't found.
 ```c++
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
 
-...
+/* ... */
 
 SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
 
-...
+/* ... */
 
 SDL_RemoveTimer(my_timer_id);
 ```
