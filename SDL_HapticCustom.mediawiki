@@ -18,7 +18,7 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM (a custom) effect
 |-
 |[[SDL_HapticDirection]]
 |'''direction'''
-|direction of the effect ^(relative to the user)^
+|direction of the effect (relative to the user)
 |-
 |
 |
