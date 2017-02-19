@@ -14,7 +14,7 @@ int SDL_HapticPause(SDL_Haptic* haptic)
 == Function Parameters ==
 {|
 |'''haptic'''
-|^the^ SDL_Haptic device to pause
+|the SDL_Haptic device to pause
 |}
 
 == Return Value ==
