@@ -13,9 +13,9 @@ This category contains functions for handling endian-specific values.
 
 Simple data types like integers and floats consist of several bytes. A 32bit integer (Sint32), for example, uses four bytes (as each byte has 8 bits). Endianness describes how the system orders the bytes of this value in memory.
 
-Endianness comes in two forms - big and little.  
+Endianness comes in two forms - big and little.
 * SDL_LIL_ENDIAN means byte order is 1234, where the least significant byte is stored first
-* SDL_BIG_ENDIAN means byte order is 4321, where the most significant byte is stored last
+* SDL_BIG_ENDIAN means byte order is 4321, where the most significant byte is stored first
 
 
 ''Example:''  Imagine the 32bit integer number ```16,909,060``` in decimal.
@@ -28,7 +28,7 @@ Endianness comes in two forms - big and little.
  When that is stored in memory on a big-endian system they are stored with the most significant byte first, producing the byte stream:
   ```0x01 0x02 0x03 0x04```<br/>
 
-For further information ab out Endianness read the [https://en.wikipedia.org/wiki/Endianness Wikipedia] article on the subject.
+For further information about endianness read the [https://en.wikipedia.org/wiki/Endianness Wikipedia] article on the subject.
 
 SDL_BYTEORDER is a macro that corresponds to the byte order used by the processor type it was compiled for.
 * SDL_BYTEORDER is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
