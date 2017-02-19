@@ -13,7 +13,7 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id)
 == Function Parameters ==
 {|
 |'''id'''
-|^the ID of the timer to remove^
+|the ID of the timer to remove
 |}
 
 == Return Value ==
