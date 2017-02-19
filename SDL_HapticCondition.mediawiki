@@ -66,7 +66,7 @@ A structure that contains a template for a condition effect.
 |-
 |Uint16
 |'''deadband'''
-|size of the dead zone; max 0xFFFF: whole axis-range when 0-centered ^(units)?^
+|size of the dead zone; max 0xFFFF: whole axis-range when 0-centered <!-- (units)? --> 
 |-
 |Sint16
 |'''center'''
@@ -83,16 +83,16 @@ You can add your code example here
 <span id="type"></span>'''type''' may be one of the following:
 {|
 |SDL_HAPTIC_SPRING
-|effect based on axis position/axes positions?
+|effect based on axis position <!-- axes positions? --> 
 |-
 |SDL_HAPTIC_DAMPER
-|effect based on axis velocity/axes velocities?
+|effect based on axis velocity <!-- axes velocities? --> 
 |-
 |SDL_HAPTIC_INERTIA
-|effect based on axis/axes acceleration?
+|effect based on axis acceleration <!-- axes acceleration? --> 
 |-
 |SDL_HAPTIC_FRICTION
-|effect based on axis/axes movement/movements?
+|effect based on axis movement <!-- axes movement/movements? --> 
 |}
 
 <span id="direction"></span> '''direction''' is (currently) handled by condition internals instead of a direction member.  The condition effect specific members have three parameters. The first refers to the X axis, the second refers to the Y axis and the third refers to the Z axis. The right terms refer to the positive side of the axis and the left terms refer to the negative side of the axis. Please refer to the [[SDL_HapticDirection]] diagram for which side is positive and which is negative.
