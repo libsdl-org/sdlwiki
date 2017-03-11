@@ -26,26 +26,27 @@ Returns a pointer to the function or NULL if there was an error; call [[SDL_GetE
 
 == Code Examples ==
 ```c++
-#include "SDL_loadso.h"
+#include "SDL.h"
 
-// Variable declaration
+/* Variable declaration */
 void* myHandle = NULL;
 char* myFunctionName = "myFancyFunction";
 void (*myFancyFunction)(int anInt);
 
-// Dynamically load mylib.so
+/* Dynamically load mylib.so */
 myHandle = SDL_LoadObject("mylib.so");
 
-// Load the exported function from mylib.so
-// The exported function has the following prototype
-// void myFancyFunction(int anInt);
+/* Load the exported function from mylib.so
+ * The exported function has the following prototype
+ * void myFancyFunction(int anInt);
+ */
 myFancyFunction = (void (*)(int))SDL_LoadFunction(myHandle, myFunctionName);
 
-// Call myFancyFunction with a random integer
+/* Call myFancyFunction with a random integer */
 if (myFancyFunction != NULL) {
     myFancyFunction(15);
 } else {
-    // Error handling here
+    /* Error handling here */
 }
 ```
 
