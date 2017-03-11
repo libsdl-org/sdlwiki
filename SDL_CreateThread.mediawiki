@@ -31,10 +31,9 @@ Returns an opaque pointer to the new thread object on success, NULL if the new t
 == Code Examples ==
 ```c++
 #include <stdio.h>
-#include "SDL_thread.h"
-#include "SDL_timer.h"
+#include "SDL.h"
 
-// Very simple thread - counts 0 to 9 delaying 50ms between increments
+/* Very simple thread - counts 0 to 9 delaying 50ms between increments */
 static int TestThread(void *ptr)
 {
     int cnt;
@@ -54,7 +53,7 @@ int main(int argc, char *argv[])
 
     printf("\nSimple SDL_CreateThread test:");
 
-    // Simply create a thread
+    /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
