@@ -23,8 +23,7 @@ Returns the ID of the specified thread, or the ID of the current thread if '''th
 == Code Examples ==
 ```c++
 #include <stdio.h>
-#include "SDL_thread.h"
-#include "SDL_timer.h"
+#include "SDL.h"
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
 int TestThread(void *ptr)
@@ -47,7 +46,7 @@ int main(int argc, char *argv[])
 
     printf("\nSimple SDL_CreateThread test:");
 
-    // Simply create a thread
+    /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
@@ -55,10 +54,10 @@ int main(int argc, char *argv[])
         exit(-1);
     }
 
-    // Retrieve the ID for the newly launched thread
+    /* Retrieve the ID for the newly launched thread */
     threadID = SDL_GetThreadID(thread);
 
-    // Wait for the thread to complete and get the return code
+    /* Wait for the thread to complete and get the return code */
     SDL_WaitThread(thread, &threadReturnValue);
     printf("\nThread returned value: %d", threadReturnValue);
 
