@@ -81,7 +81,7 @@ A structure that contains pixel format information.
 |}
 
 == Code Examples ==
-8-bit pixel formats are the easiest to understand. Since its an 8-bit format, we have 8 '''!BitsPerPixel''' and 1 '''!BytesPerPixel'''. Since '''!BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:
+8-bit pixel formats are the easiest to understand. Since it is an 8-bit format, we have 8 '''!BitsPerPixel''' and 1 '''!BytesPerPixel'''. Since '''!BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:
 ```c++
 SDL_Surface *surface;
 SDL_PixelFormat *fmt;
