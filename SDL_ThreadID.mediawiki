@@ -17,7 +17,7 @@ Returns the ID of the current thread.
 
 SDL_threadID threadID;
 
-// Retrieve our current thread identifier
+/* Retrieve our current thread identifier */
 threadID = SDL_ThreadID();
 ```
 == Remarks ==
