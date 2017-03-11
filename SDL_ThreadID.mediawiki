@@ -1,5 +1,5 @@
 <!-- pragma section-numbers off -->
-<!-- pragma camelcase offnter;">DRAFT || -->
+<!-- pragma camelcase off -->
 
 = SDL_ThreadID =
 Use this function to get the thread identifier for the current thread.
