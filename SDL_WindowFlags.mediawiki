@@ -70,7 +70,11 @@ An enumeration of window states.
 
 == Code Examples ==
 ```c++
-You can add your code example here
+Uint32 flags = SDL_WINDOW_SOPENGL | SDL_WINDOW_FULLSCREEN;
+SDL_Window * window = SDL_CreateWindow(
+    /* ... */
+    flags
+);
 ```
 
 == Remarks ==
