@@ -6,7 +6,7 @@
 
 
 = SDL_HapticLeftRight =
-A structure that contains a template for a Left/Right effect.
+A structure that contains a template for a left/right effect.
 
 
 
@@ -54,7 +54,7 @@ You can add your code example here
 == Remarks ==
 This struct is exclusively for the SDL_HAPTIC_LEFTRIGHT effect.
 
-The Left/Right effect is used to explicitly control the large and small motors, commonly found in modern game controllers. One motor is high frequency, the other is low frequency.
+The left/right effect is used to explicitly control the large and small motors, commonly found in modern game controllers. One motor is high frequency, the other is low frequency.
 
 
 == Related Structures ==
