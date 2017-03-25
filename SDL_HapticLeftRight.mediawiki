@@ -59,7 +59,6 @@ The left/right effect is used to explicitly control the large and small motors, 
 
 == Related Structures ==
 :[[SDL_HapticEffect]]
-:[[SDL_HapticPeriodic]]
 
 == Related Functions ==
 :[[SDL_HapticNewEffect]]
