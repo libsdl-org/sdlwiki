@@ -14,7 +14,7 @@ int SDL_HapticOpened(int device_index)
 == Function Parameters ==
 {|
 |'''device_index'''
-|the index to check to see if it has been opened of the device to query
+|the index to check to see if it has been opened <!-- of the device to query -->
 |}
 
 == Return Value ==
