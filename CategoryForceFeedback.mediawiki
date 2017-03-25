@@ -10,12 +10,12 @@
 
 == Introduction ==
 
-The SDL Haptic subsystem allows you to control haptic (force feedback) devices.
+The SDL haptic subsystem allows you to control haptic (force feedback) devices.
 
 The basic usage is as follows:
 
- 1. Initialize the Subsystem (SDL_INIT_HAPTIC)
- 1. Open a Haptic Device
+ 1. Initialize the subsystem (SDL_INIT_HAPTIC)
+ 1. Open a haptic device
   a. [[SDL_HapticOpen]]() to open from index
   a. [[SDL_HapticOpenFromJoystick]]() to open from an existing joystick
  1. Create an effect ([[SDL_HapticEffect]])
