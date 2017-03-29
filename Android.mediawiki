@@ -311,6 +311,14 @@ cmake \
 
 === Troubleshootings ===
 
-If ```ant installd``` categorically refuses to install with {{{Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]}}}, even if you have free local storage, try installing on the SD card: {{{
-adb install -s bin/app-debug.apk
+If ```ant installd``` categorically refuses to install with {{{Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]}}}, even if you have free local storage, that may mean anything. Check logcat first: {{{
+adb logcat
 }}}
+If the error logs are not helpful (likely ;')) try locating all past traces of the application: ```
+find / -name "org...."
+```
+and remove them all.
+
+If the problem persists, you may try installing on the SD card: ```
+adb install -s bin/app-debug.apk
+```
