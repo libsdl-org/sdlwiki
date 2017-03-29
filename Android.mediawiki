@@ -29,12 +29,12 @@ PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 === SDL wrapper for simple programs ===
 
 * Compile a sample app (calls ndk-build): ```
- cd /usr/src/SDL2/build-scripts/
- ./androidbuild.sh org.libsdl.testgles ../test/testgles.c
+cd /usr/src/SDL2/build-scripts/
+./androidbuild.sh org.libsdl.testgles ../test/testgles.c
 ```
 * Follow the instructions to install on your device: ```
- cd /usr/src/SDL2/build/org.libsdl.testgles/
- ant debug install
+cd /usr/src/SDL2/build/org.libsdl.testgles/
+ant debug install
 ```
 
 Notes:
@@ -44,22 +44,21 @@ Notes:
 
 === SDL wrapper + SDL_image NDK module ===
 
-Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
+Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM). See [[#Basic_SDL_image_app]].
 
 Then let's make an Android app out of it. To compile: ```
- cd /usr/src/SDL2/build-scripts/
- ./androidbuild.sh org.libsdl.showimage /usr/src/SDL2_image/showimage.c
- cd /usr/src/SDL2/build/org.libsdl.showimage/
- ln -s /usr/src/SDL2_image jni/
- ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
- sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' jni/src/Android.mk
- ndk-build -j$(nproc)
- ant debug install
+cd /usr/src/SDL2/build-scripts/
+./androidbuild.sh org.libsdl.showimage /usr/src/SDL2_image/showimage.c
+cd /usr/src/SDL2/build/org.libsdl.showimage/
+ln -s /usr/src/SDL2_image jni/
+ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
+sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' jni/src/Android.mk
+ndk-build -j$(nproc)
+ant debug install
 ```
 
 Notes:
 * application doesn't restart properly
-* TODO: copy/paste a simple sample here so it can be easily re-tested 
 
 
 == Build an autotools-friendly environment ==
@@ -321,4 +320,82 @@ and remove them all.
 
 If the problem persists, you may try installing on the SD card: ```
 adb install -s bin/app-debug.apk
+```
+
+<span id="Basic_SDL_image_app"></span>
+== Basic SDL_image app ==
+
+```
+#include "SDL.h"
+#include "SDL_image.h"
+
+/* XPM */
+static char * icon_xpm[] = {
+  "32 23 3 1",
+  " 	c #FFFFFF",
+  ".	c #000000",
+  "+	c #FFFF00",
+  "                                ",
+  "            ........            ",
+  "          ..++++++++..          ",
+  "         .++++++++++++.         ",
+  "        .++++++++++++++.        ",
+  "       .++++++++++++++++.       ",
+  "      .++++++++++++++++++.      ",
+  "      .+++....++++....+++.      ",
+  "     .++++.. .++++.. .++++.     ",
+  "     .++++....++++....++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "      .++++++++++++++++++.      ",
+  "      .++...++++++++...++.      ",
+  "       .++............++.       ",
+  "        .++..........++.        ",
+  "         .+++......+++.         ",
+  "          ..++++++++..          ",
+  "            ........            ",
+  "                                "};
+
+int main(int argc, char *argv[])
+{
+  SDL_Window *window;
+  SDL_Renderer *renderer;
+  SDL_Texture *texture;
+  int w, h, done;
+  SDL_Event event;
+
+  if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+		 "SDL_CreateWindowAndRenderer() failed: %s\n", SDL_GetError());
+    return(2);
+  }
+
+  SDL_Surface *surface = IMG_ReadXPMFromArray(icon_xpm);
+  texture = SDL_CreateTextureFromSurface(renderer, surface);
+  if (!texture) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+		 "Couldn't load texture: %s\n", SDL_GetError());
+    return(2);
+  }
+  SDL_QueryTexture(texture, NULL, NULL, &w, &h);
+  SDL_SetWindowSize(window, 800, 480);
+  
+  done = 0;
+  while (!done) {
+    while (SDL_PollEvent(&event)) {
+      if (event.type == SDL_QUIT)
+	done = 1;
+    }
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_RenderPresent(renderer);
+    SDL_Delay(100);
+  }
+  SDL_DestroyTexture(texture);
+
+  SDL_Quit();
+  return(0);
+}
 ```
