@@ -13,7 +13,7 @@ This page is more walkthrough-oriented.
 == Pre-requisites ==
 
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
-sudo apt-get install openjdk-7-jdk ant
+sudo apt-get install openjdk-8-jdk ant android-sdk-platform-tools-common
 ```
 * Install NDK (tested with [http://dl.google.com/android/ndk/android-ndk-r8c-linux-x86.tar.bz2 r8c])
 * Install the latest SDK, run <code>android</code> and install one API (>=12)
@@ -59,6 +59,7 @@ Then let's make an Android app out of it. To compile: ```
 
 Notes:
 * application doesn't restart properly
+* TODO: copy/paste a simple sample here so it can be easily re-tested 
 
 
 == Build an autotools-friendly environment ==
@@ -106,13 +107,13 @@ include $(call all-subdir-makefiles)
 ndk-build -j$(nproc)
 ```
 
-Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.java</code>, your application will be linked to them and Android's Linux loads them automatically.
+Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.java</code>, your application will be linked to them and Android's ld-linux loads them automatically.
 
 
 === Install SDL in a GCC toolchain ===
 
 Now:
-* Copy the NDK into a traditional GCC toolchain: ```
+* Copy the NDK into a traditional GCC toolchain (leave android-14 as-is): ```
 /usr/src/android-ndk-r8c/build/tools/make-standalone-toolchain.sh \
   --platform=android-14 --install-dir=/usr/src/ndk-standalone-14-arm --arch=arm
 ```
@@ -132,7 +133,7 @@ VERSION=0.9.12
 cd /usr/src/
 wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
 tar xf pkgconf-$VERSION.tar.gz
-cd pkgconf-$VERSION
+cd pkgconf-$VERSION/
 mkdir native-android/ && cd native-android/
 ../configure --prefix=$NDK_STANDALONE/sysroot/usr
 make -j$(nproc)
@@ -148,7 +149,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: sdl2
 Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
-Version: 2.0.3.scm
+Version: 2.0.5.scm
 Requires:
 Conflicts:
 Libs: -lSDL2
@@ -162,7 +163,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_image
 Description: image loading library for Simple DirectMedia Layer
-Version: 2.0.0.scm
+Version: 2.0.1.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_image
 Cflags: -I${includedir}/SDL2
@@ -175,7 +176,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_mixer
 Description: mixer library for Simple DirectMedia Layer
-Version: 2.0.0.scm
+Version: 2.0.1.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_mixer
 Cflags: -I${includedir}/SDL2
@@ -188,7 +189,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_net
 Description: net library for Simple DirectMedia Layer
-Version: 2.0.0.scm
+Version: 2.0.1.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_net
 Cflags: -I${includedir}/SDL2
@@ -201,7 +202,7 @@ libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 Name: SDL2_ttf
 Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
-Version: 2.0.12.scm
+Version: 2.0.14.scm
 Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_ttf
 Cflags: -I${includedir}/SDL2
@@ -222,7 +223,7 @@ make install
 Static builds (<code>--disable-shared</code>) are recommended for simplicity (no additional <code>.so</code> to declare).
 
 Example with SDL2_gfx: ```
-VERSION=1.0.1
+VERSION=1.0.3
 wget http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-$VERSION.tar.gz
 tar xf SDL2_gfx-$VERSION.tar.gz
 mv SDL2_gfx-$VERSION/ SDL2_gfx/
@@ -263,6 +264,7 @@ endif
 PATH=$NDK_STANDALONE/bin:$PATH
 mkdir cross-android/ && cd cross-android/
 ../configure --host=arm-linux-androideabi \
+  --prefix=/android-aint-posix \
   --with-your-option --enable-your-other-option ...
 make
 ```
