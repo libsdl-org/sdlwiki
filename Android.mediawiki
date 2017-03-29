@@ -308,3 +308,9 @@ cmake \
   -D CMAKE_TOOLCHAIN_FILE=../android_toolchain.cmake \
   ...
 ```
+
+=== Troubleshootings ===
+
+If ```ant installd``` categorically refuses to install with {{{Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]}}}, even if you have free local storage, try installing on the SD card: {{{
+adb install -s bin/app-debug.apk
+}}}
