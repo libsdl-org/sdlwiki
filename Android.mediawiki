@@ -44,7 +44,82 @@ Notes:
 
 === SDL wrapper + SDL_image NDK module ===
 
-Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM). See [[#Basic_SDL_image_app]].
+Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
+
+```
+#include "SDL.h"
+#include "SDL_image.h"
+
+/* XPM */
+static char * icon_xpm[] = {
+  "32 23 3 1",
+  " 	c #FFFFFF",
+  ".	c #000000",
+  "+	c #FFFF00",
+  "                                ",
+  "            ........            ",
+  "          ..++++++++..          ",
+  "         .++++++++++++.         ",
+  "        .++++++++++++++.        ",
+  "       .++++++++++++++++.       ",
+  "      .++++++++++++++++++.      ",
+  "      .+++....++++....+++.      ",
+  "     .++++.. .++++.. .++++.     ",
+  "     .++++....++++....++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "      .++++++++++++++++++.      ",
+  "      .++...++++++++...++.      ",
+  "       .++............++.       ",
+  "        .++..........++.        ",
+  "         .+++......+++.         ",
+  "          ..++++++++..          ",
+  "            ........            ",
+  "                                "};
+
+int main(int argc, char *argv[])
+{
+  SDL_Window *window;
+  SDL_Renderer *renderer;
+  SDL_Texture *texture;
+  int w, h, done;
+  SDL_Event event;
+
+  if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+		 "SDL_CreateWindowAndRenderer() failed: %s\n", SDL_GetError());
+    return(2);
+  }
+
+  SDL_Surface *surface = IMG_ReadXPMFromArray(icon_xpm);
+  texture = SDL_CreateTextureFromSurface(renderer, surface);
+  if (!texture) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+		 "Couldn't load texture: %s\n", SDL_GetError());
+    return(2);
+  }
+  SDL_QueryTexture(texture, NULL, NULL, &w, &h);
+  SDL_SetWindowSize(window, 800, 480);
+  
+  done = 0;
+  while (!done) {
+    while (SDL_PollEvent(&event)) {
+      if (event.type == SDL_QUIT)
+	done = 1;
+    }
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_RenderPresent(renderer);
+    SDL_Delay(100);
+  }
+  SDL_DestroyTexture(texture);
+
+  SDL_Quit();
+  return(0);
+}
+```
 
 Then let's make an Android app out of it. To compile: ```
 cd /usr/src/SDL2/build-scripts/
@@ -308,7 +383,7 @@ cmake \
   ...
 ```
 
-=== Troubleshootings ===
+== Troubleshootings ==
 
 If ```ant installd``` categorically refuses to install with {{{Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]}}}, even if you have free local storage, that may mean anything. Check logcat first: {{{
 adb logcat
@@ -322,80 +397,9 @@ If the problem persists, you may try installing on the SD card: ```
 adb install -s bin/app-debug.apk
 ```
 
-<span id="Basic_SDL_image_app"></span>
-== Basic SDL_image app ==
+-----
 
+If you get in your logcat: ```
+SDL: Couldn't locate Java callbacks, check that they're named and typed correctly
 ```
-#include "SDL.h"
-#include "SDL_image.h"
-
-/* XPM */
-static char * icon_xpm[] = {
-  "32 23 3 1",
-  " 	c #FFFFFF",
-  ".	c #000000",
-  "+	c #FFFF00",
-  "                                ",
-  "            ........            ",
-  "          ..++++++++..          ",
-  "         .++++++++++++.         ",
-  "        .++++++++++++++.        ",
-  "       .++++++++++++++++.       ",
-  "      .++++++++++++++++++.      ",
-  "      .+++....++++....+++.      ",
-  "     .++++.. .++++.. .++++.     ",
-  "     .++++....++++....++++.     ",
-  "     .++++++++++++++++++++.     ",
-  "     .++++++++++++++++++++.     ",
-  "     .+++++++++..+++++++++.     ",
-  "     .+++++++++..+++++++++.     ",
-  "     .++++++++++++++++++++.     ",
-  "      .++++++++++++++++++.      ",
-  "      .++...++++++++...++.      ",
-  "       .++............++.       ",
-  "        .++..........++.        ",
-  "         .+++......+++.         ",
-  "          ..++++++++..          ",
-  "            ........            ",
-  "                                "};
-
-int main(int argc, char *argv[])
-{
-  SDL_Window *window;
-  SDL_Renderer *renderer;
-  SDL_Texture *texture;
-  int w, h, done;
-  SDL_Event event;
-
-  if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
-    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-		 "SDL_CreateWindowAndRenderer() failed: %s\n", SDL_GetError());
-    return(2);
-  }
-
-  SDL_Surface *surface = IMG_ReadXPMFromArray(icon_xpm);
-  texture = SDL_CreateTextureFromSurface(renderer, surface);
-  if (!texture) {
-    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-		 "Couldn't load texture: %s\n", SDL_GetError());
-    return(2);
-  }
-  SDL_QueryTexture(texture, NULL, NULL, &w, &h);
-  SDL_SetWindowSize(window, 800, 480);
-  
-  done = 0;
-  while (!done) {
-    while (SDL_PollEvent(&event)) {
-      if (event.type == SDL_QUIT)
-	done = 1;
-    }
-    SDL_RenderCopy(renderer, texture, NULL, NULL);
-    SDL_RenderPresent(renderer);
-    SDL_Delay(100);
-  }
-  SDL_DestroyTexture(texture);
-
-  SDL_Quit();
-  return(0);
-}
-```
+this probably means your ```SDLActivity.java``` is out-of-sync with your libSDL2.so.
