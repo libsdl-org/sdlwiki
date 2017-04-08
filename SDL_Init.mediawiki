@@ -43,6 +43,8 @@ int main(int argc, char* argv[])
 
 The [[CategoryIO|file I/O]] and [[CategoryThread|threading]] subsystems are initialized by default.  You must specifically initialize other subsystems if you use them in your application.
 
+[[CategoryLog|Logging]] works without initialization, too.
+
 '''flags''' may be any of the following OR'd together:
 
 <!-- #The following content is included on <code>SDL_InitSubSystem</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
