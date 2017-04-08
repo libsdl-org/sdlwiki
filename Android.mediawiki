@@ -46,7 +46,7 @@ Notes:
 
 Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
 
-```
+```c++
 #include "SDL.h"
 #include "SDL_image.h"
 
@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
   }
   SDL_QueryTexture(texture, NULL, NULL, &w, &h);
   SDL_SetWindowSize(window, 800, 480);
-  
+
   done = 0;
   while (!done) {
     while (SDL_PollEvent(&event)) {
