@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
   SDL_Window *window;
   SDL_Renderer *renderer;
   SDL_Texture *texture;
-  int w, h, done;
+  int done;
   SDL_Event event;
 
   if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
@@ -101,7 +101,6 @@ int main(int argc, char *argv[])
         "Couldn't load texture: %s", SDL_GetError());
     return(2);
   }
-  SDL_QueryTexture(texture, NULL, NULL, &w, &h);
   SDL_SetWindowSize(window, 800, 480);
 
   done = 0;
