@@ -84,6 +84,7 @@ int main(int argc, char *argv[])
 {
   SDL_Window *window;
   SDL_Renderer *renderer;
+  SDL_Surface *surface;
   SDL_Texture *texture;
   int done;
   SDL_Event event;
@@ -94,7 +95,7 @@ int main(int argc, char *argv[])
     return(2);
   }
 
-  SDL_Surface *surface = IMG_ReadXPMFromArray(icon_xpm);
+  surface = IMG_ReadXPMFromArray(icon_xpm);
   texture = SDL_CreateTextureFromSurface(renderer, surface);
   if (!texture) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
