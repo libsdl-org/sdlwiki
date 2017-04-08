@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
 
   if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-		 "SDL_CreateWindowAndRenderer() failed: %s", SDL_GetError());
+        "SDL_CreateWindowAndRenderer() failed: %s", SDL_GetError());
     return(2);
   }
 
@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
   texture = SDL_CreateTextureFromSurface(renderer, surface);
   if (!texture) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
-		 "Couldn't load texture: %s", SDL_GetError());
+        "Couldn't load texture: %s", SDL_GetError());
     return(2);
   }
   SDL_QueryTexture(texture, NULL, NULL, &w, &h);
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
   while (!done) {
     while (SDL_PollEvent(&event)) {
       if (event.type == SDL_QUIT)
-	done = 1;
+        done = 1;
     }
     SDL_RenderCopy(renderer, texture, NULL, NULL);
     SDL_RenderPresent(renderer);
