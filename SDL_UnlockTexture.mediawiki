@@ -20,7 +20,7 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 You can add your code example here
 ```
 == Remarks ==
-/!\ WARNING: See [http://bugzilla.libsdl.org/show_bug.cgi?id=1586 SDL bug #1586] before using this function!
+/!\ WARNING: See [https://bugzilla.libsdl.org/show_bug.cgi?id=1586 SDL bug #1586] before using this function!
 
 == Related Functions ==
 : [[SDL_LockTexture]]
