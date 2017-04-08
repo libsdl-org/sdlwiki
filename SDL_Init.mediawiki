@@ -2,7 +2,7 @@
 <!-- pragma camelcase off -->
 
 = SDL_Init =
-Use this function to initialize the SDL library.  This must be called before using any other SDL function.
+Use this function to initialize the SDL library.  This must be called before using most other SDL functions.
 
 
 == Syntax ==
