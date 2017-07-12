@@ -93,6 +93,10 @@ SDL2 has dropped support for PowerPC Macs and OS X versions older than 10.5 (SDL
 
 Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built with either Haiku's gcc4 compiler or their legacy, BeOS-compatible gcc 2.95.
 
+To build and install SDL locally, run:
+
+    ```mkdir build ; cd build ; ../configure --prefix=$HOME/config/non-packaged; make install```
+
 === iOS ===
 
 SDL supports iOS 5.1.1+ and ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
