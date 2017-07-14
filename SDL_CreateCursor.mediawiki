@@ -156,7 +156,7 @@ The cursor is created in black and white according to the following:
 
 Cursors created with this function must be freed with [[SDL_FreeCursor]]().
 
-If you want to have color cursor, then this function is not for you; instead, you must hide the normal system cursor using [[SDL_ShowCursor]]() and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor.
+If you want to have a color cursor, then this function is not for you; instead, you must hide the normal system cursor using [[SDL_ShowCursor]]() and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor.
 
 Or use [[SDL_CreateColorCursor]]().
 
