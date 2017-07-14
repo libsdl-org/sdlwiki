@@ -76,6 +76,7 @@ void WipeSurface(SDL_Surface *surface)
 With most surfaces you can access the pixels directly.  Surfaces that have been optimized with [[SDL_SetSurfaceRLE]]() should be locked with [[SDL_LockSurface]]() before accessing '''pixels'''.  When you are done you should call [[SDL_UnlockSurface]]() before blitting.
 
 == Related Functions ==
+: [[SDL_BlitSurface]]
 : [[SDL_ConvertSurface]]
 : [[SDL_CreateRGBSurface]]
 : [[SDL_CreateRGBSurfaceFrom]]
