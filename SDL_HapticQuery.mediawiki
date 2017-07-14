@@ -19,7 +19,7 @@ unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
 |}
 
 == Return Value ==
-Returns a list of supported haptic features in bitwise manner (OR'd), or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns a list of supported haptic features in bitwise manner (OR'd), or 0 on failure; call [[SDL_GetError]]() for more information.
 
 <!-- <span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span> -->
 
