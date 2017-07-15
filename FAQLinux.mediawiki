@@ -54,7 +54,7 @@ export PATH=$PATH:/usr/local/bin/
 
 Make sure that there aren't any other versions of SDL on your system, and that you have removed any file named "config.cache" from the directory of the software that refuses to build.
 
-If all of the above still don't work, send e-mail to the SDL mailing list with the output from the following commands run from the directory of the software that refuses to build:
+If all of the above still don't work, send e-mail to the SDL [https://discourse.libsdl.org/ mailing list] with the output from the following commands run from the directory of the software that refuses to build:
 
 * which sdl-config
 * sdl-config --version
