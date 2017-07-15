@@ -54,7 +54,7 @@ Los mejores lugares para ver más información son:
 
 * el wiki de SDL :)
 * los tests incluídos con SDL, en el directorio ```test/``` ([http://hg.libsdl.org/SDL/file/default/test ver online])
-* la [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org lista de correo] de SDL
+* la <!-- [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org lista de correo] --> [https://discourse.libsdl.org/ lista de correo] de SDL
 
 == Migrando de SDL 1.2 a 2.0 ==
 
