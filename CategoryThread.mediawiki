@@ -10,7 +10,7 @@
 == Introduction ==
 This category contains functions for system independent thread management routines.
 
-{i} ''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] or [http://forums.libsdl.org/viewtopic.php?t=5973 forum].
+{i} ''NOTE'': You should not expect to be able to create a window, render, or receive events on any thread other than the main one.  For platform-specific exceptions or complicated options ask on the <!-- [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] or [http://forums.libsdl.org/viewtopic.php?t=5973 forum] --> [https://discourse.libsdl.org/ forums/mailing list].
 
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryThread -title:SGEnumerations)>>
