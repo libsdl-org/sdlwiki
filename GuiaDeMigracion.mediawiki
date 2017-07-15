@@ -52,7 +52,7 @@ Estas son las características nuevas más importantes de SDL 2.0
 
 Los mejores lugares para ver más información son:
 
-* [https://wiki.libsdl.org El wiki de SDL] :)
+* el wiki de SDL :)
 * los tests incluídos con SDL, en el directorio ```test/``` ([http://hg.libsdl.org/SDL/file/default/test ver online])
 * la [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org lista de correo] de SDL
 
