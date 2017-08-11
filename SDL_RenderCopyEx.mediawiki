@@ -31,7 +31,7 @@ int SDL_RenderCopyEx(SDL_Renderer*          renderer,
 |the destination [[SDL_Rect]] structure or NULL for the entire rendering target
 |-
 |'''angle'''
-|an angle in degrees that indicates the rotation that will be applied to dstrect
+|an angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction
 |-
 |'''center'''
 |a pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2)
