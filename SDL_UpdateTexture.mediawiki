@@ -22,7 +22,7 @@ int SDL_UpdateTexture(SDL_Texture*    texture,
 |an [[SDL_Rect]] structure representing the area to update, or NULL to update the entire texture
 |-
 |'''pixels'''
-|the raw pixel data
+|the raw pixel data in the format of the texture
 |-
 |'''pitch'''
 |the number of bytes in a row of pixel data, including padding between lines
@@ -37,6 +37,8 @@ You can add your code example here
 ```
 
 == Remarks ==
+The pixel data must be in the pixel format of the texture. Use [[SDL_QueryTexture]]() to query the pixel format of the texture.
+
 This is a fairly slow function, intended for use with static textures that do not change often.
 
 If the texture is intended to be updated often, it is preferred to create the texture as streaming and use the locking functions referenced below. While this function will work with streaming textures, for optimization reasons you may not get the pixels back if you lock the texture afterward.
