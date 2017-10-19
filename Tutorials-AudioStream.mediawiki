@@ -24,6 +24,7 @@ Here are some immediate uses for [[SDL_AudioStream]]:
 * You want to pull audio data from disk as fast as possible, stuff it into something that will do the proper conversions, and dump the results back to disk without having to worry about the details of the data as it's passing through.
 * You want to write a mixer that only deals with a single specific format and have it output to whatever else might need to eat that data.
 * You have some procedurally-generated sound and want to produce more when most of it has been consumed.
+* You have no interest in converting audio to a different format, but you just want someone else to worry about storing it in an efficient, queue-like data structure until you are ready to make use of it.
 
 Using [[SDL_AudioStream]] is pretty simple. First, you create one. Let's say you want to produce mono data in Sint16 format at 22050Hz, for something that wants to consume stereo data in Float32 format at 48000Hz.
 
