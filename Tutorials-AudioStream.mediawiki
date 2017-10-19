@@ -28,7 +28,7 @@ Here are some immediate uses for [[SDL_AudioStream]]:
 Using [[SDL_AudioStream]] is pretty simple. First, you create one. Let's say you want to produce mono data in Float32 format at 22050Hz, for something that wants to consume stereo data in signed 16-bit int format at 48000Hz.
 
 ```c++
-SDL_AudioStream *stream = SDL_NewAudioStream(AUDIO_S16, 1, 22050, AUDIO_F32, 48000);
+SDL_AudioStream *stream = SDL_NewAudioStream(AUDIO_S16, 2, 48000, AUDIO_F32, 1, 22050);
 if (stream == NULL) {
     printf("Uhoh, stream failed to create: %s\n", SDL_GetError());
 } else {
