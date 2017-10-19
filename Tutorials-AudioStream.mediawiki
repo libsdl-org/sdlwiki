@@ -1,3 +1,8 @@
+<!-- pragma section-numbers 2 -->
+<!-- pragma camelcase off -->
+
+= Using SDL_AudioStream =
+
 From the dawn of time, until SDL 2.0.6, there was only one way to convert audio through SDL: By using the [[SDL_AudioCVT]] structure.
 
 It's a usable API, for various needs, but it has a few problems:
