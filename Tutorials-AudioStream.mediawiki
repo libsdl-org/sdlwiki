@@ -25,10 +25,11 @@ Here are some immediate uses for [[SDL_AudioStream]]:
 * You want to write a mixer that only deals with a single specific format and have it output to whatever else might need to eat that data.
 * You have some procedurally-generated sound and want to produce more when most of it has been consumed.
 
-Using [[SDL_AudioStream]] is pretty simple. First, you create one. Let's say you want to produce mono data in Float32 format at 22050Hz, for something that wants to consume stereo data in signed 16-bit int format at 48000Hz.
+Using [[SDL_AudioStream]] is pretty simple. First, you create one. Let's say you want to produce mono data in Sint16 format at 22050Hz, for something that wants to consume stereo data in Float32 format at 48000Hz.
 
 ```c++
-SDL_AudioStream *stream = SDL_NewAudioStream(AUDIO_S16, 2, 48000, AUDIO_F32, 1, 22050);
+// You put data at Sint16/mono/22050Hz, you get back data at Float32/stereo/48000Hz
+SDL_AudioStream *stream = SDL_NewAudioStream(AUDIO_S16, 1, 22050, AUDIO_F32, 2, 48000);
 if (stream == NULL) {
     printf("Uhoh, stream failed to create: %s\n", SDL_GetError());
 } else {
@@ -75,6 +76,25 @@ if (gotten == -1) {
 }
 write_more_samples_to_disk(converted, gotten); /* whatever. */
 ```
+
+Of course, you don't have to read it all at once. This both streams in ''and'' out of a converted buffer, so you can read less than is available:
+
+```c++
+int gotten;
+do {
+    float converted[100];
+    // this is in bytes, not samples!
+    gotten = SDL_AudioStreamGet(stream, converted, sizeof (converted));
+    if (gotten == -1) {
+        printf("Uhoh, failed to get converted data: %s\n", SDL_GetError());
+    } else {
+        // (gotten) might be less than requested in SDL_AudioStreamGet!
+        write_more_samples_to_disk(converted, gotten); /* whatever. */
+    }
+} while (gotten > 0);
+```
+
+In terms of performance: buffer allocations, conversion, and resampling happen during stream puts. Getting from the stream is a little bookkeeping and some memcpy() calls. Plan accordingly.
 
 The one gotcha of this interface: you might notice that you have less available than you expect (possibly even zero bytes available!). When resampling, SDL keeps a buffer of padding available so that data sent through in chunks still resamples smoothly. Rather than try to predict the future, it just holds onto the first little piece you feed into the stream, and then starts converting that part after it's received more data, holding a tiny bit back each time to keep the stream sounding smooth.
 
