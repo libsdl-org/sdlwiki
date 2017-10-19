@@ -12,7 +12,7 @@ It's a usable API, for various needs, but it has a few problems:
 * The existing structure is extremely rigid, expecting certain fields to be set by the app and certain fields to be set by SDL, and there is no room for expansion. Did I mention we steal a pointer field?
 * Perhaps most importantly: it can't resample data in chunks. You have to give it all the data it expects in one shot, or you'll get gaps and skips in your audio output.
 
-We have a better API that SDL has been using internally for awhile now, since it needs to bridge data between the app's audio callbacks and the platform APIs that consume and produce data, and that data might be coming and going at any size and format at possibly inexact times. Not only does this API have to convert and resample data on the fly, it needs to be able to buffer it when one end produces data at a different rate than the other is consuming it.
+We have a better API that SDL has been using internally for awhile now, since it needs to bridge data between the app's audio callbacks and the platform APIs that consume and produce data, and that data might be coming and going at any size and format at inexact times. Not only does this API have to convert and resample data on the fly, it needs to be able to buffer it when one end produces data at a different rate than the other is consuming it.
 
 For SDL 2.0.7, we've cleaned up these internal APIs and made them available to apps. We call it [[SDL_AudioStream]].
 
