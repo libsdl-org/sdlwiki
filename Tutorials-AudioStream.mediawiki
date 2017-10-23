@@ -38,7 +38,7 @@ if (stream == NULL) {
 }
 ```
 
-Now all you have to do is feed your need stream data!
+Now all you have to do is feed your stream data!
 
 ```c++
 Sint16 samples[1024];
