@@ -39,25 +39,36 @@ A structure that contains mouse wheel event information.
 == Code Examples ==
 ```c++
 
-SDL_Event Event;
-
-while( SDL_PollEvent( &Event ) )
+SDL_Event event;
+while( SDL_PollEvent( &event ) )
 {
+    if(event.type == SDL_MOUSEWHEEL)
+    {
+        if(event.wheel.y > 0) // scroll up
+        {
+             // Pull up code here!
+        }
+        else if(event.wheel.y < 0) // scroll down
+        {
+             // Pull down code here!
+        }
 
-     // ..
+        if(event.wheel.x > 0) // scroll right
+        {
+             // ...
+        }
+        else if(event.wheel.x < 0) // scroll left
+        {
+             // ...
+        }
+    }
+    else if(event.type == SDL_SDL_MOUSEBUTTONDOWN)
+    {
+        // ... handle mouse clicks ...
+    }
 
-     if(Event.wheel.y == 1) // scroll up
-     {
-          // Pull up code here!
-     }
-     else if(Event.wheel.y == -1) // scroll down
-     {
-          // Pull down code here!
-     }
- 
-     // ...
+    // ... handle other kinds of events ...
 }
-You can add your code example here
 ```
 
 == Remarks ==
