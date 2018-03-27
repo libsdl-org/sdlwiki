@@ -35,7 +35,7 @@ A structure that contains title, text, window and other data for a message box.
 |-
 | const [[SDL_MessageBoxButtonData]]*  
 | '''buttons'''     
-| an array of [[SDL_MessageBoxButtonData]] with size of '''numbuttons''' 
+| an array of [[SDL_MessageBoxButtonData]] with length of '''numbuttons''' 
 |-
 | const [[SDL_MessageBoxColorScheme]]* 
 | '''colorScheme''' 
