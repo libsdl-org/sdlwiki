@@ -40,6 +40,8 @@ SDL_GL_DeleteContext(glcontext);
 == Remarks ==
 Windows users new to OpenGL should note that, for historical reasons, GL functions added after OpenGL version 1.1 are not available by default. Those functions must be loaded at run-time, either with an OpenGL extension-handling library or with [[SDL_GL_GetProcAddress]]() and its related functions.
 
+SDL_GLContext is an alias for <code>void *</code>.
+
 == Related Functions ==
 : [[SDL_GL_DeleteContext]]
 : [[SDL_GL_MakeCurrent]]
