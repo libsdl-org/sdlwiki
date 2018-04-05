@@ -48,7 +48,7 @@ All structures in this union contain the following common parts:
 {|
 |
 |
-|<bgcolor="#EDEDED">''Replay (all effects have this)''
+|<bgcolor="#EDEDED">''Replay (all effects except left-right have this)''
 |-
 |Uint32
 |'''length'''
@@ -60,7 +60,7 @@ All structures in this union contain the following common parts:
 |-
 |
 |
-|<bgcolor="#EDEDED">''Trigger (all effects have this)''
+|<bgcolor="#EDEDED">''Trigger (all effects except left-right have this)''
 |-
 |Uint16
 |'''button'''
@@ -72,7 +72,7 @@ All structures in this union contain the following common parts:
 |-
 |
 |
-|<bgcolor="#EDEDED">''Envelope (all effects except condition effects have this)''
+|<bgcolor="#EDEDED">''Envelope (all effects except condition effects and left-right have this)''
 |-
 |Uint16
 |'''attack_length'''
