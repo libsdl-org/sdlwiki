@@ -149,7 +149,7 @@ SDL apps work on the Ouya! Just build like a standard Android application and si
 
 == Not supported or abandoned ==
 
-If your favorite system is listed here, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports some of these systems.
+If your favorite system is listed below, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports some of these systems.
 
 === Consoles (PlayStation, XBox, Wii, etc) ===
 
