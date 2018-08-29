@@ -4,8 +4,6 @@
 <!-- format wiki -->
 <!-- language en -->
 
-'''DRAFT'''
-
 = Vulkan Support =
 
 
@@ -19,7 +17,7 @@
 This category contains functions for creating a Vulkan-backed swapchain and loading required Vulkan extensions.
 
 == Functions ==
-<<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
 CategoryCategory
