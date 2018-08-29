@@ -22,7 +22,7 @@ You can add your code example here
 
 
 == Remarks ==
-This should be called after either calling [[SDL_Vulkan_LoadLibrary]] or creating an [[SDL_Window]] with the [[SDL_WINDOW_VULKAN]] flag.
+This should be called after either calling [[SDL_Vulkan_LoadLibrary]] or creating a window with the SDL_WINDOW_VULKAN flag.
 
 <!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
@@ -34,3 +34,5 @@ This function is available in SDL 2.0.8
 
 ----
 [[CategoryAPI]], [[CategoryVulkan]]
+----
+CategoryVulkan
