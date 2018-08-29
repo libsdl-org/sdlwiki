@@ -31,4 +31,5 @@ This function is available in SDL 2.0.8
 == Related Functions ==
 :[[SDL_Vulkan_LoadLibrary]]
 
+---
 [[CategoryAPI]], [[CategoryVulkan]]
