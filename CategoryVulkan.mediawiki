@@ -1,0 +1,25 @@
+<!-- #master-page:CategoryTemplate -->
+<!-- #master-date:Unknown-Date -->
+<!-- pragma camelcase off -->
+<!-- format wiki -->
+<!-- language en -->
+
+'''DRAFT'''
+
+= Vulkan Support =
+
+
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_vulkan.h SDL_vulkan.h]
+
+
+
+
+== Introduction ==
+
+This category contains functions for creating a Vulkan-backed swapchain and loading required Vulkan extensions.
+
+== Functions ==
+<<FullSearchCached(category:VulkanSupport -CategoryEnum -CategoryStruct -SGFunctions)>>
+
+----
+CategoryCategory
