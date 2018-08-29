@@ -19,7 +19,7 @@
 This category contains functions for creating a Vulkan-backed swapchain and loading required Vulkan extensions.
 
 == Functions ==
-<<FullSearchCached(category:VulkanSupport -CategoryEnum -CategoryStruct -SGFunctions)>>
+<<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -SGFunctions)>>
 
 ----
 CategoryCategory
