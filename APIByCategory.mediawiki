@@ -59,6 +59,9 @@
 |-
 |[CategoryClipboard|Clipboard Handling]]
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_clipboard.h SDL_clipboard.h]
+|-
+|[CategoryVulkan|Vulkan Support]]
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_vulkan.h SDL_vulkan.h]
 |}
 
 
