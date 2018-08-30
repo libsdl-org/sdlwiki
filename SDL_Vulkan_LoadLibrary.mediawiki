@@ -1,6 +1,5 @@
 <!-- pragma section-numbers off -->
 <!-- pragma camelcase off -->
-'''DRAFT'''
 
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
 
@@ -18,9 +17,6 @@ int SDL_Vulkan_LoadLibrary(const char* path)
 
 == Function Parameters ==
 {|
-|'''param'''
-|description
-|-
 |'''path'''
 |The platform dependent Vulkan loader library name or ```NULL```
 |}
