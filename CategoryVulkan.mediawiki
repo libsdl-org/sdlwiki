@@ -14,7 +14,7 @@
 
 == Introduction ==
 
-This category contains functions for creating a Vulkan-backed swapchain and loading required Vulkan extensions.
+This category contains functions for creating a Vulkan instance with the required Vulkan extensions for surface creation.
 
 == Functions ==
 <<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -title:SGFunctions)>>
