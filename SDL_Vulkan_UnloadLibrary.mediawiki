@@ -21,7 +21,7 @@ void SDL_Vulkan_UnloadLibrary()
 This function is available in SDL 2.0.8
 
 == Related Functions ==
-:[[SDL_Vulkan_LnloadLibrary]]
+:[[SDL_Vulkan_LoadLibrary]]
 
 ----
 [[CategoryAPI]], [[CategoryVulkan]]
