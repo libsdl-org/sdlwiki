@@ -1,0 +1,29 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_Vulkan_UnloadLibrary =
+
+Use this function to unload the Vulkan loader library previously loaded by [[SDL_Vulkan_LoadLibrary]].
+
+
+
+
+== Syntax ==
+```c++
+void SDL_Vulkan_UnloadLibrary()
+```
+
+
+== Version ==
+This function is available in SDL 2.0.8
+
+== Related Functions ==
+:[[SDL_Vulkan_LnloadLibrary]]
+
+----
+[[CategoryAPI]], [[CategoryVulkan]]
+----
+CategoryVulkan
