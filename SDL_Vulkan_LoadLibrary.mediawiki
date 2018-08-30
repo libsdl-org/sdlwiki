@@ -25,13 +25,6 @@ int SDL_Vulkan_LoadLibrary(const char* path)
 == Return Value ==
 Returns 0 on success or -1 if the library couldn't be loaded; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-```c++
-You can add your code example here
-```
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 
