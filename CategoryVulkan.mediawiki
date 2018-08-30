@@ -18,13 +18,13 @@ This category contains functions for creating a Vulkan instance with the require
 
 The general flow of a Vulkan backed SDL application will be the following:
 
-1. If necessary, use [[SDL_Vulkan_LoadLibrary]] and [[SDL_Vulkan_GetVkGetInstanceProcAddr]] to load the Vulkan library and query for driver function pointers (after initializing the video subsystem)
+ 1. If necessary, use [[SDL_Vulkan_LoadLibrary]] and [[SDL_Vulkan_GetVkGetInstanceProcAddr]] to load the Vulkan library and query for driver function pointers (after initializing the video subsystem)
 
-1. Query for required extensions using [[SDL_Vulkan_GetInstanceExtensions]] and use this information to create a ```VkInstance```
+ 1. Query for required extensions using [[SDL_Vulkan_GetInstanceExtensions]] and use this information to create a ```VkInstance```
 
-1. Create a surface for the window to draw on using [[SDL_Vulkan_CreateSurface]]
+ 1. Create a surface for the window to draw on using [[SDL_Vulkan_CreateSurface]]
 
-1. When setting up pipelines and framebuffers for your newly created surface, use [[SDL_Vulkan_GetDrawableSize]] to query the surface extent
+ 1. When setting up pipelines and framebuffers for your newly created surface, use [[SDL_Vulkan_GetDrawableSize]] to query the surface extent
 
 == Functions ==
 <<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -title:SGFunctions)>>
