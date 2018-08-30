@@ -42,7 +42,7 @@ On non-Apple devices, application linking with a static libvulkan is not support
 This function is available in SDL 2.0.8
 
 == Related Functions ==
-:[[SDL_GetVkInstanceProcAddr]]
+:[[SDL_Vulkan_GetVkInstanceProcAddr]]
 :[[SDL_Vulkan_UnloadLibrary]]
 
 ----
