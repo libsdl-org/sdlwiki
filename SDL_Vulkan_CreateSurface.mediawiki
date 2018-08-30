@@ -1,0 +1,56 @@
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_Vulkan_CreateSurface =
+Use this function to create a Vulkan rendering surface for a window.
+
+
+
+== Syntax ==
+```c++
+SDL_bool SDL_Vulkan_CreateSurface(SDL_Window* window,
+                                  VkInstance instance,
+                                  VkSurfaceKHR* surface);
+```
+
+== Function Parameters ==
+{|
+|'''window'''
+|The window to which to attach the Vulkan surface
+|-
+|'''instance'''
+|The Vulkan instance handle
+|-
+|'''surface'''
+|A pointer to a ```VkSurfaceKHR``` handle to output the newly created surface
+|}
+
+== Return Value ==
+Returns ```SDL_TRUE``` on success, {{{SDL_FALSE}}} on error.
+
+
+== Code Examples ==
+```c++
+VkSurfaceKHR surface;
+
+if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) handle_error();
+```
+
+
+== Remarks ==
+
+'''Note''': The ```window``` must have been created with the {{{SDL_WINDOW_VULKAN}}} flag and the {{{VkInstance}}} must have been created with extensions returned by {{{SDL_Vulkan_GetInstanceExtensions}}} enabled.
+
+== Version ==
+This function is available in SDL 2.0.8
+
+== Related Functions ==
+:[[SDL_Vulkan_GetInstanceExtensions]]
+:[[SDL_Vulkan_GetDrawableSize]]
+
+----
+[[CategoryAPI]], [[CategoryVulkan]]
+<!-- #See the Style Guide for instructions on editing the footer. -->
