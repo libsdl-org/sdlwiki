@@ -19,8 +19,10 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
 |```SDL_Window``` for which the size is to be queried
 |-
 |'''w'''
-|Pointer to the variable to write the width to or ```NULL}}||'''h'''||Pointer to the variable to write the height to or {{{NULL```||
-
+|Pointer to the variable to write the width to or ```NULL```
+|-
+|'''h'''
+|Pointer to the variable to write the height to or ```NULL```
 |}
 
 
