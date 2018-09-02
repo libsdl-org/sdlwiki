@@ -12,9 +12,9 @@ Use this function to get the names of the Vulkan instance extensions needed to c
 
 == Syntax ==
 ```c++
-SDL_bool SDL_FunctionName(SDL_Window* window,
-                          unsigned int* pCount,
-                          const char** pNames);
+SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window* window,
+                                          unsigned int* pCount,
+                                          const char** pNames);
 ```
 
 == Function Parameters ==
