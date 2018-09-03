@@ -36,6 +36,7 @@ Returns ```SDL_TRUE``` on success, {{{SDL_FALSE}}} on error.
 
 == Code Examples ==
 ```c++
+// Note: This sample uses C++17 features/syntax.
 // Get the required extension count
 unsigned int count;
 if (!SDL_Vulkan_GetInstanceExtensions(window, &count, nullptr)) handle_error();
