@@ -141,7 +141,7 @@ We need to know what kind of events we're looking for and the event types of tho
 ```c++
     case SDL_MOUSEMOTION:
 ```
-All we need do now is read the information out of the '''motion''' member of test_event.
+All we need to do now is read the information out of the '''motion''' member of test_event.
 ```c++
       printf("We got a motion event.\n");
       printf("Current mouse position is: (%d, %d)\n", test_event.motion.x, test_event.motion.y);
