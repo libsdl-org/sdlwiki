@@ -37,7 +37,7 @@ want.freq = 48000;
 want.format = AUDIO_F32;
 want.channels = 2;
 want.samples = 4096;
-want.callback = MyAudioCallback; /* you wrote this function elsewhere. */
+want.callback = MyAudioCallback; /* you wrote this function elsewhere -- see SDL_AudioSpec for details */
 
 if (SDL_OpenAudio(&want, &have) < 0) {
     SDL_Log("Failed to open audio: %s", SDL_GetError());
@@ -70,6 +70,8 @@ With two notable exceptions:
 :[[SDL_PauseAudio]]
 :[[SDL_UnlockAudio]]
 
+== Related Structures ==
+:[[SDL_AudioSpec]]
 
 ----
 [[CategoryAPI]], CategoryAudio
