@@ -19,8 +19,7 @@ void SDL_GL_SwapWindow(SDL_Window* window)
 == Code Examples ==
 ```c++
 
-SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 
-    640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
+SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
       
 /* Create an OpenGL context associated with the window. */
 SDL_GLContext glcontext = SDL_GL_CreateContext(window);
