@@ -45,7 +45,7 @@ Notes:
 With SDL v2.0.8, NDK r18b, and Android Studio v3.2.1 installed, on ubuntu 18.04 
 
 After running ./androidbuild.sh org.libsdl.testgles ../test/testgles.c, in order to make the command ``` ./gradlew installDebug ``` work, I did the following:
-* execute 'sudo update-alternatives --config java' and select jdk-8 as default
+* execute ```sudo update-alternatives --config java``` and select jdk-8 as default
 * in /build/org.libsdl.testgles/build.gradle change (in BOTH places in the file code appears) from
 ```
     repositories {
