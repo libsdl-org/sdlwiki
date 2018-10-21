@@ -41,6 +41,30 @@ Notes:
 * triple target armeabi/armeabi-v7a/x86 compilation!
 * application doesn't quit
 
+==== Updates for current android tools as of 21 Oct 2018 ====
+With SDL v2.0.8, and Android Studio v3.2.1 installed, on ubuntu 18.04, after running ./androidbuild.sh org.libsdl.testgles ../test/testgles.c, in order to make the command ``` ./gradlew installDebug ``` work, I did the following:
+* execute 'sudo update-alternatives --config java' and select jdk-8 as default
+* in /build/org.libsdl.testgles/build.gradle change (in BOTH places in the file code appears) from
+```
+    repositories {
+        jcenter()
+    }
+```
+to
+```
+    repositories {
+        jcenter()
+        google()
+    }
+```
+* also in /build/org.libsdl.testgles/build.gradle change gradle version to
+``` classpath 'com.android.tools.build:gradle:3.2.0' ```
+* in /build/org.libsdl.testgles/app/build.gradle change buildToolsVersion to
+``` buildToolsVersion "28.0.3" ```
+* /build/org.libsdl.testgles/gradle/wrapper/gradle-wrapper.properties change distrubutionUrl to
+``` distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip ```
+* Use Android Virtual Device Manager to run an emulator before executing androidbuild.sh
+* Note that running ./androidbuild.sh again will undo these file edits
 
 === SDL wrapper + SDL_image NDK module ===
 
