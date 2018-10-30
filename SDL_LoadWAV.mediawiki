@@ -19,7 +19,7 @@ SDL_AudioSpec* SDL_LoadWAV(const char*    file,
 |the name of the file to load 
 |-
 |'''spec''' 
-|an [[SDL_AudioSpec]] structure representing the desired output format 
+|an [[SDL_AudioSpec]] structure that will be filled in with the wave file's format details 
 |-
 |'''audio_buf''' 
 |the audio buffer 
