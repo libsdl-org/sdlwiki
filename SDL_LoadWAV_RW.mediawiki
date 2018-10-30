@@ -23,7 +23,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
 |non-zero to automatically free the data source
 |-
 |'''spec'''
-|an [[SDL_AudioSpec]] structure representing the desired output format
+|an [[SDL_AudioSpec]] structure that will be filled in with the wave file's format details
 |-
 |'''audio_buf'''
 |the audio buffer
