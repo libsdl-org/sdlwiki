@@ -1,1 +1,32 @@
-[http://lnkclik.com/73kU vinn en gratis kryssning i karibien] en gratis kryssning
+<!-- pragma section-numbers off -->
+<!-- pragma camelcase off -->
+
+= SDL_SetThreadPriority =
+Use this function to set the priority for the current thread.
+
+
+== Syntax ==
+```c++
+int SDL_SetThreadPriority(SDL_ThreadPriority priority)
+```
+
+== Function Parameters ==
+{|
+|'''priority'''
+|the [[SDL_ThreadPriority]] to set; see [[#Remarks|Remarks]] for details
+|}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+== Code Examples ==
+```c++
+You can add your code example here
+```
+
+== Remarks ==
+'''priority''' may be one of the following:
+<<Include(SDL_ThreadPriority, , , from="Start Include here.", to="##End Include here.")>>
+
+----
+[[CategoryAPI]], [[CategoryThread]]
