@@ -44,5 +44,8 @@ You can add your code example here
 |the event will be processed normally
 |}
 
+== Related Functions ==
+:[[SDL_GetEventState]]
+
 ----
 [[CategoryAPI]], [[CategoryEvents]]
