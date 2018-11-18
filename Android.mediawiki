@@ -13,7 +13,7 @@ This page is more walkthrough-oriented.
 == Pre-requisites ==
 
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
-sudo apt-get install openjdk-8-jdk ant android-sdk-platform-tools-common
+sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
 ```
 * Install NDK (tested with [http://dl.google.com/android/ndk/android-ndk-r8c-linux-x86.tar.bz2 r8c])
 * Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API (>=12)
@@ -45,8 +45,8 @@ Notes:
 With SDL v2.0.8, NDK r18b, and Android Studio v3.2.1 installed, on ubuntu 18.04
 
 Before running ```./androidbuild.sh org.libsdl.testgles ../test/testgles.c```, I did the following:
-* execute ```sudo update-alternatives --config java``` and select jdk-8 as default
-* in /android-project/build.gradle change (in BOTH places in the file code appears) from
+* execute ```sudo update-alternatives --config java``` and select jdk-8 as default (or use {{{JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew}}})
+* fixed in 2.0.9: in /android-project/build.gradle change (in BOTH places in the file code appears) from
 ```
     repositories {
         jcenter()
@@ -61,11 +61,19 @@ to
 ```
 * also in /android-project/build.gradle change gradle version to
 ``` classpath 'com.android.tools.build:gradle:3.2.0' ```
-* in /android-project/app/build.gradle change buildToolsVersion to
-``` buildToolsVersion "28.0.3" ```
-* /android-project/gradle/wrapper/gradle-wrapper.properties change distrubutionUrl to
+* Optionally customize your SDK/NDK versions in ```android-project/app/build.gradle```: {{{
+android {
+    compileSdkVersion 23
+    buildToolsVersion "28.0.3"
+}}}
+* /android-project/gradle/wrapper/gradle-wrapper.properties change distributionUrl to
 ``` distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip ```
 * Use Android Virtual Device Manager to run an emulator before executing androidbuild.sh
+* Set ```
+export ANDROID_HOME=/usr/src/android-sdk-linux
+export ANDROID_NDK_HOME=/usr/src/android-ndk-rXX
+```
+* TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - ```apt install gradle libgradle-android-plugin-java```
 
 === SDL wrapper + SDL_image NDK module ===
 
