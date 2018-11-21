@@ -59,7 +59,7 @@ to
         google()
     }
 ```
-* ```javax/xml/bind/annotation/XmlSchema``` error: check the Android Gradle Plugin version in {{{/android-project/build.gradle}}}, e.g.
+* ```javax/xml/bind/annotation/XmlSchema```, {{{Could not initialize class com.android.sdklib.repository.AndroidSdkHandler}}}: check the Android Gradle Plugin version in {{{/android-project/build.gradle}}}, e.g.
 ``` classpath 'com.android.tools.build:gradle:3.1.0' ```
 * You can customize the Gradle version in ```/android-project/gradle/wrapper/gradle-wrapper.properties```:
 ``` distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip ```
