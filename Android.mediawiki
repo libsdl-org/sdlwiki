@@ -45,7 +45,6 @@ Notes:
 
 ==== Troubleshooting ====
 
-Before running ```./androidbuild.sh org.libsdl.testgles ../test/testgles.c```, I did the following:
 * use OpenJDK 8: execute ```sudo update-alternatives --config java``` and select jdk-8 as default; or use {{{JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew}}}
 * fixed in 2.0.9: in ```/android-project/build.gradle``` change (in BOTH places in the file code appears) from
 ```
