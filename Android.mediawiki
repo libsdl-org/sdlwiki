@@ -15,14 +15,15 @@ This page is more walkthrough-oriented.
 * Install minimal Java environment. For instance, in Debian/Ubuntu: ```
 sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
 ```
-* Install NDK (tested with [http://dl.google.com/android/ndk/android-ndk-r8c-linux-x86.tar.bz2 r8c])
-* Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API (>=12)
+* Install NDK (tested with [https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip r10e])
+* Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API (>=12; >= 19 for SDL >= 2.0.8; >=26 if for SDL >= 2.0.9)
 * Configure your environment variables, e.g.: ```
 PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
+export ANDROID_HOME="/usr/src/android-sdk-linux"        # for gradle
+export ANDROID_NDK_HOME="/usr/src/android-ndk-rXX"      # for gradle
 ```
-* Edit ```build-scripts/androidbuild.sh```, find the {{{$ANDROID update project}}} line, and add {{{--target android-XX}}} to it (replace XX with your installed API number above).
 
 == Simple builds ==
 
@@ -34,19 +35,19 @@ cd /usr/src/SDL2/build-scripts/
 ```
 * Follow the instructions to install on your device: ```
 cd /usr/src/SDL2/build/org.libsdl.testgles/
-ant debug install
+ant debug install       # SDL <= 2.0.7
+./gradlew installDebug  # SDL >= 2.0.8
 ```
 
 Notes:
-* triple target armeabi/armeabi-v7a/x86 compilation!
+* multiple targets armeabi-v7a/arm64-v8a/x86/x86_64 compilation
 * application doesn't quit
 
-==== Updates for current android tools as of 21 Oct 2018 ====
-With SDL v2.0.8, NDK r18b, and Android Studio v3.2.1 installed, on ubuntu 18.04
+==== Troubleshooting ====
 
 Before running ```./androidbuild.sh org.libsdl.testgles ../test/testgles.c```, I did the following:
-* execute ```sudo update-alternatives --config java``` and select jdk-8 as default (or use {{{JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew}}})
-* fixed in 2.0.9: in /android-project/build.gradle change (in BOTH places in the file code appears) from
+* use OpenJDK 8: execute ```sudo update-alternatives --config java``` and select jdk-8 as default; or use {{{JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew}}}
+* fixed in 2.0.9: in ```/android-project/build.gradle``` change (in BOTH places in the file code appears) from
 ```
     repositories {
         jcenter()
@@ -59,20 +60,23 @@ to
         google()
     }
 ```
-* also in /android-project/build.gradle change gradle version to
-``` classpath 'com.android.tools.build:gradle:3.2.0' ```
-* Optionally customize your SDK/NDK versions in ```android-project/app/build.gradle```: {{{
-android {
-    compileSdkVersion 23
-    buildToolsVersion "28.0.3"
-}}}
-* /android-project/gradle/wrapper/gradle-wrapper.properties change distributionUrl to
+* ```javax/xml/bind/annotation/XmlSchema``` error: check the Android Gradle Plugin version in {{{/android-project/build.gradle}}}, e.g.
+``` classpath 'com.android.tools.build:gradle:3.1.0' ```
+* You can customize the Gradle version in ```/android-project/gradle/wrapper/gradle-wrapper.properties```:
 ``` distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip ```
-* Use Android Virtual Device Manager to run an emulator before executing androidbuild.sh
-* Set ```
-export ANDROID_HOME=/usr/src/android-sdk-linux
-export ANDROID_NDK_HOME=/usr/src/android-ndk-rXX
+* You can customize your SDK/NDK versions in ```android-project/app/build.gradle```: {{{
+android {
+    buildToolsVersion "28.0.1"
+    compileSdkVersion 28
+}}}
+* You can customize your targets depending on the NDK version: ```
+        externalNativeBuild {
+            ndkBuild {
+                arguments "APP_PLATFORM=android-14"
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
 ```
+* ```ABIs [x86_64, arm64-v8a] are not supported for platform. Supported ABIs are [armeabi, armeabi-v7a, x86, mips]```: upgrade to NDK >= 10
+* Using ant (SDL <= 2.0.7): edit ```build-scripts/androidbuild.sh```, find the {{{$ANDROID update project}}} line, and add {{{--target android-XX}}} to it (replace XX with your installed API number)
 * TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - ```apt install gradle libgradle-android-plugin-java```
 
 === SDL wrapper + SDL_image NDK module ===
