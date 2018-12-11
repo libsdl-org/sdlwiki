@@ -22,3 +22,27 @@ A structure that contains sensor updates.
 |float[6]
 |'''data'''
 |Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData()
+|}
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+:[[SDL_SensorType]]
+
+== Related Functions ==
+:[[SDL_NumSensors]]
+:[[SDL_SensorGetDeviceName]]
+:[[SDL_SensorGetDeviceType]]
+:[[SDL_SensorGetDeviceNonPortableType]]
+:[[SDL_SensorGetDeviceInstanceID]]
+:[[SDL_SensorOpen]]
+:[[SDL_SensorFromInstanceID]]
+:[[SDL_SensorGetName]]
+:[[SDL_SensorGetType]]
+:[[SDL_SensorGetNonPortableType]]
+:[[SDL_SensorGetInstanceID]]
+:[[SDL_SensorGetData]]
+:[[SDL_SensorClose]]
+:[[SDL_SensorUpdate]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]
