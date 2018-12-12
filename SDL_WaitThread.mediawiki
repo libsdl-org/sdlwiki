@@ -16,7 +16,7 @@ void SDL_WaitThread(SDL_Thread* thread,
 |the SDL_Thread pointer that was returned from the [[SDL_CreateThread]]() call that started this thread
 |-
 |'''status''' 
-|pointer to an integer that will receive the value returned from the thread function by its 'return', see [[#Remarks|Remarks]] for details 
+|pointer to an integer that will receive the value returned from the thread function by its 'return', or '''NULL''' to not receive such value back. see [[#Remarks|Remarks]] for details 
 |}
 
 == Code Examples ==
