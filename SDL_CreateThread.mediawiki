@@ -39,7 +39,7 @@ static int TestThread(void *ptr)
     int cnt;
 
     for (cnt = 0; cnt < 10; ++cnt) {
-        printf("\nThread counter: %d", cnt);
+        printf("Thread counter: %d\n", cnt);
         SDL_Delay(50);
     }
 
@@ -51,16 +51,16 @@ int main(int argc, char *argv[])
     SDL_Thread *thread;
     int         threadReturnValue;
 
-    printf("\nSimple SDL_CreateThread test:");
+    printf("Simple SDL_CreateThread test:\n");
 
     /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
-        printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
+        printf("SDL_CreateThread failed: %s\n", SDL_GetError());
     } else {
         SDL_WaitThread(thread, &threadReturnValue);
-        printf("\nThread returned value: %d", threadReturnValue);
+        printf("Thread returned value: %d\n", threadReturnValue);
     }
 
     return 0;
@@ -68,7 +68,6 @@ int main(int argc, char *argv[])
 ```
 ```c++
 Output:
-
 Simple SDL_CreateThread test:
 Thread counter: 0
 Thread counter: 1
