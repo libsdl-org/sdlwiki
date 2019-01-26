@@ -12,7 +12,7 @@ void SDL_DisableScreenSaver(void)
 
 == Code Examples ==
 ```c++
-SDL_DisableScreenSaver();
+You can add your code example here
 ```
 
 == Remarks ==
