@@ -7,7 +7,7 @@
 
 
 = SDL_GameControllerGetBindForAxis =
-Use this function to get the SDL joystick layer binding for a controller button mapping.
+Use this function to get the SDL joystick layer binding for a controller axis mapping.
 
 
 
@@ -30,7 +30,8 @@ SDL_GameControllerButtonBind SDL_GameControllerGetBindForAxis(SDL_GameController
 
 
 == Return Value ==
-Returns a binding on success or an empty binding on failure.
+Returns a [[SDL_GameControllerButtonBind]] describing the bind.<br/>
+On failure (like the given Controller axis doesn't exist on the device), its <code>.bindType</code> will be <code>SDL_CONTROLLER_BINDTYPE_NONE</code>.
 
 
 == Code Examples ==
