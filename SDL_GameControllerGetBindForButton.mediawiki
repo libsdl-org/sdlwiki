@@ -49,6 +49,9 @@ You can add your code example here
 == Version ==
 This function is available since SDL 2.0.0.
 
+== Related Structures ==
+:[[SDL_GameControllerButtonBind]]
+
 == Related Functions ==
 :[[SDL_GameControllerGetBindForAxis]]
 
