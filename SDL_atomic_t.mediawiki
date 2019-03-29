@@ -26,7 +26,9 @@ SDL_atomic_t frames;
 Uint32 fps_timer_callback(Uint32 interval, void *data)
 {
 	const float f = SDL_AtomicGet(&frames);
-	const float iv = (float)interval / 1000.0f;
+	const float iv = interval * 0.001f;
+
+	/* Note: the thread safety of printf is ambiguous across platforms */
 	printf("%.2f\tfps\n", f / iv);
 
 	/* Reset frame counter */
