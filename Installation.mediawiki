@@ -136,6 +136,11 @@ Also note that Emscripten has a simple implementation of SDL 1.2's API built in.
 Our buildbot tries to build with Emscripten for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-emscripten/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 
+=== Nintendo Switch ===
+
+SDL2 runs on the Nintendo Switch! There are commercial games shipping with this port. This port is kept in a separate repository, but is available for free, under the zlib license, to anyone that is under NDA for Switch development with Nintendo. Please contact Ryan (icculus at icculus dot org) for details.
+
+
 === WinRT/Windows 8/WinPhone ===
 
 There are Visual Studio project files for Windows Phone and WinRT, versions 8.0 (using Visual Studio 2012) and 8.1 (using Visual Studio 2013). These are in the "VisualC-WinRT" directory.
@@ -153,7 +158,7 @@ If your favorite system is listed below, we aren't working on it. If you send re
 
 === Consoles (PlayStation, XBox, Wii, etc) ===
 
-SDL2 does not currently support these platforms, but we'd really like to! If you work for Sony, Microsoft, or Nintendo, we would like to port SDL2 to these platforms and provide support to registered developers in a separate repository. Please get in touch with us!
+SDL2 does not currently support (most of) these platforms, but we'd really like to! If you work for Sony, Microsoft, or Nintendo, we would like to port SDL2 to these platforms and provide support to registered developers in a separate repository. Please get in touch with us!
 
 === BeOS ===
 
