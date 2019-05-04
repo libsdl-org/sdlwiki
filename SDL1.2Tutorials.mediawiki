@@ -5,7 +5,7 @@ There are a number of SDL tutorials available from different sources.
 
 
 == Setup ==
-* [http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ SDL and MYSYS/MinGW] ([https://web.archive.org/web/20120820141724/http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ Archive])
+* [https://web.archive.org/web/20120820141724/http://blog.pantokrator.net/2006/08/08/setting-up-msysmingw-build-system-for-compiling-sdlopengl-applications/ SDL and MYSYS/MinGW]
 : A tutorial detailing how to set up the MSYS/MinGW build system for compiling SDL/OpenGL applications
 
 == Multi-Subject ==
