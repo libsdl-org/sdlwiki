@@ -147,6 +147,12 @@ There are Visual Studio project files for Windows Phone and WinRT, versions 8.0 
 
 WinRT isn't hooked up to our buildbot yet (soon!), but the .bat file we intend to use with it is [https://hg.libsdl.org/SDL/file/default/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use !PowerShell to do some magic, which you can see in [https://hg.libsdl.org/SDL/file/default/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
 
+
+=== QNX ===
+
+QNX is supported. Our buildbot compiles for QNX on ARM, ARM64, x86, and x86_64 on each commit. You can build for this platform "the unix way."
+
+
 === Ouya ===
 
 SDL apps work on the Ouya! Just build like a standard Android application and side-load it on the device to test.
@@ -180,17 +186,13 @@ This worked at some point using a homebrew toolkit, and while it is currently st
 
 Support was removed in SDL 2.0. SDL 1.2 still supports Mac OS Classic.
 
-=== IBM OS/2 and eComStation ===
+=== IBM OS/2 and eComStation and ArcaOS ===
 
-Support was removed in SDL 2.0. SDL 1.2 still supports OS/2.
+Support was removed in SDL 2.0. SDL 1.2 still supports OS/2. Our buildbot still builds SDL2 for OS/2 on every commit, but it's just compiling the core source files; we don't have video, audio, etc backends for the platform. Send patches, please!
 
 === Windows 95/98/ME ===
 
 Support was removed in SDL 2.0 (Windows XP and later are supported). SDL 1.2 still supports Win9x.
-
-=== QNX ===
-
-Support was removed in SDL 2.0. SDL 1.2 still supports QNX.
 
 === AmigaOS and MorphOS ===
 
