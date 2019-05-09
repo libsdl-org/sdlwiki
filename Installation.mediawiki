@@ -125,7 +125,7 @@ Our buildbot tries to build for Native Client for each commit, and uploads succe
 
 === Emscripten ===
 
-SDL, as of 2.0.4, can be built with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js, and render with OpenGL ES 2 (which becomes WebGL calls in the end). This port is currently considered experimental, but is already very promising; Humble Bundle is shipping several games as web apps that use it.
+SDL, as of 2.0.4, can be built with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js/WebAssembly, and render with OpenGL ES 2 (which becomes WebGL calls in the end). This port is currently considered experimental, but is already very promising; Humble Bundle is shipping several games as web apps that use it.
 
 This port is generally built "the Unix way," but with a little wrapper script over the configure script or CMake to smooth out some quirks. At the end, you should have a libSDL2.a static library to link against your Emscripten-compiled app.
 
