@@ -57,7 +57,7 @@ dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 == Remarks ==
 This structure is used by [[SDL_OpenAudioDevice]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudioDevice]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
 
-'''freq''' specifies the number of sample frames sent to the sound device per second. Common values are 11025, 22050, 44100 and 48000. Larger values produce cleaner audio, in much the same way that larger resolutions produce cleaner graphics.
+'''freq''' specifies the number of sample frames sent to the sound device per second. The Nyquist Theorem states that the audio sampling frequency must be exactly twice the highest frequency represented in the audio. Humans can hear up to slightly under 20kHz, declining to 16kHz or lower as we age. Standard CD quality audio uses 44100. DVDs and the [https://opus-codec.org/ Opus audio codec] use 48000. Values higher than 48000 generally should not be used for playback purposes because they use more memory, use more CPU, and can cause other problems as explained in [https://people.xiph.org/~xiphmont/demo/neil-young.html this blog post by Chris Montgomery of Xiph].
 
 '''format''' specifies the size and type of each sample element and may be one of the following:
 <<Include(SDL_AudioFormat, , , from="=== Audio Format Values ===", to="== Code Examples ==")>>
