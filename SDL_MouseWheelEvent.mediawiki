@@ -29,7 +29,7 @@ A structure that contains mouse wheel event information.
 |-
 |Sint32
 |'''y'''
-|the amount scrolled vertically, positive away from the user and negative toward the user
+|the amount scrolled vertically, positive away from the user and negative towards the user
 |-
 |Uint32
 |'''direction'''
@@ -46,11 +46,11 @@ while( SDL_PollEvent( &event ) )
     {
         if(event.wheel.y > 0) // scroll up
         {
-             // Pull up code here!
+             // Put code for handling "scroll up" here!
         }
         else if(event.wheel.y < 0) // scroll down
         {
-             // Pull down code here!
+             // Put code for handling "scroll down" here!
         }
 
         if(event.wheel.x > 0) // scroll right
