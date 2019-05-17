@@ -62,7 +62,7 @@ while( SDL_PollEvent( &event ) )
              // ...
         }
     }
-    else if(event.type == SDL_SDL_MOUSEBUTTONDOWN)
+    else if(event.type == SDL_MOUSEBUTTONDOWN)
     {
         // ... handle mouse clicks ...
     }
