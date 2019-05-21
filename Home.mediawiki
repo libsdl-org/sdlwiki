@@ -15,7 +15,7 @@ SDL officially supports Windows, Mac OS X, Linux, iOS, and Android. Support for 
 
 SDL is written in C, works natively with C++, and there are bindings available for several other languages, including C# and Python.
 
-SDL 2.0 is distributed under the [http://www.gzip.org/zlib/zlib_license.html zlib license]. This license allows you to use SDL freely in any software.
+SDL 2.0 is distributed under the [https://www.libsdl.org/license.php zlib license]. This license allows you to use SDL freely in any software.
 
 This is the SDL wiki; SDL's main website is [https://libsdl.org/].
 
