@@ -28,6 +28,7 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
 
 == Code Examples ==
 ```c++
+// may use std::clamp() in C++17
 #define CLAMP(x, lo, hi)    ((x) < (lo) ? (lo) : (x) > (hi) ? (hi) : (x))
 
 SDL_Window *window;
