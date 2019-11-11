@@ -28,7 +28,7 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
 
 == Code Examples ==
 ```c++
-// may use std::clamp() in C++17
+// may instead choose to use std::clamp() in C++17
 #define CLAMP(x, lo, hi)    ((x) < (lo) ? (lo) : (x) > (hi) ? (hi) : (x))
 
 SDL_Window *window;
@@ -43,13 +43,21 @@ if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) {
 
 // ...
 
+// Create Swapchain
+
 VkSurfaceCapabilitiesKHR capabilities;
 vkGetPhysicalDeviceSurfaceCapabilitiesKHR(physicalDevice, surface, &capabilities);
+
 int width;
 int height;
 SDL_Vulkan_GetDrawableSize(window, &width, &height);
+
 width = CLAMP(width, capabilities.minImageExtent.width, capabilities.maxImageExtent.width);
 height = CLAMP(height, capabilities.minImageExtent.height, capabilities.maxImageExtent.height);
+
+// ...
+
+// vkCreateSwapchainKHR(...);
 ```
 
 
