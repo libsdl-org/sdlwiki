@@ -67,7 +67,7 @@ We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build
 
 In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime if you plan to ship a Linux game for non-Steam platforms, too, since you know it's definitely built sanely.
 
-=== Windows XP/Vista/7 ===
+=== Windows XP/Vista/7/8/10 ===
 
 SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
 
@@ -141,9 +141,9 @@ Our buildbot tries to build with Emscripten for each commit, and uploads success
 SDL2 runs on the Nintendo Switch! There are commercial games shipping with this port. This port is kept in a separate repository, but is available for free, under the zlib license, to anyone that is under NDA for Switch development with Nintendo. Please contact Ryan (icculus at icculus dot org) for details.
 
 
-=== WinRT/Windows 8/WinPhone ===
+=== WinRT/Windows 8/Windows 10/WinPhone ===
 
-There are Visual Studio project files for Windows Phone and WinRT, versions 8.0 (using Visual Studio 2012) and 8.1 (using Visual Studio 2013). These are in the "VisualC-WinRT" directory.
+There are Visual Studio project files for Windows Phone, WinRT version 8.1 (using Visual Studio 2013) and UWP (using Visual Studio 2015). These are in the "VisualC-WinRT" directory.
 
 WinRT isn't hooked up to our buildbot yet (soon!), but the .bat file we intend to use with it is [https://hg.libsdl.org/SDL/file/default/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use !PowerShell to do some magic, which you can see in [https://hg.libsdl.org/SDL/file/default/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
 
