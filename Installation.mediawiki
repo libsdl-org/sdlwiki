@@ -141,7 +141,7 @@ Our buildbot tries to build with Emscripten for each commit, and uploads success
 SDL2 runs on the Nintendo Switch! There are commercial games shipping with this port. This port is kept in a separate repository, but is available for free, under the zlib license, to anyone that is under NDA for Switch development with Nintendo. Please contact Ryan (icculus at icculus dot org) for details.
 
 
-=== WinRT/Windows 8/Windows 10/WinPhone ===
+=== WinRT/UWP/Windows 8/Windows 10/WinPhone ===
 
 There are Visual Studio project files for Windows Phone, WinRT version 8.1 (using Visual Studio 2013) and UWP (using Visual Studio 2015). These are in the "VisualC-WinRT" directory.
 
