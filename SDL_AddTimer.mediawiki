@@ -108,6 +108,8 @@ The callback function is passed the current timer interval and the user supplied
 
 The callback is run on a separate thread.  See the code examples for a method of processing the timer callbacks on the main thread if that's desired.
 
+Timers take into account the amount of time it took to execute the callback. For example, if the callback took 250 ms to execute and returned 1000 (ms), it would only wait another 750 ms before its next iteration.
+
 
 == Related Functions ==
 :[[SDL_RemoveTimer]]
