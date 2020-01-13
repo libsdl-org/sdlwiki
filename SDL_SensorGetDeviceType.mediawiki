@@ -1,7 +1,7 @@
 <!-- pragma section-numbers off -->
 <!-- pragma disable-camelcase -->
 
-= SDL_SensorGetDevice =
+= SDL_SensorGetDeviceType =
 Get the type of a sensor.
 
 This can be called before any sensors are opened.
