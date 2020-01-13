@@ -85,6 +85,9 @@
 |-
 |[CategoryGameController|Game Controller Support]] 
 |[[http://hg.libsdl.org/SDL/file/default/include/SDL_gamecontroller.h SDL_gamecontroller.h] 
+|-
+|[CategorySensor|Sensors]] 
+|[[http://hg.libsdl.org/SDL/file/default/include/SDL_sensor.h SDL_sensor.h] 
 |}
 
 
