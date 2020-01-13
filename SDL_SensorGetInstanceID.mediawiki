@@ -20,4 +20,4 @@ SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
 The sensor instance ID, or -1 if the sensor is NULL.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
