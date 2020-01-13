@@ -20,4 +20,4 @@ SDL_Sensor *SDL_SensorFromInstanceID(SDL_SensorID instance_id);
 A [[SDL_Sensor]] object.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
