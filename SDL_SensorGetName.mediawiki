@@ -20,4 +20,4 @@ const char *SDL_SensorGetName(SDL_Sensor *sensor);
 The sensor name, or NULL if the sensor is NULL.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
