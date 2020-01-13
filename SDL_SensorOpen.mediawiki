@@ -20,4 +20,4 @@ SDL_Sensor *SDLCALL SDL_SensorOpen(int device_index);
 A [[SDL_Sensor]] sensor object, or NULL if an error occurred.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
