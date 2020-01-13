@@ -14,7 +14,7 @@ int SDL_SensorGetData(SDL_Sensor * sensor, float *data, int num_values);
 
 == Function Parameters ==
 {|
-|'''sensor''
+|'''sensor'''
 |The [[SDL_Sensor]] object to query
 |-
 |'''data'''
