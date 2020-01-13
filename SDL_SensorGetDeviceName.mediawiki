@@ -22,4 +22,4 @@ const char *SDL_SensorGetDeviceName(int device_index);
 The sensor name, or NULL if device_index is out of range.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
