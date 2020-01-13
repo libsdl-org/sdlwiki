@@ -28,4 +28,4 @@ int SDL_SensorGetData(SDL_Sensor * sensor, float *data, int num_values);
 0 or -1 if an error occurred.
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
