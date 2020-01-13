@@ -1,0 +1,24 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorGetType =
+Get the type of a sensor.
+
+
+== Syntax ==
+```c++
+SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
+```
+
+== Function Parameters ==
+{|
+|'''sensor'''
+|The [[SDL_Sensor]] object to inspect
+|}
+
+== Return Value ==
+The [[SDL_SensorType]] type, or SDL_SENSOR_INVALID if the sensor is NULL.
+
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
