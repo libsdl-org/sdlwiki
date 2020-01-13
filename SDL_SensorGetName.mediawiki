@@ -1,0 +1,23 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorGetName =
+Get the implementation dependent name of a sensor
+
+
+== Syntax ==
+```c++
+const char *SDL_SensorGetName(SDL_Sensor *sensor);
+```
+
+== Function Parameters ==
+{|
+|'''sensor'''
+|The [[SDL_Sensor]] object
+|}
+
+== Return Value ==
+The sensor name, or NULL if the sensor is NULL.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
