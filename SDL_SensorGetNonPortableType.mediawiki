@@ -1,0 +1,23 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorGetNonPortableType =
+Get the platform dependent type of a sensor.
+
+
+== Syntax ==
+```c++
+int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
+```
+
+== Function Parameters ==
+{|
+|'''sensor'''
+|The [[SDL_Sensor]] object to inspect
+|}
+
+== Return Value ==
+The sensor platform dependent type, or -1 if the sensor is NULL.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
