@@ -1,0 +1,23 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorFromInstanceID =
+Return the SDL_Sensor associated with an instance id.
+
+
+== Syntax ==
+```c++
+SDL_Sensor *SDL_SensorFromInstanceID(SDL_SensorID instance_id);
+```
+
+== Function Parameters ==
+{|
+|'''instance_id'''
+|The sensor from instance id
+|}
+
+== Return Value ==
+A [[SDL_Sensor]] object.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
