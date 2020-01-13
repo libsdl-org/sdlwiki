@@ -1,0 +1,23 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorGetInstanceID =
+Get the instance ID of a sensor.
+
+
+== Syntax ==
+```c++
+SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
+```
+
+== Function Parameters ==
+{|
+|'''sensor'''
+|The [[SDL_Sensor]] object to inspect
+|}
+
+== Return Value ==
+The sensor instance ID, or -1 if the sensor is NULL.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
