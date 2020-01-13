@@ -1,0 +1,23 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorOpen =
+Open a sensor for use.
+
+
+== Syntax ==
+```c++
+SDL_Sensor *SDLCALL SDL_SensorOpen(int device_index);
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|The sensor to open
+|}
+
+== Return Value ==
+A [[SDL_Sensor]] sensor object, or NULL if an error occurred.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
