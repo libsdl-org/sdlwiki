@@ -28,4 +28,4 @@ Additional sensors may be available, using platform dependent semantics.
 : [[SDL_SensorGetDeviceType]]
 
 ----
-[[CategoryAPI]], [[CategorySensor]]
+[[CategoryEnum]], [[CategorySensor]]
