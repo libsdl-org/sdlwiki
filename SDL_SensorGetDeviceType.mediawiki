@@ -1,0 +1,25 @@
+<!-- pragma section-numbers off -->
+<!-- pragma disable-camelcase -->
+
+= SDL_SensorGetDevice =
+Get the type of a sensor.
+
+This can be called before any sensors are opened.
+
+
+== Syntax ==
+```c++
+SDL_SensorType SDL_SensorGetDeviceType(int device_index);
+```
+
+== Function Parameters ==
+{|
+|'''device_index'''
+|The sensor to get the type from
+|}
+
+== Return Value ==
+The [[SDL_SensorType]], or SDL_SENSOR_INVALID if device_index is out of range.
+
+----
+[[CategoryAPI]], [[CategoryEvents]]
