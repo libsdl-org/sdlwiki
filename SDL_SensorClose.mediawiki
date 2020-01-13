@@ -17,4 +17,4 @@ void SDL_SensorClose(SDL_Sensor *sensor);
 |}
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategorySensor]]
