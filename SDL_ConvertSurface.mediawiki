@@ -31,7 +31,12 @@ Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; c
 
 == Code Examples ==
 ```c++
-You can add your code example here
+
+// SDL_Surface *input = ...;
+SDL_PixelFormat *format = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA32);
+SDL_Surface *output = SDL_ConvertSurface(input, format, 0);
+SDL_FreeFormat(format);
+
 ```
 
 == Remarks ==
