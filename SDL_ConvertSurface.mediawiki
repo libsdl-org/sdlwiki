@@ -44,6 +44,7 @@ This function is used to optimize images for faster ''repeat'' blitting.  This i
 
 
 == Related Functions ==
+:[[SDL_AllocFormat]]
 :[[SDL_ConvertSurfaceFormat]]
 :[[SDL_CreateRGBSurface]]
 
