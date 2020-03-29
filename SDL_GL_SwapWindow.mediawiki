@@ -31,7 +31,7 @@ SDL_GL_SetSwapInterval(1);
 glClearColor(0,0,0,1);
 glClear(GL_COLOR_BUFFER_BIT);
 
-/* <Extra drawing fuctions here> */ 
+/* <Extra drawing functions here> */ 
 
 /* Swap our buffer to display the current contents of buffer on screen */ 
 SDL_GL_SwapWindow(window);
