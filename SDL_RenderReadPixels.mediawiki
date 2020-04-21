@@ -29,7 +29,7 @@ int SDL_RenderReadPixels(SDL_Renderer*   renderer,
 |a pointer filled in with the pixel data
 |-
 |'''pitch'''
-|the pitch of the '''pixels''' parameter
+|the pitch of the '''pixels''' parameter; see [[#pitch|Remarks]] for details
 |}
 
 == Return Value ==
@@ -46,6 +46,9 @@ You can add your code example here
 <span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
+<span id="pitch"></span> '''pitch''' specifies the number of bytes between rows of pixels.
+This allows you to use a subrectangle of a larger pixels array or have padded rows in the pixel data.
+Generally, this should equal the number of pixels per row of pixel data times the number of bytes per pixel.
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
