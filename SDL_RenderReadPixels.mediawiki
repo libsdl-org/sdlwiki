@@ -2,7 +2,7 @@
 <!-- pragma disable-camelcase -->
 
 = SDL_RenderReadPixels =
-Use this function to read pixels from the current rendering target.
+Use this function to read pixels from the current rendering target to an array of pixels.
 
 
 == Syntax ==
@@ -26,7 +26,7 @@ int SDL_RenderReadPixels(SDL_Renderer*   renderer,
 |the desired format of the pixel data, or 0 to use the format of the rendering target; see [[#format|Remarks]] for details
 |-
 |'''pixels'''
-|a pointer filled in with the pixel data
+|a pointer to the pixel data to copy into
 |-
 |'''pitch'''
 |the pitch of the '''pixels''' parameter; see [[#pitch|Remarks]] for details
@@ -43,12 +43,12 @@ You can add your code example here
 == Remarks ==
 /!\ WARNING: This is a very slow operation, and should not be used frequently.
 
+<span id="pitch"></span> '''pitch''' specifies the number of bytes between rows in the destination '''pixels''' data.
+This allows you to write to a subrectangle or have padded rows in the destination.
+Generally, '''pitch''' should equal the number of pixels per row in the '''pixels''' data times the number of bytes per pixel.
+
 <span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
-
-<span id="pitch"></span> '''pitch''' specifies the number of bytes between rows of pixels.
-This allows you to use a subrectangle of a larger pixels array or have padded rows in the pixel data.
-Generally, this should equal the number of pixels per row of pixel data times the number of bytes per pixel.
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
