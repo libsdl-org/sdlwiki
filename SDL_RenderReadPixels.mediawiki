@@ -45,7 +45,7 @@ You can add your code example here
 
 <span id="pitch"></span> '''pitch''' specifies the number of bytes between rows in the destination '''pixels''' data.
 This allows you to write to a subrectangle or have padded rows in the destination.
-Generally, '''pitch''' should equal the number of pixels per row in the '''pixels''' data times the number of bytes per pixel.
+Generally, '''pitch''' should equal the ''number of pixels per row'' in the '''pixels''' data times the ''number of bytes per pixel'', but it might contain additional padding (for example, 24bit RGB Windows Bitmap data pads all rows to multiples of 4 bytes).
 
 <span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
