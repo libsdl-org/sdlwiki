@@ -21,7 +21,7 @@ A hint that specifies if SDL should give back control to the browser automatical
 
 
 == Default ==
-SDL pauses the application and gives back control to the browser automatically when the application compiled with [https://emscripten.org/docs/porting/asyncify.html asyncify] support, by calling [https://emscripten.org/docs/api_reference/emscripten.h.html#pseudo-synchronous-functions emscripten_sleep] when:
+SDL pauses the application and gives back control to the browser automatically when the application is compiled with [https://emscripten.org/docs/porting/asyncify.html asyncify] support, by calling [https://emscripten.org/docs/api_reference/emscripten.h.html#pseudo-synchronous-functions emscripten_sleep] when:
 
 * refreshing the software graphics context,
 * refreshing the GPU graphics context,
