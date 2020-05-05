@@ -44,7 +44,7 @@ With the default ```SDL_HINT_EMSCRIPTEN_ASYNCIFY=1```, to optimize performance, 
 emcc ... -s ASYNCIFY=1 -s ASYNCIFY_WHITELIST='["main", "call_path_to_your_main_loop", "SDL_WaitEvent", "SDL_WaitEventTimeout", "SDL_Delay", "SDL_RenderPresent", "GLES2_RenderPresent", "SDL_GL_SwapWindow", "Emscripten_GLES_SwapWindow", "byn$$fpcast-emu$$Emscripten_GLES_SwapWindow", "SDL_UpdateWindowSurface", "SDL_UpdateWindowSurfaceRects", "Emscripten_UpdateWindowFramebuffer"]'
 ```
 
-If you get a ```RuntimeError: unreachable executed```, then check the JavaScript console and its stack trace to identify the missing function.
+If you get a ```RuntimeError: unreachable executed```, then check the !JavaScript console and its stack trace to identify the missing function.
 
 == Remarks ==
 This hint only applies to the Emscripten platform.
