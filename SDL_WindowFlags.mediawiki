@@ -16,6 +16,9 @@ An enumeration of window states.
 |SDL_WINDOW_OPENGL
 |window usable with OpenGL context
 |-
+|SDL_WINDOW_VULKAN
+|window usable with a Vulkan instance
+|-
 |SDL_WINDOW_SHOWN
 |window is visible
 |-
