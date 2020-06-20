@@ -111,6 +111,8 @@ int main(int argc, char *argv[])
 * [[SDL_StopTextInput]]
 * [[SDL_SetTextInputRect]]
 * [[SDL_IsTextInputActive]]
+* [[SDL_IsScreenKeyboardShown]]
+* [[SDL_HasScreenKeyboardSupport]]
 
 === Events ===
 * [[SDL_TextEditingEvent]]
