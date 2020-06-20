@@ -39,7 +39,8 @@ You can add your code example here
 This function is available since SDL 2.0.0.
 
 == Related Functions ==
-:[[SDL_StartTextInput]]
+* [[SDL_StartTextInput]]
+* [[SDL_IsScreenKeyboardShown]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
