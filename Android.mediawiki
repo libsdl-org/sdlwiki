@@ -18,11 +18,11 @@ sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
 * Install NDK (tested with [https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip r10e])
 * Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API (>=12; >= 19 for SDL >= 2.0.8; >=26 if for SDL >= 2.0.9)
 * Configure your environment variables, e.g.: ```
-PATH="/usr/src/android-ndk-r8c:$PATH"                   # for 'ndk-build'
+PATH="/usr/src/android-ndk-rXXx:$PATH"                   # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
 export ANDROID_HOME="/usr/src/android-sdk-linux"        # for gradle
-export ANDROID_NDK_HOME="/usr/src/android-ndk-rXX"      # for gradle
+export ANDROID_NDK_HOME="/usr/src/android-ndk-rXXx"      # for gradle
 ```
 
 == Simple builds ==
