@@ -50,7 +50,7 @@ If you get a ```RuntimeError: unreachable executed```, then check the !JavaScrip
 This hint only applies to the Emscripten platform.
 
 == Version ==
-This hint is available since SDL2 port version_21 / Emscripten 1.39.14, and is not merged in the official SDL repository yet.
+This hint is available since SDL2 port version_21 / Emscripten 1.39.14, and is in the official SDL [https://hg.libsdl.org/SDL/rev/dd5a816a4d61 development version] as of 2020-06.
 
 ----
 [[CategoryDefine]], [[CategoryHints]]
