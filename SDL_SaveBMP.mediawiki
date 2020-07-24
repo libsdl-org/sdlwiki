@@ -34,7 +34,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
   
     if(SDL_SaveBMP(sfc, "somefile.bmp") != 0)
     {
-        // Srror saving bitmap
+        // Error saving bitmap
         printf("SDL_SaveBMP failed: %s\n", SDL_GetError());
     }
 ```
