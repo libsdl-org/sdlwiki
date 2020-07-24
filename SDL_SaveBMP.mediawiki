@@ -25,7 +25,18 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 == Code Examples ==
 ```c++
-You can add your code example here
+
+    ...
+
+    SDL_Surface *sfc = ...
+
+    ...
+  
+    if(SDL_SaveBMP(sfc, "somefile.bmp") != 0)
+    {
+        // Srror saving bitmap
+        printf("SDL_SaveBMP failed: %s\n", SDL_GetError());
+    }
 ```
 
 == Remarks ==
