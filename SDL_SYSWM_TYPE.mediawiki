@@ -17,7 +17,7 @@ An enumeration of the various supported windowing subsystems.
 |X Window System
 |-
 |SDL_SYSWM_DIRECTFB
-|[http://www.directfb.net DirectFB]
+|[https://en.wikipedia.org/wiki/DirectFB DirectFB]
 |-
 |SDL_SYSWM_COCOA
 |Apple Mac OS X
