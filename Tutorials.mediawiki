@@ -64,6 +64,3 @@ There are a number of SDL tutorials available from different sources.
 
 * [https://web.archive.org/web/20180625073639/http://ansuz.sooke.bc.ca/software/sdl-condvars.php Condition variables in SDL] (Archived)
 : A good discussion of condition variables (in computer science rather than gaming context), some mention of mutex and semaphore use
-
-== SDL 1.2 ==
-: [[SDL1.2Tutorials|SDL 1.2 Tutorials]]
