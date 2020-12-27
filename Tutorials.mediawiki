@@ -4,17 +4,26 @@ There are a number of SDL tutorials available from different sources.
 
 == Multi-Subject ==
 
-* [http://twinklebear.github.io/pages/sdl2/ TwinklebearDev]
-: Tutorials covering a wide variety of introductory topics with SDL 2.0
-
 * [http://www.sdltutorials.com/ SDLTutorials.com]
 : A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
-* [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2. Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
-: An example of a project upgrade from SDL 1.2 to SDL 2.0
+* [https://www.parallelrealities.co.uk/tutorials/ SDL2 Game Tutorials]
+: Tutorials on building 3 complete games using SDL 2.0
+
+* [https://www.reddit.com/r/learnprogramming/comments/2ebfn1/copenglsdl_game_engine_tutorials_for_an_absolute/ C++/OpenGL/SDL Game Engine Tutorials]
+: SDL game engine tutorials for absolute beginners, written by the lead developer of [https://www.seedofandromeda.com/ Seed of Andromeda]
+
+* [https://www.youtube.com/playlist?list=PLHJE4y54mpC5_eEz9gCqIkNpU-n_2eyNt SDL Made Easy]
+: A collection of video tutorials on various SDL topics
 
 * [http://lazyfoo.net/tutorials/SDL/index.php Beginning Game Programming v2.0]
 : A collection of detailed tutorials for game programming using SDL 2.0 with C++
+
+* [http://twinklebear.github.io/pages/sdl2/ TwinklebearDev]
+: Tutorials covering a wide variety of introductory topics with SDL 2.0
+
+* [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2. Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
+: An example of a project upgrade from SDL 1.2 to SDL 2.0
 
 == Setup ==
 * [https://www.youtube.com/watch?v=wWGtuc5uqF4]
@@ -64,3 +73,8 @@ There are a number of SDL tutorials available from different sources.
 
 * [https://web.archive.org/web/20180625073639/http://ansuz.sooke.bc.ca/software/sdl-condvars.php Condition variables in SDL] (Archived)
 : A good discussion of condition variables (in computer science rather than gaming context), some mention of mutex and semaphore use
+
+== libSDL2pp ==
+
+* [https://github.com/libSDL2pp/libSDL2pp-tutorial]
+: Tutorial for libSDL2pp, C++11 bindings/wrapper for SDL2
