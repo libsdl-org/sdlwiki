@@ -22,7 +22,7 @@ Estas son las características nuevas más importantes de SDL 2.0
 * Soporte de ventanas múltiples
 * Soporte de pantallas múltiples
 * Soporte de dispositivos de audio múltiples
-* <span style="color: green;">Audio recording support</span>
+* Soporte para grabación de audio
 * Soporte de Android e iOS
 * Soporte de Emscripten e Native Client
 * API 2D simple que puede utilizar Direct3D, OpenGL, OpenGL ES o renderizado por software.
@@ -38,7 +38,7 @@ Estas son las características nuevas más importantes de SDL 2.0
 * Mejorado el soporte de teclado (scancodes vs keycodes, etc)
 * Ventanas de mensaje
 * Soporte de portapapeles
-* <span style="color: green;">APIs for building robust GUI toolkits on top of SDL</span>
+* APIs para construir kit de herramientas gráficas robustas encima de SDL
 * Soporte básico Drag'n'Drop
 * Soporte para entrada IME y unicode
 * [[CategoryAssertions|Potente sistema de macros para asserts]]
@@ -403,7 +403,7 @@ SDL_AddEventWatch(myEventFilter, data);
 
 Además, ahora hay eventos de toque reales en vez de asignarlos al ratón. Puedes rastrear toques, de varios dedos e incluso gestos complejos. Puedes ver la lista completa de funciones en SDL_touch.h y eventos [[SDL_Finger]]* en SDL_events.h.
 
-<span style="color: green;">Note that SDL will also map simple touches to look like mouse events (with the mouse event's which field set to SDL_TOUCH_MOUSEID), which means that if you don't care about more complex touch interfaces, your existing desktop app might still work out of the box on a phone where the user is poking the screen with a finger. As such: mobile-aware apps should probably ignore SDL_TOUCH_MOUSEID events, but still respect real mouse events in addition to the touch events--some mobile devices support USB and Bluetooth mice, after all!--but this is something to consider more deeply when you start to polish your app, after you are up and running on SDL2.</span>
+Tenga en cuenta que SDL también mapeará toques simples para que parezcan eventos del mouse (con el campo del evento del mouse configurado en SDL_TOUCH_MOUSEID), lo que significa que si no le interesan las interfaces táctiles más complejas, su aplicación de escritorio existente aún podría funcionar en un teléfono donde el usuario está tocando la pantalla con un dedo. Como tal: las aplicaciones para dispositivos móviles probablemente deberían ignorar los eventos SDL_TOUCH_MOUSEID, pero seguir respetando los eventos reales del mouse además de los eventos táctiles (después de todo, algunos dispositivos móviles son compatibles con ratones USB y Bluetooth), pero esto es algo a considerar más profundamente cuando comienza a pulir su aplicación, después de que esté funcionando en SDL2.
 
 Hay algunas otras funciones pensadas para plataformas móviles, como [[SDL_StartTextInput]]() que mostrarán el teclado en pantalla. Úsalas.
 
