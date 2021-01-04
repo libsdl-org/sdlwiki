@@ -8,13 +8,13 @@ If you know of an article about SDL 2.0 that should be linked here please let us
 
 == SDL 1.2 ==
 * Free Software Magazine - May 2006
-: [http://www.freesoftwaremagazine.com/articles/linux_pdas The GP2x PDA|target="blank"]
+: [http://www.freesoftwaremagazine.com/articles/linux_pdas The GP2x PDA|target="blank"] ([https://web.archive.org/web/20181114065653/http://freesoftwaremagazine.com/articles/linux_pdas/ Archive])
 * Ask Slashdot - April 2004
 : [http://slashdot.org/askslashdot/01/04/03/1747256.shtml Game Programming w/ the Simple Directmedia Layer?|target="blank"]
 * O'Reilly Network - October 2003
-: [http://linuxdevcenter.com/pub/a/linux/2003/10/23/sdl_anim.html Animation in SDL: OpenGL|target="blank"]
+: [http://linuxdevcenter.com/pub/a/linux/2003/10/23/sdl_anim.html Animation in SDL: OpenGL|target="blank"] ([https://web.archive.org/web/20180103014310/http://linuxdevcenter.com/pub/a/linux/2003/10/23/sdl_anim.html Archive])
 * O'Reilly Network - August 2003
-: [http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Animation in SDL: Hardware Surfaces|target="blank"]
+: [http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Animation in SDL: Hardware Surfaces|target="blank"] ([https://web.archive.org/web/20180103014309/http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Archive])
 * O'Reilly Network - May 2003
 : [http://linuxdevcenter.com/pub/a/linux/2003/05/15/sdl_anim.html Animation in SDL|target="blank"]
 * !GameProgrammer.com - August 2002
