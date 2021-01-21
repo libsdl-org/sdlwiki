@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetKeyboardFocus =
 Use this function to get the window which currently has keyboard focus.

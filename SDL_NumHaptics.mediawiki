@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_NumHaptics =
 Use this function to count the number of haptic devices attached to the system.

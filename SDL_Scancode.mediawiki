@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_Scancode =
 An enumeration of the SDL keyboard scancode representation.

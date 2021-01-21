@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_ComposeCustomBlendMode =
 Use this function to compose a custom blend mode for renderers.

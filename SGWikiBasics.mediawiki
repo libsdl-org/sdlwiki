@@ -778,7 +778,7 @@ Some other wiki help that might be of interest or helpful to find quickly:
 <!-- #Markup for pages that need to be deleted by Sam: -->
 <!-- #||<: tablewidth="100%"><<Color2(THIS FUNCTION HAS BEEN REMOVED FROM THE API.,purple)>><br/><<Color2(THIS PAGE WILL BE DELETED.,purple)>>|| -->
 <!-- #Markup for draft pages: -->
-<!-- #'''DRAFT''' -->
+<!-- #<span color="red">'''DRAFT'''</span> -->
 <!-- #Markup for Resources and Disclaimer section on SG pages (remove backticks): -->
 <!-- #<<Include(SGWikiBasics, , , from="Start SG<code></code> Include here.", to="##End SG<code></code> Include here.")>> -->
 

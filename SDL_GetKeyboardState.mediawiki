@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetKeyboardState =
 Use this function to get a snapshot of the current state of the keyboard.

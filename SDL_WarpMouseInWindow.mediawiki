@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_WarpMouseInWindow =
 Use this function to move the mouse to the given position within the window.

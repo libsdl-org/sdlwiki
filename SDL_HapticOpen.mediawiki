@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticOpen =
 Use this function to open a haptic device for use.

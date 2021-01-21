@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickGetButton =
 Use this function to get the current state of a button on a joystick.

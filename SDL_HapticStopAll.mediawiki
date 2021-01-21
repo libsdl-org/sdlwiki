@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticStopAll =
 Use this function to stop all the currently playing effects on a haptic device.

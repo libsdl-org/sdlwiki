@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickGetBall =
 Use this function to get the ball axis change since the last poll.

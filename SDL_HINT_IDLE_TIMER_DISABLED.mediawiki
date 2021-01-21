@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HINT_IDLE_TIMER_DISABLED =
 A hint that specifies a variable controlling whether the idle timer is disabled on iOS.

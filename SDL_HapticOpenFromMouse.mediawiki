@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticOpenFromMouse =
 Use this function to try to open a haptic device from the current mouse.

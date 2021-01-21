@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticRunEffect =
 Use this function to run the haptic effect on its associated haptic device.

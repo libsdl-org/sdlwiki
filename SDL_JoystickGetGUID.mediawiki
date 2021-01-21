@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickGetGUID =
 Use this function to get the implementation-dependent GUID for the joystick.

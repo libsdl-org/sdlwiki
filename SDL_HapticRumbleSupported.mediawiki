@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticRumbleSupported =
 Use this function to check whether rumble is supported on a haptic device.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_StopTextInput =
 Use this function to stop receiving any text input events.

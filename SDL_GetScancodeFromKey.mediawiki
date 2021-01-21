@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetScancodeFromKey =
 Use this function to get the scancode corresponding to the given key code according to the current keyboard layout.

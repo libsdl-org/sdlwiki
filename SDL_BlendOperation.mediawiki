@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_BlendOperation =
 An enumeration of blend operations used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().

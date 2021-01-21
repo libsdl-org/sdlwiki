@@ -1,5 +1,5 @@
 
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 ```#!wiki warning
 '''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''

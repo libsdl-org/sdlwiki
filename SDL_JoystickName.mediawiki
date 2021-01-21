@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickName =
 Use this function to get the implementation dependent name of a joystick.

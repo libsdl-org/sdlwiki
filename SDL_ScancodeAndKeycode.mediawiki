@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_Scancode and SDL_Keycode =
 Enumerations of the SDL physical (scancode) and virtual (keycode) key representations.

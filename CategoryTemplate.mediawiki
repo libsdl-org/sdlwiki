@@ -1,6 +1,6 @@
 <!-- acl All:read -->
 
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 <!-- #Remove #acl All:read above before saving your new page or you may not be able to save it.  Do not change or remove any of the other markup above this comment.  Remove this comment. -->
 

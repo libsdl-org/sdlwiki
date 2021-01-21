@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetMouseFocus =
 Use this function to get the window which currently has mouse focus.

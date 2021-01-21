@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_ShowCursor =
 Use this function to toggle whether or not the cursor is shown.

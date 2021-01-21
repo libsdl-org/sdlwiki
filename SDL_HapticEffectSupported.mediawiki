@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticEffectSupported =
 Use this function to check to see if an effect is supported by a haptic device.

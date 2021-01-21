@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticSetAutocenter =
 Use this function to set the global autocenter of the device.

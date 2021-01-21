@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticDestroyEffect =
 Use this function to destroy a haptic effect on the device.

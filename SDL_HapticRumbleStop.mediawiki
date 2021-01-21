@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticRumbleStop =
 Use this function to stop the simple rumble on a haptic device.

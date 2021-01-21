@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticStopEffect =
 Use this function to stop the haptic effect on its associated haptic device.

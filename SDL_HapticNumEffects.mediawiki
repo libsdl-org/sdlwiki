@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticNumEffects =
 Use this function to get the number of effects a haptic device can store.

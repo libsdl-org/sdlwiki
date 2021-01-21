@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticNewEffect =
 Use this function to create a new haptic effect on a specified device.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_MouseIsHaptic =
 Use this function to get <!-- determine/find/query --> whether or not the current mouse has haptic capabilities.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticQuery =
 Use this function to get the haptic device's supported features in bitwise manner.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickEventState =
 Use this function to enable/disable joystick event polling.

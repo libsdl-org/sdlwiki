@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_StartTextInput =
 Use this function to start accepting Unicode text input events.

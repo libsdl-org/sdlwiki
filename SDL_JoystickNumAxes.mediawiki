@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickNumAxes =
 Use this function to get the number of general axis controls on a joystick.

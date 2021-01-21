@@ -1,6 +1,6 @@
 <!-- # page was renamed from CategoryAdditionalOther -->
 
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = Standard Library Functionality =
 

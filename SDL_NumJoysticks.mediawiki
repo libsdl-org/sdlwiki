@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_NumJoysticks =
 Use this function to count the number of joysticks attached to the system.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickClose =
 Use this function to close a joystick previously opened with [[SDL_JoystickOpen]]().

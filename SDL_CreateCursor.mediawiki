@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_CreateCursor =
 Use this function to create a cursor using the specified bitmap data and mask (in MSB format).

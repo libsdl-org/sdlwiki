@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickNumButtons =
 Use this function to get the number of buttons on a joystick.

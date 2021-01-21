@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_MultiGestureEvent =
 A structure that contains multiple finger gesture event information.

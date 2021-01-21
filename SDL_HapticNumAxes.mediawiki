@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticNumAxes =
 Use this function to get the number of haptic axes the device has.

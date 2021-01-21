@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetScancodeName =
 Use this function to get a human-readable name for a scancode.

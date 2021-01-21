@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetRelativeMouseMode =
 Use this function to query whether relative mouse mode is enabled.

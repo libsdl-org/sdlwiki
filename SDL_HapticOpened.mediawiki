@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticOpened =
 Use this function to check if the haptic device at the designated index has been opened.

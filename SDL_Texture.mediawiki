@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_Texture =
 A structure that contains an efficient, driver-specific representation of pixel data.

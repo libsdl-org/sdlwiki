@@ -1,5 +1,5 @@
 <!-- # page was renamed from SDL_JoystickIndex -->
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickInstanceID =
 Use this function to get the instance ID of an opened joystick.

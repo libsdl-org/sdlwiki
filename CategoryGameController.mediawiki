@@ -1,5 +1,5 @@
 
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = GameController and Joystick Mapping =
 

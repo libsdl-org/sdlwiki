@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_DollarGestureEvent =
 A structure that contains complex gesture event information.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetMouseState =
 Use this function to retrieve the current state of the mouse.

@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_BlendFactor =
 An enumeration of blend factors used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().

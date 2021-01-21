@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticRumblePlay =
 Use this function to run a simple rumble effect on a haptic device.

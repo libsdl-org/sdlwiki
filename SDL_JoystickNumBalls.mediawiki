@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickNumBalls =
 Use this function to get the number of trackballs on a joystick.

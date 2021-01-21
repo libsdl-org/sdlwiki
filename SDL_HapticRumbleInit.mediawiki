@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticRumbleInit =
 Use this function to initialize the <!-- a --> haptic device for simple rumble playback.

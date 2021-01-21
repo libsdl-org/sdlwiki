@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_HapticGetEffectStatus =
 Use this function to get the status of the current effect on the specified haptic device.

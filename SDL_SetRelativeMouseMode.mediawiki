@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_SetRelativeMouseMode =
 Use this function to set relative mouse mode.

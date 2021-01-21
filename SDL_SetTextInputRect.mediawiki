@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_SetTextInputRect =
 Use this function to set the rectangle used to type Unicode text inputs.

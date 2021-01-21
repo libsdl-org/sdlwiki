@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetKeyFromName =
 Use this function to get a key code from a human-readable name.

@@ -1,5 +1,5 @@
 
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_TryLockMutex =
 Use this function to try to lock a mutex without blocking.

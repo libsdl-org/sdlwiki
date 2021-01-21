@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_AndroidGetActivity =
 Use this function to retrieve the Java instance of the activity class in an Android application.

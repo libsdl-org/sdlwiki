@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickGetAxis =
 Use this function to get the current state of an axis control on a joystick.

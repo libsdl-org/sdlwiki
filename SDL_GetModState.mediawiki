@@ -1,4 +1,4 @@
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_GetModState =
 Use this function to get the current key modifier state for the keyboard.

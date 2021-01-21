@@ -1,5 +1,5 @@
 <!-- # page was renamed from SDL_JoystickOpened -->
-'''DRAFT'''
+<span color="red">'''DRAFT'''</span>
 
 = SDL_JoystickGetAttached =
 Use this function to get the status of a specified joystick.
