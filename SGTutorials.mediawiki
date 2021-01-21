@@ -23,17 +23,17 @@ The [[Tutorials|Tutorials]] page provides links to many different resources for 
 == Adding An Existing Tutorial ==
 ''The following instructions apply if you have already created your tutorial.  If you still need to create your tutorial see ''[[#creating|Creating A New Tutorial]]'' below first and then return here.''
 
- 1. Begin by going to the [[Tutorials|Tutorials]] page and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+ 1. Begin by going to the [[Tutorials|Tutorials]] page and selecting <span color="blue">Edit (Text)</span> or <span color="blue">Edit (GUI)</span> in the left column to begin editing.
   ~-Reminder: Markup info provided here is specifically for use in the Text editor but should work in both.-~
 
  1. Scroll down in the edit window to the section that best fits your tutorial (eg: ```== Video ==```, {{{== Audio ==}}}, etc.).<br/> See [[#heading|Creating A New Heading]] if one does not exist.
 
  1. See [[#formatting|Formatting Your Entry]] below to find information relevant to your tutorial and apply the appropriate formatting as you create your entry.
 
- 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+ 1. Preview your work as you go by clicking <span color="blue">Preview</span> in the left column.  Preview often and any time you are unsure of formatting. 
 : ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
 
- 1. When you are satisfied with your content and have filled in the Comment field under the editing box, save your work by clicking <<Color2(blue,Save Changes)>> in the left column.
+ 1. When you are satisfied with your content and have filled in the Comment field under the editing box, save your work by clicking <span color="blue">Save Changes</span> in the left column.
 
 For additional assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide.
 
@@ -113,7 +113,7 @@ http://wiki.libsdl.org/moin.cgi/PageName
  ''Example'': The address for the page [[SDL_BuildAudioCVT]]() is
 : ```http://wiki.libsdl.org/moin.cgi/SDL_BuildAudioCVT```
 
- <<Color2(red,''Important!'')>> Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page address after the page is created and saved. 
+ <span color="red">''Important!''</span> Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page address after the page is created and saved. 
  ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': Copy all of your contents, cancel or close the page, and start over.<br/>Paste your contents into the new page and continue editing.||
  ||''Note'': Your old page and address will not be saved.||
  ||<( |2>''If'' you discover a typo in the address __after you saved the page__||''Action'': Send a message via ''Feedback'' or to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> requesting a correction.||
@@ -123,11 +123,11 @@ http://wiki.libsdl.org/moin.cgi/PageName
 : ''Action 2'': Create a blank page to fill with your tutorial.
 
  ''How'': If you have chosen a unique address in step 1 [[#creating|above]] then you will arrive at a page that has the following at the top followed by a table with 2 columns.
-  ||'''This page does not exist yet. You can create a new empty page, or use one of the page templates.'''<br/><br/><<Color2(blue,Create new empty page)>>||
+  ||'''This page does not exist yet. You can create a new empty page, or use one of the page templates.'''<br/><br/><span color="blue">Create new empty page</span>||
 
- Click on <<Color2(blue,Create new empty page)>>, which will take you to a nearly blank editing page (using the text editor) that says, <code>Describe PageName here</code>.  
+ Click on <span color="blue">Create new empty page</span>, which will take you to a nearly blank editing page (using the text editor) that says, <code>Describe PageName here</code>.  
 : ~-''Note'': You will need to delete the text in the editing box to start with a truly blank page.-~
-: If you prefer to use the GUI editor click <<Color2(blue,GUI/Text Mode)>> in the left column to switch to the GUI editor.
+: If you prefer to use the GUI editor click <span color="blue">GUI/Text Mode</span> in the left column to switch to the GUI editor.
 
 
 : ''Action 3'': Create your tutorial!<br/>Your tutorial page may have any formatting you feel suits the contents best. It is preferred that the general appearance remain consistent (or at least compatible) with the rest of the wiki as much as possible.

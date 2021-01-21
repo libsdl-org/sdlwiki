@@ -7,7 +7,7 @@
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
 
-<!-- #<<Color2(col=green,text=Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h])>> -->
+<!-- <span color="green">Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h]</span> -->
 
 
 == Introduction ==

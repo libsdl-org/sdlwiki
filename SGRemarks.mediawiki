@@ -16,19 +16,19 @@ All [[SGWikiBasics#api|API pages]] in this wiki contain a section for remarks.  
 * Do not post anything that you do not have permission to post publicly.
 * Remarks should have adequate references to make them clear and useful.
 * Please remember to keep it accurate, simple, and easy to understand.
-* ''<<Color2(red,Important!)>>'' The Remarks section is not a discussion board.  This is not an appropriate place to post questions, unrelated comments, or general commentary.  Only constructive information is to be posted in the Remarks section.
+* ''<span color="red">Important!</span>'' The Remarks section is not a discussion board.  This is not an appropriate place to post questions, unrelated comments, or general commentary.  Only constructive information is to be posted in the Remarks section.
 : Please use the [http://forums.libsdl.org/ forums], [http://www.libsdl.org/mailing-list.php mailing lists], ''Feedback'' form (upper right corner), or email (<<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>) if you have questions or need to discuss some aspect of the API.
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
 == Adding Your Remarks ==
- 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+ 1. Begin by going to the page you wish to edit and selecting <span color="blue">Edit (Text)</span> or <span color="blue">Edit (GUI)</span> in the left column to begin editing.
   {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
  1. Scroll down in the edit window to the section that begins with ```== Remarks ==```.  Add your content below this heading following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#formatting|below]] and apply the appropriate formatting as you create your content.
- 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+ 1. Preview your work as you go by clicking <span color="blue">Preview</span> in the left column.  Preview often and any time you are unsure of formatting. 
 : ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
- 1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box.  
+ 1. Save your work by clicking <span color="blue">Save Changes</span> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box.  
 For additional assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide.
 
 
@@ -47,7 +47,7 @@ For additional assistance with editing, saving, or wiki-appropriate markup see t
 |<( |3>''If'' there are __existing remarks__ on the page
 |''Action'': Add your remarks to the end of the Remarks section, or to a related grouping if there are existing remarks covering the same topic.
 |-
-|<<Color2(red,''Important!'')>> Do not change or remove any of the existing content.
+|<span color="red">''Important!''</span> Do not change or remove any of the existing content.
 |-
 |''Example'': [[SDL_MixAudio]]()
 |}

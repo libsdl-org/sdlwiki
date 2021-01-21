@@ -12,7 +12,7 @@ This guide provides specific instructions for editing or adding your own content
 
 == General Guidelines ==
 {|
-|<<Color2(red,Important note about '''Hints''')>> <br/> The basic enumeration template is also used for hints that have pages in the wiki.  For simplicity, the following guidelines for enumerations will also apply to hints unless a specific difference is noted.
+|<span color="red">Important note about '''Hints'''</span> <br/> The basic enumeration template is also used for hints that have pages in the wiki.  For simplicity, the following guidelines for enumerations will also apply to hints unless a specific difference is noted.
 |}
 
 '''Please observe the following for all enumeration pages:'''
@@ -22,7 +22,7 @@ This guide provides specific instructions for editing or adding your own content
 
 * Please remember to keep it accurate, simple, and easy to understand.
 
-* Do not remove, modify, or add to the markup above the page title ~-(processing instructions (ie: <code>#pragma</code>, <code>#acl</code>), <<Color2(red,DRAFT)>> markup, etc.)-~ except:
+* Do not remove, modify, or add to the markup above the page title ~-(processing instructions (ie: <code>#pragma</code>, <code>#acl</code>), <span color="red">DRAFT</span> markup, etc.)-~ except:
 * On C<code></code>ategoryCompat pages, place the following markup above the page title and below the processing instructions or DRAFT markup, if present:
 : ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
 
@@ -30,20 +30,20 @@ This guide provides specific instructions for editing or adding your own content
 
 * In general, we prefer that you do not remove or modify existing content unless it is clearly incorrect or out of date.
 
-* Pages with <<Color2(red,DRAFT)>> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
+* Pages with <span color="red">DRAFT</span> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
 
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
 <br/>
 == Getting Started ==
- 1. Begin by going to the page you wish to edit and selecting <<Color2(blue,Edit (Text))>> or <<Color2(blue,Edit (GUI))>> in the left column to begin editing.
+ 1. Begin by going to the page you wish to edit and selecting <span color="blue">Edit (Text)</span> or <span color="blue">Edit (GUI)</span> in the left column to begin editing.
   {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
  1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
  1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
- 1. Preview your work as you go by clicking <<Color2(blue,Preview)>> in the left column.  Preview often and any time you are unsure of formatting. 
+ 1. Preview your work as you go by clicking <span color="blue">Preview</span> in the left column.  Preview often and any time you are unsure of formatting. 
 : ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
- 1. Save your work by clicking <<Color2(blue,Save Changes)>> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
+ 1. Save your work by clicking <span color="blue">Save Changes</span> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
 
 For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
@@ -133,7 +133,7 @@ The Values section provides basic information about each value in the enumeratio
 
 * The __first column__ contains the value name, usually in all caps (format as in the API).
 * The __second column__ contains a simple description of each value using some specific formatting conventions.
-: ''<<Color2(red,Important!)>>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
+: ''<span color="red">Important!</span>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
 
 ''Example'': [[SDL_BlendMode]], [[SDL_HintPriority]], [[SDL_PowerState]], [[SDL_WindowFlags]]
 
@@ -403,7 +403,7 @@ The Related Functions section provides a list of functions specifically associat
 <span id="footer"></span>
 === Footer ===
 {|
-|<tablewidth="100%" ><<Color2(red,''Important!'')>><br/>See [[#hints|Hint Pages]] below for details on how this section is different for Hint pages.
+|<tablewidth="100%" ><span color="red">''Important!''</span><br/>See [[#hints|Hint Pages]] below for details on how this section is different for Hint pages.
 |}
 
 The Footer section consists of a horizontal rule followed by two links separated by a comma.  
@@ -415,13 +415,13 @@ The Footer section consists of a horizontal rule followed by two links separated
 ```
 : where <code>CategoryEnum</code> is the same for every enumeration page and <code>CategoryHeader</code> is enumeration-specific with <code>Header</code> varying based on the header file containing the enumeration (see below).
 
-<<Color2(red,''Important!'')>> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the enumeration will appear in the correct list(s).
+<span color="red">''Important!''</span> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the enumeration will appear in the correct list(s).
 
 ''Action 1'': '''Do not edit the <code>CategoryEnum</code> link!'''
 
 ''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the structure has been relocated to another header (very rare).
 
-''<<Color2(red,Important!)>>'' There are a few exceptions to this rule (pages with a category name that does not match their header file according to the table).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit your concern in the [http://forums.libsdl.org/ forums] or [http://www.libsdl.org/mailing-list.php mailing lists] or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
+''<span color="red">Important!</span>'' There are a few exceptions to this rule (pages with a category name that does not match their header file according to the table).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit your concern in the [http://forums.libsdl.org/ forums] or [http://www.libsdl.org/mailing-list.php mailing lists] or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
 
 ''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
 
