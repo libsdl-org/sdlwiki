@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetPixelFormatPalette =
 Use this function to set the palette for a pixel format structure.

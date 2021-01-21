@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_UnionRect =
 Use this function to calculate the union of two rectangles.

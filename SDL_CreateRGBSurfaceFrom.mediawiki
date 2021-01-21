@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CreateRGBSurfaceFrom =
 Use this function to allocate a new RGB surface with existing pixel data.

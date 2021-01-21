@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CreateRGBSurface =
 Use this function to allocate a new RGB surface.

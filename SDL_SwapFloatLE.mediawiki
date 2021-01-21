@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SwapFloatLE =
 Use this function to swap the byte order of a little-endian floating point value to native ordering.

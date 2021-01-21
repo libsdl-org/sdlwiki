@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetAudioStatus =
 This function is a legacy means of querying the audio device. New programs might want to use [[SDL_GetAudioDeviceStatus]]() instead.

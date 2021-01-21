@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CreateTextureFromSurface =
 Use this function to create a texture from an existing surface.

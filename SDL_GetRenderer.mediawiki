@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetRenderer =
 Use this function to get the renderer associated with a window.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CondBroadcast =
 Use this function to restart all threads that are waiting on the condition variable.

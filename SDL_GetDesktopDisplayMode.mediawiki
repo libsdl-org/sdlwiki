@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetDesktopDisplayMode =
 Use this function to get information about the desktop display mode.

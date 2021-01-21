@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_BuildAudioCVT =
 Use this function to initialize an [[SDL_AudioCVT]] structure for conversion.

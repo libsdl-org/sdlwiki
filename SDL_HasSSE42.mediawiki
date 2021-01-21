@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_HasSSE42 =
 Use this function to determine whether the CPU has SSE4.2 features.

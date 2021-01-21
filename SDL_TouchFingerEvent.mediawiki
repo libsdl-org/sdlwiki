@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_TouchFingerEvent =
 A structure that contains finger touch event information.

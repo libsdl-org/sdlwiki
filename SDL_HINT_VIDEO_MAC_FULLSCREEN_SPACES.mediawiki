@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_HINT_VIDEO_FULLSCREEN_SPACES -->
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 '''DRAFT'''
 
 <!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->

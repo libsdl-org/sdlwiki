@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowSurface =
 Use this function to get the SDL surface associated with the window.

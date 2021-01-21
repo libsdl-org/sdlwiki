@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RestoreWindow =
 Use this function to restore the size and position of a minimized or maximized window.

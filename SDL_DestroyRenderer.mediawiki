@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_DestroyRenderer =
 Use this function to destroy the rendering context for a window and free associated textures.

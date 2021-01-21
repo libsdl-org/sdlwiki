@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetHintWithPriority =
 Use this function to set a hint with a specific priority.

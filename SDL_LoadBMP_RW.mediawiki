@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LoadBMP_RW =
 Use this function to load a BMP image from a seekable SDL data stream (memory or file).

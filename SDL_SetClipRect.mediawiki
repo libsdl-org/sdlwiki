@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SetClipRect =
 Use this function to set the clipping rectangle for a surface.

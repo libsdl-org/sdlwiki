@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SYSWM_TYPE =
 An enumeration of the various supported windowing subsystems.

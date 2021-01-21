@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowGrab =
 Use this function to get a window's input grab mode.

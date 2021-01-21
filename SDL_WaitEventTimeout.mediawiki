@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_WaitEventTimeout =
 Use this function to wait until the specified timeout (in milliseconds) for the next available event.

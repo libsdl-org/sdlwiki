@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_DetachThread =
 Use this function to let a thread clean up on exit without intervention.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_VERSION_ATLEAST =
 Use this macro to determine whether the SDL version compiled against is at least as new as the specified version.

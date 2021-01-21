@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetBasePath =
 Use this function to get the directory where the application was run from.  This is where the application data directory is.

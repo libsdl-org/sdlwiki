@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_ConvertAudio =
 Use this function to convert audio data to a desired audio format.

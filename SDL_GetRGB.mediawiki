@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetRGB =
 Use this function to get RGB values from a pixel in the specified format. 

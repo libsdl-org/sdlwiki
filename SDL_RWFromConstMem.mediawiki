@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RWFromConstMem =
 Use this function to prepare a read-only memory buffer for use with RWops.

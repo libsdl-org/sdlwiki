@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetRevisionNumber =
 Use this function to get the revision number of SDL that is linked against your program.

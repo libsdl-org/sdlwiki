@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CreateTexture =
 Use this function to create a texture for a rendering context.

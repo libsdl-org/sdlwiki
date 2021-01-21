@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowData =
 Use this function to retrieve the data pointer associated with a window.

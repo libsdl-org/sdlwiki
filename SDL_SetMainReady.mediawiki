@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_ -->
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 {|
 |<tablewidth="100%"style="color:#FF0000;  ;text-align:center">DRAFT 
 |}

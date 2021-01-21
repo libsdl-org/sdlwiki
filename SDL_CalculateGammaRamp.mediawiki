@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CalculateGammaRamp =
 Use this function to calculate a 256 entry gamma ramp for a gamma value.

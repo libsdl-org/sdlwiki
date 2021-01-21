@@ -1,4 +1,3 @@
-<!-- pragma camelcase off -->
 
 = SDL 2.0 Roadmap =
 

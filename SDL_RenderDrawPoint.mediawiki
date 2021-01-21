@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderDrawPoint =
 Use this function to draw a point on the current rendering target.

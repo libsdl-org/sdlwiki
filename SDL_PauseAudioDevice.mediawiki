@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_PauseAudioDevice =
 Use this function to pause and unpause audio playback on a specified device.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_Swap32 =
 Use this function to swap the byte order of a 32-bit value.

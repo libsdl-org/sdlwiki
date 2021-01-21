@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 <!-- acl All:read -->
 
 = Style Guide: Wiki Basics =

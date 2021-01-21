@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AllocRW =
 Use this function to allocate an empty, unpopulated [[SDL_RWops]] structure.

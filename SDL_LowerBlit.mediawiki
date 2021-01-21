@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LowerBlit =
 Use this function to perform low-level surface blitting only.

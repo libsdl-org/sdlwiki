@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CondWaitTimeout =
 Use this function to wait until a condition variable is signaled or a specified amount of time has passed.

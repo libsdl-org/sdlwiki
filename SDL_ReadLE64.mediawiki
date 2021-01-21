@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_ReadLE64 =
 Use this function to read 64 bits of little-endian data from an [[SDL_RWops]] and return in native format.

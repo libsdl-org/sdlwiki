@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_VideoInit =
 Use this function to initialize the video subsystem, optionally specifying a video driver.

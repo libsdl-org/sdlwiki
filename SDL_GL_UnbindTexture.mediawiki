@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 = SDL_GL_UnbindTexture =
 Use this function to unbind an OpenGL/ES/ES2 texture from the current context.
 

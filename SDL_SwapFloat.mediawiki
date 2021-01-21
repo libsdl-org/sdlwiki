@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SwapFloat =
 Use this function to swap the byte order of a floating point value.

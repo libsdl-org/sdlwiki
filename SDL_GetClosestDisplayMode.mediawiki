@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 = SDL_GetClosestDisplayMode =
 Use this function to get the closest match to the requested display mode.
 

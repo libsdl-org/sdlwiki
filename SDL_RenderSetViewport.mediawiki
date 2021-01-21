@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_RenderSetViewport =
 Use this function to set the drawing area for rendering on the current target.

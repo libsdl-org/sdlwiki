@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_ConvertPixels =
 Use this function to copy a block of pixels of one format to another format.

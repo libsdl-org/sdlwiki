@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MaximizeWindow =
 Use this function to make a window as large as possible.

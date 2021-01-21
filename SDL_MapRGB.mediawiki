@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MapRGB =
 Use this function to map an RGB triple to an opaque pixel value for a given pixel format.

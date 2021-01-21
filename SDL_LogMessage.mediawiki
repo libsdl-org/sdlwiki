@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogMessage =
 Use this function to log a message with the specified category and priority.

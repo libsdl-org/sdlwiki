@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderPresent =
 Use this function to update the screen with any rendering performed since the previous call.

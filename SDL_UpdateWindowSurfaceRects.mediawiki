@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_UpdateWindowSurfaceRects =
 Use this function to copy areas of the window surface to the screen.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_PumpEvents =
 Use this function to pump the event loop, gathering events from the input devices.

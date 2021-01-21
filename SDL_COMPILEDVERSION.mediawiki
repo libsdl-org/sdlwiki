@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_COMPILEDVERSION =
 Use this macro to get the SDL version number that you compiled against.

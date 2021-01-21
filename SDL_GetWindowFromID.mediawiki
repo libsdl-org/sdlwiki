@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetWindowFromID =
 Use this function to get a window from a stored ID.

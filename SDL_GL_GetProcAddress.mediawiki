@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_GetProcAddress =
 Use this function to get an OpenGL function by name.

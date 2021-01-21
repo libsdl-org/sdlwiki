@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_UnlockSurface =
 Use this function to release a surface after directly accessing the pixels.

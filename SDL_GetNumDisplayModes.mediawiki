@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetNumDisplayModes =
 Use this function to get the number of available display modes.

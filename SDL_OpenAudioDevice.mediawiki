@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_OpenAudioDevice =
 Use this function to open a specific audio device.

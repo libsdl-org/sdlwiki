@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogGetOutputFunction =
 Use this function to get the current log output function.

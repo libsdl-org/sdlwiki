@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_GetAttribute =
 Use this function to get the actual value for an attribute from the current context.

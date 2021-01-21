@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderDrawRects =
 Use this function to draw some number of rectangles on the current rendering target.

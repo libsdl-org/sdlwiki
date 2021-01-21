@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetCPUCacheLineSize =
 Use this function to determine the L1 cache line size of the CPU.

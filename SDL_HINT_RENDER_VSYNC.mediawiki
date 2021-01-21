@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_HINT_RENDER_VSYNC =
 A hint that specifies whether sync to vertical refresh is enabled or disabled in [[SDL_CreateRenderer]]() to avoid tearing.

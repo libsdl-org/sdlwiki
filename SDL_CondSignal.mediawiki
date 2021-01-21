@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CondSignal =
 Use this function to restart one of the threads that are waiting on the condition variable.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SemPost =
 Use this function to atomically increment a semaphore's value and wake waiting threads.

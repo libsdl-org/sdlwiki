@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SetRenderTarget =
 Use this function to set a texture as the current rendering target.

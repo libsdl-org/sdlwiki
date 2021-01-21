@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AtomicLock =
 Use this function to lock a spin lock by setting it to a non-zero value.

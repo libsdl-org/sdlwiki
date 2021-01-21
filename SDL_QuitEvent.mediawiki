@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_QuitEvent =
 A structure that contains the "quit requested" event.

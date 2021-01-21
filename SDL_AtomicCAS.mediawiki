@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AtomicCAS =
 Use this function to set an atomic variable to a new value if it is currently an old value.

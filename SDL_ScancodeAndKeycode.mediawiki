@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 '''DRAFT'''
 
 = SDL_Scancode and SDL_Keycode =

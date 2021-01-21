@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetPerformanceCounter =
 Use this function to get the current value of the high resolution counter.

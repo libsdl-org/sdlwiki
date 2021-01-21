@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_BlitScaled =
 Use this function to perform a scaled surface copy to a destination surface.

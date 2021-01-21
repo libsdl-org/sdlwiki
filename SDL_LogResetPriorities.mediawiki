@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogResetPriorities =
 Use this function to reset all priorities to default.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_ReadBE64 =
 Use this function to read 64 bits of big-endian data from an [[SDL_RWops]] and return in native format.

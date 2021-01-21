@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_GetTouch -->
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 '''DRAFT'''
 
 

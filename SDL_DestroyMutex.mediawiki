@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_DestroyMutex =
 Use this function to destroy a mutex created with [[SDL_CreateMutex]]().

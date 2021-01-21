@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_EnclosePoints =
 Use this function to calculate a minimal rectangle enclosing a set of points.

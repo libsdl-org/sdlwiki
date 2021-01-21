@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MixAudioFormat =
 Use this function to mix audio data in a specified format.

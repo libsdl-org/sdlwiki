@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetThreadName =
 Use this function to get the thread name as it was specified in [[SDL_CreateThread]]().

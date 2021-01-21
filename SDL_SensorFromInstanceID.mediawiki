@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SensorFromInstanceID =
 Return the SDL_Sensor associated with an instance id.

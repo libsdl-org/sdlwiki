@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AllocPalette =
 Use this function to create a palette structure with the specified number of color entries.

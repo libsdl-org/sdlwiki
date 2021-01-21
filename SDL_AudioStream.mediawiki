@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AudioStream =
 An opaque structure that buffers, converts, resamples, and generally streams audio data.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_ConvertSurfaceFormat =
 Use this function to copy an existing surface to a new surface of the specified format.

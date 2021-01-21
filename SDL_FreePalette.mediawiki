@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_FreePalette =
 Use this function to free a palette created with [[SDL_AllocPalette]]().

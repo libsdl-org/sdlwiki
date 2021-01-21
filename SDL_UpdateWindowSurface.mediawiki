@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_UpdateWindowSurface =
 Use this function to copy the window surface to the screen.

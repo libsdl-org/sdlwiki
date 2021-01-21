@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetPixelFormatName =
 Use this function to get the human readable name of a pixel format.

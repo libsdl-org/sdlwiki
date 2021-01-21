@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_GetSwapInterval =
 Use this function to get the swap interval for the current OpenGL context.

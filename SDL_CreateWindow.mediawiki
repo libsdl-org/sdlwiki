@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CreateWindow =
 Use this function to create a window with the specified position, dimensions, and flags.

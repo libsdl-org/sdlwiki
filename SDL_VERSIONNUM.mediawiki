@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_VERSIONNUM =
 Use this macro to convert separate version components into a single numeric value.

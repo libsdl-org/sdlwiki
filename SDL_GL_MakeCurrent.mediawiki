@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_MakeCurrent =
 Use this function to set up an OpenGL context for rendering into an OpenGL window.

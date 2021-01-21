@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SetTextureBlendMode =
 Use this function to set the blend mode for a texture, used by [[SDL_RenderCopy]]().

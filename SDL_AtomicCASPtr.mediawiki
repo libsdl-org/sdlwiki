@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AtomicCASPtr =
 Use this function to set a pointer to a new value if it is currently an old value.

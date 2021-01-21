@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_UnloadLibrary =
 Use this function to unload the OpenGL library previously loaded by [[SDL_GL_LoadLibrary]]().

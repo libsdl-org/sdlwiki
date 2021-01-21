@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SetTextureAlphaMod =
 Use this function to set an additional alpha value multiplied into render copy operations.

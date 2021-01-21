@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowPixelFormat =
 Use this function to get the pixel format associated with the window.

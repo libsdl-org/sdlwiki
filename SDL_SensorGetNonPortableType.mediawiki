@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SensorGetNonPortableType =
 Get the platform dependent type of a sensor.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MinimizeWindow =
 Use this function to minimize a window to an iconic representation.

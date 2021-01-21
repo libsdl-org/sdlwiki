@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_DropEvent =
 A structure that contains an event used to request a file open by the system.

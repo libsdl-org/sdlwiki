@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RegisterEvents =
 Use this function to allocate a set of user-defined events, and return the beginning event number for that set of events.

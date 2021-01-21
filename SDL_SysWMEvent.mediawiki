@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SysWMEvent =
 A structure that contains a video driver dependent system event.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AtomicGetPtr =
 Use this function to get the value of a pointer atomically.

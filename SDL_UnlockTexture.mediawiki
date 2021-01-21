@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 = SDL_UnlockTexture =
 Use this function to unlock a texture, uploading the changes to video memory, if needed.
 

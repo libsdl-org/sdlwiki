@@ -1,5 +1,3 @@
-<!-- pragma section-numbers 2 -->
-<!-- pragma camelcase off -->
 
 = Using SDL_AudioStream =
 

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_HasSSE2 =
 Use this function to determine whether the CPU has SSE2 features.

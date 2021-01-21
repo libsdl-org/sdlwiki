@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_TriggerBreakpoint =
 Use this function to trigger a breakpoint during debugging.

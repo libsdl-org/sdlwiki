@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MUSTLOCK =
 Use this function to determine whether a surface must be locked for access.

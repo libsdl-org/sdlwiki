@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 = SDL_TextInputEvent =
 A structure that contains keyboard text input event information.
 

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MasksToPixelFormatEnum =
 Use this function to convert a bpp value and RGBA masks to an enumerated pixel format.

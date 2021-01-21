@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_MouseMotionEvent =
 A structure that contains mouse motion event information.

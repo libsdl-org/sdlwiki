@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_RemoveTimer =
 Use this function to remove a timer created with [[SDL_AddTimer]]().

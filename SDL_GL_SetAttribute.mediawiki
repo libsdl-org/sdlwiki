@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_SetAttribute =
 Use this function to set an OpenGL window attribute before window creation.

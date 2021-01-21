@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_Delay =
 Use this function to wait a specified number of milliseconds before returning.

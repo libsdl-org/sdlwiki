@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_ShowSimpleMessageBox =
 Use this function to display a simple modal message box.

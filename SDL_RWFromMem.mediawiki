@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RWFromMem =
 Use this function to prepare a read-write memory buffer for use with [[SDL_RWops]].

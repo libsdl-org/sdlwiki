@@ -1,4 +1,3 @@
-<!-- pragma section-numbers 2 -->
 
 = Building SDL2 for Android =
 

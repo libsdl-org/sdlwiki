@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderReadPixels =
 Use this function to read pixels from the current rendering target to an array of pixels.

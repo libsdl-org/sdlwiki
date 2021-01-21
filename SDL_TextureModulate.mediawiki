@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_TextureModulate =
 An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetWindowData =
 Use this function to associate an arbitrary named pointer with a window.

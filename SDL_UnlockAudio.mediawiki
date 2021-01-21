@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_UnlockAudio =
 This function is a legacy means of unlocking the audio device. New programs might want to use [[SDL_UnlockAudioDevice]]() instead.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_UnlockMutex =
 Use this function to unlock a mutex created with [[SDL_CreateMutex]]().

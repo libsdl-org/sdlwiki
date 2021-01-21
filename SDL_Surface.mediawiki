@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_Surface =
 A structure that contains a collection of pixels used in software blitting.

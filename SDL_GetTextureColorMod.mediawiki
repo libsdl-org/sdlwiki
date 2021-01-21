@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetTextureColorMod =
 Use this function to get the additional color value multiplied into render copy operations.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_QuitRequested =
 Use this function to see whether an SDL_QUIT event is queued.

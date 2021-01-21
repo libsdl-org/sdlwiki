@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetAudioDeviceStatus =
 Use this function to get the current audio state of an audio device.

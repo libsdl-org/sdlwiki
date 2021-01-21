@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AtomicDecRef =
 Use this function to decrement an atomic variable used as a reference count.

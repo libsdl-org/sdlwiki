@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SaveBMP_RW =
 Use this function to save a surface to a seekable SDL data stream (memory or file) in BMP format.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderFillRect =
 Use this function to fill a rectangle on the current rendering target with the drawing color.

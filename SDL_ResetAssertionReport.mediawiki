@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_ResetAssertionReport =
 Use this function to clear the list of all assertion failures.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowGammaRamp =
 Use this function to get the gamma ramp for the display that owns a given window.

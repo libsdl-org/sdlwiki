@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 = SDL_SetPaletteColors =
 Use this function to set a range of colors in a palette.
 

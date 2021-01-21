@@ -1,4 +1,3 @@
-<!-- pragma camelcase off -->
 
 = SDL 1.2 Tutorials =
 

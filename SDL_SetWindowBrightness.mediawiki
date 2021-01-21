@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetWindowBrightness =
 Use this function to set the brightness (gamma multiplier) for the display that owns a given window.

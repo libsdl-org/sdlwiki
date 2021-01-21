@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetAudioDriver =
 Use this function to get the name of a built in audio driver.

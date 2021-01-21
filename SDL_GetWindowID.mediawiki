@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetWindowID =
 Use this function to get the numeric ID of a window, for logging purposes.

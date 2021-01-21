@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderDrawRect =
 Use this function to draw a rectangle on the current rendering target.

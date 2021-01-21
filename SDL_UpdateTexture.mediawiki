@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_UpdateTexture =
 Use this function to update the given texture rectangle with new pixel data.

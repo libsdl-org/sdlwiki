@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetNumAudioDevices =
 Use this function to get the number of built-in audio devices.

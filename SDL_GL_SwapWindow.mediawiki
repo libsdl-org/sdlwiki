@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GL_SwapWindow =
 Use this function to update a window with OpenGL rendering.

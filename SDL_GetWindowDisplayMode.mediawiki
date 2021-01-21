@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetWindowDisplayMode =
 Use this function to fill in information about the display mode to use when a window is visible at fullscreen.

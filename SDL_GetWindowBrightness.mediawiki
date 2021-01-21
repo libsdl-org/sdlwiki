@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowBrightness =
 Use this function to get the brightness (gamma multiplier) for the display that owns a given window.

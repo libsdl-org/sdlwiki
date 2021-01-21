@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SetSurfaceRLE =
 Use this function to set the RLE acceleration hint for a surface.

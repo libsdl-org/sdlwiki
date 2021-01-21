@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetNumRenderDrivers =
 Use this function to get the number of 2D rendering drivers available for the current display.

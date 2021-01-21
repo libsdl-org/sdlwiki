@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogInfo =
 Use this function to log a message with SDL_LOG_PRIORITY_INFO.

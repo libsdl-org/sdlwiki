@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_SwapBE16 =
 Use this function to swap the byte order of a 16-bit big-endian value to native ordering.

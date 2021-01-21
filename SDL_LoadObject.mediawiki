@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LoadObject =
 Use this function to dynamically load a shared object and return a pointer to the object handle.

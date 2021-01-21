@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_HasRDTSC =
 Use this function to determine whether the CPU has the RDTSC instruction.

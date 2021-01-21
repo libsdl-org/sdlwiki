@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_FilterEvents =
 Use this function to run a specific filter function on the current event queue, removing any events for which the filter returns 0.

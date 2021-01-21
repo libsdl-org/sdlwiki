@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_HasAltiVec =
 Use this function to determine whether the CPU has Alti<code></code>Vec features.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_IsScreenSaverEnabled =
 Use this function to check whether the screensaver is currently enabled.

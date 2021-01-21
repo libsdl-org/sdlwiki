@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_JoystickOpened -->
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 '''DRAFT'''
 
 = SDL_JoystickGetAttached =

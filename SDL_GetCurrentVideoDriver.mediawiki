@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetCurrentVideoDriver =
 Use this function to get the name of the currently initialized video driver.

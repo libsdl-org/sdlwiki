@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_RectEmpty =
 Use this function to check whether a rectangle has no area.

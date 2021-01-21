@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetEventFilter =
 Use this function to set up a filter to process all events before they change internal state and are posted to the internal event queue.

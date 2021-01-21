@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LOG_CATEGORY =
 An enumeration of the predefined log categories.

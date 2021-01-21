@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogSetAllPriority =
 Use this function to set the priority of all log categories.

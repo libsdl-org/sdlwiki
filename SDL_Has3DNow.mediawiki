@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_Has3DNow =
 Use this function to determine whether the CPU has 3DNow! features.

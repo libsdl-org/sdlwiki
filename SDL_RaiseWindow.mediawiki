@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RaiseWindow =
 Use this function to raise a window above other windows and set the input focus.

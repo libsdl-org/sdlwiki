@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetColorKey =
 Use this function to get the color key (transparent pixel) for a surface.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_SetRenderDrawBlendMode =
 Use this function to set the blend mode used for drawing operations (Fill and Line).

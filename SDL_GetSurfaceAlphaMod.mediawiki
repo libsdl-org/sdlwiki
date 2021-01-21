@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetSurfaceAlphaMod =
 Use this function to get the additional alpha value used in blit operations.

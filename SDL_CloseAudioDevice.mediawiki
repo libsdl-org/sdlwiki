@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CloseAudioDevice =
 Use this function to shut down audio processing and close the audio device.

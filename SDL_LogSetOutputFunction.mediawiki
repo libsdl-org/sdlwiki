@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_LogSetOutputFunction =
 Use this function to replace the default log output function with one of your own.

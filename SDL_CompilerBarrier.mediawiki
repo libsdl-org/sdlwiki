@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_CompilerBarrier =
 Use this function to prevent the compiler from reordering reads and writes to globally visible variables across the call.

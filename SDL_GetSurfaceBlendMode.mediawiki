@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetSurfaceBlendMode =
 Use this function to get the blend mode used for blit operations.

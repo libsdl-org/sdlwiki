@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AddEventWatch =
 Use this function to add a callback to be triggered when an event is added to the event queue.

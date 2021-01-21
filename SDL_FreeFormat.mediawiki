@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_FreeFormat =
 Use this function to free an [[SDL_PixelFormat]] structure allocated by [[SDL_AllocFormat]].

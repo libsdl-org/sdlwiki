@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RenderDrawLines =
 Use this function to draw a series of connected lines on the current rendering target.

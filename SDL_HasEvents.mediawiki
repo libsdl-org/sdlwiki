@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_HasEvents =
 Use this function to check for the existence of a range of event types in the event queue.

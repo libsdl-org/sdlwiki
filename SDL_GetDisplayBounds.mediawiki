@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetDisplayBounds =
 Use this function to get the desktop area represented by a display, with the primary display located at 0,0.

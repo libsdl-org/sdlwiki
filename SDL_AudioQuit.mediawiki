@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_AudioQuit =
 Use this function to shut down audio if you initialized it with [[SDL_AudioInit]]().

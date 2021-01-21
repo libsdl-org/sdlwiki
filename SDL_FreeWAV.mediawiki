@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_FreeWAV =
 Use this function to free data previously allocated with [[SDL_LoadWAV]]() or [[SDL_LoadWAV_RW]]().

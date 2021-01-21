@@ -1,7 +1,4 @@
 <!-- master-page:CategoryTemplate -->
-<!-- #master-date:Unknown-Date -->
-<!-- format wiki -->
-<!-- language en -->
 
 = Configuration Variables =
 

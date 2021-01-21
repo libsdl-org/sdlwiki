@@ -1,8 +1,3 @@
-<!-- #master-page:CategoryTemplate -->
-<!-- #master-date:Unknown-Date -->
-<!-- format wiki -->
-<!-- language en -->
-<!-- pragma camelcase off -->
 = Thread Management =
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_thread.h SDL_thread.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_mutex.h SDL_mutex.h] (contains thread synchronization primitives)
 

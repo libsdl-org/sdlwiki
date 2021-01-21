@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RWclose =
 Use this function to close and free an allocated [[SDL_RWops]] structure.

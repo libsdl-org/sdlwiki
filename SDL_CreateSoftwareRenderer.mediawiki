@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_CreateSoftwareRenderer =
 Use this function to create a 2D software rendering context for a surface.

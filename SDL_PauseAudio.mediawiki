@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_PauseAudio =
 This function is a legacy means of pausing the audio device. New programs might want to use [[SDL_PauseAudioDevice]]() instead.

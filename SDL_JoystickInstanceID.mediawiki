@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_JoystickIndex -->
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 '''DRAFT'''
 
 = SDL_JoystickInstanceID =

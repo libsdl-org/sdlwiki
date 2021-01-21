@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 '''DRAFT'''
 
 = SDL_HapticRunEffect =

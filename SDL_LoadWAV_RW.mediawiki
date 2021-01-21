@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LoadWAV_RW =
 Use this function to load a WAVE from the data source, automatically freeing that source if '''freesrc''' is non-zero.

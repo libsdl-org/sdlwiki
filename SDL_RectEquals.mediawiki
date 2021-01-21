@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_RectEquals =
 Use this function to check whether two rectangles are equal.

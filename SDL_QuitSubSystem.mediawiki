@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_QuitSubSystem =
 Use this function to shut down specific SDL subsystems.

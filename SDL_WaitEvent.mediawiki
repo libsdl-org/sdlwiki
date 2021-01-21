@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_WaitEvent =
 Use this function to wait indefinitely for the next available event.

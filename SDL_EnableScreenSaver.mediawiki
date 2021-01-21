@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_EnableScreenSaver =
 Use this function to allow the screen to be blanked by a screen saver.

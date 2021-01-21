@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_OpenAudio =
 This function is a legacy means of opening the audio device. New programs might want to use [[SDL_OpenAudioDevice]]() instead.

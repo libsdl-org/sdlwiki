@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LockAudioDevice =
 Use this function to lock out the audio callback function for a specified device.

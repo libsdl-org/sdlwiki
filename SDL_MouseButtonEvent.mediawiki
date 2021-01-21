@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_MouseButtonEvent =
 A structure that contains mouse button event information.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_REVISION =
 This macro is a string describing the source at a particular point in development.

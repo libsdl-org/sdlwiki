@@ -1,6 +1,4 @@
 <!-- # page was renamed from SDL_GetWindowDisplay -->
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetWindowDisplayIndex =
 Use this function to get the index of the display associated with a window.

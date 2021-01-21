@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_GetNumVideoDrivers =
 Use this function to get the number of video drivers compiled into SDL.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AudioSpec =
 A structure that contains the audio output format. It also contains a callback that is called when the audio device needs more data.

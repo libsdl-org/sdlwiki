@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_VERSION =
 Use this macro to determine the SDL version your program was compiled against.

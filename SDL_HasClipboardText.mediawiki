@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_HasClipboardText =
 Use this function to get a flag indicating whether the clipboard exists and contains a text string that is non-empty.

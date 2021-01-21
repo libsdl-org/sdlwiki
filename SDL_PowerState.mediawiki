@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_PowerState =
 An enumeration of the basic state of the system's power supply.

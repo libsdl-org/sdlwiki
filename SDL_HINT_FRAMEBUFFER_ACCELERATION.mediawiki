@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_HINT_FRAMEBUFFER_ACCELERATION =
 A hint that specifies how 3D acceleration is used with [[SDL_GetWindowSurface]]().

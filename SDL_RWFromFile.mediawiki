@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_RWFromFile =
 Use this function to create a new [[SDL_RWops]] structure for reading from and/or writing to a named file.

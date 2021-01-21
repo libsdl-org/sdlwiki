@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_JoyHatEvent =
 A structure that contains joystick hat position change event information.

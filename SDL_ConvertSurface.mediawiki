@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_ConvertSurface =
 Use this function to copy an existing surface into a new one that is optimized for blitting to a surface of a specified pixel format.

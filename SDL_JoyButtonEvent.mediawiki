@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_JoyButtonEvent =
 A structure that contains joystick button event information.

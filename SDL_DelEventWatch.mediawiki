@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_DelEventWatch =
 Use this function to remove an event watch callback added with [[SDL_AddEventWatch]]().

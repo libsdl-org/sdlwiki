@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_BlendMode =
 An enumeration of blend modes used in [[SDL_RenderCopy]]() and drawing operations.

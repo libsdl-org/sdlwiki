@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_WasInit =
 Use this function to get a mask of the specified subsystems which have previously been initialized.

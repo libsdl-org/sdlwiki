@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AllocFormat =
 Use this function to create an [[SDL_PixelFormat]] structure corresponding to a pixel format.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_GetAudioDeviceName =
 Use this function to get the name of a specific audio device.

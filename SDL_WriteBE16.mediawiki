@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_WriteBE16 =
 Use this function to write 16 bits in native format to a [[SDL_RWops]] as big-endian data.

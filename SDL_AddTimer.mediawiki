@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
 
 = SDL_AddTimer =
 Use this function to set up a callback function to be run on a separate thread after the specified number of milliseconds has elapsed.

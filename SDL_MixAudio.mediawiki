@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_MixAudio =
 This function is a legacy means of mixing audio. New programs might want to use [[SDL_MixAudioFormat]]() instead.

@@ -1,5 +1,3 @@
-<!-- pragma section-numbers off -->
-<!-- pragma disable-camelcase -->
 
 = SDL_LockSurface =
 Use this function to set up a surface for directly accessing the pixels.
