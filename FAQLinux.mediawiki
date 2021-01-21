@@ -35,7 +35,7 @@ For SDL 2.0, the <code>AM_PATH_SDL</code> above will be <code>AM_PATH_SDL2</code
 You need to install the SDL-devel RPM, available from: http://www.libsdl.org/download.php
 
 == I'm using nasm 0.98 and getting a crash when linking SDL ==
-There is a bug in the nasm assembler version 0.98 - the version shipped with !RedHat 7.1. You should upgrade nasm to at least version 0.98.08. If for some reason you can't upgrade, you can disable the assembly code in SDL by passing "--disable-nasm" to configure when building SDL from source.
+There is a bug in the nasm assembler version 0.98 - the version shipped with RedHat 7.1. You should upgrade nasm to at least version 0.98.08. If for some reason you can't upgrade, you can disable the assembly code in SDL by passing "--disable-nasm" to configure when building SDL from source.
 
 == I installed SDL from source but can't build or run SDL applications ==
 Edit the file /etc/ld.so.conf, and make sure it contains the line:

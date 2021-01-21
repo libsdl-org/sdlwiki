@@ -14,13 +14,13 @@ A hint that specifies a value to override the binding element for keyboard input
 == Values ==
 {|
 |#window
-|the !JavaScript window object (this is the default)
+|the JavaScript window object (this is the default)
 |-
 |#document
-|the !JavaScript document object
+|the JavaScript document object
 |-
 |#screen
-|the !JavaScript window.screen object
+|the JavaScript window.screen object
 |-
 |#canvas
 |the default WebGL canvas element
@@ -30,7 +30,7 @@ Any other string without a leading # sign applies to the element on the page wit
 
 
 == Default ==
-By default SDL will use the !JavaScript window object.
+By default SDL will use the JavaScript window object.
 
 
 == Code Examples ==

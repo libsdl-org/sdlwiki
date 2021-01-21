@@ -7,7 +7,7 @@
 == Introduction to SDL ==
 
 === What is SDL? ===
-Simple !DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D. It is used by video playback software, emulators, and popular games including [http://valvesoftware.com Valve]'s award winning catalog and many [https://www.humblebundle.com Humble Bundle] games.
+Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D. It is used by video playback software, emulators, and popular games including [http://valvesoftware.com Valve]'s award winning catalog and many [https://www.humblebundle.com Humble Bundle] games.
 
 SDL officially supports Windows, Mac OS X, Linux, iOS, and [[Android]]. Support for other platforms may be found in the source code.
 : For the latest information on what is supported see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
@@ -16,7 +16,7 @@ SDL is written in C, works natively with C++, and there are bindings available f
 : For the latest list of languages see http://www.libsdl.org/languages.php
 
 SDL 2.0 is distributed under the [http://www.gzip.org/zlib/zlib_license.html zlib license]. This license allows you to use SDL freely in any software.
-The Simple !DirectMedia Layer library (SDL) is a general API that provides low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across multiple platforms.
+The Simple DirectMedia Layer library (SDL) is a general API that provides low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D framebuffer across multiple platforms.
 
 === What can SDL do? ===
 Read ahead for an overview of what SDL is capable of. If you're simply interested in the changes from 1.2 to 2.0, check out the [[MigrationGuide|Migration Guide]].
@@ -96,7 +96,7 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 '''''Windows'''''
 
 * Uses Win32 APIs for display, taking advantage of Direct3D for hardware acceleration
-* Uses !DirectSound and XAudio2 for sound
+* Uses DirectSound and XAudio2 for sound
 
 '''''Mac OS X'''''
 
@@ -106,7 +106,7 @@ Read ahead for an overview of what SDL is capable of. If you're simply intereste
 '''''Linux'''''
 
 * Uses X11 for video display, taking advantage of OpenGL for hardware acceleration
-* Uses the ALSA, OSS and !PulseAudio APIs for sound
+* Uses the ALSA, OSS and PulseAudio APIs for sound
 
 '''''iOS'''''
 

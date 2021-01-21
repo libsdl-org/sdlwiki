@@ -13,7 +13,7 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * <span style="color: green;">Sam: Create 3D accelerated texture based rendering API</span>
 * <span style="color: green;">Sam: Create API for enabling/disabling the screensaver</span>
 * <span style="color: green;">Sam: Add support for selecting video mode refresh rate</span>
-* <span style="color: green;">Sam: Create API for clipboard support (check out !PyGame)</span>
+* <span style="color: green;">Sam: Create API for clipboard support (check out PyGame)</span>
 * <span style="color: green;">Sam: Add support for multiple displays</span>
 * <span style="color: green;">Sam: Add concept of viewport to fullscreen windows</span>
 * <span style="color: green;">Sam: Add support for synchronizing 2D updates with vblank, using SDL_HINT_RENDER_VSYNC</span>

@@ -45,7 +45,7 @@ A structure that contains system-dependent information about a window.
 |-
 |IInspectable*
 |'''winrt.window'''
-|the WinRT !CoreWindow
+|the WinRT CoreWindow
 |-
 |
 |
@@ -123,11 +123,11 @@ A structure that contains system-dependent information about a window.
 |
 |<bgcolor="#EDEDED">''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
 |-
-|!MirConnection*
+|MirConnection*
 |'''mir.connection'''
 |the Mir display server connection
 |-
-|!MirSurface*
+|MirSurface*
 |'''mir.surface'''
 |the Mir surface
 |-

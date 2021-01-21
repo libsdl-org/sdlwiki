@@ -17,7 +17,7 @@ If you know of an article about SDL 2.0 that should be linked here please let us
 : [http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Animation in SDL: Hardware Surfaces|target="blank"] ([https://web.archive.org/web/20180103014309/http://linuxdevcenter.com/pub/a/linux/2003/08/07/sdl_anim.html Archive])
 * O'Reilly Network - May 2003
 : [http://linuxdevcenter.com/pub/a/linux/2003/05/15/sdl_anim.html Animation in SDL|target="blank"]
-* !GameProgrammer.com - August 2002
+* GameProgrammer.com - August 2002
 : [http://gameprogrammer.com/sdl.html Why Use SDL?|target="blank"]
 * OSNews - August 2002
 : [http://www.osnews.com/story/1549 Interview with Bill Kendrick of NewBreedSoftware|target="blank"]
@@ -25,9 +25,9 @@ If you know of an article about SDL 2.0 that should be linked here please let us
 : [http://www.osnews.com/story/1518 Interview with Michael Speck of LGames|target="blank"]
 * Pyrogon Developer Diary - February 2002
 : [http://www.pyrogon.com/about/diary/2_26_2002.php The Whys and Hows of Porting Software|target="blank"]
-* !GameDev.net - December 2001
+* GameDev.net - December 2001
 : [http://www.gamedev.net/reference/programming/features/sdl2/ The Simple DirectMedia Layer from a Win32 Perspective, Part 2: SDL Video|target="blank"] ([https://web.archive.org/web/20101205151944/http://www.gamedev.net/reference/programming/features/sdl2/ Archive])
-* !GameDev.net - December 2001
+* GameDev.net - December 2001
 : [http://www.gamedev.net/reference/programming/features/sdl1/ The Simple DirectMedia Layer from a Win32 Perspective, Part 1: Setting Up Your System for SDL|target="blank"] ([https://web.archive.org/web/20100212123942/http://www.gamedev.net/reference/programming/features/sdl1 Archive])
 * O'Reilly Network - September 2001
 : [http://linuxdevcenter.com/pub/a/linux/2001/09/21/sdl.html SDL: The DirectX Alternative|target="blank"]

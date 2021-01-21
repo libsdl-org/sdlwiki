@@ -6,7 +6,7 @@
 
 
 = SDL_Direct3D9GetAdapterIndex =
-Use this function to get the !D3D9 adapter index that matches the specified display index.
+Use this function to get the D3D9 adapter index that matches the specified display index.
 
 
 
@@ -20,12 +20,12 @@ int SDL_Direct3D9GetAdapterIndex(int displayIndex)
 == Function Parameters ==
 {|
 |'''displayIndex'''
-|the display index for which to get the !D3D9 adapter index
+|the display index for which to get the D3D9 adapter index
 |}
 
 
 == Return Value ==
-Returns the !D3D9 adapter index on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+Returns the D3D9 adapter index on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 
 == Code Examples ==

@@ -6,7 +6,7 @@
 
 
 = SDL_SetWindowsMessageHook =
-Use this function to set a function that is called for every windows message, before !TranslateMessage().
+Use this function to set a function that is called for every windows message, before TranslateMessage().
 
 
 

@@ -56,7 +56,7 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |<bgcolor="#EDEDED">''2.0''
 |-
 |directx                    
-|(default) Use the !DirectDraw API 
+|(default) Use the DirectDraw API
 | yes 
 |     
 |-
@@ -102,7 +102,7 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |     
 |-
 |pulse                      
-|Use !PulseAudio                   
+|Use PulseAudio
 | yes 
 |     
 |-
@@ -112,7 +112,7 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 | yes 
 |-
 |arts                       
-|Use Analog !RealTime Synthesizer  
+|Use Analog RealTime Synthesizer
 | yes 
 | yes 
 |-
@@ -130,17 +130,17 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |<bgcolor="#EDEDED">''2.0''
 |-
 |dsound                     
-|(default) Use the !DirectSound API
+|(default) Use the DirectSound API
 | yes 
 |     
 |-
 |waveout                    
-|Use the Win32 !MultiMedia API     
+|Use the Win32 MultiMedia API
 | yes 
 |     
 |-
 |directsound                
-|Use !DirectSound                  
+|Use DirectSound
 |     
 | yes 
 |-

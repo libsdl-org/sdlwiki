@@ -8,16 +8,16 @@ A hint that specifies a variable controlling which orientations are allowed on i
 
 == Values ==
 {|
-|!LandscapeLeft
+|LandscapeLeft
 |top of device left
 |-
-|!LandscapeRight
+|LandscapeRight
 |top of device right
 |-
 |Portrait
 |top of device up
 |-
-|!PortraitUpsideDown
+|PortraitUpsideDown
 |top of device down
 |}
 
