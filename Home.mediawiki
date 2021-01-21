@@ -1,11 +1,3 @@
-<!-- # Please edit system and help pages ONLY in the master wiki! -->
-<!-- # For more information, please see MoinMoin:MoinDev/Translation. -->
-<!-- #master-page:FrontPage -->
-<!-- format wiki -->
-<!-- language en -->
-<!-- pragma section-numbers off -->
-<!-- pragma camelcase off -->
-<!-- acl All:read -->
 = Simple DirectMedia Layer =
 
 == What is it? ==
@@ -25,28 +17,26 @@ This wiki is your portal to documentation and other resources for SDL 2.0.
 Use the links under the '''Navigation Links''' heading in the left-hand menu to access:
 
 * [[Introduction]]
-: An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 2.0!
+*: An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 2.0!
 * [[SourceCode|Source Code]]
-: How to download the source code to SDL.
+*: How to download the source code to SDL.
 * [[Installation]]
-: How to install SDL on your platform of choice and link your program against it.
+*: How to install SDL on your platform of choice and link your program against it.
 * API reference [[CategoryAPI|by Name]] or [[APIByCategory|by Category]]
-: The official documentation for the API.  Look here to find detailed information about the functions, structures, and enumerations.
+*: The official documentation for the API.  Look here to find detailed information about the functions, structures, and enumerations.
 * [[Tutorials]]
-: Want to learn about a feature in SDL you haven't used before?  Here's a great place to get started!
+*: Want to learn about a feature in SDL you haven't used before?  Here's a great place to get started!
 * [[Articles]]
-: A sampling of the articles that have been written about SDL.
+*: A sampling of the articles that have been written about SDL.
 * [[Books]]
-: Looking for more information than you can get online?  Check out the books listed here.
+*: Looking for more information than you can get online?  Check out the books listed here.
 * [[FAQs]]
-: A few of the most commonly asked questions about using SDL are answered here.
+*: A few of the most commonly asked questions about using SDL are answered here.
 * [http://forums.libsdl.org/ Forums]
-: A great place to keep up with the latest news, help other users out, and ask questions.
+*: A great place to keep up with the latest news, help other users out, and ask questions.
 * [[Contributing]]
-: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
+*: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
 
-We hope you find everything you are looking for and enjoy using SDL.  If anything is not addressed somewhere here feel free to take advantage of the Feedback form in the upper right or send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+We hope you find everything you are looking for and enjoy using SDL.  If anything is not addressed somewhere here, feel free to [https://github.com/libsdl-org/SDL/issues open an issue] or [https://github.com/libsdl-org/SDL/pulls submit a pull request].
 
-<!-- #''Please note that the Feedback form is __not__ for SDL technical support.  Please direct technical questions about SDL to the appropriate [http://forums.libsdl.org/ Forum] or to one of the [http://www.libsdl.org/mailing-list.php Mailing Lists].'' -->
-
-~+Enjoy!+~
+'''Enjoy!'''
