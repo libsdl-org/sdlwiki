@@ -1,5 +1,6 @@
 
 = SDL_GetRevisionNumber =
+'''DEPRECATED'''
 Use this function to get the revision number of SDL that is linked against your program.
 
 
@@ -17,7 +18,7 @@ You can add your code example here
 ```
 
 == Remarks ==
-This is an incrementing number based on commits to hg.libsdl.org.
+After SDL's migration to GitHub (before the 2.0.16 release), this function is marked deprecated and hardcoded to return zero. Don't call this anymore. [[SDL_GetRevision]] still works, and if SDL was carefully built, will return a git hash.
 
 == Related Functions ==
 :[[SDL_GetRevision]]
