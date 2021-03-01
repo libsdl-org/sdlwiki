@@ -9,7 +9,7 @@ SDL is written in C, works natively with C++, and there are bindings available f
 
 SDL 2.0 is distributed under the [https://www.libsdl.org/license.php zlib license]. This license allows you to use SDL freely in any software.
 
-This is the SDL wiki; SDL's main website is [https://libsdl.org/].
+This is the SDL wiki; SDL's main website is [https://libsdl.org/ libsdl.org].
 
 This wiki is your portal to documentation and other resources for SDL 2.0.
 
