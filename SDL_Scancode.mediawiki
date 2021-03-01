@@ -23,7 +23,7 @@ Values of this type are used to represent the physical location of a keyboard ke
 <!-- These are used in many places, including --> Values of this type are used to represent keyboard keys, among other places in the <code>SDL_keysym::scancode</code> <code>key.keysym.scancode</code> field of the [[SDL_Event]] structure.
 
 The values in this enumeration are based on the USB usage page standard:
- [http://www.usb.org/developers/docs/]
+ http://www.usb.org/developers/docs/
 
 To look up a scancode or keycode by decimal or hexadecimal value you can use the following tables:
 :[[SDLScancodeLookup|SDL Scancode Lookup Table]]
