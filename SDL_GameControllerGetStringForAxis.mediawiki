@@ -10,9 +10,9 @@ Use this function to convert from an axis enum to a string.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -29,9 +29,9 @@ Returns a string for the given axis, or NULL if an invalid axis is specified.  T
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

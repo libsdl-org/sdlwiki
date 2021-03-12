@@ -4,10 +4,10 @@ Use this function to get information about a specific 2D rendering driver for th
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetRenderDriverInfo(int               index,
                             SDL_RendererInfo* info)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_GetRenderDriverInfo(int               index,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

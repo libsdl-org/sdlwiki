@@ -4,11 +4,11 @@ Use this function to set an atomic variable to a new value if it is currently an
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_AtomicCAS(SDL_atomic_t* a,
                        int           oldval,
                        int           newval)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ SDL_bool SDL_AtomicCAS(SDL_atomic_t* a,
 Returns SDL_TRUE if the atomic variable was set, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 {i} Note: If you don't know what this function is for, you shouldn't use it!

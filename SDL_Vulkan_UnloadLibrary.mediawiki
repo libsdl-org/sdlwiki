@@ -10,9 +10,9 @@ Use this function to unload the Vulkan loader library previously loaded by [[SDL
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_Vulkan_UnloadLibrary()
-```
+</syntaxhighlight>
 
 
 == Version ==

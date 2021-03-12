@@ -4,10 +4,10 @@ This function is a legacy means of opening the audio device. New programs might 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_OpenAudio(SDL_AudioSpec* desired,
                   SDL_AudioSpec* obtained)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -27,7 +27,7 @@ If '''obtained''' is NULL, the audio data passed to the callback function will b
 This function returns a negative error code on failure to open the audio device or failure to set up the audio thread; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioSpec want, have;
 
 SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
@@ -47,16 +47,16 @@ if (SDL_OpenAudio(&want, &have) < 0) {
     SDL_Delay(5000); /* let the audio callback play some sound for 5 seconds. */
     SDL_CloseAudio();
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 
 This function remains for compatibility with SDL 1.2, but also because it's slightly easier to use than the new functions in SDL 2.0. The new, more powerful, and preferred way to do this is [[SDL_OpenAudioDevice]]().
 
 This function is roughly equivalent to:
-```c++
+<syntaxhighlight lang='c++'>
 SDL_OpenAudioDevice(NULL, 0, desired, obtained, SDL_AUDIO_ALLOW_ANY_CHANGE);
-```
+</syntaxhighlight>
 
 With two notable exceptions:
 * If '''obtained''' is NULL, we use '''desired''' (and allow no changes), which means desired will be modified to have the correct values for silence, etc, and SDL will convert any differences between your app's specific request and the hardware behind the scenes.

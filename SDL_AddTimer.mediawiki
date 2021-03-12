@@ -4,11 +4,11 @@ Use this function to set up a callback function to be run on a separate thread a
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_TimerID SDL_AddTimer(Uint32            interval,
                          SDL_TimerCallback callback,
                          void*             param)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -27,7 +27,7 @@ Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for more inf
 
 == Code Examples ==
 
-```c++
+<syntaxhighlight lang='c++'>
 /* Start the timer; the callback below will be executed after the delay */
 
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
@@ -55,9 +55,9 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     SDL_PushEvent(&event);
     return(interval);
 }
-```
+</syntaxhighlight>
 Note that it is possible to avoid the multithreading problems with SDL timers by giving to <code>userevent.data1</code> the address of a function you want to be executed and to <code>userevent.data2</code> its params, and then deal with it in the event loop.
-```c++
+<syntaxhighlight lang='c++'>
 /* with the same code as before: */
 Uint32 my_callbackfunc(Uint32 interval, void *param)
 {
@@ -95,7 +95,7 @@ while (SDL_PollEvent (&event))
         /* ... */
     }
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

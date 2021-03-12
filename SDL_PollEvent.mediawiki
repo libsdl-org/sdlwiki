@@ -4,9 +4,9 @@ Use this function to poll for currently pending events.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_PollEvent(SDL_Event* event)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_PollEvent(SDL_Event* event)
 Returns 1 if there is a pending event or 0 if there are none available.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 while (1) {
     SDL_Event event;
     while (SDL_PollEvent(&event)) {
@@ -26,7 +26,7 @@ while (1) {
     }
     /* do some other stuff here -- draw your app, etc. */
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 If '''event''' is not NULL, the next event is removed from the queue and stored in the [[SDL_Event]] structure pointed to by '''event'''.  The 1 returned refers to this event, immediately stored in the SDL Event structure -- not an event to follow.

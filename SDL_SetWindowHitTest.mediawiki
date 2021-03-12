@@ -10,11 +10,11 @@ Use this function to provide a callback that decides if a window region has spec
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetWindowHitTest(SDL_Window* window,
                          SDL_HitTest callback,
                          void*       callback_data)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -35,20 +35,20 @@ Returns 0 on success or -1 on error (including unsupported); call [[SDL_GetError
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 
 == Remarks ==
 The function prototype for '''callback''' is:
- ```c++
+ <syntaxhighlight lang='c++'>
 SDL_HitTestResult SDL_HitTest(SDL_Window*      win,
                               const SDL_Point* area,
                               void*            data)
-```
+</syntaxhighlight>
 : where <code>SDL_HitTest</code> is your function name and its parameters are:
  ||<code>win</code>||the SDL_Window where hit-testing was set on ||
  ||<code>area</code>||an [[SDL_Point]] which should be hit-tested||

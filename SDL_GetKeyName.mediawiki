@@ -5,9 +5,9 @@ Use this function to get a human-readable name for a key.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetKeyName(SDL_Keycode key)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ const char* SDL_GetKeyName(SDL_Keycode key)
 Returns a pointer to a UTF-8 string that stays valid at least until the next call to this function. If you need it around any longer, you must copy it. If the key doesn't have a name, this function returns an empty string (""). <!-- <span style="color: green;">Should key here be bold?  Don't think so.</span> -->
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 See [[SDL_Scancode]] and [[SDL_Keycode]] for details.

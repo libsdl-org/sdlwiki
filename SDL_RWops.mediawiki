@@ -36,7 +36,7 @@ A structure that provides an abstract interface to stream I/O. Applications can 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
 if (io != NULL) {
     char name[256];
@@ -45,11 +45,11 @@ if (io != NULL) {
     }
     io->close(io);
 }
-```
+</syntaxhighlight>
 
 The following is functionally identical to the above example, but uses the recommended macro interface.
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
 if (io != NULL) {
     char name[256];
@@ -58,7 +58,7 @@ if (io != NULL) {
     }
     SDL_RWclose(io);
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

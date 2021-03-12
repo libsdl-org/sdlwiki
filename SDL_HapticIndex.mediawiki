@@ -5,9 +5,9 @@ Use this function to get the index of a haptic device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticIndex(SDL_Haptic* haptic)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ int SDL_HapticIndex(SDL_Haptic* haptic)
 Returns the index of the specified haptic device or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

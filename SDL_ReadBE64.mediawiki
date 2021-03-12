@@ -4,9 +4,9 @@ Use this function to read 64 bits of big-endian data from an [[SDL_RWops]] and r
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint64 SDL_ReadBE64(SDL_RWops* src)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ Uint64 SDL_ReadBE64(SDL_RWops* src)
 Returns 64 bits of data in the native byte order of the platform.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 SDL byteswaps the data only if necessary, so the data returned will be in the native byte order.

@@ -4,10 +4,10 @@ Use this function to prepare a read-write memory buffer for use with [[SDL_RWops
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops* SDL_RWFromMem(void* mem,
                          int   size)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,11 +22,11 @@ SDL_RWops* SDL_RWFromMem(void* mem,
 Returns a pointer to a new [[SDL_RWops]] structure, or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 char bitmap[310000];
 SDL_RWops *rw = SDL_RWFromMem(bitmap, sizeof(bitmap));
 SDL_SaveBMP_RW(screen, rw, 1);  /* closes SDL_RWops, leaves us memory buffer of data */
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function sets up an [[SDL_RWops]] struct based on a memory area of a certain size, for both read and write access.

@@ -12,9 +12,9 @@ Use this function to begin recording a gesture on a specified touch device or al
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RecordGesture(SDL_TouchID touchId)
-```
+</syntaxhighlight>
 
 
 
@@ -33,9 +33,9 @@ Returns 1 on success or 0 if the specified device could not be found.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 

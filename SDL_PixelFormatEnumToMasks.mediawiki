@@ -4,14 +4,14 @@ Use this function to convert one of the enumerated pixel formats to a bpp value 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
                                     int*    bpp,
                                     Uint32* Rmask,
                                     Uint32* Gmask,
                                     Uint32* Bmask,
                                     Uint32* Amask)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -38,9 +38,9 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
 Returns SDL_TRUE on success or SDL_FALSE if the conversion wasn't possible; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''format''' may be one of the following:

@@ -4,9 +4,9 @@ Get the type of a sensor.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

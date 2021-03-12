@@ -4,9 +4,9 @@ Use this function to check for the existence of certain event types in the event
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_HasEvent(Uint32 type)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ SDL_bool SDL_HasEvent(Uint32 type)
 Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If you need to check for a range of event types, use [[SDL_HasEvents]]() instead.

@@ -24,11 +24,11 @@ By default Xinput gamepad devices are detected.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetHint(SDL_HINT_XINPUT_ENABLED, "0");
 //...
 SDL_Init(SDL_INIT_EVERYTHING);
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

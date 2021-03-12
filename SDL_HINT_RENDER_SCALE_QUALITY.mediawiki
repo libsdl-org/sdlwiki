@@ -19,9 +19,9 @@ A hint that specifies scaling quality.
 By default nearest pixel sampling is used.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This hint is checked when a texture is created and it affects scaling when copying that texture.

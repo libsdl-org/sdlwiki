@@ -4,9 +4,9 @@ Use this function to initialize specific SDL subsystems.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_InitSubSystem(Uint32 flags)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_InitSubSystem(Uint32 flags)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
 
@@ -36,7 +36,7 @@ SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 
 /* Shut them both down */
 SDL_Quit();
-```
+</syntaxhighlight>
 
 == Remarks ==
 After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().

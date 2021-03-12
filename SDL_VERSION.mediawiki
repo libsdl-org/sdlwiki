@@ -4,9 +4,9 @@ Use this macro to determine the SDL version your program was compiled against.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_VERSION(x)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

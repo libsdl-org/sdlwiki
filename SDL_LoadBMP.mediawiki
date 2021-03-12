@@ -4,9 +4,9 @@ Use this function to load a surface from a BMP file.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_LoadBMP(const char* file)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ SDL_Surface* SDL_LoadBMP(const char* file)
 <<Include(SDL_LoadBMP_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <<Include(SDL_LoadBMP_RW, , , from="== Remarks ==", to="== Related Functions ==")>>

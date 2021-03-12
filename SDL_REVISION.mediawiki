@@ -4,9 +4,9 @@ This macro is a string describing the source at a particular point in developmen
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <!-- #The following is included on SDL_GetRevision.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start Include here. -->

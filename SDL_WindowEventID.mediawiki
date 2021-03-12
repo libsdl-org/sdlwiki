@@ -60,7 +60,7 @@ An enumeration of window events.
 == Code Examples ==
 <<Include(<SDL_WindowEvent>, , , from="##Example1 Start", to="##End")>>
 
-```c++
+<syntaxhighlight lang='c++'>
 #include <stdlib.h>
 #include "SDL.h"
 
@@ -119,7 +119,7 @@ int main(int argc, char *argv[])  {
     SDL_Delay(1);
   }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

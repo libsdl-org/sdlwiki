@@ -55,7 +55,7 @@ So how does SDL handle text input?
 First, an example:
 
 === Example ===
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 extern void InitVideo();
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
+</syntaxhighlight>
 === Functions ===
 * [[SDL_StartTextInput]]
 * [[SDL_StopTextInput]]

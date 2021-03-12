@@ -4,9 +4,9 @@ Use this function to get a window from a stored ID.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Window* SDL_GetWindowFromID(Uint32 id)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ SDL_Window* SDL_GetWindowFromID(Uint32 id)
 Returns the window associated with '''id''' or NULL if it doesn't exist; call [[SDL_GetError]]() for more information. 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

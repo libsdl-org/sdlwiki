@@ -36,9 +36,9 @@ A structure that contains information about an assertion.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This structure is filled in with information about the assertion and is used by the assertion handler then added to the assertion report. This is returned as a linked list from [[SDL_GetAssertionReport]]().

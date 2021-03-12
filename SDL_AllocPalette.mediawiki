@@ -4,9 +4,9 @@ Use this function to create a palette structure with the specified number of col
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Palette* SDL_AllocPalette(int ncolors)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ SDL_Palette* SDL_AllocPalette(int ncolors)
 Returns a new [[SDL_Palette]] structure on success or NULL on failure (e.g. if there wasn't enough memory); call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The palette entries are initialized to white.

@@ -4,9 +4,9 @@ Use this function to get the current audio state of an audio device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

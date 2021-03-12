@@ -4,10 +4,10 @@ Use this function to swap the byte order of a floating point value.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 float SDL_SwapFloat(float x)
 
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ float SDL_SwapFloat(float x)
 Returns the swapped value.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

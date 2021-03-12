@@ -13,10 +13,10 @@ Use this function to get the finger object for specified touch device ID and fin
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Finger* SDL_GetTouchFinger(SDL_TouchID touchID,
                                int         index)
-```
+</syntaxhighlight>
 
 
 
@@ -38,9 +38,9 @@ Returns a pointer to the [[SDL_Finger]] object or NULL if no object at the given
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 

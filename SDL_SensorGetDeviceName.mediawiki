@@ -6,9 +6,9 @@ This can be called before any sensors are opened.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char *SDL_SensorGetDeviceName(int device_index);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

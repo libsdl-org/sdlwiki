@@ -4,10 +4,10 @@ Use this function to query the current event filter.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
                             void**           userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter* filter,
 Returns SDL_TRUE on success or SDL_FALSE if there is no event filter set.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function can be used to "chain" filters, by saving the existing filter before replacing it with a function that will call that saved filter.

@@ -4,13 +4,13 @@ Use this function to draw a line on the current rendering target.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderDrawLine(SDL_Renderer* renderer,
                        int           x1,
                        int           y1,
                        int           x2,
                        int           y2)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -34,7 +34,7 @@ int SDL_RenderDrawLine(SDL_Renderer* renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 int main(int argc, char* argv[])
@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
     SDL_Quit();
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_RenderDrawLine]]() draws the line to include both end points.  If you want to draw multiple, connecting lines use [[SDL_RenderDrawLines]]() instead.

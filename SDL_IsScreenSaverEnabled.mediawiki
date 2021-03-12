@@ -4,17 +4,17 @@ Use this function to check whether the screensaver is currently enabled.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_IsScreenSaverEnabled(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns SDL_TRUE if the screensaver is enabled, SDL_FALSE if it is disabled.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2 the screensaver was enabled by default.

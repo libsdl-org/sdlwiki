@@ -5,9 +5,9 @@ Use this function to set relative mouse mode.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetRelativeMouseMode(SDL_bool enabled)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -21,9 +21,9 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 If relative mode is not supported this returns -1.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 While the mouse is in relative mode, the cursor is hidden, and the driver will try to report continuous motion in the current window. Only relative motion events will be delivered, the mouse position will not change.

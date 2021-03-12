@@ -4,9 +4,9 @@ Use this function to wait until a semaphore has a positive value and then decrem
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SemWait(SDL_sem* sem)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

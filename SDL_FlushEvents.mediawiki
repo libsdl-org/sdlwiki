@@ -4,10 +4,10 @@ Use this function to clear events from the event queue.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_FlushEvents(Uint32 minType,
                      Uint32 maxType)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_FlushEvents(Uint32 minType,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This will unconditionally remove any events from the queue that match the specified type range. If you need to remove a single event type, you can use [[SDL_FlushEvent]]() instead.

@@ -19,9 +19,9 @@ A structure that contains a video driver dependent system event.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This event is disabled by default.  You can enable it with [[SDL_EventState]]().  You are encouraged to avoid this if you can find a less platform-specific way to accomplish your goals.

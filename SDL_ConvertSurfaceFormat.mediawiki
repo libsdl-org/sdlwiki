@@ -4,11 +4,11 @@ Use this function to copy an existing surface to a new surface of the specified 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
                                       Uint32       pixel_format,
                                       Uint32       flags)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
 Returns the new surface, or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="format"></span> '''format''' may be one of the following:

@@ -38,9 +38,9 @@ An enumeration of blend operations used when creating a custom blend mode with [
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 

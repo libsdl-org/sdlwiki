@@ -5,9 +5,9 @@ Use this function to get the haptic device's supported features in bitwise manne
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
-```
+</syntaxhighlight>
 <!-- <span style="color: green;">Should that say Uint8 or Uint16 etc instead of "unsigned int"?</span> -->
 
 == Function Parameters ==
@@ -22,12 +22,12 @@ Returns a list of supported haptic features in bitwise manner (OR'd), or 0 on fa
 <!-- <span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span> -->
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_Haptic *haptic;
 if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
     SDL_Log("We have constant haptic effect!");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

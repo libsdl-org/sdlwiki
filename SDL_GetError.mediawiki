@@ -4,20 +4,20 @@ Use this function to retrieve a message about the last error that occurred.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetError(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a message with information about the specific error that occurred, or an empty string if there hasn't been an error message set since the last call to [[SDL_ClearError]](). <!-- Without calling [[SDL_ClearError]](), the --> The message is only applicable when an SDL function has signaled an error.  You must check the return values of SDL function calls to determine when to appropriately call [[SDL_GetError]]().
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
     // Unrecoverable error, exit here.
     printf("SDL_Init failed: %s\n", SDL_GetError());
 }
-```
+</syntaxhighlight>
 Note: Although this example uses [[SDL_Init]](), [[SDL_GetError]]() provides an error message for any failed SDL operation which supports error reporting, see the wiki page for each particular SDL function.
 
 == Remarks ==

@@ -4,10 +4,10 @@ Use this function to remove an event watch callback added with [[SDL_AddEventWat
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_DelEventWatch(SDL_EventFilter filter,
                        void*           userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_DelEventWatch(SDL_EventFilter filter,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function takes the same input as [[SDL_AddEventWatch]]() to identify and delete the corresponding callback.

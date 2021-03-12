@@ -4,16 +4,16 @@ This function is a legacy means of querying the audio device. New programs might
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioStatus SDL_GetAudioStatus(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the [[SDL_AudioStatus]] of the specified audio device which may be one of the following:
 <<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void printStatus(void)
 {
     switch (SDL_GetAudioStatus())
@@ -38,14 +38,14 @@ if (SDL_OpenAudio(&desired, &obtained) == 0) {
      SDL_CloseAudio();
      printStatus();  // prints "stopped"
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is equivalent to calling
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GetAudioDeviceStatus(1);
-```
+</syntaxhighlight>
 
 and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 

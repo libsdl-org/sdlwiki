@@ -4,17 +4,17 @@ Use this function to get the number of 2D rendering drivers available for the cu
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetNumRenderDrivers(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a number >= 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 A render driver is a set of code that handles rendering and texture management on a particular display.  Normally there is only one, but some drivers may have several available with different capabilities.

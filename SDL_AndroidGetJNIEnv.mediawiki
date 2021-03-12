@@ -6,15 +6,15 @@ Use this function to retrieve the Java native interface object (JNIEnv) of the c
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_AndroidGetJNIEnv()
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a pointer to Java native interface object (JNIEnv) to which the current thread is attached, or 0 on error.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <jni.h>
 
@@ -48,7 +48,7 @@ void showHome(void)
     // Therefore references need to be manually deleted because otherwise the
     // references will first be cleaned if main() returns (application exit).
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The prototype of the function in SDL's code actually declare a void* return type, even if the implementation returns a pointer to a JNIEnv. The rationale being that it allows not to include jni.h in the headers of the SDL.

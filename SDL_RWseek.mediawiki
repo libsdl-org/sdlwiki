@@ -4,11 +4,11 @@ Use this function to seek within an [[SDL_RWops]] data stream.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Sint64 SDL_RWseek(SDL_RWops* context,
                   Sint64     offset,
                   int        whence)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,7 +26,7 @@ Sint64 SDL_RWseek(SDL_RWops* context,
 Returns the final offset in the data stream after the seek or -1 on error.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops *rw = SDL_RWFromFile("myfile.bin", "rb");
 if (rw != NULL) {
     /* Seek to 0 bytes from the end of the file */
@@ -38,7 +38,7 @@ if (rw != NULL) {
         printf("myfile.bin is %d bytes long\n", length);
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function seeks to '''offset''' relative to '''whence'''

@@ -4,9 +4,9 @@ Use this function to destroy the rendering context for a window and free associa
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_DestroyRenderer(SDL_Renderer* renderer)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_DestroyRenderer(SDL_Renderer* renderer)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

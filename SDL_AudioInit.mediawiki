@@ -4,9 +4,9 @@ Use this function to initialize a particular audio driver.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_AudioInit(const char* driver_name)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_AudioInit(const char* driver_name)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int i;
 
 for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
@@ -29,7 +29,7 @@ for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     }
     SDL_AudioQuit();
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is used internally, and should not be used unless you have a specific need to designate the audio driver you want to use.  You should normally use [[SDL_Init]]() or [[SDL_InitSubSystem]]().

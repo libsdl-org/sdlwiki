@@ -4,14 +4,14 @@ Use this function to unload the OpenGL library previously loaded by [[SDL_GL_Loa
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GL_UnloadLibrary(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

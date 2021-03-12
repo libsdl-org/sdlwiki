@@ -17,12 +17,12 @@ An enumeration of flags that can be used in the flip parameter for [[SDL_RenderC
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* casts may be necessary for some compiler settings or languages (e.g. C++) */
 SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL;
 
 SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, angle, &center, flip);
-```
+</syntaxhighlight>
 
 == Remarks ==
 If you want to do a diagonal flip (both horizontal and vertical), use bitwise or ('|' operator).

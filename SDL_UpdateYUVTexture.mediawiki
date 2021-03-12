@@ -11,7 +11,7 @@ Use this function to update a rectangle within a planar YV12 or IYUV texture wit
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_UpdateYUVTexture(SDL_Texture*    texture,
                          const SDL_Rect* rect,
                          const Uint8*    Yplane,
@@ -20,7 +20,7 @@ int SDL_UpdateYUVTexture(SDL_Texture*    texture,
                          int             Upitch,
                          const Uint8*    Vplane,
                          int             Vpitch)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -56,9 +56,9 @@ Returns 0 on success or -1 if the texture is not valid; call [[SDL_GetError]]() 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

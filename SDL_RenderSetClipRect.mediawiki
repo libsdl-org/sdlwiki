@@ -9,10 +9,10 @@ Use this function to set the clip rectangle for rendering on the specified targe
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderSetClipRect(SDL_Renderer*   renderer,
                           const SDL_Rect* rect)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -28,9 +28,9 @@ int SDL_RenderSetClipRect(SDL_Renderer*   renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==

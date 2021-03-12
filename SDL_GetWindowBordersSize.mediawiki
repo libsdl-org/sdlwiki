@@ -12,13 +12,13 @@ Use this function to get the size of a window's borders (decorations) around the
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetWindowBordersSize(SDL_Window* window,
                              int*        top,
                              int*        left,
                              int*        bottom,
                              int*        right)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -45,9 +45,9 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

@@ -4,15 +4,15 @@ Use this function to allocate an empty, unpopulated [[SDL_RWops]] structure.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops* SDL_AllocRW(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a pointer to the allocated memory on success, or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "stdlib.h"
 #include "SDL.h"
 
@@ -64,7 +64,7 @@ SDL_RWops *MyCustomRWop()
   c->hidden.unknown.data1=malloc(256);
   return c;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Applications do not need to use this function unless they are providing their own [[SDL_RWops]] implementation. If you just need a SDL_RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc.

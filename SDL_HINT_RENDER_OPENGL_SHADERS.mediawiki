@@ -16,9 +16,9 @@ A hint that specifies whether the OpenGL render driver uses shaders.
 By default shaders are used if OpenGL supports them.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

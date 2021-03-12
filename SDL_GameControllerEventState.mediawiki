@@ -10,9 +10,9 @@ Use this function to find the current state of, enable, or disable events dealin
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GameControllerEventState(int state)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -27,11 +27,11 @@ Note: You may use -1, 0, or 1 in place of SDL_QUERY, SDL_IGNORE, or SDL_ENABLE r
 Returns the same value passed to the function, with exception to -1 (SDL_QUERY), which will return the current state.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 1 */
 printf("%i\n", SDL_GameControllerEventState(SDL_IGNORE)); /* prints 0 */
 printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
-```
+</syntaxhighlight>
 
 == Remarks ==
 If controller events are disabled, you must call [[SDL_GameControllerUpdate]]() yourself and check the state of the controller when you want controller information.

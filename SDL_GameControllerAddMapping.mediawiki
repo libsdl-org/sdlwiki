@@ -9,9 +9,9 @@ Use this function to add support for controllers that SDL is unaware of or to ca
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GameControllerAddMapping(const char* mappingString)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -26,9 +26,9 @@ Returns 1 if a new mapping is added, 0 if an existing mapping is updated, -1 on 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==

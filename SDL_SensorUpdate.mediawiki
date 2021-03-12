@@ -8,9 +8,9 @@ This needs to be called from the thread that initialized the sensor subsystem.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SensorUpdate(void);
-```
+</syntaxhighlight>
 
 ----
 [[CategoryAPI]], [[CategorySensor]]

@@ -4,14 +4,14 @@ Use this function to create a window with the specified position, dimensions, an
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Window* SDL_CreateWindow(const char* title,
                              int         x,
                              int         y,
                              int         w,
                              int         h,
                              Uint32      flags)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -38,7 +38,7 @@ SDL_Window* SDL_CreateWindow(const char* title,
 Returns the window that was created or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Example program:
 // Using SDL2 to create an application window
 
@@ -80,7 +80,7 @@ int main(int argc, char* argv[]) {
     return 0;
 }
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="flags"></span> '''flags''' may be any of the following OR'd together:

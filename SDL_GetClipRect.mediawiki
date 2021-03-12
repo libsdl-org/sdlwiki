@@ -4,10 +4,10 @@ Use this function to get the clipping rectangle for a surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GetClipRect(SDL_Surface* surface,
                      SDL_Rect*    rect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_GetClipRect(SDL_Surface* surface,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.

@@ -5,9 +5,9 @@ Use this function to get the number of trackballs on a joystick.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_JoystickNumBalls(SDL_Joystick* joystick)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ int SDL_JoystickNumBalls(SDL_Joystick* joystick)
 Returns the number of trackballs on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Joystick trackballs have only relative motion events associated with them and their state cannot be polled.

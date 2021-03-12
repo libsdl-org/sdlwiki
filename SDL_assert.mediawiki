@@ -4,9 +4,9 @@ Use this macro to create an assertion for debugging.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_assert(condition)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,10 +15,10 @@ void SDL_assert(condition)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_assert(1 == 0);  // triggers an assertion.
 SDL_assert(1 == 1);  // does NOT trigger an assertion.
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is enabled only when the SDL_ASSERT_LEVEL is set to 2 or 3, otherwise it is disabled.  See the [[CategoryAssertions|Assertions Category page]] for details.

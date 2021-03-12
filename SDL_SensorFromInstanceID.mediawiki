@@ -4,9 +4,9 @@ Return the SDL_Sensor associated with an instance id.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Sensor *SDL_SensorFromInstanceID(SDL_SensorID instance_id);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

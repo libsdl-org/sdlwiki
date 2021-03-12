@@ -3,9 +3,9 @@ Use this function to unlock a texture, uploading the changes to video memory, if
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_UnlockTexture(SDL_Texture* texture)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''texture''' 
@@ -14,9 +14,9 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 == Remarks ==
 /!\ ''WARNING'': See [https://bugzilla.libsdl.org/show_bug.cgi?id=1586 SDL bug #1586] before using this function!
 

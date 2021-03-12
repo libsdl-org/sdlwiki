@@ -4,9 +4,9 @@ Get the implementation dependent name of a sensor
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char *SDL_SensorGetName(SDL_Sensor *sensor);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

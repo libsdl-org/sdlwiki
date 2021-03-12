@@ -4,9 +4,9 @@ Use this function to destroy a condition variable.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_DestroyCond(SDL_cond* cond)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

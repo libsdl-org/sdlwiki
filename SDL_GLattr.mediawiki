@@ -82,14 +82,14 @@ An enumeration of OpenGL configuration attributes.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GL_SetAttribute(SDL_GL_RED_SIZE, 8);
 SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE, 8);
 SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 8);
 SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE, 8);
 SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 SDL_GL_CreateContext(window);
-```
+</syntaxhighlight>
 
 == Remarks ==
 While you can set most OpenGL attributes normally, the attributes listed above must be known before SDL creates the window that will be used with the OpenGL context. These attributes are set and read with [[SDL_GL_SetAttribute]]() and [[SDL_GL_GetAttribute]]().

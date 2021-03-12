@@ -11,9 +11,9 @@ Use this function to create a system cursor.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -28,11 +28,11 @@ Returns a cursor on success or NULL on failure; call [[SDL_GetError]]() for more
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Cursor* cursor;
 cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
 SDL_SetCursor(cursor);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

@@ -4,10 +4,10 @@ Use this function to fill a rectangle on the current rendering target with the d
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderFillRect(SDL_Renderer*   renderer,
                        const SDL_Rect* rect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_RenderFillRect(SDL_Renderer*   renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The current drawing color is set by [[SDL_SetRenderDrawColor]](), and the color's alpha value is ignored unless blending is enabled with the appropriate call to [[SDL_SetRenderDrawBlendMode]]().

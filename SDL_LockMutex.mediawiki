@@ -4,9 +4,9 @@ Use this function to lock a mutex created with [[SDL_CreateMutex]]().
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_LockMutex(SDL_mutex* mutex)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

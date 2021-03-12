@@ -4,9 +4,9 @@ Use this function to raise a window above other windows and set the input focus.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_RaiseWindow(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_RaiseWindow(SDL_Window* window)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

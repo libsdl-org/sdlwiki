@@ -4,9 +4,9 @@ Use this function to unlock a spin lock by setting it to 0.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_AtomicUnlock(SDL_SpinLock* lock)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_AtomicUnlock(SDL_SpinLock* lock)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Always returns immediately.

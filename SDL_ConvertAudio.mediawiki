@@ -4,9 +4,9 @@ Use this function to convert audio data to a desired audio format.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ConvertAudio(SDL_AudioCVT* cvt)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,7 +19,7 @@ int SDL_ConvertAudio(SDL_AudioCVT* cvt)
 Returns 0 if the conversion was completed successfully or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Change 1024 stereo sample frames at 48000Hz from Float32 to Int16.
 SDL_AudioCVT cvt;
 SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
@@ -29,7 +29,7 @@ cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
 // read your float32 data into cvt.buf here.
 SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function does the actual audio data conversion, after the application has called [[SDL_BuildAudioCVT]]() to prepare the conversion information and then filled in the buffer details.

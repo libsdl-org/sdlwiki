@@ -4,9 +4,9 @@ Use this function to lock out the audio callback function for a specified device
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_LockAudioDevice(SDL_AudioDeviceID dev)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
     printf("The audio callback is running!\n");
@@ -32,7 +32,7 @@ SDL_Delay(2000);  // callback doesn't run for 2 seconds.
 printf("Ok, unlocking!\n");
 SDL_UnlockAudioDevice(devid);
 SDL_Delay(2000);  // callback runs for 2 seconds.
-```
+</syntaxhighlight>
 
 == Remarks ==
 The lock manipulated by these functions protects the audio callback function specified in [[SDL_OpenAudioDevice]]().  During a [[SDL_LockAudioDevice]]()/[[SDL_UnlockAudioDevice]]() pair, you can be guaranteed that the callback function for that device is not running, even if the device is not paused. While a device is locked, any other unpaused, unlocked devices may still run their callbacks.

@@ -5,10 +5,10 @@ Use this function to retrieve the current state of the mouse.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_GetMouseState(int* x,
                          int* y)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,12 +23,12 @@ Uint32 SDL_GetMouseState(int* x,
 Returns a 32-bit button bitmask of the current button state.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_PumpEvents();
 if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
     SDL_Log("Mouse Button 1 (left) is pressed.");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The current button state is returned as a button bitmask, which can be tested using the SDL_BUTTON(X) macros (where X is generally 1 for the left, 2 for middle, 3 for the right button), and '''x''' and '''y''' are set to the mouse cursor position relative to the focus window for the currently selected mouse. You can pass NULL for either '''x''' or '''y'''.

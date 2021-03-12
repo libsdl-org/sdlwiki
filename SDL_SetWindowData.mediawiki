@@ -4,11 +4,11 @@ Use this function to associate an arbitrary named pointer with a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_SetWindowData(SDL_Window* window,
                         const char* name,
                         void*       userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ void* SDL_SetWindowData(SDL_Window* window,
 Returns the previous value associated with '''name'''.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''name''' is case-sensitive.

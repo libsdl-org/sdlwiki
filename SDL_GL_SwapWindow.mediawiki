@@ -4,9 +4,9 @@ Use this function to update a window with OpenGL rendering.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GL_SwapWindow(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_GL_SwapWindow(SDL_Window* window)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
       
@@ -35,7 +35,7 @@ glClear(GL_COLOR_BUFFER_BIT);
 SDL_GL_SwapWindow(window);
 
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is used with double-buffered OpenGL contexts, which are the default.

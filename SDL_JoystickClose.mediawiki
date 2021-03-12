@@ -5,9 +5,9 @@ Use this function to close a joystick previously opened with [[SDL_JoystickOpen]
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_JoystickClose(SDL_Joystick* joystick)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -16,9 +16,9 @@ void SDL_JoystickClose(SDL_Joystick* joystick)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

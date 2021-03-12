@@ -4,13 +4,13 @@ Use this function to set the color used for drawing operations (Rect, Line and C
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
                            Uint8         r,
                            Uint8         g,
                            Uint8         b,
                            Uint8         a)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -34,7 +34,7 @@ int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 SDL_Rect rectangle;
 
@@ -43,7 +43,7 @@ rectangle.y = 0;
 rectangle.w = 50;
 rectangle.h = 50;
 SDL_RenderFillRect(renderer, &rectangle);
-```
+</syntaxhighlight>
 
 == Remarks ==
 Use this function to set the color for drawing or filling rectangles, lines, and points, and for [[SDL_RenderClear]]().

@@ -4,10 +4,10 @@ Use this function to get the name of a specific audio device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetAudioDeviceName(int index,
                                    int iscapture)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,13 +22,13 @@ const char* SDL_GetAudioDeviceName(int index,
 Returns the name of the audio device at the requested index, or NULL on error.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int i, count = SDL_GetNumAudioDevices(0);
 
 for (i = 0; i < count; ++i) {
     SDL_Log("Audio device %d: %s", i, SDL_GetAudioDeviceName(i, 0));
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is only valid after successfully initializing the audio subsystem.

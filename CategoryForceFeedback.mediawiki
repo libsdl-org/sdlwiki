@@ -22,7 +22,7 @@ The basic usage is as follows:
 
 == Code Examples ==
 Simple rumble example:
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Haptic *haptic;
 
 // Open the device
@@ -41,10 +41,10 @@ SDL_Delay( 2000 );
 
 // Clean up
 SDL_HapticClose( haptic );
-```
+</syntaxhighlight>
 
 Complete example:
-```c++
+<syntaxhighlight lang='c++'>
 int test_haptic( SDL_Joystick * joystick ) {
  SDL_Haptic *haptic;
  SDL_HapticEffect effect;
@@ -86,7 +86,7 @@ int test_haptic( SDL_Joystick * joystick ) {
 
  return 0; // Success
 }
-```
+</syntaxhighlight>
 You can find more information in this blog by Edgar Simo Serra: [http://bobbens.dyndns.org/journal/2010/sdl_haptic/ SDL Haptic In Depth]([https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic/ Archive])
 
 

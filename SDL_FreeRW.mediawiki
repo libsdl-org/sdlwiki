@@ -4,9 +4,9 @@ Use this function to free an [[SDL_RWops]] structure allocated by [[SDL_AllocRW]
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_FreeRW(SDL_RWops* area)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_FreeRW(SDL_RWops* area)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* this would be your SDL_RWops implementation's "close" method. */
 void close_my_rwops(SDL_RWops *rw)
 {
@@ -24,7 +24,7 @@ void close_my_rwops(SDL_RWops *rw)
         SDL_FreeRW(rw);
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Applications do not need to use this function unless they are providing their own [[SDL_RWops]] implementation. If you just need a SDL_RWops to read/write a common data source, you should use the built-in implementations in SDL, like [[SDL_RWFromFile]]() or [[SDL_RWFromMem]](), etc, and call the '''close''' method on those SDL_RWops pointers when you are done with them.

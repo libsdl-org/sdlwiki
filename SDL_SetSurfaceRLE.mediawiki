@@ -4,10 +4,10 @@ Use this function to set the RLE acceleration hint for a surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetSurfaceRLE(SDL_Surface* surface,
                       int          flag)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_SetSurfaceRLE(SDL_Surface* surface,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If RLE is enabled, color key and alpha blending blits are much faster, but the surface must be locked before directly accessing the pixels. 

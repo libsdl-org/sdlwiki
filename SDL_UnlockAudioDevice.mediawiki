@@ -4,9 +4,9 @@ Use this function to unlock the audio callback function for a specified device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
     printf("The audio callback is running!\n");
@@ -32,7 +32,7 @@ SDL_Delay(2000);  // callback doesn't run for 2 seconds.
 printf("Ok, unlocking!\n");
 SDL_UnlockAudioDevice(devid);
 SDL_Delay(2000);  // callback runs for 2 seconds.
-```
+</syntaxhighlight>
 
 == Remarks ==
 Unlocks a previous [[SDL_LockAudioDevice]]() call. Please see [[SDL_LockAudioDevice#Remarks|that function's remarks]] for more details.

@@ -4,13 +4,13 @@ Use this function to get the color used for drawing operations (Rect, Line and C
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetRenderDrawColor(SDL_Renderer* renderer,
                            Uint8*        r,
                            Uint8*        g,
                            Uint8*        b,
                            Uint8*        a)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -34,9 +34,9 @@ int SDL_GetRenderDrawColor(SDL_Renderer* renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

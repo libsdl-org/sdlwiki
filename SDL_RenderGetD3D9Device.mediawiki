@@ -10,9 +10,9 @@ Use this function to get the D3D device associated with a renderer.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 IDirect3DDevice9* SDL_RenderGetD3D9Device(SDL_Renderer* renderer)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -27,9 +27,9 @@ Returns the D3D device associated with given renderer or NULL if it is not a D3D
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

@@ -9,9 +9,9 @@ Use this function to get the name of a device with the given index.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetInputDeviceName(int index)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -24,9 +24,9 @@ Returns the name of the device with the specified '''index''',,; call [[SDL_GetE
 <span style="color: green;">Error state?  Source?</span>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

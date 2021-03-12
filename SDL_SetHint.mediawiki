@@ -4,10 +4,10 @@ Use this function to set a hint with normal priority.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_SetHint(const char* name,
                      const char* value)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ SDL_bool SDL_SetHint(const char* name,
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
-```
+</syntaxhighlight>
 
 == Remarks ==
 Hints will not be set if there is an existing override hint or environment variable that takes precedence.  You can use [[SDL_SetHintWithPriority]]() to set the hint with override priority instead.

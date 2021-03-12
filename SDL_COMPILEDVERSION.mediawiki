@@ -4,14 +4,14 @@ Use this macro to get the SDL version number that you compiled against.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_COMPILEDVERSION
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

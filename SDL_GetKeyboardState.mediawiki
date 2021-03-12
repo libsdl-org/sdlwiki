@@ -5,9 +5,9 @@ Use this function to get a snapshot of the current state of the keyboard.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const Uint8* SDL_GetKeyboardState(int* numkeys)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,7 +19,7 @@ const Uint8* SDL_GetKeyboardState(int* numkeys)
 Returns a pointer to an array of key states. A value of 1 means that the key is pressed and a value of 0 means that it is not. Indexes into this array are obtained by using [[SDL_Scancode]] values. The pointer returned is a pointer to an internal SDL array. It will be valid for the whole lifetime of the application and should not be freed by the caller.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 const Uint8 *state = SDL_GetKeyboardState(NULL);
 if (state[SDL_SCANCODE_RETURN]) {
     printf("<RETURN> is pressed.\n");
@@ -27,7 +27,7 @@ if (state[SDL_SCANCODE_RETURN]) {
 if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
     printf("Right and Up Keys Pressed.\n");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Note: Use [[SDL_PumpEvents]]() to update the state array.

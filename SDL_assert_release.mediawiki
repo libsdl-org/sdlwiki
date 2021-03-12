@@ -4,9 +4,9 @@ Use this function to create an assertion for release builds.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_assert_release(condition)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_assert_release(condition)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions Category page]] for details.

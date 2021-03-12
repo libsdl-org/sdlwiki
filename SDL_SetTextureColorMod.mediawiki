@@ -4,12 +4,12 @@ Use this function to set an additional color value multiplied into render copy o
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetTextureColorMod(SDL_Texture* texture,
                            Uint8        r,
                            Uint8        g,
                            Uint8        b)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,12 +30,12 @@ int SDL_SetTextureColorMod(SDL_Texture* texture,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 ...
 SDL_Texture* pTexture = SDL_CreateTextureFromSurface( renderer, loadedSurface );
 SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 ...
-```
+</syntaxhighlight>
 
 == Remarks ==
 When this texture is rendered, during the copy operation each source color channel is modulated by the appropriate color value according to the following formula:

@@ -4,9 +4,9 @@ Use this function to set the swap interval for the current OpenGL context.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GL_SetSwapInterval(int interval)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ int SDL_GL_SetSwapInterval(int interval)
 Returns 0 on success or -1 if setting the swap interval is not supported; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Some systems allow specifying -1 for the interval, to enable adaptive vsync. Adaptive vsync works the same as vsync, but if you've already missed the vertical retrace for a given frame, it swaps buffers immediately, which might be less jarring for the user during occasional framerate drops. If application requests adaptive vsync and the system does not support it, this function will fail and return -1. In such a case, you should probably retry the call with 1 for the interval.

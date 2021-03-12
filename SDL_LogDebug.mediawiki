@@ -4,11 +4,11 @@ Use this function to log a message with SDL_LOG_PRIORITY_DEBUG.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LogDebug(int         category, 
                   const char* fmt,
                   ...)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ void SDL_LogDebug(int         category,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="category"></span>

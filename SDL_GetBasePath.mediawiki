@@ -4,9 +4,9 @@ Use this function to get the directory where the application was run from.  This
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 char* SDL_GetBasePath(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns an absolute path in UTF-8 encoding to the application data directory. NULL will be returned on error or when the platform doesn't implement this functionality, call [[SDL_GetError]]() for more information.
@@ -16,7 +16,7 @@ The return path will be guaranteed to end with a path separator ('\' on Windows,
 The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 char *data_path = NULL;
 
@@ -29,7 +29,7 @@ void InitializeDataPath() {
     }
 }
 
-```
+</syntaxhighlight>
 
 
 == Remarks ==

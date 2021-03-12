@@ -4,14 +4,14 @@ Use this function to get RGBA values from a pixel in the specified format.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GetRGBA(Uint32                 pixel,
                  const SDL_PixelFormat* format,
                  Uint8*                 r,
                  Uint8*                 g,
                  Uint8*                 b,
                  Uint8*                 a)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -35,9 +35,9 @@ void SDL_GetRGBA(Uint32                 pixel,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function uses the entire 8-bit [0..255] range when converting color components from pixel formats with less than 8-bits per RGB component (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff, 0xff, 0xff] not [0xf8, 0xfc, 0xf8]).

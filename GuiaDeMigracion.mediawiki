@@ -82,20 +82,20 @@ Si tu juego es 2D, lo más probable es que hayas seguido alguna de las siguiente
 
 Así que probablemente algo así:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_WM_SetCaption("My Game Window", "game");
 SDL_Surface *screen = SDL_SetVideoMode(640, 480, 0, SDL_FULLSCREEN | SDL_OPENGL);
-```
+</syntaxhighlight>
 
 Ahora debería ser:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Window *screen = SDL_CreateWindow("My Game Window",
                           SDL_WINDOWPOS_UNDEFINED,
                           SDL_WINDOWPOS_UNDEFINED,
                           640, 480,
                           SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
-```
+</syntaxhighlight>
 
 Notarás que es bastante similar a 1.2. La diferencia es que ahora es posible tener varias ventanas (si quieres) y que tienes más control sobre ellas. <code>SDL_WM_SetCaption()</code> ya no existe, porque es necesario que cada ventana pueda tener un título propio (puedes cambiarlo usando [[SDL_SetWindowTitle]]()) y que sea posible darle una posición específica. En este caso utilizamos <code>SDL_WINDOWPOS_UNDEFINED</code> porque no nos preocupa dónde se ubique la ventana. También es posible utilizar <code>SDL_WINDOWPOS_CENTERED</code>.
 
@@ -109,39 +109,39 @@ Como ya dijimos, en vez de <code>SDL_SetVideoMode()</code> utilizamos [[SDL_Crea
 
 Ya no utilizamos <code>SDL_ListModes()</code>. Hay algo parecido en SDL2 (llamar [[SDL_GetDisplayMode]]() en un bucle tantas veces como diga [[SDL_GetNumDisplayModes]](), pero en vez de eso vamos a utilizar una nueva característica llamada "escritorio a pantalla completa" que básicamente le dice a SDL: "dame la pantalla completa y no cambies la resolución". Para nuestro juego a 640x480, sería algo así:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Window *sdlWindow = SDL_CreateWindow(title,
                           SDL_WINDOWPOS_UNDEFINED,
                           SDL_WINDOWPOS_UNDEFINED,
                           0, 0,
                           SDL_WINDOW_FULLSCREEN_DESKTOP);
-```
+</syntaxhighlight>
 
 Si te fijas, no especificamos 640 o 480... escritorio a pantalla completa te da justamente la pantalla completa e ignora las dimensiones que le pases. La ventana de tu juego debería aparecer instantáneamente en vez de esperar a que el monitor cambie de resolución y con esto vamos a utilizar el GPU para escalar todo a la resolución del escritorio. Esto es generalmente lo mejor y más rápido en caso de que una pantalla LCD esté simulando correr a una resolución menor. Como "bonus": no es necesario redimensionar el resto de las ventanas que estén corriendo.
 
 Ahora necesitamos un contexto de renderizado.
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, -1, 0);
-```
+</syntaxhighlight>
 
 El "renderer" abstrae todos los detalles de cómo se dibuja en la ventana. Puede estar utilizando Direct3D, OpenGL, OpenGL ES o "software surfaces", dependiendo del sistema, pero tu código siempre será el mismo. Es posible, sin embargo, forzar un renderer específico. Si deseas forzar la sincronización con vblank para reducir artefactos gráficos, puedes utilizar <code>SDL_RENDERER_PRESENTVSYNC</code> en vez de cero como tercer parámetro. No deberías especificar <code>SDL_WINDOW_OPENGL</code> directamente: si [[SDL_CreateRenderer]]() decide utilizar OpenGL, actualizará la ventana de manera apropiada.
 
 Ahora que sabes cómo funciona esto, es posible hacerlo en un sólo paso utilizando [[SDL_CreateWindowAndRenderer]](). Un ejemplo simple:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Window *sdlWindow;
 SDL_Renderer *sdlRenderer;
 SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, &sdlWindow, &sdlRenderer);
-```
+</syntaxhighlight>
 
 Asumiendo que ninguna de las funciones falló (¡siempre hay que comprobar NULLs!), estamos listos para comenzar a dibujar en la pantalla. Empecemos por "limpiarla" usando color negro:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetRenderDrawColor(sdlRenderer, 0, 0, 0, 255);
 SDL_RenderClear(sdlRenderer);
 SDL_RenderPresent(sdlRenderer);
-```
+</syntaxhighlight>
 
 Probablemente te imagines cómo funciona esto: dibujamos con color negro (r, g y b en cero, alpha opaco), limpiamos la ventana completa y presentamos la ventana limpia en la pantalla. De la misma manera que antes usaba <code>SDL_UpdateRect()</code> o <code>SDL_Flip()</code>, ahora se utiliza [[SDL_RenderPresent]]().
 
@@ -149,10 +149,10 @@ Una cosa más: Como estamos utilizando <code>SDL_WINDOW_FULLSCREEN_DESKTOP</code
 
 En 2.0, la API de render nos permite hacer lo siguiente:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  // hacemos que el render escalado se vea mejor
 SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
-```
+</syntaxhighlight>
 
 Esto nos permite tener tener una resolución lógica independiente de la resolución final de presentación. Gracias a esto, en vez de tratar de hacer que el sistema funcione a la resolución que nosotros renderizamos, cambiamos la resolución de renderizado para que funcione acorde al sistema. En mi pantalla de 1920x1200, esta aplicación cree que está trabajando con una pantalla 640x480, pero SDL está utilizando el GPU para escalar el renderizado y utilizar todos los pixels. Es importante tener en cuenta que 640x480 y 1920x1200 no tienen la misma relación de aspecto: SDL tratará de escalar lo más que pueda e incluirá un marco de color para la diferencia.
 
@@ -164,37 +164,37 @@ Un caso particular para juegos de la vieja escuelta que utilizan renderizado por
 
 Para esto, sólo necesitas una SDL_Texture que represente la pantalla. Hagamos eso para nuestro juego a 640x480:
 
-```c++
+<syntaxhighlight lang='c++'>
 sdlTexture = SDL_CreateTexture(sdlRenderer,
                                SDL_PIXELFORMAT_ARGB8888,
                                SDL_TEXTUREACCESS_STREAMING,
                                640, 480);
-```
+</syntaxhighlight>
 
 Esto representa una textura en la GPU. La idea es generar cada frame guardando pixels en esta textura, dibujar la textura en la ventana y presentar la misma en la pantalla. <code>SDL_TEXTUREACCESS_STREAMING</code> le indica a SDL que el contenido de esta textura cambiará de manera frecuente.
 
 Probablemente hayas utilizado antes una [[SDL_Surface]] dedicada a la pantalla y luego llamaras SDL_Flip() para mostrarla. Ahora es posible crear una [[SDL_Surface]] en RAM en vez de utilizar la que te hubiera dado <code>SDL_SetVideoMode()</code> o incluso simplemente utilizar <code>malloc()</code> para generar un bloque de pixels al cual puedas escribir. Idealmente, tus buffers deberían contener pixels RGBA, pero de todas maneras es posible realizar conversiones.
 
-```c++
+<syntaxhighlight lang='c++'>
 // esto puede ser surface->pixels, un buffer de malloc() o lo que sea.
 extern Uint32 *myPixels;
-```
+</syntaxhighlight>
 
 Al final del frame, necesitamos actualizar nuestra textura de la siguiente manera:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_UpdateTexture(sdlTexture, NULL, myPixels, 640 * sizeof (Uint32));
-```
+</syntaxhighlight>
 
 Esto va a "subir" nuestros pixels a memoria del GPU. En vez de NULL, es posible especificar un área en caso de utilizar "dirty rectangles", pero lo más probable es que no sea necesario gracias al hardware moderno. El último parametro es el "pitch" -el número de bytes desde el principio de una fila hasta la siguiente- y si tenemos en cuenta que en este ejemplo utilizamos un búfer RGBA lineal, el "pitch" es 640 veces 4 (r, g, b, a).
 
 Ahora pongamos esta textura en pantalla:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RenderClear(sdlRenderer);
 SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
-```
+</syntaxhighlight>
 
 Y eso es todo. [[SDL_RenderClear]]() limpia el contenido del framebuffer (por las dudas de que, digamos, el Steam Overlay lo haya modificado en el cuadro anterior), [[SDL_RenderCopy]]() mueve el contenido de la textura al framebuffer (y gracias a [[SDL_RenderSetLogicalSize]](), lo hará de manera escalada/centrada como si el monitor fuera de 640x480) y [[SDL_RenderPresent]]() lo presentará en la pantalla.
 
@@ -204,18 +204,18 @@ En este ejemplo suponemos que tu juego basado en SDL 1.2 carga imágenes desde a
 
 Puedes crear texturas individuales (surfaces ubicadas en memoria de GPU) de la misma manera que hicimos para la textura grande:
 
-```c++
+<syntaxhighlight lang='c++'>
 sdlTexture = SDL_CreateTexture(sdlRenderer,
                                SDL_PIXELFORMAT_ARGB8888,
                                SDL_TEXTUREACCESS_STATIC,
                                myWidth, myHeight);
-```
+</syntaxhighlight>
 
 En este caso, utilizamos <code>SDL_TEXTUREACCESS_STATIC</code>, porque vamos a "subir" los pixels sólo una vez y no repetidas veces. Pero sería una mejor solución:
 
-```c++
+<syntaxhighlight lang='c++'>
 sdlTexture = SDL_CreateTextureFromSurface(sdlRenderer, mySurface);
-```
+</syntaxhighlight>
 
 De esta manera, cargas tu [[SDL_Surface]] de la manera usual pero al final creamos una textura a partur de la misma. Una vez que tienes tu [[SDL_Texture]] es posible liberar la surface original.
 
@@ -227,13 +227,13 @@ La cosa se complica un poco si necesitas blitear surfaces y modificar pixels ind
 
 La buena noticia es que la API de [[SDL_Surface]] se mantiene prácticamente completa con respecto a SDL 1.2. Así que puedes cambiar tu surface de pantalla de esto:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
-```
+</syntaxhighlight>
 
 A esto:
 
-```c++
+<syntaxhighlight lang='c++'>
 // si no quieres utilizar hexadecimal, puedes usar SDL_PixelFormatEnumToMasks()!
 SDL_Surface *screen = SDL_CreateRGBSurface(0, 640, 480, 32,
                                         0x00FF0000,
@@ -245,15 +245,15 @@ SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
                                             SDL_PIXELFORMAT_ARGB8888,
                                             SDL_TEXTUREACCESS_STREAMING,
                                             640, 480);
-```
+</syntaxhighlight>
 :..y sigue bliteando cosas y modificando pixels como lo hacías antes, componiendo tu framebuffer final dentro de esta [[SDL_Surface]]. Una vez que esté listo para mostrarse en pantalla, puedes hacer como en el primer caso:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
 SDL_RenderClear(sdlRenderer);
 SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
-```
+</syntaxhighlight>
 
 Ten en cuenta que crear texturas no es gratis: no llames [[SDL_CreateTextureFromSurface]]() todos los frames. Crea una textura y una surface y actualiza la primera en base a la segunda.
 
@@ -308,16 +308,16 @@ El primer cambio, básicamente, es que la rueda del ratón ya no se trata como u
 
 Si tu juego requería que el mouse se desplazara indefinidamente en una dirección, por ejemplo para permitirle al jugador en un FPS girar continuamente sin que el ratón se detuviera al borde de la pantalla, probablemente ocultabas el cursor e interceptabas la entrada:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_ShowCursor(0);
 SDL_WM_GrabInput(SDL_GRAB_ON);
-```
+</syntaxhighlight>
 
 En SDL2, esto funciona un poco distinto. Sólo tienes que llamar:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetRelativeMouseMode(SDL_TRUE);
-```
+</syntaxhighlight>
 
 :.. y SDL se ocupa del resto.
 
@@ -327,15 +327,15 @@ SDL_SetRelativeMouseMode(SDL_TRUE);
 
 Las máscaras de evento ahora se especifican como rangos, así que
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_EVENTMASK(SDL_MOUSEBUTTONDOWN));
-```
+</syntaxhighlight>
 
 se convierte en:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN);
-```
+</syntaxhighlight>
 
 === Audio ===
 
@@ -349,9 +349,9 @@ Los eventos de Joystick ahora hacen referencia a un <code>SDL_JoystickID</code>.
 
 Para conseguir un <code>SDL_JoystickID</code> a partir de un <code>SDL_Joystick*</code> abierto, usa:
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
-```
+</syntaxhighlight>
 
 Y compara la propiedad which del evento contra myID. Si no utilizas la cola de eventos para joysticks, [[SDL_JoystickGetAxis]]() y demás funcionan exactamente igual que en SDL 1.2.
 
@@ -383,7 +383,7 @@ Por eso hemos agregado nuevos eventos de SDL para ciertos detalles específicos 
 
 Por ejemplo: tenemos <code>SDL_APP_WILLENTERBACKGROUND</code>, que es el equivalente de <code>applicationWillResignActive()</code> en iOS. Si dibujas algo después de que ese evento se dispare, iOS cerrará tu aplicación. Por eso, necesitas interceptarlo de manera inmediata:
 
-```c++
+<syntaxhighlight lang='c++'>
 int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 {
     if (event->type == SDL_APP_WILLENTERBACKGROUND) {
@@ -397,7 +397,7 @@ int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 
 // esto llama myEventFilter(data, event) ni bien se genera un evento.
 SDL_AddEventWatch(myEventFilter, data);
-```
+</syntaxhighlight>
 
 Además, ahora hay eventos de toque reales en vez de asignarlos al ratón. Puedes rastrear toques, de varios dedos e incluso gestos complejos. Puedes ver la lista completa de funciones en SDL_touch.h y eventos [[SDL_Finger]]* en SDL_events.h.
 
@@ -437,11 +437,11 @@ A partir de la versión 2.0.21 (Mayo 2010), es posible compilar [http://www.ferz
 
 Hay una gran cantidad de cosas nuevas e interesantes en SDL 2.0 de las cuales 1.2 ni siquiera hubiera podido soñar. Aquí sólo tratamos de explicar aquello que puede que tengas que hacer para que tu programa compatible con 1.2 funcione con 2.0, pero realmente es recomendable que explores la documentación. Probablemente ecuentres cosas que te hubiera gustado tener pero descartaste en su momento porque simplemente no existían. Por ejemplo: para cada juego que porté terminé con una función de mensaje de texto similar a esta:
 
-```c++
+<syntaxhighlight lang='c++'>
 #if USING_SDL
 fprintf(stderr, "MSGBOX: %s\n%s\n", title, text);   // bueno, vaya.
 #endif
-```
+</syntaxhighlight>
 
 Ahora puedes usar [[SDL_ShowSimpleMessageBox]](). ¡De nada!
 

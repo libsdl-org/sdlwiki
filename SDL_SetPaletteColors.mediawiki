@@ -3,12 +3,12 @@ Use this function to set a range of colors in a palette.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetPaletteColors(SDL_Palette*     palette,
                          const SDL_Color* colors,
                          int              firstcolor,
                          int              ncolors)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''palette''' 
@@ -29,9 +29,9 @@ int SDL_SetPaletteColors(SDL_Palette*     palette,
 Returns 0 on success or a negative error code if not all of the colors could be set; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 == Remarks ==
 ''You can add useful comments here''
 

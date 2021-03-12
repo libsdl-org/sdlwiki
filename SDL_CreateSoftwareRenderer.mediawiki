@@ -4,9 +4,9 @@ Use this function to create a 2D software rendering context for a surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface* surface)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface* surface)
 Returns a valid rendering context or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 SDL_Window *window;
@@ -114,7 +114,7 @@ main(int argc, char *argv[])
     SDL_Quit();
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Two other API which can be used to create SDL_Renderer:<br/>1) [[SDL_CreateRenderer]]()<br/>2) [[SDL_CreateWindowAndRenderer]]()

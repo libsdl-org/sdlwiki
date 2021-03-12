@@ -13,9 +13,9 @@ A community sourced database of controllers is available [https://raw.github.com
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GameControllerAddMappingsFromFile(const char* filename)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -30,9 +30,9 @@ int SDL_GameControllerAddMappingsFromFile(const char* filename)
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GameControllerAddMappingsFromFile("gamecontrollerdb.txt");
-```
+</syntaxhighlight>
 
 
 == Remarks ==

@@ -5,14 +5,14 @@ Use this function to update the current state of the open joysticks.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_JoystickUpdate(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is called automatically by the event loop if any joystick events are enabled.

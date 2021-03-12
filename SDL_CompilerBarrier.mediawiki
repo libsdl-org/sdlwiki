@@ -4,14 +4,14 @@ Use this function to prevent the compiler from reordering reads and writes to gl
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_CompilerBarrier(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function only prevents the compiler from reordering reads and writes, it does not prevent the CPU from reordering reads and writes.  However, all of the atomic operations that modify memory are full memory barriers.

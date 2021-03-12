@@ -5,9 +5,9 @@ Use this function to retrieve the Java instance of the activity class in an Andr
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_AndroidGetActivity()
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the jobject representing the instance of the Activity class of the Android application, or NULL on error.
@@ -15,7 +15,7 @@ Returns the jobject representing the instance of the Activity class of the Andro
 The jobject returned by the function is a local reference and must be released by the caller. See the PushLocalFrame() and PopLocalFrame() or DeleteLocalRef() functions of the Java native interface ([http://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html in Oracle's documentation]).
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <jni.h>
 
@@ -49,7 +49,7 @@ void showHome(void)
     // Therefore references need to be manually deleted because otherwise the
     // references will first be cleaned if main() returns (application exit).
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The prototype of the function in SDL's code actually declares a void* return type, even if the implementation returns a jobject. The rationale being that it allows not to include jni.h in the headers of the SDL.

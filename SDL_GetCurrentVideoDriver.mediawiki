@@ -4,17 +4,17 @@ Use this function to get the name of the currently initialized video driver.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetCurrentVideoDriver(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the name of the current video driver or NULL if no driver has been initialized.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

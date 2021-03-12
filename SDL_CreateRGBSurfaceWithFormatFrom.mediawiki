@@ -10,14 +10,14 @@ Use this function to allocate an RGB surface from provided pixel data.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom(void*  pixels,
                                                 int    width,
                                                 int    height,
                                                 int    depth,
                                                 int    pitch,
                                                 Uint32 format)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -47,7 +47,7 @@ Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // This example shows how to create a SDL_Surface* with the data loaded
 // from an image file with stb_image.h (https://github.com/nothings/stb/)
 
@@ -89,7 +89,7 @@ if (surf == NULL) {
 SDL_FreeSurface(surf);
 // .. *and* the data used by the surface!
 stbi_image_free(data);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

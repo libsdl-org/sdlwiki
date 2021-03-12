@@ -5,9 +5,9 @@ Use this function to toggle whether or not the cursor is shown.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ShowCursor(int toggle)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -20,14 +20,14 @@ Returns SDL_ENABLE if the cursor is shown, or SDL_DISABLE if the cursor is hidde
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int main(int argc, char *argv[]) {
     /* creates a blank cursor */
     SDL_ShowCursor(SDL_DISABLE);
     /* ... */
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The cursor starts off displayed but can be turned off.  Passing SDL_ENABLE displays the cursor and passing SDL_DISABLE hides it.

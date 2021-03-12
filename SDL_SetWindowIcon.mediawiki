@@ -4,10 +4,10 @@ Use this function to set the icon for a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetWindowIcon(SDL_Window*  window,
                        SDL_Surface* icon)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,7 +19,7 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Using SDL2 to set a window icon
 
 #include "SDL.h"
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
   return 0;
 
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

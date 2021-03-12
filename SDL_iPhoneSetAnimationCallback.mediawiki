@@ -12,12 +12,12 @@ Use this function to set the animation callback on Apple iOS.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_iPhoneSetAnimationCallback(SDL_Window*   window,
                                    int           interval,
                                    void (*callback)(void*),
                                    void*         callbackParam)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -41,18 +41,18 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 
 == Remarks ==
 The function prototype for '''callback''' is:
- ```c++
+ <syntaxhighlight lang='c++'>
 void callback(void* callbackParam)
-```
+</syntaxhighlight>
 : where its parameter is:
  ||<code>callbackParam</code>||what was passed as '''callbackParam''' to [[SDL_iPhoneSetAnimationCallback]]()||
 

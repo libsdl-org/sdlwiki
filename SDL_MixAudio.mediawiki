@@ -4,12 +4,12 @@ This function is a legacy means of mixing audio. New programs might want to use 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_MixAudio(Uint8*       dst,
                   const Uint8* src,
                   Uint32       len,
                   int          volume)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -27,7 +27,7 @@ void SDL_MixAudio(Uint8*       dst,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
     extern const Uint8 *mixData;
@@ -35,15 +35,15 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
     // mix our audio against the silence, at 50% volume.
     SDL_MixAudio(stream, mixData, len, SDL_MIX_MAXVOLUME / 2);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 
 This function is equivalent to calling
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_MixAudioFormat(dst, src, format, len, volume);
-```
+</syntaxhighlight>
 
 where '''format''' is the obtained format of the audio device from the legacy [[SDL_OpenAudio]]() function.
 

@@ -40,9 +40,9 @@ A structure that contains multiple finger gesture event information.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_MultiGestureEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MULTIGESTURE is reported. You would access it through the event's <code>mgesture</code> field.

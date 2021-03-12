@@ -8,13 +8,13 @@ Use this function to check the event queue for messages and optionally return th
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_PeepEvents(SDL_Event*      events,
                    int             numevents,
                    SDL_eventaction action,
                    Uint32          minType,
                    Uint32          maxType)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -38,9 +38,9 @@ int SDL_PeepEvents(SDL_Event*      events,
 Returns the number of events actually stored or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 Add a code example here.
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="action"></span> '''action''' may be any of the following: <!-- <span style="color: green;">(from enum SDL_eventaction which has no page)</span> -->

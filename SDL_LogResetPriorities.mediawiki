@@ -4,14 +4,14 @@ Use this function to reset all priorities to default.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LogResetPriorities(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is called in [[SDL_Quit]]().

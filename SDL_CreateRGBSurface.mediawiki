@@ -4,7 +4,7 @@ Use this function to allocate a new RGB surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_CreateRGBSurface(Uint32 flags,
                                   int    width,
                                   int    height,
@@ -13,7 +13,7 @@ SDL_Surface* SDL_CreateRGBSurface(Uint32 flags,
                                   Uint32 Gmask,
                                   Uint32 Bmask,
                                   Uint32 Amask)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -46,7 +46,7 @@ SDL_Surface* SDL_CreateRGBSurface(Uint32 flags,
 Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
     /* Create a 32-bit surface with the bytes of each pixel in R,G,B,A order,
        as expected by OpenGL for textures */
     SDL_Surface *surface;
@@ -75,7 +75,7 @@ Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; c
 
     /* or using the default masks for the depth: */
     surface = SDL_CreateRGBSurface(0, width, height, 32, 0, 0, 0, 0);
-```
+</syntaxhighlight>
 
 == Remarks ==
 If '''depth''' is 4 or 8 bits, an empty palette is allocated for the surface. If '''depth''' is greater than 8 bits, the pixel format is set using the [RGBA]mask parameters.

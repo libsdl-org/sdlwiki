@@ -14,9 +14,9 @@ Use this function to compute arc cosine of '''x'''.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 double SDL_acos(double x)
-```
+</syntaxhighlight>
 
 
 
@@ -37,7 +37,7 @@ Returns arc cosine of '''x'''.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
     /* acos(x) = Pi/2 - asin(x) */
     SDL_Log("acos(0):\t\t%f", SDL_acos(0));
@@ -47,7 +47,7 @@ Returns arc cosine of '''x'''.
     SDL_Log("acos(-(-1)):\t%f", SDL_acos(-(-1)));
     SDL_Log("Pi - acos(-1):\t%f", M_PI - SDL_acos(-1));
 
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

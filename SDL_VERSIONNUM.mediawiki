@@ -4,9 +4,9 @@ Use this macro to convert separate version components into a single numeric valu
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_VERSIONNUM(X, Y, Z)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -21,9 +21,9 @@ SDL_VERSIONNUM(X, Y, Z)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This assumes that there will never be more than 100 patchlevels.

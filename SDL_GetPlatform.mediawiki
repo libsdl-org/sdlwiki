@@ -4,17 +4,17 @@ Use this function to get the name of the platform.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetPlatform(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the name of the platform. If the correct platform name is not available, returns a string beginning with the text "Unknown".
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Here are the names returned for some supported platforms:

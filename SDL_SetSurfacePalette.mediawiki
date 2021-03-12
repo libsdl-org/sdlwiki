@@ -4,10 +4,10 @@ Use this function to set the palette used by a surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetSurfacePalette(SDL_Surface* surface,
                           SDL_Palette* palette)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 A single palette can be shared with many surfaces.

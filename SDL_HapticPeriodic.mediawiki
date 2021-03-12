@@ -84,9 +84,9 @@ A structure that contains a template for a periodic effect.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <!-- There are several typing and grammatical errors in this section of the header. May not require fixing but probably should at least be looked at. Changes from header have been made below. -->

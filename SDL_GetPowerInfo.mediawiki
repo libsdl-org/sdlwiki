@@ -4,10 +4,10 @@ Use this function to get the current power supply details.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_PowerState SDL_GetPowerInfo(int* secs,
                                 int* pct)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -28,7 +28,7 @@ See [[SDL_PowerState]] for more info.
 Both parameters will return -1 if a value can't be determined, or if not running on a battery.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int secs, pct;
 if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
     printf("Battery is draining: ");
@@ -44,7 +44,7 @@ if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
         printf("(%d percent left)\n", pct);
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 You should never take a battery status as absolute truth. Batteries (especially failing batteries) are delicate hardware, and the values reported here are best estimates based on what that hardware reports. It's not uncommon for older batteries to lose stored power much faster than it reports, or completely drain when reporting it has 20 percent left, etc.

@@ -5,9 +5,9 @@ Use this function to set the active cursor.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetCursor(SDL_Cursor* cursor)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -17,9 +17,9 @@ void SDL_SetCursor(SDL_Cursor* cursor)
 
 == Code Examples ==
 
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function sets the currently active cursor to the specified one. If the cursor is currently visible, the change will be immediately represented on the display. [[SDL_SetCursor]](NULL) can be used to force cursor redraw, if this is desired for any reason.

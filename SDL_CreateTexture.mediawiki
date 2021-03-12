@@ -4,13 +4,13 @@ Use this function to create a texture for a rendering context.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
                                Uint32        format,
                                int           access,
                                int           w,
                                int           h)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -34,7 +34,7 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
 Returns a pointer to the created texture or NULL if no rendering context was active, the format was unsupported, or the width or height were out of range; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 /* Moving Rectangle */
@@ -86,7 +86,7 @@ int main(int argc, char *argv[])
         return 0;
 }
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="format"></span> '''format''' may be one of the following:

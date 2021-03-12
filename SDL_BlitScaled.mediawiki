@@ -4,12 +4,12 @@ Use this function to perform a scaled surface copy to a destination surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_BlitScaled(SDL_Surface*    src,
                    const SDL_Rect* srcrect,
                    SDL_Surface*    dst,
                    SDL_Rect*       dstrect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,9 +30,9 @@ int SDL_BlitScaled(SDL_Surface*    src,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is the public scaled blit function.  This function calls [[SDL_LowerBlitScaled]]() internally.

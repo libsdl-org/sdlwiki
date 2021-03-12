@@ -4,12 +4,12 @@ Use this function to get the gamma ramp for the display that owns a given window
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetWindowGammaRamp(SDL_Window* window,
                            Uint16*     red,
                            Uint16*     green,
                            Uint16*     blue)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,9 +30,9 @@ int SDL_GetWindowGammaRamp(SDL_Window* window,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Despite the name and signature, this method retrieves the gamma ramp of the entire display, not an individual window. A window is considered to be owned by the display that contains the window's center pixel. (The index of this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().)

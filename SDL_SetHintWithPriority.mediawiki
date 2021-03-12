@@ -4,11 +4,11 @@ Use this function to set a hint with a specific priority.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_SetHintWithPriority(const char*      name,
                                  const char*      value,
                                  SDL_HintPriority priority)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ SDL_bool SDL_SetHintWithPriority(const char*      name,
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The priority controls the behavior when setting a hint that already has a value.  Hints will replace existing hints of their priority and lower.  Environment variables are considered to have override priority.

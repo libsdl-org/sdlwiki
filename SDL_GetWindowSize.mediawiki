@@ -4,11 +4,11 @@ Use this function to get the size of a window's client area.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GetWindowSize(SDL_Window* window,
                        int*        w,
                        int*        h)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ void SDL_GetWindowSize(SDL_Window* window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 NULL can safely be passed as the '''w''' or '''h''' parameter if the width or height value is not desired.

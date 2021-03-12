@@ -5,9 +5,9 @@ Use this function to get the implementation dependent name of a joystick.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_JoystickNameForIndex(int device_index)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -20,7 +20,7 @@ Returns the name of the selected joystick.  If no name can be found, this functi
 
 == Code Examples ==
 
-```c++
+<syntaxhighlight lang='c++'>
 /* Print the names of all attached joysticks */
 int num_joy, i;
 num_joy = SDL_NumJoysticks();
@@ -28,7 +28,7 @@ printf("%d joysticks found\n", num_joy);
 for (i = 0; i < num_joy; ++i) {
     printf("%s\n", SDL_JoystickNameForIndex(i));
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This can be called before any joysticks are opened.

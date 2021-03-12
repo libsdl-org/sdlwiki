@@ -4,9 +4,9 @@ Use this function to let a thread clean up on exit without intervention.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_DetachThread(SDL_Thread* thread)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''thread''' 
@@ -14,11 +14,11 @@ void SDL_DetachThread(SDL_Thread* thread)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern int TestThread(void *ptr);
 SDL_Thread *thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 SDL_DetachThread(thread);  /* will go away on its own upon completion. */
-```
+</syntaxhighlight>
 
 == Remarks ==
 

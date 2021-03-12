@@ -4,10 +4,10 @@ Use this function to prepare a read-only memory buffer for use with RWops.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops* SDL_RWFromConstMem(const void* mem,
                               int         size)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,14 +22,14 @@ SDL_RWops* SDL_RWFromConstMem(const void* mem,
 Returns a pointer to a new [[SDL_RWops]] structure, or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 char bitmap[] = {
     66, 77, 86, 2, 0, 0, 0, 0 ...
 };
 SDL_RWops *rw = SDL_RWFromConstMem(bitmap, sizeof(bitmap));
 SDL_Surface *img = SDL_LoadBMP_RW(rw, 1); /* Automatically frees the RWops struct for us */
 /* Do something with img... */
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function sets up an [[SDL_RWops]] struct based on a memory area of a certain size. It assumes the memory area is not writable.

@@ -15,7 +15,7 @@ A structure that defines a two dimensional point.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Example program:
 // Using SDL_Point in some places of your code
 
@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
     SDL_Quit();
     return 0; 
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 An [[SDL_Point]] defines single two dimensional point. It can be used not only for points, but also for size.

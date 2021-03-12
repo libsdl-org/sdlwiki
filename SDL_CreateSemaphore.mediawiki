@@ -4,9 +4,9 @@ Use this function to create a semaphore.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -20,7 +20,7 @@ Returns a new semaphore or NULL on failure; call [[SDL_GetError]]() for more inf
 == Code Examples ==
 <!-- # Begin Semaphore Example -->
 Typical use of semaphores:
-```c++
+<syntaxhighlight lang='c++'>
 SDL_atomic_t done;
 SDL_sem *sem;
 
@@ -47,7 +47,7 @@ SDL_AtomicSet(&done, 1);
 SDL_SemPost(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
-```
+</syntaxhighlight>
 <!-- # End Semaphore Example -->
 
 == Remarks ==

@@ -4,9 +4,9 @@ Use this macro to determine whether the SDL version compiled against is at least
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_VERSION_ATLEAST(X, Y, Z)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -24,12 +24,12 @@ SDL_VERSION_ATLEAST(X, Y, Z)
 This macro will evaluate to true if compiled with SDL version at least X.Y.Z.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 if (! SDL_VERSION_ATLEAST(2,0,0)) {
     SDL_Log("SDL_VERSION %i is less than 2.0.0", SDL_MAJOR_VERSION);
     return 1;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

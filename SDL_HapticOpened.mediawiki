@@ -5,9 +5,9 @@ Use this function to check if the haptic device at the designated index has been
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticOpened(int device_index)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ int SDL_HapticOpened(int device_index)
 Returns 1 if it has been opened, 0 if it hasn't or on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

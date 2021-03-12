@@ -5,14 +5,14 @@ Use this function to stop receiving any text input events.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_StopTextInput(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 There is a [[Tutorials/TextInput|tutorial]].

@@ -5,9 +5,9 @@ Use this function to set the rectangle used to type Unicode text inputs.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetTextInputRect(SDL_Rect* rect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -16,9 +16,9 @@ void SDL_SetTextInputRect(SDL_Rect* rect)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 There is a [[Tutorials/TextInput|tutorial]].

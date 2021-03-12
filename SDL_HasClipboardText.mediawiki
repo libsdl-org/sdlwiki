@@ -4,17 +4,17 @@ Use this function to get a flag indicating whether the clipboard exists and cont
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_HasClipboardText(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns SDL_TRUE if the clipboard has text, or SDL_FALSE if it does not.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

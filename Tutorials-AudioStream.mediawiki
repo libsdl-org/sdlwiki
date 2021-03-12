@@ -26,7 +26,7 @@ Here are some immediate uses for [[SDL_AudioStream]]:
 
 Using [[SDL_AudioStream]] is pretty simple. First, you create one. Let's say you want to produce mono data in Sint16 format at 22050Hz, for something that wants to consume stereo data in Float32 format at 48000Hz.
 
-```c++
+<syntaxhighlight lang='c++'>
 // You put data at Sint16/mono/22050Hz, you get back data at Float32/stereo/48000Hz
 SDL_AudioStream *stream = SDL_NewAudioStream(AUDIO_S16, 1, 22050, AUDIO_F32, 2, 48000);
 if (stream == NULL) {
@@ -34,11 +34,11 @@ if (stream == NULL) {
 } else {
     // We are ready to use the stream!
 }
-```
+</syntaxhighlight>
 
 Now all you have to do is feed your stream data!
 
-```c++
+<syntaxhighlight lang='c++'>
 Sint16 samples[1024];
 int num_samples = read_more_samples_from_disk(samples); // whatever.
 // you tell it the number of _bytes_, not samples, you're putting!
@@ -53,20 +53,20 @@ if (rc == -1) {
 //  appropriately, growing the buffer if necessary.
 Sint16 onesample = 22;
 SDL_AudioStreamPut(stream, &onesample, sizeof (Sint16));
-```
+</syntaxhighlight>
 
 As you add data to the stream, SDL will convert and resample it. You can ask how much converted data is available:
 
-```c++
+<syntaxhighlight lang='c++'>
 int avail = SDL_AudioStreamAvailable(stream);  // this is in bytes, not samples!
 if (avail < 100) {
     printf("I'm still waiting on %d bytes of data!\n", 100 - avail);
 }
-```
+</syntaxhighlight>
 
 And when you have enough data to be useful, you can read out samples in the requested format:
 
-```c++
+<syntaxhighlight lang='c++'>
 float converted[100];
 // this is in bytes, not samples!
 int gotten = SDL_AudioStreamGet(stream, converted, sizeof (converted));
@@ -74,11 +74,11 @@ if (gotten == -1) {
     printf("Uhoh, failed to get converted data: %s\n", SDL_GetError());
 }
 write_more_samples_to_disk(converted, gotten); /* whatever. */
-```
+</syntaxhighlight>
 
 Of course, you don't have to read it all at once. This both streams in ''and'' out of a converted buffer, so you can read less than is available:
 
-```c++
+<syntaxhighlight lang='c++'>
 int gotten;
 do {
     float converted[100];
@@ -91,7 +91,7 @@ do {
         write_more_samples_to_disk(converted, gotten); /* whatever. */
     }
 } while (gotten > 0);
-```
+</syntaxhighlight>
 
 In terms of performance: buffer allocations, conversion, and resampling happen during stream puts. Getting from the stream is a little bookkeeping and some memcpy() calls. Plan accordingly.
 
@@ -101,25 +101,25 @@ There are two ways to deal with this: if you're planning to stream forever, don'
 
 If you are simply at the end of the data you want to stream, you can communicate this to SDL and it will convert any buffered data it's been holding onto internally, making it available to be read with [[SDL_AudioStreamGet]]().
 
-```c++
+<syntaxhighlight lang='c++'>
     SDL_AudioStreamFlush(stream);
-```
+</syntaxhighlight>
 
 Note that if you flush a stream, you can then feed it more data, but there will likely be gaps in the audio output, as the resampler will use silence for the padding at the end. You really only want to flush to finish off a stream and get the last few samples out of it.
 
 If, for whatever reason, you want to throw a stream's contents away without reading it, you can:
 
-```c++
+<syntaxhighlight lang='c++'>
     SDL_AudioStreamClear(stream);
-```
+</syntaxhighlight>
 
 This will remove any data you've put to the stream without reading, and reset internal state (so the resampler will be expecting a fresh buffer instead of resampling against data you previously wrote to the stream). This is useful if you plan to reuse a stream for different source, or just decided that the current source wasn't working out; maybe you're muting an offensive person on a VoIP app.
 
 When you are done with the stream, you can destroy it:
 
-```c++
+<syntaxhighlight lang='c++'>
      SDL_FreeAudioStream(stream);
-```
+</syntaxhighlight>
 
 This frees up internal state and buffers. You don't have to drain the stream before freeing it. The [[SDL_AudioStream]] pointer you've been using is invalid after this call.
 

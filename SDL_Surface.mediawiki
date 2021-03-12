@@ -52,7 +52,7 @@ A structure that contains a collection of pixels used in software blitting.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* This is meant to show how to edit a surface's pixels on the CPU, but
    normally you should use SDL_FillRect() to wipe a surface's contents. */
 void WipeSurface(SDL_Surface *surface)
@@ -68,7 +68,7 @@ void WipeSurface(SDL_Surface *surface)
 
     SDL_UnlockSurface(surface);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 With most surfaces you can access the pixels directly.  Surfaces that have been optimized with [[SDL_SetSurfaceRLE]]() should be locked with [[SDL_LockSurface]]() before accessing '''pixels'''.  When you are done you should call [[SDL_UnlockSurface]]() before blitting.

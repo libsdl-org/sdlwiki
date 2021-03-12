@@ -4,9 +4,9 @@ Use this function to get the name of a built in audio driver.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetAudioDriver(int index)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''index''' 
@@ -18,13 +18,13 @@ const char* SDL_GetAudioDriver(int index)
 Returns the name of the audio driver at the requested index, or NULL if an invalid index was specified.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int i;
 
 for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     printf("Audio driver %d: %s\n", i, SDL_GetAudioDriver(i));
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The list of audio drivers is given in the order that they are normally initialized by default; the drivers that seem more reasonable to choose first (as far as the SDL developers believe) are earlier in the list.

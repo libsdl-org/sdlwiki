@@ -5,11 +5,11 @@ Use this function to run the haptic effect on its associated haptic device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticRunEffect(SDL_Haptic* haptic,
                         int         effect,
                         Uint32      iterations)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -27,9 +27,9 @@ int SDL_HapticRunEffect(SDL_Haptic* haptic,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If '''iterations''' are SDL_HAPTIC_INFINITY, it'll run the effect over and over repeating the envelope (attack and fade) every time. If you only want the effect to last forever, set SDL_HAPTIC_INFINITY in the effect's <code>length</code> parameter.

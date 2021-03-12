@@ -11,10 +11,10 @@ Use this function to create a modal message box.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ShowMessageBox(const SDL_MessageBoxData* messageboxdata,
                        int*                      buttonid)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -32,7 +32,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 int main(int argc, char *argv[])
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

@@ -4,9 +4,9 @@ Use this function to get a mask of the specified subsystems which have previousl
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_WasInit(Uint32 flags)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -20,7 +20,7 @@ If '''flags''' is 0 it returns a mask of all initialized subsystems, otherwise i
 The return value does not include SDL_INIT_NOPARACHUTE.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* Get init data on all the subsystems */
 Uint32 subsystem_init;
 
@@ -31,8 +31,8 @@ if (subsystem_init & SDL_INIT_VIDEO) {
 } else {
     printf("Video is not initialized.\n");
 }
-```
-```c++
+</syntaxhighlight>
+<syntaxhighlight lang='c++'>
 /* Just check for one specific subsystem */
 
 if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
@@ -40,8 +40,8 @@ if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
 } else {
     printf("Video is not initialized.\n");
 }
-```
-```c++
+</syntaxhighlight>
+<syntaxhighlight lang='c++'>
 /* Check for two subsystems */
 Uint32 subsystem_mask = SDL_INIT_VIDEO | SDL_INIT_AUDIO;
 
@@ -50,7 +50,7 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 } else {
     printf("Video and Audio not initialized.\n");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="flags"></span>These are the flags which may be passed to [[SDL_WasInit]]() and may be OR'd together to query multiple subsystems simultaneously.

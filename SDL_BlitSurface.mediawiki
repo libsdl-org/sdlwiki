@@ -4,12 +4,12 @@ Use this function to perform a fast surface copy to a destination surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_BlitSurface(SDL_Surface*    src,
                     const SDL_Rect* srcrect,
                     SDL_Surface*    dst,
                     SDL_Rect*       dstrect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -31,9 +31,9 @@ Returns 0 if the blit is successful or a negative error code on failure; call [[
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
-```
+</syntaxhighlight>
 
 == Remarks ==
 You should call [[SDL_BlitSurface]]() unless you know exactly how SDL blitting works internally and how to use the other blit functions.

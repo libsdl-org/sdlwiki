@@ -24,14 +24,14 @@ A hint that specifies a variable controlling which orientations are allowed on i
 By default all orientations are allowed.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 int main(int argc, char* argv[])
 {
     SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 In some circumstances it is necessary to be able to explicitly control which UI orientations are allowed.

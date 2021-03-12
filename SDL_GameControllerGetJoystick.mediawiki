@@ -9,9 +9,9 @@ Use this function to get the Joystick ID from a Game Controller. The game contro
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController* gamecontroller)
-```
+</syntaxhighlight>
 
 <!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
 
@@ -30,7 +30,7 @@ Returns a SDL_Joystick object; call [[SDL_GetError]]() for more information.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include <stdio.h> /* for printf() */
 
 /* ... */
@@ -48,7 +48,7 @@ for(i = 0; i < SDL_NumJoysticks(); ++i) {
         printf("Index \'%i\' is not a compatible controller.\n", i);
     }
 }
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

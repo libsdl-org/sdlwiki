@@ -5,9 +5,9 @@ Use this function to free a cursor created with [[SDL_CreateCursor]](), [[SDL_Cr
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_FreeCursor(SDL_Cursor* cursor)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -16,9 +16,9 @@ void SDL_FreeCursor(SDL_Cursor* cursor)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

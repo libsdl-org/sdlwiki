@@ -5,9 +5,9 @@ Use this function to open a joystick for use.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Joystick* SDL_JoystickOpen(int device_index)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,7 +19,7 @@ SDL_Joystick* SDL_JoystickOpen(int device_index)
 Returns a joystick identifier or NULL if an error occurred; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Joystick *joy;
 
 // Initialize the joystick subsystem
@@ -45,7 +45,7 @@ if (SDL_NumJoysticks() > 0) {
         SDL_JoystickClose(joy);
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The device_index passed as an argument refers to the N'th joystick presently recognized by SDL on the system.  It is '''NOT''' the same as the instance ID used to identify the joystick in future events.  See [[SDL_JoystickInstanceID]]() for more details about instance IDs.

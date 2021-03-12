@@ -4,9 +4,9 @@ Use this function to release a surface after directly accessing the pixels.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_UnlockSurface(SDL_Surface* surface)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

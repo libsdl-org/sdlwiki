@@ -4,10 +4,10 @@ Use this function to write 16 bits in native format to a [[SDL_RWops]] as big-en
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 size_t SDL_WriteBE16(SDL_RWops* dst,
                      Uint16     value)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ size_t SDL_WriteBE16(SDL_RWops* dst,
 Returns 1 on successful write, 0 on error.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 SDL byteswaps the data only if necessary, so the application always specifies native format, and the data written will be in big-endian format.

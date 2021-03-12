@@ -4,9 +4,9 @@ Use this function to shut down specific SDL subsystems.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_QuitSubSystem(Uint32 flags)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_QuitSubSystem(Uint32 flags)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 /* ... */
@@ -36,7 +36,7 @@ int main(int argc, char **argv) {
     if (sdl_initialized) SDL_Quit();
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously.

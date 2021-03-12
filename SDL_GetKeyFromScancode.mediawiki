@@ -5,9 +5,9 @@ Use this function to get the key code corresponding to the given scancode accord
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode)
 Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]].
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 See [[SDL_Keycode]] for details.

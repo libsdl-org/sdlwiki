@@ -4,7 +4,7 @@ Use this function to initialize an [[SDL_AudioCVT]] structure for conversion.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
                       SDL_AudioFormat src_format,
                       Uint8           src_channels,
@@ -12,7 +12,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
                       SDL_AudioFormat dst_format,
                       Uint8           dst_channels,
                       int             dst_rate)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -42,7 +42,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
 Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Change 1024 stereo sample frames at 48000Hz from float32 to int16.
 SDL_AudioCVT cvt;
 SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
@@ -52,7 +52,7 @@ cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
 // read your float32 data into cvt.buf here.
 SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
-```
+</syntaxhighlight>
 
 == Remarks ==
 Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.

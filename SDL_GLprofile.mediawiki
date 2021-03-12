@@ -17,9 +17,9 @@ An enumeration of OpenGL profiles.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

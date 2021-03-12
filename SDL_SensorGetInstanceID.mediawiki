@@ -4,9 +4,9 @@ Get the instance ID of a sensor.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

@@ -5,18 +5,18 @@ Use this function to query whether relative mouse mode is enabled.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_GetRelativeMouseMode(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns SDL_TRUE if relative mode is enabled or SDL_FALSE if it is disabled.
 <!-- <span style="color: green;">Is this right? What does it do if relative mode is not supported?</span> -->
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -126,7 +126,7 @@ Unspecified bits are always zero, but may be used in later versions of SDL.  The
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_AudioFormat fmt;
 if (SDL_AUDIO_ISFLOAT(fmt)) {
     printf("floating point data\n");
@@ -134,7 +134,7 @@ if (SDL_AUDIO_ISFLOAT(fmt)) {
     printf("integer data\n");
 }
 printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
-```
+</syntaxhighlight>
 
 == Remarks ==
 Be careful about assuming details of a data format. If you only check SDL_AUDIO_ISFLOAT(), you might be surprised to find a later version of SDL adds Float64 support when you expected there to be only 32-bit data, for example.

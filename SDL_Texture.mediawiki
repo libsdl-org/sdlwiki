@@ -5,9 +5,9 @@ A structure that contains an efficient, driver-specific representation of pixel 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -4,9 +4,9 @@ Use this function to dynamically load a shared object and return a pointer to th
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_LoadObject(const char* sofile)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,12 +18,12 @@ void* SDL_LoadObject(const char* sofile)
 Returns a pointer to the object handle or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 /* Dynamically load mylib.so */
 SDL_LoadObject("mylib.so");
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -4,9 +4,9 @@ Use this function to allocate a set of user-defined events, and return the begin
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_RegisterEvents(int numevents)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

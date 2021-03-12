@@ -4,10 +4,10 @@ Use this function to set the clipping rectangle for a surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
                          const SDL_Rect* rect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ SDL_bool SDL_SetClipRect(SDL_Surface*    surface,
 Returns SDL_TRUE if the rectangle intersects the surface, otherwise SDL_FALSE and blits will be completely clipped.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.

@@ -4,9 +4,9 @@ Use this function to restart all threads that are waiting on the condition varia
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_CondBroadcast(SDL_cond* cond)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_CondBroadcast(SDL_cond* cond)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool condition = SDL_FALSE;
 SDL_mutex *lock;
 SDL_cond *cond;
@@ -52,7 +52,7 @@ Thread C:
 .
 SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -5,14 +5,14 @@ Use this function to create a cursor using the specified bitmap data and mask (i
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Cursor* SDL_CreateCursor(const Uint8* data,
                              const Uint8* mask,
                              int          w,
                              int          h,
                              int          hot_x,
                              int          hot_y)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -40,7 +40,7 @@ Returns a new cursor with the specified parameters on success or NULL on failure
 
 == Code Examples ==
 
-```c++
+<syntaxhighlight lang='c++'>
 /* Stolen from the mailing list */
 /* Creates a new mouse cursor from an XPM */
 
@@ -122,7 +122,7 @@ static SDL_Cursor *init_system_cursor(const char *image[])
   sscanf(image[4+row], "%d,%d", &hot_x, &hot_y);
   return SDL_CreateCursor(data, mask, 32, 32, hot_x, hot_y);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''mask''' has to be in MSB (Most Significant Bit) format.

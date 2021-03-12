@@ -5,10 +5,10 @@ Use this function to get the "pref dir". This is meant to be where the applicati
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 char* SDL_GetPrefPath(const char* org,
                       const char* app)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -28,7 +28,7 @@ The return path will be guaranteed to end with a path separator ('\' on Windows,
 The pointer returned is owned by you. Please call SDL_free() on the pointer when you are done with it.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 char *pref_path = NULL;
 
 void InitializePrefPath() {
@@ -39,7 +39,7 @@ void InitializePrefPath() {
         /* Do something to disable writing in-game */
     }
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

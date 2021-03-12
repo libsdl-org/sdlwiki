@@ -4,9 +4,9 @@ Use this function to unlock a mutex created with [[SDL_CreateMutex]]().
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_UnlockMutex(SDL_mutex* mutex)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

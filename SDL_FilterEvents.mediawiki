@@ -4,10 +4,10 @@ Use this function to run a specific filter function on the current event queue, 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_FilterEvents(SDL_EventFilter filter,
                       void*           userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,16 +19,16 @@ void SDL_FilterEvents(SDL_EventFilter filter,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The function prototype for '''filter''' is:
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_EventFilter(void*      userdata,
                     SDL_Event* event)
-```
+</syntaxhighlight>
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_FilterEvents]]()||
  ||<code>event</code>||the desired event to pull from the queue||

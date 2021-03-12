@@ -9,11 +9,11 @@ Use this function to set the maximum size of a window's client area.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetWindowMaximumSize(SDL_Window* window,
                               int         max_w,
                               int         max_h)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -30,9 +30,9 @@ void SDL_SetWindowMaximumSize(SDL_Window* window,
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==

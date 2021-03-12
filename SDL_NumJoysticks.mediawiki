@@ -5,17 +5,17 @@ Use this function to count the number of joysticks attached to the system.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_NumJoysticks(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the number of attached joysticks on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

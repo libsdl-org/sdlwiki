@@ -5,9 +5,9 @@ Use this function to open a haptic device for use from a joystick device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick* joystick)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick* joystick)
 Returns a valid haptic device identifier on success or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 You must still close the haptic device separately. It will not be closed with the joystick.

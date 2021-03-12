@@ -4,10 +4,10 @@ Use this function to determine whether two rectangles intersect.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_HasIntersection(const SDL_Rect* A,
                              const SDL_Rect* B)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ SDL_bool SDL_HasIntersection(const SDL_Rect* A,
 Returns SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If either pointer is NULL the function will return SDL_FALSE.

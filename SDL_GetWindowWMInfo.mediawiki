@@ -4,10 +4,10 @@ Use this function to get driver specific information about a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
                              SDL_SysWMinfo* info)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,7 +22,7 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
 Returns SDL_TRUE if the function is implemented and the <code>version</code> member of the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include "SDL_syswm.h"
 
@@ -77,7 +77,7 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 You must include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].

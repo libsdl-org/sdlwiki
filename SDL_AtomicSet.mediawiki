@@ -4,10 +4,10 @@ Use this function to set an atomic variable to a value.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_AtomicSet(SDL_atomic_t* a,
                   int           v)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_AtomicSet(SDL_atomic_t* a,
 Returns the previous value of the atomic variable.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function also acts as a full memory barrier.

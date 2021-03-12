@@ -4,9 +4,9 @@ Use this function to unload a shared object from memory.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_UnloadObject(void* handle)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_UnloadObject(void* handle)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

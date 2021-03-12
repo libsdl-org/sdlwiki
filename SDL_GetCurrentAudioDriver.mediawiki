@@ -4,15 +4,15 @@ Use this function to get the name of the current audio driver.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetCurrentAudioDriver(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the name of the current audio driver or NULL if no driver has been initialized.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* driver_name = SDL_GetCurrentAudioDriver();
 
 if (driver_name) {
@@ -20,7 +20,7 @@ if (driver_name) {
 } else {
     printf("Audio subsystem not initialized.\n");
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The returned string points to internal static memory and thus never becomes invalid, even if you quit the audio subsystem and initialize a new driver (although such a case would return a different static string from another call to this function, of course). As such, you should not modify or free the returned string.

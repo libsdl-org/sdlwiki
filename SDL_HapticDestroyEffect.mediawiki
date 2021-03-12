@@ -5,10 +5,10 @@ Use this function to destroy a haptic effect on the device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_HapticDestroyEffect(SDL_Haptic* haptic,
                              int         effect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -20,9 +20,9 @@ void SDL_HapticDestroyEffect(SDL_Haptic* haptic,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This will stop the effect if it's running. Effects are automatically destroyed when the device is closed.

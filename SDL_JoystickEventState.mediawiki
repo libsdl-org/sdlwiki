@@ -5,9 +5,9 @@ Use this function to enable/disable joystick event polling.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_JoystickEventState(int state)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,11 +22,11 @@ Returns 1 if enabled, 0 if disabled, or a negative error code on failure; call [
 If '''state''' is SDL_QUERY then the current state is returned, otherwise the new processing state is returned.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 1 */
 printf("%i\n", SDL_JoystickEventState(SDL_IGNORE)); /* prints 0 */
 printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 0 */
-```
+</syntaxhighlight>
 
 == Remarks ==
 If joystick events are disabled, you must call [[SDL_JoystickUpdate]]() yourself and manually check the state of the joystick when you want joystick information.

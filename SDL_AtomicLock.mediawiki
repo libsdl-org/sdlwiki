@@ -4,9 +4,9 @@ Use this function to lock a spin lock by setting it to a non-zero value.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_AtomicLock(SDL_SpinLock* lock)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_AtomicLock(SDL_SpinLock* lock)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <<Include(CategoryAtomic, , , from="Start Include here.", to="##End Include here")>>

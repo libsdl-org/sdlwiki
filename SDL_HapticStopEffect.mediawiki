@@ -5,10 +5,10 @@ Use this function to stop the haptic effect on its associated haptic device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticStopEffect(SDL_Haptic* haptic,
                          int         effect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ int SDL_HapticStopEffect(SDL_Haptic* haptic,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

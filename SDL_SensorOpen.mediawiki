@@ -4,9 +4,9 @@ Open a sensor for use.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Sensor *SDL_SensorOpen(int device_index);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

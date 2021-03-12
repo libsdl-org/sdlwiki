@@ -16,9 +16,9 @@ An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

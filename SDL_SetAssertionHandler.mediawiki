@@ -4,10 +4,10 @@ Use this function to set an application-defined assertion handler.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
                              void*                userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,18 +19,18 @@ void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function allows an application to show its own assertion UI and/or force the response to an assertion failure. If the application doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
 
 The function prototype for '''handler''' is:
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AssertState YourAssertionHandler(const SDL_AssertData* data,
                                      void*                 userdata)
-```
+</syntaxhighlight>
 : where <code>YourAssertionHandler</code> is the name of your function and its parameters are:
  ||<code>data</code>||a pointer to the [[SDL_AssertData]] structure corresponding to the current assertion||
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]()||

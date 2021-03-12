@@ -8,9 +8,9 @@ Use this function to dynamically load the Vulkan loader library.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_Vulkan_LoadLibrary(const char* path)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==

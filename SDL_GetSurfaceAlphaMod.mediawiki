@@ -4,10 +4,10 @@ Use this function to get the additional alpha value used in blit operations.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
                            Uint8*       alpha)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

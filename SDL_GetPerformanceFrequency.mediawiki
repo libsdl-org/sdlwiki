@@ -4,15 +4,15 @@ Use this function to get the count per second of the high resolution counter.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint64 SDL_GetPerformanceFrequency(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a platform-specific count per second.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 #define DEFAULT_RESOLUTION  1
@@ -114,7 +114,7 @@ main(int argc, char *argv[])
     SDL_Quit();
     return (0);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

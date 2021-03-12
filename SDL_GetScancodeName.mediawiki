@@ -5,9 +5,9 @@ Use this function to get a human-readable name for a scancode.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetScancodeName(SDL_Scancode scancode)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -21,9 +21,9 @@ Returns a pointer to the name for the scancode. If the scancode doesn't have a n
 <!-- <span style="color: green;">Should scancode here be bold?  Should the pointer be mentioned?  Any error state?</span> -->
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 See [[SDL_Scancode]] for details.

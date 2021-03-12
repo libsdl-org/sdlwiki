@@ -5,12 +5,12 @@ Use this function to get the ball axis change since the last poll.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_JoystickGetBall(SDL_Joystick* joystick,
                         int           ball,
                         int*          dx,
                         int*          dy)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -31,7 +31,7 @@ int SDL_JoystickGetBall(SDL_Joystick* joystick,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int delta_x, delta_y;
 SDL_Joystick *joy;
 .
@@ -41,7 +41,7 @@ SDL_JoystickUpdate();
 if(SDL_JoystickGetBall(joy, 0, &delta_x, &delta_y)==-1)
   printf("TrackBall Read Error!\n");
 printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
-```
+</syntaxhighlight>
 
 == Remarks ==
 Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''.

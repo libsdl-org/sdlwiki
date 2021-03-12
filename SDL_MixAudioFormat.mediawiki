@@ -4,13 +4,13 @@ Use this function to mix audio data in a specified format.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_MixAudioFormat(Uint8*          dst,
                         const Uint8*    src,
                         SDL_AudioFormat format,
                         Uint32          len,
                         int             volume)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -31,7 +31,7 @@ void SDL_MixAudioFormat(Uint8*          dst,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
@@ -41,7 +41,7 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
     // mix our audio against the silence, at 50% volume.
     SDL_MixAudioFormat(stream, mixData, deviceFormat, len, SDL_MIX_MAXVOLUME / 2);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This takes an audio buffer '''src''' of '''len''' bytes of '''format''' data and mixes it into '''dst''', performing addition, volume adjustment, and overflow clipping. The buffer pointed to by '''dst''' must also be '''len''' bytes of '''format''' data.

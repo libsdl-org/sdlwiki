@@ -39,7 +39,7 @@ A structure that contains the audio output format. It also contains a callback t
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
 
@@ -50,7 +50,7 @@ want.channels = 2;
 want.samples = 4096;
 want.callback = MyAudioCallback;  // you wrote this function elsewhere.
 dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
-```
+</syntaxhighlight>
 
 == Remarks ==
 This structure is used by [[SDL_OpenAudioDevice]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudioDevice]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
@@ -72,11 +72,11 @@ Channel data is interleaved. Stereo samples are stored in left/right ordering. Q
 
 <span id="callback"></span>
 The function prototype for '''callback''' is:
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_AudioCallback(void*  userdata,
                        Uint8* stream,
                        int    len)
-```
+</syntaxhighlight>
 : where its parameters are:
  ||<code>userdata</code>||an application-specific parameter saved in the [[SDL_AudioSpec]] structure's '''userdata''' field||
  ||<code>stream</code>||a pointer to the audio data buffer filled in by SDL_AudioCallback()||

@@ -4,12 +4,12 @@ Use this function to log a message with the specified category and priority.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LogMessage(int             category,
                     SDL_LogPriority priority,
                     const char*     fmt,
                     ...)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -27,9 +27,9 @@ void SDL_LogMessage(int             category,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="category"></span>

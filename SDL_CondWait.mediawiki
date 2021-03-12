@@ -4,10 +4,10 @@ Use this function to wait until a condition variable is signaled.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_CondWait(SDL_cond*  cond,
                  SDL_mutex* mutex)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''cond''' 

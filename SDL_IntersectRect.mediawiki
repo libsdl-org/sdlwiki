@@ -4,11 +4,11 @@ Use this function to calculate the intersection of two rectangles.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_IntersectRect(const SDL_Rect* A,
                            const SDL_Rect* B,
                            SDL_Rect*       result)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ SDL_bool SDL_IntersectRect(const SDL_Rect* A,
 Returns SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If '''result''' is NULL then this function will return SDL_FALSE.

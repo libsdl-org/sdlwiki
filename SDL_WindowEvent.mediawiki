@@ -32,7 +32,7 @@ A structure that contains window state change event data.
 
 == Code Examples ==
 <!-- #Example1 Start -->
-```c++
+<syntaxhighlight lang='c++'>
 void PrintEvent(const SDL_Event * event)
 {
     if (event->type == SDL_WINDOWEVENT) {
@@ -103,7 +103,7 @@ void PrintEvent(const SDL_Event * event)
         }
     }
 }
-```
+</syntaxhighlight>
 <!-- #End Example1 -->
 
 == Remarks ==

@@ -4,9 +4,9 @@ Get the platform dependent type of a sensor.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

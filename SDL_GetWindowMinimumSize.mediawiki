@@ -9,11 +9,11 @@ Use this function to get the minimum size of a window's client area.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GetWindowMinimumSize(SDL_Window* window,
                               int*        w,
                               int*        h)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -30,9 +30,9 @@ void SDL_GetWindowMinimumSize(SDL_Window* window,
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==

@@ -4,13 +4,13 @@ Use this function to load a WAVE from the data source, automatically freeing tha
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
                               int            freesrc,
                               SDL_AudioSpec* spec,
                               Uint8**        audio_buf,
                               Uint32*        audio_len)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -38,7 +38,7 @@ This function returns NULL if the wave file cannot be opened, uses an unknown da
 When the application is done with the data returned in '''audio_buf''', it should call [[SDL_FreeWAV]]() to dispose of it.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_RWops *myRWops;
 SDL_AudioSpec wav_spec;
 Uint32 wav_length;
@@ -51,7 +51,7 @@ if (SDL_LoadWAV_RW(myRWops, 1, &wav_spec, &wav_buffer, &wav_length) == NULL) {
     /* Do stuff with the WAV data, and then... */
     SDL_FreeWAV(wav_buffer);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Currently raw and MS-ADPCM WAVE files are supported.

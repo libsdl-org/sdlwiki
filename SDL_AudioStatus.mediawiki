@@ -16,7 +16,7 @@ An enumeration of audio device states.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void printStatus(SDL_AudioDeviceID dev)
 {
     switch (SDL_GetAudioDeviceStatus(dev))
@@ -41,7 +41,7 @@ if (dev != 0)
      SDL_CloseAudioDevice(dev);
      printStatus(dev);  // prints "stopped"
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Opened devices are always PLAYING or PAUSED in normal circumstances. A failing device may change its status to STOPPED at any time, and closing a device will progress to STOPPED, too. Asking for the state on an unopened or unknown device ID will report STOPPED.

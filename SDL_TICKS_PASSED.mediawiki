@@ -11,9 +11,9 @@ Use this macro to compare SDL ticks values.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_TICKS_PASSED(A, B)
-```
+</syntaxhighlight>
 
 <!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
 
@@ -33,13 +33,13 @@ Returns return "true" if A has passed B.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 /* if you want to wait 100 ms, you could do this: */
 Uint32 timeout = SDL_GetTicks() + 100;
 while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
     /* ... do work until timeout has elapsed */
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

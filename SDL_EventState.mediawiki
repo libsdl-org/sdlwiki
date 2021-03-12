@@ -4,10 +4,10 @@ Use this function to set the state of processing events by type.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint8 SDL_EventState(Uint32 type,
                      int    state)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ Uint8 SDL_EventState(Uint32 type,
 Returns SDL_DISABLE or SDL_ENABLE, representing the processing state of the event before this function makes any changes to it.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''state''' may be any of the following:

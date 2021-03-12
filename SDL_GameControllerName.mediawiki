@@ -9,9 +9,9 @@ Use this function to get the implementation dependent name for an opened game co
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GameControllerName(SDL_GameController* gamecontroller)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -25,7 +25,7 @@ const char* SDL_GameControllerName(SDL_GameController* gamecontroller)
 Returns the implementation dependent name for the game controller, or NULL if there is no name or the identifier passed is invalid.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GameController *controller = NULL;
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     controller = SDL_GameControllerOpen(i);
@@ -37,7 +37,7 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 if (controller) {
     printf("Found a valid controller, named: %s\n", SDL_GameControllerName(controller));
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

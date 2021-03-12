@@ -6,9 +6,9 @@ The number of values and interpretation of the data is sensor dependent.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SensorGetData(SDL_Sensor * sensor, float *data, int num_values);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

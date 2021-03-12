@@ -4,9 +4,9 @@ Use this function to decrement an atomic variable used as a reference count.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_AtomicDecRef(SDL_atomic_t* a)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ SDL_bool SDL_AtomicDecRef(SDL_atomic_t* a)
 Returns SDL_TRUE if the variable reached zero after decrementing, SDL_FALSE otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

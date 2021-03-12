@@ -4,7 +4,7 @@ Use this function to copy a portion of the texture to the current rendering targ
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderCopyEx(SDL_Renderer*          renderer,
                      SDL_Texture*           texture,
                      const SDL_Rect*        srcrect,
@@ -12,7 +12,7 @@ int SDL_RenderCopyEx(SDL_Renderer*          renderer,
                      const double           angle,
                      const SDL_Point*       center,
                      const SDL_RendererFlip flip)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -41,9 +41,9 @@ int SDL_RenderCopyEx(SDL_Renderer*          renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The texture is blended with the destination based on its blend mode set with [[SDL_SetTextureBlendMode]]().

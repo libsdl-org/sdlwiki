@@ -4,10 +4,10 @@ Use this function to create a new [[SDL_RWops]] structure for reading from and/o
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops* SDL_RWFromFile(const char* file,
                           const char* mode)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,11 +22,11 @@ SDL_RWops* SDL_RWFromFile(const char* file,
 Returns a pointer to the [[SDL_RWops]] structure that is created, or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops *file = SDL_RWFromFile("myimage.bmp", "rb");
 SDL_Surface *image = SDL_LoadBMP_RW(file, 1); /* 1 to automatically close the RWops. */
 /* Do something with image here. */
-```
+</syntaxhighlight>
 
 == Remarks ==
 The '''mode''' string is treated roughly the same as in a call to the C library's fopen(), even if SDL doesn't happen to use fopen() behind the scenes.

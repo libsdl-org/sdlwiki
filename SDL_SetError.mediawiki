@@ -3,10 +3,10 @@ Use this function to set the SDL error message.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetError(const char* fmt,
                  ...)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''fmt''' 
@@ -20,17 +20,17 @@ int SDL_SetError(const char* fmt,
 Returns always -1.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetError("Something unexpected happened!");
-```
-```c++
+</syntaxhighlight>
+<syntaxhighlight lang='c++'>
 int errorCode = 0;
 ...
 errorCode = -37;
 ...
 if (errorCode < 0)
     SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
-```
+</syntaxhighlight>
 == Remarks ==
 Calling this function will replace any previous error message that was set.
 

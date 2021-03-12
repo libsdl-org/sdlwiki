@@ -23,9 +23,9 @@ An enumeration of OpenGL context configuration flags.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_DEBUG_FLAG);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

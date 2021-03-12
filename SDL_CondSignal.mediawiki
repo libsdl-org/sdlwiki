@@ -4,9 +4,9 @@ Use this function to restart one of the threads that are waiting on the conditio
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_CondSignal(SDL_cond* cond)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

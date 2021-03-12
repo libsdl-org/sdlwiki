@@ -4,9 +4,9 @@ Use this function to free an RGB surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_FreeSurface(SDL_Surface* surface)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_FreeSurface(SDL_Surface* surface)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If the surface was created using [[SDL_CreateRGBSurfaceFrom]]() then the pixel data is not freed.

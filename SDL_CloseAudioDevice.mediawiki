@@ -4,9 +4,9 @@ Use this function to shut down audio processing and close the audio device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_CloseAudioDevice(SDL_AudioDeviceID dev)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,7 +15,7 @@ void SDL_CloseAudioDevice(SDL_AudioDeviceID dev)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_AudioSpec want;
 SDL_AudioDeviceID devid = SDL_OpenAudioDevice(NULL, 0, &want, NULL, 0);
 if (devid > 0) {
@@ -23,7 +23,7 @@ if (devid > 0) {
     SDL_Delay(5000);  // let audio callback run for 5 seconds.
     SDL_CloseAudioDevice(devid);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The application should close open audio devices once they are no longer needed. Calling this function will wait until the device's audio callback is not running, release the audio hardware and then clean up internal state. No further audio will play from this device once this function returns.

@@ -4,9 +4,9 @@ Use this function to get the title of a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetWindowTitle(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ const char* SDL_GetWindowTitle(SDL_Window* window)
 Returns the title of the window in UTF-8 format or "" if there is no title.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

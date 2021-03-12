@@ -4,10 +4,10 @@ Use this function to add a callback to be triggered when an event is added to th
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_AddEventWatch(SDL_EventFilter filter,
                        void*           userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_AddEventWatch(SDL_EventFilter filter,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <<Include(SDL_SetEventFilter, , , from="Start Include here.", to="##End Include here")>>

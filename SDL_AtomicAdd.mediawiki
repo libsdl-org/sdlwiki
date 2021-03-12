@@ -4,10 +4,10 @@ Use this function to add to an atomic variable.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_AtomicAdd(SDL_atomic_t* a,
                   int           v)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_AtomicAdd(SDL_atomic_t* a,
 Returns the previous value of the atomic variable.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function also acts as a full memory barrier.

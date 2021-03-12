@@ -10,9 +10,9 @@ Use this function to get the implementation dependent name for the game controll
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GameControllerNameForIndex(int joystick_index)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -26,7 +26,7 @@ const char* SDL_GameControllerNameForIndex(int joystick_index)
 Returns the implementation dependent name for the game controller, or NULL if there is no name or the index is invalid.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     const char *name = SDL_GameControllerNameForIndex(i);
     if (name) {
@@ -35,7 +35,7 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
         printf("Joystick %i has no game controller name.\n", i);
     }
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

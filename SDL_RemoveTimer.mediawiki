@@ -4,9 +4,9 @@ Use this function to remove a timer created with [[SDL_AddTimer]]().
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_RemoveTimer(SDL_TimerID id)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id)
 Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't found.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
 
 /* ... */
@@ -28,7 +28,7 @@ SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param
 /* ... */
 
 SDL_RemoveTimer(my_timer_id);
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

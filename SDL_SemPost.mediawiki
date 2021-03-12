@@ -4,9 +4,9 @@ Use this function to atomically increment a semaphore's value and wake waiting t
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SemPost(SDL_sem* sem)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

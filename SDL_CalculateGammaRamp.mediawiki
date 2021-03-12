@@ -4,10 +4,10 @@ Use this function to calculate a 256 entry gamma ramp for a gamma value.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_CalculateGammaRamp(float   gamma,
                             Uint16* ramp)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_CalculateGammaRamp(float   gamma,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

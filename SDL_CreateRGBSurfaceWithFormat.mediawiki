@@ -10,13 +10,13 @@ Use this function to allocate an RGB surface.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_CreateRGBSurfaceWithFormat(Uint32 flags,
                                             int    width,
                                             int    height,
                                             int    depth,
                                             Uint32 format)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -43,7 +43,7 @@ Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
     /* Create a 32-bit surface with the bytes of each pixel in R,G,B,A order,
        as expected by OpenGL for textures */
 
@@ -53,7 +53,7 @@ Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError
         SDL_Log("SDL_CreateRGBSurfaceWithFormat() failed: %s", SDL_GetError());
         exit(1);
     }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

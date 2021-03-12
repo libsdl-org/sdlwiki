@@ -4,12 +4,12 @@ Use this function to display a simple modal message box.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ShowSimpleMessageBox(Uint32      flags,
                              const char* title,
                              const char* message,
                              SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,12 +30,12 @@ int SDL_ShowSimpleMessageBox(Uint32      flags,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
                          "Missing file",
                          "File is missing. Please reinstall the program.",
                          NULL);
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="flags"></span> '''flags''' may be any of the following:

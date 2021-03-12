@@ -11,7 +11,7 @@ A structure representing an atomic integer value.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 /* This is a simple fps counter program
  *
@@ -70,7 +70,7 @@ quit:
 	return 0;
 }
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_atomic_t]] is a structure so people don't accidentally use numeric operations on it.  Instead, you should use the atomic operation functions to work with the integer value.  

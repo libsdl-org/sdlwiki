@@ -15,7 +15,7 @@ A structure that contains the "quit requested" event.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Event e;
 for (;;) {
     SDL_PollEvent(&e);
@@ -24,7 +24,7 @@ for (;;) {
         break;
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_QuitEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_QUIT is reported.  You would access it through the event's <code>quit</code> field.

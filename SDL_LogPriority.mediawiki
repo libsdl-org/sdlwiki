@@ -30,9 +30,9 @@ An enumeration of the predefined log priorities.
 <!-- #End Include here. -->
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <!-- # Start Include Default Priority -->

@@ -11,10 +11,10 @@ A community sourced database of controllers is available [https://raw.github.com
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GameControllerAddMappingsFromRW(SDL_RWops* rw,
                                         int        freerw)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -32,9 +32,9 @@ Returns the number of mappings added or -1 on error; call [[SDL_GetError]]() for
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile("gamecontrollerdb.txt", "rb"), 1);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

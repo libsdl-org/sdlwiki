@@ -4,10 +4,10 @@ Use this function to check for the existence of a range of event types in the ev
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_HasEvents(Uint32 minType,
                        Uint32 maxType)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ SDL_bool SDL_HasEvents(Uint32 minType,
 Returns SDL_TRUE if events with types in the range between '''minType''' and '''maxType''' are present, or SDL_FALSE if not.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If you need to check for a single event type, you can use [[SDL_HasEvent]]() instead.

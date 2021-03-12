@@ -23,9 +23,9 @@ A structure that contains palette information.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Each pixel in an 8-bit surface is an index into the '''colors''' field of the [[SDL_Palette]] structure stored in [[SDL_PixelFormat]]. An [[SDL_Palette]] should never need to be created manually. It is automatically created when SDL allocates an [[SDL_PixelFormat]] for a surface. The '''colors''' values of an [[SDL_Surface]]'s palette can be set with [[SDL_SetPaletteColors]]().

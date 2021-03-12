@@ -164,9 +164,9 @@ An enumeration of pixel formats.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="type"></span> The pixel type is one of the following values:

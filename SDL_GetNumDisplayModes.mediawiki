@@ -4,9 +4,9 @@ Use this function to get the number of available display modes.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetNumDisplayModes(int displayIndex)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,12 +18,12 @@ int SDL_GetNumDisplayModes(int displayIndex)
 Returns a number >= 1 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
     // For now we consider primary display only
     int numDispModes = SDL_GetNumDisplayModes(0);
 
     ...
-```
+</syntaxhighlight>
 
 == Remarks ==
 The '''displayIndex''' needs to be in the range from 0 to [[SDL_GetNumVideoDisplays]]() - 1.

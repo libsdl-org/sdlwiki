@@ -4,15 +4,15 @@ Use this function to get the number of milliseconds since the SDL library initia
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_GetTicks(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns an unsigned 32-bit value representing the number of milliseconds since the SDL library initialized.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 unsigned int lastTime = 0, currentTime;
 while (!quit) {
   // do stuff
@@ -25,7 +25,7 @@ while (!quit) {
     lastTime = currentTime;
   }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This value wraps if the program runs for more than ~49 days.

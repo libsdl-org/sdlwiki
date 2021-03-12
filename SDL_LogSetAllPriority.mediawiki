@@ -4,9 +4,9 @@ Use this function to set the priority of all log categories.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LogSetAllPriority(SDL_LogPriority priority)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_LogSetAllPriority(SDL_LogPriority priority)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="priority"></span>

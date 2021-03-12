@@ -4,9 +4,9 @@ Use this function to determine the current read/write offset in an [[SDL_RWops]]
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Sint64 SDL_RWtell(struct SDL_RWops* context)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,13 +18,13 @@ Sint64 SDL_RWtell(struct SDL_RWops* context)
 Returns the current offset in the stream, or -1 if the information can not be determined.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_RWops *rw;
 printf("Current position in stream: %lld\n", (long long) SDL_RWtell(rw));
 if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
     printf("Final position in stream: %lld\n", (long long) SDL_RWtell(rw));
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 SDL_RWtell is actually a macro that calls the [[SDL_RWops]]'s '''seek''' method, with an offset of 0 bytes from RW_SEEK_CUR, to simplify application development.

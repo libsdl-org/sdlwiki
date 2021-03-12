@@ -5,10 +5,10 @@ Use this function to set the global gain of the specified haptic device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticSetGain(SDL_Haptic* haptic,
                       int         gain)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ int SDL_HapticSetGain(SDL_Haptic* haptic,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Device must support the SDL_HAPTIC_GAIN feature.

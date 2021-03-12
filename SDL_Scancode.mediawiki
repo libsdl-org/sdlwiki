@@ -8,14 +8,14 @@ An enumeration of the SDL keyboard scancode representation.
 <<Include(SDL_ScancodeAndKeycode, , , from="##Start include here.", to="##End include here.")>>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
   /* checks if a key is being remapped and prints what the remapping is */
   if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym)) {
     SDL_Log("Physical %s key acting as %s key",
       SDL_GetScancodeName(event->key.keysym.scancode),
       SDL_GetKeyName(event->key.keysym.sym));
   }
-```
+</syntaxhighlight>
 
 == Remarks ==
 Values of this type are used to represent the physical location of a keyboard key on the keyboard.  This is correlated to the [[SDL_Keycode]] associated with that location to give a key press meaning.

@@ -4,17 +4,17 @@ Use this function to get the current value of the high resolution counter.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint64 SDL_GetPerformanceCounter(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns the current counter value.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is typically used for profiling.  

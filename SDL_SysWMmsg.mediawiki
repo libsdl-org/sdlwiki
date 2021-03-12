@@ -83,9 +83,9 @@ A structure that contains system-dependent window manager messages.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''subsystem''' may be one of the following:

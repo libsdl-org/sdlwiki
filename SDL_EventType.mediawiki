@@ -196,14 +196,14 @@ An enumeration of the types of events that can be delivered.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Event e;
 while (SDL_PollEvent(&e)) {
     if (e.type == SDL_KEYDOWN) {
         SDL_Log("User just pressed down a key!");
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 === SDL_QUIT ===

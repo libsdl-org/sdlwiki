@@ -5,10 +5,10 @@ Use this function to look up the address of the named function in the shared obj
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_LoadFunction(void*       handle,
                        const char* name)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,7 +23,7 @@ void* SDL_LoadFunction(void*       handle,
 Returns a pointer to the function or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 /* Variable declaration */
@@ -46,7 +46,7 @@ if (myFancyFunction != NULL) {
 } else {
     /* Error handling here */
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function pointer is no longer valid after calling [[SDL_UnloadObject]]().

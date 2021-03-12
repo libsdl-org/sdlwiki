@@ -74,11 +74,11 @@ See the [[SDL1.2Tutorials#Setup|SDL and MYSYS/MinGW]] Tutorial
 ==== I get "Undefined reference to 'SDL_main'" ... ====
 Make sure that you are declaring main() as:
 
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 int main(int argc, char *argv[])
-```
+</syntaxhighlight>
 
 You should be using main() instead of WinMain() even though you are creating a Windows application, because SDL provides a version of !WinMain() which performs some SDL initialization before calling your main code. If for some reason you need to use !WinMain(), take a look at the SDL source code in src/main/win32/SDL_main.c to see what kind of initialization you need to do in your !WinMain() function so that SDL works properly.
 
@@ -93,10 +93,10 @@ If you're getting undefined references to functions in SDL_image or SDL_mixer, m
 
 ==== Why doesn't SDL_WM_ToggleFullScreen() work on Windows? ====
 The semantics of SDL_WM_!ToggleFullScreen() are that switching between fullscreen and windowed mode is transparent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
-```c++
+<syntaxhighlight lang='c++'>
 flags ^= SDL_FULLSCREEN;
 screen = SDL_SetVideoMode(..., flags);
-```
+</syntaxhighlight>
 
 ==== How do I avoid creating stdout.txt and stderr.txt? ====
 <!-- #Seen here: -->

@@ -4,12 +4,12 @@ Use this function to get the additional color value multiplied into render copy 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetTextureColorMod(SDL_Texture* texture,
                            Uint8*       r,
                            Uint8*       g,
                            Uint8*       b)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,9 +30,9 @@ int SDL_GetTextureColorMod(SDL_Texture* texture,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

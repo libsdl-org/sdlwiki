@@ -43,9 +43,9 @@ A structure that contains mouse button event information.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP is reported.  You would access it through the event's <code>button</code> field.

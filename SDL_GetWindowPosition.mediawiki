@@ -4,11 +4,11 @@ Use this function to get the position of a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_GetWindowPosition(SDL_Window* window,
                            int*        x,
                            int*        y)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ void SDL_GetWindowPosition(SDL_Window* window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 If you do not need the value for one of the positions a NULL may be passed in the '''x''' or '''y''' parameter.

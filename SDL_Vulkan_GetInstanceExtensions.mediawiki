@@ -9,11 +9,11 @@ Use this function to get the names of the Vulkan instance extensions needed to c
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window* window,
                                           unsigned int* pCount,
                                           const char** pNames);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -33,7 +33,7 @@ Returns ```SDL_TRUE``` on success, {{{SDL_FALSE}}} on error.
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Note: This sample uses C++17 features/syntax.
 // Get the required extension count
 unsigned int count;
@@ -54,7 +54,7 @@ create_info.ppEnabledExtensionNames = extensions.data();
 
 VkInstance instance;
 VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
-```
+</syntaxhighlight>
 
 
 == Remarks ==

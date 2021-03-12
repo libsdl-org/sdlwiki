@@ -4,17 +4,17 @@ Use this function to clear the list of all assertion failures.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_ResetAssertionReport(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_assert(1+1 == 3);  // trigger an assertion.
 printf("%p\n", SDL_GetAssertionReport());  // not NULL.
 SDL_ResetAssertionReport();
 printf("%p\n", SDL_GetAssertionReport());  // NULL.
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function will clear the list of all assertions triggered up to that point. Immediately following this call, [[SDL_GetAssertionReport]] will return no items. In addition, any previously-triggered assertions will be reset to a trigger_count of zero, and their always_ignore state will be false.

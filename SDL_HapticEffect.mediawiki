@@ -36,9 +36,9 @@ A union that contains the generic template for any haptic effect.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 All structures in this union contain the following common parts:

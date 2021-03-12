@@ -6,9 +6,9 @@ Use this function to get the implementation-dependent GUID for the joystick at a
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_JoystickGUID SDL_JoystickGetDeviceGUID(int device_index)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -23,9 +23,9 @@ Returns the GUID of the selected joystick.  If called on an invalid index, this 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==

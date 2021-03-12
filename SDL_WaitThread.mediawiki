@@ -4,10 +4,10 @@ Use this function to wait for a thread to finish.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_WaitThread(SDL_Thread* thread,
                     int*        status)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''thread''' 
@@ -18,7 +18,7 @@ void SDL_WaitThread(SDL_Thread* thread,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include <stdio.h>
 #include "SDL_thread.h"
 #include "SDL_timer.h"
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 

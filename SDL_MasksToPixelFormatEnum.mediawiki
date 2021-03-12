@@ -4,13 +4,13 @@ Use this function to convert a bpp value and RGBA masks to an enumerated pixel f
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_MasksToPixelFormatEnum(int    bpp,
                                   Uint32 Rmask,
                                   Uint32 Gmask,
                                   Uint32 Bmask,
                                   Uint32 Amask)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -35,9 +35,9 @@ Returns one of the following [[SDL_PixelFormatEnum]] values:
 <<Include(SDL_PixelFormatEnum, , , from="Start Include here.", to="##End Include here.")>>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

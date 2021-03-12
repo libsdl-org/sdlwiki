@@ -4,9 +4,9 @@ Use this function to get an OpenGL function by name.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_GL_GetProcAddress(const char* proc)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ void* SDL_GL_GetProcAddress(const char* proc)
 Returns a pointer to the named OpenGL function.  The returned pointer should be cast to the appropriate function signature.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 typedef void (APIENTRY * GL_ActiveTextureARB_Func)(unsigned int);
 GL_ActiveTextureARB_Func glActiveTextureARB_ptr = 0;
 
@@ -27,7 +27,7 @@ glActiveTextureARB_ptr=(GL_ActiveTextureARB_Func) SDL_GL_GetProcAddress("glActiv
 
 /* It was your responsibility to make sure this was a valid function to call! */
 glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
-```
+</syntaxhighlight>
 
 == Remarks ==
 If the GL library is loaded at runtime with [[SDL_GL_LoadLibrary]](), then all GL functions must be retrieved this way. Usually this is used to retrieve function pointers to OpenGL extensions.

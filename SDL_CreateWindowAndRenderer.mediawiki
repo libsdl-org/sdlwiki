@@ -6,13 +6,13 @@ Use this function to create a window and default renderer.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_CreateWindowAndRenderer(int            width,
                                 int            height,
                                 Uint32         window_flags,
                                 SDL_Window**   window,
                                 SDL_Renderer** renderer)
-```
+</syntaxhighlight>
 
 
 
@@ -41,7 +41,7 @@ Returns 0 on success, or -1 on error; call [[SDL_GetError]]() for more informati
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 int main(int argc, char *argv[])
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

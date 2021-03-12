@@ -23,9 +23,9 @@ An enumeration of assertion handling states.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This enumeration is returned by the callback function in [[SDL_SetAssertionHandler]]() to determine the response to failed assertions.  

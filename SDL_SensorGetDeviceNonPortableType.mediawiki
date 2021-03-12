@@ -6,9 +6,9 @@ This can be called before any sensors are opened.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SensorGetDeviceNonPortableType(int device_index);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

@@ -4,12 +4,12 @@ This function is a legacy means of locking the audio device. New programs might 
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LockAudio(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
     printf("The audio callback is running!\n");
@@ -25,14 +25,14 @@ SDL_Delay(2000);  // callback doesn't run for 2 seconds.
 printf("Ok, unlocking!\n");
 SDL_UnlockAudio();
 SDL_Delay(2000);  // callback runs for 2 seconds.
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is equivalent to calling
 
-```c++
+<syntaxhighlight lang='c++'>
 SDL_LockAudioDevice(1);
-```
+</syntaxhighlight>
 
 and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 

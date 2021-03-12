@@ -4,10 +4,10 @@ Use this function to set a pointer to a value atomically.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_AtomicSetPtr(void** a,
                        void*  v)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ void* SDL_AtomicSetPtr(void** a,
 Returns the previous value of the pointer.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -31,11 +31,11 @@ The SDL application hence can be ported to the web browser without any code chan
 == Code Examples ==
 
 To disable the default behavior:  
-```c++
+<syntaxhighlight lang='c++'>
 SDL_SetHint(SDL_HINT_EMSCRIPTEN_ASYNCIFY, "0");
 //...
 SDL_Init(SDL_INIT_EVERYTHING);
-```
+</syntaxhighlight>
 
 With the default ```SDL_HINT_EMSCRIPTEN_ASYNCIFY=1```, to optimize performance, you'll typically want to make asyncify only instrument functions in the call path:
 ```

@@ -5,11 +5,11 @@ Use this function to get the size of the window's underlying drawable dimensions
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
                                 int* w,
                                 int* h);
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -25,7 +25,7 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // may instead choose to use std::clamp() in C++17
 #define CLAMP(x, lo, hi)    ((x) < (lo) ? (lo) : (x) > (hi) ? (hi) : (x))
 
@@ -56,7 +56,7 @@ height = CLAMP(height, capabilities.minImageExtent.height, capabilities.maxImage
 // ...
 
 // vkCreateSwapchainKHR(...);
-```
+</syntaxhighlight>
 
 
 

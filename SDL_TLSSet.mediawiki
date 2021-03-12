@@ -11,11 +11,11 @@ Use this function to set the value associated with a thread local storage ID for
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_TLSSet(SDL_TLSID   id,
                const void* value,
                void (*destructor)(void*))
-```
+</syntaxhighlight>
 
 <!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
 
@@ -38,18 +38,18 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 
 == Remarks ==
 The function prototype for '''destructor''' is:
- ```c++
+ <syntaxhighlight lang='c++'>
 void destructor(void* value)
-```
+</syntaxhighlight>
 : where its parameter is:
  ||<code>value</code>||what was passed as '''value''' to [[SDL_TLSSet]]()||
 

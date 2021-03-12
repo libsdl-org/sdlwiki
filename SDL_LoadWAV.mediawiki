@@ -4,12 +4,12 @@ Use this function to load a WAVE from a file.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioSpec* SDL_LoadWAV(const char*    file,
                            SDL_AudioSpec* spec,
                            Uint8**        audio_buf,
                            Uint32*        audio_len)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,7 +30,7 @@ SDL_AudioSpec* SDL_LoadWAV(const char*    file,
 <<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples")>>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioSpec wav_spec;
 Uint32 wav_length;
 Uint8 *wav_buffer;
@@ -42,7 +42,7 @@ if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
     /* Do stuff with the WAV data, and then... */
     SDL_FreeWAV(wav_buffer);
 }
-```
+</syntaxhighlight>
 
 
 == Remarks ==

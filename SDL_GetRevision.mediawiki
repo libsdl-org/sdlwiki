@@ -4,17 +4,17 @@ Use this function to get the code revision of SDL that is linked against your pr
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetRevision(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns an arbitrary string, uniquely identifying the exact revision of the SDL library in use.  
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <<Include(SDL_REVISION, , , from="Start Include here.", to="##End Include here")>>

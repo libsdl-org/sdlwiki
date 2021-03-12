@@ -4,11 +4,11 @@ Use this function to copy areas of the window surface to the screen.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
                            const SDL_Rect*   rects,
                                  int         numrects)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is the function you use to reflect changes to portions of the surface on the screen. 

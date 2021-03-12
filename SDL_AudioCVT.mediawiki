@@ -51,7 +51,7 @@ A structure that contains audio data conversion information.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Change 1024 stereo sample frames at 48000Hz from float32 to int16.
 SDL_AudioCVT cvt;
 SDL_BuildAudioCVT(&cvt, AUDIO_F32, 2, 48000, AUDIO_S16, 2, 48000);
@@ -61,7 +61,7 @@ cvt.buf = (Uint8 *) SDL_malloc(cvt.len * cvt.len_mult);
 // read your float32 data into cvt.buf here.
 SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
-```
+</syntaxhighlight>
 
 == Remarks ==
 The [[SDL_AudioCVT]] structure is used to convert audio data between different formats. An [[SDL_AudioCVT]] structure is initialized with the [[SDL_BuildAudioCVT]]() function, while the actual conversion is done by the [[SDL_ConvertAudio]]() function, once the application has set up appropriately-sized buffers between these two function calls.

@@ -4,9 +4,9 @@ Use this function to update the screen with any rendering performed since the pr
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_RenderPresent(SDL_Renderer* renderer)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|

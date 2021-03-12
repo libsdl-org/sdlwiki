@@ -9,9 +9,9 @@ Use this function to check whether a,,n,, ^specific^ input device is disconnecte
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_IsDeviceDisconnected(int index)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -25,9 +25,9 @@ Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_Ge
 <span style="color: green;">Can't find reference for values. Need source. Error state for this one?</span>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

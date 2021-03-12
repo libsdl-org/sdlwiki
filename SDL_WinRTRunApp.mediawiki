@@ -10,10 +10,10 @@ Use this function to initialize and launch an SDL/WinRT application.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_WinRTRunApp(MainFunction mainFunction
                     void*        reserved)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -31,9 +31,9 @@ Returns 0 on success or -1 on failure; call [[SDL_GetError]]() to retrieve more 
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
@@ -41,9 +41,9 @@ You can add your code example here
 == Remarks ==
 The function prototype for '''mainFunction''' is:
 
-```c++
+<syntaxhighlight lang='c++'>
 int MainFunction(int argc, char **argv)
-```
+</syntaxhighlight>
 : where its parameters are:
  ||<code>argc</code> ||the number of arguments ||
  ||<code>argv</code> ||an array of arguments ||

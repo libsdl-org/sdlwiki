@@ -4,10 +4,10 @@ Use this function to get the current log output function.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_LogGetOutputFunction(SDL_LogOutputFunction* callback,
                               void**                 userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,18 +19,18 @@ void SDL_LogGetOutputFunction(SDL_LogOutputFunction* callback,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The function prototype for '''callback''' is:
- ```c++
+ <syntaxhighlight lang='c++'>
 void SDL_LogOutputFunction(void*           userdata,
                            int             category,
                            SDL_LogPriority priority,
                            const char*     message)
-```
+</syntaxhighlight>
 : where its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
  ||<code>category</code>||the category of the message; see [[#category|Remarks]] for details||

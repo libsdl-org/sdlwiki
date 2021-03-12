@@ -23,7 +23,7 @@ A structure that contains an event used to request a file open by the system.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // Example program:
 // SDL_DropEvent usage
 
@@ -87,7 +87,7 @@ int main(int argc, char *argv[]) {
     SDL_Quit();                       // Clean up
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_DropEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, or SDL_DROPCOMPLETE is reported.  You would access it through the event's <code>drop</code> field.

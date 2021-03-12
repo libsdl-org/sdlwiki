@@ -5,14 +5,14 @@ Use this function to compose a custom blend mode for renderers.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor    srcColorFactor,
                                          SDL_BlendFactor    dstColorFactor,
                                          SDL_BlendOperation colorOperation,
                                          SDL_BlendFactor    srcAlphaFactor,
                                          SDL_BlendFactor    dstAlphaFactor,
                                          SDL_BlendOperation alphaOperation)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -41,9 +41,9 @@ Returns an [[SDL_BlendMode]] that represents the chosen factors and operations.
 
 == Code Examples ==
 
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 

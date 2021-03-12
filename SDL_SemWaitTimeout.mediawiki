@@ -4,10 +4,10 @@ Use this function to wait until a semaphore has a positive value and then decrem
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SemWaitTimeout(SDL_sem* sem,
                        Uint32   ms)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,7 +22,7 @@ int SDL_SemWaitTimeout(SDL_sem* sem,
 Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait does not succeed in the allotted time, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_atomic_t done;
 SDL_sem *sem;
 
@@ -51,7 +51,7 @@ SDL_AtomicSet(&done, 1);
 SDL_SemPost(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value, the call is interrupted by a signal or error, or the specified time has elapsed. If the call is successful it will atomically decrement the semaphore value.

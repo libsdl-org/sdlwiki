@@ -31,7 +31,7 @@ A structure that contains an application-defined event type.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 myEventType = SDL_RegisterEvents(1);
 if (myEventType != ((Uint32)-1)) {
     SDL_Event event;
@@ -42,7 +42,7 @@ if (myEventType != ((Uint32)-1)) {
     event.user.data2 = 0;
     SDL_PushEvent(&event);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_UserEvent]] is in the '''user''' member of the [[SDL_Event]] union. This event is unique; it is never created by SDL but only by the application. The event can be pushed onto the event queue using [[SDL_PushEvent]](). The contents of the structure members are completely up to the programmer; the only requirement is that '''type''' is a value obtained from [[SDL_RegisterEvents]]().

@@ -4,7 +4,7 @@ Use this function to copy a block of pixels of one format to another format.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ConvertPixels(int         width,
                       int         height,
                       Uint32      src_format,
@@ -13,7 +13,7 @@ int SDL_ConvertPixels(int         width,
                       Uint32      dst_format,
                       void*       dst,
                       int         dst_pitch)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -46,9 +46,9 @@ int SDL_ConvertPixels(int         width,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''src_format''' and '''dst_format''' may each be one of the following [[SDL_PixelFormatEnum]] values:

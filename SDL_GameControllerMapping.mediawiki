@@ -10,9 +10,9 @@ Use this function to get the current mapping of a Game Controller.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 char* SDL_GameControllerMapping(SDL_GameController* gamecontroller)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -26,7 +26,7 @@ char* SDL_GameControllerMapping(SDL_GameController* gamecontroller)
 Returns a string that has the controller's mapping or NULL if no mapping is available; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 
 /* ... */
@@ -48,7 +48,7 @@ for (i = 0; i < SDL_NumJoysticks(); ++i) {
         SDL_Log("Index \'%i\' is not a compatible controller.", i);
     }
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 The returned string must be freed with SDL_free().

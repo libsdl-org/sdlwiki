@@ -10,9 +10,9 @@ Use this macro to get the size of the data stream in an [[SDL_RWops]].
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Sint64 SDL_RWsize(SDL_RWops* context)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -27,9 +27,9 @@ Returns the size of the data stream in the [[SDL_RWops]] on success, -1 if unkno
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

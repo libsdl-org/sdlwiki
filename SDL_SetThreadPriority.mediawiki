@@ -4,9 +4,9 @@ Use this function to set the priority for the current thread.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_SetThreadPriority(SDL_ThreadPriority priority)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ int SDL_SetThreadPriority(SDL_ThreadPriority priority)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 '''priority''' may be one of the following:

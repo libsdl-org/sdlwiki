@@ -4,9 +4,9 @@ Use this function to close and free an allocated [[SDL_RWops]] structure.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RWclose(struct SDL_RWops* context)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_RWclose(struct SDL_RWops* context)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint8 buf[256];
 SDL_RWops *rw = SDL_RWFromFile("test.bin", "r");
 if (rw != NULL) {
@@ -26,7 +26,7 @@ if (rw != NULL) {
     SDL_RWclose(rw);
 }
 // Go on and use the data in buf...
-```
+</syntaxhighlight>
 
 == Remarks ==
 SDL_RWclose() closes and cleans up the [[SDL_RWops]] stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).

@@ -5,10 +5,10 @@ Use this function to get the current state of a button on a joystick.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
                             int           button)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
 Returns 1 if the specified button is pressed, 0 otherwise.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

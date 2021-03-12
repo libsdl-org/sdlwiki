@@ -4,10 +4,10 @@ Use this function to set a window's input grab mode.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetWindowGrab(SDL_Window* window,
                        SDL_bool    grabbed)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_SetWindowGrab(SDL_Window* window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 When input is grabbed the mouse is confined to the window.

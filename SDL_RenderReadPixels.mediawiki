@@ -4,13 +4,13 @@ Use this function to read pixels from the current rendering target to an array o
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderReadPixels(SDL_Renderer*   renderer,
                          const SDL_Rect* rect,
                          Uint32          format,
                          void*           pixels,
                          int             pitch)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -34,9 +34,9 @@ int SDL_RenderReadPixels(SDL_Renderer*   renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 /!\ WARNING: This is a very slow operation, and should not be used frequently.

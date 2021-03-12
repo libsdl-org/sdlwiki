@@ -4,12 +4,12 @@ Use this function to shut down audio if you initialized it with [[SDL_AudioInit]
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_AudioQuit(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 int i;
 
 for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
@@ -20,7 +20,7 @@ for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
     }
     SDL_AudioQuit();
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is used internally, and should not be used unless you have a specific need to specify the audio driver you want to use. You should normally use [[SDL_Quit]]() or [[SDL_QuitSubSystem]](). 

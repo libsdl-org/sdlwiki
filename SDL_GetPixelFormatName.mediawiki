@@ -4,9 +4,9 @@ Use this function to get the human readable name of a pixel format.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const char* SDL_GetPixelFormatName(Uint32 format)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,14 +18,14 @@ const char* SDL_GetPixelFormatName(Uint32 format)
 Returns the human readable name of the specified pixel format or <code>"SDL_PIXELFORMAT_UNKNOWN"</code> if the format isn't recognized.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* surface = ...; // a valid surface from wherever.
 SDL_PixelFormat* pixelFormat = surface->format;
 Uint32 pixelFormatEnum = pixelFormat->format;
 const char* surfacePixelFormatName = SDL_GetPixelFormatName(pixelFormatEnum);
 SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
 // prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

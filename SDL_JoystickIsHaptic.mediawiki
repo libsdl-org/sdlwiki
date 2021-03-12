@@ -5,9 +5,9 @@ Use this function to check to see if a joystick has haptic features.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_JoystickIsHaptic(SDL_Joystick* joystick)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ int SDL_JoystickIsHaptic(SDL_Joystick* joystick)
 Returns SDL_TRUE if the joystick is haptic, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

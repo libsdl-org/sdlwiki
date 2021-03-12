@@ -4,9 +4,9 @@ Use this function to get the value of a pointer atomically.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void* SDL_AtomicGetPtr(void** a)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ void* SDL_AtomicGetPtr(void** a)
 Returns the current value of a pointer.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

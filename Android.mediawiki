@@ -81,7 +81,7 @@ android {
 
 Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
 
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include "SDL_image.h"
 
@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
   SDL_Quit();
   return(0);
 }
-```
+</syntaxhighlight>
 
 Then let's make an Android app out of it. To compile: ```
 cd /usr/src/SDL2/build-scripts/

@@ -4,10 +4,10 @@ Use this function to set the title of a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetWindowTitle(SDL_Window* window,
                         const char* title)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,7 +19,7 @@ void SDL_SetWindowTitle(SDL_Window* window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 // dynamically setting a window title
 
 #include "SDL.h"
@@ -61,7 +61,7 @@ int main(int argc, char* argv[]){
   return 0;
 
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

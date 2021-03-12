@@ -23,9 +23,9 @@ A structure that represents a color.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_Color]] and SDL_Colour are interchangeable.

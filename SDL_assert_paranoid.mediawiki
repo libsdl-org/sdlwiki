@@ -4,9 +4,9 @@ Use this function to create an assertion for detailed checking.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_assert_paranoid(condition)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_assert_paranoid(condition)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is disabled by default.  It is available for use only when the SDL_ASSERT_LEVEL is set to 3.  See the [[CategoryAssertions|Assertions Category page]] for details.

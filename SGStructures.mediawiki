@@ -661,9 +661,9 @@ callback syntax
 }}}}
 : to display
 The function prototype for '''callback''' is:
- ```c++
+ <syntaxhighlight lang='c++'>
 callback syntax
-```
+</syntaxhighlight>
 : where its parameters are:
  ||<code>callback parameter</code>||description||
 : optional return value info...

@@ -5,10 +5,10 @@ Use this function to set the global autocenter of the device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticSetAutocenter(SDL_Haptic* haptic,
                             int         autocenter)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ int SDL_HapticSetAutocenter(SDL_Haptic* haptic,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Autocenter should be between 0 and 100. Setting it to 0 will disable autocentering. <!-- <span style="color: green;">This is redundant w/ the FP section and could all be contained there (as shown). Should it be removed from here?</span> -->

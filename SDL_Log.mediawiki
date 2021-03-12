@@ -4,10 +4,10 @@ Use this function to log a message with SDL_LOG_CATEGORY_APPLICATION and SDL_LOG
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_Log(const char* fmt,
              ...)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_Log(const char* fmt,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

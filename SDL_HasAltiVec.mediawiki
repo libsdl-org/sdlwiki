@@ -4,17 +4,17 @@ Use this function to determine whether the CPU has Alti<code></code>Vec features
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_bool SDL_HasAltiVec(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns SDL_TRUE if the CPU has Alti<code></code>Vec features or SDL_FALSE if not.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

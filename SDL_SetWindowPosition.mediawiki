@@ -4,11 +4,11 @@ Use this function to set the position of a window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetWindowPosition(SDL_Window* window,
                            int         x,
                            int         y)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ void SDL_SetWindowPosition(SDL_Window* window,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The window coordinate origin is the upper left of the display.

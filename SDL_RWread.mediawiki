@@ -4,12 +4,12 @@ Use this function to read from a data source.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 size_t SDL_RWread(struct SDL_RWops* context,
                   void*             ptr,
                   size_t            size,
                   size_t            maxnum)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,17 +30,17 @@ size_t SDL_RWread(struct SDL_RWops* context,
 Returns the number of objects read, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
 if (rw != NULL) {
     extern Uint8 buf[256];
     SDL_RWread(rw, buf, sizeof (buf), 1);
     SDL_RWclose(rw);
 }
-```
+</syntaxhighlight>
 
 Read a complete file in memory (assuming size can be detected) (from [https://gitlab.com/wikibooks-opengl/modern-tutorials/blob/master/common-sdl2/shader_utils.cpp OpenGL WikiBook]):
-```c++
+<syntaxhighlight lang='c++'>
 char* file_read(const char* filename) {
 	SDL_RWops *rw = SDL_RWFromFile(filename, "rb");
 	if (rw == NULL) return NULL;
@@ -64,7 +64,7 @@ char* file_read(const char* filename) {
 	res[nb_read_total] = '\0';
 	return res;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function reads up to '''maxnum''' objects each of size '''size''' from the data source to the area pointed at by '''ptr'''. This function may read less objects than requested. It will return zero when there has been an error or the data stream is completely read.

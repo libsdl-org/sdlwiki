@@ -4,11 +4,11 @@ Use this function to fill some number of rectangles on the current rendering tar
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_RenderFillRects(SDL_Renderer*   renderer,
                         const SDL_Rect* rects,
                         int             count)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -26,9 +26,9 @@ int SDL_RenderFillRects(SDL_Renderer*   renderer,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

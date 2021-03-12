@@ -5,11 +5,11 @@ Use this function to create a new thread.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
                              const char*        name,
                              void*              data)
-```
+</syntaxhighlight>
 == Function Parameters ==
 {|
 |'''fn''' 
@@ -27,7 +27,7 @@ SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
 Returns an opaque pointer to the new thread object on success, NULL if the new thread could not be created; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include <stdio.h>
 #include "SDL.h"
 
@@ -63,8 +63,8 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
-```c++
+</syntaxhighlight>
+<syntaxhighlight lang='c++'>
 Output:
 Simple SDL_CreateThread test:
 Thread counter: 0
@@ -78,16 +78,16 @@ Thread counter: 7
 Thread counter: 8
 Thread counter: 9
 Thread returned value: 10
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_CreateThread]]() creates a new thread of execution that shares all of its parent's global memory, signal handlers, file descriptors, etc, and runs the function '''fn''', passing it the void pointer '''data'''.  The thread quits when '''fn''' returns.
 
 The function prototype for '''fn''' is:
 
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_ThreadFunction(void* data)
-```
+</syntaxhighlight>
 : where its parameter is:
  ||<code>data</code> ||what was passed as '''data''' to [[SDL_CreateThread]]() ||
 

@@ -4,13 +4,13 @@ Use this function to query the attributes of a texture.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_QueryTexture(SDL_Texture* texture,
                      Uint32*      format,
                      int*         access,
                      int*         w,
                      int*         h)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 
@@ -35,7 +35,7 @@ int SDL_QueryTexture(SDL_Texture* texture,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Texture* source;
 
 // loading etc ...
@@ -43,7 +43,7 @@ SDL_Texture* source;
 int w, h;
 SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 <span id="format"></span> '''format''' may be one of the following:

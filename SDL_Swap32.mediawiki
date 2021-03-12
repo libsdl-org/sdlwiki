@@ -4,9 +4,9 @@ Use this function to swap the byte order of a 32-bit value.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_Swap32(Uint32 x)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ Uint32 SDL_Swap32(Uint32 x)
 Returns the swapped value.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

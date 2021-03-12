@@ -4,9 +4,9 @@ Use this function to wait a specified number of milliseconds before returning.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_Delay(Uint32 ms)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_Delay(Uint32 ms)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 

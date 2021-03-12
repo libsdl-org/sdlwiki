@@ -59,9 +59,9 @@ An enumeration of key modifier masks.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 These may be OR'd together.

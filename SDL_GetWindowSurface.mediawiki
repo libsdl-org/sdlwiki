@@ -4,9 +4,9 @@ Use this function to get the SDL surface associated with the window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
 Returns the surface associated with the window, or NULL on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h" // include SDL header
 
 int main(int argc, char* argv[])
@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
     SDL_Quit();
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 A new surface will be created with the optimal format for the window, if necessary. This surface will be freed when the window is destroyed. Do not free this surface.

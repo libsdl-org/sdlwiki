@@ -4,9 +4,9 @@ Use this function to initialize the video subsystem, optionally specifying a vid
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_VideoInit(const char* driver_name)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,7 +18,7 @@ int SDL_VideoInit(const char* driver_name)
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <stdio.h> /* for printf() */
 #include <stdlib.h> /* for atexit() */
@@ -49,7 +49,7 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function initializes the video subsystem, setting up a connection to the window manager, etc, and determines the available display modes and pixel formats, but does not initialize a window or graphics mode.

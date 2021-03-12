@@ -9,9 +9,9 @@ Use this function to convert a string into an enum representation for an [[SDL_G
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char* pchString)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -26,9 +26,9 @@ Returns the [[SDL_GameControllerAxis]] enum corresponding to the input string, o
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 <!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 

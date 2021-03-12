@@ -5,10 +5,10 @@ Use this function to create a new haptic effect on a specified device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticNewEffect(SDL_Haptic*       haptic,
                         SDL_HapticEffect* effect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ int SDL_HapticNewEffect(SDL_Haptic*       haptic,
 Returns the ID of the effect on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

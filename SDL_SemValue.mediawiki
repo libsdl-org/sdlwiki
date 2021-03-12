@@ -4,9 +4,9 @@ Use this function to get the current value of a semaphore.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_SemValue(SDL_sem* sem)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ Uint32 SDL_SemValue(SDL_sem* sem)
 Returns the current value of the semaphore.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

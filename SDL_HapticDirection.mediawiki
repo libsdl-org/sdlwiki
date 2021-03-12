@@ -18,7 +18,7 @@ A structure that contains a haptic direction. <!-- <span style="color: green;">D
 
 == Code Examples ==
 Example of force coming from the south with all encodings (force coming from the south means the user will have to pull the stick to counteract):
-```c++
+<syntaxhighlight lang='c++'>
 SDL_HapticDirection direction;
 
 // Cartesian directions
@@ -34,7 +34,7 @@ direction.dir[0] = 18000; // Polar only uses first parameter
 // Spherical coordinates
 direction.type = SDL_HAPTIC_SPHERICAL; // Spherical encoding
 direction.dir[0] = 9000; // Since we only have two axes we don't need more parameters.
-```
+</syntaxhighlight>
 
 == Remarks ==
 This is the direction where the force comes from, instead of the direction in which the force is exerted.

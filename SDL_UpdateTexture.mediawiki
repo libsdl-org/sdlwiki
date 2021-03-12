@@ -4,12 +4,12 @@ Use this function to update the given texture rectangle with new pixel data.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_UpdateTexture(SDL_Texture*    texture,
                       const SDL_Rect* rect,
                       const void*     pixels,
                       int             pitch)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,9 +30,9 @@ int SDL_UpdateTexture(SDL_Texture*    texture,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 The pixel data must be in the pixel format of the texture. Use [[SDL_QueryTexture]]() to query the pixel format of the texture.

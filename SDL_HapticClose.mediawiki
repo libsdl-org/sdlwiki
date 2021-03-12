@@ -5,9 +5,9 @@ Use this function to close a haptic device previously opened with [[SDL_HapticOp
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_HapticClose(SDL_Haptic* haptic)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -16,9 +16,9 @@ void SDL_HapticClose(SDL_Haptic* haptic)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

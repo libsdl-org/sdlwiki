@@ -5,9 +5,9 @@ Use this function to check whether rumble is supported on a haptic device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticRumbleSupported(SDL_Haptic* haptic)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,14 +19,14 @@ int SDL_HapticRumbleSupported(SDL_Haptic* haptic)
 Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 extern SDL_Haptic* dev;
 if (SDL_HapticRumbleSupported(dev)) {
     SDL_HapticRumbleInit(dev);
     SDL_HapticRumblePlay(dev, 1.0f, 3000);
     SDL_Delay(3000);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

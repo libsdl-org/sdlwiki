@@ -4,16 +4,16 @@ Use this function to get a list of all assertion failures.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 const SDL_AssertData* SDL_GetAssertionReport(void)
-```
+</syntaxhighlight>
 
 == Return Value ==
 Returns a list of all failed assertions or NULL if the list is empty. This memory should not be modified or freed by the application.
 
 == Code Examples ==
 The proper way to examine this data looks something like this:
-```c++
+<syntaxhighlight lang='c++'>
 const SDL_AssertData *item = SDL_GetAssertionReport();
 while (item) {
      printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\n",
@@ -22,7 +22,7 @@ while (item) {
           item->always_ignore ? "yes" : "no");
      item = item->next;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function gets all assertions triggered since the last call to [[SDL_ResetAssertionReport]](), or the start of the program.

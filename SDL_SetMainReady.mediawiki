@@ -12,12 +12,12 @@ Use this function to circumvent failure of [[SDL_Init]]() when not using SDL_mai
 <!-- #Replace SDL_Function with the name of the function and ****** with a short description of the function according to the Style Guide, then delete this comment. -->
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetMainReady(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #define SDL_MAIN_HANDLED
 #include "SDL.h"
 
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
+</syntaxhighlight>
 == Remarks ==
 This function is defined in SDL_main.h, along with the preprocessor rule to redefine main() as SDL_main().  Thus to ensure that your main() function will not be changed it is necessary to define SDL_MAIN_HANDLED before including SDL.h.
 

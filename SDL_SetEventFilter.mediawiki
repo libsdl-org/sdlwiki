@@ -4,10 +4,10 @@ Use this function to set up a filter to process all events before they change in
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_SetEventFilter(SDL_EventFilter filter,
                         void*           userdata)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,18 +19,18 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 <!-- #The following is included on SDL_AddEventWatch and SDL_DelEventWatch.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start Include here. -->
 
 The function prototype for '''filter''' is:
-```c++
+<syntaxhighlight lang='c++'>
 int YourEventFilter(void*      userdata,
                     SDL_Event* event)
-```
+</syntaxhighlight>
 <!-- #End Include here -->
 : where <code>YourEventFilter</code> is the name of your function and its parameters are:
  ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_SetEventFilter]]()||

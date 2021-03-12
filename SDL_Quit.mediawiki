@@ -4,12 +4,12 @@ Use this function to clean up all initialized subsystems.  You should call it up
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_Quit(void)
-```
+</syntaxhighlight>
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 You should call this function even if you have already shutdown each initialized subsystem with [[SDL_QuitSubSystem]](). It is safe to call this function even in the case of errors in initialization.

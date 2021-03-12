@@ -4,10 +4,10 @@ Use this function to get information about the current display mode.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetCurrentDisplayMode(int              displayIndex,
                               SDL_DisplayMode* mode)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,7 +22,7 @@ int SDL_GetCurrentDisplayMode(int              displayIndex,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 // Using SDL2's SDL_GetCurrentDisplayMode()
 
@@ -58,7 +58,7 @@ int main(int argc, char* argv[])
 
 }
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 There's a difference between this function and [[SDL_GetDesktopDisplayMode]]() when SDL runs fullscreen and has changed the resolution. In that case this function will return the current display mode, and not the previous native display mode.

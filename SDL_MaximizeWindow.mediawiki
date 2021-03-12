@@ -4,9 +4,9 @@ Use this function to make a window as large as possible.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_MaximizeWindow(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -15,9 +15,9 @@ void SDL_MaximizeWindow(SDL_Window* window)
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

@@ -4,12 +4,12 @@ Use this function to map an RGB triple to an opaque pixel value for a given pixe
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_MapRGB(const SDL_PixelFormat* format,
                   Uint8                  r, 
                   Uint8                  g, 
                   Uint8                  b)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -30,9 +30,9 @@ Uint32 SDL_MapRGB(const SDL_PixelFormat* format,
 Returns a pixel value; see [[#Remarks|Remarks]] for details.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function maps the RGB color value to the specified pixel format and returns the pixel value best approximating the given RGB color value for the given pixel format.

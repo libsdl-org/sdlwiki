@@ -5,11 +5,11 @@ Use this function to copy an existing surface into a new one that is optimized f
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Surface* SDL_ConvertSurface(SDL_Surface*           src,
                                 const SDL_PixelFormat* fmt,
                                 Uint32                 flags)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -28,14 +28,14 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface*           src,
 Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 // SDL_Surface *input = ...;
 SDL_PixelFormat *format = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA32);
 SDL_Surface *output = SDL_ConvertSurface(input, format, 0);
 SDL_FreeFormat(format);
 
-```
+</syntaxhighlight>
 
 == Remarks ==
 This function is used to optimize images for faster ''repeat'' blitting.  This is accomplished by converting the original and storing the result as a new surface. The new, optimized surface can then be used as the source for future blits, making them faster.

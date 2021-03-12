@@ -4,10 +4,10 @@ Use this function to get the drawing area for the current target.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_RenderGetViewport(SDL_Renderer* renderer,
                            SDL_Rect*     rect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -19,9 +19,9 @@ void SDL_RenderGetViewport(SDL_Renderer* renderer,
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

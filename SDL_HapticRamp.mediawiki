@@ -76,9 +76,9 @@ A structure that contains a template for a ramp effect.
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 This struct is exclusively for the SDL_HAPTIC_RAMP effect.

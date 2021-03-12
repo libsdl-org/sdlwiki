@@ -5,10 +5,10 @@ Use this function to get the status of the current effect on the specified hapti
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
                               int         effect)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -23,9 +23,9 @@ int SDL_HapticGetEffectStatus(SDL_Haptic* haptic,
 Returns 0 if it isn't playing, 1 if it is playing, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 Device must support the SDL_HAPTIC_STATUS feature.

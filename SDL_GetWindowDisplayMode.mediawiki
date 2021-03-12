@@ -4,10 +4,10 @@ Use this function to fill in information about the display mode to use when a wi
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 int SDL_GetWindowDisplayMode(SDL_Window*      window,
                              SDL_DisplayMode* mode)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -22,9 +22,9 @@ int SDL_GetWindowDisplayMode(SDL_Window*      window,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.   
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

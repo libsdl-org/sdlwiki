@@ -4,13 +4,13 @@ Use this function to open a specific audio device.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_AudioDeviceID SDL_OpenAudioDevice(const char*          device,
                                       int                  iscapture,
                                       const SDL_AudioSpec* desired,
                                       SDL_AudioSpec*       obtained,
                                       int                  allowed_changes)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -36,7 +36,7 @@ Returns a valid device ID that is > 0 on success or 0 on failure; call [[SDL_Get
 For compatibility with SDL 1.2, this will never return 1, since SDL reserves that ID for the legacy [[SDL_OpenAudio|SDL_OpenAudio]]() function.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
@@ -59,7 +59,7 @@ if (dev == 0) {
     SDL_Delay(5000); /* let the audio callback play some sound for 5 seconds. */
     SDL_CloseAudioDevice(dev);
 }
-```
+</syntaxhighlight>
 
 == Remarks ==
 [[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As such, this function will never return a 1 so as not to conflict with the legacy function.

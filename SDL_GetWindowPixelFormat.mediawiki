@@ -4,9 +4,9 @@ Use this function to get the pixel format associated with the window.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 Uint32 SDL_GetWindowPixelFormat(SDL_Window* window)
-```
+</syntaxhighlight>
 
 == Function Parameters ==
 {|
@@ -18,9 +18,9 @@ Uint32 SDL_GetWindowPixelFormat(SDL_Window* window)
 Returns the pixel format of the window on success or SDL_PIXELFORMAT_UNKNOWN on failure; call [[SDL_GetError]]() for more information.
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 == Remarks ==
 ''You can add useful comments here''

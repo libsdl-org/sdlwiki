@@ -23,7 +23,7 @@ A structure that contains the definition of a rectangle, with the origin at the 
 |}
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 SDL_Rect srcrect;
 SDL_Rect dstrect;
 
@@ -37,7 +37,7 @@ dstrect.w = 32;
 dstrect.h = 32;
 
 SDL_BlitSurface(src, &srcrect, dst, &dstrect);
-```
+</syntaxhighlight>
 
 == Remarks ==
 An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.

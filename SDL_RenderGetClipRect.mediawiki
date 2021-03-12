@@ -9,10 +9,10 @@ Use this function to get the clip rectangle for the current target.
 
 
 == Syntax ==
-```c++
+<syntaxhighlight lang='c++'>
 void SDL_RenderGetClipRect(SDL_Renderer* renderer,
                            SDL_Rect*     rect)
-```
+</syntaxhighlight>
 
 
 == Function Parameters ==
@@ -26,9 +26,9 @@ void SDL_RenderGetClipRect(SDL_Renderer* renderer,
 
 
 == Code Examples ==
-```c++
+<syntaxhighlight lang='c++'>
 You can add your code example here
-```
+</syntaxhighlight>
 
 
 == Remarks ==
