@@ -23,5 +23,3 @@ This function is available in SDL 2.0.8
 
 ----
 [[CategoryAPI]], [[CategoryVulkan]]
-----
-CategoryVulkan

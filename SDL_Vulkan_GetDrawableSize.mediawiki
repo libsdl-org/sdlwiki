@@ -79,5 +79,3 @@ This function is available in SDL 2.0.8
 ----
 [[CategoryAPI]], [[CategoryVulkan]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
-----
-CategoryVulkan

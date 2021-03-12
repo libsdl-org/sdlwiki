@@ -56,5 +56,3 @@ You can add your code example here
 ----
 [[CategoryStruct]], [[CategoryHeader]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
-----
-CategoryGameController
