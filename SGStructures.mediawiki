@@ -61,7 +61,7 @@ The Title section consists of the page heading and its markup:
 
 For structure pages this is the name of the structure being described on the page and should match the address of the page.
 
-''Example'': The page address ```http://wiki.libsdl.org/moin.cgi/SDL_PixelFormat``` should have matching title {{{SDL_PixelFormat}}} and describe the [[SDL_PixelFormat]] structure.
+''Example'': The page address ```https://wiki.libsdl.org/SDL_PixelFormat``` should have matching title {{{SDL_PixelFormat}}} and describe the [[SDL_PixelFormat]] structure.
 
 If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 

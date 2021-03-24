@@ -15,17 +15,17 @@ If a page can be edited you will see two options to choose from in the left colu
  1. <span color="blue">Edit (Text)</span>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
  {i} Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.<br/>
- For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
+ For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [https://wiki.libsdl.org/HelpOnEditing wiki help documentation].
 
  1. <span color="blue">Edit (GUI)</span>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
- {i} The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+ {i} The GUI editor is fairly self-explanatory; however, if you require further assistance, see [https://wiki.libsdl.org/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
 Note that some formatting will appear slightly different in preview mode than on the finished screen.
 
 
 === Automatic Backup of Drafts ===
-~-(from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
+~-(from: [https://wiki.libsdl.org/HelpOnEditing Help On Editing])-~
 
  Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
 
@@ -129,7 +129,7 @@ Below is a summary of the most commonly used markup in this wiki, as well as som
 
 <!> '''The following is provided for your convenience and is meant to be general information.  The other [[Contributing#guides|Style Guides]] describe where this formatting should be applied and where exceptions may exist.'''
 
-A good place to look for additional information on MoinMoin wiki markup is  [http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
+A good place to look for additional information on MoinMoin wiki markup is  [https://wiki.libsdl.org/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
 
 
 
@@ -218,7 +218,7 @@ Verbatim text as it should be typed, appear as code, or show markup. This will w
 : ''Generates''
 : <<Color2("A sentence that contains commas, such as this one, must be quoted in order for the commas to appear correctly.",purple)>>
 
-More wiki markup for text formatting can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnFormatting HelpOnFormatting].
+More wiki markup for text formatting can be found at [https://wiki.libsdl.org/HelpOnFormatting HelpOnFormatting].
 
 ~-[[#ToC|Return to Table of Contents]]-~
 <br/>
@@ -335,7 +335,7 @@ __Numbered Lists__
   1. First line of numbered list
   1. Second line of numbered list
 
-More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLists HelpOnLists]
+More wiki markup for lists can be found at [https://wiki.libsdl.org/HelpOnLists HelpOnLists]
 
 
 <span id="hyperlinks"></span>
@@ -376,7 +376,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 |<( |3 30%>Link to another page __within the wiki__
 |''Markup'': Enclose the page name in double brackets:<br/> ```[[pagename]]```
 |-
-|''Note'': It is not necessary to include the wiki address ```http://wiki.libsdl.org/moin.cgi/``` for intra-wiki pages.
+|''Note'': It is not necessary to include the wiki address ```https://wiki.libsdl.org/``` for intra-wiki pages.
 |-
 |''Example'':  ```[[SDL_VideoInit]]()``` generates [[SDL_VideoInit]]()
 |-
@@ -408,7 +408,7 @@ More wiki markup for lists can be found at [http://wiki.libsdl.org/moin.cgi/Help
 |''Example'': ```[[Contributing#guides|Style Guides]]``` creates the following link with alternate text and that takes you to that anchor on the other page:<br/> [[Contributing#guides|Style Guides]]
 |}
 
-More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking]
+More wiki markup for tables can be found at [https://wiki.libsdl.org/HelpOnLinking HelpOnLinking]
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
@@ -426,7 +426,7 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 
 ''Note'': Anchors can be used in tables but must follow any table formatting markup in order to not disturb the table format.  Also, the anchor jump point will align with the parsed formatting so put it at the highest point in a row if you wish the whole row to appear on the screen when the anchor is used. See the 2nd and 3rd ''If''s of the Function Parameters section of the [[SGFunctions#Function_Parameters|Function Pages Style Guide]] for an example.  (If the anchor was in the left column it would jump to the top of the vertically centered text when used, leaving half of the content off the top of the screen.)
 
-More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnLinking HelpOnLinking] and [http://wiki.libsdl.org/moin.cgi/HelpOnMacros HelpOnMacros].
+More (but not much) wiki markup for anchors can be found at [https://wiki.libsdl.org/HelpOnLinking HelpOnLinking] and [https://wiki.libsdl.org/HelpOnMacros HelpOnMacros].
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
@@ -455,7 +455,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 
 ''Markup 1'': 
 : ''If'' you know CSS formatted <code>style</code> markup you can append most any common formatting into the ```<style="...">``` markup to create table formatting.  You can also use <code>class</code> markup to some extent.  
-: See [http://wiki.libsdl.org/moin.cgi/HelpOnTables Help On Tables] for details.
+: See [https://wiki.libsdl.org/HelpOnTables Help On Tables] for details.
 
 ''Markup 2'': 
 : ''If'' you would prefer to use the wiki markup or do not know CSS styles see the table below.
@@ -546,7 +546,7 @@ More (but not much) wiki markup for anchors can be found at [http://wiki.libsdl.
 |}
 
 
-More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnTables HelpOnTables]
+More wiki markup for tables can be found at [https://wiki.libsdl.org/HelpOnTables HelpOnTables]
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
@@ -566,7 +566,7 @@ More wiki markup for tables can be found at [http://wiki.libsdl.org/moin.cgi/Hel
 
 ''Note'': All level 2 and lower headings will appear in an automatically generated [[#contents|Table of Contents]].  
 
-More (but not much) wiki markup for headings can be found at [http://wiki.libsdl.org/moin.cgi/HelpOnHeadlines HelpOnHeadlines].
+More (but not much) wiki markup for headings can be found at [https://wiki.libsdl.org/HelpOnHeadlines HelpOnHeadlines].
 
 ~-[[#ToC|Return to Table of Contents]]-~
 
@@ -671,7 +671,7 @@ An include enables you to dynamically copy all or a portion of a page onto anoth
 ''<span color="red">Important!</span>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
 : ''Note'': The use of hidden comments to create include tags is deliberate.  This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance traceability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
 
-See [http://wiki.libsdl.org/moin.cgi/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
+See [https://wiki.libsdl.org/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
 
 <!-- #The basic Include format is <<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>> -->
 
@@ -764,12 +764,12 @@ See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28l
 
 === Other Help ===
 Some other wiki help that might be of interest or helpful to find quickly:
-:[http://wiki.libsdl.org/moin.cgi/HelpIndex Help Index]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnMoinWikiSyntax Help On Moin Wiki Syntax]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnFormatting Help On Formatting]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnSmileys Help On Smileys]
-:[http://wiki.libsdl.org/moin.cgi/HelpOnAdmonitions Help  On  Admonitions]
+:[https://wiki.libsdl.org/HelpIndex Help Index]
+:[https://wiki.libsdl.org/HelpOnMoinWikiSyntax Help On Moin Wiki Syntax]
+:[https://wiki.libsdl.org/HelpOnFormatting Help On Formatting]
+:[https://wiki.libsdl.org/HelpOnEditing Help On Editing]
+:[https://wiki.libsdl.org/HelpOnSmileys Help On Smileys]
+:[https://wiki.libsdl.org/HelpOnAdmonitions Help  On  Admonitions]
 
 
 ~-[[#ToC|Return to Table of Contents]]-~

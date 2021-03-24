@@ -23,10 +23,10 @@ The SDL 2.0 header files can be found here:
 http://hg.libsdl.org/SDL/file/default/include
 
 === Articles ===
-http://wiki.libsdl.org/moin.cgi/Articles
+https://wiki.libsdl.org/Articles
 
 === Books ===
-http://wiki.libsdl.org/moin.cgi/Books
+https://wiki.libsdl.org/Books
 
 <br/>
 == Support Options ==
@@ -34,12 +34,12 @@ SDL is a community-supported library.  Here are a few options if you need assist
 
 
 === Tutorials ===
-http://wiki.libsdl.org/moin.cgi/Tutorials
+https://wiki.libsdl.org/Tutorials
 
 There is a link to SDL 1.2 tutorials here as well.
 
 === FAQs ===
-http://wiki.libsdl.org/moin.cgi/FAQs
+https://wiki.libsdl.org/FAQs
 
 === Forums ===
 http://forums.libsdl.org/

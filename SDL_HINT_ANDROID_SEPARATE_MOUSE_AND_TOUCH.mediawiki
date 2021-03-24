@@ -5,7 +5,7 @@
 
 
 
-<!-- #*^*^*^*^*See http://wiki.libsdl.org/moin.cgi/SGEnumerations for details on editing this page*^*^*^*^* -->
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 
 
 = SDL_HINT_ANDROID_SEPARATE_MOUSE_AND_TOUCH =

@@ -21,11 +21,11 @@ If a page can be edited you will see two options to choose from in the left colu
  1. <span style="color: blue;">Edit (Text)</span>
   The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
  (!) '''Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.'''
- For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [http://wiki.libsdl.org/moin.cgi/HelpOnEditing wiki help documentation].
+ For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [https://wiki.libsdl.org/HelpOnEditing wiki help documentation].
 
  1. <span style="color: blue;">Edit (GUI)</span>
   The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
- (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [http://wiki.libsdl.org/moin.cgi/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+ (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [https://wiki.libsdl.org/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
 
 Note that some formatting will appear slightly different in preview mode than on the finished screen.
 
@@ -42,7 +42,7 @@ Before you save your changes please include a note in the Comment field below th
 When you have completed adding your content and are satisfied with the formatting use the <span style="color: blue;">Save Changes</span> function in the left sidebar to save your changes.
 
 '''Automatic Backup of Drafts'''<br/>
-~-(copied from: [http://wiki.libsdl.org/moin.cgi/HelpOnEditing Help On Editing])-~
+~-(copied from: [https://wiki.libsdl.org/HelpOnEditing Help On Editing])-~
 
  Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
 

@@ -41,14 +41,14 @@ The basic steps required to create a new page in this wiki are the same regardle
  ''How'': Type the following into the address bar and replace <code>PageName</code> with the name of your page.  Press Enter to begin creating the page.
 
   ```
-http://wiki.libsdl.org/moin.cgi/PageName
+https://wiki.libsdl.org/PageName
 ```
 : ~-Note: There are several ways to create a new page address.  You may choose another method if you prefer.-~
 
  ''Note'': The convention in this wiki is that the name of the page is also the address of the page and that CamelCase is preferable to blank spaces.<br/>''Page addresses are case-sensitive.''
 
  ''Example'': The address for the page [[SDL_BuildAudioCVT]]() is
-: ```http://wiki.libsdl.org/moin.cgi/SDL_BuildAudioCVT```
+: ```https://wiki.libsdl.org/SDL_BuildAudioCVT```
 
  <span color="red">''Important!''</span> '''Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page address after the page is created and saved.'''
  ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': DO NOT SAVE THE PAGE!  Copy any of your contents you'd like to save, <span color="blue">Cancel</span> or close the page, and start over.<br/>Paste your contents into the new page and continue editing.||

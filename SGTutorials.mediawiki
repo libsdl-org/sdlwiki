@@ -102,14 +102,14 @@ Return to [[#existing|Adding An Existing Tutorial]] to complete the process.
  ''How'': Type the following into the address bar and replace <code>PageName</code> with the name of your page.  Press Enter to begin creating the page.
 
   ```
-http://wiki.libsdl.org/moin.cgi/PageName
+https://wiki.libsdl.org/PageName
 ```
 : ~-Note: There are several ways to create a new page address.  You may choose another if you prefer.-~
 
  ''Note'': The convention in this wiki is that the name of the page is also the address of the page and that CamelCase is preferable to blank spaces.  Page addresses are case-sensitive.
 
  ''Example'': The address for the page [[SDL_BuildAudioCVT]]() is
-: ```http://wiki.libsdl.org/moin.cgi/SDL_BuildAudioCVT```
+: ```https://wiki.libsdl.org/SDL_BuildAudioCVT```
 
  <span color="red">''Important!''</span> Be careful to name and spell accurately when creating a new page!  You cannot delete a page or edit a page address after the page is created and saved. 
  ||<( |2 30%>''If'' you discover a typo in the address __prior to saving the page__||''Action'': Copy all of your contents, cancel or close the page, and start over.<br/>Paste your contents into the new page and continue editing.||
@@ -137,7 +137,7 @@ http://wiki.libsdl.org/moin.cgi/PageName
 ###pragma section-numbers off
 ###pragma disable-camelcase
 ##```
-<!-- #  . See http://wiki.libsdl.org/moin.cgi/HelpOnProcessingInstructions#section-numbers  -->
+<!-- #  . See https://wiki.libsdl.org/HelpOnProcessingInstructions#section-numbers  -->
 
  ''Note'': It is not necessary to create your entire tutorial in one sitting.  You are free to save the page, keep track of the address, and go to the next step when it is complete and ready for prime time.
 
