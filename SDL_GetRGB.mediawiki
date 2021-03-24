@@ -30,11 +30,6 @@ void SDL_GetRGB(Uint32                 pixel,
 |a pointer filled in with the blue component
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function uses the entire 8-bit [0..255] range when converting color components from pixel formats with less than 8-bits per RGB component (e.g., a completely white pixel in 16-bit RGB565 format would return [0xff, 0xff, 0xff] not [0xf8, 0xfc, 0xf8]). 
 

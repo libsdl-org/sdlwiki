@@ -17,11 +17,6 @@ An enumeration of the available thread priorities.
 |}
 <!-- #End Include here. -->
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

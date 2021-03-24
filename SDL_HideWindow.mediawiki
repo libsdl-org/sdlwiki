@@ -14,11 +14,6 @@ void SDL_HideWindow(SDL_Window* window)
 |the window to hide
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

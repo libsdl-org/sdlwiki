@@ -15,11 +15,6 @@ An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
 |srcA = srcA * alpha
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

@@ -30,11 +30,6 @@ int SDL_LowerBlitScaled(SDL_Surface* src,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This is a semi-private function and it performs low-level surface blitting, assuming the input rectangles have already been clipped.
 

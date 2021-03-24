@@ -18,11 +18,6 @@ int SDL_HapticOpened(int device_index)
 == Return Value ==
 Returns 1 if it has been opened, 0 if it hasn't or on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

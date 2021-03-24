@@ -18,11 +18,6 @@ void SDL_SetEventFilter(SDL_EventFilter filter,
 |a pointer that is passed to '''filter'''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <!-- #The following is included on SDL_AddEventWatch and SDL_DelEventWatch.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start Include here. -->
 

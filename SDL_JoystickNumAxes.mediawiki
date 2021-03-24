@@ -20,11 +20,6 @@ Returns the number of axis controls/number of axes on success or a negative erro
 
 <!-- <span style="color: green;">Is this the number of axes like x y z or the number of pads or sticks that control movement in the 3 axes like a game pad might have two joysticks and a thumb pad?</span> -->
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

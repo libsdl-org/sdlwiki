@@ -35,13 +35,6 @@ Uint32 SDL_DequeueAudio(SDL_AudioDeviceID dev,
 Returns number of bytes dequeued, which could be less than requested; call [[SDL_GetError]]() for more information.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 If you are looking to queue audio for output on a non-callback playback device, you want [[SDL_QueueAudio]]() instead.  SDL_DequeueAudio() will always return 0 if you use it with playback devices.

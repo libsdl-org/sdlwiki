@@ -18,11 +18,6 @@ A hint that specifies how 3D acceleration is used with [[SDL_GetWindowSurface]](
 == Default ==
 By default SDL tries to make a best guess whether to use acceleration or not on each platform.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 SDL can try to accelerate the screen surface returned by [[SDL_GetWindowSurface]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done.
 

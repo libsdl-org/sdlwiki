@@ -25,11 +25,6 @@ SDL_bool SDL_AtomicCASPtr(void** a,
 == Return Value ==
 Returns SDL_TRUE if the pointer was set, SDL_FALSE otherwise.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 {i} Note: If you don't know what this function is for, you shouldn't use it!
 

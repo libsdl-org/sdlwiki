@@ -14,11 +14,6 @@ void SDL_DestroyTexture(SDL_Texture* texture)
 |the texture to destroy
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 Passing NULL or an otherwise invalid texture will set the SDL error message to "Invalid texture".
 

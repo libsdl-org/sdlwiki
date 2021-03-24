@@ -18,11 +18,6 @@ void SDL_SetWindowGrab(SDL_Window* window,
 |SDL_TRUE to grab input or SDL_FALSE to release input
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When input is grabbed the mouse is confined to the window.
 

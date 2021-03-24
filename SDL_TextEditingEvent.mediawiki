@@ -30,11 +30,6 @@ A structure that contains keyboard text editing event information.
 |the number of characters to edit from the start point
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
 

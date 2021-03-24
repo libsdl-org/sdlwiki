@@ -11,11 +11,6 @@ int SDL_GetNumRenderDrivers(void)
 == Return Value ==
 Returns a number >= 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 A render driver is a set of code that handles rendering and texture management on a particular display.  Normally there is only one, but some drivers may have several available with different capabilities.
 

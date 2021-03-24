@@ -18,11 +18,6 @@ int SDL_HapticPause(SDL_Haptic* haptic)
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 Device must support the SDL_HAPTIC_PAUSE feature. Call [[SDL_HapticUnpause]]() to resume playback.
 

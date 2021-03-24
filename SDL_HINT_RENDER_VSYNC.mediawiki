@@ -15,11 +15,6 @@ A hint that specifies whether sync to vertical refresh is enabled or disabled in
 == Default ==
 By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [[SDL_CreateRenderer]]().
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_HINT_RENDER_VSYNC]] overrides the SDL_RENDERER_PRESENTVSYNC flag in [[SDL_CreateRenderer]]().
 

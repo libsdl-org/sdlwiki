@@ -25,11 +25,6 @@ SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
 == Return Value ==
 Returns the new surface, or NULL on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="format"></span> '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>

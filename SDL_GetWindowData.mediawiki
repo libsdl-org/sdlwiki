@@ -21,11 +21,6 @@ void* SDL_GetWindowData(SDL_Window* window,
 == Return Value ==
 Returns the value associated with '''name'''.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

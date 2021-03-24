@@ -22,11 +22,6 @@ void SDL_GetWindowPosition(SDL_Window* window,
 |a pointer filled in with the y position of the window, in screen coordinates, may be NULL
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If you do not need the value for one of the positions a NULL may be passed in the '''x''' or '''y''' parameter.
 

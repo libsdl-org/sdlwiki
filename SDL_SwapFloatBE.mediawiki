@@ -17,11 +17,6 @@ float SDL_SwapFloatBE(float x)
 == Return Value ==
 Returns the native floating point value.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

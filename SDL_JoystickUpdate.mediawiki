@@ -9,11 +9,6 @@ Use this function to update the current state of the open joysticks.
 void SDL_JoystickUpdate(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This is called automatically by the event loop if any joystick events are enabled.
 

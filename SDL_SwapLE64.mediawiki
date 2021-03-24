@@ -17,11 +17,6 @@ Uint64 SDL_SwapLE64(Uint64 x)
 == Return Value ==
 Returns the native 64-bit value.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

@@ -82,11 +82,6 @@ A structure that contains system-dependent window manager messages.
 |<style="color: #808080;">unused (>= SDL 2.0.5)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''subsystem''' may be one of the following:
 <<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>

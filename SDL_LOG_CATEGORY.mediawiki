@@ -40,11 +40,6 @@ An enumeration of the predefined log categories.
 |}
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 By default the APPLICATION category is enabled at the SDL_LOG_PRIORITY_INFO level and all other categories are enabled at the SDL_LOG_PRIORITY_CRITICAL level.  See [[SDL_LogPriority]] for details.
 

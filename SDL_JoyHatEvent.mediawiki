@@ -26,11 +26,6 @@ A structure that contains joystick hat position change event information.
 |the new position of the hat; see [[#Remarks|Remarks]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_JoyHatEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYHATMOTION is reported.  You would access it through the event's <code>jhat</code> field.
 

@@ -12,11 +12,6 @@ int SDL_NumHaptics(void)
 == Return Value ==
 Returns the number of haptic devices detected on the system or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

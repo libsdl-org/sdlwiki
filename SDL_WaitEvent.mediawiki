@@ -17,11 +17,6 @@ int SDL_WaitEvent(SDL_Event* event)
 == Return Value ==
 Returns 1 on success or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If '''event''' is not NULL, the next event is removed from the queue and stored in the SDL_Event structure pointed to by '''event'''.
 

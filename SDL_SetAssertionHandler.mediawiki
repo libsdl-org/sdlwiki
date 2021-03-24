@@ -18,11 +18,6 @@ void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
 |a pointer that is passed to '''handler'''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function allows an application to show its own assertion UI and/or force the response to an assertion failure. If the application doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
 

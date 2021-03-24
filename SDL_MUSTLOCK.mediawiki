@@ -17,11 +17,6 @@ SDL_bool SDL_MUSTLOCK(SDL_Surface* surface)
 == Return Value ==
 Returns SDL_TRUE if the surface must be locked for access, SDL_FALSE if not.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

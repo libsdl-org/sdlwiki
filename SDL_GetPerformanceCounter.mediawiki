@@ -11,11 +11,6 @@ Uint64 SDL_GetPerformanceCounter(void)
 == Return Value ==
 Returns the current counter value.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function is typically used for profiling.  
 

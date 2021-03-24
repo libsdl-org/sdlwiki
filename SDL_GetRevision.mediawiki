@@ -11,11 +11,6 @@ const char* SDL_GetRevision(void)
 == Return Value ==
 Returns an arbitrary string, uniquely identifying the exact revision of the SDL library in use.  
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <<Include(SDL_REVISION, , , from="Start Include here.", to="##End Include here")>>
 

@@ -12,11 +12,6 @@ int SDL_GetRevisionNumber(void)
 == Return Value ==
 Returns a number uniquely identifying the exact revision of the SDL library in use. 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 After SDL's migration to GitHub (before the 2.0.16 release), this function is marked deprecated and hardcoded to return zero. Don't call this anymore. [[SDL_GetRevision]] still works, and if SDL was carefully built, will return a git hash.
 

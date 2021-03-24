@@ -19,11 +19,6 @@ SDL_JoystickID SDL_JoystickInstanceID(SDL_Joystick* joystick)
 == Return Value ==
 Returns the instance ID of the specified joystick on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

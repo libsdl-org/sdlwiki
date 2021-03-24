@@ -22,11 +22,6 @@ void SDL_UnionRect(const SDL_Rect* A,
 |an [[SDL_Rect]] structure filled in with the union of rectangles '''A''' and '''B'''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

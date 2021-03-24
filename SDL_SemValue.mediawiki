@@ -17,11 +17,6 @@ Uint32 SDL_SemValue(SDL_sem* sem)
 == Return Value ==
 Returns the current value of the semaphore.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

@@ -37,11 +37,6 @@ An enumeration of blend operations used when creating a custom blend mode with [
 |max(dst, src)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 
 The blend operation takes place when the calculated pixels from a drawing operation (src) and the pixels from the render target (dst) get combined. Each component (red, green, blue, and alpha) is calculated separately. The result is then stored in the render target.

@@ -25,13 +25,6 @@ A hint that specifies which shader compiler to preload when using the Chrome ANG
 By default "d3dcompiler_46.dll" will be used.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 SDL has EGL and OpenGL ES2 support on Windows via the ANGLE project. It can use two different sets of binaries, those compiled by the user from source or those provided by the Chrome browser. In the later case, these binaries require that SDL loads a DLL providing the shader compiler.

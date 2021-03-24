@@ -14,11 +14,6 @@ void SDL_DestroyWindow(SDL_Window* window)
 |the window to destroy
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If '''window''' is NULL, this function will return immediately after setting the SDL error message to "Invalid window". See [[SDL_GetError]]().
 

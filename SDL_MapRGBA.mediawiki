@@ -33,11 +33,6 @@ Uint32 SDL_MapRGBA(const SDL_PixelFormat* format,
 == Return Value ==
 Returns a pixel value; see [[#Remarks|Remarks]] for details.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function maps the RGBA color value to the specified pixel format and returns the pixel value best approximating the given RGBA color value for the given pixel format.
 

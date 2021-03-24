@@ -21,11 +21,6 @@ int SDL_RenderSetViewport(SDL_Renderer*   renderer,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When the window is resized, the current viewport is automatically centered within the new window size.
 

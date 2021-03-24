@@ -20,13 +20,6 @@ A hint that specifies a URL to a WinRT app's privacy policy.
 By default this hint is not set.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 All network-enabled WinRT apps must make a privacy policy available to its users.  On Windows 8, 8.1, and RT, Microsoft mandates that this policy be available in the Windows Settings charm, as accessed from within the app.  SDL provides code to add a URL-based link there, which can point to the app's privacy policy.

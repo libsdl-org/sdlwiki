@@ -37,11 +37,6 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
 == Return Value ==
 Returns SDL_TRUE on success or SDL_FALSE if the conversion wasn't possible; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>

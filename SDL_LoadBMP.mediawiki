@@ -17,11 +17,6 @@ SDL_Surface* SDL_LoadBMP(const char* file)
 == Return Value ==
 <<Include(SDL_LoadBMP_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <<Include(SDL_LoadBMP_RW, , , from="== Remarks ==", to="== Related Functions ==")>>
 

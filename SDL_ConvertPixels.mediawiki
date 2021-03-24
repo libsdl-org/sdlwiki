@@ -45,11 +45,6 @@ int SDL_ConvertPixels(int         width,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''src_format''' and '''dst_format''' may each be one of the following [[SDL_PixelFormatEnum]] values:
 <<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>

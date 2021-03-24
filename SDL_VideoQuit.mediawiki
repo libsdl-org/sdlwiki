@@ -8,11 +8,6 @@ Use this function to shut down the video subsystem, if initialized with [[SDL_Vi
 void SDL_VideoQuit(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function closes all windows, and restores the original video mode.
 

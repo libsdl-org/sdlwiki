@@ -8,11 +8,6 @@ Use this function to trigger a breakpoint during debugging.
 void SDL_TriggerBreakpoint(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If the program is running under a debugger this function will trigger a breakpoint.  It is typically used temporarily during debugging or with other error handling. Note that if a debugger isn't running, on some platforms this can terminate your application.
 

@@ -8,11 +8,6 @@ Use this function to pump the event loop, gathering events from the input device
 void SDL_PumpEvents(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function updates the event queue and internal input device state.
 

@@ -11,11 +11,6 @@ int SDL_GetCPUCacheLineSize(void)
 == Return Value ==
 Returns the L1 cache line size of the CPU, in bytes.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This is useful for determining multi-threaded structure padding or SIMD prefetch sizes.
 

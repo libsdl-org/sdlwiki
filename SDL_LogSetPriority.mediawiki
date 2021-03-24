@@ -18,11 +18,6 @@ void SDL_LogSetPriority(int             category,
 |the [[SDL_LogPriority]] to assign; see [[#priority|Remarks]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="category"></span>
 The '''category''' can be one of:

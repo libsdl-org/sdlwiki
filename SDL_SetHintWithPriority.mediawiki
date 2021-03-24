@@ -25,11 +25,6 @@ SDL_bool SDL_SetHintWithPriority(const char*      name,
 == Return Value ==
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The priority controls the behavior when setting a hint that already has a value.  Hints will replace existing hints of their priority and lower.  Environment variables are considered to have override priority.
 

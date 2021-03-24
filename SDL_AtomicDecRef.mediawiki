@@ -17,11 +17,6 @@ SDL_bool SDL_AtomicDecRef(SDL_atomic_t* a)
 == Return Value ==
 Returns SDL_TRUE if the variable reached zero after decrementing, SDL_FALSE otherwise.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

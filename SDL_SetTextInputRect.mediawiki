@@ -15,11 +15,6 @@ void SDL_SetTextInputRect(SDL_Rect* rect)
 |the [[SDL_Rect]] structure representing the rectangle to receive text (ignored if NULL)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 There is a [[Tutorials/TextInput|tutorial]].
 

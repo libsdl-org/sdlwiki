@@ -11,11 +11,6 @@ int SDL_GL_GetSwapInterval(void)
 == Return Value ==
 Returns 0 if there is no vertical retrace synchronization, 1 if the buffer swap is synchronized with the vertical retrace, and -1 if late swaps happen immediately instead of waiting for the next retrace; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If the system can't determine the swap interval, or there isn't a valid current context, this function will return 0 as a safe default.
 

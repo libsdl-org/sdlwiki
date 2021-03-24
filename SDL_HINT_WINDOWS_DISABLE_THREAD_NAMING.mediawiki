@@ -23,13 +23,6 @@ A hint that specifies whether SDL should not name threads on Microsoft Windows.
 By default SDL will name threads on Microsoft Windows.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 If the hint is not set then SDL will raise the 0x406D1388 Exception to name threads.  This is the default behavior of SDL.

@@ -18,11 +18,6 @@ void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback,
 |a pointer that is passed to '''callback'''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The function prototype for '''callback''' is:
  <syntaxhighlight lang='c++'>

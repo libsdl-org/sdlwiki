@@ -26,13 +26,6 @@ SDL_JoystickPowerLevel SDL_JoystickCurrentPowerLevel(SDL_Joystick* joystick)
 Returns the current battery level as [[SDL_JoystickPowerLevel]] on success or [[SDL_JoystickPowerLevel|SDL_JOYSTICK_POWER_UNKNOWN]] if it is unknown; call [[SDL_GetError]]() for more information.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 ''You can add useful comments here''

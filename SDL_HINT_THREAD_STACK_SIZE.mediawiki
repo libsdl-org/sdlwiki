@@ -23,13 +23,6 @@ A hint that specifies a variable specifying SDL's threads stack size in bytes or
 By default the backend's default threads stack size is used.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 Use this hint in case you need to set SDL's threads stack size to other than the default. This is specially useful if you build SDL against a non glibc libc library (such as musl) which provides a relatively small default thread stack size (a few kilobytes versus the default 8 MB glibc uses).

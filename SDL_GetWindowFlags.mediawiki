@@ -17,11 +17,6 @@ Uint32 SDL_GetWindowFlags(SDL_Window* window)
 == Return Value ==
 Returns a mask of the [[SDL_WindowFlags]] associated with '''window'''; see [[#Remarks|Remarks]] for details.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The flags may be any of the following OR'd together:
 <<Include(SDL_WindowFlags, , , from="== Values ==", to="== Code Examples ==")>>

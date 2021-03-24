@@ -11,11 +11,6 @@ SDL_bool SDL_IsScreenSaverEnabled(void)
 == Return Value ==
 Returns SDL_TRUE if the screensaver is enabled, SDL_FALSE if it is disabled.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2 the screensaver was enabled by default.
 

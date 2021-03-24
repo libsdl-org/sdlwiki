@@ -22,11 +22,6 @@ A structure that represents a color.
 |the alpha component in the range 0-255
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_Color]] and SDL_Colour are interchangeable.
 

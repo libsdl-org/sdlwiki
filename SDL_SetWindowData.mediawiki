@@ -25,11 +25,6 @@ void* SDL_SetWindowData(SDL_Window* window,
 == Return Value ==
 Returns the previous value associated with '''name'''.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''name''' is case-sensitive.
 

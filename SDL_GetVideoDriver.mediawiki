@@ -17,11 +17,6 @@ const char* SDL_GetVideoDriver(int index)
 == Return Value ==
 Returns the name of the video driver with the given '''index'''. 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The video drivers are presented in the order in which they are normally checked during initialization. 
 

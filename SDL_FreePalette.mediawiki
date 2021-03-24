@@ -14,11 +14,6 @@ void SDL_FreePalette(SDL_Palette* palette)
 |the [[SDL_Palette]] structure to be freed
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

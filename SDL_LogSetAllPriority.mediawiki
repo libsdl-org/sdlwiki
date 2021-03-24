@@ -14,11 +14,6 @@ void SDL_LogSetAllPriority(SDL_LogPriority priority)
 |the [[SDL_LogPriority]] to assign; see [[#priority|Remarks]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="priority"></span>
 The '''priority''' can be one of:

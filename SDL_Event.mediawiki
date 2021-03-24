@@ -106,11 +106,6 @@ A union that contains structures for the different event types.
 |drag and drop event data
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The [[SDL_Event]] structure is the core of all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL.  Using it is a simple matter of knowing which event type corresponds to which union member. The [[#table|table]] below lists these relationships.
 

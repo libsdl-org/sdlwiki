@@ -17,11 +17,6 @@ void* SDL_AtomicGetPtr(void** a)
 == Return Value ==
 Returns the current value of a pointer.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

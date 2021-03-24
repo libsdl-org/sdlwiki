@@ -11,11 +11,6 @@ SDL_bool SDL_QuitRequested(void)
 == Return Value ==
 Returns SDL_TRUE if SDL_QUIT is queued or SDL_FALSE otherwise.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This is actually a macro that calls [[SDL_PumpEvents]]() followed by [[SDL_PeepEvents]](). Since it pumps the event queue, it can only be used in the main thread.
 

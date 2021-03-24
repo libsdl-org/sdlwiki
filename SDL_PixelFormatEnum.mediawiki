@@ -163,11 +163,6 @@ An enumeration of pixel formats.
 <!-- #End Include here. -->
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="type"></span> The pixel type is one of the following values:
 {|

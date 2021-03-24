@@ -83,11 +83,6 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM (a custom) effect
 |level at the end of the fade
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This struct is exclusively for the SDL_HAPTIC_CUSTOM effect.
 

@@ -22,11 +22,6 @@ A structure that contains key information used in key events.
 |<style="color: #808080;">
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

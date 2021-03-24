@@ -29,11 +29,6 @@ int SDL_SetSurfaceColorMod(SDL_Surface* surface,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When this surface is blitted, during the blit operation each source color channel is modulated by the appropriate color value according to the following formula:
  <code>srcC = srcC * (color / 255)</code>

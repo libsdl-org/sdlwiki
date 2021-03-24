@@ -25,11 +25,6 @@ int SDL_GameControllerAddMapping(const char* mappingString)
 Returns 1 if a new mapping is added, 0 if an existing mapping is updated, -1 on error; call [[SDL_GetError]]() for more information.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 
 == Remarks ==
 The mapping string has the format "GUID,name,mapping", where GUID is the string value from [[SDL_JoystickGetGUIDString]](), name is the human readable string for the device and mappings are controller mappings to joystick ones.  Under Windows there is a reserved GUID of "xinput" that covers all XInput devices.  The mapping format for joystick is:

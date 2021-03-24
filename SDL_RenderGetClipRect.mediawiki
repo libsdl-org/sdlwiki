@@ -25,11 +25,6 @@ void SDL_RenderGetClipRect(SDL_Renderer* renderer,
 |}
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 
 == Remarks ==
 ''You can add useful comments here''

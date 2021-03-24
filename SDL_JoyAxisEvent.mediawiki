@@ -26,11 +26,6 @@ A structure that contains joystick axis motion event information.
 |the current position of the axis (range: -32768 to 32767)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_JoyAxisEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYAXISMOTION is reported.  You would access it through the event's <code>jaxis</code> field.
 

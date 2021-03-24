@@ -154,11 +154,6 @@ A structure that contains system-dependent information about a window.
 |the Vivante EGL window type
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This structure is filled in by [[SDL_GetWindowWMInfo]]().
 

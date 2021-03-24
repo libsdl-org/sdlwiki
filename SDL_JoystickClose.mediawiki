@@ -15,11 +15,6 @@ void SDL_JoystickClose(SDL_Joystick* joystick)
 |an SDL_Joystick structure containing joystick information
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

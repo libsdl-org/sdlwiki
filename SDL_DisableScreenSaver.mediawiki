@@ -8,11 +8,6 @@ Use this function to prevent the screen from being blanked by a screen saver.
 void SDL_DisableScreenSaver(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If you disable the screensaver, it is automatically re-enabled when SDL quits.
 

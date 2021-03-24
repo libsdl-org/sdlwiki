@@ -18,11 +18,6 @@ SDL_Scancode SDL_GetScancodeFromName(const char* name)
 == Return Value ==
 Returns the [[SDL_Scancode]], or SDL_SCANCODE_UNKNOWN if the name wasn't recognized; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

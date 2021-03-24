@@ -21,11 +21,6 @@ int SDL_GetSurfaceBlendMode(SDL_Surface*   surface,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''blendMode''' will be filled in with one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 

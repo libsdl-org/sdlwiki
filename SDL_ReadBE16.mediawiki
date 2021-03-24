@@ -17,11 +17,6 @@ Uint16 SDL_ReadBE16(SDL_RWops* src)
 == Return Value ==
 Returns 16 bits of data in the native byte order of the platform.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 SDL byteswaps the data only if necessary, so the data returned will be in the native byte order.
 

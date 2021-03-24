@@ -14,11 +14,6 @@ void SDL_assert_paranoid(condition)
 |the expression to check
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function is disabled by default.  It is available for use only when the SDL_ASSERT_LEVEL is set to 3.  See the [[CategoryAssertions|Assertions Category page]] for details.
 

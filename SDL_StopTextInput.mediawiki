@@ -9,11 +9,6 @@ Use this function to stop receiving any text input events.
 void SDL_StopTextInput(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 There is a [[Tutorials/TextInput|tutorial]].
 

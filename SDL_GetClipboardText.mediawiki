@@ -11,11 +11,6 @@ char* SDL_GetClipboardText(void)
 == Return Value ==
 Returns the clipboard text on success or NULL on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This functions returns NULL if there was not enough memory left for a copy of the clipboard's content.
 

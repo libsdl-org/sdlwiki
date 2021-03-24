@@ -37,11 +37,6 @@ An enumeration of blend factors used when creating a custom blend mode with [[SD
 |1-dstA, 1-dstA, 1-dstA, 1-dstA
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 
 The blend factors are multiplied with the pixels from a drawing operation (src) and the pixels from the render target (dst) before the blend operation. The comma-separated factors listed above are always applied in the component order red, green, blue, and alpha.

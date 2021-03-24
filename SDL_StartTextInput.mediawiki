@@ -9,11 +9,6 @@ Use this function to start accepting Unicode text input events.
 void SDL_StartTextInput(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 
 This function will start accepting Unicode text input events in the focused SDL window, and start emitting [[SDL_TextInputEvent|SDL_TEXTINPUT]] and [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.

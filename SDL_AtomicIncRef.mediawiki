@@ -14,11 +14,6 @@ void SDL_AtomicIncRef(SDL_atomic_t* a)
 |a pointer to an [[SDL_atomic_t]] variable to be modified
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

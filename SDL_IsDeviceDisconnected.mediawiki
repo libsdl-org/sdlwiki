@@ -24,11 +24,6 @@ Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_Ge
 
 <span style="color: green;">Can't find reference for values. Need source. Error state for this one?</span>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

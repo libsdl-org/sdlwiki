@@ -22,11 +22,6 @@ An enumeration of assertion handling states.
 |ignore the assert from now on
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This enumeration is returned by the callback function in [[SDL_SetAssertionHandler]]() to determine the response to failed assertions.  
 

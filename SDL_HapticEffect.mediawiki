@@ -35,11 +35,6 @@ A union that contains the generic template for any haptic effect.
 |custom effect; see [[#Remarks|Remarks]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 All structures in this union contain the following common parts:
 

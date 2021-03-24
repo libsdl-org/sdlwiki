@@ -14,11 +14,6 @@ void SDL_AtomicLock(SDL_SpinLock* lock)
 |a pointer to a lock variable
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <<Include(CategoryAtomic, , , from="Start Include here.", to="##End Include here")>>
 

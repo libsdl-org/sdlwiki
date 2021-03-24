@@ -21,11 +21,6 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops* src,
 == Return Value ==
 Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The new surface should be freed with [[SDL_FreeSurface]]().
 

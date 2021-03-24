@@ -18,11 +18,6 @@ void SDL_GetClipRect(SDL_Surface* surface,
 |an [[SDL_Rect]] structure filled in with the clipping rectangle for the surface; see [[#Remarks|Remarks]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
 

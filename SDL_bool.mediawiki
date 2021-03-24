@@ -12,11 +12,6 @@ An enumeration of boolean values.
 |value which is equal to 1 or ''true''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 
 == Remarks ==
 Every function, structure, class etc. will work with SDL_bool.

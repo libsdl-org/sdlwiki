@@ -12,11 +12,6 @@ void SDL_UnlockTexture(SDL_Texture* texture)
 |a texture locked by [[SDL_LockTexture]]() 
 |}
 
-
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
 == Remarks ==
 /!\ ''WARNING'': See [https://bugzilla.libsdl.org/show_bug.cgi?id=1586 SDL bug #1586] before using this function!
 

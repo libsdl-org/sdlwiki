@@ -21,11 +21,6 @@ int SDL_SetTextureAlphaMod(SDL_Texture* texture,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When this texture is rendered, during the copy operation the source alpha value is modulated by this alpha value according to the following formula:
  <code>srcA = srcA * (alpha / 255)</code>

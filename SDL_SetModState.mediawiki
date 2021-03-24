@@ -15,11 +15,6 @@ void SDL_SetModState(SDL_Keymod modstate)
 |the desired [[SDL_Keymod]] for the keyboard
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The inverse of [[SDL_GetModState]](), [[SDL_SetModState]]() allows you to impose modifier key states on your application.  Simply pass your desired modifier states into '''modstate'''. This value may be a bitwise, OR'd combination of [[SDL_Keymod]] values.
 

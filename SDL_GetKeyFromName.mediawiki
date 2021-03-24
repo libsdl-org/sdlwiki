@@ -20,11 +20,6 @@ Returns key code, or SDLK_UNKNOWN if the name wasn't recognized; call [[SDL_GetE
 
 <!-- <span style="color: green;">Should it refer to SDL_Keycode instead of key code?  Leave error call in?</span> -->
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

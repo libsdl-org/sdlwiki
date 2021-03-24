@@ -50,8 +50,6 @@ for(i = 0; i < SDL_NumJoysticks(); ++i) {
 }
 </syntaxhighlight>
 
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 This function will give you a SDL_Joystick object, which allows you to use the SDL_Joystick functions with a SDL_GameController object. This would be useful for getting a joystick's position at any given time, even if it hasn't moved (moving it would produce an event, which would have the axis' value).

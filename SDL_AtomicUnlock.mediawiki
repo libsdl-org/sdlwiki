@@ -14,11 +14,6 @@ void SDL_AtomicUnlock(SDL_SpinLock* lock)
 |a pointer to a lock variable
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 Always returns immediately.
 

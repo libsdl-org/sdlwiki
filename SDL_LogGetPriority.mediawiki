@@ -17,11 +17,6 @@ SDL_LogPriority SDL_LogGetPriority(int category)
 == Return Value ==
 Returns the [[SDL_LogPriority]] for the requested category; see [[#priority|Remarks]] for details.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="category"></span>
 The '''category''' can be one of:

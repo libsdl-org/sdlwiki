@@ -18,11 +18,6 @@ void SDL_RenderGetViewport(SDL_Renderer* renderer,
 |an [[SDL_Rect]] structure filled in with the current drawing area
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

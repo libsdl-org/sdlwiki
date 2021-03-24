@@ -16,11 +16,6 @@ A hint that specifies a variable controlling whether the idle timer is disabled 
 == Default ==
 By default the idle timer is enabled.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 When an iOS application does not receive touches for some time, the screen is dimmed automatically. For games where the accelerometer is the only input this is problematic. This functionality can be disabled by setting this hint.
 

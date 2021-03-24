@@ -17,11 +17,6 @@ SDL_PixelFormat* SDL_AllocFormat(Uint32 pixel_format)
 == Return Value ==
 Returns the new [[SDL_PixelFormat]] structure or NULL on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''pixel_format''' may be one of the following:
 <<Include(SDL_PixelFormatEnum, , , from="Start Include here.", to="##End Include here.")>>

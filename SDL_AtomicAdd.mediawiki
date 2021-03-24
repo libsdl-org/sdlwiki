@@ -21,11 +21,6 @@ int SDL_AtomicAdd(SDL_atomic_t* a,
 == Return Value ==
 Returns the previous value of the atomic variable.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function also acts as a full memory barrier.
 

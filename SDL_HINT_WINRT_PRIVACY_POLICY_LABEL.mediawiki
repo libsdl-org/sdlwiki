@@ -20,13 +20,6 @@ A hint that specifies a label text for a WinRT app's privacy policy link.
 By default this hint's value is "Privacy Policy".
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 Network-enabled WinRT apps must include a privacy policy.  On Windows 8, 8.1, and RT, Microsoft mandates that this policy be available via the Windows Settings charm.  SDL provides code to add a link there, with its label text being set via the optional hint, SDL_HINT_WINRT_PRIVACY_POLICY_LABEL.

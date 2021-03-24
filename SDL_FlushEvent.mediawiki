@@ -14,11 +14,6 @@ void SDL_FlushEvent(Uint32 type)
 |the type of event to be cleared; see [[SDL_EventType]] for details
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This will unconditionally remove any events from the queue that match '''type'''. If you need to remove a range of event types, use [[SDL_FlushEvents]]() instead.
 

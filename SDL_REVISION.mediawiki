@@ -3,11 +3,6 @@
 This macro is a string describing the source at a particular point in development.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <!-- #The following is included on SDL_GetRevision.  Any changes between these comments will be reflected on those pages.  Please use caution when editing.  Start Include here. -->
 The revision is a string including sequential revision number that is incremented with each commit, and a hash of the last code change.

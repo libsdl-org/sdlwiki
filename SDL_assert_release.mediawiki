@@ -14,11 +14,6 @@ void SDL_assert_release(condition)
 |the expression to check
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions Category page]] for details.
 

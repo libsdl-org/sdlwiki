@@ -14,11 +14,6 @@ void SDL_FreeSurface(SDL_Surface* surface)
 |the [[SDL_Surface]] structure to free
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 If the surface was created using [[SDL_CreateRGBSurfaceFrom]]() then the pixel data is not freed.
 

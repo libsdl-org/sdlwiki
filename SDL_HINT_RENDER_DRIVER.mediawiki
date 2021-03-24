@@ -21,11 +21,6 @@ A hint that specifies which render driver to use.
 == Default ==
 By default the first one in the list that is available on the current platform is chosen.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The values are case-insensitive.
 

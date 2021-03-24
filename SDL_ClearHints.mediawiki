@@ -8,11 +8,6 @@ Use this function to clear all hints.
 void SDL_ClearHints(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function is automatically called during [[SDL_Quit]]().
 

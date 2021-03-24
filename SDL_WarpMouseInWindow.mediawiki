@@ -23,11 +23,6 @@ void SDL_WarpMouseInWindow(SDL_Window* window,
 |the y coordinate within the window
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function generates a mouse motion event.
 

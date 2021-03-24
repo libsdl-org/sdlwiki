@@ -22,11 +22,6 @@ void SDL_SetWindowPosition(SDL_Window* window,
 |the y coordinate of the window in screen coordinates, or SDL_WINDOWPOS_CENTERED or SDL_WINDOWPOS_UNDEFINED
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The window coordinate origin is the upper left of the display.
 

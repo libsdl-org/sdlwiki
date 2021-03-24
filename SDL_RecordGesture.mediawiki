@@ -32,11 +32,6 @@ Returns 1 on success or 0 if the specified device could not be found.
 
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 
 
 == Remarks ==

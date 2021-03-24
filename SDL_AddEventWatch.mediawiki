@@ -18,11 +18,6 @@ void SDL_AddEventWatch(SDL_EventFilter filter,
 |a pointer that is passed to '''filter'''
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <<Include(SDL_SetEventFilter, , , from="Start Include here.", to="##End Include here")>>
 : where <code>YourEventFilter</code> is the name of your function and its parameters are:

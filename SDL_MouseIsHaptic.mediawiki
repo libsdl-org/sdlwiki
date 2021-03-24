@@ -12,11 +12,6 @@ int SDL_MouseIsHaptic(void)
 == Return Value ==
 Returns SDL_TRUE if the mouse is haptic or SDL_FALSE if it isn't; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

@@ -18,11 +18,6 @@ SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key)
 == Return Value ==
 Returns the [[SDL_Scancode]] that corresponds to the given [[SDL_Keycode]].
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 See [[SDL_Scancode]] for details.
 

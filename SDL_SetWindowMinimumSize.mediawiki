@@ -29,11 +29,6 @@ void SDL_SetWindowMinimumSize(SDL_Window* window,
 |}
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 
 == Remarks ==
 ''You can add useful comments here''

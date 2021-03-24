@@ -11,11 +11,6 @@ SDL_bool SDL_HasSSE(void)
 == Return Value ==
 Returns SDL_TRUE if the CPU has SSE features or SDL_FALSE if not.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

@@ -21,11 +21,6 @@ Uint8 SDL_EventState(Uint32 type,
 == Return Value ==
 Returns SDL_DISABLE or SDL_ENABLE, representing the processing state of the event before this function makes any changes to it.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 '''state''' may be any of the following:
 {|

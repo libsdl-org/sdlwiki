@@ -8,11 +8,6 @@ Use this function to allow the screen to be blanked by a screen saver.
 void SDL_EnableScreenSaver(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

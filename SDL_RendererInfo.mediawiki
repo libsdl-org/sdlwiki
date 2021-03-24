@@ -30,11 +30,6 @@ A structure that contains information on the capabilities of a render driver or 
 |the maximum texture height
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="flags"></span> '''flags''' may be 0 or a mask of any of the following [[SDL_RendererFlags]] values OR'd together:  <<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
 

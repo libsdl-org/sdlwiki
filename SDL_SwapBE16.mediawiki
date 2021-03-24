@@ -17,11 +17,6 @@ Uint16 SDL_SwapBE16(Uint16 x)
 == Return Value ==
 Returns the native 16-bit value.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

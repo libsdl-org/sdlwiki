@@ -27,11 +27,6 @@ int SDL_SetPaletteColors(SDL_Palette*     palette,
 
 == Return Value ==
 Returns 0 on success or a negative error code if not all of the colors could be set; call [[SDL_GetError]]() for more information.
-
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
 == Remarks ==
 ''You can add useful comments here''
 

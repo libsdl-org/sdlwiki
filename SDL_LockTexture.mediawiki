@@ -32,11 +32,6 @@ int SDL_LockTexture(SDL_Texture*    texture,
 
 == Return Value ==
 Returns 0 on success or a negative error code if the texture is not valid or was not created with SDL_TEXTUREACCESS_STREAMING; call [[SDL_GetError]]() for more information.
-
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
 == Remarks ==
 As an optimization, the pixels made available for editing don't necessarily contain the old texture data. This is a write-only operation, and if you need to keep a copy of the texture data you should do that at the application level.
 

@@ -18,11 +18,6 @@ int SDL_GetWindowDisplayIndex(SDL_Window* window)
 == Return Value ==
 Returns the index of the display containing the center of the window on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

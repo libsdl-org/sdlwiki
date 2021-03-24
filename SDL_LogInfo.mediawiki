@@ -22,11 +22,6 @@ void SDL_LogInfo(int         category,
 |additional parameters matching % tokens in the '''fmt''' string, if any
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 <span id="category"></span>
 The '''category''' can be one of:

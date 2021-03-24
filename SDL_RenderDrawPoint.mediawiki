@@ -25,11 +25,6 @@ int SDL_RenderDrawPoint(SDL_Renderer* renderer,
 == Return Value ==
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_RenderDrawPoint]]() draws a single point.  If you want to draw multiple, use [[SDL_RenderDrawPoints]]() instead.
 

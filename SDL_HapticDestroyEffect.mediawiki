@@ -19,11 +19,6 @@ void SDL_HapticDestroyEffect(SDL_Haptic* haptic,
 | <!-- ID --> identifier of the haptic effect to destroy
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This will stop the effect if it's running. Effects are automatically destroyed when the device is closed.
 

@@ -39,11 +39,6 @@ An enumeration of the various supported windowing subsystems.
 |Vivante (>= SDL 2.0.5)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

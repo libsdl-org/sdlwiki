@@ -15,11 +15,6 @@ void SDL_HapticClose(SDL_Haptic* haptic)
 |the SDL_Haptic device to close
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

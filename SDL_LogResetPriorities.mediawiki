@@ -8,11 +8,6 @@ Use this function to reset all priorities to default.
 void SDL_LogResetPriorities(void)
 </syntaxhighlight>
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This is called in [[SDL_Quit]]().
 

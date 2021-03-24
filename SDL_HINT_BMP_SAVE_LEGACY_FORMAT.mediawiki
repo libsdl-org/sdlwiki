@@ -23,13 +23,6 @@ A hint that specifies whether SDL should not use version 4 of the bitmap header 
 By default SDL will use version 4 of the bitmap header when saving BMPs.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 The bitmap header version 4 is required for proper alpha channel support and SDL will use it when required.  Should this not be desired, this hint can force the use of the 40 byte header version which is supported everywhere.

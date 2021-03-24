@@ -22,11 +22,6 @@ void SDL_GetWindowSize(SDL_Window* window,
 |a pointer filled in with the height of the window, in screen coordinates, may be NULL
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 NULL can safely be passed as the '''w''' or '''h''' parameter if the width or height value is not desired.
 

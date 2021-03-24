@@ -17,11 +17,6 @@ int SDL_AtomicGet(SDL_atomic_t* a)
 == Return Value ==
 Returns the current value of an atomic variable.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 

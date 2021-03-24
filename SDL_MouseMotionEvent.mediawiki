@@ -43,11 +43,6 @@ A structure that contains mouse motion event information.
 |}
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 [[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEMOTION is reported.  You would access it through the event's <code>motion</code> field.
 

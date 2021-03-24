@@ -18,11 +18,6 @@ int SDL_HapticNumAxes(SDL_Haptic* haptic)
 == Return Value ==
 Returns the number of axes on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 The number of haptic axes might be useful if working with the [[SDL_HapticDirection]] effect.
 

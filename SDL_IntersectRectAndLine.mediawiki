@@ -33,11 +33,6 @@ SDL_bool SDL_IntersectRectAndLine(const SDL_Rect* rect,
 == Return Value ==
 Returns SDL_TRUE if there is an intersection, SDL_FALSE otherwise.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This function is used to clip a line segment to a rectangle.  A line segment contained entirely within the rectangle or that does not intersect will remain unchanged.  A line segment that crosses the rectangle at either or both ends will be clipped to the boundary of the rectangle and the new coordinates saved in '''X1''', '''Y1''', '''X2''', and/or '''Y2''' as necessary.
 

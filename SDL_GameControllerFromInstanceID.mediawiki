@@ -25,13 +25,6 @@ SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid)
 == Return Value ==
 Returns an SDL_GameController on success or NULL on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 ''You can add useful comments here''

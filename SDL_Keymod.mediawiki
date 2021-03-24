@@ -58,11 +58,6 @@ An enumeration of key modifier masks.
 |<style="color: #808080;">reserved for future use
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 These may be OR'd together.
 

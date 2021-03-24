@@ -20,11 +20,6 @@ SDL_VERSIONNUM(X, Y, Z)
 |update version (patchlevel); reported in tens and ones places
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 This assumes that there will never be more than 100 patchlevels.
  ''Example:'' ```SDL_VERSIONNUM(1,2,3) -> (1203)```

@@ -30,13 +30,6 @@ Uint32 SDL_GetGlobalMouseState(int* x,
 Returns the current button state as a bitmask which can be tested using the SDL_BUTTON(X) macros.
 
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
-<!-- #Leave this section as-is unless you have a code example to put in.  In that case, replace You can add your code example here with your code example following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Remarks ==
 This works just like [[SDL_GetMouseState]](), but the coordinates will be reported relative to the top-left of the desktop. This can be useful if you need to track the mouse outside of a specific window and [[SDL_CaptureMouse]]() doesn't fit your needs. For example, it could be useful if you need to track the mouse while dragging a window, where

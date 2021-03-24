@@ -19,11 +19,6 @@ SDL_bool SDL_JoystickGetAttached(SDL_Joystick* joystick)
 == Return Value ==
 Returns SDL_TRUE if the joystick has been opened, SDL_FALSE if it has not; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-You can add your code example here
-</syntaxhighlight>
-
 == Remarks ==
 ''You can add useful comments here''
 
