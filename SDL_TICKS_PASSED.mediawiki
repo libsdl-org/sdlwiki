@@ -44,12 +44,6 @@ while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
 }
 </syntaxhighlight>
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 == Version ==
 This function is available since SDL 2.0.1.
 

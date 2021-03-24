@@ -6,10 +6,6 @@
 = SDL_Texture =
 A structure that contains an efficient, driver-specific representation of pixel data.
 
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]

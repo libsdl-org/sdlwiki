@@ -16,10 +16,6 @@ float SDL_SwapFloatLE(float x)
 
 == Return Value ==
 Returns the native floating point value.
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_SwapFloat]]
 :[[SDL_SwapFloatBE]]

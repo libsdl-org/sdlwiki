@@ -30,10 +30,6 @@ if (! SDL_VERSION_ATLEAST(2,0,0)) {
     return 1;
 }
 </syntaxhighlight>
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Macros ==
 :[[SDL_COMPILEDVERSION]]
 :[[SDL_VERSIONNUM]]

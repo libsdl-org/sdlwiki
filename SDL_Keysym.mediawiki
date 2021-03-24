@@ -21,10 +21,6 @@ A structure that contains key information used in key events.
 |<style="color: #808080;">'''unused'''
 |<style="color: #808080;">
 |}
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Enumerations ==
 :[[SDL_Keycode]]
 :[[SDL_Keymod]]

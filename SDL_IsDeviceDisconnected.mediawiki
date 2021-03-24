@@ -26,10 +26,6 @@ int SDL_IsDeviceDisconnected(int index)
 Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_GetError]]() for more information,,.
 
 <span style="color: green;">Can't find reference for values. Need source. Error state for this one?</span>
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_RedetectInputDevices]] ???
 

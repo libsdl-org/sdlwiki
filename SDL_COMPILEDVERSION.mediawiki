@@ -7,10 +7,6 @@ Use this macro to get the SDL version number that you compiled against.
 <syntaxhighlight lang='c++'>
 SDL_COMPILEDVERSION
 </syntaxhighlight>
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Macros ==
 :[[SDL_VERSIONNUM]]
 

@@ -120,10 +120,6 @@ int main(int argc, char *argv[])  {
   }
 }
 </syntaxhighlight>
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Structures ==
 :[[SDL_WindowEvent]]
 

@@ -14,10 +14,6 @@ An enumeration of hint priorities.
 |SDL_HINT_OVERRIDE
 |high priority
 |}
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_SetHintWithPriority]]
 

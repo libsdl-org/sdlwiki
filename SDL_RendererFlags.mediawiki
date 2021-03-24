@@ -19,10 +19,6 @@ An enumeration of flags used when creating a rendering context.
 |}
 
 Note that providing no flags gives priority to available SDL_RENDERER_ACCELERATED renderers.
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Structures ==
 :[[SDL_RendererInfo]]
 

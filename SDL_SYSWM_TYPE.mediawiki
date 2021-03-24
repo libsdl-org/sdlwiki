@@ -38,10 +38,6 @@ An enumeration of the various supported windowing subsystems.
 |SDL_SYSWM_VIVANTE
 |Vivante (>= SDL 2.0.5)
 |}
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Structures ==
 :[[SDL_SysWMinfo]]
 :[[SDL_SysWMmsg]]

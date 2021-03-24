@@ -14,10 +14,6 @@ An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
 |SDL_TEXTUREMODULATE_ALPHA
 |srcA = srcA * alpha
 |}
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Structures ==
 :[[SDL_RendererInfo]]
 

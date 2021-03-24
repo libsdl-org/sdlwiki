@@ -25,10 +25,6 @@ const char* SDL_GetInputDeviceName(int index)
 == Return Value ==
 Returns the name of the device with the specified '''index''',,; call [[SDL_GetError]]() for more information,,.
 <span style="color: green;">Error state?  Source?</span>
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_GetNumInputDevices]] ???
 

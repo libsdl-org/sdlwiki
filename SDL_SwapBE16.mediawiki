@@ -16,10 +16,6 @@ Uint16 SDL_SwapBE16(Uint16 x)
 
 == Return Value ==
 Returns the native 16-bit value.
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_Swap16]]
 :[[SDL_SwapLE16]]

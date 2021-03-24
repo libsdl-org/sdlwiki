@@ -17,10 +17,6 @@ float SDL_SwapFloat(float x)
 
 == Return Value ==
 Returns the swapped value.
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_SwapFloatBE]]
 :[[SDL_SwapFloatLE]]

@@ -14,10 +14,6 @@ An enumeration of texture access patterns.
 |SDL_TEXTUREACCESS_TARGET
 |can be used as a render target
 |}
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_LockTexture]]

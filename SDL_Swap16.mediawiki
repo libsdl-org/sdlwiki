@@ -16,10 +16,6 @@ Uint16 SDL_Swap16(Uint16 x)
 
 == Return Value ==
 Returns the swapped value.
-
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
 :[[SDL_SwapBE16]]
 :[[SDL_SwapLE16]]
