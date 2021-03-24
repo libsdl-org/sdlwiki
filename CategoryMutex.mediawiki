@@ -46,4 +46,5 @@ The SDL mutex is implemented as a recursive mutex so you can nest lock and unloc
 * [[SDL_TryLockMutex]]
 * [[SDL_UnlockMutex]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

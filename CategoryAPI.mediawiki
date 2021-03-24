@@ -594,4 +594,5 @@
 * [[SDLFunctionTemplate]]
 * [[SGFunctions]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

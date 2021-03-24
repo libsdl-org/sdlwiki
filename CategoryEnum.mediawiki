@@ -52,4 +52,5 @@ This category contains all the (public) enumerations for SDL.
 * [[SDLEnumTemplate]]
 * [[SGEnumerations]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

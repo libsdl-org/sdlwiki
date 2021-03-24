@@ -48,4 +48,5 @@ SDL_BYTEORDER is a macro that corresponds to the byte order used by the processo
 * [[SDL_SwapLE32]]
 * [[SDL_SwapLE64]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

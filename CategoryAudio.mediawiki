@@ -54,4 +54,5 @@ This category contains functions for handling audio devices and audio input/outp
 * [[SDL_UnlockAudio]]
 * [[SDL_UnlockAudioDevice]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

@@ -121,4 +121,5 @@ This category contains functions for handling display and window actions.
 * [[SDL_WindowEventID]]
 * [[SDL_WindowFlags]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

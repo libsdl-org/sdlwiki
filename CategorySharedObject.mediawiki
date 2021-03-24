@@ -23,4 +23,5 @@ This category contains functions for handling shared objects.
 * [[SDL_LoadObject]]
 * [[SDL_UnloadObject]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

@@ -46,4 +46,5 @@ This category contains functions for handling inputs from joysticks.
 * [[SDL_JoystickUpdate]]
 * [[SDL_NumJoysticks]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

@@ -60,4 +60,5 @@ If you are running your game from Steam, the game controller mapping is automati
 * [[SDL_GameControllerUpdate]]
 * [[SDL_IsGameController]]
 <!-- END CATEGORY LIST -->
-----\n[[CategoryCategory]], [[CategoryDraft]]
+----
+[[CategoryCategory]], [[CategoryDraft]]

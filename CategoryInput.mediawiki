@@ -41,4 +41,5 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 * [[SDL_IsDeviceDisconnected]]
 * [[SDL_RedetectInputDevices]]
 <!-- END CATEGORY LIST -->
-----\n[[CategoryCategory]], [[CategoryDraft]]
+----
+[[CategoryCategory]], [[CategoryDraft]]

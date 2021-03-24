@@ -37,4 +37,5 @@ Include file for SDL sensor event handling.
 * [[SDL_SensorType]]
 * [[SDL_SensorUpdate]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

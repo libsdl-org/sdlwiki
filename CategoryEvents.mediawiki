@@ -82,4 +82,5 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 * [[SDL_WindowEvent]]
 * [[SDL_WindowEventID]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

@@ -32,4 +32,5 @@ This category contains functions for advanced, platform-specific functionality.
 * [[SDL_WinRTGetFSPathUNICODE]]
 * [[SDL_WinRTGetFSPathUTF8]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

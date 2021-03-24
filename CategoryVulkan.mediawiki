@@ -32,4 +32,5 @@ The general flow of a Vulkan backed SDL application will be the following:
 * [[SDL_Vulkan_LoadLibrary]]
 * [[SDL_Vulkan_UnloadLibrary]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

@@ -25,4 +25,5 @@ The SDL error messages are in English.
 * [[SDL_GetError]]
 * [[SDL_SetError]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+----
+CategoryCategory

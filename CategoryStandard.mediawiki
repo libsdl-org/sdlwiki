@@ -26,4 +26,5 @@ This category contains additional types, functions, enums and defines for SDL. T
 * [[SDL_acos]]
 * [[SDL_bool]]
 <!-- END CATEGORY LIST -->
-----\n[[CategoryCategory]], [[CategoryDraft]]
+----
+[[CategoryCategory]], [[CategoryDraft]]
