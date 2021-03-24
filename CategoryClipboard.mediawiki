@@ -23,5 +23,10 @@ This category contains functions for clipboard handling.
 * [[SDL_HasClipboardText]]
 * [[SDL_SetClipboardText]]
 <!-- END CATEGORY LIST -->
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_GetClipboardText]]
+* [[SDL_HasClipboardText]]
+* [[SDL_SetClipboardText]]
+<!-- END CATEGORY LIST -->
 ----
 CategoryCategory

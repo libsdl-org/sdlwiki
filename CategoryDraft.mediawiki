@@ -1,6 +1,9 @@
 = CategoryDraft =
 
 <!-- BEGIN CATEGORY LIST -->
+* [[CategoryGameController]]
+* [[CategoryInput]]
+* [[CategoryStandard]]
 * [[CategoryTemplate]]
 * [[SDL_acos]]
 * [[SDL_AddHintCallback]]

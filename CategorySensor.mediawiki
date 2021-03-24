@@ -37,5 +37,22 @@ Include file for SDL sensor event handling.
 * [[SDL_SensorType]]
 * [[SDL_SensorUpdate]]
 <!-- END CATEGORY LIST -->
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_NumSensors]]
+* [[SDL_SensorClose]]
+* [[SDL_SensorFromInstanceID]]
+* [[SDL_SensorGetData]]
+* [[SDL_SensorGetDeviceInstanceID]]
+* [[SDL_SensorGetDeviceName]]
+* [[SDL_SensorGetDeviceNonPortableType]]
+* [[SDL_SensorGetDeviceType]]
+* [[SDL_SensorGetInstanceID]]
+* [[SDL_SensorGetName]]
+* [[SDL_SensorGetNonPortableType]]
+* [[SDL_SensorGetType]]
+* [[SDL_SensorOpen]]
+* [[SDL_SensorType]]
+* [[SDL_SensorUpdate]]
+<!-- END CATEGORY LIST -->
 ----
 CategoryCategory

@@ -30,5 +30,17 @@ This category contains functions for handling simple rectangles including overla
 * [[SDL_RectEquals]]
 * [[SDL_UnionRect]]
 <!-- END CATEGORY LIST -->
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_EnclosePoints]]
+* [[SDL_HasIntersection]]
+* [[SDL_IntersectRect]]
+* [[SDL_IntersectRectAndLine]]
+* [[SDL_Point]]
+* [[SDL_PointInRect]]
+* [[SDL_Rect]]
+* [[SDL_RectEmpty]]
+* [[SDL_RectEquals]]
+* [[SDL_UnionRect]]
+<!-- END CATEGORY LIST -->
 ----
 CategoryCategory

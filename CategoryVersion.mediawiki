@@ -40,5 +40,16 @@ SDL_revision.h must be included in your program explicitly if you want to use th
 * [[SDL_VERSION_ATLEAST]]
 * [[SDL_VERSIONNUM]]
 <!-- END CATEGORY LIST -->
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_COMPILEDVERSION]]
+* [[SDL_GetRevision]]
+* [[SDL_GetRevisionNumber]]
+* [[SDL_GetVersion]]
+* [[SDL_REVISION]]
+* [[SDL_VERSION]]
+* [[SDL_version]]
+* [[SDL_VERSION_ATLEAST]]
+* [[SDL_VERSIONNUM]]
+<!-- END CATEGORY LIST -->
 ----
 CategoryCategory
