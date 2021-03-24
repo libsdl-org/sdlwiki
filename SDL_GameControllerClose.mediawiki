@@ -49,14 +49,6 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 :[[SDL_GameControllerOpen]]
 
 
-== SDL_GameControllerClose  ==
-
-= SDL_GameControllerClose  =
-Use this function to close a game controller previously opened with [[SDL_GameControllerOpen]]().
-
-
-
-
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
