@@ -38,7 +38,6 @@ if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_RWclose]]

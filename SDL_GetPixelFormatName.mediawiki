@@ -38,7 +38,6 @@ const char* surfacePixelFormatName = SDL_GetPixelFormatName(pixelFormatEnum);
 SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
 // prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
 </syntaxhighlight>
-
 ----
 [[CategoryAPI]], [[CategoryPixels]]
 

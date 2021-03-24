@@ -52,7 +52,6 @@ SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 ...
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetTextureColorMod]]

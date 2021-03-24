@@ -102,7 +102,6 @@ exit:
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateCursor]]

@@ -37,7 +37,6 @@ to set the hint with override priority instead.
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetHint]]

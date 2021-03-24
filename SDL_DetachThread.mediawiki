@@ -56,7 +56,6 @@ SDL_Thread *thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 SDL_DetachThread(thread);  /* will go away on its own upon completion. */
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateThread]]

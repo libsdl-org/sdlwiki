@@ -36,7 +36,6 @@ SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param
 SDL_RemoveTimer(my_timer_id);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_AddTimer]]

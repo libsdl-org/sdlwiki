@@ -48,7 +48,6 @@ SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 SDL_Quit();
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_Init]]

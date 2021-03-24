@@ -40,7 +40,6 @@ This function is available since SDL 2.0.0.
 
 <<Include(SDL_UserEvent, , , from="== Code Examples ==", to="== Remarks ==")>>
 
-
 == Related Functions ==
 
 :[[SDL_PushEvent]]

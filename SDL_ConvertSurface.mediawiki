@@ -47,7 +47,6 @@ SDL_FreeFormat(format);
 
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_AllocFormat]]

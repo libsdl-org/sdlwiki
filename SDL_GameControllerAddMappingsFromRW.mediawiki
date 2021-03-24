@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerAddMappingsFromRW =
 
 Load a set of Game Controller mappings from a seekable SDL data stream.
@@ -62,8 +59,6 @@ This function is available since SDL 2.0.2.
 <syntaxhighlight lang='c++'>
 SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile("gamecontrollerdb.txt", "rb"), 1);
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

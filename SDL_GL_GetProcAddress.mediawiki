@@ -51,7 +51,6 @@ glActiveTextureARB_ptr=(GL_ActiveTextureARB_Func) SDL_GL_GetProcAddress("glActiv
 glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GL_ExtensionSupported]]

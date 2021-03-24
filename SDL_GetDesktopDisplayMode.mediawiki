@@ -42,7 +42,6 @@ if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetCurrentDisplayMode]]

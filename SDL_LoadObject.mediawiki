@@ -31,7 +31,6 @@ error; call [[SDL_GetError]]() for more information.
 SDL_LoadObject("mylib.so");
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_LoadFunction]]

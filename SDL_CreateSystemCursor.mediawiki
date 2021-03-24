@@ -1,14 +1,11 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_CreateSystemCursor =
 
 Create a system cursor.
@@ -46,8 +43,6 @@ SDL_Cursor* cursor;
 cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
 SDL_SetCursor(cursor);
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

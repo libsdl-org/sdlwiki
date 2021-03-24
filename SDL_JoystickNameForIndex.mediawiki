@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_JoystickNameForIndex =
 
 Get the implementation dependent name of a joystick.
@@ -35,7 +32,6 @@ This can be called before any joysticks are opened.
 
 == Code Examples ==
 
-
 <syntaxhighlight lang='c++'>
 /* Print the names of all attached joysticks */
 int num_joy, i;
@@ -45,7 +41,6 @@ for (i = 0; i < num_joy; ++i) {
     printf("%s\n", SDL_JoystickNameForIndex(i));
 }
 </syntaxhighlight>
-
 
 == Related Functions ==
 

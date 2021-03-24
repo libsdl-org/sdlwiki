@@ -122,7 +122,6 @@ SDL_FreeSurface(surf);
 stbi_image_free(data);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateRGBSurface]]

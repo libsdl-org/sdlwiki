@@ -18,7 +18,6 @@ if (*error) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetError]]

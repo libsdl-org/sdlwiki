@@ -1,14 +1,11 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_ShowMessageBox =
 
 Create a modal message box.
@@ -112,8 +109,6 @@ int main(int argc, char *argv[])
     return 0;
 }
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_Direct3D9GetAdapterIndex =
 
 Get the D3D9 adapter index that matches the specified display index.

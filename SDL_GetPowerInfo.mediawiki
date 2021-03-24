@@ -58,7 +58,6 @@ if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
     }
 }
 </syntaxhighlight>
-
 ----
 [[CategoryAPI]], [[CategoryPower]]
 

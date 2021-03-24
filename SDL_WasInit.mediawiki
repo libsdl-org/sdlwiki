@@ -56,7 +56,6 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_Init]]

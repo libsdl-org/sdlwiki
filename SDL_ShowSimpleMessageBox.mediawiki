@@ -68,7 +68,6 @@ SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
                          NULL);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_ShowMessageBox]]

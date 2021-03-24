@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_GetMouseState =
 
 Retrieve the current state of the mouse.
@@ -48,7 +45,6 @@ if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
     SDL_Log("Mouse Button 1 (left) is pressed.");
 }
 </syntaxhighlight>
-
 
 == Related Functions ==
 

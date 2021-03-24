@@ -100,7 +100,6 @@ int main(int argc, char *argv[]) {
 }
 
 </syntaxhighlight>
-
 ----
 [[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
 

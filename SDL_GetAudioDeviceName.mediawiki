@@ -48,7 +48,6 @@ for (i = 0; i < count; ++i) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetNumAudioDevices]]

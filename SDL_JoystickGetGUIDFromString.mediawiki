@@ -1,12 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
 = SDL_JoystickGetGUIDFromString =
 
 Convert a GUID string into a [[SDL_JoystickGUID]] structure.

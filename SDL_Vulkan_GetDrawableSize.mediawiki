@@ -71,10 +71,6 @@ height = CLAMP(height, capabilities.minImageExtent.height, capabilities.maxImage
 // vkCreateSwapchainKHR(...);
 </syntaxhighlight>
 
-
-
-
-
 == Related Functions ==
 
 :[[SDL_GetWindowSize]]

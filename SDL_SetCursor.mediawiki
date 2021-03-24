@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_SetCursor =
 
 Set the active cursor.
@@ -31,11 +28,9 @@ if this is desired for any reason.
 
 == Code Examples ==
 
-
 <syntaxhighlight lang='c++'>
 You can add your code example here
 </syntaxhighlight>
-
 
 == Related Functions ==
 

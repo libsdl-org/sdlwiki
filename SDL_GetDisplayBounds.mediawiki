@@ -40,7 +40,6 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetNumVideoDisplays]]

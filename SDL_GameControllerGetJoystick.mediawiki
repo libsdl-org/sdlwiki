@@ -1,12 +1,9 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerGetJoystick =
 
 Get the Joystick ID from a Game Controller.
@@ -63,8 +60,6 @@ for(i = 0; i < SDL_NumJoysticks(); ++i) {
     }
 }
 </syntaxhighlight>
-
-
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

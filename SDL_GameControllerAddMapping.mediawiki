@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerAddMapping =
 
 Add support for controllers that SDL is unaware of or to cause an existing controller to have a different binding.

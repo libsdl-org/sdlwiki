@@ -49,7 +49,6 @@ if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
 </syntaxhighlight>
 Note: Although this example uses [[SDL_Init]](), [[SDL_GetError]]() provides an error message for any failed SDL operation which supports error reporting, see the wiki page for each particular SDL function.
 
-
 == Related Functions ==
 
 :[[SDL_ClearError]]

@@ -68,7 +68,6 @@ if (myFancyFunction != NULL) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_LoadObject]]

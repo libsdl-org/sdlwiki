@@ -1,14 +1,11 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerGetBindForButton =
 
 Get the SDL joystick layer binding for a controller button mapping.
@@ -54,7 +51,6 @@ This function is available since SDL 2.0.0.
 == Related Structures ==
 
 :[[SDL_GameControllerButtonBind]]
-
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

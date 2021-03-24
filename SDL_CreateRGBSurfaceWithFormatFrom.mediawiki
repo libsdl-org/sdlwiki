@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_CreateRGBSurfaceWithFormatFrom =
 
 Allocate a new RGB surface with with a specific pixel format and existing pixel data.
@@ -102,8 +99,6 @@ SDL_FreeSurface(surf);
 // .. *and* the data used by the surface!
 stbi_image_free(data);
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_IsGameController =
 
 Check if the given joystick is supported by the game controller interface.
@@ -52,8 +49,6 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     }
 }
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

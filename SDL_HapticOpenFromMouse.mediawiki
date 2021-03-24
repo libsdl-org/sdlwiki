@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_HapticOpenFromMouse =
 
 Try to open a haptic device from the current mouse.

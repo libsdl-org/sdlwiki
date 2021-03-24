@@ -118,7 +118,6 @@ if (SDL_LoadWAV_RW(myRWops, 1, &wav_spec, &wav_buffer, &wav_length) == NULL) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_FreeWAV]]

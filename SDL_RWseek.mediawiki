@@ -61,7 +61,6 @@ if (rw != NULL) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_RWclose]]

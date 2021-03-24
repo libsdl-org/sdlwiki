@@ -37,7 +37,6 @@ every pixel.
 
 <<Include(SDL_RenderClear, , , from="== Code Examples ==", to="== Remarks ==")>>
 
-
 == Related Functions ==
 
 :[[SDL_RenderClear]]

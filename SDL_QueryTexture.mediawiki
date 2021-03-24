@@ -48,7 +48,6 @@ SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateTexture]]

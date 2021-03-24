@@ -48,7 +48,6 @@ SDL_DestroyMutex(mutex);
 </syntaxhighlight>
 <!-- # End Mutex Example -->
 
-
 == Related Functions ==
 
 :[[SDL_DestroyMutex]]

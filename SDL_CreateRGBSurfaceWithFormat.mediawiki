@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_CreateRGBSurfaceWithFormat =
 
 Allocate a new RGB surface with a specific pixel format.
@@ -64,8 +61,6 @@ format from [[SDL_PixelFormatEnum]].
         exit(1);
     }
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

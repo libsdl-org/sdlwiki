@@ -35,7 +35,6 @@ It is also an error to unlock a mutex that isn't locked at all.
 == Code Examples ==
 
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
-
 ----
 [[CategoryAPI]], [[CategoryMutex]]
 

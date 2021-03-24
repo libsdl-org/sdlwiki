@@ -93,7 +93,6 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_RenderDrawLines]]

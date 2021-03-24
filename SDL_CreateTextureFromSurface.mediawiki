@@ -75,7 +75,6 @@ surface = NULL;
 
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateTexture]]

@@ -34,7 +34,6 @@ other threads in the system (this is known as a "recursive mutex").
 == Code Examples ==
 
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
-
 ----
 [[CategoryAPI]], [[CategoryMutex]]
 

@@ -263,8 +263,6 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     SDL_RenderDrawPoint(renderer, -1, -1);
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_GL_MakeCurrent]]

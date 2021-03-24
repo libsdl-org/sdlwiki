@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_TryLockMutex =
 
 Try to lock a mutex without blocking.
@@ -63,7 +60,6 @@ if (status == 0) {
 
 SDL_DestroyMutex(mutex);
 </syntaxhighlight>
-
 
 == Related Functions ==
 

@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_JoystickGetBall =
 
 Get the ball axis change since the last poll.
@@ -60,7 +57,6 @@ if(SDL_JoystickGetBall(joy, 0, &delta_x, &delta_y)==-1)
   printf("TrackBall Read Error!\n");
 printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 </syntaxhighlight>
-
 
 == Related Functions ==
 

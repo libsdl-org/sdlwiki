@@ -58,7 +58,6 @@ The display modes are sorted in this priority:
     SDL_BITSPERPIXEL(mode.format), mode.w, mode.h);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetNumDisplayModes]]

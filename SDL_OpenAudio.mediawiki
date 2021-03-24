@@ -70,7 +70,6 @@ if (SDL_OpenAudio(&want, &have) < 0) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CloseAudio]]
@@ -82,7 +81,6 @@ if (SDL_OpenAudio(&want, &have) < 0) {
 == Related Structures ==
 
 :[[SDL_AudioSpec]]
-
 ----
 [[CategoryAPI]], CategoryAudio
 

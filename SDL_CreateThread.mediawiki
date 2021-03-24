@@ -95,7 +95,6 @@ Thread counter: 9
 Thread returned value: 10
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateThreadWithStackSize]]

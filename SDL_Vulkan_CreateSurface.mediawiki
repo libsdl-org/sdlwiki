@@ -50,8 +50,6 @@ VkSurfaceKHR surface;
 if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) handle_error();
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_Vulkan_GetInstanceExtensions]]

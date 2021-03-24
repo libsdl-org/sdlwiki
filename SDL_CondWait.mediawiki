@@ -41,7 +41,6 @@ time length of <code>[[SDL_MUTEX_MAXWAIT]]</code>.
 
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
-
 == Related Functions ==
 
 :[[SDL_CondBroadcast]]

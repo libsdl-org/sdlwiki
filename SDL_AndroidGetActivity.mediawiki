@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_AndroidGetActivity =
 
 Retrieve the Java instance of the Android activity class.
@@ -77,7 +74,6 @@ void showHome(void)
     // references will first be cleaned if main() returns (application exit).
 }
 </syntaxhighlight>
-
 
 == Related Functions ==
 

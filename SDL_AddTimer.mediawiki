@@ -53,7 +53,6 @@ your callback needs to adjust for variances.
 
 == Code Examples ==
 
-
 <syntaxhighlight lang='c++'>
 /* Start the timer; the callback below will be executed after the delay */
 
@@ -123,8 +122,6 @@ while (SDL_PollEvent (&event))
     }
 }
 </syntaxhighlight>
-
-
 
 == Related Functions ==
 

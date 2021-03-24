@@ -49,7 +49,6 @@ SDL_DestroyMutex(lock);
 </syntaxhighlight>
 <!-- # End Condition Variable Example -->
 
-
 == Related Functions ==
 
 :[[SDL_CondBroadcast]]

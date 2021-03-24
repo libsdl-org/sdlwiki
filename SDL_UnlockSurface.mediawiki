@@ -19,7 +19,6 @@ void SDL_UnlockSurface(SDL_Surface * surface);
 
 <<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>
 
-
 == Related Functions ==
 
 :[[SDL_LockSurface()]]

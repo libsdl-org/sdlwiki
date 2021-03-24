@@ -83,7 +83,6 @@ char* file_read(const char* filename) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_RWclose]]

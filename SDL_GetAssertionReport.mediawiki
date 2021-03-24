@@ -49,7 +49,6 @@ while (item) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_ResetAssertionReport]]

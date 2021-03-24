@@ -75,7 +75,6 @@ SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_ConvertAudio]]

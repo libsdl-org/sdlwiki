@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_ComposeCustomBlendMode =
 
 Compose a custom blend mode for renderers.
@@ -116,11 +113,9 @@ This function is available in SDL 2.0.6.
 
 == Code Examples ==
 
-
 <syntaxhighlight lang='c++'>
 You can add your code example here
 </syntaxhighlight>
-
 
 == Related Functions ==
 

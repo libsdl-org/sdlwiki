@@ -56,7 +56,6 @@ This function is thread-safe.
 Add a code example here.
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_PollEvent]]

@@ -61,7 +61,6 @@ wait_for_threads();
 SDL_DestroySemaphore(sem);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CreateSemaphore]]

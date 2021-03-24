@@ -1,13 +1,10 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerEventState =
 
 Query or change current state of Game Controller events.
@@ -54,7 +51,6 @@ printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 1 */
 printf("%i\n", SDL_GameControllerEventState(SDL_IGNORE)); /* prints 0 */
 printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 </syntaxhighlight>
-
 
 == Related Functions ==
 

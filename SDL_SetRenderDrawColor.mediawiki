@@ -54,7 +54,6 @@ rectangle.h = 50;
 SDL_RenderFillRect(renderer, &rectangle);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetRenderDrawColor]]

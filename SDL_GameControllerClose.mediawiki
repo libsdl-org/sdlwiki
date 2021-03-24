@@ -1,14 +1,11 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerClose =
 
 Close a game controller previously opened with [[SDL_GameControllerOpen]]().
@@ -42,12 +39,9 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 }
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_GameControllerOpen]]
-
 
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]

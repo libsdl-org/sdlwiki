@@ -25,7 +25,6 @@ SDL_ResetAssertionReport();
 printf("%p\n", SDL_GetAssertionReport());  // NULL.
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GetAssertionReport]]

@@ -65,7 +65,6 @@ SDL_DestroySemaphore(sem);
 </syntaxhighlight>
 <!-- # End Semaphore Example -->
 
-
 == Related Functions ==
 
 :[[SDL_DestroySemaphore]]

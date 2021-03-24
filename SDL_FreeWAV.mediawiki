@@ -25,7 +25,6 @@ After a WAVE file has been opened with [[SDL_LoadWAV]]() or
 
 <<Include(SDL_LoadWAV, , , from="== Code Examples ==", to="== Remarks ==")>>
 
-
 == Related Functions ==
 
 :[[SDL_LoadWAV]]

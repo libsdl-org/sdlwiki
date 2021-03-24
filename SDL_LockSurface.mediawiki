@@ -48,8 +48,6 @@ SDL_UnlockSurface(surface);
 /* Surface is now unlocked */
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_MUSTLOCK]]

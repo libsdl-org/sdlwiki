@@ -65,7 +65,6 @@ SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &b);
 printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_GL_GetAttribute]]

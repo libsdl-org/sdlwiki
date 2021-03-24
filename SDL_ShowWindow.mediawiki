@@ -21,7 +21,6 @@ void SDL_ShowWindow(SDL_Window * window);
 SDL_ShowWindow(window);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_HideWindow]]

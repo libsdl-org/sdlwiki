@@ -24,7 +24,6 @@ waiting on it.
 
 <<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
-
 == Related Functions ==
 
 :[[SDL_CreateSemaphore]]

@@ -76,8 +76,6 @@ VkInstance instance;
 VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_Vulkan_CreateSurface]]

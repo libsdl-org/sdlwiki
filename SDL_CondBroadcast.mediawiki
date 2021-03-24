@@ -60,7 +60,6 @@ SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_CondSignal]]

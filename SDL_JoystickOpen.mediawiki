@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_JoystickOpen =
 
 Open a joystick for use.
@@ -68,7 +65,6 @@ if (SDL_NumJoysticks() > 0) {
     }
 }
 </syntaxhighlight>
-
 
 == Related Functions ==
 

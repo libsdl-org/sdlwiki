@@ -27,7 +27,6 @@ depending on the platform.
 
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
-
 == Related Functions ==
 
 :[[SDL_CreateMutex]]

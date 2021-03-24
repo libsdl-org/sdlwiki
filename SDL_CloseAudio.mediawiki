@@ -31,7 +31,6 @@ if (SDL_OpenAudio(&want, NULL) == 0) {
 }
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_OpenAudio]]

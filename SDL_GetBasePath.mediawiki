@@ -64,8 +64,6 @@ void InitializeDataPath() {
 
 </syntaxhighlight>
 
-
-
 == Related Functions ==
 
 :[[SDL_GetPrefPath]]

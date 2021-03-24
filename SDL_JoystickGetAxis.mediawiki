@@ -1,10 +1,7 @@
 
 == Draft ==
 
-
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_JoystickGetAxis =
 
 Get the current state of an axis control on a joystick.
@@ -55,7 +52,6 @@ Sint16 x_move, y_move;
 x_move = SDL_JoystickGetAxis(joy1, 0);
 y_move = SDL_JoystickGetAxis(joy1, 1);
 </syntaxhighlight>
-
 
 == Related Functions ==
 

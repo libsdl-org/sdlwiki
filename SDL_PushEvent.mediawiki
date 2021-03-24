@@ -55,7 +55,6 @@ other code that also wants its own custom event types.
     SDL_PushEvent(&sdlevent);
 </syntaxhighlight>
 
-
 == Related Functions ==
 
 :[[SDL_PeepEvents]]
