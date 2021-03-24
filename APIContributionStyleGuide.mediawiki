@@ -120,7 +120,6 @@ The Remarks section provides additional information related to other sections on
 : ''Example'': [[SDL_BuildAudioCVT]]()
 
 
-----
 == The Bottom Line ==
 Our goal is to create clean, consistent, helpful, user-friendly documentation.  Please try to make your changes or additions fit into the existing framework, and retain the same look and feel as much as possible.  
 
@@ -130,7 +129,6 @@ When in doubt
 
 If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> with your thoughts.  We are happy to have the participation!
 
-----
 == Disclaimer ==
 ```#!wiki note
 All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>>.

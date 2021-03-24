@@ -52,7 +52,6 @@ To help you with this we have created a series of resources:
 === Email ===
 : For anything that is not addressed in the above you can always send an email to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
-------
 == Disclaimer ==
 ```#!wiki note
 All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.

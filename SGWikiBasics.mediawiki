@@ -785,7 +785,6 @@ Some other wiki help that might be of interest or helpful to find quickly:
 
 
 <!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following )-> Start SG Include here. -->
-----
 == Resources ==
 
 Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
@@ -800,7 +799,6 @@ If you have questions that aren't addressed here:
 
 If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
 
-------
 == Disclaimer ==
 ```#!wiki note
 All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.

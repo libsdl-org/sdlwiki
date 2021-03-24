@@ -30,4 +30,4 @@ There is an implicit (re)detect upon [[SDL_Init]]().
 :[[SDL_OtherFunction]]
 
 ----
-Category!API, [[CategoryInput]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryInput]], [[CategoryDraft]]
