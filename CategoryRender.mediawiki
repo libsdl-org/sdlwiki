@@ -1,7 +1,6 @@
-
 = 2D Accelerated Rendering =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_render.h SDL_render.h]
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/main/include/SDL_render.h SDL_render.h]
 
 
 == Introduction ==
@@ -20,17 +19,7 @@ The texture images can have an additional color tint or alpha modulation applied
 
 For advanced functionality like particle effects or actual 3D you should use SDL's OpenGL/Direct3D support or one of the many available 3D engines.
 
-This API is not designed to be used from multiple threads, see [https://bugzilla.libsdl.org/show_bug.cgi?id=1995 SDL bug #1995] for details.
-
-== Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryRender -title:SGEnumerations)>>
-
-== Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryRender -title:SGStructures)>>
-
-== Functions ==
-<<FullSearchCached(category:CategoryRender -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
+This API is not designed to be used from multiple threads, see [https://github.com/libsdl-org/SDL/issues/986 SDL issue #986] for details.
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_BlendFactor]]
@@ -110,4 +99,6 @@ This API is not designed to be used from multiple threads, see [https://bugzilla
 * [[SDL_UpdateTexture]]
 * [[SDL_UpdateYUVTexture]]
 <!-- END CATEGORY LIST -->
-----\nCategoryCategory
+
+----
+[[CategoryCategory]]
