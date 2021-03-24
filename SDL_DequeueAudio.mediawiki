@@ -85,7 +85,7 @@ This function is available since SDL 2.0.5.
 :[[SDL_GetQueuedAudioSize]]
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[[CategoryAPI]], [[CategoryAudio]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -21,6 +21,6 @@ Returns the window with keyboard focus.
 
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

@@ -27,6 +27,6 @@ void SDL_JoystickClose(SDL_Joystick *joystick);
 :[[SDL_JoystickOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

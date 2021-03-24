@@ -130,6 +130,6 @@ You can add your code example here
 :[[SDL_GetTextureBlendMode]]
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[[CategoryAPI]], [[CategoryRender]], [[CategoryDraft]]
 
 

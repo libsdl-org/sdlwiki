@@ -1092,3 +1092,5 @@ To look up a scancode or keycode by decimal or hexadecimal value you can use the
 :[[SDL_GetScancodeFromKey]]
 :[[SDL_GetKeyName]]
 :[[SDL_GetScancodeName]]
+----
+[[CategoryDraft]]

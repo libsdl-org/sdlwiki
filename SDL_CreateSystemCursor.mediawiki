@@ -54,7 +54,7 @@ SDL_SetCursor(cursor);
 :[[SDL_FreeCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

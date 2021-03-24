@@ -55,4 +55,4 @@ For more information see: [http://hg.libsdl.org/SDL/file/default/docs/README-ges
 :[[SDL_Event]]
 
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]

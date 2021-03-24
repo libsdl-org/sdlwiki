@@ -30,6 +30,6 @@ On some platforms using this function activates the screen keyboard.
 :[[SDL_StopTextInput]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

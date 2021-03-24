@@ -36,5 +36,5 @@ By default the Direct3D device is created with thread-safety disabled.
 This hint is available since SDL 2.0.1.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

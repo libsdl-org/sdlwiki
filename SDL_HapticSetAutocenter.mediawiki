@@ -45,6 +45,6 @@ Device must support the [[SDL_HAPTIC_AUTOCENTER]] feature.
 :[[SDL_HapticQuery]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

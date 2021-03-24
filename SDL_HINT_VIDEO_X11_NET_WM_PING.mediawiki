@@ -35,5 +35,5 @@ The hint is checked in [[SDL_CreateWindow]]().
 This hint is available since SDL 2.0.4.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

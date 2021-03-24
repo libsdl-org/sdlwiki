@@ -36,6 +36,6 @@ Returns key code, or `SDLK_UNKNOWN` if the name wasn't recognized; call
 :[[SDL_GetScancodeFromName]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

@@ -36,5 +36,5 @@ The default value is "0".  This hint must be set before [[SDL_Init]]().
 This hint is available since SDL 2.0.4.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

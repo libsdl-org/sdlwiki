@@ -38,6 +38,6 @@ See [[SDL_Scancode]] for details.
 :[[SDL_GetScancodeName]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

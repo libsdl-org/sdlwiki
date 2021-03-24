@@ -27,6 +27,6 @@ void SDL_HapticClose(SDL_Haptic * haptic);
 :[[SDL_HapticOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

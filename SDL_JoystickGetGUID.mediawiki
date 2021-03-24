@@ -39,6 +39,6 @@ This function requires an open joystick.
 :[[SDL_JoystickGetGUIDString]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

@@ -63,5 +63,5 @@ This enumeration is available since SDL 2.0.4.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

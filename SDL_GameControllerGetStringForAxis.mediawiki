@@ -42,6 +42,6 @@ The caller should not [[SDL_free]]() the returned string.
 :[[SDL_GameControllerGetAxisFromString]]
 
 ----
-[[CategoryAPI]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 
 

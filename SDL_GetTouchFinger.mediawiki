@@ -45,7 +45,7 @@ The returned resource is owned by SDL and should not be deallocated.
 :[[SDL_RecordGesture]]
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

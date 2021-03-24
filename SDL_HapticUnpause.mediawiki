@@ -38,6 +38,6 @@ Call to unpause after [[SDL_HapticPause]]().
 :[[SDL_HapticPause]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

@@ -27,6 +27,6 @@ void SDL_SetTextInputRect(SDL_Rect *rect);
 :[[SDL_StartTextInput]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

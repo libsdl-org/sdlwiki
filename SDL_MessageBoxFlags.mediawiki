@@ -43,5 +43,5 @@ An enumeration of message box flags (e.g. if supported message box will display 
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

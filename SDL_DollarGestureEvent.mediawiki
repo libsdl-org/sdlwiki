@@ -61,4 +61,4 @@ For more information see: [http://hg.libsdl.org/SDL/file/default/docs/README-ges
 :[[SDL_MultiGestureEvent]]
 
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]

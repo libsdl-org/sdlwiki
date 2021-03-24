@@ -53,5 +53,5 @@ A structure that contains game controller button event information.
 :[[SDL_GameControllerEventState]]
 
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

@@ -56,6 +56,6 @@ trigger:b7" </code><code></code>
 :[[SDL_GameControllerMappingForGUID]]
 
 ----
-[[CategoryAPI]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 
 

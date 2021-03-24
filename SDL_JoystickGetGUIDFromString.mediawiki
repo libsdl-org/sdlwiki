@@ -41,6 +41,6 @@ will not be useful.
 :[[SDL_JoystickGetGUIDString]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

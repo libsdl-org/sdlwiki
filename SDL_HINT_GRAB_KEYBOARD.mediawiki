@@ -33,5 +33,5 @@ By default SDL will not grab the keyboard so system shortcuts still work.
 <!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

@@ -35,6 +35,6 @@ call [[SDL_GetError]]() for more information.
 :[[SDL_JoystickOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

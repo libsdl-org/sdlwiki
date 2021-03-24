@@ -49,6 +49,6 @@ if (SDL_HapticRumbleSupported(dev)) {
 :[[SDL_HapticRumbleStop]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

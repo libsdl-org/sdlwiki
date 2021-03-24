@@ -32,5 +32,5 @@ This is also known as Z-order.  The variable can take a negative or positive val
 This hint is available since SDL 2.0.5.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

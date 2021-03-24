@@ -37,5 +37,5 @@ By default SDL will disable the screensaver.
 This hint is available since SDL 2.0.2.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

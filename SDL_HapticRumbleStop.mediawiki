@@ -36,6 +36,6 @@ Returns 0 on success or a negative error code on failure; call
 :[[SDL_HapticRumbleSupported]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

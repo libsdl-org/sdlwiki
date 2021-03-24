@@ -42,6 +42,6 @@ This function will flush any pending mouse motion.
 :[[SDL_GetRelativeMouseMode]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

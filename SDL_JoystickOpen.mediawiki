@@ -76,6 +76,6 @@ if (SDL_NumJoysticks() > 0) {
 :[[SDL_JoystickInstanceID]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

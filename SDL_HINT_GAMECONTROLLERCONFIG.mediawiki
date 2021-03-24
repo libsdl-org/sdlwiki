@@ -30,5 +30,5 @@ This hint must be set before calling [[SDL_Init]](SDL_INIT_GAMECONTROLLER).
 You can update mappings after the system is initialized with [[SDL_GameControllerMappingForGUID]]() and [[SDL_GameControllerAddMapping]]().
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

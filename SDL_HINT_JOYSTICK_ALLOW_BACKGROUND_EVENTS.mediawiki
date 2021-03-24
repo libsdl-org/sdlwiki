@@ -31,5 +31,5 @@ By default joystick (and gamecontroller) events are not enabled when the applica
 This hint may be set at any time.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

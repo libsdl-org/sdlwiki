@@ -47,4 +47,4 @@ Could this statement be reworded to be more clear esp. for non-English speakers?
 
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]

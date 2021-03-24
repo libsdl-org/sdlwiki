@@ -66,7 +66,7 @@ This function is available since SDL 2.0.5.
 :[[SDL_GetNumVideoDisplays]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

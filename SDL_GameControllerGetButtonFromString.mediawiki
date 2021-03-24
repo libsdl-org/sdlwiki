@@ -41,7 +41,7 @@ mapping strings for the underlying joystick device into the consistent
 function unless you are parsing [[SDL_GameController]] mappings in your own
 code.
 ----
-[[CategoryAPI]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -36,5 +36,5 @@ By default this hint is not set and the APK expansion files are not searched.
 This hint is available since SDL 2.0.4.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

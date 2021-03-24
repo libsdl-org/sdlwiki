@@ -57,6 +57,6 @@ if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
 :[[SDL_PumpEvents]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

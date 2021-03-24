@@ -26,6 +26,6 @@ Returns SDL_TRUE if relative mode is enabled or SDL_FALSE otherwise.
 :[[SDL_SetRelativeMouseMode]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

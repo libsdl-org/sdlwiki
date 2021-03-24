@@ -35,6 +35,6 @@ Use this function to free cursor resources created with
 :[[SDL_CreateSystemCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

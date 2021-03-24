@@ -57,6 +57,6 @@ for(i = 0; i < num_joy; i++)
 :[[SDL_JoystickOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

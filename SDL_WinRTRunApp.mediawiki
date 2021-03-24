@@ -41,7 +41,7 @@ This function is available since SDL 2.0.3.
 
 
 ----
-[[CategoryAPI]], [[CategoryInit]]
+[[CategoryAPI]], [[CategoryInit]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

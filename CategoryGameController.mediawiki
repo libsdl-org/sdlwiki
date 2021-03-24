@@ -34,4 +34,4 @@ If you are running your game from Steam, the game controller mapping is automati
 <<FullSearchCached(category:CategoryGameController -CategoryEnum -title:CategoryStruct)>>
 
 ----
-CategoryCategory
+[[CategoryCategory]], [[CategoryDraft]]

@@ -165,6 +165,6 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 :[[SDL_ShowCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

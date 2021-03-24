@@ -55,6 +55,6 @@ This function is available since SDL 2.0.0.
 :[[SDL_GetScancodeFromName]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

@@ -27,4 +27,4 @@ A structure that contains an efficient, driver-specific representation of pixel 
 :[[SDL_UpdateTexture]]
 
 ----
-CategoryStruct, CategoryRender
+CategoryStruct, CategoryRender, [[CategoryDraft]]

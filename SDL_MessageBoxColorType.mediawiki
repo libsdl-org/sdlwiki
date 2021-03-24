@@ -50,5 +50,5 @@ An enumeration of positions inside the colors array of [[SDL_MessageBoxColorSche
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

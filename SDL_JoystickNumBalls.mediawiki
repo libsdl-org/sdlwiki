@@ -41,6 +41,6 @@ Most joysticks do not have trackballs.
 :[[SDL_JoystickGetBall]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

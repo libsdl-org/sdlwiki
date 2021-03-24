@@ -61,6 +61,6 @@ printf("%i\n", SDL_GameControllerEventState(SDL_QUERY));  /* prints 0 */
 :[[SDL_JoystickEventState]]
 
 ----
-[[CategoryAPI]], [[CategoryGameController]]
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 
 

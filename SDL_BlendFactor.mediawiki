@@ -59,6 +59,6 @@ This enumeration is available since SDL 2.0.6.
 :[[SDL_SetTextureBlendMode]]
 
 ----
-[[CategoryEnum]], [[CategoryRender]]
+[[CategoryEnum]], [[CategoryRender]], [[CategoryDraft]]
 
 <!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->

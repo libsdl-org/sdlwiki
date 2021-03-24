@@ -38,6 +38,6 @@ This function generates a mouse motion event.
 :[[SDL_WarpMouseGlobal]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

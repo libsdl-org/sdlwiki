@@ -21,6 +21,6 @@ Returns the window with mouse focus.
 
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

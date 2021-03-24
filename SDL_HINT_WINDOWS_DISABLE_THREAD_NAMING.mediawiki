@@ -41,5 +41,5 @@ This hint is available since SDL 2.0.5.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

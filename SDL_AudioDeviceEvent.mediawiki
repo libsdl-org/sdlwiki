@@ -56,5 +56,5 @@ This structure is available since SDL 2.0.4.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

@@ -62,5 +62,5 @@ See [[SDL_ShowMessageBox]]() for a complete code example.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryStruct]], [[CategoryVideo]]
+[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

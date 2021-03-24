@@ -48,5 +48,5 @@ This function is available since SDL 2.0.0.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryAPI]], [[CategoryIO]]
+[[CategoryAPI]], [[CategoryIO]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

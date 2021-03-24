@@ -68,7 +68,7 @@ void *GetMyThreadData(void)
 :[[SDL_TLSSet]]
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[[CategoryAPI]], [[CategoryThread]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

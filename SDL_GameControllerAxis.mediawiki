@@ -57,5 +57,5 @@ An enumeration of axes available from a controller.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryGameController]]
+[[CategoryEnum]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

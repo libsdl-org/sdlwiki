@@ -55,7 +55,7 @@ This function is available since SDL 2.0.5.
 :[[SDL_RenderSetLogicalSize]]
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[[CategoryAPI]], [[CategoryRender]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

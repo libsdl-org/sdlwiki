@@ -37,6 +37,6 @@ Returns 1 if the specified button is pressed, 0 otherwise.
 :[[SDL_JoystickNumButtons]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

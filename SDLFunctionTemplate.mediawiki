@@ -55,5 +55,5 @@ This function is available in SDL 2.X.Y
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryAPI]], [[CategoryHeader]]
+[[CategoryAPI]], [[CategoryHeader]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

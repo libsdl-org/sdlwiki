@@ -43,5 +43,5 @@ An enumeration of the different kinds of SDL_Joystick controls a [[SDL_GameContr
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryHeader]]
+[[CategoryEnum]], [[CategoryHeader]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

@@ -151,4 +151,4 @@ press          |     |
 :[[SDL_HapticNewEffect]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]]
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

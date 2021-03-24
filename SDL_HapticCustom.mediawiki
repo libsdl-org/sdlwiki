@@ -102,4 +102,4 @@ If '''channels''' is 1, the effect is rotated using the defined direction. Other
 :[[SDL_HapticNewEffect]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]]
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

@@ -28,7 +28,7 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 |a pointer to pass to every iteration of <code>callback</code>
 |}
 ----
-[[CategoryAPI]], [[CategorySystem]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -37,5 +37,5 @@ By default [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is t
 This hint is available since SDL 2.0.4.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

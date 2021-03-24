@@ -112,7 +112,7 @@ stbi_image_free(data);
 :[[SDL_FreeSurface]]
 
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[[CategoryAPI]], [[CategorySurface]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

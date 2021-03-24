@@ -50,5 +50,5 @@ A structure that contains info on how a logical SDL_GameController button or axi
 :[[SDL_GameControllerGetBindForButton]]
 
 ----
-[[CategoryStruct]], [[CategoryHeader]]
+[[CategoryStruct]], [[CategoryHeader]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

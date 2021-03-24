@@ -39,6 +39,6 @@ This function can be called before any joysticks are opened.
 :[[SDL_JoystickGetGUIDString]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

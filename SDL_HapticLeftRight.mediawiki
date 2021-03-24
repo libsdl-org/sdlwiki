@@ -58,5 +58,5 @@ The left/right effect is used to explicitly control the large and small motors, 
 :[[SDL_HapticNewEffect]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]]
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

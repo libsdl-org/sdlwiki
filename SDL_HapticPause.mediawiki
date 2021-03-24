@@ -42,6 +42,6 @@ can cause all sorts of weird errors.
 :[[SDL_HapticUnpause]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

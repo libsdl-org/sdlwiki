@@ -54,5 +54,5 @@ This hint only applies to the Emscripten platform.
 This hint is available since SDL2 port version_21 / Emscripten 1.39.14, and is in the official SDL [https://hg.libsdl.org/SDL/rev/dd5a816a4d61 development version] as of 2020-06.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

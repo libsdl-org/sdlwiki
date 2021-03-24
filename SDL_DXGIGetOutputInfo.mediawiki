@@ -53,7 +53,7 @@ This function is available since SDL 2.0.2.
 
 
 ----
-[[CategoryAPI]], [[CategorySystem]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

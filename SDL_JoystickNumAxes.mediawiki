@@ -41,6 +41,6 @@ device and platform.
 :[[SDL_JoystickOpen]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

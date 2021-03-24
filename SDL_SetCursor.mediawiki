@@ -44,6 +44,6 @@ You can add your code example here
 :[[SDL_ShowCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

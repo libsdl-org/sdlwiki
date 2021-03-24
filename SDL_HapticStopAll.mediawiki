@@ -29,6 +29,6 @@ Returns 0 on success or a negative error code on failure; call
 
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

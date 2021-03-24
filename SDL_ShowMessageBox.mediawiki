@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 :[[SDL_ShowSimpleMessageBox]]
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

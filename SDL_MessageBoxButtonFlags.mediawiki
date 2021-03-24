@@ -34,5 +34,5 @@ An enumeration of flags for [[SDL_MessageBoxButtonData]].
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

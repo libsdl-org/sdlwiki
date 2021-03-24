@@ -41,6 +41,6 @@ You should supply at least 33 bytes for pszGUID.
 :[[SDL_JoystickGetGUIDFromString]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

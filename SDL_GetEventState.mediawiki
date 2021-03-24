@@ -42,5 +42,5 @@ Returns SDL_DISABLE or SDL_ENABLE.
 
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

@@ -38,5 +38,5 @@ SDL_Init(SDL_INIT_EVERYTHING);
 You need to set this hint before you call [[SDL_Init]] otherwise it will not take effect.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

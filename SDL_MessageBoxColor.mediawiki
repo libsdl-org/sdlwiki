@@ -40,5 +40,5 @@ A structure that contains RGB value used in an [[SDL_MessageBoxColorScheme]].
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryStruct]], [[CategoryVideo]]
+[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

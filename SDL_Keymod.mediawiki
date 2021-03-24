@@ -69,4 +69,4 @@ These may be OR'd together.
 :[[SDL_SetModState]]
 
 ----
-[[CategoryEnum]], [[CategoryKeyboard]]
+[[CategoryEnum]], [[CategoryKeyboard]], [[CategoryDraft]]

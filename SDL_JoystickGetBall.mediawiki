@@ -67,6 +67,6 @@ printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 :[[SDL_JoystickNumBalls]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

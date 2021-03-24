@@ -66,6 +66,6 @@ if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
 :[[SDL_PumpEvents]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

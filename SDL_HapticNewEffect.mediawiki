@@ -40,6 +40,6 @@ failure; call [[SDL_GetError]]() for more information.
 :[[SDL_HapticUpdateEffect]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

@@ -35,5 +35,5 @@ If this variable is set to "0", the system timer resolution is not set.
 This hint may be set at any time.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

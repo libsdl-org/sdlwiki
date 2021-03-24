@@ -100,4 +100,4 @@ A structure that contains a template for a condition effect.
 :[[SDL_HapticNewEffect]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]]
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

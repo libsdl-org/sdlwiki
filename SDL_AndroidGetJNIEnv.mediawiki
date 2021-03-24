@@ -81,6 +81,6 @@ void showHome(void)
 :[[SDL_AndroidGetActivity]]
 
 ----
-[[CategoryAPI]], [[CategorySystem]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 
 

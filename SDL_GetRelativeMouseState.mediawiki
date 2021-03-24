@@ -46,6 +46,6 @@ initialization. You can pass NULL for either <code>x</code> or
 :[[SDL_GetMouseState]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

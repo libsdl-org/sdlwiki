@@ -37,6 +37,6 @@ SDL reports.
 :[[SDL_GetModState]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

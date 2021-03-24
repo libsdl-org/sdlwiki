@@ -84,7 +84,7 @@ void showHome(void)
 :[[SDL_AndroidGetJNIEnv]]
 
 ----
-[[CategoryAPI]], [[CategorySystem]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -20,6 +20,6 @@ void SDL_StopTextInput(void);
 :[[SDL_StartTextInput]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

@@ -32,6 +32,6 @@ the library. It is not necessary to free the cursor with
 :[[SDL_SetCursor]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]]
+[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 
 

@@ -54,6 +54,6 @@ printf("%i\n", SDL_JoystickEventState(SDL_QUERY));  /* prints 0 */
 :[[SDL_GameControllerEventState]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

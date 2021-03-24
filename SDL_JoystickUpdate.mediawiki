@@ -25,6 +25,6 @@ enabled.
 :[[SDL_JoystickEventState]]
 
 ----
-[[CategoryAPI]], [[CategoryJoystick]]
+[[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]
 
 

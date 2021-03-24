@@ -73,6 +73,6 @@ SDL_DestroyMutex(mutex);
 :[[SDL_UnlockMutex]]
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[[CategoryAPI]], [[CategoryMutex]], [[CategoryDraft]]
 
 

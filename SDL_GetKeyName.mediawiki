@@ -42,6 +42,6 @@ See [[SDL_Scancode]] and [[SDL_Keycode]] for details.
 :[[SDL_GetScancodeFromKey]]
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]]
+[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 
 

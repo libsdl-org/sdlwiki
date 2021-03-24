@@ -51,6 +51,6 @@ if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
 :[[SDL_HapticNumEffects]]
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]]
+[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 
 

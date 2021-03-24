@@ -140,4 +140,4 @@ Note that either the '''attack_level''' or the '''fade_level''' may be above the
 :[[SDL_HapticUpdateEffect]]
 
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]]
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

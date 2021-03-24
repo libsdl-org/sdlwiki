@@ -23,4 +23,4 @@ This category contains additional types, functions, enums and defines for SDL. T
 <<FullSearchCached(category:CategoryStandard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 ----
-CategoryCategory
+[[CategoryCategory]], [[CategoryDraft]]
