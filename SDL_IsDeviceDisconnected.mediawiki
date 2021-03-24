@@ -30,4 +30,4 @@ Returns ^# if the device is disconnected, # if it is connected^  ; call [[SDL_Ge
 :[[SDL_RedetectInputDevices]] ???
 
 ----
-Category<code></code>API, [[CategoryInput]], [[CategoryDraft]]
+CategoryAPI, [[CategoryInput]], [[CategoryDraft]]

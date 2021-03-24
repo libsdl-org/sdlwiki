@@ -21,7 +21,7 @@ This guide provides specific instructions for editing or adding your own content
 * Please remember to keep it accurate, simple, and easy to understand.
 
 * Do not remove, modify, or add to the markup above the page title (<code>#pragma</code> or <code>#acl</code> processing instructions, etc.) except:
-* On CategoryC<code></code>ompat pages, place the following markup above the page title, below the processing instructions or <span color="red">DRAFT</span> markup if present:
+* On CategoryCompat pages, place the following markup above the page title, below the processing instructions or <span color="red">DRAFT</span> markup if present:
 : ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
 
 * Do not remove, modify, or add section headings unless specifically mentioned below.
