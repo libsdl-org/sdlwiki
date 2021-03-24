@@ -1,4 +1,7 @@
-<span color="red">'''DRAFT'''</span>
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
 
 = SDL_StartTextInput =
 Use this function to start accepting Unicode text input events.

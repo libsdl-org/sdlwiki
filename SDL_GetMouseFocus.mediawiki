@@ -1,4 +1,7 @@
-<span color="red">'''DRAFT'''</span>
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
 
 = SDL_GetMouseFocus =
 Use this function to get the window which currently has mouse focus.

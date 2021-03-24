@@ -1,4 +1,7 @@
-<span color="red">'''DRAFT'''</span>
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
 
 = SDL_HapticClose =
 Use this function to close a haptic device previously opened with [[SDL_HapticOpen]]().

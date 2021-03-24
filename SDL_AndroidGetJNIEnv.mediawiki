@@ -1,4 +1,7 @@
-<span color="red">'''DRAFT'''</span>
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
 
 = SDL_AndroidGetJNIEnv =
 Use this function to retrieve the Java native interface object (JNIEnv) of the current thread on Android builds.

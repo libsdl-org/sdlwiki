@@ -1,4 +1,7 @@
-<span color="red">'''DRAFT'''</span>
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
 
 = SDL_FreeCursor =
 Use this function to free a cursor created with [[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or [[SDL_CreateSystemCursor]]().
