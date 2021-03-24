@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,40 +9,39 @@
 
 
 = SDL_GameControllerGetButtonFromString =
-Use this function to turn a string into a button mapping.
 
-
-
+Convert a string into an [[SDL_GameControllerButton]] enum.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_GameControllerButton SDL_GameControllerGetButtonFromString(const char* pchString)
+
+<syntaxhighlight lang='c'>
+SDL_GameControllerButton SDL_GameControllerGetButtonFromString(const char *str);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
-|'''pchString'''
-|a string
+|'''str'''
+|string representing a [[SDL_GameController]] axis
 |}
 
-
 == Return Value ==
-Returns a button mapping ([[SDL_GameControllerButton]]) on success or SDL_CONTROLLER_BUTTON_INVALID on failure.
+
+Returns the SDL_GameControllerButton enum corresponding to the input
+string, or <code>[[SDL_CONTROLLER_AXIS_INVALID]]</code> if no match was
+found.
 
 
 
 == Remarks ==
-''You can add useful comments here''
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
-== Version ==
-This function is available since SDL 2.0.0.
-
-== Related Functions ==
-:[[SDL_GameControllerGetAxisFromString]]
-
+This function is called internally to translate [[SDL_GameController]]
+mapping strings for the underlying joystick device into the consistent
+[[SDL_GameController]] mapping. You do not normally need to call this
+function unless you are parsing [[SDL_GameController]] mappings in your own
+code.
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

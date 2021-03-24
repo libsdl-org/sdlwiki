@@ -1,23 +1,26 @@
-
 = SDL_SensorGetDeviceInstanceID =
+
 Get the instance ID of a sensor.
 
-This can be called before any sensors are opened.
-
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''device_index'''
 |The sensor to get instance id from
 |}
 
 == Return Value ==
-The sensor instance ID, or -1 if device_index is out of range.
+
+Returns The sensor instance ID, or -1 if `device_index` is out of range.
+
 
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

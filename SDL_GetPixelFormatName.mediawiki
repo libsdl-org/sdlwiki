@@ -1,23 +1,35 @@
-
 = SDL_GetPixelFormatName =
-Use this function to get the human readable name of a pixel format.
 
+Get the human readable name of a pixel format.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_GetPixelFormatName(Uint32 format)
+
+<syntaxhighlight lang='c'>
+const char* SDL_GetPixelFormatName(Uint32 format);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''format'''
 |the pixel format to query
 |}
 
 == Return Value ==
-Returns the human readable name of the specified pixel format or <code>"SDL_PIXELFORMAT_UNKNOWN"</code> if the format isn't recognized.
+
+Returns the human readable name of the specified pixel format or
+<code>[[SDL_PIXELFORMAT_UNKNOWN]]</code> if the format isn't recognized.
+
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Surface* surface = ...; // a valid surface from wherever.
 SDL_PixelFormat* pixelFormat = surface->format;
@@ -27,14 +39,7 @@ SDL_Log("The surface's pixelformat is %s", surfacePixelFormatName);
 // prints something like "The surface's pixelformat is SDL_PIXELFORMAT_ABGR8888"
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

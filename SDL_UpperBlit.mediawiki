@@ -1,2 +1,23 @@
+= SDL_UpperBlit =
 
-SDL_UpperBlit() has been replaced by [[SDL_BlitSurface]]().
+Perform a fast blit from the source surface to the destination surface.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_UpperBlit
+    (SDL_Surface * src, const SDL_Rect * srcrect,
+     SDL_Surface * dst, SDL_Rect * dstrect);
+</syntaxhighlight>
+
+== Remarks ==
+
+[[SDL_UpperBlit]]() has been replaced by [[SDL_BlitSurface]](), which is
+merely a macro for this function with a less confusing name.
+
+== Related Functions ==
+
+:[[SDL_BlitSurface]]
+
+
+

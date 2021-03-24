@@ -1,20 +1,23 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_WarpMouseInWindow =
-Use this function to move the mouse to the given position within the window.
 
+Move the mouse cursor to the given position within the window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_WarpMouseInWindow(SDL_Window* window,
-                           int         x,
-                           int         y)
+
+<syntaxhighlight lang='c'>
+void SDL_WarpMouseInWindow(SDL_Window * window,
+                           int x, int y);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to move the mouse into, or NULL for the current mouse focus
@@ -27,10 +30,14 @@ void SDL_WarpMouseInWindow(SDL_Window* window,
 |}
 
 == Remarks ==
+
 This function generates a mouse motion event.
 
 == Related Functions ==
+
 :[[SDL_WarpMouseGlobal]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

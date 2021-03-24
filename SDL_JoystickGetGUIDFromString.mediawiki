@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -6,35 +8,39 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 
 = SDL_JoystickGetGUIDFromString =
-Use this function to convert a GUID string into a SDL_JoystickGUID structure.
 
-
-
+Convert a GUID string into a [[SDL_JoystickGUID]] structure.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char* pchGUID)
+
+<syntaxhighlight lang='c'>
+SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char *pchGUID);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''pchGUID'''
 |string containing an ASCII representation of a GUID
 |}
 
-
 == Return Value ==
+
 Returns a SDL_JoystickGUID structure.
 
 
 
 == Remarks ==
-Performs no error checking.  If this function is given a string containing an invalid GUID, the function will silently succeed, but the GUID generated will not be useful.
 
+Performs no error checking. If this function is given a string containing
+an invalid GUID, the function will silently succeed, but the GUID generated
+will not be useful.
 
 == Related Functions ==
+
 :[[SDL_JoystickGetGUIDString]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

@@ -1,31 +1,40 @@
-
 = SDL_HasEvents =
-Use this function to check for the existence of a range of event types in the event queue.
 
+Check for the existence of certain event types in the event queue.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasEvents(Uint32 minType,
-                       Uint32 maxType)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''minType'''
-|the minimum type of event to be queried; see [[SDL_EventType]] for details
+|the low end of event type to be queried, inclusive; see [[[[SDL_EventType]]]] for details
 |-
 |'''maxType'''
-|the maximum type of event to be queried; see [[SDL_EventType]] for details
+|the high end of event type to be queried, inclusive; see [[[[SDL_EventType]]]] for details
 |}
 
 == Return Value ==
-Returns SDL_TRUE if events with types in the range between '''minType''' and '''maxType''' are present, or SDL_FALSE if not.
+
+Returns SDL_TRUE if events with type >= `minType` and <= `maxType` are
+present, or [[SDL_FALSE]] if not.
+
+
 
 == Remarks ==
-If you need to check for a single event type, you can use [[SDL_HasEvent]]() instead.
+
+If you need to check for a single event type, use [[SDL_HasEvent]]()
+instead.
 
 == Related Functions ==
-:[[SDL_HasEvent]]
+
+:[[SDL_HasEvents]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

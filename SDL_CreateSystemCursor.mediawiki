@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,29 +10,37 @@
 
 
 = SDL_CreateSystemCursor =
-Use this function to create a system cursor.
 
-
-
+Create a system cursor.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id)
+
+<syntaxhighlight lang='c'>
+SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''id'''
-|a system cursor enum value; see [[#Remarks|Remarks]] for details
+|an [[SDL_SystemCursor]] enum value
 |}
 
-
 == Return Value ==
-Returns a cursor on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns a cursor on success or NULL on failure; call SDL_GetError() for
+more information.
+
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Cursor* cursor;
 cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
@@ -38,53 +48,13 @@ SDL_SetCursor(cursor);
 </syntaxhighlight>
 
 
-== Remarks ==
-'''id''' may be one of the following:
-{|
-|SDL_SYSTEM_CURSOR_ARROW
-|arrow
-|-
-|SDL_SYSTEM_CURSOR_IBEAM
-|i-beam
-|-
-|SDL_SYSTEM_CURSOR_WAIT
-|wait
-|-
-|SDL_SYSTEM_CURSOR_CROSSHAIR
-|crosshair
-|-
-|SDL_SYSTEM_CURSOR_WAITARROW
-|small wait cursor (or wait if not available)
-|-
-|SDL_SYSTEM_CURSOR_SIZENWSE
-|double arrow pointing northwest and southeast
-|-
-|SDL_SYSTEM_CURSOR_SIZENESW
-|double arrow pointing northeast and southwest
-|-
-|SDL_SYSTEM_CURSOR_SIZEWE
-|double arrow pointing west and east
-|-
-|SDL_SYSTEM_CURSOR_SIZENS
-|double arrow pointing north and south
-|-
-|SDL_SYSTEM_CURSOR_SIZEALL
-|four pointed arrow pointing north, south, east, and west
-|-
-|SDL_SYSTEM_CURSOR_NO
-|slashed circle or crossbones
-|-
-|SDL_SYSTEM_CURSOR_HAND
-|hand
-|}
-
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_FreeCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

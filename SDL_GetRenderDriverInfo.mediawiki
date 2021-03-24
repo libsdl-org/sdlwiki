@@ -1,15 +1,16 @@
-
 = SDL_GetRenderDriverInfo =
-Use this function to get information about a specific 2D rendering driver for the current display.
 
+Get info about a specific 2D rendering driver for the current display.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetRenderDriverInfo(int               index,
-                            SDL_RendererInfo* info)
+
+<syntaxhighlight lang='c'>
+int SDL_GetRenderDriverInfo(int index,
+                            SDL_RendererInfo * info);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''index'''
 |the index of the driver to query information about
@@ -19,14 +20,18 @@ int SDL_GetRenderDriverInfo(int               index,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_CreateRenderer]]
 :[[SDL_GetNumRenderDrivers]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

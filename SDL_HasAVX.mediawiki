@@ -1,33 +1,32 @@
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HasAVX =
-Use this function to determine whether the CPU has AVX features.
 
-
-
+Determine whether the CPU has AVX features.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasAVX(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasAVX(void);
 </syntaxhighlight>
 
-
 == Return Value ==
+
 Returns SDL_TRUE if the CPU has AVX features or SDL_FALSE if not.
 
 
 
 == Remarks ==
-''You can add useful comments here''
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+This always returns false on CPUs that aren't using Intel instruction
+sets.
 
 == Version ==
+
 This function is available since SDL 2.0.2.
 
+
+
 == Related Functions ==
+
 :[[SDL_Has3DNow]]
 :[[SDL_HasAltiVec]]
 :[[SDL_HasAVX2]]
@@ -38,8 +37,9 @@ This function is available since SDL 2.0.2.
 :[[SDL_HasSSE3]]
 :[[SDL_HasSSE41]]
 :[[SDL_HasSSE42]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

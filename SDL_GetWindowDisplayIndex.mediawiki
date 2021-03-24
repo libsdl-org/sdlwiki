@@ -1,29 +1,34 @@
-<!-- # page was renamed from SDL_GetWindowDisplay -->
-
 = SDL_GetWindowDisplayIndex =
-Use this function to get the index of the display associated with a window.
 
+Get the index of the display associated with a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetWindowDisplayIndex(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+int SDL_GetWindowDisplayIndex(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query
 |}
 
 == Return Value ==
-Returns the index of the display containing the center of the window on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the index of the display containing the center of the window on
+success or a negative error code on failure; call [[SDL_GetError]]() for
+more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetDisplayBounds]]
 :[[SDL_GetNumVideoDisplays]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

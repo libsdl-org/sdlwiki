@@ -1,39 +1,52 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticEffectSupported =
-Use this function to check to see if an effect is supported by a haptic device.
 
+Check to see if an effect is supported by a haptic device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_HapticEffectSupported(SDL_Haptic*       haptic,
-                              SDL_HapticEffect* effect)
+
+<syntaxhighlight lang='c'>
+int SDL_HapticEffectSupported(SDL_Haptic * haptic,
+                              SDL_HapticEffect *
+                              effect);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''haptic'''
-|the SDL_Haptic device to check on <!-- query --> 
+|the [[SDL_Haptic]] device to query
 |-
 |'''effect'''
-|the desired effect to check to see if it is supported
+|the desired effect to query
 |}
 
 == Return Value ==
-Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a
+negative error code on failure; call [[SDL_GetError]]() for more
+information.
+
+
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_HapticNewEffect]]
 :[[SDL_HapticQuery]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

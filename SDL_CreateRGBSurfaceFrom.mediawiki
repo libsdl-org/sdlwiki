@@ -1,22 +1,23 @@
-
 = SDL_CreateRGBSurfaceFrom =
-Use this function to allocate a new RGB surface with existing pixel data.
 
+Allocate a new RGB surface with existing pixel data.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Surface* SDL_CreateRGBSurfaceFrom(void*  pixels,
-                                      int    width,
-                                      int    height,
-                                      int    depth,
-                                      int    pitch,
+
+<syntaxhighlight lang='c'>
+SDL_Surface* SDL_CreateRGBSurfaceFrom(void *pixels,
+                                      int width,
+                                      int height,
+                                      int depth,
+                                      int pitch,
                                       Uint32 Rmask,
                                       Uint32 Gmask,
                                       Uint32 Bmask,
-                                      Uint32 Amask)
+                                      Uint32 Amask);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''pixels'''
 |a pointer to existing pixel data
@@ -28,10 +29,10 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom(void*  pixels,
 |the height of the surface
 |-
 |'''depth'''
-|the depth of the surface in bits; see [[#Remarks|Remarks]] for details
+|the depth of the surface in bits
 |-
 |'''pitch'''
-|the length of a row of pixels in bytes
+|the pitch of the surface in bytes
 |-
 |'''Rmask'''
 |the red mask for the pixels
@@ -47,9 +48,23 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom(void*  pixels,
 |}
 
 == Return Value ==
-Returns the new [[SDL_Surface]] structure that is created or NULL if it fails; call [[SDL_GetError]]() for more information.
+
+Returns the new SDL_Surface structure that is created or NULL if it fails;
+call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function operates mostly like [[SDL_CreateRGBSurface]](), except it
+does not allocate memory for the pixel data, instead the caller provides an
+existing buffer of data for the surface to use.
+
+No copy is made of the pixel data. Pixel data is not managed automatically;
+you must free the surface before you free the pixel data.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // This example shows how to create a SDL_Surface* with the data loaded from an image
 // file with the stb_image.h library (https://github.com/nothings/stb/)
@@ -107,15 +122,14 @@ SDL_FreeSurface(surf);
 stbi_image_free(data);
 </syntaxhighlight>
 
-== Remarks ==
-<<Include(SDL_CreateRGBSurface, , , from="== Remarks ==", to="== Related Functions ==")>>
-
-No copy is made of the pixel data.  Pixel data is not managed automatically; you must free the surface before you free the pixel data.
 
 == Related Functions ==
+
 :[[SDL_CreateRGBSurface]]
-:[[SDL_CreateRGBSurfaceWithFormatFrom]]
+:[[SDL_CreateRGBSurfaceWithFormat]]
 :[[SDL_FreeSurface]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

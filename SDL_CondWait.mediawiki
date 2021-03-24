@@ -1,36 +1,49 @@
-
 = SDL_CondWait =
-Use this function to wait until a condition variable is signaled.
 
+Wait until a condition variable is signaled.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_CondWait(SDL_cond*  cond,
-                 SDL_mutex* mutex)
+
+<syntaxhighlight lang='c'>
+int SDL_CondWait(SDL_cond * cond, SDL_mutex * mutex);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''cond''' 
+|'''cond'''
 |the condition variable to wait on
 |-
-|'''mutex''' 
+|'''mutex'''
 |the mutex used to coordinate thread access
 |}
 
 == Return Value ==
-Returns 0 when it is signaled or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
+Returns 0 when it is signaled or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-This function unlocks the specified '''mutex''' and waits for another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond'''.  Once the condition variable is signaled, the mutex is re-locked and the function returns.
+
+This function unlocks the specified <code>mutex</code> and waits for
+another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on
+the condition variable <code>cond</code>. Once the condition variable is
+signaled, the mutex is re-locked and the function returns.
 
 The mutex must be locked before calling this function.
 
-This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a time length of SDL_MUTEX_MAXWAIT.
+This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a
+time length of <code>[[SDL_MUTEX_MAXWAIT]]</code>.
+
+== Code Examples ==
+
+<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
+
 
 == Related Functions ==
+
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWaitTimeout]]
@@ -39,3 +52,5 @@ This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a time
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

@@ -1,35 +1,42 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickGetButton =
-Use this function to get the current state of a button on a joystick.
 
+Get the current state of a button on a joystick.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint8 SDL_JoystickGetButton(SDL_Joystick* joystick,
-                            int           button)
+
+<syntaxhighlight lang='c'>
+Uint8 SDL_JoystickGetButton(SDL_Joystick *joystick,
+                            int button);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information
+|an [[SDL_Joystick]] structure containing joystick information
 |-
 |'''button'''
 |the button index to get the state from; indices start at index 0
 |}
 
 == Return Value ==
+
 Returns 1 if the specified button is pressed, 0 otherwise.
 
-== Remarks ==
-''You can add useful comments here''
+
 
 == Related Functions ==
+
 :[[SDL_JoystickNumButtons]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

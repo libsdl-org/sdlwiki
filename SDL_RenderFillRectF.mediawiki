@@ -1,0 +1,28 @@
+= SDL_RenderFillRectF =
+
+Fill a rectangle on the current rendering target with the drawing color at subpixel precision.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_RenderFillRectF(SDL_Renderer * renderer,
+                        const SDL_FRect * rect);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|The renderer which should fill a rectangle.
+|-
+|'''rect'''
+|A pointer to the destination rectangle, or NULL for the entire rendering target.
+|}
+
+== Return Value ==
+
+Return 0 on success, or -1 on error
+
+
+
+

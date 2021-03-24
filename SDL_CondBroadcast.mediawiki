@@ -1,23 +1,29 @@
-
 = SDL_CondBroadcast =
-Use this function to restart all threads that are waiting on the condition variable.
 
+Restart all threads that are waiting on the condition variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_CondBroadcast(SDL_cond* cond)
+
+<syntaxhighlight lang='c'>
+int SDL_CondBroadcast(SDL_cond * cond);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cond'''
 |the condition variable to signal
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_bool condition = SDL_FALSE;
 SDL_mutex *lock;
@@ -54,10 +60,9 @@ SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_CondSignal]]
 :[[SDL_CondWait]]
 :[[SDL_CondWaitTimeout]]
@@ -66,3 +71,5 @@ SDL_DestroyMutex(lock);
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

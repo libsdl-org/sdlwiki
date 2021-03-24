@@ -1,0 +1,29 @@
+= SDL_JoystickGetPlayerIndex =
+
+Get the player index of an opened joystick.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickGetPlayerIndex(SDL_Joystick *joystick);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick'''
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
+|}
+
+== Return Value ==
+
+Returns the player index, or -1 if it's not available.
+
+
+
+== Remarks ==
+
+For XInput controllers this returns the XInput user index. Many joysticks
+will not be able to supply this information.
+
+

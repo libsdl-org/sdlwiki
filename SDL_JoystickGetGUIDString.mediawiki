@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -6,24 +8,20 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 
 = SDL_JoystickGetGUIDString =
-Use this function to get an ASCII string representation for a given SDL_JoystickGUID.
 
-
+Get an ASCII string representation for a given [[SDL_JoystickGUID]].
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid,
-                               char*            pszGUID,
-                               int              cbGUID)
+
+<syntaxhighlight lang='c'>
+void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid, char *pszGUID, int cbGUID);
 </syntaxhighlight>
 
-<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
-
-
 == Function Parameters ==
+
 {|
 |'''guid'''
-|the SDL_JoystickGUID you wish to convert to string
+|the [[SDL_JoystickGUID]] you wish to convert to string
 |-
 |'''pszGUID'''
 |buffer in which to write the ASCII string
@@ -32,16 +30,17 @@ void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid,
 |the size of pszGUID
 |}
 
-
-
 == Remarks ==
+
 You should supply at least 33 bytes for pszGUID.
 
-
 == Related Functions ==
+
 :[[SDL_JoystickGetDeviceGUID]]
 :[[SDL_JoystickGetGUID]]
 :[[SDL_JoystickGetGUIDFromString]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

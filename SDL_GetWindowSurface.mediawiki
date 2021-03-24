@@ -1,23 +1,43 @@
-
 = SDL_GetWindowSurface =
-Use this function to get the SDL surface associated with the window.
 
+Get the SDL surface associated with the window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Surface* SDL_GetWindowSurface(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+SDL_Surface * SDL_GetWindowSurface(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query
 |}
 
 == Return Value ==
-Returns the surface associated with the window, or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the surface associated with the window, or NULL on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+A new surface will be created with the optimal format for the window, if
+necessary. This surface will be freed when the window is destroyed. Do not
+free this surface.
+
+This surface will be invalidated if the window is resized. After resizing a
+window this function must be called again to return a valid surface.
+
+You may not combine this with 3D or the rendering API on this window.
+
+This function is affected by
+<code>[[SDL_HINT_FRAMEBUFFER_ACCELERATION]]</code>.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h" // include SDL header
 
@@ -51,18 +71,13 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-A new surface will be created with the optimal format for the window, if necessary. This surface will be freed when the window is destroyed. Do not free this surface.
-
-This surface will be invalidated if the window is resized. After resizing a window this function must be called again to return a valid surface.
-
-You may not combine this with 3D or the rendering API on this window.
-
-This function is affected by [[SDL_HINT_FRAMEBUFFER_ACCELERATION]].
 
 == Related Functions ==
+
 :[[SDL_UpdateWindowSurface]]
 :[[SDL_UpdateWindowSurfaceRects]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

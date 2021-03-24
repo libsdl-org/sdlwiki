@@ -1,0 +1,21 @@
+= SDL_Metal_DestroyView =
+
+Destroy an existing [[SDL_MetalView]] object.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_Metal_DestroyView(SDL_MetalView view);
+</syntaxhighlight>
+
+== Remarks ==
+
+This should be called before [[SDL_DestroyWindow]], if
+[[SDL_Metal_CreateView]] was called after [[SDL_CreateWindow]].
+
+== Related Functions ==
+
+:[[SDL_Metal_CreateView]]
+
+
+

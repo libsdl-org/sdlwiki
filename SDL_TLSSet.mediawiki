@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,22 +10,17 @@
 
 
 = SDL_TLSSet =
-Use this function to set the value associated with a thread local storage ID for the current thread.
 
-
-
+Set the current thread's value associated with a thread local storage ID.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_TLSSet(SDL_TLSID   id,
-               const void* value,
-               void (*destructor)(void*))
+
+<syntaxhighlight lang='c'>
+int SDL_TLSSet(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*));
 </syntaxhighlight>
 
-<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
-
-
 == Function Parameters ==
+
 {|
 |'''id'''
 |the thread local storage ID
@@ -35,27 +32,39 @@ int SDL_TLSSet(SDL_TLSID   id,
 |a function called when the thread exits, to free the value
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-The function prototype for '''destructor''' is:
- <syntaxhighlight lang='c++'>
-void destructor(void* value)
+
+The function prototype for <code>destructor</code> is:
+
+
+
+<syntaxhighlight lang='c'>
+void destructor(void *value)
 </syntaxhighlight>
-: where its parameter is:
- ||<code>value</code>||what was passed as '''value''' to [[SDL_TLSSet]]()||
+
+where its parameter <code>value</code> is what was passed as
+<code>value</code> to [[SDL_TLSSet]]().
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_TLSCreate]]
 :[[SDL_TLSGet]]
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

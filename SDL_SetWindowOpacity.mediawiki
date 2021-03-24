@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -9,19 +11,17 @@
 
 
 = SDL_SetWindowOpacity =
-Use this function to set the opacity for a window.
 
-
-
+Set the opacity for a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetWindowOpacity(SDL_Window* window,
-                         float       opacity)
+
+<syntaxhighlight lang='c'>
+int SDL_SetWindowOpacity(SDL_Window * window, float opacity);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window which will be made transparent or opaque
@@ -30,30 +30,32 @@ int SDL_SetWindowOpacity(SDL_Window* window,
 |the opacity value (0.0f - transparent, 1.0f - opaque)
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-The parameter '''opacity''' will be clamped internally between 0.0f (transparent) and 1.0f (opaque).
+
+The parameter <code>opacity</code> will be clamped internally between 0.0f
+(transparent) and 1.0f (opaque).
 
 This function also returns -1 if setting the opacity isn't supported.
 
-This function is only supported on DirectFB, X11, Cocoa (Apple Mac OS X) and Microsoft Windows.
-
-
 == Version ==
+
 This function is available since SDL 2.0.5.
 
 
+
 == Related Functions ==
+
 :[[SDL_GetWindowOpacity]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

@@ -1,28 +1,48 @@
-
-
 = SDL_LoadFunction =
-Use this function to look up the address of the named function in the shared object and return it.
 
+Look up the address of the named function in a shared object.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_LoadFunction(void*       handle,
-                       const char* name)
+
+<syntaxhighlight lang='c'>
+void* SDL_LoadFunction(void *handle,
+                       const char *name);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
-|'''handle''' 
+|'''handle'''
 |a valid shared object handle returned by [[SDL_LoadObject]]()
 |-
-|'''name''' 
+|'''name'''
 |the name of the function to look up
 |}
 
 == Return Value ==
-Returns a pointer to the function or NULL if there was an error; call [[SDL_GetError]]() for more information.
+
+Returns a pointer to the function or NULL if there was an error; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function pointer is no longer valid after calling
+[[SDL_UnloadObject]]().
+
+This function can only look up C function names. Other languages may have
+name mangling and intrinsic language support that varies from compiler to
+compiler.
+
+Make sure you declare your function pointers with the same calling
+convention as the actual library function. Your code will crash
+mysteriously if you do not do this.
+
+If the requested function doesn't exist, NULL is returned.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -48,17 +68,13 @@ if (myFancyFunction != NULL) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function pointer is no longer valid after calling [[SDL_UnloadObject]]().
-
-This function can only look up C function names. Other languages may have name mangling and intrinsic language support that varies from compiler to compiler.
-
-Make sure you declare your function pointers with the same calling convention as the actual library function. Your code will crash mysteriously if you do not do this.
-
 
 == Related Functions ==
-: [[SDL_LoadObject]]
-: [[SDL_UnloadObject]]
+
+:[[SDL_LoadObject]]
+:[[SDL_UnloadObject]]
 
 ----
 [[CategoryAPI]], CategorySharedObject
+
+

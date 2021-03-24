@@ -1,23 +1,44 @@
-
 = SDL_RWclose =
-Use this function to close and free an allocated [[SDL_RWops]] structure.
 
+Close and free an allocated [[SDL_RWops]] structure.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RWclose(struct SDL_RWops* context)
+
+<syntaxhighlight lang='c'>
+int SDL_RWclose(SDL_RWops *context);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''context'''
 |[[SDL_RWops]] structure to close
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+[[SDL_RWclose]]() closes and cleans up the [[SDL_RWops]] stream. It
+releases any resources used by the stream and frees the [[SDL_RWops]]
+itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the
+stream failed to flush to its output (e.g. to disk).
+
+Note that if this fails to flush the stream to disk, this function reports
+an error, but the [[SDL_RWops]] is still invalid once this function
+returns.
+
+[[SDL_RWclose]]() is actually a macro that calls the [[SDL_RWops]]'s
+<code>close</code> method appropriately, to simplify application
+development.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 Uint8 buf[256];
 SDL_RWops *rw = SDL_RWFromFile("test.bin", "r");
@@ -28,14 +49,9 @@ if (rw != NULL) {
 // Go on and use the data in buf...
 </syntaxhighlight>
 
-== Remarks ==
-SDL_RWclose() closes and cleans up the [[SDL_RWops]] stream. It releases any resources used by the stream and frees the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to its output (e.g. to disk).
-
-Note that if this fails to flush the stream to disk, this function reports an error, but the SDL_RWops is still invalid once this function returns.
-
-SDL_RWclose() is actually a macro that calls the SDL_RWops's '''close''' method appropriately, to simplify application development.
 
 == Related Functions ==
+
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
 :[[SDL_RWFromFP]]
@@ -46,3 +62,5 @@ SDL_RWclose() is actually a macro that calls the SDL_RWops's '''close''' method 
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+

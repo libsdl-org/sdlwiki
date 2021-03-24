@@ -1,23 +1,27 @@
-
 = SDL_SensorGetDeviceNonPortableType =
+
 Get the platform dependent type of a sensor.
 
-This can be called before any sensors are opened.
-
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 int SDL_SensorGetDeviceNonPortableType(int device_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''device_index'''
 |The sensor to check
 |}
 
 == Return Value ==
-The sensor platform dependent type, or -1 if device_index is out of range.
+
+Returns The sensor platform dependent type, or -1 if `device_index` is out
+of range.
+
 
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

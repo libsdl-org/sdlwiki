@@ -1,27 +1,46 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickOpen =
-Use this function to open a joystick for use.
 
+Open a joystick for use.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Joystick* SDL_JoystickOpen(int device_index)
+
+<syntaxhighlight lang='c'>
+SDL_Joystick* SDL_JoystickOpen(int device_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''device_index'''
 |the index of the joystick to query
 |}
 
 == Return Value ==
-Returns a joystick identifier or NULL if an error occurred; call [[SDL_GetError]]() for more information.
+
+Returns a joystick identifier or NULL if an error occurred; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+The <code>device_index</code> argument refers to the N'th joystick
+presently recognized by SDL on the system. It is '''NOT''' the same as the
+instance ID used to identify the joystick in future events. See
+[[SDL_JoystickInstanceID]]() for more details about instance IDs.
+
+The joystick subsystem must be initialized before a joystick can be opened
+for use.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Joystick *joy;
 
@@ -50,16 +69,13 @@ if (SDL_NumJoysticks() > 0) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-The device_index passed as an argument refers to the N'th joystick presently recognized by SDL on the system.  It is '''NOT''' the same as the instance ID used to identify the joystick in future events.  See [[SDL_JoystickInstanceID]]() for more details about instance IDs.
-
-The joystick subsystem must be initialized before a joystick can be opened for use.
 
 == Related Functions ==
+
 :[[SDL_JoystickClose]]
 :[[SDL_JoystickInstanceID]]
 
-<!-- <span style="color: green;">There are a number of functions that list this one as a RF based on the old wiki. Do we want them all to be reciprocated here?</span> -->
-
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

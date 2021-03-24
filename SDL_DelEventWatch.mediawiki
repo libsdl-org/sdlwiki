@@ -1,28 +1,34 @@
-
 = SDL_DelEventWatch =
-Use this function to remove an event watch callback added with [[SDL_AddEventWatch]]().
 
+Remove an event watch callback added with [[SDL_AddEventWatch]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 void SDL_DelEventWatch(SDL_EventFilter filter,
-                       void*           userdata)
+                       void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''filter'''
-|the function originally passed to [[SDL_AddEventWatch]](); see [[#Remarks|Remarks]] for details
+|the function originally passed to [[SDL_AddEventWatch]]()
 |-
 |'''userdata'''
 |the pointer originally passed to [[SDL_AddEventWatch]]()
 |}
 
 == Remarks ==
-This function takes the same input as [[SDL_AddEventWatch]]() to identify and delete the corresponding callback.
+
+This function takes the same input as [[SDL_AddEventWatch]]() to identify
+and delete the corresponding callback.
 
 == Related Functions ==
+
 :[[SDL_AddEventWatch]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

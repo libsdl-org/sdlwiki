@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,33 +9,42 @@
 
 
 = SDL_AndroidGetInternalStoragePath =
-Use this function to get the path used for internal storage for this application.
 
-
-
+Get the path used for internal storage for this application.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_AndroidGetInternalStoragePath()
+
+<syntaxhighlight lang='c'>
+const char * SDL_AndroidGetInternalStoragePath(void);
 </syntaxhighlight>
 
-
 == Return Value ==
-Returns the path used for internal storage or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the path used for internal storage or NULL on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-This path is unique to your application and cannot be written to by other applications.
 
-Your internal storage path is typically: <code>/data/data/your.app.package/files</code>.
+This path is unique to your application and cannot be written to by other
+applications.
+
+Your internal storage path is typically:
+<code>/data/data/your.app.package/files</code>.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_AndroidGetExternalStorageState]]
 
 ----
 [[CategoryAPI]], [[CategorySystem]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

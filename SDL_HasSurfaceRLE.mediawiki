@@ -1,0 +1,34 @@
+= SDL_HasSurfaceRLE =
+
+Returns whether the surface is RLE enabled 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasSurfaceRLE(SDL_Surface * surface);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''surface'''
+|the [[SDL_Surface]] structure to query
+|}
+
+== Return Value ==
+
+Returns SDL_TRUE if the surface is RLE enabled, SDL_FALSE otherwise.
+
+
+
+== Remarks ==
+
+It is safe to pass a NULL <code>surface</code> here; it will return
+[[SDL_FALSE]].
+
+== Related Functions ==
+
+:[[SDL_SetSurfaceRLE]]
+
+
+

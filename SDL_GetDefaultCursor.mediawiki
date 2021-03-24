@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,33 +10,33 @@
 
 
 = SDL_GetDefaultCursor =
-Use this function to get the default cursor.
 
-
-
+Get the default cursor.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Cursor* SDL_GetDefaultCursor(void)
+
+<syntaxhighlight lang='c'>
+SDL_Cursor* SDL_GetDefaultCursor(void);
 </syntaxhighlight>
 
-
 == Return Value ==
+
 Returns the default cursor on success or NULL on failure.
 
 
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_CreateSystemCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

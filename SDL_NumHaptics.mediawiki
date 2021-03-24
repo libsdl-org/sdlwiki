@@ -1,28 +1,38 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_NumHaptics =
-Use this function to count the number of haptic devices attached to the system.
 
+Count the number of haptic devices attached to the system.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_NumHaptics(void)
+
+<syntaxhighlight lang='c'>
+int SDL_NumHaptics(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the number of haptic devices detected on the system or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the number of haptic devices detected on the system or a negative
+error code on failure; call [[SDL_GetError]]() for more information.
+
+
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_HapticName]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

@@ -1,19 +1,20 @@
-
 = SDL_SetHintWithPriority =
-Use this function to set a hint with a specific priority.
 
+Set a hint with a specific priority.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_SetHintWithPriority(const char*      name,
-                                 const char*      value,
-                                 SDL_HintPriority priority)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_SetHintWithPriority(const char *name,
+                                 const char *value,
+                                 SDL_HintPriority priority);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''name'''
-|the hint to set; see the list of hints on [[CategoryHints#Hints|CategoryHints]] for details
+|the hint to set
 |-
 |'''value'''
 |the value of the hint variable
@@ -23,14 +24,23 @@ SDL_bool SDL_SetHintWithPriority(const char*      name,
 |}
 
 == Return Value ==
+
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
+
+
 == Remarks ==
-The priority controls the behavior when setting a hint that already has a value.  Hints will replace existing hints of their priority and lower.  Environment variables are considered to have override priority.
+
+The priority controls the behavior when setting a hint that already has a
+value. Hints will replace existing hints of their priority and lower.
+Environment variables are considered to have override priority.
 
 == Related Functions ==
+
 :[[SDL_GetHint]]
 :[[SDL_SetHint]]
 
 ----
 [[CategoryAPI]], [[CategoryHints]]
+
+

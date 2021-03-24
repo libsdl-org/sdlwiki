@@ -1,16 +1,16 @@
-
 = SDL_GetDisplayMode =
-Use this function to get information about a specific display mode.
 
+Get information about a specific display mode.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetDisplayMode(int              displayIndex,
-                       int              modeIndex,
-                       SDL_DisplayMode* mode)
+
+<syntaxhighlight lang='c'>
+int SDL_GetDisplayMode(int displayIndex, int modeIndex,
+                       SDL_DisplayMode * mode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''displayIndex'''
 |the index of the display to query
@@ -19,13 +19,28 @@ int SDL_GetDisplayMode(int              displayIndex,
 |the index of the display mode to query
 |-
 |'''mode'''
-|an [[SDL_DisplayMode]] structure filled in with the mode at '''modeIndex'''
+|an [[SDL_DisplayMode]] structure filled in with the mode at <code>modeIndex</code>
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+The display modes are sorted in this priority:
+
+* width -> largest to smallest 
+* height -> largest to smallest 
+* bits per pixel -> more colors to fewer colors 
+* packed pixel layout -> largest to smallest 
+* refresh rate -> highest to lowest
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
     int display_count = 0, display_index = 0, mode_index = 0;
     SDL_DisplayMode mode = { SDL_PIXELFORMAT_UNKNOWN, 0, 0, 0, 0 };
@@ -43,17 +58,12 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
     SDL_BITSPERPIXEL(mode.format), mode.w, mode.h);
 </syntaxhighlight>
 
-== Remarks ==
-The display modes are sorted in this priority:
-
-* width -> largest to smallest
-* height -> largest to smallest
-* bits per pixel -> more colors to fewer colors
-* packed pixel layout -> largest to smallest
-* refresh rate -> highest to lowest
 
 == Related Functions ==
+
 :[[SDL_GetNumDisplayModes]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,49 +9,53 @@
 
 
 = SDL_GameControllerAddMapping =
-Use this function to add support for controllers that SDL is unaware of or to cause an existing controller to have a different binding.
 
-
+Add support for controllers that SDL is unaware of or to cause an existing controller to have a different binding.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GameControllerAddMapping(const char* mappingString)
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerAddMapping(const char* mappingString);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''mappingString'''
-|the mapping string; see below
+|the mapping string
 |}
 
-
 == Return Value ==
-Returns 1 if a new mapping is added, 0 if an existing mapping is updated, -1 on error; call [[SDL_GetError]]() for more information.
+
+Returns 1 if a new mapping is added, 0 if an existing mapping is updated,
+-1 on error; call [[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-The mapping string has the format "GUID,name,mapping", where GUID is the string value from [[SDL_JoystickGetGUIDString]](), name is the human readable string for the device and mappings are controller mappings to joystick ones.  Under Windows there is a reserved GUID of "xinput" that covers all XInput devices.  The mapping format for joystick is:
-{|
-|bX
-|a joystick button, index X
-|-
-|hX.Y
-|hat X with value Y
-|-
-|aX
-|axis X of the joystick
-|}
-Buttons can be used as a controller axes and vice versa.
+
+The mapping string has the format "GUID,name,mapping", where GUID is the
+string value from [[SDL_JoystickGetGUIDString]](), name is the human
+readable string for the device and mappings are controller mappings to
+joystick ones. Under Windows there is a reserved GUID of "xinput" that
+covers all XInput devices. The mapping format for joystick is: {| |bX |a
+joystick button, index X |- |hX.Y |hat X with value Y |- |aX |axis X of the
+joystick |} Buttons can be used as a controller axes and vice versa.
 
 This string shows an example of a valid mapping for a controller:
-"341a3608000000000000504944564944,Afterglow PS3 Controller,a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,leftstick:b10,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,lefttrigger:b6,righttrigger:b7"
 
+<code></code><code> "341a3608000000000000504944564944,Afterglow PS3
+Controller,a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:
+h0.8,dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,leftstick:b1
+0,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,lefttrigger:b6,right
+trigger:b7" </code><code></code>
 
 == Related Functions ==
+
 :[[SDL_GameControllerMapping]]
 :[[SDL_GameControllerMappingForGUID]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
+
+

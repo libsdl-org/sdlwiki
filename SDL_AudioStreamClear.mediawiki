@@ -1,0 +1,21 @@
+= SDL_AudioStreamClear =
+
+Clear any pending data in the stream without converting it 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_AudioStreamClear(SDL_AudioStream *stream);
+</syntaxhighlight>
+
+== Related Functions ==
+
+:[[SDL_NewAudioStream]]
+:[[SDL_AudioStreamPut]]
+:[[SDL_AudioStreamGet]]
+:[[SDL_AudioStreamAvailable]]
+:[[SDL_AudioStreamFlush]]
+:[[SDL_FreeAudioStream]]
+
+
+

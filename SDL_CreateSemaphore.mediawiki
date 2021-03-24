@@ -1,23 +1,38 @@
-
 = SDL_CreateSemaphore =
-Use this function to create a semaphore.
 
+Create a semaphore.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_sem* SDL_CreateSemaphore(Uint32 initial_value)
+
+<syntaxhighlight lang='c'>
+SDL_sem* SDL_CreateSemaphore(Uint32 initial_value);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''initial_value'''
 |the starting value of the semaphore
 |}
 
 == Return Value ==
-Returns a new semaphore or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns a new semaphore or NULL on failure; call SDL_GetError() for more
+information.
+
+
+
+== Remarks ==
+
+This function creates a new semaphore and initializes it with the value
+<code>initial_value</code>. Each wait operation on the semaphore will
+atomically decrement the semaphore value and potentially block if the
+semaphore value is 0. Each post operation will atomically increment the
+semaphore value and wake waiting threads and allow them to retry the wait
+operation.
 
 == Code Examples ==
+
 <!-- # Begin Semaphore Example -->
 Typical use of semaphores:
 <syntaxhighlight lang='c++'>
@@ -50,10 +65,9 @@ SDL_DestroySemaphore(sem);
 </syntaxhighlight>
 <!-- # End Semaphore Example -->
 
-== Remarks ==
-This function creates a new semaphore and initializes it with the value '''initial_value'''. Each wait operation on the semaphore will atomically decrement the semaphore value and potentially block if the semaphore value is 0. Each post operation will atomically increment the semaphore value and wake waiting threads and allow them to retry the wait operation.
 
 == Related Functions ==
+
 :[[SDL_DestroySemaphore]]
 :[[SDL_SemPost]]
 :[[SDL_SemTryWait]]
@@ -63,3 +77,5 @@ This function creates a new semaphore and initializes it with the value '''initi
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

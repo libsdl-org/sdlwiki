@@ -1,22 +1,30 @@
-
 = SDL_DisableScreenSaver =
-Use this function to prevent the screen from being blanked by a screen saver.
 
+Prevent the screen from being blanked by a screen saver.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DisableScreenSaver(void)
+
+<syntaxhighlight lang='c'>
+void SDL_DisableScreenSaver(void);
 </syntaxhighlight>
 
 == Remarks ==
-If you disable the screensaver, it is automatically re-enabled when SDL quits.
+
+If you disable the screensaver, it is automatically re-enabled when SDL
+quits.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_EnableScreenSaver]]
 :[[SDL_IsScreenSaverEnabled]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

@@ -1,33 +1,47 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticPause =
-Use this function to pause a haptic device.
 
+Pause a haptic device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_HapticPause(SDL_Haptic* haptic)
+
+<syntaxhighlight lang='c'>
+int SDL_HapticPause(SDL_Haptic * haptic);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''haptic'''
-|the SDL_Haptic device to pause
+|the [[SDL_Haptic]] device to pause
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-Device must support the SDL_HAPTIC_PAUSE feature. Call [[SDL_HapticUnpause]]() to resume playback.
 
-Do not modify the effects nor add new ones while the device is paused. That can cause all sorts of weird errors.
+Device must support the <code>[[SDL_HAPTIC_PAUSE]]</code> feature. Call
+[[SDL_HapticUnpause]]() to resume playback.
+
+Do not modify the effects nor add new ones while the device is paused. That
+can cause all sorts of weird errors.
 
 == Related Functions ==
+
 :[[SDL_HapticUnpause]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

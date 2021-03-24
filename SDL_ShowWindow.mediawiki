@@ -1,31 +1,33 @@
-
 = SDL_ShowWindow =
-Use this function to show a window.
 
+Show a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_ShowWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_ShowWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to show
 |}
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_ShowWindow(window);
 </syntaxhighlight>
 
-== Remarks ==
-In SDL 1.2 you might have used BOOL WINAPI ShowWindow(_In_  HWND hWnd, _In_  int nCmdShow) for Win32 builds. SDL_ShowWindow() replaces this.
-
 
 == Related Functions ==
+
 :[[SDL_HideWindow]]
 :[[SDL_RaiseWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

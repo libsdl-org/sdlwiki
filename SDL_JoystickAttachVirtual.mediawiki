@@ -1,0 +1,20 @@
+= SDL_JoystickAttachVirtual =
+
+Attach a new virtual joystick.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickAttachVirtual(SDL_JoystickType type,
+                              int naxes,
+                              int nbuttons,
+                              int nhats);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns the joystick's device index, or -1 if an error occurred.
+
+
+
+

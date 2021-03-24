@@ -1,20 +1,31 @@
-
 = SDL_GetVersion =
-Use this function to get the version of SDL that is linked against your program.
 
+Get the version of SDL that is linked against your program.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GetVersion(SDL_version* ver)
+
+<syntaxhighlight lang='c'>
+void SDL_GetVersion(SDL_version * ver);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''ver'''
 |the [[SDL_version]] structure that contains the version information
 |}
 
+== Remarks ==
+
+If you are linking to SDL dynamically, then it is possible that the
+current version will be different than the version you compiled against.
+This function returns the current version, while [[SDL_VERSION]]() is a
+macro that tells you what version you compiled with.
+
+This function may be called safely at any time, even before [[SDL_Init]]().
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_version compiled;
 SDL_version linked;
@@ -27,16 +38,17 @@ printf("But we are linking against SDL version %d.%d.%d.\n",
        linked.major, linked.minor, linked.patch);
 </syntaxhighlight>
 
-== Remarks ==
-If you are linking to SDL dynamically, then it is possible that the current version will be different than the version you compiled against.  This function returns the current version, while [[SDL_VERSION]]() is a macro that tells you what version you compiled with.
-
-This function may be called safely at any time, even before [[SDL_Init]]().
-
-== Related Macros ==
-:[[SDL_VERSION]]
 
 == Related Functions ==
+
 :[[SDL_GetRevision]]
+
+
+== Related Macros ==
+
+:[[SDL_VERSION]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,19 +9,17 @@
 
 
 = SDL_WarpMouseGlobal =
-Use this function to move the mouse to the given position in global screen space.
 
-
-
+Move the mouse to the given position in global screen space.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_WarpMouseGlobal(int x,
-                        int y)
+
+<syntaxhighlight lang='c'>
+int SDL_WarpMouseGlobal(int x, int y);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''x'''
 |the x coordinate
@@ -28,23 +28,32 @@ int SDL_WarpMouseGlobal(int x,
 |the y coordinate
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
+
 This function generates a mouse motion event.
 
-A failure of this function usually means that it is unsupported by a platform.
+A failure of this function usually means that it is unsupported by a
+platform.
 
 == Version ==
+
 This function is available since SDL 2.0.4.
 
+
+
 == Related Functions ==
+
 :[[SDL_WarpMouseInWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

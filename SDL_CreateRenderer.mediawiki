@@ -1,16 +1,16 @@
-
 = SDL_CreateRenderer =
-Use this function to create a 2D rendering context for a window.
 
+Create a 2D rendering context for a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Renderer* SDL_CreateRenderer(SDL_Window* window,
-                                 int         index,
-                                 Uint32      flags)
+
+<syntaxhighlight lang='c'>
+SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
+                       int index, Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window where rendering is displayed
@@ -19,13 +19,18 @@ SDL_Renderer* SDL_CreateRenderer(SDL_Window* window,
 |the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags
 |-
 |'''flags'''
-|0, or one or more [[SDL_RendererFlags]] OR'd together; see [[#flags|Remarks]] for details
+|0, or one or more [[SDL_RendererFlags]] OR'd together
 |}
 
 == Return Value ==
-Returns a valid rendering context or NULL if there was an error; call [[SDL_GetError]]() for more information.
+
+Returns a valid rendering context or NULL if there was an error; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -69,11 +74,9 @@ int main(int argc, char *argv[]) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-<span id="flags"></span> '''flags''' may be any of the following OR'd together:
-<<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+
 :[[SDL_CreateSoftwareRenderer]]
 :[[SDL_DestroyRenderer]]
 :[[SDL_GetNumRenderDrivers]]
@@ -81,3 +84,5 @@ int main(int argc, char *argv[]) {
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

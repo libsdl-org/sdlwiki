@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,40 +10,41 @@
 
 
 = SDL_GetNumTouchFingers =
-Use this function to get the number of active fingers for a given touch device.
 
-
-
+Get the number of active fingers for a given touch device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetNumTouchFingers(SDL_TouchID touchID)
+
+<syntaxhighlight lang='c'>
+int SDL_GetNumTouchFingers(SDL_TouchID touchID);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''touchID'''
 |the ID of a touch device
 |}
 
-
 == Return Value ==
-Returns the number of active fingers for a given touch device on success or 0 on failure; call [[SDL_GetError]]() for more information.
+
+Returns the number of active fingers for a given touch device on success or
+0 on failure; call [[SDL_GetError]]() for more information.
 
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GetTouchFinger]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

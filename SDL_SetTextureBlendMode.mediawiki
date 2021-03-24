@@ -1,35 +1,42 @@
-
 = SDL_SetTextureBlendMode =
-Use this function to set the blend mode for a texture, used by [[SDL_RenderCopy]]().
 
+Set the blend mode for a texture, used by [[SDL_RenderCopy]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetTextureBlendMode(SDL_Texture*  texture,
-                            SDL_BlendMode blendMode)
+
+<syntaxhighlight lang='c'>
+int SDL_SetTextureBlendMode(SDL_Texture * texture,
+                            SDL_BlendMode blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''texture'''
 |the texture to update
 |-
 |'''blendMode'''
-|the [[SDL_BlendMode]] to use for texture blending; see [[#blendMode|Remarks]] for details
+|the [[SDL_BlendMode]] to use for texture blending
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-<span id="blendMode"></span> '''blendMode''' may be one of the following:
-<<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
-If the blend mode is not supported, the closest supported mode is chosen and this function returns -1. 
+If the blend mode is not supported, the closest supported mode is chosen
+and this function returns -1.
 
 == Related Functions ==
+
 :[[SDL_GetTextureBlendMode]]
 :[[SDL_RenderCopy]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

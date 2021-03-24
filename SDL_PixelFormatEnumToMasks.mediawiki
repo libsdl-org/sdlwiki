@@ -1,22 +1,23 @@
-
 = SDL_PixelFormatEnumToMasks =
-Use this function to convert one of the enumerated pixel formats to a bpp value and RGBA masks.
 
+Convert one of the enumerated pixel formats to a bpp value and RGBA masks.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
-                                    int*    bpp,
-                                    Uint32* Rmask,
-                                    Uint32* Gmask,
-                                    Uint32* Bmask,
-                                    Uint32* Amask)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_PixelFormatEnumToMasks(Uint32 format,
+                                    int *bpp,
+                                    Uint32 * Rmask,
+                                    Uint32 * Gmask,
+                                    Uint32 * Bmask,
+                                    Uint32 * Amask);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''format'''
-|one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
+|one of the [[SDL_PixelFormatEnum]] values
 |-
 |'''bpp'''
 |a bits per pixel value; usually 15, 16, or 32
@@ -35,14 +36,17 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32  format,
 |}
 
 == Return Value ==
-Returns SDL_TRUE on success or SDL_FALSE if the conversion wasn't possible; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-'''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
+Returns SDL_TRUE on success or SDL_FALSE if the conversion wasn't possible;
+call [[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_MasksToPixelFormatEnum]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

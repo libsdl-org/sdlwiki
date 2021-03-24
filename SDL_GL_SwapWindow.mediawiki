@@ -1,20 +1,31 @@
-
 = SDL_GL_SwapWindow =
-Use this function to update a window with OpenGL rendering.
 
+Update a window with OpenGL rendering.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GL_SwapWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_GL_SwapWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to change
 |}
 
+== Remarks ==
+
+This is used with double-buffered OpenGL contexts, which are the default.
+
+On macOS, make sure you bind 0 to the draw framebuffer before swapping the
+window, otherwise nothing will happen. If you aren't using
+glBindFramebuffer(), this is the default and you won't have to do anything
+extra.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 
 SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
@@ -37,10 +48,7 @@ SDL_GL_SwapWindow(window);
 
 </syntaxhighlight>
 
-== Remarks ==
-This is used with double-buffered OpenGL contexts, which are the default.
-
-On Mac OS X make sure you bind 0 to the draw framebuffer before swapping the window, otherwise nothing will happen. See [http://renderingpipeline.com/2012/05/nsopenglcontext-flushbuffer-might-not-do-what-you-think/ this blog post] for more info.
-
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

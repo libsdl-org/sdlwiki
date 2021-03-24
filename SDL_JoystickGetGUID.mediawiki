@@ -1,38 +1,44 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickGetGUID =
-Use this function to get the implementation-dependent GUID for the joystick.
 
-
+Get the implementation-dependent GUID for the joystick.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_JoystickGUID SDL_JoystickGetGUID(SDL_Joystick* joystick)
+
+<syntaxhighlight lang='c'>
+SDL_JoystickGUID SDL_JoystickGetGUID(SDL_Joystick *joystick);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|an open joystick
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
 |}
 
-
 == Return Value ==
-Returns the GUID of the given joystick.  If called on an invalid index, this function returns a zero GUID; call [[SDL_GetError]]() for more information.
+
+Returns the GUID of the given joystick. If called on an invalid index, this
+function returns a zero GUID; call [[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
+
 This function requires an open joystick.
 
-
 == Related Functions ==
+
 :[[SDL_JoystickGetDeviceGUID]]
 :[[SDL_JoystickGetGUIDString]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

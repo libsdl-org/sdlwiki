@@ -1,26 +1,33 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_NumJoysticks =
-Use this function to count the number of joysticks attached to the system.
 
+Count the number of joysticks attached to the system.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_NumJoysticks(void)
+
+<syntaxhighlight lang='c'>
+int SDL_NumJoysticks(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the number of attached joysticks on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the number of attached joysticks on success or a negative error
+code on failure; call [[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_JoystickName]]
 :[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

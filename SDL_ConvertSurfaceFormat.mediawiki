@@ -1,36 +1,48 @@
-
 = SDL_ConvertSurfaceFormat =
-Use this function to copy an existing surface to a new surface of the specified format.
 
+Copy an existing surface to a new surface of the specified format enum.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface* src,
-                                      Uint32       pixel_format,
-                                      Uint32       flags)
+
+<syntaxhighlight lang='c'>
+SDL_Surface* SDL_ConvertSurfaceFormat
+    (SDL_Surface * src, Uint32 pixel_format, Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''src'''
-|the [[SDL_Surface]] structure representing the surface to convert
+|the existing [[SDL_Surface]] structure to convert
 |-
 |'''pixel_format'''
-|one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
+|the [[SDL_PixelFormatEnum]] that the new surface is optimized for
 |-
 |'''flags'''
-|the flags are unused and should be set to 0
+|the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API
 |}
 
 == Return Value ==
-Returns the new surface, or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the new SDL_Surface structure that is created or NULL if it fails;
+call [[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-<span id="format"></span> '''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
+
+This function operates just like [[SDL_ConvertSurface]](), but accepts an
+[[SDL_PixelFormatEnum]] value instead of an [[SDL_PixelFormat]] structure.
+As such, it might be easier to call but it doesn't have access to palette
+information for the destination surface, in case that would be important.
 
 == Related Functions ==
-:[[SDL_ConvertSurface]]
+
+:[[SDL_AllocFormat]]
+:[[SDL_ConvertSurfaceFormat]]
+:[[SDL_CreateRGBSurface]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

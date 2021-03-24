@@ -1,18 +1,16 @@
-
 = SDL_RenderDrawLine =
-Use this function to draw a line on the current rendering target.
 
+Draw a line on the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderDrawLine(SDL_Renderer* renderer,
-                       int           x1,
-                       int           y1,
-                       int           x2,
-                       int           y2)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderDrawLine(SDL_Renderer * renderer,
+                       int x1, int y1, int x2, int y2);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -31,9 +29,26 @@ int SDL_RenderDrawLine(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+[[SDL_RenderDrawLine]]() draws the line to include both end points. If you
+want to draw multiple, connecting lines use [[SDL_RenderDrawLines]]()
+instead.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -78,13 +93,9 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-[[SDL_RenderDrawLine]]() draws the line to include both end points.  If you want to draw multiple, connecting lines use [[SDL_RenderDrawLines]]() instead.
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
 :[[SDL_RenderDrawPoints]]
@@ -98,3 +109,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

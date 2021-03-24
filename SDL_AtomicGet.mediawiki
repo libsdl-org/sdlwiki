@@ -1,27 +1,36 @@
-
 = SDL_AtomicGet =
-Use this function to get the value of an atomic variable.
 
+Get the value of an atomic variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_AtomicGet(SDL_atomic_t* a)
+
+<syntaxhighlight lang='c'>
+int SDL_AtomicGet(SDL_atomic_t *a);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''a'''
 |a pointer to an [[SDL_atomic_t]] variable
 |}
 
 == Return Value ==
+
 Returns the current value of an atomic variable.
 
+
+
 == Remarks ==
-''You can add useful comments here''
+
+'''''*Note: If you don't know what this function is for, you shouldn't use
+it!'''''
 
 == Related Functions ==
+
 :[[SDL_AtomicSet]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
+
+

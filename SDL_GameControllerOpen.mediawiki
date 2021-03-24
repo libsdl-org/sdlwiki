@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,27 +9,47 @@
 
 
 = SDL_GameControllerOpen =
-Use this function to open a gamecontroller for use.
 
-
-
+Open a game controller for use.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_GameController* SDL_GameControllerOpen(int joystick_index)
+
+<syntaxhighlight lang='c'>
+SDL_GameController* SDL_GameControllerOpen(int joystick_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick_index'''
-|the device_index of a device, up to [[SDL_NumJoysticks]]()
+|the device_index of a device, up to [[[[SDL_NumJoysticks]]]]()
 |}
 
 == Return Value ==
-Returns a gamecontroller identifier or NULL if an error occurred; call [[SDL_GetError]]() for more information.
+
+Returns a gamecontroller identifier or NULL if an error occurred; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+<code>joystick_index</code> is the same as the <code>device_index</code>
+passed to [[SDL_JoystickOpen]]().
+
+The index passed as an argument refers to the N'th game controller on the
+system. This index is not the value which will identify this controller in
+future controller events. The joystick's instance id ([[SDL_JoystickID]])
+will be used there instead.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 /* Open the first available controller. */
 SDL_GameController *controller = NULL;
@@ -44,20 +66,14 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 </syntaxhighlight>
 
 
-== Remarks ==
-'''joystick_index''' is the same as the <code>device_index</code> passed to [[SDL_JoystickOpen]]().
-
-The index passed as an argument refers to the N'th game controller on the system. This index is not the value which will identify this controller in future controller events.  The joystick's instance id (SDL_JoystickID) will be used there instead.
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_GameControllerClose]]
 :[[SDL_GameControllerNameForIndex]]
 :[[SDL_IsGameController]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
+
+

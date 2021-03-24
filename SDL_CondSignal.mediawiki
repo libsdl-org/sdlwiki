@@ -1,29 +1,34 @@
-
 = SDL_CondSignal =
-Use this function to restart one of the threads that are waiting on the condition variable.
 
+Restart one of the threads that are waiting on the condition variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_CondSignal(SDL_cond* cond)
+
+<syntaxhighlight lang='c'>
+int SDL_CondSignal(SDL_cond * cond);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cond'''
 |the condition variable to signal
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_CondBroadcast]]
 :[[SDL_CondWait]]
 :[[SDL_CondWaitTimeout]]
@@ -32,3 +37,5 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

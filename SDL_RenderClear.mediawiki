@@ -1,23 +1,40 @@
-
 = SDL_RenderClear =
-Use this function to clear the current rendering target with the drawing color.
 
+Clear the current rendering target with the drawing color.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderClear(SDL_Renderer* renderer)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderClear(SDL_Renderer * renderer);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function clears the entire rendering target, ignoring the viewport
+and the clip rectangle.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -58,16 +75,12 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function clears the entire rendering target, ignoring the viewport and the clip rectangle.
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

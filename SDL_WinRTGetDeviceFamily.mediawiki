@@ -1,0 +1,17 @@
+= SDL_WinRTGetDeviceFamily =
+
+Detects the device family of WinRT plattform at runtime.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_WinRT_DeviceFamily SDL_WinRTGetDeviceFamily();
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns A value from the SDL_WinRT_DeviceFamily enum.
+
+
+
+

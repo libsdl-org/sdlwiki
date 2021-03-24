@@ -1,35 +1,51 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticOpen =
-Use this function to open a haptic device for use.
 
+Open a haptic device for use.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Haptic* SDL_HapticOpen(int device_index)
+
+<syntaxhighlight lang='c'>
+SDL_Haptic* SDL_HapticOpen(int device_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''device_index'''
 |index of the device to open
 |}
 
 == Return Value ==
-Returns the device identifier or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the device identifier or NULL on failure; call SDL_GetError() for
+more information.
+
+
 
 == Remarks ==
-The index passed as an argument refers to the N'th haptic device on this system.
 
-When opening a haptic device, its gain will be set to maximum and autocenter will be disabled. To modify these values use [[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
+The index passed as an argument refers to the N'th haptic device on this
+system.
+
+When opening a haptic device, its gain will be set to maximum and
+autocenter will be disabled. To modify these values use
+[[SDL_HapticSetGain]]() and [[SDL_HapticSetAutocenter]]().
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_HapticClose]]
 :[[SDL_HapticIndex]]
 :[[SDL_HapticOpenFromJoystick]]
@@ -41,3 +57,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

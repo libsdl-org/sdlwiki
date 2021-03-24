@@ -1,17 +1,22 @@
-
 = SDL_CreateCond =
-Use this function to create a condition variable.
 
+Create a condition variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_cond* SDL_CreateCond(void)
+
+<syntaxhighlight lang='c'>
+SDL_cond* SDL_CreateCond(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns a new condition variable or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns a new condition variable or NULL on failure; call SDL_GetError()
+for more information.
+
+
 
 == Code Examples ==
+
 <!-- # Begin Condition Variable Example -->
 Typical use of condition variables:
 <syntaxhighlight lang='c++'>
@@ -44,10 +49,9 @@ SDL_DestroyMutex(lock);
 </syntaxhighlight>
 <!-- # End Condition Variable Example -->
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWait]]
@@ -56,3 +60,5 @@ SDL_DestroyMutex(lock);
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

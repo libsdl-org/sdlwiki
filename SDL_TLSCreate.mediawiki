@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,22 +10,34 @@
 
 
 = SDL_TLSCreate =
-Use this function to create an identifier that is globally visible to all threads but refers to data that is thread-specific.
 
-
-
+Create a piece of thread-local storage.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_TLSID SDL_TLSCreate(void)
+
+<syntaxhighlight lang='c'>
+SDL_TLSID SDL_TLSCreate(void);
 </syntaxhighlight>
 
-
 == Return Value ==
+
 Returns the newly created thread local storage identifier or 0 on error.
 
 
+
+== Remarks ==
+
+This creates an identifier that is globally visible to all threads but
+refers to data that is thread-specific.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 static SDL_SpinLock tls_lock;
 static SDL_TLSID thread_local_storage;
@@ -47,18 +61,14 @@ void *GetMyThreadData(void)
 </syntaxhighlight>
 
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_TLSGet]]
 :[[SDL_TLSSet]]
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

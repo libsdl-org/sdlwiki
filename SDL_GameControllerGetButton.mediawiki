@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,19 +9,18 @@
 
 
 = SDL_GameControllerGetButton =
-Use this function to get the current state of a button on a game controller.
 
-
-
+Get the current state of a button on a game controller.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint8 SDL_GameControllerGetButton(SDL_GameController*      gamecontroller,
-                                  SDL_GameControllerButton button)
+
+<syntaxhighlight lang='c'>
+Uint8 SDL_GameControllerGetButton(SDL_GameController *gamecontroller,
+                                  SDL_GameControllerButton button);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''gamecontroller'''
 |a game controller
@@ -28,24 +29,25 @@ Uint8 SDL_GameControllerGetButton(SDL_GameController*      gamecontroller,
 |a button index (one of the [[SDL_GameControllerButton]] values)
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
-
 == Return Value ==
-Returns 1 for pressed state or 0 for not pressed state or error; call [[SDL_GetError]]() for more information.
 
+Returns 1 for pressed state or 0 for not pressed state or error; call
+[[SDL_GetError]]() for more information.
 
-
-== Remarks ==
-The button indices start at index 0.
 
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GameControllerGetAxis]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

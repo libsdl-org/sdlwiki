@@ -1,0 +1,17 @@
+= SDL_IsAndroidTV =
+
+Query if the application is running on Android TV.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_IsAndroidTV(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns SDL_TRUE if this is Android TV, SDL_FALSE otherwise.
+
+
+
+

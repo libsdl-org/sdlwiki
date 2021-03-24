@@ -1,0 +1,21 @@
+= SDL_GameControllerSetPlayerIndex =
+
+Set the player index of an opened game controller.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int player_index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|the game controller object to adjust.
+|-
+|'''player_index'''
+|Player index to assign to this controller.
+|}
+
+

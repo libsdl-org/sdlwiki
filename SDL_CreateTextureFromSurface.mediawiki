@@ -1,15 +1,15 @@
-
 = SDL_CreateTextureFromSurface =
-Use this function to create a texture from an existing surface.
 
+Create a texture from an existing surface.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
-                                          SDL_Surface*  surface)
+
+<syntaxhighlight lang='c'>
+SDL_Texture * SDL_CreateTextureFromSurface(SDL_Renderer * renderer, SDL_Surface * surface);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -19,9 +19,25 @@ SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns the created texture or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the created texture or NULL on failure; call SDL_GetError() for
+more information.
+
+
+
+== Remarks ==
+
+The surface is not modified or freed by this function.
+
+The [[SDL_TextureAccess]] hint for the created texture is
+<code>[[SDL_TEXTUREACCESS_STATIC]]</code>.
+
+The pixel format of the created texture may be different from the pixel
+format of the surface. Use [[SDL_QueryTexture]]() to query the pixel format
+of the texture.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 Uint32 rmask, gmask, bmask, amask;
 
@@ -59,17 +75,14 @@ surface = NULL;
 
 </syntaxhighlight>
 
-== Remarks ==
-The surface is not modified or freed by this function.
-
-The [[SDL_TextureAccess]] hint for the created texture is SDL_TEXTUREACCESS_STATIC.
-
-The pixel format of the created texture may be different from the pixel format of the surface. Use [[SDL_QueryTexture]]() to query the pixel format of the texture.
 
 == Related Functions ==
+
 :[[SDL_CreateTexture]]
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

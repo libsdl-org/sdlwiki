@@ -1,47 +1,28 @@
-
 = SDL_LogSetOutputFunction =
-Use this function to replace the default log output function with one of your own.
 
+Replace the default log output function with one of your own.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback,
-                              void*                 userdata)
+
+<syntaxhighlight lang='c'>
+void SDL_LogSetOutputFunction(SDL_LogOutputFunction callback, void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''callback'''
-|the function to call instead of the default; see [[#Remarks|Remarks]] for details
+|an [[SDL_LogOutputFunction]] to call instead of the default
 |-
 |'''userdata'''
-|a pointer that is passed to '''callback'''
+|a pointer that is passed to <code>callback</code>
 |}
 
-== Remarks ==
-The function prototype for '''callback''' is:
- <syntaxhighlight lang='c++'>
-void SDL_LogOutputFunction(void*           userdata,
-                           int             category,
-                           SDL_LogPriority priority,
-                           const char*     message)
-</syntaxhighlight>
-: where its parameters are:
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_LogSetOutputFunction]]()||
- ||<code>category</code>||the category of the message; see [[#category|Remarks]] for details||
- ||<code>priority</code>||the priority of the message; see [[#priority|Remarks]] for details||
- ||<code>message</code>||the message being output||
-
- <span id="category"></span>
- The <code>category</code> will be one of:
- <<Include(SDL_LOG_CATEGORY, , , from="== Values ==", to="== Code Examples ==")>>
-
- <span id="priority"></span>
- The <code>priority</code> will be one of:
- <<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
-
 == Related Functions ==
+
 :[[SDL_LogGetOutputFunction]]
 
 ----
 [[CategoryAPI]], [[CategoryLog]]
+
+

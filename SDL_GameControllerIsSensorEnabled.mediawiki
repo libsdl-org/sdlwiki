@@ -1,0 +1,27 @@
+= SDL_GameControllerIsSensorEnabled =
+
+Query whether sensor data reporting is enabled for a game controller.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_GameControllerIsSensorEnabled(SDL_GameController *gamecontroller, SDL_SensorType type);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|The controller to query
+|-
+|'''type'''
+|The type of sensor to query
+|}
+
+== Return Value ==
+
+Returns SDL_TRUE if the sensor is enabled, SDL_FALSE otherwise.
+
+
+
+

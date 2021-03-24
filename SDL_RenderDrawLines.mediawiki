@@ -1,16 +1,17 @@
-
 = SDL_RenderDrawLines =
-Use this function to draw a series of connected lines on the current rendering target.
 
+Draw a series of connected lines on the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderDrawLines(SDL_Renderer*    renderer,
-                        const SDL_Point* points,
-                        int              count)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderDrawLines(SDL_Renderer * renderer,
+                        const SDL_Point * points,
+                        int count);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -23,9 +24,20 @@ int SDL_RenderDrawLines(SDL_Renderer*    renderer,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -77,13 +89,9 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawPoint]]
 :[[SDL_RenderDrawPoints]]
@@ -97,3 +105,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

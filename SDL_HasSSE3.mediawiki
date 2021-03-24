@@ -1,20 +1,26 @@
-
 = SDL_HasSSE3 =
-Use this function to determine whether the CPU has SSE3 features.
 
+Determine whether the CPU has SSE3 features.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasSSE3(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasSSE3(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns SDL_TRUE if the CPU has SSE3 features or SDL_FALSE if not.
 
+
+
 == Remarks ==
-''You can add useful comments here''
+
+This always returns false on CPUs that aren't using Intel instruction
+sets.
 
 == Related Functions ==
+
 :[[SDL_Has3DNow]]
 :[[SDL_HasAltiVec]]
 :[[SDL_HasAVX]]
@@ -28,3 +34,5 @@ Returns SDL_TRUE if the CPU has SSE3 features or SDL_FALSE if not.
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
+
+

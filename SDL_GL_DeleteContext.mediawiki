@@ -1,24 +1,25 @@
-
 = SDL_GL_DeleteContext =
-Use this function to delete an OpenGL context.
 
+Delete an OpenGL context.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GL_DeleteContext(SDL_GLContext context)
+
+<syntaxhighlight lang='c'>
+void SDL_GL_DeleteContext(SDL_GLContext context);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''context'''
 |the OpenGL context to be deleted
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_GL_CreateContext]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

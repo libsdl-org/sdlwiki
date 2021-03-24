@@ -1,27 +1,34 @@
-
 = SDL_GetCPUCount =
-Use this function to get the number of CPU cores available.
 
+Get the number of CPU cores available.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetCPUCount(void)
+
+<syntaxhighlight lang='c'>
+int SDL_GetCPUCount(void);
 </syntaxhighlight>
+
 == Return Value ==
-Returns the total number of logical CPU cores. On CPUs that include technologies such as hyperthreading, the number of logical cores may be more than the number of physical cores.
+
+Returns the total number of logical CPU cores. On CPUs that include
+technologies such as hyperthreading, the number of logical cores may be
+more than the number of physical cores.
+
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Log("Number of logical CPU cores: %d", SDL_GetCPUCount());
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 ----
 [[CategoryAPI]], [[CategoryCPU]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,28 +9,44 @@
 
 
 = SDL_GameControllerNameForIndex =
-Use this function to get the implementation dependent name for the game controller.
 
-
-
+Get the implementation dependent name for the game controller.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_GameControllerNameForIndex(int joystick_index)
+
+<syntaxhighlight lang='c'>
+const char* SDL_GameControllerNameForIndex(int joystick_index);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''joystick_index'''
-|the device_index of a device, up to [[SDL_NumJoysticks]]()
+|the device_index of a device, from zero to [[[[SDL_NumJoysticks]]]]()-1
 |}
 
-
 == Return Value ==
-Returns the implementation dependent name for the game controller, or NULL if there is no name or the index is invalid.
+
+Returns the implementation-dependent name for the game controller, or NULL
+if there is no name or the index is invalid.
+
+
+
+== Remarks ==
+
+This function can be called before any controllers are opened.
+
+<code>joystick_index</code> is the same as the <code>device_index</code>
+passed to [[SDL_JoystickOpen]]().
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     const char *name = SDL_GameControllerNameForIndex(i);
@@ -41,17 +59,9 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 </syntaxhighlight>
 
 
-== Remarks ==
-This function can be called before any controllers are opened.
-
-'''joystick_index''' is the same as the <code>device_index</code> passed to [[SDL_JoystickOpen]]().
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_GameControllerName]]
 :[[SDL_GameControllerOpen]]
 :[[SDL_IsGameController]]
@@ -59,3 +69,5 @@ This function is available since SDL 2.0.0.
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

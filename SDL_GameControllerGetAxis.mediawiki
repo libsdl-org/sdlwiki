@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,19 +10,18 @@
 
 
 = SDL_GameControllerGetAxis =
-Use this function to get the current state of an axis control on a game controller.
 
-
-
+Get the current state of an axis control on a game controller.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Sint16 SDL_GameControllerGetAxis(SDL_GameController*    gamecontroller,
-                                 SDL_GameControllerAxis axis)
+
+<syntaxhighlight lang='c'>
+extern DECLSPEC Sint16 SDLCALL
+SDL_GameControllerGetAxis(SDL_GameController *gamecontroller, SDL_GameControllerAxis axis);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''gamecontroller'''
 |a game controller
@@ -29,23 +30,32 @@ Sint16 SDL_GameControllerGetAxis(SDL_GameController*    gamecontroller,
 |an axis index (one of the [[SDL_GameControllerAxis]] values)
 |}
 
-
 == Return Value ==
-Returns axis state (including 0) on success or 0 (also) on failure; call [[SDL_GetError]]() for more information.
+
+Returns axis state (including 0) on success or 0 (also) on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
+
 The axis indices start at index 0.
 
-The state is a value ranging from -32768 to 32767. Triggers, however, range from 0 to 32767 (they never return a negative value).
+The state is a value ranging from -32768 to 32767. Triggers, however, range
+from 0 to 32767 (they never return a negative value).
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GameControllerGetButton]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

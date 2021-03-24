@@ -1,68 +1,69 @@
-{|
-|<tablewidth="100%"style="color: rgb(255, 0, 0); text-align: center;">DRAFT 
-|}
-
-
 = SDL_PeepEvents =
-Use this function to check the event queue for messages and optionally return them.
 
+Check the event queue for messages and optionally return them.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_PeepEvents(SDL_Event*      events,
-                   int             numevents,
+
+<syntaxhighlight lang='c'>
+int SDL_PeepEvents(SDL_Event * events, int numevents,
                    SDL_eventaction action,
-                   Uint32          minType,
-                   Uint32          maxType)
+                   Uint32 minType, Uint32 maxType);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
-|'''events'''    
-| destination buffer for the retrieved events 
+|'''events'''
+|destination buffer for the retrieved events
 |-
-|'''numevents''' 
-| if action is SDL_ADDEVENT, the number of events to add back to the event queue; if action is SDL_PEEKEVENT or SDL_GETEVENT, the maximum number of events to retrieve  
+|'''numevents'''
+|if action is [[SDL_ADDEVENT]], the number of events to add back to the event queue; if action is [[[[SDL_PEEKEVENT]]]] or [[[[SDL_GETEVENT]]]], the maximum number of events to retrieve
 |-
-|'''action'''    
-| action to take; see [[#action|Remarks]] for details 
+|'''action'''
+|action to take; see [[#action|Remarks]] for details
 |-
-|'''minType'''   
-| minimum value of the event type to be considered; SDL_FIRSTEVENT is a safe choice 
+|'''minType'''
+|minimum value of the event type to be considered; [[[[SDL_FIRSTEVENT]]]] is a safe choice
 |-
-|'''maxType'''   
-| maximum value of the event type to be considered; SDL_LASTEVENT is a safe choice 
+|'''maxType'''
+|maximum value of the event type to be considered; [[[[SDL_LASTEVENT]]]] is a safe choice
 |}
 
 == Return Value ==
-Returns the number of events actually stored or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns the number of events actually stored or a negative error code on
+failure; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+<code>action</code> may be any of the following:
+
+* <code>[[SDL_ADDEVENT]]</code>: up to <code>numevents</code> events will be added to the back of the event queue. 
+* <code>[[SDL_PEEKEVENT]]</code>: <code>numevents</code> events at the front of the event queue, within the specified minimum and maximum type, will be returned to the caller and will _not_ be removed from the queue. 
+* <code>[[SDL_GETEVENT]]</code>: up to <code>numevents</code> events at the front of the event queue, within the specified minimum and maximum type, will be returned to the caller and will be removed from the queue. 
+
+You may have to call [[SDL_PumpEvents]]() before calling this function.
+Otherwise, the events may not be ready to be filtered when you call
+[[SDL_PeepEvents]]().
+
+This function is thread-safe.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 Add a code example here.
 </syntaxhighlight>
 
-== Remarks ==
-<span id="action"></span> '''action''' may be any of the following: <!-- <span style="color: green;">(from enum SDL_eventaction which has no page)</span> -->
-{|
-|SDL_ADDEVENT 
-|up to '''numevents''' events will be added to the back of the event queue 
-|-
-|SDL_PEEKEVENT 
-|up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will not be removed from the queue
-|-
-|SDL_GETEVENT 
-|up to '''numevents''' events at the front of the event queue, within the specified minimum and maximum type, will be returned and will be removed from the queue
-|}
-
-{i} This function is thread-safe.
-
-You may have to call [[SDL_PumpEvents]]() before calling this function. Otherwise, the events may not be ready to be filtered when you call [[SDL_PeepEvents]]().
 
 == Related Functions ==
-: [[SDL_PollEvent]]
-: [[SDL_PumpEvents]]
-: [[SDL_PushEvent]]
+
+:[[SDL_PollEvent]]
+:[[SDL_PumpEvents]]
+:[[SDL_PushEvent]]
 
 ----
 [[CategoryAPI]], CategoryEvents
+
+

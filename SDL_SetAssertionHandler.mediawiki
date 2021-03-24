@@ -1,43 +1,42 @@
-
 = SDL_SetAssertionHandler =
-Use this function to set an application-defined assertion handler.
 
+Set an application-defined assertion handler.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetAssertionHandler(SDL_AssertionHandler handler,
-                             void*                userdata)
+
+<syntaxhighlight lang='c'>
+void SDL_SetAssertionHandler(
+                    SDL_AssertionHandler handler,
+                    void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''handler'''
-|the function to call when an assertion fails or NULL for the default handler; see [[#Remarks|Remarks]] for details
+|the [[SDL_AssertionHandler]] function to call when an assertion fails or NULL for the default handler
 |-
 |'''userdata'''
-|a pointer that is passed to '''handler'''
+|a pointer that is passed to <code>handler</code>
 |}
 
 == Remarks ==
-This function allows an application to show its own assertion UI and/or force the response to an assertion failure. If the application doesn't provide this, SDL will try to do the right thing, popping up a system-specific GUI dialog, and probably minimizing any fullscreen windows.
 
-The function prototype for '''handler''' is:
-<syntaxhighlight lang='c++'>
-SDL_AssertState YourAssertionHandler(const SDL_AssertData* data,
-                                     void*                 userdata)
-</syntaxhighlight>
-: where <code>YourAssertionHandler</code> is the name of your function and its parameters are:
- ||<code>data</code>||a pointer to the [[SDL_AssertData]] structure corresponding to the current assertion||
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_SetAssertionHandler]]()||
+This function allows an application to show its own assertion UI and/or
+force the response to an assertion failure. If the application doesn't
+provide this, SDL will try to do the right thing, popping up a
+system-specific GUI dialog, and probably minimizing any fullscreen windows.
 
-:This callback should return an [[SDL_AssertState]] value indicating how to handle the assertion failure.
-
-This callback may fire from any thread, but it runs wrapped in a mutex, so it will only fire from one thread at a time.
+This callback may fire from any thread, but it runs wrapped in a mutex, so
+it will only fire from one thread at a time.
 
 This callback is NOT reset to SDL's internal handler upon [[SDL_Quit]]()!
 
 == Related Functions ==
+
 :[[SDL_GetAssertionHandler]]
 
 ----
 [[CategoryAPI]], [[CategoryAssertions]]
+
+

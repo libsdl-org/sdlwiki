@@ -1,22 +1,25 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_StopTextInput =
-Use this function to stop receiving any text input events.
 
+Stop receiving any text input events.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_StopTextInput(void)
+
+<syntaxhighlight lang='c'>
+void SDL_StopTextInput(void);
 </syntaxhighlight>
 
-== Remarks ==
-There is a [[Tutorials/TextInput|tutorial]].
-
 == Related Functions ==
+
 :[[SDL_StartTextInput]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

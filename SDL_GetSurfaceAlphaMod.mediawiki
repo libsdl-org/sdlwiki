@@ -1,15 +1,16 @@
-
 = SDL_GetSurfaceAlphaMod =
-Use this function to get the additional alpha value used in blit operations.
 
+Get the additional alpha value used in blit operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
-                           Uint8*       alpha)
+
+<syntaxhighlight lang='c'>
+int SDL_GetSurfaceAlphaMod(SDL_Surface * surface,
+                           Uint8 * alpha);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to query
@@ -19,14 +20,18 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetSurfaceColorMod]]
 :[[SDL_SetSurfaceAlphaMod]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

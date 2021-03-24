@@ -1,23 +1,19 @@
-
 = SDL_NumSensors =
-Get the platform dependent type of a sensor.
 
-This can be called before any sensors are opened.
-
+Count the number of sensors attached to the system right now.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SensorGetDeviceNonPortableType(int device_index);
+
+<syntaxhighlight lang='c'>
+int SDL_NumSensors(void);
 </syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''device_index'''
-|The device index to check
-|}
-
 == Return Value ==
-The sensor platform dependent type, or -1 if device_index is out of range.
+
+Returns The number of sensors detected.
+
 
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

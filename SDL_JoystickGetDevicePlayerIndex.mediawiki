@@ -1,0 +1,11 @@
+= SDL_JoystickGetDevicePlayerIndex =
+
+Get the player index of a joystick, or -1 if it's not available This can be called before any joysticks are opened.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickGetDevicePlayerIndex(int device_index);
+</syntaxhighlight>
+
+

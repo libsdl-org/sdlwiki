@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,35 +9,42 @@
 
 
 = SDL_Direct3D9GetAdapterIndex =
-Use this function to get the D3D9 adapter index that matches the specified display index.
 
-
-
+Get the D3D9 adapter index that matches the specified display index.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_Direct3D9GetAdapterIndex(int displayIndex)
+
+<syntaxhighlight lang='c'>
+int SDL_Direct3D9GetAdapterIndex( int displayIndex );
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''displayIndex'''
 |the display index for which to get the D3D9 adapter index
 |}
 
-
 == Return Value ==
-Returns the D3D9 adapter index on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns the D3D9 adapter index on success or a negative error code on
+failure; call [[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-The returned adapter index can be passed to <code>IDirect3D9::CreateDevice</code> and controls on which monitor a full screen application will appear.
+
+The returned adapter index can be passed to
+<code>IDirect3D9::CreateDevice</code> and controls on which monitor a full
+screen application will appear.
 
 == Version ==
+
 This function is available since SDL 2.0.1.
+
 
 ----
 [[CategoryAPI]], [[CategorySystem]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

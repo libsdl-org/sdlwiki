@@ -1,17 +1,17 @@
-
 = SDL_GetTextureColorMod =
-Use this function to get the additional color value multiplied into render copy operations.
 
+Get the additional color value multiplied into render copy operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetTextureColorMod(SDL_Texture* texture,
-                           Uint8*       r,
-                           Uint8*       g,
-                           Uint8*       b)
+
+<syntaxhighlight lang='c'>
+int SDL_GetTextureColorMod(SDL_Texture * texture,
+                           Uint8 * r, Uint8 * g,
+                           Uint8 * b);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''texture'''
 |the texture to query
@@ -27,14 +27,18 @@ int SDL_GetTextureColorMod(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetTextureAlphaMod]]
 :[[SDL_SetTextureColorMod]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

@@ -1,25 +1,31 @@
-
 = SDL_DestroyTexture =
-Use this function to destroy the specified texture.
 
+Destroy the specified texture.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DestroyTexture(SDL_Texture* texture)
+
+<syntaxhighlight lang='c'>
+void SDL_DestroyTexture(SDL_Texture * texture);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''texture'''
 |the texture to destroy
 |}
 
 == Remarks ==
-Passing NULL or an otherwise invalid texture will set the SDL error message to "Invalid texture".
+
+Passing NULL or an otherwise invalid texture will set the SDL error
+message to "Invalid texture".
 
 == Related Functions ==
+
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

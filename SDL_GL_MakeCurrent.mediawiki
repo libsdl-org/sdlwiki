@@ -1,15 +1,16 @@
-
 = SDL_GL_MakeCurrent =
-Use this function to set up an OpenGL context for rendering into an OpenGL window.
 
+Set up an OpenGL context for rendering into an OpenGL window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GL_MakeCurrent(SDL_Window*   window,
-                       SDL_GLContext context)
+
+<syntaxhighlight lang='c'>
+int SDL_GL_MakeCurrent(SDL_Window * window,
+                       SDL_GLContext context);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to associate with the context
@@ -19,13 +20,21 @@ int SDL_GL_MakeCurrent(SDL_Window*   window,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-''You can add useful comments here''
+
+The context must have been created with a compatible window.
 
 == Related Functions ==
+
 :[[SDL_GL_CreateContext]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

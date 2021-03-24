@@ -1,21 +1,26 @@
-
 = SDL_SensorOpen =
+
 Open a sensor for use.
 
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Sensor *SDL_SensorOpen(int device_index);
+
+<syntaxhighlight lang='c'>
+SDL_Sensor* SDL_SensorOpen(int device_index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''device_index'''
 |The sensor to open
 |}
 
 == Return Value ==
-A [[SDL_Sensor]] sensor object, or NULL if an error occurred.
+
+Returns An SDL_Sensor sensor object, or NULL if an error occurred.
+
 
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

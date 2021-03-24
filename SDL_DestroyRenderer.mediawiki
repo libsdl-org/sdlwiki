@@ -1,24 +1,25 @@
-
 = SDL_DestroyRenderer =
-Use this function to destroy the rendering context for a window and free associated textures.
 
+Destroy the rendering context for a window and free associated textures.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DestroyRenderer(SDL_Renderer* renderer)
+
+<syntaxhighlight lang='c'>
+void SDL_DestroyRenderer(SDL_Renderer * renderer);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_CreateRenderer]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

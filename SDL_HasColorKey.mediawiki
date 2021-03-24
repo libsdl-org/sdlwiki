@@ -1,0 +1,35 @@
+= SDL_HasColorKey =
+
+Returns whether the surface has a color key 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasColorKey(SDL_Surface * surface);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''surface'''
+|the [[SDL_Surface]] structure to query
+|}
+
+== Return Value ==
+
+Return SDL_TRUE if the surface has a color key, SDL_FALSE otherwise.
+
+
+
+== Remarks ==
+
+It is safe to pass a NULL <code>surface</code> here; it will return
+[[SDL_FALSE]].
+
+== Related Functions ==
+
+:[[SDL_SetColorKey]]
+:[[SDL_GetColorKey]]
+
+
+

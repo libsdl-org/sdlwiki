@@ -1,39 +1,54 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickGetBall =
-Use this function to get the ball axis change since the last poll.
 
+Get the ball axis change since the last poll.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_JoystickGetBall(SDL_Joystick* joystick,
-                        int           ball,
-                        int*          dx,
-                        int*          dy)
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickGetBall(SDL_Joystick *joystick,
+                        int ball, int *dx, int *dy);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|the SDL_Joystick to query
+|the [[SDL_Joystick]] to query
 |-
 |'''ball'''
 |the ball index to query; ball indices start at index 0
 |-
 |'''dx'''
-|the difference in the x axis position since the last poll
+|stores the difference in the x axis position since the last poll
 |-
 |'''dy'''
-|the difference in the y axis position since the last poll
+|stores the difference in the y axis position since the last poll
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+Trackballs can only return relative motion since the last call to
+[[SDL_JoystickGetBall]](), these motion deltas are placed into
+<code>dx</code> and <code>dy</code>.
+
+Most joysticks do not have trackballs.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 int delta_x, delta_y;
 SDL_Joystick *joy;
@@ -46,11 +61,12 @@ if(SDL_JoystickGetBall(joy, 0, &delta_x, &delta_y)==-1)
 printf("Trackball Delta- X:%d, Y:%d\n", delta_x, delta_y);
 </syntaxhighlight>
 
-== Remarks ==
-Trackballs can only return relative motion since the last call to [[SDL_JoystickGetBall]](), these motion deltas are placed into '''dx''' and '''dy'''.
 
 == Related Functions ==
+
 :[[SDL_JoystickNumBalls]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

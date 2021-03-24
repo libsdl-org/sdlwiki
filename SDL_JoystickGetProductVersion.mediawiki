@@ -1,0 +1,28 @@
+= SDL_JoystickGetProductVersion =
+
+Get the product version of an opened joystick, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Uint16 SDL_JoystickGetProductVersion(SDL_Joystick *joystick);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick'''
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
+|}
+
+== Return Value ==
+
+Returns the product version of the selected joystick, or 0 if unavailable.
+
+
+
+== Remarks ==
+
+If the product version isn't available this function returns 0.
+
+

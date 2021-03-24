@@ -1,0 +1,11 @@
+= SDL_GameControllerGetNumTouchpadFingers =
+
+Get the number of supported simultaneous fingers on a touchpad on a game controller.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerGetNumTouchpadFingers(SDL_GameController *gamecontroller, int touchpad);
+</syntaxhighlight>
+
+

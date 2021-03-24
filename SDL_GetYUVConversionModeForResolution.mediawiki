@@ -1,0 +1,11 @@
+= SDL_GetYUVConversionModeForResolution =
+
+Get the YUV conversion mode, returning the correct mode for the resolution when the current conversion mode is [[SDL_YUV_CONVERSION_AUTOMATIC]] 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionModeForResolution(int width, int height);
+</syntaxhighlight>
+
+

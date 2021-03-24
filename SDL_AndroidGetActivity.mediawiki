@@ -1,23 +1,47 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_AndroidGetActivity =
-Use this function to retrieve the Java instance of the activity class in an Android application.
 
+Retrieve the Java instance of the Android activity class.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_AndroidGetActivity()
+
+<syntaxhighlight lang='c'>
+void * SDL_AndroidGetActivity(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the jobject representing the instance of the Activity class of the Android application, or NULL on error.
 
-The jobject returned by the function is a local reference and must be released by the caller. See the PushLocalFrame() and PopLocalFrame() or DeleteLocalRef() functions of the Java native interface ([http://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html in Oracle's documentation]).
+Returns the jobject representing the instance of the Activity class of the
+Android application, or NULL on error.
+
+
+
+== Remarks ==
+
+The prototype of the function in SDL's code actually declares a void*
+return type, even if the implementation returns a jobject. The rationale
+being that the SDL headers can avoid including jni.h.
+
+The jobject returned by the function is a local reference and must be
+released by the caller. See the PushLocalFrame() and PopLocalFrame() or
+DeleteLocalRef() functions of the Java native interface:
+
+https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <jni.h>
@@ -54,15 +78,13 @@ void showHome(void)
 }
 </syntaxhighlight>
 
-== Remarks ==
-The prototype of the function in SDL's code actually declares a void* return type, even if the implementation returns a jobject. The rationale being that it allows not to include jni.h in the headers of the SDL.
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_AndroidGetJNIEnv]]
 
 ----
 [[CategoryAPI]], [[CategorySystem]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

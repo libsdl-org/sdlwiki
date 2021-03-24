@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,41 +10,42 @@
 
 
 = SDL_TLSGet =
-Use this function to get the value associated with a thread local storage ID for the current thread.
 
-
-
+Get the current thread's value associated with a thread local storage ID.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_TLSGet(SDL_TLSID id)
+
+<syntaxhighlight lang='c'>
+void * SDL_TLSGet(SDL_TLSID id);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''id'''
 |the thread local storage ID
 |}
 
-
 == Return Value ==
-Returns the value associated with the ID for the current thread or NULL if no value has been set; call [[SDL_GetError]]() for more information.
+
+Returns the value associated with the ID for the current thread or NULL if
+no value has been set; call [[SDL_GetError]]() for more information.
 
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_TLSCreate]]
 :[[SDL_TLSSet]]
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

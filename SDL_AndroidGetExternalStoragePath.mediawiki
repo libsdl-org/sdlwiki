@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,33 +9,42 @@
 
 
 = SDL_AndroidGetExternalStoragePath =
-Use this function to get the path used for external storage for this application.
 
-
-
+Get the path used for external storage for this application.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_AndroidGetExternalStoragePath()
+
+<syntaxhighlight lang='c'>
+const char * SDL_AndroidGetExternalStoragePath(void);
 </syntaxhighlight>
 
-
 == Return Value ==
-Returns the path used for external storage for this application on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the path used for external storage for this application on success
+or NULL on failure; call [[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-This path is unique to your application, but is public and can be written to by other applications.
 
-Your external storage path is typically: <code>/storage/sdcard0/Android/data/your.app.package/files</code>.
+This path is unique to your application, but is public and can be written
+to by other applications.
+
+Your external storage path is typically:
+<code>/storage/sdcard0/Android/data/your.app.package/files</code>.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_AndroidGetExternalStorageState]]
 
 ----
 [[CategoryAPI]], [[CategorySystem]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

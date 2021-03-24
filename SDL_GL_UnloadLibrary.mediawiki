@@ -1,18 +1,18 @@
-
 = SDL_GL_UnloadLibrary =
-Use this function to unload the OpenGL library previously loaded by [[SDL_GL_LoadLibrary]]().
 
+Unload the OpenGL library previously loaded by [[SDL_GL_LoadLibrary]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GL_UnloadLibrary(void)
+
+<syntaxhighlight lang='c'>
+void SDL_GL_UnloadLibrary(void);
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_GL_LoadLibrary]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

@@ -1,27 +1,45 @@
-
 = SDL_GetAudioDeviceName =
-Use this function to get the name of a specific audio device.
 
+Get the human-readable name of a specific audio device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 const char* SDL_GetAudioDeviceName(int index,
-                                   int iscapture)
+                                   int iscapture);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''index'''
-|the index of the audio device; the value ranges from 0 to [[SDL_GetNumAudioDevices]]() - 1
+|the index of the audio device; valid values range from 0 to [[[[SDL_GetNumAudioDevices]]]]() - 1
 |-
 |'''iscapture'''
-|non-zero to specify a device that has recording capability
+|non-zero to query the list of recording devices, zero to query the list of output devices.
 |}
 
 == Return Value ==
-Returns the name of the audio device at the requested index, or NULL on error.
+
+Returns the name of the audio device at the requested index, or NULL on
+error.
+
+
+
+== Remarks ==
+
+This function is only valid after successfully initializing the audio
+subsystem. The values returned by this function reflect the latest call to
+[[SDL_GetNumAudioDevices]](); re-call that function to redetect available
+hardware.
+
+The string returned by this function is UTF-8 encoded, read-only, and
+managed internally. You are not to free it. If you need to keep the string
+for any length of time, you should make your own copy of it, as it will be
+invalid next time any of several other SDL functions are called.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 int i, count = SDL_GetNumAudioDevices(0);
 
@@ -30,14 +48,12 @@ for (i = 0; i < count; ++i) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function is only valid after successfully initializing the audio subsystem.
-The values returned by this function reflect the latest call to [[SDL_GetNumAudioDevices]](); re-call that function to re-detect available hardware.
-
-The string returned by this function is UTF-8 encoded, read-only, and managed internally. You are not to free it. If you need to keep the string for any length of time, you should make your own copy of it, as it will be invalid next time any of several other SDL functions is called.
 
 == Related Functions ==
+
 :[[SDL_GetNumAudioDevices]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,20 +9,17 @@
 
 
 = SDL_RenderSetLogicalSize =
-Use this function to set a device independent resolution for rendering.
 
-
-
+Set a device independent resolution for rendering.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderSetLogicalSize(SDL_Renderer* renderer,
-                             int           w,
-                             int           h)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderSetLogicalSize(SDL_Renderer * renderer, int w, int h);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the renderer for which resolution should be set
@@ -32,22 +31,38 @@ int SDL_RenderSetLogicalSize(SDL_Renderer* renderer,
 |the height of the logical resolution
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-''You can add useful comments here''
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+This function uses the viewport and scaling functionality to allow a fixed
+logical resolution for rendering, regardless of the actual output
+resolution. If the actual output resolution doesn't have the same aspect
+ratio the output rendering will be centered within the output display.
+
+If the output display is a window, mouse and touch events in the window
+will be filtered and scaled so they seem to arrive within the logical
+resolution.
+
+If this function results in scaling or subpixel drawing by the rendering
+backend, it will be handled using the appropriate quality hints.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_RenderGetLogicalSize]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

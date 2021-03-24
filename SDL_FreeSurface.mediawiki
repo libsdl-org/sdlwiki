@@ -1,25 +1,26 @@
-
 = SDL_FreeSurface =
-Use this function to free an RGB surface.  
 
+Free an RGB surface.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_FreeSurface(SDL_Surface* surface)
+
+<syntaxhighlight lang='c'>
+void SDL_FreeSurface(SDL_Surface * surface);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
-|the [[SDL_Surface]] structure to free
+|the [[SDL_Surface]] to free.
 |}
 
 == Remarks ==
-If the surface was created using [[SDL_CreateRGBSurfaceFrom]]() then the pixel data is not freed.
 
 It is safe to pass NULL to this function.
 
 == Related Functions ==
+
 :[[SDL_CreateRGBSurface]]
 :[[SDL_CreateRGBSurfaceFrom]]
 :[[SDL_LoadBMP]]
@@ -27,3 +28,5 @@ It is safe to pass NULL to this function.
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

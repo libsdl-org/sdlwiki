@@ -1,0 +1,34 @@
+= SDL_SetWindowKeyboardGrab =
+
+Set a window's keyboard grab mode.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_SetWindowKeyboardGrab(SDL_Window * window,
+                               SDL_bool grabbed);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''window'''
+|The window for which the keyboard grab mode should be set.
+|-
+|'''grabbed'''
+|This is [[SDL_TRUE]] to grab keyboard, and [[SDL_FALSE]] to release.
+|}
+
+== Remarks ==
+
+If the caller enables a grab while another window is currently grabbed,
+the other window loses its grab in favor of the caller's window.
+
+== Related Functions ==
+
+:[[SDL_GetWindowKeyboardGrab]]
+:[[SDL_SetWindowMouseGrab]]
+:[[SDL_SetWindowGrab]]
+
+
+

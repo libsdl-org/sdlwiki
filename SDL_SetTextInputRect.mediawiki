@@ -1,28 +1,32 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_SetTextInputRect =
-Use this function to set the rectangle used to type Unicode text inputs.
 
+Set the rectangle used to type Unicode text inputs.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetTextInputRect(SDL_Rect* rect)
+
+<syntaxhighlight lang='c'>
+void SDL_SetTextInputRect(SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''rect'''
 |the [[SDL_Rect]] structure representing the rectangle to receive text (ignored if NULL)
 |}
 
-== Remarks ==
-There is a [[Tutorials/TextInput|tutorial]].
-
 == Related Functions ==
+
 :[[SDL_StartTextInput]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

@@ -1,37 +1,52 @@
-
 = SDL_SetRenderTarget =
-Use this function to set a texture as the current rendering target.
 
+Set a texture as the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetRenderTarget(SDL_Renderer* renderer,
-                        SDL_Texture*  texture)
+
+<syntaxhighlight lang='c'>
+int SDL_SetRenderTarget(SDL_Renderer *renderer,
+                        SDL_Texture *texture);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |-
 |'''texture'''
-|the targeted texture, which must be created with the [[SDL_TextureAccess|SDL_TEXTUREACCESS_TARGET]] flag, or NULL for the default render target
+|the targeted texture, which must be created with the <code>[[[[SDL_TEXTUREACCESS_TARGET]]]]</code> flag, or NULL to render to the window instead of a texture.
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-Before using this function, you should check the SDL_RENDERER_TARGETTEXTURE bit in the flags of [[SDL_RendererInfo]] to see if render targets are supported.
+
+Before using this function, you should check the
+<code>[[SDL_RENDERER_TARGETTEXTURE]]</code> bit in the flags of
+[[SDL_RendererInfo]] to see if render targets are supported.
 
 The default render target is the window for which the renderer was created.
+To stop rendering to a texture and render to the window again, call this
+function with a NULL <code>texture</code>.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GetRenderTarget]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

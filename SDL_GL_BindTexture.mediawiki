@@ -1,30 +1,63 @@
 = SDL_GL_BindTexture =
-Use this function to bind an OpenGL/ES/ES2 texture to the current context for use with OpenGL instructions when rendering OpenGL primitives directly.
 
+Bind an OpenGL/ES/ES2 texture to the current context.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GL_BindTexture(SDL_Texture* texture,
-                       float*       texw,
-                       float*       texh)
+
+<syntaxhighlight lang='c'>
+int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''texture''' 
-|the texture to bind to the current OpenGL/ES/ES2 context 
+|'''texture'''
+|the texture to bind to the current OpenGL/ES/ES2 context
 |-
-|'''texw''' 
-|a pointer to a float value which will be filled with the texture width or NULL if you don't need that value 
+|'''texw'''
+|a pointer to a float value which will be filled with the texture width or NULL if you don't need that value
 |-
-|'''texh''' 
-|a pointer to a float value which will be filled with the texture height or NULL if you don't need that value 
+|'''texh'''
+|a pointer to a float value which will be filled with the texture height or NULL if you don't need that value
 |}
 
-
 == Return Value ==
-Returns 0 on success, or -1 if the operation is not supported; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success, or -1 if the operation is not supported; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This is for use with OpenGL instructions when rendering OpenGL primitives
+directly.
+
+If not NULL, <code>texw</code> and <code>texh</code> will be filled with
+the width and height values suitable for the provided texture. In most
+cases, both will be 1.0, however, on systems that support the
+GL_ARB_texture_rectangle extension, these values will actually be the pixel
+width and height used to create the texture, so this factor needs to be
+taken into account when providing texture coordinates to OpenGL.
+
+You need a renderer to create an [[SDL_Texture]], therefore you can only
+use this function with an implicit OpenGL context from
+[[SDL_CreateRenderer]](), not with your own OpenGL context. If you need
+control over your OpenGL context, you need to write your own
+texture-loading methods.
+
+Also note that SDL may upload RGB textures as BGR (or vice-versa), and
+re-order the color channels in the shaders phase, so the uploaded texture
+may have swapped color channels.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 The following are three examples extracted from the [http://ignifuga.org Ignifuga Game Engine] that show how to integrate [http://librocket.com libRocket] (which uses OpenGL for rendering) with SDL2.
 
 <syntaxhighlight lang='c++'>
@@ -231,23 +264,13 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
 </syntaxhighlight>
 
 
-== Remarks ==
-If provided, '''texw''' and '''texh''' will be filled with the width and height values suitable for the provided texture.
-In most cases, both will be 1.0, however, on systems that support the GL_ARB_texture_rectangle extension, these values will actually be the pixel width and height used to create the texture, so this factor needs to be taken into account when providing texture coordinates to OpenGL.
-
-You need a renderer to create a [[SDL_Texture]], therefore you can only use this function with an implicit OpenGL context from [[SDL_CreateRenderer]](), not with your own OpenGL context.
-If you need control over your OpenGL context, you need to write your own texture-loading methods.
-
-Also note that SDL may upload RGB textures as BGR (or vice-versa), and re-order the color channels in the shaders phase, so the uploaded texture may have swapped color channels.
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_GL_MakeCurrent]]
 :[[SDL_GL_UnbindTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

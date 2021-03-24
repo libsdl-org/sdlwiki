@@ -1,15 +1,16 @@
-
 = SDL_GetWindowDisplayMode =
-Use this function to fill in information about the display mode to use when a window is visible at fullscreen.
 
+Query the display mode to use when a window is visible at fullscreen.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetWindowDisplayMode(SDL_Window*      window,
-                             SDL_DisplayMode* mode)
+
+<syntaxhighlight lang='c'>
+int SDL_GetWindowDisplayMode(SDL_Window * window,
+                             SDL_DisplayMode * mode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query
@@ -19,14 +20,18 @@ int SDL_GetWindowDisplayMode(SDL_Window*      window,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.   
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_SetWindowDisplayMode]]
 :[[SDL_SetWindowFullscreen]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

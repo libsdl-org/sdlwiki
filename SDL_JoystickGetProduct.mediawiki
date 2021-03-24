@@ -1,0 +1,28 @@
+= SDL_JoystickGetProduct =
+
+Get the USB product ID of an opened joystick, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Uint16 SDL_JoystickGetProduct(SDL_Joystick *joystick);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick'''
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
+|}
+
+== Return Value ==
+
+Returns the USB product ID of the selected joystick, or 0 if unavailable.
+
+
+
+== Remarks ==
+
+If the product ID isn't available this function returns 0.
+
+

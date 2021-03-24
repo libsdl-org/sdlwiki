@@ -1,32 +1,43 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetScancodeFromKey =
-Use this function to get the scancode corresponding to the given key code according to the current keyboard layout.
 
+Get the scancode corresponding to the given key code according to the current keyboard layout.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key)
+
+<syntaxhighlight lang='c'>
+SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''key'''
 |the desired [[SDL_Keycode]] to query
 |}
 
 == Return Value ==
-Returns the [[SDL_Scancode]] that corresponds to the given [[SDL_Keycode]].
+
+Returns the SDL_Scancode that corresponds to the given SDL_Keycode.
+
+
 
 == Remarks ==
+
 See [[SDL_Scancode]] for details.
 
 == Related Functions ==
+
 :[[SDL_GetKeyFromScancode]]
 :[[SDL_GetScancodeName]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

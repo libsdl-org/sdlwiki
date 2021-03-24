@@ -1,47 +1,68 @@
-
 = SDL_BuildAudioCVT =
-Use this function to initialize an [[SDL_AudioCVT]] structure for conversion.
 
+Initialize an [[SDL_AudioCVT]] structure for conversion.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_BuildAudioCVT(SDL_AudioCVT*   cvt,
+
+<syntaxhighlight lang='c'>
+int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
                       SDL_AudioFormat src_format,
-                      Uint8           src_channels,
-                      int             src_rate,
+                      Uint8 src_channels,
+                      int src_rate,
                       SDL_AudioFormat dst_format,
-                      Uint8           dst_channels,
-                      int             dst_rate)
+                      Uint8 dst_channels,
+                      int dst_rate);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cvt'''
 |an [[SDL_AudioCVT]] structure filled in with audio conversion information
 |-
 |'''src_format'''
-|the source format of the audio data; for more info see [[SDL_AudioFormat]]
+|the source format of the audio data; for more info see [[[[SDL_AudioFormat]]]]
 |-
 |'''src_channels'''
 |the number of channels in the source
 |-
 |'''src_rate'''
-|the frequency (samples-frames-per-second) of the source
+|the frequency (sample-frames-per-second) of the source
 |-
 |'''dst_format'''
-|the destination format of the audio data; for more info see [[SDL_AudioFormat]]
+|the destination format of the audio data; for more info see [[[[SDL_AudioFormat]]]]
 |-
 |'''dst_channels'''
 |the number of channels in the destination
 |-
 |'''dst_rate'''
-|the frequency (samples-frames-per-second) of the destination
+|the frequency (sample-frames-per-second) of the destination
 |}
 
 == Return Value ==
-Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or
+a negative error code on failure; call [[SDL_GetError]]() for more
+information.
+
+
+
+== Remarks ==
+
+Before an [[SDL_AudioCVT]] structure can be used to convert audio data it
+must be initialized with source and destination information.
+
+This function will zero out every field of the [[SDL_AudioCVT]], so it must
+be called before the application fills in the final buffer information.
+
+Once this function has returned successfully, and reported that a
+conversion is necessary, the application fills in the rest of the fields in
+[[SDL_AudioCVT]], now that it knows how large a buffer it needs to
+allocate, and then can call [[SDL_ConvertAudio]]() to complete the
+conversion.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // Change 1024 stereo sample frames at 48000Hz from float32 to int16.
 SDL_AudioCVT cvt;
@@ -54,15 +75,12 @@ SDL_ConvertAudio(&cvt);
 // cvt.buf has cvt.len_cvt bytes of converted data now.
 </syntaxhighlight>
 
-== Remarks ==
-Before an [[SDL_AudioCVT]] structure can be used to convert audio data it must be initialized with source and destination information.
-
-This function will zero out every field of the [[SDL_AudioCVT]], so it must be called before the application fills in the final buffer information.
-
-Once this function has returned successfully, and reported that a conversion is necessary, the application fills in the rest of the fields in [[SDL_AudioCVT]], now that it knows how large a buffer it needs to allocate, and then can call [[SDL_ConvertAudio]]() to complete the conversion.
 
 == Related Functions ==
+
 :[[SDL_ConvertAudio]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

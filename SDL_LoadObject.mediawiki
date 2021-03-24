@@ -1,23 +1,29 @@
-
 = SDL_LoadObject =
-Use this function to dynamically load a shared object and return a pointer to the object handle.
 
+Dynamically load a shared object.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_LoadObject(const char* sofile)
+
+<syntaxhighlight lang='c'>
+void* SDL_LoadObject(const char *sofile);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sofile'''
-|a system dependent name of the object file
+|a system-dependent name of the object file
 |}
 
 == Return Value ==
-Returns a pointer to the object handle or NULL if there was an error; call [[SDL_GetError]]() for more information.
+
+Returns an opaque pointer to the object handle or NULL if there was an
+error; call [[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -25,12 +31,13 @@ Returns a pointer to the object handle or NULL if there was an error; call [[SDL
 SDL_LoadObject("mylib.so");
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_LoadFunction]]
 :[[SDL_UnloadObject]]
 
 ----
 [[CategoryAPI]], [[CategorySharedObject]]
+
+

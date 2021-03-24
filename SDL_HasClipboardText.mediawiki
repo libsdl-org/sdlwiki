@@ -1,25 +1,31 @@
-
 = SDL_HasClipboardText =
-Use this function to get a flag indicating whether the clipboard exists and contains a text string that is non-empty.
 
+Query whether the clipboard exists and contains a non-empty text string.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasClipboardText(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasClipboardText(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns SDL_TRUE if the clipboard has text, or SDL_FALSE if it does not.
 
-== Remarks ==
-''You can add useful comments here''
+
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GetClipboardText]]
 :[[SDL_SetClipboardText]]
 
 ----
 [[CategoryAPI]], [[CategoryClipboard]]
+
+

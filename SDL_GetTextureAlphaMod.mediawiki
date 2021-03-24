@@ -1,15 +1,16 @@
-
 = SDL_GetTextureAlphaMod =
-Use this function to get the additional alpha value multiplied into render copy operations.
 
+Get the additional alpha value multiplied into render copy operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetTextureAlphaMod(SDL_Texture* texture,
-                           Uint8*       alpha)
+
+<syntaxhighlight lang='c'>
+int SDL_GetTextureAlphaMod(SDL_Texture * texture,
+                           Uint8 * alpha);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''texture'''
 |the texture to query
@@ -19,14 +20,18 @@ int SDL_GetTextureAlphaMod(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetTextureColorMod]]
 :[[SDL_SetTextureAlphaMod]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

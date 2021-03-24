@@ -1,32 +1,41 @@
-
 = SDL_FlushEvents =
-Use this function to clear events from the event queue.
 
+Clear events of a range of types from the event queue.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_FlushEvents(Uint32 minType,
-                     Uint32 maxType)
+
+<syntaxhighlight lang='c'>
+void SDL_FlushEvents(Uint32 minType, Uint32 maxType);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''minType'''
-|the minimum event type to be cleared; see [[SDL_EventType]] for details
+|the low end of event type to be cleared, inclusive; see [[[[SDL_EventType]]]] for details
 |-
 |'''maxType'''
-|the maximum event type to be cleared; see [[SDL_EventType]] for details
+|the high end of event type to be cleared, inclusive; see [[[[SDL_EventType]]]] for details
 |}
 
 == Remarks ==
-This will unconditionally remove any events from the queue that match the specified type range. If you need to remove a single event type, you can use [[SDL_FlushEvent]]() instead.
 
-It's also normal to just ignore events you don't care about in your event loop without calling this function.
+This will unconditionally remove any events from the queue that are in the
+range of <code>minType</code> to <code>maxType</code>, inclusive. If you
+need to remove a single event type, use [[SDL_FlushEvent]]() instead.
 
-This function only affects currently queued events. If you want to make sure that all pending OS events are flushed, you can call [[SDL_PumpEvents]]() on the main thread immediately before the flush call.
+It's also normal to just ignore events you don't care about in your event
+loop without calling this function.
+
+This function only affects currently queued events. If you want to make
+sure that all pending OS events are flushed, you can call
+[[SDL_PumpEvents]]() on the main thread immediately before the flush call.
 
 == Related Functions ==
+
 :[[SDL_FlushEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

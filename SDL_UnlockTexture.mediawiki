@@ -1,22 +1,35 @@
 = SDL_UnlockTexture =
-Use this function to unlock a texture, uploading the changes to video memory, if needed.
 
+Unlock a texture, uploading the changes to video memory, if needed.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_UnlockTexture(SDL_Texture* texture)
+
+<syntaxhighlight lang='c'>
+void SDL_UnlockTexture(SDL_Texture * texture);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''texture''' 
-|a texture locked by [[SDL_LockTexture]]() 
+|'''texture'''
+|a texture locked by [[SDL_LockTexture]]()
 |}
 
 == Remarks ==
-/!\ ''WARNING'': See [https://bugzilla.libsdl.org/show_bug.cgi?id=1586 SDL bug #1586] before using this function!
+
+'''Warning''': Please note that [[SDL_LockTexture]]() is intended to be
+write-only; it will notguarantee the previous contents of the texture will
+be provided. You must fully initialize any area of a texture that you lock
+before unlocking it, as the pixels might otherwise be uninitialized memory.
+
+Which is to say: locking and immediately unlocking a texture can result in
+corrupted textures, depending on the renderer in use.
 
 == Related Functions ==
-: [[SDL_LockTexture]]
+
+:[[SDL_LockTexture]]
 
 ----
 [[CategoryAPI]], CategoryRender
+
+

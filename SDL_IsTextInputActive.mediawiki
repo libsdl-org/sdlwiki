@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,31 +10,33 @@
 
 
 = SDL_IsTextInputActive =
-Use this function to check whether or not Unicode text input events are enabled.
 
-
-
+Check whether or not Unicode text input events are enabled.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_IsTextInputActive(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_IsTextInputActive(void);
 </syntaxhighlight>
 
-
 == Return Value ==
+
 Returns SDL_TRUE if text input events are enabled else SDL_FALSE.
 
 
 
-== Remarks ==
-There is a [[Tutorials/TextInput|tutorial]].
-
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_StartTextInput]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

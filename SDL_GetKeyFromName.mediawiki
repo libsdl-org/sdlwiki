@@ -1,35 +1,41 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetKeyFromName =
-Use this function to get a key code from a human-readable name.
 
+Get a key code from a human-readable name.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Keycode SDL_GetKeyFromName(const char* name)
+
+<syntaxhighlight lang='c'>
+SDL_Keycode SDL_GetKeyFromName(const char *name);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''name'''
 |the human-readable key name
 |}
 
 == Return Value ==
-Returns key code, or SDLK_UNKNOWN if the name wasn't recognized; call [[SDL_GetError]]() for more information.
 
-<!-- <span style="color: green;">Should it refer to SDL_Keycode instead of key code?  Leave error call in?</span> -->
+Returns key code, or `SDLK_UNKNOWN` if the name wasn't recognized; call
+[[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+
 
 == Related Functions ==
+
 :[[SDL_GetKeyFromScancode]]
 :[[SDL_GetKeyName]]
 :[[SDL_GetScancodeFromName]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

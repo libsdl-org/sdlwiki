@@ -1,28 +1,38 @@
-
 = SDL_AtomicTryLock =
-Use this function to try to lock a spin lock by setting it to a non-zero value.
 
+Try to lock a spin lock by setting it to a non-zero value.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_AtomicTryLock(SDL_SpinLock* lock)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''lock'''
 |a pointer to a lock variable
 |}
 
 == Return Value ==
-Returns SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already held.
+
+Returns SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already
+held.
+
+
 
 == Remarks ==
-<<Include(CategoryAtomic, , , from="Start Include here.", to="##End Include here")>>
+
+'''''*Please note that spinlocks are dangerous if you don't know what
+you're doing. Please be careful using any sort of spinlock!'''''
 
 == Related Functions ==
+
 :[[SDL_AtomicLock]]
 :[[SDL_AtomicUnlock]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,20 +10,18 @@
 
 
 = SDL_GetRendererOutputSize =
-Use this function to get the output size in pixels of a rendering context.
 
-
-
+Get the output size in pixels of a rendering context.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetRendererOutputSize(SDL_Renderer* renderer,
-                              int*          w,
-                              int*          h)
+
+<syntaxhighlight lang='c'>
+int SDL_GetRendererOutputSize(SDL_Renderer * renderer,
+                              int *w, int *h);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -33,23 +33,31 @@ int SDL_GetRendererOutputSize(SDL_Renderer* renderer,
 |an int filled with the height
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-''You can add useful comments here''
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
+Due to high-dpi displays, you might end up with a rendering context that
+has more pixels than the window that contains it, so use this instead of
+[[SDL_GetWindowSize]]() to decide how much drawing area you have.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GetRenderer]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

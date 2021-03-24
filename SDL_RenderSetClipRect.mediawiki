@@ -1,40 +1,37 @@
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_RenderSetClipRect =
-Use this function to set the clip rectangle for rendering on the specified target.
 
-
+Set the clip rectangle for rendering on the specified target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderSetClipRect(SDL_Renderer*   renderer,
-                          const SDL_Rect* rect)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderSetClipRect(SDL_Renderer * renderer,
+                          const SDL_Rect * rect);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context for which clip rectangle should be set
 |-
 |'''rect'''
-|an [[SDL_Rect]] structure representing the clip area, or NULL to disable clipping
+|an [[SDL_Rect]] structure representing the clip area, relative to the viewport, or NULL to disable clipping
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
 
 
 == Related Functions ==
+
 :[[SDL_RenderGetClipRect]]
 :[[SDL_RenderIsClipEnabled]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

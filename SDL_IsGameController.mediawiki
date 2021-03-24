@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,28 +9,42 @@
 
 
 = SDL_IsGameController =
-Use this function to check if the given joystick is supported by the game controller interface.
 
-
-
+Check if the given joystick is supported by the game controller interface.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_IsGameController(int joystick_index)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_IsGameController(int joystick_index);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''joystick_index'''
-|the device_index of a device, up to [[SDL_NumJoysticks]]()
+|the device_index of a device, up to [[[[SDL_NumJoysticks]]]]()
 |}
 
-
 == Return Value ==
-Returns SDL_TRUE if the given joystick is supported by the game controller interface, SDL_FALSE if it isn't or it's an invalid index.
+
+Returns SDL_TRUE if the given joystick is supported by the game controller
+interface, [[SDL_FALSE]] if it isn't or it's an invalid index.
+
+
+
+== Remarks ==
+
+<code>joystick_index</code> is the same as the <code>device_index</code>
+passed to [[SDL_JoystickOpen]]().
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 for (int i = 0; i < SDL_NumJoysticks(); ++i) {
     if (SDL_IsGameController(i)) {
@@ -38,18 +54,14 @@ for (int i = 0; i < SDL_NumJoysticks(); ++i) {
 </syntaxhighlight>
 
 
-== Remarks ==
-'''joystick_index''' is the same as the <code>device_index</code> passed to [[SDL_JoystickOpen]]().
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_GameControllerNameForIndex]]
 :[[SDL_GameControllerOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

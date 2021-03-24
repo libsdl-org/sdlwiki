@@ -1,0 +1,28 @@
+= SDL_JoystickGetSerial =
+
+Get the serial number of an opened joystick, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char * SDL_JoystickGetSerial(SDL_Joystick *joystick);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick'''
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
+|}
+
+== Return Value ==
+
+Returns the serial number of the selected joystick, or NULL if unavailable.
+
+
+
+== Remarks ==
+
+Returns the serial number of the joystick, or NULL if it is not available.
+
+

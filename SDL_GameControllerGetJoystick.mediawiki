@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -6,33 +8,42 @@
 
 
 = SDL_GameControllerGetJoystick =
-Use this function to get the Joystick ID from a Game Controller. The game controller builds on the Joystick API, but to be able to use the Joystick's functions with a gamepad, you need to use this first to get the joystick object.
 
-
-
+Get the Joystick ID from a Game Controller.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController* gamecontroller)
+
+<syntaxhighlight lang='c'>
+SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController *gamecontroller);
 </syntaxhighlight>
 
-<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
-
-
 == Function Parameters ==
+
 {|
 |'''gamecontroller'''
 |the game controller object that you want to get a joystick from
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
-
 == Return Value ==
-Returns a SDL_Joystick object; call [[SDL_GetError]]() for more information.
 
+Returns a SDL_Joystick object; call SDL_GetError() for more information.
+
+
+
+== Remarks ==
+
+This function will give you a [[SDL_Joystick]] object, which allows you to
+use the [[SDL_Joystick]] functions with a [[SDL_GameController]] object.
+This would be useful for getting a joystick's position at any given time,
+even if it hasn't moved (moving it would produce an event, which would have
+the axis' value).
+
+The pointer returned is owned by the [[SDL_GameController]]. You should not
+call [[SDL_JoystickClose]]() on it, for example, since doing so will likely
+cause SDL to crash.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include <stdio.h> /* for printf() */
 
@@ -54,12 +65,8 @@ for(i = 0; i < SDL_NumJoysticks(); ++i) {
 </syntaxhighlight>
 
 
-== Remarks ==
-This function will give you a SDL_Joystick object, which allows you to use the SDL_Joystick functions with a SDL_GameController object. This would be useful for getting a joystick's position at any given time, even if it hasn't moved (moving it would produce an event, which would have the axis' value).
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
-The pointer returned is owned by the SDL_GameController.  You should not call [[SDL_JoystickClose]]() on it, for example, since doing so will likely cause SDL to crash.
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

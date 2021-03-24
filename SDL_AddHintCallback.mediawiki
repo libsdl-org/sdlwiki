@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,53 +10,42 @@
 
 
 = SDL_AddHintCallback =
-Use this function to add a function to watch a particular hint.
 
-
-
+Add a function to watch a particular hint.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_AddHintCallback(const char*      name,
+
+<syntaxhighlight lang='c'>
+void SDL_AddHintCallback(const char *name,
                          SDL_HintCallback callback,
-                         void*            userdata)
+                         void *userdata);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''name'''
 |the hint to watch
 |-
 |'''callback'''
-|the function to call when the hint value changes
+|An [[SDL_HintCallback]] function that will be called when the hint value changes
 |-
 |'''userdata'''
 |a pointer to pass to the callback function
 |}
 
-
-
-== Remarks ==
-The function prototype for '''callback''' is:
- <syntaxhighlight lang='c++'>
-void SDL_HintCallback(void*       userdata,
-                      const char* name,
-                      const char* oldValue,
-                      const char* newValue)
-</syntaxhighlight>
-: where its parameters are:
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_AddHintCallback]]()||
- ||<code>name</code>||what was passed as '''name''' to [[SDL_AddHintCallback]]()||
- ||<code>oldValue</code>||the old value||
- ||<code>newValue</code>||the new value||
-
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_DelHintCallback]]
 
 ----
 [[CategoryAPI]], [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

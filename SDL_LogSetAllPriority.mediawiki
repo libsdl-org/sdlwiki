@@ -1,26 +1,25 @@
-
 = SDL_LogSetAllPriority =
-Use this function to set the priority of all log categories.
 
+Set the priority of all log categories.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_LogSetAllPriority(SDL_LogPriority priority)
+
+<syntaxhighlight lang='c'>
+void SDL_LogSetAllPriority(SDL_LogPriority priority);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''priority'''
-|the [[SDL_LogPriority]] to assign; see [[#priority|Remarks]] for details
+|the [[SDL_LogPriority]] to assign
 |}
 
-== Remarks ==
-<span id="priority"></span>
-The '''priority''' can be one of:
-<<Include(SDL_LogPriority, , , from="Start Include here.", to="##End Include here.")>>
-
 == Related Functions ==
+
 :[[SDL_LogSetPriority]]
 
 ----
 [[CategoryAPI]], [[CategoryLog]]
+
+

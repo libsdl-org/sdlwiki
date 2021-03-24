@@ -1,15 +1,16 @@
-
 = SDL_SetPixelFormatPalette =
-Use this function to set the palette for a pixel format structure.
 
+Set the palette for a pixel format structure.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetPixelFormatPalette(SDL_PixelFormat* format,
-                              SDL_Palette*     palette)
+
+<syntaxhighlight lang='c'>
+int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
+                              SDL_Palette *palette);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''format'''
 |the [[SDL_PixelFormat]] structure that will use the palette
@@ -19,14 +20,18 @@ int SDL_SetPixelFormatPalette(SDL_PixelFormat* format,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_AllocPalette]]
 :[[SDL_FreePalette]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

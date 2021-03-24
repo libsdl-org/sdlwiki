@@ -1,29 +1,34 @@
-
 = SDL_SemPost =
-Use this function to atomically increment a semaphore's value and wake waiting threads.
 
+Atomically increment a semaphore's value and wake waiting threads.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SemPost(SDL_sem* sem)
+
+<syntaxhighlight lang='c'>
+int SDL_SemPost(SDL_sem * sem);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sem'''
 |the semaphore to increment
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure ; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_CreateSemaphore]]
 :[[SDL_DestroySemaphore]]
 :[[SDL_SemTryWait]]
@@ -33,3 +38,5 @@ Returns 0 on success or a negative error code on failure ; call [[SDL_GetError]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

@@ -1,30 +1,40 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_FreeCursor =
-Use this function to free a cursor created with [[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or [[SDL_CreateSystemCursor]]().
 
+Free a previously-created cursor.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_FreeCursor(SDL_Cursor* cursor)
+
+<syntaxhighlight lang='c'>
+void SDL_FreeCursor(SDL_Cursor * cursor);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cursor'''
 |the cursor to free
 |}
 
 == Remarks ==
-''You can add useful comments here''
+
+Use this function to free cursor resources created with
+[[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or
+[[SDL_CreateSystemCursor]]().
 
 == Related Functions ==
+
 :[[SDL_CreateColorCursor]]
 :[[SDL_CreateCursor]]
 :[[SDL_CreateSystemCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

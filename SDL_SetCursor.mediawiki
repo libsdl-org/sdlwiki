@@ -1,36 +1,49 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_SetCursor =
-Use this function to set the active cursor.
 
+Set the active cursor.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetCursor(SDL_Cursor* cursor)
+
+<syntaxhighlight lang='c'>
+void SDL_SetCursor(SDL_Cursor * cursor);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cursor'''
-|a cursor to make active; see [[#Remarks|Remarks]] for details
+|a  cursor to make active
 |}
 
+== Remarks ==
+
+This function sets the currently active cursor to the specified one. If
+the cursor is currently visible, the change will be immediately represented
+on the display. [[SDL_SetCursor]](NULL) can be used to force cursor redraw,
+if this is desired for any reason.
+
 == Code Examples ==
+
 
 <syntaxhighlight lang='c++'>
 You can add your code example here
 </syntaxhighlight>
 
-== Remarks ==
-This function sets the currently active cursor to the specified one. If the cursor is currently visible, the change will be immediately represented on the display. [[SDL_SetCursor]](NULL) can be used to force cursor redraw, if this is desired for any reason.
 
 == Related Functions ==
+
 :[[SDL_CreateCursor]]
 :[[SDL_GetCursor]]
 :[[SDL_ShowCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

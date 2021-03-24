@@ -1,30 +1,43 @@
-
 = SDL_Vulkan_GetDrawableSize =
-Use this function to get the size of the window's underlying drawable dimensions in pixels. This is used for setting viewport sizes, scissor rectangles, and other places where the a ```VkExtent``` might show up in relation to the window.
 
-
+Get the size of the window's underlying drawable dimensions in pixels.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_Vulkan_GetDrawableSize(SDL_Window* window,
-                                int* w,
-                                int* h);
+
+<syntaxhighlight lang='c'>
+void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
+                                int *w, int *h);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
-|```SDL_Window``` for which the size is to be queried
+|an [[SDL_Window]] for which the size is to be queried
 |-
 |'''w'''
-|Pointer to the variable to write the width to or ```NULL```
+|Pointer to the variable to write the width to or NULL
 |-
 |'''h'''
-|Pointer to the variable to write the height to or ```NULL```
+|Pointer to the variable to write the height to or NULL
 |}
+
+== Remarks ==
+
+This may differ from [[SDL_GetWindowSize]]() if we're rendering to a
+high-DPI drawable, i.e. the window was created with
+<code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on a platform with high-DPI
+support (Apple calls this "Retina"), and not disabled by the
+<code>[[SDL_HINT_VIDEO_HIGHDPI_DISABLED]]</code> hint.
+
+== Version ==
+
+This function is available in SDL 2.0.8
+
 
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // may instead choose to use std::clamp() in C++17
 #define CLAMP(x, lo, hi)    ((x) < (lo) ? (lo) : (x) > (hi) ? (hi) : (x))
@@ -61,19 +74,15 @@ height = CLAMP(height, capabilities.minImageExtent.height, capabilities.maxImage
 
 
 
-== Remarks ==
-
-This may differ from [[SDL_GetWindowSize]] if we're rendering to a high-DPI drawable, i.e. the window was created with ```SDL_WINDOW_ALLOW_HIGHDPI``` on a platform with high-DPI support (Apple calls this "Retina"), and not disabled by the {{{SDL_HINT_VIDEO_HIGHDPI_DISABLED}}} hint.
-
-== Version ==
-This function is available in SDL 2.0.8
 
 == Related Functions ==
+
 :[[SDL_GetWindowSize]]
 :[[SDL_CreateWindow]]
 :[[SDL_Vulkan_CreateSurface]]
 
-
 ----
 [[CategoryAPI]], [[CategoryVulkan]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

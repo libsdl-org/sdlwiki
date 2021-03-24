@@ -1,14 +1,15 @@
-
 = SDL_ClearError =
-Use this function to clear any previous error message.
 
+Clear any previous error message for this thread.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_ClearError(void)
+
+<syntaxhighlight lang='c'>
+void SDL_ClearError(void);
 </syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 const char *error = SDL_GetError();
 if (*error) {
@@ -17,12 +18,13 @@ if (*error) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_GetError]]
 :[[SDL_SetError]]
 
 ----
 [[CategoryAPI]], [[CategoryError]]
+
+

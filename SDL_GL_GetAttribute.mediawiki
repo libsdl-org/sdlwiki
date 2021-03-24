@@ -1,33 +1,36 @@
-
 = SDL_GL_GetAttribute =
-Use this function to get the actual value for an attribute from the current context.
 
+Get the actual value for an attribute from the current context.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GL_GetAttribute(SDL_GLattr attr,
-                        int*       value)
+
+<syntaxhighlight lang='c'>
+int SDL_GL_GetAttribute(SDL_GLattr attr, int *value);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''attr'''
-|the [[SDL_GLattr]] structure to query
+|an [[SDL_GLattr]] enum value specifying the OpenGL attribute to get
 |-
 |'''value'''
-|a pointer filled in with the current value of '''attr'''
+|a pointer filled in with the current value of <code>attr</code>
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-'''attr''' may be one of the following:
-<<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GL_ResetAttributes]]
 :[[SDL_GL_SetAttribute]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

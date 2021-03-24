@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,29 +10,28 @@
 
 
 = SDL_GL_GetCurrentWindow =
-Use this function to get the currently active OpenGL window.
 
-
-
+Get the currently active OpenGL window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Window* SDL_GL_GetCurrentWindow(void)
+
+<syntaxhighlight lang='c'>
+SDL_Window* SDL_GL_GetCurrentWindow(void);
 </syntaxhighlight>
 
-
 == Return Value ==
-Returns the currently active OpenGL window on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the currently active OpenGL window on success or NULL on failure;
+call [[SDL_GetError]]() for more information.
 
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
+
 This function is available since SDL 2.0.0.
+
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

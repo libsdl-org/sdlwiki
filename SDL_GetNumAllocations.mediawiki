@@ -1,0 +1,11 @@
+= SDL_GetNumAllocations =
+
+Get the number of outstanding (unfreed) allocations 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GetNumAllocations(void);
+</syntaxhighlight>
+
+

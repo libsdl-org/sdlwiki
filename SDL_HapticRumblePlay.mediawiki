@@ -1,20 +1,22 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticRumblePlay =
-Use this function to run a simple rumble effect on a haptic device.
 
+Run a simple rumble effect on a haptic device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_HapticRumblePlay(SDL_Haptic* haptic,
-                         float       strength,
-                         Uint32      length)
+
+<syntaxhighlight lang='c'>
+int SDL_HapticRumblePlay(SDL_Haptic * haptic, float strength, Uint32 length );
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''haptic'''
 |the haptic device to play the rumble effect on
@@ -27,15 +29,19 @@ int SDL_HapticRumblePlay(SDL_Haptic* haptic,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_HapticRumbleInit]]
 :[[SDL_HapticRumbleStop]]
 :[[SDL_HapticRumbleSupported]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

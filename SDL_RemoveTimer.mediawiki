@@ -1,23 +1,29 @@
-
 = SDL_RemoveTimer =
-Use this function to remove a timer created with [[SDL_AddTimer]]().
 
+Remove a timer created with [[SDL_AddTimer]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_RemoveTimer(SDL_TimerID id)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_RemoveTimer(SDL_TimerID id);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''id'''
 |the ID of the timer to remove
 |}
 
 == Return Value ==
-Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't found.
+
+Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't
+found.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
 
@@ -30,11 +36,12 @@ SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param
 SDL_RemoveTimer(my_timer_id);
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_AddTimer]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
+
+

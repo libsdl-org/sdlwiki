@@ -1,26 +1,27 @@
-
 = SDL_DestroyCond =
-Use this function to destroy a condition variable.
 
+Destroy a condition variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DestroyCond(SDL_cond* cond)
+
+<syntaxhighlight lang='c'>
+void SDL_DestroyCond(SDL_cond * cond);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''cond'''
 |the condition variable to destroy
 |}
 
 == Code Examples ==
+
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWait]]
@@ -29,3 +30,5 @@ void SDL_DestroyCond(SDL_cond* cond)
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,20 +9,18 @@
 
 
 = SDL_GL_GetDrawableSize =
-Use this function to get the size of a window's underlying drawable in pixels (for use with glViewport).
 
-
-
+Get the size of a window's underlying drawable in pixels.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GL_GetDrawableSize(SDL_Window* window,
-                            int*        w,
-                            int*        h)
+
+<syntaxhighlight lang='c'>
+void SDL_GL_GetDrawableSize(SDL_Window * window, int *w,
+                            int *h);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window from which the drawable size should be queried
@@ -32,19 +32,29 @@ void SDL_GL_GetDrawableSize(SDL_Window* window,
 |a pointer to variable for storing the height in pixels, may be NULL
 |}
 
-
-
 == Remarks ==
 
-This may differ from [[SDL_GetWindowSize]]() if we're rendering to a high-DPI drawable, i.e. the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with high-DPI support (Apple calls this "Retina"), and not disabled by the [[SDL_HINT_VIDEO_HIGHDPI_DISABLED]] hint.
+This returns info useful for calling glViewport().
+
+This may differ from [[SDL_GetWindowSize]]() if we're rendering to a
+high-DPI drawable, i.e. the window was created with
+<code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on a platform with high-DPI
+support (Apple calls this "Retina"), and not disabled by the
+<code>[[SDL_HINT_VIDEO_HIGHDPI_DISABLED]]</code> hint.
 
 == Version ==
+
 This function is available since SDL 2.0.1.
 
+
+
 == Related Functions ==
+
 :[[SDL_CreateWindow]]
 :[[SDL_GetWindowSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

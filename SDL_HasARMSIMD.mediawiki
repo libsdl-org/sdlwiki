@@ -1,0 +1,28 @@
+= SDL_HasARMSIMD =
+
+Determine whether the CPU has ARM SIMD (ARMv6) features.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasARMSIMD(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns SDL_TRUE if the CPU has ARM SIMD features or SDL_FALSE if not.
+
+
+
+== Remarks ==
+
+This is different from ARM NEON, which is a different instruction set.
+
+This always returns false on CPUs that aren't using ARM instruction sets.
+
+== Related Functions ==
+
+:[[SDL_HasNEON]]
+
+
+

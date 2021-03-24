@@ -1,30 +1,38 @@
-
 = SDL_AllocFormat =
-Use this function to create an [[SDL_PixelFormat]] structure corresponding to a pixel format.
 
+Create an [[SDL_PixelFormat]] structure corresponding to a pixel format.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_PixelFormat* SDL_AllocFormat(Uint32 pixel_format)
+
+<syntaxhighlight lang='c'>
+SDL_PixelFormat * SDL_AllocFormat(Uint32 pixel_format);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''pixel_format'''
-|one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
+|one of the [[SDL_PixelFormatEnum]] values
 |}
 
 == Return Value ==
-Returns the new [[SDL_PixelFormat]] structure or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the new SDL_PixelFormat structure or NULL on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-'''pixel_format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="Start Include here.", to="##End Include here.")>>
 
-Returned structure may come from a shared global cache (i.e. not newly allocated), and hence should not be modified, especially the palette. Weird errors such as ```Blit combination not supported``` may occur.
+Returned structure may come from a shared global cache (i.e. not newly
+allocated), and hence should not be modified, especially the palette. Weird
+errors such as <code>Blit combination not supported</code> may occur.
 
 == Related Functions ==
+
 :[[SDL_FreeFormat]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

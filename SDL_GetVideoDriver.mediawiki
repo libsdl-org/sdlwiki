@@ -1,27 +1,36 @@
-
 = SDL_GetVideoDriver =
-Use this function to get the name of a built in video driver.
 
+Get the name of a built in video driver.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_GetVideoDriver(int index)
+
+<syntaxhighlight lang='c'>
+const char* SDL_GetVideoDriver(int index);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''index'''
 |the index of a video driver
 |}
 
 == Return Value ==
-Returns the name of the video driver with the given '''index'''. 
+
+Returns the name of the video driver with the given **index**.
+
+
 
 == Remarks ==
-The video drivers are presented in the order in which they are normally checked during initialization. 
+
+The video drivers are presented in the order in which they are normally
+checked during initialization.
 
 == Related Functions ==
+
 :[[SDL_GetNumVideoDrivers]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

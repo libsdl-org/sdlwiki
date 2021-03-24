@@ -1,27 +1,27 @@
-
 = SDL_CreateTexture =
-Use this function to create a texture for a rendering context.
 
+Create a texture for a rendering context.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
-                               Uint32        format,
-                               int           access,
-                               int           w,
-                               int           h)
+
+<syntaxhighlight lang='c'>
+SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
+                                Uint32 format,
+                                int access, int w,
+                                int h);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |-
 |'''format'''
-|one of the enumerated values in [[SDL_PixelFormatEnum]]; see [[#format|Remarks]] for details
+|one of the enumerated values in [[SDL_PixelFormatEnum]]
 |-
 |'''access'''
-|one of the enumerated values in [[SDL_TextureAccess]]; see [[#access|Remarks]] for details
+|one of the enumerated values in [[SDL_TextureAccess]]
 |-
 |'''w'''
 |the width of the texture in pixels
@@ -31,9 +31,20 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns a pointer to the created texture or NULL if no rendering context was active, the format was unsupported, or the width or height were out of range; call [[SDL_GetError]]() for more information.
+
+Returns a pointer to the created texture or NULL if no rendering context
+was active, the format was unsupported, or the width or height were out of
+range; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+You can set the texture scaling method by setting
+<code>[[SDL_HINT_RENDER_SCALE_QUALITY]]</code> before creating the texture.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -88,16 +99,9 @@ int main(int argc, char *argv[])
 
 </syntaxhighlight>
 
-== Remarks ==
-<span id="format"></span> '''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
-
-<span id="access"></span> '''access''' may be one of the following:
-<<Include(SDL_TextureAccess, , , from="== Values ==", to="== Code Examples ==")>>
-
-You can set the texture scaling method by setting [[SDL_HINT_RENDER_SCALE_QUALITY]] before creating the texture.
 
 == Related Functions ==
+
 :[[SDL_CreateTextureFromSurface]]
 :[[SDL_DestroyTexture]]
 :[[SDL_QueryTexture]]
@@ -105,3 +109,5 @@ You can set the texture scaling method by setting [[SDL_HINT_RENDER_SCALE_QUALIT
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

@@ -1,32 +1,39 @@
-<!-- # page was renamed from SDL_JoystickIndex -->
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickInstanceID =
-Use this function to get the instance ID of an opened joystick.
 
+Get the instance ID of an opened joystick.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_JoystickID SDL_JoystickInstanceID(SDL_Joystick* joystick)
+
+<syntaxhighlight lang='c'>
+SDL_JoystickID SDL_JoystickInstanceID(SDL_Joystick *joystick);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information
+|an [[SDL_Joystick]] structure containing joystick information
 |}
 
 == Return Value ==
-Returns the instance ID of the specified joystick on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the instance ID of the specified joystick on success or a negative
+error code on failure; call [[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

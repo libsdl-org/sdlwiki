@@ -1,21 +1,16 @@
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_RenderGetClipRect =
-Use this function to get the clip rectangle for the current target.
 
-
+Get the clip rectangle for the current target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_RenderGetClipRect(SDL_Renderer* renderer,
-                           SDL_Rect*     rect)
+
+<syntaxhighlight lang='c'>
+void SDL_RenderGetClipRect(SDL_Renderer * renderer,
+                           SDL_Rect * rect);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context from which clip rectangle should be queried
@@ -24,15 +19,12 @@ void SDL_RenderGetClipRect(SDL_Renderer* renderer,
 |an [[SDL_Rect]] structure filled in with the current clipping area or an empty rectangle if clipping is disabled
 |}
 
-
-
-== Remarks ==
-''You can add useful comments here''
-
-
 == Related Functions ==
+
 :[[SDL_RenderIsClipEnabled]]
 :[[SDL_RenderSetClipRect]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

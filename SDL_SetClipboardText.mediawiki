@@ -1,28 +1,33 @@
-
 = SDL_SetClipboardText =
-Use this function to put UTF-8 text into the clipboard.
 
+Put UTF-8 text into the clipboard.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetClipboardText(const char* text)
+
+<syntaxhighlight lang='c'>
+int SDL_SetClipboardText(const char *text);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''text'''
 |the text to store in the clipboard
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetClipboardText]]
 :[[SDL_HasClipboardText]]
 
 ----
 [[CategoryAPI]], [[CategoryClipboard]]
+
+

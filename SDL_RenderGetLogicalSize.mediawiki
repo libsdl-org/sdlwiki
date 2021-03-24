@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,20 +10,17 @@
 
 
 = SDL_RenderGetLogicalSize =
-Use this function to get device independent resolution for rendering.
 
-
-
+Get device independent resolution for rendering.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_RenderGetLogicalSize(SDL_Renderer* renderer,
-                              int*          w,
-                              int*          h)
+
+<syntaxhighlight lang='c'>
+void SDL_RenderGetLogicalSize(SDL_Renderer * renderer, int *w, int *h);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |a rendering context
@@ -33,17 +32,24 @@ void SDL_RenderGetLogicalSize(SDL_Renderer* renderer,
 |an int to be filled with the height
 |}
 
-
-
 == Remarks ==
-If this function is called on an SDL_Renderer who never had its logical size set by [[SDL_RenderSetLogicalSize]](), this function sets both '''w''' and '''h''' to 0.
+
+This may return 0 for <code>w</code> and <code>h</code> if the
+[[SDL_Renderer]] has never had its logical size set by
+[[SDL_RenderSetLogicalSize]]() and never had a render target set.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_RenderSetLogicalSize]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

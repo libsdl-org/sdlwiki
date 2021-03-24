@@ -1,26 +1,33 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetModState =
-Use this function to get the current key modifier state for the keyboard.
 
+Get the current key modifier state for the keyboard.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Keymod SDL_GetModState(void)
+
+<syntaxhighlight lang='c'>
+SDL_Keymod SDL_GetModState(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns an OR'd combination of the modifier keys for the keyboard. See [[SDL_Keymod]] for details.
 
-== Remarks ==
-''You can add useful comments here''
+Returns an OR'd combination of the modifier keys for the keyboard. See
+[[SDL_Keymod]] for details.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetKeyboardState]]
 :[[SDL_SetModState]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

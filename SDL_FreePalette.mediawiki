@@ -1,24 +1,25 @@
-
 = SDL_FreePalette =
-Use this function to free a palette created with [[SDL_AllocPalette]]().
 
+Free a palette created with [[SDL_AllocPalette]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_FreePalette(SDL_Palette* palette)
+
+<syntaxhighlight lang='c'>
+void SDL_FreePalette(SDL_Palette * palette);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''palette'''
 |the [[SDL_Palette]] structure to be freed
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_AllocPalette]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

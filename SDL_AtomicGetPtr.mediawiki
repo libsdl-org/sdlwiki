@@ -1,28 +1,37 @@
-
 = SDL_AtomicGetPtr =
-Use this function to get the value of a pointer atomically.
 
+Get the value of a pointer atomically.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_AtomicGetPtr(void** a)
+
+<syntaxhighlight lang='c'>
+void* SDL_AtomicGetPtr(void **a);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''a'''
 |a pointer to a pointer
 |}
 
 == Return Value ==
+
 Returns the current value of a pointer.
 
+
+
 == Remarks ==
-''You can add useful comments here''
+
+'''''*Note: If you don't know what this function is for, you shouldn't use
+it!'''''
 
 == Related Functions ==
+
 :[[SDL_AtomicCASPtr]]
 :[[SDL_AtomicSetPtr]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
+
+

@@ -1,16 +1,15 @@
-
 = SDL_SensorGetData =
+
 Get the current state of an opened sensor.
 
-The number of values and interpretation of the data is sensor dependent.
-
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 int SDL_SensorGetData(SDL_Sensor * sensor, float *data, int num_values);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sensor'''
 |The [[SDL_Sensor]] object to query
@@ -23,7 +22,15 @@ int SDL_SensorGetData(SDL_Sensor * sensor, float *data, int num_values);
 |}
 
 == Return Value ==
-0 or -1 if an error occurred.
 
+Returns 0 or -1 if an error occurred.
+
+
+
+== Remarks ==
+
+The number of values and interpretation of the data is sensor dependent.
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

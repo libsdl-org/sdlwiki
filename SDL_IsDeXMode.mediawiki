@@ -1,0 +1,17 @@
+= SDL_IsDeXMode =
+
+Query if the application is running on a Samsung DeX docking station.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_IsDeXMode(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns SDL_TRUE if this is a DeX docking station, SDL_FALSE otherwise.
+
+
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,40 +9,39 @@
 
 
 = SDL_GameControllerGetStringForAxis =
-Use this function to convert from an axis enum to a string.
 
-
-
+Convert from an [[SDL_GameControllerAxis]] enum to a string.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis)
+
+<syntaxhighlight lang='c'>
+const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''axis'''
 |an enum value for a given [[SDL_GameControllerAxis]]
 |}
 
-
 == Return Value ==
-Returns a string for the given axis, or NULL if an invalid axis is specified.  The string returned is of the format used by SDL_GameController mapping strings.
-<!-- #; call [[SDL_GetError]]() for more information. -->
-<!-- # Doesn't currently SDL_SetError. -->
+
+Returns a string for the given axis, or NULL if an invalid axis is
+specified. The string returned is of the format used by
+[[SDL_GameController]] mapping strings.
 
 
 
 == Remarks ==
-''You can add useful comments here''
 
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
+The caller should not [[SDL_free]]() the returned string.
 
 == Related Functions ==
+
 :[[SDL_GameControllerGetAxisFromString]]
-<!-- #At the very least this should refer to its opposite. -->
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
+
+

@@ -1,5 +1,6 @@
-<!-- # page was renamed from SDL_GameControllerAddMappingsFromFile -->
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,19 +9,17 @@
 
 
 = SDL_GameControllerAddMappingsFromRW =
-Use this function to load a set of [[CategoryGameController|Game Controller]] mappings from a seekable SDL data stream (memory or file), filtered by the current [[SDL_GetPlatform]]().
-A community sourced database of controllers is available [https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt here|target="_blank"] (on !GitHub).
 
-
+Load a set of Game Controller mappings from a seekable SDL data stream.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GameControllerAddMappingsFromRW(SDL_RWops* rw,
-                                        int        freerw)
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''rw'''
 |the data stream for the mappings to be added
@@ -29,33 +28,50 @@ int SDL_GameControllerAddMappingsFromRW(SDL_RWops* rw,
 |non-zero to close the stream after being read
 |}
 
-
 == Return Value ==
-Returns the number of mappings added or -1 on error; call [[SDL_GetError]]() for more information.
+
+Returns the number of mappings added or -1 on error; call SDL_GetError()
+for more information.
+
+
+
+== Remarks ==
+
+You can call this function several times, if needed, to load different
+database files.
+
+If a new mapping is loaded for an already known controller GUID, the later
+version will overwrite the one currently loaded.
+
+Mappings not belonging to the current platform or with no platform field
+specified will be ignored (i.e. mappings for Linux will be ignored in
+Windows, etc).
+
+This function will load the text database entirely in memory before
+processing it, so take this into consideration if you are in a memory
+constrained environment.
+
+== Version ==
+
+This function is available since SDL 2.0.2.
+
 
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile("gamecontrollerdb.txt", "rb"), 1);
 </syntaxhighlight>
 
 
-== Remarks ==
-You can call this function several times if needed to load different database files.
- 
-If a new mapping is loaded for an already known controller GUID, the later version will overwrite the one currently loaded.
-
-Mappings not belonging to the current platform or with no platform field specified will be ignored (i.e. mappings for Linux will be ignored in Windows, etc).
-
-This function will load the text database entirely in memory before processing it, so take this into consideration if you are in a memory constrained environment.
-
-== Version ==
-This function is available since SDL 2.0.2.
 
 == Related Functions ==
+
 :[[SDL_GameControllerAddMapping]]
 :[[SDL_GameControllerAddMappingsFromFile]]
 :[[SDL_GameControllerMappingForGUID]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
+
+

@@ -1,0 +1,36 @@
+= SDL_RenderGetMetalLayer =
+
+Get the CAMetalLayer associated with the given Metal renderer.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void* SDL_RenderGetMetalLayer(SDL_Renderer * renderer);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|The renderer to query
+|}
+
+== Return Value ==
+
+Returns CAMetalLayer* on success, or NULL if the renderer isn't a Metal
+renderer
+
+
+
+== Remarks ==
+
+This function returns <code>void ''</code>, so SDL doesn't have to include
+Metal's headers, but it can be safely cast to a <code>CAMetalLayer
+''</code>.
+
+== Related Functions ==
+
+:[[SDL_RenderGetMetalCommandEncoder()]]
+
+
+

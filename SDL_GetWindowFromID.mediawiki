@@ -1,27 +1,37 @@
-
 = SDL_GetWindowFromID =
-Use this function to get a window from a stored ID.
 
+Get a window from a stored ID.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Window* SDL_GetWindowFromID(Uint32 id)
+
+<syntaxhighlight lang='c'>
+SDL_Window * SDL_GetWindowFromID(Uint32 id);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''id'''
 |the ID of the window
 |}
 
 == Return Value ==
-Returns the window associated with '''id''' or NULL if it doesn't exist; call [[SDL_GetError]]() for more information. 
+
+Returns the window associated with `id` or NULL if it doesn't exist; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-''You can add useful comments here''
+
+The numeric ID is what [[SDL_WindowEvent]] references, and is necessary to
+map these events to specific [[SDL_Window]] objects.
 
 == Related Functions ==
+
 :[[SDL_GetWindowID]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

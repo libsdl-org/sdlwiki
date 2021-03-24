@@ -1,27 +1,36 @@
-
 = SDL_AllocPalette =
-Use this function to create a palette structure with the specified number of color entries.
 
+Create a palette structure with the specified number of color entries.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Palette* SDL_AllocPalette(int ncolors)
+
+<syntaxhighlight lang='c'>
+SDL_Palette* SDL_AllocPalette(int ncolors);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''ncolors'''
 |represents the number of color entries in the color palette
 |}
 
 == Return Value ==
-Returns a new [[SDL_Palette]] structure on success or NULL on failure (e.g. if there wasn't enough memory); call [[SDL_GetError]]() for more information.
+
+Returns a new SDL_Palette structure on success or NULL on failure (e.g. if
+there wasn't enough memory); call [[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
+
 The palette entries are initialized to white.
 
 == Related Functions ==
+
 :[[SDL_FreePalette]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

@@ -1,15 +1,17 @@
-
 = SDL_ClearHints =
-Use this function to clear all hints.
 
+Clear all hints.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_ClearHints(void)
+
+<syntaxhighlight lang='c'>
+void SDL_ClearHints(void);
 </syntaxhighlight>
 
 == Remarks ==
-This function is automatically called during [[SDL_Quit]]().
 
+This function is automatically called during [[SDL_Quit]]().
 ----
 [[CategoryAPI]], [[CategoryHints]]
+
+

@@ -1,15 +1,15 @@
-
 = SDL_GetDesktopDisplayMode =
-Use this function to get information about the desktop display mode.
 
+Get information about the desktop's display mode.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetDesktopDisplayMode(int              displayIndex,
-                              SDL_DisplayMode* mode)
+
+<syntaxhighlight lang='c'>
+int SDL_GetDesktopDisplayMode(int displayIndex, SDL_DisplayMode * mode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''displayIndex'''
 |the index of the display to query
@@ -19,9 +19,21 @@ int SDL_GetDesktopDisplayMode(int              displayIndex,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+There's a difference between this function and
+[[SDL_GetCurrentDisplayMode]]() when SDL runs fullscreen and has changed
+the resolution. In that case this function will return the previous native
+display mode, and not the current display mode.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_DisplayMode dm;
 if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
@@ -30,13 +42,14 @@ if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-There's a difference between this function and [[SDL_GetCurrentDisplayMode]]() when SDL runs fullscreen and has changed the resolution. In that case this function will return the previous native display mode, and not the current display mode.
 
 == Related Functions ==
+
 :[[SDL_GetCurrentDisplayMode]]
 :[[SDL_GetDisplayMode]]
 :[[SDL_SetWindowDisplayMode]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

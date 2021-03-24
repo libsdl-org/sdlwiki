@@ -1,24 +1,25 @@
-
 = SDL_FreeFormat =
-Use this function to free an [[SDL_PixelFormat]] structure allocated by [[SDL_AllocFormat]].
 
+Free an [[SDL_PixelFormat]] structure allocated by [[SDL_AllocFormat]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_FreeFormat(SDL_PixelFormat* format)
+
+<syntaxhighlight lang='c'>
+void SDL_FreeFormat(SDL_PixelFormat *format);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''format'''
 |the [[SDL_PixelFormat]] structure to free
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_AllocFormat]]
 
 ----
 [[CategoryAPI]], [[CategoryPixels]]
+
+

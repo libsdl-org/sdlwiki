@@ -1,0 +1,29 @@
+= SDL_GameControllerGetSerial =
+
+Get the serial number of an opened controller, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char * SDL_GameControllerGetSerial(SDL_GameController *gamecontroller);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|the game controller object to query.
+|}
+
+== Return Value ==
+
+Return Serial number, or NULL if unavailable.
+
+
+
+== Remarks ==
+
+Returns the serial number of the controller, or NULL if it is not
+available.
+
+

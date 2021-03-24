@@ -1,0 +1,11 @@
+= SDL_GameControllerGetNumTouchpads =
+
+Get the number of touchpads on a game controller.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerGetNumTouchpads(SDL_GameController *gamecontroller);
+</syntaxhighlight>
+
+

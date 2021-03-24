@@ -1,17 +1,16 @@
-
 = SDL_MixAudio =
-This function is a legacy means of mixing audio. New programs might want to use [[SDL_MixAudioFormat]]() instead.
 
+This function is a legacy means of mixing audio.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_MixAudio(Uint8*       dst,
-                  const Uint8* src,
-                  Uint32       len,
-                  int          volume)
+
+<syntaxhighlight lang='c'>
+void SDL_MixAudio(Uint8 * dst, const Uint8 * src,
+                  Uint32 len, int volume);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''dst'''
 |the destination for the mixed audio
@@ -23,10 +22,24 @@ void SDL_MixAudio(Uint8*       dst,
 |the length of the audio buffer in bytes
 |-
 |'''volume'''
-|ranges from 0 - 128, and should be set to SDL_MIX_MAXVOLUME for full audio volume
+|ranges from 0 - 128, and should be set to [[SDL_MIX_MAXVOLUME]] for full audio volume
 |}
 
+== Remarks ==
+
+This function is equivalent to calling
+
+
+
+<syntaxhighlight lang='c'>++
+[[SDL_MixAudioFormat]](dst, src, format, len, volume);
+</syntaxhighlight>
+
+where <code>format</code> is the obtained format of the audio device from
+the legacy [[SDL_OpenAudio]]() function.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
@@ -37,18 +50,12 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
 }
 </syntaxhighlight>
 
-== Remarks ==
-
-This function is equivalent to calling
-
-<syntaxhighlight lang='c++'>
-SDL_MixAudioFormat(dst, src, format, len, volume);
-</syntaxhighlight>
-
-where '''format''' is the obtained format of the audio device from the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
+
 :[[SDL_MixAudioFormat]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

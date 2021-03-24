@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,20 +10,18 @@
 
 
 = SDL_RenderSetScale =
-Use this function to set the drawing scale for rendering on the current target.
 
-
-
+Set the drawing scale for rendering on the current target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderSetScale(SDL_Renderer* renderer,
-                       float         scaleX,
-                       float         scaleY)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderSetScale(SDL_Renderer * renderer,
+                       float scaleX, float scaleY);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |a rendering context
@@ -33,24 +33,36 @@ int SDL_RenderSetScale(SDL_Renderer* renderer,
 |the vertical scaling factor
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-The drawing coordinates are scaled by the x/y scaling factors before they are used by the renderer. This allows resolution independent drawing with a single coordinate system.
 
-If this results in scaling or subpixel drawing by the rendering backend, it will be handled using the appropriate quality hints. For best results use integer scaling factors.
+The drawing coordinates are scaled by the x/y scaling factors before they
+are used by the renderer. This allows resolution independent drawing with a
+single coordinate system.
+
+If this results in scaling or subpixel drawing by the rendering backend, it
+will be handled using the appropriate quality hints. For best results use
+integer scaling factors.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_RenderGetScale]]
 :[[SDL_RenderSetLogicalSize]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

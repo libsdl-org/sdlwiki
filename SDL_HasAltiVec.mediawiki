@@ -1,20 +1,26 @@
-
 = SDL_HasAltiVec =
-Use this function to determine whether the CPU has Alti<code></code>Vec features.
 
+Determine whether the CPU has AltiVec features.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasAltiVec(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasAltiVec(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns SDL_TRUE if the CPU has Alti<code></code>Vec features or SDL_FALSE if not.
+
+Returns SDL_TRUE if the CPU has AltiVec features or SDL_FALSE if not.
+
+
 
 == Remarks ==
-''You can add useful comments here''
+
+This always returns false on CPUs that aren't using PowerPC instruction
+sets.
 
 == Related Functions ==
+
 :[[SDL_Has3DNow]]
 :[[SDL_HasAVX]]
 :[[SDL_HasAVX2]]
@@ -28,3 +34,5 @@ Returns SDL_TRUE if the CPU has Alti<code></code>Vec features or SDL_FALSE if no
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
+
+

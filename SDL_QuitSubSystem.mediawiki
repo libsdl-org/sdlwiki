@@ -1,20 +1,34 @@
-
 = SDL_QuitSubSystem =
-Use this function to shut down specific SDL subsystems.
 
+Shut down specific SDL subsystems.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_QuitSubSystem(Uint32 flags)
+
+<syntaxhighlight lang='c'>
+void SDL_QuitSubSystem(Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''flags'''
-|any of the flags used by [[SDL_Init]](); see [[#flags|Remarks]] for details
+|any of the flags used by [[SDL_Init]](); see [[SDL_Init]] for details.
 |}
 
+== Remarks ==
+
+If you start a subsystem using a call to that subsystem's init function
+(for example [[SDL_VideoInit]]()) instead of [[SDL_Init]]() or
+[[SDL_InitSubSystem]](), [[SDL_QuitSubSystem]]() and [[SDL_WasInit]]() will
+not work. You will need to use that subsystem's quit function
+([[SDL_VideoQuit]]()) directly instead. But generally, you should not be
+using those functions directly anyhow; use [[SDL_Init]]() instead.
+
+You still need to call [[SDL_Quit]]() even if you close all open subsystems
+with [[SDL_QuitSubSystem]]().
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -38,17 +52,13 @@ int main(int argc, char **argv) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-<span id="flags"></span>These are the flags which may be passed to [[SDL_QuitSubSystem]]() and may be OR'd together to quit multiple subsystems simultaneously.
-<<Include(SDL_Init, , , from="OR'd together:", to="If you want to initialize")>>
-
-If you start a subsystem using a call to that subsystem's init function (for example [[SDL_VideoInit]]()) instead of [[SDL_Init]]() or [[SDL_InitSubSystem]](), [[SDL_QuitSubSystem]]() and [[SDL_WasInit]]() will not work.  You will need to use that subsystem's quit function ([[SDL_VideoQuit]]()) directly instead.
-
-You still need to call [[SDL_Quit]]() even if you close all open subsystems with [[SDL_QuitSubSystem]]().
 
 == Related Functions ==
+
 :[[SDL_InitSubSystem]]
 :[[SDL_Quit]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
+
+

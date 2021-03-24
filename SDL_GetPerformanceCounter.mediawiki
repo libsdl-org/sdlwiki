@@ -1,23 +1,32 @@
-
 = SDL_GetPerformanceCounter =
-Use this function to get the current value of the high resolution counter.
 
+Get the current value of the high resolution counter.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint64 SDL_GetPerformanceCounter(void)
+
+<syntaxhighlight lang='c'>
+Uint64 SDL_GetPerformanceCounter(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns the current counter value.
 
-== Remarks ==
-This function is typically used for profiling.  
 
-The counter values are only meaningful relative to each other.  Differences between values can be converted to times by using [[SDL_GetPerformanceFrequency]]().
+
+== Remarks ==
+
+This function is typically used for profiling.
+
+The counter values are only meaningful relative to each other. Differences
+between values can be converted to times by using
+[[SDL_GetPerformanceFrequency]]().
 
 == Related Functions ==
+
 :[[SDL_GetPerformanceFrequency]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
+
+

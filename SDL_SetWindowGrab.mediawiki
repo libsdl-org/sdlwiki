@@ -1,31 +1,37 @@
-
 = SDL_SetWindowGrab =
-Use this function to set a window's input grab mode.
 
+Set a window's input grab mode.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetWindowGrab(SDL_Window* window,
-                       SDL_bool    grabbed)
+
+<syntaxhighlight lang='c'>
+void SDL_SetWindowGrab(SDL_Window * window,
+                       SDL_bool grabbed);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window for which the input grab mode should be set
 |-
 |'''grabbed'''
-|SDL_TRUE to grab input or SDL_FALSE to release input
+|[[SDL_TRUE]] to grab input or [[SDL_FALSE]] to release input
 |}
 
 == Remarks ==
+
 When input is grabbed the mouse is confined to the window.
 
-If the caller enables a grab while another window is currently grabbed, the other window loses its grab in favor of the caller's window.
+If the caller enables a grab while another window is currently grabbed, the
+other window loses its grab in favor of the caller's window.
 
 == Related Functions ==
+
 :[[SDL_GetGrabbedWindow]]
 :[[SDL_GetWindowGrab]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

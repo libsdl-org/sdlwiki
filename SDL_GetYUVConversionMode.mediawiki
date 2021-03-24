@@ -1,0 +1,11 @@
+= SDL_GetYUVConversionMode =
+
+Get the YUV conversion mode 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionMode(void);
+</syntaxhighlight>
+
+

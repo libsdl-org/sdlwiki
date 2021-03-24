@@ -1,16 +1,16 @@
-
 = SDL_RenderDrawPoint =
-Use this function to draw a point on the current rendering target.
 
+Draw a point on the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderDrawPoint(SDL_Renderer* renderer,
-                        int           x, 
-                        int           y)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderDrawPoint(SDL_Renderer * renderer,
+                        int x, int y);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -23,12 +23,19 @@ int SDL_RenderDrawPoint(SDL_Renderer* renderer,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-[[SDL_RenderDrawPoint]]() draws a single point.  If you want to draw multiple, use [[SDL_RenderDrawPoints]]() instead.
+
+[[SDL_RenderDrawPoint]]() draws a single point. If you want to draw
+multiple, use [[SDL_RenderDrawPoints]]() instead.
 
 == Related Functions ==
+
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoints]]
@@ -42,3 +49,5 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

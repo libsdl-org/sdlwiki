@@ -1,15 +1,16 @@
-
 = SDL_WaitEventTimeout =
-Use this function to wait until the specified timeout (in milliseconds) for the next available event.
 
+Wait until the specified timeout (in milliseconds) for the next available event.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_WaitEventTimeout(SDL_Event* event,
-                         int        timeout)
+
+<syntaxhighlight lang='c'>
+int SDL_WaitEventTimeout(SDL_Event * event,
+                         int timeout);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''event'''
 |the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL
@@ -19,17 +20,29 @@ int SDL_WaitEventTimeout(SDL_Event* event,
 |}
 
 == Return Value ==
-Returns 1 on success or 0 if there was an error while waiting for events; call [[SDL_GetError]]() for more information. This also returns 0 if the timeout elapsed without an event arriving.
+
+Returns 1 on success or 0 if there was an error while waiting for events;
+call [[SDL_GetError]]() for more information. This also returns 0 if the
+timeout elapsed without an event arriving.
+
+
 
 == Remarks ==
-If '''event''' is not NULL, the next event is removed from the queue and stored in the SDL_Event structure pointed to by '''event'''.
 
-As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that initialized the video subsystem.
+If <code>event</code> is not NULL, the next event is removed from the
+queue and stored in the [[SDL_Event]] structure pointed to by
+<code>event</code>.
+
+As this function implicitly calls [[SDL_PumpEvents]](), you can only call
+this function in the thread that initialized the video subsystem.
 
 == Related Functions ==
+
 :[[SDL_PollEvent]]
 :[[SDL_PumpEvents]]
 :[[SDL_WaitEvent]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

@@ -1,30 +1,35 @@
-
 = SDL_GetClipRect =
-Use this function to get the clipping rectangle for a surface.
 
+Get the clipping rectangle for a surface.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GetClipRect(SDL_Surface* surface,
-                     SDL_Rect*    rect)
+
+<syntaxhighlight lang='c'>
+void SDL_GetClipRect(SDL_Surface * surface,
+                     SDL_Rect * rect);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure representing the surface to be clipped
 |-
 |'''rect'''
-|an [[SDL_Rect]] structure filled in with the clipping rectangle for the surface; see [[#Remarks|Remarks]] for details
+|an [[SDL_Rect]] structure filled in with the clipping rectangle for the surface
 |}
 
 == Remarks ==
-When '''surface''' is the destination of a blit, only the area within the clip rectangle is drawn into.
 
+When <code>surface</code> is the destination of a blit, only the area
+within the clip rectangle is drawn into.
 
 == Related Functions ==
+
 :[[SDL_BlitSurface]]
 :[[SDL_SetClipRect]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

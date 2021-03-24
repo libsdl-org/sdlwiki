@@ -1,27 +1,40 @@
-
 = SDL_GL_SetAttribute =
-Use this function to set an OpenGL window attribute before window creation.
 
+Set an OpenGL window attribute before window creation.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GL_SetAttribute(SDL_GLattr attr,
-                        int        value)
+
+<syntaxhighlight lang='c'>
+int SDL_GL_SetAttribute(SDL_GLattr attr, int value);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''attr'''
-|the OpenGL attribute to set; see [[#Remarks|Remarks]] for details
+|an [[SDL_GLattr]] enum value specifying the OpenGL attribute to set
 |-
 |'''value'''
 |the desired value for the attribute
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function sets the OpenGL attribute <code>attr</code> to
+<code>value</code>. The requested attributes should be set before creating
+an OpenGL window. You should use [[SDL_GL_GetAttribute]]() to check the
+values after creating the OpenGL context, since the values obtained can
+differ from the requested ones.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Window *window;
 SDL_GLContext context;
@@ -52,15 +65,13 @@ SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &b);
 printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 </syntaxhighlight>
 
-== Remarks ==
-This function sets the OpenGL attribute '''attr''' to '''value'''. The requested attributes should be set before creating an OpenGL window. You should use [[SDL_GL_GetAttribute]]() to check the values after creating the OpenGL context, since the values obtained can differ from the requested ones.
-
-'''attr''' may be one of the following [[SDL_GLattr]] values:
-<<Include(SDL_GLattr, , , from="== Values ==", to="== Code Examples ==")>>
 
 == Related Functions ==
+
 :[[SDL_GL_GetAttribute]]
 :[[SDL_GL_ResetAttributes]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

@@ -1,31 +1,36 @@
-
 = SDL_GetSurfaceBlendMode =
-Use this function to get the blend mode used for blit operations.
 
+Get the blend mode used for blit operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetSurfaceBlendMode(SDL_Surface*   surface,
-                            SDL_BlendMode* blendMode)
+
+<syntaxhighlight lang='c'>
+int SDL_GetSurfaceBlendMode(SDL_Surface * surface,
+                            SDL_BlendMode *blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to query
 |-
 |'''blendMode'''
-|a pointer filled in with the current [[SDL_BlendMode]]; see [[#Remarks|Remarks]] for details
+|a pointer filled in with the current [[SDL_BlendMode]]
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-'''blendMode''' will be filled in with one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_SetSurfaceBlendMode]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

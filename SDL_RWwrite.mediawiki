@@ -1,17 +1,17 @@
-
 = SDL_RWwrite =
-Use this function to write to an [[SDL_RWops]] data stream.
 
+Write to an [[SDL_RWops]] data stream.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-size_t SDL_RWwrite(struct SDL_RWops* context,
-                   const void*       ptr,
-                   size_t            size,
-                   size_t            num)
+
+<syntaxhighlight lang='c'>
+size_t SDL_RWwrite(SDL_RWops *context,
+                   const void *ptr, size_t size,
+                   size_t num);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''context'''
 |a pointer to an [[SDL_RWops]] structure
@@ -27,9 +27,26 @@ size_t SDL_RWwrite(struct SDL_RWops* context,
 |}
 
 == Return Value ==
-Returns the number of objects written, which will be less than '''num''' on error; call [[SDL_GetError]]() for more information.
+
+Returns the number of objects written, which will be less than **num** on
+error; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function writes exactly <code>num</code> objects each of size
+<code>size</code> from the area pointed at by <code>ptr</code> to the
+stream. If this fails for any reason, it'll return less than
+<code>num</code> to demonstrate how far the write progressed. On success,
+it returns <code>num</code>.
+
+[[SDL_RWwrite]] is actually a function wrapper that calls the
+[[SDL_RWops]]'s <code>write</code> method appropriately, to simplify
+application development.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_RWops *rw = SDL_RWFromFile("hello.txt", "w");
 if(rw != NULL) {
@@ -44,12 +61,9 @@ if(rw != NULL) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function writes exactly '''num''' objects each of size '''size''' from the area pointed at by '''ptr''' to the stream. If this fails for any reason, it'll return less than '''num''' to demonstrate how far the write progressed. On success, it returns '''num'''.
-
-SDL_RWwrite is actually a macro that calls the [[SDL_RWops]]'s '''write''' method appropriately, to simplify application development.
 
 == Related Functions ==
+
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
@@ -60,3 +74,5 @@ SDL_RWwrite is actually a macro that calls the [[SDL_RWops]]'s '''write''' metho
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+

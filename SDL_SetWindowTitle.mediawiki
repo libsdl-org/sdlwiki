@@ -1,15 +1,16 @@
-
 = SDL_SetWindowTitle =
-Use this function to set the title of a window.
 
+Set the title of a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetWindowTitle(SDL_Window* window,
-                        const char* title)
+
+<syntaxhighlight lang='c'>
+void SDL_SetWindowTitle(SDL_Window * window,
+                        const char *title);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to change
@@ -18,7 +19,12 @@ void SDL_SetWindowTitle(SDL_Window* window,
 |the desired window title in UTF-8 format
 |}
 
+== Remarks ==
+
+This string is expected to be in UTF-8 encoding.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // dynamically setting a window title
 
@@ -63,11 +69,12 @@ int main(int argc, char* argv[]){
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_GetWindowTitle]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

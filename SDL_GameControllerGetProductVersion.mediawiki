@@ -1,0 +1,28 @@
+= SDL_GameControllerGetProductVersion =
+
+Get the product version of an opened controller, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Uint16 SDL_GameControllerGetProductVersion(SDL_GameController *gamecontroller);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|the game controller object to query.
+|}
+
+== Return Value ==
+
+Return USB product version, or zero if unavailable.
+
+
+
+== Remarks ==
+
+If the product version isn't available this function returns 0.
+
+

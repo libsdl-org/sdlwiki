@@ -1,32 +1,47 @@
-
-
 = SDL_CreateThread =
-Use this function to create a new thread.
 
+Create a new thread with a default stack size.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Thread* SDL_CreateThread(SDL_ThreadFunction fn,
-                             const char*        name,
-                             void*              data)
+
+<syntaxhighlight lang='c'>
+extern DECLSPEC SDL_Thread *SDLCALL
+SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''fn''' 
-|the function to call in the new thread; see [[#Remarks|Remarks]] for details 
+|'''fn'''
+|the [[SDL_ThreadFunction]] function to call in the new thread
 |-
-|'''name''' 
-|the name of the thread; see [[#name|Remarks]] for details 
+|'''name'''
+|the name of the thread
 |-
-|'''data''' 
-|a pointer that is passed to '''fn''' 
+|'''data'''
+|a pointer that is passed to <code>fn</code>
 |}
 
-
 == Return Value ==
-Returns an opaque pointer to the new thread object on success, NULL if the new thread could not be created; call [[SDL_GetError]]() for more information.
+
+Returns an opaque pointer to the new thread object on success, NULL if the
+new thread could not be created; call [[SDL_GetError]]() for more
+information.
+
+
+
+== Remarks ==
+
+This is equivalent to calling:
+
+
+
+<syntaxhighlight lang='c'>
+[[SDL_CreateThreadWithStackSize]](fn, name, 0, data);
+</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include <stdio.h>
 #include "SDL.h"
@@ -80,27 +95,13 @@ Thread counter: 9
 Thread returned value: 10
 </syntaxhighlight>
 
-== Remarks ==
-[[SDL_CreateThread]]() creates a new thread of execution that shares all of its parent's global memory, signal handlers, file descriptors, etc, and runs the function '''fn''', passing it the void pointer '''data'''.  The thread quits when '''fn''' returns.
-
-The function prototype for '''fn''' is:
-
-<syntaxhighlight lang='c++'>
-int SDL_ThreadFunction(void* data)
-</syntaxhighlight>
-: where its parameter is:
- ||<code>data</code> ||what was passed as '''data''' to [[SDL_CreateThread]]() ||
-
-
-<span id="name"></span>
-There are no requirements for thread naming conventions, so long as the string is null-terminated UTF-8, but these guidelines are helpful in choosing a name:
-
-: http://stackoverflow.com/questions/149932/naming-conventions-for-threads
-
-If a system imposes requirements, SDL will try to munge the string for it (truncate, etc), but the original string contents will be available from [[SDL_GetThreadName]]().
 
 == Related Functions ==
-: [[SDL_WaitThread]]
+
+:[[SDL_CreateThreadWithStackSize]]
+:[[SDL_WaitThread]]
 
 ----
 [[CategoryAPI]], [[CategoryThread]]
+
+

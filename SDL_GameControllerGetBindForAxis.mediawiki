@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,19 +10,19 @@
 
 
 = SDL_GameControllerGetBindForAxis =
-Use this function to get the SDL joystick layer binding for a controller axis mapping.
 
-
-
+Get the SDL joystick layer binding for a controller axis mapping.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_GameControllerButtonBind SDL_GameControllerGetBindForAxis(SDL_GameController*    gamecontroller,
-                                                              SDL_GameControllerAxis axis)
+
+<syntaxhighlight lang='c'>
+extern DECLSPEC SDL_GameControllerButtonBind SDLCALL
+SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
+         SDL_GameControllerAxis axis);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''gamecontroller'''
 |a game controller
@@ -29,28 +31,32 @@ SDL_GameControllerButtonBind SDL_GameControllerGetBindForAxis(SDL_GameController
 |an axis enum value (one of the [[SDL_GameControllerAxis]] values)
 |}
 
-
 == Return Value ==
-Returns a [[SDL_GameControllerButtonBind]] describing the bind.<br/>
-On failure (like the given Controller axis doesn't exist on the device), its <code>.bindType</code> will be <code>SDL_CONTROLLER_BINDTYPE_NONE</code>.
+
+Returns a SDL_GameControllerButtonBind describing the bind. On failure
+(like the given Controller axis doesn't exist on the device), its
+<code>.bindType</code> will be
+<code>[[SDL_CONTROLLER_BINDTYPE_NONE]]</code>.
 
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
-== Related Structures ==
-:[[SDL_GameControllerButtonBind]]
+
 
 == Related Functions ==
+
 :[[SDL_GameControllerGetBindForButton]]
-<!-- #Remove this section if empty -->
+
+
+== Related Structures ==
+
+:[[SDL_GameControllerButtonBind]]
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

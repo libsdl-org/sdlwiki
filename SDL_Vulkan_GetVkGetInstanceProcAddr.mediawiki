@@ -1,0 +1,23 @@
+= SDL_Vulkan_GetVkGetInstanceProcAddr =
+
+Get the address of the <code>vkGetInstanceProcAddr</code> function.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns The function pointer for `vkGetInstanceProcAddr` or NULL on error.
+
+
+
+== Remarks ==
+
+This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or
+creating an [[SDL_Window]] with the <code>[[SDL_WINDOW_VULKAN]]</code>
+flag.
+
+

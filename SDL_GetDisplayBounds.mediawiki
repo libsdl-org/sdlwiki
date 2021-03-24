@@ -1,15 +1,15 @@
-
 = SDL_GetDisplayBounds =
-Use this function to get the desktop area represented by a display, with the primary display located at 0,0.
 
+Get the desktop area represented by a display.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetDisplayBounds(int       displayIndex,
-                         SDL_Rect* rect)
+
+<syntaxhighlight lang='c'>
+int SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''displayIndex'''
 |the index of the display to query
@@ -19,9 +19,19 @@ int SDL_GetDisplayBounds(int       displayIndex,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+The primary display (<code>displayIndex</code> zero) is always located at
+0,0.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Rect r;
 if (SDL_GetDisplayBounds(0, &r) != 0) {
@@ -30,11 +40,12 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
 
 == Related Functions ==
+
 :[[SDL_GetNumVideoDisplays]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

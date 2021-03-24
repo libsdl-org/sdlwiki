@@ -1,31 +1,58 @@
-
 = SDL_AddTimer =
-Use this function to set up a callback function to be run on a separate thread after the specified number of milliseconds has elapsed.
 
+Call a callback function at a future time.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_TimerID SDL_AddTimer(Uint32            interval,
+
+<syntaxhighlight lang='c'>
+SDL_TimerID SDL_AddTimer(Uint32 interval,
                          SDL_TimerCallback callback,
-                         void*             param)
+                         void *param);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''interval'''
-|the timer delay (ms) passed to '''callback'''
+|the timer delay, in milliseconds, passed to <code>callback</code>
 |-
 |'''callback'''
-|the function to call when the specified '''interval''' elapses; see [[#Remarks|Remarks]] for details
+|the [[SDL_TimerCallback]] function to call when the specified <code>interval</code> elapses
 |-
 |'''param'''
-|a pointer that is passed to '''callback'''
+|a pointer that is passed to <code>callback</code>
 |}
 
 == Return Value ==
-Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for more information.
+
+Returns a timer ID or 0 if an error occurs; call SDL_GetError() for more
+information.
+
+
+
+== Remarks ==
+
+If you use this function, you must pass <code>[[SDL_INIT_TIMER]]</code> to
+[[SDL_Init]]().
+
+The callback function is passed the current timer interval and the user
+supplied parameter from the [[SDL_AddTimer]]() call and should return the
+next timer interval. If the value returned from the callback is 0, the
+timer is canceled.
+
+The callback is run on a separate thread.
+
+Timers take into account the amount of time it took to execute the
+callback. For example, if the callback took 250 ms to execute and returned
+1000 (ms), the timer would only wait another 750 ms before its next
+iteration.
+
+Timing may be inexact due to OS scheduling. Be sure to note the current
+time with [[SDL_GetTicks]]() or [[SDL_GetPerformanceCounter]]() in case
+your callback needs to adjust for variances.
 
 == Code Examples ==
+
 
 <syntaxhighlight lang='c++'>
 /* Start the timer; the callback below will be executed after the delay */
@@ -98,19 +125,12 @@ while (SDL_PollEvent (&event))
 </syntaxhighlight>
 
 
-== Remarks ==
-
-If you use this function, you must pass SDL_INIT_TIMER to [[SDL_Init]]().
-
-The callback function is passed the current timer interval and the user supplied parameter from the [[SDL_AddTimer]]() call and should return the next timer interval. If the value returned from the callback is 0, the timer is canceled.
-
-The callback is run on a separate thread. See the code examples for a method of processing the timer callbacks on the main thread if that's desired.
-
-Timers take into account the amount of time it took to execute the callback. For example, if the callback took 250 ms to execute and returned 1000 (ms), the timer would only wait another 750 ms before its next iteration.
-
 
 == Related Functions ==
+
 :[[SDL_RemoveTimer]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
+
+

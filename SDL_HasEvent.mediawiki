@@ -1,27 +1,37 @@
-
 = SDL_HasEvent =
-Use this function to check for the existence of certain event types in the event queue.
 
+Check for the existence of a certain event type in the event queue.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_HasEvent(Uint32 type)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_HasEvent(Uint32 type);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''type'''
 |the type of event to be queried; see [[SDL_EventType]] for details
 |}
 
 == Return Value ==
-Returns SDL_TRUE if events matching '''type''' are present, or SDL_FALSE if events matching '''type''' are not present.
+
+Returns SDL_TRUE if events matching `type` are present, or SDL_FALSE if
+events matching <code>type</code> are not present.
+
+
 
 == Remarks ==
-If you need to check for a range of event types, use [[SDL_HasEvents]]() instead.
+
+If you need to check for a range of event types, use [[SDL_HasEvents]]()
+instead.
 
 == Related Functions ==
+
 :[[SDL_HasEvents]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

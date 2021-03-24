@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,36 +9,36 @@
 
 
 = SDL_GameControllerFromInstanceID =
-Use this function to get the SDL_GameController associated with an instance id.
 
-
-
+Get the [[SDL_GameController]] associated with an instance id.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid)
+
+<syntaxhighlight lang='c'>
+SDL_GameController* SDL_GameControllerFromInstanceID(SDL_JoystickID joyid);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''joyid'''
-|the instance id to get the SDL_GameController for
+|the instance id to get the [[SDL_GameController]] for
 |}
 
-
 == Return Value ==
-Returns an SDL_GameController on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns an SDL_GameController on success or NULL on failure; call
+[[SDL_GetError]]() for more information.
 
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 == Version ==
+
 This function is available since SDL 2.0.4.
+
 
 ----
 [[CategoryAPI]], [[CategoryGameController]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

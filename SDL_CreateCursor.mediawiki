@@ -1,35 +1,37 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_CreateCursor =
-Use this function to create a cursor using the specified bitmap data and mask (in MSB format).
 
+Create a cursor using the specified bitmap data and mask (in MSB format).
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Cursor* SDL_CreateCursor(const Uint8* data,
-                             const Uint8* mask,
-                             int          w,
-                             int          h,
-                             int          hot_x,
-                             int          hot_y)
+
+<syntaxhighlight lang='c'>
+SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
+                             const Uint8 * mask,
+                             int w, int h, int hot_x,
+                             int hot_y);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''data'''
-|the color value for each pixel of the cursor; see [[#Remarks|Remarks]] for details
+|the color value for each pixel of the cursor
 |-
 |'''mask'''
-|the mask value for each pixel of the cursor; see [[#Remarks|Remarks]] for details
+|the mask value for each pixel of the cursor
 |-
 |'''w'''
-|the width of the cursor; see [[#Remarks|Remarks]] for details
+|the width of the cursor
 |-
 |'''h'''
-|the height of the cursor ''(same restrictions as w?)''
+|the height of the cursor
 |-
 |'''hot_x'''
 |the X-axis location of the upper left corner of the cursor relative to the actual mouse position
@@ -39,9 +41,37 @@ SDL_Cursor* SDL_CreateCursor(const Uint8* data,
 |}
 
 == Return Value ==
-Returns a new cursor with the specified parameters on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns a new cursor with the specified parameters on success or NULL on
+failure; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+<code>mask</code> has to be in MSB (Most Significant Bit) format.
+
+The cursor width (<code>w</code>) must be a multiple of 8 bits.
+
+The cursor is created in black and white according to the following:
+
+* data=0, mask=1: white 
+* data=1, mask=1: black 
+* data=0, mask=1: transparent 
+* data=1, mask=0: inverted color if possible, black if not. 
+
+Cursors created with this function must be freed with [[SDL_FreeCursor]]().
+
+If you want to have a color cursor, or create your cursor from an
+[[SDL_Surface]], you should use [[SDL_CreateColorCursor]](). Alternately,
+you can hide the cursor and draw your own as part of your game's rendering,
+but it will be bound to the framerate.
+
+Also, since SDL 2.0.0, [[SDL_CreateSystemCursor]]() is available, which
+provides twelve readily available system cursors to pick from.
 
 == Code Examples ==
+
 
 <syntaxhighlight lang='c++'>
 /* Stolen from the mailing list */
@@ -127,50 +157,14 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-'''mask''' has to be in MSB (Most Significant Bit) format.
-
-The cursor width ('''w''') must be a multiple of 8 bits.
-
-The cursor is created in black and white according to the following:
-{|
-|<:> '''data'''
-|<:> '''mask'''
-|<:> Resulting Pixel on Screen
-|-
-|<:> 0
-|<:> 1
-|<:> White
-|-
-|<:> 1
-|<:> 1
-|<:> Black
-|-
-|<:> 0
-|<:> 0
-|<:> Transparent
-|-
-|<:> 1
-|<:> 0
-|<:> Inverted color if possible, black if not
-|}
-
-Cursors created with this function must be freed with [[SDL_FreeCursor]]().
-
-If you want to have a color cursor, then this function is not for you; instead, you must hide the normal system cursor using [[SDL_ShowCursor]]() and in your main loop, when you draw graphics, also draw a [[SDL_Surface]] at the location of the mouse cursor.
-
-Or use [[SDL_CreateColorCursor]]().
-
-<!-- <span style="color: green;">Should the above comment about color cursors be rephrased to be less conversational?  Example below:</span> -->
-
-<!-- ^To create a color cursor hide the normal system cursor (use [[SDL_ShowCursor]]() to find it???) and, along with your other graphics, draw an [[SDL_Surface]] at the location of the mouse cursor in your main loop.^ -->
-
-Note that, since SDL 2.0.0, [[SDL_CreateSystemCursor]]() is available, which provides twelve readily available system cursors to pick from.
 
 == Related Functions ==
+
 :[[SDL_FreeCursor]]
 :[[SDL_SetCursor]]
 :[[SDL_ShowCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

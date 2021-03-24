@@ -1,0 +1,23 @@
+= SDL_GetDisplayOrientation =
+
+Get the orientation of a display.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_DisplayOrientation SDL_GetDisplayOrientation(int displayIndex);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns The SDL_DisplayOrientation enum value of the display, or
+<code>[[SDL_ORIENTATION_UNKNOWN]]</code> if it isn't available.
+
+
+
+== Related Functions ==
+
+:[[SDL_GetNumVideoDisplays()]]
+
+
+

@@ -1,15 +1,16 @@
-
 = SDL_SetWindowIcon =
-Use this function to set the icon for a window.
 
+Set the icon for a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_SetWindowIcon(SDL_Window*  window,
-                       SDL_Surface* icon)
+
+<syntaxhighlight lang='c'>
+void SDL_SetWindowIcon(SDL_Window * window,
+                       SDL_Surface * icon);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to change
@@ -19,6 +20,7 @@ void SDL_SetWindowIcon(SDL_Window*  window,
 |}
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // Using SDL2 to set a window icon
 
@@ -87,9 +89,7 @@ int main(int argc, char* argv[]){
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

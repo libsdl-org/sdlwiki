@@ -1,15 +1,16 @@
-
 = SDL_GetWindowData =
-Use this function to retrieve the data pointer associated with a window.
 
+Retrieve the data pointer associated with a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_GetWindowData(SDL_Window* window,
-                        const char* name)
+
+<syntaxhighlight lang='c'>
+void* SDL_GetWindowData(SDL_Window * window,
+                        const char *name);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query
@@ -19,13 +20,16 @@ void* SDL_GetWindowData(SDL_Window* window,
 |}
 
 == Return Value ==
-Returns the value associated with '''name'''.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the value associated with `name`.
+
+
 
 == Related Functions ==
+
 :[[SDL_SetWindowData]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

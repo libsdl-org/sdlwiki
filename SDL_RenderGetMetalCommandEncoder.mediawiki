@@ -1,0 +1,36 @@
+= SDL_RenderGetMetalCommandEncoder =
+
+Get the Metal command encoder for the current frame 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void* SDL_RenderGetMetalCommandEncoder(SDL_Renderer * renderer);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|The renderer to query
+|}
+
+== Return Value ==
+
+Returns `id<MTLRenderCommandEncoder>` on success, or NULL if the renderer
+isn't a Metal renderer.
+
+
+
+== Remarks ==
+
+This function returns <code>void *</code>, so SDL doesn't have to include
+Metal's headers, but it can be safely cast to an
+<code>id<MTLRenderCommandEncoder></code>.
+
+== Related Functions ==
+
+:[[SDL_RenderGetMetalLayer()]]
+
+
+

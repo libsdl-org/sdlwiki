@@ -1,15 +1,15 @@
-
 = SDL_AtomicAdd =
-Use this function to add to an atomic variable.
 
+Add to an atomic variable.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_AtomicAdd(SDL_atomic_t* a,
-                  int           v)
+
+<syntaxhighlight lang='c'>
+int SDL_AtomicAdd(SDL_atomic_t *a, int v);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''a'''
 |a pointer to an [[SDL_atomic_t]] variable to be modified
@@ -19,14 +19,24 @@ int SDL_AtomicAdd(SDL_atomic_t* a,
 |}
 
 == Return Value ==
+
 Returns the previous value of the atomic variable.
 
+
+
 == Remarks ==
+
 This function also acts as a full memory barrier.
 
+'''''*Note: If you don't know what this function is for, you shouldn't use
+it!'''''
+
 == Related Functions ==
+
 :[[SDL_AtomicDecRef]]
 :[[SDL_AtomicIncRef]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
+
+

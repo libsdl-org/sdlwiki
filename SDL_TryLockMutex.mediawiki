@@ -1,30 +1,45 @@
 
 == Draft ==
 
+
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_TryLockMutex =
-Use this function to try to lock a mutex without blocking.
 
-
+Try to lock a mutex without blocking.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_TryLockMutex(SDL_mutex* mutex)
+
+<syntaxhighlight lang='c'>
+int SDL_TryLockMutex(SDL_mutex * mutex);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''mutex'''
 |the mutex to try to lock
 |}
 
 == Return Value ==
-Returns return 0, SDL_MUTEX_TIMEDOUT, or -1 on error; call [[SDL_GetError]]() for more information.
+
+Returns return 0, `SDL_MUTEX_TIMEDOUT`, or -1 on error; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This works just like [[SDL_LockMutex]](), but if the mutex is not
+available, this function returns <code>[[SDL_MUTEX_TIMEOUT]]</code>
+immediately.
+
+This technique is useful if you need exclusive access to a resource but
+don't want to wait for it, and will return to it to try again later.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 int status;
 SDL_mutex *mutex;
@@ -49,13 +64,9 @@ if (status == 0) {
 SDL_DestroyMutex(mutex);
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 
 == Related Functions ==
+
 :[[SDL_CreateMutex]]
 :[[SDL_DestroyMutex]]
 :[[SDL_LockMutex]]
@@ -63,3 +74,5 @@ SDL_DestroyMutex(mutex);
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

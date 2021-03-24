@@ -1,16 +1,21 @@
-
 = SDL_SensorUpdate =
+
 Update the current state of the open sensors.
 
-This is called automatically by the event loop if sensor events are enabled.
-
-This needs to be called from the thread that initialized the sensor subsystem.
-
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 void SDL_SensorUpdate(void);
 </syntaxhighlight>
 
+== Remarks ==
+
+This is called automatically by the event loop if sensor events are
+enabled.
+
+This needs to be called from the thread that initialized the sensor
+subsystem.
 ----
 [[CategoryAPI]], [[CategorySensor]]
+
+

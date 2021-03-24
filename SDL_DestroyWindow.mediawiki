@@ -1,25 +1,32 @@
-
 = SDL_DestroyWindow =
-Use this function to destroy a window.
 
+Destroy a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DestroyWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_DestroyWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to destroy
 |}
 
 == Remarks ==
-If '''window''' is NULL, this function will return immediately after setting the SDL error message to "Invalid window". See [[SDL_GetError]]().
+
+If <code>window</code> is NULL, this function will return immediately
+after setting the SDL error message to "Invalid window". See
+[[SDL_GetError]]().
 
 == Related Functions ==
+
 :[[SDL_CreateWindow]]
 :[[SDL_CreateWindowFrom]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

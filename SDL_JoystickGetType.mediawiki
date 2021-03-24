@@ -1,0 +1,24 @@
+= SDL_JoystickGetType =
+
+Get the type of an opened joystick.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_JoystickType SDL_JoystickGetType(SDL_Joystick *joystick);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick'''
+|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
+|}
+
+== Return Value ==
+
+Returns the SDL_JoystickType of the selected joystick.
+
+
+
+

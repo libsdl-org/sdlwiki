@@ -1,17 +1,27 @@
-
 = SDL_GetPerformanceFrequency =
-Use this function to get the count per second of the high resolution counter.
 
+Get the count per second of the high resolution counter.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint64 SDL_GetPerformanceFrequency(void)
+
+<syntaxhighlight lang='c'>
+Uint64 SDL_GetPerformanceFrequency(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns a platform-specific count per second.
 
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -116,16 +126,12 @@ main(int argc, char *argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 
 == Related Functions ==
+
 :[[SDL_GetPerformanceCounter]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
+
+

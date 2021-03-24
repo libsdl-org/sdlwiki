@@ -1,27 +1,40 @@
-
 = SDL_SemWaitTimeout =
-Use this function to wait until a semaphore has a positive value and then decrements it.
 
+Wait until a semaphore has a positive value and then decrements it.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SemWaitTimeout(SDL_sem* sem,
-                       Uint32   ms)
+
+<syntaxhighlight lang='c'>
+int SDL_SemWaitTimeout(SDL_sem * sem, Uint32 ms);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sem'''
 |the semaphore to wait on
 |-
 |'''ms'''
-|the length of the timeout in milliseconds
+|the length of the timeout, in milliseconds
 |}
 
 == Return Value ==
-Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait does not succeed in the allotted time, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 if the wait succeeds, `SDL_MUTEX_TIMEDOUT` if the wait does not
+succeed in the allotted time, or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function suspends the calling thread until either the semaphore
+pointed to by <code>sem</code> has a positive value, the call is
+interrupted by a signal or error, or the specified time has elapsed. If the
+call is successful it will atomically decrement the semaphore value.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_atomic_t done;
 SDL_sem *sem;
@@ -53,10 +66,9 @@ wait_for_threads();
 SDL_DestroySemaphore(sem);
 </syntaxhighlight>
 
-== Remarks ==
-This function suspends the calling thread until either the semaphore pointed to by '''sem''' has a positive value, the call is interrupted by a signal or error, or the specified time has elapsed. If the call is successful it will atomically decrement the semaphore value.
 
 == Related Functions ==
+
 :[[SDL_CreateSemaphore]]
 :[[SDL_DestroySemaphore]]
 :[[SDL_SemPost]]
@@ -66,3 +78,5 @@ This function suspends the calling thread until either the semaphore pointed to 
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

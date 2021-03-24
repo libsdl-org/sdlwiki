@@ -1,0 +1,24 @@
+= SDL_JoystickDetachVirtual =
+
+Detach a virtual joystick.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickDetachVirtual(int device_index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''device_index'''
+|a value previously returned from [[[[SDL_JoystickAttachVirtual]]]]()
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 if an error occurred.
+
+
+
+

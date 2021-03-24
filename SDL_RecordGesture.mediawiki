@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,47 +10,46 @@
 
 
 = SDL_RecordGesture =
-Use this function to begin recording a gesture on a specified touch device or all touch devices.
 
-
-
-
+Begin recording a gesture on a specified touch device or all touch devices.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RecordGesture(SDL_TouchID touchId)
+
+<syntaxhighlight lang='c'>
+int SDL_RecordGesture(SDL_TouchID touchId);
 </syntaxhighlight>
 
-
-
 == Function Parameters ==
+
 {|
 |'''touchId'''
 |the touch device id, or -1 for all touch devices
 |}
 
-
-
-
 == Return Value ==
+
 Returns 1 on success or 0 if the specified device could not be found.
 
 
 
-
-
 == Remarks ==
-If the parameter '''touchId''' is -1 (i.e., all devices), this function will always return 1, regardless of whether there actually are any devices.
 
+If the parameter <code>touchId</code> is -1 (i.e., all devices), this
+function will always return 1, regardless of whether there actually are any
+devices.
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
 
+
 == Related Functions ==
+
 :[[SDL_GetTouchDevice]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

@@ -1,0 +1,31 @@
+= SDL_Metal_GetDrawableSize =
+
+Get the size of a window's underlying drawable in pixels (for use with setting viewport, scissor & etc).
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
+                               int *h);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''window'''
+|[[SDL_Window]] from which the drawable size should be queried
+|-
+|'''w'''
+|Pointer to variable for storing the width in pixels, may be NULL
+|-
+|'''h'''
+|Pointer to variable for storing the height in pixels, may be NULL
+|}
+
+== Related Functions ==
+
+:[[SDL_GetWindowSize()]]
+:[[SDL_CreateWindow()]]
+
+
+

@@ -1,28 +1,32 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickClose =
-Use this function to close a joystick previously opened with [[SDL_JoystickOpen]]().
 
+Close a joystick previously opened with [[SDL_JoystickOpen]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_JoystickClose(SDL_Joystick* joystick)
+
+<syntaxhighlight lang='c'>
+void SDL_JoystickClose(SDL_Joystick *joystick);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information
+|The joystick device to close
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_JoystickOpen]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

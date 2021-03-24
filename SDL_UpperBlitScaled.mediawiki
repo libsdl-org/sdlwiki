@@ -1,2 +1,23 @@
+= SDL_UpperBlitScaled =
 
-SDL_UpperBlitScaled() has been replaced by [[SDL_BlitScaled]]().
+Perform a scaled surface copy to a destination surface.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_UpperBlitScaled
+    (SDL_Surface * src, const SDL_Rect * srcrect,
+    SDL_Surface * dst, SDL_Rect * dstrect);
+</syntaxhighlight>
+
+== Remarks ==
+
+[[SDL_UpperBlitScaled]]() has been replaced by [[SDL_BlitScaled]](), which
+is merely a macro for this function with a less confusing name.
+
+== Related Functions ==
+
+:[[SDL_BlitScaled]]
+
+
+

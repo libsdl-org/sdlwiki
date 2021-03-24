@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -7,49 +9,56 @@
 
 
 = SDL_CreateRGBSurfaceWithFormatFrom =
-Use this function to allocate an RGB surface from provided pixel data.
 
-
-
+Allocate a new RGB surface with with a specific pixel format and existing pixel data.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom(void*  pixels,
-                                                int    width,
-                                                int    height,
-                                                int    depth,
-                                                int    pitch,
-                                                Uint32 format)
+
+<syntaxhighlight lang='c'>
+SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom
+    (void *pixels, int width, int height, int depth, int pitch, Uint32 format);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''pixels'''
-|the pixel data to create the surface from
+|a pointer to existing pixel data
 |-
 |'''width'''
-|the width in pixels of the surface to create
+|the width of the surface
 |-
 |'''height'''
-|the height in pixels of the surface to create
+|the height of the surface
 |-
 |'''depth'''
-|the depth in bits of the surface to create
+|the depth of the surface in bits
 |-
 |'''pitch'''
-|the length of a row of pixels in bytes
+|the pitch of the surface in bytes
 |-
 |'''format'''
-|the [[SDL_PixelFormatEnum|pixel format]] of the surface to create
+|the [[SDL_PixelFormatEnum]] for the new surface's pixel format.
 |}
 
-
 == Return Value ==
-Returns a new [[SDL_Surface]] on success or NULL on failure; call [[SDL_GetError]]() for more information.
 
+Returns the new SDL_Surface structure that is created or NULL if it fails;
+call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function operates mostly like [[SDL_CreateRGBSurfaceFrom]](), except
+instead of providing pixel color masks, you provide it with a predefined
+format from [[SDL_PixelFormatEnum]].
+
+No copy is made of the pixel data. Pixel data is not managed automatically;
+you must free the surface before you free the pixel data.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // This example shows how to create a SDL_Surface* with the data loaded
 // from an image file with stb_image.h (https://github.com/nothings/stb/)
@@ -95,23 +104,15 @@ stbi_image_free(data);
 </syntaxhighlight>
 
 
-== Remarks ==
-If the function runs out of memory, it will return NULL.
-
-<!-- # TODO: something about depth being 4 or 8 and palettes, like in SDL_CreateRGBSurface ? -->
-
-No copy is made of the pixel data.  Pixel data is not managed automatically; you must free the surface before you free the pixel data.
-
-== Version ==
-This function is available since SDL 2.0.5.
-
 
 == Related Functions ==
+
 :[[SDL_CreateRGBSurfaceFrom]]
 :[[SDL_CreateRGBSurfaceWithFormat]]
 :[[SDL_FreeSurface]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,30 +10,28 @@
 
 
 = SDL_GetSystemRAM =
-Use this function to get the amount of RAM configured in the system.
 
-
-
+Get the amount of RAM configured in the system.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetSystemRAM(void)
+
+<syntaxhighlight lang='c'>
+int SDL_GetSystemRAM(void);
 </syntaxhighlight>
 
-
 == Return Value ==
+
 Returns the amount of RAM configured in the system in MB.
 
 
 
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
-
 == Version ==
+
 This function is available since SDL 2.0.1.
+
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

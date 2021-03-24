@@ -1,27 +1,30 @@
-
 = SDL_UnlockSurface =
-Use this function to release a surface after directly accessing the pixels.
 
+Release a surface after directly accessing the pixels.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_UnlockSurface(SDL_Surface* surface)
+
+<syntaxhighlight lang='c'>
+void SDL_UnlockSurface(SDL_Surface * surface);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to be unlocked
 |}
 
 == Code Examples ==
+
 <<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>
 
-== Remarks ==
-<<Include(SDL_LockSurface, , , from="== Remarks ==", to="== Related Functions ==")>>
 
 == Related Functions ==
-:[[SDL_LockSurface]]
+
+:[[SDL_LockSurface()]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

@@ -1,38 +1,36 @@
-
 = SDL_FilterEvents =
-Use this function to run a specific filter function on the current event queue, removing any events for which the filter returns 0.
 
+Run a specific filter function on the current event queue, removing any events for which the filter returns 0.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
+
+<syntaxhighlight lang='c'>
 void SDL_FilterEvents(SDL_EventFilter filter,
-                      void*           userdata)
+                      void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''filter'''
-|the function to call when an event happens; see [[#Remarks|Remarks]] for details
+|the [[SDL_EventFilter]] function to call when an event happens
 |-
 |'''userdata'''
-|a pointer that is passed to '''filter'''
+|a pointer that is passed to <code>filter</code>
 |}
 
 == Remarks ==
-The function prototype for '''filter''' is:
-<syntaxhighlight lang='c++'>
-int SDL_EventFilter(void*      userdata,
-                    SDL_Event* event)
-</syntaxhighlight>
-: where its parameters are:
- ||<code>userdata</code>||what was passed as '''userdata''' to [[SDL_FilterEvents]]()||
- ||<code>event</code>||the desired event to pull from the queue||
 
-See [[SDL_SetEventFilter]]() for more information. Unlike [[SDL_SetEventFilter]](), this function does not change the filter permanently, it only uses the supplied filter until this function returns.
+See [[SDL_SetEventFilter]]() for more information. Unlike
+[[SDL_SetEventFilter]](), this function does not change the filter
+permanently, it only uses the supplied filter until this function returns.
 
 == Related Functions ==
+
 :[[SDL_GetEventFilter]]
 :[[SDL_SetEventFilter]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

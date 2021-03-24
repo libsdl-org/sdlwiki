@@ -1,0 +1,11 @@
+= SDL_AndroidBackButton =
+
+Trigger the Android system back button behavior.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_AndroidBackButton(void);
+</syntaxhighlight>
+
+

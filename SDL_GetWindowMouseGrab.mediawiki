@@ -1,0 +1,30 @@
+= SDL_GetWindowMouseGrab =
+
+Get a window's mouse grab mode.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_GetWindowMouseGrab(SDL_Window * window);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''window'''
+|the window to query
+|}
+
+== Return Value ==
+
+Returns This returns SDL_TRUE if mouse is grabbed, and SDL_FALSE otherwise.
+
+
+
+== Related Functions ==
+
+:[[SDL_SetWindowKeyboardGrab]]
+:[[SDL_GetWindowGrab]]
+
+
+

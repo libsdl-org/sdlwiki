@@ -1,16 +1,16 @@
-
 = SDL_RWseek =
-Use this function to seek within an [[SDL_RWops]] data stream.
 
+Seek within an [[SDL_RWops]] data stream.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Sint64 SDL_RWseek(SDL_RWops* context,
-                  Sint64     offset,
-                  int        whence)
+
+<syntaxhighlight lang='c'>
+Sint64 SDL_RWseek(SDL_RWops *context,
+                  Sint64 offset, int whence);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''context'''
 |a pointer to an [[SDL_RWops]] structure
@@ -19,13 +19,34 @@ Sint64 SDL_RWseek(SDL_RWops* context,
 |an offset in bytes, relative to '''whence''' location; can be negative
 |-
 |'''whence'''
-|any of RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END; see [[#whence|Remarks]] for details
+|any of <code>RW_SEEK_SET</code>, <code>RW_SEEK_CUR</code>, <code>RW_SEEK_END</code>
 |}
 
 == Return Value ==
+
 Returns the final offset in the data stream after the seek or -1 on error.
 
+
+
+== Remarks ==
+
+This function seeks to byte <code>offset</code>, relative to
+<code>whence</code>.
+
+<code>whence</code> may be any of the following values:
+
+* <code>RW_SEEK_SET</code>: seek from the beginning of data 
+* <code>RW_SEEK_CUR</code>: seek relative to current read point 
+* <code>RW_SEEK_END</code>: seek relative to the end of data 
+
+If this stream can not seek, it will return -1.
+
+[[SDL_RWseek]]() is actually a wrapper function that calls the
+[[SDL_RWops]]'s <code>seek</code> method appropriately, to simplify
+application development.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_RWops *rw = SDL_RWFromFile("myfile.bin", "rb");
 if (rw != NULL) {
@@ -40,26 +61,9 @@ if (rw != NULL) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function seeks to '''offset''' relative to '''whence'''
-
-<span id="whence"></span>'''whence''' may be any of the following values:
-{|
-|RW_SEEK_SET
-|seek from the beginning of data
-|-
-|RW_SEEK_CUR
-|seek relative to current read point
-|-
-|RW_SEEK_END
-|seek relative to the end of data
-|}
-
-If this stream can not seek, it will return -1.
-
-SDL_RWseek() is actually a macro that calls the [[SDL_RWops]]'s '''seek''' method appropriately, to simplify application development.
 
 == Related Functions ==
+
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
@@ -71,3 +75,5 @@ SDL_RWseek() is actually a macro that calls the [[SDL_RWops]]'s '''seek''' metho
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+

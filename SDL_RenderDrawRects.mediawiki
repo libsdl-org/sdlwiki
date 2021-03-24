@@ -1,16 +1,17 @@
-
 = SDL_RenderDrawRects =
-Use this function to draw some number of rectangles on the current rendering target.
 
+Draw some number of rectangles on the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderDrawRects(SDL_Renderer*   renderer,
-                        const SDL_Rect* rects,
-                        int             count)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderDrawRects(SDL_Renderer * renderer,
+                        const SDL_Rect * rects,
+                        int count);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -23,12 +24,14 @@ int SDL_RenderDrawRects(SDL_Renderer*   renderer,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
 :[[SDL_RenderDrawPoint]]
@@ -42,3 +45,5 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

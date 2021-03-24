@@ -1,16 +1,17 @@
-
 = SDL_UpdateWindowSurfaceRects =
-Use this function to copy areas of the window surface to the screen.
 
+Copy areas of the window surface to the screen.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
-                           const SDL_Rect*   rects,
-                                 int         numrects)
+
+<syntaxhighlight lang='c'>
+int SDL_UpdateWindowSurfaceRects(SDL_Window * window,
+                                 const SDL_Rect * rects,
+                                 int numrects);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to update
@@ -23,16 +24,25 @@ int SDL_UpdateWindowSurfaceRects(SDL_Window* window,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-This is the function you use to reflect changes to portions of the surface on the screen. 
 
-This function is equivalent to the SDL 1.2 API SDL_UpdateRects(). 
+This is the function you use to reflect changes to portions of the surface
+on the screen.
+
+This function is equivalent to the SDL 1.2 API [[SDL_UpdateRects]]().
 
 == Related Functions ==
+
 :[[SDL_GetWindowSurface]]
 :[[SDL_UpdateWindowSurface]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

@@ -1,13 +1,27 @@
 = SDL_CloseAudio =
-This function is a legacy means of closing the audio device. New programs might want to use [[SDL_CloseAudioDevice]]() instead.
 
+This function is a legacy means of closing the audio device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_CloseAudio(void)
+
+<syntaxhighlight lang='c'>
+void SDL_CloseAudio(void);
 </syntaxhighlight>
 
+== Remarks ==
+
+This function is equivalent to calling
+
+
+
+<syntaxhighlight lang='c'>++
+[[SDL_CloseAudioDevice]](1);
+</syntaxhighlight>
+
+and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 extern SDL_AudioSpec want;
 if (SDL_OpenAudio(&want, NULL) == 0) {
@@ -17,17 +31,12 @@ if (SDL_OpenAudio(&want, NULL) == 0) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function is equivalent to calling
-
-<syntaxhighlight lang='c++'>
-SDL_CloseAudioDevice(1);
-</syntaxhighlight>
-
-and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Related Functions ==
-: [[SDL_OpenAudio]]
+
+:[[SDL_OpenAudio]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

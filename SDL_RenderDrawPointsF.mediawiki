@@ -1,0 +1,32 @@
+= SDL_RenderDrawPointsF =
+
+Draw multiple points on the current rendering target at subpixel precision.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_RenderDrawPointsF(SDL_Renderer * renderer,
+                          const SDL_FPoint * points,
+                          int count);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|The renderer which should draw multiple points.
+|-
+|'''points'''
+|The points to draw
+|-
+|'''count'''
+|The number of points to draw
+|}
+
+== Return Value ==
+
+Return 0 on success, or -1 on error
+
+
+
+

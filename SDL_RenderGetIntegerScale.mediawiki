@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -9,43 +11,41 @@
 
 
 = SDL_RenderGetIntegerScale =
-Use this function to get whether integer scales are forced for resolution-independent rendering.
 
-
-
+Get whether integer scales are forced for resolution-independent rendering.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_RenderGetIntegerScale(SDL_Renderer* renderer)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_RenderGetIntegerScale(SDL_Renderer * renderer);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the renderer from which integer scaling should be queried
 |}
 
-
 == Return Value ==
-Returns SDL_TRUE if integer scales are forced or SDL_FALSE if not and on failure; call [[SDL_GetError]]() for more information.
 
+Returns SDL_TRUE if integer scales are forced or SDL_FALSE if not and on
+failure; call [[SDL_GetError]]() for more information.
 
-
-== Remarks ==
-''You can add useful comments here''
-
-<!-- #Leave this section as-is unless you have a remark to put in.  In that case, replace ''You can add useful comments here'' with your remark(s) following the Style Guide instructions.  Leave the rest of the markup alone and delete this comment. -->
 
 
 == Version ==
+
 This function is available since SDL 2.0.5.
 
 
+
 == Related Functions ==
+
 :[[SDL_RenderSetIntegerScale]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

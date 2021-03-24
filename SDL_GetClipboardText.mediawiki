@@ -1,22 +1,32 @@
-
 = SDL_GetClipboardText =
-Use this function to get UTF-8 text from the clipboard, which must be freed with SDL_free().
 
+Get UTF-8 text from the clipboard, which must be freed with [[SDL_free]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-char* SDL_GetClipboardText(void)
+
+<syntaxhighlight lang='c'>
+char * SDL_GetClipboardText(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the clipboard text on success or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the clipboard text on success or NULL on failure; call
+[[SDL_GetError]]() for more information. Caller must call [[SDL_free]]() on
+the returned pointer when done with it.
+
+
 
 == Remarks ==
-This functions returns NULL if there was not enough memory left for a copy of the clipboard's content.
+
+This functions returns NULL if there was not enough memory left for a copy
+of the clipboard's content.
 
 == Related Functions ==
+
 :[[SDL_HasClipboardText]]
 :[[SDL_SetClipboardText]]
 
 ----
 [[CategoryAPI]], [[CategoryClipboard]]
+
+

@@ -1,34 +1,52 @@
 = SDL_RenderCopy =
-Use this function to copy a portion of the texture to the current rendering target.
 
+Copy a portion of the texture to the current rendering target.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_RenderCopy(SDL_Renderer*   renderer,
-                   SDL_Texture*    texture,
-                   const SDL_Rect* srcrect,
-                   const SDL_Rect* dstrect)
+
+<syntaxhighlight lang='c'>
+int SDL_RenderCopy(SDL_Renderer * renderer,
+                   SDL_Texture * texture,
+                   const SDL_Rect * srcrect,
+                   const SDL_Rect * dstrect);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''renderer''' 
-|the rendering context 
+|'''renderer'''
+|the rendering context
 |-
-|'''texture''' 
-|the source texture; see [[#Remarks|Remarks]] for details 
+|'''texture'''
+|the source texture
 |-
-|'''srcrect''' 
-|the source [[SDL_Rect]] structure or NULL for the entire texture 
+|'''srcrect'''
+|the source [[SDL_Rect]] structure or NULL for the entire texture
 |-
-|'''dstrect''' 
-|the destination [[SDL_Rect]] structure or NULL for the entire rendering target; the texture will be stretched to fill the given rectangle 
+|'''dstrect'''
+|the destination [[SDL_Rect]] structure or NULL for the entire rendering target; the texture will be stretched to fill the given rectangle
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+The texture is blended with the destination based on its blend mode set
+with [[SDL_SetTextureBlendMode]]().
+
+The texture color is affected based on its color modulation set by
+[[SDL_SetTextureColorMod]]().
+
+The texture alpha is affected based on its alpha modulation set by
+[[SDL_SetTextureAlphaMod]]().
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 
 #include "SDL.h"
@@ -124,14 +142,9 @@ int main(int argc, char *argv[])
   return 0;
 }
 </syntaxhighlight>
-== Remarks ==
-The texture is blended with the destination based on its blend mode set with [[SDL_SetTextureBlendMode]]().
-
-The texture color is affected based on its color modulation set by [[SDL_SetTextureColorMod]]().
-
-The texture alpha is affected based on its alpha modulation set by [[SDL_SetTextureAlphaMod]]().
 
 == Related Functions ==
+
 :[[SDL_RenderCopyEx]]
 :[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
@@ -140,3 +153,5 @@ The texture alpha is affected based on its alpha modulation set by [[SDL_SetText
 ----
 
 [[CategoryAPI]], CategoryRender
+
+

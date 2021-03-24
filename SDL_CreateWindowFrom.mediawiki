@@ -1,28 +1,39 @@
-
 = SDL_CreateWindowFrom =
-Use this function to create an SDL window from an existing native window.
 
+Create an SDL window from an existing native window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Window* SDL_CreateWindowFrom(const void* data)
+
+<syntaxhighlight lang='c'>
+SDL_Window * SDL_CreateWindowFrom(const void *data);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''data'''
 |a pointer to driver-dependent window creation data, typically your native window cast to a void*
 |}
 
 == Return Value ==
-Returns the window that was created or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the window that was created or NULL on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows) the hint [[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT]] needs to be configured before using SDL_CreateWindowFrom().
+
+In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows)
+the hint <code>[[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT]]</code> needs to
+be configured before using [[SDL_CreateWindowFrom]]().
 
 == Related Functions ==
+
 :[[SDL_CreateWindow]]
 :[[SDL_DestroyWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

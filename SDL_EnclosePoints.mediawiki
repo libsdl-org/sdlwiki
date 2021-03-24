@@ -1,37 +1,44 @@
-
 = SDL_EnclosePoints =
-Use this function to calculate a minimal rectangle enclosing a set of points.
 
+Calculate a minimal rectangle enclosing a set of points.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_EnclosePoints(const SDL_Point* points,
-                           int              count,
-                           const SDL_Rect*  clip,
-                           SDL_Rect*        result)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_EnclosePoints(const SDL_Point * points,
+                           int count,
+                           const SDL_Rect * clip,
+                           SDL_Rect * result);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''points'''
 |an array of [[SDL_Point]] structures representing points to be enclosed
 |-
 |'''count'''
-|the number of structures in the '''points''' array
+|the number of structures in the <code>points</code> array
 |-
 |'''clip'''
-|an [[SDL_Rect]] structure used for clipping or NULL to enclose all points; see [[#Remarks|Remarks]] for details
+|an [[SDL_Rect]] used for clipping or NULL to enclose all points
 |-
 |'''result'''
 |an [[SDL_Rect]] structure filled in with the minimal enclosing rectangle
 |}
 
-
 == Return Value ==
-Returns SDL_TRUE if any points were enclosed or SDL_FALSE if all the points were outside of the clipping rectangle.
+
+Returns SDL_TRUE if any points were enclosed or SDL_FALSE if all the points
+were outside of the clipping rectangle.
+
+
 
 == Remarks ==
-If '''clip''' is not NULL then only points inside of the clipping rectangle are considered.
 
+If <code>clip</code> is not NULL then only points inside of the clipping
+rectangle are considered.
 ----
 [[CategoryAPI]], [[CategoryRect]]
+
+

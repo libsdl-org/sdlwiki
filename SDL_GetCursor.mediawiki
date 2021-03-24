@@ -1,25 +1,37 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetCursor =
-Use this function to get the active cursor.
 
+Get the active cursor.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Cursor* SDL_GetCursor(void)
+
+<syntaxhighlight lang='c'>
+SDL_Cursor* SDL_GetCursor(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns the active cursor or NULL if there is no mouse.
 
+
+
 == Remarks ==
-This function returns a pointer to the current cursor which is owned by the library.  It is not necessary to free the cursor with [[SDL_FreeCursor]]().
+
+This function returns a pointer to the current cursor which is owned by
+the library. It is not necessary to free the cursor with
+[[SDL_FreeCursor]]().
 
 == Related Functions ==
+
 :[[SDL_SetCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

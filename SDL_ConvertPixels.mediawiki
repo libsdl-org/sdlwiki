@@ -1,21 +1,19 @@
-
 = SDL_ConvertPixels =
-Use this function to copy a block of pixels of one format to another format.
 
+Copy a block of pixels of one format to another format.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_ConvertPixels(int         width,
-                      int         height,
-                      Uint32      src_format,
-                      const void* src,
-                      int         src_pitch,
-                      Uint32      dst_format,
-                      void*       dst,
-                      int         dst_pitch)
+
+<syntaxhighlight lang='c'>
+int SDL_ConvertPixels(int width, int height,
+                      Uint32 src_format,
+                      const void * src, int src_pitch,
+                      Uint32 dst_format,
+                      void * dst, int dst_pitch);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''width'''
 |the width of the block to copy, in pixels
@@ -24,31 +22,31 @@ int SDL_ConvertPixels(int         width,
 |the height of the block to copy, in pixels
 |-
 |'''src_format'''
-|the format of the source pixels; see [[#Remarks|Remarks]] for details
+|an [[SDL_PixelFormatEnum]] value of the <code>src</code> pixels format
 |-
 |'''src'''
 |a pointer to the source pixels
 |-
 |'''src_pitch'''
-|the pitch of the block to copy
+|the pitch of the block to copy, in bytes
 |-
 |'''dst_format'''
-|the format of the destination pixels; see [[#Remarks|Remarks]] for details
+|an [[SDL_PixelFormatEnum]] value of the <code>dst</code> pixels format
 |-
 |'''dst'''
 |a pointer to be filled in with new pixel data
 |-
 |'''dst_pitch'''
-|the pitch of the destination pixels
+|the pitch of the destination pixels, in bytes
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-'''src_format''' and '''dst_format''' may each be one of the following [[SDL_PixelFormatEnum]] values:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

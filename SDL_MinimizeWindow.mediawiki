@@ -1,25 +1,26 @@
-
 = SDL_MinimizeWindow =
-Use this function to minimize a window to an iconic representation.
 
+Minimize a window to an iconic representation.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_MinimizeWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_MinimizeWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to minimize
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_MaximizeWindow]]
 :[[SDL_RestoreWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

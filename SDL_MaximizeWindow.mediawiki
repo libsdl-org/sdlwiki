@@ -1,25 +1,26 @@
-
 = SDL_MaximizeWindow =
-Use this function to make a window as large as possible.
 
+Make a window as large as possible.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_MaximizeWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_MaximizeWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to maximize
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_MinimizeWindow]]
 :[[SDL_RestoreWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

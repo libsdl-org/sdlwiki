@@ -1,23 +1,26 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetMouseFocus =
-Use this function to get the window which currently has mouse focus.
 
+Get the window which currently has mouse focus.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Window* SDL_GetMouseFocus(void)
+
+<syntaxhighlight lang='c'>
+SDL_Window * SDL_GetMouseFocus(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the window with mouse focus.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the window with mouse focus.
 
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

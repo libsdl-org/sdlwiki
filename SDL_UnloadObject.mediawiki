@@ -1,25 +1,26 @@
-
 = SDL_UnloadObject =
-Use this function to unload a shared object from memory.
 
+Unload a shared object from memory.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_UnloadObject(void* handle)
+
+<syntaxhighlight lang='c'>
+void SDL_UnloadObject(void *handle);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''handle'''
 |a valid shared object handle returned by [[SDL_LoadObject]]()
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_LoadFunction]]
 :[[SDL_LoadObject]]
 
 ----
 [[CategoryAPI]], [[CategorySharedObject]]
+
+

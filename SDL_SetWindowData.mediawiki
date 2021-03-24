@@ -1,16 +1,17 @@
-
 = SDL_SetWindowData =
-Use this function to associate an arbitrary named pointer with a window.
 
+Associate an arbitrary named pointer with a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_SetWindowData(SDL_Window* window,
-                        const char* name,
-                        void*       userdata)
+
+<syntaxhighlight lang='c'>
+void* SDL_SetWindowData(SDL_Window * window,
+                        const char *name,
+                        void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to associate with the pointer
@@ -23,13 +24,20 @@ void* SDL_SetWindowData(SDL_Window* window,
 |}
 
 == Return Value ==
-Returns the previous value associated with '''name'''.
+
+Returns the previous value associated with `name`.
+
+
 
 == Remarks ==
-'''name''' is case-sensitive.
+
+<code>name</code> is case-sensitive.
 
 == Related Functions ==
+
 :[[SDL_GetWindowData]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

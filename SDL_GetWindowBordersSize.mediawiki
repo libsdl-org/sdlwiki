@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -9,22 +11,19 @@
 
 
 = SDL_GetWindowBordersSize =
-Use this function to get the size of a window's borders (decorations) around the client area.
 
-
-
+Get the size of a window's borders (decorations) around the client area.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetWindowBordersSize(SDL_Window* window,
-                             int*        top,
-                             int*        left,
-                             int*        bottom,
-                             int*        right)
+
+<syntaxhighlight lang='c'>
+int SDL_GetWindowBordersSize(SDL_Window * window,
+                             int *top, int *left,
+                             int *bottom, int *right);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query the size values of the border (decorations) from
@@ -42,28 +41,33 @@ int SDL_GetWindowBordersSize(SDL_Window* window,
 |pointer to variable for storing the size of the right border; NULL is permitted
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 
 
 == Remarks ==
-Note: If this function fails (returns -1), the size values will be initialized to 0, 0, 0, 0 (if a non-NULL pointer is provided), as if the window in question was borderless.
+
+Note: If this function fails (returns -1), the size values will be
+initialized to 0, 0, 0, 0 (if a non-NULL pointer is provided), as if the
+window in question was borderless.
 
 This function also returns -1 if getting the information is not supported.
 
-This function is only supported on X11.
-
-
 == Version ==
+
 This function is available since SDL 2.0.5.
 
 
+
 == Related Functions ==
+
 :[[SDL_GetWindowSize]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

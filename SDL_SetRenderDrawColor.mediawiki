@@ -1,18 +1,17 @@
-
 = SDL_SetRenderDrawColor =
-Use this function to set the color used for drawing operations (Rect, Line and Clear).
 
+Set the color used for drawing operations (Rect, Line and Clear).
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
-                           Uint8         r,
-                           Uint8         g,
-                           Uint8         b,
-                           Uint8         a)
+
+<syntaxhighlight lang='c'>
+int SDL_SetRenderDrawColor(SDL_Renderer * renderer,
+                   Uint8 r, Uint8 g, Uint8 b,
+                   Uint8 a);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -27,13 +26,23 @@ int SDL_SetRenderDrawColor(SDL_Renderer* renderer,
 |the blue value used to draw on the rendering target
 |-
 |'''a'''
-|the alpha value used to draw on the rendering target; usually SDL_ALPHA_OPAQUE (255). Use [[SDL_SetRenderDrawBlendMode]] to specify how the alpha channel is used
+|the alpha value used to draw on the rendering target; usually <code>[[[[SDL_ALPHA_OPAQUE]]]]</code> (255). Use [[[[SDL_SetRenderDrawBlendMode]]]] to specify how the alpha channel is used
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+Set the color for drawing or filling rectangles, lines, and points, and
+for [[SDL_RenderClear]]().
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 SDL_Rect rectangle;
@@ -45,10 +54,9 @@ rectangle.h = 50;
 SDL_RenderFillRect(renderer, &rectangle);
 </syntaxhighlight>
 
-== Remarks ==
-Use this function to set the color for drawing or filling rectangles, lines, and points, and for [[SDL_RenderClear]]().
 
 == Related Functions ==
+
 :[[SDL_GetRenderDrawColor]]
 :[[SDL_RenderClear]]
 :[[SDL_RenderDrawLine]]
@@ -62,3 +70,5 @@ Use this function to set the color for drawing or filling rectangles, lines, and
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

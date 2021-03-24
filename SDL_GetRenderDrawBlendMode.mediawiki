@@ -1,31 +1,36 @@
-
 = SDL_GetRenderDrawBlendMode =
-Use this function to get the blend mode used for drawing operations.
 
+Get the blend mode used for drawing operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetRenderDrawBlendMode(SDL_Renderer*  renderer,
-                               SDL_BlendMode* blendMode)
+
+<syntaxhighlight lang='c'>
+int SDL_GetRenderDrawBlendMode(SDL_Renderer * renderer,
+                               SDL_BlendMode *blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |-
 |'''blendMode'''
-|a pointer filled in with the current [[SDL_BlendMode]]; see [[#blendMode|Remarks]] for details
+|a pointer filled in with the current [[SDL_BlendMode]]
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-<span id="blendMode"></span> '''blendMode''' will be filled in with one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_SetRenderDrawBlendMode]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

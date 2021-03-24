@@ -1,17 +1,17 @@
-
 = SDL_GetSurfaceColorMod =
-Use this function to get the additional color value multiplied into blit operations.
 
+Get the additional color value multiplied into blit operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetSurfaceColorMod(SDL_Surface* surface,
-                           Uint8*       r,
-                           Uint8*       g,
-                           Uint8*       b)
+
+<syntaxhighlight lang='c'>
+int SDL_GetSurfaceColorMod(SDL_Surface * surface,
+                           Uint8 * r, Uint8 * g,
+                           Uint8 * b);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to query
@@ -27,14 +27,18 @@ int SDL_GetSurfaceColorMod(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetSurfaceAlphaMod]]
 :[[SDL_SetSurfaceColorMod]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

@@ -1,34 +1,42 @@
-
 = SDL_SetSurfaceBlendMode =
-Use this function to set the blend mode used for blit operations.
 
+Set the blend mode used for blit operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetSurfaceBlendMode(SDL_Surface*  surface,
-                            SDL_BlendMode blendMode)
+
+<syntaxhighlight lang='c'>
+int SDL_SetSurfaceBlendMode(SDL_Surface * surface,
+                            SDL_BlendMode blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to update
 |-
 |'''blendMode'''
-|the [[SDL_BlendMode]] to use for blit blending; see [[#Remarks|Remarks]] for details
+|the [[SDL_BlendMode]] to use for blit blending
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-'''blendMode''' may be one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
 
-To copy a surface to another surface (or texture) without blending with the existing data, the blendmode of the SOURCE surface should be set to 'SDL_BLENDMODE_NONE'.
-
+To copy a surface to another surface (or texture) without blending with
+the existing data, the blendmode of the SOURCE surface should be set to
+<code>[[SDL_BLENDMODE_NONE]]</code>.
 
 == Related Functions ==
+
 :[[SDL_GetSurfaceBlendMode]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

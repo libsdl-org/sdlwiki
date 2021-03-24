@@ -1,18 +1,17 @@
-
 = SDL_GetRenderDrawColor =
-Use this function to get the color used for drawing operations (Rect, Line and Clear).
 
+Get the color used for drawing operations (Rect, Line and Clear).
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetRenderDrawColor(SDL_Renderer* renderer,
-                           Uint8*        r,
-                           Uint8*        g,
-                           Uint8*        b,
-                           Uint8*        a)
+
+<syntaxhighlight lang='c'>
+int SDL_GetRenderDrawColor(SDL_Renderer * renderer,
+                   Uint8 * r, Uint8 * g, Uint8 * b,
+                   Uint8 * a);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
@@ -27,17 +26,21 @@ int SDL_GetRenderDrawColor(SDL_Renderer* renderer,
 |a pointer filled in with the blue value used to draw on the rendering target
 |-
 |'''a'''
-|a pointer filled in with the alpha value used to draw on the rendering target; usually SDL_ALPHA_OPAQUE (255)
+|a pointer filled in with the alpha value used to draw on the rendering target; usually <code>[[[[SDL_ALPHA_OPAQUE]]]]</code> (255)
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_SetRenderDrawColor]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

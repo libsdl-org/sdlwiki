@@ -1,4 +1,6 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -9,19 +11,17 @@
 
 
 = SDL_SetWindowModalFor =
-Use this function to set the window as a modal for another window.
 
-
-
+Set the window as a modal for another window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetWindowModalFor(SDL_Window* modal_window,
-                          SDL_Window* parent_window)
+
+<syntaxhighlight lang='c'>
+int SDL_SetWindowModalFor(SDL_Window * modal_window, SDL_Window * parent_window);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''modal_window'''
 |the window that should be set modal
@@ -30,20 +30,20 @@ int SDL_SetWindowModalFor(SDL_Window* modal_window,
 |the parent window for the modal window
 |}
 
-
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
-
-== Remarks ==
-This function is only supported on X11.
 
 
 == Version ==
+
 This function is available since SDL 2.0.5.
 
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

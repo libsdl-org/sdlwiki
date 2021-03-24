@@ -1,30 +1,42 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticQuery =
-Use this function to get the haptic device's supported features in bitwise manner.
 
+Get the haptic device's supported features in bitwise manner.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-unsigned int SDL_HapticQuery(SDL_Haptic* haptic)
+
+<syntaxhighlight lang='c'>
+unsigned int SDL_HapticQuery(SDL_Haptic * haptic);
 </syntaxhighlight>
-<!-- <span style="color: green;">Should that say Uint8 or Uint16 etc instead of "unsigned int"?</span> -->
 
 == Function Parameters ==
+
 {|
 |'''haptic'''
-|the SDL_Haptic device to query
+|the [[SDL_Haptic]] device to query
 |}
 
 == Return Value ==
-Returns a list of supported haptic features in bitwise manner (OR'd), or 0 on failure; call [[SDL_GetError]]() for more information.
 
-<!-- <span style="color: green;">It seems there is probably a more clear or complete way to describe this...  Is there a struct that should be Included here?  Maybe the [[SDL_HapticEffect]] union?</span> -->
+Returns a list of supported haptic features in bitwise manner (OR'd), or 0
+on failure; call [[SDL_GetError]]() for more information.
+
+
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 extern SDL_Haptic *haptic;
 if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
@@ -32,15 +44,13 @@ if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-''You can add useful comments here''
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_HapticEffectSupported]]
 :[[SDL_HapticNumEffects]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

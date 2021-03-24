@@ -1,27 +1,49 @@
-
 = SDL_GetWindowWMInfo =
-Use this function to get driver specific information about a window.
 
+Get driver-specific information about a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_GetWindowWMInfo(SDL_Window*    window,
-                             SDL_SysWMinfo* info)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
+                             SDL_SysWMinfo * info);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window about which information is being requested
 |-
 |'''info'''
-|an [[SDL_SysWMinfo]] structure filled in with window information; see [[#Remarks|Remarks]] for details
+|an [[SDL_SysWMinfo]] structure filled in with window information
 |}
 
 == Return Value ==
-Returns SDL_TRUE if the function is implemented and the <code>version</code> member of the '''info''' struct is valid, or SDL_FALSE if the information could not be retrieved; call [[SDL_GetError]]() for more information.
+
+Returns SDL_TRUE if the function is implemented and the `version` member of
+the <code>info</code> struct is valid, or [[SDL_FALSE]] if the information
+could not be retrieved; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+You must include [[SDL_syswm]].h for the declaration of [[SDL_SysWMinfo]].
+
+The caller must initialize the <code>info</code> structure's version by
+using <code>[[SDL_VERSION]](&info.version)</code>, and then this function
+will fill in the rest of the structure with information about the given
+window.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include "SDL_syswm.h"
@@ -79,16 +101,9 @@ int main(int argc, char *argv[]) {
 
 </syntaxhighlight>
 
-== Remarks ==
-You must include SDL_syswm.h for the declaration of [[SDL_SysWMinfo]].
-
-The '''info''' structure must be initialized with the SDL version, and is then filled in with information about the given window, as shown in the [[#Code Examples|Code Example]].
-
-
-== Version ==
-This function is available since SDL 2.0.0.
-
 ----
 [[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
 
 <!-- #Actually from SDL_syswm.h header but listed in both categories for the wiki. -->
+
+

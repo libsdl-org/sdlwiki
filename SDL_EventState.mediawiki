@@ -1,44 +1,43 @@
-
 = SDL_EventState =
-Use this function to set the state of processing events by type.
 
+Set the state of processing events by type.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint8 SDL_EventState(Uint32 type,
-                     int    state)
+
+<syntaxhighlight lang='c'>
+Uint8 SDL_EventState(Uint32 type, int state);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''type'''
 |the type of event; see [[SDL_EventType]] for details
 |-
 |'''state'''
-|how to process the event; see [[#Remarks|Remarks]] for details
+|how to process the event
 |}
 
 == Return Value ==
-Returns SDL_DISABLE or SDL_ENABLE, representing the processing state of the event before this function makes any changes to it.
+
+Returns `SDL_DISABLE` or `SDL_ENABLE`, representing the processing state of
+the event before this function makes any changes to it.
+
+
 
 == Remarks ==
-'''state''' may be any of the following:
-{|
-|-1
-|SDL_QUERY
-|returns the current processing state of the specified event
-|-
-|0
-|SDL_IGNORE (aka SDL_DISABLE)
-|the event will automatically be dropped from the event queue and will not be filtered
-|-
-|1
-|SDL_ENABLE
-|the event will be processed normally
-|}
+
+<code>state</code> may be any of the following:
+
+* <code>[[SDL_QUERY]]</code>: returns the current processing state of the specified event 
+* <code>[[SDL_IGNORE]]</code> (aka <code>[[SDL_DISABLE]]</code>): the event will automatically be dropped from the event queue and will not be filtered 
+* <code>[[SDL_ENABLE]]</code>: the event will be processed normally
 
 == Related Functions ==
+
 :[[SDL_GetEventState]]
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

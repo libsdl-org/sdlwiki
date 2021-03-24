@@ -1,0 +1,28 @@
+= SDL_GameControllerGetVendor =
+
+Get the USB vendor ID of an opened controller, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Uint16 SDL_GameControllerGetVendor(SDL_GameController *gamecontroller);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|the game controller object to query.
+|}
+
+== Return Value ==
+
+Return USB vendor ID, or zero if unavailable.
+
+
+
+== Remarks ==
+
+If the vendor ID isn't available this function returns 0.
+
+

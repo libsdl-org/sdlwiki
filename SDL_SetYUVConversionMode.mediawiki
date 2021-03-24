@@ -1,0 +1,11 @@
+= SDL_SetYUVConversionMode =
+
+Set the YUV conversion mode 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_SetYUVConversionMode(SDL_YUV_CONVERSION_MODE mode);
+</syntaxhighlight>
+
+

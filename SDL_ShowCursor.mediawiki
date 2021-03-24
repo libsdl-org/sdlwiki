@@ -1,28 +1,47 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_ShowCursor =
-Use this function to toggle whether or not the cursor is shown.
 
+Toggle whether or not the cursor is shown.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_ShowCursor(int toggle)
+
+<syntaxhighlight lang='c'>
+int SDL_ShowCursor(int toggle);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''toggle'''
-|SDL_ENABLE to show the cursor, SDL_DISABLE to hide it, SDL_QUERY to query the current state
+|<code>[[SDL_ENABLE]]</code> to show the cursor, <code>[[SDL_DISABLE]]</code> to hide it, <code>[[[[SDL_QUERY]]]]</code> to query the current state without changing it.
 |}
 
 == Return Value ==
-Returns SDL_ENABLE if the cursor is shown, or SDL_DISABLE if the cursor is hidden, or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
+Returns `SDL_ENABLE` if the cursor is shown, or `SDL_DISABLE` if the cursor
+is hidden, or a negative error code on failure; call [[SDL_GetError]]() for
+more information.
+
+
+
+== Remarks ==
+
+The cursor starts off displayed but can be turned off. Passing
+<code>[[SDL_ENABLE]]</code> displays the cursor and passing
+<code>[[SDL_DISABLE]]</code> hides it.
+
+The current state of the mouse cursor can be queried by passing
+<code>[[SDL_QUERY]]</code>; either <code>[[SDL_DISABLE]]</code> or
+<code>[[SDL_ENABLE]]</code> will be returned.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 int main(int argc, char *argv[]) {
     /* creates a blank cursor */
@@ -32,29 +51,13 @@ int main(int argc, char *argv[]) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-The cursor starts off displayed but can be turned off.  Passing SDL_ENABLE displays the cursor and passing SDL_DISABLE hides it.
-
-The current state of the mouse cursor can be queried by passing SDL_QUERY; either SDL_DISABLE or SDL_ENABLE will be returned.
-
-'''toggle''' may be any of the following:
-{|
-|-1
-|SDL_QUERY
-|returns the current visibility of the cursor
-|-
-|0
-|SDL_DISABLE
-|makes the cursor hidden (also a return value as to the current state of the cursor)
-|-
-|1
-|SDL_ENABLE
-|makes the cursor visible (also a return value as to the current state of the cursor)
-|}
 
 == Related Functions ==
+
 :[[SDL_CreateCursor]]
 :[[SDL_SetCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]
+
+

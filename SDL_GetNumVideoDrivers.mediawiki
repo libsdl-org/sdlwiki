@@ -1,21 +1,25 @@
-
 = SDL_GetNumVideoDrivers =
-Use this function to get the number of video drivers compiled into SDL.
 
+Get the number of video drivers compiled into SDL.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetNumVideoDrivers(void)
+
+<syntaxhighlight lang='c'>
+int SDL_GetNumVideoDrivers(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns a number >= 1 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns a number >= 1 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Related Functions ==
+
 :[[SDL_GetVideoDriver]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

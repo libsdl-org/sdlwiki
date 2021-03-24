@@ -1,23 +1,33 @@
-
 = SDL_InitSubSystem =
-Use this function to initialize specific SDL subsystems.
 
+Compatibility function to initialize the SDL library.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_InitSubSystem(Uint32 flags)
+
+<syntaxhighlight lang='c'>
+int SDL_InitSubSystem(Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''flags'''
-|any of the flags used by [[SDL_Init]](); see [[#flags|Remarks]] for details
+|any of the flags used by [[SDL_Init]](); see [[SDL_Init]] for details.
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+In SDL2, this function and [[SDL_Init]]() are interchangeable.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
@@ -38,20 +48,14 @@ SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 SDL_Quit();
 </syntaxhighlight>
 
-== Remarks ==
-After SDL has been initialized with [[SDL_Init]]() you may initialize uninitialized subsystems with [[SDL_InitSubSystem]]().
-
-<span id="flags"></span>These are the flags which may be passed to [[SDL_InitSubSystem]]() and may be OR'd together to initialize multiple subsystems simultaneously.
-<<Include(SDL_Init, , , from="Start Include here.", to="##End Include here.")>>
-
-[[SDL_Init]]() initializes assertions and crash protection and then calls [[SDL_InitSubSystem]]().  If you want to bypass those protections you can call [[SDL_InitSubSystem]]() directly.
-
-Subsystem initialization is ref-counted, you must call [[SDL_QuitSubSystem]]() for each SDL_InitSubSystem() to correctly shutdown a subsystem manually (or call [[SDL_Quit]]() to force shutdown). If a subsystem is already loaded then this call will increase the ref-count and return.
 
 == Related Functions ==
+
 :[[SDL_Init]]
 :[[SDL_Quit]]
 :[[SDL_QuitSubSystem]]
 
 ----
 [[CategoryAPI]], [[CategoryInit]]
+
+

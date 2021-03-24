@@ -1,27 +1,35 @@
-
 = SDL_DestroyMutex =
-Use this function to destroy a mutex created with [[SDL_CreateMutex]]().
 
+Destroy a mutex created with [[SDL_CreateMutex]]().
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_DestroyMutex(SDL_mutex* mutex)
+
+<syntaxhighlight lang='c'>
+void SDL_DestroyMutex(SDL_mutex * mutex);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
-|'''mutex''' 
+|'''mutex'''
 |the mutex to destroy
 |}
 
+== Remarks ==
+
+This function must be called on any mutex that is no longer needed.
+Failure to destroy a mutex will result in a system memory or resource leak.
+While it is safe to destroy a mutex that is _unlocked_, it is not safe to
+attempt to destroy a locked mutex, and may result in undefined behavior
+depending on the platform.
 
 == Code Examples ==
+
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
-== Remarks ==
-This function must be called on any mutex that is no longer needed. Failure to destroy a mutex will result in a system memory or resource leak. While it is safe to destroy a mutex that is UNLOCKED, it is not safe to attempt to destroy a locked mutex and may result in undefined behavior depending on the platform.
 
 == Related Functions ==
+
 :[[SDL_CreateMutex]]
 :[[SDL_LockMutex]]
 :[[SDL_TryLockMutex]]
@@ -29,3 +37,5 @@ This function must be called on any mutex that is no longer needed. Failure to d
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

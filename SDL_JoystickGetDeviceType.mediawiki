@@ -1,0 +1,30 @@
+= SDL_JoystickGetDeviceType =
+
+Get the type of a joystick, if available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_JoystickType SDL_JoystickGetDeviceType(int device_index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''device_index'''
+|the index of the joystick to query (the N'th joystick on the system
+|}
+
+== Return Value ==
+
+Returns the SDL_JoystickType of the selected joystick. If called on an
+invalid index, this function returns
+<code>[[SDL_JOYSTICK_TYPE_UNKNOWN]]</code>
+
+
+
+== Remarks ==
+
+This can be called before any joysticks are opened.
+
+

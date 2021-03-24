@@ -1,15 +1,16 @@
-
 = SDL_SetSurfaceAlphaMod =
-Use this function to set an additional alpha value used in blit operations.
 
+Set an additional alpha value used in blit operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetSurfaceAlphaMod(SDL_Surface* surface,
-                           Uint8        alpha)
+
+<syntaxhighlight lang='c'>
+int SDL_SetSurfaceAlphaMod(SDL_Surface * surface,
+                           Uint8 alpha);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to update
@@ -19,15 +20,25 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-When this surface is blitted, during the blit operation the source alpha value is modulated by this alpha value according to the following formula:
-:<code>srcA = srcA * (alpha / 255)</code>
+
+When this surface is blitted, during the blit operation the source alpha
+value is modulated by this alpha value according to the following formula:
+
+<code>srcA = srcA * (alpha / 255)</code>
 
 == Related Functions ==
+
 :[[SDL_GetSurfaceAlphaMod]]
 :[[SDL_SetSurfaceColorMod]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

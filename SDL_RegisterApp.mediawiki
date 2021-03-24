@@ -1,0 +1,11 @@
+= SDL_RegisterApp =
+
+This can be called to set the application class at startup 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_RegisterApp(char *name, Uint32 style, void *hInst);
+</syntaxhighlight>
+
+

@@ -1,36 +1,47 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_GetScancodeFromName =
-Use this function to get a scancode from a human-readable name.
 
+Get a scancode from a human-readable name.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Scancode SDL_GetScancodeFromName(const char* name)
+
+<syntaxhighlight lang='c'>
+SDL_Scancode SDL_GetScancodeFromName(const char *name);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''name'''
 |the human-readable scancode name
 |}
 
 == Return Value ==
-Returns the [[SDL_Scancode]], or SDL_SCANCODE_UNKNOWN if the name wasn't recognized; call [[SDL_GetError]]() for more information.
 
-== Remarks ==
-''You can add useful comments here''
+Returns the SDL_Scancode, or `SDL_SCANCODE_UNKNOWN` if the name wasn't
+recognized; call [[SDL_GetError]]() for more information.
+
+
 
 == Version ==
+
 This function is available since SDL 2.0.0.
 
+
+
 == Related Functions ==
+
 :[[SDL_GetKeyFromName]]
 :[[SDL_GetScancodeFromKey]]
 :[[SDL_GetScancodeName]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

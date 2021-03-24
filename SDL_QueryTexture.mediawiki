@@ -1,15 +1,13 @@
-
 = SDL_QueryTexture =
-Use this function to query the attributes of a texture.
 
+Query the attributes of a texture.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_QueryTexture(SDL_Texture* texture,
-                     Uint32*      format,
-                     int*         access,
-                     int*         w,
-                     int*         h)
+
+<syntaxhighlight lang='c'>
+int SDL_QueryTexture(SDL_Texture * texture,
+                     Uint32 * format, int *access,
+                     int *w, int *h);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -19,10 +17,10 @@ int SDL_QueryTexture(SDL_Texture* texture,
 |the texture to query
 |-
 |'''format'''
-|a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format; see [[#format|Remarks]] for details
+|a pointer filled in with the raw format of the texture; the actual format may differ, but pixel transfers will use this format (one of the [[[[SDL_PixelFormatEnum]]]] values)
 |-
 |'''access'''
-|a pointer filled in with the actual access to the texture (one of the [[SDL_TextureAccess]] values)
+|a pointer filled in with the actual access to the texture (one of the [[[[SDL_TextureAccess]]]] values)
 |-
 |'''w'''
 |a pointer filled in with the width of the texture in pixels
@@ -32,9 +30,14 @@ int SDL_QueryTexture(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Texture* source;
 
@@ -45,12 +48,12 @@ SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
 </syntaxhighlight>
 
-== Remarks ==
-<span id="format"></span> '''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
 
 == Related Functions ==
+
 :[[SDL_CreateTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

@@ -1,0 +1,17 @@
+= SDL_GameControllerNumMappings =
+
+Get the number of mappings installed.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerNumMappings(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns the number of mappings.
+
+
+
+

@@ -1,17 +1,26 @@
-
 = SDL_GetTicks =
-Use this function to get the number of milliseconds since the SDL library initialization.
 
+Get the number of milliseconds since SDL library initialization.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint32 SDL_GetTicks(void)
+
+<syntaxhighlight lang='c'>
+Uint32 SDL_GetTicks(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns an unsigned 32-bit value representing the number of milliseconds since the SDL library initialized.
+
+Returns an unsigned 32-bit value representing the number of milliseconds
+since the SDL library initialized.
+
+
+
+== Remarks ==
+
+This value wraps if the program runs for more than ~49 days.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 unsigned int lastTime = 0, currentTime;
 while (!quit) {
@@ -27,11 +36,12 @@ while (!quit) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This value wraps if the program runs for more than ~49 days.
 
 == Related Functions ==
+
 :[[SDL_TICKS_PASSED]]
 
 ----
 [[CategoryAPI]], [[CategoryTimer]]
+
+

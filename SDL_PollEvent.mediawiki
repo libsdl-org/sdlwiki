@@ -1,23 +1,61 @@
-
 = SDL_PollEvent =
-Use this function to poll for currently pending events.
 
+Poll for currently pending events.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_PollEvent(SDL_Event* event)
+
+<syntaxhighlight lang='c'>
+int SDL_PollEvent(SDL_Event * event);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''event'''
 |the [[SDL_Event]] structure to be filled with the next event from the queue, or NULL
 |}
 
 == Return Value ==
+
 Returns 1 if there is a pending event or 0 if there are none available.
 
+
+
+== Remarks ==
+
+If <code>event</code> is not NULL, the next event is removed from the
+queue and stored in the [[SDL_Event]] structure pointed to by
+<code>event</code>. The 1 returned refers to this event, immediately stored
+in the SDL Event structure -- not an event to follow.
+
+If <code>event</code> is NULL, it simply returns 1 if there is an event in
+the queue, but will not remove it from the queue.
+
+As this function implicitly calls [[SDL_PumpEvents]](), you can only call
+this function in the thread that set the video mode.
+
+[[SDL_PollEvent]]() is the favored way of receiving system events since it
+can be done from the main loop and does not suspend the main loop while
+waiting on an event to be posted.
+
+The common practice is to fully process the event queue once every frame,
+usually as a first step before updating the game's state:
+
+
+
+<syntaxhighlight lang='c'>
+while (game_is_still_running) {
+[[SDL_Event]] event;
+while ([[SDL_PollEvent]](&event)) {  // poll until all events are handled!
+// decide what to do with this event.
+}
+
+// update game state, draw the current frame
+}
+</syntaxhighlight>
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 while (1) {
     SDL_Event event;
@@ -28,16 +66,9 @@ while (1) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-If '''event''' is not NULL, the next event is removed from the queue and stored in the [[SDL_Event]] structure pointed to by '''event'''.  The 1 returned refers to this event, immediately stored in the SDL Event structure -- not an event to follow.
-
-If '''event''' is NULL, it simply returns 1 if there is an event in the queue, but will not remove it.
-
-As this function implicitly calls [[SDL_PumpEvents]](), you can only call this function in the thread that set the video mode.
-
-[[SDL_PollEvent]]() is the favored way of receiving system events since it can be done from the main loop and does not suspend the main loop while waiting on an event to be posted.
 
 == Related Functions ==
+
 :[[SDL_GetEventFilter]]
 :[[SDL_PeepEvents]]
 :[[SDL_PushEvent]]
@@ -47,3 +78,5 @@ As this function implicitly calls [[SDL_PumpEvents]](), you can only call this f
 
 ----
 [[CategoryAPI]], [[CategoryEvents]]
+
+

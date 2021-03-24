@@ -1,37 +1,50 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_HapticSetAutocenter =
-Use this function to set the global autocenter of the device.
 
+Set the global autocenter of the device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_HapticSetAutocenter(SDL_Haptic* haptic,
-                            int         autocenter)
+
+<syntaxhighlight lang='c'>
+int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
+                            int autocenter);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''haptic'''
-|the SDL_Haptic device to set autocentering on
+|the [[SDL_Haptic]] device to set autocentering on
 |-
 |'''autocenter'''
-|value to set autocenter to (0-100), 0 disables autocentering; see [[#Remarks|Remarks]] for details
+|value to set autocenter to (0-100)
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-Autocenter should be between 0 and 100. Setting it to 0 will disable autocentering. <!-- <span style="color: green;">This is redundant w/ the FP section and could all be contained there (as shown). Should it be removed from here?</span> -->
 
-Device must support the SDL_HAPTIC_AUTOCENTER feature.
+Autocenter should be between 0 and 100. Setting it to 0 will disable
+autocentering.
+
+Device must support the [[SDL_HAPTIC_AUTOCENTER]] feature.
 
 == Related Functions ==
+
 :[[SDL_HapticQuery]]
 
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]]
+
+

@@ -1,35 +1,41 @@
-
 = SDL_LockMutex =
-Use this function to lock a mutex created with [[SDL_CreateMutex]]().
 
+Lock the mutex.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_LockMutex(SDL_mutex* mutex)
+
+<syntaxhighlight lang='c'>
+int SDL_LockMutex(SDL_mutex * mutex);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
-|'''mutex''' 
+|'''mutex'''
 |the mutex to lock
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
-== Code Examples ==
-<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+Return 0, or -1 on error.
+
+
 
 == Remarks ==
-Calls to this function will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock the mutex without blocking.
 
-SDL mutexes are recursive.
+This will block until the mutex is available, which is to say it is in the
+unlocked state and the OS has chosen the caller as the next thread to lock
+it. Of all threads waiting to lock the mutex, only one may do so at a time.
 
-== Related Functions ==
-:[[SDL_CreateMutex]]
-:[[SDL_DestroyMutex]]
-:[[SDL_TryLockMutex]]
-:[[SDL_UnlockMutex]]
+It is legal for the owning thread to lock an already-locked mutex. It must
+unlock it the same number of times before it is actually made available for
+other threads in the system (this is known as a "recursive mutex").
+
+== Code Examples ==
+
+<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

@@ -1,20 +1,25 @@
-
 = SDL_Has3DNow =
-Use this function to determine whether the CPU has 3DNow! features.
 
+Determine whether the CPU has 3DNow! features.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_Has3DNow(void)
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_Has3DNow(void);
 </syntaxhighlight>
 
 == Return Value ==
+
 Returns SDL_TRUE if the CPU has 3DNow! features or SDL_FALSE if not.
 
+
+
 == Remarks ==
-''You can add useful comments here''
+
+This always returns false on CPUs that aren't using AMD instruction sets.
 
 == Related Functions ==
+
 :[[SDL_HasAltiVec]]
 :[[SDL_HasAVX]]
 :[[SDL_HasAVX2]]
@@ -28,3 +33,5 @@ Returns SDL_TRUE if the CPU has 3DNow! features or SDL_FALSE if not.
 
 ----
 [[CategoryAPI]], [[CategoryCPU]]
+
+

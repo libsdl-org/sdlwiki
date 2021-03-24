@@ -1,30 +1,47 @@
-
 = SDL_CondWaitTimeout =
-Use this function to wait until a condition variable is signaled or a specified amount of time has passed.
 
+Wait until a condition variable is signaled or a certain time has passed.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_CondWaitTimeout(SDL_cond*  cond,
-                        SDL_mutex* mutex,
-                        Uint32     ms)
+
+<syntaxhighlight lang='c'>
+int SDL_CondWaitTimeout(SDL_cond * cond,
+                        SDL_mutex * mutex, Uint32 ms);
 </syntaxhighlight>
+
 == Function Parameters ==
+
 {|
-|'''cond''' 
+|'''cond'''
 |the condition variable to wait on
 |-
-|'''mutex''' 
+|'''mutex'''
 |the mutex used to coordinate thread access
 |-
-|'''ms''' 
-|the maximum time to wait in milliseconds, or SDL_MUTEX_MAXWAIT to wait indefinitely
+|'''ms'''
+|the maximum time to wait, in milliseconds, or <code>[[SDL_MUTEX_MAXWAIT]]</code> to wait indefinitely
 |}
 
 == Return Value ==
-Returns 0 if the condition variable is signaled, SDL_MUTEX_TIMEDOUT if the condition is not signaled in the allotted time, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 if the condition variable is signaled, `SDL_MUTEX_TIMEDOUT` if
+the condition is not signaled in the allotted time, or a negative error
+code on failure; call [[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function unlocks the specified <code>mutex</code> and waits for
+another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on
+the condition variable <code>cond</code>, or for the specified time to
+elapse. Once the condition variable is signaled or the time elapsed, the
+mutex is re-locked and the function returns.
+
+The mutex must be locked before calling this function.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_bool condition = SDL_FALSE;
 SDL_mutex *lock;
@@ -64,12 +81,9 @@ SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
 </syntaxhighlight>
 
-== Remarks ==
-This function unlocks the specified '''mutex''' and waits for another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on the condition variable '''cond''', or for the specified time to elapse.  Once the condition variable is signaled or the time elapsed, the mutex is re-locked and the function returns.
-
-The mutex must be locked before calling this function.
 
 == Related Functions ==
+
 :[[SDL_CondBroadcast]]
 :[[SDL_CondSignal]]
 :[[SDL_CondWait]]
@@ -78,3 +92,5 @@ The mutex must be locked before calling this function.
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

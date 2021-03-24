@@ -1,0 +1,33 @@
+= SDL_GameControllerSetLED =
+
+Update a game controller's LED color.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerSetLED(SDL_GameController *gamecontroller, Uint8 red, Uint8 green, Uint8 blue);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|The controller to update
+|-
+|'''red'''
+|The intensity of the red LED
+|-
+|'''green'''
+|The intensity of the green LED
+|-
+|'''blue'''
+|The intensity of the blue LED
+|}
+
+== Return Value ==
+
+Returns 0, or -1 if this controller does not have a modifiable LED
+
+
+
+

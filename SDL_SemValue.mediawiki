@@ -1,27 +1,31 @@
-
 = SDL_SemValue =
-Use this function to get the current value of a semaphore.
 
+Get the current value of a semaphore.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-Uint32 SDL_SemValue(SDL_sem* sem)
+
+<syntaxhighlight lang='c'>
+Uint32 SDL_SemValue(SDL_sem * sem);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sem'''
 |the semaphore to query
 |}
 
 == Return Value ==
+
 Returns the current value of the semaphore.
 
-== Remarks ==
-''You can add useful comments here''
+
 
 == Related Functions ==
+
 :[[SDL_CreateSemaphore]]
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

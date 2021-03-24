@@ -1,30 +1,40 @@
-
 = SDL_UpdateWindowSurface =
-Use this function to copy the window surface to the screen.
 
+Copy the window surface to the screen.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_UpdateWindowSurface(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+int SDL_UpdateWindowSurface(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to update
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-This is the function you use to reflect any changes to the surface on the screen.
 
-This function is equivalent to the SDL 1.2 API SDL_Flip().
+This is the function you use to reflect any changes to the surface on the
+screen.
+
+This function is equivalent to the SDL 1.2 API [[SDL_Flip]]().
 
 == Related Functions ==
+
 :[[SDL_GetWindowSurface]]
 :[[SDL_UpdateWindowSurfaceRects]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

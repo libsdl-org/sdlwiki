@@ -1,15 +1,16 @@
-
 = SDL_SetSurfacePalette =
-Use this function to set the palette used by a surface.
 
+Set the palette used by a surface.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetSurfacePalette(SDL_Surface* surface,
-                          SDL_Palette* palette)
+
+<syntaxhighlight lang='c'>
+int SDL_SetSurfacePalette(SDL_Surface * surface,
+                          SDL_Palette * palette);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''surface'''
 |the [[SDL_Surface]] structure to update
@@ -19,11 +20,16 @@ int SDL_SetSurfacePalette(SDL_Surface* surface,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
+
 A single palette can be shared with many surfaces.
-
-
 ----
 [[CategoryAPI]], [[CategorySurface]]
+
+

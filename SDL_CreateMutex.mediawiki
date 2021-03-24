@@ -1,17 +1,32 @@
-
 = SDL_CreateMutex =
-Use this function to create a new mutex.
 
+Create a new mutex.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_mutex* SDL_CreateMutex(void)
+
+<syntaxhighlight lang='c'>
+SDL_mutex* SDL_CreateMutex(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the initialized and unlocked mutex or NULL on failure; call [[SDL_GetError]]() for more information.
+
+Returns the initialized and unlocked mutex or NULL on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+All newly-created mutexes begin in the _unlocked_ state.
+
+Calls to [[SDL_LockMutex]]() will not return while the mutex is locked by
+another thread. See [[SDL_TryLockMutex]]() to attempt to lock without
+blocking.
+
+SDL mutexes are reentrant.
 
 == Code Examples ==
+
 <!-- # Begin Mutex Example -->
 <syntaxhighlight lang='c++'>
 SDL_mutex *mutex;
@@ -33,12 +48,9 @@ SDL_DestroyMutex(mutex);
 </syntaxhighlight>
 <!-- # End Mutex Example -->
 
-== Remarks ==
-Calls to [[SDL_LockMutex]]() will not return while the mutex is locked by another thread. See [[SDL_TryLockMutex]]() to attempt to lock without blocking.
-
-SDL mutexes are reentrant.
 
 == Related Functions ==
+
 :[[SDL_DestroyMutex]]
 :[[SDL_LockMutex]]
 :[[SDL_TryLockMutex]]
@@ -46,3 +58,5 @@ SDL mutexes are reentrant.
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

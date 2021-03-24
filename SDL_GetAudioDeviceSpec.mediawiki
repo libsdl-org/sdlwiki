@@ -1,0 +1,49 @@
+= SDL_GetAudioDeviceSpec =
+
+Get the preferred audio format of a specific audio device.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GetAudioDeviceSpec(int index,
+                           int iscapture,
+                           SDL_AudioSpec *spec);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''index'''
+|the index of the audio device; valid values range from 0 to [[[[SDL_GetNumAudioDevices]]]]() - 1
+|-
+|'''iscapture'''
+|non-zero to query the list of recording devices, zero to query the list of output devices.
+|-
+|'''spec'''
+|The [[SDL_AudioSpec]] to be initialized by this function.
+|}
+
+== Return Value ==
+
+Returns 0 on success, nonzero on error
+
+
+
+== Remarks ==
+
+This function is only valid after a successfully initializing the audio
+subsystem. The values returned by this function reflect the latest call to
+[[SDL_GetNumAudioDevices]](); re-call that function to redetect available
+hardware.
+
+<code>spec</code> will be filled with the sample rate, sample format, and
+channel count. All other values in the structure are filled with 0. When
+the supported struct members are 0, SDL was unable to get the property from
+the backend.
+
+== Related Functions ==
+
+:[[SDL_GetNumAudioDevices]]
+
+
+

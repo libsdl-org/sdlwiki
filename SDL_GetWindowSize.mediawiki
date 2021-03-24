@@ -1,16 +1,16 @@
-
 = SDL_GetWindowSize =
-Use this function to get the size of a window's client area.
 
+Get the size of a window's client area.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GetWindowSize(SDL_Window* window,
-                       int*        w,
-                       int*        h)
+
+<syntaxhighlight lang='c'>
+void SDL_GetWindowSize(SDL_Window * window, int *w,
+                       int *h);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query the width and height from
@@ -23,14 +23,23 @@ void SDL_GetWindowSize(SDL_Window* window,
 |}
 
 == Remarks ==
-NULL can safely be passed as the '''w''' or '''h''' parameter if the width or height value is not desired.
 
-The window size in screen coordinates may differ from the size in pixels, if the window was created with SDL_WINDOW_ALLOW_HIGHDPI on a platform with high-dpi support (e.g. iOS or OS X). Use [[SDL_GL_GetDrawableSize]](), [[SDL_Vulkan_GetDrawableSize]](), or [[SDL_GetRendererOutputSize]]() to get the real client area size in pixels.
+NULL can safely be passed as the <code>w</code> or <code>h</code>
+parameter if the width or height value is not desired.
+
+The window size in screen coordinates may differ from the size in pixels,
+if the window was created with <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on
+a platform with high-dpi support (e.g. iOS or macOS). Use
+[[SDL_GL_GetDrawableSize]](), [[SDL_Vulkan_GetDrawableSize]](), or
+[[SDL_GetRendererOutputSize]]() to get the real client area size in pixels.
 
 == Related Functions ==
+
 :[[SDL_GL_GetDrawableSize]]
 :[[SDL_Vulkan_GetDrawableSize]]
 :[[SDL_SetWindowSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

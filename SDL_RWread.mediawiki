@@ -1,17 +1,17 @@
-
 = SDL_RWread =
-Use this function to read from a data source.
 
+Read from a data source.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-size_t SDL_RWread(struct SDL_RWops* context,
-                  void*             ptr,
-                  size_t            size,
-                  size_t            maxnum)
+
+<syntaxhighlight lang='c'>
+size_t SDL_RWread(SDL_RWops *context,
+                  void *ptr, size_t size,
+                  size_t maxnum);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''context'''
 |a pointer to an [[SDL_RWops]] structure
@@ -27,9 +27,26 @@ size_t SDL_RWread(struct SDL_RWops* context,
 |}
 
 == Return Value ==
-Returns the number of objects read, or 0 at error or end of file; call [[SDL_GetError]]() for more information.
+
+Returns the number of objects read, or 0 at error or end of file; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+This function reads up to <code>maxnum</code> objects each of size
+<code>size</code> from the data source to the area pointed at by
+<code>ptr</code>. This function may read less objects than requested. It
+will return zero when there has been an error or the data stream is
+completely read.
+
+[[SDL_RWread]]() is actually a function wrapper that calls the
+[[SDL_RWops]]'s <code>read</code> method appropriately, to simplify
+application development.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_RWops *rw = SDL_RWFromFile("test.bin","r");
 if (rw != NULL) {
@@ -66,26 +83,9 @@ char* file_read(const char* filename) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function reads up to '''maxnum''' objects each of size '''size''' from the data source to the area pointed at by '''ptr'''. This function may read less objects than requested. It will return zero when there has been an error or the data stream is completely read.
 
-SDL_RWread() is actually a macro that calls the [[SDL_RWops]]'s '''read''' method appropriately, to simplify application development.
-
-'''More Examples'''
-```#! highlight cpp
-Uint32 buffer[10];
-SDL_RWread(rwop, buffer, sizeof(Uint32), 10);
-```
-This will read 40 bytes of data, and put it into 'buffer', which is intended to hold 32-bit integers. Each Uint32 is 4 bytes, or 32-bits.
-
-
-
-```#! highlight cpp
-Uint64 buffer[10];
-SDL_RWread(rwop, buffer, sizeof(Uint64), 10);
-```
-This will read 80 bytes of data, and place them into 'buffer', which is now designed for 64-bit integers (Uint64 values). Each Uint64 (long) is 8 bytes, and we are reading 10 of them (as shown by buffer[10] when we make it).
 == Related Functions ==
+
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
@@ -96,3 +96,5 @@ This will read 80 bytes of data, and place them into 'buffer', which is now desi
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+

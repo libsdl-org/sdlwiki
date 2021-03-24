@@ -1,17 +1,16 @@
-
 = SDL_SetTextureColorMod =
-Use this function to set an additional color value multiplied into render copy operations.
 
+Set an additional color value multiplied into render copy operations.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetTextureColorMod(SDL_Texture* texture,
-                           Uint8        r,
-                           Uint8        g,
-                           Uint8        b)
+
+<syntaxhighlight lang='c'>
+int SDL_SetTextureColorMod(SDL_Texture * texture,
+                           Uint8 r, Uint8 g, Uint8 b);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''texture'''
 |the texture to update
@@ -27,9 +26,25 @@ int SDL_SetTextureColorMod(SDL_Texture* texture,
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+When this texture is rendered, during the copy operation each source color
+channel is modulated by the appropriate color value according to the
+following formula:
+
+<code>srcC = srcC * (color / 255)</code>
+
+Color modulation is not always supported by the renderer; it will return -1
+if color modulation is not supported.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 ...
 SDL_Texture* pTexture = SDL_CreateTextureFromSurface( renderer, loadedSurface );
@@ -37,15 +52,13 @@ SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 ...
 </syntaxhighlight>
 
-== Remarks ==
-When this texture is rendered, during the copy operation each source color channel is modulated by the appropriate color value according to the following formula:
- <code>srcC = srcC * (color / 255)</code>
-
-Color modulation is not always supported by the renderer; it will return -1 if color modulation is not supported.
 
 == Related Functions ==
+
 :[[SDL_GetTextureColorMod]]
 :[[SDL_SetTextureAlphaMod]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

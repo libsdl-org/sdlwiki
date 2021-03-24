@@ -1,29 +1,35 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_StartTextInput =
-Use this function to start accepting Unicode text input events.
 
+Start accepting Unicode text input events.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_StartTextInput(void)
+
+<syntaxhighlight lang='c'>
+void SDL_StartTextInput(void);
 </syntaxhighlight>
 
 == Remarks ==
 
-This function will start accepting Unicode text input events in the focused SDL window, and start emitting [[SDL_TextInputEvent|SDL_TEXTINPUT]] and [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.
-Please use this function in pair with [[SDL_StopTextInput]]().
+This function will start accepting Unicode text input events in the
+focused SDL window, and start emitting [[SDL_TextInputEvent]]
+([[SDL_TEXTINPUT]]) and [[SDL_TextEditingEvent]] ([[SDL_TEXTEDITING]])
+events. Please use this function in pair with [[SDL_StopTextInput]]().
 
 On some platforms using this function activates the screen keyboard.
 
-There is a [[Tutorials/TextInput|tutorial]].
-
 == Related Functions ==
+
 :[[SDL_SetTextInputRect]]
 :[[SDL_StopTextInput]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]]
+
+

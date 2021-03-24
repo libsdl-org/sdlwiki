@@ -1,22 +1,44 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_AndroidGetJNIEnv =
-Use this function to retrieve the Java native interface object (JNIEnv) of the current thread on Android builds.
 
-
+Get the Android Java Native Interface Environment of the current thread.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_AndroidGetJNIEnv()
+
+<syntaxhighlight lang='c'>
+void * SDL_AndroidGetJNIEnv(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns a pointer to Java native interface object (JNIEnv) to which the current thread is attached, or 0 on error.
+
+Returns a pointer to Java native interface object (JNIEnv) to which the
+current thread is attached, or 0 on error.
+
+
+
+== Remarks ==
+
+This is the JNIEnv one needs to access the Java virtual machine from
+native code, and is needed for many Android APIs to be usable from C.
+
+The prototype of the function in SDL's code actually declare a void* return
+type, even if the implementation returns a pointer to a JNIEnv. The
+rationale being that the SDL headers can avoid including jni.h.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 #include <jni.h>
@@ -53,14 +75,12 @@ void showHome(void)
 }
 </syntaxhighlight>
 
-== Remarks ==
-The prototype of the function in SDL's code actually declare a void* return type, even if the implementation returns a pointer to a JNIEnv. The rationale being that it allows not to include jni.h in the headers of the SDL.
-
-== Version ==
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
+
 :[[SDL_AndroidGetActivity]]
 
 ----
 [[CategoryAPI]], [[CategorySystem]]
+
+

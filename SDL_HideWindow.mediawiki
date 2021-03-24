@@ -1,24 +1,25 @@
-
 = SDL_HideWindow =
-Use this function to hide a window.
 
+Hide a window.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_HideWindow(SDL_Window* window)
+
+<syntaxhighlight lang='c'>
+void SDL_HideWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to hide
 |}
 
-== Remarks ==
-''You can add useful comments here''
-
 == Related Functions ==
+
 :[[SDL_ShowWindow]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
+
+

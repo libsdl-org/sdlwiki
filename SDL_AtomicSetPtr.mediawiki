@@ -1,15 +1,15 @@
-
 = SDL_AtomicSetPtr =
-Use this function to set a pointer to a value atomically.
 
+Set a pointer to a value atomically.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void* SDL_AtomicSetPtr(void** a,
-                       void*  v)
+
+<syntaxhighlight lang='c'>
+void* SDL_AtomicSetPtr(void **a, void* v);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''a'''
 |a pointer to a pointer
@@ -19,14 +19,22 @@ void* SDL_AtomicSetPtr(void** a,
 |}
 
 == Return Value ==
+
 Returns the previous value of the pointer.
 
+
+
 == Remarks ==
-''You can add useful comments here''
+
+'''''*Note: If you don't know what this function is for, you shouldn't use
+it!'''''
 
 == Related Functions ==
+
 :[[SDL_AtomicCASPtr]]
 :[[SDL_AtomicGetPtr]]
 
 ----
 [[CategoryAPI]], [[CategoryAtomic]]
+
+

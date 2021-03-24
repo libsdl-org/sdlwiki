@@ -1,31 +1,46 @@
+
 == Draft ==
+
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 = SDL_JoystickNumBalls =
-Use this function to get the number of trackballs on a joystick.
 
+Get the number of trackballs on a joystick.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_JoystickNumBalls(SDL_Joystick* joystick)
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickNumBalls(SDL_Joystick *joystick);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''joystick'''
-|an SDL_Joystick structure containing joystick information
+|an [[SDL_Joystick]] structure containing joystick information
 |}
 
 == Return Value ==
-Returns the number of trackballs on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns the number of trackballs on success or a negative error code on
+failure; call [[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-Joystick trackballs have only relative motion events associated with them and their state cannot be polled.
+
+Joystick trackballs have only relative motion events associated with them
+and their state cannot be polled.
+
+Most joysticks do not have trackballs.
 
 == Related Functions ==
+
 :[[SDL_JoystickGetBall]]
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]]
+
+

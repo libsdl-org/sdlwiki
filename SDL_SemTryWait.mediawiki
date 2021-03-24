@@ -1,23 +1,37 @@
-
 = SDL_SemTryWait =
-Use this function to see if a semaphore has a positive value and decrement it if it does.
 
+See if a semaphore has a positive value and decrement it if it does.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SemTryWait(SDL_sem* sem)
+
+<syntaxhighlight lang='c'>
+int SDL_SemTryWait(SDL_sem * sem);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''sem'''
 |the semaphore to wait on
 |}
 
 == Return Value ==
-Returns 0 if the wait succeeds, SDL_MUTEX_TIMEDOUT if the wait would block, or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 if the wait succeeds, `SDL_MUTEX_TIMEDOUT` if the wait would
+block, or a negative error code on failure; call [[SDL_GetError]]() for
+more information.
+
+
+
+== Remarks ==
+
+This function checks to see if the semaphore pointed to by
+<code>sem</code> has a positive value and atomically decrements the
+semaphore value if it does. If the semaphore doesn't have a positive value,
+the function immediately returns [[SDL_MUTEX_TIMEDOUT]].
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_atomic_t done;
 SDL_sem *sem;
@@ -47,10 +61,9 @@ wait_for_threads();
 SDL_DestroySemaphore(sem);
 </syntaxhighlight>
 
-== Remarks ==
-This function checks to see if the semaphore pointed to by '''sem''' has a positive value and atomically decrements the semaphore value if it does.  If the semaphore doesn't have a positive value, the function immediately returns SDL_MUTEX_TIMEDOUT.
 
 == Related Functions ==
+
 :[[SDL_CreateSemaphore]]
 :[[SDL_DestroySemaphore]]
 :[[SDL_SemPost]]
@@ -60,3 +73,5 @@ This function checks to see if the semaphore pointed to by '''sem''' has a posit
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
+
+

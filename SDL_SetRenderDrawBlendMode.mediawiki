@@ -1,30 +1,37 @@
-
 = SDL_SetRenderDrawBlendMode =
-Use this function to set the blend mode used for drawing operations (Fill and Line).
 
+Set the blend mode used for drawing operations (Fill and Line).
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SetRenderDrawBlendMode(SDL_Renderer* renderer,
-                               SDL_BlendMode blendMode)
+
+<syntaxhighlight lang='c'>
+int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
+                               SDL_BlendMode blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''renderer'''
 |the rendering context
 |-
 |'''blendMode'''
-|the [[SDL_BlendMode]] to use for blending; see [[#blendMode|Remarks]] for details
+|the [[SDL_BlendMode]] to use for blending
 |}
 
 == Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
 
 == Remarks ==
-<span id="blendMode"></span> '''blendMode''' may be one of the following: <<Include(SDL_BlendMode, , , from="== Values ==", to="== Code Examples ==")>>
+
+If the blend mode is not supported, the closest supported mode is chosen.
 
 == Related Functions ==
+
 :[[SDL_GetRenderDrawBlendMode]]
 :[[SDL_RenderDrawLine]]
 :[[SDL_RenderDrawLines]]
@@ -35,6 +42,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
 
-
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
+

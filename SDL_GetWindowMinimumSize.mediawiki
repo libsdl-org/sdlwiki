@@ -1,22 +1,16 @@
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GetWindowMinimumSize =
-Use this function to get the minimum size of a window's client area.
 
-
-
+Get the minimum size of a window's client area.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_GetWindowMinimumSize(SDL_Window* window,
-                              int*        w,
-                              int*        h)
+
+<syntaxhighlight lang='c'>
+void SDL_GetWindowMinimumSize(SDL_Window * window,
+                              int *w, int *h);
 </syntaxhighlight>
 
-
 == Function Parameters ==
+
 {|
 |'''window'''
 |the window to query
@@ -28,16 +22,13 @@ void SDL_GetWindowMinimumSize(SDL_Window* window,
 |a pointer filled in with the minimum height of the window, may be NULL
 |}
 
-
-
-== Remarks ==
-''You can add useful comments here''
-
-
 == Related Functions ==
+
 :[[SDL_GetWindowMaximumSize]]
 :[[SDL_SetWindowMinimumSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+
