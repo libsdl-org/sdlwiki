@@ -18,5 +18,9 @@ This category contains functions for clipboard handling.
 <<FullSearchCached(category:CategoryClipboard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_GetClipboardText]]
+* [[SDL_HasClipboardText]]
+* [[SDL_SetClipboardText]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

@@ -22,5 +22,8 @@ This category contains additional types, functions, enums and defines for SDL. T
 == Functions ==
 <<FullSearchCached(category:CategoryStandard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-[[CategoryCategory]], [[CategoryDraft]]
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_acos]]
+* [[SDL_bool]]
+<!-- END CATEGORY LIST -->
+----\n[[CategoryCategory]], [[CategoryDraft]]

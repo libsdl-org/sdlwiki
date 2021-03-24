@@ -20,5 +20,30 @@ This category contains functions for handling inputs from joysticks.
 
 <!-- # You may refresh cache using "?action=refresh" in URL or "More Actions -> Delete Cache" in menu. -->
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_JoystickClose]]
+* [[SDL_JoystickCurrentPowerLevel]]
+* [[SDL_JoystickEventState]]
+* [[SDL_JoystickFromInstanceID]]
+* [[SDL_JoystickGetAttached]]
+* [[SDL_JoystickGetAxis]]
+* [[SDL_JoystickGetBall]]
+* [[SDL_JoystickGetButton]]
+* [[SDL_JoystickGetDeviceGUID]]
+* [[SDL_JoystickGetGUID]]
+* [[SDL_JoystickGetGUIDFromString]]
+* [[SDL_JoystickGetGUIDString]]
+* [[SDL_JoystickGetHat]]
+* [[SDL_JoystickInstanceID]]
+* [[SDL_JoystickName]]
+* [[SDL_JoystickNameForIndex]]
+* [[SDL_JoystickNumAxes]]
+* [[SDL_JoystickNumBalls]]
+* [[SDL_JoystickNumButtons]]
+* [[SDL_JoystickNumHats]]
+* [[SDL_JoystickOpen]]
+* [[SDL_JoystickPowerLevel]]
+* [[SDL_JoystickUpdate]]
+* [[SDL_NumJoysticks]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

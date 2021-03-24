@@ -11,5 +11,7 @@ This category contains functions for bit-level operations ("bit-twiddling").
 == Functions ==
 <<FullSearchCached(category:CategoryBits -CategoryEnum -CategoryStruct)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_MostSignificantBitIndex32]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

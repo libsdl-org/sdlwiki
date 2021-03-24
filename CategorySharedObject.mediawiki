@@ -18,5 +18,9 @@ This category contains functions for handling shared objects.
 == Functions ==
 <<FullSearchCached(category:CategorySharedObject -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_LoadFunction]]
+* [[SDL_LoadObject]]
+* [[SDL_UnloadObject]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

@@ -16,5 +16,24 @@ This category contains functions for handling pixel formats and palettes.
 == Functions ==
 <<FullSearchCached(category:CategoryPixels -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_AllocFormat]]
+* [[SDL_AllocPalette]]
+* [[SDL_CalculateGammaRamp]]
+* [[SDL_Color]]
+* [[SDL_FreeFormat]]
+* [[SDL_FreePalette]]
+* [[SDL_GetPixelFormatName]]
+* [[SDL_GetRGB]]
+* [[SDL_GetRGBA]]
+* [[SDL_MapRGB]]
+* [[SDL_MapRGBA]]
+* [[SDL_MasksToPixelFormatEnum]]
+* [[SDL_Palette]]
+* [[SDL_PixelFormat]]
+* [[SDL_PixelFormatEnum]]
+* [[SDL_PixelFormatEnumToMasks]]
+* [[SDL_SetPaletteColors]]
+* [[SDL_SetPixelFormatPalette]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

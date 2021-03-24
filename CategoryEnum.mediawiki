@@ -11,5 +11,45 @@ This category contains all the (public) enumerations for SDL.
 
 <<FullSearchCached(category:CategoryEnum -title:SDLEnumTemplate -title:SGEnumerations)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_AssertState]]
+* [[SDL_AudioFormat]]
+* [[SDL_AudioStatus]]
+* [[SDL_BlendFactor]]
+* [[SDL_BlendMode]]
+* [[SDL_BlendOperation]]
+* [[SDL_bool]]
+* [[SDL_EventType]]
+* [[SDL_GameControllerAxis]]
+* [[SDL_GameControllerBindType]]
+* [[SDL_GameControllerButton]]
+* [[SDL_GLattr]]
+* [[SDL_GLcontextFlag]]
+* [[SDL_GLprofile]]
+* [[SDL_HintPriority]]
+* [[SDL_HitTestResult]]
+* [[SDL_JoystickPowerLevel]]
+* [[SDL_Keycode]]
+* [[SDL_Keymod]]
+* [[SDL_LOG_CATEGORY]]
+* [[SDL_LogPriority]]
+* [[SDL_MessageBoxButtonFlags]]
+* [[SDL_MessageBoxColorType]]
+* [[SDL_MessageBoxFlags]]
+* [[SDL_PixelFormatEnum]]
+* [[SDL_PowerState]]
+* [[SDL_RendererFlags]]
+* [[SDL_RendererFlip]]
+* [[SDL_Scancode]]
+* [[SDL_SensorType]]
+* [[SDL_SYSWM_TYPE]]
+* [[SDL_TextureAccess]]
+* [[SDL_TextureModulate]]
+* [[SDL_ThreadPriority]]
+* [[SDL_WindowEventID]]
+* [[SDL_WindowFlags]]
+* [[SDL_WinRT_Path]]
+* [[SDLEnumTemplate]]
+* [[SGEnumerations]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

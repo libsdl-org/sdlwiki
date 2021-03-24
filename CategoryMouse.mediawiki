@@ -29,5 +29,23 @@ Please note that this ONLY discusses "mice" with the notion of the desktop GUI. 
 == Functions ==
 <<FullSearchCached(category:CategoryMouse -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_CaptureMouse]]
+* [[SDL_CreateColorCursor]]
+* [[SDL_CreateCursor]]
+* [[SDL_CreateSystemCursor]]
+* [[SDL_FreeCursor]]
+* [[SDL_GetCursor]]
+* [[SDL_GetDefaultCursor]]
+* [[SDL_GetGlobalMouseState]]
+* [[SDL_GetMouseFocus]]
+* [[SDL_GetMouseState]]
+* [[SDL_GetRelativeMouseMode]]
+* [[SDL_GetRelativeMouseState]]
+* [[SDL_SetCursor]]
+* [[SDL_SetRelativeMouseMode]]
+* [[SDL_ShowCursor]]
+* [[SDL_WarpMouseGlobal]]
+* [[SDL_WarpMouseInWindow]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

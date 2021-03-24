@@ -32,5 +32,23 @@ Messages longer than the maximum size (4096 bytes) will be truncated.
 == Functions ==
 <<FullSearchCached(category:CategoryLog -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_Log]]
+* [[SDL_LOG_CATEGORY]]
+* [[SDL_LogCritical]]
+* [[SDL_LogDebug]]
+* [[SDL_LogError]]
+* [[SDL_LogGetOutputFunction]]
+* [[SDL_LogGetPriority]]
+* [[SDL_LogInfo]]
+* [[SDL_LogMessage]]
+* [[SDL_LogMessageV]]
+* [[SDL_LogPriority]]
+* [[SDL_LogResetPriorities]]
+* [[SDL_LogSetAllPriority]]
+* [[SDL_LogSetOutputFunction]]
+* [[SDL_LogSetPriority]]
+* [[SDL_LogVerbose]]
+* [[SDL_LogWarn]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

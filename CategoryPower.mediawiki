@@ -18,5 +18,8 @@ This category contains functions for handling SDL power management routines.
 == Functions ==
 <<FullSearchCached(category:CategoryPower -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_GetPowerInfo]]
+* [[SDL_PowerState]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

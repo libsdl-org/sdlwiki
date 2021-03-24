@@ -18,5 +18,13 @@ This category contains functions for handling the SDL time management routines.
 == Functions ==
 <<FullSearchCached(category:CategoryTimer -CategoryEnum -CategoryStruc -title:SGFunctionst)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_AddTimer]]
+* [[SDL_Delay]]
+* [[SDL_GetPerformanceCounter]]
+* [[SDL_GetPerformanceFrequency]]
+* [[SDL_GetTicks]]
+* [[SDL_RemoveTimer]]
+* [[SDL_TICKS_PASSED]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

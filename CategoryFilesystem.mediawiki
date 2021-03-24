@@ -22,5 +22,8 @@ This category contains functions for getting commonly used paths such as the app
 == Functions ==
 <<FullSearchCached(category:CategoryFilesystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_GetBasePath]]
+* [[SDL_GetPrefPath]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory

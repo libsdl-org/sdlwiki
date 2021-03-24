@@ -16,5 +16,20 @@ This category contains functions for advanced, platform-specific functionality.
 == Functions ==
 <<FullSearchCached(category:CategorySystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
-----
-CategoryCategory
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_AndroidGetActivity]]
+* [[SDL_AndroidGetExternalStoragePath]]
+* [[SDL_AndroidGetExternalStorageState]]
+* [[SDL_AndroidGetInternalStoragePath]]
+* [[SDL_AndroidGetJNIEnv]]
+* [[SDL_Direct3D9GetAdapterIndex]]
+* [[SDL_DXGIGetOutputInfo]]
+* [[SDL_iPhoneSetAnimationCallback]]
+* [[SDL_iPhoneSetEventPump]]
+* [[SDL_RenderGetD3D9Device]]
+* [[SDL_SetWindowsMessageHook]]
+* [[SDL_WinRT_Path]]
+* [[SDL_WinRTGetFSPathUNICODE]]
+* [[SDL_WinRTGetFSPathUTF8]]
+<!-- END CATEGORY LIST -->
+----\nCategoryCategory
