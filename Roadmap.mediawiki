@@ -152,6 +152,6 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 * <span style="color: gray;">Create an API for accelerometer data</span>
 * <span style="color: gray;">Create extended set of (negative) error codes and have the API functions document and return them</span>
 
-----
+=== Other details ===
 Ryan has more information on the SDL 2.0 changes that you can find here: <br/>
 http://icculus.org/cgi-bin/finger/finger.pl?user=icculus&date=2007-10-07&section=sdl13
