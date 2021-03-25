@@ -12,7 +12,7 @@ void SDL_DetachThread(SDL_Thread * thread);
 
 {|
 |'''thread'''
-|the [[SDL_Thread]] pointer that was returned from the [[[[SDL_CreateThread]]]]() call that started this thread
+|the [[SDL_Thread]] pointer that was returned from the [[SDL_CreateThread]]() call that started this thread
 |}
 
 == Remarks ==

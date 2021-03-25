@@ -21,7 +21,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
 |an [[SDL_AudioCVT]] structure filled in with audio conversion information
 |-
 |'''src_format'''
-|the source format of the audio data; for more info see [[[[SDL_AudioFormat]]]]
+|the source format of the audio data; for more info see [[SDL_AudioFormat]]
 |-
 |'''src_channels'''
 |the number of channels in the source
@@ -30,7 +30,7 @@ int SDL_BuildAudioCVT(SDL_AudioCVT * cvt,
 |the frequency (sample-frames-per-second) of the source
 |-
 |'''dst_format'''
-|the destination format of the audio data; for more info see [[[[SDL_AudioFormat]]]]
+|the destination format of the audio data; for more info see [[SDL_AudioFormat]]
 |-
 |'''dst_channels'''
 |the number of channels in the destination

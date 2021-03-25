@@ -24,7 +24,7 @@ int SDL_HapticRunEffect(SDL_Haptic * haptic,
 |the ID of the haptic effect to run
 |-
 |'''iterations'''
-|the number of iterations to run the effect; use <code>[[[[SDL_HAPTIC_INFINITY]]]]</code> to repeat forever
+|the number of iterations to run the effect; use <code>[[SDL_HAPTIC_INFINITY]]</code> to repeat forever
 |}
 
 == Return Value ==

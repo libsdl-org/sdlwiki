@@ -14,7 +14,7 @@ int SDL_LockTextureToSurface(SDL_Texture *texture,
 
 {|
 |'''texture'''
-|the texture to lock for access, which was created with <code>[[[[SDL_TEXTUREACCESS_STREAMING]]]]</code>
+|the texture to lock for access, which was created with <code>[[SDL_TEXTUREACCESS_STREAMING]]</code>
 |-
 |'''rect'''
 |a pointer to the rectangle to lock for access. If the rect is NULL, the entire texture will be locked

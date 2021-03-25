@@ -16,10 +16,10 @@ void SDL_SetWindowPosition(SDL_Window * window,
 |the window to reposition
 |-
 |'''x'''
-|the x coordinate of the window in screen coordinates, or <code>[[[[SDL_WINDOWPOS_CENTERED]]]]</code> or <code>[[[[SDL_WINDOWPOS_UNDEFINED]]]]</code>
+|the x coordinate of the window in screen coordinates, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |-
 |'''y'''
-|the y coordinate of the window in screen coordinates, or <code>[[[[SDL_WINDOWPOS_CENTERED]]]]</code> or <code>[[[[SDL_WINDOWPOS_UNDEFINED]]]]</code>
+|the y coordinate of the window in screen coordinates, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |}
 
 == Remarks ==

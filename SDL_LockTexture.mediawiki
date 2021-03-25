@@ -14,7 +14,7 @@ int SDL_LockTexture(SDL_Texture * texture,
 
 {|
 |'''texture'''
-|the texture to lock for access, which was created with <code>[[[[SDL_TEXTUREACCESS_STREAMING]]]]</code>
+|the texture to lock for access, which was created with <code>[[SDL_TEXTUREACCESS_STREAMING]]</code>
 |-
 |'''rect'''
 |an [[SDL_Rect]] structure representing the area to lock for access; NULL to lock the entire texture

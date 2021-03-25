@@ -26,7 +26,7 @@ int SDL_GetRenderDrawColor(SDL_Renderer * renderer,
 |a pointer filled in with the blue value used to draw on the rendering target
 |-
 |'''a'''
-|a pointer filled in with the alpha value used to draw on the rendering target; usually <code>[[[[SDL_ALPHA_OPAQUE]]]]</code> (255)
+|a pointer filled in with the alpha value used to draw on the rendering target; usually <code>[[SDL_ALPHA_OPAQUE]]</code> (255)
 |}
 
 == Return Value ==

@@ -17,10 +17,10 @@ SDL_Window * SDL_CreateWindow(const char *title,
 |the title of the window, in UTF-8 encoding
 |-
 |'''x'''
-|the x position of the window, <code>[[SDL_WINDOWPOS_CENTERED]]</code>, or <code>[[[[SDL_WINDOWPOS_UNDEFINED]]]]</code>
+|the x position of the window, <code>[[SDL_WINDOWPOS_CENTERED]]</code>, or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |-
 |'''y'''
-|the y position of the window, <code>[[SDL_WINDOWPOS_CENTERED]]</code>, or <code>[[[[SDL_WINDOWPOS_UNDEFINED]]]]</code>
+|the y position of the window, <code>[[SDL_WINDOWPOS_CENTERED]]</code>, or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |-
 |'''w'''
 |the width of the window, in screen coordinates

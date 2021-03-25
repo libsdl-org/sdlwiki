@@ -23,6 +23,8 @@ int SDL_RenderDrawRectF(SDL_Renderer * renderer,
 
 Return 0 on success, or -1 on error
 
+
 ----
 [[CategoryAPI]], [[CategoryRender]]
+
 

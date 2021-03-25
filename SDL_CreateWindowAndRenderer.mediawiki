@@ -20,7 +20,7 @@ int SDL_CreateWindowAndRenderer(
 |the height of the window
 |-
 |'''window_flags'''
-|the flags used to create the window (see [[[[SDL_CreateWindow]]]]())
+|the flags used to create the window (see [[SDL_CreateWindow]]())
 |-
 |'''window'''
 |a pointer filled with the window, or NULL on error

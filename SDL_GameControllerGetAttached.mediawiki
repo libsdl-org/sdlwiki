@@ -12,7 +12,7 @@ SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller);
 
 {|
 |'''gamecontroller'''
-|a game controller identifier previously returned by [[[[SDL_GameControllerOpen]]]]()
+|a game controller identifier previously returned by [[SDL_GameControllerOpen]]()
 |}
 
 == Return Value ==

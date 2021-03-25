@@ -12,7 +12,7 @@ int SDL_JoystickDetachVirtual(int device_index);
 
 {|
 |'''device_index'''
-|a value previously returned from [[[[SDL_JoystickAttachVirtual]]]]()
+|a value previously returned from [[SDL_JoystickAttachVirtual]]()
 |}
 
 == Return Value ==

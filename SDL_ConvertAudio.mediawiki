@@ -12,7 +12,7 @@ int SDL_ConvertAudio(SDL_AudioCVT * cvt);
 
 {|
 |'''cvt'''
-|an [[SDL_AudioCVT]] structure that was previously set up by [[[[SDL_BuildAudioCVT]]]]().
+|an [[SDL_AudioCVT]] structure that was previously set up by [[SDL_BuildAudioCVT]]().
 |}
 
 == Return Value ==

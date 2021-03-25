@@ -13,7 +13,7 @@ int SDL_OpenAudio(SDL_AudioSpec * desired,
 
 {|
 |'''desired'''
-|an [[SDL_AudioSpec]] structure representing the desired output format. Please refer to the [[[[SDL_OpenAudioDevice]]]] documentation for details on how to prepare this structure.
+|an [[SDL_AudioSpec]] structure representing the desired output format. Please refer to the [[SDL_OpenAudioDevice]] documentation for details on how to prepare this structure.
 |-
 |'''obtained'''
 |an [[SDL_AudioSpec]] structure filled in with the actual parameters, or NULL.

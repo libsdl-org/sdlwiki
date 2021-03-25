@@ -19,7 +19,7 @@ const char* SDL_GameControllerNameForIndex(int joystick_index);
 
 {|
 |'''joystick_index'''
-|the device_index of a device, from zero to [[[[SDL_NumJoysticks]]]]()-1
+|the device_index of a device, from zero to [[SDL_NumJoysticks]]()-1
 |}
 
 == Return Value ==

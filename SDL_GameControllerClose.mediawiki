@@ -20,7 +20,7 @@ void SDL_GameControllerClose(SDL_GameController *gamecontroller);
 
 {|
 |'''gamecontroller'''
-|a game controller identifier previously returned by [[[[SDL_GameControllerOpen]]]]()
+|a game controller identifier previously returned by [[SDL_GameControllerOpen]]()
 |}
 
 == Code Examples ==

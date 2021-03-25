@@ -16,7 +16,7 @@ int SDL_ShowCursor(int toggle);
 
 {|
 |'''toggle'''
-|<code>[[SDL_ENABLE]]</code> to show the cursor, <code>[[SDL_DISABLE]]</code> to hide it, <code>[[[[SDL_QUERY]]]]</code> to query the current state without changing it.
+|<code>[[SDL_ENABLE]]</code> to show the cursor, <code>[[SDL_DISABLE]]</code> to hide it, <code>[[SDL_QUERY]]</code> to query the current state without changing it.
 |}
 
 == Return Value ==

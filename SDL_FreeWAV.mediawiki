@@ -12,7 +12,7 @@ void SDL_FreeWAV(Uint8 * audio_buf);
 
 {|
 |'''audio_buf'''
-|a pointer to the buffer created by [[SDL_LoadWAV]]() or [[[[SDL_LoadWAV_RW]]]]()
+|a pointer to the buffer created by [[SDL_LoadWAV]]() or [[SDL_LoadWAV_RW]]()
 |}
 
 == Remarks ==

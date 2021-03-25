@@ -12,10 +12,10 @@ SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 
 {|
 |'''minType'''
-|the low end of event type to be queried, inclusive; see [[[[SDL_EventType]]]] for details
+|the low end of event type to be queried, inclusive; see [[SDL_EventType]] for details
 |-
 |'''maxType'''
-|the high end of event type to be queried, inclusive; see [[[[SDL_EventType]]]] for details
+|the high end of event type to be queried, inclusive; see [[SDL_EventType]] for details
 |}
 
 == Return Value ==

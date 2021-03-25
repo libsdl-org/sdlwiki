@@ -14,7 +14,7 @@ int SDL_GetAudioDeviceSpec(int index,
 
 {|
 |'''index'''
-|the index of the audio device; valid values range from 0 to [[[[SDL_GetNumAudioDevices]]]]() - 1
+|the index of the audio device; valid values range from 0 to [[SDL_GetNumAudioDevices]]() - 1
 |-
 |'''iscapture'''
 |non-zero to query the list of recording devices, zero to query the list of output devices.
