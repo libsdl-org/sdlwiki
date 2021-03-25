@@ -24,7 +24,7 @@ held.
 
 == Remarks ==
 
-'''''*Please note that spinlocks are dangerous if you don't know what
+'''''Please note that spinlocks are dangerous if you don't know what
 you're doing. Please be careful using any sort of spinlock!'''''
 
 == Related Functions ==

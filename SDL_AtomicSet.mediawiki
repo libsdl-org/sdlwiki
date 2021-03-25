@@ -28,7 +28,7 @@ Returns the previous value of the atomic variable.
 
 This function also acts as a full memory barrier.
 
-'''''*Note: If you don't know what this function is for, you shouldn't use
+'''''Note: If you don't know what this function is for, you shouldn't use
 it!'''''
 
 == Related Functions ==

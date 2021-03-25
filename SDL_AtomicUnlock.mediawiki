@@ -19,8 +19,8 @@ void SDL_AtomicUnlock(SDL_SpinLock *lock);
 
 Always returns immediately.
 
-'''''*Please note that spinlocks are dangerous if you don't know what
-you're doing. Please be careful using any sort of spinlock!'''''
+'''''Please note that spinlocks are dangerous if you don't know what you're
+doing. Please be careful using any sort of spinlock!'''''
 
 == Version ==
 

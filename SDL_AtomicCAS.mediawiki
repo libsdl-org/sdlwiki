@@ -29,7 +29,7 @@ Returns SDL_TRUE if the atomic variable was set, SDL_FALSE otherwise.
 
 == Remarks ==
 
-'''''*Note: If you don't know what this function is for, you shouldn't use
+'''''Note: If you don't know what this function is for, you shouldn't use
 it!'''''
 
 == Version ==
