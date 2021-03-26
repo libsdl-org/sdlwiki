@@ -19,7 +19,7 @@ SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window *window,
 |'''pCount'''
 |A pointer to an unsigned int corresponding to the number of extensions to be returned
 |-
-|'''names'''
+|'''pNames'''
 |NULL or a pointer to an array to be filled with required Vulkan instance extensions
 |}
 

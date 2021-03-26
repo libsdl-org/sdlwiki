@@ -8,6 +8,13 @@ Get the orientation of a display.
 SDL_DisplayOrientation SDL_GetDisplayOrientation(int displayIndex);
 </syntaxhighlight>
 
+== Function Parameters ==
+
+{|
+|'''displayIndex'''
+|the index of the display to query
+|}
+
 == Return Value ==
 
 Returns The SDL_DisplayOrientation enum value of the display, or
