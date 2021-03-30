@@ -1,27 +1,27 @@
 = SDL FAQs =
 
 {|
-|<style="border:0">[[FAQGeneral|General]] 
-|<style="border:0">General questions about SDL 
+|[[FAQGeneral|General]] 
+|General questions about SDL 
 |-
-|<style="border:0">[[FAQUsingSDL|Using SDL]] 
-|<style="border:0">Questions for people using SDL applications 
+|[[FAQUsingSDL|Using SDL]] 
+|Questions for people using SDL applications 
 |-
-|<style="border:0">[[FAQLicensing|Licensing]] 
-|<style="border:0">Questions about licensing SDL with products 
+|[[FAQLicensing|Licensing]] 
+|Questions about licensing SDL with products 
 |-
-|<style="border:0">[[FAQDevelopment|Development]] 
-|<style="border:0">General questions about developing with SDL 
+|[[FAQDevelopment|Development]] 
+|General questions about developing with SDL 
 |-
-|<style="border:0">[[FAQLinux|Linux]] 
-|<style="border:0">Questions regarding SDL on Linux 
+|[[FAQLinux|Linux]] 
+|Questions regarding SDL on Linux 
 |-
-|<style="border:0">[[FAQWindows|Windows]] 
-|<style="border:0">Questions regarding SDL on Windows 
+|[[FAQWindows|Windows]] 
+|Questions regarding SDL on Windows 
 |-
-|<style="border:0">[[FAQMacOSX|Mac OS X]] 
-|<style="border:0">Questions regarding SDL on Mac OS X 
+|[[FAQMacOSX|Mac OS X]] 
+|Questions regarding SDL on Mac OS X 
 |-
-|<style="border:0">[[FAQiOS|iOS]] 
-|<style="border:0">Questions regarding SDL on iOS
+|[[FAQiOS|iOS]] 
+|Questions regarding SDL on iOS
 |}
