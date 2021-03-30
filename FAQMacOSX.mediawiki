@@ -21,10 +21,10 @@ Note that as long as you static link the release builds of your application, it 
 == How do I build an OpenGL application? ==
 On Mac OS X, you access the OpenGL headers like so:
 
-```
+<syntaxhighlight lang='c'>
 #include <OpenGL/gl.h>
 #include <OpenGL/glext.h>
-```
+</syntaxhighlight>
 
 The header file "SDL_opengl.h" includes these headers on all supported SDL systems.
 
