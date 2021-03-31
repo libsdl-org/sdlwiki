@@ -54,7 +54,7 @@ The [[Introduction]] page has a more extensive listing about what features SDL o
 
 The best places for information are:
 * this wiki :)
-* the tests included in SDL, in the <code>test/<code> directory ([http://hg.libsdl.org/SDL/file/default/test browse online])
+* the tests included in SDL, in the <code>test/</code> directory ([http://hg.libsdl.org/SDL/file/default/test browse online])
 * the SDL [https://discourse.libsdl.org/ forums/mailing list]
 
 
