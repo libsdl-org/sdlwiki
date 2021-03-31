@@ -1,4 +1,3 @@
-
 = Event Handling =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_events.h SDL_events.h]
@@ -7,9 +6,9 @@
 == Introduction ==
 Event handling allows your application to receive input from the user. Event handling is initialized (along with video) with a call to:
 
- ```
+<syntaxhighlight lang='c'>
 SDL_Init(SDL_INIT_VIDEO);
-```
+<syntaxhighlight>
  (''see'' [[CategoryInit|Initialization & Shutdown]] and [[SDL_Init]]() ''for details'')
 
 Internally, SDL stores all the events waiting to be handled in an event queue.  Using functions like [[SDL_PollEvent]](), [[SDL_PeepEvents]]() and [[SDL_WaitEvent]]() you can observe and handle waiting input events.
