@@ -1,4 +1,3 @@
-
 = SDL 1.2 to 2.0 Migration Guide =
 
 
@@ -55,8 +54,8 @@ The [[Introduction]] page has a more extensive listing about what features SDL o
 
 The best places for information are:
 * this wiki :)
-* the tests included in SDL, in the ```test/``` directory ([http://hg.libsdl.org/SDL/file/default/test browse online])
-* the SDL <!-- [http://lists.libsdl.org/listinfo.cgi/sdl-libsdl.org mailing list] --> [https://discourse.libsdl.org/ forums/mailing list]
+* the tests included in SDL, in the <code>test/<code> directory ([http://hg.libsdl.org/SDL/file/default/test browse online])
+* the SDL [https://discourse.libsdl.org/ forums/mailing list]
 
 
 == Moving from SDL 1.2 to 2.0 ==
@@ -159,7 +158,7 @@ SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  // make the scaled render
 SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
 </syntaxhighlight>
 
-:..and it will do the right thing for you. This is nice in that you can change the logical rendering size to achieve various effects, but the primary use is this: instead of trying to make the system work with your rendering size, we can now make your rendering size work with the system. On my 1920x1200 monitor, this app thinks it's talking to a 640x480 resolution now, but SDL is using the GPU to scale it up to use all those pixels. Note that 640x480 and 1920x1200 aren't the same aspect ratio: SDL takes care of that, too, scaling as much as possible and letterboxing the difference.
+...and it will do the right thing for you. This is nice in that you can change the logical rendering size to achieve various effects, but the primary use is this: instead of trying to make the system work with your rendering size, we can now make your rendering size work with the system. On my 1920x1200 monitor, this app thinks it's talking to a 640x480 resolution now, but SDL is using the GPU to scale it up to use all those pixels. Note that 640x480 and 1920x1200 aren't the same aspect ratio: SDL takes care of that, too, scaling as much as possible and letterboxing the difference.
 
 Now we're ready to start drawing for real.
 
@@ -238,7 +237,7 @@ The good news: the 1.2 [[SDL_Surface]] API mostly still exists. So change your s
 SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
 </syntaxhighlight>
 
-:..to this...
+...to this...
 
 <syntaxhighlight lang='c++'>
 // if all this hex scares you, check out SDL_PixelFormatEnumToMasks()!
@@ -253,7 +252,7 @@ SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
                                             640, 480);
 </syntaxhighlight>
 
-:..and continue blitting things around and tweaking pixels as before, composing your final framebuffer into this [[SDL_Surface]]. Once you're ready to get those pixels on the screen, you do this just like in our first scenario:
+...and continue blitting things around and tweaking pixels as before, composing your final framebuffer into this [[SDL_Surface]]. Once you're ready to get those pixels on the screen, you do this just like in our first scenario:
 
 <syntaxhighlight lang='c++'>
 SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
@@ -273,7 +272,7 @@ You can do some simple effects with the render API without having to get down in
 * Color alpha: [[SDL_Color]] now contains a fourth, '''alpha''' component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named <code>unused</code>). In 2.0, you should.
 * Alpha blending: use [[SDL_SetSurfaceAlphaMod]] and [[SDL_SetTextureAlphaMod]] instead of <code>SDL_SetAlpha()</code>. Alpha-blending on surfaces can be disabled via [[SDL_SetSurfaceBlendMode]]() and on textures with [[SDL_SetTextureBlendMode]]().
 * Colorkey: When calling [[SDL_SetColorKey]](), you should pass <code>SDL_TRUE</code> instead of <code>SDL_SRCCOLORKEY</code>.
-* Color modulation: Some renderers now support a global color alteration (```srcC = srcC * color```), check [[SDL_SetTextureColorMod]]() for details.
+* Color modulation: Some renderers now support a global color alteration (<code>srcC = srcC * color</code>), check [[SDL_SetTextureColorMod]]() for details.
 
 === OpenGL ===
 
@@ -327,7 +326,7 @@ In SDL2, this works slightly differently. You call...
 SDL_SetRelativeMouseMode(SDL_TRUE);
 </syntaxhighlight>
 
-:..and SDL does the rest.
+...and SDL does the rest.
 
 
 === Events ===
