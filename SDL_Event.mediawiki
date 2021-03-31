@@ -1,4 +1,3 @@
-
 = SDL_Event =
 A union that contains structures for the different event types.
 
@@ -9,7 +8,7 @@ A union that contains structures for the different event types.
 |'''type'''
 |event type, shared with all events
 |-
-|<rowstyle="color: #808080;">SDL_CommonEvent
+|[[SDL_CommonEvent]]
 |'''common'''
 |common event data
 |-
