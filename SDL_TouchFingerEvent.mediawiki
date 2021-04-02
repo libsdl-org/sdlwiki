@@ -1,4 +1,3 @@
-
 = SDL_TouchFingerEvent =
 A structure that contains finger touch event information.
 
@@ -40,6 +39,10 @@ A structure that contains finger touch event information.
 |float
 |'''pressure'''
 |the quantity of pressure applied, normalized (0...1)
+|-
+|Uint32
+|'''windowID'''
+|the window underneath the finger, if any
 |}
 
 == Remarks ==
