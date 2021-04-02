@@ -1,4 +1,3 @@
-
 = Obtaining SDL's source code =
 
 
@@ -10,13 +9,13 @@ Building and installing SDL for your platform (including how to obtain prebuilt 
 
 The source code to the latest official release of SDL2 is [https://libsdl.org/download-2.0.php here].
 
-If you want up to the minute bug fixes and improvements, you can track our work in SDL's [https://www.mercurial-scm.org/ Mercurial] repository:
+If you want up to the minute bug fixes and improvements, you can track our work in SDL's [https://git-scm.com Git] repository:
 
 ```
-hg clone https://hg.libsdl.org/SDL SDL
+git clone https://github.com/libsdl-org/SDL.git
 ```
 
-We intend official releases to be reasonably stable, and don't promise anything about the quality level of the Mercurial repo from moment to moment, but as official releases tend to happen months apart, you might find a bug that's bothering you is fixed in revision control long before it makes it to a release.
+We intend official releases to be reasonably stable, and don't promise anything about the quality level of the Git repo from moment to moment, but as official releases tend to happen months apart, you might find a bug that's bothering you is fixed in revision control long before it makes it to a release.
 
 
 == SDL 1.2 (obsolete/legacy) ==
@@ -27,12 +26,12 @@ If you want SDL 1.2, the final released version is 1.2.15. We occasionally colle
 
 The 1.2.15 source code is [https://libsdl.org/download-1.2.php here] if you must have it.
 
-You can find 1.2's source code in our Mercurial repository in the <code>SDL-1.2</code> branch:
+You can find 1.2's source code in a separate Git repository branch:
 
 ```
-hg clone -u SDL-1.2 https://hg.libsdl.org/SDL SDL-1.2
+git clone https://github.com/libsdl-org/SDL-1.2.git
 ```
 
-This will leave you with an "SDL-1.2" directory with the latest (post-1.2.15) changes to SDL 1.2. You can use the <code>-b</code> option instead of <code>-u</code> to get a smaller checkout if you ''really'' just want the 1.2 source code.
+This will leave you with an "SDL-1.2" directory with the latest (post-1.2.15) changes to SDL 1.2.
 
 Please note that eventually this branch will become a small compatibility shim that bridges the 1.2 API to a real build of SDL2. Plan accordingly.
