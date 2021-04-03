@@ -5,16 +5,11 @@ Open a specific audio device.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_AudioDeviceID SDL_OpenAudioDevice(const char
-                                      *device,
+SDL_AudioDeviceID SDL_OpenAudioDevice(const char *device,
                                       int iscapture,
-                                      const
-                                      SDL_AudioSpec *
-                                      desired,
-                                      SDL_AudioSpec *
-                                      obtained,
-                                      int
-                                      allowed_changes);
+                                      const SDL_AudioSpec *desired,
+                                      SDL_AudioSpec *obtained,
+                                      int allowed_changes);
 </syntaxhighlight>
 
 == Function Parameters ==
