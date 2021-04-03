@@ -26,7 +26,7 @@ If you want SDL 1.2, the final released version is 1.2.15. We occasionally colle
 
 The 1.2.15 source code is [https://libsdl.org/download-1.2.php here] if you must have it.
 
-You can find 1.2's source code in a separate Git repository branch:
+You can find 1.2's source code in a separate Git repository:
 
 ```
 git clone https://github.com/libsdl-org/SDL-1.2.git
