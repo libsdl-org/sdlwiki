@@ -46,6 +46,7 @@ Logging (such as [[SDL_Log]]) works without initialization, too.
 * <code>[[SDL_INIT_HAPTIC]]</code>: haptic (force feedback) subsystem 
 * <code>[[SDL_INIT_GAMECONTROLLER]]</code>: controller subsystem; automatically initializes the joystick subsystem 
 * <code>[[SDL_INIT_EVENTS]]</code>: events subsystem 
+* <code>[[SDL_INIT_SENSOR]]</code>:
 * <code>[[SDL_INIT_EVERYTHING]]</code>: all of the above subsystems 
 * <code>[[SDL_INIT_NOPARACHUTE]]</code>: compatibility; this flag is ignored 
 
