@@ -18,7 +18,6 @@ The general flow of a Vulkan backed SDL application will be the following:
 # When setting up pipelines and framebuffers for your newly created surface, use [[SDL_Vulkan_GetDrawableSize]] to query the surface extent
 
 == Functions ==
-<<FullSearchCached(category:CategoryVulkan -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_Vulkan_CreateSurface]]
