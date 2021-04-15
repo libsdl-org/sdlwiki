@@ -1,4 +1,3 @@
-
 = SDL_Palette =
 A structure that contains palette information.
 
@@ -13,13 +12,13 @@ A structure that contains palette information.
 |'''colors'''
 |an array of [[SDL_Color]] structures representing the palette
 |-
-|<style="color: #808080;">Uint32
-|<style="color: #808080;">'''version'''
-|<style="color: #808080;">incrementally tracks changes to the palette (internal use)
+|Uint32
+|'''version'''
+|incrementally tracks changes to the palette (internal use)
 |-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''refcount'''
-|<style="color: #808080;">reference count (internal use)
+|int
+|'''refcount'''
+|reference count (internal use)
 |}
 
 == Remarks ==
