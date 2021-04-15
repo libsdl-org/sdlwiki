@@ -7,10 +7,10 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 
 === Linux ===
 {|
-|<bgcolor="#EDEDED">''Name''
-|<bgcolor="#EDEDED">''Description''
-|<bgcolor="#EDEDED">''1.2''
-|<bgcolor="#EDEDED">''2.0''
+|''Name''
+|''Description''
+|''1.2''
+|''2.0''
 |-
 |x11                        
 | (default) Use the X11 windowing system 
@@ -50,10 +50,10 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 
 === Win32 ===
 {|
-|<bgcolor="#EDEDED">''Name''
-|<bgcolor="#EDEDED">''Description''
-|<bgcolor="#EDEDED">''1.2''
-|<bgcolor="#EDEDED">''2.0''
+|''Name''
+|''Description''
+|''1.2''
+|''2.0''
 |-
 |directx                    
 |(default) Use the DirectDraw API
@@ -76,10 +76,10 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 
 === Linux ===
 {|
-|<bgcolor="#EDEDED">''Name''
-|<bgcolor="#EDEDED">''Description''
-|<bgcolor="#EDEDED">''1.2''
-|<bgcolor="#EDEDED">''2.0''
+|''Name''
+|''Description''
+|''1.2''
+|''2.0''
 |-
 |dsp                        
 |(default) Use the OSS API by opening /dev/dsp
@@ -124,10 +124,10 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 
 === Win32 ===
 {|
-|<bgcolor="#EDEDED">''Name''
-|<bgcolor="#EDEDED">''Description''
-|<bgcolor="#EDEDED">''1.2''
-|<bgcolor="#EDEDED">''2.0''
+|''Name''
+|''Description''
+|''1.2''
+|''2.0''
 |-
 |dsound                     
 |(default) Use the DirectSound API
