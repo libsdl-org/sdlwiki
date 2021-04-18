@@ -21,7 +21,7 @@ void SDL_UnlockSurface(SDL_Surface * surface);
 
 == Related Functions ==
 
-:[[SDL_LockSurface]]
+:[[SDL_LockSurface()]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]
