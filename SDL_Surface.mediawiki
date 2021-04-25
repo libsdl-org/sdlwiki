@@ -1,13 +1,12 @@
-
 = SDL_Surface =
 A structure that contains a collection of pixels used in software blitting.
 
 
 == Data Fields ==
 {|
-|<style="color: rgb(128, 128, 128);">Uint32 
-|<style="color: rgb(128, 128, 128);">'''flags''' 
-|<style="color: rgb(128, 128, 128);">(internal use)
+|<span style="color: rgb(128, 128, 128);">Uint32</span>
+|<span style="color: rgb(128, 128, 128);">'''flags'''</span>
+|<span style="color: rgb(128, 128, 128);">(internal use)</span>
 |-
 |[[SDL_PixelFormat]]* 
 |'''format''' 
@@ -29,21 +28,21 @@ A structure that contains a collection of pixels used in software blitting.
 |'''userdata''' 
 |an arbitrary pointer you can set (read-write) 
 |-
-|<style="color: rgb(128, 128, 128);">int 
-|<style="color: rgb(128, 128, 128);">'''locked''' 
-|<style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)
+|<span style="color: rgb(128, 128, 128);">int</span>
+|<span style="color: rgb(128, 128, 128);">'''locked'''</span>
+|<span style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)</span>
 |-
-|<style="color: rgb(128, 128, 128);">void* 
-|<style="color: rgb(128, 128, 128);">'''lock_data''' 
-|<style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)
+|<span style="color: rgb(128, 128, 128);">void*</span>
+|<span style="color: rgb(128, 128, 128);">'''lock_data'''</span>
+|<span style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)</span>
 |-
 |[[SDL_Rect]] 
 |'''clip_rect''' 
 |an [[SDL_Rect]] structure used to clip blits to the surface which can be set by [[SDL_SetClipRect]]() (read-only) 
 |-
-|<style="color: rgb(128, 128, 128);">SDL_BlitMap* 
-|<style="color: rgb(128, 128, 128);">'''map''' 
-|<style="color: rgb(128, 128, 128);">info for fast blit mapping to other surfaces (internal use)
+|<span style="color: rgb(128, 128, 128);">SDL_BlitMap*</span>
+|<span style="color: rgb(128, 128, 128);">'''map'''</span>
+|<span style="color: rgb(128, 128, 128);">info for fast blit mapping to other surfaces (internal use)</span>
 |-
 |int 
 |'''refcount''' 
