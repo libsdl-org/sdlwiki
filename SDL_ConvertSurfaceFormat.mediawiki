@@ -39,7 +39,7 @@ information for the destination surface, in case that would be important.
 == Related Functions ==
 
 :[[SDL_AllocFormat]]
-:[[SDL_ConvertSurfaceFormat]]
+:[[SDL_ConvertSurface]]
 :[[SDL_CreateRGBSurface]]
 
 ----
