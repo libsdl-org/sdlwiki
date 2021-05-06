@@ -66,7 +66,7 @@ An enumeration of the SDL keyboard scancode representation.
 |SDLK_AC_BOOKMARKS
 |-
 |"'''AC Forward'''" (the Forward key (application control keypad))
-|SDL_SCANCODE_AC_FORWAD
+|SDL_SCANCODE_AC_FORWARD
 |SDLK_AC_FORWARD
 |-
 |"'''AC Home'''" (the Home key (application control keypad))
@@ -493,7 +493,7 @@ An enumeration of the SDL keyboard scancode representation.
 |SDL_SCANCODE_KP_DBLAMPERSAND
 |SDLK_KP_DBLAMPERSAND
 |-
-|"'''Keypad &#124;&#124;'''" (the &#124;&#124; key (numeric keypad))
+|"'''Keypad ||'''" (the || key (numeric keypad))
 |SDL_SCANCODE_KP_DBLVERTICALBAR
 |SDLK_KP_DBLVERTICALBAR
 |-
@@ -629,7 +629,7 @@ An enumeration of the SDL keyboard scancode representation.
 |SDL_SCANCODE_KP_TAB
 |SDLK_KP_TAB
 |-
-|"'''Keypad &#124;'''" (the &#124; key (numeric keypad))
+|"'''Keypad |'''" (the | key (numeric keypad))
 |SDL_SCANCODE_KP_VERTICALBAR
 |SDLK_KP_VERTICALBAR
 |-
