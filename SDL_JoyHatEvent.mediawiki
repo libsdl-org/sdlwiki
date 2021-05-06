@@ -1,4 +1,3 @@
-
 = SDL_JoyHatEvent =
 A structure that contains joystick hat position change event information.
 
@@ -34,21 +33,15 @@ An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
 '''value''' may be one of the following:
 {|
 |SDL_HAT_LEFTUP
-|
 |SDL_HAT_UP
-|
 |SDL_HAT_RIGHTUP
 |-
 |SDL_HAT_LEFT
-|
 |SDL_HAT_CENTERED
-|
 |SDL_HAT_RIGHT
 |-
 |SDL_HAT_LEFTDOWN
-|
 |SDL_HAT_DOWN
-|
 |SDL_HAT_RIGHTDOWN
 |}
 Note that zero means the POV is centered. 
