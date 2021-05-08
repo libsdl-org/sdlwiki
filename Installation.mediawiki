@@ -1,4 +1,3 @@
-
 = Installing SDL =
 
 
@@ -35,7 +34,8 @@ If you're compiling SDL yourself, here's what we refer to as "the Unix way" of b
 
 This looks something like this:
 
-```
+
+<syntaxhighlight lang="bash">
 hg clone https://hg.libsdl.org/SDL SDL
 cd SDL
 mkdir build
@@ -43,7 +43,8 @@ cd build
 ../configure
 make
 sudo make install
-```
+</syntaxhighlight>
+
 
 The last command says "sudo" so we can write it to /usr/local (by default). You can change this to a different location with the --prefix option to the configure script. In fact, there are a LOT of good options you can use with configure! Be sure to check out its --help option for details. SDL tries to do the right thing by default, though, so you can usually get away with no options at all. "make" could be "make -j4" or whatever if you have more than one CPU; SDL can safely be built in parallel across all the CPU cores you have available to you. A good rule of thumb for Linux is the number of cores plus two, so you use all the processing resources possible, and if a process or two is competing for the disk, those two extra jobs might be able to put the otherwise-idle CPU cores to work in the meantime (so on a four-core system? Try "make -j6".)
 
@@ -51,7 +52,7 @@ An (experimental!) alternative to the configure script is the CMake project file
 
 Once you have the library installed, you can use the sdl2-config program to help you compile your own code:
 
-    ```gcc -o myprogram myprogram.c <code>sdl2-config --cflags --libs</code>```
+     <syntaxhighlight lang="bash">gcc -o myprogram myprogram.c sdl2-config --cflags --libs</syntaxhighlight>
 
 SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See [https://hg.libsdl.org/SDL/file/default/docs/README-linux.md docs/README-linux.md] for more details.
 
@@ -81,7 +82,13 @@ You can build for Mac OS X "the Unix way" with the configure or CMake scripts, a
 
 If you are building "the Unix way," we encourage you to use [https://hg.libsdl.org/SDL/file/default/build-scripts/gcc-fat.sh build-scripts/gcc-fat.sh] in the SDL source tree for your compiler:
 
-    ```mkdir build ; cd build ; CC=/where/i/cloned/SDL/build-scripts/gcc-fat.sh ../configure ; make```
+<syntaxhighlight lang="bash">
+mkdir build
+cd build 
+CC=/where/i/cloned/SDL/build-scripts/gcc-fat.sh
+../configure
+make
+</syntaxhighlight>
 
 This will accomplish two important things. First, it will build an x86/x86-64 "universal" version of the library. Second, it will make sure the library is compiled and linked with <code>-mmacosx-version-min=10.5</code>, so that the library will work on any Mac OS X version back to 10.5.0, regardless of what version of Xcode you compiled on and what platform SDK. Without this, you are likely to build something that only works on the latest version of Mac OS X!
 
@@ -93,7 +100,13 @@ Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built 
 
 To build and install SDL locally, run:
 
-    ```mkdir build ; cd build ; ../configure --prefix=$HOME/config/non-packaged; make install```
+<syntaxhighlight lang="bash">
+mkdir build
+cd build
+../configure 
+--prefix=$HOME/config/non-packaged
+make install
+</syntaxhighlight>
 
 === iOS ===
 
