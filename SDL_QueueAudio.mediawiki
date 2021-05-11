@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -64,6 +63,11 @@ queue audio with this function, but not both.
 
 You should not call [[SDL_LockAudio]]() on the device before queueing; SDL
 handles locking internally for this function.
+
+Note that SDL2 [https://discourse.libsdl.org/t/sdl2-support-for-planar-audio/31263/3 
+does not support planar audio]. You will need to resample
+from planar audio formats into a non-planar one (see [[SDL_AudioFormat]]) before
+queuing audio.
 
 == Version ==
 
