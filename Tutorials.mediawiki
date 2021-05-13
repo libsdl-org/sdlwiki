@@ -37,6 +37,9 @@ There are a number of SDL tutorials available from different sources.
 
 == Android ==
 
+* https://github.com/AlexanderAgd/SDL2-Android-Example
+: An example of using SDL2 on Android
+
 * http://www.dinomage.com/2013/01/howto-sdl-on-android/
 : An example of setting up SDL on Android
 
