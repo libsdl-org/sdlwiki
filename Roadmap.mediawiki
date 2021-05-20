@@ -1,4 +1,3 @@
-
 = SDL 2.0 Roadmap =
 
 This is a list of features which are in progress for the SDL 2.0 release.  The features are organized by subsystem and assigned to developers.  Features will move around as the design evolves.
@@ -93,6 +92,7 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 === Wishlist ===
 * <span style="color: gray;">Ryan: Add support for multiple mice</span>
 * Q: What is the mapping of individual mice to pointers?  Is there a "master pointer" that multiple mice share and then events for the individual mice?  Is there a dual mode, where you have a single pointer that all mice affect, and you can switch to multiple pointers, each affected by a single mouse?
+* A: I remember only "Lemmings 2 The tribes" allowed to have 2 players playing at the same time in split screen, each with their own mouse
 * <span style="color: gray;">Pressure/tilt support for tablet like devices</span>
 * <span style="color: gray;">Add support animated cursors</span>
 
@@ -154,4 +154,4 @@ This is a list of features which are in progress for the SDL 2.0 release.  The f
 
 === Other details ===
 Ryan has more information on the SDL 2.0 changes that you can find here: <br/>
-http://icculus.org/cgi-bin/finger/finger.pl?user=icculus&date=2007-10-07&section=sdl13
+http://icculus.org/cgi-bin/finger/finger.pl?user=icculus&date=2007-10-07§ion=sdl13
