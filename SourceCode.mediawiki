@@ -11,9 +11,9 @@ The source code to the latest official release of SDL2 is [https://libsdl.org/do
 
 If you want up to the minute bug fixes and improvements, you can track our work in SDL's [https://git-scm.com Git] repository:
 
-```
+<syntaxhighlight lang="bash">
 git clone https://github.com/libsdl-org/SDL.git
-```
+</syntaxhighlight>
 
 We intend official releases to be reasonably stable, and don't promise anything about the quality level of the Git repo from moment to moment, but as official releases tend to happen months apart, you might find a bug that's bothering you is fixed in revision control long before it makes it to a release.
 
@@ -28,9 +28,9 @@ The 1.2.15 source code is [https://libsdl.org/download-1.2.php here] if you must
 
 You can find 1.2's source code in a separate Git repository:
 
-```
+<syntaxhighlight lang="bash">
 git clone https://github.com/libsdl-org/SDL-1.2.git
-```
+</syntaxhighlight>
 
 This will leave you with an "SDL-1.2" directory with the latest (post-1.2.15) changes to SDL 1.2.
 
