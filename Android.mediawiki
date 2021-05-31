@@ -27,15 +27,17 @@ export ANDROID_NDK_HOME="/usr/src/android-ndk-rXXx"     # for gradle
 
 === SDL wrapper for simple programs ===
 
-* Compile a sample app (calls ndk-build): ```
+* Compile a sample app (calls ndk-build): 
+<pre>
 cd /usr/src/SDL2/build-scripts/
 ./androidbuild.sh org.libsdl.testgles ../test/testgles.c
-```
-* Follow the instructions to install on your device: ```
+</pre>
+* Follow the instructions to install on your device: 
+<pre>
 cd /usr/src/SDL2/build/org.libsdl.testgles/
 ant debug install       # SDL <= 2.0.7
 ./gradlew installDebug  # SDL >= 2.0.8
-```
+</pre>
 
 Notes:
 * multiple targets armeabi-v7a/arm64-v8a/x86/x86_64 compilation
@@ -155,7 +157,8 @@ int main(int argc, char *argv[])
 }
 </syntaxhighlight>
 
-Then let's make an Android app out of it. To compile: ```
+Then let's make an Android app out of it. To compile: 
+<pre>
 cd /usr/src/SDL2/build-scripts/
 ./androidbuild.sh org.libsdl.showimage /usr/src/SDL2_image/showimage.c
 cd /usr/src/SDL2/build/org.libsdl.showimage/
@@ -164,7 +167,7 @@ ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
 sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' jni/src/Android.mk
 ndk-build -j$(nproc)
 ant debug install
-```
+</pre>
 
 Notes:
 * application doesn't restart properly
