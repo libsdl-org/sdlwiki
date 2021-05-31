@@ -164,9 +164,9 @@ SDL_PushEvent(&user_event);
 <span id="table"></span>
 ~+'''Relationships between event types and union members'''+~
 {|
-|<bgcolor="#EDEDED">''Event Type''
-|<bgcolor="#EDEDED">''Event Structure''
-|<bgcolor="#EDEDED">''SDL_Event Field''
+|''Event Type''
+|''Event Structure''
+|''SDL_Event Field''
 |-
 |SDL_AUDIODEVICEADDED<br/>SDL_AUDIODEVICEREMOVED
 |[[SDL_AudioDeviceEvent]]
