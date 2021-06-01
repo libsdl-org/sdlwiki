@@ -43,6 +43,11 @@ There are a number of SDL tutorials available from different sources.
 * [https://web.archive.org/web/20180127022200/http://blog.stuff-o-matic.com/post/2013/10/20/ASGP-s-Android-Port-Part-IV%3A-building-the-APK Building an Android application using the SDL] (Archived)
 : An example of building an Android application using the SDL
 
+== Audio ==
+
+* [[Tutorials-AudioStream|Using SDL_AudioStream]]
+: A guide to the new audio stream API
+
 == Video ==
 
 * [http://slouken.blogspot.com/2011/02/streaming-textures-with-sdl-13.html Streaming textures with SDL 2.0]
