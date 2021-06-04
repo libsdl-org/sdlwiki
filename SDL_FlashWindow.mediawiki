@@ -1,0 +1,32 @@
+= SDL_FlashWindow =
+
+Request a window to give a signal, e.g.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_FlashWindow(SDL_Window * window, Uint32 flash_count);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''window'''
+|the window to request the flashing for
+|-
+|'''flash_count'''
+|number of times the window gets flashed on systems that support flashing the window multiple times, like Windows, else it is ignored
+|}
+
+== Return Value ==
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
+
+
+
+== Remarks ==
+
+a visual signal, to demand attention from the user.
+
+
