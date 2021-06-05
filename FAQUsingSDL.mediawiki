@@ -46,6 +46,11 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |Use the Ascii Art library               
 | yes 
 |     
+|-
+|wayland
+|Use Wayland protocol for hardware acceleration
+|
+| yes
 |}
 
 === Win32 ===
@@ -120,6 +125,11 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |Use !PulseAudio                   
 |     
 | yes 
+|-
+|jack
+|Use Jack Audio Connection Kit
+|
+| yes
 |}
 
 === Win32 ===
