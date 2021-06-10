@@ -503,7 +503,7 @@ The SDL virtual key representation.
 |-
 |"'''Keypad /'''" (the / key (numeric keypad))
 |SDL_SCANCODE_KP_DIVIDE
-|SDLK_KP_DIVID
+|SDLK_KP_DIVIDE
 |-
 |"'''Keypad E'''" (the E key (numeric keypad))
 |SDL_SCANCODE_KP_E
