@@ -11,979 +11,1225 @@ An enumeration of the SDL keyboard scancode representation.
 {|
 |''Key Name''
 |''SDL_Scancode Value''
+|''SDL_Scancode Number''
 |''SDL_Keycode Value''
 |-
-|"'''0'''"
-|SDL_SCANCODE_0
-|SDLK_0
-|-
-|"'''1'''"
-|SDL_SCANCODE_1
-|SDLK_1
-|-
-|"'''2'''"
-|SDL_SCANCODE_2
-|SDLK_2
-|-
-|"'''3'''"
-|SDL_SCANCODE_3
-|SDLK_3
-|-
-|"'''4'''"
-|SDL_SCANCODE_4
-|SDLK_4
-|-
-|"'''5'''"
-|SDL_SCANCODE_5
-|SDLK_5
-|-
-|"'''6'''"
-|SDL_SCANCODE_6
-|SDLK_6
-|-
-|"'''7'''"
-|SDL_SCANCODE_7
-|SDLK_7
-|-
-|"'''8'''"
-|SDL_SCANCODE_8
-|SDLK_8
-|-
-|"'''9'''"
-|SDL_SCANCODE_9
-|SDLK_9
+|""<br>(no name, empty string)
+|SDL_SCANCODE_UNKNOWN
+|0
+|SDLK_UNKNOWN
 |-
 |"'''A'''"
 |SDL_SCANCODE_A
+|4
 |SDLK_a
-|-
-|"'''AC Back'''" (the Back key (application control keypad))
-|SDL_SCANCODE_AC_BACK
-|SDLK_AC_BACK
-|-
-|"'''AC Bookmarks'''" (the Bookmarks key (application control keypad))
-|SDL_SCANCODE_AC_BOOKMARKS
-|SDLK_AC_BOOKMARKS
-|-
-|"'''AC Forward'''" (the Forward key (application control keypad))
-|SDL_SCANCODE_AC_FORWARD
-|SDLK_AC_FORWARD
-|-
-|"'''AC Home'''" (the Home key (application control keypad))
-|SDL_SCANCODE_AC_HOME
-|SDLK_AC_HOME
-|-
-|"'''AC Refresh'''" (the Refresh key (application control keypad))
-|SDL_SCANCODE_AC_REFRESH
-|SDLK_AC_REFRESH
-|-
-|"'''AC Search'''" (the Search key (application control keypad))
-|SDL_SCANCODE_AC_SEARCH
-|SDLK_AC_SEARCH
-|-
-|"'''AC Stop'''" (the Stop key (application control keypad))
-|SDL_SCANCODE_AC_STOP
-|SDLK_AC_STOP
-|-
-|"'''Again'''" (the Again key (Redo))
-|SDL_SCANCODE_AGAIN
-|SDLK_AGAIN
-|-
-|"'''AltErase'''" (Erase-Eaze)
-|SDL_SCANCODE_ALTERASE
-|SDLK_ALTERASE
-|-
-|"'"
-|SDL_SCANCODE_APOSTROPHE
-|SDLK_QUOTE
-|-
-|"'''Application'''" (the Application / Compose / Context Menu (Windows) key)
-|SDL_SCANCODE_APPLICATION
-|SDLK_APPLICATION
-|-
-|"'''AudioMute'''" (the Mute volume key)
-|SDL_SCANCODE_AUDIOMUTE
-|SDLK_AUDIOMUTE
-|-
-|"'''AudioNext'''" (the Next Track media key)
-|SDL_SCANCODE_AUDIONEXT
-|SDLK_AUDIONEXT
-|-
-|"'''AudioPlay'''" (the Play media key)
-|SDL_SCANCODE_AUDIOPLAY
-|SDLK_AUDIOPLAY
-|-
-|"'''AudioPrev'''" (the Previous Track media key)
-|SDL_SCANCODE_AUDIOPREV
-|SDLK_AUDIOPREV
-|-
-|"'''AudioStop'''" (the Stop media key)
-|SDL_SCANCODE_AUDIOSTOP
-|SDLK_AUDIOSTOP
 |-
 |"'''B'''"
 |SDL_SCANCODE_B
+|5
 |SDLK_b
-|-
-|"'''\'''" (Located at the lower left of the return key on ISO keyboards and at the right end of the QWERTY row on ANSI keyboards. Produces REVERSE SOLIDUS (backslash) and VERTICAL LINE in a US layout, REVERSE SOLIDUS and VERTICAL LINE in a UK Mac layout, NUMBER SIGN and TILDE in a UK Windows layout, DOLLAR SIGN and POUND SIGN in a Swiss German layout, NUMBER SIGN and APOSTROPHE in a German layout, GRAVE ACCENT and POUND SIGN in a French Mac layout, and ASTERISK and MICRO SIGN in a French Windows layout.)
-|SDL_SCANCODE_BACLSLASH
-|SDLK_BACKSLASH
-|-
-|"'''Backspace'''"
-|SDL_SCANCODE_BACKSPACE
-|SDLK_BACKSPACE
-|-
-|"'''BrightnessDown'''" (the Brightness Down key)
-|SDL_SCANCODE_BRIGHTNESSDOWN
-|SDLK_BRIGHTNESSDOWN
-|-
-|"'''BrightnessUp'''" (the Brightness Up key)
-|SDL_SCANCODE_BRIGHTNESSUP
-|SDLK_BRIGHTNESSUP
 |-
 |"'''C'''"
 |SDL_SCANCODE_C
+|6
 |SDLK_c
-|-
-|"'''Calculator'''" (the Calculator key)
-|SDL_SCANCODE_CALCULATOR
-|SDLK_CALCULATOR
-|-
-|"'''Cancel'''"
-|SDL_SCANCODE_CANCEL
-|SDLK_CANCEL
-|-
-|"'''CapsLock'''"
-|SDL_SCANCODE_CAPSLOCK
-|SDLK_CAPSLOCK
-|-
-|"'''Clear'''"
-|SDL_SCANCODE_CLEAR
-|SDLK_CLEAR
-|-
-|"'''Clear / Again'''"
-|SDL_SCANCODE_CLEARAGAIN
-|SDLK_CLEARAGAIN
-|-
-|"''','''"
-|SDL_SCANCODE_COMMA
-|SDLK_COMMA
-|-
-|"'''Computer'''" (the My Computer key)
-|SDL_SCANCODE_COMPUTER
-|SDLK_COMPUTER
-|-
-|"'''Copy'''"
-|SDL_SCANCODE_COPY
-|SDLK_COPY
-|-
-|"'''CrSel'''"
-|SDL_SCANCODE_CRSEL
-|SDLK_CRSEL
-|-
-|"'''CurrencySubUnit'''" (the Currency Subunit key)
-|SDL_SCANCODE_CURRENCYSUBUNIT
-|SDLK_CURRENCYSUBUNIT
-|-
-|"'''CurrencyUnit'''" (the Currency Unit key)
-|SDL_SCANCODE_CURRENCYUNIT
-|SDLK_CURRENCYUNIT
-|-
-|"'''Cut'''"
-|SDL_SCANCODE_CUT
-|SDLK_CUT
 |-
 |"'''D'''"
 |SDL_SCANCODE_D
+|7
 |SDLK_d
-|-
-|"'''DecimalSeparator'''" (the Decimal Separator key)
-|SDL_SCANCODE_DECIMALSEPARATOR
-|SDLK_DECIMALSEPARATOR
-|-
-|"'''Delete'''"
-|SDL_SCANCODE_DELETE
-|SDLK_DELETE
-|-
-|"'''DisplaySwitch'''" (display mirroring/dual display switch, video mode switch)
-|SDL_SCANCODE_DISPLAYSWITCH
-|SDLK_DISPLAYSWITCH
-|-
-|"'''Down'''" (the Down arrow key (navigation keypad))
-|SDL_SCANCODE_DOWN
-|SDLK_DOWN
 |-
 |"'''E'''"
 |SDL_SCANCODE_E
+|8
 |SDLK_e
-|-
-|"'''Eject'''" (the Eject key)
-|SDL_SCANCODE_EJECT
-|SDLK_EJECT
-|-
-|"'''End'''"
-|SDL_SCANCODE_END
-|SDLK_END
-|-
-|"'''='''"
-|SDL_SCANCODE_EQUALS
-|SDLK_EQUALS
-|-
-|"'''Escape'''" (the Esc key)
-|SDL_SCANCODE_ESCAPE
-|SDLK_ESCAPE
-|-
-|"'''Execute'''"
-|SDL_SCANCODE_EXECUTE
-|SDLK_EXECUTE
-|-
-|"'''ExSel'''"
-|SDL_SCANCODE_EXSEL
-|SDLK_EXSEL
 |-
 |"'''F'''"
 |SDL_SCANCODE_F
+|9
 |SDLK_f
-|-
-|"'''F1'''"
-|SDL_SCANCODE_F1
-|SDLK_F1
-|-
-|"'''F10'''"
-|SDL_SCANCODE_F10
-|SDLK_F10
-|-
-|"'''F11'''"
-|SDL_SCANCODE_F11
-|SDLK_F11
-|-
-|"'''F12'''"
-|SDL_SCANCODE_F12
-|SDLK_F12
-|-
-|"'''F13'''"
-|SDL_SCANCODE_F13
-|SDLK_F13
-|-
-|"'''F14'''"
-|SDL_SCANCODE_F14
-|SDLK_F14
-|-
-|"'''F15'''"
-|SDL_SCANCODE_F15
-|SDLK_F15
-|-
-|"'''F16'''"
-|SDL_SCANCODE_F16
-|SDLK_F16
-|-
-|"'''F17'''"
-|SDL_SCANCODE_F17
-|SDLK_F17
-|-
-|"'''F18'''"
-|SDL_SCANCODE_F18
-|SDLK_F18
-|-
-|"'''F19'''"
-|SDL_SCANCODE_F19
-|SDLK_F19
-|-
-|"'''F2'''"
-|SDL_SCANCODE_F2
-|SDLK_F2
-|-
-|"'''F20'''"
-|SDL_SCANCODE_F20
-|SDLK_F20
-|-
-|"'''F21'''"
-|SDL_SCANCODE_F21
-|SDLK_F21
-|-
-|"'''F22'''"
-|SDL_SCANCODE_F22
-|SDLK_F22
-|-
-|"'''F23'''"
-|SDL_SCANCODE_F23
-|SDLK_F23
-|-
-|"'''F24'''"
-|SDL_SCANCODE_F24
-|SDLK_F24
-|-
-|"'''F3'''"
-|SDL_SCANCODE_F3
-|SDLK_F3
-|-
-|"'''F4'''"
-|SDL_SCANCODE_F4
-|SDLK_F4
-|-
-|"'''F5'''"
-|SDL_SCANCODE_F5
-|SDLK_F5
-|-
-|"'''F6'''"
-|SDL_SCANCODE_F6
-|SDLK_F6
-|-
-|"'''F7'''"
-|SDL_SCANCODE_F7
-|SDLK_F7
-|-
-|"'''F8'''"
-|SDL_SCANCODE_F8
-|SDLK_F8
-|-
-|"'''F9'''"
-|SDL_SCANCODE_F9
-|SDLK_F9
-|-
-|"'''Find'''"
-|SDL_SCANCODE_FIND
-|SDLK_FIND
 |-
 |"'''G'''"
 |SDL_SCANCODE_G
+|10
 |SDLK_g
-|-
-|"'''`'''" (Located in the top left corner (on both ANSI and ISO keyboards). Produces GRAVE ACCENT and TILDE in a US Windows layout and in US and UK Mac layouts on ANSI keyboards, GRAVE ACCENT and NOT SIGN in a UK Windows layout, SECTION SIGN and PLUS-MINUS SIGN in US and UK Mac layouts on ISO keyboards, SECTION SIGN and DEGREE SIGN in a Swiss German layout (Mac: only on ISO keyboards), CIRCUMFLEX ACCENT and DEGREE SIGN in a German layout (Mac: only on ISO keyboards), SUPERSCRIPT TWO and TILDE in a French Windows layout, COMMERCIAL AT and NUMBER SIGN in a French Mac layout on ISO keyboards, and LESS-THAN SIGN and GREATER-THAN SIGN in a Swiss German, German, or French Mac layout on ANSI keyboards.)
-|SDL_SCANCODE_GRAVE
-|SDLK_BACKQUOTE
 |-
 |"'''H'''"
 |SDL_SCANCODE_H
+|11
 |SDLK_h
-|-
-|"'''Help'''"
-|SDL_SCANCODE_HELP
-|SDLK_HELP
-|-
-|"'''Home'''"
-|SDL_SCANCODE_HOME
-|SDLK_HOME
 |-
 |"'''I'''"
 |SDL_SCANCODE_I
+|12
 |SDLK_i
-|-
-|"'''Insert'''" (insert on PC, help on some Mac keyboards (but does send code 73, not 117))
-|SDL_SCANCODE_INSERT
-|SDLK_INSERT
 |-
 |"'''J'''"
 |SDL_SCANCODE_J
+|13
 |SDLK_j
 |-
 |"'''K'''"
 |SDL_SCANCODE_K
+|14
 |SDLK_k
-|-
-|"'''KBDIllumDown'''" (the Keyboard Illumination Down key)
-|SDL_SCANCODE_KBDILLUMDOWN
-|SDLK_KBDILLUMDOWN
-|-
-|"'''KBDIllumToggle'''" (the Keyboard Illumination Toggle key)
-|SDL_SCANCODE_KBDILLUMTOGGLE
-|SDLK_KBDILLUMTOGGLE
-|-
-|"'''KBDIllumUp'''" (the Keyboard Illumination Up key)
-|SDL_SCANCODE_KBDILLUMUP
-|SDLK_KBDILLUMUP
-|-
-|"'''Keypad 0'''" (the 0 key (numeric keypad))
-|SDL_SCANCODE_KP_0
-|SDLK_KP_0
-|-
-|"'''Keypad 00'''" (the 00 key (numeric keypad))
-|SDL_SCANCODE_KP_00
-|SDLK_KP_00
-|-
-|"'''Keypad 000'''" (the 000 key (numeric keypad))
-|SDL_SCANCODE_KP_000
-|SDLK_KP_000
-|-
-|"'''Keypad 1'''" (the 1 key (numeric keypad))
-|SDL_SCANCODE_KP_1
-|SDLK_KP_1
-|-
-|"'''Keypad 2'''" (the 2 key (numeric keypad))
-|SDL_SCANCODE_KP_2
-|SDLK_KP_2
-|-
-|"'''Keypad 3'''" (the 3 key (numeric keypad))
-|SDL_SCANCODE_KP_3
-|SDLK_KP_3
-|-
-|"'''Keypad 4'''" (the 4 key (numeric keypad))
-|SDL_SCANCODE_KP_4
-|SDLK_KP_4
-|-
-|"'''Keypad 5'''" (the 5 key (numeric keypad))
-|SDL_SCANCODE_KP_5
-|SDLK_KP_5
-|-
-|"'''Keypad 6'''" (the 6 key (numeric keypad))
-|SDL_SCANCODE_KP_6
-|SDLK_KP_6
-|-
-|"'''Keypad 7'''" (the 7 key (numeric keypad))
-|SDL_SCANCODE_KP_7
-|SDLK_KP_7
-|-
-|"'''Keypad 8'''" (the 8 key (numeric keypad))
-|SDL_SCANCODE_KP_8
-|SDLK_KP_8
-|-
-|"'''Keypad 9'''" (the 9 key (numeric keypad))
-|SDL_SCANCODE_KP_9
-|SDLK_KP_9
-|-
-|"'''Keypad A'''" (the A key (numeric keypad))
-|SDL_SCANCODE_KP_A
-|SDLK_KP_A
-|-
-|"'''Keypad &'''" (the & key (numeric keypad))
-|SDL_SCANCODE_KP_AMPERSAND
-|SDLK_KP_AMPERSAND
-|-
-|"'''Keypad @'''" (the @ key (numeric keypad))
-|SDL_SCANCODE_KP_AT
-|SDLK_KP_AT
-|-
-|"'''Keypad B'''" (the B key (numeric keypad))
-|SDL_SCANCODE_KP_B
-|SDLK_KP_B
-|-
-|"'''Keypad Backspace'''" (the Backspace key (numeric keypad))
-|SDL_SCANCODE_KP_BACKSPACE
-|SDLK_KP_BACKSPACE
-|-
-|"'''Keypad Binary'''" (the Binary key (numeric keypad))
-|SDL_SCANCODE_KP_BINARY
-|SDLK_KP_BINARY
-|-
-|"'''Keypad C'''" (the C key (numeric keypad))
-|SDL_SCANCODE_KP_C
-|SDLK_KP_C
-|-
-|"'''Keypad Clear'''" (the Clear key (numeric keypad))
-|SDL_SCANCODE_KP_CLEAR
-|SDLK_KP_CLEAR
-|-
-|"'''Keypad ClearEntry'''" (the Clear Entry key (numeric keypad))
-|SDL_SCANCODE_KP_CLEARENTRY
-|SDLK_KP_CLEARENTRY
-|-
-|"'''Keypad :'''" (the : key (numeric keypad))
-|SDL_SCANCODE_KP_COLON
-|SDLK_KP_COLON
-|-
-|"'''Keypad ,'''" (the Comma key (numeric keypad))
-|SDL_SCANCODE_KP_COMMA
-|SDLK_KP_COMMA
-|-
-|"'''Keypad D'''" (the D key (numeric keypad))
-|SDL_SCANCODE_KP_D
-|SDLK_KP_D
-|-
-|"'''Keypad &&'''" (the && key (numeric keypad))
-|SDL_SCANCODE_KP_DBLAMPERSAND
-|SDLK_KP_DBLAMPERSAND
-|-
-|"'''Keypad ||'''" (the || key (numeric keypad))
-|SDL_SCANCODE_KP_DBLVERTICALBAR
-|SDLK_KP_DBLVERTICALBAR
-|-
-|"'''Keypad Decimal'''" (the Decimal key (numeric keypad))
-|SDL_SCANCODE_KP_DECIMAL
-|SDLK_KP_DECIMAL
-|-
-|"'''Keypad /'''" (the / key (numeric keypad))
-|SDL_SCANCODE_KP_DIVIDE
-|SDLK_KP_DIVID
-|-
-|"'''Keypad E'''" (the E key (numeric keypad))
-|SDL_SCANCODE_KP_E
-|SDLK_KP_E
-|-
-|"'''Keypad Enter'''" (the Enter key (numeric keypad))
-|SDL_SCANCODE_KP_ENTER
-|SDLK_KP_ENTER
-|-
-|"'''Keypad ='''" (the = key (numeric keypad))
-|SDL_SCANCODE_KP_EQUALS
-|SDLK_KP_EQUALS
-|-
-|"'''Keypad = (AS400)'''" (the Equals AS400 key (numeric keypad))
-|SDL_SCANCODE_KP_EQUALSAS400
-|SDLK_KP_EQUALSAS400
-|-
-|"'''Keypad !'''" (the ! key (numeric keypad))
-|SDL_SCANCODE_KP_EXCLAM
-|SDLK_KP_EXCLAM
-|-
-|"'''Keypad F'''" (the F key (numeric keypad))
-|SDL_SCANCODE_KP_F
-|SDLK_KP_F
-|-
-|"'''Keypad >'''" (the Greater key (numeric keypad))
-|SDL_SCANCODE_KP_GREATER
-|SDLK_KP_GREATER
-|-
-|"'''Keypad #'''" (the # key (numeric keypad))
-|SDL_SCANCODE_KP_HASH
-|SDLK_KP_HASH
-|-
-|"'''Keypad Hexadecimal'''" (the Hexadecimal key (numeric keypad))
-|SDL_SCANCODE_KP_HEXADECIMAL
-|SDLK_KP_HEXADECIMAL
-|-
-|"'''Keypad {'''" (the Left Brace key (numeric keypad))
-|SDL_SCANCODE_KP_LEFTBRACE
-|SDLK_KP_LEFTBRACE
-|-
-|"'''Keypad ('''" (the Left Parenthesis key (numeric keypad))
-|SDL_SCANCODE_KP_LEFTPAREN
-|SDLK_KP_LEFTPAREN
-|-
-|"'''Keypad <'''" (the Less key (numeric keypad))
-|SDL_SCANCODE_KP_LESS
-|SDLK_KP_LESS
-|-
-|"'''Keypad MemAdd'''" (the Mem Add key (numeric keypad))
-|SDL_SCANCODE_KP_MEMADD
-|SDLK_KP_MEMADD
-|-
-|"'''Keypad MemClear'''" (the Mem Clear key (numeric keypad))
-|SDL_SCANCODE_KP_MEMCLEAR
-|SDLK_KP_MEMCLEAR
-|-
-|"'''Keypad MemDivide'''" (the Mem Divide key (numeric keypad))
-|SDL_SCANCODE_KP_MEMDIVIDE
-|SDLK_KP_MEMDIVIDE
-|-
-|"'''Keypad MemMultiply'''" (the Mem Multiply key (numeric keypad))
-|SDL_SCANCODE_KP_MEMMULTIPLY
-|SDLK_KP_MEMMULTIPLY
-|-
-|"'''Keypad MemRecall'''" (the Mem Recall key (numeric keypad))
-|SDL_SCANCODE_KP_MEMRECALL
-|SDLK_KP_MEMRECALL
-|-
-|"'''Keypad MemStore'''" (the Mem Store key (numeric keypad))
-|SDL_SCANCODE_KP_MEMSTORE
-|SDLK_KP_MEMSTORE
-|-
-|"'''Keypad MemSubtract'''" (the MemSubtract key (numeric keypad))
-|SDL_SCANCODE_KP_MEMSUBTRACT
-|SDLK_KP_MEMSUBTRACT
-|-
-|"'''Keypad -'''" (the 0-key (numeric keypad))
-|SDL_SCANCODE_KP_MINUS
-|SDLK_KP_MINUS
-|-
-|"'''Keypad *'''" (the * key (numeric keypad))
-|SDL_SCANCODE_KP_MULTIPLY
-|SDLK_KP_MULTIPLY
-|-
-|"'''Keypad Octal'''" (the Octal key (numeric keypad))
-|SDL_SCANCODE_KP_OCTAL
-|SDLK_KP_OCTAL
-|-
-|"'''Keypad %'''" (the Percent key (numeric keypad))
-|SDL_SCANCODE_KP_PERCENT
-|SDLK_KP_PERCENT
-|-
-|"'''Keypad .'''" (the . key (numeric keypad))
-|SDL_SCANCODE_KP_PERIOD
-|SDLK_KP_PERIOD
-|-
-|"'''Keypad +'''" (the + key (numeric keypad))
-|SDL_SCANCODE_KP_PLUS
-|SDLK_KP_PLUS
-|-
-|"'''Keypad +/-'''" (the +/- key (numeric keypad))
-|SDL_SCANCODE_KP_PLUSMINUS
-|SDLK_KP_PLUSMINUS
-|-
-|"'''Keypad ^'''" (the Power key (numeric keypad))
-|SDL_SCANCODE_KP_POWER
-|SDLK_KP_POWER
-|-
-|"'''Keypad }'''" (the Right Brace key (numeric keypad))
-|SDL_SCANCODE_KP_RIGHTBRACE
-|SDLK_KP_RIGHTBRACE
-|-
-|"'''Keypad )'''" (the Right Parenthesis key (numeric keypad))
-|SDL_SCANCODE_KP_RIGHTPAREN
-|SDLK_KP_RIGHTPAREN
-|-
-|"'''Keypad Space'''" (the Space key (numeric keypad))
-|SDL_SCANCODE_KP_SPACE
-|SDLK_KP_SPACE
-|-
-|"'''Keypad Tab'''" (the Tab key (numeric keypad))
-|SDL_SCANCODE_KP_TAB
-|SDLK_KP_TAB
-|-
-|"'''Keypad |'''" (the | key (numeric keypad))
-|SDL_SCANCODE_KP_VERTICALBAR
-|SDLK_KP_VERTICALBAR
-|-
-|"'''Keypad XOR'''" (the XOR key (numeric keypad))
-|SDL_SCANCODE_KP_XOR
-|SDLK_KP_XOR
 |-
 |"'''L'''"
 |SDL_SCANCODE_L
+|15
 |SDLK_l
-|-
-|"'''Left Alt'''"
-|SDL_SCANCODE_LALT
-|SDLK_LALT
-|-
-|"'''Left Ctrl'''"
-|SDL_SCANCODE_LCTRL
-|SDLK_LCTRL
-|-
-|"'''Left'''" (the Left arrow key (navigation  keypad))
-|SDL_SCANCODE_LEFT
-|SDLK_LEFT
-|-
-|"'''['''"
-|SDL_SCANCODE_LEFTBRACKET
-|SDLK_LEFTBRACKET
-|-
-|"'''Left GUI'''" (windows, command (apple), meta)
-|SDL_SCANCODE_LGUI
-|SDLK_LGUI
-|-
-|"'''Left Shift'''"
-|SDL_SCANCODE_LSHIFT
-|SDLK_LSHIFT
 |-
 |"'''M'''"
 |SDL_SCANCODE_M
+|16
 |SDLK_m
-|-
-|"'''Mail'''" (the Mail/eMail key)
-|SDL_SCANCODE_MAIL
-|SDLK_MAIL
-|-
-|"'''MediaSelect'''" (the Media Select key)
-|SDL_SCANCODE_MEDIASELECT
-|SDLK_MEDIASELECT
-|-
-|"'''Menu'''"
-|SDL_SCANCODE_MENU
-|SDLK_MENU
-|-
-|"'''-'''"
-|SDL_SCANCODE_MINUS
-|SDLK_MINUS
-|-
-|"'''ModeSwitch'''"
-|SDL_SCANCODE_MODE
-|SDLK_MODE
-|-
-|"'''Mute'''"
-|SDL_SCANCODE_MUTE
-|SDLK_MUTE
 |-
 |"'''N'''"
 |SDL_SCANCODE_N
+|17
 |SDLK_n
-|-
-|"'''Numlock'''" (the Num Lock key (PC) / the Clear key (Mac))
-|SDL_SCANCODE_NUMLOCKCLEAR
-|SDLK_NUMLOCKCLEAR
 |-
 |"'''O'''"
 |SDL_SCANCODE_O
+|18
 |SDLK_o
-|-
-|"'''Oper'''"
-|SDL_SCANCODE_OPER
-|SDLK_OPER
-|-
-|"'''Out'''"
-|SDL_SCANCODE_OUT
-|SDLK_OUT
 |-
 |"'''P'''"
 |SDL_SCANCODE_P
+|19
 |SDLK_p
-|-
-|"'''PageDown'''"
-|SDL_SCANCODE_PAGEDOWN
-|SDLK_PAGEDOWN
-|-
-|"'''PageUp'''"
-|SDL_SCANCODE_PAGEUP
-|SDLK_PAGEUP
-|-
-|"'''Paste'''"
-|SDL_SCANCODE_PASTE
-|SDLK_PASTE
-|-
-|"'''Pause'''" (the Pause / Break key)
-|SDL_SCANCODE_PAUSE
-|SDLK_PAUSE
-|-
-|"'''.'''"
-|SDL_SCANCODE_PERIOD
-|SDLK_PERIOD
-|-
-|"'''Power'''" (The USB document says this is a status flag, not a physical key - but some Mac keyboards do have a power key.)
-|SDL_SCANCODE_POWER
-|SDLK_POWER
-|-
-|"'''PrintScreen'''"
-|SDL_SCANCODE_PRINTSCREEN
-|SDLK_PRINTSCREEN
-|-
-|"'''Prior'''"
-|SDL_SCANCODE_PRIOR
-|SDLK_PRIOR
 |-
 |"'''Q'''"
 |SDL_SCANCODE_Q
+|20
 |SDLK_q
 |-
 |"'''R'''"
 |SDL_SCANCODE_R
+|21
 |SDLK_r
-|-
-|"'''Right Alt'''" (alt gr, option)
-|SDL_SCANCODE_RALT
-|SDLK_RALT
-|-
-|"'''Right Ctrl'''"
-|SDL_SCANCODE_RCTRL
-|SDLK_RCTRL
-|-
-|"'''Return'''" (the Enter key (main keyboard))
-|SDL_SCANCODE_RETURN
-|SDLK_RETURN
-|-
-|"'''Return'''"
-|SDL_SCANCODE_RETURN2
-|SDLK_RETURN2
-|-
-|"'''Right GUI'''" (windows, command (apple), meta)
-|SDL_SCANCODE_RGUI
-|SDLK_RGUI
-|-
-|"'''Right'''" (the Right arrow key (navigation keypad))
-|SDL_SCANCODE_RIGHT
-|SDLK_RIGHT
-|-
-|"''']'''"
-|SDL_SCANCODE_RIGHTBRACKET
-|SDLK_RIGHTBRACKET
-|-
-|"'''Right Shift'''"
-|SDL_SCANCODE_RSHIFT
-|SDLK_RSHIFT
 |-
 |"'''S'''"
 |SDL_SCANCODE_S
+|22
 |SDLK_s
-|-
-|"'''ScrollLock'''"
-|SDL_SCANCODE_SCROLLLOCK
-|SDLK_SCROLLLOCK
-|-
-|"'''Select'''"
-|SDL_SCANCODE_SELECT
-|SDLK_SELECT
-|-
-|"''';'''"
-|SDL_SCANCODE_SEMICOLON
-|SDLK_SEMICOLON
-|-
-|"'''Separator'''"
-|SDL_SCANCODE_SEPARATOR
-|SDLK_SEPARATOR
-|-
-|"'''/'''"
-|SDL_SCANCODE_SLASH
-|SDLK_SLASH
-|-
-|"'''Sleep'''" (the Sleep key)
-|SDL_SCANCODE_SLEEP
-|SDLK_SLEEP
-|-
-|"'''Space'''" (the Space Bar key(s))
-|SDL_SCANCODE_SPACE
-|SDLK_SPACE
-|-
-|"'''Stop'''"
-|SDL_SCANCODE_STOP
-|SDLK_STOP
-|-
-|"'''SysReq'''" (the SysReq key)
-|SDL_SCANCODE_SYSREQ
-|SDLK_SYSREQ
 |-
 |"'''T'''"
 |SDL_SCANCODE_T
+|23
 |SDLK_t
-|-
-|"'''Tab'''" (the Tab key)
-|SDL_SCANCODE_TAB
-|SDLK_TAB
-|-
-|"'''ThousandsSeparator'''" (the Thousands Separator key)
-|SDL_SCANCODE_THOUSANDSSEPARATOR
-|SDLK_THOUSANDSSEPARATOR
 |-
 |"'''U'''"
 |SDL_SCANCODE_U
+|24
 |SDLK_u
-|-
-|"'''Undo'''"
-|SDL_SCANCODE_UNDO
-|SDLK_UNDO
-|-
-|"" (no name, empty string)
-|SDL_SCANCODE_UNKNOWN
-|SDLK_UNKNOWN
-|-
-|"'''Up'''" (the Up arrow key (navigation keypad))
-|SDL_SCANCODE_UP
-|SDLK_UP
 |-
 |"'''V'''"
 |SDL_SCANCODE_V
+|25
 |SDLK_v
-|-
-|"'''VolumeDown'''"
-|SDL_SCANCODE_VOLUMEDOWN
-|SDLK_VOLUMEDOWN
-|-
-|"'''VolumeUp'''"
-|SDL_SCANCODE_VOLUMEUP
-|SDLK_VOLUMEUP
 |-
 |"'''W'''"
 |SDL_SCANCODE_W
+|26
 |SDLK_w
-|-
-|"'''WWW'''" (the WWW/World Wide Web key)
-|SDL_SCANCODE_WWW
-|SDLK_WWW
 |-
 |"'''X'''"
 |SDL_SCANCODE_X
+|27
 |SDLK_x
 |-
 |"'''Y'''"
 |SDL_SCANCODE_Y
+|28
 |SDLK_y
 |-
 |"'''Z'''"
 |SDL_SCANCODE_Z
+|29
 |SDLK_z
 |-
-|''These physical keys do not have corresponding virtual key values''
+|"'''1'''"
+|SDL_SCANCODE_1
+|30
+|SDLK_1
 |-
-|"" (no name, empty string; used on Asian keyboards, see footnotes in USB doc)
-|SDL_SCANCODE_INTERNATIONAL1
-|''(none)''
+|"'''2'''"
+|SDL_SCANCODE_2
+|31
+|SDLK_2
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL2
-|''(none)''
+|"'''3'''"
+|SDL_SCANCODE_3
+|32
+|SDLK_3
 |-
-|"" (no name, empty string; Yen)
-|SDL_SCANCODE_INTERNATIONAL3
-|''(none)''
+|"'''4'''"
+|SDL_SCANCODE_4
+|33
+|SDLK_4
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL4
-|''(none)''
+|"'''5'''"
+|SDL_SCANCODE_5
+|34
+|SDLK_5
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL5
-|''(none)''
+|"'''6'''"
+|SDL_SCANCODE_6
+|35
+|SDLK_6
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL6
-|''(none)''
+|"'''7'''"
+|SDL_SCANCODE_7
+|36
+|SDLK_7
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL7
-|''(none)''
+|"'''8'''"
+|SDL_SCANCODE_8
+|37
+|SDLK_8
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL8
-|''(none)''
+|"'''9'''"
+|SDL_SCANCODE_9
+|38
+|SDLK_9
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_INTERNATIONAL9
-|''(none)''
+|"'''0'''"
+|SDL_SCANCODE_0
+|39
+|SDLK_0
 |-
-|"" (no name, empty string; Hangul/English toggle)
-|SDL_SCANCODE_LANG1
-|''(none)''
+|"'''Return'''"<br>(the Enter key (main keyboard))
+|SDL_SCANCODE_RETURN
+|40
+|SDLK_RETURN
 |-
-|"" (no name, empty string; Hanja conversion)
-|SDL_SCANCODE_LANG2
-|''(none)''
+|"'''Escape'''"<br>(the Esc key)
+|SDL_SCANCODE_ESCAPE
+|41
+|SDLK_ESCAPE
 |-
-|"" (no name, empty string; Katakana)
-|SDL_SCANCODE_LANG3
-|''(none)''
+|"'''Backspace'''"
+|SDL_SCANCODE_BACKSPACE
+|42
+|SDLK_BACKSPACE
 |-
-|"" (no name, empty string; Hiragana)
-|SDL_SCANCODE_LANG4
-|''(none)''
+|"'''Tab'''"<br>(the Tab key)
+|SDL_SCANCODE_TAB
+|43
+|SDLK_TAB
 |-
-|"" (no name, empty string; Zenkaku/Hankaku)
-|SDL_SCANCODE_LANG5
-|''(none)''
+|"'''Space'''"<br>(the Space Bar key(s))
+|SDL_SCANCODE_SPACE
+|44
+|SDLK_SPACE
 |-
-|"" (no name, empty string; reserved)
-|SDL_SCANCODE_LANG6
-|''(none)''
+|"'''-'''"
+|SDL_SCANCODE_MINUS
+|45
+|SDLK_MINUS
 |-
-|"" (no name, empty string; reserved)
-|SDL_SCANCODE_LANG7
-|''(none)''
+|"'''='''"
+|SDL_SCANCODE_EQUALS
+|46
+|SDLK_EQUALS
 |-
-|"" (no name, empty string; reserved)
-|SDL_SCANCODE_LANG8
-|''(none)''
+|"'''['''"
+|SDL_SCANCODE_LEFTBRACKET
+|47
+|SDLK_LEFTBRACKET
 |-
-|"" (no name, empty string; reserved)
-|SDL_SCANCODE_LANG9
-|''(none)''
+|"''']'''"
+|SDL_SCANCODE_RIGHTBRACKET
+|48
+|SDLK_RIGHTBRACKET
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_LOCKINGCAPSLOCK
-|''(none)''
+|"'''\'''"<br>(Located at the lower left of the return key on ISO keyboards and at the right end of the QWERTY row on ANSI keyboards. Produces REVERSE SOLIDUS (backslash) and VERTICAL LINE in a US layout, REVERSE SOLIDUS and VERTICAL LINE in a UK Mac layout, NUMBER SIGN and TILDE in a UK Windows layout, DOLLAR SIGN and POUND SIGN in a Swiss German layout, NUMBER SIGN and APOSTROPHE in a German layout, GRAVE ACCENT and POUND SIGN in a French Mac layout, and ASTERISK and MICRO SIGN in a French Windows layout.)
+|SDL_SCANCODE_BACKSLASH
+|49
+|SDLK_BACKSLASH
 |-
-|"" (no name, empty string)
-|SDL_SCANCODE_LOCKINGNUMLOCK
-|''(none)''
-|-
-|"" (no name, empty string)
-|SDL_SCANCODE_LOCKINGSCROLLLOCK
-|''(none)''
-|-
-|"" (no name, empty string; This is the additional key that ISO keyboards have over ANSI ones, located between left shift and Y. Produces GRAVE ACCENT and TILDE in a US or UK Mac layout, REVERSE SOLIDUS (backslash) and VERTICAL LINE in a US or UK Windows layout, and LESS-THAN SIGN and GREATER-THAN SIGN in a Swiss German, German, or French layout.)
-|SDL_SCANCODE_NONUSBACKSLASH
-|''(none)''
-|-
-|"'''#'''" (ISO USB keyboards actually use this code instead of 49 for the same key, but all OSes I've seen treat the two codes identically. So, as an implementor, unless your keyboard generates both of those codes and your OS treats them differently, you should generate SDL_SCANCODE_BACKSLASH instead of this code. As a user, you should not rely on this code because SDL will never generate it with most (all?) keyboards.)
+|"'''#'''"<br>(ISO USB keyboards actually use this code instead of 49 for the same key, but all OSes I've seen treat the two codes identically. So, as an implementor, unless your keyboard generates both of those codes and your OS treats them differently, you should generate SDL_SCANCODE_BACKSLASH instead of this code. As a user, you should not rely on this code because SDL will never generate it with most (all?) keyboards.)
 |SDL_SCANCODE_NONUSHASH
+|50
 |''(none)''
 |-
-|''These virtual key values do not have corresponding physical keys''
+|"''';'''"
+|SDL_SCANCODE_SEMICOLON
+|51
+|SDLK_SEMICOLON
+|-
+|"'"
+|SDL_SCANCODE_APOSTROPHE
+|52
+|SDLK_QUOTE
+|-
+|"'''`'''"<br>(Located in the top left corner (on both ANSI and ISO keyboards). Produces GRAVE ACCENT and TILDE in a US Windows layout and in US and UK Mac layouts on ANSI keyboards, GRAVE ACCENT and NOT SIGN in a UK Windows layout, SECTION SIGN and PLUS-MINUS SIGN in US and UK Mac layouts on ISO keyboards, SECTION SIGN and DEGREE SIGN in a Swiss German layout (Mac: only on ISO keyboards), CIRCUMFLEX ACCENT and DEGREE SIGN in a German layout (Mac: only on ISO keyboards), SUPERSCRIPT TWO and TILDE in a French Windows layout, COMMERCIAL AT and NUMBER SIGN in a French Mac layout on ISO keyboards, and LESS-THAN SIGN and GREATER-THAN SIGN in a Swiss German, German, or French Mac layout on ANSI keyboards.)
+|SDL_SCANCODE_GRAVE
+|53
+|SDLK_BACKQUOTE
+|-
+|"''','''"
+|SDL_SCANCODE_COMMA
+|54
+|SDLK_COMMA
+|-
+|"'''.'''"
+|SDL_SCANCODE_PERIOD
+|55
+|SDLK_PERIOD
+|-
+|"'''/'''"
+|SDL_SCANCODE_SLASH
+|56
+|SDLK_SLASH
+|-
+|"'''CapsLock'''"
+|SDL_SCANCODE_CAPSLOCK
+|57
+|SDLK_CAPSLOCK
+|-
+|"'''F1'''"
+|SDL_SCANCODE_F1
+|58
+|SDLK_F1
+|-
+|"'''F2'''"
+|SDL_SCANCODE_F2
+|59
+|SDLK_F2
+|-
+|"'''F3'''"
+|SDL_SCANCODE_F3
+|60
+|SDLK_F3
+|-
+|"'''F4'''"
+|SDL_SCANCODE_F4
+|61
+|SDLK_F4
+|-
+|"'''F5'''"
+|SDL_SCANCODE_F5
+|62
+|SDLK_F5
+|-
+|"'''F6'''"
+|SDL_SCANCODE_F6
+|63
+|SDLK_F6
+|-
+|"'''F7'''"
+|SDL_SCANCODE_F7
+|64
+|SDLK_F7
+|-
+|"'''F8'''"
+|SDL_SCANCODE_F8
+|65
+|SDLK_F8
+|-
+|"'''F9'''"
+|SDL_SCANCODE_F9
+|66
+|SDLK_F9
+|-
+|"'''F10'''"
+|SDL_SCANCODE_F10
+|67
+|SDLK_F10
+|-
+|"'''F11'''"
+|SDL_SCANCODE_F11
+|68
+|SDLK_F11
+|-
+|"'''F12'''"
+|SDL_SCANCODE_F12
+|69
+|SDLK_F12
+|-
+|"'''PrintScreen'''"
+|SDL_SCANCODE_PRINTSCREEN
+|70
+|SDLK_PRINTSCREEN
+|-
+|"'''ScrollLock'''"
+|SDL_SCANCODE_SCROLLLOCK
+|71
+|SDLK_SCROLLLOCK
+|-
+|"'''Pause'''"<br>(the Pause / Break key)
+|SDL_SCANCODE_PAUSE
+|72
+|SDLK_PAUSE
+|-
+|"'''Insert'''"<br>(insert on PC, help on some Mac keyboards (but does send code 73, not 117))
+|SDL_SCANCODE_INSERT
+|73
+|SDLK_INSERT
+|-
+|"'''Home'''"
+|SDL_SCANCODE_HOME
+|74
+|SDLK_HOME
+|-
+|"'''PageUp'''"
+|SDL_SCANCODE_PAGEUP
+|75
+|SDLK_PAGEUP
+|-
+|"'''Delete'''"
+|SDL_SCANCODE_DELETE
+|76
+|SDLK_DELETE
+|-
+|"'''End'''"
+|SDL_SCANCODE_END
+|77
+|SDLK_END
+|-
+|"'''PageDown'''"
+|SDL_SCANCODE_PAGEDOWN
+|78
+|SDLK_PAGEDOWN
+|-
+|"'''Right'''"<br>(the Right arrow key (navigation keypad))
+|SDL_SCANCODE_RIGHT
+|79
+|SDLK_RIGHT
+|-
+|"'''Left'''"<br>(the Left arrow key (navigation  keypad))
+|SDL_SCANCODE_LEFT
+|80
+|SDLK_LEFT
+|-
+|"'''Down'''"<br>(the Down arrow key (navigation keypad))
+|SDL_SCANCODE_DOWN
+|81
+|SDLK_DOWN
+|-
+|"'''Up'''"<br>(the Up arrow key (navigation keypad))
+|SDL_SCANCODE_UP
+|82
+|SDLK_UP
+|-
+|"'''Numlock'''"<br>(the Num Lock key (PC) / the Clear key (Mac))
+|SDL_SCANCODE_NUMLOCKCLEAR
+|83
+|SDLK_NUMLOCKCLEAR
+|-
+|"'''Keypad /'''"<br>(the / key (numeric keypad))
+|SDL_SCANCODE_KP_DIVIDE
+|84
+|SDLK_KP_DIVID
+|-
+|"'''Keypad *'''"<br>(the * key (numeric keypad))
+|SDL_SCANCODE_KP_MULTIPLY
+|85
+|SDLK_KP_MULTIPLY
+|-
+|"'''Keypad -'''"<br>(the 0-key (numeric keypad))
+|SDL_SCANCODE_KP_MINUS
+|86
+|SDLK_KP_MINUS
+|-
+|"'''Keypad +'''"<br>(the + key (numeric keypad))
+|SDL_SCANCODE_KP_PLUS
+|87
+|SDLK_KP_PLUS
+|-
+|"'''Keypad Enter'''"<br>(the Enter key (numeric keypad))
+|SDL_SCANCODE_KP_ENTER
+|88
+|SDLK_KP_ENTER
+|-
+|"'''Keypad 1'''"<br>(the 1 key (numeric keypad))
+|SDL_SCANCODE_KP_1
+|89
+|SDLK_KP_1
+|-
+|"'''Keypad 2'''"<br>(the 2 key (numeric keypad))
+|SDL_SCANCODE_KP_2
+|90
+|SDLK_KP_2
+|-
+|"'''Keypad 3'''"<br>(the 3 key (numeric keypad))
+|SDL_SCANCODE_KP_3
+|91
+|SDLK_KP_3
+|-
+|"'''Keypad 4'''"<br>(the 4 key (numeric keypad))
+|SDL_SCANCODE_KP_4
+|92
+|SDLK_KP_4
+|-
+|"'''Keypad 5'''"<br>(the 5 key (numeric keypad))
+|SDL_SCANCODE_KP_5
+|93
+|SDLK_KP_5
+|-
+|"'''Keypad 6'''"<br>(the 6 key (numeric keypad))
+|SDL_SCANCODE_KP_6
+|94
+|SDLK_KP_6
+|-
+|"'''Keypad 7'''"<br>(the 7 key (numeric keypad))
+|SDL_SCANCODE_KP_7
+|95
+|SDLK_KP_7
+|-
+|"'''Keypad 8'''"<br>(the 8 key (numeric keypad))
+|SDL_SCANCODE_KP_8
+|96
+|SDLK_KP_8
+|-
+|"'''Keypad 9'''"<br>(the 9 key (numeric keypad))
+|SDL_SCANCODE_KP_9
+|97
+|SDLK_KP_9
+|-
+|"'''Keypad 0'''"<br>(the 0 key (numeric keypad))
+|SDL_SCANCODE_KP_0
+|98
+|SDLK_KP_0
+|-
+|"'''Keypad .'''"<br>(the . key (numeric keypad))
+|SDL_SCANCODE_KP_PERIOD
+|99
+|SDLK_KP_PERIOD
+|-
+|""<br>(no name, empty string; This is the additional key that ISO keyboards have over ANSI ones, located between left shift and Y. Produces GRAVE ACCENT and TILDE in a US or UK Mac layout, REVERSE SOLIDUS (backslash) and VERTICAL LINE in a US or UK Windows layout, and LESS-THAN SIGN and GREATER-THAN SIGN in a Swiss German, German, or French layout.)
+|SDL_SCANCODE_NONUSBACKSLASH
+|100
+|''(none)''
+|-
+|"'''Application'''"<br>(the Application / Compose / Context Menu (Windows) key)
+|SDL_SCANCODE_APPLICATION
+|101
+|SDLK_APPLICATION
+|-
+|"'''Power'''"<br>(The USB document says this is a status flag, not a physical key - but some Mac keyboards do have a power key.)
+|SDL_SCANCODE_POWER
+|102
+|SDLK_POWER
+|-
+|"'''Keypad ='''"<br>(the = key (numeric keypad))
+|SDL_SCANCODE_KP_EQUALS
+|103
+|SDLK_KP_EQUALS
+|-
+|"'''F13'''"
+|SDL_SCANCODE_F13
+|104
+|SDLK_F13
+|-
+|"'''F14'''"
+|SDL_SCANCODE_F14
+|105
+|SDLK_F14
+|-
+|"'''F15'''"
+|SDL_SCANCODE_F15
+|106
+|SDLK_F15
+|-
+|"'''F16'''"
+|SDL_SCANCODE_F16
+|107
+|SDLK_F16
+|-
+|"'''F17'''"
+|SDL_SCANCODE_F17
+|108
+|SDLK_F17
+|-
+|"'''F18'''"
+|SDL_SCANCODE_F18
+|109
+|SDLK_F18
+|-
+|"'''F19'''"
+|SDL_SCANCODE_F19
+|110
+|SDLK_F19
+|-
+|"'''F20'''"
+|SDL_SCANCODE_F20
+|111
+|SDLK_F20
+|-
+|"'''F21'''"
+|SDL_SCANCODE_F21
+|112
+|SDLK_F21
+|-
+|"'''F22'''"
+|SDL_SCANCODE_F22
+|113
+|SDLK_F22
+|-
+|"'''F23'''"
+|SDL_SCANCODE_F23
+|114
+|SDLK_F23
+|-
+|"'''F24'''"
+|SDL_SCANCODE_F24
+|115
+|SDLK_F24
+|-
+|"'''Execute'''"
+|SDL_SCANCODE_EXECUTE
+|116
+|SDLK_EXECUTE
+|-
+|"'''Help'''"
+|SDL_SCANCODE_HELP
+|117
+|SDLK_HELP
+|-
+|"'''Menu'''"
+|SDL_SCANCODE_MENU
+|118
+|SDLK_MENU
+|-
+|"'''Select'''"
+|SDL_SCANCODE_SELECT
+|119
+|SDLK_SELECT
+|-
+|"'''Stop'''"
+|SDL_SCANCODE_STOP
+|120
+|SDLK_STOP
+|-
+|"'''Again'''"<br>(the Again key (Redo))
+|SDL_SCANCODE_AGAIN
+|121
+|SDLK_AGAIN
+|-
+|"'''Undo'''"
+|SDL_SCANCODE_UNDO
+|122
+|SDLK_UNDO
+|-
+|"'''Cut'''"
+|SDL_SCANCODE_CUT
+|123
+|SDLK_CUT
+|-
+|"'''Copy'''"
+|SDL_SCANCODE_COPY
+|124
+|SDLK_COPY
+|-
+|"'''Paste'''"
+|SDL_SCANCODE_PASTE
+|125
+|SDLK_PASTE
+|-
+|"'''Find'''"
+|SDL_SCANCODE_FIND
+|126
+|SDLK_FIND
+|-
+|"'''Mute'''"
+|SDL_SCANCODE_MUTE
+|127
+|SDLK_MUTE
+|-
+|"'''VolumeUp'''"
+|SDL_SCANCODE_VOLUMEUP
+|128
+|SDLK_VOLUMEUP
+|-
+|"'''VolumeDown'''"
+|SDL_SCANCODE_VOLUMEDOWN
+|129
+|SDLK_VOLUMEDOWN
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_LOCKINGCAPSLOCK
+|130
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_LOCKINGNUMLOCK
+|131
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_LOCKINGSCROLLLOCK
+|132
+|''(none)''
+|-
+|"'''Keypad ,'''"<br>(the Comma key (numeric keypad))
+|SDL_SCANCODE_KP_COMMA
+|133
+|SDLK_KP_COMMA
+|-
+|"'''Keypad = (AS400)'''"<br>(the Equals AS400 key (numeric keypad))
+|SDL_SCANCODE_KP_EQUALSAS400
+|134
+|SDLK_KP_EQUALSAS400
+|-
+|""<br>(no name, empty string; used on Asian keyboards, see footnotes in USB doc)
+|SDL_SCANCODE_INTERNATIONAL1
+|135
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL2
+|136
+|''(none)''
+|-
+|""<br>(no name, empty string; Yen)
+|SDL_SCANCODE_INTERNATIONAL3
+|137
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL4
+|138
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL5
+|139
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL6
+|140
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL7
+|141
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL8
+|142
+|''(none)''
+|-
+|""<br>(no name, empty string)
+|SDL_SCANCODE_INTERNATIONAL9
+|143
+|''(none)''
+|-
+|""<br>(no name, empty string; Hangul/English toggle)
+|SDL_SCANCODE_LANG1
+|144
+|''(none)''
+|-
+|""<br>(no name, empty string; Hanja conversion)
+|SDL_SCANCODE_LANG2
+|145
+|''(none)''
+|-
+|""<br>(no name, empty string; Katakana)
+|SDL_SCANCODE_LANG3
+|146
+|''(none)''
+|-
+|""<br>(no name, empty string; Hiragana)
+|SDL_SCANCODE_LANG4
+|147
+|''(none)''
+|-
+|""<br>(no name, empty string; Zenkaku/Hankaku)
+|SDL_SCANCODE_LANG5
+|148
+|''(none)''
+|-
+|""<br>(no name, empty string; reserved)
+|SDL_SCANCODE_LANG6
+|149
+|''(none)''
+|-
+|""<br>(no name, empty string; reserved)
+|SDL_SCANCODE_LANG7
+|150
+|''(none)''
+|-
+|""<br>(no name, empty string; reserved)
+|SDL_SCANCODE_LANG8
+|151
+|''(none)''
+|-
+|""<br>(no name, empty string; reserved)
+|SDL_SCANCODE_LANG9
+|152
+|''(none)''
+|-
+|"'''AltErase'''"<br>(Erase-Eaze)
+|SDL_SCANCODE_ALTERASE
+|153
+|SDLK_ALTERASE
+|-
+|"'''SysReq'''"<br>(the SysReq key)
+|SDL_SCANCODE_SYSREQ
+|154
+|SDLK_SYSREQ
+|-
+|"'''Cancel'''"
+|SDL_SCANCODE_CANCEL
+|155
+|SDLK_CANCEL
+|-
+|"'''Clear'''"
+|SDL_SCANCODE_CLEAR
+|156
+|SDLK_CLEAR
+|-
+|"'''Prior'''"
+|SDL_SCANCODE_PRIOR
+|157
+|SDLK_PRIOR
+|-
+|"'''Return'''"
+|SDL_SCANCODE_RETURN2
+|158
+|SDLK_RETURN2
+|-
+|"'''Separator'''"
+|SDL_SCANCODE_SEPARATOR
+|159
+|SDLK_SEPARATOR
+|-
+|"'''Out'''"
+|SDL_SCANCODE_OUT
+|160
+|SDLK_OUT
+|-
+|"'''Oper'''"
+|SDL_SCANCODE_OPER
+|161
+|SDLK_OPER
+|-
+|"'''Clear / Again'''"
+|SDL_SCANCODE_CLEARAGAIN
+|162
+|SDLK_CLEARAGAIN
+|-
+|"'''CrSel'''"
+|SDL_SCANCODE_CRSEL
+|163
+|SDLK_CRSEL
+|-
+|"'''ExSel'''"
+|SDL_SCANCODE_EXSEL
+|164
+|SDLK_EXSEL
+|-
+|"'''Keypad 00'''"<br>(the 00 key (numeric keypad))
+|SDL_SCANCODE_KP_00
+|176
+|SDLK_KP_00
+|-
+|"'''Keypad 000'''"<br>(the 000 key (numeric keypad))
+|SDL_SCANCODE_KP_000
+|177
+|SDLK_KP_000
+|-
+|"'''ThousandsSeparator'''"<br>(the Thousands Separator key)
+|SDL_SCANCODE_THOUSANDSSEPARATOR
+|178
+|SDLK_THOUSANDSSEPARATOR
+|-
+|"'''DecimalSeparator'''"<br>(the Decimal Separator key)
+|SDL_SCANCODE_DECIMALSEPARATOR
+|179
+|SDLK_DECIMALSEPARATOR
+|-
+|"'''CurrencyUnit'''"<br>(the Currency Unit key)
+|SDL_SCANCODE_CURRENCYUNIT
+|180
+|SDLK_CURRENCYUNIT
+|-
+|"'''CurrencySubUnit'''"<br>(the Currency Subunit key)
+|SDL_SCANCODE_CURRENCYSUBUNIT
+|181
+|SDLK_CURRENCYSUBUNIT
+|-
+|"'''Keypad ('''"<br>(the Left Parenthesis key (numeric keypad))
+|SDL_SCANCODE_KP_LEFTPAREN
+|182
+|SDLK_KP_LEFTPAREN
+|-
+|"'''Keypad )'''"<br>(the Right Parenthesis key (numeric keypad))
+|SDL_SCANCODE_KP_RIGHTPAREN
+|183
+|SDLK_KP_RIGHTPAREN
+|-
+|"'''Keypad {'''"<br>(the Left Brace key (numeric keypad))
+|SDL_SCANCODE_KP_LEFTBRACE
+|184
+|SDLK_KP_LEFTBRACE
+|-
+|"'''Keypad }'''"<br>(the Right Brace key (numeric keypad))
+|SDL_SCANCODE_KP_RIGHTBRACE
+|185
+|SDLK_KP_RIGHTBRACE
+|-
+|"'''Keypad Tab'''"<br>(the Tab key (numeric keypad))
+|SDL_SCANCODE_KP_TAB
+|186
+|SDLK_KP_TAB
+|-
+|"'''Keypad Backspace'''"<br>(the Backspace key (numeric keypad))
+|SDL_SCANCODE_KP_BACKSPACE
+|187
+|SDLK_KP_BACKSPACE
+|-
+|"'''Keypad A'''"<br>(the A key (numeric keypad))
+|SDL_SCANCODE_KP_A
+|188
+|SDLK_KP_A
+|-
+|"'''Keypad B'''"<br>(the B key (numeric keypad))
+|SDL_SCANCODE_KP_B
+|189
+|SDLK_KP_B
+|-
+|"'''Keypad C'''"<br>(the C key (numeric keypad))
+|SDL_SCANCODE_KP_C
+|190
+|SDLK_KP_C
+|-
+|"'''Keypad D'''"<br>(the D key (numeric keypad))
+|SDL_SCANCODE_KP_D
+|191
+|SDLK_KP_D
+|-
+|"'''Keypad E'''"<br>(the E key (numeric keypad))
+|SDL_SCANCODE_KP_E
+|192
+|SDLK_KP_E
+|-
+|"'''Keypad F'''"<br>(the F key (numeric keypad))
+|SDL_SCANCODE_KP_F
+|193
+|SDLK_KP_F
+|-
+|"'''Keypad XOR'''"<br>(the XOR key (numeric keypad))
+|SDL_SCANCODE_KP_XOR
+|194
+|SDLK_KP_XOR
+|-
+|"'''Keypad ^'''"<br>(the Power key (numeric keypad))
+|SDL_SCANCODE_KP_POWER
+|195
+|SDLK_KP_POWER
+|-
+|"'''Keypad %'''"<br>(the Percent key (numeric keypad))
+|SDL_SCANCODE_KP_PERCENT
+|196
+|SDLK_KP_PERCENT
+|-
+|"'''Keypad <'''"<br>(the Less key (numeric keypad))
+|SDL_SCANCODE_KP_LESS
+|197
+|SDLK_KP_LESS
+|-
+|"'''Keypad >'''"<br>(the Greater key (numeric keypad))
+|SDL_SCANCODE_KP_GREATER
+|198
+|SDLK_KP_GREATER
+|-
+|"'''Keypad &'''"<br>(the & key (numeric keypad))
+|SDL_SCANCODE_KP_AMPERSAND
+|199
+|SDLK_KP_AMPERSAND
+|-
+|"'''Keypad &&'''"<br>(the && key (numeric keypad))
+|SDL_SCANCODE_KP_DBLAMPERSAND
+|200
+|SDLK_KP_DBLAMPERSAND
+|-
+|"'''Keypad &#124;'''"<br>(the &#124; key (numeric keypad))
+|SDL_SCANCODE_KP_VERTICALBAR
+|201
+|SDLK_KP_VERTICALBAR
+|-
+|"'''Keypad &#124;&#124;'''"<br>(the &#124;&#124; key (numeric keypad))
+|SDL_SCANCODE_KP_DBLVERTICALBAR
+|202
+|SDLK_KP_DBLVERTICALBAR
+|-
+|"'''Keypad :'''"<br>(the : key (numeric keypad))
+|SDL_SCANCODE_KP_COLON
+|203
+|SDLK_KP_COLON
+|-
+|"'''Keypad #'''"<br>(the # key (numeric keypad))
+|SDL_SCANCODE_KP_HASH
+|204
+|SDLK_KP_HASH
+|-
+|"'''Keypad Space'''"<br>(the Space key (numeric keypad))
+|SDL_SCANCODE_KP_SPACE
+|205
+|SDLK_KP_SPACE
+|-
+|"'''Keypad @'''"<br>(the @ key (numeric keypad))
+|SDL_SCANCODE_KP_AT
+|206
+|SDLK_KP_AT
+|-
+|"'''Keypad !'''"<br>(the ! key (numeric keypad))
+|SDL_SCANCODE_KP_EXCLAM
+|207
+|SDLK_KP_EXCLAM
+|-
+|"'''Keypad MemStore'''"<br>(the Mem Store key (numeric keypad))
+|SDL_SCANCODE_KP_MEMSTORE
+|208
+|SDLK_KP_MEMSTORE
+|-
+|"'''Keypad MemRecall'''"<br>(the Mem Recall key (numeric keypad))
+|SDL_SCANCODE_KP_MEMRECALL
+|209
+|SDLK_KP_MEMRECALL
+|-
+|"'''Keypad MemClear'''"<br>(the Mem Clear key (numeric keypad))
+|SDL_SCANCODE_KP_MEMCLEAR
+|210
+|SDLK_KP_MEMCLEAR
+|-
+|"'''Keypad MemAdd'''"<br>(the Mem Add key (numeric keypad))
+|SDL_SCANCODE_KP_MEMADD
+|211
+|SDLK_KP_MEMADD
+|-
+|"'''Keypad MemSubtract'''"<br>(the MemSubtract key (numeric keypad))
+|SDL_SCANCODE_KP_MEMSUBTRACT
+|212
+|SDLK_KP_MEMSUBTRACT
+|-
+|"'''Keypad MemMultiply'''"<br>(the Mem Multiply key (numeric keypad))
+|SDL_SCANCODE_KP_MEMMULTIPLY
+|213
+|SDLK_KP_MEMMULTIPLY
+|-
+|"'''Keypad MemDivide'''"<br>(the Mem Divide key (numeric keypad))
+|SDL_SCANCODE_KP_MEMDIVIDE
+|214
+|SDLK_KP_MEMDIVIDE
+|-
+|"'''Keypad +/-'''"<br>(the +/- key (numeric keypad))
+|SDL_SCANCODE_KP_PLUSMINUS
+|215
+|SDLK_KP_PLUSMINUS
+|-
+|"'''Keypad Clear'''"<br>(the Clear key (numeric keypad))
+|SDL_SCANCODE_KP_CLEAR
+|216
+|SDLK_KP_CLEAR
+|-
+|"'''Keypad ClearEntry'''"<br>(the Clear Entry key (numeric keypad))
+|SDL_SCANCODE_KP_CLEARENTRY
+|217
+|SDLK_KP_CLEARENTRY
+|-
+|"'''Keypad Binary'''"<br>(the Binary key (numeric keypad))
+|SDL_SCANCODE_KP_BINARY
+|218
+|SDLK_KP_BINARY
+|-
+|"'''Keypad Octal'''"<br>(the Octal key (numeric keypad))
+|SDL_SCANCODE_KP_OCTAL
+|219
+|SDLK_KP_OCTAL
+|-
+|"'''Keypad Decimal'''"<br>(the Decimal key (numeric keypad))
+|SDL_SCANCODE_KP_DECIMAL
+|220
+|SDLK_KP_DECIMAL
+|-
+|"'''Keypad Hexadecimal'''"<br>(the Hexadecimal key (numeric keypad))
+|SDL_SCANCODE_KP_HEXADECIMAL
+|221
+|SDLK_KP_HEXADECIMAL
+|-
+|"'''Left Ctrl'''"
+|SDL_SCANCODE_LCTRL
+|224
+|SDLK_LCTRL
+|-
+|"'''Left Shift'''"
+|SDL_SCANCODE_LSHIFT
+|225
+|SDLK_LSHIFT
+|-
+|"'''Left Alt'''"
+|SDL_SCANCODE_LALT
+|226
+|SDLK_LALT
+|-
+|"'''Left GUI'''"<br>(windows, command (apple), meta)
+|SDL_SCANCODE_LGUI
+|227
+|SDLK_LGUI
+|-
+|"'''Right Ctrl'''"
+|SDL_SCANCODE_RCTRL
+|228
+|SDLK_RCTRL
+|-
+|"'''Right Shift'''"
+|SDL_SCANCODE_RSHIFT
+|229
+|SDLK_RSHIFT
+|-
+|"'''Right Alt'''"<br>(alt gr, option)
+|SDL_SCANCODE_RALT
+|230
+|SDLK_RALT
+|-
+|"'''Right GUI'''"<br>(windows, command (apple), meta)
+|SDL_SCANCODE_RGUI
+|231
+|SDLK_RGUI
+|-
+|"'''ModeSwitch'''"
+|SDL_SCANCODE_MODE
+|257
+|SDLK_MODE
+|-
+|"'''AudioNext'''"<br>(the Next Track media key)
+|SDL_SCANCODE_AUDIONEXT
+|258
+|SDLK_AUDIONEXT
+|-
+|"'''AudioPrev'''"<br>(the Previous Track media key)
+|SDL_SCANCODE_AUDIOPREV
+|259
+|SDLK_AUDIOPREV
+|-
+|"'''AudioStop'''"<br>(the Stop media key)
+|SDL_SCANCODE_AUDIOSTOP
+|260
+|SDLK_AUDIOSTOP
+|-
+|"'''AudioPlay'''"<br>(the Play media key)
+|SDL_SCANCODE_AUDIOPLAY
+|261
+|SDLK_AUDIOPLAY
+|-
+|"'''AudioMute'''"<br>(the Mute volume key)
+|SDL_SCANCODE_AUDIOMUTE
+|262
+|SDLK_AUDIOMUTE
+|-
+|"'''MediaSelect'''"<br>(the Media Select key)
+|SDL_SCANCODE_MEDIASELECT
+|263
+|SDLK_MEDIASELECT
+|-
+|"'''WWW'''"<br>(the WWW/World Wide Web key)
+|SDL_SCANCODE_WWW
+|264
+|SDLK_WWW
+|-
+|"'''Mail'''"<br>(the Mail/eMail key)
+|SDL_SCANCODE_MAIL
+|265
+|SDLK_MAIL
+|-
+|"'''Calculator'''"<br>(the Calculator key)
+|SDL_SCANCODE_CALCULATOR
+|266
+|SDLK_CALCULATOR
+|-
+|"'''Computer'''"<br>(the My Computer key)
+|SDL_SCANCODE_COMPUTER
+|267
+|SDLK_COMPUTER
+|-
+|"'''AC Search'''"<br>(the Search key (application control keypad))
+|SDL_SCANCODE_AC_SEARCH
+|268
+|SDLK_AC_SEARCH
+|-
+|"'''AC Home'''"<br>(the Home key (application control keypad))
+|SDL_SCANCODE_AC_HOME
+|269
+|SDLK_AC_HOME
+|-
+|"'''AC Back'''"<br>(the Back key (application control keypad))
+|SDL_SCANCODE_AC_BACK
+|270
+|SDLK_AC_BACK
+|-
+|"'''AC Forward'''"<br>(the Forward key (application control keypad))
+|SDL_SCANCODE_AC_FORWARD
+|271
+|SDLK_AC_FORWARD
+|-
+|"'''AC Stop'''"<br>(the Stop key (application control keypad))
+|SDL_SCANCODE_AC_STOP
+|272
+|SDLK_AC_STOP
+|-
+|"'''AC Refresh'''"<br>(the Refresh key (application control keypad))
+|SDL_SCANCODE_AC_REFRESH
+|273
+|SDLK_AC_REFRESH
+|-
+|"'''AC Bookmarks'''"<br>(the Bookmarks key (application control keypad))
+|SDL_SCANCODE_AC_BOOKMARKS
+|274
+|SDLK_AC_BOOKMARKS
+|-
+|"'''BrightnessDown'''"<br>(the Brightness Down key)
+|SDL_SCANCODE_BRIGHTNESSDOWN
+|275
+|SDLK_BRIGHTNESSDOWN
+|-
+|"'''BrightnessUp'''"<br>(the Brightness Up key)
+|SDL_SCANCODE_BRIGHTNESSUP
+|276
+|SDLK_BRIGHTNESSUP
+|-
+|"'''DisplaySwitch'''"<br>(display mirroring/dual display switch, video mode switch)
+|SDL_SCANCODE_DISPLAYSWITCH
+|277
+|SDLK_DISPLAYSWITCH
+|-
+|"'''KBDIllumToggle'''"<br>(the Keyboard Illumination Toggle key)
+|SDL_SCANCODE_KBDILLUMTOGGLE
+|278
+|SDLK_KBDILLUMTOGGLE
+|-
+|"'''KBDIllumDown'''"<br>(the Keyboard Illumination Down key)
+|SDL_SCANCODE_KBDILLUMDOWN
+|279
+|SDLK_KBDILLUMDOWN
+|-
+|"'''KBDIllumUp'''"<br>(the Keyboard Illumination Up key)
+|SDL_SCANCODE_KBDILLUMUP
+|280
+|SDLK_KBDILLUMUP
+|-
+|"'''Eject'''"<br>(the Eject key)
+|SDL_SCANCODE_EJECT
+|281
+|SDLK_EJECT
+|-
+|"'''Sleep'''"<br>(the Sleep key)
+|SDL_SCANCODE_SLEEP
+|282
+|SDLK_SLEEP
+|}
+<br>
+''These virtual key values do not have corresponding physical keys''
+{|
+|''Key Name''
+|''SDL_Scancode Value''
+|''SDL_Keycode Value''
 |-
 |"'''&'''"
 |''(none)''
@@ -1053,6 +1299,7 @@ An enumeration of the SDL keyboard scancode representation.
 |''(none)''
 |SDLK_UNDERSCORE
 |}
+
 == Code Examples ==
 <syntaxhighlight lang='c++'>
   /* checks if a key is being remapped and prints what the remapping is */
