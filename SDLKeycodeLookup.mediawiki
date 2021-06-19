@@ -954,5 +954,7 @@ Keycodes for keys with printable characters are represented by the character byt
 |-
 |1073742106
 |0x4000011A
-|SDLK_SLEEP----
+|SDLK_SLEEP
+|}
+----
 [[CategoryDraft]]
