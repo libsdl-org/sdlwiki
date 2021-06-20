@@ -24,7 +24,7 @@ A structure that contains keyboard text input event information.
 == Remarks ==
 [[SDL_TextInputEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported. You would access it through the event's <code>text</code> field.
 
-There is a [[Tutorials/TextInput|tutorial]].
+There is a [[Tutorials-TextInput|tutorial]].
 
 '''Detailed explanation''' (from [http://lists.libsdl.org/pipermail/sdl-libsdl.org/2013-August/090073.html SDL mailing list] by Jiang Jiang <gzjjgod at gmail.com>)
 
