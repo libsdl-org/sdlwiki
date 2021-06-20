@@ -69,7 +69,7 @@ There are a number of SDL tutorials available from different sources.
 
 == Input ==
 
-* [[Tutorials/TextInput|Text Input]]
+* [[Tutorials-TextInput|Text Input]]
 : Using SDL for text inputs with specific consideration for international users
 
 == Threads ==
