@@ -1,4 +1,3 @@
-
 = SDL_Keysym =
 A structure that contains key information used in key events.
 
@@ -17,9 +16,9 @@ A structure that contains key information used in key events.
 |'''mod'''
 |current key modifiers; see [[SDL_Keymod]] for details
 |-
-|<style="color: #808080;">Uint32
-|<style="color: #808080;">'''unused'''
-|<style="color: #808080;">
+|<span style="color:#808080;">Uint32</span>
+|<span style="color:#808080;">'''unused'''</span>
+|
 |}
 == Related Enumerations ==
 :[[SDL_Keycode]]
