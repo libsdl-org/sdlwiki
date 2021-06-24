@@ -52,7 +52,7 @@ An (experimental!) alternative to the configure script is the CMake project file
 
 Once you have the library installed, you can use the sdl2-config program to help you compile your own code:
 
-     <syntaxhighlight lang="bash">gcc -o myprogram myprogram.c sdl2-config --cflags --libs</syntaxhighlight>
+     <syntaxhighlight lang="bash">gcc -o myprogram myprogram.c `sdl2-config --cflags --libs`</syntaxhighlight>
 
 SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See [https://hg.libsdl.org/SDL/file/default/docs/README-linux.md docs/README-linux.md] for more details.
 
