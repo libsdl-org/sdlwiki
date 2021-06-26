@@ -23,7 +23,7 @@ You can submit bug reports to [https://github.com/libsdl-org/SDL/issues SDL's Gi
 We run a Discourse server [https://discourse.libsdl.org/ here], which can be put in "Mailing List Mode," where you create an account on the website, flip a switch in the preferences, and then can interact exclusively through email thereafter.
 
 == Is there an IRC channel? ==
-Yes, you can find people hanging out on the IRC server at irc.freenode.net on the channel #SDL
+Yes, you can find people hanging out on the IRC server at irc.libera.chat on the channel #SDL
 
 == Is there a Discord server? ==
 Yes, [https://discordapp.com/invite/F6mPUgc go here]!
