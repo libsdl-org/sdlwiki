@@ -1,4 +1,3 @@
-
 = SDL_AudioFormat =
 An enumeration of audio formats.
 
@@ -6,7 +5,7 @@ An enumeration of audio formats.
 == Values ==
 === Bit Meanings ===
 These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
-```
+
  +----------------------sample is signed if set
  |
  |        +----------sample is bigendian if set
@@ -15,8 +14,8 @@ These are what the 16 bits in [[SDL_AudioFormat]] currently mean:
  |        |           |
  |        |           |  +--sample bit size---+
  |        |           |  |                    |
-15 14 13 12 11 10  9  8  7  6  5  4  3  2  1  0
-```
+ 15 14 13 12 11 10 9  8  7  6  5  4  3  2  1  0
+
 Unspecified bits are always zero, but may be used in later versions of SDL.  There are macros to query the specified bits.
 
 === Audio Format Macros ===
