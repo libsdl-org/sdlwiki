@@ -25,19 +25,19 @@ There are a number of SDL tutorials available from different sources.
 * [https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa Remaking Cavestory in C++]
 : Video tutorial series on recreating Cave Story using SDL
 
-* [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2. Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
+* [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2%2e Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
 : An example of a project upgrade from SDL 1.2 to SDL 2.0
 
 == Setup ==
-* https://www.youtube.com/watch?v=wWGtuc5uqF4
+* [https://www.youtube.com/watch?v=wWGtuc5uqF4 How to setup Codeblocks mingw SDL2.0]
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler
 
-* https://www.youtube.com/watch?v=UwpZOwT9nVc
+* [https://www.youtube.com/watch?v=UwpZOwT9nVc How to setup Codeblocks mingw, SDL2.0 Opengl 3+ and GLEW simple project included.]
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler with OpenGL 3.0+ & compiling GLEW libraries
 
 == Android ==
 
-* http://www.dinomage.com/2013/01/howto-sdl-on-android/
+* [http://www.dinomage.com/2013/01/howto-sdl-on-android/ HowTo: SDL on Android]
 : An example of setting up SDL on Android
 
 * [https://web.archive.org/web/20180127022200/http://blog.stuff-o-matic.com/post/2013/10/20/ASGP-s-Android-Port-Part-IV%3A-building-the-APK Building an Android application using the SDL] (Archived)
@@ -64,7 +64,7 @@ There are a number of SDL tutorials available from different sources.
 
 == Haptic ==
 
-* https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic (Archived)
+* [https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic SDL Haptic in depth] (Archived)
 : Covers the basics of how to create and playback simple force feedback effects with SDL
 
 == Input ==
@@ -79,5 +79,5 @@ There are a number of SDL tutorials available from different sources.
 
 == libSDL2pp ==
 
-* https://github.com/libSDL2pp/libSDL2pp-tutorial
+* [https://github.com/libSDL2pp/libSDL2pp-tutorial libSDL2pp]
 : Tutorial for libSDL2pp, C++11 bindings/wrapper for SDL2
