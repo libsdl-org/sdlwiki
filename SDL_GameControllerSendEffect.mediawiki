@@ -1,0 +1,31 @@
+= SDL_GameControllerSendEffect =
+
+Send a controller specific effect packet 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_GameControllerSendEffect(SDL_GameController *gamecontroller, const void *data, int size);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''gamecontroller'''
+|The controller to affect
+|-
+|'''data'''
+|The data to send to the controller
+|-
+|'''size'''
+|The size of the data to send to the controller
+|}
+
+== Return Value ==
+
+Returns 0, or -1 if this controller or driver doesn't support effect
+packets
+
+
+
+
