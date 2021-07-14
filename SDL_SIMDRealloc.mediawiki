@@ -20,7 +20,7 @@ void * SDL_SIMDRealloc(void *mem, const size_t len);
 
 == Return Value ==
 
-Returns Pointer to newly-reallocated block, NULL if out of memory.
+Returns a pointer to the newly-reallocated block, NULL if out of memory.
 
 == Remarks ==
 

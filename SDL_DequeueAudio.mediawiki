@@ -31,8 +31,8 @@ Uint32 SDL_DequeueAudio(SDL_AudioDeviceID dev, void *data, Uint32 len);
 
 == Return Value ==
 
-Returns number of bytes dequeued, which could be less than requested; call
-[[SDL_GetError]]() for more information.
+Returns the number of bytes dequeued, which could be less than requested;
+call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 

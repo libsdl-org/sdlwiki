@@ -17,7 +17,7 @@ const char * SDL_GameControllerGetSerial(SDL_GameController *gamecontroller);
 
 == Return Value ==
 
-Return Serial number, or NULL if unavailable.
+Return the serial number, or NULL if unavailable.
 
 == Remarks ==
 

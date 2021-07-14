@@ -17,7 +17,7 @@ const char* SDL_SensorGetName(SDL_Sensor *sensor);
 
 == Return Value ==
 
-Returns The sensor name, or NULL if <code>sensor</code> is NULL.
+Returns the sensor name, or NULL if <code>sensor</code> is NULL.
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

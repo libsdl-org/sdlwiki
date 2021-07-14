@@ -17,8 +17,8 @@ void* SDL_RenderGetMetalLayer(SDL_Renderer * renderer);
 
 == Return Value ==
 
-Returns CAMetalLayer* on success, or NULL if the renderer isn't a Metal
-renderer
+Returns a <code>CAMetalLayer *</code> on success, or NULL if the renderer
+isn't a Metal renderer
 
 == Remarks ==
 

@@ -17,7 +17,7 @@ Uint16 SDL_GameControllerGetProductVersion(SDL_GameController *gamecontroller);
 
 == Return Value ==
 
-Return USB product version, or zero if unavailable.
+Return the USB product version, or zero if unavailable.
 
 == Remarks ==
 

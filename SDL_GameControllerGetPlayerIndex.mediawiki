@@ -17,7 +17,7 @@ int SDL_GameControllerGetPlayerIndex(SDL_GameController *gamecontroller);
 
 == Return Value ==
 
-Returns player index for controller, or -1 if it's not available.
+Returns the player index for controller, or -1 if it's not available.
 
 == Remarks ==
 

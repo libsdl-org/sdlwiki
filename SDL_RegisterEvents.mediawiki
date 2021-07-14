@@ -17,7 +17,7 @@ Uint32 SDL_RegisterEvents(int numevents);
 
 == Return Value ==
 
-Returns The beginning event number, or (Uint32)-1 if there are not enough
+Returns the beginning event number, or (Uint32)-1 if there are not enough
 user-defined events left.
 
 == Remarks ==

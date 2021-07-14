@@ -10,7 +10,7 @@ void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
 
 == Return Value ==
 
-Returns The function pointer for <code>vkGetInstanceProcAddr</code> or NULL
+Returns the function pointer for <code>vkGetInstanceProcAddr</code> or NULL
 on error.
 
 == Remarks ==

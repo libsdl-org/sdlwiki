@@ -10,6 +10,6 @@ SDL_WinRT_DeviceFamily SDL_WinRTGetDeviceFamily();
 
 == Return Value ==
 
-Returns A value from the [[SDL_WinRT_DeviceFamily]] enum.
+Returns a value from the [[SDL_WinRT_DeviceFamily]] enum.
 
 
