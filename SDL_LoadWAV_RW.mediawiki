@@ -90,7 +90,7 @@ will be set.
 
 It is required that the data source supports seeking.
 
-Example: 
+Example:
 
 <syntaxhighlight lang='c++'>
 SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, &spec, &buf, &len);

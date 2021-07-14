@@ -30,7 +30,7 @@ not reference a valid shaped window.
 == Related Functions ==
 
 :[[SDL_WindowShapeMode]]
-:[[SDL_GetShapedWindowMode.]]
+:[[SDL_GetShapedWindowMode]]
 
 
 

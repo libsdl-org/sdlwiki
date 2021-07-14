@@ -16,7 +16,6 @@ This function is available since SDL 2.0.2.
 
 :[[SDL_GL_GetAttribute]]
 :[[SDL_GL_SetAttribute]]
-:[[<!-- #Remove this section if empty -->]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]

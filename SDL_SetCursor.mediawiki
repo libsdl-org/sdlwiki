@@ -16,7 +16,7 @@ void SDL_SetCursor(SDL_Cursor * cursor);
 
 {|
 |'''cursor'''
-|a  cursor to make active
+|a cursor to make active
 |}
 
 == Remarks ==
