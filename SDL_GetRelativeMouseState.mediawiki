@@ -26,8 +26,6 @@ Uint32 SDL_GetRelativeMouseState(int *x, int *y);
 
 Returns a 32-bit button bitmask of the relative button state.
 
-
-
 == Remarks ==
 
 The current button state is returned as a button bitmask, which can be

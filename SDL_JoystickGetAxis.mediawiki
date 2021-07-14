@@ -28,12 +28,10 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick *joystick,
 Returns a 16-bit signed integer representing the current position of the
 axis or 0 on failure; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-SDL makes no promises about what part of the joystick any given axis
-refers to. Your game should have some sort of configuration UI to let users
+SDL makes no promises about what part of the joystick any given axis refers
+to. Your game should have some sort of configuration UI to let users
 specify what each axis should be bound to. Alternately, SDL's higher-level
 Game Controller API makes a great effort to apply order to this lower-level
 interface, so you know that a specific axis is the "left thumb stick," etc.

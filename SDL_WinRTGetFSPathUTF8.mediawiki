@@ -28,8 +28,6 @@ Returns a UTF-8 string (8-bit, multi-byte) containing the path, or NULL if
 the path is not available for any reason; call [[SDL_GetError]]() for more
 information.
 
-
-
 == Remarks ==
 
 Not all paths are available on all versions of Windows. This is especially
@@ -45,8 +43,6 @@ https://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
 == Version ==
 
 This function is available since SDL 2.0.3.
-
-
 
 == Related Functions ==
 

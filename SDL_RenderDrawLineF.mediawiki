@@ -31,8 +31,6 @@ int SDL_RenderDrawLineF(SDL_Renderer * renderer,
 == Return Value ==
 
 Return 0 on success, or -1 on error
-
-
 ----
 [[CategoryAPI]], [[CategoryRender]]
 

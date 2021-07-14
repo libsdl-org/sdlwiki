@@ -23,8 +23,6 @@ int SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The primary display (<code>displayIndex</code> zero) is always located at

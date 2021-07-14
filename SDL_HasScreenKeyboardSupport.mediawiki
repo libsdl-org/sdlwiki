@@ -21,13 +21,9 @@ SDL_bool SDL_HasScreenKeyboardSupport(void);
 Returns SDL_TRUE if the platform has some screen keyboard support or
 [[SDL_FALSE]] if not.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

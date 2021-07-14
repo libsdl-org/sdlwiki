@@ -19,8 +19,6 @@ int SDL_LockMutex(SDL_mutex * mutex);
 
 Return 0, or -1 on error.
 
-
-
 == Remarks ==
 
 This will block until the mutex is available, which is to say it is in the

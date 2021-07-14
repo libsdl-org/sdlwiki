@@ -26,12 +26,10 @@ Uint32 SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
 
 Returns the number of bytes (not samples!) of queued audio.
 
-
-
 == Remarks ==
 
-For playback devices: this is the number of bytes that have been queued
-for playback with [[SDL_QueueAudio]](), but have not yet been sent to the
+For playback devices: this is the number of bytes that have been queued for
+playback with [[SDL_QueueAudio]](), but have not yet been sent to the
 hardware.
 
 Once we've sent it to the hardware, this function can not decide the exact
@@ -54,8 +52,6 @@ handles locking internally for this function.
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

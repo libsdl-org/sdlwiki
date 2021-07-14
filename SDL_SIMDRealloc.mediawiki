@@ -22,8 +22,6 @@ void * SDL_SIMDRealloc(void *mem, const size_t len);
 
 Returns Pointer to newly-reallocated block, NULL if out of memory.
 
-
-
 == Remarks ==
 
 It is not valid to use this function on a pointer from anything but

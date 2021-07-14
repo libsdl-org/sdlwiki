@@ -24,8 +24,6 @@ const char* SDL_GetScancodeName(SDL_Scancode scancode);
 Returns a pointer to the name for the scancode. If the scancode doesn't
 have a name this function returns an empty string ("").
 
-
-
 == Remarks ==
 
 See [[SDL_Scancode]] for details.
@@ -43,8 +41,6 @@ mapping between strings and scancodes.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

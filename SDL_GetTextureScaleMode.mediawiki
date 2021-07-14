@@ -23,11 +23,9 @@ int SDL_GetTextureScaleMode(SDL_Texture * texture,
 
 Return 0 on success, or -1 if the texture is not valid.
 
-
-
 == Related Functions ==
 
-:[[SDL_SetTextureScaleMode()]]
+:[[SDL_SetTextureScaleMode]]
 
 
 

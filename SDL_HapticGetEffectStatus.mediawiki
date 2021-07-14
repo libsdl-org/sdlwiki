@@ -28,8 +28,6 @@ int SDL_HapticGetEffectStatus(SDL_Haptic * haptic,
 Returns 0 if it isn't playing, 1 if it is playing, or a negative error code
 on failure; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Device must support the [[SDL_HAPTIC_STATUS]] feature.
@@ -37,8 +35,6 @@ Device must support the [[SDL_HAPTIC_STATUS]] feature.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

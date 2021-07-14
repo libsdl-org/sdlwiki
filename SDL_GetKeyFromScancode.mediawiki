@@ -23,8 +23,6 @@ SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode);
 
 Returns the SDL_Keycode that corresponds to the given SDL_Scancode.
 
-
-
 == Remarks ==
 
 See [[SDL_Keycode]] for details.

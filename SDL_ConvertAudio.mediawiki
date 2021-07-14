@@ -20,8 +20,6 @@ int SDL_ConvertAudio(SDL_AudioCVT * cvt);
 Returns 0 if the conversion was completed successfully or a negative error
 code on failure; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function does the actual audio data conversion, after the application

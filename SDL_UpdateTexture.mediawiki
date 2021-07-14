@@ -31,8 +31,6 @@ int SDL_UpdateTexture(SDL_Texture * texture,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The pixel data must be in the pixel format of the texture. Use

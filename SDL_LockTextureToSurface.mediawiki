@@ -28,8 +28,6 @@ int SDL_LockTextureToSurface(SDL_Texture *texture,
 Returns 0 on success, or -1 if the texture is not valid or was not created
 with <code>[[SDL_TEXTUREACCESS_STREAMING]]</code>
 
-
-
 == Remarks ==
 
 Besides providing an [[SDL_Surface]] instead of raw pixel data, this
@@ -49,8 +47,8 @@ free it.
 
 == Related Functions ==
 
-:[[SDL_LockTexture()]]
-:[[SDL_UnlockTexture()]]
+:[[SDL_LockTexture]]
+:[[SDL_UnlockTexture]]
 
 
 

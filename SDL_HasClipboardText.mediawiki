@@ -12,13 +12,9 @@ SDL_bool SDL_HasClipboardText(void);
 
 Returns SDL_TRUE if the clipboard has text, or SDL_FALSE if it does not.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

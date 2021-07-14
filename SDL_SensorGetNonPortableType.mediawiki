@@ -18,8 +18,6 @@ int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
 == Return Value ==
 
 Returns The sensor platform dependent type, or -1 if `sensor` is NULL.
-
-
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

@@ -20,8 +20,6 @@ int SDL_Init(Uint32 flags);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 [[SDL_Init]]() simply forwards to calling [[SDL_InitSubSystem]]().
@@ -39,15 +37,15 @@ Logging (such as [[SDL_Log]]) works without initialization, too.
 
 <code>flags</code> may be any of the following OR'd together:
 
-* <code>[[SDL_INIT_TIMER]]</code>: timer subsystem 
-* <code>[[SDL_INIT_AUDIO]]</code>: audio subsystem 
-* <code>[[SDL_INIT_VIDEO]]</code>: video subsystem; automatically initializes the events subsystem 
-* <code>[[SDL_INIT_JOYSTICK]]</code>: joystick subsystem; automatically initializes the events subsystem 
-* <code>[[SDL_INIT_HAPTIC]]</code>: haptic (force feedback) subsystem 
-* <code>[[SDL_INIT_GAMECONTROLLER]]</code>: controller subsystem; automatically initializes the joystick subsystem 
-* <code>[[SDL_INIT_EVENTS]]</code>: events subsystem 
-* <code>[[SDL_INIT_EVERYTHING]]</code>: all of the above subsystems 
-* <code>[[SDL_INIT_NOPARACHUTE]]</code>: compatibility; this flag is ignored 
+* <code>[[SDL_INIT_TIMER]]</code>: timer subsystem
+* <code>[[SDL_INIT_AUDIO]]</code>: audio subsystem
+* <code>[[SDL_INIT_VIDEO]]</code>: video subsystem; automatically initializes the events subsystem
+* <code>[[SDL_INIT_JOYSTICK]]</code>: joystick subsystem; automatically initializes the events subsystem
+* <code>[[SDL_INIT_HAPTIC]]</code>: haptic (force feedback) subsystem
+* <code>[[SDL_INIT_GAMECONTROLLER]]</code>: controller subsystem; automatically initializes the joystick subsystem
+* <code>[[SDL_INIT_EVENTS]]</code>: events subsystem
+* <code>[[SDL_INIT_EVERYTHING]]</code>: all of the above subsystems
+* <code>[[SDL_INIT_NOPARACHUTE]]</code>: compatibility; this flag is ignored
 
 Subsystem initialization is ref-counted, you must call
 [[SDL_QuitSubSystem]]() for each [[SDL_InitSubSystem]]() to correctly

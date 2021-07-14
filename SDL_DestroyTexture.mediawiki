@@ -17,8 +17,8 @@ void SDL_DestroyTexture(SDL_Texture * texture);
 
 == Remarks ==
 
-Passing NULL or an otherwise invalid texture will set the SDL error
-message to "Invalid texture".
+Passing NULL or an otherwise invalid texture will set the SDL error message
+to "Invalid texture".
 
 == Related Functions ==
 

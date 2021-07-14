@@ -19,8 +19,6 @@ SDL_bool SDL_JoystickHasLED(SDL_Joystick *joystick);
 
 Return SDL_TRUE if the joystick has a modifiable LED, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 An example of a joystick LED is the light on the back of a PlayStation 4's

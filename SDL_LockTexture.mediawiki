@@ -32,14 +32,12 @@ Returns 0 on success or a negative error code if the texture is not valid
 or was not created with <code>[[SDL_TEXTUREACCESS_STREAMING]]</code>; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-As an optimization, the pixels made available for editing don't
-necessarily contain the old texture data. This is a write-only operation,
-and if you need to keep a copy of the texture data you should do that at
-the application level.
+As an optimization, the pixels made available for editing don't necessarily
+contain the old texture data. This is a write-only operation, and if you
+need to keep a copy of the texture data you should do that at the
+application level.
 
 You must use [[SDL_UnlockTexture]]() to unlock the pixels and apply any
 changes.

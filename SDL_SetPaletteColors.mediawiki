@@ -31,8 +31,6 @@ int SDL_SetPaletteColors(SDL_Palette * palette,
 Returns 0 on success or a negative error code if not all of the colors
 could be set; call [[SDL_GetError]]() for more information.
 
-
-
 == Related Functions ==
 
 :[[SDL_AllocPalette]]

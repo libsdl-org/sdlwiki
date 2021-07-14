@@ -39,8 +39,6 @@ be filled with the audio data format of the wave source data.
 containing the audio data, and <code>audio_len</code> is filled with the
 length of that audio buffer in bytes.
 
-
-
 == Remarks ==
 
 Loading a WAVE file requires <code>src</code>, <code>spec</code>,
@@ -85,20 +83,17 @@ will be set.
 
 It is required that the data source supports seeking.
 
-Example:
+Example: 
 
-
-<syntaxhighlight lang='c'>++
-[[SDL_LoadWAV_RW]]([[SDL_RWFromFile]]("sample.wav", "rb"), 1, &spec, &buf, &len);
+<syntaxhighlight lang='c++'>
+SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, &spec, &buf, &len);
 </syntaxhighlight>
 
 Note that the [[SDL_LoadWAV]] macro does this same thing for you, but in a
 less messy way:
 
-
-
-<syntaxhighlight lang='c'>++
-[[SDL_LoadWAV]]("sample.wav", &spec, &buf, &len);
+<syntaxhighlight lang='c++'>
+SDL_LoadWAV("sample.wav", &spec, &buf, &len);
 </syntaxhighlight>
 
 == Code Examples ==

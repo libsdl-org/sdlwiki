@@ -23,8 +23,6 @@ int SDL_SetWindowBrightness(SDL_Window * window, float brightness);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Despite the name and signature, this method sets the brightness of the

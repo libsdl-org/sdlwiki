@@ -24,8 +24,6 @@ SDL_JoystickGUID SDL_JoystickGetGUID(SDL_Joystick *joystick);
 Returns the GUID of the given joystick. If called on an invalid index, this
 function returns a zero GUID; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function requires an open joystick.

@@ -31,8 +31,6 @@ int SDL_SetWindowOpacity(SDL_Window * window, float opacity);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The parameter <code>opacity</code> will be clamped internally between 0.0f
@@ -43,8 +41,6 @@ This function also returns -1 if setting the opacity isn't supported.
 == Version ==
 
 This function is available since SDL 2.0.5.
-
-
 
 == Related Functions ==
 

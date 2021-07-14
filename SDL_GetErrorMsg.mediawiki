@@ -22,12 +22,10 @@ char * SDL_GetErrorMsg(char *errstr, int maxlen);
 
 Returns The pointer passed in as the `errstr` parameter.
 
-
-
 == Remarks ==
 
-This allows the caller to copy the error string into a provided buffer,
-but otherwise operates exactly the same as [[SDL_GetError]]().
+This allows the caller to copy the error string into a provided buffer, but
+otherwise operates exactly the same as [[SDL_GetError]]().
 
 == Related Functions ==
 

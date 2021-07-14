@@ -19,13 +19,9 @@ SDL_Window * SDL_GetGrabbedWindow(void);
 
 Returns the window if input is grabbed or NULL otherwise.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

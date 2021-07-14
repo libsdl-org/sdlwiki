@@ -20,8 +20,6 @@ int SDL_InitSubSystem(Uint32 flags);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 In SDL2, this function and [[SDL_Init]]() are interchangeable.

@@ -17,11 +17,11 @@ void SDL_DestroyMutex(SDL_mutex * mutex);
 
 == Remarks ==
 
-This function must be called on any mutex that is no longer needed.
-Failure to destroy a mutex will result in a system memory or resource leak.
-While it is safe to destroy a mutex that is _unlocked_, it is not safe to
-attempt to destroy a locked mutex, and may result in undefined behavior
-depending on the platform.
+This function must be called on any mutex that is no longer needed. Failure
+to destroy a mutex will result in a system memory or resource leak. While
+it is safe to destroy a mutex that is _unlocked_, it is not safe to attempt
+to destroy a locked mutex, and may result in undefined behavior depending
+on the platform.
 
 == Code Examples ==
 

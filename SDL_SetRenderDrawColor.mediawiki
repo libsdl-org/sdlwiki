@@ -34,12 +34,10 @@ int SDL_SetRenderDrawColor(SDL_Renderer * renderer,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-Set the color for drawing or filling rectangles, lines, and points, and
-for [[SDL_RenderClear]]().
+Set the color for drawing or filling rectangles, lines, and points, and for
+[[SDL_RenderClear]]().
 
 == Code Examples ==
 

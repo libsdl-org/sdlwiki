@@ -16,13 +16,10 @@ SDL_Cursor* SDL_GetCursor(void);
 
 Returns the active cursor or NULL if there is no mouse.
 
-
-
 == Remarks ==
 
-This function returns a pointer to the current cursor which is owned by
-the library. It is not necessary to free the cursor with
-[[SDL_FreeCursor]]().
+This function returns a pointer to the current cursor which is owned by the
+library. It is not necessary to free the cursor with [[SDL_FreeCursor]]().
 
 == Related Functions ==
 

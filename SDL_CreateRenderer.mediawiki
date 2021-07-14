@@ -27,8 +27,6 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
 Returns a valid rendering context or NULL if there was an error; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

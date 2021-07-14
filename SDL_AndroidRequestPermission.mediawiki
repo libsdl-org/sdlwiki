@@ -19,8 +19,6 @@ SDL_bool SDL_AndroidRequestPermission(const char *permission);
 
 Returns SDL_TRUE if the permission was granted, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 This blocks the calling thread until the permission is granted or denied.

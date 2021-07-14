@@ -24,8 +24,6 @@ int SDL_HapticRumbleStop(SDL_Haptic * haptic);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Related Functions ==
 
 :[[SDL_HapticRumbleInit]]

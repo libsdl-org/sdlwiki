@@ -28,8 +28,6 @@ int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Autocenter should be between 0 and 100. Setting it to 0 will disable

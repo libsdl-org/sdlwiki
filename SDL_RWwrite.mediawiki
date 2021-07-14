@@ -31,8 +31,6 @@ size_t SDL_RWwrite(SDL_RWops *context,
 Returns the number of objects written, which will be less than **num** on
 error; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function writes exactly <code>num</code> objects each of size

@@ -19,8 +19,6 @@ int SDL_GL_UnbindTexture(SDL_Texture *texture);
 
 Returns 0 on success, or -1 if the operation is not supported
 
-
-
 == Remarks ==
 
 See [[SDL_GL_BindTexture]]() for examples on how to use these functions

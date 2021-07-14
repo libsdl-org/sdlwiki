@@ -12,8 +12,6 @@ SDL_threadID SDL_ThreadID(void);
 
 Returns the ID of the current thread.
 
-
-
 == Remarks ==
 
 This thread identifier is as reported by the underlying operating system.

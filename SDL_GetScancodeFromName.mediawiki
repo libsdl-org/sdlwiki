@@ -24,13 +24,9 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 Returns the SDL_Scancode, or `SDL_SCANCODE_UNKNOWN` if the name wasn't
 recognized; call [[SDL_GetError]]() for more information.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

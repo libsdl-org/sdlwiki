@@ -19,8 +19,6 @@ int SDL_UnlockMutex(SDL_mutex * mutex);
 
 Returns 0, or -1 on error.
 
-
-
 == Remarks ==
 
 It is legal for the owning thread to lock an already-locked mutex. It must

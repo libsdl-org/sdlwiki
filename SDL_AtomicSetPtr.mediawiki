@@ -22,8 +22,6 @@ void* SDL_AtomicSetPtr(void **a, void* v);
 
 Returns the previous value of the pointer.
 
-
-
 == Remarks ==
 
 '''''Note: If you don't know what this function is for, you shouldn't use

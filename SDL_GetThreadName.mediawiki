@@ -20,8 +20,6 @@ const char* SDL_GetThreadName(SDL_Thread *thread);
 Returns a pointer to a UTF-8 string that names the specified thread, or
 NULL if it doesn't have a name.
 
-
-
 == Remarks ==
 
 This is internal memory, not to be freed by the caller, and remains valid

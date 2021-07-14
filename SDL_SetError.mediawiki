@@ -22,21 +22,16 @@ int SDL_SetError(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARAR
 
 Returns always -1.
 
-
-
 == Remarks ==
 
-Calling this function will replace any previous error message that was
-set.
+Calling this function will replace any previous error message that was set.
 
 This function always returns -1, since SDL frequently uses -1 to signify an
 failing result, leading to this idiom:
 
-
-
 <syntaxhighlight lang='c'>
 if (error_code) {
-return [[SDL_SetError]]("This operation has failed: %d", error_code);
+    return SDL_SetError("This operation has failed: %d", error_code);
 }
 </syntaxhighlight>
 

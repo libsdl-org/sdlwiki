@@ -26,5 +26,3 @@ int SDL_JoystickSendEffect(SDL_Joystick *joystick, const void *data, int size);
 Returns 0, or -1 if this joystick or driver doesn't support effect packets
 
 
-
-

@@ -19,8 +19,6 @@ SDL_bool SDL_HasColorKey(SDL_Surface * surface);
 
 Return SDL_TRUE if the surface has a color key, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 It is safe to pass a NULL <code>surface</code> here; it will return

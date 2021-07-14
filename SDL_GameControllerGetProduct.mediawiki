@@ -19,8 +19,6 @@ Uint16 SDL_GameControllerGetProduct(SDL_GameController *gamecontroller);
 
 Return USB product ID, or zero if unavailable.
 
-
-
 == Remarks ==
 
 If the product ID isn't available this function returns 0.

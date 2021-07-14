@@ -20,8 +20,6 @@ int SDL_VideoInit(const char *driver_name);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function initializes the video subsystem, setting up a connection to

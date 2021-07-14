@@ -35,12 +35,10 @@ Uint32 SDL_MasksToPixelFormatEnum(int bpp,
 
 Returns one of the SDL_PixelFormatEnum values
 
-
-
 == Remarks ==
 
-This will return <code>[[SDL_PIXELFORMAT_UNKNOWN]]</code> if the
-conversion wasn't possible.
+This will return <code>[[SDL_PIXELFORMAT_UNKNOWN]]</code> if the conversion
+wasn't possible.
 
 == Related Functions ==
 

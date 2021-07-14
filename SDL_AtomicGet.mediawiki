@@ -19,8 +19,6 @@ int SDL_AtomicGet(SDL_atomic_t *a);
 
 Returns the current value of an atomic variable.
 
-
-
 == Remarks ==
 
 '''''Note: If you don't know what this function is for, you shouldn't use

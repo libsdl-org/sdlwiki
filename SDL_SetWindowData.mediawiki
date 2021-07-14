@@ -27,8 +27,6 @@ void* SDL_SetWindowData(SDL_Window * window,
 
 Returns the previous value associated with `name`.
 
-
-
 == Remarks ==
 
 <code>name</code> is case-sensitive.

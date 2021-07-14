@@ -19,8 +19,6 @@ Uint32 SDL_SemValue(SDL_sem * sem);
 
 Returns the current value of the semaphore.
 
-
-
 == Related Functions ==
 
 :[[SDL_CreateSemaphore]]

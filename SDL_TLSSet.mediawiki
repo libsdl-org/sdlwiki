@@ -34,13 +34,9 @@ int SDL_TLSSet(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The function prototype for <code>destructor</code> is:
-
-
 
 <syntaxhighlight lang='c'>
 void destructor(void *value)
@@ -52,8 +48,6 @@ where its parameter <code>value</code> is what was passed as
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

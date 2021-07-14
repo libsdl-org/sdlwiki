@@ -25,8 +25,6 @@ Returns SDL_TRUE if the function is implemented and the `version` member of
 the <code>info</code> struct is valid, or [[SDL_FALSE]] if the information
 could not be retrieved; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 You must include [[SDL_syswm]].h for the declaration of [[SDL_SysWMinfo]].
@@ -39,8 +37,6 @@ window.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

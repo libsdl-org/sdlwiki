@@ -20,8 +20,6 @@ char* SDL_GameControllerMappingForDeviceIndex(int joystick_index);
 Returns the mapping string. Must be freed with SDL_free(). Returns NULL if
 no mapping is available.
 
-
-
 == Remarks ==
 
 This can be called before any controllers are opened.

@@ -46,8 +46,6 @@ It is safe to pass NULL to this function; it is a no-op.
 
 This function is available since SDL 2.0.2.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -27,12 +27,10 @@ SDL_bool SDL_Vulkan_GetInstanceExtensions(SDL_Window *window,
 
 Returns SDL_TRUE on success, SDL_FALSE on error.
 
-
-
 == Remarks ==
 
-If <code>pNames</code> is NULL, then the number of required Vulkan
-instance extensions is returned in <code>pCount</code>. Otherwise,
+If <code>pNames</code> is NULL, then the number of required Vulkan instance
+extensions is returned in <code>pCount</code>. Otherwise,
 <code>pCount</code> must point to a variable set to the number of elements
 in the <code>pNames</code> array, and on return the variable is overwritten
 with the number of names actually written to <code>pNames</code>. If
@@ -48,8 +46,6 @@ The <code>window</code> parameter is currently needed to be valid as of SDL
 == Version ==
 
 This function is available in SDL 2.0.8
-
-
 
 == Code Examples ==
 

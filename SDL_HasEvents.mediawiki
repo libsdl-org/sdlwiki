@@ -23,8 +23,6 @@ SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 Returns SDL_TRUE if events with type >= `minType` and <= `maxType` are
 present, or [[SDL_FALSE]] if not.
 
-
-
 == Remarks ==
 
 If you need to check for a single event type, use [[SDL_HasEvent]]()

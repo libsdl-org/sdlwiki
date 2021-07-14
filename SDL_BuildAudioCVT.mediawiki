@@ -45,8 +45,6 @@ Returns 1 if the audio filter is prepared, 0 if no conversion is needed, or
 a negative error code on failure; call [[SDL_GetError]]() for more
 information.
 
-
-
 == Remarks ==
 
 Before an [[SDL_AudioCVT]] structure can be used to convert audio data it

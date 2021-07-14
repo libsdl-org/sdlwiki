@@ -27,5 +27,3 @@ Returns 0, or -1 if this controller or driver doesn't support effect
 packets
 
 
-
-

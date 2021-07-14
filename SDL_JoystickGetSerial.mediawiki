@@ -19,8 +19,6 @@ const char * SDL_JoystickGetSerial(SDL_Joystick *joystick);
 
 Returns the serial number of the selected joystick, or NULL if unavailable.
 
-
-
 == Remarks ==
 
 Returns the serial number of the joystick, or NULL if it is not available.

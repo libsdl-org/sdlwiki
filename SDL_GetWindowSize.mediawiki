@@ -24,8 +24,8 @@ void SDL_GetWindowSize(SDL_Window * window, int *w,
 
 == Remarks ==
 
-NULL can safely be passed as the <code>w</code> or <code>h</code>
-parameter if the width or height value is not desired.
+NULL can safely be passed as the <code>w</code> or <code>h</code> parameter
+if the width or height value is not desired.
 
 The window size in screen coordinates may differ from the size in pixels,
 if the window was created with <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on

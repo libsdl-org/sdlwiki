@@ -13,8 +13,6 @@ const char* SDL_GetRevision(void);
 Returns an arbitrary string, uniquely identifying the exact revision of the
 SDL library in use.
 
-
-
 == Remarks ==
 
 This value is the revision of the code you are linked with and may be

@@ -32,8 +32,6 @@ int SDL_RenderSetIntegerScale(SDL_Renderer * renderer,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function restricts the logical viewport to integer values - that is,
@@ -43,8 +41,6 @@ size is rounded down to the lower multiple.
 == Version ==
 
 This function is available since SDL 2.0.5.
-
-
 
 == Related Functions ==
 

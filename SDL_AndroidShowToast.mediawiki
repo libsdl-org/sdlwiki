@@ -31,8 +31,6 @@ int SDL_AndroidShowToast(const char* message, int duration, int gravity, int xof
 
 Returns 0 if success, -1 if any error occurs.
 
-
-
 == Remarks ==
 
 Toasts are a sort of lightweight notification that are unique to Android.

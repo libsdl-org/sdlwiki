@@ -20,8 +20,6 @@ SDL_bool SDL_HasEvent(Uint32 type);
 Returns SDL_TRUE if events matching `type` are present, or SDL_FALSE if
 events matching <code>type</code> are not present.
 
-
-
 == Remarks ==
 
 If you need to check for a range of event types, use [[SDL_HasEvents]]()

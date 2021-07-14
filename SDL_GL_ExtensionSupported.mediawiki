@@ -20,8 +20,6 @@ SDL_bool SDL_GL_ExtensionSupported(const char
 
 Returns SDL_TRUE if the extension is supported, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 This function operates on the current GL context; you must have created a
@@ -38,8 +36,6 @@ every time you need to know.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

@@ -23,8 +23,6 @@ SDL_bool SDL_SetHint(const char *name,
 
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 Hints will not be set if there is an existing override hint or environment

@@ -27,8 +27,6 @@ SDL_GameController* SDL_GameControllerOpen(int joystick_index);
 Returns a gamecontroller identifier or NULL if an error occurred; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 <code>joystick_index</code> is the same as the <code>device_index</code>
@@ -42,8 +40,6 @@ will be used there instead.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

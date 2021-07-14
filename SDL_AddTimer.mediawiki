@@ -28,8 +28,6 @@ SDL_TimerID SDL_AddTimer(Uint32 interval,
 Returns a timer ID or 0 if an error occurs; call SDL_GetError() for more
 information.
 
-
-
 == Remarks ==
 
 If you use this function, you must pass <code>[[SDL_INIT_TIMER]]</code> to

@@ -20,8 +20,6 @@ int SDL_Vulkan_LoadLibrary(const char *path);
 Returns 0 on success or -1 if the library couldn't be loaded; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This should be called after initializing the video driver, but before
@@ -57,8 +55,6 @@ library version.
 == Version ==
 
 This function is available in SDL 2.0.8
-
-
 
 == Related Functions ==
 

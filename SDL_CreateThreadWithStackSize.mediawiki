@@ -31,8 +31,6 @@ Returns an opaque pointer to the new thread object on success, NULL if the
 new thread could not be created; call [[SDL_GetError]]() for more
 information.
 
-
-
 == Remarks ==
 
 SDL makes an attempt to report <code>name</code> to the system, so that

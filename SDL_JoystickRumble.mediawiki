@@ -28,8 +28,6 @@ int SDL_JoystickRumble(SDL_Joystick *joystick, Uint16 low_frequency_rumble, Uint
 
 Returns 0, or -1 if rumble isn't supported on this joystick
 
-
-
 == Remarks ==
 
 Each call to this function cancels any previous rumble effect, and calling

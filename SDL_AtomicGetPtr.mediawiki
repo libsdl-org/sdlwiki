@@ -19,8 +19,6 @@ void* SDL_AtomicGetPtr(void **a);
 
 Returns the current value of a pointer.
 
-
-
 == Remarks ==
 
 '''''Note: If you don't know what this function is for, you shouldn't use

@@ -19,8 +19,6 @@ SDL_GameControllerType SDL_GameControllerGetType(SDL_GameController *gamecontrol
 
 Returns the controller type.
 
-
-
 == Remarks ==
 
 This is the same name as returned by [[SDL_GameControllerTypeForIndex]](),

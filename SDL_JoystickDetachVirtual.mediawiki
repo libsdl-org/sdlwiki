@@ -20,5 +20,3 @@ int SDL_JoystickDetachVirtual(int device_index);
 Returns 0 on success, or -1 if an error occurred.
 
 
-
-

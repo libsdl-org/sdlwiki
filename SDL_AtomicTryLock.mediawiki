@@ -20,12 +20,10 @@ SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
 Returns SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already
 held.
 
-
-
 == Remarks ==
 
-'''''Please note that spinlocks are dangerous if you don't know what
-you're doing. Please be careful using any sort of spinlock!'''''
+'''''Please note that spinlocks are dangerous if you don't know what you're
+doing. Please be careful using any sort of spinlock!'''''
 
 == Related Functions ==
 

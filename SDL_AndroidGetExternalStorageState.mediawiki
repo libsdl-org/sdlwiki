@@ -20,8 +20,6 @@ int SDL_AndroidGetExternalStorageState(void);
 Returns the current state of external storage on success or 0 on failure;
 call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The current state of external storage, a bitmask of these values:
@@ -33,8 +31,6 @@ If external storage is currently unavailable, this will return 0.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

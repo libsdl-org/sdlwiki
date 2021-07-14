@@ -34,8 +34,6 @@ int SDL_JoystickGetBall(SDL_Joystick *joystick,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Trackballs can only return relative motion since the last call to

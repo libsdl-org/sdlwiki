@@ -12,8 +12,6 @@ Uint64 SDL_GetPerformanceCounter(void);
 
 Returns the current counter value.
 
-
-
 == Remarks ==
 
 This function is typically used for profiling.

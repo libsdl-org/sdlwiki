@@ -27,8 +27,6 @@ SDL_bool SDL_SetHintWithPriority(const char *name,
 
 Returns SDL_TRUE if the hint was set, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 The priority controls the behavior when setting a hint that already has a

@@ -1,6 +1,6 @@
 = SDL_SetWindowShape =
 
-typedef enum { /'''' \brief The default mode, a binarized alpha cutoff of 1.
+Set the shape and parameters of a shaped window.
 
 == Syntax ==
 
@@ -26,32 +26,6 @@ int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode
 Return 0 on success, SDL_INVALID_SHAPE_ARGUMENT on an invalid shape
 argument, or SDL_NONSHAPEABLE_WINDOW if the [[SDL_Window]] given does not
 reference a valid shaped window.
-
-
-
-== Remarks ==
-
-''/ ShapeModeDefault, /''' \brief A binarized alpha cutoff with a given
-integer value. ''/ ShapeModeBinarizeAlpha, /''' \brief A binarized alpha
-cutoff with a given integer value, but with the opposite comparison. ''/
-ShapeModeReverseBinarizeAlpha, /''' \brief A color key is applied. ''/
-ShapeModeColorKey } WindowShapeMode;
-
-#define [[SDL_SHAPEMODEALPHA]](mode) (mode == ShapeModeDefault || mode ==
-ShapeModeBinarizeAlpha || mode == ShapeModeReverseBinarizeAlpha)
-
-/''' \brief A union containing parameters for shaped windows. ''/ typedef
-union { /''' \brief A cutoff alpha value for binarization of the window
-shape's alpha channel. ''/ Uint8 binarizationCutoff; [[SDL_Color]]
-colorKey; } [[SDL_WindowShapeParams]];
-
-/''' \brief A struct that tags the [[SDL_WindowShapeParams]] union with an
-enum describing the type of its contents. ''/ typedef struct
-[[SDL_WindowShapeMode]] { /''' \brief The mode of these window-shape
-parameters. ''/ WindowShapeMode mode; /''' \brief Window-shape parameters.
-''/ [[SDL_WindowShapeParams]] parameters; } [[SDL_WindowShapeMode]];
-
-/''*
 
 == Related Functions ==
 

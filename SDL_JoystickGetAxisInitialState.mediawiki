@@ -26,8 +26,6 @@ SDL_bool SDL_JoystickGetAxisInitialState(SDL_Joystick *joystick,
 
 Return SDL_TRUE if this axis has any initial value, or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
 The state is a value ranging from -32768 to 32767.

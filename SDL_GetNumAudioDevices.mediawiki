@@ -21,8 +21,6 @@ Returns the number of available devices exposed by the current driver or -1
 if an explicit list of devices can't be determined. A return value of -1
 does not necessarily mean an error condition.
 
-
-
 == Remarks ==
 
 This function is only valid after successfully initializing the audio
@@ -46,22 +44,18 @@ This function may trigger a complete redetect of available hardware. It
 should not be called for each iteration of a loop, but rather once at the
 start of a loop:
 
-
-
-<syntaxhighlight lang='c'>++
+<syntaxhighlight lang='c++'>
 // Don't do this:
-for (int i = 0; i < [[SDL_GetNumAudioDevices]](0); i++)
+for (int i = 0; i < SDL_GetNumAudioDevices(0); i++)
 
 // do this instead:
-const int count = [[SDL_GetNumAudioDevices]](0);
+const int count = SDL_GetNumAudioDevices(0);
 for (int i = 0; i < count; ++i) { do_something_here(); }
 </syntaxhighlight>
 
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

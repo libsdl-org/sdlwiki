@@ -23,8 +23,6 @@ SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
 
 Returns SDL_TRUE if the controller has this button, SDL_FALSE otherwise.
 
-
-
 == Remarks ==
 
 This merely reports whether the controller's mapping defined this button,

@@ -11,8 +11,6 @@ int SDL_NumSensors(void);
 == Return Value ==
 
 Returns The number of sensors detected.
-
-
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

@@ -21,8 +21,8 @@ void SDL_SetWindowKeyboardGrab(SDL_Window * window,
 
 == Remarks ==
 
-If the caller enables a grab while another window is currently grabbed,
-the other window loses its grab in favor of the caller's window.
+If the caller enables a grab while another window is currently grabbed, the
+other window loses its grab in favor of the caller's window.
 
 == Related Functions ==
 

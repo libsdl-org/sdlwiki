@@ -27,8 +27,6 @@ int SDL_GameControllerEventState(int state);
 Returns the same value passed to the function, with exception to -1
 ([[SDL_QUERY]]), which will return the current state.
 
-
-
 == Remarks ==
 
 If controller events are disabled, you must call
@@ -41,8 +39,6 @@ Any number can be passed to [[SDL_GameControllerEventState]](), but only
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

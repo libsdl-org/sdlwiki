@@ -24,8 +24,6 @@ int SDL_RenderFillRect(SDL_Renderer * renderer,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The current drawing color is set by [[SDL_SetRenderDrawColor]](), and the

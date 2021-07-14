@@ -25,8 +25,6 @@ int SDL_AudioStreamGet(SDL_AudioStream *stream, void *buf, int len);
 
 Returns the number of bytes read from the stream, or -1 on error
 
-
-
 == Related Functions ==
 
 :[[SDL_NewAudioStream]]

@@ -20,8 +20,6 @@ Uint32 SDL_WasInit(Uint32 flags);
 Returns If `flags` is 0 it returns a mask of all initialized subsystems,
 otherwise it returns the initialization status of the specified subsystems.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

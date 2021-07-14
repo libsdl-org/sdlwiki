@@ -23,8 +23,6 @@ int SDL_GL_SetAttribute(SDL_GLattr attr, int value);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function sets the OpenGL attribute <code>attr</code> to

@@ -24,8 +24,6 @@ int SDL_SetTextureAlphaMod(SDL_Texture * texture,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 When this texture is rendered, during the copy operation the source alpha

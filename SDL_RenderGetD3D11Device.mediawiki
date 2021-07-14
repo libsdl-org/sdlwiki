@@ -20,8 +20,6 @@ ID3D11Device* SDL_RenderGetD3D11Device(SDL_Renderer * renderer);
 Returns the D3D11 device associated with given renderer or NULL if it is
 not a D3D11 renderer; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Once you are done using the device, you should release it to avoid a

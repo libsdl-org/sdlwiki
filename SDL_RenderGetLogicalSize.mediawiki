@@ -39,8 +39,6 @@ This may return 0 for <code>w</code> and <code>h</code> if the
 
 This function is available since SDL 2.0.0.
 
-
-
 == Related Functions ==
 
 :[[SDL_RenderSetLogicalSize]]

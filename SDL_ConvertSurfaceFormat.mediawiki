@@ -27,8 +27,6 @@ SDL_Surface* SDL_ConvertSurfaceFormat
 Returns the new SDL_Surface structure that is created or NULL if it fails;
 call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function operates just like [[SDL_ConvertSurface]](), but accepts an

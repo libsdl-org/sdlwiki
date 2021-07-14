@@ -31,8 +31,6 @@ size_t SDL_RWread(SDL_RWops *context,
 Returns the number of objects read, or 0 at error or end of file; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function reads up to <code>maxnum</code> objects each of size

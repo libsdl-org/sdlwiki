@@ -14,8 +14,6 @@ Returns an absolute path in UTF-8 encoding to the application data
 directory. NULL will be returned on error or when the platform doesn't
 implement this functionality, call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This is not necessarily a fast call, so you should call this once near
@@ -31,9 +29,9 @@ behaviour.
 Supported values for the [[SDL_FILESYSTEM_BASE_DIR_TYPE]] property (Given
 an application in /Applications/SDLApp/MyApp.app):
 
-* <code>resource</code>: bundle resource directory (the default). For example: <code>/Applications/SDLApp/MyApp.app/Contents/Resources</code> 
-* <code>bundle</code>: the Bundle directory. Fpr example: <code>/Applications/SDLApp/MyApp.app/</code> 
-* <code>parent</code>: the containing directory of the bundle. For example: <code>/Applications/SDLApp/</code> 
+* <code>resource</code>: bundle resource directory (the default). For example: <code>/Applications/SDLApp/MyApp.app/Contents/Resources</code>
+* <code>bundle</code>: the Bundle directory. Fpr example: <code>/Applications/SDLApp/MyApp.app/</code>
+* <code>parent</code>: the containing directory of the bundle. For example: <code>/Applications/SDLApp/</code>
 
 The returned path is guaranteed to end with a path separator ('\' on
 Windows, '/' on most other platforms).
@@ -44,8 +42,6 @@ the pointer when done with it.
 == Version ==
 
 This function is available since SDL 2.0.1.
-
-
 
 == Code Examples ==
 

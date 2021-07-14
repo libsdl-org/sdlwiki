@@ -19,8 +19,6 @@ SDL_GameControllerType SDL_GameControllerTypeForIndex(int joystick_index);
 
 Returns the controller type.
 
-
-
 == Remarks ==
 
 This can be called before any controllers are opened.

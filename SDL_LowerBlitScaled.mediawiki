@@ -31,12 +31,10 @@ int SDL_LowerBlitScaled
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-This is a semi-private function and it performs low-level surface
-blitting, assuming the input rectangles have already been clipped.
+This is a semi-private function and it performs low-level surface blitting,
+assuming the input rectangles have already been clipped.
 
 == Related Functions ==
 

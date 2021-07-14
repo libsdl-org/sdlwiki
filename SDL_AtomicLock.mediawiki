@@ -17,8 +17,8 @@ void SDL_AtomicLock(SDL_SpinLock *lock);
 
 == Remarks ==
 
-'''''Please note that spinlocks are dangerous if you don't know what
-you're doing. Please be careful using any sort of spinlock!'''''
+'''''Please note that spinlocks are dangerous if you don't know what you're
+doing. Please be careful using any sort of spinlock!'''''
 
 == Related Functions ==
 

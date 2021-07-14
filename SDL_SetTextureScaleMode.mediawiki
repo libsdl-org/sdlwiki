@@ -23,15 +23,13 @@ int SDL_SetTextureScaleMode(SDL_Texture * texture,
 
 Returns 0 on success, or -1 if the texture is not valid.
 
-
-
 == Remarks ==
 
 If the scale mode is not supported, the closest supported mode is chosen.
 
 == Related Functions ==
 
-:[[SDL_GetTextureScaleMode()]]
+:[[SDL_GetTextureScaleMode]]
 
 
 

@@ -23,5 +23,3 @@ SDL_bool SDL_GameControllerIsSensorEnabled(SDL_GameController *gamecontroller, S
 Returns SDL_TRUE if the sensor is enabled, SDL_FALSE otherwise.
 
 
-
-

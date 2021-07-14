@@ -24,12 +24,10 @@ int SDL_SetSurfaceBlendMode(SDL_Surface * surface,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-To copy a surface to another surface (or texture) without blending with
-the existing data, the blendmode of the SOURCE surface should be set to
+To copy a surface to another surface (or texture) without blending with the
+existing data, the blendmode of the SOURCE surface should be set to
 <code>[[SDL_BLENDMODE_NONE]]</code>.
 
 == Related Functions ==

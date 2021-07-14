@@ -28,13 +28,9 @@ void * SDL_TLSGet(SDL_TLSID id);
 Returns the value associated with the ID for the current thread or NULL if
 no value has been set; call [[SDL_GetError]]() for more information.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

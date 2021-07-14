@@ -27,8 +27,6 @@ SDL_bool SDL_IsGameController(int joystick_index);
 Returns SDL_TRUE if the given joystick is supported by the game controller
 interface, [[SDL_FALSE]] if it isn't or it's an invalid index.
 
-
-
 == Remarks ==
 
 <code>joystick_index</code> is the same as the <code>device_index</code>
@@ -37,8 +35,6 @@ passed to [[SDL_JoystickOpen]]().
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

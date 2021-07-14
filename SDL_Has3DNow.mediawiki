@@ -12,8 +12,6 @@ SDL_bool SDL_Has3DNow(void);
 
 Returns SDL_TRUE if the CPU has 3DNow! features or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
 This always returns false on CPUs that aren't using AMD instruction sets.

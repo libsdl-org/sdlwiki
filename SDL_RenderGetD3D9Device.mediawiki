@@ -27,8 +27,6 @@ IDirect3DDevice9* SDL_RenderGetD3D9Device(SDL_Renderer * renderer);
 Returns the D3D9 device associated with given renderer or NULL if it is not
 a D3D9 renderer; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Once you are done using the device, you should release it to avoid a
@@ -37,8 +35,6 @@ resource leak.
 == Version ==
 
 This function is available since SDL 2.0.1.
-
-
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

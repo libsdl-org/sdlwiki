@@ -20,8 +20,6 @@ SDL_JoystickID SDL_JoystickGetDeviceInstanceID(int device_index);
 Returns the instance id of the selected joystick. If called on an invalid
 index, this function returns zero
 
-
-
 == Remarks ==
 
 This can be called before any joysticks are opened. If the index is out of

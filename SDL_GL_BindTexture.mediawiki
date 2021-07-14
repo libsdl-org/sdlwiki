@@ -26,8 +26,6 @@ int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh);
 Returns 0 on success, or -1 if the operation is not supported; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This is for use with OpenGL instructions when rendering OpenGL primitives
@@ -53,8 +51,6 @@ may have swapped color channels.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

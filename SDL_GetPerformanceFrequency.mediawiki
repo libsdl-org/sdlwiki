@@ -12,13 +12,9 @@ Uint64 SDL_GetPerformanceFrequency(void);
 
 Returns a platform-specific count per second.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

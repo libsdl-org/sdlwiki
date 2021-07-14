@@ -23,8 +23,6 @@ int SDL_GetCurrentDisplayMode(int displayIndex, SDL_DisplayMode * mode);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 There's a difference between this function and

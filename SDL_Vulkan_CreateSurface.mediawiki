@@ -27,8 +27,6 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 Returns SDL_TRUE on success, SDL_FALSE on error.
 
-
-
 == Remarks ==
 
 The <code>window</code> must have been created with the
@@ -39,8 +37,6 @@ been created with extensions returned by
 == Version ==
 
 This function is available in SDL 2.0.8
-
-
 
 == Code Examples ==
 

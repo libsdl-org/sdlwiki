@@ -12,12 +12,9 @@ SDL_bool SDL_HasSSE42(void);
 
 Returns SDL_TRUE if the CPU has SSE4.2 features or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
-This always returns false on CPUs that aren't using Intel instruction
-sets.
+This always returns false on CPUs that aren't using Intel instruction sets.
 
 == Related Functions ==
 

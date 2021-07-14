@@ -20,8 +20,6 @@ int SDL_GL_SetSwapInterval(int interval);
 Returns 0 on success or -1 if setting the swap interval is not supported;
 call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Some systems allow specifying -1 for the interval, to enable adaptive
@@ -47,8 +45,6 @@ https://www.khronos.org/opengl/wiki/Swap_Interval#Adaptive_Vsync
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

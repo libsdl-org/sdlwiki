@@ -19,8 +19,6 @@ SDL_SensorType SDL_SensorGetDeviceType(int device_index);
 
 Returns The SDL_SensorType, or `SDL_SENSOR_INVALID` if `device_index` is
 out of range.
-
-
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

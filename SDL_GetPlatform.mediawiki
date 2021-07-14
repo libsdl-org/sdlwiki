@@ -13,16 +13,14 @@ const char * SDL_GetPlatform (void);
 Returns the name of the platform. If the correct platform name is not
 available, returns a string beginning with the text "Unknown".
 
-
-
 == Remarks ==
 
 Here are the names returned for some (but not all) supported platforms:
 
-* "Windows" 
-* "Mac OS X" 
-* "Linux" 
-* "iOS" 
+* "Windows"
+* "Mac OS X"
+* "Linux"
+* "iOS"
 * "Android"
 ----
 [[CategoryAPI]], [[CategoryPlatform]]

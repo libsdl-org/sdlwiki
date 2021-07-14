@@ -23,8 +23,6 @@ char* SDL_GetPrefPath(const char *org, const char *app);
 Returns a UTF-8 string of the user directory in platform-dependent
 notation. NULL if there's a problem (creating directory failed, etc.).
 
-
-
 == Remarks ==
 
 Get the "pref dir". This is meant to be where users can write personal
@@ -56,10 +54,10 @@ things).
 Both the org and app strings may become part of a directory name, so please
 follow these rules:
 
-* Try to use the same org string (_including case-sensitivity_) for all your applications that use this function. 
-* Always use a unique app string for each one, and make sure it never changes for an app once you've decided on it. 
-* Unicode characters are legal, as long as it's UTF-8 encoded, but... 
-* ...only use letters, numbers, and spaces. Avoid punctuation like "Game Name 2: Bad Guy's Revenge!" ... "Game Name 2" is sufficient. 
+* Try to use the same org string (_including case-sensitivity_) for all your applications that use this function.
+* Always use a unique app string for each one, and make sure it never changes for an app once you've decided on it.
+* Unicode characters are legal, as long as it's UTF-8 encoded, but...
+* ...only use letters, numbers, and spaces. Avoid punctuation like "Game Name 2: Bad Guy's Revenge!" ... "Game Name 2" is sufficient.
 
 The returned path is guaranteed to end with a path separator ('\' on
 Windows, '/' on most other platforms).
@@ -70,8 +68,6 @@ the pointer when done with it.
 == Version ==
 
 This function is available since SDL 2.0.1.
-
-
 
 == Code Examples ==
 

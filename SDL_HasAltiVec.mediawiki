@@ -12,8 +12,6 @@ SDL_bool SDL_HasAltiVec(void);
 
 Returns SDL_TRUE if the CPU has AltiVec features or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
 This always returns false on CPUs that aren't using PowerPC instruction

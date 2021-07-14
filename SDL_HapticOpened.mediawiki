@@ -24,13 +24,9 @@ int SDL_HapticOpened(int device_index);
 Returns 1 if it has been opened, 0 if it hasn't or on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

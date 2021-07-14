@@ -22,8 +22,6 @@ int SDL_LinuxSetThreadPriority(Sint64 threadID, int priority);
 
 Returns 0 on success, or -1 on error.
 
-
-
 == Remarks ==
 
 This uses setpriority() if possible, and RealtimeKit if available.

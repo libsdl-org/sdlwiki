@@ -12,8 +12,6 @@ SDL_bool SDL_HasARMSIMD(void);
 
 Returns SDL_TRUE if the CPU has ARM SIMD features or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
 This is different from ARM NEON, which is a different instruction set.

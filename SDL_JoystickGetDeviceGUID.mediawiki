@@ -24,8 +24,6 @@ SDL_JoystickGUID SDL_JoystickGetDeviceGUID(int device_index);
 Returns the GUID of the selected joystick. If called on an invalid index,
 this function returns a zero GUID
 
-
-
 == Remarks ==
 
 This function can be called before any joysticks are opened.

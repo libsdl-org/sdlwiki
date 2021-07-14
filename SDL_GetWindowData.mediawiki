@@ -23,8 +23,6 @@ void* SDL_GetWindowData(SDL_Window * window,
 
 Returns the value associated with `name`.
 
-
-
 == Related Functions ==
 
 :[[SDL_SetWindowData]]

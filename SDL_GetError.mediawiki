@@ -16,8 +16,6 @@ call to [[SDL_ClearError]](). The message is only applicable when an SDL
 function has signaled an error. You must check the return values of SDL
 function calls to determine when to appropriately call [[SDL_GetError]]().
 
-
-
 == Remarks ==
 
 It is possible for multiple errors to occur before calling

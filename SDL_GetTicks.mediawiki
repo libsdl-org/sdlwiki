@@ -13,8 +13,6 @@ Uint32 SDL_GetTicks(void);
 Returns an unsigned 32-bit value representing the number of milliseconds
 since the SDL library initialized.
 
-
-
 == Remarks ==
 
 This value wraps if the program runs for more than ~49 days.

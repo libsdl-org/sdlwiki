@@ -33,8 +33,6 @@ int SDL_QueueAudio(SDL_AudioDeviceID dev, const void *data, Uint32 len);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 If you are looking to retrieve queued audio from a non-callback capture
@@ -68,8 +66,6 @@ handles locking internally for this function.
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

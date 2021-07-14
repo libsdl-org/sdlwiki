@@ -27,8 +27,6 @@ const char* SDL_GameControllerNameForIndex(int joystick_index);
 Returns the implementation-dependent name for the game controller, or NULL
 if there is no name or the index is invalid.
 
-
-
 == Remarks ==
 
 This function can be called before any controllers are opened.
@@ -39,8 +37,6 @@ passed to [[SDL_JoystickOpen]]().
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

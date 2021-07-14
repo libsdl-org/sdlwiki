@@ -24,8 +24,6 @@ const char* SDL_GetAudioDeviceName(int index,
 Returns the name of the audio device at the requested index, or NULL on
 error.
 
-
-
 == Remarks ==
 
 This function is only valid after successfully initializing the audio

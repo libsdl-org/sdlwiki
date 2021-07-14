@@ -24,8 +24,6 @@ int SDL_JoystickNumAxes(SDL_Joystick *joystick);
 Returns the number of axis controls/number of axes on success or a negative
 error code on failure; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Often, the directional pad on a game controller will either look like 4

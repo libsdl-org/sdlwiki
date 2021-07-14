@@ -19,8 +19,6 @@ void * SDL_SIMDAlloc(const size_t len);
 
 Returns Pointer to newly-allocated block, NULL if out of memory.
 
-
-
 == Remarks ==
 
 This will allocate a block of memory that is suitable for use with SIMD

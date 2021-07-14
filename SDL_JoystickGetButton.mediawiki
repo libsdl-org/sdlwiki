@@ -27,8 +27,6 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick *joystick,
 
 Returns 1 if the specified button is pressed, 0 otherwise.
 
-
-
 == Related Functions ==
 
 :[[SDL_JoystickNumButtons]]

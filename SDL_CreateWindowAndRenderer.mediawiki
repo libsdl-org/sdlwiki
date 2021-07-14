@@ -34,8 +34,6 @@ int SDL_CreateWindowAndRenderer(
 Returns 0 on success, or -1 on error; call SDL_GetError() for more
 information.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

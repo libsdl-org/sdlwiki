@@ -20,8 +20,6 @@ int SDL_SetThreadPriority(SDL_ThreadPriority priority);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Note that some platforms will not let you alter the priority (or at least,

@@ -13,5 +13,3 @@ SDL_bool SDL_IsChromebook(void);
 Returns SDL_TRUE if this is a Chromebook, SDL_FALSE otherwise.
 
 
-
-

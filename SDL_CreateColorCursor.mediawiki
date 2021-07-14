@@ -28,13 +28,9 @@ SDL_Cursor* SDL_CreateColorCursor(SDL_Surface *surface,
 Returns the new cursor on success or NULL on failure; call SDL_GetError()
 for more information.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

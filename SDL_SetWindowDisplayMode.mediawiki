@@ -24,8 +24,6 @@ int SDL_SetWindowDisplayMode(SDL_Window * window,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This only affects the display mode used when the window is fullscreen. To

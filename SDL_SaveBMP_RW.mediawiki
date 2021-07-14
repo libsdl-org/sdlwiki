@@ -27,8 +27,6 @@ int SDL_SaveBMP_RW
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the

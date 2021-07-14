@@ -26,8 +26,6 @@ next call to this function. If you need it around any longer, you must copy
 it. If the key doesn't have a name, this function returns an empty string
 ("").
 
-
-
 == Remarks ==
 
 See [[SDL_Scancode]] and [[SDL_Keycode]] for details.

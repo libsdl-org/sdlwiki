@@ -24,8 +24,6 @@ int SDL_GL_MakeCurrent(SDL_Window * window,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The context must have been created with a compatible window.

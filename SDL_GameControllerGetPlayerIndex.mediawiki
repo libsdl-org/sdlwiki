@@ -19,8 +19,6 @@ int SDL_GameControllerGetPlayerIndex(SDL_GameController *gamecontroller);
 
 Returns player index for controller, or -1 if it's not available.
 
-
-
 == Remarks ==
 
 For XInput controllers this returns the XInput user index.

@@ -13,5 +13,3 @@ int SDL_GameControllerNumMappings(void);
 Returns the number of mappings.
 
 
-
-

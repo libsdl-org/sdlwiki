@@ -35,13 +35,9 @@ Returns a SDL_GameControllerButtonBind describing the bind. On failure
 <code>.bindType</code> will be
 <code>[[SDL_CONTROLLER_BINDTYPE_NONE]]</code>.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

@@ -23,8 +23,6 @@ int SDL_CondWait(SDL_cond * cond, SDL_mutex * mutex);
 Returns 0 when it is signaled or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function unlocks the specified <code>mutex</code> and waits for

@@ -29,8 +29,6 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 If your needs aren't complex, this function is preferred over
@@ -38,9 +36,9 @@ If your needs aren't complex, this function is preferred over
 
 <code>flags</code> may be any of the following:
 
-* <code>[[SDL_MESSAGEBOX_ERROR]]</code>: error dialog 
-* <code>[[SDL_MESSAGEBOX_WARNING]]</code>: warning dialog 
-* <code>[[SDL_MESSAGEBOX_INFORMATION]]</code>: informational dialog 
+* <code>[[SDL_MESSAGEBOX_ERROR]]</code>: error dialog
+* <code>[[SDL_MESSAGEBOX_WARNING]]</code>: warning dialog
+* <code>[[SDL_MESSAGEBOX_INFORMATION]]</code>: informational dialog
 
 This function should be called on the thread that created the parent
 window, or on the main thread if the messagebox has no parent. It will

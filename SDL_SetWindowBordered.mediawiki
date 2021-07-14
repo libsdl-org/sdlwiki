@@ -29,18 +29,15 @@ void SDL_SetWindowBordered(SDL_Window * window,
 
 == Remarks ==
 
-This will add or remove the window's
-<code>[[SDL_WINDOW_BORDERLESS]]</code> flag and add or remove the border
-from the actual window. This is a no-op if the window's border already
-matches the requested state.
+This will add or remove the window's <code>[[SDL_WINDOW_BORDERLESS]]</code>
+flag and add or remove the border from the actual window. This is a no-op
+if the window's border already matches the requested state.
 
 You can't change the border state of a fullscreen window.
 
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

@@ -22,8 +22,6 @@ void* SDL_LoadFile(const char *file, size_t *datasize);
 
 Returns the data, or NULL if there was an error.
 
-
-
 == Remarks ==
 
 The data is allocated with a zero byte at the end (null terminated) for

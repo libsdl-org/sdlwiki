@@ -12,8 +12,6 @@ size_t SDL_SIMDGetAlignment(void);
 
 Returns Alignment in bytes needed for available, known SIMD instructions.
 
-
-
 == Remarks ==
 
 This will return the minimum number of bytes to which a pointer must be

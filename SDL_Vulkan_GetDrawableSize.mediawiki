@@ -34,8 +34,6 @@ support (Apple calls this "Retina"), and not disabled by the
 
 This function is available in SDL 2.0.8
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

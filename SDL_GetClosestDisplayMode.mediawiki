@@ -26,8 +26,6 @@ SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayM
 Returns the passed in value `closest` or NULL if no matching video mode was
 available; call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The available display modes are scanned and <code>closest</code> is filled

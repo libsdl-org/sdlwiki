@@ -29,8 +29,6 @@ Uint32 SDL_MapRGB(const SDL_PixelFormat * format,
 
 Returns a pixel value
 
-
-
 == Remarks ==
 
 This function maps the RGB color value to the specified pixel format and

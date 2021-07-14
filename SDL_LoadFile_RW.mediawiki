@@ -27,8 +27,6 @@ void* SDL_LoadFile_RW(SDL_RWops *src,
 
 Returns the data, or NULL if there was an error.
 
-
-
 == Remarks ==
 
 The data is allocated with a zero byte at the end (null terminated) for

@@ -16,13 +16,9 @@ int SDL_MouseIsHaptic(void);
 
 Returns SDL_TRUE if the mouse is haptic or SDL_FALSE if it isn't.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

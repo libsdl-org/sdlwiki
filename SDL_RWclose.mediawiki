@@ -20,8 +20,6 @@ int SDL_RWclose(SDL_RWops *context);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 [[SDL_RWclose]]() closes and cleans up the [[SDL_RWops]] stream. It

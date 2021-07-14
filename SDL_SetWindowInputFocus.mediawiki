@@ -28,8 +28,6 @@ int SDL_SetWindowInputFocus(SDL_Window * window);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 You almost certainly want [[SDL_RaiseWindow]]() instead of this function.
@@ -39,8 +37,6 @@ completely obscured by other windows.
 == Version ==
 
 This function is available since SDL 2.0.5.
-
-
 
 == Related Functions ==
 

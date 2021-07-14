@@ -21,5 +21,3 @@ Returns SDL_TRUE, or SDL_FALSE if this controller does not have a
 modifiable LED
 
 
-
-

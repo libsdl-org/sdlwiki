@@ -15,8 +15,6 @@ SDL_Window * SDL_GetKeyboardFocus(void);
 == Return Value ==
 
 Returns the window with keyboard focus.
-
-
 ----
 [[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
 

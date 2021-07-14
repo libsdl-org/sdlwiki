@@ -21,8 +21,6 @@ Returns the index of the display containing the center of the window on
 success or a negative error code on failure; call [[SDL_GetError]]() for
 more information.
 
-
-
 == Related Functions ==
 
 :[[SDL_GetDisplayBounds]]

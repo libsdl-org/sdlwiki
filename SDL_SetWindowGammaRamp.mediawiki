@@ -32,8 +32,6 @@ int SDL_SetWindowGammaRamp(SDL_Window * window,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Set the gamma translation table for the red, green, and blue channels of

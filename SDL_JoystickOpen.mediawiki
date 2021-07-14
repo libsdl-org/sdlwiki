@@ -24,8 +24,6 @@ SDL_Joystick* SDL_JoystickOpen(int device_index);
 Returns a joystick identifier or NULL if an error occurred; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The <code>device_index</code> argument refers to the N'th joystick

@@ -23,8 +23,6 @@ SDL_Texture * SDL_CreateTextureFromSurface(SDL_Renderer * renderer, SDL_Surface 
 Returns the created texture or NULL on failure; call SDL_GetError() for
 more information.
 
-
-
 == Remarks ==
 
 The surface is not modified or freed by this function.

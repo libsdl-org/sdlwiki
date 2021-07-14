@@ -20,8 +20,6 @@ SDL_bool SDL_IsShapedWindow(const SDL_Window *window);
 Return SDL_TRUE if the window is a window that can be shaped, SDL_FALSE if
 the window is unshaped or NULL.
 
-
-
 == Related Functions ==
 
 :[[SDL_CreateShapedWindow]]

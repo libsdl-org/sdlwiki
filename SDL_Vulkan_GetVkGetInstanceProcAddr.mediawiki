@@ -12,8 +12,6 @@ void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
 
 Returns The function pointer for `vkGetInstanceProcAddr` or NULL on error.
 
-
-
 == Remarks ==
 
 This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or

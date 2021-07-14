@@ -30,8 +30,6 @@ int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
 Returns the number of mappings added or -1 on error; call SDL_GetError()
 for more information.
 
-
-
 == Remarks ==
 
 You can call this function several times, if needed, to load different
@@ -51,8 +49,6 @@ constrained environment.
 == Version ==
 
 This function is available since SDL 2.0.2.
-
-
 
 == Code Examples ==
 

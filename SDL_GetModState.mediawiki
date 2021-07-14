@@ -17,8 +17,6 @@ SDL_Keymod SDL_GetModState(void);
 Returns an OR'd combination of the modifier keys for the keyboard. See
 [[SDL_Keymod]] for details.
 
-
-
 == Related Functions ==
 
 :[[SDL_GetKeyboardState]]

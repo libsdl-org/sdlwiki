@@ -24,8 +24,8 @@ void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
 
 == Related Functions ==
 
-:[[SDL_GetWindowSize()]]
-:[[SDL_CreateWindow()]]
+:[[SDL_GetWindowSize]]
+:[[SDL_CreateWindow]]
 
 
 

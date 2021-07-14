@@ -25,8 +25,6 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick *
 Returns a valid haptic device identifier on success or NULL on failure;
 call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 You must still close the haptic device separately. It will not be closed
@@ -40,8 +38,6 @@ on that device.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

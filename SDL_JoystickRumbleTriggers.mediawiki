@@ -28,8 +28,6 @@ int SDL_JoystickRumbleTriggers(SDL_Joystick *joystick, Uint16 left_rumble, Uint1
 
 Returns 0, or -1 if trigger rumble isn't supported on this joystick
 
-
-
 == Remarks ==
 
 Each call to this function cancels any previous trigger rumble effect, and

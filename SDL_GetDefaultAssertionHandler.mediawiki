@@ -13,8 +13,6 @@ SDL_AssertionHandler SDL_GetDefaultAssertionHandler(void);
 Returns the default SDL_AssertionHandler that is called when an assert
 triggers.
 
-
-
 == Remarks ==
 
 This returns the function pointer that is called by default when an
@@ -25,8 +23,6 @@ to provide a different function.
 == Version ==
 
 This function is available since SDL 2.0.2.
-
-
 
 == Related Functions ==
 

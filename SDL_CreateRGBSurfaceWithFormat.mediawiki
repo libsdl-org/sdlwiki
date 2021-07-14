@@ -40,8 +40,6 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormat
 Returns the new SDL_Surface structure that is created or NULL if it fails;
 call [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 This function operates mostly like [[SDL_CreateRGBSurface]](), except

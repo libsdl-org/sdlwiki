@@ -25,8 +25,6 @@ Returns SDL_TRUE if effect is supported, SDL_FALSE if it isn't, or a
 negative error code on failure; call [[SDL_GetError]]() for more
 information.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -23,13 +23,10 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
 
 Returns SDL_TRUE on success or SDL_FALSE if there is no event filter set.
 
-
-
 == Remarks ==
 
-This function can be used to "chain" filters, by saving the existing
-filter before replacing it with a function that will call that saved
-filter.
+This function can be used to "chain" filters, by saving the existing filter
+before replacing it with a function that will call that saved filter.
 
 == Related Functions ==
 

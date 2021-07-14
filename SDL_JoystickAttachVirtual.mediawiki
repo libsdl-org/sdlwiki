@@ -16,5 +16,3 @@ int SDL_JoystickAttachVirtual(SDL_JoystickType type,
 Returns the joystick's device index, or -1 if an error occurred.
 
 
-
-

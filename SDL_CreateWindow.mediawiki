@@ -37,24 +37,22 @@ SDL_Window * SDL_CreateWindow(const char *title,
 Returns the window that was created or NULL on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 <code>flags</code> may be any of the following OR'd together:
 
-* <code>[[SDL_WINDOW_FULLSCREEN]]</code>: fullscreen window 
-* <code>[[SDL_WINDOW_FULLSCREEN_DESKTOP]]</code>: fullscreen window at desktop resolution 
-* <code>[[SDL_WINDOW_OPENGL]]</code>: window usable with an OpenGL context 
-* <code>[[SDL_WINDOW_VULKAN]]</code>: window usable with a Vulkan instance 
-* <code>[[SDL_WINDOW_METAL]]</code>: window usable with a Metal instance 
-* <code>[[SDL_WINDOW_HIDDEN]]</code>: window is not visible 
-* <code>[[SDL_WINDOW_BORDERLESS]]</code>: no window decoration 
-* <code>[[SDL_WINDOW_RESIZABLE]]</code>: window can be resized 
-* <code>[[SDL_WINDOW_MINIMIZED]]</code>: window is minimized 
-* <code>[[SDL_WINDOW_MAXIMIZED]]</code>: window is maximized 
-* <code>[[SDL_WINDOW_INPUT_GRABBED]]</code>: window has grabbed input focus 
-* <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>: window should be created in high-DPI mode if supported (>= SDL 2.0.1) 
+* <code>[[SDL_WINDOW_FULLSCREEN]]</code>: fullscreen window
+* <code>[[SDL_WINDOW_FULLSCREEN_DESKTOP]]</code>: fullscreen window at desktop resolution
+* <code>[[SDL_WINDOW_OPENGL]]</code>: window usable with an OpenGL context
+* <code>[[SDL_WINDOW_VULKAN]]</code>: window usable with a Vulkan instance
+* <code>[[SDL_WINDOW_METAL]]</code>: window usable with a Metal instance
+* <code>[[SDL_WINDOW_HIDDEN]]</code>: window is not visible
+* <code>[[SDL_WINDOW_BORDERLESS]]</code>: no window decoration
+* <code>[[SDL_WINDOW_RESIZABLE]]</code>: window can be resized
+* <code>[[SDL_WINDOW_MINIMIZED]]</code>: window is minimized
+* <code>[[SDL_WINDOW_MAXIMIZED]]</code>: window is maximized
+* <code>[[SDL_WINDOW_INPUT_GRABBED]]</code>: window has grabbed input focus
+* <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>: window should be created in high-DPI mode if supported (>= SDL 2.0.1)
 
 <code>[[SDL_WINDOW_SHOWN]]</code> is ignored by [[SDL_CreateWindow]](). The
 [[SDL_Window]] is implicitly shown if [[SDL_WINDOW_HIDDEN]] is not set.
@@ -95,8 +93,6 @@ in a future version of SDL.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

@@ -34,11 +34,9 @@ SDL_Window * SDL_CreateShapedWindow(const char *title,unsigned int x,unsigned in
 
 Return The window created, or NULL if window creation failed.
 
-
-
 == Related Functions ==
 
-:[[SDL_DestroyWindow()]]
+:[[SDL_DestroyWindow]]
 
 
 

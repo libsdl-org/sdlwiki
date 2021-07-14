@@ -27,12 +27,10 @@ int SDL_CaptureMouse(SDL_bool enabled);
 Returns 0 on success or -1 if not supported; call SDL_GetError() for more
 information.
 
-
-
 == Remarks ==
 
-Capturing enables your app to obtain mouse events globally, instead of
-just within your window. Not all video targets support this function. When
+Capturing enables your app to obtain mouse events globally, instead of just
+within your window. Not all video targets support this function. When
 capturing is enabled, the current window will get all mouse events, but
 unlike relative mode, no change is made to the cursor and it is not
 restrained to your window.
@@ -58,8 +56,6 @@ While capturing is enabled, the current window will have the
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

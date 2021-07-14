@@ -36,12 +36,10 @@ int SDL_GetDisplayDPI(int displayIndex, float * ddpi, float * hdpi, float * vdpi
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
-Diagonal, horizontal and vertical DPI can all be optionally returned if
-the appropriate parameter is non-NULL.
+Diagonal, horizontal and vertical DPI can all be optionally returned if the
+appropriate parameter is non-NULL.
 
 A failure of this function usually means that either no DPI information is
 available or the <code>displayIndex</code> is out of range.
@@ -49,8 +47,6 @@ available or the <code>displayIndex</code> is out of range.
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

@@ -26,8 +26,6 @@ Sint64 SDL_RWseek(SDL_RWops *context,
 
 Returns the final offset in the data stream after the seek or -1 on error.
 
-
-
 == Remarks ==
 
 This function seeks to byte <code>offset</code>, relative to
@@ -35,9 +33,9 @@ This function seeks to byte <code>offset</code>, relative to
 
 <code>whence</code> may be any of the following values:
 
-* <code>RW_SEEK_SET</code>: seek from the beginning of data 
-* <code>RW_SEEK_CUR</code>: seek relative to current read point 
-* <code>RW_SEEK_END</code>: seek relative to the end of data 
+* <code>RW_SEEK_SET</code>: seek from the beginning of data
+* <code>RW_SEEK_CUR</code>: seek relative to current read point
+* <code>RW_SEEK_END</code>: seek relative to the end of data
 
 If this stream can not seek, it will return -1.
 

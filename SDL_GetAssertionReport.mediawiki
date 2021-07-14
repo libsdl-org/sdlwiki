@@ -13,8 +13,6 @@ const SDL_AssertData * SDL_GetAssertionReport(void);
 Returns a list of all failed assertions or NULL if the list is empty. This
 memory should not be modified or freed by the application.
 
-
-
 == Remarks ==
 
 This function gets all assertions triggered since the last call to
@@ -22,16 +20,14 @@ This function gets all assertions triggered since the last call to
 
 The proper way to examine this data looks something like this:
 
-
-
 <syntaxhighlight lang='c'>
-const [[SDL_AssertData]] *item = [[SDL_GetAssertionReport]]();
+const SDL_AssertData *item = SDL_GetAssertionReport();
 while (item) {
-printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\\n",
-item->condition, item->function, item->filename,
-item->linenum, item->trigger_count,
-item->always_ignore ? "yes" : "no");
-item = item->next;
+   printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\\n",
+          item->condition, item->function, item->filename,
+          item->linenum, item->trigger_count,
+          item->always_ignore ? "yes" : "no");
+   item = item->next;
 }
 </syntaxhighlight>
 

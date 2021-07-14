@@ -22,8 +22,6 @@ int SDL_AtomicSet(SDL_atomic_t *a, int v);
 
 Returns the previous value of the atomic variable.
 
-
-
 == Remarks ==
 
 This function also acts as a full memory barrier.

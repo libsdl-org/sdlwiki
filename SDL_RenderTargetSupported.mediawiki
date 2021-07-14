@@ -27,13 +27,9 @@ SDL_bool SDL_RenderTargetSupported(SDL_Renderer *renderer);
 
 Returns SDL_TRUE if supported or SDL_FALSE if not.
 
-
-
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

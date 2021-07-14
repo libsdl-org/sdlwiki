@@ -28,8 +28,6 @@ int SDL_JoystickSetLED(SDL_Joystick *joystick, Uint8 red, Uint8 green, Uint8 blu
 
 Returns 0 on success, -1 if this joystick does not have a modifiable LED
 
-
-
 == Remarks ==
 
 An example of a joystick LED is the light on the back of a PlayStation 4's

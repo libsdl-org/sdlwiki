@@ -23,8 +23,6 @@ const Uint8* SDL_GetKeyboardState(int *numkeys);
 
 Returns a pointer to an array of key states.
 
-
-
 == Remarks ==
 
 The pointer returned is a pointer to an internal SDL array. It will be

@@ -20,8 +20,6 @@ SDL_Window * SDL_GetWindowFromID(Uint32 id);
 Returns the window associated with `id` or NULL if it doesn't exist; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The numeric ID is what [[SDL_WindowEvent]] references, and is necessary to

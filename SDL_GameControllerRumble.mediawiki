@@ -28,8 +28,6 @@ int SDL_GameControllerRumble(SDL_GameController *gamecontroller, Uint16 low_freq
 
 Returns 0, or -1 if rumble isn't supported on this controller
 
-
-
 == Remarks ==
 
 Each call to this function cancels any previous rumble effect, and calling

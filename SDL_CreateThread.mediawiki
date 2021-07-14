@@ -28,16 +28,12 @@ Returns an opaque pointer to the new thread object on success, NULL if the
 new thread could not be created; call [[SDL_GetError]]() for more
 information.
 
-
-
 == Remarks ==
 
 This is equivalent to calling:
 
-
-
 <syntaxhighlight lang='c'>
-[[SDL_CreateThreadWithStackSize]](fn, name, 0, data);
+SDL_CreateThreadWithStackSize(fn, name, 0, data);
 </syntaxhighlight>
 
 == Code Examples ==

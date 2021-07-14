@@ -17,8 +17,6 @@ void * SDL_AndroidGetActivity(void);
 Returns the jobject representing the instance of the Activity class of the
 Android application, or NULL on error.
 
-
-
 == Remarks ==
 
 The prototype of the function in SDL's code actually declares a void*
@@ -34,8 +32,6 @@ https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

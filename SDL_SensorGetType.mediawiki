@@ -19,8 +19,6 @@ SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
 
 Returns The SDL_SensorType type, or `SDL_SENSOR_INVALID` if `sensor` is
 NULL.
-
-
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

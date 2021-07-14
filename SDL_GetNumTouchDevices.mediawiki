@@ -20,8 +20,6 @@ int SDL_GetNumTouchDevices(void);
 
 Returns the number of registered touch devices.
 
-
-
 == Remarks ==
 
 On some platforms SDL first sees the touch device if it was actually used.
@@ -34,8 +32,6 @@ This was fixed for Android in SDL 2.0.1.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

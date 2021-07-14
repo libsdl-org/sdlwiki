@@ -13,5 +13,3 @@ SDL_WinRT_DeviceFamily SDL_WinRTGetDeviceFamily();
 Returns A value from the SDL_WinRT_DeviceFamily enum.
 
 
-
-

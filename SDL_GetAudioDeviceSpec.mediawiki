@@ -27,8 +27,6 @@ int SDL_GetAudioDeviceSpec(int index,
 
 Returns 0 on success, nonzero on error
 
-
-
 == Remarks ==
 
 This function is only valid after a successfully initializing the audio

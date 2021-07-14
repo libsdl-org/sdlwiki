@@ -30,8 +30,6 @@ Uint32 SDL_GetGlobalMouseState(int *x, int *y);
 Returns the current button state as a bitmask which can be tested using the
 [[SDL_BUTTON]](X) macros.
 
-
-
 == Remarks ==
 
 This works similarly to [[SDL_GetMouseState]](), but the coordinates will
@@ -51,8 +49,6 @@ instead.
 == Version ==
 
 This function is available since SDL 2.0.4.
-
-
 
 == Related Functions ==
 

@@ -20,8 +20,6 @@ void* SDL_LoadObject(const char *sofile);
 Returns an opaque pointer to the object handle or NULL if there was an
 error; call [[SDL_GetError]]() for more information.
 
-
-
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

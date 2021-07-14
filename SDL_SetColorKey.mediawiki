@@ -27,8 +27,6 @@ int SDL_SetColorKey(SDL_Surface * surface,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 The color key defines a pixel value that will be treated as transparent in

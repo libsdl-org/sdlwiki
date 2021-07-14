@@ -37,8 +37,6 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(
 Returns a valid device ID that is > 0 on success or 0 on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 [[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As
@@ -58,20 +56,20 @@ server, or a filename in the diskaudio driver.
 
 When filling in the desired audio spec structure:
 
-* <code>desired->freq</code> should be the frequency in sample-frames-per-second (Hz). 
-* <code>desired->format</code> should be the audio format (<code>AUDIO_S16SYS</code>, etc). 
-* <code>desired->samples</code> is the desired size of the audio buffer, in _sample frames_ (with stereo output, two samples--left and right--would make a single sample frame). This number should be a power of two, and may be adjusted by the audio driver to a value more suitable for the hardware.  Good values seem to range between 512 and 8096 inclusive, depending on the application and CPU speed.  Smaller values reduce latency, but can lead to underflow if the application is doing heavy processing and cannot fill the audio buffer in time. Note that the number of sample frames is directly related to time by the following formula: <code>ms = (sampleframes''1000)/freq</code> 
-* <code>desired->size</code> is the size in _bytes_ of the audio buffer, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this. 
-* <code>desired->silence</code> is the value used to set the buffer to silence, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this. 
-* <code>desired->callback</code> should be set to a function that will be called when the audio device is ready for more data.  It is passed a pointer to the audio buffer, and the length in bytes of the audio buffer. This function usually runs in a separate thread, and so you should protect data structures that it accesses by calling [[SDL_LockAudioDevice]]() and [[SDL_UnlockAudioDevice]]() in your code. Alternately, you may pass a NULL pointer here, and call [[SDL_QueueAudio]]() with some frequency, to queue more audio samples to be played (or for capture devices, call [[SDL_DequeueAudio]]() with some frequency, to obtain audio samples). 
-* <code>desired->userdata</code> is passed as the first parameter to your callback function. If you passed a NULL callback, this value is ignored. 
+* <code>desired->freq</code> should be the frequency in sample-frames-per-second (Hz).
+* <code>desired->format</code> should be the audio format (<code>AUDIO_S16SYS</code>, etc).
+* <code>desired->samples</code> is the desired size of the audio buffer, in _sample frames_ (with stereo output, two samples--left and right--would make a single sample frame). This number should be a power of two, and may be adjusted by the audio driver to a value more suitable for the hardware.  Good values seem to range between 512 and 8096 inclusive, depending on the application and CPU speed.  Smaller values reduce latency, but can lead to underflow if the application is doing heavy processing and cannot fill the audio buffer in time. Note that the number of sample frames is directly related to time by the following formula: <code>ms = (sampleframes''1000)/freq</code>
+* <code>desired->size</code> is the size in _bytes_ of the audio buffer, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this.
+* <code>desired->silence</code> is the value used to set the buffer to silence, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this.
+* <code>desired->callback</code> should be set to a function that will be called when the audio device is ready for more data.  It is passed a pointer to the audio buffer, and the length in bytes of the audio buffer. This function usually runs in a separate thread, and so you should protect data structures that it accesses by calling [[SDL_LockAudioDevice]]() and [[SDL_UnlockAudioDevice]]() in your code. Alternately, you may pass a NULL pointer here, and call [[SDL_QueueAudio]]() with some frequency, to queue more audio samples to be played (or for capture devices, call [[SDL_DequeueAudio]]() with some frequency, to obtain audio samples).
+* <code>desired->userdata</code> is passed as the first parameter to your callback function. If you passed a NULL callback, this value is ignored.
 
 <code>allowed_changes</code> can have the following flags OR'd together:
 
-* <code>[[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE]]</code> 
-* <code>[[SDL_AUDIO_ALLOW_FORMAT_CHANGE]]</code> 
-* <code>[[SDL_AUDIO_ALLOW_CHANNELS_CHANGE]]</code> 
-* <code>[[SDL_AUDIO_ALLOW_ANY_CHANGE]]</code> 
+* <code>[[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE]]</code>
+* <code>[[SDL_AUDIO_ALLOW_FORMAT_CHANGE]]</code>
+* <code>[[SDL_AUDIO_ALLOW_CHANNELS_CHANGE]]</code>
+* <code>[[SDL_AUDIO_ALLOW_ANY_CHANGE]]</code>
 
 These flags specify how SDL should behave when a device cannot offer a
 specific feature. If the application requests a feature that the hardware
@@ -103,8 +101,6 @@ the callback, see [[SDL_AudioSpec]].
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

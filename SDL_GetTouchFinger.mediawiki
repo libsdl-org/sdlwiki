@@ -31,8 +31,6 @@ SDL_Finger * SDL_GetTouchFinger(SDL_TouchID touchID, int index);
 Returns a pointer to the SDL_Finger object or NULL if no object at the
 given ID and index could be found.
 
-
-
 == Remarks ==
 
 The returned resource is owned by SDL and should not be deallocated.

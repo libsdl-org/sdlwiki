@@ -19,8 +19,6 @@ SDL_bool SDL_GetWindowGrab(SDL_Window * window);
 
 Returns SDL_TRUE if input is grabbed, SDL_FALSE otherwise.
 
-
-
 == Related Functions ==
 
 :[[SDL_SetWindowGrab]]

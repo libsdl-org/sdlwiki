@@ -12,10 +12,8 @@ void SDL_CloseAudio(void);
 
 This function is equivalent to calling
 
-
-
-<syntaxhighlight lang='c'>++
-[[SDL_CloseAudioDevice]](1);
+<syntaxhighlight lang='c++'>
+SDL_CloseAudioDevice(1);
 </syntaxhighlight>
 
 and is only useful if you used the legacy [[SDL_OpenAudio]]() function.

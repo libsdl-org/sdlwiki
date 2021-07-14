@@ -20,8 +20,6 @@ void* SDL_RenderGetMetalCommandEncoder(SDL_Renderer * renderer);
 Returns `id<MTLRenderCommandEncoder>` on success, or NULL if the renderer
 isn't a Metal renderer.
 
-
-
 == Remarks ==
 
 This function returns <code>void *</code>, so SDL doesn't have to include
@@ -30,7 +28,7 @@ Metal's headers, but it can be safely cast to an
 
 == Related Functions ==
 
-:[[SDL_RenderGetMetalLayer()]]
+:[[SDL_RenderGetMetalLayer]]
 
 
 

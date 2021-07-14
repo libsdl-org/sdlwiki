@@ -31,8 +31,6 @@ int SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 If your needs aren't complex, it might be easier to use
@@ -58,8 +56,6 @@ writing to stderr if you can.
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Code Examples ==
 

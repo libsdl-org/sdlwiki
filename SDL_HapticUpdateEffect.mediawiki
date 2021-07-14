@@ -32,8 +32,6 @@ int SDL_HapticUpdateEffect(SDL_Haptic * haptic,
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
-
-
 == Remarks ==
 
 Can be used dynamically, although behavior when dynamically changing
@@ -44,8 +42,6 @@ running [[SDL_HapticUpdateEffect]]().
 == Version ==
 
 This function is available since SDL 2.0.0.
-
-
 
 == Related Functions ==
 

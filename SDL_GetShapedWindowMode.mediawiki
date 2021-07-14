@@ -26,8 +26,6 @@ if the [[SDL_Window]] given is not a shaped window, or
 [[SDL_WINDOW_LACKS_SHAPE]] if the [[SDL_Window]] given is a shapeable
 window currently lacking a shape.
 
-
-
 == Related Functions ==
 
 :[[SDL_WindowShapeMode]]

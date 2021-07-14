@@ -18,8 +18,6 @@ SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
 == Return Value ==
 
 Returns The sensor instance ID, or -1 if `sensor` is NULL.
-
-
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

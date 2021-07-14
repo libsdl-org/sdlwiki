@@ -12,8 +12,6 @@ SDL_bool SDL_HasNEON(void);
 
 Returns SDL_TRUE if the CPU has ARM NEON features or SDL_FALSE if not.
 
-
-
 == Remarks ==
 
 This always returns false on CPUs that aren't using ARM instruction sets.
