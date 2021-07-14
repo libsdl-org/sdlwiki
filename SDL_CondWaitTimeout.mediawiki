@@ -24,9 +24,10 @@ int SDL_CondWaitTimeout(SDL_cond * cond,
 
 == Return Value ==
 
-Returns 0 if the condition variable is signaled, `SDL_MUTEX_TIMEDOUT` if
-the condition is not signaled in the allotted time, or a negative error
-code on failure; call [[SDL_GetError]]() for more information.
+Returns 0 if the condition variable is signaled,
+<code>[[SDL_MUTEX_TIMEDOUT]]</code> if the condition is not signaled in the
+allotted time, or a negative error code on failure; call [[SDL_GetError]]()
+for more information.
 
 == Remarks ==
 

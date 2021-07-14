@@ -10,7 +10,7 @@ SDL_bool SDL_IsTablet(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the device is a tablet, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the device is a tablet, [[SDL_FALSE]] otherwise.
 
 == Remarks ==
 

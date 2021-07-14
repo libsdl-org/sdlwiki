@@ -20,8 +20,9 @@ Uint8 SDL_EventState(Uint32 type, int state);
 
 == Return Value ==
 
-Returns `SDL_DISABLE` or `SDL_ENABLE`, representing the processing state of
-the event before this function makes any changes to it.
+Returns <code>[[SDL_DISABLE]]</code> or <code>[[SDL_ENABLE]]</code>,
+representing the processing state of the event before this function makes
+any changes to it.
 
 == Remarks ==
 

@@ -21,7 +21,7 @@ int SDL_TryLockMutex(SDL_mutex * mutex);
 
 == Return Value ==
 
-Returns return 0, `SDL_MUTEX_TIMEDOUT`, or -1 on error; call
+Returns return 0, <code>[[SDL_MUTEX_TIMEDOUT]]</code>, or -1 on error; call
 [[SDL_GetError]]() for more information.
 
 == Remarks ==

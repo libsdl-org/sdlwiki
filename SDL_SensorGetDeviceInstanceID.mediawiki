@@ -17,7 +17,8 @@ SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 
 == Return Value ==
 
-Returns The sensor instance ID, or -1 if `device_index` is out of range.
+Returns The sensor instance ID, or -1 if <code>device_index</code> is out
+of range.
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

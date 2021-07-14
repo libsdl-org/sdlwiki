@@ -24,6 +24,8 @@ int SDL_SetRelativeMouseMode(SDL_bool enabled);
 Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
+If relative mode is not supported, this returns -1.
+
 == Remarks ==
 
 While the mouse is in relative mode, the cursor is hidden, and the driver

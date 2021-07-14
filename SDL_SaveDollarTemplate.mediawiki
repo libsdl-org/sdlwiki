@@ -28,7 +28,7 @@ int SDL_SaveDollarTemplate(SDL_GestureID gestureId,SDL_RWops *dst);
 
 == Return Value ==
 
-Returns 1 on success or 0 on failure; call SDL_GetError() for more
+Returns 1 on success or 0 on failure; call [[SDL_GetError]]() for more
 information.
 
 == Version ==

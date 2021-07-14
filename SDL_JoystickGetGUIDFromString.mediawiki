@@ -24,7 +24,7 @@ SDL_JoystickGUID SDL_JoystickGetGUIDFromString(const char *pchGUID);
 
 == Return Value ==
 
-Returns a SDL_JoystickGUID structure.
+Returns a [[SDL_JoystickGUID]] structure.
 
 == Remarks ==
 

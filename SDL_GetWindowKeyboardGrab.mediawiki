@@ -17,7 +17,7 @@ SDL_bool SDL_GetWindowKeyboardGrab(SDL_Window * window);
 
 == Return Value ==
 
-Returns SDL_TRUE if keyboard is grabbed, and SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if keyboard is grabbed, and [[SDL_FALSE]] otherwise.
 
 == Related Functions ==
 

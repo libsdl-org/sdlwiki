@@ -17,8 +17,8 @@ SDL_Window * SDL_GetWindowFromID(Uint32 id);
 
 == Return Value ==
 
-Returns the window associated with `id` or NULL if it doesn't exist; call
-[[SDL_GetError]]() for more information.
+Returns the window associated with <code>id</code> or NULL if it doesn't
+exist; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 

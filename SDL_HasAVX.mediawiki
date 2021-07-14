@@ -10,7 +10,7 @@ SDL_bool SDL_HasAVX(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the CPU has AVX features or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if the CPU has AVX features or [[SDL_FALSE]] if not.
 
 == Remarks ==
 

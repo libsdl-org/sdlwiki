@@ -25,7 +25,7 @@ void* SDL_SetWindowData(SDL_Window * window,
 
 == Return Value ==
 
-Returns the previous value associated with `name`.
+Returns the previous value associated with <code>name</code>.
 
 == Remarks ==
 

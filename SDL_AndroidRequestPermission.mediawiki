@@ -17,7 +17,8 @@ SDL_bool SDL_AndroidRequestPermission(const char *permission);
 
 == Return Value ==
 
-Returns SDL_TRUE if the permission was granted, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the permission was granted, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

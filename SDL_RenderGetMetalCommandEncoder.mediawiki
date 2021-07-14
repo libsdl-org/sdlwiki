@@ -17,8 +17,8 @@ void* SDL_RenderGetMetalCommandEncoder(SDL_Renderer * renderer);
 
 == Return Value ==
 
-Returns `id<MTLRenderCommandEncoder>` on success, or NULL if the renderer
-isn't a Metal renderer.
+Returns <code>id<MTLRenderCommandEncoder></code> on success, or NULL if the
+renderer isn't a Metal renderer.
 
 == Remarks ==
 

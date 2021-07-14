@@ -27,8 +27,8 @@ int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
 
 == Return Value ==
 
-Returns the number of mappings added or -1 on error; call SDL_GetError()
-for more information.
+Returns the number of mappings added or -1 on error; call
+[[SDL_GetError]]() for more information.
 
 == Remarks ==
 

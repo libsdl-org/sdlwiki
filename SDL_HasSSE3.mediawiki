@@ -10,7 +10,7 @@ SDL_bool SDL_HasSSE3(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the CPU has SSE3 features or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if the CPU has SSE3 features or [[SDL_FALSE]] if not.
 
 == Remarks ==
 

@@ -17,7 +17,8 @@ Uint32 SDL_GetWindowFlags(SDL_Window * window);
 
 == Return Value ==
 
-Returns a mask of the SDL_WindowFlags associated with `window`
+Returns a mask of the [[SDL_WindowFlags]] associated with
+<code>window</code>
 
 == Related Functions ==
 

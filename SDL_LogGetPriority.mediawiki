@@ -17,7 +17,7 @@ SDL_LogPriority SDL_LogGetPriority(int category);
 
 == Return Value ==
 
-Returns the SDL_LogPriority for the requested category
+Returns the [[SDL_LogPriority]] for the requested category
 
 == Related Functions ==
 

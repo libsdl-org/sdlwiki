@@ -23,9 +23,9 @@ int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode
 
 == Return Value ==
 
-Return 0 on success, SDL_INVALID_SHAPE_ARGUMENT on an invalid shape
-argument, or SDL_NONSHAPEABLE_WINDOW if the [[SDL_Window]] given does not
-reference a valid shaped window.
+Return 0 on success, [[SDL_INVALID_SHAPE_ARGUMENT]] on an invalid shape
+argument, or [[SDL_NONSHAPEABLE_WINDOW]] if the [[SDL_Window]] given does
+not reference a valid shaped window.
 
 == Related Functions ==
 

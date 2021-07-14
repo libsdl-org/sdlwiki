@@ -29,8 +29,8 @@ SDL_bool SDL_EnclosePoints(const SDL_Point * points,
 
 == Return Value ==
 
-Returns SDL_TRUE if any points were enclosed or SDL_FALSE if all the points
-were outside of the clipping rectangle.
+Returns [[SDL_TRUE]] if any points were enclosed or [[SDL_FALSE]] if all
+the points were outside of the clipping rectangle.
 
 == Remarks ==
 

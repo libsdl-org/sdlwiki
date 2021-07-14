@@ -21,7 +21,7 @@ SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode);
 
 == Return Value ==
 
-Returns the SDL_Keycode that corresponds to the given SDL_Scancode.
+Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]].
 
 == Remarks ==
 

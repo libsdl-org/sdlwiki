@@ -17,7 +17,8 @@ SDL_bool SDL_HasSurfaceRLE(SDL_Surface * surface);
 
 == Return Value ==
 
-Returns SDL_TRUE if the surface is RLE enabled, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the surface is RLE enabled, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

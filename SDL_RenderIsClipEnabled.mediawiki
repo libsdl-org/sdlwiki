@@ -24,7 +24,7 @@ SDL_bool SDL_RenderIsClipEnabled(SDL_Renderer * renderer);
 
 == Return Value ==
 
-Returns SDL_TRUE if clipping is enabled or SDL_FALSE if not; call
+Returns [[SDL_TRUE]] if clipping is enabled or [[SDL_FALSE]] if not; call
 [[SDL_GetError]]() for more information.
 
 == Version ==

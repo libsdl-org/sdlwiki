@@ -21,8 +21,8 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 
 == Return Value ==
 
-Returns the SDL_Scancode, or `SDL_SCANCODE_UNKNOWN` if the name wasn't
-recognized; call [[SDL_GetError]]() for more information.
+Returns the [[SDL_Scancode]], or <code>[[SDL_SCANCODE_UNKNOWN]]</code> if
+the name wasn't recognized; call [[SDL_GetError]]() for more information.
 
 == Version ==
 

@@ -23,7 +23,8 @@ SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController *gamecontroller);
 
 == Return Value ==
 
-Returns a SDL_Joystick object; call SDL_GetError() for more information.
+Returns a [[SDL_Joystick]] object; call [[SDL_GetError]]() for more
+information.
 
 == Remarks ==
 

@@ -10,7 +10,8 @@ SDL_bool SDL_HasAVX512F(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the CPU has AVX-512F features or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if the CPU has AVX-512F features or [[SDL_FALSE]] if
+not.
 
 == Remarks ==
 

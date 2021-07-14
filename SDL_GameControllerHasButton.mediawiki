@@ -21,7 +21,8 @@ SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
 
 == Return Value ==
 
-Returns SDL_TRUE if the controller has this button, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the controller has this button, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

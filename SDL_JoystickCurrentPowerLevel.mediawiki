@@ -24,8 +24,8 @@ SDL_JoystickPowerLevel SDL_JoystickCurrentPowerLevel(SDL_Joystick *joystick);
 
 == Return Value ==
 
-Returns the current battery level as SDL_JoystickPowerLevel on success or
-<code>[[SDL_JOYSTICK_POWER_UNKNOWN]]</code> if it is unknown
+Returns the current battery level as [[SDL_JoystickPowerLevel]] on success
+or <code>[[SDL_JOYSTICK_POWER_UNKNOWN]]</code> if it is unknown
 
 == Version ==
 

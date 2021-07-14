@@ -17,7 +17,8 @@ SDL_bool SDL_GetWindowMouseGrab(SDL_Window * window);
 
 == Return Value ==
 
-Returns This returns SDL_TRUE if mouse is grabbed, and SDL_FALSE otherwise.
+Returns This returns [[SDL_TRUE]] if mouse is grabbed, and [[SDL_FALSE]]
+otherwise.
 
 == Related Functions ==
 

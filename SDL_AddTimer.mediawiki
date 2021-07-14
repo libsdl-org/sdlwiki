@@ -25,8 +25,8 @@ SDL_TimerID SDL_AddTimer(Uint32 interval,
 
 == Return Value ==
 
-Returns a timer ID or 0 if an error occurs; call SDL_GetError() for more
-information.
+Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for
+more information.
 
 == Remarks ==
 

@@ -18,7 +18,7 @@ SDL_bool SDL_IsTextInputActive(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if text input events are enabled else SDL_FALSE.
+Returns [[SDL_TRUE]] if text input events are enabled else [[SDL_FALSE]].
 
 == Version ==
 

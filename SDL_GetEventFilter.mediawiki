@@ -21,7 +21,8 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
 
 == Return Value ==
 
-Returns SDL_TRUE on success or SDL_FALSE if there is no event filter set.
+Returns [[SDL_TRUE]] on success or [[SDL_FALSE]] if there is no event
+filter set.
 
 == Remarks ==
 

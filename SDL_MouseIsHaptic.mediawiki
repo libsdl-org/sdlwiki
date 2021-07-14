@@ -14,7 +14,7 @@ int SDL_MouseIsHaptic(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the mouse is haptic or SDL_FALSE if it isn't.
+Returns [[SDL_TRUE]] if the mouse is haptic or [[SDL_FALSE]] if it isn't.
 
 == Version ==
 

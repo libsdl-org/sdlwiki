@@ -23,7 +23,8 @@ SDL_bool SDL_AtomicCAS(SDL_atomic_t *a, int oldval, int newval);
 
 == Return Value ==
 
-Returns SDL_TRUE if the atomic variable was set, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the atomic variable was set, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

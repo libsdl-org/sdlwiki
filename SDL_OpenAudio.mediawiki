@@ -21,9 +21,18 @@ int SDL_OpenAudio(SDL_AudioSpec * desired,
 
 == Return Value ==
 
-Returns This function opens the audio device with the desired parameters,
-and returns 0 if successful, placing the actual hardware parameters in the
+Returns 0 if successful, placing the actual hardware parameters in the
 structure pointed to by <code>obtained</code>.
+
+If <code>obtained</code> is NULL, the audio data passed to the callback
+function will be guaranteed to be in the requested format, and will be
+automatically converted to the actual hardware audio format if necessary.
+If <code>obtained</code> is NULL, <code>desired</code> will have fields
+modified.
+
+This function returns a negative error code on failure to open the audio
+device or failure to set up the audio thread; call [[SDL_GetError]]() for
+more information.
 
 == Remarks ==
 

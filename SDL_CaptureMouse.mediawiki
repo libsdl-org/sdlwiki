@@ -24,8 +24,8 @@ int SDL_CaptureMouse(SDL_bool enabled);
 
 == Return Value ==
 
-Returns 0 on success or -1 if not supported; call SDL_GetError() for more
-information.
+Returns 0 on success or -1 if not supported; call [[SDL_GetError]]() for
+more information.
 
 == Remarks ==
 

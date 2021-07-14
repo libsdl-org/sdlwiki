@@ -17,6 +17,7 @@ void SDL_SetWindowMouseGrab(SDL_Window * window,
 |-
 |'''grabbed'''
 |This is [[SDL_TRUE]] to grab mouse, and [[SDL_FALSE]] to release.
+ If the caller enables a grab while another window is currently grabbed, the other window loses its grab in favor of the caller's window.
 |}
 
 == Related Functions ==

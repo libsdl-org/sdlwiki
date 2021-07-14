@@ -10,7 +10,8 @@ SDL_bool SDL_HasSSE42(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the CPU has SSE4.2 features or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if the CPU has SSE4.2 features or [[SDL_FALSE]] if
+not.
 
 == Remarks ==
 

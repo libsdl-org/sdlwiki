@@ -24,7 +24,7 @@ char * SDL_GameControllerMappingForGUID(SDL_JoystickGUID guid);
 
 == Return Value ==
 
-Returns a mapping string or NULL on error; call SDL_GetError() for more
+Returns a mapping string or NULL on error; call [[SDL_GetError]]() for more
 information.
 
 == Remarks ==

@@ -33,11 +33,18 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
 
 == Return Value ==
 
-Returns This function, if successfully called, returns `spec`, which will
-be filled with the audio data format of the wave source data.
+Returns This function, if successfully called, returns <code>spec</code>,
+which will be filled with the audio data format of the wave source data.
 <code>audio_buf</code> will be filled with a pointer to an allocated buffer
 containing the audio data, and <code>audio_len</code> is filled with the
 length of that audio buffer in bytes.
+
+This function returns NULL if the .WAV file cannot be opened, uses an
+unknown data format, or is corrupt; call [[SDL_GetError]]() for more
+information.
+
+When the application is done with the data returned in
+<code>audio_buf</code>, it should call [[SDL_FreeWAV]]() to dispose of it.
 
 == Remarks ==
 

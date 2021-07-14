@@ -33,7 +33,7 @@ Uint32 SDL_MasksToPixelFormatEnum(int bpp,
 
 == Return Value ==
 
-Returns one of the SDL_PixelFormatEnum values
+Returns one of the [[SDL_PixelFormatEnum]] values
 
 == Remarks ==
 

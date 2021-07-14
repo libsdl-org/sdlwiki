@@ -20,7 +20,7 @@ SDL_PowerState SDL_GetPowerInfo(int *secs, int *pct);
 
 == Return Value ==
 
-Returns an SDL_PowerState enum representing the current battery state.
+Returns an [[SDL_PowerState]] enum representing the current battery state.
 
 == Remarks ==
 

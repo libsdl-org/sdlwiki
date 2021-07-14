@@ -17,7 +17,8 @@ SDL_AssertionHandler SDL_GetAssertionHandler(void **puserdata);
 
 == Return Value ==
 
-Returns the SDL_AssertionHandler that is called when an assert triggers.
+Returns the [[SDL_AssertionHandler]] that is called when an assert
+triggers.
 
 == Remarks ==
 

@@ -24,8 +24,8 @@ SDL_bool SDL_IsGameController(int joystick_index);
 
 == Return Value ==
 
-Returns SDL_TRUE if the given joystick is supported by the game controller
-interface, [[SDL_FALSE]] if it isn't or it's an invalid index.
+Returns [[SDL_TRUE]] if the given joystick is supported by the game
+controller interface, [[SDL_FALSE]] if it isn't or it's an invalid index.
 
 == Remarks ==
 

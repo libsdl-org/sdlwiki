@@ -17,7 +17,8 @@ SDL_bool SDL_JoystickHasLED(SDL_Joystick *joystick);
 
 == Return Value ==
 
-Return SDL_TRUE if the joystick has a modifiable LED, SDL_FALSE otherwise.
+Return [[SDL_TRUE]] if the joystick has a modifiable LED, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

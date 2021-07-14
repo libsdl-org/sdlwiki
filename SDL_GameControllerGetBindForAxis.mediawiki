@@ -30,7 +30,7 @@ SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
 
 == Return Value ==
 
-Returns a SDL_GameControllerButtonBind describing the bind. On failure
+Returns a [[SDL_GameControllerButtonBind]] describing the bind. On failure
 (like the given Controller axis doesn't exist on the device), its
 <code>.bindType</code> will be
 <code>[[SDL_CONTROLLER_BINDTYPE_NONE]]</code>.

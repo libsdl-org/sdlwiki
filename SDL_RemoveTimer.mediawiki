@@ -17,8 +17,8 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id);
 
 == Return Value ==
 
-Returns SDL_TRUE if the timer is removed or SDL_FALSE if the timer wasn't
-found.
+Returns [[SDL_TRUE]] if the timer is removed or [[SDL_FALSE]] if the timer
+wasn't found.
 
 == Code Examples ==
 

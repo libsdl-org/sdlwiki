@@ -10,7 +10,7 @@ SDL_AssertionHandler SDL_GetDefaultAssertionHandler(void);
 
 == Return Value ==
 
-Returns the default SDL_AssertionHandler that is called when an assert
+Returns the default [[SDL_AssertionHandler]] that is called when an assert
 triggers.
 
 == Remarks ==

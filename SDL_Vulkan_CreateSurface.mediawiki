@@ -25,7 +25,7 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 == Return Value ==
 
-Returns SDL_TRUE on success, SDL_FALSE on error.
+Returns [[SDL_TRUE]] on success, [[SDL_FALSE]] on error.
 
 == Remarks ==
 

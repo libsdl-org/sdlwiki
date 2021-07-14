@@ -21,8 +21,8 @@ int SDL_JoystickIsHaptic(SDL_Joystick * joystick);
 
 == Return Value ==
 
-Returns SDL_TRUE if the joystick is haptic, SDL_FALSE if it isn't, or a
-negative error code on failure; call [[SDL_GetError]]() for more
+Returns [[SDL_TRUE]] if the joystick is haptic, [[SDL_FALSE]] if it isn't,
+or a negative error code on failure; call [[SDL_GetError]]() for more
 information.
 
 == Version ==

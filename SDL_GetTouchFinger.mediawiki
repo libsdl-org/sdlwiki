@@ -28,7 +28,7 @@ SDL_Finger * SDL_GetTouchFinger(SDL_TouchID touchID, int index);
 
 == Return Value ==
 
-Returns a pointer to the SDL_Finger object or NULL if no object at the
+Returns a pointer to the [[SDL_Finger]] object or NULL if no object at the
 given ID and index could be found.
 
 == Remarks ==

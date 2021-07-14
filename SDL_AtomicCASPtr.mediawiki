@@ -23,7 +23,7 @@ SDL_bool SDL_AtomicCASPtr(void **a, void *oldval, void *newval);
 
 == Return Value ==
 
-Returns SDL_TRUE if the pointer was set, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the pointer was set, [[SDL_FALSE]] otherwise.
 
 == Remarks ==
 

@@ -20,6 +20,6 @@ SDL_bool SDL_GameControllerHasSensor(SDL_GameController *gamecontroller, SDL_Sen
 
 == Return Value ==
 
-Returns SDL_TRUE if the sensor exists, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the sensor exists, [[SDL_FALSE]] otherwise.
 
 

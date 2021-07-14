@@ -21,7 +21,7 @@ SDL_bool SDL_SetClipRect(SDL_Surface * surface,
 
 == Return Value ==
 
-Returns SDL_TRUE if the rectangle intersects the surface, otherwise
+Returns [[SDL_TRUE]] if the rectangle intersects the surface, otherwise
 [[SDL_FALSE]] and blits will be completely clipped.
 
 == Remarks ==

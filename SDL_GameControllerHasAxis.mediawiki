@@ -21,7 +21,8 @@ SDL_GameControllerHasAxis(SDL_GameController *gamecontroller, SDL_GameController
 
 == Return Value ==
 
-Returns SDL_TRUE if the controller has this axis, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if the controller has this axis, [[SDL_FALSE]]
+otherwise.
 
 == Remarks ==
 

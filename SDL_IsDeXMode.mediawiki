@@ -10,6 +10,7 @@ SDL_bool SDL_IsDeXMode(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if this is a DeX docking station, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if this is a DeX docking station, [[SDL_FALSE]]
+otherwise.
 
 

@@ -30,8 +30,8 @@ SDL_bool SDL_DXGIGetOutputInfo( int displayIndex, int *adapterIndex, int *output
 
 == Return Value ==
 
-Returns SDL_TRUE on success or SDL_FALSE on failure; call SDL_GetError()
-for more information.
+Returns [[SDL_TRUE]] on success or [[SDL_FALSE]] on failure; call
+[[SDL_GetError]]() for more information.
 
 == Remarks ==
 

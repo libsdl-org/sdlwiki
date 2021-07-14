@@ -21,8 +21,8 @@ SDL_Keycode SDL_GetKeyFromName(const char *name);
 
 == Return Value ==
 
-Returns key code, or `SDLK_UNKNOWN` if the name wasn't recognized; call
-[[SDL_GetError]]() for more information.
+Returns key code, or <code>SDLK_UNKNOWN</code> if the name wasn't
+recognized; call [[SDL_GetError]]() for more information.
 
 == Related Functions ==
 

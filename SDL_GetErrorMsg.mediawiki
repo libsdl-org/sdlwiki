@@ -20,7 +20,7 @@ char * SDL_GetErrorMsg(char *errstr, int maxlen);
 
 == Return Value ==
 
-Returns The pointer passed in as the `errstr` parameter.
+Returns The pointer passed in as the <code>errstr</code> parameter.
 
 == Remarks ==
 

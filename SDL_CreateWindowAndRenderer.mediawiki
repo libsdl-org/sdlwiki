@@ -31,7 +31,7 @@ int SDL_CreateWindowAndRenderer(
 
 == Return Value ==
 
-Returns 0 on success, or -1 on error; call SDL_GetError() for more
+Returns 0 on success, or -1 on error; call [[SDL_GetError]]() for more
 information.
 
 == Code Examples ==

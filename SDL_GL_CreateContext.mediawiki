@@ -18,8 +18,8 @@ SDL_GLContext SDL_GL_CreateContext(SDL_Window *
 
 == Return Value ==
 
-Returns the OpenGL context associated with `window` or NULL on error; call
-[[SDL_GetError]]() for more details.
+Returns the OpenGL context associated with <code>window</code> or NULL on
+error; call [[SDL_GetError]]() for more details.
 
 == Remarks ==
 

@@ -17,7 +17,7 @@ SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller);
 
 == Return Value ==
 
-Returns SDL_TRUE if the controller has been opened and is currently
+Returns [[SDL_TRUE]] if the controller has been opened and is currently
 connected, or [[SDL_FALSE]] if not.
 
 == Related Functions ==

@@ -17,8 +17,9 @@ SDL_Palette* SDL_AllocPalette(int ncolors);
 
 == Return Value ==
 
-Returns a new SDL_Palette structure on success or NULL on failure (e.g. if
-there wasn't enough memory); call [[SDL_GetError]]() for more information.
+Returns a new [[SDL_Palette]] structure on success or NULL on failure (e.g.
+if there wasn't enough memory); call [[SDL_GetError]]() for more
+information.
 
 == Remarks ==
 

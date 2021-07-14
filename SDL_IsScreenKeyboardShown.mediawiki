@@ -25,7 +25,7 @@ SDL_bool SDL_IsScreenKeyboardShown(SDL_Window *window);
 
 == Return Value ==
 
-Returns SDL_TRUE if screen keyboard is shown or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if screen keyboard is shown or [[SDL_FALSE]] if not.
 
 == Version ==
 

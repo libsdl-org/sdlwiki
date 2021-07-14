@@ -17,7 +17,7 @@ SDL_DisplayOrientation SDL_GetDisplayOrientation(int displayIndex);
 
 == Return Value ==
 
-Returns The SDL_DisplayOrientation enum value of the display, or
+Returns The [[SDL_DisplayOrientation]] enum value of the display, or
 <code>[[SDL_ORIENTATION_UNKNOWN]]</code> if it isn't available.
 
 == Related Functions ==

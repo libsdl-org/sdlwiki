@@ -24,7 +24,8 @@ SDL_bool SDL_JoystickGetAxisInitialState(SDL_Joystick *joystick,
 
 == Return Value ==
 
-Return SDL_TRUE if this axis has any initial value, or SDL_FALSE if not.
+Return [[SDL_TRUE]] if this axis has any initial value, or [[SDL_FALSE]] if
+not.
 
 == Remarks ==
 

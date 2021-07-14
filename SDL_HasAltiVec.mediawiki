@@ -10,7 +10,8 @@ SDL_bool SDL_HasAltiVec(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the CPU has AltiVec features or SDL_FALSE if not.
+Returns [[SDL_TRUE]] if the CPU has AltiVec features or [[SDL_FALSE]] if
+not.
 
 == Remarks ==
 

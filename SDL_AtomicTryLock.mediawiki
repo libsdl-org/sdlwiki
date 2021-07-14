@@ -17,8 +17,8 @@ SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
 
 == Return Value ==
 
-Returns SDL_TRUE if the lock succeeded, SDL_FALSE if the lock is already
-held.
+Returns [[SDL_TRUE]] if the lock succeeded, [[SDL_FALSE]] if the lock is
+already held.
 
 == Remarks ==
 

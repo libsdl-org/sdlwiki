@@ -41,7 +41,8 @@ SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
 
 == Return Value ==
 
-Returns an SDL_BlendMode that represents the chosen factors and operations.
+Returns an [[SDL_BlendMode]] that represents the chosen factors and
+operations.
 
 == Remarks ==
 

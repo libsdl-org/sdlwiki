@@ -10,6 +10,6 @@ SDL_bool SDL_IsAndroidTV(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if this is Android TV, SDL_FALSE otherwise.
+Returns [[SDL_TRUE]] if this is Android TV, [[SDL_FALSE]] otherwise.
 
 

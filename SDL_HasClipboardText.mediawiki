@@ -10,7 +10,8 @@ SDL_bool SDL_HasClipboardText(void);
 
 == Return Value ==
 
-Returns SDL_TRUE if the clipboard has text, or SDL_FALSE if it does not.
+Returns [[SDL_TRUE]] if the clipboard has text, or [[SDL_FALSE]] if it does
+not.
 
 == Version ==
 

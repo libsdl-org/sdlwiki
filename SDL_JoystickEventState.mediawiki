@@ -24,6 +24,9 @@ int SDL_JoystickEventState(int state);
 Returns 1 if enabled, 0 if disabled, or a negative error code on failure;
 call [[SDL_GetError]]() for more information.
 
+If <code>state</code> is <code>[[SDL_QUERY]]</code> then the current state
+is returned, otherwise the new processing state is returned.
+
 == Remarks ==
 
 If joystick events are disabled, you must call [[SDL_JoystickUpdate]]()

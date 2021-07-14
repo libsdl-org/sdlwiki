@@ -17,7 +17,7 @@ SDL_JoystickType SDL_JoystickGetDeviceType(int device_index);
 
 == Return Value ==
 
-Returns the SDL_JoystickType of the selected joystick. If called on an
+Returns the [[SDL_JoystickType]] of the selected joystick. If called on an
 invalid index, this function returns
 <code>[[SDL_JOYSTICK_TYPE_UNKNOWN]]</code>
 

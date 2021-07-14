@@ -21,9 +21,9 @@ int SDL_ShowCursor(int toggle);
 
 == Return Value ==
 
-Returns `SDL_ENABLE` if the cursor is shown, or `SDL_DISABLE` if the cursor
-is hidden, or a negative error code on failure; call [[SDL_GetError]]() for
-more information.
+Returns <code>[[SDL_ENABLE]]</code> if the cursor is shown, or
+<code>[[SDL_DISABLE]]</code> if the cursor is hidden, or a negative error
+code on failure; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 
