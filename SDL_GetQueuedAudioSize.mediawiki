@@ -1,4 +1,3 @@
-
 = SDL_GetQueuedAudioSize =
 
 Get the number of bytes of still-queued audio.
@@ -55,3 +54,5 @@ This function is available since SDL 2.0.4.
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

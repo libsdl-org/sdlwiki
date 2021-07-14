@@ -1,4 +1,3 @@
-
 = SDL_DequeueAudio =
 
 Dequeue more audio on non-callback devices.

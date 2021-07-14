@@ -1,4 +1,3 @@
-
 = SDL_ClearQueuedAudio =
 
 Drop any queued audio data waiting to be sent to the hardware.
