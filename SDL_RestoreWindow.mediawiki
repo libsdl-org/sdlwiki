@@ -21,6 +21,6 @@ void SDL_RestoreWindow(SDL_Window * window);
 :[[SDL_MinimizeWindow]]
 
 ----
-[[CategoryAPI]], CategoryVideo
+[[CategoryAPI]], [[CategoryVideo]]
 
 
