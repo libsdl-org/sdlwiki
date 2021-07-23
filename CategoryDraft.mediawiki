@@ -72,7 +72,6 @@
 * [[SDL_GetKeyName]]
 * [[SDL_GetModState]]
 * [[SDL_GetMouseFocus]]
-* [[SDL_GetMouseState]]
 * [[SDL_GetNumInputDevices]]
 * [[SDL_GetNumTouchDevices]]
 * [[SDL_GetNumTouchFingers]]
@@ -263,6 +262,7 @@
 * [[SDL_WriteU8]]
 * [[SDLEnumTemplate]]
 * [[SDLFunctionTemplate]]
+* [[SDLKeycodeLookup]]
 * [[SDLStructTemplate]]
 <!-- END CATEGORY LIST -->
 
