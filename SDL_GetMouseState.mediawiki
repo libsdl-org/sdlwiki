@@ -1,7 +1,3 @@
-
-== Draft ==
-
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 = SDL_GetMouseState =
 
 Retrieve the current state of the mouse.
@@ -38,8 +34,15 @@ position relative to the focus window. You can pass NULL for either
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>
-SDL_PumpEvents();
-if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
+int x, y;
+Uint32 buttons;
+
+SDL_PumpEvents();  // make sure we have the latest mouse state.
+
+buttons = SDL_GetMouseState(&x, &y);
+
+SDL_Log("Mouse cursor is at %d, %d", x, y);
+if (SDL_BUTTON(SDL_BUTTON_LEFT)) {
     SDL_Log("Mouse Button 1 (left) is pressed.");
 }
 </syntaxhighlight>
@@ -51,6 +54,5 @@ if (SDL_GetMouseState(NULL, NULL) & SDL_BUTTON(SDL_BUTTON_LEFT)) {
 :[[SDL_PumpEvents]]
 
 ----
-[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
-
+[[CategoryAPI]], [[CategoryMouse]]
 
