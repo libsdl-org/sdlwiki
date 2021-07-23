@@ -56,4 +56,3 @@ if (SDL_BUTTON(SDL_BUTTON_LEFT)) {
 ----
 [[CategoryAPI]], [[CategoryMouse]]
 
-
