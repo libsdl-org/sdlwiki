@@ -85,7 +85,7 @@ If you are building "the Unix way," we encourage you to use [https://github.com/
 <syntaxhighlight lang="bash">
 mkdir build
 cd build 
-CC=/where/i/cloned/SDL/build-scripts/gcc-fat.sh ../configure
+CC=/where/i/cloned/SDL/build-scripts/clang-fat.sh ../configure
 make
 </syntaxhighlight>
 
