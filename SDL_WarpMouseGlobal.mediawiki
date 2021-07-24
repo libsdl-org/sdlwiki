@@ -37,6 +37,9 @@ This function generates a mouse motion event.
 A failure of this function usually means that it is unsupported by a
 platform.
 
+Note that this function will appear to succeed, but not actually move the
+mouse when used over Microsoft Remote Desktop.
+
 == Version ==
 
 This function is available since SDL 2.0.4.
