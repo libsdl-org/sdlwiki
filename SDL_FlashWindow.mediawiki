@@ -5,17 +5,14 @@ Request a window to demand attention from the user.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_FlashWindow(SDL_Window * window, Uint32 flash_count);
+int SDL_FlashWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
 |'''window'''
-|the window to request the flashing for
-|-
-|'''flash_count'''
-|number of times the window gets flashed on systems that support flashing the window multiple times, like Windows, else it is ignored
+|the window to be flashed
 |}
 
 == Return Value ==
