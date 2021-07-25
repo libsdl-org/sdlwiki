@@ -1,0 +1,1 @@
+First qualifier in function SDL_SetTextureBlendMode
