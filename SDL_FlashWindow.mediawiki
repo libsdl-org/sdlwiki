@@ -14,8 +14,8 @@ int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
 |'''window'''
 |the window to be flashed
 |-
-|'''the'''
-|flash operation
+|'''operation'''
+|the flash operation
 |}
 
 == Return Value ==
