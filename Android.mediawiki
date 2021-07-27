@@ -10,12 +10,12 @@ This page is more walkthrough-oriented.
 
 == Pre-requisites ==
 
-* Install minimal Java environment. For instance, in Debian/Ubuntu: <pre>
-sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
-</pre>
+* Install minimal Java environment. For instance, in Debian/Ubuntu:
+ sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
 * Install NDK (tested with [https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip r10e])
 * Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API (>=12; >= 19 for SDL >= 2.0.8; >=26 if for SDL >= 2.0.9)
-* Configure your environment variables, e.g.: <pre>
+* Configure your environment variables, e.g.:
+<pre>
 PATH="/usr/src/android-ndk-rXXx:$PATH"                  # for 'ndk-build'
 PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
 PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
@@ -45,38 +45,39 @@ Notes:
 
 ==== Troubleshooting ====
 
-* use OpenJDK 8: execute ```sudo update-alternatives --config java``` and select jdk-8 as default; or use {{{JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew}}}
-* fixed in 2.0.9: in ```/android-project/build.gradle``` change (in BOTH places in the file code appears) from
-```
+* use OpenJDK 8: execute <code>sudo update-alternatives --config java</code> and select jdk-8 as default; or use <code>JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew</code>
+* fixed in 2.0.9: in <code>/android-project/build.gradle</code> change (in BOTH places in the file code appears) from
+<pre>
     repositories {
         jcenter()
     }
-```
-to
-```
+</pre> to <pre>
     repositories {
         jcenter()
         google()
     }
-```
-* ```javax/xml/bind/annotation/XmlSchema```, {{{Could not initialize class com.android.sdklib.repository.AndroidSdkHandler}}}: check the Android Gradle Plugin version in {{{/android-project/build.gradle}}}, e.g.
-``` classpath 'com.android.tools.build:gradle:3.1.0' ```
-* You can customize the Gradle version in ```/android-project/gradle/wrapper/gradle-wrapper.properties```:
-``` distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip ```
-* You can customize your SDK/NDK versions in ```android-project/app/build.gradle```: {{{
+</pre>
+* <code>javax/xml/bind/annotation/XmlSchema</code>, <code>Could not initialize class com.android.sdklib.repository.AndroidSdkHandler</code>: check the Android Gradle Plugin version in <code>/android-project/build.gradle</code>, e.g. <code>classpath 'com.android.tools.build:gradle:3.1.0'</code>
+* You can customize the Gradle version in <code>/android-project/gradle/wrapper/gradle-wrapper.properties</code>: <code>distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip</code>
+* You can customize your SDK/NDK versions in <code>android-project/app/build.gradle</code>:
+<pre>
 android {
     buildToolsVersion "28.0.1"
     compileSdkVersion 28
-}}}
-* You can customize your targets depending on the NDK version: ```
-        externalNativeBuild {
-            ndkBuild {
-                arguments "APP_PLATFORM=android-14"
-                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
-```
-* ```ABIs [x86_64, arm64-v8a] are not supported for platform. Supported ABIs are [armeabi, armeabi-v7a, x86, mips]```: upgrade to NDK >= 10
-* Using ant (SDL <= 2.0.7): edit ```build-scripts/androidbuild.sh```, find the {{{$ANDROID update project}}} line, and add {{{--target android-XX}}} to it (replace XX with your installed API number)
-* TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - ```apt install gradle libgradle-android-plugin-java```
+}
+</pre>
+* You can customize your targets depending on the NDK version:
+<pre>
+externalNativeBuild {
+    ndkBuild {
+        arguments "APP_PLATFORM=android-14"
+        abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+    }
+}
+</pre>
+* <code>ABIs [x86_64, arm64-v8a] are not supported for platform. Supported ABIs are [armeabi, armeabi-v7a, x86, mips]</code>: upgrade to NDK >= 10
+* Using ant (SDL <= 2.0.7): edit <code>build-scripts/androidbuild.sh</code>, find the <code>$ANDROID update project</code> line, and add <code>--target android-XX</code> to it (replace XX with your installed API number)
+* TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - <code>apt install gradle libgradle-android-plugin-java</code>
 
 === SDL wrapper + SDL_image NDK module ===
 
@@ -181,7 +182,8 @@ Note: this environment can be used for CMake too.
 
 === Compile a shared binaries bundle for SDL and SDL_* ===
 
-* Get the latests SDL2_* releases: ```
+* Get the latests SDL2_* releases:
+<pre>
 cd /usr/src/
 wget https://libsdl.org/release/SDL2-2.0.5.tar.gz
 wget https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.1.tar.gz
@@ -200,8 +202,9 @@ ln -s SDL2_image-2.0.1 SDL2_image
 ln -s SDL2_mixer-2.0.1 SDL2_mixer
 ln -s SDL2_net-2.0.1 SDL2_net
 ln -s SDL2_ttf-2.0.14 SDL2_ttf
-```
-* Start with a minimal build: ```
+</pre>
+* Start with a minimal build:
+<pre>
 cd /usr/src/SDL2/
 cd build-scripts/
 #hg revert --all  # remove traces of previous builds
@@ -209,11 +212,13 @@ cd build-scripts/
 ./androidbuild.sh org.libsdl /dev/null
 # doesn't matter if the actual build fails, it's just for setup
 cd ../build/org.libsdl/
-```
-* Remove reference to our dummy file: ```
+</pre>
+* Remove reference to our dummy file:
+<pre>
 rm -rf jni/src/
-```
-* Reference SDL_image, SDL_mixer, SDL_ttf, and their dependencies, as NDK modules: ```
+</pre>
+* Reference SDL_image, SDL_mixer, SDL_ttf, and their dependencies, as NDK modules:
+<pre>
 ln -s /usr/src/SDL2_image jni/
 ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
 ln -s /usr/src/SDL2_mixer jni/
@@ -221,14 +226,16 @@ ln -s /usr/src/SDL2_mixer/external/libmikmod-3.1.12 jni/libmikmod
 ln -s /usr/src/SDL2_mixer/external/smpeg2-2.0.0 jni/smpeg2
 ln -s /usr/src/SDL2_net jni/
 ln -s /usr/src/SDL2_ttf jni/
-```
-* Optionnaly edit <code>jni/Android.mk</code> to disable some formats, e.g.: ```
+</pre>
+* Optionally edit <code>jni/Android.mk</code> to disable some formats, e.g.:
+<pre>
 SUPPORT_MP3_SMPEG := false
 include $(call all-subdir-makefiles)
-```
-* Launch the build! ```
+</pre>
+* Launch the build!
+<pre>
 ndk-build -j$(nproc)
-```
+</pre>
 
 Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.java</code>, your application will be linked to them and Android's ld-linux loads them automatically.
 
@@ -236,22 +243,26 @@ Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.
 === Install SDL in a GCC toolchain ===
 
 Now:
-* Copy the NDK into a traditional GCC toolchain (leave android-14 as-is): ```
+* Copy the NDK into a traditional GCC toolchain (leave android-14 as-is):
+<pre>
 /usr/src/android-ndk-r8c/build/tools/make-standalone-toolchain.sh \
   --platform=android-14 --install-dir=/usr/src/ndk-standalone-14-arm --arch=arm
-```
-* Set your PATH (important, do it before any build): ```
+</pre>
+* Set your PATH (important, do it before any build):
+<pre>
 NDK_STANDALONE=/usr/src/ndk-standalone-14-arm
 PATH=$NDK_STANDALONE/bin:$PATH
-```
-* Install the SDL2 binaries in the toolchain: ```
+</pre>
+* Install the SDL2 binaries in the toolchain:
+<pre>
 cd /usr/src/SDL2/build/org.libsdl/
 for i in libs/armeabi/*; do ln -nfs $(pwd)/$i $NDK_STANDALONE/sysroot/usr/lib/; done
 mkdir $NDK_STANDALONE/sysroot/usr/include/SDL2/
 \cp jni/SDL/include/* $NDK_STANDALONE/sysroot/usr/include/SDL2/
 \cp jni/*/SDL*.h $NDK_STANDALONE/sysroot/usr/include/SDL2/
-```
-* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH (auto-detected by autoconf): ```
+</pre>
+* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH (auto-detected by autoconf):
+<pre>
 VERSION=0.9.12
 cd /usr/src/
 wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
@@ -263,8 +274,9 @@ make -j$(nproc)
 make install
 ln -s ../sysroot/usr/bin/pkgconf $NDK_STANDALONE/bin/arm-linux-androideabi-pkg-config
 mkdir $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/
-```
-* Install pkg-config <code>.pc</code> files for SDL: ```
+</pre>
+* Install pkg-config <code>.pc</code> files for SDL:
+<pre>
 cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/sdl2.pc
 prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
 exec_prefix=${prefix}
@@ -330,22 +342,24 @@ Requires: sdl2 >= 2.0.0
 Libs: -L${libdir} -lSDL2_ttf
 Cflags: -I${includedir}/SDL2
 EOF
-```
+</pre>
 
 === Building other dependencies ===
 
-You can add any other libraries (e.g.: SDL2_gfx, freetype, gettext, gmp...) using commands like: ```
+You can add any other libraries (e.g.: SDL2_gfx, freetype, gettext, gmp...) using commands like:
+<pre>
 mkdir cross-android/ && cd cross-android/
 ../configure --host=arm-linux-androideabi --prefix=$NDK_STANDALONE/sysroot/usr \
   --with-some-option --enable-another-option \
   --disable-shared
 make -j$(nproc)
 make install
-```
+</pre>
 
 Static builds (<code>--disable-shared</code>) are recommended for simplicity (no additional <code>.so</code> to declare).
 
-Example with SDL2_gfx: ```
+Example with SDL2_gfx:
+<pre>
 VERSION=1.0.3
 wget http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-$VERSION.tar.gz
 tar xf SDL2_gfx-$VERSION.tar.gz
@@ -356,7 +370,7 @@ mkdir cross-android/ && cd cross-android/
   --disable-shared --disable-mmx
 make -j$(nproc)
 make install
-```
+</pre>
 
 You can compile YOUR application using this technique, with some more steps to tell Android how to run it using JNI.
 
@@ -365,90 +379,93 @@ You can compile YOUR application using this technique, with some more steps to t
 
 First, prepare an Android project:
 * Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.md</code>. You can leave it as-is in a first step.
-* Make links to the SDL binaries as well: ```
+* Make links to the SDL binaries as well:
+<pre>
 mkdir -p libs/armeabi/
 for i in /usr/src/SDL2/build/org.libsdl/libs/armeabi/*; do ln -nfs $i libs/armeabi/; done
-```
+</pre>
 
 Make your project Android-aware:
 * Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h"). Compile it as C (not C++).
-* In your ```configure.ac```, detect Android: {{{
-AM_CONDITIONAL(ANDROID, test "$host" = "arm-unknown-linux-androideabi")
-}}}
-* In your ```Makefile.am```, tell Automake you'll build executables as libraries, using something like: {{{
+* In your <code>configure.ac</code>, detect Android: <code>AM_CONDITIONAL(ANDROID, test "$host" = "arm-unknown-linux-androideabi")</code>
+* In your <code>Makefile.am</code>, tell Automake you'll build executables as libraries, using something like:
+<pre>
 if ANDROID
 <!--  Build .so JNI libs rather than executables -->
   AM_CFLAGS = -fPIC
   AM_LDFLAGS += -shared
   COMMON_OBJS += SDL_android_main.c
 endif
-}}}
-* Cross-compile your project using the GCC toolchain environment we created: ```
+</pre>
+* Cross-compile your project using the GCC toolchain environment we created:
+<pre>
 PATH=$NDK_STANDALONE/bin:$PATH
 mkdir cross-android/ && cd cross-android/
 ../configure --host=arm-linux-androideabi \
   --prefix=/android-aint-posix \
   --with-your-option --enable-your-other-option ...
 make
-```
-* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it); something like: ```
+</pre>
+* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it); something like:
+<pre>
 mkdir cross-android-v7a/ && cd cross-android-v7a/
 # .o: -march=armv5te -mtune=xscale -msoft-float -mthumb  =>  -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb
 # .so: -march=armv7-a -Wl,--fix-cortex-a8
 CFLAGS="-g -O2 -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb" LFDLAGS="-march=armv7-a -Wl,--fix-cortex-a8" \
   ../configure --host=arm-linux-androideabi \
   ...
-```
+</pre>
 
 Now you can install your pre-built binaries and build the Android project:
 * Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
-* Build your Android <code>.apk</code>: ```
+* Build your Android <code>.apk</code>:
+<pre>
 android update project --name your_app --path . --target android-XX
 ant debug
 ant installd
-```
-* You can run the application remotely: ```
+</pre>
+* You can run the application remotely:
+<pre>
 adb shell am start -a android.intenon.MAIN -n org.libsdl.app/org.libsdl.app.SDLActivity  # replace with your app package
-```
+</pre>
 * Your SDL2 Android app is running!
 
 === Build your CMake app ===
 
 (Work In Progress)
 
-You can use our Android GCC toolchain using a simple toolchain file: ```
+You can use our Android GCC toolchain using a simple toolchain file:
+<pre>
 # CMake toolchain file
 SET(CMAKE_SYSTEM_NAME Linux)  # Tell CMake we're cross-compiling
 include(CMakeForceCompiler)
 # Prefix detection only works with compiler id "GNU"
 CMAKE_FORCE_C_COMPILER(arm-linux-androideabi-gcc GNU)
 SET(ANDROID TRUE)
-```
+</pre>
 
-You then call CMake like this: ```
+You then call CMake like this:
+<pre>
 PATH=$NDK_STANDALONE/bin:$PATH
 cmake \
   -D CMAKE_TOOLCHAIN_FILE=../android_toolchain.cmake \
   ...
-```
+</pre>
 
 == Troubleshootings ==
 
-If ```ant installd``` categorically refuses to install with {{{Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]}}}, even if you have free local storage, that may mean anything. Check logcat first: {{{
-adb logcat
-}}}
-If the error logs are not helpful (likely ;')) try locating all past traces of the application: ```
-find / -name "org...."
-```
-and remove them all.
+If <code>ant installd</code> categorically refuses to install with
+<pre>
+Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]</pre>
+even if you have free local storage, that may mean anything. Check logcat first: <code>adb logcat</code>
+If the error logs are not helpful (likely ;')) try locating all past traces of the application: <code>find / -name "org...."</code> and remove them all.
 
-If the problem persists, you may try installing on the SD card: ```
-adb install -s bin/app-debug.apk
-```
+If the problem persists, you may try installing on the SD card: <code>adb install -s bin/app-debug.apk</code>
 
 -----
 
-If you get in your logcat: ```
+If you get in your logcat:
+<pre>
 SDL: Couldn't locate Java callbacks, check that they're named and typed correctly
-```
-this probably means your ```SDLActivity.java``` is out-of-sync with your libSDL2.so.
+</pre>
+this probably means your <code>SDLActivity.java</code> is out-of-sync with your <code>libSDL2.so</code>.
