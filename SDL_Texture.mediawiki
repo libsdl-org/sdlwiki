@@ -1,7 +1,8 @@
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
+== Simple English ==
+A texture is an image.
 
 = SDL_Texture =
 A structure that contains an efficient, driver-specific representation of pixel data.
