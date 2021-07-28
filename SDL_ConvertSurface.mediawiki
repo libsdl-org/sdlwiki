@@ -54,4 +54,5 @@ SDL_FreeFormat(format);
 ----
 [[CategoryAPI]], [[CategorySurface]]
 
-
+== Simple English ==
+SDL_ConvertSurface converts the loaded image files to match the format on your computer screen. E.g. 24-bit RGB to 32-bit RGB
