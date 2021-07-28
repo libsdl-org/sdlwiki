@@ -1,6 +1,6 @@
 = SDL_SetColorKey =
 
-Set the color key (transparent pixel) in a surface.
+Set the color key (transparent pixel) in a surface. E.g. Set cyan pixals to transparent
 
 == Syntax ==
 
