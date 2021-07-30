@@ -42,7 +42,7 @@ SDL_PumpEvents();  // make sure we have the latest mouse state.
 buttons = SDL_GetMouseState(&x, &y);
 
 SDL_Log("Mouse cursor is at %d, %d", x, y);
-if ((buttons & SDL_BUTTON(SDL_BUTTON_LEFT)) != 0) {
+if ((buttons & SDL_BUTTON_LMASK) != 0) {
     SDL_Log("Mouse Button 1 (left) is pressed.");
 }
 </syntaxhighlight>
