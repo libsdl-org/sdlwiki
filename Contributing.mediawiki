@@ -1,3 +1,10 @@
+
+= work in progress =
+
+This page is leftover from the old wiki and needs to be rewritten and reformatted for the new wiki. Among other things: the anti-spam thing isn't true anymore. Just click "edit" on any page and we authenticate you automatically through GitHub now.
+
+= old wiki contents follows =
+
 <!-- acl All:read -->
 
 ```#!wiki important
