@@ -1,4 +1,3 @@
-
 = SDL_CloseAudioDevice =
 Use this function to shut down audio processing and close the audio device.
 
@@ -27,6 +26,8 @@ if (devid > 0) {
 
 == Remarks ==
 The application should close open audio devices once they are no longer needed. Calling this function will wait until the device's audio callback is not running, release the audio hardware and then clean up internal state. No further audio will play from this device once this function returns.
+
+This function may block briefly while pending audio data is played by the hardware, so that applications don't drop the last buffer of data they supplied.
 
 The device ID is invalid as soon as the device is closed, and is eligible for reuse in a new [[SDL_OpenAudioDevice]]() call immediately.
 
