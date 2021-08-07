@@ -1,12 +1,11 @@
-
 = SDL_WindowEventID =
 An enumeration of window events.
 
 
 == Values ==
 {|
-|<style="color: #808080;">SDL_WINDOWEVENT_NONE
-|<style="color: #808080;">(never used)
+|SDL_WINDOWEVENT_NONE
+|(never used)
 |-
 |SDL_WINDOWEVENT_SHOWN
 |window has been shown
@@ -58,7 +57,6 @@ An enumeration of window events.
 |}
 
 == Code Examples ==
-<<Include(<SDL_WindowEvent>, , , from="##Example1 Start", to="##End")>>
 
 <syntaxhighlight lang='c++'>
 #include <stdlib.h>
