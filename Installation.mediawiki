@@ -68,7 +68,7 @@ In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime
 
 === Windows XP/Vista/7/8/10 ===
 
-SDL currently provides Visual Studio project files for Visual Studio 2008, 2010, 2012, and 2013 in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
+SDL currently provides Visual Studio project files for Visual Studio 2010 or later in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
 
 As of SDL 2.0.3, the codebase still compiles on Cygwin and MingW32, but we expect these to stop working in the future. MingW64 is still supported (and despite the name, can also build 32-bit binaries). Note that the Visual Studio builds produce standard Windows .DLLs, which are usable with any compiler that can link to them, and we care about making sure the public SDL headers work with any compiler, but making sure SDL itself builds with some of these compilers has become time-consuming and messy for diminishing returns. For simple fixes, we will always accept patches, though!
 
@@ -91,7 +91,7 @@ make
 
 This will accomplish two important things. First, it will build an x86-64/arm64 "universal" version of the library. Second, it will make sure the library is compiled and linked with a good <code>-mmacosx-version-min</code> option for each arch, so that the library will work on any macOS version back as far as possible, regardless of what version of Xcode you compiled on and what platform SDK. Without this, you are likely to build something that only works on the latest version of macOS!
 
-SDL2 has dropped support for PowerPC Macs and Mac OS X versions older than 10.5 (SDL 1.2 still supports PPC and 10.0, though). That being said, some small changes can make it work, but they make the codebase uglier for small gains, and it's getting hard to find older macs to test on, so we probably will not be restoring official support.
+SDL2 has dropped support for PowerPC Macs and Mac OS X versions older than 10.6 (SDL 1.2 still supports PPC and 10.0, though). That being said, some small changes can make it work, but they make the codebase uglier for small gains, and it's getting hard to find older macs to test on, so we probably will not be restoring official support.
 
 === Haiku ===
 
@@ -109,11 +109,11 @@ make install
 
 === iOS ===
 
-SDL supports iOS 5.1.1+ and ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
+SDL supports iOS 6.1+ and ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
 
 === Android ===
 
-SDL supports Android 2.3.3+.
+SDL supports Android 4.1+.
 
 See [[Android|Building SDL2 for Android]].
 
@@ -169,6 +169,16 @@ QNX is supported. Our buildbot compiles for QNX on ARM, ARM64, x86, and x86_64 o
 SDL apps work on the Ouya! Just build like a standard Android application and side-load it on the device to test.
 
 
+=== IBM OS/2 and eComStation and ArcaOS ===
+
+OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
+
+
+=== Sony PlayStation Vita ===
+
+The PlayStation Vita is supported using a homebrew toolkit. You can build for this platform using CMake.
+
+
 == Not supported or abandoned ==
 
 If your favorite system is listed below, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports some of these systems.
@@ -177,15 +187,11 @@ If your favorite system is listed below, we aren't working on it. If you send re
 
 SDL2 does not currently support (most of) these platforms, but we'd really like to! If you work for Sony, Microsoft, or Nintendo, we would like to port SDL2 to these platforms and provide support to registered developers in a separate repository. Please get in touch with us!
 
-=== BeOS ===
-
-This probably works, or could be made to work, using the Haiku target, but there are no plans to do so. SDL 1.2 still supports BeOS.
-
 === Nintendo DS ===
 
 This worked at some point using a homebrew toolkit, but we removed it due to bitrot. There's some rudimentary support in SDL 1.2.
 
-=== Pandora ===
+=== Pandora and GP2X Wiz ===
 
 This worked at some point.
 
@@ -193,13 +199,13 @@ This worked at some point.
 
 This worked at some point using a homebrew toolkit, and while it is currently still in the source tree, no one is working on it. 1.2 did not support the PSP either. We will likely remove this from SDL2 sooner than later, unless a maintainer steps up to improve support.
 
+=== BeOS ===
+
+Support was removed in SDL 2.0.2. SDL 1.2 still supports BeOS.
+
 === Mac OS 9 ("Mac OS Classic") ===
 
 Support was removed in SDL 2.0. SDL 1.2 still supports Mac OS Classic.
-
-=== IBM OS/2 and eComStation and ArcaOS ===
-
-Support was removed in SDL 2.0. SDL 1.2 still supports OS/2. Our buildbot still builds SDL2 for OS/2 on every commit, but it's just compiling the core source files; we don't have video, audio, etc backends for the platform. Send patches, please!
 
 === Windows 95/98/ME ===
 
@@ -207,7 +213,7 @@ Support was removed in SDL 2.0 (Windows XP and later are supported). SDL 1.2 sti
 
 === AmigaOS and MorphOS ===
 
-Support was removed in SDL 2.0 (and later versions of 1.2, too). There are forks of SDL 1.2 that support them, though.
+Support was removed in SDL 2.0 (and later versions of 1.2, too). There are forks of SDL 1.2 and 2.0 that support them, though.
 
 === Dreamcast ===
 
