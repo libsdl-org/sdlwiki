@@ -1,0 +1,28 @@
+= SDL_GetTextureUserData =
+
+Get the user-specified pointer associated with a texture 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void * SDL_GetTextureUserData(SDL_Texture * texture);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''texture'''
+|the texture to query.
+|}
+
+== Return Value ==
+
+Return the pointer associated with the texture, or NULL if the texture is
+not valid.
+
+== Related Functions ==
+
+:[[SDL_SetTextureUserData]]
+
+
+
