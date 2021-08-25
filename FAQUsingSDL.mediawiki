@@ -86,25 +86,10 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |''1.2''
 |''2.0''
 |-
-|dsp                        
-|(default) Use the OSS API by opening /dev/dsp
-| yes 
-| yes 
-|-
-|dma                        
-|Use the OSS API to perform DMA access on /dev/dsp
-| yes 
+|pulseaudio                 
+|(default) Use PulseAudio                   
 |     
-|-
-|esd                        
-|Connect to the ESound audio daemon
 | yes 
-| yes 
-|-
-|artsc                      
-|Connect to the ARTS audio daemon  
-| yes 
-|     
 |-
 |pulse                      
 |Use PulseAudio
@@ -116,20 +101,40 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 | yes 
 | yes 
 |-
+|artsc                      
+|Connect to the ARTS audio daemon  
+| yes 
+|     
+|-
 |arts                       
 |Use Analog RealTime Synthesizer
 | yes 
 | yes 
 |-
-|pulseaudio                 
-|Use !PulseAudio                   
-|     
+|esd                        
+|Connect to the ESound audio daemon
+| yes 
 | yes 
 |-
 |jack
 |Use Jack Audio Connection Kit
 |
 | yes
+|-
+|pipewire
+|Use PipeWire
+|
+| yes
+|-
+|dsp                        
+|Use the OSS API by opening /dev/dsp
+| yes 
+| yes 
+|-
+|dma                        
+|Use the OSS API to perform DMA access on /dev/dsp
+| yes 
+|     
 |}
 
 === Win32 ===
