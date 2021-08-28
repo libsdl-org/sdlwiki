@@ -40,22 +40,7 @@ Returns a valid device ID that is > 0 on success or 0 on failure; call
 For compatibility with SDL 1.2, this will never return 1, since SDL
 reserves that ID for the legacy [[SDL_OpenAudio]]() function.
 
-== Remarks ==
-
-[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As
-such, this function will never return a 1 so as not to conflict with the
-legacy function.
-
-Please note that SDL 2.0 before 2.0.5 did not support recording; as such,
-this function would fail if <code>iscapture</code> was not zero. Starting
-with SDL 2.0.5, recording is implemented and this value can be non-zero.
-
-Passing in a <code>device</code> name of NULL requests the most reasonable
-default (and is equivalent to what [[SDL_OpenAudio]]() does to choose a
-device). The <code>device</code> name is a UTF-8 string reported by
-[[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and
-driver-specific strings, such as a hostname/IP address for a remote audio
-server, or a filename in the diskaudio driver.
+== Managing the audio spec via 'desired' and 'obtained' ==
 
 When filling in the desired audio spec structure:
 
@@ -86,9 +71,30 @@ prepare to convert your callback's float32 audio to int16 before feeding it
 to the hardware and will keep the originally requested format in the
 <code>obtained</code> structure.
 
+The resulting audio specs, varying depending on hardware and on what
+changes were allowed, will then be written back to <code>obtained</code>.
+
 If your application can only handle one specific data format, pass a zero
 for <code>allowed_changes</code> and let SDL transparently handle any
 differences.
+
+
+== Remarks ==
+
+[[SDL_OpenAudio]](), unlike this function, always acts on device ID 1. As
+such, this function will never return a 1 so as not to conflict with the
+legacy function.
+
+Please note that SDL 2.0 before 2.0.5 did not support recording; as such,
+this function would fail if <code>iscapture</code> was not zero. Starting
+with SDL 2.0.5, recording is implemented and this value can be non-zero.
+
+Passing in a <code>device</code> name of NULL requests the most reasonable
+default (and is equivalent to what [[SDL_OpenAudio]]() does to choose a
+device). The <code>device</code> name is a UTF-8 string reported by
+[[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and
+driver-specific strings, such as a hostname/IP address for a remote audio
+server, or a filename in the diskaudio driver.
 
 An opened audio device starts out paused, and should be enabled for playing
 by calling [[SDL_PauseAudioDevice]](devid, 0) when you are ready for your
@@ -100,6 +106,7 @@ The audio callback runs in a separate thread in most cases; you can prevent
 race conditions between your callback and other threads without fully
 pausing playback with [[SDL_LockAudioDevice]](). For more information about
 the callback, see [[SDL_AudioSpec]].
+
 
 == Version ==
 
