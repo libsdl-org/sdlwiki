@@ -109,6 +109,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_FillRect]]
 * [[SDL_FillRects]]
 * [[SDL_FilterEvents]]
+* [[SDL_FlashWindow]]
 * [[SDL_FlushEvent]]
 * [[SDL_FlushEvents]]
 * [[SDL_FreeCursor]]
