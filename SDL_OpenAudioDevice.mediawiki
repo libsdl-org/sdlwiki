@@ -68,7 +68,6 @@ race conditions between your callback and other threads without fully
 pausing playback with [[SDL_LockAudioDevice]](). For more information about
 the callback, see [[SDL_AudioSpec]].
 
-
 Managing the audio spec via 'desired' and 'obtained':
 
 When filling in the desired audio spec structure:
