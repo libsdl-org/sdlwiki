@@ -19,6 +19,7 @@ int SDL_SensorGetDeviceNonPortableType(int device_index);
 
 Returns the sensor platform dependent type, or -1 if
 <code>device_index</code> is out of range.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

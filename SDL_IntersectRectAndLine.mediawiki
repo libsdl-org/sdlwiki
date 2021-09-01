@@ -42,6 +42,7 @@ remain unchanged. A line segment that crosses the rectangle at either or
 both ends will be clipped to the boundary of the rectangle and the new
 coordinates saved in <code>X1</code>, <code>Y1</code>, <code>X2</code>,
 and/or <code>Y2</code> as necessary.
+
 ----
 [[CategoryAPI]], [[CategoryRect]]
 

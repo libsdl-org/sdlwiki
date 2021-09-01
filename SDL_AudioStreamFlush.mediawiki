@@ -23,5 +23,7 @@ input, so the complete output becomes available.
 :[[SDL_AudioStreamClear]]
 :[[SDL_FreeAudioStream]]
 
+----
+[[CategoryAPI]]
 
 

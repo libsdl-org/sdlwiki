@@ -30,5 +30,7 @@ other window loses its grab in favor of the caller's window.
 :[[SDL_SetWindowMouseGrab]]
 :[[SDL_SetWindowGrab]]
 
+----
+[[CategoryAPI]]
 
 

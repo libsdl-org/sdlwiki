@@ -29,5 +29,7 @@ It is safe to pass a NULL <code>surface</code> here; it will return
 
 :[[SDL_SetSurfaceRLE]]
 
+----
+[[CategoryAPI]]
 
 

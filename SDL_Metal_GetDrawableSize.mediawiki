@@ -24,5 +24,7 @@ void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
 :[[SDL_GetWindowSize]]
 :[[SDL_CreateWindow]]
 
+----
+[[CategoryAPI]]
 
 

@@ -23,4 +23,7 @@ Returns the player index for controller, or -1 if it's not available.
 
 For XInput controllers this returns the XInput user index.
 
+----
+[[CategoryAPI]]
+
 

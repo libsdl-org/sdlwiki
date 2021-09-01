@@ -18,4 +18,7 @@ void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int pl
 |Player index to assign to this controller.
 |}
 
+----
+[[CategoryAPI]]
+
 

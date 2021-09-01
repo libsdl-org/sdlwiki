@@ -25,4 +25,7 @@ int SDL_GameControllerSetSensorEnabled(SDL_GameController *gamecontroller, SDL_S
 
 Returns 0 or -1 if an error occurred.
 
+----
+[[CategoryAPI]]
+
 

@@ -11,4 +11,7 @@ int SDL_SoftStretchLinear(SDL_Surface * src,
                     const SDL_Rect * dstrect);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

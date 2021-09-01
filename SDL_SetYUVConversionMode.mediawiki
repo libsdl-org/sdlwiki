@@ -8,4 +8,7 @@ Set the YUV conversion mode
 void SDL_SetYUVConversionMode(SDL_YUV_CONVERSION_MODE mode);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

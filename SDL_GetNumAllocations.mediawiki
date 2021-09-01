@@ -8,4 +8,7 @@ Get the number of outstanding (unfreed) allocations
 int SDL_GetNumAllocations(void);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

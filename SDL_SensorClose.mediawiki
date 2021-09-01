@@ -14,6 +14,7 @@ void SDL_SensorClose(SDL_Sensor * sensor);
 |'''sensor'''
 |The [[SDL_Sensor]] object to close
 |}
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

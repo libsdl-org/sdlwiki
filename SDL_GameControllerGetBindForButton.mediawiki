@@ -47,6 +47,7 @@ This function is available since SDL 2.0.0.
 == Related Structures ==
 
 :[[SDL_GameControllerButtonBind]]
+
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

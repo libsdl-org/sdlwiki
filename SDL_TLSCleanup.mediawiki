@@ -8,4 +8,7 @@ Cleanup all TLS data for this thread.
 void SDL_TLSCleanup(void);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

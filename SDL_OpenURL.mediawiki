@@ -44,6 +44,7 @@ test it on every platform you target.
 == Version ==
 
 This function is available in SDL 2.0.14 and newer
+
 ----
 [[CategoryAPI]], [[CategoryHeader]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

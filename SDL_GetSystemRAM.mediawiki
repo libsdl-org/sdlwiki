@@ -23,6 +23,7 @@ Returns the amount of RAM configured in the system in MB.
 == Version ==
 
 This function is available since SDL 2.0.1.
+
 ----
 [[CategoryAPI]], [[CategoryCPU]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

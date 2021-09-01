@@ -19,4 +19,7 @@ SDL_bool SDL_JoystickIsVirtual(int device_index);
 
 Returns [[SDL_TRUE]] if the joystick is virtual, [[SDL_FALSE]] otherwise.
 
+----
+[[CategoryAPI]]
+
 

@@ -32,5 +32,7 @@ not reference a valid shaped window.
 :[[SDL_WindowShapeMode]]
 :[[SDL_GetShapedWindowMode]]
 
+----
+[[CategoryAPI]]
 
 

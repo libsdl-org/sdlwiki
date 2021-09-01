@@ -18,4 +18,7 @@ void SDL_JoystickSetPlayerIndex(SDL_Joystick *joystick, int player_index);
 |the player index to set.
 |}
 
+----
+[[CategoryAPI]]
+
 

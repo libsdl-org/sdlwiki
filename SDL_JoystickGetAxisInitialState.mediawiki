@@ -33,4 +33,7 @@ The state is a value ranging from -32768 to 32767.
 
 The axis indices start at index 0.
 
+----
+[[CategoryAPI]]
+
 

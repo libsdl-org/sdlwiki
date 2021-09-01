@@ -24,5 +24,7 @@ Return [[SDL_TRUE]] if the window is a window that can be shaped,
 
 :[[SDL_CreateShapedWindow]]
 
+----
+[[CategoryAPI]]
 
 

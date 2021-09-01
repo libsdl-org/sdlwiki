@@ -43,5 +43,7 @@ the backend.
 
 :[[SDL_GetNumAudioDevices]]
 
+----
+[[CategoryAPI]]
 
 

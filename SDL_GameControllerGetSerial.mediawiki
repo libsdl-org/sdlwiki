@@ -24,4 +24,7 @@ Return the serial number, or NULL if unavailable.
 Returns the serial number of the controller, or NULL if it is not
 available.
 
+----
+[[CategoryAPI]]
+
 

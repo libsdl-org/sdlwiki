@@ -22,6 +22,7 @@ Here are the names returned for some (but not all) supported platforms:
 * "Linux"
 * "iOS"
 * "Android"
+
 ----
 [[CategoryAPI]], [[CategoryPlatform]]
 

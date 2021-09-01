@@ -12,4 +12,7 @@ SDL_bool SDL_IsAndroidTV(void);
 
 Returns [[SDL_TRUE]] if this is Android TV, [[SDL_FALSE]] otherwise.
 
+----
+[[CategoryAPI]]
+
 

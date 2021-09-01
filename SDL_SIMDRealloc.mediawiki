@@ -34,5 +34,7 @@ It is not valid to use this function on a pointer from anything but
 :[[SDL_SIMDAlloc]]
 :[[SDL_SIMDFree]]
 
+----
+[[CategoryAPI]]
 
 

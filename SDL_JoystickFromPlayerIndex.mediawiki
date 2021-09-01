@@ -20,4 +20,7 @@ SDL_Joystick* SDL_JoystickFromPlayerIndex(int player_index);
 Returns an [[SDL_Joystick]] on success or NULL on failure; call
 [[SDL_GetError]]() for more information.
 
+----
+[[CategoryAPI]]
+
 

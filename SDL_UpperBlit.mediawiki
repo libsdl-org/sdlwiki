@@ -19,5 +19,7 @@ merely a macro for this function with a less confusing name.
 
 :[[SDL_BlitSurface]]
 
+----
+[[CategoryAPI]]
 
 

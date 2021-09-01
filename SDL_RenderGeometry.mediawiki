@@ -38,5 +38,7 @@ Return 0 on success, or -1 if the operation is not supported
 
 :[[SDL_Vertex]]
 
+----
+[[CategoryAPI]]
 
 

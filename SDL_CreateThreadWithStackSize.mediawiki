@@ -65,5 +65,7 @@ currently a separate function.
 
 :[[SDL_WaitThread]]
 
+----
+[[CategoryAPI]]
 
 

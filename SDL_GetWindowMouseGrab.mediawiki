@@ -24,5 +24,7 @@ Returns [[SDL_TRUE]] if mouse is grabbed, and [[SDL_FALSE]] otherwise.
 :[[SDL_SetWindowKeyboardGrab]]
 :[[SDL_GetWindowGrab]]
 
+----
+[[CategoryAPI]]
 
 

@@ -17,5 +17,7 @@ This should be called before [[SDL_DestroyWindow]], if
 
 :[[SDL_Metal_CreateView]]
 
+----
+[[CategoryAPI]]
 
 

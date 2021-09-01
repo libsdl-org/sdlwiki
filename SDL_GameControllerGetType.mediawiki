@@ -25,4 +25,7 @@ This is the same name as returned by [[SDL_GameControllerTypeForIndex]](),
 but it takes a controller identifier instead of the (unstable) device
 index.
 
+----
+[[CategoryAPI]]
+
 

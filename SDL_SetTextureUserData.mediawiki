@@ -27,5 +27,7 @@ Returns 0 on success, or -1 if the texture is not valid.
 
 :[[SDL_GetTextureUserData]]
 
+----
+[[CategoryAPI]]
 
 

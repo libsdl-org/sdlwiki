@@ -23,4 +23,7 @@ Returns the controller type.
 
 This can be called before any controllers are opened.
 
+----
+[[CategoryAPI]]
+
 

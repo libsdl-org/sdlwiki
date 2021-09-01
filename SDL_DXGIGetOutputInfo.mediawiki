@@ -45,6 +45,7 @@ returns an [[SDL_bool]].
 == Version ==
 
 This function is available since SDL 2.0.2.
+
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

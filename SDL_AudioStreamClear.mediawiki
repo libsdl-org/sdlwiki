@@ -17,5 +17,7 @@ void SDL_AudioStreamClear(SDL_AudioStream *stream);
 :[[SDL_AudioStreamFlush]]
 :[[SDL_FreeAudioStream]]
 
+----
+[[CategoryAPI]]
 
 

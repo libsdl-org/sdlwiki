@@ -24,5 +24,7 @@ Returns The [[SDL_DisplayOrientation]] enum value of the display, or
 
 :[[SDL_GetNumVideoDisplays]]
 
+----
+[[CategoryAPI]]
 
 

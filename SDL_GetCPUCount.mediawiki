@@ -23,6 +23,7 @@ This function is available since SDL 2.0.0.
 <syntaxhighlight lang='c++'>
 SDL_Log("Number of logical CPU cores: %d", SDL_GetCPUCount());
 </syntaxhighlight>
+
 ----
 [[CategoryAPI]], [[CategoryCPU]]
 

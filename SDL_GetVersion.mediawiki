@@ -46,6 +46,7 @@ printf("But we are linking against SDL version %d.%d.%d.\n",
 == Related Macros ==
 
 :[[SDL_VERSION]]
+
 ----
 [[CategoryAPI]], [[CategoryVersion]]
 

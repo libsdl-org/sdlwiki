@@ -47,6 +47,7 @@ subrectangle or have padded rows in the destination. Generally,
 <code>pixels</code> data times the number of bytes per pixel, but it might
 contain additional padding (for example, 24bit RGB Windows Bitmap data pads
 all rows to multiples of 4 bytes).
+
 ----
 [[CategoryAPI]], [[CategoryRender]]
 

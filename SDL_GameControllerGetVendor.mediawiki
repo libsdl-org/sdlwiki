@@ -23,4 +23,7 @@ Return the USB vendor ID, or zero if unavailable.
 
 If the vendor ID isn't available this function returns 0.
 
+----
+[[CategoryAPI]]
+
 

@@ -27,6 +27,7 @@ Returns 0 on success or a negative error code on failure; call
 == Remarks ==
 
 A single palette can be shared with many surfaces.
+
 ----
 [[CategoryAPI]], [[CategorySurface]]
 

@@ -35,6 +35,7 @@ resource leak.
 == Version ==
 
 This function is available since SDL 2.0.1.
+
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

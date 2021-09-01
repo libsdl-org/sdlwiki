@@ -23,5 +23,7 @@ even be zero. Add more data or flush the stream if you need the data now.
 :[[SDL_AudioStreamClear]]
 :[[SDL_FreeAudioStream]]
 
+----
+[[CategoryAPI]]
 
 

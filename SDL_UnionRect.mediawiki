@@ -22,6 +22,7 @@ void SDL_UnionRect(const SDL_Rect * A,
 |'''result'''
 |an [[SDL_Rect]] structure filled in with the union of rectangles <code>A</code> and <code>B</code>
 |}
+
 ----
 [[CategoryAPI]], [[CategoryRect]]
 

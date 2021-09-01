@@ -31,5 +31,7 @@ otherwise operates exactly the same as [[SDL_GetError]]().
 
 :[[SDL_GetError]]
 
+----
+[[CategoryAPI]]
 
 

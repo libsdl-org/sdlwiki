@@ -21,5 +21,7 @@ This always returns false on CPUs that aren't using Intel instruction sets.
 
 :[[SDL_HasAVX]]
 
+----
+[[CategoryAPI]]
 
 

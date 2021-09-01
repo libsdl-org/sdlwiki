@@ -8,4 +8,7 @@ Get the player index of a joystick, or -1 if it's not available This can be call
 int SDL_JoystickGetDevicePlayerIndex(int device_index);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

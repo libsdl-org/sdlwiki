@@ -14,6 +14,7 @@ void SDL_RaiseWindow(SDL_Window * window);
 |'''window'''
 |the window to raise
 |}
+
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 

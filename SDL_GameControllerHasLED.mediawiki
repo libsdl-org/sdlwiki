@@ -20,4 +20,7 @@ SDL_bool SDL_GameControllerHasLED(SDL_GameController *gamecontroller);
 Returns [[SDL_TRUE]], or [[SDL_FALSE]] if this controller does not have a
 modifiable LED
 
+----
+[[CategoryAPI]]
+
 

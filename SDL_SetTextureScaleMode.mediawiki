@@ -31,5 +31,7 @@ If the scale mode is not supported, the closest supported mode is chosen.
 
 :[[SDL_GetTextureScaleMode]]
 
+----
+[[CategoryAPI]]
 
 

@@ -12,5 +12,7 @@ void* SDL_Metal_GetLayer(SDL_MetalView view);
 
 :[[SDL_MetalCreateView]]
 
+----
+[[CategoryAPI]]
 
 

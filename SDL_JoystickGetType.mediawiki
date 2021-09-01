@@ -19,4 +19,7 @@ SDL_JoystickType SDL_JoystickGetType(SDL_Joystick *joystick);
 
 Returns the [[SDL_JoystickType]] of the selected joystick.
 
+----
+[[CategoryAPI]]
+
 

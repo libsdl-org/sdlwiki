@@ -25,4 +25,7 @@ invalid index, this function returns
 
 This can be called before any joysticks are opened.
 
+----
+[[CategoryAPI]]
+
 

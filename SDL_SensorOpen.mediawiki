@@ -18,6 +18,7 @@ SDL_Sensor* SDL_SensorOpen(int device_index);
 == Return Value ==
 
 Returns an [[SDL_Sensor]] sensor object, or NULL if an error occurred.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

@@ -29,4 +29,7 @@ otherwise.
 This merely reports whether the controller's mapping defined this axis, as
 that is all the information SDL has about the physical device.
 
+----
+[[CategoryAPI]]
+
 

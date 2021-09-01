@@ -37,4 +37,7 @@ Note that this is rumbling of the _triggers_ and not the game controller as
 a whole. The first controller to offer this feature was the PlayStation 5's
 DualShock 5.
 
+----
+[[CategoryAPI]]
+
 

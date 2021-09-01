@@ -51,5 +51,7 @@ only own zero bytes of that buffer).
 :[[SDL_SIMDRealloc]]
 :[[SDL_SIMDFree]]
 
+----
+[[CategoryAPI]]
 
 

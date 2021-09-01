@@ -48,5 +48,7 @@ Returns 0 on success, or -1 on error.
 :[[SDL_AudioStreamClear]]
 :[[SDL_FreeAudioStream]]
 
+----
+[[CategoryAPI]]
 
 

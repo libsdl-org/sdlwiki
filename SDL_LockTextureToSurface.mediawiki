@@ -50,5 +50,7 @@ free it.
 :[[SDL_LockTexture]]
 :[[SDL_UnlockTexture]]
 
+----
+[[CategoryAPI]]
 
 

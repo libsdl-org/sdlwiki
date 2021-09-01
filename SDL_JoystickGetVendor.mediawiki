@@ -23,4 +23,7 @@ Returns the USB vendor ID of the selected joystick, or 0 if unavailable.
 
 If the vendor ID isn't available this function returns 0.
 
+----
+[[CategoryAPI]]
+
 

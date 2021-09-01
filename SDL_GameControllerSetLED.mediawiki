@@ -28,4 +28,7 @@ int SDL_GameControllerSetLED(SDL_GameController *gamecontroller, Uint8 red, Uint
 
 Returns 0, or -1 if this controller does not have a modifiable LED
 
+----
+[[CategoryAPI]]
+
 

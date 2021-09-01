@@ -25,4 +25,7 @@ flag variable.
 For more information on these semantics, take a look at the blog post:
 http://preshing.com/20120913/acquire-and-release-semantics
 
+----
+[[CategoryAPI]]
+
 

@@ -24,4 +24,7 @@ Returns the player index, or -1 if it's not available.
 For XInput controllers this returns the XInput user index. Many joysticks
 will not be able to supply this information.
 
+----
+[[CategoryAPI]]
+
 

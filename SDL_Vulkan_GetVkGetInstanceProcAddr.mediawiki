@@ -19,4 +19,7 @@ This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or
 creating an [[SDL_Window]] with the <code>[[SDL_WINDOW_VULKAN]]</code>
 flag.
 
+----
+[[CategoryAPI]]
+
 

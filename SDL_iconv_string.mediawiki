@@ -11,4 +11,7 @@ char* SDL_iconv_string(const char *tocode,
                        size_t inbytesleft);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

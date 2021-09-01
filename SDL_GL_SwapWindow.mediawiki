@@ -47,6 +47,7 @@ SDL_GL_SwapWindow(window);
 
 
 </syntaxhighlight>
+
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 

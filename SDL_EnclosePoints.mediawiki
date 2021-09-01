@@ -36,6 +36,7 @@ the points were outside of the clipping rectangle.
 
 If <code>clip</code> is not NULL then only points inside of the clipping
 rectangle are considered.
+
 ----
 [[CategoryAPI]], [[CategoryRect]]
 

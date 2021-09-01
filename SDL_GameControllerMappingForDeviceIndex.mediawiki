@@ -24,4 +24,7 @@ if no mapping is available.
 
 This can be called before any controllers are opened.
 
+----
+[[CategoryAPI]]
+
 

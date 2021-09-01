@@ -21,5 +21,7 @@ the backing CAMetalLayer, call [[SDL_Metal_GetLayer]]().
 :[[SDL_Metal_DestroyView]]
 :[[SDL_Metal_GetLayer]]
 
+----
+[[CategoryAPI]]
 
 

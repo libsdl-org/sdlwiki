@@ -17,4 +17,7 @@ In particular, you are guaranteed that the joystick list won't change, so
 the API functions that take a joystick index will be valid, and joystick
 and game controller events will not be delivered.
 
+----
+[[CategoryAPI]]
+
 

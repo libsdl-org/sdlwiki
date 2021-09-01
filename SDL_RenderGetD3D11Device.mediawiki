@@ -25,4 +25,7 @@ not a D3D11 renderer; call [[SDL_GetError]]() for more information.
 Once you are done using the device, you should release it to avoid a
 resource leak.
 
+----
+[[CategoryAPI]]
+
 

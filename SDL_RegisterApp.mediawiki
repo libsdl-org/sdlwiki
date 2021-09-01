@@ -8,4 +8,7 @@ This can be called to set the application class at startup
 int SDL_RegisterApp(char *name, Uint32 style, void *hInst);
 </syntaxhighlight>
 
+----
+[[CategoryAPI]]
+
 

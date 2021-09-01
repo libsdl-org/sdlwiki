@@ -28,6 +28,7 @@ Returns 0 or -1 if an error occurred.
 == Remarks ==
 
 The number of values and interpretation of the data is sensor dependent.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

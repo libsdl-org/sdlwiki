@@ -63,6 +63,7 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
     SDL_MixAudioFormat(stream, mixData, deviceFormat, len, SDL_MIX_MAXVOLUME / 2);
 }
 </syntaxhighlight>
+
 ----
 [[CategoryAPI]], [[CategoryAudio]]
 

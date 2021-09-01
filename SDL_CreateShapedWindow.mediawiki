@@ -38,5 +38,7 @@ Return the window created, or NULL if window creation failed.
 
 :[[SDL_DestroyWindow]]
 
+----
+[[CategoryAPI]]
 
 

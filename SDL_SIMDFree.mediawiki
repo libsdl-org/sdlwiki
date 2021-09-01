@@ -33,5 +33,7 @@ dereference once this function returns, and should be discarded.
 :[[SDL_SIMDAlloc]]
 :[[SDL_SIMDRealloc]]
 
+----
+[[CategoryAPI]]
 
 

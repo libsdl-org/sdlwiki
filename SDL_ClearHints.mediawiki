@@ -11,6 +11,7 @@ void SDL_ClearHints(void);
 == Remarks ==
 
 This function is automatically called during [[SDL_Quit]]().
+
 ----
 [[CategoryAPI]], [[CategoryHints]]
 

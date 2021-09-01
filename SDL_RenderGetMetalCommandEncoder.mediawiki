@@ -30,5 +30,7 @@ Metal's headers, but it can be safely cast to an
 
 :[[SDL_RenderGetMetalLayer]]
 
+----
+[[CategoryAPI]]
 
 

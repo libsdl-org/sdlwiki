@@ -36,4 +36,7 @@ Returns the Android API level.
 * API level 11: Android 3.0
 * API level 10: Android 2.3.3
 
+----
+[[CategoryAPI]]
+
 

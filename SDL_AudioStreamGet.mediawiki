@@ -34,5 +34,7 @@ Returns the number of bytes read from the stream, or -1 on error
 :[[SDL_AudioStreamClear]]
 :[[SDL_FreeAudioStream]]
 
+----
+[[CategoryAPI]]
 
 

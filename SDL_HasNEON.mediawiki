@@ -17,4 +17,7 @@ not.
 
 This always returns false on CPUs that aren't using ARM instruction sets.
 
+----
+[[CategoryAPI]]
+
 

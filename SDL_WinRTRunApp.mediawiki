@@ -33,6 +33,7 @@ more information on the failure.
 == Version ==
 
 This function is available since SDL 2.0.3.
+
 ----
 [[CategoryAPI]], [[CategoryInit]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->

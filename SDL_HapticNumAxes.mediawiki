@@ -28,6 +28,7 @@ call [[SDL_GetError]]() for more information.
 
 The number of haptic axes might be useful if working with the
 [[SDL_HapticDirection]] effect.
+
 ----
 [[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
 

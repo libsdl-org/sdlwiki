@@ -26,4 +26,7 @@ Returns 0 on success, or -1 on error.
 
 This uses setpriority() if possible, and RealtimeKit if available.
 
+----
+[[CategoryAPI]]
+
 

@@ -31,5 +31,7 @@ window currently lacking a shape.
 :[[SDL_WindowShapeMode]]
 :[[SDL_SetWindowShape]]
 
+----
+[[CategoryAPI]]
 
 
