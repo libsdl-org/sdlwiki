@@ -1,4 +1,3 @@
-
 = Log Handling =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_log.h SDL_log.h]
@@ -14,10 +13,15 @@ If you're debugging SDL you might want to call:
  ```SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);```
 
 Here's where the messages go on different platforms:
- ||Windows||debug output stream||
- ||Android||log output||
- ||PSP||"SDL_Log.txt"||
- ||Others||standard error output (stderr)||
+{|
+|Windows || debug output stream
+|-
+|Android || log output
+|-
+|PSP     || "SDL_Log.txt"
+|-
+|Others  || standard error output (stderr)
+|}
 
 Messages longer than the maximum size (4096 bytes) will be truncated.
 
