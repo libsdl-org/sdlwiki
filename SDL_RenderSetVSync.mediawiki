@@ -1,0 +1,28 @@
+= SDL_RenderSetVSync =
+
+Toggle VSync of the given renderer.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_RenderSetVSync(SDL_Renderer* renderer, int vsync);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|The renderer to toggle
+|-
+|'''vsync'''
+|Non-zero for on, zero for off
+|}
+
+== Return Value ==
+
+Returns a 0 int on success, or non-zero on failure
+
+----
+[[CategoryAPI]]
+
+
