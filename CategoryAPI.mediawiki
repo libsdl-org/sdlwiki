@@ -558,6 +558,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_RenderSetLogicalSize]]
 * [[SDL_RenderSetScale]]
 * [[SDL_RenderSetViewport]]
+* [[SDL_RenderSetVSync]]
 * [[SDL_RenderTargetSupported]]
 * [[SDL_ResetAssertionReport]]
 * [[SDL_RestoreWindow]]
