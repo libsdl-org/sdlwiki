@@ -15,7 +15,7 @@ int SDL_RenderSetVSync(SDL_Renderer* renderer, int vsync);
 |The renderer to toggle
 |-
 |'''vsync'''
-|Non-zero for on, zero for off
+|1 for on, 0 for off. All other values are reserved
 |}
 
 == Return Value ==
