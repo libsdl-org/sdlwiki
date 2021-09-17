@@ -37,10 +37,6 @@ int SDL_UpdateNVTexture(SDL_Texture * texture,
 
 Return 0 on success, or -1 if the texture is not valid.
 
-== Version ==
-
-This function is available since SDL 2.0.16.
-
 == Remarks ==
 
 You can use [[SDL_UpdateTexture]]() as long as your pixel data is a
