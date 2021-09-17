@@ -22,10 +22,6 @@ float SDL_GameControllerGetSensorDataRate(SDL_GameController *gamecontroller, SD
 
 Return the data rate, or 0.0f if the data rate is not available.
 
-== Version ==
-
-This function is available since SDL 2.0.16.
-
 ----
 [[CategoryAPI]]
 

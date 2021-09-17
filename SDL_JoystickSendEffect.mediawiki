@@ -21,13 +21,13 @@ int SDL_JoystickSendEffect(SDL_Joystick *joystick, const void *data, int size);
 |The size of the data to send to the joystick
 |}
 
-== Version ==
-
-This function is available since SDL 2.0.16.
-
 == Return Value ==
 
 Returns 0, or -1 if this joystick or driver doesn't support effect packets
+
+== Version ==
+
+This function is available since SDL 2.0.16.
 
 ----
 [[CategoryAPI]]
