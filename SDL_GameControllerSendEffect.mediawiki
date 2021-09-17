@@ -26,6 +26,10 @@ int SDL_GameControllerSendEffect(SDL_GameController *gamecontroller, const void 
 Returns 0, or -1 if this controller or driver doesn't support effect
 packets
 
+== Version ==
+
+This function is available since SDL 2.0.16.
+
 ----
 [[CategoryAPI]]
 
