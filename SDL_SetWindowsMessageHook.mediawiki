@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -24,6 +23,10 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 |'''userdata'''
 |a pointer to pass to every iteration of <code>callback</code>
 |}
+
+== Version ==
+
+This function is available since SDL 2.0.16.
 
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
