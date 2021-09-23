@@ -1,4 +1,3 @@
-
 = SDL_LoadBMP =
 Use this function to load a surface from a BMP file.
 
@@ -15,10 +14,31 @@ SDL_Surface* SDL_LoadBMP(const char* file)
 |}
 
 == Return Value ==
-<<Include(SDL_LoadBMP_RW, , , from="== Return Value ==", to="== Code Examples ==")>>
+Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was an error; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
-<<Include(SDL_LoadBMP_RW, , , from="== Remarks ==", to="== Related Functions ==")>>
+The new surface should be freed with [[SDL_FreeSurface]]().
+
+== Code Example ==
+
+<syntaxhighlight lang='c++'>
+// try to load the bitmap image
+const char * image_path = "path/to/image.bmp";
+SDL_Surface * surface = SDL_LoadBMP(image_path);
+
+// let the user know if the image failed to load
+if (NULL == surface) {
+    printf("Unable to load image at %s: %s", image_path, SDL_GetError());
+}
+// otherwise do some stuff with the new surface
+else {
+    // some stuff
+    ...
+    // finally, make sure to free the surface resource
+    SDL_FreeSurface(surface);
+    surface = NULL;
+}
+</syntaxhighlight>
 
 == Related Functions ==
 :[[SDL_FreeSurface]]
