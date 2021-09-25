@@ -1,4 +1,3 @@
-
 = Log Handling =
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_log.h SDL_log.h]
@@ -11,7 +10,9 @@ This category contains functions for handling simple log messages with categorie
 <<Include(SDL_LogPriority, , , from="Start Include Default Priority", to="## End Include Default Priority")>>
 
 If you're debugging SDL you might want to call:
- ```SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);```
+<syntaxhighlight lang='c'>
+SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);
+</syntaxhighlight>
 
 Here's where the messages go on different platforms:
  ||Windows||debug output stream||
