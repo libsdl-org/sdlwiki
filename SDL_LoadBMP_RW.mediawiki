@@ -39,21 +39,21 @@ src is an open [[SDL_RWops]] buffer, typically loaded with
 <syntaxhighlight lang='c++'>
 const char *image_path = "myimage.bmp";
 
-/* "rb" will "read binary" files */
+// "rb" will "read binary" files
 SDL_RWops *file = SDL_RWFromFile(image_path, "rb");
 
-/* freesrc is true so the file automatically closes */
+// freesrc is true so the file automatically closes
 SDL_Surface *image = SDL_LoadBMP_RW(file, SDL_TRUE);
 
-/* Let the user know if the file failed to load */
+// Let the user know if the file failed to load
 if (!image) {
     printf("Failed to load image at %s: %s\n", image_path, SDL_GetError());
     return;
 }
 
-/* Do something with image here. */
+// Do something with image here.
 
-/* Make sure to eventually release the surface resource */
+// Make sure to eventually release the surface resource
 SDL_FreeSurface(image);
 </syntaxhighlight>
 
