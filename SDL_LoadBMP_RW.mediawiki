@@ -34,7 +34,7 @@ src is an open [[SDL_RWops]] buffer, typically loaded with
 [[SDL_LoadBMP]] to load a bitmap from a file, convert it to an
 [[SDL_Surface]] and then close the file.
 
-=== Code Example ===
+== Code Examples ==
 
 <syntaxhighlight lang='c++'>
 const char *image_path = "myimage.bmp";

@@ -26,7 +26,7 @@ result in a memory leak.
 SDL_LoadBMP is a pre-processor macro defined to call [[SDL_LoadBMP_RW]]() with
 an automatically closed file loaded by [[SDL_RWFromFile]]().
 
-=== Code Example ===
+== Code Examples ==
 
 <syntaxhighlight lang='c++'>
 const char *image_path = "myimage.bmp";
