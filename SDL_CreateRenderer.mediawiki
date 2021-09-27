@@ -32,12 +32,14 @@ Returns a valid rendering context or NULL if there was an error; call
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     SDL_Window *win = NULL;
     SDL_Renderer *renderer = NULL;
     SDL_Texture *bitmapTex = NULL;
     SDL_Surface *bitmapSurface = NULL;
     int posX = 100, posY = 100, width = 320, height = 240;
+    bool loopShouldStop = false;
 
     SDL_Init(SDL_INIT_VIDEO);
 
@@ -49,11 +51,16 @@ int main(int argc, char *argv[]) {
     bitmapTex = SDL_CreateTextureFromSurface(renderer, bitmapSurface);
     SDL_FreeSurface(bitmapSurface);
 
-    while (1) {
-        SDL_Event e;
-        if (SDL_PollEvent(&e)) {
-            if (e.type == SDL_QUIT) {
-                break;
+    while (!loopShouldStop)
+    {
+        SDL_Event event;
+        while (SDL_PollEvent(&event))
+        {
+            switch (event.type)
+            {
+                case SDL_QUIT:
+                    loopShouldStop = true;
+                    break;
             }
         }
 
