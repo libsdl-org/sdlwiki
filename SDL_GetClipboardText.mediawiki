@@ -16,8 +16,8 @@ the returned pointer when done with it (even if there was an error).
 
 == Remarks ==
 
-This functions returns empty string if there was not enough memory left for a copy
-of the clipboard's content.
+This functions returns empty string if there was not enough memory left for
+a copy of the clipboard's content.
 
 == Related Functions ==
 
