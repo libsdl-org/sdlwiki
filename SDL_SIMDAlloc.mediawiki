@@ -17,7 +17,7 @@ void * SDL_SIMDAlloc(const size_t len);
 
 == Return Value ==
 
-Returns a pointer to thenewly-allocated block, NULL if out of memory.
+Returns a pointer to the newly-allocated block, NULL if out of memory.
 
 == Remarks ==
 
