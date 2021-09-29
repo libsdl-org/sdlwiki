@@ -16,7 +16,7 @@ int SDL_FillRects
 |the [[SDL_Surface]] structure that is the drawing target
 |-
 |'''rects'''
-|an array of [[SDL_Rects]] representing the rectangles to fill.
+|an array of [[SDL_Rect]] representing the rectangles to fill.
 |-
 |'''count'''
 |the number of rectangles in the array
