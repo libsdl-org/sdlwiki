@@ -34,6 +34,6 @@ Each call to this function cancels any previous rumble effect, and calling
 it with 0 intensity stops any rumbling.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryGameController]]
 
 
