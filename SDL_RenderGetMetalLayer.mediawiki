@@ -22,9 +22,9 @@ isn't a Metal renderer
 
 == Remarks ==
 
-This function returns <code>void ''</code>, so SDL doesn't have to include
+This function returns <code>void *</code>, so SDL doesn't have to include
 Metal's headers, but it can be safely cast to a <code>CAMetalLayer
-''</code>.
+*</code>.
 
 == Related Functions ==
 
