@@ -39,16 +39,12 @@ This structure is available since SDL 2.0.4.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
-<!-- #Remove this section if empty -->
 
 == Related Structures ==
 :[[SDL_Event]]
-<!-- #Remove this section if empty -->
 
 == Related Functions ==
 :[[SDL_GetNumAudioDevices]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

@@ -50,17 +50,13 @@ See [[SDL_ShowMessageBox]]() for a complete code example.
 
 == Related Enumerations ==
 :[[SDL_MessageBoxFlags]]
-<!-- #Remove this section if empty -->
 
 == Related Structures ==
 :[[SDL_MessageBoxButtonData]]
 :[[SDL_MessageBoxColorScheme]]
-<!-- #Remove this section if empty -->
 
 == Related Functions ==
 :[[SDL_ShowMessageBox]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

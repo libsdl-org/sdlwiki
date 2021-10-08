@@ -30,12 +30,9 @@ An enumeration of message box flags (e.g. if supported message box will display 
 
 == Related Structures ==
 :[[SDL_MessageBoxData]]
-<!-- #Remove this section if empty -->
 
 == Related Functions ==
 :[[SDL_ShowSimpleMessageBox]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

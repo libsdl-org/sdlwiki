@@ -48,8 +48,6 @@ An enumeration of axes available from a controller.
 :[[SDL_GameControllerGetAxisFromString]]
 :[[SDL_GameControllerGetBindForAxis]]
 :[[SDL_GameControllerGetStringForAxis]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryEnum]], [[CategoryGameController]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

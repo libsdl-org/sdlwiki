@@ -38,8 +38,7 @@ This hint is available since SDL 2.0.5.
 
 == Related Functions ==
 :[[SDL_CreateThread]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
+

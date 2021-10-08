@@ -35,8 +35,6 @@ This function is available since SDL 2.0.0.
 
 == Related Functions ==
 :[[SDL_WriteU8]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategoryIO]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

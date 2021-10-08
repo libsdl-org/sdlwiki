@@ -63,8 +63,6 @@ This function is available since SDL 2.0.0.
 
 == Related Functions ==
 :[[SDL_iPhoneSetEventPump]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

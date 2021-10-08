@@ -19,19 +19,14 @@ A structure that contains a set of colors to use for message box dialogs.
 | 
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
 
 
 == Related Enumerations ==
 :[[SDL_MessageBoxColorType]]
-<!-- #Remove this section if empty -->
 
 == Related Structures ==
 :[[SDL_MessageBoxColor]]
 :[[SDL_MessageBoxData]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

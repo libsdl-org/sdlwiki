@@ -9,9 +9,6 @@
 = SDL_MessageBoxColorType =
 An enumeration of positions inside the colors array of [[SDL_MessageBoxColorScheme]].
 
-<!-- #Replace SDL_Enumeration with the name of the enum and ****** with a brief description of the enum according to the Style Guide, then delete this comment. -->
-
-
 
 
 == Values ==
@@ -35,14 +32,10 @@ An enumeration of positions inside the colors array of [[SDL_MessageBoxColorSche
 | 
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
 
 
 == Related Structures ==
 :[[SDL_MessageBoxColorScheme]] 
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

@@ -36,8 +36,6 @@ This enumeration is available since SDL 2.0.3.
 == Related Functions ==
 :[[SDL_WinRTGetFSPathUNICODE]]
 :[[SDL_WinRTGetFSPathUTF8]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryEnum]], [[CategorySystem]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

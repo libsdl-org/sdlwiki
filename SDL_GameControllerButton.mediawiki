@@ -1,17 +1,7 @@
-== Draft ==
-
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
 
 = SDL_GameControllerButton =
+
 An enumeration of buttons available from a controller.
-
-<!-- #Replace SDL_Enumeration with the name of the enum and ****** with a brief description of the enum according to the Style Guide, then delete this comment. -->
-
-
 
 
 == Values ==
@@ -68,17 +58,12 @@ An enumeration of buttons available from a controller.
 | 
 |}
 
-<!-- #Fill in the above table per the Style Guide, then delete this comment. -->
-
-
 
 == Related Functions ==
 :[[SDL_GameControllerGetBindForButton]]
 :[[SDL_GameControllerGetButton]]
 :[[SDL_GameControllerGetButtonFromString]]
 :[[SDL_GameControllerGetStringForButton]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryEnum]], [[CategoryGameController]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

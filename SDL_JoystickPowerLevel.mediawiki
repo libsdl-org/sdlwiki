@@ -40,7 +40,6 @@ An enumeration of battery levels of a joystick.
 
 == Related Functions ==
 :[[SDL_JoystickCurrentPowerLevel]]
-<!-- #Remove this section if empty -->
 
 
 == Version ==
@@ -49,4 +48,3 @@ This enumeration is available since SDL 2.0.4.
 
 ----
 [[CategoryEnum]], [[CategoryJoystick]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->

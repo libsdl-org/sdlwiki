@@ -53,8 +53,6 @@ A structure that contains a rendering state.
 :[[SDL_SetRenderDrawBlendMode]]
 :[[SDL_SetRenderDrawColor]]
 :[[SDL_SetRenderTarget]]
-<!-- #Remove this section if empty -->
 
 ----
 [[CategoryStruct]], [[CategoryRender]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
