@@ -1,2 +1,21 @@
+= SDL_SoftStretch =
 
-SDL_SoftStretch() has been replaced by [[SDL_BlitScaled]]()
+Perform a fast, low quality, stretch blit between two surfaces of the same format.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_SoftStretch(SDL_Surface * src,
+                    const SDL_Rect * srcrect,
+                    SDL_Surface * dst,
+                    const SDL_Rect * dstrect);
+</syntaxhighlight>
+
+== Remarks ==
+
+Please use [[SDL_BlitScaled]]() instead.
+
+----
+[[CategoryAPI]]
+
+
