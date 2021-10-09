@@ -10,13 +10,13 @@ void SDL_CloseAudio(void);
 
 == Remarks ==
 
-This function is equivalent to calling
+This function is equivalent to calling...
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_CloseAudioDevice(1);
 </syntaxhighlight>
 
-and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Code Examples ==
 

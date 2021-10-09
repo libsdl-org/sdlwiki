@@ -27,14 +27,14 @@ void SDL_MixAudio(Uint8 * dst, const Uint8 * src,
 
 == Remarks ==
 
-This function is equivalent to calling
+This function is equivalent to calling...
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_MixAudioFormat(dst, src, format, len, volume);
 </syntaxhighlight>
 
-where <code>format</code> is the obtained format of the audio device from
-the legacy [[SDL_OpenAudio]]() function.
+...where <code>format</code> is the obtained format of the audio device
+from the legacy [[SDL_OpenAudio]]() function.
 
 == Code Examples ==
 

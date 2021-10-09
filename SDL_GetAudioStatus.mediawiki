@@ -1,18 +1,31 @@
-
 = SDL_GetAudioStatus =
-This function is a legacy means of querying the audio device. New programs might want to use [[SDL_GetAudioDeviceStatus]]() instead.
 
+This function is a legacy means of querying the audio device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_AudioStatus SDL_GetAudioStatus(void)
+
+<syntaxhighlight lang='c'>
+SDL_AudioStatus SDL_GetAudioStatus(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns the [[SDL_AudioStatus]] of the specified audio device which may be one of the following:
-<<Include(SDL_AudioStatus, , , from="== Values ==", to="== Code Examples ==")>>
+
+Returns the [[SDL_AudioStatus]] of the audio device opened by
+[[SDL_OpenAudio]]().
+
+== Remarks ==
+
+New programs might want to use [[SDL_GetAudioDeviceStatus]]() instead. This
+function is equivalent to calling...
+
+<syntaxhighlight lang='c'>
+SDL_GetAudioDeviceStatus(1);
+</syntaxhighlight>
+
+...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 void printStatus(void)
 {
@@ -40,17 +53,11 @@ if (SDL_OpenAudio(&desired, &obtained) == 0) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-This function is equivalent to calling
-
-<syntaxhighlight lang='c++'>
-SDL_GetAudioDeviceStatus(1);
-</syntaxhighlight>
-
-and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
-
 == Related Functions ==
+
 :[[SDL_GetAudioDeviceStatus]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

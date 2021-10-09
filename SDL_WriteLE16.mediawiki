@@ -1,15 +1,15 @@
-
 = SDL_WriteLE16 =
+
 Use this function to write 16 bits in native format to a [[SDL_RWops]] as little-endian data.
 
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
-size_t SDL_WriteLE16(SDL_RWops* dst,
-                     Uint16     value)
+
+<syntaxhighlight lang='c'>
+size_t SDL_WriteLE16(SDL_RWops * dst, Uint16 value);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''dst'''
 |the stream to which data will be written
@@ -19,13 +19,20 @@ size_t SDL_WriteLE16(SDL_RWops* dst,
 |}
 
 == Return Value ==
+
 Returns 1 on successful write, 0 on error.
 
 == Remarks ==
-SDL byteswaps the data only if necessary, so the application always specifies native format, and the data written will be in little-endian format.
+
+SDL byteswaps the data only if necessary, so the application always
+specifies native format, and the data written will be in little-endian
+format.
 
 == Related Functions ==
+
 :[[SDL_WriteBE16]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+

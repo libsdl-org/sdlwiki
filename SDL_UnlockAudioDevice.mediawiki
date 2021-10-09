@@ -1,20 +1,27 @@
-
 = SDL_UnlockAudioDevice =
+
 Use this function to unlock the audio callback function for a specified device.
 
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev)
+
+<syntaxhighlight lang='c'>
+void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''dev'''
 |the ID of the device to be unlocked
 |}
 
+== Remarks ==
+
+This function should be paired with a previous [[SDL_LockAudioDevice]]()
+call.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
@@ -34,11 +41,11 @@ SDL_UnlockAudioDevice(devid);
 SDL_Delay(2000);  // callback runs for 2 seconds.
 </syntaxhighlight>
 
-== Remarks ==
-Unlocks a previous [[SDL_LockAudioDevice]]() call. Please see [[SDL_LockAudioDevice#Remarks|that function's remarks]] for more details.
-
 == Related Functions ==
+
 :[[SDL_LockAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

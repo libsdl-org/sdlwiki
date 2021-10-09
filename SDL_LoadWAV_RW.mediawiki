@@ -92,14 +92,14 @@ It is required that the data source supports seeking.
 
 Example:
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, &spec, &buf, &len);
 </syntaxhighlight>
 
 Note that the [[SDL_LoadWAV]] macro does this same thing for you, but in a
 less messy way:
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_LoadWAV("sample.wav", &spec, &buf, &len);
 </syntaxhighlight>
 

@@ -42,7 +42,7 @@ powerful, and preferred way to do this is [[SDL_OpenAudioDevice]]().
 
 This function is roughly equivalent to:
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_OpenAudioDevice(NULL, 0, desired, obtained, SDL_AUDIO_ALLOW_ANY_CHANGE);
 </syntaxhighlight>
 

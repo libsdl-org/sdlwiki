@@ -44,7 +44,7 @@ This function may trigger a complete redetect of available hardware. It
 should not be called for each iteration of a loop, but rather once at the
 start of a loop:
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 // Don't do this:
 for (int i = 0; i < SDL_GetNumAudioDevices(0); i++)
 

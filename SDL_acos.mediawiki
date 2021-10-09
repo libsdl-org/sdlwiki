@@ -1,3 +1,4 @@
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -5,40 +6,41 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_acos =
-Use this function to compute arc cosine of '''x'''.
 
-
-
-
-
+Use this function to compute arc cosine of <code>x</code>.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-double SDL_acos(double x)
+
+<syntaxhighlight lang='c'>
+double SDL_acos(double x);
 </syntaxhighlight>
 
-
-
-
 == Function Parameters ==
+
 {|
 |'''x'''
-|floating point value, in radians
+|floating point value, in radians.
 |}
 
-
-
-
 == Return Value ==
-Returns arc cosine of '''x'''.
 
+Returns arc cosine of <code>x</code>.
 
+== Remarks ==
 
+The definition of <code>y = acos(x)</code> is <code>x = cos(y)</code>.
+
+Domain: <code>-1 <= x <= 1</code>
+
+Range: <code>0 <= y <= Pi</code>
+
+== Version ==
+
+This function is available since SDL 2.0.2.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
     /* acos(x) = Pi/2 - asin(x) */
     SDL_Log("acos(0):\t\t%f", SDL_acos(0));
@@ -49,16 +51,7 @@ Returns arc cosine of '''x'''.
     SDL_Log("Pi - acos(-1):\t%f", M_PI - SDL_acos(-1));
 </syntaxhighlight>
 
-
-== Remarks ==
-The definition of y = acos('''x''') is '''x''' = cos(y). <br/>
-Domain: -1 <= x <= 1 <br/>
-Range:   0 <= y <= Pi <br/>
-
-
-== Version ==
-This function is available since SDL 2.0.2.
-
-
 ----
 [[CategoryAPI]], [[CategoryStandard]], [[CategoryDraft]]
+
+

@@ -1,14 +1,26 @@
-
 = SDL_LockAudio =
-This function is a legacy means of locking the audio device. New programs might want to use [[SDL_LockAudioDevice]]() instead.
 
+This function is a legacy means of locking the audio device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_LockAudio(void)
+
+<syntaxhighlight lang='c'>
+void SDL_LockAudio(void);
 </syntaxhighlight>
 
+== Remarks ==
+
+New programs might want to use [[SDL_LockAudioDevice]]() instead. This
+function is equivalent to calling...
+
+<syntaxhighlight lang='c'>
+SDL_LockAudioDevice(1);
+</syntaxhighlight>
+
+...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
@@ -27,19 +39,13 @@ SDL_UnlockAudio();
 SDL_Delay(2000);  // callback runs for 2 seconds.
 </syntaxhighlight>
 
-== Remarks ==
-This function is equivalent to calling
-
-<syntaxhighlight lang='c++'>
-SDL_LockAudioDevice(1);
-</syntaxhighlight>
-
-and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
-
 == Related Functions ==
+
 :[[SDL_LockAudioDevice]]
 :[[SDL_UnlockAudio]]
 :[[SDL_UnlockAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

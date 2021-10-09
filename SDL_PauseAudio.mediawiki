@@ -1,11 +1,11 @@
-
 = SDL_PauseAudio =
-This function is a legacy means of pausing the audio device. New programs might want to use [[SDL_PauseAudioDevice]]() instead.
 
+This function is a legacy means of pausing the audio device.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-void SDL_PauseAudio(int pause_on)
+
+<syntaxhighlight lang='c'>
+void SDL_PauseAudio(int pause_on);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -15,25 +15,31 @@ void SDL_PauseAudio(int pause_on)
 |non-zero to pause, 0 to unpause
 |}
 
+== Remarks ==
+
+New programs might want to use [[SDL_PauseAudioDevice]]() instead. This
+function is equivalent to calling...
+
+<syntaxhighlight lang='c'>
+SDL_PauseAudioDevice(1, pause_on);
+</syntaxhighlight>
+
+...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_PauseAudio(1);  // audio callback is stopped when this returns.
 SDL_Delay(5000);  // audio device plays silence for 5 seconds
 SDL_PauseAudio(0);  // audio callback starts running again.
 </syntaxhighlight>
 
-== Remarks ==
-This function is equivalent to calling
-
-<syntaxhighlight lang='c++'>
-SDL_PauseAudioDevice(1, pause_on);
-</syntaxhighlight>
-
-and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
-
 == Related Functions ==
+
 :[[SDL_GetAudioStatus]]
 :[[SDL_PauseAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
+
+

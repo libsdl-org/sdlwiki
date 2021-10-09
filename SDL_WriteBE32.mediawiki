@@ -1,15 +1,15 @@
-
 = SDL_WriteBE32 =
+
 Use this function to write 32 bits in native format to a [[SDL_RWops]] as big-endian data.
 
-
 == Syntax ==
-<syntaxhighlight lang='c++'>
-size_t SDL_WriteBE32(SDL_RWops* dst,
-                     Uint32     value)
+
+<syntaxhighlight lang='c'>
+size_t SDL_WriteBE32(SDL_RWops * dst, Uint32 value);
 </syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''dst'''
 |the stream to which data will be written
@@ -19,13 +19,19 @@ size_t SDL_WriteBE32(SDL_RWops* dst,
 |}
 
 == Return Value ==
+
 Returns 1 on successful write, 0 on error.
 
 == Remarks ==
-SDL byteswaps the data only if necessary, so the application always specifies native format, and the data written will be in big-endian format.
+
+SDL byteswaps the data only if necessary, so the application always
+specifies native format, and the data written will be in big-endian format.
 
 == Related Functions ==
+
 :[[SDL_WriteLE32]]
 
 ----
 [[CategoryAPI]], [[CategoryIO]]
+
+
