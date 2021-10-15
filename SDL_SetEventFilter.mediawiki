@@ -48,6 +48,78 @@ Note: Events pushed onto the queue with [[SDL_PushEvent]]() get passed
 through the event filter, but events pushed onto the queue with
 [[SDL_PeepEvents]]() do not.
 
+== Code Examples ==
+
+<syntaxhighlight lang='c'>
+#include "SDL.h"
+
+
+// Just a quick warning: this is a silly way to do things, but it
+//  illustrates how event filters work. In real life, you'd just
+//  handle the event when you get it from SDL_PollEvent in the main
+//  loop. Generally if you find yourself using an event filter, you
+//  should stop and think carefully about whether you have a good
+//  reason to be doing so in the first place.
+
+
+// This is the function we'll pass to SDL_SetEventFilter. If it sees
+// that the user has pressed the keyboard's space bar, it toggles
+// the value pointed to by `userdata`, to represent the color blue,
+// between 255 and 0. The main program uses this value to clear the
+// window to a specific color as the space bar is pressed.
+static int SDLCALL my_event_filter(void *userdata, SDL_Event * event)
+{
+    if ((event->type == SDL_KEYDOWN) && (event->key.keysym.sym == SDLK_SPACE)) {
+        Uint8 *blue = (Uint8 *) userdata;
+        if (*blue == 0) {
+            *blue = 255;
+        } else {
+            *blue = 0;
+        }
+    }
+    return 1;  // let all events be added to the queue since we always return 1.
+}
+
+int main(int argc, char **argv)
+{
+    Uint8 blue = 0;
+    int quit = 0;
+
+    // Just get a window on the screen and clear it to black.
+    // In real life, you should check these for errors!
+    SDL_Init(SDL_INIT_VIDEO);
+    SDL_Window *window = SDL_CreateWindow("Hello SDL", SDL_WINDOWPOS_UNDEFINED,
+                                          SDL_WINDOWPOS_UNDEFINED, 640, 480, 0);
+    SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderClear(renderer);
+    SDL_RenderPresent(renderer);
+
+    // Set up an event filter...
+    SDL_SetEventFilter(my_event_filter, &blue);
+
+    // Now run the event loop mostly forever. Each event goes through the
+    //  my_event_filter function before it lands here. Each frame, we fill
+    //  in the window with whatever color `blue` is set to, which might be
+    //  changed by the filter function, as its address is our userdata.
+    while (!quit) {
+        SDL_Event e;
+        while (SDL_PollEvent(&e)) {
+            if (e.type == SDL_QUIT) {
+                quit = 1;
+            }
+        }
+
+        SDL_SetRenderDrawColor(renderer, 0, 0, blue, 255);
+        SDL_RenderClear(renderer);
+        SDL_RenderPresent(renderer);
+    }
+
+    SDL_Quit();
+    return 0;
+}
+</syntaxhighlight>
+
 == Related Functions ==
 
 :[[SDL_AddEventWatch]]
