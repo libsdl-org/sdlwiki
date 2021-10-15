@@ -50,18 +50,6 @@ while (game_is_still_running) {
 }
 </syntaxhighlight>
 
-== Code Examples ==
-
-<syntaxhighlight lang='c++'>
-while (1) {
-    SDL_Event event;
-    while (SDL_PollEvent(&event)) {
-        /* handle your event here */
-    }
-    /* do some other stuff here -- draw your app, etc. */
-}
-</syntaxhighlight>
-
 == Related Functions ==
 
 :[[SDL_GetEventFilter]]
