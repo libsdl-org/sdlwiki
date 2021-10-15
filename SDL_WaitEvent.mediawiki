@@ -25,8 +25,8 @@ call [[SDL_GetError]]() for more information.
 If <code>event</code> is not NULL, the next event is removed from the queue
 and stored in the [[SDL_Event]] structure pointed to by <code>event</code>.
 
-As this function implicitly calls [[SDL_PumpEvents]](), you can only call
-this function in the thread that initialized the video subsystem.
+As this function may implicitly call [[SDL_PumpEvents]](), you can only
+call this function in the thread that initialized the video subsystem.
 
 == Related Functions ==
 
