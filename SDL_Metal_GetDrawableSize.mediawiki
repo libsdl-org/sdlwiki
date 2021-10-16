@@ -17,6 +17,9 @@ void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
 |-
 |'''w'''
 |Pointer to variable for storing the width in pixels, may be NULL
+|-
+|'''h'''
+|Pointer to variable for storing the height in pixels, may be NULL
 |}
 
 == Related Functions ==
