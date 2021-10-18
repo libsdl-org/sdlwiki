@@ -50,6 +50,12 @@ You can set the environment variable "SDL_VIDEODRIVER" to the name of the driver
 |wayland
 |Use Wayland protocol for hardware acceleration
 |
+| yes 
+|     
+|-
+|kmsdrm
+|Use Direct Rendering Manager / Kernel Mode Setting
+|
 | yes
 |}
 
