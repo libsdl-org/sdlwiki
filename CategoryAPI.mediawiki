@@ -285,6 +285,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GetWindowFromID]]
 * [[SDL_GetWindowGammaRamp]]
 * [[SDL_GetWindowGrab]]
+* [[SDL_GetWindowICCProfile]]
 * [[SDL_GetWindowID]]
 * [[SDL_GetWindowKeyboardGrab]]
 * [[SDL_GetWindowMaximumSize]]
