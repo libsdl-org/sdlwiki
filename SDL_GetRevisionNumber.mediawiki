@@ -1,22 +1,38 @@
-
 = SDL_GetRevisionNumber =
-'''DEPRECATED'''
-Use this function to get the revision number of SDL that is linked against your program.
 
+Obsolete function, do not use.
+
+== Deprecated ==
+
+Use [[SDL_GetRevision]]() instead; if SDL was carefully built, it will
+return a git hash.
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GetRevisionNumber(void)
+
+<syntaxhighlight lang='c'>
+int SDL_GetRevisionNumber(void);
 </syntaxhighlight>
 
 == Return Value ==
-Returns a number uniquely identifying the exact revision of the SDL library in use. 
+
+Returns zero, always, in modern SDL releases.
 
 == Remarks ==
-After SDL's migration to GitHub (before the 2.0.16 release), this function is marked deprecated and hardcoded to return zero. Don't call this anymore. [[SDL_GetRevision]] still works, and if SDL was carefully built, will return a git hash.
+
+When SDL was hosted in a Mercurial repository, and was built carefully,
+this would return the revision number that the build was created from. This
+number was not reliable for several reasons, but more importantly, SDL is
+now hosted in a git repository, which does not offer numbers at all, only
+hashes. This function only ever returns zero now. Don't use it.
+
+Before SDL 2.0.16, this might have returned an unreliable, but non-zero
+number.
 
 == Related Functions ==
+
 :[[SDL_GetRevision]]
 
 ----
 [[CategoryAPI]], [[CategoryVersion]]
+
+
