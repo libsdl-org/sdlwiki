@@ -1,0 +1,2 @@
+# SDL_Window
+SDL Window is a struct and this holds all of your display graphics. This interfaces your graphics and the OS window manager. A SDL_Window needs a SDL_Renderer to be associated. The SDL_Renderer is responsible for all the drawings presenteds for you.
