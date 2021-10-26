@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -20,6 +19,8 @@ and [[SDL_TextEditingEvent]] ([[SDL_TEXTEDITING]]) events. Please use this
 function in pair with [[SDL_StopTextInput]]().
 
 On some platforms using this function activates the screen keyboard.
+
+On desktop platforms, [[SDL_StartTextInput]]() is implicitly called on SDL window creation which will cause events [[SDL_TextInputEvent]] and [[SDL_TextEditingEvent]] to begin emitting.
 
 == Related Functions ==
 
