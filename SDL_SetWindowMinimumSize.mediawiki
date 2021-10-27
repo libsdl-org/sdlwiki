@@ -22,6 +22,10 @@ void SDL_SetWindowMinimumSize(SDL_Window * window,
 |the minimum height of the window in pixels
 |}
 
+== Remarks ==
+
+Calling this function ''before'' creating a renderer will have no effect.
+
 == Related Functions ==
 
 :[[SDL_GetWindowMinimumSize]]
