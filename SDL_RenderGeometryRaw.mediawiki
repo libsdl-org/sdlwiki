@@ -57,8 +57,7 @@ Return 0 on success, or -1 if the operation is not supported
 
 == Version ==
 
-This function is available since SDL git HEAD (in development, not in an
-official release yet).
+This function is available since SDL git HEAD (in development, not in an official release yet).
 
 ----
 [[CategoryAPI]]

@@ -25,8 +25,7 @@ Returns 0 on success, or -1 if the texture is not valid.
 
 == Version ==
 
-This function is available since SDL git HEAD (in development, not in an
-official release yet).
+This function is available since SDL git HEAD (in development, not in an official release yet).
 
 == Related Functions ==
 
