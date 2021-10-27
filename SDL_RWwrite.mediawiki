@@ -43,6 +43,10 @@ it returns <code>num</code>.
 [[SDL_RWops]]'s <code>write</code> method appropriately, to simplify
 application development.
 
+== Version ==
+
+This function is available since SDL 2.0.10.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

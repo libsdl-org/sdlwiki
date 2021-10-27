@@ -17,6 +17,10 @@ not.
 
 This always returns false on CPUs that aren't using ARM instruction sets.
 
+== Version ==
+
+This function is available since SDL 2.0.6.
+
 ----
 [[CategoryAPI]]
 

@@ -44,6 +44,10 @@ Internally, the audio device lock is a mutex; if you lock from two threads
 at once, not only will you block the audio callback, you'll block the other
 thread.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

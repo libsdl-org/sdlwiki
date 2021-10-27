@@ -23,6 +23,10 @@ void SDL_SetWindowTitle(SDL_Window * window,
 
 This string is expected to be in UTF-8 encoding.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

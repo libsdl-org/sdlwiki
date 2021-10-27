@@ -15,6 +15,10 @@ rule to redefine main() as [[SDL_main]](). Thus to ensure that your main()
 function will not be changed it is necessary to define [[SDL_MAIN_HANDLED]]
 before including SDL.h.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

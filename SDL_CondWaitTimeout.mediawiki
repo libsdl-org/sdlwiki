@@ -39,6 +39,10 @@ mutex is re-locked and the function returns.
 
 The mutex must be locked before calling this function.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

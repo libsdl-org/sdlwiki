@@ -24,6 +24,10 @@ Returns the name of the video driver with the given '''index'''.
 The video drivers are presented in the order in which they are normally
 checked during initialization.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetNumVideoDrivers]]

@@ -15,6 +15,10 @@ void SDL_SensorClose(SDL_Sensor * sensor);
 |The [[SDL_Sensor]] object to close
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

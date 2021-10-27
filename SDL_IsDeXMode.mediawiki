@@ -13,6 +13,10 @@ SDL_bool SDL_IsDeXMode(void);
 Returns [[SDL_TRUE]] if this is a DeX docking station, [[SDL_FALSE]]
 otherwise.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]]
 

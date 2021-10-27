@@ -15,6 +15,10 @@ void SDL_FreePalette(SDL_Palette * palette);
 |the [[SDL_Palette]] structure to be freed
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_AllocPalette]]

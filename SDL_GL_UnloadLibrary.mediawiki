@@ -8,6 +8,10 @@ Unload the OpenGL library previously loaded by [[SDL_GL_LoadLibrary]]().
 void SDL_GL_UnloadLibrary(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GL_LoadLibrary]]

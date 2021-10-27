@@ -24,6 +24,10 @@ Returns 0 on success or a negative error code on failure; call
 
 In SDL2, this function and [[SDL_Init]]() are interchangeable.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

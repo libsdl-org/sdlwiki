@@ -27,6 +27,10 @@ Two other API which can be used to create [[SDL_Renderer]]:
 _also_ create a software renderer, but they are intended to be used with an
 [[SDL_Window]] as the final destination and not an [[SDL_Surface]].
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

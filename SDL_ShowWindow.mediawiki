@@ -15,6 +15,10 @@ void SDL_ShowWindow(SDL_Window * window);
 |the window to show
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

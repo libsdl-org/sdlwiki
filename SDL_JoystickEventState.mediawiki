@@ -38,6 +38,10 @@ It is recommended that you leave joystick event handling enabled.
 '''WARNING''': Calling this function may delete all events currently in
 SDL's event queue.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

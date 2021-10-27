@@ -34,6 +34,10 @@ instance ID used to identify the joystick in future events. See
 The joystick subsystem must be initialized before a joystick can be opened
 for use.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

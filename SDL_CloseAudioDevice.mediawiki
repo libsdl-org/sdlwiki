@@ -30,6 +30,10 @@ supplied.
 The device ID is invalid as soon as the device is closed, and is eligible
 for reuse in a new [[SDL_OpenAudioDevice]]() call immediately.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

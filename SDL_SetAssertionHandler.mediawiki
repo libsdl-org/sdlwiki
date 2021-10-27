@@ -32,6 +32,10 @@ it will only fire from one thread at a time.
 
 This callback is NOT reset to SDL's internal handler upon [[SDL_Quit]]()!
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetAssertionHandler]]

@@ -25,6 +25,10 @@ before unlocking it, as the pixels might otherwise be uninitialized memory.
 Which is to say: locking and immediately unlocking a texture can result in
 corrupted textures, depending on the renderer in use.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_LockTexture]]

@@ -28,6 +28,10 @@ Returns 0 on success or a negative error code on failure; call
 The primary display (<code>displayIndex</code> zero) is always located at
 0,0.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

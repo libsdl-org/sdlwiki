@@ -12,6 +12,10 @@ int SDL_NumSensors(void);
 
 Returns the number of sensors detected.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

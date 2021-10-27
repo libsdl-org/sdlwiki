@@ -28,6 +28,10 @@ this function returns a zero GUID
 
 This function can be called before any joysticks are opened.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_JoystickGetGUID]]

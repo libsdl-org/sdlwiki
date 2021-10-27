@@ -36,6 +36,10 @@ Returns 0 on success or a negative error code on failure; call
 This is a semi-private function and it performs low-level surface blitting,
 assuming the input rectangles have already been clipped.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_BlitScaled]]

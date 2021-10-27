@@ -25,6 +25,10 @@ information.
 
 The palette entries are initialized to white.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_FreePalette]]

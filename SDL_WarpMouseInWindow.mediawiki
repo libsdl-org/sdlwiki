@@ -33,6 +33,10 @@ This function generates a mouse motion event.
 Note that this function will appear to succeed, but not actually move the
 mouse when used over Microsoft Remote Desktop.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_WarpMouseGlobal]]

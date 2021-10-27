@@ -43,6 +43,10 @@ You can use [[SDL_UpdateTexture]]() as long as your pixel data is a
 contiguous block of NV12/21 planes in the proper order, but this function
 is available if your pixel data is not contiguous.
 
+== Version ==
+
+This function is available since SDL 2.0.16.
+
 ----
 [[CategoryAPI]]
 

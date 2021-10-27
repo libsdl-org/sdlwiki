@@ -26,6 +26,10 @@ When input is grabbed the mouse is confined to the window.
 If the caller enables a grab while another window is currently grabbed, the
 other window loses its grab in favor of the caller's window.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetGrabbedWindow]]

@@ -21,6 +21,10 @@ This function is called automatically by the event loop if events are
 enabled. Under such circumstances, it will not be necessary to call this
 function.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
 

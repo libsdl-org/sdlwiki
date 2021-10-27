@@ -39,6 +39,10 @@ mysteriously if you do not do this.
 
 If the requested function doesn't exist, NULL is returned.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

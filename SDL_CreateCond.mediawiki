@@ -13,6 +13,10 @@ SDL_cond* SDL_CreateCond(void);
 Returns a new condition variable or NULL on failure; call
 [[SDL_GetError]]() for more information.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <!-- # Begin Condition Variable Example -->

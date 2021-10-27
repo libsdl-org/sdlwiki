@@ -34,6 +34,10 @@ You may not combine this with 3D or the rendering API on this window.
 This function is affected by
 <code>[[SDL_HINT_FRAMEBUFFER_ACCELERATION]]</code>.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

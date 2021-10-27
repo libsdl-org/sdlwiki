@@ -20,6 +20,11 @@ void * SDL_GetTextureUserData(SDL_Texture * texture);
 Return the pointer associated with the texture, or NULL if the texture is
 not valid.
 
+== Version ==
+
+This function is available since SDL git HEAD (in development, not in an
+official release yet).
+
 == Related Functions ==
 
 :[[SDL_SetTextureUserData]]

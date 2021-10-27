@@ -35,6 +35,10 @@ convenience. This extra byte is not included in the value reported via
 
 The data should be freed with [[SDL_free]]().
 
+== Version ==
+
+This function is available since SDL 2.0.6.
+
 ----
 [[CategoryAPI]]
 

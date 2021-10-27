@@ -15,6 +15,10 @@ void SDL_RaiseWindow(SDL_Window * window);
 |the window to raise
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryVideo]]
 

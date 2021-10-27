@@ -44,6 +44,10 @@ the texture as streaming and use the locking functions referenced below.
 While this function will work with streaming textures, for optimization
 reasons you may not get the pixels back if you lock the texture afterward.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_CreateTexture]]

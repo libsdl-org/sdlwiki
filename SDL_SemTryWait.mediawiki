@@ -28,6 +28,10 @@ has a positive value and atomically decrements the semaphore value if it
 does. If the semaphore doesn't have a positive value, the function
 immediately returns [[SDL_MUTEX_TIMEDOUT]].
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

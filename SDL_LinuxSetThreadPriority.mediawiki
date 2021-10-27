@@ -26,6 +26,10 @@ Returns 0 on success, or -1 on error.
 
 This uses setpriority() if possible, and RealtimeKit if available.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]]
 

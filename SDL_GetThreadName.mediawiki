@@ -25,6 +25,10 @@ NULL if it doesn't have a name.
 This is internal memory, not to be freed by the caller, and remains valid
 until the specified thread is cleaned up by [[SDL_WaitThread]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_CreateThread]]

@@ -29,6 +29,10 @@ It is legal for the owning thread to lock an already-locked mutex. It must
 unlock it the same number of times before it is actually made available for
 other threads in the system (this is known as a "recursive mutex").
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>

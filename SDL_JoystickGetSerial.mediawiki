@@ -23,6 +23,10 @@ Returns the serial number of the selected joystick, or NULL if unavailable.
 
 Returns the serial number of the joystick, or NULL if it is not available.
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 ----
 [[CategoryAPI]]
 

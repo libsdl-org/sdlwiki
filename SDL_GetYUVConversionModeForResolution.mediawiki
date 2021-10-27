@@ -8,6 +8,10 @@ Get the YUV conversion mode, returning the correct mode for the resolution when 
 SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionModeForResolution(int width, int height);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.8.
+
 ----
 [[CategoryAPI]]
 

@@ -34,6 +34,10 @@ The pixel format of the created texture may be different from the pixel
 format of the surface. Use [[SDL_QueryTexture]]() to query the pixel format
 of the texture.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

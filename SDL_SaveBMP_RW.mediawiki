@@ -35,6 +35,10 @@ BMP directly. Other RGB formats with 8-bit or higher get converted to a
 surface before they are saved. YUV and paletted 1-bit and 4-bit formats are
 not supported.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_LoadBMP_RW]]

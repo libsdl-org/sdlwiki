@@ -51,6 +51,10 @@ With two notable exceptions:
 * If <code>obtained</code> is NULL, we use <code>desired</code> (and allow no changes), which means desired will be modified to have the correct values for silence, etc, and SDL will convert any differences between your app's specific request and the hardware behind the scenes.
 * The return value is always success or failure, and not a device ID, which means you can only have one device open at a time with this function.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

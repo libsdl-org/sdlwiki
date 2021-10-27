@@ -26,6 +26,10 @@ void SDL_SetWindowPosition(SDL_Window * window,
 
 The window coordinate origin is the upper left of the display.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetWindowPosition]]

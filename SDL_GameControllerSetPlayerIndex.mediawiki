@@ -18,6 +18,10 @@ void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int pl
 |Player index to assign to this controller.
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.12.
+
 ----
 [[CategoryAPI]]
 

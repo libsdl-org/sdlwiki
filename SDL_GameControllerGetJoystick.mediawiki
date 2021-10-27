@@ -38,6 +38,10 @@ The pointer returned is owned by the [[SDL_GameController]]. You should not
 call [[SDL_JoystickClose]]() on it, for example, since doing so will likely
 cause SDL to crash.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

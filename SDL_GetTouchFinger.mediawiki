@@ -35,6 +35,10 @@ given ID and index could be found.
 
 The returned resource is owned by SDL and should not be deallocated.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_RecordGesture]]

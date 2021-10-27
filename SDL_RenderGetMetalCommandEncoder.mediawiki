@@ -26,6 +26,10 @@ This function returns <code>void *</code>, so SDL doesn't have to include
 Metal's headers, but it can be safely cast to an
 <code>id<MTLRenderCommandEncoder></code>.
 
+== Version ==
+
+This function is available since SDL 2.0.8.
+
 == Related Functions ==
 
 :[[SDL_RenderGetMetalLayer]]

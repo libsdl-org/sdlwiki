@@ -20,6 +20,10 @@ void SDL_AtomicLock(SDL_SpinLock *lock);
 '''''Please note that spinlocks are dangerous if you don't know what you're
 doing. Please be careful using any sort of spinlock!'''''
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_AtomicTryLock]]

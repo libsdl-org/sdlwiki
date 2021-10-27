@@ -22,6 +22,10 @@ void SDL_SetWindowMaximumSize(SDL_Window * window,
 |the maximum height of the window in pixels
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetWindowMaximumSize]]

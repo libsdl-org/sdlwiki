@@ -40,6 +40,10 @@ Returns one of the [[SDL_PixelFormatEnum]] values
 This will return <code>[[SDL_PIXELFORMAT_UNKNOWN]]</code> if the conversion
 wasn't possible.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_PixelFormatEnumToMasks]]

@@ -41,6 +41,10 @@ to 32767) representing the current position of the axis. It may be
 necessary to impose certain tolerances on these values to account for
 jitter.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

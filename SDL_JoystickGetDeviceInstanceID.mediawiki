@@ -25,6 +25,10 @@ index, this function returns zero
 This can be called before any joysticks are opened. If the index is out of
 range, this function will return -1.
 
+== Version ==
+
+This function is available since SDL 2.0.6.
+
 ----
 [[CategoryAPI]]
 

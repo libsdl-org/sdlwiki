@@ -8,6 +8,10 @@ Get the current state of a finger on a touchpad on a game controller.
 int SDL_GameControllerGetTouchpadFinger(SDL_GameController *gamecontroller, int touchpad, int finger, Uint8 *state, float *x, float *y, float *pressure);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 ----
 [[CategoryAPI]]
 

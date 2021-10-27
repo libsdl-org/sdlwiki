@@ -28,6 +28,10 @@ and stored in the [[SDL_Event]] structure pointed to by <code>event</code>.
 As this function may implicitly call [[SDL_PumpEvents]](), you can only
 call this function in the thread that initialized the video subsystem.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_PollEvent]]

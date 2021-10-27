@@ -24,6 +24,10 @@ void SDL_DelEventWatch(SDL_EventFilter filter,
 This function takes the same input as [[SDL_AddEventWatch]]() to identify
 and delete the corresponding callback.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_AddEventWatch]]

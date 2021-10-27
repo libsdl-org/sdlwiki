@@ -39,6 +39,10 @@ It is safe to pass a NULL thread to this function; it is a no-op.
 Note that the thread pointer is freed by this function and is not valid
 afterward.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

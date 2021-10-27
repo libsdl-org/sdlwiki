@@ -29,6 +29,10 @@ Returns 0 or -1 if an error occurred.
 
 The number of values and interpretation of the data is sensor dependent.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

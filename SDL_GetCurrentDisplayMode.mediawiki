@@ -30,6 +30,10 @@ There's a difference between this function and
 the resolution. In that case this function will return the current display
 mode, and not the previous native display mode.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

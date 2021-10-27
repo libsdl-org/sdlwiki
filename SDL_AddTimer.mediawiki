@@ -49,6 +49,10 @@ Timing may be inexact due to OS scheduling. Be sure to note the current
 time with [[SDL_GetTicks]]() or [[SDL_GetPerformanceCounter]]() in case
 your callback needs to adjust for variances.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

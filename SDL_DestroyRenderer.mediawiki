@@ -15,6 +15,10 @@ void SDL_DestroyRenderer(SDL_Renderer * renderer);
 |the rendering context
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_CreateRenderer]]

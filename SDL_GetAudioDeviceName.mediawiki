@@ -36,6 +36,10 @@ managed internally. You are not to free it. If you need to keep the string
 for any length of time, you should make your own copy of it, as it will be
 invalid next time any of several other SDL functions are called.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

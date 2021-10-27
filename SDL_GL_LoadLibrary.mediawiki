@@ -29,6 +29,10 @@ library will be loaded upon creation of the first OpenGL window.
 If you do this, you need to retrieve all of the GL functions used in your
 program from the dynamic library using [[SDL_GL_GetProcAddress]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GL_GetProcAddress]]

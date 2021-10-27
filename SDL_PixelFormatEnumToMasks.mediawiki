@@ -40,6 +40,10 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32 format,
 Returns [[SDL_TRUE]] on success or [[SDL_FALSE]] if the conversion wasn't
 possible; call [[SDL_GetError]]() for more information.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_MasksToPixelFormatEnum]]

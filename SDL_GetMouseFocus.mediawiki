@@ -16,6 +16,10 @@ SDL_Window * SDL_GetMouseFocus(void);
 
 Returns the window with mouse focus.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
 

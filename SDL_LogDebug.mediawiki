@@ -21,6 +21,10 @@ void SDL_LogDebug(int category, SDL_PRINTF_FORMAT_STRING const char *fmt, ...) S
 |additional parameters matching % tokens in the '''fmt''' string, if any
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_Log]]

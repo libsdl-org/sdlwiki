@@ -27,6 +27,10 @@ void SDL_GetWindowPosition(SDL_Window * window,
 If you do not need the value for one of the positions a NULL may be passed
 in the <code>x</code> or <code>y</code> parameter.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_SetWindowPosition]]

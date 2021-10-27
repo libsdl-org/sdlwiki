@@ -57,6 +57,10 @@ video target, this function is likely to fail for the same reasons. If this
 is a concern, check the return value from this function and fall back to
 writing to stderr if you can.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

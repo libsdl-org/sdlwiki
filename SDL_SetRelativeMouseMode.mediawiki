@@ -38,6 +38,10 @@ to the bounds of the screen.
 
 This function will flush any pending mouse motion.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetRelativeMouseMode]]

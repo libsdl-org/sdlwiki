@@ -25,6 +25,10 @@ otherwise.
 It is safe to pass a NULL <code>surface</code> here; it will return
 [[SDL_FALSE]].
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 == Related Functions ==
 
 :[[SDL_SetColorKey]]

@@ -20,6 +20,10 @@ int SDL_SensorGetNonPortableType(SDL_Sensor *sensor);
 Returns the sensor platform dependent type, or -1 if <code>sensor</code> is
 NULL.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

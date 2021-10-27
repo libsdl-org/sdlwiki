@@ -69,6 +69,10 @@ SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND)
 You can change this by calling [[SDL_SetSurfaceBlendMode]]() and selecting
 a different <code>blendMode</code>.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

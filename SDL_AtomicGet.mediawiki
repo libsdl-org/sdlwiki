@@ -24,6 +24,10 @@ Returns the current value of an atomic variable.
 '''''Note: If you don't know what this function is for, you shouldn't use
 it!'''''
 
+== Version ==
+
+This function is available since SDL 2.0.2.
+
 == Related Functions ==
 
 :[[SDL_AtomicSet]]

@@ -8,6 +8,10 @@ Get the YUV conversion mode
 SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionMode(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.8.
+
 ----
 [[CategoryAPI]]
 

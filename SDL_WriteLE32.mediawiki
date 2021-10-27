@@ -28,6 +28,10 @@ SDL byteswaps the data only if necessary, so the application always
 specifies native format, and the data written will be in little-endian
 format.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_WriteBE32]]

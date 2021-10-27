@@ -32,6 +32,10 @@ hash for a Mercurial repository.
 You shouldn't use this function for anything but logging it for debugging
 purposes. The string is not intended to be reliable in any way.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetVersion]]

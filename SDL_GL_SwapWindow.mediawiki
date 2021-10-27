@@ -24,6 +24,10 @@ window, otherwise nothing will happen. If you aren't using
 glBindFramebuffer(), this is the default and you won't have to do anything
 extra.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

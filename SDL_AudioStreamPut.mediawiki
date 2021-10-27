@@ -25,6 +25,10 @@ int SDL_AudioStreamPut(SDL_AudioStream *stream, const void *buf, int len);
 
 Returns 0 on success, or -1 on error.
 
+== Version ==
+
+This function is available since SDL 2.0.7.
+
 == Related Functions ==
 
 :[[SDL_NewAudioStream]]

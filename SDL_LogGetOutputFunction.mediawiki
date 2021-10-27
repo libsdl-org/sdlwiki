@@ -18,6 +18,10 @@ void SDL_LogGetOutputFunction(SDL_LogOutputFunction *callback, void **userdata);
 |a pointer filled in with the pointer that is passed to <code>callback</code>
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_LogSetOutputFunction]]

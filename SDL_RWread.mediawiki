@@ -43,6 +43,10 @@ completely read.
 [[SDL_RWops]]'s <code>read</code> method appropriately, to simplify
 application development.
 
+== Version ==
+
+This function is available since SDL 2.0.10.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

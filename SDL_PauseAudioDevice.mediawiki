@@ -38,6 +38,10 @@ If you just need to protect a few variables from race conditions vs your
 callback, you shouldn't pause the audio device, as it will lead to dropouts
 in the audio playback. Instead, you should use [[SDL_LockAudioDevice]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

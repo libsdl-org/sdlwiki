@@ -43,6 +43,10 @@ The texture color is affected based on its color modulation set by
 The texture alpha is affected based on its alpha modulation set by
 [[SDL_SetTextureAlphaMod]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

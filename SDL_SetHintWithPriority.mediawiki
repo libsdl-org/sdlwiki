@@ -33,6 +33,10 @@ The priority controls the behavior when setting a hint that already has a
 value. Hints will replace existing hints of their priority and lower.
 Environment variables are considered to have override priority.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetHint]]

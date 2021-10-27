@@ -8,6 +8,10 @@ This can be called to set the application class at startup
 int SDL_RegisterApp(char *name, Uint32 style, void *hInst);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]]
 

@@ -16,6 +16,10 @@ return no items. In addition, any previously-triggered assertions will be
 reset to a trigger_count of zero, and their always_ignore state will be
 false.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

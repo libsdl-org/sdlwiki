@@ -8,6 +8,10 @@ Clear any previous error message for this thread.
 void SDL_ClearError(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -30,6 +30,10 @@ allocated during creation of the [[SDL_RWops]] is not freed by
 [[SDL_FreeRW]](); the programmer must be responsible for managing that
 memory in their '''close''' method.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -42,6 +42,10 @@ Trackballs can only return relative motion since the last call to
 
 Most joysticks do not have trackballs.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -25,6 +25,10 @@ exist; call [[SDL_GetError]]() for more information.
 The numeric ID is what [[SDL_WindowEvent]] references, and is necessary to
 map these events to specific [[SDL_Window]] objects.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetWindowID]]

@@ -12,6 +12,10 @@ void SDL_VideoQuit(void);
 
 This function closes all windows, and restores the original video mode.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_VideoInit]]

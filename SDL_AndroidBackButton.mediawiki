@@ -8,6 +8,10 @@ Trigger the Android system back button behavior.
 void SDL_AndroidBackButton(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]]
 

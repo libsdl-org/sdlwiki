@@ -49,6 +49,10 @@ your program; SDL will send an [[SDL_LOCALECHANGED]] event in this case, if
 possible, and you can call this function again to get an updated copy of
 preferred locales.
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 ----
 [[CategoryAPI]]
 

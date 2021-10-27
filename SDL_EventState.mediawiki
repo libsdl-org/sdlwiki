@@ -32,6 +32,10 @@ any changes to it.
 * <code>[[SDL_IGNORE]]</code> (aka <code>[[SDL_DISABLE]]</code>): the event will automatically be dropped from the event queue and will not be filtered
 * <code>[[SDL_ENABLE]]</code>: the event will be processed normally
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetEventState]]

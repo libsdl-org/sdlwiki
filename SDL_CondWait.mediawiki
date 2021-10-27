@@ -35,6 +35,10 @@ The mutex must be locked before calling this function.
 This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a
 time length of <code>[[SDL_MUTEX_MAXWAIT]]</code>.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>

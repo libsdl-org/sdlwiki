@@ -17,6 +17,10 @@ since the SDL library initialized.
 
 This value wraps if the program runs for more than ~49 days.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

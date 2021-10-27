@@ -57,6 +57,10 @@ filename in an Android app's <code>assets</code>.
 Closing the [[SDL_RWops]] will close the file handle SDL is holding
 internally.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

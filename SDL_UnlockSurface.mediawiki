@@ -15,6 +15,10 @@ void SDL_UnlockSurface(SDL_Surface * surface);
 |the [[SDL_Surface]] structure to be unlocked
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_LockSurface, , , from="== Code Examples ==", to="== Remarks ==")>>

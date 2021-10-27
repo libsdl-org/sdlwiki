@@ -41,6 +41,10 @@ If there is a clip rectangle set on the destination (set via
 [[SDL_SetClipRect]]()), then this function will fill based on the
 intersection of the clip rectangle and <code>rect</code>.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_FillRect]]

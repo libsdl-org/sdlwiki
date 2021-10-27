@@ -42,6 +42,10 @@ For pushing application-specific events, please use
 [[SDL_RegisterEvents]]() to get an event type that does not conflict with
 other code that also wants its own custom event types.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

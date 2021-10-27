@@ -23,6 +23,10 @@ void SDL_GameControllerClose(SDL_GameController *gamecontroller);
 |a game controller identifier previously returned by [[SDL_GameControllerOpen]]()
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

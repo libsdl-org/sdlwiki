@@ -103,6 +103,10 @@ less messy way:
 SDL_LoadWAV("sample.wav", &spec, &buf, &len);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

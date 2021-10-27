@@ -59,6 +59,10 @@ conversion is necessary, the application fills in the rest of the fields in
 allocate, and then can call [[SDL_ConvertAudio]]() to complete the
 conversion.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

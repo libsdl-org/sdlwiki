@@ -47,6 +47,10 @@ this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().) The
 gamma ramp set will not follow the window if it is moved to another
 display.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetWindowGammaRamp]]

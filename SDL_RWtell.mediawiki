@@ -26,6 +26,10 @@ be determined.
 [[SDL_RWops]]'s <code>seek</code> method, with an offset of 0 bytes from
 <code>RW_SEEK_CUR</code>, to simplify application development.
 
+== Version ==
+
+This function is available since SDL 2.0.10.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

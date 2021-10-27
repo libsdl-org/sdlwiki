@@ -29,6 +29,10 @@ Returns 0 on success or a negative error code on failure; call
 When the window is resized, the viewport is reset to fill the entire new
 window size.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_RenderGetViewport]]

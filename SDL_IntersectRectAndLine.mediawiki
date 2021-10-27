@@ -43,6 +43,10 @@ both ends will be clipped to the boundary of the rectangle and the new
 coordinates saved in <code>X1</code>, <code>Y1</code>, <code>X2</code>,
 and/or <code>Y2</code> as necessary.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryRect]]
 

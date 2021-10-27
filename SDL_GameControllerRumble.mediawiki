@@ -33,6 +33,10 @@ Returns 0, or -1 if rumble isn't supported on this controller
 Each call to this function cancels any previous rumble effect, and calling
 it with 0 intensity stops any rumbling.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]]
 

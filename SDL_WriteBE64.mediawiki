@@ -27,6 +27,10 @@ Returns 1 on successful write, 0 on error.
 SDL byteswaps the data only if necessary, so the application always
 specifies native format, and the data written will be in big-endian format.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_WriteLE64]]

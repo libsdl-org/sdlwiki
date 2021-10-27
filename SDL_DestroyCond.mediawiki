@@ -15,6 +15,10 @@ void SDL_DestroyCond(SDL_cond * cond);
 |the condition variable to destroy
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>

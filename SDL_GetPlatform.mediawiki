@@ -23,6 +23,10 @@ Here are the names returned for some (but not all) supported platforms:
 * "iOS"
 * "Android"
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryPlatform]]
 

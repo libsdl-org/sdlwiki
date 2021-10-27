@@ -30,6 +30,10 @@ thread, and doing so results in undefined behavior.
 
 It is also an error to unlock a mutex that isn't locked at all.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>

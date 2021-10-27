@@ -29,6 +29,10 @@ Hints will not be set if there is an existing override hint or environment
 variable that takes precedence. You can use [[SDL_SetHintWithPriority]]()
 to set the hint with override priority instead.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

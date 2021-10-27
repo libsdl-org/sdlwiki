@@ -31,6 +31,10 @@ Returns the previous value associated with <code>name</code>.
 
 <code>name</code> is case-sensitive.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetWindowData]]

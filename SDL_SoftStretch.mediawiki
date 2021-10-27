@@ -15,6 +15,10 @@ int SDL_SoftStretch(SDL_Surface * src,
 
 Please use [[SDL_BlitScaled]]() instead.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]]
 

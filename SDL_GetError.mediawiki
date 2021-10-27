@@ -37,6 +37,10 @@ will not interfere with the current thread's operation.
 The returned string is internally allocated and must not be freed by the
 application.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

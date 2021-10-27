@@ -12,6 +12,10 @@ int SDL_GameControllerNumMappings(void);
 
 Returns the number of mappings.
 
+== Version ==
+
+This function is available since SDL 2.0.6.
+
 ----
 [[CategoryAPI]]
 

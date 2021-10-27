@@ -27,6 +27,10 @@ using those functions directly anyhow; use [[SDL_Init]]() instead.
 You still need to call [[SDL_Quit]]() even if you close all open subsystems
 with [[SDL_QuitSubSystem]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

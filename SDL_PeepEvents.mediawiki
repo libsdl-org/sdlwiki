@@ -48,6 +48,10 @@ Otherwise, the events may not be ready to be filtered when you call
 
 This function is thread-safe.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

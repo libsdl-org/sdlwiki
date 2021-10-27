@@ -8,6 +8,10 @@ Get the type of the given touch device.
 SDL_TouchDeviceType SDL_GetTouchDeviceType(SDL_TouchID touchID);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.10.
+
 ----
 [[CategoryAPI]]
 

@@ -35,6 +35,10 @@ it's a <code>FILE*</code>, depending on what system headers are available
 to SDL. It is always intended to be the <code>FILE*</code> type from the C
 runtime's stdio.h.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -27,6 +27,11 @@ Returns the raw ICC profile data on success or NULL on failure; call
 
 Data returned should be freed with [[SDL_free]].
 
+== Version ==
+
+This function is available since SDL git HEAD (in development, not in an
+official release yet).
+
 ----
 [[CategoryAPI]]
 

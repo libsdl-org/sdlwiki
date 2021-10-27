@@ -15,6 +15,10 @@ void SDL_FreeFormat(SDL_PixelFormat *format);
 |the [[SDL_PixelFormat]] structure to free
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_AllocFormat]]

@@ -32,6 +32,10 @@ void SDL_JoystickGetGUIDString(SDL_JoystickGUID guid, char *pszGUID, int cbGUID)
 
 You should supply at least 33 bytes for pszGUID.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_JoystickGetDeviceGUID]]

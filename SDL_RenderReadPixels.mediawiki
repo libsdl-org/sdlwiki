@@ -48,6 +48,10 @@ subrectangle or have padded rows in the destination. Generally,
 contain additional padding (for example, 24bit RGB Windows Bitmap data pads
 all rows to multiples of 4 bytes).
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryRender]]
 

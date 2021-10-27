@@ -35,6 +35,10 @@ The current state of the mouse cursor can be queried by passing
 <code>[[SDL_QUERY]]</code>; either <code>[[SDL_DISABLE]]</code> or
 <code>[[SDL_ENABLE]]</code> will be returned.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

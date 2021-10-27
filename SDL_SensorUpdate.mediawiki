@@ -16,6 +16,10 @@ enabled.
 This needs to be called from the thread that initialized the sensor
 subsystem.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

@@ -29,6 +29,10 @@ This function also acts as a full memory barrier.
 '''''Note: If you don't know what this function is for, you shouldn't use
 it!'''''
 
+== Version ==
+
+This function is available since SDL 2.0.2.
+
 == Related Functions ==
 
 :[[SDL_AtomicDecRef]]

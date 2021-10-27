@@ -25,6 +25,10 @@ Returns [[SDL_TRUE]] if events matching <code>type</code> are present, or
 If you need to check for a range of event types, use [[SDL_HasEvents]]()
 instead.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_HasEvents]]

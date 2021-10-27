@@ -19,6 +19,10 @@ void SDL_Log(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FU
 
 = * \param fmt a printf() style message format string
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_LogCritical]]

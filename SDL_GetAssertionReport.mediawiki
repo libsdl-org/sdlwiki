@@ -31,6 +31,10 @@ while (item) {
 }
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 The proper way to examine this data looks something like this:

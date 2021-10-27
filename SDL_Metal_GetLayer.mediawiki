@@ -8,6 +8,10 @@ Get a pointer to the backing CAMetalLayer for the given view.
 void* SDL_Metal_GetLayer(SDL_MetalView view);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 == Related Functions ==
 
 :[[SDL_MetalCreateView]]

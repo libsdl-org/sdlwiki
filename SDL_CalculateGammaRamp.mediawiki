@@ -18,6 +18,10 @@ void SDL_CalculateGammaRamp(float gamma, Uint16 * ramp);
 |an array of 256 values filled in with the gamma ramp
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_SetWindowGammaRamp]]

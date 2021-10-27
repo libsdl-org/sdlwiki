@@ -40,6 +40,10 @@ Note specially that "righttrigger" and "lefttrigger" map to
 <code>[[SDL_CONTROLLER_AXIS_TRIGGERRIGHT]]</code> and
 <code>[[SDL_CONTROLLER_AXIS_TRIGGERLEFT]]</code>, respectively.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GameControllerGetStringForAxis]]

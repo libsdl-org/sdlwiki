@@ -11,6 +11,10 @@ char* SDL_iconv_string(const char *tocode,
                        size_t inbytesleft);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 ----
 [[CategoryAPI]]
 

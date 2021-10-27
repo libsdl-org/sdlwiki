@@ -37,6 +37,10 @@ The display modes are sorted in this priority:
 * packed pixel layout -> largest to smallest
 * refresh rate -> highest to lowest
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

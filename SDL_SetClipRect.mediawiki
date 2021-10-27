@@ -32,6 +32,10 @@ within the clip rectangle is drawn into.
 Note that blits are automatically clipped to the edges of the source and
 destination surfaces.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_BlitSurface]]

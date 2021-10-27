@@ -32,6 +32,10 @@ related functions.
 [[SDL_GLContext]] is an alias for <code>void *</code>. It's opaque to the
 application.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

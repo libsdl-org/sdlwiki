@@ -36,7 +36,7 @@ been created with extensions returned by
 
 == Version ==
 
-This function is available in SDL 2.0.8
+This function is available since SDL 2.0.6.
 
 == Code Examples ==
 

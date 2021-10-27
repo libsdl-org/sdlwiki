@@ -22,6 +22,11 @@ int SDL_RenderSetVSync(SDL_Renderer* renderer, int vsync);
 
 Returns a 0 int on success, or non-zero on failure
 
+== Version ==
+
+This function is available since SDL git HEAD (in development, not in an
+official release yet).
+
 ----
 [[CategoryAPI]]
 

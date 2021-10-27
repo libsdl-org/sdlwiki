@@ -49,6 +49,10 @@ the converted audio, and <code>cvt->len_cvt</code> will be the size of the
 converted data, in bytes. Any bytes in the buffer past
 <code>cvt->len_cvt</code> are undefined once this function returns.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

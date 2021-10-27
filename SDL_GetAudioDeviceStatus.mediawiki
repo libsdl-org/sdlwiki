@@ -19,6 +19,10 @@ SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev);
 
 Returns the [[SDL_AudioStatus]] of the specified audio device.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_AudioStatus, , , from="== Code Examples ==", to="== Remarks ==")>>

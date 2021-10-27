@@ -24,6 +24,10 @@ Returns 16 bits of data in the native byte order of the platform.
 SDL byteswaps the data only if necessary, so the data returned will be in
 the native byte order.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_ReadBE16]]

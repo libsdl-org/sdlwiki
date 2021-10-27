@@ -34,6 +34,10 @@ src is an open [[SDL_RWops]] buffer, typically loaded with
 [[SDL_LoadBMP]] to load a bitmap from a file, convert it to an
 [[SDL_Surface]] and then close the file.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

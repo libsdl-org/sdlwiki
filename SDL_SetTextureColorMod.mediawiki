@@ -41,6 +41,10 @@ following formula:
 Color modulation is not always supported by the renderer; it will return -1
 if color modulation is not supported.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

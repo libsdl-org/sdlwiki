@@ -32,6 +32,10 @@ Device must support the <code>[[SDL_HAPTIC_PAUSE]]</code> feature. Call
 Do not modify the effects nor add new ones while the device is paused. That
 can cause all sorts of weird errors.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_HapticUnpause]]

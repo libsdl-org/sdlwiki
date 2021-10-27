@@ -31,6 +31,10 @@ value is modulated by this alpha value according to the following formula:
 
 <code>srcA = srcA * (alpha / 255)</code>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetSurfaceAlphaMod]]

@@ -24,6 +24,10 @@ events would ever be placed on the queue. Often the need for calls to
 are not polling or waiting for events (e.g. you are filtering them), then
 you must call [[SDL_PumpEvents]]() to force an event queue update.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_PollEvent]]

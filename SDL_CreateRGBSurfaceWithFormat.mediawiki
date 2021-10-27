@@ -46,6 +46,10 @@ This function operates mostly like [[SDL_CreateRGBSurface]](), except
 instead of providing pixel color masks, you provide it with a predefined
 format from [[SDL_PixelFormatEnum]].
 
+== Version ==
+
+This function is available since SDL 2.0.5.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

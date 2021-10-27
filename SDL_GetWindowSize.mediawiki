@@ -33,6 +33,10 @@ a platform with high-dpi support (e.g. iOS or macOS). Use
 [[SDL_GL_GetDrawableSize]](), [[SDL_Vulkan_GetDrawableSize]](), or
 [[SDL_GetRendererOutputSize]]() to get the real client area size in pixels.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GL_GetDrawableSize]]

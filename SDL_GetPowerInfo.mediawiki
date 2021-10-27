@@ -37,6 +37,10 @@ until they seem to be stable for a few seconds.
 It's possible a platform can only report battery percentage or time left
 but not both.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

@@ -15,6 +15,10 @@ void SDL_HideWindow(SDL_Window * window);
 |the window to hide
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_ShowWindow]]

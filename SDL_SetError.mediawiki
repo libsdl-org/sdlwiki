@@ -35,6 +35,10 @@ if (error_code) {
 }
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

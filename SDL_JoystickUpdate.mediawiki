@@ -17,6 +17,10 @@ void SDL_JoystickUpdate(void);
 This is called automatically by the event loop if any joystick events are
 enabled.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_JoystickEventState]]

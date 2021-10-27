@@ -25,6 +25,10 @@ You can use this function with atexit() to ensure that it is run when your
 application is shutdown, but it is not wise to do this from a library or
 other dynamically loaded code.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

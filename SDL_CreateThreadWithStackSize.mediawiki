@@ -61,6 +61,10 @@ In SDL 2.1, stack size will be folded into the original
 [[SDL_CreateThread]] function, but for backwards compatibility, this is
 currently a separate function.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 == Related Functions ==
 
 :[[SDL_WaitThread]]

@@ -21,6 +21,10 @@ value will always be zero.
 This function also returns a valid thread ID when called from the main
 thread.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

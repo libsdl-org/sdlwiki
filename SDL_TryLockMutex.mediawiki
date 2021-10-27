@@ -33,6 +33,10 @@ immediately.
 This technique is useful if you need exclusive access to a resource but
 don't want to wait for it, and will return to it to try again later.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

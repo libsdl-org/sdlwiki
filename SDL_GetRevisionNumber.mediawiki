@@ -28,6 +28,10 @@ hashes. This function only ever returns zero now. Don't use it.
 Before SDL 2.0.16, this might have returned an unreliable, but non-zero
 number.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetRevision]]

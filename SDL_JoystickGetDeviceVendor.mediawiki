@@ -25,6 +25,10 @@ index, this function returns zero
 This can be called before any joysticks are opened. If the vendor ID isn't
 available this function returns 0.
 
+== Version ==
+
+This function is available since SDL 2.0.6.
+
 ----
 [[CategoryAPI]]
 

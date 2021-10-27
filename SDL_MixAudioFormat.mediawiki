@@ -50,6 +50,10 @@ data to an output stream in an audio callback. While you can do that,
 [[SDL_MixAudioFormat]]() is really only needed when you're mixing a single
 audio stream with a volume adjustment.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

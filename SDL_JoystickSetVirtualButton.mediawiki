@@ -33,6 +33,10 @@ called indirectly through various other SDL APIs, including, but not
 limited to the following: [[SDL_PollEvent]], [[SDL_PumpEvents]],
 [[SDL_WaitEventTimeout]], [[SDL_WaitEvent]].
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 ----
 [[CategoryAPI]]
 

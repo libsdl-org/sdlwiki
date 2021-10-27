@@ -34,6 +34,10 @@ value is modulated by this alpha value according to the following formula:
 Alpha modulation is not always supported by the renderer; it will return -1
 if alpha modulation is not supported.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetTextureAlphaMod]]

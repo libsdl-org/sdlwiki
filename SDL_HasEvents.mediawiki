@@ -28,6 +28,10 @@ Returns [[SDL_TRUE]] if events with type >= <code>minType</code> and <=
 If you need to check for a single event type, use [[SDL_HasEvent]]()
 instead.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_HasEvents]]

@@ -37,6 +37,10 @@ initialized.
 You can use [[SDL_GetNumVideoDrivers]]() and [[SDL_GetVideoDriver]]() to
 find a specific <code>driver_name</code>.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

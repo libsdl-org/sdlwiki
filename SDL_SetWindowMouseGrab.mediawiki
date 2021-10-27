@@ -16,6 +16,10 @@ void SDL_SetWindowMouseGrab(SDL_Window * window,
 |The window for which the mouse grab mode should be set.
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.16.
+
 == Related Functions ==
 
 :[[SDL_GetWindowMouseGrab]]

@@ -26,6 +26,10 @@ SDL_PauseAudioDevice(1, pause_on);
 
 ...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

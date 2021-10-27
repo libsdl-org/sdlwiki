@@ -39,6 +39,10 @@ blitting, assuming the input rectangles have already been clipped.
 Unless you know what you're doing, you should be using
 [[SDL_BlitSurface]]() instead.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_BlitSurface]]

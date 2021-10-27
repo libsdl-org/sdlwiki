@@ -25,6 +25,10 @@ Use this function to free cursor resources created with
 [[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or
 [[SDL_CreateSystemCursor]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_CreateColorCursor]]

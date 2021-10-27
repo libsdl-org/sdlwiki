@@ -20,6 +20,10 @@ SDL_SensorID SDL_SensorGetDeviceInstanceID(int device_index);
 Returns the sensor instance ID, or -1 if <code>device_index</code> is out
 of range.
 
+== Version ==
+
+This function is available since SDL 2.0.9.
+
 ----
 [[CategoryAPI]], [[CategorySensor]]
 

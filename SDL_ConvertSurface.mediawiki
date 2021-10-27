@@ -34,6 +34,10 @@ This is accomplished by converting the original and storing the result as a
 new surface. The new, optimized surface can then be used as the source for
 future blits, making them faster.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

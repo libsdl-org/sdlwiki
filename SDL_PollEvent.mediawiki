@@ -50,6 +50,10 @@ while (game_is_still_running) {
 }
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetEventFilter]]

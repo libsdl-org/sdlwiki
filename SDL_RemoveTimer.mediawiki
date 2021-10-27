@@ -20,6 +20,10 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id);
 Returns [[SDL_TRUE]] if the timer is removed or [[SDL_FALSE]] if the timer
 wasn't found.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

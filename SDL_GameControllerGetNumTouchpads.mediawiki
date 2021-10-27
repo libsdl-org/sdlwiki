@@ -8,6 +8,10 @@ Get the number of touchpads on a game controller.
 int SDL_GameControllerGetNumTouchpads(SDL_GameController *gamecontroller);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 ----
 [[CategoryAPI]]
 

@@ -26,6 +26,10 @@ In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows)
 the hint <code>[[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT]]</code> needs to
 be configured before using [[SDL_CreateWindowFrom]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_CreateWindow]]

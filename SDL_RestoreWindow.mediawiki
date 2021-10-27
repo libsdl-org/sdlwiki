@@ -15,6 +15,10 @@ void SDL_RestoreWindow(SDL_Window * window);
 |the window to restore
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_MaximizeWindow]]

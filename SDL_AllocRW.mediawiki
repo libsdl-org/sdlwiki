@@ -29,6 +29,10 @@ faults. Since all [[SDL_RWops]] must free themselves when their '''close'''
 method is called, all [[SDL_RWops]] must be allocated through this
 function, so they can all be freed correctly with [[SDL_FreeRW]]().
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

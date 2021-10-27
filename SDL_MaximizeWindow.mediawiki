@@ -15,6 +15,10 @@ void SDL_MaximizeWindow(SDL_Window * window);
 |the window to maximize
 |}
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_MinimizeWindow]]

@@ -28,6 +28,10 @@ It is not valid to use this function on a pointer from anything but
 [[SDL_SIMDAlloc]](). It can't be used on pointers from malloc, realloc,
 [[SDL_malloc]], memalign, new[], etc.
 
+== Version ==
+
+This function is available since SDL 2.0.14.
+
 == Related Functions ==
 
 :[[SDL_SIMDAlignment]]

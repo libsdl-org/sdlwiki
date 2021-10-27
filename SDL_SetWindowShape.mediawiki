@@ -27,6 +27,10 @@ Return 0 on success, [[SDL_INVALID_SHAPE_ARGUMENT]] on an invalid shape
 argument, or [[SDL_NONSHAPEABLE_WINDOW]] if the [[SDL_Window]] given does
 not reference a valid shaped window.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_WindowShapeMode]]

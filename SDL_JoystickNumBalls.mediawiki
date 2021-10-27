@@ -31,6 +31,10 @@ and their state cannot be polled.
 
 Most joysticks do not have trackballs.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_JoystickGetBall]]

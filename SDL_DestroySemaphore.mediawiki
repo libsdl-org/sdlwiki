@@ -20,6 +20,10 @@ void SDL_DestroySemaphore(SDL_sem * sem);
 It is not safe to destroy a semaphore if there are threads currently
 waiting on it.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>

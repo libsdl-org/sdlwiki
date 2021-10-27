@@ -29,6 +29,10 @@ OR'd combination of [[SDL_Keymod]] values.
 This does not change the keyboard state, only the key modifier flags that
 SDL reports.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetModState]]

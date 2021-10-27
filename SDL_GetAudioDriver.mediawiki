@@ -30,6 +30,10 @@ The names of drivers are all simple, low-ASCII identifiers, like "alsa",
 "coreaudio" or "xaudio2". These never have Unicode characters, and are not
 meant to be proper names.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>

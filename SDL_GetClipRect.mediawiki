@@ -24,6 +24,10 @@ void SDL_GetClipRect(SDL_Surface * surface,
 When <code>surface</code> is the destination of a blit, only the area
 within the clip rectangle is drawn into.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_BlitSurface]]

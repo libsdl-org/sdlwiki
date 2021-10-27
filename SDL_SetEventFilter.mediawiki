@@ -48,6 +48,10 @@ Note: Events pushed onto the queue with [[SDL_PushEvent]]() get passed
 through the event filter, but events pushed onto the queue with
 [[SDL_PeepEvents]]() do not.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Code Examples ==
 
 <syntaxhighlight lang='c'>

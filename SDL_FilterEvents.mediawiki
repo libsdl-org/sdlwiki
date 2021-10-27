@@ -25,6 +25,10 @@ See [[SDL_SetEventFilter]]() for more information. Unlike
 [[SDL_SetEventFilter]](), this function does not change the filter
 permanently, it only uses the supplied filter until this function returns.
 
+== Version ==
+
+This function is available since SDL 2.0.0.
+
 == Related Functions ==
 
 :[[SDL_GetEventFilter]]
