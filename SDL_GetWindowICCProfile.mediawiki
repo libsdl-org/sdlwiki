@@ -29,7 +29,8 @@ Data returned should be freed with [[SDL_free]].
 
 == Version ==
 
-This function is available since SDL git HEAD (in development, not in an official release yet).
+This function is available since SDL git HEAD (in development, not in an
+official release yet).
 
 ----
 [[CategoryAPI]]
