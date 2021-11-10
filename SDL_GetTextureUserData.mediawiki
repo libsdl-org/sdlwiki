@@ -22,8 +22,7 @@ not valid.
 
 == Version ==
 
-This function is available since SDL git HEAD (in development, not in an
-official release yet).
+This function is available since SDL 2.0.18.
 
 == Related Functions ==
 
