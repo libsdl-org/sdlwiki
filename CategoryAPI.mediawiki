@@ -371,6 +371,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_HasSSE42]]
 * [[SDL_HasSurfaceRLE]]
 * [[SDL_hid_close]]
+* [[SDL_hid_device_change_count]]
 * [[SDL_hid_enumerate]]
 * [[SDL_hid_exit]]
 * [[SDL_hid_free_enumeration]]
