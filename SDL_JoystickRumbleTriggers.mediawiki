@@ -42,6 +42,10 @@ instead.
 
 This function is available since SDL 2.0.14.
 
+== Related Functions ==
+
+:[[SDL_JoystickHasRumbleTriggers]]
+
 ----
 [[CategoryAPI]]
 
