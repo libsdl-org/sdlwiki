@@ -21,9 +21,16 @@ function should be called at the beginning of execution however, if there
 is a chance of HIDAPI handles being opened by different threads
 simultaneously.
 
+Each call to this function should have a matching call to
+[[SDL_hid_exit]]()
+
 == Version ==
 
 This function is available since SDL 2.0.18.
+
+== Related Functions ==
+
+:[[SDL_hid_exit]]
 
 ----
 [[CategoryAPI]]
