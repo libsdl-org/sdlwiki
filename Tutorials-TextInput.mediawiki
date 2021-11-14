@@ -19,29 +19,23 @@ It would not be feasible to have a keyboard with over ten-thousand keys, would i
 
 == Workflow ==
 {|
-|<10%>Step 
-|<60%>Description 
-|<30%>Example 
+|Step
+|Description 
 |-
 |1 
-|The user activates an input method ([[#IME|IME]]). This is typically done via a hotkey or by selecting an input method in a GUI. 
-|<style="text-align: right">[[attachment:TextInput1.png|{{attachment:TextInput1.png|TextInput1|width="150"}}]] 
+|The user activates an input method ([[#IME|IME]]). This is typically done via a hotkey or by selecting an input method in a GUI.
 |-
 |2 
-|The user begins to type in their selected language, starting a [[#Composition|Composition]]. 
-|<style="text-align: right">[[attachment:TextInput2.png|{{attachment:TextInput2.png|TextInput2|width="150"}}]] 
+|The user begins to type in their selected language, starting a [[#Composition|Composition]].
 |-
 |3 
-|The user continues typing until the composition is satisfactory. 
-|<style="text-align: right">[[attachment:TextInput3.png|{{attachment:TextInput3.png|TextInput3|width="150"}}]] 
+|The user continues typing until the composition is satisfactory.
 |-
 |4 
-|Alternatively, the user may choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]]. The [[#IME|IME]] can also force the [[#CandidateList|Candidate List]] to open. 
-|<style="text-align: right">[[attachment:TextInput4.png|{{attachment:TextInput4.png|TextInput4|width="150"}}]] 
+|Alternatively, the user may choose to open the [[#CandidateList|Candidate List]] and select a [[#Candidate|Candidate]]. The [[#IME|IME]] can also force the [[#CandidateList|Candidate List]] to open.
 |-
 |5 
-|The user commits the [[#Composition|Composition]], terminating it. The [[#IME|IME]] passes the text onto the application. 
-|<style="text-align: right">[[attachment:TextInput5.png|{{attachment:TextInput5.png|TextInput5|width="150"}}]] 
+|The user commits the [[#Composition|Composition]], terminating it. The [[#IME|IME]] passes the text onto the application.
 |}
 
 
