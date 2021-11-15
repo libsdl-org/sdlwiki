@@ -10,7 +10,7 @@ This category contains functions for handling simple log messages with categorie
 <<Include(SDL_LogPriority, , , from="Start Include Default Priority", to="## End Include Default Priority")>>
 
 If you're debugging SDL you might want to call:
- '''SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);'''
+ '''SDL_LogSetAllPriority(SDL_LOG_PRIORITY_VERBOSE);'''
 
 Here's where the messages go on different platforms:
 {|
