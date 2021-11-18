@@ -10,7 +10,7 @@ int SDL_RegisterApp(const char *name, Uint32 style, void *hInst);
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 2.0.2.
 
 ----
 [[CategoryAPI]]

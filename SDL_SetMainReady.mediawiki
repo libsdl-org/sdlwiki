@@ -17,7 +17,7 @@ before including SDL.h.
 
 == Version ==
 
-This function is available since SDL 2.0.2.
+This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
