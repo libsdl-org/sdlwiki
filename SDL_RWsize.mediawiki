@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -7,7 +6,7 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 = SDL_RWsize =
 
-Use this macro to get the size of the data stream in an [[SDL_RWops]].
+Use this function to get the size of the data stream in an [[SDL_RWops]].
 
 == Syntax ==
 
