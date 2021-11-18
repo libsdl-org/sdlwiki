@@ -721,6 +721,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_UnlockMutex]]
 * [[SDL_UnlockSurface]]
 * [[SDL_UnlockTexture]]
+* [[SDL_UnregisterApp]]
 * [[SDL_UpdateNVTexture]]
 * [[SDL_UpdateTexture]]
 * [[SDL_UpdateWindowSurface]]
