@@ -28,7 +28,7 @@ int SDL_ConvertPixels(int width, int height,
 |a pointer to the source pixels
 |-
 |'''src_pitch'''
-|the pitch of the block to copy, in bytes
+|the pitch of the source pixels, in bytes
 |-
 |'''dst_format'''
 |an [[SDL_PixelFormatEnum]] value of the <code>dst</code> pixels format
