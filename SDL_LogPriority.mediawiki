@@ -1,4 +1,3 @@
-
 = SDL_LogPriority =
 An enumeration of the predefined log priorities.
 
@@ -24,7 +23,7 @@ An enumeration of the predefined log priorities.
 |SDL_LOG_PRIORITY_CRITICAL
 |
 |-
-|<rowstyle="color: #808080;">SDL_NUM_LOG_PRIORITIES
+|<row style="color: #808080;">SDL_NUM_LOG_PRIORITIES
 |(internal use)
 |}
 <!-- #End Include here. -->
