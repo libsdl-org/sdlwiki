@@ -1,4 +1,3 @@
-
 = SDL_LOG_CATEGORY =
 An enumeration of the predefined log categories.
 
@@ -32,7 +31,7 @@ An enumeration of the predefined log categories.
 |SDL_LOG_CATEGORY_TEST
 |test log
 |-
-|<rowstyle="color: #808080;">SDL_LOG_CATEGORY_RESERVED#
+|<row style="color: #808080;">SDL_LOG_CATEGORY_RESERVED
 |# = 1-10; reserved for future SDL library use
 |-
 |SDL_LOG_CATEGORY_CUSTOM
