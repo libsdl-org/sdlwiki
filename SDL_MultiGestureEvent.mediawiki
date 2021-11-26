@@ -23,7 +23,7 @@ A structure that contains multiple finger gesture event information.
 |-
 |float
 |'''dTheta'''
-|the amount that the fingers rotated during this motion
+|the amount that the fingers rotated during this motion, in radians
 |-
 |float
 |'''dDist'''
