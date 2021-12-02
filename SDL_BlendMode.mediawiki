@@ -27,7 +27,7 @@ Note that additional values may be obtained from [[SDL_ComposeCustomBlendMode]](
 |dstRGB = (srcRGB * srcA) + dstRGB
 |-
 | 
-|dstA = dstA
+|dstA = srcA
 |-
 |SDL_BLENDMODE_MOD
 |color modulate
