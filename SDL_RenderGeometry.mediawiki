@@ -38,6 +38,68 @@ Return 0 on success, or -1 if the operation is not supported
 
 This function is available since SDL 2.0.18.
 
+== Code Examples ==
+<syntaxhighlight lang='c'>
+#include <SDL.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+SDL_Vertex v[3];
+const static SDL_Color red = {.r = 255, .g = 0, .b = 0, .a = 255};
+const static SDL_Color green = {.r = 0, .g = 255, .b = 0, .a = 255};
+const static SDL_Color blue = {.r = 0, .g = 0, .b = 255, .a = 255};
+
+int main(int argc, char *argv[]) {
+  if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+    printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
+    return -1;
+  }
+
+  SDL_Window *window =
+      SDL_CreateWindow("Triangle Example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, 0);
+  SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+ 
+  // center
+  v[0].position.x = 400;
+  v[0].position.y = 150;
+  v[0].color = red;
+
+  // left
+  v[1].position.x = 200;
+  v[1].position.y = 450;
+  v[1].color = green;
+
+  // right
+  v[2].position.x = 600;
+  v[2].position.y = 450;
+  v[2].color = blue;
+  
+
+  bool quit = false;
+  while (!quit) {
+    SDL_Event ev;
+    while (SDL_PollEvent(&ev) != 0) {
+      switch (ev.type) {
+        case SDL_QUIT:
+          quit = false;
+          break;
+      }
+    }
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderClear(renderer);
+
+    SDL_RenderGeometry(renderer, NULL, v, 3, NULL, 0);
+
+    SDL_RenderPresent(renderer);
+  }
+
+  SDL_DestroyRenderer(renderer);
+  SDL_DestroyWindow(window);
+  SDL_Quit();
+  return 0;
+}
+</syntaxhighlight>
+
 == Related Functions ==
 
 :[[SDL_Vertex]]
