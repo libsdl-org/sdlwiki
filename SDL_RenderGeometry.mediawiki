@@ -38,6 +38,62 @@ Return 0 on success, or -1 if the operation is not supported
 
 This function is available since SDL 2.0.18.
 
+== Code Examples ==
+<syntaxhighlight lang='c'>
+#include <SDL.h>
+
+int main(int argc, char *argv[]) 
+{
+  if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+    printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
+    return -1;
+  }
+
+  SDL_Window *window = SDL_CreateWindow("Triangle Example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, 0);
+  SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERERER_ACCELERATED);
+
+  SDL_Vertex v[3];
+
+  // center
+  vert[0].position.x = 400;
+  vert[0].position.y = 150;
+  vert[0].color = {255, 0, 0, 255};
+
+  // left
+  vert[1].position.x = 200;
+  vert[1].position.y = 450;
+  vert[1].color = {0, 0, 255, 255};
+
+  // right 
+  vert[2].position.x = 600;
+  vert[2].position.y = 450;
+  vert[2].color = {0, 255, 0, 255};
+ 
+  bool quit = false;
+  while (!quit) {
+   SDL_Event ev;
+   while (SDL_PollEvent(&ev) != 0) {
+      switch(ev.type) {
+        case SDL_QUIT: 
+        quit = false;
+        break;
+      }
+    }
+    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+    SDL_RenderClear(renderer);
+
+    SDL_RenderGeometry(renderer, NULL, vert, 3, NULL, 0);
+
+    SDL_RenderPresent(renderer);
+  }
+  
+  SDL_DestroyRenderer(renderer);
+  SDL_DestroyWindow(window);
+  SDL_Quit();
+  return 0;
+}
+</syntaxhighlight>
+
 == Related Functions ==
 
 :[[SDL_Vertex]]
