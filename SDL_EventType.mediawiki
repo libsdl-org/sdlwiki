@@ -1,4 +1,3 @@
-
 = SDL_EventType =
 An enumeration of the types of events that can be delivered.
 
@@ -213,7 +212,7 @@ An SDL_QUIT event is generated when the user clicks on the close button of the l
 
 SDL_QUIT is not limited to window closing. On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event, regardless of what windows exist at the time. The application is still responsible for terminating itself properly, however. Applications that completely ignore Command-Q will fail Mac App Store certification.
 
-On POSIX systems, [SDL_Init]]() installs [[http://en.wikipedia.org/wiki/Unix_signal signal handlers] for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
+On POSIX systems, [[SDL_Init]]() installs [http://en.wikipedia.org/wiki/Unix_signal signal handlers] for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
 
 === Android, iOS and WinRT Events ===
 What we currently label as "Android, iOS and WinRT events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent]]() loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
