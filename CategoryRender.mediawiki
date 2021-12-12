@@ -72,6 +72,8 @@ This API is not designed to be used from multiple threads, see [https://github.c
 * [[SDL_RenderFillRectF]]
 * [[SDL_RenderFillRects]]
 * [[SDL_RenderFillRectsF]]
+* [[SDL_RenderGeometry]]
+* [[SDL_RenderGeometryRaw]]
 * [[SDL_RenderGetClipRect]]
 * [[SDL_RenderGetIntegerScale]]
 * [[SDL_RenderGetLogicalSize]]
