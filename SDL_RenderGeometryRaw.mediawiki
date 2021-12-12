@@ -60,6 +60,6 @@ Return 0 on success, or -1 if the operation is not supported
 This function is available since SDL 2.0.18.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryRender]]
 
 
