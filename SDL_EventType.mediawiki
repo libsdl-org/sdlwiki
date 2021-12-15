@@ -1,21 +1,20 @@
-
 = SDL_EventType =
 An enumeration of the types of events that can be delivered.
 
 
 == Values ==
 {|
-|<style="color: #808080;">SDL_FIRSTEVENT
-|<style="color: #808080;">do not remove (unused)
+|<span style="color: #808080;">SDL_FIRSTEVENT</span>
+|<span style="color: #808080;">do not remove (unused)</span>
 |-
 |
-|<bgcolor="#EDEDED">''Application events''
+|<span style="background-color:#EDEDED;">''Application events''</span>
 |-
 |SDL_QUIT
 |user-requested quit; see [[#Remarks|Remarks]] for details
 |-
 |
-|<bgcolor="#EDEDED">''Android, iOS and WinRT events; see [[#Android, iOS and WinRT Events|Remarks]] for details''
+|<span style="background-color:#EDEDED;">''Android, iOS and WinRT events; see [[#Android, iOS and WinRT Events|Remarks]] for details''</span>
 |-
 |SDL_APP_TERMINATING
 |OS is terminating the application
@@ -36,7 +35,7 @@ An enumeration of the types of events that can be delivered.
 |application entered foreground
 |-
 |
-|<bgcolor="#EDEDED">''Window events''
+|<span style="background-color:#EDEDED;">''Window events''</span>
 |-
 |[[SDL_WindowEvent|SDL_WINDOWEVENT]]
 |window state change
@@ -45,7 +44,7 @@ An enumeration of the types of events that can be delivered.
 |system specific event
 |-
 |
-|<bgcolor="#EDEDED">''Keyboard events''
+|<span style="background-color:#EDEDED;">''Keyboard events''</span>
 |-
 |[[SDL_KeyboardEvent|SDL_KEYDOWN]]
 |key pressed
@@ -63,7 +62,7 @@ An enumeration of the types of events that can be delivered.
 |keymap changed due to a system event such as an input language or keyboard layout change (>= SDL 2.0.4)
 |-
 |
-|<bgcolor="#EDEDED">''Mouse events''
+|<span style="background-color:#EDEDED;">''Mouse events''</span>
 |-
 |[[SDL_MouseMotionEvent|SDL_MOUSEMOTION]]
 |mouse moved
@@ -78,7 +77,7 @@ An enumeration of the types of events that can be delivered.
 |mouse wheel motion
 |-
 |
-|<bgcolor="#EDEDED">''Joystick events''
+|<span style="background-color:#EDEDED;">''Joystick events''</span>
 |-
 |[[SDL_JoyAxisEvent|SDL_JOYAXISMOTION]]
 |joystick axis motion
@@ -102,7 +101,7 @@ An enumeration of the types of events that can be delivered.
 |joystick disconnected
 |-
 |
-|<bgcolor="#EDEDED">''Controller events''
+|<span style="background-color:#EDEDED;">''Controller events''</span>
 |-
 |[[SDL_ControllerAxisEvent|SDL_CONTROLLERAXISMOTION]]
 |controller axis motion
@@ -123,7 +122,7 @@ An enumeration of the types of events that can be delivered.
 |controller mapping updated
 |-
 |
-|<bgcolor="#EDEDED">''Touch events''
+|<span style="background-color:#EDEDED;">''Touch events''</span>
 |-
 |[[SDL_TouchFingerEvent|SDL_FINGERDOWN]]
 |user has touched input device
@@ -135,7 +134,7 @@ An enumeration of the types of events that can be delivered.
 |user is dragging finger on input device
 |-
 |
-|<bgcolor="#EDEDED">''Gesture events''
+|<span style="background-color:#EDEDED;">''Gesture events''</span>
 |-
 |[[SDL_DollarGestureEvent|SDL_DOLLARGESTURE]]
 |
@@ -147,13 +146,13 @@ An enumeration of the types of events that can be delivered.
 |
 |-
 |
-|<bgcolor="#EDEDED">''Clipboard events''
+|<span style="background-color:#EDEDED;">''Clipboard events''</span>
 |-
 |SDL_CLIPBOARDUPDATE
 |the clipboard changed
 |-
 |
-|<bgcolor="#EDEDED">''Drag and drop events''
+|<span style="background-color:#EDEDED;">''Drag and drop events''</span>
 |-
 |[[SDL_DropEvent|SDL_DROPFILE]]
 |the system requests a file open
@@ -168,7 +167,7 @@ An enumeration of the types of events that can be delivered.
 |current set of drops is now complete (>= SDL 2.0.5)
 |-
 |
-|<bgcolor="#EDEDED">''Audio hotplug events''
+|<span style="background-color:#EDEDED;">''Audio hotplug events''</span>
 |-
 |[[SDL_AudioDeviceEvent|SDL_AUDIODEVICEADDED]]
 |a new audio device is available (>= SDL 2.0.4)
@@ -177,7 +176,7 @@ An enumeration of the types of events that can be delivered.
 |an audio device has been removed (>= SDL 2.0.4)
 |-
 |
-|<bgcolor="#EDEDED">''Render events''
+|<span style="background-color:#EDEDED;">''Render events''</span>
 |-
 |SDL_RENDER_TARGETS_RESET
 |the render targets have been reset and their contents need to be updated (>= SDL 2.0.2)
@@ -186,7 +185,7 @@ An enumeration of the types of events that can be delivered.
 |the device has been reset and all textures need to be recreated (>= SDL 2.0.4)
 |-
 |
-|<bgcolor="#EDEDED">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''
+|<span style="background-color:#EDEDED;">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''</span>
 |-
 |SDL_USEREVENT
 |a user-specified event
