@@ -57,8 +57,8 @@ An enumeration of key modifier masks.
 |KMOD_GUI
 |(KMOD_LGUI|KMOD_RGUI)
 |-
-|<style="color: #808080;">KMOD_RESERVED
-|<style="color: #808080;">reserved for future use
+|<span style="color: Gray;">KMOD_RESERVED</span>
+|<span style="color: Gray;">reserved for future use</span>
 |}
 
 == Remarks ==
