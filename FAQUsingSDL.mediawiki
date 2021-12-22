@@ -132,6 +132,11 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |
 | yes
 |-
+|disk                        
+|Write audio output to sdlaudio.raw file
+| yes 
+| yes 
+|-
 |dsp                        
 |Use the OSS API by opening /dev/dsp
 | yes 
