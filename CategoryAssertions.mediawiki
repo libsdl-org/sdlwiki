@@ -1,4 +1,3 @@
-
 = Assertions =
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_assert.h SDL_assert.h]
@@ -15,32 +14,38 @@ SDL_ASSERT_LEVEL can be defined in your project.  If not otherwise set, SDL_ASSE
 
 The following table describes each SDL_ASSERT_LEVEL setting and the corresponding impact on the three SDL_assert functions:
 
-{|
-|<rowbgcolor="#EDEDED">'''SDL_ASSERT_LEVEL'''
-|'''Description'''
-|'''Function'''
-|'''Function Status'''
-|-
-|<:>'''0'''
-|all assertions disabled
-|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|disabled<br/>disabled<br/>disabled
-|-
-|<:>'''1'''
-|for release (default)
-|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|disabled<br/>'''enabled'''<br/>disabled
-|-
-|<:>'''2'''
-|for debugging (default)
-|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|'''enabled'''<br/>'''enabled'''<br/>disabled
-|-
-|<:>'''3'''
-|stringent for detailed checking
-|SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid
-|'''enabled'''<br/>'''enabled'''<br/>'''enabled'''
-|}
+<table>
+<tr style="background-color:#EDEDED;">
+<td>'''SDL_ASSERT_LEVEL'''</td>
+<td>'''Description'''</td>
+<td>'''Function'''</td>
+<td>'''Function Status'''</td>
+<tr>
+</tr>
+<td><:>'''0'''</td>
+<td>all assertions disabled</td>
+<td>SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid</td>
+<td>disabled<br/>disabled<br/>disabled</td>
+<tr>
+</tr>
+<td><:>'''1'''</td>
+<td>for release (default)</td>
+<td>SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid</td>
+<td>disabled<br/>'''enabled'''<br/>disabled</td>
+<tr>
+</tr>
+<td><:>'''2'''</td>
+<td>for debugging (default)</td>
+<td>SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid</td>
+<td>'''enabled'''<br/>'''enabled'''<br/>disabled</td>
+<tr>
+</tr>
+<td><:>'''3'''</td>
+<td>stringent for detailed checking</td>
+<td>SDL_assert<br/>SDL_assert_release<br/>SDL_assert_paranoid</td>
+<td>'''enabled'''<br/>'''enabled'''<br/>'''enabled'''</td>
+</tr>
+</table>
 
 
 == Enumerations ==
