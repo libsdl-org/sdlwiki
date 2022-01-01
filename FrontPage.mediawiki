@@ -28,6 +28,8 @@ Use the links under the '''Navigation Links''' heading in the left-hand menu to 
 *: Want to learn about a feature in SDL you haven't used before?  Here's a great place to get started!
 * [[Articles]]
 *: A sampling of the articles that have been written about SDL.
+* [[Libraries]]
+*: Additional libraries to extend SDL functionality.
 * [[Books]]
 *: Looking for more information than you can get online?  Check out the books listed here.
 * [[FAQs]]
