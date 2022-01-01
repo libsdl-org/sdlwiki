@@ -1,6 +1,7 @@
 = SDL_RenderCopy =
 
 Copy a portion of the texture to the current rendering target.
+Hipiyo
 
 == Syntax ==
 
