@@ -174,6 +174,16 @@ SDL apps work on the Ouya! Just build like a standard Android application and si
 OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
 
 
+=== RISC OS ===
+
+RISC OS is supported.  You can build for this platform "the unix way", or by using CMake.
+
+
+=== Sony PlayStation Portable ===
+
+The PlayStation Portable is supported using a homebrew toolkit. You can build for this platform using CMake, or by running "make -f Makefile.psp" from the source directory.
+
+
 === Sony PlayStation Vita ===
 
 The PlayStation Vita is supported using a homebrew toolkit. You can build for this platform using CMake.
@@ -194,10 +204,6 @@ This worked at some point using a homebrew toolkit, but we removed it due to bit
 === Pandora and GP2X Wiz ===
 
 This worked at some point.
-
-=== Sony PSP ===
-
-This worked at some point using a homebrew toolkit, and while it is currently still in the source tree, no one is working on it. 1.2 did not support the PSP either. We will likely remove this from SDL2 sooner than later, unless a maintainer steps up to improve support.
 
 === BeOS ===
 
