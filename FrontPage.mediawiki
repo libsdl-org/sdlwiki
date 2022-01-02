@@ -34,7 +34,7 @@ Use the links under the '''Navigation Links''' heading in the left-hand menu to 
 *: Looking for more information than you can get online?  Check out the books listed here.
 * [[FAQs]]
 *: A few of the most commonly asked questions about using SDL are answered here.
-* [http://forums.libsdl.org/ Forums]
+* [https://discourse.libsdl.org/ Forums]
 *: A great place to keep up with the latest news, help other users out, and ask questions.
 * [[Contributing]]
 *: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
