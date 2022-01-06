@@ -36,56 +36,55 @@ This function is available since SDL 2.0.0.
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>
-#include "stdlib.h"
+#include <stdlib.h>
 #include "SDL.h"
 
 /* These functions should not be used except from pointers in an SDL_RWops */
 static Sint64 mysizefunc(SDL_RWops * context)
 {
-  return -1;
+    return -1;
 }
 
 static Sint64 myseekfunc(SDL_RWops *context, Sint64 offset, int whence)
 {
-  return SDL_SetError("Can't seek in this kind of SDL_RWops");
+    return SDL_SetError("Can't seek in this kind of SDL_RWops");
 }
 
 static size_t myreadfunc(SDL_RWops *context, void *ptr, size_t size, size_t maxnum)
 {
-  SDL_memset(ptr,0,size*maxnum);
-  return maxnum;
+    SDL_memset(ptr,0,size*maxnum);
+    return maxnum;
 }
 
 static size_t mywritefunc(SDL_RWops *context, const void *ptr, size_t size, size_t num)
 {
-  return num;
+    return num;
 }
 
 static int myclosefunc(SDL_RWops *context)
 {
-  if(context->type != 0xdeadbeef)
-  {
-    return SDL_SetError("Wrong kind of SDL_RWops for myclosefunc()");
-  }
+    if(context->type != 0xdeadbeef) {
+        return SDL_SetError("Wrong kind of SDL_RWops for myclosefunc()");
+    }
 
-  free(context->hidden.unknown.data1);
-  SDL_FreeRW(context);
-  return 0;
+    free(context->hidden.unknown.data1);
+    SDL_FreeRW(context);
+    return 0;
 }
 
-SDL_RWops *MyCustomRWop()
+SDL_RWops *MyCustomRWop(void)
 {
-  SDL_RWops *c=SDL_AllocRW();
-  if(c==NULL) return NULL;
+    SDL_RWops *c=SDL_AllocRW();
+    if(c==NULL) return NULL;
 
-  c->size =mysizefunc;
-  c->seek =myseekfunc;
-  c->read =myreadfunc;
-  c->write=mywritefunc;
-  c->close=myclosefunc;
-  c->type =0xdeadbeef;
-  c->hidden.unknown.data1=malloc(256);
-  return c;
+    c->size = mysizefunc;
+    c->seek = myseekfunc;
+    c->read = myreadfunc;
+    c->write = mywritefunc;
+    c->close = myclosefunc;
+    c->type = 0xdeadbeef;
+    c->hidden.unknown.data1 = SDL_malloc(256);
+    return c;
 }
 </syntaxhighlight>
 
