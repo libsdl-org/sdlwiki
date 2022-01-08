@@ -31,6 +31,9 @@ Yes, [https://discordapp.com/invite/F6mPUgc go here]!
 == Is there an official logo? ==
 Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
 
+== Is this wiki available offline? ==
+Yes, you can click the [https://wiki.libsdl.org/static_files/offline/sdlwiki.zip "offline html"] link at the bottom of any page to get a zipfile archive of the entire wiki in HTML format. If you like Unix manpages, we generate manpages from each API function's wiki page. The latest archive, as a zipfile, is always [https://wiki.libsdl.org/static_files/offline/sdlmanpages.zip here].
+
 <!--
 == I have a project that uses SDL, how do I add it to the SDL website? ==
 If you have a project that you feel is ready for the general public, you can add it to the SDL website:
