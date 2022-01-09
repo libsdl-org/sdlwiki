@@ -99,8 +99,13 @@ int main(int argc, char *argv[])
 }
 </syntaxhighlight>
 
-== Related Functions ==
 
+== Version ==
+
+This function is available since SDL 2.0.18.
+
+== Related Functions ==
+:[[SDL_RenderGeometryRaw]]
 :[[SDL_Vertex]]
 
 ----
