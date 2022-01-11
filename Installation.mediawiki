@@ -169,7 +169,7 @@ QNX is supported. Our buildbot compiles for QNX on ARM, ARM64, x86, and x86_64 o
 SDL apps work on the Ouya! Just build like a standard Android application and side-load it on the device to test.
 
 
-=== IBM OS/2 and eComStation and ArcaOS ===
+=== IBM OS/2, eComStation and ArcaOS ===
 
 OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
 
@@ -207,7 +207,7 @@ This worked at some point.
 
 === BeOS ===
 
-Support was removed in SDL 2.0.2. SDL 1.2 still supports BeOS.
+Support was removed in SDL 2.0.2. SDL 1.2 still supports BeOS. Haiku, a modern open-source OS that can run BeOS binaries, is still supported.
 
 === Mac OS 9 ("Mac OS Classic") ===
 
