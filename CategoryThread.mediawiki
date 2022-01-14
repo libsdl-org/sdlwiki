@@ -10,6 +10,8 @@ This category contains functions for system independent thread management routin
 == Enumerations ==
 <<FullSearchCached(category:CategoryEnum CategoryThread -title:SGEnumerations)>>
 
+* [[SDL_ThreadPriority]]
+
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryThread -title:SGStructures)>> -->
