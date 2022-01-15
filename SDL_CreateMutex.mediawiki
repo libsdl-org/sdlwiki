@@ -30,12 +30,12 @@ This function is available since SDL 2.0.0.
 == Code Examples ==
 
 <!-- # Begin Mutex Example -->
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_mutex *mutex;
 
 mutex = SDL_CreateMutex();
 if (!mutex) {
-  fprintf(stderr, "Couldn't create mutex\n");
+  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create mutex\n");
   return;
 }
 
@@ -43,7 +43,7 @@ if (SDL_LockMutex(mutex) == 0) {
   /* Do stuff while mutex is locked */
   SDL_UnlockMutex(mutex);
 } else {
-  fprintf(stderr, "Couldn't lock mutex\n");
+  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't lock mutex\n");
 }
 
 SDL_DestroyMutex(mutex);
