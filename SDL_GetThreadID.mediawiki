@@ -32,8 +32,7 @@ This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
-#include <stdio.h>
+<syntaxhighlight lang='c'>
 #include "SDL.h"
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
@@ -42,7 +41,7 @@ int TestThread(void *ptr)
     int cnt;
 
     for (cnt = 0; cnt < 10; ++cnt) {
-        printf("\nThread counter: %d", cnt);
+        SDL_Log("\nThread counter: %d", cnt);
         SDL_Delay(50);
     }
 
@@ -55,13 +54,13 @@ int main(int argc, char *argv[])
     SDL_threadID threadID;
     int          threadReturnValue;
 
-    printf("\nSimple SDL_CreateThread test:");
+    SDL_Log("\nSimple SDL_CreateThread test:");
 
     /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
-        printf("\nSDL_CreateThread failed: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "\nSDL_CreateThread failed: %s\n", SDL_GetError());
         exit(-1);
     }
 
@@ -70,7 +69,7 @@ int main(int argc, char *argv[])
 
     /* Wait for the thread to complete and get the return code */
     SDL_WaitThread(thread, &threadReturnValue);
-    printf("\nThread returned value: %d", threadReturnValue);
+    SDL_Log("\nThread returned value: %d", threadReturnValue);
 
     return 0;
 }
