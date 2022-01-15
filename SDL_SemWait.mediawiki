@@ -36,7 +36,41 @@ This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
-<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
+<!-- # Begin Semaphore Example -->
+<syntaxhighlight lang='c++'>
+#define NB_WAITER 10
+
+SDL_sem *sem;
+
+// Increments the semaphore every 2s
+int poster_thread() {
+  for (int i = 0; i < NB_WAITER; i++) {
+    SDL_SemPost(sem);
+    SDL_Delay(2 * 1000);
+  }
+  return 0;
+}
+
+int waiter_thread() {
+  int status;
+
+  status = SDL_SemWait(sem);
+  
+  if (status == 0) {
+    printf("Semaphore was decremented.\n");
+  } else {
+    printf("An error has occured while waiting: %s\n", SDL_GetError());
+  }
+  return 0;
+}
+
+int main() {
+  sem = SDL_CreateSemaphore(0);
+  create_and_wait_threads(); // 1 poster, 10 waiters
+  SDL_DestroySemaphore(sem);
+}
+</syntaxhighlight>
+<!-- # End Semaphore Example -->
 
 == Related Functions ==
 
