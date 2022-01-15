@@ -35,7 +35,29 @@ This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
-<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+<!-- # Begin Mutex Example -->
+<syntaxhighlight lang='c'>
+int status;
+SDL_mutex *mutex;
+
+mutex = SDL_CreateMutex();
+if (!mutex) {
+  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create mutex\n");
+  return;
+}
+
+status = SDL_LockMutex(mutex);
+
+if (status == 0) {
+  SDL_Log("Locked mutex\n");
+  SDL_UnlockMutex(mutex);
+} else {
+  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't lock mutex\n");
+}
+
+SDL_DestroyMutex(mutex);
+</syntaxhighlight>
+<!-- # End Mutex Example -->
 
 ----
 [[CategoryAPI]], [[CategoryMutex]]
