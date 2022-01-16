@@ -30,15 +30,15 @@ This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_version compiled;
 SDL_version linked;
 
 SDL_VERSION(&compiled);
 SDL_GetVersion(&linked);
-printf("We compiled against SDL version %d.%d.%d ...\n",
+SDL_Log("We compiled against SDL version %u.%u.%u ...\n",
        compiled.major, compiled.minor, compiled.patch);
-printf("But we are linking against SDL version %d.%d.%d.\n",
+SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
        linked.major, linked.minor, linked.patch);
 </syntaxhighlight>
 
