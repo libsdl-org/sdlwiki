@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -14,7 +13,7 @@ Get the SDL joystick layer binding for a controller axis mapping.
 
 <syntaxhighlight lang='c'>
 extern DECLSPEC SDL_GameControllerButtonBind SDLCALL
-SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
+SDL_GameControllerGetBindForAxis(SDL_GameController *Generic  USB Joystick,
          SDL_GameControllerAxis axis);
 </syntaxhighlight>
 
