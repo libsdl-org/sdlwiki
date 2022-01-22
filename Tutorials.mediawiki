@@ -28,6 +28,9 @@ There are a number of SDL tutorials available from different sources.
 * [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2%2e Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
 : An example of a project upgrade from SDL 1.2 to SDL 2.0
 
+* [https://www.youtube.com/playlist?list=PL2RPjWnJduNmXHRYwdtublIPdlqocBoLS C++/SDL2 RPG Physics Based 2D Platformer for Beginners Tutorial]
+: A playlist of beginner SDL2 tutorials, focusing on the basics for setting up a RPG 2D platformer. Also features tutorials on how to set up SDL2 on Windows and Linux.
+
 == Setup ==
 * [https://www.youtube.com/watch?v=wWGtuc5uqF4 How to setup Codeblocks mingw SDL2.0]
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler
@@ -35,6 +38,8 @@ There are a number of SDL tutorials available from different sources.
 * [https://www.youtube.com/watch?v=UwpZOwT9nVc How to setup Codeblocks mingw, SDL2.0 Opengl 3+ and GLEW simple project included.]
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler with OpenGL 3.0+ & compiling GLEW libraries
 
+* [https://www.youtube.com/watch?v=JXdqh0INIBI How To Get Started with SDL2 OpenGL C++ Programming on Linux]
+: A video showing how to get started with SDL2 and OpenGL on Linux, using Visual Studio Code and Cmake. Some prior knowledge of C++ and Linux is required.
 == Android ==
 
 * [http://www.dinomage.com/2013/01/howto-sdl-on-android/ HowTo: SDL on Android]
