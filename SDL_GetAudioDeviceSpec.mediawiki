@@ -35,9 +35,7 @@ subsystem. The values returned by this function reflect the latest call to
 hardware.
 
 <code>spec</code> will be filled with the sample rate, sample format, and
-channel count. All other values in the structure are filled with 0. When
-the supported struct members are 0, SDL was unable to get the property from
-the backend.
+channel count.
 
 == Version ==
 
