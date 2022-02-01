@@ -57,10 +57,6 @@ for (i = 0; i < display_mode_count; ++i) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-'''format''' may be one of the following:
-<<Include(SDL_PixelFormatEnum, , , from="=== Pixel Format Values ===", to="== Code Examples ==")>>
-
 == Related Functions ==
 :[[SDL_GetClosestDisplayMode]]
 :[[SDL_GetCurrentDisplayMode]]
