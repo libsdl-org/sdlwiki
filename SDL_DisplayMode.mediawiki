@@ -7,7 +7,7 @@ A structure that contains the description of a display mode.
 {|
 |Uint32
 |'''format'''
-|one of the [[SDL_PixelFormatEnum]] values; see [[#Remarks|Remarks]] for details
+|one of the [[SDL_PixelFormatEnum]] values
 |-
 |int
 |'''w'''
