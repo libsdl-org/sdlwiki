@@ -1,0 +1,28 @@
+= SDL_AndroidSendMessage =
+
+Send a user command to SDLActivity override "boolean onUnhandledMessage(Message msg)" to handle the message 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_AndroidSendMessage(Uint32 command, int param);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''command'''
+|user command that must be greater or equal to 0x8000
+|-
+|'''param'''
+|user parameter
+|}
+
+== Version ==
+
+This function is available since SDL 2.0.22.
+
+----
+[[CategoryAPI]]
+
+
