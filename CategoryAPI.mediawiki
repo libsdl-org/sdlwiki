@@ -35,6 +35,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_AndroidGetInternalStoragePath]]
 * [[SDL_AndroidGetJNIEnv]]
 * [[SDL_AndroidRequestPermission]]
+* [[SDL_AndroidSendMessage]]
 * [[SDL_AndroidShowToast]]
 * [[SDL_assert]]
 * [[SDL_assert_paranoid]]
