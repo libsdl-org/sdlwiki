@@ -181,7 +181,7 @@ RISC OS is supported.  You can build for this platform "the unix way", or by usi
 
 === Sony PlayStation Portable ===
 
-The PlayStation Portable is supported using a homebrew toolkit. You can build for this platform using CMake, or by running "make -f Makefile.psp" from the source directory.
+The PlayStation Portable is supported using a homebrew toolkit. You can build for this platform using CMake.
 
 
 === Sony PlayStation Vita ===
