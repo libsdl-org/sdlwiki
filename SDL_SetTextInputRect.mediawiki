@@ -1,3 +1,4 @@
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -20,8 +21,9 @@ void SDL_SetTextInputRect(SDL_Rect *rect);
 
 == Remarks ==
 
-Note: If you want use system native IME window, try to set hint '''SDL_HINT_IME_SHOW_UI''' to '''1''',
-otherwise this function won't give you any feedback.
+Note: If you want use system native IME window, try to set hint
+'''[[SDL_HINT_IME_SHOW_UI]]''' to '''1''', otherwise this function won't
+give you any feedback.
 
 == Version ==
 
