@@ -32,7 +32,7 @@ SDL_TICKS_PASSED(A, B)
 
 
 == Return Value ==
-Returns return "true" if A has passed B.
+Returns "true" if A has passed B.
 
 
 == Code Examples ==
