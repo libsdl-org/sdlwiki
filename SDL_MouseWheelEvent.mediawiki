@@ -32,6 +32,14 @@ A structure that contains mouse wheel event information.
 |Uint32
 |'''direction'''
 |SDL_MOUSEWHEEL_NORMAL or SDL_MOUSEWHEEL_FLIPPED; see [[#Remarks|Remarks]] for details (>= SDL 2.0.4)
+|-
+|float
+|'''preciseX'''
+|the amount scrolled horizontally, positive to the right and negative to the left, with float precision (added in 2.0.18)
+|-
+|float
+|'''preciseY'''
+|the amount scrolled vertically, positive away from the user and negative toward the user, with float precision (added in 2.0.18)
 |}
 
 == Code Examples ==
