@@ -16,7 +16,7 @@ A hint that specifies whether the screensaver is enabled.
 == Values ==
 {|
 |0
-|disable screensaver
+|disable screensaver (default)
 |-
 |1
 |enable screensaver
