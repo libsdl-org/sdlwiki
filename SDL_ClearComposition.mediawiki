@@ -1,0 +1,23 @@
+= SDL_ClearComposition =
+
+Dismiss the composition window/IME without disabling the subsystem.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDL_ClearComposition(void);
+</syntaxhighlight>
+
+== Version ==
+
+This function is available since SDL 2.0.22.
+
+== Related Functions ==
+
+:[[SDL_StartTextInput]]
+:[[SDL_StopTextInput]]
+
+----
+[[CategoryAPI]]
+
+
