@@ -1,4 +1,3 @@
-
 = work in progress =
 
 This page is leftover from the old wiki and needs to be rewritten and reformatted for the new wiki. Among other things: the anti-spam thing isn't true anymore. Just click "edit" on any page and we authenticate you automatically through GitHub now.
@@ -43,15 +42,34 @@ To help you with this we have created a series of resources:
 
 : '''We recommend that you begin with [[SGWikiBasics|Wiki Basics]] and then dive into the topic-specific guides that interest you before you begin to edit.'''  Please check back periodically for reminders and updates!
 
- ||<bgcolor="#EDEDED">''Style Guide''||<bgcolor="#EDEDED">''Topics Covered''||
- ||[[SGWikiBasics|Wiki Basics]]||Starting to edit<br/>Saving changes<br/>Style Guide basics<br/>Quick reference for wiki markup used in this wiki<br/>Miscellaneous notes||
- ||[[SGCodeExamples|Code Examples]]||Adding Code Examples to any [[SGWikiBasics#api|API page]]||
- ||[[SGRemarks|Remarks]]||Adding Remarks to any [[SGWikiBasics#api|API page]]||
- ||[[SGTutorials|Tutorials]]||Adding an existing tutorial to the Tutorials page<br/>Creating a new tutorial within the wiki||
- ||[[SGFunctions|Function Pages]]||Editing Function pages<br/>Editing Macro pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
- ||[[SGStructures|Structure Pages]]||Editing Structure pages<br/>Editing Union pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
- ||[[SGEnumerations|Enumeration Pages]]||Editing Enumeration pages<br/>Editing Hint pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~||
- ||[[SGNewPages|New Pages]]||Creating new pages in the wiki<br/>~-This is supplemental to the other Style Guides-~||
+{|
+|'''Style Guide'''
+|'''Topics Covered'''
+|-
+|[[SGWikiBasics|Wiki Basics]]
+|Starting to edit<br/>Saving changes<br/>Style Guide basics<br/>Quick reference for wiki markup used in this wiki<br/>Miscellaneous notes
+|-
+|[[SGCodeExamples|Code Examples]]
+|Adding Code Examples to any [[SGWikiBasics#api|API page]]
+|-
+|[[SGRemarks|Remarks]]
+|Adding Remarks to any [[SGWikiBasics#api|API page]]
+|-
+|[[SGTutorials|Tutorials]]
+|Adding an existing tutorial to the Tutorials page<br/>Creating a new tutorial within the wiki
+|-
+|[[SGFunctions|Function Pages]]
+|Editing Function pages<br/>Editing Macro pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~
+|-
+|[[SGStructures|Structure Pages]]
+|Editing Structure pages<br/>Editing Union pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~
+|-
+|[[SGEnumerations|Enumeration Pages]]
+|Editing Enumeration pages<br/>Editing Hint pages<br/>~-This is supplemental to the Code Examples and Remarks Style Guides-~
+|-
+|[[SGNewPages|New Pages]]
+|Creating new pages in the wiki<br/>~-This is supplemental to the other Style Guides-~
+|}
 
 : If you find something that is not addressed or is unclear in a style guide please post your questions to the Documentation mailing list, on a Forum, or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
 
