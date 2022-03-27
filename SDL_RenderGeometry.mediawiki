@@ -14,6 +14,9 @@ int SDL_RenderGeometry(SDL_Renderer *renderer,
 == Function Parameters ==
 
 {|
+|'''renderer'''
+|The rendering context.
+|-
 |'''texture'''
 |(optional) The SDL texture to use.
 |-
