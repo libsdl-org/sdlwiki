@@ -65,6 +65,6 @@ Add a code example here.
 :[[SDL_PushEvent]]
 
 ----
-[[CategoryAPI]], CategoryEvents
+[[CategoryAPI]], [[CategoryEvents]]
 
 
