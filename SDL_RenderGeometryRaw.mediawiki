@@ -17,6 +17,9 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 == Function Parameters ==
 
 {|
+|'''renderer'''
+|The rendering context.
+|-
 |'''texture'''
 |(optional) The SDL texture to use.
 |-
