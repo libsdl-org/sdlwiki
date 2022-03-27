@@ -76,6 +76,6 @@ if (myFancyFunction != NULL) {
 :[[SDL_UnloadObject]]
 
 ----
-[[CategoryAPI]], CategorySharedObject
+[[CategoryAPI]], [[CategorySharedObject]]
 
 
