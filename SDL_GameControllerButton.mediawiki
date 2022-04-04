@@ -1,4 +1,3 @@
-
 = SDL_GameControllerButton =
 
 An enumeration of buttons available from a controller.
@@ -7,54 +6,73 @@ An enumeration of buttons available from a controller.
 == Values ==
 {|
 | SDL_CONTROLLER_BUTTON_INVALID       
-| 0
+| -1
 |-
 | SDL_CONTROLLER_BUTTON_A             
-| 1
+| 0
 |-
 | SDL_CONTROLLER_BUTTON_B             
-| 2
+| 1
 |-
 | SDL_CONTROLLER_BUTTON_X             
-| 3
+| 2
 |-
 | SDL_CONTROLLER_BUTTON_Y             
-| 4
+| 3
 |-
 | SDL_CONTROLLER_BUTTON_BACK          
-| 5
+| 4
 |-
 | SDL_CONTROLLER_BUTTON_GUIDE         
-| 6
+| 5
 |-
 | SDL_CONTROLLER_BUTTON_START         
-| 7
+| 6
 |-
 | SDL_CONTROLLER_BUTTON_LEFTSTICK     
-| 8
+| 7
 |-
 | SDL_CONTROLLER_BUTTON_RIGHTSTICK    
-| 9
+| 8
 |-
 | SDL_CONTROLLER_BUTTON_LEFTSHOULDER  
-| 10
+| 9
 |-
 | SDL_CONTROLLER_BUTTON_RIGHTSHOULDER 
-| 11
+| 10
 |-
 | SDL_CONTROLLER_BUTTON_DPAD_UP       
-| 12
+| 11
 |-
 | SDL_CONTROLLER_BUTTON_DPAD_DOWN     
-| 13
+| 12
 |-
 | SDL_CONTROLLER_BUTTON_DPAD_LEFT     
-| 14
+| 13
 |-
 | SDL_CONTROLLER_BUTTON_DPAD_RIGHT    
+| 14
+|-
+| SDL_CONTROLLER_BUTTON_MISC1    
 | 15
 |-
-| SDL_CONTROLLER_BUTTON_MAX           
+| SDL_CONTROLLER_BUTTON_PADDLE1    
+| 16
+|-
+| SDL_CONTROLLER_BUTTON_PADDLE2    
+| 17
+|-
+| SDL_CONTROLLER_BUTTON_PADDLE3    
+| 18
+|-
+| SDL_CONTROLLER_BUTTON_PADDLE4    
+| 19
+|-
+| SDL_CONTROLLER_BUTTON_TOUCHPAD    
+| 20
+|-
+| SDL_CONTROLLER_BUTTON_MAX   
+| 21        
 | 
 |}
 
