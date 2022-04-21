@@ -1,0 +1,20 @@
+Point structure like [[SDL_Point]], but uses float instead of int for coordinates
+== Data Fields ==
+{|
+|float
+|'''x'''
+|the x coordinate of the point
+|-
+|float
+|'''y'''
+|the y coordinate of the point
+|}
+
+== Related Functions ==
+:[[SDL_RenderGeometry]]
+:[[SDL_PointInFRect]]
+
+== Related Structures ==
+:[[SDL_Vertex]]
+:[[SDL_FRect]]
+:[[SDL_Point]]
