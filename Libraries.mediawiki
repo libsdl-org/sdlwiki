@@ -44,3 +44,33 @@ RTF file using an [[SDL_ttf]] font engine.
 : [https://libsdl.org/projects/SDL_rtf/ Project Page]
 : [https://github.com/libsdl-org/SDL_rtf/ Git Repository]
 : [[SDL_rtf|Wiki]]
+
+== Others libraries == 
+
+SDL2, through [https://wiki.libsdl.org/SDL_RenderGeometry SDL_RenderGeometry], can be used as a back-end with other GUI/Animation libraries:
+
+Dear ImGUI:
+: [https://github.com/ocornut/imgui Dear ImGui website] 
+: [https://github.com/ocornut/imgui/tree/master/examples/example_sdl_sdlrenderer Example source code] 
+
+Nuklear:
+: [https://github.com/Immediate-Mode-UI/Nuklear Nuklear website]
+: [https://github.com/Immediate-Mode-UI/Nuklear/tree/master/demo/sdl_renderer Example source code]
+
+RmlUI (fork of libRocket):
+: [https://github.com/mikke89/RmlUi RmlUI website]
+: [https://github.com/mikke89/RmlUi/tree/master/Samples/basic/sdl2_sdlrenderer/src Example source code]
+
+Spine:
+: [http://esotericsoftware.com/ Spine website]
+: [https://github.com/royalstream/spine-sdl Example source code]
+
+Un-maintained projects:
+
+MicroUI:
+: [https://github.com/rxi/microui MicroUI website]
+: [https://github.com/rxi/microui/pull/48 Example source code (pending pull request)]
+
+libRocket:
+: [https://github.com/libRocket/libRocket libRocket website]
+: [https://github.com/libRocket/libRocket/pull/301 Example source code (pending pull request)]
