@@ -34,7 +34,7 @@ This function is available since SDL 2.0.14.
 
 == Related Functions ==
 
-:[[SDL_SIMDAlignment]]
+:[[SDL_SIMDGetAlignment]]
 :[[SDL_SIMDAlloc]]
 :[[SDL_SIMDFree]]
 
