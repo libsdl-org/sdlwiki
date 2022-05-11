@@ -1,4 +1,3 @@
-
 = SDL_Rect =
 A structure that contains the definition of a rectangle, with the origin at the upper left.
 
@@ -40,7 +39,7 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 </syntaxhighlight>
 
 == Remarks ==
-An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.
+An SDL_Rect defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.
 
 == Related Functions ==
 :[[SDL_BlitSurface]]
