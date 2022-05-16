@@ -1,0 +1,22 @@
+= SDL_JoystickAttachVirtualEx =
+
+Attach a new virtual joystick with extended properties.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDL_JoystickAttachVirtualEx(const SDL_VirtualJoystickDesc *desc);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns the joystick's device index, or -1 if an error occurred.
+
+== Version ==
+
+This function is available since SDL 2.0.24.
+
+----
+[[CategoryAPI]]
+
+
