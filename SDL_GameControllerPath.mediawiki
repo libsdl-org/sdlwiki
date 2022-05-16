@@ -28,7 +28,7 @@ index.
 
 == Version ==
 
-This function is available since SDL 2.0.24.
+This function is available since SDL 2.24.0.
 
 == Related Functions ==
 
