@@ -420,6 +420,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_IsTextInputActive]]
 * [[SDL_IsTextInputShown]]
 * [[SDL_JoystickAttachVirtual]]
+* [[SDL_JoystickAttachVirtualEx]]
 * [[SDL_JoystickClose]]
 * [[SDL_JoystickCurrentPowerLevel]]
 * [[SDL_JoystickDetachVirtual]]
