@@ -47,7 +47,7 @@ The default log priorities are as follows:
 <!-- # End Include Default Priority -->
 
 If you're debugging SDL you might want to call:
- ```SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);```
+    SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);
 
 == Related Functions ==
 :[[SDL_LogMessage]]
