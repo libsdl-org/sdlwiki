@@ -19,8 +19,8 @@ This function is available since SDL 2.0.0.
 
 == Code Examples ==
 
-<!-- # Begin Condition Variable Example -->
 Typical use of condition variables:
+
 <syntaxhighlight lang='c++'>
 SDL_bool condition = SDL_FALSE;
 SDL_mutex *lock;
@@ -49,7 +49,6 @@ Thread B:
 SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
 </syntaxhighlight>
-<!-- # End Condition Variable Example -->
 
 == Related Functions ==
 
