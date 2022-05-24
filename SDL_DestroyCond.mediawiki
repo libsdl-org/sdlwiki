@@ -19,9 +19,6 @@ void SDL_DestroyCond(SDL_cond * cond);
 
 This function is available since SDL 2.0.0.
 
-== Code Examples ==
-
-<<Include(SDL_CreateCond, , , from="## Begin Condition Variable Example", to="## End Condition Variable Example")>>
 
 == Related Functions ==
 
