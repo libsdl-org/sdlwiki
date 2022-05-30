@@ -85,6 +85,7 @@ When filling in the desired audio spec structure:
 * <code>[[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE]]</code>
 * <code>[[SDL_AUDIO_ALLOW_FORMAT_CHANGE]]</code>
 * <code>[[SDL_AUDIO_ALLOW_CHANNELS_CHANGE]]</code>
+* <code>[[SDL_AUDIO_ALLOW_SAMPLES_CHANGE]]</code>
 * <code>[[SDL_AUDIO_ALLOW_ANY_CHANGE]]</code>
 
 These flags specify how SDL should behave when a device cannot offer a
