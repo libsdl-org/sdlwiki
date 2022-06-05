@@ -331,6 +331,8 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GL_SwapWindow]]
 * [[SDL_GL_UnbindTexture]]
 * [[SDL_GL_UnloadLibrary]]
+* [[SDL_GUIDFromString]]
+* [[SDL_GUIDToString]]
 * [[SDL_HapticClose]]
 * [[SDL_HapticDestroyEffect]]
 * [[SDL_HapticEffectSupported]]
