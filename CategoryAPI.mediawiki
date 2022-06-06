@@ -372,6 +372,8 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_HasEvents]]
 * [[SDL_HasIntersection]]
 * [[SDL_HasIntersectionF]]
+* [[SDL_HasLASX]]
+* [[SDL_HasLSX]]
 * [[SDL_HasMMX]]
 * [[SDL_HasNEON]]
 * [[SDL_HasRDTSC]]
