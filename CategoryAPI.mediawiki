@@ -592,6 +592,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_RenderGeometryRaw]]
 * [[SDL_RenderGetClipRect]]
 * [[SDL_RenderGetD3D11Device]]
+* [[SDL_RenderGetD3D12Device]]
 * [[SDL_RenderGetD3D9Device]]
 * [[SDL_RenderGetIntegerScale]]
 * [[SDL_RenderGetLogicalSize]]
