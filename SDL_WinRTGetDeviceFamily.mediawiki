@@ -1,6 +1,6 @@
 = SDL_WinRTGetDeviceFamily =
 
-Detects the device family of WinRT plattform at runtime.
+Detects the device family of WinRT platform at runtime.
 
 == Syntax ==
 
