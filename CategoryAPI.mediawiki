@@ -602,6 +602,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_RenderGetViewport]]
 * [[SDL_RenderGetWindow]]
 * [[SDL_RenderIsClipEnabled]]
+* [[SDL_RenderLogicalToWindow]]
 * [[SDL_RenderPresent]]
 * [[SDL_RenderReadPixels]]
 * [[SDL_RenderSetClipRect]]
