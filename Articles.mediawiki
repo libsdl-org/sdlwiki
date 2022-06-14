@@ -4,7 +4,7 @@
 * Georgik - Useful software engineering tips
 : [http://georgik.rocks/tag/sdl2/ Articles about SDL2 for Android NDK and Gradle 4|target="blank"]
 
-If you know of an article about SDL 2.0 that should be linked here please let us know either using ''Feedback'' above or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.  Thanks!
+If you know of an article about SDL 2.0 that should be linked here please let us know either [https://wiki.libsdl.org/Articles/edit editing this page] or [https://github.com/libsdl-org/sdlwiki/issues/new?title=New%20SDL2%20article%20for%20wiki.libsdl.org/Articles submitting an issue about it].  Thanks!
 
 == SDL 1.2 ==
 * Free Software Magazine - May 2006
