@@ -2,7 +2,7 @@
 
 == SDL 2.0 ==
 * Georgik - Useful software engineering tips
-: [http://georgik.rocks/tag/sdl2/ Articles about SDL2 for Android NDK and Gradle 4|target="blank"]
+: [http://georgik.rocks/tag/sdl2/ Articles about SDL2 for Android NDK and Gradle 4]
 
 If you know of an article about SDL 2.0 that should be linked here please let us know either [https://wiki.libsdl.org/Articles/edit editing this page] or [https://github.com/libsdl-org/sdlwiki/issues/new?title=New%20SDL2%20article%20for%20wiki.libsdl.org/Articles submitting an issue about it].  Thanks!
 
