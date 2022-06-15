@@ -1,0 +1,4 @@
+This is a test page about SDL_mixer. please write me for real!
+
+Esta una página sobre SDL_mixer. ¡Por favor me escríbe de verdad!
+
