@@ -742,19 +742,19 @@ Compatibility Structures are present in the API for backward compatibility only 
 <br/>
 : ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Structure</code> with the name of the appropriate SDL 1.3 structure:
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) a ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]]'''||
 ```
 <br/>
 : ''Markup B'': Add the following section to the end of the page above the footer.  Create a list of structures by repeating the <code>[[SDL_Structure]]</code> markup, separating each member of the list with a comma, and placing the most direct counterpart first, alphabetizing any additional structures after that.
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) b ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This structure has been replaced by the following in SDL 1.3:  [[SDL_Structure]], [[SDL_Structure]]'''||
 ```
 <br/>
 : ''Markup C'': Add the following section to the end of the page above the footer.  Replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal, or remove it if there is no applicable text:
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) c ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''There are currently no equivalent structures in SDL 1.3.'''||
 Other options here
 ```
