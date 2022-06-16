@@ -911,21 +911,21 @@ Compatibility functions are present in the API for backward compatibility only a
 <br/>
 : ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Function</code> with the name of the appropriate SDL 1.3 function:
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) a ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This function has been replaced by the following in SDL 1.3:  [[SDL_Function]]'''||
 ```
 : ''Example'': [[]](), [[]]()
 <br/>
 : ''Markup B'': Add the following section to the end of the page above the footer.  Create a list of functions by repeating the <code>[[SDL_Function]]</code> markup, separating each member of the list with a comma, and placing the most direct counterpart first, alphabetizing any additional functions after that.
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) b ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This function has been replaced by the following in SDL 1.3:  [[SDL_Function]], [[SDL_Function]]'''||
 ```
 : ''Example'': [[SDL_WM_ToggleFullscreen]](), [[SDL_WM_GrabInput]]()
 <br/>
 : ''Markup C'': Add the following section to the end of the page above the footer.  Replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal, or remove it if there is no applicable text:
   ```
-== SDL 1.3 Replacement(s) ==
+== SDL 1.3 Replacement(s) c ==
 ||<tablewidth="100%" #000000 style="color: #FF8C00;">'''There are currently no equivalent functions in SDL 1.3.'''||
 Other options here
 ```
