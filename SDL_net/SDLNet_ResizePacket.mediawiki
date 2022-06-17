@@ -1,3 +1,4 @@
+====== (This function is part of SDL_net, a separate library from SDL.) ======
 = SDLNet_ResizePacket =
 
 Reallocate a UDP packet's payload space.

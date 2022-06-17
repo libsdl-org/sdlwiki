@@ -1,3 +1,4 @@
+====== (This function is part of SDL_net, a separate library from SDL.) ======
 = SDLNet_AllocPacketV =
 
 Allocate a UDP packet vector (array of packets).

@@ -1,3 +1,4 @@
+====== (This function is part of SDL_net, a separate library from SDL.) ======
 = SDLNet_AddSocket =
 
 Add a socket to a socket set, to be checked for available data.

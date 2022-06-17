@@ -1,3 +1,4 @@
+====== (This function is part of SDL_net, a separate library from SDL.) ======
 = SDLNet_TCP_GetPeerAddress =
 
 Get the IP address of the remote system associated with the socket.

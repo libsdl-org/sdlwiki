@@ -1,3 +1,4 @@
+====== (This function is part of SDL_net, a separate library from SDL.) ======
 = SDLNet_DelSocket =
 
 Remove a socket from a set of sockets to be checked for available data.
