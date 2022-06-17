@@ -21,7 +21,7 @@ const char * SDLNet_ResolveIP(const IPaddress *ip);
 If the IP couldn't be resolved, this function returns NULL, otherwise a
 pointer to a static buffer containing the hostname is returned.
 
-'''Warning''': Note that this function is not thread-safe!
+'''Warning''': This function is not thread-safe!
 
 ----
 [[CategoryAPI]]

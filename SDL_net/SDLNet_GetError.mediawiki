@@ -12,9 +12,9 @@ const char * SDLNet_GetError(void);
 == Remarks ==
 
 The error message, depending on how SDL_net was built, may or may not be
-thread-local data. Sometimes things will set an error message when no failure
-was reported; the error string is only meaningful right after a public API
-reports a failure, and should be ignored otherwise.
+thread-local data. Sometimes things will set an error message when no
+failure was reported; the error string is only meaningful right after a
+public API reports a failure, and should be ignored otherwise.
 
 ----
 [[CategoryAPI]]
