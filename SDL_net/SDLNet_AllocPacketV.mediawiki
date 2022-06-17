@@ -26,7 +26,7 @@ ran out of memory.
 
 == Remarks ==
 
-This allocates <code>howmany</code> packets at once,each <code>size</code>
+This allocates <code>howmany</code> packets at once, each <code>size</code>
 bytes long.
 
 You must free the results of this function with [[SDLNet_FreePacketV]], and
