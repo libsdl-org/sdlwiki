@@ -16,7 +16,7 @@ int SDLNet_CheckSockets(SDLNet_SocketSet set, Uint32 timeout);
 |the socket set to check for ready sockets.
 |-
 |'''timeout'''
-|the time to wait _in milliseconds_ for new data to arrive. A timeout of zero checks for new data and returns without blocking.
+|the time to wait in milliseconds for new data to arrive. A timeout of zero checks for new data and returns without blocking.
 |}
 
 == Return Value ==
