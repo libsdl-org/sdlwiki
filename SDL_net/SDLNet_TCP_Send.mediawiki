@@ -6,8 +6,7 @@ Send data over a non-server socket.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDLNet_TCP_Send(TCPsocket sock, const void *data,
-        int len);
+int SDLNet_TCP_Send(TCPsocket sock, const void *data, int len);
 </syntaxhighlight>
 
 == Function Parameters ==
