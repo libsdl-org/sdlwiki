@@ -1,0 +1,28 @@
+= SDLNet_GetLocalAddresses =
+
+Get the addresses of network interfaces on this system.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDLNet_GetLocalAddresses(IPaddress *addresses, int maxcount);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''addresses'''
+|where to store the returned information.
+|-
+|'''maxcount'''
+|the number of results that can be stored at <code>addresses</code>
+|}
+
+== Return Value ==
+
+Returns the number of addresses saved in <code>addresses</code>
+
+----
+[[CategoryAPI]]
+
+

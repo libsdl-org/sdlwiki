@@ -1,0 +1,33 @@
+= SDLNet_TCP_GetPeerAddress =
+
+Get the IP address of the remote system associated with the socket.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+IPaddress * SDLNet_TCP_GetPeerAddress(TCPsocket sock);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''sock'''
+|the socket to query.
+|}
+
+== Return Value ==
+
+Returns the address information for the socket.
+
+== Remarks ==
+
+If the socket is a server socket, this function returns NULL.
+
+This returns a pointer to internal memory; you should not modify or free
+it, and should assume it's only valid until the socket is given to
+[[SDLNet_TCP_Close]].
+
+----
+[[CategoryAPI]]
+
+

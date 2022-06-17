@@ -1,0 +1,37 @@
+= SDLNet_TCP_Open =
+
+Open a TCP network socket.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+TCPsocket SDLNet_TCP_Open(IPaddress *ip);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''ip'''
+|The address to open a connection to (or to host a server on).
+|}
+
+== Return Value ==
+
+Returns the newly created socket, or NULL if there was an error.
+
+== Remarks ==
+
+If <code>ip->host</code> is INADDR_NONE or INADDR_ANY, this creates a local
+server socket on the given port, otherwise a TCP connection to the remote
+host and port is attempted. The address passed in should already be swapped
+to network byte order (addresses returned from [[SDLNet_ResolveHost]]() are
+already in the correct form).
+
+== Related Functions ==
+
+:[[SDLNet_TCP_Close]]
+
+----
+[[CategoryAPI]]
+
+

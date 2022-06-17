@@ -1,0 +1,29 @@
+= SDLNet_FreeSocketSet =
+
+Free a set of sockets allocated by [[SDLNet_AllocSocketSet]]().
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDLNet_FreeSocketSet(SDLNet_SocketSet set);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''set'''
+|the socket set to free.
+|}
+
+== Remarks ==
+
+When done with a socket set, call this function to free its resources.
+
+This only frees the socket set, not the individual sockets in the set,
+which would still (at some future point) need to be closed with
+[[SDLNet_TCP_Close]] or [[SDLNet_UDP_Close]].
+
+----
+[[CategoryAPI]]
+
+

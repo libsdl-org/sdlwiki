@@ -1,0 +1,31 @@
+= SDLNet_FreePacket =
+
+Dispose of a UDP packet.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void SDLNet_FreePacket(UDPpacket *packet);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''packet'''
+|the packet to free.
+|}
+
+== Remarks ==
+
+This frees both the packet's payload and the packet itself. Once this call
+completes, the packet's pointer is invalid and should not be used anymore.
+
+== Related Functions ==
+
+:[[SDLNet_AllocPacket]]
+:[[SDLNet_ResizePacket]]
+
+----
+[[CategoryAPI]]
+
+

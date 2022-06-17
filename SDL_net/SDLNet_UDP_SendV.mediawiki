@@ -1,0 +1,34 @@
+= SDLNet_UDP_SendV =
+
+Send a vector of packets to the the channels specified within the packet.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int SDLNet_UDP_SendV(UDPsocket sock, UDPpacket **packets, int npackets);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns the number of packets successfully sent from this machine.
+
+== Remarks ==
+
+If the channel specified in the packet is -1, the packet will be sent to
+the address in the <code>src</code> member of the packet.
+
+Each packet will be updated with the status of the packet after it has been
+sent, -1 if the packet send failed.
+
+This function takes an array of packets but does not need to be allocated
+through [[SDLNet_AllocPacketV]]; if you supply your own array of packets
+you allocated individually, that is okay.
+
+== Related Functions ==
+
+:[[SDLNet_UDP_RecV]]
+
+----
+[[CategoryAPI]]
+
+

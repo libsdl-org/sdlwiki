@@ -1,0 +1,42 @@
+= SDLNet_AllocPacketV =
+
+Allocate a UDP packet vector (array of packets).
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+UDPpacket ** SDLNet_AllocPacketV(int howmany, int size);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''howmany'''
+|the number of packets to allocate.
+|-
+|'''size'''
+|the maximum bytes of payload each packet should contain.
+|}
+
+== Return Value ==
+
+Returns a pointer to the first packet in the array, or NULL if the function
+ran out of memory.
+
+== Remarks ==
+
+This allocates <code>howmany</code> packets at once,each <code>size</code>
+bytes long.
+
+You must free the results of this function with [[SDLNet_FreePacketV]], and
+must not free individual packets from this function with
+[[SDLNet_FreePacket]].
+
+== Related Functions ==
+
+:[[SDLNet_FreePacketV]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,26 @@
+= SDLNet_ResolveIP =
+
+Resolve an IP address to a host name in canonical form.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char * SDLNet_ResolveIP(const IPaddress *ip);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''ip'''
+|the IP address to resolve into a hostname.
+|}
+
+== Remarks ==
+
+If the IP couldn't be resolved, this function returns NULL, otherwise a
+pointer to a static buffer containing the hostname is returned.
+
+----
+[[CategoryAPI]]
+
+
