@@ -44,11 +44,13 @@ Note that this will return the number of bytes available at the first
 moment the socket is able to see new data. If packets are coming in slowly
 from the network, this might be less data than you expect at a given time.
 
-This function may block!
+This function may block! Use SDLNet_CheckSockets() to make sure there is
+data available before calling this function, if you want to avoid blocking.
 
 == Related Functions ==
 
 :[[SDLNet_TCP_Send]]
+:[[SDLNet_CheckSockets]]
 
 ----
 [[CategoryAPI]]
