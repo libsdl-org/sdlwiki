@@ -41,6 +41,8 @@ This function returns the actual amount of data sent. If the return value
 is less than the amount of data sent, then either the remote connection was
 closed, or an unknown socket error occurred.
 
+This function may block!
+
 == Related Functions ==
 
 :[[SDLNet_TCP_Recv]]

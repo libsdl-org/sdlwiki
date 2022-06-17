@@ -34,6 +34,10 @@ Please note that on memory allocation failure, this function will leave the
 existing buffer alone, and _will return the original buffer size_. It will
 not return an error value, it'll just leave the packet as it was!
 
+'''Warning''': Existing contents of the packet's data are lost when
+resizing, whether you are growing or shrinking the payload space, since
+SDL_net does not realloc the existing data.
+
 == Related Functions ==
 
 :[[SDLNet_AllocPacket]]
