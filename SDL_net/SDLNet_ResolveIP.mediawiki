@@ -23,6 +23,10 @@ pointer to a static buffer containing the hostname is returned.
 
 '''Warning''': This function is not thread-safe!
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

@@ -28,6 +28,10 @@ This returns a pointer to internal memory; you should not modify or free
 it, and should assume it's only valid until the socket is given to
 [[SDLNet_TCP_Close]].
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

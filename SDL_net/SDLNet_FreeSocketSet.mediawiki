@@ -24,6 +24,10 @@ This only frees the socket set, not the individual sockets in the set,
 which would still (at some future point) need to be closed with
 [[SDLNet_TCP_Close]] or [[SDLNet_UDP_Close]].
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

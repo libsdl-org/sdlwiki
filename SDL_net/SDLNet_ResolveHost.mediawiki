@@ -34,6 +34,10 @@ If <code>host</code> is NULL, the resolved host will be set to
 If the host couldn't be resolved, the host portion of the returned address
 will be INADDR_NONE, and the function will return -1.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

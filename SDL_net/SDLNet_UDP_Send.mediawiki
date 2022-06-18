@@ -9,6 +9,20 @@ Send a single UDP packet to the specified channel.
 int SDLNet_UDP_Send(UDPsocket sock, int channel, UDPpacket *packet);
 </syntaxhighlight>
 
+== Function Parameters ==
+
+{|
+|'''sock'''
+|the UDP socket to send packets on.
+|-
+|'''packet'''
+|a single packet to send to the network.
+|}
+
+== Return Value ==
+
+Returns 1 if the packet was sent, or 0 on error.
+
 == Remarks ==
 
 If the channel specified is -1, the packet will be sent to the address in
@@ -33,7 +47,9 @@ fragments behind the scenes, that need to be reassembled on the other side
 you can reasonably send in a single packet, the better, as it will be more
 reliable and lower latency.
 
-This function returns 1 if the packet was sent, or 0 on error.
+== Version ==
+
+This function is available since SDL_net 2.0.0.
 
 ----
 [[CategoryAPI]]

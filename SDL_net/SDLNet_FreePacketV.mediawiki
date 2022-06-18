@@ -26,6 +26,10 @@ It is safe to free a NULL array through here; it's a harmless no-op.
 You must not use this to free packets allocated through any function other
 than [[SDLNet_AllocPacketV]]().
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_AllocPacketV]]

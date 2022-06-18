@@ -33,6 +33,10 @@ You must free the results of this function with [[SDLNet_FreePacketV]], and
 must not free individual packets from this function with
 [[SDLNet_FreePacket]].
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_FreePacketV]]

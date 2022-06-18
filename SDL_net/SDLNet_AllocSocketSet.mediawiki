@@ -30,6 +30,10 @@ to/from the set.
 
 When done with a socket set, you can free it with [[SDLNet_FreeSocketSet]].
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_FreeSocketSet]]

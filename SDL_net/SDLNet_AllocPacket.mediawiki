@@ -30,6 +30,10 @@ for each piece of data you intend to send.
 
 You can allocate multiple packets at once with [[SDLNet_AllocPacketV]].
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_ResizePacket]]

@@ -37,6 +37,10 @@ you query the number of sockets currently contained in the set.
 This will return -1 if the socket was not found in the set; in such a case,
 nothing is removed from the set.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_TCP_DelSocket]]

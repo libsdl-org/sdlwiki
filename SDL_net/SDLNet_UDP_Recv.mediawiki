@@ -37,6 +37,10 @@ bound will be returned.
 This function does not block, so it can return 0 packets pending, which is
 not an error condition.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_UDP_Send]]

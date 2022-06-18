@@ -22,6 +22,10 @@ This disconnects the socket and frees any resources it retains.
 
 This socket may not be used again once given to this function.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

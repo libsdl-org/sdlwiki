@@ -38,6 +38,10 @@ not return an error value, it'll just leave the packet as it was!
 resizing, whether you are growing or shrinking the payload space, since
 SDL_net does not realloc the existing data.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_AllocPacket]]

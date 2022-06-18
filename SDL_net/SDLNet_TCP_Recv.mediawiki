@@ -48,6 +48,10 @@ This function may block! Use [[SDLNet_CheckSockets]]() to make sure there
 is data available before calling this function, if you want to avoid
 blocking.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_TCP_Send]]

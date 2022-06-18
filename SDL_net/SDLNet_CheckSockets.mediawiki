@@ -31,6 +31,10 @@ set of sockets. If 'timeout' is 0, it performs a quick poll, otherwise the
 function returns when either data is available for reading, or the timeout
 in milliseconds has elapsed, whichever occurs first.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

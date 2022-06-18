@@ -37,6 +37,10 @@ succeed.
 If <code>sock</code> is NULL, nothing is added to the set; this lets you
 query the number of sockets currently contained in the set.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_TCP_AddSocket]]

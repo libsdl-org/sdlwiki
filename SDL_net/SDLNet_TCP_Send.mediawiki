@@ -42,6 +42,10 @@ closed, or an unknown socket error occurred.
 
 This function may block!
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_TCP_Recv]]

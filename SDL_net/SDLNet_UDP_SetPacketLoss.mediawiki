@@ -29,6 +29,10 @@ is robust against network problems even on a fast, reliable network.
 
 You probably don't want to use this function outside of local testing.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

@@ -18,6 +18,10 @@ return immediately.
 Once you have as many quit calls as you have had successful calls to
 [[SDLNet_Init]], the library will actually deinitialize.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

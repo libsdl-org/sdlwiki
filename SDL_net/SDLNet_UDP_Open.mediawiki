@@ -35,6 +35,10 @@ but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
 When you are done communicating over the returned socket, you can shut it
 down and free its resources with [[SDLNet_UDP_Close]]().
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_UDP_Close]]

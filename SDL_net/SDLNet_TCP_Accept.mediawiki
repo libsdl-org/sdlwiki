@@ -26,6 +26,10 @@ Returns the newly created socket, or NULL if there was an error.
 an address of INADDR_NONE or INADDR_ANY (a "server socket"). Other sockets
 do not accept connections.
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 ----
 [[CategoryAPI]]
 

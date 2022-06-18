@@ -28,6 +28,10 @@ host and port is attempted. The address passed in should already be swapped
 to network byte order (addresses returned from [[SDLNet_ResolveHost]]() are
 already in the correct form).
 
+== Version ==
+
+This function is available since SDL_net 2.0.0.
+
 == Related Functions ==
 
 :[[SDLNet_TCP_Close]]
