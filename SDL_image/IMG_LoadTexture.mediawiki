@@ -21,7 +21,7 @@ SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);
 
 == Return Value ==
 
-Returns SDL Texture, or NULL on error
+Returns SDL Texture, or NULL on error.
 
 == Related Functions ==
 
