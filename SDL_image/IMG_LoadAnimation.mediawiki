@@ -18,7 +18,7 @@ IMG_Animation * IMG_LoadAnimation(const char *file);
 
 == Return Value ==
 
-Returns IMG Animation, or NULL on error
+Returns IMG Animation, or NULL on error.
 
 == Related Functions ==
 
