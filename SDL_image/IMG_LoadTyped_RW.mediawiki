@@ -24,7 +24,7 @@ SDL_Surface * IMG_LoadTyped_RW(SDL_RWops *src, int freesrc, const char *type);
 
 == Return Value ==
 
-Returns SDL surface, or NULL on error
+Returns SDL surface, or NULL on error.
 
 == Remarks ==
 
