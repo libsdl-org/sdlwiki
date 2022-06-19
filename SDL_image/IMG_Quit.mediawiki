@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_Quit =
 
-Unloads libraries loaded with [[IMG_Init]] 
+Unloads libraries loaded with [[IMG_Init]].
 
 == Syntax ==
 
