@@ -1,0 +1,33 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadAnimation_RW =
+
+Load an animation from an SDL datasource 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+IMG_Animation * IMG_LoadAnimation_RW(SDL_RWops *src, int freesrc);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|-
+|'''freesrc'''
+|can be set so that the RWops is freed after this function is called
+|}
+
+== Return Value ==
+
+Returns IMG Animation, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_FreeAnimation]]
+
+----
+[[CategoryAPI]]
+
+

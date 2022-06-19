@@ -1,0 +1,32 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadSizedSVG_RW =
+
+Load an SVG scaled to a specific size Either width or height may be 0 and will be auto-sized to preserve aspect ratio.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * IMG_LoadSizedSVG_RW(SDL_RWops *src, int width, int height);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|-
+|'''width'''
+|width
+|-
+|'''height'''
+|height
+|}
+
+== Return Value ==
+
+Returns SDL surface, or NULL on error
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,30 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_ReadXPMFromArrayToRGB888 =
+
+Load a XPM image from a an array Returns always a 32bpp (RGB888) surface 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * IMG_ReadXPMFromArrayToRGB888(char **xpm);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''xpm'''
+|null terminated array of strings
+|}
+
+== Return Value ==
+
+Returns SDL surface, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_ReadXPMFromArray]]
+
+----
+[[CategoryAPI]]
+
+

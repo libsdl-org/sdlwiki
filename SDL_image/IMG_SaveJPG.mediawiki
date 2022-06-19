@@ -1,0 +1,38 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_SaveJPG =
+
+Save a SDL_Surface into a JPEG image file.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''surface'''
+|SDL surface to save
+|-
+|'''file'''
+|file name
+|-
+|'''quality'''
+|[0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+== Related Functions ==
+
+:[[IMG_SavePNG]]
+:[[IMG_SavePNG_RW]]
+:[[IMG_SaveJPG_RW]]
+
+----
+[[CategoryAPI]]
+
+

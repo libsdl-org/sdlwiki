@@ -1,0 +1,41 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadTextureTyped_RW =
+
+Load an image directly into a render texture.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Texture * IMG_LoadTextureTyped_RW(SDL_Renderer *renderer, SDL_RWops *src, int freesrc, const char *type);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|SDL Render
+|-
+|'''src'''
+|RWops
+|-
+|'''freesrc'''
+|can be set so that the RWops is freed after this function is called
+|-
+|'''type'''
+|may be one of: "BMP", "GIF", "PNG", etc.
+|}
+
+== Return Value ==
+
+Returns SDL Texture, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_LoadTexture]]
+:[[IMG_LoadTexture_RW]]
+:[[SDL_DestroyTexture]]
+
+----
+[[CategoryAPI]]
+
+

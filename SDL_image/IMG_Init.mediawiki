@@ -1,0 +1,37 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_Init =
+
+Loads dynamic libraries and prepares them for use.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int IMG_Init(int flags);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''flags'''
+|initialization flags
+|}
+
+== Return Value ==
+
+Returns flags successfully initialized, or 0 on failure.
+
+== Remarks ==
+
+Flags should be one or more flags from [[IMG_InitFlags]] OR'd together.
+
+== Related Functions ==
+
+:[[IMG_Quit]]
+:[[IMG_InitFlags]]
+:[[IMG_Load]]
+:[[IMG_LoadTexture]]
+
+----
+[[CategoryAPI]]
+
+

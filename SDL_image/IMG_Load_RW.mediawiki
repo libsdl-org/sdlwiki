@@ -1,0 +1,35 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_Load_RW =
+
+Load an image from a SDL datasource 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * IMG_Load_RW(SDL_RWops *src, int freesrc);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|-
+|'''freesrc'''
+|can be set so that the RWops is freed after this function is called
+|}
+
+== Return Value ==
+
+Returns SDL surface, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_Load]]
+:[[IMG_LoadTyped_RW]]
+:[[SDL_FreeSurface]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,35 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadTexture =
+
+Load an image directly into a render texture.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Texture * IMG_LoadTexture(SDL_Renderer *renderer, const char *file);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''renderer'''
+|SDL Render
+|-
+|'''file'''
+|image file name
+|}
+
+== Return Value ==
+
+Returns SDL Texture, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_LoadTexture_RW]]
+:[[IMG_LoadTextureTyped_RW]]
+:[[SDL_DestroyTexture]]
+
+----
+[[CategoryAPI]]
+
+

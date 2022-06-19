@@ -1,0 +1,47 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadAVIF_RW =
+
+Individual loading functions 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * IMG_LoadAVIF_RW(SDL_RWops *src);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|}
+
+== Return Value ==
+
+Returns SDL surface, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_LoadAVIF_RW]]
+:[[IMG_LoadICO_RW]]
+:[[IMG_LoadCUR_RW]]
+:[[IMG_LoadBMP_RW]]
+:[[IMG_LoadGIF_RW]]
+:[[IMG_LoadJPG_RW]]
+:[[IMG_LoadJXL_RW]]
+:[[IMG_LoadLBM_RW]]
+:[[IMG_LoadPCX_RW]]
+:[[IMG_LoadPNG_RW]]
+:[[IMG_LoadPNM_RW]]
+:[[IMG_LoadSVG_RW]]
+:[[IMG_LoadQOI_RW]]
+:[[IMG_LoadTIF_RW]]
+:[[IMG_LoadXCF_RW]]
+:[[IMG_LoadXPM_RW]]
+:[[IMG_LoadXV_RW]]
+:[[IMG_LoadWEBP_RW]]
+
+----
+[[CategoryAPI]]
+
+

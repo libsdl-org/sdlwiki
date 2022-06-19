@@ -1,0 +1,47 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_isAVIF =
+
+Functions to detect a file type, given a seekable source 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int IMG_isAVIF(SDL_RWops *src);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|}
+
+== Return Value ==
+
+Returns 1 if file type is detected, 0 otherwise
+
+== Related Functions ==
+
+:[[IMG_isAVIF]]
+:[[IMG_isICO]]
+:[[IMG_isCUR]]
+:[[IMG_isBMP]]
+:[[IMG_isGIF]]
+:[[IMG_isJPG]]
+:[[IMG_isJXL]]
+:[[IMG_isLBM]]
+:[[IMG_isPCX]]
+:[[IMG_isPNG]]
+:[[IMG_isPNM]]
+:[[IMG_isSVG]]
+:[[IMG_isQOI]]
+:[[IMG_isTIF]]
+:[[IMG_isXCF]]
+:[[IMG_isXPM]]
+:[[IMG_isXV]]
+:[[IMG_isWEBP]]
+
+----
+[[CategoryAPI]]
+
+

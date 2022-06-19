@@ -1,0 +1,30 @@
+====== (This function is part of SDL_image, a separate library from SDL.) ======
+= IMG_LoadGIFAnimation_RW =
+
+Load a GIF type animation from an SDL datasource 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+IMG_Animation * IMG_LoadGIFAnimation_RW(SDL_RWops *src);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|}
+
+== Return Value ==
+
+Returns IMG Animation, or NULL on error
+
+== Related Functions ==
+
+:[[IMG_FreeAnimation]]
+
+----
+[[CategoryAPI]]
+
+
