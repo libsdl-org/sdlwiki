@@ -1,6 +1,6 @@
 = SDL_mixer 2.0 =
 
-The latest version of this library is available from [https://www.libsdl.org/projects/SDL_mixer/ the project page].
+The latest version of this library is available from [https://github.com/libsdl-org/SDL_mixer/releases GitHub].
 
 Due to popular demand, here is a simple multi-channel audio mixer.
 
