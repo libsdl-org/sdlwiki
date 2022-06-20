@@ -27,7 +27,7 @@ int TTF_SetFontSizeDPI(TTF_Font *font, int ptsize, unsigned int hdpi, unsigned i
 
 == Return Value ==
 
-Returns 0 if successful, -1 on error
+Returns 0 if successful, -1 on error.
 
 == Remarks ==
 
