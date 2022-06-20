@@ -1,0 +1,26 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_FontHeight =
+
+Get the total height of the font - usually equal to point size 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_FontHeight(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns font height
+
+----
+[[CategoryAPI]]
+
+

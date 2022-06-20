@@ -1,0 +1,30 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFontWrappedAlign =
+
+Get wrap alignment option 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GetFontWrappedAlign(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns wrap alignment option
+
+== Related Functions ==
+
+:[[TTF_SetFontWrappedAlign]]
+
+----
+[[CategoryAPI]]
+
+

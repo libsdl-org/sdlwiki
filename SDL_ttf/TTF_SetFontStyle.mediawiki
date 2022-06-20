@@ -1,0 +1,33 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontStyle =
+
+Set the font style.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_SetFontStyle(TTF_Font *font, int style);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handlea
+|-
+|'''style'''
+|style flags OR'ed
+|}
+
+== Remarks ==
+
+Setting the style clears already generated glyphs, if any, from the cache.
+
+== Related Functions ==
+
+:[[TTF_GetFontStyle]]
+
+----
+[[CategoryAPI]]
+
+

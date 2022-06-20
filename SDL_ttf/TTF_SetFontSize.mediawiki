@@ -1,0 +1,33 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontSize =
+
+Set font size dynamically.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_SetFontSize(TTF_Font *font, int ptsize);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''ptsize'''
+|point size
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+== Remarks ==
+
+This clears already generated glyphs, if any, from the cache.
+
+----
+[[CategoryAPI]]
+
+

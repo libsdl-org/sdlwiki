@@ -1,0 +1,28 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetHarfBuzzVersion =
+
+This function stores the version of the HarfBuzz library in use, or 0 if HarfBuzz is not available.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_GetHarfBuzzVersion(int *major, int *minor, int *patch);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''major'''
+|pointer to get the major version number
+|-
+|'''minor'''
+|pointer to get the minor version number
+|-
+|'''patch'''
+|pointer to get the param version number
+|}
+
+----
+[[CategoryAPI]]
+
+

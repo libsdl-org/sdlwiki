@@ -1,0 +1,44 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderGlyph_Blended =
+
+Create a 32-bit ARGB surface and render the given glyph at high quality, using alpha blending to dither the font with the given color.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderGlyph_Blended(TTF_Font *font,
+Uint16 ch, SDL_Color fg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''ch'''
+|character index
+|-
+|'''fg'''
+|foreground color
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.
+
+== Remarks ==
+
+The glyph is rendered without any padding or centering in the X direction,
+and aligned normally in the Y direction. This function returns the new
+surface, or NULL if there was an error.
+
+== Related Functions ==
+
+:[[TTF_RenderGlyph_Blended]]
+:[[TTF_RenderGlyph32_Blended]]
+
+----
+[[CategoryAPI]]
+
+

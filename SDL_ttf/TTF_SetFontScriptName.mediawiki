@@ -1,0 +1,34 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontScriptName =
+
+Set script per font.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_SetFontScriptName(TTF_Font *font, const char *script);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''script'''
+|null terminated string of exactly 4 characters.
+|}
+
+== Return Value ==
+
+Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz or invalid
+parameter
+
+== Remarks ==
+
+It overrides the global script set with the deprecated [[TTF_SetScript]]().
+
+----
+[[CategoryAPI]]
+
+

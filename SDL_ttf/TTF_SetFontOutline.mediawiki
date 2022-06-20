@@ -1,0 +1,29 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontOutline =
+
+Set the font outline.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_SetFontOutline(TTF_Font *font, int outline);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''outline'''
+|positive outline value, 0 to default
+|}
+
+== Related Functions ==
+
+:[[TTF_GetFontOutline]]
+
+----
+[[CategoryAPI]]
+
+

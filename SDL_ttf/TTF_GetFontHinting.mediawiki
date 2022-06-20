@@ -1,0 +1,30 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFontHinting =
+
+Retrieve FreeType hinter setting.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GetFontHinting(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns hinting flag
+
+== Related Functions ==
+
+:[[TTF_SetFontHinting]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,48 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderText_Shaded =
+
+Create an 8-bit palettized surface and render the given text at high quality with the given font and colors.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderText_Shaded(TTF_Font *font,
+                const char *text, SDL_Color fg, SDL_Color bg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''fg'''
+|foreground color
+|-
+|'''bg'''
+|background color
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.
+
+== Remarks ==
+
+The 0 pixel is background, while other pixels have varying degrees of the
+foreground color. This function returns the new surface, or NULL if there
+was an error.
+
+== Related Functions ==
+
+:[[TTF_RenderText_Shaded]]
+:[[TTF_RenderUTF8_Shaded]]
+:[[TTF_RenderUNICODE_Shaded]]
+
+----
+[[CategoryAPI]]
+
+

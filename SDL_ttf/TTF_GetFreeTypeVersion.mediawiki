@@ -1,0 +1,36 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFreeTypeVersion =
+
+This function stores the version of the FreeType2 library in use.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_GetFreeTypeVersion(int *major, int *minor, int *patch);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''major'''
+|pointer to get the major version number
+|-
+|'''minor'''
+|pointer to get the minor version number
+|-
+|'''patch'''
+|pointer to get the param version number
+|}
+
+== Remarks ==
+
+[[TTF_Init]]() should be called before calling this function.
+
+== Related Functions ==
+
+:[[TTF_Init]]
+
+----
+[[CategoryAPI]]
+
+

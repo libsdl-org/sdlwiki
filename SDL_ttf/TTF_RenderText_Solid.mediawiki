@@ -1,0 +1,44 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderText_Solid =
+
+Create an 8-bit palettized surface and render the given text at fast quality with the given font and color.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderText_Solid(TTF_Font *font,
+                const char *text, SDL_Color fg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''fg'''
+|foreground color
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.
+
+== Remarks ==
+
+The 0 pixel is the colorkey, giving a transparent background, and the 1
+pixel is set to the text color.
+
+== Related Functions ==
+
+:[[TTF_RenderText_Solid]]
+:[[TTF_RenderUTF8_Solid]]
+:[[TTF_RenderUNICODE_Solid]]
+
+----
+[[CategoryAPI]]
+
+

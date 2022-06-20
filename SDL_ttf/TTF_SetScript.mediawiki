@@ -1,0 +1,25 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetScript =
+
+Set Script to be used for text shaping.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_SetScript(int script); /* hb_script_t */
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz
+
+This function is deprecated. Prefer [[TTF_SetFontScriptName]]().
+
+== Related Functions ==
+
+:[[TTF_SetFontScriptName]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,49 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderText_Blended_Wrapped =
+
+Create a 32-bit ARGB surface and render the given text at high quality, using alpha blending to dither the font with the given color.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderText_Blended_Wrapped(TTF_Font *font,
+                const char *text, SDL_Color fg, Uint32 wrapLength);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''fg'''
+|foreground color
+|-
+|'''wrapLength'''
+|wrap length
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.
+
+== Remarks ==
+
+Text is wrapped to multiple lines on line endings and on word boundaries if
+it extends beyond wrapLength in pixels. If wrapLength is 0, only wrap on
+new lines. This function returns the new surface, or NULL if there was an
+error.
+
+== Related Functions ==
+
+:[[TTF_RenderText_Blended_Wrapped]]
+:[[TTF_RenderUTF8_Blended_Wrapped]]
+:[[TTF_RenderUNICODE_Blended_Wrapped]]
+
+----
+[[CategoryAPI]]
+
+

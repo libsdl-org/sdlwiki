@@ -1,0 +1,41 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SizeText =
+
+Get the dimensions of a rendered string of text 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_SizeText(TTF_Font *font, const char *text, int *w, int *h);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''w'''
+|output width
+|-
+|'''h'''
+|output height
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+== Related Functions ==
+
+:[[TTF_SizeText]]
+:[[TTF_SizeUTF8]]
+:[[TTF_SizeUNICODE]]
+
+----
+[[CategoryAPI]]
+
+

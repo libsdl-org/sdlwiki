@@ -1,0 +1,25 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontKerning =
+
+Set if kerning is allowed for this font 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_SetFontKerning(TTF_Font *font, int allowed);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''allowed'''
+|enable or not kerning
+|}
+
+----
+[[CategoryAPI]]
+
+

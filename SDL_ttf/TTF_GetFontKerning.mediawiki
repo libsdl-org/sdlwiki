@@ -1,0 +1,26 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFontKerning =
+
+Get whether or not kerning is allowed for this font 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GetFontKerning(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns tell is kerning is enabled
+
+----
+[[CategoryAPI]]
+
+

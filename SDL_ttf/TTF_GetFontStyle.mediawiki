@@ -1,0 +1,30 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFontStyle =
+
+Retrieve the font style.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GetFontStyle(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns font style
+
+== Related Functions ==
+
+:[[TTF_SetFontStyle]]
+
+----
+[[CategoryAPI]]
+
+

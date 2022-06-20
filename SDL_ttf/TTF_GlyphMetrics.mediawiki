@@ -1,0 +1,31 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GlyphMetrics =
+
+Get the metrics (dimensions) of a glyph To understand what these metrics mean, here is a useful link: http://freetype.sourceforge.net/freetype2/docs/tutorial/step2.html 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GlyphMetrics(TTF_Font *font, Uint16 ch,
+                     int *minx, int *maxx,
+                     int *miny, int *maxy, int *advance);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''ch'''
+|char index, 16bits
+|}
+
+== Related Functions ==
+
+:[[TTF_GlyphIsProvided32]]
+
+----
+[[CategoryAPI]]
+
+

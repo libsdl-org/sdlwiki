@@ -1,0 +1,43 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_OpenFontDPI =
+
+Opens a font using the given horizontal and vertical target resolutions (in DPI).
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+TTF_Font * TTF_OpenFontDPI(const char *file, int ptsize, unsigned int hdpi, unsigned int vdpi);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''file'''
+|file name
+|-
+|'''ptsize'''
+|point size
+|-
+|'''hdpi'''
+|horizontal DPI
+|-
+|'''vdpi'''
+|vertical DPI
+|}
+
+== Return Value ==
+
+Returns a valid [[TTF_Font]], NULL on error
+
+== Remarks ==
+
+DPI scaling only applies to scalable fonts (e.g. TrueType).
+
+== Related Functions ==
+
+:[[TTF_CloseFont]]
+
+----
+[[CategoryAPI]]
+
+

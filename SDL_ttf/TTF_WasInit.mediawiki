@@ -1,0 +1,24 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_WasInit =
+
+Check if the TTF engine is initialized 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_WasInit(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns number of initialization
+
+== Related Functions ==
+
+:[[TTF_Init]]
+:[[TTF_Quit]]
+
+----
+[[CategoryAPI]]
+
+

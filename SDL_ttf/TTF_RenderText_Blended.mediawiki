@@ -1,0 +1,43 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderText_Blended =
+
+Create a 32-bit ARGB surface and render the given text at high quality, using alpha blending to dither the font with the given color.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderText_Blended(TTF_Font *font,
+                const char *text, SDL_Color fg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''fg'''
+|foreground color
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.
+
+== Remarks ==
+
+This function returns the new surface, or NULL if there was an error.
+
+== Related Functions ==
+
+:[[TTF_RenderText_Blended]]
+:[[TTF_RenderUTF8_Blended]]
+:[[TTF_RenderUNICODE_Blended]]
+
+----
+[[CategoryAPI]]
+
+

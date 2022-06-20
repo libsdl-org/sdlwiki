@@ -1,0 +1,36 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_OpenFontRW =
+
+Open a font file from a SDL_RWops.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+TTF_Font * TTF_OpenFontRW(SDL_RWops *src, int freesrc, int ptsize);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|SDL_RWops to use. 'src' must be kept alive for the lifetime of the [[TTF_Font]].
+|-
+|'''freesrc'''
+|can be set so that [[TTF_CloseFont]] closes the RWops
+|-
+|'''ptsize'''
+|point size
+|}
+
+== Return Value ==
+
+Returns a valid [[TTF_Font]], NULL on error
+
+== Related Functions ==
+
+:[[TTF_CloseFont]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,46 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_RenderText_LCD =
+
+Create a 32-bit surface (SDL_PIXELFORMAT_ARGB8888) and render the given text using FreeType LCD rendering, with the given font and colors.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_Surface * TTF_RenderText_LCD(TTF_Font *font,
+                const char *text, SDL_Color fg, SDL_Color bg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''text'''
+|text to render
+|-
+|'''fg'''
+|foreground color
+|-
+|'''bg'''
+|background color
+|}
+
+== Return Value ==
+
+Returns the new surface, or NULL if there was an error.a
+
+== Remarks ==
+
+This function returns the new surface, or NULL if there was an error.
+
+== Related Functions ==
+
+:[[TTF_RenderText_LCD]]
+:[[TTF_RenderUTF8_LCD]]
+:[[TTF_RenderUNICODE_LCD]]
+
+----
+[[CategoryAPI]]
+
+

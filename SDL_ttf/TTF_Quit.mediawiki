@@ -1,0 +1,19 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_Quit =
+
+De-initialize the TTF engine 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_Quit(void);
+</syntaxhighlight>
+
+== Related Functions ==
+
+:[[TTF_Init]]
+
+----
+[[CategoryAPI]]
+
+

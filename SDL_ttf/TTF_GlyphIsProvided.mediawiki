@@ -1,0 +1,33 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GlyphIsProvided =
+
+Check wether a glyph is provided by the font or not 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GlyphIsProvided(TTF_Font *font, Uint16 ch);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''ch'''
+|char index, 16bits
+|}
+
+== Return Value ==
+
+Returns 1 if provided
+
+== Related Functions ==
+
+:[[TTF_GlyphIsProvided32]]
+
+----
+[[CategoryAPI]]
+
+

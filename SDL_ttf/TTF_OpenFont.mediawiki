@@ -1,0 +1,39 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_OpenFont =
+
+Open a font file and create a font of the specified point size.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+TTF_Font * TTF_OpenFont(const char *file, int ptsize);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''file'''
+|file name
+|-
+|'''ptsize'''
+|point size
+|}
+
+== Return Value ==
+
+Returns a valid [[TTF_Font]], NULL on error
+
+== Remarks ==
+
+Some .fon fonts will have several sizes embedded in the file, so the point
+size becomes the index of choosing which size. If the value is too high,
+the last indexed size will be the default.
+
+== Related Functions ==
+
+:[[TTF_CloseFont]]
+
+----
+[[CategoryAPI]]
+
+

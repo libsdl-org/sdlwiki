@@ -1,0 +1,30 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_GetFontOutline =
+
+Retrieve the font outline.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_GetFontOutline(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns font outline
+
+== Related Functions ==
+
+:[[TTF_SetFontOutline]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,33 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_CloseFont =
+
+Close an opened font file 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_CloseFont(TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Related Functions ==
+
+:[[TTF_OpenFontIndexDPIRW]]
+:[[TTF_OpenFontRW]]
+:[[TTF_OpenFontDPI]]
+:[[TTF_OpenFontDPIRW]]
+:[[TTF_OpenFontIndex]]
+:[[TTF_OpenFontIndexDPI]]
+:[[TTF_OpenFontIndexDPIRW]]
+:[[TTF_OpenFontIndexRW]]
+
+----
+[[CategoryAPI]]
+
+

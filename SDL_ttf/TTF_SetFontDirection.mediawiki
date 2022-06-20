@@ -1,0 +1,35 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontDirection =
+
+Set direction per font.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''direction'''
+|[[TTF_Direction]] parameter
+|}
+
+== Return Value ==
+
+Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz or invalid
+parameter
+
+== Remarks ==
+
+It overrides the global direction set with the deprecated
+[[TTF_SetDirection]]().
+
+----
+[[CategoryAPI]]
+
+

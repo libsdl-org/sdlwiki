@@ -1,0 +1,26 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_FontFaceIsFixedWidth =
+
+Tell whether it is a fixed width font.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_FontFaceIsFixedWidth(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns 1 if true, 0 if not, -1 on error
+
+----
+[[CategoryAPI]]
+
+

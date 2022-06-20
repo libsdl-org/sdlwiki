@@ -1,0 +1,33 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_SetFontHinting =
+
+Set FreeType hinter settings.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void TTF_SetFontHinting(TTF_Font *font, int hinting);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|-
+|'''hinting'''
+|hinting flag
+|}
+
+== Remarks ==
+
+Setting it clears already generated glyphs, if any, from the cache.
+
+== Related Functions ==
+
+:[[TTF_GetFontHinting]]
+
+----
+[[CategoryAPI]]
+
+

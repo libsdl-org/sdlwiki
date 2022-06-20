@@ -1,0 +1,26 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_FontFaceStyleName =
+
+Get font style name 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+char * TTF_FontFaceStyleName(const TTF_Font *font);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''font'''
+|[[TTF_Font]] handle
+|}
+
+== Return Value ==
+
+Returns font style name, NULL on error
+
+----
+[[CategoryAPI]]
+
+

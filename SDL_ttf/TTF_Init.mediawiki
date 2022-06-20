@@ -1,0 +1,23 @@
+====== (This function is part of SDL_ttf, a separate library from SDL.) ======
+= TTF_Init =
+
+Initialize the TTF engine 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int TTF_Init(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+== Related Functions ==
+
+:[[TTF_Quit]]
+
+----
+[[CategoryAPI]]
+
+
