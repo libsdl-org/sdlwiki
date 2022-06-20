@@ -3,7 +3,7 @@
 This library allows you to display simple Rich Text Format (RTF) files in
 SDL applications.
 
-The RTF format specification is available at [https://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnrtfspec/html/rtfspec.asp MSDN].
+The RTF format specification is available at [https://interoperability.blob.core.windows.net/files/Archive_References/%5bMSFT-RTF%5d.pdf windows.net].
 
 The showrtf example application relies on the [https://github.com/libsdl-org/SDL_ttf SDL_ttf library] for loading
 fonts and displaying text.
