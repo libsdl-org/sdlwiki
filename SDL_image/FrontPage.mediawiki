@@ -1,6 +1,6 @@
 = SDL_image 2.0 =
 
-The latest version of this library is available from: [https://github.com/libsdl-org/SDL_image/releases GitHub].
+The latest version of this library is available from [https://github.com/libsdl-org/SDL_image/releases GitHub].
 
 This is a simple library to load images of various formats as SDL surfaces.
 
