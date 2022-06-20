@@ -20,21 +20,23 @@ libraries that add functionality become available. You must successfully
 call [[Mix_OpenAudio]]() before calling these functions. This API is only
 available in SDL_mixer 1.2.9 and later.
 
-<syntaxhighlight lang='c'>
-// usage...
-int i;
-const int total = Mix_GetNumChunkDecoders();
-for (i = 0; i < total; i++) {
-    printf("Supported chunk decoder: [%s]\n", Mix_GetChunkDecoder(i));
-}
-</syntaxhighlight>
-
 Appearing in this list doesn't promise your specific audio file will
 decode...but it's handy to know if you have, say, a functioning Timidity
 install.
 
 These return values are static, read-only data; do not modify or free it.
 The pointers remain valid until you call [[Mix_CloseAudio]]().
+
+
+== Code Examples ==
+
+<syntaxhighlight lang='c'>
+int i;
+const int total = Mix_GetNumChunkDecoders();
+for (i = 0; i < total; i++) {
+    printf("Supported chunk decoder: [%s]\n", Mix_GetChunkDecoder(i));
+}
+</syntaxhighlight>
 
 == Related Functions ==
 
