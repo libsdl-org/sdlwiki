@@ -13,6 +13,10 @@ int Mix_HaltMusic(void);
 
 Returns 0 on success, or -1 on error.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

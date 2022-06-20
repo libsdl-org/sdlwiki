@@ -20,6 +20,10 @@ int Mix_GroupAvailable(int tag);
 
 Returns first available channel, or -1 if none are available.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

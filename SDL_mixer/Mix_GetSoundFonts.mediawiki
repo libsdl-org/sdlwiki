@@ -13,6 +13,10 @@ const char* Mix_GetSoundFonts(void);
 
 Returns sound fonts
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

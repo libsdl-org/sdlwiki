@@ -25,6 +25,10 @@ Returns volume
 This did not affect the member variables of channel or chunk volume. If the
 specified volume is -1, just return the current master volume.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

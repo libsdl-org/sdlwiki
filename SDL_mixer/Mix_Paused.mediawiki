@@ -21,6 +21,10 @@ int Mix_Paused(int channel);
 Return 1 if paused. 0 if not. or number of paused channel (if channel ==
 -1)
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

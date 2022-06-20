@@ -28,6 +28,10 @@ current volume.
 
 If the specified channel is -1, set volume for all channels.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

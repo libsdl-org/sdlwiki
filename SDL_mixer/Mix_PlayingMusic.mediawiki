@@ -13,6 +13,10 @@ int Mix_PlayingMusic(void);
 
 Returns 1 if playing, 0 if not
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

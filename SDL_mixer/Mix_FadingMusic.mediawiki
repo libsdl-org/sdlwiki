@@ -13,6 +13,10 @@ Mix_Fading Mix_FadingMusic(void);
 
 Returns fading type
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

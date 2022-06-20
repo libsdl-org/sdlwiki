@@ -24,6 +24,10 @@ Returns music title
 
 If title tag is empty, filename will be returned
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

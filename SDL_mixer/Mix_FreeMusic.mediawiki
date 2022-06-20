@@ -16,6 +16,10 @@ void Mix_FreeMusic(Mix_Music *music);
 |Mix Music
 |}
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 == Related Functions ==
 
 :[[Mix_LoadMUS]]

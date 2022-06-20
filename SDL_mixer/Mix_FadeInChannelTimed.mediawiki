@@ -32,6 +32,10 @@ int Mix_FadeInChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ms, int
 
 Returns 0 if successful, -1 on error
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

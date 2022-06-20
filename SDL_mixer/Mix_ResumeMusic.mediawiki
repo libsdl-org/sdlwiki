@@ -9,6 +9,10 @@ Resume the music stream
 void Mix_ResumeMusic(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

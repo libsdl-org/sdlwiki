@@ -29,6 +29,10 @@ int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
 
 Returns which channel was used to play the sound.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

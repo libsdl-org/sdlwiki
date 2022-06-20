@@ -21,6 +21,10 @@ double Mix_GetMusicLoopStartTime(Mix_Music *music);
 Returns -1.0 if this feature is not used for this music or not supported
 for some codec
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

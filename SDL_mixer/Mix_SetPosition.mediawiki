@@ -63,6 +63,10 @@ it on to the audio device.
 This is a convenience wrapper over [[Mix_SetDistance]]() and
 [[Mix_SetPanning]]().
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

@@ -20,6 +20,10 @@ SDL_bool Mix_HasChunkDecoder(const char *name);
 
 Returns SDL_TRUE or SDL_FALSE
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

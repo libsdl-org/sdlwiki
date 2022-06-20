@@ -25,6 +25,10 @@ Returns the number of reserved channels.
 don't allocate them dynamically to the next sample if requested with a -1
 value below.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

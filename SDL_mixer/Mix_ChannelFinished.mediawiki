@@ -24,6 +24,10 @@ do not call SDL_LockAudio() from this callback; you will either be inside
 the audio callback, or SDL_mixer will explicitly lock the audio before
 calling your callback.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

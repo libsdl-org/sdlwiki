@@ -25,6 +25,10 @@ Returns flags successfully initialized, or 0 on failure.
 Flags should be one or more flags from [[MIX_InitFlags]] OR'd together. It
 returns the flags successfully initialized, or 0 on failure.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 == Related Functions ==
 
 :[[Mix_Quit]]

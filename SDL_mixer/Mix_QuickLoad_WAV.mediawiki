@@ -20,6 +20,10 @@ Mix_Chunk * Mix_QuickLoad_WAV(Uint8 *mem);
 
 Returns Mix Chunk, or NULL on error.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 == Related Functions ==
 
 :[[Mix_FreeChunk]]

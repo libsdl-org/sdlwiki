@@ -47,6 +47,10 @@ passing it on to the audio device.
 
 This uses the [[Mix_RegisterEffect]]() API internally.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

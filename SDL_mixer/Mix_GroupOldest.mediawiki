@@ -20,6 +20,10 @@ int Mix_GroupOldest(int tag);
 
 Returns the "oldest" sample playing in a group of channels
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

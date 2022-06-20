@@ -9,6 +9,10 @@ Close the mixer, halting all playing audio
 void Mix_CloseAudio(void);
 </syntaxhighlight>
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 == Related Functions ==
 
 :[[Mix_Init]]

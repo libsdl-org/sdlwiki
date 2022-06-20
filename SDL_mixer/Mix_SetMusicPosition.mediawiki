@@ -25,6 +25,10 @@ Returns 0 if successful, or -1 if it failed or not implemented.
 This function is only implemented for MOD music formats (set pattern order
 number) and for WAV, OGG, FLAC, MP3, and MODPLUG music at the moment.
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

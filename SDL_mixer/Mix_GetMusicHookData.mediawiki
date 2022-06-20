@@ -13,6 +13,10 @@ void * Mix_GetMusicHookData(void);
 
 Returns pointer to the user data
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 

@@ -16,6 +16,10 @@ void Mix_HookMusicFinished(void (SDLCALL *music_finished)(void));
 |callback function
 |}
 
+== Version ==
+
+This function is available since SDL_mixer 2.0.0.
+
 ----
 [[CategoryAPI]]
 
