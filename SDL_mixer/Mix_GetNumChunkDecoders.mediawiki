@@ -27,7 +27,6 @@ install.
 These return values are static, read-only data; do not modify or free it.
 The pointers remain valid until you call [[Mix_CloseAudio]]().
 
-
 == Code Examples ==
 
 <syntaxhighlight lang='c'>
