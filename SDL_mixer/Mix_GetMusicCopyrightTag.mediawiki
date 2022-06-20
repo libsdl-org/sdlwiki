@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicCopyrightTag =
+
+Get music copyright from meta-tag if possible 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char* Mix_GetMusicCopyrightTag(const Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|Mix Music
+|}
+
+== Return Value ==
+
+Returns music copyright tag
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HaltChannel =
+
+Halt playing of a particular channel 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_HaltChannel(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+----
+[[CategoryAPI]]
+
+

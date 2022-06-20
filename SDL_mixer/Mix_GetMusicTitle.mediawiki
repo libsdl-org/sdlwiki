@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicTitle =
+
+Get music title from meta-tag if possible.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char* Mix_GetMusicTitle(const Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|Mix Music
+|}
+
+== Return Value ==
+
+Returns music title
+
+== Remarks ==
+
+If title tag is empty, filename will be returned
+
+----
+[[CategoryAPI]]
+
+

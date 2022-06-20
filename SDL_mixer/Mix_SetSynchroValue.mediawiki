@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_SetSynchroValue =
+
+Synchro value is set from modules while playing 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_SetSynchroValue(int value);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''value'''
+|value
+|}
+
+== Remarks ==
+
+Not supported by any players at this time
+
+----
+[[CategoryAPI]]
+
+

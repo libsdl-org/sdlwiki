@@ -1,0 +1,29 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FreeChunk =
+
+Free an audio chunk previously loaded 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_FreeChunk(Mix_Chunk *chunk);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''chunk'''
+|Mix Chunka
+|}
+
+== Related Functions ==
+
+:[[Mix_LoadWAV]]
+:[[Mix_LoadWAV_RW]]
+:[[Mix_QuickLoad_WAV]]
+:[[Mix_QuickLoad_RAW]]
+
+----
+[[CategoryAPI]]
+
+

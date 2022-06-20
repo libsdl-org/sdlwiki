@@ -1,0 +1,22 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Pause =
+
+Pause a particular channel 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_Pause(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+----
+[[CategoryAPI]]
+
+

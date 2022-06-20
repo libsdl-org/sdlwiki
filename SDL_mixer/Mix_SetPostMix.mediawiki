@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_SetPostMix =
+
+Set a function that is called after all mixing is performed.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_SetPostMix(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len), void *arg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''mix_func'''
+|callback function
+|-
+|'''arg'''
+|callback argument to be passed
+|}
+
+== Remarks ==
+
+This can be used to provide real-time visual display of the audio stream or
+add a custom mixer filter for the stream data.
+
+----
+[[CategoryAPI]]
+
+

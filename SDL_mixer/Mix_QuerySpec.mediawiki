@@ -1,0 +1,32 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_QuerySpec =
+
+Find out what the actual audio device parameters are.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_QuerySpec(int *frequency, Uint16 *format, int *channels);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''frequency'''
+|frequency
+|-
+|'''format'''
+|audio format
+|-
+|'''channels'''
+|number of channels
+|}
+
+== Return Value ==
+
+Returns 1 if the audio has been opened, 0 otherwise.
+
+----
+[[CategoryAPI]]
+
+

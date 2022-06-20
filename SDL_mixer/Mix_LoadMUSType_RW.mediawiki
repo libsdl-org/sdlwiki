@@ -1,0 +1,37 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_LoadMUSType_RW =
+
+Load a music file from an SDL_RWop object assuming a specific format 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Mix_Music * Mix_LoadMUSType_RW(SDL_RWops *src, Mix_MusicType type, int freesrc);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''src'''
+|RWops
+|-
+|'''type'''
+|music type
+|-
+|'''freesrc'''
+|can be set so that the RWops is freed after this function is called
+|}
+
+== Return Value ==
+
+Returns Mix Music, or NULL on error.
+
+== Related Functions ==
+
+:[[Mix_MusicType]]
+:[[Mix_FreeMusic]]
+
+----
+[[CategoryAPI]]
+
+

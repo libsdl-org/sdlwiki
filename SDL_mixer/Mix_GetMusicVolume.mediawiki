@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicVolume =
+
+Get the current volume value in the range of 0-128 of a music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GetMusicVolume(Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|}
+
+== Return Value ==
+
+Returns volume
+
+----
+[[CategoryAPI]]
+
+

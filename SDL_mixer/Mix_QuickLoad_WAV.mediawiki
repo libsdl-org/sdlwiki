@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_QuickLoad_WAV =
+
+Load a wave file of the mixer format from a memory buffer 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Mix_Chunk * Mix_QuickLoad_WAV(Uint8 *mem);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''mem'''
+|memory buffer
+|}
+
+== Return Value ==
+
+Returns Mix Chunk, or NULL on error.
+
+== Related Functions ==
+
+:[[Mix_FreeChunk]]
+
+----
+[[CategoryAPI]]
+
+

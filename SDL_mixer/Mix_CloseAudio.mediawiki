@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_CloseAudio =
+
+Close the mixer, halting all playing audio 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_CloseAudio(void);
+</syntaxhighlight>
+
+== Related Functions ==
+
+:[[Mix_Init]]
+
+----
+[[CategoryAPI]]
+
+

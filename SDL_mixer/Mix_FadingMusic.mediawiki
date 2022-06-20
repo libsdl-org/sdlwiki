@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadingMusic =
+
+Query the fading status of music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Mix_Fading Mix_FadingMusic(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns fading type
+
+----
+[[CategoryAPI]]
+
+

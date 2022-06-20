@@ -1,0 +1,38 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadeInChannelTimed =
+
+Fade in a channel over "ms" milliseconds at position 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_FadeInChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ms, int ticks);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|-
+|'''chunk'''
+|chunk
+|-
+|'''loops'''
+|loops
+|-
+|'''ms'''
+|milliseconds
+|-
+|'''ticks'''
+|ticks
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+----
+[[CategoryAPI]]
+
+

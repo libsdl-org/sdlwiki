@@ -1,0 +1,31 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GroupCount =
+
+Returns the number of channels in a group.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GroupCount(int tag);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''tag'''
+|tag
+|}
+
+== Return Value ==
+
+Returns the number of channels in a group.
+
+== Remarks ==
+
+This is also a subtle way to get the total number of channels when 'tag' is
+-1
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,29 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_PlayMusic =
+
+Play Music 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_PlayMusic(Mix_Music *music, int loops);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|-
+|'''loops'''
+|loops
+|}
+
+== Return Value ==
+
+Returns which channel was used to play the music.
+
+----
+[[CategoryAPI]]
+
+

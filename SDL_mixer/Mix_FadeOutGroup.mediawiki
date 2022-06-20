@@ -1,0 +1,29 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadeOutGroup =
+
+Halt a group, fading it out progressively till it's silent The ms parameter indicates the number of milliseconds the fading will take.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_FadeOutGroup(int tag, int ms);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''tag'''
+|tag
+|-
+|'''ms'''
+|milliseconds
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+----
+[[CategoryAPI]]
+
+

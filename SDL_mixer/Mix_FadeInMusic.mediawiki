@@ -1,0 +1,32 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadeInMusic =
+
+Fade in music or a channel over "ms" milliseconds, same semantics as the "Play" functions 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|-
+|'''loops'''
+|loops
+|-
+|'''ms'''
+|milliseconds
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,35 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_PlayChannelTimed =
+
+The same as above, but the sound is played at most 'ticks' milliseconds 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|-
+|'''chunk'''
+|chunk
+|-
+|'''loops'''
+|loops
+|-
+|'''ticks'''
+|ticks
+|}
+
+== Return Value ==
+
+Returns which channel was used to play the sound.
+
+----
+[[CategoryAPI]]
+
+

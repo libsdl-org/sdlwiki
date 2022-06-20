@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_PlayingMusic =
+
+Check the status of music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_PlayingMusic(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns 1 if playing, 0 if not
+
+----
+[[CategoryAPI]]
+
+

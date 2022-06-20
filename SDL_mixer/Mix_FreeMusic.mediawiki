@@ -1,0 +1,28 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FreeMusic =
+
+Free an audio music previously loaded 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_FreeMusic(Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|Mix Music
+|}
+
+== Related Functions ==
+
+:[[Mix_LoadMUS]]
+:[[Mix_LoadMUS_RW]]
+:[[Mix_LoadMUSType_RW]]
+
+----
+[[CategoryAPI]]
+
+

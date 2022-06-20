@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_SetSoundFonts =
+
+Set SoundFonts paths to use by supported MIDI backends 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_SetSoundFonts(const char *paths);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''paths'''
+|paths
+|}
+
+== Return Value ==
+
+Returns 1 if successful, 0 on error
+
+----
+[[CategoryAPI]]
+
+

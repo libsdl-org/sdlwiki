@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GroupAvailable =
+
+Finds the first available channel in a group of channels, 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GroupAvailable(int tag);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''tag'''
+|tag
+|}
+
+== Return Value ==
+
+Returns first available channel, or -1 if none are available.
+
+----
+[[CategoryAPI]]
+
+

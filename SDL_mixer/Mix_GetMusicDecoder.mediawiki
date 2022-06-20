@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicDecoder =
+
+Get music decoder name 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char * Mix_GetMusicDecoder(int index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''index'''
+|index of the music decoder
+|}
+
+== Return Value ==
+
+Returns music decoder name
+
+== Related Functions ==
+
+:[[Mix_GetNumMusicDecoders]]
+
+----
+[[CategoryAPI]]
+
+

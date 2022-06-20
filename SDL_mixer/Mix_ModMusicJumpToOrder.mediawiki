@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_ModMusicJumpToOrder =
+
+Jump to a given order in mod music.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_ModMusicJumpToOrder(int order);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''order'''
+|order
+|}
+
+== Return Value ==
+
+Returns 0 if successful, or -1 if failed or isn't implemented.
+
+== Remarks ==
+
+Only for MOD music formats.
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadeOutMusic =
+
+Halt music stream, fading it out progressively till it's silent The ms parameter indicates the number of milliseconds the fading will take.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_FadeOutMusic(int ms);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''ms'''
+|milliseconds
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+----
+[[CategoryAPI]]
+
+

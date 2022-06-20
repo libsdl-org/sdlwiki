@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetChunk =
+
+Get the [[Mix_Chunk]] currently associated with a mixer channel 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+Mix_Chunk * Mix_GetChunk(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+== Return Value ==
+
+Returns NULL if it's an invalid channel, or there's no chunk associated.
+
+----
+[[CategoryAPI]]
+
+

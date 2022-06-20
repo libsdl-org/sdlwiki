@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetChunkDecoder =
+
+Get chunk decoder name 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char * Mix_GetChunkDecoder(int index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''index'''
+|index of the chunk decoder
+|}
+
+== Return Value ==
+
+Returns chunk decoder name
+
+== Related Functions ==
+
+:[[Mix_GetNumChunkDecoders]]
+
+----
+[[CategoryAPI]]
+
+

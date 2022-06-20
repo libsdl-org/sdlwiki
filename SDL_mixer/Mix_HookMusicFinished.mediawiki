@@ -1,0 +1,22 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HookMusicFinished =
+
+Add your own callback for when the music has finished playing or when it is stopped from a call to [[Mix_HaltMusic]].
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_HookMusicFinished(void (SDLCALL *music_finished)(void));
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music_finished'''
+|callback function
+|}
+
+----
+[[CategoryAPI]]
+
+

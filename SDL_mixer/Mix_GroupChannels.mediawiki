@@ -1,0 +1,32 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GroupChannels =
+
+Assign several consecutive channels to a group 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GroupChannels(int from, int to, int tag);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''from'''
+|from
+|-
+|'''to'''
+|to
+|-
+|'''tag'''
+|tag
+|}
+
+== Return Value ==
+
+Returns 0 if successful, negative on error
+
+----
+[[CategoryAPI]]
+
+

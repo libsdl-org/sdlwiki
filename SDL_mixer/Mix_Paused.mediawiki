@@ -1,0 +1,27 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Paused =
+
+Tell whether a particular channel is paused 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_Paused(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+== Return Value ==
+
+Return 1 if paused. 0 if not. or number of paused channel (if channel ==
+-1)
+
+----
+[[CategoryAPI]]
+
+

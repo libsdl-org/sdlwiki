@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HaltGroup =
+
+Halt playing of a particular group 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_HaltGroup(int tag);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''tag'''
+|tag
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+----
+[[CategoryAPI]]
+
+

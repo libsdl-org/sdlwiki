@@ -1,0 +1,35 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_OpenAudio =
+
+Open the mixer with a certain audio format 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_OpenAudio(int frequency, Uint16 format, int channels, int chunksize);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''frequency'''
+|frequency
+|-
+|'''format'''
+|audio format
+|-
+|'''channels'''
+|number of channels
+|-
+|'''chunksize'''
+|chunk size
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+----
+[[CategoryAPI]]
+
+

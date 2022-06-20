@@ -1,0 +1,31 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_ReserveChannels =
+
+Reserve the first channels (0 -> n-1) for the application, i.e.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_ReserveChannels(int num);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''num'''
+|number of channels
+|}
+
+== Return Value ==
+
+Returns the number of reserved channels.
+
+== Remarks ==
+
+don't allocate them dynamically to the next sample if requested with a -1
+value below.
+
+----
+[[CategoryAPI]]
+
+

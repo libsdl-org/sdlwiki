@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Quit =
+
+Unloads libraries loaded with [[Mix_Init]] 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_Quit(void);
+</syntaxhighlight>
+
+== Related Functions ==
+
+:[[Mix_Init]]
+
+----
+[[CategoryAPI]]
+
+

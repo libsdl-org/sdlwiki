@@ -1,0 +1,35 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_FadeInMusicPos =
+
+Fade in music over "ms" milliseconds at position 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_FadeInMusicPos(Mix_Music *music, int loops, int ms, double position);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|-
+|'''loops'''
+|loops
+|-
+|'''ms'''
+|milliseconds
+|-
+|'''position'''
+|position
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+----
+[[CategoryAPI]]
+
+

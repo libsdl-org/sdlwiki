@@ -1,0 +1,23 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_MusicDuration =
+
+Get Music duration.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+double Mix_MusicDuration(Mix_Music *music);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns music duration in seconds. -1 on error
+
+== Remarks ==
+
+If NULL is passed, returns duration of current playing music.
+
+----
+[[CategoryAPI]]
+
+

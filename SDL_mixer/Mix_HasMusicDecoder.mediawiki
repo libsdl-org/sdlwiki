@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HasMusicDecoder =
+
+Check if <code>name</code> is a music decoder 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool Mix_HasMusicDecoder(const char *name);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''name'''
+|name
+|}
+
+== Return Value ==
+
+Returns SDL_TRUE or SDL_FALSE
+
+----
+[[CategoryAPI]]
+
+

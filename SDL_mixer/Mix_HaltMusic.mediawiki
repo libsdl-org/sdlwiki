@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HaltMusic =
+
+Halt playing of music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_HaltMusic(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+----
+[[CategoryAPI]]
+
+

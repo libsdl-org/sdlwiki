@@ -1,0 +1,36 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Init =
+
+Loads dynamic libraries and prepares them for use.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_Init(int flags);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''flags'''
+|initialization flags
+|}
+
+== Return Value ==
+
+Returns flags successfully initialized, or 0 on failure.
+
+== Remarks ==
+
+Flags should be one or more flags from [[MIX_InitFlags]] OR'd together. It
+returns the flags successfully initialized, or 0 on failure.
+
+== Related Functions ==
+
+:[[Mix_Quit]]
+:[[MIX_InitFlags]]
+
+----
+[[CategoryAPI]]
+
+

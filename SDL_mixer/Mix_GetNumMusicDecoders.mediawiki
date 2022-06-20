@@ -1,0 +1,24 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetNumMusicDecoders =
+
+Get the number of music decoders 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GetNumMusicDecoders(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns number of music decoders
+
+== Related Functions ==
+
+:[[Mix_GetMusicDecoder]]
+:[[Mix_HasMusicDecoder]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,22 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Resume =
+
+Resume a particular channel 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_Resume(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+----
+[[CategoryAPI]]
+
+

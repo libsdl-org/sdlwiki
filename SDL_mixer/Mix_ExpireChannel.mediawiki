@@ -1,0 +1,34 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_ExpireChannel =
+
+Change the expiration delay for a particular channel.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_ExpireChannel(int channel, int ticks);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|-
+|'''ticks'''
+|ticks
+|}
+
+== Return Value ==
+
+Returns 0 on success, or -1 on error.
+
+== Remarks ==
+
+The sample will stop playing after the 'ticks' milliseconds have elapsed,
+or remove the expiration if 'ticks' is -1
+
+----
+[[CategoryAPI]]
+
+

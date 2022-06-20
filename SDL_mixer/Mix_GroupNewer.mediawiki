@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GroupNewer =
+
+Finds the "most recent" (i.e.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GroupNewer(int tag);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''tag'''
+|tag
+|}
+
+== Return Value ==
+
+Returns the "most recent" (i.e. last) sample playing in a group of channels
+
+== Remarks ==
+
+last) sample playing in a group of channels
+
+----
+[[CategoryAPI]]
+
+

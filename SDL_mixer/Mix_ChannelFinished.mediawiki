@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_ChannelFinished =
+
+Add your own callback when a channel has finished playing.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_ChannelFinished(void (SDLCALL *channel_finished)(int channel));
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel_finished'''
+|callback function
+|}
+
+== Remarks ==
+
+NULL to disable callback. The callback may be called from the mixer's audio
+callback or it could be called as a result of [[Mix_HaltChannel]](), etc.
+do not call SDL_LockAudio() from this callback; you will either be inside
+the audio callback, or SDL_mixer will explicitly lock the audio before
+calling your callback.
+
+----
+[[CategoryAPI]]
+
+

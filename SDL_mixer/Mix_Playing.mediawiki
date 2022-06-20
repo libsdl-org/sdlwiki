@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Playing =
+
+Check the status of a specific channel.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_Playing(int channel);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''channel'''
+|channel
+|}
+
+== Return Value ==
+
+Returns number of channel playings
+
+== Remarks ==
+
+If the specified channel is -1, check all channels.
+
+----
+[[CategoryAPI]]
+
+

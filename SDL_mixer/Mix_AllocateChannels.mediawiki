@@ -1,0 +1,30 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_AllocateChannels =
+
+Dynamically change the number of channels managed by the mixer.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_AllocateChannels(int numchans);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''numchans'''
+|number of channels
+|}
+
+== Return Value ==
+
+Returns the new number of allocated channels.
+
+== Remarks ==
+
+If decreasing the number of channels, the upper channels are stopped.
+
+----
+[[CategoryAPI]]
+
+

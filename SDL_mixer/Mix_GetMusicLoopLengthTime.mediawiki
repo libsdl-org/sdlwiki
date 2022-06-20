@@ -1,0 +1,27 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicLoopLengthTime =
+
+Get the loop time length of music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+double Mix_GetMusicLoopLengthTime(Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|}
+
+== Return Value ==
+
+Returns -1.0 if this feature is not used for this music or not supported
+for some codec
+
+----
+[[CategoryAPI]]
+
+

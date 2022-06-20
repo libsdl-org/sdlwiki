@@ -1,0 +1,23 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetTimidityCfg =
+
+Get full path of Timidity config file.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char* Mix_GetTimidityCfg(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns path, NULL if not set
+
+== Remarks ==
+
+(e.g. /etc/timidity.cfg)
+
+----
+[[CategoryAPI]]
+
+

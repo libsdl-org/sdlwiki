@@ -1,0 +1,24 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_Linked_Version =
+
+This function gets the version of the dynamically linked SDL_mixer library.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const SDL_version * Mix_Linked_Version(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns SDL_mixer version
+
+== Remarks ==
+
+it should NOT be used to fill a version structure, instead you should use
+the SDL_MIXER_VERSION() macro.
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,29 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_HookMusic =
+
+Add your own music player or additional mixer function.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_HookMusic(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len), void *arg);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''mix_func'''
+|mixer function callback
+|-
+|'''arg'''
+|callback argument to be passed
+|}
+
+== Remarks ==
+
+If 'mix_func' is NULL, the default music player is re-enabled.
+
+----
+[[CategoryAPI]]
+
+

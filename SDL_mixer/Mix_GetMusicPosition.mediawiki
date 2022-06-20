@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetMusicPosition =
+
+Get the time current position of music stream 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+double Mix_GetMusicPosition(Mix_Music *music);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''music'''
+|music
+|}
+
+== Return Value ==
+
+Returns -1.0 if this feature is not supported for some codec
+
+----
+[[CategoryAPI]]
+
+

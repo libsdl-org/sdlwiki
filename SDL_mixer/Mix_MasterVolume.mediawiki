@@ -1,0 +1,31 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_MasterVolume =
+
+Set the master volume for all channels.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_MasterVolume(int volume);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''volume'''
+|volume
+|}
+
+== Return Value ==
+
+Returns volume
+
+== Remarks ==
+
+This did not affect the member variables of channel or chunk volume. If the
+specified volume is -1, just return the current master volume.
+
+----
+[[CategoryAPI]]
+
+

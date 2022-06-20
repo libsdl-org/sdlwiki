@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetSynchroValue =
+
+Get Synchro value 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_GetSynchroValue(void);
+</syntaxhighlight>
+
+== Remarks ==
+
+Not supported by any players at this time
+
+----
+[[CategoryAPI]]
+
+

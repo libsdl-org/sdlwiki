@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_GetSoundFonts =
+
+Get SoundFonts paths to use by supported MIDI backends 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char* Mix_GetSoundFonts(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns sound fonts
+
+----
+[[CategoryAPI]]
+
+

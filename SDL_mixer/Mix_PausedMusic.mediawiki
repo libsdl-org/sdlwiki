@@ -1,0 +1,19 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_PausedMusic =
+
+Tell whether the music stream is paused 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_PausedMusic(void);
+</syntaxhighlight>
+
+== Return Value ==
+
+Returns 1 if paused, 0 if not.
+
+----
+[[CategoryAPI]]
+
+

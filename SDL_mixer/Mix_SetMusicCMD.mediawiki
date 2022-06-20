@@ -1,0 +1,26 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_SetMusicCMD =
+
+Stop music and set external music playback command 
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+int Mix_SetMusicCMD(const char *command);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''command'''
+|command
+|}
+
+== Return Value ==
+
+Returns 0 if successful, -1 on error
+
+----
+[[CategoryAPI]]
+
+
