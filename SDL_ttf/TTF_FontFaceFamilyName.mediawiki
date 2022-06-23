@@ -6,7 +6,7 @@ Get font family name
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-char * TTF_FontFaceFamilyName(const TTF_Font *font);
+const char * TTF_FontFaceFamilyName(const TTF_Font *font);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -19,6 +19,10 @@ char * TTF_FontFaceFamilyName(const TTF_Font *font);
 == Return Value ==
 
 Returns font family name, NULL on error
+
+== Remarks ==
+
+The returned value shouldn't be modified nor freed.
 
 ----
 [[CategoryAPI]]
