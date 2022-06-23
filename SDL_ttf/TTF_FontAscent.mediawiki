@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_FontAscent =
 
-Get the offset from the baseline to the top of the font This is a positive value, relative to the baseline.
+Query the offset from the baseline to the top of a font.
 
 == Syntax ==
 
@@ -13,12 +13,20 @@ int TTF_FontAscent(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns font ascent
+Returns the font's ascent.
+
+== Remarks ==
+
+This is a positive value, relative to the baseline.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

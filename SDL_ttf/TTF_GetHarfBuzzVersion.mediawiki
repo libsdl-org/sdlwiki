@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetHarfBuzzVersion =
 
-This function stores the version of the HarfBuzz library in use, or 0 if HarfBuzz is not available.
+Query the version of the HarfBuzz library in use.
 
 == Syntax ==
 
@@ -13,14 +13,22 @@ void TTF_GetHarfBuzzVersion(int *major, int *minor, int *patch);
 
 {|
 |'''major'''
-|pointer to get the major version number
+|to be filled in with the major version number. Can be NULL.
 |-
 |'''minor'''
-|pointer to get the minor version number
+|to be filled in with the minor version number. Can be NULL.
 |-
 |'''patch'''
-|pointer to get the param version number
+|to be filled in with the param version number. Can be NULL.
 |}
+
+== Remarks ==
+
+If HarfBuzz is not available, the version reported is 0.0.0.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.18.
 
 ----
 [[CategoryAPI]]

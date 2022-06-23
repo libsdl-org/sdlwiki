@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_FontFaceStyleName =
 
-Get font style name 
+Query a font's style name.
 
 == Syntax ==
 
@@ -13,16 +13,24 @@ const char * TTF_FontFaceStyleName(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns font style name, NULL on error
+Returns the font's style name.
 
 == Remarks ==
 
-The returned value shouldn't be modified nor freed.
+This string is dictated by the contents of the font file.
+
+Note that the returned string is to internal storage, and should not be
+modifed or free'd by the caller. The string becomes invalid, with the rest
+of the font, when <code>font</code> is handed to [[TTF_CloseFont]]().
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_RenderText_LCD_Wrapped =
 
-Create a 32-bit surface (SDL_PIXELFORMAT_ARGB8888) and render the given text using FreeType LCD rendering, with the given font and colors.
+Render word-wrapped Latin1 text at LCD subpixel quality to a new ARGB surface.
 
 == Syntax ==
 
@@ -14,34 +14,48 @@ SDL_Surface * TTF_RenderText_LCD_Wrapped(TTF_Font *font,
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to render with.
 |-
 |'''text'''
-|text to render
+|text to render, in Latin1 encoding.
 |-
 |'''fg'''
-|foreground color
+|the foreground color for the text.
 |-
 |'''bg'''
-|background color
-|-
-|'''wrapLength'''
-|wrap length
+|the background color for the text.
 |}
 
 == Return Value ==
 
-Returns the new surface, or NULL if there was an error.
+Returns a new 32-bit, ARGB surface, or NULL if there was an error.
 
 == Remarks ==
 
+This function will allocate a new 32-bit, ARGB surface, and render
+alpha-blended text using FreeType's LCD subpixel rendering. This function
+returns the new surface, or NULL if there was an error.
+
 Text is wrapped to multiple lines on line endings and on word boundaries if
-it extends beyond wrapLength in pixels. This function returns the new
-surface, or NULL if there was an error.
+it extends beyond <code>wrapLength</code> in pixels.
+
+If wrapLength is 0, this function will only wrap on newline characters.
+
+You almost certainly want [[TTF_RenderUTF8_LCD_Wrapped]]() unless you're
+sure you have a 1-byte Latin1 encoding. US ASCII characters will work with
+either function, but most other Unicode characters packed into a
+<code>const char *</code> will need UTF-8.
+
+You can render at other quality levels with
+[[TTF_RenderText_Solid_Wrapped]], [[TTF_RenderText_Shaded_Wrapped]], and
+[[TTF_RenderText_Blended_Wrapped]].
+
+== Version ==
+
+This function is available since SDL_ttf 2.19.2.
 
 == Related Functions ==
 
-:[[TTF_RenderText_LCD_Wrapped]]
 :[[TTF_RenderUTF8_LCD_Wrapped]]
 :[[TTF_RenderUNICODE_LCD_Wrapped]]
 

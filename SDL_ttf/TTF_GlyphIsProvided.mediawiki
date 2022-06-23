@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GlyphIsProvided =
 
-Check wether a glyph is provided by the font or not 
+Check whether a glyph is provided by the font for a 16-bit codepoint.
 
 == Syntax ==
 
@@ -13,15 +13,30 @@ int TTF_GlyphIsProvided(TTF_Font *font, Uint16 ch);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |-
 |'''ch'''
-|char index, 16bits
+|the character code to check.
 |}
 
 == Return Value ==
 
-Returns 1 if provided
+Returns non-zero if font provides a glyph for this character, zero if not.
+
+== Remarks ==
+
+Note that this version of the function takes a 16-bit character code, which
+covers the Basic Multilingual Plane, but is insufficient to cover the
+entire set of possible Unicode values, including emoji glyphs. You should
+use [[TTF_GlyphIsProvided32]]() instead, which offers the same
+functionality but takes a 32-bit codepoint instead.
+
+The only reason to use this function is that it was available since the
+beginning of time, more or less.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

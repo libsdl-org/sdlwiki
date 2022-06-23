@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetFreeTypeVersion =
 
-This function stores the version of the FreeType2 library in use.
+Query the version of the FreeType library in use.
 
 == Syntax ==
 
@@ -13,18 +13,22 @@ void TTF_GetFreeTypeVersion(int *major, int *minor, int *patch);
 
 {|
 |'''major'''
-|pointer to get the major version number
+|to be filled in with the major version number. Can be NULL.
 |-
 |'''minor'''
-|pointer to get the minor version number
+|to be filled in with the minor version number. Can be NULL.
 |-
 |'''patch'''
-|pointer to get the param version number
+|to be filled in with the param version number. Can be NULL.
 |}
 
 == Remarks ==
 
 [[TTF_Init]]() should be called before calling this function.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.18.
 
 == Related Functions ==
 

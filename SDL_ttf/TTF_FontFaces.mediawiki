@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_FontFaces =
 
-Get the number of faces of the font 
+Query the number of faces of a font.
 
 == Syntax ==
 
@@ -13,12 +13,16 @@ long TTF_FontFaces(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns number of FreeType font faces
+Returns the number of FreeType font faces.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

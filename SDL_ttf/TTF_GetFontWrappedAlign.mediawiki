@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetFontWrappedAlign =
 
-Get wrap alignment option 
+Query a font's current wrap alignment option.
 
 == Syntax ==
 
@@ -13,12 +13,24 @@ int TTF_GetFontWrappedAlign(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns wrap alignment option
+Returns the font's current wrap alignment option.
+
+== Remarks ==
+
+The wrap alignment option can be one of the following:
+
+* <code>[[TTF_WRAPPED_ALIGN_LEFT]]</code>
+* <code>[[TTF_WRAPPED_ALIGN_CENTER]]</code>
+* <code>[[TTF_WRAPPED_ALIGN_RIGHT]]</code>
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

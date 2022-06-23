@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_ByteSwappedUNICODE =
 
-This function tells the library whether UNICODE text is generally byteswapped.
+Tell SDL_ttf whether UNICODE text is generally byteswapped.
 
 == Syntax ==
 
@@ -20,6 +20,10 @@ void TTF_ByteSwappedUNICODE(SDL_bool swapped);
 
 A UNICODE BOM character in a string will override this setting for the
 remainder of that string.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

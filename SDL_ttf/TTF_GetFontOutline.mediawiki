@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetFontOutline =
 
-Retrieve the font outline.
+Query a font's current outline.
 
 == Syntax ==
 
@@ -13,12 +13,16 @@ int TTF_GetFontOutline(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns font outline
+Returns the font's current outline value.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

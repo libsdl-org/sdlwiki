@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_SetFontHinting =
 
-Set FreeType hinter settings.
+Set a font's current hinter setting.
 
 == Syntax ==
 
@@ -13,15 +13,27 @@ void TTF_SetFontHinting(TTF_Font *font, int hinting);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to set a new hinter setting on.
 |-
 |'''hinting'''
-|hinting flag
+|the new hinter setting.
 |}
 
 == Remarks ==
 
-Setting it clears already generated glyphs, if any, from the cache.
+Setting it clears already-generated glyphs, if any, from the cache.
+
+The hinter setting is a single value:
+
+* <code>[[TTF_HINTING_NORMAL]]</code>
+* <code>[[TTF_HINTING_LIGHT]]</code>
+* <code>[[TTF_HINTING_MONO]]</code>
+* <code>[[TTF_HINTING_NONE]]</code>
+* <code>[[TTF_HINTING_LIGHT_SUBPIXEL]]</code> (available in SDL_ttf 2.0.18 and later)
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

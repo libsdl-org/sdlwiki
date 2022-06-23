@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_SetFontSizeDPI =
 
-Set font size dynamically.
+Set font size dynamically with target resolutions (in DPI).
 
 == Syntax ==
 
@@ -13,16 +13,16 @@ int TTF_SetFontSizeDPI(TTF_Font *font, int ptsize, unsigned int hdpi, unsigned i
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to resize.
 |-
 |'''ptsize'''
-|point size
+|the new point size.
 |-
 |'''hdpi'''
-|horizontal DPI
+|the target horizontal DPI.
 |-
 |'''vdpi'''
-|vertical DPI
+|the target vertical DPI.
 |}
 
 == Return Value ==
@@ -31,7 +31,11 @@ Returns 0 if successful, -1 on error.
 
 == Remarks ==
 
-This clears already generated glyphs, if any, from the cache.
+This clears already-generated glyphs, if any, from the cache.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.18.
 
 ----
 [[CategoryAPI]]

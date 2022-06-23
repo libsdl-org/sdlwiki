@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_SetFontKerning =
 
-Set if kerning is allowed for this font 
+Set if kerning is allowed for a font.
 
 == Syntax ==
 
@@ -13,11 +13,23 @@ void TTF_SetFontKerning(TTF_Font *font, int allowed);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to set kerning on.
 |-
 |'''allowed'''
-|enable or not kerning
+|non-zero to allow kerning, zero to disallow.
 |}
+
+== Remarks ==
+
+Newly-opened fonts default to allowing kerning. This is generally a good
+policy unless you have a strong reason to disable it, as it tends to
+produce better rendering (with kerning disabled, some fonts might render
+the word <code>kerning</code> as something that looks like
+<code>keming</code> for example).
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

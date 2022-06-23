@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_FontLineSkip =
 
-Get the recommended spacing between lines of text for this font 
+Query the recommended spacing between lines of text for a font.
 
 == Syntax ==
 
@@ -13,12 +13,16 @@ int TTF_FontLineSkip(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns spacing value
+Returns the font's recommended spacing.
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 ----
 [[CategoryAPI]]

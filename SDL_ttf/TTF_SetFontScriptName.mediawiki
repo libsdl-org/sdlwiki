@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_SetFontScriptName =
 
-Set script per font.
+Set script to be used for text shaping by a font.
 
 == Syntax ==
 
@@ -13,20 +13,29 @@ int TTF_SetFontScriptName(TTF_Font *font, const char *script);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to specify a direction for.
 |-
 |'''script'''
-|null terminated string of exactly 4 characters.
+|null-terminated string of exactly 4 characters.
 |}
 
 == Return Value ==
 
-Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz or invalid
-parameter
+Returns 0 on success, or -1 on error.
 
 == Remarks ==
 
-It overrides the global script set with the deprecated [[TTF_SetScript]]().
+Any value supplied here will override the global script set with the
+deprecated [[TTF_SetScript]]().
+
+The supplied script value must be a null-terminated string of exactly four
+characters.
+
+If SDL_ttf was not built with HarfBuzz support, this function returns -1.
+
+== Version ==
+
+This function is available since SDL_ttf 2.19.2.
 
 ----
 [[CategoryAPI]]

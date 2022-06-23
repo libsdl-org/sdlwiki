@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_CloseFont =
 
-Close an opened font file 
+Dispose of a previously-created font.
 
 == Syntax ==
 
@@ -13,8 +13,18 @@ void TTF_CloseFont(TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to dispose of.
 |}
+
+== Remarks ==
+
+Call this when done with a font. This function will free any resources
+associated with it.
+
+The font is not valid after being passed to this function. String pointers
+from functions that return information on this font, such as
+[[TTF_FontFaceFamilyName]]() and [[TTF_FontFaceStyleName]](), are no longer
+valid after this call, as well.
 
 == Related Functions ==
 

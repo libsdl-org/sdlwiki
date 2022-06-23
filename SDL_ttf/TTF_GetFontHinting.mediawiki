@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetFontHinting =
 
-Retrieve FreeType hinter setting.
+Query a font's current FreeType hinter setting.
 
 == Syntax ==
 
@@ -13,12 +13,26 @@ int TTF_GetFontHinting(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns hinting flag
+Returns the font's current hinter value.
+
+== Remarks ==
+
+The hinter setting is a single value:
+
+* <code>[[TTF_HINTING_NORMAL]]</code>
+* <code>[[TTF_HINTING_LIGHT]]</code>
+* <code>[[TTF_HINTING_MONO]]</code>
+* <code>[[TTF_HINTING_NONE]]</code>
+* <code>[[TTF_HINTING_LIGHT_SUBPIXEL]]</code> (available in SDL_ttf 2.0.18 and later)
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_GetFontStyle =
 
-Retrieve the font style.
+Query a font's current style.
 
 == Syntax ==
 
@@ -13,12 +13,26 @@ int TTF_GetFontStyle(const TTF_Font *font);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to query.
 |}
 
 == Return Value ==
 
-Returns font style
+Returns the current font style, as a set of bit flags.
+
+== Remarks ==
+
+The font styles are a set of bit flags, OR'd together:
+
+* <code>[[TTF_STYLE_NORMAL]]</code> (is zero)
+* <code>[[TTF_STYLE_BOLD]]</code>
+* <code>[[TTF_STYLE_ITALIC]]</code>
+* <code>[[TTF_STYLE_UNDERLINE]]</code>
+* <code>[[TTF_STYLE_STRIKETHROUGH]]</code>
+
+== Version ==
+
+This function is available since SDL_ttf 2.0.0.
 
 == Related Functions ==
 

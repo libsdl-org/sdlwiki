@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_ttf, a separate library from SDL.) ======
 = TTF_SetFontDirection =
 
-Set direction per font.
+Set direction to be used for text shaping by a font.
 
 == Syntax ==
 
@@ -13,21 +13,33 @@ int TTF_SetFontDirection(TTF_Font *font, TTF_Direction direction);
 
 {|
 |'''font'''
-|[[TTF_Font]] handle
+|the font to specify a direction for.
 |-
 |'''direction'''
-|[[TTF_Direction]] parameter
+|the new direction for text to flow.
 |}
 
 == Return Value ==
 
-Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz or invalid
-parameter
+Returns 0 on success, or -1 on error.
 
 == Remarks ==
 
-It overrides the global direction set with the deprecated
-[[TTF_SetDirection]]().
+Any value supplied here will override the global direction set with the
+deprecated [[TTF_SetDirection]]().
+
+Possible direction values are:
+
+* <code>[[TTF_DIRECTION_LTR]]</code> (Left to Right)
+* <code>[[TTF_DIRECTION_RTL]]</code> (Right to Left)
+* <code>[[TTF_DIRECTION_TTB]]</code> (Top to Bottom)
+* <code>[[TTF_DIRECTION_BTT]]</code> (Bottom to Top)
+
+If SDL_ttf was not built with HarfBuzz support, this function returns -1.
+
+== Version ==
+
+This function is available since SDL_ttf 2.19.2.
 
 ----
 [[CategoryAPI]]
