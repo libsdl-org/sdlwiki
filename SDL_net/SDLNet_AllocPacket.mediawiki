@@ -25,7 +25,7 @@ Returns the new packet, or NULL if the function ran out of memory.
 This allocates a packet with <code>size</code> bytes of space for payload.
 
 When done with this packet, you can free it with [[SDLNet_FreePacket]].
-Packets can be used multiple times; you don't have to allocate a new one
+Packets can be reused multiple times; you don't have to allocate a new one
 for each piece of data you intend to send.
 
 You can allocate multiple packets at once with [[SDLNet_AllocPacketV]].
