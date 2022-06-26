@@ -13,8 +13,14 @@ void Mix_FreeChunk(Mix_Chunk *chunk);
 
 {|
 |'''chunk'''
-|Mix Chunka
+|Mix Chunk
 |}
+
+== Remarks ==
+
+SDL_mixer will stop any channels this chunk is currently playing on. This
+will deregister all effects on those channels and call any callback
+specified by [[Mix_ChannelFinished]]() for each removed channel.
 
 == Version ==
 

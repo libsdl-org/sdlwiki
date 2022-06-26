@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_Linked_Version =
 
-This function gets the version of the dynamically linked SDL_mixer library.
+Query the version of SDL_mixer that the program is linked against.
 
 == Syntax ==
 
@@ -11,12 +11,15 @@ const SDL_version * Mix_Linked_Version(void);
 
 == Return Value ==
 
-Returns SDL_mixer version
+Returns a pointer to the version information.
 
 == Remarks ==
 
-it should NOT be used to fill a version structure, instead you should use
-the SDL_MIXER_VERSION() macro.
+This function gets the version of the dynamically linked SDL_mixer library.
+This is separate from the SDL_MIXER_VERSION() macro, which tells you what
+version of the SDL_mixer headers you compiled against.
+
+This returns static internal data; do not free or modify it!
 
 == Version ==
 
