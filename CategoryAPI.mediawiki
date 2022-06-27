@@ -188,6 +188,8 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GameControllerSetSensorEnabled]]
 * [[SDL_GameControllerTypeForIndex]]
 * [[SDL_GameControllerUpdate]]
+* [[SDL_GDKGetTaskQueue]]
+* [[SDL_GDKRunApp]]
 * [[SDL_GetAndroidSDKVersion]]
 * [[SDL_GetAssertionHandler]]
 * [[SDL_GetAssertionReport]]
