@@ -1,13 +1,20 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_RewindMusic =
 
-Rewind the music stream 
+Rewind the music stream.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
 void Mix_RewindMusic(void);
 </syntaxhighlight>
+
+== Remarks ==
+
+This causes the currently-playing music to start mixing from the beginning
+of the music, as if it were just started.
+
+It's a legal no-op to rewind the music stream when not playing.
 
 == Version ==
 

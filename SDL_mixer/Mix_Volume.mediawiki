@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_Volume =
 
-Set the volume in the range of 0-128 of a specific channel.
+Set the volume for a specific channel.
 
 == Syntax ==
 
@@ -13,20 +13,33 @@ int Mix_Volume(int channel, int volume);
 
 {|
 |'''channel'''
-|channel
+|the channel on set/query the volume on, or -1 for all channels.
 |-
 |'''volume'''
-|volume
+|the new volume, between 0 and [[MIX_MAX_VOLUME]], or -1 to query.
 |}
 
 == Return Value ==
 
-Returns the original volume. If the specified volume is -1, just return the
-current volume.
+Returns the previous volume. If the specified volume is -1, this returns
+the current volume. If <code>channel</code> is -1, this returns the average
+of all channels.
 
 == Remarks ==
 
-If the specified channel is -1, set volume for all channels.
+The volume must be between 0 (silence) and [[MIX_MAX_VOLUME]] (full
+volume). Note that [[MIX_MAX_VOLUME]] is 128. Values greater than
+[[MIX_MAX_VOLUME]] are clamped to [[MIX_MAX_VOLUME]].
+
+Specifying a negative volume will not change the current volume; as such,
+this can be used to query the current volume without making changes, as
+this function returns the previous (in this case, still-current) value.
+
+If the specified channel is -1, this function sets the volume for all
+channels, and returns _the average_ of all channels' volumes prior to this
+call.
+
+The default volume for a channel is [[MIX_MAX_VOLUME]] (no attenuation).
 
 == Version ==
 

@@ -1,22 +1,19 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GroupChannels =
+= Mix_GroupChannel =
 
-Assign several consecutive channels to the same tag.
+Assign a tag to a channel.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int Mix_GroupChannels(int from, int to, int tag);
+int Mix_GroupChannel(int which, int tag);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''from'''
-|the first channel to set the tag on.
-|-
-|'''to'''
-|the last channel to set the tag on, inclusive.
+|'''which'''
+|the channel to set the tag on.
 |-
 |'''tag'''
 |an arbitrary value to assign a channel.
@@ -24,7 +21,7 @@ int Mix_GroupChannels(int from, int to, int tag);
 
 == Return Value ==
 
-Returns 0 if successful, negative on error
+Returns non-zero on success, zero on error (no such channel).
 
 == Remarks ==
 
@@ -34,13 +31,10 @@ to form groups of channels.
 If 'tag' is -1, the tag is removed (actually -1 is the tag used to
 represent the group of all the channels).
 
-This function replaces the requested channels' current tags; you may only
+This function replaces the requested channel's current tag; you may only
 have one tag per channel.
 
 You may not specify MAX_CHANNEL_POST for a channel.
-
-Note that this returns success and failure in the _opposite_ way from
-[[Mix_GroupChannel]](). We regret the API design mistake.
 
 == Version ==
 

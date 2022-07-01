@@ -13,17 +13,17 @@ int Mix_GroupCount(int tag);
 
 {|
 |'''tag'''
-|tag
+|an arbitrary value, assigned to channels, to search for.
 |}
 
 == Return Value ==
 
-Returns the number of channels in a group.
+Returns the number of channels assigned the specified tag.
 
 == Remarks ==
 
-This is also a subtle way to get the total number of channels when 'tag' is
--1
+If tag is -1, this will return the total number of channels allocated,
+regardless of what their tag might be.
 
 == Version ==
 

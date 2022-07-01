@@ -40,8 +40,6 @@ want real panning, call it like this:
 Mix_SetPanning(channel, left, 255 - left);
 </syntaxhighlight>
 
-...which isn't so hard.
-
 Setting <code>channel</code> to [[MIX_CHANNEL_POST]] registers this as a
 posteffect, and the panning will be done to the final mixed stream before
 passing it on to the audio device.
@@ -55,6 +53,10 @@ state.
 Note that an audio device in mono mode is a no-op, but this call will
 return successful in that case. Error messages can be retrieved from
 [[Mix_GetError]]().
+
+Note that unlike most SDL and SDL_mixer functions, this function returns
+zero if there's an error, not on success. We apologize for the API design
+inconsistency here.
 
 == Version ==
 

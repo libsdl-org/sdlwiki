@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_FreeChunk =
 
-Free an audio chunk previously loaded 
+Free an audio chunk.
 
 == Syntax ==
 
@@ -13,10 +13,13 @@ void Mix_FreeChunk(Mix_Chunk *chunk);
 
 {|
 |'''chunk'''
-|Mix Chunk
+|the chunk to free.
 |}
 
 == Remarks ==
+
+An app should call this function when it is done with a [[Mix_Chunk]] and
+wants to dispose of its resources.
 
 SDL_mixer will stop any channels this chunk is currently playing on. This
 will deregister all effects on those channels and call any callback

@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_PlayingMusic =
 
-Check the status of music stream 
+Check the playing status of the music stream.
 
 == Syntax ==
 
@@ -11,7 +11,15 @@ int Mix_PlayingMusic(void);
 
 == Return Value ==
 
-Returns 1 if playing, 0 if not
+Returns non-zero if music is playing, zero otherwise.
+
+== Remarks ==
+
+If music is currently playing, this function returns 1. Otherwise it
+returns 0.
+
+Paused music is treated as playing, even though it is not currently making
+forward progress in mixing.
 
 == Version ==
 

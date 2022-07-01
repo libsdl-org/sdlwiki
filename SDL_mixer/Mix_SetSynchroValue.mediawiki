@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_SetSynchroValue =
 
-Synchro value is set from modules while playing 
+This function does nothing, do not use.
 
 == Syntax ==
 
@@ -13,12 +13,19 @@ int Mix_SetSynchroValue(int value);
 
 {|
 |'''value'''
-|value
+|this parameter is ignored.
 |}
+
+== Return Value ==
+
+Returns -1.
 
 == Remarks ==
 
-Not supported by any players at this time
+This was probably meant to expose a feature, but no codecs support it, so
+it only remains for binary compatibility.
+
+Calling this function is a legal no-op that returns -1.
 
 == Version ==
 

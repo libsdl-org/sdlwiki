@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_GetChunk =
 
-Get the [[Mix_Chunk]] currently associated with a mixer channel 
+Get the [[Mix_Chunk]] currently associated with a mixer channel.
 
 == Syntax ==
 
@@ -13,12 +13,16 @@ Mix_Chunk * Mix_GetChunk(int channel);
 
 {|
 |'''channel'''
-|channel
+|the channel to query.
 |}
 
 == Return Value ==
 
-Returns NULL if it's an invalid channel, or there's no chunk associated.
+Returns the associated chunk, if any, or NULL if it's an invalid channel.
+
+== Remarks ==
+
+You may not specify MAX_CHANNEL_POST or -1 for a channel.
 
 == Version ==
 

@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_UnregisterEffect =
 
-You may not need to call this explicitly, unless you need to stop an effect from processing in the middle of a chunk's playback.
+Explicitly unregister a special effect function.
 
 == Syntax ==
 
@@ -12,11 +12,11 @@ int Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
 == Function Parameters ==
 
 {|
-|'''channel'''
-|channel
+|'''chan'''
+|the channel to unregister an effect on, or [[MIX_CHANNEL_POST]].
 |-
 |'''f'''
-|effect callback
+|effect the callback stop calling in future mixing iterations.
 |}
 
 == Return Value ==
@@ -26,9 +26,17 @@ Error messages can be retrieved from [[Mix_GetError]]().
 
 == Remarks ==
 
-Posteffects are never implicitly unregistered as they are for channels, but
-they may be explicitly unregistered through this function by specifying
-[[MIX_CHANNEL_POST]] for a channel.
+You may not need to call this at all, unless you need to stop an effect
+from processing in the middle of a chunk's playback.
+
+Posteffects are never implicitly unregistered as they are for channels (as
+the output stream does not have an end), but they may be explicitly
+unregistered through this function by specifying [[MIX_CHANNEL_POST]] for a
+channel.
+
+Note that unlike most SDL and SDL_mixer functions, this function returns
+zero if there's an error, not on success. We apologize for the API design
+inconsistency here.
 
 == Version ==
 

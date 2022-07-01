@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_PausedMusic =
 
-Tell whether the music stream is paused 
+Query whether the music stream is paused.
 
 == Syntax ==
 
@@ -11,11 +11,16 @@ int Mix_PausedMusic(void);
 
 == Return Value ==
 
-Returns 1 if paused, 0 if not.
+Return 1 if music is paused, 0 otherwise.
 
 == Version ==
 
 This function is available since SDL_mixer 2.0.0.
+
+== Related Functions ==
+
+:[[Mix_PauseMusic]]
+:[[Mix_ResumeMusic]]
 
 ----
 [[CategoryAPI]]

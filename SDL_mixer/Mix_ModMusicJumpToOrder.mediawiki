@@ -22,7 +22,7 @@ Returns 0 if successful, or -1 if failed or isn't implemented.
 
 == Remarks ==
 
-Only for MOD music formats.
+This only applies to MOD music formats.
 
 == Version ==
 

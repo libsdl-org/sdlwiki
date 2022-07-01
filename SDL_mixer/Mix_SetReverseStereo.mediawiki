@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_SetReverseStereo =
 
-Causes a channel to reverse its stereo.
+Cause a channel to reverse its stereo.
 
 == Syntax ==
 
@@ -13,10 +13,10 @@ int Mix_SetReverseStereo(int channel, int flip);
 
 {|
 |'''channel'''
-|channel
+|The mixer channel to reverse, or [[MIX_CHANNEL_POST]].
 |-
 |'''flip'''
-|flip
+|non-zero to reverse stereo, zero to disable this effect.
 |}
 
 == Return Value ==
@@ -29,18 +29,24 @@ messages can be retrieved from [[Mix_GetError]]().
 == Remarks ==
 
 This is handy if the user has his speakers hooked up backwards, or you
-would like to have a minor bit of psychedelia in your sound code. :)
-Calling this function with (flip) set to non-zero reverses the chunks's
-usual channels. If (flip) is zero, the effect is unregistered.
+would like to have a trippy sound effect.
+
+Calling this function with <code>flip</code> set to non-zero reverses the
+chunks's usual channels. If <code>flip</code> is zero, the effect is
+unregistered.
 
 This uses the [[Mix_RegisterEffect]]() API internally, and thus is probably
 more CPU intensive than having the user just plug in his speakers
 correctly. [[Mix_SetReverseStereo]]() returns without registering the
 effect function if the audio device is not configured for stereo output.
 
-If you specify [[MIX_CHANNEL_POST]] for (channel), then this the effect is
-used on the final mixed stream before sending it on to the audio device (a
-posteffect).
+If you specify [[MIX_CHANNEL_POST]] for <code>channel</code>, then this
+effect is used on the final mixed stream before sending it on to the audio
+device (a posteffect).
+
+Note that unlike most SDL and SDL_mixer functions, this function returns
+zero if there's an error, not on success. We apologize for the API design
+inconsistency here.
 
 == Version ==
 

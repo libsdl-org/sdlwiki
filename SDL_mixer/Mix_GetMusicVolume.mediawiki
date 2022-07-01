@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_GetMusicVolume =
 
-Get the current volume value in the range of 0-128 of a music stream 
+Query the current volume value for a music object.
 
 == Syntax ==
 
@@ -13,7 +13,7 @@ int Mix_GetMusicVolume(Mix_Music *music);
 
 {|
 |'''music'''
-|music
+|the music object to query
 |}
 
 == Return Value ==

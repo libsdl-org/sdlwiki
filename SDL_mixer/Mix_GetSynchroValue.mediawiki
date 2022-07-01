@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_GetSynchroValue =
 
-Get Synchro value 
+This function does nothing, do not use.
 
 == Syntax ==
 
@@ -9,9 +9,16 @@ Get Synchro value
 int Mix_GetSynchroValue(void);
 </syntaxhighlight>
 
+== Return Value ==
+
+Returns -1.
+
 == Remarks ==
 
-Not supported by any players at this time
+This was probably meant to expose a feature, but no codecs support it, so
+it only remains for binary compatibility.
+
+Calling this function is a legal no-op that returns -1.
 
 == Version ==
 

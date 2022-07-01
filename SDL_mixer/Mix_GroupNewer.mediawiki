@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
 = Mix_GroupNewer =
 
-Finds the "most recent" (i.e.
+Find the "most recent" sample playing in a group of channels.
 
 == Syntax ==
 
@@ -13,20 +13,28 @@ int Mix_GroupNewer(int tag);
 
 {|
 |'''tag'''
-|tag
+|an arbitrary value, assigned to channels, to search through.
 |}
 
 == Return Value ==
 
-Returns the "most recent" (i.e. last) sample playing in a group of channels
+Returns the "most recent" sample playing in a group of channels
 
 == Remarks ==
 
-last) sample playing in a group of channels
+Specifically, this function returns the channel number that is assigned the
+specified tag, is currently playing, and has the highest start time, based
+on the value of SDL_GetTicks() when the channel started playing.
+
+If no channel with this tag is currently playing, this function returns -1.
 
 == Version ==
 
 This function is available since SDL_mixer 2.0.0.
+
+== Related Functions ==
+
+:[[Mix_GroupOldest]]
 
 ----
 [[CategoryAPI]]

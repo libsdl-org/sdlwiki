@@ -1,12 +1,12 @@
 ====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_PlayChannelTimed =
+= Mix_PlayChannel =
 
-Play an audio chunk on a specific channel for a maximum time.
+Play an audio chunk on a specific channel.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
+int Mix_PlayChannel(int channel, Mix_Chunk *chunk, int loops);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -20,9 +20,6 @@ int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
 |-
 |'''loop'''
 |the number of times the chunk should loop, -1 to loop (not actually) infinitely.
-|-
-|'''ticks'''
-|the maximum number of milliseconds of this chunk to mix for playback.
 |}
 
 == Return Value ==
@@ -41,17 +38,17 @@ there, that chunk will be halted and the new chunk will take its place.
 If <code>loops</code> is greater than zero, loop the sound that many times.
 If <code>loops</code> is -1, loop "infinitely" (~65000 times).
 
-<code>ticks</code> specifies the maximum number of milliseconds to play
-this chunk before halting it. If you want the chunk to play until all data
-has been mixed, specify -1.
-
-Note that this function does not block for the number of ticks requested;
-it just schedules the chunk to play and notes the maximum for the mixer to
-manage later, and returns immediately.
+Note that before SDL_mixer 2.5.3, this function was a macro that called
+[[Mix_PlayChannelTimed]]() with a fourth parameter ("ticks") of -1. This
+function still does the same thing, but promotes it to a proper API
+function. Older binaries linked against a newer SDL_mixer will still call
+[[Mix_PlayChannelTimed]] directly, as they are using the macro, which was
+available since the dawn of time.
 
 == Version ==
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 2.5.3 (and as a macro since
+2.0.0).
 
 ----
 [[CategoryAPI]]
