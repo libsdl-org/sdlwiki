@@ -55,6 +55,7 @@
 * [[Mix_LoadMUS]]
 * [[Mix_LoadMUS_RW]]
 * [[Mix_LoadMUSType_RW]]
+* [[Mix_LoadWAV]]
 * [[Mix_LoadWAV_RW]]
 * [[Mix_MasterVolume]]
 * [[Mix_ModMusicJumpToOrder]]
