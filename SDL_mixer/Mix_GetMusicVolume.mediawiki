@@ -13,12 +13,12 @@ int Mix_GetMusicVolume(Mix_Music *music);
 
 {|
 |'''music'''
-|the music object to query
+|the music object to query.
 |}
 
 == Return Value ==
 
-Returns volume
+Returns the music's current volume, between 0 and [[MIX_MAX_VOLUME]] (128).
 
 == Version ==
 
