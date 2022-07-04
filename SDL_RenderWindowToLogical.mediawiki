@@ -14,7 +14,7 @@ void SDL_RenderWindowToLogical(SDL_Renderer * renderer,
 
 {|
 |'''renderer'''
-|the renderer from which the logical coordinates should be calcualted
+|the renderer from which the logical coordinates should be calculated
 |-
 |'''windowX'''
 |the real X coordinate in the window
