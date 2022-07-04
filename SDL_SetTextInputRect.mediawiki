@@ -1,3 +1,4 @@
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -20,10 +21,9 @@ void SDL_SetTextInputRect(SDL_Rect *rect);
 
 == Remarks ==
 
-To start text input in a given location,
-this function is intended to be called before [[SDL_StartTextInput]],
-although some platforms support moving the rectangle
-even while text input (and a composition) is active.
+To start text input in a given location, this function is intended to be
+called before [[SDL_StartTextInput]], although some platforms support
+moving the rectangle even while text input (and a composition) is active.
 
 Note: If you want to use the system native IME window, try setting hint
 '''[[SDL_HINT_IME_SHOW_UI]]''' to '''1''', otherwise this function won't
