@@ -45,6 +45,9 @@ An enumeration of key modifier masks.
 |KMOD_MODE
 |the !AltGr key is down
 |-
+|KMOD_SCROLL
+|the Scroll Lock key is down (available since SDL 2.0.18)
+|-
 |KMOD_CTRL
 |(KMOD_LCTRL|KMOD_RCTRL)
 |-
@@ -56,9 +59,6 @@ An enumeration of key modifier masks.
 |-
 |KMOD_GUI
 |(KMOD_LGUI|KMOD_RGUI)
-|-
-|<span style="color: Gray;">KMOD_RESERVED</span>
-|<span style="color: Gray;">reserved for future use</span>
 |}
 
 == Remarks ==
