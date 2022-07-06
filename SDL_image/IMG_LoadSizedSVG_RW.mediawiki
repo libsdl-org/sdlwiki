@@ -26,6 +26,10 @@ SDL_Surface * IMG_LoadSizedSVG_RW(SDL_RWops *src, int width, int height);
 
 Returns SDL surface, or NULL on error
 
+== Version ==
+
+This function is available since SDL_image 2.6.0.
+
 ----
 [[CategoryAPI]]
 

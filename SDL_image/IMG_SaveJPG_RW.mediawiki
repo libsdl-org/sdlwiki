@@ -29,6 +29,10 @@ int IMG_SaveJPG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst, int qualit
 
 Returns 0 if successful, -1 on error
 
+== Version ==
+
+This function is available since SDL_image 2.0.2.
+
 == Related Functions ==
 
 :[[IMG_SavePNG]]

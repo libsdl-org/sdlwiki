@@ -37,6 +37,10 @@ further seeking.
 You do not need to call this function to load data; SDL_image can work to
 determine file type in many cases in its standard load functions.
 
+== Version ==
+
+This function is available since SDL_image 2.0.2.
+
 == Related Functions ==
 
 :[[IMG_isAVIF]]

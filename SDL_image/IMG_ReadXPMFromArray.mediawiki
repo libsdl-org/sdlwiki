@@ -20,6 +20,10 @@ SDL_Surface * IMG_ReadXPMFromArray(char **xpm);
 
 Returns SDL surface, or NULL on error
 
+== Version ==
+
+This function is available since SDL_image 2.0.0.
+
 == Related Functions ==
 
 :[[IMG_ReadXPMFromArrayToRGB888]]

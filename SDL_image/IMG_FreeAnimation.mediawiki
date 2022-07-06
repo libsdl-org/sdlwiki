@@ -16,6 +16,10 @@ void IMG_FreeAnimation(IMG_Animation *anim);
 |animation
 |}
 
+== Version ==
+
+This function is available since SDL_image 2.6.0.
+
 == Related Functions ==
 
 :[[IMG_LoadAnimation]]

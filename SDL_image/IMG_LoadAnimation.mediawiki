@@ -20,6 +20,10 @@ IMG_Animation * IMG_LoadAnimation(const char *file);
 
 Returns IMG Animation, or NULL on error.
 
+== Version ==
+
+This function is available since SDL_image 2.6.0.
+
 == Related Functions ==
 
 :[[IMG_FreeAnimation]]

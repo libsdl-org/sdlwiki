@@ -26,6 +26,10 @@ int IMG_SaveJPG(SDL_Surface *surface, const char *file, int quality);
 
 Returns 0 if successful, -1 on error
 
+== Version ==
+
+This function is available since SDL_image 2.0.2.
+
 == Related Functions ==
 
 :[[IMG_SavePNG]]
