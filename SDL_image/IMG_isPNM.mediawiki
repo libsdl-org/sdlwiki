@@ -1,12 +1,12 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_isAVIF =
+= IMG_isPNM =
 
-Detect FILETYPE image data on a readable/seekable SDL_RWops.
+Detect PNM image data on a readable/seekable SDL_RWops.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int IMG_isAVIF(SDL_RWops *src);
+int IMG_isPNM(SDL_RWops *src);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -18,7 +18,7 @@ int IMG_isAVIF(SDL_RWops *src);
 
 == Return Value ==
 
-Returns non-zero if this is FILETYPE data, zero otherwise.
+Returns non-zero if this is PNM data, zero otherwise.
 
 == Remarks ==
 
@@ -49,7 +49,6 @@ determine file type in many cases in its standard load functions.
 :[[IMG_isLBM]]
 :[[IMG_isPCX]]
 :[[IMG_isPNG]]
-:[[IMG_isPNM]]
 :[[IMG_isSVG]]
 :[[IMG_isQOI]]
 :[[IMG_isTIF]]
