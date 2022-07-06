@@ -7,8 +7,8 @@ Query the metrics (dimensions) of a font's 32-bit glyph.
 
 <syntaxhighlight lang='c'>
 int TTF_GlyphMetrics32(TTF_Font *font, Uint32 ch,
-                     int *minx, int *maxx,
-                     int *miny, int *maxy, int *advance);
+int *minx, int *maxx,
+int *miny, int *maxy, int *advance);
 </syntaxhighlight>
 
 == Function Parameters ==

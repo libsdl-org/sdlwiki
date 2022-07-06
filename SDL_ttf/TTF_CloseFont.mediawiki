@@ -26,6 +26,10 @@ from functions that return information on this font, such as
 [[TTF_FontFaceFamilyName]]() and [[TTF_FontFaceStyleName]](), are no longer
 valid after this call, as well.
 
+== Version ==
+
+This function is available since SDL_ttf 2.0.12.
+
 == Related Functions ==
 
 :[[TTF_OpenFontIndexDPIRW]]

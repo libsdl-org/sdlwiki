@@ -22,7 +22,7 @@ Returns non-zero if kerning is enabled, zero otherwise.
 
 == Version ==
 
-This function is available since SDL_ttf 2.0.0.
+This function is available since SDL_ttf 2.0.12.
 
 ----
 [[CategoryAPI]]

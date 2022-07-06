@@ -7,7 +7,7 @@ Render a single 32-bit glyph at high quality to a new ARGB surface.
 
 <syntaxhighlight lang='c'>
 SDL_Surface * TTF_RenderGlyph32_Blended(TTF_Font *font,
-Uint32 ch, SDL_Color fg);
+                Uint32 ch, SDL_Color fg);
 </syntaxhighlight>
 
 == Function Parameters ==
