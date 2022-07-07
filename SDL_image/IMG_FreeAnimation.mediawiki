@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_FreeAnimation =
 
-Free animation 
+Dispose of an [[IMG_Animation]] and free its resources.
 
 == Syntax ==
 
@@ -13,8 +13,12 @@ void IMG_FreeAnimation(IMG_Animation *anim);
 
 {|
 |'''anim'''
-|animation
+|[[IMG_Animation]] to dispose of.
 |}
+
+== Remarks ==
+
+The provided <code>anim</code> pointer is not valid once this call returns.
 
 == Version ==
 

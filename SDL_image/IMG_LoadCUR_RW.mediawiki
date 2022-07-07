@@ -1,12 +1,12 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_LoadAVIF_RW =
+= IMG_LoadCUR_RW =
 
-Load a AVIF image directly.
+Load a CUR image directly.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Surface * IMG_LoadAVIF_RW(SDL_RWops *src);
+SDL_Surface * IMG_LoadCUR_RW(SDL_RWops *src);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -22,7 +22,7 @@ Returns SDL surface, or NULL on error
 
 == Remarks ==
 
-If you know you definitely have a AVIF image, you can call this function,
+If you know you definitely have a CUR image, you can call this function,
 which will skip SDL_image's file format detection routines. Generally it's
 better to use the abstract interfaces; also, there is only an SDL_RWops
 interface available here.
@@ -33,8 +33,8 @@ This function is available since SDL_image 2.0.0.
 
 == Related Functions ==
 
+:[[IMG_LoadAVIF_RW]]
 :[[IMG_LoadICO_RW]]
-:[[IMG_LoadCUR_RW]]
 :[[IMG_LoadBMP_RW]]
 :[[IMG_LoadGIF_RW]]
 :[[IMG_LoadJPG_RW]]

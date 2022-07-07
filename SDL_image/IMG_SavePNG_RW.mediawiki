@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_SavePNG_RW =
 
-Save a SDL_Surface into a PNG image file.
+Save an SDL_Surface into PNG image data, via an SDL_RWops.
 
 == Syntax ==
 
@@ -13,18 +13,20 @@ int IMG_SavePNG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst);
 
 {|
 |'''surface'''
-|SDL surface to save
+|the SDL surface to save
 |-
 |'''dst'''
-|RWops
-|-
-|'''freedst'''
-|free dst
+|the SDL_RWops to save the image data to.
 |}
 
 == Return Value ==
 
-Returns 0 if successful, -1 on error
+Returns 0 if successful, -1 on error.
+
+== Remarks ==
+
+If you just want to save to a filename, you can use [[IMG_SavePNG]]()
+instead.
 
 == Version ==
 

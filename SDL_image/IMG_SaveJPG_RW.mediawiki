@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_SaveJPG_RW =
 
-Save a SDL_Surface into a JPEG image file.
+Save an SDL_Surface into JPEG image data, via an SDL_RWops.
 
 == Syntax ==
 
@@ -13,21 +13,20 @@ int IMG_SaveJPG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst, int qualit
 
 {|
 |'''surface'''
-|SDL surface to save
+|the SDL surface to save
 |-
 |'''dst'''
-|RWops
-|-
-|'''freedst'''
-|free dst
-|-
-|'''quality'''
-|[0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality
+|the SDL_RWops to save the image data to.
 |}
 
 == Return Value ==
 
-Returns 0 if successful, -1 on error
+Returns 0 if successful, -1 on error.
+
+== Remarks ==
+
+If you just want to save to a filename, you can use [[IMG_SaveJPG]]()
+instead.
 
 == Version ==
 
@@ -35,9 +34,9 @@ This function is available since SDL_image 2.0.2.
 
 == Related Functions ==
 
+:[[IMG_SaveJPG]]
 :[[IMG_SavePNG]]
 :[[IMG_SavePNG_RW]]
-:[[IMG_SaveJPG]]
 
 ----
 [[CategoryAPI]]

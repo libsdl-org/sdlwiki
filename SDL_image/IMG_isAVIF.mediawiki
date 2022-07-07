@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_isAVIF =
 
-Detect FILETYPE image data on a readable/seekable SDL_RWops.
+Detect AVIF image data on a readable/seekable SDL_RWops.
 
 == Syntax ==
 
@@ -18,7 +18,7 @@ int IMG_isAVIF(SDL_RWops *src);
 
 == Return Value ==
 
-Returns non-zero if this is FILETYPE data, zero otherwise.
+Returns non-zero if this is AVIF data, zero otherwise.
 
 == Remarks ==
 

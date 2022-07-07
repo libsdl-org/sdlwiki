@@ -1,7 +1,7 @@
 ====== (This function is part of SDL_image, a separate library from SDL.) ======
 = IMG_LoadAnimation_RW =
 
-Load an animation from an SDL datasource 
+Load an animation from an SDL_RWops.
 
 == Syntax ==
 
@@ -13,15 +13,24 @@ IMG_Animation * IMG_LoadAnimation_RW(SDL_RWops *src, int freesrc);
 
 {|
 |'''src'''
-|RWops
+|an SDL_RWops that data will be read from.
 |-
 |'''freesrc'''
-|can be set so that the RWops is freed after this function is called
+|non-zero to close/free the SDL_RWops before returning, zero to leave it open.
 |}
 
 == Return Value ==
 
-Returns IMG Animation, or NULL on error
+Returns a new [[IMG_Animation]], or NULL on error.
+
+== Remarks ==
+
+If <code>freesrc</code> is non-zero, the RWops will be closed before
+returning, whether this function succeeds or not. SDL_image reads
+everything it needs from the RWops during this call in any case.
+
+When done with the returned animation, the app should dispose of it with a
+call to [[IMG_FreeAnimation]]().
 
 == Version ==
 
