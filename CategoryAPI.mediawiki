@@ -210,6 +210,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GetCurrentVideoDriver]]
 * [[SDL_GetCursor]]
 * [[SDL_GetDefaultAssertionHandler]]
+* [[SDL_GetDefaultAudioInfo]]
 * [[SDL_GetDefaultCursor]]
 * [[SDL_GetDesktopDisplayMode]]
 * [[SDL_GetDisplayBounds]]
