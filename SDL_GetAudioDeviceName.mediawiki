@@ -53,6 +53,7 @@ for (i = 0; i < count; ++i) {
 == Related Functions ==
 
 :[[SDL_GetNumAudioDevices]]
+:[[SDL_GetDefaultAudioInfo]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]
