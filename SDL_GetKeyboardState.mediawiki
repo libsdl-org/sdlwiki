@@ -62,6 +62,7 @@ if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
 == Related Functions ==
 
 :[[SDL_PumpEvents]]
+:[[SDL_ResetKeyboard]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
