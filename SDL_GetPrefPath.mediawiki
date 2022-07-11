@@ -38,7 +38,7 @@ On Windows, the string might look like:
 <code>C:\\Users\\bob\\AppData\\Roaming\\My Company\\My Program
 Name\\</code>
 
-On Linux, the string might look like"
+On Linux, the string might look like:
 
 <code>/home/bob/.local/share/My Program Name/</code>
 
