@@ -57,17 +57,18 @@ Unspecified bits are always zero, but may be used in later versions of SDL.  The
 
 === Audio Format Values ===
 {|
+|-style="background-color=#EDEDED"
 |
-|<bgcolor="#EDEDED">''8-bit support''
+|''8-bit support''
 |-
 |AUDIO_S8
 |signed 8-bit samples
 |-
 |AUDIO_U8
 |unsigned 8-bit samples
-|-
+|-style="background-color=#EDEDED"
 |
-|<bgcolor="#EDEDED">''16-bit support''
+|''16-bit support''
 |-
 |AUDIO_S16LSB
 |signed 16-bit samples in little-endian byte order
@@ -92,9 +93,9 @@ Unspecified bits are always zero, but may be used in later versions of SDL.  The
 |-
 |AUDIO_U16
 |AUDIO_U16LSB
-|-
+|-style="background-color=#EDEDED"
 |
-|<bgcolor="#EDEDED">''32-bit support (new to SDL 2.0)''
+|''32-bit support (new to SDL 2.0)''
 |-
 |AUDIO_S32LSB
 |32-bit integer samples in little-endian byte order
@@ -107,9 +108,9 @@ Unspecified bits are always zero, but may be used in later versions of SDL.  The
 |-
 |AUDIO_S32
 |AUDIO_S32LSB
-|-
+|-style="background-color=#EDEDED"
 |
-|<bgcolor="#EDEDED">''float support (new to SDL 2.0)''
+|''float support (new to SDL 2.0)''
 |-
 |AUDIO_F32LSB
 |32-bit floating point samples in little-endian byte order
