@@ -84,6 +84,9 @@ You should be using main() instead of WinMain() even though you are creating a W
 ==== I get "Undefined reference to 'WinMain@16'" ====
 Under Visual C++, you need to link with SDL2main.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDL2main -lSDL2. While using vcpkg SDL2main.lib is moved to the manual-link folder and needs to be consumed manually for more information see [https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md vcpkg's integration docs].
 
+==== I get "Undefined reference to 'main'" (or '_main')  ====
+When you're building using CMake, make sure to add WIN32 to add_executable. When using MinGW, add -mwindows to the link options. MSVC useres should add /subsystem:windows.
+
 ==== I get undefined references to various SDL functions... ====
 When you're compiling with gcc, you need to make sure the output of sdl-config follows your source file on the command line:
 gcc -o test test.c <code>sdl-config --cflags --libs</code>
