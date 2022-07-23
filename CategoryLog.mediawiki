@@ -14,18 +14,18 @@ If you're debugging SDL you might want to call:
 
 Here's where the messages go on different platforms:
 {|
- |Windows
- |debug output stream
- |-
- |Android
- |log output
- |-
- |PSP
- |"SDL_Log.txt"
- |-
- |Others
- |standard error output (stderr)
- |}
+|Windows
+|debug output stream
+|-
+|Android
+|log output
+|-
+|PSP
+|"SDL_Log.txt"
+|-
+|Others
+|standard error output (stderr)
+|}
 
 Messages longer than the maximum size (4096 bytes) will be truncated.
 
