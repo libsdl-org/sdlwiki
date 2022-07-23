@@ -112,8 +112,7 @@ To build and install SDL locally, run:
 <syntaxhighlight lang="bash">
 mkdir build
 cd build
-../configure 
---prefix=$HOME/config/non-packaged
+../configure --prefix=$HOME/config/non-packaged
 make install
 </syntaxhighlight>
 
