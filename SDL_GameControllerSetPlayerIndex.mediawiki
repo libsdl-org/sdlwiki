@@ -15,7 +15,7 @@ void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int pl
 |the game controller object to adjust.
 |-
 |'''player_index'''
-|Player index to assign to this controller.
+|Player index to assign to this controller, or -1 to clear the player index and turn off player LEDs.
 |}
 
 == Version ==
