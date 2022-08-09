@@ -160,13 +160,13 @@ Our buildbot tries to build with Emscripten for each commit, and uploads success
 SDL2 runs on the Nintendo Switch! There are commercial games shipping with this port. This port is kept in a separate repository, but is available for free, under the zlib license, to anyone that is under NDA for Switch development with Nintendo. Please contact Ryan (icculus at icculus dot org) for details.
 
 
-=== WinRT/UWP/Windows 8/Windows 10/WinPhone ===
+=== WinRT/UWP/Windows 10 ===
 
-There are Visual Studio project files for Windows Phone, WinRT version 8.1 (using Visual Studio 2013) and UWP (using Visual Studio 2015). These are in the "VisualC-WinRT" directory.
+There are Visual Studio project files for UWP (using Visual Studio 2019). These are in the "VisualC-WinRT" directory.
 
-Our buildbot tries to build for WinRT for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt UWP library [https://buildbot.libsdl.org/sdl-builds/sdl-uwp10-amd64/?C=M;O=D here] ... 
-These are built with [https://github.com/libsdl-org/SDL/blob/main/build-scripts/winrtbuild.bat build-scripts/winrtbuild.bat] in the SDL source tree. This will use PowerShell to do some magic, which you can see in [https://github.com/libsdl-org/SDL/blob/main/build-scripts/winrtbuild.ps1 build-scripts/winrtbuild.ps1]. At least in theory, this should Just Work if you have Windows 8.1, Visual C++ 2013, and the Win8/WinPhone/etc SDKs installed. The script will try to build all reasonable variants (ARM, x86, etc).
+=== Windows 8/WinPhone ===
 
+We no longer have build environments for Windows 8 or Windows Phone. The Win32 targets still support Windows 8.
 
 === QNX ===
 
