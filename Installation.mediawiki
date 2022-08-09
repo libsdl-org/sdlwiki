@@ -188,6 +188,11 @@ OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build 
 RISC OS is supported.  You can build for this platform "the unix way", or by using CMake.
 
 
+=== Sony PlayStation 2===
+
+The PlayStation 2 is supported using a homebrew toolkit. You can build for this platform using CMake.
+
+
 === Sony PlayStation Portable ===
 
 The PlayStation Portable is supported using a homebrew toolkit. You can build for this platform using CMake.
