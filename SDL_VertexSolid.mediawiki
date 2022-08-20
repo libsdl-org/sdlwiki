@@ -1,0 +1,15 @@
+Vertex structure
+
+== Data Fields ==
+{|
+|[[SDL_FPoint]]
+|'''position'''
+|Vertex position, in SDL_Renderer coordinates
+|-
+|[[SDL_Color]]
+|'''color'''
+|Vertex color
+|}
+
+== Related Structures ==
+:[[SDL_Vertex]]
