@@ -1,5 +1,5 @@
 
-= SDL_Rect =
+= SDL_FRect =
 A structure that contains the definition of a rectangle, with the origin at the upper left.
 
 
@@ -43,4 +43,4 @@ An [[SDL_FRect]] defines a rectangular area of the screen.
 
 
 ----
-[[CategoryStruct]], [[CategoryRect]]
+[[CategoryStruct]], [[CategoryFRect]]

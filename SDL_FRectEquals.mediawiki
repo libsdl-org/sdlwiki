@@ -5,7 +5,7 @@ Use this function to check whether two rectangles are equal.
 
 == Syntax ==
 <syntaxhighlight lang='c++'>
-SDL_bool SDL_RectEquals(const SDL_FRect* a,
+SDL_bool SDL_FRectEquals(const SDL_FRect* a,
                         const SDL_FRect* b)
 </syntaxhighlight>
 
@@ -25,4 +25,4 @@ Returns SDL_TRUE if the two rectangles are exactly the same, SDL_FALSE otherwise
 This function compares the width, height, and location (X and Y) values for each of the two rectangles and returns SDL_TRUE if all corresponding values are equal.  If any value does not match or either rectangle is NULL it returns SDL_FALSE.
 
 ----
-[[CategoryAPI]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryFRect]]
