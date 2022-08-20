@@ -212,6 +212,7 @@
 * [[SDL_MultiGestureEvent]]
 * [[SDL_NumHaptics]]
 * [[SDL_NumJoysticks]]
+* [[SDL_PointInFRect]]
 * [[SDL_PointInRect]]
 * [[SDL_ReadU8]]
 * [[SDL_RecordGesture]]
