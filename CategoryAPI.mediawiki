@@ -125,6 +125,8 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_FlashWindow]]
 * [[SDL_FlushEvent]]
 * [[SDL_FlushEvents]]
+* [[SDL_FRectEmpty]]
+* [[SDL_FRectEquals]]
 * [[SDL_FreeAudioStream]]
 * [[SDL_FreeCursor]]
 * [[SDL_FreeFormat]]
