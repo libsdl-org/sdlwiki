@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -35,7 +34,7 @@ more information on the failure.
 This function is available since SDL 2.0.3.
 
 ----
-[[CategoryAPI]], [[CategoryInit]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryInit]], [[CategoryDraft]], [[CategoryWinRT]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 
