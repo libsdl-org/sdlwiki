@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -37,7 +36,7 @@ This function is available since SDL 2.0.0.
 :[[SDL_AndroidGetExternalStoragePath]]
 
 ----
-[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]], [[CategoryAndroid]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 
