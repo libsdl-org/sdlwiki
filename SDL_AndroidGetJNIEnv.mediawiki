@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -73,6 +72,6 @@ void showHome(void)
 :[[SDL_AndroidGetActivity]]
 
 ----
-[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]], [[CategoryAndroid]]
 
 
