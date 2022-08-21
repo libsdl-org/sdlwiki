@@ -13,3 +13,6 @@ Vertex structure
 
 == Related Structures ==
 :[[SDL_Vertex]]
+
+----
+[[CategoryStruct]]
