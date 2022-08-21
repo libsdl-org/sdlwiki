@@ -48,6 +48,6 @@ and/or <code>Y2</code> as necessary.
 This function is available since SDL 2.0.22.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryRect]]
 
 
