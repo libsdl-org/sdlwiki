@@ -17,6 +17,6 @@ Returns a value from the [[SDL_WinRT_DeviceFamily]] enum.
 This function is available since SDL 2.0.8.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryWinRT]]
 
 
