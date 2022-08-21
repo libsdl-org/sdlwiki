@@ -1,3 +1,4 @@
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -27,7 +28,16 @@ Returns a string for the given axis, or NULL if an invalid axis is
 specified. The string returned is of the format used by
 [[SDL_GameController]] mapping strings.
 
-== Code Examples == 
+== Remarks ==
+
+The caller should not [[SDL_free]]() the returned string.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+== Code Examples ==
+
 <!-- #Example1 Start -->
 <syntaxhighlight lang='c'>
 #include <stdio.h>
@@ -67,14 +77,6 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 <!-- #End Example1 -->
-
-== Remarks ==
-
-The caller should not [[SDL_free]]() the returned string.
-
-== Version ==
-
-This function is available since SDL 2.0.0.
 
 == Related Functions ==
 
