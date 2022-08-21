@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -27,6 +26,50 @@ const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis);
 Returns a string for the given axis, or NULL if an invalid axis is
 specified. The string returned is of the format used by
 [[SDL_GameController]] mapping strings.
+
+== Code Examples == 
+<!-- #Example1 Start -->
+<syntaxhighlight lang='c++'>
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <SDL.h>
+
+int main(int argc, char* argv[])
+{
+    if(SDL_Init(SDL_INIT_GAMECONTROLLER) < 0)
+    {
+        SDL_LogError(SDL_LOG_CATEGORY_APLLICATION, "Error while initializing SDL2 library : %s\n", SDL_GetError());
+        return EXIT_FAILURE;
+    }
+
+    SDL_Event event;
+
+    int running = 1;
+
+    while(running)
+    {
+        while(SDL_PollEvent(&event) > 0)
+        {
+            if(event.type == SDL_QUIT)
+                running = 0;
+
+            if(event.type == SDL_CONTROLLERAXISMOTION)
+            {
+                char const* axisName = SDL_GameControllerGetStringForAxis((SDL_GameControllerAxis) event.caxis.axis);
+                int axisValue = event.caxis.value;
+                SDL_Log("Axis used : %s\tAxis value : %d\n", axisName, axisValue);
+            }
+        }
+    }
+
+    SDL_Quit();
+
+    return EXIT_SUCCESS;
+}
+
+</syntaxhighlight>
+<!-- #End Example1 -->
 
 == Remarks ==
 
