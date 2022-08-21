@@ -1,11 +1,10 @@
-
 = SDL_FRectEquals =
 Use this function to check whether two rectangles are equal.
 
 
 == Syntax ==
 <syntaxhighlight lang='c++'>
-SDL_bool SDL_RectEquals(const SDL_FRect* a,
+SDL_bool SDL_FRectEquals(const SDL_FRect* a,
                         const SDL_FRect* b)
 </syntaxhighlight>
 
