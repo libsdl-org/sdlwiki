@@ -17,6 +17,6 @@ Returns [[SDL_TRUE]] if this is Android TV, [[SDL_FALSE]] otherwise.
 This function is available since SDL 2.0.8.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryAndroid]]
 
 
