@@ -17,8 +17,8 @@ void SDL_DestroyRenderer(SDL_Renderer * renderer);
 
 == Remarks ==
 
-If <code>window</code> is NULL, this function will return immediately after
-setting the SDL error message to "Invalid window". See [[SDL_GetError]]().
+If <code>renderer</code> is NULL, this function will return immediately after
+setting the SDL error message to "Invalid renderer". See [[SDL_GetError]]().
 
 == Version ==
 
