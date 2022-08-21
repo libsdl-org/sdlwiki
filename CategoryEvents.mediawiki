@@ -17,13 +17,13 @@ Internally, SDL stores all the events waiting to be handled in an event queue.  
 The event queue itself is composed of a series of [[SDL_Event]] structures, one for each waiting event. [[SDL_Event]] structures are read from the queue with the [[SDL_PollEvent]]() function and it is then up to the application to process the information stored with them.
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryEvents -title:SGEnumerations)>>
+<<FullSearchCached(category:CategoryEvents -category:CategoryStruct -category:CategoryAPI -title:SGEnumerations)>>
 
 == Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryEvents -title:SGStructures)>>
+<<FullSearchCached(category:CategoryEvents -category:CategoryEnum -category:CategoryAPI -title:SGStructures)>>
 
 == Functions ==
-<<FullSearchCached(category:CategoryEvents -CategoryEnum -CategoryStruct -title:SGFunctions)>>
+<<FullSearchCached(category:CategoryEvents -category:CategoryEnum -category:CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_AddEventWatch]]
