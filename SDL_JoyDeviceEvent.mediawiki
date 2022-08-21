@@ -27,7 +27,9 @@ A structure that contains joystick device event information.
 |the joystick device index for the SDL_JOYDEVICEADDED event or the instance id for the SDL_JOYDEVICEREMOVED event
 |}
 
+== Remarks ==
 
+You would access it through the event's <code>jdevice</code> field.
 
 == Related Enumerations ==
 :[[SDL_EventType]]
