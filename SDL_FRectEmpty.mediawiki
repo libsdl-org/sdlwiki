@@ -1,11 +1,10 @@
-
 = SDL_FRectEmpty =
 Use this function to check whether a rectangle has no area.
 
 
 == Syntax ==
 <syntaxhighlight lang='c++'>
-SDL_bool SDL_RectEmpty(const SDL_FRect* r)
+SDL_bool SDL_FRectEmpty(const SDL_FRect* r)
 </syntaxhighlight>
 
 == Function Parameters ==
