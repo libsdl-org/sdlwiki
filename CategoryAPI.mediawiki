@@ -316,6 +316,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GetWindowPixelFormat]]
 * [[SDL_GetWindowPosition]]
 * [[SDL_GetWindowSize]]
+* [[SDL_GetWindowSizeInPixels]]
 * [[SDL_GetWindowSurface]]
 * [[SDL_GetWindowTitle]]
 * [[SDL_GetWindowWMInfo]]
