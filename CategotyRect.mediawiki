@@ -1,6 +1,0 @@
-= CategotyRect =
-
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_UnionFRect]]
-<!-- END CATEGORY LIST -->
-
