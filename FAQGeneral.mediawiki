@@ -29,7 +29,7 @@ Yes, you can find people hanging out on the IRC server at irc.libera.chat on the
 Yes, [https://discordapp.com/invite/F6mPUgc go here]!
 
 == Is there an official logo? ==
-Yes, the official SDL logo was created by Arne Claus, and is available here: http://www.libsdl.de/logo/ Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
+Yes, the official SDL logo was created by Arne Claus, and is available here: https://www.libsdl.org/media/SDL_logo_b.png Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
 
 == Is this wiki available offline? ==
 Yes, you can click the [https://wiki.libsdl.org/static_files/offline/sdlwiki.zip "offline html"] link at the bottom of any page to get a zipfile archive of the entire wiki in HTML format. If you like Unix manpages, we generate manpages from each API function's wiki page. The latest archives for each supported project, as zipfiles, are always [https://wiki.libsdl.org/static_files/offline/manpages/ here].
