@@ -33,6 +33,10 @@ called indirectly through various other SDL APIs, including, but not
 limited to the following: [[SDL_PollEvent]], [[SDL_PumpEvents]],
 [[SDL_WaitEventTimeout]], [[SDL_WaitEvent]].
 
+Note that when sending trigger axes, you should scale the value to the full
+range of Sint16. For example, a trigger at rest would have the value of
+<code>[[SDL_JOYSTICK_AXIS_MIN]]</code>.
+
 == Version ==
 
 This function is available since SDL 2.0.14.
