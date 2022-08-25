@@ -36,6 +36,7 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 * [[SDL_DollarGestureEvent]]
 * [[SDL_DropEvent]]
 * [[SDL_Event]]
+* [[SDL_EventFilter]]
 * [[SDL_EventState]]
 * [[SDL_EventType]]
 * [[SDL_FilterEvents]]
