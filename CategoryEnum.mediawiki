@@ -19,6 +19,7 @@ This category contains all the (public) enumerations for SDL.
 * [[SDL_BlendMode]]
 * [[SDL_BlendOperation]]
 * [[SDL_bool]]
+* [[SDL_DisplayEventID]]
 * [[SDL_EventType]]
 * [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerBindType]]

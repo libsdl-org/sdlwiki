@@ -32,6 +32,7 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 * [[SDL_ControllerButtonEvent]]
 * [[SDL_ControllerDeviceEvent]]
 * [[SDL_DelEventWatch]]
+* [[SDL_DisplayEventID]]
 * [[SDL_DollarGestureEvent]]
 * [[SDL_DropEvent]]
 * [[SDL_Event]]
