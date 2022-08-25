@@ -35,6 +35,12 @@ An enumeration of the types of events that can be delivered.
 |application entered foreground
 |-
 |
+|<span style="background-color:#EDEDED;">''Display events''</span>
+|-
+|[[SDL_DisplayEvent|SDL_DISPLAYEVENT]]
+|Display state change
+|-
+|
 |<span style="background-color:#EDEDED;">''Window events''</span>
 |-
 |[[SDL_WindowEvent|SDL_WINDOWEVENT]]
