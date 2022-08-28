@@ -231,6 +231,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_GetHint]]
 * [[SDL_GetHintBoolean]]
 * [[SDL_GetInputDeviceName]]
+* [[SDL_GetJoystickGUIDInfo]]
 * [[SDL_GetKeyboardFocus]]
 * [[SDL_GetKeyboardState]]
 * [[SDL_GetKeyFromName]]
