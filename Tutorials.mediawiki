@@ -40,6 +40,9 @@ There are a number of SDL tutorials available from different sources.
 
 * [https://www.youtube.com/watch?v=JXdqh0INIBI How To Get Started with SDL2 OpenGL C++ Programming on Linux]
 : A video showing how to get started with SDL2 and OpenGL on Linux, using Visual Studio Code and Cmake. Some prior knowledge of C++ and Linux is required.
+
+* [https://www.youtube.com/playlist?list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0 SDL2 and C++ Video Tutorial Series]
+: A YouTube series of videos showing how to setup SDL2 with C++ and various other beginner to intermediate level topics on using SDL2.
 == Android ==
 
 * [http://www.dinomage.com/2013/01/howto-sdl-on-android/ HowTo: SDL on Android]
