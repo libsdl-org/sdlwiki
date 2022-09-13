@@ -44,6 +44,7 @@ This category contains all the (public) structures for SDL.
 * [[SDL_JoyHatEvent]]
 * [[SDL_KeyboardEvent]]
 * [[SDL_Keysym]]
+* [[SDL_Locale]]
 * [[SDL_MessageBoxButtonData]]
 * [[SDL_MessageBoxColor]]
 * [[SDL_MessageBoxColorScheme]]

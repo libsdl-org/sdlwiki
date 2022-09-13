@@ -501,6 +501,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_LoadObject]]
 * [[SDL_LoadWAV]]
 * [[SDL_LoadWAV_RW]]
+* [[SDL_Locale]]
 * [[SDL_LockAudio]]
 * [[SDL_LockAudioDevice]]
 * [[SDL_LockJoysticks]]
