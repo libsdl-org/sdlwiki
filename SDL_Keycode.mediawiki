@@ -500,7 +500,7 @@ SDLK_KP_DBLAMPERSAND
 |SDL_SCANCODE_KP_DBLAMPERSAND
 |SDLK_KP_DBLAMPERSAND
 |-
-|"'''Keypad ||'''" (the || key (numeric keypad))
+|"'''Keypad | |'''" (the | | key (numeric keypad))
 |SDL_SCANCODE_KP_DBLVERTICALBAR
 |SDLK_KP_DBLVERTICALBAR
 |-
