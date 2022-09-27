@@ -5,7 +5,7 @@ Close a sensor previously opened with [[SDL_SensorOpen]]().
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SensorClose(SDL_Sensor * sensor);
+void SDL_SensorClose(SDL_Sensor *sensor);
 </syntaxhighlight>
 
 == Function Parameters ==

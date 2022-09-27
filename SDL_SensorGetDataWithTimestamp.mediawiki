@@ -1,11 +1,11 @@
-= SDL_SensorGetData =
+= SDL_SensorGetDataWithTimestamp =
 
-Get the current state of an opened sensor.
+Get the current state of an opened sensor with the timestamp of the last update.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SensorGetData(SDL_Sensor *sensor, float *data, int num_values);
+int SDL_SensorGetDataWithTimestamp(SDL_Sensor *sensor, Uint64 *timestamp, float *data, int num_values);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -13,6 +13,9 @@ int SDL_SensorGetData(SDL_Sensor *sensor, float *data, int num_values);
 {|
 |'''sensor'''
 |The [[SDL_Sensor]] object to query
+|-
+|'''timestamp'''
+|A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not
 |-
 |'''data'''
 |A pointer filled with the current sensor state
@@ -34,6 +37,6 @@ The number of values and interpretation of the data is sensor dependent.
 This function is available since SDL 2.0.9.
 
 ----
-[[CategoryAPI]], [[CategorySensor]]
+[[CategoryAPI]]
 
 
