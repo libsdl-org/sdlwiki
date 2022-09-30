@@ -1,4 +1,7 @@
+== SDL_FPoint ==
 Point structure like [[SDL_Point]], but uses float instead of int for coordinates
+
+
 == Data Fields ==
 {|
 |float
