@@ -630,6 +630,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_RenderWindowToLogical]]
 * [[SDL_ResetAssertionReport]]
 * [[SDL_ResetHint]]
+* [[SDL_ResetHints]]
 * [[SDL_ResetKeyboard]]
 * [[SDL_RestoreWindow]]
 * [[SDL_REVISION]]
