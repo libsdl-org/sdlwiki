@@ -32,7 +32,7 @@ support (Apple calls this "Retina"), and not disabled by the
 
 == Version ==
 
-This function is available since SDL 2.26.0.
+This function is available since SDL 2.26.1.
 
 == Related Functions ==
 
