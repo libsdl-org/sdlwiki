@@ -13,7 +13,8 @@ void SDL_DisableScreenSaver(void);
 If you disable the screensaver, it is automatically re-enabled when SDL
 quits.
 
-The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2 the screensaver was enabled by default.
+The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2
+the screensaver was enabled by default.
 
 == Version ==
 
