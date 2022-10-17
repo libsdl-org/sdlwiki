@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -34,7 +33,7 @@ The value of this hint is used at runtime, so it can be changed at any time.
 
 == Version ==
 This hint is available since SDL 2.0.4.
-
+This hint is removed since SDL 2.0.10.
 ----
 [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
