@@ -57,7 +57,13 @@ mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release --parallel
+
+#CMake >= 3.15
 sudo cmake --install . --config Release
+
+#CMake <= 3.14
+sudo make install
+
 </syntaxhighlight>
 
 Once you have the library installed, you can use the sdl2-config program to help you compile your own code:
