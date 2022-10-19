@@ -21,7 +21,7 @@ int Mix_FadeOutChannel(int which, int ms);
 
 == Return Value ==
 
-Returns 0 on success, or -1 on error.
+Returns the number of channels scheduled to fade.
 
 == Remarks ==
 
