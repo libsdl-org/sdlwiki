@@ -1,0 +1,18 @@
+= SDL_AUDIO_ALLOW_SAMPLES_CHANGE =
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_AUDIO_ALLOW_SAMPLES_CHANGE
+</syntaxhighlight>
+
+== Version ==
+
+This macro is available since SDL 2.0.9.
+
+== Related Functions ==
+
+:[[SDL_OpenAudioDevice]]
+
+----
+[[CategoryAPI]], [[CategoryAudio]]
