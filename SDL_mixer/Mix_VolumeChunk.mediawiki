@@ -27,10 +27,8 @@ the current volume. If <code>chunk</code> is NULL, this returns -1.
 == Remarks ==
 
 In addition to channels having a volume setting, individual chunks also
-maintain a seperate volume. Both values are considered when mixing, so both
-affect the final attenuation of the sound. This lets an app adjust the
-volume for all instances of a sound in addition to specific instances of
-that sound.
+maintain a separate volume. This lets an app adjust the
+volume for all channels of a specific instance of that sound.
 
 The volume must be between 0 (silence) and [[MIX_MAX_VOLUME]] (full
 volume). Note that [[MIX_MAX_VOLUME]] is 128. Values greater than
