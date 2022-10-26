@@ -9,11 +9,16 @@ Suspend or resume the whole audio output.
 void Mix_PauseAudio(int pause_on);
 </syntaxhighlight>
 
+== Function Parameters ==
+
+{|
+|'''pause_on'''
+|1 to pause audio output, or 0 to resume.
+|}
+
 == Version ==
 
 This function is available since SDL_mixer 2.8.0.
-
-@param pause_on Set audio output to pause, 1 (to pause) or 0 (to resume)
 
 ----
 [[CategoryAPI]]
