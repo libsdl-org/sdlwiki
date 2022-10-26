@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -25,7 +24,7 @@ const char* SDL_GameControllerGetStringForButton(SDL_GameControllerButton button
 
 == Return Value ==
 
-Returns a string for the given button, or NULL if an invalid axis is
+Returns a string for the given button, or NULL if an invalid button is
 specified. The string returned is of the format used by
 [[SDL_GameController]] mapping strings.
 
