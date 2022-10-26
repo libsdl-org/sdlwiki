@@ -1,0 +1,21 @@
+====== (This function is part of SDL_mixer, a separate library from SDL.) ======
+= Mix_PauseAudio =
+
+Suspend or resume the whole audio output.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void Mix_PauseAudio(int pause_on);
+</syntaxhighlight>
+
+== Version ==
+
+This function is available since SDL_mixer 2.8.0.
+
+@param pause_on Set audio output to pause, 1 (to pause) or 0 (to resume)
+
+----
+[[CategoryAPI]]
+
+
