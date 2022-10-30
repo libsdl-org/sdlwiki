@@ -54,6 +54,12 @@ An enumeration of window events.
 |-
 |SDL_WINDOWEVENT_HIT_TEST
 |window had a hit test that wasn't SDL_HITTEST_NORMAL (>= SDL 2.0.5)
+|-
+|SDL_WINDOWEVENT_ICCPROF_CHANGED
+|The ICC profile of the window's display has changed (>= SDL 2.0.18)
+|-
+|SDL_WINDOWEVENT_DISPLAY_CHANGED
+|The window has been moved to display data1. (>= SDL 2.0.18)
 |}
 
 == Code Examples ==
