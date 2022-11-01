@@ -49,6 +49,7 @@
 * [[IMG_LoadTIF_RW]]
 * [[IMG_LoadTyped_RW]]
 * [[IMG_LoadWEBP_RW]]
+* [[IMG_LoadWEBPAnimation_RW]]
 * [[IMG_LoadXCF_RW]]
 * [[IMG_LoadXPM_RW]]
 * [[IMG_LoadXV_RW]]
