@@ -8,9 +8,9 @@
 Keycodes for keys with printable characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their [[SDL_Scancode|scancode]] bitwise OR-ed with <code>1<<30</code> (0x40000000).
 
 {|
-|<bgcolor="#EDEDED">''Decimal Value''
-|<bgcolor="#EDEDED">''Hex Value (Char)''
-|<bgcolor="#EDEDED">''SDL_Keycode Constant''
+|''Decimal Value''
+|''Hex Value (Char)''
+|''SDL_Keycode Constant''
 |-
 |0
 |0x00 ('\0')
@@ -61,7 +61,7 @@ Keycodes for keys with printable characters are represented by the character byt
 |SDLK_AMPERSAND
 |-
 |39
-|0x27 ('\&#39;')
+|0x27 ('\'')
 |SDLK_QUOTE
 |-
 |40
@@ -185,7 +185,7 @@ Keycodes for keys with printable characters are represented by the character byt
 |SDLK_UNDERSCORE
 |-
 |96
-|0x60 ('&#96;')
+|0x60 ('`')
 |SDLK_BACKQUOTE
 |-
 |97
