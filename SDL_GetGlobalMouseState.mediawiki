@@ -1,4 +1,3 @@
-
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -28,7 +27,7 @@ Uint32 SDL_GetGlobalMouseState(int *x, int *y);
 == Return Value ==
 
 Returns the current button state as a bitmask which can be tested using the
-[[SDL_BUTTON]](X) macros.
+[[SDL_BUTTON]](X) macros. (Unlike [[SDL_GetMouseState]]() this only seems to recognize left/middle/right buttons, none of the rest.)
 
 == Remarks ==
 
