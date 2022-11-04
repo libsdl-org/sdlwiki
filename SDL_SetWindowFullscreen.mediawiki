@@ -31,6 +31,11 @@ Returns 0 on success or a negative error code on failure; call
 <code>[[SDL_WINDOW_FULLSCREEN_DESKTOP]]</code> for "fake" fullscreen that
 takes the size of the desktop; and 0 for windowed mode.
 
+If you're using the default D3D9 renderer, this function will trigger an SDL_RENDER_TARGETS_RESET event. You'll have to handle it by re-creating all of your textures.
+If you want to avoid that, you can use the OpenGL or D3D11 renderers, by setting one of these hints before your SDL_CreateWindowAndRenderer() call:
+<code>SDL_SetHint( SDL_HINT_RENDER_DRIVER, "opengl" );
+SDL_SetHint( SDL_HINT_RENDER_DRIVER, "direct3d11" );</code>
+
 == Version ==
 
 This function is available since SDL 2.0.0.
