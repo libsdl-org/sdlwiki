@@ -21,6 +21,7 @@ Uint32 SDL_GetMouseState(int *x, int *y);
 == Return Value ==
 
 Returns a 32-bit button bitmask of the current button state.
+(This returns most if not all buttons, unlike [[SDL_GetGlobalMouseState]]() which only seems to recognize left/middle/right buttons none of the rest.)
 
 == Remarks ==
 
@@ -30,6 +31,8 @@ tested using the <code>[[SDL_BUTTON]](X)</code> macros (where
 button), and <code>x</code> and <code>y</code> are set to the mouse cursor
 position relative to the focus window. You can pass NULL for either
 <code>x</code> or <code>y</code>.
+
+You may wanna use [[SDL_GetGlobalMouseState]]() for multi monitor setup, since x and Y drop to 0 when passing from 1 monitor to the next, thus you don't know which monitor the mouse is on...
 
 == Version ==
 
