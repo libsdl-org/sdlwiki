@@ -23,10 +23,6 @@ otherwise it returns the initialization status of the specified subsystems.
 
 The return value does not include [[SDL_INIT_NOPARACHUTE]].
 
-== Version ==
-
-This function is available since SDL 2.0.0.
-
 == Related Functions ==
 
 :[[SDL_Init]]
