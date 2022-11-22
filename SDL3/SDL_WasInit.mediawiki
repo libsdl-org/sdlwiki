@@ -62,6 +62,10 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 :[[SDL_Init]]
 :[[SDL_InitSubSystem]]
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryInit]]
 
