@@ -1,3 +1,4 @@
+====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_JoystickGetDevicePlayerIndex =
 
 Get the player index of a joystick, or -1 if it's not available This can be called before any joysticks are opened.

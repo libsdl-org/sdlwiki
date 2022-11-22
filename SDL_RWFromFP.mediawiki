@@ -1,3 +1,4 @@
+====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_RWFromFP =
 
 Use this function to create an [[SDL_RWops]] structure from a standard I/O file pointer (stdio.h's <code>FILE*</code>).

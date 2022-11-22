@@ -1,3 +1,4 @@
+====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_AudioStreamFlush =
 
 Tell the stream that you're done sending data, and anything being buffered should be converted/resampled and made available immediately.
