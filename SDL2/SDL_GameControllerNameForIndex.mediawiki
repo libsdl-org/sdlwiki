@@ -1,0 +1,44 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+= SDL_GameControllerNameForIndex =
+
+Get the implementation dependent name for the game controller.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+const char* SDL_GameControllerNameForIndex(int joystick_index);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''joystick_index'''
+|the device_index of a device, from zero to [[SDL_NumJoysticks]]()-1
+|}
+
+== Return Value ==
+
+Returns the implementation-dependent name for the game controller, or NULL
+if there is no name or the index is invalid.
+
+== Remarks ==
+
+This function can be called before any controllers are opened.
+
+<code>joystick_index</code> is the same as the <code>device_index</code>
+passed to [[SDL_JoystickOpen]]().
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+
+:[[SDL_GameControllerName]]
+:[[SDL_GameControllerOpen]]
+:[[SDL_IsGameController]]
+
+----
+[[CategoryAPI]]
+
+

@@ -1,0 +1,38 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+= SDL_GetWindowData =
+
+Retrieve the data pointer associated with a window.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+void* SDL_GetWindowData(SDL_Window * window,
+                        const char *name);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''window'''
+|the window to query
+|-
+|'''name'''
+|the name of the pointer
+|}
+
+== Return Value ==
+
+Returns the value associated with <code>name</code>.
+
+== Version ==
+
+This function is available since SDL 2.0.0.
+
+== Related Functions ==
+
+:[[SDL_SetWindowData]]
+
+----
+[[CategoryAPI]]
+
+

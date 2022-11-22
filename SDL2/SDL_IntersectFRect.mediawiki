@@ -1,0 +1,47 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+= SDL_IntersectFRect =
+
+Calculate the intersection of two rectangles with float precision.
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+SDL_bool SDL_IntersectFRect(const SDL_FRect * A,
+                            const SDL_FRect * B,
+                            SDL_FRect * result);
+</syntaxhighlight>
+
+== Function Parameters ==
+
+{|
+|'''A'''
+|an [[SDL_FRect]] structure representing the first rectangle
+|-
+|'''B'''
+|an [[SDL_FRect]] structure representing the second rectangle
+|-
+|'''result'''
+|an [[SDL_FRect]] structure filled in with the intersection of rectangles <code>A</code> and <code>B</code>
+|}
+
+== Return Value ==
+
+Returns [[SDL_TRUE]] if there is an intersection, [[SDL_FALSE]] otherwise.
+
+== Remarks ==
+
+If <code>result</code> is NULL then this function will return
+[[SDL_FALSE]].
+
+== Version ==
+
+This function is available since SDL 2.0.22.
+
+== Related Functions ==
+
+:[[SDL_HasIntersectionF]]
+
+----
+[[CategoryAPI]]
+
+
