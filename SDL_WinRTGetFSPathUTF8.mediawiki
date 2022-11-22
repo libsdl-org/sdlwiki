@@ -43,7 +43,7 @@ https://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
 
 == Version ==
 
-This function is available since SDL 2.0.3.
+This function is available since SDL 2.0.4.
 
 == Related Functions ==
 
