@@ -42,7 +42,7 @@ Unless you know what you're doing, you should be using
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

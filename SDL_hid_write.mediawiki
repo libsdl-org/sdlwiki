@@ -43,7 +43,7 @@ exists. If it does not, it will send the data through the Control Endpoint
 
 == Version ==
 
-This function is available since SDL 2.0.18.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

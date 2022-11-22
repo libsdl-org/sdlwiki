@@ -24,7 +24,7 @@ There may be none if SDL was compiled without render support.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

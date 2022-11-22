@@ -23,7 +23,7 @@ Returns The [[SDL_DisplayOrientation]] enum value of the display, or
 
 == Version ==
 
-This function is available since SDL 2.0.9.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

@@ -30,7 +30,7 @@ If either pointer is NULL the function will return [[SDL_FALSE]].
 
 == Version ==
 
-This function is available since SDL 2.0.22.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

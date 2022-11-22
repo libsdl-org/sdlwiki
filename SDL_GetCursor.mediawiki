@@ -24,7 +24,7 @@ library. It is not necessary to free the cursor with [[SDL_FreeCursor]]().
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

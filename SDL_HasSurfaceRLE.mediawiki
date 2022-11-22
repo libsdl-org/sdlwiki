@@ -28,7 +28,7 @@ It is safe to pass a NULL <code>surface</code> here; it will return
 
 == Version ==
 
-This function is available since SDL 2.0.14.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

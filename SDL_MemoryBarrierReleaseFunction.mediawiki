@@ -28,7 +28,7 @@ http://preshing.com/20120913/acquire-and-release-semantics
 
 == Version ==
 
-This function is available since SDL 2.0.6.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

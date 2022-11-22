@@ -26,7 +26,7 @@ This can be called before any controllers are opened.
 
 == Version ==
 
-This function is available since SDL 2.0.12.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

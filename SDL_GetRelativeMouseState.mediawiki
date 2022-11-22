@@ -39,7 +39,7 @@ initialization. You can pass NULL for either <code>x</code> or
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

@@ -25,7 +25,7 @@ The return value does not include [[SDL_INIT_NOPARACHUTE]].
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

@@ -33,7 +33,7 @@ It is also an error to unlock a mutex that isn't locked at all.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

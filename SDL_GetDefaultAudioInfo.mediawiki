@@ -47,7 +47,7 @@ dynamically-allocated UTF-8 string or NULL.
 
 == Version ==
 
-This function is available since SDL 2.24.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

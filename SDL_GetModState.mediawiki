@@ -20,7 +20,7 @@ Returns an OR'd combination of the modifier keys for the keyboard. See
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

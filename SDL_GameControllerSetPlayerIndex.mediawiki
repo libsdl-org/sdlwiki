@@ -21,7 +21,7 @@ void SDL_GameControllerSetPlayerIndex(SDL_GameController *gamecontroller, int pl
 
 == Version ==
 
-This function is available since SDL 2.0.12.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

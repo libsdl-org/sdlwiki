@@ -40,7 +40,7 @@ range of Sint16. For example, a trigger at rest would have the value of
 
 == Version ==
 
-This function is available since SDL 2.0.14.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

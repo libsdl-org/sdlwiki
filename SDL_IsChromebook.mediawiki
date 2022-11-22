@@ -15,7 +15,7 @@ Returns [[SDL_TRUE]] if this is a Chromebook, [[SDL_FALSE]] otherwise.
 
 == Version ==
 
-This function is available since SDL 2.0.9.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

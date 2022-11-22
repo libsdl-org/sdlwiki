@@ -30,7 +30,7 @@ Returns 1 if the specified button is pressed, 0 otherwise.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

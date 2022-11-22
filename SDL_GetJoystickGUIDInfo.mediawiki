@@ -30,7 +30,7 @@ void SDL_GetJoystickGUIDInfo(SDL_JoystickGUID guid, Uint16 *vendor, Uint16 *prod
 
 == Version ==
 
-This function is available since SDL 2.26.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

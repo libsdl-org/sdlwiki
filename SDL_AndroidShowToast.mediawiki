@@ -47,7 +47,7 @@ https://developer.android.com/reference/android/view/Gravity
 
 == Version ==
 
-This function is available since SDL 2.0.16.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryAndroid]]

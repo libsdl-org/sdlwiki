@@ -31,7 +31,7 @@ dereference once this function returns, and should be discarded.
 
 == Version ==
 
-This function is available since SDL 2.0.10.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

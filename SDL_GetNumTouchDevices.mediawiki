@@ -32,7 +32,7 @@ This was fixed for Android in SDL 2.0.1.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

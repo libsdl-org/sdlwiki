@@ -30,7 +30,7 @@ or <code>[[SDL_JOYSTICK_POWER_UNKNOWN]]</code> if it is unknown
 
 == Version ==
 
-This function is available since SDL 2.0.4.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryJoystick]], [[CategoryDraft]]

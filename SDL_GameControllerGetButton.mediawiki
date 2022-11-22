@@ -34,7 +34,7 @@ Returns 1 for pressed state or 0 for not pressed state or error; call
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

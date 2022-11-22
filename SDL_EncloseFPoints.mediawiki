@@ -40,7 +40,7 @@ rectangle are considered.
 
 == Version ==
 
-This function is available since SDL 2.0.22.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryRect]]

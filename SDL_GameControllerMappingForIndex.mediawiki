@@ -16,7 +16,7 @@ if the index is out of range.
 
 == Version ==
 
-This function is available since SDL 2.0.6.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

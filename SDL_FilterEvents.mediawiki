@@ -28,7 +28,7 @@ permanently, it only uses the supplied filter until this function returns.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

@@ -37,7 +37,7 @@ information for the destination surface, in case that would be important.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

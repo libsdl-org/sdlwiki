@@ -48,7 +48,7 @@ only own zero bytes of that buffer).
 
 == Version ==
 
-This function is available since SDL 2.0.10.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

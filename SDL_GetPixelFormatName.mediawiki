@@ -23,7 +23,7 @@ Returns the human readable name of the specified pixel format or
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

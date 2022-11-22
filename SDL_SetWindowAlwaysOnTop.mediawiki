@@ -28,7 +28,7 @@ to the front and keep the window above the rest.
 
 == Version ==
 
-This function is available since SDL 2.0.16.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

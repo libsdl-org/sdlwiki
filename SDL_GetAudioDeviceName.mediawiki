@@ -39,7 +39,7 @@ invalid next time any of several other SDL functions are called.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

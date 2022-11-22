@@ -44,7 +44,7 @@ has more pixels than the window that contains it, so use this instead of
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

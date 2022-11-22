@@ -28,7 +28,7 @@ Returns 0 or -1 if an error occurred.
 
 == Version ==
 
-This function is available since SDL 2.0.14.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

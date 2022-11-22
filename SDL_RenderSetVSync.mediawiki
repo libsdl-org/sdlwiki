@@ -25,7 +25,7 @@ Returns a 0 int on success, or non-zero on failure
 
 == Version ==
 
-This function is available since SDL 2.0.18.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]

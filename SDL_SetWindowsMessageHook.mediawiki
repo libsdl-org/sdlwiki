@@ -28,7 +28,7 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 
 == Version ==
 
-This function is available since SDL 2.0.4.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]]

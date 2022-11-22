@@ -27,7 +27,7 @@ This function may be called safely at any time, even before [[SDL_Init]]().
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

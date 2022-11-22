@@ -34,7 +34,7 @@ render targets, just the window's backbacker. Check your return values!
 
 == Version ==
 
-This function is available since SDL 2.0.8.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

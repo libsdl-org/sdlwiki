@@ -24,7 +24,7 @@ void SDL_LogInfo(int category, SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SD
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

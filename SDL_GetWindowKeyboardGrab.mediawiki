@@ -22,7 +22,7 @@ Returns [[SDL_TRUE]] if keyboard is grabbed, and [[SDL_FALSE]] otherwise.
 
 == Version ==
 
-This function is available since SDL 2.0.16.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

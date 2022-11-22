@@ -30,7 +30,7 @@ Returns [[SDL_TRUE]] if clipping is enabled or [[SDL_FALSE]] if not; call
 
 == Version ==
 
-This function is available since SDL 2.0.4.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

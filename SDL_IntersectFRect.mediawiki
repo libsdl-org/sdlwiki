@@ -35,7 +35,7 @@ If <code>result</code> is NULL then this function will return
 
 == Version ==
 
-This function is available since SDL 2.0.22.
+This function is available since SDL 3.0.0.
 
 == Related Functions ==
 

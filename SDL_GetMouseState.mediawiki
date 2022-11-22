@@ -34,7 +34,7 @@ position relative to the focus window. You can pass NULL for either
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

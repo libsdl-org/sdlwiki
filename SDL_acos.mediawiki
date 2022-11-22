@@ -38,7 +38,7 @@ Range: <code>0 <= y <= Pi</code>
 
 == Version ==
 
-This function is available since SDL 2.0.2.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

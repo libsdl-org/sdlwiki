@@ -27,7 +27,7 @@ This blocks the calling thread until the permission is granted or denied.
 
 == Version ==
 
-This function is available since SDL 2.0.14.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryAndroid]]

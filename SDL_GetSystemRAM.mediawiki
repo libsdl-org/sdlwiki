@@ -23,7 +23,7 @@ Returns the amount of RAM configured in the system in MiB.
 
 == Version ==
 
-This function is available since SDL 2.0.1.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]], [[CategoryCPU]], [[CategoryDraft]]

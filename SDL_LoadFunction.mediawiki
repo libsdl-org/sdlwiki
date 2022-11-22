@@ -42,7 +42,7 @@ If the requested function doesn't exist, NULL is returned.
 
 == Version ==
 
-This function is available since SDL 2.0.0.
+This function is available since SDL 3.0.0.
 
 == Code Examples ==
 

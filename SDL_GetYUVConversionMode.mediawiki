@@ -11,7 +11,7 @@ SDL_YUV_CONVERSION_MODE SDL_GetYUVConversionMode(void);
 
 == Version ==
 
-This function is available since SDL 2.0.8.
+This function is available since SDL 3.0.0.
 
 ----
 [[CategoryAPI]]
