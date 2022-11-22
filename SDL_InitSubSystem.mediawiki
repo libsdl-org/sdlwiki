@@ -22,7 +22,7 @@ Returns 0 on success or a negative error code on failure; call
 
 == Remarks ==
 
-In SDL2, this function and [[SDL_Init]]() are interchangeable.
+This function and [[SDL_Init]]() are interchangeable.
 
 == Version ==
 
