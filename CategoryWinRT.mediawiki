@@ -1,9 +1,0 @@
-= CategoryWinRT =
-
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_WinRTGetDeviceFamily]]
-* [[SDL_WinRTGetFSPathUNICODE]]
-* [[SDL_WinRTGetFSPathUTF8]]
-* [[SDL_WinRTRunApp]]
-<!-- END CATEGORY LIST -->
-
