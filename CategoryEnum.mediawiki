@@ -49,7 +49,6 @@ This category contains all the (public) enumerations for SDL.
 * [[SDL_ThreadPriority]]
 * [[SDL_WindowEventID]]
 * [[SDL_WindowFlags]]
-* [[SDL_WinRT_Path]]
 * [[SDLEnumTemplate]]
 * [[SGEnumerations]]
 <!-- END CATEGORY LIST -->
