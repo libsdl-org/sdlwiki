@@ -27,13 +27,13 @@ If an EGL library is loaded, this function allows applications to get entry
 points for EGL functions. This is useful to provide to an EGL API and
 extension loader.
 
-== Related Functions ==
-
-:[[SDL_GL_GetCurrentEGLDisplay]]
-
 == Version ==
 
 This function is available since SDL 3.0.0.
+
+== Related Functions ==
+
+:[[SDL_GL_GetCurrentEGLDisplay]]
 
 ----
 [[CategoryAPI]]
