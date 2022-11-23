@@ -161,6 +161,7 @@
 * [[SDL_GameControllerUpdate]]
 * [[SDL_GDKGetTaskQueue]]
 * [[SDL_GDKRunApp]]
+* [[SDL_GDKSuspendComplete]]
 * [[SDL_GetAndroidSDKVersion]]
 * [[SDL_GetAssertionHandler]]
 * [[SDL_GetAssertionReport]]
