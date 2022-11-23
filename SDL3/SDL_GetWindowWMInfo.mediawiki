@@ -6,8 +6,7 @@ Get driver-specific information about a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
-                             SDL_SysWMinfo * info);
+int SDL_GetWindowWMInfo(SDL_Window *window, SDL_SysWMinfo *info, Uint32 version);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -18,23 +17,19 @@ SDL_bool SDL_GetWindowWMInfo(SDL_Window * window,
 |-
 |'''info'''
 |an [[SDL_SysWMinfo]] structure filled in with window information
+|-
+|'''version'''
+|the version of info being requested, should be [[SDL_SYSWM_CURRENT_VERSION]]
 |}
 
 == Return Value ==
 
-Returns [[SDL_TRUE]] if the function is implemented and the
-<code>version</code> member of the <code>info</code> struct is valid, or
-[[SDL_FALSE]] if the information could not be retrieved; call
+Returns 0 on success or a negative error code on failure; call
 [[SDL_GetError]]() for more information.
 
 == Remarks ==
 
 You must include [[SDL_syswm]].h for the declaration of [[SDL_SysWMinfo]].
-
-The caller must initialize the <code>info</code> structure's version by
-using <code>[[SDL_VERSION]](&info.version)</code>, and then this function
-will fill in the rest of the structure with information about the given
-window.
 
 == Version ==
 
