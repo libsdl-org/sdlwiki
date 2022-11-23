@@ -14,6 +14,10 @@ SDL_EGLSurface SDL_EGL_GetWindowEGLSurface(SDL_Window * window);
 Returns the EGLSurface pointer associated with the window, or NULL on
 failure.
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]]
 

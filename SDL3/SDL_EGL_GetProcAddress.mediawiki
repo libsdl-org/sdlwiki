@@ -31,6 +31,10 @@ extension loader.
 
 :[[SDL_GL_GetCurrentEGLDisplay]]
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]]
 

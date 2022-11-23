@@ -36,6 +36,10 @@ attribute arrays defined by SDL.
 NOTE: These callback pointers will be reset after
 [[SDL_GL_ResetAttributes]].
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]]
 

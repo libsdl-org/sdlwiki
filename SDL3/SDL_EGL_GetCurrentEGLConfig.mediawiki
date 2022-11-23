@@ -14,6 +14,10 @@ SDL_EGLConfig SDL_EGL_GetCurrentEGLConfig(void);
 Returns the currently active EGL config or NULL on failure; call
 [[SDL_GetError]]() for more information.
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]]
 
