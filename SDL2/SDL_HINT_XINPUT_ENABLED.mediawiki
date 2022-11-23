@@ -1,0 +1,42 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_XINPUT_ENABLED =
+A hint that specifies if Xinput gamepad devices are detected. Xinput is limited to 4 gamepads, if you want more than four you need to set it to "0".
+
+
+
+
+== Values ==
+{|
+|0
+|disable XInput detection (only uses direct input)
+|-
+|1
+|enable XInput detection (the default)
+|}
+
+
+== Default ==
+By default Xinput gamepad devices are detected.
+
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+SDL_SetHint(SDL_HINT_XINPUT_ENABLED, "0");
+//...
+SDL_Init(SDL_INIT_EVERYTHING);
+</syntaxhighlight>
+
+
+== Remarks ==
+You need to set this hint before you call [[SDL_Init]] otherwise it will not take effect.
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

@@ -1,0 +1,40 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_HIGHDPI_DISABLED =
+A hint that specifies if high-DPI windows ("Retina" on Mac and iOS) are not allowed.
+
+
+
+
+== Values ==
+{|
+|0
+|allow high-DPI windows
+|-
+|1
+|do not allow high-DPI windows
+|}
+
+
+== Default ==
+By default high-DPI windows ("Retina" on Mac and iOS) are allowed.
+
+
+
+== Remarks ==
+On Apple's OS X you '''must''' set the NSHighResolutionCapable Info.plist property to YES, otherwise you will not receive a High DPI OpenGL display.
+
+The hint is supported for iOS since SDL 2.0.4.
+
+== Version ==
+This hint is available since SDL 2.0.1.
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

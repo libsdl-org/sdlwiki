@@ -1,0 +1,31 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_GRAB_KEYBOARD =
+A hint that specifies whether grabbing input grabs the keyboard.
+
+
+
+
+== Values ==
+{|
+|0
+|grab will affect only the mouse
+|-
+|1
+|grab will affect mouse and keyboard
+|}
+
+
+== Default ==
+By default SDL will not grab the keyboard so system shortcuts still work.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

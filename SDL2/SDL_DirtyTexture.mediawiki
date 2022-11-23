@@ -1,0 +1,2 @@
+{|
+|<: tablewidth="100%"><span style="color: purple;">THIS FUNCTION HAS BEEN REMOVED FROM THE API.</span><br/><span style="color: purple;">THIS PAGE WILL BE DELETED.</span>

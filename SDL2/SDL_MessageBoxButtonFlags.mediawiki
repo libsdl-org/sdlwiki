@@ -1,0 +1,30 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_MessageBoxButtonFlags =
+An enumeration of flags for [[SDL_MessageBoxButtonData]].
+
+
+
+
+== Values ==
+{|
+|SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT
+|marks the default button when return is hit
+|-
+|SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT
+|marks the default button when escape is hit
+|}
+
+
+
+== Related Structures ==
+:[[SDL_MessageBoxButtonData]] 
+
+----
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]

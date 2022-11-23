@@ -1,0 +1,32 @@
+
+= SDL_VERSIONNUM =
+Use this macro to convert separate version components into a single numeric value.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+SDL_VERSIONNUM(X, Y, Z)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''X'''
+|major version; reported in thousands place
+|-
+|'''Y'''
+|minor version; reported in hundreds place
+|-
+|'''Z'''
+|update version (patchlevel); reported in tens and ones places
+|}
+
+== Remarks ==
+This assumes that there will never be more than 100 patchlevels.
+ ''Example:'' ```SDL_VERSIONNUM(1,2,3) -> (1203)```
+
+== Related Macros ==
+:[[SDL_COMPILEDVERSION]]
+:[[SDL_VERSION_ATLEAST]]
+
+----
+[[CategoryAPI]], [[CategoryVersion]]

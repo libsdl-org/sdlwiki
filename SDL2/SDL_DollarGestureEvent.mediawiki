@@ -1,0 +1,64 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_DollarGestureEvent =
+A structure that contains complex gesture event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_DOLLARGESTURE or SDL_DOLLARRECORD
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|SDL_TouchID
+|'''touchId'''
+|the touch device id
+|-
+|SDL_GestureID
+|'''gestureId'''
+|the unique id of the closest gesture to the performed stroke
+|-
+|Uint32
+|'''numFingers'''
+|the number of fingers used to draw the stroke
+|-
+|float
+|'''error'''
+|the difference between the gesture template and the actual performed gesture (lower error is a better match)
+|-
+|float
+|'''x'''
+|the normalized center of gesture
+|-
+|float
+|'''y'''
+|the normalized center of gesture
+|}
+
+<!-- <span style="color: green;">Worth changing touchId and gestureId to touchID and gestureID for consistency?</span> -->
+
+== Remarks ==
+[[SDL_DollarGestureEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_DOLLARGESTURE is reported.  You would access it through the event's <code>dgesture</code> field.
+
+'''x''' and '''y''' are in range 0 to 1.
+
+For SDL_DOLLARRECORD only '''touchId''' and '''gestureId''' are valid.
+
+For more information see: [http://hg.libsdl.org/SDL/file/default/docs/README-gesture.md README-gesture.md]
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+:[[SDL_MultiGestureEvent]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]

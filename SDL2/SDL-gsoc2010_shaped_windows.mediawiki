@@ -1,0 +1,78 @@
+This is a scratch pad for the Shaped Windows Google Summer of Code 2010 project, by Eli Gottlieb
+
+The code is available here: --( http://hg.libsdl.org/SDL/gsoc2010_shaped_windows )--
+
+
+== Status ==
+GSoC code submitted and merged with 1.3 branch.
+
+== Documentation ==
+The actual API itself is simple.  SDL_CreateShapedWindow() returns an SDL_Window with the correct attributes and the capability to be shaped.  From there, the user can either check if any particular window is a shaped window via a predicate function, or they can set the shape of a window by passing a shape surface with an alpha channel into SDL_SetWindowShape(). This function also accepts a structure of mode parameters, which are currently used to specify the cutoff value for the shape's alpha channel.  At or above that cutoff value, a pixel is visible in the shape.  Below that, it's not part of the shape.
+
+== Notes ==
+=== Compiling and Running Test Program ===
+==== Linux ====
+* obtain repository: hg pull; hg update
+* compile SDL: ./configure; make; sudo make install
+* compile test: cd test; ./configure; make
+* run test: ./testeyes shapes/file.bmp
+
+==== OSX (MacPorts) ====
+* obtain/install MacPort (https://trac.macports.org/wiki/InstallingMacPorts)
+* obtain repository: hg pull; hg update
+* compile SDL: ./autogen.sh; ./configure; make; sudo make install
+* compile test: cd test; ./configure; make
+* run test: ./testeyes shapes/file.bmp
+
+==== Win32 (VS) ====
+* open solution file and build
+
+=== Pre-Processing ===
+Possible pre-processing pipelines:
+
+input shape bitmap stored as surface or texture -(1)-> SDL rendering-from-texture function -(2)-> possible region-queue or mask bitmap -(3)-> render target associated with window shape is presented -(4)-> driver-specific shape-setting functions
+
+ 1. Two-valued alpha channel determines shape.
+ 1. possibly optional, some drivers' internal representations of shapes may be close enough to be used in place of an abstract data structure
+ 1. user signals that they are finished drawing the window shape
+ 1. driver-independent abstract data structure such as mask or region queue is converted to driver-specific data and the window shape is actually changed.
+
+=== X11 ===
+* Set via the "Shape Extension" http://en.wikipedia.org/wiki/Shape_extension
+* Documentation with C API http://www.xfree86.org/current/shapelib.html
+* If extension is missing from X, add Load "extmod" to the "Modules" section of the xorg.conf file (=makes for a good error message on shape extension detection).
+
+Currently figuring out how to link to the shape extension.
+
+=== Windows ===
+==== Regions ====
+Most commonly used is code that essentially sets a "region" which defines which pixels are shown and which are not. Most algorithms uses the Win32 region functions to compose this shape which is simple but works. In any case, the input to this process is a binarized (1bit) image. Note that you don't get any "blending" on the edges with this approach.
+
+Here some other sample code:
+
+* Sets shape by generating regions: http://comrade.ownz.com/docs/shapewnd.html
+* Shape of Form by using background key color: http://msdn.microsoft.com/en-us/beginner/cc963986.aspx
+* Setting per-Window alpha: http://msdn.microsoft.com/en-us/beginner/cc963986.aspx
+* Form app in .Net calling the Win32 Api: http://www.codeproject.com/KB/miscctrl/AlphaForm.aspx
+* Great summary with examples for all modes in Delphi: http://melander.dk/articles/alphasplash/
+
+==== Layered Window ====
+Now there is another way to provide transparency using an alpha-bitmap in Windows. The API to be used is the UpdateLayeredWindow() call:
+
+* MSDN info: [http://msdn.microsoft.com/en-us/library/ms633556(VS.85).aspx http://msdn.microsoft.com/en-us/library/ms633556%28VS.85%29.aspx]
+* Sample code: http://www.nuonsoft.com/blog/2009/05/27/how-to-use-updatelayeredwindow/
+* Sample code: Per Pixel Alpha Blend http://www.codeproject.com/kb/gdi/pxalphablend.aspx
+
+Even with this approach a shape vector may still be important, to get rid of clicks to the window - a window that is almost transparent (i.e. alpha=1) seems to have no shape, but will still receive clicks on those pixels. Note also, that the layered window API is not supported on WinCE (but the shape API is).
+
+==== DirectX OnPaint ====
+
+The OnPaint functions makes the background transparent by drawing black on it.
+
+* http://stackoverflow.com/questions/148275/how-do-i-draw-transparent-directx-content-in-a-transparent-window
+
+=== OSX ===
+If Cocoa also uses also a shape, it may be good to break out a common "2D shape calculation" algorithm that applies to both architectures.
+
+=== Shape Regions ===
+Note that a shape structure made out of regions has a list of 2D points defining a polygon AND a add/delete flag. For example a doughnut is made of two circle regions, one added and one deleted.

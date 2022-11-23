@@ -1,0 +1,62 @@
+<!-- acl All:read -->
+
+= SDL 2.0 Information & Support =
+
+<br/>
+== Information Sources ==
+
+```#!wiki tip
+'''Tip'''
+
+Although there is some overlap between SDL version 1.2 and 2.0, the information in this wiki is specifically for SDL version 2.0. SDL 1.2 is deprecated and not recommended for new projects.
+```
+
+For help switching over from version 1.2 to 2.0 check out this [[MigrationGuide|Migration Guide]].
+
+Once you're using version 2.0 of the Simple DirectMedia Layer (SDL) API, there are a number of sources for basic information.  Here are a few:
+
+=== Documentation ===
+Congratulations!  You already found this one.  Use the left sidebar to navigate through the documentation provided in this wiki.
+
+=== Header Files ===
+The SDL 2.0 header files can be found here:
+http://hg.libsdl.org/SDL/file/default/include
+
+=== Articles ===
+https://wiki.libsdl.org/Articles
+
+=== Books ===
+https://wiki.libsdl.org/Books
+
+<br/>
+== Support Options ==
+SDL is a community-supported library.  Here are a few options if you need assistance:
+
+
+=== Tutorials ===
+https://wiki.libsdl.org/Tutorials
+
+There is a link to SDL 1.2 tutorials here as well.
+
+=== FAQs ===
+https://wiki.libsdl.org/FAQs
+
+=== Forums ===
+http://forums.libsdl.org/
+
+Most people will find the '''SDL Development''' forum the most helpful.  This is the best place to ask technical questions that are not answered by tutorials or FAQs.  
+
+<!> NOTE:  Because of the deluge of spammers, '''you MUST join the "Community" group before you are allowed to post on this forum'''. You can find specific instructions in the [http://forums.libsdl.org/viewtopic.php?t=5973 welcome message] in the SDL Development forum.  Please allow a few days for this process to be completed.   
+
+=== Mailing Lists ===
+http://www.libsdl.org/mailing-list.php
+
+Most people will find the '''Development Mailing List''' the most helpful.  Although, if you are interested in participating in the documentation process you may be interested in the Documentation Mailing List.  
+
+=== Newsgroup ===
+http://news.gmane.org/gmane.comp.lib.sdl
+
+=== Bug Reporting ===
+http://bugzilla.libsdl.org/
+
+You can submit bug reports and patches to the SDL Bugzilla bug tracking system.

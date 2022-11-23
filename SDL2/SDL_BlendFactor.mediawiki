@@ -1,0 +1,64 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_BlendFactor =
+An enumeration of blend factors used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().
+
+
+== Values ==
+{|
+|SDL_BLENDFACTOR_ZERO
+|0, 0, 0, 0
+|-
+|SDL_BLENDFACTOR_ONE
+|1, 1, 1, 1
+|-
+|SDL_BLENDFACTOR_SRC_COLOR
+|srcR, srcG, srcB, srcA
+|-
+|SDL_BLENDFACTOR_ONE_MINUS_SRC_COLOR
+|1-srcR, 1-srcG, 1-srcB, 1-srcA
+|-
+|SDL_BLENDFACTOR_SRC_ALPHA
+|srcA, srcA, srcA, srcA
+|-
+|SDL_BLENDFACTOR_ONE_MINUS_SRC_ALPHA
+|1-srcA, 1-srcA, 1-srcA, 1-srcA
+|-
+|SDL_BLENDFACTOR_DST_COLOR
+|dstR, dstG, dstB, dstA
+|-
+|SDL_BLENDFACTOR_ONE_MINUS_DST_COLOR
+|1-dstR, 1-dstG, 1-dstB, 1-dstA
+|-
+|SDL_BLENDFACTOR_DST_ALPHA
+|dstA, dstA, dstA, dstA
+|-
+|SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA
+|1-dstA, 1-dstA, 1-dstA, 1-dstA
+|}
+
+== Remarks ==
+
+The blend factors are multiplied with the pixels from a drawing operation (src) and the pixels from the render target (dst) before the blend operation. The comma-separated factors listed above are always applied in the component order red, green, blue, and alpha.
+
+Some renderers may not support all factors. See [[SDL_ComposeCustomBlendMode]]() for a list of what the current renderers support.
+
+== Version ==
+
+This enumeration is available since SDL 2.0.6.
+
+== Related Enumerations ==
+:[[SDL_BlendOperation]]
+
+== Related Functions ==
+:[[SDL_ComposeCustomBlendMode]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetTextureBlendMode]]
+
+----
+[[CategoryEnum]], [[CategoryRender]], [[CategoryDraft]]
+
+<!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->

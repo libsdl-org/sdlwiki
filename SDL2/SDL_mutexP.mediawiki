@@ -1,0 +1,2 @@
+
+SDL_mutexP() has been replaced by [[SDL_LockMutex]]().

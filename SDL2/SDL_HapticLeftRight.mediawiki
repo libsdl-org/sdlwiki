@@ -1,0 +1,62 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HapticLeftRight =
+A structure that contains a template for a left/right effect.
+
+
+
+
+== Data Fields ==
+{|
+|
+|
+|<bgcolor="#EDEDED">''Header''
+|-
+|Uint16
+|'''type'''
+|SDL_HAPTIC_LEFTRIGHT
+|-
+|
+|
+|<bgcolor="#EDEDED">''Replay''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|
+|
+|<bgcolor="#EDEDED">''Rumble''
+|-
+|Uint16
+|'''large_magnitude'''
+|control of the large controller motor
+|-
+|Uint16
+|'''small_magnitude'''
+|control of the small controller motor
+|}
+
+
+
+== Remarks ==
+This struct is exclusively for the SDL_HAPTIC_LEFTRIGHT effect.
+
+The left/right effect is used to explicitly control the large and small motors, commonly found in modern game controllers. One motor is high frequency, the other is low frequency.
+
+
+== Related Structures ==
+:[[SDL_HapticEffect]]
+
+== Related Functions ==
+:[[SDL_HapticNewEffect]]
+
+----
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

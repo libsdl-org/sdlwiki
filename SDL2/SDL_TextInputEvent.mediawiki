@@ -1,0 +1,65 @@
+= SDL_TextInputEvent =
+A structure that contains keyboard text input event information.
+
+
+== Data Fields ==
+{|
+|Uint32 
+|'''type''' 
+|SDL_TEXTINPUT 
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32 
+|'''windowID''' 
+|the window with keyboard focus, if any 
+|-
+|char[32] 
+|'''text''' 
+|the null-terminated input text in UTF-8 encoding 
+|}
+
+== Remarks ==
+[[SDL_TextInputEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported. You would access it through the event's <code>text</code> field.
+
+There is a [[Tutorials-TextInput|tutorial]].
+
+'''Detailed explanation''' (from [http://lists.libsdl.org/pipermail/sdl-libsdl.org/2013-August/090073.html SDL mailing list] by Jiang Jiang <gzjjgod at gmail.com>)
+
+```
+In a typical GUI application, the OS will be responsible for telling
+you the candidate text (via SDL_TEXTEDITING), you can choose how (and
+where) to show it in your UI.
+Let's say with an input method I typed "abc" and got unicode character
+"X", the SDL application will first receive three SDL_TEXTEDITING
+events with 'a', 'ab' and 'abc', then finally receive SDL_TEXTINPUT
+event with unicode character 'X'.
+During this text compositing process, user can press any arbitrary
+keys such as Function, backspace, both the SDL application and OS
+input method will receive it and decide whether to deal with these
+keys or not. For instance when user press backspace, most input
+methods will delete the last candidate character typed and SDL app
+will receive a new SDL_TEXTEDITING event (let's say user typed a, b,
+backspace, c, then the application will receive 4 events containing
+'a', 'ab', 'a', 'ac' each).
+
+[[SDL_SetTextInputRect]]() gives the OS a hint for where to show the
+candidate text list, since the OS doesn't know where you want to draw
+the text you received via SDL_TEXTEDITING event.
+```
+
+== Related Enumerations ==
+: [[SDL_EventType]]
+
+== Related Structures ==
+: [[SDL_Event]]
+: [[SDL_TextEditingEvent]]
+
+== Related Functions ==
+: [[SDL_StartTextInput]]
+: [[SDL_StopTextInput]]
+
+----
+CategoryStruct, CategoryEvents

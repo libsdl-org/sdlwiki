@@ -1,0 +1,21 @@
+
+= SDL_HintPriority =
+An enumeration of hint priorities.
+
+
+== Values ==
+{|
+|SDL_HINT_DEFAULT
+|low priority, used for default values
+|-
+|SDL_HINT_NORMAL
+|medium priority
+|-
+|SDL_HINT_OVERRIDE
+|high priority
+|}
+== Related Functions ==
+:[[SDL_SetHintWithPriority]]
+
+----
+[[CategoryEnum]], [[CategoryHints]]

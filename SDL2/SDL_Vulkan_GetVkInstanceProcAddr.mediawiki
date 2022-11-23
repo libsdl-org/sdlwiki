@@ -1,0 +1,26 @@
+
+= SDL_Vulkan_GetVkGetInstanceProcAddr =
+Use this function to get the address of the ```vkGetInstanceProcAddr``` function.
+
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+void *SDLCALL SDL_Vulkan_GetVkGetInstanceProcAddr()
+</syntaxhighlight>
+
+== Return Value ==
+Returns a pointer to the [https://www.khronos.org/registry/vulkan/specs/1.1-extensions/man/html/vkGetInstanceProcAddr.html vkGetInstanceProcAddr] which can be used to load Vulkan function pointers at runtime.
+
+
+== Remarks ==
+This should be called after either calling [[SDL_Vulkan_LoadLibrary]] or creating a window with the SDL_WINDOW_VULKAN flag.
+
+== Version ==
+This function is available in SDL 2.0.8
+
+== Related Functions ==
+:[[SDL_Vulkan_LoadLibrary]]
+
+----
+[[CategoryAPI]], [[CategoryVulkan]]

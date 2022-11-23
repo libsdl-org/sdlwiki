@@ -1,0 +1,54 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GameControllerAddMappingsFromFile =
+Use this function to load a set of [[CategoryGameController|Game Controller]] mappings from a file, filtered by the current [[SDL_GetPlatform]]().
+A community sourced database of controllers is available [https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt here|target="_blank"] (on GitHub).
+
+
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+int SDL_GameControllerAddMappingsFromFile(const char* filename)
+</syntaxhighlight>
+
+
+== Function Parameters ==
+{|
+|'''filename'''
+|the name of the database you want to load
+|}
+
+
+== Return Value ==
+<<Include(SDL_GameControllerAddMappingsFromRW, , , from="== Return Value ==", to="== Code Examples ==")>>
+
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+SDL_GameControllerAddMappingsFromFile("gamecontrollerdb.txt");
+</syntaxhighlight>
+
+
+== Remarks ==
+<<Include(SDL_GameControllerAddMappingsFromRW, , , from="== Remarks ==", to="== Version ==")>>
+
+
+== Version ==
+This function is available since SDL 2.0.2.
+
+== Related Functions ==
+:[[SDL_GameControllerAddMapping]]
+:[[SDL_GameControllerAddMappingsFromRW]]
+:[[SDL_GameControllerMappingForGUID]]
+
+----
+[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

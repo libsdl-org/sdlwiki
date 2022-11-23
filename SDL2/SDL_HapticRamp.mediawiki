@@ -1,0 +1,93 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_HapticRamp =
+A structure that contains a template for a ramp effect.
+
+
+== Data Fields ==
+{|
+|
+|
+|<bgcolor="#EDEDED">''Header''
+|-
+|Uint16
+|'''type'''
+|SDL_HAPTIC_RAMP
+|-
+|[[SDL_HapticDirection]]
+|'''direction'''
+|direction of the effect
+|-
+|
+|
+|<bgcolor="#EDEDED">''Replay''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect
+|-
+|
+|
+|<bgcolor="#EDEDED">''Trigger''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after '''button'''
+|-
+|
+|
+|<bgcolor="#EDEDED">''Ramp''
+|-
+|Sint16
+|'''start'''
+|beginning strength level
+|-
+|Sint16
+|'''end'''
+|ending strength level
+|-
+|
+|
+|<bgcolor="#EDEDED">''Envelope''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+== Remarks ==
+This struct is exclusively for the SDL_HAPTIC_RAMP effect.
+
+The ramp effect starts at '''start''' strength and ends at '''end''' strength. It augments in linear fashion. If you use attack and fade with a ramp ''the'' effects get added to the ramp effect making the effect become quadratic instead of linear.
+
+== Related Structures ==
+:[[SDL_HapticDirection]]
+
+== Related Functions ==
+:[[SDL_HapticNewEffect]]
+
+----
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

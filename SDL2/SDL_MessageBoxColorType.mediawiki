@@ -1,0 +1,41 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_MessageBoxColorType =
+An enumeration of positions inside the colors array of [[SDL_MessageBoxColorScheme]].
+
+
+
+== Values ==
+{|
+|SDL_MESSAGEBOX_COLOR_BACKGROUND
+| 
+|-
+|SDL_MESSAGEBOX_COLOR_TEXT
+| 
+|-
+|SDL_MESSAGEBOX_COLOR_BUTTON_BORDER
+| 
+|-
+|SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND
+| 
+|-
+|SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED
+| 
+|-
+|SDL_MESSAGEBOX_COLOR_MAX
+| 
+|}
+
+
+
+== Related Structures ==
+:[[SDL_MessageBoxColorScheme]] 
+
+----
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]

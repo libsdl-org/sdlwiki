@@ -1,0 +1,61 @@
+= SDL_LOG_CATEGORY =
+An enumeration of the predefined log categories.
+
+
+== Values ==
+{|
+|SDL_LOG_CATEGORY_APPLICATION
+|application log
+|-
+|SDL_LOG_CATEGORY_ERROR
+|error log
+|-
+|SDL_LOG_CATEGORY_ASSERT
+|assert log
+|-
+|SDL_LOG_CATEGORY_SYSTEM
+|system log
+|-
+|SDL_LOG_CATEGORY_AUDIO
+|audio log
+|-
+|SDL_LOG_CATEGORY_VIDEO
+|video log
+|-
+|SDL_LOG_CATEGORY_RENDER
+|render log
+|-
+|SDL_LOG_CATEGORY_INPUT
+|input log
+|-
+|SDL_LOG_CATEGORY_TEST
+|test log
+|-
+|<row style="color: #808080;">SDL_LOG_CATEGORY_RESERVED
+|# = 1-10; reserved for future SDL library use
+|-
+|SDL_LOG_CATEGORY_CUSTOM
+|reserved for application use; see [[#Remarks|Remarks]] for details
+|}
+
+
+== Remarks ==
+By default the APPLICATION category is enabled at the SDL_LOG_PRIORITY_INFO level and all other categories are enabled at the SDL_LOG_PRIORITY_CRITICAL level.  See [[SDL_LogPriority]] for details.
+
+SDL_LOG_CATEGORY_CUSTOM is reserved for application use; for example:
+ <syntaxhighlight lang='c++'>
+enum {
+      MYAPP_CATEGORY_AWESOME1 = SDL_LOG_CATEGORY_CUSTOM,
+      MYAPP_CATEGORY_AWESOME2,
+      MYAPP_CATEGORY_AWESOME3,
+      ...
+};
+</syntaxhighlight>
+
+== Related Functions ==
+:[[SDL_Log]]
+:[[SDL_LogMessage]]
+:[[SDL_LogMessageV]]
+
+----
+[[CategoryEnum]], [[CategoryLog]]

@@ -1,0 +1,58 @@
+
+= SDL_LoadWAV =
+Use this function to load a WAVE from a file.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+SDL_AudioSpec* SDL_LoadWAV(const char*    file,
+                           SDL_AudioSpec* spec,
+                           Uint8**        audio_buf,
+                           Uint32*        audio_len)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''file''' 
+|the name of the file to load 
+|-
+|'''spec''' 
+|an [[SDL_AudioSpec]] structure that will be filled in with the wave file's format details 
+|-
+|'''audio_buf''' 
+|the audio buffer 
+|-
+|'''audio_len''' 
+|the length of the audio buffer in bytes 
+|}
+
+== Return Value ==
+<<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples")>>
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+SDL_AudioSpec wav_spec;
+Uint32 wav_length;
+Uint8 *wav_buffer;
+
+/* Load the WAV */
+if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
+    fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
+} else {
+    /* Do stuff with the WAV data, and then... */
+    SDL_FreeWAV(wav_buffer);
+}
+</syntaxhighlight>
+
+
+== Remarks ==
+SDL_LoadWAV is a convenience macro that calls [[SDL_LoadWAV_RW]]().
+
+This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryIO|RWops]] API.
+
+== Related Functions ==
+:[[SDL_FreeWAV]]
+:[[SDL_LoadWAV_RW]]
+
+----
+[[CategoryAPI]], CategoryAudio

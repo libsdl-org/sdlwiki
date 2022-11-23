@@ -1,0 +1,28 @@
+= SDL_assert_paranoid =
+Use this function to create an assertion for detailed checking.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+void SDL_assert_paranoid(condition)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''condition'''
+|the expression to check
+|}
+
+== Remarks ==
+This function is disabled by default.  It is available for use only when the SDL_ASSERT_LEVEL is set to 3.  See the [[CategoryAssertions|Assertions Category page]] for details.
+
+One can set the environment variable "SDL_ASSERT" to one of several strings ("abort", "break", "retry", "ignore", "always_ignore") to force a default behavior, which may be desirable for automation purposes. If your platform requires GUI interfaces to happen on the main thread but you're debugging an assertion in a background thread, it might be desirable to set this to "break" so that your debugger takes control as soon as assert is triggered, instead of risking a bad UI interaction (deadlock, etc) in the application.
+
+Note that the SDL_ASSERT environment variable is an ''environment variable'' and not an SDL hint! Please refer to your platform's documentation for how to set it!
+
+== Related Functions ==
+:[[SDL_assert]]
+:[[SDL_assert_release]]
+
+----
+[[CategoryAPI]], [[CategoryAssertions]]

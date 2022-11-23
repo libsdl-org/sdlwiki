@@ -1,0 +1,49 @@
+
+= SDL_SYSWM_TYPE =
+An enumeration of the various supported windowing subsystems.
+
+
+== Values ==
+{|
+|SDL_SYSWM_UNKNOWN
+|
+|-
+|SDL_SYSWM_WINDOWS
+|Microsoft Windows
+|-
+|SDL_SYSWM_X11
+|X Window System
+|-
+|SDL_SYSWM_DIRECTFB
+|[https://en.wikipedia.org/wiki/DirectFB DirectFB]
+|-
+|SDL_SYSWM_COCOA
+|Apple Mac OS X
+|-
+|SDL_SYSWM_UIKIT
+|Apple iOS
+|-
+|SDL_SYSWM_WAYLAND
+|Wayland (>= SDL 2.0.2)
+|-
+|SDL_SYSWM_MIR
+|Mir (>= SDL 2.0.2)
+|-
+|SDL_SYSWM_WINRT
+|WinRT (>= SDL 2.0.3)
+|-
+|SDL_SYSWM_ANDROID
+|Android (>= SDL 2.0.4)
+|-
+|SDL_SYSWM_VIVANTE
+|Vivante (>= SDL 2.0.5)
+|}
+== Related Structures ==
+:[[SDL_SysWMinfo]]
+:[[SDL_SysWMmsg]]
+
+== Related Functions ==
+:[[SDL_GetWindowWMInfo]]
+
+----
+[[CategoryEnum]], [[CategorySWM]]

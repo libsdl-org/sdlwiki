@@ -1,0 +1,64 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_BlendOperation =
+An enumeration of blend operations used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().
+
+
+== Values ==
+{|
+|SDL_BLENDOPERATION_ADD
+|additive operation
+|-
+| 
+|dst + src
+|-
+|SDL_BLENDOPERATION_SUBTRACT
+|subtractive operation
+|-
+| 
+|dst - src
+|-
+|SDL_BLENDOPERATION_REV_SUBTRACT
+|reversed subtractive operation
+|-
+| 
+|src - dst
+|-
+|SDL_BLENDOPERATION_MINIMUM
+|minimum operation
+|-
+| 
+|min(dst, src)
+|-
+|SDL_BLENDOPERATION_MAXIMUM
+|maximum operation
+|-
+| 
+|max(dst, src)
+|}
+
+== Remarks ==
+
+The blend operation takes place when the calculated pixels from a drawing operation (src) and the pixels from the render target (dst) get combined. Each component (red, green, blue, and alpha) is calculated separately. The result is then stored in the render target.
+
+Some renderers may not support all operations. See [[SDL_ComposeCustomBlendMode]]() for a list of what the current renderers support.
+
+== Version ==
+
+This enumeration is available since SDL 2.0.6.
+
+== Related Enumerations ==
+:[[SDL_BlendFactor]]
+
+== Related Functions ==
+:[[SDL_ComposeCustomBlendMode]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetTextureBlendMode]]
+
+----
+[[CategoryEnum]], [[CategoryRender]], [[CategoryDraft]]
+
+<!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->

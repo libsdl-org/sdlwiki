@@ -1,0 +1,40 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
+
+
+= SDL_GetEventState =
+Use this macro to query the current processing state of a specified [[SDL_EventType]].
+
+
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+Uint8 SDL_GetEventState(Uint32 type)
+</syntaxhighlight>
+
+
+== Function Parameters ==
+{|
+|'''type'''
+|the [[SDL_EventType]] to query
+|}
+
+
+== Return Value ==
+Returns SDL_DISABLE or SDL_ENABLE.
+
+
+
+== Related Functions ==
+:[[SDL_EventState]]
+
+
+----
+[[CategoryAPI]], [[CategoryEvents]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

@@ -1,0 +1,48 @@
+
+= SDL_JoyAxisEvent =
+A structure that contains joystick axis motion event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_JOYAXISMOTION
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|SDL_JoystickID
+|'''which'''
+|the instance id of the joystick that reported the event
+|-
+|Uint8
+|'''axis'''
+|the index of the axis that changed
+|-
+|Sint16
+|'''value'''
+|the current position of the axis (range: -32768 to 32767)
+|}
+
+== Remarks ==
+[[SDL_JoyAxisEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYAXISMOTION is reported.  You would access it through the event's <code>jaxis</code> field.
+
+An SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick.
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+:[[SDL_JoyBallEvent]]
+:[[SDL_JoyButtonEvent]]
+:[[SDL_JoyHatEvent]]
+
+== Related Functions ==
+:[[SDL_JoystickEventState]]
+:[[SDL_JoystickGetAxis]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

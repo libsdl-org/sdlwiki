@@ -1,0 +1,98 @@
+
+= SDL_SysWMmsg =
+A structure that contains system-dependent window manager messages.
+
+
+== Data Fields ==
+{|
+|
+|
+|<bgcolor="#EDEDED">''All Subsystems''
+|-
+|[[SDL_version]]
+|'''version'''
+|an [[SDL_version]] structure that contains the current SDL version
+|-
+|[[SDL_SYSWM_TYPE]]
+|'''subsystem'''
+|the windowing system type; see [[#Remarks|Remarks]] for details
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''dummy'''
+|<style="color: #808080;">unused (to help compilers when no specific system is available)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_WINDOWS''
+|-
+|HWND
+|'''win.hwnd'''
+|the window for the message
+|-
+|UINT
+|'''win.msg'''
+|the type of message
+|-
+|WPARAM
+|'''win.wParam'''
+|WORD message parameter
+|-
+|LPARAM
+|'''win.lParam'''
+|LONG message parameter
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_X11''
+|-
+|XEvent
+|'''x11.event'''
+|the native x11 event structure
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_DIRECTFB''
+|-
+|DFBEvent
+|'''dfb.event'''
+|the DirectFB event
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_COCOA''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''cocoa.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.4)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_UIKIT''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''uikit.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.4)
+|-
+|
+|
+|<bgcolor="#EDEDED">''SDL_SYSWM_VIVANTE''
+|-
+|<style="color: #808080;">int
+|<style="color: #808080;">'''vivante.dummy'''
+|<style="color: #808080;">unused (>= SDL 2.0.5)
+|}
+
+== Remarks ==
+'''subsystem''' may be one of the following:
+<<Include(SDL_SYSWM_TYPE, , , from="== Values ==", to="== Code Examples ==")>>
+
+There are currently no Cocoa or UIKit window events.
+
+== Related Enumerations ==
+:[[SDL_SYSWM_TYPE]]
+
+== Related Structures ==
+:[[SDL_version]]
+
+----
+[[CategoryStruct]], [[CategorySWM]]

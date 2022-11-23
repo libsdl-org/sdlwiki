@@ -1,0 +1,96 @@
+= SDL Tutorials =
+There are a number of SDL tutorials available from different sources.
+
+
+== Multi-Subject ==
+
+* [http://www.sdltutorials.com/ SDLTutorials.com]
+: A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
+
+* [https://www.parallelrealities.co.uk/tutorials/ SDL2 Game Tutorials]
+: Tutorials on building 3 complete games using SDL 2.0
+
+* [https://www.reddit.com/r/learnprogramming/comments/2ebfn1/copenglsdl_game_engine_tutorials_for_an_absolute/ C++/OpenGL/SDL Game Engine Tutorials]
+: SDL game engine tutorials for absolute beginners, written by the lead developer of [https://www.seedofandromeda.com/ Seed of Andromeda]
+
+* [https://www.youtube.com/playlist?list=PLHJE4y54mpC5_eEz9gCqIkNpU-n_2eyNt SDL Made Easy]
+: A collection of video tutorials on various SDL topics
+
+* [http://lazyfoo.net/tutorials/SDL/index.php Beginning Game Programming v2.0]
+: A collection of detailed tutorials for game programming using SDL 2.0 with C++
+
+* [http://twinklebear.github.io/pages/sdl2/ TwinklebearDev]
+: Tutorials covering a wide variety of introductory topics with SDL 2.0
+
+* [https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa Remaking Cavestory in C++]
+: Video tutorial series on recreating Cave Story using SDL
+
+* [https://web.archive.org/web/20180117074719/http://blog.stuff-o-matic.com/post/2013/09/15/ASGP-s-Android-Port-Part-II%3A-from-SDL-1.2-to-SDL-2%2e Migrating a C++ game from SDL 1.2 to SDL 2.0] (Archived)
+: An example of a project upgrade from SDL 1.2 to SDL 2.0
+
+* [https://www.youtube.com/playlist?list=PL2RPjWnJduNmXHRYwdtublIPdlqocBoLS C++/SDL2 RPG Physics Based 2D Platformer for Beginners Tutorial]
+: A playlist of beginner SDL2 tutorials, focusing on the basics for setting up a RPG 2D platformer. Also features tutorials on how to set up SDL2 on Windows and Linux.
+
+== Setup ==
+* [https://www.youtube.com/watch?v=wWGtuc5uqF4 How to setup Codeblocks mingw SDL2.0]
+: A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler
+
+* [https://www.youtube.com/watch?v=UwpZOwT9nVc How to setup Codeblocks mingw, SDL2.0 Opengl 3+ and GLEW simple project included.]
+: A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler with OpenGL 3.0+ & compiling GLEW libraries
+
+* [https://www.youtube.com/watch?v=JXdqh0INIBI How To Get Started with SDL2 OpenGL C++ Programming on Linux]
+: A video showing how to get started with SDL2 and OpenGL on Linux, using Visual Studio Code and Cmake. Some prior knowledge of C++ and Linux is required.
+
+* [https://www.youtube.com/playlist?list=PLvv0ScY6vfd-p1gSnbQhY7vMe2rng0IL0 SDL2 and C++ Video Tutorial Series]
+: A YouTube series of videos showing how to setup SDL2 with C++ and various other beginner to intermediate level topics on using SDL2.
+== Android ==
+
+* [http://www.dinomage.com/2013/01/howto-sdl-on-android/ HowTo: SDL on Android]
+: An example of setting up SDL on Android
+
+* [https://web.archive.org/web/20180127022200/http://blog.stuff-o-matic.com/post/2013/10/20/ASGP-s-Android-Port-Part-IV%3A-building-the-APK Building an Android application using the SDL] (Archived)
+: An example of building an Android application using the SDL
+
+== Audio ==
+
+* [[Tutorials-AudioStream|Using SDL_AudioStream]]
+: A guide to the new audio stream API
+
+== Video ==
+
+* [http://slouken.blogspot.com/2011/02/streaming-textures-with-sdl-13.html Streaming textures with SDL 2.0]
+: A quick guide to streaming textures
+
+* [http://rainwarrior.ca/dragon/sdl_glsl.html Using GLSL with SDL]
+: A tutorial on enabling and using GLSL extensions with SDL
+: Check out http://hg.libsdl.org/SDL/file/default/test/testshader.c also
+
+=== OpenGL ===
+* [http://www.g-truc.net/post-0204.html OpenGL 3 Samples Pack]
+: Using SDL 2.0 beta with OpenGL 3
+
+* [http://www.opengl.org/wiki/Tutorial1:_Creating_a_Cross_Platform_OpenGL_3.2_Context_in_SDL_(C_/_SDL) OpenGL 3.2 and SDL]
+: Using SDL 1.3 alpha with OpenGL 3.2 Context
+
+* [http://iphonesdkdev.blogspot.com/2009/04/opengl-es-for-iphone-simple-tutorial.html OpenGL ES for iPhone : A Simple Tutorial]
+: A brief introduction to OpenGL ES
+
+== Haptic ==
+
+* [https://web.archive.org/web/20130728040700/http://bobbens.dyndns.org/journal/2010/sdl_haptic SDL Haptic in depth] (Archived)
+: Covers the basics of how to create and playback simple force feedback effects with SDL
+
+== Input ==
+
+* [[Tutorials-TextInput|Text Input]]
+: Using SDL for text inputs with specific consideration for international users
+
+== Threads ==
+
+* [https://web.archive.org/web/20180625073639/http://ansuz.sooke.bc.ca/software/sdl-condvars.php Condition variables in SDL] (Archived)
+: A good discussion of condition variables (in computer science rather than gaming context), some mention of mutex and semaphore use
+
+== libSDL2pp ==
+
+* [https://github.com/libSDL2pp/libSDL2pp-tutorial libSDL2pp]
+: Tutorial for libSDL2pp, C++11 bindings/wrapper for SDL2

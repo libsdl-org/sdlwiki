@@ -1,0 +1,49 @@
+
+= SDL_KeyboardEvent =
+A structure that contains keyboard button event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|the event type; SDL_KEYDOWN or SDL_KEYUP
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
+|'''windowID'''
+|the window with keyboard focus, if any
+|-
+|Uint8
+|'''state'''
+|the state of the key; SDL_PRESSED or SDL_RELEASED
+|-
+|Uint8
+|'''repeat'''
+|non-zero if this is a key repeat
+|-
+|[[SDL_Keysym]]
+|'''keysym'''
+|the [[SDL_Keysym]] representing the key that was pressed or released
+|}
+
+== Remarks ==
+[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.  You would access it through the event's <code>key</code> field. 
+
+An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+
+== Related Functions ==
+:[[SDL_GetKeyboardState]]
+:[[SDL_GetModState]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

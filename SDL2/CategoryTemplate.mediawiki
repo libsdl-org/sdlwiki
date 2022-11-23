@@ -1,0 +1,48 @@
+<!-- acl All:read -->
+
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #Remove #acl All:read above before saving your new page or you may not be able to save it.  Do not change or remove any of the other markup above this comment.  Remove this comment. -->
+
+
+= Category Title =
+
+<!-- #Replace "Category Title" with an appropriate title for this new category.  See other category pages for examples.  It must be simple and descriptive and cannot contain any other formatting markup.  Do not remove the = on either end and do not add any blank spaces at the end or it will not parse correctly.  Remove this comment. -->
+
+
+
+'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_%%%%%.h SDL_%%%%%.h]
+
+<!-- #Replace %%%%% above with the header file name in both places.  Be careful of spelling and case.  This comment may be deleted when the change is made. -->
+
+
+
+
+
+== Introduction ==
+
+This category contains functions for &&&&&.
+
+<!-- #Replace &&&&& above with a brief description of the topic that this category includes.  If relevant, follow this line with a blank space an more introductory information.  See other Category pages for examples.  This comment may be deleted when the change is made. -->
+
+
+
+<!-- #If this category includes enumerations change CategoryHeader below to the appropriate category name that will be used in the footer of the corresponding API pages.  See the Footer section of the Enumerations Style Guide for details.  Remove the ## in front of the next 2 lines to automatically create a list on the page.  Remove this comment. -->
+<!-- #== Enumerations == -->
+<!-- #<<FullSearchCached(category:CategoryHeader CategoryEnum -SGEnumerations)>> -->
+
+
+<!-- #If this category includes structures change CategoryHeader below to the appropriate category name that will be used in the footer of the corresponding API pages.  See the Footer section of the Structures Style Guide for details.  Remove the ## in front of the next 2 lines to automatically create a list on the page.  Remove this comment. -->
+<!-- #== Structures == -->
+<!-- #<<FullSearchCached(category:CategoryHeader CategoryStruct -SGStructures)>> -->
+
+
+<!-- #If this category includes functions change CategoryHeader below to the appropriate category name that will be used in the footer of the corresponding API pages.  See the Footer section of the Functions Style Guide for details.  Remove the ## in front of the next 2 lines to automatically create a list on the page.  Remove this comment. -->
+<!-- #== Functions == -->
+<!-- #<<FullSearchCached(category:CategoryHeader -CategoryEnum -CategoryStruct -SGFunctions)>> -->
+
+----
+[[CategoryCategory]], [[CategoryDraft]]

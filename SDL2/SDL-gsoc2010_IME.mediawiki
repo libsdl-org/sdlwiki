@@ -1,0 +1,40 @@
+This is a scratch pad for the IME Summer of Code 2010 project, by Daniel Wyatt
+
+The code is available here: http://hg.libsdl.org/SDL-gsoc2010_IME
+
+
+== Status ==
+'''July 07, 2010''' Started work on SDL itself.
+
+'''June 30, 2010''' I have decided to use an IMM implementation for the SoC. The TSF implementation is moving too slowly, I intend to complete it after the SoC.
+
+== Documentation ==
+== Notes ==
+There are two methods for enabling IME support on Windows:
+
+* [[#TSF|Text Services Framework (TSF)]]
+* [[#IMM|Input Method Manager (IMM)]]
+
+I will write an IMM implementation for the SoC.
+
+The TSF comes with Windows XP and newer. For earlier versions of Windows, you must install it separately: [http://www.microsoft.com/downloads/details.aspx?FamilyID=b4c50c6e-e9dd-4c58-a886-75bd56985f0f&DisplayLang=en Microsoft Windows Text Services Framework Redist files]
+
+<span id="TSF"></span>
+
+=== TSF ===
+The TSF is the new standard for text input and supports advanced features such as dictation. It is a collection of (many) COM interfaces. Sources for information:
+
+* [http://msdn.microsoft.com/en-us/library/ms629032(VS.85).aspx MSDN Documentation]
+* [http://blogs.msdn.com/tsfaware TSF Aware]
+* [http://msdn.microsoft.com/en-us/library/ms971336.aspx ReadComp Source (MSDN)]
+* DirectX SDK Samples (Direct3D/CustomUI, DXUT/Optional)
+* Mozilla (mozilla-1.9.2/widgets/src/windows/nsTextStore.cpp)
+
+<span id="IMM"></span>
+
+=== IMM ===
+The IMM is the old way of doing things. On Windows XP and newer, the IMM is emulated by the TSF behind the scenes. Sources for information:
+
+* [http://msdn.microsoft.com/en-us/goglobal/bb688173.aspx Input Method Managers and Editors (IMMs/IMEs)]
+* [http://msdn.microsoft.com/en-us/library/aa912900.aspx Input Method Manager (IMM)]
+* [http://msdn.microsoft.com/en-us/library/aa911651.aspx Input Method Manager (IMM) Application Development]

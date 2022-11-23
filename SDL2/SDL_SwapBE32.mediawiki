@@ -1,0 +1,24 @@
+
+= SDL_SwapBE32 =
+Use this function to swap the byte order of a 32-bit big-endian value to native ordering.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+Uint32 SDL_SwapBE32(Uint32 x)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|the value to be swapped
+|}
+
+== Return Value ==
+Returns the native 32-bit value.
+== Related Functions ==
+:[[SDL_Swap32]]
+:[[SDL_SwapLE32]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]

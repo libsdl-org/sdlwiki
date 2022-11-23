@@ -1,0 +1,24 @@
+
+= SDL_Swap64 =
+Use this function to swap the byte order of a 64-bit value.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+Uint64 SDL_Swap64(Uint64 x)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|the value to be swapped
+|}
+
+== Return Value ==
+Returns the swapped value.
+== Related Functions ==
+:[[SDL_SwapBE64]]
+:[[SDL_SwapLE64]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]

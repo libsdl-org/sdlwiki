@@ -1,0 +1,143 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_HapticEffect =
+A union that contains the generic template for any haptic effect.
+
+
+== Data Fields ==
+{|
+|Uint16
+|'''type'''
+|effect type; see [[SDL_HapticPeriodic]] for details
+|-
+|[[SDL_HapticConstant]]
+|'''constant'''
+|constant effect; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_HapticPeriodic]]
+|'''periodic'''
+|periodic effect; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_HapticCondition]]
+|'''condition'''
+|condition effect; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_HapticRamp]]
+|'''ramp'''
+|ramp effect; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_HapticLeftRight]]
+|'''leftright'''
+|left/right effect; see [[#Remarks|Remarks]] for details
+|-
+|[[SDL_HapticCustom]]
+|'''custom'''
+|custom effect; see [[#Remarks|Remarks]] for details
+|}
+
+== Remarks ==
+All structures in this union contain the following common parts:
+
+{|
+|
+|
+|<bgcolor="#EDEDED">''Replay (all effects except left-right have this)''
+|-
+|Uint32
+|'''length'''
+|duration of effect (ms)
+|-
+|Uint16
+|'''delay'''
+|delay before starting effect
+|-
+|
+|
+|<bgcolor="#EDEDED">''Trigger (all effects except left-right have this)''
+|-
+|Uint16
+|'''button'''
+|button that triggers effect
+|-
+|Uint16
+|'''interval'''
+|how soon before effect can be triggered again
+|-
+|
+|
+|<bgcolor="#EDEDED">''Envelope (all effects except condition effects and left-right have this)''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack (ms)
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade out (ms)
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+All values max at 32767 (0x7FFF).  Signed values can be negative.  Time values, unless specified otherwise, are in milliseconds.
+
+You can pass SDL_HAPTIC_INFINITY to '''length''' instead of a 0-32767 value.  Neither '''delay''', '''interval''', '''attack_length''', nor '''fade_length''' support SDL_HAPTIC_INFINITY.
+The SDL_HAPTIC_RAMP effect does not support a duration of SDL_HAPTIC_INFINITY.
+Fade will also not be used since effect never ends.
+
+<!-- Ramp sentence combined into this paragraph, separate in header.  The last sentence about Fade (from line 698 version f3c34d321289 SDL_haptic.h) is awkward and potentially confusing.  How could it be revised to make it more clear? -->
+
+Button triggers may not be supported on all devices.  It is advised not to use them if possible.  Buttons start at index 1 instead of index 0 like the joystick.
+<!-- Does this mean that the joystick itself is index 0 and the buttons are index >=1? -->
+
+If both '''attack_length''' and '''fade_level''' are 0 the '''envelope''' is not used, otherwise both values are used.
+
+Here is an example of a constant effect evolution in time:
+```
+Strength
+^
+|
+|    effect level -->  _________________
+|                     /                 \
+|                    /                   \
+|                   /                     \
+|                  /                       \
+| attack_level --> |                        \
+|                  |                        |  <---  fade_level
+|
++--------------------------------------------------> Time
+
+                   [--]                 [---]
+               attack_length          fade_length
+
+[------------------][-----------------------]
+       delay                 length
+```
+
+Note that either the '''attack_level''' or the '''fade_level''' may be above the actual effect level.
+
+<!-- Note that some minor edits to the verbatim text in the header have been made and not noted above. -->
+
+== Related Structures ==
+:[[SDL_HapticCondition]]
+:[[SDL_HapticConstant]]
+:[[SDL_HapticCustom]]
+:[[SDL_HapticLeftRight]]
+:[[SDL_HapticPeriodic]]
+:[[SDL_HapticRamp]]
+
+== Related Functions ==
+:[[SDL_HapticEffectSupported]]
+:[[SDL_HapticNewEffect]]
+:[[SDL_HapticUpdateEffect]]
+
+----
+[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]

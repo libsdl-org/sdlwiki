@@ -1,0 +1,31 @@
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_MOUSE_RELATIVE_SCALING =
+A hint that specifies whether relative motion is affected by renderer scaling.
+
+
+
+
+== Values ==
+{|
+|0
+|Relative motion is unaffected by DPI or renderer's logical size
+|-
+|1
+|Relative motion is scaled according to DPI scaling and logical size
+|}
+
+
+== Default ==
+By default relative mouse deltas are affected by DPI and renderer scaling
+
+
+
+== Version ==
+This hint is available since SDL 2.0.14.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

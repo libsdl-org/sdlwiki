@@ -1,0 +1,254 @@
+= Installing SDL =
+
+
+How to install SDL varies depending on your platform. You will need to [[SourceCode|download the source code]] first for most of them, unless prebuilt binaries are available.
+
+SDL 1.2 isn't covered here. It can be installed on legacy platforms that SDL2 doesn't support, such as Mac OS 9 or Windows 95, but settling for 1.2 would not be a drop-in replacement for 2.0. Some of these installation instructions happen to work with 1.2, however, on the platforms we cover.
+
+== Static linking ==
+
+SDL 2.0, unlike 1.2, uses [[FAQLicensing|the zlib license]], which means you can build a static library linked directly to your program, or just compile SDL's C code directly as part of your project. You are completely allowed to do that. However, we encourage you to ''not'' do this for various technical and moral reasons (see [https://github.com/libsdl-org/SDL/blob/main/docs/README-dynapi.md docs/README-dynapi.md]), and won't cover the details of how to in this document. You may not statically link SDL 1.2 in most cases due to its LGPL licensing, but you should really stop using SDL 1.2 anyhow.
+
+== Supported platforms ==
+
+=== Linux/Unix ===
+
+Several other platforms will be built "the Unix way," so we'll describe this platform first.
+
+SDL supports most popular flavors of Unix: Linux 2.6+, the various BSDs (FreeBSD, NetBSD, OpenBSD), Solaris, and other things like them.
+
+First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!
+
+Debian-based systems (including Ubuntu) can simply do '''sudo apt-get install libsdl2''' to get the library installed system-wide, and all sorts of other useful dependencies, too. '''sudo apt-get install libsdl2-dev''' will install everything necessary to build programs that use SDL. Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-linux.md docs/README-linux.md] for a more complete discussion of packages involved.
+
+Red Hat-based systems (including Fedora) can simply do '''sudo dnf install SDL2''' to get the library installed system-wide, or "sudo dnf install SDL2-devel" to get headers and other build requirements ready for compiling your own SDL programs.
+
+Gentoo users can '''sudo emerge libsdl2''' to get everything they need.
+
+If you're compiling SDL yourself, here's what we refer to as "the Unix way" of building:
+* Get a copy of the source code, either from Mercurial or an official tarball or whatever.
+* Make a separate build directory (SDL will refuse to build in the base of the source tree).
+* Run the configure script to set things up.
+* Run "make" to compile SDL.
+* Run "make install" to install your new SDL build on the system.
+
+This looks something like this:
+
+
+<syntaxhighlight lang="bash">
+git clone https://github.com/libsdl-org/SDL
+cd SDL
+mkdir build
+cd build
+../configure
+make
+sudo make install
+</syntaxhighlight>
+
+
+The last command says "sudo" so we can write it to /usr/local (by default). You can change this to a different location with the --prefix option to the configure script. In fact, there are a LOT of good options you can use with configure! Be sure to check out its --help option for details. SDL tries to do the right thing by default, though, so you can usually get away with no options at all. "make" could be "make -j4" or whatever if you have more than one CPU; SDL can safely be built in parallel across all the CPU cores you have available to you. A good rule of thumb for Linux is the number of cores plus two, so you use all the processing resources possible, and if a process or two is competing for the disk, those two extra jobs might be able to put the otherwise-idle CPU cores to work in the meantime (so on a four-core system? Try "make -j6".)
+
+An alternative to the configure script is the CMake project file. It works on similar principles to the configure script. CMake does not provide you with a --help option to show all available configuration options, but it privides a GUI to change configuration options: cmake-gui. There is also ccmake for the console aficionados.
+
+<syntaxhighlight lang="bash">
+git clone https://github.com/libsdl-org/SDL
+cd SDL
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake --build . --config Release --parallel
+
+#CMake >= 3.15
+sudo cmake --install . --config Release
+
+#CMake <= 3.14
+sudo make install
+
+</syntaxhighlight>
+
+Once you have the library installed, you can use the sdl2-config program to help you compile your own code:
+
+     <syntaxhighlight lang="bash">gcc -o myprogram myprogram.c `sdl2-config --cflags --libs`</syntaxhighlight>
+
+SDL on Unix should only link against the C runtime (glibc). Every thing else it needs will be dynamically loaded at runtime: X11, ALSA, d-bus, etc. This means it is possible to build an SDL that has support for all sorts of targets built in, and it will examine the system at runtime to decide what should be used (for example, if Xlib isn't available, it might try to load Wayland support, etc). In that respect, if you plan to ship the SDL binary that you build, it is to your benefit to make sure your system has development headers for as many targets as possible, regardless of what you plan to personally use, so your final library is as robust as possible. See [https://github.com/libsdl-org/SDL/blob/main/docs/README-linux.md docs/README-linux.md] for more details.
+
+=== SteamOS ===
+
+SteamOS is literally a Linux system, and uses the same binaries you distribute to generic Linux Steam users, so generally speaking, all the other Linux advice applies.
+
+If you are shipping a Linux game on Steam, or explicitly targeting SteamOS, the system is guaranteed to provide SDL. The Steam Client will set up the dynamic loader path so that a known-good copy of SDL is available to any program that needs it before launching a game. Steam provides both SDL 1.2 and 2.0 in this manner, for both x86 and amd64, in addition to several add-on libraries like SDL_mixer. When shipping a Linux game on Steam, do not ship a build of SDL with your game. Link against SDL as normal, and expect it to be available on the player's system. This allows Valve to make fixes and improvements to their SDL and those fixes to flow on to your game.
+
+We are obsessive about SDL2 having a backwards-compatible ABI. Whether you build your game using the Steam Runtime SDK or just about any old copy of SDL2, it ''should'' work with the one that ships with Steam.
+
+In fact, it's not a bad idea to just copy the SDL build out of the Steam Runtime if you plan to ship a Linux game for non-Steam platforms, too, since you know it's definitely built sanely.
+
+=== Windows XP/Vista/7/8/10 ===
+
+SDL currently provides Visual Studio project files for Visual Studio 2010 or later in various flavors, and the CMake files can often generate project files for other Windows compilers. Win32 and Win64 are both supported, and we support any Windows version back to Windows XP.
+
+As of SDL 2.0.3, the codebase still compiles on Cygwin and MingW32, but we expect these to stop working in the future. MingW64 is still supported (and despite the name, can also build 32-bit binaries). Note that the Visual Studio builds produce standard Windows .DLLs, which are usable with any compiler that can link to them, and we care about making sure the public SDL headers work with any compiler, but making sure SDL itself builds with some of these compilers has become time-consuming and messy for diminishing returns. For simple fixes, we will always accept patches, though!
+
+On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain()) does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
+
+Our buildbot tries to build for Win32 for each commit, and uploads successful Visual Studio 2010 builds to a public webserver. If you want to grab these, it can save you time, if you just want to use a bleeding-edge SDL2.dll without compiling one yourself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-visualstudio/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These builds should work with just about any Windows compiler. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unzip the archive, point your project at its "include" directory for headers, and link against SDL2.lib (and optionally, SDLmain.lib if you want SDL to provide a WinMain() that calls your standard Unix-like main() function). Distribute the SDL2.dll with your app's .exe file, and you're good to go!
+
+=== macOS ===
+
+You can build for macOS "the Unix way" with the configure or CMake scripts, and Xcode projects are also provided. You can ship an SDL.framework, or just build the .dylib file and ship it with an appropriate install_name to ship beside your program's binary.
+
+If you are building "the Unix way," we encourage you to use [https://github.com/libsdl-org/SDL/blob/main/build-scripts/clang-fat.sh build-scripts/clang-fat.sh] in the SDL source tree for your compiler:
+
+<syntaxhighlight lang="bash">
+mkdir build
+cd build 
+CC=/where/i/cloned/SDL/build-scripts/clang-fat.sh ../configure
+make
+</syntaxhighlight>
+
+This will accomplish two important things. First, it will build an x86-64/arm64 "universal" version of the library. Second, it will make sure the library is compiled and linked with a good <code>-mmacosx-version-min</code> option for each arch, so that the library will work on any macOS version back as far as possible, regardless of what version of Xcode you compiled on and what platform SDK. Without this, you are likely to build something that only works on the latest version of macOS!
+
+SDL2 has dropped support for PowerPC Macs and Mac OS X versions older than 10.6 (SDL 1.2 still supports PPC and 10.0, though). That being said, some small changes can make it work, but they make the codebase uglier for small gains, and it's getting hard to find older macs to test on, so we probably will not be restoring official support.
+
+=== Haiku ===
+
+Build SDL "the Unix way" with the configure or CMake scripts. SDL2 can be built with either Haiku's gcc4 compiler or their legacy, BeOS-compatible gcc 2.95.
+
+To build and install SDL locally, run:
+
+<syntaxhighlight lang="bash">
+mkdir build
+cd build
+../configure --prefix=$HOME/config/non-packaged
+make install
+</syntaxhighlight>
+
+=== iOS ===
+
+SDL supports iOS 6.1+ and ships with iOS project files (in the Xcode-iOS directory) which will produce a static library. This library should be usable across all supported iOS devices (including iPhones, iPods, and iPads), and the emulator. Just load the Xcode project and click "Build."
+
+=== Android ===
+
+SDL supports Android 4.1+.
+
+See [[Android|Building SDL2 for Android]].
+
+=== Raspberry Pi ===
+
+If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, and also can do OpenGL ES rendering directly to the screen without an X server, to save resources. In theory, Wayland could also be supported, but at the time of this writing it doesn't configure/compile correctly (send patches!).
+
+Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
+
+The actual shell script our buildbot uses to run the Raspberry Pi build is [https://github.com/libsdl-org/SDL/blob/main/build-scripts/raspberrypi-buildbot.sh build-scripts/raspberrypi-buildbot.sh] in the SDL source tree. It expects a cross-compiler in /opt/rpi-tools and a copy of the root filesystem from a RPi in /opt/rpi-sysroot. You can see some current quirks we work around in there (send patches!).
+
+=== NaCL ===
+
+SDL can target Google Chrome's Native Client, aka "NaCL", which is, more or less, native binaries as web apps. We've tested with "PNaCL" specifically, but you can probably make this work with other compilers too.
+
+Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-nacl.md docs/README-nacl.md] for more details, including how to use our build scripts to generate an SDL build.
+
+Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
+
+=== Emscripten ===
+
+SDL, as of 2.0.4, can be built with [https://kripken.github.io/emscripten-site/ Emscripten], so you can compile your SDL2-based C/C++ application to JavaScript/asm.js/WebAssembly, and render with OpenGL ES 2 (which becomes WebGL calls in the end). This port is currently considered experimental, but is already very promising; Humble Bundle is shipping several games as web apps that use it.
+
+This port is generally built "the Unix way," but with a little wrapper script over the configure script or CMake to smooth out some quirks. At the end, you should have a libSDL2.a static library to link against your Emscripten-compiled app.
+
+Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-emscripten.md docs/README-emscripten.md] for more details.
+
+Also note that Emscripten has a simple implementation of SDL 1.2's API built in. This is written by hand in JavaScript and is unrelated to the SDL codebase. The SDL2 port literally uses Emscripten to compile SDL's C code and link it to your app.
+
+Our buildbot tries to build with Emscripten for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-emscripten/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
+
+
+=== Nintendo Switch ===
+
+SDL2 runs on the Nintendo Switch! There are commercial games shipping with this port. This port is kept in a separate repository, but is available for free, under the zlib license, to anyone that is under NDA for Switch development with Nintendo. Please contact Ryan (icculus at icculus dot org) for details.
+
+
+=== WinRT/UWP/Windows 10 ===
+
+There are Visual Studio project files for UWP (using Visual Studio 2019). These are in the "VisualC-WinRT" directory.
+
+=== Windows 8/WinPhone ===
+
+We no longer have build environments for Windows 8 or Windows Phone. The Win32 targets still support Windows 8.
+
+=== QNX ===
+
+QNX is supported. Our buildbot compiles for QNX on ARM, ARM64, x86, and x86_64 on each commit. You can build for this platform "the unix way."
+
+
+=== Ouya ===
+
+SDL apps work on the Ouya! Just build like a standard Android application and side-load it on the device to test.
+
+
+=== IBM OS/2, eComStation and ArcaOS ===
+
+OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
+
+
+=== RISC OS ===
+
+RISC OS is supported.  You can build for this platform "the unix way", or by using CMake.
+
+
+=== Sony PlayStation 2===
+
+The PlayStation 2 is supported using a homebrew toolkit. You can build for this platform using CMake.
+
+
+=== Sony PlayStation Portable ===
+
+The PlayStation Portable is supported using a homebrew toolkit. You can build for this platform using CMake.
+
+
+=== Sony PlayStation Vita ===
+
+The PlayStation Vita is supported using a homebrew toolkit. You can build for this platform using CMake.
+
+
+== Not supported or abandoned ==
+
+If your favorite system is listed below, we aren't working on it. If you send reasonable patches, we are happy to take a look, though! SDL 1.2's API and feature set is different than SDL 2 (dramatically different in some cases), but it's possible that 1.2 still supports some of these systems.
+
+=== Consoles (PlayStation, XBox, Wii, etc) ===
+
+SDL2 does not currently support (most of) these platforms, but we'd really like to! If you work for Sony, Microsoft, or Nintendo, we would like to port SDL2 to these platforms and provide support to registered developers in a separate repository. Please get in touch with us!
+
+=== Nintendo DS ===
+
+This worked at some point using a homebrew toolkit, but we removed it due to bitrot. There's some rudimentary support in SDL 1.2.
+
+=== Pandora and GP2X Wiz ===
+
+This worked at some point.
+
+=== BeOS ===
+
+Support was removed in SDL 2.0.2. SDL 1.2 still supports BeOS. Haiku, a modern open-source OS that can run BeOS binaries, is still supported.
+
+=== Mac OS 9 ("Mac OS Classic") ===
+
+Support was removed in SDL 2.0. SDL 1.2 still supports Mac OS Classic.
+
+=== Windows 95/98/ME ===
+
+Support was removed in SDL 2.0 (Windows XP and later are supported). SDL 1.2 still supports Win9x.
+
+=== AmigaOS and MorphOS ===
+
+Support was removed in SDL 2.0 (and later versions of 1.2, too). There are forks of SDL 1.2 and 2.0 that support them, though.
+
+=== Dreamcast ===
+
+Support was removed in SDL 2.0. SDL 1.2 had limited homebrew support for the Dreamcast.
+
+=== Atari MiNT ===
+
+Support was removed in SDL 2.0. SDL 1.2 still supports it.
+
+=== Symbian ===
+
+Support was removed in SDL 2.0. SDL 1.2 still supports it.

@@ -1,0 +1,50 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_JoystickPowerLevel =
+An enumeration of battery levels of a joystick.
+
+
+
+
+== Values ==
+{|
+|SDL_JOYSTICK_POWER_UNKNOWN
+| 
+|-
+|SDL_JOYSTICK_POWER_EMPTY
+| 
+|-
+|SDL_JOYSTICK_POWER_LOW
+| 
+|-
+|SDL_JOYSTICK_POWER_MEDIUM
+| 
+|-
+|SDL_JOYSTICK_POWER_FULL
+| 
+|-
+|SDL_JOYSTICK_POWER_WIRED
+| 
+|-
+|SDL_JOYSTICK_POWER_MAX
+| 
+|}
+
+
+
+== Related Functions ==
+:[[SDL_JoystickCurrentPowerLevel]]
+
+
+== Version ==
+This enumeration is available since SDL 2.0.4.
+
+
+----
+[[CategoryEnum]], [[CategoryJoystick]], [[CategoryDraft]]

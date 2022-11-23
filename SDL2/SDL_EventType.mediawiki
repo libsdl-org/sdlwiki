@@ -1,0 +1,303 @@
+= SDL_EventType =
+An enumeration of the types of events that can be delivered.
+
+
+== Values ==
+{|
+|<span style="color: #808080;">SDL_FIRSTEVENT</span>
+|<span style="color: #808080;">do not remove (unused)</span>
+|-
+|
+|<span style="background-color:#EDEDED;">''Application events''</span>
+|-
+|SDL_QUIT
+|user-requested quit; see [[#Remarks|Remarks]] for details
+|-
+|
+|<span style="background-color:#EDEDED;">''Android, iOS and WinRT events; see [[#Android, iOS and WinRT Events|Remarks]] for details''</span>
+|-
+|SDL_APP_TERMINATING
+|OS is terminating the application
+|-
+|SDL_APP_LOWMEMORY
+|OS is low on memory; free some
+|-
+|SDL_APP_WILLENTERBACKGROUND
+|application is entering background
+|-
+|SDL_APP_DIDENTERBACKGROUND
+|application entered background
+|-
+|SDL_APP_WILLENTERFOREGROUND
+|application is entering foreground
+|-
+|SDL_APP_DIDENTERFOREGROUND
+|application entered foreground
+|-
+|
+|<span style="background-color:#EDEDED;">''Display events''</span>
+|-
+|[[SDL_DisplayEvent|SDL_DISPLAYEVENT]]
+|Display state change
+|-
+|
+|<span style="background-color:#EDEDED;">''Window events''</span>
+|-
+|[[SDL_WindowEvent|SDL_WINDOWEVENT]]
+|window state change
+|-
+|[[SDL_SysWMEvent|SDL_SYSWMEVENT]]
+|system specific event
+|-
+|
+|<span style="background-color:#EDEDED;">''Keyboard events''</span>
+|-
+|[[SDL_KeyboardEvent|SDL_KEYDOWN]]
+|key pressed
+|-
+|[[SDL_KeyboardEvent|SDL_KEYUP]]
+|key released
+|-
+|[[SDL_TextEditingEvent|SDL_TEXTEDITING]]
+|keyboard text editing (composition)
+|-
+|[[SDL_TextInputEvent|SDL_TEXTINPUT]]
+|keyboard text input
+|-
+|SDL_KEYMAPCHANGED
+|keymap changed due to a system event such as an input language or keyboard layout change (>= SDL 2.0.4)
+|-
+|
+|<span style="background-color:#EDEDED;">''Mouse events''</span>
+|-
+|[[SDL_MouseMotionEvent|SDL_MOUSEMOTION]]
+|mouse moved
+|-
+|[[SDL_MouseButtonEvent|SDL_MOUSEBUTTONDOWN]]
+|mouse button pressed
+|-
+|[[SDL_MouseButtonEvent|SDL_MOUSEBUTTONUP]]
+|mouse button released
+|-
+|[[SDL_MouseWheelEvent|SDL_MOUSEWHEEL]]
+|mouse wheel motion
+|-
+|
+|<span style="background-color:#EDEDED;">''Joystick events''</span>
+|-
+|[[SDL_JoyAxisEvent|SDL_JOYAXISMOTION]]
+|joystick axis motion
+|-
+|[[SDL_JoyBallEvent|SDL_JOYBALLMOTION]]
+|joystick trackball motion
+|-
+|[[SDL_JoyHatEvent|SDL_JOYHATMOTION]]
+|joystick hat position change
+|-
+|[[SDL_JoyButtonEvent|SDL_JOYBUTTONDOWN]]
+|joystick button pressed
+|-
+|[[SDL_JoyButtonEvent|SDL_JOYBUTTONUP]]
+|joystick button released
+|-
+|[[SDL_JoyDeviceEvent|SDL_JOYDEVICEADDED]]
+|joystick connected
+|-
+|[[SDL_JoyDeviceEvent|SDL_JOYDEVICEREMOVED]]
+|joystick disconnected
+|-
+|
+|<span style="background-color:#EDEDED;">''Controller events''</span>
+|-
+|[[SDL_ControllerAxisEvent|SDL_CONTROLLERAXISMOTION]]
+|controller axis motion
+|-
+|[[SDL_ControllerButtonEvent|SDL_CONTROLLERBUTTONDOWN]]
+|controller button pressed
+|-
+|[[SDL_ControllerButtonEvent|SDL_CONTROLLERBUTTONUP]]
+|controller button released
+|-
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEADDED]]
+|controller connected
+|-
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEREMOVED]]
+|controller disconnected
+|-
+|[[SDL_ControllerDeviceEvent|SDL_CONTROLLERDEVICEREMAPPED]]
+|controller mapping updated
+|-
+|
+|<span style="background-color:#EDEDED;">''Touch events''</span>
+|-
+|[[SDL_TouchFingerEvent|SDL_FINGERDOWN]]
+|user has touched input device
+|-
+|[[SDL_TouchFingerEvent|SDL_FINGERUP]]
+|user stopped touching input device
+|-
+|[[SDL_TouchFingerEvent|SDL_FINGERMOTION]]
+|user is dragging finger on input device
+|-
+|
+|<span style="background-color:#EDEDED;">''Gesture events''</span>
+|-
+|[[SDL_DollarGestureEvent|SDL_DOLLARGESTURE]]
+|
+|-
+|[[SDL_DollarGestureEvent|SDL_DOLLARRECORD]]
+|
+|-
+|[[SDL_MultiGestureEvent|SDL_MULTIGESTURE]]
+|
+|-
+|
+|<span style="background-color:#EDEDED;">''Clipboard events''</span>
+|-
+|SDL_CLIPBOARDUPDATE
+|the clipboard changed
+|-
+|
+|<span style="background-color:#EDEDED;">''Drag and drop events''</span>
+|-
+|[[SDL_DropEvent|SDL_DROPFILE]]
+|the system requests a file open
+|-
+|[[SDL_DropEvent|SDL_DROPTEXT]]
+|text/plain drag-and-drop event
+|-
+|[[SDL_DropEvent|SDL_DROPBEGIN]]
+|a new set of drops is beginning (>= SDL 2.0.5)
+|-
+|[[SDL_DropEvent|SDL_DROPCOMPLETE]]
+|current set of drops is now complete (>= SDL 2.0.5)
+|-
+|
+|<span style="background-color:#EDEDED;">''Audio hotplug events''</span>
+|-
+|[[SDL_AudioDeviceEvent|SDL_AUDIODEVICEADDED]]
+|a new audio device is available (>= SDL 2.0.4)
+|-
+|[[SDL_AudioDeviceEvent|SDL_AUDIODEVICEREMOVED]]
+|an audio device has been removed (>= SDL 2.0.4)
+|-
+|
+|<span style="background-color:#EDEDED;">''Render events''</span>
+|-
+|SDL_RENDER_TARGETS_RESET
+|the render targets have been reset and their contents need to be updated (>= SDL 2.0.2)
+|-
+|SDL_RENDER_DEVICE_RESET
+|the device has been reset and all textures need to be recreated (>= SDL 2.0.4)
+|-
+|
+|<span style="background-color:#EDEDED;">''These are for your use, and should be allocated with [[SDL_RegisterEvents]]()''</span>
+|-
+|SDL_USEREVENT
+|a user-specified event
+|-
+|SDL_LASTEVENT
+|only for bounding internal arrays
+|}
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+SDL_Event e;
+while (SDL_PollEvent(&e)) {
+    if (e.type == SDL_KEYDOWN) {
+        SDL_Log("User just pressed down a key!");
+    }
+}
+</syntaxhighlight>
+
+== Remarks ==
+=== SDL_QUIT ===
+SDL_QUIT events are generated for a variety of reasons. An application can choose to ignore the event, for example, if it wants to offer a prompt asking the user to save the current work.
+
+An SDL_QUIT event is generated when the user clicks on the close button of the last existing window. This happens in addition to the SDL_WINDOWEVENT/SDL_WINDOWEVENT_CLOSE event, so the application can check whichever is appropriate, or both, or neither. If the application ignores this event and creates another window, SDL_QUIT will be sent again the next time the user clicks on the last remaining window's close button.
+
+SDL_QUIT is not limited to window closing. On Mac OS X, pressing Command-Q (the standard keyboard shortcut for "Quit this application") will cause SDL to generate an SDL_QUIT event, regardless of what windows exist at the time. The application is still responsible for terminating itself properly, however. Applications that completely ignore Command-Q will fail Mac App Store certification.
+
+On POSIX systems, [[SDL_Init]]() installs [[http://en.wikipedia.org/wiki/Unix_signal|signal handlers]] for <code>SIGINT</code> (keyboard interrupt) and <code>SIGTERM</code> (system termination request), if handlers do not already exist, that generate SDL_QUIT events as well.  There is no way to determine the cause of an SDL_QUIT event, but setting a signal handler in your application will override the default generation of quit events for that signal.
+
+=== Android, iOS and WinRT Events ===
+What we currently label as "Android, iOS and WinRT events" are specific to mobile and embedded devices that have different requirements than your usual desktop application. These events ''must'' be handled in an event filter, since often the OS needs an immediate response and will terminate your process shortly after sending the event, and if it sits in the SDL event queue, it'll be too late. You can handle everything else through a normal [[SDL_PollEvent]]() loop, but you should set up a callback with [[SDL_SetEventFilter]]() for these specific events.
+
+This is how these events currently map to the underlying OS:
+
+{|
+|SDL event
+|What
+|iOS
+|Android
+| WinRT
+|-
+|SDL_APP_TERMINATING
+|The application is being terminated by the OS.
+|<code>applicationWillTerminate()</code>
+|<code>onDestroy()</code>
+| <code>Exiting()</code>
+|-
+|SDL_APP_LOWMEMORY
+|The application is low on memory, free memory if possible.
+|<code>applicationDidReceiveMemoryWarning()</code>
+|<code>onLowMemory()</code>
+| --
+|-
+|SDL_APP_WILLENTERBACKGROUND
+|The application is about to enter the background.
+|<code>applicationWillResignActive()</code>
+|<code>onPause()</code>
+| <code>Suspending()</code>
+|-
+|SDL_APP_DIDENTERBACKGROUND
+|The application did enter the background and may not get CPU for some time.
+|<code>applicationDidEnterBackground()</code>
+|<code>onPause()</code>
+| <code>Suspending()</code>
+|-
+|SDL_APP_WILLENTERFOREGROUND
+|The application is about to enter the foreground.
+|<code>applicationWillEnterForeground()</code>
+|<code>onResume()</code>
+| <code>Resuming()</code>
+|-
+|SDL_APP_DIDENTERFOREGROUND
+|The application is now interactive.
+|<code>applicationDidBecomeActive()</code>
+|<code>onResume()</code>
+| <code>Resuming()</code>
+|}
+
+== Related Structures ==
+: [[SDL_JoyAxisEvent]]
+: [[SDL_JoyBallEvent]]
+: [[SDL_JoyButtonEvent]]
+: [[SDL_JoyHatEvent]]
+: [[SDL_JoyDeviceEvent]]
+: [[SDL_ControllerAxisEvent]]
+: [[SDL_ControllerButtonEvent]]
+: [[SDL_ControllerDeviceEvent]]
+: [[SDL_KeyboardEvent]]
+: [[SDL_MouseButtonEvent]]
+: [[SDL_MouseMotionEvent]]
+: [[SDL_MouseWheelEvent]]
+: [[SDL_QuitEvent]]
+: [[SDL_SysWMEvent]]
+: [[SDL_TextEditingEvent]]
+: [[SDL_TextInputEvent]]
+: [[SDL_UserEvent]]
+: [[SDL_WindowEvent]]
+: [[SDL_DropEvent]]
+: [[SDL_AudioDeviceEvent]]
+: [[SDL_TouchFingerEvent]]
+: [[SDL_DollarGestureEvent]]
+: [[SDL_MultiGestureEvent]]
+
+
+== Related Functions ==
+: [[SDL_PollEvent]]
+: [[SDL_SetEventFilter]]
+
+----
+[[CategoryEnum]], [[CategoryEvents]]

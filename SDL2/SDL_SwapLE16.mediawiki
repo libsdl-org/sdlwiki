@@ -1,0 +1,24 @@
+
+= SDL_SwapLE16 =
+Use this function to swap the byte order of a 16-bit little-endian value to native ordering.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+Uint16 SwapLE16(Uint16 x)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|the value to be swapped
+|}
+
+== Return Value ==
+Returns the native 16-bit value.
+== Related Functions ==
+:[[SDL_Swap16]]
+:[[SDL_SwapBE16]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]

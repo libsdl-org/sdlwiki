@@ -1,0 +1,72 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+= SDL_Keymod =
+An enumeration of key modifier masks.
+
+
+== Values ==
+{|
+|KMOD_NONE
+|0 (no modifier is applicable)
+|-
+|KMOD_LSHIFT
+|the left Shift key is down
+|-
+|KMOD_RSHIFT
+|the right Shift key is down
+|-
+|KMOD_LCTRL
+|the left Ctrl (Control) key is down
+|-
+|KMOD_RCTRL
+|the right Ctrl (Control) key is down
+|-
+|KMOD_LALT
+|the left Alt key is down
+|-
+|KMOD_RALT
+|the right Alt key is down
+|-
+|KMOD_LGUI
+|the left GUI key (often the Windows key) is down
+|-
+|KMOD_RGUI
+|the right GUI key (often the Windows key) is down
+|-
+|KMOD_NUM
+|the Num Lock key (may be located on an extended keypad) is down
+|-
+|KMOD_CAPS
+|the Caps Lock key is down
+|-
+|KMOD_MODE
+|the !AltGr key is down
+|-
+|KMOD_SCROLL
+|the Scroll Lock key is down (available since SDL 2.0.18)
+|-
+|KMOD_CTRL
+|(KMOD_LCTRL|KMOD_RCTRL)
+|-
+|KMOD_SHIFT
+|(KMOD_LSHIFT|KMOD_RSHIFT)
+|-
+|KMOD_ALT
+|(KMOD_LALT|KMOD_RALT)
+|-
+|KMOD_GUI
+|(KMOD_LGUI|KMOD_RGUI)
+|}
+
+== Remarks ==
+These may be OR'd together.
+
+== Related Functions ==
+:[[SDL_GetModState]]
+:[[SDL_SetModState]]
+
+----
+[[CategoryEnum]], [[CategoryKeyboard]], [[CategoryDraft]]

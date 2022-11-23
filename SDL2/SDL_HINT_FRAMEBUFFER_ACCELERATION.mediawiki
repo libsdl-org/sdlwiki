@@ -1,0 +1,25 @@
+
+= SDL_HINT_FRAMEBUFFER_ACCELERATION =
+A hint that specifies how 3D acceleration is used with [[SDL_GetWindowSurface]]().
+
+
+== Values ==
+{|
+|0
+|disable 3D acceleration
+|-
+|1
+|enable 3D acceleration, using the default renderer
+|-
+|X
+|enable 3D acceleration, using X where X is one of the valid rendering drivers.  (e.g. "direct3d", "opengl", etc.)
+|}
+
+== Default ==
+By default SDL tries to make a best guess whether to use acceleration or not on each platform.
+
+== Remarks ==
+SDL can try to accelerate the screen surface returned by [[SDL_GetWindowSurface]]() by using streaming textures with a 3D rendering engine.  This variable controls whether and how this is done.
+
+----
+[[CategoryDefine]], [[CategoryHints]]

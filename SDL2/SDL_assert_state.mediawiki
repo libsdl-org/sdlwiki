@@ -1,0 +1,2 @@
+
+This enumeration has been replaced by [[SDL_AssertState]] in SDL 2.0.4.

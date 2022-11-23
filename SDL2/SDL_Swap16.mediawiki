@@ -1,0 +1,24 @@
+
+= SDL_Swap16 =
+Use this function to swap the byte order of a 16-bit value.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+Uint16 SDL_Swap16(Uint16 x)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|the value to be swapped
+|}
+
+== Return Value ==
+Returns the swapped value.
+== Related Functions ==
+:[[SDL_SwapBE16]]
+:[[SDL_SwapLE16]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]

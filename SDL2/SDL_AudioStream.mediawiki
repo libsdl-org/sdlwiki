@@ -1,0 +1,22 @@
+= SDL_AudioStream =
+An opaque structure that buffers, converts, resamples, and generally streams audio data.
+
+
+== Remarks ==
+The [[SDL_AudioStream]] structure is used to convert audio data between different formats in arbitrarily-sized blocks. It is meant to be a replacement for the [[SDL_AudioCVT]]-related interfaces.
+
+A tutorial on using audio stream is at [[Tutorials-AudioStream]].
+
+(this page should be fleshed out more, too.)
+
+== Related Functions ==
+:[[SDL_NewAudioStream]]
+:[[SDL_AudioStreamPut]]
+:[[SDL_AudioStreamAvailable]]
+:[[SDL_AudioStreamGet]]
+:[[SDL_AudioStreamFlush]]
+:[[SDL_AudioStreamClear]]
+:[[SDL_FreeAudioStream]]
+
+----
+[[CategoryStruct]], [[CategoryAudio]]

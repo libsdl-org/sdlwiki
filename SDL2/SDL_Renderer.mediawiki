@@ -1,0 +1,58 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_Renderer =
+A structure that contains a rendering state.
+
+
+
+
+
+== Related Functions ==
+:[[SDL_CreateRenderer]]
+:[[SDL_CreateSoftwareRenderer]]
+:[[SDL_CreateTexture]]
+:[[SDL_CreateTextureFromSurface]]
+:[[SDL_CreateWindowAndRenderer]]
+:[[SDL_DestroyRenderer]]
+:[[SDL_GetRenderDrawBlendMode]]
+:[[SDL_GetRenderDrawColor]]
+:[[SDL_GetRendererInfo]]
+:[[SDL_GetRendererOutputSize]]
+:[[SDL_GetRenderTarget]]
+:[[SDL_RenderClear]]
+:[[SDL_RenderCopy]]
+:[[SDL_RenderCopyEx]]
+:[[SDL_RenderDrawLine]]
+:[[SDL_RenderDrawLines]]
+:[[SDL_RenderDrawPoint]]
+:[[SDL_RenderDrawPoints]]
+:[[SDL_RenderDrawRect]]
+:[[SDL_RenderDrawRects]]
+:[[SDL_RenderFillRect]]
+:[[SDL_RenderFillRects]]
+:[[SDL_RenderGetClipRect]]
+:[[SDL_RenderGetIntegerScale]]
+:[[SDL_RenderGetLogicalSize]]
+:[[SDL_RenderGetScale]]
+:[[SDL_RenderGetViewport]]
+:[[SDL_RenderIsClipEnabled]]
+:[[SDL_RenderPresent]]
+:[[SDL_RenderReadPixels]]
+:[[SDL_RenderSetClipRect]]
+:[[SDL_RenderSetIntegerScale]]
+:[[SDL_RenderSetLogicalSize]]
+:[[SDL_RenderSetScale]]
+:[[SDL_RenderSetViewport]]
+:[[SDL_RenderTargetSupported]]
+:[[SDL_SetRenderDrawBlendMode]]
+:[[SDL_SetRenderDrawColor]]
+:[[SDL_SetRenderTarget]]
+
+----
+[[CategoryStruct]], [[CategoryRender]], [[CategoryDraft]]

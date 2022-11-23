@@ -1,0 +1,488 @@
+= Building SDL2 for Android =
+
+
+== Existing documentation ==
+
+A lot of information can be found in [https://hg.libsdl.org/SDL/file/default/docs/README-android.md SDL/docs/README-android.md].
+
+This page is more walkthrough-oriented.
+
+
+== Pre-requisites ==
+
+* Install minimal Java environment. For instance, in Debian/Ubuntu: 
+<syntaxhighlight lang='bash'>
+sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common
+</syntaxhighlight>
+* Install NDK (tested with [https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip r10e])
+* Install the latest SDK, run <code>tools/bin/sdkmanager</code> (or <code>tools/android</code> pre-2017) and install one API
+*; >=12 for SDL < 2.0.8
+*; >=19 for SDL >= 2.0.8
+*; >=26 for SDL >= 2.0.16
+*; >=31 for SDL >= 2.0.18
+* Configure your environment variables, e.g.:
+<syntaxhighlight lang='bash'>
+PATH="/usr/src/android-ndk-rXXx:$PATH"                  # for 'ndk-build'
+PATH="/usr/src/android-sdk-linux/tools:$PATH"           # for 'android'
+PATH="/usr/src/android-sdk-linux/platform-tools:$PATH"  # for 'adb'
+export ANDROID_HOME="/usr/src/android-sdk-linux"        # for gradle
+export ANDROID_NDK_HOME="/usr/src/android-ndk-rXXx"     # for gradle
+</syntaxhighlight>
+
+== Simple builds ==
+
+=== SDL wrapper for simple programs ===
+
+* Compile a sample app (calls ndk-build): 
+<syntaxhighlight lang='bash'>
+cd /usr/src/SDL2/build-scripts/
+./androidbuild.sh org.libsdl.testgles ../test/testgles.c
+</syntaxhighlight>
+* Follow the instructions to install on your device: 
+<syntaxhighlight lang='bash'>
+cd /usr/src/SDL2/build/org.libsdl.testgles/
+ant debug install       # SDL <= 2.0.7
+./gradlew installDebug  # SDL >= 2.0.8
+</syntaxhighlight>
+
+Notes:
+* multiple targets armeabi-v7a/arm64-v8a/x86/x86_64 compilation
+* application doesn't quit
+
+==== Troubleshooting ====
+
+* use OpenJDK 8: execute <code>sudo update-alternatives --config java</code> and select jdk-8 as default; or use <code>JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew</code>
+* fixed in 2.0.9: in <code>/android-project/build.gradle</code> change (in BOTH places in the file code appears) from
+<syntaxhighlight lang='c'>
+    repositories {
+        jcenter()
+    }
+</syntaxhighlight>
+to
+<syntaxhighlight lang='c'>
+    repositories {
+        jcenter()
+        google()
+    }
+</syntaxhighlight>
+* <code>javax/xml/bind/annotation/XmlSchema, Could not initialize class com.android.sdklib.repository.AndroidSdkHandler</code>: check the Android Gradle Plugin version in <code>/android-project/build.gradle</code>, e.g.
+<code> classpath 'com.android.tools.build:gradle:3.1.0' </code>
+* You can customize the Gradle version in <code>/android-project/gradle/wrapper/gradle-wrapper.properties</code>:
+<code> distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip </code>
+* You can customize your SDK/NDK versions in </code>android-project/app/build.gradle</code>:
+<syntaxhighlight lang='c'>
+android {
+    buildToolsVersion "28.0.1"
+    compileSdkVersion 28
+</syntaxhighlight>
+* You can customize your targets depending on the NDK version:
+<syntaxhighlight lang='c'>
+externalNativeBuild {
+    ndkBuild {
+        arguments "APP_PLATFORM=android-14"
+        abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+</syntaxhighlight>
+* <code>ABIs [x86_64, arm64-v8a] are not supported for platform. Supported ABIs are [armeabi, armeabi-v7a, x86, mips]</code>: upgrade to NDK >= 10
+* Using ant (SDL <= 2.0.7): edit <code>build-scripts/androidbuild.sh</code>, find the <code>$ANDROID update project</code> line, and add <code>--target android-XX</code> to it (replace XX with your installed API number)
+* TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - <code>apt install gradle libgradle-android-plugin-java</code>
+
+=== SDL wrapper + SDL_image NDK module ===
+
+Let's modify <code>SDL2_image/showimage.c</code> to show a simple embedded image (e.g. XPM).
+
+<syntaxhighlight lang='c'>
+#include "SDL.h"
+#include "SDL_image.h"
+
+/* XPM */
+static char * icon_xpm[] = {
+  "32 23 3 1",
+  " 	c #FFFFFF",
+  ".	c #000000",
+  "+	c #FFFF00",
+  "                                ",
+  "            ........            ",
+  "          ..++++++++..          ",
+  "         .++++++++++++.         ",
+  "        .++++++++++++++.        ",
+  "       .++++++++++++++++.       ",
+  "      .++++++++++++++++++.      ",
+  "      .+++....++++....+++.      ",
+  "     .++++.. .++++.. .++++.     ",
+  "     .++++....++++....++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .+++++++++..+++++++++.     ",
+  "     .++++++++++++++++++++.     ",
+  "      .++++++++++++++++++.      ",
+  "      .++...++++++++...++.      ",
+  "       .++............++.       ",
+  "        .++..........++.        ",
+  "         .+++......+++.         ",
+  "          ..++++++++..          ",
+  "            ........            ",
+  "                                "};
+
+int main(int argc, char *argv[])
+{
+  SDL_Window *window;
+  SDL_Renderer *renderer;
+  SDL_Surface *surface;
+  SDL_Texture *texture;
+  int done;
+  SDL_Event event;
+
+  if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+        "SDL_CreateWindowAndRenderer() failed: %s", SDL_GetError());
+    return(2);
+  }
+
+  surface = IMG_ReadXPMFromArray(icon_xpm);
+  texture = SDL_CreateTextureFromSurface(renderer, surface);
+  if (!texture) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
+        "Couldn't load texture: %s", SDL_GetError());
+    return(2);
+  }
+  SDL_SetWindowSize(window, 800, 480);
+
+  done = 0;
+  while (!done) {
+    while (SDL_PollEvent(&event)) {
+      if (event.type == SDL_QUIT)
+        done = 1;
+    }
+    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_RenderPresent(renderer);
+    SDL_Delay(100);
+  }
+  SDL_DestroyTexture(texture);
+
+  SDL_Quit();
+  return(0);
+}
+</syntaxhighlight>
+
+Then let's make an Android app out of it. To compile: 
+<pre>
+cd /usr/src/SDL2/build-scripts/
+./androidbuild.sh org.libsdl.showimage /usr/src/SDL2_image/showimage.c
+cd /usr/src/SDL2/build/org.libsdl.showimage/
+ln -s /usr/src/SDL2_image jni/
+ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
+sed -i -e 's/^LOCAL_SHARED_LIBRARIES.*/& SDL2_image/' jni/src/Android.mk
+ndk-build -j$(nproc)
+ant debug install
+</pre>
+
+Notes:
+* application doesn't restart properly
+
+
+== Build an autotools-friendly environment ==
+
+You use autotools in your project and can't be bothering understanding ndk-build's cryptic errors? This guide is for you!
+
+Note: this environment can be used for CMake too.
+
+=== Compile a shared binaries bundle for SDL and SDL_* ===
+
+* Get the latests SDL2_* releases:
+<syntaxhighlight lang='bash'>
+cd /usr/src/
+wget https://libsdl.org/release/SDL2-2.0.5.tar.gz
+wget https://www.libsdl.org/projects/SDL_image/release/SDL2_image-2.0.1.tar.gz
+wget https://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.0.1.tar.gz
+wget https://www.libsdl.org/projects/SDL_net/release/SDL2_net-2.0.1.tar.gz
+wget https://www.libsdl.org/projects/SDL_ttf/release/SDL2_ttf-2.0.14.tar.gz
+
+tar xf SDL2-2.0.5.tar.gz
+tar xf SDL2_image-2.0.1.tar.gz
+tar xf SDL2_mixer-2.0.1.tar.gz
+tar xf SDL2_net-2.0.1.tar.gz
+tar xf SDL2_ttf-2.0.14.tar.gz
+
+ln -s SDL2-2.0.5 SDL2
+ln -s SDL2_image-2.0.1 SDL2_image
+ln -s SDL2_mixer-2.0.1 SDL2_mixer
+ln -s SDL2_net-2.0.1 SDL2_net
+ln -s SDL2_ttf-2.0.14 SDL2_ttf
+</syntaxhighlight>
+* Start with a minimal build:
+<syntaxhighlight lang='bash'>
+cd /usr/src/SDL2/
+cd build-scripts/
+#hg revert --all  # remove traces of previous builds
+# edit androidbuild.sh and modify $ANDROID update project --target android-XX
+./androidbuild.sh org.libsdl /dev/null
+# doesn't matter if the actual build fails, it's just for setup
+cd ../build/org.libsdl/
+</syntaxhighlight>
+* Remove reference to our dummy file:
+<syntaxhighlight lang='bash'>
+rm -rf jni/src/
+</syntaxhighlight>
+* Reference SDL_image, SDL_mixer, SDL_ttf, and their dependencies, as NDK modules:
+<syntaxhighlight lang='bash'>
+ln -s /usr/src/SDL2_image jni/
+ln -s /usr/src/SDL2_image/external/libwebp-0.3.0 jni/webp
+ln -s /usr/src/SDL2_mixer jni/
+ln -s /usr/src/SDL2_mixer/external/libmikmod-3.1.12 jni/libmikmod
+ln -s /usr/src/SDL2_mixer/external/smpeg2-2.0.0 jni/smpeg2
+ln -s /usr/src/SDL2_net jni/
+ln -s /usr/src/SDL2_ttf jni/
+</syntaxhighlight>
+* Optionnaly edit <code>jni/Android.mk</code> to disable some formats, e.g.:
+<syntaxhighlight lang='make'>
+SUPPORT_MP3_SMPEG := false
+include $(call all-subdir-makefiles)
+</syntaxhighlight>
+* Launch the build!
+<syntaxhighlight lang='bash'>
+ndk-build -j$(nproc)
+</syntaxhighlight>
+
+Note: no need to add <code>System.loadLibrary</code> calls in <code>SDLActivity.java</code>, your application will be linked to them and Android's ld-linux loads them automatically.
+
+
+=== Install SDL in a GCC toolchain ===
+
+Now:
+* Copy the NDK into a traditional GCC toolchain (leave android-14 as-is):
+<syntaxhighlight lang='bash'>
+/usr/src/android-ndk-r8c/build/tools/make-standalone-toolchain.sh \
+  --platform=android-14 --install-dir=/usr/src/ndk-standalone-14-arm --arch=arm
+</syntaxhighlight>
+* Set your PATH (important, do it before any build):
+<syntaxhighlight lang='bash'>
+NDK_STANDALONE=/usr/src/ndk-standalone-14-arm
+PATH=$NDK_STANDALONE/bin:$PATH
+</syntaxhighlight>
+* Install the SDL2 binaries in the toolchain:
+<syntaxhighlight lang='bash'>
+cd /usr/src/SDL2/build/org.libsdl/
+for i in libs/armeabi/*; do ln -nfs $(pwd)/$i $NDK_STANDALONE/sysroot/usr/lib/; done
+mkdir $NDK_STANDALONE/sysroot/usr/include/SDL2/
+\cp jni/SDL/include/* $NDK_STANDALONE/sysroot/usr/include/SDL2/
+\cp jni/*/SDL*.h $NDK_STANDALONE/sysroot/usr/include/SDL2/
+</syntaxhighlight>
+* Install <code>pkg-config</code> and install a host-triplet-prefixed symlink in the PATH (auto-detected by autoconf):
+<syntaxhighlight lang='bash'>
+VERSION=0.9.12
+cd /usr/src/
+wget http://rabbit.dereferenced.org/~nenolod/distfiles/pkgconf-$VERSION.tar.gz
+tar xf pkgconf-$VERSION.tar.gz
+cd pkgconf-$VERSION/
+mkdir native-android/ && cd native-android/
+../configure --prefix=$NDK_STANDALONE/sysroot/usr
+make -j$(nproc)
+make install
+ln -s ../sysroot/usr/bin/pkgconf $NDK_STANDALONE/bin/arm-linux-androideabi-pkg-config
+mkdir $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/
+</syntaxhighlight>
+* Install pkg-config <code>.pc</code> files for SDL:
+<syntaxhighlight lang='bash'>
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/sdl2.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: sdl2
+Description: Simple DirectMedia Layer is a cross-platform multimedia library designed to provide low level access to audio, keyboard, mouse, joystick, 3D hardware via OpenGL, and 2D video framebuffer.
+Version: 2.0.5
+Requires:
+Conflicts:
+Libs: -lSDL2
+Cflags: -I${includedir}/SDL2   -D_REENTRANT
+EOF
+
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_image.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_image
+Description: image loading library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_image
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_mixer.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_mixer
+Description: mixer library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_mixer
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_net.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_net
+Description: net library for Simple DirectMedia Layer
+Version: 2.0.1
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_net
+Cflags: -I${includedir}/SDL2
+EOF
+
+cat <<'EOF' > $NDK_STANDALONE/sysroot/usr/lib/pkgconfig/SDL2_ttf.pc
+prefix=/usr/src/ndk-standalone-14-arm/sysroot/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+Name: SDL2_ttf
+Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
+Version: 2.0.14
+Requires: sdl2 >= 2.0.0
+Libs: -L${libdir} -lSDL2_ttf
+Cflags: -I${includedir}/SDL2
+EOF
+</syntaxhighlight>
+
+=== Building other dependencies ===
+
+You can add any other libraries (e.g.: SDL2_gfx, freetype, gettext, gmp...) using commands like:
+<syntaxhighlight lang='bash'>
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=$NDK_STANDALONE/sysroot/usr \
+  --with-some-option --enable-another-option \
+  --disable-shared
+make -j$(nproc)
+make install
+</syntaxhighlight>
+
+Static builds (<code>--disable-shared</code>) are recommended for simplicity (no additional <code>.so</code> to declare).
+
+<syntaxhighlight lang='bash'>
+Example with SDL2_gfx:
+VERSION=1.0.3
+wget http://www.ferzkopp.net/Software/SDL2_gfx/SDL2_gfx-$VERSION.tar.gz
+tar xf SDL2_gfx-$VERSION.tar.gz
+mv SDL2_gfx-$VERSION/ SDL2_gfx/
+cd SDL2_gfx/
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi --prefix=$NDK_STANDALONE/sysroot/usr \
+  --disable-shared --disable-mmx
+make -j$(nproc)
+make install
+</syntaxhighlight>
+
+You can compile YOUR application using this technique, with some more steps to tell Android how to run it using JNI.
+
+
+=== Build your autotools app ===
+
+First, prepare an Android project:
+* Copy and adapt the <code>/usr/src/SDL2/android-project</code> skeleton as explained in <code>README-android.md</code>. You can leave it as-is in a first step.
+* Make links to the SDL binaries as well:
+<syntaxhighlight lang='bash'>
+mkdir -p libs/armeabi/
+for i in /usr/src/SDL2/build/org.libsdl/libs/armeabi/*; do ln -nfs $i libs/armeabi/; done
+</syntaxhighlight>
+
+Make your project Android-aware:
+* Add <code>/usr/src/SDL2/src/main/android/SDL_android_main.c</code> in your project (comment out the line referencing "SDL_internal.h"). Compile it as C (not C++).
+* In your <code>configure.ac</code>, detect Android:
+<syntaxhighlight lang='c'>
+AM_CONDITIONAL(ANDROID, test "$host" = "arm-unknown-linux-androideabi")
+</syntaxhighlight>
+* In your <code>Makefile.am</code>, tell Automake you'll build executables as libraries, using something like:
+<syntaxhighlight lang='C'>
+if ANDROID
+<!--  Build .so JNI libs rather than executables -->
+  AM_CFLAGS = -fPIC
+  AM_LDFLAGS += -shared
+  COMMON_OBJS += SDL_android_main.c
+endif
+</syntaxhighlight>
+* Cross-compile your project using the GCC toolchain environment we created:
+<syntaxhighlight lang='bash'>
+PATH=$NDK_STANDALONE/bin:$PATH
+mkdir cross-android/ && cd cross-android/
+../configure --host=arm-linux-androideabi \
+  --prefix=/android-aint-posix \
+  --with-your-option --enable-your-other-option ...
+make
+</syntaxhighlight>
+* Do this again for any additional arch you want to support (TODO: see how to support <code>armeabi-v7a</code> and document what devices support it); something like:
+<syntaxhighlight lang='bash'>
+mkdir cross-android-v7a/ && cd cross-android-v7a/
+# .o: -march=armv5te -mtune=xscale -msoft-float -mthumb  =>  -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb
+# .so: -march=armv7-a -Wl,--fix-cortex-a8
+CFLAGS="-g -O2 -march=armv7-a -mfpu=vfpv3-d16 -mfloat-abi=softfp -mthumb" LFDLAGS="-march=armv7-a -Wl,--fix-cortex-a8" \
+  ../configure --host=arm-linux-androideabi \
+  ...
+</syntaxhighlight>
+
+Now you can install your pre-built binaries and build the Android project:
+* Copy your program in <code>android-project/libs/armeabi/libmain.so</code>.
+* Build your Android <code>.apk</code>:
+<syntaxhighlight lang='bash'>
+android update project --name your_app --path . --target android-XX
+ant debug
+ant installd
+</syntaxhighlight>
+* You can run the application remotely:
+<syntaxhighlight lang='bash'>
+adb shell am start -a android.intenon.MAIN -n org.libsdl.app/org.libsdl.app.SDLActivity  # replace with your app package
+</syntaxhighlight>
+* Your SDL2 Android app is running!
+
+=== Build your CMake app ===
+
+(Work In Progress)
+
+You can use our Android GCC toolchain using a simple toolchain file:
+<syntaxhighlight lang='cmake'>
+# CMake toolchain file
+SET(CMAKE_SYSTEM_NAME Linux)  # Tell CMake we're cross-compiling
+include(CMakeForceCompiler)
+# Prefix detection only works with compiler id "GNU"
+CMAKE_FORCE_C_COMPILER(arm-linux-androideabi-gcc GNU)
+SET(ANDROID TRUE)
+</syntaxhighlight>
+
+You then call CMake like this:
+<syntaxhighlight lang='bash'>
+PATH=$NDK_STANDALONE/bin:$PATH
+cmake \
+  -D CMAKE_TOOLCHAIN_FILE=../android_toolchain.cmake \
+  ...
+</syntaxhighlight>
+
+== Troubleshootings ==
+
+If <code>ant installd</code> categorically refuses to install with <code>Failure [INSTALL_FAILED_INSUFFICIENT_STORAGE]</code>, even if you have free local storage, that may mean anything. Check logcat first:
+<syntaxhighlight lang='bash'>
+adb logcat
+</syntaxhighlight>
+If the error logs are not helpful (likely ;')) try locating all past traces of the application:
+<syntaxhighlight lang='bash'>
+find / -name "org...."
+</syntaxhighlight>
+and remove them all.
+
+If the problem persists, you may try installing on the SD card:
+<syntaxhighlight lang='bash'>
+adb install -s bin/app-debug.apk
+</syntaxhighlight>
+
+-----
+
+If you get in your logcat:
+
+<code>SDL: Couldn't locate Java callbacks, check that they're named and typed correctly</code>
+
+this probably means your <code>SDLActivity.java</code> is out-of-sync with your libSDL2.so.

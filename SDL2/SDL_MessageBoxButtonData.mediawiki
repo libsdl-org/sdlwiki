@@ -1,0 +1,42 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
+
+
+= SDL_MessageBoxButtonData =
+A structure that contains individual button data for a message box.
+
+
+
+
+== Data Fields ==
+{|
+| Uint32      
+|'''flags'''    
+| one of the values from [[SDL_MessageBoxButtonFlags]] 
+|-
+| int         
+|'''buttonid''' 
+| user defined button id (value returned via [[SDL_ShowMessageBox]]()) 
+|-
+| const char* 
+|'''text'''     
+| the UTF-8 button text 
+|}
+
+
+
+== Related Enumerations ==
+:[[SDL_MessageBoxButtonFlags]]
+
+== Related Structures ==
+:[[SDL_MessageBoxData]]
+
+== Related Functions ==
+:[[SDL_ShowMessageBox]]
+
+----
+[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]

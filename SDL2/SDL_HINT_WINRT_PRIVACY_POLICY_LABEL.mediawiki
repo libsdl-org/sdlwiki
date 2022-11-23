@@ -1,0 +1,45 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_WINRT_PRIVACY_POLICY_LABEL =
+A hint that specifies a label text for a WinRT app's privacy policy link.
+
+
+
+
+== Values ==
+{|
+|X
+|a label text for a WinRT app's privacy policy link
+|}
+
+
+== Default ==
+By default this hint's value is "Privacy Policy".
+
+
+
+== Remarks ==
+Network-enabled WinRT apps must include a privacy policy.  On Windows 8, 8.1, and RT, Microsoft mandates that this policy be available via the Windows Settings charm.  SDL provides code to add a link there, with its label text being set via the optional hint, SDL_HINT_WINRT_PRIVACY_POLICY_LABEL.
+
+Please note that a privacy policy's contents are not set via this hint.  A separate hint, [[SDL_HINT_WINRT_PRIVACY_POLICY_URL]], is used to link to the actual text of the policy.
+
+The contents of this hint should be encoded as a UTF8 string.
+
+The default value is "Privacy Policy".  This hint should only be set during app initialization, preferably before any calls to [[SDL_Init]]().
+
+For additional information on linking to a privacy policy, see the documentation for [[SDL_HINT_WINRT_PRIVACY_POLICY_URL]].
+
+
+== Version ==
+This hint is available since SDL 2.0.3.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

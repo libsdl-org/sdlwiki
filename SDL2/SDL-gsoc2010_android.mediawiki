@@ -1,0 +1,38 @@
+This is a scratch pad for the Android Google Summer of Code 2010 project, by Paul Hunkin
+
+The code is available here:
+http://hg.libsdl.org/SDL-gsoc2010_android
+
+
+== Status ==
+
+* Builds against the current (r4) [http://developer.android.com/sdk/ndk/index.html Android NDK]
+* Works enough to get a 'hello world'.
+* None of the subsystems are implemented yet
+
+== Documentation ==
+
+TODO
+
+== How to build ==
+
+To build SDL:
+
+* Extract the NDK somewhere
+* Currently you must set the correct paths to the NDK in:
+* build-scripts/acc.sh 
+* build-scripts/ald.sh 
+* Makefile.android
+* 'make -f Makefile.android' should produce libsdl.a
+
+To build a test program:
+
+acc.sh/ald.sh are wrapper scripts designed to make it easier to compile things with the Android toolchain. So, you can build with <code>acc.sh test.c -o test</code>, the same as you would do with normal gcc.
+ 
+Or in a makefile, use:
+* CC=/path/to/sdl/build-scripts/acc.sh 
+* LD=/path/to/sdl/build-scripts/ald.sh 
+
+== Notes ==
+
+* Screenshots of the current progress may be available here: [http://home.bieh.net/~paul/sdl/ http://home.bieh.net/~paul/sdl/]

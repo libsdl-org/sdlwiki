@@ -1,0 +1,25 @@
+
+= SDL_SwapFloat =
+Use this function to swap the byte order of a floating point value.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+float SDL_SwapFloat(float x)
+
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|the value to be swapped
+|}
+
+== Return Value ==
+Returns the swapped value.
+== Related Functions ==
+:[[SDL_SwapFloatBE]]
+:[[SDL_SwapFloatLE]]
+
+----
+[[CategoryAPI]], [[CategoryEndian]]

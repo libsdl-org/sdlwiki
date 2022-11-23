@@ -1,0 +1,31 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_MINIMIZE_ON_FOCUS_LOSS =
+A hint that specifies if a SDL_Window is minimized if it loses key focus when in fullscreen mode.
+
+
+
+
+== Values ==
+{|
+|0
+|do not minimize SDL_Window if it loses key focus when in fullscreen mode
+|-
+|1
+|do minimize the SDL_Window if it loses key focus when in fullscreen mode
+|}
+
+
+== Default ==
+By default a SDL_Window is minimized if it loses key focus when in fullscreen mode.
+
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

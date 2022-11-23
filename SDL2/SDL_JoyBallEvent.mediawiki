@@ -1,0 +1,54 @@
+
+= SDL_JoyBallEvent =
+A structure that contains joystick trackball motion event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_JOYBALLMOTION
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|SDL_JoystickID
+|'''which'''
+|the instance id of the joystick that reported the event
+|-
+|Uint8
+|'''ball'''
+|the index of the trackball that changed
+|-
+|Sint16
+|'''xrel'''
+|the relative motion in the X direction
+|-
+|Sint16
+|'''yrel'''
+|the relative motion in the Y direction
+|}
+
+== Remarks ==
+[[SDL_JoyBallEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYBALLMOTION is reported.  You would access it through the event's <code>jball</code> field.
+
+An SDL_JOYBALLMOTION event occurs when a user moves a trackball on the joystick.
+
+Trackballs only return relative motion. This is the change in position of the ball since it was last polled (last cycle of the event loop).
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+:[[SDL_JoyAxisEvent]]
+:[[SDL_JoyButtonEvent]]
+:[[SDL_JoyHatEvent]]
+
+== Related Functions ==
+:[[SDL_JoystickEventState]]
+:[[SDL_JoystickGetBall]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

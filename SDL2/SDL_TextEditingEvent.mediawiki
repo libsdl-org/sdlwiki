@@ -1,0 +1,49 @@
+= SDL_TextEditingEvent =
+A structure that contains keyboard text editing event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|SDL_TEXTEDITING
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
+|'''windowID'''
+|the window with keyboard focus, if any
+|-
+|char[32]
+|'''text'''
+|the null-terminated editing text in UTF-8 encoding
+|-
+|Sint32
+|'''start'''
+|the location to begin editing from
+|-
+|Sint32
+|'''length'''
+|the number of characters to edit from the start point
+|}
+
+== Remarks ==
+[[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
+
+There is a [[Tutorials-TextInput|tutorial]].
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+:[[SDL_TextInputEvent]]
+
+== Related Functions ==
+:[[SDL_StartTextInput]]
+:[[SDL_StopTextInput]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

@@ -1,0 +1,807 @@
+<!-- acl All:read -->
+
+= Style Guide: Wiki Basics =
+
+<span id="ToC"></span>
+
+
+== Getting Started ==
+
+<!> '''In general, existing content, including markup, should not be modified or removed.'''
+<br/>
+<br/>
+=== Opening An Editor ===
+If a page can be edited you will see two options to choose from in the left column:
+ 1. <span color="blue">Edit (Text)</span>
+  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
+ {i} Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.<br/>
+ For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [https://wiki.libsdl.org/HelpOnEditing wiki help documentation].
+
+ 1. <span color="blue">Edit (GUI)</span>
+  The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
+ {i} The GUI editor is fairly self-explanatory; however, if you require further assistance, see [https://wiki.libsdl.org/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+
+Note that some formatting will appear slightly different in preview mode than on the finished screen.
+
+
+=== Automatic Backup of Drafts ===
+~-(from: [https://wiki.libsdl.org/HelpOnEditing Help On Editing])-~
+
+ Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
+
+ If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
+
+ '''To recover that draft''', you simply edit that page again. If there is a draft, an alert message will be in the message box [at the top] and a "load draft" button will be present [in the left column]. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
+
+ /!\ Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
+
+ If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
+
+
+=== Saving Your Changes ===
+Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
+ ''Sample comments'': 
+* added comment to end of remarks
+* added code example to C++ section
+* remarked on use of function with [sound card model]
+
+{i} Especially when using the text editor, use the <span color="blue">Preview</span> function in the left sidebar often and before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
+: ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
+
+When you have finished adding your content and filling in the Comment field, and are satisfied with the formatting, use the <span color="blue">Save Changes</span> function in the left sidebar to save your changes.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+== Style Guide Terminology ==
+Some terms used in the style guides are intended to have specific meanings or purposes that may or may not be as intuitively clear as we hope.  Explanations are provided here to avoid any potential confusion.
+<span id="api"></span>
+: '''API Page'''
+: Refers to any Function, Structure, or Enumeration page.
+<span id="category"></span>
+: '''Category Page'''
+: Refers to the front page of each major category found in the [[APIByCategory|API by Category]] list.
+: '''Draft Page'''
+: Any page with <span color="red">DRAFT</span> at the top is incomplete.  It should not be used as a formatting example until <span color="red">DRAFT</span> is removed.  There may be missing or extra information, unusual formatting, colors, markup, notes, etc. on these pages.  They will all be cleaned up by the time <span color="red">DRAFT</span> is removed.  Please bear with us while they are in place as they help to speed up the final editing process.  ''Thank you!''
+: '''''If...'''''
+: Found in some detailed style guide sections, this indicates options for you to choose from.  Select the one(s) that best suits your content given the context on the page you are editing and follow the related instructions. (See ''Action'' through ''Example'' below.)  
+: In some cases a portion of the statement following ''If'' will be __underlined__ to help you quickly scan for the option(s) that you need.
+: '''''Action'':'''
+: The instructions immediately following ''Action'' indicate what you should do to apply the style guide guidelines.  In some cases you will select an ''Action'' that is relevant to your particular content (usually from a table of options).  In many cases everyone making a certain type of edit should follow the same ''Action'' in which case no options will be given.
+: Sometimes ''Action'' will include a number (ie: ''Action 2'') to indicate that there is more than one way to achieve the same result or that more than one step is required.  Read carefully to determine which apply to your circumstance.
+: ''Action'' is occasionally followed by ''Markup'' or ''How'' and may also be followed by any of the other markers (see below).
+: /!\ Please read any ''Note'' or ''<span color="red">Important!</span>'' comment related to the ''Action''(s) you choose.  If you are otherwise familiar with the wiki and it's markup the other sections can usually be skipped unless you are having trouble.
+: '''''Markup'':'''
+: The instructions immediately following ''Markup'' indicate the critical markup that would be used in the text editor to complete the ''Action'' above it.  If you prefer another way to achieve the same result, or prefer to use the GUI editor this information should be used to clarify the correct formatting for you to match.
+: Sometimes ''Markup'' will include a number (ie: ''Markup 2'') to indicate that there is more than one way to achieve the same result.  You should choose whichever option suits you best for the circumstances.
+: '''''How'':'''
+: Usually used instead of ''Markup'', the information immediately following ''How'' describes specific actions to be taken outside of the editing window in order to complete the ''Action'' above it.  (This is somewhat rare.)
+: '''''Note'':'''
+: The instructions immediately following ''Note'': should be taken into consideration as necessary.  
+: '''''<span color="red">Important!</span>'''''
+: Similar to a ''Note'', but indicates that the noted information is especially important and should be heeded by all Contributors. 
+: '''''Example'':'''
+: Provides a direct example of the markup or points to a place in the wiki where the related ''Action'' and ''Markup'' can be observed.
+<br/>
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+
+== General Guidelines ==
+
+This section contains general information that applies to nearly every page in the wiki.  Please review this section periodically for updates.  
+
+''<span color="red">Important!</span>'' Do not change the Category links at the bottom of any page.
+
+Please do not remove DRAFT from any page!
+
+The top of (nearly) every page begins with the following, which should not be edited:
+  ```
+#pragma section-numbers off
+#pragma camelcase off
+```
+ Any new or in progress page will also include:
+ ```
+||<tablewidth="100%" style="color: #FF0000;" :> DRAFT||
+```
+
+''<span color="red">Important!</span>'' If you encounter the following comments while editing a page, please ensure that any changes to the <code><intervening content></code> are appropriate to ''all'' pages listed in the first comment.  If not, please make your changes outside of the comments or contact us for assistance.<br/>
+'''DO NOT''' change these comments except to update included <code><PageName></code>s if necessary.
+ ```
+##The following content is included on <PageName>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
+   <intervening content>
+##End Include here.
+```
+: See [[#include|Includes]] for more information.
+<br/>
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+<span id="markup"></span>
+== Some Markup Basics ==
+Below is a summary of the most commonly used markup in this wiki, as well as some very rarely used, and some hints and tricks for using it.
+
+<!> '''The following is provided for your convenience and is meant to be general information.  The other [[Contributing#guides|Style Guides]] describe where this formatting should be applied and where exceptions may exist.'''
+
+A good place to look for additional information on MoinMoin wiki markup is  [https://wiki.libsdl.org/HelpOnMoinWikiSyntax HelpOnMoinWikiSyntax].  Also see the Editor Hints in the left sidebar when in Edit mode for some of the most common markup.  
+
+
+
+<span id="formatting"></span>
+=== Text Formatting ===
+''Note'': Formatting markup can usually be nested/grouped, but the order it is used in may affect whether it works as desired.  Try using multiple formatting tags in a different order or check the help if you have trouble.
+
+'''<span color="red">''Important!''</span> The wiki's default font type, font colors, and font sizes should be used in almost all cases.'''
+
+{|
+|<bgcolor="#EDEDED">Style
+|<bgcolor="#EDEDED">Details
+|-
+|<( |2 30%>'''Bold'''
+|''Markup'': Place three apostrophes surrounding text to be bolded, without a space between markup and text.
+|-
+|''Example'': ```'''bold text'''``` generates '''bold text'''
+|-
+|<( |2 30%>''Italics''
+|''Markup'': Place two apostrophes surrounding text to be italicized, without a space between markup and text.
+|-
+|''Example'': ```''italics text''``` generates ''italics text''
+|-
+|<( |3 30%><code>Monospace</code>
+|''Markup'': Place a backtick on either side of the text, without a space between markup and text.
+|-
+|''Note'': This may resemble inline code (see below) in many cases, but will not usually behave the same.  It may, however, interfere with word wrapping, especially in tables.  It may be necessary to break up a long monospace string using extra markup to allow proper word wrapping.
+|-
+|''Example'': ```<code>monospace text</code>``` generates <code>monospace text</code>
+|-
+|<( |7 30%>```Code (or Verbatim Text)```
+|''Markup'': Use three curly brackets surrounding text to be rendered as code.
+|-
+|''Markup 1'': Place the brackets inline with the text to display the code formatting inline.
+|-
+|See ''[[#example1|Example 1]]'' below the table.
+|-
+|''Markup 2'': Place the brackets above and below the text to display the code formatting inside a box.
+|-
+|See ''[[#example2|Example 2]]'' below the table.
+|-
+|''Note'': Add ```c++``` immediately following the opening braces on the first line to automatically colorize as cpp code.
+|-
+|''Example'': see [[SDL_Event]]
+|-
+|<( |6 30%><span color="red">C</span><span color="orange">o</span><span color="yellow">l</span><span color="green">o</span><span color="blue">r</span><span color="indigo">e</span><span color="violet">d</span> <span color="brown">T</span><span color="pink">e</span><span color="grey">x</span><span color="purple">t</span> (Color2 macro)
+|<span id="color2"></span><span color="red">''Important!''</span> Please use colored text sparingly if at all. As a general convention we use <span color="blue">blue</span> to represent links (whether they actually behave as links or not), so please reserve that color for such purposes.
+|-
+|''Note'': We have the Color2 macro installed. It will colorize text inside or outside of tables.
+|-
+|''Markup'':```<<Color2(text to be colorized,colorname)>>``` where {{{colorname}}} may be most any simple color name like blue or red or green
+|-
+|''Note'': If ```text to be colorized``` must contain commas each section must be colorized separately, breaking at each comma.
+|-
+|See ''[[#example3|Example 3]]'' below table.
+|-
+|''Note'': There are other options for colorizing text (and backgrounds) within tables.  See [[#tables|Tables]] below for more info.
+|}
+
+<span id="example1"></span>
+: ''Example 1'':
+  ```{
+{{{Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap when parsed (this is more of an issue for smaller monitors) but will also not appear in a box.```
+}}}}
+: ''Generates''
+  ```Verbatim text as it should be typed, appear as code, or show markup. If it is too long for the line it will not wrap when parsed (this is more of an issue for smaller monitors) but will also not appear in a box.```
+
+<span id="example2"></span>
+: ''Example 2'':
+  ```{
+{{{
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line but it will also appear in a box.
+```
+}}}}
+: ''Generates''
+  ```
+Verbatim text as it should be typed, appear as code, or show markup. This will word-wrap if it is too long for one line but it will also appear in a box.
+```
+
+<span id="example3"></span>
+: ''Example 3'': 
+: ''Correct'' 
+  ```
+<<Color2("A sentence that contains commas, such as this one, must be quoted in order for the commas to appear correctly.",purple)>>
+```
+: ''Generates''
+: <<Color2("A sentence that contains commas, such as this one, must be quoted in order for the commas to appear correctly.",purple)>>
+
+More wiki markup for text formatting can be found at [https://wiki.libsdl.org/HelpOnFormatting HelpOnFormatting].
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+<span id="spacing"></span>
+=== Spacing ===
+Both vertical and horizontal spacing can be rendered differently depending upon the combination of formatting markup that is used.  If your formatting is not working out the way you want check the style guide information on other formatting that you have used nearby, especially the [[#lists|Lists]] section, that may be affecting how the local formatting is interpreted.
+ ''Example'': If you try to pick up a numbered list down the page after using indents/unnumbered lines at the same indent level, the next number in the numbered list may count the unnumbered lines or change format.
+: See [[#problems2|Some Known Problems and Solutions]] below for notes on known markup misbehavior and ways to try to circumvent it.
+
+
+<span id="break"></span>
+==== Hard Line Break ====
+''Markup'': ```<br/>```
+* Place the above markup wherever you want to force the following text onto the next line but keep it in the same paragraph.<br/>
+* ''Note'': You cannot change indent level immediately following a hard line break.  (The next line is still part of the same paragraph.)
+''Example'': Typing the following in the text editor 
+ ```
+  1 first line<<BR>>  2 this line typed on same line after hard line break markup, same indent<<BR>>   3 this line typed on same line after hard line break markup, +1 indent<<BR>>  4 this line typed on same line after hard line break markup, -1 indent<<BR>>  . 5 this line typed on same line after hard line break markup, same indent with period<<BR>>6 this line typed on same line after hard line break markup without any indent
+```
+   ''generates''
+: 1 first line<br/>  2 this line typed on same line after hard line break markup, same indent<br/>   3 this line typed on same line after hard line break markup, +1 indent<br/>  4 this line typed on same line after hard line break markup, -1 indent<br/>  . 5 this line typed on same line after hard line break markup, same indent with period<br/>6 this line typed on same line after hard line break markup without any indent
+
+
+<span id="indent"></span>
+==== Indenting ====
+''<span color="red">Important!</span>'' Indenting often leads to inadvertent creation of an unnumbered list.  Lists follow very limiting, sometimes difficult to figure out, rules.  See [[#lists|Lists]] below if your indenting is not working the way you think it should.
+
+''Markup'': Place blank spaces at the beginning of a line of text to create indents. (this line has 1 space)
+* Use one space for each indent level desired. (this line has 2 spaces)
+
+''Note'': Use a period (.) after the spaces and before the text (usually separated by a space after but not necessary) to ensure that the indent does not become a bullet or numbered list.  Note that this markup will sometimes resolve problems when the spacing from line to line is not what you expected. (this line has 2 spaces and a starting period)
+
+''Example'': ``` . This line starts with a period   ``` 
+  ''generates''<br/>
+: This line starts with a period
+
+
+<span id="vertical"></span>
+''Note'': Paragraph breaks and spaces between lines and paragraphs (which may be individual lines) are parsed with different spacing depending upon the context (especially relative indent level).  It may take some playing around with the markup to get the spacing you want, or it may be that you will have to accept a certain amount of pre-determined spacing between lines.
+
+''Example'': Typing the following in the text editor
+ ```
+ 1 hard return followed by next line same indent
+ 2 hard return followed by next line +1 indent
+  3 hard return followed by next line same indent using period
+  . 4 hard return followed by next line same indent, no period
+  5 hard return followed by next line -1 indent
+ 6 hard return after hard line break markup, followed by next line same indent<<BR>>
+ 7<<BR>> 8 next line typed on same line after hard line break markup, same indent
+
+ 9 next line typed after double Enter (1 blank line), same indent, no starting period
+
+ . 10 last line typed after double Enter (1 blank line), same indent, with starting period
+```
+  ''generates''
+: 1 hard return followed by next line same indent
+ 2 hard return followed by next line +1 indent
+  3 hard return followed by next line same indent using period
+: 4 hard return followed by next line same indent, no period
+  5 hard return followed by next line -1 indent
+ 6 hard return after hard line break markup, followed by next line same indent<br/>
+ 7<br/> 8 next line typed on same line after hard line break markup, same indent
+
+ 9 next line typed after double Enter (1 blank line), same indent, no starting period
+
+: 10 last line typed after double Enter (1 blank line), same indent, with starting period
+
+''Note'': To ensure that the next line is treated as a separate line (not necessarily a separate paragraph!) try the following:
+ a. use two consecutive hard returns (```Enter key```)
+  ~-''Note'': this will leave a larger space between lines (usually a double-space) but it is treated as a new paragraph-~
+ a. use a [[#break|hard line break]]
+ a. [[#indent|indent]] more (farther right)
+ a. use a [[#indent|period]] at the beginning of the line after indenting the same amount or less
+ a. [[#indent|indent]] less (farther left)
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="lists"></span>
+=== Lists ===
+<span color="red">''Important!''</span> Anything that interrupts a list, except a list item indented further right, will potentially end the list!  This may affect the indenting, count, or symbols if you try to restart the list below the interruption.  This may or may not be able to be overcome, so be careful with adding anything that interrupts a list!
+
+If you have trouble with lists see [[#problems2|Some Known Problems and Solutions]] below.
+
+__Unnumbered Lists__
+
+See [[#indent|Indenting]] above.
+
+
+__Bullet Lists__
+
+: ''Markup'': Begin a line with a space followed by an asterisk to create a bulleted line of text (space after asterisk is optional but seems to be preferred)
+
+: ''Example'': ```  * First line of bullet list```<br/>
+   ''Generates'':
+* First line of bullet list<br/>
+
+__Numbered Lists__
+
+ ''Markup'': Begin a line with a space followed by the number 1 and a period (or choose another number format such as i or a).
+
+ ''Note'': Each line that should be part of the list begins with the same starting number. The wiki will generate sequential numbers in preview mode or after saving.
+
+ ''Example'': 
+  ```
+ 1. First line of numbered list
+ 1. Second line of numbered list
+```
+
+: ''Generates'':
+: 
+  1. First line of numbered list
+  1. Second line of numbered list
+
+More wiki markup for lists can be found at [https://wiki.libsdl.org/HelpOnLists HelpOnLists]
+
+
+<span id="hyperlinks"></span>
+=== Hyperlinks ===
+<span color="red">''Important!''</span>  Although this wiki automatically creates some hyperlinks, in most cases for the SDL functions, enumerations, and structures it is unable to interpret the text correctly so we have disabled automatic linking via CamelCase recognition using the following markup at the top of every page:
+ ```
+#pragma camelcase off
+```
+'''Therefore, it __is__ necessary for you to manually create most hyperlinks!'''
+: ''Note'': If a hyperlink is automatically created where you __don't__ want one check to ensure that this <code>#pragma</code> markup is correct at the top of the page.  If it is not, please correct or add it.  This should resolve the issue if it is related to CamelCase text.
+
+''Action'':
+{|
+|<( |3 30%>''If'' you reference something that __has a page in the wiki__
+|''Action'': With extremely rare exception, always create a hyperlink to any existing API page.  It is preferable to create a link to any page in the wiki that is referenced whether an API page or not.
+|-
+|''Note'': Include () after a function name, outside the link, except in the Related Functions section of a page.  Do not use parens for structures or enumerations.
+|-
+|See the [[#linktype|next table]] for how to create different links.
+|-
+|<( |2 30%>''If'' you reference something that __does not have a page__ in the wiki
+|''Action'': Do not create hyperlinks to pages that do not already exist unless you are 100% sure the page will exist very soon after creating the link.
+|-
+|''Hint'': If you are unsure whether a page exists check the [[CategoryAPI|API By Name]] page or try typing it into the browser.
+|-
+|<( |2 30%>''If'' you reference an __outside page or email address__
+|''Action'': In most cases the wiki will automatically create the link for you.
+|-
+|''Note'': See the [[#linktype|next table]] for options.
+|}
+
+
+<span id="linktype"></span>
+{|
+|<bgcolor="#EDEDED">Type of link
+|<bgcolor="#EDEDED">How to create it
+|-
+|<( |3 30%>Link to another page __within the wiki__
+|''Markup'': Enclose the page name in double brackets:<br/> ```[[pagename]]```
+|-
+|''Note'': It is not necessary to include the wiki address ```https://wiki.libsdl.org/``` for intra-wiki pages.
+|-
+|''Example'':  ```[[SDL_VideoInit]]()``` generates [[SDL_VideoInit]]()
+|-
+|<( 30%>Link to an __outside page or email address__
+|''Markup'': Type or paste in the address.  The wiki should auto-recognize and link these standard forms.
+|-
+|<( |3 30%>Link with __alternate link text__
+|''Markup'': Enclose the standard address (as above) followed by a pipe and the alternate link text in double brackets to create linked text that is different from the actual address.
+|-
+|''Example'': ```[[normal link address|alternate text]]``` produces [[normal link address|alternate text]]
+|-
+|''Note'': Alternate link text is generally optional but preferred in most cases other than API page links to make the link cleaner, shorter, and/or to make it more desirable grammatically than the actual address.
+|-
+|<( |2 30%>Link __referencing the header files__
+|''<span color="red">Important!</span>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
+|-
+|''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h so the link always points to the most current file.
+|-
+|<( |3 30%>Link to an __anchor__ (or most any unique text) __on the same page__
+|''Markup'': ```[[#anchorname|link text]]``` where {{{anchorname}}} is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{link text}}} is the text that will actually appear as the link.
+|-
+|''Example'': ```[[#hyperlinks|how to hyperlink]]``` creates [[#hyperlinks|how to hyperlink]] (try clicking the link to see it in action)
+|-
+|''Note'': In the case of anchors it is important to use the alternate text, even if it is identical to the anchor name, to make the link look nice.  Without it the # appears in the link.
+|-
+|<( |2 30%>Link to an __anchor on another page__
+|''Markup'': Insert the page address before the # in the address section of an anchor link.<br/>```[[address#anchor|optional alternate text]]```
+|-
+|''Example'': ```[[Contributing#guides|Style Guides]]``` creates the following link with alternate text and that takes you to that anchor on the other page:<br/> [[Contributing#guides|Style Guides]]
+|}
+
+More wiki markup for tables can be found at [https://wiki.libsdl.org/HelpOnLinking HelpOnLinking]
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="anchors"></span>
+==== Anchors ====
+''Markup'': ```<span id="anchorname"></span>```
+* Place the above markup in the location where you wish to create an anchor, replacing ```anchorname``` with a word (or phrase) of your choosing that has meaning in that application.  Short but clear names are usually best. 
+* Anchors will not appear on the saved page or take space on the page but can be referenced in [[#hyperlinks|hyperlinks]].
+''Example'': ```<span id="hyperlinks"></span>``` creates an anchor called hyperlinks that could be located at the beginning of a section related to hyperlinks.
+
+''Note'': In some cases you cannot place anchor markup on the same line as other text, such as headings, without affecting the formatting following the anchor.  It is preferable to place the anchor markup on its own line to avoid these conflicts.
+
+''Note'': It is best to place your anchor on the line ''above'' the beginning of the section you are marking with the anchor.  This is because the next line after the anchor will be aligned with the top of the viewing window when it is used.  If the anchor is below something like a heading the heading will be off screen when the anchor is used.  The exception to this is if the anchor is very close to the bottom of the page, in which case it will be moved as close to the top of the screen as possible.
+
+''Note'': Anchors can be used in tables but must follow any table formatting markup in order to not disturb the table format.  Also, the anchor jump point will align with the parsed formatting so put it at the highest point in a row if you wish the whole row to appear on the screen when the anchor is used. See the 2nd and 3rd ''If''s of the Function Parameters section of the [[SGFunctions#Function_Parameters|Function Pages Style Guide]] for an example.  (If the anchor was in the left column it would jump to the top of the vertically centered text when used, leaving half of the content off the top of the screen.)
+
+More (but not much) wiki markup for anchors can be found at [https://wiki.libsdl.org/HelpOnLinking HelpOnLinking] and [https://wiki.libsdl.org/HelpOnMacros HelpOnMacros].
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+
+<span id="tables"></span>
+=== Tables ===
+''Action'': To create a basic table with default spacing and styling.
+
+''Markup'': Two pipes (||) are used to begin and end a table row, with two pipes separating each cell in between.
+: ''<span color="red">Important!</span>'' There can be no blank spaces or other characters after the closing pipes on a line.
+
+''Example'': 
+ ```
+||row 1 column 1||row 1 column 2||row 1 column 3||
+||row 2 column 1||row 2 column 2||row 2 column 3||
+```
+  ''Generates'':
+ ||row 1 column 1||row 1 column 2||row 1 column 3||
+ ||row 2 column1||row 2 column 2||row 2 column 3||
+
+
+''Action'': To create non-default formatting in tables place any of the following markup within <> at the beginning of the cell, row, column, or table to be formatted.  
+* All formatting markup can be placed within the same <>, separated by spaces.
+* If markup conflicts the last option in the list wins.
+
+''Markup 1'': 
+: ''If'' you know CSS formatted <code>style</code> markup you can append most any common formatting into the ```<style="...">``` markup to create table formatting.  You can also use <code>class</code> markup to some extent.  
+: See [https://wiki.libsdl.org/HelpOnTables Help On Tables] for details.
+
+''Markup 2'': 
+: ''If'' you would prefer to use the wiki markup or do not know CSS styles see the table below.
+
+{|
+|
+|<rowbgcolor="#EDEDED">''Colors''
+|-
+|<( |4 30%>To colorize __text in a cell__
+|''Markup 1'': use <span color="red">C</span><span color="blue">o,orange)>><<Color2(l,yellow)>><<Color2(o,green)>><<Color2(r</span><<Color2(e,indigo)>><<Color2(d,violet)>> <<Color2(T,brown)>><<Color2(e,pink)>><<Color2(x,grey)>><<Color2(t,purple)>> described [[#formatting|above]]
+|-
+|''Markup 2'': ```style="color: #XXXXXX;"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|<style="color:#339933;">''Example'': this cells began with ```<style="color:#339933;">```
+|-
+|''Note'': ''Markup 2'' can only be used to colorize all of the text within a cell.  See ''Markup 1'' to colorize only some text in a cell.
+|-
+|To set __cell background color__
+|''Markup'': ```bgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|<( |2 30%>To set __row background color__
+|''Markup'': ```rowbgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|''Note'': This is only valid in the first cell of a row
+|-
+|<( |2 30%>To set __table background color__
+|''Markup'': ```tablebgcolor="#XXXXXX"```<br/>where <code>XXXXXX</code> is a hexadecimal color code
+|-
+|''Note'': This is valid in the first cell of the table
+|-
+|
+|<rowbgcolor="#EDEDED">''Alignment''
+|-
+|<( |2 30%>To control __horizontal text alignment__
+|''Markup'':<br/>left = (<br/>centered = ''':'''<br/>right = )
+|-
+|''Example'': The first column in this table uses ( 
+|-
+|<( |2 30%>To control __vertical text alignment__
+|''Markup'':<br/>top = ^<br/>bottom = v
+|-
+|''Note'': middle is the default so there is no markup for it.
+|-
+|
+|<rowbgcolor="#EDEDED">''Sizes''
+|-
+|<( |2 30%>To control __table width__
+|''Markup'': ```tablewidth="x%"``` where 0 < x < 100
+|-
+|''Note'': This is only valid in the first cell of the table.
+|-
+|<( |3 30%>To control __column width__
+|''Markup'': In the column you wish to control, use ```x%``` or {{{width="x%"}}} where 0 < x < 100.
+|-
+|''Note'': The remaining columns will auto-balance using the remaining percentage of table width and the size of the cell contents.  (It may be the case that setting the column width in one cell will affect the whole table.  I have not tested this extensively.)
+|-
+|''Example'': This table uses <code>30%</code> in the first column
+|-
+|<rowbgcolor="#EDEDED" : -2>''Spanning''
+|-
+|<( |3 30%>To cause a cell to __span multiple rows__
+|''Markup'': ```|x``` where x is the number of rows to span including the first
+|-
+|''Note'': When creating the table, the cell(s) in the first row to span should be included on the same line as the spanning cell as usual.  Each additional row should be on it's own table line, omitting the spanning cell.
+|-
+|''Example'': Go into <span color="blue">Edit (Text)</span> mode and look at most any of the tables in this document.
+|-
+|<( |7 30%>To cause a cell to __span multiple columns__
+|''Markup 1'': Create empty cells at the beginning of the row equaling the number of cells to skip/span, then place your text in the last cell of that row.
+|-
+|''Example'': ```
+|
+|
+|cell spanning 3 columns
+|```; grey "Sizes" cell in this table
+|-
+|''Note'': Total number of columns should equal that of the table.
+|-
+|''Note'': Centers text in the spanning row by default.
+|-
+|''Markup 2'': Use ```-x``` where x is the number of columns to span including the first
+|-
+|''Example'': ```
+|<-3>text spanning 3 columns
+|```; grey "Spanning" cell in this table
+|-
+|''Note'': Left justifies text in the spanning row by default.
+|}
+
+
+More wiki markup for tables can be found at [https://wiki.libsdl.org/HelpOnTables HelpOnTables]
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="headers"></span>
+=== Section Headings ===
+''Markup'': Use 1 to 5 equals signs (=) surrounding header text, with a space between markup and text.
+* One equals sign is the highest level heading (largest)
+: ''Example'': = Title =<br/>
+: ''Note'': In this wiki a level 1 heading is reserved for the title of the page
+* Five equals signs is the lowest level heading (smallest) 
+: ''Example'': ===== Minor =====
+
+''<span color="red">Important!</span>'' Heading lines must stand alone with no other markup on the same line or within the heading.
+
+''Example'': ```== Some Wiki Markup Basics ==```
+
+''Note'': All level 2 and lower headings will appear in an automatically generated [[#contents|Table of Contents]].  
+
+More (but not much) wiki markup for headings can be found at [https://wiki.libsdl.org/HelpOnHeadlines HelpOnHeadlines].
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="contents"></span>
+=== Table of Contents ===
+''Markup'': ```<<TableOfContents()>>```
+: Place this markup on the page where you want a Table of Contents to appear.  There should be no other markup on the same line.
+
+''Note'': All level 2 and lower headings will be included by default.  The numbering scheme is set by a <code>#pragma</code> and, in most cases, should not be changed. 
+
+<!-- #To include an embedded ToC or otherwise limit which headings a ToC shows use standard ToC syntax but include comma-separated values to limit heading levels that are listed instead of empty parens (eg: <<TableOfContents(3)>> lists up to level 3 but not 1 or 2).  First # is highest level, 2nd number is lowest level to include. (ie: 2,4 includes levels 2-4.) -->
+
+
+
+<span id="include"></span>
+=== Includes ===
+An include enables you to dynamically copy all or a portion of a page onto another page, allowing changes to one page (source) to be automatically updated on another page (recipient).  This is especially useful for listing enumeration values for a function parameter on the function page, for example.
+
+''<span color="red">Important!</span>'' While very few pages have includes, it is important to scan over the source page for existing include markup before creating a new include.  More than one set of include markup on a source page will cause conflicts on all pages using that source.  See the table below to determine the best course of action.
+
+''<span color="red">Important!</span>'' Includes should be used sparingly in this wiki.  It is only appropriate to copy page content using an Include if it is critical that the content remain up to date on the recipient page if the source page changes.  In many cases it is better to do a one time copy and paste operation instead.
+
+''Note'': Please choose the source page carefully.  It should reflect the most primary version of the copied information.  (For example, you should use the actual enumeration page as the source rather than another function page that also references the enumeration details.)  
+
+''Markup'': To create an Include is a 3 step process:
+ ''Action 1'': __On the recipient page__ place the following markup, verbatim, in the location where you wish the copied content to begin.
+* Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
+  ```
+<<Include(<PageName>, , , from="Start Include here.", to="##End Include here.")>>
+```
+: ''Example'': To copy content from [[SDL_GLattr]]
+   ```<<Include(SDL_GLattr, , , from="Start Include here.", to="##End Include here.")>>```
+: ''Example'': See the Remarks section of [[SDL_GetRevision]]()  or the Return Value section of [[SDL_MasksToPixelFormatEnum]]() in the text editor.
+
+ ''Action 2'': __On the source page__ place the following markup, verbatim, on the line immediately ''before'' the point where you wish to begin the include (to start copying content).
+* Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup and () after functions should be left out.
+  ```
+##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.
+```
+: ''Example'': If this include will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() the comment on the source page should read:
+   <code>#</code><code>#</code><code>The</code> <code>following</code> <code>content</code> <code>is</code> <code>included</code> <code>on</code> <code>SDL_GL_GetAttribute</code> <code>and</code> <code>SDL_GL_SetAttribute.</code>  <code>Any</code> <code>changes</code> <code>between</code> <code>these</code> <code>comments</code> <code>will</code> <code>be</code> <code>reflected</code> <code>there</code> <code>as</code> <code>well.</code>  <code>Please</code> <code>use</code> <code>caution</code> <code>when</code> <code>editing.</code>  <code>Start</code> <code>Include</code> <code>here.</code>
+: ''Example'': See the Remarks section of [[SDL_REVISION]] or Pixel Format Values on [[SDL_PixelFormatEnum]] in the text editor.
+
+ ''Action 3'': __On the source page__ place the following markup, verbatim, on the line immediately ''after'' the point where you want to end the include (to stop copying content).
+  ```
+##End Include here.
+```
+: ''Example'': See the Remarks section of [[SDL_REVISION]] or Pixel Format Values on [[SDL_PixelFormatEnum]] in the text editor.
+
+''Note'': Includes are very literal.  All content between the two <code>##comments</code>, beginning with the character immediately following "<code>Start Include here.</code>" and ending with the character immediately before "<code>##End...</code>", will be copied onto the recipient page, so be careful that you intend to include ''all'' content!
+
+{|
+|<( 30%>''If'' a source page __does not already have an include on it__
+|''Action 1'': Follow the instructions above to create a new include.
+|-
+|<( 30%>''If'' a source page has an __existing Include that already contains the content that you need__ to include on another page
+|''Action'': Use ''Action 1'' above, add the name of the new recipient page to the existing markup on the source page (see ''Action 2'' above), and skip ''Action 3''.
+|-
+|<( |2 30%>''If'' a source page has an __existing Include that does not contain the content that you need__ to include on another page
+|''Action'': See ''Alternative Markup: Action A-C'' below.
+|-
+|''Note'': It is exceedingly rare to need more than one include on a page and should be avoided if at all possible.
+|-
+|<( |2 30%>''If'' you want to __create an include using more than one continuous section__ on the source page (copying separate blocks)
+|''Action'': See ''Alternative Markup: Action A-C'' below.
+|-
+|''Note'': It is exceedingly rare to need more than one include on a page and should be avoided if at all possible.
+|}
+
+''Alternative Markup'': For pages needing more than one Include use the following:
+ ''Action A'': __On the recipient page__ place the following markup, verbatim, in the location where you wish the copied content to begin.
+* Replace <code><PageName></code> with the name of the page to copy from (the source page where the original content is located).
+* Replace X (at the end of the <code>from=</code> parameter) with a number.
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+  ```
+<<Include(<PageName>, , , from="Start Include here.X", to="##XEnd Include here.")>>
+```
+: ''Example'': To copy a second block of content from [[SDL_GLattr]]
+   ```<<Include(SDL_GLattr, , , from="Start Include here.2", to="##2End Include here.")>>```
+
+ ''Action B'': __On the source page__ place the following markup, verbatim, on the line immediately ''before'' the point where you wish to begin the additional include (to define the start of a different block of content).
+* Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup should be left out.
+* Replace X (at the end) with a number.  
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+
+  ```
+##The following content is included on `<PageName>`.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here.X
+```
+: ''Example'': If this is the 2nd include on the source page and will be used on [[SDL_GL_GetAttribute]]() and [[SDL_GL_SetAttribute]]() recipient pages the comment on the source page should read:
+   <code>#</code><code>#</code><code>The</code> <code>following</code> <code>content</code> <code>is</code> <code>included</code> <code>on</code> <code>SDL_GL_GetAttribute</code> <code>and</code> <code>SDL_GL_SetAttribute.</code>  <code>Any</code> <code>changes</code> <code>between</code> <code>these</code> <code>comments</code> <code>will</code> <code>be</code> <code>reflected</code> <code>there</code> <code>as</code> <code>well.</code>  <code>Please</code> <code>use</code> <code>caution</code> <code>when</code> <code>editing.</code>  <code>Start</code> <code>Include</code> <code>here.</code><code>2</code>
+
+ ''Action C'': __On the source page__ place the following markup, verbatim, on the line immediately ''after'' the point where you want to end the include (to stop copying content).
+* Replace X (at the beginning) with a number.
+: The second include on a page should use the number 2 for all occurrences of X.  Increment the number as necessary if more includes are used on a single source page.  ~-(This should not occur often if at all!)-~
+  ```
+##XEnd Include here.
+```
+: ''Example'': If this is the 2nd include on the source page it should read:
+   ```##2End Include here.```
+
+''<span color="red">Important!</span>'' Please send ''Feedback'' or email us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> with the names of the source and recipient page(s) so we can keep track of where the includes in the wiki are.
+: ''Note'': The use of hidden comments to create include tags is deliberate.  This include markup has been carefully crafted to not only be reliable if used correctly (per these instructions), but also to enhance traceability for maintenance purposes and to make it easier for others to edit without causing problems on pages without realizing it.  If you are going to create an include, please follow these guidelines precisely and write to us if you have any trouble.  We'd greatly appreciate it.
+
+See [https://wiki.libsdl.org/HelpOnMacros/Include HelpOnMacros/Include] for details if a different include becomes necessary.
+
+<!-- #The basic Include format is <<Include(pagename, heading, level, from="regex", to="regex", sort=ascending|descending, items=n, skipitems=n, titlesonly, editlink)>> -->
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+
+<span id="problems"></span>
+=== Some Known Problems and Solutions ===
+While creating this wiki we encountered several formatting challenges.  This section reflects some of the solutions that we discovered in the process.  Hopefully you will find them helpful if you encounter these same difficulties.  Please note that updates to the wiki or various add-ons may change these at any time.
+
+<span id="problems1"></span>
+{|
+|
+|<bgcolor="#EDEDED">''Problem Category'': Vertical spacing isn't working properly
+|-
+|<( |3 30%>''Problem'': My text is on another line in the editor but grouped with the previous line in the preview/saved version
+|''Cause'': Using a hard return (Enter key) at the end of a line is often '''not''' parsed as a line break.
+|-
+|''Solution 1'': Press the Enter key ''twice'' to put a space between paragraphs
+|-
+|''Solution 2'': Use a [[#break|Hard Line Break]].
+|-
+|<( |5 30%>''Problem'': There is too much/little space between lines of text
+|''Cause'': Most of the vertical spacing in this wiki is fixed and is determined based on other formatting choices.
+|-
+|''Solution'': You can force __additional__ space between lines of text using [[#break|Hard Line Breaks]].
+|-
+|''Note'': You '''cannot''' force __less__ space between lines of text in separate paragraphs.  The only option for keeping lines of text close together is to use [[#break|Hard Line Breaks]] to keep lines within a paragraph.
+|-
+|<span color="red">''Important!''</span> There are limits to how you can change formatting within a paragraph.
+|-
+|''Note'': Indenting can affect vertical spacing.  See ''[[#vertical|Note]]'' above for details.
+|}
+<span id="problems2"></span>
+{|
+|
+|<bgcolor="#EDEDED">''Problem Category'': My list isn't working properly
+|-
+|<( |9 30%>''Problem'': The __numbering__ in my list started over
+|''Cause'': Most likely your numbering restarted because something broke the list into two parts.
+|-
+|''Solution 1'': Remove the interfering item or change it's indent to be subordinate in the list (add more spaces to indent more).
+|-
+|''Note'': This is the most successful solution.
+|-
+|''Solution 2'': Try forcing a new starting number/letter.
+|-
+|''Markup'': place <code>#value</code>, where # is the hash symbol and <code>value</code> is a number (like 2, 3, 4...; '''not''' the character you want), immediately after the starting numbering markup.
+|-
+|''Example'': ``` 1.#4 text``` should force the list item to begin with the number 4.<br/>{{{a.#4 text}}} should force the list item to begin with the letter d.
+|-
+|<span color="red">''Important!''</span> This fix does not always work!!!
+|-
+|''Solution 3'': Put a blank line (Enter key) between list items and then force a number (or other sequential) value by using the ''Markup'' from ''Solution 2'' above.
+|-
+|''Example'': See the Basic Format section of [[SGTutorials#Basic_Format|SGTutorials]] then go into edit mode to see the markup.
+|-
+|<( |4 30%>''Problem'': The __indenting__ of my next list item is wrong
+|''Cause'': The list is interrupted by another item (like a box of code) with __less indent__ (farther left) than the previous line of the list
+|-
+|''Result'': The interfering block forces the end of a list so the list begun after it is treated as a new list.  It also seems to default to a first level indent after an interruption of this type regardless of the number of spaces you actually put before your next line.
+|-
+|''Solution'': One __possible__ workaround is to place a blank line containing a ```space(s) period space``` ( . ) between the interfering content and the next line.<br/>~-''Note'': This seems to allow the wiki parser to interpret the indent count on the next line correctly but likely won't continue the list.  It does not always work!-~
+|-
+|''Note'': It may be necessary to indent one level ''less'' (farther left) than the line that is not being parsed correctly.  For example, if you want a line following an interruption to be at 3 indents, put the space-period-space fix immediately above it at 2 indents (ie: ```space space period space;  . ```).
+|-
+|<( |2 30%>''Problem'': I want to use a __mixed list__ where bullets follow numbers on the same indent level (or similar) but it just keeps numbering
+|''Cause'': This wiki seems to parse lists based on how they start and where they end.  If they are not broken/ended it seems to ignore the actual intervening markup (except usually lines starting with a period).
+|-
+|''Solution'': The same workarounds as above may or may not be able to resolve this issue as well.  Your goal is to end one list and begin the next with new formatting.  You may have to try several tricks to make this happen.
+|}
+
+<span color="red">''Important!''</span> Some list breaks cannot currently be fixed without major formatting compromises so you should be very careful when interrupting a list as it may force formatting you will not want.
+
+See [http://moinmo.in/MoinMoinBugs/MixedNumberedAndUnorderedLists?highlight=%28lists%29 Mixed Lists] for some discussion and examples of problems.<br/>~-''Note'': The contents at this link may change at any time and this link may not always be up to date.-~
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+------
+
+
+
+== Miscellaneous Notes ==
+
+
+=== Other Help ===
+Some other wiki help that might be of interest or helpful to find quickly:
+:[https://wiki.libsdl.org/HelpIndex Help Index]
+:[https://wiki.libsdl.org/HelpOnMoinWikiSyntax Help On Moin Wiki Syntax]
+:[https://wiki.libsdl.org/HelpOnFormatting Help On Formatting]
+:[https://wiki.libsdl.org/HelpOnEditing Help On Editing]
+:[https://wiki.libsdl.org/HelpOnSmileys Help On Smileys]
+:[https://wiki.libsdl.org/HelpOnAdmonitions Help  On  Admonitions]
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+
+<!-- #This section is for Sheena's use only -- -->
+<!-- #Markup for pages that need to be deleted by Sam: -->
+<!-- #||<: tablewidth="100%"><<Color2(THIS FUNCTION HAS BEEN REMOVED FROM THE API.,purple)>><br/><<Color2(THIS PAGE WILL BE DELETED.,purple)>>|| -->
+<!-- #Markup for draft pages: -->
+<!-- #<span color="red">'''DRAFT'''</span> -->
+<!-- #Markup for Resources and Disclaimer section on SG pages (remove backticks): -->
+<!-- #<<Include(SGWikiBasics, , , from="Start SG<code></code> Include here.", to="##End SG<code></code> Include here.")>> -->
+
+
+
+<!-- #The following content is included on ***EVERY SG PAGE***.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  DO NOT change the following )-> Start SG Include here. -->
+== Resources ==
+
+Our goal is to create accurate, consistent, helpful, user-friendly documentation.  We appreciate your efforts to make your additions fit into the existing framework and retain the same look and feel as much 
+as possible.
+
+If you have questions that aren't addressed here:
+ a. Search for another page that contains something similar to what you want to do and copy all the basics as much as applicable.  
+ a. Check the other SDL [[Contributing#guides|Style Guides]].
+ a. Post a question to [[Contributing#form|Feedback]] and include a way to contact you.
+ a. Post a question to the [[Contributing#list|Mailing List]].
+ a. Send a comment or question to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact us with your thoughts.  We are happy to have the participation!
+
+== Disclaimer ==
+```#!wiki note
+All content modifications are subject to review for consistency and quality.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+```
+
+<!-- #End SG Include here.  <-( DO NOT change the preceding.  Reminder: This include is applied on __every other SG page__ and should be edited carefully with that in mind.  (Note that this is slightly different from other includes because of the above include instructions which confuse the pattern recognition.) -->

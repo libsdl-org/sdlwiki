@@ -1,0 +1,20 @@
+= FAQ: iOS =
+
+
+== Using SDL ==
+=== General ===
+==== What is supported? ====
+
+SDL 2.0.0 supports iOS 5.1.1 or newer. Older versions of SDL support iOS 3.1.3 or newer.
+
+For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
+
+== Developing with SDL ==
+=== General ===
+==== I'm getting EXC_BAD_ACCESS in the function _class_getMeta, what do I do? ====
+
+Go to the Xcode menu Project -> Edit Project Settings, scroll down to the Linking section, and add -ObjC to the "Other Linker Flags" option.  If you have target specific settings for your linker flags, you'll need to add this at the target level instead, by right clicking the target and selecting the "Get Info" menu option.
+
+==== Why does my application quit at the loading screen on systems running iOS 3.1? ====
+
+These devices are probably using the ARMv6 architecture instead of the ARMv7 architecture.  Try changing your "Active Architecture" to ARMv6 in the Xcode main project window.

@@ -1,0 +1,281 @@
+
+= SDL_PixelFormatEnum =
+An enumeration of pixel formats.
+
+
+== Values ==
+=== Pixel Format Macros ===
+{|
+|SDL_PIXELTYPE(format)
+|the type of the pixel format; see [[#type|Remarks]] for details
+|-
+|SDL_PIXELORDER(format)
+|the ordering of channels or bits in the pixel format; see [[#order|Remarks]] for details
+|-
+|SDL_PIXELLAYOUT(format)
+|the channel bit pattern of the pixel format; see [[#layout|Remarks]] for details
+|-
+|SDL_BITSPERPIXEL(format)
+|the number of bits of color information in the pixel format
+|-
+|SDL_BYTESPERPIXEL(format)
+|the number of bytes used to represent a pixel
+|-
+|SDL_ISPIXELFORMAT_INDEXED(format)
+|true for pixel formats that have a palette
+|-
+|SDL_ISPIXELFORMAT_ALPHA(format)
+|true for pixel formats that have an alpha channel
+|-
+|SDL_ISPIXELFORMAT_FOURCC(format)
+|true for pixel formats representing unique formats, for example YUV formats
+|}
+
+=== Pixel Format Values ===
+<!-- #The following content is included on to SDL_RendererInfo, SDL_CreateTexture, SDL_RenderWritePixels, SDL_RenderReadPixels, SDL_QueryTexture, SDL_CreateTextureFromSurface, SDL_AllocFormat.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
+{|
+|SDL_PIXELFORMAT_UNKNOWN
+|
+|-
+|SDL_PIXELFORMAT_INDEX1LSB
+|
+|-
+|SDL_PIXELFORMAT_INDEX1MSB
+|
+|-
+|SDL_PIXELFORMAT_INDEX4LSB
+|
+|-
+|SDL_PIXELFORMAT_INDEX4MSB
+|
+|-
+|SDL_PIXELFORMAT_INDEX8
+|
+|-
+|SDL_PIXELFORMAT_RGB332
+|
+|-
+|SDL_PIXELFORMAT_RGB444
+|
+|-
+|SDL_PIXELFORMAT_RGB555
+|
+|-
+|SDL_PIXELFORMAT_BGR555
+|
+|-
+|SDL_PIXELFORMAT_ARGB4444
+|
+|-
+|SDL_PIXELFORMAT_RGBA4444
+|
+|-
+|SDL_PIXELFORMAT_ABGR4444
+|
+|-
+|SDL_PIXELFORMAT_BGRA4444
+|
+|-
+|SDL_PIXELFORMAT_ARGB1555
+|
+|-
+|SDL_PIXELFORMAT_RGBA5551
+|
+|-
+|SDL_PIXELFORMAT_ABGR1555
+|
+|-
+|SDL_PIXELFORMAT_BGRA5551
+|
+|-
+|SDL_PIXELFORMAT_RGB565
+|
+|-
+|SDL_PIXELFORMAT_BGR565
+|
+|-
+|SDL_PIXELFORMAT_RGB24
+|
+|-
+|SDL_PIXELFORMAT_BGR24
+|
+|-
+|SDL_PIXELFORMAT_RGB888
+|
+|-
+|SDL_PIXELFORMAT_RGBX8888
+|
+|-
+|SDL_PIXELFORMAT_BGR888
+|
+|-
+|SDL_PIXELFORMAT_BGRX8888
+|
+|-
+|SDL_PIXELFORMAT_ARGB8888
+|
+|-
+|SDL_PIXELFORMAT_RGBA8888
+|
+|-
+|SDL_PIXELFORMAT_ABGR8888
+|
+|-
+|SDL_PIXELFORMAT_BGRA8888
+|
+|-
+|SDL_PIXELFORMAT_ARGB2101010
+|
+|-
+|SDL_PIXELFORMAT_RGBA32
+|alias for RGBA byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_ARGB32
+|alias for ARGB byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_BGRA32
+|alias for BGRA byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_ABGR32
+|alias for ABGR byte array of color data, for the current platform (>= SDL 2.0.5)
+|-
+|SDL_PIXELFORMAT_YV12
+|planar mode: Y + V + U (3 planes)
+|-
+|SDL_PIXELFORMAT_IYUV
+|planar mode: Y + U + V (3 planes)
+|-
+|SDL_PIXELFORMAT_YUY2
+|packed mode: Y0+U0+Y1+V0 (1 plane)
+|-
+|SDL_PIXELFORMAT_UYVY
+|packed mode: U0+Y0+V0+Y1 (1 plane)
+|-
+|SDL_PIXELFORMAT_YVYU
+|packed mode: Y0+V0+Y1+U0 (1 plane)
+|-
+|SDL_PIXELFORMAT_NV12
+|planar mode: Y + U/V interleaved (2 planes) (>= SDL 2.0.4)
+|-
+|SDL_PIXELFORMAT_NV21
+|planar mode: Y + V/U interleaved (2 planes) (>= SDL 2.0.4)
+|}
+<!-- #End Include here. -->
+
+
+== Remarks ==
+<span id="type"></span> The pixel type is one of the following values:
+{|
+|SDL_PIXELTYPE_UNKNOWN
+|-
+|SDL_PIXELTYPE_INDEX1
+|-
+|SDL_PIXELTYPE_INDEX4
+|-
+|SDL_PIXELTYPE_INDEX8
+|-
+|SDL_PIXELTYPE_PACKED8
+|-
+|SDL_PIXELTYPE_PACKED16
+|-
+|SDL_PIXELTYPE_PACKED32
+|-
+|SDL_PIXELTYPE_ARRAYU8
+|-
+|SDL_PIXELTYPE_ARRAYU16
+|-
+|SDL_PIXELTYPE_ARRAYU32
+|-
+|SDL_PIXELTYPE_ARRAYF16
+|-
+|SDL_PIXELTYPE_ARRAYF32
+|}
+
+<span id="order"></span> Depending on the pixel type there are three different types of orderings - bitmapped, packed, or array.
+{|
+|'''Bitmap pixel order''' (high bit -> low bit)
+|-
+|SDL_BITMAPORDER_NONE
+|-
+|SDL_BITMAPORDER_4321
+|-
+|SDL_BITMAPORDER_1234
+|-
+|'''Packed component order''' (high bit -> low bit)
+|-
+|SDL_PACKEDORDER_NONE
+|-
+|SDL_PACKEDORDER_XRGB
+|-
+|SDL_PACKEDORDER_RGBX
+|-
+|SDL_PACKEDORDER_ARGB
+|-
+|SDL_PACKEDORDER_RGBA
+|-
+|SDL_PACKEDORDER_XBGR
+|-
+|SDL_PACKEDORDER_BGRX
+|-
+|SDL_PACKEDORDER_ABGR
+|-
+|SDL_PACKEDORDER_BGRA
+|-
+|'''Array component order''' (low byte -> high byte)
+|-
+|SDL_ARRAYORDER_NONE
+|-
+|SDL_ARRAYORDER_RGB
+|-
+|SDL_ARRAYORDER_RGBA
+|-
+|SDL_ARRAYORDER_ARGB
+|-
+|SDL_ARRAYORDER_BGR
+|-
+|SDL_ARRAYORDER_BGRA
+|-
+|SDL_ARRAYORDER_ABGR
+|}
+
+<span id="layout"></span> Packed pixel formats have one of the following channel layouts:
+{|
+|SDL_PACKEDLAYOUT_NONE
+|-
+|SDL_PACKEDLAYOUT_332
+|-
+|SDL_PACKEDLAYOUT_4444
+|-
+|SDL_PACKEDLAYOUT_1555
+|-
+|SDL_PACKEDLAYOUT_5551
+|-
+|SDL_PACKEDLAYOUT_565
+|-
+|SDL_PACKEDLAYOUT_8888
+|-
+|SDL_PACKEDLAYOUT_2101010
+|-
+|SDL_PACKEDLAYOUT_1010102
+|}
+
+=== SDL_PIXELFORMAT_*32 aliases ===
+SDL_PIXELFORMAT_RGBA32 is an alias for SDL_PIXELFORMAT_RGBA8888 on big endian machines and for SDL_PIXELFORMAT_ABGR8888 on little endian machines, so you can use it to specify that your pixels are represented as RGBA byte arrays, like SDL_PIXELFORMAT_RGB24 is for RGB byte arrays. <br/>
+However, being just an alias, it has the exact same value of the aliased type so [[SDL_GetPixelFormatName]](SDL_PIXELFORMAT_RGBA32) will return the name of the aliased type (e.g. "SDL_PIXELFORMAT_ABGR8888"), depending on your platform.<br/>
+The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXELFORMAT_ABGR32 (with the only difference that they alias other pixel formats, of course). The SDL_PIXELFORMAT_*32 aliases are available since SDL 2.0.5.
+
+== Related Structures ==
+:[[SDL_DisplayMode]]
+:[[SDL_RendererInfo]]
+
+== Related Functions ==
+:[[SDL_CreateTexture]]
+:[[SDL_CreateTextureFromSurface]]
+:[[SDL_GetPixelFormatName]]
+:[[SDL_MasksToPixelFormatEnum]]
+:[[SDL_PixelFormatEnumToMasks]]
+:[[SDL_QueryTexture]]
+:[[SDL_RenderReadPixels]]
+
+----
+[[CategoryEnum]], [[CategoryPixels]]

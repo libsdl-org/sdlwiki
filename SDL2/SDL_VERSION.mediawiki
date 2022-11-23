@@ -1,0 +1,47 @@
+
+= SDL_VERSION =
+Use this macro to determine the SDL version your program was compiled against.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+SDL_VERSION(x)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''x'''
+|an [[SDL_version]] structure to initialize
+|}
+
+== Return Value ==
+Fills the selected struct with:
+: (x)->major = SDL_MAJOR_VERSION
+: (x)->minor = SDL_MINOR_VERSION
+: (x)->patch = SDL_PATCHLEVEL
+
+== Code Examples ==
+
+<syntaxhighlight lang='c'>
+SDL_version compiled;
+SDL_version linked;
+
+SDL_VERSION(&compiled);
+SDL_GetVersion(&linked);
+SDL_Log("We compiled against SDL version %u.%u.%u ...\n",
+       compiled.major, compiled.minor, compiled.patch);
+SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
+       linked.major, linked.minor, linked.patch);
+</syntaxhighlight>
+
+== Remarks ==
+This macro fills in an [[SDL_version]] structure with the version of the library you compiled against. This is determined by what header the compiler uses. Note that if you dynamically linked the library, you might have a slightly newer or older version at runtime. That version can be determined with [[SDL_GetVersion]]() which, unlike [[SDL_VERSION]](), is not a macro.
+
+== Related Structures ==
+:[[SDL_version]]
+
+== Related Functions ==
+:[[SDL_GetVersion]]
+
+----
+[[CategoryAPI]], [[CategoryVersion]]

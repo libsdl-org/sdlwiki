@@ -1,0 +1,135 @@
+
+= SDL API Contribution Style Guide =
+
+This guide provides instructions for adding your own content to the Code Examples or Remarks sections of the API pages in this wiki.
+
+
+== Before You Start ==
+
+Anyone may contribute '''Code Examples''' or '''Remarks''' per the instructions in this Style Guide.  Please check back periodically for updates.
+
+/!\ Due to spammers, write access to this wiki is disabled by default.  If you would like to contribute to this wiki, we welcome your contribution!  Just send an e-mail to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> so we can give you write access.
+
+If you would like to make other contributions beyond code examples and remarks, such as editing existing content or developing tutorials, please email <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> to coordinate efforts.
+
+== The Basics ==
+
+<!> '''Existing content, including markup, should not be modified or removed.'''
+
+=== Opening An Editor ===
+If a page can be edited you will see two options to choose from in the left column:
+ 1. <span style="color: blue;">Edit (Text)</span>
+  The Text editor provides more power/flexibility for editing than the GUI editor but requires that you know the wiki markup.  Use the Text editor to see the content with raw markup.  You will need to use the Preview feature to view the content as it will appear when saved.
+ (!) '''Specific markup instructions in this guide are for use with the Text editor but should also work in the GUI editor.'''
+ For information on wiki markup not included here, or other MoinMoin-specific questions, please see the [https://wiki.libsdl.org/HelpOnEditing wiki help documentation].
+
+ 1. <span style="color: blue;">Edit (GUI)</span>
+  The GUI editor provides buttons, much like a simple word processor, to add formatting markup such as bolding text, making a table, or creating a numbered list.  It is simpler to use than the Text editor but does not provide buttons for all the possible markup.  Use the GUI editor to see the content appear roughly as it would on the screen as you edit or if you do not know or want to use the wiki markup.
+ (!) The GUI editor is fairly self-explanatory; however, if you require further assistance, see [https://wiki.libsdl.org/HelpOnGraphicalEditor HelpOnGraphicalEditor] for more detailed instructions.
+
+Note that some formatting will appear slightly different in preview mode than on the finished screen.
+
+
+=== Saving Your Changes ===
+Before you save your changes please include a note in the Comment field below the editing box that summarizes what you have done.
+ ''Sample comments'': 
+* added comment to end of remarks
+* added code example to C++ section
+* remarked on use of function with [sound card model]
+
+{i} Especially when using the text editor, use the <span style="color: blue;">Preview</span> function in the left sidebar before saving your changes to ensure that the markup you have included is producing the desired result as well as to scan for errors in a different view.
+
+When you have completed adding your content and are satisfied with the formatting use the <span style="color: blue;">Save Changes</span> function in the left sidebar to save your changes.
+
+'''Automatic Backup of Drafts'''<br/>
+~-(copied from: [https://wiki.libsdl.org/HelpOnEditing Help On Editing])-~
+
+ Every time you are in the editor and use the "Preview", "Spell Check", "Cancel" or "Save Changes" buttons, moin saves a draft copy of your work internally. Use preview often!
+
+ If you hit "cancel" accidentally, your machine crashes, or the browser window was accidentally closed, then the automatic backup of your draft may be easily recovered.
+
+ To recover that draft, you simply edit that page again. If there is a draft, an alert message will be in the message box and a "load draft" button will be present. Clicking the "load draft" will load your saved draft into the editor box replacing the current revision already loaded. You can continue editing the loaded draft, but this time try to save it at the end. :)
+
+ (!) Don't use the "preview", "spell check", "save changes" or "cancel" buttons on that page before "load draft" or you will overwrite your old draft with a new one.
+
+ If you successfully save a page, the internal draft copy of it is not needed any more and will be deleted. 
+
+== The Specifics ==
+
+```#!wiki tip
+'''The following instructions apply to all API pages unless specifically noted.'''
+```
+
+=== Adding Code Examples ===
+The Code Examples section provides simple examples of real-world applications of the API.
+
+{OK} Please post code examples showing how you have used the API that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+
+* Code examples should have adequate comments to make them clear and useful.
+
+* If the Code Examples section is empty please replace<br/>```You can add your code example here```<br/>with your code.
+
+* If there are existing examples please add a new code box to the end of the examples section, or add your code to the end of a related group if there are many examples of various types.
+* To add a new code box insert the following into the spot where your example will be located:
+   ```{
+{{{#!highlight cpp
+ 
+```
+}}}}
+: ''Example'': [[SDL_Init]]()
+
+* All content should be added within this markup (on the blank line with the markup above and below your example content).
+
+<!> '''Do not remove or modify any existing code examples.'''
+
+* Please remember to keep it simple and easy to understand.
+
+=== Adding Remarks ===
+The Remarks section provides additional information related to other sections on the page as well as a location for users to add comments related to real-world application of the API.  
+
+{OK} Please post your appropriate remarks that may benefit other users.  
+* Do not post anything that you do not have permission to post publicly.
+
+* If the Remarks section is empty please replace<br/>```''You can add useful comments here''```<br/>with your remarks.
+
+* If there are existing remarks please add yours to the end, or to a related grouping if there are remarks covering the same topic.
+ ''Example'': [[SDL_MixAudio]]()
+
+<!> '''Do not remove or modify any existing remarks.'''
+
+* If your remark includes a reference to a function's parameter or structure's data field directly related to that page's topic use '''bold''' wherever the name is used.
+:''Markup'':  use 3 apostrophes surrounding the text for bold.
+    ```'''parameter'''``` = '''parameter'''
+: ''Example'': [[SDL_ConvertAudio]]()
+: ''Example'': [[SDL_AudioSpec]]
+* Do NOT use bold for enumeration value names.
+: ''Example'': [[SDL_GLattr]]
+: If your remark includes a reference to a parameter or data field in ''another'' function or structure than the one specifically discussed on that page (such as referencing a member of a structure on a function's page), use <code>monospace</code> wherever the name is used.
+:''Markup'':  use a single backtick surrounding the text for monospace.
+   ```<code>member</code>``` = <code>member</code>
+: ''Example'': [[SDL_OpenAudio]]()
+
+* Create hyperlinks if you reference an existing function, enumeration, or structure.
+  ~-''Note: Although the wiki will automatically create links in many cases, it does not recognize the SDL names correctly so you must manually hyperlink them.''-~<br/>
+:''Markup'':  use two brackets surrounding the page name (must be exact) for a link.
+   ```[[SDL_Function]]()``` = [[SDL_Function]]()
+: Include open and closed parentheses, outside of the hyperlink markup, after a function name. (see above)
+: Do not use parentheses for enumerations or structures.
+:```[[SDL_Enumeration/Structure]]```
+: ''Example'': [[SDL_BuildAudioCVT]]()
+
+
+== The Bottom Line ==
+Our goal is to create clean, consistent, helpful, user-friendly documentation.  Please try to make your changes or additions fit into the existing framework, and retain the same look and feel as much as possible.  
+
+When in doubt
+ a) look for another page that contains the same thing you want to do and copy all the basics as much as applicable.  
+ b) send a comment or question to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> for clarification.
+
+If you have suggestions for changes or additions to this document or any other portion of the wiki please don't hesitate to contact <<MailTo(ANTI SPAM docs AT libsdl DOT org)>> with your thoughts.  We are happy to have the participation!
+
+== Disclaimer ==
+```#!wiki note
+All content additions are subject to review.  We reserve the right to remove or modify any content added to this wiki at any time.  You may direct questions or concerns to <<MailTo(ANTI SPAM docs AT libsdl DOT org)>>.
+```

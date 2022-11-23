@@ -1,0 +1,59 @@
+= SDL_LogPriority =
+An enumeration of the predefined log priorities.
+
+
+== Values ==
+<!-- #The following content is included on <code>SDL_LogSetAllPriority, SDL_LogSetPriority, SDL_LogMessage, SDL_LogMessageV</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
+{|
+|SDL_LOG_PRIORITY_VERBOSE
+|
+|-
+|SDL_LOG_PRIORITY_DEBUG
+|
+|-
+|SDL_LOG_PRIORITY_INFO
+|
+|-
+|SDL_LOG_PRIORITY_WARN
+|
+|-
+|SDL_LOG_PRIORITY_ERROR
+|
+|-
+|SDL_LOG_PRIORITY_CRITICAL
+|
+|-
+|<row style="color: #808080;">SDL_NUM_LOG_PRIORITIES
+|(internal use)
+|}
+<!-- #End Include here. -->
+
+== Remarks ==
+<!-- # Start Include Default Priority -->
+The default log priorities are as follows:
+{|
+|<code>SDL_LOG_CATEGORY_APPLICATION</code>
+|<code>SDL_LOG_PRIORITY_INFO</code>
+|-
+|<code>SDL_LOG_CATEGORY_ASSERT</code>
+|<code>SDL_LOG_PRIORITY_WARN</code>
+|-
+|<code>SDL_LOG_CATEGORY_TEST</code>
+|<code>SDL_LOG_PRIORITY_VERBOSE</code>
+|-
+|everything else
+|<code>SDL_LOG_PRIORITY_CRITICAL</code>
+|}
+<!-- # End Include Default Priority -->
+
+If you're debugging SDL you might want to call:
+    SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);
+
+== Related Functions ==
+:[[SDL_LogMessage]]
+:[[SDL_LogMessageV]]
+:[[SDL_LogSetAllPriority]]
+:[[SDL_LogSetPriority]]
+
+----
+[[CategoryEnum]], [[CategoryLog]]

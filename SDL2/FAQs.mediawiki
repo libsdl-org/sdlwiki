@@ -1,0 +1,27 @@
+= SDL FAQs =
+
+{|
+|[[FAQGeneral|General]] 
+|General questions about SDL 
+|-
+|[[FAQUsingSDL|Using SDL]] 
+|Questions for people using SDL applications 
+|-
+|[[FAQLicensing|Licensing]] 
+|Questions about licensing SDL with products 
+|-
+|[[FAQDevelopment|Development]] 
+|General questions about developing with SDL 
+|-
+|[[FAQLinux|Linux]] 
+|Questions regarding SDL on Linux 
+|-
+|[[FAQWindows|Windows]] 
+|Questions regarding SDL on Windows 
+|-
+|[[FAQMacOSX|Mac OS X]] 
+|Questions regarding SDL on Mac OS X 
+|-
+|[[FAQiOS|iOS]] 
+|Questions regarding SDL on iOS
+|}

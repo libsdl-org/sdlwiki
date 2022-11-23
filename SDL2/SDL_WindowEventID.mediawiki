@@ -1,0 +1,135 @@
+= SDL_WindowEventID =
+An enumeration of window events.
+
+
+== Values ==
+{|
+|SDL_WINDOWEVENT_NONE
+|(never used)
+|-
+|SDL_WINDOWEVENT_SHOWN
+|window has been shown
+|-
+|SDL_WINDOWEVENT_HIDDEN
+|window has been hidden
+|-
+|SDL_WINDOWEVENT_EXPOSED
+|window has been exposed and should be redrawn
+|-
+|SDL_WINDOWEVENT_MOVED
+|window has been moved to data1, data2
+|-
+|SDL_WINDOWEVENT_RESIZED
+|window has been resized to data1xdata2; this event is always preceded by SDL_WINDOWEVENT_SIZE_CHANGED
+|-
+|SDL_WINDOWEVENT_SIZE_CHANGED
+|window size has changed, either as a result of an API call or through the system or user changing the window size; this event is followed by SDL_WINDOWEVENT_RESIZED if the size was changed by an external event, i.e. the user or the window manager
+|-
+|SDL_WINDOWEVENT_MINIMIZED
+|window has been minimized
+|-
+|SDL_WINDOWEVENT_MAXIMIZED
+|window has been maximized
+|-
+|SDL_WINDOWEVENT_RESTORED
+|window has been restored to normal size and position
+|-
+|SDL_WINDOWEVENT_ENTER
+|window has gained mouse focus
+|-
+|SDL_WINDOWEVENT_LEAVE
+|window has lost mouse focus
+|-
+|SDL_WINDOWEVENT_FOCUS_GAINED
+|window has gained keyboard focus
+|-
+|SDL_WINDOWEVENT_FOCUS_LOST
+|window has lost keyboard focus
+|-
+|SDL_WINDOWEVENT_CLOSE
+|the window manager requests that the window be closed
+|-
+|SDL_WINDOWEVENT_TAKE_FOCUS
+|window is being offered a focus (should [[SDL_SetWindowInputFocus]]() on itself or a subwindow, or ignore) (>= SDL 2.0.5)
+|-
+|SDL_WINDOWEVENT_HIT_TEST
+|window had a hit test that wasn't SDL_HITTEST_NORMAL (>= SDL 2.0.5)
+|-
+|SDL_WINDOWEVENT_ICCPROF_CHANGED
+|The ICC profile of the window's display has changed (>= SDL 2.0.18)
+|-
+|SDL_WINDOWEVENT_DISPLAY_CHANGED
+|The window has been moved to display data1. (>= SDL 2.0.18)
+|}
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+#include <stdlib.h>
+#include "SDL.h"
+
+int main(int argc, char *argv[])  {
+  int width = 640;
+  int height = 480;
+
+  if (SDL_Init(SDL_INIT_VIDEO) != 0)  {
+    return 1;
+  }
+  atexit(SDL_Quit);
+
+  SDL_Window* window = SDL_CreateWindow(
+    "Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+    width, height, SDL_WINDOW_RESIZABLE
+  );
+  Uint32 windowID = SDL_GetWindowID(window);
+
+  while (1)  {
+    SDL_Event event;
+    while (SDL_PollEvent(&event))  {
+      switch (event.type)  {
+
+        case SDL_WINDOWEVENT:  {
+          if (event.window.windowID == windowID)  {
+            switch (event.window.event)  {
+
+              case SDL_WINDOWEVENT_SIZE_CHANGED:  {
+                width = event.window.data1;
+                height = event.window.data2;
+                break;
+              }
+
+              case SDL_WINDOWEVENT_CLOSE:  {
+                event.type = SDL_QUIT;
+                SDL_PushEvent(&event);
+                break;
+              }
+
+            }
+          }
+          break;
+        }
+
+        case SDL_QUIT:  {
+          return 0;
+        }
+
+        /* ... */
+
+      }
+    }
+
+    /* ... */
+
+    SDL_Delay(1);
+  }
+}
+</syntaxhighlight>
+== Related Structures ==
+:[[SDL_WindowEvent]]
+
+== Related Functions ==
+:[[SDL_GetWindowFromID]]
+:[[SDL_GetWindowID]]
+
+----
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryEvents]]

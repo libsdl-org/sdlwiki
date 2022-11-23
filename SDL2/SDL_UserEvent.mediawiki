@@ -1,0 +1,58 @@
+
+= SDL_UserEvent =
+A structure that contains an application-defined event type.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|value obtained from [[SDL_RegisterEvents]]()
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|Uint32
+|'''windowID'''
+|the associated window, if any
+|-
+|Sint32
+|'''code'''
+|user defined event code
+|-
+|void*
+|'''data1'''
+|user defined data pointer
+|-
+|void*
+|'''data2'''
+|user defined data pointer
+|}
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+Uint32 myEventType = SDL_RegisterEvents(1);
+if (myEventType != ((Uint32)-1)) {
+    SDL_Event event;
+    SDL_memset(&event, 0, sizeof(event)); /* or SDL_zero(event) */
+    event.type = myEventType;
+    event.user.code = my_event_code;
+    event.user.data1 = significant_data;
+    event.user.data2 = 0;
+    SDL_PushEvent(&event);
+}
+</syntaxhighlight>
+
+== Remarks ==
+[[SDL_UserEvent]] is in the '''user''' member of the [[SDL_Event]] union. This event is unique; it is never created by SDL but only by the application. The event can be pushed onto the event queue using [[SDL_PushEvent]](). The contents of the structure members are completely up to the programmer; the only requirement is that '''type''' is a value obtained from [[SDL_RegisterEvents]]().
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Functions ==
+:[[SDL_PushEvent]]
+:[[SDL_RegisterEvents]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

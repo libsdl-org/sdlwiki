@@ -1,0 +1,37 @@
+
+= SDL_GLprofile =
+An enumeration of OpenGL profiles.
+
+
+
+== Values ==
+{|
+|SDL_GL_CONTEXT_PROFILE_CORE
+|OpenGL core profile - deprecated functions are disabled
+|-
+|SDL_GL_CONTEXT_PROFILE_COMPATIBILITY
+|OpenGL compatibility profile - deprecated functions are allowed
+|-
+|SDL_GL_CONTEXT_PROFILE_ES
+|OpenGL ES profile - only a subset of the base OpenGL functionality is available
+|}
+
+== Code Examples ==
+<syntaxhighlight lang='c++'>
+SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_ES);
+</syntaxhighlight>
+
+
+== Remarks ==
+This enumeration is used in conjunction with [[SDL_GL_SetAttribute]]() and [[SDL_GLattr|SDL_GL_CONTEXT_PROFILE_MASK]].  Although the name [[SDL_GLattr|SDL_GL_CONTEXT_PROFILE_MASK]] implies that multiple flags can be OR'd together, the profiles are mutually exclusive, and [[SDL_GL_SetAttribute]]() accepts at most one of them.  Setting the [[SDL_GLattr|SDL_GL_CONTEXT_PROFILE_MASK]] attribute to 0 leaves the choice of profile up to SDL.  Should be used in conjunction with the [[SDL_GLattr|SDL_GL_CONTEXT_MAJOR_VERSION]] and [[SDL_GLattr|SDL_GL_CONTEXT_MINOR_VERSION]] attributes, since OpenGL profiles are defined relative to a particular version of OpenGL.  There is no way to distinguish between the common and common lite profiles of OpenGL ES versions 1.0 and 1.1.
+
+
+== Related Enumerations ==
+:[[SDL_GLattr]]
+
+== Related Functions ==
+:[[SDL_GL_GetAttribute]]
+:[[SDL_GL_SetAttribute]]
+
+----
+[[CategoryEnum]], [[CategoryVideo]]

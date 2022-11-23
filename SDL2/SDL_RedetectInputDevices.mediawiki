@@ -1,0 +1,33 @@
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+```#!wiki warning
+'''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''
+```
+
+= SDL_RedetectInputDevices =
+Use this function to ^detect input devices after initializing SDL^.
+
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+int SDL_RedetectInputDevices(void)
+</syntaxhighlight>
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.  ???
+~-<span style="color: green;">Source?</span>-~
+<span style="color: green;">From header. Belongs here?</span>
+This invalidates all existing device information from previous queries!
+
+There is an implicit (re)detect upon [[SDL_Init]]().
+
+
+
+== Related Functions ==
+:[[SDL_OtherFunction]]
+
+----
+[[CategoryAPI]], [[CategoryInput]], [[CategoryDraft]]

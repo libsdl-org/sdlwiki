@@ -1,0 +1,41 @@
+<!-- # page was renamed from SDL_HINT_VIDEO_FULLSCREEN_SPACES -->
+== Draft ==
+
+'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+
+
+= SDL_HINT_VIDEO_MAC_FULLSCREEN_SPACES =
+A hint that dictates policy for fullscreen Spaces on Mac OS X.
+
+
+
+
+== Values ==
+{|
+|0
+|disable Spaces support (FULLSCREEN_DESKTOP won't use them and SDL_WINDOW_RESIZABLE windows won't offer the "fullscreen" button on their titlebars)
+|-
+|1
+|enable Spaces support (FULLSCREEN_DESKTOP will use them and SDL_WINDOW_RESIZABLE windows will offer the "fullscreen" button on their titlebars)
+|}
+
+
+== Default ==
+By default Spaces support is enabled.
+
+
+
+== Remarks ==
+This hint only applies to Mac OS X.
+
+Spaces are disabled regardless of this hint if the OS isn't at least Mac OS X Lion (10.7). This hint must be set before any windows are created.
+
+== Version ==
+This hint is available since SDL 2.0.2.
+
+----
+[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+<!-- #See the Style Guide for instructions on editing the footer. -->

@@ -1,0 +1,48 @@
+
+= SDL_JoyButtonEvent =
+A structure that contains joystick button event information.
+
+
+== Data Fields ==
+{|
+|Uint32
+|'''type'''
+|the event type; SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|SDL_JoystickID
+|'''which'''
+|the instance id of the joystick that reported the event
+|-
+|Uint8
+|'''button'''
+|the index of the button that changed
+|-
+|Uint8
+|'''state'''
+|the state of the button; SDL_PRESSED or SDL_RELEASED
+|}
+
+== Remarks ==
+[[SDL_JoyButtonEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP is reported.  You would access it through the event's <code>jbutton</code> field.
+
+An SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP event occurs whenever a user presses or releases a button on a joystick.
+
+== Related Enumerations ==
+:[[SDL_EventType]]
+
+== Related Structures ==
+:[[SDL_Event]]
+:[[SDL_JoyAxisEvent]]
+:[[SDL_JoyBallEvent]]
+:[[SDL_JoyHatEvent]]
+
+== Related Functions ==
+:[[SDL_JoystickEventState]]
+:[[SDL_JoystickGetButton]]
+
+----
+[[CategoryStruct]], [[CategoryEvents]]

@@ -1,0 +1,942 @@
+<!-- acl All:read -->
+
+= Style Guide: Function Pages =
+This guide provides specific instructions for editing or adding your own content to each section of a Function page in this wiki.
+
+'''Function pages should provide basic information about the SDL functions to allow users to most effectively utilize them in their projects.'''
+
+
+<span id="ToC"></span>
+
+== General Guidelines ==
+{|
+|<span color="red">Important note about '''Macros'''</span><br/>The basic function template is also used for macros that have pages in the wiki.  For simplicity, the following guidelines for functions will also apply to macros unless a specific difference is noted.
+|}
+
+'''Please observe the following for all function pages:'''
+* Do not post anything that you do not have permission to post publicly.
+
+* Sections should have adequate details to make them clear and useful while remaining brief wherever possible.  Code Examples and Remarks may be more extensive than other sections if necessary.
+
+* Please remember to keep it accurate, simple, and easy to understand.
+
+* Do not remove, modify, or add to the markup above the page title (<code>#pragma</code> or <code>#acl</code> processing instructions, etc.) except:
+* On CategoryCompat pages, place the following markup above the page title, below the processing instructions or <span color="red">DRAFT</span> markup if present:
+: ```||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <br/>~+For Backward Compatibility Only+~<br/><br/> ||```
+
+* Do not remove, modify, or add section headings unless specifically mentioned below.
+
+* In general, we prefer that you do not remove or modify existing content unless it is clearly incorrect or out of date.
+
+* Pages with <span color="red">DRAFT</span> at the top are in progress and will often contain unusual content, formatting, or notes.  Please do not remove or modify these.  That will all be corrected/removed upon final edit.
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+== Getting Started ==
+ 1. Begin by going to the page you wish to edit and selecting <span color="blue">Edit (Text)</span> or <span color="blue">Edit (GUI)</span> in the left column to begin editing.
+  {i} ~-Markup info provided here is specifically for use in the Text editor but should work in both.-~
+ 1. Scroll down in the edit window to the section(s) you want to edit.  Add your content following the conventions in this style guide.
+ 1. Find information relevant to your content in the style guide sections [[#specifics|below]] and apply the appropriate formatting as you edit.
+ 1. Preview your work as you go by clicking <span color="blue">Preview</span> in the left column.  Preview often and any time you are unsure of formatting. 
+: ~-(Keep in mind that a few things (like [[SGWikiBasics#color2|Color2 text]]) don't preview exactly as they parse.)-~
+ 1. Save your work by clicking <span color="blue">Save Changes</span> in the left column after you are satisfied with your content and have filled in the Comment field under the editing box. 
+
+For assistance with editing, saving, or wiki-appropriate markup see the [[SGWikiBasics|Wiki Basics]] Style Guide or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<span id="specifics"></span>
+== Editing Specific Sections ==
+=== Title ===
+'''''Do not edit the Title.'''''
+
+The Title section consists of the page heading and its markup:
+
+ ```= SDL_FunctionName =``` 
+
+For function pages this is the name of the function being described on the page and should match the address of the page.
+
+''Example'': Page address ```https://wiki.libsdl.org/SDL_CreateWindow``` should have matching title {{{= SDL_CreateWindow =}}} and describe the [[SDL_CreateWindow]]() function.
+
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Description ===
+The Description section immediately follows the page title and does not have it's own heading.
+
+'''All function descriptions begin with:
+ ```Use this function to```'''
+  or very rarely
+ ```Use this macro to```
+
+: followed by a ''clear and concise'' description of what the function does.  
+
+<span id="note1"></span>
+''Note'': Information presented in this section is meant to be limited.  Extended description information for more complicated functions should be placed in the [[#Remarks|Remarks]] section instead.  
+* The Description should not contain a link to the Remarks section even if additional information is located there. 
+
+{|
+|<( |3 30%>''If'' the page describes __a macro__ rather than a function
+|''Action'': Use the alternate description (<code>Use this macro to...</code>) and, if necessary, replace the word <code>function</code> with the word <code>macro</code> where appropriate throughout the page.
+|-
+|''Note'': In some rare cases it has been deemed appropriate to refer to a macro as a function in the wiki.  (eg: [[SDL_QuitRequested]]())  This is not accidental.  Please do not "correct" these instances.  If you feel strongly that a change should be made please contact us.
+|-
+|''Example'': [[SDL_VERSION]]()
+|-
+|<( |2 30%>''If'' __another API page__ is referenced in the description
+|''Action'': Be sure to [[SGWikiBasics#Hyperlinks|hyperlink]] it and use () outside the link markup if it is a function.
+|-
+|''Example'': ```[[SDL_FunctionName]](), [[SDL_StructureName]]```, [[SDL_GetThreadName]]()
+|-
+|<( |3 30%>''If'' __a parameter__ on that page is referenced in the description
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|}
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Table of Contents ===
+'''''Do not edit the Table of Contents.'''''
+
+The Table of Contents consists of the following markup and is generated automatically on the parsed page.
+ ```<<TableOfContents()>>```
+
+If you believe a change is necessary please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>>.
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Syntax ===
+The Syntax section consists of a code box that displays the basic components of the function using some specific formatting conventions.  Please apply the following conventions when editing this section.
+
+'''The basic format is as follows:'''
+```{
+{{{#!highlight cpp
+returnType* SDL_FunctionName(type1  parameter1,
+                             type2* parameter2,
+                             ...
+                             typeN  parameterN)
+```
+}}}}
+
+<span color="red">''Important!''</span> All types and parameters should be vertically aligned.
+* Spacing for parameter __types__ is left-aligned to the type on the first line.
+* Spacing for __parameters__ is left-aligned to the longest param type so that there is only 1 space between the longest type (with any pointers) and its parameter. 
+* __Pointers__ (*, **) should be aligned next to the types (no space between) and should have at least one space following.
+
+''Markup'': Use spaces as necessary to create the correct alignment.  Within a code box spacing is fixed-width.
+
+''Note'': __To be omitted__
+* All additional text that may be found in the header or elsewhere, such as <code>extern</code>, <code>SDLCALL</code>, etc.
+* The space between <code>SDL_FunctionName</code> and (.
+* Ending semi-colon (;)
+
+''Note'': __To be included__
+* The code box and colorizing markup above and below the function syntax<br/><code>```</code>```c++```<br/><code>}}}</code>
+ * A single space between `returnType` and `SDL_FunctionName`
+ * Commas at the end of each line before the last if there is more than 1 parameter
+ * The parentheses enclosing the parameters
+
+''Note'': Do not remove or alter the code box markup surrounding the function syntax.  The starting and ending markup must remain on separate lines above and below the rest of the content in order to generate the code box.
+
+||<( |3 30%>''If'' a function refers to a __callback function__||''Action'': See the special section on callback functions [[#callback|below]].||
+||''Note'': Callback functions do not get their own pages.||
+||''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()||
+
+''Example'': {{{{
+{{{#!highlight cpp
+
+           1 space      no space  spaces (as needed)
+              |             \    |_________|
+SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops*     src,
+                              int            freesrc,
+                              SDL_AudioSpec* spec,     <- longest type
+                              Uint8**        audio_buf,   sets alignment
+                              Uint32*        audio_len)
+||||||||||||||||||||||||||||||      \       |
+      spaces (as needed)          no space  1 space
+```
+}}}}
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<span id="parameters"></span>
+=== Function Parameters ===
+The Function Parameters section provides basic information about each parameter in the function and is presented in table format.
+
+''<span color="red">Important!</span>''
+{|
+|<( |2 30%>''If'' the only parameter is '''__void__'''
+|''Action'': Delete the entire Function Parameters section, including the header.
+|-
+|''Example'': [[SDL_AllocRW]]()
+|}
+
+Otherwise, '''function parameters follow this basic format:''' 
+
+```
+||'''parameter1'''||description||
+||'''parameter2'''||description||
+...
+||'''parameterN'''||description||
+```
+
+''Markup'': Use [[SGWikiBasics#Tables|basic table markup]] and enclose each parameter name in [[SGWikiBasics#Text_Formatting|bold]] markup. All text in the table is left-justified. 
+
+* The __first column__ contains the parameter names, without types or pointers, in bold.
+* The __second column__ contains a simple description of each parameter using some specific formatting conventions.
+: ''<span color="red">Important!</span>'' All descriptions begin with a ''lower case'' letter, end ''without'' a period, and are generally ''not'' complete sentences.
+
+* There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
+
+''Example'': [[SDL_SetColorKey]]()
+
+{|
+|
+|<bgcolor="#EDEDED">''Content-dependent formatting: General''
+|-
+|<( |3 30%>''If'' __more than one statement__ must be included in the description
+|''Action'': Separate them with a semi-colon (;)
+|-
+|''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" below for more details.
+|-
+|''Example'': [[SDL_PixelFormatEnumToMasks]]()
+|-
+|<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
+|<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```.
+|-
+|''Action 2'': Place the more detailed information in the [[#Remarks|Remarks]] section.
+|-
+|''Action 3'': See "''If'' the __[[#large|Remarks section is large]]__" below for more details.
+|-
+|''Example'': [[SDL_CreateWindow]]()
+|-
+|<( |3 30%>''If'' the __Remarks section is large__
+|<span id="large"></span>''Action 1'': Create an [[SGWikiBasics#Anchors|anchor]] immediately before the additional comments you are adding to the Remarks section.
+|-
+|''Markup'': Use ```<span id="anchorname"></span>```, where <code>anchorname</code> is a name of your choosing, to create the anchor in the Remarks section. See [[SGWikiBasics#Anchors|Anchors]] for details.
+|-
+|''Action 2'': Modify the Remarks link in the parameter description (see ''Action 1'' in "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" above) to the following:<br/>```; see [[#anchorname|Remarks]] for details```<br/>where <code>anchorname</code> matches the name you chose for the anchor in ''Action 1''.
+|-
+|<( |2 30%>''If'' __there is a pointer__ associated with the parameter
+|''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*)
+|-
+|''Example'': [[SDL_SetColorKey]]()
+|-
+|<( |2 30%>''If'' a pointer points to __something that is filled in by the function__ or that __has been filled in__
+|''Action'': Use the phrase <code>filled in with</code> in the description
+|-
+|''Example'': [[SDL_QueryTexturePixels]]()
+|-
+|<( |4 30%>''If'' the description mentions __a structure that has a page__
+|''Action 1'': Use the following pattern to describe the parameter:<br/><code>the/an</code> ```[[SDL_StructureName]]``` <code>structure to <action></code> or <code>representing <some piece of information></code>
+|-
+|''Action 2'': Check the [[#specific|table below]] for structure-specific phrasing.
+|-
+|''Note'': Be sure to hyperlink the structure name as shown in ''Action 1'' in the type and description columns (as appropriate) '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
+|-
+|''Example'': [[SDL_UnionRect]]()
+|-
+|<( |3 30%>''If'' the description mentions __a structure that ''does not'' have a page__
+|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == <code>the window</code>) and omit the hyperlink.
+|-
+|''Note'': Please check the current wiki before selecting this option for wording, as a page may have been created since this was written or since you last checked.
+|-
+|''Example'': [[SDL_RenderClear]]()
+|-
+|<( |2 30%>''If'' the description mentions __an enumeration__
+|''Action'': It is not necessary to specifically describe it as an enumeration as above for structures, but DO hyperlink if it has a page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
+|-
+|''Example'': [[SDL_PixelFormat]]
+|-
+|<( |1 30%>''If'' a description must refer to any other __page in the API__
+|''Action'': Create a [[SGWikiBasics#Hyperlinks|hyperlink]] to the page '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
+|-
+|<( |5 30%>''If'' the parameter is __for internal use, deprecated, or private__
+|<span id="grey"></span>''Action 1'': Make the text in the row grey by including the following, verbatim, in the first cell of the row between the starting table markup and the text:<br/>```<rowstyle="color: #808080;">```
+|-
+|''Action 2'': Include the reason (ie: internal use, etc.) in parentheses at the end of the description.
+|-
+|''Action 3'': DO NOT hyperlink any related API pages (ie: structure type) on greyed out parameters.
+|-
+|''Example'': ```
+|<rowstyle="color: #808080;">'''param'''
+|description (reason)
+|```, [[SDL_PixelFormat]]
+|-
+|''Note'': Although a rare case, any other table style markup should be included within the same set of angle brackets (<code><></code>) and separated from this markup by a space.
+|-
+|<( |3 30%>''If'' a function refers to a __callback function__
+|''Action'': See the special section on callback functions [[#callback|below]].
+|-
+|''Note'': Callback functions do not get their own pages.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|-
+|<( |4 30%>''If'' __a parameter references another parameter__ on that same page
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_EnclosePoints]]()
+|-
+|<( |3 30%>''If'' a description is referring to something that could be __any one of a group of similar items__ (ie: rectangles)
+|''Action'': Begin the description with <code>a/an</code>
+|-
+|''Example'': [[SDL_HasIntersection]]()
+|-
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
+|-
+|<( |3 30%>''If'' a description is referring __to a specific item from a group__ (ie: a specific window)
+|''Action'': Begin the description with <code>the</code>
+|-
+|''Example'': [[SDL_BlitScaled]]()
+|-
+|''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
+|}
+
+
+''Note'': It would only rarely be appropriate to use the exact same description of a common parameter every time that parameter appears in the API.  However, the same or very similar description can be used for many occurrences of the same parameter, enhancing consistency across pages.  The following table provides a list of these commonly used descriptions.
+
+''Action'': When choosing a description phrase for a parameter please check this list to see if any of these common descriptions is applicable, even if a minor modification is required.
+
+<span id="specific"></span>
+{|
+|
+|<bgcolor="#EDEDED">''Content-dependent formatting: Specific''
+|-
+|<( |4 30%>''If'' the parameter is __SDL_Palette* palette__
+|''Action 1'': Most often this description begins with <code>the [[SDL_Palette]] structure to</code>, followed by what to do with the palette (ie: free, modify, etc.).
+|-
+|''Action 2'': The most common version is <code>the [[SDL_Palette]] structure to use</code>
+|-
+|''Example'': [[SDL_SetSurfacePalette]](), [[SDL_FreePalette]]()
+|-
+|''Note'': Of course other phrases to describe this parameter may become necessary.  A text search for "SDL_Palette* palette" should provide you with other descriptions if they arise.
+|-
+|<( |4 30%>''If'' the parameter is __SDL_Rect* rect(s)__
+|''Action 1 - __rect__'': Most often this description begins with <code>the/an</code> ```[[SDL_Rect]]``` <code>structure</code> <code>representing the rectangle to</code>, followed by what the rectangle is for (ie: fill, draw, intersect, etc).
+|-
+|''Action 2 - __rects__'': When the parameter is plural it refers to an array of rectangles and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangles are for.
+|-
+|''Example'': [[SDL_FillRect]](), [[SDL_RenderDrawRect]](), [[SDL_IntersectRectAndLine]](), [[SDL_RenderDrawRects]]()
+|-
+|''Note'': Of course there are some other phrases to describe these parameters.  A text search for "SDL_Rect* rect" should provide you with plenty of other examples of both the singular and plural parameters.
+|-
+|<( |3 30%>''If'' the parameter is __SDL_Renderer* renderer__
+|''Action'': A rare exception (at least so far), this description is __always__ <code>the rendering context</code>.
+|-
+|''<span color="red">Important!</span>'' Please use <code>the rendering context</code> for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
+|-
+|''Example'': [[SDL_RenderPresent]](), [[SDL_RenderDrawLine]](), [[SDL_CreateTexture]]()
+|-
+|<( |5 30%>''If'' the parameter is __SDL_Surface* surface__
+|''Action 1'': Most often this description begins with <code>the [[SDL_Surface]] structure to</code>, followed by what is happening with the structure (ie: optimize, be locked, etc.).
+|-
+|''Action 2'': The most common versions are <code>the [[SDL_Surface]] structure to update</code> (often used with Set functions) or <code>the [[SDL_Surface]] structure to query</code> (often used with Get functions).
+|-
+|''Action 3'': Some will be best described by the following instead:  <code>the [[SDL_Surface]] structure representing</code> <something>.
+|-
+|''Example'': [[SDL_SetSurfaceRLE]](), [[SDL_LockSurface]](), [[SDL_GetClipRect]](), [[SDL_SaveBMP_RW]]()
+|-
+|''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Surface* surface" should provide you with plenty of other examples.
+|-
+|<( |4 30%>''If'' the parameter is __SDL_Texture* texture__
+|''Action 1'': Most often this description begins with <code>the texture to</code>, followed by what is being done (ie: create, destroy, etc.).
+|-
+|''Action 2'': The most common versions are <code>the texture to update</code> (often used with Set functions) or <code>the texture to query</code> (often used with Get functions).
+|-
+|''Example'': [[SDL_SetTextureAlphaMod]](), [[SDL_QueryTexturePixels]](), [[SDL_UnlockTexture]]()
+|-
+|''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Texture* texture" should provide you with plenty of other examples.
+|-
+|<( |4 30%>''If'' the parameter is __SDL_Window* window__
+|''Action 1'': Most often this description begins with <code>the window to</code>, followed by what is being done (ie: minimize, maximize, show, etc).
+|-
+|''Action 2'': The most common versions are <code>the window to change</code> (often used with Set functions) or <code>the window to query</code> (often used with Get functions).
+|-
+|''Example'': [[SDL_RestoreWindow]](), [[SDL_SetWindowTitle]](), [[SDL_GetWindowFlags]]()
+|-
+|''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Window* window" should provide you with plenty of examples.
+|-
+|<( |3 30%>''If'' the parameters include __fmt and '''...'''__
+|''Action'': For fmt use <code>a</code> <code>printf()</code> <code>style</code> <code>message</code> <code>format</code> <code>string</code><br/>For '''...''' use <code>additional</code> <code>parameters</code> <code>matching</code> <code>% tokens</code> <code>in</code> <code>the</code> <code>'''fmt'''</code> <code>string,</code> <code>if</code> <code>any</code>.
+|-
+|''Note'': To date this is the only context for the '''...''' parameter.  If your case does not follow this pattern exactly it may be necessary to make some adjustments.  Please keep them as minimal as possible while creating an accurate wiki entry.
+|-
+|''Example'': [[SDL_SetError]](), [[SDL_Log]]()
+|}
+
+
+<!-- #Standardized table block for specific table: -->
+<!-- #||<( |4 30%>''If'' the parameter is ____||''Action 1'': Most often this description begins with <code></code>, followed by what is being done (ie: ).|| -->
+<!-- #||''Action 2'': The most common versions are <code></code> or <code></code>.  Use as applicable.|| -->
+<!-- #||''Example'': [[SDL_]](), [[SDL_]](), [[SDL_]]()|| -->
+<!-- #||''Note'': Of course there are some other phrases to describe this parameter.  A text search for "" should provide you with plenty of examples.|| -->
+
+''Note'': Please do not use Includes in this section.  It may occasionally be appropriate to copy and paste the parameters and descriptions from one function to another (perhaps with minor changes).  This is the preferred method over using an Include.
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Return Value ===
+The Return Value section provides basic information about what, if anything, a function will return upon success or failure.  
+
+''<span color="red">Important!</span>''
+{|
+|<( |3 30%>''If'' the return value is '''__void__'''
+|''Note'': This is '''not''' the same as __void*__!  See the table below for [[#void*|void*]] return values.
+|-
+|''Action'': Delete the entire Return Value section, including the header.
+|-
+|''Example'': [[SDL_FreeSurface]]()
+|}
+
+
+Otherwise, '''return values follow this basic format:'''
+ ```
+Returns <something> on success or <something else> on failure; call [[SDL_GetError]]() for more information.
+```
+
+Use the following tables to determine what to replace <code><something></code> and <code><something else></code> with in the standard statement above, and to determine whether some other action is required.
+<!-- # * For __simple replacements__ ''Action'' will only contain two replacement statements with the top being for success (<code><something></code>) and the bottom being for failure (<code><something else></code>). -->
+<!-- # . ''Example'': If the second column says -->
+<!-- #  . ''Action'':<br/><code>0</code><br/><code>a negative error code</code> -->
+<!-- # . then <code><something></code> should be replaced with the number <code>0</code> and <code><something else></code> should be replaced by the phrase <code>a negative error code</code>. -->
+<!-- # * For __complex replacements or other actions__ ''Action'' and/or a ''Note'' will detail what to do instead or as well. -->
+* Please check both tables.
+
+{|
+|
+|<bgcolor="#EDEDED">''Replacements by type''
+|-
+|<( 30%>''If'' the return value is __an int (0 or <0)__
+|''Action'': Use <code>Returns 0</code> <code>on success or</code> <code>a negative error</code> <code>code on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for more information.</code>
+|-
+|<( |2 30%>''If'' the return value is __an int other than above or a float__
+|''Action'': Replace <code><something></code> and <code><something else></code> with the applicable numbers.
+|-
+|''Example'': <code>Returns 1</code> <code>on success</code> <code>or 0 on</code> <code>failure;</code> <code>call</code> <code>[[SDL_GetError]]()</code> <code>for more</code> <code>information.</code>
+|-
+|<( 30%>''If'' the return value is __SDL_bool__
+|''Action'': Use <code>Returns</code> <code>SDL_TRUE</code> <code>on success</code> <code>or</code> <code>SDL_FALSE</code> <code>on failure;</code> <code>call [[SDL_GetError]]()</code> <code>for</code> <code>more</code> <code>information.</code>
+|-
+|<( |3 30%>''If'' the return value is __a pointer or NULL__
+|<span id="null*"></span>''Action'':Replace <code><something></code> with an appropriate description of the pointer (usually leaving out any mention of the pointer, as in parameters) and replace <code><something else></code> with NULL.
+|-
+|''Note'': See "''If'' the return value type is __a structure__" below for more details.
+|-
+|''Example'': [[SDL_HapticOpen]](), [[SDL_GetRenderer]]()
+|-
+|<( |3 30%>''If'' the return value type is __a structure__
+|''Action'': The general format will approximate: <code>Returns an/the</code> ```[[SDL_StructureName]]``` <code>representing</code> <code><what it represents></code>, for success.  The failure statement will depend upon what is returned on failure, if anything.  See other ''If''s for options.
+|-
+|''Note'': Ideally in this case, you would search for other functions using the same return value and replicate the phrasing of others as appropriate. (Example search: "<code>returnValue</code> SDL_", where <code>returnValue</code> is replaced with the value you are interested in.)
+|-
+|''Example'': [[SDL_CreateRGBSurfaceFrom]]()
+|-
+|<( |3 30%>''If'' the return value is __void*__
+|<span id="void*"></span>''Action'':See "''If'' the return value is __[[#null*|a pointer or NULL]]__" above.
+|-
+|''Note'': In most cases it ''will'' be appropriate to mention the pointer for void*.  Ideally, look at other similar functions for guidance.
+|-
+|''Example'': [[SDL_LoadFunction]](), [[SDL_SetWindowData]]()
+|-
+|<( |3 30%>''If'' the return value type is __a Uint__
+|''Action'': Replace <code><something></code> with a brief, appropriate description of the Uint.
+|-
+|''Example'': [[SDL_MapRGBA]](), [[SDL_WasInit]]()
+|-
+|''Note'': Very rarely the Uint that is returned is a mask of enumerated values.  See [[SDL_MasksToPixelFormatEnum]]() for an example of how to handle this.
+|-
+|<( |2 30%>''If'' the return value type is __a char or const char__
+|''Action'': Replace <code><something></code> with a brief, appropriate description of the returned string.
+|-
+|''Example'': [[SDL_GetCurrentVideoDriver]]()
+|-
+|<( |2 30%>''If'' there are __more than 2__ possible return values
+|''Action'': Add any additional values following the applicable rules above.  Keep the primary success and primary failure values first and last, respectively, or place them in some other logical order (such as numerical).
+|-
+|''Example'': [[SDL_HapticOpened]](), [[SDL_OpenAudio]]()
+|-
+|<( |4 30%>''If'' the function __does not have a failure state__
+|''Note'': It is ''very rare'' for a function to be unable to fail.  This option covers those rare cases only.
+|-
+|''Action 1'': ''If'' the function only has 1 return value state:<br/>Omit the second part of the statement and omit the call to SDL_GetError().
+|-
+|''Action 2'': ''If'' the function has 2 return values but they don't represent success and failure:<br/>Use <code>Returns <something></code> <code><in this case> or</code> <code><something else> otherwise.</code><br/>and omit the call to SDL_GetError().
+|-
+|''Example'': only 1 return state [[SDL_GetAudioDeviceStatus]](); alternate return state [[SDL_QuitRequested]]()
+|}
+
+
+{|
+|
+|<bgcolor="#EDEDED">''Replacements by other criteria''
+|-
+|<( |4 30%>''If'' __a parameter__ on that page is referenced in the return value
+|''Action'': Use '''[[SGWikiBasics#Text_Formatting|bold]]''' for the parameter name.
+|-
+|''Note'': This is a very rare occurrence.
+|-
+|''Note'': If the reference is to the parameter as a ''concept'' (ie: the window) rather than ''directly'' to the parameter itself (ie: window) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
+|-
+|''Example'': [[SDL_LoadWAV_RW]](), [[SDL_GL_CreateContext]]()
+|-
+|<( |3 30%>''If'' the return value mentions __a structure that has a page__
+|''Action'': Use the following pattern to describe the return value:<br/>Returns <code>the/an</code> ```[[SDL_StructureName]]``` <code>structure</code> <code>representing <some piece</code> <code>of information></code>
+|-
+|''Note'': Be sure to hyperlink the structure name as shown.
+|-
+|''Example'': [[SDL_UnionRect]]()
+|-
+|<( |2 30%>''If'' the return value mentions __a structure that ''does not'' have a page__
+|''Action'': Use the plain English term to describe the structure (ie: SDL_Window == window).
+|-
+|''Note'': These structures may eventually have pages or other references worth linking to, in which case please follow the instructions above for linking to items with pages of their own.
+|-
+|<( |2 30%>''If'' the return value must refer to any other __page in the API__
+|''Action'': Create a [[SGWikiBasics#Hyperlinks|hyperlink]] to the page.
+|-
+|''If'' the page is for an __enumeration__ it is not necessary to describe it as an enumeration as above for structures.
+|}
+
+''Note'': It is extremely rare that an Include is appropriate in this section.  If it were to occur it would only be to provide a list of possible return values that are based on an enumeration (or similar).  In that case, please see the instructions for creating an Include in the [[SGWikiBasics#Includes|Wiki Basics]] style guide, and the Include section of the [[SGRemarks#Using_an_Include|Remarks]] style guide for details.
+* ''If'' you use an Include in this section, please email <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> telling us what page received the Include and what page was used as the source.  We are keeping a list of all pages using Includes for future reference and this will help us to keep this list up to date.  We appreciate your taking time for this extra step to help us keep our records accurate and useful.  Thank you!
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Code Examples ===
+The Code Examples section is meant to contain simple, meaningful examples of how to use the function in a program.  
+* Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
+
+This is one of the few sections that is intended to grow and adjust as users discover more information about a function that would be helpful to share with other users.
+
+For the most part the contents of the Code Examples section will be user-generated and this section will remain as-is until users input their examples.
+
+'''Please see the [[SGCodeExamples|Code Examples]] Style Guide for details on editing this section.'''
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Remarks ===
+The Remarks section is meant to contain additional information that did not fit in the other sections as well as comments regarding the behavior and use of the function in real-world applications.  
+* Unlike other sections, which should rarely require editing once DRAFT is removed, this section is ''expected'' to change over time.
+
+This is one of the few sections that is intended to grow and adjust as users discover more information about how a function behaves under different circumstances.
+
+For the most part the contents of the Remarks section will be user-generated and this section will remain as-is until users input their comments. 
+
+''Note'': This is __not__ an appropriate place to post questions, suggestions, bugs, or commentary.  Please use the other communication channels available to you, especially the [http://forums.libsdl.org/ forums] and ''Feedback'' form, for these types of remarks.
+
+'''Please see the [[SGRemarks|Remarks]] Style Guide for details on editing this section.'''
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+=== Related Functions ===
+The Related Functions section provides a list of other functions specifically referenced by that function or otherwise ''closely'' related to it.
+* In general, a "Related Function" is one that is important to the __use__ or __understanding__ of the given function.
+
+'''This list __should__ include:'''
+* the opposite function in a function pair (ie: get/set, do/undo)
+* functions that represent close alternatives (ie: general and specific versions, singular and plural versions)
+* functions that are called by or otherwise very closely related to the actions of the primary function on the page
+
+'''This list __should not__ include:'''
+* the primary function on that page
+* every other function that might be considered "related" 
+: ~-An argument can usually be made for a "relationship" between many functions. Including all of them would make these lists much less valuable.-~
+* all functions of similar type or action
+* all functions of a related category
+* functions that are indirectly related (ie: it might be common to use them together)
+* functions that do not have a page in the wiki (usually because they are not public functions)
+* non-functions (ie: do not include structures or enumerations in this list)
+
+''Note'': In most cases a Related Function reference should be reciprocal - if you include function B on the page for function A then function A should be included on the page for function B.
+
+''Markup'': Each line should begin with a single blank space and a period followed by the function name enclosed in double brackets to create a [[SGWikiBasics#Hyperlinks|hyperlink]].
+: ''Note'': Do not include empty parentheses after the function names in this section.  They are all functions so it should be understood/unnecessary.
+
+: '''The basic format for the Related Functions list is:'''
+```
+== Related Functions ==
+ .[[SDL_FunctionName]]
+ .[[SDL_FunctionName]]
+```
+: ~-''Note'': The heading was included to more clearly illustrate the blank space before the period at the beginning of each list line.  Without this markup the format will not parse correctly.-~
+
+{|
+|<( 30%>''If'' there is __more than one function__ in the list
+|''Action'': List the functions in alphabetical order.
+|-
+|<( 30%>''If'' there are __no related functions__
+|''Action'': This section may be removed entirely (including the heading) and added back at a later time if it becomes relevant.
+|}
+
+''Note'': Function pages do not include a "Related Structures" or "Related Enumerations" section as some of the other page types do.  If there are important related structures or enumerations they are to be included in the body of the page as links (usually in the Function Parameters or Remarks section).  If you feel it is critical that a distinct section for one of these groups be included on a specific function page please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to discuss it.
+
+<!-- #''Note'': You may find more broadly related functions listed by category via the Category links in the [[#footer|footer section]] or by relationship in a broader, functional sense (often cross-category) on the Function Groups page(s) <<Color2(green,''(still to be created)'')>>. -->
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+<span id="footer"></span>
+=== Footer ===
+
+The Footer section consists of a horizontal rule followed by two links separated by a comma.  
+
+''Markup'': 
+```
+----
+[[CategoryAPI]], [[CategoryHeader]]
+```
+: where <code>CategoryAPI</code> is the same for every function page and <code>CategoryHeader</code> is function-specific with <code>Header</code> varying based on the header file containing the function (see below).
+
+<span color="red">''Important!''</span> Category names do not always match the header file name.  Please consult the following [[#CategoryTable|table]] for the correct name to use so the function will appear in the correct list(s).
+
+''Action 1'': '''Do not edit the <code>CategoryAPI</code> link!'''
+
+''Action 2'': '''The ```CategoryHeader``` link may be edited''' ''if'' the page still says {{{[[CategoryHeader]]}}} (as on a new page) or ''if'' the function has been relocated to another header (very rare).
+
+''<span color="red">Important!</span>'' There are a few exceptions to this rule (pages with a category name that does not match their header file).  These have been determined by the SDL team.  Please do not change an existing page's category name simply because it does not match its header file.  If you are concerned that a name is incorrect please submit ''Feedback'' from that page or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to confirm the change first.  
+
+''Markup'': Replace <code>CategoryHeader</code> with the appropriate category name from the table that follows, or contact us at <<MailTo(ANTI SPAM wiki AT libsdl DOT org)>> to find out what category name to use if you are unsure or if the category appears to be missing.
+
+<span id="CategoryTable"></span>
+{|
+|<rowbgcolor="#EDEDED">''Header File Containing the Function*''
+|''Corresponding Category Name''
+|-
+|SDL.h
+|CategoryInit
+|-
+|SDL_assert.h
+|CategoryAssertions
+|-
+|SDL_atomic.h
+|CategoryAtomic
+|-
+|SDL_audio.h
+|CategoryAudio
+|-
+|SDL_clipboard.h
+|CategoryClipboard
+|-
+|SDL_bits.h
+|CategoryBits
+|}
+<!-- #||SDL_compat.h||CategoryCompat|| -->
+<!-- #||SDL_copying.h|||| -->
+{|
+|SDL_cpuinfo.h
+|CategoryCPU
+|-
+|SDL_endian.h
+|CategoryEndian
+|-
+|SDL_error.h
+|CategoryError
+|-
+|SDL_events.h
+|CategoryEvents
+|-
+|SDL_gamecontroller.h
+|CategoryGameController
+|}
+<!-- #||SDL_gesture.h|||| -->
+{|
+|SDL_haptic.h
+|CategoryForceFeedback
+|-
+|SDL_hints.h
+|CategoryHints
+|}
+<!-- #||SDL_input.h|||| -->
+{|
+|SDL_joystick.h
+|CategoryJoystick
+|-
+|SDL_keyboard.h
+|CategoryKeyboard
+|-
+|SDL_keycode.h
+|CategoryKeyboard
+|-
+|SDL_loadso.h
+|CategorySharedObject
+|-
+|SDL_log.h
+|CategoryLog
+|}
+<!-- #||SDL_main.h|||| -->
+{|
+|SDL_mouse.h
+|CategoryMouse
+|-
+|SDL_mutex.h
+|CategoryMutex
+|}
+<!-- #||SDL_name.h|||| -->
+<!-- #||SDL_opengl.h||CategoryOpenGL|| -->
+<!-- #||SDL_opengles.h||CategoryOpenGL|| -->
+<!-- #||SDL_opengles2.h||CategoryOpenGL|| -->
+{|
+|SDL_pixels.h
+|CategoryPixels
+|-
+|SDL_platform.h
+|CategoryPlatform
+|-
+|SDL_power.h
+|CategoryPower
+|-
+|SDL_quit.h
+|CategoryEvents
+|-
+|SDL_rect.h
+|CategoryRect
+|-
+|SDL_render.h
+|CategoryRender
+|}
+<!-- #||SDL_revision.h|||| -->
+{|
+|SDL_rwops.h
+|CategoryIO
+|-
+|SDL_scancode.h
+|CategoryKeyboard
+|}
+<!-- #||SDL_shape.h|||| -->
+<!-- #||SDL_stdinc.h|||| -->
+{|
+|SDL_surface.h
+|CategorySurface
+|-
+|SDL_syswm.h
+|CategorySWM
+|-
+|SDL_thread.h
+|CategoryThread
+|-
+|SDL_timer.h
+|CategoryTimer
+|}
+<!-- #||SDL_touch.h|||| -->
+<!-- #||SDL_types.h|||| -->
+{|
+|SDL_version.h
+|CategoryVersion
+|-
+|SDL_video.h
+|CategoryVideo
+|-
+|
+|~-*Some exceptions exist.  See above.-~
+|}
+
+
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+
+=== Special ===
+This section contains details for special formatting circumstances that are best described separately from the average function page.  In general these guidelines should be used in conjunction with the above.
+
+<span id="callback"></span>
+==== Callback Functions ====
+The presence of a callback function will affect two (2) sections of the main function's page - Function Parameters and Remarks.
+
+''Action 1'': '''Use the following formatting specifics in addition to those listed for the main function [[#Function Parameters|above]] whenever a callback function is included on a function page:'''
+
+{|
+|
+|<bgcolor="#EDEDED">''Function Parameters Section Formatting Details''
+|-
+|<( |3 30%>For the parameter that refers to the __callback__ function
+|''Action'': Use the following wording, modified as necessary, to describe the parameter:<br/><code>the</code> <code>function</code> <code>to</code> <code>call</code> <code><when</code><code>/</code><code>why>;</code> <code>see</code> <code>[[#Remarks|Remarks]]</code> <code>for</code> <code>details</code><br/>where the text in <code><></code> is replaced with an appropriate description of when or why the callback would be called.
+|-
+|''Note'': This parameter is often named '''callback''' but may have other names (such as '''filter''', '''fn''', or '''handler''').
+|-
+|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_AddEventWatch]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( |4 30%>For the parameter that passes __user data__ to the callback
+|<span id="UserData"></span>''Action'': Use the following wording, modified as necessary, to describe the parameter:<br/><code>a</code> <code>pointer</code> <code>that</code> <code>is</code> <code>passed</code> <code>to</code> <code>'''callback'''</code><br/>where <code>callback</code> is replaced with the callback function parameter name (if necessary).
+|-
+|''Note'': In rare cases, often 'Get' functions, this is a pointer to a pointer and should be described as such.
+|-
+|''Note'': This parameter is often named '''userdata''', but may have other names (such as '''data''' or '''param''').  It is important to distinguish this parameter from other parameters that are passed to the callback also, but that are not strictly carrying "user data" (such as '''interval''') and from other parameters that are unrelated to the callback function (such as '''name''').  See below for details.
+|-
+|''Example'': [[SDL_LogSetOutputFunction]](), [[SDL_CreateThread]](), [[SDL_AddTimer]](), [[SDL_LogGetOutputFunction]]()
+|-
+|<( |2 30%>For other parameters __related to the callback__
+|''Action'': There may be other parameters that are passed to the callback function but which are sufficiently different from the __[[#UserData|user data]]__ concept that the wording above does not really apply.  In these cases use a description that is appropriate.  Often it will still be appropriate to include the phrase <code>passed to</code> <code>'''callback'''</code> in these descriptions.
+|-
+|''Example'': [[SDL_AddTimer]]()
+|-
+|<( |2 30%>For additional function parameters __''not'' related to the callback__
+|<span id="notCallback"></span>''Action'': Follow any applicable guidelines listed [[#Function Parameters|above]]
+|-
+|''Example'': [[SDL_CreateThread]]()
+|}
+
+<span id="prototype"></span>
+''Action 2'': '''Detail the syntax and parameters of the callback function in the Remarks section using the following __basic format__ with the changes listed in the table below:'''
+   ```{
+The function prototype for '''callback''' is:
+ {{{#!highlight cpp
+callback syntax
+```
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+: optional return value info...
+: optional remarks or details...
+}}}}
+: to display
+The function prototype for '''callback''' is:
+ <syntaxhighlight lang='c++'>
+callback syntax
+</syntaxhighlight>
+: where its parameters are:
+ ||<code>callback parameter</code>||description||
+: optional return value info...
+: optional remarks or details...
+
+{|
+|
+|<bgcolor="#EDEDED">''Remarks Section Formatting Details''
+|-
+|<( |2 30%>__Location__
+|''Action'': Generally the Remarks section is roughly organized in the same order as the function parameters.  Callback details should be located accordingly, or at the top of the Remarks section if there isn't much else, but below any fundamental or critical remarks about the main function as a whole, if present.  But, logic should prevail in determining where to place this information if the Remarks section is large. The callback information should be prominent.
+|-
+|''Example'': [[SDL_CreateThread]](), [[SDL_AddEventWatch]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( 30%>__Alignment__
+|''Action'': As shown in the [[#prototype|basic format]] above, only the first line should be left-justified.  Everything else related directly to the callback should be [[SGWikiBasics#Indenting|indented]] one level (or more) to indicate it's relationship to the callback as opposed to the main function.
+|-
+|<( |2 30%>''If'' the callback parameter is __not '''callback'''__
+|''Action'': Replace '''callback''' in the [[#prototype|basic format]] above with the function parameter name used in the main function to refer to the callback function.
+|-
+|''Example'': [[SDL_SetEventFilter]](), [[SDL_CreateThread]](), [[SDL_SetAssertionHandler]]()
+|-
+|<( 30%>For __"callback syntax"__ in the [[#prototype|basic format]] above
+|''Action'': Replace "callback syntax" with the callback function's syntax formatted the same as the main function's syntax. (See [[#Syntax|Syntax]] above for details.)
+|-
+|<( |2 30%>''If'' the __callback function name__ requires any explanation
+|''Action'': Replace "where its parameters are:" in the [[#prototype|basic format]] above with the following:<br/><code>where</code> <code><CallbackName></code> <code>is</code> <code><some</code> <code>explanation></code> <code>and</code> <code>its</code> <code>parameters</code> <code>are:</code><br/>replacing <code><Callbackname></code> with the name of the callback function and <code><some</code> <code>explanation></code> with an explanation of the name (ie: your function name).
+|-
+|''Example'': [[SDL_AddEventWatch]]()
+|-
+|<( |4 30%>For __| <code>callback parameter</code> | description |__ in the [[#prototype|basic format]] above
+|''Action 1'': Duplicate the line from above for each parameter in the callback (ie: there should be 2 lines for 2 parameters).
+|-
+|''Action 2'': Replace "callback parameter" with the name of each callback function parameter using the same formatting instructions as the main function '''''except''''' use ```<code>monospace</code>``` (surrounding backticks) rather than bold to highlight the parameter names in the first column.
+|-
+|''Action 3'': Replace "description" with an appropriate description of the callback's parameter. See the following for specific parameters.
+|-
+|''Example'': [[SDL_FilterEvents]](), [[SDL_LogSetOutputFunction]]()
+|-
+|<( |2 30%>For the __<code>userdata</code>__ parameter (or comparable)
+|''Action'': Use the following text (modified as necessary):<br/>```what was passed as '''userdata''' to [[SDL_MainFunctionName]]()```<br/>replacing '''userdata''' with the appropriate parameter name if necessary, and replacing <code>MainFunctionName</code> with the name of the primary function on the page.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|-
+|<( |3 30%>''If'' the callback function's __return value__ is important
+|''Action 1'': Replace "optional return value info..." in the [[#prototype|basic format]] above with the relevant return value information.  Be sure to indent text one level as shown.
+|-
+|''Note'': Callback return value information may be omitted if it is not important.
+|-
+|''Example'': [[SDL_AddEventWatch]](), [[SDL_AddTimer]]()
+|-
+|<( |2 30%>''If'' there are __"optional remarks or details"__
+|''Action'': Replace "optional remarks or details..." in the [[#prototype|basic format]] above with any other relevant information about the callback function.  Be sure to indent text at least one level as shown.
+|-
+|''Example'': [[SDL_LogGetOutputFunction]](), [[SDL_LogSetOutputFunction]]()
+|}
+
+
+<br/>
+
+```{#!wiki comment
+'''''This section has been left in for future reference if a compat section or similar is ever added back. It does not currently apply to any pages.'''''
+
+==== Compatibility Functions ====
+Compatibility functions are present in the API for backward compatibility only and thus are treated slightly differently than functions from the current version.  '''Use the following formatting specifics in addition to those listed above for all [[#CategoryCompat|CategoryCompat]] pages:''':
+
+''Action 1'': The top of every compatibility function page should include the following, verbatim, to be placed below the pragma markup, below <span color="red">DRAFT</span> if present, and above the page title:
+ {{{
+||<tablewidth="100%" #000000 style="color: #FF8C00;" :> <<BR>>~+For Backward Compatibility Only+~<<BR>><<BR>> ||
+```
+
+''Action 2'': 
+ ||<( |2 30%>''If'' __only one SDL 1.3 function__ replaces the compatibility function||''Action'': See ''Markup A'' below.||
+ ||''Example'': [[]](), [[]]()||
+ ||<( |3 30%>''If'' __more than one SDL 1.3 function__ has replaced the compatibility function||''Action'': See ''Markup B'' below.||
+ ||''Note'': Listing more than two replacement functions should occur only rarely, if at all.  Please avoid making this list any larger than necessary.  This is NOT a related functions list!||
+ ||''Example'': [[SDL_AudioDriverName]](), [[SDL_WM_ToggleFullScreen]]()||
+ ||<( |2 30%>''If'' there are __no equivalent functions__ in SDL 1.3||''Action'': See ''Markup C'' below.||
+ ||''Example'': [[SDL_Flip]](), [[]]()||
+<br/>
+: ''Markup A'': Add the following section to the end of the page above the footer.  Replace <code>SDL_Function</code> with the name of the appropriate SDL 1.3 function:
+  ```
+== SDL 1.3 Replacement(s) a ==
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This function has been replaced by the following in SDL 1.3:  [[SDL_Function]]'''||
+```
+: ''Example'': [[]](), [[]]()
+<br/>
+: ''Markup B'': Add the following section to the end of the page above the footer.  Create a list of functions by repeating the <code>[[SDL_Function]]</code> markup, separating each member of the list with a comma, and placing the most direct counterpart first, alphabetizing any additional functions after that.
+  ```
+== SDL 1.3 Replacement(s) b ==
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''This function has been replaced by the following in SDL 1.3:  [[SDL_Function]], [[SDL_Function]]'''||
+```
+: ''Example'': [[SDL_WM_ToggleFullscreen]](), [[SDL_WM_GrabInput]]()
+<br/>
+: ''Markup C'': Add the following section to the end of the page above the footer.  Replace <code>Other options here</code> with text describing other options in SDL 1.3 that could be used to accomplish the same goal, or remove it if there is no applicable text:
+  ```
+== SDL 1.3 Replacement(s) c ==
+||<tablewidth="100%" #000000 style="color: #FF8C00;">'''There are currently no equivalent functions in SDL 1.3.'''||
+Other options here
+```
+: ''Example'': [[SDL_EnableKeyRepeat]]() (see other [[CategoryCompat]] pages for more examples)
+<!-- #Specific examples need to be added here -->
+}}}}
+
+
+~-[[#ToC|Return to Table of Contents]]-~
+<br/>
+<br/>
+
+
+<<Include(SGWikiBasics, , , from="Start SG Include here.", to="##End SG Include here.")>>

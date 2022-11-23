@@ -1,0 +1,38 @@
+= FAQ: Mac OS X =
+
+== What is supported? ==
+SDL 2.0.0 supports Mac OS X 10.5 and newer, using either Xcode or the classic Unix-style build system. Currently only Xcode can be used to build the SDL Framework. The Unix-style build system creates classic shared and static versions of the SDL library.
+
+For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
+
+== What is the difference between the Xcode and the Unix-style build system? ==
+The SDL-devel package contains the SDL libraries in the form of a Framework. That is perfectly fine as long as you want to develop using Xcode. However, applications which use a configure script almost always require SDL to be installed Unix-style.
+
+When installed as a Framework, all SDL files (the library and the header files) are aggregated into a .framework bundle, and installed together into /Library/Frameworks/ or ~/Library/Frameworks/. There, Xcode can find it. But packages which want to use SDL but employ a Unix-style build system are usually not able to find SDL there (there are a few exceptions where people hand modified their configure scripts to allow using Frameworks on OS X, but those are rare).
+
+When installing Unix-style, SDL gets installed into /usr/local/bin, /usr/local/include and /usr/local/lib (the exact path can vary, for example the Fink SDL package will use /sw instead of /usr/local by default). This way, build system tuned to support generic Unix systems are able to find them.
+
+== How do I install SDL Unix-style? ==
+Either you can compile and install it from source (via the usual ./configure && make && make install procedure). Or install it via some kind of packaging system which ships premade packages for SDL. For example, both Fink and [http://www.macports.org/ MacPorts] include packages which are suitable. You can learn more about them on their respective sites.
+
+Note that as long as you static link the release builds of your application, it doesn't really matter which way you installed SDL -- for example, even if you installed it via Fink, if you static link SDL, your users do not have to install Fink.
+
+
+== How do I build an OpenGL application? ==
+On Mac OS X, you access the OpenGL headers like so:
+
+<syntaxhighlight lang='c'>
+#include <OpenGL/gl.h>
+#include <OpenGL/glext.h>
+</syntaxhighlight>
+
+The header file "SDL_opengl.h" includes these headers on all supported SDL systems.
+
+If you are using Xcode, add OpenGL.framework to your project. On the command line, add:
+
+<code>-framework OpenGL</code>
+
+to the GCC or LD arguments in your Makefile
+
+== How do I include the SDL framework in my application? ==
+One good strategy can be found here:  [http://overooped.com/post/42240519/properly-bundling-frameworks-in-your-application Properly bundling .frameworks in your application package]

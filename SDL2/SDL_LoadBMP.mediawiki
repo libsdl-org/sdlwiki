@@ -1,0 +1,55 @@
+= SDL_LoadBMP =
+
+Load a BMP image from a file path.
+
+== Syntax ==
+<syntaxhighlight lang='c++'>
+SDL_Surface* SDL_LoadBMP(const char* file)
+</syntaxhighlight>
+
+== Function Parameters ==
+{|
+|'''file'''
+|the file containing a BMP image
+|}
+
+== Return Value ==
+
+Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was
+an error; call [[SDL_GetError]]() for more information.
+
+== Remarks ==
+
+The new surface should be freed with [[SDL_FreeSurface]](). Not doing so will
+result in a memory leak.
+
+SDL_LoadBMP is a pre-processor macro defined to call [[SDL_LoadBMP_RW]]() with
+an automatically closed file loaded by [[SDL_RWFromFile]]().
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+const char *image_path = "myimage.bmp";
+SDL_Surface *image = SDL_LoadBMP(image_path);
+
+/* Let the user know if the file failed to load */
+if (!image) {
+    printf("Failed to load image at %s: %s\n", image_path, SDL_GetError());
+    return;
+}
+
+/* Do something with image here. */
+
+/* Make sure to eventually release the surface resource */
+SDL_FreeSurface(image);
+</syntaxhighlight>
+
+== Related Functions ==
+:[[SDL_FreeSurface]]
+:[[SDL_LoadBMP_RW]]
+:[[SDL_RWFromFile]]
+:[[SDL_SaveBMP]]
+
+----
+[[CategoryAPI]], [[CategorySurface]]
+
