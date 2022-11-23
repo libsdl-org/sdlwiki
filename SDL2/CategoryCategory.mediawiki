@@ -8,7 +8,6 @@ Here is a list of all pages containing the CategoryCategory wiki tag:
 
 To be consistent with the C2 category scheme, all categories start with the word "Category". For more information, see Wiki:AboutCategoriesAndTopics''''''.
 <!-- BEGIN CATEGORY LIST -->
-* [[CategoryAPI]]
 * [[CategoryAssertions]]
 * [[CategoryAtomic]]
 * [[CategoryAudio]]

@@ -34,31 +34,9 @@ If you are running your game from Steam, the game controller mapping is automati
 <<FullSearchCached(category:CategoryGameController -CategoryEnum -title:CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GameControllerAddMapping]]
 * [[SDL_GameControllerAddMappingsFromFile]]
-* [[SDL_GameControllerAddMappingsFromRW]]
 * [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerButton]]
-* [[SDL_GameControllerClose]]
-* [[SDL_GameControllerEventState]]
-* [[SDL_GameControllerFromInstanceID]]
-* [[SDL_GameControllerGetAttached]]
-* [[SDL_GameControllerGetAxis]]
-* [[SDL_GameControllerGetAxisFromString]]
-* [[SDL_GameControllerGetBindForAxis]]
-* [[SDL_GameControllerGetBindForButton]]
-* [[SDL_GameControllerGetButton]]
-* [[SDL_GameControllerGetButtonFromString]]
-* [[SDL_GameControllerGetJoystick]]
-* [[SDL_GameControllerGetStringForAxis]]
-* [[SDL_GameControllerGetStringForButton]]
-* [[SDL_GameControllerMapping]]
-* [[SDL_GameControllerMappingForGUID]]
-* [[SDL_GameControllerName]]
-* [[SDL_GameControllerNameForIndex]]
-* [[SDL_GameControllerOpen]]
-* [[SDL_GameControllerUpdate]]
-* [[SDL_IsGameController]]
 <!-- END CATEGORY LIST -->
 ----
 [[CategoryCategory]], [[CategoryDraft]]
