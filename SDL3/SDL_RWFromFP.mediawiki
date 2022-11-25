@@ -1,20 +1,19 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_RWFromFP =
 
-Use this function to create an [[SDL_RWops]] structure from a standard I/O file pointer (stdio.h's <code>FILE*</code>).
+Use this function to create an [[SDL_RWops]] structure from a standard I/O file pointer (stdio.h's <code>FILE *</code>).
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_RWops* SDL_RWFromFP(void * fp,
-                        SDL_bool autoclose);
+SDL_RWops* SDL_RWFromFP(void *fp, SDL_bool autoclose);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
 |'''fp'''
-|the <code>FILE*</code> that feeds the [[SDL_RWops]] stream
+|the <code>FILE *</code> that feeds the [[SDL_RWops]] stream
 |-
 |'''autoclose'''
 |[[SDL_TRUE]] to close the <code>FILE*</code> when closing the [[SDL_RWops]], [[SDL_FALSE]] to leave the <code>FILE*</code> open when the RWops is closed
@@ -30,11 +29,6 @@ on failure; call [[SDL_GetError]]() for more information.
 This function is not available on Windows, since files opened in an
 application on that platform cannot be used by a dynamically linked
 library.
-
-On some platforms, the first parameter is a <code>void*</code>, on others,
-it's a <code>FILE*</code>, depending on what system headers are available
-to SDL. It is always intended to be the <code>FILE*</code> type from the C
-runtime's stdio.h.
 
 == Version ==
 
