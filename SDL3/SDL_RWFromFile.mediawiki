@@ -74,7 +74,6 @@ SDL_Surface *image = SDL_LoadBMP_RW(file, 1); /* 1 to automatically close the RW
 
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
-:[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]

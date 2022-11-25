@@ -54,7 +54,6 @@ SDL_SaveBMP_RW(screen, rw, 1);  /* closes SDL_RWops, leaves us memory buffer of 
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
-:[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]

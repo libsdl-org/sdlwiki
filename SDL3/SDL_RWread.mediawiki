@@ -93,7 +93,6 @@ char* file_read(const char* filename) {
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
-:[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWseek]]
 :[[SDL_RWwrite]]

@@ -60,7 +60,6 @@ SDL_Surface *img = SDL_LoadBMP_RW(rw, 1); /* Automatically frees the RWops struc
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
-:[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]

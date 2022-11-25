@@ -71,7 +71,6 @@ if(rw != NULL) {
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]
-:[[SDL_RWFromFP]]
 :[[SDL_RWFromMem]]
 :[[SDL_RWread]]
 :[[SDL_RWseek]]
