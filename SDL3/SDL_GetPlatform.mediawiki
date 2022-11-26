@@ -19,7 +19,7 @@ available, returns a string beginning with the text "Unknown".
 Here are the names returned for some (but not all) supported platforms:
 
 * "Windows"
-* "Mac OS X"
+* "macOS"
 * "Linux"
 * "iOS"
 * "Android"

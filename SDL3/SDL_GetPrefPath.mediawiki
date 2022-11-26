@@ -43,7 +43,7 @@ On Linux, the string might look like:
 
 <code>/home/bob/.local/share/My Program Name/</code>
 
-On Mac OS X, the string might look like:
+On macOS, the string might look like:
 
 <code>/Users/bob/Library/Application Support/My Program Name/</code>
 
