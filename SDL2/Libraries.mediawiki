@@ -6,8 +6,8 @@ Loads images as SDL surfaces and textures, and supports the following formats:
 BMP, GIF, JPEG, LBM, PCX, PNG, PNM, SVG, TGA, TIFF, WEBP, XCF, XPM, XV.
 
 : [https://www.libsdl.org/projects/SDL_image/ Project Page]
-: [https://github.com/libsdl-org/SDL_image Git Repository]
-: [https://wiki.libsdl.org/SDL_image / Wiki]
+: [https://github.com/libsdl-org/SDL_image/ Git Repository]
+: [https://wiki.libsdl.org/SDL_image  Wiki]
 
 == SDL_mixer ==
 SDL_mixer is a sample multi-channel audio mixer library. It supports any number
@@ -17,7 +17,7 @@ Vorbis, and SMPEG MP3 libraries.
 
 : [https://libsdl.org/projects/SDL_mixer/ Project Page]
 : [https://github.com/libsdl-org/SDL_mixer/ Git Repository]
-: [https://wiki.libsdl.org/SDL_mixer/ Wiki]
+: [https://wiki.libsdl.org/SDL_mixer Wiki]
 
 == SDL_ttf ==
 A library which allows you to use TrueType fonts in your SDL applications. It
@@ -26,7 +26,7 @@ given TrueType font file.
 
 : [https://libsdl.org/projects/SDL_ttf/ Project Page]
 : [https://github.com/libsdl-org/SDL_ttf/ Git Repository]
-: [https://wiki.libsdl.org/SDL_ttf/ Wiki]
+: [https://wiki.libsdl.org/SDL_ttf Wiki]
 
 == SDL_net ==
 A small cross-platform networking library, with a sample chat client and server
@@ -34,7 +34,7 @@ application. The chat client uses the GUIlib GUI framework library.
 
 : [https://libsdl.org/projects/SDL_net/ Project Page]
 : [https://github.com/libsdl-org/SDL_net/ Git Repository]
-: [https://wiki.libsdl.org/SDL_net/ Wiki]
+: [https://wiki.libsdl.org/SDL_net Wiki]
 
 == SDL_rtf ==
 A library which allows you to display Rich Text Format (RTF) documents in your
@@ -43,7 +43,7 @@ RTF file using an [[SDL_ttf]] font engine.
 
 : [https://libsdl.org/projects/SDL_rtf/ Project Page]
 : [https://github.com/libsdl-org/SDL_rtf/ Git Repository]
-: [https://wiki.libsdl.org/SDL_rtf/ Wiki]
+: [https://wiki.libsdl.org/SDL_rtf Wiki]
 
 == Others libraries == 
 
