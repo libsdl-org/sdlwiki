@@ -9,10 +9,6 @@ Callback from the application to let the suspend continue.
 void SDL_GDKSuspendComplete(void);
 </syntaxhighlight>
 
-== Version ==
-
-This function is available since SDL 2.28.0.
-
 ----
 [[CategoryAPI]]
 
