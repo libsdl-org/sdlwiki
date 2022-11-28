@@ -20,7 +20,7 @@ Congratulations!  You already found this one.  Use the left sidebar to navigate 
 
 === Header Files ===
 The SDL 2.0 header files can be found here:
-http://hg.libsdl.org/SDL/file/default/include
+https://github.com/libsdl-org/SDL/blob/SDL2/include
 
 === Articles ===
 https://wiki.libsdl.org/Articles

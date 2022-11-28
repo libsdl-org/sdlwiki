@@ -2,7 +2,7 @@
 
 = Configuration Variables =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_hints.h SDL_hints.h]
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h SDL_hints.h]
 
 
 == Introduction ==

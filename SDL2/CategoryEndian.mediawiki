@@ -1,7 +1,7 @@
 
 = Byte Order and Byte Swapping =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_endian.h SDL_endian.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_endian.h SDL_endian.h]
 
 
 == Introduction ==

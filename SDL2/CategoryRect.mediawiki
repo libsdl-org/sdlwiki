@@ -1,7 +1,7 @@
 
 = Rectangle Functions =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_rect.h SDL_rect.h]
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h SDL_rect.h]
 
 
 == Introduction ==

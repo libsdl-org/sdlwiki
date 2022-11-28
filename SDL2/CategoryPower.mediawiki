@@ -1,7 +1,7 @@
 
 = Power Management Status =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_power.h SDL_power.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_power.h SDL_power.h]
 
 
 == Introduction ==

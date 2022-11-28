@@ -1,6 +1,6 @@
 = Event Handling =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_events.h SDL_events.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h SDL_events.h]
 
 
 == Introduction ==

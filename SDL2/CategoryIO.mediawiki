@@ -1,7 +1,7 @@
 
 = File I/O Abstraction =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_rwops.h SDL_rwops.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h SDL_rwops.h]
 
 
 == Introduction ==
