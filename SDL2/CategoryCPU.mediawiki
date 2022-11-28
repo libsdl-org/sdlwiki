@@ -1,7 +1,7 @@
 
 = CPU Feature Detection =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_cpuinfo.h SDL_cpuinfo.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_cpuinfo.h SDL_cpuinfo.h]
 
 
 == Introduction ==

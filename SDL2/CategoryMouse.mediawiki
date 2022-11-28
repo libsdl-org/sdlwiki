@@ -1,9 +1,9 @@
 
 = Mouse Support =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_mouse.h SDL_mouse.h]
 
-<!-- <span color="green">Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h]</span> -->
+<!-- <span color="green">Alternate Include File:  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_input.h SDL_input.h]</span> -->
 
 
 == Introduction ==

@@ -1,6 +1,6 @@
 = Shared Object Loading and Function Lookup =
 
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_loadso.h SDL_loadso.h]
+'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_loadso.h SDL_loadso.h]
 
 
 == Introduction ==

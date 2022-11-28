@@ -1,6 +1,6 @@
 = 2D Accelerated Rendering =
 
-'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/main/include/SDL_render.h SDL_render.h]
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h SDL_render.h]
 
 
 == Introduction ==

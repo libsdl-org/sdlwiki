@@ -393,7 +393,7 @@ More wiki markup for lists can be found at [https://wiki.libsdl.org/HelpOnLists 
 |<( |2 30%>Link __referencing the header files__
 |''<span color="red">Important!</span>'' Replace the version number (12-digit alpha-numeric code) with <code>default</code> in the address if the link should be to the most current version rather than to a specific version of the header file.
 |-
-|''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h so the link always points to the most current file.
+|''Example'': http://hg.libsdl.org/SDL/file/ef1db08c40ac/include/SDL_atomic.h should be changed to https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_atomic.h so the link always points to the most current file.
 |-
 |<( |3 30%>Link to an __anchor__ (or most any unique text) __on the same page__
 |''Markup'': ```[[#anchorname|link text]]``` where {{{anchorname}}} is a previously created [[#anchors|anchor]] or a unique bit of text on the page (but not a header) and {{{link text}}} is the text that will actually appear as the link.

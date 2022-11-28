@@ -1,7 +1,7 @@
 
 = Querying SDL Version =
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_revision.h SDL_revision.h]
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_version.h SDL_version.h], [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_revision.h SDL_revision.h]
 
 
 == Introduction ==
