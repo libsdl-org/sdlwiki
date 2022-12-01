@@ -13,7 +13,7 @@ SDL_Surface* SDL_ConvertSurfaceFormat
 == Function Parameters ==
 
 {|
-|'''src'''
+|'''surface'''
 |the existing [[SDL_Surface]] structure to convert
 |-
 |'''pixel_format'''
