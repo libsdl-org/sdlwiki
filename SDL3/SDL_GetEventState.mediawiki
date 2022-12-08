@@ -35,6 +35,10 @@ Returns SDL_DISABLE or SDL_ENABLE.
 :[[SDL_EventState]]
 
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
