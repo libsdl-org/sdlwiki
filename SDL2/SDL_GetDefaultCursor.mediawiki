@@ -13,6 +13,11 @@ SDL_Cursor* SDL_GetDefaultCursor(void);
 
 Returns the default cursor on success or NULL on failure.
 
+== Remarks ==
+
+You do not have to call [[SDL_FreeCursor]]() on the return value, but it is
+safe to do so.
+
 == Version ==
 
 This function is available since SDL 2.0.0.
