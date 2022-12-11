@@ -41,6 +41,7 @@ Currently, these flags are:
 * <code>[[MIX_INIT_OGG]]</code>
 * <code>[[MIX_INIT_MID]]</code>
 * <code>[[MIX_INIT_OPUS]]</code>
+* <code>[[MIX_INIT_WAVPACK]]</code>
 
 More flags may be added in a future SDL_mixer release.
 
