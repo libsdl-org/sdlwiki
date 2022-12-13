@@ -36,7 +36,7 @@ This looks something like this:
 
 
 <syntaxhighlight lang="bash">
-git clone https://github.com/libsdl-org/SDL
+git clone https://github.com/libsdl-org/SDL.git -b SDL2
 cd SDL
 mkdir build
 cd build
