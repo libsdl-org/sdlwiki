@@ -6,7 +6,7 @@ Unlock the mutex.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_UnlockMutex(SDL_mutex * mutex);
+int SDL_UnlockMutex(SDL_mutex * mutex) SDL_RELEASE(mutex);
 </syntaxhighlight>
 
 == Function Parameters ==

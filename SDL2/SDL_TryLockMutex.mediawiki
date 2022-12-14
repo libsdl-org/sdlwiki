@@ -6,7 +6,7 @@ Try to lock a mutex without blocking.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_TryLockMutex(SDL_mutex * mutex);
+int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -6,7 +6,7 @@ Unlocking for multi-threaded access to the joystick API
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_UnlockJoysticks(void);
+void SDL_UnlockJoysticks(void) SDL_RELEASE(SDL_joystick_lock);
 </syntaxhighlight>
 
 == Remarks ==
