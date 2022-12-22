@@ -1,4 +1,3 @@
-
 = Force Feedback Support =
 
 '''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_haptic.h SDL_haptic.h]
@@ -11,14 +10,14 @@ The SDL haptic subsystem allows you to control haptic (force feedback) devices.
 The basic usage is as follows:
 
  1. Initialize the subsystem (SDL_INIT_HAPTIC)
- 1. Open a haptic device
+ 2. Open a haptic device
   a. [[SDL_HapticOpen]]() to open from index
-  a. [[SDL_HapticOpenFromJoystick]]() to open from an existing joystick
- 1. Create an effect ([[SDL_HapticEffect]])
- 1. Upload the effect with [[SDL_HapticNewEffect]]()
- 1. Run the effect with [[SDL_HapticRunEffect]]()
- 1. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
- 1. Close the haptic device with [[SDL_HapticClose]]()
+  b. [[SDL_HapticOpenFromJoystick]]() to open from an existing joystick
+ 3. Create an effect ([[SDL_HapticEffect]])
+ 4. Upload the effect with [[SDL_HapticNewEffect]]()
+ 5. Run the effect with [[SDL_HapticRunEffect]]()
+ 6. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
+ 7. Close the haptic device with [[SDL_HapticClose]]()
 
 == Code Examples ==
 Simple rumble example:
