@@ -34,6 +34,9 @@ An enumeration of the types of events that can be delivered.
 |SDL_APP_DIDENTERFOREGROUND
 |application entered foreground
 |-
+|SDL_LOCALECHANGED
+|The user's locale preferences have changed.
+|-
 |
 |<span style="background-color:#EDEDED;">''Display events''</span>
 |-
