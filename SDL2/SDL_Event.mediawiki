@@ -12,6 +12,10 @@ A union that contains structures for the different event types.
 |'''common'''
 |common event data
 |-
+|[[SDL_DisplayEvent]]
+|'''display'''
+|display event data
+|-
 |[[SDL_WindowEvent]]
 |'''window'''
 |window event data
