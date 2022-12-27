@@ -91,5 +91,9 @@ The blit semantics for surfaces with and without blending and colorkey are defin
 :[[SDL_BlitScaled]]
 :[[SDL_LowerBlit]]
 
+== Version ==
+
+This function is available since SDL 3.0.0.
+
 ----
 [[CategoryAPI]], [[CategorySurface]]
