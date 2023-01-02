@@ -21,9 +21,6 @@ SDL_Surface * TTF_RenderUNICODE_Shaded(TTF_Font *font,
 |-
 |'''fg'''
 |the foreground color for the text.
-|-
-|'''bg'''
-|the background color for the text.
 |}
 
 == Return Value ==
