@@ -1,4 +1,3 @@
-
 = SDL_RWops =
 A structure that provides an abstract interface to stream I/O. Applications can generally ignore the specifics of this structure's internals and treat them as opaque pointers. The details are important to lower-level code that might need to implement one of these, however.
 
@@ -13,11 +12,11 @@ A structure that provides an abstract interface to stream I/O. Applications can 
 |'''seek'''
 |callback that seeks in stream; see [[#Seek Function|Remarks]]
 |-
-|size_t (*)(SDL_RWops *, void *, size_t, size_t)
+|size_t (*)(SDL_RWops *, void *buffer, size_t size, size_t num)
 |'''read'''
 |callback that reads from the stream; see [[#Read Function|Remarks]]
 |-
-|size_t (*)(SDL_RWops *, const void *, size_t, size_t)
+|size_t (*)(SDL_RWops *, const void *buffer, size_t size, size_t num)
 |'''write'''
 |callback that writes to the stream; see [[#Write Function|Remarks]]
 |-
@@ -103,10 +102,10 @@ The final argument works like the standard fseek() "whence":
 |}
 
 === Read Function ===
-'''read''' is a function pointer that reads from the stream. It reads up to num objects each of size bytes into the buffer pointer to by ptr. Returns the number of objects read, which may be less than requested. Returns 0 on error or EOF.
+'''read''' is a function pointer that reads from the stream. It reads up to '''num''' objects each of '''size''' bytes into the '''buffer''' pointer to by ptr. Returns the number of objects read, which may be less than requested. Returns 0 on error or EOF.
 
 === Write Function ===
-'''write''' is a function pointer that writes to the stream. It writes exactly num objects each of size bytes from the buffer pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
+'''write''' is a function pointer that writes to the stream. It writes exactly '''num''' objects each of '''size''' bytes from the '''buffer''' pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
 
 === Close Function ===
 '''close''' is a function pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
