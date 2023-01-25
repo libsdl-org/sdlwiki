@@ -606,7 +606,6 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 * [[SDL_ReadLE32]]
 * [[SDL_ReadLE64]]
 * [[SDL_ReadU8]]
-* [[SDL_RecordGesture]]
 * [[SDL_RectEmpty]]
 * [[SDL_RedetectInputDevices]]
 * [[SDL_RegisterApp]]

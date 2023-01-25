@@ -92,14 +92,6 @@ A union that contains structures for the different event types.
 |'''tfinger'''
 |touch finger event data
 |-
-|[[SDL_MultiGestureEvent]]
-|'''mgesture'''
-|multi finger gesture data
-|-
-|[[SDL_DollarGestureEvent]]
-|'''dgesture'''
-|multi finger gesture data
-|-
 |[[SDL_DropEvent]]
 |'''drop'''
 |drag and drop event data
@@ -183,11 +175,7 @@ SDL_PushEvent(&user_event);
 |SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
 |[[SDL_ControllerDeviceEvent]]
 |'''cdevice'''
-|-
-|SDL_DOLLARGESTURE<br/>SDL_DOLLARRECORD
-|[[SDL_DollarGestureEvent]]
-|'''dgesture'''
-|-
+|-dg
 |SDL_DROPFILE<br/>SDL_DROPTEXT<br/>SDL_DROPBEGIN<br/>SDL_DROPCOMPLETE
 |[[SDL_DropEvent]]
 |'''drop'''
@@ -232,10 +220,6 @@ SDL_PushEvent(&user_event);
 |[[SDL_MouseWheelEvent]]
 |'''wheel'''
 |-
-|SDL_MULTIGESTURE
-|[[SDL_MultiGestureEvent]]
-|'''mgesture'''
-|-
 |SDL_QUIT
 |[[SDL_QuitEvent]]
 |'''quit'''
@@ -273,7 +257,6 @@ SDL_PushEvent(&user_event);
 :[[SDL_ControllerAxisEvent]]
 :[[SDL_ControllerButtonEvent]]
 :[[SDL_ControllerDeviceEvent]]
-:[[SDL_DollarGestureEvent]]
 :[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
@@ -284,7 +267,6 @@ SDL_PushEvent(&user_event);
 :[[SDL_MouseButtonEvent]]
 :[[SDL_MouseMotionEvent]]
 :[[SDL_MouseWheelEvent]]
-:[[SDL_MultiGestureEvent]]
 :[[SDL_QuitEvent]]
 :[[SDL_SysWMEvent]]
 :[[SDL_TextEditingEvent]]
