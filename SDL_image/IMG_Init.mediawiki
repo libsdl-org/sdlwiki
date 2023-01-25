@@ -31,12 +31,12 @@ returns the flags successfully initialized, or 0 on failure.
 
 Currently, these flags are:
 
-* <code>_INIT_JPG</code>
-* <code>_INIT_PNG</code>
-* <code>_INIT_TIF</code>
-* <code>_INIT_WEBP</code>
-* <code>_INIT_JXL</code>
-* <code>_INIT_AVIF</code>
+* <code>IMG_INIT_JPG</code>
+* <code>IMG_INIT_PNG</code>
+* <code>IMG_INIT_TIF</code>
+* <code>IMG_INIT_WEBP</code>
+* <code>IMG_INIT_JXL</code>
+* <code>IMG_INIT_AVIF</code>
 
 More flags may be added in a future SDL_image release.
 
