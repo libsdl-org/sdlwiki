@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 == Code Examples ==
 
-<<Include(SDL_RenderClear, , , from="== Code Examples ==", to="== Remarks ==")>>
+Please refer to the code example in [[SDL_RenderClear]].
 
 == Related Functions ==
 
