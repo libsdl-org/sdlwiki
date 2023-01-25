@@ -43,14 +43,6 @@ These functions are currently documented as "draft" only and need improvements:
 * [[SDL_GameControllerGetStringForButton]]
 * [[SDL_GameControllerUpdate]]
 
-==== SDL_gesture.h ====
-
-These functions are currently documented as "draft" only and need improvements:
-* [[SDL_RecordGesture]]
-* [[SDL_SaveAllDollarTemplates]]
-* [[SDL_SaveDollarTemplate]]
-* [[SDL_LoadDollarTemplates]]
-
 ==== SDL_hints.h ====
 
 These functions are currently documented as "draft" only and need improvements:

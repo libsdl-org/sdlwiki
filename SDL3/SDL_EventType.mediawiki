@@ -140,18 +140,6 @@ An enumeration of the types of events that can be delivered.
 |user is dragging finger on input device
 |-
 |
-|<span style="background-color:#EDEDED;">''Gesture events''</span>
-|-
-|[[SDL_DollarGestureEvent|SDL_DOLLARGESTURE]]
-|
-|-
-|[[SDL_DollarGestureEvent|SDL_DOLLARRECORD]]
-|
-|-
-|[[SDL_MultiGestureEvent|SDL_MULTIGESTURE]]
-|
-|-
-|
 |<span style="background-color:#EDEDED;">''Clipboard events''</span>
 |-
 |SDL_CLIPBOARDUPDATE
@@ -291,8 +279,6 @@ This is how these events currently map to the underlying OS:
 : [[SDL_DropEvent]]
 : [[SDL_AudioDeviceEvent]]
 : [[SDL_TouchFingerEvent]]
-: [[SDL_DollarGestureEvent]]
-: [[SDL_MultiGestureEvent]]
 
 
 == Related Functions ==
