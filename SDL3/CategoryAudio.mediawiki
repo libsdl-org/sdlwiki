@@ -31,7 +31,6 @@ This category contains functions for handling audio devices and audio input/outp
 * [[SDL_CloseAudioDevice]]
 * [[SDL_ConvertAudio]]
 * [[SDL_DequeueAudio]]
-* [[SDL_FreeWAV]]
 * [[SDL_GetAudioDeviceName]]
 * [[SDL_GetAudioDeviceStatus]]
 * [[SDL_GetAudioDriver]]

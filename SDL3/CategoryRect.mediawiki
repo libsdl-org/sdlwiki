@@ -19,26 +19,12 @@ This category contains functions for handling simple rectangles including overla
 <<FullSearchCached(category:CategoryRect -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_EncloseFPoints]]
-* [[SDL_EnclosePoints]]
 * [[SDL_FPoint]]
 * [[SDL_FRect]]
-* [[SDL_FRectEmpty]]
-* [[SDL_FRectEquals]]
-* [[SDL_HasIntersection]]
-* [[SDL_HasIntersectionF]]
-* [[SDL_IntersectFRect]]
-* [[SDL_IntersectFRectAndLine]]
-* [[SDL_IntersectRect]]
-* [[SDL_IntersectRectAndLine]]
 * [[SDL_Point]]
-* [[SDL_PointInFRect]]
 * [[SDL_PointInRect]]
 * [[SDL_Rect]]
 * [[SDL_RectEmpty]]
-* [[SDL_RectEquals]]
-* [[SDL_UnionFRect]]
-* [[SDL_UnionRect]]
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

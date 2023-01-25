@@ -38,8 +38,6 @@ The main difference between these two values comes into play in situations where
 * [[SDL_GetScancodeFromName]]
 * [[SDL_GetScancodeName]]
 * [[SDL_HasScreenKeyboardSupport]]
-* [[SDL_IsScreenKeyboardShown]]
-* [[SDL_IsTextInputActive]]
 * [[SDL_Keycode]]
 * [[SDL_Keymod]]
 * [[SDL_Keysym]]

@@ -18,8 +18,6 @@ This category contains functions for handling the general interface for SDL to r
 <<FullSearchCached(category:CategoryIO -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_AllocRW]]
-* [[SDL_FreeRW]]
 * [[SDL_ReadBE16]]
 * [[SDL_ReadBE32]]
 * [[SDL_ReadBE64]]

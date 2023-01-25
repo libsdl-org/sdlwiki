@@ -26,7 +26,6 @@ This category contains functions for advanced, platform-specific functionality.
 * [[SDL_DXGIGetOutputInfo]]
 * [[SDL_iPhoneSetAnimationCallback]]
 * [[SDL_iPhoneSetEventPump]]
-* [[SDL_RenderGetD3D9Device]]
 * [[SDL_SetWindowsMessageHook]]
 <!-- END CATEGORY LIST -->
 ----

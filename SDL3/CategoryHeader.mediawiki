@@ -1,8 +1,6 @@
 = CategoryHeader =
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GameControllerBindType]]
-* [[SDL_GameControllerButtonBind]]
 * [[SDL_OpenURL]]
 * [[SDLEnumTemplate]]
 * [[SDLFunctionTemplate]]

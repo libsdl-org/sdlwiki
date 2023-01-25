@@ -27,7 +27,6 @@ This category contains all the (public) structures for SDL.
 * [[SDL_Finger]]
 * [[SDL_FPoint]]
 * [[SDL_FRect]]
-* [[SDL_GameControllerButtonBind]]
 * [[SDL_HapticCondition]]
 * [[SDL_HapticConstant]]
 * [[SDL_HapticCustom]]
