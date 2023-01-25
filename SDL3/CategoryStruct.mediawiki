@@ -35,7 +35,6 @@ This category contains all the (public) structures for SDL.
 * [[SDL_HapticPeriodic]]
 * [[SDL_HapticRamp]]
 * [[SDL_JoyAxisEvent]]
-* [[SDL_JoyBallEvent]]
 * [[SDL_JoyButtonEvent]]
 * [[SDL_JoyDeviceEvent]]
 * [[SDL_JoyHatEvent]]

@@ -37,7 +37,6 @@ An SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP event occurs whenever a user presses or 
 == Related Structures ==
 :[[SDL_Event]]
 :[[SDL_JoyAxisEvent]]
-:[[SDL_JoyBallEvent]]
 :[[SDL_JoyHatEvent]]
 
 == Related Functions ==
