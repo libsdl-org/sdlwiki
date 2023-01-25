@@ -36,7 +36,6 @@ An SDL_JOYAXISMOTION event occurs whenever a user moves an axis on the joystick.
 
 == Related Structures ==
 :[[SDL_Event]]
-:[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
 :[[SDL_JoyHatEvent]]
 

@@ -51,7 +51,6 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 * [[SDL_HasEvent]]
 * [[SDL_HasEvents]]
 * [[SDL_JoyAxisEvent]]
-* [[SDL_JoyBallEvent]]
 * [[SDL_JoyButtonEvent]]
 * [[SDL_JoyDeviceEvent]]
 * [[SDL_JoyHatEvent]]

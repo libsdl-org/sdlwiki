@@ -88,9 +88,6 @@ An enumeration of the types of events that can be delivered.
 |[[SDL_JoyAxisEvent|SDL_JOYAXISMOTION]]
 |joystick axis motion
 |-
-|[[SDL_JoyBallEvent|SDL_JOYBALLMOTION]]
-|joystick trackball motion
-|-
 |[[SDL_JoyHatEvent|SDL_JOYHATMOTION]]
 |joystick hat position change
 |-
@@ -259,7 +256,6 @@ This is how these events currently map to the underlying OS:
 
 == Related Structures ==
 : [[SDL_JoyAxisEvent]]
-: [[SDL_JoyBallEvent]]
 : [[SDL_JoyButtonEvent]]
 : [[SDL_JoyHatEvent]]
 : [[SDL_JoyDeviceEvent]]

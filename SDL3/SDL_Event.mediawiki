@@ -44,10 +44,6 @@ A union that contains structures for the different event types.
 |'''jaxis'''
 |joystick axis event data
 |-
-|[[SDL_JoyBallEvent]]
-|'''jball'''
-|joystick ball event data
-|-
 |[[SDL_JoyHatEvent]]
 |'''jhat'''
 |joystick hat event data
@@ -192,10 +188,6 @@ SDL_PushEvent(&user_event);
 |[[SDL_JoyAxisEvent]]
 |'''jaxis'''
 |-
-|SDL_JOYBALLMOTION
-|[[SDL_JoyBallEvent]]
-|'''jball'''
-|-
 |SDL_JOYHATMOTION
 |[[SDL_JoyHatEvent]]
 |'''jhat'''
@@ -259,7 +251,6 @@ SDL_PushEvent(&user_event);
 :[[SDL_ControllerDeviceEvent]]
 :[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
-:[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
 :[[SDL_JoyDeviceEvent]]
 :[[SDL_JoyHatEvent]]

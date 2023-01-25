@@ -52,7 +52,6 @@ Note that zero means the POV is centered.
 == Related Structures ==
 :[[SDL_Event]]
 :[[SDL_JoyAxisEvent]]
-:[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
 
 == Related Functions ==
