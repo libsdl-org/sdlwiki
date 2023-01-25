@@ -43,7 +43,8 @@ This function is available since SDL 3.0.0.
 == Code Examples ==
 
 <syntaxhighlight lang='c++'>
-#include "SDL.h"
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 
 int main(int argc, char *argv[])
 {
@@ -58,11 +59,11 @@ int main(int argc, char *argv[])
 
     win = SDL_CreateWindow("Hello World", posX, posY, width, height, 0);
 
-    renderer = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED);
+    renderer = SDL_CreateRenderer(win, NULL, SDL_RENDERER_ACCELERATED);
 
     bitmapSurface = SDL_LoadBMP("img/hello.bmp");
     bitmapTex = SDL_CreateTextureFromSurface(renderer, bitmapSurface);
-    SDL_FreeSurface(bitmapSurface);
+    SDL_DestroySurface(bitmapSurface);
 
     while (!loopShouldStop)
     {
@@ -71,14 +72,14 @@ int main(int argc, char *argv[])
         {
             switch (event.type)
             {
-                case SDL_QUIT:
+                case SDL_EVENT_QUIT:
                     loopShouldStop = SDL_TRUE;
                     break;
             }
         }
 
         SDL_RenderClear(renderer);
-        SDL_RenderCopy(renderer, bitmapTex, NULL, NULL);
+        SDL_RenderTexture(renderer, bitmapTex, NULL, NULL);
         SDL_RenderPresent(renderer);
     }
 
