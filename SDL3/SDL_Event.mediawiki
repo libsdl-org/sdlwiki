@@ -138,11 +138,11 @@ printf("Event queue empty.\n");
 <span id="push"></span>
 ~+'''Placing events on the event queue'''+~
 
-It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [[SDL_PushEvent]]() and [[SDL_PeepEvents]]() allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the '''type''' member and filling the appropriate member structure with information.
+It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [[SDL_PushEvent]]() and [[SDL_PeepEvents]]() allow you to place events onto the event queue. This is usually used to place a SDL_EVENT_USER on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the '''type''' member and filling the appropriate member structure with information.
 <syntaxhighlight lang='c++'>
 SDL_Event user_event;
 
-user_event.type = SDL_USEREVENT;
+user_event.type = SDL_EVENT_USER;
 user_event.user.code = 2;
 user_event.user.data1 = NULL;
 user_event.user.data2 = NULL;
@@ -156,83 +156,83 @@ SDL_PushEvent(&user_event);
 |''Event Structure''
 |''SDL_Event Field''
 |-
-|SDL_AUDIODEVICEADDED<br/>SDL_AUDIODEVICEREMOVED
+|SDL_EVENT_AUDIO_DEVICE_ADDED<br/>SDL_EVENT_AUDIO_DEVICE_REMOVED
 |[[SDL_AudioDeviceEvent]]
 |'''adevice'''
 |-
-|SDL_CONTROLLERAXISMOTION
+|SDL_EVENT_GAMEPAD_AXIS_MOTION
 |[[SDL_ControllerAxisEvent]]
 |'''caxis'''
 |-
-|SDL_CONTROLLERBUTTONDOWN<br/>SDL_CONTROLLERBUTTONUP
+|SDL_EVENT_GAMEPAD_BUTTON_DOWN<br/>SDL_EVENT_GAMEPAD_BUTTON_UP
 |[[SDL_ControllerButtonEvent]]
 |'''cbutton'''
 |-
-|SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
+|SDL_EVENT_GAMEPAD_ADDED<br/>SDL_EVENT_GAMEPAD_REMOVED<br/>SDL_EVENT_GAMEPAD_REMAPPED
 |[[SDL_ControllerDeviceEvent]]
 |'''cdevice'''
 |-dg
-|SDL_DROPFILE<br/>SDL_DROPTEXT<br/>SDL_DROPBEGIN<br/>SDL_DROPCOMPLETE
+|SDL_EVENT_DROP_FILE<br/>SDL_EVENT_DROP_TEXT<br/>SDL_EVENT_DROP_BEGIN<br/>SDL_EVENT_DROP_COMPLETE
 |[[SDL_DropEvent]]
 |'''drop'''
 |-
-|SDL_FINGERMOTION<br/>SDL_FINGERDOWN<br/>SDL_FINGERUP
+|SDL_EVENT_FINGER_MOTION<br/>SDL_EVENT_FINGER_DOWN<br/>SDL_EVENT_FINGER_UP
 |[[SDL_TouchFingerEvent]]
 |'''tfinger'''
 |-
-|SDL_KEYDOWN<br/>SDL_KEYUP
+|SDL_EVENT_KEY_DOWN<br/>SDL_EVENT_KEY_UP
 |[[SDL_KeyboardEvent]]
 |'''key'''
 |-
-|SDL_JOYAXISMOTION
+|SDL_EVENT_JOYSTICK_AXIS_MOTION
 |[[SDL_JoyAxisEvent]]
 |'''jaxis'''
 |-
-|SDL_JOYHATMOTION
+|SDL_EVENT_JOYSTICK_HAT_MOTION
 |[[SDL_JoyHatEvent]]
 |'''jhat'''
 |-
-|SDL_JOYBUTTONDOWN<br/>SDL_JOYBUTTONUP
+|SDL_EVENT_JOYSTICK_BUTTON_DOWN<br/>SDL_EVENT_JOYSTICK_BUTTON_UP
 |[[SDL_JoyButtonEvent]]
 |'''jbutton'''
 |-
-|SDL_JOYDEVICEADDED<br/>SDL_JOYDEVICEREMOVED
+|SDL_EVENT_JOYSTICK_ADDED<br/>SDL_EVENT_JOYSTICK_REMOVED
 |[[SDL_JoyDeviceEvent]]
 |'''jdevice'''
 |-
-|SDL_MOUSEMOTION
+|SDL_EVENT_MOUSE_MOTION
 |[[SDL_MouseMotionEvent]]
 |'''motion'''
 |-
-|SDL_MOUSEBUTTONDOWN<br/>SDL_MOUSEBUTTONUP
+|SDL_EVENT_MOUSE_BUTTONDOWN<br/>SDL_EVENT_MOUSE_BUTTONUP
 |[[SDL_MouseButtonEvent]]
 |'''button'''
 |-
-|SDL_MOUSEWHEEL
+|SDL_EVENT_MOUSE_WHEEL
 |[[SDL_MouseWheelEvent]]
 |'''wheel'''
 |-
-|SDL_QUIT
+|SDL_EVENT_QUIT
 |[[SDL_QuitEvent]]
 |'''quit'''
 |-
-|SDL_SYSWMEVENT
+|SDL_EVENT_SYSWM
 |[[SDL_SysWMEvent]]
 |'''syswm'''
 |-
-|SDL_TEXTEDITING
+|SDL_EVENT_TEXT_EDITING
 |[[SDL_TextEditingEvent]]
 |'''edit'''
 |-
-|SDL_TEXTINPUT
+|SDL_EVENT_TEXT_INPUT
 |[[SDL_TextInputEvent]]
 |'''text'''
 |-
-|SDL_USEREVENT
+|SDL_EVENT_USER
 |[[SDL_UserEvent]]
 |'''user'''
 |-
-|SDL_WINDOWEVENT
+|SDL_EVENT_WINDOW_HIDDEN<br/>SDL_EVENT_WINDOW_EXPOSED<br/>SDL_EVENT_WINDOW_MOVED<br/>SDL_EVENT_WINDOW_RESIZED<br/>SDL_EVENT_WINDOW_SIZE_CHANGED<br/>SDL_EVENT_WINDOW_MINIMIZED<br/>SDL_EVENT_WINDOW_MAXIMIZED<br/>SDL_EVENT_WINDOW_RESTORED<br/>SDL_EVENT_WINDOW_MOUSE_ENTER<br/>SDL_EVENT_WINDOW_MOUSE_LEAVE<br/>SDL_EVENT_WINDOW_FOCUS_GAINED<br/>SDL_EVENT_WINDOW_FOCUS_LOST<br/>SDL_EVENT_WINDOW_CLOSE_REQUESTED<br/>SDL_EVENT_WINDOW_TAKE_FOCUS<br/>SDL_EVENT_WINDOW_HIT_TEST<br/>SDL_EVENT_WINDOW_ICCPROF_CHANGED<br/>SDL_EVENT_WINDOW_DISPLAY_CHANGED<br/>
 |[[SDL_WindowEvent]]
 |'''window'''
 |-
