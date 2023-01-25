@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_SetWindowMinimumSize =
 
-Set the minimum size of a window's client area.
+Set the minimum size of a window's client area, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowMinimumSize(SDL_Window * window,
-                              int min_w, int min_h);
+void SDL_SetWindowMinimumSize(SDL_Window *window, int min_w, int min_h);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -17,10 +16,10 @@ void SDL_SetWindowMinimumSize(SDL_Window * window,
 |the window to change
 |-
 |'''min_w'''
-|the minimum width of the window in pixels
+|the minimum width of the window
 |-
 |'''min_h'''
-|the minimum height of the window in pixels
+|the minimum height of the window
 |}
 
 == Version ==

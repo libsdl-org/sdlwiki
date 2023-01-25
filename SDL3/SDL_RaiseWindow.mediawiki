@@ -6,7 +6,7 @@ Raise a window above other windows and set the input focus.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_RaiseWindow(SDL_Window * window);
+void SDL_RaiseWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

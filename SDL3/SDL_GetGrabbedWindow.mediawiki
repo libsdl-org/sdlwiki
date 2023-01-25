@@ -13,7 +13,7 @@ Get the window that currently has an input grab enabled.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Window * SDL_GetGrabbedWindow(void);
+SDL_Window* SDL_GetGrabbedWindow(void);
 </syntaxhighlight>
 
 == Return Value ==

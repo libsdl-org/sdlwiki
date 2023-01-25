@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_SetWindowPosition =
 
-Set the position of a window.
+Set the position of a window, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowPosition(SDL_Window * window,
-                           int x, int y);
+void SDL_SetWindowPosition(SDL_Window *window, int x, int y);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -17,15 +16,11 @@ void SDL_SetWindowPosition(SDL_Window * window,
 |the window to reposition
 |-
 |'''x'''
-|the x coordinate of the window in screen coordinates, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
+|the x coordinate of the window, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |-
 |'''y'''
-|the y coordinate of the window in screen coordinates, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
+|the y coordinate of the window, or <code>[[SDL_WINDOWPOS_CENTERED]]</code> or <code>[[SDL_WINDOWPOS_UNDEFINED]]</code>
 |}
-
-== Remarks ==
-
-The window coordinate origin is the upper left of the display.
 
 == Version ==
 

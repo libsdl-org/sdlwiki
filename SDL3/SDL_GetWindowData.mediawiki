@@ -6,8 +6,7 @@ Retrieve the data pointer associated with a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_GetWindowData(SDL_Window * window,
-                        const char *name);
+void* SDL_GetWindowData(SDL_Window *window, const char *name);
 </syntaxhighlight>
 
 == Function Parameters ==

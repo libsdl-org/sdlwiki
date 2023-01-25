@@ -6,7 +6,7 @@ Copy the window surface to the screen.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_UpdateWindowSurface(SDL_Window * window);
+int SDL_UpdateWindowSurface(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

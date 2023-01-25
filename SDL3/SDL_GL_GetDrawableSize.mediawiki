@@ -13,8 +13,7 @@ Get the size of a window's underlying drawable in pixels.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_GL_GetDrawableSize(SDL_Window * window, int *w,
-                            int *h);
+void SDL_GL_GetDrawableSize(SDL_Window *window, int *w, int *h);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -33,12 +32,6 @@ void SDL_GL_GetDrawableSize(SDL_Window * window, int *w,
 == Remarks ==
 
 This returns info useful for calling glViewport().
-
-This may differ from [[SDL_GetWindowSize]]() if we're rendering to a
-high-DPI drawable, i.e. the window was created with
-<code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on a platform with high-DPI
-support (Apple calls this "Retina"), and not disabled by the
-<code>[[SDL_HINT_VIDEO_HIGHDPI_DISABLED]]</code> hint.
 
 == Version ==
 

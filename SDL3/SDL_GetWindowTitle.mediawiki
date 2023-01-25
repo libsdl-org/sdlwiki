@@ -6,7 +6,7 @@ Get the title of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-const char* SDL_GetWindowTitle(SDL_Window * window);
+const char* SDL_GetWindowTitle(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

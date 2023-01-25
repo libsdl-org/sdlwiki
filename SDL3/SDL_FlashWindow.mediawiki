@@ -6,7 +6,7 @@ Request a window to demand attention from the user.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_FlashWindow(SDL_Window * window, SDL_FlashOperation operation);
+int SDL_FlashWindow(SDL_Window *window, SDL_FlashOperation operation);
 </syntaxhighlight>
 
 == Function Parameters ==

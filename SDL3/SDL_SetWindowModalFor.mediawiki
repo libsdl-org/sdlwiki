@@ -14,7 +14,7 @@ Set the window as a modal for another window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowModalFor(SDL_Window * modal_window, SDL_Window * parent_window);
+int SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
 </syntaxhighlight>
 
 == Function Parameters ==

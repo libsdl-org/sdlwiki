@@ -6,8 +6,7 @@ Set a window's input grab mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowGrab(SDL_Window * window,
-                       SDL_bool grabbed);
+void SDL_SetWindowGrab(SDL_Window *window, SDL_bool grabbed);
 </syntaxhighlight>
 
 == Function Parameters ==

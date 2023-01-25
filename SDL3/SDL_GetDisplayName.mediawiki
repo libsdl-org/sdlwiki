@@ -14,7 +14,7 @@ Get the name of a display in UTF-8 encoding.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-const char * SDL_GetDisplayName(int displayIndex);
+const char* SDL_GetDisplayName(int displayIndex);
 </syntaxhighlight>
 
 == Function Parameters ==

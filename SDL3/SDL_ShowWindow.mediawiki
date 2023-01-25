@@ -6,7 +6,7 @@ Show a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_ShowWindow(SDL_Window * window);
+void SDL_ShowWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

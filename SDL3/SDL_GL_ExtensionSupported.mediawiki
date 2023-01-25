@@ -6,8 +6,7 @@ Check if an OpenGL extension is supported for the current context.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_bool SDL_GL_ExtensionSupported(const char
-                                   *extension);
+SDL_bool SDL_GL_ExtensionSupported(const char *extension);
 </syntaxhighlight>
 
 == Function Parameters ==

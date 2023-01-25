@@ -6,7 +6,7 @@ Create an SDL window from an existing native window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Window * SDL_CreateWindowFrom(const void *data);
+SDL_Window* SDL_CreateWindowFrom(const void *data);
 </syntaxhighlight>
 
 == Function Parameters ==

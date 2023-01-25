@@ -6,7 +6,7 @@ Get the index of the display associated with a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetWindowDisplayIndex(SDL_Window * window);
+int SDL_GetWindowDisplayIndex(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

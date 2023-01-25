@@ -6,7 +6,7 @@ Get a window's keyboard grab mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_bool SDL_GetWindowKeyboardGrab(SDL_Window * window);
+SDL_bool SDL_GetWindowKeyboardGrab(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

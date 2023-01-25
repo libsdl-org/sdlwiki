@@ -6,9 +6,7 @@ Associate an arbitrary named pointer with a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_SetWindowData(SDL_Window * window,
-                        const char *name,
-                        void *userdata);
+void* SDL_SetWindowData(SDL_Window *window, const char *name, void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==

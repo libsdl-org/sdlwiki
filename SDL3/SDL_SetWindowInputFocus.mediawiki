@@ -14,7 +14,7 @@ Explicitly set input focus to the window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowInputFocus(SDL_Window * window);
+int SDL_SetWindowInputFocus(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

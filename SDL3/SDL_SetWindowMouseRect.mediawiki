@@ -6,7 +6,7 @@ Confines the cursor to the specified area of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowMouseRect(SDL_Window * window, const SDL_Rect * rect);
+int SDL_SetWindowMouseRect(SDL_Window *window, const SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==

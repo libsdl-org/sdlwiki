@@ -6,7 +6,7 @@ Get information about the current display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetCurrentDisplayMode(int displayIndex, SDL_DisplayMode * mode);
+int SDL_GetCurrentDisplayMode(int displayIndex, SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==

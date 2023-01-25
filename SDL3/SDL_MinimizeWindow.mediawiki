@@ -6,7 +6,7 @@ Minimize a window to an iconic representation.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_MinimizeWindow(SDL_Window * window);
+void SDL_MinimizeWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

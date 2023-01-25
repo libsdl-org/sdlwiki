@@ -6,9 +6,7 @@ Create a window with the specified position, dimensions, and flags.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Window * SDL_CreateWindow(const char *title,
-                              int x, int y, int w,
-                              int h, Uint32 flags);
+SDL_Window* SDL_CreateWindow(const char *title, int x, int y, int w, int h, Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -53,22 +51,19 @@ Returns the window that was created or NULL on failure; call
 * <code>[[SDL_WINDOW_MINIMIZED]]</code>: window is minimized
 * <code>[[SDL_WINDOW_MAXIMIZED]]</code>: window is maximized
 * <code>[[SDL_WINDOW_INPUT_GRABBED]]</code>: window has grabbed input focus
-* <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>: window should be created in high-DPI mode if supported (>= SDL 2.0.1)
 
 The [[SDL_Window]] is implicitly shown if [[SDL_WINDOW_HIDDEN]] is not set.
 
 On Apple's macOS, you '''must''' set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
 
-If the window is created with the <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>
-flag, its size in pixels may differ from its size in screen coordinates on
-platforms with high-DPI support (e.g. iOS and macOS). Use
-[[SDL_GetWindowSize]]() to query the client area's size in screen
+ The window size in pixels may differ from its size in screen coordinates
+if the window is on a high density display (one with an OS scaling factor).
+Use [[SDL_GetWindowSize]]() to query the client area's size in screen
 coordinates, and [[SDL_GetWindowSizeInPixels]]() or
 [[SDL_GetRendererOutputSize]]() to query the drawable size in pixels. Note
-that when this flag is set, the drawable size can vary after the window is
-created and should be queried after major window events such as when the
-window is resized or moved between displays.
+that the drawable size can vary after the window is created and should be
+queried again when the window is resized or moved between displays.
 
 If the window is set fullscreen, the width and height parameters
 <code>w</code> and <code>h</code> will not be used. However, invalid size

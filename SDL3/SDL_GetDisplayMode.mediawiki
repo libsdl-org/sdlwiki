@@ -6,8 +6,7 @@ Get information about a specific display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayMode(int displayIndex, int modeIndex,
-                       SDL_DisplayMode * mode);
+int SDL_GetDisplayMode(int displayIndex, int modeIndex, SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -34,6 +33,7 @@ The display modes are sorted in this priority:
 
 * width -> largest to smallest
 * height -> largest to smallest
+* display_scale -> smallest to largest
 * bits per pixel -> more colors to fewer colors
 * packed pixel layout -> largest to smallest
 * refresh rate -> highest to lowest

@@ -6,7 +6,7 @@ Hide a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_HideWindow(SDL_Window * window);
+void SDL_HideWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

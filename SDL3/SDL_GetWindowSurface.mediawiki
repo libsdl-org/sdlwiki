@@ -6,7 +6,7 @@ Get the SDL surface associated with the window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Surface * SDL_GetWindowSurface(SDL_Window * window);
+SDL_Surface* SDL_GetWindowSurface(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

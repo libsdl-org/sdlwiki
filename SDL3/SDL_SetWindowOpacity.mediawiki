@@ -14,7 +14,7 @@ Set the opacity for a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowOpacity(SDL_Window * window, float opacity);
+int SDL_SetWindowOpacity(SDL_Window *window, float opacity);
 </syntaxhighlight>
 
 == Function Parameters ==

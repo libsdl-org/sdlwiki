@@ -6,7 +6,7 @@ Get the pixel format associated with the window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-Uint32 SDL_GetWindowPixelFormat(SDL_Window * window);
+Uint32 SDL_GetWindowPixelFormat(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

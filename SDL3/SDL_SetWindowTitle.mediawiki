@@ -6,8 +6,7 @@ Set the title of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowTitle(SDL_Window * window,
-                        const char *title);
+void SDL_SetWindowTitle(SDL_Window *window, const char *title);
 </syntaxhighlight>
 
 == Function Parameters ==

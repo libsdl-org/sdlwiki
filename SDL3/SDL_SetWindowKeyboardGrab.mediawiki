@@ -6,8 +6,7 @@ Set a window's keyboard grab mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowKeyboardGrab(SDL_Window * window,
-                               SDL_bool grabbed);
+void SDL_SetWindowKeyboardGrab(SDL_Window *window, SDL_bool grabbed);
 </syntaxhighlight>
 
 == Function Parameters ==

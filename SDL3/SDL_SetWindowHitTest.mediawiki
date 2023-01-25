@@ -13,9 +13,7 @@ Provide a callback that decides if a window region has special properties.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowHitTest(SDL_Window * window,
-                         SDL_HitTest callback,
-                         void *callback_data);
+int SDL_SetWindowHitTest(SDL_Window *window, SDL_HitTest callback, void *callback_data);
 </syntaxhighlight>
 
 == Function Parameters ==

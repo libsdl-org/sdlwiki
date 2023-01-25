@@ -1,12 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_GetDisplayBounds =
 
-Get the desktop area represented by a display.
+Get the desktop area represented by a display, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect);
+int SDL_GetDisplayBounds(int displayIndex, SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==

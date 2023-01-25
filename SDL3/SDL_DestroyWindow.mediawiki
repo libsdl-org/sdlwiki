@@ -6,7 +6,7 @@ Destroy a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_DestroyWindow(SDL_Window * window);
+void SDL_DestroyWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

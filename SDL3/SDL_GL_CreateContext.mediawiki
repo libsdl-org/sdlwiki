@@ -6,8 +6,7 @@ Create an OpenGL context for an OpenGL window, and make it current.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_GLContext SDL_GL_CreateContext(SDL_Window *
-                                   window);
+SDL_GLContext SDL_GL_CreateContext(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -9,12 +9,12 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 = SDL_GetDisplayUsableBounds =
 
-Get the usable desktop area represented by a display.
+Get the usable desktop area represented by a display, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect);
+int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==

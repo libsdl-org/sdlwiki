@@ -6,7 +6,7 @@ Get a window from a stored ID.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Window * SDL_GetWindowFromID(SDL_WindowID id);
+SDL_Window* SDL_GetWindowFromID(SDL_WindowID id);
 </syntaxhighlight>
 
 == Function Parameters ==

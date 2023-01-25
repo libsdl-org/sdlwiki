@@ -6,7 +6,7 @@ Get the index of the display containing a point
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayIndexForPoint(const SDL_Point * point);
+int SDL_GetDisplayIndexForPoint(const SDL_Point *point);
 </syntaxhighlight>
 
 == Function Parameters ==

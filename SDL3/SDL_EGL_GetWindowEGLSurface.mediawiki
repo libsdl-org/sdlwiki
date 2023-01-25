@@ -6,7 +6,7 @@ Get the EGL surface associated with the window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_EGLSurface SDL_EGL_GetWindowEGLSurface(SDL_Window * window);
+SDL_EGLSurface SDL_EGL_GetWindowEGLSurface(SDL_Window *window);
 </syntaxhighlight>
 
 == Return Value ==

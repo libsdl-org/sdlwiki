@@ -6,8 +6,7 @@ Query the display mode to use when a window is visible at fullscreen.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetWindowDisplayMode(SDL_Window * window,
-                             SDL_DisplayMode * mode);
+int SDL_GetWindowDisplayMode(SDL_Window *window, SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==

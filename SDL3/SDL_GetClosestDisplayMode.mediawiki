@@ -6,7 +6,7 @@ Get the closest match to the requested display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayMode * mode, SDL_DisplayMode * closest);
+SDL_DisplayMode* SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayMode *mode, SDL_DisplayMode *closest);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -14,8 +14,7 @@ Set the border state of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowBordered(SDL_Window * window,
-                           SDL_bool bordered);
+void SDL_SetWindowBordered(SDL_Window *window, SDL_bool bordered);
 </syntaxhighlight>
 
 == Function Parameters ==

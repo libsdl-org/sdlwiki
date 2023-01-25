@@ -6,8 +6,7 @@ Set a window's mouse grab mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowMouseGrab(SDL_Window * window,
-                            SDL_bool grabbed);
+void SDL_SetWindowMouseGrab(SDL_Window *window, SDL_bool grabbed);
 </syntaxhighlight>
 
 == Function Parameters ==

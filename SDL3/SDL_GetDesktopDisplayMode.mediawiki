@@ -6,7 +6,7 @@ Get information about the desktop's display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDesktopDisplayMode(int displayIndex, SDL_DisplayMode * mode);
+int SDL_GetDesktopDisplayMode(int displayIndex, SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==

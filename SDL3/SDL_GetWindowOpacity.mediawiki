@@ -14,7 +14,7 @@ Get the opacity of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetWindowOpacity(SDL_Window * window, float * out_opacity);
+int SDL_GetWindowOpacity(SDL_Window *window, float *out_opacity);
 </syntaxhighlight>
 
 == Function Parameters ==

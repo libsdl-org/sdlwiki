@@ -6,7 +6,7 @@ Make a window as large as possible.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_MaximizeWindow(SDL_Window * window);
+void SDL_MaximizeWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

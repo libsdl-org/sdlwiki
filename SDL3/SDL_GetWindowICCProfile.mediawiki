@@ -6,7 +6,7 @@ Get the raw ICC profile data for the screen the window is currently on.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_GetWindowICCProfile(SDL_Window * window, size_t* size);
+void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 </syntaxhighlight>
 
 == Function Parameters ==

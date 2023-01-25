@@ -6,7 +6,7 @@ Get the numeric ID of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_WindowID SDL_GetWindowID(SDL_Window * window);
+SDL_WindowID SDL_GetWindowID(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

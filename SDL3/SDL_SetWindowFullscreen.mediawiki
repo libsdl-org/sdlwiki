@@ -6,8 +6,7 @@ Set a window's fullscreen state.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowFullscreen(SDL_Window * window,
-                            Uint32 flags);
+int SDL_SetWindowFullscreen(SDL_Window *window, Uint32 flags);
 </syntaxhighlight>
 
 == Function Parameters ==

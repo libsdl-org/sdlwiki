@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_GetWindowMaximumSize =
 
-Get the maximum size of a window's client area.
+Get the maximum size of a window's client area, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_GetWindowMaximumSize(SDL_Window * window,
-                              int *w, int *h);
+void SDL_GetWindowMaximumSize(SDL_Window *window, int *w, int *h);
 </syntaxhighlight>
 
 == Function Parameters ==

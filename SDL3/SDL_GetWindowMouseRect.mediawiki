@@ -6,7 +6,7 @@ Get the mouse confinement rectangle of a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-const SDL_Rect * SDL_GetWindowMouseRect(SDL_Window * window);
+const SDL_Rect* SDL_GetWindowMouseRect(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

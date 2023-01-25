@@ -9,14 +9,12 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 = SDL_GetWindowBordersSize =
 
-Get the size of a window's borders (decorations) around the client area.
+Get the size of a window's borders (decorations) around the client area, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetWindowBordersSize(SDL_Window * window,
-                             int *top, int *left,
-                             int *bottom, int *right);
+int SDL_GetWindowBordersSize(SDL_Window *window, int *top, int *left, int *bottom, int *right);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_GetWindowPosition =
 
-Get the position of a window.
+Get the position of a window, in screen coordinates.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_GetWindowPosition(SDL_Window * window,
-                           int *x, int *y);
+void SDL_GetWindowPosition(SDL_Window *window, int *x, int *y);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -17,10 +16,10 @@ void SDL_GetWindowPosition(SDL_Window * window,
 |the window to query
 |-
 |'''x'''
-|a pointer filled in with the x position of the window, in screen coordinates, may be NULL
+|a pointer filled in with the x position of the window, may be NULL
 |-
 |'''y'''
-|a pointer filled in with the y position of the window, in screen coordinates, may be NULL
+|a pointer filled in with the y position of the window, may be NULL
 |}
 
 == Remarks ==

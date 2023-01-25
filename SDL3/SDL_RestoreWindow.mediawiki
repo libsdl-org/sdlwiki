@@ -6,7 +6,7 @@ Restore the size and position of a minimized or maximized window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_RestoreWindow(SDL_Window * window);
+void SDL_RestoreWindow(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

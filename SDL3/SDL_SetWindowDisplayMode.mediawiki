@@ -6,8 +6,7 @@ Set the display mode to use when a window is visible at fullscreen.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetWindowDisplayMode(SDL_Window * window,
-                             const SDL_DisplayMode * mode);
+int SDL_SetWindowDisplayMode(SDL_Window *window, const SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -6,8 +6,7 @@ Set the window to always be above the others.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowAlwaysOnTop(SDL_Window * window,
-                              SDL_bool on_top);
+void SDL_SetWindowAlwaysOnTop(SDL_Window *window, SDL_bool on_top);
 </syntaxhighlight>
 
 == Function Parameters ==

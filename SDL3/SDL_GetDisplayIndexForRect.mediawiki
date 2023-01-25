@@ -6,7 +6,7 @@ Get the index of the display primarily containing a rect
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayIndexForRect(const SDL_Rect * rect);
+int SDL_GetDisplayIndexForRect(const SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==
