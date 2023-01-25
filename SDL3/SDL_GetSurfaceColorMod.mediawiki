@@ -6,9 +6,9 @@ Get the additional color value multiplied into blit operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetSurfaceColorMod(SDL_Surface * surface,
-                           Uint8 * r, Uint8 * g,
-                           Uint8 * b);
+int SDL_GetSurfaceColorMod(SDL_Surface *surface,
+                           Uint8 *r, Uint8 *g,
+                           Uint8 *b);
 </syntaxhighlight>
 
 == Function Parameters ==

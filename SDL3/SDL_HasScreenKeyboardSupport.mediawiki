@@ -29,7 +29,7 @@ This function is available since SDL 3.0.0.
 == Related Functions ==
 
 :[[SDL_StartTextInput]]
-:[[SDL_IsScreenKeyboardShown]]
+:[[SDL_ScreenKeyboardShown]]
 
 ----
 [[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]

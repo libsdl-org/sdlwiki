@@ -20,7 +20,7 @@ Sint64 SDL_RWseek(SDL_RWops *context,
 |an offset in bytes, relative to '''whence''' location; can be negative
 |-
 |'''whence'''
-|any of <code>RW_SEEK_SET</code>, <code>RW_SEEK_CUR</code>, <code>RW_SEEK_END</code>
+|any of <code>[[SDL_RW_SEEK_SET]]</code>, <code>[[SDL_RW_SEEK_CUR]]</code>, <code>[[SDL_RW_SEEK_END]]</code>
 |}
 
 == Return Value ==
@@ -34,9 +34,9 @@ This function seeks to byte <code>offset</code>, relative to
 
 <code>whence</code> may be any of the following values:
 
-* <code>RW_SEEK_SET</code>: seek from the beginning of data
-* <code>RW_SEEK_CUR</code>: seek relative to current read point
-* <code>RW_SEEK_END</code>: seek relative to the end of data
+* <code>[[SDL_RW_SEEK_SET]]</code>: seek from the beginning of data
+* <code>[[SDL_RW_SEEK_CUR]]</code>: seek relative to current read point
+* <code>[[SDL_RW_SEEK_END]]</code>: seek relative to the end of data
 
 If this stream can not seek, it will return -1.
 

@@ -6,7 +6,7 @@ Load a BMP image from a seekable SDL data stream.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Surface* SDL_LoadBMP_RW(SDL_RWops * src,
+SDL_Surface* SDL_LoadBMP_RW(SDL_RWops *src,
                             int freesrc);
 </syntaxhighlight>
 
@@ -27,7 +27,7 @@ an error; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 
-The new surface should be freed with [[SDL_FreeSurface]](). Not doing so
+The new surface should be freed with [[SDL_DestroySurface]](). Not doing so
 will result in a memory leak.
 
 src is an open [[SDL_RWops]] buffer, typically loaded with
@@ -64,7 +64,7 @@ SDL_FreeSurface(image);
 
 == Related Functions ==
 
-:[[SDL_FreeSurface]]
+:[[SDL_DestroySurface]]
 :[[SDL_RWFromFile]]
 :[[SDL_LoadBMP]]
 :[[SDL_SaveBMP_RW]]

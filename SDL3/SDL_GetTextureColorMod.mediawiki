@@ -6,9 +6,7 @@ Get the additional color value multiplied into render copy operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetTextureColorMod(SDL_Texture * texture,
-                           Uint8 * r, Uint8 * g,
-                           Uint8 * b);
+int SDL_GetTextureColorMod(SDL_Texture *texture, Uint8 *r, Uint8 *g, Uint8 *b);
 </syntaxhighlight>
 
 == Function Parameters ==

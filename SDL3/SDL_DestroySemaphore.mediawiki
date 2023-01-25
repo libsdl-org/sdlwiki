@@ -6,7 +6,7 @@ Destroy a semaphore.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_DestroySemaphore(SDL_sem * sem);
+void SDL_DestroySemaphore(SDL_sem *sem);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -25,7 +25,7 @@ be determined.
 
 [[SDL_RWtell]] is actually a wrapper function that calls the
 [[SDL_RWops]]'s <code>seek</code> method, with an offset of 0 bytes from
-<code>RW_SEEK_CUR</code>, to simplify application development.
+<code>[[SDL_RW_SEEK_CUR]]</code>, to simplify application development.
 
 Prior to SDL 2.0.10, this function was a macro.
 

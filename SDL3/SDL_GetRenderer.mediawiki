@@ -6,7 +6,7 @@ Get the renderer associated with a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Renderer * SDL_GetRenderer(SDL_Window * window);
+SDL_Renderer* SDL_GetRenderer(SDL_Window *window);
 </syntaxhighlight>
 
 == Function Parameters ==

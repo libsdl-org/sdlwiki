@@ -6,8 +6,7 @@ Set the blend mode used for drawing operations (Fill and Line).
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetRenderDrawBlendMode(SDL_Renderer * renderer,
-                               SDL_BlendMode blendMode);
+int SDL_SetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -36,12 +35,12 @@ This function is available since SDL 3.0.0.
 == Related Functions ==
 
 :[[SDL_GetRenderDrawBlendMode]]
-:[[SDL_RenderDrawLine]]
-:[[SDL_RenderDrawLines]]
-:[[SDL_RenderDrawPoint]]
-:[[SDL_RenderDrawPoints]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
+:[[SDL_RenderLine]]
+:[[SDL_RenderLines]]
+:[[SDL_RenderPoint]]
+:[[SDL_RenderPoints]]
+:[[SDL_RenderRect]]
+:[[SDL_RenderRects]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
 

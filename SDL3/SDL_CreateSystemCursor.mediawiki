@@ -43,7 +43,7 @@ SDL_SetCursor(cursor);
 
 == Related Functions ==
 
-:[[SDL_FreeCursor]]
+:[[SDL_DestroyCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]

@@ -6,7 +6,7 @@ Wait indefinitely for the next available event.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_WaitEvent(SDL_Event * event);
+int SDL_WaitEvent(SDL_Event *event);
 </syntaxhighlight>
 
 == Function Parameters ==

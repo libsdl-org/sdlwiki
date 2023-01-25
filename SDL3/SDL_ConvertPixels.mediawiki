@@ -8,9 +8,9 @@ Copy a block of pixels of one format to another format.
 <syntaxhighlight lang='c'>
 int SDL_ConvertPixels(int width, int height,
                       Uint32 src_format,
-                      const void * src, int src_pitch,
+                      const void *src, int src_pitch,
                       Uint32 dst_format,
-                      void * dst, int dst_pitch);
+                      void *dst, int dst_pitch);
 </syntaxhighlight>
 
 == Function Parameters ==

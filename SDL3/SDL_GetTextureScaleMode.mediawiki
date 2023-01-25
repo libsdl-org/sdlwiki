@@ -6,8 +6,7 @@ Get the scale mode used for texture scale operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetTextureScaleMode(SDL_Texture * texture,
-                            SDL_ScaleMode *scaleMode);
+int SDL_GetTextureScaleMode(SDL_Texture *texture, SDL_ScaleMode *scaleMode);
 </syntaxhighlight>
 
 == Function Parameters ==

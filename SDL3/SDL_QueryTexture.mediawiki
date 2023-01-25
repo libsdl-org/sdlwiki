@@ -6,9 +6,7 @@ Query the attributes of a texture.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_QueryTexture(SDL_Texture * texture,
-                     Uint32 * format, int *access,
-                     int *w, int *h);
+int SDL_QueryTexture(SDL_Texture *texture, Uint32 *format, int *access, int *w, int *h);
 </syntaxhighlight>
 
 == Function Parameters ==

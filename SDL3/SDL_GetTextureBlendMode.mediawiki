@@ -6,8 +6,7 @@ Get the blend mode used for texture copy operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetTextureBlendMode(SDL_Texture * texture,
-                            SDL_BlendMode *blendMode);
+int SDL_GetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode *blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==

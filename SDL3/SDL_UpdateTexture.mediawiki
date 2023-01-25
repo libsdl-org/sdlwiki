@@ -6,9 +6,7 @@ Update the given texture rectangle with new pixel data.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_UpdateTexture(SDL_Texture * texture,
-                      const SDL_Rect * rect,
-                      const void *pixels, int pitch);
+int SDL_UpdateTexture(SDL_Texture *texture, const SDL_Rect *rect, const void *pixels, int pitch);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -45,7 +45,7 @@ unknown data format, or is corrupt; call [[SDL_GetError]]() for more
 information.
 
 When the application is done with the data returned in
-<code>audio_buf</code>, it should call [[SDL_FreeWAV]]() to dispose of it.
+<code>audio_buf</code>, it should call [[SDL_free]]() to dispose of it.
 
 == Remarks ==
 
@@ -70,7 +70,7 @@ function is written to <code>audio_buf</code> and its length in bytes to
 audio data in the buffer. The <code>samples</code> member is set to a sane
 default and all others are set to zero.
 
-It's necessary to use [[SDL_FreeWAV]]() to free the audio data returned in
+It's necessary to use [[SDL_free]]() to free the audio data returned in
 <code>audio_buf</code> when it is no longer used.
 
 Because of the underspecification of the .WAV format, there are many
@@ -127,7 +127,7 @@ if (SDL_LoadWAV_RW(myRWops, 1, &wav_spec, &wav_buffer, &wav_length) == NULL) {
 
 == Related Functions ==
 
-:[[SDL_FreeWAV]]
+:[[SDL_free]]
 :[[SDL_LoadWAV]]
 
 ----

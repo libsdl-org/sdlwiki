@@ -6,9 +6,8 @@ Write to an [[SDL_RWops]] data stream.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-size_t SDL_RWwrite(SDL_RWops *context,
-                   const void *ptr, size_t size,
-                   size_t num);
+Sint64 SDL_RWwrite(SDL_RWops *context,
+                   const void *ptr, Sint64 size);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -21,30 +20,35 @@ size_t SDL_RWwrite(SDL_RWops *context,
 |a pointer to a buffer containing data to write
 |-
 |'''size'''
-|the size of an object to write, in bytes
-|-
-|'''num'''
-|the number of objects to write
+|the number of bytes to write
 |}
 
 == Return Value ==
 
-Returns the number of objects written, which will be less than '''num''' on
-error; call [[SDL_GetError]]() for more information.
+Returns the number of bytes written, which will be less than
+<code>num</code> on error; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 
-This function writes exactly <code>num</code> objects each of size
-<code>size</code> from the area pointed at by <code>ptr</code> to the
-stream. If this fails for any reason, it'll return less than
-<code>num</code> to demonstrate how far the write progressed. On success,
-it returns <code>num</code>.
+This function writes exactly <code>size</code> bytes from the area pointed
+at by <code>ptr</code> to the stream. If this fails for any reason, it'll
+return less than <code>size</code> to demonstrate how far the write
+progressed. On success, it returns <code>num</code>.
+
+On error, this function still attempts to write as much as possible, so it
+might return a positive value less than the requested write size. If the
+function failed to write anything and there was an actual error, it will
+return -1. For streams that support non-blocking operation, if nothing was
+written because it would require blocking, this function returns -2 to
+distinguish that this is not an error and the caller can try again later.
 
 [[SDL_RWwrite]] is actually a function wrapper that calls the
 [[SDL_RWops]]'s <code>write</code> method appropriately, to simplify
 application development.
 
-Prior to SDL 2.0.10, this function was a macro.
+It is an error to specify a negative <code>size</code>, but this parameter
+is signed so you definitely cannot overflow the return value on a
+successful run with enormous amounts of data.
 
 == Version ==
 

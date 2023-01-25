@@ -6,7 +6,7 @@ Destroy a condition variable.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_DestroyCond(SDL_cond * cond);
+void SDL_DestroyCond(SDL_cond *cond);
 </syntaxhighlight>
 
 == Function Parameters ==

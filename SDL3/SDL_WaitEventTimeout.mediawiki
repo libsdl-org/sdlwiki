@@ -6,8 +6,7 @@ Wait until the specified timeout (in milliseconds) for the next available event.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_WaitEventTimeout(SDL_Event * event,
-                         int timeout);
+int SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -16,7 +15,7 @@ int SDL_WaitEventTimeout(SDL_Event * event,
 |'''event'''
 |the [[SDL_Event]] structure to be filled in with the next event from the queue, or NULL
 |-
-|'''timeout'''
+|'''timeoutMS'''
 |the maximum number of milliseconds to wait for the next available event
 |}
 
@@ -33,6 +32,9 @@ and stored in the [[SDL_Event]] structure pointed to by <code>event</code>.
 
 As this function may implicitly call [[SDL_PumpEvents]](), you can only
 call this function in the thread that initialized the video subsystem.
+
+The timeout is not guaranteed, the actual wait time could be longer due to
+system scheduling.
 
 == Version ==
 

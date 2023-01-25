@@ -6,7 +6,7 @@ Set up a surface for directly accessing the pixels.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_LockSurface(SDL_Surface * surface);
+int SDL_LockSurface(SDL_Surface *surface);
 </syntaxhighlight>
 
 == Function Parameters ==

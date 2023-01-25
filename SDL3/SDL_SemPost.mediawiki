@@ -6,7 +6,7 @@ Atomically increment a semaphore's value and wake waiting threads.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SemPost(SDL_sem * sem);
+int SDL_SemPost(SDL_sem *sem);
 </syntaxhighlight>
 
 == Function Parameters ==

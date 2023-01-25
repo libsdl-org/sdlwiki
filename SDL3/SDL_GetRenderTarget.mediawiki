@@ -14,7 +14,7 @@ Get the current render target.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Texture * SDL_GetRenderTarget(SDL_Renderer *renderer);
+SDL_Texture* SDL_GetRenderTarget(SDL_Renderer *renderer);
 </syntaxhighlight>
 
 == Function Parameters ==

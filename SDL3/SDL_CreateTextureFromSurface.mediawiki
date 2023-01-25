@@ -6,7 +6,7 @@ Create a texture from an existing surface.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Texture * SDL_CreateTextureFromSurface(SDL_Renderer * renderer, SDL_Surface * surface);
+SDL_Texture* SDL_CreateTextureFromSurface(SDL_Renderer *renderer, SDL_Surface *surface);
 </syntaxhighlight>
 
 == Function Parameters ==

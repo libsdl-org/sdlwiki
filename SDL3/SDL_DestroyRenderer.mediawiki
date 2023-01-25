@@ -6,7 +6,7 @@ Destroy the rendering context for a window and free associated textures.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_DestroyRenderer(SDL_Renderer * renderer);
+void SDL_DestroyRenderer(SDL_Renderer *renderer);
 </syntaxhighlight>
 
 == Function Parameters ==

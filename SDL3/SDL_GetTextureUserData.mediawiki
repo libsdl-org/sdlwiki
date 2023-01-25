@@ -6,7 +6,7 @@ Get the user-specified pointer associated with a texture
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void * SDL_GetTextureUserData(SDL_Texture * texture);
+void* SDL_GetTextureUserData(SDL_Texture *texture);
 </syntaxhighlight>
 
 == Function Parameters ==

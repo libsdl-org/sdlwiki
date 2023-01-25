@@ -6,16 +6,16 @@ Get the current power supply details.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_PowerState SDL_GetPowerInfo(int *secs, int *pct);
+SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''secs'''
+|'''seconds'''
 |seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
 |-
-|'''pct'''
+|'''percent'''
 |percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
 |}
 

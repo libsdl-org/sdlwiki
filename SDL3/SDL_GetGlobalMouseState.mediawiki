@@ -13,7 +13,7 @@ Get the current state of the mouse in relation to the desktop.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-Uint32 SDL_GetGlobalMouseState(int *x, int *y);
+Uint32 SDL_GetGlobalMouseState(float *x, float *y);
 </syntaxhighlight>
 
 == Function Parameters ==

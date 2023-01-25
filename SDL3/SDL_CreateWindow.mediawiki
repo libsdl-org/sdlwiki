@@ -55,10 +55,7 @@ Returns the window that was created or NULL on failure; call
 * <code>[[SDL_WINDOW_INPUT_GRABBED]]</code>: window has grabbed input focus
 * <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>: window should be created in high-DPI mode if supported (>= SDL 2.0.1)
 
-<code>[[SDL_WINDOW_SHOWN]]</code> is ignored by [[SDL_CreateWindow]](). The
-[[SDL_Window]] is implicitly shown if [[SDL_WINDOW_HIDDEN]] is not set.
-<code>[[SDL_WINDOW_SHOWN]]</code> may be queried later using
-[[SDL_GetWindowFlags]]().
+The [[SDL_Window]] is implicitly shown if [[SDL_WINDOW_HIDDEN]] is not set.
 
 On Apple's macOS, you '''must''' set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
@@ -67,7 +64,7 @@ If the window is created with the <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code>
 flag, its size in pixels may differ from its size in screen coordinates on
 platforms with high-DPI support (e.g. iOS and macOS). Use
 [[SDL_GetWindowSize]]() to query the client area's size in screen
-coordinates, and [[SDL_GL_GetDrawableSize]]() or
+coordinates, and [[SDL_GetWindowSizeInPixels]]() or
 [[SDL_GetRendererOutputSize]]() to query the drawable size in pixels. Note
 that when this flag is set, the drawable size can vary after the window is
 created and should be queried after major window events such as when the

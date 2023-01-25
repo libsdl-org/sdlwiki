@@ -6,10 +6,10 @@ Perform a fast, low quality, stretch blit between two surfaces of the same forma
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SoftStretch(SDL_Surface * src,
-                    const SDL_Rect * srcrect,
-                    SDL_Surface * dst,
-                    const SDL_Rect * dstrect);
+int SDL_SoftStretch(SDL_Surface *src,
+                    const SDL_Rect *srcrect,
+                    SDL_Surface *dst,
+                    const SDL_Rect *dstrect);
 </syntaxhighlight>
 
 == Remarks ==

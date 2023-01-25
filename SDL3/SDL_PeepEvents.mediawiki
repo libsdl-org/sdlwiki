@@ -24,10 +24,10 @@ int SDL_PeepEvents(SDL_Event * events, int numevents,
 |action to take; see [[#action|Remarks]] for details
 |-
 |'''minType'''
-|minimum value of the event type to be considered; [[SDL_FIRSTEVENT]] is a safe choice
+|minimum value of the event type to be considered; [[SDL_EVENT_FIRST]] is a safe choice
 |-
 |'''maxType'''
-|maximum value of the event type to be considered; [[SDL_LASTEVENT]] is a safe choice
+|maximum value of the event type to be considered; [[SDL_EVENT_LAST]] is a safe choice
 |}
 
 == Return Value ==

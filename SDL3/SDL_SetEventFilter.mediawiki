@@ -40,7 +40,7 @@ the application window. If the event filter returns 1, then the window will
 be closed, otherwise the window will remain open if possible.
 
 Note: Disabled events never make it to the event filter function; see
-[[SDL_EventState]]().
+[[SDL_SetEventEnabled]]().
 
 Note: If you just want to inspect events without filtering, you should use
 [[SDL_AddEventWatch]]() instead.
@@ -128,7 +128,7 @@ int main(int argc, char **argv)
 == Related Functions ==
 
 :[[SDL_AddEventWatch]]
-:[[SDL_EventState]]
+:[[SDL_SetEventEnabled]]
 :[[SDL_GetEventFilter]]
 :[[SDL_PeepEvents]]
 :[[SDL_PushEvent]]

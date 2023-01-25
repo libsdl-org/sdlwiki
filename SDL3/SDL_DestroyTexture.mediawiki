@@ -6,7 +6,7 @@ Destroy the specified texture.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_DestroyTexture(SDL_Texture * texture);
+void SDL_DestroyTexture(SDL_Texture *texture);
 </syntaxhighlight>
 
 == Function Parameters ==

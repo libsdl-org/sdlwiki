@@ -6,7 +6,7 @@ Wait until a condition variable is signaled.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_CondWait(SDL_cond * cond, SDL_mutex * mutex);
+int SDL_CondWait(SDL_cond *cond, SDL_mutex *mutex);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -31,7 +31,9 @@ another thread to call [[SDL_CondSignal]]() or [[SDL_CondBroadcast]]() on
 the condition variable <code>cond</code>. Once the condition variable is
 signaled, the mutex is re-locked and the function returns.
 
-The mutex must be locked before calling this function.
+The mutex must be locked before calling this function. Locking the mutex
+recursively (more than once) is not supported and leads to undefined
+behavior.
 
 This function is the equivalent of calling [[SDL_CondWaitTimeout]]() with a
 time length of <code>[[SDL_MUTEX_MAXWAIT]]</code>.

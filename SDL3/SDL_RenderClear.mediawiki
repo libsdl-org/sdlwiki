@@ -6,7 +6,7 @@ Clear the current rendering target with the drawing color.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_RenderClear(SDL_Renderer * renderer);
+int SDL_RenderClear(SDL_Renderer *renderer);
 </syntaxhighlight>
 
 == Function Parameters ==

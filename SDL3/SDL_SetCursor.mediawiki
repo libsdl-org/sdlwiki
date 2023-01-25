@@ -41,7 +41,6 @@ You can add your code example here
 
 :[[SDL_CreateCursor]]
 :[[SDL_GetCursor]]
-:[[SDL_ShowCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]

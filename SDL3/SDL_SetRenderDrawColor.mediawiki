@@ -6,9 +6,7 @@ Set the color used for drawing operations (Rect, Line and Clear).
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetRenderDrawColor(SDL_Renderer * renderer,
-                   Uint8 r, Uint8 g, Uint8 b,
-                   Uint8 a);
+int SDL_SetRenderDrawColor(SDL_Renderer *renderer, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -61,12 +59,12 @@ SDL_RenderFillRect(renderer, &rectangle);
 
 :[[SDL_GetRenderDrawColor]]
 :[[SDL_RenderClear]]
-:[[SDL_RenderDrawLine]]
-:[[SDL_RenderDrawLines]]
-:[[SDL_RenderDrawPoint]]
-:[[SDL_RenderDrawPoints]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
+:[[SDL_RenderLine]]
+:[[SDL_RenderLines]]
+:[[SDL_RenderPoint]]
+:[[SDL_RenderPoints]]
+:[[SDL_RenderRect]]
+:[[SDL_RenderRects]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
 

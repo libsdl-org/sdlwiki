@@ -6,7 +6,7 @@ Force the rendering context to flush any pending commands to the underlying rend
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_RenderFlush(SDL_Renderer * renderer);
+int SDL_RenderFlush(SDL_Renderer *renderer);
 </syntaxhighlight>
 
 == Function Parameters ==

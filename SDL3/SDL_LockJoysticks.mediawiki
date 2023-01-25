@@ -1,27 +1,19 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_LockJoysticks =
 
-Locking for multi-threaded access to the joystick API 
+Locking for atomic access to the joystick API 
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_LockJoysticks(void);
+void SDL_LockJoysticks(void) SDL_ACQUIRE(SDL_joystick_lock);
 </syntaxhighlight>
 
 == Remarks ==
 
-If you are using the joystick API or handling events from multiple threads
-you should use these locking functions to protect access to the joysticks.
-
-In particular, you are guaranteed that the joystick list won't change, so
-the API functions that take a joystick index will be valid, and joystick
-and game controller events will not be delivered.
-
-As of SDL 2.26.0, you can take the joystick lock around reinitializing the
-joystick subsystem, to prevent other threads from seeing joysticks in an
-uninitialized state. However, all open joysticks will be closed and SDL
-functions called with them will fail.
+The SDL joystick functions are thread-safe, however you can lock the
+joysticks while processing to guarantee that the joystick list won't change
+and joystick and gamepad events will not be delivered.
 
 == Version ==
 

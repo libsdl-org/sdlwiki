@@ -6,10 +6,10 @@ Perform bilinear scaling between two surfaces of the same format, 32BPP.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SoftStretchLinear(SDL_Surface * src,
-                    const SDL_Rect * srcrect,
-                    SDL_Surface * dst,
-                    const SDL_Rect * dstrect);
+int SDL_SoftStretchLinear(SDL_Surface *src,
+                    const SDL_Rect *srcrect,
+                    SDL_Surface *dst,
+                    const SDL_Rect *dstrect);
 </syntaxhighlight>
 
 == Version ==

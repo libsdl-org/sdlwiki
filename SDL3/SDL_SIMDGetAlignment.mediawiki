@@ -29,6 +29,11 @@ about. Plan accordingly.
 
 This function is available since SDL 3.0.0.
 
+== Related Functions ==
+
+:[[SDL_aligned_alloc]]
+:[[SDL_aligned_free]]
+
 ----
 [[CategoryAPI]]
 

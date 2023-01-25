@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_SetTextureBlendMode =
 
-Set the blend mode for a texture, used by [[SDL_RenderCopy]]().
+Set the blend mode for a texture, used by [[SDL_RenderTexture]]().
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetTextureBlendMode(SDL_Texture * texture,
-                            SDL_BlendMode blendMode);
+int SDL_SetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -37,7 +36,7 @@ This function is available since SDL 3.0.0.
 == Related Functions ==
 
 :[[SDL_GetTextureBlendMode]]
-:[[SDL_RenderCopy]]
+:[[SDL_RenderTexture]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]

@@ -14,9 +14,9 @@ Add a function to watch a particular hint.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_AddHintCallback(const char *name,
-                         SDL_HintCallback callback,
-                         void *userdata);
+int SDL_AddHintCallback(const char *name,
+                        SDL_HintCallback callback,
+                        void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -31,6 +31,11 @@ void SDL_AddHintCallback(const char *name,
 |'''userdata'''
 |a pointer to pass to the callback function
 |}
+
+== Return Value ==
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 == Version ==
 

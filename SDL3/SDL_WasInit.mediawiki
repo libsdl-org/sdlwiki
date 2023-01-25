@@ -21,8 +21,6 @@ Uint32 SDL_WasInit(Uint32 flags);
 Returns a mask of all initialized subsystems if <code>flags</code> is 0,
 otherwise it returns the initialization status of the specified subsystems.
 
-The return value does not include [[SDL_INIT_NOPARACHUTE]].
-
 == Version ==
 
 This function is available since SDL 3.0.0.

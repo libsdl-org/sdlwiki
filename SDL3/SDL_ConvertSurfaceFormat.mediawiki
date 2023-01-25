@@ -6,21 +6,18 @@ Copy an existing surface to a new surface of the specified format enum.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Surface* SDL_ConvertSurfaceFormat
-    (SDL_Surface * src, Uint32 pixel_format, Uint32 flags);
+SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface *surface,
+                                      Uint32 pixel_format);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''src'''
+|'''surface'''
 |the existing [[SDL_Surface]] structure to convert
 |-
 |'''pixel_format'''
 |the [[SDL_PixelFormatEnum]] that the new surface is optimized for
-|-
-|'''flags'''
-|the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API
 |}
 
 == Return Value ==
@@ -41,9 +38,9 @@ This function is available since SDL 3.0.0.
 
 == Related Functions ==
 
-:[[SDL_AllocFormat]]
+:[[SDL_CreatePixelFormat]]
 :[[SDL_ConvertSurface]]
-:[[SDL_CreateRGBSurface]]
+:[[SDL_CreateSurface]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]

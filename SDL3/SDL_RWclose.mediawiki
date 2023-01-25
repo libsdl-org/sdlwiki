@@ -25,7 +25,7 @@ Returns 0 on success or a negative error code on failure; call
 
 [[SDL_RWclose]]() closes and cleans up the [[SDL_RWops]] stream. It
 releases any resources used by the stream and frees the [[SDL_RWops]]
-itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the
+itself with [[SDL_DestroyRW]](). This returns 0 on success, or -1 if the
 stream failed to flush to its output (e.g. to disk).
 
 Note that if this fails to flush the stream to disk, this function reports

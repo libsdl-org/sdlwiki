@@ -6,9 +6,9 @@ Get logical coordinates of point in renderer when given real coordinates of poin
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_RenderWindowToLogical(SDL_Renderer * renderer, 
-                                    int windowX, int windowY, 
-                                    float *logicalX, float *logicalY);
+void SDL_RenderWindowToLogical(SDL_Renderer *renderer,
+                               float windowX, float windowY,
+                               float *logicalX, float *logicalY);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -41,10 +41,10 @@ This function is available since SDL 3.0.0.
 
 == Related Functions ==
 
-:[[SDL_RenderGetScale]]
-:[[SDL_RenderSetScale]]
-:[[SDL_RenderGetLogicalSize]]
-:[[SDL_RenderSetLogicalSize]]
+:[[SDL_GetRenderScale]]
+:[[SDL_SetRenderScale]]
+:[[SDL_GetRenderLogicalSize]]
+:[[SDL_SetRenderLogicalSize]]
 
 ----
 [[CategoryAPI]]

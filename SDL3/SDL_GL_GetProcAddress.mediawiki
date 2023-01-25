@@ -6,7 +6,7 @@ Get an OpenGL function by name.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_GL_GetProcAddress(const char *proc);
+SDL_FunctionPointer SDL_GL_GetProcAddress(const char *proc);
 </syntaxhighlight>
 
 == Function Parameters ==

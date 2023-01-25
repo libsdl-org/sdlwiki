@@ -11,7 +11,7 @@ Move the mouse cursor to the given position within the window.
 
 <syntaxhighlight lang='c'>
 void SDL_WarpMouseInWindow(SDL_Window * window,
-                           int x, int y);
+                           float x, float y);
 </syntaxhighlight>
 
 == Function Parameters ==

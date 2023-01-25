@@ -25,7 +25,6 @@ This function is available since SDL 3.0.0.
 
 == Related Functions ==
 
-:[[SDL_Has3DNow]]
 :[[SDL_HasAVX]]
 :[[SDL_HasAVX2]]
 :[[SDL_HasMMX]]

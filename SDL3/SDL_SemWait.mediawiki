@@ -6,7 +6,7 @@ Wait until a semaphore has a positive value and then decrements it.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SemWait(SDL_sem * sem);
+int SDL_SemWait(SDL_sem *sem);
 </syntaxhighlight>
 
 == Function Parameters ==

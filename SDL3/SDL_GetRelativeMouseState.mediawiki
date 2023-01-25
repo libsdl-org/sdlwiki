@@ -10,7 +10,7 @@ Retrieve the relative state of the mouse.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-Uint32 SDL_GetRelativeMouseState(int *x, int *y);
+Uint32 SDL_GetRelativeMouseState(float *x, float *y);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -6,10 +6,7 @@ Create a texture for a rendering context.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
-                                Uint32 format,
-                                int access, int w,
-                                int h);
+SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, Uint32 format, int access, int w, int h);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -6,8 +6,8 @@ Lock a portion of the texture for '''write-only''' pixel access.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_LockTexture(SDL_Texture * texture,
-                    const SDL_Rect * rect,
+int SDL_LockTexture(SDL_Texture *texture,
+                    const SDL_Rect *rect,
                     void **pixels, int *pitch);
 </syntaxhighlight>
 

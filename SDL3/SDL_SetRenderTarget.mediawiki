@@ -6,8 +6,7 @@ Set a texture as the current rendering target.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetRenderTarget(SDL_Renderer *renderer,
-                        SDL_Texture *texture);
+int SDL_SetRenderTarget(SDL_Renderer *renderer, SDL_Texture *texture);
 </syntaxhighlight>
 
 == Function Parameters ==

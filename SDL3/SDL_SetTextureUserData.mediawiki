@@ -6,8 +6,7 @@ Associate a user-specified pointer with a texture.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetTextureUserData(SDL_Texture * texture,
-                           void *userdata);
+int SDL_SetTextureUserData(SDL_Texture *texture, void *userdata);
 </syntaxhighlight>
 
 == Function Parameters ==

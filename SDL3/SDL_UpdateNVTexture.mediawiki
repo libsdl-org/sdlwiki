@@ -6,8 +6,8 @@ Update a rectangle within a planar NV12 or NV21 texture with new pixels.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_UpdateNVTexture(SDL_Texture * texture,
-                         const SDL_Rect * rect,
+int SDL_UpdateNVTexture(SDL_Texture *texture,
+                         const SDL_Rect *rect,
                          const Uint8 *Yplane, int Ypitch,
                          const Uint8 *UVplane, int UVpitch);
 </syntaxhighlight>

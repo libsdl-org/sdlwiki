@@ -6,7 +6,7 @@ Release a surface after directly accessing the pixels.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_UnlockSurface(SDL_Surface * surface);
+void SDL_UnlockSurface(SDL_Surface *surface);
 </syntaxhighlight>
 
 == Function Parameters ==

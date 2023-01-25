@@ -1,48 +1,34 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_RenderFillRects =
 
-Fill some number of rectangles on the current rendering target with the drawing color.
+Fill some number of rectangles on the current rendering target with the drawing color at subpixel precision.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_RenderFillRects(SDL_Renderer * renderer,
-                        const SDL_Rect * rects,
-                        int count);
+int SDL_RenderFillRects(SDL_Renderer *renderer, const SDL_FRect *rects, int count);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
 |'''renderer'''
-|the rendering context
+|The renderer which should fill multiple rectangles.
 |-
 |'''rects'''
-|an array of [[SDL_Rect]] structures representing the rectangles to be filled
+|A pointer to an array of destination rectangles.
 |-
 |'''count'''
-|the number of rectangles
+|The number of rectangles.
 |}
 
 == Return Value ==
 
-Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+Return 0 on success, or -1 on error
 
 == Version ==
 
 This function is available since SDL 3.0.0.
-
-== Related Functions ==
-
-:[[SDL_RenderDrawLine]]
-:[[SDL_RenderDrawLines]]
-:[[SDL_RenderDrawPoint]]
-:[[SDL_RenderDrawPoints]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
-:[[SDL_RenderFillRect]]
-:[[SDL_RenderPresent]]
 
 ----
 [[CategoryAPI]], [[CategoryRender]]

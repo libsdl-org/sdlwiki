@@ -6,9 +6,7 @@ Get the color used for drawing operations (Rect, Line and Clear).
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetRenderDrawColor(SDL_Renderer * renderer,
-                   Uint8 * r, Uint8 * g, Uint8 * b,
-                   Uint8 * a);
+int SDL_GetRenderDrawColor(SDL_Renderer *renderer, Uint8 *r, Uint8 *g, Uint8 *b, Uint8 *a);
 </syntaxhighlight>
 
 == Function Parameters ==

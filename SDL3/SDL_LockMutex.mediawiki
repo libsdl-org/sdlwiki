@@ -6,7 +6,7 @@ Lock the mutex.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_LockMutex(SDL_mutex * mutex);
+int SDL_LockMutex(SDL_mutex * mutex) SDL_ACQUIRE(mutex);
 </syntaxhighlight>
 
 == Function Parameters ==

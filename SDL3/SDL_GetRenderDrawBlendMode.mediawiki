@@ -6,8 +6,7 @@ Get the blend mode used for drawing operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetRenderDrawBlendMode(SDL_Renderer * renderer,
-                               SDL_BlendMode *blendMode);
+int SDL_GetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode *blendMode);
 </syntaxhighlight>
 
 == Function Parameters ==

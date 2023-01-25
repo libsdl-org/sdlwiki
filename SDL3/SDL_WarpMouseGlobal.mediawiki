@@ -13,7 +13,7 @@ Move the mouse to the given position in global screen space.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_WarpMouseGlobal(int x, int y);
+int SDL_WarpMouseGlobal(float x, float y);
 </syntaxhighlight>
 
 == Function Parameters ==

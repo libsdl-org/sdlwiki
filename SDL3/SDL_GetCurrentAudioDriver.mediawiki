@@ -38,10 +38,6 @@ if (driver_name) {
 }
 </syntaxhighlight>
 
-== Related Functions ==
-
-:[[SDL_AudioInit]]
-
 ----
 [[CategoryAPI]], [[CategoryAudio]]
 

@@ -6,7 +6,7 @@ Get an EGL library function by name.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_EGL_GetProcAddress(const char *proc);
+SDL_FunctionPointer SDL_EGL_GetProcAddress(const char *proc);
 </syntaxhighlight>
 
 == Function Parameters ==

@@ -6,7 +6,7 @@ Get the address of the <code>vkGetInstanceProcAddr</code> function.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
+SDL_FunctionPointer SDL_Vulkan_GetVkGetInstanceProcAddr(void);
 </syntaxhighlight>
 
 == Return Value ==
@@ -19,6 +19,14 @@ on error.
 This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or
 creating an [[SDL_Window]] with the <code>[[SDL_WINDOW_VULKAN]]</code>
 flag.
+
+The actual type of the returned function pointer is
+PFN_vkGetInstanceProcAddr, but that isn't available because the Vulkan
+headers are not included here. You should cast the return value of this
+function to that type, e.g.
+
+<code>vkGetInstanceProcAddr =
+(PFN_vkGetInstanceProcAddr)[[SDL_Vulkan_GetVkGetInstanceProcAddr]]();</code>
 
 == Version ==
 

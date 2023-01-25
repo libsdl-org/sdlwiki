@@ -6,8 +6,7 @@ Set an additional alpha value multiplied into render copy operations.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_SetTextureAlphaMod(SDL_Texture * texture,
-                           Uint8 alpha);
+int SDL_SetTextureAlphaMod(SDL_Texture *texture, Uint8 alpha);
 </syntaxhighlight>
 
 == Function Parameters ==

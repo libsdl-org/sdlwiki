@@ -8,9 +8,9 @@ Premultiply the alpha on a block of pixels.
 <syntaxhighlight lang='c'>
 int SDL_PremultiplyAlpha(int width, int height,
                          Uint32 src_format,
-                         const void * src, int src_pitch,
+                         const void *src, int src_pitch,
                          Uint32 dst_format,
-                         void * dst, int dst_pitch);
+                         void *dst, int dst_pitch);
 </syntaxhighlight>
 
 == Function Parameters ==

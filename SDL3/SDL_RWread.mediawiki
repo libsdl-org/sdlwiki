@@ -6,9 +6,7 @@ Read from a data source.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-size_t SDL_RWread(SDL_RWops *context,
-                  void *ptr, size_t size,
-                  size_t maxnum);
+Sint64 SDL_RWread(SDL_RWops *context, void *ptr, Sint64 size);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -21,30 +19,31 @@ size_t SDL_RWread(SDL_RWops *context,
 |a pointer to a buffer to read data into
 |-
 |'''size'''
-|the size of each object to read, in bytes
-|-
-|'''maxnum'''
-|the maximum number of objects to be read
+|the number of bytes to read from the data source.
 |}
 
 == Return Value ==
 
-Returns the number of objects read, or 0 at error or end of file; call
-[[SDL_GetError]]() for more information.
+Returns the number of bytes read, 0 at end of file, -1 on error, and -2 for
+data not ready with a non-blocking context.
 
 == Remarks ==
 
-This function reads up to <code>maxnum</code> objects each of size
-<code>size</code> from the data source to the area pointed at by
-<code>ptr</code>. This function may read less objects than requested. It
-will return zero when there has been an error or the data stream is
-completely read.
+This function reads up <code>size</code> bytes from the data source to the
+area pointed at by <code>ptr</code>. This function may read less bytes than
+requested. It will return zero when the data stream is completely read, or
+-1 on error. For streams that support non-blocking operation, if nothing
+was read because it would require blocking, this function returns -2 to
+distinguish that this is not an error or end-of-file, and the caller can
+try again later.
 
 [[SDL_RWread]]() is actually a function wrapper that calls the
 [[SDL_RWops]]'s <code>read</code> method appropriately, to simplify
 application development.
 
-Prior to SDL 2.0.10, this function was a macro.
+It is an error to specify a negative <code>size</code>, but this parameter
+is signed so you definitely cannot overflow the return value on a
+successful run with enormous amounts of data.
 
 == Version ==
 

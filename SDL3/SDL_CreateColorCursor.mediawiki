@@ -102,7 +102,7 @@ exit:
 == Related Functions ==
 
 :[[SDL_CreateCursor]]
-:[[SDL_FreeCursor]]
+:[[SDL_DestroyCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]]

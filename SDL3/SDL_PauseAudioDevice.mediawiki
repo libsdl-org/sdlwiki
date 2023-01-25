@@ -1,13 +1,12 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_PauseAudioDevice =
 
-Use this function to pause and unpause audio playback on a specified device.
+Use this function to pause audio playback on a specified device.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
-                          int pause_on);
+void SDL_PauseAudioDevice(SDL_AudioDeviceID dev);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -15,25 +14,14 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
 {|
 |'''dev'''
 |a device opened by [[SDL_OpenAudioDevice]]()
-|-
-|'''pause_on'''
-|non-zero to pause, 0 to unpause
 |}
 
 == Remarks ==
 
-This function pauses and unpauses the audio callback processing for a given
-device. Newly-opened audio devices start in the paused state, so you must
-call this function with '''pause_on'''=0 after opening the specified audio
-device to start playing sound. This allows you to safely initialize data
-for your callback function after opening the audio device. Silence will be
-written to the audio device while paused, and the audio callback is
-guaranteed to not be called. Pausing one device does not prevent other
-unpaused devices from running their callbacks.
-
-Pausing state does not stack; even if you pause a device several times, a
-single unpause will start the device playing again, and vice versa. This is
-different from how [[SDL_LockAudioDevice]]() works.
+This function pauses the audio callback processing for a given device.
+Silence will be written to the audio device while paused, and the audio
+callback is guaranteed to not be called. Pausing one device does not
+prevent other unpaused devices from running their callbacks.
 
 If you just need to protect a few variables from race conditions vs your
 callback, you shouldn't pause the audio device, as it will lead to dropouts
@@ -55,6 +43,7 @@ SDL_PauseAudioDevice(devid, 0);  // audio callback starts running again.
 == Related Functions ==
 
 :[[SDL_LockAudioDevice]]
+:[[SDL_PlayAudioDevice]]
 
 ----
 [[CategoryAPI]], [[CategoryAudio]]

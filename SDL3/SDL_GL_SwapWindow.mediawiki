@@ -6,7 +6,7 @@ Update a window with OpenGL rendering.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_GL_SwapWindow(SDL_Window * window);
+int SDL_GL_SwapWindow(SDL_Window * window);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -15,6 +15,11 @@ void SDL_GL_SwapWindow(SDL_Window * window);
 |'''window'''
 |the window to change
 |}
+
+== Return Value ==
+
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 == Remarks ==
 

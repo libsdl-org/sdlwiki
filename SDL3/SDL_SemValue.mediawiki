@@ -6,7 +6,7 @@ Get the current value of a semaphore.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-Uint32 SDL_SemValue(SDL_sem * sem);
+Uint32 SDL_SemValue(SDL_sem *sem);
 </syntaxhighlight>
 
 == Function Parameters ==

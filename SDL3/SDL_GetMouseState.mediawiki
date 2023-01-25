@@ -6,7 +6,7 @@ Retrieve the current state of the mouse.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-Uint32 SDL_GetMouseState(int *x, int *y);
+Uint32 SDL_GetMouseState(float *x, float *y);
 </syntaxhighlight>
 
 == Function Parameters ==

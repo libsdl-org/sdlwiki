@@ -6,7 +6,7 @@ Restart all threads that are waiting on the condition variable.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_CondBroadcast(SDL_cond * cond);
+int SDL_CondBroadcast(SDL_cond *cond);
 </syntaxhighlight>
 
 == Function Parameters ==

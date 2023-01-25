@@ -1,22 +1,13 @@
 ====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
 = SDL_UnlockJoysticks =
 
-Unlocking for multi-threaded access to the joystick API 
+Unlocking for atomic access to the joystick API 
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_UnlockJoysticks(void);
+void SDL_UnlockJoysticks(void) SDL_RELEASE(SDL_joystick_lock);
 </syntaxhighlight>
-
-== Remarks ==
-
-If you are using the joystick API or handling events from multiple threads
-you should use these locking functions to protect access to the joysticks.
-
-In particular, you are guaranteed that the joystick list won't change, so
-the API functions that take a joystick index will be valid, and joystick
-and game controller events will not be delivered.
 
 == Version ==
 

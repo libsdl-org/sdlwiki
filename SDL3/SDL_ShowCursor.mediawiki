@@ -5,36 +5,18 @@
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 = SDL_ShowCursor =
 
-Toggle whether or not the cursor is shown.
+Show the cursor.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_ShowCursor(int toggle);
+int SDL_ShowCursor(void);
 </syntaxhighlight>
-
-== Function Parameters ==
-
-{|
-|'''toggle'''
-|<code>[[SDL_ENABLE]]</code> to show the cursor, <code>[[SDL_DISABLE]]</code> to hide it, <code>[[SDL_QUERY]]</code> to query the current state without changing it.
-|}
 
 == Return Value ==
 
-Returns <code>[[SDL_ENABLE]]</code> if the cursor is shown, or
-<code>[[SDL_DISABLE]]</code> if the cursor is hidden, or a negative error
-code on failure; call [[SDL_GetError]]() for more information.
-
-== Remarks ==
-
-The cursor starts off displayed but can be turned off. Passing
-<code>[[SDL_ENABLE]]</code> displays the cursor and passing
-<code>[[SDL_DISABLE]]</code> hides it.
-
-The current state of the mouse cursor can be queried by passing
-<code>[[SDL_QUERY]]</code>; either <code>[[SDL_DISABLE]]</code> or
-<code>[[SDL_ENABLE]]</code> will be returned.
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 == Version ==
 
@@ -53,8 +35,8 @@ int main(int argc, char *argv[]) {
 
 == Related Functions ==
 
-:[[SDL_CreateCursor]]
-:[[SDL_SetCursor]]
+:[[SDL_CursorVisible]]
+:[[SDL_HideCursor]]
 
 ----
 [[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
