@@ -1,4 +1,4 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_RenderPresent =
 
 Update the screen with any rendering performed since the previous call.
@@ -33,6 +33,12 @@ assume that previous contents will exist between frames. You are strongly
 encouraged to call [[SDL_RenderClear]]() to initialize the backbuffer
 before starting each new frame's drawing, even if you plan to overwrite
 every pixel.
+
+== Thread Safety ==
+
+You may only call this function on the main thread. If this happens to work
+on a background thread on any given platform or backend, it's purely by
+luck and you should not rely on it to work next time.
 
 == Version ==
 

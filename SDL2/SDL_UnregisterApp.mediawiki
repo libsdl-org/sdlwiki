@@ -1,4 +1,4 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_UnregisterApp =
 
 Deregister the win32 window class from an [[SDL_RegisterApp]] call.

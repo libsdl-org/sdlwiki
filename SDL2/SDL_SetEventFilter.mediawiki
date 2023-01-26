@@ -1,4 +1,4 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_SetEventFilter =
 
 Set up a filter to process all events before they change internal state and are posted to the internal event queue.

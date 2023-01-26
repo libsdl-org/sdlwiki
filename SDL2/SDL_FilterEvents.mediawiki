@@ -1,4 +1,4 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; SDL3 is the current development version.) ======
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_FilterEvents =
 
 Run a specific filter function on the current event queue, removing any events for which the filter returns 0.
