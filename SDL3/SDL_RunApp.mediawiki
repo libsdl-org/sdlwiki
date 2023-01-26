@@ -1,4 +1,4 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! SDL2 is the current stable version!) ======
+====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/ SDL2] is the current stable version!) ======
 = SDL_RunApp =
 
 Initializes and launches an SDL application, by doing platform-specific initialization before calling your mainFunction and cleanups after it returns, if that is needed for a specific platform, otherwise it just calls mainFunction.
