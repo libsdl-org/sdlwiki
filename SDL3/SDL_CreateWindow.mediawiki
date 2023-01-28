@@ -40,7 +40,7 @@ Returns the window that was created or NULL on failure; call
 
 <code>flags</code> may be any of the following OR'd together:
 
-* <code>[[SDL_WINDOW_FULLSCREEN]]</code>: fullscreen window
+* <code>[[SDL_WINDOW_FULLSCREEN_EXCLUSIVE]]</code>: fullscreen window, switching display mode to the closest fullscreen resolution
 * <code>[[SDL_WINDOW_FULLSCREEN_DESKTOP]]</code>: fullscreen window at desktop resolution
 * <code>[[SDL_WINDOW_OPENGL]]</code>: window usable with an OpenGL context
 * <code>[[SDL_WINDOW_VULKAN]]</code>: window usable with a Vulkan instance
@@ -50,7 +50,7 @@ Returns the window that was created or NULL on failure; call
 * <code>[[SDL_WINDOW_RESIZABLE]]</code>: window can be resized
 * <code>[[SDL_WINDOW_MINIMIZED]]</code>: window is minimized
 * <code>[[SDL_WINDOW_MAXIMIZED]]</code>: window is maximized
-* <code>[[SDL_WINDOW_INPUT_GRABBED]]</code>: window has grabbed input focus
+* <code>[[SDL_WINDOW_MOUSE_GRABBED]]</code>: window has grabbed mouse focus
 
 The [[SDL_Window]] is implicitly shown if [[SDL_WINDOW_HIDDEN]] is not set.
 
