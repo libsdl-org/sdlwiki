@@ -8,10 +8,9 @@
 
 
 = SDL_TICKS_PASSED =
-Use this macro to compare SDL ticks values.
+This macro compares 32 bit tick values provided by [[SDL_GetTicks]].  Because the [[SDL_GetTicks]] value is 32 bits in milliseconds, it will wrap approximately every 49 days.  This handles the rollover condition appropriately, ensuring that this is safe for events that happen significantly faster than every 49 days.
 
-
-
+To completely avoid edge cases associated with monotonically increasing time counts within a human lifespan, you're encouraged to use [[SDL_GetTicks64]] instead.  Do not use this macro with the output of [[SDL_GetTicks64]].
 
 == Syntax ==
 <syntaxhighlight lang='c++'>
