@@ -1,0 +1,1 @@
+Used by [[SDL_Init]] to initialize [[CategoryEvents|Event Handling]].
