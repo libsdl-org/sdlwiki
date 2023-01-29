@@ -29,9 +29,8 @@ if the width or height value is not desired.
 
 The window size in screen coordinates may differ from the size in pixels if
 the window is on a high density display (one with an OS scaling factor).
-Use [[SDL_GetWindowSizeInPixels]](), [[SDL_GL_GetDrawableSize]](),
-[[SDL_Vulkan_GetDrawableSize]](), or [[SDL_GetRendererOutputSize]]() to get
-the real client area size in pixels.
+Use [[SDL_GetWindowSizeInPixels]]() or [[SDL_GetRendererOutputSize]]() to
+get the real client area size in pixels.
 
 == Version ==
 
@@ -40,8 +39,6 @@ This function is available since SDL 3.0.0.
 == Related Functions ==
 
 :[[SDL_GetWindowSizeInPixels]]
-:[[SDL_GL_GetDrawableSize]]
-:[[SDL_Vulkan_GetDrawableSize]]
 :[[SDL_GetRendererOutputSize]]
 :[[SDL_SetWindowSize]]
 

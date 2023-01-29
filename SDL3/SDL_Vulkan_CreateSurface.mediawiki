@@ -50,7 +50,6 @@ if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) handle_error();
 == Related Functions ==
 
 :[[SDL_Vulkan_GetInstanceExtensions]]
-:[[SDL_Vulkan_GetDrawableSize]]
 
 ----
 [[CategoryAPI]], [[CategoryVulkan]]

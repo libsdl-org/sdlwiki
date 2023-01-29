@@ -41,12 +41,11 @@ available or the <code>displayIndex</code> is out of range.
 '''WARNING''': This reports the DPI that the hardware reports, and it is
 not always reliable! It is almost always better to use
 [[SDL_GetWindowSize]]() to find the window size, which might be in logical
-points instead of pixels, and then [[SDL_GetWindowSizeInPixels]](),
-[[SDL_GL_GetDrawableSize]](), [[SDL_Vulkan_GetDrawableSize]](),
-[[SDL_Metal_GetDrawableSize]](), or [[SDL_GetRendererOutputSize]](), and
-compare the two values to get an actual scaling value between the two. We
-will be rethinking how high-dpi details should be managed in SDL3 to make
-things more consistent, reliable, and clear.
+points instead of pixels, and then [[SDL_GetWindowSizeInPixels]]() or
+[[SDL_GetRendererOutputSize]](), and compare the two values to get an
+actual scaling value between the two. We will be rethinking how high-dpi
+details should be managed in SDL3 to make things more consistent, reliable,
+and clear.
 
 == Version ==
 
