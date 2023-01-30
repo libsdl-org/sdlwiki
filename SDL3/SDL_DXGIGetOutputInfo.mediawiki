@@ -8,19 +8,19 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 = SDL_DXGIGetOutputInfo =
 
-Get the DXGI Adapter and Output indices for the specified display index.
+Get the DXGI Adapter and Output indices for the specified display.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_bool SDL_DXGIGetOutputInfo( int displayIndex, int *adapterIndex, int *outputIndex );
+SDL_bool SDL_DXGIGetOutputInfo(SDL_DisplayID displayID, int *adapterIndex, int *outputIndex);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''displayIndex'''
-|the display index for which to get both indices
+|'''displayID'''
+|the instance of the display to query
 |-
 |'''adapterIndex'''
 |a pointer to be filled in with the adapter index
@@ -39,9 +39,6 @@ Returns [[SDL_TRUE]] on success or [[SDL_FALSE]] on failure; call
 The DXGI Adapter and Output indices can be passed to
 <code>EnumAdapters</code> and <code>EnumOutputs</code> respectively to get
 the objects required to create a DX10 or DX11 device and swap chain.
-
-Before SDL 2.0.4 this function did not return a value. Since SDL 2.0.4 it
-returns an [[SDL_bool]].
 
 == Version ==
 

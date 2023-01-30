@@ -6,14 +6,14 @@ Get the desktop area represented by a display, in screen coordinates.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDisplayBounds(int displayIndex, SDL_Rect *rect);
+int SDL_GetDisplayBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''displayIndex'''
-|the index of the display to query
+|'''displayID'''
+|the instance ID of the display to query
 |-
 |'''rect'''
 |the [[SDL_Rect]] structure filled in with the display bounds
@@ -26,8 +26,7 @@ Returns 0 on success or a negative error code on failure; call
 
 == Remarks ==
 
-The primary display (<code>displayIndex</code> zero) is always located at
-0,0.
+The primary display is always located at (0,0).
 
 == Version ==
 
@@ -45,7 +44,8 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 
 == Related Functions ==
 
-:[[SDL_GetNumVideoDisplays]]
+:[[SDL_GetDisplayUsableBounds]]
+:[[SDL_GetDisplays]]
 
 ----
 [[CategoryAPI]], [[CategoryVideo]]

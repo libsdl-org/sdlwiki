@@ -6,17 +6,17 @@ Get the closest match to the requested display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-SDL_DisplayMode* SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayMode *mode, SDL_DisplayMode *closest);
+SDL_DisplayMode* SDL_GetClosestDisplayMode(SDL_DisplayID displayID, const SDL_DisplayMode *mode, SDL_DisplayMode *closest);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''displayIndex'''
-|the index of the display to query
+|'''displayID'''
+|the instance ID of the display to query
 |-
 |'''mode'''
-|an [[SDL_DisplayMode]] structure containing the desired display mode
+|an [[SDL_DisplayMode]] structure containing the desired display mode, should be zero initialized
 |-
 |'''closest'''
 |an [[SDL_DisplayMode]] structure filled in with the closest match of the available display modes

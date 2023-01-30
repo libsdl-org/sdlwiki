@@ -6,14 +6,14 @@ Get information about the desktop's display mode.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_GetDesktopDisplayMode(int displayIndex, SDL_DisplayMode *mode);
+int SDL_GetDesktopDisplayMode(SDL_DisplayID displayID, SDL_DisplayMode *mode);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''displayIndex'''
-|the index of the display to query
+|'''displayID'''
+|the instance ID of the display to query
 |-
 |'''mode'''
 |an [[SDL_DisplayMode]] structure filled in with the current display mode

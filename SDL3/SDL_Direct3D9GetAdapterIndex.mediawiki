@@ -8,19 +8,19 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 = SDL_Direct3D9GetAdapterIndex =
 
-Get the D3D9 adapter index that matches the specified display index.
+Get the D3D9 adapter index that matches the specified display.
 
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-int SDL_Direct3D9GetAdapterIndex( int displayIndex );
+int SDL_Direct3D9GetAdapterIndex(SDL_DisplayID displayID);
 </syntaxhighlight>
 
 == Function Parameters ==
 
 {|
-|'''displayIndex'''
-|the display index for which to get the D3D9 adapter index
+|'''displayID'''
+|the instance of the display to query
 |}
 
 == Return Value ==
