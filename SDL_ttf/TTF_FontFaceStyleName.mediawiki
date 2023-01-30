@@ -30,7 +30,7 @@ of the font, when <code>font</code> is handed to [[TTF_CloseFont]]().
 
 == Version ==
 
-This function is available since SDL_ttf 2.0.12.
+This function is available since SDL_ttf 2.0.4.
 
 ----
 [[CategoryAPI]]
