@@ -22,10 +22,7 @@ If you start a subsystem using a call to that subsystem's init function
 generally, you should not be using those functions directly anyhow; use
 [[SDL_Init]]() instead.
 
-You can use this function with atexit() to ensure that it is run when your
-application is shutdown, but it is not wise to do this from a library or
-other dynamically loaded code.
-
+Previous versions of this article have suggested registering [[SDL_Quit]]() with atexit() or similar APIs. Do not do this; crashes are likely to result.
 == Version ==
 
 This function is available since SDL 2.0.0.
