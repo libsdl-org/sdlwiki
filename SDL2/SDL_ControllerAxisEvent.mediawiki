@@ -16,7 +16,7 @@ A structure that contains game controller axis motion event information.
 {|
 |Uint32
 |'''type'''
-|SDL_ CONTROLLERAXISMOTION
+|SDL_CONTROLLERAXISMOTION
 |-
 |Uint32
 |'''timestamp'''
