@@ -6,7 +6,7 @@ Set the icon for a window.
 == Syntax ==
 
 <syntaxhighlight lang='c'>
-void SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
+int SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
 </syntaxhighlight>
 
 == Function Parameters ==
@@ -18,6 +18,10 @@ void SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
 |'''icon'''
 |an [[SDL_Surface]] structure containing the icon for the window
 |}
+
+== Return Value ==
+Returns 0 on success or a negative error code on failure; call
+[[SDL_GetError]]() for more information.
 
 == Version ==
 
