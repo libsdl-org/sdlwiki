@@ -11,7 +11,7 @@ int Mix_GetNumMusicDecoders(void);
 
 == Return Value ==
 
-Returns number of chunk decoders available.
+Returns number of music decoders available.
 
 == Remarks ==
 
