@@ -26,7 +26,7 @@ Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
 
 This should be called after either calling
 [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() or creating an
-[SDL_Window](SDL_Window) with the `[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)`
+[SDL_Window](SDL_Window) with the [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN)
 flag.
 
 If `pNames` is NULL, then the number of required Vulkan instance extensions

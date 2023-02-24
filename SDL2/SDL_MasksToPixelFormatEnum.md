@@ -30,7 +30,7 @@ Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
 
 ## Remarks
 
-This will return `[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN)` if
+This will return [`SDL_PIXELFORMAT_UNKNOWN`](SDL_PIXELFORMAT_UNKNOWN) if
 the conversion wasn't possible.
 
 ## Version

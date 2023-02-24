@@ -67,7 +67,7 @@ When filling in the desired audio spec structure:
 
 - `desired->freq` should be the frequency in sample-frames-per-second (Hz).
 - `desired->format` should be the audio format
-  (`[AUDIO_S16SYS](AUDIO_S16SYS)`, etc).
+  ([`AUDIO_S16SYS`](AUDIO_S16SYS), etc).
 - `desired->samples` is the desired size of the audio buffer, in _sample
   frames_ (with stereo output, two samples--left and right--would make a
   single sample frame). This number should be a power of two, and may be
@@ -101,11 +101,11 @@ When filling in the desired audio spec structure:
 
 `allowed_changes` can have the following flags OR'd together:
 
-- `[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE](SDL_AUDIO_ALLOW_FREQUENCY_CHANGE)`
-- `[SDL_AUDIO_ALLOW_FORMAT_CHANGE](SDL_AUDIO_ALLOW_FORMAT_CHANGE)`
-- `[SDL_AUDIO_ALLOW_CHANNELS_CHANGE](SDL_AUDIO_ALLOW_CHANNELS_CHANGE)`
-- `[SDL_AUDIO_ALLOW_SAMPLES_CHANGE](SDL_AUDIO_ALLOW_SAMPLES_CHANGE)`
-- `[SDL_AUDIO_ALLOW_ANY_CHANGE](SDL_AUDIO_ALLOW_ANY_CHANGE)`
+- [`SDL_AUDIO_ALLOW_FREQUENCY_CHANGE`](SDL_AUDIO_ALLOW_FREQUENCY_CHANGE)
+- [`SDL_AUDIO_ALLOW_FORMAT_CHANGE`](SDL_AUDIO_ALLOW_FORMAT_CHANGE)
+- [`SDL_AUDIO_ALLOW_CHANNELS_CHANGE`](SDL_AUDIO_ALLOW_CHANNELS_CHANGE)
+- [`SDL_AUDIO_ALLOW_SAMPLES_CHANGE`](SDL_AUDIO_ALLOW_SAMPLES_CHANGE)
+- [`SDL_AUDIO_ALLOW_ANY_CHANGE`](SDL_AUDIO_ALLOW_ANY_CHANGE)
 
 These flags specify how SDL should behave when a device cannot offer a
 specific feature. If the application requests a feature that the hardware

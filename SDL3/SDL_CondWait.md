@@ -36,7 +36,7 @@ behavior.
 
 This function is the equivalent of calling
 [SDL_CondWaitTimeout](SDL_CondWaitTimeout)() with a time length of
-`[SDL_MUTEX_MAXWAIT](SDL_MUTEX_MAXWAIT)`.
+[`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT).
 
 ## Version
 

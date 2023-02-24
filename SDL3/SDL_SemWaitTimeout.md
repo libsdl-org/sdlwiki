@@ -19,7 +19,7 @@ int SDL_SemWaitTimeout(SDL_sem *sem, Sint32 timeoutMS);
 
 ## Return Value
 
-Returns 0 if the wait succeeds, `[SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT)`
+Returns 0 if the wait succeeds, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
 if the wait does not succeed in the allotted time, or a negative error code
 on failure; call [SDL_GetError](SDL_GetError)() for more information.
 

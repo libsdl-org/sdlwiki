@@ -18,7 +18,7 @@ int SDL_HapticRunEffect(SDL_Haptic * haptic,
 | ------------------ | -------------------------------------------------------------------------------------------------------------- |
 | **haptic**         | the [SDL_Haptic](SDL_Haptic) device to run the effect on                                                       |
 | **effect**         | the ID of the haptic effect to run                                                                             |
-| **iterations**     | the number of iterations to run the effect; use `[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)` to repeat forever |
+| **iterations**     | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever |
 
 ## Return Value
 
@@ -28,10 +28,10 @@ Returns 0 on success or a negative error code on failure; call
 ## Remarks
 
 To repeat the effect over and over indefinitely, set `iterations` to
-`[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)`. (Repeats the envelope -
+[`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY). (Repeats the envelope -
 attack and fade.) To make one instance of the effect last indefinitely (so
 the effect does not fade), set the effect's `length` in its structure/union
-to `[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)` instead.
+to [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) instead.
 
 ## Version
 

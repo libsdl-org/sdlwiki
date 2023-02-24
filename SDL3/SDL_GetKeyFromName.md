@@ -22,7 +22,7 @@ SDL_Keycode SDL_GetKeyFromName(const char *name);
 
 ## Return Value
 
-Returns key code, or `[SDLK_UNKNOWN](SDLK_UNKNOWN)` if the name wasn't
+Returns key code, or [`SDLK_UNKNOWN`](SDLK_UNKNOWN) if the name wasn't
 recognized; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

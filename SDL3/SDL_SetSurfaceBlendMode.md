@@ -27,7 +27,7 @@ Returns 0 on success or a negative error code on failure; call
 
 To copy a surface to another surface (or texture) without blending with the
 existing data, the blendmode of the SOURCE surface should be set to
-`[SDL_BLENDMODE_NONE](SDL_BLENDMODE_NONE)`.
+[`SDL_BLENDMODE_NONE`](SDL_BLENDMODE_NONE).
 
 ## Version
 

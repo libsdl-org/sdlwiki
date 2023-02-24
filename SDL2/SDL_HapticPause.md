@@ -23,7 +23,7 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-Device must support the `[SDL_HAPTIC_PAUSE](SDL_HAPTIC_PAUSE)` feature.
+Device must support the [`SDL_HAPTIC_PAUSE`](SDL_HAPTIC_PAUSE) feature.
 Call [SDL_HapticUnpause](SDL_HapticUnpause)() to resume playback.
 
 Do not modify the effects nor add new ones while the device is paused. That

@@ -19,7 +19,7 @@ SDL_SensorType SDL_SensorGetDeviceType(int device_index);
 ## Return Value
 
 Returns the [SDL_SensorType](SDL_SensorType), or
-`[SDL_SENSOR_INVALID](SDL_SENSOR_INVALID)` if `device_index` is out of
+[`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `device_index` is out of
 range.
 
 ## Version

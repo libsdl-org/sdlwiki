@@ -32,7 +32,7 @@ range; call [SDL_GetError](SDL_GetError)() for more information.
 ## Remarks
 
 You can set the texture scaling method by setting
-`[SDL_HINT_RENDER_SCALE_QUALITY](SDL_HINT_RENDER_SCALE_QUALITY)` before
+[`SDL_HINT_RENDER_SCALE_QUALITY`](SDL_HINT_RENDER_SCALE_QUALITY) before
 creating the texture.
 
 ## Version

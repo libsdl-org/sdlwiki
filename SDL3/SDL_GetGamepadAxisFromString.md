@@ -19,7 +19,7 @@ SDL_GamepadAxis SDL_GetGamepadAxisFromString(const char *str);
 ## Return Value
 
 Returns the [SDL_GamepadAxis](SDL_GamepadAxis) enum corresponding to the
-input string, or `[SDL_GAMEPAD_AXIS_INVALID](SDL_GAMEPAD_AXIS_INVALID)` if
+input string, or [`SDL_GAMEPAD_AXIS_INVALID`](SDL_GAMEPAD_AXIS_INVALID) if
 no match was found.
 
 ## Remarks
@@ -31,8 +31,8 @@ function unless you are parsing [SDL_Gamepad](SDL_Gamepad) mappings in your
 own code.
 
 Note specially that "righttrigger" and "lefttrigger" map to
-`[SDL_GAMEPAD_AXIS_RIGHT_TRIGGER](SDL_GAMEPAD_AXIS_RIGHT_TRIGGER)` and
-`[SDL_GAMEPAD_AXIS_LEFT_TRIGGER](SDL_GAMEPAD_AXIS_LEFT_TRIGGER)`,
+[`SDL_GAMEPAD_AXIS_RIGHT_TRIGGER`](SDL_GAMEPAD_AXIS_RIGHT_TRIGGER) and
+[`SDL_GAMEPAD_AXIS_LEFT_TRIGGER`](SDL_GAMEPAD_AXIS_LEFT_TRIGGER),
 respectively.
 
 ## Version

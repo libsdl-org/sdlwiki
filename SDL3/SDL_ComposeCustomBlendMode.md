@@ -84,32 +84,32 @@ SDL 2.0.6. All renderers support the four blend modes listed in the
 
 - **direct3d**: Supports all operations with all factors. However, some
   factors produce unexpected results with
-  `[SDL_BLENDOPERATION_MINIMUM](SDL_BLENDOPERATION_MINIMUM)` and
-  `[SDL_BLENDOPERATION_MAXIMUM](SDL_BLENDOPERATION_MAXIMUM)`.
+  [`SDL_BLENDOPERATION_MINIMUM`](SDL_BLENDOPERATION_MINIMUM) and
+  [`SDL_BLENDOPERATION_MAXIMUM`](SDL_BLENDOPERATION_MAXIMUM).
 - **direct3d11**: Same as Direct3D 9.
 - **opengl**: Supports the
-  `[SDL_BLENDOPERATION_ADD](SDL_BLENDOPERATION_ADD)` operation with all
+  [`SDL_BLENDOPERATION_ADD`](SDL_BLENDOPERATION_ADD) operation with all
   factors. OpenGL versions 1.1, 1.2, and 1.3 do not work correctly with SDL
   2.0.6.
 - **opengles**: Supports the
-  `[SDL_BLENDOPERATION_ADD](SDL_BLENDOPERATION_ADD)` operation with all
+  [`SDL_BLENDOPERATION_ADD`](SDL_BLENDOPERATION_ADD) operation with all
   factors. Color and alpha factors need to be the same. OpenGL ES 1
   implementation specific: May also support
-  `[SDL_BLENDOPERATION_SUBTRACT](SDL_BLENDOPERATION_SUBTRACT)` and
-  `[SDL_BLENDOPERATION_REV_SUBTRACT](SDL_BLENDOPERATION_REV_SUBTRACT)`. May
+  [`SDL_BLENDOPERATION_SUBTRACT`](SDL_BLENDOPERATION_SUBTRACT) and
+  [`SDL_BLENDOPERATION_REV_SUBTRACT`](SDL_BLENDOPERATION_REV_SUBTRACT). May
   support color and alpha operations being different from each other. May
   support color and alpha factors being different from each other.
 - **opengles2**: Supports the
-  `[SDL_BLENDOPERATION_ADD](SDL_BLENDOPERATION_ADD)`,
-  `[SDL_BLENDOPERATION_SUBTRACT](SDL_BLENDOPERATION_SUBTRACT)`,
-  `[SDL_BLENDOPERATION_REV_SUBTRACT](SDL_BLENDOPERATION_REV_SUBTRACT)`
+  [`SDL_BLENDOPERATION_ADD`](SDL_BLENDOPERATION_ADD),
+  [`SDL_BLENDOPERATION_SUBTRACT`](SDL_BLENDOPERATION_SUBTRACT),
+  [`SDL_BLENDOPERATION_REV_SUBTRACT`](SDL_BLENDOPERATION_REV_SUBTRACT)
   operations with all factors.
 - **psp**: No custom blend mode support.
 - **software**: No custom blend mode support.
 
 Some renderers do not provide an alpha component for the default render
-target. The `[SDL_BLENDFACTOR_DST_ALPHA](SDL_BLENDFACTOR_DST_ALPHA)` and
-`[SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA](SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA)`
+target. The [`SDL_BLENDFACTOR_DST_ALPHA`](SDL_BLENDFACTOR_DST_ALPHA) and
+[`SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA`](SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA)
 factors do not have an effect in this case.
 
 ## Version

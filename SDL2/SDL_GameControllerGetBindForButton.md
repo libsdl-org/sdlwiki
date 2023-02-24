@@ -24,7 +24,7 @@ SDL_GameControllerGetBindForButton(SDL_GameController *gamecontroller,
 Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)
 describing the bind. On failure (like the given Controller button doesn't
 exist on the device), its `.bindType` will be
-`[SDL_CONTROLLER_BINDTYPE_NONE](SDL_CONTROLLER_BINDTYPE_NONE)`.
+[`SDL_CONTROLLER_BINDTYPE_NONE`](SDL_CONTROLLER_BINDTYPE_NONE).
 
 ## Version
 

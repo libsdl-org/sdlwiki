@@ -21,7 +21,7 @@ void SDL_SetWindowAlwaysOnTop(SDL_Window * window,
 ## Remarks
 
 This will add or remove the window's
-`[SDL_WINDOW_ALWAYS_ON_TOP](SDL_WINDOW_ALWAYS_ON_TOP)` flag. This will
+[`SDL_WINDOW_ALWAYS_ON_TOP`](SDL_WINDOW_ALWAYS_ON_TOP) flag. This will
 bring the window to the front and keep the window above the rest.
 
 ## Version

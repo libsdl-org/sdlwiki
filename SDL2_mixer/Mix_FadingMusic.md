@@ -18,12 +18,12 @@ Returns the current fading status of the music stream.
 
 This reports one of three values:
 
-- `[MIX_NO_FADING](MIX_NO_FADING)`
-- `[MIX_FADING_OUT](MIX_FADING_OUT)`
-- `[MIX_FADING_IN](MIX_FADING_IN)`
+- [`MIX_NO_FADING`](MIX_NO_FADING)
+- [`MIX_FADING_OUT`](MIX_FADING_OUT)
+- [`MIX_FADING_IN`](MIX_FADING_IN)
 
 If music is not currently playing, this returns
-`[MIX_NO_FADING](MIX_NO_FADING)`.
+[`MIX_NO_FADING`](MIX_NO_FADING).
 
 ## Version
 

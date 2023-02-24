@@ -31,7 +31,7 @@ When keyboard grab is enabled, SDL will continue to handle Alt+Tab when the
 window is full-screen to ensure the user is not trapped in your
 application. If you have a custom keyboard shortcut to exit fullscreen
 mode, you may suppress this behavior with
-`[SDL_HINT_ALLOW_ALT_TAB_WHILE_GRABBED](SDL_HINT_ALLOW_ALT_TAB_WHILE_GRABBED)`.
+[`SDL_HINT_ALLOW_ALT_TAB_WHILE_GRABBED`](SDL_HINT_ALLOW_ALT_TAB_WHILE_GRABBED).
 
 If the caller enables a grab while another window is currently grabbed, the
 other window loses its grab in favor of the caller's window.

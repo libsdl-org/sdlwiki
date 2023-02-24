@@ -24,7 +24,7 @@ SDL_GameControllerGetBindForAxis(SDL_GameController *gamecontroller,
 Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)
 describing the bind. On failure (like the given Controller axis doesn't
 exist on the device), its `.bindType` will be
-`[SDL_CONTROLLER_BINDTYPE_NONE](SDL_CONTROLLER_BINDTYPE_NONE)`.
+[`SDL_CONTROLLER_BINDTYPE_NONE`](SDL_CONTROLLER_BINDTYPE_NONE).
 
 ## Version
 

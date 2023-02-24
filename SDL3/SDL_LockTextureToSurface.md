@@ -16,7 +16,7 @@ int SDL_LockTextureToSurface(SDL_Texture *texture,
 
 |                 |                                                                                                                         |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **texture**     | the texture to lock for access, which must be created with `[SDL_TEXTUREACCESS_STREAMING](SDL_TEXTUREACCESS_STREAMING)` |
+| **texture**     | the texture to lock for access, which must be created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING) |
 | **rect**        | a pointer to the rectangle to lock for access. If the rect is NULL, the entire texture will be locked                   |
 | **surface**     | this is filled in with an SDL surface representing the locked area                                                      |
 

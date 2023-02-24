@@ -68,9 +68,9 @@ problematic files in the wild that cause issues with strict decoders. To
 provide compatibility with these files, this decoder is lenient in regards
 to the truncation of the file, the fact chunk, and the size of the RIFF
 chunk. The hints
-`[SDL_HINT_WAVE_RIFF_CHUNK_SIZE](SDL_HINT_WAVE_RIFF_CHUNK_SIZE)`,
-`[SDL_HINT_WAVE_TRUNCATION](SDL_HINT_WAVE_TRUNCATION)`, and
-`[SDL_HINT_WAVE_FACT_CHUNK](SDL_HINT_WAVE_FACT_CHUNK)` can be used to tune
+[`SDL_HINT_WAVE_RIFF_CHUNK_SIZE`](SDL_HINT_WAVE_RIFF_CHUNK_SIZE),
+[`SDL_HINT_WAVE_TRUNCATION`](SDL_HINT_WAVE_TRUNCATION), and
+[`SDL_HINT_WAVE_FACT_CHUNK`](SDL_HINT_WAVE_FACT_CHUNK) can be used to tune
 the behavior of the loading process.
 
 Any file that is invalid (due to truncation, corruption, or wrong values in

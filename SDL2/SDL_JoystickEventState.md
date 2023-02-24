@@ -14,14 +14,14 @@ int SDL_JoystickEventState(int state);
 
 |               |                                                                                                   |
 | ------------- | ------------------------------------------------------------------------------------------------- |
-| **state**     | can be one of `[SDL_QUERY](SDL_QUERY)`, `[SDL_IGNORE](SDL_IGNORE)`, or `[SDL_ENABLE](SDL_ENABLE)` |
+| **state**     | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
 
 ## Return Value
 
 Returns 1 if enabled, 0 if disabled, or a negative error code on failure;
 call [SDL_GetError](SDL_GetError)() for more information.
 
-If `state` is `[SDL_QUERY](SDL_QUERY)` then the current state is returned,
+If `state` is [`SDL_QUERY`](SDL_QUERY) then the current state is returned,
 otherwise the new processing state is returned.
 
 ## Remarks

@@ -40,7 +40,7 @@ whether this function succeeds or not. SDL_image reads everything it needs
 from the RWops during this call in any case.
 
 There is a separate function to read files from disk without having to deal
-with SDL_RWops: `[IMG_LoadTexture](IMG_LoadTexture)(renderer,
+with SDL_RWops: [`IMG_LoadTexture](IMG_LoadTexture)(renderer,
 "filename.jpg")` will call this function and manage those details for you,
 determining the file type from the filename's extension.
 

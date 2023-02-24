@@ -18,7 +18,7 @@ Returns the function pointer for `vkGetInstanceProcAddr` or NULL on error.
 
 This should be called after either calling
 [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() or creating an
-[SDL_Window](SDL_Window) with the `[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)`
+[SDL_Window](SDL_Window) with the [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN)
 flag.
 
 ## Version

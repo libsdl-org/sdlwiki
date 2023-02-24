@@ -27,7 +27,7 @@ Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
 ## Remarks
 
 The `window` must have been created with the
-`[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)` flag and `instance` must have been
+[`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN) flag and `instance` must have been
 created with extensions returned by
 [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)()
 enabled.

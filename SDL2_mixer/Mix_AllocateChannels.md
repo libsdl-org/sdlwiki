@@ -32,7 +32,7 @@ An app needs as many channels as it has audio data it wants to play
 simultaneously, mixing them into a single stream to send to the audio
 device.
 
-SDL_mixer allocates `[MIX_CHANNELS](MIX_CHANNELS)` (currently 8) channels
+SDL_mixer allocates [`MIX_CHANNELS`](MIX_CHANNELS) (currently 8) channels
 when you open an audio device, which may be more than an app needs, but if
 the app needs more or wants less, this function can change it.
 

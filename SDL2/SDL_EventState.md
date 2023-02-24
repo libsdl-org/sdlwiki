@@ -19,7 +19,7 @@ Uint8 SDL_EventState(Uint32 type, int state);
 
 ## Return Value
 
-Returns `[SDL_DISABLE](SDL_DISABLE)` or `[SDL_ENABLE](SDL_ENABLE)`,
+Returns [`SDL_DISABLE`](SDL_DISABLE) or [`SDL_ENABLE`](SDL_ENABLE),
 representing the processing state of the event before this function makes
 any changes to it.
 
@@ -27,12 +27,12 @@ any changes to it.
 
 `state` may be any of the following:
 
-- `[SDL_QUERY](SDL_QUERY)`: returns the current processing state of the
+- [`SDL_QUERY`](SDL_QUERY): returns the current processing state of the
   specified event
-- `[SDL_IGNORE](SDL_IGNORE)` (aka `[SDL_DISABLE](SDL_DISABLE)`): the event
+- [`SDL_IGNORE`](SDL_IGNORE) (aka [`SDL_DISABLE`](SDL_DISABLE)): the event
   will automatically be dropped from the event queue and will not be
   filtered
-- `[SDL_ENABLE](SDL_ENABLE)`: the event will be processed normally
+- [`SDL_ENABLE`](SDL_ENABLE): the event will be processed normally
 
 ## Version
 

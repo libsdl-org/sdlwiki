@@ -27,7 +27,7 @@ Returns a timer ID or 0 if an error occurs; call
 
 ## Remarks
 
-If you use this function, you must pass `[SDL_INIT_TIMER](SDL_INIT_TIMER)`
+If you use this function, you must pass [`SDL_INIT_TIMER`](SDL_INIT_TIMER)
 to [SDL_Init](SDL_Init)().
 
 The callback function is passed the current timer interval and the user

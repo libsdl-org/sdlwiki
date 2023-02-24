@@ -27,7 +27,7 @@ Returns the created texture or NULL on failure; call
 The surface is not modified or freed by this function.
 
 The [SDL_TextureAccess](SDL_TextureAccess) hint for the created texture is
-`[SDL_TEXTUREACCESS_STATIC](SDL_TEXTUREACCESS_STATIC)`.
+[`SDL_TEXTUREACCESS_STATIC`](SDL_TEXTUREACCESS_STATIC).
 
 The pixel format of the created texture may be different from the pixel
 format of the surface. Use [SDL_QueryTexture](SDL_QueryTexture)() to query

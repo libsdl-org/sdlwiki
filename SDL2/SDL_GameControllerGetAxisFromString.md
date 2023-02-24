@@ -20,7 +20,7 @@ SDL_GameControllerAxis SDL_GameControllerGetAxisFromString(const char *str);
 
 Returns the [SDL_GameControllerAxis](SDL_GameControllerAxis) enum
 corresponding to the input string, or
-`[SDL_CONTROLLER_AXIS_INVALID](SDL_CONTROLLER_AXIS_INVALID)` if no match
+[`SDL_CONTROLLER_AXIS_INVALID`](SDL_CONTROLLER_AXIS_INVALID) if no match
 was found.
 
 ## Remarks
@@ -33,8 +33,8 @@ to call this function unless you are parsing
 [SDL_GameController](SDL_GameController) mappings in your own code.
 
 Note specially that "righttrigger" and "lefttrigger" map to
-`[SDL_CONTROLLER_AXIS_TRIGGERRIGHT](SDL_CONTROLLER_AXIS_TRIGGERRIGHT)` and
-`[SDL_CONTROLLER_AXIS_TRIGGERLEFT](SDL_CONTROLLER_AXIS_TRIGGERLEFT)`,
+[`SDL_CONTROLLER_AXIS_TRIGGERRIGHT`](SDL_CONTROLLER_AXIS_TRIGGERRIGHT) and
+[`SDL_CONTROLLER_AXIS_TRIGGERLEFT`](SDL_CONTROLLER_AXIS_TRIGGERLEFT),
 respectively.
 
 ## Version

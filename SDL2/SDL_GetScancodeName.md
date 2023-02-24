@@ -26,12 +26,12 @@ have a name this function returns an empty string ("").
 See [SDL_Scancode](SDL_Scancode) for details.
 
 **Warning**: The returned name is by design not stable across platforms,
-e.g. the name for `[SDL_SCANCODE_LGUI](SDL_SCANCODE_LGUI)` is "Left GUI"
+e.g. the name for [`SDL_SCANCODE_LGUI`](SDL_SCANCODE_LGUI) is "Left GUI"
 under Linux but "Left Windows" under Microsoft Windows, and some scancodes
-like `[SDL_SCANCODE_NONUSBACKSLASH](SDL_SCANCODE_NONUSBACKSLASH)` don't
+like [`SDL_SCANCODE_NONUSBACKSLASH`](SDL_SCANCODE_NONUSBACKSLASH) don't
 have any name at all. There are even scancodes that share names, e.g.
-`[SDL_SCANCODE_RETURN](SDL_SCANCODE_RETURN)` and
-`[SDL_SCANCODE_RETURN2](SDL_SCANCODE_RETURN2)` (both called "Return"). This
+[`SDL_SCANCODE_RETURN`](SDL_SCANCODE_RETURN) and
+[`SDL_SCANCODE_RETURN2`](SDL_SCANCODE_RETURN2) (both called "Return"). This
 function is therefore unsuitable for creating a stable cross-platform
 two-way mapping between strings and scancodes.
 

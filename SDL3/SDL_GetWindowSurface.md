@@ -33,7 +33,7 @@ window this function must be called again to return a valid surface.
 You may not combine this with 3D or the rendering API on this window.
 
 This function is affected by
-`[SDL_HINT_FRAMEBUFFER_ACCELERATION](SDL_HINT_FRAMEBUFFER_ACCELERATION)`.
+[`SDL_HINT_FRAMEBUFFER_ACCELERATION`](SDL_HINT_FRAMEBUFFER_ACCELERATION).
 
 ## Version
 

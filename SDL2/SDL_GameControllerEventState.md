@@ -14,7 +14,7 @@ int SDL_GameControllerEventState(int state);
 
 |               |                                                                                                   |
 | ------------- | ------------------------------------------------------------------------------------------------- |
-| **state**     | can be one of `[SDL_QUERY](SDL_QUERY)`, `[SDL_IGNORE](SDL_IGNORE)`, or `[SDL_ENABLE](SDL_ENABLE)` |
+| **state**     | can be one of [`SDL_QUERY`](SDL_QUERY), [`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE) |
 
 ## Return Value
 

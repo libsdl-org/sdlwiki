@@ -21,7 +21,7 @@ void SDL_SetWindowBordered(SDL_Window * window,
 ## Remarks
 
 This will add or remove the window's
-`[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)` flag and add or remove the
+[`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS) flag and add or remove the
 border from the actual window. This is a no-op if the window's border
 already matches the requested state.
 

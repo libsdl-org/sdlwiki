@@ -26,7 +26,7 @@ Returns 0 on success or a negative error code on failure; call
 
 When input is grabbed, the mouse is confined to the window. This function
 will also grab the keyboard if
-`[SDL_HINT_GRAB_KEYBOARD](SDL_HINT_GRAB_KEYBOARD)` is set. To grab the
+[`SDL_HINT_GRAB_KEYBOARD`](SDL_HINT_GRAB_KEYBOARD) is set. To grab the
 keyboard without also grabbing the mouse, use
 [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)().
 

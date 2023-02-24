@@ -17,7 +17,7 @@ Sint64 SDL_RWseek(SDL_RWops *context,
 | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure                                                                        |
 | **offset**      | an offset in bytes, relative to **whence** location; can be negative                                                    |
-| **whence**      | any of `[SDL_RW_SEEK_SET](SDL_RW_SEEK_SET)`, `[SDL_RW_SEEK_CUR](SDL_RW_SEEK_CUR)`, `[SDL_RW_SEEK_END](SDL_RW_SEEK_END)` |
+| **whence**      | any of [`SDL_RW_SEEK_SET`](SDL_RW_SEEK_SET), [`SDL_RW_SEEK_CUR`](SDL_RW_SEEK_CUR), [`SDL_RW_SEEK_END`](SDL_RW_SEEK_END) |
 
 ## Return Value
 
@@ -29,9 +29,9 @@ This function seeks to byte `offset`, relative to `whence`.
 
 `whence` may be any of the following values:
 
-- `[SDL_RW_SEEK_SET](SDL_RW_SEEK_SET)`: seek from the beginning of data
-- `[SDL_RW_SEEK_CUR](SDL_RW_SEEK_CUR)`: seek relative to current read point
-- `[SDL_RW_SEEK_END](SDL_RW_SEEK_END)`: seek relative to the end of data
+- [`SDL_RW_SEEK_SET`](SDL_RW_SEEK_SET): seek from the beginning of data
+- [`SDL_RW_SEEK_CUR`](SDL_RW_SEEK_CUR): seek relative to current read point
+- [`SDL_RW_SEEK_END`](SDL_RW_SEEK_END): seek relative to the end of data
 
 If this stream can not seek, it will return -1.
 

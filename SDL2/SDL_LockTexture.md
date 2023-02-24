@@ -16,7 +16,7 @@ int SDL_LockTexture(SDL_Texture * texture,
 
 |                 |                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **texture**     | the texture to lock for access, which was created with `[SDL_TEXTUREACCESS_STREAMING](SDL_TEXTUREACCESS_STREAMING)` |
+| **texture**     | the texture to lock for access, which was created with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING) |
 | **rect**        | an [SDL_Rect](SDL_Rect) structure representing the area to lock for access; NULL to lock the entire texture         |
 | **pixels**      | this is filled in with a pointer to the locked pixels, appropriately offset by the locked area                      |
 | **pitch**       | this is filled in with the pitch of the locked pixels; the pitch is the length of one row in bytes                  |
@@ -25,7 +25,7 @@ int SDL_LockTexture(SDL_Texture * texture,
 
 Returns 0 on success or a negative error code if the texture is not valid
 or was not created with
-`[SDL_TEXTUREACCESS_STREAMING](SDL_TEXTUREACCESS_STREAMING)`; call
+[`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING); call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks

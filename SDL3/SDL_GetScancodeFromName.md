@@ -23,7 +23,7 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 ## Return Value
 
 Returns the [SDL_Scancode](SDL_Scancode), or
-`[SDL_SCANCODE_UNKNOWN](SDL_SCANCODE_UNKNOWN)` if the name wasn't
+[`SDL_SCANCODE_UNKNOWN`](SDL_SCANCODE_UNKNOWN) if the name wasn't
 recognized; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version

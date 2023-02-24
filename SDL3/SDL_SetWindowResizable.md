@@ -32,7 +32,7 @@ Returns 0 on success or a negative error code on failure; call
 ## Remarks
 
 This will add or remove the window's
-`[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE)` flag and allow/disallow user
+[`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE) flag and allow/disallow user
 resizing of the window. This is a no-op if the window's resizable state
 already matches the requested state.
 

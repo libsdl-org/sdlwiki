@@ -23,9 +23,9 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
 
 This may differ from [SDL_GetWindowSize](SDL_GetWindowSize)() if we're
 rendering to a high-DPI drawable, i.e. the window was created with
-`[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)` on a platform with
+[`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-DPI support (Apple calls this "Retina"), and not disabled by the
-`[SDL_HINT_VIDEO_HIGHDPI_DISABLED](SDL_HINT_VIDEO_HIGHDPI_DISABLED)` hint.
+[`SDL_HINT_VIDEO_HIGHDPI_DISABLED`](SDL_HINT_VIDEO_HIGHDPI_DISABLED) hint.
 
 ## Version
 

@@ -21,7 +21,7 @@ void SDL_SetWindowResizable(SDL_Window * window,
 ## Remarks
 
 This will add or remove the window's
-`[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE)` flag and allow/disallow user
+[`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE) flag and allow/disallow user
 resizing of the window. This is a no-op if the window's resizable state
 already matches the requested state.
 

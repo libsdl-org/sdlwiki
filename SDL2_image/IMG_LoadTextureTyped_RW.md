@@ -47,7 +47,7 @@ that it cannot autodetect. If `type` is NULL, SDL_image will rely solely on
 its ability to guess the format.
 
 There is a separate function to read files from disk without having to deal
-with SDL_RWops: `[IMG_LoadTexture](IMG_LoadTexture)("filename.jpg")` will
+with SDL_RWops: [`IMG_LoadTexture](IMG_LoadTexture)("filename.jpg")` will
 call this function and manage those details for you, determining the file
 type from the filename's extension.
 

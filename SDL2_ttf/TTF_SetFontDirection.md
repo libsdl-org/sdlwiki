@@ -28,10 +28,10 @@ deprecated [TTF_SetDirection](TTF_SetDirection)().
 
 Possible direction values are:
 
-- `[TTF_DIRECTION_LTR](TTF_DIRECTION_LTR)` (Left to Right)
-- `[TTF_DIRECTION_RTL](TTF_DIRECTION_RTL)` (Right to Left)
-- `[TTF_DIRECTION_TTB](TTF_DIRECTION_TTB)` (Top to Bottom)
-- `[TTF_DIRECTION_BTT](TTF_DIRECTION_BTT)` (Bottom to Top)
+- [`TTF_DIRECTION_LTR`](TTF_DIRECTION_LTR) (Left to Right)
+- [`TTF_DIRECTION_RTL`](TTF_DIRECTION_RTL) (Right to Left)
+- [`TTF_DIRECTION_TTB`](TTF_DIRECTION_TTB) (Top to Bottom)
+- [`TTF_DIRECTION_BTT`](TTF_DIRECTION_BTT) (Bottom to Top)
 
 If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 

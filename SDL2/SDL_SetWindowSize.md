@@ -23,7 +23,7 @@ void SDL_SetWindowSize(SDL_Window * window, int w,
 
 The window size in screen coordinates may differ from the size in pixels,
 if the window was created with
-`[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)` on a platform with
+[`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-dpi support (e.g. iOS or macOS). Use
 [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)() or
 [SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)() to get the real

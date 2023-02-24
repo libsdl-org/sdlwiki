@@ -17,8 +17,8 @@ SDL_Window * SDL_CreateWindow(const char *title,
 |               |                                                                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | **title**     | the title of the window, in UTF-8 encoding                                                                                                |
-| **x**         | the x position of the window, `[SDL_WINDOWPOS_CENTERED](SDL_WINDOWPOS_CENTERED)`, or `[SDL_WINDOWPOS_UNDEFINED](SDL_WINDOWPOS_UNDEFINED)` |
-| **y**         | the y position of the window, `[SDL_WINDOWPOS_CENTERED](SDL_WINDOWPOS_CENTERED)`, or `[SDL_WINDOWPOS_UNDEFINED](SDL_WINDOWPOS_UNDEFINED)` |
+| **x**         | the x position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
+| **y**         | the y position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
 | **w**         | the width of the window, in screen coordinates                                                                                            |
 | **h**         | the height of the window, in screen coordinates                                                                                           |
 | **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together                                                                        |
@@ -32,36 +32,36 @@ Returns the window that was created or NULL on failure; call
 
 `flags` may be any of the following OR'd together:
 
-- `[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)`: fullscreen window
-- `[SDL_WINDOW_FULLSCREEN_DESKTOP](SDL_WINDOW_FULLSCREEN_DESKTOP)`:
+- [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN): fullscreen window
+- [`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP):
   fullscreen window at desktop resolution
-- `[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL)`: window usable with an OpenGL
+- [`SDL_WINDOW_OPENGL`](SDL_WINDOW_OPENGL): window usable with an OpenGL
   context
-- `[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)`: window usable with a Vulkan
+- [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN): window usable with a Vulkan
   instance
-- `[SDL_WINDOW_METAL](SDL_WINDOW_METAL)`: window usable with a Metal
+- [`SDL_WINDOW_METAL`](SDL_WINDOW_METAL): window usable with a Metal
   instance
-- `[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN)`: window is not visible
-- `[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)`: no window decoration
-- `[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE)`: window can be resized
-- `[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)`: window is minimized
-- `[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED)`: window is maximized
-- `[SDL_WINDOW_INPUT_GRABBED](SDL_WINDOW_INPUT_GRABBED)`: window has
+- [`SDL_WINDOW_HIDDEN`](SDL_WINDOW_HIDDEN): window is not visible
+- [`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS): no window decoration
+- [`SDL_WINDOW_RESIZABLE`](SDL_WINDOW_RESIZABLE): window can be resized
+- [`SDL_WINDOW_MINIMIZED`](SDL_WINDOW_MINIMIZED): window is minimized
+- [`SDL_WINDOW_MAXIMIZED`](SDL_WINDOW_MAXIMIZED): window is maximized
+- [`SDL_WINDOW_INPUT_GRABBED`](SDL_WINDOW_INPUT_GRABBED): window has
   grabbed input focus
-- `[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)`: window should be
+- [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI): window should be
   created in high-DPI mode if supported (>= SDL 2.0.1)
 
-`[SDL_WINDOW_SHOWN](SDL_WINDOW_SHOWN)` is ignored by
+[`SDL_WINDOW_SHOWN`](SDL_WINDOW_SHOWN) is ignored by
 [SDL_CreateWindow](SDL_CreateWindow)(). The [SDL_Window](SDL_Window) is
 implicitly shown if [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set.
-`[SDL_WINDOW_SHOWN](SDL_WINDOW_SHOWN)` may be queried later using
+[`SDL_WINDOW_SHOWN`](SDL_WINDOW_SHOWN) may be queried later using
 [SDL_GetWindowFlags](SDL_GetWindowFlags)().
 
 On Apple's macOS, you **must** set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
 
 If the window is created with the
-`[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)` flag, its size in
+[`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) flag, its size in
 pixels may differ from its size in screen coordinates on platforms with
 high-DPI support (e.g. iOS and macOS). Use
 [SDL_GetWindowSize](SDL_GetWindowSize)() to query the client area's size in

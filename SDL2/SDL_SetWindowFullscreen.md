@@ -16,7 +16,7 @@ int SDL_SetWindowFullscreen(SDL_Window * window,
 |                |                                                                                                                         |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | **window**     | the window to change                                                                                                    |
-| **flags**      | `[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)`, `[SDL_WINDOW_FULLSCREEN_DESKTOP](SDL_WINDOW_FULLSCREEN_DESKTOP)` or 0 |
+| **flags**      | [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN), [`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP) or 0 |
 
 ## Return Value
 
@@ -25,9 +25,9 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-`flags` may be `[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)`, for "real"
+`flags` may be [`SDL_WINDOW_FULLSCREEN`](SDL_WINDOW_FULLSCREEN), for "real"
 fullscreen with a videomode change;
-`[SDL_WINDOW_FULLSCREEN_DESKTOP](SDL_WINDOW_FULLSCREEN_DESKTOP)` for "fake"
+[`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP) for "fake"
 fullscreen that takes the size of the desktop; and 0 for windowed mode.
 
 ## Version

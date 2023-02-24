@@ -18,14 +18,14 @@ int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
 
 ## Return Value
 
-Returns 0, `[SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT)`, or -1 on error; call
+Returns 0, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT), or -1 on error; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This works just like [SDL_LockMutex](SDL_LockMutex)(), but if the mutex is
 not available, this function returns
-`[SDL_MUTEX_TIMEOUT](SDL_MUTEX_TIMEOUT)` immediately.
+[`SDL_MUTEX_TIMEOUT`](SDL_MUTEX_TIMEOUT) immediately.
 
 This technique is useful if you need exclusive access to a resource but
 don't want to wait for it, and will return to it to try again later.

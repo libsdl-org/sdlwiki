@@ -44,7 +44,7 @@ from the RWops during this call in any case.
 
 There is a separate function (a macro, before SDL_mixer 2.6.0) to read
 files from disk without having to deal with SDL_RWops:
-`[Mix_LoadWAV](Mix_LoadWAV)("filename.wav")` will call this function and
+[`Mix_LoadWAV](Mix_LoadWAV)("filename.wav")` will call this function and
 manage those details for you.
 
 When done with a chunk, the app should dispose of it with a call to

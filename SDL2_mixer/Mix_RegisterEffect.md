@@ -67,7 +67,7 @@ only have their [Mix_EffectDone_t](Mix_EffectDone_t) function called when
 they are unregistered (since the main output stream is never "done" in the
 same sense as a channel). You must unregister them manually when you've had
 enough. Your callback will be told that the channel being mixed is
-`[MIX_CHANNEL_POST](MIX_CHANNEL_POST)` if the processing is considered a
+[`MIX_CHANNEL_POST`](MIX_CHANNEL_POST) if the processing is considered a
 posteffect.
 
 After all these effects have finished processing, the callback registered

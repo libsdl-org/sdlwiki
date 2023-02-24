@@ -27,9 +27,9 @@ Returns 0 on success or a negative error code on failure; call
 Device must support the [SDL_HAPTIC_GAIN](SDL_HAPTIC_GAIN) feature.
 
 The user may specify the maximum gain by setting the environment variable
-`[SDL_HAPTIC_GAIN_MAX](SDL_HAPTIC_GAIN_MAX)` which should be between 0 and
+[`SDL_HAPTIC_GAIN_MAX`](SDL_HAPTIC_GAIN_MAX) which should be between 0 and
 100. All calls to [SDL_HapticSetGain](SDL_HapticSetGain)() will scale
-linearly using `[SDL_HAPTIC_GAIN_MAX](SDL_HAPTIC_GAIN_MAX)` as the maximum.
+linearly using [`SDL_HAPTIC_GAIN_MAX`](SDL_HAPTIC_GAIN_MAX) as the maximum.
 
 ## Version
 

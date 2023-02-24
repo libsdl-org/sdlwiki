@@ -12,8 +12,8 @@ SDL_bool SDL_CursorVisible(void);
 
 ## Return Value
 
-Returns `[SDL_TRUE](SDL_TRUE)` if the cursor is being shown, or
-`[SDL_FALSE](SDL_FALSE)` if the cursor is hidden.
+Returns [`SDL_TRUE`](SDL_TRUE) if the cursor is being shown, or
+[`SDL_FALSE`](SDL_FALSE) if the cursor is hidden.
 
 ## Version
 

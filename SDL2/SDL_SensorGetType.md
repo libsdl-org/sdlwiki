@@ -19,7 +19,7 @@ SDL_SensorType SDL_SensorGetType(SDL_Sensor *sensor);
 ## Return Value
 
 Returns the [SDL_SensorType](SDL_SensorType) type, or
-`[SDL_SENSOR_INVALID](SDL_SENSOR_INVALID)` if `sensor` is NULL.
+[`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `sensor` is NULL.
 
 ## Version
 

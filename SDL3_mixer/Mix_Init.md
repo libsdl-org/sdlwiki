@@ -35,13 +35,13 @@ together. It returns the flags successfully initialized, or 0 on failure.
 
 Currently, these flags are:
 
-- `[MIX_INIT_FLAC](MIX_INIT_FLAC)`
-- `[MIX_INIT_MOD](MIX_INIT_MOD)`
-- `[MIX_INIT_MP3](MIX_INIT_MP3)`
-- `[MIX_INIT_OGG](MIX_INIT_OGG)`
-- `[MIX_INIT_MID](MIX_INIT_MID)`
-- `[MIX_INIT_OPUS](MIX_INIT_OPUS)`
-- `[MIX_INIT_WAVPACK](MIX_INIT_WAVPACK)`
+- [`MIX_INIT_FLAC`](MIX_INIT_FLAC)
+- [`MIX_INIT_MOD`](MIX_INIT_MOD)
+- [`MIX_INIT_MP3`](MIX_INIT_MP3)
+- [`MIX_INIT_OGG`](MIX_INIT_OGG)
+- [`MIX_INIT_MID`](MIX_INIT_MID)
+- [`MIX_INIT_OPUS`](MIX_INIT_OPUS)
+- [`MIX_INIT_WAVPACK`](MIX_INIT_WAVPACK)
 
 More flags may be added in a future SDL_mixer release.
 

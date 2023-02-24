@@ -25,7 +25,7 @@ Returns the window that was created or NULL on failure; call
 
 In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows)
 the hint
-`[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT](SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT)`
+[`SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT`](SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT)
 needs to be configured before using
 [SDL_CreateWindowFrom](SDL_CreateWindowFrom)().
 

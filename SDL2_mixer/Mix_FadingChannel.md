@@ -24,12 +24,12 @@ Returns the current fading status of the channel.
 
 This reports one of three values:
 
-- `[MIX_NO_FADING](MIX_NO_FADING)`
-- `[MIX_FADING_OUT](MIX_FADING_OUT)`
-- `[MIX_FADING_IN](MIX_FADING_IN)`
+- [`MIX_NO_FADING`](MIX_NO_FADING)
+- [`MIX_FADING_OUT`](MIX_FADING_OUT)
+- [`MIX_FADING_IN`](MIX_FADING_IN)
 
 If nothing is currently playing on the channel, or an invalid channel is
-specified, this returns `[MIX_NO_FADING](MIX_NO_FADING)`.
+specified, this returns [`MIX_NO_FADING`](MIX_NO_FADING).
 
 You may not specify MAX_CHANNEL_POST for a channel.
 

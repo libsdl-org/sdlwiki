@@ -20,7 +20,7 @@ SDL_GameControllerButton SDL_GameControllerGetButtonFromString(const char *str);
 
 Returns the [SDL_GameControllerButton](SDL_GameControllerButton) enum
 corresponding to the input string, or
-`[SDL_CONTROLLER_AXIS_INVALID](SDL_CONTROLLER_AXIS_INVALID)` if no match
+[`SDL_CONTROLLER_AXIS_INVALID`](SDL_CONTROLLER_AXIS_INVALID) if no match
 was found.
 
 ## Remarks

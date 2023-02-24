@@ -20,7 +20,7 @@ int SDL_SetRenderDrawColor(SDL_Renderer * renderer,
 | **r**            | the red value used to draw on the rendering target                                                                                                                                                                |
 | **g**            | the green value used to draw on the rendering target                                                                                                                                                              |
 | **b**            | the blue value used to draw on the rendering target                                                                                                                                                               |
-| **a**            | the alpha value used to draw on the rendering target; usually `[SDL_ALPHA_OPAQUE](SDL_ALPHA_OPAQUE)` (255). Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used |
+| **a**            | the alpha value used to draw on the rendering target; usually [`SDL_ALPHA_OPAQUE`](SDL_ALPHA_OPAQUE) (255). Use [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) to specify how the alpha channel is used |
 
 ## Return Value
 

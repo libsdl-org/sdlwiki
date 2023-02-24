@@ -19,7 +19,7 @@ SDL_GamepadButton SDL_GetGamepadButtonFromString(const char *str);
 ## Return Value
 
 Returns the [SDL_GamepadButton](SDL_GamepadButton) enum corresponding to
-the input string, or `[SDL_GAMEPAD_AXIS_INVALID](SDL_GAMEPAD_AXIS_INVALID)`
+the input string, or [`SDL_GAMEPAD_AXIS_INVALID`](SDL_GAMEPAD_AXIS_INVALID)
 if no match was found.
 
 ## Remarks

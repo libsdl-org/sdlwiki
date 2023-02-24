@@ -31,12 +31,12 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 `action` may be any of the following:
 
-- `[SDL_ADDEVENT](SDL_ADDEVENT)`: up to `numevents` events will be added to
+- [`SDL_ADDEVENT`](SDL_ADDEVENT): up to `numevents` events will be added to
   the back of the event queue.
-- `[SDL_PEEKEVENT](SDL_PEEKEVENT)`: `numevents` events at the front of the
+- [`SDL_PEEKEVENT`](SDL_PEEKEVENT): `numevents` events at the front of the
   event queue, within the specified minimum and maximum type, will be
   returned to the caller and will _not_ be removed from the queue.
-- `[SDL_GETEVENT](SDL_GETEVENT)`: up to `numevents` events at the front of
+- [`SDL_GETEVENT`](SDL_GETEVENT): up to `numevents` events at the front of
   the event queue, within the specified minimum and maximum type, will be
   returned to the caller and will be removed from the queue.
 

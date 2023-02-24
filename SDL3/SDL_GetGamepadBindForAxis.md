@@ -22,7 +22,7 @@ SDL_GamepadBinding SDL_GetGamepadBindForAxis(SDL_Gamepad *gamepad, SDL_GamepadAx
 Returns a [SDL_GamepadBinding](SDL_GamepadBinding) describing the bind. On
 failure (like the given Controller axis doesn't exist on the device), its
 `.bindType` will be
-`[SDL_GAMEPAD_BINDTYPE_NONE](SDL_GAMEPAD_BINDTYPE_NONE)`.
+[`SDL_GAMEPAD_BINDTYPE_NONE`](SDL_GAMEPAD_BINDTYPE_NONE).
 
 ## Version
 

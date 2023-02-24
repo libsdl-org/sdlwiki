@@ -31,9 +31,9 @@ If your needs aren't complex, this function is preferred over
 
 `flags` may be any of the following:
 
-- `[SDL_MESSAGEBOX_ERROR](SDL_MESSAGEBOX_ERROR)`: error dialog
-- `[SDL_MESSAGEBOX_WARNING](SDL_MESSAGEBOX_WARNING)`: warning dialog
-- `[SDL_MESSAGEBOX_INFORMATION](SDL_MESSAGEBOX_INFORMATION)`: informational
+- [`SDL_MESSAGEBOX_ERROR`](SDL_MESSAGEBOX_ERROR): error dialog
+- [`SDL_MESSAGEBOX_WARNING`](SDL_MESSAGEBOX_WARNING): warning dialog
+- [`SDL_MESSAGEBOX_INFORMATION`](SDL_MESSAGEBOX_INFORMATION): informational
   dialog
 
 This function should be called on the thread that created the parent

@@ -52,7 +52,7 @@ for the foreground window. If the window loses focus while capturing, the
 capture will be disabled automatically.
 
 While capturing is enabled, the current window will have the
-`[SDL_WINDOW_MOUSE_CAPTURE](SDL_WINDOW_MOUSE_CAPTURE)` flag set.
+[`SDL_WINDOW_MOUSE_CAPTURE`](SDL_WINDOW_MOUSE_CAPTURE) flag set.
 
 Please note that as of SDL 2.0.22, SDL will attempt to "auto capture" the
 mouse while the user is pressing a button; this is to try and make mouse
@@ -61,7 +61,7 @@ of a user dragging the mouse outside of the window. This means that if you
 are calling [SDL_CaptureMouse](SDL_CaptureMouse)() only to deal with this
 situation, you no longer have to (although it is safe to do so). If this
 causes problems for your app, you can disable auto capture by setting the
-`[SDL_HINT_MOUSE_AUTO_CAPTURE](SDL_HINT_MOUSE_AUTO_CAPTURE)` hint to zero.
+[`SDL_HINT_MOUSE_AUTO_CAPTURE`](SDL_HINT_MOUSE_AUTO_CAPTURE) hint to zero.
 
 ## Version
 

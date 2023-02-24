@@ -35,7 +35,7 @@ including, but not limited to the following:
 
 Note that when sending trigger axes, you should scale the value to the full
 range of Sint16. For example, a trigger at rest would have the value of
-`[SDL_JOYSTICK_AXIS_MIN](SDL_JOYSTICK_AXIS_MIN)`.
+[`SDL_JOYSTICK_AXIS_MIN`](SDL_JOYSTICK_AXIS_MIN).
 
 ## Version
 
