@@ -1,31 +1,31 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_UnloadObject =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_UnloadObject
 
 Unload a shared object from memory.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_UnloadObject(void *handle);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''handle'''
-|a valid shared object handle returned by [[SDL_LoadObject]]()
-|}
+## Function Parameters
 
-== Version ==
+|                |                                                                             |
+| -------------- | --------------------------------------------------------------------------- |
+| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LoadFunction]]
-:[[SDL_LoadObject]]
+* [SDL_LoadFunction](SDL_LoadFunction)
+* [SDL_LoadObject](SDL_LoadObject)
 
 ----
-[[CategoryAPI]], [[CategorySharedObject]]
+[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
 
 

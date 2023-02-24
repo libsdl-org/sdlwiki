@@ -1,47 +1,47 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_RegisterEvents =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_RegisterEvents
 
 Allocate a set of user-defined events, and return the beginning event number for that set of events.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_RegisterEvents(int numevents);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''numevents'''
-|the number of events to be allocated
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                      |
+| ----------------- | ------------------------------------ |
+| **numevents**     | the number of events to be allocated |
+
+## Return Value
 
 Returns the beginning event number, or (Uint32)-1 if there are not enough
 user-defined events left.
 
-== Remarks ==
+## Remarks
 
-Calling this function with <code>numevents</code> <= 0 is an error and will
-return (Uint32)-1.
+Calling this function with `numevents` <= 0 is an error and will return
+(Uint32)-1.
 
 Note, (Uint32)-1 means the maximum unsigned 32-bit integer value (or
 0xFFFFFFFF), but is clearer to write.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<<Include(SDL_UserEvent, , , from="== Code Examples ==", to="== Remarks ==")>>
+<<Include([SDL_UserEvent](SDL_UserEvent), , , from="== Code Examples ==", to="== Remarks ==")>>
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_PushEvent]]
+* [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
 
 

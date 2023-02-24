@@ -1,15 +1,16 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_MemoryBarrierReleaseFunction =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_MemoryBarrierReleaseFunction
 
 Memory barriers are designed to prevent reads and writes from being reordered by the compiler and being seen out of order on multi-core CPUs.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_MemoryBarrierReleaseFunction(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 A typical pattern would be for thread A to write some data and a flag, and
 for thread B to read the flag and get the data. In this case you would
@@ -26,11 +27,10 @@ flag variable.
 For more information on these semantics, take a look at the blog post:
 http://preshing.com/20120913/acquire-and-release-semantics
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.6.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,27 +1,28 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetKeyboardFocus =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetKeyboardFocus
 
 Query the window which currently has keyboard focus.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Window * SDL_GetKeyboardFocus(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the window with keyboard focus.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

@@ -1,35 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RemoveTimer =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RemoveTimer
 
-Remove a timer created with [[SDL_AddTimer]]().
+Remove a timer created with [SDL_AddTimer](SDL_AddTimer)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_RemoveTimer(SDL_TimerID id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''id'''
-|the ID of the timer to remove
-|}
+## Function Parameters
 
-== Return Value ==
+|            |                               |
+| ---------- | ----------------------------- |
+| **id**     | the ID of the timer to remove |
 
-Returns [[SDL_TRUE]] if the timer is removed or [[SDL_FALSE]] if the timer
-wasn't found.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
+[SDL_FALSE](SDL_FALSE) if the timer wasn't found.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AddTimer]]
+* [SDL_AddTimer](SDL_AddTimer)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

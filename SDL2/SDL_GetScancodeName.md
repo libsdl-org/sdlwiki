@@ -1,50 +1,49 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetScancodeName =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetScancodeName
 
 Get a human-readable name for a scancode.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetScancodeName(SDL_Scancode scancode);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''scancode'''
-|the desired [[SDL_Scancode]] to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                   |
+| ---------------- | ------------------------------------------------- |
+| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
+
+## Return Value
 
 Returns a pointer to the name for the scancode. If the scancode doesn't
 have a name this function returns an empty string ("").
 
-== Remarks ==
+## Remarks
 
-See [[SDL_Scancode]] for details.
+See [SDL_Scancode](SDL_Scancode) for details.
 
-'''Warning''': The returned name is by design not stable across platforms,
-e.g. the name for <code>[[SDL_SCANCODE_LGUI]]</code> is "Left GUI" under
-Linux but "Left Windows" under Microsoft Windows, and some scancodes like
-<code>[[SDL_SCANCODE_NONUSBACKSLASH]]</code> don't have any name at all.
-There are even scancodes that share names, e.g.
-<code>[[SDL_SCANCODE_RETURN]]</code> and
-<code>[[SDL_SCANCODE_RETURN2]]</code> (both called "Return"). This function
-is therefore unsuitable for creating a stable cross-platform two-way
-mapping between strings and scancodes.
+**Warning**: The returned name is by design not stable across platforms,
+e.g. the name for `[SDL_SCANCODE_LGUI](SDL_SCANCODE_LGUI)` is "Left GUI"
+under Linux but "Left Windows" under Microsoft Windows, and some scancodes
+like `[SDL_SCANCODE_NONUSBACKSLASH](SDL_SCANCODE_NONUSBACKSLASH)` don't
+have any name at all. There are even scancodes that share names, e.g.
+`[SDL_SCANCODE_RETURN](SDL_SCANCODE_RETURN)` and
+`[SDL_SCANCODE_RETURN2](SDL_SCANCODE_RETURN2)` (both called "Return"). This
+function is therefore unsuitable for creating a stable cross-platform
+two-way mapping between strings and scancodes.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetScancodeFromKey]]
-:[[SDL_GetScancodeFromName]]
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
+* [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

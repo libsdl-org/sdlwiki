@@ -1,31 +1,31 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_ResetHints =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_ResetHints
 
 Reset all hints to the default values.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_ResetHints(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 This will reset all hints to the value of the associated environment
 variable, or NULL if the environment isn't set. Callbacks will be called
 normally with this change.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetHint]]
-:[[SDL_SetHint]]
-:[[SDL_ResetHint]]
+* [SDL_GetHint](SDL_GetHint)
+* [SDL_SetHint](SDL_SetHint)
+* [SDL_ResetHint](SDL_ResetHint)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

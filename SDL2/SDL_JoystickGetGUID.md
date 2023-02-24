@@ -1,40 +1,40 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_JoystickGetGUID =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_JoystickGetGUID
 
 Get the implementation-dependent GUID for the joystick.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_JoystickGUID SDL_JoystickGetGUID(SDL_Joystick *joystick);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick'''
-|the [[SDL_Joystick]] obtained from [[SDL_JoystickOpen]]()
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+
+## Return Value
 
 Returns the GUID of the given joystick. If called on an invalid index, this
-function returns a zero GUID; call [[SDL_GetError]]() for more information.
+function returns a zero GUID; call [SDL_GetError](SDL_GetError)() for more
+information.
 
-== Remarks ==
+## Remarks
 
 This function requires an open joystick.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_JoystickGetDeviceGUID]]
-:[[SDL_JoystickGetGUIDString]]
+* [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
+* [SDL_JoystickGetGUIDString](SDL_JoystickGetGUIDString)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

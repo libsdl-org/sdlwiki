@@ -1,39 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetKeyFromScancode =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetKeyFromScancode
 
 Get the key code corresponding to the given scancode according to the current keyboard layout.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''scancode'''
-|the desired [[SDL_Scancode]] to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                   |
+| ---------------- | ------------------------------------------------- |
+| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
 
-Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]].
+## Return Value
 
-== Remarks ==
+Returns the [SDL_Keycode](SDL_Keycode) that corresponds to the given
+[SDL_Scancode](SDL_Scancode).
 
-See [[SDL_Keycode]] for details.
+## Remarks
 
-== Version ==
+See [SDL_Keycode](SDL_Keycode) for details.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetKeyName]]
-:[[SDL_GetScancodeFromKey]]
+* [SDL_GetKeyName](SDL_GetKeyName)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

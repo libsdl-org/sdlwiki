@@ -1,38 +1,36 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetRendererInfo =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetRendererInfo
 
 Get information about a rendering context.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetRendererInfo(SDL_Renderer *renderer, SDL_RendererInfo *info);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|-
-|'''info'''
-|an [[SDL_RendererInfo]] structure filled with information about the current renderer
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------- |
+| **renderer**     | the rendering context                                                                                |
+| **info**         | an [SDL_RendererInfo](SDL_RendererInfo) structure filled with information about the current renderer |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateRenderer]]
+* [SDL_CreateRenderer](SDL_CreateRenderer)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

@@ -1,34 +1,33 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_GetFontOutline =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_GetFontOutline
 
 Query a font's current outline.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_GetFontOutline(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns the font's current outline value.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
-== Related Functions ==
+## Related Functions
 
-:[[TTF_SetFontOutline]]
+* [TTF_SetFontOutline](TTF_SetFontOutline)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

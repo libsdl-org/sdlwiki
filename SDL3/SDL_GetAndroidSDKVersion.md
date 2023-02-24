@@ -1,48 +1,49 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetAndroidSDKVersion =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetAndroidSDKVersion
 
 Query Android API level of the current device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetAndroidSDKVersion(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the Android API level.
 
-== Remarks ==
+## Remarks
 
-* API level 31: Android 12
-* API level 30: Android 11
-* API level 29: Android 10
-* API level 28: Android 9
-* API level 27: Android 8.1
-* API level 26: Android 8.0
-* API level 25: Android 7.1
-* API level 24: Android 7.0
-* API level 23: Android 6.0
-* API level 22: Android 5.1
-* API level 21: Android 5.0
-* API level 20: Android 4.4W
-* API level 19: Android 4.4
-* API level 18: Android 4.3
-* API level 17: Android 4.2
-* API level 16: Android 4.1
-* API level 15: Android 4.0.3
-* API level 14: Android 4.0
-* API level 13: Android 3.2
-* API level 12: Android 3.1
-* API level 11: Android 3.0
-* API level 10: Android 2.3.3
+- API level 31: Android 12
+- API level 30: Android 11
+- API level 29: Android 10
+- API level 28: Android 9
+- API level 27: Android 8.1
+- API level 26: Android 8.0
+- API level 25: Android 7.1
+- API level 24: Android 7.0
+- API level 23: Android 6.0
+- API level 22: Android 5.1
+- API level 21: Android 5.0
+- API level 20: Android 4.4W
+- API level 19: Android 4.4
+- API level 18: Android 4.3
+- API level 17: Android 4.2
+- API level 16: Android 4.1
+- API level 15: Android 4.0.3
+- API level 14: Android 4.0
+- API level 13: Android 3.2
+- API level 12: Android 3.1
+- API level 11: Android 3.0
+- API level 10: Android 2.3.3
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
 
 

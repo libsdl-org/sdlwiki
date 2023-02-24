@@ -1,19 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetTouchName =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetTouchName
 
 Get the touch device name as reported from the driver or NULL if the index is invalid.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetTouchName(int index);
-</syntaxhighlight>
 
-== Version ==
+```
+
+## Function Parameters
+
+|               |                        |
+| ------------- | ---------------------- |
+| **index**     | the touch device index |
+
+## Return Value
+
+Returns touch device name
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,38 +1,37 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_acos =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_acos
 
-Use this function to compute arc cosine of <code>x</code>.
+Use this function to compute arc cosine of `x`.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 double SDL_acos(double x);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''x'''
-|floating point value, in radians.
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                                   |
+| --------- | --------------------------------- |
+| **x**     | floating point value, in radians. |
 
-Returns arc cosine of <code>x</code>.
+## Return Value
 
-== Remarks ==
+Returns arc cosine of `x`.
 
-The definition of <code>y = acos(x)</code> is <code>x = cos(y)</code>.
+## Remarks
 
-Domain: <code>-1 <= x <= 1</code>
+The definition of `y = acos(x)` is `x = cos(y)`.
 
-Range: <code>0 <= y <= Pi</code>
+Domain: `-1 <= x <= 1`
 
-== Version ==
+Range: `0 <= y <= Pi`
+
+## Version
 
 This function is available since SDL 2.0.2.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

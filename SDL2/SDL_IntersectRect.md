@@ -1,47 +1,42 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_IntersectRect =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_IntersectRect
 
 Calculate the intersection of two rectangles.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_IntersectRect(const SDL_Rect * A,
                            const SDL_Rect * B,
                            SDL_Rect * result);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''A'''
-|an [[SDL_Rect]] structure representing the first rectangle
-|-
-|'''B'''
-|an [[SDL_Rect]] structure representing the second rectangle
-|-
-|'''result'''
-|an [[SDL_Rect]] structure filled in with the intersection of rectangles <code>A</code> and <code>B</code>
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                             |
+| -------------- | ------------------------------------------------------------------------------------------- |
+| **A**          | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                          |
+| **B**          | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                         |
+| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B` |
 
-Returns [[SDL_TRUE]] if there is an intersection, [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
-If <code>result</code> is NULL then this function will return
-[[SDL_FALSE]].
+## Remarks
 
-== Version ==
+If `result` is NULL then this function will return [SDL_FALSE](SDL_FALSE).
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HasIntersection]]
+* [SDL_HasIntersection](SDL_HasIntersection)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

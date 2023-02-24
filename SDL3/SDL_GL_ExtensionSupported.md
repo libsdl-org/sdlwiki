@@ -1,27 +1,27 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GL_ExtensionSupported =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GL_ExtensionSupported
 
 Check if an OpenGL extension is supported for the current context.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_GL_ExtensionSupported(const char *extension);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''extension'''
-|the name of the extension to check
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                    |
+| ----------------- | ---------------------------------- |
+| **extension**     | the name of the extension to check |
 
-Returns [[SDL_TRUE]] if the extension is supported, [[SDL_FALSE]]
-otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the extension is supported,
+[SDL_FALSE](SDL_FALSE) otherwise.
+
+## Remarks
 
 This function operates on the current GL context; you must have created a
 context and it must be current before calling this function. Do not assume
@@ -34,13 +34,13 @@ operation. Check the extensions you care about after creating the GL
 context and save that information somewhere instead of calling the function
 every time you need to know.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 
     if (SDL_GL_ExtensionSupported("GL_EXT_framebuffer_blit")) {
         draw_to_the_screen_with_framebuffer_blit();   // faster!
@@ -48,9 +48,9 @@ This function is available since SDL 3.0.0.
         draw_to_the_screen_with_a_textured_quad();  // slower!
     }
 
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

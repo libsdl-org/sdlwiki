@@ -1,30 +1,28 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerAddMappingsFromRW =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerAddMappingsFromRW
 
 Load a set of Game Controller mappings from a seekable SDL data stream.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''rw'''
-|the data stream for the mappings to be added
-|-
-|'''freerw'''
-|non-zero to close the stream after being read
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                               |
+| -------------- | --------------------------------------------- |
+| **rw**         | the data stream for the mappings to be added  |
+| **freerw**     | non-zero to close the stream after being read |
+
+## Return Value
 
 Returns the number of mappings added or -1 on error; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 You can call this function several times, if needed, to load different
 database files.
@@ -40,17 +38,16 @@ This function will load the text database entirely in memory before
 processing it, so take this into consideration if you are in a memory
 constrained environment.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.2.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GameControllerAddMapping]]
-:[[SDL_GameControllerAddMappingsFromFile]]
-:[[SDL_GameControllerMappingForGUID]]
+* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
+* [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
+* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

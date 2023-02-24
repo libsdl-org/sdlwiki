@@ -1,33 +1,31 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_SetRelativeMouseMode =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_SetRelativeMouseMode
 
 Set relative mouse mode.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetRelativeMouseMode(SDL_bool enabled);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''enabled'''
-|[[SDL_TRUE]] to enable relative mode, [[SDL_FALSE]] to disable.
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                                  |
+| --------------- | -------------------------------------------------------------------------------- |
+| **enabled**     | [SDL_TRUE](SDL_TRUE) to enable relative mode, [SDL_FALSE](SDL_FALSE) to disable. |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-If relative mode is not supported, this returns -1.
-
-== Remarks ==
+## Remarks
 
 While the mouse is in relative mode, the cursor is hidden, and the driver
 will try to report continuous motion in the current window. Only relative
@@ -39,15 +37,15 @@ to the bounds of the screen.
 
 This function will flush any pending mouse motion.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRelativeMouseMode]]
+* [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode)
 
 ----
-[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

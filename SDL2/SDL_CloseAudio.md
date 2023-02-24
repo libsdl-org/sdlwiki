@@ -1,33 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_CloseAudio =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_CloseAudio
 
 This function is a legacy means of closing the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_CloseAudio(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 This function is equivalent to calling...
 
-<syntaxhighlight lang='c'>
+```c
 SDL_CloseAudioDevice(1);
-</syntaxhighlight>
+```
 
-...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+...and is only useful if you used the legacy
+[SDL_OpenAudio](SDL_OpenAudio)() function.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_OpenAudio]]
+* [SDL_OpenAudio](SDL_OpenAudio)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

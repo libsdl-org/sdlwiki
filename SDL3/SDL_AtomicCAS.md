@@ -1,48 +1,44 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AtomicCAS =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AtomicCAS
 
 Set an atomic variable to a new value if it is currently an old value.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_AtomicCAS(SDL_atomic_t *a, int oldval, int newval);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''a'''
-|a pointer to an [[SDL_atomic_t]] variable to be modified
-|-
-|'''oldval'''
-|the old value
-|-
-|'''newval'''
-|the new value
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                      |
+| -------------- | -------------------------------------------------------------------- |
+| **a**          | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
+| **oldval**     | the old value                                                        |
+| **newval**     | the new value                                                        |
 
-Returns [[SDL_TRUE]] if the atomic variable was set, [[SDL_FALSE]]
-otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the atomic variable was set,
+[SDL_FALSE](SDL_FALSE) otherwise.
 
-'''''Note: If you don't know what this function is for, you shouldn't use
-it!'''''
+## Remarks
 
-== Version ==
+***Note: If you don't know what this function is for, you shouldn't use
+it!***
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicCASPtr]]
-:[[SDL_AtomicGet]]
-:[[SDL_AtomicSet]]
+* [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
+* [SDL_AtomicGet](SDL_AtomicGet)
+* [SDL_AtomicSet](SDL_AtomicSet)
 
 ----
-[[CategoryAPI]], [[CategoryAtomic]]
+[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
 
 

@@ -1,51 +1,44 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreateTexture =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreateTexture
 
 Create a texture for a rendering context.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, Uint32 format, int access, int w, int h);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|-
-|'''format'''
-|one of the enumerated values in [[SDL_PixelFormatEnum]]
-|-
-|'''access'''
-|one of the enumerated values in [[SDL_TextureAccess]]
-|-
-|'''w'''
-|the width of the texture in pixels
-|-
-|'''h'''
-|the height of the texture in pixels
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                            |
+| ---------------- | -------------------------------------------------------------------------- |
+| **renderer**     | the rendering context                                                      |
+| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
+| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
+| **w**            | the width of the texture in pixels                                         |
+| **h**            | the height of the texture in pixels                                        |
+
+## Return Value
 
 Returns a pointer to the created texture or NULL if no rendering context
 was active, the format was unsupported, or the width or height were out of
-range; call [[SDL_GetError]]() for more information.
+range; call [SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 You can set the texture scaling method by setting
-<code>[[SDL_HINT_RENDER_SCALE_QUALITY]]</code> before creating the texture.
+`[SDL_HINT_RENDER_SCALE_QUALITY](SDL_HINT_RENDER_SCALE_QUALITY)` before
+creating the texture.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 
 /* Moving Rectangle */
@@ -97,16 +90,16 @@ int main(int argc, char *argv[])
         return 0;
 }
 
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateTextureFromSurface]]
-:[[SDL_DestroyTexture]]
-:[[SDL_QueryTexture]]
-:[[SDL_UpdateTexture]]
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
+* [SDL_DestroyTexture](SDL_DestroyTexture)
+* [SDL_QueryTexture](SDL_QueryTexture)
+* [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

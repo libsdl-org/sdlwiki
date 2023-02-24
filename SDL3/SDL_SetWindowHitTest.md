@@ -1,40 +1,36 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_SetWindowHitTest =
+# SDL_SetWindowHitTest
 
 Provide a callback that decides if a window region has special properties.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetWindowHitTest(SDL_Window *window, SDL_HitTest callback, void *callback_data);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to set hit-testing on
-|-
-|'''callback'''
-|the function to call when doing a hit-test
-|-
-|'''callback_data'''
-|an app-defined void pointer passed to '''callback'''
-|}
+## Function Parameters
 
-== Return Value ==
+|                       |                                                    |
+| --------------------- | -------------------------------------------------- |
+| **window**            | the window to set hit-testing on                   |
+| **callback**          | the function to call when doing a hit-test         |
+| **callback_data**     | an app-defined void pointer passed to **callback** |
 
-Returns 0 on success or -1 on error (including unsupported); call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 Normally windows are dragged and resized by decorations provided by the
 system window manager (a title bar, borders, etc), but for some apps, it
@@ -65,12 +61,12 @@ when the mouse isn't actually at the location it is testing_). Since this
 can fire at any time, you should try to keep your callback efficient,
 devoid of allocations, etc.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryVideo]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -1,37 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetCursor =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetCursor
 
 Get the active cursor.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Cursor* SDL_GetCursor(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the active cursor or NULL if there is no mouse.
 
-== Remarks ==
+## Remarks
 
 This function returns a pointer to the current cursor which is owned by the
 library. It is not necessary to free the cursor with
-[[SDL_DestroyCursor]]().
+[SDL_DestroyCursor](SDL_DestroyCursor)().
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetCursor]]
+* [SDL_SetCursor](SDL_SetCursor)
 
 ----
-[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

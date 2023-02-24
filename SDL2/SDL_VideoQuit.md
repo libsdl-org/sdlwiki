@@ -1,27 +1,27 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_VideoQuit =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_VideoQuit
 
-Shut down the video subsystem, if initialized with [[SDL_VideoInit]]().
+Shut down the video subsystem, if initialized with [SDL_VideoInit](SDL_VideoInit)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_VideoQuit(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 This function closes all windows, and restores the original video mode.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_VideoInit]]
+* [SDL_VideoInit](SDL_VideoInit)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

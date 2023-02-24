@@ -1,34 +1,33 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadSerial =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadSerial
 
 Get the serial number of an opened gamepad, if available.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char * SDL_GetGamepadSerial(SDL_Gamepad *gamepad);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamepad'''
-|the gamepad object to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                              |
+| --------------- | ---------------------------- |
+| **gamepad**     | the gamepad object to query. |
 
-Return the serial number, or NULL if unavailable.
+## Return Value
 
-== Remarks ==
+Returns the serial number, or NULL if unavailable.
+
+## Remarks
 
 Returns the serial number of the gamepad, or NULL if it is not available.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

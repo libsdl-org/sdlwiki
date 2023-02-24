@@ -1,37 +1,43 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetVersion =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetVersion
 
 Get the version of SDL that is linked against your program.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_GetVersion(SDL_version * ver);
-</syntaxhighlight>
+```c
+int SDL_GetVersion(SDL_version * ver);
 
-== Function Parameters ==
+```
 
-{|
-|'''ver'''
-|the [[SDL_version]] structure that contains the version information
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                                                                                |
+| ----------- | ------------------------------------------------------------------------------ |
+| **ver**     | the [SDL_version](SDL_version) structure that contains the version information |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 If you are linking to SDL dynamically, then it is possible that the current
 version will be different than the version you compiled against. This
-function returns the current version, while [[SDL_VERSION]]() is a macro
-that tells you what version you compiled with.
+function returns the current version, while [SDL_VERSION](SDL_VERSION)() is
+a macro that tells you what version you compiled with.
 
-This function may be called safely at any time, even before [[SDL_Init]]().
+This function may be called safely at any time, even before
+[SDL_Init](SDL_Init)().
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 SDL_version compiled;
 SDL_version linked;
 
@@ -41,18 +47,18 @@ SDL_Log("We compiled against SDL version %u.%u.%u ...\n",
        compiled.major, compiled.minor, compiled.patch);
 SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
        linked.major, linked.minor, linked.patch);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRevision]]
+* [SDL_GetRevision](SDL_GetRevision)
 
 
-== Related Macros ==
+## Related Macros
 
 :[[SDL_VERSION]]
 
 ----
-[[CategoryAPI]], [[CategoryVersion]]
+[CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)
 
 

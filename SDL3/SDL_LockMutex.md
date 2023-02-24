@@ -1,26 +1,27 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_LockMutex =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LockMutex
 
 Lock the mutex.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_LockMutex(SDL_mutex * mutex) SDL_ACQUIRE(mutex);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''mutex'''
-|the mutex to lock
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                   |
+| ------------- | ----------------- |
+| **mutex**     | the mutex to lock |
 
-Return 0, or -1 on error.
+## Return Value
 
-== Remarks ==
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 This will block until the mutex is available, which is to say it is in the
 unlocked state and the OS has chosen the caller as the next thread to lock
@@ -30,14 +31,14 @@ It is legal for the owning thread to lock an already-locked mutex. It must
 unlock it the same number of times before it is actually made available for
 other threads in the system (this is known as a "recursive mutex").
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
 <!-- # Begin Mutex Example -->
-<syntaxhighlight lang='c'>
+```c
 int status;
 SDL_mutex *mutex;
 
@@ -57,10 +58,10 @@ if (status == 0) {
 }
 
 SDL_DestroyMutex(mutex);
-</syntaxhighlight>
+```
 <!-- # End Mutex Example -->
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

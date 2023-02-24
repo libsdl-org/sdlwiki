@@ -1,32 +1,32 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetWindowPixelFormat =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetWindowPixelFormat
 
 Get the pixel format associated with the window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_GetWindowPixelFormat(SDL_Window *window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                     |
+| -------------- | ------------------- |
+| **window**     | the window to query |
+
+## Return Value
 
 Returns the pixel format of the window on success or
-[[SDL_PIXELFORMAT_UNKNOWN]] on failure; call [[SDL_GetError]]() for more
-information.
+[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

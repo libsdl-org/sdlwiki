@@ -1,22 +1,22 @@
-====== (This function is part of SDL_rtf, a separate library from SDL.) ======
-= RTF_FreeContext =
+###### (This function is part of SDL_rtf, a separate library from SDL.)
+# RTF_FreeContext
 
 Free an RTF display context.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void RTF_FreeContext(RTF_Context *ctx);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''ctx'''
-|the RTF context to free.
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                          |
+| ----------- | ------------------------ |
+| **ctx**     | the RTF context to free. |
+
+## Remarks
 
 Call this when done rendering RTF content, to free resources used by this
 context.
@@ -24,11 +24,10 @@ context.
 The context is not valid after this call. This does not destroy the
 associated SDL_Renderer, which can continue to draw and present.
 
-== Version ==
+## Version
 
 This function is available since SDL_rtf 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

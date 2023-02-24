@@ -1,31 +1,32 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_HaltMusic =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_HaltMusic
 
 Halt playing of the music stream.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_HaltMusic(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns zero, regardless of whether any music was halted.
 
-== Remarks ==
+## Remarks
 
 This will stop further playback of music until a new music object is
 started there.
 
 Any halted music will call any callback specified by
-[[Mix_HookMusicFinished]]() before this function returns.
+[Mix_HookMusicFinished](Mix_HookMusicFinished)() before this function
+returns.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

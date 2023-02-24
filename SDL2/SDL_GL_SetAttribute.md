@@ -1,47 +1,44 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GL_SetAttribute =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GL_SetAttribute
 
 Set an OpenGL window attribute before window creation.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GL_SetAttribute(SDL_GLattr attr, int value);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''attr'''
-|an [[SDL_GLattr]] enum value specifying the OpenGL attribute to set
-|-
-|'''value'''
-|the desired value for the attribute
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                               |
+| ------------- | ----------------------------------------------------------------------------- |
+| **attr**      | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to set |
+| **value**     | the desired value for the attribute                                           |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-This function sets the OpenGL attribute <code>attr</code> to
-<code>value</code>. The requested attributes should be set before creating
-an OpenGL window. You should use [[SDL_GL_GetAttribute]]() to check the
-values after creating the OpenGL context, since the values obtained can
-differ from the requested ones.
+This function sets the OpenGL attribute `attr` to `value`. The requested
+attributes should be set before creating an OpenGL window. You should use
+[SDL_GL_GetAttribute](SDL_GL_GetAttribute)() to check the values after
+creating the OpenGL context, since the values obtained can differ from the
+requested ones.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GL_GetAttribute]]
-:[[SDL_GL_ResetAttributes]]
+* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
+* [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

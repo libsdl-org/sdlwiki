@@ -1,34 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_IsScreenKeyboardShown =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_IsScreenKeyboardShown
 
 Check whether the screen keyboard is shown for given window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_IsScreenKeyboardShown(SDL_Window *window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window for which screen keyboard should be queried
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                        |
+| -------------- | ------------------------------------------------------ |
+| **window**     | the window for which screen keyboard should be queried |
 
-Returns [[SDL_TRUE]] if screen keyboard is shown or [[SDL_FALSE]] if not.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is shown or
+[SDL_FALSE](SDL_FALSE) if not.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HasScreenKeyboardSupport]]
+* [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

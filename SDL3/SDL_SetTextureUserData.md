@@ -1,37 +1,35 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetTextureUserData =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetTextureUserData
 
 Associate a user-specified pointer with a texture.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetTextureUserData(SDL_Texture *texture, void *userdata);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''texture'''
-|the texture to update.
-|-
-|'''userdata'''
-|the pointer to associate with the texture.
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                            |
+| ---------------- | ------------------------------------------ |
+| **texture**      | the texture to update.                     |
+| **userdata**     | the pointer to associate with the texture. |
 
-Returns 0 on success, or -1 if the texture is not valid.
+## Return Value
 
-== Version ==
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetTextureUserData]]
+* [SDL_GetTextureUserData](SDL_GetTextureUserData)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

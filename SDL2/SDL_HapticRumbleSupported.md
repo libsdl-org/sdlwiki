@@ -1,38 +1,37 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_HapticRumbleSupported =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_HapticRumbleSupported
 
 Check whether rumble is supported on a haptic device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_HapticRumbleSupported(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|haptic device to check for rumble support
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                           |
+| -------------- | ----------------------------------------- |
+| **haptic**     | haptic device to check for rumble support |
 
-Returns [[SDL_TRUE]] if effect is supported, [[SDL_FALSE]] if it isn't, or
-a negative error code on failure; call [[SDL_GetError]]() for more
-information.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
+if it isn't, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticRumbleInit]]
-:[[SDL_HapticRumblePlay]]
-:[[SDL_HapticRumbleStop]]
+* [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
+* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
+* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

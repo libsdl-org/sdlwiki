@@ -1,39 +1,38 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetVideoDriver =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetVideoDriver
 
 Get the name of a built in video driver.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetVideoDriver(int index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''index'''
-|the index of a video driver
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                             |
+| ------------- | --------------------------- |
+| **index**     | the index of a video driver |
 
-Returns the name of the video driver with the given '''index'''.
+## Return Value
 
-== Remarks ==
+Returns the name of the video driver with the given **index**.
+
+## Remarks
 
 The video drivers are presented in the order in which they are normally
 checked during initialization.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetNumVideoDrivers]]
+* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

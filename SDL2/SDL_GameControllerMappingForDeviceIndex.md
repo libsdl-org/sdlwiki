@@ -1,35 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerMappingForDeviceIndex =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerMappingForDeviceIndex
 
 Get the mapping of a game controller.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 char* SDL_GameControllerMappingForDeviceIndex(int joystick_index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick_index'''
-|the device_index of a device, from zero to [[SDL_NumJoysticks]]()-1
-|}
+## Function Parameters
 
-== Return Value ==
+|                        |                                                                                     |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
 
-Returns the mapping string. Must be freed with [[SDL_free]](). Returns NULL
-if no mapping is available.
+## Return Value
 
-== Remarks ==
+Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
+Returns NULL if no mapping is available.
+
+## Remarks
 
 This can be called before any controllers are opened.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.9.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

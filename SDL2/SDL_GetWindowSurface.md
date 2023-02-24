@@ -1,27 +1,27 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetWindowSurface =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetWindowSurface
 
 Get the SDL surface associated with the window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Surface * SDL_GetWindowSurface(SDL_Window * window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                     |
+| -------------- | ------------------- |
+| **window**     | the window to query |
+
+## Return Value
 
 Returns the surface associated with the window, or NULL on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 A new surface will be created with the optimal format for the window, if
 necessary. This surface will be freed when the window is destroyed. Do not
@@ -33,18 +33,17 @@ window this function must be called again to return a valid surface.
 You may not combine this with 3D or the rendering API on this window.
 
 This function is affected by
-<code>[[SDL_HINT_FRAMEBUFFER_ACCELERATION]]</code>.
+`[SDL_HINT_FRAMEBUFFER_ACCELERATION](SDL_HINT_FRAMEBUFFER_ACCELERATION)`.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_UpdateWindowSurface]]
-:[[SDL_UpdateWindowSurfaceRects]]
+* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
+* [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

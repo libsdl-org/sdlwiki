@@ -1,42 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_WriteBE16 =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_WriteBE16
 
-Use this function to write 16 bits in native format to a [[SDL_RWops]] as big-endian data.
+Use this function to write 16 bits in native format to a [SDL_RWops](SDL_RWops) as big-endian data.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 size_t SDL_WriteBE16(SDL_RWops * dst, Uint16 value);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dst'''
-|the stream to which data will be written
-|-
-|'''value'''
-|the data to be written, in native format
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                          |
+| ------------- | ---------------------------------------- |
+| **dst**       | the stream to which data will be written |
+| **value**     | the data to be written, in native format |
+
+## Return Value
 
 Returns 1 on successful write, 0 on error.
 
-== Remarks ==
+## Remarks
 
 SDL byteswaps the data only if necessary, so the application always
 specifies native format, and the data written will be in big-endian format.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_WriteLE16]]
+* [SDL_WriteLE16](SDL_WriteLE16)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

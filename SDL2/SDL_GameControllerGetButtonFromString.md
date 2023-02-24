@@ -1,40 +1,41 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerGetButtonFromString =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerGetButtonFromString
 
-Convert a string into an [[SDL_GameControllerButton]] enum.
+Convert a string into an [SDL_GameControllerButton](SDL_GameControllerButton) enum.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_GameControllerButton SDL_GameControllerGetButtonFromString(const char *str);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''str'''
-|string representing a [[SDL_GameController]] axis
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                                     |
+| ----------- | ------------------------------------------------------------------- |
+| **str**     | string representing a [SDL_GameController](SDL_GameController) axis |
 
-Returns the [[SDL_GameControllerButton]] enum corresponding to the input
-string, or <code>[[SDL_CONTROLLER_AXIS_INVALID]]</code> if no match was
-found.
+## Return Value
 
-== Remarks ==
+Returns the [SDL_GameControllerButton](SDL_GameControllerButton) enum
+corresponding to the input string, or
+`[SDL_CONTROLLER_AXIS_INVALID](SDL_CONTROLLER_AXIS_INVALID)` if no match
+was found.
 
-This function is called internally to translate [[SDL_GameController]]
-mapping strings for the underlying joystick device into the consistent
-[[SDL_GameController]] mapping. You do not normally need to call this
-function unless you are parsing [[SDL_GameController]] mappings in your own
-code.
+## Remarks
 
-== Version ==
+This function is called internally to translate
+[SDL_GameController](SDL_GameController) mapping strings for the underlying
+joystick device into the consistent
+[SDL_GameController](SDL_GameController) mapping. You do not normally need
+to call this function unless you are parsing
+[SDL_GameController](SDL_GameController) mappings in your own code.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

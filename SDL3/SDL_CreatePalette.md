@@ -1,40 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreatePalette =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreatePalette
 
 Create a palette structure with the specified number of color entries.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Palette* SDL_CreatePalette(int ncolors);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''ncolors'''
-|represents the number of color entries in the color palette
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                             |
+| --------------- | ----------------------------------------------------------- |
+| **ncolors**     | represents the number of color entries in the color palette |
 
-Returns a new [[SDL_Palette]] structure on success or NULL on failure (e.g.
-if there wasn't enough memory); call [[SDL_GetError]]() for more
-information.
+## Return Value
 
-== Remarks ==
+Returns a new [SDL_Palette](SDL_Palette) structure on success or NULL on
+failure (e.g. if there wasn't enough memory); call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 The palette entries are initialized to white.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_DestroyPalette]]
+* [SDL_DestroyPalette](SDL_DestroyPalette)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

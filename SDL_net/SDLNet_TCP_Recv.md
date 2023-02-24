@@ -1,40 +1,35 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_TCP_Recv =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_TCP_Recv
 
 Receive data from a non-server socket.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDLNet_TCP_Recv(TCPsocket sock, void *data, int maxlen);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sock'''
-|the socket to send data to.
-|-
-|'''data'''
-|a pointer to where to store received data.
-|-
-|'''maxlen'''
-|the maximum number of bytes that can be stored at <code>data</code>.
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                           |
+| -------------- | --------------------------------------------------------- |
+| **sock**       | the socket to send data to.                               |
+| **data**       | a pointer to where to store received data.                |
+| **maxlen**     | the maximum number of bytes that can be stored at `data`. |
 
-Returns number of bytes received, which might be less than
-<code>maxlen</code>.
+## Return Value
 
-== Remarks ==
+Returns number of bytes received, which might be less than `maxlen`.
 
-<code>sock</code> must be a valid socket that was created by
-[[SDLNet_TCP_Open]] with a specific address, or [[SDLNet_TCP_Accept]].
+## Remarks
 
-Receive up to <code>maxlen</code> bytes of data over the non-server socket
-<code>sock</code>, and store them in the buffer pointed to by
-<code>data</code>.
+`sock` must be a valid socket that was created by
+[SDLNet_TCP_Open](SDLNet_TCP_Open) with a specific address, or
+[SDLNet_TCP_Accept](SDLNet_TCP_Accept).
+
+Receive up to `maxlen` bytes of data over the non-server socket `sock`, and
+store them in the buffer pointed to by `data`.
 
 This function returns the actual amount of data received. If the return
 value is less than or equal to zero, then either the remote connection was
@@ -44,20 +39,19 @@ Note that this will return the number of bytes available at the first
 moment the socket is able to see new data. If packets are coming in slowly
 from the network, this might be less data than you expect at a given time.
 
-This function may block! Use [[SDLNet_CheckSockets]]() to make sure there
-is data available before calling this function, if you want to avoid
-blocking.
+This function may block! Use [SDLNet_CheckSockets](SDLNet_CheckSockets)()
+to make sure there is data available before calling this function, if you
+want to avoid blocking.
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDLNet_TCP_Send]]
-:[[SDLNet_CheckSockets]]
+* [SDLNet_TCP_Send](SDLNet_TCP_Send)
+* [SDLNet_CheckSockets](SDLNet_CheckSockets)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

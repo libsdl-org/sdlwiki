@@ -1,30 +1,29 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_GetFontKerning =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_GetFontKerning
 
 Query whether or not kerning is allowed for a font.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_GetFontKerning(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns non-zero if kerning is enabled, zero otherwise.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

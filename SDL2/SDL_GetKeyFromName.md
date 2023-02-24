@@ -1,37 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetKeyFromName =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetKeyFromName
 
 Get a key code from a human-readable name.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Keycode SDL_GetKeyFromName(const char *name);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''name'''
-|the human-readable key name
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                             |
+| ------------ | --------------------------- |
+| **name**     | the human-readable key name |
 
-Returns key code, or <code>[[SDLK_UNKNOWN]]</code> if the name wasn't
-recognized; call [[SDL_GetError]]() for more information.
+## Return Value
 
-== Version ==
+Returns key code, or `[SDLK_UNKNOWN](SDLK_UNKNOWN)` if the name wasn't
+recognized; call [SDL_GetError](SDL_GetError)() for more information.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetKeyFromScancode]]
-:[[SDL_GetKeyName]]
-:[[SDL_GetScancodeFromName]]
+* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
+* [SDL_GetKeyName](SDL_GetKeyName)
+* [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

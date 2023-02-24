@@ -1,46 +1,44 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RenderGetMetalCommandEncoder =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RenderGetMetalCommandEncoder
 
 Get the Metal command encoder for the current frame 
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_RenderGetMetalCommandEncoder(SDL_Renderer * renderer);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|The renderer to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                       |
+| ---------------- | --------------------- |
+| **renderer**     | The renderer to query |
 
-Returns an <code>id<MTLRenderCommandEncoder></code> on success, or NULL if
-the renderer isn't a Metal renderer or there was an error.
+## Return Value
 
-== Remarks ==
+Returns an `id<MTLRenderCommandEncoder>` on success, or NULL if the
+renderer isn't a Metal renderer or there was an error.
 
-This function returns <code>void *</code>, so SDL doesn't have to include
-Metal's headers, but it can be safely cast to an
-<code>id<MTLRenderCommandEncoder></code>.
+## Remarks
+
+This function returns `void *`, so SDL doesn't have to include Metal's
+headers, but it can be safely cast to an `id<MTLRenderCommandEncoder>`.
 
 Note that as of SDL 2.0.18, this will return NULL if Metal refuses to give
 SDL a drawable to render to, which might happen if the window is
 hidden/minimized/offscreen. This doesn't apply to command encoders for
 render targets, just the window's backbacker. Check your return values!
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.8.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RenderGetMetalLayer]]
+* [SDL_RenderGetMetalLayer](SDL_RenderGetMetalLayer)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

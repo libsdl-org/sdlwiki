@@ -1,49 +1,45 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreateThread =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreateThread
 
 Create a new thread with a default stack size.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 extern DECLSPEC SDL_Thread *SDLCALL
 SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''fn'''
-|the [[SDL_ThreadFunction]] function to call in the new thread
-|-
-|'''name'''
-|the name of the thread
-|-
-|'''data'''
-|a pointer that is passed to <code>fn</code>
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                                 |
+| ------------ | ------------------------------------------------------------------------------- |
+| **fn**       | the [SDL_ThreadFunction](SDL_ThreadFunction) function to call in the new thread |
+| **name**     | the name of the thread                                                          |
+| **data**     | a pointer that is passed to `fn`                                                |
+
+## Return Value
 
 Returns an opaque pointer to the new thread object on success, NULL if the
-new thread could not be created; call [[SDL_GetError]]() for more
-information.
+new thread could not be created; call [SDL_GetError](SDL_GetError)() for
+more information.
 
-== Remarks ==
+## Remarks
 
 This is equivalent to calling:
 
-<syntaxhighlight lang='c'>
+```c
 SDL_CreateThreadWithStackSize(fn, name, 0, data);
-</syntaxhighlight>
+```
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 #include "SDL.h"
 
 /* Very simple thread - counts 0 to 9 delaying 50ms between increments */
@@ -78,8 +74,8 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-</syntaxhighlight>
-<syntaxhighlight lang='c'>
+```
+```c
 Output:
 Simple SDL_CreateThread test:
 Thread counter: 0
@@ -93,14 +89,14 @@ Thread counter: 7
 Thread counter: 8
 Thread counter: 9
 Thread returned value: 10
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateThreadWithStackSize]]
-:[[SDL_WaitThread]]
+* [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
+* [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
 
 

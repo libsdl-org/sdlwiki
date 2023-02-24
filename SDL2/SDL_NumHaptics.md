@@ -1,28 +1,29 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_NumHaptics =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_NumHaptics
 
 Count the number of haptic devices attached to the system.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_NumHaptics(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the number of haptic devices detected on the system or a negative
-error code on failure; call [[SDL_GetError]]() for more information.
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticName]]
+* [SDL_HapticName](SDL_HapticName)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

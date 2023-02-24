@@ -1,45 +1,44 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GetMusicArtistTag =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GetMusicArtistTag
 
 Get the artist name for a music object.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* Mix_GetMusicArtistTag(const Mix_Music *music);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''music'''
-|the music object to query, or NULL for the currently-playing music.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                     |
+| ------------- | ------------------------------------------------------------------- |
+| **music**     | the music object to query, or NULL for the currently-playing music. |
+
+## Return Value
 
 Returns the music's artist name if available, or "".
 
-== Remarks ==
+## Remarks
 
 This returns format-specific metadata. Not all file formats supply this!
 
-If <code>music</code> is NULL, this will query the currently-playing music.
+If `music` is NULL, this will query the currently-playing music.
 
 This function never returns NULL! If no data is available, it will return
 an empty string ("").
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.6.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_GetMusicTitleTag]]
-:[[Mix_GetMusicAlbumTag]]
-:[[Mix_GetMusicCopyrightTag]]
+* [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
+* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
+* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

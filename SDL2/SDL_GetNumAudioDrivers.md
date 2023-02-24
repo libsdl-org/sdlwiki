@@ -1,19 +1,20 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetNumAudioDrivers =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetNumAudioDrivers
 
 Use this function to get the number of built-in audio drivers.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetNumAudioDrivers(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the number of built-in audio drivers.
 
-== Remarks ==
+## Remarks
 
 This function returns a hardcoded number. This never returns a negative
 value; if there are no drivers compiled into this build of SDL, this
@@ -25,15 +26,14 @@ there's no esound server available, SDL's esound driver would fail if used.
 By default, SDL tries all drivers, in its preferred order, until one is
 found to be usable.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetAudioDriver]]
+* [SDL_GetAudioDriver](SDL_GetAudioDriver)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

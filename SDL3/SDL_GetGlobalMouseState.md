@@ -1,62 +1,61 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_GetGlobalMouseState =
+# SDL_GetGlobalMouseState
 
 Get the current state of the mouse in relation to the desktop.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_GetGlobalMouseState(float *x, float *y);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''x'''
-|filled in with the current X coord relative to the desktop; can be NULL
-|-
-|'''y'''
-|filled in with the current Y coord relative to the desktop; can be NULL
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                                                                         |
+| --------- | ----------------------------------------------------------------------- |
+| **x**     | filled in with the current X coord relative to the desktop; can be NULL |
+| **y**     | filled in with the current Y coord relative to the desktop; can be NULL |
+
+## Return Value
 
 Returns the current button state as a bitmask which can be tested using the
-[[SDL_BUTTON]](X) macros.
+[SDL_BUTTON](SDL_BUTTON)(X) macros.
 
-== Remarks ==
+## Remarks
 
-This works similarly to [[SDL_GetMouseState]](), but the coordinates will
-be reported relative to the top-left of the desktop. This can be useful if
-you need to track the mouse outside of a specific window and
-[[SDL_CaptureMouse]]() doesn't fit your needs. For example, it could be
-useful if you need to track the mouse while dragging a window, where
-coordinates relative to a window might not be in sync at all times.
+This works similarly to [SDL_GetMouseState](SDL_GetMouseState)(), but the
+coordinates will be reported relative to the top-left of the desktop. This
+can be useful if you need to track the mouse outside of a specific window
+and [SDL_CaptureMouse](SDL_CaptureMouse)() doesn't fit your needs. For
+example, it could be useful if you need to track the mouse while dragging a
+window, where coordinates relative to a window might not be in sync at all
+times.
 
-Note: [[SDL_GetMouseState]]() returns the mouse position as SDL understands
-it from the last pump of the event queue. This function, however, queries
-the OS for the current mouse position, and as such, might be a slightly
-less efficient function. Unless you know what you're doing and have a good
-reason to use this function, you probably want [[SDL_GetMouseState]]()
-instead.
+Note: [SDL_GetMouseState](SDL_GetMouseState)() returns the mouse position
+as SDL understands it from the last pump of the event queue. This function,
+however, queries the OS for the current mouse position, and as such, might
+be a slightly less efficient function. Unless you know what you're doing
+and have a good reason to use this function, you probably want
+[SDL_GetMouseState](SDL_GetMouseState)() instead.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CaptureMouse]]
+* [SDL_CaptureMouse](SDL_CaptureMouse)
 
 ----
-[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

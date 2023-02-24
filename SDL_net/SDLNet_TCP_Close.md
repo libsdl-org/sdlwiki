@@ -1,22 +1,22 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_TCP_Close =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_TCP_Close
 
 Close a TCP network socket.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDLNet_TCP_Close(TCPsocket sock);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sock'''
-|socket to close.
-|}
+## Function Parameters
 
-== Remarks ==
+|              |                  |
+| ------------ | ---------------- |
+| **sock**     | socket to close. |
+
+## Remarks
 
 All TCP sockets (server and non-server) are deinitialized through this
 function. Call this once you are done with a socket, and assume the handle
@@ -24,11 +24,10 @@ is invalid once you have.
 
 Closing a socket will disconnect any communication and free its resources.
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,48 +1,49 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreateRenderer =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreateRenderer
 
 Create a 2D rendering context for a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Renderer* SDL_CreateRenderer(SDL_Window *window, const char *name, Uint32 flags);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window where rendering is displayed
-|-
-|'''name'''
-|the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags
-|-
-|'''flags'''
-|0, or one or more [[SDL_RendererFlags]] OR'd together
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **window**     | the window where rendering is displayed                                                                            |
+| **name**       | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags |
+| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                             |
+
+## Return Value
 
 Returns a valid rendering context or NULL if there was an error; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 If you want a specific renderer, you can specify its name here. A list of
-available renderers can be obtained by calling [[SDL_GetRenderDriver]]
-multiple times, with indices from 0 to [[SDL_GetNumRenderDrivers]]()-1. If
-you don't need a specific renderer, specify NULL and SDL will attempt to
-chooes the best option for you, based on what is available on the user's
-system.
+available renderers can be obtained by calling
+[SDL_GetRenderDriver](SDL_GetRenderDriver) multiple times, with indices
+from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)()-1. If you
+don't need a specific renderer, specify NULL and SDL will attempt to chooes
+the best option for you, based on what is available on the user's system.
 
-== Version ==
+By default the rendering size matches the window size in screen
+coordinates, but you can call
+[SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)() to
+enable high DPI rendering or change the content size and scaling options.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 
@@ -91,17 +92,17 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateSoftwareRenderer]]
-:[[SDL_DestroyRenderer]]
-:[[SDL_GetNumRenderDrivers]]
-:[[SDL_GetRenderDriver]]
-:[[SDL_GetRendererInfo]]
+* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
+* [SDL_DestroyRenderer](SDL_DestroyRenderer)
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+* [SDL_GetRenderDriver](SDL_GetRenderDriver)
+* [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

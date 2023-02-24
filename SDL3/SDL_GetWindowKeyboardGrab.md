@@ -1,35 +1,35 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetWindowKeyboardGrab =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetWindowKeyboardGrab
 
 Get a window's keyboard grab mode.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_GetWindowKeyboardGrab(SDL_Window *window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                     |
+| -------------- | ------------------- |
+| **window**     | the window to query |
 
-Returns [[SDL_TRUE]] if keyboard is grabbed, and [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if keyboard is grabbed, and
+[SDL_FALSE](SDL_FALSE) otherwise.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetWindowKeyboardGrab]]
-:[[SDL_GetWindowGrab]]
+* [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
+* [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

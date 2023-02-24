@@ -1,31 +1,31 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SensorGetDeviceType =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SensorGetDeviceType
 
 Get the type of a sensor.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_SensorType SDL_SensorGetDeviceType(int device_index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''device_index'''
-|The sensor to get the type from
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                                 |
+| -------------------- | ------------------------------- |
+| **device_index**     | The sensor to get the type from |
 
-Returns the [[SDL_SensorType]], or <code>[[SDL_SENSOR_INVALID]]</code> if
-<code>device_index</code> is out of range.
+## Return Value
 
-== Version ==
+Returns the [SDL_SensorType](SDL_SensorType), or
+`[SDL_SENSOR_INVALID](SDL_SENSOR_INVALID)` if `device_index` is out of
+range.
+
+## Version
 
 This function is available since SDL 2.0.9.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

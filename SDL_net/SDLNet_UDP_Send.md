@@ -1,57 +1,54 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_UDP_Send =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_UDP_Send
 
 Send a single UDP packet to the specified channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDLNet_UDP_Send(UDPsocket sock, int channel, UDPpacket *packet);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sock'''
-|the UDP socket to send packets on.
-|-
-|'''packet'''
-|a single packet to send to the network.
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                         |
+| -------------- | --------------------------------------- |
+| **sock**       | the UDP socket to send packets on.      |
+| **packet**     | a single packet to send to the network. |
+
+## Return Value
 
 Returns 1 if the packet was sent, or 0 on error.
 
-== Remarks ==
+## Remarks
 
 If the channel specified is -1, the packet will be sent to the address in
-the <code>src</code> member of the packet.
+the `src` member of the packet.
 
 The packet will be updated with the status of the packet after it has been
 sent.
 
-'''Warning''': UDP is an _unreliable protocol_, which means we can report
+**Warning**: UDP is an _unreliable protocol_, which means we can report
 that your packet has been successfully sent from your machine, but then it
 never makes it to its destination when a router along the way quietly drops
 it. If this happens--and this is a common result on the internet!--you will
 not know the packet never made it. Also, packets may arrive in a different
 order than you sent them. Plan accordingly!
 
-'''Warning''': The maximum size of the packet is limited by the MTU
-(Maximum Transfer Unit) of the transport medium. It can be as low as 250
-bytes for some PPP links, and as high as 1500 bytes for ethernet. Different
-sizes can be sent, but the system might split it into multiple transmission
-fragments behind the scenes, that need to be reassembled on the other side
-(and the packet is lost if any fragment is lost in transit). So the less
-you can reasonably send in a single packet, the better, as it will be more
-reliable and lower latency.
+**Warning**: The maximum size of the packet is limited by the MTU (Maximum
+Transfer Unit) of the transport medium. It can be as low as 250 bytes for
+some PPP links, and as high as 1500 bytes for ethernet. Different sizes can
+be sent, but the system might split it into multiple transmission fragments
+behind the scenes, that need to be reassembled on the other side (and the
+packet is lost if any fragment is lost in transit). So the less you can
+reasonably send in a single packet, the better, as it will be more reliable
+and lower latency.
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

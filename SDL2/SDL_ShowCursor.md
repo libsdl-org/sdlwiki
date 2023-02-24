@@ -1,47 +1,46 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_ShowCursor =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_ShowCursor
 
 Toggle whether or not the cursor is shown.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_ShowCursor(int toggle);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''toggle'''
-|<code>[[SDL_ENABLE]]</code> to show the cursor, <code>[[SDL_DISABLE]]</code> to hide it, <code>[[SDL_QUERY]]</code> to query the current state without changing it.
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                                                                                                  |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **toggle**     | `[SDL_ENABLE](SDL_ENABLE)` to show the cursor, `[SDL_DISABLE](SDL_DISABLE)` to hide it, `[SDL_QUERY](SDL_QUERY)` to query the current state without changing it. |
 
-Returns <code>[[SDL_ENABLE]]</code> if the cursor is shown, or
-<code>[[SDL_DISABLE]]</code> if the cursor is hidden, or a negative error
-code on failure; call [[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns `[SDL_ENABLE](SDL_ENABLE)` if the cursor is shown, or
+`[SDL_DISABLE](SDL_DISABLE)` if the cursor is hidden, or a negative error
+code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 The cursor starts off displayed but can be turned off. Passing
-<code>[[SDL_ENABLE]]</code> displays the cursor and passing
-<code>[[SDL_DISABLE]]</code> hides it.
+`[SDL_ENABLE](SDL_ENABLE)` displays the cursor and passing
+`[SDL_DISABLE](SDL_DISABLE)` hides it.
 
 The current state of the mouse cursor can be queried by passing
-<code>[[SDL_QUERY]]</code>; either <code>[[SDL_DISABLE]]</code> or
-<code>[[SDL_ENABLE]]</code> will be returned.
+`[SDL_QUERY](SDL_QUERY)`; either `[SDL_DISABLE](SDL_DISABLE)` or
+`[SDL_ENABLE](SDL_ENABLE)` will be returned.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateCursor]]
-:[[SDL_SetCursor]]
+* [SDL_CreateCursor](SDL_CreateCursor)
+* [SDL_SetCursor](SDL_SetCursor)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

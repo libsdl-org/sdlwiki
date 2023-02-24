@@ -1,37 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadAppleSFSymbolsNameForAxis =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadAppleSFSymbolsNameForAxis
 
 Return the sfSymbolsName for a given axis on a gamepad on Apple platforms.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetGamepadAppleSFSymbolsNameForAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamepad'''
-|the gamepad to query
-|-
-|'''axis'''
-|an axis on the gamepad
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                        |
+| --------------- | ---------------------- |
+| **gamepad**     | the gamepad to query   |
+| **axis**        | an axis on the gamepad |
+
+## Return Value
 
 Returns the sfSymbolsName or NULL if the name can't be found
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetGamepadAppleSFSymbolsNameForButton]]
+* [SDL_GetGamepadAppleSFSymbolsNameForButton](SDL_GetGamepadAppleSFSymbolsNameForButton)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,31 +1,32 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_Quit =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_Quit
 
 Clean up all initialized subsystems.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_Quit(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 You should call this function even if you have already shutdown each
-initialized subsystem with [[SDL_QuitSubSystem]](). It is safe to call this
-function even in the case of errors in initialization.
+initialized subsystem with [SDL_QuitSubSystem](SDL_QuitSubSystem)(). It is
+safe to call this function even in the case of errors in initialization.
 
 You can use this function with atexit() to ensure that it is run when your
 application is shutdown, but it is not wise to do this from a library or
 other dynamically loaded code.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -41,14 +42,14 @@ int main(int argc, char** argv) {
 
     return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Init]]
-:[[SDL_QuitSubSystem]]
+* [SDL_Init](SDL_Init)
+* [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[[CategoryAPI]], [[CategoryInit]]
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
 

@@ -1,42 +1,43 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_PauseAudio =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_PauseAudio
 
 This function is a legacy means of pausing the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_PauseAudio(int pause_on);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''pause_on'''
-|non-zero to pause, 0 to unpause
-|}
+## Function Parameters
 
-== Remarks ==
+|                  |                                 |
+| ---------------- | ------------------------------- |
+| **pause_on**     | non-zero to pause, 0 to unpause |
 
-New programs might want to use [[SDL_PauseAudioDevice]]() instead. This
-function is equivalent to calling...
+## Remarks
 
-<syntaxhighlight lang='c'>
+New programs might want to use
+[SDL_PauseAudioDevice](SDL_PauseAudioDevice)() instead. This function is
+equivalent to calling...
+
+```c
 SDL_PauseAudioDevice(1, pause_on);
-</syntaxhighlight>
+```
 
-...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+...and is only useful if you used the legacy
+[SDL_OpenAudio](SDL_OpenAudio)() function.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetAudioStatus]]
-:[[SDL_PauseAudioDevice]]
+* [SDL_GetAudioStatus](SDL_GetAudioStatus)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,40 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetPixelFormatPalette =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetPixelFormatPalette
 
 Set the palette for a pixel format structure.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
                               SDL_Palette *palette);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''format'''
-|the [[SDL_PixelFormat]] structure that will use the palette
-|-
-|'''palette'''
-|the [[SDL_Palette]] structure that will be used
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| **format**      | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette |
+| **palette**     | the [SDL_Palette](SDL_Palette) structure that will be used                 |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreatePalette]]
-:[[SDL_DestroyPalette]]
+* [SDL_CreatePalette](SDL_CreatePalette)
+* [SDL_DestroyPalette](SDL_DestroyPalette)
 
 ----
-[[CategoryAPI]], [[CategoryPixels]]
+[CategoryAPI](CategoryAPI), [CategoryPixels](CategoryPixels)
 
 

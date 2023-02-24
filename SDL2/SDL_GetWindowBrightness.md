@@ -1,42 +1,42 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetWindowBrightness =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetWindowBrightness
 
 Get the brightness (gamma multiplier) for a given window's display.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 float SDL_GetWindowBrightness(SDL_Window * window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window used to select the display whose brightness will be queried
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                        |
+| -------------- | ---------------------------------------------------------------------- |
+| **window**     | the window used to select the display whose brightness will be queried |
+
+## Return Value
 
 Returns the brightness for the display where 0.0 is completely dark and 1.0
 is normal brightness.
 
-== Remarks ==
+## Remarks
 
 Despite the name and signature, this method retrieves the brightness of the
 entire display, not an individual window. A window is considered to be
 owned by the display that contains the window's center pixel. (The index of
-this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().)
+this display can be retrieved using
+[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)().)
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetWindowBrightness]]
+* [SDL_SetWindowBrightness](SDL_SetWindowBrightness)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

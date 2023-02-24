@@ -1,43 +1,44 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetKeyFromScancode =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetKeyFromScancode
 
 Get the key code corresponding to the given scancode according to the current keyboard layout.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Keycode SDL_GetKeyFromScancode(SDL_Scancode scancode);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''scancode'''
-|the desired [[SDL_Scancode]] to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                   |
+| ---------------- | ------------------------------------------------- |
+| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
 
-Returns the [[SDL_Keycode]] that corresponds to the given [[SDL_Scancode]].
+## Return Value
 
-== Remarks ==
+Returns the [SDL_Keycode](SDL_Keycode) that corresponds to the given
+[SDL_Scancode](SDL_Scancode).
 
-See [[SDL_Keycode]] for details.
+## Remarks
 
-== Version ==
+See [SDL_Keycode](SDL_Keycode) for details.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetKeyName]]
-:[[SDL_GetScancodeFromKey]]
+* [SDL_GetKeyName](SDL_GetKeyName)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

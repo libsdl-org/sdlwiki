@@ -1,45 +1,43 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_SetFontHinting =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_SetFontHinting
 
 Set a font's current hinter setting.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void TTF_SetFontHinting(TTF_Font *font, int hinting);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to set a new hinter setting on.
-|-
-|'''hinting'''
-|the new hinter setting.
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                          |
+| --------------- | ---------------------------------------- |
+| **font**        | the font to set a new hinter setting on. |
+| **hinting**     | the new hinter setting.                  |
+
+## Remarks
 
 Setting it clears already-generated glyphs, if any, from the cache.
 
 The hinter setting is a single value:
 
-* <code>[[TTF_HINTING_NORMAL]]</code>
-* <code>[[TTF_HINTING_LIGHT]]</code>
-* <code>[[TTF_HINTING_MONO]]</code>
-* <code>[[TTF_HINTING_NONE]]</code>
-* <code>[[TTF_HINTING_LIGHT_SUBPIXEL]]</code> (available in SDL_ttf 2.0.18 and later)
+- `[TTF_HINTING_NORMAL](TTF_HINTING_NORMAL)`
+- `[TTF_HINTING_LIGHT](TTF_HINTING_LIGHT)`
+- `[TTF_HINTING_MONO](TTF_HINTING_MONO)`
+- `[TTF_HINTING_NONE](TTF_HINTING_NONE)`
+- `[TTF_HINTING_LIGHT_SUBPIXEL](TTF_HINTING_LIGHT_SUBPIXEL)` (available in
+  SDL_ttf 2.0.18 and later)
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
-== Related Functions ==
+## Related Functions
 
-:[[TTF_GetFontHinting]]
+* [TTF_GetFontHinting](TTF_GetFontHinting)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

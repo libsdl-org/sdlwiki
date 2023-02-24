@@ -1,28 +1,28 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_Pause =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_Pause
 
 Pause a particular channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void Mix_Pause(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|the channel to pause, or -1 to pause all channels.
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                                    |
+| --------------- | -------------------------------------------------- |
+| **channel**     | the channel to pause, or -1 to pause all channels. |
+
+## Remarks
 
 Pausing a channel will prevent further playback of the assigned chunk but
 will maintain the chunk's current mixing position. When resumed, this
 channel will continue to mix the chunk where it left off.
 
-A paused channel can be resumed by calling [[Mix_Resume]]().
+A paused channel can be resumed by calling [Mix_Resume](Mix_Resume)().
 
 A paused channel with an expiration will not expire while paused (the
 expiration countdown will be adjusted once resumed).
@@ -35,11 +35,10 @@ unaffected.
 
 You may not specify MAX_CHANNEL_POST for a channel.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

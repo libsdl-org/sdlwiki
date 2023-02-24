@@ -1,41 +1,40 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetNumDisplayModes =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetNumDisplayModes
 
 Get the number of available display modes.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetNumDisplayModes(int displayIndex);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''displayIndex'''
-|the index of the display to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                                   |
+| -------------------- | --------------------------------- |
+| **displayIndex**     | the index of the display to query |
+
+## Return Value
 
 Returns a number >= 1 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-The <code>displayIndex</code> needs to be in the range from 0 to
-[[SDL_GetNumVideoDisplays]]() - 1.
+The `displayIndex` needs to be in the range from 0 to
+[SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)() - 1.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetDisplayMode]]
-:[[SDL_GetNumVideoDisplays]]
+* [SDL_GetDisplayMode](SDL_GetDisplayMode)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

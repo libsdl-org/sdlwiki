@@ -1,40 +1,40 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_FreePacketV =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_FreePacketV
 
 Free a UDP packet vector (array of packets).
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDLNet_FreePacketV(UDPpacket **packetV);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''packetV'''
-|the results of a call to [[SDLNet_AllocPacketV]]().
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                                                        |
+| --------------- | ---------------------------------------------------------------------- |
+| **packetV**     | the results of a call to [SDLNet_AllocPacketV](SDLNet_AllocPacketV)(). |
 
-This frees the results of a previous call to [[SDLNet_AllocPacketV]](),
-freeing both the set of packets and the array that holds them.
+## Remarks
+
+This frees the results of a previous call to
+[SDLNet_AllocPacketV](SDLNet_AllocPacketV)(), freeing both the set of
+packets and the array that holds them.
 
 It is safe to free a NULL array through here; it's a harmless no-op.
 
 You must not use this to free packets allocated through any function other
-than [[SDLNet_AllocPacketV]]().
+than [SDLNet_AllocPacketV](SDLNet_AllocPacketV)().
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDLNet_AllocPacketV]]
+* [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

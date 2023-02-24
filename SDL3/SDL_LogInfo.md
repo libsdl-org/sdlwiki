@@ -1,43 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_LogInfo =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LogInfo
 
-Log a message with [[SDL_LOG_PRIORITY_INFO]].
+Log a message with [SDL_LOG_PRIORITY_INFO](SDL_LOG_PRIORITY_INFO).
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_LogInfo(int category, SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(2);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''category'''
-|the category of the message
-|-
-|'''fmt'''
-|a printf() style message format string
-|-
-|'''...'''
-|additional parameters matching % tokens in the '''fmt''' string, if any
-|}
+## Function Parameters
 
-== Version ==
+|                  |                                                                       |
+| ---------------- | --------------------------------------------------------------------- |
+| **category**     | the category of the message                                           |
+| **fmt**          | a printf() style message format string                                |
+| **...**          | additional parameters matching % tokens in the **fmt** string, if any |
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Log]]
-:[[SDL_LogCritical]]
-:[[SDL_LogDebug]]
-:[[SDL_LogError]]
-:[[SDL_LogMessage]]
-:[[SDL_LogMessageV]]
-:[[SDL_LogVerbose]]
-:[[SDL_LogWarn]]
+* [SDL_Log](SDL_Log)
+* [SDL_LogCritical](SDL_LogCritical)
+* [SDL_LogDebug](SDL_LogDebug)
+* [SDL_LogError](SDL_LogError)
+* [SDL_LogMessage](SDL_LogMessage)
+* [SDL_LogMessageV](SDL_LogMessageV)
+* [SDL_LogVerbose](SDL_LogVerbose)
+* [SDL_LogWarn](SDL_LogWarn)
 
 ----
-[[CategoryAPI]], [[CategoryLog]]
+[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
 
 

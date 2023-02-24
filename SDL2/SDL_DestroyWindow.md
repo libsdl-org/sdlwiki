@@ -1,36 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_DestroyWindow =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_DestroyWindow
 
 Destroy a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_DestroyWindow(SDL_Window * window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to destroy
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                       |
+| -------------- | --------------------- |
+| **window**     | the window to destroy |
 
-If <code>window</code> is NULL, this function will return immediately after
-setting the SDL error message to "Invalid window". See [[SDL_GetError]]().
+## Remarks
 
-== Version ==
+If `window` is NULL, this function will return immediately after setting
+the SDL error message to "Invalid window". See
+[SDL_GetError](SDL_GetError)().
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateWindow]]
-:[[SDL_CreateWindowFrom]]
+* [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

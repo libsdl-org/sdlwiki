@@ -1,53 +1,51 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_Vulkan_GetInstanceExtensions =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_Vulkan_GetInstanceExtensions
 
-Get the names of the Vulkan instance extensions needed to create a surface with [[SDL_Vulkan_CreateSurface]].
+Get the names of the Vulkan instance extensions needed to create a surface with [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface).
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_Vulkan_GetInstanceExtensions(unsigned int *pCount,
                                           const char **pNames);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''pCount'''
-|A pointer to an unsigned int corresponding to the number of extensions to be returned
-|-
-|'''pNames'''
-|NULL or a pointer to an array to be filled with required Vulkan instance extensions
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------- |
+| **pCount**     | A pointer to an unsigned int corresponding to the number of extensions to be returned |
+| **pNames**     | NULL or a pointer to an array to be filled with required Vulkan instance extensions   |
 
-Returns [[SDL_TRUE]] on success, [[SDL_FALSE]] on error.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
 
-This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or
-creating an [[SDL_Window]] with the <code>[[SDL_WINDOW_VULKAN]]</code>
+## Remarks
+
+This should be called after either calling
+[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() or creating an
+[SDL_Window](SDL_Window) with the `[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)`
 flag.
 
-If <code>pNames</code> is NULL, then the number of required Vulkan instance
-extensions is returned in <code>pCount</code>. Otherwise,
-<code>pCount</code> must point to a variable set to the number of elements
-in the <code>pNames</code> array, and on return the variable is overwritten
-with the number of names actually written to <code>pNames</code>. If
-<code>pCount</code> is less than the number of required extensions, at most
-<code>pCount</code> structures will be written. If <code>pCount</code> is
-smaller than the number of required extensions, [[SDL_FALSE]] will be
-returned instead of [[SDL_TRUE]], to indicate that not all the required
-extensions were returned.
+If `pNames` is NULL, then the number of required Vulkan instance extensions
+is returned in `pCount`. Otherwise, `pCount` must point to a variable set
+to the number of elements in the `pNames` array, and on return the variable
+is overwritten with the number of names actually written to `pNames`. If
+`pCount` is less than the number of required extensions, at most `pCount`
+structures will be written. If `pCount` is smaller than the number of
+required extensions, [SDL_FALSE](SDL_FALSE) will be returned instead of
+[SDL_TRUE](SDL_TRUE), to indicate that not all the required extensions were
+returned.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 // Note: This sample uses C++17 features/syntax.
 // Get the required extension count
 unsigned int count;
@@ -68,13 +66,13 @@ create_info.ppEnabledExtensionNames = extensions.data();
 
 VkInstance instance;
 VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Vulkan_CreateSurface]]
+* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
-[[CategoryAPI]], [[CategoryVulkan]]
+[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
 
 

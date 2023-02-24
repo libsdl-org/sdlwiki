@@ -1,36 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_TLSGet =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_TLSGet
 
 Get the current thread's value associated with a thread local storage ID.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * SDL_TLSGet(SDL_TLSID id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''id'''
-|the thread local storage ID
-|}
+## Function Parameters
 
-== Return Value ==
+|            |                             |
+| ---------- | --------------------------- |
+| **id**     | the thread local storage ID |
+
+## Return Value
 
 Returns the value associated with the ID for the current thread or NULL if
-no value has been set; call [[SDL_GetError]]() for more information.
+no value has been set; call [SDL_GetError](SDL_GetError)() for more
+information.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_TLSCreate]]
-:[[SDL_TLSSet]]
+* [SDL_TLSCreate](SDL_TLSCreate)
+* [SDL_TLSSet](SDL_TLSSet)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

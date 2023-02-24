@@ -1,41 +1,41 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SemTryWait =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SemTryWait
 
 See if a semaphore has a positive value and decrement it if it does.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SemTryWait(SDL_sem *sem);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sem'''
-|the semaphore to wait on
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                          |
+| ----------- | ------------------------ |
+| **sem**     | the semaphore to wait on |
 
-Returns 0 if the wait succeeds, <code>[[SDL_MUTEX_TIMEDOUT]]</code> if the
-wait would block, or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns 0 if the wait succeeds, `[SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT)`
+if the wait would block, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-This function checks to see if the semaphore pointed to by <code>sem</code>
-has a positive value and atomically decrements the semaphore value if it
-does. If the semaphore doesn't have a positive value, the function
-immediately returns [[SDL_MUTEX_TIMEDOUT]].
+## Remarks
 
-== Version ==
+This function checks to see if the semaphore pointed to by `sem` has a
+positive value and atomically decrements the semaphore value if it does. If
+the semaphore doesn't have a positive value, the function immediately
+returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_atomic_t done;
 SDL_sem *sem;
 
@@ -62,18 +62,18 @@ SDL_AtomicSet(&done, 1);
 SDL_SemPost(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateSemaphore]]
-:[[SDL_DestroySemaphore]]
-:[[SDL_SemPost]]
-:[[SDL_SemValue]]
-:[[SDL_SemWait]]
-:[[SDL_SemWaitTimeout]]
+* [SDL_CreateSemaphore](SDL_CreateSemaphore)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore)
+* [SDL_SemPost](SDL_SemPost)
+* [SDL_SemValue](SDL_SemValue)
+* [SDL_SemWait](SDL_SemWait)
+* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

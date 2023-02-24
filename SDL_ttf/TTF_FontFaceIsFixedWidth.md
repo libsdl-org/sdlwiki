@@ -1,26 +1,26 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_FontFaceIsFixedWidth =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_FontFaceIsFixedWidth
 
 Query whether a font is fixed-width.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_FontFaceIsFixedWidth(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns non-zero if fixed-width, zero if not.
 
-== Remarks ==
+## Remarks
 
 A "fixed-width" font means all glyphs are the same width across; a
 lowercase 'i' will be the same size across as a capital 'W', for example.
@@ -28,11 +28,10 @@ This is common for terminals and text editors, and other apps that treat
 text as a grid. Most other things (WYSIWYG word processors, web pages, etc)
 are more likely to not be fixed-width in most cases.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

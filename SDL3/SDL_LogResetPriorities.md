@@ -1,28 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_LogResetPriorities =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LogResetPriorities
 
 Reset all priorities to default.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_LogResetPriorities(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
 
-This is called by [[SDL_Quit]]().
+## Remarks
 
-== Version ==
+This is called by [SDL_Quit](SDL_Quit)().
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LogSetAllPriority]]
-:[[SDL_LogSetPriority]]
+* [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
+* [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----
-[[CategoryAPI]], [[CategoryLog]]
+[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
 
 

@@ -1,56 +1,52 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RenderDrawPoint =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RenderDrawPoint
 
 Draw a point on the current rendering target.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderDrawPoint(SDL_Renderer * renderer,
                         int x, int y);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|-
-|'''x'''
-|the x coordinate of the point
-|-
-|'''y'''
-|the y coordinate of the point
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                               |
+| ---------------- | ----------------------------- |
+| **renderer**     | the rendering context         |
+| **x**            | the x coordinate of the point |
+| **y**            | the y coordinate of the point |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-[[SDL_RenderDrawPoint]]() draws a single point. If you want to draw
-multiple, use [[SDL_RenderDrawPoints]]() instead.
+[SDL_RenderDrawPoint](SDL_RenderDrawPoint)() draws a single point. If you
+want to draw multiple, use [SDL_RenderDrawPoints](SDL_RenderDrawPoints)()
+instead.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RenderDrawLine]]
-:[[SDL_RenderDrawLines]]
-:[[SDL_RenderDrawPoints]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
-:[[SDL_RenderFillRect]]
-:[[SDL_RenderFillRects]]
-:[[SDL_RenderPresent]]
-:[[SDL_SetRenderDrawBlendMode]]
-:[[SDL_SetRenderDrawColor]]
+* [SDL_RenderDrawLine](SDL_RenderDrawLine)
+* [SDL_RenderDrawLines](SDL_RenderDrawLines)
+* [SDL_RenderDrawPoints](SDL_RenderDrawPoints)
+* [SDL_RenderDrawRect](SDL_RenderDrawRect)
+* [SDL_RenderDrawRects](SDL_RenderDrawRects)
+* [SDL_RenderFillRect](SDL_RenderFillRect)
+* [SDL_RenderFillRects](SDL_RenderFillRects)
+* [SDL_RenderPresent](SDL_RenderPresent)
+* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
+* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

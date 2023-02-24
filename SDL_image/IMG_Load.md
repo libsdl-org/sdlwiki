@@ -1,26 +1,26 @@
-====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_Load =
+###### (This function is part of SDL_image, a separate library from SDL.)
+# IMG_Load
 
 Load an image from a filesystem path into a software surface.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Surface * IMG_Load(const char *file);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''file'''
-|a path on the filesystem to load an image from.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                 |
+| ------------ | ----------------------------------------------- |
+| **file**     | a path on the filesystem to load an image from. |
+
+## Return Value
 
 Returns a new SDL surface, or NULL on error.
 
-== Remarks ==
+## Remarks
 
 An SDL_Surface is a buffer of pixels in memory accessible by the CPU. Use
 this if you plan to hand the data to something else or manipulate it
@@ -37,30 +37,30 @@ format.
 
 If the image format supports a transparent pixel, SDL will set the colorkey
 for the surface. You can enable RLE acceleration on the surface afterwards
-by calling: SDL_SetColorKey(image, SDL_RLEACCEL, image->format->colorkey);
+by calling: SDL_SetSurfaceColorKey(image, SDL_RLEACCEL,
+image->format->colorkey);
 
 There is a separate function to read files from an SDL_RWops, if you need
 an i/o abstraction to provide data from anywhere instead of a simple
-filesystem read; that function is [[IMG_Load_RW]]().
+filesystem read; that function is [IMG_Load_RW](IMG_Load_RW)().
 
 If you are using SDL's 2D rendering API, there is an equivalent call to
 load images directly into an SDL_Texture for use by the GPU without using a
-software surface: call [[IMG_LoadTexture]]() instead.
+software surface: call [IMG_LoadTexture](IMG_LoadTexture)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_FreeSurface().
+call to SDL_DestroySurface().
 
-== Version ==
+## Version
 
 This function is available since SDL_image 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[IMG_LoadTyped_RW]]
-:[[IMG_Load_RW]]
-:[[SDL_FreeSurface]]
+* [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
+* [IMG_Load_RW](IMG_Load_RW)
+* [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

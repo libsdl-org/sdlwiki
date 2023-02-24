@@ -1,40 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerMappingForGUID =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerMappingForGUID
 
 Get the game controller mapping string for a given GUID.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 char * SDL_GameControllerMappingForGUID(SDL_JoystickGUID guid);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''guid'''
-|a structure containing the GUID for which a mapping is desired
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                |
+| ------------ | -------------------------------------------------------------- |
+| **guid**     | a structure containing the GUID for which a mapping is desired |
 
-Returns a mapping string or NULL on error; call [[SDL_GetError]]() for more
-information.
+## Return Value
 
-== Remarks ==
+Returns a mapping string or NULL on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-The returned string must be freed with [[SDL_free]]().
+## Remarks
 
-== Version ==
+The returned string must be freed with [SDL_free](SDL_free)().
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_JoystickGetDeviceGUID]]
-:[[SDL_JoystickGetGUID]]
+* [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
+* [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

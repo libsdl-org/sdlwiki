@@ -1,20 +1,21 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_AndroidGetActivity =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_AndroidGetActivity
 
 Retrieve the Java instance of the Android activity class.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * SDL_AndroidGetActivity(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the jobject representing the instance of the Activity class of the
 Android application, or NULL on error.
 
-== Remarks ==
+## Remarks
 
 The prototype of the function in SDL's code actually declares a void*
 return type, even if the implementation returns a jobject. The rationale
@@ -26,15 +27,14 @@ DeleteLocalRef() functions of the Java native interface:
 
 https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AndroidGetJNIEnv]]
+* [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

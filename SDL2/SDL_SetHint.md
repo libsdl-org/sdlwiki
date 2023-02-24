@@ -1,45 +1,44 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetHint =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetHint
 
 Set a hint with normal priority.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_SetHint(const char *name,
                      const char *value);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''name'''
-|the hint to set
-|-
-|'''value'''
-|the value of the hint variable
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                |
+| ------------- | ------------------------------ |
+| **name**      | the hint to set                |
+| **value**     | the value of the hint variable |
 
-Returns [[SDL_TRUE]] if the hint was set, [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
+otherwise.
+
+## Remarks
 
 Hints will not be set if there is an existing override hint or environment
-variable that takes precedence. You can use [[SDL_SetHintWithPriority]]()
-to set the hint with override priority instead.
+variable that takes precedence. You can use
+[SDL_SetHintWithPriority](SDL_SetHintWithPriority)() to set the hint with
+override priority instead.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetHint]]
-:[[SDL_SetHintWithPriority]]
+* [SDL_GetHint](SDL_GetHint)
+* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

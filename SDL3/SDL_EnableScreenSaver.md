@@ -1,24 +1,30 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_EnableScreenSaver =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_EnableScreenSaver
 
 Allow the screen to be blanked by a screen saver.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_EnableScreenSaver(void);
-</syntaxhighlight>
+```c
+int SDL_EnableScreenSaver(void);
 
-== Version ==
+```
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_DisableScreenSaver]]
-:[[SDL_ScreenSaverEnabled]]
+* [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
+* [SDL_ScreenSaverEnabled](SDL_ScreenSaverEnabled)
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

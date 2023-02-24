@@ -1,37 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreateMutex =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreateMutex
 
 Create a new mutex.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_mutex* SDL_CreateMutex(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the initialized and unlocked mutex or NULL on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 All newly-created mutexes begin in the _unlocked_ state.
 
-Calls to [[SDL_LockMutex]]() will not return while the mutex is locked by
-another thread. See [[SDL_TryLockMutex]]() to attempt to lock without
-blocking.
+Calls to [SDL_LockMutex](SDL_LockMutex)() will not return while the mutex
+is locked by another thread. See [SDL_TryLockMutex](SDL_TryLockMutex)() to
+attempt to lock without blocking.
 
 SDL mutexes are reentrant.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
 <!-- # Begin Mutex Example -->
-<syntaxhighlight lang='c'>
+```c
 SDL_mutex *mutex;
 
 mutex = SDL_CreateMutex();
@@ -48,17 +49,17 @@ if (SDL_LockMutex(mutex) == 0) {
 }
 
 SDL_DestroyMutex(mutex);
-</syntaxhighlight>
+```
 <!-- # End Mutex Example -->
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_DestroyMutex]]
-:[[SDL_LockMutex]]
-:[[SDL_TryLockMutex]]
-:[[SDL_UnlockMutex]]
+* [SDL_DestroyMutex](SDL_DestroyMutex)
+* [SDL_LockMutex](SDL_LockMutex)
+* [SDL_TryLockMutex](SDL_TryLockMutex)
+* [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

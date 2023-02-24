@@ -1,40 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_HasEvent =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_HasEvent
 
 Check for the existence of a certain event type in the event queue.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_HasEvent(Uint32 type);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''type'''
-|the type of event to be queried; see [[SDL_EventType]] for details
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                                 |
+| ------------ | ------------------------------------------------------------------------------- |
+| **type**     | the type of event to be queried; see [SDL_EventType](SDL_EventType) for details |
 
-Returns [[SDL_TRUE]] if events matching <code>type</code> are present, or
-[[SDL_FALSE]] if events matching <code>type</code> are not present.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if events matching `type` are present, or
+[SDL_FALSE](SDL_FALSE) if events matching `type` are not present.
 
-If you need to check for a range of event types, use [[SDL_HasEvents]]()
-instead.
+## Remarks
 
-== Version ==
+If you need to check for a range of event types, use
+[SDL_HasEvents](SDL_HasEvents)() instead.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HasEvents]]
+* [SDL_HasEvents](SDL_HasEvents)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

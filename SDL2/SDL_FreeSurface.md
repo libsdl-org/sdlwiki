@@ -1,37 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_FreeSurface =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_FreeSurface
 
 Free an RGB surface.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_FreeSurface(SDL_Surface * surface);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''surface'''
-|the [[SDL_Surface]] to free.
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                         |
+| --------------- | --------------------------------------- |
+| **surface**     | the [SDL_Surface](SDL_Surface) to free. |
+
+## Remarks
 
 It is safe to pass NULL to this function.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateRGBSurface]]
-:[[SDL_CreateRGBSurfaceFrom]]
-:[[SDL_LoadBMP]]
-:[[SDL_LoadBMP_RW]]
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
+* [SDL_LoadBMP](SDL_LoadBMP)
+* [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

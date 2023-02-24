@@ -1,36 +1,36 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_IsGamepad =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_IsGamepad
 
 Check if the given joystick is supported by the gamepad interface.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_IsGamepad(SDL_JoystickID instance_id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''instance_id'''
-|the joystick instance ID
-|}
+## Function Parameters
 
-== Return Value ==
+|                     |                          |
+| ------------------- | ------------------------ |
+| **instance_id**     | the joystick instance ID |
 
-Returns [[SDL_TRUE]] if the given joystick is supported by the gamepad
-interface, [[SDL_FALSE]] if it isn't or it's an invalid index.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if the given joystick is supported by the
+gamepad interface, [SDL_FALSE](SDL_FALSE) if it isn't or it's an invalid
+index.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetGamepadNameForIndex]]
-:[[SDL_OpenGamepad]]
+* [SDL_GetGamepadNameForIndex](SDL_GetGamepadNameForIndex)
+* [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

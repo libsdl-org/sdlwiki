@@ -1,51 +1,48 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetRelativeMouseState =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetRelativeMouseState
 
 Retrieve the relative state of the mouse.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_GetRelativeMouseState(float *x, float *y);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''x'''
-|a pointer filled with the last recorded x coordinate of the mouse
-|-
-|'''y'''
-|a pointer filled with the last recorded y coordinate of the mouse
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                                                                   |
+| --------- | ----------------------------------------------------------------- |
+| **x**     | a pointer filled with the last recorded x coordinate of the mouse |
+| **y**     | a pointer filled with the last recorded y coordinate of the mouse |
+
+## Return Value
 
 Returns a 32-bit button bitmask of the relative button state.
 
-== Remarks ==
+## Remarks
 
 The current button state is returned as a button bitmask, which can be
-tested using the <code>[[SDL_BUTTON]](X)</code> macros (where
-<code>X</code> is generally 1 for the left, 2 for middle, 3 for the right
-button), and <code>x</code> and <code>y</code> are set to the mouse deltas
-since the last call to [[SDL_GetRelativeMouseState]]() or since event
-initialization. You can pass NULL for either <code>x</code> or
-<code>y</code>.
+tested using the `[SDL_BUTTON](SDL_BUTTON)(X)` macros (where `X` is
+generally 1 for the left, 2 for middle, 3 for the right button), and `x`
+and `y` are set to the mouse deltas since the last call to
+[SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)() or since event
+initialization. You can pass NULL for either `x` or `y`.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetMouseState]]
+* [SDL_GetMouseState](SDL_GetMouseState)
 
 ----
-[[CategoryAPI]], [[CategoryMouse]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

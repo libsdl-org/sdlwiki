@@ -1,37 +1,37 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetThreadPriority =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetThreadPriority
 
 Set the priority for the current thread.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetThreadPriority(SDL_ThreadPriority priority);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''priority'''
-|the [[SDL_ThreadPriority]] to set
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                     |
+| ---------------- | --------------------------------------------------- |
+| **priority**     | the [SDL_ThreadPriority](SDL_ThreadPriority) to set |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 Note that some platforms will not let you alter the priority (or at least,
 promote the thread to a higher priority) at all, and some require you to be
 an administrator account. Be prepared for this to fail.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
 
 

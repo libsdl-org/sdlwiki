@@ -1,40 +1,37 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetPixelFormatPalette =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetPixelFormatPalette
 
 Set the palette for a pixel format structure.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
                               SDL_Palette *palette);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''format'''
-|the [[SDL_PixelFormat]] structure that will use the palette
-|-
-|'''palette'''
-|the [[SDL_Palette]] structure that will be used
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| **format**      | the [SDL_PixelFormat](SDL_PixelFormat) structure that will use the palette |
+| **palette**     | the [SDL_Palette](SDL_Palette) structure that will be used                 |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AllocPalette]]
-:[[SDL_FreePalette]]
+* [SDL_AllocPalette](SDL_AllocPalette)
+* [SDL_FreePalette](SDL_FreePalette)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

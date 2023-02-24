@@ -1,40 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_AtomicGetPtr =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_AtomicGetPtr
 
 Get the value of a pointer atomically.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_AtomicGetPtr(void **a);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''a'''
-|a pointer to a pointer
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                        |
+| --------- | ---------------------- |
+| **a**     | a pointer to a pointer |
+
+## Return Value
 
 Returns the current value of a pointer.
 
-== Remarks ==
+## Remarks
 
-'''''Note: If you don't know what this function is for, you shouldn't use
-it!'''''
+***Note: If you don't know what this function is for, you shouldn't use
+it!***
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.2.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicCASPtr]]
-:[[SDL_AtomicSetPtr]]
+* [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
+* [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

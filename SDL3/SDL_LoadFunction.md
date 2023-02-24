@@ -1,33 +1,31 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_LoadFunction =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LoadFunction
 
 Look up the address of the named function in a shared object.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_FunctionPointer SDL_LoadFunction(void *handle, const char *name);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''handle'''
-|a valid shared object handle returned by [[SDL_LoadObject]]()
-|-
-|'''name'''
-|the name of the function to look up
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                             |
+| -------------- | --------------------------------------------------------------------------- |
+| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+| **name**       | the name of the function to look up                                         |
+
+## Return Value
 
 Returns a pointer to the function or NULL if there was an error; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 This function pointer is no longer valid after calling
-[[SDL_UnloadObject]]().
+[SDL_UnloadObject](SDL_UnloadObject)().
 
 This function can only look up C function names. Other languages may have
 name mangling and intrinsic language support that varies from compiler to
@@ -39,13 +37,13 @@ mysteriously if you do not do this.
 
 If the requested function doesn't exist, NULL is returned.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 
 /* Variable declaration */
@@ -68,14 +66,14 @@ if (myFancyFunction != NULL) {
 } else {
     /* Error handling here */
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LoadObject]]
-:[[SDL_UnloadObject]]
+* [SDL_LoadObject](SDL_LoadObject)
+* [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
-[[CategoryAPI]], [[CategorySharedObject]]
+[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
 
 

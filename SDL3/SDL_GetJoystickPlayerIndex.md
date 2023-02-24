@@ -1,35 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetJoystickPlayerIndex =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetJoystickPlayerIndex
 
 Get the player index of an opened joystick.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetJoystickPlayerIndex(SDL_Joystick *joystick);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick'''
-|the [[SDL_Joystick]] obtained from [[SDL_OpenJoystick]]()
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+
+## Return Value
 
 Returns the player index, or -1 if it's not available.
 
-== Remarks ==
+## Remarks
 
 For XInput controllers this returns the XInput user index. Many joysticks
 will not be able to supply this information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

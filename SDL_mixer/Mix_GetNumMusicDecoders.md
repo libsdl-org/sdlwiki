@@ -1,42 +1,44 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GetNumMusicDecoders =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GetNumMusicDecoders
 
 Get a list of music decoders that this build of SDL_mixer provides.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_GetNumMusicDecoders(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
 
-Returns number of music decoders available.
+## Return Value
 
-== Remarks ==
+Returns number of chunk decoders available.
+
+## Remarks
 
 This list can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [[Mix_OpenAudio]]() or [[Mix_OpenAudioDevice]]() before calling this
-function, as decoders are activated at device open time.
+call [Mix_OpenAudio](Mix_OpenAudio)() or
+[Mix_OpenAudioDevice](Mix_OpenAudioDevice)() before calling this function,
+as decoders are activated at device open time.
 
 Appearing in this list doesn't promise your specific audio file will
 decode...but it's handy to know if you have, say, a functioning Ogg Vorbis
 install.
 
 These return values are static, read-only data; do not modify or free it.
-The pointers remain valid until you call [[Mix_CloseAudio]]().
+The pointers remain valid until you call
+[Mix_CloseAudio](Mix_CloseAudio)().
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_GetMusicDecoder]]
-:[[Mix_HasMusicDecoder]]
+* [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
+* [Mix_HasMusicDecoder](Mix_HasMusicDecoder)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,37 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_QueueAudio =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_QueueAudio
 
 Queue more audio on non-callback devices.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_QueueAudio(SDL_AudioDeviceID dev, const void *data, Uint32 len);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|the device ID to which we will queue audio
-|-
-|'''data'''
-|the data to queue to the device for later playback
-|-
-|'''len'''
-|the number of bytes (not samples!) to which <code>data</code> points
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                           |
+| ------------ | --------------------------------------------------------- |
+| **dev**      | the device ID to which we will queue audio                |
+| **data**     | the data to queue to the device for later playback        |
+| **len**      | the number of bytes (not samples!) to which `data` points |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 If you are looking to retrieve queued audio from a non-callback capture
-device, you want [[SDL_DequeueAudio]]() instead. [[SDL_QueueAudio]]() will
-return -1 to signify an error if you use it with capture devices.
+device, you want [SDL_DequeueAudio](SDL_DequeueAudio)() instead.
+[SDL_QueueAudio](SDL_QueueAudio)() will return -1 to signify an error if
+you use it with capture devices.
 
 SDL offers two ways to feed audio to the device: you can either supply a
 callback that SDL triggers with some frequency to obtain more audio (pull
@@ -54,23 +51,22 @@ You may not queue audio on a device that is using an application-supplied
 callback; doing so returns an error. You have to use the audio callback or
 queue audio with this function, but not both.
 
-You should not call [[SDL_LockAudio]]() on the device before queueing; SDL
-handles locking internally for this function.
+You should not call [SDL_LockAudio](SDL_LockAudio)() on the device before
+queueing; SDL handles locking internally for this function.
 
 Note that SDL2 does not support planar audio. You will need to resample
-from planar audio formats into a non-planar one (see [[SDL_AudioFormat]])
-before queuing audio.
+from planar audio formats into a non-planar one (see
+[SDL_AudioFormat](SDL_AudioFormat)) before queuing audio.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.4.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_ClearQueuedAudio]]
-:[[SDL_GetQueuedAudioSize]]
+* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
+* [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

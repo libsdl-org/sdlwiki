@@ -1,35 +1,35 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetHint =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetHint
 
 Get the value of a hint.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char * SDL_GetHint(const char *name);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''name'''
-|the hint to query
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                   |
+| ------------ | ----------------- |
+| **name**     | the hint to query |
+
+## Return Value
 
 Returns the string value of a hint or NULL if the hint isn't set.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetHint]]
-:[[SDL_SetHintWithPriority]]
+* [SDL_SetHint](SDL_SetHint)
+* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[[CategoryAPI]], [[CategoryHints]]
+[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
 
 

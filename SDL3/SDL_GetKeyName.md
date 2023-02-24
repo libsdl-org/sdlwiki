@@ -1,47 +1,48 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetKeyName =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetKeyName
 
 Get a human-readable name for a key.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetKeyName(SDL_Keycode key);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''key'''
-|the desired [[SDL_Keycode]] to query
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                 |
+| ----------- | ----------------------------------------------- |
+| **key**     | the desired [SDL_Keycode](SDL_Keycode) to query |
+
+## Return Value
 
 Returns a pointer to a UTF-8 string that stays valid at least until the
 next call to this function. If you need it around any longer, you must copy
 it. If the key doesn't have a name, this function returns an empty string
 ("").
 
-== Remarks ==
+## Remarks
 
-See [[SDL_Scancode]] and [[SDL_Keycode]] for details.
+See [SDL_Scancode](SDL_Scancode) and [SDL_Keycode](SDL_Keycode) for
+details.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetKeyFromName]]
-:[[SDL_GetKeyFromScancode]]
-:[[SDL_GetScancodeFromKey]]
+* [SDL_GetKeyFromName](SDL_GetKeyFromName)
+* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

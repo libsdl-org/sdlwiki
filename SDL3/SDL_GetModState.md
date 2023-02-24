@@ -1,33 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_GetModState =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_GetModState
 
 Get the current key modifier state for the keyboard.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Keymod SDL_GetModState(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns an OR'd combination of the modifier keys for the keyboard. See
-[[SDL_Keymod]] for details.
+[SDL_Keymod](SDL_Keymod) for details.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetKeyboardState]]
-:[[SDL_SetModState]]
+* [SDL_GetKeyboardState](SDL_GetKeyboardState)
+* [SDL_SetModState](SDL_SetModState)
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

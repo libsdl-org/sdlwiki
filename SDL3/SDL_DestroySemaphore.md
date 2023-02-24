@@ -1,44 +1,44 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_DestroySemaphore =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_DestroySemaphore
 
 Destroy a semaphore.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_DestroySemaphore(SDL_sem *sem);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sem'''
-|the semaphore to destroy
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                          |
+| ----------- | ------------------------ |
+| **sem**     | the semaphore to destroy |
+
+## Remarks
 
 It is not safe to destroy a semaphore if there are threads currently
 waiting on it.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<<Include(SDL_CreateSemaphore, , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
+<<Include([SDL_CreateSemaphore](SDL_CreateSemaphore), , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateSemaphore]]
-:[[SDL_SemPost]]
-:[[SDL_SemTryWait]]
-:[[SDL_SemValue]]
-:[[SDL_SemWait]]
-:[[SDL_SemWaitTimeout]]
+* [SDL_CreateSemaphore](SDL_CreateSemaphore)
+* [SDL_SemPost](SDL_SemPost)
+* [SDL_SemTryWait](SDL_SemTryWait)
+* [SDL_SemValue](SDL_SemValue)
+* [SDL_SemWait](SDL_SemWait)
+* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

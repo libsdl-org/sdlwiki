@@ -1,26 +1,26 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SIMDAlloc =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SIMDAlloc
 
 Allocate memory in a SIMD-friendly way.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * SDL_SIMDAlloc(const size_t len);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''len'''
-|The length, in bytes, of the block to allocate. The actual allocated block might be larger due to padding, etc.
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------------- |
+| **len**     | The length, in bytes, of the block to allocate. The actual allocated block might be larger due to padding, etc. |
+
+## Return Value
 
 Returns a pointer to the newly-allocated block, NULL if out of memory.
 
-== Remarks ==
+## Remarks
 
 This will allocate a block of memory that is suitable for use with SIMD
 instructions. Specifically, it will be properly aligned and padded for the
@@ -32,31 +32,31 @@ don't have to drop back to a scalar fallback at the end of your SIMD
 processing loop to deal with the final elements without overflowing the
 allocated buffer.
 
-You must free this memory with [[SDL_FreeSIMD]](), not free() or
-[[SDL_free]]() or delete[], etc.
+You must free this memory with [SDL_FreeSIMD](SDL_FreeSIMD)(), not free()
+or [SDL_free](SDL_free)() or delete[], etc.
 
 Note that SDL will only deal with SIMD instruction sets it is aware of; for
-example, SDL 2.0.8 knows that SSE wants 16-byte vectors ([[SDL_HasSSE]]()),
-and AVX2 wants 32 bytes ([[SDL_HasAVX2]]()), but doesn't know that AVX-512
-wants 64. To be clear: if you can't decide to use an instruction set with
-an [[SDL_Has]]*() function, don't use that instruction set with memory
+example, SDL 2.0.8 knows that SSE wants 16-byte vectors
+([SDL_HasSSE](SDL_HasSSE)()), and AVX2 wants 32 bytes
+([SDL_HasAVX2](SDL_HasAVX2)()), but doesn't know that AVX-512 wants 64. To
+be clear: if you can't decide to use an instruction set with an
+[SDL_Has](SDL_Has)*() function, don't use that instruction set with memory
 allocated through here.
 
-[[SDL_AllocSIMD]](0) will return a non-NULL pointer, assuming the system
-isn't out of memory, but you are not allowed to dereference it (because you
-only own zero bytes of that buffer).
+[SDL_AllocSIMD](SDL_AllocSIMD)(0) will return a non-NULL pointer, assuming
+the system isn't out of memory, but you are not allowed to dereference it
+(because you only own zero bytes of that buffer).
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.10.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SIMDGetAlignment]]
-:[[SDL_SIMDRealloc]]
-:[[SDL_SIMDFree]]
+* [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
+* [SDL_SIMDRealloc](SDL_SIMDRealloc)
+* [SDL_SIMDFree](SDL_SIMDFree)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

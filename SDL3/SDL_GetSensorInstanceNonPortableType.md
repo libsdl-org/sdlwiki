@@ -1,31 +1,30 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetSensorInstanceNonPortableType =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetSensorInstanceNonPortableType
 
 Get the platform dependent type of a sensor.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetSensorInstanceNonPortableType(SDL_SensorID instance_id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''instance_id'''
-|the sensor instance ID
-|}
+## Function Parameters
 
-== Return Value ==
+|                     |                        |
+| ------------------- | ---------------------- |
+| **instance_id**     | the sensor instance ID |
 
-Returns the sensor platform dependent type, or -1 if
-<code>instance_id</code> is not valid
+## Return Value
 
-== Version ==
+Returns the sensor platform dependent type, or -1 if `instance_id` is not
+valid
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,34 +1,33 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GetChunk =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GetChunk
 
-Get the [[Mix_Chunk]] currently associated with a mixer channel.
+Get the [Mix_Chunk](Mix_Chunk) currently associated with a mixer channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Mix_Chunk * Mix_GetChunk(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|the channel to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                       |
+| --------------- | --------------------- |
+| **channel**     | the channel to query. |
+
+## Return Value
 
 Returns the associated chunk, if any, or NULL if it's an invalid channel.
 
-== Remarks ==
+## Remarks
 
 You may not specify MAX_CHANNEL_POST or -1 for a channel.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

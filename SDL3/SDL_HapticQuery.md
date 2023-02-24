@@ -1,49 +1,49 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_HapticQuery =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_HapticQuery
 
 Get the haptic device's supported features in bitwise manner.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 unsigned int SDL_HapticQuery(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                              |
+| -------------- | -------------------------------------------- |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+
+## Return Value
 
 Returns a list of supported haptic features in bitwise manner (OR'd), or 0
-on failure; call [[SDL_GetError]]() for more information.
+on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 extern SDL_Haptic *haptic;
 if (SDL_HapticQuery(haptic) & SDL_HAPTIC_CONSTANT) {
     SDL_Log("We have constant haptic effect!");
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticEffectSupported]]
-:[[SDL_HapticNumEffects]]
+* [SDL_HapticEffectSupported](SDL_HapticEffectSupported)
+* [SDL_HapticNumEffects](SDL_HapticNumEffects)
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
 
 

@@ -1,48 +1,48 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_acos =
+# SDL_acos
 
-Use this function to compute arc cosine of <code>x</code>.
+Use this function to compute arc cosine of `x`.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 double SDL_acos(double x);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''x'''
-|floating point value, in radians.
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                                   |
+| --------- | --------------------------------- |
+| **x**     | floating point value, in radians. |
 
-Returns arc cosine of <code>x</code>.
+## Return Value
 
-== Remarks ==
+Returns arc cosine of `x`.
 
-The definition of <code>y = acos(x)</code> is <code>x = cos(y)</code>.
+## Remarks
 
-Domain: <code>-1 <= x <= 1</code>
+The definition of `y = acos(x)` is `x = cos(y)`.
 
-Range: <code>0 <= y <= Pi</code>
+Domain: `-1 <= x <= 1`
 
-== Version ==
+Range: `0 <= y <= Pi`
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 /* acos(x) = Pi/2 - asin(x) */
 SDL_Log("acos(0):\t\t%f", SDL_acos(0));
 SDL_Log("Pi/2 - asin(0):\t%f", M_PI / 2 - SDL_asin(0));
@@ -50,9 +50,9 @@ SDL_Log("Pi/2 - asin(0):\t%f", M_PI / 2 - SDL_asin(0));
 /* acos(-x) = Pi  - acos(x) */
 SDL_Log("acos(-(-1)):\t%f", SDL_acos(-(-1)));
 SDL_Log("Pi - acos(-1):\t%f", M_PI - SDL_acos(-1));
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryStandard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryStandard](CategoryStandard), [CategoryDraft](CategoryDraft)
 
 

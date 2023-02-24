@@ -1,57 +1,53 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetDisplayUsableBounds =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetDisplayUsableBounds
 
 Get the usable desktop area represented by a display.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetDisplayUsableBounds(int displayIndex, SDL_Rect * rect);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''displayIndex'''
-|the index of the display to query the usable bounds from
-|-
-|'''rect'''
-|the [[SDL_Rect]] structure filled in with the display bounds
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                                                                      |
+| -------------------- | -------------------------------------------------------------------- |
+| **displayIndex**     | the index of the display to query the usable bounds from             |
+| **rect**             | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-The primary display (<code>displayIndex</code> zero) is always located at
-0,0.
+The primary display (`displayIndex` zero) is always located at 0,0.
 
-This is the same area as [[SDL_GetDisplayBounds]]() reports, but with
-portions reserved by the system removed. For example, on Apple's macOS,
-this subtracts the area occupied by the menu bar and dock.
+This is the same area as [SDL_GetDisplayBounds](SDL_GetDisplayBounds)()
+reports, but with portions reserved by the system removed. For example, on
+Apple's macOS, this subtracts the area occupied by the menu bar and dock.
 
 Setting a window to be fullscreen generally bypasses these unusable areas,
 so these are good guidelines for the maximum space available to a
 non-fullscreen window.
 
-The parameter <code>rect</code> is ignored if it is NULL.
+The parameter `rect` is ignored if it is NULL.
 
-This function also returns -1 if the parameter <code>displayIndex</code> is
-out of range.
+This function also returns -1 if the parameter `displayIndex` is out of
+range.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.5.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetDisplayBounds]]
-:[[SDL_GetNumVideoDisplays]]
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

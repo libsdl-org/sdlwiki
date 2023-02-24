@@ -1,40 +1,41 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_HasSSE42 =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_HasSSE42
 
 Determine whether the CPU has SSE4.2 features.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_HasSSE42(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
 
-Returns [[SDL_TRUE]] if the CPU has SSE4.2 features or [[SDL_FALSE]] if
-not.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the CPU has SSE4.2 features or
+[SDL_FALSE](SDL_FALSE) if not.
+
+## Remarks
 
 This always returns false on CPUs that aren't using Intel instruction sets.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HasAltiVec]]
-:[[SDL_HasAVX]]
-:[[SDL_HasAVX2]]
-:[[SDL_HasMMX]]
-:[[SDL_HasRDTSC]]
-:[[SDL_HasSSE]]
-:[[SDL_HasSSE2]]
-:[[SDL_HasSSE3]]
-:[[SDL_HasSSE41]]
+* [SDL_HasAltiVec](SDL_HasAltiVec)
+* [SDL_HasAVX](SDL_HasAVX)
+* [SDL_HasAVX2](SDL_HasAVX2)
+* [SDL_HasMMX](SDL_HasMMX)
+* [SDL_HasRDTSC](SDL_HasRDTSC)
+* [SDL_HasSSE](SDL_HasSSE)
+* [SDL_HasSSE2](SDL_HasSSE2)
+* [SDL_HasSSE3](SDL_HasSSE3)
+* [SDL_HasSSE41](SDL_HasSSE41)
 
 ----
-[[CategoryAPI]], [[CategoryCPU]]
+[CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
 
 

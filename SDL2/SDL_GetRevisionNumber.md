@@ -1,24 +1,25 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetRevisionNumber =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetRevisionNumber
 
 Obsolete function, do not use.
 
-== Deprecated ==
+## Deprecated
 
-Use [[SDL_GetRevision]]() instead; if SDL was carefully built, it will
-return a git hash.
+Use [SDL_GetRevision](SDL_GetRevision)() instead; if SDL was carefully
+built, it will return a git hash.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetRevisionNumber(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns zero, always, in modern SDL releases.
 
-== Remarks ==
+## Remarks
 
 When SDL was hosted in a Mercurial repository, and was built carefully,
 this would return the revision number that the build was created from. This
@@ -29,15 +30,14 @@ hashes. This function only ever returns zero now. Don't use it.
 Before SDL 2.0.16, this might have returned an unreliable, but non-zero
 number.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRevision]]
+* [SDL_GetRevision](SDL_GetRevision)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

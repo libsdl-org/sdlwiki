@@ -1,33 +1,31 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_RenderFillRect =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_RenderFillRect
 
 Fill a rectangle on the current rendering target with the drawing color at subpixel precision.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderFillRect(SDL_Renderer *renderer, const SDL_FRect *rect);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|The renderer which should fill a rectangle.
-|-
-|'''rect'''
-|A pointer to the destination rectangle, or NULL for the entire rendering target.
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------- |
+| **renderer**     | The renderer which should fill a rectangle.                                      |
+| **rect**         | A pointer to the destination rectangle, or NULL for the entire rendering target. |
 
-Return 0 on success, or -1 on error
+## Return Value
 
-== Version ==
+Returns 0 on success, or -1 on error
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

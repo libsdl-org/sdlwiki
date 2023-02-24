@@ -1,26 +1,26 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_HaltGroup =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_HaltGroup
 
 Halt playing of a group of channels by arbitrary tag.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_HaltGroup(int tag);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''tag'''
-|an arbitrary value, assigned to channels, to search for.
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                          |
+| ----------- | -------------------------------------------------------- |
+| **tag**     | an arbitrary value, assigned to channels, to search for. |
+
+## Return Value
 
 Returns zero, whether any channels were halted or not.
 
-== Remarks ==
+## Remarks
 
 This will stop further playback on all channels with a specific tag, until
 a new chunk is started there.
@@ -32,13 +32,12 @@ The default tag for a channel is -1.
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[[Mix_ChannelFinished]]() before this function returns.
+[Mix_ChannelFinished](Mix_ChannelFinished)() before this function returns.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

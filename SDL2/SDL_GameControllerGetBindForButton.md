@@ -1,42 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerGetBindForButton =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerGetBindForButton
 
 Get the SDL joystick layer binding for a controller button mapping.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 extern DECLSPEC SDL_GameControllerButtonBind SDLCALL
 SDL_GameControllerGetBindForButton(SDL_GameController *gamecontroller,
            SDL_GameControllerButton button);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamecontroller'''
-|a game controller
-|-
-|'''button'''
-|an button enum value (an [[SDL_GameControllerButton]] value)
-|}
+## Function Parameters
 
-== Return Value ==
+|                        |                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------ |
+| **gamecontroller**     | a game controller                                                                    |
+| **button**             | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
 
-Returns a [[SDL_GameControllerButtonBind]] describing the bind. On failure
-(like the given Controller button doesn't exist on the device), its
-<code>.bindType</code> will be
-<code>[[SDL_CONTROLLER_BINDTYPE_NONE]]</code>.
+## Return Value
 
-== Version ==
+Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)
+describing the bind. On failure (like the given Controller button doesn't
+exist on the device), its `.bindType` will be
+`[SDL_CONTROLLER_BINDTYPE_NONE](SDL_CONTROLLER_BINDTYPE_NONE)`.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GameControllerGetBindForAxis]]
+* [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

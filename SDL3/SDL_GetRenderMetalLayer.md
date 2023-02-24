@@ -1,41 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetRenderMetalLayer =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetRenderMetalLayer
 
 Get the CAMetalLayer associated with the given Metal renderer.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_GetRenderMetalLayer(SDL_Renderer *renderer);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|The renderer to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                       |
+| ---------------- | --------------------- |
+| **renderer**     | The renderer to query |
 
-Returns a <code>CAMetalLayer *</code> on success, or NULL if the renderer
-isn't a Metal renderer
+## Return Value
 
-== Remarks ==
+Returns a `CAMetalLayer *` on success, or NULL if the renderer isn't a
+Metal renderer
 
-This function returns <code>void *</code>, so SDL doesn't have to include
-Metal's headers, but it can be safely cast to a <code>CAMetalLayer
-*</code>.
+## Remarks
 
-== Version ==
+This function returns `void *`, so SDL doesn't have to include Metal's
+headers, but it can be safely cast to a `CAMetalLayer *`.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRenderMetalCommandEncoder]]
+* [SDL_GetRenderMetalCommandEncoder](SDL_GetRenderMetalCommandEncoder)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

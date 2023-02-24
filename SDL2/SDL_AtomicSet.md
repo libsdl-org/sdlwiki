@@ -1,44 +1,41 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_AtomicSet =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_AtomicSet
 
 Set an atomic variable to a value.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_AtomicSet(SDL_atomic_t *a, int v);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''a'''
-|a pointer to an [[SDL_atomic_t]] variable to be modified
-|-
-|'''v'''
-|the desired value
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                                                                      |
+| --------- | -------------------------------------------------------------------- |
+| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
+| **v**     | the desired value                                                    |
+
+## Return Value
 
 Returns the previous value of the atomic variable.
 
-== Remarks ==
+## Remarks
 
 This function also acts as a full memory barrier.
 
-'''''Note: If you don't know what this function is for, you shouldn't use
-it!'''''
+***Note: If you don't know what this function is for, you shouldn't use
+it!***
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.2.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicGet]]
+* [SDL_AtomicGet](SDL_AtomicGet)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

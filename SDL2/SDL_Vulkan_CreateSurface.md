@@ -1,50 +1,46 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_Vulkan_CreateSurface =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_Vulkan_CreateSurface
 
 Create a Vulkan rendering surface for a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
                                   VkInstance instance,
                                   VkSurfaceKHR* surface);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|The window to which to attach the Vulkan surface
-|-
-|'''instance'''
-|The Vulkan instance handle
-|-
-|'''surface'''
-|A pointer to a VkSurfaceKHR handle to output the newly created surface
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                        |
+| ---------------- | ---------------------------------------------------------------------- |
+| **window**       | The window to which to attach the Vulkan surface                       |
+| **instance**     | The Vulkan instance handle                                             |
+| **surface**      | A pointer to a VkSurfaceKHR handle to output the newly created surface |
 
-Returns [[SDL_TRUE]] on success, [[SDL_FALSE]] on error.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
 
-The <code>window</code> must have been created with the
-<code>[[SDL_WINDOW_VULKAN]]</code> flag and <code>instance</code> must have
-been created with extensions returned by
-[[SDL_Vulkan_GetInstanceExtensions]]() enabled.
+## Remarks
 
-== Version ==
+The `window` must have been created with the
+`[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)` flag and `instance` must have been
+created with extensions returned by
+[SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)()
+enabled.
+
+## Version
 
 This function is available since SDL 2.0.6.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Vulkan_GetInstanceExtensions]]
-:[[SDL_Vulkan_GetDrawableSize]]
+* [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
+* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

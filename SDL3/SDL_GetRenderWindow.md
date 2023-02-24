@@ -1,31 +1,30 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetRenderWindow =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetRenderWindow
 
 Get the window associated with a renderer.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Window* SDL_GetRenderWindow(SDL_Renderer *renderer);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the renderer to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                       |
+| ---------------- | --------------------- |
+| **renderer**     | the renderer to query |
 
-Returns the window on success or NULL on failure; call [[SDL_GetError]]()
-for more information.
+## Return Value
 
-== Version ==
+Returns the window on success or NULL on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

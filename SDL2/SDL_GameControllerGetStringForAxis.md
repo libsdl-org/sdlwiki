@@ -1,40 +1,39 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerGetStringForAxis =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerGetStringForAxis
 
-Convert from an [[SDL_GameControllerAxis]] enum to a string.
+Convert from an [SDL_GameControllerAxis](SDL_GameControllerAxis) enum to a string.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GameControllerGetStringForAxis(SDL_GameControllerAxis axis);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''axis'''
-|an enum value for a given [[SDL_GameControllerAxis]]
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                            |
+| ------------ | -------------------------------------------------------------------------- |
+| **axis**     | an enum value for a given [SDL_GameControllerAxis](SDL_GameControllerAxis) |
+
+## Return Value
 
 Returns a string for the given axis, or NULL if an invalid axis is
 specified. The string returned is of the format used by
-[[SDL_GameController]] mapping strings.
+[SDL_GameController](SDL_GameController) mapping strings.
 
-== Remarks ==
+## Remarks
 
-The caller should not [[SDL_free]]() the returned string.
+The caller should not [SDL_free](SDL_free)() the returned string.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GameControllerGetAxisFromString]]
+* [SDL_GameControllerGetAxisFromString](SDL_GameControllerGetAxisFromString)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

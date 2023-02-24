@@ -1,39 +1,41 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetAudioStatus =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetAudioStatus
 
 This function is a legacy means of querying the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_AudioStatus SDL_GetAudioStatus(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
 
-Returns the [[SDL_AudioStatus]] of the audio device opened by
-[[SDL_OpenAudio]]().
+## Return Value
 
-== Remarks ==
+Returns the [SDL_AudioStatus](SDL_AudioStatus) of the audio device opened
+by [SDL_OpenAudio](SDL_OpenAudio)().
 
-New programs might want to use [[SDL_GetAudioDeviceStatus]]() instead. This
+## Remarks
+
+New programs might want to use
+[SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus)() instead. This
 function is equivalent to calling...
 
-<syntaxhighlight lang='c'>
+```c
 SDL_GetAudioDeviceStatus(1);
-</syntaxhighlight>
+```
 
-...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+...and is only useful if you used the legacy
+[SDL_OpenAudio](SDL_OpenAudio)() function.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetAudioDeviceStatus]]
+* [SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

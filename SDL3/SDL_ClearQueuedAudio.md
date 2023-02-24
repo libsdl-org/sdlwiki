@@ -1,27 +1,33 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_ClearQueuedAudio =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_ClearQueuedAudio
 
 Drop any queued audio data waiting to be sent to the hardware.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_ClearQueuedAudio(SDL_AudioDeviceID dev);
-</syntaxhighlight>
+```c
+int SDL_ClearQueuedAudio(SDL_AudioDeviceID dev);
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|the device ID of which to clear the audio queue
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                                                 |
+| ----------- | ----------------------------------------------- |
+| **dev**     | the device ID of which to clear the audio queue |
 
-Immediately after this call, [[SDL_GetQueuedAudioSize]]() will return 0.
-For output devices, the hardware will start playing silence if more audio
-isn't queued. For capture devices, the hardware will start filling the
-empty queue with new data if the capture device isn't paused.
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+Immediately after this call,
+[SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)() will return 0. For
+output devices, the hardware will start playing silence if more audio isn't
+queued. For capture devices, the hardware will start filling the empty
+queue with new data if the capture device isn't paused.
 
 This will not prevent playback of queued audio that's already been sent to
 the hardware, as we can not undo that, so expect there to be some fraction
@@ -34,22 +40,22 @@ application-supplied callback; calling this function on such a device
 always returns 0. You have to use the audio callback or queue audio, but
 not both.
 
-You should not call [[SDL_LockAudio]]() on the device before clearing the
-queue; SDL handles locking internally for this function.
+You should not call [SDL_LockAudio](SDL_LockAudio)() on the device before
+clearing the queue; SDL handles locking internally for this function.
 
 This function always succeeds and thus returns void.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetQueuedAudioSize]]
-:[[SDL_QueueAudio]]
-:[[SDL_DequeueAudio]]
+* [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
+* [SDL_QueueAudio](SDL_QueueAudio)
+* [SDL_DequeueAudio](SDL_DequeueAudio)
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

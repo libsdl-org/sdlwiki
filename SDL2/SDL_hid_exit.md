@@ -1,32 +1,32 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_hid_exit =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_hid_exit
 
 Finalize the HIDAPI library.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_hid_exit(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns 0 on success and -1 on error.
 
-== Remarks ==
+## Remarks
 
 This function frees all of the static data associated with HIDAPI. It
 should be called at the end of execution to avoid memory leaks.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.18.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_hid_init]]
+* [SDL_hid_init](SDL_hid_init)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

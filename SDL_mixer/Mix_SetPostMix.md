@@ -1,25 +1,23 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_SetPostMix =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_SetPostMix
 
 Set a function that is called after all mixing is performed.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void Mix_SetPostMix(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len), void *arg);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''mix_func'''
-|the callback function to become the new post-mix callback.
-|-
-|'''arg'''
-|a pointer that is passed, untouched, to the callback.
-|}
+## Function Parameters
 
-== Remarks ==
+|                  |                                                            |
+| ---------------- | ---------------------------------------------------------- |
+| **mix_func**     | the callback function to become the new post-mix callback. |
+| **arg**          | a pointer that is passed, untouched, to the callback.      |
+
+## Remarks
 
 This can be used to provide real-time visual display of the audio stream or
 add a custom mixer filter for the stream data.
@@ -37,9 +35,9 @@ goes past the end of the buffer without saving some state between runs to
 add it into the next callback, or resample the buffer to a smaller size to
 speed it up, etc).
 
-The <code>arg</code> pointer supplied here is passed to the callback as-is,
-for whatever the callback might want to do with it (keep track of some
-ongoing state, settings, etc).
+The `arg` pointer supplied here is passed to the callback as-is, for
+whatever the callback might want to do with it (keep track of some ongoing
+state, settings, etc).
 
 Passing a NULL callback disables the post-mix callback until such a time as
 a new one callback is set.
@@ -47,15 +45,14 @@ a new one callback is set.
 There is only one callback available. If you need to mix multiple inputs,
 be prepared to handle them from a single function.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_HookMusic]]
+* [Mix_HookMusic](Mix_HookMusic)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

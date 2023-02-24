@@ -1,56 +1,48 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_CreateRGBSurfaceWithFormat =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_CreateRGBSurfaceWithFormat
 
 Allocate a new RGB surface with a specific pixel format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Surface* SDL_CreateRGBSurfaceWithFormat
     (Uint32 flags, int width, int height, int depth, Uint32 format);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''flags'''
-|the flags are unused and should be set to 0
-|-
-|'''width'''
-|the width of the surface
-|-
-|'''height'''
-|the height of the surface
-|-
-|'''depth'''
-|the depth of the surface in bits
-|-
-|'''format'''
-|the [[SDL_PixelFormatEnum]] for the new surface's pixel format.
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **flags**      | the flags are unused and should be set to 0                                        |
+| **width**      | the width of the surface                                                           |
+| **height**     | the height of the surface                                                          |
+| **depth**      | the depth of the surface in bits                                                   |
+| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
-Returns the new [[SDL_Surface]] structure that is created or NULL if it
-fails; call [[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns the new [SDL_Surface](SDL_Surface) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
 
-This function operates mostly like [[SDL_CreateRGBSurface]](), except
-instead of providing pixel color masks, you provide it with a predefined
-format from [[SDL_PixelFormatEnum]].
+## Remarks
 
-== Version ==
+This function operates mostly like
+[SDL_CreateRGBSurface](SDL_CreateRGBSurface)(), except instead of providing
+pixel color masks, you provide it with a predefined format from
+[SDL_PixelFormatEnum](SDL_PixelFormatEnum).
+
+## Version
 
 This function is available since SDL 2.0.5.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateRGBSurface]]
-:[[SDL_CreateRGBSurfaceFrom]]
-:[[SDL_FreeSurface]]
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
+* [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

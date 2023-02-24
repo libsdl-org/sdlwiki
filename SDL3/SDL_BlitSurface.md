@@ -1,51 +1,44 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_BlitSurface =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_BlitSurface
 
 Performs a fast blit from the source surface to the destination surface.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_BlitSurface
     (SDL_Surface *src, const SDL_Rect *srcrect,
      SDL_Surface *dst, SDL_Rect *dstrect);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''src'''
-|the [[SDL_Surface]] structure to be copied from
-|-
-|'''srcrect'''
-|the [[SDL_Rect]] structure representing the rectangle to be copied, or NULL to copy the entire surface
-|-
-|'''dst'''
-|the [[SDL_Surface]] structure that is the blit target
-|-
-|'''dstrect'''
-|the [[SDL_Rect]] structure representing the rectangle that is copied into
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                                                                |
+| --------------- | -------------------------------------------------------------------------------------------------------------- |
+| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                                     |
+| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface |
+| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                               |
+| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle that is copied into                              |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 This assumes that the source and destination rectangles are the same size.
-If either <code>srcrect</code> or <code>dstrect</code> are NULL, the entire
-surface (<code>src</code> or <code>dst</code>) is copied. The final blit
-rectangles are saved in <code>srcrect</code> and <code>dstrect</code> after
-all clipping is performed.
+If either `srcrect` or `dstrect` are NULL, the entire surface (`src` or
+`dst`) is copied. The final blit rectangles are saved in `srcrect` and
+`dstrect` after all clipping is performed.
 
 The blit function should not be called on a locked surface.
 
 The blit semantics for surfaces with and without blending and colorkey are
 defined as follows:
 
-<syntaxhighlight lang='c'>
+```c
    RGBA->RGB:
      Source surface blend mode set to SDL_BLENDMODE_BLEND:
       alpha-blend (using the source alpha-channel and per-surface alpha)
@@ -83,23 +76,23 @@ defined as follows:
     both:
       if SDL_SRCCOLORKEY set, only copy the pixels matching the
       source color key.
-</syntaxhighlight>
+```
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_BlitSurface]]
+* [SDL_BlitSurface](SDL_BlitSurface)
 
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
 
 

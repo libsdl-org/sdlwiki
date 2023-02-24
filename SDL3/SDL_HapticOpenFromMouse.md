@@ -1,33 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_HapticOpenFromMouse =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_HapticOpenFromMouse
 
 Try to open a haptic device from the current mouse.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Haptic* SDL_HapticOpenFromMouse(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the haptic device identifier or NULL on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticOpen]]
-:[[SDL_MouseIsHaptic]]
+* [SDL_HapticOpen](SDL_HapticOpen)
+* [SDL_MouseIsHaptic](SDL_MouseIsHaptic)
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
 
 

@@ -1,30 +1,29 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_FontLineSkip =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_FontLineSkip
 
 Query the recommended spacing between lines of text for a font.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_FontLineSkip(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns the font's recommended spacing.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

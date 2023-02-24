@@ -1,36 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_AndroidGetExternalStorageState =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_AndroidGetExternalStorageState
 
 Get the current state of external storage.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_AndroidGetExternalStorageState(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the current state of external storage on success or 0 on failure;
-call [[SDL_GetError]]() for more information.
+call [SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 The current state of external storage, a bitmask of these values:
-<code>[[SDL_ANDROID_EXTERNAL_STORAGE_READ]]</code>,
-<code>[[SDL_ANDROID_EXTERNAL_STORAGE_WRITE]]</code>.
+`[SDL_ANDROID_EXTERNAL_STORAGE_READ](SDL_ANDROID_EXTERNAL_STORAGE_READ)`,
+`[SDL_ANDROID_EXTERNAL_STORAGE_WRITE](SDL_ANDROID_EXTERNAL_STORAGE_WRITE)`.
 
 If external storage is currently unavailable, this will return 0.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AndroidGetExternalStoragePath]]
+* [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

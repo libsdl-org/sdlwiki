@@ -1,31 +1,31 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_JoystickCurrentPowerLevel =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_JoystickCurrentPowerLevel
 
-Get the battery level of a joystick as [[SDL_JoystickPowerLevel]].
+Get the battery level of a joystick as [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel).
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_JoystickPowerLevel SDL_JoystickCurrentPowerLevel(SDL_Joystick *joystick);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick'''
-|the [[SDL_Joystick]] to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                           |
+| ---------------- | ----------------------------------------- |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick) to query |
 
-Returns the current battery level as [[SDL_JoystickPowerLevel]] on success
-or <code>[[SDL_JOYSTICK_POWER_UNKNOWN]]</code> if it is unknown
+## Return Value
 
-== Version ==
+Returns the current battery level as
+[SDL_JoystickPowerLevel](SDL_JoystickPowerLevel) on success or
+`[SDL_JOYSTICK_POWER_UNKNOWN](SDL_JOYSTICK_POWER_UNKNOWN)` if it is unknown
+
+## Version
 
 This function is available since SDL 2.0.4.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

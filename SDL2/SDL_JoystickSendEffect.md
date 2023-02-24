@@ -1,36 +1,31 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_JoystickSendEffect =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_JoystickSendEffect
 
 Send a joystick specific effect packet 
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_JoystickSendEffect(SDL_Joystick *joystick, const void *data, int size);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick'''
-|The joystick to affect
-|-
-|'''data'''
-|The data to send to the joystick
-|-
-|'''size'''
-|The size of the data to send to the joystick
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                              |
+| ---------------- | -------------------------------------------- |
+| **joystick**     | The joystick to affect                       |
+| **data**         | The data to send to the joystick             |
+| **size**         | The size of the data to send to the joystick |
+
+## Return Value
 
 Returns 0, or -1 if this joystick or driver doesn't support effect packets
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.16.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

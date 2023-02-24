@@ -1,38 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_RenderClear =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_RenderClear
 
 Clear the current rendering target with the drawing color.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderClear(SDL_Renderer *renderer);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                       |
+| ---------------- | --------------------- |
+| **renderer**     | the rendering context |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 This function clears the entire rendering target, ignoring the viewport and
 the clip rectangle.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 
 int main(int argc, char* argv[])
@@ -70,13 +70,13 @@ int main(int argc, char* argv[])
         SDL_Quit();
         return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetRenderDrawColor]]
+* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

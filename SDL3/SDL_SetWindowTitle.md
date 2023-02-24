@@ -1,35 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetWindowTitle =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetWindowTitle
 
 Set the title of a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_SetWindowTitle(SDL_Window *window, const char *title);
-</syntaxhighlight>
+```c
+int SDL_SetWindowTitle(SDL_Window *window, const char *title);
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|-
-|'''title'''
-|the desired window title in UTF-8 format
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                                          |
+| -------------- | ---------------------------------------- |
+| **window**     | the window to change                     |
+| **title**      | the desired window title in UTF-8 format |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 This string is expected to be in UTF-8 encoding.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 // dynamically setting a window title
 
 #include "SDL.h"
@@ -71,13 +74,13 @@ int main(int argc, char* argv[]){
   return 0;
 
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowTitle]]
+* [SDL_GetWindowTitle](SDL_GetWindowTitle)
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

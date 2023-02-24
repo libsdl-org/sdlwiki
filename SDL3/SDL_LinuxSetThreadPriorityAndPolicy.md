@@ -1,40 +1,37 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_LinuxSetThreadPriorityAndPolicy =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LinuxSetThreadPriorityAndPolicy
 
 Sets the priority (not nice level) and scheduling policy for a thread.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_LinuxSetThreadPriorityAndPolicy(Sint64 threadID, int sdlPriority, int schedPolicy);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''threadID'''
-|The Unix thread ID to change priority of.
-|-
-|'''sdlPriority'''
-|The new [[SDL_ThreadPriority]] value.
-|-
-|'''schedPolicy'''
-|The new scheduling policy (SCHED_FIFO, SCHED_RR, SCHED_OTHER, etc...)
-|}
+## Function Parameters
 
-== Return Value ==
+|                     |                                                                       |
+| ------------------- | --------------------------------------------------------------------- |
+| **threadID**        | The Unix thread ID to change priority of.                             |
+| **sdlPriority**     | The new [SDL_ThreadPriority](SDL_ThreadPriority) value.               |
+| **schedPolicy**     | The new scheduling policy (SCHED_FIFO, SCHED_RR, SCHED_OTHER, etc...) |
 
-Returns 0 on success, or -1 on error.
+## Return Value
 
-== Remarks ==
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 This uses setpriority() if possible, and RealtimeKit if available.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryLinux]]
+[CategoryAPI](CategoryAPI), [CategoryLinux](CategoryLinux)
 
 

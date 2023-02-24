@@ -1,43 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AddTimer =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AddTimer
 
 Call a callback function at a future time.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_TimerID SDL_AddTimer(Uint32 interval,
                          SDL_TimerCallback callback,
                          void *param);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''interval'''
-|the timer delay, in milliseconds, passed to <code>callback</code>
-|-
-|'''callback'''
-|the [[SDL_TimerCallback]] function to call when the specified <code>interval</code> elapses
-|-
-|'''param'''
-|a pointer that is passed to <code>callback</code>
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                                   |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+| **interval**     | the timer delay, in milliseconds, passed to `callback`                                            |
+| **callback**     | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
+| **param**        | a pointer that is passed to `callback`                                                            |
 
-Returns a timer ID or 0 if an error occurs; call [[SDL_GetError]]() for
-more information.
+## Return Value
 
-== Remarks ==
+Returns a timer ID or 0 if an error occurs; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-If you use this function, you must pass <code>[[SDL_INIT_TIMER]]</code> to
-[[SDL_Init]]().
+## Remarks
+
+If you use this function, you must pass `[SDL_INIT_TIMER](SDL_INIT_TIMER)`
+to [SDL_Init](SDL_Init)().
 
 The callback function is passed the current timer interval and the user
-supplied parameter from the [[SDL_AddTimer]]() call and should return the
-next timer interval. If the value returned from the callback is 0, the
-timer is canceled.
+supplied parameter from the [SDL_AddTimer](SDL_AddTimer)() call and should
+return the next timer interval. If the value returned from the callback is
+0, the timer is canceled.
 
 The callback is run on a separate thread.
 
@@ -47,16 +43,17 @@ callback. For example, if the callback took 250 ms to execute and returned
 iteration.
 
 Timing may be inexact due to OS scheduling. Be sure to note the current
-time with [[SDL_GetTicksNS]]() or [[SDL_GetPerformanceCounter]]() in case
-your callback needs to adjust for variances.
+time with [SDL_GetTicksNS](SDL_GetTicksNS)() or
+[SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)() in case your
+callback needs to adjust for variances.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 /* Start the timer; the callback below will be executed after the delay */
 
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
@@ -84,9 +81,9 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     SDL_PushEvent(&event);
     return(interval);
 }
-</syntaxhighlight>
-Note that it is possible to avoid the multithreading problems with SDL timers by giving to <code>userevent.data1</code> the address of a function you want to be executed and to <code>userevent.data2</code> its params, and then deal with it in the event loop.
-<syntaxhighlight lang='c++'>
+```
+Note that it is possible to avoid the multithreading problems with SDL timers by giving to `userevent.data1` the address of a function you want to be executed and to `userevent.data2` its params, and then deal with it in the event loop.
+```c++
 /* with the same code as before: */
 Uint32 my_callbackfunc(Uint32 interval, void *param)
 {
@@ -124,13 +121,13 @@ while (SDL_PollEvent (&event))
         /* ... */
     }
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RemoveTimer]]
+* [SDL_RemoveTimer](SDL_RemoveTimer)
 
 ----
-[[CategoryAPI]], [[CategoryTimer]]
+[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
 
 

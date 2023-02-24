@@ -1,24 +1,25 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_AndroidGetJNIEnv =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_AndroidGetJNIEnv
 
 Get the Android Java Native Interface Environment of the current thread.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * SDL_AndroidGetJNIEnv(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns a pointer to Java native interface object (JNIEnv) to which the
 current thread is attached, or 0 on error.
 
-== Remarks ==
+## Remarks
 
 This is the JNIEnv one needs to access the Java virtual machine from native
 code, and is needed for many Android APIs to be usable from C.
@@ -27,13 +28,13 @@ The prototype of the function in SDL's code actually declare a void* return
 type, even if the implementation returns a pointer to a JNIEnv. The
 rationale being that the SDL headers can avoid including jni.h.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 #include <jni.h>
 
@@ -67,13 +68,13 @@ void showHome(void)
     // Therefore references need to be manually deleted because otherwise the
     // references will first be cleaned if main() returns (application exit).
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AndroidGetActivity]]
+* [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 
 ----
-[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
 
 

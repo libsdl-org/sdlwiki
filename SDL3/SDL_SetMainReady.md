@@ -1,28 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetMainReady =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetMainReady
 
-Circumvent failure of [[SDL_Init]]() when not using [[SDL_main]]() as an entry point.
+Circumvent failure of [SDL_Init](SDL_Init)() when not using [SDL_main](SDL_main)() as an entry point.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_SetMainReady(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
 
-This function is defined in [[SDL_main]].h, along with the preprocessor
-rule to redefine main() as [[SDL_main]](). Thus to ensure that your main()
-function will not be changed it is necessary to define [[SDL_MAIN_HANDLED]]
-before including SDL.h.
+## Remarks
 
-== Version ==
+This function is defined in [SDL_main](SDL_main).h, along with the
+preprocessor rule to redefine main() as [SDL_main](SDL_main)(). Thus to
+ensure that your main() function will not be changed it is necessary to
+define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #define SDL_MAIN_HANDLED
 #include "SDL.h"
 
@@ -37,13 +38,13 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Init]]
+* [SDL_Init](SDL_Init)
 
 ----
-[[CategoryAPI]], [[CategoryInit]]
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
 

@@ -1,39 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetThreadID =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetThreadID
 
 Get the thread identifier for the specified thread.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_threadID SDL_GetThreadID(SDL_Thread * thread);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''thread'''
-|the thread to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                     |
+| -------------- | ------------------- |
+| **thread**     | the thread to query |
+
+## Return Value
 
 Returns the ID of the specified thread, or the ID of the current thread if
-<code>thread</code> is NULL.
+`thread` is NULL.
 
-== Remarks ==
+## Remarks
 
 This thread identifier is as reported by the underlying operating system.
 If SDL is running on a platform that does not support threads the return
 value will always be zero.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 #include "SDL.h"
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
@@ -74,13 +74,13 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_ThreadID]]
+* [SDL_ThreadID](SDL_ThreadID)
 
 ----
-[[CategoryAPI]], [[CategoryThread]]
+[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
 
 

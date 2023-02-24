@@ -1,52 +1,49 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetWindowBrightness =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetWindowBrightness
 
 Set the brightness (gamma multiplier) for a given window's display.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetWindowBrightness(SDL_Window * window, float brightness);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window used to select the display whose brightness will be changed
-|-
-|'''brightness'''
-|the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                                                                          |
+| ------------------ | -------------------------------------------------------------------------------------------------------- |
+| **window**         | the window used to select the display whose brightness will be changed                                   |
+| **brightness**     | the brightness (gamma multiplier) value to set where 0.0 is completely dark and 1.0 is normal brightness |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 Despite the name and signature, this method sets the brightness of the
 entire display, not an individual window. A window is considered to be
 owned by the display that contains the window's center pixel. (The index of
-this display can be retrieved using [[SDL_GetWindowDisplayIndex]]().) The
-brightness set will not follow the window if it is moved to another
-display.
+this display can be retrieved using
+[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)().) The brightness
+set will not follow the window if it is moved to another display.
 
 Many platforms will refuse to set the display brightness in modern times.
 You are better off using a shader to adjust gamma during rendering, or
 something similar.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowBrightness]]
-:[[SDL_SetWindowGammaRamp]]
+* [SDL_GetWindowBrightness](SDL_GetWindowBrightness)
+* [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

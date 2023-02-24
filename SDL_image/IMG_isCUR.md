@@ -1,26 +1,26 @@
-====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_isCUR =
+###### (This function is part of SDL_image, a separate library from SDL.)
+# IMG_isCUR
 
 Detect CUR image data on a readable/seekable SDL_RWops.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int IMG_isCUR(SDL_RWops *src);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''src'''
-|a seekable/readable SDL_RWops to provide image data.
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                      |
+| ----------- | ---------------------------------------------------- |
+| **src**     | a seekable/readable SDL_RWops to provide image data. |
+
+## Return Value
 
 Returns non-zero if this is CUR data, zero otherwise.
 
-== Remarks ==
+## Remarks
 
 This function attempts to determine if a file is a given filetype, reading
 the least amount possible from the SDL_RWops (usually a few bytes).
@@ -31,37 +31,36 @@ basic i/o errors.
 This function will always attempt to seek the RWops back to where it
 started when this function was called, but it will not report any errors in
 doing so, but assuming seeking works, this means you can immediately use
-this with a different [[IMG_isTYPE]] function, or load the image without
-further seeking.
+this with a different [IMG_isTYPE](IMG_isTYPE) function, or load the image
+without further seeking.
 
 You do not need to call this function to load data; SDL_image can work to
 determine file type in many cases in its standard load functions.
 
-== Version ==
+## Version
 
 This function is available since SDL_image 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[IMG_isAVIF]]
-:[[IMG_isICO]]
-:[[IMG_isBMP]]
-:[[IMG_isGIF]]
-:[[IMG_isJPG]]
-:[[IMG_isJXL]]
-:[[IMG_isLBM]]
-:[[IMG_isPCX]]
-:[[IMG_isPNG]]
-:[[IMG_isPNM]]
-:[[IMG_isSVG]]
-:[[IMG_isQOI]]
-:[[IMG_isTIF]]
-:[[IMG_isXCF]]
-:[[IMG_isXPM]]
-:[[IMG_isXV]]
-:[[IMG_isWEBP]]
+* [IMG_isAVIF](IMG_isAVIF)
+* [IMG_isICO](IMG_isICO)
+* [IMG_isBMP](IMG_isBMP)
+* [IMG_isGIF](IMG_isGIF)
+* [IMG_isJPG](IMG_isJPG)
+* [IMG_isJXL](IMG_isJXL)
+* [IMG_isLBM](IMG_isLBM)
+* [IMG_isPCX](IMG_isPCX)
+* [IMG_isPNG](IMG_isPNG)
+* [IMG_isPNM](IMG_isPNM)
+* [IMG_isSVG](IMG_isSVG)
+* [IMG_isQOI](IMG_isQOI)
+* [IMG_isTIF](IMG_isTIF)
+* [IMG_isXCF](IMG_isXCF)
+* [IMG_isXPM](IMG_isXPM)
+* [IMG_isXV](IMG_isXV)
+* [IMG_isWEBP](IMG_isWEBP)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

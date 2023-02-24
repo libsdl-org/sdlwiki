@@ -1,44 +1,41 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RenderSetViewport =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RenderSetViewport
 
 Set the drawing area for rendering on the current target.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderSetViewport(SDL_Renderer * renderer,
                           const SDL_Rect * rect);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|-
-|'''rect'''
-|the [[SDL_Rect]] structure representing the drawing area, or NULL to set the viewport to the entire target
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------ |
+| **renderer**     | the rendering context                                                                                              |
+| **rect**         | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 When the window is resized, the viewport is reset to fill the entire new
 window size.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RenderGetViewport]]
+* [SDL_RenderGetViewport](SDL_RenderGetViewport)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

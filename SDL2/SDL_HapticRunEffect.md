@@ -1,54 +1,48 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_HapticRunEffect =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_HapticRunEffect
 
 Run the haptic effect on its associated haptic device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_HapticRunEffect(SDL_Haptic * haptic,
                         int effect,
                         Uint32 iterations);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to run the effect on
-|-
-|'''effect'''
-|the ID of the haptic effect to run
-|-
-|'''iterations'''
-|the number of iterations to run the effect; use <code>[[SDL_HAPTIC_INFINITY]]</code> to repeat forever
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **haptic**         | the [SDL_Haptic](SDL_Haptic) device to run the effect on                                                       |
+| **effect**         | the ID of the haptic effect to run                                                                             |
+| **iterations**     | the number of iterations to run the effect; use `[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)` to repeat forever |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-To repeat the effect over and over indefinitely, set
-<code>iterations</code> to <code>[[SDL_HAPTIC_INFINITY]]</code>. (Repeats
-the envelope - attack and fade.) To make one instance of the effect last
-indefinitely (so the effect does not fade), set the effect's
-<code>length</code> in its structure/union to
-<code>[[SDL_HAPTIC_INFINITY]]</code> instead.
+To repeat the effect over and over indefinitely, set `iterations` to
+`[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)`. (Repeats the envelope -
+attack and fade.) To make one instance of the effect last indefinitely (so
+the effect does not fade), set the effect's `length` in its structure/union
+to `[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY)` instead.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticDestroyEffect]]
-:[[SDL_HapticGetEffectStatus]]
-:[[SDL_HapticStopEffect]]
+* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
+* [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
+* [SDL_HapticStopEffect](SDL_HapticStopEffect)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,27 +1,27 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GL_SetSwapInterval =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GL_SetSwapInterval
 
 Set the swap interval for the current OpenGL context.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GL_SetSwapInterval(int interval);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''interval'''
-|0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                                      |
+| ---------------- | ---------------------------------------------------------------------------------------------------- |
+| **interval**     | 0 for immediate updates, 1 for updates synchronized with the vertical retrace, -1 for adaptive vsync |
+
+## Return Value
 
 Returns 0 on success or -1 if setting the swap interval is not supported;
-call [[SDL_GetError]]() for more information.
+call [SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 Some systems allow specifying -1 for the interval, to enable adaptive
 vsync. Adaptive vsync works the same as vsync, but if you've already missed
@@ -38,15 +38,14 @@ WGL_EXT_swap_control_tear.
 Read more on the Khronos wiki:
 https://www.khronos.org/opengl/wiki/Swap_Interval#Adaptive_Vsync
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GL_GetSwapInterval]]
+* [SDL_GL_GetSwapInterval](SDL_GL_GetSwapInterval)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

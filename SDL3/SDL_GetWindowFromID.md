@@ -1,40 +1,41 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetWindowFromID =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetWindowFromID
 
 Get a window from a stored ID.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Window* SDL_GetWindowFromID(SDL_WindowID id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''id'''
-|the ID of the window
-|}
+## Function Parameters
 
-== Return Value ==
+|            |                      |
+| ---------- | -------------------- |
+| **id**     | the ID of the window |
 
-Returns the window associated with <code>id</code> or NULL if it doesn't
-exist; call [[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns the window associated with `id` or NULL if it doesn't exist; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-The numeric ID is what [[SDL_WindowEvent]] references, and is necessary to
-map these events to specific [[SDL_Window]] objects.
+## Remarks
 
-== Version ==
+The numeric ID is what [SDL_WindowEvent](SDL_WindowEvent) references, and
+is necessary to map these events to specific [SDL_Window](SDL_Window)
+objects.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowID]]
+* [SDL_GetWindowID](SDL_GetWindowID)
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

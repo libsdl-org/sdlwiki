@@ -1,42 +1,42 @@
-====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_Init =
+###### (This function is part of SDL_image, a separate library from SDL.)
+# IMG_Init
 
 Initialize SDL_image.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int IMG_Init(int flags);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''flags'''
-|initialization flags, OR'd together.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                      |
+| ------------- | ------------------------------------ |
+| **flags**     | initialization flags, OR'd together. |
+
+## Return Value
 
 Returns all currently initialized flags.
 
-== Remarks ==
+## Remarks
 
 This function loads dynamic libraries that SDL_image needs, and prepares
 them for use. This must be the first function you call in SDL_image, and if
 it fails you should not continue with the library.
 
-Flags should be one or more flags from [[IMG_InitFlags]] OR'd together. It
-returns the flags successfully initialized, or 0 on failure.
+Flags should be one or more flags from [IMG_InitFlags](IMG_InitFlags) OR'd
+together. It returns the flags successfully initialized, or 0 on failure.
 
 Currently, these flags are:
 
-* <code>_INIT_JPG</code>
-* <code>_INIT_PNG</code>
-* <code>_INIT_TIF</code>
-* <code>_INIT_WEBP</code>
-* <code>_INIT_JXL</code>
-* <code>_INIT_AVIF</code>
+- `[IMG_INIT_JPG](IMG_INIT_JPG)`
+- `[IMG_INIT_PNG](IMG_INIT_PNG)`
+- `[IMG_INIT_TIF](IMG_INIT_TIF)`
+- `[IMG_INIT_WEBP](IMG_INIT_WEBP)`
+- `[IMG_INIT_JXL](IMG_INIT_JXL)`
+- `[IMG_INIT_AVIF](IMG_INIT_AVIF)`
 
 More flags may be added in a future SDL_image release.
 
@@ -64,25 +64,24 @@ image displaying app, perhaps you are fine with only having JPG and PNG
 support and can live without WEBP, even if you request support for
 everything.
 
-Unlike other SDL satellite libraries, calls to [[IMG_Init]] do not stack; a
-single call to [[IMG_Quit]]() will deinitialize everything and does not
-have to be paired with a matching [[IMG_Init]] call. For that reason, it's
-considered best practices to have a single [[IMG_Init]] and [[IMG_Quit]]
-call in your program. While this isn't required, be aware of the risks of
-deviating from that behavior.
+Unlike other SDL satellite libraries, calls to [IMG_Init](IMG_Init) do not
+stack; a single call to [IMG_Quit](IMG_Quit)() will deinitialize everything
+and does not have to be paired with a matching [IMG_Init](IMG_Init) call.
+For that reason, it's considered best practices to have a single
+[IMG_Init](IMG_Init) and [IMG_Quit](IMG_Quit) call in your program. While
+this isn't required, be aware of the risks of deviating from that behavior.
 
 After initializing SDL_image, the app may begin to load images into
 SDL_Surfaces or SDL_Textures.
 
-== Version ==
+## Version
 
 This function is available since SDL_image 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[IMG_Quit]]
+* [IMG_Quit](IMG_Quit)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

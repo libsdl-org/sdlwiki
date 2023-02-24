@@ -1,35 +1,35 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetDisplayOrientation =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetDisplayOrientation
 
 Get the orientation of a display.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_DisplayOrientation SDL_GetDisplayOrientation(SDL_DisplayID displayID);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''displayID'''
-|the instance ID of the display to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                         |
+| ----------------- | --------------------------------------- |
+| **displayID**     | the instance ID of the display to query |
 
-Returns The [[SDL_DisplayOrientation]] enum value of the display, or
-<code>[[SDL_ORIENTATION_UNKNOWN]]</code> if it isn't available.
+## Return Value
 
-== Version ==
+Returns The [SDL_DisplayOrientation](SDL_DisplayOrientation) enum value of
+the display, or `[SDL_ORIENTATION_UNKNOWN](SDL_ORIENTATION_UNKNOWN)` if it
+isn't available.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetDisplays]]
+* [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

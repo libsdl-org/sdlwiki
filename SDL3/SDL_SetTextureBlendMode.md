@@ -1,44 +1,42 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetTextureBlendMode =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetTextureBlendMode
 
-Set the blend mode for a texture, used by [[SDL_RenderTexture]]().
+Set the blend mode for a texture, used by [SDL_RenderTexture](SDL_RenderTexture)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetTextureBlendMode(SDL_Texture *texture, SDL_BlendMode blendMode);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''texture'''
-|the texture to update
-|-
-|'''blendMode'''
-|the [[SDL_BlendMode]] to use for texture blending
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                                                |
+| ----------------- | -------------------------------------------------------------- |
+| **texture**       | the texture to update                                          |
+| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode) to use for texture blending |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 If the blend mode is not supported, the closest supported mode is chosen
 and this function returns -1.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetTextureBlendMode]]
-:[[SDL_RenderTexture]]
+* [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
+* [SDL_RenderTexture](SDL_RenderTexture)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

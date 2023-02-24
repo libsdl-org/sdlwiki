@@ -1,36 +1,30 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_MapRGB =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_MapRGB
 
 Map an RGB triple to an opaque pixel value for a given pixel format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_MapRGB(const SDL_PixelFormat * format,
                   Uint8 r, Uint8 g, Uint8 b);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''format'''
-|an [[SDL_PixelFormat]] structure describing the pixel format
-|-
-|'''r'''
-|the red component of the pixel in the range 0-255
-|-
-|'''g'''
-|the green component of the pixel in the range 0-255
-|-
-|'''b'''
-|the blue component of the pixel in the range 0-255
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                             |
+| -------------- | --------------------------------------------------------------------------- |
+| **format**     | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the pixel format |
+| **r**          | the red component of the pixel in the range 0-255                           |
+| **g**          | the green component of the pixel in the range 0-255                         |
+| **b**          | the blue component of the pixel in the range 0-255                          |
+
+## Return Value
 
 Returns a pixel value
 
-== Remarks ==
+## Remarks
 
 This function maps the RGB color value to the specified pixel format and
 returns the pixel value best approximating the given RGB color value for
@@ -47,17 +41,16 @@ upper bits of the return value can safely be ignored (e.g., with a 16-bpp
 format the return value can be assigned to a Uint16, and similarly a Uint8
 for an 8-bpp format).
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRGB]]
-:[[SDL_GetRGBA]]
-:[[SDL_MapRGBA]]
+* [SDL_GetRGB](SDL_GetRGB)
+* [SDL_GetRGBA](SDL_GetRGBA)
+* [SDL_MapRGBA](SDL_MapRGBA)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

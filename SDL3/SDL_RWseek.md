@@ -1,58 +1,53 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_RWseek =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_RWseek
 
-Seek within an [[SDL_RWops]] data stream.
+Seek within an [SDL_RWops](SDL_RWops) data stream.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Sint64 SDL_RWseek(SDL_RWops *context,
                   Sint64 offset, int whence);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''context'''
-|a pointer to an [[SDL_RWops]] structure
-|-
-|'''offset'''
-|an offset in bytes, relative to '''whence''' location; can be negative
-|-
-|'''whence'''
-|any of <code>[[SDL_RW_SEEK_SET]]</code>, <code>[[SDL_RW_SEEK_CUR]]</code>, <code>[[SDL_RW_SEEK_END]]</code>
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                                                                         |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure                                                                        |
+| **offset**      | an offset in bytes, relative to **whence** location; can be negative                                                    |
+| **whence**      | any of `[SDL_RW_SEEK_SET](SDL_RW_SEEK_SET)`, `[SDL_RW_SEEK_CUR](SDL_RW_SEEK_CUR)`, `[SDL_RW_SEEK_END](SDL_RW_SEEK_END)` |
+
+## Return Value
 
 Returns the final offset in the data stream after the seek or -1 on error.
 
-== Remarks ==
+## Remarks
 
-This function seeks to byte <code>offset</code>, relative to
-<code>whence</code>.
+This function seeks to byte `offset`, relative to `whence`.
 
-<code>whence</code> may be any of the following values:
+`whence` may be any of the following values:
 
-* <code>[[SDL_RW_SEEK_SET]]</code>: seek from the beginning of data
-* <code>[[SDL_RW_SEEK_CUR]]</code>: seek relative to current read point
-* <code>[[SDL_RW_SEEK_END]]</code>: seek relative to the end of data
+- `[SDL_RW_SEEK_SET](SDL_RW_SEEK_SET)`: seek from the beginning of data
+- `[SDL_RW_SEEK_CUR](SDL_RW_SEEK_CUR)`: seek relative to current read point
+- `[SDL_RW_SEEK_END](SDL_RW_SEEK_END)`: seek relative to the end of data
 
 If this stream can not seek, it will return -1.
 
-[[SDL_RWseek]]() is actually a wrapper function that calls the
-[[SDL_RWops]]'s <code>seek</code> method appropriately, to simplify
+[SDL_RWseek](SDL_RWseek)() is actually a wrapper function that calls the
+[SDL_RWops](SDL_RWops)'s `seek` method appropriately, to simplify
 application development.
 
 Prior to SDL 2.0.10, this function was a macro.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_RWops *rw = SDL_RWFromFile("myfile.bin", "rb");
 if (rw != NULL) {
     /* Seek to 0 bytes from the end of the file */
@@ -64,19 +59,19 @@ if (rw != NULL) {
         printf("myfile.bin is %d bytes long\n", length);
     }
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RWclose]]
-:[[SDL_RWFromConstMem]]
-:[[SDL_RWFromFile]]
-:[[SDL_RWFromMem]]
-:[[SDL_RWread]]
-:[[SDL_RWtell]]
-:[[SDL_RWwrite]]
+* [SDL_RWclose](SDL_RWclose)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem)
+* [SDL_RWFromFile](SDL_RWFromFile)
+* [SDL_RWFromMem](SDL_RWFromMem)
+* [SDL_RWread](SDL_RWread)
+* [SDL_RWtell](SDL_RWtell)
+* [SDL_RWwrite](SDL_RWwrite)
 
 ----
-[[CategoryAPI]], [[CategoryIO]]
+[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
 
 

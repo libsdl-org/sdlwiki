@@ -1,30 +1,30 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_JoystickIsVirtual =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_JoystickIsVirtual
 
 Query whether or not the joystick at a given device index is virtual.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_JoystickIsVirtual(int device_index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''device_index'''
-|a joystick device index.
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                          |
+| -------------------- | ------------------------ |
+| **device_index**     | a joystick device index. |
 
-Returns [[SDL_TRUE]] if the joystick is virtual, [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if the joystick is virtual,
+[SDL_FALSE](SDL_FALSE) otherwise.
+
+## Version
 
 This function is available since SDL 2.0.14.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

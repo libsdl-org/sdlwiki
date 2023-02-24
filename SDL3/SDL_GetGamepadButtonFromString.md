@@ -1,38 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadButtonFromString =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadButtonFromString
 
-Convert a string into an [[SDL_GamepadButton]] enum.
+Convert a string into an [SDL_GamepadButton](SDL_GamepadButton) enum.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_GamepadButton SDL_GetGamepadButtonFromString(const char *str);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''str'''
-|string representing a [[SDL_Gamepad]] axis
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                       |
+| ----------- | ----------------------------------------------------- |
+| **str**     | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
 
-Returns the [[SDL_GamepadButton]] enum corresponding to the input string,
-or <code>[[SDL_GAMEPAD_AXIS_INVALID]]</code> if no match was found.
+## Return Value
 
-== Remarks ==
+Returns the [SDL_GamepadButton](SDL_GamepadButton) enum corresponding to
+the input string, or `[SDL_GAMEPAD_AXIS_INVALID](SDL_GAMEPAD_AXIS_INVALID)`
+if no match was found.
 
-This function is called internally to translate [[SDL_Gamepad]] mapping
-strings for the underlying joystick device into the consistent
-[[SDL_Gamepad]] mapping. You do not normally need to call this function
-unless you are parsing [[SDL_Gamepad]] mappings in your own code.
+## Remarks
 
-== Version ==
+This function is called internally to translate [SDL_Gamepad](SDL_Gamepad)
+mapping strings for the underlying joystick device into the consistent
+[SDL_Gamepad](SDL_Gamepad) mapping. You do not normally need to call this
+function unless you are parsing [SDL_Gamepad](SDL_Gamepad) mappings in your
+own code.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

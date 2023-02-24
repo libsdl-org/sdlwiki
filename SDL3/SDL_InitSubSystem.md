@@ -1,37 +1,37 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_InitSubSystem =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_InitSubSystem
 
 Compatibility function to initialize the SDL library.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_InitSubSystem(Uint32 flags);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''flags'''
-|any of the flags used by [[SDL_Init]](); see [[SDL_Init]] for details.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                                        |
+| ------------- | -------------------------------------------------------------------------------------- |
+| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-This function and [[SDL_Init]]() are interchangeable.
+This function and [SDL_Init](SDL_Init)() are interchangeable.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
 
@@ -49,15 +49,15 @@ SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 
 /* Shut them both down */
 SDL_Quit();
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_Init]]
-:[[SDL_Quit]]
-:[[SDL_QuitSubSystem]]
+* [SDL_Init](SDL_Init)
+* [SDL_Quit](SDL_Quit)
+* [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[[CategoryAPI]], [[CategoryInit]]
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
 

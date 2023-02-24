@@ -1,39 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SaveDollarTemplate =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SaveDollarTemplate
 
 Save a currently loaded Dollar Gesture template.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SaveDollarTemplate(SDL_GestureID gestureId,SDL_RWops *dst);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gestureId'''
-|a gesture id
-|-
-|'''dst'''
-|a [[SDL_RWops]] to save to
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                     |
+| ----------------- | ----------------------------------- |
+| **gestureId**     | a gesture id                        |
+| **dst**           | a [SDL_RWops](SDL_RWops) to save to |
 
-Returns 1 on success or 0 on failure; call [[SDL_GetError]]() for more
-information.
+## Return Value
 
-== Version ==
+Returns 1 on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
+for more information.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LoadDollarTemplates]]
-:[[SDL_SaveAllDollarTemplates]]
+* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
+* [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

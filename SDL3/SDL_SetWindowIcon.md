@@ -1,35 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetWindowIcon =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetWindowIcon
 
 Set the icon for a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|-
-|'''icon'''
-|an [[SDL_Surface]] structure containing the icon for the window
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                            |
+| -------------- | -------------------------------------------------------------------------- |
+| **window**     | the window to change                                                       |
+| **icon**       | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
+
+## Return Value
+
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 // Using SDL2 to set a window icon
 
 #include "SDL.h"
@@ -95,9 +94,9 @@ int main(int argc, char* argv[]){
   return 0;
 
 }
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

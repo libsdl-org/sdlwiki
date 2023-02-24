@@ -1,34 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_HapticClose =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_HapticClose
 
-Close a haptic device previously opened with [[SDL_HapticOpen]]().
+Close a haptic device previously opened with [SDL_HapticOpen](SDL_HapticOpen)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_HapticClose(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to close
-|}
+## Function Parameters
 
-== Version ==
+|                |                                              |
+| -------------- | -------------------------------------------- |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to close |
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticOpen]]
+* [SDL_HapticOpen](SDL_HapticOpen)
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
 
 

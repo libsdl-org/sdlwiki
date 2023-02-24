@@ -1,33 +1,36 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AndroidSendMessage =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AndroidSendMessage
 
 Send a user command to SDLActivity.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_AndroidSendMessage(Uint32 command, int param);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''command'''
-|user command that must be greater or equal to 0x8000
-|-
-|'''param'''
-|user parameter
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                                      |
+| --------------- | ---------------------------------------------------- |
+| **command**     | user command that must be greater or equal to 0x8000 |
+| **param**       | user parameter                                       |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 Override "boolean onUnhandledMessage(Message msg)" to handle the message.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
 
 

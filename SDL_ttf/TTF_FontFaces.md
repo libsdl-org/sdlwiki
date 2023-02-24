@@ -1,30 +1,29 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_FontFaces =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_FontFaces
 
 Query the number of faces of a font.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 long TTF_FontFaces(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns the number of FreeType font faces.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

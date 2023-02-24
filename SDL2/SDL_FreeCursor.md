@@ -1,38 +1,38 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_FreeCursor =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_FreeCursor
 
 Free a previously-created cursor.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_FreeCursor(SDL_Cursor * cursor);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''cursor'''
-|the cursor to free
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                    |
+| -------------- | ------------------ |
+| **cursor**     | the cursor to free |
+
+## Remarks
 
 Use this function to free cursor resources created with
-[[SDL_CreateCursor]](), [[SDL_CreateColorCursor]]() or
-[[SDL_CreateSystemCursor]]().
+[SDL_CreateCursor](SDL_CreateCursor)(),
+[SDL_CreateColorCursor](SDL_CreateColorCursor)() or
+[SDL_CreateSystemCursor](SDL_CreateSystemCursor)().
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateColorCursor]]
-:[[SDL_CreateCursor]]
-:[[SDL_CreateSystemCursor]]
+* [SDL_CreateColorCursor](SDL_CreateColorCursor)
+* [SDL_CreateCursor](SDL_CreateCursor)
+* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

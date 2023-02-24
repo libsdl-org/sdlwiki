@@ -1,29 +1,27 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GroupChannel =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GroupChannel
 
 Assign a tag to a channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_GroupChannel(int which, int tag);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''which'''
-|the channel to set the tag on.
-|-
-|'''tag'''
-|an arbitrary value to assign a channel.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                         |
+| ------------- | --------------------------------------- |
+| **which**     | the channel to set the tag on.          |
+| **tag**       | an arbitrary value to assign a channel. |
+
+## Return Value
 
 Returns non-zero on success, zero on error (no such channel).
 
-== Remarks ==
+## Remarks
 
 A tag is an arbitary number that can be assigned to several mixer channels,
 to form groups of channels.
@@ -36,11 +34,10 @@ have one tag per channel.
 
 You may not specify MAX_CHANNEL_POST for a channel.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

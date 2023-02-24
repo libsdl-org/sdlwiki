@@ -1,65 +1,63 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetError =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetError
 
 Set the SDL error message for the current thread.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetError(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(1);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''fmt'''
-|a printf()-style message format string
-|-
-|'''...'''
-|additional parameters matching % tokens in the <code>fmt</code> string, if any
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                                     |
+| ----------- | ------------------------------------------------------------------- |
+| **fmt**     | a printf()-style message format string                              |
+| **...**     | additional parameters matching % tokens in the `fmt` string, if any |
+
+## Return Value
 
 Returns always -1.
 
-== Remarks ==
+## Remarks
 
 Calling this function will replace any previous error message that was set.
 
 This function always returns -1, since SDL frequently uses -1 to signify an
 failing result, leading to this idiom:
 
-<syntaxhighlight lang='c'>
+```c
 if (error_code) {
     return SDL_SetError("This operation has failed: %d", error_code);
 }
-</syntaxhighlight>
+```
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_SetError("Something unexpected happened!");
-</syntaxhighlight>
-<syntaxhighlight lang='c++'>
+```
+```c++
 int errorCode = 0;
 ...
 errorCode = -37;
 ...
 if (errorCode < 0)
     SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_ClearError]]
-:[[SDL_GetError]]
+* [SDL_ClearError](SDL_ClearError)
+* [SDL_GetError](SDL_GetError)
 
 ----
-[[CategoryAPI]], [[CategoryError]]
+[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
 
 

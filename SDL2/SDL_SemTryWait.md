@@ -1,48 +1,47 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SemTryWait =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SemTryWait
 
 See if a semaphore has a positive value and decrement it if it does.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SemTryWait(SDL_sem * sem);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sem'''
-|the semaphore to wait on
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                          |
+| ----------- | ------------------------ |
+| **sem**     | the semaphore to wait on |
 
-Returns 0 if the wait succeeds, <code>[[SDL_MUTEX_TIMEDOUT]]</code> if the
-wait would block, or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns 0 if the wait succeeds, `[SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT)`
+if the wait would block, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-This function checks to see if the semaphore pointed to by <code>sem</code>
-has a positive value and atomically decrements the semaphore value if it
-does. If the semaphore doesn't have a positive value, the function
-immediately returns [[SDL_MUTEX_TIMEDOUT]].
+## Remarks
 
-== Version ==
+This function checks to see if the semaphore pointed to by `sem` has a
+positive value and atomically decrements the semaphore value if it does. If
+the semaphore doesn't have a positive value, the function immediately
+returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateSemaphore]]
-:[[SDL_DestroySemaphore]]
-:[[SDL_SemPost]]
-:[[SDL_SemValue]]
-:[[SDL_SemWait]]
-:[[SDL_SemWaitTimeout]]
+* [SDL_CreateSemaphore](SDL_CreateSemaphore)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore)
+* [SDL_SemPost](SDL_SemPost)
+* [SDL_SemValue](SDL_SemValue)
+* [SDL_SemWait](SDL_SemWait)
+* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

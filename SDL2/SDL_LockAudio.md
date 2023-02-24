@@ -1,36 +1,37 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_LockAudio =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_LockAudio
 
 This function is a legacy means of locking the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_LockAudio(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
 
-New programs might want to use [[SDL_LockAudioDevice]]() instead. This
-function is equivalent to calling...
+## Remarks
 
-<syntaxhighlight lang='c'>
+New programs might want to use [SDL_LockAudioDevice](SDL_LockAudioDevice)()
+instead. This function is equivalent to calling...
+
+```c
 SDL_LockAudioDevice(1);
-</syntaxhighlight>
+```
 
-...and is only useful if you used the legacy [[SDL_OpenAudio]]() function.
+...and is only useful if you used the legacy
+[SDL_OpenAudio](SDL_OpenAudio)() function.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LockAudioDevice]]
-:[[SDL_UnlockAudio]]
-:[[SDL_UnlockAudioDevice]]
+* [SDL_LockAudioDevice](SDL_LockAudioDevice)
+* [SDL_UnlockAudio](SDL_UnlockAudio)
+* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,34 +1,33 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_FontDescent =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_FontDescent
 
 Query the offset from the baseline to the bottom of a font.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_FontDescent(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns the font's descent.
 
-== Remarks ==
+## Remarks
 
 This is a negative value, relative to the baseline.
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

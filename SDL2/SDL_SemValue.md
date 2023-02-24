@@ -1,34 +1,33 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SemValue =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SemValue
 
 Get the current value of a semaphore.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_SemValue(SDL_sem * sem);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sem'''
-|the semaphore to query
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                        |
+| ----------- | ---------------------- |
+| **sem**     | the semaphore to query |
+
+## Return Value
 
 Returns the current value of the semaphore.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateSemaphore]]
+* [SDL_CreateSemaphore](SDL_CreateSemaphore)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

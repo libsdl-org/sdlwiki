@@ -1,30 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CloseGamepad =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CloseGamepad
 
-Close a gamepad previously opened with [[SDL_OpenGamepad]]().
+Close a gamepad previously opened with [SDL_OpenGamepad](SDL_OpenGamepad)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_CloseGamepad(SDL_Gamepad *gamepad);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamepad'''
-|a gamepad identifier previously returned by [[SDL_OpenGamepad]]()
-|}
+## Function Parameters
 
-== Version ==
+|                 |                                                                                  |
+| --------------- | -------------------------------------------------------------------------------- |
+| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_OpenGamepad]]
+* [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

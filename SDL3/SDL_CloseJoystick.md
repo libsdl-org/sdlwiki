@@ -1,30 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CloseJoystick =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CloseJoystick
 
-Close a joystick previously opened with [[SDL_OpenJoystick]]().
+Close a joystick previously opened with [SDL_OpenJoystick](SDL_OpenJoystick)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_CloseJoystick(SDL_Joystick *joystick);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''joystick'''
-|The joystick device to close
-|}
+## Function Parameters
 
-== Version ==
+|                  |                              |
+| ---------------- | ---------------------------- |
+| **joystick**     | The joystick device to close |
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_OpenJoystick]]
+* [SDL_OpenJoystick](SDL_OpenJoystick)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

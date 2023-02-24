@@ -1,25 +1,26 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetPerformanceFrequency =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetPerformanceFrequency
 
 Get the count per second of the high resolution counter.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint64 SDL_GetPerformanceFrequency(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns a platform-specific count per second.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 
 #define DEFAULT_RESOLUTION  1
@@ -121,13 +122,13 @@ main(int argc, char *argv[])
     SDL_Quit();
     return (0);
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetPerformanceCounter]]
+* [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 
 ----
-[[CategoryAPI]], [[CategoryTimer]]
+[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
 
 

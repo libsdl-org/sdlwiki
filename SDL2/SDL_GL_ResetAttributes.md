@@ -1,24 +1,24 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GL_ResetAttributes =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GL_ResetAttributes
 
 Reset all previously set OpenGL context attributes to their default values.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_GL_ResetAttributes(void);
-</syntaxhighlight>
 
-== Version ==
+```
+
+## Version
 
 This function is available since SDL 2.0.2.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GL_GetAttribute]]
-:[[SDL_GL_SetAttribute]]
+* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
+* [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

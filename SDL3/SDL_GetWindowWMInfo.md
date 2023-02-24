@@ -1,43 +1,40 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetWindowWMInfo =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetWindowWMInfo
 
 Get driver-specific information about a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetWindowWMInfo(SDL_Window *window, SDL_SysWMinfo *info, Uint32 version);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window about which information is being requested
-|-
-|'''info'''
-|an [[SDL_SysWMinfo]] structure filled in with window information
-|-
-|'''version'''
-|the version of info being requested, should be [[SDL_SYSWM_CURRENT_VERSION]]
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------- |
+| **window**      | the window about which information is being requested                                                 |
+| **info**        | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information                         |
+| **version**     | the version of info being requested, should be [SDL_SYSWM_CURRENT_VERSION](SDL_SYSWM_CURRENT_VERSION) |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-You must include [[SDL_syswm]].h for the declaration of [[SDL_SysWMinfo]].
+You must include [SDL_syswm](SDL_syswm).h for the declaration of
+[SDL_SysWMinfo](SDL_SysWMinfo).
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 #include "SDL_syswm.h"
 
@@ -92,10 +89,10 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryVideo]], [[CategorySWM]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategorySWM](CategorySWM)
 
 <!-- #Actually from SDL_syswm.h header but listed in both categories for the wiki. -->
 

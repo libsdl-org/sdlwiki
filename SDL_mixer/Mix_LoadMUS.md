@@ -1,26 +1,26 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_LoadMUS =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_LoadMUS
 
 Load a supported audio format into a music object.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Mix_Music * Mix_LoadMUS(const char *file);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''file'''
-|a file path from where to load music data.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                            |
+| ------------ | ------------------------------------------ |
+| **file**     | a file path from where to load music data. |
+
+## Return Value
 
 Returns a new music object, or NULL on error.
 
-== Remarks ==
+## Remarks
 
 SDL_mixer has two separate data structures for audio data. One it calls a
 "chunk," which is meant to be a file completely decoded into memory up
@@ -38,17 +38,16 @@ fly. Also, crucially, there are as many channels for chunks as the app can
 allocate, but SDL_mixer only offers a single "music" channel.
 
 When done with this music, the app should dispose of it with a call to
-[[Mix_FreeMusic]]().
+[Mix_FreeMusic](Mix_FreeMusic)().
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_FreeMusic]]
+* [Mix_FreeMusic](Mix_FreeMusic)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

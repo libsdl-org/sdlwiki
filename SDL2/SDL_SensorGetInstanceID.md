@@ -1,30 +1,29 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SensorGetInstanceID =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SensorGetInstanceID
 
 Get the instance ID of a sensor.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sensor'''
-|The [[SDL_Sensor]] object to inspect
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                |
+| -------------- | ---------------------------------------------- |
+| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
 
-Returns the sensor instance ID, or -1 if <code>sensor</code> is NULL.
+## Return Value
 
-== Version ==
+Returns the sensor instance ID, or -1 if `sensor` is NULL.
+
+## Version
 
 This function is available since SDL 2.0.9.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

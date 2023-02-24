@@ -1,42 +1,35 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RenderCopyF =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RenderCopyF
 
 Copy a portion of the texture to the current rendering target at subpixel precision.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderCopyF(SDL_Renderer * renderer,
                     SDL_Texture * texture,
                     const SDL_Rect * srcrect,
                     const SDL_FRect * dstrect);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|The renderer which should copy parts of a texture.
-|-
-|'''texture'''
-|The source texture.
-|-
-|'''srcrect'''
-|A pointer to the source rectangle, or NULL for the entire texture.
-|-
-|'''dstrect'''
-|A pointer to the destination rectangle, or NULL for the entire rendering target.
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------- |
+| **renderer**     | The renderer which should copy parts of a texture.                               |
+| **texture**      | The source texture.                                                              |
+| **srcrect**      | A pointer to the source rectangle, or NULL for the entire texture.               |
+| **dstrect**      | A pointer to the destination rectangle, or NULL for the entire rendering target. |
+
+## Return Value
 
 Return 0 on success, or -1 on error
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.10.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

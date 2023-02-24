@@ -1,51 +1,51 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetHint =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetHint
 
 Set a hint with normal priority.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_SetHint(const char *name,
                      const char *value);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''name'''
-|the hint to set
-|-
-|'''value'''
-|the value of the hint variable
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                |
+| ------------- | ------------------------------ |
+| **name**      | the hint to set                |
+| **value**     | the value of the hint variable |
 
-Returns [[SDL_TRUE]] if the hint was set, [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
+otherwise.
+
+## Remarks
 
 Hints will not be set if there is an existing override hint or environment
-variable that takes precedence. You can use [[SDL_SetHintWithPriority]]()
-to set the hint with override priority instead.
+variable that takes precedence. You can use
+[SDL_SetHintWithPriority](SDL_SetHintWithPriority)() to set the hint with
+override priority instead.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetHint]]
-:[[SDL_SetHintWithPriority]]
+* [SDL_GetHint](SDL_GetHint)
+* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[[CategoryAPI]], [[CategoryHints]]
+[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
 
 

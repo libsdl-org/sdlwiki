@@ -1,44 +1,45 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_GetNumTouchFingers =
+# SDL_GetNumTouchFingers
 
 Get the number of active fingers for a given touch device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetNumTouchFingers(SDL_TouchID touchID);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''touchID'''
-|the ID of a touch device
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                          |
+| --------------- | ------------------------ |
+| **touchID**     | the ID of a touch device |
+
+## Return Value
 
 Returns the number of active fingers for a given touch device on success or
-0 on failure; call [[SDL_GetError]]() for more information.
+a negative error code on failure; call [SDL_GetError](SDL_GetError)() for
+more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetTouchFinger]]
+* [SDL_GetTouchFinger](SDL_GetTouchFinger)
 
 ----
-[[CategoryAPI]], [[CategoryEvents]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

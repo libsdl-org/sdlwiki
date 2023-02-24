@@ -1,46 +1,47 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_AllocPacket =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_AllocPacket
 
 Allocate a single UDP packet.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 UDPpacket * SDLNet_AllocPacket(int size);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''size'''
-|the maximum number of bytes of payload this packet will contain.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                  |
+| ------------ | ---------------------------------------------------------------- |
+| **size**     | the maximum number of bytes of payload this packet will contain. |
+
+## Return Value
 
 Returns the new packet, or NULL if the function ran out of memory.
 
-== Remarks ==
+## Remarks
 
-This allocates a packet with <code>size</code> bytes of space for payload.
+This allocates a packet with `size` bytes of space for payload.
 
-When done with this packet, you can free it with [[SDLNet_FreePacket]].
-Packets can be reused multiple times; you don't have to allocate a new one
-for each piece of data you intend to send.
+When done with this packet, you can free it with
+[SDLNet_FreePacket](SDLNet_FreePacket). Packets can be reused multiple
+times; you don't have to allocate a new one for each piece of data you
+intend to send.
 
-You can allocate multiple packets at once with [[SDLNet_AllocPacketV]].
+You can allocate multiple packets at once with
+[SDLNet_AllocPacketV](SDLNet_AllocPacketV).
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDLNet_ResizePacket]]
-:[[SDLNet_FreePacket]]
-:[[SDLNet_AllocPacketV]]
+* [SDLNet_ResizePacket](SDLNet_ResizePacket)
+* [SDLNet_FreePacket](SDLNet_FreePacket)
+* [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

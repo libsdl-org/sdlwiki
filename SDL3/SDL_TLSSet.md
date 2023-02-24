@@ -1,62 +1,58 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_TLSSet =
+# SDL_TLSSet
 
 Set the current thread's value associated with a thread local storage ID.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_TLSSet(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*));
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''id'''
-|the thread local storage ID
-|-
-|'''value'''
-|the value to associate with the ID for the current thread
-|-
-|'''destructor'''
-|a function called when the thread exits, to free the value
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                            |
+| ------------------ | ---------------------------------------------------------- |
+| **id**             | the thread local storage ID                                |
+| **value**          | the value to associate with the ID for the current thread  |
+| **destructor**     | a function called when the thread exits, to free the value |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-The function prototype for <code>destructor</code> is:
+The function prototype for `destructor` is:
 
-<syntaxhighlight lang='c'>
+```c
 void destructor(void *value)
-</syntaxhighlight>
+```
 
-where its parameter <code>value</code> is what was passed as
-<code>value</code> to [[SDL_TLSSet]]().
+where its parameter `value` is what was passed as `value` to
+[SDL_TLSSet](SDL_TLSSet)().
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_TLSCreate]]
-:[[SDL_TLSGet]]
+* [SDL_TLSCreate](SDL_TLSCreate)
+* [SDL_TLSGet](SDL_TLSGet)
 
 ----
-[[CategoryAPI]], [[CategoryThread]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

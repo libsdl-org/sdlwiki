@@ -1,22 +1,22 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GL_SwapWindow =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GL_SwapWindow
 
 Update a window with OpenGL rendering.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_GL_SwapWindow(SDL_Window * window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                      |
+| -------------- | -------------------- |
+| **window**     | the window to change |
+
+## Remarks
 
 This is used with double-buffered OpenGL contexts, which are the default.
 
@@ -25,11 +25,10 @@ window, otherwise nothing will happen. If you aren't using
 glBindFramebuffer(), this is the default and you won't have to do anything
 extra.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

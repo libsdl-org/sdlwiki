@@ -1,22 +1,22 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_CloseAudioDevice =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_CloseAudioDevice
 
 Use this function to shut down audio processing and close the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_CloseAudioDevice(SDL_AudioDeviceID dev);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|an audio device previously opened with [[SDL_OpenAudioDevice]]()
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------- |
+| **dev**     | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+
+## Remarks
 
 The application should close open audio devices once they are no longer
 needed. Calling this function will wait until the device's audio callback
@@ -29,17 +29,17 @@ hardware, so that applications don't drop the last buffer of data they
 supplied.
 
 The device ID is invalid as soon as the device is closed, and is eligible
-for reuse in a new [[SDL_OpenAudioDevice]]() call immediately.
+for reuse in a new [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() call
+immediately.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_OpenAudioDevice]]
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

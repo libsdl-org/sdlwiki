@@ -1,35 +1,35 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AndroidRequestPermission =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AndroidRequestPermission
 
 Request permissions at runtime.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_AndroidRequestPermission(const char *permission);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''permission'''
-|The permission to request.
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                            |
+| ------------------ | -------------------------- |
+| **permission**     | The permission to request. |
 
-Returns [[SDL_TRUE]] if the permission was granted, [[SDL_FALSE]]
-otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the permission was granted,
+[SDL_FALSE](SDL_FALSE) otherwise.
+
+## Remarks
 
 This blocks the calling thread until the permission is granted or denied.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
 
 

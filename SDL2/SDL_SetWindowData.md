@@ -1,46 +1,41 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetWindowData =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetWindowData
 
 Associate an arbitrary named pointer with a window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_SetWindowData(SDL_Window * window,
                         const char *name,
                         void *userdata);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to associate with the pointer
-|-
-|'''name'''
-|the name of the pointer
-|-
-|'''userdata'''
-|the associated pointer
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                          |
+| ---------------- | ---------------------------------------- |
+| **window**       | the window to associate with the pointer |
+| **name**         | the name of the pointer                  |
+| **userdata**     | the associated pointer                   |
 
-Returns the previous value associated with <code>name</code>.
+## Return Value
 
-== Remarks ==
+Returns the previous value associated with `name`.
 
-<code>name</code> is case-sensitive.
+## Remarks
 
-== Version ==
+`name` is case-sensitive.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowData]]
+* [SDL_GetWindowData](SDL_GetWindowData)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

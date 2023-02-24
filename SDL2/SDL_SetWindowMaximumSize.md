@@ -1,38 +1,33 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetWindowMaximumSize =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetWindowMaximumSize
 
 Set the maximum size of a window's client area.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_SetWindowMaximumSize(SDL_Window * window,
                               int max_w, int max_h);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|-
-|'''max_w'''
-|the maximum width of the window in pixels
-|-
-|'''max_h'''
-|the maximum height of the window in pixels
-|}
+## Function Parameters
 
-== Version ==
+|                |                                            |
+| -------------- | ------------------------------------------ |
+| **window**     | the window to change                       |
+| **max_w**      | the maximum width of the window in pixels  |
+| **max_h**      | the maximum height of the window in pixels |
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowMaximumSize]]
-:[[SDL_SetWindowMinimumSize]]
+* [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
+* [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

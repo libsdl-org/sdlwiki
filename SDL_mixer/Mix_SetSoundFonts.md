@@ -1,26 +1,26 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_SetSoundFonts =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_SetSoundFonts
 
 Set SoundFonts paths to use by supported MIDI backends.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_SetSoundFonts(const char *paths);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''paths'''
-|Paths on the filesystem where SoundFonts are available, separated by semicolons.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                                  |
+| ------------- | -------------------------------------------------------------------------------- |
+| **paths**     | Paths on the filesystem where SoundFonts are available, separated by semicolons. |
+
+## Return Value
 
 Returns 1 if successful, 0 on error (out of memory).
 
-== Remarks ==
+## Remarks
 
 You may specify multiple paths in a single string by separating them with
 semicolons; they will be searched in the order listed.
@@ -33,11 +33,10 @@ Note that unlike most SDL and SDL_mixer functions, this function returns
 zero if there's an error, not on success. We apologize for the API design
 inconsistency here.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

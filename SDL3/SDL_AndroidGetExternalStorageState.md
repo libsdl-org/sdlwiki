@@ -1,44 +1,51 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-= SDL_AndroidGetExternalStorageState =
+# SDL_AndroidGetExternalStorageState
 
 Get the current state of external storage.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-int SDL_AndroidGetExternalStorageState(void);
-</syntaxhighlight>
+```c
+int SDL_AndroidGetExternalStorageState(Uint32 *state);
 
-== Return Value ==
+```
 
-Returns the current state of external storage on success or 0 on failure;
-call [[SDL_GetError]]() for more information.
+## Function Parameters
 
-== Remarks ==
+|               |                                                                                                    |
+| ------------- | -------------------------------------------------------------------------------------------------- |
+| **state**     | filled with the current state of external storage. 0 if external storage is currently unavailable. |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 The current state of external storage, a bitmask of these values:
-<code>[[SDL_ANDROID_EXTERNAL_STORAGE_READ]]</code>,
-<code>[[SDL_ANDROID_EXTERNAL_STORAGE_WRITE]]</code>.
+`[SDL_ANDROID_EXTERNAL_STORAGE_READ](SDL_ANDROID_EXTERNAL_STORAGE_READ)`,
+`[SDL_ANDROID_EXTERNAL_STORAGE_WRITE](SDL_ANDROID_EXTERNAL_STORAGE_WRITE)`.
 
 If external storage is currently unavailable, this will return 0.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AndroidGetExternalStoragePath]]
+* [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
 
 ----
-[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

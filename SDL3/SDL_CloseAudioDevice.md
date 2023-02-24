@@ -1,22 +1,22 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CloseAudioDevice =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CloseAudioDevice
 
 Use this function to shut down audio processing and close the audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_CloseAudioDevice(SDL_AudioDeviceID dev);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|an audio device previously opened with [[SDL_OpenAudioDevice]]()
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------- |
+| **dev**     | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+
+## Remarks
 
 The application should close open audio devices once they are no longer
 needed. Calling this function will wait until the device's audio callback
@@ -29,15 +29,16 @@ hardware, so that applications don't drop the last buffer of data they
 supplied.
 
 The device ID is invalid as soon as the device is closed, and is eligible
-for reuse in a new [[SDL_OpenAudioDevice]]() call immediately.
+for reuse in a new [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() call
+immediately.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 extern SDL_AudioSpec want;
 SDL_AudioDeviceID devid = SDL_OpenAudioDevice(NULL, 0, &want, NULL, 0);
 if (devid > 0) {
@@ -45,13 +46,13 @@ if (devid > 0) {
     SDL_Delay(5000);  // let audio callback run for 5 seconds.
     SDL_CloseAudioDevice(devid);
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_OpenAudioDevice]]
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

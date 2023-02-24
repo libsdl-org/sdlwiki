@@ -1,36 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_RenderIsClipEnabled =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_RenderIsClipEnabled
 
 Get whether clipping is enabled on the given renderer.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_RenderIsClipEnabled(SDL_Renderer * renderer);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the renderer from which clip state should be queried
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                      |
+| ---------------- | ---------------------------------------------------- |
+| **renderer**     | the renderer from which clip state should be queried |
 
-Returns [[SDL_TRUE]] if clipping is enabled or [[SDL_FALSE]] if not; call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled or
+[SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for more
+information.
+
+## Version
 
 This function is available since SDL 2.0.4.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RenderGetClipRect]]
-:[[SDL_RenderSetClipRect]]
+* [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
+* [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

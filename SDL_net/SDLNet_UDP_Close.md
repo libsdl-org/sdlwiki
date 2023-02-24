@@ -1,32 +1,31 @@
-====== (This function is part of SDL_net, a separate library from SDL.) ======
-= SDLNet_UDP_Close =
+###### (This function is part of SDL_net, a separate library from SDL.)
+# SDLNet_UDP_Close
 
 Close a UDP socket.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDLNet_UDP_Close(UDPsocket sock);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sock'''
-|UDP socket to close.
-|}
+## Function Parameters
 
-== Remarks ==
+|              |                      |
+| ------------ | -------------------- |
+| **sock**     | UDP socket to close. |
+
+## Remarks
 
 This disconnects the socket and frees any resources it retains.
 
 This socket may not be used again once given to this function.
 
-== Version ==
+## Version
 
 This function is available since SDL_net 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

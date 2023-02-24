@@ -1,46 +1,48 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_HapticNumEffects =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_HapticNumEffects
 
 Get the number of effects a haptic device can store.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_HapticNumEffects(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                              |
+| -------------- | -------------------------------------------- |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+
+## Return Value
 
 Returns the number of effects the haptic device can store or a negative
-error code on failure; call [[SDL_GetError]]() for more information.
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
-== Remarks ==
+## Remarks
 
 On some platforms this isn't fully supported, and therefore is an
 approximation. Always check to see if your created effect was actually
-created and do not rely solely on [[SDL_HapticNumEffects]]().
+created and do not rely solely on
+[SDL_HapticNumEffects](SDL_HapticNumEffects)().
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticNumEffectsPlaying]]
-:[[SDL_HapticQuery]]
+* [SDL_HapticNumEffectsPlaying](SDL_HapticNumEffectsPlaying)
+* [SDL_HapticQuery](SDL_HapticQuery)
 
 ----
-[[CategoryAPI]], [[CategoryForceFeedback]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
 
 

@@ -1,47 +1,42 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_Vulkan_GetDrawableSize =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_Vulkan_GetDrawableSize
 
 Get the size of the window's underlying drawable dimensions in pixels.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
                                 int *w, int *h);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|an [[SDL_Window]] for which the size is to be queried
-|-
-|'''w'''
-|Pointer to the variable to write the width to or NULL
-|-
-|'''h'''
-|Pointer to the variable to write the height to or NULL
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                                                                 |
+| -------------- | --------------------------------------------------------------- |
+| **window**     | an [SDL_Window](SDL_Window) for which the size is to be queried |
+| **w**          | Pointer to the variable to write the width to or NULL           |
+| **h**          | Pointer to the variable to write the height to or NULL          |
 
-This may differ from [[SDL_GetWindowSize]]() if we're rendering to a
-high-DPI drawable, i.e. the window was created with
-<code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on a platform with high-DPI
-support (Apple calls this "Retina"), and not disabled by the
-<code>[[SDL_HINT_VIDEO_HIGHDPI_DISABLED]]</code> hint.
+## Remarks
 
-== Version ==
+This may differ from [SDL_GetWindowSize](SDL_GetWindowSize)() if we're
+rendering to a high-DPI drawable, i.e. the window was created with
+`[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)` on a platform with
+high-DPI support (Apple calls this "Retina"), and not disabled by the
+`[SDL_HINT_VIDEO_HIGHDPI_DISABLED](SDL_HINT_VIDEO_HIGHDPI_DISABLED)` hint.
+
+## Version
 
 This function is available since SDL 2.0.6.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowSize]]
-:[[SDL_CreateWindow]]
-:[[SDL_Vulkan_CreateSurface]]
+* [SDL_GetWindowSize](SDL_GetWindowSize)
+* [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

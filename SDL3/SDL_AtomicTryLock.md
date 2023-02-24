@@ -1,41 +1,41 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AtomicTryLock =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AtomicTryLock
 
 Try to lock a spin lock by setting it to a non-zero value.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''lock'''
-|a pointer to a lock variable
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                              |
+| ------------ | ---------------------------- |
+| **lock**     | a pointer to a lock variable |
 
-Returns [[SDL_TRUE]] if the lock succeeded, [[SDL_FALSE]] if the lock is
-already held.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded, [SDL_FALSE](SDL_FALSE)
+if the lock is already held.
 
-'''''Please note that spinlocks are dangerous if you don't know what you're
-doing. Please be careful using any sort of spinlock!'''''
+## Remarks
 
-== Version ==
+***Please note that spinlocks are dangerous if you don't know what you're
+doing. Please be careful using any sort of spinlock!***
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicLock]]
-:[[SDL_AtomicUnlock]]
+* [SDL_AtomicLock](SDL_AtomicLock)
+* [SDL_AtomicUnlock](SDL_AtomicUnlock)
 
 ----
-[[CategoryAPI]], [[CategoryAtomic]]
+[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
 
 

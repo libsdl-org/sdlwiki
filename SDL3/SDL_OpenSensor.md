@@ -1,30 +1,30 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_OpenSensor =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_OpenSensor
 
 Open a sensor for use.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Sensor* SDL_OpenSensor(SDL_SensorID instance_id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''instance_id'''
-|the sensor instance ID
-|}
+## Function Parameters
 
-== Return Value ==
+|                     |                        |
+| ------------------- | ---------------------- |
+| **instance_id**     | the sensor instance ID |
 
-Returns an [[SDL_Sensor]] sensor object, or NULL if an error occurred.
+## Return Value
 
-== Version ==
+Returns an [SDL_Sensor](SDL_Sensor) sensor object, or NULL if an error
+occurred.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

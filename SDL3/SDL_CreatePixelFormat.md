@@ -1,41 +1,40 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreatePixelFormat =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreatePixelFormat
 
-Create an [[SDL_PixelFormat]] structure corresponding to a pixel format.
+Create an [SDL_PixelFormat](SDL_PixelFormat) structure corresponding to a pixel format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_PixelFormat * SDL_CreatePixelFormat(Uint32 pixel_format);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''pixel_format'''
-|one of the [[SDL_PixelFormatEnum]] values
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                                                              |
+| -------------------- | ------------------------------------------------------------ |
+| **pixel_format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
 
-Returns the new [[SDL_PixelFormat]] structure or NULL on failure; call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns the new [SDL_PixelFormat](SDL_PixelFormat) structure or NULL on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 Returned structure may come from a shared global cache (i.e. not newly
 allocated), and hence should not be modified, especially the palette. Weird
-errors such as <code>Blit combination not supported</code> may occur.
+errors such as `Blit combination not supported` may occur.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_DestroyPixelFormat]]
+* [SDL_DestroyPixelFormat](SDL_DestroyPixelFormat)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,40 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetSurfaceAlphaMod =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetSurfaceAlphaMod
 
 Get the additional alpha value used in blit operations.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetSurfaceAlphaMod(SDL_Surface *surface,
                            Uint8 *alpha);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''surface'''
-|the [[SDL_Surface]] structure to query
-|-
-|'''alpha'''
-|a pointer filled in with the current alpha value
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                   |
+| --------------- | ------------------------------------------------- |
+| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
+| **alpha**       | a pointer filled in with the current alpha value  |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetSurfaceColorMod]]
-:[[SDL_SetSurfaceAlphaMod]]
+* [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
+* [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod)
 
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
 
 

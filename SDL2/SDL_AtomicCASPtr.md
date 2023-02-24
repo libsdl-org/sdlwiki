@@ -1,47 +1,43 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_AtomicCASPtr =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_AtomicCASPtr
 
 Set a pointer to a new value if it is currently an old value.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_AtomicCASPtr(void **a, void *oldval, void *newval);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''a'''
-|a pointer to a pointer
-|-
-|'''oldval'''
-|the old pointer value
-|-
-|'''newval'''
-|the new pointer value
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                        |
+| -------------- | ---------------------- |
+| **a**          | a pointer to a pointer |
+| **oldval**     | the old pointer value  |
+| **newval**     | the new pointer value  |
 
-Returns [[SDL_TRUE]] if the pointer was set, [[SDL_FALSE]] otherwise.
+## Return Value
 
-== Remarks ==
+Returns [SDL_TRUE](SDL_TRUE) if the pointer was set, [SDL_FALSE](SDL_FALSE)
+otherwise.
 
-'''''Note: If you don't know what this function is for, you shouldn't use
-it!'''''
+## Remarks
 
-== Version ==
+***Note: If you don't know what this function is for, you shouldn't use
+it!***
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicCAS]]
-:[[SDL_AtomicGetPtr]]
-:[[SDL_AtomicSetPtr]]
+* [SDL_AtomicCAS](SDL_AtomicCAS)
+* [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
+* [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

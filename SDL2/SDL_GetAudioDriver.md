@@ -1,27 +1,27 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetAudioDriver =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetAudioDriver
 
 Use this function to get the name of a built in audio driver.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetAudioDriver(int index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''index'''
-|the index of the audio driver; the value ranges from 0 to [[SDL_GetNumAudioDrivers]]() - 1
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **index**     | the index of the audio driver; the value ranges from 0 to [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)() - 1 |
+
+## Return Value
 
 Returns the name of the audio driver at the requested index, or NULL if an
 invalid index was specified.
 
-== Remarks ==
+## Remarks
 
 The list of audio drivers is given in the order that they are normally
 initialized by default; the drivers that seem more reasonable to choose
@@ -31,15 +31,14 @@ The names of drivers are all simple, low-ASCII identifiers, like "alsa",
 "coreaudio" or "xaudio2". These never have Unicode characters, and are not
 meant to be proper names.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetNumAudioDrivers]]
+* [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

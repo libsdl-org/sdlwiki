@@ -1,39 +1,38 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_ReadBE16 =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_ReadBE16
 
-Use this function to read 16 bits of big-endian data from an [[SDL_RWops]] and return in native format.
+Use this function to read 16 bits of big-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint16 SDL_ReadBE16(SDL_RWops * src);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''src'''
-|the stream from which to read data
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                    |
+| ----------- | ---------------------------------- |
+| **src**     | the stream from which to read data |
+
+## Return Value
 
 Returns 16 bits of data in the native byte order of the platform.
 
-== Remarks ==
+## Remarks
 
 SDL byteswaps the data only if necessary, so the data returned will be in
 the native byte order.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_ReadLE16]]
+* [SDL_ReadLE16](SDL_ReadLE16)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

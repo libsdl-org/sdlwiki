@@ -1,39 +1,38 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_HapticUnpause =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_HapticUnpause
 
 Unpause a haptic device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_HapticUnpause(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to unpause
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                |
+| -------------- | ---------------------------------------------- |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to unpause |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-Call to unpause after [[SDL_HapticPause]]().
+Call to unpause after [SDL_HapticPause](SDL_HapticPause)().
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_HapticPause]]
+* [SDL_HapticPause](SDL_HapticPause)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,43 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_MixAudioFormat =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_MixAudioFormat
 
 Mix audio data in a specified format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_MixAudioFormat(Uint8 * dst,
+```c
+int SDL_MixAudioFormat(Uint8 * dst,
                         const Uint8 * src,
                         SDL_AudioFormat format,
                         Uint32 len, int volume);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dst'''
-|the destination for the mixed audio
-|-
-|'''src'''
-|the source audio buffer to be mixed
-|-
-|'''format'''
-|the [[SDL_AudioFormat]] structure representing the desired audio format
-|-
-|'''len'''
-|the length of the audio buffer in bytes
-|-
-|'''volume'''
-|ranges from 0 - 128, and should be set to [[SDL_MIX_MAXVOLUME]] for full audio volume
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                                                                                                        |
+| -------------- | ------------------------------------------------------------------------------------------------------ |
+| **dst**        | the destination for the mixed audio                                                                    |
+| **src**        | the source audio buffer to be mixed                                                                    |
+| **format**     | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format                 |
+| **len**        | the length of the audio buffer in bytes                                                                |
+| **volume**     | ranges from 0 - 128, and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME) for full audio volume |
 
-This takes an audio buffer <code>src</code> of <code>len</code> bytes of
-<code>format</code> data and mixes it into <code>dst</code>, performing
-addition, volume adjustment, and overflow clipping. The buffer pointed to
-by <code>dst</code> must also be <code>len</code> bytes of
-<code>format</code> data.
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This takes an audio buffer `src` of `len` bytes of `format` data and mixes
+it into `dst`, performing addition, volume adjustment, and overflow
+clipping. The buffer pointed to by `dst` must also be `len` bytes of
+`format` data.
 
 This is provided for convenience -- you can mix your own audio data.
 
@@ -48,16 +44,16 @@ than the input (not to mention this being an inefficient way of doing it).
 
 It is a common misconception that this function is required to write audio
 data to an output stream in an audio callback. While you can do that,
-[[SDL_MixAudioFormat]]() is really only needed when you're mixing a single
-audio stream with a volume adjustment.
+[SDL_MixAudioFormat](SDL_MixAudioFormat)() is really only needed when
+you're mixing a single audio stream with a volume adjustment.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 
 void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {
@@ -67,9 +63,9 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
     // mix our audio against the silence, at 50% volume.
     SDL_MixAudioFormat(stream, mixData, deviceFormat, len, SDL_MIX_MAXVOLUME / 2);
 }
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

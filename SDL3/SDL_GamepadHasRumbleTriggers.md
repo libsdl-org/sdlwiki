@@ -1,35 +1,34 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GamepadHasRumbleTriggers =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GamepadHasRumbleTriggers
 
 Query whether a gamepad has rumble support on triggers.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_GamepadHasRumbleTriggers(SDL_Gamepad *gamepad);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamepad'''
-|The gamepad to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                      |
+| --------------- | -------------------- |
+| **gamepad**     | The gamepad to query |
 
-Returns [[SDL_TRUE]], or [[SDL_FALSE]] if this gamepad does not have
-trigger rumble support
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE), or [SDL_FALSE](SDL_FALSE) if this gamepad
+does not have trigger rumble support
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RumbleGamepadTriggers]]
+* [SDL_RumbleGamepadTriggers](SDL_RumbleGamepadTriggers)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

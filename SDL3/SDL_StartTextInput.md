@@ -1,38 +1,40 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_StartTextInput =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_StartTextInput
 
 Start accepting Unicode text input events.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_StartTextInput(void);
-</syntaxhighlight>
 
-== Remarks ==
+```
+
+## Remarks
 
 This function will start accepting Unicode text input events in the focused
-SDL window, and start emitting [[SDL_TextInputEvent]]
-([[SDL_EVENT_TEXT_INPUT]]) and [[SDL_TextEditingEvent]]
-([[SDL_EVENT_TEXT_EDITING]]) events. Please use this function in pair with
-[[SDL_StopTextInput]]().
+SDL window, and start emitting [SDL_TextInputEvent](SDL_TextInputEvent)
+([SDL_EVENT_TEXT_INPUT](SDL_EVENT_TEXT_INPUT)) and
+[SDL_TextEditingEvent](SDL_TextEditingEvent)
+([SDL_EVENT_TEXT_EDITING](SDL_EVENT_TEXT_EDITING)) events. Please use this
+function in pair with [SDL_StopTextInput](SDL_StopTextInput)().
 
 On some platforms using this function activates the screen keyboard.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_SetTextInputRect]]
-:[[SDL_StopTextInput]]
+* [SDL_SetTextInputRect](SDL_SetTextInputRect)
+* [SDL_StopTextInput](SDL_StopTextInput)
 
 ----
-[[CategoryAPI]], [[CategoryKeyboard]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

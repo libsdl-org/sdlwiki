@@ -1,35 +1,31 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetWindowHitTest =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetWindowHitTest
 
 Provide a callback that decides if a window region has special properties.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetWindowHitTest(SDL_Window * window,
                          SDL_HitTest callback,
                          void *callback_data);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to set hit-testing on
-|-
-|'''callback'''
-|the function to call when doing a hit-test
-|-
-|'''callback_data'''
-|an app-defined void pointer passed to '''callback'''
-|}
+## Function Parameters
 
-== Return Value ==
+|                       |                                                    |
+| --------------------- | -------------------------------------------------- |
+| **window**            | the window to set hit-testing on                   |
+| **callback**          | the function to call when doing a hit-test         |
+| **callback_data**     | an app-defined void pointer passed to **callback** |
+
+## Return Value
 
 Returns 0 on success or -1 on error (including unsupported); call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 Normally windows are dragged and resized by decorations provided by the
 system window manager (a title bar, borders, etc), but for some apps, it
@@ -60,11 +56,10 @@ when the mouse isn't actually at the location it is testing_). Since this
 can fire at any time, you should try to keep your callback efficient,
 devoid of allocations, etc.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.4.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

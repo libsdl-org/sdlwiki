@@ -1,30 +1,29 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SensorGetName =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SensorGetName
 
 Get the implementation dependent name of a sensor 
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_SensorGetName(SDL_Sensor *sensor);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sensor'''
-|The [[SDL_Sensor]] object
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                     |
+| -------------- | ----------------------------------- |
+| **sensor**     | The [SDL_Sensor](SDL_Sensor) object |
 
-Returns the sensor name, or NULL if <code>sensor</code> is NULL.
+## Return Value
 
-== Version ==
+Returns the sensor name, or NULL if `sensor` is NULL.
+
+## Version
 
 This function is available since SDL 2.0.9.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

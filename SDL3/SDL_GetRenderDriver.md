@@ -1,27 +1,27 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetRenderDriver =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetRenderDriver
 
 Use this function to get the name of a built in 2D rendering driver.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetRenderDriver(int index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''index'''
-|the index of the rendering driver; the value ranges from 0 to [[SDL_GetNumRenderDrivers]]() - 1
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                                                                        |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **index**     | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1 |
+
+## Return Value
 
 Returns the name of the rendering driver at the requested index, or NULL if
 an invalid index was specified.
 
-== Remarks ==
+## Remarks
 
 The list of rendering drivers is given in the order that they are normally
 initialized by default; the drivers that seem more reasonable to choose
@@ -34,15 +34,14 @@ meant to be proper names.
 The returned value points to a static, read-only string; do not modify or
 free it!
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetNumRenderDrivers]]
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

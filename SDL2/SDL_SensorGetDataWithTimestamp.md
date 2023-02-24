@@ -1,43 +1,36 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SensorGetDataWithTimestamp =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SensorGetDataWithTimestamp
 
 Get the current state of an opened sensor with the timestamp of the last update.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SensorGetDataWithTimestamp(SDL_Sensor *sensor, Uint64 *timestamp, float *data, int num_values);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''sensor'''
-|The [[SDL_Sensor]] object to query
-|-
-|'''timestamp'''
-|A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not
-|-
-|'''data'''
-|A pointer filled with the current sensor state
-|-
-|'''num_values'''
-|The number of values to write to data
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                                                                             |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **sensor**         | The [SDL_Sensor](SDL_Sensor) object to query                                                                |
+| **timestamp**      | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not |
+| **data**           | A pointer filled with the current sensor state                                                              |
+| **num_values**     | The number of values to write to data                                                                       |
+
+## Return Value
 
 Returns 0 or -1 if an error occurred.
 
-== Remarks ==
+## Remarks
 
 The number of values and interpretation of the data is sensor dependent.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.26.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

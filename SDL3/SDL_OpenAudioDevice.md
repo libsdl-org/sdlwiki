@@ -1,84 +1,102 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_OpenAudioDevice =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_OpenAudioDevice
 
 Open a specific audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_AudioDeviceID SDL_OpenAudioDevice(
                           const char *device,
                           int iscapture,
                           const SDL_AudioSpec *desired,
                           SDL_AudioSpec *obtained,
                           int allowed_changes);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''device'''
-|a UTF-8 string reported by [[SDL_GetAudioDeviceName]]() or a driver-specific name as appropriate. NULL requests the most reasonable default device.
-|-
-|'''iscapture'''
-|non-zero to specify a device should be opened for recording, not playback
-|-
-|'''desired'''
-|an [[SDL_AudioSpec]] structure representing the desired output format
-|-
-|'''obtained'''
-|an [[SDL_AudioSpec]] structure filled in with the actual output format
-|-
-|'''allowed_changes'''
-|0, or one or more flags OR'd together
-|}
+## Function Parameters
 
-== Return Value ==
+|                         |                                                                                                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **device**              | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
+| **iscapture**           | non-zero to specify a device should be opened for recording, not playback                                                                                                 |
+| **desired**             | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format                                                                                        |
+| **obtained**            | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format                                                                                       |
+| **allowed_changes**     | 0, or one or more flags OR'd together                                                                                                                                     |
+
+## Return Value
 
 Returns a valid device ID that is > 0 on success or 0 on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
 For compatibility with SDL 1.2, this will never return 1, since SDL
-reserves that ID for the legacy [[SDL_OpenAudio]]() function.
+reserves that ID for the legacy [SDL_OpenAudio](SDL_OpenAudio)() function.
 
-== Remarks ==
+## Remarks
 
-Passing in a <code>device</code> name of NULL requests the most reasonable
-default. The <code>device</code> name is a UTF-8 string reported by
-[[SDL_GetAudioDeviceName]](), but some drivers allow arbitrary and
-driver-specific strings, such as a hostname/IP address for a remote audio
-server, or a filename in the diskaudio driver.
+Passing in a `device` name of NULL requests the most reasonable default.
+The `device` name is a UTF-8 string reported by
+[SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)(), but some drivers allow
+arbitrary and driver-specific strings, such as a hostname/IP address for a
+remote audio server, or a filename in the diskaudio driver.
 
 An opened audio device starts out paused, and should be enabled for playing
-by calling [[SDL_PlayAudioDevice]](devid) when you are ready for your audio
-callback function to be called. Since the audio driver may modify the
-requested size of the audio buffer, you should allocate any local mixing
-buffers after you open the audio device.
+by calling [SDL_PlayAudioDevice](SDL_PlayAudioDevice)(devid) when you are
+ready for your audio callback function to be called. Since the audio driver
+may modify the requested size of the audio buffer, you should allocate any
+local mixing buffers after you open the audio device.
 
 The audio callback runs in a separate thread in most cases; you can prevent
 race conditions between your callback and other threads without fully
-pausing playback with [[SDL_LockAudioDevice]](). For more information about
-the callback, see [[SDL_AudioSpec]].
+pausing playback with [SDL_LockAudioDevice](SDL_LockAudioDevice)(). For
+more information about the callback, see [SDL_AudioSpec](SDL_AudioSpec).
 
 Managing the audio spec via 'desired' and 'obtained':
 
 When filling in the desired audio spec structure:
 
-* <code>desired->freq</code> should be the frequency in sample-frames-per-second (Hz).
-* <code>desired->format</code> should be the audio format (<code>[[AUDIO_S16SYS]]</code>, etc).
-* <code>desired->samples</code> is the desired size of the audio buffer, in _sample frames_ (with stereo output, two samples--left and right--would make a single sample frame). This number should be a power of two, and may be adjusted by the audio driver to a value more suitable for the hardware. Good values seem to range between 512 and 8096 inclusive, depending on the application and CPU speed. Smaller values reduce latency, but can lead to underflow if the application is doing heavy processing and cannot fill the audio buffer in time. Note that the number of sample frames is directly related to time by the following formula: <code>ms = (sampleframes*1000)/freq</code>
-* <code>desired->size</code> is the size in _bytes_ of the audio buffer, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this.
-* <code>desired->silence</code> is the value used to set the buffer to silence, and is calculated by [[SDL_OpenAudioDevice]](). You don't initialize this.
-* <code>desired->callback</code> should be set to a function that will be called when the audio device is ready for more data. It is passed a pointer to the audio buffer, and the length in bytes of the audio buffer. This function usually runs in a separate thread, and so you should protect data structures that it accesses by calling [[SDL_LockAudioDevice]]() and [[SDL_UnlockAudioDevice]]() in your code. Alternately, you may pass a NULL pointer here, and call [[SDL_QueueAudio]]() with some frequency, to queue more audio samples to be played (or for capture devices, call [[SDL_DequeueAudio]]() with some frequency, to obtain audio samples).
-* <code>desired->userdata</code> is passed as the first parameter to your callback function. If you passed a NULL callback, this value is ignored.
+- `desired->freq` should be the frequency in sample-frames-per-second (Hz).
+- `desired->format` should be the audio format
+  (`[AUDIO_S16SYS](AUDIO_S16SYS)`, etc).
+- `desired->samples` is the desired size of the audio buffer, in _sample
+  frames_ (with stereo output, two samples--left and right--would make a
+  single sample frame). This number should be a power of two, and may be
+  adjusted by the audio driver to a value more suitable for the hardware.
+  Good values seem to range between 512 and 8096 inclusive, depending on
+  the application and CPU speed. Smaller values reduce latency, but can
+  lead to underflow if the application is doing heavy processing and cannot
+  fill the audio buffer in time. Note that the number of sample frames is
+  directly related to time by the following formula: `ms =
+  (sampleframes*1000)/freq`
+- `desired->size` is the size in _bytes_ of the audio buffer, and is
+  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). You don't
+  initialize this.
+- `desired->silence` is the value used to set the buffer to silence, and is
+  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). You don't
+  initialize this.
+- `desired->callback` should be set to a function that will be called when
+  the audio device is ready for more data. It is passed a pointer to the
+  audio buffer, and the length in bytes of the audio buffer. This function
+  usually runs in a separate thread, and so you should protect data
+  structures that it accesses by calling
+  [SDL_LockAudioDevice](SDL_LockAudioDevice)() and
+  [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)() in your code.
+  Alternately, you may pass a NULL pointer here, and call
+  [SDL_QueueAudio](SDL_QueueAudio)() with some frequency, to queue more
+  audio samples to be played (or for capture devices, call
+  [SDL_DequeueAudio](SDL_DequeueAudio)() with some frequency, to obtain
+  audio samples).
+- `desired->userdata` is passed as the first parameter to your callback
+  function. If you passed a NULL callback, this value is ignored.
 
-<code>allowed_changes</code> can have the following flags OR'd together:
+`allowed_changes` can have the following flags OR'd together:
 
-* <code>[[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE]]</code>
-* <code>[[SDL_AUDIO_ALLOW_FORMAT_CHANGE]]</code>
-* <code>[[SDL_AUDIO_ALLOW_CHANNELS_CHANGE]]</code>
-* <code>[[SDL_AUDIO_ALLOW_SAMPLES_CHANGE]]</code>
-* <code>[[SDL_AUDIO_ALLOW_ANY_CHANGE]]</code>
+- `[SDL_AUDIO_ALLOW_FREQUENCY_CHANGE](SDL_AUDIO_ALLOW_FREQUENCY_CHANGE)`
+- `[SDL_AUDIO_ALLOW_FORMAT_CHANGE](SDL_AUDIO_ALLOW_FORMAT_CHANGE)`
+- `[SDL_AUDIO_ALLOW_CHANNELS_CHANGE](SDL_AUDIO_ALLOW_CHANNELS_CHANGE)`
+- `[SDL_AUDIO_ALLOW_SAMPLES_CHANGE](SDL_AUDIO_ALLOW_SAMPLES_CHANGE)`
+- `[SDL_AUDIO_ALLOW_ANY_CHANGE](SDL_AUDIO_ALLOW_ANY_CHANGE)`
 
 These flags specify how SDL should behave when a device cannot offer a
 specific feature. If the application requests a feature that the hardware
@@ -86,26 +104,25 @@ doesn't offer, SDL will always try to get the closest equivalent.
 
 For example, if you ask for float32 audio format, but the sound card only
 supports int16, SDL will set the hardware to int16. If you had set
-[[SDL_AUDIO_ALLOW_FORMAT_CHANGE]], SDL will change the format in the
-<code>obtained</code> structure. If that flag was ''not'' set, SDL will
-prepare to convert your callback's float32 audio to int16 before feeding it
-to the hardware and will keep the originally requested format in the
-<code>obtained</code> structure.
+[SDL_AUDIO_ALLOW_FORMAT_CHANGE](SDL_AUDIO_ALLOW_FORMAT_CHANGE), SDL will
+change the format in the `obtained` structure. If that flag was *not* set,
+SDL will prepare to convert your callback's float32 audio to int16 before
+feeding it to the hardware and will keep the originally requested format in
+the `obtained` structure.
 
 The resulting audio specs, varying depending on hardware and on what
-changes were allowed, will then be written back to <code>obtained</code>.
+changes were allowed, will then be written back to `obtained`.
 
 If your application can only handle one specific data format, pass a zero
-for <code>allowed_changes</code> and let SDL transparently handle any
-differences.
+for `allowed_changes` and let SDL transparently handle any differences.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
@@ -128,18 +145,18 @@ if (dev == 0) {
     SDL_Delay(5000); /* let the audio callback play some sound for 5 seconds. */
     SDL_CloseAudioDevice(dev);
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CloseAudioDevice]]
-:[[SDL_GetAudioDeviceName]]
-:[[SDL_LockAudioDevice]]
-:[[SDL_PlayAudioDevice]]
-:[[SDL_PauseAudioDevice]]
-:[[SDL_UnlockAudioDevice]]
+* [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
+* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice)
+* [SDL_PlayAudioDevice](SDL_PlayAudioDevice)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

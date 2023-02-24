@@ -1,43 +1,44 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_VolumeMusic =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_VolumeMusic
 
 Set the volume for the music channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_VolumeMusic(int volume);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''volume'''
-|the new volume, between 0 and [[MIX_MAX_VOLUME]], or -1 to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                                                                 |
+| -------------- | ------------------------------------------------------------------------------- |
+| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+
+## Return Value
 
 Returns the previous volume. If the specified volume is -1, this returns
 the current volume.
 
-== Remarks ==
+## Remarks
 
-The volume must be between 0 (silence) and [[MIX_MAX_VOLUME]] (full
-volume). Note that [[MIX_MAX_VOLUME]] is 128. Values greater than
-[[MIX_MAX_VOLUME]] are clamped to [[MIX_MAX_VOLUME]].
+The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME)
+(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME) is 128. Values
+greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME) are clamped to
+[MIX_MAX_VOLUME](MIX_MAX_VOLUME).
 
 Specifying a negative volume will not change the current volume; as such,
 this can be used to query the current volume without making changes, as
 this function returns the previous (in this case, still-current) value.
 
-The default volume for music is [[MIX_MAX_VOLUME]] (no attenuation).
+The default volume for music is [MIX_MAX_VOLUME](MIX_MAX_VOLUME) (no
+attenuation).
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

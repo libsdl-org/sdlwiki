@@ -1,50 +1,48 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetWindowSize =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetWindowSize
 
 Get the size of a window's client area.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_GetWindowSize(SDL_Window * window, int *w,
                        int *h);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to query the width and height from
-|-
-|'''w'''
-|a pointer filled in with the width of the window, in screen coordinates, may be NULL
-|-
-|'''h'''
-|a pointer filled in with the height of the window, in screen coordinates, may be NULL
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------- |
+| **window**     | the window to query the width and height from                                         |
+| **w**          | a pointer filled in with the width of the window, in screen coordinates, may be NULL  |
+| **h**          | a pointer filled in with the height of the window, in screen coordinates, may be NULL |
 
-NULL can safely be passed as the <code>w</code> or <code>h</code> parameter
-if the width or height value is not desired.
+## Remarks
+
+NULL can safely be passed as the `w` or `h` parameter if the width or
+height value is not desired.
 
 The window size in screen coordinates may differ from the size in pixels,
-if the window was created with <code>[[SDL_WINDOW_ALLOW_HIGHDPI]]</code> on
-a platform with high-dpi support (e.g. iOS or macOS). Use
-[[SDL_GL_GetDrawableSize]](), [[SDL_Vulkan_GetDrawableSize]](), or
-[[SDL_GetRendererOutputSize]]() to get the real client area size in pixels.
+if the window was created with
+`[SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI)` on a platform with
+high-dpi support (e.g. iOS or macOS). Use
+[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)(),
+[SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)(), or
+[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)() to get the real
+client area size in pixels.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GL_GetDrawableSize]]
-:[[SDL_Vulkan_GetDrawableSize]]
-:[[SDL_SetWindowSize]]
+* [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)
+* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
+* [SDL_SetWindowSize](SDL_SetWindowSize)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

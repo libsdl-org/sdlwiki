@@ -1,39 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_DelEventWatch =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_DelEventWatch
 
-Remove an event watch callback added with [[SDL_AddEventWatch]]().
+Remove an event watch callback added with [SDL_AddEventWatch](SDL_AddEventWatch)().
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_DelEventWatch(SDL_EventFilter filter,
                        void *userdata);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''filter'''
-|the function originally passed to [[SDL_AddEventWatch]]()
-|-
-|'''userdata'''
-|the pointer originally passed to [[SDL_AddEventWatch]]()
-|}
+## Function Parameters
 
-== Remarks ==
+|                  |                                                                            |
+| ---------------- | -------------------------------------------------------------------------- |
+| **filter**       | the function originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)() |
+| **userdata**     | the pointer originally passed to [SDL_AddEventWatch](SDL_AddEventWatch)()  |
 
-This function takes the same input as [[SDL_AddEventWatch]]() to identify
-and delete the corresponding callback.
+## Remarks
 
-== Version ==
+This function takes the same input as
+[SDL_AddEventWatch](SDL_AddEventWatch)() to identify and delete the
+corresponding callback.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AddEventWatch]]
+* [SDL_AddEventWatch](SDL_AddEventWatch)
 
 ----
-[[CategoryAPI]], [[CategoryEvents]]
+[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
 
 

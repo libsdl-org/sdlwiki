@@ -1,39 +1,37 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadBindForAxis =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadBindForAxis
 
 Get the SDL joystick layer binding for a gamepad axis mapping.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_GamepadBinding SDL_GetGamepadBindForAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamepad'''
-|a gamepad
-|-
-|'''axis'''
-|an axis enum value (one of the [[SDL_GamepadAxis]] values)
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                           |
+| --------------- | ------------------------------------------------------------------------- |
+| **gamepad**     | a gamepad                                                                 |
+| **axis**        | an axis enum value (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
 
-Returns a [[SDL_GamepadBinding]] describing the bind. On failure (like the
-given Controller axis doesn't exist on the device), its
-<code>.bindType</code> will be <code>[[SDL_GAMEPAD_BINDTYPE_NONE]]</code>.
+## Return Value
 
-== Version ==
+Returns a [SDL_GamepadBinding](SDL_GamepadBinding) describing the bind. On
+failure (like the given Controller axis doesn't exist on the device), its
+`.bindType` will be
+`[SDL_GAMEPAD_BINDTYPE_NONE](SDL_GAMEPAD_BINDTYPE_NONE)`.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetGamepadBindForButton]]
+* [SDL_GetGamepadBindForButton](SDL_GetGamepadBindForButton)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

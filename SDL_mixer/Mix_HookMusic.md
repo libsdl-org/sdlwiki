@@ -1,31 +1,29 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_HookMusic =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_HookMusic
 
 Add your own music player or additional mixer function.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void Mix_HookMusic(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len), void *arg);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''mix_func'''
-|the callback function to become the new post-mix callback.
-|-
-|'''arg'''
-|a pointer that is passed, untouched, to the callback.
-|}
+## Function Parameters
 
-== Remarks ==
+|                  |                                                            |
+| ---------------- | ---------------------------------------------------------- |
+| **mix_func**     | the callback function to become the new post-mix callback. |
+| **arg**          | a pointer that is passed, untouched, to the callback.      |
 
-This works something like [[Mix_SetPostMix]](), but it has some crucial
-differences. Note that an app can use this _and_ [[Mix_SetPostMix]]() at
-the same time. This allows an app to replace the built-in music playback,
-either with it's own music decoder or with some sort of
-procedurally-generated audio output.
+## Remarks
+
+This works something like [Mix_SetPostMix](Mix_SetPostMix)(), but it has
+some crucial differences. Note that an app can use this _and_
+[Mix_SetPostMix](Mix_SetPostMix)() at the same time. This allows an app to
+replace the built-in music playback, either with it's own music decoder or
+with some sort of procedurally-generated audio output.
 
 The supplied callback will fire every time SDL_mixer is preparing to supply
 more data to the audio device. This runs inside an SDL audio callback, so
@@ -47,23 +45,22 @@ playing chunks (but not music!) into the buffer. The callback cannot resize
 the buffer (so you must be prepared to provide exactly the amount of data
 demanded or leave it as silence).
 
-The <code>arg</code> pointer supplied here is passed to the callback as-is,
-for whatever the callback might want to do with it (keep track of some
-ongoing state, settings, etc).
+The `arg` pointer supplied here is passed to the callback as-is, for
+whatever the callback might want to do with it (keep track of some ongoing
+state, settings, etc).
 
 As there is only one music "channel" mixed, there is only one callback
 available. If you need to mix multiple inputs, be prepared to handle them
 from a single function.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_SetPostMix]]
+* [Mix_SetPostMix](Mix_SetPostMix)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

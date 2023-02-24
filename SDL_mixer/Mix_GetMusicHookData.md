@@ -1,28 +1,30 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GetMusicHookData =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GetMusicHookData
 
 Get a pointer to the user data for the current music hook.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * Mix_GetMusicHookData(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
 
-Returns pointer to the user data previously passed to [[Mix_HookMusic]].
+## Return Value
 
-== Remarks ==
+Returns pointer to the user data previously passed to
+[Mix_HookMusic](Mix_HookMusic).
 
-This returns the <code>arg</code> pointer last passed to
-[[Mix_HookMusic]](), or NULL if that function has never been called.
+## Remarks
 
-== Version ==
+This returns the `arg` pointer last passed to
+[Mix_HookMusic](Mix_HookMusic)(), or NULL if that function has never been
+called.
+
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

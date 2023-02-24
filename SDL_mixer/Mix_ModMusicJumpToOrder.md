@@ -1,34 +1,33 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_ModMusicJumpToOrder =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_ModMusicJumpToOrder
 
 Jump to a given order in mod music.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_ModMusicJumpToOrder(int order);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''order'''
-|order
-|}
+## Function Parameters
 
-== Return Value ==
+|               |       |
+| ------------- | ----- |
+| **order**     | order |
+
+## Return Value
 
 Returns 0 if successful, or -1 if failed or isn't implemented.
 
-== Remarks ==
+## Remarks
 
 This only applies to MOD music formats.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.6.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

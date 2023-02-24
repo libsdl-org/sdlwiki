@@ -1,39 +1,38 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadInstancePlayerIndex =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadInstancePlayerIndex
 
 Get the player index of a gamepad.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetGamepadInstancePlayerIndex(SDL_JoystickID instance_id);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''instance_id'''
-|the joystick instance ID
-|}
+## Function Parameters
 
-== Return Value ==
+|                     |                          |
+| ------------------- | ------------------------ |
+| **instance_id**     | the joystick instance ID |
+
+## Return Value
 
 Returns the player index of a gamepad, or -1 if it's not available
 
-== Remarks ==
+## Remarks
 
 This can be called before any gamepads are opened.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetGamepadPlayerIndex]]
-:[[SDL_OpenGamepad]]
+* [SDL_GetGamepadPlayerIndex](SDL_GetGamepadPlayerIndex)
+* [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,46 +1,46 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_TryLockMutex =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_TryLockMutex
 
 Try to lock a mutex without blocking.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''mutex'''
-|the mutex to try to lock
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                          |
+| ------------- | ------------------------ |
+| **mutex**     | the mutex to try to lock |
 
-Returns 0, <code>[[SDL_MUTEX_TIMEDOUT]]</code>, or -1 on error; call
-[[SDL_GetError]]() for more information.
+## Return Value
 
-== Remarks ==
+Returns 0, `[SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT)`, or -1 on error; call
+[SDL_GetError](SDL_GetError)() for more information.
 
-This works just like [[SDL_LockMutex]](), but if the mutex is not
-available, this function returns <code>[[SDL_MUTEX_TIMEOUT]]</code>
-immediately.
+## Remarks
+
+This works just like [SDL_LockMutex](SDL_LockMutex)(), but if the mutex is
+not available, this function returns
+`[SDL_MUTEX_TIMEOUT](SDL_MUTEX_TIMEOUT)` immediately.
 
 This technique is useful if you need exclusive access to a resource but
 don't want to wait for it, and will return to it to try again later.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 int status;
 SDL_mutex *mutex;
 
@@ -62,16 +62,16 @@ if (status == 0) {
 }
 
 SDL_DestroyMutex(mutex);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateMutex]]
-:[[SDL_DestroyMutex]]
-:[[SDL_LockMutex]]
-:[[SDL_UnlockMutex]]
+* [SDL_CreateMutex](SDL_CreateMutex)
+* [SDL_DestroyMutex](SDL_DestroyMutex)
+* [SDL_LockMutex](SDL_LockMutex)
+* [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[[CategoryAPI]], [[CategoryMutex]], [[CategoryDraft]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex), [CategoryDraft](CategoryDraft)
 
 

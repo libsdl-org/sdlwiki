@@ -1,47 +1,40 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetSurfaceColorMod =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetSurfaceColorMod
 
 Get the additional color value multiplied into blit operations.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GetSurfaceColorMod(SDL_Surface * surface,
                            Uint8 * r, Uint8 * g,
                            Uint8 * b);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''surface'''
-|the [[SDL_Surface]] structure to query
-|-
-|'''r'''
-|a pointer filled in with the current red color value
-|-
-|'''g'''
-|a pointer filled in with the current green color value
-|-
-|'''b'''
-|a pointer filled in with the current blue color value
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                        |
+| --------------- | ------------------------------------------------------ |
+| **surface**     | the [SDL_Surface](SDL_Surface) structure to query      |
+| **r**           | a pointer filled in with the current red color value   |
+| **g**           | a pointer filled in with the current green color value |
+| **b**           | a pointer filled in with the current blue color value  |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetSurfaceAlphaMod]]
-:[[SDL_SetSurfaceColorMod]]
+* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
+* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

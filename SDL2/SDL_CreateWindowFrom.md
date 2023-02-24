@@ -1,42 +1,43 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_CreateWindowFrom =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_CreateWindowFrom
 
 Create an SDL window from an existing native window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Window * SDL_CreateWindowFrom(const void *data);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''data'''
-|a pointer to driver-dependent window creation data, typically your native window cast to a void*
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------ |
+| **data**     | a pointer to driver-dependent window creation data, typically your native window cast to a void* |
+
+## Return Value
 
 Returns the window that was created or NULL on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows)
-the hint <code>[[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT]]</code> needs to
-be configured before using [[SDL_CreateWindowFrom]]().
+the hint
+`[SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT](SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT)`
+needs to be configured before using
+[SDL_CreateWindowFrom](SDL_CreateWindowFrom)().
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CreateWindow]]
-:[[SDL_DestroyWindow]]
+* [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

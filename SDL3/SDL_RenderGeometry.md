@@ -1,50 +1,40 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_RenderGeometry =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_RenderGeometry
 
-Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([[SDL_SetTextureColorMod]] and [[SDL_SetTextureAlphaMod]] are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_RenderGeometry(SDL_Renderer *renderer,
                        SDL_Texture *texture,
                        const SDL_Vertex *vertices, int num_vertices,
                        const int *indices, int num_indices);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|The rendering context.
-|-
-|'''texture'''
-|(optional) The SDL texture to use.
-|-
-|'''vertices'''
-|Vertices.
-|-
-|'''num_vertices'''
-|Number of vertices.
-|-
-|'''indices'''
-|(optional) An array of integer indices into the 'vertices' array, if NULL all vertices will be rendered in sequential order.
-|-
-|'''num_indices'''
-|Number of indices.
-|}
+## Function Parameters
 
-== Return Value ==
+|                      |                                                                                                                              |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **renderer**         | The rendering context.                                                                                                       |
+| **texture**          | (optional) The SDL texture to use.                                                                                           |
+| **vertices**         | Vertices.                                                                                                                    |
+| **num_vertices**     | Number of vertices.                                                                                                          |
+| **indices**          | (optional) An array of integer indices into the 'vertices' array, if NULL all vertices will be rendered in sequential order. |
+| **num_indices**      | Number of indices.                                                                                                           |
 
-Return 0 on success, or -1 if the operation is not supported
+## Return Value
 
-== Version ==
+Returns 0 on success, or -1 if the operation is not supported
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c'>
+```c
 #include <SDL.h>
 
 int main(int argc, char *argv[]) 
@@ -101,14 +91,14 @@ int main(int argc, char *argv[])
   SDL_Quit();
   return 0;
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_RenderGeometryRaw]]
-:[[SDL_Vertex]]
+* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+* [SDL_Vertex](SDL_Vertex)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 

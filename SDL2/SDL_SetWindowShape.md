@@ -1,43 +1,40 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetWindowShape =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetWindowShape
 
 Set the shape and parameters of a shaped window.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode *shape_mode);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|The shaped window whose parameters should be set.
-|-
-|'''shape'''
-|A surface encoding the desired shape for the window.
-|-
-|'''shape_mode'''
-|The parameters to set for the shaped window.
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                      |
+| ------------------ | ---------------------------------------------------- |
+| **window**         | The shaped window whose parameters should be set.    |
+| **shape**          | A surface encoding the desired shape for the window. |
+| **shape_mode**     | The parameters to set for the shaped window.         |
 
-Return 0 on success, [[SDL_INVALID_SHAPE_ARGUMENT]] on an invalid shape
-argument, or [[SDL_NONSHAPEABLE_WINDOW]] if the [[SDL_Window]] given does
-not reference a valid shaped window.
+## Return Value
 
-== Version ==
+Return 0 on success,
+[SDL_INVALID_SHAPE_ARGUMENT](SDL_INVALID_SHAPE_ARGUMENT) on an invalid
+shape argument, or [SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW) if
+the [SDL_Window](SDL_Window) given does not reference a valid shaped
+window.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_WindowShapeMode]]
-:[[SDL_GetShapedWindowMode]]
+* [SDL_WindowShapeMode](SDL_WindowShapeMode)
+* [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

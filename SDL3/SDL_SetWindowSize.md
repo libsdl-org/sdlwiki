@@ -1,45 +1,47 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetWindowSize =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetWindowSize
 
 Set the size of a window's client area, in screen coordinates.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
-void SDL_SetWindowSize(SDL_Window *window, int w, int h);
-</syntaxhighlight>
+```c
+int SDL_SetWindowSize(SDL_Window *window, int w, int h);
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|-
-|'''w'''
-|the width of the window, must be > 0
-|-
-|'''h'''
-|the height of the window, must be > 0
-|}
+## Function Parameters
 
-== Remarks ==
+|                |                                       |
+| -------------- | ------------------------------------- |
+| **window**     | the window to change                  |
+| **w**          | the width of the window, must be > 0  |
+| **h**          | the height of the window, must be > 0 |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 The window size in screen coordinates may differ from the size in pixels if
 the window is on a high density display (one with an OS scaling factor).
 
-Fullscreen windows automatically match the size of the display mode, and
-you should use [[SDL_SetWindowDisplayMode]]() to change their size.
+This only affects the size of the window when not in fullscreen mode. To
+change the fullscreen mode of a window, use
+[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)()
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetWindowSize]]
-:[[SDL_SetWindowDisplayMode]]
+* [SDL_GetWindowSize](SDL_GetWindowSize)
+* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

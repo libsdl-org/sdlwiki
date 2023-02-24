@@ -1,55 +1,46 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_MasksToPixelFormatEnum =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_MasksToPixelFormatEnum
 
 Convert a bpp value and RGBA masks to an enumerated pixel format.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_MasksToPixelFormatEnum(int bpp,
                                   Uint32 Rmask,
                                   Uint32 Gmask,
                                   Uint32 Bmask,
                                   Uint32 Amask);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''bpp'''
-|a bits per pixel value; usually 15, 16, or 32
-|-
-|'''Rmask'''
-|the red mask for the format
-|-
-|'''Gmask'''
-|the green mask for the format
-|-
-|'''Bmask'''
-|the blue mask for the format
-|-
-|'''Amask'''
-|the alpha mask for the format
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                               |
+| ------------- | --------------------------------------------- |
+| **bpp**       | a bits per pixel value; usually 15, 16, or 32 |
+| **Rmask**     | the red mask for the format                   |
+| **Gmask**     | the green mask for the format                 |
+| **Bmask**     | the blue mask for the format                  |
+| **Amask**     | the alpha mask for the format                 |
 
-Returns one of the [[SDL_PixelFormatEnum]] values
+## Return Value
 
-== Remarks ==
+Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
 
-This will return <code>[[SDL_PIXELFORMAT_UNKNOWN]]</code> if the conversion
-wasn't possible.
+## Remarks
 
-== Version ==
+This will return `[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN)` if
+the conversion wasn't possible.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_PixelFormatEnumToMasks]]
+* [SDL_PixelFormatEnumToMasks](SDL_PixelFormatEnumToMasks)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

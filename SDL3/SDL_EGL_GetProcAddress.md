@@ -1,41 +1,40 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_EGL_GetProcAddress =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_EGL_GetProcAddress
 
 Get an EGL library function by name.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_FunctionPointer SDL_EGL_GetProcAddress(const char *proc);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''proc'''
-|the name of an EGL function
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                             |
+| ------------ | --------------------------- |
+| **proc**     | the name of an EGL function |
+
+## Return Value
 
 Returns a pointer to the named EGL function. The returned pointer should be
 cast to the appropriate function signature.
 
-== Remarks ==
+## Remarks
 
 If an EGL library is loaded, this function allows applications to get entry
 points for EGL functions. This is useful to provide to an EGL API and
 extension loader.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GL_GetCurrentEGLDisplay]]
+* [SDL_GL_GetCurrentEGLDisplay](SDL_GL_GetCurrentEGLDisplay)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,30 +1,30 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetQueuedAudioSize =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetQueuedAudioSize
 
 Get the number of bytes of still-queued audio.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 Uint32 SDL_GetQueuedAudioSize(SDL_AudioDeviceID dev);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|the device ID of which we will query queued audio size
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                        |
+| ----------- | ------------------------------------------------------ |
+| **dev**     | the device ID of which we will query queued audio size |
+
+## Return Value
 
 Returns the number of bytes (not samples!) of queued audio.
 
-== Remarks ==
+## Remarks
 
 For playback devices: this is the number of bytes that have been queued for
-playback with [[SDL_QueueAudio]](), but have not yet been sent to the
-hardware.
+playback with [SDL_QueueAudio](SDL_QueueAudio)(), but have not yet been
+sent to the hardware.
 
 Once we've sent it to the hardware, this function can not decide the exact
 byte boundary of what has been played. It's possible that we just gave the
@@ -40,20 +40,20 @@ application-supplied callback; calling this function on such a device
 always returns 0. You have to use the audio callback or queue audio, but
 not both.
 
-You should not call [[SDL_LockAudio]]() on the device before querying; SDL
-handles locking internally for this function.
+You should not call [SDL_LockAudio](SDL_LockAudio)() on the device before
+querying; SDL handles locking internally for this function.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_ClearQueuedAudio]]
-:[[SDL_QueueAudio]]
-:[[SDL_DequeueAudio]]
+* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
+* [SDL_QueueAudio](SDL_QueueAudio)
+* [SDL_DequeueAudio](SDL_DequeueAudio)
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

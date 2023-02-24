@@ -1,43 +1,42 @@
-====== (This function is part of SDL_image, a separate library from SDL.) ======
-= IMG_ReadXPMFromArrayToRGB888 =
+###### (This function is part of SDL_image, a separate library from SDL.)
+# IMG_ReadXPMFromArrayToRGB888
 
 Load an XPM image from a memory array.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Surface * IMG_ReadXPMFromArrayToRGB888(char **xpm);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''xpm'''
-|a null-terminated array of strings that comprise XPM data.
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                            |
+| ----------- | ---------------------------------------------------------- |
+| **xpm**     | a null-terminated array of strings that comprise XPM data. |
+
+## Return Value
 
 Returns a new SDL surface, or NULL on error.
 
-== Remarks ==
+## Remarks
 
 The returned surface will always be a 32-bit RGB surface. If you want 8-bit
-indexed colors (and the XPM data allows it), use [[IMG_ReadXPMFromArray]]()
-instead.
+indexed colors (and the XPM data allows it), use
+[IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_FreeSurface().
+call to SDL_DestroySurface().
 
-== Version ==
+## Version
 
 This function is available since SDL_image 2.6.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[IMG_ReadXPMFromArray]]
+* [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

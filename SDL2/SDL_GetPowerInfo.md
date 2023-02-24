@@ -1,29 +1,28 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetPowerInfo =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetPowerInfo
 
 Get the current power supply details.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''seconds'''
-|seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
-|-
-|'''percent'''
-|percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                                                                                                                                                 |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **seconds**     | seconds of battery life left, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery                       |
+| **percent**     | percentage of battery life left, between 0 and 100, you can pass a NULL here if you don't care, will return -1 if we can't determine a value, or we're not running on a battery |
 
-Returns an [[SDL_PowerState]] enum representing the current battery state.
+## Return Value
 
-== Remarks ==
+Returns an [SDL_PowerState](SDL_PowerState) enum representing the current
+battery state.
+
+## Remarks
 
 You should never take a battery status as absolute truth. Batteries
 (especially failing batteries) are delicate hardware, and the values
@@ -38,11 +37,10 @@ until they seem to be stable for a few seconds.
 It's possible a platform can only report battery percentage or time left
 but not both.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

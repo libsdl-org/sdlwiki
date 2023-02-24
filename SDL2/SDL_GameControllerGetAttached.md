@@ -1,36 +1,35 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerGetAttached =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerGetAttached
 
 Check if a controller has been opened and is currently connected.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_bool SDL_GameControllerGetAttached(SDL_GameController *gamecontroller);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamecontroller'''
-|a game controller identifier previously returned by [[SDL_GameControllerOpen]]()
-|}
+## Function Parameters
 
-== Return Value ==
+|                        |                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
 
-Returns [[SDL_TRUE]] if the controller has been opened and is currently
-connected, or [[SDL_FALSE]] if not.
+## Return Value
 
-== Version ==
+Returns [SDL_TRUE](SDL_TRUE) if the controller has been opened and is
+currently connected, or [SDL_FALSE](SDL_FALSE) if not.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GameControllerClose]]
-:[[SDL_GameControllerOpen]]
+* [SDL_GameControllerClose](SDL_GameControllerClose)
+* [SDL_GameControllerOpen](SDL_GameControllerOpen)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

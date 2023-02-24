@@ -1,36 +1,35 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GameControllerGetType =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GameControllerGetType
 
 Get the type of this currently opened controller 
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_GameControllerType SDL_GameControllerGetType(SDL_GameController *gamecontroller);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''gamecontroller'''
-|the game controller object to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|                        |                                      |
+| ---------------------- | ------------------------------------ |
+| **gamecontroller**     | the game controller object to query. |
+
+## Return Value
 
 Returns the controller type.
 
-== Remarks ==
+## Remarks
 
-This is the same name as returned by [[SDL_GameControllerTypeForIndex]](),
-but it takes a controller identifier instead of the (unstable) device
-index.
+This is the same name as returned by
+[SDL_GameControllerTypeForIndex](SDL_GameControllerTypeForIndex)(), but it
+takes a controller identifier instead of the (unstable) device index.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.12.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

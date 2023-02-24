@@ -1,26 +1,26 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_HaltChannel =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_HaltChannel
 
 Halt playing of a particular channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_HaltChannel(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|channel to halt, or -1 to halt all channels.
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                              |
+| --------------- | -------------------------------------------- |
+| **channel**     | channel to halt, or -1 to halt all channels. |
+
+## Return Value
 
 Returns 0 on success, or -1 on error.
 
-== Remarks ==
+## Remarks
 
 This will stop further playback on that channel until a new chunk is
 started there.
@@ -30,15 +30,14 @@ music.
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[[Mix_ChannelFinished]]() before this function returns.
+[Mix_ChannelFinished](Mix_ChannelFinished)() before this function returns.
 
 You may not specify MAX_CHANNEL_POST for a channel.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

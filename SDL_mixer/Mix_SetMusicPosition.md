@@ -1,37 +1,36 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_SetMusicPosition =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_SetMusicPosition
 
 Set the current position in the music stream, in seconds.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_SetMusicPosition(double position);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''position'''
-|the new position, in seconds (as a double).
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                             |
+| ---------------- | ------------------------------------------- |
+| **position**     | the new position, in seconds (as a double). |
+
+## Return Value
 
 Returns 0 if successful, or -1 if it failed or not implemented.
 
-== Remarks ==
+## Remarks
 
 To convert from milliseconds, divide by 1000.0.
 
 This function is only implemented for MOD music formats (set pattern order
 number) and for WAV, OGG, FLAC, MP3, and MODPLUG music at the moment.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,33 +1,33 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_UnlockAudioDevice =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_UnlockAudioDevice
 
 Use this function to unlock the audio callback function for a specified device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|the ID of the device to be unlocked
-|}
+## Function Parameters
 
-== Remarks ==
+|             |                                     |
+| ----------- | ----------------------------------- |
+| **dev**     | the ID of the device to be unlocked |
 
-This function should be paired with a previous [[SDL_LockAudioDevice]]()
-call.
+## Remarks
 
-== Version ==
+This function should be paired with a previous
+[SDL_LockAudioDevice](SDL_LockAudioDevice)() call.
+
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 void MyAudioCallback(void *userdata, Uint8* stream, int len)
 {
     printf("The audio callback is running!\n");
@@ -44,13 +44,13 @@ SDL_Delay(2000);  // callback doesn't run for 2 seconds.
 printf("Ok, unlocking!\n");
 SDL_UnlockAudioDevice(devid);
 SDL_Delay(2000);  // callback runs for 2 seconds.
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_LockAudioDevice]]
+* [SDL_LockAudioDevice](SDL_LockAudioDevice)
 
 ----
-[[CategoryAPI]], [[CategoryAudio]]
+[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
 
 

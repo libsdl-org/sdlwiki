@@ -1,28 +1,29 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_CreateCond =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_CreateCond
 
 Create a condition variable.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_cond* SDL_CreateCond(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns a new condition variable or NULL on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
 Typical use of condition variables:
 
-<syntaxhighlight lang='c++'>
+```c++
 SDL_bool condition = SDL_FALSE;
 SDL_mutex *lock;
 SDL_cond *cond;
@@ -49,17 +50,17 @@ Thread B:
 .
 SDL_DestroyCond(cond);
 SDL_DestroyMutex(lock);
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_CondBroadcast]]
-:[[SDL_CondSignal]]
-:[[SDL_CondWait]]
-:[[SDL_CondWaitTimeout]]
-:[[SDL_DestroyCond]]
+* [SDL_CondBroadcast](SDL_CondBroadcast)
+* [SDL_CondSignal](SDL_CondSignal)
+* [SDL_CondWait](SDL_CondWait)
+* [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
+* [SDL_DestroyCond](SDL_DestroyCond)
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

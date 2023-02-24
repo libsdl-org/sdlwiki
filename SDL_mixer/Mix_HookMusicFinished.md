@@ -1,27 +1,28 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_HookMusicFinished =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_HookMusicFinished
 
 Set a callback that runs when a music object has stopped playing.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void Mix_HookMusicFinished(void (SDLCALL *music_finished)(void));
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''music_finished'''
-|the callback function to become the new notification mechanism.
-|}
+## Function Parameters
 
-== Remarks ==
+|                        |                                                                 |
+| ---------------------- | --------------------------------------------------------------- |
+| **music_finished**     | the callback function to become the new notification mechanism. |
+
+## Remarks
 
 This callback will fire when the currently-playing music has completed, or
-when it has been explicitly stopped from a call to [[Mix_HaltMusic]]. As
-such, this callback might fire from an arbitrary background thread at
-almost any time; try to limit what you do here.
+when it has been explicitly stopped from a call to
+[Mix_HaltMusic](Mix_HaltMusic). As such, this callback might fire from an
+arbitrary background thread at almost any time; try to limit what you do
+here.
 
 It is legal to start a new music object playing in this callback (or
 restart the one that just stopped). If the music finished normally, this
@@ -33,11 +34,10 @@ calling your callback.
 
 A NULL pointer will disable the callback.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

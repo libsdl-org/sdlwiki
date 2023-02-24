@@ -1,24 +1,25 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 
-== Draft ==
+## Draft
 
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-= SDL_AndroidGetActivity =
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_AndroidGetActivity
 
 Retrieve the Java instance of the Android activity class.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void * SDL_AndroidGetActivity(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
+
+## Return Value
 
 Returns the jobject representing the instance of the Activity class of the
 Android application, or NULL on error.
 
-== Remarks ==
+## Remarks
 
 The prototype of the function in SDL's code actually declares a void*
 return type, even if the implementation returns a jobject. The rationale
@@ -30,13 +31,13 @@ DeleteLocalRef() functions of the Java native interface:
 
 https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 #include "SDL.h"
 #include <jni.h>
 
@@ -70,14 +71,14 @@ void showHome(void)
     // Therefore references need to be manually deleted because otherwise the
     // references will first be cleaned if main() returns (application exit).
 }
-</syntaxhighlight>
+```
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AndroidGetJNIEnv]]
+* [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 
 ----
-[[CategoryAPI]], [[CategorySystem]], [[CategoryDraft]], [[CategoryAndroid]]
+[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

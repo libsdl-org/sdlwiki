@@ -1,43 +1,41 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_AtomicSetPtr =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_AtomicSetPtr
 
 Set a pointer to a value atomically.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_AtomicSetPtr(void **a, void* v);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''a'''
-|a pointer to a pointer
-|-
-|'''v'''
-|the desired pointer value
-|}
+## Function Parameters
 
-== Return Value ==
+|           |                           |
+| --------- | ------------------------- |
+| **a**     | a pointer to a pointer    |
+| **v**     | the desired pointer value |
+
+## Return Value
 
 Returns the previous value of the pointer.
 
-== Remarks ==
+## Remarks
 
-'''''Note: If you don't know what this function is for, you shouldn't use
-it!'''''
+***Note: If you don't know what this function is for, you shouldn't use
+it!***
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_AtomicCASPtr]]
-:[[SDL_AtomicGetPtr]]
+* [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
+* [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
 
 ----
-[[CategoryAPI]], [[CategoryAtomic]]
+[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
 
 

@@ -1,45 +1,45 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_GetChunkDecoder =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_GetChunkDecoder
 
 Get a chunk decoder's name.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char * Mix_GetChunkDecoder(int index);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''index'''
-|index of the chunk decoder.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                             |
+| ------------- | --------------------------- |
+| **index**     | index of the chunk decoder. |
+
+## Return Value
 
 Returns the chunk decoder's name.
 
-== Remarks ==
+## Remarks
 
 The requested decoder's index must be between zero and
-[[Mix_GetNumChunkDecoders]]()-1. It's safe to call this with an invalid
-index; this function will return NULL in that case.
+[Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)()-1. It's safe to call
+this with an invalid index; this function will return NULL in that case.
 
 This list can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [[Mix_OpenAudio]]() or [[Mix_OpenAudioDevice]]() before calling this
-function, as decoders are activated at device open time.
+call [Mix_OpenAudio](Mix_OpenAudio)() or
+[Mix_OpenAudioDevice](Mix_OpenAudioDevice)() before calling this function,
+as decoders are activated at device open time.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_GetNumChunkDecoders]]
+* [Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

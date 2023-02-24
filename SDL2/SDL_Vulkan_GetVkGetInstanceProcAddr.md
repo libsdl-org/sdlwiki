@@ -1,30 +1,30 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_Vulkan_GetVkGetInstanceProcAddr =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_Vulkan_GetVkGetInstanceProcAddr
 
-Get the address of the <code>vkGetInstanceProcAddr</code> function.
+Get the address of the `vkGetInstanceProcAddr` function.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void* SDL_Vulkan_GetVkGetInstanceProcAddr(void);
-</syntaxhighlight>
 
-== Return Value ==
+```
 
-Returns the function pointer for <code>vkGetInstanceProcAddr</code> or NULL
-on error.
+## Return Value
 
-== Remarks ==
+Returns the function pointer for `vkGetInstanceProcAddr` or NULL on error.
 
-This should be called after either calling [[SDL_Vulkan_LoadLibrary]]() or
-creating an [[SDL_Window]] with the <code>[[SDL_WINDOW_VULKAN]]</code>
+## Remarks
+
+This should be called after either calling
+[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() or creating an
+[SDL_Window](SDL_Window) with the `[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN)`
 flag.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.6.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,27 +1,27 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_Playing =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_Playing
 
 Check the playing status of a specific channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_Playing(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|channel
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |         |
+| --------------- | ------- |
+| **channel**     | channel |
 
-Returns non-zero if channel is playing, zero otherwise. If
-<code>channel</code> is -1, return the total number of channel playings.
+## Return Value
 
-== Remarks ==
+Returns non-zero if channel is playing, zero otherwise. If `channel` is -1,
+return the total number of channel playings.
+
+## Remarks
 
 If the channel is currently playing, this function returns 1. Otherwise it
 returns 0.
@@ -34,11 +34,10 @@ You may not specify MAX_CHANNEL_POST for a channel.
 Paused channels are treated as playing, even though they are not currently
 making forward progress in mixing.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

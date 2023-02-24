@@ -1,34 +1,34 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_GetAudioDeviceStatus =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_GetAudioDeviceStatus
 
 Use this function to get the current audio state of an audio device.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''dev'''
-|the ID of an audio device previously opened with [[SDL_OpenAudioDevice]]()
-|}
+## Function Parameters
 
-== Return Value ==
+|             |                                                                                               |
+| ----------- | --------------------------------------------------------------------------------------------- |
+| **dev**     | the ID of an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
 
-Returns the [[SDL_AudioStatus]] of the specified audio device.
+## Return Value
 
-== Version ==
+Returns the [SDL_AudioStatus](SDL_AudioStatus) of the specified audio
+device.
+
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_PauseAudioDevice]]
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

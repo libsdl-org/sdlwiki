@@ -1,26 +1,27 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_UnlockMutex =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_UnlockMutex
 
 Unlock the mutex.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_UnlockMutex(SDL_mutex * mutex) SDL_RELEASE(mutex);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''mutex'''
-|the mutex to unlock.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                      |
+| ------------- | -------------------- |
+| **mutex**     | the mutex to unlock. |
 
-Returns 0, or -1 on error.
+## Return Value
 
-== Remarks ==
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
 
 It is legal for the owning thread to lock an already-locked mutex. It must
 unlock it the same number of times before it is actually made available for
@@ -31,15 +32,15 @@ thread, and doing so results in undefined behavior.
 
 It is also an error to unlock a mutex that isn't locked at all.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<<Include(SDL_CreateMutex, , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+<<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
 ----
-[[CategoryAPI]], [[CategoryMutex]]
+[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 
 

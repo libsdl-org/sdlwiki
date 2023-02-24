@@ -1,49 +1,38 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_CreateShapedWindow =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_CreateShapedWindow
 
 Create a window that can be shaped with the specified position, dimensions, and flags.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 SDL_Window * SDL_CreateShapedWindow(const char *title,unsigned int x,unsigned int y,unsigned int w,unsigned int h,Uint32 flags);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''title'''
-|The title of the window, in UTF-8 encoding.
-|-
-|'''x'''
-|The x position of the window, ::[[SDL_WINDOWPOS_CENTERED]], or ::[[SDL_WINDOWPOS_UNDEFINED]].
-|-
-|'''y'''
-|The y position of the window, ::[[SDL_WINDOWPOS_CENTERED]], or ::[[SDL_WINDOWPOS_UNDEFINED]].
-|-
-|'''w'''
-|The width of the window.
-|-
-|'''h'''
-|The height of the window.
-|-
-|'''flags'''
-|The flags for the window, a mask of [[SDL_WINDOW_BORDERLESS]] with any of the following: ::[[SDL_WINDOW_OPENGL]], ::[[SDL_WINDOW_INPUT_GRABBED]], ::[[SDL_WINDOW_HIDDEN]], ::[[SDL_WINDOW_RESIZABLE]], ::[[SDL_WINDOW_MAXIMIZED]], ::[[SDL_WINDOW_MINIMIZED]], ::[[SDL_WINDOW_BORDERLESS]] is always set, and ::[[SDL_WINDOW_FULLSCREEN]] is always unset.
-|}
+## Function Parameters
 
-== Return Value ==
+|               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **title**     | The title of the window, in UTF-8 encoding.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **x**         | The x position of the window, ::[SDL_WINDOWPOS_CENTERED](SDL_WINDOWPOS_CENTERED), or ::[SDL_WINDOWPOS_UNDEFINED](SDL_WINDOWPOS_UNDEFINED).                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **y**         | The y position of the window, ::[SDL_WINDOWPOS_CENTERED](SDL_WINDOWPOS_CENTERED), or ::[SDL_WINDOWPOS_UNDEFINED](SDL_WINDOWPOS_UNDEFINED).                                                                                                                                                                                                                                                                                                                                                                                                      |
+| **w**         | The width of the window.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **h**         | The height of the window.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| **flags**     | The flags for the window, a mask of [SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS) with any of the following: ::[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL), ::[SDL_WINDOW_INPUT_GRABBED](SDL_WINDOW_INPUT_GRABBED), ::[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN), ::[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE), ::[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED), ::[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED), ::[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS) is always set, and ::[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN) is always unset. |
+
+## Return Value
 
 Return the window created, or NULL if window creation failed.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_DestroyWindow]]
+* [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

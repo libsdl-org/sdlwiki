@@ -1,44 +1,43 @@
-====== (This function is part of SDL_ttf, a separate library from SDL.) ======
-= TTF_GetFontStyle =
+###### (This function is part of SDL_ttf, a separate library from SDL.)
+# TTF_GetFontStyle
 
 Query a font's current style.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int TTF_GetFontStyle(const TTF_Font *font);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''font'''
-|the font to query.
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                    |
+| ------------ | ------------------ |
+| **font**     | the font to query. |
+
+## Return Value
 
 Returns the current font style, as a set of bit flags.
 
-== Remarks ==
+## Remarks
 
 The font styles are a set of bit flags, OR'd together:
 
-* <code>[[TTF_STYLE_NORMAL]]</code> (is zero)
-* <code>[[TTF_STYLE_BOLD]]</code>
-* <code>[[TTF_STYLE_ITALIC]]</code>
-* <code>[[TTF_STYLE_UNDERLINE]]</code>
-* <code>[[TTF_STYLE_STRIKETHROUGH]]</code>
+- `[TTF_STYLE_NORMAL](TTF_STYLE_NORMAL)` (is zero)
+- `[TTF_STYLE_BOLD](TTF_STYLE_BOLD)`
+- `[TTF_STYLE_ITALIC](TTF_STYLE_ITALIC)`
+- `[TTF_STYLE_UNDERLINE](TTF_STYLE_UNDERLINE)`
+- `[TTF_STYLE_STRIKETHROUGH](TTF_STYLE_STRIKETHROUGH)`
 
-== Version ==
+## Version
 
 This function is available since SDL_ttf 2.0.12.
 
-== Related Functions ==
+## Related Functions
 
-:[[TTF_SetFontStyle]]
+* [TTF_SetFontStyle](TTF_SetFontStyle)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

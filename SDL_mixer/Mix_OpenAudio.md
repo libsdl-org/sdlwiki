@@ -1,54 +1,48 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_OpenAudio =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_OpenAudio
 
 Open the default audio device for playback.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_OpenAudio(int frequency, Uint16 format, int channels, int chunksize);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''frequency'''
-|the frequency to playback audio at (in Hz).
-|-
-|'''format'''
-|audio format, one of SDL's AUDIO_* values.
-|-
-|'''channels'''
-|number of channels (1 is mono, 2 is stereo, etc).
-|-
-|'''chunksize'''
-|audio buffer size in sample FRAMES (total samples divided by channel count).
-|}
+## Function Parameters
 
-== Return Value ==
+|                   |                                                                              |
+| ----------------- | ---------------------------------------------------------------------------- |
+| **frequency**     | the frequency to playback audio at (in Hz).                                  |
+| **format**        | audio format, one of SDL's AUDIO_* values.                                   |
+| **channels**      | number of channels (1 is mono, 2 is stereo, etc).                            |
+| **chunksize**     | audio buffer size in sample FRAMES (total samples divided by channel count). |
+
+## Return Value
 
 Returns 0 if successful, -1 on error.
 
-== Remarks ==
+## Remarks
 
 An audio device is what generates sound, so the app must open one to make
 noise.
 
 This function will check if SDL's audio system is initialized, and if not,
-it will initialize it by calling <code>SDL_Init(SDL_INIT_AUDIO)</code> on
-your behalf. You are free to (and encouraged to!) initialize it yourself
-before calling this function, as this gives your program more control over
-the process.
+it will initialize it by calling `SDL_Init(SDL_INIT_AUDIO)` on your behalf.
+You are free to (and encouraged to!) initialize it yourself before calling
+this function, as this gives your program more control over the process.
 
 This function might cover all of an application's needs, but for those that
 need more flexibility, the more powerful version of this function is
-[[Mix_OpenAudioDevice]](). This function is equivalent to calling:
+[Mix_OpenAudioDevice](Mix_OpenAudioDevice)(). This function is equivalent
+to calling:
 
-<syntaxhighlight lang='c'>
+```c
 Mix_OpenAudioDevice(frequency, format, nchannels, chunksize, NULL,
                     SDL_AUDIO_ALLOW_FREQUENCY_CHANGE |
                     SDL_AUDIO_ALLOW_CHANNELS_CHANGE);
-</syntaxhighlight>
+```
 
 If you aren't particularly concerned with the specifics of the audio
 device, and your data isn't in a specific format, the values you use here
@@ -65,9 +59,9 @@ own data is often easier to control, so aim to open the device for what you
 need.
 
 The other reason to care about specific formats: if you plan to touch the
-mix buffer directly (with [[Mix_SetPostMix]], a registered effect, or
-[[Mix_HookMusic]]), you might have code that expects it to be in a specific
-format, and you should specify that here.
+mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
+effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
+expects it to be in a specific format, and you should specify that here.
 
 The audio device frequency is specified in Hz; in modern times, 48000 is
 often a reasonable default.
@@ -94,26 +88,27 @@ you can do seamlessly during playback.
 This function does not allow you to select a specific audio device on the
 system, it always chooses the best default it can on your behalf (which, in
 many cases, is exactly what you want anyhow). If you must choose a specific
-device, you can do so with [[Mix_OpenAudioDevice]]() instead.
+device, you can do so with [Mix_OpenAudioDevice](Mix_OpenAudioDevice)()
+instead.
 
 If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
-The app can use [[Mix_QuerySpec]]() to determine the final device settings.
+The app can use [Mix_QuerySpec](Mix_QuerySpec)() to determine the final
+device settings.
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [[Mix_CloseAudio]]().
+should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_OpenAudioDevice]]
-:[[Mix_CloseAudio]]
+* [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
+* [Mix_CloseDevice](Mix_CloseDevice)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

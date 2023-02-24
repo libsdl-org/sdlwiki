@@ -1,53 +1,48 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_TLSSet =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_TLSSet
 
 Set the current thread's value associated with a thread local storage ID.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_TLSSet(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*));
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''id'''
-|the thread local storage ID
-|-
-|'''value'''
-|the value to associate with the ID for the current thread
-|-
-|'''destructor'''
-|a function called when the thread exits, to free the value
-|}
+## Function Parameters
 
-== Return Value ==
+|                    |                                                            |
+| ------------------ | ---------------------------------------------------------- |
+| **id**             | the thread local storage ID                                |
+| **value**          | the value to associate with the ID for the current thread  |
+| **destructor**     | a function called when the thread exits, to free the value |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
-The function prototype for <code>destructor</code> is:
+The function prototype for `destructor` is:
 
-<syntaxhighlight lang='c'>
+```c
 void destructor(void *value)
-</syntaxhighlight>
+```
 
-where its parameter <code>value</code> is what was passed as
-<code>value</code> to [[SDL_TLSSet]]().
+where its parameter `value` is what was passed as `value` to
+[SDL_TLSSet](SDL_TLSSet)().
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_TLSCreate]]
-:[[SDL_TLSGet]]
+* [SDL_TLSCreate](SDL_TLSCreate)
+* [SDL_TLSGet](SDL_TLSGet)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,27 +1,25 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_SetAssertionHandler =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_SetAssertionHandler
 
 Set an application-defined assertion handler.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void SDL_SetAssertionHandler(
                     SDL_AssertionHandler handler,
                     void *userdata);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''handler'''
-|the [[SDL_AssertionHandler]] function to call when an assertion fails or NULL for the default handler
-|-
-|'''userdata'''
-|a pointer that is passed to <code>handler</code>
-|}
+## Function Parameters
 
-== Remarks ==
+|                  |                                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **handler**      | the [SDL_AssertionHandler](SDL_AssertionHandler) function to call when an assertion fails or NULL for the default handler |
+| **userdata**     | a pointer that is passed to `handler`                                                                                     |
+
+## Remarks
 
 This function allows an application to show its own assertion UI and/or
 force the response to an assertion failure. If the application doesn't
@@ -31,17 +29,17 @@ system-specific GUI dialog, and probably minimizing any fullscreen windows.
 This callback may fire from any thread, but it runs wrapped in a mutex, so
 it will only fire from one thread at a time.
 
-This callback is NOT reset to SDL's internal handler upon [[SDL_Quit]]()!
+This callback is NOT reset to SDL's internal handler upon
+[SDL_Quit](SDL_Quit)()!
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetAssertionHandler]]
+* [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

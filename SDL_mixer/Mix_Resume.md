@@ -1,22 +1,22 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_Resume =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_Resume
 
 Resume a particular channel.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 void Mix_Resume(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|the channel to resume, or -1 to resume all paused channels.
-|}
+## Function Parameters
 
-== Remarks ==
+|                 |                                                             |
+| --------------- | ----------------------------------------------------------- |
+| **channel**     | the channel to resume, or -1 to resume all paused channels. |
+
+## Remarks
 
 It is legal to resume an unpaused or invalid channel; it causes no effect
 and reports no error.
@@ -27,11 +27,10 @@ now, as well.
 Specifying a channel of -1 will resume _all_ paused channels. Any music is
 unaffected.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

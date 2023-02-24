@@ -1,53 +1,43 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_OpenAudioDevice =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_OpenAudioDevice
 
 Open a specific audio device for playback.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_OpenAudioDevice(int frequency, Uint16 format, int channels, int chunksize, const char* device, int allowed_changes);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''frequency'''
-|the frequency to playback audio at (in Hz).
-|-
-|'''format'''
-|audio format, one of SDL's AUDIO_* values.
-|-
-|'''channels'''
-|number of channels (1 is mono, 2 is stereo, etc).
-|-
-|'''chunksize'''
-|audio buffer size in sample FRAMES (total samples divided by channel count).
-|-
-|'''device'''
-|the device name to open, or NULL to choose a reasonable default.
-|-
-|'''allowed_changes'''
-|Allow change flags (see SDL_AUDIO_ALLOW_* flags)
-|}
+## Function Parameters
 
-== Return Value ==
+|                         |                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| **frequency**           | the frequency to playback audio at (in Hz).                                  |
+| **format**              | audio format, one of SDL's AUDIO_* values.                                   |
+| **channels**            | number of channels (1 is mono, 2 is stereo, etc).                            |
+| **chunksize**           | audio buffer size in sample FRAMES (total samples divided by channel count). |
+| **device**              | the device name to open, or NULL to choose a reasonable default.             |
+| **allowed_changes**     | Allow change flags (see SDL_AUDIO_ALLOW_* flags)                             |
+
+## Return Value
 
 Returns 0 if successful, -1 on error.
 
-== Remarks ==
+## Remarks
 
 (A slightly simpler version of this function is available in
-[[Mix_OpenAudio]](), which still might meet most applications' needs.)
+[Mix_OpenAudio](Mix_OpenAudio)(), which still might meet most applications'
+needs.)
 
 An audio device is what generates sound, so the app must open one to make
 noise.
 
 This function will check if SDL's audio system is initialized, and if not,
-it will initialize it by calling <code>SDL_Init(SDL_INIT_AUDIO)</code> on
-your behalf. You are free to (and encouraged to!) initialize it yourself
-before calling this function, as this gives your program more control over
-the process.
+it will initialize it by calling `SDL_Init(SDL_INIT_AUDIO)` on your behalf.
+You are free to (and encouraged to!) initialize it yourself before calling
+this function, as this gives your program more control over the process.
 
 If you aren't particularly concerned with the specifics of the audio
 device, and your data isn't in a specific format, the values you use here
@@ -64,9 +54,9 @@ own data is often easier to control, so aim to open the device for what you
 need.
 
 The other reason to care about specific formats: if you plan to touch the
-mix buffer directly (with [[Mix_SetPostMix]], a registered effect, or
-[[Mix_HookMusic]]), you might have code that expects it to be in a specific
-format, and you should specify that here.
+mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
+effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
+expects it to be in a specific format, and you should specify that here.
 
 The audio device frequency is specified in Hz; in modern times, 48000 is
 often a reasonable default.
@@ -91,49 +81,46 @@ setting, you must close the device and reopen it, which is not something
 you can do seamlessly during playback.
 
 This function allows you to select specific audio hardware on the system
-with the <code>device</code> parameter. If you specify NULL, SDL_mixer will
-choose the best default it can on your behalf (which, in many cases, is
-exactly what you want anyhow). SDL_mixer does not offer a mechanism to
-determine device names to open, but you can use SDL_GetNumAudioDevices() to
-get a count of available devices and then SDL_GetAudioDeviceName() in a
-loop to obtain a list. If you do this, be sure to call
-<code>SDL_Init(SDL_INIT_AUDIO)</code> first to initialize SDL's audio
-system!
+with the `device` parameter. If you specify NULL, SDL_mixer will choose the
+best default it can on your behalf (which, in many cases, is exactly what
+you want anyhow). SDL_mixer does not offer a mechanism to determine device
+names to open, but you can use SDL_GetNumAudioDevices() to get a count of
+available devices and then SDL_GetAudioDeviceName() in a loop to obtain a
+list. If you do this, be sure to call `SDL_Init(SDL_INIT_AUDIO)` first to
+initialize SDL's audio system!
 
-The <code>allowed_changes</code> parameter specifies what settings are
-flexible. These are the <code>SDL_AUDIO_ALLOW_*</code> flags from SDL.
-These tell SDL_mixer that the app doesn't mind if a specific setting
-changes. For example, the app might need stereo data in Sint16 format, but
-if the sample rate or chunk size changes, the app can handle that. In that
-case, the app would specify
-<code>SDL_AUDIO_ALLOW_FORMAT_CHANGE|SDL_AUDIO_ALLOW_SAMPLES_CHANGE</code>.
-In this case, if the system's hardware requires something other than the
-requested format, SDL_mixer can select what the hardware demands instead of
-the app. If the <code>SDL_AUDIO_ALLOW_</code> flag is not specified,
-SDL_mixer must convert data behind the scenes between what the app demands
-and what the hardware requires. If your app needs precisely what is
-requested, specify zero for <code>allowed_changes</code>.
+The `allowed_changes` parameter specifies what settings are flexible. These
+are the `SDL_AUDIO_ALLOW_*` flags from SDL. These tell SDL_mixer that the
+app doesn't mind if a specific setting changes. For example, the app might
+need stereo data in Sint16 format, but if the sample rate or chunk size
+changes, the app can handle that. In that case, the app would specify
+`SDL_AUDIO_ALLOW_FORMAT_CHANGE|SDL_AUDIO_ALLOW_SAMPLES_CHANGE`. In this
+case, if the system's hardware requires something other than the requested
+format, SDL_mixer can select what the hardware demands instead of the app.
+If the `SDL_AUDIO_ALLOW_` flag is not specified, SDL_mixer must convert
+data behind the scenes between what the app demands and what the hardware
+requires. If your app needs precisely what is requested, specify zero for
+`allowed_changes`.
 
-If changes were allowed, the app can use [[Mix_QuerySpec]]() to determine
-the final device settings.
+If changes were allowed, the app can use [Mix_QuerySpec](Mix_QuerySpec)()
+to determine the final device settings.
 
 If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [[Mix_CloseDevice]]().
+should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.2.
 
-== Related Functions ==
+## Related Functions
 
-:[[Mix_OpenAudio]]
-:[[Mix_CloseDevice]]
-:[[Mix_QuerySpec]]
+* [Mix_OpenAudio](Mix_OpenAudio)
+* [Mix_CloseDevice](Mix_CloseDevice)
+* [Mix_QuerySpec](Mix_QuerySpec)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

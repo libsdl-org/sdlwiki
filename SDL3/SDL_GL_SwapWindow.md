@@ -1,27 +1,27 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GL_SwapWindow =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GL_SwapWindow
 
 Update a window with OpenGL rendering.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_GL_SwapWindow(SDL_Window *window);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''window'''
-|the window to change
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                      |
+| -------------- | -------------------- |
+| **window**     | the window to change |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 This is used with double-buffered OpenGL contexts, which are the default.
 
@@ -30,13 +30,13 @@ window, otherwise nothing will happen. If you aren't using
 glBindFramebuffer(), this is the default and you won't have to do anything
 extra.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Code Examples ==
+## Code Examples
 
-<syntaxhighlight lang='c++'>
+```c++
 
 SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
       
@@ -56,9 +56,9 @@ glClear(GL_COLOR_BUFFER_BIT);
 SDL_GL_SwapWindow(window);
 
 
-</syntaxhighlight>
+```
 
 ----
-[[CategoryAPI]], [[CategoryVideo]]
+[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
 
 

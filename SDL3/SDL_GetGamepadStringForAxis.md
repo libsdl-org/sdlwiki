@@ -1,40 +1,39 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_GetGamepadStringForAxis =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_GetGamepadStringForAxis
 
-Convert from an [[SDL_GamepadAxis]] enum to a string.
+Convert from an [SDL_GamepadAxis](SDL_GamepadAxis) enum to a string.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 const char* SDL_GetGamepadStringForAxis(SDL_GamepadAxis axis);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''axis'''
-|an enum value for a given [[SDL_GamepadAxis]]
-|}
+## Function Parameters
 
-== Return Value ==
+|              |                                                              |
+| ------------ | ------------------------------------------------------------ |
+| **axis**     | an enum value for a given [SDL_GamepadAxis](SDL_GamepadAxis) |
+
+## Return Value
 
 Returns a string for the given axis, or NULL if an invalid axis is
-specified. The string returned is of the format used by [[SDL_Gamepad]]
-mapping strings.
+specified. The string returned is of the format used by
+[SDL_Gamepad](SDL_Gamepad) mapping strings.
 
-== Remarks ==
+## Remarks
 
-The caller should not [[SDL_free]]() the returned string.
+The caller should not [SDL_free](SDL_free)() the returned string.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetGamepadAxisFromString]]
+* [SDL_GetGamepadAxisFromString](SDL_GetGamepadAxisFromString)
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

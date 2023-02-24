@@ -1,36 +1,35 @@
-====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
-= SDL_HapticNumAxes =
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_HapticNumAxes
 
 Get the number of haptic axes the device has.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_HapticNumAxes(SDL_Haptic * haptic);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''haptic'''
-|the [[SDL_Haptic]] device to query
-|}
+## Function Parameters
 
-== Return Value ==
+|                |                                              |
+| -------------- | -------------------------------------------- |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+
+## Return Value
 
 Returns the number of axes on success or a negative error code on failure;
-call [[SDL_GetError]]() for more information.
+call [SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 The number of haptic axes might be useful if working with the
-[[SDL_HapticDirection]] effect.
+[SDL_HapticDirection](SDL_HapticDirection) effect.
 
-== Version ==
+## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

@@ -1,35 +1,34 @@
-====== (This function is part of SDL_mixer, a separate library from SDL.) ======
-= Mix_Paused =
+###### (This function is part of SDL_mixer, a separate library from SDL.)
+# Mix_Paused
 
 Query whether a particular channel is paused.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int Mix_Paused(int channel);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''channel'''
-|the channel to query, or -1 to query all channels.
-|}
+## Function Parameters
 
-== Return Value ==
+|                 |                                                    |
+| --------------- | -------------------------------------------------- |
+| **channel**     | the channel to query, or -1 to query all channels. |
 
-Return 1 if channel paused, 0 otherwise. If <code>channel</code> is -1,
-returns the number of paused channels.
+## Return Value
 
-== Remarks ==
+Return 1 if channel paused, 0 otherwise. If `channel` is -1, returns the
+number of paused channels.
+
+## Remarks
 
 If an invalid channel is specified, this function returns zero.
 
-== Version ==
+## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[[CategoryAPI]]
-
+[CategoryAPI](CategoryAPI)
 

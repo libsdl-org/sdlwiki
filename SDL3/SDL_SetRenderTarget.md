@@ -1,48 +1,47 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SetRenderTarget =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SetRenderTarget
 
 Set a texture as the current rendering target.
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 int SDL_SetRenderTarget(SDL_Renderer *renderer, SDL_Texture *texture);
-</syntaxhighlight>
 
-== Function Parameters ==
+```
 
-{|
-|'''renderer'''
-|the rendering context
-|-
-|'''texture'''
-|the targeted texture, which must be created with the <code>[[SDL_TEXTUREACCESS_TARGET]]</code> flag, or NULL to render to the window instead of a texture.
-|}
+## Function Parameters
 
-== Return Value ==
+|                  |                                                                                                                                                                         |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **renderer**     | the rendering context                                                                                                                                                   |
+| **texture**      | the targeted texture, which must be created with the `[SDL_TEXTUREACCESS_TARGET](SDL_TEXTUREACCESS_TARGET)` flag, or NULL to render to the window instead of a texture. |
+
+## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[[SDL_GetError]]() for more information.
+[SDL_GetError](SDL_GetError)() for more information.
 
-== Remarks ==
+## Remarks
 
 Before using this function, you should check the
-<code>[[SDL_RENDERER_TARGETTEXTURE]]</code> bit in the flags of
-[[SDL_RendererInfo]] to see if render targets are supported.
+`[SDL_RENDERER_TARGETTEXTURE](SDL_RENDERER_TARGETTEXTURE)` bit in the flags
+of [SDL_RendererInfo](SDL_RendererInfo) to see if render targets are
+supported.
 
 The default render target is the window for which the renderer was created.
 To stop rendering to a texture and render to the window again, call this
-function with a NULL <code>texture</code>.
+function with a NULL `texture`.
 
-== Version ==
+## Version
 
 This function is available since SDL 3.0.0.
 
-== Related Functions ==
+## Related Functions
 
-:[[SDL_GetRenderTarget]]
+* [SDL_GetRenderTarget](SDL_GetRenderTarget)
 
 ----
-[[CategoryAPI]], [[CategoryRender]]
+[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 
 
