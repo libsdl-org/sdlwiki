@@ -21,9 +21,9 @@ The SDL error messages are in English.
 <<FullSearchCached(category:CategoryError -CategoryEnum -title:CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_ClearError]]
-* [[SDL_GetError]]
-* [[SDL_SetError]]
+- [SDL_ClearError](SDL_ClearError)
+- [SDL_GetError](SDL_GetError)
+- [SDL_SetError](SDL_SetError)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

@@ -19,7 +19,7 @@ This category contains functions for handling information about the current plat
 <<FullSearchCached(category:CategoryPlatform -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GetPlatform]]
+- [SDL_GetPlatform](SDL_GetPlatform)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

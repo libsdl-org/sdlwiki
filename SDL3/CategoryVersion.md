@@ -30,15 +30,15 @@ SDL_revision.h must be included in your program explicitly if you want to use th
 <<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_COMPILEDVERSION]]
-* [[SDL_GetRevision]]
-* [[SDL_GetRevisionNumber]]
-* [[SDL_GetVersion]]
-* [[SDL_REVISION]]
-* [[SDL_VERSION]]
-* [[SDL_version]]
-* [[SDL_VERSION_ATLEAST]]
-* [[SDL_VERSIONNUM]]
+- [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
+- [SDL_GetRevision](SDL_GetRevision)
+- [SDL_GetRevisionNumber](SDL_GetRevisionNumber)
+- [SDL_GetVersion](SDL_GetVersion)
+- [SDL_REVISION](SDL_REVISION)
+- [SDL_VERSION](SDL_VERSION)
+- [SDL_version](SDL_version)
+- [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
+- [SDL_VERSIONNUM](SDL_VERSIONNUM)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

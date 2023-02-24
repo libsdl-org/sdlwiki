@@ -17,9 +17,9 @@ This category contains functions for handling shared objects.
 ## Functions
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_LoadFunction]]
-* [[SDL_LoadObject]]
-* [[SDL_UnloadObject]]
+- [SDL_LoadFunction](SDL_LoadFunction)
+- [SDL_LoadObject](SDL_LoadObject)
+- [SDL_UnloadObject](SDL_UnloadObject)
 <!-- END CATEGORY LIST -->
 
 ----

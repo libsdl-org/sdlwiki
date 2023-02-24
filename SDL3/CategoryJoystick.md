@@ -21,13 +21,13 @@ This category contains functions for handling inputs from joysticks.
 <!-- # You may refresh cache using "?action=refresh" in URL or "More Actions -> Delete Cache" in menu. -->
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_JoystickEventState]]
-* [[SDL_JoystickGetBall]]
-* [[SDL_JoystickGetDeviceGUID]]
-* [[SDL_JoystickNameForIndex]]
-* [[SDL_JoystickNumBalls]]
-* [[SDL_JoystickPowerLevel]]
-* [[SDL_NumJoysticks]]
+- [SDL_JoystickEventState](SDL_JoystickEventState)
+- [SDL_JoystickGetBall](SDL_JoystickGetBall)
+- [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
+- [SDL_JoystickNameForIndex](SDL_JoystickNameForIndex)
+- [SDL_JoystickNumBalls](SDL_JoystickNumBalls)
+- [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)
+- [SDL_NumJoysticks](SDL_NumJoysticks)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

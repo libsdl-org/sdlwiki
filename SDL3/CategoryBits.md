@@ -12,7 +12,7 @@ This category contains functions for bit-level operations ("bit-twiddling").
 <<FullSearchCached(category:CategoryBits -CategoryEnum -CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_MostSignificantBitIndex32]]
+- [SDL_MostSignificantBitIndex32](SDL_MostSignificantBitIndex32)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

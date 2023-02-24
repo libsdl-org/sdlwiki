@@ -23,8 +23,8 @@ This category contains functions for getting commonly used paths such as the app
 <<FullSearchCached(category:CategoryFilesystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GetBasePath]]
-* [[SDL_GetPrefPath]]
+- [SDL_GetBasePath](SDL_GetBasePath)
+- [SDL_GetPrefPath](SDL_GetPrefPath)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

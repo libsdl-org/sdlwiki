@@ -52,20 +52,20 @@ The atomic locks are efficient spinlocks using CPU instructions, but are vulnera
 <<FullSearchCached(category:CategoryAtomic -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_atomic_t]]
-* [[SDL_AtomicAdd]]
-* [[SDL_AtomicCAS]]
-* [[SDL_AtomicCASPtr]]
-* [[SDL_AtomicDecRef]]
-* [[SDL_AtomicGet]]
-* [[SDL_AtomicGetPtr]]
-* [[SDL_AtomicIncRef]]
-* [[SDL_AtomicLock]]
-* [[SDL_AtomicSet]]
-* [[SDL_AtomicSetPtr]]
-* [[SDL_AtomicTryLock]]
-* [[SDL_AtomicUnlock]]
-* [[SDL_CompilerBarrier]]
+- [SDL_atomic_t](SDL_atomic_t)
+- [SDL_AtomicAdd](SDL_AtomicAdd)
+- [SDL_AtomicCAS](SDL_AtomicCAS)
+- [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
+- [SDL_AtomicDecRef](SDL_AtomicDecRef)
+- [SDL_AtomicGet](SDL_AtomicGet)
+- [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
+- [SDL_AtomicIncRef](SDL_AtomicIncRef)
+- [SDL_AtomicLock](SDL_AtomicLock)
+- [SDL_AtomicSet](SDL_AtomicSet)
+- [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
+- [SDL_AtomicTryLock](SDL_AtomicTryLock)
+- [SDL_AtomicUnlock](SDL_AtomicUnlock)
+- [SDL_CompilerBarrier](SDL_CompilerBarrier)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

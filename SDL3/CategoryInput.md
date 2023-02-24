@@ -36,10 +36,10 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 <<FullSearchCached(category:CategoryInput -CategoryEnum -CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GetInputDeviceName]]
-* [[SDL_GetNumInputDevices]]
-* [[SDL_IsDeviceDisconnected]]
-* [[SDL_RedetectInputDevices]]
+- [SDL_GetInputDeviceName](SDL_GetInputDeviceName)
+- [SDL_GetNumInputDevices](SDL_GetNumInputDevices)
+- [SDL_IsDeviceDisconnected](SDL_IsDeviceDisconnected)
+- [SDL_RedetectInputDevices](SDL_RedetectInputDevices)
 <!-- END CATEGORY LIST -->
 ----
 [[CategoryCategory]], [[CategoryDraft]]

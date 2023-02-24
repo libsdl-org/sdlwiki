@@ -34,9 +34,9 @@ If you are running your game from Steam, the game controller mapping is automati
 <<FullSearchCached(category:CategoryGameController -CategoryEnum -title:CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_GameControllerEventState]]
-* [[SDL_GameControllerGetAttached]]
-* [[SDL_GameControllerNameForIndex]]
+- [SDL_GameControllerEventState](SDL_GameControllerEventState)
+- [SDL_GameControllerGetAttached](SDL_GameControllerGetAttached)
+- [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
 <!-- END CATEGORY LIST -->
 ----
 [[CategoryCategory]], [[CategoryDraft]]
