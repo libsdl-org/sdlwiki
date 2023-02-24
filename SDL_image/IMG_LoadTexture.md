@@ -53,7 +53,7 @@ This function is available since SDL_image 2.0.0.
 
 * [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
 * [IMG_LoadTexture_RW](IMG_LoadTexture_RW)
-* [[SDL_DestroyTexture](https://wiki.libsdl.org/SDL_DestroyTexture)]([SDL_DestroyTexture](https://wiki.libsdl.org/SDL_DestroyTexture))
+* [SDL_DestroyTexture](SDL_DestroyTexture)
 
 ----
 [CategoryAPI](CategoryAPI)
