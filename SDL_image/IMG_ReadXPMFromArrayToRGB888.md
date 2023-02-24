@@ -27,7 +27,7 @@ indexed colors (and the XPM data allows it), use
 [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_DestroySurface().
+call to SDL_FreeSurface().
 
 ## Version
 

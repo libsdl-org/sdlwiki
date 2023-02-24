@@ -18,6 +18,7 @@ SDL_Surface * TTF_RenderGlyph_Shaded(TTF_Font *font,
 | **font**     | the font to render with.           |
 | **ch**       | the character to render.           |
 | **fg**       | the foreground color for the text. |
+| **bg**       | the background color for the text. |
 
 ## Return Value
 

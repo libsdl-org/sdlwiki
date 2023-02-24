@@ -18,6 +18,7 @@ SDL_Surface * TTF_RenderText_Shaded(TTF_Font *font,
 | **font**     | the font to render with.            |
 | **text**     | text to render, in Latin1 encoding. |
 | **fg**       | the foreground color for the text.  |
+| **bg**       | the background color for the text.  |
 
 ## Return Value
 

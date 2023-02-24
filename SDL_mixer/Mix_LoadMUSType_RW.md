@@ -53,6 +53,7 @@ Currently, the following types are supported:
 - `MUS_MP3` (MP3 files)
 - `MUS_FLAC` (FLAC files)
 - `MUS_OPUS` (Opus files)
+- `MUS_WAVPACK` (WavPack files)
 
 If `freesrc` is non-zero, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_mixer reads everything it needs

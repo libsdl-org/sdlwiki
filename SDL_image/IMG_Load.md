@@ -37,8 +37,7 @@ format.
 
 If the image format supports a transparent pixel, SDL will set the colorkey
 for the surface. You can enable RLE acceleration on the surface afterwards
-by calling: SDL_SetSurfaceColorKey(image, SDL_RLEACCEL,
-image->format->colorkey);
+by calling: SDL_SetColorKey(image, SDL_RLEACCEL, image->format->colorkey);
 
 There is a separate function to read files from an SDL_RWops, if you need
 an i/o abstraction to provide data from anywhere instead of a simple
@@ -49,7 +48,7 @@ load images directly into an SDL_Texture for use by the GPU without using a
 software surface: call [IMG_LoadTexture](IMG_LoadTexture)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_DestroySurface().
+call to SDL_FreeSurface().
 
 ## Version
 
@@ -59,7 +58,7 @@ This function is available since SDL_image 2.0.0.
 
 * [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
 * [IMG_Load_RW](IMG_Load_RW)
-* [SDL_DestroySurface](SDL_DestroySurface)
+* [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
 [CategoryAPI](CategoryAPI)

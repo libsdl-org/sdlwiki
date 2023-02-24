@@ -98,7 +98,7 @@ The app can use [Mix_QuerySpec](Mix_QuerySpec)() to determine the final
 device settings.
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
+should dispose of the device with [Mix_CloseAudio](Mix_CloseAudio)().
 
 ## Version
 
@@ -107,7 +107,7 @@ This function is available since SDL_mixer 2.0.0.
 ## Related Functions
 
 * [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
-* [Mix_CloseDevice](Mix_CloseDevice)
+* [Mix_CloseAudio](Mix_CloseAudio)
 
 ----
 [CategoryAPI](CategoryAPI)

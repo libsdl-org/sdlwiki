@@ -27,7 +27,7 @@ otherwise it will be 32bpp. If you always want 32-bit data, use
 [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)() instead.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_DestroySurface().
+call to SDL_FreeSurface().
 
 ## Version
 

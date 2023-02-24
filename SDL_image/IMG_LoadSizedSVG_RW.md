@@ -31,7 +31,7 @@ Either width or height may be 0 and the image will be auto-sized to
 preserve aspect ratio.
 
 When done with the returned surface, the app should dispose of it with a
-call to SDL_DestroySurface().
+call to SDL_FreeSurface().
 
 ## Version
 
