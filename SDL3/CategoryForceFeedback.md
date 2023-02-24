@@ -1,10 +1,10 @@
 
-= Force Feedback Support =
+# Force Feedback Support
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_haptic.h SDL_haptic.h]
 
 
-== Introduction ==
+## Introduction
 
 The SDL haptic subsystem allows you to control haptic (force feedback) devices.
 
@@ -20,7 +20,7 @@ The basic usage is as follows:
  1. (optional) Free the effect with [[SDL_HapticDestroyEffect]]()
  1. Close the haptic device with [[SDL_HapticClose]]()
 
-== Code Examples ==
+## Code Examples
 Simple rumble example:
 <syntaxhighlight lang='c++'>
 SDL_Haptic *haptic;
@@ -94,10 +94,10 @@ You can find more information in this blog by Edgar Simo Serra: [http://bobbens.
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum Category##### -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryForceFeedback -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryForceFeedback -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

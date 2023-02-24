@@ -1,10 +1,10 @@
 
-= Thread Synchronization Primitives =
+# Thread Synchronization Primitives
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mutex.h SDL_mutex.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_thread.h SDL_thread.h]
 
 
-== Introduction ==
+## Introduction
 
 Functions in this group provide thread synchronization primitives for multi-threaded programing.
 
@@ -23,7 +23,7 @@ The SDL mutex is implemented as a recursive mutex so you can nest lock and unloc
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryMutex -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryMutex -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

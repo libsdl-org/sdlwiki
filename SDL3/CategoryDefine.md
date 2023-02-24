@@ -1,13 +1,13 @@
 
 
-= SDL 2.0 API Hint Defines =
+# SDL 2.0 API Hint Defines
 
 
-== Introduction ==
+## Introduction
 
 This category contains all the (public) hint defines for SDL.
 
-== Hints ==
+## Hints
 
 <<FullSearchCached(category:CategoryDefine)>>
 

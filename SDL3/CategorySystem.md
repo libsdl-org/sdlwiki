@@ -1,19 +1,19 @@
 
-= Platform-specific Functionality =
+# Platform-specific Functionality
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for advanced, platform-specific functionality.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>>
 
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategorySystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

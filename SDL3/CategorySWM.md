@@ -1,14 +1,14 @@
-= Platform-specific Window Management =
+# Platform-specific Window Management
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_syswm.h SDL_syswm.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for handling advanced, platform-specific window management tasks.
 
 Your application has access to a special type of event, [[SDL_SysWMEvent|SDL_SYSWMEVENT]], which uses the [[SDL_SysWMmsg]] structure and contains window-manager specific information.  This arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
 
-== Enumerations ==
+## Enumerations
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_GetWindowWMInfo]]
@@ -17,10 +17,10 @@ Your application has access to a special type of event, [[SDL_SysWMEvent|SDL_SYS
 * [[SDL_SysWMmsg]]
 <!-- END CATEGORY LIST -->
 
-== Structures ==
+## Structures
 
 
-== Functions ==
+## Functions
 
 
 ----

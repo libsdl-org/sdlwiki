@@ -1,20 +1,20 @@
 
-= Audio Device Management and Audio Playback =
+# Audio Device Management and Audio Playback
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_audio.h SDL_audio.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling audio devices and audio input/output.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryAudio -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryAudio -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryAudio -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

@@ -1,5 +1,5 @@
 
-== Draft ==
+## Draft
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,14 +8,14 @@
 '''''The SDL_input.h header is incomplete and has been temporarily removed from the wiki.  Please disregard this and related pages until this notice has been removed.'''''
 ```
 
-= Input Device Support =
+# Input Device Support
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h]
 
 Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for lowlevel SDL input device handling.  
 
@@ -31,7 +31,7 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryInput)>> -->
 
 
-== Functions ==
+## Functions
 
 <<FullSearchCached(category:CategoryInput -CategoryEnum -CategoryStruct)>>
 

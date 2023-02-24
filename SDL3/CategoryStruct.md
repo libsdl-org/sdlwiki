@@ -1,11 +1,11 @@
-= SDL 2.0 API Structures =
+# SDL 2.0 API Structures
 
 
-== Introduction ==
+## Introduction
 
 This category contains all the (public) structures for SDL.
 
-== Structures ==
+## Structures
 
 <<FullSearchCached(category:CategoryStruct -title:SDLStructTemplate -title:SGStructures)>>
 

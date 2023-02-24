@@ -1,14 +1,14 @@
 
-= Bit-level Operations =
+# Bit-level Operations
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_bits.h SDL_bits.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for bit-level operations ("bit-twiddling").
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryBits -CategoryEnum -CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->

@@ -1,10 +1,10 @@
 
-= Atomic Operations =
+# Atomic Operations
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_atomic.h SDL_atomic.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling atomic operations.
 
@@ -45,10 +45,10 @@ The atomic locks are efficient spinlocks using CPU instructions, but are vulnera
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum CategoryAtomic -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryAtomic CategoryStruct -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryAtomic -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

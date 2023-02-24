@@ -1,25 +1,25 @@
 <!-- # page was renamed from CategoryAdditionalOther -->
 
-== Draft ==
+## Draft
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
-= Standard Library Functionality =
+# Standard Library Functionality
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_stdinc.h SDL_stdinc.h]
 
 
-== Introduction ==
+## Introduction
 This category contains additional types, functions, enums and defines for SDL. They provide standard library functionality including math functions, memory management, C string handling and a PI number.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryStandard -title:SGEnumerations)>>
 
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryStandard -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryStandard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

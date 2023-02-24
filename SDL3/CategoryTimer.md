@@ -1,10 +1,10 @@
 
-= Timer Support =
+# Timer Support
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_timer.h SDL_timer.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling the SDL time management routines.
 
@@ -15,7 +15,7 @@ This category contains functions for handling the SDL time management routines.
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryTimer -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryTimer -CategoryEnum -CategoryStruc -title:SGFunctionst)>>
 
 <!-- BEGIN CATEGORY LIST -->

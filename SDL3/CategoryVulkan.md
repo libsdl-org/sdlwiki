@@ -1,4 +1,4 @@
-= Vulkan Support =
+# Vulkan Support
 
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_vulkan.h SDL_vulkan.h]
@@ -6,7 +6,7 @@
 
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for creating a Vulkan instance with the required Vulkan extensions for surface creation.
 
@@ -18,7 +18,7 @@ The general flow of a Vulkan backed SDL application will be the following:
 # Create a surface for the window to draw on using [[SDL_Vulkan_CreateSurface]]
 # When setting up pipelines and framebuffers for your newly created surface, use [[SDL_Vulkan_GetDrawableSize]] to query the surface extent
 
-== Functions ==
+## Functions
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_Vulkan_CreateSurface]]

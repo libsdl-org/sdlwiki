@@ -1,20 +1,20 @@
 
-= File I/O Abstraction =
+# File I/O Abstraction
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_rwops.h SDL_rwops.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for handling the general interface for SDL to read and write data streams.  It can easily be extended to files, memory, etc.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum CategoryIO -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryIO -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryIO -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

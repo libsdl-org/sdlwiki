@@ -1,20 +1,20 @@
 
-= Display and Window Management =
+# Display and Window Management
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_video.h SDL_video.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling display and window actions.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryVideo -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryVideo -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryVideo -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

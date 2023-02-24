@@ -1,9 +1,9 @@
-= Log Handling =
+# Log Handling
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_log.h SDL_log.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling simple log messages with categories and priorities.
 
@@ -30,14 +30,14 @@ Here's where the messages go on different platforms:
 Messages longer than the maximum size (4096 bytes) will be truncated.
 
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryLog -title:SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryLog -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryLog -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

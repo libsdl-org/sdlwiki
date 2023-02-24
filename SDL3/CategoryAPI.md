@@ -1,22 +1,22 @@
-= SDL 2.0 API by Name =
+# SDL 2.0 API by Name
 
 Under construction due to migration.<br />
 For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<br />
 [[/wiki/search|Search]] is also an option.
 
-== Hints ==
+## Hints
 
 <<FullSearchCached(category:CategoryDefine -SGHints)>>
 
-== Enumerations ==
+## Enumerations
 
 <<FullSearchCached(category:CategoryEnum -SDLEnumTemplate -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 
 <<FullSearchCached(category:CategoryStruct -SDLStructTemplate -title:SGStructures)>>
 
-== Functions ==
+## Functions
 
 <<FullSearchCached(category:CategoryAPI -SDLFunctionTemplate -title:SGFunctions)>>
 

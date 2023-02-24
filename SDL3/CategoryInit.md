@@ -1,8 +1,8 @@
-= Initialization and Shutdown =
+# Initialization and Shutdown
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL.h SDL.h]
 
 
-== Introduction ==
+## Introduction
 The functions in this category are used to set up SDL for use and generally have global effects in your program.
 
 === Introduction to Initialization ===
@@ -27,7 +27,7 @@ It should be noted that on some operating systems, [[SDL_Init]]() will fail if S
 <!-- #<<FullSearchCached(category:CategoryEnum CategoryInit -title:SGEnumerations)>> -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryInit -title:SGStructures)>> -->
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryInit -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

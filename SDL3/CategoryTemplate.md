@@ -1,6 +1,6 @@
 <!-- acl All:read -->
 
-== Draft ==
+## Draft
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
@@ -8,7 +8,7 @@
 <!-- #Remove #acl All:read above before saving your new page or you may not be able to save it.  Do not change or remove any of the other markup above this comment.  Remove this comment. -->
 
 
-= Category Title =
+# Category Title
 
 <!-- #Replace "Category Title" with an appropriate title for this new category.  See other category pages for examples.  It must be simple and descriptive and cannot contain any other formatting markup.  Do not remove the = on either end and do not add any blank spaces at the end or it will not parse correctly.  Remove this comment. -->
 
@@ -22,7 +22,7 @@
 
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for &&&&&.
 

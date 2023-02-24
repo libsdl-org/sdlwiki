@@ -1,9 +1,9 @@
-= Event Handling =
+# Event Handling
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_events.h SDL_events.h]
 
 
-== Introduction ==
+## Introduction
 Event handling allows your application to receive input from the user. Event handling is initialized (along with video) with a call to:
 
 <syntaxhighlight lang='c'>
@@ -16,13 +16,13 @@ Internally, SDL stores all the events waiting to be handled in an event queue.  
 
 The event queue itself is composed of a series of [[SDL_Event]] structures, one for each waiting event. [[SDL_Event]] structures are read from the queue with the [[SDL_PollEvent]]() function and it is then up to the application to process the information stored with them.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEvents -category:CategoryStruct -category:CategoryAPI -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryEvents -category:CategoryEnum -category:CategoryAPI -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryEvents -category:CategoryEnum -category:CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

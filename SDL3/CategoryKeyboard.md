@@ -1,11 +1,11 @@
 
-= Keyboard Support =
+# Keyboard Support
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_keyboard.h SDL_keyboard.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_keycode.h SDL_keycode.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_scancode.h SDL_scancode.h]
 
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling keyboard inputs.  
 
@@ -18,13 +18,13 @@ A special exception is the number keys at the top of the keyboard which always m
 
 The main difference between these two values comes into play in situations where the operating system is mapping the physical keyboard keys to different virtual letters. For instance, when a standard QWERTY keyboard is mapped to a German QWERTZ layout, the "Y" key will generate events with a scancode of SDL_SCANCODE_Y, but a keycode of SDLK_z. Which one to use is left to the application: scancodes are suited in situations where controls are layout-dependent (eg. the "WASD" keys as left-handed arrow keys), whereas keycodes are better suited to situations where controls are character-dependent (eg. the "I" key for '''I'''nventory).
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryKeyboard -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryKeyboard -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryKeyboard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

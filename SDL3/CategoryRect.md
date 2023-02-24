@@ -1,10 +1,10 @@
 
-= Rectangle Functions =
+# Rectangle Functions
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_rect.h SDL_rect.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling simple rectangles including overlaps and merges.
 
@@ -12,10 +12,10 @@ This category contains functions for handling simple rectangles including overla
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum CategoryRect -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryRect -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryRect -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

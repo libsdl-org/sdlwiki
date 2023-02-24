@@ -1,10 +1,10 @@
 
-= Surface Creation and Simple Drawing =
+# Surface Creation and Simple Drawing
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_surface.h SDL_surface.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling surface creation and blitting as well as simple drawing tasks including <!-- points, lines, and --> rectangles.
 
@@ -12,10 +12,10 @@ This category contains functions for handling surface creation and blitting as w
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum CategorySurface -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategorySurface -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategorySurface -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

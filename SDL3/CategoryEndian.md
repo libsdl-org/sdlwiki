@@ -1,10 +1,10 @@
 
-= Byte Order and Byte Swapping =
+# Byte Order and Byte Swapping
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_endian.h SDL_endian.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for handling endian-specific values.
 
 Simple data types like integers and floats consist of several bytes. A 32bit integer (Sint32), for example, uses four bytes (as each byte has 8 bits). Endianness describes how the system orders the bytes of this value in memory.
@@ -31,7 +31,7 @@ SDL_BYTEORDER is a macro that corresponds to the byte order used by the processo
 * SDL_BYTEORDER is SDL_BIG_ENDIAN for PowerPC and similar systems that use the big endian byte order.
 
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryEndian -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

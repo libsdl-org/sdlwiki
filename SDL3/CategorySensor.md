@@ -1,21 +1,21 @@
 
-= Sensor Support =
+# Sensor Support
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_sensor.h SDL_sensor.h]
 
 
-== Introduction ==
+## Introduction
 
 Include file for SDL sensor event handling.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategorySensor -title:SGEnumerations)>>
 
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategorySensor -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategorySensor -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- # You may refresh cache using "?action=refresh" in URL or "More Actions -> Delete Cache" in menu. -->

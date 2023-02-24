@@ -1,12 +1,12 @@
 
-= Mouse Support =
+# Mouse Support
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h SDL_mouse.h]
 
 <!-- <span color="green">Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_input.h SDL_input.h]</span> -->
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling inputs from mice and other similar pointing devices, as well as some cursor management tasks.
 
@@ -26,7 +26,7 @@ Please note that this ONLY discusses "mice" with the notion of the desktop GUI. 
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryMouse -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryMouse -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

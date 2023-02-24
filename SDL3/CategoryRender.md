@@ -1,9 +1,9 @@
-= 2D Accelerated Rendering =
+# 2D Accelerated Rendering
 
 '''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/main/include/SDL_render.h SDL_render.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for 2D accelerated rendering.
 
 This API supports the following features:

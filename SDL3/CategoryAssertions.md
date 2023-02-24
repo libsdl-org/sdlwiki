@@ -1,9 +1,9 @@
-= Assertions =
+# Assertions
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_assert.h SDL_assert.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for managing assertions.
 
 A fairly detailed discussion of the features of SDL_assert vs the standard assert() macro, and some technical explanation about how this is implemented can be found [http://web.archive.org/web/20190322035412/https://plus.google.com/103391075724026391227/posts/KzV6sLdALX7 in this Google+ post from Ryan].
@@ -48,13 +48,13 @@ The following table describes each SDL_ASSERT_LEVEL setting and the correspondin
 </table>
 
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryAssertions -title:SGEnumerations)>>
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryAssertions -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryAssertions -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 

@@ -1,10 +1,10 @@
 
-= CPU Feature Detection =
+# CPU Feature Detection
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_cpuinfo.h SDL_cpuinfo.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for gathering information about the processor's features.
 
@@ -15,7 +15,7 @@ This category contains functions for gathering information about the processor's
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryCPU -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryCPU -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

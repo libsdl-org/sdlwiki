@@ -1,10 +1,10 @@
 
-= Querying SDL Version =
+# Querying SDL Version
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_version.h SDL_version.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_revision.h SDL_revision.h]
 
 
-== Introduction ==
+## Introduction
 
 These functions are used to collect or display information about the version of SDL that is currently being used by the program or that it was compiled against.
 
@@ -23,10 +23,10 @@ SDL_revision.h must be included in your program explicitly if you want to use th
 <!-- #== Enumerations == -->
 <!-- #<<FullSearchCached(category:CategoryEnum CategoryVersion -title:SGEnumerations)>> -->
 
-== Structures ==
+## Structures
 <<FullSearchCached(category:CategoryStruct CategoryVersion -title:SGStructures)>>
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

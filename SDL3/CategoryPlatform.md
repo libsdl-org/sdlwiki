@@ -1,10 +1,10 @@
 
-= Platform Detection =
+# Platform Detection
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_platform.h SDL_platform.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for handling information about the current platform. 
 
 
@@ -15,7 +15,7 @@ This category contains functions for handling information about the current plat
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryPlatform -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryPlatform -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

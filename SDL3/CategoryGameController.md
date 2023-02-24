@@ -1,10 +1,10 @@
 
-== Draft ==
+## Draft
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
-= GameController and Joystick Mapping =
+# GameController and Joystick Mapping
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_gamecontroller.h SDL_gamecontroller.h]
 
@@ -12,7 +12,7 @@
 
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling game controllers and for mapping joysticks to game controller semantics. This is built on top of the existing joystick API.
 
@@ -22,7 +22,7 @@ This makes providing consistent input bindings (for this kind of device) to your
 
 If you are running your game from Steam, the game controller mapping is automatically provided for your game.
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryGameController CategoryEnum -title:SGEnumerations)>>
 
 
@@ -30,7 +30,7 @@ If you are running your game from Steam, the game controller mapping is automati
 <!-- #<<FullSearchCached(category:CategoryGameController CategoryStruct -title:SGStructures)>> -->
 
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryGameController -CategoryEnum -title:CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->

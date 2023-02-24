@@ -1,4 +1,4 @@
-= CategoryHeader =
+# CategoryHeader
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_OpenURL]]

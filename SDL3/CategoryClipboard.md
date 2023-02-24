@@ -1,10 +1,10 @@
 
-= Clipboard Handling =
+# Clipboard Handling
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_clipboard.h SDL_clipboard.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions for clipboard handling.
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
@@ -14,7 +14,7 @@ This category contains functions for clipboard handling.
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryClipboard -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryClipboard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 

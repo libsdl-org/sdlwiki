@@ -1,10 +1,10 @@
 
-= Filesystem Paths =
+# Filesystem Paths
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_filesystem.h SDL_filesystem.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for getting commonly used paths such as the application directory and the user write directory.
 
@@ -19,7 +19,7 @@ This category contains functions for getting commonly used paths such as the app
 <!-- #<<FullSearchCached(category:CategoryFilesystem CategoryStruct -title:SGStructures)>> -->
 
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryFilesystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->

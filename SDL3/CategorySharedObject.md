@@ -1,9 +1,9 @@
-= Shared Object Loading and Function Lookup =
+# Shared Object Loading and Function Lookup
 
 '''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_loadso.h SDL_loadso.h]
 
 
-== Introduction ==
+## Introduction
 
 This category contains functions for handling shared objects.
 
@@ -14,7 +14,7 @@ This category contains functions for handling shared objects.
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategorySharedObject -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_LoadFunction]]

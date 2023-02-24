@@ -1,13 +1,13 @@
 
 
-= SDL 2.0 API Enumerations =
+# SDL 2.0 API Enumerations
 
 
-== Introduction ==
+## Introduction
 
 This category contains all the (public) enumerations for SDL.
 
-== Enumerations ==
+## Enumerations
 
 <<FullSearchCached(category:CategoryEnum -title:SDLEnumTemplate -title:SGEnumerations)>>
 

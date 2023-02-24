@@ -1,4 +1,4 @@
-= CategoryDraft =
+# CategoryDraft
 
 <!-- BEGIN CATEGORY LIST -->
 * [[CategoryGameController]]

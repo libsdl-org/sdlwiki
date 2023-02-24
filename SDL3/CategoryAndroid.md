@@ -1,4 +1,4 @@
-= CategoryAndroid =
+# CategoryAndroid
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_AndroidBackButton]]

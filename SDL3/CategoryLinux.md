@@ -1,4 +1,4 @@
-= CategoryLinux =
+# CategoryLinux
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_LinuxSetThreadPriority]]

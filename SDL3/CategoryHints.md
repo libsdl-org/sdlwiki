@@ -1,11 +1,11 @@
 <!-- master-page:CategoryTemplate -->
 
-= Configuration Variables =
+# Configuration Variables
 
 '''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_hints.h SDL_hints.h]
 
 
-== Introduction ==
+## Introduction
 This category contains functions to set and get configuration hints, as well as listing each of them alphabetically.
 
 The convention for naming hints is SDL_HINT_X, where "SDL_X" is the environment variable that can be used to override the default.
@@ -13,17 +13,17 @@ The convention for naming hints is SDL_HINT_X, where "SDL_X" is the environment 
 In general these hints are just that - they may or may not be supported or applicable on any given platform, but they provide a way for an application or user to give the library a hint as to how they would like the library to work.
 
 
-== Hints ==
+## Hints
 <<FullSearchCached(category:CategoryDefine CategoryHints)>>
 
-== Enumerations ==
+## Enumerations
 <<FullSearchCached(category:CategoryEnum CategoryHints -title:SGEnumerations)>>
 
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct Category Hints -title:SGStructures)>> -->
 
-== Functions ==
+## Functions
 <<FullSearchCached(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine -title:SGFunctions)>>
 
 
