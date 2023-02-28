@@ -39,4 +39,4 @@ If you are running your game from Steam, the game controller mapping is automati
 - [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
 <!-- END CATEGORY LIST -->
 ----
-[[CategoryCategory]], [[CategoryDraft]]
+[CategoryCategory](CategoryCategory), [CategoryDraft](CategoryDraft)

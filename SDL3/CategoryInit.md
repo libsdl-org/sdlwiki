@@ -39,4 +39,5 @@ It should be noted that on some operating systems, [[SDL_Init]]() will fail if S
 - [SDL_WasInit](SDL_WasInit)
 <!-- END CATEGORY LIST -->
 ----
-CategoryCategory
+[CategoryCategory](CategoryCategory)
+

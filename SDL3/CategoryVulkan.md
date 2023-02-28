@@ -30,4 +30,4 @@ The general flow of a Vulkan backed SDL application will be the following:
 <!-- END CATEGORY LIST -->
 
 ----
-[[CategoryCategory]]
+[CategoryCategory](CategoryCategory)

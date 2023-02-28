@@ -56,7 +56,7 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 
 ## Related Macros
 
-:[[SDL_VERSION]]
+:[SDL_VERSION](SDL_VERSION)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)

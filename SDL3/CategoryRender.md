@@ -82,4 +82,5 @@ This API is not designed to be used from multiple threads, see [https://github.c
 <!-- END CATEGORY LIST -->
 
 ----
-[[CategoryCategory]]
+[CategoryCategory](CategoryCategory)
+

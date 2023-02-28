@@ -42,4 +42,4 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 - [SDL_RedetectInputDevices](SDL_RedetectInputDevices)
 <!-- END CATEGORY LIST -->
 ----
-[[CategoryCategory]], [[CategoryDraft]]
+[CategoryCategory](CategoryCategory), [CategoryDraft](CategoryDraft)

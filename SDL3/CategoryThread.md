@@ -30,4 +30,4 @@ This category contains functions for system independent thread management routin
 - [SDL_WaitThread](SDL_WaitThread)
 <!-- END CATEGORY LIST -->
 ----
-[[CategoryCategory]]
+[CategoryCategory](CategoryCategory)
