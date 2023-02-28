@@ -1,7 +1,6 @@
 # All READMEs available here
 
 - [migration](migration)
-- [FrontPage](FrontPage)
 - [versions](versions)
 - [android](android)
 - [psp](psp)
