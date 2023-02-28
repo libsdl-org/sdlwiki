@@ -28,6 +28,11 @@ In general these hints are just that - they may or may not be supported or appli
 
 
 <!-- BEGIN CATEGORY LIST -->
+- [SDL_AddHintCallback](SDL_AddHintCallback)
+- [SDL_ClearHints](SDL_ClearHints)
+- [SDL_DelHintCallback](SDL_DelHintCallback)
+- [SDL_GetHint](SDL_GetHint)
+- [SDL_GetHintBoolean](SDL_GetHintBoolean)
 - [SDL_HINT_ACCELEROMETER_AS_JOYSTICK](SDL_HINT_ACCELEROMETER_AS_JOYSTICK)
 - [SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION](SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION)
 - [SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION](SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION)
@@ -79,6 +84,8 @@ In general these hints are just that - they may or may not be supported or appli
 - [SDL_HINT_XINPUT_ENABLED](SDL_HINT_XINPUT_ENABLED)
 - [SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING](SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING)
 - [SDL_HintPriority](SDL_HintPriority)
+- [SDL_SetHint](SDL_SetHint)
+- [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory

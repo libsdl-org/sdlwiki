@@ -23,6 +23,7 @@ This category contains additional types, functions, enums and defines for SDL. T
 <<FullSearchCached(category:CategoryStandard -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
+- [SDL_acos](SDL_acos)
 - [SDL_bool](SDL_bool)
 <!-- END CATEGORY LIST -->
 ----

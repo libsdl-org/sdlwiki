@@ -20,14 +20,30 @@ This category contains functions for handling surface creation and blitting as w
 
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_BlitScaled](SDL_BlitScaled)
+- [SDL_BlitSurface](SDL_BlitSurface)
+- [SDL_ConvertPixels](SDL_ConvertPixels)
+- [SDL_ConvertSurface](SDL_ConvertSurface)
+- [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
 - [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 - [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
 - [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
 - [SDL_CreateRGBSurfaceWithFormatFrom](SDL_CreateRGBSurfaceWithFormatFrom)
+- [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
+- [SDL_GetSurfaceBlendMode](SDL_GetSurfaceBlendMode)
+- [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
 - [SDL_LoadBMP](SDL_LoadBMP)
+- [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
+- [SDL_LockSurface](SDL_LockSurface)
 - [SDL_MUSTLOCK](SDL_MUSTLOCK)
 - [SDL_SaveBMP](SDL_SaveBMP)
+- [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
+- [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod)
+- [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)
+- [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
+- [SDL_SetSurfacePalette](SDL_SetSurfacePalette)
+- [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
 - [SDL_Surface](SDL_Surface)
+- [SDL_UnlockSurface](SDL_UnlockSurface)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory
