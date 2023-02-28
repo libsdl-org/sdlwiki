@@ -31,8 +31,8 @@ You must include [SDL_syswm](SDL_syswm).h for the declaration of
 [SDL_SysWMinfo](SDL_SysWMinfo).
 
 The caller must initialize the `info` structure's version by using
-[`SDL_VERSION](SDL_VERSION)(&info.version)`, and then this function will
-fill in the rest of the structure with information about the given window.
+`SDL_VERSION(&info.version)`, and then this function will fill in the rest
+of the structure with information about the given window.
 
 ## Version
 
