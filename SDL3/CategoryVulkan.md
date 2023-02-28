@@ -22,7 +22,6 @@ The general flow of a Vulkan backed SDL application will be the following:
 
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
-- [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 - [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr)
 - [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)

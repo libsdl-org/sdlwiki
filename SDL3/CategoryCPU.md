@@ -22,7 +22,6 @@ This category contains functions for gathering information about the processor's
 - [SDL_GetCPUCacheLineSize](SDL_GetCPUCacheLineSize)
 - [SDL_GetCPUCount](SDL_GetCPUCount)
 - [SDL_GetSystemRAM](SDL_GetSystemRAM)
-- [SDL_Has3DNow](SDL_Has3DNow)
 - [SDL_HasAltiVec](SDL_HasAltiVec)
 - [SDL_HasAVX](SDL_HasAVX)
 - [SDL_HasAVX2](SDL_HasAVX2)

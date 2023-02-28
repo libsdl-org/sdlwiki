@@ -21,11 +21,6 @@ Include file for SDL sensor event handling.
 <!-- # You may refresh cache using "?action=refresh" in URL or "More Actions -> Delete Cache" in menu. -->
 
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_NumSensors](SDL_NumSensors)
-- [SDL_SensorGetDeviceInstanceID](SDL_SensorGetDeviceInstanceID)
-- [SDL_SensorGetDeviceName](SDL_SensorGetDeviceName)
-- [SDL_SensorGetDeviceNonPortableType](SDL_SensorGetDeviceNonPortableType)
-- [SDL_SensorGetDeviceType](SDL_SensorGetDeviceType)
 - [SDL_SensorType](SDL_SensorType)
 <!-- END CATEGORY LIST -->
 ----

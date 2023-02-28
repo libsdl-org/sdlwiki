@@ -28,22 +28,19 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 - [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
-- [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
-- [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
-- [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_DelEventWatch](SDL_DelEventWatch)
-- [SDL_DisplayEventID](SDL_DisplayEventID)
 - [SDL_DropEvent](SDL_DropEvent)
 - [SDL_Event](SDL_Event)
 - [SDL_EventFilter](SDL_EventFilter)
-- [SDL_EventState](SDL_EventState)
 - [SDL_EventType](SDL_EventType)
 - [SDL_FilterEvents](SDL_FilterEvents)
 - [SDL_Finger](SDL_Finger)
 - [SDL_FlushEvent](SDL_FlushEvent)
 - [SDL_FlushEvents](SDL_FlushEvents)
+- [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
+- [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
+- [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
-- [SDL_GetEventState](SDL_GetEventState)
 - [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)
 - [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
 - [SDL_GetTouchDevice](SDL_GetTouchDevice)
@@ -75,7 +72,6 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 - [SDL_WaitEvent](SDL_WaitEvent)
 - [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 - [SDL_WindowEvent](SDL_WindowEvent)
-- [SDL_WindowEventID](SDL_WindowEventID)
 <!-- END CATEGORY LIST -->
 
 ----

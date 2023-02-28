@@ -20,8 +20,6 @@ This category contains functions for handling audio devices and audio input/outp
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AudioCVT](SDL_AudioCVT)
 - [SDL_AudioFormat](SDL_AudioFormat)
-- [SDL_AudioInit](SDL_AudioInit)
-- [SDL_AudioQuit](SDL_AudioQuit)
 - [SDL_AudioSpec](SDL_AudioSpec)
 - [SDL_AudioStatus](SDL_AudioStatus)
 - [SDL_AudioStream](SDL_AudioStream)

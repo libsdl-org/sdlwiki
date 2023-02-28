@@ -17,7 +17,6 @@ This category contains functions for handling pixel formats and palettes.
 <<FullSearchCached(category:CategoryPixels -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_CalculateGammaRamp](SDL_CalculateGammaRamp)
 - [SDL_Color](SDL_Color)
 - [SDL_GetPixelFormatName](SDL_GetPixelFormatName)
 - [SDL_GetRGB](SDL_GetRGB)

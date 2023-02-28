@@ -28,7 +28,6 @@ This category contains functions for handling the general interface for SDL to r
 - [SDL_RWclose](SDL_RWclose)
 - [SDL_RWFromConstMem](SDL_RWFromConstMem)
 - [SDL_RWFromFile](SDL_RWFromFile)
-- [SDL_RWFromFP](SDL_RWFromFP)
 - [SDL_RWFromMem](SDL_RWFromMem)
 - [SDL_RWops](SDL_RWops)
 - [SDL_RWread](SDL_RWread)

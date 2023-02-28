@@ -25,7 +25,6 @@ This category contains functions for handling the SDL time management routines.
 - [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 - [SDL_GetTicks](SDL_GetTicks)
 - [SDL_RemoveTimer](SDL_RemoveTimer)
-- [SDL_TICKS_PASSED](SDL_TICKS_PASSED)
 <!-- END CATEGORY LIST -->
 ----
 CategoryCategory
