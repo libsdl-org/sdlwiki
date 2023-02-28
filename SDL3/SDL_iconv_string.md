@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_iconv_string
 
-This function converts a string between encodings in one pass, returning a string that must be freed with [SDL_free](SDL_free)() or NULL on error.
+This function converts a buffer or string between encodings in one pass, returning a string that must be freed with [SDL_free](SDL_free)() or NULL on error.
 
 ## Syntax
 
