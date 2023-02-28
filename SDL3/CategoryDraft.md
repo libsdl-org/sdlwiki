@@ -1,6 +1,10 @@
 # CategoryDraft
 
 <!-- BEGIN CATEGORY LIST -->
+- [CategoryGameController](CategoryGameController)
+- [CategoryInput](CategoryInput)
+- [CategoryStandard](CategoryStandard)
+- [CategoryTemplate](CategoryTemplate)
 - [SDL_acos](SDL_acos)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
