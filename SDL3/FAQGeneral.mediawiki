@@ -26,7 +26,7 @@ We run a Discourse server [https://discourse.libsdl.org/ here], which can be put
 Yes, you can find people hanging out on the IRC server at irc.libera.chat on the channel #SDL
 
 == Is there a Discord server? ==
-Yes, [https://discordapp.com/invite/F6mPUgc go here]!
+Yes, [https://discord.com/invite/BwpFGBWsv8 go here]!
 
 == Is there an official logo? ==
 Yes, the official SDL logo was created by Arne Claus, and is available here: https://www.libsdl.org/media/SDL_logo_b.png Several community contributed logo ideas are also available at that URL. You are welcome to use any of them, as well as any artwork on the SDL website, to represent Simple DirectMedia Layer.
