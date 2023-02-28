@@ -34,14 +34,14 @@ Represents the library's version as three levels:
 
 The macro [SDL_VERSION](SDL_VERSION) can be used to populate this structure with information.
 
-== Related Macros ==
+## Related Macros
 
 - [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
 - [SDL_VERSION](SDL_VERSION)
 - [SDL_VERSIONNUM](SDL_VERSIONNUM)
 - [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
 
-== Related Functions ==
+## Related Functions
 
 - [SDL_GetVersion](SDL_GetVersion)
 
