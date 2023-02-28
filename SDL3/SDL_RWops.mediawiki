@@ -81,7 +81,7 @@ Third-party libraries and special, low-level code may need to know how to proper
 
 === Seek Function ===
 '''seek''' is a function pointer that positions the next read/write operation in the stream. This seeks in byte offsets. If the stream can not seek (either because it doesn't make sense for the stream type, or there was an error), this function returns -1, otherwise it returns the new position.
-Seeking zero bytes from RW_SEEK_CUR is a common way to determine the current stream position.
+Seeking zero bytes from SDL_RW_SEEK_CUR is a common way to determine the current stream position.
 
 The final argument works like the standard fseek() "whence":
 {|
@@ -89,15 +89,15 @@ The final argument works like the standard fseek() "whence":
 |Value
 |Explanation
 |-
-|RW_SEEK_SET
+|SDL_RW_SEEK_SET
 |0
 |Seek from the beginning of data
 |-
-|RW_SEEK_CUR
+|SDL_RW_SEEK_CUR
 |1
 |Seek relative to current read point
 |-
-|RW_SEEK_END
+|SDL_RW_SEEK_END
 |2
 |Seek relative to the end of data
 |}
@@ -109,7 +109,7 @@ The final argument works like the standard fseek() "whence":
 '''write''' is a function pointer that writes to the stream. It writes exactly num objects each of size bytes from the buffer pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
 
 === Close Function ===
-'''close''' is a function pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
+'''close''' is a function pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_DestroyRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
 
 === Stream Type ===
 
@@ -152,8 +152,8 @@ Applications and libraries rolling their own RWops implementations should use SD
 Applications can ignore this union completely. All of the fields in this union are platform-specific and off-limits, used internally by SDL, with one exception. You may use the '''unknown''' struct to store your own RWops implementation's data, possibly cleaning it up during the '''close''' method. If your data doesn't fit in two pointers, use these pointers to hold an allocated structure that contains the real data.
 
 == Related Functions ==
-:[[SDL_AllocRW]]
-:[[SDL_FreeRW]]
+:[[SDL_CreateRW]]
+:[[SDL_DestroyRW]]
 :[[SDL_RWclose]]
 :[[SDL_RWFromConstMem]]
 :[[SDL_RWFromFile]]

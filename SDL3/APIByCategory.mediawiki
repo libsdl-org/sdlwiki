@@ -78,7 +78,7 @@
 |[[CategoryJoystick|Joystick Support]]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL_joystick.h SDL_joystick.h]
 |-
-|[[CategoryGameController|Game Controller Support]]
+|[[CategoryGamepad|Gamepad Support]]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL_gamecontroller.h SDL_gamecontroller.h]
 |-
 |[[CategorySensor|Sensors]]

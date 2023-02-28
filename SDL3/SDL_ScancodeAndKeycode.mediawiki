@@ -689,7 +689,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 |SDL_SCANCODE_MINUS
 |SDLK_MINUS
 |-
-|"'''ModeSwitch'''" (I&#39;m not sure if this is really not covered by any of the above, but since there&#39;s a special KMOD_MODE for it I&#39;m adding it here)
+|"'''ModeSwitch'''" (I&#39;m not sure if this is really not covered by any of the above, but since there&#39;s a special SDL_KMOD_MODE for it I&#39;m adding it here)
 |SDL_SCANCODE_MODE
 |SDLK_MODE
 |-

@@ -10,13 +10,13 @@ A tutorial on using audio stream is at [[Tutorials-AudioStream]].
 (this page should be fleshed out more, too.)
 
 == Related Functions ==
-:[[SDL_NewAudioStream]]
-:[[SDL_AudioStreamPut]]
-:[[SDL_AudioStreamAvailable]]
-:[[SDL_AudioStreamGet]]
-:[[SDL_AudioStreamFlush]]
-:[[SDL_AudioStreamClear]]
-:[[SDL_FreeAudioStream]]
+:[[SDL_CreateAudioStream]]
+:[[SDL_PutAudioStreamData]]
+:[[SDL_GetAudioStreamAvailable]]
+:[[SDL_GetAudioStreamData]]
+:[[SDL_FlushAudioStream]]
+:[[SDL_ClearAudioStream]]
+:[[SDL_DestroyAudioStream]]
 
 ----
 [[CategoryStruct]], [[CategoryAudio]]

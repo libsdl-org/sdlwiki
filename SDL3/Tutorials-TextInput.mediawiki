@@ -72,15 +72,15 @@ int main(int argc, char *argv[])
         SDL_Event event;
         if (SDL_PollEvent(&event)) {
             switch (event.type) {
-                case SDL_QUIT:
+                case SDL_EVENT_QUIT:
                     /* Quit */
                     done = SDL_TRUE;
                     break;
-                case SDL_TEXTINPUT:
+                case SDL_EVENT_TEXT_INPUT:
                     /* Add new text onto the end of our text */
                     strcat(text, event.text.text);
                     break;
-                case SDL_TEXTEDITING:
+                case SDL_EVENT_TEXT_EDITING:
                     /*
                     Update the composition text.
                     Update the cursor position.
@@ -104,8 +104,8 @@ int main(int argc, char *argv[])
 * [[SDL_StartTextInput]]
 * [[SDL_StopTextInput]]
 * [[SDL_SetTextInputRect]]
-* [[SDL_IsTextInputActive]]
-* [[SDL_IsScreenKeyboardShown]]
+* [[SDL_TextInputActive]]
+* [[SDL_ScreenKeyboardShown]]
 * [[SDL_HasScreenKeyboardSupport]]
 
 === Events ===

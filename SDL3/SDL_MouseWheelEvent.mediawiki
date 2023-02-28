@@ -7,7 +7,7 @@ A structure that contains mouse wheel event information.
 {|
 |Uint32
 |'''type'''
-|SDL_MOUSEWHEEL
+|SDL_EVENT_MOUSE_WHEEL
 |-
 |Uint32
 |'''timestamp'''
@@ -48,7 +48,7 @@ A structure that contains mouse wheel event information.
 SDL_Event event;
 while( SDL_PollEvent( &event ) )
 {
-    if(event.type == SDL_MOUSEWHEEL)
+    if(event.type == SDL_EVENT_MOUSE_WHEEL)
     {
         if(event.wheel.y > 0) // scroll up
         {
@@ -68,7 +68,7 @@ while( SDL_PollEvent( &event ) )
              // ...
         }
     }
-    else if(event.type == SDL_MOUSEBUTTONDOWN)
+    else if(event.type == SDL_EVENT_MOUSE_BUTTON_DOWN)
     {
         // ... handle mouse clicks ...
     }
@@ -78,9 +78,9 @@ while( SDL_PollEvent( &event ) )
 </syntaxhighlight>
 
 == Remarks ==
-[[SDL_MouseWheelEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEWHEEL is reported.  You would access it through the event's <code>wheel</code> field.
+[[SDL_MouseWheelEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_MOUSE_WHEEL is reported.  You would access it through the event's <code>wheel</code> field.
 
-An SDL_MOUSEWHEEL event occurs whenever a user moves the mouse wheel.
+An SDL_EVENT_MOUSE_WHEEL event occurs whenever a user moves the mouse wheel.
 
 Movements to the left generate negative '''x''' values and to the right generate positive '''x''' values.  Movements down (scroll backward) generate negative '''y''' values and up (scroll forward) generate positive '''y''' values.
 

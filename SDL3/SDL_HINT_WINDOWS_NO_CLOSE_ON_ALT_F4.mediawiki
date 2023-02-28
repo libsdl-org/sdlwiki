@@ -7,7 +7,7 @@
 
 
 = SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4 =
-A hint that specifies that SDL should not to generate [[SDL_WindowEvent|SDL_WINDOWEVENT_CLOSE]] events for Alt+F4 on Microsoft Windows.
+A hint that specifies that SDL should not to generate [[SDL_WindowEvent|SDL_EVENT_WINDOW_CLOSE_REQUESTED]] events for Alt+F4 on Microsoft Windows.
 
 
 
@@ -15,7 +15,7 @@ A hint that specifies that SDL should not to generate [[SDL_WindowEvent|SDL_WIND
 == Values ==
 {|
 |0
-|generate an [[SDL_WindowEvent|SDL_WINDOWEVENT_CLOSE]] event for Alt+F4 (default)
+|generate an [[SDL_WindowEvent|SDL_EVENT_WINDOW_CLOSE_REQUESTED]] event for Alt+F4 (default)
 |-
 |1
 |do not generate event and only do normal key handling for Alt+F4
@@ -23,7 +23,7 @@ A hint that specifies that SDL should not to generate [[SDL_WindowEvent|SDL_WIND
 
 
 == Default ==
-By default SDL will generate an [[SDL_WindowEvent|SDL_WINDOWEVENT_CLOSE]] event for Alt+F4.
+By default SDL will generate an [[SDL_WindowEvent|SDL_EVENT_WINDOW_CLOSE_REQUESTED]] event for Alt+F4.
 
 
 

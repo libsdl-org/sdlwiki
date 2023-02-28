@@ -18,13 +18,13 @@ SDL_Event ev;
 while (SDL_PollEvent(&ev) != 0) {
     if (ev.type == SDL_DISPLAYEVENT) {
         switch (ev.display.event) {
-            case SDL_DISPLAYEVENT_CONNECTED:
+            case SDL_EVENT_DISPLAY_CONNECTED:
                 SDL_Log("A new display with id %d was connected", ev.display.display);
                 break;
-            case SDL_DISPLAYEVENT_DISCONNECTED:
+            case SDL_EVENT_DISPLAY_DISCONNECTED:
                 SDL_Log("The display with id %d was disconnected", ev.display.display);
                 break;
-            case SDL_DISPLAYEVENT_ORIENTATION:
+            case SDL_EVENT_DISPLAY_ORIENTATION:
                 SDL_Log("The orientation of display with id %d was changed", ev.display.display);
                 break;
         }

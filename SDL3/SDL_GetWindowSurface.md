@@ -61,7 +61,7 @@ int main(int argc, char* argv[])
     // let's just show some classic code for reference
     image = SDL_LoadBMP("box.bmp"); // loads image
     SDL_BlitSurface(image, NULL, screen, NULL); // blit it to the screen
-    SDL_FreeSurface(image);
+    SDL_DestroySurface(image);
 
     // this works just like SDL_Flip() in SDL 1.2
     SDL_UpdateWindowSurface(window);

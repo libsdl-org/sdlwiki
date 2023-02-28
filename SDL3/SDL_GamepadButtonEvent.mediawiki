@@ -6,8 +6,8 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
 
 
-= SDL_ControllerDeviceEvent =
-A structure that contains controller device event information.
+= SDL_GamepadButtonEvent =
+A structure that contains game controller button event information.
 
 
 
@@ -16,15 +16,23 @@ A structure that contains controller device event information.
 {|
 |Uint32
 |'''type'''
-|SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED
+|SDL_EVENT_GAMEPAD_BUTTON_DOWN or SDL_EVENT_GAMEPAD_BUTTON_UP
 |-
 |Uint32
 |'''timestamp'''
 |the timestamp of the event
 |-
-|Sint32
+|SDL_JoystickID
 |'''which'''
-|the joystick device index for the SDL_CONTROLLERDEVICEADDED event or instance id for the SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED event
+|the joystick instance id
+|-
+|Uint8
+|'''button'''
+|the controller button ([[SDL_GamepadButton]])
+|-
+|Uint8
+|'''state'''
+|SDL_PRESSED or SDL_RELEASED
 |}
 
 

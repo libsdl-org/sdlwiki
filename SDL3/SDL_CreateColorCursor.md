@@ -64,8 +64,8 @@ main(int argc, char *argv[])
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
             switch (event.type) {
-            case SDL_MOUSEBUTTONUP:
-            case SDL_QUIT:
+            case SDL_EVENT_MOUSE_BUTTON_UP:
+            case SDL_EVENT_QUIT:
                 error = SDL_FALSE;
                 goto exit;
             }
@@ -79,10 +79,10 @@ exit:
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "%s", SDL_GetError());
     }
     if (cursor) {
-        SDL_FreeCursor(cursor);
+        SDL_DestroyCursor(cursor);
     }
     if (surface) {
-        SDL_FreeSurface(surface);
+        SDL_DestroySurface(surface);
     }
     if (renderer) {
         SDL_DestroyRenderer(renderer);

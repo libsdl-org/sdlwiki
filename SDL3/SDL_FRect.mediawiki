@@ -39,14 +39,14 @@ rect.h = 32.0;
 An [[SDL_FRect]] defines a rectangular area of the screen.
 
 == Related Functions ==
-:[[SDL_EncloseFPoints]]
-:[[SDL_FRectEmpty]]
-:[[SDL_FRectEquals]]
-:[[SDL_HasIntersectionF]]
-:[[SDL_IntersectFRect]]
-:[[SDL_IntersectFRectAndLine]]
-:[[SDL_PointInFRect]]
-:[[SDL_UnionFRect]]
+:[[SDL_GetRectEnclosingPointsFloat]]
+:[[SDL_RectEmptyFloat]]
+:[[SDL_RectsEqualFloat]]
+:[[SDL_HasRectIntersectionFloat]]
+:[[SDL_GetRectIntersectionFloat]]
+:[[SDL_GetRectAndLineIntersectionFloat]]
+:[[SDL_PointInRectFloat]]
+:[[SDL_GetRectUnionFloat]]
 
 ----
 [[CategoryStruct]], [[CategoryRect]]

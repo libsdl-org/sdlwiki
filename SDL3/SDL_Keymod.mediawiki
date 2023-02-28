@@ -9,56 +9,56 @@ An enumeration of key modifier masks.
 
 == Values ==
 {|
-|KMOD_NONE
+|SDL_KMOD_NONE
 |0 (no modifier is applicable)
 |-
-|KMOD_LSHIFT
+|SDL_KMOD_LSHIFT
 |the left Shift key is down
 |-
-|KMOD_RSHIFT
+|SDL_KMOD_RSHIFT
 |the right Shift key is down
 |-
-|KMOD_LCTRL
+|SDL_KMOD_LCTRL
 |the left Ctrl (Control) key is down
 |-
-|KMOD_RCTRL
+|SDL_KMOD_RCTRL
 |the right Ctrl (Control) key is down
 |-
-|KMOD_LALT
+|SDL_KMOD_LALT
 |the left Alt key is down
 |-
-|KMOD_RALT
+|SDL_KMOD_RALT
 |the right Alt key is down
 |-
-|KMOD_LGUI
+|SDL_KMOD_LGUI
 |the left GUI key (often the Windows key) is down
 |-
-|KMOD_RGUI
+|SDL_KMOD_RGUI
 |the right GUI key (often the Windows key) is down
 |-
-|KMOD_NUM
+|SDL_KMOD_NUM
 |the Num Lock key (may be located on an extended keypad) is down
 |-
-|KMOD_CAPS
+|SDL_KMOD_CAPS
 |the Caps Lock key is down
 |-
-|KMOD_MODE
+|SDL_KMOD_MODE
 |the !AltGr key is down
 |-
-|KMOD_SCROLL
+|SDL_KMOD_SCROLL
 |the Scroll Lock key is down (available since SDL 2.0.18)
 |-
-|KMOD_CTRL
-|(KMOD_LCTRL|KMOD_RCTRL)
+|SDL_KMOD_CTRL
+|(SDL_KMOD_LCTRL|SDL_KMOD_RCTRL)
 |-
-|KMOD_SHIFT
-|(KMOD_LSHIFT|KMOD_RSHIFT)
+|SDL_KMOD_SHIFT
+|(SDL_KMOD_LSHIFT|SDL_KMOD_RSHIFT)
 |-
-|KMOD_ALT
-|(KMOD_LALT|KMOD_RALT)
+|SDL_KMOD_ALT
+|(SDL_KMOD_LALT|SDL_KMOD_RALT)
 |-
-|KMOD_GUI
-|(KMOD_LGUI|KMOD_RGUI)
+|SDL_KMOD_GUI
+|(SDL_KMOD_LGUI|SDL_KMOD_RGUI)
 |}
 
 == Remarks ==

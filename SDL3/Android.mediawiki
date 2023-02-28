@@ -151,10 +151,10 @@ int main(int argc, char *argv[])
   done = 0;
   while (!done) {
     while (SDL_PollEvent(&event)) {
-      if (event.type == SDL_QUIT)
+      if (event.type == SDL_EVENT_QUIT)
         done = 1;
     }
-    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_RenderTexture(renderer, texture, NULL, NULL);
     SDL_RenderPresent(renderer);
     SDL_Delay(100);
   }

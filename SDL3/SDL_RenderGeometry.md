@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
    SDL_Event ev;
    while (SDL_PollEvent(&ev) != 0) {
       switch(ev.type) {
-        case SDL_QUIT: 
+        case SDL_EVENT_QUIT: 
         quit = SDL_TRUE;
         break;
       }

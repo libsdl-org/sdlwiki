@@ -174,7 +174,7 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     else render_data.glUseProgram(program_color_id);
     int width, height;
     SDL_Rect rvp;
-    SDL_RenderGetViewport(renderer, &rvp);
+    SDL_GetRenderViewport(renderer, &rvp);
 
     GLfloat projection[4][4];
 
@@ -253,7 +253,7 @@ void RocketSDLRenderInterfaceOpenGLES::RenderGeometry(Rocket::Core::Vertex* vert
     /* Reset blending and draw a fake point just outside the screen to let SDL know that it needs to reset its state in case it wants to render a texture */
     render_data.glDisable(GL_BLEND);
     SDL_SetRenderDrawBlendMode(renderer, SDL_BLENDMODE_NONE);
-    SDL_RenderDrawPoint(renderer, -1, -1);
+    SDL_RenderPoint(renderer, -1, -1);
 ```
 
 ## Related Functions

@@ -30,11 +30,11 @@ int SDL_BlitScaled(SDL_Surface*    src,
 Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
-This is the public scaled blit function.  This function calls [[SDL_LowerBlitScaled]]() internally.
+This is the public scaled blit function.  This function calls [[SDL_BlitSurfaceUncheckedScaled]]() internally.
 
 == Related Functions ==
 :[[SDL_BlitSurface]]
-:[[SDL_LowerBlitScaled]]
+:[[SDL_BlitSurfaceUncheckedScaled]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]

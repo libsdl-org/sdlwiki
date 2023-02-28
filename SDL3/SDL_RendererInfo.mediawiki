@@ -44,7 +44,7 @@ A structure that contains information on the capabilities of a render driver or 
 == Related Functions ==
 :[[SDL_GetRenderDriverInfo]]
 :[[SDL_GetRendererInfo]]
-:[[SDL_RenderCopy]]
+:[[SDL_RenderTexture]]
 
 ----
 [[CategoryStruct]], [[CategoryRender]]

@@ -84,10 +84,10 @@ int main(int argc, char* argv[]){
   SDL_SetWindowIcon(window, surface);
 
   // ...and the surface containing the icon pixel data is no longer required.
-  SDL_FreeSurface(surface);
+  SDL_DestroySurface(surface);
 
   // Loop until the user closes the window or presses any key.
-  for( ; e.type != SDL_QUIT && e.type != SDL_KEYDOWN; SDL_PollEvent(&e));
+  for( ; e.type != SDL_EVENT_QUIT && e.type != SDL_EVENT_KEY_DOWN; SDL_PollEvent(&e));
 
   SDL_DestroyWindow(window);   // Close and destroy the window.
   SDL_Quit();                  // Clean up and exit.

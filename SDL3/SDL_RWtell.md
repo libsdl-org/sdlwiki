@@ -38,7 +38,7 @@ This function is available since SDL 3.0.0.
 ```c++
 extern SDL_RWops *rw;
 printf("Current position in stream: %lld\n", (long long) SDL_RWtell(rw));
-if (SDL_RWseek(rw, 0, RW_SEEK_END) != -1) {
+if (SDL_RWseek(rw, 0, SDL_RW_SEEK_END) != -1) {
     printf("Final position in stream: %lld\n", (long long) SDL_RWtell(rw));
 }
 ```

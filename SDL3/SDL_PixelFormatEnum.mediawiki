@@ -32,7 +32,7 @@ An enumeration of pixel formats.
 |}
 
 === Pixel Format Values ===
-<!-- #The following content is included on to SDL_RendererInfo, SDL_CreateTexture, SDL_RenderWritePixels, SDL_RenderReadPixels, SDL_QueryTexture, SDL_CreateTextureFromSurface, SDL_AllocFormat.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
+<!-- #The following content is included on to SDL_RendererInfo, SDL_CreateTexture, SDL_RenderWritePixels, SDL_RenderReadPixels, SDL_QueryTexture, SDL_CreateTextureFromSurface, SDL_CreatePixelFormat.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
 {|
 |SDL_PIXELFORMAT_UNKNOWN
 |
@@ -272,8 +272,8 @@ The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXEL
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
 :[[SDL_GetPixelFormatName]]
-:[[SDL_MasksToPixelFormatEnum]]
-:[[SDL_PixelFormatEnumToMasks]]
+:[[SDL_GetPixelFormatEnumForMasks]]
+:[[SDL_GetMasksForPixelFormatEnum]]
 :[[SDL_QueryTexture]]
 :[[SDL_RenderReadPixels]]
 

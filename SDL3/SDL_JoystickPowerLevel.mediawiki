@@ -39,7 +39,7 @@ An enumeration of battery levels of a joystick.
 
 
 == Related Functions ==
-:[[SDL_JoystickCurrentPowerLevel]]
+:[[SDL_GetJoystickPowerLevel]]
 
 
 == Version ==

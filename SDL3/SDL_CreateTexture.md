@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
         while (1) {
                 SDL_PollEvent(&event);
-                if(event.type == SDL_QUIT)
+                if(event.type == SDL_EVENT_QUIT)
                         break;
                 r.x=rand()%500;
                 r.y=rand()%500;
@@ -78,11 +78,11 @@ int main(int argc, char *argv[])
                 SDL_SetRenderTarget(renderer, texture);
                 SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
                 SDL_RenderClear(renderer);
-                SDL_RenderDrawRect(renderer,&r);
+                SDL_RenderRect(renderer,&r);
                 SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0x00);
                 SDL_RenderFillRect(renderer, &r);
                 SDL_SetRenderTarget(renderer, NULL);
-                SDL_RenderCopy(renderer, texture, NULL, NULL);
+                SDL_RenderTexture(renderer, texture, NULL, NULL);
                 SDL_RenderPresent(renderer);
         }
         SDL_DestroyRenderer(renderer);

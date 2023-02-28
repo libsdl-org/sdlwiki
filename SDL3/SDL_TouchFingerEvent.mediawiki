@@ -6,7 +6,7 @@ A structure that contains finger touch event information.
 {|
 |Uint32
 |'''type'''
-|SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP
+|SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_DOWN, or SDL_EVENT_FINGER_UP
 |-
 |Uint32
 |'''timestamp'''
@@ -46,7 +46,7 @@ A structure that contains finger touch event information.
 |}
 
 == Remarks ==
-[[SDL_TouchFingerEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP is reported.  You would access it through the event's <code>tfinger</code> field.
+[[SDL_TouchFingerEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_DOWN, or SDL_EVENT_FINGER_UP is reported.  You would access it through the event's <code>tfinger</code> field.
 
 
 == Version ==

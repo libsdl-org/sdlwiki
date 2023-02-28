@@ -59,7 +59,7 @@ if (!image) {
 /* Do something with image here. */
 
 /* Make sure to eventually release the surface resource */
-SDL_FreeSurface(image);
+SDL_DestroySurface(image);
 ```
 
 ## Related Functions

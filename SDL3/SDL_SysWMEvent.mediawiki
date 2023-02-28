@@ -7,7 +7,7 @@ A structure that contains a video driver dependent system event.
 {|
 |Uint32
 |'''type'''
-|SDL_SYSWMEVENT
+|SDL_EVENT_SYSWM
 |-
 |Uint32
 |'''timestamp'''
@@ -23,7 +23,7 @@ This event is disabled by default.  You can enable it with [[SDL_EventState]]().
 
 If you want to use this event you should include SDL_syswm.h and have access to the appropriate system headers.
 
-[[SDL_SysWMEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_SYSWMEVENT is reported. You would access it through the event's <code>syswm</code> field. 
+[[SDL_SysWMEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_SYSWM is reported. You would access it through the event's <code>syswm</code> field. 
 
 If you want to obtain system-specific information about the window manager you can fill in the <code>version</code> member of an [[SDL_SysWMinfo]] structure using the [[SDL_VERSION]]() macro found in SDL_version.h, and pass it to the function [[SDL_GetWindowWMInfo]]().
 

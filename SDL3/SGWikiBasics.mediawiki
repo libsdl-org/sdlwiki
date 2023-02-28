@@ -600,7 +600,7 @@ An include enables you to dynamically copy all or a portion of a page onto anoth
 ```
 : ''Example'': To copy content from [[SDL_GLattr]]
    ```<<Include(SDL_GLattr, , , from="Start Include here.", to="##End Include here.")>>```
-: ''Example'': See the Remarks section of [[SDL_GetRevision]]()  or the Return Value section of [[SDL_MasksToPixelFormatEnum]]() in the text editor.
+: ''Example'': See the Remarks section of [[SDL_GetRevision]]()  or the Return Value section of [[SDL_GetPixelFormatEnumForMasks]]() in the text editor.
 
  ''Action 2'': __On the source page__ place the following markup, verbatim, on the line immediately ''before'' the point where you wish to begin the include (to start copying content).
 * Replace <code><PageName></code> with the name of the page to receive the Include (recipient).  If this include will be used on more than one page add additional page names.  Hyperlink markup and () after functions should be left out.

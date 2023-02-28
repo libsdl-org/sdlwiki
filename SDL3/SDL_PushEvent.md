@@ -53,7 +53,7 @@ This function is available since SDL 3.0.0.
 ```c++
     // Default Usage:
     SDL_Event sdlevent;
-    sdlevent.type = SDL_KEYDOWN;
+    sdlevent.type = SDL_EVENT_KEY_DOWN;
     sdlevent.key.keysym.sym = SDLK_1;
 
     SDL_PushEvent(&sdlevent);

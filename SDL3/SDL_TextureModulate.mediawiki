@@ -1,6 +1,6 @@
 
 = SDL_TextureModulate =
-An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
+An enumeration of the texture channel modulation used in [[SDL_RenderTexture]]().
 
 
 == Values ==
@@ -18,7 +18,7 @@ An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
 :[[SDL_RendererInfo]]
 
 == Related Functions ==
-:[[SDL_RenderCopy]]
+:[[SDL_RenderTexture]]
 
 ----
 [[CategoryEnum]], [[CategoryRender]]

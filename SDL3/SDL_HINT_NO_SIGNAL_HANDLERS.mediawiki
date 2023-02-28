@@ -15,7 +15,7 @@ A hint that specifies not to catch the SIGINT or SIGTERM signals.
 == Values ==
 {|
 |0
-|SDL will install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_QUIT event
+|SDL will install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_EVENT_QUIT event
 |-
 |1
 |SDL will not install a signal handler at all
@@ -23,7 +23,7 @@ A hint that specifies not to catch the SIGINT or SIGTERM signals.
 
 
 == Default ==
-By default install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_QUIT event.
+By default install a SIGINT and SIGTERM handler, and when it catches a signal, convert it into an SDL_EVENT_QUIT event.
 
 
 

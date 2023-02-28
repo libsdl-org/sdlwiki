@@ -44,16 +44,16 @@ An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_B
 
 == Related Functions ==
 :[[SDL_BlitSurface]]
-:[[SDL_EnclosePoints]]
+:[[SDL_GetRectEnclosingPoints]]
 :[[SDL_GetDisplayBounds]]
-:[[SDL_HasIntersection]]
-:[[SDL_IntersectRect]]
+:[[SDL_HasRectIntersection]]
+:[[SDL_GetRectIntersection]]
 :[[SDL_LockTexture]]
-:[[SDL_RenderCopy]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
+:[[SDL_RenderTexture]]
+:[[SDL_RenderRect]]
+:[[SDL_RenderRects]]
 :[[SDL_RenderReadPixels]]
-:[[SDL_UnionRect]]
+:[[SDL_GetRectUnion]]
 :[[SDL_UpdateTexture]]
 
 ----

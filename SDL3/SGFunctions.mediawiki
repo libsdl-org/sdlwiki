@@ -189,7 +189,7 @@ The Function Parameters section provides basic information about each parameter 
 |<( |2 30%>''If'' the only parameter is '''__void__'''
 |''Action'': Delete the entire Function Parameters section, including the header.
 |-
-|''Example'': [[SDL_AllocRW]]()
+|''Example'': [[SDL_CreateRW]]()
 |}
 
 Otherwise, '''function parameters follow this basic format:''' 
@@ -209,7 +209,7 @@ Otherwise, '''function parameters follow this basic format:'''
 
 * There are a few content-dependent conventions we have chosen for consistency across pages - see the tables below for details. 
 
-''Example'': [[SDL_SetColorKey]]()
+''Example'': [[SDL_SetSurfaceColorKey]]()
 
 {|
 |
@@ -220,7 +220,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Note'': This should be avoided whenever possible.  See "''If'' a __[[#detailed|more detailed description]]__ is required to adequately explain a parameter" below for more details.
 |-
-|''Example'': [[SDL_PixelFormatEnumToMasks]]()
+|''Example'': [[SDL_GetMasksForPixelFormatEnum]]()
 |-
 |<( |4 30%>''If'' a __more detailed description__ is required to adequately explain a parameter
 |<span id="detailed"></span>''Action 1'' : Append the following, verbatim, to the end of the brief description<br/>```; see [[#Remarks|Remarks]] for details```.
@@ -241,7 +241,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |<( |2 30%>''If'' __there is a pointer__ associated with the parameter
 |''Action'': Avoid mentioning pointers unless they are critical to understanding the parameter or there is little other way to describe it (ie: void*)
 |-
-|''Example'': [[SDL_SetColorKey]]()
+|''Example'': [[SDL_SetSurfaceColorKey]]()
 |-
 |<( |2 30%>''If'' a pointer points to __something that is filled in by the function__ or that __has been filled in__
 |''Action'': Use the phrase <code>filled in with</code> in the description
@@ -255,7 +255,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Note'': Be sure to hyperlink the structure name as shown in ''Action 1'' in the type and description columns (as appropriate) '''''except''''' if the row is greyed out (see ''If'' the parameter is __[[#grey|for internal use, deprecated, or private]]__ for details).
 |-
-|''Example'': [[SDL_UnionRect]]()
+|''Example'': [[SDL_GetRectUnion]]()
 |-
 |<( |3 30%>''If'' the description mentions __a structure that ''does not'' have a page__
 |''Action'': Use the plain English term to describe the structure (ie: SDL_Window == <code>the window</code>) and omit the hyperlink.
@@ -300,12 +300,12 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Note'': If the reference is to the parameter as a ''concept'' (ie: the window to do something with) rather than ''directly'' to the parameter itself (ie: SDL_Function(window)) do not make it bold.<br/>~-Please don't just make the word bold every time it occurs on the page.-~
 |-
-|''Example'': [[SDL_EnclosePoints]]()
+|''Example'': [[SDL_GetRectEnclosingPoints]]()
 |-
 |<( |3 30%>''If'' a description is referring to something that could be __any one of a group of similar items__ (ie: rectangles)
 |''Action'': Begin the description with <code>a/an</code>
 |-
-|''Example'': [[SDL_HasIntersection]]()
+|''Example'': [[SDL_HasRectIntersection]]()
 |-
 |''Note'': We realize that this is a somewhat arbitrary distinction depending upon your perspective.  If you are unsure whether to use <code>a/an</code> or <code>the</code> it may be helpful to do a quick text search for other pages with the same or similar parameter and copy the format there.  Ultimately, though, it's not worth losing sleep over. ;) Just pick one.
 |-
@@ -332,7 +332,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Action 2'': The most common version is <code>the [[SDL_Palette]] structure to use</code>
 |-
-|''Example'': [[SDL_SetSurfacePalette]](), [[SDL_FreePalette]]()
+|''Example'': [[SDL_SetSurfacePalette]](), [[SDL_DestroyPalette]]()
 |-
 |''Note'': Of course other phrases to describe this parameter may become necessary.  A text search for "SDL_Palette* palette" should provide you with other descriptions if they arise.
 |-
@@ -341,7 +341,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Action 2 - __rects__'': When the parameter is plural it refers to an array of rectangles and will most often begin with <code>an array of</code> ```[[SDL_Rect]]``` <code>structures</code> <code>representing the rectangles to</code>, followed by what the rectangles are for.
 |-
-|''Example'': [[SDL_FillRect]](), [[SDL_RenderDrawRect]](), [[SDL_IntersectRectAndLine]](), [[SDL_RenderDrawRects]]()
+|''Example'': [[SDL_FillSurfaceRect]](), [[SDL_RenderRect]](), [[SDL_GetRectAndLineIntersection]](), [[SDL_RenderRects]]()
 |-
 |''Note'': Of course there are some other phrases to describe these parameters.  A text search for "SDL_Rect* rect" should provide you with plenty of other examples of both the singular and plural parameters.
 |-
@@ -350,7 +350,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''<span color="red">Important!</span>'' Please use <code>the rendering context</code> for ''all'' occurrences of this parameter unless/until it appears in the API in a different context that calls for another description.  A text search for "SDL_Renderer* renderer" should be used to determine if this has become the case.
 |-
-|''Example'': [[SDL_RenderPresent]](), [[SDL_RenderDrawLine]](), [[SDL_CreateTexture]]()
+|''Example'': [[SDL_RenderPresent]](), [[SDL_RenderLine]](), [[SDL_CreateTexture]]()
 |-
 |<( |5 30%>''If'' the parameter is __SDL_Surface* surface__
 |''Action 1'': Most often this description begins with <code>the [[SDL_Surface]] structure to</code>, followed by what is happening with the structure (ie: optimize, be locked, etc.).
@@ -359,7 +359,7 @@ Otherwise, '''function parameters follow this basic format:'''
 |-
 |''Action 3'': Some will be best described by the following instead:  <code>the [[SDL_Surface]] structure representing</code> <something>.
 |-
-|''Example'': [[SDL_SetSurfaceRLE]](), [[SDL_LockSurface]](), [[SDL_GetClipRect]](), [[SDL_SaveBMP_RW]]()
+|''Example'': [[SDL_SetSurfaceRLE]](), [[SDL_LockSurface]](), [[SDL_GetSurfaceClipRect]](), [[SDL_SaveBMP_RW]]()
 |-
 |''Note'': Of course there are some other phrases to describe this parameter.  A text search for "SDL_Surface* surface" should provide you with plenty of other examples.
 |-
@@ -411,7 +411,7 @@ The Return Value section provides basic information about what, if anything, a f
 |-
 |''Action'': Delete the entire Return Value section, including the header.
 |-
-|''Example'': [[SDL_FreeSurface]]()
+|''Example'': [[SDL_DestroySurface]]()
 |}
 
 
@@ -469,7 +469,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |-
 |''Example'': [[SDL_MapRGBA]](), [[SDL_WasInit]]()
 |-
-|''Note'': Very rarely the Uint that is returned is a mask of enumerated values.  See [[SDL_MasksToPixelFormatEnum]]() for an example of how to handle this.
+|''Note'': Very rarely the Uint that is returned is a mask of enumerated values.  See [[SDL_GetPixelFormatEnumForMasks]]() for an example of how to handle this.
 |-
 |<( |2 30%>''If'' the return value type is __a char or const char__
 |''Action'': Replace <code><something></code> with a brief, appropriate description of the returned string.
@@ -510,7 +510,7 @@ Use the following tables to determine what to replace <code><something></code> a
 |-
 |''Note'': Be sure to hyperlink the structure name as shown.
 |-
-|''Example'': [[SDL_UnionRect]]()
+|''Example'': [[SDL_GetRectUnion]]()
 |-
 |<( |2 30%>''If'' the return value mentions __a structure that ''does not'' have a page__
 |''Action'': Use the plain English term to describe the structure (ie: SDL_Window == window).
@@ -669,7 +669,7 @@ The Footer section consists of a horizontal rule followed by two links separated
 |CategoryEvents
 |-
 |SDL_gamecontroller.h
-|CategoryGameController
+|CategoryGamepad
 |}
 <!-- #||SDL_gesture.h|||| -->
 {|

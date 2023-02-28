@@ -1,5 +1,5 @@
 = SDL_BlendMode =
-An enumeration of blend modes used in [[SDL_RenderCopy]]() and drawing operations.
+An enumeration of blend modes used in [[SDL_RenderTexture]]() and drawing operations.
 Note that additional values may be obtained from [[SDL_ComposeCustomBlendMode]]().
 
 
@@ -45,7 +45,7 @@ Note that additional values may be obtained from [[SDL_ComposeCustomBlendMode]](
 :[[SDL_GetRenderDrawBlendMode]]
 :[[SDL_GetSurfaceBlendMode]]
 :[[SDL_GetTextureBlendMode]]
-:[[SDL_RenderCopy]]
+:[[SDL_RenderTexture]]
 :[[SDL_SetRenderDrawBlendMode]]
 :[[SDL_SetSurfaceBlendMode]]
 :[[SDL_SetTextureBlendMode]]

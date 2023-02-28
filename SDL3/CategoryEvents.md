@@ -28,9 +28,9 @@ The event queue itself is composed of a series of [[SDL_Event]] structures, one 
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 - [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
-- [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
-- [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
-- [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+- [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
+- [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
+- [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_DelEventWatch](SDL_DelEventWatch)
 - [SDL_DisplayEventID](SDL_DisplayEventID)
 - [SDL_DropEvent](SDL_DropEvent)

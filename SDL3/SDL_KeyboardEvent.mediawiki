@@ -7,7 +7,7 @@ A structure that contains keyboard button event information.
 {|
 |Uint32
 |'''type'''
-|the event type; SDL_KEYDOWN or SDL_KEYUP
+|the event type; SDL_EVENT_KEY_DOWN or SDL_EVENT_KEY_UP
 |-
 |Uint32
 |'''timestamp'''
@@ -31,9 +31,9 @@ A structure that contains keyboard button event information.
 |}
 
 == Remarks ==
-[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_KEYDOWN or SDL_KEYUP is reported.  You would access it through the event's <code>key</code> field. 
+[[SDL_KeyboardEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_KEY_DOWN or SDL_EVENT_KEY_UP is reported.  You would access it through the event's <code>key</code> field. 
 
-An SDL_KEYDOWN or SDL_KEYUP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
+An SDL_EVENT_KEY_DOWN or SDL_EVENT_KEY_UP event occurs whenever a user presses or releases a button on a keyboard. The information on what key was pressed or released is in the '''keysym''' member.
 
 == Related Enumerations ==
 :[[SDL_EventType]]

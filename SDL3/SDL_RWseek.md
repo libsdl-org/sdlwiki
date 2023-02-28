@@ -51,7 +51,7 @@ This function is available since SDL 3.0.0.
 SDL_RWops *rw = SDL_RWFromFile("myfile.bin", "rb");
 if (rw != NULL) {
     /* Seek to 0 bytes from the end of the file */
-    Sint64 length = SDL_RWseek(rw, 0, RW_SEEK_END);
+    Sint64 length = SDL_RWseek(rw, 0, SDL_RW_SEEK_END);
     SDL_RWclose(rw);
     if (length < 0) {
         printf("Could not seek inside myfile.bin\n");

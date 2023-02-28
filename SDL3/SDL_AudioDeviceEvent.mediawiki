@@ -16,7 +16,7 @@ A structure that contains Audio device event information.
 {|
 |Uint32
 |'''type'''
-|SDL_AUDIODEVICEADDED, or SDL_AUDIODEVICEREMOVED
+|SDL_EVENT_AUDIO_DEVICE_ADDED, or SDL_EVENT_AUDIO_DEVICE_REMOVED
 |-
 |Uint32
 |'''timestamp'''
@@ -24,7 +24,7 @@ A structure that contains Audio device event information.
 |-
 |Uint32
 |'''which'''
-|the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [[SDL_GetNumAudioDevices]]() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event
+|the audio device index for the SDL_EVENT_AUDIO_DEVICE_ADDED event (valid until next [[SDL_GetNumAudioDevices]]() call), SDL_AudioDeviceID for the SDL_EVENT_AUDIO_DEVICE_REMOVED event
 |-
 |Uint8
 |'''iscapture'''

@@ -66,16 +66,16 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     SDL_Event event;
     SDL_UserEvent userevent;
 
-    /* In this example, our callback pushes an SDL_USEREVENT event
+    /* In this example, our callback pushes an SDL_EVENT_USER event
     into the queue, and causes our callback to be called again at the
     same interval: */
 
-    userevent.type = SDL_USEREVENT;
+    userevent.type = SDL_EVENT_USER;
     userevent.code = 0;
     userevent.data1 = NULL;
     userevent.data2 = NULL;
 
-    event.type = SDL_USEREVENT;
+    event.type = SDL_EVENT_USER;
     event.user = userevent;
 
     SDL_PushEvent(&event);
@@ -94,12 +94,12 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     into the queue, and causes our callback to be called again at the
     same interval: */
 
-    userevent.type = SDL_USEREVENT;
+    userevent.type = SDL_EVENT_USER;
     userevent.code = 0;
     userevent.data1 = &my_function;
     userevent.data2 = param;
 
-    event.type = SDL_USEREVENT;
+    event.type = SDL_EVENT_USER;
     event.user = userevent;
 
     SDL_PushEvent(&event);
@@ -112,7 +112,7 @@ while (SDL_PollEvent (&event))
 {
     switch(event.type)
     {
-        case SDL_USEREVENT: {
+        case SDL_EVENT_USER: {
             /* and now we can call the function we wanted to call in the timer but couldn't because of the multithreading problems */
             void (*p) (void*) = event.user.data1;
             p(event.user.data2);

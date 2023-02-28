@@ -57,7 +57,7 @@ int main(int argc, char* argv[]){
   );
 
   // Enter the main loop. Press any key or hit the x to exit.
-  for( ; e.type!=SDL_QUIT&&e.type!=SDL_KEYDOWN; SDL_PollEvent(&e)){
+  for( ; e.type!=SDL_EVENT_QUIT&&e.type!=SDL_EVENT_KEY_DOWN; SDL_PollEvent(&e)){
     static int i = 0, t = 0;
 
     if(!(++t%9)){ // every 9th frame...

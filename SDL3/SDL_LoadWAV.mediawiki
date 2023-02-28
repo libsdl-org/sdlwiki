@@ -40,7 +40,7 @@ if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
     fprintf(stderr, "Could not open test.wav: %s\n", SDL_GetError());
 } else {
     /* Do stuff with the WAV data, and then... */
-    SDL_FreeWAV(wav_buffer);
+    SDL_free(wav_buffer);
 }
 </syntaxhighlight>
 
@@ -51,7 +51,6 @@ SDL_LoadWAV is a convenience macro that calls [[SDL_LoadWAV_RW]]().
 This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryIO|RWops]] API.
 
 == Related Functions ==
-:[[SDL_FreeWAV]]
 :[[SDL_LoadWAV_RW]]
 
 ----

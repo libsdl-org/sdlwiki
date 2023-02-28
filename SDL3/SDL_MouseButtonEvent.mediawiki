@@ -6,7 +6,7 @@ A structure that contains mouse button event information.
 {|
 |Uint32
 |'''type'''
-|the event type; SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP
+|the event type; SDL_EVENT_MOUSE_BUTTON_DOWN or SDL_EVENT_MOUSE_BUTTON_UP
 |-
 |Uint32
 |'''timestamp'''
@@ -42,9 +42,9 @@ A structure that contains mouse button event information.
 |}
 
 == Remarks ==
-[[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP is reported.  You would access it through the event's <code>button</code> field.
+[[SDL_MouseButtonEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_MOUSE_BUTTON_DOWN or SDL_EVENT_MOUSE_BUTTON_UP is reported.  You would access it through the event's <code>button</code> field.
 
-An SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP event occurs whenever a user presses or releases a button on a mouse.
+An SDL_EVENT_MOUSE_BUTTON_DOWN or SDL_EVENT_MOUSE_BUTTON_UP event occurs whenever a user presses or releases a button on a mouse.
 
 '''button''' may be one of:
 {|

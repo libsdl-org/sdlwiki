@@ -7,7 +7,7 @@ A structure that contains sensor updates.
 {|
 |Uint32
 |'''type'''
-|SDL_SENSORUPDATE 
+|SDL_EVENT_SENSOR_UPDATE 
 |-
 |Uint32
 |'''timestamp'''
@@ -19,7 +19,7 @@ A structure that contains sensor updates.
 |-
 |float[6]
 |'''data'''
-|Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData()
+|Up to 6 values from the sensor - additional values can be queried using SDL_GetSensorData()
 |}
 
 == Related Enumerations ==
@@ -32,15 +32,15 @@ A structure that contains sensor updates.
 :[[SDL_SensorGetDeviceType]]
 :[[SDL_SensorGetDeviceNonPortableType]]
 :[[SDL_SensorGetDeviceInstanceID]]
-:[[SDL_SensorOpen]]
-:[[SDL_SensorFromInstanceID]]
-:[[SDL_SensorGetName]]
-:[[SDL_SensorGetType]]
-:[[SDL_SensorGetNonPortableType]]
-:[[SDL_SensorGetInstanceID]]
-:[[SDL_SensorGetData]]
-:[[SDL_SensorClose]]
-:[[SDL_SensorUpdate]]
+:[[SDL_OpenSensor]]
+:[[SDL_GetSensorFromInstanceID]]
+:[[SDL_GetSensorName]]
+:[[SDL_GetSensorType]]
+:[[SDL_GetSensorNonPortableType]]
+:[[SDL_GetSensorInstanceID]]
+:[[SDL_GetSensorData]]
+:[[SDL_CloseSensor]]
+:[[SDL_UpdateSensors]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]

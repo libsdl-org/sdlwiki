@@ -7,7 +7,7 @@ A structure that contains mouse motion event information.
 {|
 |Uint32
 |'''type'''
-|the event type; SDL_MOUSEMOTION
+|the event type; SDL_EVENT_MOUSE_MOTION
 |-
 |Uint32
 |'''timestamp'''
@@ -44,9 +44,9 @@ A structure that contains mouse motion event information.
 
 
 == Remarks ==
-[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_MOUSEMOTION is reported.  You would access it through the event's <code>motion</code> field.
+[[SDL_MouseMotionEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_MOUSE_MOTION is reported.  You would access it through the event's <code>motion</code> field.
 
-An SDL_MOUSEMOTION event occurs whenever a user moves the mouse within the application window or when [[SDL_WarpMouseInWindow]]() is called. 
+An SDL_EVENT_MOUSE_MOTION event occurs whenever a user moves the mouse within the application window or when [[SDL_WarpMouseInWindow]]() is called. 
 
 '''state''' is a 32-bit button bitmask of the current button state and is the same as that returned by [[SDL_GetMouseState]]().  You can test different buttons by using the following masks:
 {|

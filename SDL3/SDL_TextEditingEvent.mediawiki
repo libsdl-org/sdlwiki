@@ -6,7 +6,7 @@ A structure that contains keyboard text editing event information.
 {|
 |Uint32
 |'''type'''
-|SDL_TEXTEDITING
+|SDL_EVENT_TEXT_EDITING
 |-
 |Uint32
 |'''timestamp'''
@@ -30,7 +30,7 @@ A structure that contains keyboard text editing event information.
 |}
 
 == Remarks ==
-[[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
+[[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_TEXT_EDITING is reported.  You would access it through the event's <code>edit</code> field.
 
 There is a [[Tutorials-TextInput|tutorial]].
 

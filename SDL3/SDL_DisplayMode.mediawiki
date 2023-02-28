@@ -58,13 +58,13 @@ for (i = 0; i < display_mode_count; ++i) {
 </syntaxhighlight>
 
 == Related Functions ==
-:[[SDL_GetClosestDisplayMode]]
+:[[SDL_GetClosestFullscreenDisplayMode]]
 :[[SDL_GetCurrentDisplayMode]]
 :[[SDL_GetDesktopDisplayMode]]
 :[[SDL_GetDisplayMode]]
 :[[SDL_GetNumDisplayModes]]
-:[[SDL_GetWindowDisplayMode]]
-:[[SDL_SetWindowDisplayMode]]
+:[[SDL_GetWindowFullscreenMode]]
+:[[SDL_SetWindowFullscreenMode]]
 
 ----
 [[CategoryStruct]], [[CategoryVideo]]

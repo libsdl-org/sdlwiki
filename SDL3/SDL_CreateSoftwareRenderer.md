@@ -50,7 +50,7 @@ DrawChessBoard(SDL_Renderer * renderer)
     SDL_Rect rect, darea;
 
     /* Get the Size of drawing surface */
-    SDL_RenderGetViewport(renderer, &darea);
+    SDL_GetRenderViewport(renderer, &darea);
 
     for ( ; row < 8; row++) {
         column = row%2;
@@ -73,12 +73,12 @@ loop()
 {
     SDL_Event e;
     while (SDL_PollEvent(&e)) {
-        if (e.type == SDL_QUIT) {
+        if (e.type == SDL_EVENT_QUIT) {
             done = 1;
             return;
         }
 
-        if ((e.type == SDL_KEYDOWN) && (e.key.keysym.sym == SDLK_ESCAPE)) {
+        if ((e.type == SDL_EVENT_KEY_DOWN) && (e.key.keysym.sym == SDLK_ESCAPE)) {
             done = 1;
             return;
         }

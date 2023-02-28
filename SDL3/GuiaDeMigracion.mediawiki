@@ -63,7 +63,7 @@ No hay una capa de compatibilidad en SDL2. Si una API cambió en 2.0, quiere dec
 ¡Ya no existe SDL_main! Bueno, en realidad existe, y ahora es lo que siempre se supuso que debía ser: un pequeño trozo de código que oculta la differencia entre <code>main()</code> y <code>WinMain()</code> en Windows. No posee código de inicialización y es completamente opcional- Esto significa que ahora es posible utilizar SDL sin sobreescribir tu main, lo cual es bueno para plugins que utilicen SDL, o lenguajes script que utilicen SDL como un módulo. Todo lo que en 1.2 se hacía en SDL_main ahora se hace en SDL_Init(), donde corresponde.
 
 El "paracaídas" de SDL no ya existe. Lo que en 1.2 se llamaba <code>SDL_INIT_NOPARACHUTE</code> es ahora la opción por defecto. Causaba problemas en caso de que hubiera problemas en threads que no fueran el principal así como con aplicaciones que utilizaran su propio sistema de señales o manejo de excepciones. Lamentablemente, algunas plataformas no limpian el sistema de vídeo a pantalla completa en caso de errores críticos, así que deberías configurar un manejador de crashes propio o llamar a [[SDL_Quit]]() en un <code>atexit()</code>, en caso de ser necesario.
-Ten en cuenta que en plataformas Unix, SDL sigue interceptando <code>SIGINT</code> y lo convierte en un evento [[SDL_EventType|SDL_QUIT]].
+Ten en cuenta que en plataformas Unix, SDL sigue interceptando <code>SIGINT</code> y lo convierte en un evento [[SDL_EventType|SDL_EVENT_QUIT]].
 
 === Video ===
 ==== Configurando la nueva API de video ====
@@ -151,7 +151,7 @@ En 2.0, la API de render nos permite hacer lo siguiente:
 
 <syntaxhighlight lang='c++'>
 SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "linear");  // hacemos que el render escalado se vea mejor
-SDL_RenderSetLogicalSize(sdlRenderer, 640, 480);
+SDL_SetRenderLogicalPresentation(sdlRenderer, 640, 480);
 </syntaxhighlight>
 
 Esto nos permite tener tener una resolución lógica independiente de la resolución final de presentación. Gracias a esto, en vez de tratar de hacer que el sistema funcione a la resolución que nosotros renderizamos, cambiamos la resolución de renderizado para que funcione acorde al sistema. En mi pantalla de 1920x1200, esta aplicación cree que está trabajando con una pantalla 640x480, pero SDL está utilizando el GPU para escalar el renderizado y utilizar todos los pixels. Es importante tener en cuenta que 640x480 y 1920x1200 no tienen la misma relación de aspecto: SDL tratará de escalar lo más que pueda e incluirá un marco de color para la diferencia.
@@ -192,11 +192,11 @@ Ahora pongamos esta textura en pantalla:
 
 <syntaxhighlight lang='c++'>
 SDL_RenderClear(sdlRenderer);
-SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
+SDL_RenderTexture(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 </syntaxhighlight>
 
-Y eso es todo. [[SDL_RenderClear]]() limpia el contenido del framebuffer (por las dudas de que, digamos, el Steam Overlay lo haya modificado en el cuadro anterior), [[SDL_RenderCopy]]() mueve el contenido de la textura al framebuffer (y gracias a [[SDL_RenderSetLogicalSize]](), lo hará de manera escalada/centrada como si el monitor fuera de 640x480) y [[SDL_RenderPresent]]() lo presentará en la pantalla.
+Y eso es todo. [[SDL_RenderClear]]() limpia el contenido del framebuffer (por las dudas de que, digamos, el Steam Overlay lo haya modificado en el cuadro anterior), [[SDL_RenderTexture]]() mueve el contenido de la textura al framebuffer (y gracias a [[SDL_SetRenderLogicalPresentation]](), lo hará de manera escalada/centrada como si el monitor fuera de 640x480) y [[SDL_RenderPresent]]() lo presentará en la pantalla.
 
 ==== Si tu juego requiere "blitear" surfaces a la pantalla ====
 
@@ -219,7 +219,7 @@ sdlTexture = SDL_CreateTextureFromSurface(sdlRenderer, mySurface);
 
 De esta manera, cargas tu [[SDL_Surface]] de la manera usual pero al final creamos una textura a partur de la misma. Una vez que tienes tu [[SDL_Texture]] es posible liberar la surface original.
 
-En este momento, tu juego utilizando SDL 1.2 tendría unas cuantas [[SDL_Surface|SDL_Surfaces]] que dibujarias en la surface de pantalla utilizando [[SDL_BlitSurface]]() para componer el framebuffer final, utilizando finalmente SDL_Flip() para presentarlo en pantalla. En SDL 2.0 tendrás [[SDL_Texture|SDL_Textures]] que vas a copiar a tu Renderer con [[SDL_RenderCopy]]() para componer el mismo framebuffer, presentándolo en pantalla a su vez con [[SDL_RenderPresent]](). Así de simple. Si nunca modificas dichas texturas, probablemente notes un aumento considerable en tu framerate.
+En este momento, tu juego utilizando SDL 1.2 tendría unas cuantas [[SDL_Surface|SDL_Surfaces]] que dibujarias en la surface de pantalla utilizando [[SDL_BlitSurface]]() para componer el framebuffer final, utilizando finalmente SDL_Flip() para presentarlo en pantalla. En SDL 2.0 tendrás [[SDL_Texture|SDL_Textures]] que vas a copiar a tu Renderer con [[SDL_RenderTexture]]() para componer el mismo framebuffer, presentándolo en pantalla a su vez con [[SDL_RenderPresent]](). Así de simple. Si nunca modificas dichas texturas, probablemente notes un aumento considerable en tu framerate.
 
 ==== Si necesitas ambas ====
 
@@ -234,7 +234,7 @@ SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
 A esto:
 
 <syntaxhighlight lang='c++'>
-// si no quieres utilizar hexadecimal, puedes usar SDL_PixelFormatEnumToMasks()!
+// si no quieres utilizar hexadecimal, puedes usar SDL_GetMasksForPixelFormatEnum()!
 SDL_Surface *screen = SDL_CreateRGBSurface(0, 640, 480, 32,
                                         0x00FF0000,
                                         0x0000FF00,
@@ -251,7 +251,7 @@ SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
 <syntaxhighlight lang='c++'>
 SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
 SDL_RenderClear(sdlRenderer);
-SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
+SDL_RenderTexture(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 </syntaxhighlight>
 
@@ -265,7 +265,7 @@ Puedes realizar algunos efectos simples con la Renderer API sin necesidad de man
 
 * Alpha de color: [[SDL_Color]] ahora tiene un cuarto componente dedicado al valor de alpha (transparencia). Probablemente tu código no utilizaba este valor en 1.2, pero en 2.0 deberías hacerlo.
 * Alpha blending: utiliza [[SDL_SetSurfaceAlphaMod]] y [[SDL_SetTextureAlphaMod]] en vez de <code>SDL_SetAlpha()</code>. Es posible desactivar alpha blending en surfaces usando [[SDL_SetSurfaceBlendMode]]() y en texturas utilizando [[SDL_SetTextureBlendMode]]().
-* Colorkey: Cuando llames [[SDL_SetColorKey]](), deberás pasarle como parámetro <code>SDL_TRUE</code> en vez de <code>SDL_SRCCOLORKEY</code>.
+* Colorkey: Cuando llames [[SDL_SetSurfaceColorKey]](), deberás pasarle como parámetro <code>SDL_TRUE</code> en vez de <code>SDL_SRCCOLORKEY</code>.
 * Modulación de color: Algunos renderer soportan alteraciones globales de color (srcC = srcC * color), puedes ver más detalles en [[SDL_SetTextureColorMod]]().
 
 === OpenGL ===
@@ -284,11 +284,11 @@ En SDL 1.2, muchas aplicaciones sólo soportaban Inglés de USA, pero llamaban d
 
 Al parecer, soportar i18n es complicado.
 
-SDL 2.0 cambia todo esto. <code>SDL_EnableUNICODE()</code> ya no existe, ni el campo unicode de [[SDL_Keysym]]. Ya no recibes la información de caracter en los eventos [[SDL_EventType|SDL_KEYDOWN]]. Ahora, si usas [[SDL_EventType|SDL_KEYDOWN]] debes tratarlo como si se tratara de un joystick con 101 botones. La entrada de texto viene por otro medio.
+SDL 2.0 cambia todo esto. <code>SDL_EnableUNICODE()</code> ya no existe, ni el campo unicode de [[SDL_Keysym]]. Ya no recibes la información de caracter en los eventos [[SDL_EventType|SDL_EVENT_KEY_DOWN]]. Ahora, si usas [[SDL_EventType|SDL_EVENT_KEY_DOWN]] debes tratarlo como si se tratara de un joystick con 101 botones. La entrada de texto viene por otro medio.
 
-El nuevo evento es [[SDL_EventType|SDL_TEXTINPUT]]. Este evento se dispara siempre que el usuario introduzca texto. Ten en cuenta que este texto puede provenir del teclado o de algún tipo de IME (que es un método de introducir texto complejo con varios caracteres). Este evento devuelte cadenas de texto completas, que puede ser de uno o más caracteres, siempre codificado en UTF-8.
+El nuevo evento es [[SDL_EventType|SDL_EVENT_TEXT_INPUT]]. Este evento se dispara siempre que el usuario introduzca texto. Ten en cuenta que este texto puede provenir del teclado o de algún tipo de IME (que es un método de introducir texto complejo con varios caracteres). Este evento devuelte cadenas de texto completas, que puede ser de uno o más caracteres, siempre codificado en UTF-8.
 
-Si sólo te interesa saber si el usuario presionó tal o cual tecla, puedes seguir utilizando [[SDL_EventType|SDL_KEYDOWN]], con la diferencia que ahora el sistema se encuentra dividido en dos partes con respecto a SDL 1.2: "keycodes" y "scancodes".
+Si sólo te interesa saber si el usuario presionó tal o cual tecla, puedes seguir utilizando [[SDL_EventType|SDL_EVENT_KEY_DOWN]], con la diferencia que ahora el sistema se encuentra dividido en dos partes con respecto a SDL 1.2: "keycodes" y "scancodes".
 
 Los scancodes son independientes de la disposición del teclado. Puedes pensar en ellos como "el usuario preionó la tecla Q" independientemente de que el teclado sea Americano, Europeo, Dvorak, etc. El scancode siempre indica el mismo caracter.
 
@@ -304,7 +304,7 @@ Ahora <code>SDLMod</code> se llama [[SDL_Keymod]] y sus teclas "META" (la tecla 
 
 Ahora veamos la entrada de ratón.
 
-El primer cambio, básicamente, es que la rueda del ratón ya no se trata como un botón. Se trataba de un error histórico en la biblioteca y lo corregimos en SDL 2.0. Ahora deberás chequear eventos [[SDL_EventType|SDL_MOUSEWHEEL]]. Hay soporte tanto para ruedas verticales como horizontales y algunas plataformas pueden reportar scroll con dos dedos en trackpads como eventos de rueda de ratón. Ya no recibirás eventos [[SDL_EventType|SDL_BUTTONDOWN]] relacionados con la rueda y ahora los botones 4 y 5 son tratados como verdaderos eventos de botón de ratón.
+El primer cambio, básicamente, es que la rueda del ratón ya no se trata como un botón. Se trataba de un error histórico en la biblioteca y lo corregimos en SDL 2.0. Ahora deberás chequear eventos [[SDL_EventType|SDL_EVENT_MOUSE_WHEEL]]. Hay soporte tanto para ruedas verticales como horizontales y algunas plataformas pueden reportar scroll con dos dedos en trackpads como eventos de rueda de ratón. Ya no recibirás eventos [[SDL_EventType|SDL_BUTTONDOWN]] relacionados con la rueda y ahora los botones 4 y 5 son tratados como verdaderos eventos de botón de ratón.
 
 Si tu juego requería que el mouse se desplazara indefinidamente en una dirección, por ejemplo para permitirle al jugador en un FPS girar continuamente sin que el ratón se detuviera al borde de la pantalla, probablemente ocultabas el cursor e interceptabas la entrada:
 
@@ -328,13 +328,13 @@ SDL_SetRelativeMouseMode(SDL_TRUE);
 Las máscaras de evento ahora se especifican como rangos, así que
 
 <syntaxhighlight lang='c++'>
-SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_EVENTMASK(SDL_MOUSEBUTTONDOWN));
+SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_EVENTMASK(SDL_EVENT_MOUSE_BUTTON_DOWN));
 </syntaxhighlight>
 
 se convierte en:
 
 <syntaxhighlight lang='c++'>
-SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONDOWN);
+SDL_PeepEvents(&event, 1, SDL_GETEVENT, SDL_EVENT_MOUSE_BUTTON_DOWN, SDL_EVENT_MOUSE_BUTTON_DOWN);
 </syntaxhighlight>
 
 === Audio ===
@@ -350,12 +350,12 @@ Los eventos de Joystick ahora hacen referencia a un <code>SDL_JoystickID</code>.
 Para conseguir un <code>SDL_JoystickID</code> a partir de un <code>SDL_Joystick*</code> abierto, usa:
 
 <syntaxhighlight lang='c++'>
-SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
+SDL_JoystickID myID = SDL_GetJoystickInstanceID(myOpenedStick);
 </syntaxhighlight>
 
-Y compara la propiedad which del evento contra myID. Si no utilizas la cola de eventos para joysticks, [[SDL_JoystickGetAxis]]() y demás funcionan exactamente igual que en SDL 1.2.
+Y compara la propiedad which del evento contra myID. Si no utilizas la cola de eventos para joysticks, [[SDL_GetJoystickAxis]]() y demás funcionan exactamente igual que en SDL 1.2.
 
-Deberías revisar la nueva [[CategoryGameController|API Game Controller]], es muy buena y probablemente te ahorre muchos dolores de cabeza que antes te producía SDL 1.2. Puedes encontrarla en SDL_gamecontroller.h. La API Game Controller se integra muy bien con el modo Big Picture de Steam: ofrece configuración automática para la mayoría de controladores y una buena interfaz visual si necesitas configurar algo a mano. En cualquier caso, Steam pasa el control de esta configuración a tu aplicación.
+Deberías revisar la nueva [[CategoryGamepad|API Game Controller]], es muy buena y probablemente te ahorre muchos dolores de cabeza que antes te producía SDL 1.2. Puedes encontrarla en SDL_gamecontroller.h. La API Game Controller se integra muy bien con el modo Big Picture de Steam: ofrece configuración automática para la mayoría de controladores y una buena interfaz visual si necesitas configurar algo a mano. En cualquier caso, Steam pasa el control de esta configuración a tu aplicación.
 
 La API antigua de joysticks para Linux (/dev/input/js*) ha sido eliminada de SDL2. Ahora sólo se soporta la nueva API de eventos (/dev/input/event*) para joysticks. Normalmente estos eventos no son recibidos en cuentas de usuario comunes, así que incluso si se enchufan joysticks nuevos probablemente no se detecten. Esto es algo que los usuarios finales tendrán que configurar por su cuenta.
 
@@ -381,12 +381,12 @@ Lo primero es que existen eventos que sólo tienen sentido en dispositivos móvi
 
 Por eso hemos agregado nuevos eventos de SDL para ciertos detalles específicos de Android e iOS, pero tendrás que configurar un filtro de eventos para detectarlos tan pronto como el SO los reporte, porque si esperas hasta la próxima llamada a [[SDL_PollEvent]]() ya será demasiado tarde.
 
-Por ejemplo: tenemos <code>SDL_APP_WILLENTERBACKGROUND</code>, que es el equivalente de <code>applicationWillResignActive()</code> en iOS. Si dibujas algo después de que ese evento se dispare, iOS cerrará tu aplicación. Por eso, necesitas interceptarlo de manera inmediata:
+Por ejemplo: tenemos <code>SDL_EVENT_WILL_ENTER_BACKGROUND</code>, que es el equivalente de <code>applicationWillResignActive()</code> en iOS. Si dibujas algo después de que ese evento se dispare, iOS cerrará tu aplicación. Por eso, necesitas interceptarlo de manera inmediata:
 
 <syntaxhighlight lang='c++'>
 int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 {
-    if (event->type == SDL_APP_WILLENTERBACKGROUND) {
+    if (event->type == SDL_EVENT_WILL_ENTER_BACKGROUND) {
         // liberamos recursos y NO DIBUJAMOS MAS hasta que recuperemos el foco!
     }
     // etc
@@ -430,8 +430,8 @@ A partir de la versión 2.0.21 (Mayo 2010), es posible compilar [http://www.ferz
 * SDL_UpdateRect()/SDL_Flip(): usa [[SDL_RenderPresent]]()
 * SDL_Surface/2D rendering: todavía hay surfaces, pero es recomendable que uses [[SDL_Texture|SDL_Textures]] con un renderer 2D acelerado ([[SDL_CreateRenderer]]()) de ser posible.
 * SDL_VideoInfo: usa [[SDL_GetRendererInfo]]()/[[SDL_GetRenderDriverInfo]]()
-* SDL_GetCurrentVideoDisplay(): usa [[SDL_GetWindowDisplayIndex]]()
-* evento SDL_VIDEORESIZE: usa su equivalente [[SDL_WindowEvent|SDL_WINDOWEVENT_RESIZED]]
+* SDL_GetCurrentVideoDisplay(): usa [[SDL_GetDisplayForWindow]]()
+* evento SDL_VIDEORESIZE: usa su equivalente [[SDL_WindowEvent|SDL_EVENT_WINDOW_RESIZED]]
 
 === El resto ===
 

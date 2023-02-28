@@ -6,7 +6,7 @@ A structure that contains keyboard text input event information.
 {|
 |Uint32 
 |'''type''' 
-|SDL_TEXTINPUT 
+|SDL_EVENT_TEXT_INPUT 
 |-
 |Uint32
 |'''timestamp'''
@@ -22,7 +22,7 @@ A structure that contains keyboard text input event information.
 |}
 
 == Remarks ==
-[[SDL_TextInputEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTINPUT is reported. You would access it through the event's <code>text</code> field.
+[[SDL_TextInputEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_TEXT_INPUT is reported. You would access it through the event's <code>text</code> field.
 
 There is a [[Tutorials-TextInput|tutorial]].
 
@@ -30,24 +30,24 @@ There is a [[Tutorials-TextInput|tutorial]].
 
 ```
 In a typical GUI application, the OS will be responsible for telling
-you the candidate text (via SDL_TEXTEDITING), you can choose how (and
+you the candidate text (via SDL_EVENT_TEXT_EDITING), you can choose how (and
 where) to show it in your UI.
 Let's say with an input method I typed "abc" and got unicode character
-"X", the SDL application will first receive three SDL_TEXTEDITING
-events with 'a', 'ab' and 'abc', then finally receive SDL_TEXTINPUT
+"X", the SDL application will first receive three SDL_EVENT_TEXT_EDITING
+events with 'a', 'ab' and 'abc', then finally receive SDL_EVENT_TEXT_INPUT
 event with unicode character 'X'.
 During this text compositing process, user can press any arbitrary
 keys such as Function, backspace, both the SDL application and OS
 input method will receive it and decide whether to deal with these
 keys or not. For instance when user press backspace, most input
 methods will delete the last candidate character typed and SDL app
-will receive a new SDL_TEXTEDITING event (let's say user typed a, b,
+will receive a new SDL_EVENT_TEXT_EDITING event (let's say user typed a, b,
 backspace, c, then the application will receive 4 events containing
 'a', 'ab', 'a', 'ac' each).
 
 [[SDL_SetTextInputRect]]() gives the OS a hint for where to show the
 candidate text list, since the OS doesn't know where you want to draw
-the text you received via SDL_TEXTEDITING event.
+the text you received via SDL_EVENT_TEXT_EDITING event.
 ```
 
 == Related Enumerations ==

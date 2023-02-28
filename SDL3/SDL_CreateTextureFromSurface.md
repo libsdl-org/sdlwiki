@@ -71,7 +71,7 @@ if (texture == NULL) {
     exit(1);
 }
 
-SDL_FreeSurface(surface);
+SDL_DestroySurface(surface);
 surface = NULL;
 
 ```

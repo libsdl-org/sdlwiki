@@ -16,7 +16,7 @@ A structure that contains joystick device event information.
 {|
 |Uint32
 |'''type'''
-|SDL_JOYDEVICEADDED or SDL_JOYDEVICEREMOVED
+|SDL_EVENT_JOYSTICK_ADDED or SDL_EVENT_JOYSTICK_REMOVED
 |-
 |Uint32
 |'''timestamp'''
@@ -24,7 +24,7 @@ A structure that contains joystick device event information.
 |-
 |Sint32
 |'''which'''
-|the joystick device index for the SDL_JOYDEVICEADDED event or the instance id for the SDL_JOYDEVICEREMOVED event
+|the joystick device index for the SDL_EVENT_JOYSTICK_ADDED event or the instance id for the SDL_EVENT_JOYSTICK_REMOVED event
 |}
 
 == Remarks ==
@@ -38,7 +38,7 @@ You would access it through the event's <code>jdevice</code> field.
 :[[SDL_Event]]
 
 == Related Functions ==
-:[[SDL_JoystickOpen]]
+:[[SDL_OpenJoystick]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]

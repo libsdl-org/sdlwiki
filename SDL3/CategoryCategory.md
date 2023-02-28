@@ -22,7 +22,7 @@ To be consistent with the C2 category scheme, all categories start with the word
 - [CategoryEvents](CategoryEvents)
 - [CategoryFilesystem](CategoryFilesystem)
 - [CategoryForceFeedback](CategoryForceFeedback)
-- [CategoryGameController](CategoryGameController)
+- [CategoryGamepad](CategoryGamepad)
 - [CategoryHints](CategoryHints)
 - [CategoryInit](CategoryInit)
 - [CategoryInput](CategoryInput)

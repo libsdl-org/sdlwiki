@@ -25,9 +25,9 @@ By default no extra gamecontroller db entries are specified.
 
 
 == Remarks ==
-This hint must be set before calling [[SDL_Init]](SDL_INIT_GAMECONTROLLER).
+This hint must be set before calling [[SDL_Init]](SDL_INIT_GAMEPAD).
 
-You can update mappings after the system is initialized with [[SDL_GameControllerMappingForGUID]]() and [[SDL_GameControllerAddMapping]]().
+You can update mappings after the system is initialized with [[SDL_GetGamepadMappingForGUID]]() and [[SDL_AddGamepadMapping]]().
 
 ----
 [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]

@@ -20,28 +20,28 @@ These functions are for internal use and not meant to be documented:
 ==== SDL_gamecontroller.h ====
 
 These functions are in the process of being documented by Jorgen
-* [[SDL_IsGameController]]
+* [[SDL_IsGamepad]]
 * [[SDL_GameControllerNameForIndex]]
-* [[SDL_GameControllerOpen]]
-* [[SDL_GameControllerName]]
-* [[SDL_GameControllerGetAttached]]
-* [[SDL_GameControllerGetJoystick]]
+* [[SDL_OpenGamepad]]
+* [[SDL_GetGamepadName]]
+* [[SDL_GamepadConnected]]
+* [[SDL_GetGamepadJoystick]]
 * [[SDL_GameControllerEventState]]
-* [[SDL_GameControllerGetAxisFromString]]
-* [[SDL_GameControllerGetButtonFromString]]
-* [[SDL_GameControllerGetButton]]
-* [[SDL_GameControllerClose]]
+* [[SDL_GetGamepadAxisFromString]]
+* [[SDL_GetGamepadButtonFromString]]
+* [[SDL_GetGamepadButton]]
+* [[SDL_CloseGamepad]]
 
 These functions are currently documented as "draft" only and need improvements:
 
-* [[SDL_GameControllerMapping]]
-* [[SDL_GameControllerMappingForGUID]]
-* [[SDL_GameControllerGetAxis]]
-* [[SDL_GameControllerGetBindForAxis]]
-* [[SDL_GameControllerGetBindForButton]]
-* [[SDL_GameControllerGetStringForAxis]]
-* [[SDL_GameControllerGetStringForButton]]
-* [[SDL_GameControllerUpdate]]
+* [[SDL_GetGamepadMapping]]
+* [[SDL_GetGamepadMappingForGUID]]
+* [[SDL_GetGamepadAxis]]
+* [[SDL_GetGamepadBindForAxis]]
+* [[SDL_GetGamepadBindForButton]]
+* [[SDL_GetGamepadStringForAxis]]
+* [[SDL_GetGamepadStringForButton]]
+* [[SDL_UpdateGamepads]]
 
 ==== SDL_hints.h ====
 
@@ -62,18 +62,18 @@ The input API was never implemented and has been removed, so ignore these functi
 These functions are currently documented as "draft" only and need improvements:
 * [[SDL_JoystickNameForIndex]]
 * [[SDL_JoystickGetDeviceGUID]]
-* [[SDL_JoystickGetGUID]]
-* [[SDL_JoystickGetGUIDString]]
-* [[SDL_JoystickGetGUIDFromString]]
-* [[SDL_JoystickGetAttached]]
-* [[SDL_JoystickInstanceID]]
+* [[SDL_GetJoystickGUID]]
+* [[SDL_GetJoystickGUIDString]]
+* [[SDL_GetJoystickGUIDFromString]]
+* [[SDL_JoystickConnected]]
+* [[SDL_GetJoystickInstanceID]]
 
 ==== SDL_keyboard.h ====
 
 These functions are currently documented as "draft" only and need improvements:
-* [[SDL_IsTextInputActive]]
+* [[SDL_TextInputActive]]
 * [[SDL_HasScreenKeyboardSupport]]
-* [[SDL_IsScreenKeyboardShown]]
+* [[SDL_ScreenKeyboardShown]]
 
 ==== SDL_main.h ====
 
@@ -103,12 +103,12 @@ These functions are currently documented as "draft" only and need improvements:
 These functions are currently documented as "draft" only and need improvements:
 * [[SDL_CreateWindowAndRenderer]]
 * [[SDL_RenderTargetSupported]]
-* [[SDL_GetRendererOutputSize]]
+* [[SDL_GetCurrentRenderOutputSize]]
 * [[SDL_GetRenderTarget]]
-* [[SDL_RenderSetLogicalSize]]
-* [[SDL_RenderGetLogicalSize]]
-* [[SDL_RenderSetScale]]
-* [[SDL_RenderGetScale]]
+* [[SDL_SetRenderLogicalPresentation]]
+* [[SDL_GetRenderLogicalPresentation]]
+* [[SDL_SetRenderScale]]
+* [[SDL_GetRenderScale]]
 
 ==== SDL_rwops.h ====
 
@@ -137,7 +137,7 @@ These functions are currently documented as "draft" only and need improvements:
 * [[SDL_AndroidGetExternalStorageState]]
 * [[SDL_AndroidGetExternalStoragePath]]
 * [[SDL_Direct3D9GetAdapterIndex]]
-* [[SDL_RenderGetD3D9Device]]
+* [[SDL_GetRenderD3D9Device]]
 
 ==== SDL_thread.h ====
 
@@ -160,7 +160,7 @@ These functions are currently documented as "draft" only and need improvements:
 * [[SDL_GetDisplayName]]
 * [[SDL_GL_GetCurrentContext]]
 * [[SDL_GL_GetCurrentWindow]]
-* [[SDL_GetWindowDisplayIndex]]
+* [[SDL_GetDisplayForWindow]]
 * [[SDL_SetWindowMinimumSize]]
 * [[SDL_GetWindowMinimumSize]]
 * [[SDL_SetWindowMaximumSize]]
@@ -329,13 +329,13 @@ These functions maybe do not need to be documented here
 === Missing enumerations ===
 
 * [[SDL_eventaction]]
-* [[SDL_GameControllerBindType]]
+* [[SDL_GamepadBindingType]]
 * --([[SDL_SystemCursor]])-- (only needed in [[SDL_CreateSystemCursor]])
 * [[WindowShapeMode]]
 
 These enumerations are currently documented as "draft" only and need improvements:
-* [[SDL_GameControllerAxis]]
-* [[SDL_GameControllerButton]]
+* [[SDL_GamepadAxis]]
+* [[SDL_GamepadButton]]
 * [[SDL_MessageBoxButtonFlags]]
 * [[SDL_MessageBoxColorType]]
 * [[SDL_MessageBoxFlags]]
@@ -350,12 +350,12 @@ These enumerations are currently documented as "draft" only and need improvement
 These structures are currently documented as "draft" only and need improvements:
 
 * [[SDL_JoyDeviceEvent]]
-* [[SDL_ControllerAxisEvent]]
-* [[SDL_ControllerButtonEvent]]
-* [[SDL_ControllerDeviceEvent]]
+* [[SDL_GamepadAxisEvent]]
+* [[SDL_GamepadButtonEvent]]
+* [[SDL_GamepadDeviceEvent]]
 
 ==== SDL_gamecontroller.h ====
-* [[SDL_GameControllerButtonBind]]
+* [[SDL_GamepadBinding]]
 
 ==== SDL_haptic.h ====
 These structures are currently documented as "draft" only and need improvements:

@@ -7,7 +7,7 @@
 
 
 = SDL_HINT_IME_INTERNAL_EDITING =
-A hint that specifies whether certain IMEs should handle text editing internally instead of sending [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.
+A hint that specifies whether certain IMEs should handle text editing internally instead of sending [[SDL_TextEditingEvent|SDL_EVENT_TEXT_EDITING]] events.
 
 
 
@@ -15,15 +15,15 @@ A hint that specifies whether certain IMEs should handle text editing internally
 == Values ==
 {|
 |0
-|[[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text. (default)
+|[[SDL_TextEditingEvent|SDL_EVENT_TEXT_EDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text. (default)
 |-
 |1
-|If supported by the IME then [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are not sent, and text that is being composed will be rendered in its own UI.
+|If supported by the IME then [[SDL_TextEditingEvent|SDL_EVENT_TEXT_EDITING]] events are not sent, and text that is being composed will be rendered in its own UI.
 |}
 
 
 == Default ==
-By default [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
+By default [[SDL_TextEditingEvent|SDL_EVENT_TEXT_EDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
 
 
 

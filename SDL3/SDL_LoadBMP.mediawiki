@@ -20,7 +20,7 @@ an error; call [[SDL_GetError]]() for more information.
 
 == Remarks ==
 
-The new surface should be freed with [[SDL_FreeSurface]](). Not doing so will
+The new surface should be freed with [[SDL_DestroySurface]](). Not doing so will
 result in a memory leak.
 
 SDL_LoadBMP is a pre-processor macro defined to call [[SDL_LoadBMP_RW]]() with
@@ -41,11 +41,11 @@ if (!image) {
 /* Do something with image here. */
 
 /* Make sure to eventually release the surface resource */
-SDL_FreeSurface(image);
+SDL_DestroySurface(image);
 </syntaxhighlight>
 
 == Related Functions ==
-:[[SDL_FreeSurface]]
+:[[SDL_DestroySurface]]
 :[[SDL_LoadBMP_RW]]
 :[[SDL_RWFromFile]]
 :[[SDL_SaveBMP]]

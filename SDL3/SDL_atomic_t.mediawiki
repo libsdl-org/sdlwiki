@@ -54,11 +54,11 @@ int main(int argc, char **argv)
 	SDL_Event e;
 	while(1) {
 		while (SDL_PollEvent(&e)) {
-			if (e.type == SDL_QUIT) {
+			if (e.type == SDL_EVENT_QUIT) {
 				goto quit;
 			}
 		}
-		SDL_FillRect(screen, NULL, 0xffffffff);
+		SDL_FillSurfaceRect(screen, NULL, 0xffffffff);
 		SDL_UpdateWindowSurface(win);
 
 		/* Add one frame */

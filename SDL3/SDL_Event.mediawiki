@@ -56,15 +56,15 @@ A union that contains structures for the different event types.
 |'''jdevice'''
 |joystick device event data
 |-
-|[[SDL_ControllerAxisEvent]]
+|[[SDL_GamepadAxisEvent]]
 |'''caxis'''
 |game controller axis event data
 |-
-|[[SDL_ControllerButtonEvent]]
+|[[SDL_GamepadButtonEvent]]
 |'''cbutton'''
 |game controller button event data
 |-
-|[[SDL_ControllerDeviceEvent]]
+|[[SDL_GamepadDeviceEvent]]
 |'''cdevice'''
 |game controller device event data
 |-
@@ -117,9 +117,9 @@ The [[SDL_PollEvent]]() function takes a pointer to an [[SDL_Event]] structure t
 <syntaxhighlight lang='c++'>
   switch (test_event.type) {
 </syntaxhighlight>
-We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_MOUSEMOTION is, more than likely, the event we're looking for. Looking at the [[#table|table]] below tells us that SDL_MOUSEMOTION events are handled within the [[SDL_MouseMotionEvent]] structure which is the '''motion''' member of [[SDL_Event]]. We can check for the SDL_MOUSEMOTION event '''type''' within our ```switch``` statement like so:
+We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_EVENT_MOUSE_MOTION is, more than likely, the event we're looking for. Looking at the [[#table|table]] below tells us that SDL_EVENT_MOUSE_MOTION events are handled within the [[SDL_MouseMotionEvent]] structure which is the '''motion''' member of [[SDL_Event]]. We can check for the SDL_EVENT_MOUSE_MOTION event '''type''' within our ```switch``` statement like so:
 <syntaxhighlight lang='c++'>
-    case SDL_MOUSEMOTION:
+    case SDL_EVENT_MOUSE_MOTION:
 </syntaxhighlight>
 All we need to do now is read the information out of the '''motion''' member of test_event.
 <syntaxhighlight lang='c++'>
@@ -161,15 +161,15 @@ SDL_PushEvent(&user_event);
 |'''adevice'''
 |-
 |SDL_EVENT_GAMEPAD_AXIS_MOTION
-|[[SDL_ControllerAxisEvent]]
+|[[SDL_GamepadAxisEvent]]
 |'''caxis'''
 |-
 |SDL_EVENT_GAMEPAD_BUTTON_DOWN<br/>SDL_EVENT_GAMEPAD_BUTTON_UP
-|[[SDL_ControllerButtonEvent]]
+|[[SDL_GamepadButtonEvent]]
 |'''cbutton'''
 |-
 |SDL_EVENT_GAMEPAD_ADDED<br/>SDL_EVENT_GAMEPAD_REMOVED<br/>SDL_EVENT_GAMEPAD_REMAPPED
-|[[SDL_ControllerDeviceEvent]]
+|[[SDL_GamepadDeviceEvent]]
 |'''cdevice'''
 |-dg
 |SDL_EVENT_DROP_FILE<br/>SDL_EVENT_DROP_TEXT<br/>SDL_EVENT_DROP_BEGIN<br/>SDL_EVENT_DROP_COMPLETE
@@ -246,9 +246,9 @@ SDL_PushEvent(&user_event);
 
 == Related Structures ==
 :[[SDL_AudioDeviceEvent]]
-:[[SDL_ControllerAxisEvent]]
-:[[SDL_ControllerButtonEvent]]
-:[[SDL_ControllerDeviceEvent]]
+:[[SDL_GamepadAxisEvent]]
+:[[SDL_GamepadButtonEvent]]
+:[[SDL_GamepadDeviceEvent]]
 :[[SDL_DropEvent]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyButtonEvent]]

@@ -72,14 +72,14 @@ int main(int argc, char *argv[]) {
 
 == Remarks ==
 An [[SDL_Point]] defines single two dimensional point. It can be used not only for points, but also for size.
-[[SDL_Point]] is used by [[SDL_EnclosePoints]]() to check if array of points is inside rectangle ([[SDL_Rect]]).
+[[SDL_Point]] is used by [[SDL_GetRectEnclosingPoints]]() to check if array of points is inside rectangle ([[SDL_Rect]]).
 You can also make your own functions using [[SDL_Point]] to simplify your code, it's very helpful.
 
 == Related Structures ==
 :[[SDL_Rect]]
 
 == Related Functions ==
-:[[SDL_EnclosePoints]]
+:[[SDL_GetRectEnclosingPoints]]
 
 ----
 [[CategoryStruct]], [[CategoryRect]]

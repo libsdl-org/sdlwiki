@@ -15,7 +15,7 @@ Point structure like [[SDL_Point]], but uses float instead of int for coordinate
 
 == Related Functions ==
 :[[SDL_RenderGeometry]]
-:[[SDL_PointInFRect]]
+:[[SDL_PointInRectFloat]]
 
 == Related Structures ==
 :[[SDL_Vertex]]

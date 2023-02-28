@@ -6,7 +6,7 @@ A structure that contains joystick hat position change event information.
 {|
 |Uint32
 |'''type'''
-|SDL_JOYHATMOTION
+|SDL_EVENT_JOYSTICK_HAT_MOTION
 |-
 |Uint32
 |'''timestamp'''
@@ -26,9 +26,9 @@ A structure that contains joystick hat position change event information.
 |}
 
 == Remarks ==
-[[SDL_JoyHatEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYHATMOTION is reported.  You would access it through the event's <code>jhat</code> field.
+[[SDL_JoyHatEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_EVENT_JOYSTICK_HAT_MOTION is reported.  You would access it through the event's <code>jhat</code> field.
 
-An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
+An SDL_EVENT_JOYSTICK_HAT_MOTION event occurs whenever a user moves a hat on the joystick.
 
 '''value''' may be one of the following:
 {|
@@ -56,7 +56,7 @@ Note that zero means the POV is centered.
 
 == Related Functions ==
 :[[SDL_JoystickEventState]]
-:[[SDL_JoystickGetHat]]
+:[[SDL_GetJoystickHat]]
 
 ----
 [[CategoryStruct]], [[CategoryEvents]]

@@ -6,7 +6,7 @@
 ## Introduction
 This category contains functions for handling advanced, platform-specific window management tasks.
 
-Your application has access to a special type of event, [[SDL_SysWMEvent|SDL_SYSWMEVENT]], which uses the [[SDL_SysWMmsg]] structure and contains window-manager specific information.  This arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
+Your application has access to a special type of event, [[SDL_SysWMEvent|SDL_EVENT_SYSWM]], which uses the [[SDL_SysWMmsg]] structure and contains window-manager specific information.  This arrives whenever an unhandled window event occurs.  This event is ignored by default, but you can enable it with [[SDL_EventState]]().
 
 ## Enumerations
 

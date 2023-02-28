@@ -15,7 +15,7 @@ A structure that contains an efficient, driver-specific representation of pixel 
 :[[SDL_GetTextureColorMod]]
 :[[SDL_LockTexture]]
 :[[SDL_QueryTexture]]
-:[[SDL_RenderCopy]]
+:[[SDL_RenderTexture]]
 :[[SDL_SetTextureAlphaMod]]
 :[[SDL_SetTextureBlendMode]]
 :[[SDL_SetTextureColorMod]]

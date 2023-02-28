@@ -6,8 +6,8 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
 
 
-= SDL_ControllerAxisEvent =
-A structure that contains game controller axis motion event information.
+= SDL_GamepadDeviceEvent =
+A structure that contains controller device event information.
 
 
 
@@ -16,29 +16,18 @@ A structure that contains game controller axis motion event information.
 {|
 |Uint32
 |'''type'''
-|SDL_ CONTROLLERAXISMOTION
+|SDL_EVENT_GAMEPAD_ADDED, SDL_EVENT_GAMEPAD_REMOVED or SDL_EVENT_GAMEPAD_REMAPPED
 |-
 |Uint32
 |'''timestamp'''
 |the timestamp of the event
 |-
-|SDL_JoystickID
+|Sint32
 |'''which'''
-|the joystick instance id
-|-
-|Uint8
-|'''axis'''
-|the controller axis ([[SDL_GameControllerAxis]])
-|-
-|Sint16
-|'''value'''
-|the axis value (range: -32768 to 32767)
+|the joystick device index for the SDL_EVENT_GAMEPAD_ADDED event or instance id for the SDL_EVENT_GAMEPAD_REMOVED or SDL_EVENT_GAMEPAD_REMAPPED event
 |}
 
 
-
-== Remarks ==
-The directions "down" and "right" have positive values here.
 
 == Related Enumerations ==
 :[[SDL_EventType]]

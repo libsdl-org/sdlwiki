@@ -1,7 +1,7 @@
 # CategoryDraft
 
 <!-- BEGIN CATEGORY LIST -->
-- [CategoryGameController](CategoryGameController)
+- [CategoryGamepad](CategoryGamepad)
 - [CategoryInput](CategoryInput)
 - [CategoryStandard](CategoryStandard)
 - [CategoryTemplate](CategoryTemplate)
@@ -17,9 +17,9 @@
 - [SDL_BlendOperation](SDL_BlendOperation)
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 - [SDL_ComposeCustomBlendMode](SDL_ComposeCustomBlendMode)
-- [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
-- [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
-- [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+- [SDL_GamepadAxisEvent](SDL_GamepadAxisEvent)
+- [SDL_GamepadButtonEvent](SDL_GamepadButtonEvent)
+- [SDL_GamepadDeviceEvent](SDL_GamepadDeviceEvent)
 - [SDL_CreateCursor](SDL_CreateCursor)
 - [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
 - [SDL_CreateRGBSurfaceWithFormatFrom](SDL_CreateRGBSurfaceWithFormatFrom)
@@ -52,7 +52,7 @@
 - [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
 - [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode)
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
-- [SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)
+- [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
 - [SDL_GetRenderTarget](SDL_GetRenderTarget)
 - [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 - [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
