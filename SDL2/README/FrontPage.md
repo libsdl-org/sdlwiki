@@ -1,7 +1,6 @@
 # All READMEs available here
 
 - [wince](wince)
-- [FrontPage](FrontPage)
 - [versions](versions)
 - [android](android)
 - [psp](psp)
