@@ -1,10 +1,6 @@
 # CategoryDraft
 
 <!-- BEGIN CATEGORY LIST -->
-- [CategoryGameController](CategoryGameController)
-- [CategoryInput](CategoryInput)
-- [CategoryStandard](CategoryStandard)
-- [CategoryTemplate](CategoryTemplate)
 - [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
 - [SDL_BlendFactor](SDL_BlendFactor)
 - [SDL_BlendOperation](SDL_BlendOperation)

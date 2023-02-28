@@ -1,0 +1,25 @@
+#  [CategoryEvents](CategoryEvents)
+
+<!-- BEGIN CATEGORY LIST -->
+- [SDL_AddEventWatch](SDL_AddEventWatch)
+- [SDL_DelEventWatch](SDL_DelEventWatch)
+- [SDL_FilterEvents](SDL_FilterEvents)
+- [SDL_FlushEvent](SDL_FlushEvent)
+- [SDL_FlushEvents](SDL_FlushEvents)
+- [SDL_GetEventFilter](SDL_GetEventFilter)
+- [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)
+- [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
+- [SDL_GetTouchDevice](SDL_GetTouchDevice)
+- [SDL_GetTouchFinger](SDL_GetTouchFinger)
+- [SDL_HasEvent](SDL_HasEvent)
+- [SDL_HasEvents](SDL_HasEvents)
+- [SDL_PeepEvents](SDL_PeepEvents)
+- [SDL_PollEvent](SDL_PollEvent)
+- [SDL_PumpEvents](SDL_PumpEvents)
+- [SDL_PushEvent](SDL_PushEvent)
+- [SDL_RegisterEvents](SDL_RegisterEvents)
+- [SDL_SetEventFilter](SDL_SetEventFilter)
+- [SDL_WaitEvent](SDL_WaitEvent)
+- [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+<!-- END CATEGORY LIST -->
+
