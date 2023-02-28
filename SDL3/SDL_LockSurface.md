@@ -29,10 +29,9 @@ Between calls to [SDL_LockSurface](SDL_LockSurface)() /
 you are done accessing the surface, you should use
 [SDL_UnlockSurface](SDL_UnlockSurface)() to release it.
 
-Not all surfaces require locking. If
-[`SDL_MUSTLOCK](SDL_MUSTLOCK)(surface)` evaluates to 0, then you can read
-and write to the surface at any time, and the pixel format of the surface
-will not change.
+Not all surfaces require locking. If `SDL_MUSTLOCK(surface)` evaluates to
+0, then you can read and write to the surface at any time, and the pixel
+format of the surface will not change.
 
 ## Version
 

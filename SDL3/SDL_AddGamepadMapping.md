@@ -28,9 +28,13 @@ string value from [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)(),
 name is the human readable string for the device and mappings are gamepad
 mappings to joystick ones. Under Windows there is a reserved GUID of
 "xinput" that covers all XInput devices. The mapping format for joystick
-is: {| |bX |a joystick button, index X |- |hX.Y |hat X with value Y |- |aX
-|axis X of the joystick |} Buttons can be used as a gamepad axes and vice
-versa.
+is:
+
+- `bX`: a joystick button, index X
+- `hX.Y`: hat X with value Y
+- `aX`: axis X of the joystick
+
+Buttons can be used as a gamepad axes and vice versa.
 
 This string shows an example of a valid mapping for a gamepad:
 

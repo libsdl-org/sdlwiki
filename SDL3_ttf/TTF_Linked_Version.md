@@ -17,8 +17,8 @@ Returns a pointer to the version information.
 ## Remarks
 
 This function gets the version of the dynamically linked SDL_ttf library.
-This is separate from the SDL_[TTF_VERSION](TTF_VERSION)() macro, which
-tells you what version of the SDL_ttf headers you compiled against.
+This is separate from the SDL_TTF_VERSION() macro, which tells you what
+version of the SDL_ttf headers you compiled against.
 
 This returns static internal data; do not free or modify it!
 

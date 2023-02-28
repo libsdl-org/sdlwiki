@@ -60,9 +60,8 @@ whether this function succeeds or not. SDL_mixer reads everything it needs
 from the RWops during this call in any case.
 
 As a convenience, there is a function to read files from disk without
-having to deal with SDL_RWops: [`Mix_LoadMUS](Mix_LoadMUS)("filename.mp3")`
-will manage those details for you (but not let you specify the music type
-explicitly)..
+having to deal with SDL_RWops: `Mix_LoadMUS("filename.mp3")` will manage
+those details for you (but not let you specify the music type explicitly)..
 
 When done with this music, the app should dispose of it with a call to
 [Mix_FreeMusic](Mix_FreeMusic)().

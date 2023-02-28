@@ -43,8 +43,8 @@ whether this function succeeds or not. SDL_mixer reads everything it needs
 from the RWops during this call in any case.
 
 As a convenience, there is a function to read files from disk without
-having to deal with SDL_RWops: [`Mix_LoadMUS](Mix_LoadMUS)("filename.mp3")`
-will manage those details for you.
+having to deal with SDL_RWops: `Mix_LoadMUS("filename.mp3")` will manage
+those details for you.
 
 This function attempts to guess the file format from incoming data. If the
 caller knows the format, or wants to force it, it should use

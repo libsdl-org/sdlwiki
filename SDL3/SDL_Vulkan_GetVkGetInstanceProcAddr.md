@@ -27,7 +27,7 @@ headers are not included here. You should cast the return value of this
 function to that type, e.g.
 
 `vkGetInstanceProcAddr =
-(PFN_vkGetInstanceProcAddr)[SDL_Vulkan_GetVkGetInstanceProcAddr](SDL_Vulkan_GetVkGetInstanceProcAddr)();`
+(PFN_vkGetInstanceProcAddr)SDL_Vulkan_GetVkGetInstanceProcAddr();`
 
 ## Version
 
