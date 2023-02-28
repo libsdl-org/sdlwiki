@@ -1,6 +1,5 @@
 # All READMEs available here
 
-- []()
 - [android](android)
 - [cmake](cmake)
 - [directfb](directfb)
