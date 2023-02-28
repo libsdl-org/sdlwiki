@@ -19,7 +19,7 @@ SDL supports most popular flavors of Unix: Linux 2.6+, the various BSDs (FreeBSD
 
 First! Do you need to compile SDL yourself? It's possible your distribution's package manager already did it for you!
 
-Debian-based systems (including Ubuntu) can simply do '''sudo apt-get install libsdl2''' to get the library installed system-wide, and all sorts of other useful dependencies, too. '''sudo apt-get install libsdl2-dev''' will install everything necessary to build programs that use SDL. Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-linux.md docs/README-linux.md] for a more complete discussion of packages involved.
+Debian-based systems (including Ubuntu) can simply do '''sudo apt-get install libsdl2-2.0-0''' to get the library installed system-wide, and all sorts of other useful dependencies, too. '''sudo apt-get install libsdl2-dev''' will install everything necessary to build programs that use SDL. Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-linux.md docs/README-linux.md] for a more complete discussion of packages involved.
 
 Red Hat-based systems (including Fedora) can simply do '''sudo dnf install SDL2''' to get the library installed system-wide, or "sudo dnf install SDL2-devel" to get headers and other build requirements ready for compiling your own SDL programs.
 
