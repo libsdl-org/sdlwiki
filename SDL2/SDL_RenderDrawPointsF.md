@@ -24,6 +24,45 @@ int SDL_RenderDrawPointsF(SDL_Renderer * renderer,
 
 Return 0 on success, or -1 on error
 
+## Example
+
+```c
+// Calculate centre of the screen
+
+double x_centre = WIDTH / 2;
+double y_centre = HEIGHT / 2;
+
+...
+
+// Initialize three points of triangle
+
+SDL_FPoint a = {x_centre, y_centre};
+SDL_FPoint b = {x_centre, y_centre - 10.5};
+SDL_FPoint c = {x_centre - 10.5, y_centre};
+
+// Initialize array of points
+
+SDL_FPoint triangle[] = {
+    a,
+    b,
+    c
+};
+
+...
+
+// Set render color to white
+
+SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+SDL_RenderClear(renderer);
+
+// Draw triangle
+
+SDL_RenderDrawPointsF(renderer, triangle, 3);
+
+SDL_RenderPresent(renderer);
+
+```
+
 ## Version
 
 This function is available since SDL 2.0.10.
