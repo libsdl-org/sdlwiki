@@ -6,7 +6,7 @@ Copy a portion of the texture to the current rendering target at subpixel precis
 ## Syntax
 
 ```c
-int SDL_RenderTexture(SDL_Renderer *renderer, SDL_Texture *texture, const SDL_Rect *srcrect, const SDL_FRect *dstrect);
+int SDL_RenderTexture(SDL_Renderer *renderer, SDL_Texture *texture, const SDL_FRect *srcrect, const SDL_FRect *dstrect);
 
 ```
 

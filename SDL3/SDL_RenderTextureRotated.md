@@ -7,7 +7,7 @@ Copy a portion of the source texture to the current rendering target, with rotat
 
 ```c
 int SDL_RenderTextureRotated(SDL_Renderer *renderer, SDL_Texture *texture,
-                             const SDL_Rect *srcrect, const SDL_FRect *dstrect,
+                             const SDL_FRect *srcrect, const SDL_FRect *dstrect,
                              const double angle, const SDL_FPoint *center,
                              const SDL_RendererFlip flip);
 
