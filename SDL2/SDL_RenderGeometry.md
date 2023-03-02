@@ -28,6 +28,36 @@ int SDL_RenderGeometry(SDL_Renderer *renderer,
 
 Return 0 on success, or -1 if the operation is not supported
 
+## Example
+
+```c
+// Create three vertices to render
+
+SDL_Vertex vertex_1 = {{10.5, 10.5}, {255, 0, 0, 255}, {1, 1}};
+SDL_Vertex vertex_2 = {{20.5, 10.5}, {255, 0, 0, 255}, {1, 1}};
+SDL_Vertex vertex_3 = {{10.5, 20.5}, {255, 0, 0, 255}, {1, 1}};
+
+// Put them into array
+
+SDL_Vertex vertices[] = {
+    vertex_1,
+    vertex_2,
+    vertex_3
+};
+
+// Set renderer color
+
+SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+SDL_RenderClear(renderer);
+
+// Render red triangle
+
+SDL_RenderGeometry(renderer, texture, vertices, NULL, 3, 0);
+
+SDL_RenderPresent(renderer);
+
+```
+
 ## Version
 
 This function is available since SDL 2.0.18.
