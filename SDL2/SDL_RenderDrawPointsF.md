@@ -24,6 +24,10 @@ int SDL_RenderDrawPointsF(SDL_Renderer * renderer,
 
 Return 0 on success, or -1 on error
 
+## Version
+
+This function is available since SDL 2.0.10.
+
 ## Example
 
 ```c
@@ -62,10 +66,6 @@ SDL_RenderDrawPointsF(renderer, triangle, 3);
 SDL_RenderPresent(renderer);
 
 ```
-
-## Version
-
-This function is available since SDL 2.0.10.
 
 ----
 [CategoryAPI](CategoryAPI)

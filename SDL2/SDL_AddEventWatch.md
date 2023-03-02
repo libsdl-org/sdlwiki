@@ -36,6 +36,16 @@ events by a filter callback set with
 [SDL_SetEventFilter](SDL_SetEventFilter)(), nor for events posted by the
 user through [SDL_PeepEvents](SDL_PeepEvents)().
 
+## Version
+
+This function is available since SDL 2.0.0.
+
+## Related Functions
+
+* [SDL_DelEventWatch](SDL_DelEventWatch)
+* [SDL_SetEventFilter](SDL_SetEventFilter)
+
+
 ## Example
 
 ```c
@@ -49,15 +59,6 @@ int MyEventFunction(void *userdata, SDL_Event *event) {
 SDL_AddEventWatch(MyEventFunction, NULL);
 
 ```
-
-## Version
-
-This function is available since SDL 2.0.0.
-
-## Related Functions
-
-* [SDL_DelEventWatch](SDL_DelEventWatch)
-* [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----
 [CategoryAPI](CategoryAPI)

@@ -28,6 +28,16 @@ int SDL_RenderGeometry(SDL_Renderer *renderer,
 
 Return 0 on success, or -1 if the operation is not supported
 
+## Version
+
+This function is available since SDL 2.0.18.
+
+## Related Functions
+
+* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+* [SDL_Vertex](SDL_Vertex)
+
+
 ## Example
 
 ```c
@@ -57,15 +67,6 @@ SDL_RenderGeometry(renderer, texture, vertices, NULL, 3, 0);
 SDL_RenderPresent(renderer);
 
 ```
-
-## Version
-
-This function is available since SDL 2.0.18.
-
-## Related Functions
-
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-* [SDL_Vertex](SDL_Vertex)
 
 ----
 [CategoryAPI](CategoryAPI)
