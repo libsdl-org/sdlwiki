@@ -36,6 +36,20 @@ events by a filter callback set with
 [SDL_SetEventFilter](SDL_SetEventFilter)(), nor for events posted by the
 user through [SDL_PeepEvents](SDL_PeepEvents)().
 
+## Example
+
+```c
+int MyEventFunction(void *userdata, SDL_Event *event) {
+    // Do things with userdata and event
+
+    return 0; // Value will be ignored
+}
+
+// ...
+SDL_AddEventWatch(MyEventFunction, NULL);
+
+```
+
 ## Version
 
 This function is available since SDL 2.0.0.
