@@ -24,6 +24,29 @@ void SDL_AddHintCallback(const char *name,
 
 This function is available since SDL 2.0.0.
 
+## Example
+
+```c
+SDL_SetHint(SDL_HINT_XINPUT_ENABLED, "1");
+
+...
+
+SDL_Init(SDL_INIT_EVERYTHING);
+
+...
+
+void* SayHi() {
+    std::cout << "Hi" << std::endl;
+
+    return 0;
+}
+
+...
+
+SDL_AddHintCallback("SDL_HINT_XINPUT_ENABLED", SDL_HintCallback(), SayHi());
+
+```
+
 ## Related Functions
 
 * [SDL_DelHintCallback](SDL_DelHintCallback)
