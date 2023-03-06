@@ -51,6 +51,11 @@ callback needs to adjust for variances.
 
 This function is available since SDL 2.0.0.
 
+## Related Functions
+
+* [SDL_RemoveTimer](SDL_RemoveTimer)
+
+
 ## Example
 
 ```c
@@ -85,10 +90,6 @@ while(!quit) {
 
 SDL_RemoveTimer(timerID);
 ```
-
-## Related Functions
-
-* [SDL_RemoveTimer](SDL_RemoveTimer)
 
 ----
 [CategoryAPI](CategoryAPI)

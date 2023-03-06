@@ -25,6 +25,11 @@ Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
 
 This function is available since SDL 2.0.0.
 
+## Related Functions
+
+* [SDL_AddTimer](SDL_AddTimer)
+
+
 ## Example
 
 ```c
@@ -59,10 +64,6 @@ while(!quit) {
 
 SDL_RemoveTimer(timerID);
 ```
-
-## Related Functions
-
-* [SDL_AddTimer](SDL_AddTimer)
 
 ----
 [CategoryAPI](CategoryAPI)

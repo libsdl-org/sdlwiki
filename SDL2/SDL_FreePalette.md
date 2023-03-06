@@ -20,7 +20,13 @@ void SDL_FreePalette(SDL_Palette * palette);
 
 This function is available since SDL 2.0.0.
 
+## Related Functions
+
+* [SDL_AllocPalette](SDL_AllocPalette)
+
+
 ## Example
+
 ```c
 SDL_Palette* palette = nullptr;
 
@@ -50,10 +56,6 @@ SDL_SetRenderDrawColor(renderer, palette->colors[0].r, palette->colors[0].g, pal
 SDL_FreePalette(palette);
 palette = nullptr;
 ```
-
-## Related Functions
-
-* [SDL_AllocPalette](SDL_AllocPalette)
 
 ----
 [CategoryAPI](CategoryAPI)

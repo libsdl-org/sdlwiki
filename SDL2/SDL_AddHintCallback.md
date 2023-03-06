@@ -24,6 +24,11 @@ void SDL_AddHintCallback(const char *name,
 
 This function is available since SDL 2.0.0.
 
+## Related Functions
+
+* [SDL_DelHintCallback](SDL_DelHintCallback)
+
+
 ## Example
 
 ```c
@@ -54,10 +59,6 @@ while(SDL_PollEvent(&event) != 0)
 
 SDL_AddHintCallback(SDL_HINT_XINPUT_ENABLED, callback, const_cast<char*>("SDL"));
 ```
-
-## Related Functions
-
-* [SDL_DelHintCallback](SDL_DelHintCallback)
 
 ----
 [CategoryAPI](CategoryAPI)

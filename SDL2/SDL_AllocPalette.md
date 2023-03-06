@@ -30,7 +30,13 @@ The palette entries are initialized to white.
 
 This function is available since SDL 2.0.0.
 
+## Related Functions
+
+* [SDL_FreePalette](SDL_FreePalette)
+
+
 ## Example
+
 ```c
 SDL_Palette* palette = nullptr;
 
@@ -60,10 +66,6 @@ SDL_SetRenderDrawColor(renderer, palette->colors[0].r, palette->colors[0].g, pal
 SDL_FreePalette(palette);
 palette = nullptr;
 ```
-
-## Related Functions
-
-* [SDL_FreePalette](SDL_FreePalette)
 
 ----
 [CategoryAPI](CategoryAPI)
