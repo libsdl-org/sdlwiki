@@ -36,6 +36,8 @@ This function is available since SDL_net 2.0.0.
 ## Related Functions
 
 * [SDLNet_TCP_Close](SDLNet_TCP_Close)
+* [SDLNet_TCP_OpenServer](SDLNet_TCP_OpenServer)
+* [SDLNet_TCP_OpenClient](SDLNet_TCP_OpenClient)
 
 ----
 [CategoryAPI](CategoryAPI)
