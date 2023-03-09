@@ -348,6 +348,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_GetSurfaceColorKey](SDL_GetSurfaceColorKey)
 - [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
 - [SDL_GetSystemRAM](SDL_GetSystemRAM)
+- [SDL_GetSystemTheme](SDL_GetSystemTheme)
 - [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
