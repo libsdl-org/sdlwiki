@@ -6,16 +6,16 @@ Set an atomic variable to a value.
 ## Syntax
 
 ```c
-int SDL_AtomicSet(SDL_atomic_t *a, int v);
+int SDL_AtomicSet(SDL_AtomicInt *a, int v);
 
 ```
 
 ## Function Parameters
 
-|           |                                                                      |
-| --------- | -------------------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| **v**     | the desired value                                                    |
+|           |                                                                        |
+| --------- | ---------------------------------------------------------------------- |
+| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
+| **v**     | the desired value                                                      |
 
 ## Return Value
 

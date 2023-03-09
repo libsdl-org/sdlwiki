@@ -6,16 +6,16 @@ Add to an atomic variable.
 ## Syntax
 
 ```c
-int SDL_AtomicAdd(SDL_atomic_t *a, int v);
+int SDL_AtomicAdd(SDL_AtomicInt *a, int v);
 
 ```
 
 ## Function Parameters
 
-|           |                                                                      |
-| --------- | -------------------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| **v**     | the desired value to add                                             |
+|           |                                                                        |
+| --------- | ---------------------------------------------------------------------- |
+| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
+| **v**     | the desired value to add                                               |
 
 ## Return Value
 

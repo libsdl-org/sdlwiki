@@ -6,15 +6,15 @@ Get the value of an atomic variable.
 ## Syntax
 
 ```c
-int SDL_AtomicGet(SDL_atomic_t *a);
+int SDL_AtomicGet(SDL_AtomicInt *a);
 
 ```
 
 ## Function Parameters
 
-|           |                                                       |
-| --------- | ----------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable |
+|           |                                                         |
+| --------- | ------------------------------------------------------- |
+| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable |
 
 ## Return Value
 

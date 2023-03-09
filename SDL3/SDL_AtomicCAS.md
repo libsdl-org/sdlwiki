@@ -6,17 +6,17 @@ Set an atomic variable to a new value if it is currently an old value.
 ## Syntax
 
 ```c
-SDL_bool SDL_AtomicCAS(SDL_atomic_t *a, int oldval, int newval);
+SDL_bool SDL_AtomicCAS(SDL_AtomicInt *a, int oldval, int newval);
 
 ```
 
 ## Function Parameters
 
-|                |                                                                      |
-| -------------- | -------------------------------------------------------------------- |
-| **a**          | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
-| **oldval**     | the old value                                                        |
-| **newval**     | the new value                                                        |
+|                |                                                                        |
+| -------------- | ---------------------------------------------------------------------- |
+| **a**          | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
+| **oldval**     | the old value                                                          |
+| **newval**     | the new value                                                          |
 
 ## Return Value
 
