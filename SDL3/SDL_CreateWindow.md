@@ -137,6 +137,7 @@ int main(int argc, char* argv[]) {
 
 ## Related Functions
 
+* [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 * [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
