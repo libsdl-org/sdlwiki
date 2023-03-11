@@ -89,6 +89,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_CreateMutex](SDL_CreateMutex)
 - [SDL_CreatePalette](SDL_CreatePalette)
 - [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
+- [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_CreateRW](SDL_CreateRW)
 - [SDL_CreateSemaphore](SDL_CreateSemaphore)
