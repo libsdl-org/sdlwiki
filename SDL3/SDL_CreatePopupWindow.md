@@ -67,6 +67,7 @@ This function is available since SDL 3.0.0.
 
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
+* [SDL_GetWindowParent](SDL_GetWindowParent)
 
 ----
 [CategoryAPI](CategoryAPI)
