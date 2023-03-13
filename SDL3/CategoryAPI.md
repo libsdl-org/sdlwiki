@@ -379,6 +379,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
 - [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
 - [SDL_GetWindowOpacity](SDL_GetWindowOpacity)
+- [SDL_GetWindowParent](SDL_GetWindowParent)
 - [SDL_GetWindowPixelFormat](SDL_GetWindowPixelFormat)
 - [SDL_GetWindowPosition](SDL_GetWindowPosition)
 - [SDL_GetWindowSize](SDL_GetWindowSize)
