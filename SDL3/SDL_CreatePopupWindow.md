@@ -12,14 +12,14 @@ SDL_Window* SDL_CreatePopupWindow(SDL_Window *parent, int offset_x, int offset_y
 
 ## Function Parameters
 
-|                  |                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------- |
-| **parent**       | the parent of the window, must not be NULL                                                            |
-| **offset_x**     | the x position of the popup window relative to the origin of the parent, in screen coordinates        |
-| **offset_y**     | the y position of the popup window relative to the origin of the parent window, in screen coordinates |
-| **w**            | the width of the window, in screen coordinates                                                        |
-| **h**            | the height of the window, in screen coordinates                                                       |
-| **flags**        | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together                                    |
+|                  |                                                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **parent**       | the parent of the window, must not be NULL                                                                                                                           |
+| **offset_x**     | the x position of the popup window relative to the origin of the parent, in screen coordinates                                                                       |
+| **offset_y**     | the y position of the popup window relative to the origin of the parent window, in screen coordinates                                                                |
+| **w**            | the width of the window, in screen coordinates                                                                                                                       |
+| **h**            | the height of the window, in screen coordinates                                                                                                                      |
+| **flags**        | [SDL_WINDOW_TOOLTIP](SDL_WINDOW_TOOLTIP) or [SDL_WINDOW_POPUP](SDL_WINDOW_POPUP) MENU, and zero or more additional [SDL_WindowFlags](SDL_WindowFlags) OR'd together. |
 
 ## Return Value
 
@@ -30,23 +30,27 @@ Returns the window that was created or NULL on failure; call
 
 'flags' **must** contain exactly one of the following: -
 '[SDL_WINDOW_TOOLTIP](SDL_WINDOW_TOOLTIP)': The popup window is a tooltip
-and will not pass any input events -
+and will not pass any input events. -
 '[SDL_WINDOW_POPUP_MENU](SDL_WINDOW_POPUP_MENU)': The popup window is a
-popup menu
+popup menu. The topmost popup menu will implicitly gain the keyboard focus.
 
-The following flags are not valid for popup windows and will be ignored: -
-'[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)' -
+The following flags are not relevant to popup window creation and will be
+ignored: - '[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)' -
 '[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED)' -
 '[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)' -
-[`SDL_WINDOW_BORDERLESS`](SDL_WINDOW_BORDERLESS) -
-[`SDL_WINDOW_MOUSE_GRABBED`](SDL_WINDOW_MOUSE_GRABBED)
+'[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)' -
+'[SDL_WINDOW_SKIP_TASKBAR](SDL_WINDOW_SKIP_TASKBAR)'
 
 The parent parameter **must** be non-null and a valid window. The parent of
 a popup window can be either a regular, toplevel window, or another popup
 window.
 
-Popup windows cannot be minimized, maximized, made fullscreen, or grab the
-mouse. Attempts to do so will fail.
+Popup windows cannot be minimized, maximized, made fullscreen, raised,
+flash, be made a modal window, be the parent of a modal window, or grab the
+mouse and/or keyboard. Attempts to do so will fail.
+
+Popup windows implicitly do not have a border/decorations and do not appear
+on the taskbar/dock or in lists of windows such as alt-tab menus.
 
 If a parent window is hidden, any child popup windows will be recursively
 hidden as well. Child popup windows not explicitly hidden will be restored
