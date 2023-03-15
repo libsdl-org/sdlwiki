@@ -37,6 +37,15 @@ Note that additional values may be obtained from [[SDL_ComposeCustomBlendMode]](
 |-
 | 
 |dstA = dstA
+|-
+|SDL_BLENDMODE_MUL
+|color multiply
+|-
+|
+|dstRGB = (srcRGB * dstRGB) + (dstRGB * (1-srcA))
+|-
+|
+|dstA = (srcA * dstA) + (dstA * (1-srcA))
 |}
 == Related Structures ==
 :[[SDL_RendererInfo]]
