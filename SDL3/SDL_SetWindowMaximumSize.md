@@ -12,11 +12,11 @@ int SDL_SetWindowMaximumSize(SDL_Window *window, int max_w, int max_h);
 
 ## Function Parameters
 
-|                |                                  |
-| -------------- | -------------------------------- |
-| **window**     | the window to change             |
-| **max_w**      | the maximum width of the window  |
-| **max_h**      | the maximum height of the window |
+|                |                                                     |
+| -------------- | --------------------------------------------------- |
+| **window**     | the window to change                                |
+| **max_w**      | the maximum width of the window, or 0 for no limit  |
+| **max_h**      | the maximum height of the window, or 0 for no limit |
 
 ## Return Value
 
