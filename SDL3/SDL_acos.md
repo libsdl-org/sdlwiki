@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 /* acos(x) = Pi/2 - asin(x) */
 SDL_Log("acos(0):\t\t%f", SDL_acos(0));
 SDL_Log("Pi/2 - asin(0):\t%f", M_PI / 2 - SDL_asin(0));
