@@ -13,3 +13,7 @@ Enumeration of Window Flash Operations
 ## Related Functions
 
 [SDL_FlashWindow](https://wiki.libsdl.org/SDL_FlashWindow)
+
+----
+[CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)
+

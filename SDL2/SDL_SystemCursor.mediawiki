@@ -41,3 +41,7 @@ Hover over the descriptions to see the cursor.
 |SDL_SYSTEM_CURSOR_HAND
 |<span style="cursor:pointer;">Hand</span>
 |}
+
+----
+[[CategoryEnum]], [[CategoryMouse]]
+
