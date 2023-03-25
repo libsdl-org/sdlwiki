@@ -62,7 +62,7 @@ SDL_RenderClear(renderer);
 
 // Render red triangle
 
-SDL_RenderGeometry(renderer, texture, vertices, NULL, 3, 0);
+SDL_RenderGeometry(renderer, texture, vertices, 3, NULL, 0);
 
 SDL_RenderPresent(renderer);
 
