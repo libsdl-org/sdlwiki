@@ -1,4 +1,3 @@
-
 = Querying SDL Version =
 
 '''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_version.h SDL_version.h], [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_revision.h SDL_revision.h]
@@ -19,15 +18,7 @@ These functions are used to collect or display information about the version of 
 
 SDL_revision.h must be included in your program explicitly if you want to use the SDL_REVISION constant.
 
-<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-<!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryVersion -title:SGEnumerations)>> -->
-
-== Structures ==
-<<FullSearchCached(category:CategoryStruct CategoryVersion -title:SGStructures)>>
-
 == Functions ==
-<<FullSearchCached(category:CategoryVersion -CategoryStruct -CategoryEnum -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_COMPILEDVERSION]]
@@ -38,4 +29,4 @@ SDL_revision.h must be included in your program explicitly if you want to use th
 * [[SDL_VERSIONNUM]]
 <!-- END CATEGORY LIST -->
 ----
-CategoryCategory
+[[CategoryCategory]]
