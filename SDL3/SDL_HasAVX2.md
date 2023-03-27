@@ -34,8 +34,8 @@ This function is available since SDL 3.0.0.
 
 * [SDL_HasAltiVec](SDL_HasAltiVec)
 * [SDL_HasAVX](SDL_HasAVX)
+* [SDL_HasAVX512F](SDL_HasAVX512F)
 * [SDL_HasMMX](SDL_HasMMX)
-* [SDL_HasRDTSC](SDL_HasRDTSC)
 * [SDL_HasSSE](SDL_HasSSE)
 * [SDL_HasSSE2](SDL_HasSSE2)
 * [SDL_HasSSE3](SDL_HasSSE3)
