@@ -9,7 +9,7 @@ Never call this directly.
 SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
                                     const char *func,
                                     const char *file, int line)
-#if defined(__clang__)
+#ifdef __clang__
 #if __has_feature(attribute_analyzer_noreturn)
    __attribute__((analyzer_noreturn))
 #endif
