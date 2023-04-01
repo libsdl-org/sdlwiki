@@ -30,7 +30,7 @@ On SDL versions prior to 2.0.24, messages longer than the maximum size (4096 byt
 
 == Enumerations ==
 
-* [[SDL_LogCategory]]
+* [[SDL_LOG_CATEGORY|SDL_LogCategory]]
 * [[SDL_LogPriority]]
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
