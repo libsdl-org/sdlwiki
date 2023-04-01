@@ -1,23 +1,25 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_CreateWindow
+# SDL_CreateWindowWithPosition
 
-Create a window with the specified dimensions and flags.
+Create a window with the specified position, dimensions, and flags.
 
 ## Syntax
 
 ```c
-SDL_Window* SDL_CreateWindow(const char *title, int w, int h, Uint32 flags);
+SDL_Window* SDL_CreateWindowWithPosition(const char *title, int x, int y, int w, int h, Uint32 flags);
 
 ```
 
 ## Function Parameters
 
-|               |                                                                    |
-| ------------- | ------------------------------------------------------------------ |
-| **title**     | the title of the window, in UTF-8 encoding                         |
-| **w**         | the width of the window, in screen coordinates                     |
-| **h**         | the height of the window, in screen coordinates                    |
-| **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together |
+|               |                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------- |
+| **title**     | the title of the window, in UTF-8 encoding                                          |
+| **x**         | the x position of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) |
+| **y**         | the y position of the window, or [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED) |
+| **w**         | the width of the window, in screen coordinates                                      |
+| **h**         | the height of the window, in screen coordinates                                     |
+| **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together                  |
 
 ## Return Value
 
@@ -89,60 +91,13 @@ in a future version of SDL.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-// Example program:
-// Using SDL2 to create an application window
-
-#include "SDL.h"
-#include <stdio.h>
-
-int main(int argc, char* argv[]) {
-
-    SDL_Window *window;                    // Declare a pointer
-
-    SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL2
-
-    // Create an application window with the following settings:
-    window = SDL_CreateWindow(
-        "An SDL2 window",                  // window title
-        SDL_WINDOWPOS_UNDEFINED,           // initial x position
-        SDL_WINDOWPOS_UNDEFINED,           // initial y position
-        640,                               // width, in pixels
-        480,                               // height, in pixels
-        SDL_WINDOW_OPENGL                  // flags - see below
-    );
-
-    // Check that the window was successfully created
-    if (window == NULL) {
-        // In the case that the window could not be made...
-        printf("Could not create window: %s\n", SDL_GetError());
-        return 1;
-    }
-
-    // The window is open: could enter program loop here (see SDL_PollEvent())
-
-    SDL_Delay(3000);  // Pause execution for 3000 milliseconds, for example
-
-    // Close and destroy the window
-    SDL_DestroyWindow(window);
-
-    // Clean up
-    SDL_Quit();
-    return 0;
-}
-
-```
-
 ## Related Functions
 
 * [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
+* [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
-* [SDL_CreateWindowWithPosition](SDL_CreateWindowWithPosition)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI)
 
