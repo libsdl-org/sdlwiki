@@ -7,8 +7,6 @@
 
 This category contains functions for handling simple log messages with categories and priorities.
 
-<<Include(SDL_LogPriority, , , from="Start Include Default Priority", to="## End Include Default Priority")>>
-
 If you're debugging SDL you might want to call:
  '''SDL_LogSetAllPriority(SDL_LOG_PRIORITY_VERBOSE);'''
 
@@ -27,22 +25,60 @@ Here's where the messages go on different platforms:
 |standard error output (stderr)
 |}
 
-Messages longer than the maximum size (4096 bytes) will be truncated.
+On SDL versions prior to 2.0.24, messages longer than the maximum size (4096 bytes) will be truncated. 
 
 
 == Enumerations ==
-<<FullSearchCached(category:CategoryEnum CategoryLog -title:SGEnumerations)>>
 
+* [[SDL_LogCategory]]
+* [[SDL_LogPriority]]
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
 <!-- #<<FullSearchCached(category:CategoryStruct CategoryLog -title:SGStructures)>> -->
 
 == Functions ==
-<<FullSearchCached(category:CategoryLog -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_LOG_CATEGORY]]
-* [[SDL_LogPriority]]
+=== Writing to the log ===
+
+These are general function which take the priority as a parameter.
+
+* [[SDL_LogMessage]]
+* [[SDL_LogMessageV]]
+
+These are convenience functions which use the named priority (for example, SDL_LogInfo uses SDL_LOG_PRIORITY_INFO)
+* [[SDL_LogVerbose]]
+* [[SDL_LogDebug]]
+* [[SDL_LogInfo]]
+* [[SDL_LogWarn]]
+* [[SDL_LogError]]
+* [[SDL_LogCritical]]
+
+SDL_Log is a special convenience function which uses SDL_LOG_CATEGORY_APPLICATION and SDL_LOG_PRIORITY_INFO
+* [[SDL_Log]]
+
+
+=== Getting and setting priorities ===
+
+These functions are used to manage the priority of a log category, which determines if a message
+will be written to the log or not. For example if a category is set to SDL_LogWarn, only messages
+of priority SDL_LogWarn, SDL_LogError and SDL_LogCritical will be written.
+
+* [[SDL_LogSetAllPriority]]
+* [[SDL_LogSetPriority]]
+* [[SDL_LogGetPriority]]
+* [[SDL_LogResetPriorities]]
+
+=== Getting and setting a custom log destination ===
+
+These are used to divert the log output from the default destination to one
+supplied by the user.
+
+* [[SDL_LogSetOutputFunction]]
+* [[SDL_LogGetOutputFunction]]
+* [[SDL_LogOutputFunction]]
+
+
 <!-- END CATEGORY LIST -->
 ----
-CategoryCategory
+
