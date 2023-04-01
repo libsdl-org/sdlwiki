@@ -105,6 +105,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_CreateWindow](SDL_CreateWindow)
 - [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
 - [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
+- [SDL_CreateWindowWithPosition](SDL_CreateWindowWithPosition)
 - [SDL_CursorVisible](SDL_CursorVisible)
 - [SDL_Delay](SDL_Delay)
 - [SDL_DelayNS](SDL_DelayNS)
