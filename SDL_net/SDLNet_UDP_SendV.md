@@ -56,7 +56,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_RecV](SDLNet_UDP_RecV)
+* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
 
 ----
 [CategoryAPI](CategoryAPI)
