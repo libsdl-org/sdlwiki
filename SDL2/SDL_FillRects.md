@@ -16,7 +16,7 @@ int SDL_FillRects
 |               |                                                                         |
 | ------------- | ----------------------------------------------------------------------- |
 | **dst**       | the [SDL_Surface](SDL_Surface) structure that is the drawing target     |
-| **rects**     | an array of [SDL_Rects](SDL_Rects) representing the rectangles to fill. |
+| **rects**     | an array of [SDL_Rects](SDL_Rect) representing the rectangles to fill. |
 | **count**     | the number of rectangles in the array                                   |
 | **color**     | the color to fill with                                                  |
 
