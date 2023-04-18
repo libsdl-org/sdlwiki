@@ -4,15 +4,15 @@
 == Using SDL ==
 === General ===
 ==== What is supported? ====
-SDL 2.0.0 supports Windows XP, Windows Vista, Windows 7 and Windows 8.
+SDL 2.0.0 supports Windows XP, Windows Vista, Windows 7, 8, 10 and 11.
 
-SDL can be built with Visual C++, Cygwin, MinGW, and Dev-C++.
+SDL can be built with ICC, Visual C++, Cygwin, MinGW, and Dev-C++.
 
 For the latest information see <!-- http://hg.libsdl.org/SDL/file/default/docs/README-platforms.md --> [[Installation|the page about Installation]].
 
 
 === Windows 2000 ===
-==== I'm running Windows 2000 and I can't copy SDL.dll! ====
+==== I'm running Windows 2000 and I can't copy SDL2.dll! ====
 For some reason, archives created on Linux have the "Encrypted" property set when unpacked on Windows 2000. This can be unset by pushing Advanced from the General tab of the properties window and unchecking Encrypt contents check box. The files can then be copied normally.
 
 
@@ -46,10 +46,36 @@ You need to pass the SDL_INIT_NOPARACHUTE flag to your calls to SDL_Init() to ma
 The DirectX drivers have a system lock while you have video surfaces locked. To avoid this, you can set the video driver to GDI by setting the SDL_VIDEODRIVER environment variable to: windib.
 Since this changes video and mouse/keyboard input drivers, you'll see a difference in performance and features available, but you'll be able to debug your application more easily.
 
+==== My application shows no terminal with debug messages ====
+
+Link your application with the Console subystem instead: `/SUBSYSTEM:CONSOLE`.
+
+Alternatively, you can use the Win32 API to conditionally create a console:
+```c
+#include "SDL.h"
+#include <stdio.h>
+#include <string.h>
+#include <windows.h>
+
+static void create_console(void) {
+    AllocConsole();
+    freopen("CONIN$", "r", stdin);
+    freopen("CONOUT$", "w", stdout);
+    freopen("CONOUT$", "w", stderr);
+}
+
+int main(int argc, char *argv[]) {
+    if (strcmp(argv[1], "--debug") == 0) {
+        create_console();
+    }
+    /* ... Enter your secret sauce here */
+    return 0;
+}
+```
 
 === gcc ===
 ==== How do I use SDL with gcc on Windows? ====
-You can build and use SDL with gcc natively using either Cygwin or MinGW, or you can build a gcc cross-compiler targeting Windows from another platform.
+You can build and use SDL with gcc natively using either Cygwin, MSYS2 or MinGW, or you can build a gcc cross-compiler targeting Windows from another platform.
 Setting up these environments is documented at: http://www.libsdl.org/extras/win32/gcc.html
 Once the build environment is set up, you can build your applications as though you are on an Unix. See the [[FAQLinux|Linux FAQ]] for more details on building applications in this environment.
 
@@ -64,10 +90,21 @@ There are also step by step instructions at: http://docs.deninet.com/sdl_on_dev_
 ==== Choosing "console application" in the project parameters will result in generating a program that will *systematically* make Vista users crash. ====
 Choose "gui application" instead of "console application" when compiling for Vista.
 
+=== MinGW ===
+==== My application shows no terminal with debug messages ====
 
-=== MinGW/MYSYS ===
-==== How do I use SDL with MinGW/MYSYS? ====
-See the [[SDL1.2Tutorials#Setup|SDL and MYSYS/MinGW]] Tutorial
+When using pkg-config, or certain SDL2 CMake configuration scripts, `-mwindows` is always added as a link option.
+This option instructs the Windows loader to start your application though `WinMain` and don't show a console window.
+
+The method to remove `-mwindows` depends on your build system:
+For CMake build systems, set the `SDL2_NO_MWINDOWS` CMake variable to remove `-mwindows` from the link options prior to calling `find_package(SDL2)`.
+For pkg-config, use `$(pkg-config sdl2 --libs-only-L --libs-only-l)` instead.
+For sdl2-config, use `sed` to remove `-mwindows`: `$(sdl2-config --libs | sed -E s/-mwindows//)`
+
+When not adding `-mwindows`, you need to make sure `SDL_SetMainReady()` is called before `SDL_Init` because
+the `WinMain` symbol in `SDL2_main` is not used anymore.
+
+You can also conditionally create a console. See the corresponding FAQ item of Visual C++ above.
 
 === Miscellaneous ===
 ==== I get "Undefined reference to 'SDL_main'" ... ====
@@ -86,7 +123,7 @@ Warning/error messages that might also be fixed by this are:
 - found both wmain and main; using latter".
 
 ==== I get "Undefined reference to 'WinMain@16'" ====
-Under Visual C++, you need to link with SDL2main.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl-config --libs", which is usually: -lmingw32 -lSDL2main -lSDL2. While using vcpkg SDL2main.lib is moved to the manual-link folder and needs to be consumed manually for more information see [https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md vcpkg's integration docs].
+Under Visual C++, you need to link with SDL2main.lib. Under the gcc build environments including Dev-C++, you need to link with the output of "sdl2-config --libs", which is usually: -lmingw32 -lSDL2main -lSDL2. While using vcpkg SDL2main.lib is moved to the manual-link folder and needs to be consumed manually for more information see [https://github.com/microsoft/vcpkg/blob/master/docs/users/integration.md vcpkg's integration docs].
 
 ==== I get "Undefined reference to 'main'" (or '_main')  ====
 When you're building using CMake, make sure to add WIN32 to [https://cmake.org/cmake/help/latest/command/add_executable.html#normal-executables add_executable].
@@ -95,24 +132,7 @@ MSVC users should add /subsystem:windows.
 clang-cl users should add -Xlinker /subsystem:windows.
 
 ==== I get undefined references to various SDL functions... ====
-When you're compiling with gcc, you need to make sure the output of sdl-config follows your source file on the command line:
-gcc -o test test.c <code>sdl-config --cflags --libs</code>
+When you're compiling with gcc, you need to make sure the output of sdl2-config follows your source file on the command line:
+gcc -o test test.c <code>sdl2-config --cflags --libs</code>
 
-If you're getting undefined references to functions in SDL_image or SDL_mixer, make sure you're actually linking with those libraries as well.
-
-==== Why doesn't SDL_WM_ToggleFullScreen() work on Windows? ====
-The semantics of SDL_WM_!ToggleFullScreen() are that switching between fullscreen and windowed mode is transparent to the application. The display pixels pointer does not change, the display depth does not change, etc. This cannot be guaranteed on Windows. However, there is a simple method you can use to change between fullscreen and windowed mode:
-<syntaxhighlight lang='c++'>
-flags ^= SDL_FULLSCREEN;
-screen = SDL_SetVideoMode(..., flags);
-</syntaxhighlight>
-
-==== How do I avoid creating stdout.txt and stderr.txt? ====
-<!-- #Seen here: -->
-<!-- #http://www.libsdl.org/pipermail/sdl/2002-November/050275.html -->
-"I believe inside the Visual C++ project that comes with SDL there is a SDL_nostdio target you can build which does what you want(TM)."
-
-<!-- #And here: -->
-<!-- #http://www.libsdl.org/pipermail/sdl/2002-November/050277.html -->
-"If you define "NO_STDIO_REDIRECT" and recompile SDL, I think it will fix the problem."
-(Answer courtesy of Bill Kendrick)
+If you're getting undefined references to functions in SDL2_image or SDL2_mixer, make sure you're actually linking with those libraries as well.
