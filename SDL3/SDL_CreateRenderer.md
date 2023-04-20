@@ -53,12 +53,12 @@ int main(int argc, char *argv[])
     SDL_Renderer *renderer = NULL;
     SDL_Texture *bitmapTex = NULL;
     SDL_Surface *bitmapSurface = NULL;
-    int posX = 100, posY = 100, width = 320, height = 240;
+    int width = 320, height = 240;
     SDL_bool loopShouldStop = SDL_FALSE;
 
     SDL_Init(SDL_INIT_VIDEO);
 
-    win = SDL_CreateWindow("Hello World", posX, posY, width, height, 0);
+    win = SDL_CreateWindow("Hello World", width, height, 0);
 
     renderer = SDL_CreateRenderer(win, NULL, SDL_RENDERER_ACCELERATED);
 
