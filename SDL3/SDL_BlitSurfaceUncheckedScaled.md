@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BlitScaled](SDL_BlitScaled)
+* [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 ----
 [CategoryAPI](CategoryAPI)
