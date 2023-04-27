@@ -1,0 +1,28 @@
+= SDL_FRect =
+A structure that contains the definition of a rectangle, with the origin at the upper left.
+
+
+== Data Fields ==
+{|
+|float
+|'''x'''
+|the x location of the rectangle's upper left corner
+|-
+|float
+|'''y'''
+|the y location of the rectangle's upper left corner
+|-
+|float
+|'''w'''
+|the width of the rectangle
+|-
+|float
+|'''h'''
+|the height of the rectangle
+|}
+
+== Remarks ==
+An [[SDL_FRect]] defines a rectangular area of the screen for subpixel precision functions.
+
+----
+[[CategoryStruct]], [[CategoryRect]]
