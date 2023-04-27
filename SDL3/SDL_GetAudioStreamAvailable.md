@@ -26,6 +26,12 @@ The stream may be buffering data behind the scenes until it has enough to
 resample correctly, so this number might be lower than what you expect, or
 even be zero. Add more data or flush the stream if you need the data now.
 
+If the stream has so much data that it would overflow an int, the return
+value is clamped to a maximum value, but no queued data is lost; if there
+are gigabytes of data queued, the app might need to read some of it with
+[SDL_GetAudioStreamData](SDL_GetAudioStreamData) before this function's
+return value is no longer clamped.
+
 ## Version
 
 This function is available since SDL 3.0.0.

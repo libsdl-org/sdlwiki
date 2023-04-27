@@ -23,6 +23,16 @@ int SDL_PutAudioStreamData(SDL_AudioStream *stream, const void *buf, int len);
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+This data must match the format/channels/samplerate specified in the latest
+call to [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat), or the format
+specified when creating the stream if it hasn't been changed.
+
+Note that this call simply queues unconverted data for later. This is
+different than SDL2, where data was converted during the Put call and the
+Get call would just dequeue the previously-converted data.
+
 ## Version
 
 This function is available since SDL 3.0.0.

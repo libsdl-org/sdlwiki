@@ -7,10 +7,10 @@ Create a new audio stream.
 
 ```c
 SDL_AudioStream* SDL_CreateAudioStream(SDL_AudioFormat src_format,
-                                    Uint8 src_channels,
+                                    int src_channels,
                                     int src_rate,
                                     SDL_AudioFormat dst_format,
-                                    Uint8 dst_channels,
+                                    int dst_channels,
                                     int dst_rate);
 
 ```
@@ -30,6 +30,10 @@ SDL_AudioStream* SDL_CreateAudioStream(SDL_AudioFormat src_format,
 
 Returns 0 on success, or -1 on error.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -41,6 +45,7 @@ This function is available since SDL 3.0.0.
 * [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
 * [SDL_FlushAudioStream](SDL_FlushAudioStream)
 * [SDL_ClearAudioStream](SDL_ClearAudioStream)
+* [SDL_ChangeAudioStreamOutput](SDL_ChangeAudioStreamOutput)
 * [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
 
 ----
