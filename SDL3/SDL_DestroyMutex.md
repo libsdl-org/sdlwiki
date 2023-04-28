@@ -6,7 +6,7 @@ Destroy a mutex created with [SDL_CreateMutex](SDL_CreateMutex)().
 ## Syntax
 
 ```c
-void SDL_DestroyMutex(SDL_mutex * mutex);
+void SDL_DestroyMutex(SDL_Mutex *mutex);
 
 ```
 

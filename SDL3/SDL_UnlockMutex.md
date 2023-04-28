@@ -6,7 +6,7 @@ Unlock the mutex.
 ## Syntax
 
 ```c
-int SDL_UnlockMutex(SDL_mutex * mutex) SDL_RELEASE(mutex);
+int SDL_UnlockMutex(SDL_Mutex *mutex) SDL_RELEASE(mutex);
 
 ```
 

@@ -6,7 +6,7 @@ Try to lock a read/write lock _for writing_ without blocking.
 ## Syntax
 
 ```c
-int SDL_TryLockRWLockForWriting(SDL_rwlock * rwlock) SDL_TRY_ACQUIRE(0, rwlock);
+int SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock) SDL_TRY_ACQUIRE(0, rwlock);
 
 ```
 

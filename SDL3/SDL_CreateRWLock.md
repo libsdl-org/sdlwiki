@@ -6,7 +6,7 @@ Create a new read/write lock.
 ## Syntax
 
 ```c
-SDL_rwlock* SDL_CreateRWLock(void);
+SDL_RWLock* SDL_CreateRWLock(void);
 
 ```
 

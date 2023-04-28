@@ -6,7 +6,7 @@ Destroy a read/write lock created with [SDL_CreateRWLock](SDL_CreateRWLock)().
 ## Syntax
 
 ```c
-void SDL_DestroyRWLock(SDL_rwlock * rwlock);
+void SDL_DestroyRWLock(SDL_RWLock *rwlock);
 
 ```
 

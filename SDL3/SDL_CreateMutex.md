@@ -6,7 +6,7 @@ Create a new mutex.
 ## Syntax
 
 ```c
-SDL_mutex* SDL_CreateMutex(void);
+SDL_Mutex* SDL_CreateMutex(void);
 
 ```
 

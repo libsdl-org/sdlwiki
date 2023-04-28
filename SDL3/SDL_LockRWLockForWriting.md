@@ -6,7 +6,7 @@ Lock the read/write lock for _write_ operations.
 ## Syntax
 
 ```c
-int SDL_LockRWLockForWriting(SDL_rwlock * rwlock) SDL_ACQUIRE(rwlock);
+int SDL_LockRWLockForWriting(SDL_RWLock *rwlock) SDL_ACQUIRE(rwlock);
 
 ```
 

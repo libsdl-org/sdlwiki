@@ -10,7 +10,7 @@ Try to lock a mutex without blocking.
 ## Syntax
 
 ```c
-int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
+int SDL_TryLockMutex(SDL_Mutex *mutex) SDL_TRY_ACQUIRE(0, mutex);
 
 ```
 

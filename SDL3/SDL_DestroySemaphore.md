@@ -6,7 +6,7 @@ Destroy a semaphore.
 ## Syntax
 
 ```c
-void SDL_DestroySemaphore(SDL_sem *sem);
+void SDL_DestroySemaphore(SDL_Semaphore *sem);
 
 ```
 
@@ -32,11 +32,11 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_SemPost](SDL_SemPost)
-* [SDL_SemTryWait](SDL_SemTryWait)
-* [SDL_SemValue](SDL_SemValue)
-* [SDL_SemWait](SDL_SemWait)
-* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+* [SDL_PostSemaphore](SDL_PostSemaphore)
+* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)

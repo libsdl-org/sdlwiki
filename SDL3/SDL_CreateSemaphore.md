@@ -6,7 +6,7 @@ Create a semaphore.
 ## Syntax
 
 ```c
-SDL_sem* SDL_CreateSemaphore(Uint32 initial_value);
+SDL_Semaphore* SDL_CreateSemaphore(Uint32 initial_value);
 
 ```
 
@@ -70,11 +70,11 @@ SDL_DestroySemaphore(sem);
 ## Related Functions
 
 * [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_SemPost](SDL_SemPost)
-* [SDL_SemTryWait](SDL_SemTryWait)
-* [SDL_SemValue](SDL_SemValue)
-* [SDL_SemWait](SDL_SemWait)
-* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+* [SDL_PostSemaphore](SDL_PostSemaphore)
+* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)

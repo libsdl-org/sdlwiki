@@ -6,7 +6,7 @@ Unlock the read/write lock.
 ## Syntax
 
 ```c
-int SDL_UnlockRWLock(SDL_rwlock * rwlock) SDL_RELEASE_SHARED(rwlock);
+int SDL_UnlockRWLock(SDL_RWLock *rwlock) SDL_RELEASE_SHARED(rwlock);
 
 ```
 

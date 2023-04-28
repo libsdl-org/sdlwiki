@@ -6,7 +6,7 @@ Lock the mutex.
 ## Syntax
 
 ```c
-int SDL_LockMutex(SDL_mutex * mutex) SDL_ACQUIRE(mutex);
+int SDL_LockMutex(SDL_Mutex *mutex) SDL_ACQUIRE(mutex);
 
 ```
 

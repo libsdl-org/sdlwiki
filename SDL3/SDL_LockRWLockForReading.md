@@ -6,7 +6,7 @@ Lock the read/write lock for _read only_ operations.
 ## Syntax
 
 ```c
-int SDL_LockRWLockForReading(SDL_rwlock * rwlock) SDL_ACQUIRE_SHARED(rwlock);
+int SDL_LockRWLockForReading(SDL_RWLock *rwlock) SDL_ACQUIRE_SHARED(rwlock);
 
 ```
 
