@@ -1,4 +1,3 @@
-
 = Error Handling =
 
 '''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_error.h SDL_error.h]
@@ -23,6 +22,7 @@ The SDL error messages are in English.
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_ClearError]]
 * [[SDL_GetError]]
+* [[SDL_GetErrorMsg]]
 * [[SDL_SetError]]
 <!-- END CATEGORY LIST -->
 ----
