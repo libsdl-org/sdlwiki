@@ -73,5 +73,5 @@ This function is available since SDL 2.0.0.
 * [SDL_WasInit](SDL_WasInit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
