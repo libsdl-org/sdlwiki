@@ -18,15 +18,21 @@ These functions are used to collect or display information about the version of 
 
 SDL_revision.h must be included in your program explicitly if you want to use the SDL_REVISION constant.
 
+== Structures ==
+
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_version]]
+<!-- END CATEGORY LIST -->
 == Functions ==
 
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_COMPILEDVERSION]]
 * [[SDL_REVISION]]
 * [[SDL_VERSION]]
-* [[SDL_version]]
 * [[SDL_VERSION_ATLEAST]]
 * [[SDL_VERSIONNUM]]
+* [[SDL_GetVersion]]
+* [[SDL_GetRevision]]
 <!-- END CATEGORY LIST -->
 ----
 [[CategoryCategory]]
