@@ -37,5 +37,5 @@ This function is available since SDL 2.24.0.
 * [SDL_SetHint](SDL_SetHint)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
 
