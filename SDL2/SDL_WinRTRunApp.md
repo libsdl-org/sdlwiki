@@ -27,5 +27,5 @@ to retrieve more information on the failure.
 This function is available since SDL 2.0.3.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
