@@ -38,5 +38,5 @@ This function is available since SDL 2.0.0.
 * [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
