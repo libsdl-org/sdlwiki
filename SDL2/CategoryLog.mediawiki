@@ -31,6 +31,7 @@ On SDL versions prior to 2.0.24, messages longer than the maximum size (4096 byt
 == Enumerations ==
 
 * [[SDL_LOG_CATEGORY|SDL_LogCategory]]
+* [[SDL_LOG_CATEGORY]]
 * [[SDL_LogPriority]]
 <!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
 <!-- #== Structures == -->
@@ -39,8 +40,23 @@ On SDL versions prior to 2.0.24, messages longer than the maximum size (4096 byt
 == Functions ==
 
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_LOG_CATEGORY]]
-* [[SDL_LogPriority]]
+
+* [[SDL_Log]]
+* [[SDL_LogCritical]]
+* [[SDL_LogDebug]]
+* [[SDL_LogError]]
+* [[SDL_LogGetOutputFunction]]
+* [[SDL_LogGetPriority]]
+* [[SDL_LogInfo]]
+* [[SDL_LogMessage]]
+* [[SDL_LogMessageV]]
+* [[SDL_LogResetPriorities]]
+* [[SDL_LogSetAllPriority]]
+* [[SDL_LogSetOutputFunction]]
+* [[SDL_LogSetPriority]]
+* [[SDL_LogVerbose]]
+* [[SDL_LogWarn]]
+
 <!-- END CATEGORY LIST -->
 ----
 
