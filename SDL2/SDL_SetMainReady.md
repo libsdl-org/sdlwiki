@@ -26,5 +26,5 @@ This function is available since SDL 2.0.0.
 * [SDL_Init](SDL_Init)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
