@@ -18,6 +18,11 @@ In general these hints are just that - they may or may not be supported or appli
 
 
 <!-- BEGIN CATEGORY LIST -->
+* [[SDL_AddHintCallback]]
+* [[SDL_ClearHints]]
+* [[SDL_DelHintCallback]]
+* [[SDL_GetHint]]
+* [[SDL_GetHintBoolean]]
 * [[SDL_HINT_ACCELEROMETER_AS_JOYSTICK]]
 * [[SDL_HINT_ANDROID_APK_EXPANSION_MAIN_FILE_VERSION]]
 * [[SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION]]
@@ -68,6 +73,11 @@ In general these hints are just that - they may or may not be supported or appli
 * [[SDL_HINT_WINRT_PRIVACY_POLICY_URL]]
 * [[SDL_HINT_XINPUT_ENABLED]]
 * [[SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING]]
+* [[SDL_HintPriority]]
+* [[SDL_ResetHint]]
+* [[SDL_ResetHints]]
+* [[SDL_SetHint]]
+* [[SDL_SetHintWithPriority]]
 <!-- END CATEGORY LIST -->
 
 == Enumerations ==
@@ -78,24 +88,10 @@ In general these hints are just that - they may or may not be supported or appli
 <!-- #<<FullSearchCached(category:CategoryStruct Category Hints -title:SGStructures)>> -->
 
 
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_HintPriority]]
-<!-- END CATEGORY LIST -->
 
 == Functions ==
 <<FullSearchCached(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine -title:SGFunctions)>>
 
 
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_AddHintCallback]]
-* [[SDL_ClearHints]]
-* [[SDL_DelHintCallback]]
-* [[SDL_GetHint]]
-* [[SDL_GetHintBoolean]]
-* [[SDL_ResetHint]]
-* [[SDL_ResetHints]]
-* [[SDL_SetHint]]
-* [[SDL_SetHintWithPriority]]
-<!-- END CATEGORY LIST -->
 ----
 CategoryCategory
