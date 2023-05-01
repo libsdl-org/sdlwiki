@@ -29,3 +29,4 @@ This function is available since SDL 2.0.3.
 ----
 [CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
+

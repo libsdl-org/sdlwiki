@@ -75,3 +75,4 @@ This function is available since SDL 2.0.0.
 ----
 [CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
 
+
