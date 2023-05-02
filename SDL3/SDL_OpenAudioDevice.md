@@ -58,7 +58,7 @@ When filling in the desired audio spec structure:
 
 - `desired->freq` should be the frequency in sample-frames-per-second (Hz).
 - `desired->format` should be the audio format
-  ([`AUDIO_S16SYS`](AUDIO_S16SYS), etc).
+  ([`SDL_AUDIO_S16SYS`](SDL_AUDIO_S16SYS), etc).
 - `desired->samples` is the desired size of the audio buffer, in _sample
   frames_ (with stereo output, two samples--left and right--would make a
   single sample frame). This number should be a power of two, and may be
