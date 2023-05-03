@@ -15,7 +15,7 @@ int Mix_OpenAudio(int frequency, Uint16 format, int channels, int chunksize);
 |                   |                                                                              |
 | ----------------- | ---------------------------------------------------------------------------- |
 | **frequency**     | the frequency to playback audio at (in Hz).                                  |
-| **format**        | audio format, one of SDL's AUDIO_* values.                                   |
+| **format**        | audio format, one of SDL's SDL_AUDIO_* values.                               |
 | **channels**      | number of channels (1 is mono, 2 is stereo, etc).                            |
 | **chunksize**     | audio buffer size in sample FRAMES (total samples divided by channel count). |
 
@@ -66,9 +66,9 @@ expects it to be in a specific format, and you should specify that here.
 The audio device frequency is specified in Hz; in modern times, 48000 is
 often a reasonable default.
 
-The audio device format is one of SDL's AUDIO_* constants. AUDIO_S16SYS
-(16-bit audio) is probably a safe default. More modern systems may prefer
-AUDIO_F32SYS (32-bit floating point audio).
+The audio device format is one of SDL's SDL_AUDIO_* constants.
+SDL_AUDIO_S16SYS (16-bit audio) is probably a safe default. More modern
+systems may prefer SDL_AUDIO_F32SYS (32-bit floating point audio).
 
 The audio device channels are generally 1 for mono output, or 2 for stereo,
 but the brave can try surround sound configs with 4 (quad), 6 (5.1), 7
