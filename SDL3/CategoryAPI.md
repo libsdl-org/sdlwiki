@@ -294,6 +294,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
 - [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 - [SDL_GetOriginalMemoryFunctions](SDL_GetOriginalMemoryFunctions)
+- [SDL_GetPath](SDL_GetPath)
 - [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 - [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 - [SDL_GetPixelFormatEnumForMasks](SDL_GetPixelFormatEnumForMasks)
