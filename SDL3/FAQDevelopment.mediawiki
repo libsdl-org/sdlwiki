@@ -31,11 +31,11 @@ There is also a demo on the SDL demos page of using GTk natively with SDL, which
 Also on the demos page is a hack written by Kent Mein using Tcl/Tk with SDL.
 You may also be able to get other GUIs to work with SDL. Many of them have documentation on how to get the toolkits to work with other applications.
 
-== Do I #include <SDL.h> or <SDL/SDL.h>? ==
-The most portable way to include SDL headers is to use quotes around the header name:
+== Do I #include <SDL.h> or <SDL3/SDL.h>? ==
+The most portable way to include SDL headers is to use angular quotes around the full header name:
 
 <syntaxhighlight lang='c'>
-#include "SDL.h"
+#include <SDL3/SDL.h>
 </syntaxhighlight>
 
 == I get the SDL_DUMMY_ENUM assertion in SDL_types.h ==
