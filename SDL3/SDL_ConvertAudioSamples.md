@@ -39,6 +39,19 @@ int SDL_ConvertAudioSamples(SDL_AudioFormat src_format,
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+Please note that this function is for convenience, but should not be used
+to resample audio in blocks, as it will introduce audio artifacts on the
+boundaries. You should only use this function if you are converting audio
+data in its entirety in one call. If you want to convert audio in smaller
+chunks, use an [SDL_AudioStream](SDL_AudioStream), which is designed for
+this situation.
+
+Internally, this function creates and destroys an
+[SDL_AudioStream](SDL_AudioStream) on each use, so it's also less efficient
+than using one directly, if you need to convert multiple times.
+
 ## Version
 
 This function is available since SDL 3.0.0.
