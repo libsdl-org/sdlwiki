@@ -25,5 +25,6 @@
 - [versions](versions)
 - [visualc](visualc)
 - [vita](vita)
+- [wayland](wayland)
 - [windows](windows)
 - [winrt](winrt)
