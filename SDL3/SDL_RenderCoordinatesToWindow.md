@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RenderCoordinatesToWindow
 
-Get a point in window coordinates when given a point in render coordinates.
+Get a point in window coordinates (points) when given a point in render coordinates.
 
 ## Syntax
 

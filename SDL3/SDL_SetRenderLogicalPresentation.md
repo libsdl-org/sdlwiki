@@ -32,9 +32,8 @@ render target is created at the specified size and used for rendering and
 then copied to the output during presentation.
 
 When a renderer is created, the logical size is set to match the window
-size in screen coordinates. The actual output size may be higher pixel
-density, and can be queried with
-[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)().
+size in points. The actual output size may be higher pixel density, and can
+be queried with [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)().
 
 You can disable logical coordinates by setting the mode to
 [SDL_LOGICAL_PRESENTATION_DISABLED](SDL_LOGICAL_PRESENTATION_DISABLED), and
