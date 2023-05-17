@@ -15,10 +15,10 @@ SDL_Window* SDL_CreatePopupWindow(SDL_Window *parent, int offset_x, int offset_y
 |                  |                                                                                                                                                                      |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **parent**       | the parent of the window, must not be NULL                                                                                                                           |
-| **offset_x**     | the x position of the popup window relative to the origin of the parent, in screen coordinates                                                                       |
-| **offset_y**     | the y position of the popup window relative to the origin of the parent window, in screen coordinates                                                                |
-| **w**            | the width of the window, in screen coordinates                                                                                                                       |
-| **h**            | the height of the window, in screen coordinates                                                                                                                      |
+| **offset_x**     | the x position of the popup window relative to the origin of the parent                                                                                              |
+| **offset_y**     | the y position of the popup window relative to the origin of the parent window                                                                                       |
+| **w**            | the width of the window                                                                                                                                              |
+| **h**            | the height of the window                                                                                                                                             |
 | **flags**        | [SDL_WINDOW_TOOLTIP](SDL_WINDOW_TOOLTIP) or [SDL_WINDOW_POPUP](SDL_WINDOW_POPUP) MENU, and zero or more additional [SDL_WindowFlags](SDL_WindowFlags) OR'd together. |
 
 ## Return Value

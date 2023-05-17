@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetWindowSize
 
-Get the size of a window's client area, in screen coordinates.
+Get the size of a window's client area.
 
 ## Syntax
 
@@ -28,9 +28,9 @@ Returns 0 on success or a negative error code on failure; call
 NULL can safely be passed as the `w` or `h` parameter if the width or
 height value is not desired.
 
-The window size in screen coordinates may differ from the size in pixels if
-the window is on a high density display (one with an OS scaling factor).
-Use [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or
+The window pixel size may differ from its window coordinate size if the
+window is on a high pixel density display. Use
+[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or
 [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() to get the real client
 area size in pixels.
 

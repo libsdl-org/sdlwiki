@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetWindowPosition
 
-Set the position of a window, in screen coordinates.
+Set the position of a window.
 
 ## Syntax
 

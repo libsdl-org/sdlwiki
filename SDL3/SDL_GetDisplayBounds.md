@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetDisplayBounds
 
-Get the desktop area represented by a display, in screen coordinates.
+Get the desktop area represented by a display.
 
 ## Syntax
 

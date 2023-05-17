@@ -15,8 +15,8 @@ SDL_Window* SDL_CreateWindow(const char *title, int w, int h, Uint32 flags);
 |               |                                                                    |
 | ------------- | ------------------------------------------------------------------ |
 | **title**     | the title of the window, in UTF-8 encoding                         |
-| **w**         | the width of the window, in screen coordinates                     |
-| **h**         | the height of the window, in screen coordinates                    |
+| **w**         | the width of the window                                            |
+| **h**         | the height of the window                                           |
 | **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together |
 
 ## Return Value
@@ -50,10 +50,10 @@ The [SDL_Window](SDL_Window) is implicitly shown if
 On Apple's macOS, you **must** set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
 
-The window size in pixels may differ from its size in screen coordinates if
-the window is on a high density display (one with an OS scaling factor).
-Use [SDL_GetWindowSize](SDL_GetWindowSize)() to query the client area's
-size in screen coordinates, and
+The window pixel size may differ from its window coordinate size if the
+window is on a high pixel density display. Use
+[SDL_GetWindowSize](SDL_GetWindowSize)() to query the client area's size in
+window coordinates, and
 [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or
 [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() to query the drawable
 size in pixels. Note that the drawable size can vary after the window is

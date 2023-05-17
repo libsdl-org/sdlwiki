@@ -9,7 +9,7 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_GetWindowBordersSize
 
-Get the size of a window's borders (decorations) around the client area, in screen coordinates.
+Get the size of a window's borders (decorations) around the client area.
 
 ## Syntax
 

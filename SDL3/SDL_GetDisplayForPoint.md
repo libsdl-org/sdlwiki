@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetDisplayForPoint
 
-Get the display containing a point, in screen coordinates.
+Get the display containing a point.
 
 ## Syntax
 

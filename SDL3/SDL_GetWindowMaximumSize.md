@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetWindowMaximumSize
 
-Get the maximum size of a window's client area, in screen coordinates.
+Get the maximum size of a window's client area.
 
 ## Syntax
 

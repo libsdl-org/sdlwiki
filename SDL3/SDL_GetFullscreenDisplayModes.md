@@ -27,13 +27,12 @@ freed with [SDL_free](SDL_free)(), or NULL on error; call
 
 The display modes are sorted in this priority:
 
-- screen_w -> largest to smallest
-- screen_h -> largest to smallest
-- pixel_w -> largest to smallest
-- pixel_h -> largest to smallest
+- w -> largest to smallest
+- h -> largest to smallest
 - bits per pixel -> more colors to fewer colors
 - packed pixel layout -> largest to smallest
 - refresh rate -> highest to lowest
+- pixel density -> lowest to highest
 
 ## Version
 

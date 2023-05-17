@@ -23,11 +23,6 @@ int SDL_GetWindowSizeInPixels(SDL_Window *window, int *w, int *h);
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-The window size in pixels may differ from the size in screen coordinates if
-the window is on a high density display (one with an OS scaling factor).
-
 ## Version
 
 This function is available since SDL 3.0.0.
