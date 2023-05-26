@@ -12,10 +12,10 @@ SDL_hid_device_info * SDL_hid_enumerate(unsigned short vendor_id, unsigned short
 
 ## Function Parameters
 
-|                    |                                                      |
-| ------------------ | ---------------------------------------------------- |
-| **vendor_id**      | The Vendor ID (VID) of the types of device to open.  |
-| **product_id**     | The Product ID (PID) of the types of device to open. |
+|                    |                                                                                 |
+| ------------------ | ------------------------------------------------------------------------------- |
+| **vendor_id**      | The Vendor ID (VID) of the types of device to open, or 0 to match any vendor.   |
+| **product_id**     | The Product ID (PID) of the types of device to open, or 0 to match any product. |
 
 ## Return Value
 

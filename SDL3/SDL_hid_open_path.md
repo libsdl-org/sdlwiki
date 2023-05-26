@@ -6,16 +6,15 @@ Open a HID device by its path name.
 ## Syntax
 
 ```c
-SDL_hid_device * SDL_hid_open_path(const char *path, int bExclusive /* = false */);
+SDL_hid_device * SDL_hid_open_path(const char *path);
 
 ```
 
 ## Function Parameters
 
-|                    |                                              |
-| ------------------ | -------------------------------------------- |
-| **path**           | The path name of the device to open          |
-| **bExclusive**     | Open device in exclusive mode (Windows only) |
+|              |                                     |
+| ------------ | ----------------------------------- |
+| **path**     | The path name of the device to open |
 
 ## Return Value
 
