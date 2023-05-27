@@ -33,6 +33,11 @@ then any vendor matches. If `product_id` is set to 0 then any product
 matches. If `vendor_id` and `product_id` are both set to 0, then all HID
 devices will be returned.
 
+By default SDL will only enumerate controllers, to reduce risk of hanging
+or crashing on bad drivers, but
+[SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS](SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS)
+can be set to "0" to enumerate all HID devices.
+
 ## Version
 
 This function is available since SDL 3.0.0.
