@@ -1,5 +1,4 @@
-
-= SDL 2.0 API by Category =
+= SDL 3.0 API by Category =
 
 == Basics ==
 
