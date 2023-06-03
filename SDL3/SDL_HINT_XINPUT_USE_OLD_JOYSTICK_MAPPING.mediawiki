@@ -15,10 +15,10 @@ A hint that specifies that SDL should use the old axis and button mapping for XI
 == Values ==
 {|
 |0
-|use the old axis and button mapping for XInput devices
+|do not use the old axis and button mapping for XInput devices
 |-
 |1
-|do not use old axis and button mapping for XInput devices
+|use old axis and button mapping for XInput devices
 |}
 
 
