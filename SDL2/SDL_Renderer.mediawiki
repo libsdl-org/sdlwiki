@@ -36,6 +36,8 @@ A structure that contains a rendering state.
 :[[SDL_RenderDrawRects]]
 :[[SDL_RenderFillRect]]
 :[[SDL_RenderFillRects]]
+:[[SDL_RenderGeometry]]
+:[[SDL_RenderGeometryRaw]]
 :[[SDL_RenderGetClipRect]]
 :[[SDL_RenderGetIntegerScale]]
 :[[SDL_RenderGetLogicalSize]]
