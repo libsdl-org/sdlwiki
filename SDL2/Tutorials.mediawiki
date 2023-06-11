@@ -31,8 +31,8 @@ There are a number of SDL tutorials available from different sources.
 * [https://www.youtube.com/playlist?list=PL2RPjWnJduNmXHRYwdtublIPdlqocBoLS C++/SDL2 RPG Physics Based 2D Platformer for Beginners Tutorial]
 : A playlist of beginner SDL2 tutorials, focusing on the basics for setting up a RPG 2D platformer. Also features tutorials on how to set up SDL2 on Windows and Linux.
 
-* [https://glusoft.com/tutorials/ Glusoft Tutorials]
-: A list of SDL2 tutorials, learning by examples.
+* [https://glusoft.com/tutorials/sdl2/ SDL2 Tutorials]
+: A collection of SDL2 tutorials ranging from beginning to expert level.
 
 == Setup ==
 * [https://www.youtube.com/watch?v=wWGtuc5uqF4 How to setup Codeblocks mingw SDL2.0]
