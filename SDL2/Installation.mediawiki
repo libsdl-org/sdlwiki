@@ -48,7 +48,7 @@ sudo make install
 
 The last command says "sudo" so we can write it to /usr/local (by default). You can change this to a different location with the --prefix option to the configure script. In fact, there are a LOT of good options you can use with configure! Be sure to check out its --help option for details. SDL tries to do the right thing by default, though, so you can usually get away with no options at all. "make" could be "make -j4" or whatever if you have more than one CPU; SDL can safely be built in parallel across all the CPU cores you have available to you. A good rule of thumb for Linux is the number of cores plus two, so you use all the processing resources possible, and if a process or two is competing for the disk, those two extra jobs might be able to put the otherwise-idle CPU cores to work in the meantime (so on a four-core system? Try "make -j6".)
 
-An alternative to the configure script is the CMake project file. It works on similar principles to the configure script. CMake does not provide you with a --help option to show all available configuration options, but it privides a GUI to change configuration options: cmake-gui. There is also ccmake for the console aficionados.
+An alternative to the configure script is the CMake project file. It works on similar principles to the configure script. CMake does not provide you with a --help option to show all available configuration options, but it provides a GUI to change configuration options: cmake-gui. There is also ccmake for the console aficionados.
 
 <syntaxhighlight lang="bash">
 git clone https://github.com/libsdl-org/SDL
