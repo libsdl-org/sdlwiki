@@ -1,0 +1,26 @@
+
+= SDL_HINT_RENDER_LINE_METHOD =
+
+A variable controlling how the 2D render API renders lines.
+
+
+== Values ==
+{|
+|0
+|Use the default line drawing method (Bresenham's line algorithm as of SDL 2.0.20)
+|-
+|1
+|Use the driver point API using Bresenham's line algorithm (correct, draws many points)
+|-
+|2
+|Use the driver line API (occasionally misses line endpoints based on hardware driver quirks, was the default before 2.0.20)
+|-
+|3
+|Use the driver geometry API (correct, draws thicker diagonal lines)
+|}
+
+== Remarks ==
+This variable should be set when the renderer is created.
+
+----
+[[CategoryDefine]], [[CategoryHints]]
