@@ -20,6 +20,7 @@ int SDL_SetAudioStreamFormat(SDL_AudioStream *stream,
 
 |                      |                                                    |
 | -------------------- | -------------------------------------------------- |
+| **stream**           | The stream the format is being changed             |
 | **src_format**       | The format of the audio input                      |
 | **src_channels**     | The number of channels of the audio input          |
 | **src_rate**         | The sampling rate of the audio input               |

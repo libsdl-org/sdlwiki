@@ -14,6 +14,7 @@ void* SDL_GetClipboardData(size_t *length, const char *mime_type);
 
 |                   |                                          |
 | ----------------- | ---------------------------------------- |
+| **length**        | Length of the data                       |
 | **mime_type**     | The mime type to read from the clipboard |
 
 ## Return Value

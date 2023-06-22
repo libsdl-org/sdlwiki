@@ -23,6 +23,10 @@ this hid_device, or NULL in the case of failure; call
 [SDL_GetError](SDL_GetError)() for more information. This struct is valid
 until the device is closed with [SDL_hid_close](SDL_hid_close)().
 
+## Version
+
+This function is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI)
 

@@ -12,12 +12,13 @@ const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID display
 
 ## Function Parameters
 
-|                      |                                                                                    |
-| -------------------- | ---------------------------------------------------------------------------------- |
-| **displayID**        | the instance ID of the display to query                                            |
-| **w**                | the width in pixels of the desired display mode                                    |
-| **h**                | the height in pixels of the desired display mode                                   |
-| **refresh_rate**     | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate |
+|                                    |                                                                                    |
+| ---------------------------------- | ---------------------------------------------------------------------------------- |
+| **displayID**                      | the instance ID of the display to query                                            |
+| **w**                              | the width in pixels of the desired display mode                                    |
+| **h**                              | the height in pixels of the desired display mode                                   |
+| **refresh_rate**                   | the refresh rate of the desired display mode, or 0.0f for the desktop refresh rate |
+| **include_high_density_modes**     | Boolean to include high density modes in the search                                |
 
 ## Return Value
 

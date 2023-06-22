@@ -10,6 +10,12 @@ SDL_bool SDL_HasWindowSurface(SDL_Window *window);
 
 ```
 
+## Function Parameters
+
+|                |                     |
+| -------------- | ------------------- |
+| **window**     | the window to query |
+
 ## Return Value
 
 Returns [SDL_TRUE](SDL_TRUE) if there is a surface associated with the

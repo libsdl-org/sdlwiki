@@ -28,6 +28,10 @@ Returns the number of bytes actually copied, or -1 on error; call
 User has to provide a preallocated buffer where descriptor will be copied
 to. The recommended size for a preallocated buffer is 4096 bytes.
 
+## Version
+
+This function is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI)
 

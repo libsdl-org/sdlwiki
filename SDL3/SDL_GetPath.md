@@ -10,6 +10,12 @@ char* SDL_GetPath(SDL_Folder folder);
 
 ```
 
+## Function Parameters
+
+|                |                            |
+| -------------- | -------------------------- |
+| **folder**     | The type of folder to find |
+
 ## Return Value
 
 Returns Either a null-terminated C string containing the full path to the
@@ -29,6 +35,10 @@ The returned value is owned by the caller and should be freed with
 
 If NULL is returned, the error may be obtained with
 [SDL_GetError](SDL_GetError)().
+
+## Version
+
+This function is available since SDL 3.0.0.
 
 ## Related Functions
 
