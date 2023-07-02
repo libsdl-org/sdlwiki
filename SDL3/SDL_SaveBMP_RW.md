@@ -6,8 +6,7 @@ Save a surface to a seekable SDL data stream in BMP format.
 ## Syntax
 
 ```c
-int SDL_SaveBMP_RW
-    (SDL_Surface *surface, SDL_RWops *dst, int freedst);
+int SDL_SaveBMP_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst);
 
 ```
 
