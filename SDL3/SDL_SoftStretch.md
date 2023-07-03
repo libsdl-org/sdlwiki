@@ -29,7 +29,8 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-**WARNING**: Please use [SDL_BlitScaled](SDL_BlitScaled)() instead.
+**WARNING**: Please use [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)()
+instead.
 
 ## Version
 
