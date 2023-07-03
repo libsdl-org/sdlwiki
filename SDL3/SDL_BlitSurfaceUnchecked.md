@@ -7,8 +7,8 @@ Perform low-level surface blitting only.
 
 ```c
 int SDL_BlitSurfaceUnchecked
-    (SDL_Surface *src, SDL_Rect *srcrect,
-     SDL_Surface *dst, SDL_Rect *dstrect);
+    (SDL_Surface *src, const SDL_Rect *srcrect,
+     SDL_Surface *dst, const SDL_Rect *dstrect);
 
 ```
 
@@ -19,7 +19,7 @@ int SDL_BlitSurfaceUnchecked
 | **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                                     |
 | **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface |
 | **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                               |
-| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle that is copied into                              |
+| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface                |
 
 ## Return Value
 

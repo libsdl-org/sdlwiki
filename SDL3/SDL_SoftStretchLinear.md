@@ -15,12 +15,12 @@ int SDL_SoftStretchLinear(SDL_Surface *src,
 
 ## Function Parameters
 
-|                 |                                                                                   |
-| --------------- | --------------------------------------------------------------------------------- |
-| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                        |
-| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied        |
-| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                  |
-| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle that is copied into |
+|                 |                                                                                                 |
+| --------------- | ----------------------------------------------------------------------------------------------- |
+| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                      |
+| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied                      |
+| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                |
+| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface |
 
 ## Return Value
 
