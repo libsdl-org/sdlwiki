@@ -78,7 +78,8 @@ The audio device's chunk size is the number of sample frames (one sample
 per frame for mono output, two samples per frame in a stereo setup, etc)
 that are fed to the device at once. The lower the number, the lower the
 latency, but you risk dropouts if it gets too low. 2048 is often a
-reasonable default, but your app might want to experiment with 1024 or 4096.
+reasonable default, but your app might want to experiment with 1024 or
+4096.
 
 You may only have one audio device open at a time; if you want to change a
 setting, you must close the device and reopen it, which is not something
