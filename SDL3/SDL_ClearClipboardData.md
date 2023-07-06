@@ -6,7 +6,7 @@ Clear the clipboard data
 ## Syntax
 
 ```c
-int SDL_ClearClipboardData();
+int SDL_ClearClipboardData(void);
 
 ```
 
