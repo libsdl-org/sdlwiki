@@ -64,6 +64,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 - [SDL_CleanupTLS](SDL_CleanupTLS)
 - [SDL_ClearAudioStream](SDL_ClearAudioStream)
+- [SDL_ClearClipboardData](SDL_ClearClipboardData)
 - [SDL_ClearComposition](SDL_ClearComposition)
 - [SDL_ClearError](SDL_ClearError)
 - [SDL_ClearHints](SDL_ClearHints)
