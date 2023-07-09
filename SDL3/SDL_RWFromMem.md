@@ -6,7 +6,7 @@ Use this function to prepare a read-write memory buffer for use with [SDL_RWops]
 ## Syntax
 
 ```c
-SDL_RWops* SDL_RWFromMem(void *mem, int size);
+SDL_RWops* SDL_RWFromMem(void *mem, size_t size);
 
 ```
 
