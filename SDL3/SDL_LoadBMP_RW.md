@@ -6,16 +6,16 @@ Load a BMP image from a seekable SDL data stream.
 ## Syntax
 
 ```c
-SDL_Surface* SDL_LoadBMP_RW(SDL_RWops *src, int freesrc);
+SDL_Surface* SDL_LoadBMP_RW(SDL_RWops *src, SDL_bool freesrc);
 
 ```
 
 ## Function Parameters
 
-|                 |                                               |
-| --------------- | --------------------------------------------- |
-| **src**         | the data stream for the surface               |
-| **freesrc**     | non-zero to close the stream after being read |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **src**         | the data stream for the surface                                                                                     |
+| **freesrc**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 

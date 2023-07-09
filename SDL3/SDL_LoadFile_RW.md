@@ -8,17 +8,17 @@ Load all the data from an SDL data stream.
 ```c
 void* SDL_LoadFile_RW(SDL_RWops *src,
                       size_t *datasize,
-                      int freesrc);
+                      SDL_bool freesrc);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                                           |
-| ---------------- | ------------------------------------------------------------------------- |
-| **src**          | the [SDL_RWops](SDL_RWops) to read all available data from                |
-| **datasize**     | if not NULL, will store the number of bytes read                          |
-| **freesrc**      | if non-zero, calls [SDL_RWclose](SDL_RWclose)() on `src` before returning |
+|                  |                                                                                                                     |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **src**          | the [SDL_RWops](SDL_RWops) to read all available data from                                                          |
+| **datasize**     | if not NULL, will store the number of bytes read                                                                    |
+| **freesrc**      | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
