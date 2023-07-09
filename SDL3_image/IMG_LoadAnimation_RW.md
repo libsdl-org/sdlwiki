@@ -6,7 +6,7 @@ Load an animation from an SDL_RWops.
 ## Syntax
 
 ```c
-IMG_Animation * IMG_LoadAnimation_RW(SDL_RWops *src, int freesrc);
+IMG_Animation * IMG_LoadAnimation_RW(SDL_RWops *src, SDL_bool freesrc);
 
 ```
 

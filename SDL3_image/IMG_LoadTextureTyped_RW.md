@@ -6,7 +6,7 @@ Load an image from an SDL data source into a GPU texture.
 ## Syntax
 
 ```c
-SDL_Texture * IMG_LoadTextureTyped_RW(SDL_Renderer *renderer, SDL_RWops *src, int freesrc, const char *type);
+SDL_Texture * IMG_LoadTextureTyped_RW(SDL_Renderer *renderer, SDL_RWops *src, SDL_bool freesrc, const char *type);
 
 ```
 

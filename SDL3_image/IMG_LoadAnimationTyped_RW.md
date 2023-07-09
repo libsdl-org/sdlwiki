@@ -6,7 +6,7 @@ Load an animation from an SDL datasource
 ## Syntax
 
 ```c
-IMG_Animation * IMG_LoadAnimationTyped_RW(SDL_RWops *src, int freesrc, const char *type);
+IMG_Animation * IMG_LoadAnimationTyped_RW(SDL_RWops *src, SDL_bool freesrc, const char *type);
 
 ```
 

@@ -6,7 +6,7 @@ Load an image from an SDL data source into a software surface.
 ## Syntax
 
 ```c
-SDL_Surface * IMG_Load_RW(SDL_RWops *src, int freesrc);
+SDL_Surface * IMG_Load_RW(SDL_RWops *src, SDL_bool freesrc);
 
 ```
 
