@@ -6,16 +6,16 @@ Load a supported audio format into a chunk.
 ## Syntax
 
 ```c
-Mix_Chunk * Mix_LoadWAV_RW(SDL_RWops *src, int freesrc);
+Mix_Chunk * Mix_LoadWAV_RW(SDL_RWops *src, SDL_bool freesrc);
 
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+|                 |                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **src**         | an SDL_RWops that data will be read from.                                          |
+| **freesrc**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
 
 ## Return Value
 
@@ -38,7 +38,7 @@ won't need to decode again, whereas music always needs to be decoded on the
 fly. Also, crucially, there are as many channels for chunks as the app can
 allocate, but SDL_mixer only offers a single "music" channel.
 
-If `freesrc` is non-zero, the RWops will be closed before returning,
+If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_mixer reads everything it needs
 from the RWops during this call in any case.
 

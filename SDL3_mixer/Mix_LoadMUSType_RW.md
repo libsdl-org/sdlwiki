@@ -6,17 +6,17 @@ Load an audio format into a music object, assuming a specific format.
 ## Syntax
 
 ```c
-Mix_Music * Mix_LoadMUSType_RW(SDL_RWops *src, Mix_MusicType type, int freesrc);
+Mix_Music * Mix_LoadMUSType_RW(SDL_RWops *src, Mix_MusicType type, SDL_bool freesrc);
 
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **type**        | the type of audio data provided by `src`.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+|                 |                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **src**         | an SDL_RWops that data will be read from.                                          |
+| **type**        | the type of audio data provided by `src`.                                          |
+| **freesrc**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
 
 ## Return Value
 
@@ -55,7 +55,7 @@ Currently, the following types are supported:
 - `MUS_OPUS` (Opus files)
 - `MUS_WAVPACK` (WavPack files)
 
-If `freesrc` is non-zero, the RWops will be closed before returning,
+If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_mixer reads everything it needs
 from the RWops during this call in any case.
 

@@ -46,8 +46,8 @@ When done with a chunk, the app should dispose of it with a call to
 
 Note that before SDL_mixer 2.6.0, this function was a macro that called
 [Mix_LoadWAV_RW](Mix_LoadWAV_RW)(), creating a RWops and setting `freesrc`
-to 1. This macro has since been promoted to a proper API function. Older
-binaries linked against a newer SDL_mixer will still call
+to SDL_TRUE. This macro has since been promoted to a proper API function.
+Older binaries linked against a newer SDL_mixer will still call
 [Mix_LoadWAV_RW](Mix_LoadWAV_RW) directly, as they are using the macro,
 which was available since the dawn of time.
 
