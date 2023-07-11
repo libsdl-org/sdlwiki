@@ -4,7 +4,8 @@ There are a number of SDL tutorials available from different sources.
 
 == Multi-Subject ==
 
-* [http://www.sdltutorials.com/ SDLTutorials.com]
+* [http://www.sdltutorials.com/ SDLTutorials.com]  
+: Warning: content up to 15 years out of date.  Check comments to see if code is invalid before using tutorials.
 : A whole website about SDL tutorials, including SDL basics, events, animation, entities, maps and other topics
 
 * [https://www.parallelrealities.co.uk/tutorials/ SDL2 Game Tutorials]
