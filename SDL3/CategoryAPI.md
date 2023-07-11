@@ -220,6 +220,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_GetGamepadFromInstanceID](SDL_GetGamepadFromInstanceID)
 - [SDL_GetGamepadFromPlayerIndex](SDL_GetGamepadFromPlayerIndex)
 - [SDL_GetGamepadInstanceGUID](SDL_GetGamepadInstanceGUID)
+- [SDL_GetGamepadInstanceID](SDL_GetGamepadInstanceID)
 - [SDL_GetGamepadInstanceMapping](SDL_GetGamepadInstanceMapping)
 - [SDL_GetGamepadInstanceName](SDL_GetGamepadInstanceName)
 - [SDL_GetGamepadInstancePath](SDL_GetGamepadInstancePath)
