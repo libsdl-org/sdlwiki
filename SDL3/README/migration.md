@@ -250,7 +250,36 @@ The SDL_EVENT_GAMEPAD_ADDED event now provides the joystick instance ID in the w
 
 The functions SDL_GetGamepads(), SDL_GetGamepadInstanceName(), SDL_GetGamepadInstancePath(), SDL_GetGamepadInstancePlayerIndex(), SDL_GetGamepadInstanceGUID(), SDL_GetGamepadInstanceVendor(), SDL_GetGamepadInstanceProduct(), SDL_GetGamepadInstanceProductVersion(), and SDL_GetGamepadInstanceType() have been added to directly query the list of available gamepads.
 
+The gamepad binding structure has been removed in favor of exchanging bindings in text format.
+
 SDL_GameControllerGetSensorDataWithTimestamp() has been removed. If you want timestamps for the sensor data, you should use the sensor_timestamp member of SDL_EVENT_GAMEPAD_SENSOR_UPDATE events.
+
+SDL_CONTROLLER_TYPE_VIRTUAL has been removed, so virtual controllers can emulate other gamepad types. If you need to know whether a controller is virtual, you can use SDL_IsJoystickVirtual().
+
+SDL_CONTROLLER_TYPE_AMAZON_LUNA has been removed, and can be replaced with this code:
+```c
+SDL_bool SDL_IsJoystickAmazonLunaController(Uint16 vendor_id, Uint16 product_id)
+{
+    return ((vendor_id == 0x1949 && product_id == 0x0419) ||
+            (vendor_id == 0x0171 && product_id == 0x0419));
+}
+```
+
+SDL_CONTROLLER_TYPE_GOOGLE_STADIA has been removed, and can be replaced with this code:
+```c
+SDL_bool SDL_IsJoystickGoogleStadiaController(Uint16 vendor_id, Uint16 product_id)
+{
+    return (vendor_id == 0x18d1 && product_id == 0x9400);
+}
+```
+
+SDL_CONTROLLER_TYPE_NVIDIA_SHIELD has been removed, and can be replaced with this code:
+```c
+SDL_bool SDL_IsJoystickNVIDIASHIELDController(Uint16 vendor_id, Uint16 product_id)
+{
+    return (vendor_id == 0x0955 && (product_id == 0x7210 || product_id == 0x7214));
+}
+```
 
 The following enums have been renamed:
 * SDL_GameControllerAxis => SDL_GamepadAxis
@@ -318,6 +347,8 @@ The following functions have been renamed:
 
 The following functions have been removed:
 * SDL_GameControllerEventState() - replaced with SDL_SetGamepadEventsEnabled() and SDL_GamepadEventsEnabled()
+* SDL_GameControllerGetBindForAxis()
+* SDL_GameControllerGetBindForButton()
 * SDL_GameControllerMappingForDeviceIndex() - replaced with SDL_GetGamepadInstanceMapping()
 * SDL_GameControllerNameForIndex() - replaced with SDL_GetGamepadInstanceName()
 * SDL_GameControllerPathForIndex() - replaced with SDL_GetGamepadInstancePath()

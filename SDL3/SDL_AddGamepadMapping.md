@@ -6,15 +6,15 @@ Add support for gamepads that SDL is unaware of or change the binding of an exis
 ## Syntax
 
 ```c
-int SDL_AddGamepadMapping(const char *mappingString);
+int SDL_AddGamepadMapping(const char *mapping);
 
 ```
 
 ## Function Parameters
 
-|                       |                    |
-| --------------------- | ------------------ |
-| **mappingString**     | the mapping string |
+|                 |                    |
+| --------------- | ------------------ |
+| **mapping**     | the mapping string |
 
 ## Return Value
 
