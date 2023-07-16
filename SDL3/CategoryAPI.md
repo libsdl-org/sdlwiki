@@ -666,6 +666,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_SetGamepadEventsEnabled](SDL_SetGamepadEventsEnabled)
 - [SDL_SetGamepadLED](SDL_SetGamepadLED)
+- [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
 - [SDL_SetGamepadPlayerIndex](SDL_SetGamepadPlayerIndex)
 - [SDL_SetGamepadSensorEnabled](SDL_SetGamepadSensorEnabled)
 - [SDL_SetHint](SDL_SetHint)
