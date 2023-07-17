@@ -24,8 +24,8 @@ Returns 0 if successful, negative on error
 
 ## Remarks
 
-A tag is an arbitary number that can be assigned to several mixer channels,
-to form groups of channels.
+A tag is an arbitrary number that can be assigned to several mixer
+channels, to form groups of channels.
 
 If 'tag' is -1, the tag is removed (actually -1 is the tag used to
 represent the group of all the channels).

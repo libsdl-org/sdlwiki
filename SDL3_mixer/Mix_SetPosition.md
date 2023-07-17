@@ -28,7 +28,7 @@ effect is enabled. Error messages can be retrieved from
 ## Remarks
 
 `angle` is an integer from 0 to 360, that specifies the location of the
-sound in relation to the listener. `angle` will be reduced as neccesary
+sound in relation to the listener. `angle` will be reduced as necessary
 (540 becomes 180 degrees, -100 becomes 260). Angle 0 is due north, and
 rotates clockwise as the value increases. For efficiency, the precision of
 this effect may be limited (angles 1 through 7 might all produce the same

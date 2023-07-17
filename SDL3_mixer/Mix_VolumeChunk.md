@@ -25,7 +25,7 @@ the current volume. If `chunk` is NULL, this returns -1.
 ## Remarks
 
 In addition to channels having a volume setting, individual chunks also
-maintain a seperate volume. Both values are considered when mixing, so both
+maintain a separate volume. Both values are considered when mixing, so both
 affect the final attenuation of the sound. This lets an app adjust the
 volume for all instances of a sound in addition to specific instances of
 that sound.

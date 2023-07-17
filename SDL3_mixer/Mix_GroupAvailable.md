@@ -22,8 +22,8 @@ Returns first available channel, or -1 if none are available.
 
 ## Remarks
 
-A tag is an arbitary number that can be assigned to several mixer channels,
-to form groups of channels.
+A tag is an arbitrary number that can be assigned to several mixer
+channels, to form groups of channels.
 
 This function searches all channels with a specified tag, and returns the
 channel number of the first one it finds that is currently unused.

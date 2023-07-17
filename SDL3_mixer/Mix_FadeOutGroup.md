@@ -27,8 +27,8 @@ This will begin fading a group of channels with a specific tag from their
 current volumes to silence over `ms` milliseconds. After that time, those
 channels are halted.
 
-A tag is an arbitary number that can be assigned to several mixer channels,
-to form groups of channels.
+A tag is an arbitrary number that can be assigned to several mixer
+channels, to form groups of channels.
 
 The default tag for a channel is -1.
 

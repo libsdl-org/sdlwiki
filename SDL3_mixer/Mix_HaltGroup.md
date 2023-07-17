@@ -25,8 +25,8 @@ Returns zero, whether any channels were halted or not.
 This will stop further playback on all channels with a specific tag, until
 a new chunk is started there.
 
-A tag is an arbitary number that can be assigned to several mixer channels,
-to form groups of channels.
+A tag is an arbitrary number that can be assigned to several mixer
+channels, to form groups of channels.
 
 The default tag for a channel is -1.
 
