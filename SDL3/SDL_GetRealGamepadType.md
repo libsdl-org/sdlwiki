@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetGamepadType
+# SDL_GetRealGamepadType
 
-Get the type of an opened gamepad.
+Get the type of an opened gamepad, ignoring any mapping override.
 
 ## Syntax
 
 ```c
-SDL_GamepadType SDL_GetGamepadType(SDL_Gamepad *gamepad);
+SDL_GamepadType SDL_GetRealGamepadType(SDL_Gamepad *gamepad);
 
 ```
 
@@ -27,7 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadInstanceType](SDL_GetGamepadInstanceType)
+* [SDL_GetRealGamepadInstanceType](SDL_GetRealGamepadInstanceType)
 
 ----
 [CategoryAPI](CategoryAPI)

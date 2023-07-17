@@ -21,12 +21,6 @@ const char* SDL_GetGamepadName(SDL_Gamepad *gamepad);
 Returns the implementation dependent name for the gamepad, or NULL if there
 is no name or the identifier passed is invalid.
 
-## Remarks
-
-This is the same name as returned by
-[SDL_GetGamepadNameForIndex](SDL_GetGamepadNameForIndex)(), but it takes a
-gamepad identifier instead of the (unstable) device index.
-
 ## Version
 
 This function is available since SDL 3.0.0.
