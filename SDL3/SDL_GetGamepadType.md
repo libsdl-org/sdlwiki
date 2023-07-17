@@ -19,7 +19,7 @@ SDL_GamepadType SDL_GetGamepadType(SDL_Gamepad *gamepad);
 ## Return Value
 
 Returns the gamepad type, or
-[SDL_GAMEPAD_TYPE_INVALID](SDL_GAMEPAD_TYPE_INVALID) if it's not available.
+[SDL_GAMEPAD_TYPE_UNKNOWN](SDL_GAMEPAD_TYPE_UNKNOWN) if it's not available.
 
 ## Version
 

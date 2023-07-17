@@ -19,7 +19,7 @@ SDL_GamepadType SDL_GetGamepadTypeFromString(const char *str);
 ## Return Value
 
 Returns the [SDL_GamepadType](SDL_GamepadType) enum corresponding to the
-input string, or [`SDL_GAMEPAD_TYPE_INVALID`](SDL_GAMEPAD_TYPE_INVALID) if
+input string, or [`SDL_GAMEPAD_TYPE_UNKNOWN`](SDL_GAMEPAD_TYPE_UNKNOWN) if
 no match was found.
 
 ## Remarks
