@@ -24,6 +24,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_acos](SDL_acos)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 - [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
+- [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
 - [SDL_AddGamepadMappingsFromRW](SDL_AddGamepadMappingsFromRW)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_AddTimer](SDL_AddTimer)
