@@ -608,6 +608,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_RectEmpty](SDL_RectEmpty)
 - [SDL_RegisterApp](SDL_RegisterApp)
 - [SDL_RegisterEvents](SDL_RegisterEvents)
+- [SDL_ReloadGamepadMappings](SDL_ReloadGamepadMappings)
 - [SDL_RemoveTimer](SDL_RemoveTimer)
 - [SDL_RenderClear](SDL_RenderClear)
 - [SDL_RenderClipEnabled](SDL_RenderClipEnabled)
