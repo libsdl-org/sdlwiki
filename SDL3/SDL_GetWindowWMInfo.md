@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
 
   SDL_VERSION(&info.version); /* initialize info structure with SDL version info */
 
-  if(SDL_GetWindowWMInfo(window,&info)) { /* the call returns true on success */
+  if(SDL_GetWindowWMInfo(window,&info) == 0) { /* the call returns 0 on success */
     /* success */
     const char *subsystem = "an unknown system!";
     switch(info.subsystem) {
