@@ -1,4 +1,3 @@
-
 = SDL_Rect =
 A structure that contains the definition of a rectangle, with the origin at the upper left.
 
@@ -33,8 +32,8 @@ srcrect.w = 32;
 srcrect.h = 32;
 dstrect.x = 640/2;
 dstrect.y = 480/2;
-dstrect.w = 32;
-dstrect.h = 32;
+dstrect.w = 0;
+dstrect.h = 0;
 
 SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 </syntaxhighlight>
