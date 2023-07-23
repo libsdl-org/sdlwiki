@@ -30,6 +30,8 @@ To be consistent with the C2 category scheme, all categories start with the word
 - [CategoryJoystick](CategoryJoystick)
 - [CategoryKeyboard](CategoryKeyboard)
 - [CategoryLog](CategoryLog)
+- [CategoryMessageBox](CategoryMessageBox)
+- [CategoryMetal](CategoryMetal)
 - [CategoryMouse](CategoryMouse)
 - [CategoryMutex](CategoryMutex)
 - [CategoryPixels](CategoryPixels)
