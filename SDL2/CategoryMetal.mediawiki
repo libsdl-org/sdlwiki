@@ -1,0 +1,21 @@
+= Metal Support =
+
+
+'''Include File(s):''' [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h SDL_metal.h]
+
+
+== Introduction ==
+
+This category contains functions specific to Apple's Metal API.
+
+== Functions ==
+
+<!-- BEGIN CATEGORY LIST -->
+* [[SDL_Metal_GetLayer]]
+* [[SDL_Metal_CreateView]]
+* [[SDL_Metal_DestroyView]]
+* [[SDL_Metal_GetDrawableSize]]
+<!-- END CATEGORY LIST -->
+
+----
+[[CategoryCategory]]
