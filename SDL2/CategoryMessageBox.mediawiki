@@ -20,7 +20,7 @@ The functions in this category are used configure and display system message box
 == Functions ==
 <<FullSearchCached(category:CategoryMessagebox -CategoryEnum -CategoryStruct -title:SGFunctions)>>
 <!-- BEGIN CATEGORY LIST -->
-* [[SDL_ShowMesssageBox]]
+* [[SDL_ShowMessageBox]]
 * [[SDL_ShowSimpleMessageBox]]
 <!-- END CATEGORY LIST -->
 ----
