@@ -201,7 +201,7 @@
 |'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[[CategoryMessagebox|Message boxes]]
+|[[CategoryMessageBox|Message boxes]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_messagebox.h SDL_messagebox.h]
 |-
 |[[CategorySystem|Platform-specific Functionality]]
