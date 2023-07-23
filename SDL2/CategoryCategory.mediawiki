@@ -28,6 +28,8 @@ To be consistent with the C2 category scheme, all categories start with the word
 * [[CategoryIO]]
 * [[CategoryJoystick]]
 * [[CategoryKeyboard]]
+* [[CategoryMessageBox]]
+* [[CategoryMetal]]
 * [[CategoryMouse]]
 * [[CategoryMutex]]
 * [[CategoryPixels]]
