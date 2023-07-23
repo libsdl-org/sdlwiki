@@ -57,6 +57,9 @@
 |-
 |[[CategoryVulkan|Vulkan Support]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_vulkan.h SDL_vulkan.h]
+|-
+|[[CategoryMetal|Metal Support]]
+|[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h SDL_metal.h]
 |}
 
 
