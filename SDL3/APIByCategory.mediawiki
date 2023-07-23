@@ -56,6 +56,9 @@
 |-
 |[[CategoryVulkan|Vulkan Support]]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL_vulkan.h SDL_vulkan.h]
+|-
+|[[CategoryMetal|Metal Support]]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_metal.h SDL_metal.h]
 |}
 
 
@@ -196,6 +199,9 @@
 {|
 |'''View information and functions related to...'''
 |'''View the header'''
+|-
+|[[CategoryMessageBox|Message boxes]]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_messagebox.h SDL_messagebox.h]
 |-
 |[[CategorySystem|Platform-specific Functionality]]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL_system.h SDL_system.h]
