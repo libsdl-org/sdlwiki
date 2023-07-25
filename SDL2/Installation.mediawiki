@@ -96,7 +96,7 @@ Our buildbot tries to build for Win32 for each commit, and uploads successful Vi
 
 You can build for macOS "the Unix way" with the configure or CMake scripts, and Xcode projects are also provided. You can ship an SDL.framework, or just build the .dylib file and ship it with an appropriate install_name to ship beside your program's binary.
 
-If you are building "the Unix way," we encourage you to use [https://github.com/libsdl-org/SDL/blob/main/build-scripts/clang-fat.sh build-scripts/clang-fat.sh] in the SDL source tree for your compiler:
+If you are building "the Unix way," we encourage you to use [https://github.com/libsdl-org/SDL/blob/SDL2/build-scripts/clang-fat.sh build-scripts/clang-fat.sh] in the SDL source tree for your compiler:
 
 <syntaxhighlight lang="bash">
 mkdir build
