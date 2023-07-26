@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_CreateSurfaceFrom
 
-Allocate a new RGB surface with with a specific pixel format and existing pixel data.
+Allocate a new RGB surface with a specific pixel format and existing pixel data.
 
 ## Syntax
 
