@@ -34,6 +34,8 @@ you must free the surface before you free the pixel data.
 You may pass NULL for pixels and 0 for pitch to create a surface that you
 will fill in with valid values later.
 
+Pitch usually is the width of the image in bytes (eg. `width*4` for `SDL_PIXELFORMAT_RGBA8888`)
+
 ## Version
 
 This function is available since SDL 3.0.0.
