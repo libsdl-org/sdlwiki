@@ -391,6 +391,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_GetTouchDeviceType](SDL_GetTouchDeviceType)
 - [SDL_GetTouchFinger](SDL_GetTouchFinger)
 - [SDL_GetTouchName](SDL_GetTouchName)
+- [SDL_GetUserFolder](SDL_GetUserFolder)
 - [SDL_GetVersion](SDL_GetVersion)
 - [SDL_GetVideoDriver](SDL_GetVideoDriver)
 - [SDL_GetWindowBordersSize](SDL_GetWindowBordersSize)
