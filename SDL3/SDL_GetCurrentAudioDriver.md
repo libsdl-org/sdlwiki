@@ -23,6 +23,10 @@ invalid, even if you quit the audio subsystem and initialize a new driver
 call to this function, of course). As such, you should not modify or free
 the returned string.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

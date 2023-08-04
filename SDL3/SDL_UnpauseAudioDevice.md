@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_PauseAudioDevice
+# SDL_UnpauseAudioDevice
 
-Use this function to pause audio playback on a specified device.
+Use this function to unpause audio playback on a specified device.
 
 ## Syntax
 
 ```c
-int SDL_PauseAudioDevice(SDL_AudioDeviceID dev);
+int SDL_UnpauseAudioDevice(SDL_AudioDeviceID dev);
 
 ```
 
@@ -23,17 +23,14 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-This function pauses audio processing for a given device. Any bound audio
-streams will not progress, and no audio will be generated. Pausing one
-device does not prevent other unpaused devices from running.
+This function unpauses audio processing for a given device that has
+previously been paused with [SDL_PauseAudioDevice](SDL_PauseAudioDevice)().
+Once unpaused, any bound audio streams will begin to progress again, and
+audio can be generated.
 
 Unlike in SDL2, audio devices start in an _unpaused_ state, since an app
-has to bind a stream before any audio will flow. Pausing a paused device is
-a legal no-op.
-
-Pausing a device can be useful to halt all audio without unbinding all the
-audio streams. This might be useful while a game is paused, or a level is
-loading, etc.
+has to bind a stream before any audio will flow. Unpausing an unpaused
+device is a legal no-op.
 
 Physical devices can not be paused or unpaused, only logical devices
 created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() can be.
@@ -46,21 +43,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-extern SDL_AudioDeviceID devid;
-SDL_PauseAudioDevice(devid);  // audio callback is stopped when this returns.
-SDL_Delay(5000);  // audio device plays silence for 5 seconds
-SDL_PlayAudioDevice(devid);  // audio callback starts running again.
-```
-
 ## Related Functions
 
 * [SDL_UnpauseAudioDevice](SDL_UnpauseAudioDevice)
 * [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
+[CategoryAPI](CategoryAPI)
 

@@ -34,6 +34,11 @@ unconverted data for later. This is different than SDL2, where that work
 was done while inputting new data to the stream and requesting the output
 just copied the converted data.
 
+## Thread Safety
+
+It is safe to call this function from any thread, but if the stream has a
+callback set, the caller might need to manage extra locking.
+
 ## Version
 
 This function is available since SDL 3.0.0.

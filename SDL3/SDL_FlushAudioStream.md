@@ -27,6 +27,10 @@ It is legal to add more data to a stream after flushing, but there will be
 audio gaps in the output. Generally this is intended to signal the end of
 input, so the complete output becomes available.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

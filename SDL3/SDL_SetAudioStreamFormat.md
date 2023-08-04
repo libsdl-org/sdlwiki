@@ -7,26 +7,18 @@ Change the input and output formats of an audio stream.
 
 ```c
 int SDL_SetAudioStreamFormat(SDL_AudioStream *stream,
-                             SDL_AudioFormat src_format,
-                             int src_channels,
-                             int src_rate,
-                             SDL_AudioFormat dst_format,
-                             int dst_channels,
-                             int dst_rate);
+                             const SDL_AudioSpec *src_spec,
+                             const SDL_AudioSpec *dst_spec);
 
 ```
 
 ## Function Parameters
 
-|                      |                                                    |
-| -------------------- | -------------------------------------------------- |
-| **stream**           | The stream the format is being changed             |
-| **src_format**       | The format of the audio input                      |
-| **src_channels**     | The number of channels of the audio input          |
-| **src_rate**         | The sampling rate of the audio input               |
-| **dst_format**       | The format of the desired audio output             |
-| **dst_channels**     | The number of channels of the desired audio output |
-| **dst_rate**         | The sampling rate of the desired audio output      |
+|                  |                                                                 |
+| ---------------- | --------------------------------------------------------------- |
+| **stream**       | The stream the format is being changed                          |
+| **src_spec**     | The new format of the audio input; if NULL, it is not changed.  |
+| **dst_spec**     | The new format of the audio output; if NULL, it is not changed. |
 
 ## Return Value
 

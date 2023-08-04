@@ -26,6 +26,10 @@ there's no esound server available, SDL's esound driver would fail if used.
 By default, SDL tries all drivers, in its preferred order, until one is
 found to be usable.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

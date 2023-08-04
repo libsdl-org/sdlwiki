@@ -33,6 +33,11 @@ Note that this call simply queues unconverted data for later. This is
 different than SDL2, where data was converted during the Put call and the
 Get call would just dequeue the previously-converted data.
 
+## Thread Safety
+
+It is safe to call this function from any thread, but if the stream has a
+callback set, the caller might need to manage extra locking.
+
 ## Version
 
 This function is available since SDL 3.0.0.

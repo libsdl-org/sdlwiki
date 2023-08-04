@@ -31,6 +31,10 @@ The names of drivers are all simple, low-ASCII identifiers, like "alsa",
 "coreaudio" or "xaudio2". These never have Unicode characters, and are not
 meant to be proper names.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

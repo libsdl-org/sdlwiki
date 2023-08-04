@@ -32,6 +32,10 @@ are gigabytes of data queued, the app might need to read some of it with
 [SDL_GetAudioStreamData](SDL_GetAudioStreamData) before this function's
 return value is no longer clamped.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

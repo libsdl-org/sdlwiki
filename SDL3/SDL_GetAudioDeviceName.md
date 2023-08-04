@@ -6,34 +6,28 @@ Get the human-readable name of a specific audio device.
 ## Syntax
 
 ```c
-const char* SDL_GetAudioDeviceName(int index,
-                                   int iscapture);
+char* SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
 
 ```
 
 ## Function Parameters
 
-|                   |                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
-| **iscapture**     | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
+|               |                                         |
+| ------------- | --------------------------------------- |
+| **devid**     | the instance ID of the device to query. |
 
 ## Return Value
 
-Returns the name of the audio device at the requested index, or NULL on
-error.
+Returns the name of the audio device, or NULL on error.
 
 ## Remarks
 
-This function is only valid after successfully initializing the audio
-subsystem. The values returned by this function reflect the latest call to
-[SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)(); re-call that function
-to redetect available hardware.
+The string returned by this function is UTF-8 encoded. The caller should
+call [SDL_free](SDL_free) on the return value when done with it.
 
-The string returned by this function is UTF-8 encoded, read-only, and
-managed internally. You are not to free it. If you need to keep the string
-for any length of time, you should make your own copy of it, as it will be
-invalid next time any of several other SDL functions are called.
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

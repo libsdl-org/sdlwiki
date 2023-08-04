@@ -47,6 +47,10 @@ data to an output stream in an audio callback. While you can do that,
 [SDL_MixAudioFormat](SDL_MixAudioFormat)() is really only needed when
 you're mixing a single audio stream with a volume adjustment.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -6,14 +6,10 @@ Convert some audio data of one format to another format.
 ## Syntax
 
 ```c
-int SDL_ConvertAudioSamples(SDL_AudioFormat src_format,
-                            Uint8 src_channels,
-                            int src_rate,
+int SDL_ConvertAudioSamples(const SDL_AudioSpec *src_spec,
                             const Uint8 *src_data,
                             int src_len,
-                            SDL_AudioFormat dst_format,
-                            Uint8 dst_channels,
-                            int dst_rate,
+                            const SDL_AudioSpec *dst_spec,
                             Uint8 **dst_data,
                             int *dst_len);
 
@@ -21,18 +17,14 @@ int SDL_ConvertAudioSamples(SDL_AudioFormat src_format,
 
 ## Function Parameters
 
-|                      |                                                                                                                                      |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **src_format**       | The format of the source audio                                                                                                       |
-| **src_channels**     | The number of channels of the source audio                                                                                           |
-| **src_rate**         | The sampling rate of the source audio                                                                                                |
-| **src_data**         | The audio data to be converted                                                                                                       |
-| **src_len**          | The len of src_data                                                                                                                  |
-| **dst_format**       | The format of the desired audio output                                                                                               |
-| **dst_channels**     | The number of channels of the desired audio output                                                                                   |
-| **dst_rate**         | The sampling rate of the desired audio output                                                                                        |
-| **dst_data**         | Will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free)(). On error, it will be NULL. |
-| **dst_len**          | Will be filled with the len of dst_data                                                                                              |
+|                  |                                                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **src_spec**     | The format details of the input audio                                                                                                |
+| **src_data**     | The audio data to be converted                                                                                                       |
+| **src_len**      | The len of src_data                                                                                                                  |
+| **dst_spec**     | The format details of the output audio                                                                                               |
+| **dst_data**     | Will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free)(). On error, it will be NULL. |
+| **dst_len**      | Will be filled with the len of dst_data                                                                                              |
 
 ## Return Value
 
@@ -51,6 +43,10 @@ this situation.
 Internally, this function creates and destroys an
 [SDL_AudioStream](SDL_AudioStream) on each use, so it's also less efficient
 than using one directly, if you need to convert multiple times.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

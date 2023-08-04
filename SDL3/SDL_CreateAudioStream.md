@@ -6,25 +6,16 @@ Create a new audio stream.
 ## Syntax
 
 ```c
-SDL_AudioStream* SDL_CreateAudioStream(SDL_AudioFormat src_format,
-                                    int src_channels,
-                                    int src_rate,
-                                    SDL_AudioFormat dst_format,
-                                    int dst_channels,
-                                    int dst_rate);
+SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_AudioSpec *dst_spec);
 
 ```
 
 ## Function Parameters
 
-|                      |                                                    |
-| -------------------- | -------------------------------------------------- |
-| **src_format**       | The format of the source audio                     |
-| **src_channels**     | The number of channels of the source audio         |
-| **src_rate**         | The sampling rate of the source audio              |
-| **dst_format**       | The format of the desired audio output             |
-| **dst_channels**     | The number of channels of the desired audio output |
-| **dst_rate**         | The sampling rate of the desired audio output      |
+|                  |                                        |
+| ---------------- | -------------------------------------- |
+| **src_spec**     | The format details of the input audio  |
+| **dst_spec**     | The format details of the output audio |
 
 ## Return Value
 
