@@ -28,7 +28,7 @@ Microsoft RTF format.
 
 ## Version
 
-This function is available since SDL_rtf 2.0.0.
+This function is available since SDL_rtf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)
