@@ -753,6 +753,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
 - [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
 - [SDL_ShowWindow](SDL_ShowWindow)
+- [SDL_ShowWindowSystemMenu](SDL_ShowWindowSystemMenu)
 - [SDL_SignalCondition](SDL_SignalCondition)
 - [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
 - [SDL_SoftStretch](SDL_SoftStretch)
