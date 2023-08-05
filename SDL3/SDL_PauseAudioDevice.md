@@ -57,7 +57,7 @@ SDL_PlayAudioDevice(devid);  // audio callback starts running again.
 
 ## Related Functions
 
-* [SDL_UnpauseAudioDevice](SDL_UnpauseAudioDevice)
+* [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 * [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)
 
 ----
