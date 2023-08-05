@@ -6,7 +6,7 @@ This is a simple library to load images of various formats as SDL surfaces.
 
 It can load BMP, GIF, JPEG, LBM, PCX, PNG, PNM (PPM/PGM/PBM), QOI, TGA, XCF, XPM, and simple SVG format images. It can also load AVIF, JPEG-XL, TIFF, and WebP images, depending on build options (see the note below for details.)
 
-Refer to [[CategoryAPI]] for a list of functions, and the examples [https://github.com/libsdl-org/SDL_image/blob/main/showimage.c showimage.c] for documentation on this library.
+Refer to [[CategoryAPI]] for a list of functions, and the examples [https://github.com/libsdl-org/SDL_image/blob/main/examples/showimage.c showimage.c] for documentation on this library.
 
 This library is under the zlib License, see the file [https://github.com/libsdl-org/SDL_image/blob/main/LICENSE.txt LICENSE.txt] for details.
 
