@@ -647,6 +647,7 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDL_ResetHints](SDL_ResetHints)
 - [SDL_ResetKeyboard](SDL_ResetKeyboard)
 - [SDL_RestoreWindow](SDL_RestoreWindow)
+- [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 - [SDL_REVISION](SDL_REVISION)
 - [SDL_RumbleGamepad](SDL_RumbleGamepad)
 - [SDL_RumbleGamepadTriggers](SDL_RumbleGamepadTriggers)
