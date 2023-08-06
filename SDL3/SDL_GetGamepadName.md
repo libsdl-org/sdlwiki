@@ -27,7 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadNameForIndex](SDL_GetGamepadNameForIndex)
+* [SDL_GetGamepadInstanceName](SDL_GetGamepadInstanceName)
 * [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
