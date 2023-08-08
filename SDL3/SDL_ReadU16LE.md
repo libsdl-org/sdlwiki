@@ -1,19 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_ReadU16LE
 
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-# SDL_WriteU8
-
-Use this function to write a byte to an [SDL_RWops](SDL_RWops).
+Use this function to read 16 bits of little-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
 
 ## Syntax
 
 ```c
-SDL_bool SDL_WriteU8(SDL_RWops *dst, Uint8 value);
+SDL_bool SDL_ReadU16LE(SDL_RWops *src, Uint16 *value);
 
 ```
 
@@ -21,19 +14,23 @@ SDL_bool SDL_WriteU8(SDL_RWops *dst, Uint8 value);
 
 |               |                                        |
 | ------------- | -------------------------------------- |
-| **dst**       | the [SDL_RWops](SDL_RWops) to write to |
-| **value**     | the byte value to write                |
+| **src**       | the stream from which to read data     |
+| **value**     | a pointer filled in with the data read |
 
 ## Return Value
 
 Returns [SDL_TRUE](SDL_TRUE) on successful write, [SDL_FALSE](SDL_FALSE) on
 failure; call [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+SDL byteswaps the data only if necessary, so the data returned will be in
+the native byte order.
+
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI)
 

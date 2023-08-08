@@ -6,8 +6,7 @@ Seek within an [SDL_RWops](SDL_RWops) data stream.
 ## Syntax
 
 ```c
-Sint64 SDL_RWseek(SDL_RWops *context,
-                  Sint64 offset, int whence);
+Sint64 SDL_RWseek(SDL_RWops *context, Sint64 offset, int whence);
 
 ```
 
@@ -21,7 +20,9 @@ Sint64 SDL_RWseek(SDL_RWops *context,
 
 ## Return Value
 
-Returns the final offset in the data stream after the seek or -1 on error.
+Returns the final offset in the data stream after the seek or a negative
+error code on failure; call [SDL_GetError](SDL_GetError)() for more
+information.
 
 ## Remarks
 
@@ -38,8 +39,6 @@ If this stream can not seek, it will return -1.
 [SDL_RWseek](SDL_RWseek)() is actually a wrapper function that calls the
 [SDL_RWops](SDL_RWops)'s `seek` method appropriately, to simplify
 application development.
-
-Prior to SDL 2.0.10, this function was a macro.
 
 ## Version
 

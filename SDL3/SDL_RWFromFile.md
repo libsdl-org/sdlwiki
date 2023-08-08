@@ -6,8 +6,7 @@ Use this function to create a new [SDL_RWops](SDL_RWops) structure for reading f
 ## Syntax
 
 ```c
-SDL_RWops* SDL_RWFromFile(const char *file,
-                          const char *mode);
+SDL_RWops* SDL_RWFromFile(const char *file, const char *mode);
 
 ```
 

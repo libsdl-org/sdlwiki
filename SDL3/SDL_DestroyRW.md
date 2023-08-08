@@ -6,20 +6,20 @@ Use this function to free an [SDL_RWops](SDL_RWops) structure allocated by [SDL_
 ## Syntax
 
 ```c
-void SDL_DestroyRW(SDL_RWops * area);
+void SDL_DestroyRW(SDL_RWops *context);
 
 ```
 
 ## Function Parameters
 
-|              |                                                  |
-| ------------ | ------------------------------------------------ |
-| **area**     | the [SDL_RWops](SDL_RWops) structure to be freed |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **context**     | the [SDL_RWops](SDL_RWops) structure to be freed |
 
 ## Remarks
 
 Applications do not need to use this function unless they are providing
-their own [SDL_RWops](SDL_RWops) implementation. If you just need a
+their own [SDL_RWops](SDL_RWops) implementation. If you just need an
 [SDL_RWops](SDL_RWops) to read/write a common data source, you should use
 the built-in implementations in SDL, like
 [SDL_RWFromFile](SDL_RWFromFile)() or [SDL_RWFromMem](SDL_RWFromMem)(),

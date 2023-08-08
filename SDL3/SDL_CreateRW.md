@@ -18,7 +18,7 @@ call [SDL_GetError](SDL_GetError)() for more information.
 ## Remarks
 
 Applications do not need to use this function unless they are providing
-their own [SDL_RWops](SDL_RWops) implementation. If you just need a
+their own [SDL_RWops](SDL_RWops) implementation. If you just need an
 [SDL_RWops](SDL_RWops) to read/write a common data source, you should use
 the built-in implementations in SDL, like
 [SDL_RWFromFile](SDL_RWFromFile)() or [SDL_RWFromMem](SDL_RWFromMem)(),

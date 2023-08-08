@@ -33,8 +33,6 @@ Note that if this fails to flush the stream to disk, this function reports
 an error, but the [SDL_RWops](SDL_RWops) is still invalid once this
 function returns.
 
-Prior to SDL 2.0.10, this function was a macro.
-
 ## Version
 
 This function is available since SDL 3.0.0.

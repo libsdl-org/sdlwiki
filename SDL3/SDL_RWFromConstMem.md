@@ -6,8 +6,7 @@ Use this function to prepare a read-only memory buffer for use with RWops.
 ## Syntax
 
 ```c
-SDL_RWops* SDL_RWFromConstMem(const void *mem,
-                              size_t size);
+SDL_RWops* SDL_RWFromConstMem(const void *mem, size_t size);
 
 ```
 

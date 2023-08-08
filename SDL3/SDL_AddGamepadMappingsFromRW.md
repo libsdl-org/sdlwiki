@@ -6,16 +6,16 @@ Load a set of gamepad mappings from a seekable SDL data stream.
 ## Syntax
 
 ```c
-int SDL_AddGamepadMappingsFromRW(SDL_RWops *src, int freesrc);
+int SDL_AddGamepadMappingsFromRW(SDL_RWops *src, SDL_bool freesrc);
 
 ```
 
 ## Function Parameters
 
-|                 |                                               |
-| --------------- | --------------------------------------------- |
-| **src**         | the data stream for the mappings to be added  |
-| **freesrc**     | non-zero to close the stream after being read |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **src**         | the data stream for the mappings to be added                                                                        |
+| **freesrc**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 

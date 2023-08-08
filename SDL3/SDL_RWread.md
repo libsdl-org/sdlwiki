@@ -6,7 +6,7 @@ Read from a data source.
 ## Syntax
 
 ```c
-Sint64 SDL_RWread(SDL_RWops *context, void *ptr, Sint64 size);
+size_t SDL_RWread(SDL_RWops *context, void *ptr, size_t size);
 
 ```
 
@@ -20,8 +20,7 @@ Sint64 SDL_RWread(SDL_RWops *context, void *ptr, Sint64 size);
 
 ## Return Value
 
-Returns the number of bytes read, 0 at end of file, -1 on error, and -2 for
-data not ready with a non-blocking context.
+Returns the number of bytes read, or 0 on end of file or other error.
 
 ## Remarks
 

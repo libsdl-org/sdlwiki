@@ -29,9 +29,6 @@ convenience. This extra byte is not included in the value reported via
 
 The data should be freed with [SDL_free](SDL_free)().
 
-Prior to SDL 2.0.10, this function was a macro wrapping around
-[SDL_LoadFile_RW](SDL_LoadFile_RW).
-
 ## Version
 
 This function is available since SDL 3.0.0.

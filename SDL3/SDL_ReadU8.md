@@ -13,28 +13,25 @@ Use this function to read a byte from an [SDL_RWops](SDL_RWops).
 ## Syntax
 
 ```c
-Uint8 SDL_ReadU8(SDL_RWops * src);
+SDL_bool SDL_ReadU8(SDL_RWops *src, Uint8 *value);
 
 ```
 
 ## Function Parameters
 
-|             |                                         |
-| ----------- | --------------------------------------- |
-| **src**     | the [SDL_RWops](SDL_RWops) to read from |
+|               |                                         |
+| ------------- | --------------------------------------- |
+| **src**       | the [SDL_RWops](SDL_RWops) to read from |
+| **value**     | a pointer filled in with the data read  |
 
 ## Return Value
 
-Returns the read byte on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
-
-## Related Functions
-
-* [SDL_WriteU8](SDL_WriteU8)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO), [CategoryDraft](CategoryDraft)

@@ -6,8 +6,7 @@ Write to an [SDL_RWops](SDL_RWops) data stream.
 ## Syntax
 
 ```c
-Sint64 SDL_RWwrite(SDL_RWops *context,
-                   const void *ptr, Sint64 size);
+size_t SDL_RWwrite(SDL_RWops *context, const void *ptr, size_t size);
 
 ```
 

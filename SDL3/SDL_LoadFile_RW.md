@@ -6,9 +6,7 @@ Load all the data from an SDL data stream.
 ## Syntax
 
 ```c
-void* SDL_LoadFile_RW(SDL_RWops *src,
-                      size_t *datasize,
-                      SDL_bool freesrc);
+void* SDL_LoadFile_RW(SDL_RWops *src, size_t *datasize, SDL_bool freesrc);
 
 ```
 

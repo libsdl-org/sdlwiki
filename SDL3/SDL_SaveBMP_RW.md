@@ -6,17 +6,17 @@ Save a surface to a seekable SDL data stream in BMP format.
 ## Syntax
 
 ```c
-int SDL_SaveBMP_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst);
+int SDL_SaveBMP_RW(SDL_Surface *surface, SDL_RWops *dst, SDL_bool freedst);
 
 ```
 
 ## Function Parameters
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
-| **dst**         | a data stream to save to                                                  |
-| **freedst**     | non-zero to close the stream after being written                          |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **surface**     | the [SDL_Surface](SDL_Surface) structure containing the image to be saved                                           |
+| **dst**         | a data stream to save to                                                                                            |
+| **freedst**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `dst` before returning, even in the case of an error |
 
 ## Return Value
 
