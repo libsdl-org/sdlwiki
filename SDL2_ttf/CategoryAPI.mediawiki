@@ -1,5 +1,3 @@
-= CategoryAPI =
-
 <!-- BEGIN CATEGORY LIST -->
 * [[TTF_ByteSwappedUNICODE]]
 * [[TTF_CloseFont]]
@@ -84,4 +82,3 @@
 * [[TTF_SizeUTF8]]
 * [[TTF_WasInit]]
 <!-- END CATEGORY LIST -->
-

@@ -1,14 +1,3 @@
-= SDL 2.0 API Structures =
-
-
-== Introduction ==
-
-This category contains all the (public) structures for SDL.
-
-== Structures ==
-
-<<FullSearchCached(category:CategoryStruct -title:SDLStructTemplate -title:SGStructures)>>
-
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_assert_data]]
 * [[SDL_atomic_t]]
@@ -77,5 +66,3 @@ This category contains all the (public) structures for SDL.
 * [[SDLStructTemplate]]
 * [[SGStructures]]
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

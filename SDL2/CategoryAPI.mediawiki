@@ -1,5 +1,3 @@
-= CategoryAPI =
-
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_acos]]
 * [[SDL_AddEventWatch]]
@@ -793,4 +791,3 @@
 * [[SDLFunctionTemplate]]
 * [[SGFunctions]]
 <!-- END CATEGORY LIST -->
-

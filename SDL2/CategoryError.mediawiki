@@ -1,29 +1,6 @@
-= Error Handling =
-
-'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_error.h SDL_error.h]
-
-
-== Introduction ==
-
-Functions in this category provide simple error message routines for SDL. [[SDL_GetError]]() can be called for almost all SDL functions to determine what problems are occurring. Check the wiki page of each specific SDL function to see whether [[SDL_GetError]]() is meaningful for them or not.
-
-The SDL error messages are in English.
-
-<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-<!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryError -title:SGEnumerations)>> -->
-
-<!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryError -title:SGStructures)>> -->
-
-== Functions ==
-<<FullSearchCached(category:CategoryError -CategoryEnum -title:CategoryStruct)>>
-
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_ClearError]]
 * [[SDL_GetError]]
 * [[SDL_GetErrorMsg]]
 * [[SDL_SetError]]
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

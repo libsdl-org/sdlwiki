@@ -1,5 +1,3 @@
-# CategoryHeader
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_OpenURL](SDL_OpenURL)
 - [SDLEnumTemplate](SDLEnumTemplate)
@@ -9,4 +7,3 @@
 - [SGFunctions](SGFunctions)
 - [SGStructures](SGStructures)
 <!-- END CATEGORY LIST -->
-

@@ -1,5 +1,3 @@
-= CategoryAPI =
-
 <!-- BEGIN CATEGORY LIST -->
 * [[SDLNet_AddSocket]]
 * [[SDLNet_AllocPacket]]
@@ -38,4 +36,3 @@
 * [[SDLNet_UDP_SetPacketLoss]]
 * [[SDLNet_UDP_Unbind]]
 <!-- END CATEGORY LIST -->
-

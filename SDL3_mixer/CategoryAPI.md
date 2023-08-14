@@ -1,5 +1,3 @@
-# CategoryAPI
-
 <!-- BEGIN CATEGORY LIST -->
 - [Mix_AllocateChannels](Mix_AllocateChannels)
 - [Mix_ChannelFinished](Mix_ChannelFinished)
@@ -97,4 +95,3 @@
 - [Mix_VolumeChunk](Mix_VolumeChunk)
 - [Mix_VolumeMusic](Mix_VolumeMusic)
 <!-- END CATEGORY LIST -->
-

@@ -1,9 +1,6 @@
-# CategoryDraft
-
 <!-- BEGIN CATEGORY LIST -->
 - [CategoryGamepad](CategoryGamepad)
 - [CategoryInput](CategoryInput)
-- [CategoryStandard](CategoryStandard)
 - [CategoryTemplate](CategoryTemplate)
 - [SDL_acos](SDL_acos)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
@@ -178,4 +175,3 @@
 - [SDLKeycodeLookup](SDLKeycodeLookup)
 - [SDLStructTemplate](SDLStructTemplate)
 <!-- END CATEGORY LIST -->
-

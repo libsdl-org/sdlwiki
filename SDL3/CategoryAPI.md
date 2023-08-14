@@ -1,25 +1,3 @@
-# SDL 2.0 API by Name
-
-Under construction due to migration.<br />
-For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<br />
-[[/wiki/search|Search]] is also an option.
-
-## Hints
-
-<<FullSearchCached(category:CategoryDefine -SGHints)>>
-
-## Enumerations
-
-<<FullSearchCached(category:CategoryEnum -SDLEnumTemplate -title:SGEnumerations)>>
-
-## Structures
-
-<<FullSearchCached(category:CategoryStruct -SDLStructTemplate -title:SGStructures)>>
-
-## Functions
-
-<<FullSearchCached(category:CategoryAPI -SDLFunctionTemplate -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_acos](SDL_acos)
 - [SDL_AddEventWatch](SDL_AddEventWatch)
@@ -863,5 +841,3 @@ For '''[Ctrl]+[F]''' functionality, [[/wiki/index|index]] may be a workaround.<b
 - [SDLFunctionTemplate](SDLFunctionTemplate)
 - [SGFunctions](SGFunctions)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

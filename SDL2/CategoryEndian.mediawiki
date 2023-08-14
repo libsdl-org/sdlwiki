@@ -1,39 +1,3 @@
-
-= Byte Order and Byte Swapping =
-
-'''Include File(s):'''  [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_endian.h SDL_endian.h]
-
-
-== Introduction ==
-This category contains functions for handling endian-specific values.
-
-Simple data types like integers and floats consist of several bytes. A 32bit integer (Sint32), for example, uses four bytes (as each byte has 8 bits). Endianness describes how the system orders the bytes of this value in memory.
-
-Endianness comes in two forms - big and little.
-* SDL_LIL_ENDIAN means byte order is 1234, where the least significant byte is stored first
-* SDL_BIG_ENDIAN means byte order is 4321, where the most significant byte is stored first
-
-
-''Example:''  Imagine the 32bit integer number ```16,909,060``` in decimal.
- In hexadecimal that would be ~+```0x01020304```+~. <br/>
- ```0x01``` is the most significant byte (the one that increases the value the most.  {{{0x04}}} is the least significant byte (as it increases the value the least).<br/>
-
- When that is stored in memory on a little-endian system they are stored with the least significant byte first, producing the byte stream:
-  ```0x04 0x03 0x02 0x01```<br/>
-
- When that is stored in memory on a big-endian system they are stored with the most significant byte first, producing the byte stream:
-  ```0x01 0x02 0x03 0x04```<br/>
-
-For further information about endianness read the [https://en.wikipedia.org/wiki/Endianness Wikipedia] article on the subject.
-
-SDL_BYTEORDER is a macro that corresponds to the byte order used by the processor type it was compiled for.
-* SDL_BYTEORDER is SDL_LIL_ENDIAN for x86, x64, and similar systems that use the little endian byte order.
-* SDL_BYTEORDER is SDL_BIG_ENDIAN for PowerPC and similar systems that use the big endian byte order.
-
-
-== Functions ==
-<<FullSearchCached(category:CategoryEndian -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_Swap16]]
 * [[SDL_Swap32]]
@@ -48,5 +12,3 @@ SDL_BYTEORDER is a macro that corresponds to the byte order used by the processo
 * [[SDL_SwapLE32]]
 * [[SDL_SwapLE64]]
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

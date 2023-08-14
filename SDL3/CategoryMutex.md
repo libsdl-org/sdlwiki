@@ -1,31 +1,3 @@
-
-# Thread Synchronization Primitives
-
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_mutex.h SDL_mutex.h], [http://hg.libsdl.org/SDL/file/default/include/SDL_thread.h SDL_thread.h]
-
-
-## Introduction
-
-Functions in this group provide thread synchronization primitives for multi-threaded programing.
-
-There are three primitives available in SDL:
-* Mutex
-* Semaphore
-* Condition Variable
-
-The SDL mutex is implemented as a recursive mutex so you can nest lock and unlock calls to the same mutex.
-
-
-<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-<!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryMutex -title:SGEnumerations)>> -->
-
-<!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategoryMutex -title:SGStructures)>> -->
-
-## Functions
-<<FullSearchCached(category:CategoryMutex -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_CondBroadcast](SDL_CondBroadcast)
 - [SDL_CondSignal](SDL_CondSignal)
@@ -46,5 +18,3 @@ The SDL mutex is implemented as a recursive mutex so you can nest lock and unloc
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

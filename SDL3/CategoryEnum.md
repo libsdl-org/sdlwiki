@@ -1,16 +1,3 @@
-
-
-# SDL 2.0 API Enumerations
-
-
-## Introduction
-
-This category contains all the (public) enumerations for SDL.
-
-## Enumerations
-
-<<FullSearchCached(category:CategoryEnum -title:SDLEnumTemplate -title:SGEnumerations)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AssertState](SDL_AssertState)
 - [SDL_AudioFormat](SDL_AudioFormat)
@@ -47,5 +34,3 @@ This category contains all the (public) enumerations for SDL.
 - [SDLEnumTemplate](SDLEnumTemplate)
 - [SGEnumerations](SGEnumerations)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

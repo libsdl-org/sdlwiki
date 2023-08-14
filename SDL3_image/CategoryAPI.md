@@ -1,5 +1,3 @@
-# CategoryAPI
-
 <!-- BEGIN CATEGORY LIST -->
 - [IMG_FreeAnimation](IMG_FreeAnimation)
 - [IMG_Init](IMG_Init)
@@ -61,4 +59,3 @@
 - [IMG_SavePNG](IMG_SavePNG)
 - [IMG_SavePNG_RW](IMG_SavePNG_RW)
 <!-- END CATEGORY LIST -->
-

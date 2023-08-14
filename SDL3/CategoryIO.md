@@ -1,22 +1,3 @@
-
-# File I/O Abstraction
-
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_rwops.h SDL_rwops.h]
-
-
-## Introduction
-This category contains functions for handling the general interface for SDL to read and write data streams.  It can easily be extended to files, memory, etc.
-
-<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-<!-- #== Enumerations == -->
-<!-- #<<FullSearchCached(category:CategoryEnum CategoryIO -title:SGEnumerations)>> -->
-
-## Structures
-<<FullSearchCached(category:CategoryStruct CategoryIO -title:SGStructures)>>
-
-## Functions
-<<FullSearchCached(category:CategoryIO -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_ReadBE16](SDL_ReadBE16)
 - [SDL_ReadBE32](SDL_ReadBE32)
@@ -43,5 +24,3 @@ This category contains functions for handling the general interface for SDL to r
 - [SDL_WriteLE64](SDL_WriteLE64)
 - [SDL_WriteU8](SDL_WriteU8)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

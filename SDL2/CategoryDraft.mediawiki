@@ -1,9 +1,4 @@
-= CategoryDraft =
-
 <!-- BEGIN CATEGORY LIST -->
-* [[CategoryGameController]]
-* [[CategoryInput]]
-* [[CategoryStandard]]
 * [[CategoryTemplate]]
 * [[SDL_AudioDeviceEvent]]
 * [[SDL_BlendFactor]]
@@ -95,4 +90,3 @@
 * [[SDLKeycodeLookup]]
 * [[SDLStructTemplate]]
 <!-- END CATEGORY LIST -->
-

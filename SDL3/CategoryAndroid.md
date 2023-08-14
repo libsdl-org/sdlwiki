@@ -1,5 +1,3 @@
-# CategoryAndroid
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AndroidBackButton](SDL_AndroidBackButton)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
@@ -13,4 +11,3 @@
 - [SDL_GetAndroidSDKVersion](SDL_GetAndroidSDKVersion)
 - [SDL_IsAndroidTV](SDL_IsAndroidTV)
 <!-- END CATEGORY LIST -->
-

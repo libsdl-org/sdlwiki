@@ -1,21 +1,3 @@
-
-# Platform-specific Functionality
-
-'''Include File(s):'''  [http://hg.libsdl.org/SDL/file/default/include/SDL_system.h SDL_system.h]
-
-
-## Introduction
-This category contains functions for advanced, platform-specific functionality.
-
-## Enumerations
-<<FullSearchCached(category:CategoryEnum CategorySystem -title:SGEnumerations)>>
-
-<!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct CategorySystem -title:SGStructures)>> -->
-
-## Functions
-<<FullSearchCached(category:CategorySystem -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 - [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
@@ -28,5 +10,3 @@ This category contains functions for advanced, platform-specific functionality.
 - [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
 - [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

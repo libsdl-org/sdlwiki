@@ -1,22 +1,3 @@
-
-# Display and Window Management
-
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_video.h SDL_video.h]
-
-
-## Introduction
-
-This category contains functions for handling display and window actions.
-
-## Enumerations
-<<FullSearchCached(category:CategoryEnum CategoryVideo -title:SGEnumerations)>>
-
-## Structures
-<<FullSearchCached(category:CategoryStruct CategoryVideo -title:SGStructures)>>
-
-## Functions
-<<FullSearchCached(category:CategoryVideo -CategoryEnum -CategoryStruct -title:SGFunctions)>>
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_BlendMode](SDL_BlendMode)
 - [SDL_CreateWindow](SDL_CreateWindow)
@@ -105,5 +86,3 @@ This category contains functions for handling display and window actions.
 - [SDL_WindowEvent](SDL_WindowEvent)
 - [SDL_WindowFlags](SDL_WindowFlags)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory

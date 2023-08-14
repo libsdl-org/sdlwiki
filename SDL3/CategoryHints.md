@@ -1,32 +1,3 @@
-<!-- master-page:CategoryTemplate -->
-
-# Configuration Variables
-
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_hints.h SDL_hints.h]
-
-
-## Introduction
-This category contains functions to set and get configuration hints, as well as listing each of them alphabetically.
-
-The convention for naming hints is SDL_HINT_X, where "SDL_X" is the environment variable that can be used to override the default.
-
-In general these hints are just that - they may or may not be supported or applicable on any given platform, but they provide a way for an application or user to give the library a hint as to how they would like the library to work.
-
-
-## Hints
-<<FullSearchCached(category:CategoryDefine CategoryHints)>>
-
-## Enumerations
-<<FullSearchCached(category:CategoryEnum CategoryHints -title:SGEnumerations)>>
-
-<!-- #Remove this line and the ## below to use this markup if it becomes relevant to this category -->
-<!-- #== Structures == -->
-<!-- #<<FullSearchCached(category:CategoryStruct Category Hints -title:SGStructures)>> -->
-
-## Functions
-<<FullSearchCached(category:CategoryHints -CategoryEnum -CategoryStruct -CategoryDefine -title:SGFunctions)>>
-
-
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_ClearHints](SDL_ClearHints)
@@ -81,5 +52,3 @@ In general these hints are just that - they may or may not be supported or appli
 - [SDL_SetHint](SDL_SetHint)
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 <!-- END CATEGORY LIST -->
-----
-CategoryCategory
