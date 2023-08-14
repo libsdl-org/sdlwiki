@@ -12,10 +12,10 @@ int Mix_VolumeChunk(Mix_Chunk *chunk, int volume);
 
 ## Function Parameters
 
-|                 |                                                                                 |
-| --------------- | ------------------------------------------------------------------------------- |
-| **channel**     | the channel on set/query the volume on, or -1 for all channels.                 |
-| **volume**      | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+|                |                                                                                 |
+| -------------- | ------------------------------------------------------------------------------- |
+| **chunk**      | the chunk whose volume to adjust.                                               |
+| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
 
 ## Return Value
 
