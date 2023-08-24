@@ -830,6 +830,7 @@
 - [SDL_WriteS16LE](SDL_WriteS16LE)
 - [SDL_WriteS32BE](SDL_WriteS32BE)
 - [SDL_WriteS32LE](SDL_WriteS32LE)
+- [SDL_WriteS64BE](SDL_WriteS64BE)
 - [SDL_WriteS64LE](SDL_WriteS64LE)
 - [SDL_WriteU16BE](SDL_WriteU16BE)
 - [SDL_WriteU16LE](SDL_WriteU16LE)
