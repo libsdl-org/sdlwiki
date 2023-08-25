@@ -176,6 +176,7 @@
 * [[SDL_GameControllerSetSensorEnabled]]
 * [[SDL_GameControllerTypeForIndex]]
 * [[SDL_GameControllerUpdate]]
+* [[SDL_GDKGetDefaultUser]]
 * [[SDL_GDKGetTaskQueue]]
 * [[SDL_GDKRunApp]]
 * [[SDL_GDKSuspendComplete]]

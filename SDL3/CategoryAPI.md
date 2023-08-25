@@ -145,6 +145,7 @@
 - [SDL_GamepadHasRumbleTriggers](SDL_GamepadHasRumbleTriggers)
 - [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
 - [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
+- [SDL_GDKGetDefaultUser](SDL_GDKGetDefaultUser)
 - [SDL_GDKGetTaskQueue](SDL_GDKGetTaskQueue)
 - [SDL_GDKRunApp](SDL_GDKRunApp)
 - [SDL_GDKSuspendComplete](SDL_GDKSuspendComplete)
