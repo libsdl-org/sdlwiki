@@ -6,7 +6,7 @@ Set a callback that runs when data is added to an audio stream.
 ## Syntax
 
 ```c
-int SDL_SetAudioStreamPutCallback(SDL_AudioStream *stream, SDL_AudioStreamRequestCallback callback, void *userdata);
+int SDL_SetAudioStreamPutCallback(SDL_AudioStream *stream, SDL_AudioStreamCallback callback, void *userdata);
 
 ```
 

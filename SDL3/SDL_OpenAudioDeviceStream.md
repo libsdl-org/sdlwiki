@@ -6,7 +6,7 @@ Convenience function for straightforward audio init for the common case.
 ## Syntax
 
 ```c
-SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec, SDL_AudioStreamRequestCallback callback, void *userdata);
+SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec, SDL_AudioStreamCallback callback, void *userdata);
 
 ```
 
