@@ -723,6 +723,7 @@
 - [SDL_SetWindowAlwaysOnTop](SDL_SetWindowAlwaysOnTop)
 - [SDL_SetWindowBordered](SDL_SetWindowBordered)
 - [SDL_SetWindowData](SDL_SetWindowData)
+- [SDL_SetWindowFocusable](SDL_SetWindowFocusable)
 - [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 - [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 - [SDL_SetWindowGrab](SDL_SetWindowGrab)
