@@ -14,12 +14,12 @@ int SDL_BlitSurface
 
 ## Function Parameters
 
-|                 |                                                                                                                                                       |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                                                                            |
-| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface                                        |
-| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                                                                      |
-| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the target rectangle in the destination surface, filled with the actual rectangle used after clipping |
+|                 |                                                                                                                                                                                                                                                 |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **src**         | the [SDL_Surface](SDL_Surface) structure to be copied from                                                                                                                                                                                      |
+| **srcrect**     | the [SDL_Rect](SDL_Rect) structure representing the rectangle to be copied, or NULL to copy the entire surface                                                                                                                                  |
+| **dst**         | the [SDL_Surface](SDL_Surface) structure that is the blit target                                                                                                                                                                                |
+| **dstrect**     | the [SDL_Rect](SDL_Rect) structure representing the x and y position in the destination surface. On input the width and height are ignored (taken from srcrect), and on output this is filled in with the actual rectangle used after clipping. |
 
 ## Return Value
 
@@ -90,7 +90,7 @@ SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
+* [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
