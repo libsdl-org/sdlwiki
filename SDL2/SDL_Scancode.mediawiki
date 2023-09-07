@@ -493,7 +493,7 @@ An enumeration of the SDL keyboard scancode representation.
 |SDL_SCANCODE_KP_DBLAMPERSAND
 |SDLK_KP_DBLAMPERSAND
 |-
-|"'''Keypad ||'''" (the || key (numeric keypad))
+|"'''Keypad <nowiki>|</nowiki><nowiki>|</nowiki>'''" (the <nowiki>|</nowiki><nowiki>|</nowiki> key (numeric keypad))
 |SDL_SCANCODE_KP_DBLVERTICALBAR
 |SDLK_KP_DBLVERTICALBAR
 |-
@@ -629,7 +629,7 @@ An enumeration of the SDL keyboard scancode representation.
 |SDL_SCANCODE_KP_TAB
 |SDLK_KP_TAB
 |-
-|"'''Keypad |'''" (the | key (numeric keypad))
+|"'''Keypad <nowiki>|</nowiki>'''" (the <nowiki>|</nowiki> key (numeric keypad))
 |SDL_SCANCODE_KP_VERTICALBAR
 |SDLK_KP_VERTICALBAR
 |-
