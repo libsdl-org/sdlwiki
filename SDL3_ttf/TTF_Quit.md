@@ -28,7 +28,7 @@ function!
 
 ## Version
 
-This function is available since SDL_ttf 2.0.12.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

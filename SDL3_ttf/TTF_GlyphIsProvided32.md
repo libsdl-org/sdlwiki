@@ -30,7 +30,7 @@ no reason not to use this function exclusively.
 
 ## Version
 
-This function is available since SDL_ttf 2.0.18.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

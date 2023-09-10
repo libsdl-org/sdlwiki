@@ -27,7 +27,7 @@ The wrap alignment option can be one of the following:
 
 ## Version
 
-This function is available since SDL_ttf 2.20.0.
+This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 

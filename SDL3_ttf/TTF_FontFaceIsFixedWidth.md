@@ -30,7 +30,7 @@ are more likely to not be fixed-width in most cases.
 
 ## Version
 
-This function is available since SDL_ttf 2.0.12.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

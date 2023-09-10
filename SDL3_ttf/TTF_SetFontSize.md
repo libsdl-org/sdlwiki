@@ -27,7 +27,7 @@ This clears already-generated glyphs, if any, from the cache.
 
 ## Version
 
-This function is available since SDL_ttf 2.0.18.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

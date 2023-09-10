@@ -24,7 +24,7 @@ This returns static internal data; do not free or modify it!
 
 ## Version
 
-This function is available since SDL_ttf 2.0.12.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

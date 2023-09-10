@@ -33,7 +33,7 @@ If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 
 ## Version
 
-This function is available since SDL_ttf 2.20.0.
+This function is available since SDL_ttf 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

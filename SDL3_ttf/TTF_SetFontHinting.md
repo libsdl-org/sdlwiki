@@ -28,11 +28,11 @@ The hinter setting is a single value:
 - [`TTF_HINTING_MONO`](TTF_HINTING_MONO)
 - [`TTF_HINTING_NONE`](TTF_HINTING_NONE)
 - [`TTF_HINTING_LIGHT_SUBPIXEL`](TTF_HINTING_LIGHT_SUBPIXEL) (available in
-  SDL_ttf 2.0.18 and later)
+  SDL_ttf 3.0.0 and later)
 
 ## Version
 
-This function is available since SDL_ttf 2.0.12.
+This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 

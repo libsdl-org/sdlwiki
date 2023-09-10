@@ -46,7 +46,7 @@ You can render at other quality levels with
 
 ## Version
 
-This function is available since SDL_ttf 2.0.18.
+This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
