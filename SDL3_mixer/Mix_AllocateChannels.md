@@ -46,7 +46,7 @@ channels without changing anything.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

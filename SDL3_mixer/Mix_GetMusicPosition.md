@@ -26,7 +26,7 @@ To convert to milliseconds, multiply by 1000.0.
 
 ## Version
 
-This function is available since SDL_mixer 2.6.0.
+This function is available since SDL_mixer 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

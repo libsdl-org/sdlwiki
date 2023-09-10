@@ -44,7 +44,7 @@ somewhere other than the filesystem, you can use
 When done with a chunk, the app should dispose of it with a call to
 [Mix_FreeChunk](Mix_FreeChunk)().
 
-Note that before SDL_mixer 2.6.0, this function was a macro that called
+Note that before SDL_mixer 3.0.0, this function was a macro that called
 [Mix_LoadWAV_RW](Mix_LoadWAV_RW)(), creating a RWops and setting `freesrc`
 to SDL_TRUE. This macro has since been promoted to a proper API function.
 Older binaries linked against a newer SDL_mixer will still call
@@ -53,8 +53,7 @@ which was available since the dawn of time.
 
 ## Version
 
-This function is available since SDL_mixer 2.6.0 (and as a macro since
-2.0.0).
+This function is available since SDL_mixer 3.0.0
 
 ## Related Functions
 

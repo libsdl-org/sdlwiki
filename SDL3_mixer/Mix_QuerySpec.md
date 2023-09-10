@@ -24,12 +24,6 @@ Returns 1 if the audio device has been opened, 0 otherwise.
 
 ## Remarks
 
-If [Mix_OpenAudioDevice](Mix_OpenAudioDevice)() was called with
-`allowed_changes` set to anything but zero, or
-[Mix_OpenAudio](Mix_OpenAudio)() was used, some audio device settings may
-be different from the application's request. This function will report what
-the device is actually running at.
-
 Note this is only important if the app intends to touch the audio buffers
 being sent to the hardware directly. If an app just wants to play audio
 files and let SDL_mixer handle the low-level details, this function can

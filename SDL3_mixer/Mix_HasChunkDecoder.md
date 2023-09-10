@@ -35,7 +35,7 @@ capital letters (some example names are "AIFF", "VOC", "WAV").
 
 ## Version
 
-This function is available since SDL_mixer 2.0.2.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 

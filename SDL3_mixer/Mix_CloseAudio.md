@@ -24,8 +24,7 @@ Do not start any new audio playing during callbacks in this function.
 
 This will close the audio device. Attempting to play new audio after this
 function returns will fail, until another successful call to
-[Mix_OpenAudio](Mix_OpenAudio)() or
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)().
+[Mix_OpenAudio](Mix_OpenAudio)().
 
 Note that (unlike [Mix_OpenAudio](Mix_OpenAudio) optionally calling
 SDL_Init(SDL_INIT_AUDIO) on the app's behalf), this will _not_ deinitialize
@@ -50,7 +49,7 @@ new format and the existing chunks will not be converted to match.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 

@@ -25,7 +25,7 @@ free'd by the caller.
 
 ## Version
 
-This function is available since SDL_mixer 2.6.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 

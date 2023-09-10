@@ -44,7 +44,7 @@ A fading channel will change it's volume progressively, as if
 [Mix_Volume](Mix_Volume)() was called on it (which is to say: you probably
 shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
 
-Note that before SDL_mixer 2.6.0, this function was a macro that called
+Note that before SDL_mixer 3.0.0, this function was a macro that called
 [Mix_FadeInChannelTimed](Mix_FadeInChannelTimed)() with a fourth parameter
 ("ticks") of -1. This function still does the same thing, but promotes it
 to a proper API function. Older binaries linked against a newer SDL_mixer
@@ -53,8 +53,7 @@ as they are using the macro, which was available since the dawn of time.
 
 ## Version
 
-This function is available since SDL_mixer 2.6.0 (and as a macro since
-2.0.0).
+This function is available since SDL_mixer 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)

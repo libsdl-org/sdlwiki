@@ -18,7 +18,7 @@ void Mix_PauseAudio(int pause_on);
 
 ## Version
 
-This function is available since SDL_mixer 2.8.0.
+This function is available since SDL_mixer 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

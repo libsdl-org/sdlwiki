@@ -32,7 +32,7 @@ The pointers remain valid until you call
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 

@@ -53,7 +53,7 @@ To convert from milliseconds, divide by 1000.0.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI)

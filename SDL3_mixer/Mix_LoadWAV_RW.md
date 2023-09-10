@@ -42,7 +42,7 @@ If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_mixer reads everything it needs
 from the RWops during this call in any case.
 
-There is a separate function (a macro, before SDL_mixer 2.6.0) to read
+There is a separate function (a macro, before SDL_mixer 3.0.0) to read
 files from disk without having to deal with SDL_RWops:
 `Mix_LoadWAV("filename.wav")` will call this function and manage those
 details for you.
@@ -52,8 +52,7 @@ When done with a chunk, the app should dispose of it with a call to
 
 ## Version
 
-This function is available since SDL_mixer 2.6.0 (and as a macro since
-2.0.0).
+This function is available since SDL_mixer 3.0.0
 
 ## Related Functions
 

@@ -76,13 +76,12 @@ For that reason, it's considered best practices to have a single
 this isn't required, be aware of the risks of deviating from that behavior.
 
 After initializing SDL_mixer, the next step is to open an audio device to
-prepare to play sound (with [Mix_OpenAudio](Mix_OpenAudio)() or
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)()), and load audio data to play
-with that device.
+prepare to play sound (with [Mix_OpenAudio](Mix_OpenAudio)()), and load
+audio data to play with that device.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 

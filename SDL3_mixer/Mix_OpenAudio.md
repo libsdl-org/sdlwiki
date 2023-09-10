@@ -48,10 +48,6 @@ mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
 effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
 expects it to be in a specific format, and you should specify that here.
 
-You may only have one audio device open at a time; if you want to change a
-setting, you must close the device and reopen it, which is not something
-you can do seamlessly during playback.
-
 This function allows you to select specific audio hardware on the system
 with the `devid` parameter. If you specify 0, SDL_mixer will choose the
 best default it can on your behalf (which, in many cases, is exactly what
@@ -66,16 +62,15 @@ If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
+should close the audio with [Mix_CloseAudio](Mix_CloseAudio)().
 
 ## Version
 
-This function is available since SDL_mixer 2.0.2.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_CloseDevice](Mix_CloseDevice)
+* [Mix_CloseAudio](Mix_CloseAudio)
 * [Mix_QuerySpec](Mix_QuerySpec)
 
 ----

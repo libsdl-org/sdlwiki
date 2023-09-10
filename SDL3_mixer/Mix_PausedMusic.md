@@ -16,7 +16,7 @@ Return 1 if music is paused, 0 otherwise.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
