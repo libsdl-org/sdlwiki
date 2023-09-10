@@ -39,7 +39,7 @@ determine file type in many cases in its standard load functions.
 
 ## Version
 
-This function is available since SDL_image 2.0.2.
+This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 

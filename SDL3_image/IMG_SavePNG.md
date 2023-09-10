@@ -27,7 +27,7 @@ If the file already exists, it will be overwritten.
 
 ## Version
 
-This function is available since SDL_image 2.0.0.
+This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
