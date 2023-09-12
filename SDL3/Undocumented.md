@@ -2,6 +2,7 @@
 
 ## Functions defined in the headers, but not in the wiki
 
+- [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
@@ -283,6 +284,7 @@
 - [SDL_HasRDTSC](SDL_HasRDTSC)
 - [SDL_HintPriority](SDL_HintPriority)
 - [SDL_HitTestResult](SDL_HitTestResult)
+- [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)
 - [SDL_JoyAxisEvent](SDL_JoyAxisEvent)
 - [SDL_JoyButtonEvent](SDL_JoyButtonEvent)
 - [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)

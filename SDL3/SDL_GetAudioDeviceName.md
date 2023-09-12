@@ -45,7 +45,8 @@ for (i = 0; i < count; ++i) {
 
 ## Related Functions
 
-* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
+* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
+* [SDL_GetAudioCaptureDevices](SDL_GetAudioCaptureDevices)
 * [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
