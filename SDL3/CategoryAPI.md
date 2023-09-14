@@ -205,6 +205,7 @@
 - [SDL_GetGamepadAxisFromString](SDL_GetGamepadAxisFromString)
 - [SDL_GetGamepadBindForAxis](SDL_GetGamepadBindForAxis)
 - [SDL_GetGamepadBindForButton](SDL_GetGamepadBindForButton)
+- [SDL_GetGamepadBindings](SDL_GetGamepadBindings)
 - [SDL_GetGamepadButton](SDL_GetGamepadButton)
 - [SDL_GetGamepadButtonFromString](SDL_GetGamepadButtonFromString)
 - [SDL_GetGamepadFirmwareVersion](SDL_GetGamepadFirmwareVersion)
