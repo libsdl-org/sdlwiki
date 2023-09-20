@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetAudioStreamQueued
 
-Get the number of sample frames currently queued.
+Get the number of bytes currently queued.
 
 ## Syntax
 
@@ -18,14 +18,15 @@ int SDL_GetAudioStreamQueued(SDL_AudioStream *stream);
 
 ## Return Value
 
-Returns the number of sample frames queued.
+Returns the number of bytes queued.
 
 ## Remarks
 
-Since audio streams can change their input format at any time, even if
-there is still data queued in a different format, this reports the queued
-_sample frames_, so if you queue two stereo samples in float32 format and
-then queue five mono samples in Sint16 format, this will return 6.
+Note that audio streams can change their input format at any time, even if
+there is still data queued in a different format, so the returned byte
+count will not necessarily match the number of _sample frames_ available.
+Users of this API should be aware of format changes they make when feeding
+a stream and plan accordingly.
 
 Queued data is not converted until it is consumed by
 [SDL_GetAudioStreamData](SDL_GetAudioStreamData), so this value should be
