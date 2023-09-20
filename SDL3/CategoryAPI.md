@@ -166,6 +166,7 @@
 - [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
 - [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)
 - [SDL_GetAudioStreamFrequencyRatio](SDL_GetAudioStreamFrequencyRatio)
+- [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
 - [SDL_GetAudioStreamSpeed](SDL_GetAudioStreamSpeed)
 - [SDL_GetBasePath](SDL_GetBasePath)
 - [SDL_GetClipboardData](SDL_GetClipboardData)
