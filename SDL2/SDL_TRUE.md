@@ -1,0 +1,1 @@
+int SDL_CaptureMouse(SDL_bool enabled);
