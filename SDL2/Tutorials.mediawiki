@@ -12,7 +12,7 @@ There are a number of SDL tutorials available from different sources.
 : Tutorials on building 3 complete games using SDL 2.0
 
 * [https://www.reddit.com/r/learnprogramming/comments/2ebfn1/copenglsdl_game_engine_tutorials_for_an_absolute/ C++/OpenGL/SDL Game Engine Tutorials]
-: SDL game engine tutorials for absolute beginners, written by the lead developer of [https://www.seedofandromeda.com/ Seed of Andromeda]
+: SDL game engine tutorials for absolute beginners
 
 * [https://www.youtube.com/playlist?list=PLHJE4y54mpC5_eEz9gCqIkNpU-n_2eyNt SDL Made Easy]
 : A collection of video tutorials on various SDL topics
