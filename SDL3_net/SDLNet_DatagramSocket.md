@@ -11,6 +11,8 @@ Datagram sockets are _unreliable_, which is to say that when you send packets ou
 
 Datagram packets either arrive completely or not at all. You never receive a partial packet. Each packet may be a different size.
 
+There is no client/server relationship implicit in datagram sockets, although one can certainly structure an app to behave as such. Any socket can send to any address/port on the network that it can reach, and each received packet will contain the sender's address/port so that a reply can be made. There is no state or concept of an ongoing connection, so a single packet might be the complete relationship between the two sockets.
+
 Datagram packets also have extremely strict size requirements! In theory, you can send one that's up to 64 kilobytes in size, but in practice, you should _never_ send one more than about 1200 bytes (to allow space for IPv6 headers and maybe future protocols); Internet routers might have to fragment larger packets and if a single fragment is lost the entire packet is lost. Furthermore, some popular routers in homes have hardcoded limits, and will unconditionally drop all packets larger than this limit! This is not an SDL3_net limitation; this is just the reality of UDP packets traveling across the Internet. Plan to split up your data into packets of this size or less.
 
 Since packets have no rules for reliability, it means there is never a delay in their reception: the system never has to wait for lost packets to arrive, because it's built to assume packets will be lost and it will be the app's responsibility to deal with that. This can be a serious design burden for the app developer, and can make stream sockets more attractive.
