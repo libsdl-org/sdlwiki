@@ -3,7 +3,7 @@
 
 An opaque data type in SDL3_Net for stream sockets.
 
-Stream sockets map to TCP sockets. They offer data as an ongoing stream of bytes that can flow in either direction.
+Stream sockets map to [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) sockets. They offer data as an ongoing stream of bytes that can flow in either direction.
 
 You can create one of these with either [SDLNet_CreateClient](SDLNet_CreateClient) (to connect to a remote server) or [SDLNet_AcceptClient](SDLNet_AcceptClient) (to accept the client connection to your server). The actual object returned is an opaque data structure; your code should just treat it like a handle to various SDL3_net functions.
 
