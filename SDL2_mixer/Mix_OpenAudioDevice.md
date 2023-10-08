@@ -109,7 +109,7 @@ If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [Mix_CloseAudio](Mix_CloseAudio)().
+should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
 
 ## Version
 
@@ -118,7 +118,7 @@ This function is available since SDL_mixer 2.0.2.
 ## Related Functions
 
 * [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_CloseAudio](Mix_CloseAudio)
+* [Mix_CloseDevice](Mix_CloseDevice)
 * [Mix_QuerySpec](Mix_QuerySpec)
 
 ----

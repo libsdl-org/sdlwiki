@@ -12,10 +12,10 @@ int Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
 
 ## Function Parameters
 
-|              |                                                                                  |
-| ------------ | -------------------------------------------------------------------------------- |
-| **chan**     | the channel to unregister an effect on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **f**        | effect the callback stop calling in future mixing iterations.                    |
+|                 |                                                                                  |
+| --------------- | -------------------------------------------------------------------------------- |
+| **channel**     | the channel to unregister an effect on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| **f**           | effect the callback stop calling in future mixing iterations.                    |
 
 ## Return Value
 

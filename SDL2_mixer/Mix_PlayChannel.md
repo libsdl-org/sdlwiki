@@ -16,7 +16,7 @@ int Mix_PlayChannel(int channel, Mix_Chunk *chunk, int loops);
 | --------------- | -------------------------------------------------------------------------------- |
 | **channel**     | the channel on which to play the new chunk.                                      |
 | **chunk**       | the new chunk to play.                                                           |
-| **loop**        | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| **loops**       | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
 
 ## Return Value
 

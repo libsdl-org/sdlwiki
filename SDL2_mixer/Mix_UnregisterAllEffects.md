@@ -12,9 +12,9 @@ int Mix_UnregisterAllEffects(int channel);
 
 ## Function Parameters
 
-|              |                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------- |
-| **chan**     | the channel to unregister all effects on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+|                 |                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **channel**     | the channel to unregister all effects on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
 
 ## Return Value
 
