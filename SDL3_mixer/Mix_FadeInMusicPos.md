@@ -15,7 +15,7 @@ int Mix_FadeInMusicPos(Mix_Music *music, int loops, int ms, double position);
 |                  |                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------- |
 | **music**        | the new music object to play.                                                    |
-| **loop**         | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| **loops**        | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
 | **ms**           | the number of milliseconds to spend fading in.                                   |
 | **position**     | the start position within the music, in seconds, where playback should start.    |
 

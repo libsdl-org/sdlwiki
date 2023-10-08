@@ -15,7 +15,7 @@ int Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
 |               |                                                                                  |
 | ------------- | -------------------------------------------------------------------------------- |
 | **music**     | the new music object to play.                                                    |
-| **loop**      | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| **loops**     | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
 | **ms**        | the number of milliseconds to spend fading in.                                   |
 
 ## Return Value

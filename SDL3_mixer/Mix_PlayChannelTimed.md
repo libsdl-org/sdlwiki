@@ -16,7 +16,7 @@ int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
 | --------------- | -------------------------------------------------------------------------------- |
 | **channel**     | the channel on which to play the new chunk.                                      |
 | **chunk**       | the new chunk to play.                                                           |
-| **loop**        | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| **loops**       | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
 | **ticks**       | the maximum number of milliseconds of this chunk to mix for playback.            |
 
 ## Return Value

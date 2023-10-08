@@ -16,7 +16,7 @@ int Mix_FadeInChannel(int channel, Mix_Chunk *chunk, int loops, int ms);
 | --------------- | -------------------------------------------------------------------------------- |
 | **channel**     | the channel on which to play the new chunk, or -1 to find any available.         |
 | **chunk**       | the new chunk to play.                                                           |
-| **loop**        | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| **loops**       | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
 | **ms**          | the number of milliseconds to spend fading in.                                   |
 
 ## Return Value

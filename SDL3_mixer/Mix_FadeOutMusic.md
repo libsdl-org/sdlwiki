@@ -12,10 +12,9 @@ int Mix_FadeOutMusic(int ms);
 
 ## Function Parameters
 
-|               |                                                            |
-| ------------- | ---------------------------------------------------------- |
-| **which**     | the channel to fade out.                                   |
-| **ms**        | number of milliseconds to fade before halting the channel. |
+|            |                                                            |
+| ---------- | ---------------------------------------------------------- |
+| **ms**     | number of milliseconds to fade before halting the channel. |
 
 ## Return Value
 
