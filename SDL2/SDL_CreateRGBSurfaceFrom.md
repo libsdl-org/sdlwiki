@@ -55,6 +55,7 @@ This function is available since SDL 2.0.0.
 
 * [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 * [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
+* [SDL_CreateRGBSurfaceWithFormatFrom](SDL_CreateRGBSurfaceWithFormatFrom)
 * [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
