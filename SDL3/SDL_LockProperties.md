@@ -32,6 +32,10 @@ function is only needed when you want to set several properties atomically
 or want to guarantee that properties being queried aren't freed in another
 thread.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

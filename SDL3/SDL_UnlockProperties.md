@@ -16,6 +16,10 @@ void SDL_UnlockProperties(SDL_PropertiesID props);
 | ------------- | ------------------------ |
 | **props**     | the properties to unlock |
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

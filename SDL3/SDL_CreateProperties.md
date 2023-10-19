@@ -15,6 +15,15 @@ SDL_PropertiesID SDL_CreateProperties(void);
 Returns an ID for a new set of properties, or 0 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+All properties are automatically destroyed when [SDL_Quit](SDL_Quit)() is
+called.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

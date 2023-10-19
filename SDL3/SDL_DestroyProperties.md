@@ -21,6 +21,11 @@ void SDL_DestroyProperties(SDL_PropertiesID props);
 All properties are deleted and their cleanup functions will be called, if
 any. The set of properties must be unlocked when it is destroyed.
 
+## Thread Safety
+
+This function should not be called while other threads might be setting or
+getting values from this set of properties.
+
 ## Version
 
 This function is available since SDL 3.0.0.

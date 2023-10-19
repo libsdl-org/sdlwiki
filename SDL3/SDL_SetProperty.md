@@ -25,6 +25,10 @@ int SDL_SetProperty(SDL_PropertiesID props, const char *name, void *value, void 
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
