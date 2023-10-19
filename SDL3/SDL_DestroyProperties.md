@@ -19,7 +19,7 @@ void SDL_DestroyProperties(SDL_PropertiesID props);
 ## Remarks
 
 All properties are deleted and their cleanup functions will be called, if
-any. The set of properties must be unlocked when it is destroyed.
+any.
 
 ## Thread Safety
 
