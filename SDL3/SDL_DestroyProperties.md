@@ -23,8 +23,8 @@ any. The set of properties must be unlocked when it is destroyed.
 
 ## Thread Safety
 
-This function should not be called while other threads might be setting or
-getting values from this set of properties.
+This function should not be called while these properties are locked or
+other threads might be setting or getting values from these properties.
 
 ## Version
 

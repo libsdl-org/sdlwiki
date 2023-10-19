@@ -25,8 +25,9 @@ Returns the value of the property, or NULL if it is not set.
 
 It is safe to call this function from any thread, although the data
 returned is not protected and could potentially be freed if you call
-[SDL_SetProperty](SDL_SetProperty)() on this set of properties or destroy
-this set of properties from another thread. If you need to avoid this, use
+[SDL_SetProperty](SDL_SetProperty)() or
+[SDL_ClearProperty](SDL_ClearProperty)() on these properties from another
+thread. If you need to avoid this, use
 [SDL_LockProperties](SDL_LockProperties)() and
 [SDL_UnlockProperties](SDL_UnlockProperties)().
 
