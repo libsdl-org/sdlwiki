@@ -19,7 +19,7 @@ SDL_AudioStream* SDL_CreateAudioStream(const SDL_AudioSpec *src_spec, const SDL_
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+Returns a new audio stream on success, or NULL on failure.
 
 ## Thread Safety
 
