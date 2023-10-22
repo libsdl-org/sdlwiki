@@ -9,7 +9,7 @@ Render a list of triangles, optionally using a texture and indices into the vert
 int SDL_RenderGeometry(SDL_Renderer *renderer,
                        SDL_Texture *texture,
                        const SDL_Vertex *vertices, int num_vertices,
-                       const int *indices, int num_indices);
+                       const int *indices[0], int num_indices);
 
 ```
 
