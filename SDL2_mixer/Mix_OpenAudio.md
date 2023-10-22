@@ -50,7 +50,7 @@ can just be reasonable defaults. SDL_mixer will convert audio data you feed
 it to the correct format on demand.
 
 That being said, if you have control of your audio data and you know its
-format ahead of time, you can save CPU time by opening the audio device in
+format ahead of time, you may save CPU time by opening the audio device in
 that exact format so SDL_mixer does not have to spend time converting
 anything behind the scenes, and can just pass the data straight through to
 the hardware. On some platforms, where the hardware only supports specific
