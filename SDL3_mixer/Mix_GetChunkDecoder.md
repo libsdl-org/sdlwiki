@@ -28,9 +28,8 @@ this with an invalid index; this function will return NULL in that case.
 
 This list can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [Mix_OpenAudio](Mix_OpenAudio)() or
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)() before calling this function,
-as decoders are activated at device open time.
+call [Mix_OpenAudio](Mix_OpenAudio)() before calling this function, as
+decoders are activated at device open time.
 
 ## Version
 

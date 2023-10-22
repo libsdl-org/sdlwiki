@@ -33,12 +33,11 @@ If the audio device is not opened, this function will return 0.
 
 ## Version
 
-This function is available since SDL_mixer 2.0.0.
+This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
 * [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI)

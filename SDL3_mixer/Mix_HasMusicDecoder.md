@@ -25,9 +25,8 @@ otherwise.
 
 This result can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [Mix_OpenAudio](Mix_OpenAudio)() or
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)() before calling this function,
-as decoders are activated at device open time.
+call [Mix_OpenAudio](Mix_OpenAudio)() before calling this function, as
+decoders are activated at device open time.
 
 Decoder names are arbitrary but also obvious, so you have to know what
 you're looking for ahead of time, but usually it's the file extension in

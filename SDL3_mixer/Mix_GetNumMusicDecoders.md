@@ -18,9 +18,8 @@ Returns number of music decoders available.
 
 This list can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [Mix_OpenAudio](Mix_OpenAudio)() or
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)() before calling this function,
-as decoders are activated at device open time.
+call [Mix_OpenAudio](Mix_OpenAudio)() before calling this function, as
+decoders are activated at device open time.
 
 Appearing in this list doesn't promise your specific audio file will
 decode...but it's handy to know if you have, say, a functioning Ogg Vorbis
