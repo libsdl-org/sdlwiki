@@ -18,12 +18,13 @@ void SDL_UnlockTexture(SDL_Texture * texture);
 
 ## Remarks
 
-The memory for the texture area locked, which is pointed to by the pointer
-whose address is provided to [SDL_LockTexture](SDL_LockTexture)() as the
-pixels parameter, is freed by this function! If you want a copy of the
-texture data, keep such one at your application level.
+**Warning**: Please note that [SDL_LockTexture](SDL_LockTexture)() is
+intended to be write-only; it will not guarantee the previous contents of
+the texture will be provided. You must fully initialize any area of a
+texture that you lock before unlocking it, as the pixels might otherwise be
+uninitialized memory.
 
-**Warning**: locking and immediately unlocking a texture can result in
+Which is to say: locking and immediately unlocking a texture can result in
 corrupted textures, depending on the renderer in use.
 
 ## Version
