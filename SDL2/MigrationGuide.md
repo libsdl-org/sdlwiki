@@ -469,4 +469,4 @@ fprintf(stderr, "MSGBOX: %s\n%s\n", title, text);   // oh well.
 
 Now there's [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)(). You're welcome!
 
-If you skipped ahead, go back and check out all the new features [at the overview](#Overview_of_new_features)!
+If you skipped ahead, go back and check out all the new features [at the overview](#overview-of-new-features)!
