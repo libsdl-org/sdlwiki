@@ -6,7 +6,7 @@ Unlock the read/write lock.
 ## Syntax
 
 ```c
-int SDL_UnlockRWLock(SDL_RWLock *rwlock) SDL_RELEASE_GENERIC(rwlock);
+void SDL_UnlockRWLock(SDL_RWLock *rwlock) SDL_RELEASE_GENERIC(rwlock);
 
 ```
 
@@ -15,11 +15,6 @@ int SDL_UnlockRWLock(SDL_RWLock *rwlock) SDL_RELEASE_GENERIC(rwlock);
 |                |                       |
 | -------------- | --------------------- |
 | **rwlock**     | the rwlock to unlock. |
-
-## Return Value
-
-Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

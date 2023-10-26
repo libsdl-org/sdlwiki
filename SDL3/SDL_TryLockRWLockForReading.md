@@ -18,8 +18,7 @@ int SDL_TryLockRWLockForReading(SDL_RWLock *rwlock) SDL_TRY_ACQUIRE_SHARED(0, rw
 
 ## Return Value
 
-Returns 0, [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT), or -1 on error;
-call [SDL_GetError](SDL_GetError)() for more information.
+Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT)
 
 ## Remarks
 
@@ -33,6 +32,11 @@ wait for it, and will return to it to try again later.
 
 Trying to lock for read-only access can succeed if other threads are
 holding read-only locks, as this won't prevent access.
+
+This function does not fail; if rwlock is NULL, it will return 0
+immediately having locked nothing. If rwlock is valid, this function will
+always either lock the rwlock and return 0, or return
+[SDL_RWLOCK_TIMEOUT](SDL_RWLOCK_TIMEOUT) and lock nothing.
 
 ## Version
 

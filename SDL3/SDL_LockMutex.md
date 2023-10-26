@@ -6,7 +6,7 @@ Lock the mutex.
 ## Syntax
 
 ```c
-int SDL_LockMutex(SDL_Mutex *mutex) SDL_ACQUIRE(mutex);
+void SDL_LockMutex(SDL_Mutex *mutex) SDL_ACQUIRE(mutex);
 
 ```
 
@@ -15,11 +15,6 @@ int SDL_LockMutex(SDL_Mutex *mutex) SDL_ACQUIRE(mutex);
 |               |                   |
 | ------------- | ----------------- |
 | **mutex**     | the mutex to lock |
-
-## Return Value
-
-Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -30,6 +25,10 @@ it. Of all threads waiting to lock the mutex, only one may do so at a time.
 It is legal for the owning thread to lock an already-locked mutex. It must
 unlock it the same number of times before it is actually made available for
 other threads in the system (this is known as a "recursive mutex").
+
+This function does not fail; if mutex is NULL, it will return immediately
+having locked nothing. If the mutex is valid, this function will always
+block until it can lock the mutex, and return with it locked.
 
 ## Version
 

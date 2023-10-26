@@ -6,7 +6,7 @@ Lock the read/write lock for _write_ operations.
 ## Syntax
 
 ```c
-int SDL_LockRWLockForWriting(SDL_RWLock *rwlock) SDL_ACQUIRE(rwlock);
+void SDL_LockRWLockForWriting(SDL_RWLock *rwlock) SDL_ACQUIRE(rwlock);
 
 ```
 
@@ -15,11 +15,6 @@ int SDL_LockRWLockForWriting(SDL_RWLock *rwlock) SDL_ACQUIRE(rwlock);
 |                |                             |
 | -------------- | --------------------------- |
 | **rwlock**     | the read/write lock to lock |
-
-## Return Value
-
-Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
@@ -36,6 +31,10 @@ results in undefined behavior.
 It is illegal to request a write lock from a thread that already holds a
 read-only lock. Doing so results in undefined behavior. Unlock the
 read-only lock before requesting a write lock.
+
+This function does not fail; if rwlock is NULL, it will return immediately
+having locked nothing. If the rwlock is valid, this function will always
+block until it can lock the mutex, and return with it locked.
 
 ## Version
 

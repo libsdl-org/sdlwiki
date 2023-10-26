@@ -18,8 +18,7 @@ int SDL_TryLockRWLockForWriting(SDL_RWLock *rwlock) SDL_TRY_ACQUIRE(0, rwlock);
 
 ## Return Value
 
-Returns 0, [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT), or -1 on error;
-call [SDL_GetError](SDL_GetError)() for more information.
+Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT)
 
 ## Remarks
 
@@ -38,6 +37,11 @@ results in undefined behavior.
 It is illegal to request a write lock from a thread that already holds a
 read-only lock. Doing so results in undefined behavior. Unlock the
 read-only lock before requesting a write lock.
+
+This function does not fail; if rwlock is NULL, it will return 0
+immediately having locked nothing. If rwlock is valid, this function will
+always either lock the rwlock and return 0, or return
+[SDL_RWLOCK_TIMEOUT](SDL_RWLOCK_TIMEOUT) and lock nothing.
 
 ## Version
 
