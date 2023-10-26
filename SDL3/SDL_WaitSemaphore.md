@@ -30,7 +30,7 @@ semaphore value.
 
 This function is the equivalent of calling
 [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)() with a time length
-of [`SDL_MUTEX_MAXWAIT`](SDL_MUTEX_MAXWAIT).
+of -1.
 
 ## Version
 
