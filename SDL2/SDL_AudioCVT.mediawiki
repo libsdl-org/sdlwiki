@@ -1,4 +1,3 @@
-
 = SDL_AudioCVT =
 A structure that contains audio data conversion information.
 
@@ -41,11 +40,11 @@ A structure that contains audio data conversion information.
 |'''len_ratio'''
 |given '''len''', final size is len*len_ratio; see [[#len_ratio|Remarks]] for details
 |-
-|<rowstyle="color: #808080;">SDL_Audio<code></code>Filter[10]
+|<span style="color: rgb(128, 128, 128);">SDL_AudioFilter[10]
 |'''filters'''
 |filter list (internal use)
 |-
-|<rowstyle="color: #808080;">int
+|<span style="color: rgb(128, 128, 128);">int
 |'''filter_index'''
 |current audio conversion function (internal use)
 |}
