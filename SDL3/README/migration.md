@@ -62,7 +62,7 @@ In SDL2, you might have done something like this to play audio...
 ```c
     void SDLCALL MyAudioCallback(void *userdata, Uint8 * stream, int len)
     {
-        /* calculate a little more audio here, maybe using `userdata`, write it to `stream` */
+        /* Calculate a little more audio here, maybe using `userdata`, write it to `stream` */
     }
 
     /* ...somewhere near startup... */
@@ -81,15 +81,25 @@ In SDL2, you might have done something like this to play audio...
 ...in SDL3, you can do this...
 
 ```c
-    void SDLCALL MyAudioCallback(SDL_AudioStream *stream, int len, void *userdata)
+    void SDLCALL MyNewAudioCallback(void *userdata, SDL_AudioStream *stream, int additional_amount, int total_amount)
     {
-        /* calculate a little more audio here, maybe using `userdata`, write it to `stream` */
-        SDL_PutAudioStreamData(stream, newdata, len);
+        /* Calculate a little more audio here, maybe using `userdata`, write it to `stream`
+         *
+         * If you want to use the original callback, you could do something like this:
+         */
+        if (additional_amount > 0) {
+            Uint8 *data = SDL_stack_alloc(Uint8, additional_amount);
+            if (data) {
+                MyAudioCallback(userdata, data, additional_amount);
+                SDL_PutAudioStreamData(stream, data, additional_amount);
+                SDL_stack_free(data);
+            }
+        }
     }
 
     /* ...somewhere near startup... */
     const SDL_AudioSpec spec = { SDL_AUDIO_S16, 2, 44100 };
-    SDL_AudioStream *stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &spec, MyAudioCallback, &my_audio_callback_user_data);
+    SDL_AudioStream *stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &spec, MyNewAudioCallback, &my_audio_callback_user_data);
     SDL_ResumeAudioDevice(SDL_GetAudioStreamDevice(stream));
 ```
 
@@ -1293,7 +1303,7 @@ The following symbols have been renamed:
 
 ## SDL_vulkan.h
 
-SDL_Vulkan_GetInstanceExtensions() no longer takes a window parameter.
+SDL_Vulkan_GetInstanceExtensions() no longer takes a window parameter, and no longer makes the app allocate query/allocate space for the result, instead returning a static const internal string.
 
 SDL_Vulkan_GetVkGetInstanceProcAddr() now returns `SDL_FunctionPointer` instead of `void *`, and should be cast to PFN_vkGetInstanceProcAddr.
 
