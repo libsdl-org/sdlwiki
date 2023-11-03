@@ -130,6 +130,7 @@
 - [SDL_EGL_GetWindowEGLSurface](SDL_EGL_GetWindowEGLSurface)
 - [SDL_EGL_SetEGLAttributeCallbacks](SDL_EGL_SetEGLAttributeCallbacks)
 - [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
+- [SDL_EnterAppMainCallbacks](SDL_EnterAppMainCallbacks)
 - [SDL_Error](SDL_Error)
 - [SDL_EventEnabled](SDL_EventEnabled)
 - [SDL_EventFilter](SDL_EventFilter)
