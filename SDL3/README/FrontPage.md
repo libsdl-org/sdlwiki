@@ -13,7 +13,6 @@
 - [kmsbsd](kmsbsd)
 - [linux](linux)
 - [macos](macos)
-- [main-functions](main-functions)
 - [migration](migration)
 - [n3ds](n3ds)
 - [ngage](ngage)
