@@ -6,8 +6,7 @@ Query the current event filter.
 ## Syntax
 
 ```c
-SDL_bool SDL_GetEventFilter(SDL_EventFilter * filter,
-                            void **userdata);
+SDL_bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
 
 ```
 

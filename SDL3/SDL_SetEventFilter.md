@@ -6,8 +6,7 @@ Set up a filter to process all events before they change internal state and are 
 ## Syntax
 
 ```c
-void SDL_SetEventFilter(SDL_EventFilter filter,
-                        void *userdata);
+void SDL_SetEventFilter(SDL_EventFilter filter, void *userdata);
 
 ```
 

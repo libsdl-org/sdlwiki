@@ -6,7 +6,7 @@ Add an event to the event queue.
 ## Syntax
 
 ```c
-int SDL_PushEvent(SDL_Event * event);
+int SDL_PushEvent(SDL_Event *event);
 
 ```
 

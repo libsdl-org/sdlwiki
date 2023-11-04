@@ -6,9 +6,7 @@ Check the event queue for messages and optionally return them.
 ## Syntax
 
 ```c
-int SDL_PeepEvents(SDL_Event * events, int numevents,
-                   SDL_eventaction action,
-                   Uint32 minType, Uint32 maxType);
+int SDL_PeepEvents(SDL_Event *events, int numevents, SDL_eventaction action, Uint32 minType, Uint32 maxType);
 
 ```
 

@@ -6,7 +6,7 @@ Poll for currently pending events.
 ## Syntax
 
 ```c
-int SDL_PollEvent(SDL_Event * event);
+SDL_bool SDL_PollEvent(SDL_Event *event);
 
 ```
 
@@ -18,7 +18,8 @@ int SDL_PollEvent(SDL_Event * event);
 
 ## Return Value
 
-Returns 1 if there is a pending event or 0 if there are none available.
+Returns [SDL_TRUE](SDL_TRUE) if this got an event or [SDL_FALSE](SDL_FALSE)
+if there are none available.
 
 ## Remarks
 

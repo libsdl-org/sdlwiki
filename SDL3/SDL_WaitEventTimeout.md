@@ -6,7 +6,7 @@ Wait until the specified timeout (in milliseconds) for the next available event.
 ## Syntax
 
 ```c
-int SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
+SDL_bool SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 
 ```
 
@@ -19,9 +19,8 @@ int SDL_WaitEventTimeout(SDL_Event *event, Sint32 timeoutMS);
 
 ## Return Value
 
-Returns 1 on success or 0 if there was an error while waiting for events;
-call [SDL_GetError](SDL_GetError)() for more information. This also returns
-0 if the timeout elapsed without an event arriving.
+Returns [SDL_TRUE](SDL_TRUE) if this got an event or [SDL_FALSE](SDL_FALSE)
+if the timeout elapsed without any events available.
 
 ## Remarks
 

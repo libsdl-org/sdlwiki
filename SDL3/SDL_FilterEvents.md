@@ -6,8 +6,7 @@ Run a specific filter function on the current event queue, removing any events f
 ## Syntax
 
 ```c
-void SDL_FilterEvents(SDL_EventFilter filter,
-                      void *userdata);
+void SDL_FilterEvents(SDL_EventFilter filter, void *userdata);
 
 ```
 

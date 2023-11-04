@@ -6,8 +6,7 @@ Add a callback to be triggered when an event is added to the event queue.
 ## Syntax
 
 ```c
-void SDL_AddEventWatch(SDL_EventFilter filter,
-                       void *userdata);
+int SDL_AddEventWatch(SDL_EventFilter filter, void *userdata);
 
 ```
 
@@ -17,6 +16,11 @@ void SDL_AddEventWatch(SDL_EventFilter filter,
 | ---------------- | ----------------------------------------------------------------------------- |
 | **filter**       | an [SDL_EventFilter](SDL_EventFilter) function to call when an event happens. |
 | **userdata**     | a pointer that is passed to `filter`                                          |
+
+## Return Value
+
+Returns 0 on success, or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 

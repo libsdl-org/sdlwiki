@@ -6,8 +6,7 @@ Remove an event watch callback added with [SDL_AddEventWatch](SDL_AddEventWatch)
 ## Syntax
 
 ```c
-void SDL_DelEventWatch(SDL_EventFilter filter,
-                       void *userdata);
+void SDL_DelEventWatch(SDL_EventFilter filter, void *userdata);
 
 ```
 

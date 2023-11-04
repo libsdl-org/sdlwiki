@@ -6,7 +6,7 @@ Wait indefinitely for the next available event.
 ## Syntax
 
 ```c
-int SDL_WaitEvent(SDL_Event *event);
+SDL_bool SDL_WaitEvent(SDL_Event *event);
 
 ```
 
@@ -18,8 +18,9 @@ int SDL_WaitEvent(SDL_Event *event);
 
 ## Return Value
 
-Returns 1 on success or 0 if there was an error while waiting for events;
-call [SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) if there
+was an error while waiting for events; call [SDL_GetError](SDL_GetError)()
+for more information.
 
 ## Remarks
 
