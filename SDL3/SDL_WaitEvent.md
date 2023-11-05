@@ -37,8 +37,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_CleanupEvent](SDL_CleanupEvent)
 * [SDL_PollEvent](SDL_PollEvent)
-* [SDL_PumpEvents](SDL_PumpEvents)
+* [SDL_PushEvent](SDL_PushEvent)
 * [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----

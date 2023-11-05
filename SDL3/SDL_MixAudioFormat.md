@@ -7,9 +7,9 @@ Mix audio data in a specified format.
 
 ```c
 int SDL_MixAudioFormat(Uint8 * dst,
-                        const Uint8 * src,
-                        SDL_AudioFormat format,
-                        Uint32 len, int volume);
+                       const Uint8 * src,
+                       SDL_AudioFormat format,
+                       Uint32 len, int volume);
 
 ```
 

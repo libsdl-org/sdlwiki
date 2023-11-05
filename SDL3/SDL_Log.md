@@ -14,11 +14,8 @@ void SDL_Log(SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FU
 
 |             |                                                                     |
 | ----------- | ------------------------------------------------------------------- |
+| **fmt**     | a printf() style message format string                              |
 | **...**     | additional parameters matching % tokens in the `fmt` string, if any |
-
-## Remarks
-
-= * \param fmt a printf() style message format string
 
 ## Version
 

@@ -70,6 +70,7 @@ if(rw != NULL) {
 * [SDL_RWFromConstMem](SDL_RWFromConstMem)
 * [SDL_RWFromFile](SDL_RWFromFile)
 * [SDL_RWFromMem](SDL_RWFromMem)
+* [SDL_RWprint](SDL_RWprint)
 * [SDL_RWread](SDL_RWread)
 * [SDL_RWseek](SDL_RWseek)
 
