@@ -6,7 +6,7 @@ Print to an [SDL_RWops](SDL_RWops) data stream.
 ## Syntax
 
 ```c
-size_t SDL_RWprintf(SDL_RWops *context, SDL_PRINTF_FORMAT_STRING const char *fmt, ...);
+size_t SDL_RWprintf(SDL_RWops *context, SDL_PRINTF_FORMAT_STRING const char *fmt, ...)  SDL_PRINTF_VARARG_FUNC(2);
 
 ```
 
