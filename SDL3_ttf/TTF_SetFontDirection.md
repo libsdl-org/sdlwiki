@@ -23,9 +23,6 @@ Returns 0 on success, or -1 on error.
 
 ## Remarks
 
-Any value supplied here will override the global direction set with the
-deprecated [TTF_SetDirection](TTF_SetDirection)().
-
 Possible direction values are:
 
 - [`TTF_DIRECTION_LTR`](TTF_DIRECTION_LTR) (Left to Right)

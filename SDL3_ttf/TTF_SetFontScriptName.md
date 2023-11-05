@@ -23,9 +23,6 @@ Returns 0 on success, or -1 on error.
 
 ## Remarks
 
-Any value supplied here will override the global script set with the
-deprecated [TTF_SetScript](TTF_SetScript)().
-
 The supplied script value must be a null-terminated string of exactly four
 characters.
 
