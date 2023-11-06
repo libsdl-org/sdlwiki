@@ -8,6 +8,7 @@
 - [SDL_AddTimer](SDL_AddTimer)
 - [SDL_aligned_alloc](SDL_aligned_alloc)
 - [SDL_aligned_free](SDL_aligned_free)
+- [SDL_AllocateEventMemory](SDL_AllocateEventMemory)
 - [SDL_AndroidBackButton](SDL_AndroidBackButton)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 - [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
