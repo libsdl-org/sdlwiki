@@ -58,7 +58,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CleanupEvent](SDL_CleanupEvent)
 * [SDL_PushEvent](SDL_PushEvent)
 * [SDL_WaitEvent](SDL_WaitEvent)
 * [SDL_WaitEventTimeout](SDL_WaitEventTimeout)

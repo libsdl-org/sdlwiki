@@ -2,6 +2,7 @@
 
 ## Functions defined in the headers, but not in the wiki
 
+- [SDL_AllocateEventMemory](SDL_AllocateEventMemory)
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
@@ -184,6 +185,7 @@
 - [SDL_BlendOperation](SDL_BlendOperation)
 - [SDL_BlitScaled](SDL_BlitScaled)
 - [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
+- [SDL_CleanupEvent](SDL_CleanupEvent)
 - [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 - [SDL_Color](SDL_Color)
 - [SDL_Colour](SDL_Colour)
