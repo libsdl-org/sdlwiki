@@ -2,7 +2,6 @@
 
 ## Functions defined in the headers, but not in the wiki
 
-- [SDL_AllocateEventMemory](SDL_AllocateEventMemory)
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
