@@ -8,17 +8,19 @@ Create a Vulkan rendering surface for a window.
 ```c
 SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
                                   VkInstance instance,
+                                  const struct VkAllocationCallbacks *allocator,
                                   VkSurfaceKHR* surface);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                                        |
-| ---------------- | ---------------------------------------------------------------------- |
-| **window**       | The window to which to attach the Vulkan surface                       |
-| **instance**     | The Vulkan instance handle                                             |
-| **surface**      | A pointer to a VkSurfaceKHR handle to output the newly created surface |
+|                   |                                                                                                             |
+| ----------------- | ----------------------------------------------------------------------------------------------------------- |
+| **window**        | The window to which to attach the Vulkan surface                                                            |
+| **instance**      | The Vulkan instance handle                                                                                  |
+| **allocator**     | A VkAllocationCallbacks struct, which lets the app set the allocator that creates the surface. Can be NULL. |
+| **surface**       | A pointer to a VkSurfaceKHR handle to output the newly created surface                                      |
 
 ## Return Value
 
@@ -31,6 +33,9 @@ The `window` must have been created with the
 created with extensions returned by
 [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)()
 enabled.
+
+If `allocator` is NULL, Vulkan will use the system default allocator. This
+argument is passed directly to Vulkan and isn't used by SDL itself.
 
 ## Version
 
