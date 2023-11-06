@@ -30,10 +30,6 @@ automatically freed after the event is processed.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_FlushEventMemory](SDL_FlushEventMemory)
-
 ----
 [CategoryAPI](CategoryAPI)
 
