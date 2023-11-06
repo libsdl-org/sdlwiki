@@ -24,7 +24,9 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-The primary display (`displayIndex` zero) is always located at 0,0.
+The first monitor detected by the GPU is at 0,0 but it isn't always configured as the primary display (`displayIndex` 0).
+
+May return outdated values after SDL_DISPLAYEVENT hotplug events.
 
 ## Version
 
