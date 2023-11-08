@@ -88,5 +88,6 @@
 * [[SDLEnumTemplate]]
 * [[SDLFunctionTemplate]]
 * [[SDLKeycodeLookup]]
+* [[SDLScancodeLookup]]
 * [[SDLStructTemplate]]
 <!-- END CATEGORY LIST -->
