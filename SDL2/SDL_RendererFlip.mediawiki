@@ -1,4 +1,3 @@
-
 = SDL_RendererFlip =
 An enumeration of flags that can be used in the flip parameter for [[SDL_RenderCopyEx]].
 
@@ -9,10 +8,10 @@ An enumeration of flags that can be used in the flip parameter for [[SDL_RenderC
 |do not flip
 |-
 |SDL_FLIP_HORIZONTAL
-|flip horizontally
+|flip horizontally follow by column y
 |-
 |SDL_FLIP_VERTICAL
-|flip vertically
+|flip vertically follow by column x
 |}
 
 
@@ -21,7 +20,7 @@ An enumeration of flags that can be used in the flip parameter for [[SDL_RenderC
 /* casts may be necessary for some compiler settings or languages (e.g. C++) */
 SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL;
 
-SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, angle, &center, flip);
+SDL_RenderCopyEx(renderer, texture, &srcrect, &dstrect, angle, ¢er, flip);
 </syntaxhighlight>
 
 == Remarks ==
