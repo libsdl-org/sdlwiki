@@ -21,6 +21,15 @@ SDL_PropertiesID SDL_GetRendererProperties(SDL_Renderer *renderer);
 Returns a valid property ID on success or 0 on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The following properties are provided by SDL: "SDL.renderer.d3d9.device" -
+the IDirect3DDevice9 associated with the renderer
+"SDL.renderer.d3d11.device" - the ID3D11Device associated with the renderer
+"SDL.renderer.d3d12.device" - the ID3D12Device associated with the renderer
+"SDL.renderer.d3d12.command_queue" - the ID3D12CommandQueue associated with
+the renderer
+
 ## Version
 
 This function is available since SDL 3.0.0.

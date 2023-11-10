@@ -6,19 +6,17 @@ Set a property on a set of properties
 ## Syntax
 
 ```c
-int SDL_SetProperty(SDL_PropertiesID props, const char *name, void *value, void (SDLCALL *cleanup)(void *userdata, void *value), void *userdata);
+int SDL_SetProperty(SDL_PropertiesID props, const char *name, void *value);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                                                        |
-| ---------------- | -------------------------------------------------------------------------------------- |
-| **props**        | the properties to modify                                                               |
-| **name**         | the name of the property to modify                                                     |
-| **value**        | the new value of the property, or NULL to delete the property                          |
-| **cleanup**      | the function to call when this property is deleted, or NULL if no cleanup is necessary |
-| **userdata**     | a pointer that is passed to the cleanup function                                       |
+|               |                                                               |
+| ------------- | ------------------------------------------------------------- |
+| **props**     | the properties to modify                                      |
+| **name**      | the name of the property to modify                            |
+| **value**     | the new value of the property, or NULL to delete the property |
 
 ## Return Value
 
@@ -36,6 +34,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetProperty](SDL_GetProperty)
+* [SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup)
 
 ----
 [CategoryAPI](CategoryAPI)

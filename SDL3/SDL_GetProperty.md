@@ -21,6 +21,13 @@ void* SDL_GetProperty(SDL_PropertiesID props, const char *name);
 
 Returns the value of the property, or NULL if it is not set.
 
+## Remarks
+
+By convention, the names of properties that SDL exposes on objects will
+start with "SDL.", and properties that SDL uses internally will start with
+"SDL.internal.". These should be considered read-only and should not be
+modified by applications.
+
 ## Thread Safety
 
 It is safe to call this function from any thread, although the data

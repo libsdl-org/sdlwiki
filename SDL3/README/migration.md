@@ -1150,15 +1150,40 @@ The following functions have been renamed:
 
 ## SDL_system.h
 
+SDL_WindowsMessageHook has changed signatures so the message may be modified and it can block further message processing.
+
 SDL_AndroidGetExternalStorageState() takes the state as an output parameter and returns 0 if the function succeeds or a negative error code if there was an error.
 
-The following functions have been renamed:
-* SDL_RenderGetD3D11Device() => SDL_GetRenderD3D11Device()
-* SDL_RenderGetD3D9Device() => SDL_GetRenderD3D9Device()
+The following functions have been removed:
+* SDL_RenderGetD3D11Device() - replaced with the "SDL.renderer.d3d11.device" property
+* SDL_RenderGetD3D12Device() - replaced with the "SDL.renderer.d3d12.device" property
+* SDL_RenderGetD3D9Device() - replaced with the "SDL.renderer.d3d9.device" property
 
 ## SDL_syswm.h
 
-The structures in this file are versioned separately from the rest of SDL, allowing better backwards compatibility and limited forwards compatibility with your application. Instead of calling `SDL_VERSION(&info.version)` before calling SDL_GetWindowWMInfo(), you pass the version in explicitly as SDL_SYSWM_CURRENT_VERSION so SDL knows what fields you expect to be filled out.
+This header has been removed.
+
+The Windows and X11 events are now available via callbacks which you can set with SDL_SetWindowsMessageHook() and SDL_SetX11EventHook().
+
+The information previously available in SDL_GetWindowWMInfo() is now available as window properties, e.g.
+```c
+    HWND hwnd = NULL;
+    SDL_SysWMinfo info;
+    SDL_VERSION(&info);
+    if (SDL_GetWindowWMInfo(window, &info) && info.subsystem == SDL_SYSWM_WINDOWS) {
+        hwnd = info.info.win.window;
+    }
+    if (hwnd) {
+        ...
+    }
+```
+becomes:
+```c
+    HWND hwnd = (HWND)SDL_GetProperty(SDL_GetWindowProperties(window), "SDL.window.win32.hwnd");
+    if (hwnd) {
+        ...
+    }
+```
 
 ### SDL_GetWindowWMInfo
 
