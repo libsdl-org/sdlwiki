@@ -231,6 +231,7 @@
 - [SDL_GetRenderD3D11Device](SDL_GetRenderD3D11Device)
 - [SDL_GetRenderD3D9Device](SDL_GetRenderD3D9Device)
 - [SDL_GetRenderWindowSize](SDL_GetRenderWindowSize)
+- [SDL_GetTextureDXGIResource](SDL_GetTextureDXGIResource)
 - [SDL_GetTextureUserData](SDL_GetTextureUserData)
 - [SDL_GetWindowData](SDL_GetWindowData)
 - [SDL_GetWindowWMInfo](SDL_GetWindowWMInfo)
