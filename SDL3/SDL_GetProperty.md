@@ -6,20 +6,22 @@ Get a property on a set of properties
 ## Syntax
 
 ```c
-void* SDL_GetProperty(SDL_PropertiesID props, const char *name);
+void* SDL_GetProperty(SDL_PropertiesID props, const char *name, void *default_value);
 
 ```
 
 ## Function Parameters
 
-|               |                                   |
-| ------------- | --------------------------------- |
-| **props**     | the properties to query           |
-| **name**      | the name of the property to query |
+|                       |                                   |
+| --------------------- | --------------------------------- |
+| **props**             | the properties to query           |
+| **name**              | the name of the property to query |
+| **default_value**     | the default value of the property |
 
 ## Return Value
 
-Returns the value of the property, or NULL if it is not set.
+Returns the value of the property, or `default_value` if it is not set or
+not a pointer property.
 
 ## Remarks
 
@@ -44,6 +46,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_GetPropertyType](SDL_GetPropertyType)
 * [SDL_SetProperty](SDL_SetProperty)
 
 ----

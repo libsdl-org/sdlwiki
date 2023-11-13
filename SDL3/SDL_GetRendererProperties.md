@@ -23,12 +23,14 @@ Returns a valid property ID on success or 0 on failure; call
 
 ## Remarks
 
-The following properties are provided by SDL: "SDL.renderer.d3d9.device" -
-the IDirect3DDevice9 associated with the renderer
-"SDL.renderer.d3d11.device" - the ID3D11Device associated with the renderer
-"SDL.renderer.d3d12.device" - the ID3D12Device associated with the renderer
-"SDL.renderer.d3d12.command_queue" - the ID3D12CommandQueue associated with
-the renderer
+The following properties are provided by SDL:
+
+```
+"SDL.renderer.d3d9.device" (pointer) - the IDirect3DDevice9 associated with the renderer
+"SDL.renderer.d3d11.device" (pointer) - the ID3D11Device associated with the renderer
+"SDL.renderer.d3d12.device" (pointer) - the ID3D12Device associated with the renderer
+"SDL.renderer.d3d12.command_queue" (pointer) - the ID3D12CommandQueue associated with the renderer
+```
 
 ## Version
 
