@@ -10,6 +10,12 @@ SDL_PenID* SDL_GetPens(int *count);
 
 ```
 
+## Function Parameters
+
+|               |                                                                                                          |
+| ------------- | -------------------------------------------------------------------------------------------------------- |
+| **count**     | The number of pens in the array (number of array elements minus 1, i.e., not counting the terminator 0). |
+
 ## Return Value
 
 Returns A 0 terminated array of ::[SDL_PenID](SDL_PenID) values, or NULL on
@@ -24,7 +30,7 @@ restart), use ::[SDL_GUID](SDL_GUID) .
 
 ## Version
 
-This function is available since SDL 3.TBD
+This function is available since SDL 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)

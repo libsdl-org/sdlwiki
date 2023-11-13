@@ -12,18 +12,19 @@ Uint32 SDL_GetPenCapabilities(SDL_PenID instance_id, SDL_PenCapabilityInfo *capa
 
 ## Function Parameters
 
-|                     |                   |
-| ------------------- | ----------------- |
-| **instance_id**     | The pen to query. |
+|                      |                                                                          |
+| -------------------- | ------------------------------------------------------------------------ |
+| **instance_id**      | The pen to query.                                                        |
+| **capabilities**     | Detail information about pen capabilities, such as the number of buttons |
 
 ## Return Value
 
-Returns a set of capability flags, cf. \link
+Returns a set of capability flags, cf.
 [SDL_PEN_CAPABILITIES](SDL_PEN_CAPABILITIES)
 
 ## Version
 
-This function is available since SDL 3.TBD
+This function is available since SDL 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)

@@ -28,7 +28,7 @@ on error (cf. ::[SDL_GetError](SDL_GetError)())
 
 ## Version
 
-This function is available since SDL 3.TBD
+This function is available since SDL 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)

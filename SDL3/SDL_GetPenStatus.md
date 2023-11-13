@@ -12,10 +12,13 @@ Uint32 SDL_GetPenStatus(SDL_PenID instance_id, float *x, float *y, float *axes, 
 
 ## Function Parameters
 
-|                     |                                            |
-| ------------------- | ------------------------------------------ |
-| **instance_id**     | The pen to query.                          |
-| **num_axes**        | Maximum number of axes to write to "axes". |
+|                     |                                                                                                                       |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **instance_id**     | The pen to query.                                                                                                     |
+| **x**               | Out-mode parameter for pen x coordinate. May be NULL.                                                                 |
+| **y**               | Out-mode parameter for pen y coordinate. May be NULL.                                                                 |
+| **axes**            | Out-mode parameter for axis information. May be null. The axes are in the same order as ::[SDL_PenAxis](SDL_PenAxis). |
+| **num_axes**        | Maximum number of axes to write to "axes".                                                                            |
 
 ## Return Value
 
@@ -33,7 +36,7 @@ operation may return default values.
 
 ## Version
 
-This function is available since SDL 3.TBD
+This function is available since SDL 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)

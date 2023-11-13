@@ -28,7 +28,7 @@ being used for drawing or in eraser mode, check either the pen tip on
 
 ## Version
 
-This function is available since SDL 3.TBD
+This function is available since SDL 3.0.0
 
 ----
 [CategoryAPI](CategoryAPI)
