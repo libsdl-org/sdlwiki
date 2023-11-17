@@ -8,7 +8,7 @@ Log a message with the specified category and priority.
 ```c
 void SDL_LogMessageV(int category,
                      SDL_LogPriority priority,
-                     const char *fmt, va_list ap);
+                     SDL_PRINTF_FORMAT_STRING const char *fmt, va_list ap) SDL_PRINTF_VARARG_FUNCV(3);
 
 ```
 
