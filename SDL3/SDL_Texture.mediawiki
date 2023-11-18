@@ -6,6 +6,93 @@
 = SDL_Texture =
 A structure that contains an efficient, driver-specific representation of pixel data.
 
+== Data Fields ==
+{|
+|const void*
+|'''magic'''
+|
+|-
+|Uint32
+|'''format'''
+|The pixel format of the texture
+|-
+|int
+|'''access'''
+|SDL_TextureAccess
+|-
+|int
+|'''w'''
+|the width of the texture
+|-
+|int
+|'''h'''
+|the height of the texture
+|-
+|SDL_BlendMode
+|'''blendMode'''
+|The texture blend mode
+|-
+|SDL_ScaleMode
+|'''scaleMode'''
+|The texture scale mode
+|-
+|SDL_Color
+|'''color'''
+|Texture modulation values
+|-
+|SDL_RenderViewState
+|'''view'''
+|Target texture view state
+|-
+|SDL_Renderer*
+|'''renderer'''
+|
+|-
+|SDL_Texture*
+|'''native'''
+|
+|-
+|SDL_SW_YUVTexture
+|'''yuv'''
+|
+|-
+|void*
+|'''pixels'''
+|
+|-
+|int
+|'''pitch'''
+|
+|-
+|SDL_Rect
+|'''locked_rect'''
+|
+|-
+|SDL_Surface*
+|'''locked_surface'''
+|Locked region exposed as a SDL surface
+|-
+|Uint32
+|'''last_command_generation'''
+|last command queue generation this texture was in.
+|-
+|SDL_PropertiesID
+|'''props'''
+|
+|-
+|void*
+|'''driverdata'''
+|Driver specific texture representation
+|-
+|SDL_Texture*
+|'''prev'''
+|
+|-
+|SDL_Texture*
+|'''next'''
+|
+|}
+
 == Related Functions ==
 :[[SDL_CreateTexture]]
 :[[SDL_CreateTextureFromSurface]]
