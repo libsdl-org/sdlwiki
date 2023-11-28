@@ -18,6 +18,9 @@ void SDL_SetTextInputRect(const SDL_Rect *rect);
 
 ## Remarks
 
+Native input methods will place a window with word suggestions near it,
+without covering the text being inputted.
+
 To start text input in a given location, this function is intended to be
 called before [SDL_StartTextInput](SDL_StartTextInput), although some
 platforms support moving the rectangle even while text input (and a
