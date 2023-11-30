@@ -61,11 +61,6 @@ created and should be queried again if you get an
 [SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOW_PIXEL_SIZE_CHANGED)
 event.
 
-If the window is set fullscreen, the width and height parameters `w` and
-`h` will not be used. However, invalid size parameters (e.g. too large) may
-still fail. Window size is actually limited to 16384 x 16384 for all
-platforms at window creation.
-
 If the window is created with any of the
 [SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL) or
 [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) flags, then the corresponding
@@ -136,8 +131,7 @@ int main(int argc, char* argv[]) {
 ## Related Functions
 
 * [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
-* [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
-* [SDL_CreateWindowWithPosition](SDL_CreateWindowWithPosition)
+* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----

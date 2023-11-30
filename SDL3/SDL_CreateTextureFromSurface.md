@@ -79,6 +79,7 @@ surface = NULL;
 ## Related Functions
 
 * [SDL_CreateTexture](SDL_CreateTexture)
+* [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 * [SDL_DestroyTexture](SDL_DestroyTexture)
 * [SDL_QueryTexture](SDL_QueryTexture)
 

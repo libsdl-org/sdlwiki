@@ -6,7 +6,7 @@ Create a 2D rendering context for a window.
 ## Syntax
 
 ```c
-SDL_Renderer* SDL_CreateRenderer(SDL_Window *window, const char *name, Uint32 flags);
+SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name, Uint32 flags);
 
 ```
 
@@ -29,7 +29,7 @@ If you want a specific renderer, you can specify its name here. A list of
 available renderers can be obtained by calling
 [SDL_GetRenderDriver](SDL_GetRenderDriver) multiple times, with indices
 from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)()-1. If you
-don't need a specific renderer, specify NULL and SDL will attempt to chooes
+don't need a specific renderer, specify NULL and SDL will attempt to choose
 the best option for you, based on what is available on the user's system.
 
 By default the rendering size matches the window size in pixels, but you
@@ -96,6 +96,7 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
+* [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
 * [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
 * [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)

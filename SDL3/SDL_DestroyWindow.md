@@ -28,8 +28,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 * [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
+* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)

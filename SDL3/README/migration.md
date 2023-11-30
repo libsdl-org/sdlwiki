@@ -468,9 +468,7 @@ The following functions have been renamed:
 * SDL_GameControllerIsSensorEnabled() => SDL_GamepadSensorEnabled()
 * SDL_GameControllerMapping() => SDL_GetGamepadMapping()
 * SDL_GameControllerMappingForGUID() => SDL_GetGamepadMappingForGUID()
-* SDL_GameControllerMappingForIndex() => SDL_GetGamepadMappingForIndex()
 * SDL_GameControllerName() => SDL_GetGamepadName()
-* SDL_GameControllerNumMappings() => SDL_GetNumGamepadMappings()
 * SDL_GameControllerOpen() => SDL_OpenGamepad()
 * SDL_GameControllerPath() => SDL_GetGamepadPath()
 * SDL_GameControllerRumble() => SDL_RumbleGamepad()
@@ -490,6 +488,8 @@ The following functions have been removed:
 * SDL_GameControllerNameForIndex() - replaced with SDL_GetGamepadInstanceName()
 * SDL_GameControllerPathForIndex() - replaced with SDL_GetGamepadInstancePath()
 * SDL_GameControllerTypeForIndex() - replaced with SDL_GetGamepadInstanceType()
+* SDL_GameControllerNumMappings() - replaced with SDL_GetGamepadMappings()
+* SDL_GameControllerMappingForIndex() - replaced with SDL_GetGamepadMappings()
 
 The following symbols have been renamed:
 * SDL_CONTROLLER_AXIS_INVALID => SDL_GAMEPAD_AXIS_INVALID
@@ -559,10 +559,11 @@ The following hints have been removed:
 * SDL_HINT_IME_SUPPORT_EXTENDED_TEXT - the normal text editing event has extended text
 * SDL_HINT_MOUSE_RELATIVE_SCALING - mouse coordinates are no longer automatically scaled by the SDL renderer
 * SDL_HINT_RENDER_LOGICAL_SIZE_MODE - the logical size mode is explicitly set with SDL_SetRenderLogicalPresentation()
-* SDL_HINT_VIDEO_FOREIGN_WINDOW_OPENGL - replaced with the "opengl" property in SDL_CreateWindowFrom()
-* SDL_HINT_VIDEO_FOREIGN_WINDOW_VULKAN - replaced with the "vulkan" property in SDL_CreateWindowFrom()
+* SDL_HINT_RENDER_BATCHING - Render batching is always enabled, apps should call SDL_FlushRenderer() before calling into a lower-level graphics API.
+* SDL_HINT_VIDEO_FOREIGN_WINDOW_OPENGL - replaced with the "opengl" property in SDL_CreateWindowWithProperties()
+* SDL_HINT_VIDEO_FOREIGN_WINDOW_VULKAN - replaced with the "vulkan" property in SDL_CreateWindowWithProperties()
 * SDL_HINT_VIDEO_HIGHDPI_DISABLED - high DPI support is always enabled
-* SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT - replaced with the "win32.pixel_format_hwnd" in SDL_CreateWindowFrom()
+* SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT - replaced with the "win32.pixel_format_hwnd" in SDL_CreateWindowWithProperties()
 * SDL_HINT_VIDEO_X11_FORCE_EGL - use SDL_HINT_VIDEO_FORCE_EGL instead
 * SDL_HINT_VIDEO_X11_XINERAMA - Xinerama no longer supported by the X11 backend
 * SDL_HINT_VIDEO_X11_XVIDMODE - Xvidmode no longer supported by the X11 backend
@@ -811,6 +812,13 @@ The following functions have been renamed:
 
 ## SDL_render.h
 
+The 2D renderer API always uses batching in SDL3. There is no magic to turn
+it on and off; it doesn't matter if you select a specific renderer or try to
+use any hint. This means that all apps that use SDL3's 2D renderer and also
+want to call directly into the platform's lower-layer graphics API _must_ call
+SDL_FlushRenderer() before doing so. This will make sure any pending rendering
+work from SDL is done before the app starts directly drawing.
+
 SDL_GetRenderDriverInfo() has been removed, since most of the information it reported were
 estimates and could not be accurate before creating a renderer. Often times this function
 was used to figure out the index of a driver, so one would call it in a for-loop, looking
@@ -860,6 +868,7 @@ The following functions have been renamed:
 * SDL_RenderDrawRectsF() => SDL_RenderRects()
 * SDL_RenderFillRectF() => SDL_RenderFillRect()
 * SDL_RenderFillRectsF() => SDL_RenderFillRects()
+* SDL_RenderFlush() => SDL_FlushRenderer()
 * SDL_RenderGetClipRect() => SDL_GetRenderClipRect()
 * SDL_RenderGetIntegerScale() => SDL_GetRenderIntegerScale()
 * SDL_RenderGetLogicalSize() => SDL_GetRenderLogicalPresentation()
@@ -1084,6 +1093,10 @@ The following functions have been removed:
 * SDL_SensorGetDeviceType() - replaced with SDL_GetSensorInstanceType()
 * SDL_UnlockSensors()
 
+## SDL_shape.h
+
+This header has been removed. You can create a window with the SDL_WINDOW_TRANSPARENT flag and then render using the alpha channel to achieve a similar effect. You can see an example of this in test/testshape.c
+
 ## SDL_stdinc.h
 
 The standard C headers like stdio.h and stdlib.h are no longer included, you should include them directly in your project if you use non-SDL C runtime functions.
@@ -1175,7 +1188,7 @@ The information previously available in SDL_GetWindowWMInfo() is now available a
 ```c
     HWND hwnd = NULL;
     SDL_SysWMinfo info;
-    SDL_VERSION(&info);
+    SDL_VERSION(&info.version);
     if (SDL_GetWindowWMInfo(window, &info) && info.subsystem == SDL_SYSWM_WINDOWS) {
         hwnd = info.info.win.window;
     }
@@ -1190,11 +1203,6 @@ becomes:
         ...
     }
 ```
-
-### SDL_GetWindowWMInfo
-
-This function now returns a standard int result instead of SDL_bool, returning 0 if the function succeeds or a negative error code if there was an error. You should also pass SDL_SYSWM_CURRENT_VERSION as the new third version parameter. The version member of the info structure will be filled in with the version of data that is returned, the minimum of the version you requested and the version supported by the runtime SDL library.
-
 
 ## SDL_thread.h
 
@@ -1232,6 +1240,13 @@ If you were using this macro for other things besides SDL ticks values, you can 
 
 SDL_GetNumTouchFingers() returns a negative error code if there was an error.
 
+SDL_GetTouchName is replaced with SDL_GetTouchDeviceName(), which takes an SDL_TouchID instead of an index.
+
+The following functions have been removed:
+* SDL_GetNumTouchDevices() - replaced with SDL_GetTouchDevices()
+* SDL_GetTouchDevice() - replaced with SDL_GetTouchDevices()
+
+
 ## SDL_version.h
 
 SDL_GetRevisionNumber() has been removed from the API, it always returned 0 in SDL 2.0.
@@ -1261,9 +1276,7 @@ Rather than iterating over displays using display index, there is a new function
 }
 ```
 
-SDL_CreateWindow() has been simplified and no longer takes a window position. You can use SDL_CreateWindowWithPosition() if you need to set the window position when creating it.
-
-SDL_CreateWindowFrom() now takes a set of properties that describe the native window and options.
+SDL_CreateWindow() has been simplified and no longer takes a window position. You can use SDL_CreateWindowWithProperties() if you need to set the window position when creating it.
 
 The SDL_WINDOWPOS_UNDEFINED_DISPLAY() and SDL_WINDOWPOS_CENTERED_DISPLAY() macros take a display ID instead of display index. The display ID 0 has a special meaning in this case, and is used to indicate the primary display.
 
@@ -1332,6 +1345,7 @@ The following functions have been removed:
 * SDL_GetNumVideoDisplays() - replaced with SDL_GetDisplays()
 * SDL_GetWindowData() - use SDL_GetWindowProperties() instead
 * SDL_SetWindowData() - use SDL_GetWindowProperties() instead
+* SDL_CreateWindowFrom() - use SDL_CreateWindowWithProperties() with the properties that allow you to wrap an existing window
 
 SDL_Window id type is named SDL_WindowID
 

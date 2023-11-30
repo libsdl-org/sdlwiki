@@ -23,7 +23,7 @@ Returns a valid property ID on success or 0 on failure; call
 
 ## Remarks
 
-The following properties are provided by SDL:
+The following read-only properties are provided by SDL:
 
 ```
 "SDL.renderer.d3d9.device" (pointer) - the IDirect3DDevice9 associated with the renderer

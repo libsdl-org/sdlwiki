@@ -23,7 +23,7 @@ Returns a valid property ID on success or 0 on failure; call
 
 ## Remarks
 
-The following properties are provided by SDL:
+The following read-only properties are provided by SDL:
 
 On Android:
 

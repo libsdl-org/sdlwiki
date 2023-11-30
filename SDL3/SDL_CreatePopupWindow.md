@@ -35,11 +35,12 @@ and will not pass any input events. -
 popup menu. The topmost popup menu will implicitly gain the keyboard focus.
 
 The following flags are not relevant to popup window creation and will be
-ignored: - '[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)' -
-'[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED)' -
-'[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)' -
-'[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)' -
-'[SDL_WINDOW_SKIP_TASKBAR](SDL_WINDOW_SKIP_TASKBAR)'
+ignored:
+
+- '[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED)'
+- '[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED)'
+- '[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN)'
+- '[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS)'
 
 The parent parameter **must** be non-null and a valid window. The parent of
 a popup window can be either a regular, toplevel window, or another popup
@@ -66,6 +67,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 * [SDL_GetWindowParent](SDL_GetWindowParent)
 
