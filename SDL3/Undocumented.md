@@ -226,6 +226,7 @@
 - [SDL_GetDisplayCurrentOrientation](SDL_GetDisplayCurrentOrientation)
 - [SDL_GetDisplayNaturalOrientation](SDL_GetDisplayNaturalOrientation)
 - [SDL_GetDisplayOrientation](SDL_GetDisplayOrientation)
+- [SDL_GetErrorMsg](SDL_GetErrorMsg)
 - [SDL_GetGamepadBindForAxis](SDL_GetGamepadBindForAxis)
 - [SDL_GetGamepadBindForButton](SDL_GetGamepadBindForButton)
 - [SDL_GetGamepadMappingForIndex](SDL_GetGamepadMappingForIndex)
