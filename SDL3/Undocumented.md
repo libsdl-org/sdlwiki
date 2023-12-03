@@ -102,6 +102,7 @@
 - [SDL_strncmp](SDL_strncmp)
 - [SDL_strndup](SDL_strndup)
 - [SDL_strnlen](SDL_strnlen)
+- [SDL_strnstr](SDL_strnstr)
 - [SDL_strrchr](SDL_strrchr)
 - [SDL_strrev](SDL_strrev)
 - [SDL_strstr](SDL_strstr)
@@ -138,6 +139,7 @@
 - [SDL_wcsncasecmp](SDL_wcsncasecmp)
 - [SDL_wcsncmp](SDL_wcsncmp)
 - [SDL_wcsnlen](SDL_wcsnlen)
+- [SDL_wcsnstr](SDL_wcsnstr)
 - [SDL_wcsstr](SDL_wcsstr)
 - [SDL_wcstol](SDL_wcstol)
 
