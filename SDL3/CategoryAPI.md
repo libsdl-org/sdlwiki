@@ -845,6 +845,7 @@
 - [SDL_SwapLE16](SDL_SwapLE16)
 - [SDL_SwapLE32](SDL_SwapLE32)
 - [SDL_SwapLE64](SDL_SwapLE64)
+- [SDL_SyncWindow](SDL_SyncWindow)
 - [SDL_TextInputActive](SDL_TextInputActive)
 - [SDL_TextInputShown](SDL_TextInputShown)
 - [SDL_ThreadID](SDL_ThreadID)
