@@ -25,6 +25,9 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
+This is the current position of the window as last reported by the
+windowing system.
+
 If you do not need the value for one of the positions a NULL may be passed
 in the `x` or `y` parameter.
 
