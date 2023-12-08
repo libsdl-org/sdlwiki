@@ -31,9 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+<<Include([SDL_CreateMutex](SDL_CreateMutex.md), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

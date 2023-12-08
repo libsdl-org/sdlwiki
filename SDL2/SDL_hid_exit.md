@@ -25,8 +25,7 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_hid_init](SDL_hid_init)
+* [SDL_hid_init](SDL_hid_init.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

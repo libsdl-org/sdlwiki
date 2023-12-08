@@ -18,7 +18,7 @@ SDL_bool SDL_GameControllerHasRumble(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE), or [SDL_FALSE](SDL_FALSE) if this controller
+Returns [SDL_TRUE](SDL_TRUE.md), or [SDL_FALSE](SDL_FALSE.md) if this controller
 does not have rumble support
 
 ## Version
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_GameControllerRumble](SDL_GameControllerRumble)
+* [SDL_GameControllerRumble](SDL_GameControllerRumble.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

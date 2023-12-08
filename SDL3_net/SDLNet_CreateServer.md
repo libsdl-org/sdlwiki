@@ -19,7 +19,7 @@ SDLNet_Server * SDLNet_CreateServer(SDLNet_Address *addr, Uint16 port);
 
 ## Return Value
 
-Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket), pending
+Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket.md), pending
 connection, or NULL on error; call SDL_GetError() for details.
 
 ## Remarks
@@ -39,12 +39,12 @@ success, you can immediately start accepting connections.
 
 You can specify an address to listen for connections on; this address must
 be local to the system, and probably one returned by
-[SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)(), but almost always
+[SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses.md)(), but almost always
 you just want to specify NULL here, to listen on any address available to
 the app.
 
 After creating a server, you get stream sockets to talk to incoming client
-connections by calling [SDLNet_AcceptClient](SDLNet_AcceptClient)().
+connections by calling [SDLNet_AcceptClient](SDLNet_AcceptClient.md)().
 
 Stream sockets don't employ any protocol (above the TCP level), so they can
 accept connections from clients that aren't using SDL_net, but if you want
@@ -65,10 +65,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)
-* [SDLNet_AcceptClient](SDLNet_AcceptClient)
-* [SDLNet_DestroyServer](SDLNet_DestroyServer)
+* [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses.md)
+* [SDLNet_AcceptClient](SDLNet_AcceptClient.md)
+* [SDLNet_DestroyServer](SDLNet_DestroyServer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

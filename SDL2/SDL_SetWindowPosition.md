@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowPosition](SDL_GetWindowPosition)
+* [SDL_GetWindowPosition](SDL_GetWindowPosition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

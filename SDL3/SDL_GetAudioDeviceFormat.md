@@ -21,7 +21,7 @@ int SDL_GetAudioDeviceFormat(SDL_AudioDeviceID devid, SDL_AudioSpec *spec, int *
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -30,8 +30,8 @@ using. If the device isn't yet opened, this will report the device's
 preferred format (or a reasonable default if this can't be determined).
 
 You may also specify
-[SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or
-[SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) here,
+[SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT.md) or
+[SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE.md) here,
 which is useful for getting a reasonable recommendation before opening the
 system-recommended default device.
 
@@ -54,5 +54,4 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

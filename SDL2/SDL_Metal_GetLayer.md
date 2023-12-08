@@ -16,8 +16,7 @@ This function is available since SDL 2.0.14.
 
 ## Related Functions
 
-* [SDL_Metal_CreateView](SDL_Metal_CreateView)
+* [SDL_Metal_CreateView](SDL_Metal_CreateView.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

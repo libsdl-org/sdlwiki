@@ -15,13 +15,13 @@ int SDL_SetSurfaceAlphaMod(SDL_Surface * surface,
 
 |                 |                                                    |
 | --------------- | -------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to update |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to update |
 | **alpha**       | the alpha value multiplied into blit operations    |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -36,9 +36,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
-* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
+* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod.md)
+* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ SDL_CloseAudioDevice(1);
 ```
 
 ...and is only useful if you used the legacy
-[SDL_OpenAudio](SDL_OpenAudio)() function.
+[SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_OpenAudio](SDL_OpenAudio)
+* [SDL_OpenAudio](SDL_OpenAudio.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

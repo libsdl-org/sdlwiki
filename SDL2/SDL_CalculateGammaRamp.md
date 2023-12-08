@@ -23,8 +23,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
+* [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

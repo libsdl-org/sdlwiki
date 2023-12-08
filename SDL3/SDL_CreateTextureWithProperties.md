@@ -21,18 +21,18 @@ SDL_Texture* SDL_CreateTextureWithProperties(SDL_Renderer *renderer, SDL_Propert
 
 Returns a pointer to the created texture or NULL if no rendering context
 was active, the format was unsupported, or the width or height were out of
-range; call [SDL_GetError](SDL_GetError)() for more information.
+range; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 These are the supported properties:
 
 - "format" (number) - one of the enumerated values in
-  [SDL_PixelFormatEnum](SDL_PixelFormatEnum), defaults to the best RGBA
+  [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md), defaults to the best RGBA
   format for the renderer
 - "access" (number) - one of the enumerated values in
-  [SDL_TextureAccess](SDL_TextureAccess), defaults to
-  [SDL_TEXTUREACCESS_STATIC](SDL_TEXTUREACCESS_STATIC)
+  [SDL_TextureAccess](SDL_TextureAccess.md), defaults to
+  [SDL_TEXTUREACCESS_STATIC](SDL_TEXTUREACCESS_STATIC.md)
 - "width" (number) - the width of the texture in pixels, required
 - "height" (number) - the height of the texture in pixels, required
 
@@ -82,12 +82,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface.md)
+* [SDL_CreateTexture](SDL_CreateTexture.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
+* [SDL_QueryTexture](SDL_QueryTexture.md)
+* [SDL_UpdateTexture](SDL_UpdateTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

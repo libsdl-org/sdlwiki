@@ -21,9 +21,9 @@ void SDL_RenderGetLogicalSize(SDL_Renderer * renderer, int *w, int *h);
 ## Remarks
 
 When using the main rendering target (eg no target texture is set): this
-may return 0 for `w` and `h` if the [SDL_Renderer](SDL_Renderer) has never
+may return 0 for `w` and `h` if the [SDL_Renderer](SDL_Renderer.md) has never
 had its logical size set by
-[SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)(). Otherwise it
+[SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize.md)(). Otherwise it
 returns the logical width and height.
 
 When using a target texture: Never return 0 for `w` and `h` at first. Then
@@ -35,8 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
+* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

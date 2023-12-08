@@ -18,12 +18,12 @@ int SDL_HapticNumEffects(SDL_Haptic * haptic);
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to query |
 
 ## Return Value
 
 Returns the number of effects the haptic device can store or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
+error code on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -31,7 +31,7 @@ information.
 On some platforms this isn't fully supported, and therefore is an
 approximation. Always check to see if your created effect was actually
 created and do not rely solely on
-[SDL_HapticNumEffects](SDL_HapticNumEffects)().
+[SDL_HapticNumEffects](SDL_HapticNumEffects.md)().
 
 ## Version
 
@@ -39,10 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticNumEffectsPlaying](SDL_HapticNumEffectsPlaying)
-* [SDL_HapticQuery](SDL_HapticQuery)
+* [SDL_HapticNumEffectsPlaying](SDL_HapticNumEffectsPlaying.md)
+* [SDL_HapticQuery](SDL_HapticQuery.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

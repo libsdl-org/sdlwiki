@@ -19,7 +19,7 @@ void SDL_RenderPresent(SDL_Renderer * renderer);
 ## Remarks
 
 SDL's rendering functions operate on a backbuffer; that is, calling a
-rendering function such as [SDL_RenderDrawLine](SDL_RenderDrawLine)() does
+rendering function such as [SDL_RenderDrawLine](SDL_RenderDrawLine.md)() does
 not directly put a line on the screen, but rather updates the backbuffer.
 As such, you compose your entire scene and *present* the composed
 backbuffer to the screen as a complete picture.
@@ -30,7 +30,7 @@ final drawing to the user.
 
 The backbuffer should be considered invalidated after each present; do not
 assume that previous contents will exist between frames. You are strongly
-encouraged to call [SDL_RenderClear](SDL_RenderClear)() to initialize the
+encouraged to call [SDL_RenderClear](SDL_RenderClear.md)() to initialize the
 backbuffer before starting each new frame's drawing, even if you plan to
 overwrite every pixel.
 
@@ -46,18 +46,17 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderClear](SDL_RenderClear)
-* [SDL_RenderDrawLine](SDL_RenderDrawLine)
-* [SDL_RenderDrawLines](SDL_RenderDrawLines)
-* [SDL_RenderDrawPoint](SDL_RenderDrawPoint)
-* [SDL_RenderDrawPoints](SDL_RenderDrawPoints)
-* [SDL_RenderDrawRect](SDL_RenderDrawRect)
-* [SDL_RenderDrawRects](SDL_RenderDrawRects)
-* [SDL_RenderFillRect](SDL_RenderFillRect)
-* [SDL_RenderFillRects](SDL_RenderFillRects)
-* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
-* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
+* [SDL_RenderClear](SDL_RenderClear.md)
+* [SDL_RenderDrawLine](SDL_RenderDrawLine.md)
+* [SDL_RenderDrawLines](SDL_RenderDrawLines.md)
+* [SDL_RenderDrawPoint](SDL_RenderDrawPoint.md)
+* [SDL_RenderDrawPoints](SDL_RenderDrawPoints.md)
+* [SDL_RenderDrawRect](SDL_RenderDrawRect.md)
+* [SDL_RenderDrawRects](SDL_RenderDrawRects.md)
+* [SDL_RenderFillRect](SDL_RenderFillRect.md)
+* [SDL_RenderFillRects](SDL_RenderFillRects.md)
+* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode.md)
+* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

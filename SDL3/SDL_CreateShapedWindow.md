@@ -17,7 +17,7 @@ SDL_Window* SDL_CreateShapedWindow(const char *title, int w, int h, Uint32 flags
 | **title**     | The title of the window, in UTF-8 encoding.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | **w**         | The width of the window.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | **h**         | The height of the window.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **flags**     | The flags for the window, a mask of [SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS) with any of the following: ::[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL), ::[SDL_WINDOW_MOUSE_GRABBED](SDL_WINDOW_MOUSE_GRABBED), ::[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN), ::[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE), ::[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED), ::[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED), ::[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS) is always set, and ::[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN) is always unset. |
+| **flags**     | The flags for the window, a mask of [SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS.md) with any of the following: ::[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL.md), ::[SDL_WINDOW_MOUSE_GRABBED](SDL_WINDOW_MOUSE_GRABBED.md), ::[SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN.md), ::[SDL_WINDOW_RESIZABLE](SDL_WINDOW_RESIZABLE.md), ::[SDL_WINDOW_MAXIMIZED](SDL_WINDOW_MAXIMIZED.md), ::[SDL_WINDOW_MINIMIZED](SDL_WINDOW_MINIMIZED.md), ::[SDL_WINDOW_BORDERLESS](SDL_WINDOW_BORDERLESS.md) is always set, and ::[SDL_WINDOW_FULLSCREEN](SDL_WINDOW_FULLSCREEN.md) is always unset. |
 
 ## Return Value
 
@@ -29,8 +29,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DestroyWindow](SDL_DestroyWindow)
+* [SDL_DestroyWindow](SDL_DestroyWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

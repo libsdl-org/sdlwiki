@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadAnimationTyped_RW
 
-Load an animation from an SDL datasource 
+Load an animation from an SDL datasource
 
 ## Syntax
 
@@ -20,7 +20,7 @@ IMG_Animation * IMG_LoadAnimationTyped_RW(SDL_RWops *src, SDL_bool freesrc, cons
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+Returns a new [IMG_Animation](IMG_Animation.md), or NULL on error.
 
 ## Remarks
 
@@ -35,7 +35,7 @@ whether this function succeeds or not. SDL_image reads everything it needs
 from the RWops during this call in any case.
 
 When done with the returned animation, the app should dispose of it with a
-call to [IMG_FreeAnimation](IMG_FreeAnimation)().
+call to [IMG_FreeAnimation](IMG_FreeAnimation.md)().
 
 ## Version
 
@@ -43,10 +43,9 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_FreeAnimation](IMG_FreeAnimation)
+* [IMG_LoadAnimation](IMG_LoadAnimation.md)
+* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW.md)
+* [IMG_FreeAnimation](IMG_FreeAnimation.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

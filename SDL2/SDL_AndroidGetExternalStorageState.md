@@ -13,7 +13,7 @@ int SDL_AndroidGetExternalStorageState(void);
 ## Return Value
 
 Returns the current state of external storage on success or 0 on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
+* [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

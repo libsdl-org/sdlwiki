@@ -28,7 +28,7 @@ function will not attempt to convert it, or even verify it's in the right
 format.
 
 If this function is successful, the provided memory buffer must remain
-available until [Mix_FreeChunk](Mix_FreeChunk)() is called on the returned
+available until [Mix_FreeChunk](Mix_FreeChunk.md)() is called on the returned
 chunk.
 
 ## Version
@@ -37,8 +37,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_FreeChunk](Mix_FreeChunk)
+* [Mix_FreeChunk](Mix_FreeChunk.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

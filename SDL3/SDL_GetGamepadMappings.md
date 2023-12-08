@@ -19,11 +19,11 @@ char ** SDL_GetGamepadMappings(int *count);
 ## Return Value
 
 Returns an array of the mapping strings, NULL-terminated. Must be freed
-with [SDL_free](SDL_free)(). Returns NULL on error.
+with [SDL_free](SDL_free.md)(). Returns NULL on error.
 
 ## Remarks
 
-You must free the returned pointer with [SDL_free](SDL_free)() when you are
+You must free the returned pointer with [SDL_free](SDL_free.md)() when you are
 done with it, but you do _not_ free each string in the array.
 
 ## Version
@@ -31,5 +31,4 @@ done with it, but you do _not_ free each string in the array.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

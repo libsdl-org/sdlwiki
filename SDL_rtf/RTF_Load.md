@@ -25,7 +25,7 @@ Returns 0 on success, -1 on failure.
 
 This can be called multiple times to change the text displayed.
 
-On failure, call [RTF_GetError](RTF_GetError)() to get a human-readable
+On failure, call [RTF_GetError](RTF_GetError.md)() to get a human-readable
 text message corresponding to the error.
 
 ## Version
@@ -33,5 +33,4 @@ text message corresponding to the error.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

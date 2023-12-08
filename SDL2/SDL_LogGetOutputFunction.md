@@ -14,7 +14,7 @@ void SDL_LogGetOutputFunction(SDL_LogOutputFunction *callback, void **userdata);
 
 |                  |                                                                                           |
 | ---------------- | ----------------------------------------------------------------------------------------- |
-| **callback**     | an [SDL_LogOutputFunction](SDL_LogOutputFunction) filled in with the current log callback |
+| **callback**     | an [SDL_LogOutputFunction](SDL_LogOutputFunction.md) filled in with the current log callback |
 | **userdata**     | a pointer filled in with the pointer that is passed to `callback`                         |
 
 ## Version
@@ -23,8 +23,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)
+* [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

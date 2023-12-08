@@ -15,17 +15,17 @@ SDL_bool SDL_HasIntersectionF(const SDL_FRect * A,
 
 |           |                                                                       |
 | --------- | --------------------------------------------------------------------- |
-| **A**     | an [SDL_FRect](SDL_FRect) structure representing the first rectangle  |
-| **B**     | an [SDL_FRect](SDL_FRect) structure representing the second rectangle |
+| **A**     | an [SDL_FRect](SDL_FRect.md) structure representing the first rectangle  |
+| **B**     | an [SDL_FRect](SDL_FRect.md) structure representing the second rectangle |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if there is an intersection,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
-If either pointer is NULL the function will return [SDL_FALSE](SDL_FALSE).
+If either pointer is NULL the function will return [SDL_FALSE](SDL_FALSE.md).
 
 ## Version
 
@@ -33,8 +33,7 @@ This function is available since SDL 2.0.22.
 
 ## Related Functions
 
-* [SDL_IntersectRect](SDL_IntersectRect)
+* [SDL_IntersectRect](SDL_IntersectRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,12 +14,12 @@ int SDL_PlayAudioDevice(SDL_AudioDeviceID dev);
 
 |             |                                                                 |
 | ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -37,9 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

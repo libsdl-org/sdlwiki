@@ -24,19 +24,18 @@ void SDL_EGL_SetEGLAttributeCallbacks(SDL_EGLAttribArrayCallback platformAttribC
 
 Each callback should return a pointer to an EGL attribute array terminated
 with EGL_NONE. Callbacks may return NULL pointers to signal an error, which
-will cause the [SDL_CreateWindow](SDL_CreateWindow) process to fail
+will cause the [SDL_CreateWindow](SDL_CreateWindow.md) process to fail
 gracefully.
 
 The arrays returned by each callback will be appended to the existing
 attribute arrays defined by SDL.
 
 NOTE: These callback pointers will be reset after
-[SDL_GL_ResetAttributes](SDL_GL_ResetAttributes).
+[SDL_GL_ResetAttributes](SDL_GL_ResetAttributes.md).
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

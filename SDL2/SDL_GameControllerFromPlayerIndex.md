@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GameControllerFromPlayerIndex
 
-Get the [SDL_GameController](SDL_GameController) associated with a player index.
+Get the [SDL_GameController](SDL_GameController.md) associated with a player index.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ SDL_GameController* SDL_GameControllerFromPlayerIndex(int player_index);
 
 ## Return Value
 
-Returns the [SDL_GameController](SDL_GameController) associated with a
+Returns the [SDL_GameController](SDL_GameController.md) associated with a
 player index.
 
 ## Remarks
@@ -32,9 +32,8 @@ This function is available since SDL 2.0.12.
 
 ## Related Functions
 
-* [SDL_GameControllerGetPlayerIndex](SDL_GameControllerGetPlayerIndex)
-* [SDL_GameControllerSetPlayerIndex](SDL_GameControllerSetPlayerIndex)
+* [SDL_GameControllerGetPlayerIndex](SDL_GameControllerGetPlayerIndex.md)
+* [SDL_GameControllerSetPlayerIndex](SDL_GameControllerSetPlayerIndex.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

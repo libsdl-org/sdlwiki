@@ -13,11 +13,11 @@ void SDL_StartTextInput(void);
 ## Remarks
 
 This function will start accepting Unicode text input events in the focused
-SDL window, and start emitting [SDL_TextInputEvent](SDL_TextInputEvent)
-([SDL_TEXTINPUT](SDL_TEXTINPUT)) and
-[SDL_TextEditingEvent](SDL_TextEditingEvent)
-([SDL_TEXTEDITING](SDL_TEXTEDITING)) events. Please use this function in
-pair with [SDL_StopTextInput](SDL_StopTextInput)().
+SDL window, and start emitting [SDL_TextInputEvent](SDL_TextInputEvent.md)
+([SDL_TEXTINPUT](SDL_TEXTINPUT.md)) and
+[SDL_TextEditingEvent](SDL_TextEditingEvent.md)
+([SDL_TEXTEDITING](SDL_TEXTEDITING.md)) events. Please use this function in
+pair with [SDL_StopTextInput](SDL_StopTextInput.md)().
 
 On some platforms using this function activates the screen keyboard.
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetTextInputRect](SDL_SetTextInputRect)
-* [SDL_StopTextInput](SDL_StopTextInput)
+* [SDL_SetTextInputRect](SDL_SetTextInputRect.md)
+* [SDL_StopTextInput](SDL_StopTextInput.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

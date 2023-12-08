@@ -28,8 +28,7 @@ This function is available since SDL 2.0.12.
 
 ## Related Functions
 
-* [SDL_SetTextureScaleMode](SDL_SetTextureScaleMode)
+* [SDL_SetTextureScaleMode](SDL_SetTextureScaleMode.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

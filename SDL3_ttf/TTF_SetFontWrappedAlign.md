@@ -31,8 +31,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_GetFontWrappedAlign](TTF_GetFontWrappedAlign)
+* [TTF_GetFontWrappedAlign](TTF_GetFontWrappedAlign.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

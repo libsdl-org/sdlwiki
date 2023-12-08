@@ -19,12 +19,12 @@ SDL_Window* SDL_GetWindowFromID(SDL_WindowID id);
 ## Return Value
 
 Returns the window associated with `id` or NULL if it doesn't exist; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-The numeric ID is what [SDL_WindowEvent](SDL_WindowEvent) references, and
-is necessary to map these events to specific [SDL_Window](SDL_Window)
+The numeric ID is what [SDL_WindowEvent](SDL_WindowEvent.md) references, and
+is necessary to map these events to specific [SDL_Window](SDL_Window.md)
 objects.
 
 ## Version
@@ -33,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowID](SDL_GetWindowID)
+* [SDL_GetWindowID](SDL_GetWindowID.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

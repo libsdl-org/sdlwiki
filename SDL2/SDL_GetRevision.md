@@ -19,7 +19,7 @@ SDL library in use.
 
 This value is the revision of the code you are linked with and may be
 different from the code you are compiling with, which is found in the
-constant [SDL_REVISION](SDL_REVISION).
+constant [SDL_REVISION](SDL_REVISION.md).
 
 The revision is arbitrary string (a hash value) uniquely identifying the
 exact revision of the SDL library in use, and is only useful in comparing
@@ -40,9 +40,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetVersion](SDL_GetVersion)
+* [SDL_GetVersion](SDL_GetVersion.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVersion](CategoryVersion.md)

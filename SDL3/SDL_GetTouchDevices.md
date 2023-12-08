@@ -19,8 +19,8 @@ SDL_TouchID* SDL_GetTouchDevices(int *count);
 ## Return Value
 
 Returns a 0 terminated array of touch device IDs which should be freed with
-[SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+[SDL_free](SDL_free.md)(), or NULL on error; call
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Remarks
 
@@ -35,5 +35,4 @@ This was fixed for Android in SDL 2.0.1.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

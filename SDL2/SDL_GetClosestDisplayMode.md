@@ -15,13 +15,13 @@ SDL_DisplayMode * SDL_GetClosestDisplayMode(int displayIndex, const SDL_DisplayM
 |                      |                                                                                                                 |
 | -------------------- | --------------------------------------------------------------------------------------------------------------- |
 | **displayIndex**     | the index of the display to query                                                                               |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure containing the desired display mode                             |
-| **closest**          | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the closest match of the available display modes |
+| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode.md) structure containing the desired display mode                             |
+| **closest**          | an [SDL_DisplayMode](SDL_DisplayMode.md) structure filled in with the closest match of the available display modes |
 
 ## Return Value
 
 Returns the passed in value `closest` or NULL if no matching video mode was
-available; call [SDL_GetError](SDL_GetError)() for more information.
+available; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -38,9 +38,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayMode](SDL_GetDisplayMode)
-* [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
+* [SDL_GetDisplayMode](SDL_GetDisplayMode.md)
+* [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

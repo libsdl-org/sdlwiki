@@ -12,7 +12,7 @@ void SDL_LockAudio(void);
 
 ## Remarks
 
-New programs might want to use [SDL_LockAudioDevice](SDL_LockAudioDevice)()
+New programs might want to use [SDL_LockAudioDevice](SDL_LockAudioDevice.md)()
 instead. This function is equivalent to calling...
 
 ```c
@@ -20,7 +20,7 @@ SDL_LockAudioDevice(1);
 ```
 
 ...and is only useful if you used the legacy
-[SDL_OpenAudio](SDL_OpenAudio)() function.
+[SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -28,10 +28,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
-* [SDL_UnlockAudio](SDL_UnlockAudio)
-* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
+* [SDL_UnlockAudio](SDL_UnlockAudio.md)
+* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

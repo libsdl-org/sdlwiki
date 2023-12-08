@@ -16,7 +16,7 @@ int SDL_SetTextureScaleMode(SDL_Texture * texture,
 |                   |                                                                |
 | ----------------- | -------------------------------------------------------------- |
 | **texture**       | The texture to update.                                         |
-| **scaleMode**     | the [SDL_ScaleMode](SDL_ScaleMode) to use for texture scaling. |
+| **scaleMode**     | the [SDL_ScaleMode](SDL_ScaleMode.md) to use for texture scaling. |
 
 ## Return Value
 
@@ -32,8 +32,7 @@ This function is available since SDL 2.0.12.
 
 ## Related Functions
 
-* [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
+* [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

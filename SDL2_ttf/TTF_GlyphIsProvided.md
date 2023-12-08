@@ -26,7 +26,7 @@ Returns non-zero if font provides a glyph for this character, zero if not.
 Note that this version of the function takes a 16-bit character code, which
 covers the Basic Multilingual Plane, but is insufficient to cover the
 entire set of possible Unicode values, including emoji glyphs. You should
-use [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)() instead, which offers
+use [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32.md)() instead, which offers
 the same functionality but takes a 32-bit codepoint instead.
 
 The only reason to use this function is that it was available since the
@@ -38,8 +38,7 @@ This function is available since SDL_ttf 2.0.12.
 
 ## Related Functions
 
-* [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
+* [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

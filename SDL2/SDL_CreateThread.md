@@ -15,14 +15,14 @@ SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
 
 |              |                                                                                 |
 | ------------ | ------------------------------------------------------------------------------- |
-| **fn**       | the [SDL_ThreadFunction](SDL_ThreadFunction) function to call in the new thread |
+| **fn**       | the [SDL_ThreadFunction](SDL_ThreadFunction.md) function to call in the new thread |
 | **name**     | the name of the thread                                                          |
 | **data**     | a pointer that is passed to `fn`                                                |
 
 ## Return Value
 
 Returns an opaque pointer to the new thread object on success, NULL if the
-new thread could not be created; call [SDL_GetError](SDL_GetError)() for
+new thread could not be created; call [SDL_GetError](SDL_GetError.md)() for
 more information.
 
 ## Remarks
@@ -39,9 +39,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
-* [SDL_WaitThread](SDL_WaitThread)
+* [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize.md)
+* [SDL_WaitThread](SDL_WaitThread.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

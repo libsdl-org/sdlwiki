@@ -14,7 +14,7 @@ int SDL_GetSensorNonPortableType(SDL_Sensor *sensor);
 
 |                |                                                |
 | -------------- | ---------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
+| **sensor**     | The [SDL_Sensor](SDL_Sensor.md) object to inspect |
 
 ## Return Value
 
@@ -25,5 +25,4 @@ Returns the sensor platform dependent type, or -1 if `sensor` is NULL.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

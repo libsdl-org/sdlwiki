@@ -29,5 +29,4 @@ If the product ID isn't available this function returns 0.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

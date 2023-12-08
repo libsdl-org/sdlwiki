@@ -47,6 +47,4 @@ Returns the Android API level.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAndroid](CategoryAndroid.md)

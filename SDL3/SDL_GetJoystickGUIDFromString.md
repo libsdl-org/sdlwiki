@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetJoystickGUIDFromString
 
-Convert a GUID string into a [SDL_JoystickGUID](SDL_JoystickGUID) structure.
+Convert a GUID string into a [SDL_JoystickGUID](SDL_JoystickGUID.md) structure.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ SDL_JoystickGUID SDL_GetJoystickGUIDFromString(const char *pchGUID);
 
 ## Return Value
 
-Returns a [SDL_JoystickGUID](SDL_JoystickGUID) structure.
+Returns a [SDL_JoystickGUID](SDL_JoystickGUID.md) structure.
 
 ## Remarks
 
@@ -32,8 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)
+* [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

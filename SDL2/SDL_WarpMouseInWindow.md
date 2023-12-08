@@ -24,7 +24,7 @@ void SDL_WarpMouseInWindow(SDL_Window * window,
 This function generates a mouse motion event if relative mode is not
 enabled. If relative mode is enabled, you can force mouse events for the
 warp by setting the
-[SDL_HINT_MOUSE_RELATIVE_WARP_MOTION](SDL_HINT_MOUSE_RELATIVE_WARP_MOTION)
+[SDL_HINT_MOUSE_RELATIVE_WARP_MOTION](SDL_HINT_MOUSE_RELATIVE_WARP_MOTION.md)
 hint.
 
 Note that this function will appear to succeed, but not actually move the
@@ -36,8 +36,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
+* [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

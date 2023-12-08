@@ -30,11 +30,11 @@ int SDL_UpdateYUVTexture(SDL_Texture * texture,
 ## Return Value
 
 Returns 0 on success or -1 if the texture is not valid; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-You can use [SDL_UpdateTexture](SDL_UpdateTexture)() as long as your pixel
+You can use [SDL_UpdateTexture](SDL_UpdateTexture.md)() as long as your pixel
 data is a contiguous block of Y and U/V planes in the proper order, but
 this function is available if your pixel data is not contiguous.
 
@@ -44,8 +44,7 @@ This function is available since SDL 2.0.1.
 
 ## Related Functions
 
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+* [SDL_UpdateTexture](SDL_UpdateTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

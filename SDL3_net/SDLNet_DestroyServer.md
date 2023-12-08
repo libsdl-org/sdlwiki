@@ -36,8 +36,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_CreateServer](SDLNet_CreateServer)
+* [SDLNet_CreateServer](SDLNet_CreateServer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

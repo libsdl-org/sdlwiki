@@ -15,7 +15,7 @@ void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
 
 |                |                                                                         |
 | -------------- | ----------------------------------------------------------------------- |
-| **window**     | [SDL_Window](SDL_Window) from which the drawable size should be queried |
+| **window**     | [SDL_Window](SDL_Window.md) from which the drawable size should be queried |
 | **w**          | Pointer to variable for storing the width in pixels, may be NULL        |
 | **h**          | Pointer to variable for storing the height in pixels, may be NULL       |
 
@@ -25,9 +25,8 @@ This function is available since SDL 2.0.14.
 
 ## Related Functions
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
-* [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

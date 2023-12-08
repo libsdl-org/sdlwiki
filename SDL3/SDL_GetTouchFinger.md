@@ -27,7 +27,7 @@ SDL_Finger * SDL_GetTouchFinger(SDL_TouchID touchID, int index);
 
 ## Return Value
 
-Returns a pointer to the [SDL_Finger](SDL_Finger) object or NULL if no
+Returns a pointer to the [SDL_Finger](SDL_Finger.md) object or NULL if no
 object at the given ID and index could be found.
 
 ## Remarks
@@ -39,7 +39,5 @@ The returned resource is owned by SDL and should not be deallocated.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

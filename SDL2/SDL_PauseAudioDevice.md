@@ -15,7 +15,7 @@ void SDL_PauseAudioDevice(SDL_AudioDeviceID dev,
 
 |                  |                                                                 |
 | ---------------- | --------------------------------------------------------------- |
-| **dev**          | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**          | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 | **pause_on**     | non-zero to pause, 0 to unpause                                 |
 
 ## Remarks
@@ -31,12 +31,12 @@ unpaused devices from running their callbacks.
 
 Pausing state does not stack; even if you pause a device several times, a
 single unpause will start the device playing again, and vice versa. This is
-different from how [SDL_LockAudioDevice](SDL_LockAudioDevice)() works.
+different from how [SDL_LockAudioDevice](SDL_LockAudioDevice.md)() works.
 
 If you just need to protect a few variables from race conditions vs your
 callback, you shouldn't pause the audio device, as it will lead to dropouts
 in the audio playback. Instead, you should use
-[SDL_LockAudioDevice](SDL_LockAudioDevice)().
+[SDL_LockAudioDevice](SDL_LockAudioDevice.md)().
 
 ## Version
 
@@ -44,8 +44,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

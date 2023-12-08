@@ -12,7 +12,7 @@ char * SDL_GameControllerMappingForIndex(int mapping_index);
 
 ## Return Value
 
-Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
+Returns the mapping string. Must be freed with [SDL_free](SDL_free.md)().
 Returns NULL if the index is out of range.
 
 ## Version
@@ -20,5 +20,4 @@ Returns NULL if the index is out of range.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,7 +18,7 @@ SDL_bool SDL_AtomicTryLock(SDL_SpinLock *lock);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the lock succeeded, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the lock succeeded, [SDL_FALSE](SDL_FALSE.md)
 if the lock is already held.
 
 ## Remarks
@@ -32,10 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AtomicLock](SDL_AtomicLock)
-* [SDL_AtomicUnlock](SDL_AtomicUnlock)
+* [SDL_AtomicLock](SDL_AtomicLock.md)
+* [SDL_AtomicUnlock](SDL_AtomicUnlock.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAtomic](CategoryAtomic.md)

@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_FreeAnimation
 
-Dispose of an [IMG_Animation](IMG_Animation) and free its resources.
+Dispose of an [IMG_Animation](IMG_Animation.md) and free its resources.
 
 ## Syntax
 
@@ -14,7 +14,7 @@ void IMG_FreeAnimation(IMG_Animation *anim);
 
 |              |                                               |
 | ------------ | --------------------------------------------- |
-| **anim**     | [IMG_Animation](IMG_Animation) to dispose of. |
+| **anim**     | [IMG_Animation](IMG_Animation.md) to dispose of. |
 
 ## Remarks
 
@@ -26,10 +26,9 @@ This function is available since SDL_image 2.6.0.
 
 ## Related Functions
 
-* [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW)
+* [IMG_LoadAnimation](IMG_LoadAnimation.md)
+* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW.md)
+* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

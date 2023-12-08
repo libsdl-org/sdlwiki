@@ -19,7 +19,7 @@ const char* SDL_GetGamepadInstanceName(SDL_JoystickID instance_id);
 ## Return Value
 
 Returns the name of the selected gamepad. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
+function returns NULL; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,9 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadName](SDL_GetGamepadName)
-* [SDL_OpenGamepad](SDL_OpenGamepad)
+* [SDL_GetGamepadName](SDL_GetGamepadName.md)
+* [SDL_OpenGamepad](SDL_OpenGamepad.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

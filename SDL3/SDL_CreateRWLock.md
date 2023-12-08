@@ -13,7 +13,7 @@ SDL_RWLock* SDL_CreateRWLock(void);
 ## Return Value
 
 Returns the initialized and unlocked read/write lock or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -31,11 +31,11 @@ the data.
 
 All newly-created read/write locks begin in the _unlocked_ state.
 
-Calls to [SDL_LockRWLockForReading](SDL_LockRWLockForReading)() and
-[SDL_LockRWLockForWriting](SDL_LockRWLockForWriting) will not return while
+Calls to [SDL_LockRWLockForReading](SDL_LockRWLockForReading.md)() and
+[SDL_LockRWLockForWriting](SDL_LockRWLockForWriting.md) will not return while
 the rwlock is locked _for writing_ by another thread. See
-[SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)() and
-[SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)() to attempt to
+[SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading.md)() and
+[SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting.md)() to attempt to
 lock without blocking.
 
 SDL read/write locks are only recursive for read-only locks! They are not
@@ -50,13 +50,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DestroyRWLock](SDL_DestroyRWLock)
-* [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
-* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
-* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
-* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
-* [SDL_UnlockRWLock](SDL_UnlockRWLock)
+* [SDL_DestroyRWLock](SDL_DestroyRWLock.md)
+* [SDL_LockRWLockForReading](SDL_LockRWLockForReading.md)
+* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading.md)
+* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting.md)
+* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting.md)
+* [SDL_UnlockRWLock](SDL_UnlockRWLock.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -20,11 +20,11 @@ void SDL_CleanupEvent(SDL_Event *event);
 
 Some events have dynamically allocated data that must be cleaned up when
 the event is processed. If you handle any of these events, you should call
-[SDL_CleanupEvent](SDL_CleanupEvent)() after processing them:
-[SDL_EVENT_DROP_FILE](SDL_EVENT_DROP_FILE)
-[SDL_EVENT_DROP_TEXT](SDL_EVENT_DROP_TEXT)
-[SDL_EVENT_SYSWM](SDL_EVENT_SYSWM)
-[SDL_EVENT_TEXT_EDITING](SDL_EVENT_TEXT_EDITING)
+[SDL_CleanupEvent](SDL_CleanupEvent.md)() after processing them:
+[SDL_EVENT_DROP_FILE](SDL_EVENT_DROP_FILE.md)
+[SDL_EVENT_DROP_TEXT](SDL_EVENT_DROP_TEXT.md)
+[SDL_EVENT_SYSWM](SDL_EVENT_SYSWM.md)
+[SDL_EVENT_TEXT_EDITING](SDL_EVENT_TEXT_EDITING.md)
 
 It is safe, but not necessary, to call this function for other event types.
 
@@ -34,10 +34,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_WaitEvent](SDL_WaitEvent)
-* [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+* [SDL_PollEvent](SDL_PollEvent.md)
+* [SDL_WaitEvent](SDL_WaitEvent.md)
+* [SDL_WaitEventTimeout](SDL_WaitEventTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

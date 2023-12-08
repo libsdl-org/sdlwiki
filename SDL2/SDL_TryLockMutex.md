@@ -19,11 +19,11 @@ int SDL_TryLockMutex(SDL_mutex * mutex) SDL_TRY_ACQUIRE(0, mutex);
 ## Return Value
 
 Returns 0, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT), or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-This works just like [SDL_LockMutex](SDL_LockMutex)(), but if the mutex is
+This works just like [SDL_LockMutex](SDL_LockMutex.md)(), but if the mutex is
 not available, this function returns
 [`SDL_MUTEX_TIMEOUT`](SDL_MUTEX_TIMEOUT) immediately.
 
@@ -36,11 +36,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateMutex](SDL_CreateMutex)
-* [SDL_DestroyMutex](SDL_DestroyMutex)
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
+* [SDL_CreateMutex](SDL_CreateMutex.md)
+* [SDL_DestroyMutex](SDL_DestroyMutex.md)
+* [SDL_LockMutex](SDL_LockMutex.md)
+* [SDL_UnlockMutex](SDL_UnlockMutex.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

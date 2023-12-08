@@ -27,7 +27,7 @@ const char* SDL_GetDisplayName(SDL_DisplayID displayID);
 ## Return Value
 
 Returns the name of a display or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -35,10 +35,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

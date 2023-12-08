@@ -27,8 +27,8 @@ SDL_Surface* SDL_CreateRGBSurface
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -54,7 +54,7 @@ SDL_SetSurfaceBlendMode(surface, SDL_BLENDMODE_BLEND)
 ```
 
 You can change this by calling
-[SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)() and selecting a
+[SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode.md)() and selecting a
 different `blendMode`.
 
 ## Version
@@ -63,10 +63,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
-* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
-* [SDL_FreeSurface](SDL_FreeSurface)
+* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom.md)
+* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat.md)
+* [SDL_FreeSurface](SDL_FreeSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

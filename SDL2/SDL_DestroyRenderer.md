@@ -20,7 +20,7 @@ void SDL_DestroyRenderer(SDL_Renderer * renderer);
 
 If `renderer` is NULL, this function will return immediately after setting
 the SDL error message to "Invalid renderer". See
-[SDL_GetError](SDL_GetError)().
+[SDL_GetError](SDL_GetError.md)().
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

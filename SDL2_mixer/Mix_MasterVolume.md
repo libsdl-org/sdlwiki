@@ -14,7 +14,7 @@ int Mix_MasterVolume(int volume);
 
 |                |                                                                                 |
 | -------------- | ------------------------------------------------------------------------------- |
-| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md), or -1 to query. |
 
 ## Return Value
 
@@ -27,17 +27,17 @@ SDL_mixer keeps a per-channel volume, a per-chunk volume, and a master
 volume, and considers all three when mixing audio. This function sets the
 master volume, which is applied to all playing channels when mixing.
 
-The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME)
-(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME) is 128. Values
-greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME) are clamped to
-[MIX_MAX_VOLUME](MIX_MAX_VOLUME).
+The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md)
+(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) is 128. Values
+greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) are clamped to
+[MIX_MAX_VOLUME](MIX_MAX_VOLUME.md).
 
 Specifying a negative volume will not change the current volume; as such,
 this can be used to query the current volume without making changes, as
 this function returns the previous (in this case, still-current) value.
 
 Note that the master volume does not affect any playing music; it is only
-applied when mixing chunks. Use [Mix_MusicVolume](Mix_MusicVolume)() for
+applied when mixing chunks. Use [Mix_MusicVolume](Mix_MusicVolume.md)() for
 that.\
 
 ## Version
@@ -45,5 +45,4 @@ that.\
 This function is available since SDL_mixer 2.6.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

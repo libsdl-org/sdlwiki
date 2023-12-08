@@ -30,5 +30,4 @@ This clears already-generated glyphs, if any, from the cache.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -27,16 +27,14 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_Log](SDL_Log)
-* [SDL_LogCritical](SDL_LogCritical)
-* [SDL_LogDebug](SDL_LogDebug)
-* [SDL_LogError](SDL_LogError)
-* [SDL_LogInfo](SDL_LogInfo)
-* [SDL_LogMessage](SDL_LogMessage)
-* [SDL_LogVerbose](SDL_LogVerbose)
-* [SDL_LogWarn](SDL_LogWarn)
+* [SDL_Log](SDL_Log.md)
+* [SDL_LogCritical](SDL_LogCritical.md)
+* [SDL_LogDebug](SDL_LogDebug.md)
+* [SDL_LogError](SDL_LogError.md)
+* [SDL_LogInfo](SDL_LogInfo.md)
+* [SDL_LogMessage](SDL_LogMessage.md)
+* [SDL_LogVerbose](SDL_LogVerbose.md)
+* [SDL_LogWarn](SDL_LogWarn.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryLog](CategoryLog.md)

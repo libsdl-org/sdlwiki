@@ -18,7 +18,7 @@ Uint32 SDL_GetWindowFlags(SDL_Window *window);
 
 ## Return Value
 
-Returns a mask of the [SDL_WindowFlags](SDL_WindowFlags) associated with
+Returns a mask of the [SDL_WindowFlags](SDL_WindowFlags.md) associated with
 `window`
 
 ## Version
@@ -27,15 +27,13 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_HideWindow](SDL_HideWindow)
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
-* [SDL_ShowWindow](SDL_ShowWindow)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_HideWindow](SDL_HideWindow.md)
+* [SDL_MaximizeWindow](SDL_MaximizeWindow.md)
+* [SDL_MinimizeWindow](SDL_MinimizeWindow.md)
+* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)
+* [SDL_SetWindowGrab](SDL_SetWindowGrab.md)
+* [SDL_ShowWindow](SDL_ShowWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

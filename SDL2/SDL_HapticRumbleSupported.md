@@ -18,9 +18,9 @@ int SDL_HapticRumbleSupported(SDL_Haptic * haptic);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if effect is supported, [SDL_FALSE](SDL_FALSE.md)
 if it isn't, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,10 +28,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
-* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
-* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
+* [SDL_HapticRumbleInit](SDL_HapticRumbleInit.md)
+* [SDL_HapticRumblePlay](SDL_HapticRumblePlay.md)
+* [SDL_HapticRumbleStop](SDL_HapticRumbleStop.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ float SDL_GetAudioStreamSpeed(SDL_AudioStream *stream);
 
 |                |                                                  |
 | -------------- | ------------------------------------------------ |
-| **stream**     | the [SDL_AudioStream](SDL_AudioStream) to query. |
+| **stream**     | the [SDL_AudioStream](SDL_AudioStream.md) to query. |
 
 ## Return Value
 
@@ -31,8 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetAudioStreamSpeed](SDL_SetAudioStreamSpeed)
+* [SDL_SetAudioStreamSpeed](SDL_SetAudioStreamSpeed.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

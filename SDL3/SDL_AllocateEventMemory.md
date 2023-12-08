@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_AllocateEventMemory
 
-Allocate dynamic memory for an SDL event 
+Allocate dynamic memory for an SDL event
 
 ## Syntax
 
@@ -19,7 +19,7 @@ void * SDL_AllocateEventMemory(size_t size);
 ## Return Value
 
 Returns a pointer to the memory allocated or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -31,5 +31,4 @@ automatically freed after the event is processed.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

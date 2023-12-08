@@ -19,7 +19,7 @@ SDLNet_DatagramSocket * SDLNet_CreateDatagramSocket(SDLNet_Address *addr, Uint16
 
 ## Return Value
 
-Returns a new [SDLNet_DatagramSocket](SDLNet_DatagramSocket), or NULL on
+Returns a new [SDLNet_DatagramSocket](SDLNet_DatagramSocket.md), or NULL on
 error; call SDL_GetError() for details.
 
 ## Remarks
@@ -44,7 +44,7 @@ success, you can immediately start talking to the network.
 
 You can specify an address to listen for connections on; this address must
 be local to the system, and probably one returned by
-[SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)(), but almost always
+[SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses.md)(), but almost always
 you just want to specify NULL here, to listen on any address available to
 the app.
 
@@ -76,9 +76,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)
-* [SDLNet_DestroyDatagramSocket](SDLNet_DestroyDatagramSocket)
+* [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses.md)
+* [SDLNet_DestroyDatagramSocket](SDLNet_DestroyDatagramSocket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -26,8 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowTitle](SDL_SetWindowTitle)
+* [SDL_SetWindowTitle](SDL_SetWindowTitle.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

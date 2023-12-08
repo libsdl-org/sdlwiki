@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
 # SDLNet_CompareAddresses
 
-Compare two [SDLNet_Address](SDLNet_Address) objects.
+Compare two [SDLNet_Address](SDLNet_Address.md) objects.
 
 ## Syntax
 
@@ -35,5 +35,4 @@ It is safe to call this function from any thread.
 This function is available since SDL_Net 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

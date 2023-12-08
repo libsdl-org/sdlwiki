@@ -16,9 +16,8 @@ This function is available since SDL 2.0.22.
 
 ## Related Functions
 
-* [SDL_StartTextInput](SDL_StartTextInput)
-* [SDL_StopTextInput](SDL_StopTextInput)
+* [SDL_StartTextInput](SDL_StartTextInput.md)
+* [SDL_StopTextInput](SDL_StopTextInput.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

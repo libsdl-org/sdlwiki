@@ -14,7 +14,7 @@ SDL_GameControllerType SDL_GameControllerTypeForIndex(int joystick_index);
 
 |                        |                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------- |
-| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
+| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks.md)()-1 |
 
 ## Return Value
 
@@ -29,5 +29,4 @@ This can be called before any controllers are opened.
 This function is available since SDL 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

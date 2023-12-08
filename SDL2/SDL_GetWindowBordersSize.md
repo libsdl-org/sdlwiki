@@ -25,7 +25,7 @@ int SDL_GetWindowBordersSize(SDL_Window * window,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -35,7 +35,7 @@ window in question was borderless.
 
 Note: This function may fail on systems where the window has not yet been
 decorated by the display server (for example, immediately after calling
-[SDL_CreateWindow](SDL_CreateWindow)). It is recommended that you wait at
+[SDL_CreateWindow](SDL_CreateWindow.md)). It is recommended that you wait at
 least until the window has been presented and composited, so that the
 window system has a chance to decorate the window and provide the border
 dimensions to SDL.
@@ -48,8 +48,7 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

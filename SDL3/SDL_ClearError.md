@@ -26,10 +26,8 @@ if (*error) {
 
 ## Related Functions
 
-* [SDL_GetError](SDL_GetError)
-* [SDL_SetError](SDL_SetError)
+* [SDL_GetError](SDL_GetError.md)
+* [SDL_SetError](SDL_SetError.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryError](CategoryError.md)

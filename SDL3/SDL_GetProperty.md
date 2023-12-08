@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetProperty
 
-Get a property on a set of properties 
+Get a property on a set of properties
 
 ## Syntax
 
@@ -34,11 +34,11 @@ modified by applications.
 
 It is safe to call this function from any thread, although the data
 returned is not protected and could potentially be freed if you call
-[SDL_SetProperty](SDL_SetProperty)() or
-[SDL_ClearProperty](SDL_ClearProperty)() on these properties from another
+[SDL_SetProperty](SDL_SetProperty.md)() or
+[SDL_ClearProperty](SDL_ClearProperty.md)() on these properties from another
 thread. If you need to avoid this, use
-[SDL_LockProperties](SDL_LockProperties)() and
-[SDL_UnlockProperties](SDL_UnlockProperties)().
+[SDL_LockProperties](SDL_LockProperties.md)() and
+[SDL_UnlockProperties](SDL_UnlockProperties.md)().
 
 ## Version
 
@@ -46,9 +46,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetPropertyType](SDL_GetPropertyType)
-* [SDL_SetProperty](SDL_SetProperty)
+* [SDL_GetPropertyType](SDL_GetPropertyType.md)
+* [SDL_SetProperty](SDL_SetProperty.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

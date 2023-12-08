@@ -31,10 +31,9 @@ This function is available since SDL_image 2.0.0.
 
 ## Related Functions
 
-* [IMG_SavePNG_RW](IMG_SavePNG_RW)
-* [IMG_SaveJPG](IMG_SaveJPG)
-* [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
+* [IMG_SavePNG_RW](IMG_SavePNG_RW.md)
+* [IMG_SaveJPG](IMG_SaveJPG.md)
+* [IMG_SaveJPG_RW](IMG_SaveJPG_RW.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

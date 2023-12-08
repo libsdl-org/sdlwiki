@@ -20,7 +20,7 @@ const char * SDL_AndroidGetExternalStoragePath(void);
 ## Return Value
 
 Returns the path used for external storage for this application on success
-or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+or NULL on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -37,10 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
+* [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
+[CategoryAPI](CategoryAPI.md), [CategorySystem](CategorySystem.md), [CategoryDraft](CategoryDraft.md), [CategoryAndroid](CategoryAndroid.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

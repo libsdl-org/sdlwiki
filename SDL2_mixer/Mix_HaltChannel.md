@@ -30,7 +30,7 @@ music.
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[Mix_ChannelFinished](Mix_ChannelFinished)() before this function returns.
+[Mix_ChannelFinished](Mix_ChannelFinished.md)() before this function returns.
 
 You may not specify MAX_CHANNEL_POST for a channel.
 
@@ -39,5 +39,4 @@ You may not specify MAX_CHANNEL_POST for a channel.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

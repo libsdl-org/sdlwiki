@@ -27,7 +27,7 @@ The current button state is returned as a button bitmask, which can be
 tested using the `SDL_BUTTON(X)` macros (where `X` is generally 1 for the
 left, 2 for middle, 3 for the right button), and `x` and `y` are set to the
 mouse deltas since the last call to
-[SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)() or since event
+[SDL_GetRelativeMouseState](SDL_GetRelativeMouseState.md)() or since event
 initialization. You can pass NULL for either `x` or `y`.
 
 ## Version
@@ -36,8 +36,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetMouseState](SDL_GetMouseState)
+* [SDL_GetMouseState](SDL_GetMouseState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

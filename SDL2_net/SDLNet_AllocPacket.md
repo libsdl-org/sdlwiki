@@ -25,12 +25,12 @@ Returns the new packet, or NULL if the function ran out of memory.
 This allocates a packet with `size` bytes of space for payload.
 
 When done with this packet, you can free it with
-[SDLNet_FreePacket](SDLNet_FreePacket). Packets can be reused multiple
+[SDLNet_FreePacket](SDLNet_FreePacket.md). Packets can be reused multiple
 times; you don't have to allocate a new one for each piece of data you
 intend to send.
 
 You can allocate multiple packets at once with
-[SDLNet_AllocPacketV](SDLNet_AllocPacketV).
+[SDLNet_AllocPacketV](SDLNet_AllocPacketV.md).
 
 ## Version
 
@@ -38,10 +38,9 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_ResizePacket](SDLNet_ResizePacket)
-* [SDLNet_FreePacket](SDLNet_FreePacket)
-* [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
+* [SDLNet_ResizePacket](SDLNet_ResizePacket.md)
+* [SDLNet_FreePacket](SDLNet_FreePacket.md)
+* [SDLNet_AllocPacketV](SDLNet_AllocPacketV.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

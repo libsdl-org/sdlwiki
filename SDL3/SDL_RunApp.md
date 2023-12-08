@@ -16,25 +16,24 @@ int SDL_RunApp(int argc, char* argv[], SDL_main_func mainFunction, void * reserv
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **argc**             | The argc parameter from the application's main() function, or 0 if the platform's main-equivalent has no argc                                                                                            |
 | **argv**             | The argv parameter from the application's main() function, or NULL if the platform's main-equivalent has no argv                                                                                         |
-| **mainFunction**     | Your SDL app's C-style main(), an [SDL_main_func](SDL_main_func). NOT the function you're calling this from! Its name doesn't matter, but its signature must be like int my_main(int argc, char* argv[]) |
+| **mainFunction**     | Your SDL app's C-style main(), an [SDL_main_func](SDL_main_func.md). NOT the function you're calling this from! Its name doesn't matter, but its signature must be like int my_main(int argc, char* argv[]) |
 | **reserved**         | should be NULL (reserved for future use, will probably be platform-specific then)                                                                                                                        |
 
 ## Return Value
 
 Returns the return value from mainFunction: 0 on success, -1 on failure;
-[SDL_GetError](SDL_GetError)() might have more information on the failure
+[SDL_GetError](SDL_GetError.md)() might have more information on the failure
 
 ## Remarks
 
 You can use this if you want to use your own main() implementation without
-using [SDL_main](SDL_main) (like when using
-[SDL_MAIN_HANDLED](SDL_MAIN_HANDLED)). When using this, you do *not* need
-[SDL_SetMainReady](SDL_SetMainReady)().
+using [SDL_main](SDL_main.md) (like when using
+[SDL_MAIN_HANDLED](SDL_MAIN_HANDLED.md)). When using this, you do *not* need
+[SDL_SetMainReady](SDL_SetMainReady.md)().
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

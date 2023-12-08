@@ -21,12 +21,12 @@ SDL_Window * SDL_CreateWindow(const char *title,
 | **y**         | the y position of the window, [`SDL_WINDOWPOS_CENTERED`](SDL_WINDOWPOS_CENTERED), or [`SDL_WINDOWPOS_UNDEFINED`](SDL_WINDOWPOS_UNDEFINED) |
 | **w**         | the width of the window, in screen coordinates                                                                                            |
 | **h**         | the height of the window, in screen coordinates                                                                                           |
-| **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags) OR'd together                                                                        |
+| **flags**     | 0, or one or more [SDL_WindowFlags](SDL_WindowFlags.md) OR'd together                                                                        |
 
 ## Return Value
 
 Returns the window that was created or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -52,10 +52,10 @@ Returns the window that was created or NULL on failure; call
   created in high-DPI mode if supported (>= SDL 2.0.1)
 
 [`SDL_WINDOW_SHOWN`](SDL_WINDOW_SHOWN) is ignored by
-[SDL_CreateWindow](SDL_CreateWindow)(). The [SDL_Window](SDL_Window) is
-implicitly shown if [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN) is not set.
+[SDL_CreateWindow](SDL_CreateWindow.md)(). The [SDL_Window](SDL_Window.md) is
+implicitly shown if [SDL_WINDOW_HIDDEN](SDL_WINDOW_HIDDEN.md) is not set.
 [`SDL_WINDOW_SHOWN`](SDL_WINDOW_SHOWN) may be queried later using
-[SDL_GetWindowFlags](SDL_GetWindowFlags)().
+[SDL_GetWindowFlags](SDL_GetWindowFlags.md)().
 
 On Apple's macOS, you **must** set the NSHighResolutionCapable Info.plist
 property to YES, otherwise you will not receive a High-DPI OpenGL canvas.
@@ -64,9 +64,9 @@ If the window is created with the
 [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) flag, its size in
 pixels may differ from its size in screen coordinates on platforms with
 high-DPI support (e.g. iOS and macOS). Use
-[SDL_GetWindowSize](SDL_GetWindowSize)() to query the client area's size in
-screen coordinates, and [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)()
-or [SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)() to query the
+[SDL_GetWindowSize](SDL_GetWindowSize.md)() to query the client area's size in
+screen coordinates, and [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize.md)()
+or [SDL_GetRendererOutputSize](SDL_GetRendererOutputSize.md)() to query the
 drawable size in pixels. Note that when this flag is set, the drawable size
 can vary after the window is created and should be queried after major
 window events such as when the window is resized or moved between displays.
@@ -77,19 +77,19 @@ still fail. Window size is actually limited to 16384 x 16384 for all
 platforms at window creation.
 
 If the window is created with any of the
-[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL) or
-[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) flags, then the corresponding
-LoadLibrary function ([SDL_GL_LoadLibrary](SDL_GL_LoadLibrary) or
-[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)) is called and the
+[SDL_WINDOW_OPENGL](SDL_WINDOW_OPENGL.md) or
+[SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN.md) flags, then the corresponding
+LoadLibrary function ([SDL_GL_LoadLibrary](SDL_GL_LoadLibrary.md) or
+[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary.md)) is called and the
 corresponding UnloadLibrary function is called by
-[SDL_DestroyWindow](SDL_DestroyWindow)().
+[SDL_DestroyWindow](SDL_DestroyWindow.md)().
 
-If [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN) is specified and there isn't a
-working Vulkan driver, [SDL_CreateWindow](SDL_CreateWindow)() will fail
-because [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() will fail.
+If [SDL_WINDOW_VULKAN](SDL_WINDOW_VULKAN.md) is specified and there isn't a
+working Vulkan driver, [SDL_CreateWindow](SDL_CreateWindow.md)() will fail
+because [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary.md)() will fail.
 
-If [SDL_WINDOW_METAL](SDL_WINDOW_METAL) is specified on an OS that does not
-support Metal, [SDL_CreateWindow](SDL_CreateWindow)() will fail.
+If [SDL_WINDOW_METAL](SDL_WINDOW_METAL.md) is specified on an OS that does not
+support Metal, [SDL_CreateWindow](SDL_CreateWindow.md)() will fail.
 
 On non-Apple devices, SDL requires you to either not link to the Vulkan
 loader or link to a dynamic library version. This limitation may be removed
@@ -101,10 +101,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
-* [SDL_DestroyWindow](SDL_DestroyWindow)
+* [SDL_CreateWindowFrom](SDL_CreateWindowFrom.md)
+* [SDL_DestroyWindow](SDL_DestroyWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

@@ -27,12 +27,11 @@ The data is allocated with a zero byte at the end (null terminated) for
 convenience. This extra byte is not included in the value reported via
 `datasize`.
 
-The data should be freed with [SDL_free](SDL_free)().
+The data should be freed with [SDL_free](SDL_free.md)().
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

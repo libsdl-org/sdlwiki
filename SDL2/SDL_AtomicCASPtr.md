@@ -20,7 +20,7 @@ SDL_bool SDL_AtomicCASPtr(void **a, void *oldval, void *newval);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the pointer was set, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the pointer was set, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Remarks
@@ -34,10 +34,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AtomicCAS](SDL_AtomicCAS)
-* [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
-* [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
+* [SDL_AtomicCAS](SDL_AtomicCAS.md)
+* [SDL_AtomicGetPtr](SDL_AtomicGetPtr.md)
+* [SDL_AtomicSetPtr](SDL_AtomicSetPtr.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

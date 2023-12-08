@@ -19,13 +19,12 @@ Uint32 SDL_GetWindowPixelFormat(SDL_Window * window);
 ## Return Value
 
 Returns the pixel format of the window on success or
-[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN.md) on failure; call
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

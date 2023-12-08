@@ -25,9 +25,9 @@ will fail.
 This will _abandon_ any data queued for sending that hasn't made it to the
 socket. If you need this data to arrive, you should wait for it to transmit
 before destroying the socket with
-[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)()
+[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)()
 or
-[SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)().
+[SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained.md)().
 Any data that has arrived from the remote end of the connection that hasn't
 been read yet is lost.
 
@@ -43,11 +43,10 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_CreateClient](SDLNet_CreateClient)
-* [SDLNet_AcceptClient](SDLNet_AcceptClient)
-* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
+* [SDLNet_CreateClient](SDLNet_CreateClient.md)
+* [SDLNet_AcceptClient](SDLNet_AcceptClient.md)
+* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)
+* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

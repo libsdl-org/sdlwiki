@@ -14,20 +14,20 @@ int SDL_RegisterApp(const char *name, Uint32 style, void *hInst);
 
 |               |                                                                                                                                                      |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **name**      | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app)" but this isn't guaranteed.                                |
+| **name**      | the window class name, in UTF-8 encoding. If NULL, SDL currently uses "[SDL_app](SDL_app.md)" but this isn't guaranteed.                                |
 | **style**     | the value to use in WNDCLASSEX::style. If `name` is NULL, SDL currently uses `(CS_BYTEALIGNCLIENT | CS_OWNDC)` regardless of what is specified here. |
 | **hInst**     | the HINSTANCE to use in WNDCLASSEX::hInstance. If zero, SDL will use `GetModuleHandle(NULL)` instead.                                                |
 
 ## Return Value
 
-Returns 0 on success, -1 on error. [SDL_GetError](SDL_GetError)() may have
+Returns 0 on success, -1 on error. [SDL_GetError](SDL_GetError.md)() may have
 details.
 
 ## Remarks
 
 This can be called to set the application window class at startup. It is
 safe to call this multiple times, as long as every call is eventually
-paired with a call to [SDL_UnregisterApp](SDL_UnregisterApp), but a second
+paired with a call to [SDL_UnregisterApp](SDL_UnregisterApp.md), but a second
 registration attempt while a previous registration is still active will be
 ignored, other than to increment a counter.
 
@@ -39,5 +39,4 @@ will call it when initializing the video subsystem.
 This function is available since SDL 2.0.2.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

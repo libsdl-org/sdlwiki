@@ -27,5 +27,4 @@ If HarfBuzz is not available, the version reported is 0.0.0.
 This function is available since SDL_ttf 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

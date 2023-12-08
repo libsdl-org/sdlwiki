@@ -19,7 +19,7 @@ SDL_Renderer * SDL_GetRenderer(SDL_Window * window);
 ## Return Value
 
 Returns the rendering context on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,8 +18,8 @@ SDL_bool SDL_ScreenKeyboardShown(SDL_Window *window);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is shown or
-[SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if screen keyboard is shown or
+[SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
+* [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

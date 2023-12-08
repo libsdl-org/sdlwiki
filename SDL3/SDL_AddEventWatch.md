@@ -14,13 +14,13 @@ int SDL_AddEventWatch(SDL_EventFilter filter, void *userdata);
 
 |                  |                                                                               |
 | ---------------- | ----------------------------------------------------------------------------- |
-| **filter**       | an [SDL_EventFilter](SDL_EventFilter) function to call when an event happens. |
+| **filter**       | an [SDL_EventFilter](SDL_EventFilter.md) function to call when an event happens. |
 | **userdata**     | a pointer that is passed to `filter`                                          |
 
 ## Return Value
 
 Returns 0 on success, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -35,10 +35,10 @@ the internal queue and be delivered to the watch callback immediately, and
 arrive at the next event poll.
 
 Note: the callback is called for events posted by the user through
-[SDL_PushEvent](SDL_PushEvent)(), but not for disabled events, nor for
+[SDL_PushEvent](SDL_PushEvent.md)(), but not for disabled events, nor for
 events by a filter callback set with
-[SDL_SetEventFilter](SDL_SetEventFilter)(), nor for events posted by the
-user through [SDL_PeepEvents](SDL_PeepEvents)().
+[SDL_SetEventFilter](SDL_SetEventFilter.md)(), nor for events posted by the
+user through [SDL_PeepEvents](SDL_PeepEvents.md)().
 
 ## Version
 
@@ -46,10 +46,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DelEventWatch](SDL_DelEventWatch)
-* [SDL_SetEventFilter](SDL_SetEventFilter)
+* [SDL_DelEventWatch](SDL_DelEventWatch.md)
+* [SDL_SetEventFilter](SDL_SetEventFilter.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

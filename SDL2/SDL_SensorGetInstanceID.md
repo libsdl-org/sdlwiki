@@ -14,7 +14,7 @@ SDL_SensorID SDL_SensorGetInstanceID(SDL_Sensor *sensor);
 
 |                |                                                |
 | -------------- | ---------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to inspect |
+| **sensor**     | The [SDL_Sensor](SDL_Sensor.md) object to inspect |
 
 ## Return Value
 
@@ -25,5 +25,4 @@ Returns the sensor instance ID, or -1 if `sensor` is NULL.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

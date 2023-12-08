@@ -14,7 +14,7 @@ int SDL_hid_set_nonblocking(SDL_hid_device *dev, int nonblock);
 
 |                  |                                                                                           |
 | ---------------- | ----------------------------------------------------------------------------------------- |
-| **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open)().                             |
+| **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open.md)().                             |
 | **nonblock**     | enable or not the nonblocking reads - 1 to enable nonblocking - 0 to disable nonblocking. |
 
 ## Return Value
@@ -23,9 +23,9 @@ Returns 0 on success and -1 on error.
 
 ## Remarks
 
-In non-blocking mode calls to [SDL_hid_read](SDL_hid_read)() will return
+In non-blocking mode calls to [SDL_hid_read](SDL_hid_read.md)() will return
 immediately with a value of 0 if there is no data to be read. In blocking
-mode, [SDL_hid_read](SDL_hid_read)() will wait (block) until there is data
+mode, [SDL_hid_read](SDL_hid_read.md)() will wait (block) until there is data
 to read before returning.
 
 Nonblocking can be turned on and off at any time.
@@ -35,5 +35,4 @@ Nonblocking can be turned on and off at any time.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

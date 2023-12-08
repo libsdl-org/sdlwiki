@@ -27,7 +27,7 @@ be played.
 ## Remarks
 
 This will start the new sound playing, much like
-[Mix_PlayChannel](Mix_PlayChannel)() will, but will start the sound playing
+[Mix_PlayChannel](Mix_PlayChannel.md)() will, but will start the sound playing
 at silence and fade in to its normal volume over the specified number of
 milliseconds.
 
@@ -41,14 +41,14 @@ If `loops` is greater than zero, loop the sound that many times. If `loops`
 is -1, loop "infinitely" (~65000 times).
 
 A fading channel will change it's volume progressively, as if
-[Mix_Volume](Mix_Volume)() was called on it (which is to say: you probably
-shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
+[Mix_Volume](Mix_Volume.md)() was called on it (which is to say: you probably
+shouldn't call [Mix_Volume](Mix_Volume.md)() on a fading channel).
 
 Note that before SDL_mixer 2.6.0, this function was a macro that called
-[Mix_FadeInChannelTimed](Mix_FadeInChannelTimed)() with a fourth parameter
+[Mix_FadeInChannelTimed](Mix_FadeInChannelTimed.md)() with a fourth parameter
 ("ticks") of -1. This function still does the same thing, but promotes it
 to a proper API function. Older binaries linked against a newer SDL_mixer
-will still call [Mix_FadeInChannelTimed](Mix_FadeInChannelTimed) directly,
+will still call [Mix_FadeInChannelTimed](Mix_FadeInChannelTimed.md) directly,
 as they are using the macro, which was available since the dawn of time.
 
 ## Version
@@ -57,5 +57,4 @@ This function is available since SDL_mixer 2.6.0 (and as a macro since
 2.0.0).
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

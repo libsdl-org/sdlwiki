@@ -28,11 +28,11 @@ This will begin a channel fading from its current volume to silence over
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[Mix_ChannelFinished](Mix_ChannelFinished)() once the halt occurs.
+[Mix_ChannelFinished](Mix_ChannelFinished.md)() once the halt occurs.
 
 A fading channel will change it's volume progressively, as if
-[Mix_Volume](Mix_Volume)() was called on it (which is to say: you probably
-shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
+[Mix_Volume](Mix_Volume.md)() was called on it (which is to say: you probably
+shouldn't call [Mix_Volume](Mix_Volume.md)() on a fading channel).
 
 Note that this function does not block for the number of milliseconds
 requested; it just schedules the chunk to fade and notes the time for the
@@ -43,5 +43,4 @@ mixer to manage later, and returns immediately.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

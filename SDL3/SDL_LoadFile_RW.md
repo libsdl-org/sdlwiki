@@ -14,9 +14,9 @@ void* SDL_LoadFile_RW(SDL_RWops *src, size_t *datasize, SDL_bool freesrc);
 
 |                  |                                                                                                                     |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **src**          | the [SDL_RWops](SDL_RWops) to read all available data from                                                          |
+| **src**          | the [SDL_RWops](SDL_RWops.md) to read all available data from                                                          |
 | **datasize**     | if not NULL, will store the number of bytes read                                                                    |
-| **freesrc**      | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
+| **freesrc**      | if [SDL_TRUE](SDL_TRUE.md), calls [SDL_RWclose](SDL_RWclose.md)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
@@ -28,12 +28,11 @@ The data is allocated with a zero byte at the end (null terminated) for
 convenience. This extra byte is not included in the value reported via
 `datasize`.
 
-The data should be freed with [SDL_free](SDL_free)().
+The data should be freed with [SDL_free](SDL_free.md)().
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

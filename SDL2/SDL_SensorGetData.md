@@ -14,7 +14,7 @@ int SDL_SensorGetData(SDL_Sensor *sensor, float *data, int num_values);
 
 |                    |                                                |
 | ------------------ | ---------------------------------------------- |
-| **sensor**         | The [SDL_Sensor](SDL_Sensor) object to query   |
+| **sensor**         | The [SDL_Sensor](SDL_Sensor.md) object to query   |
 | **data**           | A pointer filled with the current sensor state |
 | **num_values**     | The number of values to write to data          |
 
@@ -31,5 +31,4 @@ The number of values and interpretation of the data is sensor dependent.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

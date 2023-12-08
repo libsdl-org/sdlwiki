@@ -14,12 +14,12 @@ SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id);
 
 |            |                                                    |
 | ---------- | -------------------------------------------------- |
-| **id**     | an [SDL_SystemCursor](SDL_SystemCursor) enum value |
+| **id**     | an [SDL_SystemCursor](SDL_SystemCursor.md) enum value |
 
 ## Return Value
 
 Returns a cursor on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_FreeCursor](SDL_FreeCursor)
+* [SDL_FreeCursor](SDL_FreeCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

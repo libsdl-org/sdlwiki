@@ -12,7 +12,7 @@ SDL_AssertionHandler SDL_GetDefaultAssertionHandler(void);
 
 ## Return Value
 
-Returns the default [SDL_AssertionHandler](SDL_AssertionHandler) that is
+Returns the default [SDL_AssertionHandler](SDL_AssertionHandler.md) that is
 called when an assert triggers.
 
 ## Remarks
@@ -20,7 +20,7 @@ called when an assert triggers.
 This returns the function pointer that is called by default when an
 assertion is triggered. This is an internal function provided by SDL, that
 is used for assertions when
-[SDL_SetAssertionHandler](SDL_SetAssertionHandler)() hasn't been used to
+[SDL_SetAssertionHandler](SDL_SetAssertionHandler.md)() hasn't been used to
 provide a different function.
 
 ## Version
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
+* [SDL_GetAssertionHandler](SDL_GetAssertionHandler.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

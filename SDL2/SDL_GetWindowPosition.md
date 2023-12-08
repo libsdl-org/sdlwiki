@@ -30,8 +30,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowPosition](SDL_SetWindowPosition)
+* [SDL_SetWindowPosition](SDL_SetWindowPosition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

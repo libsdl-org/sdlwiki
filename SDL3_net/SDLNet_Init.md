@@ -20,7 +20,7 @@ This must be successfully called once before (almost) any other SDL_net
 function can be used.
 
 It is safe to call this multiple times; the library will only initialize
-once, and won't deinitialize until [SDLNet_Quit](SDLNet_Quit)() has been
+once, and won't deinitialize until [SDLNet_Quit](SDLNet_Quit.md)() has been
 called a matching number of times. Extra attempts to init report success.
 
 ## Thread Safety
@@ -33,8 +33,7 @@ This function is available since SDL_net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_Quit](SDLNet_Quit)
+* [SDLNet_Quit](SDLNet_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

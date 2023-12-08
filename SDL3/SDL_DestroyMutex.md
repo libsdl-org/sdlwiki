@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_DestroyMutex
 
-Destroy a mutex created with [SDL_CreateMutex](SDL_CreateMutex)().
+Destroy a mutex created with [SDL_CreateMutex](SDL_CreateMutex.md)().
 
 ## Syntax
 
@@ -30,16 +30,14 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
+<<Include([SDL_CreateMutex](SDL_CreateMutex.md), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
 ## Related Functions
 
-* [SDL_CreateMutex](SDL_CreateMutex)
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_TryLockMutex](SDL_TryLockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
+* [SDL_CreateMutex](SDL_CreateMutex.md)
+* [SDL_LockMutex](SDL_LockMutex.md)
+* [SDL_TryLockMutex](SDL_TryLockMutex.md)
+* [SDL_UnlockMutex](SDL_UnlockMutex.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

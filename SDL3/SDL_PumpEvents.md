@@ -18,15 +18,15 @@ This function updates the event queue and internal input device state.
 video subsystem, and for extra safety, you should consider only doing those
 things on the main thread in any case.
 
-[SDL_PumpEvents](SDL_PumpEvents)() gathers all the pending input
+[SDL_PumpEvents](SDL_PumpEvents.md)() gathers all the pending input
 information from devices and places it in the event queue. Without calls to
-[SDL_PumpEvents](SDL_PumpEvents)() no events would ever be placed on the
-queue. Often the need for calls to [SDL_PumpEvents](SDL_PumpEvents)() is
-hidden from the user since [SDL_PollEvent](SDL_PollEvent)() and
-[SDL_WaitEvent](SDL_WaitEvent)() implicitly call
-[SDL_PumpEvents](SDL_PumpEvents)(). However, if you are not polling or
+[SDL_PumpEvents](SDL_PumpEvents.md)() no events would ever be placed on the
+queue. Often the need for calls to [SDL_PumpEvents](SDL_PumpEvents.md)() is
+hidden from the user since [SDL_PollEvent](SDL_PollEvent.md)() and
+[SDL_WaitEvent](SDL_WaitEvent.md)() implicitly call
+[SDL_PumpEvents](SDL_PumpEvents.md)(). However, if you are not polling or
 waiting for events (e.g. you are filtering them), then you must call
-[SDL_PumpEvents](SDL_PumpEvents)() to force an event queue update.
+[SDL_PumpEvents](SDL_PumpEvents.md)() to force an event queue update.
 
 ## Version
 
@@ -34,10 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_WaitEvent](SDL_WaitEvent)
+* [SDL_PollEvent](SDL_PollEvent.md)
+* [SDL_WaitEvent](SDL_WaitEvent.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

@@ -21,8 +21,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickEventState](SDL_JoystickEventState)
+* [SDL_JoystickEventState](SDL_JoystickEventState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

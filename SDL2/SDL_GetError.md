@@ -14,20 +14,20 @@ const char* SDL_GetError(void);
 
 Returns a message with information about the specific error that occurred,
 or an empty string if there hasn't been an error message set since the last
-call to [SDL_ClearError](SDL_ClearError)(). The message is only applicable
+call to [SDL_ClearError](SDL_ClearError.md)(). The message is only applicable
 when an SDL function has signaled an error. You must check the return
 values of SDL function calls to determine when to appropriately call
-[SDL_GetError](SDL_GetError)().
+[SDL_GetError](SDL_GetError.md)().
 
 ## Remarks
 
 It is possible for multiple errors to occur before calling
-[SDL_GetError](SDL_GetError)(). Only the last error is returned.
+[SDL_GetError](SDL_GetError.md)(). Only the last error is returned.
 
 The message is only applicable when an SDL function has signaled an error.
 You must check the return values of SDL function calls to determine when to
-appropriately call [SDL_GetError](SDL_GetError)(). You should *not* use the
-results of [SDL_GetError](SDL_GetError)() to decide if an error has
+appropriately call [SDL_GetError](SDL_GetError.md)(). You should *not* use the
+results of [SDL_GetError](SDL_GetError.md)() to decide if an error has
 occurred! Sometimes SDL will set an error string even when reporting
 success.
 
@@ -47,10 +47,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_ClearError](SDL_ClearError)
-* [SDL_SetError](SDL_SetError)
+* [SDL_ClearError](SDL_ClearError.md)
+* [SDL_SetError](SDL_SetError.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryError](CategoryError.md)

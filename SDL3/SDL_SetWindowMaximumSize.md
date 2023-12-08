@@ -21,7 +21,7 @@ int SDL_SetWindowMaximumSize(SDL_Window *window, int max_w, int max_h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,11 +29,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
-* [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
+* [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize.md)
+* [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

@@ -15,12 +15,12 @@ Sint16 SDL_GetGamepadAxis(SDL_Gamepad *gamepad, SDL_GamepadAxis axis);
 |                 |                                                                      |
 | --------------- | -------------------------------------------------------------------- |
 | **gamepad**     | a gamepad                                                            |
-| **axis**        | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
+| **axis**        | an axis index (one of the [SDL_GamepadAxis](SDL_GamepadAxis.md) values) |
 
 ## Return Value
 
 Returns axis state (including 0) on success or 0 (also) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -35,8 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadButton](SDL_GetGamepadButton)
+* [SDL_GetGamepadButton](SDL_GetGamepadButton.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

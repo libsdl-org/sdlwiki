@@ -27,20 +27,20 @@ with [`SDL_TEXTUREACCESS_STREAMING`](SDL_TEXTUREACCESS_STREAMING)
 
 ## Remarks
 
-Besides providing an [SDL_Surface](SDL_Surface) instead of raw pixel data,
-this function operates like [SDL_LockTexture](SDL_LockTexture).
+Besides providing an [SDL_Surface](SDL_Surface.md) instead of raw pixel data,
+this function operates like [SDL_LockTexture](SDL_LockTexture.md).
 
 As an optimization, the pixels made available for editing don't necessarily
 contain the old texture data. This is a write-only operation, and if you
 need to keep a copy of the texture data you should do that at the
 application level.
 
-You must use [SDL_UnlockTexture](SDL_UnlockTexture)() to unlock the pixels
+You must use [SDL_UnlockTexture](SDL_UnlockTexture.md)() to unlock the pixels
 and apply any changes.
 
 The returned surface is freed internally after calling
-[SDL_UnlockTexture](SDL_UnlockTexture)() or
-[SDL_DestroyTexture](SDL_DestroyTexture)(). The caller should not free it.
+[SDL_UnlockTexture](SDL_UnlockTexture.md)() or
+[SDL_DestroyTexture](SDL_DestroyTexture.md)(). The caller should not free it.
 
 ## Version
 
@@ -48,9 +48,8 @@ This function is available since SDL 2.0.12.
 
 ## Related Functions
 
-* [SDL_LockTexture](SDL_LockTexture)
-* [SDL_UnlockTexture](SDL_UnlockTexture)
+* [SDL_LockTexture](SDL_LockTexture.md)
+* [SDL_UnlockTexture](SDL_UnlockTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetGamepadBindings
 
-Get the SDL joystick layer bindings for a gamepad 
+Get the SDL joystick layer bindings for a gamepad
 
 ## Syntax
 
@@ -20,13 +20,12 @@ extern DECLSPEC SDL_GamepadBinding **SDLCALL SDL_GetGamepadBindings(SDL_Gamepad 
 ## Return Value
 
 Returns a NULL terminated array of pointers to bindings which should be
-freed with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+freed with [SDL_free](SDL_free.md)(), or NULL on error; call
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

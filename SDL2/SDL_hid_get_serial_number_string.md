@@ -14,7 +14,7 @@ int SDL_hid_get_serial_number_string(SDL_hid_device *dev, wchar_t *string, size_
 
 |                |                                                               |
 | -------------- | ------------------------------------------------------------- |
-| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 | **string**     | A wide string buffer to put the data into.                    |
 | **maxlen**     | The length of the buffer in multiples of wchar_t.             |
 
@@ -27,5 +27,4 @@ Returns 0 on success and -1 on error.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

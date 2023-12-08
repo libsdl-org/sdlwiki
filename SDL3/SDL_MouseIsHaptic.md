@@ -16,8 +16,8 @@ int SDL_MouseIsHaptic(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic or
-[SDL_FALSE](SDL_FALSE) if it isn't.
+Returns [SDL_TRUE](SDL_TRUE.md) if the mouse is haptic or
+[SDL_FALSE](SDL_FALSE.md) if it isn't.
 
 ## Version
 
@@ -25,9 +25,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticOpenFromMouse](SDL_HapticOpenFromMouse)
+* [SDL_HapticOpenFromMouse](SDL_HapticOpenFromMouse.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

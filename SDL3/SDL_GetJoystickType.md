@@ -14,16 +14,15 @@ SDL_JoystickType SDL_GetJoystickType(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_OpenJoystick](SDL_OpenJoystick.md)() |
 
 ## Return Value
 
-Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
+Returns the [SDL_JoystickType](SDL_JoystickType.md) of the selected joystick.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,17 +14,16 @@ int SDL_hid_close(SDL_hid_device *dev);
 
 |             |                                                               |
 | ----------- | ------------------------------------------------------------- |
-| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

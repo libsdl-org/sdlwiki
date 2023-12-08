@@ -19,9 +19,9 @@ void Mix_HookMusic(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len)
 
 ## Remarks
 
-This works something like [Mix_SetPostMix](Mix_SetPostMix)(), but it has
+This works something like [Mix_SetPostMix](Mix_SetPostMix.md)(), but it has
 some crucial differences. Note that an app can use this _and_
-[Mix_SetPostMix](Mix_SetPostMix)() at the same time. This allows an app to
+[Mix_SetPostMix](Mix_SetPostMix.md)() at the same time. This allows an app to
 replace the built-in music playback, either with it's own music decoder or
 with some sort of procedurally-generated audio output.
 
@@ -59,8 +59,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_SetPostMix](Mix_SetPostMix)
+* [Mix_SetPostMix](Mix_SetPostMix.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

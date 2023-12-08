@@ -16,7 +16,7 @@ void SDL_SetWindowBordered(SDL_Window * window,
 |                  |                                                                             |
 | ---------------- | --------------------------------------------------------------------------- |
 | **window**       | the window of which to change the border state                              |
-| **bordered**     | [SDL_FALSE](SDL_FALSE) to remove border, [SDL_TRUE](SDL_TRUE) to add border |
+| **bordered**     | [SDL_FALSE](SDL_FALSE.md) to remove border, [SDL_TRUE](SDL_TRUE.md) to add border |
 
 ## Remarks
 
@@ -33,8 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+* [SDL_GetWindowFlags](SDL_GetWindowFlags.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

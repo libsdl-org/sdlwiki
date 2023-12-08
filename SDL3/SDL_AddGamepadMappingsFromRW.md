@@ -15,12 +15,12 @@ int SDL_AddGamepadMappingsFromRW(SDL_RWops *src, SDL_bool freesrc);
 |                 |                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **src**         | the data stream for the mappings to be added                                                                        |
-| **freesrc**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
+| **freesrc**     | if [SDL_TRUE](SDL_TRUE.md), calls [SDL_RWclose](SDL_RWclose.md)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
 Returns the number of mappings added or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -44,10 +44,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-* [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
-* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+* [SDL_AddGamepadMapping](SDL_AddGamepadMapping.md)
+* [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile.md)
+* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

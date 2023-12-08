@@ -32,15 +32,15 @@ returns the new surface, or NULL if there was an error.
 
 This will not word-wrap the string; you'll get a surface with a single line
 of text, as long as the string requires. You can use
-[TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped)() instead if you
+[TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped.md)() instead if you
 need to wrap the output to multiple lines.
 
 This will not wrap on newline characters.
 
 You can render at other quality levels with
-[TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid),
-[TTF_RenderUTF8_Shaded](TTF_RenderUTF8_Shaded), and
-[TTF_RenderUTF8_Blended](TTF_RenderUTF8_Blended).
+[TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid.md),
+[TTF_RenderUTF8_Shaded](TTF_RenderUTF8_Shaded.md), and
+[TTF_RenderUTF8_Blended](TTF_RenderUTF8_Blended.md).
 
 ## Version
 
@@ -48,8 +48,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD)
+* [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

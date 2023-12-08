@@ -21,13 +21,13 @@ int SDL_SetRenderTarget(SDL_Renderer *renderer,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Before using this function, you should check the
 [`SDL_RENDERER_TARGETTEXTURE`](SDL_RENDERER_TARGETTEXTURE) bit in the flags
-of [SDL_RendererInfo](SDL_RendererInfo) to see if render targets are
+of [SDL_RendererInfo](SDL_RendererInfo.md) to see if render targets are
 supported.
 
 The default render target is the window for which the renderer was created.
@@ -40,8 +40,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderTarget](SDL_GetRenderTarget)
+* [SDL_GetRenderTarget](SDL_GetRenderTarget.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -35,11 +35,11 @@ This function will return -1 if an explicit list of devices can't be
 determined. Returning -1 is not an error. For example, if SDL is set up to
 talk to a remote audio server, it can't list every one available on the
 Internet, but it will still allow a specific host to be specified in
-[SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
+[SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)().
 
 In many common cases, when this function returns a value <= 0, it can still
 successfully open the default device (NULL for first argument of
-[SDL_OpenAudioDevice](SDL_OpenAudioDevice)()).
+[SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)()).
 
 This function may trigger a complete redetect of available hardware. It
 should not be called for each iteration of a loop, but rather once at the
@@ -69,10 +69,8 @@ for (i = 0; i < count; ++i) {
 
 ## Related Functions
 
-* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName.md)
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

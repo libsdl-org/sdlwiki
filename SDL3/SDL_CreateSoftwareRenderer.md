@@ -14,21 +14,21 @@ SDL_Renderer* SDL_CreateSoftwareRenderer(SDL_Surface *surface);
 
 |                 |                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure representing the surface where rendering is done |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure representing the surface where rendering is done |
 
 ## Return Value
 
 Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-Two other API which can be used to create [SDL_Renderer](SDL_Renderer):
-[SDL_CreateRenderer](SDL_CreateRenderer)() and
-[SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)(). These can
+Two other API which can be used to create [SDL_Renderer](SDL_Renderer.md):
+[SDL_CreateRenderer](SDL_CreateRenderer.md)() and
+[SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer.md)(). These can
 _also_ create a software renderer, but they are intended to be used with an
-[SDL_Window](SDL_Window) as the final destination and not an
-[SDL_Surface](SDL_Surface).
+[SDL_Window](SDL_Window.md) as the final destination and not an
+[SDL_Surface](SDL_Surface.md).
 
 ## Version
 
@@ -136,11 +136,9 @@ main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
+* [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer.md)
+* [SDL_DestroyRenderer](SDL_DestroyRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

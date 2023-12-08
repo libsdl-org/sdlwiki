@@ -44,12 +44,12 @@ These are the most important new features in SDL 2.0:
 - APIs for building robust GUI toolkits on top of SDL
 - Basic Drag'n'Drop support
 - Proper unicode input and IME support
-- [A really powerful assert macro](CategoryAssertions)
+- [A really powerful assert macro](CategoryAssertions.md)
 - zlib license instead of LGPL.
 - Lots of old annoyances from 1.2 are gone
 - Many other things!
 
-The [Introduction](Introduction) page has a more extensive listing about what features SDL offers in overall (including old 1.2 features).
+The [Introduction](Introduction.md) page has a more extensive listing about what features SDL offers in overall (including old 1.2 features).
 
 ### Looking for more information
 
@@ -68,7 +68,7 @@ There is no compatibility layer built in to SDL2. If an API changed for 2.0, we'
 
 There's no SDL_main! Well, okay, there _is_, and it now does what it was always meant to: be a small piece of code that hides the difference between `main()` and `WinMain()` on Windows. There's no initialization code in it, and it's completely optional. This means you can use SDL without it taking over your mainline, which is nice for plugins that use SDL, or scripting languages with an SDL module. All the stuff you'd want the 1.2 `SDL_main` for is now in `SDL_Init()` where it belongs.
 
-There's no SDL parachute anymore. What 1.2 called `SDL_INIT_NOPARACHUTE` is a default and only state now. This would cause problems if something other than the main thread crashed, and it would interfere with apps setting up their own signal/exception handlers. On the downside, some platforms don't clean up fullscreen video well when crashing. You should install your own crash handler, or call [SDL_Quit](SDL_Quit)() in an `atexit()` function or whatnot if this is a concern. Note that on Unix platforms, SDL still catches `SIGINT` and maps it to an [SDL_QUIT](SDL_EventType) event.
+There's no SDL parachute anymore. What 1.2 called `SDL_INIT_NOPARACHUTE` is a default and only state now. This would cause problems if something other than the main thread crashed, and it would interfere with apps setting up their own signal/exception handlers. On the downside, some platforms don't clean up fullscreen video well when crashing. You should install your own crash handler, or call [SDL_Quit](SDL_Quit.md)() in an `atexit()` function or whatnot if this is a concern. Note that on Unix platforms, SDL still catches `SIGINT` and maps it to an [SDL_QUIT](SDL_EventType.md) event.
 
 
 ### Video
@@ -104,7 +104,7 @@ SDL_Window *screen = SDL_CreateWindow("My Game Window",
                           SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
 ```
 
-You can see that this maps pretty closely to 1.2. The difference is that you can have multiple windows (if you want), and you can control them more. `SDL_WM_SetCaption()` is gone, because we want to allow each window to have its own title (you can change it later with [SDL_SetWindowTitle](SDL_SetWindowTitle)()), and we want to let you specify a window position (or, in this case, use `SDL_WINDOWPOS_UNDEFINED` since we don't care where the system places it. `SDL_WINDOWPOS_CENTERED` is also a good choice).
+You can see that this maps pretty closely to 1.2. The difference is that you can have multiple windows (if you want), and you can control them more. `SDL_WM_SetCaption()` is gone, because we want to allow each window to have its own title (you can change it later with [SDL_SetWindowTitle](SDL_SetWindowTitle.md)()), and we want to let you specify a window position (or, in this case, use `SDL_WINDOWPOS_UNDEFINED` since we don't care where the system places it. `SDL_WINDOWPOS_CENTERED` is also a good choice).
 
 Extra credit for letting users specify a display for the window: SDL2 also allows you to manage systems with multiple monitors. Don't worry about that right now, though.
 
@@ -112,9 +112,9 @@ So now that your window is back on the screen, let's talk strategy. SDL2 still h
 
 The setup looks like this.
 
-`SDL_SetVideoMode()` becomes [SDL_CreateWindow](SDL_CreateWindow)(), as we discussed before. But what do we put for the resolution? If your game was hardcoded to 640x480, for example, you probably were running into monitors that couldn't do that fullscreen resolution at this point, and in windowed mode, your game probably looked like an animated postage stamp on really high-end monitors. There's a better solution in SDL2.
+`SDL_SetVideoMode()` becomes [SDL_CreateWindow](SDL_CreateWindow.md)(), as we discussed before. But what do we put for the resolution? If your game was hardcoded to 640x480, for example, you probably were running into monitors that couldn't do that fullscreen resolution at this point, and in windowed mode, your game probably looked like an animated postage stamp on really high-end monitors. There's a better solution in SDL2.
 
-We don't call `SDL_ListModes()` anymore. There's an equivalent in SDL2 (call [SDL_GetDisplayMode](SDL_GetDisplayMode)() in a loop, [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)() times), but instead we're going to use a new feature called "fullscreen desktop," which tells SDL "give me the whole screen and don't change the resolution." For our hypothetical 640x480 game, it might look like this:
+We don't call `SDL_ListModes()` anymore. There's an equivalent in SDL2 (call [SDL_GetDisplayMode](SDL_GetDisplayMode.md)() in a loop, [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes.md)() times), but instead we're going to use a new feature called "fullscreen desktop," which tells SDL "give me the whole screen and don't change the resolution." For our hypothetical 640x480 game, it might look like this:
 
 ```c
 SDL_Window *sdlWindow = SDL_CreateWindow(title,
@@ -132,9 +132,9 @@ Now we need a rendering context.
 SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, -1, 0);
 ```
 
-A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, OpenGL ES, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can use `SDL_RENDERER_PRESENTVSYNC` instead of zero for the third parameter. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.
+A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, OpenGL ES, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can use `SDL_RENDERER_PRESENTVSYNC` instead of zero for the third parameter. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer.md)() decides it wants to use OpenGL, it'll update the window appropriately for you.
 
-Now that you understand how this works, you can also do this all in one step with [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)(), if you don't want anything fancy:
+Now that you understand how this works, you can also do this all in one step with [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer.md)(), if you don't want anything fancy:
 
 ```c
 SDL_Window *sdlWindow;
@@ -150,7 +150,7 @@ SDL_RenderClear(sdlRenderer);
 SDL_RenderPresent(sdlRenderer);
 ```
 
-This works like you might think; draw in black (r,g,b all zero, alpha full), clear the whole window, put the cleared window on the screen. That's right, if you've been using `SDL_UpdateRect()` or `SDL_Flip()` to get your bits to the screen, the render API uses [SDL_RenderPresent](SDL_RenderPresent)().
+This works like you might think; draw in black (r,g,b all zero, alpha full), clear the whole window, put the cleared window on the screen. That's right, if you've been using `SDL_UpdateRect()` or `SDL_Flip()` to get your bits to the screen, the render API uses [SDL_RenderPresent](SDL_RenderPresent.md)().
 
 One more general thing to set up here. Since we're using `SDL_WINDOW_FULLSCREEN_DESKTOP`, we don't actually _know_ how much screen we've got to draw to. Fortunately, we don't have to know. One of the nice things about 1.2 is that you could say "I want a 640x480 window and I don't care how you get it done," even if getting it done meant centering the window in a larger resolution on behalf of your application.
 
@@ -181,7 +181,7 @@ sdlTexture = SDL_CreateTexture(sdlRenderer,
 
 This represents a texture on the GPU. The gameplan is to finish each frame by uploading pixels to this texture, drawing the texture to the window, and flipping this drawing onto the screen. `SDL_TEXTUREACCESS_STREAMING` tells SDL that this texture's contents are going to change frequently.
 
-Before you probably had an [SDL_Surface](SDL_Surface) for the screen that your app drew into, then called `SDL_Flip()` to put it to the screen. Now you can create an [SDL_Surface](SDL_Surface) that is always in RAM instead of using the one you would have gotten from `SDL_SetVideoMode()`, or just `malloc()` a block of pixels to write into. Ideally you write to a buffer of RGBA pixels, but if you need to do a conversion, that's okay too.
+Before you probably had an [SDL_Surface](SDL_Surface.md) for the screen that your app drew into, then called `SDL_Flip()` to put it to the screen. Now you can create an [SDL_Surface](SDL_Surface.md) that is always in RAM instead of using the one you would have gotten from `SDL_SetVideoMode()`, or just `malloc()` a block of pixels to write into. Ideally you write to a buffer of RGBA pixels, but if you need to do a conversion, that's okay too.
 
 ```c
 extern Uint32 *myPixels;  // maybe this is a surface->pixels, or a malloc()'d buffer, or whatever.
@@ -203,12 +203,12 @@ SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 ```
 
-That's all. [SDL_RenderClear](SDL_RenderClear)() wipes out the existing video framebuffer (in case, say, the Steam Overlay wrote over it last frame), [SDL_RenderCopy](SDL_RenderCopy)() moves the texture's contents to the video framebuffer (and thanks to [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)(), it will be scaled/centered as if the monitor was 640x480), and [SDL_RenderPresent](SDL_RenderPresent)() puts it on the screen.
+That's all. [SDL_RenderClear](SDL_RenderClear.md)() wipes out the existing video framebuffer (in case, say, the Steam Overlay wrote over it last frame), [SDL_RenderCopy](SDL_RenderCopy.md)() moves the texture's contents to the video framebuffer (and thanks to [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize.md)(), it will be scaled/centered as if the monitor was 640x480), and [SDL_RenderPresent](SDL_RenderPresent.md)() puts it on the screen.
 
 
 #### If your game wants to blit surfaces to the screen
 
-This scenario has your SDL 1.2 game loading a bunch of graphics from disk into a bunch of [SDL_Surfaces](SDL_Surface), possibly trying to get them into video RAM with `SDL_HWSURFACE`. You load these once, and you blit them over and over to the framebuffer as necessary, but otherwise they never change. A simple 2D platformer might do this. If you tend to think of your surfaces as "sprites," and not buffers of pixels, then this is probably you.
+This scenario has your SDL 1.2 game loading a bunch of graphics from disk into a bunch of [SDL_Surfaces](SDL_Surface.md), possibly trying to get them into video RAM with `SDL_HWSURFACE`. You load these once, and you blit them over and over to the framebuffer as necessary, but otherwise they never change. A simple 2D platformer might do this. If you tend to think of your surfaces as "sprites," and not buffers of pixels, then this is probably you.
 
 You can build individual textures (surfaces that live in GPU memory) like we did for that one big texture:
 
@@ -225,16 +225,16 @@ Which does what you'd expect. We use `SDL_TEXTUREACCESS_STATIC`, because we're g
 sdlTexture = SDL_CreateTextureFromSurface(sdlRenderer, mySurface);
 ```
 
-Use this, and you load your [SDL_Surface](SDL_Surface) as usual, but then at the end you make a texture out of it. Once you have an [SDL_Texture](SDL_Texture), you can free the original surface.
+Use this, and you load your [SDL_Surface](SDL_Surface.md) as usual, but then at the end you make a texture out of it. Once you have an [SDL_Texture](SDL_Texture.md), you can free the original surface.
 
-At this point, your 1.2 game had a bunch of [SDL_Surfaces](SDL_Surface), which it would [SDL_BlitSurface](SDL_BlitSurface)() to the screen surface to compose the final framebuffer, and eventually `SDL_Flip()` to the screen. For SDL 2.0, you have a bunch of [SDL_Textures](SDL_Texture), that you will [SDL_RenderCopy](SDL_RenderCopy)() to your Renderer to compose the final framebuffer, and eventually [SDL_RenderPresent](SDL_RenderPresent)() to the screen. It's that simple. If these textures never need modification, you might find your framerate has just gone through the roof, too.
+At this point, your 1.2 game had a bunch of [SDL_Surfaces](SDL_Surface.md), which it would [SDL_BlitSurface](SDL_BlitSurface.md)() to the screen surface to compose the final framebuffer, and eventually `SDL_Flip()` to the screen. For SDL 2.0, you have a bunch of [SDL_Textures](SDL_Texture.md), that you will [SDL_RenderCopy](SDL_RenderCopy.md)() to your Renderer to compose the final framebuffer, and eventually [SDL_RenderPresent](SDL_RenderPresent.md)() to the screen. It's that simple. If these textures never need modification, you might find your framerate has just gone through the roof, too.
 
 
 #### If your game wants to do both
 
 Things get slightly more complicated if you want to blit surfaces _and_ modify individual pixels in the framebuffer. Round trips--reading data back from textures--can be painfully expensive; generally you want to be pushing data in one direction always. You are probably best off, in this case, keeping everything in software until the final push to the screen, so we'll combine the two previous techniques.
 
-The good news: the 1.2 [SDL_Surface](SDL_Surface) API mostly still exists. So change your screen surface from this:
+The good news: the 1.2 [SDL_Surface](SDL_Surface.md) API mostly still exists. So change your screen surface from this:
 
 ```c
 SDL_Surface *screen = SDL_SetVideoMode(640, 480, 32, 0);
@@ -255,7 +255,7 @@ SDL_Texture *sdlTexture = SDL_CreateTexture(sdlRenderer,
                                             640, 480);
 ```
 
-...and continue blitting things around and tweaking pixels as before, composing your final framebuffer into this [SDL_Surface](SDL_Surface). Once you're ready to get those pixels on the screen, you do this just like in our first scenario:
+...and continue blitting things around and tweaking pixels as before, composing your final framebuffer into this [SDL_Surface](SDL_Surface.md). Once you're ready to get those pixels on the screen, you do this just like in our first scenario:
 
 ```c
 SDL_UpdateTexture(sdlTexture, NULL, screen->pixels, screen->pitch);
@@ -264,7 +264,7 @@ SDL_RenderCopy(sdlRenderer, sdlTexture, NULL, NULL);
 SDL_RenderPresent(sdlRenderer);
 ```
 
-Note that texture creation may be both expensive and a limited resource: don't call [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)() every frame. Set up one texture and one surface and update the former from the latter.
+Note that texture creation may be both expensive and a limited resource: don't call [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface.md)() every frame. Set up one texture and one surface and update the former from the latter.
 
 There are more features to the Render API, some of which may be able to replace your application's code: scaling, line drawing, etc. If you are reading this section because you have simple needs beyond blitting surfaces, you might be able to stop poking individual pixels and move everything onto the GPU, which will give your program a significant speed boost and probably simplify your code greatly.
 
@@ -272,18 +272,18 @@ There are more features to the Render API, some of which may be able to replace 
 
 You can do some simple effects with the render API without having to get down into direct pixel manipulation. Some of these were available on 1.2 surfaces.
 
-- Color alpha: [SDL_Color](SDL_Color) now contains a fourth, **alpha** component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named `unused`). In 2.0, you should.
-- Alpha blending: use [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) instead of `SDL_SetAlpha()`. Alpha-blending on surfaces can be disabled via [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)() and on textures with [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)().
-- Colorkey: When calling [SDL_SetColorKey](SDL_SetColorKey)(), you should pass `SDL_TRUE` instead of `SDL_SRCCOLORKEY`.
-- Color modulation: Some renderers now support a global color alteration (`srcC = srcC * color`), check [SDL_SetTextureColorMod](SDL_SetTextureColorMod)() for details.
+- Color alpha: [SDL_Color](SDL_Color.md) now contains a fourth, **alpha** component. Your 1.2 code that deals with SDL_Colors might be not copying/setting that value (which was named `unused`). In 2.0, you should.
+- Alpha blending: use [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod.md) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md) instead of `SDL_SetAlpha()`. Alpha-blending on surfaces can be disabled via [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode.md)() and on textures with [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode.md)().
+- Colorkey: When calling [SDL_SetColorKey](SDL_SetColorKey.md)(), you should pass `SDL_TRUE` instead of `SDL_SRCCOLORKEY`.
+- Color modulation: Some renderers now support a global color alteration (`srcC = srcC * color`), check [SDL_SetTextureColorMod](SDL_SetTextureColorMod.md)() for details.
 
 ### OpenGL
 
-If you were already using OpenGL directly, your migration is pretty simple. Change your `SDL_SetVideoMode()` call to [SDL_CreateWindow](SDL_CreateWindow)() followed by [SDL_GL_CreateContext](SDL_GL_CreateContext)(), and your `SDL_GL_SwapBuffers()` call to [SDL_GL_SwapWindow](SDL_GL_SwapWindow)(window). All the actual calls into the GL are exactly the same.
+If you were already using OpenGL directly, your migration is pretty simple. Change your `SDL_SetVideoMode()` call to [SDL_CreateWindow](SDL_CreateWindow.md)() followed by [SDL_GL_CreateContext](SDL_GL_CreateContext.md)(), and your `SDL_GL_SwapBuffers()` call to [SDL_GL_SwapWindow](SDL_GL_SwapWindow.md)(window). All the actual calls into the GL are exactly the same.
 
-If you had used [SDL_GL_SetAttribute](SDL_GL_SetAttribute)(SDL_GL_SWAP_CONTROL, x), this has changed. There is now an [SDL_GL_SetSwapInterval](SDL_GL_SetSwapInterval)(x) call, so you can change this on an existing GL context.
+If you had used [SDL_GL_SetAttribute](SDL_GL_SetAttribute.md)(SDL_GL_SWAP_CONTROL, x), this has changed. There is now an [SDL_GL_SetSwapInterval](SDL_GL_SetSwapInterval.md)(x) call, so you can change this on an existing GL context.
 
-Note that SDL 2.0 can toggle windowed/fullscreen and back with OpenGL windows without losing the GL context (hooray!). Use [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)() for this.
+Note that SDL 2.0 can toggle windowed/fullscreen and back with OpenGL windows without losing the GL context (hooray!). Use [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)() for this.
 
 
 ### Input
@@ -294,11 +294,11 @@ In 1.2, many applications that only cared about US English still called `SDL_Ena
 
 It turns out, i18n is hard.
 
-SDL changed this. `SDL_EnableUNICODE()` is gone, and so is [SDL_Keysym](SDL_Keysym)'s `unicode` field. You no longer get character input from [SDL_KEYDOWN](SDL_EventType) events. Use [SDL_KEYDOWN](SDL_EventType) to treat the keyboard like a 101-button joystick now. Text input comes from somewhere else.
+SDL changed this. `SDL_EnableUNICODE()` is gone, and so is [SDL_Keysym](SDL_Keysym.md)'s `unicode` field. You no longer get character input from [SDL_KEYDOWN](SDL_EventType.md) events. Use [SDL_KEYDOWN](SDL_EventType.md) to treat the keyboard like a 101-button joystick now. Text input comes from somewhere else.
 
-The new event is [SDL_TEXTINPUT](SDL_EventType). This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding.
+The new event is [SDL_TEXTINPUT](SDL_EventType.md). This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding.
 
-If all you care about is whether the user pressed a certain key, that's still [SDL_KEYDOWN](SDL_EventType), but we've split this system into two pieces since 1.2: keycodes and scancodes.
+If all you care about is whether the user pressed a certain key, that's still [SDL_KEYDOWN](SDL_EventType.md), but we've split this system into two pieces since 1.2: keycodes and scancodes.
 
 Scancodes are meant to be layout-independent. Think of this as "the user pressed the Q key as it would be on a US QWERTY keyboard" regardless of whether this is actually a European keyboard or a Dvorak keyboard or whatever. The scancode is always the same key position.
 
@@ -308,13 +308,13 @@ In example, if you pressed the key that's two keys to the right of CAPS LOCK on 
 
 Note that both keycodes and scancodes are now 32 bits, and use a wide range of numbers. There's no `SDLK_LAST` anymore. If your program had a lookup table of `SDLK_LAST` elements, to map between SDL keys and whatever your application wanted internally, that's no longer feasible. Use a hash table instead. A `std::map` will do. If you're mapping scancodes instead of keycodes, there's `SDL_NUM_SCANCODES`, which you can use for array bounds. It's 512 at the moment.
 
-`SDLMod` is now [SDL_Keymod](SDL_Keymod) and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
+`SDLMod` is now [SDL_Keymod](SDL_Keymod.md) and its "META" keys (the "Windows" keys) are now called the "GUI" keys.
 
-`SDL_GetKeyState()` has been renamed to [SDL_GetKeyboardState](SDL_GetKeyboardState)(). The returned array should now be indexed by `SDL_SCANCODE_*` values (see [SDL_Scancode](SDL_Scancode)) instead of [SDL_Keysym](SDL_Keysym) values.
+`SDL_GetKeyState()` has been renamed to [SDL_GetKeyboardState](SDL_GetKeyboardState.md)(). The returned array should now be indexed by `SDL_SCANCODE_*` values (see [SDL_Scancode](SDL_Scancode.md)) instead of [SDL_Keysym](SDL_Keysym.md) values.
 
 Now, for mouse input.
 
-The first change, simply enough, is that the mousewheel is no longer a button. This was a mistake of history, and we've corrected it in SDL 2.0. Look for [SDL_MOUSEWHEEL](SDL_EventType) events. We support both vertical and horizontal wheels, and some platforms can treat two-finger scrolling on a trackpad as wheel input, too. You will no longer receive [SDL_BUTTONDOWN](SDL_EventType) events for mouse wheels, and buttons 4 and 5 are real mouse buttons now.
+The first change, simply enough, is that the mousewheel is no longer a button. This was a mistake of history, and we've corrected it in SDL 2.0. Look for [SDL_MOUSEWHEEL](SDL_EventType.md) events. We support both vertical and horizontal wheels, and some platforms can treat two-finger scrolling on a trackpad as wheel input, too. You will no longer receive [SDL_BUTTONDOWN](SDL_EventType.md) events for mouse wheels, and buttons 4 and 5 are real mouse buttons now.
 
 If your game needed to roll the mouse in one direction forever, for example to let a player in an FPS to spin around without the mouse hitting the edge of the screen and stopping, you probably hid the mouse cursor and grabbed input:
 
@@ -334,7 +334,7 @@ SDL_SetRelativeMouseMode(SDL_TRUE);
 
 ### Events
 
-[SDL_PushEvent](SDL_PushEvent)() now returns `1` on success instead of `0`.
+[SDL_PushEvent](SDL_PushEvent.md)() now returns `1` on success instead of `0`.
 
 Events mask are now specified using ranges:
 
@@ -365,7 +365,7 @@ To get an SDL_JoystickID for your opened SDL_Joystick*, call:
 SDL_JoystickID myID = SDL_JoystickInstanceID(myOpenedStick);
 ```
 
-And compare the joystick events' `which` field against `myID`. If you aren't using the event queue for joysticks, [SDL_JoystickGetAxis](SDL_JoystickGetAxis)() and friends work just like SDL 1.2.
+And compare the joystick events' `which` field against `myID`. If you aren't using the event queue for joysticks, [SDL_JoystickGetAxis](SDL_JoystickGetAxis.md)() and friends work just like SDL 1.2.
 
 You should also check out the new [Game Controller API](CategoryGameController) too, because it's cool, and maybe you did a lot of tap dancing with the 1.2 API that this new code would solve more cleanly. You can find it in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h). The Game Controller API integrates really nicely with Steam Big Picture Mode: you get automatic configuration of most controllers, and a nice UI if you have to manually configure it. In either case, Steam passes this configuration on to your SDL application.
 
@@ -374,9 +374,9 @@ Support for the older joystick API (/dev/input/js*) for Linux has been dropped f
 
 ### Threads
 
-`SDL_KillThread()` is gone. It was never safe or reliable. The best replacement is to set a flag that tells a thread it should quit. That thread should check the flag with some frequency, and then the "killing" thread calls [SDL_WaitThread](SDL_WaitThread)() to clean up.
+`SDL_KillThread()` is gone. It was never safe or reliable. The best replacement is to set a flag that tells a thread it should quit. That thread should check the flag with some frequency, and then the "killing" thread calls [SDL_WaitThread](SDL_WaitThread.md)() to clean up.
 
-[SDL_CreateThread](SDL_CreateThread)() takes an extra parameter now, a name for the thread, which can be used by debuggers to identify it. If you don't care about that, just stuff an extra NULL into your function call.
+[SDL_CreateThread](SDL_CreateThread.md)() takes an extra parameter now, a name for the thread, which can be used by debuggers to identify it. If you don't care about that, just stuff an extra NULL into your function call.
 
 
 ### Audio CDs
@@ -397,7 +397,7 @@ There have been, for many years, unofficial ports of SDL 1.2 to iOS and Android.
 
 First, there are certain events that only apply to mobile devices, or better said, apply to the way mobile device OSes tend to operate in a post-iPhone world. We originally tried to map these to the existing SDL events (such as "your application is going to the background" being treated like a desktop window losing focus), but there's a more urgent concern: most of these events need an immediate response, and if the app doesn't give one, the OS will kill your application.
 
-As such, we've added new SDL events for some Android and iOS specific details, but you should set up an SDL event filter to catch them as soon as the OS reports them, because waiting until your next [SDL_PollEvent](SDL_PollEvent)() loop will be too late.
+As such, we've added new SDL events for some Android and iOS specific details, but you should set up an SDL event filter to catch them as soon as the OS reports them, because waiting until your next [SDL_PollEvent](SDL_PollEvent.md)() loop will be too late.
 
 For example, there's `SDL_APP_WILLENTERBACKGROUND`, which is iOS's `applicationWillResignActive()`, and if you draw to the screen after this event arrives, iOS terminates your process. So you want to catch this immediately:
 
@@ -417,22 +417,22 @@ int SDLCALL myEventFilter(void *userdata, SDL_Event * event)
 SDL_AddEventWatch(myEventFilter, data);
 ```
 
-Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_touch.h) for a list of these functions, and look for [SDL_Finger](SDL_Finger)* in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h).
+Second, there are real touch events now, instead of trying to map this to mouse input. You can track touches, multiple fingers, and even complex gestures. You probably want to use those. Refer to [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_touch.h) for a list of these functions, and look for [SDL_Finger](SDL_Finger.md)* in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h).
 
 Note that SDL will also map simple touches to look like mouse events (with the mouse event's "which" field set to `SDL_TOUCH_MOUSEID`), which means that if you don't care about more complex touch interfaces, your existing desktop app might still work out of the box on a phone where the user is poking the screen with a finger. As such: mobile-aware apps should probably ignore SDL_TOUCH_MOUSEID events, but still respect "real" mouse events in addition to the touch events--some mobile devices support USB and Bluetooth mice, after all!--but this is something to consider more deeply when you start to polish your app, after you are up and running on SDL2.
 
-There are a handful of other mobile-friendly functions, like [SDL_StartTextInput](SDL_StartTextInput)(), which will show the on-screen keyboard. Make use of them.
+There are a handful of other mobile-friendly functions, like [SDL_StartTextInput](SDL_StartTextInput.md)(), which will show the on-screen keyboard. Make use of them.
 
 In addition, there are also Android and iOS specific functions, to let you access platform-specific features that wouldn't make sense in a general API. Refer to [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_system.h) for a list of these functions.
 
 
 ### RWops
 
-[SDL_RWread](SDL_RWread)() and [SDL_RWwrite](SDL_RWwrite)() now return `0` on error instead of `-1`.
+[SDL_RWread](SDL_RWread.md)() and [SDL_RWwrite](SDL_RWwrite.md)() now return `0` on error instead of `-1`.
 
-If you wrote your own [SDL_RWops](SDL_RWops) implementation, the function signatures have changed. Functions now use `Sint64` and `size_t` instead of `int` so they can work with large files. In many cases, you can just update your function signatures and keep working as before, but if you had bumped up against these limitations, you might be happy to have a solution. Calling applications should know that the return values have changed.
+If you wrote your own [SDL_RWops](SDL_RWops.md) implementation, the function signatures have changed. Functions now use `Sint64` and `size_t` instead of `int` so they can work with large files. In many cases, you can just update your function signatures and keep working as before, but if you had bumped up against these limitations, you might be happy to have a solution. Calling applications should know that the return values have changed.
 
-There is also a `size` method to RWops, now. It is called [SDL_RWsize](SDL_RWsize)(). This lets a RWops report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
+There is also a `size` method to RWops, now. It is called [SDL_RWsize](SDL_RWsize.md)(). This lets a RWops report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
 
 
 ### Add-on libraries
@@ -448,13 +448,13 @@ These libraries will not be supporting 1.2 going forward, and any compatibility 
 
 A short cheat sheet where some of the old functions and other stuff went:
 
-- SDL_SetVideoMode(): use [SDL_CreateWindow](SDL_CreateWindow)() instead (along with [SDL_CreateRenderer](SDL_CreateRenderer)() if you want to do classic 2D rendering and not OpenGL)
-- SDL_ListModes(): use [SDL_GetDisplayMode](SDL_GetDisplayMode)()/[SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)() instead
-- SDL_UpdateRect()/SDL_Flip(): use [SDL_RenderPresent](SDL_RenderPresent)() instead
-- SDL_Surface/2D rendering: surfaces still exist, but it is recommended that instead of using SDL_Surfaces, you use [SDL_Textures](SDL_Texture) with a 2D accelerated renderer ([SDL_CreateRenderer](SDL_CreateRenderer)()) where possible
-- SDL_VideoInfo: use [SDL_GetRendererInfo](SDL_GetRendererInfo)()/[SDL_GetRenderDriverInfo](SDL_GetRenderDriverInfo)() instead
-- SDL_GetCurrentVideoDisplay(): use [SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)() instead
-- SDL_VIDEORESIZE event: the new equivalent is [SDL_WINDOWEVENT_RESIZED](SDL_WindowEvent)
+- SDL_SetVideoMode(): use [SDL_CreateWindow](SDL_CreateWindow.md)() instead (along with [SDL_CreateRenderer](SDL_CreateRenderer.md)() if you want to do classic 2D rendering and not OpenGL)
+- SDL_ListModes(): use [SDL_GetDisplayMode](SDL_GetDisplayMode.md)()/[SDL_GetNumDisplayModes](SDL_GetNumDisplayModes.md)() instead
+- SDL_UpdateRect()/SDL_Flip(): use [SDL_RenderPresent](SDL_RenderPresent.md)() instead
+- SDL_Surface/2D rendering: surfaces still exist, but it is recommended that instead of using SDL_Surfaces, you use [SDL_Textures](SDL_Texture.md) with a 2D accelerated renderer ([SDL_CreateRenderer](SDL_CreateRenderer.md)()) where possible
+- SDL_VideoInfo: use [SDL_GetRendererInfo](SDL_GetRendererInfo.md)()/[SDL_GetRenderDriverInfo](SDL_GetRenderDriverInfo.md)() instead
+- SDL_GetCurrentVideoDisplay(): use [SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex.md)() instead
+- SDL_VIDEORESIZE event: the new equivalent is [SDL_WINDOWEVENT_RESIZED](SDL_WindowEvent.md)
 
 
 ### Other stuff
@@ -467,6 +467,6 @@ fprintf(stderr, "MSGBOX: %s\n%s\n", title, text);   // oh well.
 #endif
 ```
 
-Now there's [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)(). You're welcome!
+Now there's [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox.md)(). You're welcome!
 
 If you skipped ahead, go back and check out all the new features [at the overview](#overview-of-new-features)!

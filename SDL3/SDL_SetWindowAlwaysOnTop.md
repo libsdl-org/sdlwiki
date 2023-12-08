@@ -15,12 +15,12 @@ int SDL_SetWindowAlwaysOnTop(SDL_Window *window, SDL_bool on_top);
 |                |                                                                                         |
 | -------------- | --------------------------------------------------------------------------------------- |
 | **window**     | The window of which to change the always on top state                                   |
-| **on_top**     | [SDL_TRUE](SDL_TRUE) to set the window always on top, [SDL_FALSE](SDL_FALSE) to disable |
+| **on_top**     | [SDL_TRUE](SDL_TRUE.md) to set the window always on top, [SDL_FALSE](SDL_FALSE.md) to disable |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,8 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+* [SDL_GetWindowFlags](SDL_GetWindowFlags.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

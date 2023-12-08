@@ -44,8 +44,8 @@ anything behind the scenes, and can just pass the data straight through to
 the hardware.
 
 The other reason to care about specific formats: if you plan to touch the
-mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
-effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
+mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix.md), a registered
+effect, or [Mix_HookMusic](Mix_HookMusic.md)), you might have code that
 expects it to be in a specific format, and you should specify that here.
 
 This function allows you to select specific audio hardware on the system
@@ -62,7 +62,7 @@ If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
 When done with an audio device, probably at the end of the program, the app
-should close the audio with [Mix_CloseAudio](Mix_CloseAudio)().
+should close the audio with [Mix_CloseAudio](Mix_CloseAudio.md)().
 
 ## Version
 
@@ -70,9 +70,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_CloseAudio](Mix_CloseAudio)
-* [Mix_QuerySpec](Mix_QuerySpec)
+* [Mix_CloseAudio](Mix_CloseAudio.md)
+* [Mix_QuerySpec](Mix_QuerySpec.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

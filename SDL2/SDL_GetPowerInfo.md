@@ -19,7 +19,7 @@ SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
 
 ## Return Value
 
-Returns an [SDL_PowerState](SDL_PowerState) enum representing the current
+Returns an [SDL_PowerState](SDL_PowerState.md) enum representing the current
 battery state.
 
 ## Remarks
@@ -42,5 +42,4 @@ but not both.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

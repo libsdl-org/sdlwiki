@@ -6,5 +6,4 @@
 
 ## Functions defined in the wiki, but not in the headers
 
-- [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
-
+- [Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)

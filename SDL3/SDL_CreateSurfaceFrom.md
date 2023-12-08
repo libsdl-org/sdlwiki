@@ -19,12 +19,12 @@ SDL_Surface* SDL_CreateSurfaceFrom
 | **width**      | the width of the surface                                                           |
 | **height**     | the height of the surface                                                          |
 | **pitch**      | the pitch of the surface in bytes                                                  |
-| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) for the new surface's pixel format. |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -43,9 +43,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSurface](SDL_CreateSurface)
-* [SDL_DestroySurface](SDL_DestroySurface)
+* [SDL_CreateSurface](SDL_CreateSurface.md)
+* [SDL_DestroySurface](SDL_DestroySurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

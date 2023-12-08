@@ -19,11 +19,11 @@ char * SDL_GetGamepadMappingForGUID(SDL_JoystickGUID guid);
 ## Return Value
 
 Returns a mapping string or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-The returned string must be freed with [SDL_free](SDL_free)().
+The returned string must be freed with [SDL_free](SDL_free.md)().
 
 ## Version
 
@@ -31,9 +31,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
-* [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
+* [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID.md)
+* [SDL_GetJoystickGUID](SDL_GetJoystickGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

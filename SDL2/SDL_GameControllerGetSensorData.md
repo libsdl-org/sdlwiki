@@ -26,12 +26,11 @@ Return 0 or -1 if an error occurred.
 ## Remarks
 
 The number of values and interpretation of the data is sensor dependent.
-See [SDL_sensor](SDL_sensor).h for the details for each type of sensor.
+See [SDL_sensor](SDL_sensor.md).h for the details for each type of sensor.
 
 ## Version
 
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

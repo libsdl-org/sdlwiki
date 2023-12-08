@@ -18,11 +18,11 @@ SDL_bool SDL_SetHintWithPriority(const char *name,
 | ---------------- | ----------------------------------------------------------- |
 | **name**         | the hint to set                                             |
 | **value**        | the value of the hint variable                              |
-| **priority**     | the [SDL_HintPriority](SDL_HintPriority) level for the hint |
+| **priority**     | the [SDL_HintPriority](SDL_HintPriority.md) level for the hint |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the hint was set, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Remarks
@@ -37,10 +37,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHint](SDL_SetHint)
+* [SDL_GetHint](SDL_GetHint.md)
+* [SDL_SetHint](SDL_SetHint.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

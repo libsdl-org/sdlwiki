@@ -19,7 +19,7 @@ void SDL_SetJoystickEventsEnabled(SDL_bool enabled);
 ## Remarks
 
 If joystick events are disabled, you must call
-[SDL_UpdateJoysticks](SDL_UpdateJoysticks)() yourself and check the state
+[SDL_UpdateJoysticks](SDL_UpdateJoysticks.md)() yourself and check the state
 of the joystick when you want joystick information.
 
 ## Version
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickEventsEnabled](SDL_JoystickEventsEnabled)
+* [SDL_JoystickEventsEnabled](SDL_JoystickEventsEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

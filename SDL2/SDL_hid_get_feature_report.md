@@ -14,7 +14,7 @@ int SDL_hid_get_feature_report(SDL_hid_device *dev, unsigned char *data, size_t 
 
 |                |                                                                                                                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                                                                                                        |
+| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open.md)().                                                                                                                                        |
 | **data**       | A buffer to put the read data into, including the Report ID. Set the first byte of `data` to the Report ID of the report to be read, or set it to zero if your device does not use numbered reports. |
 | **length**     | The number of bytes to read, including an extra byte for the report ID. The buffer can be longer than the actual report.                                                                             |
 
@@ -35,5 +35,4 @@ in data[1].
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

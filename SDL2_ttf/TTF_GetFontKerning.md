@@ -25,5 +25,4 @@ Returns non-zero if kerning is enabled, zero otherwise.
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,7 +15,7 @@ Uint32 SDL_MapRGB(const SDL_PixelFormat * format,
 
 |                |                                                                             |
 | -------------- | --------------------------------------------------------------------------- |
-| **format**     | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the pixel format |
+| **format**     | an [SDL_PixelFormat](SDL_PixelFormat.md) structure describing the pixel format |
 | **r**          | the red component of the pixel in the range 0-255                           |
 | **g**          | the green component of the pixel in the range 0-255                         |
 | **b**          | the blue component of the pixel in the range 0-255                          |
@@ -47,10 +47,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetRGB](SDL_GetRGB)
-* [SDL_GetRGBA](SDL_GetRGBA)
-* [SDL_MapRGBA](SDL_MapRGBA)
+* [SDL_GetRGB](SDL_GetRGB.md)
+* [SDL_GetRGBA](SDL_GetRGBA.md)
+* [SDL_MapRGBA](SDL_MapRGBA.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

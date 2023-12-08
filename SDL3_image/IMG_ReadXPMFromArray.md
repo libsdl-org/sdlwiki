@@ -24,7 +24,7 @@ Returns a new SDL surface, or NULL on error.
 
 The returned surface will be an 8bpp indexed surface, if possible,
 otherwise it will be 32bpp. If you always want 32-bit data, use
-[IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)() instead.
+[IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888.md)() instead.
 
 When done with the returned surface, the app should dispose of it with a
 call to SDL_DestroySurface().
@@ -35,8 +35,7 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)
+* [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,22 +15,22 @@ SDL_Texture * SDL_CreateTextureFromSurface(SDL_Renderer * renderer, SDL_Surface 
 |                  |                                                                                         |
 | ---------------- | --------------------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                                   |
-| **surface**      | the [SDL_Surface](SDL_Surface) structure containing pixel data used to fill the texture |
+| **surface**      | the [SDL_Surface](SDL_Surface.md) structure containing pixel data used to fill the texture |
 
 ## Return Value
 
 Returns the created texture or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The surface is not modified or freed by this function.
 
-The [SDL_TextureAccess](SDL_TextureAccess) hint for the created texture is
+The [SDL_TextureAccess](SDL_TextureAccess.md) hint for the created texture is
 [`SDL_TEXTUREACCESS_STATIC`](SDL_TEXTUREACCESS_STATIC).
 
 The pixel format of the created texture may be different from the pixel
-format of the surface. Use [SDL_QueryTexture](SDL_QueryTexture)() to query
+format of the surface. Use [SDL_QueryTexture](SDL_QueryTexture.md)() to query
 the pixel format of the texture.
 
 ## Version
@@ -39,10 +39,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
+* [SDL_CreateTexture](SDL_CreateTexture.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
+* [SDL_QueryTexture](SDL_QueryTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

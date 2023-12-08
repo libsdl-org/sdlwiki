@@ -22,9 +22,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
-* [SDL_RestoreWindow](SDL_RestoreWindow)
+* [SDL_MinimizeWindow](SDL_MinimizeWindow.md)
+* [SDL_RestoreWindow](SDL_RestoreWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

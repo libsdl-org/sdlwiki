@@ -14,12 +14,12 @@ int SDL_SaveAllDollarTemplates(SDL_RWops *dst);
 
 |             |                                     |
 | ----------- | ----------------------------------- |
-| **dst**     | a [SDL_RWops](SDL_RWops) to save to |
+| **dst**     | a [SDL_RWops](SDL_RWops.md) to save to |
 
 ## Return Value
 
 Returns the number of saved templates on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
-* [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
+* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates.md)
+* [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

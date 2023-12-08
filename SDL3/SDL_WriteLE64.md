@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_WriteLE64
 
-Use this function to write 64 bits in native format to a [SDL_RWops](SDL_RWops) as little-endian data.
+Use this function to write 64 bits in native format to a [SDL_RWops](SDL_RWops.md) as little-endian data.
 
 ## Syntax
 
@@ -33,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_WriteBE64](SDL_WriteBE64)
+* [SDL_WriteBE64](SDL_WriteBE64.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

@@ -15,14 +15,14 @@ SDL_Surface* SDL_ConvertSurface
 
 |               |                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| **src**       | the existing [SDL_Surface](SDL_Surface) structure to convert                           |
-| **fmt**       | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for |
+| **src**       | the existing [SDL_Surface](SDL_Surface.md) structure to convert                           |
+| **fmt**       | the [SDL_PixelFormat](SDL_PixelFormat.md) structure that the new surface is optimized for |
 | **flags**     | the flags are unused and should be set to 0; this is a leftover from SDL 1.2's API     |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -37,10 +37,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AllocFormat](SDL_AllocFormat)
-* [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+* [SDL_AllocFormat](SDL_AllocFormat.md)
+* [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat.md)
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

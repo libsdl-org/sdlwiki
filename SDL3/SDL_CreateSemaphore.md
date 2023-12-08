@@ -19,7 +19,7 @@ SDL_Semaphore* SDL_CreateSemaphore(Uint32 initial_value);
 ## Return Value
 
 Returns a new semaphore or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -69,14 +69,12 @@ SDL_DestroySemaphore(sem);
 
 ## Related Functions
 
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore.md)
+* [SDL_PostSemaphore](SDL_PostSemaphore.md)
+* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore.md)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue.md)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore.md)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

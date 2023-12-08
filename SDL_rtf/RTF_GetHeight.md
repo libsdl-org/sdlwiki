@@ -31,5 +31,4 @@ width of the clipping rectangle used for rendering later.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

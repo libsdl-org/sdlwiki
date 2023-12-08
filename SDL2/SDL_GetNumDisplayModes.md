@@ -19,12 +19,12 @@ int SDL_GetNumDisplayModes(int displayIndex);
 ## Return Value
 
 Returns a number >= 1 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The `displayIndex` needs to be in the range from 0 to
-[SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)() - 1.
+[SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays.md)() - 1.
 
 ## Version
 
@@ -32,9 +32,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayMode](SDL_GetDisplayMode)
-* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
+* [SDL_GetDisplayMode](SDL_GetDisplayMode.md)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

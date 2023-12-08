@@ -14,7 +14,7 @@ void SDL_CloseAudioDevice(SDL_AudioDeviceID dev);
 
 |             |                                                                                     |
 | ----------- | ----------------------------------------------------------------------------------- |
-| **dev**     | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Remarks
 
@@ -29,7 +29,7 @@ hardware, so that applications don't drop the last buffer of data they
 supplied.
 
 The device ID is invalid as soon as the device is closed, and is eligible
-for reuse in a new [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() call
+for reuse in a new [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() call
 immediately.
 
 ## Version
@@ -38,8 +38,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

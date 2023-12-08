@@ -18,18 +18,16 @@ int SDL_HapticStopAll(SDL_Haptic * haptic);
 
 |                |                                             |
 | -------------- | ------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to stop |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to stop |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

@@ -19,12 +19,11 @@ int Mix_GetMusicVolume(Mix_Music *music);
 ## Return Value
 
 Returns the music's current volume, between 0 and
-[MIX_MAX_VOLUME](MIX_MAX_VOLUME) (128).
+[MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) (128).
 
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

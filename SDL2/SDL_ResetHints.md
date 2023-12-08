@@ -22,11 +22,9 @@ This function is available since SDL 2.26.0.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHint](SDL_SetHint)
-* [SDL_ResetHint](SDL_ResetHint)
+* [SDL_GetHint](SDL_GetHint.md)
+* [SDL_SetHint](SDL_SetHint.md)
+* [SDL_ResetHint](SDL_ResetHint.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

@@ -15,7 +15,7 @@ const char* SDL_GetAudioDeviceName(int index,
 
 |                   |                                                                                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
+| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)() - 1 |
 | **iscapture**     | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
 
 ## Return Value
@@ -27,7 +27,7 @@ error.
 
 This function is only valid after successfully initializing the audio
 subsystem. The values returned by this function reflect the latest call to
-[SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)(); re-call that function
+[SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)(); re-call that function
 to redetect available hardware.
 
 The string returned by this function is UTF-8 encoded, read-only, and
@@ -41,9 +41,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
-* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
+* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)
+* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

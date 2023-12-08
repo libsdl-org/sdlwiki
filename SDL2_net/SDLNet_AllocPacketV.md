@@ -27,8 +27,8 @@ ran out of memory.
 This allocates `howmany` packets at once, each `size` bytes long.
 
 You must free the results of this function with
-[SDLNet_FreePacketV](SDLNet_FreePacketV), and must not free individual
-packets from this function with [SDLNet_FreePacket](SDLNet_FreePacket).
+[SDLNet_FreePacketV](SDLNet_FreePacketV.md), and must not free individual
+packets from this function with [SDLNet_FreePacket](SDLNet_FreePacket.md).
 
 ## Version
 
@@ -36,8 +36,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_FreePacketV](SDLNet_FreePacketV)
+* [SDLNet_FreePacketV](SDLNet_FreePacketV.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

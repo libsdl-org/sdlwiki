@@ -64,7 +64,7 @@ having to deal with SDL_RWops: `Mix_LoadMUS("filename.mp3")` will manage
 those details for you (but not let you specify the music type explicitly)..
 
 When done with this music, the app should dispose of it with a call to
-[Mix_FreeMusic](Mix_FreeMusic)().
+[Mix_FreeMusic](Mix_FreeMusic.md)().
 
 ## Version
 
@@ -72,8 +72,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_FreeMusic](Mix_FreeMusic)
+* [Mix_FreeMusic](Mix_FreeMusic.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

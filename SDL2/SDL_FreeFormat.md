@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_FreeFormat
 
-Free an [SDL_PixelFormat](SDL_PixelFormat) structure allocated by [SDL_AllocFormat](SDL_AllocFormat)().
+Free an [SDL_PixelFormat](SDL_PixelFormat.md) structure allocated by [SDL_AllocFormat](SDL_AllocFormat.md)().
 
 ## Syntax
 
@@ -14,7 +14,7 @@ void SDL_FreeFormat(SDL_PixelFormat *format);
 
 |                |                                                          |
 | -------------- | -------------------------------------------------------- |
-| **format**     | the [SDL_PixelFormat](SDL_PixelFormat) structure to free |
+| **format**     | the [SDL_PixelFormat](SDL_PixelFormat.md) structure to free |
 
 ## Version
 
@@ -22,8 +22,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AllocFormat](SDL_AllocFormat)
+* [SDL_AllocFormat](SDL_AllocFormat.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

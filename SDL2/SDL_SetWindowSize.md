@@ -25,12 +25,12 @@ The window size in screen coordinates may differ from the size in pixels,
 if the window was created with
 [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-dpi support (e.g. iOS or macOS). Use
-[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)() or
-[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)() to get the real
+[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize.md)() or
+[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize.md)() to get the real
 client area size in pixels.
 
 Fullscreen windows automatically match the size of the display mode, and
-you should use [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)() to
+you should use [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode.md)() to
 change their size.
 
 ## Version
@@ -39,9 +39,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
-* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
+* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

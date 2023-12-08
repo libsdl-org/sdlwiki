@@ -14,8 +14,8 @@ int SDL_UpperBlitScaled
 
 ## Remarks
 
-[SDL_UpperBlitScaled](SDL_UpperBlitScaled)() has been replaced by
-[SDL_BlitScaled](SDL_BlitScaled)(), which is merely a macro for this
+[SDL_UpperBlitScaled](SDL_UpperBlitScaled.md)() has been replaced by
+[SDL_BlitScaled](SDL_BlitScaled.md)(), which is merely a macro for this
 function with a less confusing name.
 
 ## Version
@@ -24,8 +24,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_BlitScaled](SDL_BlitScaled)
+* [SDL_BlitScaled](SDL_BlitScaled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

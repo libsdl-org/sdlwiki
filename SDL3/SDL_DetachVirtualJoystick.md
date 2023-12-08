@@ -14,17 +14,16 @@ int SDL_DetachVirtualJoystick(SDL_JoystickID instance_id);
 
 |                     |                                                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **instance_id**     | the joystick instance ID, previously returned from [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)() |
+| **instance_id**     | the joystick instance ID, previously returned from [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick.md)() |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

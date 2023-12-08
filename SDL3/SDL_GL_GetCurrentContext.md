@@ -21,7 +21,7 @@ SDL_GLContext SDL_GL_GetCurrentContext(void);
 ## Return Value
 
 Returns the currently active OpenGL context or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,10 +29,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

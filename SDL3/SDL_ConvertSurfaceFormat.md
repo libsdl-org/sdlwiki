@@ -15,20 +15,20 @@ SDL_Surface* SDL_ConvertSurfaceFormat(SDL_Surface *surface,
 
 |                      |                                                                                      |
 | -------------------- | ------------------------------------------------------------------------------------ |
-| **surface**          | the existing [SDL_Surface](SDL_Surface) structure to convert                         |
-| **pixel_format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) that the new surface is optimized for |
+| **surface**          | the existing [SDL_Surface](SDL_Surface.md) structure to convert                         |
+| **pixel_format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) that the new surface is optimized for |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function operates just like
-[SDL_ConvertSurface](SDL_ConvertSurface)(), but accepts an
-[SDL_PixelFormatEnum](SDL_PixelFormatEnum) value instead of an
-[SDL_PixelFormat](SDL_PixelFormat) structure. As such, it might be easier
+[SDL_ConvertSurface](SDL_ConvertSurface.md)(), but accepts an
+[SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) value instead of an
+[SDL_PixelFormat](SDL_PixelFormat.md) structure. As such, it might be easier
 to call but it doesn't have access to palette information for the
 destination surface, in case that would be important.
 
@@ -38,11 +38,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
-* [SDL_ConvertSurface](SDL_ConvertSurface)
-* [SDL_CreateSurface](SDL_CreateSurface)
+* [SDL_CreatePixelFormat](SDL_CreatePixelFormat.md)
+* [SDL_ConvertSurface](SDL_ConvertSurface.md)
+* [SDL_CreateSurface](SDL_CreateSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

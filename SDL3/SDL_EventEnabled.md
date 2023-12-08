@@ -14,12 +14,12 @@ SDL_bool SDL_EventEnabled(Uint32 type);
 
 |              |                                                                   |
 | ------------ | ----------------------------------------------------------------- |
-| **type**     | the type of event; see [SDL_EventType](SDL_EventType) for details |
+| **type**     | the type of event; see [SDL_EventType](SDL_EventType.md) for details |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the event is being processed,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the event is being processed,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetEventEnabled](SDL_SetEventEnabled)
+* [SDL_SetEventEnabled](SDL_SetEventEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

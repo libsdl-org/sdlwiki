@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RenderGeometryRaw
 
-Render a list of triangles, optionally using a texture and indices into the vertex arrays Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex arrays Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod.md) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md) are ignored).
 
 ## Syntax
 
@@ -24,7 +24,7 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 | **texture**          | (optional) The SDL texture to use.                                                                                    |
 | **xy**               | Vertex positions                                                                                                      |
 | **xy_stride**        | Byte size to move from one element to the next element                                                                |
-| **color**            | Vertex colors (as [SDL_Color](SDL_Color))                                                                             |
+| **color**            | Vertex colors (as [SDL_Color](SDL_Color.md))                                                                             |
 | **color_stride**     | Byte size to move from one element to the next element                                                                |
 | **uv**               | Vertex normalized texture coordinates                                                                                 |
 | **uv_stride**        | Byte size to move from one element to the next element                                                                |
@@ -36,7 +36,7 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -44,10 +44,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_RenderGeometry](SDL_RenderGeometry)
-* [SDL_Vertex](SDL_Vertex)
+* [SDL_RenderGeometry](SDL_RenderGeometry.md)
+* [SDL_Vertex](SDL_Vertex.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

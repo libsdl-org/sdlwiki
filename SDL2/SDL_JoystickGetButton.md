@@ -15,7 +15,7 @@ Uint8 SDL_JoystickGetButton(SDL_Joystick *joystick,
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 | **button**       | the button index to get the state from; indices start at index 0          |
 
 ## Return Value
@@ -28,8 +28,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickNumButtons](SDL_JoystickNumButtons)
+* [SDL_JoystickNumButtons](SDL_JoystickNumButtons.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

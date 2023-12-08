@@ -14,7 +14,7 @@ void SDL_FreeSurface(SDL_Surface * surface);
 
 |                 |                                         |
 | --------------- | --------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) to free. |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) to free. |
 
 ## Remarks
 
@@ -26,11 +26,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
-* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface.md)
+* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom.md)
+* [SDL_LoadBMP](SDL_LoadBMP.md)
+* [SDL_LoadBMP_RW](SDL_LoadBMP_RW.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

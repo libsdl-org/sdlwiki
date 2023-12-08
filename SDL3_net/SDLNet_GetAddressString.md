@@ -14,7 +14,7 @@ const char * SDLNet_GetAddressString(SDLNet_Address *address);
 
 |                 |                                                |
 | --------------- | ---------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to query. |
+| **address**     | The [SDLNet_Address](SDLNet_Address.md) to query. |
 
 ## Return Value
 
@@ -28,13 +28,13 @@ string of numbers and symbols, like "159.203.69.7" or
 "icculus.org"), but it's suitable for writing to a log file, etc.
 
 Do not free or modify the returned string; it belongs to the
-[SDLNet_Address](SDLNet_Address) that was queried, and is valid as long as
+[SDLNet_Address](SDLNet_Address.md) that was queried, and is valid as long as
 the object lives. Either make sure the address has a reference as long as
 you need this or make a copy of the string.
 
 This will return NULL if resolution is still in progress, or if resolution
-failed. You can use [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)() or
-[SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)() to make sure
+failed. You can use [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus.md)() or
+[SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved.md)() to make sure
 resolution has successfully completed before calling this.
 
 ## Thread Safety
@@ -47,9 +47,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
-* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
+* [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus.md)
+* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

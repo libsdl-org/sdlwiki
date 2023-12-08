@@ -14,19 +14,18 @@ int SDL_hid_get_manufacturer_string(SDL_hid_device *dev, wchar_t *string, size_t
 
 |                |                                                               |
 | -------------- | ------------------------------------------------------------- |
-| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**        | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 | **string**     | A wide string buffer to put the data into.                    |
 | **maxlen**     | The length of the buffer in multiples of wchar_t.             |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

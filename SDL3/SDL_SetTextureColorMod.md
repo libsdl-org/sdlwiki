@@ -22,7 +22,7 @@ int SDL_SetTextureColorMod(SDL_Texture *texture, Uint8 r, Uint8 g, Uint8 b);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -50,10 +50,8 @@ SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 
 ## Related Functions
 
-* [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
-* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
+* [SDL_GetTextureColorMod](SDL_GetTextureColorMod.md)
+* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

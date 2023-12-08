@@ -26,10 +26,10 @@ Returns the number of bytes read from the stream, or -1 on error
 
 The input/output data format/channels/samplerate is specified when creating
 the stream, and can be changed after creation by calling
-[SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat).
+[SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat.md).
 
 Note that any conversion and resampling necessary is done during this call,
-and [SDL_PutAudioStreamData](SDL_PutAudioStreamData) simply queues
+and [SDL_PutAudioStreamData](SDL_PutAudioStreamData.md) simply queues
 unconverted data for later. This is different than SDL2, where that work
 was done while inputting new data to the stream and requesting the output
 just copied the converted data.
@@ -45,14 +45,13 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_CreateAudioStream](SDL_CreateAudioStream.md)
+* [SDL_PutAudioStreamData](SDL_PutAudioStreamData.md)
+* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md)
+* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat.md)
+* [SDL_FlushAudioStream](SDL_FlushAudioStream.md)
+* [SDL_ClearAudioStream](SDL_ClearAudioStream.md)
+* [SDL_DestroyAudioStream](SDL_DestroyAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

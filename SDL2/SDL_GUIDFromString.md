@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GUIDFromString
 
-Convert a GUID string into a ::[SDL_GUID](SDL_GUID) structure.
+Convert a GUID string into a ::[SDL_GUID](SDL_GUID.md) structure.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ SDL_GUID SDL_GUIDFromString(const char *pchGUID);
 
 ## Return Value
 
-Returns a ::[SDL_GUID](SDL_GUID) structure.
+Returns a ::[SDL_GUID](SDL_GUID.md) structure.
 
 ## Remarks
 
@@ -32,8 +32,7 @@ This function is available since SDL 2.24.0.
 
 ## Related Functions
 
-* [SDL_GUIDToString](SDL_GUIDToString)
+* [SDL_GUIDToString](SDL_GUIDToString.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

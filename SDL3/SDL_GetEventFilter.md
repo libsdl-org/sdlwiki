@@ -19,7 +19,7 @@ SDL_bool SDL_GetEventFilter(SDL_EventFilter *filter, void **userdata);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) if there
+Returns [SDL_TRUE](SDL_TRUE.md) on success or [SDL_FALSE](SDL_FALSE.md) if there
 is no event filter set.
 
 ## Remarks
@@ -33,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetEventFilter](SDL_SetEventFilter)
+* [SDL_SetEventFilter](SDL_SetEventFilter.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

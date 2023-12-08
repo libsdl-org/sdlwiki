@@ -16,14 +16,14 @@ int SDL_CreateWindowAndRenderer(int width, int height, Uint32 window_flags, SDL_
 | -------------------- | -------------------------------------------------------------------------------- |
 | **width**            | the width of the window                                                          |
 | **height**           | the height of the window                                                         |
-| **window_flags**     | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()) |
+| **window_flags**     | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow.md)()) |
 | **window**           | a pointer filled with the window, or NULL on error                               |
 | **renderer**         | a pointer filled with the renderer, or NULL on error                             |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -87,10 +87,8 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateWindow](SDL_CreateWindow)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md), [CategoryVideo](CategoryVideo.md)

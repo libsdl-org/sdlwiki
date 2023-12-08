@@ -19,7 +19,7 @@ int SDL_Vulkan_LoadLibrary(const char *path);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,7 +34,7 @@ search path.
 
 If you specify a non-NULL `path`, an application should retrieve all of the
 Vulkan functions it uses from the dynamic library using
-[SDL_Vulkan_GetVkGetInstanceProcAddr](SDL_Vulkan_GetVkGetInstanceProcAddr)
+[SDL_Vulkan_GetVkGetInstanceProcAddr](SDL_Vulkan_GetVkGetInstanceProcAddr.md)
 unless you can guarantee `path` points to the same vulkan loader library
 the application linked to.
 
@@ -59,10 +59,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr)
-* [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary)
+* [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr.md)
+* [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVulkan](CategoryVulkan.md)

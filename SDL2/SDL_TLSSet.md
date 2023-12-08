@@ -21,7 +21,7 @@ int SDL_TLSSet(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ void destructor(void *value)
 ```
 
 where its parameter `value` is what was passed as `value` to
-[SDL_TLSSet](SDL_TLSSet)().
+[SDL_TLSSet](SDL_TLSSet.md)().
 
 ## Version
 
@@ -40,9 +40,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_TLSCreate](SDL_TLSCreate)
-* [SDL_TLSGet](SDL_TLSGet)
+* [SDL_TLSCreate](SDL_TLSCreate.md)
+* [SDL_TLSGet](SDL_TLSGet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

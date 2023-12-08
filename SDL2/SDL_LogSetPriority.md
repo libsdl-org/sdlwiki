@@ -16,7 +16,7 @@ void SDL_LogSetPriority(int category,
 |                  |                                                  |
 | ---------------- | ------------------------------------------------ |
 | **category**     | the category to assign a priority to             |
-| **priority**     | the [SDL_LogPriority](SDL_LogPriority) to assign |
+| **priority**     | the [SDL_LogPriority](SDL_LogPriority.md) to assign |
 
 ## Version
 
@@ -24,9 +24,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LogGetPriority](SDL_LogGetPriority)
-* [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
+* [SDL_LogGetPriority](SDL_LogGetPriority.md)
+* [SDL_LogSetAllPriority](SDL_LogSetAllPriority.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

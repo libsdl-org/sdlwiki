@@ -23,7 +23,7 @@ Returns A byte value that can be passed to memset.
 ## Remarks
 
 The value returned by this function can be used as the second argument to
-memset (or [SDL_memset](SDL_memset)) to set an audio buffer in a specific
+memset (or [SDL_memset](SDL_memset.md)) to set an audio buffer in a specific
 format to silence.
 
 ## Thread Safety
@@ -35,5 +35,4 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

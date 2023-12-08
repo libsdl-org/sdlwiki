@@ -19,7 +19,7 @@ int SDL_Direct3D9GetAdapterIndex( int displayIndex );
 ## Return Value
 
 Returns the D3D9 adapter index on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -31,5 +31,4 @@ controls on which monitor a full screen application will appear.
 This function is available since SDL 2.0.1.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

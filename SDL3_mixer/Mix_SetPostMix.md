@@ -51,8 +51,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_HookMusic](Mix_HookMusic)
+* [Mix_HookMusic](Mix_HookMusic.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

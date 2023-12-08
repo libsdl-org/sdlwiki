@@ -14,7 +14,7 @@ Uint8 SDL_EventState(Uint32 type, int state);
 
 |               |                                                                   |
 | ------------- | ----------------------------------------------------------------- |
-| **type**      | the type of event; see [SDL_EventType](SDL_EventType) for details |
+| **type**      | the type of event; see [SDL_EventType](SDL_EventType.md) for details |
 | **state**     | how to process the event                                          |
 
 ## Return Value
@@ -40,8 +40,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetEventState](SDL_GetEventState)
+* [SDL_GetEventState](SDL_GetEventState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

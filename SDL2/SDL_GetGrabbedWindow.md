@@ -20,9 +20,8 @@ This function is available since SDL 2.0.4.
 
 ## Related Functions
 
-* [SDL_GetWindowGrab](SDL_GetWindowGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+* [SDL_GetWindowGrab](SDL_GetWindowGrab.md)
+* [SDL_SetWindowGrab](SDL_SetWindowGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

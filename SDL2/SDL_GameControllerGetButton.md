@@ -16,12 +16,12 @@ Uint8 SDL_GameControllerGetButton(SDL_GameController *gamecontroller,
 |                        |                                                                                         |
 | ---------------------- | --------------------------------------------------------------------------------------- |
 | **gamecontroller**     | a game controller                                                                       |
-| **button**             | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton) values) |
+| **button**             | a button index (one of the [SDL_GameControllerButton](SDL_GameControllerButton.md) values) |
 
 ## Return Value
 
 Returns 1 for pressed state or 0 for not pressed state or error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis)
+* [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

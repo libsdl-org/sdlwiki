@@ -14,19 +14,19 @@ const char * SDL_WinRTGetFSPathUTF8(SDL_WinRT_Path pathType);
 
 |                  |                                                                       |
 | ---------------- | --------------------------------------------------------------------- |
-| **pathType**     | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path) |
+| **pathType**     | the type of path to retrieve, one of [SDL_WinRT_Path](SDL_WinRT_Path.md) |
 
 ## Return Value
 
 Returns a UTF-8 string (8-bit, multi-byte) containing the path, or NULL if
 the path is not available for any reason; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Not all paths are available on all versions of Windows. This is especially
 true on Windows Phone. Check the documentation for the given
-[SDL_WinRT_Path](SDL_WinRT_Path) for more information on which path types
+[SDL_WinRT_Path](SDL_WinRT_Path.md) for more information on which path types
 are supported where.
 
 Documentation on most app-specific path types on WinRT can be found on
@@ -40,8 +40,7 @@ This function is available since SDL 2.0.3.
 
 ## Related Functions
 
-* [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
+* [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ int SDL_SetPrimarySelectionText(const char *text);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.26.0.
 
 ## Related Functions
 
-* [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
-* [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
+* [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText.md)
+* [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

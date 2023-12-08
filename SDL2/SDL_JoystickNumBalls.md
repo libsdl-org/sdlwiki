@@ -14,12 +14,12 @@ int SDL_JoystickNumBalls(SDL_Joystick *joystick);
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 
 ## Return Value
 
 Returns the number of trackballs on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,8 +34,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickGetBall](SDL_JoystickGetBall)
+* [SDL_JoystickGetBall](SDL_JoystickGetBall.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

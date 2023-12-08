@@ -27,18 +27,16 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<<Include([SDL_CreateSemaphore](SDL_CreateSemaphore), , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
+<<Include([SDL_CreateSemaphore](SDL_CreateSemaphore.md), , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+* [SDL_CreateSemaphore](SDL_CreateSemaphore.md)
+* [SDL_PostSemaphore](SDL_PostSemaphore.md)
+* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore.md)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue.md)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore.md)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

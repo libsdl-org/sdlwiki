@@ -15,13 +15,13 @@ int SDL_SetSurfaceBlendMode(SDL_Surface * surface,
 
 |                   |                                                             |
 | ----------------- | ----------------------------------------------------------- |
-| **surface**       | the [SDL_Surface](SDL_Surface) structure to update          |
-| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode) to use for blit blending |
+| **surface**       | the [SDL_Surface](SDL_Surface.md) structure to update          |
+| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode.md) to use for blit blending |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -35,8 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetSurfaceBlendMode](SDL_GetSurfaceBlendMode)
+* [SDL_GetSurfaceBlendMode](SDL_GetSurfaceBlendMode.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

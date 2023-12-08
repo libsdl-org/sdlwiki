@@ -20,7 +20,7 @@ void TTF_GetFreeTypeVersion(int *major, int *minor, int *patch);
 
 ## Remarks
 
-[TTF_Init](TTF_Init)() should be called before calling this function.
+[TTF_Init](TTF_Init.md)() should be called before calling this function.
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_Init](TTF_Init)
+* [TTF_Init](TTF_Init.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

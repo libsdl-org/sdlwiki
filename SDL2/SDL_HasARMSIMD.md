@@ -12,8 +12,8 @@ SDL_bool SDL_HasARMSIMD(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the CPU has ARM SIMD features or
-[SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if the CPU has ARM SIMD features or
+[SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Remarks
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.12.
 
 ## Related Functions
 
-* [SDL_HasNEON](SDL_HasNEON)
+* [SDL_HasNEON](SDL_HasNEON.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -20,5 +20,4 @@ it should NOT be used to fill a version structure, instead you should use
 the SDL_IMAGE_VERSION() macro.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

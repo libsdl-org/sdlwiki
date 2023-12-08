@@ -45,7 +45,7 @@ On macOS, the string might look like:
 `/Users/bob/Library/Application Support/My Program Name/`
 
 You should assume the path returned by this function is the only safe place
-to write files (and that [SDL_GetBasePath](SDL_GetBasePath)(), while it
+to write files (and that [SDL_GetBasePath](SDL_GetBasePath.md)(), while it
 might be writable, or even the parent of the returned path, isn't where you
 should be writing things).
 
@@ -64,7 +64,7 @@ The returned path is guaranteed to end with a path separator ('\' on
 Windows, '/' on most other platforms).
 
 The pointer returned is owned by the caller. Please call
-[SDL_free](SDL_free)() on the pointer when done with it.
+[SDL_free](SDL_free.md)() on the pointer when done with it.
 
 ## Version
 
@@ -87,9 +87,7 @@ void InitializePrefPath() {
 
 ## Related Functions
 
-* [SDL_GetBasePath](SDL_GetBasePath)
+* [SDL_GetBasePath](SDL_GetBasePath.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryFilesystem](CategoryFilesystem)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryFilesystem](CategoryFilesystem.md)

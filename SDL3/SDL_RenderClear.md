@@ -19,7 +19,7 @@ int SDL_RenderClear(SDL_Renderer *renderer);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -74,9 +74,7 @@ int main(int argc, char* argv[])
 
 ## Related Functions
 
-* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
+* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

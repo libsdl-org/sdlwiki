@@ -22,7 +22,7 @@ Returns a new chunk, or NULL on error.
 
 ## Remarks
 
-Unlike [Mix_LoadWAV_RW](Mix_LoadWAV_RW), this function has several
+Unlike [Mix_LoadWAV_RW](Mix_LoadWAV_RW.md), this function has several
 requirements, and unless you control all your audio data and know what
 you're doing, you should consider this function unsafe and not use it.
 
@@ -35,15 +35,15 @@ you're doing, you should consider this function unsafe and not use it.
   memory buffer, so if the WAV data is corrupted, it can read past the end
   of the buffer, causing a crash.
 - The audio data must live at least as long as the returned
-  [Mix_Chunk](Mix_Chunk), because SDL_mixer will use that data directly and
+  [Mix_Chunk](Mix_Chunk.md), because SDL_mixer will use that data directly and
   not make a copy of it.
 
 This function will do NO error checking! Be extremely careful here!
 
-(Seriously, use [Mix_LoadWAV_RW](Mix_LoadWAV_RW) instead.)
+(Seriously, use [Mix_LoadWAV_RW](Mix_LoadWAV_RW.md) instead.)
 
 If this function is successful, the provided memory buffer must remain
-available until [Mix_FreeChunk](Mix_FreeChunk)() is called on the returned
+available until [Mix_FreeChunk](Mix_FreeChunk.md)() is called on the returned
 chunk.
 
 ## Version
@@ -52,9 +52,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
-* [Mix_FreeChunk](Mix_FreeChunk)
+* [Mix_LoadWAV_RW](Mix_LoadWAV_RW.md)
+* [Mix_FreeChunk](Mix_FreeChunk.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

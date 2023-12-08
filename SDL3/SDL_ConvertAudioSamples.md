@@ -23,13 +23,13 @@ int SDL_ConvertAudioSamples(const SDL_AudioSpec *src_spec,
 | **src_data**     | The audio data to be converted                                                                                                       |
 | **src_len**      | The len of src_data                                                                                                                  |
 | **dst_spec**     | The format details of the output audio                                                                                               |
-| **dst_data**     | Will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free)(). On error, it will be NULL. |
+| **dst_data**     | Will be filled with a pointer to converted audio data, which should be freed with [SDL_free](SDL_free.md)(). On error, it will be NULL. |
 | **dst_len**      | Will be filled with the len of dst_data                                                                                              |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -37,11 +37,11 @@ Please note that this function is for convenience, but should not be used
 to resample audio in blocks, as it will introduce audio artifacts on the
 boundaries. You should only use this function if you are converting audio
 data in its entirety in one call. If you want to convert audio in smaller
-chunks, use an [SDL_AudioStream](SDL_AudioStream), which is designed for
+chunks, use an [SDL_AudioStream](SDL_AudioStream.md), which is designed for
 this situation.
 
 Internally, this function creates and destroys an
-[SDL_AudioStream](SDL_AudioStream) on each use, so it's also less efficient
+[SDL_AudioStream](SDL_AudioStream.md) on each use, so it's also less efficient
 than using one directly, if you need to convert multiple times.
 
 ## Thread Safety
@@ -54,8 +54,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
+* [SDL_CreateAudioStream](SDL_CreateAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

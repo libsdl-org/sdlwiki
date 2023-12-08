@@ -33,10 +33,10 @@ bound to multiple channels, the highest channel with the source address
 bound will be returned.
 
 This function takes an array of packets but does not need to be allocated
-through [SDLNet_AllocPacketV](SDLNet_AllocPacketV); if you supply your own
+through [SDLNet_AllocPacketV](SDLNet_AllocPacketV.md); if you supply your own
 array of packets you allocated individually, that is okay, as long as the
 last element in the array is NULL, so SDL_net knows the array bounds. The
-arrays returned by [SDLNet_AllocPacketV](SDLNet_AllocPacketV) are properly
+arrays returned by [SDLNet_AllocPacketV](SDLNet_AllocPacketV.md) are properly
 NULL-terminated for these purposes.
 
 This function does not block, so it can return 0 packets pending, which is
@@ -48,9 +48,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_SendV](SDLNet_UDP_SendV)
-* [SDLNet_UDP_Recv](SDLNet_UDP_Recv)
+* [SDLNet_UDP_SendV](SDLNet_UDP_SendV.md)
+* [SDLNet_UDP_Recv](SDLNet_UDP_Recv.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

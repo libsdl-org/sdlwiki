@@ -31,9 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
-* [SDL_JoystickGetGUIDString](SDL_JoystickGetGUIDString)
+* [SDL_JoystickGetGUID](SDL_JoystickGetGUID.md)
+* [SDL_JoystickGetGUIDString](SDL_JoystickGetGUIDString.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

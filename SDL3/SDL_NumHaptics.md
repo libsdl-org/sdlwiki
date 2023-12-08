@@ -17,7 +17,7 @@ int SDL_NumHaptics(void);
 ## Return Value
 
 Returns the number of haptic devices detected on the system or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
+error code on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -26,9 +26,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticName](SDL_HapticName)
+* [SDL_HapticName](SDL_HapticName.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

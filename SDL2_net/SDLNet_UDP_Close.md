@@ -27,5 +27,4 @@ This socket may not be used again once given to this function.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

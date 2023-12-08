@@ -18,9 +18,9 @@ SDL_Palette* SDL_AllocPalette(int ncolors);
 
 ## Return Value
 
-Returns a new [SDL_Palette](SDL_Palette) structure on success or NULL on
+Returns a new [SDL_Palette](SDL_Palette.md) structure on success or NULL on
 failure (e.g. if there wasn't enough memory); call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_FreePalette](SDL_FreePalette)
+* [SDL_FreePalette](SDL_FreePalette.md)
 
 
 ## Example
@@ -68,5 +68,4 @@ palette = nullptr;
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ void SDL_PauseAudio(int pause_on);
 ## Remarks
 
 New programs might want to use
-[SDL_PauseAudioDevice](SDL_PauseAudioDevice)() instead. This function is
+[SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)() instead. This function is
 equivalent to calling...
 
 ```c
@@ -27,7 +27,7 @@ SDL_PauseAudioDevice(1, pause_on);
 ```
 
 ...and is only useful if you used the legacy
-[SDL_OpenAudio](SDL_OpenAudio)() function.
+[SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -35,9 +35,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetAudioStatus](SDL_GetAudioStatus)
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+* [SDL_GetAudioStatus](SDL_GetAudioStatus.md)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

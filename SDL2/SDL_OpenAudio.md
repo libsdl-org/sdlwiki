@@ -15,8 +15,8 @@ int SDL_OpenAudio(SDL_AudioSpec * desired,
 
 |                  |                                                                                                                                                                                                                |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **desired**      | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format. Please refer to the [SDL_OpenAudioDevice](SDL_OpenAudioDevice) documentation for details on how to prepare this structure. |
-| **obtained**     | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual parameters, or NULL.                                                                                                                     |
+| **desired**      | an [SDL_AudioSpec](SDL_AudioSpec.md) structure representing the desired output format. Please refer to the [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md) documentation for details on how to prepare this structure. |
+| **obtained**     | an [SDL_AudioSpec](SDL_AudioSpec.md) structure filled in with the actual parameters, or NULL.                                                                                                                     |
 
 ## Return Value
 
@@ -30,14 +30,14 @@ is NULL, `desired` will have fields modified.
 
 This function returns a negative error code on failure to open the audio
 device or failure to set up the audio thread; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function remains for compatibility with SDL 1.2, but also because it's
 slightly easier to use than the new functions in SDL 2.0. The new, more
 powerful, and preferred way to do this is
-[SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
+[SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)().
 
 This function is roughly equivalent to:
 
@@ -60,11 +60,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CloseAudio](SDL_CloseAudio)
-* [SDL_LockAudio](SDL_LockAudio)
-* [SDL_PauseAudio](SDL_PauseAudio)
-* [SDL_UnlockAudio](SDL_UnlockAudio)
+* [SDL_CloseAudio](SDL_CloseAudio.md)
+* [SDL_LockAudio](SDL_LockAudio.md)
+* [SDL_PauseAudio](SDL_PauseAudio.md)
+* [SDL_UnlockAudio](SDL_UnlockAudio.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

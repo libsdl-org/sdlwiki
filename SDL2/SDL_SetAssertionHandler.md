@@ -16,7 +16,7 @@ void SDL_SetAssertionHandler(
 
 |                  |                                                                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **handler**      | the [SDL_AssertionHandler](SDL_AssertionHandler) function to call when an assertion fails or NULL for the default handler |
+| **handler**      | the [SDL_AssertionHandler](SDL_AssertionHandler.md) function to call when an assertion fails or NULL for the default handler |
 | **userdata**     | a pointer that is passed to `handler`                                                                                     |
 
 ## Remarks
@@ -30,7 +30,7 @@ This callback may fire from any thread, but it runs wrapped in a mutex, so
 it will only fire from one thread at a time.
 
 This callback is NOT reset to SDL's internal handler upon
-[SDL_Quit](SDL_Quit)()!
+[SDL_Quit](SDL_Quit.md)()!
 
 ## Version
 
@@ -38,8 +38,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
+* [SDL_GetAssertionHandler](SDL_GetAssertionHandler.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

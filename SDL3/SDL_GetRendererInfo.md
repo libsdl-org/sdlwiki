@@ -15,12 +15,12 @@ int SDL_GetRendererInfo(SDL_Renderer *renderer, SDL_RendererInfo *info);
 |                  |                                                                                                      |
 | ---------------- | ---------------------------------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                                                |
-| **info**         | an [SDL_RendererInfo](SDL_RendererInfo) structure filled with information about the current renderer |
+| **info**         | an [SDL_RendererInfo](SDL_RendererInfo.md) structure filled with information about the current renderer |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,9 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

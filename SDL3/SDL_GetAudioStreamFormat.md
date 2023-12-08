@@ -16,7 +16,7 @@ int SDL_GetAudioStreamFormat(SDL_AudioStream *stream,
 
 |                  |                                                          |
 | ---------------- | -------------------------------------------------------- |
-| **stream**       | the [SDL_AudioStream](SDL_AudioStream) to query.         |
+| **stream**       | the [SDL_AudioStream](SDL_AudioStream.md) to query.         |
 | **src_spec**     | Where to store the input audio format; ignored if NULL.  |
 | **dst_spec**     | Where to store the output audio format; ignored if NULL. |
 
@@ -34,5 +34,4 @@ stream-specific mutex while running.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

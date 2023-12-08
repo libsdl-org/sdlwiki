@@ -35,8 +35,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_GetFontStyle](TTF_GetFontStyle)
+* [TTF_GetFontStyle](TTF_GetFontStyle.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

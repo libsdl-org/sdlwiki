@@ -19,7 +19,7 @@ int SDL_GetNumTouchFingers(SDL_TouchID touchID);
 ## Return Value
 
 Returns the number of active fingers for a given touch device on success or
-0 on failure; call [SDL_GetError](SDL_GetError)() for more information.
+0 on failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetTouchFinger](SDL_GetTouchFinger)
+* [SDL_GetTouchFinger](SDL_GetTouchFinger.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -37,11 +37,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BindAudioStream](SDL_BindAudioStream)
-* [SDL_BindAudioStreams](SDL_BindAudioStreams)
-* [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
-* [SDL_UnbindAudioStreams](SDL_UnbindAudioStreams)
+* [SDL_BindAudioStream](SDL_BindAudioStream.md)
+* [SDL_BindAudioStreams](SDL_BindAudioStreams.md)
+* [SDL_UnbindAudioStream](SDL_UnbindAudioStream.md)
+* [SDL_UnbindAudioStreams](SDL_UnbindAudioStreams.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

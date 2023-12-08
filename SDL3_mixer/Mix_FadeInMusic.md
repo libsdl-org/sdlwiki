@@ -25,7 +25,7 @@ Returns zero on success, -1 on error.
 ## Remarks
 
 This will start the new music playing, much like
-[Mix_PlayMusic](Mix_PlayMusic)() will, but will start the music playing at
+[Mix_PlayMusic](Mix_PlayMusic.md)() will, but will start the music playing at
 silence and fade in to its normal volume over the specified number of
 milliseconds.
 
@@ -36,8 +36,8 @@ If `loops` is greater than zero, loop the music that many times. If `loops`
 is -1, loop "infinitely" (~65000 times).
 
 Fading music will change it's volume progressively, as if
-[Mix_VolumeMusic](Mix_VolumeMusic)() was called on it (which is to say: you
-probably shouldn't call [Mix_VolumeMusic](Mix_VolumeMusic)() on fading
+[Mix_VolumeMusic](Mix_VolumeMusic.md)() was called on it (which is to say: you
+probably shouldn't call [Mix_VolumeMusic](Mix_VolumeMusic.md)() on fading
 music).
 
 ## Version
@@ -45,5 +45,4 @@ music).
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

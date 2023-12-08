@@ -24,7 +24,7 @@ Returns the pointer passed in as the `errstr` parameter.
 ## Remarks
 
 This allows the caller to copy the error string into a provided buffer, but
-otherwise operates exactly the same as [SDL_GetError](SDL_GetError)().
+otherwise operates exactly the same as [SDL_GetError](SDL_GetError.md)().
 
 ## Version
 
@@ -32,9 +32,7 @@ This function is available since SDL 2.0.14.
 
 ## Related Functions
 
-* [SDL_GetError](SDL_GetError)
+* [SDL_GetError](SDL_GetError.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryError](CategoryError.md)

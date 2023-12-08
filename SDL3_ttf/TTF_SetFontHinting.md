@@ -36,8 +36,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_GetFontHinting](TTF_GetFontHinting)
+* [TTF_GetFontHinting](TTF_GetFontHinting.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

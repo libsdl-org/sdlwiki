@@ -25,9 +25,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetTLS](SDL_GetTLS)
-* [SDL_SetTLS](SDL_SetTLS)
+* [SDL_GetTLS](SDL_GetTLS.md)
+* [SDL_SetTLS](SDL_SetTLS.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

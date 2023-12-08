@@ -20,7 +20,7 @@ SDL_AudioSpec* SDL_LoadWAV_RW(SDL_RWops * src,
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | **src**           | The data source for the WAVE data                                                            |
 | **freesrc**       | If non-zero, SDL will _always_ free the data source                                          |
-| **spec**          | An [SDL_AudioSpec](SDL_AudioSpec) that will be filled in with the wave file's format details |
+| **spec**          | An [SDL_AudioSpec](SDL_AudioSpec.md) that will be filled in with the wave file's format details |
 | **audio_buf**     | A pointer filled with the audio data, allocated by the function.                             |
 | **audio_len**     | A pointer filled with the length of the audio data buffer in bytes                           |
 
@@ -33,11 +33,11 @@ data, and `audio_len` is filled with the length of that audio buffer in
 bytes.
 
 This function returns NULL if the .WAV file cannot be opened, uses an
-unknown data format, or is corrupt; call [SDL_GetError](SDL_GetError)() for
+unknown data format, or is corrupt; call [SDL_GetError](SDL_GetError.md)() for
 more information.
 
 When the application is done with the data returned in `audio_buf`, it
-should call [SDL_FreeWAV](SDL_FreeWAV)() to dispose of it.
+should call [SDL_FreeWAV](SDL_FreeWAV.md)() to dispose of it.
 
 ## Remarks
 
@@ -56,11 +56,11 @@ cause an error.
 If this function succeeds, the pointer returned by it is equal to `spec`
 and the pointer to the audio data allocated by the function is written to
 `audio_buf` and its length in bytes to `audio_len`. The
-[SDL_AudioSpec](SDL_AudioSpec) members `freq`, `channels`, and `format` are
+[SDL_AudioSpec](SDL_AudioSpec.md) members `freq`, `channels`, and `format` are
 set to the values of the audio data in the buffer. The `samples` member is
 set to a sane default and all others are set to zero.
 
-It's necessary to use [SDL_FreeWAV](SDL_FreeWAV)() to free the audio data
+It's necessary to use [SDL_FreeWAV](SDL_FreeWAV.md)() to free the audio data
 returned in `audio_buf` when it is no longer used.
 
 Because of the underspecification of the .WAV format, there are many
@@ -88,7 +88,7 @@ Example:
 SDL_LoadWAV_RW(SDL_RWFromFile("sample.wav", "rb"), 1, &spec, &buf, &len);
 ```
 
-Note that the [SDL_LoadWAV](SDL_LoadWAV) macro does this same thing for
+Note that the [SDL_LoadWAV](SDL_LoadWAV.md) macro does this same thing for
 you, but in a less messy way:
 
 ```c
@@ -101,9 +101,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_FreeWAV](SDL_FreeWAV)
-* [SDL_LoadWAV](SDL_LoadWAV)
+* [SDL_FreeWAV](SDL_FreeWAV.md)
+* [SDL_LoadWAV](SDL_LoadWAV.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

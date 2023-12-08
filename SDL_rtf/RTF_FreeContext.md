@@ -29,5 +29,4 @@ associated SDL_Renderer, which can continue to draw and present.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -28,8 +28,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowTitle](SDL_GetWindowTitle)
+* [SDL_GetWindowTitle](SDL_GetWindowTitle.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

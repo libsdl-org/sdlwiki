@@ -12,8 +12,8 @@ SDL_bool SDL_HasScreenKeyboardSupport(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the platform has some screen keyboard
-support or [SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if the platform has some screen keyboard
+support or [SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Version
 
@@ -21,9 +21,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_StartTextInput](SDL_StartTextInput)
-* [SDL_IsScreenKeyboardShown](SDL_IsScreenKeyboardShown)
+* [SDL_StartTextInput](SDL_StartTextInput.md)
+* [SDL_IsScreenKeyboardShown](SDL_IsScreenKeyboardShown.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

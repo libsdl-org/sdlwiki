@@ -20,7 +20,7 @@ This function is typically used for profiling.
 
 The counter values are only meaningful relative to each other. Differences
 between values can be converted to times by using
-[SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)().
+[SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency.md)().
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
+* [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -24,7 +24,7 @@ SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
 #ifndef SDL_AssertBreakpoint
 #if defined(ANDROID) && defined(assert)
 /* Define this as empty in case assert() is defined as SDL_assert */
-#define SDL_AssertBreakpoint() 
+#define SDL_AssertBreakpoint()
 #else
 #define SDL_AssertBreakpoint() SDL_TriggerBreakpoint()
 #endif
@@ -50,12 +50,11 @@ Returns assert state
 
 ## Remarks
 
-Use the [SDL_assert](SDL_assert)* macros.
+Use the [SDL_assert](SDL_assert.md)* macros.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

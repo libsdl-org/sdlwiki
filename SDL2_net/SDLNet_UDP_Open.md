@@ -30,10 +30,10 @@ systems to send to this socket via a known port.
 
 Note that UDP sockets at the platform layer "bind" to a nework port number,
 but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
-[SDLNet_UDP_Bind](SDLNet_UDP_Bind)(). But the term is used for both.
+[SDLNet_UDP_Bind](SDLNet_UDP_Bind.md)(). But the term is used for both.
 
 When you are done communicating over the returned socket, you can shut it
-down and free its resources with [SDLNet_UDP_Close](SDLNet_UDP_Close)().
+down and free its resources with [SDLNet_UDP_Close](SDLNet_UDP_Close.md)().
 
 ## Version
 
@@ -41,9 +41,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_Close](SDLNet_UDP_Close)
-* [SDLNet_UDP_Bind](SDLNet_UDP_Bind)
+* [SDLNet_UDP_Close](SDLNet_UDP_Close.md)
+* [SDLNet_UDP_Bind](SDLNet_UDP_Bind.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

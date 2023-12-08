@@ -30,5 +30,4 @@ If an invalid channel is specified, this function returns zero.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

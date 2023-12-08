@@ -19,7 +19,7 @@ int SDL_HapticRumbleInit(SDL_Haptic * haptic);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,11 +27,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
-* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
-* [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
+* [SDL_HapticOpen](SDL_HapticOpen.md)
+* [SDL_HapticRumblePlay](SDL_HapticRumblePlay.md)
+* [SDL_HapticRumbleStop](SDL_HapticRumbleStop.md)
+* [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

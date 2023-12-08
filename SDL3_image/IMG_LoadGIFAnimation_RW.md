@@ -18,7 +18,7 @@ IMG_Animation * IMG_LoadGIFAnimation_RW(SDL_RWops *src);
 
 ## Return Value
 
-Returns a new [IMG_Animation](IMG_Animation), or NULL on error.
+Returns a new [IMG_Animation](IMG_Animation.md), or NULL on error.
 
 ## Remarks
 
@@ -33,11 +33,10 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW)
-* [IMG_FreeAnimation](IMG_FreeAnimation)
+* [IMG_LoadAnimation](IMG_LoadAnimation.md)
+* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW.md)
+* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW.md)
+* [IMG_FreeAnimation](IMG_FreeAnimation.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

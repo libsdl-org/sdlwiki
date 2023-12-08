@@ -22,8 +22,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_ShowWindow](SDL_ShowWindow)
+* [SDL_ShowWindow](SDL_ShowWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

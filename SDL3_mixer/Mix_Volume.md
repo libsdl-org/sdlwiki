@@ -15,7 +15,7 @@ int Mix_Volume(int channel, int volume);
 |                 |                                                                                 |
 | --------------- | ------------------------------------------------------------------------------- |
 | **channel**     | the channel on set/query the volume on, or -1 for all channels.                 |
-| **volume**      | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+| **volume**      | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md), or -1 to query. |
 
 ## Return Value
 
@@ -25,10 +25,10 @@ channels.
 
 ## Remarks
 
-The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME)
-(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME) is 128. Values
-greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME) are clamped to
-[MIX_MAX_VOLUME](MIX_MAX_VOLUME).
+The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md)
+(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) is 128. Values
+greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) are clamped to
+[MIX_MAX_VOLUME](MIX_MAX_VOLUME.md).
 
 Specifying a negative volume will not change the current volume; as such,
 this can be used to query the current volume without making changes, as
@@ -38,7 +38,7 @@ If the specified channel is -1, this function sets the volume for all
 channels, and returns _the average_ of all channels' volumes prior to this
 call.
 
-The default volume for a channel is [MIX_MAX_VOLUME](MIX_MAX_VOLUME) (no
+The default volume for a channel is [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) (no
 attenuation).
 
 ## Version
@@ -46,5 +46,4 @@ attenuation).
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

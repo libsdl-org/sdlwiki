@@ -24,9 +24,9 @@ Returns 1 if the audio device has been opened, 0 otherwise.
 
 ## Remarks
 
-If [Mix_OpenAudioDevice](Mix_OpenAudioDevice)() was called with
+If [Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)() was called with
 `allowed_changes` set to anything but zero, or
-[Mix_OpenAudio](Mix_OpenAudio)() was used, some audio device settings may
+[Mix_OpenAudio](Mix_OpenAudio.md)() was used, some audio device settings may
 be different from the application's request. This function will report what
 the device is actually running at.
 
@@ -43,9 +43,8 @@ This function is available since SDL_mixer 2.0.0.
 
 ## Related Functions
 
-* [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
+* [Mix_OpenAudio](Mix_OpenAudio.md)
+* [Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

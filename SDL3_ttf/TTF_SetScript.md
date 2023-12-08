@@ -7,12 +7,12 @@ Set a global script to be used for text shaping.
 
 This function expects an hb_script_t value, from HarfBuzz, cast to an int,
 and affects all fonts globally. Please use
-[TTF_SetFontScriptName](TTF_SetFontScriptName)() instead, which accepts a
+[TTF_SetFontScriptName](TTF_SetFontScriptName.md)() instead, which accepts a
 string that is converted to an equivalent int internally, and operates on a
 per-font basis.
 
 This is a global setting; fonts will favor a value set with
-[TTF_SetFontScriptName](TTF_SetFontScriptName)(), but if they have not had
+[TTF_SetFontScriptName](TTF_SetFontScriptName.md)(), but if they have not had
 one explicitly set, they will use the value specified here.
 
 The default value is `HB_SCRIPT_UNKNOWN`.
@@ -34,8 +34,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_SetFontScriptName](TTF_SetFontScriptName)
+* [TTF_SetFontScriptName](TTF_SetFontScriptName.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

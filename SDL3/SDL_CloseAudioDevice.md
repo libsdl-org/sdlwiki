@@ -14,7 +14,7 @@ void SDL_CloseAudioDevice(SDL_AudioDeviceID devid);
 
 |               |                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| **devid**     | an audio device id previously returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **devid**     | an audio device id previously returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Remarks
 
@@ -47,9 +47,7 @@ if (devid > 0) {
 
 ## Related Functions
 
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

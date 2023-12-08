@@ -19,13 +19,13 @@ int SDL_FlushRenderer(SDL_Renderer *renderer);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 You do not need to (and in fact, shouldn't) call this function unless you
 are planning to call into OpenGL/Direct3D/Metal/whatever directly, in
-addition to using an [SDL_Renderer](SDL_Renderer).
+addition to using an [SDL_Renderer](SDL_Renderer.md).
 
 This is for a very-specific case: if you are using SDL's render API, and
 you plan to make OpenGL/D3D/whatever calls in addition to SDL render API
@@ -48,5 +48,4 @@ and be prepared to make changes if specific state needs to be protected.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

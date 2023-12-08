@@ -14,7 +14,7 @@ void* SDL_Metal_GetLayer(SDL_MetalView view);
 
 |              |                                           |
 | ------------ | ----------------------------------------- |
-| **view**     | the [SDL_MetalView](SDL_MetalView) object |
+| **view**     | the [SDL_MetalView](SDL_MetalView.md) object |
 
 ## Return Value
 
@@ -26,8 +26,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_Metal_CreateView](SDL_Metal_CreateView)
+* [SDL_Metal_CreateView](SDL_Metal_CreateView.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -48,7 +48,7 @@ files from disk without having to deal with SDL_RWops:
 details for you.
 
 When done with a chunk, the app should dispose of it with a call to
-[Mix_FreeChunk](Mix_FreeChunk)().
+[Mix_FreeChunk](Mix_FreeChunk.md)().
 
 ## Version
 
@@ -57,9 +57,8 @@ This function is available since SDL_mixer 2.6.0 (and as a macro since
 
 ## Related Functions
 
-* [Mix_LoadWAV](Mix_LoadWAV)
-* [Mix_FreeChunk](Mix_FreeChunk)
+* [Mix_LoadWAV](Mix_LoadWAV.md)
+* [Mix_FreeChunk](Mix_FreeChunk.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,8 +18,8 @@ SDL_bool SDL_JoystickHasRumble(SDL_Joystick *joystick);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick has rumble,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the joystick has rumble,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_RumbleJoystick](SDL_RumbleJoystick)
+* [SDL_RumbleJoystick](SDL_RumbleJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -6,7 +6,7 @@ Get real coordinates of point in window when given logical coordinates of point 
 ## Syntax
 
 ```c
-void SDL_RenderLogicalToWindow(SDL_Renderer * renderer, 
+void SDL_RenderLogicalToWindow(SDL_Renderer * renderer,
                                     float logicalX, float logicalY,
                                     int *windowX, int *windowY);
 
@@ -33,11 +33,10 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_RenderGetScale](SDL_RenderGetScale)
-* [SDL_RenderSetScale](SDL_RenderSetScale)
-* [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
-* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
+* [SDL_RenderGetScale](SDL_RenderGetScale.md)
+* [SDL_RenderSetScale](SDL_RenderSetScale.md)
+* [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize.md)
+* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

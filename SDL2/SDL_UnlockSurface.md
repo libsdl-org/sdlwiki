@@ -14,7 +14,7 @@ void SDL_UnlockSurface(SDL_Surface * surface);
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to be unlocked |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to be unlocked |
 
 ## Version
 
@@ -22,8 +22,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockSurface](SDL_LockSurface)
+* [SDL_LockSurface](SDL_LockSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

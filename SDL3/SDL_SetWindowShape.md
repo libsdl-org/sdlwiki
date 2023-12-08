@@ -21,9 +21,9 @@ int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode
 ## Return Value
 
 Returns 0 on success,
-[SDL_INVALID_SHAPE_ARGUMENT](SDL_INVALID_SHAPE_ARGUMENT) on an invalid
-shape argument, or [SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW) if
-the [SDL_Window](SDL_Window) given does not reference a valid shaped
+[SDL_INVALID_SHAPE_ARGUMENT](SDL_INVALID_SHAPE_ARGUMENT.md) on an invalid
+shape argument, or [SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW.md) if
+the [SDL_Window](SDL_Window.md) given does not reference a valid shaped
 window.
 
 ## Version
@@ -32,9 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_WindowShapeMode](SDL_WindowShapeMode)
-* [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
+* [SDL_WindowShapeMode](SDL_WindowShapeMode.md)
+* [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

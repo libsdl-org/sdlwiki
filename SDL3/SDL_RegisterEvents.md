@@ -35,13 +35,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<<Include([SDL_UserEvent](SDL_UserEvent), , , from="== Code Examples ==", to="== Remarks ==")>>
+<<Include([SDL_UserEvent](SDL_UserEvent.md), , , from="== Code Examples ==", to="== Remarks ==")>>
 
 ## Related Functions
 
-* [SDL_PushEvent](SDL_PushEvent)
+* [SDL_PushEvent](SDL_PushEvent.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

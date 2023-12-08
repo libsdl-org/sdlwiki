@@ -24,7 +24,7 @@ Returns 0 if successful, -1 on error.
 ## Remarks
 
 If you just want to save to a filename, you can use
-[IMG_SavePNG](IMG_SavePNG)() instead.
+[IMG_SavePNG](IMG_SavePNG.md)() instead.
 
 ## Version
 
@@ -32,10 +32,9 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_SavePNG](IMG_SavePNG)
-* [IMG_SaveJPG](IMG_SaveJPG)
-* [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
+* [IMG_SavePNG](IMG_SavePNG.md)
+* [IMG_SaveJPG](IMG_SaveJPG.md)
+* [IMG_SaveJPG_RW](IMG_SaveJPG_RW.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

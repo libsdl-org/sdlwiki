@@ -34,5 +34,4 @@ thread, and doing so results in undefined behavior.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

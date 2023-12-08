@@ -19,12 +19,12 @@ int SDL_AddGamepadMapping(const char *mapping);
 ## Return Value
 
 Returns 1 if a new mapping is added, 0 if an existing mapping is updated,
--1 on error; call [SDL_GetError](SDL_GetError)() for more information.
+-1 on error; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The mapping string has the format "GUID,name,mapping", where GUID is the
-string value from [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)(),
+string value from [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString.md)(),
 name is the human readable string for the device and mappings are gamepad
 mappings to joystick ones. Under Windows there is a reserved GUID of
 "xinput" that covers all XInput devices. The mapping format for joystick
@@ -48,9 +48,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
-* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+* [SDL_GetGamepadMapping](SDL_GetGamepadMapping.md)
+* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

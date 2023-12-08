@@ -22,14 +22,14 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success, [SDL_FALSE](SDL_FALSE) on error.
+Returns [SDL_TRUE](SDL_TRUE.md) on success, [SDL_FALSE](SDL_FALSE.md) on error.
 
 ## Remarks
 
 The `window` must have been created with the
 [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN) flag and `instance` must have been
 created with extensions returned by
-[SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)()
+[SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions.md)()
 enabled.
 
 ## Version
@@ -38,9 +38,8 @@ This function is available since SDL 2.0.6.
 
 ## Related Functions
 
-* [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
-* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
+* [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions.md)
+* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

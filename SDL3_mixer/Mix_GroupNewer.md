@@ -34,8 +34,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_GroupOldest](Mix_GroupOldest)
+* [Mix_GroupOldest](Mix_GroupOldest.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

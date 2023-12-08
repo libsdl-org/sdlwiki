@@ -41,9 +41,9 @@ large Unicode values, such as emoji glyphs. These codepoints are accessible
 through the UTF-8 version of this function.
 
 You can render at other quality levels with
-[TTF_RenderUNICODE_Solid_Wrapped](TTF_RenderUNICODE_Solid_Wrapped),
-[TTF_RenderUNICODE_Shaded_Wrapped](TTF_RenderUNICODE_Shaded_Wrapped), and
-[TTF_RenderUNICODE_Blended_Wrapped](TTF_RenderUNICODE_Blended_Wrapped).
+[TTF_RenderUNICODE_Solid_Wrapped](TTF_RenderUNICODE_Solid_Wrapped.md),
+[TTF_RenderUNICODE_Shaded_Wrapped](TTF_RenderUNICODE_Shaded_Wrapped.md), and
+[TTF_RenderUNICODE_Blended_Wrapped](TTF_RenderUNICODE_Blended_Wrapped.md).
 
 ## Version
 
@@ -51,8 +51,7 @@ This function is available since SDL_ttf 2.20.0.
 
 ## Related Functions
 
-* [TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped)
+* [TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

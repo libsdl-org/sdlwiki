@@ -30,5 +30,4 @@ This only applies to GME music formats.
 This function is available since SDL_mixer 2.8.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ size_t SDL_RWread(SDL_RWops *context, void *ptr, size_t size);
 
 |                 |                                                   |
 | --------------- | ------------------------------------------------- |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure  |
+| **context**     | a pointer to an [SDL_RWops](SDL_RWops.md) structure  |
 | **ptr**         | a pointer to a buffer to read data into           |
 | **size**        | the number of bytes to read from the data source. |
 
@@ -32,8 +32,8 @@ because it would require blocking, this function returns -2 to distinguish
 that this is not an error or end-of-file, and the caller can try again
 later.
 
-[SDL_RWread](SDL_RWread)() is actually a function wrapper that calls the
-[SDL_RWops](SDL_RWops)'s `read` method appropriately, to simplify
+[SDL_RWread](SDL_RWread.md)() is actually a function wrapper that calls the
+[SDL_RWops](SDL_RWops.md)'s `read` method appropriately, to simplify
 application development.
 
 It is an error to specify a negative `size`, but this parameter is signed
@@ -84,14 +84,12 @@ char* file_read(const char* filename) {
 
 ## Related Functions
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWseek](SDL_RWseek)
-* [SDL_RWwrite](SDL_RWwrite)
+* [SDL_RWclose](SDL_RWclose.md)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem.md)
+* [SDL_RWFromFile](SDL_RWFromFile.md)
+* [SDL_RWFromMem](SDL_RWFromMem.md)
+* [SDL_RWseek](SDL_RWseek.md)
+* [SDL_RWwrite](SDL_RWwrite.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

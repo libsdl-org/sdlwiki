@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_JoystickRumbleTriggers
 
-Start a rumble effect in the joystick's triggers 
+Start a rumble effect in the joystick's triggers
 
 ## Syntax
 
@@ -31,7 +31,7 @@ calling it with 0 intensity stops any rumbling.
 Note that this is rumbling of the _triggers_ and not the game controller as
 a whole. This is currently only supported on Xbox One controllers. If you
 want the (more common) whole-controller rumble, use
-[SDL_JoystickRumble](SDL_JoystickRumble)() instead.
+[SDL_JoystickRumble](SDL_JoystickRumble.md)() instead.
 
 ## Version
 
@@ -39,8 +39,7 @@ This function is available since SDL 2.0.14.
 
 ## Related Functions
 
-* [SDL_JoystickHasRumbleTriggers](SDL_JoystickHasRumbleTriggers)
+* [SDL_JoystickHasRumbleTriggers](SDL_JoystickHasRumbleTriggers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

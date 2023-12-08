@@ -14,7 +14,7 @@ const char* SDL_GetAudioDriver(int index);
 
 |               |                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **index**     | the index of the audio driver; the value ranges from 0 to [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)() - 1 |
+| **index**     | the index of the audio driver; the value ranges from 0 to [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers.md)() - 1 |
 
 ## Return Value
 
@@ -37,8 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
+* [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

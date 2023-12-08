@@ -14,7 +14,7 @@ void SDL_UnloadObject(void *handle);
 
 |                |                                                                             |
 | -------------- | --------------------------------------------------------------------------- |
-| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject.md)() |
 
 ## Version
 
@@ -22,10 +22,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_LoadFunction](SDL_LoadFunction)
-* [SDL_LoadObject](SDL_LoadObject)
+* [SDL_LoadFunction](SDL_LoadFunction.md)
+* [SDL_LoadObject](SDL_LoadObject.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySharedObject](CategorySharedObject.md)

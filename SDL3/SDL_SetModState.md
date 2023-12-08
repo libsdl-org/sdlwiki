@@ -18,15 +18,15 @@ void SDL_SetModState(SDL_Keymod modstate);
 
 |                  |                                                       |
 | ---------------- | ----------------------------------------------------- |
-| **modstate**     | the desired [SDL_Keymod](SDL_Keymod) for the keyboard |
+| **modstate**     | the desired [SDL_Keymod](SDL_Keymod.md) for the keyboard |
 
 ## Remarks
 
-The inverse of [SDL_GetModState](SDL_GetModState)(),
-[SDL_SetModState](SDL_SetModState)() allows you to impose modifier key
+The inverse of [SDL_GetModState](SDL_GetModState.md)(),
+[SDL_SetModState](SDL_SetModState.md)() allows you to impose modifier key
 states on your application. Simply pass your desired modifier states into
 `modstate`. This value may be a bitwise, OR'd combination of
-[SDL_Keymod](SDL_Keymod) values.
+[SDL_Keymod](SDL_Keymod.md) values.
 
 This does not change the keyboard state, only the key modifier flags that
 SDL reports.
@@ -37,9 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetModState](SDL_GetModState)
+* [SDL_GetModState](SDL_GetModState.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryKeyboard](CategoryKeyboard.md), [CategoryDraft](CategoryDraft.md)

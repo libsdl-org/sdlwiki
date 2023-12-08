@@ -15,14 +15,14 @@ int SDL_SaveBMP_RW
 
 |                 |                                                                           |
 | --------------- | ------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure containing the image to be saved |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure containing the image to be saved |
 | **dst**         | a data stream to save to                                                  |
 | **freedst**     | non-zero to close the stream after being written                          |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -38,9 +38,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
-* [SDL_SaveBMP](SDL_SaveBMP)
+* [SDL_LoadBMP_RW](SDL_LoadBMP_RW.md)
+* [SDL_SaveBMP](SDL_SaveBMP.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

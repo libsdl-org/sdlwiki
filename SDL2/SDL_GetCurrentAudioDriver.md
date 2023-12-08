@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AudioInit](SDL_AudioInit)
+* [SDL_AudioInit](SDL_AudioInit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

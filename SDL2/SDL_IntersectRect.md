@@ -16,18 +16,18 @@ SDL_bool SDL_IntersectRect(const SDL_Rect * A,
 
 |                |                                                                                             |
 | -------------- | ------------------------------------------------------------------------------------------- |
-| **A**          | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                          |
-| **B**          | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                         |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the intersection of rectangles `A` and `B` |
+| **A**          | an [SDL_Rect](SDL_Rect.md) structure representing the first rectangle                          |
+| **B**          | an [SDL_Rect](SDL_Rect.md) structure representing the second rectangle                         |
+| **result**     | an [SDL_Rect](SDL_Rect.md) structure filled in with the intersection of rectangles `A` and `B` |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if there is an intersection,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
-If `result` is NULL then this function will return [SDL_FALSE](SDL_FALSE).
+If `result` is NULL then this function will return [SDL_FALSE](SDL_FALSE.md).
 
 ## Version
 
@@ -35,8 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HasIntersection](SDL_HasIntersection)
+* [SDL_HasIntersection](SDL_HasIntersection.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

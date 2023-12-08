@@ -5,7 +5,7 @@ An opaque data type in SDL3_Net for datagram sockets.
 
 Datagram sockets map to [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) sockets. They offer data as stateless packets of data sent between arbitrary network addresses.
 
-You can create one of these with [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket). Unlike with [SDLNet_StreamSockets](SDLNet_StreamSocket), there is no client and server; everything uses the same type of datagram socket. The actual object returned is an opaque data structure; your code should just treat it like a handle to various SDL3_net functions.
+You can create one of these with [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket.md). Unlike with [SDLNet_StreamSockets](SDLNet_StreamSocket.md), there is no client and server; everything uses the same type of datagram socket. The actual object returned is an opaque data structure; your code should just treat it like a handle to various SDL3_net functions.
 
 Datagram sockets are _unreliable_, which is to say that when you send packets out into the world, they might arrive in a different order than you sent them, and some or all of them may not arrive at all! There is no indication that any given packet arrived, unless the other side sends back a packet of its own that indicates in some way that it saw a specific packet arrive.
 

@@ -19,7 +19,7 @@ int SDL_AddGamepadMappingsFromFile(const char *file);
 ## Return Value
 
 Returns the number of mappings added or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,10 +39,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-* [SDL_AddGamepadMappingsFromRW](SDL_AddGamepadMappingsFromRW)
-* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+* [SDL_AddGamepadMapping](SDL_AddGamepadMapping.md)
+* [SDL_AddGamepadMappingsFromRW](SDL_AddGamepadMappingsFromRW.md)
+* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

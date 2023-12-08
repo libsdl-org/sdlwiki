@@ -18,7 +18,7 @@ SDL_bool SDL_GamepadHasRumbleTriggers(SDL_Gamepad *gamepad);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE), or [SDL_FALSE](SDL_FALSE) if this gamepad
+Returns [SDL_TRUE](SDL_TRUE.md), or [SDL_FALSE](SDL_FALSE.md) if this gamepad
 does not have trigger rumble support
 
 ## Version
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_RumbleGamepadTriggers](SDL_RumbleGamepadTriggers)
+* [SDL_RumbleGamepadTriggers](SDL_RumbleGamepadTriggers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

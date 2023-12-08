@@ -20,7 +20,7 @@ int SDL_SetWindowTitle(SDL_Window *window, const char *title);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -78,9 +78,7 @@ int main(int argc, char* argv[]){
 
 ## Related Functions
 
-* [SDL_GetWindowTitle](SDL_GetWindowTitle)
+* [SDL_GetWindowTitle](SDL_GetWindowTitle.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

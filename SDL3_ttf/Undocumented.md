@@ -6,6 +6,5 @@
 
 ## Functions defined in the wiki, but not in the headers
 
-- [TTF_SetDirection](TTF_SetDirection)
-- [TTF_SetScript](TTF_SetScript)
-
+- [TTF_SetDirection](TTF_SetDirection.md)
+- [TTF_SetScript](TTF_SetScript.md)

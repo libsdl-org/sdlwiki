@@ -23,7 +23,7 @@ Returns 0 or [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT)
 ## Remarks
 
 This works just like
-[SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)(), but if the rwlock
+[SDL_LockRWLockForWriting](SDL_LockRWLockForWriting.md)(), but if the rwlock
 is not available, this function returns
 [`SDL_RWLOCK_TIMEDOUT`](SDL_RWLOCK_TIMEDOUT) immediately.
 
@@ -41,7 +41,7 @@ read-only lock before requesting a write lock.
 This function does not fail; if rwlock is NULL, it will return 0
 immediately having locked nothing. If rwlock is valid, this function will
 always either lock the rwlock and return 0, or return
-[SDL_RWLOCK_TIMEOUT](SDL_RWLOCK_TIMEOUT) and lock nothing.
+[SDL_RWLOCK_TIMEOUT](SDL_RWLOCK_TIMEOUT.md) and lock nothing.
 
 ## Version
 
@@ -49,11 +49,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRWLock](SDL_CreateRWLock)
-* [SDL_DestroyRWLock](SDL_DestroyRWLock)
-* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
-* [SDL_UnlockRWLock](SDL_UnlockRWLock)
+* [SDL_CreateRWLock](SDL_CreateRWLock.md)
+* [SDL_DestroyRWLock](SDL_DestroyRWLock.md)
+* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting.md)
+* [SDL_UnlockRWLock](SDL_UnlockRWLock.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

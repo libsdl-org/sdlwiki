@@ -19,7 +19,7 @@ SDL_TouchID SDL_GetTouchDevice(int index);
 ## Return Value
 
 Returns the touch ID with the given index on success or 0 if the index is
-invalid; call [SDL_GetError](SDL_GetError)() for more information.
+invalid; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)
+* [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

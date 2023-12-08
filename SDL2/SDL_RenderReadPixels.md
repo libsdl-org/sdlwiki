@@ -18,21 +18,21 @@ int SDL_RenderReadPixels(SDL_Renderer * renderer,
 |                  |                                                                                                                                             |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                                                                                       |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure representing the area to read, or NULL for the entire render target                                       |
-| **format**       | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the desired format of the pixel data, or 0 to use the format of the rendering target |
+| **rect**         | an [SDL_Rect](SDL_Rect.md) structure representing the area to read, or NULL for the entire render target                                       |
+| **format**       | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) value of the desired format of the pixel data, or 0 to use the format of the rendering target |
 | **pixels**       | a pointer to the pixel data to copy into                                                                                                    |
 | **pitch**        | the pitch of the `pixels` parameter                                                                                                         |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 **WARNING**: This is a very slow operation, and should not be used
 frequently. If you're using this on the main rendering target, it should be
-called after rendering and before [SDL_RenderPresent](SDL_RenderPresent)().
+called after rendering and before [SDL_RenderPresent](SDL_RenderPresent.md)().
 
 `pitch` specifies the number of bytes between rows in the destination
 `pixels` data. This allows you to write to a subrectangle or have padded
@@ -46,5 +46,4 @@ Bitmap data pads all rows to multiples of 4 bytes).
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ void Mix_ChannelFinished(void (SDLCALL *channel_finished)(int channel));
 ## Remarks
 
 The callback may be called from the mixer's audio callback or it could be
-called as a result of [Mix_HaltChannel](Mix_HaltChannel)(), etc.
+called as a result of [Mix_HaltChannel](Mix_HaltChannel.md)(), etc.
 
 The callback has a single parameter, `channel`, which says what mixer
 channel has just stopped.
@@ -35,5 +35,4 @@ A NULL pointer will disable the callback.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

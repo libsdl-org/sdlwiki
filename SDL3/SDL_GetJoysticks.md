@@ -19,8 +19,8 @@ SDL_JoystickID* SDL_GetJoysticks(int *count);
 ## Return Value
 
 Returns a 0 terminated array of joystick instance IDs which should be freed
-with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+with [SDL_free](SDL_free.md)(), or NULL on error; call
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_OpenJoystick](SDL_OpenJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

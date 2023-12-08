@@ -18,7 +18,7 @@ SDL_bool SDL_GetWindowGrab(SDL_Window * window);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if input is grabbed, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if input is grabbed, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Version
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+* [SDL_SetWindowGrab](SDL_SetWindowGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

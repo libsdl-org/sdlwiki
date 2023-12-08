@@ -31,7 +31,7 @@ calling it with 0 intensity stops any rumbling.
 Note that this is rumbling of the _triggers_ and not the game controller as
 a whole. This is currently only supported on Xbox One controllers. If you
 want the (more common) whole-controller rumble, use
-[SDL_GameControllerRumble](SDL_GameControllerRumble)() instead.
+[SDL_GameControllerRumble](SDL_GameControllerRumble.md)() instead.
 
 ## Version
 
@@ -39,8 +39,7 @@ This function is available since SDL 2.0.14.
 
 ## Related Functions
 
-* [SDL_GameControllerHasRumbleTriggers](SDL_GameControllerHasRumbleTriggers)
+* [SDL_GameControllerHasRumbleTriggers](SDL_GameControllerHasRumbleTriggers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

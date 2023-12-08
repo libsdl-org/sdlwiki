@@ -23,16 +23,16 @@ int SDL_GetDisplayUsableBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 |                   |                                                                      |
 | ----------------- | -------------------------------------------------------------------- |
 | **displayID**     | the instance ID of the display to query                              |
-| **rect**          | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+| **rect**          | the [SDL_Rect](SDL_Rect.md) structure filled in with the display bounds |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-This is the same area as [SDL_GetDisplayBounds](SDL_GetDisplayBounds)()
+This is the same area as [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)()
 reports, but with portions reserved by the system removed. For example, on
 Apple's macOS, this subtracts the area occupied by the menu bar and dock.
 
@@ -46,11 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

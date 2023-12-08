@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_ResetKeyboard
 
-Clear the state of the keyboard 
+Clear the state of the keyboard
 
 ## Syntax
 
@@ -20,8 +20,7 @@ This function is available since SDL 2.24.0.
 
 ## Related Functions
 
-* [SDL_GetKeyboardState](SDL_GetKeyboardState)
+* [SDL_GetKeyboardState](SDL_GetKeyboardState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

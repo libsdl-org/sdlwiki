@@ -31,7 +31,7 @@ SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
 ## Return Value
 
 Returns a new cursor with the specified parameters on success or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -47,15 +47,15 @@ The cursor is created in black and white according to the following:
 - data=1, mask=0: inverted color if possible, black if not.
 
 Cursors created with this function must be freed with
-[SDL_DestroyCursor](SDL_DestroyCursor)().
+[SDL_DestroyCursor](SDL_DestroyCursor.md)().
 
 If you want to have a color cursor, or create your cursor from an
-[SDL_Surface](SDL_Surface), you should use
-[SDL_CreateColorCursor](SDL_CreateColorCursor)(). Alternately, you can hide
+[SDL_Surface](SDL_Surface.md), you should use
+[SDL_CreateColorCursor](SDL_CreateColorCursor.md)(). Alternately, you can hide
 the cursor and draw your own as part of your game's rendering, but it will
 be bound to the framerate.
 
-Also, since SDL 2.0.0, [SDL_CreateSystemCursor](SDL_CreateSystemCursor)()
+Also, since SDL 2.0.0, [SDL_CreateSystemCursor](SDL_CreateSystemCursor.md)()
 is available, which provides twelve readily available system cursors to
 pick from.
 
@@ -151,10 +151,8 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 
 ## Related Functions
 
-* [SDL_DestroyCursor](SDL_DestroyCursor)
-* [SDL_SetCursor](SDL_SetCursor)
+* [SDL_DestroyCursor](SDL_DestroyCursor.md)
+* [SDL_SetCursor](SDL_SetCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)

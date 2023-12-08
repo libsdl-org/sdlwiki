@@ -21,7 +21,7 @@ int SDL_GetWindowSizeInPixels(SDL_Window *window, int *w, int *h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,9 +29,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

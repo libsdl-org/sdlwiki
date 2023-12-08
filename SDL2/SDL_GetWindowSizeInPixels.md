@@ -21,7 +21,7 @@ void SDL_GetWindowSizeInPixels(SDL_Window * window,
 
 ## Remarks
 
-This may differ from [SDL_GetWindowSize](SDL_GetWindowSize)() if we're
+This may differ from [SDL_GetWindowSize](SDL_GetWindowSize.md)() if we're
 rendering to a high-DPI drawable, i.e. the window was created with
 [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-DPI support (Apple calls this "Retina"), and not disabled by the
@@ -33,9 +33,8 @@ This function is available since SDL 2.26.0.
 
 ## Related Functions
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

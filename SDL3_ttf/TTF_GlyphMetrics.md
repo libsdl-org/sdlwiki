@@ -28,7 +28,7 @@ https://freetype.sourceforge.net/freetype2/docs/tutorial/step2.html
 Note that this version of the function takes a 16-bit character code, which
 covers the Basic Multilingual Plane, but is insufficient to cover the
 entire set of possible Unicode values, including emoji glyphs. You should
-use [TTF_GlyphMetrics32](TTF_GlyphMetrics32)() instead, which offers the
+use [TTF_GlyphMetrics32](TTF_GlyphMetrics32.md)() instead, which offers the
 same functionality but takes a 32-bit codepoint instead.
 
 The only reason to use this function is that it was available since the
@@ -40,8 +40,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_GlyphMetrics32](TTF_GlyphMetrics32)
+* [TTF_GlyphMetrics32](TTF_GlyphMetrics32.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

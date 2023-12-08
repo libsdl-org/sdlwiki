@@ -29,7 +29,7 @@ even be zero. Add more data or flush the stream if you need the data now.
 If the stream has so much data that it would overflow an int, the return
 value is clamped to a maximum value, but no queued data is lost; if there
 are gigabytes of data queued, the app might need to read some of it with
-[SDL_GetAudioStreamData](SDL_GetAudioStreamData) before this function's
+[SDL_GetAudioStreamData](SDL_GetAudioStreamData.md) before this function's
 return value is no longer clamped.
 
 ## Thread Safety
@@ -42,13 +42,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_CreateAudioStream](SDL_CreateAudioStream.md)
+* [SDL_PutAudioStreamData](SDL_PutAudioStreamData.md)
+* [SDL_GetAudioStreamData](SDL_GetAudioStreamData.md)
+* [SDL_FlushAudioStream](SDL_FlushAudioStream.md)
+* [SDL_ClearAudioStream](SDL_ClearAudioStream.md)
+* [SDL_DestroyAudioStream](SDL_DestroyAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

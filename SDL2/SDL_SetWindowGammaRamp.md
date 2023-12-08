@@ -25,7 +25,7 @@ int SDL_SetWindowGammaRamp(SDL_Window * window,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,7 +39,7 @@ Despite the name and signature, this method sets the gamma ramp of the
 entire display, not an individual window. A window is considered to be
 owned by the display that contains the window's center pixel. (The index of
 this display can be retrieved using
-[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)().) The gamma ramp
+[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex.md)().) The gamma ramp
 set will not follow the window if it is moved to another display.
 
 ## Version
@@ -48,8 +48,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowGammaRamp](SDL_GetWindowGammaRamp)
+* [SDL_GetWindowGammaRamp](SDL_GetWindowGammaRamp.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

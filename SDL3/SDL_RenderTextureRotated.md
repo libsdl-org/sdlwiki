@@ -23,17 +23,16 @@ int SDL_RenderTextureRotated(SDL_Renderer *renderer, SDL_Texture *texture,
 | **dstrect**      | A pointer to the destination rectangle, or NULL for the entire rendering target.                                                                 |
 | **angle**        | An angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction                            |
 | **center**       | A pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2). |
-| **flip**         | An [SDL_RendererFlip](SDL_RendererFlip) value stating which flipping actions should be performed on the texture                                  |
+| **flip**         | An [SDL_RendererFlip](SDL_RendererFlip.md) value stating which flipping actions should be performed on the texture                                  |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

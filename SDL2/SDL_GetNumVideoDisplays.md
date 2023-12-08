@@ -13,7 +13,7 @@ int SDL_GetNumVideoDisplays(void);
 ## Return Value
 
 Returns a number >= 1 or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -21,8 +21,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

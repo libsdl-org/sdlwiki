@@ -15,12 +15,12 @@ int SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_Rect *rect);
 |                  |                                                                                                                    |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **renderer**     | the rendering context                                                                                              |
-| **rect**         | the [SDL_Rect](SDL_Rect) structure representing the drawing area, or NULL to set the viewport to the entire target |
+| **rect**         | the [SDL_Rect](SDL_Rect.md) structure representing the drawing area, or NULL to set the viewport to the entire target |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderViewport](SDL_GetRenderViewport)
+* [SDL_GetRenderViewport](SDL_GetRenderViewport.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

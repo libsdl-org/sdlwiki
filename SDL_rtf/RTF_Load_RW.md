@@ -29,7 +29,7 @@ This can be called multiple times to change the text displayed.
 If `freesrc` is non-zero, this function will close/free `src`, whether this
 function succeeded or not.
 
-On failure, call [RTF_GetError](RTF_GetError)() to get a human-readable
+On failure, call [RTF_GetError](RTF_GetError.md)() to get a human-readable
 text message corresponding to the error.
 
 ## Version
@@ -37,5 +37,4 @@ text message corresponding to the error.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

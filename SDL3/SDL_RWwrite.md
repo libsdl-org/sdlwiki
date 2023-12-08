@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RWwrite
 
-Write to an [SDL_RWops](SDL_RWops) data stream.
+Write to an [SDL_RWops](SDL_RWops.md) data stream.
 
 ## Syntax
 
@@ -14,14 +14,14 @@ size_t SDL_RWwrite(SDL_RWops *context, const void *ptr, size_t size);
 
 |                 |                                                  |
 | --------------- | ------------------------------------------------ |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure |
+| **context**     | a pointer to an [SDL_RWops](SDL_RWops.md) structure |
 | **ptr**         | a pointer to a buffer containing data to write   |
 | **size**        | the number of bytes to write                     |
 
 ## Return Value
 
 Returns the number of bytes written, which will be less than `num` on
-error; call [SDL_GetError](SDL_GetError)() for more information.
+error; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -36,8 +36,8 @@ return -1. For streams that support non-blocking operation, if nothing was
 written because it would require blocking, this function returns -2 to
 distinguish that this is not an error and the caller can try again later.
 
-[SDL_RWwrite](SDL_RWwrite) is actually a function wrapper that calls the
-[SDL_RWops](SDL_RWops)'s `write` method appropriately, to simplify
+[SDL_RWwrite](SDL_RWwrite.md) is actually a function wrapper that calls the
+[SDL_RWops](SDL_RWops.md)'s `write` method appropriately, to simplify
 application development.
 
 It is an error to specify a negative `size`, but this parameter is signed
@@ -66,15 +66,13 @@ if(rw != NULL) {
 
 ## Related Functions
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWprint](SDL_RWprint)
-* [SDL_RWread](SDL_RWread)
-* [SDL_RWseek](SDL_RWseek)
+* [SDL_RWclose](SDL_RWclose.md)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem.md)
+* [SDL_RWFromFile](SDL_RWFromFile.md)
+* [SDL_RWFromMem](SDL_RWFromMem.md)
+* [SDL_RWprint](SDL_RWprint.md)
+* [SDL_RWread](SDL_RWread.md)
+* [SDL_RWseek](SDL_RWseek.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

@@ -19,12 +19,12 @@ SDL_Haptic* SDL_HapticOpenFromJoystick(SDL_Joystick *
 
 |                  |                                                                 |
 | ---------------- | --------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to create a haptic device from |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) to create a haptic device from |
 
 ## Return Value
 
 Returns a valid haptic device identifier on success or NULL on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -42,11 +42,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticClose](SDL_HapticClose)
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_JoystickIsHaptic](SDL_JoystickIsHaptic)
+* [SDL_HapticClose](SDL_HapticClose.md)
+* [SDL_HapticOpen](SDL_HapticOpen.md)
+* [SDL_JoystickIsHaptic](SDL_JoystickIsHaptic.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

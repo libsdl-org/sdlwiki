@@ -24,6 +24,4 @@ prefetch sizes.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryCPU](CategoryCPU.md)

@@ -15,12 +15,12 @@ int SDL_GetNumVideoCaptureFrameSizes(SDL_VideoCaptureDevice *device, Uint32 form
 |                |                                                                 |
 | -------------- | --------------------------------------------------------------- |
 | **device**     | opened video capture device                                     |
-| **format**     | frame pixel format ([SDL_PixelFormatEnum](SDL_PixelFormatEnum)) |
+| **format**     | frame pixel format ([SDL_PixelFormatEnum](SDL_PixelFormatEnum.md)) |
 
 ## Return Value
 
 Returns number of framesizes or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,9 +28,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetVideoCaptureFrameSize](SDL_GetVideoCaptureFrameSize)
-* [SDL_SetVideoCaptureSpec](SDL_SetVideoCaptureSpec)
+* [SDL_GetVideoCaptureFrameSize](SDL_GetVideoCaptureFrameSize.md)
+* [SDL_SetVideoCaptureSpec](SDL_SetVideoCaptureSpec.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,7 +18,7 @@ Returns the active cursor or NULL if there is no mouse.
 
 This function returns a pointer to the current cursor which is owned by the
 library. It is not necessary to free the cursor with
-[SDL_FreeCursor](SDL_FreeCursor)().
+[SDL_FreeCursor](SDL_FreeCursor.md)().
 
 ## Version
 
@@ -26,8 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetCursor](SDL_SetCursor)
+* [SDL_SetCursor](SDL_SetCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

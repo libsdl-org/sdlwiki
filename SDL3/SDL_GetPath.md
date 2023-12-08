@@ -31,10 +31,10 @@ Note that the function is expensive, and should be called once at the
 beginning of the execution and kept for as long as needed.
 
 The returned value is owned by the caller and should be freed with
-[SDL_free](SDL_free)().
+[SDL_free](SDL_free.md)().
 
 If NULL is returned, the error may be obtained with
-[SDL_GetError](SDL_GetError)().
+[SDL_GetError](SDL_GetError.md)().
 
 ## Version
 
@@ -42,8 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_Folder](SDL_Folder)
+* [SDL_Folder](SDL_Folder.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

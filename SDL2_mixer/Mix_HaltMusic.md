@@ -20,7 +20,7 @@ This will stop further playback of music until a new music object is
 started there.
 
 Any halted music will call any callback specified by
-[Mix_HookMusicFinished](Mix_HookMusicFinished)() before this function
+[Mix_HookMusicFinished](Mix_HookMusicFinished.md)() before this function
 returns.
 
 ## Version
@@ -28,5 +28,4 @@ returns.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

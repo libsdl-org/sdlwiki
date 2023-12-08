@@ -14,12 +14,12 @@ SDL_JoystickID SDL_GetGamepadInstanceID(SDL_Gamepad *gamepad);
 
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad.md)() |
 
 ## Return Value
 
 Returns the instance ID of the specified gamepad on success or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenGamepad](SDL_OpenGamepad)
+* [SDL_OpenGamepad](SDL_OpenGamepad.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

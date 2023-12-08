@@ -14,12 +14,12 @@ void SDL_QuitSubSystem(Uint32 flags);
 
 |               |                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+| **flags**     | any of the flags used by [SDL_Init](SDL_Init.md)(); see [SDL_Init](SDL_Init.md) for details. |
 
 ## Remarks
 
-You still need to call [SDL_Quit](SDL_Quit)() even if you close all open
-subsystems with [SDL_QuitSubSystem](SDL_QuitSubSystem)().
+You still need to call [SDL_Quit](SDL_Quit.md)() even if you close all open
+subsystems with [SDL_QuitSubSystem](SDL_QuitSubSystem.md)().
 
 ## Version
 
@@ -52,10 +52,8 @@ int main(int argc, char **argv) {
 
 ## Related Functions
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
+* [SDL_InitSubSystem](SDL_InitSubSystem.md)
+* [SDL_Quit](SDL_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

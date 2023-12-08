@@ -20,7 +20,7 @@ int SDL_GameControllerAddMappingsFromRW(SDL_RWops * rw, int freerw);
 ## Return Value
 
 Returns the number of mappings added or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -44,10 +44,9 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
-* [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
-* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping.md)
+* [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile.md)
+* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

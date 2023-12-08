@@ -33,9 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetAudioStreamSpeed](SDL_GetAudioStreamSpeed)
-* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
+* [SDL_GetAudioStreamSpeed](SDL_GetAudioStreamSpeed.md)
+* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

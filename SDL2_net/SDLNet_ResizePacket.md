@@ -27,7 +27,7 @@ This takes an existing packet and makes sure it can contain at least
 `newsize` bytes of space for payload.
 
 When done with this packet, you can free it with
-[SDLNet_FreePacket](SDLNet_FreePacket). Packets can be used multiple times;
+[SDLNet_FreePacket](SDLNet_FreePacket.md). Packets can be used multiple times;
 you don't have to allocate a new one for each piece of data you intend to
 send.
 
@@ -45,9 +45,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_AllocPacket](SDLNet_AllocPacket)
-* [SDLNet_FreePacket](SDLNet_FreePacket)
+* [SDLNet_AllocPacket](SDLNet_AllocPacket.md)
+* [SDLNet_FreePacket](SDLNet_FreePacket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

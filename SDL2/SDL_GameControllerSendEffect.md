@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GameControllerSendEffect
 
-Send a controller specific effect packet 
+Send a controller specific effect packet
 
 ## Syntax
 
@@ -28,5 +28,4 @@ packets
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

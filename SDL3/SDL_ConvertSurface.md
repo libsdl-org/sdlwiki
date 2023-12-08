@@ -15,13 +15,13 @@ SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface,
 
 |                 |                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------- |
-| **surface**     | the existing [SDL_Surface](SDL_Surface) structure to convert                           |
-| **format**      | the [SDL_PixelFormat](SDL_PixelFormat) structure that the new surface is optimized for |
+| **surface**     | the existing [SDL_Surface](SDL_Surface.md) structure to convert                           |
+| **format**      | the [SDL_PixelFormat](SDL_PixelFormat.md) structure that the new surface is optimized for |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -47,11 +47,9 @@ SDL_DestroyPixelFormat(format);
 
 ## Related Functions
 
-* [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
-* [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
-* [SDL_CreateSurface](SDL_CreateSurface)
+* [SDL_CreatePixelFormat](SDL_CreatePixelFormat.md)
+* [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat.md)
+* [SDL_CreateSurface](SDL_CreateSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

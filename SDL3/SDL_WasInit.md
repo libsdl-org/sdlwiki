@@ -14,7 +14,7 @@ Uint32 SDL_WasInit(Uint32 flags);
 
 |               |                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+| **flags**     | any of the flags used by [SDL_Init](SDL_Init.md)(); see [SDL_Init](SDL_Init.md) for details. |
 
 ## Return Value
 
@@ -61,10 +61,8 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 
 ## Related Functions
 
-* [SDL_Init](SDL_Init)
-* [SDL_InitSubSystem](SDL_InitSubSystem)
+* [SDL_Init](SDL_Init.md)
+* [SDL_InitSubSystem](SDL_InitSubSystem.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

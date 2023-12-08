@@ -20,9 +20,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_PauseMusic](Mix_PauseMusic)
-* [Mix_ResumeMusic](Mix_ResumeMusic)
+* [Mix_PauseMusic](Mix_PauseMusic.md)
+* [Mix_ResumeMusic](Mix_ResumeMusic.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

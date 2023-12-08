@@ -14,12 +14,12 @@ SDL_bool SDL_IsAudioDevicePaused(SDL_AudioDeviceID dev);
 
 |             |                                                                 |
 | ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if device is valid and paused,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if device is valid and paused,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -27,7 +27,7 @@ Unlike in SDL2, audio devices start in an _unpaused_ state, since an app
 has to bind a stream before any audio will flow.
 
 Physical devices can not be paused or unpaused, only logical devices
-created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() can be.
+created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() can be.
 Physical and invalid device IDs will report themselves as unpaused here.
 
 ## Thread Safety
@@ -40,10 +40,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
-* [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
-* [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)
+* [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice.md)
+* [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

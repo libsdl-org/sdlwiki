@@ -25,7 +25,7 @@ callback never returned non-zero.
 ## Remarks
 
 This function will take the string reported by
-[Mix_GetSoundFonts](Mix_GetSoundFonts)(), split it up into separate paths,
+[Mix_GetSoundFonts](Mix_GetSoundFonts.md)(), split it up into separate paths,
 as delimited by semicolons in the string, and call a callback function for
 each separate path.
 
@@ -44,8 +44,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_GetSoundFonts](Mix_GetSoundFonts)
+* [Mix_GetSoundFonts](Mix_GetSoundFonts.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

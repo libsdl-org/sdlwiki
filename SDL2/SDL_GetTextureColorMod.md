@@ -24,7 +24,7 @@ int SDL_GetTextureColorMod(SDL_Texture * texture,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -32,9 +32,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
-* [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
+* [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod.md)
+* [SDL_SetTextureColorMod](SDL_SetTextureColorMod.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

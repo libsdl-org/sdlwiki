@@ -30,7 +30,7 @@ specified string will take to fully render.
 
 This does not need to render the string to do this calculation.
 
-You almost certainly want [TTF_SizeUTF8](TTF_SizeUTF8)() unless you're sure
+You almost certainly want [TTF_SizeUTF8](TTF_SizeUTF8.md)() unless you're sure
 you have a 1-byte Latin1 encoding. US ASCII characters will work with
 either function, but most other Unicode characters packed into a `const
 char *` will need UTF-8.
@@ -41,9 +41,8 @@ This function is available since SDL_ttf 2.0.12.
 
 ## Related Functions
 
-* [TTF_SizeUTF8](TTF_SizeUTF8)
-* [TTF_SizeUNICODE](TTF_SizeUNICODE)
+* [TTF_SizeUTF8](TTF_SizeUTF8.md)
+* [TTF_SizeUNICODE](TTF_SizeUNICODE.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

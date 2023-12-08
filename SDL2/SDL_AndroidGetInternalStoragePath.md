@@ -13,7 +13,7 @@ const char * SDL_AndroidGetInternalStoragePath(void);
 ## Return Value
 
 Returns the path used for internal storage or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
+* [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

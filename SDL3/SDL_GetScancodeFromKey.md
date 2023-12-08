@@ -18,16 +18,16 @@ SDL_Scancode SDL_GetScancodeFromKey(SDL_Keycode key);
 
 |             |                                                 |
 | ----------- | ----------------------------------------------- |
-| **key**     | the desired [SDL_Keycode](SDL_Keycode) to query |
+| **key**     | the desired [SDL_Keycode](SDL_Keycode.md) to query |
 
 ## Return Value
 
-Returns the [SDL_Scancode](SDL_Scancode) that corresponds to the given
-[SDL_Keycode](SDL_Keycode).
+Returns the [SDL_Scancode](SDL_Scancode.md) that corresponds to the given
+[SDL_Keycode](SDL_Keycode.md).
 
 ## Remarks
 
-See [SDL_Scancode](SDL_Scancode) for details.
+See [SDL_Scancode](SDL_Scancode.md) for details.
 
 ## Version
 
@@ -35,10 +35,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
-* [SDL_GetScancodeName](SDL_GetScancodeName)
+* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode.md)
+* [SDL_GetScancodeName](SDL_GetScancodeName.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryKeyboard](CategoryKeyboard.md), [CategoryDraft](CategoryDraft.md)

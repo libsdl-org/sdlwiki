@@ -31,7 +31,7 @@ new surface, or NULL if there was an error.
 
 This will not word-wrap the string; you'll get a surface with a single line
 of text, as long as the string requires. You can use
-[TTF_RenderUNICODE_Blended_Wrapped](TTF_RenderUNICODE_Blended_Wrapped)()
+[TTF_RenderUNICODE_Blended_Wrapped](TTF_RenderUNICODE_Blended_Wrapped.md)()
 instead if you need to wrap the output to multiple lines.
 
 This will not wrap on newline characters.
@@ -42,9 +42,9 @@ large Unicode values, such as emoji glyphs. These codepoints are accessible
 through the UTF-8 version of this function.
 
 You can render at other quality levels with
-[TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid),
-[TTF_RenderUNICODE_Shaded](TTF_RenderUNICODE_Shaded), and
-[TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD).
+[TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid.md),
+[TTF_RenderUNICODE_Shaded](TTF_RenderUNICODE_Shaded.md), and
+[TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD.md).
 
 ## Version
 
@@ -52,8 +52,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_RenderUTF8_Blended](TTF_RenderUTF8_Blended)
+* [TTF_RenderUTF8_Blended](TTF_RenderUTF8_Blended.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

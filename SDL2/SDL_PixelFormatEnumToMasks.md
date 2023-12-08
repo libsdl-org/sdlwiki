@@ -19,7 +19,7 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32 format,
 
 |                |                                                              |
 | -------------- | ------------------------------------------------------------ |
-| **format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+| **format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) values |
 | **bpp**        | a bits per pixel value; usually 15, 16, or 32                |
 | **Rmask**      | a pointer filled in with the red mask for the format         |
 | **Gmask**      | a pointer filled in with the green mask for the format       |
@@ -28,8 +28,8 @@ SDL_bool SDL_PixelFormatEnumToMasks(Uint32 format,
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) if the
-conversion wasn't possible; call [SDL_GetError](SDL_GetError)() for more
+Returns [SDL_TRUE](SDL_TRUE.md) on success or [SDL_FALSE](SDL_FALSE.md) if the
+conversion wasn't possible; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -38,8 +38,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_MasksToPixelFormatEnum](SDL_MasksToPixelFormatEnum)
+* [SDL_MasksToPixelFormatEnum](SDL_MasksToPixelFormatEnum.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

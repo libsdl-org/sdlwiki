@@ -15,17 +15,16 @@ int SDL_SetWindowFocusable(SDL_Window *window, SDL_bool focusable);
 |                   |                                                                                            |
 | ----------------- | ------------------------------------------------------------------------------------------ |
 | **window**        | the window to set focusable state                                                          |
-| **focusable**     | [SDL_TRUE](SDL_TRUE) to allow input focus, [SDL_FALSE](SDL_FALSE) to not allow input focus |
+| **focusable**     | [SDL_TRUE](SDL_TRUE.md) to allow input focus, [SDL_FALSE](SDL_FALSE.md) to not allow input focus |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

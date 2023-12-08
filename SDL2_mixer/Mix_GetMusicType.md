@@ -18,7 +18,7 @@ Mix_MusicType Mix_GetMusicType(const Mix_Music *music);
 
 ## Return Value
 
-Returns the [Mix_MusicType](Mix_MusicType) for the music object.
+Returns the [Mix_MusicType](Mix_MusicType.md) for the music object.
 
 ## Remarks
 
@@ -30,5 +30,4 @@ MUS_NONE if nothing is currently playing).
 This function is available since SDL_mixer 2.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

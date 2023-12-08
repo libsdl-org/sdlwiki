@@ -20,7 +20,7 @@ int SDL_SetAudioPostmixCallback(SDL_AudioDeviceID devid, SDL_AudioPostmixCallbac
 
 ## Return Value
 
-Returns zero on success, -1 on error; call [SDL_GetError](SDL_GetError)()
+Returns zero on success, -1 on error; call [SDL_GetError](SDL_GetError.md)()
 for more information.
 
 ## Remarks
@@ -51,7 +51,7 @@ other synchronization device.
 
 All of this to say: there are specific needs this callback can fulfill, but
 it is not the simplest interface. Apps should generally provide audio in
-their preferred format through an [SDL_AudioStream](SDL_AudioStream) and
+their preferred format through an [SDL_AudioStream](SDL_AudioStream.md) and
 let SDL handle the difference.
 
 This function is extremely time-sensitive; the callback should do the least
@@ -73,5 +73,4 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

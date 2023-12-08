@@ -26,10 +26,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetHint](SDL_SetHint)
-* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
+* [SDL_SetHint](SDL_SetHint.md)
+* [SDL_SetHintWithPriority](SDL_SetHintWithPriority.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

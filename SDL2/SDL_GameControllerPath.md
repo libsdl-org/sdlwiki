@@ -14,7 +14,7 @@ const char* SDL_GameControllerPath(SDL_GameController *gamecontroller);
 
 |                        |                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
+| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen.md)() |
 
 ## Return Value
 
@@ -24,7 +24,7 @@ if there is no path or the identifier passed is invalid.
 ## Remarks
 
 This is the same path as returned by
-[SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)(), but it
+[SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex.md)(), but it
 takes a controller identifier instead of the (unstable) device index.
 
 ## Version
@@ -33,8 +33,7 @@ This function is available since SDL 2.24.0.
 
 ## Related Functions
 
-* [SDL_GameControllerPathForIndex](SDL_GameControllerPathForIndex)
+* [SDL_GameControllerPathForIndex](SDL_GameControllerPathForIndex.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

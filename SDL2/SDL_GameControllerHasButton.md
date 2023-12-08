@@ -16,12 +16,12 @@ SDL_bool SDL_GameControllerHasButton(SDL_GameController *gamecontroller,
 |                        |                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------- |
 | **gamecontroller**     | a game controller                                                                   |
-| **button**             | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+| **button**             | a button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton.md) value) |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the controller has this button,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the controller has this button,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -33,5 +33,4 @@ as that is all the information SDL has about the physical device.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

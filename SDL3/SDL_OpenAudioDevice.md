@@ -14,13 +14,13 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(SDL_AudioDeviceID devid, const SDL_AudioSp
 
 |               |                                                                                                                                                                                                                       |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **devid**     | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE) for the most reasonable default device. |
+| **devid**     | the device instance id to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT.md) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE.md) for the most reasonable default device. |
 | **spec**      | the requested device configuration. Can be NULL to use reasonable defaults.                                                                                                                                           |
 
 ## Return Value
 
 Returns The device ID on success, 0 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,7 +34,7 @@ audio playing, bind a stream and supply audio data to it. Unlike SDL2,
 there is no audio callback; you only bind audio streams and make sure they
 have data flowing into them (however, you can simulate SDL2's semantics
 fairly closely by using
-[SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream) instead of this
+[SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream.md) instead of this
 function).
 
 If you don't care about opening a specific device, pass a `devid` of either
@@ -53,12 +53,12 @@ promise the device will honor that request for several reasons. As such,
 it's only meant to be a hint as to what data your app will provide. Audio
 streams will accept data in whatever format you specify and manage
 conversion for you as appropriate.
-[SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat) can tell you the
+[SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat.md) can tell you the
 preferred format for the device before opening and the actual format the
 device is using after opening.
 
 It's legal to open the same device ID more than once; each successful open
-will generate a new logical [SDL_AudioDeviceID](SDL_AudioDeviceID) that is
+will generate a new logical [SDL_AudioDeviceID](SDL_AudioDeviceID.md) that is
 managed separately from others on the same physical device. This allows
 libraries to open a device separately from the main app and bind its own
 streams without conflicting.
@@ -68,7 +68,7 @@ function; doing so just creates another logical device on the same physical
 device. This may be useful for making logical groupings of audio streams.
 
 This function returns the opened device ID on success. This is a new,
-unique [SDL_AudioDeviceID](SDL_AudioDeviceID) that represents a logical
+unique [SDL_AudioDeviceID](SDL_AudioDeviceID.md) that represents a logical
 device.
 
 Some backends might offer arbitrary devices (for example, a networked audio
@@ -80,7 +80,7 @@ this would be an end user setting an environment variable for their custom
 need, and not something an application should specifically manage.
 
 When done with an audio device, possibly at the end of the app's life, one
-should call [SDL_CloseAudioDevice](SDL_CloseAudioDevice)() on the returned
+should call [SDL_CloseAudioDevice](SDL_CloseAudioDevice.md)() on the returned
 device id.
 
 ## Thread Safety
@@ -120,10 +120,8 @@ if (dev == 0) {
 
 ## Related Functions
 
-* [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
-* [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
+* [SDL_CloseAudioDevice](SDL_CloseAudioDevice.md)
+* [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

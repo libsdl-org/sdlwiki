@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetClipboardData
 
-Offer clipboard data to the OS 
+Offer clipboard data to the OS
 
 ## Syntax
 
@@ -23,7 +23,7 @@ int SDL_SetClipboardData(SDL_ClipboardDataCallback callback, SDL_ClipboardCleanu
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -42,11 +42,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)
-* [SDL_SetClipboardData](SDL_SetClipboardData)
-* [SDL_GetClipboardData](SDL_GetClipboardData)
-* [SDL_HasClipboardData](SDL_HasClipboardData)
+* [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback.md)
+* [SDL_SetClipboardData](SDL_SetClipboardData.md)
+* [SDL_GetClipboardData](SDL_GetClipboardData.md)
+* [SDL_HasClipboardData](SDL_HasClipboardData.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

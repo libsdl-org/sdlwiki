@@ -16,12 +16,12 @@ SDL_GameControllerHasAxis(SDL_GameController *gamecontroller, SDL_GameController
 |                        |                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------ |
 | **gamecontroller**     | a game controller                                                              |
-| **axis**               | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis) value) |
+| **axis**               | an axis enum value (an [SDL_GameControllerAxis](SDL_GameControllerAxis.md) value) |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the controller has this axis,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the controller has this axis,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -33,5 +33,4 @@ that is all the information SDL has about the physical device.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

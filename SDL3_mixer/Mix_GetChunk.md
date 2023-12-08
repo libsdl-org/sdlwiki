@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
 # Mix_GetChunk
 
-Get the [Mix_Chunk](Mix_Chunk) currently associated with a mixer channel.
+Get the [Mix_Chunk](Mix_Chunk.md) currently associated with a mixer channel.
 
 ## Syntax
 
@@ -29,5 +29,4 @@ You may not specify MAX_CHANNEL_POST or -1 for a channel.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,12 +14,12 @@ const char* SDL_GetJoystickPath(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_OpenJoystick](SDL_OpenJoystick.md)() |
 
 ## Return Value
 
 Returns the path of the selected joystick. If no path can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
+function returns NULL; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickInstancePath](SDL_GetJoystickInstancePath)
+* [SDL_GetJoystickInstancePath](SDL_GetJoystickInstancePath.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ float SDL_GetDisplayContentScale(SDL_DisplayID displayID);
 ## Return Value
 
 Returns The content scale of the display, or 0.0f on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Remarks
 
@@ -34,8 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

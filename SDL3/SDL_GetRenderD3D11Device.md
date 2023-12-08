@@ -19,7 +19,7 @@ ID3D11Device* SDL_GetRenderD3D11Device(SDL_Renderer * renderer);
 ## Return Value
 
 Returns the D3D11 device associated with given renderer or NULL if it is
-not a D3D11 renderer; call [SDL_GetError](SDL_GetError)() for more
+not a D3D11 renderer; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,5 +32,4 @@ resource leak.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

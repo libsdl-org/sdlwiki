@@ -29,7 +29,7 @@ audio. A value greater than 1.0 will play the audio faster, and at a higher
 pitch. A value less than 1.0 will play the audio slower, and at a lower
 pitch.
 
-This is applied during [SDL_GetAudioStreamData](SDL_GetAudioStreamData),
+This is applied during [SDL_GetAudioStreamData](SDL_GetAudioStreamData.md),
 and can be continuously changed to create various effects.
 
 ## Thread Safety
@@ -43,9 +43,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetAudioStreamFrequencyRatio](SDL_GetAudioStreamFrequencyRatio)
-* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
+* [SDL_GetAudioStreamFrequencyRatio](SDL_GetAudioStreamFrequencyRatio.md)
+* [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

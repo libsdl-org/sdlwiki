@@ -20,14 +20,14 @@ int SDL_TryWaitSemaphore(SDL_Semaphore *sem);
 
 Returns 0 if the wait succeeds, [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
 if the wait would block, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function checks to see if the semaphore pointed to by `sem` has a
 positive value and atomically decrements the semaphore value if it does. If
 the semaphore doesn't have a positive value, the function immediately
-returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
+returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT.md).
 
 ## Version
 
@@ -35,13 +35,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+* [SDL_CreateSemaphore](SDL_CreateSemaphore.md)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore.md)
+* [SDL_PostSemaphore](SDL_PostSemaphore.md)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue.md)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore.md)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RenderGeometry
 
-Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod.md) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md) are ignored).
 
 ## Syntax
 
@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 ```c
 #include <SDL.h>
 
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[])
 {
   SDL_bool quit = SDL_FALSE;
   SDL_Window *window = SDL_CreateWindow("Triangle Example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, 0);
@@ -61,19 +61,19 @@ int main(int argc, char *argv[])
   vert[1].color.b = 255;
   vert[1].color.a = 255;
 
-  // right 
+  // right
   vert[2].position.x = 600;
   vert[2].position.y = 450;
   vert[2].color.r = 0;
   vert[2].color.g = 255;
   vert[2].color.b = 0;
   vert[2].color.a = 255;
- 
+
   while (!quit) {
    SDL_Event ev;
    while (SDL_PollEvent(&ev) != 0) {
       switch(ev.type) {
-        case SDL_EVENT_QUIT: 
+        case SDL_EVENT_QUIT:
         quit = SDL_TRUE;
         break;
       }
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 
     SDL_RenderPresent(renderer);
   }
-  
+
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
   SDL_Quit();
@@ -95,10 +95,8 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-* [SDL_Vertex](SDL_Vertex)
+* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw.md)
+* [SDL_Vertex](SDL_Vertex.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

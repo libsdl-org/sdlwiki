@@ -20,8 +20,8 @@ SDL_bool SDL_DXGIGetOutputInfo( int displayIndex, int *adapterIndex, int *output
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on success or [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE.md) on success or [SDL_FALSE](SDL_FALSE.md) on
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -30,12 +30,11 @@ The DXGI Adapter and Output indices can be passed to `EnumAdapters` and
 DX11 device and swap chain.
 
 Before SDL 2.0.4 this function did not return a value. Since SDL 2.0.4 it
-returns an [SDL_bool](SDL_bool).
+returns an [SDL_bool](SDL_bool.md).
 
 ## Version
 
 This function is available since SDL 2.0.2.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

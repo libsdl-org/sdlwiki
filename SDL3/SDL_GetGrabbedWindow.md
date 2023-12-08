@@ -27,11 +27,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowGrab](SDL_GetWindowGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+* [SDL_GetWindowGrab](SDL_GetWindowGrab.md)
+* [SDL_SetWindowGrab](SDL_SetWindowGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

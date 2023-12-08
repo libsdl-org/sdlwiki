@@ -21,12 +21,12 @@ int SDL_PutAudioStreamData(SDL_AudioStream *stream, const void *buf, int len);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This data must match the format/channels/samplerate specified in the latest
-call to [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat), or the format
+call to [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat.md), or the format
 specified when creating the stream if it hasn't been changed.
 
 Note that this call simply queues unconverted data for later. This is
@@ -44,13 +44,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_CreateAudioStream](SDL_CreateAudioStream.md)
+* [SDL_GetAudioStreamData](SDL_GetAudioStreamData.md)
+* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md)
+* [SDL_FlushAudioStream](SDL_FlushAudioStream.md)
+* [SDL_ClearAudioStream](SDL_ClearAudioStream.md)
+* [SDL_DestroyAudioStream](SDL_DestroyAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

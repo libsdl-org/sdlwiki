@@ -27,11 +27,11 @@ This will begin the music fading from its current volume to silence over
 `ms` milliseconds. After that time, the music is halted.
 
 Any halted music will call any callback specified by
-[Mix_HookMusicFinished](Mix_HookMusicFinished)() once the halt occurs.
+[Mix_HookMusicFinished](Mix_HookMusicFinished.md)() once the halt occurs.
 
 Fading music will change it's volume progressively, as if
-[Mix_VolumeMusic](Mix_VolumeMusic)() was called on it (which is to say: you
-probably shouldn't call [Mix_VolumeMusic](Mix_VolumeMusic)() on a fading
+[Mix_VolumeMusic](Mix_VolumeMusic.md)() was called on it (which is to say: you
+probably shouldn't call [Mix_VolumeMusic](Mix_VolumeMusic.md)() on a fading
 channel).
 
 Note that this function does not block for the number of milliseconds
@@ -43,5 +43,4 @@ mixer to manage later, and returns immediately.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

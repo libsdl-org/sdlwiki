@@ -19,7 +19,7 @@ int SDL_SemPost(SDL_sem * sem);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,13 +27,12 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_SemTryWait](SDL_SemTryWait)
-* [SDL_SemValue](SDL_SemValue)
-* [SDL_SemWait](SDL_SemWait)
-* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+* [SDL_CreateSemaphore](SDL_CreateSemaphore.md)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore.md)
+* [SDL_SemTryWait](SDL_SemTryWait.md)
+* [SDL_SemValue](SDL_SemValue.md)
+* [SDL_SemWait](SDL_SemWait.md)
+* [SDL_SemWaitTimeout](SDL_SemWaitTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

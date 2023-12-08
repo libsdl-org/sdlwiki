@@ -28,7 +28,7 @@ Returns 0 if successful, -1 on error.
 ## Remarks
 
 (A slightly simpler version of this function is available in
-[Mix_OpenAudio](Mix_OpenAudio)(), which still might meet most applications'
+[Mix_OpenAudio](Mix_OpenAudio.md)(), which still might meet most applications'
 needs.)
 
 An audio device is what generates sound, so the app must open one to make
@@ -54,8 +54,8 @@ own data is often easier to control, so aim to open the device for what you
 need.
 
 The other reason to care about specific formats: if you plan to touch the
-mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
-effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
+mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix.md), a registered
+effect, or [Mix_HookMusic](Mix_HookMusic.md)), you might have code that
 expects it to be in a specific format, and you should specify that here.
 
 The audio device frequency is specified in Hz; in modern times, 48000 is
@@ -102,14 +102,14 @@ data behind the scenes between what the app demands and what the hardware
 requires. If your app needs precisely what is requested, specify zero for
 `allowed_changes`.
 
-If changes were allowed, the app can use [Mix_QuerySpec](Mix_QuerySpec)()
+If changes were allowed, the app can use [Mix_QuerySpec](Mix_QuerySpec.md)()
 to determine the final device settings.
 
 If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
+should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice.md)().
 
 ## Version
 
@@ -117,10 +117,9 @@ This function is available since SDL_mixer 2.0.2.
 
 ## Related Functions
 
-* [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_CloseDevice](Mix_CloseDevice)
-* [Mix_QuerySpec](Mix_QuerySpec)
+* [Mix_OpenAudio](Mix_OpenAudio.md)
+* [Mix_CloseDevice](Mix_CloseDevice.md)
+* [Mix_QuerySpec](Mix_QuerySpec.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

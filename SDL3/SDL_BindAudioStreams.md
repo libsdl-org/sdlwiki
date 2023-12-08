@@ -20,7 +20,7 @@ int SDL_BindAudioStreams(SDL_AudioDeviceID devid, SDL_AudioStream **streams, int
 
 ## Return Value
 
-Returns 0 on success, -1 on error; call [SDL_GetError](SDL_GetError)() for
+Returns 0 on success, -1 on error; call [SDL_GetError](SDL_GetError.md)() for
 more information.
 
 ## Remarks
@@ -53,11 +53,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BindAudioStreams](SDL_BindAudioStreams)
-* [SDL_UnbindAudioStreams](SDL_UnbindAudioStreams)
-* [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
-* [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
+* [SDL_BindAudioStreams](SDL_BindAudioStreams.md)
+* [SDL_UnbindAudioStreams](SDL_UnbindAudioStreams.md)
+* [SDL_UnbindAudioStream](SDL_UnbindAudioStream.md)
+* [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -27,7 +27,7 @@ int SDL_WarpMouseGlobal(float x, float y);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -45,10 +45,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
+* [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

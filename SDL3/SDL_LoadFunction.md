@@ -14,18 +14,18 @@ SDL_FunctionPointer SDL_LoadFunction(void *handle, const char *name);
 
 |                |                                                                             |
 | -------------- | --------------------------------------------------------------------------- |
-| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject)() |
+| **handle**     | a valid shared object handle returned by [SDL_LoadObject](SDL_LoadObject.md)() |
 | **name**       | the name of the function to look up                                         |
 
 ## Return Value
 
 Returns a pointer to the function or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function pointer is no longer valid after calling
-[SDL_UnloadObject](SDL_UnloadObject)().
+[SDL_UnloadObject](SDL_UnloadObject.md)().
 
 This function can only look up C function names. Other languages may have
 name mangling and intrinsic language support that varies from compiler to
@@ -70,10 +70,8 @@ if (myFancyFunction != NULL) {
 
 ## Related Functions
 
-* [SDL_LoadObject](SDL_LoadObject)
-* [SDL_UnloadObject](SDL_UnloadObject)
+* [SDL_LoadObject](SDL_LoadObject.md)
+* [SDL_UnloadObject](SDL_UnloadObject.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySharedObject](CategorySharedObject.md)

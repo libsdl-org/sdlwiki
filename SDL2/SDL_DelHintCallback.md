@@ -17,7 +17,7 @@ void SDL_DelHintCallback(const char *name,
 |                  |                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------ |
 | **name**         | the hint being watched                                                                           |
-| **callback**     | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes |
+| **callback**     | An [SDL_HintCallback](SDL_HintCallback.md) function that will be called when the hint value changes |
 | **userdata**     | a pointer being passed to the callback function                                                  |
 
 ## Version
@@ -26,9 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AddHintCallback](SDL_AddHintCallback)
+* [SDL_AddHintCallback](SDL_AddHintCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

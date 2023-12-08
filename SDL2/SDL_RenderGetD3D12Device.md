@@ -19,7 +19,7 @@ ID3D12Device* SDL_RenderGetD3D12Device(SDL_Renderer* renderer);
 ## Return Value
 
 Returns the D3D12 device associated with given renderer or NULL if it is
-not a D3D12 renderer; call [SDL_GetError](SDL_GetError)() for more
+not a D3D12 renderer; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,5 +32,4 @@ resource leak.
 This function is available since SDL 2.24.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

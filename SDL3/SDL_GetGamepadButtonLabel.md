@@ -15,11 +15,11 @@ SDL_GamepadButtonLabel SDL_GetGamepadButtonLabel(SDL_Gamepad *gamepad, SDL_Gamep
 |                 |                                                                           |
 | --------------- | ------------------------------------------------------------------------- |
 | **gamepad**     | a gamepad                                                                 |
-| **button**      | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton) values) |
+| **button**      | a button index (one of the [SDL_GamepadButton](SDL_GamepadButton.md) values) |
 
 ## Return Value
 
-Returns the [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel) enum
+Returns the [SDL_GamepadButtonLabel](SDL_GamepadButtonLabel.md) enum
 corresponding to the button label
 
 ## Version
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadButtonLabelForType](SDL_GetGamepadButtonLabelForType)
+* [SDL_GetGamepadButtonLabelForType](SDL_GetGamepadButtonLabelForType.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -26,7 +26,7 @@ On macOS, this does *not* associate a MTLDevice with the CAMetalLayer on
 its own. It is up to user code to do that.
 
 The returned handle can be casted directly to a NSView or UIView. To access
-the backing CAMetalLayer, call [SDL_Metal_GetLayer](SDL_Metal_GetLayer)().
+the backing CAMetalLayer, call [SDL_Metal_GetLayer](SDL_Metal_GetLayer.md)().
 
 ## Version
 
@@ -34,9 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
-* [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
+* [SDL_Metal_DestroyView](SDL_Metal_DestroyView.md)
+* [SDL_Metal_GetLayer](SDL_Metal_GetLayer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

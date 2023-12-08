@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_RenderGeometry
 
-Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex array Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod.md) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md) are ignored).
 
 ## Syntax
 
@@ -34,8 +34,8 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-* [SDL_Vertex](SDL_Vertex)
+* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw.md)
+* [SDL_Vertex](SDL_Vertex.md)
 
 
 ## Example
@@ -69,5 +69,4 @@ SDL_RenderPresent(renderer);
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

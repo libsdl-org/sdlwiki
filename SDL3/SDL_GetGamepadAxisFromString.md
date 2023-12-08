@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetGamepadAxisFromString
 
-Convert a string into [SDL_GamepadAxis](SDL_GamepadAxis) enum.
+Convert a string into [SDL_GamepadAxis](SDL_GamepadAxis.md) enum.
 
 ## Syntax
 
@@ -14,20 +14,20 @@ SDL_GamepadAxis SDL_GetGamepadAxisFromString(const char *str);
 
 |             |                                                       |
 | ----------- | ----------------------------------------------------- |
-| **str**     | string representing a [SDL_Gamepad](SDL_Gamepad) axis |
+| **str**     | string representing a [SDL_Gamepad](SDL_Gamepad.md) axis |
 
 ## Return Value
 
-Returns the [SDL_GamepadAxis](SDL_GamepadAxis) enum corresponding to the
+Returns the [SDL_GamepadAxis](SDL_GamepadAxis.md) enum corresponding to the
 input string, or [`SDL_GAMEPAD_AXIS_INVALID`](SDL_GAMEPAD_AXIS_INVALID) if
 no match was found.
 
 ## Remarks
 
-This function is called internally to translate [SDL_Gamepad](SDL_Gamepad)
+This function is called internally to translate [SDL_Gamepad](SDL_Gamepad.md)
 mapping strings for the underlying joystick device into the consistent
-[SDL_Gamepad](SDL_Gamepad) mapping. You do not normally need to call this
-function unless you are parsing [SDL_Gamepad](SDL_Gamepad) mappings in your
+[SDL_Gamepad](SDL_Gamepad.md) mapping. You do not normally need to call this
+function unless you are parsing [SDL_Gamepad](SDL_Gamepad.md) mappings in your
 own code.
 
 Note specially that "righttrigger" and "lefttrigger" map to
@@ -41,8 +41,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadStringForAxis](SDL_GetGamepadStringForAxis)
+* [SDL_GetGamepadStringForAxis](SDL_GetGamepadStringForAxis.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

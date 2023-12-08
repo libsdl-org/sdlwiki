@@ -17,13 +17,13 @@ int SDL_RenderFillRects(SDL_Renderer * renderer,
 |                  |                                                                                      |
 | ---------------- | ------------------------------------------------------------------------------------ |
 | **renderer**     | the rendering context                                                                |
-| **rects**        | an array of [SDL_Rect](SDL_Rect) structures representing the rectangles to be filled |
+| **rects**        | an array of [SDL_Rect](SDL_Rect.md) structures representing the rectangles to be filled |
 | **count**        | the number of rectangles                                                             |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -31,15 +31,14 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderDrawLine](SDL_RenderDrawLine)
-* [SDL_RenderDrawLines](SDL_RenderDrawLines)
-* [SDL_RenderDrawPoint](SDL_RenderDrawPoint)
-* [SDL_RenderDrawPoints](SDL_RenderDrawPoints)
-* [SDL_RenderDrawRect](SDL_RenderDrawRect)
-* [SDL_RenderDrawRects](SDL_RenderDrawRects)
-* [SDL_RenderFillRect](SDL_RenderFillRect)
-* [SDL_RenderPresent](SDL_RenderPresent)
+* [SDL_RenderDrawLine](SDL_RenderDrawLine.md)
+* [SDL_RenderDrawLines](SDL_RenderDrawLines.md)
+* [SDL_RenderDrawPoint](SDL_RenderDrawPoint.md)
+* [SDL_RenderDrawPoints](SDL_RenderDrawPoints.md)
+* [SDL_RenderDrawRect](SDL_RenderDrawRect.md)
+* [SDL_RenderDrawRects](SDL_RenderDrawRects.md)
+* [SDL_RenderFillRect](SDL_RenderFillRect.md)
+* [SDL_RenderPresent](SDL_RenderPresent.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

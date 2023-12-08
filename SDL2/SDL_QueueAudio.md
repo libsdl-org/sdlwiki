@@ -21,13 +21,13 @@ int SDL_QueueAudio(SDL_AudioDeviceID dev, const void *data, Uint32 len);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If you are looking to retrieve queued audio from a non-callback capture
-device, you want [SDL_DequeueAudio](SDL_DequeueAudio)() instead.
-[SDL_QueueAudio](SDL_QueueAudio)() will return -1 to signify an error if
+device, you want [SDL_DequeueAudio](SDL_DequeueAudio.md)() instead.
+[SDL_QueueAudio](SDL_QueueAudio.md)() will return -1 to signify an error if
 you use it with capture devices.
 
 SDL offers two ways to feed audio to the device: you can either supply a
@@ -51,12 +51,12 @@ You may not queue audio on a device that is using an application-supplied
 callback; doing so returns an error. You have to use the audio callback or
 queue audio with this function, but not both.
 
-You should not call [SDL_LockAudio](SDL_LockAudio)() on the device before
+You should not call [SDL_LockAudio](SDL_LockAudio.md)() on the device before
 queueing; SDL handles locking internally for this function.
 
 Note that SDL2 does not support planar audio. You will need to resample
 from planar audio formats into a non-planar one (see
-[SDL_AudioFormat](SDL_AudioFormat)) before queuing audio.
+[SDL_AudioFormat](SDL_AudioFormat.md)) before queuing audio.
 
 ## Version
 
@@ -64,9 +64,8 @@ This function is available since SDL 2.0.4.
 
 ## Related Functions
 
-* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
-* [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
+* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio.md)
+* [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

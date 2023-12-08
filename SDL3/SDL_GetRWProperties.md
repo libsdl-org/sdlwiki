@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetRWProperties
 
-Get the properties associated with an [SDL_RWops](SDL_RWops).
+Get the properties associated with an [SDL_RWops](SDL_RWops.md).
 
 ## Syntax
 
@@ -14,12 +14,12 @@ SDL_PropertiesID SDL_GetRWProperties(SDL_RWops *context);
 
 |                 |                                                  |
 | --------------- | ------------------------------------------------ |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure |
+| **context**     | a pointer to an [SDL_RWops](SDL_RWops.md) structure |
 
 ## Return Value
 
 Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetProperty](SDL_GetProperty)
-* [SDL_SetProperty](SDL_SetProperty)
+* [SDL_GetProperty](SDL_GetProperty.md)
+* [SDL_SetProperty](SDL_SetProperty.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

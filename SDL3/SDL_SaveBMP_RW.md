@@ -14,14 +14,14 @@ int SDL_SaveBMP_RW(SDL_Surface *surface, SDL_RWops *dst, SDL_bool freedst);
 
 |                 |                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure containing the image to be saved                                           |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure containing the image to be saved                                           |
 | **dst**         | a data stream to save to                                                                                            |
-| **freedst**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `dst` before returning, even in the case of an error |
+| **freedst**     | if [SDL_TRUE](SDL_TRUE.md), calls [SDL_RWclose](SDL_RWclose.md)() on `dst` before returning, even in the case of an error |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -37,10 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
-* [SDL_SaveBMP](SDL_SaveBMP)
+* [SDL_LoadBMP_RW](SDL_LoadBMP_RW.md)
+* [SDL_SaveBMP](SDL_SaveBMP.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

@@ -14,7 +14,7 @@ const char* SDL_GameControllerName(SDL_GameController *gamecontroller);
 
 |                        |                                                                                                        |
 | ---------------------- | ------------------------------------------------------------------------------------------------------ |
-| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen)() |
+| **gamecontroller**     | a game controller identifier previously returned by [SDL_GameControllerOpen](SDL_GameControllerOpen.md)() |
 
 ## Return Value
 
@@ -24,7 +24,7 @@ if there is no name or the identifier passed is invalid.
 ## Remarks
 
 This is the same name as returned by
-[SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)(), but it
+[SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex.md)(), but it
 takes a controller identifier instead of the (unstable) device index.
 
 ## Version
@@ -33,9 +33,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
-* [SDL_GameControllerOpen](SDL_GameControllerOpen)
+* [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex.md)
+* [SDL_GameControllerOpen](SDL_GameControllerOpen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

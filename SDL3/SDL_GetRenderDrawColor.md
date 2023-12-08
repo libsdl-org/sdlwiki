@@ -23,7 +23,7 @@ int SDL_GetRenderDrawColor(SDL_Renderer *renderer, Uint8 *r, Uint8 *g, Uint8 *b,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -31,9 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
+* [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

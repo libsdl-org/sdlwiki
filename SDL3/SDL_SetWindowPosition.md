@@ -21,7 +21,7 @@ int SDL_SetWindowPosition(SDL_Window *window, int x, int y);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,16 +32,16 @@ resizable state.
 This can be used to reposition fullscreen-desktop windows onto a different
 display, however, exclusive fullscreen windows are locked to a specific
 display and can only be repositioned programmatically via
-[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)().
+[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode.md)().
 
 On some windowing systems this request is asynchronous and the new
 coordinates may not have have been applied immediately upon the return of
 this function. If an immediate change is required, call
-[SDL_SyncWindow](SDL_SyncWindow)() to block until the changes have taken
+[SDL_SyncWindow](SDL_SyncWindow.md)() to block until the changes have taken
 effect.
 
 When the window position changes, an
-[SDL_EVENT_WINDOW_MOVED](SDL_EVENT_WINDOW_MOVED) event will be emitted with
+[SDL_EVENT_WINDOW_MOVED](SDL_EVENT_WINDOW_MOVED.md) event will be emitted with
 the window's new coordinates. Note that the new coordinates may not match
 the exact coordinates requested, as some windowing systems can restrict the
 position of the window in certain scenarios (e.g. constraining the position
@@ -54,10 +54,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowPosition](SDL_GetWindowPosition)
-* [SDL_SyncWindow](SDL_SyncWindow)
+* [SDL_GetWindowPosition](SDL_GetWindowPosition.md)
+* [SDL_SyncWindow](SDL_SyncWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

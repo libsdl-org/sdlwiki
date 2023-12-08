@@ -14,12 +14,12 @@ SDL_JoystickGUID SDL_GetJoystickGUID(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_OpenJoystick](SDL_OpenJoystick)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_OpenJoystick](SDL_OpenJoystick.md)() |
 
 ## Return Value
 
 Returns the GUID of the given joystick. If called on an invalid index, this
-function returns a zero GUID; call [SDL_GetError](SDL_GetError)() for more
+function returns a zero GUID; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,9 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
-* [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)
+* [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID.md)
+* [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

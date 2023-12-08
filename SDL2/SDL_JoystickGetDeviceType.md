@@ -18,7 +18,7 @@ SDL_JoystickType SDL_JoystickGetDeviceType(int device_index);
 
 ## Return Value
 
-Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
+Returns the [SDL_JoystickType](SDL_JoystickType.md) of the selected joystick.
 If called on an invalid index, this function returns
 [`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN)
 
@@ -31,5 +31,4 @@ This can be called before any joysticks are opened.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

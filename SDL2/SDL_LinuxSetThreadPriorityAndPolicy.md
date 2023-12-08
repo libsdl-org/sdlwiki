@@ -15,7 +15,7 @@ int SDL_LinuxSetThreadPriorityAndPolicy(Sint64 threadID, int sdlPriority, int sc
 |                     |                                                                       |
 | ------------------- | --------------------------------------------------------------------- |
 | **threadID**        | The Unix thread ID to change priority of.                             |
-| **sdlPriority**     | The new [SDL_ThreadPriority](SDL_ThreadPriority) value.               |
+| **sdlPriority**     | The new [SDL_ThreadPriority](SDL_ThreadPriority.md) value.               |
 | **schedPolicy**     | The new scheduling policy (SCHED_FIFO, SCHED_RR, SCHED_OTHER, etc...) |
 
 ## Return Value
@@ -31,5 +31,4 @@ This uses setpriority() if possible, and RealtimeKit if available.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

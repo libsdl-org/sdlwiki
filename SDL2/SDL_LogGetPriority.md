@@ -18,7 +18,7 @@ SDL_LogPriority SDL_LogGetPriority(int category);
 
 ## Return Value
 
-Returns the [SDL_LogPriority](SDL_LogPriority) for the requested category
+Returns the [SDL_LogPriority](SDL_LogPriority.md) for the requested category
 
 ## Version
 
@@ -26,8 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LogSetPriority](SDL_LogSetPriority)
+* [SDL_LogSetPriority](SDL_LogSetPriority.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

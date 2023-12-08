@@ -16,7 +16,7 @@ void SDL_RenderGetClipRect(SDL_Renderer * renderer,
 |                  |                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | **renderer**     | the rendering context from which clip rectangle should be queried                                                        |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
+| **rect**         | an [SDL_Rect](SDL_Rect.md) structure filled in with the current clipping area or an empty rectangle if clipping is disabled |
 
 ## Version
 
@@ -24,9 +24,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
-* [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
+* [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled.md)
+* [SDL_RenderSetClipRect](SDL_RenderSetClipRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

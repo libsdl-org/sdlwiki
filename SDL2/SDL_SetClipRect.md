@@ -15,13 +15,13 @@ SDL_bool SDL_SetClipRect(SDL_Surface * surface,
 
 |                 |                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to be clipped                                              |
-| **rect**        | the [SDL_Rect](SDL_Rect) structure representing the clipping rectangle, or NULL to disable clipping |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to be clipped                                              |
+| **rect**        | the [SDL_Rect](SDL_Rect.md) structure representing the clipping rectangle, or NULL to disable clipping |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the rectangle intersects the surface,
-otherwise [SDL_FALSE](SDL_FALSE) and blits will be completely clipped.
+Returns [SDL_TRUE](SDL_TRUE.md) if the rectangle intersects the surface,
+otherwise [SDL_FALSE](SDL_FALSE.md) and blits will be completely clipped.
 
 ## Remarks
 
@@ -37,9 +37,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_GetClipRect](SDL_GetClipRect)
+* [SDL_BlitSurface](SDL_BlitSurface.md)
+* [SDL_GetClipRect](SDL_GetClipRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

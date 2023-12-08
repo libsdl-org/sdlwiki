@@ -19,7 +19,7 @@ void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev);
 ## Remarks
 
 This function should be paired with a previous
-[SDL_LockAudioDevice](SDL_LockAudioDevice)() call.
+[SDL_LockAudioDevice](SDL_LockAudioDevice.md)() call.
 
 ## Version
 
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ int SDL_hid_get_indexed_string(SDL_hid_device *dev, int string_index, wchar_t *s
 
 |                      |                                                               |
 | -------------------- | ------------------------------------------------------------- |
-| **dev**              | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**              | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 | **string_index**     | The index of the string to get.                               |
 | **string**           | A wide string buffer to put the data into.                    |
 | **maxlen**           | The length of the buffer in multiples of wchar_t.             |
@@ -22,12 +22,11 @@ int SDL_hid_get_indexed_string(SDL_hid_device *dev, int string_index, wchar_t *s
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,7 +18,7 @@ const char* SDL_GetKeyName(SDL_Keycode key);
 
 |             |                                                 |
 | ----------- | ----------------------------------------------- |
-| **key**     | the desired [SDL_Keycode](SDL_Keycode) to query |
+| **key**     | the desired [SDL_Keycode](SDL_Keycode.md) to query |
 
 ## Return Value
 
@@ -29,7 +29,7 @@ it. If the key doesn't have a name, this function returns an empty string
 
 ## Remarks
 
-See [SDL_Scancode](SDL_Scancode) and [SDL_Keycode](SDL_Keycode) for
+See [SDL_Scancode](SDL_Scancode.md) and [SDL_Keycode](SDL_Keycode.md) for
 details.
 
 ## Version
@@ -38,11 +38,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetKeyFromName](SDL_GetKeyFromName)
-* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
-* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
+* [SDL_GetKeyFromName](SDL_GetKeyFromName.md)
+* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode.md)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryKeyboard](CategoryKeyboard.md), [CategoryDraft](CategoryDraft.md)

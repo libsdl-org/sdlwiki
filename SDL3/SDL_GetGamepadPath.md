@@ -14,7 +14,7 @@ const char* SDL_GetGamepadPath(SDL_Gamepad *gamepad);
 
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad.md)() |
 
 ## Return Value
 
@@ -27,8 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadInstancePath](SDL_GetGamepadInstancePath)
+* [SDL_GetGamepadInstancePath](SDL_GetGamepadInstancePath.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

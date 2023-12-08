@@ -27,9 +27,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
+* [SDL_CreateTexture](SDL_CreateTexture.md)
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

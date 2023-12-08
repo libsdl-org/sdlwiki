@@ -33,5 +33,4 @@ If the channel is not bound and not -1, this function returns NULL.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

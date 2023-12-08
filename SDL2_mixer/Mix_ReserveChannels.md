@@ -23,8 +23,8 @@ Returns the number of reserved channels.
 ## Remarks
 
 While SDL_mixer will use up to the number of channels allocated by
-[Mix_AllocateChannels](Mix_AllocateChannels)(), this sets channels aside
-that will not be available when calling [Mix_PlayChannel](Mix_PlayChannel)
+[Mix_AllocateChannels](Mix_AllocateChannels.md)(), this sets channels aside
+that will not be available when calling [Mix_PlayChannel](Mix_PlayChannel.md)
 with a channel of -1 (play on the first unused channel). In this case,
 SDL_mixer will treat reserved channels as "used" whether anything is
 playing on them at the moment or not.
@@ -43,5 +43,4 @@ By default, no channels are reserved.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

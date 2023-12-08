@@ -19,7 +19,7 @@ SDL_Keycode SDL_GetKeyFromName(const char *name);
 ## Return Value
 
 Returns key code, or [`SDLK_UNKNOWN`](SDLK_UNKNOWN) if the name wasn't
-recognized; call [SDL_GetError](SDL_GetError)() for more information.
+recognized; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,10 +27,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
-* [SDL_GetKeyName](SDL_GetKeyName)
-* [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
+* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode.md)
+* [SDL_GetKeyName](SDL_GetKeyName.md)
+* [SDL_GetScancodeFromName](SDL_GetScancodeFromName.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

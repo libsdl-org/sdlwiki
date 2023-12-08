@@ -23,23 +23,23 @@ SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
 
 |                        |                                                                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **srcColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the source pixels                            |
-| **dstColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the red, green, and blue components of the destination pixels                       |
-| **colorOperation**     | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the red, green, and blue components of the source and destination pixels |
-| **srcAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the source pixels                                            |
-| **dstAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor) applied to the alpha component of the destination pixels                                       |
-| **alphaOperation**     | the [SDL_BlendOperation](SDL_BlendOperation) used to combine the alpha component of the source and destination pixels                 |
+| **srcColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor.md) applied to the red, green, and blue components of the source pixels                            |
+| **dstColorFactor**     | the [SDL_BlendFactor](SDL_BlendFactor.md) applied to the red, green, and blue components of the destination pixels                       |
+| **colorOperation**     | the [SDL_BlendOperation](SDL_BlendOperation.md) used to combine the red, green, and blue components of the source and destination pixels |
+| **srcAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor.md) applied to the alpha component of the source pixels                                            |
+| **dstAlphaFactor**     | the [SDL_BlendFactor](SDL_BlendFactor.md) applied to the alpha component of the destination pixels                                       |
+| **alphaOperation**     | the [SDL_BlendOperation](SDL_BlendOperation.md) used to combine the alpha component of the source and destination pixels                 |
 
 ## Return Value
 
-Returns an [SDL_BlendMode](SDL_BlendMode) that represents the chosen
+Returns an [SDL_BlendMode](SDL_BlendMode.md) that represents the chosen
 factors and operations.
 
 ## Remarks
 
-The functions [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode) and
-[SDL_SetTextureBlendMode](SDL_SetTextureBlendMode) accept the
-[SDL_BlendMode](SDL_BlendMode) returned by this function if the renderer
+The functions [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode.md) and
+[SDL_SetTextureBlendMode](SDL_SetTextureBlendMode.md) accept the
+[SDL_BlendMode](SDL_BlendMode.md) returned by this function if the renderer
 supports it.
 
 A blend mode controls how the pixels from a drawing operation (source) get
@@ -65,22 +65,22 @@ dst)` can return one of the following:
 - `max(src, dst)`
 
 The red, green, and blue components are always multiplied with the first,
-second, and third components of the [SDL_BlendFactor](SDL_BlendFactor),
+second, and third components of the [SDL_BlendFactor](SDL_BlendFactor.md),
 respectively. The fourth component is not used.
 
 The alpha component is always multiplied with the fourth component of the
-[SDL_BlendFactor](SDL_BlendFactor). The other components are not used in
+[SDL_BlendFactor](SDL_BlendFactor.md). The other components are not used in
 the alpha calculation.
 
 Support for these blend modes varies for each renderer. To check if a
-specific [SDL_BlendMode](SDL_BlendMode) is supported, create a renderer and
-pass it to either [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
-or [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode). They will return
+specific [SDL_BlendMode](SDL_BlendMode.md) is supported, create a renderer and
+pass it to either [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode.md)
+or [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode.md). They will return
 with an error if the blend mode is not supported.
 
 This list describes the support of custom blend modes for each renderer in
 SDL 2.0.6. All renderers support the four blend modes listed in the
-[SDL_BlendMode](SDL_BlendMode) enumeration.
+[SDL_BlendMode](SDL_BlendMode.md) enumeration.
 
 - **direct3d**: Supports all operations with all factors. However, some
   factors produce unexpected results with
@@ -124,12 +124,10 @@ You can add your code example here
 
 ## Related Functions
 
-* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
-* [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
-* [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
-* [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
+* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode.md)
+* [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode.md)
+* [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode.md)
+* [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md), [CategoryDraft](CategoryDraft.md)

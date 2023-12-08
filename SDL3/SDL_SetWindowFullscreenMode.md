@@ -15,28 +15,28 @@ int SDL_SetWindowFullscreenMode(SDL_Window *window, const SDL_DisplayMode *mode)
 |                |                                                                                                                                                                                        |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **window**     | the window to affect                                                                                                                                                                   |
-| **mode**       | a pointer to the display mode to use, which can be NULL for desktop mode, or one of the fullscreen modes returned by [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)(). |
+| **mode**       | a pointer to the display mode to use, which can be NULL for desktop mode, or one of the fullscreen modes returned by [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes.md)(). |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This only affects the display mode used when the window is fullscreen. To
 change the window size when the window is not fullscreen, use
-[SDL_SetWindowSize](SDL_SetWindowSize)().
+[SDL_SetWindowSize](SDL_SetWindowSize.md)().
 
 If the window is currently in the fullscreen state, this request is
 asynchronous on some windowing systems and the new mode dimensions may not
 be applied immediately upon the return of this function. If an immediate
-change is required, call [SDL_SyncWindow](SDL_SyncWindow)() to block until
+change is required, call [SDL_SyncWindow](SDL_SyncWindow.md)() to block until
 the changes have taken effect.
 
 When the new mode takes effect, an
-[SDL_EVENT_WINDOW_RESIZED](SDL_EVENT_WINDOW_RESIZED) and/or an
-[SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED)
+[SDL_EVENT_WINDOW_RESIZED](SDL_EVENT_WINDOW_RESIZED.md) and/or an
+[SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED](SDL_EVENT_WINDOOW_PIXEL_SIZE_CHANGED.md)
 event will be emitted with the new mode dimensions.
 
 ## Version
@@ -45,10 +45,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_SyncWindow](SDL_SyncWindow)
+* [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode.md)
+* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)
+* [SDL_SyncWindow](SDL_SyncWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

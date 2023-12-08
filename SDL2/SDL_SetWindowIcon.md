@@ -16,12 +16,11 @@ void SDL_SetWindowIcon(SDL_Window * window,
 |                |                                                                            |
 | -------------- | -------------------------------------------------------------------------- |
 | **window**     | the window to change                                                       |
-| **icon**       | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
+| **icon**       | an [SDL_Surface](SDL_Surface.md) structure containing the icon for the window |
 
 ## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

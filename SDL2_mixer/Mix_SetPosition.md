@@ -14,16 +14,16 @@ int Mix_SetPosition(int channel, Sint16 angle, Uint8 distance);
 
 |                  |                                                                         |
 | ---------------- | ----------------------------------------------------------------------- |
-| **channel**      | The mixer channel to position, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| **channel**      | The mixer channel to position, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST.md). |
 | **angle**        | angle, in degrees. North is 0, and goes clockwise.                      |
 | **distance**     | distance; 0 is the listener, 255 is maxiumum distance away.             |
 
 ## Return Value
 
 Returns zero if error (no such channel or
-[Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if position
+[Mix_RegisterEffect](Mix_RegisterEffect.md)() fails), nonzero if position
 effect is enabled. Error messages can be retrieved from
-[Mix_GetError](Mix_GetError)().
+[Mix_GetError](Mix_GetError.md)().
 
 ## Remarks
 
@@ -53,12 +53,12 @@ are mixed through this effect, the positioning will sound correct. You can
 convert them to mono through SDL before giving them to the mixer in the
 first place if you like.
 
-Setting the channel to [MIX_CHANNEL_POST](MIX_CHANNEL_POST) registers this
+Setting the channel to [MIX_CHANNEL_POST](MIX_CHANNEL_POST.md) registers this
 as a posteffect, and the positioning will be done to the final mixed stream
 before passing it on to the audio device.
 
-This is a convenience wrapper over [Mix_SetDistance](Mix_SetDistance)() and
-[Mix_SetPanning](Mix_SetPanning)().
+This is a convenience wrapper over [Mix_SetDistance](Mix_SetDistance.md)() and
+[Mix_SetPanning](Mix_SetPanning.md)().
 
 Note that unlike most SDL and SDL_mixer functions, this function returns
 zero if there's an error, not on success. We apologize for the API design
@@ -69,5 +69,4 @@ inconsistency here.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

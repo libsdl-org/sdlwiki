@@ -21,7 +21,7 @@ int SDL_RenderSetLogicalSize(SDL_Renderer * renderer, int w, int h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,7 +33,7 @@ ratio the output rendering will be centered within the output display.
 If the output display is a window, mouse and touch events in the window
 will be filtered and scaled so they seem to arrive within the logical
 resolution. The
-[SDL_HINT_MOUSE_RELATIVE_SCALING](SDL_HINT_MOUSE_RELATIVE_SCALING) hint
+[SDL_HINT_MOUSE_RELATIVE_SCALING](SDL_HINT_MOUSE_RELATIVE_SCALING.md) hint
 controls whether relative motion events are also scaled.
 
 If this function results in scaling or subpixel drawing by the rendering
@@ -45,8 +45,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
+* [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

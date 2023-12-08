@@ -19,7 +19,7 @@ SDL_bool SDL_GameControllerHasSensor(SDL_GameController *gamecontroller, SDL_Sen
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the sensor exists, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the sensor exists, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Version
@@ -27,5 +27,4 @@ otherwise.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

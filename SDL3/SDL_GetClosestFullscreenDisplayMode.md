@@ -23,7 +23,7 @@ const SDL_DisplayMode* SDL_GetClosestFullscreenDisplayMode(SDL_DisplayID display
 ## Return Value
 
 Returns a pointer to the closest display mode equal to or larger than the
-desired mode, or NULL on error; call [SDL_GetError](SDL_GetError)() for
+desired mode, or NULL on error; call [SDL_GetError](SDL_GetError.md)() for
 more information.
 
 ## Remarks
@@ -41,9 +41,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplays](SDL_GetDisplays)
-* [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
+* [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

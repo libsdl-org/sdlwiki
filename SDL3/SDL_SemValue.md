@@ -26,9 +26,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
+* [SDL_CreateSemaphore](SDL_CreateSemaphore.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

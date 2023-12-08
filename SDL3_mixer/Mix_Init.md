@@ -30,7 +30,7 @@ music file, SDL_mixer will handle initialization on the fly. This function
 will let you know, up front, whether a specific format will be available
 for use.
 
-Flags should be one or more flags from [MIX_InitFlags](MIX_InitFlags) OR'd
+Flags should be one or more flags from [MIX_InitFlags](MIX_InitFlags.md) OR'd
 together. It returns the flags successfully initialized, or 0 on failure.
 
 Currently, these flags are:
@@ -68,15 +68,15 @@ data in a specific format, this might be a fatal error. If you're a generic
 media player, perhaps you are fine with only having WAV and MP3 support and
 can live without Opus playback, even if you request support for everything.
 
-Unlike other SDL satellite libraries, calls to [Mix_Init](Mix_Init) do not
-stack; a single call to [Mix_Quit](Mix_Quit)() will deinitialize everything
-and does not have to be paired with a matching [Mix_Init](Mix_Init) call.
+Unlike other SDL satellite libraries, calls to [Mix_Init](Mix_Init.md) do not
+stack; a single call to [Mix_Quit](Mix_Quit.md)() will deinitialize everything
+and does not have to be paired with a matching [Mix_Init](Mix_Init.md) call.
 For that reason, it's considered best practices to have a single
-[Mix_Init](Mix_Init) and [Mix_Quit](Mix_Quit) call in your program. While
+[Mix_Init](Mix_Init.md) and [Mix_Quit](Mix_Quit.md) call in your program. While
 this isn't required, be aware of the risks of deviating from that behavior.
 
 After initializing SDL_mixer, the next step is to open an audio device to
-prepare to play sound (with [Mix_OpenAudio](Mix_OpenAudio)()), and load
+prepare to play sound (with [Mix_OpenAudio](Mix_OpenAudio.md)()), and load
 audio data to play with that device.
 
 ## Version
@@ -85,8 +85,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_Quit](Mix_Quit)
+* [Mix_Quit](Mix_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

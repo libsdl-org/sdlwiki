@@ -19,7 +19,7 @@ int SDL_BroadcastCondition(SDL_Condition *cond);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,12 +27,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitCondition](SDL_WaitCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
-* [SDL_CreateCondition](SDL_CreateCondition)
-* [SDL_DestroyCondition](SDL_DestroyCondition)
+* [SDL_SignalCondition](SDL_SignalCondition.md)
+* [SDL_WaitCondition](SDL_WaitCondition.md)
+* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout.md)
+* [SDL_CreateCondition](SDL_CreateCondition.md)
+* [SDL_DestroyCondition](SDL_DestroyCondition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

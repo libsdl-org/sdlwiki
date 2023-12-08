@@ -16,12 +16,12 @@ int SDL_GetRenderDriverInfo(int index,
 |               |                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------- |
 | **index**     | the index of the driver to query information about                                                      |
-| **info**      | an [SDL_RendererInfo](SDL_RendererInfo) structure to be filled with information on the rendering driver |
+| **info**      | an [SDL_RendererInfo](SDL_RendererInfo.md) structure to be filled with information on the rendering driver |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,9 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -24,7 +24,7 @@ Returns a new SDL surface, or NULL on error.
 
 The returned surface will always be a 32-bit RGB surface. If you want 8-bit
 indexed colors (and the XPM data allows it), use
-[IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)() instead.
+[IMG_ReadXPMFromArray](IMG_ReadXPMFromArray.md)() instead.
 
 When done with the returned surface, the app should dispose of it with a
 call to SDL_FreeSurface().
@@ -35,8 +35,7 @@ This function is available since SDL_image 2.6.0.
 
 ## Related Functions
 
-* [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)
+* [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

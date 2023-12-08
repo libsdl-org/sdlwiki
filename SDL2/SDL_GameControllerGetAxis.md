@@ -16,12 +16,12 @@ SDL_GameControllerGetAxis(SDL_GameController *gamecontroller, SDL_GameController
 |                        |                                                                                    |
 | ---------------------- | ---------------------------------------------------------------------------------- |
 | **gamecontroller**     | a game controller                                                                  |
-| **axis**               | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis) values) |
+| **axis**               | an axis index (one of the [SDL_GameControllerAxis](SDL_GameControllerAxis.md) values) |
 
 ## Return Value
 
 Returns axis state (including 0) on success or 0 (also) on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -36,8 +36,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GameControllerGetButton](SDL_GameControllerGetButton)
+* [SDL_GameControllerGetButton](SDL_GameControllerGetButton.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

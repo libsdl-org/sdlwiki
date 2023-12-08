@@ -17,12 +17,12 @@ int SDL_GetDisplayMode(int displayIndex, int modeIndex,
 | -------------------- | -------------------------------------------------------------------------------------- |
 | **displayIndex**     | the index of the display to query                                                      |
 | **modeIndex**        | the index of the display mode to query                                                 |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the mode at `modeIndex` |
+| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode.md) structure filled in with the mode at `modeIndex` |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -40,8 +40,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
+* [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

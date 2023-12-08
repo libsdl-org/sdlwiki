@@ -19,14 +19,14 @@ char * SDL_GetGamepadMapping(SDL_Gamepad *gamepad);
 ## Return Value
 
 Returns a string that has the gamepad's mapping or NULL if no mapping is
-available; call [SDL_GetError](SDL_GetError)() for more information.
+available; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-The returned string must be freed with [SDL_free](SDL_free)().
+The returned string must be freed with [SDL_free](SDL_free.md)().
 
 Details about mappings are discussed with
-[SDL_AddGamepadMapping](SDL_AddGamepadMapping)().
+[SDL_AddGamepadMapping](SDL_AddGamepadMapping.md)().
 
 ## Version
 
@@ -34,10 +34,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
-* [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
+* [SDL_AddGamepadMapping](SDL_AddGamepadMapping.md)
+* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID.md)
+* [SDL_SetGamepadMapping](SDL_SetGamepadMapping.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

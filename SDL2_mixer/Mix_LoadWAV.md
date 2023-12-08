@@ -39,16 +39,16 @@ allocate, but SDL_mixer only offers a single "music" channel.
 
 If you would rather use the abstract SDL_RWops interface to load data from
 somewhere other than the filesystem, you can use
-[Mix_LoadWAV_RW](Mix_LoadWAV_RW)() instead.
+[Mix_LoadWAV_RW](Mix_LoadWAV_RW.md)() instead.
 
 When done with a chunk, the app should dispose of it with a call to
-[Mix_FreeChunk](Mix_FreeChunk)().
+[Mix_FreeChunk](Mix_FreeChunk.md)().
 
 Note that before SDL_mixer 2.6.0, this function was a macro that called
-[Mix_LoadWAV_RW](Mix_LoadWAV_RW)(), creating a RWops and setting `freesrc`
+[Mix_LoadWAV_RW](Mix_LoadWAV_RW.md)(), creating a RWops and setting `freesrc`
 to 1. This macro has since been promoted to a proper API function. Older
 binaries linked against a newer SDL_mixer will still call
-[Mix_LoadWAV_RW](Mix_LoadWAV_RW) directly, as they are using the macro,
+[Mix_LoadWAV_RW](Mix_LoadWAV_RW.md) directly, as they are using the macro,
 which was available since the dawn of time.
 
 ## Version
@@ -58,9 +58,8 @@ This function is available since SDL_mixer 2.6.0 (and as a macro since
 
 ## Related Functions
 
-* [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
-* [Mix_FreeChunk](Mix_FreeChunk)
+* [Mix_LoadWAV_RW](Mix_LoadWAV_RW.md)
+* [Mix_FreeChunk](Mix_FreeChunk.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -28,7 +28,7 @@ If `music` is NULL, this will query the currently-playing music.
 
 If music's title tag is missing or empty, the filename will be returned. If
 you'd rather have the actual metadata or nothing, use
-[Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)() instead.
+[Mix_GetMusicTitleTag](Mix_GetMusicTitleTag.md)() instead.
 
 Please note that if the music was loaded from an SDL_RWops instead of a
 filename, the filename returned will be an empty string ("").
@@ -42,11 +42,10 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
-* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
-* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
-* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
+* [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag.md)
+* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag.md)
+* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag.md)
+* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

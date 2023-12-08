@@ -18,7 +18,7 @@ SDL_bool SDL_RenderTargetSupported(SDL_Renderer *renderer);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if supported or [SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if supported or [SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Version
 
@@ -26,8 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetRenderTarget](SDL_SetRenderTarget)
+* [SDL_SetRenderTarget](SDL_SetRenderTarget.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,17 +15,17 @@ int SDL_GetDesktopDisplayMode(int displayIndex, SDL_DisplayMode * mode);
 |                      |                                                                                         |
 | -------------------- | --------------------------------------------------------------------------------------- |
 | **displayIndex**     | the index of the display to query                                                       |
-| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the current display mode |
+| **mode**             | an [SDL_DisplayMode](SDL_DisplayMode.md) structure filled in with the current display mode |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 There's a difference between this function and
-[SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)() when SDL runs
+[SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode.md)() when SDL runs
 fullscreen and has changed the resolution. In that case this function will
 return the previous native display mode, and not the current display mode.
 
@@ -35,9 +35,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_GetDisplayMode](SDL_GetDisplayMode)
-* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
+* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode.md)
+* [SDL_GetDisplayMode](SDL_GetDisplayMode.md)
+* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode.md)
 
 
 ## Header
@@ -45,5 +45,4 @@ This function is available since SDL 2.0.0.
 SDL_video.h
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ int SDLNet_WaitUntilConnected(SDLNet_StreamSocket *sock, Sint32 timeout);
 
 |                 |                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) object to wait on.                                                              |
+| **address**     | The [SDLNet_Address](SDLNet_Address.md) object to wait on.                                                              |
 | **timeout**     | Number of milliseconds to wait for resolution to complete. -1 to wait indefinitely, 0 to check once without waiting. |
 
 ## Return Value
@@ -25,8 +25,8 @@ SDL_GetError() for details.
 
 ## Remarks
 
-The [SDLNet_StreamSocket](SDLNet_StreamSocket) objects returned by
-[SDLNet_CreateClient](SDLNet_CreateClient) take time to do their work, so
+The [SDLNet_StreamSocket](SDLNet_StreamSocket.md) objects returned by
+[SDLNet_CreateClient](SDLNet_CreateClient.md) take time to do their work, so
 it is does so _asynchronously_ instead of making your program wait an
 indefinite amount of time.
 
@@ -37,7 +37,7 @@ This function takes a timeout value, represented in milliseconds, of how
 long to wait for resolution to complete. Specifying a timeout of -1
 instructs the library to wait indefinitely, and a timeout of 0 just checks
 the current status and returns immediately (and is functionally equivalent
-to calling [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)).
+to calling [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus.md)).
 
 Connections can fail after some time (server took awhile to respond at all,
 and then refused the connection outright), so be sure to check the result
@@ -47,7 +47,7 @@ Once a connection is successfully made, the socket may read data from, or
 write data to, the connected server.
 
 If you don't want your program to block, you can call
-[SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)() from time to
+[SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus.md)() from time to
 time until you get a non-zero result.
 
 ## Thread Safety
@@ -62,8 +62,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
+* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ int SDL_hid_read_timeout(SDL_hid_device *dev, unsigned char *data, size_t length
 
 |                      |                                                                                                                        |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **dev**              | A device handle returned from [SDL_hid_open](SDL_hid_open)().                                                          |
+| **dev**              | A device handle returned from [SDL_hid_open](SDL_hid_open.md)().                                                          |
 | **data**             | A buffer to put the read data into.                                                                                    |
 | **length**           | The number of bytes to read. For devices with multiple reports, make sure to read an extra byte for the report number. |
 | **milliseconds**     | timeout in milliseconds or -1 for blocking wait.                                                                       |
@@ -35,5 +35,4 @@ reports.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

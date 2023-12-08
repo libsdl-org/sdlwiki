@@ -14,7 +14,7 @@ const char * SDL_JoystickGetSerial(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_JoystickOpen](SDL_JoystickOpen.md)() |
 
 ## Return Value
 
@@ -29,5 +29,4 @@ Returns the serial number of the joystick, or NULL if it is not available.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

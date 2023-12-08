@@ -27,9 +27,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_AllocPacket](SDLNet_AllocPacket)
-* [SDLNet_ResizePacket](SDLNet_ResizePacket)
+* [SDLNet_AllocPacket](SDLNet_AllocPacket.md)
+* [SDLNet_ResizePacket](SDLNet_ResizePacket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

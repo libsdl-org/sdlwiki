@@ -16,9 +16,9 @@ int SDL_GetAudioDeviceSpec(int index,
 
 |                   |                                                                                                                    |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() - 1 |
+| **index**         | the index of the audio device; valid values range from 0 to [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)() - 1 |
 | **iscapture**     | non-zero to query the list of recording devices, zero to query the list of output devices.                         |
-| **spec**          | The [SDL_AudioSpec](SDL_AudioSpec) to be initialized by this function.                                             |
+| **spec**          | The [SDL_AudioSpec](SDL_AudioSpec.md) to be initialized by this function.                                             |
 
 ## Return Value
 
@@ -28,7 +28,7 @@ Returns 0 on success, nonzero on error
 
 This function is only valid after a successfully initializing the audio
 subsystem. The values returned by this function reflect the latest call to
-[SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)(); re-call that function
+[SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)(); re-call that function
 to redetect available hardware.
 
 `spec` will be filled with the sample rate, sample format, and channel
@@ -40,9 +40,8 @@ This function is available since SDL 2.0.16.
 
 ## Related Functions
 
-* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
-* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
+* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices.md)
+* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

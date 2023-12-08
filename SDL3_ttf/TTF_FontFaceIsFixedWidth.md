@@ -33,5 +33,4 @@ are more likely to not be fixed-width in most cases.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

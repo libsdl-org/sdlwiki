@@ -36,16 +36,16 @@ and aligned normally in the Y direction.
 Note that this version of the function takes a 16-bit character code, which
 covers the Basic Multilingual Plane, but is insufficient to cover the
 entire set of possible Unicode values, including emoji glyphs. You should
-use [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)() instead, which offers
+use [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD.md)() instead, which offers
 the same functionality but takes a 32-bit codepoint instead.
 
 This function only exists for consistency with the existing API at the time
 of its addition.
 
 You can render at other quality levels with
-[TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid),
-[TTF_RenderGlyph_Shaded](TTF_RenderGlyph_Shaded), and
-[TTF_RenderGlyph_Blended](TTF_RenderGlyph_Blended).
+[TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid.md),
+[TTF_RenderGlyph_Shaded](TTF_RenderGlyph_Shaded.md), and
+[TTF_RenderGlyph_Blended](TTF_RenderGlyph_Blended.md).
 
 ## Version
 
@@ -53,8 +53,7 @@ This function is available since SDL_ttf 2.20.0.
 
 ## Related Functions
 
-* [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)
+* [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

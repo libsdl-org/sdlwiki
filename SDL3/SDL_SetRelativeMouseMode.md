@@ -18,12 +18,12 @@ int SDL_SetRelativeMouseMode(SDL_bool enabled);
 
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
-| **enabled**     | [SDL_TRUE](SDL_TRUE) to enable relative mode, [SDL_FALSE](SDL_FALSE) to disable. |
+| **enabled**     | [SDL_TRUE](SDL_TRUE.md) to enable relative mode, [SDL_FALSE](SDL_FALSE.md) to disable. |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,9 +39,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode)
+* [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)

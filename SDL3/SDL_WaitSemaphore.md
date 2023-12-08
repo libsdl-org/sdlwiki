@@ -19,7 +19,7 @@ int SDL_WaitSemaphore(SDL_Semaphore *sem);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -29,7 +29,7 @@ signal or error. If the call is successful it will atomically decrement the
 semaphore value.
 
 This function is the equivalent of calling
-[SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)() with a time length
+[SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout.md)() with a time length
 of -1.
 
 ## Version
@@ -38,14 +38,13 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+* [SDL_CreateSemaphore](SDL_CreateSemaphore.md)
+* [SDL_DestroySemaphore](SDL_DestroySemaphore.md)
+* [SDL_PostSemaphore](SDL_PostSemaphore.md)
+* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore.md)
+* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue.md)
+* [SDL_WaitSemaphore](SDL_WaitSemaphore.md)
+* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

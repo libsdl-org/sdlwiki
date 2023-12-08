@@ -22,12 +22,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BroadcastCondition](SDL_BroadcastCondition)
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitCondition](SDL_WaitCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
-* [SDL_CreateCondition](SDL_CreateCondition)
+* [SDL_BroadcastCondition](SDL_BroadcastCondition.md)
+* [SDL_SignalCondition](SDL_SignalCondition.md)
+* [SDL_WaitCondition](SDL_WaitCondition.md)
+* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout.md)
+* [SDL_CreateCondition](SDL_CreateCondition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

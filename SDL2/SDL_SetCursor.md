@@ -20,7 +20,7 @@ void SDL_SetCursor(SDL_Cursor * cursor);
 
 This function sets the currently active cursor to the specified one. If the
 cursor is currently visible, the change will be immediately represented on
-the display. [SDL_SetCursor](SDL_SetCursor)(NULL) can be used to force
+the display. [SDL_SetCursor](SDL_SetCursor.md)(NULL) can be used to force
 cursor redraw, if this is desired for any reason.
 
 ## Version
@@ -29,10 +29,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_GetCursor](SDL_GetCursor)
-* [SDL_ShowCursor](SDL_ShowCursor)
+* [SDL_CreateCursor](SDL_CreateCursor.md)
+* [SDL_GetCursor](SDL_GetCursor.md)
+* [SDL_ShowCursor](SDL_ShowCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

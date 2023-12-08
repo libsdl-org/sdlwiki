@@ -16,12 +16,12 @@ int SDL_RenderSetClipRect(SDL_Renderer * renderer,
 |                  |                                                                                                                     |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **renderer**     | the rendering context for which clip rectangle should be set                                                        |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
+| **rect**         | an [SDL_Rect](SDL_Rect.md) structure representing the clip area, relative to the viewport, or NULL to disable clipping |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,9 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
-* [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
+* [SDL_RenderGetClipRect](SDL_RenderGetClipRect.md)
+* [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

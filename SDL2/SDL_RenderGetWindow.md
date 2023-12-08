@@ -19,12 +19,11 @@ SDL_Window * SDL_RenderGetWindow(SDL_Renderer *renderer);
 ## Return Value
 
 Returns the window on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 2.0.22.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

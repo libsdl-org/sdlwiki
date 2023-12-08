@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GUIDToString
 
-Get an ASCII string representation for a given ::[SDL_GUID](SDL_GUID).
+Get an ASCII string representation for a given ::[SDL_GUID](SDL_GUID.md).
 
 ## Syntax
 
@@ -14,14 +14,14 @@ int SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
 
 |                 |                                                          |
 | --------------- | -------------------------------------------------------- |
-| **guid**        | the ::[SDL_GUID](SDL_GUID) you wish to convert to string |
+| **guid**        | the ::[SDL_GUID](SDL_GUID.md) you wish to convert to string |
 | **pszGUID**     | buffer in which to write the ASCII string                |
 | **cbGUID**      | the size of pszGUID                                      |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,8 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GUIDFromString](SDL_GUIDFromString)
+* [SDL_GUIDFromString](SDL_GUIDFromString.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

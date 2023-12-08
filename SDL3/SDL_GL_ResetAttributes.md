@@ -16,11 +16,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
-* [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+* [SDL_GL_GetAttribute](SDL_GL_GetAttribute.md)
+* [SDL_GL_SetAttribute](SDL_GL_SetAttribute.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

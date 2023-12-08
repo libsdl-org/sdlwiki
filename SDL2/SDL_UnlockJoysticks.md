@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_UnlockJoysticks
 
-Unlocking for multi-threaded access to the joystick API 
+Unlocking for multi-threaded access to the joystick API
 
 ## Syntax
 
@@ -24,5 +24,4 @@ and game controller events will not be delivered.
 This function is available since SDL 2.0.7.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

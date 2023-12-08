@@ -24,13 +24,13 @@ int SDL_CondWaitTimeout(SDL_cond * cond,
 Returns 0 if the condition variable is signaled,
 [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) if the condition is not signaled
 in the allotted time, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function unlocks the specified `mutex` and waits for another thread to
-call [SDL_CondSignal](SDL_CondSignal)() or
-[SDL_CondBroadcast](SDL_CondBroadcast)() on the condition variable `cond`,
+call [SDL_CondSignal](SDL_CondSignal.md)() or
+[SDL_CondBroadcast](SDL_CondBroadcast.md)() on the condition variable `cond`,
 or for the specified time to elapse. Once the condition variable is
 signaled or the time elapsed, the mutex is re-locked and the function
 returns.
@@ -43,12 +43,11 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CondBroadcast](SDL_CondBroadcast)
-* [SDL_CondSignal](SDL_CondSignal)
-* [SDL_CondWait](SDL_CondWait)
-* [SDL_CreateCond](SDL_CreateCond)
-* [SDL_DestroyCond](SDL_DestroyCond)
+* [SDL_CondBroadcast](SDL_CondBroadcast.md)
+* [SDL_CondSignal](SDL_CondSignal.md)
+* [SDL_CondWait](SDL_CondWait.md)
+* [SDL_CreateCond](SDL_CreateCond.md)
+* [SDL_DestroyCond](SDL_DestroyCond.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

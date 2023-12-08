@@ -30,14 +30,14 @@ such a time.
 The following things can be specified in the `vsockets` array, cast to
 `void *`:
 
-- [SDLNet_Server](SDLNet_Server) (reports new input when a connection is
-  ready to be accepted with [SDLNet_AcceptClient](SDLNet_AcceptClient)())
-- [SDLNet_StreamSocket](SDLNet_StreamSocket) (reports new input when the
+- [SDLNet_Server](SDLNet_Server.md) (reports new input when a connection is
+  ready to be accepted with [SDLNet_AcceptClient](SDLNet_AcceptClient.md)())
+- [SDLNet_StreamSocket](SDLNet_StreamSocket.md) (reports new input when the
   remote end has sent more bytes of data to be read with
-  [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)).
-- [SDLNet_DatagramSocket](SDLNet_DatagramSocket) (reports new input when a
+  [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket.md)).
+- [SDLNet_DatagramSocket](SDLNet_DatagramSocket.md) (reports new input when a
   new packet arrives that can be read with
-  [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)).
+  [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram.md)).
 
 This function takes a timeout value, represented in milliseconds, of how
 long to wait for resolution to complete. Specifying a timeout of -1
@@ -61,10 +61,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)
-* [SDLNet_SendDatagram](SDLNet_SendDatagram)
-* [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
+* [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket.md)
+* [SDLNet_SendDatagram](SDLNet_SendDatagram.md)
+* [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

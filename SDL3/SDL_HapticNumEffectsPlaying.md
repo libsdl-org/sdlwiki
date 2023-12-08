@@ -18,12 +18,12 @@ int SDL_HapticNumEffectsPlaying(SDL_Haptic * haptic);
 
 |                |                                                                      |
 | -------------- | -------------------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query maximum playing effects |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to query maximum playing effects |
 
 ## Return Value
 
 Returns the number of effects the haptic device can play at the same time
-or a negative error code on failure; call [SDL_GetError](SDL_GetError)()
+or a negative error code on failure; call [SDL_GetError](SDL_GetError.md)()
 for more information.
 
 ## Remarks
@@ -36,10 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticNumEffects](SDL_HapticNumEffects)
-* [SDL_HapticQuery](SDL_HapticQuery)
+* [SDL_HapticNumEffects](SDL_HapticNumEffects.md)
+* [SDL_HapticQuery](SDL_HapticQuery.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

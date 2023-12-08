@@ -18,16 +18,16 @@ int SDL_HapticUnpause(SDL_Haptic * haptic);
 
 |                |                                                |
 | -------------- | ---------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to unpause |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to unpause |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-Call to unpause after [SDL_HapticPause](SDL_HapticPause)().
+Call to unpause after [SDL_HapticPause](SDL_HapticPause.md)().
 
 ## Version
 
@@ -35,9 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticPause](SDL_HapticPause)
+* [SDL_HapticPause](SDL_HapticPause.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

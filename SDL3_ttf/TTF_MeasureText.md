@@ -31,7 +31,7 @@ This reports the number of characters that can be rendered before reaching
 
 This does not need to render the string to do this calculation.
 
-You almost certainly want [TTF_MeasureUTF8](TTF_MeasureUTF8)() unless
+You almost certainly want [TTF_MeasureUTF8](TTF_MeasureUTF8.md)() unless
 you're sure you have a 1-byte Latin1 encoding. US ASCII characters will
 work with either function, but most other Unicode characters packed into a
 `const char *` will need UTF-8.
@@ -42,10 +42,9 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_MeasureText](TTF_MeasureText)
-* [TTF_MeasureUTF8](TTF_MeasureUTF8)
-* [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
+* [TTF_MeasureText](TTF_MeasureText.md)
+* [TTF_MeasureUTF8](TTF_MeasureUTF8.md)
+* [TTF_MeasureUNICODE](TTF_MeasureUNICODE.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

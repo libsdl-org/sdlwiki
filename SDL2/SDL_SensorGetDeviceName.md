@@ -25,5 +25,4 @@ Returns the sensor name, or NULL if `device_index` is out of range.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

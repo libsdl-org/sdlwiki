@@ -19,7 +19,7 @@ SDL_PropertiesID SDL_GetDisplayProperties(SDL_DisplayID displayID);
 ## Return Value
 
 Returns a valid property ID on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetProperty](SDL_GetProperty)
-* [SDL_SetProperty](SDL_SetProperty)
+* [SDL_GetProperty](SDL_GetProperty.md)
+* [SDL_SetProperty](SDL_SetProperty.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -26,7 +26,7 @@ Returns the channel which was bound, or -1 on error.
 
 Note that UDP sockets at the platform layer "bind" to a nework port number,
 but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
-[SDLNet_UDP_Bind](SDLNet_UDP_Bind)(). But the term is used for both.
+[SDLNet_UDP_Bind](SDLNet_UDP_Bind.md)(). But the term is used for both.
 
 If `channel` is -1, then the first unbound channel that has not yet been
 bound to the maximum number of addresses will be bound with the given
@@ -43,8 +43,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_Unbind](SDLNet_UDP_Unbind)
+* [SDLNet_UDP_Unbind](SDLNet_UDP_Unbind.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

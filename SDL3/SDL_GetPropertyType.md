@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetPropertyType
 
-Get the type of a property on a set of properties 
+Get the type of a property on a set of properties
 
 ## Syntax
 
@@ -20,7 +20,7 @@ SDL_PropertyType SDL_GetPropertyType(SDL_PropertiesID props, const char *name);
 ## Return Value
 
 Returns the type of the property, or
-[SDL_PROPERTY_TYPE_INVALID](SDL_PROPERTY_TYPE_INVALID) if it is not set.
+[SDL_PROPERTY_TYPE_INVALID](SDL_PROPERTY_TYPE_INVALID.md) if it is not set.
 
 ## Thread Safety
 
@@ -31,5 +31,4 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

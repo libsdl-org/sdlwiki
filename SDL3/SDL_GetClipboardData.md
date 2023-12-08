@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetClipboardData
 
-Get the data from clipboard for a given mime type 
+Get the data from clipboard for a given mime type
 
 ## Syntax
 
@@ -20,8 +20,8 @@ void* SDL_GetClipboardData(const char *mime_type, size_t *size);
 ## Return Value
 
 Returns the retrieved data buffer or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information. Caller must call
-[SDL_free](SDL_free)() on the returned pointer when done with it.
+[SDL_GetError](SDL_GetError.md)() for more information. Caller must call
+[SDL_free](SDL_free.md)() on the returned pointer when done with it.
 
 ## Remarks
 
@@ -34,8 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetClipboardData](SDL_SetClipboardData)
+* [SDL_SetClipboardData](SDL_SetClipboardData.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

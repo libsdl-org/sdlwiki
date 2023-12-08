@@ -14,7 +14,7 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 
 |                 |                                                     |
 | --------------- | --------------------------------------------------- |
-| **flags**       | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) value |
+| **flags**       | an [SDL_MessageBoxFlags](SDL_MessageBoxFlags.md) value |
 | **title**       | UTF-8 title text                                    |
 | **message**     | UTF-8 message text                                  |
 | **window**      | the parent window, or NULL for no parent            |
@@ -22,12 +22,12 @@ int SDL_ShowSimpleMessageBox(Uint32 flags, const char *title, const char *messag
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If your needs aren't complex, this function is preferred over
-[SDL_ShowMessageBox](SDL_ShowMessageBox).
+[SDL_ShowMessageBox](SDL_ShowMessageBox.md).
 
 `flags` may be any of the following:
 
@@ -42,13 +42,13 @@ block execution of that thread until the user clicks a button or closes the
 messagebox.
 
 This function may be called at any time, even before
-[SDL_Init](SDL_Init)(). This makes it useful for reporting errors like a
+[SDL_Init](SDL_Init.md)(). This makes it useful for reporting errors like a
 failure to create a renderer or OpenGL context.
 
 On X11, SDL rolls its own dialog box with X11 primitives instead of a
 formal toolkit like GTK+ or Qt.
 
-Note that if [SDL_Init](SDL_Init)() would fail because there isn't any
+Note that if [SDL_Init](SDL_Init.md)() would fail because there isn't any
 available video target, this function is likely to fail for the same
 reasons. If this is a concern, check the return value from this function
 and fall back to writing to stderr if you can.
@@ -68,9 +68,7 @@ SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
 
 ## Related Functions
 
-* [SDL_ShowMessageBox](SDL_ShowMessageBox)
+* [SDL_ShowMessageBox](SDL_ShowMessageBox.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

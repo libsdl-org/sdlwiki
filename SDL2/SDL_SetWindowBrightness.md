@@ -20,7 +20,7 @@ int SDL_SetWindowBrightness(SDL_Window * window, float brightness);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -28,7 +28,7 @@ Despite the name and signature, this method sets the brightness of the
 entire display, not an individual window. A window is considered to be
 owned by the display that contains the window's center pixel. (The index of
 this display can be retrieved using
-[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)().) The brightness
+[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex.md)().) The brightness
 set will not follow the window if it is moved to another display.
 
 Many platforms will refuse to set the display brightness in modern times.
@@ -41,9 +41,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowBrightness](SDL_GetWindowBrightness)
-* [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
+* [SDL_GetWindowBrightness](SDL_GetWindowBrightness.md)
+* [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

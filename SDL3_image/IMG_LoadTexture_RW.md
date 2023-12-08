@@ -44,12 +44,12 @@ with SDL_RWops: `IMG_LoadTexture(renderer, "filename.jpg")` will call this
 function and manage those details for you, determining the file type from
 the filename's extension.
 
-There is also [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)(), which
+There is also [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW.md)(), which
 is equivalent to this function except a file extension (like "BMP", "JPG",
 etc) can be specified, in case SDL_image cannot autodetect the file format.
 
 If you would rather decode an image to an SDL_Surface (a buffer of pixels
-in CPU memory), call [IMG_Load](IMG_Load)() instead.
+in CPU memory), call [IMG_Load](IMG_Load.md)() instead.
 
 When done with the returned texture, the app should dispose of it with a
 call to SDL_DestroyTexture().
@@ -60,10 +60,9 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_LoadTexture](IMG_LoadTexture)
-* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
+* [IMG_LoadTexture](IMG_LoadTexture.md)
+* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

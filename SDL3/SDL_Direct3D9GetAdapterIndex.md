@@ -26,7 +26,7 @@ int SDL_Direct3D9GetAdapterIndex(SDL_DisplayID displayID);
 ## Return Value
 
 Returns the D3D9 adapter index on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -38,7 +38,5 @@ controls on which monitor a full screen application will appear.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategorySystem](CategorySystem.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

@@ -23,7 +23,7 @@ int SDL_AndroidShowToast(const char* message, int duration, int gravity, int xof
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -43,6 +43,4 @@ https://developer.android.com/reference/android/view/Gravity
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAndroid](CategoryAndroid.md)

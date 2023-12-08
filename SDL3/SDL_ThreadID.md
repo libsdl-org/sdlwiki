@@ -39,9 +39,7 @@ threadID = SDL_ThreadID();
 
 ## Related Functions
 
-* [SDL_GetThreadID](SDL_GetThreadID)
+* [SDL_GetThreadID](SDL_GetThreadID.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryThread](CategoryThread.md)

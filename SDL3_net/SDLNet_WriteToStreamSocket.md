@@ -40,9 +40,9 @@ stream, and the other end of the connection can, too.
 
 This call never blocks; if it can't send the data immediately, the library
 will queue it for later transmission. You can use
-[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)()
+[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)()
 to see how much is still queued for later transmission, or
-[SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)()
+[SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained.md)()
 to block until all pending data has been sent.
 
 If the connection has failed (remote side dropped us, or one of a million
@@ -63,10 +63,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
-* [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)
+* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)
+* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained.md)
+* [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

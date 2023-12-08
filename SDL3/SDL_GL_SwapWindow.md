@@ -19,7 +19,7 @@ int SDL_GL_SwapWindow(SDL_Window *window);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 ```c++
 
 SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
-      
+
 /* Create an OpenGL context associated with the window. */
 SDL_GLContext glcontext = SDL_GL_CreateContext(window);
 
@@ -50,15 +50,13 @@ SDL_GL_SetSwapInterval(1);
 glClearColor(0,0,0,1);
 glClear(GL_COLOR_BUFFER_BIT);
 
-/* <Extra drawing functions here> */ 
+/* <Extra drawing functions here> */
 
-/* Swap our buffer to display the current contents of buffer on screen */ 
+/* Swap our buffer to display the current contents of buffer on screen */
 SDL_GL_SwapWindow(window);
 
 
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

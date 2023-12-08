@@ -18,7 +18,7 @@ void SDL_MixAudio(Uint8 * dst, const Uint8 * src,
 | **dst**        | the destination for the mixed audio                                                                    |
 | **src**        | the source audio buffer to be mixed                                                                    |
 | **len**        | the length of the audio buffer in bytes                                                                |
-| **volume**     | ranges from 0 - 128, and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME) for full audio volume |
+| **volume**     | ranges from 0 - 128, and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME.md) for full audio volume |
 
 ## Remarks
 
@@ -29,7 +29,7 @@ SDL_MixAudioFormat(dst, src, format, len, volume);
 ```
 
 ...where `format` is the obtained format of the audio device from the
-legacy [SDL_OpenAudio](SDL_OpenAudio)() function.
+legacy [SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -37,8 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_MixAudioFormat](SDL_MixAudioFormat)
+* [SDL_MixAudioFormat](SDL_MixAudioFormat.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

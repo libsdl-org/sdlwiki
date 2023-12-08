@@ -20,7 +20,7 @@ int SDL_SetWindowMouseRect(SDL_Window * window, const SDL_Rect * rect);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,9 +33,8 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
-* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
+* [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect.md)
+* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,8 +18,8 @@ SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
 |                  |                                                                            |
 | ---------------- | -------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                      |
-| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
-| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
+| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) |
+| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess.md)     |
 | **w**            | the width of the texture in pixels                                         |
 | **h**            | the height of the texture in pixels                                        |
 
@@ -27,7 +27,7 @@ SDL_Texture * SDL_CreateTexture(SDL_Renderer * renderer,
 
 Returns a pointer to the created texture or NULL if no rendering context
 was active, the format was unsupported, or the width or height were out of
-range; call [SDL_GetError](SDL_GetError)() for more information.
+range; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -41,11 +41,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
+* [SDL_QueryTexture](SDL_QueryTexture.md)
+* [SDL_UpdateTexture](SDL_UpdateTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

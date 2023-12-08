@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_aligned_alloc
 
-Allocate memory aligned to a specific value 
+Allocate memory aligned to a specific value
 
 ## Syntax
 
@@ -30,7 +30,7 @@ The returned memory address will be a multiple of the alignment value, and
 the amount of memory allocated will be a multiple of the alignment value.
 
 The memory returned by this function must be freed with
-[SDL_aligned_free](SDL_aligned_free)()
+[SDL_aligned_free](SDL_aligned_free.md)()
 
 ## Version
 
@@ -38,8 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_aligned_free](SDL_aligned_free)
+* [SDL_aligned_free](SDL_aligned_free.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

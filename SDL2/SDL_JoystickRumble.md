@@ -34,8 +34,7 @@ This function is available since SDL 2.0.9.
 
 ## Related Functions
 
-* [SDL_JoystickHasRumble](SDL_JoystickHasRumble)
+* [SDL_JoystickHasRumble](SDL_JoystickHasRumble.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

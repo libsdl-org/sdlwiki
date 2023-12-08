@@ -26,7 +26,7 @@ Returns 0 or [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT)
 
 ## Remarks
 
-This works just like [SDL_LockMutex](SDL_LockMutex)(), but if the mutex is
+This works just like [SDL_LockMutex](SDL_LockMutex.md)(), but if the mutex is
 not available, this function returns
 [`SDL_MUTEX_TIMEDOUT`](SDL_MUTEX_TIMEDOUT) immediately.
 
@@ -36,7 +36,7 @@ don't want to wait for it, and will return to it to try again later.
 This function does not fail; if mutex is NULL, it will return 0 immediately
 having locked nothing. If the mutex is valid, this function will always
 either lock the mutex and return 0, or return
-[SDL_MUTEX_TIMEOUT](SDL_MUTEX_TIMEOUT) and lock nothing.
+[SDL_MUTEX_TIMEOUT](SDL_MUTEX_TIMEOUT.md) and lock nothing.
 
 ## Version
 
@@ -70,12 +70,10 @@ SDL_DestroyMutex(mutex);
 
 ## Related Functions
 
-* [SDL_CreateMutex](SDL_CreateMutex)
-* [SDL_DestroyMutex](SDL_DestroyMutex)
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
+* [SDL_CreateMutex](SDL_CreateMutex.md)
+* [SDL_DestroyMutex](SDL_DestroyMutex.md)
+* [SDL_LockMutex](SDL_LockMutex.md)
+* [SDL_UnlockMutex](SDL_UnlockMutex.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md), [CategoryDraft](CategoryDraft.md)

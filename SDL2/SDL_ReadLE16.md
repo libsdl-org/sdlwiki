@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_ReadLE16
 
-Use this function to read 16 bits of little-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
+Use this function to read 16 bits of little-endian data from an [SDL_RWops](SDL_RWops.md) and return in native format.
 
 ## Syntax
 
@@ -31,8 +31,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_ReadBE16](SDL_ReadBE16)
+* [SDL_ReadBE16](SDL_ReadBE16.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

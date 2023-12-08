@@ -26,5 +26,4 @@ public API reports a failure, and should be ignored otherwise.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

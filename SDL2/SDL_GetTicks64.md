@@ -17,10 +17,10 @@ since the SDL library initialized.
 
 ## Remarks
 
-Note that you should not use the [SDL_TICKS_PASSED](SDL_TICKS_PASSED) macro
+Note that you should not use the [SDL_TICKS_PASSED](SDL_TICKS_PASSED.md) macro
 with values returned by this function, as that macro does clever math to
 compensate for the 32-bit overflow every ~49 days that
-[SDL_GetTicks](SDL_GetTicks)() suffers from. 64-bit values from this
+[SDL_GetTicks](SDL_GetTicks.md)() suffers from. 64-bit values from this
 function can be safely compared directly.
 
 For example, if you want to wait 100 ms, you could do this:
@@ -37,5 +37,4 @@ while (SDL_GetTicks64() < timeout) {
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

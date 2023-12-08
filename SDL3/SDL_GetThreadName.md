@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetThreadName
 
-Get the thread name as it was specified in [SDL_CreateThread](SDL_CreateThread)().
+Get the thread name as it was specified in [SDL_CreateThread](SDL_CreateThread.md)().
 
 ## Syntax
 
@@ -25,7 +25,7 @@ NULL if it doesn't have a name.
 
 This is internal memory, not to be freed by the caller, and remains valid
 until the specified thread is cleaned up by
-[SDL_WaitThread](SDL_WaitThread)().
+[SDL_WaitThread](SDL_WaitThread.md)().
 
 ## Version
 
@@ -33,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateThread](SDL_CreateThread)
+* [SDL_CreateThread](SDL_CreateThread.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryThread](CategoryThread.md)

@@ -22,13 +22,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CondBroadcast](SDL_CondBroadcast)
-* [SDL_CondSignal](SDL_CondSignal)
-* [SDL_CondWait](SDL_CondWait)
-* [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
-* [SDL_CreateCond](SDL_CreateCond)
+* [SDL_CondBroadcast](SDL_CondBroadcast.md)
+* [SDL_CondSignal](SDL_CondSignal.md)
+* [SDL_CondWait](SDL_CondWait.md)
+* [SDL_CondWaitTimeout](SDL_CondWaitTimeout.md)
+* [SDL_CreateCond](SDL_CreateCond.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

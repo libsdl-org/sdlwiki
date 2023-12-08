@@ -19,7 +19,7 @@ SDL_Gamepad* SDL_OpenGamepad(SDL_JoystickID instance_id);
 ## Return Value
 
 Returns a gamepad identifier or NULL if an error occurred; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CloseGamepad](SDL_CloseGamepad)
-* [SDL_IsGamepad](SDL_IsGamepad)
+* [SDL_CloseGamepad](SDL_CloseGamepad.md)
+* [SDL_IsGamepad](SDL_IsGamepad.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

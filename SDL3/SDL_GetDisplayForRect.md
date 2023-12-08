@@ -20,7 +20,7 @@ SDL_DisplayID SDL_GetDisplayForRect(const SDL_Rect *rect);
 
 Returns the instance ID of the display entirely containing the rect or
 closest to the center of the rect on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,9 +28,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

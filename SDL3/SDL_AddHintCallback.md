@@ -25,13 +25,13 @@ int SDL_AddHintCallback(const char *name,
 |                  |                                                                                                  |
 | ---------------- | ------------------------------------------------------------------------------------------------ |
 | **name**         | the hint to watch                                                                                |
-| **callback**     | An [SDL_HintCallback](SDL_HintCallback) function that will be called when the hint value changes |
+| **callback**     | An [SDL_HintCallback](SDL_HintCallback.md) function that will be called when the hint value changes |
 | **userdata**     | a pointer to pass to the callback function                                                       |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -39,10 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DelHintCallback](SDL_DelHintCallback)
+* [SDL_DelHintCallback](SDL_DelHintCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

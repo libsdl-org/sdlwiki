@@ -13,13 +13,13 @@ int TTF_WasInit(void);
 ## Return Value
 
 Returns the current number of initialization calls, that need to eventually
-be paired with this many calls to [TTF_Quit](TTF_Quit)().
+be paired with this many calls to [TTF_Quit](TTF_Quit.md)().
 
 ## Remarks
 
 This reports the number of times the library has been initialized by a call
-to [TTF_Init](TTF_Init)(), without a paired deinitialization request from
-[TTF_Quit](TTF_Quit)().
+to [TTF_Init](TTF_Init.md)(), without a paired deinitialization request from
+[TTF_Quit](TTF_Quit.md)().
 
 In short: if it's greater than zero, the library is currently initialized
 and ready to work. If zero, it is not initialized.
@@ -33,9 +33,8 @@ This function is available since SDL_ttf 2.0.12.
 
 ## Related Functions
 
-* [TTF_Init](TTF_Init)
-* [TTF_Quit](TTF_Quit)
+* [TTF_Init](TTF_Init.md)
+* [TTF_Quit](TTF_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

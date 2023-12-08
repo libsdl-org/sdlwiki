@@ -14,21 +14,21 @@ void SDL_FlushEvents(Uint32 minType, Uint32 maxType);
 
 |                 |                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------- |
-| **minType**     | the low end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details  |
-| **maxType**     | the high end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType) for details |
+| **minType**     | the low end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType.md) for details  |
+| **maxType**     | the high end of event type to be cleared, inclusive; see [SDL_EventType](SDL_EventType.md) for details |
 
 ## Remarks
 
 This will unconditionally remove any events from the queue that are in the
 range of `minType` to `maxType`, inclusive. If you need to remove a single
-event type, use [SDL_FlushEvent](SDL_FlushEvent)() instead.
+event type, use [SDL_FlushEvent](SDL_FlushEvent.md)() instead.
 
 It's also normal to just ignore events you don't care about in your event
 loop without calling this function.
 
 This function only affects currently queued events. If you want to make
 sure that all pending OS events are flushed, you can call
-[SDL_PumpEvents](SDL_PumpEvents)() on the main thread immediately before
+[SDL_PumpEvents](SDL_PumpEvents.md)() on the main thread immediately before
 the flush call.
 
 ## Version
@@ -37,9 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_FlushEvent](SDL_FlushEvent)
+* [SDL_FlushEvent](SDL_FlushEvent.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

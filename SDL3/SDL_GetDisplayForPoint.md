@@ -19,7 +19,7 @@ SDL_DisplayID SDL_GetDisplayForPoint(const SDL_Point *point);
 ## Return Value
 
 Returns the instance ID of the display containing the point or 0 on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -35,7 +35,7 @@ this function, as this gives your program more control over the process.
 
 This function might cover all of an application's needs, but for those that
 need more flexibility, the more powerful version of this function is
-[Mix_OpenAudioDevice](Mix_OpenAudioDevice)(). This function is equivalent
+[Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)(). This function is equivalent
 to calling:
 
 ```c
@@ -59,8 +59,8 @@ own data is often easier to control, so aim to open the device for what you
 need.
 
 The other reason to care about specific formats: if you plan to touch the
-mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix), a registered
-effect, or [Mix_HookMusic](Mix_HookMusic)), you might have code that
+mix buffer directly (with [Mix_SetPostMix](Mix_SetPostMix.md), a registered
+effect, or [Mix_HookMusic](Mix_HookMusic.md)), you might have code that
 expects it to be in a specific format, and you should specify that here.
 
 The audio device frequency is specified in Hz; in modern times, 48000 is
@@ -88,17 +88,17 @@ you can do seamlessly during playback.
 This function does not allow you to select a specific audio device on the
 system, it always chooses the best default it can on your behalf (which, in
 many cases, is exactly what you want anyhow). If you must choose a specific
-device, you can do so with [Mix_OpenAudioDevice](Mix_OpenAudioDevice)()
+device, you can do so with [Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)()
 instead.
 
 If this function reports success, you are ready to start making noise! Load
 some audio data and start playing!
 
-The app can use [Mix_QuerySpec](Mix_QuerySpec)() to determine the final
+The app can use [Mix_QuerySpec](Mix_QuerySpec.md)() to determine the final
 device settings.
 
 When done with an audio device, probably at the end of the program, the app
-should dispose of the device with [Mix_CloseAudio](Mix_CloseAudio)().
+should dispose of the device with [Mix_CloseAudio](Mix_CloseAudio.md)().
 
 ## Version
 
@@ -106,9 +106,8 @@ This function is available since SDL_mixer 2.0.0.
 
 ## Related Functions
 
-* [Mix_OpenAudioDevice](Mix_OpenAudioDevice)
-* [Mix_CloseAudio](Mix_CloseAudio)
+* [Mix_OpenAudioDevice](Mix_OpenAudioDevice.md)
+* [Mix_CloseAudio](Mix_CloseAudio.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -16,18 +16,18 @@ int SDL_SetWindowDisplayMode(SDL_Window * window,
 |                |                                                                                                                                                                 |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **window**     | the window to affect                                                                                                                                            |
-| **mode**       | the [SDL_DisplayMode](SDL_DisplayMode) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate |
+| **mode**       | the [SDL_DisplayMode](SDL_DisplayMode.md) structure representing the mode to use, or NULL to use the window's dimensions and the desktop's format and refresh rate |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This only affects the display mode used when the window is fullscreen. To
 change the window size when the window is not fullscreen, use
-[SDL_SetWindowSize](SDL_SetWindowSize)().
+[SDL_SetWindowSize](SDL_SetWindowSize.md)().
 
 ## Version
 
@@ -35,9 +35,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+* [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode.md)
+* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

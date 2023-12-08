@@ -14,12 +14,12 @@ int SDL_GetNumJoystickAxes(SDL_Joystick *joystick);
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 
 ## Return Value
 
 Returns the number of axis controls/number of axes on success or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
+error code on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -34,9 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickAxis](SDL_GetJoystickAxis)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_GetJoystickAxis](SDL_GetJoystickAxis.md)
+* [SDL_OpenJoystick](SDL_OpenJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,12 +15,12 @@ int SDL_GetDisplayBounds(SDL_DisplayID displayID, SDL_Rect *rect);
 |                   |                                                                      |
 | ----------------- | -------------------------------------------------------------------- |
 | **displayID**     | the instance ID of the display to query                              |
-| **rect**          | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+| **rect**          | the [SDL_Rect](SDL_Rect.md) structure filled in with the display bounds |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -42,10 +42,8 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 
 ## Related Functions
 
-* [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds.md)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

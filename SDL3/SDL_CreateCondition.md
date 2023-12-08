@@ -13,7 +13,7 @@ SDL_Condition* SDL_CreateCondition(void);
 ## Return Value
 
 Returns a new condition variable or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -21,12 +21,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BroadcastCondition](SDL_BroadcastCondition)
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitCondition](SDL_WaitCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
-* [SDL_DestroyCondition](SDL_DestroyCondition)
+* [SDL_BroadcastCondition](SDL_BroadcastCondition.md)
+* [SDL_SignalCondition](SDL_SignalCondition.md)
+* [SDL_WaitCondition](SDL_WaitCondition.md)
+* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout.md)
+* [SDL_DestroyCondition](SDL_DestroyCondition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

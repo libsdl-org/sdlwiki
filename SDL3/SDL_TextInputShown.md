@@ -12,12 +12,11 @@ SDL_bool SDL_TextInputShown(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if shown, else [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if shown, else [SDL_FALSE](SDL_FALSE.md)
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

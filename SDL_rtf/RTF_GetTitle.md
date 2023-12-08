@@ -22,14 +22,13 @@ Returns the document title in UTF-8 encoding.
 
 ## Remarks
 
-The returned string is part of the [RTF_Context](RTF_Context), and should
+The returned string is part of the [RTF_Context](RTF_Context.md), and should
 not be modified or freed by the application. The pointer remains valid
-until the [RTF_Context](RTF_Context) is freed.
+until the [RTF_Context](RTF_Context.md) is freed.
 
 ## Version
 
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

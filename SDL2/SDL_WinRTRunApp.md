@@ -14,12 +14,12 @@ int SDL_WinRTRunApp(SDL_main_func mainFunction, void * reserved);
 
 |                      |                                                                 |
 | -------------------- | --------------------------------------------------------------- |
-| **mainFunction**     | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
+| **mainFunction**     | the SDL app's C-style main(), an [SDL_main_func](SDL_main_func.md) |
 | **reserved**         | reserved for future use; should be NULL                         |
 
 ## Return Value
 
-Returns 0 on success or -1 on failure; call [SDL_GetError](SDL_GetError)()
+Returns 0 on success or -1 on failure; call [SDL_GetError](SDL_GetError.md)()
 to retrieve more information on the failure.
 
 ## Version
@@ -27,6 +27,4 @@ to retrieve more information on the failure.
 This function is available since SDL 2.0.3.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

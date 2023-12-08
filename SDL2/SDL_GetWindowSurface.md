@@ -19,7 +19,7 @@ SDL_Surface * SDL_GetWindowSurface(SDL_Window * window);
 ## Return Value
 
 Returns the surface associated with the window, or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -41,11 +41,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
-* [SDL_HasWindowSurface](SDL_HasWindowSurface)
-* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
-* [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
+* [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface.md)
+* [SDL_HasWindowSurface](SDL_HasWindowSurface.md)
+* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface.md)
+* [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

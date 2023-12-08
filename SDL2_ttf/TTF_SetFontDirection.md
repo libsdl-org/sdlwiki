@@ -24,7 +24,7 @@ Returns 0 on success, or -1 on error.
 ## Remarks
 
 Any value supplied here will override the global direction set with the
-deprecated [TTF_SetDirection](TTF_SetDirection)().
+deprecated [TTF_SetDirection](TTF_SetDirection.md)().
 
 Possible direction values are:
 
@@ -40,5 +40,4 @@ If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 This function is available since SDL_ttf 2.20.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

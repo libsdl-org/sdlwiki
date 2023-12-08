@@ -17,7 +17,7 @@ int SDL_ShowCursor(void);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -36,10 +36,8 @@ int main(int argc, char *argv[]) {
 
 ## Related Functions
 
-* [SDL_CursorVisible](SDL_CursorVisible)
-* [SDL_HideCursor](SDL_HideCursor)
+* [SDL_CursorVisible](SDL_CursorVisible.md)
+* [SDL_HideCursor](SDL_HideCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)

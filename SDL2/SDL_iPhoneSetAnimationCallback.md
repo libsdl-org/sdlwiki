@@ -22,7 +22,7 @@ int SDL_iPhoneSetAnimationCallback(SDL_Window * window, int interval, void (SDLC
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,7 +33,7 @@ void callback(void* callbackParam);
 ```
 
 Where its parameter, `callbackParam`, is what was passed as `callbackParam`
-to [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)().
+to [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback.md)().
 
 This function is only available on Apple iOS.
 
@@ -41,7 +41,7 @@ For more information see:
 https://github.com/libsdl-org/SDL/blob/main/docs/README-ios.md
 
 This functions is also accessible using the macro
-[SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)() since SDL
+[SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback.md)() since SDL
 2.0.4.
 
 ## Version
@@ -50,8 +50,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
+* [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

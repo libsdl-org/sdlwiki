@@ -14,7 +14,7 @@ int SDL_AtomicSet(SDL_atomic_t *a, int v);
 
 |           |                                                                      |
 | --------- | -------------------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable to be modified |
+| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t.md) variable to be modified |
 | **v**     | the desired value                                                    |
 
 ## Return Value
@@ -34,8 +34,7 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_AtomicGet](SDL_AtomicGet)
+* [SDL_AtomicGet](SDL_AtomicGet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

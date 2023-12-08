@@ -14,12 +14,12 @@ int SDL_JoystickNumButtons(SDL_Joystick *joystick);
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 
 ## Return Value
 
 Returns the number of buttons on success or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickGetButton](SDL_JoystickGetButton)
-* [SDL_JoystickOpen](SDL_JoystickOpen)
+* [SDL_JoystickGetButton](SDL_JoystickGetButton.md)
+* [SDL_JoystickOpen](SDL_JoystickOpen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

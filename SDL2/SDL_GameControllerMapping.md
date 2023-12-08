@@ -19,14 +19,14 @@ char * SDL_GameControllerMapping(SDL_GameController *gamecontroller);
 ## Return Value
 
 Returns a string that has the controller's mapping or NULL if no mapping is
-available; call [SDL_GetError](SDL_GetError)() for more information.
+available; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-The returned string must be freed with [SDL_free](SDL_free)().
+The returned string must be freed with [SDL_free](SDL_free.md)().
 
 Details about mappings are discussed with
-[SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)().
+[SDL_GameControllerAddMapping](SDL_GameControllerAddMapping.md)().
 
 ## Version
 
@@ -34,9 +34,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
-* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping.md)
+* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,13 +15,13 @@ int SDL_GetSurfaceClipRect(SDL_Surface *surface,
 
 |                 |                                                                                         |
 | --------------- | --------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure representing the surface to be clipped         |
-| **rect**        | an [SDL_Rect](SDL_Rect) structure filled in with the clipping rectangle for the surface |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure representing the surface to be clipped         |
+| **rect**        | an [SDL_Rect](SDL_Rect.md) structure filled in with the clipping rectangle for the surface |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,9 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_SetSurfaceClipRect](SDL_SetSurfaceClipRect)
+* [SDL_BlitSurface](SDL_BlitSurface.md)
+* [SDL_SetSurfaceClipRect](SDL_SetSurfaceClipRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

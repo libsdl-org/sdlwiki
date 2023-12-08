@@ -19,7 +19,7 @@ SDL_bool SDL_GamepadHasSensor(SDL_Gamepad *gamepad, SDL_SensorType type);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the sensor exists, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the sensor exists, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Version
@@ -27,5 +27,4 @@ otherwise.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

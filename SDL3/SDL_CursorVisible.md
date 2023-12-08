@@ -21,9 +21,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HideCursor](SDL_HideCursor)
-* [SDL_ShowCursor](SDL_ShowCursor)
+* [SDL_HideCursor](SDL_HideCursor.md)
+* [SDL_ShowCursor](SDL_ShowCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

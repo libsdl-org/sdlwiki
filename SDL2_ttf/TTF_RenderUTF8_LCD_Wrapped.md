@@ -36,9 +36,9 @@ it extends beyond `wrapLength` in pixels.
 If wrapLength is 0, this function will only wrap on newline characters.
 
 You can render at other quality levels with
-[TTF_RenderUTF8_Solid_Wrapped](TTF_RenderUTF8_Solid_Wrapped),
-[TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped), and
-[TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped).
+[TTF_RenderUTF8_Solid_Wrapped](TTF_RenderUTF8_Solid_Wrapped.md),
+[TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped.md), and
+[TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped.md).
 
 ## Version
 
@@ -46,10 +46,9 @@ This function is available since SDL_ttf 2.20.0.
 
 ## Related Functions
 
-* [TTF_RenderUTF8_Solid_Wrapped](TTF_RenderUTF8_Solid_Wrapped)
-* [TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped)
-* [TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped)
+* [TTF_RenderUTF8_Solid_Wrapped](TTF_RenderUTF8_Solid_Wrapped.md)
+* [TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped.md)
+* [TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

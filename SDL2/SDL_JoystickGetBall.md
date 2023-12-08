@@ -15,7 +15,7 @@ int SDL_JoystickGetBall(SDL_Joystick *joystick,
 
 |                  |                                                                  |
 | ---------------- | ---------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) to query                        |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) to query                        |
 | **ball**         | the ball index to query; ball indices start at index 0           |
 | **dx**           | stores the difference in the x axis position since the last poll |
 | **dy**           | stores the difference in the y axis position since the last poll |
@@ -23,12 +23,12 @@ int SDL_JoystickGetBall(SDL_Joystick *joystick,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Trackballs can only return relative motion since the last call to
-[SDL_JoystickGetBall](SDL_JoystickGetBall)(), these motion deltas are
+[SDL_JoystickGetBall](SDL_JoystickGetBall.md)(), these motion deltas are
 placed into `dx` and `dy`.
 
 Most joysticks do not have trackballs.
@@ -39,8 +39,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickNumBalls](SDL_JoystickNumBalls)
+* [SDL_JoystickNumBalls](SDL_JoystickNumBalls.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

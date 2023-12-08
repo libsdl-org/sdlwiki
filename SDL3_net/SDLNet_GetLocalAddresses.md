@@ -18,7 +18,7 @@ extern DECLSPEC SDLNet_Address **SDLCALL SDLNet_GetLocalAddresses(int *num_addre
 
 ## Return Value
 
-Returns A NULL-terminated array of [SDLNet_Address](SDLNet_Address)
+Returns A NULL-terminated array of [SDLNet_Address](SDLNet_Address.md)
 pointers, one for each bindable address on the system, or NULL on error;
 call SDL_GetError() for details.
 
@@ -33,8 +33,8 @@ equally hard to decide). Second, most machines will have lots of _private_
 addresses that are accessible on the same LAN, but not public ones that are
 accessible from the outside Internet.
 
-Usually it's better to use [SDLNet_CreateServer](SDLNet_CreateServer)() or
-[SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)() with a NULL
+Usually it's better to use [SDLNet_CreateServer](SDLNet_CreateServer.md)() or
+[SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket.md)() with a NULL
 address, to say "bind to all interfaces."
 
 The array of addresses returned from this is guaranteed to be
@@ -42,10 +42,10 @@ NULL-terminated. You can also pass a pointer to an int, which will return
 the final count, not counting the NULL at the end of the array.
 
 Pass the returned array to
-[SDLNet_FreeLocalAddresses](SDLNet_FreeLocalAddresses) when you are done
+[SDLNet_FreeLocalAddresses](SDLNet_FreeLocalAddresses.md) when you are done
 with it. It is safe to keep any addresses you want from this array even
 after calling that function, as long as you called
-[SDLNet_RefAddress](SDLNet_RefAddress)() on them.
+[SDLNet_RefAddress](SDLNet_RefAddress.md)() on them.
 
 ## Thread Safety
 
@@ -56,5 +56,4 @@ It is safe to call this function from any thread.
 This function is available since SDL_Net 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

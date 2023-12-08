@@ -32,5 +32,4 @@ You probably don't want to use this function outside of local testing.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

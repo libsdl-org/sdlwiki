@@ -28,9 +28,9 @@ The window size in screen coordinates may differ from the size in pixels,
 if the window was created with
 [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-dpi support (e.g. iOS or macOS). Use
-[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)(),
-[SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)(), or
-[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)() to get the real
+[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize.md)(),
+[SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize.md)(), or
+[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize.md)() to get the real
 client area size in pixels.
 
 ## Version
@@ -39,10 +39,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)
-* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
-* [SDL_SetWindowSize](SDL_SetWindowSize)
+* [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize.md)
+* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize.md)
+* [SDL_SetWindowSize](SDL_SetWindowSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,13 +18,13 @@ SDL_bool SDL_PenConnected(SDL_PenID instance_id);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if "instance_id" is valid and the
-corresponding pen is attached, or [SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if "instance_id" is valid and the
+corresponding pen is attached, or [SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
 If a pen is detached, it will not show up for
-::[SDL_GetPens](SDL_GetPens)(). Other operations will still be available
+::[SDL_GetPens](SDL_GetPens.md)(). Other operations will still be available
 but may return default values.
 
 ## Version
@@ -32,5 +32,4 @@ but may return default values.
 This function is available since SDL 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

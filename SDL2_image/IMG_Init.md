@@ -26,7 +26,7 @@ This function loads dynamic libraries that SDL_image needs, and prepares
 them for use. This must be the first function you call in SDL_image, and if
 it fails you should not continue with the library.
 
-Flags should be one or more flags from [IMG_InitFlags](IMG_InitFlags) OR'd
+Flags should be one or more flags from [IMG_InitFlags](IMG_InitFlags.md) OR'd
 together. It returns the flags successfully initialized, or 0 on failure.
 
 Currently, these flags are:
@@ -64,11 +64,11 @@ image displaying app, perhaps you are fine with only having JPG and PNG
 support and can live without WEBP, even if you request support for
 everything.
 
-Unlike other SDL satellite libraries, calls to [IMG_Init](IMG_Init) do not
-stack; a single call to [IMG_Quit](IMG_Quit)() will deinitialize everything
-and does not have to be paired with a matching [IMG_Init](IMG_Init) call.
+Unlike other SDL satellite libraries, calls to [IMG_Init](IMG_Init.md) do not
+stack; a single call to [IMG_Quit](IMG_Quit.md)() will deinitialize everything
+and does not have to be paired with a matching [IMG_Init](IMG_Init.md) call.
 For that reason, it's considered best practices to have a single
-[IMG_Init](IMG_Init) and [IMG_Quit](IMG_Quit) call in your program. While
+[IMG_Init](IMG_Init.md) and [IMG_Quit](IMG_Quit.md) call in your program. While
 this isn't required, be aware of the risks of deviating from that behavior.
 
 After initializing SDL_image, the app may begin to load images into
@@ -80,8 +80,7 @@ This function is available since SDL_image 2.0.0.
 
 ## Related Functions
 
-* [IMG_Quit](IMG_Quit)
+* [IMG_Quit](IMG_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

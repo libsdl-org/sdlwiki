@@ -12,8 +12,8 @@ SDL_bool SDL_TextInputActive(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if text input events are enabled else
-[SDL_FALSE](SDL_FALSE).
+Returns [SDL_TRUE](SDL_TRUE.md) if text input events are enabled else
+[SDL_FALSE](SDL_FALSE.md).
 
 ## Version
 
@@ -21,8 +21,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_StartTextInput](SDL_StartTextInput)
+* [SDL_StartTextInput](SDL_StartTextInput.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

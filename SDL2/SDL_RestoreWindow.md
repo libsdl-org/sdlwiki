@@ -22,9 +22,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
+* [SDL_MaximizeWindow](SDL_MaximizeWindow.md)
+* [SDL_MinimizeWindow](SDL_MinimizeWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

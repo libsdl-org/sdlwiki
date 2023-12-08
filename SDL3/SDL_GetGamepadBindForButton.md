@@ -15,11 +15,11 @@ SDL_GamepadBinding SDL_GetGamepadBindForButton(SDL_Gamepad *gamepad, SDL_Gamepad
 |                 |                                                                        |
 | --------------- | ---------------------------------------------------------------------- |
 | **gamepad**     | a gamepad                                                              |
-| **button**      | an button enum value (an [SDL_GamepadButton](SDL_GamepadButton) value) |
+| **button**      | an button enum value (an [SDL_GamepadButton](SDL_GamepadButton.md) value) |
 
 ## Return Value
 
-Returns a [SDL_GamepadBinding](SDL_GamepadBinding) describing the bind. On
+Returns a [SDL_GamepadBinding](SDL_GamepadBinding.md) describing the bind. On
 failure (like the given Controller button doesn't exist on the device), its
 `.bindType` will be
 [`SDL_GAMEPAD_BINDTYPE_NONE`](SDL_GAMEPAD_BINDTYPE_NONE).
@@ -30,8 +30,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadBindForAxis](SDL_GetGamepadBindForAxis)
+* [SDL_GetGamepadBindForAxis](SDL_GetGamepadBindForAxis.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

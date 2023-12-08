@@ -14,7 +14,7 @@ void SDL_ResetAssertionReport(void);
 
 This function will clear the list of all assertions triggered up to that
 point. Immediately following this call,
-[SDL_GetAssertionReport](SDL_GetAssertionReport) will return no items. In
+[SDL_GetAssertionReport](SDL_GetAssertionReport.md) will return no items. In
 addition, any previously-triggered assertions will be reset to a
 trigger_count of zero, and their always_ignore state will be false.
 
@@ -33,9 +33,7 @@ printf("%p\n", SDL_GetAssertionReport());  // NULL.
 
 ## Related Functions
 
-* [SDL_GetAssertionReport](SDL_GetAssertionReport)
+* [SDL_GetAssertionReport](SDL_GetAssertionReport.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAssertions](CategoryAssertions)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAssertions](CategoryAssertions.md)

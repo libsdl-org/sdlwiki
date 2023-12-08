@@ -13,7 +13,7 @@ int SDL_NumJoysticks(void);
 ## Return Value
 
 Returns the number of attached joysticks on success or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+code on failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -21,10 +21,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickName](SDL_JoystickName)
-* [SDL_JoystickPath](SDL_JoystickPath)
-* [SDL_JoystickOpen](SDL_JoystickOpen)
+* [SDL_JoystickName](SDL_JoystickName.md)
+* [SDL_JoystickPath](SDL_JoystickPath.md)
+* [SDL_JoystickOpen](SDL_JoystickOpen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

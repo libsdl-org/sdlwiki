@@ -26,5 +26,4 @@ Returns the number of addresses saved in `addresses`
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

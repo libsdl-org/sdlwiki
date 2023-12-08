@@ -28,7 +28,7 @@ This callback is called _after_ the data is added to the stream, giving the
 callback the chance to obtain it immediately.
 
 The callback can (optionally) call
-[SDL_GetAudioStreamData](SDL_GetAudioStreamData)() to obtain audio from the
+[SDL_GetAudioStreamData](SDL_GetAudioStreamData.md)() to obtain audio from the
 stream during this call.
 
 The callback's `approx_request` argument is how many bytes of _converted_
@@ -40,7 +40,7 @@ to aid in resampling. Which means the callback may be provided with zero
 bytes, and a different amount on each call.
 
 The callback may call
-[SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable) to see the total
+[SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md) to see the total
 amount currently available to read from the stream, instead of the total
 provided by the current call.
 
@@ -66,8 +66,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
+* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -21,14 +21,14 @@ int SDL_GetCurrentRenderOutputSize(SDL_Renderer *renderer, int *w, int *h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If a rendering target is active, this will return the size of the rendering
 target in pixels, otherwise if a logical size is set, it will return the
 logical size, otherwise it will return the value of
-[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)().
+[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize.md)().
 
 ## Version
 
@@ -36,9 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
-* [SDL_GetRenderer](SDL_GetRenderer)
+* [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize.md)
+* [SDL_GetRenderer](SDL_GetRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

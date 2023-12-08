@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_SensorClose
 
-Close a sensor previously opened with [SDL_SensorOpen](SDL_SensorOpen)().
+Close a sensor previously opened with [SDL_SensorOpen](SDL_SensorOpen.md)().
 
 ## Syntax
 
@@ -14,12 +14,11 @@ void SDL_SensorClose(SDL_Sensor *sensor);
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
-| **sensor**     | The [SDL_Sensor](SDL_Sensor) object to close |
+| **sensor**     | The [SDL_Sensor](SDL_Sensor.md) object to close |
 
 ## Version
 
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,7 +14,7 @@ Uint32 SDL_WasInit(Uint32 flags);
 
 |               |                                                                                        |
 | ------------- | -------------------------------------------------------------------------------------- |
-| **flags**     | any of the flags used by [SDL_Init](SDL_Init)(); see [SDL_Init](SDL_Init) for details. |
+| **flags**     | any of the flags used by [SDL_Init](SDL_Init.md)(); see [SDL_Init](SDL_Init.md) for details. |
 
 ## Return Value
 
@@ -22,7 +22,7 @@ Returns a mask of all initialized subsystems if `flags` is 0, otherwise it
 returns the initialization status of the specified subsystems.
 
 The return value does not include
-[SDL_INIT_NOPARACHUTE](SDL_INIT_NOPARACHUTE).
+[SDL_INIT_NOPARACHUTE](SDL_INIT_NOPARACHUTE.md).
 
 ## Version
 
@@ -30,10 +30,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_Init](SDL_Init)
-* [SDL_InitSubSystem](SDL_InitSubSystem)
+* [SDL_Init](SDL_Init.md)
+* [SDL_InitSubSystem](SDL_InitSubSystem.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

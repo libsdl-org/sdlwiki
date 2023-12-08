@@ -27,10 +27,10 @@ Returns 0 on success, or -1 on error.
 ## Remarks
 
 Future calls to and
-[SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable) and
-[SDL_GetAudioStreamData](SDL_GetAudioStreamData) will reflect the new
+[SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md) and
+[SDL_GetAudioStreamData](SDL_GetAudioStreamData.md) will reflect the new
 format, and future calls to
-[SDL_PutAudioStreamData](SDL_PutAudioStreamData) must provide data in the
+[SDL_PutAudioStreamData](SDL_PutAudioStreamData.md) must provide data in the
 new input formats.
 
 ## Thread Safety
@@ -44,12 +44,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
+* [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat.md)
+* [SDL_PutAudioStreamData](SDL_PutAudioStreamData.md)
+* [SDL_GetAudioStreamData](SDL_GetAudioStreamData.md)
+* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md)
+* [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

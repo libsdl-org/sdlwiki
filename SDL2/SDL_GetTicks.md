@@ -20,7 +20,7 @@ since the SDL library initialized.
 This value wraps if the program runs for more than ~49 days.
 
 This function is not recommended as of SDL 2.0.18; use
-[SDL_GetTicks64](SDL_GetTicks64)() instead, where the value doesn't wrap
+[SDL_GetTicks64](SDL_GetTicks64.md)() instead, where the value doesn't wrap
 every ~49 days. There are places in SDL where we provide a 32-bit timestamp
 that can not change without breaking binary compatibility, though, so this
 function isn't officially deprecated.
@@ -31,8 +31,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_TICKS_PASSED](SDL_TICKS_PASSED)
+* [SDL_TICKS_PASSED](SDL_TICKS_PASSED.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

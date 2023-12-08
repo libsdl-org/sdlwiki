@@ -15,28 +15,28 @@ int SDL_SetWindowFullscreen(SDL_Window *window, SDL_bool fullscreen);
 |                    |                                                                                    |
 | ------------------ | ---------------------------------------------------------------------------------- |
 | **window**         | the window to change                                                               |
-| **fullscreen**     | [SDL_TRUE](SDL_TRUE) for fullscreen mode, [SDL_FALSE](SDL_FALSE) for windowed mode |
+| **fullscreen**     | [SDL_TRUE](SDL_TRUE.md) for fullscreen mode, [SDL_FALSE](SDL_FALSE.md) for windowed mode |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 By default a window in fullscreen state uses fullscreen desktop mode, but a
 specific display mode can be set using
-[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)().
+[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode.md)().
 
 On some windowing systems this request is asynchronous and the new
 fullscreen state may not have have been applied immediately upon the return
 of this function. If an immediate change is required, call
-[SDL_SyncWindow](SDL_SyncWindow)() to block until the changes have taken
+[SDL_SyncWindow](SDL_SyncWindow.md)() to block until the changes have taken
 effect.
 
 When the window state changes, an
-[SDL_EVENT_WINDOW_ENTER_FULLSCREEN](SDL_EVENT_WINDOW_ENTER_FULLSCREEN) or
-[SDL_EVENT_WINDOW_LEAVE_FULLSCREEN](SDL_EVENT_WINDOW_LEAVE_FULLSCREEN)
+[SDL_EVENT_WINDOW_ENTER_FULLSCREEN](SDL_EVENT_WINDOW_ENTER_FULLSCREEN.md) or
+[SDL_EVENT_WINDOW_LEAVE_FULLSCREEN](SDL_EVENT_WINDOW_LEAVE_FULLSCREEN.md)
 event will be emitted. Note that, as this is just a request, it can be
 denied by the windowing system.
 
@@ -46,11 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
-* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
-* [SDL_SyncWindow](SDL_SyncWindow)
+* [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode.md)
+* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode.md)
+* [SDL_SyncWindow](SDL_SyncWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

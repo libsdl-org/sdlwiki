@@ -19,7 +19,7 @@ SDL_Window * SDL_CreateWindowFrom(const void *data);
 ## Return Value
 
 Returns the window that was created or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -27,7 +27,7 @@ In some cases (e.g. OpenGL) and on some platforms (e.g. Microsoft Windows)
 the hint
 [`SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT`](SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT)
 needs to be configured before using
-[SDL_CreateWindowFrom](SDL_CreateWindowFrom)().
+[SDL_CreateWindowFrom](SDL_CreateWindowFrom.md)().
 
 ## Version
 
@@ -35,10 +35,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_DestroyWindow](SDL_DestroyWindow)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_DestroyWindow](SDL_DestroyWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

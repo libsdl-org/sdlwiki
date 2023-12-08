@@ -16,7 +16,7 @@ int SDL_UIKitRunApp(int argc, char *argv[], SDL_main_func mainFunction);
 | -------------------- | --------------------------------------------------------------- |
 | **argc**             | The argc parameter from the application's main() function       |
 | **argv**             | The argv parameter from the application's main() function       |
-| **mainFunction**     | The SDL app's C-style main(), an [SDL_main_func](SDL_main_func) |
+| **mainFunction**     | The SDL app's C-style main(), an [SDL_main_func](SDL_main_func.md) |
 
 ## Return Value
 
@@ -27,5 +27,4 @@ Return the return value from mainFunction
 This function is available since SDL 2.0.10.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

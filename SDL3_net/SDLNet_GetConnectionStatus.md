@@ -23,8 +23,8 @@ connecting; if -1, call SDL_GetError() for details.
 
 ## Remarks
 
-The [SDLNet_StreamSocket](SDLNet_StreamSocket) objects returned by
-[SDLNet_CreateClient](SDLNet_CreateClient) take time to do negotiate a
+The [SDLNet_StreamSocket](SDLNet_StreamSocket.md) objects returned by
+[SDLNet_CreateClient](SDLNet_CreateClient.md) take time to do negotiate a
 connection to a server, so it is does so _asynchronously_ instead of making
 your program wait an indefinite amount of time.
 
@@ -55,8 +55,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
+* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

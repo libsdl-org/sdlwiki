@@ -8,7 +8,7 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_RWsize
 
-Use this function to get the size of the data stream in an [SDL_RWops](SDL_RWops).
+Use this function to get the size of the data stream in an [SDL_RWops](SDL_RWops.md).
 
 ## Syntax
 
@@ -21,20 +21,18 @@ Sint64 SDL_RWsize(SDL_RWops *context);
 
 |                 |                                                                    |
 | --------------- | ------------------------------------------------------------------ |
-| **context**     | the [SDL_RWops](SDL_RWops) to get the size of the data stream from |
+| **context**     | the [SDL_RWops](SDL_RWops.md) to get the size of the data stream from |
 
 ## Return Value
 
-Returns the size of the data stream in the [SDL_RWops](SDL_RWops) on
+Returns the size of the data stream in the [SDL_RWops](SDL_RWops.md) on
 success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

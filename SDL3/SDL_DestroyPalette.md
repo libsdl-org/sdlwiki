@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_DestroyPalette
 
-Free a palette created with [SDL_CreatePalette](SDL_CreatePalette)().
+Free a palette created with [SDL_CreatePalette](SDL_CreatePalette.md)().
 
 ## Syntax
 
@@ -14,7 +14,7 @@ void SDL_DestroyPalette(SDL_Palette * palette);
 
 |                 |                                                      |
 | --------------- | ---------------------------------------------------- |
-| **palette**     | the [SDL_Palette](SDL_Palette) structure to be freed |
+| **palette**     | the [SDL_Palette](SDL_Palette.md) structure to be freed |
 
 ## Version
 
@@ -22,8 +22,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreatePalette](SDL_CreatePalette)
+* [SDL_CreatePalette](SDL_CreatePalette.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

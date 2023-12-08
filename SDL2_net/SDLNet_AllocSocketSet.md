@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
 # SDLNet_AllocSocketSet
 
-Allocate a socket set for use with [SDLNet_CheckSockets](SDLNet_CheckSockets)().
+Allocate a socket set for use with [SDLNet_CheckSockets](SDLNet_CheckSockets.md)().
 
 ## Syntax
 
@@ -24,12 +24,12 @@ function ran out of memory.
 ## Remarks
 
 To query if new data is available on a socket, you use a "socket set" with
-[SDLNet_CheckSockets](SDLNet_CheckSockets)(). A socket set is just a list
+[SDLNet_CheckSockets](SDLNet_CheckSockets.md)(). A socket set is just a list
 of sockets behind the scenes; you allocate a set and then add/remove
 individual sockets to/from the set.
 
 When done with a socket set, you can free it with
-[SDLNet_FreeSocketSet](SDLNet_FreeSocketSet).
+[SDLNet_FreeSocketSet](SDLNet_FreeSocketSet.md).
 
 ## Version
 
@@ -37,8 +37,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_FreeSocketSet](SDLNet_FreeSocketSet)
+* [SDLNet_FreeSocketSet](SDLNet_FreeSocketSet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

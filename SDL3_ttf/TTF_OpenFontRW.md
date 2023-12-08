@@ -20,7 +20,7 @@ TTF_Font * TTF_OpenFontRW(SDL_RWops *src, SDL_bool freesrc, int ptsize);
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+Returns a valid [TTF_Font](TTF_Font.md), or NULL on error.
 
 ## Remarks
 
@@ -32,8 +32,8 @@ If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_ttf reads everything it needs
 from the RWops during this call in any case.
 
-When done with the returned [TTF_Font](TTF_Font), use
-[TTF_CloseFont](TTF_CloseFont)() to dispose of it.
+When done with the returned [TTF_Font](TTF_Font.md), use
+[TTF_CloseFont](TTF_CloseFont.md)() to dispose of it.
 
 ## Version
 
@@ -41,8 +41,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_CloseFont](TTF_CloseFont)
+* [TTF_CloseFont](TTF_CloseFont.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

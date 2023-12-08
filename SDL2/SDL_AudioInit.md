@@ -19,14 +19,14 @@ int SDL_AudioInit(const char *driver_name);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function is used internally, and should not be used unless you have a
 specific need to designate the audio driver you want to use. You should
-normally use [SDL_Init](SDL_Init)() or
-[SDL_InitSubSystem](SDL_InitSubSystem)().
+normally use [SDL_Init](SDL_Init.md)() or
+[SDL_InitSubSystem](SDL_InitSubSystem.md)().
 
 ## Version
 
@@ -34,8 +34,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AudioQuit](SDL_AudioQuit)
+* [SDL_AudioQuit](SDL_AudioQuit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

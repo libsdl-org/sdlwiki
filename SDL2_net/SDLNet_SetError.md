@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
 # SDLNet_SetError
 
-Set an error message to be retrieved with [SDLNet_GetError](SDLNet_GetError).
+Set an error message to be retrieved with [SDLNet_GetError](SDLNet_GetError.md).
 
 ## Syntax
 
@@ -27,5 +27,4 @@ message of your own in here.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

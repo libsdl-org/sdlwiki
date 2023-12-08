@@ -57,13 +57,13 @@ with SDL_RWops: `IMG_Load("filename.jpg")` will call this function and
 manage those details for you, determining the file type from the filename's
 extension.
 
-There is also [IMG_Load_RW](IMG_Load_RW)(), which is equivalent to this
+There is also [IMG_Load_RW](IMG_Load_RW.md)(), which is equivalent to this
 function except that it will rely on SDL_image to determine what type of
 data it is loading, much like passing a NULL for type.
 
 If you are using SDL's 2D rendering API, there is an equivalent call to
 load images directly into an SDL_Texture for use by the GPU without using a
-software surface: call [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)()
+software surface: call [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW.md)()
 instead.
 
 When done with the returned surface, the app should dispose of it with a
@@ -75,10 +75,9 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_Load](IMG_Load)
-* [IMG_Load_RW](IMG_Load_RW)
-* [SDL_DestroySurface](SDL_DestroySurface)
+* [IMG_Load](IMG_Load.md)
+* [IMG_Load_RW](IMG_Load_RW.md)
+* [SDL_DestroySurface](SDL_DestroySurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

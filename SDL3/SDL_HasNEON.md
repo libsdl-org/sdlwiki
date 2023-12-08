@@ -12,8 +12,8 @@ SDL_bool SDL_HasNEON(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the CPU has ARM NEON features or
-[SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if the CPU has ARM NEON features or
+[SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Remarks
 
@@ -24,5 +24,4 @@ This always returns false on CPUs that aren't using ARM instruction sets.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ SDL_Renderer * SDL_CreateRendererWithProperties(SDL_PropertiesID props);
 ## Return Value
 
 Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,11 +39,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+* [SDL_CreateRenderer](SDL_CreateRenderer.md)
+* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer.md)
+* [SDL_DestroyRenderer](SDL_DestroyRenderer.md)
+* [SDL_GetRendererInfo](SDL_GetRendererInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

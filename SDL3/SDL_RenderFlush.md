@@ -19,19 +19,19 @@ int SDL_RenderFlush(SDL_Renderer *renderer);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 You do not need to (and in fact, shouldn't) call this function unless you
 are planning to call into OpenGL/Direct3D/Metal/whatever directly in
-addition to using an [SDL_Renderer](SDL_Renderer).
+addition to using an [SDL_Renderer](SDL_Renderer.md).
 
 This is for a very-specific case: if you are using SDL's render API, you
 asked for a specific renderer backend (OpenGL, Direct3D, etc), you set
-[SDL_HINT_RENDER_BATCHING](SDL_HINT_RENDER_BATCHING) to "1", and you plan
+[SDL_HINT_RENDER_BATCHING](SDL_HINT_RENDER_BATCHING.md) to "1", and you plan
 to make OpenGL/D3D/whatever calls in addition to SDL render API calls. If
-all of this applies, you should call [SDL_RenderFlush](SDL_RenderFlush)()
+all of this applies, you should call [SDL_RenderFlush](SDL_RenderFlush.md)()
 between calls to SDL's render API and the low-level API you're using in
 cooperation.
 
@@ -48,5 +48,4 @@ instead flushing them to the OS immediately.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ int SDL_GL_SetSwapInterval(int interval);
 ## Return Value
 
 Returns 0 on success or -1 if setting the swap interval is not supported;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -44,8 +44,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GL_GetSwapInterval](SDL_GL_GetSwapInterval)
+* [SDL_GL_GetSwapInterval](SDL_GL_GetSwapInterval.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

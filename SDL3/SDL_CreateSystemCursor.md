@@ -22,12 +22,12 @@ SDL_Cursor* SDL_CreateSystemCursor(SDL_SystemCursor id);
 
 |            |                                                    |
 | ---------- | -------------------------------------------------- |
-| **id**     | an [SDL_SystemCursor](SDL_SystemCursor) enum value |
+| **id**     | an [SDL_SystemCursor](SDL_SystemCursor.md) enum value |
 
 ## Return Value
 
 Returns a cursor on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -43,10 +43,8 @@ SDL_SetCursor(cursor);
 
 ## Related Functions
 
-* [SDL_DestroyCursor](SDL_DestroyCursor)
+* [SDL_DestroyCursor](SDL_DestroyCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

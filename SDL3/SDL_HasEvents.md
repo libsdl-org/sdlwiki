@@ -14,18 +14,18 @@ SDL_bool SDL_HasEvents(Uint32 minType, Uint32 maxType);
 
 |                 |                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------- |
-| **minType**     | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details  |
-| **maxType**     | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType) for details |
+| **minType**     | the low end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType.md) for details  |
+| **maxType**     | the high end of event type to be queried, inclusive; see [SDL_EventType](SDL_EventType.md) for details |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if events with type >= `minType` and <=
-`maxType` are present, or [SDL_FALSE](SDL_FALSE) if not.
+Returns [SDL_TRUE](SDL_TRUE.md) if events with type >= `minType` and <=
+`maxType` are present, or [SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Remarks
 
 If you need to check for a single event type, use
-[SDL_HasEvent](SDL_HasEvent)() instead.
+[SDL_HasEvent](SDL_HasEvent.md)() instead.
 
 ## Version
 
@@ -33,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HasEvents](SDL_HasEvents)
+* [SDL_HasEvents](SDL_HasEvents.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md)

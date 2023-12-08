@@ -33,5 +33,4 @@ If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

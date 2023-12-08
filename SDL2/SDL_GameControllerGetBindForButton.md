@@ -17,11 +17,11 @@ SDL_GameControllerGetBindForButton(SDL_GameController *gamecontroller,
 |                        |                                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------ |
 | **gamecontroller**     | a game controller                                                                    |
-| **button**             | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton) value) |
+| **button**             | an button enum value (an [SDL_GameControllerButton](SDL_GameControllerButton.md) value) |
 
 ## Return Value
 
-Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind)
+Returns a [SDL_GameControllerButtonBind](SDL_GameControllerButtonBind.md)
 describing the bind. On failure (like the given Controller button doesn't
 exist on the device), its `.bindType` will be
 [`SDL_CONTROLLER_BINDTYPE_NONE`](SDL_CONTROLLER_BINDTYPE_NONE).
@@ -32,8 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis)
+* [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

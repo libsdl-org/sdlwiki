@@ -34,9 +34,9 @@ If you are running your game from Steam, the game controller mapping is automati
 <<FullSearchCached(category:CategoryGamepad -CategoryEnum -title:CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_GameControllerEventState](SDL_GameControllerEventState)
-- [SDL_GamepadConnected](SDL_GamepadConnected)
-- [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
+- [SDL_GameControllerEventState](SDL_GameControllerEventState.md)
+- [SDL_GamepadConnected](SDL_GamepadConnected.md)
+- [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex.md)
 <!-- END CATEGORY LIST -->
 ----
-[CategoryCategory](CategoryCategory), [CategoryDraft](CategoryDraft)
+[CategoryCategory](CategoryCategory.md), [CategoryDraft](CategoryDraft.md)

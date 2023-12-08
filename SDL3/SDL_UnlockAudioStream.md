@@ -19,17 +19,17 @@ int SDL_UnlockAudioStream(SDL_AudioStream *stream);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This unlocks an audio stream after a call to
-[SDL_LockAudioStream](SDL_LockAudioStream).
+[SDL_LockAudioStream](SDL_LockAudioStream.md).
 
 ## Thread Safety
 
 You should only call this from the same thread that previously called
-[SDL_LockAudioStream](SDL_LockAudioStream).
+[SDL_LockAudioStream](SDL_LockAudioStream.md).
 
 ## Version
 
@@ -37,10 +37,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudioStream](SDL_LockAudioStream)
-* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
-* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
+* [SDL_LockAudioStream](SDL_LockAudioStream.md)
+* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback.md)
+* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

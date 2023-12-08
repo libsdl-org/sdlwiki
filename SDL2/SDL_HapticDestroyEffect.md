@@ -15,7 +15,7 @@ void SDL_HapticDestroyEffect(SDL_Haptic * haptic,
 
 |                |                                                              |
 | -------------- | ------------------------------------------------------------ |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to destroy the effect on |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to destroy the effect on |
 | **effect**     | the ID of the haptic effect to destroy                       |
 
 ## Remarks
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticNewEffect](SDL_HapticNewEffect)
+* [SDL_HapticNewEffect](SDL_HapticNewEffect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

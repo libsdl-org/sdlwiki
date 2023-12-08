@@ -29,7 +29,7 @@ the server _accepts_ the connection. Once accepted, the server will be
 given a stream socket to communicate with the client, and they can send
 data to, and receive data from, each other.
 
-Unlike [SDLNet_CreateClient](SDLNet_CreateClient), stream sockets returned
+Unlike [SDLNet_CreateClient](SDLNet_CreateClient.md), stream sockets returned
 from this function are already connected and do not have to wait for the
 connection to complete, as server acceptance is the final step of
 connecting.
@@ -41,7 +41,7 @@ fact, this function should be called in a loop until this condition occurs,
 so all pending connections are accepted in a single batch.
 
 If you want the server to sleep until there's a new connection, you can use
-[SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)().
+[SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable.md)().
 
 When done with the newly-accepted client, you can disconnect and dispose of
 the stream socket by calling SDL_DestroyStreamSocket().
@@ -58,9 +58,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)
-* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
+* [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable.md)
+* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

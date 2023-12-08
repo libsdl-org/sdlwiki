@@ -35,10 +35,10 @@ If `loops` is greater than zero, loop the sound that many times. If `loops`
 is -1, loop "infinitely" (~65000 times).
 
 Note that before SDL_mixer 3.0.0, this function was a macro that called
-[Mix_PlayChannelTimed](Mix_PlayChannelTimed)() with a fourth parameter
+[Mix_PlayChannelTimed](Mix_PlayChannelTimed.md)() with a fourth parameter
 ("ticks") of -1. This function still does the same thing, but promotes it
 to a proper API function. Older binaries linked against a newer SDL_mixer
-will still call [Mix_PlayChannelTimed](Mix_PlayChannelTimed) directly, as
+will still call [Mix_PlayChannelTimed](Mix_PlayChannelTimed.md) directly, as
 they are using the macro, which was available since the dawn of time.
 
 ## Version
@@ -46,5 +46,4 @@ they are using the macro, which was available since the dawn of time.
 This function is available since SDL_mixer 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

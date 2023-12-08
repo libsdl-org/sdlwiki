@@ -27,7 +27,7 @@ Despite the name and signature, this method retrieves the brightness of the
 entire display, not an individual window. A window is considered to be
 owned by the display that contains the window's center pixel. (The index of
 this display can be retrieved using
-[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex)().)
+[SDL_GetWindowDisplayIndex](SDL_GetWindowDisplayIndex.md)().)
 
 ## Version
 
@@ -35,8 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowBrightness](SDL_SetWindowBrightness)
+* [SDL_SetWindowBrightness](SDL_SetWindowBrightness.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

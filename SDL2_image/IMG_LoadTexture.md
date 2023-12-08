@@ -37,10 +37,10 @@ RGBA).
 There is a separate function to read files from an SDL_RWops, if you need
 an i/o abstraction to provide data from anywhere instead of a simple
 filesystem read; that function is
-[IMG_LoadTexture_RW](IMG_LoadTexture_RW)().
+[IMG_LoadTexture_RW](IMG_LoadTexture_RW.md)().
 
 If you would rather decode an image to an SDL_Surface (a buffer of pixels
-in CPU memory), call [IMG_Load](IMG_Load)() instead.
+in CPU memory), call [IMG_Load](IMG_Load.md)() instead.
 
 When done with the returned texture, the app should dispose of it with a
 call to SDL_DestroyTexture().
@@ -51,10 +51,9 @@ This function is available since SDL_image 2.0.0.
 
 ## Related Functions
 
-* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
-* [IMG_LoadTexture_RW](IMG_LoadTexture_RW)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
+* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW.md)
+* [IMG_LoadTexture_RW](IMG_LoadTexture_RW.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

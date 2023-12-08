@@ -19,7 +19,7 @@ int SDL_GL_LoadLibrary(const char *path);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -29,7 +29,7 @@ library will be loaded upon creation of the first OpenGL window.
 
 If you do this, you need to retrieve all of the GL functions used in your
 program from the dynamic library using
-[SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)().
+[SDL_GL_GetProcAddress](SDL_GL_GetProcAddress.md)().
 
 ## Version
 
@@ -37,10 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)
-* [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
+* [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress.md)
+* [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

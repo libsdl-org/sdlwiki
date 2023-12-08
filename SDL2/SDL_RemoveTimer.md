@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_RemoveTimer
 
-Remove a timer created with [SDL_AddTimer](SDL_AddTimer)().
+Remove a timer created with [SDL_AddTimer](SDL_AddTimer.md)().
 
 ## Syntax
 
@@ -18,8 +18,8 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
-[SDL_FALSE](SDL_FALSE) if the timer wasn't found.
+Returns [SDL_TRUE](SDL_TRUE.md) if the timer is removed or
+[SDL_FALSE](SDL_FALSE.md) if the timer wasn't found.
 
 ## Version
 
@@ -27,7 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AddTimer](SDL_AddTimer)
+* [SDL_AddTimer](SDL_AddTimer.md)
 
 
 ## Example
@@ -38,7 +38,7 @@ This function is available since SDL 2.0.0.
 Uint32 callback(Uint32 interval, void* name) {
 
     printf("Hello %s!\n", static_cast<char*>(name));
-       
+
     return 0;
 }
 
@@ -66,5 +66,4 @@ SDL_RemoveTimer(timerID);
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -30,5 +30,4 @@ Here are the names returned for some (but not all) supported platforms:
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

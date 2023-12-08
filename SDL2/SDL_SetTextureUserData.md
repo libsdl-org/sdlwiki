@@ -28,8 +28,7 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_GetTextureUserData](SDL_GetTextureUserData)
+* [SDL_GetTextureUserData](SDL_GetTextureUserData.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

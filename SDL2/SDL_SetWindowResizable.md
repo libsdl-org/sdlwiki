@@ -16,7 +16,7 @@ void SDL_SetWindowResizable(SDL_Window * window,
 |                   |                                                                            |
 | ----------------- | -------------------------------------------------------------------------- |
 | **window**        | the window of which to change the resizable state                          |
-| **resizable**     | [SDL_TRUE](SDL_TRUE) to allow resizing, [SDL_FALSE](SDL_FALSE) to disallow |
+| **resizable**     | [SDL_TRUE](SDL_TRUE.md) to allow resizing, [SDL_FALSE](SDL_FALSE.md) to disallow |
 
 ## Remarks
 
@@ -33,8 +33,7 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+* [SDL_GetWindowFlags](SDL_GetWindowFlags.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

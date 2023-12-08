@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RWseek
 
-Seek within an [SDL_RWops](SDL_RWops) data stream.
+Seek within an [SDL_RWops](SDL_RWops.md) data stream.
 
 ## Syntax
 
@@ -14,14 +14,14 @@ Sint64 SDL_RWseek(SDL_RWops *context, Sint64 offset, int whence);
 
 |                 |                                                                                                                         |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **context**     | a pointer to an [SDL_RWops](SDL_RWops) structure                                                                        |
+| **context**     | a pointer to an [SDL_RWops](SDL_RWops.md) structure                                                                        |
 | **offset**      | an offset in bytes, relative to **whence** location; can be negative                                                    |
 | **whence**      | any of [`SDL_RW_SEEK_SET`](SDL_RW_SEEK_SET), [`SDL_RW_SEEK_CUR`](SDL_RW_SEEK_CUR), [`SDL_RW_SEEK_END`](SDL_RW_SEEK_END) |
 
 ## Return Value
 
 Returns the final offset in the data stream after the seek or a negative
-error code on failure; call [SDL_GetError](SDL_GetError)() for more
+error code on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -36,8 +36,8 @@ This function seeks to byte `offset`, relative to `whence`.
 
 If this stream can not seek, it will return -1.
 
-[SDL_RWseek](SDL_RWseek)() is actually a wrapper function that calls the
-[SDL_RWops](SDL_RWops)'s `seek` method appropriately, to simplify
+[SDL_RWseek](SDL_RWseek.md)() is actually a wrapper function that calls the
+[SDL_RWops](SDL_RWops.md)'s `seek` method appropriately, to simplify
 application development.
 
 ## Version
@@ -62,15 +62,13 @@ if (rw != NULL) {
 
 ## Related Functions
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWread](SDL_RWread)
-* [SDL_RWtell](SDL_RWtell)
-* [SDL_RWwrite](SDL_RWwrite)
+* [SDL_RWclose](SDL_RWclose.md)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem.md)
+* [SDL_RWFromFile](SDL_RWFromFile.md)
+* [SDL_RWFromMem](SDL_RWFromMem.md)
+* [SDL_RWread](SDL_RWread.md)
+* [SDL_RWtell](SDL_RWtell.md)
+* [SDL_RWwrite](SDL_RWwrite.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

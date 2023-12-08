@@ -34,5 +34,4 @@ in milliseconds has elapsed, whichever occurs first.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

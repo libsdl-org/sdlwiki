@@ -32,8 +32,7 @@ This function is available since SDL 2.0.8.
 
 ## Related Functions
 
-* [SDL_RenderGetMetalCommandEncoder](SDL_RenderGetMetalCommandEncoder)
+* [SDL_RenderGetMetalCommandEncoder](SDL_RenderGetMetalCommandEncoder.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

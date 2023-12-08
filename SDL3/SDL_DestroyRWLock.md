@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_DestroyRWLock
 
-Destroy a read/write lock created with [SDL_CreateRWLock](SDL_CreateRWLock)().
+Destroy a read/write lock created with [SDL_CreateRWLock](SDL_CreateRWLock.md)().
 
 ## Syntax
 
@@ -30,13 +30,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRWLock](SDL_CreateRWLock)
-* [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
-* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
-* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
-* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
-* [SDL_UnlockRWLock](SDL_UnlockRWLock)
+* [SDL_CreateRWLock](SDL_CreateRWLock.md)
+* [SDL_LockRWLockForReading](SDL_LockRWLockForReading.md)
+* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting.md)
+* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading.md)
+* [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting.md)
+* [SDL_UnlockRWLock](SDL_UnlockRWLock.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

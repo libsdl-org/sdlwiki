@@ -19,7 +19,7 @@ const char* SDL_GetJoystickInstanceName(SDL_JoystickID instance_id);
 ## Return Value
 
 Returns the name of the selected joystick. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
+function returns NULL; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,9 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickName](SDL_GetJoystickName)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_GetJoystickName](SDL_GetJoystickName.md)
+* [SDL_OpenJoystick](SDL_OpenJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

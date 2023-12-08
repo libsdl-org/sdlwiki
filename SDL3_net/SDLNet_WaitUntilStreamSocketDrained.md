@@ -24,7 +24,7 @@ SDL_GetError() for details.
 
 ## Remarks
 
-If [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)() couldn't send
+If [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket.md)() couldn't send
 all its data immediately, it will queue it to be sent later. This function
 lets the app sleep until all the data is transmitted.
 
@@ -33,10 +33,10 @@ long to wait for transmission to complete. Specifying a timeout of -1
 instructs the library to wait indefinitely, and a timeout of 0 just checks
 the current status and returns immediately (and is functionally equivalent
 to calling
-[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)).
+[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)).
 
 If you don't want your program to block, you can call
-[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
+[SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)
 from time to time until you get a result <= 0.
 
 If the connection has failed (remote side dropped us, or one of a million
@@ -57,9 +57,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)
-* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
+* [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket.md)
+* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

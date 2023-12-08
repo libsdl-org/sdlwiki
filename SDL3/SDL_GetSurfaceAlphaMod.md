@@ -15,13 +15,13 @@ int SDL_GetSurfaceAlphaMod(SDL_Surface *surface,
 
 |                 |                                                   |
 | --------------- | ------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to query |
 | **alpha**       | a pointer filled in with the current alpha value  |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,10 +29,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
-* [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod)
+* [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod.md)
+* [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

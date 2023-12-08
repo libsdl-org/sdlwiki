@@ -24,7 +24,7 @@ be cast to the appropriate function signature.
 ## Remarks
 
 If the GL library is loaded at runtime with
-[SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)(), then all GL functions must be
+[SDL_GL_LoadLibrary](SDL_GL_LoadLibrary.md)(), then all GL functions must be
 retrieved this way. Usually this is used to retrieve function pointers to
 OpenGL extensions.
 
@@ -34,7 +34,7 @@ these quirks without any platform-specific code, though:
 
 - On Windows, function pointers are specific to the current GL context;
   this means you need to have created a GL context and made it current
-  before calling [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)(). If you
+  before calling [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress.md)(). If you
   recreate your context or create a second context, you should assume that
   any existing function pointers aren't valid to use with it. This is
   (currently) a Windows-specific limitation, and in practice lots of
@@ -49,7 +49,7 @@ these quirks without any platform-specific code, though:
   is _NOT_ safe to call. You must always make sure the function is actually
   available for a given GL context before calling it, by checking for the
   existence of the appropriate extension with
-  [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)(), or verifying
+  [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported.md)(), or verifying
   that the version of OpenGL you're using offers the function as core
   functionality.
 - Some OpenGL drivers, on all platforms, *will* return NULL if a function
@@ -83,11 +83,9 @@ glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 
 ## Related Functions
 
-* [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
-* [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
-* [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
+* [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported.md)
+* [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary.md)
+* [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

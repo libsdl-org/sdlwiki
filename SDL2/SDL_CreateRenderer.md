@@ -17,12 +17,12 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window * window,
 | -------------- | ----------------------------------------------------------------------------------------------------------------- |
 | **window**     | the window where rendering is displayed                                                                           |
 | **index**      | the index of the rendering driver to initialize, or -1 to initialize the first one supporting the requested flags |
-| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                            |
+| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags.md) OR'd together                                            |
 
 ## Return Value
 
 Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -30,11 +30,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer.md)
+* [SDL_DestroyRenderer](SDL_DestroyRenderer.md)
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)
+* [SDL_GetRendererInfo](SDL_GetRendererInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,20 +18,20 @@ SDL_Joystick* SDL_GameControllerGetJoystick(SDL_GameController *gamecontroller);
 
 ## Return Value
 
-Returns a [SDL_Joystick](SDL_Joystick) object; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns a [SDL_Joystick](SDL_Joystick.md) object; call
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-This function will give you a [SDL_Joystick](SDL_Joystick) object, which
-allows you to use the [SDL_Joystick](SDL_Joystick) functions with a
-[SDL_GameController](SDL_GameController) object. This would be useful for
+This function will give you a [SDL_Joystick](SDL_Joystick.md) object, which
+allows you to use the [SDL_Joystick](SDL_Joystick.md) functions with a
+[SDL_GameController](SDL_GameController.md) object. This would be useful for
 getting a joystick's position at any given time, even if it hasn't moved
 (moving it would produce an event, which would have the axis' value).
 
 The pointer returned is owned by the
-[SDL_GameController](SDL_GameController). You should not call
-[SDL_JoystickClose](SDL_JoystickClose)() on it, for example, since doing so
+[SDL_GameController](SDL_GameController.md). You should not call
+[SDL_JoystickClose](SDL_JoystickClose.md)() on it, for example, since doing so
 will likely cause SDL to crash.
 
 ## Version
@@ -39,5 +39,4 @@ will likely cause SDL to crash.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

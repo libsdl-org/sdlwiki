@@ -22,7 +22,7 @@ int SDL_RenderSetScale(SDL_Renderer * renderer,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -40,9 +40,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderGetScale](SDL_RenderGetScale)
-* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
+* [SDL_RenderGetScale](SDL_RenderGetScale.md)
+* [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

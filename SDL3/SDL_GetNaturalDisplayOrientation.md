@@ -18,7 +18,7 @@ SDL_DisplayOrientation SDL_GetNaturalDisplayOrientation(SDL_DisplayID displayID)
 
 ## Return Value
 
-Returns The [SDL_DisplayOrientation](SDL_DisplayOrientation) enum value of
+Returns The [SDL_DisplayOrientation](SDL_DisplayOrientation.md) enum value of
 the display, or [`SDL_ORIENTATION_UNKNOWN`](SDL_ORIENTATION_UNKNOWN) if it
 isn't available.
 
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

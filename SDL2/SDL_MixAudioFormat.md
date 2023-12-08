@@ -19,9 +19,9 @@ void SDL_MixAudioFormat(Uint8 * dst,
 | -------------- | ------------------------------------------------------------------------------------------------------ |
 | **dst**        | the destination for the mixed audio                                                                    |
 | **src**        | the source audio buffer to be mixed                                                                    |
-| **format**     | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format                 |
+| **format**     | the [SDL_AudioFormat](SDL_AudioFormat.md) structure representing the desired audio format                 |
 | **len**        | the length of the audio buffer in bytes                                                                |
-| **volume**     | ranges from 0 - 128, and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME) for full audio volume |
+| **volume**     | ranges from 0 - 128, and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME.md) for full audio volume |
 
 ## Remarks
 
@@ -39,7 +39,7 @@ than the input (not to mention this being an inefficient way of doing it).
 
 It is a common misconception that this function is required to write audio
 data to an output stream in an audio callback. While you can do that,
-[SDL_MixAudioFormat](SDL_MixAudioFormat)() is really only needed when
+[SDL_MixAudioFormat](SDL_MixAudioFormat.md)() is really only needed when
 you're mixing a single audio stream with a volume adjustment.
 
 ## Version
@@ -47,5 +47,4 @@ you're mixing a single audio stream with a volume adjustment.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

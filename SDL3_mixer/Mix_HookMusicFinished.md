@@ -20,7 +20,7 @@ void Mix_HookMusicFinished(void (SDLCALL *music_finished)(void));
 
 This callback will fire when the currently-playing music has completed, or
 when it has been explicitly stopped from a call to
-[Mix_HaltMusic](Mix_HaltMusic). As such, this callback might fire from an
+[Mix_HaltMusic](Mix_HaltMusic.md). As such, this callback might fire from an
 arbitrary background thread at almost any time; try to limit what you do
 here.
 
@@ -39,5 +39,4 @@ A NULL pointer will disable the callback.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

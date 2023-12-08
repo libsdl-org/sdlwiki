@@ -25,12 +25,12 @@ Returns 0 on success, -1 on error.
 ## Remarks
 
 Please note that values set here will not be applied until the next call to
-[SDL_JoystickUpdate](SDL_JoystickUpdate), which can either be called
+[SDL_JoystickUpdate](SDL_JoystickUpdate.md), which can either be called
 directly, or can be called indirectly through various other SDL APIs,
 including, but not limited to the following:
-[SDL_PollEvent](SDL_PollEvent), [SDL_PumpEvents](SDL_PumpEvents),
-[SDL_WaitEventTimeout](SDL_WaitEventTimeout),
-[SDL_WaitEvent](SDL_WaitEvent).
+[SDL_PollEvent](SDL_PollEvent.md), [SDL_PumpEvents](SDL_PumpEvents.md),
+[SDL_WaitEventTimeout](SDL_WaitEventTimeout.md),
+[SDL_WaitEvent](SDL_WaitEvent.md).
 
 Note that when sending trigger axes, you should scale the value to the full
 range of Sint16. For example, a trigger at rest would have the value of
@@ -41,5 +41,4 @@ range of Sint16. For example, a trigger at rest would have the value of
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

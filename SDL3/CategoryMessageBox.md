@@ -7,22 +7,21 @@
 The functions in this category are used configure and display system message boxes (a.k.a. alert boxes)
 
 ## Enumerations
-- [SDL_MessageBoxFlags](SDL_MessageBoxFlags)
-- [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
-- [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)
+- [SDL_MessageBoxFlags](SDL_MessageBoxFlags.md)
+- [SDL_MessageBoxColorType](SDL_MessageBoxColorType.md)
+- [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags.md)
 
 ## Structures
-- [SDL_MessageBoxData](SDL_MessageBoxData)
-- [SDL_MessageBoxColor](SDL_MessageBoxColor)
-- [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)
-- [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)
+- [SDL_MessageBoxData](SDL_MessageBoxData.md)
+- [SDL_MessageBoxColor](SDL_MessageBoxColor.md)
+- [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData.md)
+- [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme.md)
 
 ## Functions
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_ShowMessageBox](SDL_ShowMessageBox)
-- [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
+- [SDL_ShowMessageBox](SDL_ShowMessageBox.md)
+- [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox.md)
 <!-- END CATEGORY LIST -->
 
 ----
-[CategoryCategory](CategoryCategory)
-
+[CategoryCategory](CategoryCategory.md)

@@ -15,14 +15,14 @@ SDL_bool SDL_JoystickGetAxisInitialState(SDL_Joystick *joystick,
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 | **axis**         | the axis to query; the axis indices start at index 0                      |
 | **state**        | Upon return, the initial value is supplied here.                          |
 
 ## Return Value
 
-Return [SDL_TRUE](SDL_TRUE) if this axis has any initial value, or
-[SDL_FALSE](SDL_FALSE) if not.
+Return [SDL_TRUE](SDL_TRUE.md) if this axis has any initial value, or
+[SDL_FALSE](SDL_FALSE.md) if not.
 
 ## Remarks
 
@@ -35,5 +35,4 @@ The axis indices start at index 0.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

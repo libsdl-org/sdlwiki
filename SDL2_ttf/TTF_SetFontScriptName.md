@@ -24,7 +24,7 @@ Returns 0 on success, or -1 on error.
 ## Remarks
 
 Any value supplied here will override the global script set with the
-deprecated [TTF_SetScript](TTF_SetScript)().
+deprecated [TTF_SetScript](TTF_SetScript.md)().
 
 The supplied script value must be a null-terminated string of exactly four
 characters.
@@ -36,5 +36,4 @@ If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 This function is available since SDL_ttf 2.20.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

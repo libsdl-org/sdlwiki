@@ -19,7 +19,7 @@ int SDL_SetClipboardText(const char *text);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetClipboardText](SDL_GetClipboardText)
-* [SDL_HasClipboardText](SDL_HasClipboardText)
+* [SDL_GetClipboardText](SDL_GetClipboardText.md)
+* [SDL_HasClipboardText](SDL_HasClipboardText.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

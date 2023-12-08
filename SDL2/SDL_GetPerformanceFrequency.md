@@ -20,8 +20,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
+* [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

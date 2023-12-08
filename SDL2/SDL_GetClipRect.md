@@ -15,8 +15,8 @@ void SDL_GetClipRect(SDL_Surface * surface,
 
 |                 |                                                                                         |
 | --------------- | --------------------------------------------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure representing the surface to be clipped         |
-| **rect**        | an [SDL_Rect](SDL_Rect) structure filled in with the clipping rectangle for the surface |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure representing the surface to be clipped         |
+| **rect**        | an [SDL_Rect](SDL_Rect.md) structure filled in with the clipping rectangle for the surface |
 
 ## Remarks
 
@@ -29,9 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_SetClipRect](SDL_SetClipRect)
+* [SDL_BlitSurface](SDL_BlitSurface.md)
+* [SDL_SetClipRect](SDL_SetClipRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

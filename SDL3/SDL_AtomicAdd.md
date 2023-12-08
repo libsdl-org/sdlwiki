@@ -14,7 +14,7 @@ int SDL_AtomicAdd(SDL_AtomicInt *a, int v);
 
 |           |                                                                        |
 | --------- | ---------------------------------------------------------------------- |
-| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt) variable to be modified |
+| **a**     | a pointer to an [SDL_AtomicInt](SDL_AtomicInt.md) variable to be modified |
 | **v**     | the desired value to add                                               |
 
 ## Return Value
@@ -34,10 +34,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AtomicDecRef](SDL_AtomicDecRef)
-* [SDL_AtomicIncRef](SDL_AtomicIncRef)
+* [SDL_AtomicDecRef](SDL_AtomicDecRef.md)
+* [SDL_AtomicIncRef](SDL_AtomicIncRef.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAtomic](CategoryAtomic.md)

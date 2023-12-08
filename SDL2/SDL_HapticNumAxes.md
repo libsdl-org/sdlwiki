@@ -14,22 +14,21 @@ int SDL_HapticNumAxes(SDL_Haptic * haptic);
 
 |                |                                              |
 | -------------- | -------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to query |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to query |
 
 ## Return Value
 
 Returns the number of axes on success or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The number of haptic axes might be useful if working with the
-[SDL_HapticDirection](SDL_HapticDirection) effect.
+[SDL_HapticDirection](SDL_HapticDirection.md) effect.
 
 ## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

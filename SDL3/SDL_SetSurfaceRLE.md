@@ -15,13 +15,13 @@ int SDL_SetSurfaceRLE(SDL_Surface *surface,
 
 |                 |                                                      |
 | --------------- | ---------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to optimize |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to optimize |
 | **flag**        | 0 to disable, non-zero to enable RLE acceleration    |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,11 +34,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_LockSurface](SDL_LockSurface)
-* [SDL_UnlockSurface](SDL_UnlockSurface)
+* [SDL_BlitSurface](SDL_BlitSurface.md)
+* [SDL_LockSurface](SDL_LockSurface.md)
+* [SDL_UnlockSurface](SDL_UnlockSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

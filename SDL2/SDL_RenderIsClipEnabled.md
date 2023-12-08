@@ -18,8 +18,8 @@ SDL_bool SDL_RenderIsClipEnabled(SDL_Renderer * renderer);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if clipping is enabled or
-[SDL_FALSE](SDL_FALSE) if not; call [SDL_GetError](SDL_GetError)() for more
+Returns [SDL_TRUE](SDL_TRUE.md) if clipping is enabled or
+[SDL_FALSE](SDL_FALSE.md) if not; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.4.
 
 ## Related Functions
 
-* [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
-* [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
+* [SDL_RenderGetClipRect](SDL_RenderGetClipRect.md)
+* [SDL_RenderSetClipRect](SDL_RenderSetClipRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

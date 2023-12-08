@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_LogDebug
 
-Log a message with [SDL_LOG_PRIORITY_DEBUG](SDL_LOG_PRIORITY_DEBUG).
+Log a message with [SDL_LOG_PRIORITY_DEBUG](SDL_LOG_PRIORITY_DEBUG.md).
 
 ## Syntax
 
@@ -24,15 +24,14 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_Log](SDL_Log)
-* [SDL_LogCritical](SDL_LogCritical)
-* [SDL_LogError](SDL_LogError)
-* [SDL_LogInfo](SDL_LogInfo)
-* [SDL_LogMessage](SDL_LogMessage)
-* [SDL_LogMessageV](SDL_LogMessageV)
-* [SDL_LogVerbose](SDL_LogVerbose)
-* [SDL_LogWarn](SDL_LogWarn)
+* [SDL_Log](SDL_Log.md)
+* [SDL_LogCritical](SDL_LogCritical.md)
+* [SDL_LogError](SDL_LogError.md)
+* [SDL_LogInfo](SDL_LogInfo.md)
+* [SDL_LogMessage](SDL_LogMessage.md)
+* [SDL_LogMessageV](SDL_LogMessageV.md)
+* [SDL_LogVerbose](SDL_LogVerbose.md)
+* [SDL_LogWarn](SDL_LogWarn.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

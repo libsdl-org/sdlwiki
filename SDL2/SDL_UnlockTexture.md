@@ -14,11 +14,11 @@ void SDL_UnlockTexture(SDL_Texture * texture);
 
 |                 |                                                          |
 | --------------- | -------------------------------------------------------- |
-| **texture**     | a texture locked by [SDL_LockTexture](SDL_LockTexture)() |
+| **texture**     | a texture locked by [SDL_LockTexture](SDL_LockTexture.md)() |
 
 ## Remarks
 
-**Warning**: Please note that [SDL_LockTexture](SDL_LockTexture)() is
+**Warning**: Please note that [SDL_LockTexture](SDL_LockTexture.md)() is
 intended to be write-only; it will not guarantee the previous contents of
 the texture will be provided. You must fully initialize any area of a
 texture that you lock before unlocking it, as the pixels might otherwise be
@@ -33,8 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockTexture](SDL_LockTexture)
+* [SDL_LockTexture](SDL_LockTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -22,7 +22,7 @@ aligned to be compatible with SIMD instructions on the current machine. For
 example, if the machine supports SSE only, it will return 16, but if it
 supports AVX-512F, it'll return 64 (etc). This only reports values for
 instruction sets SDL knows about, so if your SDL build doesn't have
-[SDL_HasAVX512F](SDL_HasAVX512F)(), then it might return 16 for the SSE
+[SDL_HasAVX512F](SDL_HasAVX512F.md)(), then it might return 16 for the SSE
 support it sees and not 64 for the AVX-512 instructions that exist but SDL
 doesn't know about. Plan accordingly.
 
@@ -31,5 +31,4 @@ doesn't know about. Plan accordingly.
 This function is available since SDL 2.0.10.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

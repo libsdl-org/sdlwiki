@@ -26,8 +26,8 @@ removal), or -1 if `sock` was not in the set.
 
 Generally you don't want to call this generic function, but rather the
 specific, inline function that wraps it:
-[SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket)() or
-[SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket)().
+[SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket.md)() or
+[SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket.md)().
 
 If `sock` is NULL, nothing is removed from the set; this lets you query the
 number of sockets currently contained in the set.
@@ -41,13 +41,12 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket)
-* [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket)
-* [SDLNet_AddSocket](SDLNet_AddSocket)
-* [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket)
-* [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket)
-* [SDLNet_CheckSockets](SDLNet_CheckSockets)
+* [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket.md)
+* [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket.md)
+* [SDLNet_AddSocket](SDLNet_AddSocket.md)
+* [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket.md)
+* [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket.md)
+* [SDLNet_CheckSockets](SDLNet_CheckSockets.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

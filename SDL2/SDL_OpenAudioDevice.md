@@ -19,23 +19,23 @@ SDL_AudioDeviceID SDL_OpenAudioDevice(
 
 |                         |                                                                                                                                                                           |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **device**              | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
+| **device**              | a UTF-8 string reported by [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName.md)() or a driver-specific name as appropriate. NULL requests the most reasonable default device. |
 | **iscapture**           | non-zero to specify a device should be opened for recording, not playback                                                                                                 |
-| **desired**             | an [SDL_AudioSpec](SDL_AudioSpec) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                             |
-| **obtained**            | an [SDL_AudioSpec](SDL_AudioSpec) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio)() for more information                            |
+| **desired**             | an [SDL_AudioSpec](SDL_AudioSpec.md) structure representing the desired output format; see [SDL_OpenAudio](SDL_OpenAudio.md)() for more information                             |
+| **obtained**            | an [SDL_AudioSpec](SDL_AudioSpec.md) structure filled in with the actual output format; see [SDL_OpenAudio](SDL_OpenAudio.md)() for more information                            |
 | **allowed_changes**     | 0, or one or more flags OR'd together                                                                                                                                     |
 
 ## Return Value
 
 Returns a valid device ID that is > 0 on success or 0 on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 For compatibility with SDL 1.2, this will never return 1, since SDL
-reserves that ID for the legacy [SDL_OpenAudio](SDL_OpenAudio)() function.
+reserves that ID for the legacy [SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Remarks
 
-[SDL_OpenAudio](SDL_OpenAudio)(), unlike this function, always acts on
+[SDL_OpenAudio](SDL_OpenAudio.md)(), unlike this function, always acts on
 device ID 1. As such, this function will never return a 1 so as not to
 conflict with the legacy function.
 
@@ -44,22 +44,22 @@ this function would fail if `iscapture` was not zero. Starting with SDL
 2.0.5, recording is implemented and this value can be non-zero.
 
 Passing in a `device` name of NULL requests the most reasonable default
-(and is equivalent to what [SDL_OpenAudio](SDL_OpenAudio)() does to choose
+(and is equivalent to what [SDL_OpenAudio](SDL_OpenAudio.md)() does to choose
 a device). The `device` name is a UTF-8 string reported by
-[SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)(), but some drivers allow
+[SDL_GetAudioDeviceName](SDL_GetAudioDeviceName.md)(), but some drivers allow
 arbitrary and driver-specific strings, such as a hostname/IP address for a
 remote audio server, or a filename in the diskaudio driver.
 
 An opened audio device starts out paused, and should be enabled for playing
-by calling [SDL_PauseAudioDevice](SDL_PauseAudioDevice)(devid, 0) when you
+by calling [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)(devid, 0) when you
 are ready for your audio callback function to be called. Since the audio
 driver may modify the requested size of the audio buffer, you should
 allocate any local mixing buffers after you open the audio device.
 
 The audio callback runs in a separate thread in most cases; you can prevent
 race conditions between your callback and other threads without fully
-pausing playback with [SDL_LockAudioDevice](SDL_LockAudioDevice)(). For
-more information about the callback, see [SDL_AudioSpec](SDL_AudioSpec).
+pausing playback with [SDL_LockAudioDevice](SDL_LockAudioDevice.md)(). For
+more information about the callback, see [SDL_AudioSpec](SDL_AudioSpec.md).
 
 Managing the audio spec via 'desired' and 'obtained':
 
@@ -79,22 +79,22 @@ When filling in the desired audio spec structure:
   directly related to time by the following formula: `ms =
   (sampleframes*1000)/freq`
 - `desired->size` is the size in _bytes_ of the audio buffer, and is
-  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). You don't
+  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)(). You don't
   initialize this.
 - `desired->silence` is the value used to set the buffer to silence, and is
-  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)(). You don't
+  calculated by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)(). You don't
   initialize this.
 - `desired->callback` should be set to a function that will be called when
   the audio device is ready for more data. It is passed a pointer to the
   audio buffer, and the length in bytes of the audio buffer. This function
   usually runs in a separate thread, and so you should protect data
   structures that it accesses by calling
-  [SDL_LockAudioDevice](SDL_LockAudioDevice)() and
-  [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)() in your code.
+  [SDL_LockAudioDevice](SDL_LockAudioDevice.md)() and
+  [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice.md)() in your code.
   Alternately, you may pass a NULL pointer here, and call
-  [SDL_QueueAudio](SDL_QueueAudio)() with some frequency, to queue more
+  [SDL_QueueAudio](SDL_QueueAudio.md)() with some frequency, to queue more
   audio samples to be played (or for capture devices, call
-  [SDL_DequeueAudio](SDL_DequeueAudio)() with some frequency, to obtain
+  [SDL_DequeueAudio](SDL_DequeueAudio.md)() with some frequency, to obtain
   audio samples).
 - `desired->userdata` is passed as the first parameter to your callback
   function. If you passed a NULL callback, this value is ignored.
@@ -113,7 +113,7 @@ doesn't offer, SDL will always try to get the closest equivalent.
 
 For example, if you ask for float32 audio format, but the sound card only
 supports int16, SDL will set the hardware to int16. If you had set
-[SDL_AUDIO_ALLOW_FORMAT_CHANGE](SDL_AUDIO_ALLOW_FORMAT_CHANGE), SDL will
+[SDL_AUDIO_ALLOW_FORMAT_CHANGE](SDL_AUDIO_ALLOW_FORMAT_CHANGE.md), SDL will
 change the format in the `obtained` structure. If that flag was *not* set,
 SDL will prepare to convert your callback's float32 audio to int16 before
 feeding it to the hardware and will keep the originally requested format in
@@ -131,13 +131,12 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
-* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
-* [SDL_OpenAudio](SDL_OpenAudio)
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
-* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+* [SDL_CloseAudioDevice](SDL_CloseAudioDevice.md)
+* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName.md)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
+* [SDL_OpenAudio](SDL_OpenAudio.md)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)
+* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

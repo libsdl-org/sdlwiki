@@ -27,8 +27,8 @@ but in valid uses it'll return >= 0.
 ## Remarks
 
 `sock` must be a valid socket that was created by
-[SDLNet_TCP_Open](SDLNet_TCP_Open) with a specific address, or
-[SDLNet_TCP_Accept](SDLNet_TCP_Accept).
+[SDLNet_TCP_Open](SDLNet_TCP_Open.md) with a specific address, or
+[SDLNet_TCP_Accept](SDLNet_TCP_Accept.md).
 
 This function sends `len` bytes, pointed to by `data` over the non-server
 socket `sock`.
@@ -45,8 +45,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_TCP_Recv](SDLNet_TCP_Recv)
+* [SDLNet_TCP_Recv](SDLNet_TCP_Recv.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

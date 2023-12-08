@@ -15,13 +15,13 @@ void SDL_Vulkan_GetDrawableSize(SDL_Window * window,
 
 |                |                                                                 |
 | -------------- | --------------------------------------------------------------- |
-| **window**     | an [SDL_Window](SDL_Window) for which the size is to be queried |
+| **window**     | an [SDL_Window](SDL_Window.md) for which the size is to be queried |
 | **w**          | Pointer to the variable to write the width to or NULL           |
 | **h**          | Pointer to the variable to write the height to or NULL          |
 
 ## Remarks
 
-This may differ from [SDL_GetWindowSize](SDL_GetWindowSize)() if we're
+This may differ from [SDL_GetWindowSize](SDL_GetWindowSize.md)() if we're
 rendering to a high-DPI drawable, i.e. the window was created with
 [`SDL_WINDOW_ALLOW_HIGHDPI`](SDL_WINDOW_ALLOW_HIGHDPI) on a platform with
 high-DPI support (Apple calls this "Retina"), and not disabled by the
@@ -33,10 +33,9 @@ This function is available since SDL 2.0.6.
 
 ## Related Functions
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

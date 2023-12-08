@@ -32,5 +32,4 @@ play MIDI files.
 This function is available since SDL_mixer 2.6.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

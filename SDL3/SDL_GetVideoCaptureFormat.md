@@ -18,16 +18,16 @@ int SDL_GetVideoCaptureFormat(SDL_VideoCaptureDevice *device,
 | -------------- | ------------------------------------------------------------------ |
 | **device**     | opened video capture device                                        |
 | **index**      | format between 0 and num -1                                        |
-| **format**     | pointer output format ([SDL_PixelFormatEnum](SDL_PixelFormatEnum)) |
+| **format**     | pointer output format ([SDL_PixelFormatEnum](SDL_PixelFormatEnum.md)) |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-The value can be used to fill [SDL_VideoCaptureSpec](SDL_VideoCaptureSpec)
+The value can be used to fill [SDL_VideoCaptureSpec](SDL_VideoCaptureSpec.md)
 structure.
 
 ## Version
@@ -36,8 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumVideoCaptureFormats](SDL_GetNumVideoCaptureFormats)
+* [SDL_GetNumVideoCaptureFormats](SDL_GetNumVideoCaptureFormats.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

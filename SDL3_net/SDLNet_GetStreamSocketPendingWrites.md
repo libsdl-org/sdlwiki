@@ -23,7 +23,7 @@ SDL_GetError() for details.
 
 ## Remarks
 
-If [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)() couldn't send
+If [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket.md)() couldn't send
 all its data immediately, it will queue it to be sent later. This function
 lets the app see how much of that queue is still pending to be sent.
 
@@ -48,9 +48,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
+* [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket.md)
+* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

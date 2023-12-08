@@ -38,5 +38,4 @@ call to SDL_FreeSurface().
 This function is available since SDL_image 2.6.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

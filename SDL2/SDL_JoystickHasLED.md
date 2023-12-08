@@ -18,8 +18,8 @@ SDL_bool SDL_JoystickHasLED(SDL_Joystick *joystick);
 
 ## Return Value
 
-Return [SDL_TRUE](SDL_TRUE) if the joystick has a modifiable LED,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Return [SDL_TRUE](SDL_TRUE.md) if the joystick has a modifiable LED,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -31,5 +31,4 @@ DualShock 4 controller.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

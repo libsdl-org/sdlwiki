@@ -19,12 +19,12 @@ const SDL_DisplayMode* SDL_GetDesktopDisplayMode(SDL_DisplayID displayID);
 ## Return Value
 
 Returns a pointer to the desktop display mode or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 There's a difference between this function and
-[SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)() when SDL runs
+[SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode.md)() when SDL runs
 fullscreen and has changed the resolution. In that case this function will
 return the previous native display mode, and not the current display mode.
 
@@ -44,10 +44,8 @@ if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
 
 ## Related Functions
 
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_GetDisplays](SDL_GetDisplays)
+* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode.md)
+* [SDL_GetDisplays](SDL_GetDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

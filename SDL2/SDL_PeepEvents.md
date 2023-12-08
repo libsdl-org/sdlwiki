@@ -17,15 +17,15 @@ int SDL_PeepEvents(SDL_Event * events, int numevents,
 |                   |                                                                                                                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **events**        | destination buffer for the retrieved events                                                                                                                                                                           |
-| **numevents**     | if action is [SDL_ADDEVENT](SDL_ADDEVENT), the number of events to add back to the event queue; if action is [SDL_PEEKEVENT](SDL_PEEKEVENT) or [SDL_GETEVENT](SDL_GETEVENT), the maximum number of events to retrieve |
+| **numevents**     | if action is [SDL_ADDEVENT](SDL_ADDEVENT.md), the number of events to add back to the event queue; if action is [SDL_PEEKEVENT](SDL_PEEKEVENT.md) or [SDL_GETEVENT](SDL_GETEVENT.md), the maximum number of events to retrieve |
 | **action**        | action to take; see [[#action|Remarks]] for details                                                                                                                                                                   |
-| **minType**       | minimum value of the event type to be considered; [SDL_FIRSTEVENT](SDL_FIRSTEVENT) is a safe choice                                                                                                                   |
-| **maxType**       | maximum value of the event type to be considered; [SDL_LASTEVENT](SDL_LASTEVENT) is a safe choice                                                                                                                     |
+| **minType**       | minimum value of the event type to be considered; [SDL_FIRSTEVENT](SDL_FIRSTEVENT.md) is a safe choice                                                                                                                   |
+| **maxType**       | maximum value of the event type to be considered; [SDL_LASTEVENT](SDL_LASTEVENT.md) is a safe choice                                                                                                                     |
 
 ## Return Value
 
 Returns the number of events actually stored or a negative error code on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -40,9 +40,9 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
   the event queue, within the specified minimum and maximum type, will be
   returned to the caller and will be removed from the queue.
 
-You may have to call [SDL_PumpEvents](SDL_PumpEvents)() before calling this
+You may have to call [SDL_PumpEvents](SDL_PumpEvents.md)() before calling this
 function. Otherwise, the events may not be ready to be filtered when you
-call [SDL_PeepEvents](SDL_PeepEvents)().
+call [SDL_PeepEvents](SDL_PeepEvents.md)().
 
 This function is thread-safe.
 
@@ -52,10 +52,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_PumpEvents](SDL_PumpEvents)
-* [SDL_PushEvent](SDL_PushEvent)
+* [SDL_PollEvent](SDL_PollEvent.md)
+* [SDL_PumpEvents](SDL_PumpEvents.md)
+* [SDL_PushEvent](SDL_PushEvent.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

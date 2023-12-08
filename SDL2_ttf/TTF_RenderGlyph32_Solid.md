@@ -32,15 +32,15 @@ will be set to the text color.
 The glyph is rendered without any padding or centering in the X direction,
 and aligned normally in the Y direction.
 
-This is the same as [TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid)(), but
+This is the same as [TTF_RenderGlyph_Solid](TTF_RenderGlyph_Solid.md)(), but
 takes a 32-bit character instead of 16-bit, and thus can render a larger
 range. If you are sure you'll have an SDL_ttf that's version 2.0.18 or
 newer, there's no reason not to use this function exclusively.
 
 You can render at other quality levels with
-[TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded),
-[TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended), and
-[TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD).
+[TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded.md),
+[TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended.md), and
+[TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD.md).
 
 ## Version
 
@@ -48,10 +48,9 @@ This function is available since SDL_ttf 2.0.18.
 
 ## Related Functions
 
-* [TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded)
-* [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
-* [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)
+* [TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded.md)
+* [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended.md)
+* [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

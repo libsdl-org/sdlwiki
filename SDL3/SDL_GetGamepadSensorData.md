@@ -22,17 +22,16 @@ int SDL_GetGamepadSensorData(SDL_Gamepad *gamepad, SDL_SensorType type, float *d
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The number of values and interpretation of the data is sensor dependent.
-See [SDL_sensor](SDL_sensor).h for the details for each type of sensor.
+See [SDL_sensor](SDL_sensor.md).h for the details for each type of sensor.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

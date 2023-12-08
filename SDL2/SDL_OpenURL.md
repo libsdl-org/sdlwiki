@@ -18,7 +18,7 @@ int SDL_OpenURL(const char *url);
 
 ## Return Value
 
-Returns 0 on success, or -1 on error; call [SDL_GetError](SDL_GetError)()
+Returns 0 on success, or -1 on error; call [SDL_GetError](SDL_GetError.md)()
 for more information.
 
 ## Remarks
@@ -47,5 +47,4 @@ test it on every platform you target.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ const char* SDL_HapticName(int device_index);
 ## Return Value
 
 Returns the name of the device or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,8 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_NumHaptics](SDL_NumHaptics)
+* [SDL_NumHaptics](SDL_NumHaptics.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

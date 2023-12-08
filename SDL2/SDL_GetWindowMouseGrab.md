@@ -18,8 +18,8 @@ SDL_bool SDL_GetWindowMouseGrab(SDL_Window * window);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if mouse is grabbed, and
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if mouse is grabbed, and
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 2.0.16.
 
 ## Related Functions
 
-* [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
-* [SDL_GetWindowGrab](SDL_GetWindowGrab)
+* [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab.md)
+* [SDL_GetWindowGrab](SDL_GetWindowGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

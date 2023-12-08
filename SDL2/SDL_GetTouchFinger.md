@@ -19,7 +19,7 @@ SDL_Finger * SDL_GetTouchFinger(SDL_TouchID touchID, int index);
 
 ## Return Value
 
-Returns a pointer to the [SDL_Finger](SDL_Finger) object or NULL if no
+Returns a pointer to the [SDL_Finger](SDL_Finger.md) object or NULL if no
 object at the given ID and index could be found.
 
 ## Remarks
@@ -32,8 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RecordGesture](SDL_RecordGesture)
+* [SDL_RecordGesture](SDL_RecordGesture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

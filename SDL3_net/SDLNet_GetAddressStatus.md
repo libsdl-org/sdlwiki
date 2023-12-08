@@ -14,7 +14,7 @@ int SDLNet_GetAddressStatus(SDLNet_Address *address);
 
 |                 |                                                |
 | --------------- | ---------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) to query. |
+| **address**     | The [SDLNet_Address](SDLNet_Address.md) to query. |
 
 ## Return Value
 
@@ -23,8 +23,8 @@ resolving; if -1, call SDL_GetError() for details.
 
 ## Remarks
 
-The [SDLNet_Address](SDLNet_Address) objects returned by
-[SDLNet_ResolveHostname](SDLNet_ResolveHostname) take time to do their
+The [SDLNet_Address](SDLNet_Address.md) objects returned by
+[SDLNet_ResolveHostname](SDLNet_ResolveHostname.md) take time to do their
 work, so it is does so _asynchronously_ instead of making your program wait
 an indefinite amount of time.
 
@@ -48,8 +48,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
+* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

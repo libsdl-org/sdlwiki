@@ -17,13 +17,13 @@ It is safe to call this when the library isn't initialized, as it will just
 return immediately.
 
 Once you have as many quit calls as you have had successful calls to
-[TTF_Init](TTF_Init), the library will actually deinitialize.
+[TTF_Init](TTF_Init.md), the library will actually deinitialize.
 
 Please note that this does not automatically close any fonts that are still
 open at the time of deinitialization, and it is possibly not safe to close
 them afterwards, as parts of the library will no longer be initialized to
 deal with it. A well-written program should call
-[TTF_CloseFont](TTF_CloseFont)() on any open fonts before calling this
+[TTF_CloseFont](TTF_CloseFont.md)() on any open fonts before calling this
 function!
 
 ## Version
@@ -31,5 +31,4 @@ function!
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

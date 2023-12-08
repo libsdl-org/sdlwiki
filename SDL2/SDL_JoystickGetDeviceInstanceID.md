@@ -30,5 +30,4 @@ This can be called before any joysticks are opened.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

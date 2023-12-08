@@ -14,11 +14,11 @@ char* SDL_GameControllerMappingForDeviceIndex(int joystick_index);
 
 |                        |                                                                                     |
 | ---------------------- | ----------------------------------------------------------------------------------- |
-| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks)()-1 |
+| **joystick_index**     | the device_index of a device, from zero to [SDL_NumJoysticks](SDL_NumJoysticks.md)()-1 |
 
 ## Return Value
 
-Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
+Returns the mapping string. Must be freed with [SDL_free](SDL_free.md)().
 Returns NULL if no mapping is available.
 
 ## Remarks
@@ -30,5 +30,4 @@ This can be called before any controllers are opened.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

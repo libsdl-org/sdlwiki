@@ -14,8 +14,8 @@ int SDL_UpperBlit
 
 ## Remarks
 
-[SDL_UpperBlit](SDL_UpperBlit)() has been replaced by
-[SDL_BlitSurface](SDL_BlitSurface)(), which is merely a macro for this
+[SDL_UpperBlit](SDL_UpperBlit.md)() has been replaced by
+[SDL_BlitSurface](SDL_BlitSurface.md)(), which is merely a macro for this
 function with a less confusing name.
 
 ## Version
@@ -24,8 +24,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_BlitSurface](SDL_BlitSurface)
+* [SDL_BlitSurface](SDL_BlitSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

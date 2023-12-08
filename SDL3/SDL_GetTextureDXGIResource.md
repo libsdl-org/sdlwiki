@@ -19,7 +19,7 @@ IDXGIResource* SDL_GetTextureDXGIResource(SDL_Texture *texture);
 ## Return Value
 
 Returns the DXGI resource associated with given texture or NULL if it is
-not available; call [SDL_GetError](SDL_GetError)() for more information.
+not available; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,5 +33,4 @@ resource leak.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

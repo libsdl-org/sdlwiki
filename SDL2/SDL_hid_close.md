@@ -14,12 +14,11 @@ void SDL_hid_close(SDL_hid_device *dev);
 
 |             |                                                               |
 | ----------- | ------------------------------------------------------------- |
-| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**     | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 
 ## Version
 
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

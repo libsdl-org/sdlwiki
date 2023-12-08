@@ -37,10 +37,9 @@ This function is available since SDL_ttf 3.0.0.
 
 ## Related Functions
 
-* [TTF_MeasureText](TTF_MeasureText)
-* [TTF_MeasureUTF8](TTF_MeasureUTF8)
-* [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
+* [TTF_MeasureText](TTF_MeasureText.md)
+* [TTF_MeasureUTF8](TTF_MeasureUTF8.md)
+* [TTF_MeasureUNICODE](TTF_MeasureUNICODE.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

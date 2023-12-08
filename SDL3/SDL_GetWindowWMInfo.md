@@ -15,18 +15,18 @@ int SDL_GetWindowWMInfo(SDL_Window *window, SDL_SysWMinfo *info, Uint32 version)
 |                 |                                                                                                       |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
 | **window**      | the window about which information is being requested                                                 |
-| **info**        | an [SDL_SysWMinfo](SDL_SysWMinfo) structure filled in with window information                         |
-| **version**     | the version of info being requested, should be [SDL_SYSWM_CURRENT_VERSION](SDL_SYSWM_CURRENT_VERSION) |
+| **info**        | an [SDL_SysWMinfo](SDL_SysWMinfo.md) structure filled in with window information                         |
+| **version**     | the version of info being requested, should be [SDL_SYSWM_CURRENT_VERSION](SDL_SYSWM_CURRENT_VERSION.md) |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-You must include [SDL_syswm](SDL_syswm).h for the declaration of
-[SDL_SysWMinfo](SDL_SysWMinfo).
+You must include [SDL_syswm](SDL_syswm.md).h for the declaration of
+[SDL_SysWMinfo](SDL_SysWMinfo.md).
 
 ## Version
 
@@ -92,8 +92,6 @@ int main(int argc, char *argv[]) {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategorySWM](CategorySWM)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategorySWM](CategorySWM.md)
 
 <!-- #Actually from SDL_syswm.h header but listed in both categories for the wiki. -->
-
-

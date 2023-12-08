@@ -45,4 +45,4 @@ This category contains functions for &&&&&.
 <!-- #<<FullSearchCached(category:CategoryHeader -CategoryEnum -CategoryStruct -SGFunctions)>> -->
 
 ----
-[CategoryCategory](CategoryCategory), [CategoryDraft](CategoryDraft)
+[CategoryCategory](CategoryCategory.md), [CategoryDraft](CategoryDraft.md)

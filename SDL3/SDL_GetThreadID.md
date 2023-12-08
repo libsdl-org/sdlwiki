@@ -78,9 +78,7 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_ThreadID](SDL_ThreadID)
+* [SDL_ThreadID](SDL_ThreadID.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryThread](CategoryThread.md)

@@ -67,8 +67,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
+* [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

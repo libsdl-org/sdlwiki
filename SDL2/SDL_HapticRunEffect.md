@@ -16,14 +16,14 @@ int SDL_HapticRunEffect(SDL_Haptic * haptic,
 
 |                    |                                                                                                                |
 | ------------------ | -------------------------------------------------------------------------------------------------------------- |
-| **haptic**         | the [SDL_Haptic](SDL_Haptic) device to run the effect on                                                       |
+| **haptic**         | the [SDL_Haptic](SDL_Haptic.md) device to run the effect on                                                       |
 | **effect**         | the ID of the haptic effect to run                                                                             |
 | **iterations**     | the number of iterations to run the effect; use [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) to repeat forever |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,10 +39,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
-* [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
-* [SDL_HapticStopEffect](SDL_HapticStopEffect)
+* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect.md)
+* [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus.md)
+* [SDL_HapticStopEffect](SDL_HapticStopEffect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

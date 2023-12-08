@@ -15,12 +15,12 @@ int SDL_GetDisplayBounds(int displayIndex, SDL_Rect * rect);
 |                      |                                                                      |
 | -------------------- | -------------------------------------------------------------------- |
 | **displayIndex**     | the index of the display to query                                    |
-| **rect**             | the [SDL_Rect](SDL_Rect) structure filled in with the display bounds |
+| **rect**             | the [SDL_Rect](SDL_Rect.md) structure filled in with the display bounds |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,8 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

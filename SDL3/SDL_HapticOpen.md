@@ -23,7 +23,7 @@ SDL_Haptic* SDL_HapticOpen(int device_index);
 ## Return Value
 
 Returns the device identifier or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,8 +32,8 @@ system.
 
 When opening a haptic device, its gain will be set to maximum and
 autocenter will be disabled. To modify these values use
-[SDL_HapticSetGain](SDL_HapticSetGain)() and
-[SDL_HapticSetAutocenter](SDL_HapticSetAutocenter)().
+[SDL_HapticSetGain](SDL_HapticSetGain.md)() and
+[SDL_HapticSetAutocenter](SDL_HapticSetAutocenter.md)().
 
 ## Version
 
@@ -41,16 +41,14 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticClose](SDL_HapticClose)
-* [SDL_HapticIndex](SDL_HapticIndex)
-* [SDL_HapticOpenFromJoystick](SDL_HapticOpenFromJoystick)
-* [SDL_HapticOpenFromMouse](SDL_HapticOpenFromMouse)
-* [SDL_HapticPause](SDL_HapticPause)
-* [SDL_HapticSetAutocenter](SDL_HapticSetAutocenter)
-* [SDL_HapticSetGain](SDL_HapticSetGain)
-* [SDL_HapticStopAll](SDL_HapticStopAll)
+* [SDL_HapticClose](SDL_HapticClose.md)
+* [SDL_HapticIndex](SDL_HapticIndex.md)
+* [SDL_HapticOpenFromJoystick](SDL_HapticOpenFromJoystick.md)
+* [SDL_HapticOpenFromMouse](SDL_HapticOpenFromMouse.md)
+* [SDL_HapticPause](SDL_HapticPause.md)
+* [SDL_HapticSetAutocenter](SDL_HapticSetAutocenter.md)
+* [SDL_HapticSetGain](SDL_HapticSetGain.md)
+* [SDL_HapticStopAll](SDL_HapticStopAll.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryForceFeedback](CategoryForceFeedback.md), [CategoryDraft](CategoryDraft.md)

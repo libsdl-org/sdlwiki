@@ -30,9 +30,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadPlayerIndex](SDL_GetGamepadPlayerIndex)
-* [SDL_OpenGamepad](SDL_OpenGamepad)
+* [SDL_GetGamepadPlayerIndex](SDL_GetGamepadPlayerIndex.md)
+* [SDL_OpenGamepad](SDL_OpenGamepad.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

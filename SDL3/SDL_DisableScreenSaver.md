@@ -13,7 +13,7 @@ int SDL_DisableScreenSaver(void);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -29,10 +29,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
-* [SDL_ScreenSaverEnabled](SDL_ScreenSaverEnabled)
+* [SDL_EnableScreenSaver](SDL_EnableScreenSaver.md)
+* [SDL_ScreenSaverEnabled](SDL_ScreenSaverEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

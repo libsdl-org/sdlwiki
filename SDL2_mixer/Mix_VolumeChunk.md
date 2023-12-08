@@ -15,7 +15,7 @@ int Mix_VolumeChunk(Mix_Chunk *chunk, int volume);
 |                |                                                                                 |
 | -------------- | ------------------------------------------------------------------------------- |
 | **chunk**      | the chunk whose volume to adjust.                                               |
-| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md), or -1 to query. |
 
 ## Return Value
 
@@ -30,16 +30,16 @@ affect the final attenuation of the sound. This lets an app adjust the
 volume for all instances of a sound in addition to specific instances of
 that sound.
 
-The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME)
-(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME) is 128. Values
-greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME) are clamped to
-[MIX_MAX_VOLUME](MIX_MAX_VOLUME).
+The volume must be between 0 (silence) and [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md)
+(full volume). Note that [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) is 128. Values
+greater than [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) are clamped to
+[MIX_MAX_VOLUME](MIX_MAX_VOLUME.md).
 
 Specifying a negative volume will not change the current volume; as such,
 this can be used to query the current volume without making changes, as
 this function returns the previous (in this case, still-current) value.
 
-The default volume for a chunk is [MIX_MAX_VOLUME](MIX_MAX_VOLUME) (no
+The default volume for a chunk is [MIX_MAX_VOLUME](MIX_MAX_VOLUME.md) (no
 attenuation).
 
 ## Version
@@ -47,5 +47,4 @@ attenuation).
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

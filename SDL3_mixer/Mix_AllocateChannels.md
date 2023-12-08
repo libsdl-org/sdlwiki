@@ -38,7 +38,7 @@ the app needs more or wants less, this function can change it.
 
 If decreasing the number of channels, any upper channels currently playing
 are stopped. This will deregister all effects on those channels and call
-any callback specified by [Mix_ChannelFinished](Mix_ChannelFinished)() for
+any callback specified by [Mix_ChannelFinished](Mix_ChannelFinished.md)() for
 each removed channel.
 
 If `numchans` is less than zero, this will return the current number of
@@ -49,5 +49,4 @@ channels without changing anything.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

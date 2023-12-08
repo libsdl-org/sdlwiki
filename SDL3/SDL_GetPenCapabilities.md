@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetPenCapabilities
 
-Retrieves capability flags for a given ::[SDL_PenID](SDL_PenID).
+Retrieves capability flags for a given ::[SDL_PenID](SDL_PenID.md).
 
 ## Syntax
 
@@ -20,12 +20,11 @@ Uint32 SDL_GetPenCapabilities(SDL_PenID instance_id, SDL_PenCapabilityInfo *capa
 ## Return Value
 
 Returns a set of capability flags, cf.
-[SDL_PEN_CAPABILITIES](SDL_PEN_CAPABILITIES)
+[SDL_PEN_CAPABILITIES](SDL_PEN_CAPABILITIES.md)
 
 ## Version
 
 This function is available since SDL 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

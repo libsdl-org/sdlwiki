@@ -20,10 +20,10 @@ SDL_hid_device_info * SDL_hid_enumerate(unsigned short vendor_id, unsigned short
 ## Return Value
 
 Returns a pointer to a linked list of type
-[SDL_hid_device_info](SDL_hid_device_info), containing information about
+[SDL_hid_device_info](SDL_hid_device_info.md), containing information about
 the HID devices attached to the system, or NULL in the case of failure.
 Free this linked list by calling
-[SDL_hid_free_enumeration](SDL_hid_free_enumeration)().
+[SDL_hid_free_enumeration](SDL_hid_free_enumeration.md)().
 
 ## Remarks
 
@@ -35,7 +35,7 @@ devices will be returned.
 
 By default SDL will only enumerate controllers, to reduce risk of hanging
 or crashing on bad drivers, but
-[SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS](SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS)
+[SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS](SDL_HINT_HIDAPI_ENUMERATE_ONLY_CONTROLLERS.md)
 can be set to "0" to enumerate all HID devices.
 
 ## Version
@@ -44,8 +44,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_hid_device_change_count](SDL_hid_device_change_count)
+* [SDL_hid_device_change_count](SDL_hid_device_change_count.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

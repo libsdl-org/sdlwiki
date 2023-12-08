@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_RenderGeometryRaw
 
-Render a list of triangles, optionally using a texture and indices into the vertex arrays Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod) are ignored).
+Render a list of triangles, optionally using a texture and indices into the vertex arrays Color and alpha modulation is done per vertex ([SDL_SetTextureColorMod](SDL_SetTextureColorMod.md) and [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod.md) are ignored).
 
 ## Syntax
 
@@ -24,7 +24,7 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 | **texture**          | (optional) The SDL texture to use.                                                                                    |
 | **xy**               | Vertex positions                                                                                                      |
 | **xy_stride**        | Byte size to move from one element to the next element                                                                |
-| **color**            | Vertex colors (as [SDL_Color](SDL_Color))                                                                             |
+| **color**            | Vertex colors (as [SDL_Color](SDL_Color.md))                                                                             |
 | **color_stride**     | Byte size to move from one element to the next element                                                                |
 | **uv**               | Vertex normalized texture coordinates                                                                                 |
 | **uv_stride**        | Byte size to move from one element to the next element                                                                |
@@ -43,9 +43,8 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_RenderGeometry](SDL_RenderGeometry)
-* [SDL_Vertex](SDL_Vertex)
+* [SDL_RenderGeometry](SDL_RenderGeometry.md)
+* [SDL_Vertex](SDL_Vertex.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

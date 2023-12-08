@@ -15,13 +15,13 @@ int SDL_HapticStopEffect(SDL_Haptic * haptic,
 
 |                |                                                           |
 | -------------- | --------------------------------------------------------- |
-| **haptic**     | the [SDL_Haptic](SDL_Haptic) device to stop the effect on |
+| **haptic**     | the [SDL_Haptic](SDL_Haptic.md) device to stop the effect on |
 | **effect**     | the ID of the haptic effect to stop                       |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,9 +33,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
-* [SDL_HapticRunEffect](SDL_HapticRunEffect)
+* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect.md)
+* [SDL_HapticRunEffect](SDL_HapticRunEffect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

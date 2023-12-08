@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetYUVConversionMode
 
-Get the YUV conversion mode 
+Get the YUV conversion mode
 
 ## Syntax
 
@@ -19,5 +19,4 @@ Returns YUV conversion mode
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

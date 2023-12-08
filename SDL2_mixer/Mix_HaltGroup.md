@@ -32,12 +32,11 @@ The default tag for a channel is -1.
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[Mix_ChannelFinished](Mix_ChannelFinished)() before this function returns.
+[Mix_ChannelFinished](Mix_ChannelFinished.md)() before this function returns.
 
 ## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

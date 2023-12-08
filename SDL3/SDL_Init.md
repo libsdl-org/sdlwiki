@@ -19,25 +19,25 @@ int SDL_Init(Uint32 flags);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-[SDL_Init](SDL_Init)() simply forwards to calling
-[SDL_InitSubSystem](SDL_InitSubSystem)(). Therefore, the two may be used
+[SDL_Init](SDL_Init.md)() simply forwards to calling
+[SDL_InitSubSystem](SDL_InitSubSystem.md)(). Therefore, the two may be used
 interchangeably. Though for readability of your code
-[SDL_InitSubSystem](SDL_InitSubSystem)() might be preferred.
+[SDL_InitSubSystem](SDL_InitSubSystem.md)() might be preferred.
 
-The file I/O (for example: [SDL_RWFromFile](SDL_RWFromFile)) and threading
-([SDL_CreateThread](SDL_CreateThread)) subsystems are initialized by
+The file I/O (for example: [SDL_RWFromFile](SDL_RWFromFile.md)) and threading
+([SDL_CreateThread](SDL_CreateThread.md)) subsystems are initialized by
 default. Message boxes
-([SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)) also attempt to work
+([SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox.md)) also attempt to work
 without initializing the video subsystem, in hopes of being useful in
-showing an error dialog when [SDL_Init](SDL_Init) fails. You must
+showing an error dialog when [SDL_Init](SDL_Init.md) fails. You must
 specifically initialize other subsystems if you use them in your
 application.
 
-Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
+Logging (such as [SDL_Log](SDL_Log.md)) works without initialization, too.
 
 `flags` may be any of the following OR'd together:
 
@@ -54,9 +54,9 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 - [`SDL_INIT_EVERYTHING`](SDL_INIT_EVERYTHING): all of the above subsystems
 
 Subsystem initialization is ref-counted, you must call
-[SDL_QuitSubSystem](SDL_QuitSubSystem)() for each
-[SDL_InitSubSystem](SDL_InitSubSystem)() to correctly shutdown a subsystem
-manually (or call [SDL_Quit](SDL_Quit)() to force shutdown). If a subsystem
+[SDL_QuitSubSystem](SDL_QuitSubSystem.md)() for each
+[SDL_InitSubSystem](SDL_InitSubSystem.md)() to correctly shutdown a subsystem
+manually (or call [SDL_Quit](SDL_Quit.md)() to force shutdown). If a subsystem
 is already loaded then this call will increase the ref-count and return.
 
 ## Version
@@ -85,12 +85,10 @@ int main(int argc, char* argv[])
 
 ## Related Functions
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
-* [SDL_SetMainReady](SDL_SetMainReady)
-* [SDL_WasInit](SDL_WasInit)
+* [SDL_InitSubSystem](SDL_InitSubSystem.md)
+* [SDL_Quit](SDL_Quit.md)
+* [SDL_SetMainReady](SDL_SetMainReady.md)
+* [SDL_WasInit](SDL_WasInit.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

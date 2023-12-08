@@ -21,7 +21,7 @@ int SDL_SetTLS(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ void destructor(void *value)
 ```
 
 where its parameter `value` is what was passed as `value` to
-[SDL_SetTLS](SDL_SetTLS)().
+[SDL_SetTLS](SDL_SetTLS.md)().
 
 ## Version
 
@@ -40,9 +40,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTLS](SDL_CreateTLS)
-* [SDL_GetTLS](SDL_GetTLS)
+* [SDL_CreateTLS](SDL_CreateTLS.md)
+* [SDL_GetTLS](SDL_GetTLS.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

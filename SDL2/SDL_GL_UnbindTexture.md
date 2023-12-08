@@ -22,7 +22,7 @@ Returns 0 on success, or -1 if the operation is not supported
 
 ## Remarks
 
-See [SDL_GL_BindTexture](SDL_GL_BindTexture)() for examples on how to use
+See [SDL_GL_BindTexture](SDL_GL_BindTexture.md)() for examples on how to use
 these functions
 
 ## Version
@@ -31,9 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GL_BindTexture](SDL_GL_BindTexture)
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+* [SDL_GL_BindTexture](SDL_GL_BindTexture.md)
+* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

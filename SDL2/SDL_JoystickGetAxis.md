@@ -15,13 +15,13 @@ Sint16 SDL_JoystickGetAxis(SDL_Joystick *joystick,
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 | **axis**         | the axis to query; the axis indices start at index 0                      |
 
 ## Return Value
 
 Returns a 16-bit signed integer representing the current position of the
-axis or 0 on failure; call [SDL_GetError](SDL_GetError)() for more
+axis or 0 on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -32,7 +32,7 @@ specify what each axis should be bound to. Alternately, SDL's higher-level
 Game Controller API makes a great effort to apply order to this lower-level
 interface, so you know that a specific axis is the "left thumb stick," etc.
 
-The value returned by [SDL_JoystickGetAxis](SDL_JoystickGetAxis)() is a
+The value returned by [SDL_JoystickGetAxis](SDL_JoystickGetAxis.md)() is a
 signed integer (-32768 to 32767) representing the current position of the
 axis. It may be necessary to impose certain tolerances on these values to
 account for jitter.
@@ -43,8 +43,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickNumAxes](SDL_JoystickNumAxes)
+* [SDL_JoystickNumAxes](SDL_JoystickNumAxes.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

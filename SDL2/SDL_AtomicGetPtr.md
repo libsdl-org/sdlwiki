@@ -31,9 +31,8 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
-* [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
+* [SDL_AtomicCASPtr](SDL_AtomicCASPtr.md)
+* [SDL_AtomicSetPtr](SDL_AtomicSetPtr.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -21,7 +21,7 @@ int SDL_SetWindowSize(SDL_Window *window, int w, int h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,16 +33,16 @@ maximized or fullscreen, the request will be deferred until the window
 exits this state and becomes resizable again.
 
 To change the fullscreen mode of a window, use
-[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)()
+[SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode.md)()
 
 On some windowing systems, this request is asynchronous and the new window
 size may not have have been applied immediately upon the return of this
 function. If an immediate change is required, call
-[SDL_SyncWindow](SDL_SyncWindow)() to block until the changes have taken
+[SDL_SyncWindow](SDL_SyncWindow.md)() to block until the changes have taken
 effect.
 
 When the window size changes, an
-[SDL_EVENT_WINDOW_RESIZED](SDL_EVENT_WINDOW_RESIZED) event will be emitted
+[SDL_EVENT_WINDOW_RESIZED](SDL_EVENT_WINDOW_RESIZED.md) event will be emitted
 with the new window dimensions. Note that the new dimensions may not match
 the exact size requested, as some windowing systems can restrict the window
 size in certain scenarios (e.g. constraining the size of the content area
@@ -55,11 +55,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
-* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
-* [SDL_SyncWindow](SDL_SyncWindow)
+* [SDL_GetWindowSize](SDL_GetWindowSize.md)
+* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode.md)
+* [SDL_SyncWindow](SDL_SyncWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

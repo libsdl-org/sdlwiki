@@ -19,7 +19,7 @@ SDL_Window* SDL_CreateWindowWithProperties(SDL_PropertiesID props);
 ## Return Value
 
 Returns the window that was created or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -43,7 +43,7 @@ These are the supported properties:
   focus
 - "opengl" (boolean) - true if the window will be used with OpenGL
   rendering
-- "parent" (pointer) - an [SDL_Window](SDL_Window) that will be the parent
+- "parent" (pointer) - an [SDL_Window](SDL_Window.md) that will be the parent
   of this window, required for windows with the "toolip" and "menu"
   properties
 - "resizable" (boolean) - true if the window should be resizable
@@ -83,7 +83,7 @@ On X11:
 - "x11.window" (number) - the X11 Window associated with the window, if you
   want to wrap an existing window.
 
-The [SDL_Window](SDL_Window) is implicitly shown if the "hidden" property
+The [SDL_Window](SDL_Window.md) is implicitly shown if the "hidden" property
 is not set.
 
 Windows with the "tooltip" and "menu" properties are popup windows and have
@@ -95,9 +95,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_DestroyWindow](SDL_DestroyWindow)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_DestroyWindow](SDL_DestroyWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

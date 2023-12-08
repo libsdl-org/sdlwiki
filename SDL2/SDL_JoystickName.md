@@ -14,12 +14,12 @@ const char* SDL_JoystickName(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_JoystickOpen](SDL_JoystickOpen.md)() |
 
 ## Return Value
 
 Returns the name of the selected joystick. If no name can be found, this
-function returns NULL; call [SDL_GetError](SDL_GetError)() for more
+function returns NULL; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickNameForIndex](SDL_JoystickNameForIndex)
-* [SDL_JoystickOpen](SDL_JoystickOpen)
+* [SDL_JoystickNameForIndex](SDL_JoystickNameForIndex.md)
+* [SDL_JoystickOpen](SDL_JoystickOpen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

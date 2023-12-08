@@ -22,9 +22,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenVideoCaptureWithSpec](SDL_OpenVideoCaptureWithSpec)
-* [SDL_OpenVideoCapture](SDL_OpenVideoCapture)
+* [SDL_OpenVideoCaptureWithSpec](SDL_OpenVideoCaptureWithSpec.md)
+* [SDL_OpenVideoCapture](SDL_OpenVideoCapture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

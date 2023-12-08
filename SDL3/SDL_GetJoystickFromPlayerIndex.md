@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetJoystickFromPlayerIndex
 
-Get the [SDL_Joystick](SDL_Joystick) associated with a player index.
+Get the [SDL_Joystick](SDL_Joystick.md) associated with a player index.
 
 ## Syntax
 
@@ -14,17 +14,16 @@ SDL_Joystick* SDL_GetJoystickFromPlayerIndex(int player_index);
 
 |                      |                                                              |
 | -------------------- | ------------------------------------------------------------ |
-| **player_index**     | the player index to get the [SDL_Joystick](SDL_Joystick) for |
+| **player_index**     | the player index to get the [SDL_Joystick](SDL_Joystick.md) for |
 
 ## Return Value
 
-Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns an [SDL_Joystick](SDL_Joystick.md) on success or NULL on failure; call
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

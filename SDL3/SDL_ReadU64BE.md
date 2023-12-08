@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_ReadU64BE
 
-Use this function to read 64 bits of big-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
+Use this function to read 64 bits of big-endian data from an [SDL_RWops](SDL_RWops.md) and return in native format.
 
 ## Syntax
 
@@ -19,8 +19,8 @@ SDL_bool SDL_ReadU64BE(SDL_RWops *src, Uint64 *value);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) on successful write, [SDL_FALSE](SDL_FALSE) on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE.md) on successful write, [SDL_FALSE](SDL_FALSE.md) on
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,5 +32,4 @@ the native byte order.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

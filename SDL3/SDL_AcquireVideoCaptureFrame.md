@@ -20,7 +20,7 @@ int SDL_AcquireVideoCaptureFrame(SDL_VideoCaptureDevice *device, SDL_VideoCaptur
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,7 +32,7 @@ Non blocking API. If there is a frame available, frame->num_planes is non
 that time.
 
 After used, the frame should be released with
-[SDL_ReleaseVideoCaptureFrame](SDL_ReleaseVideoCaptureFrame)
+[SDL_ReleaseVideoCaptureFrame](SDL_ReleaseVideoCaptureFrame.md)
 
 ## Version
 
@@ -40,8 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_ReleaseVideoCaptureFrame](SDL_ReleaseVideoCaptureFrame)
+* [SDL_ReleaseVideoCaptureFrame](SDL_ReleaseVideoCaptureFrame.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -21,7 +21,7 @@ Enumerating the HID devices is an expensive operation, so you can call this
 to see if there have been any system device changes since the last call to
 this function. A change in the counter returned doesn't necessarily mean
 that anything has changed, but you can call
-[SDL_hid_enumerate](SDL_hid_enumerate)() to get an updated device list.
+[SDL_hid_enumerate](SDL_hid_enumerate.md)() to get an updated device list.
 
 Calling this function for the first time may cause a thread or other system
 resource to be allocated to track device change notifications.
@@ -32,8 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_hid_enumerate](SDL_hid_enumerate)
+* [SDL_hid_enumerate](SDL_hid_enumerate.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -16,25 +16,25 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name, Uint32 f
 | -------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **window**     | the window where rendering is displayed                                                                            |
 | **name**       | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags |
-| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                             |
+| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags.md) OR'd together                                             |
 
 ## Return Value
 
 Returns a valid rendering context or NULL if there was an error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If you want a specific renderer, you can specify its name here. A list of
 available renderers can be obtained by calling
-[SDL_GetRenderDriver](SDL_GetRenderDriver) multiple times, with indices
-from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)()-1. If you
+[SDL_GetRenderDriver](SDL_GetRenderDriver.md) multiple times, with indices
+from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)()-1. If you
 don't need a specific renderer, specify NULL and SDL will attempt to choose
 the best option for you, based on what is available on the user's system.
 
 By default the rendering size matches the window size in pixels, but you
 can call
-[SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)() to
+[SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation.md)() to
 change the content size and scaling options.
 
 ## Version
@@ -96,14 +96,12 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
-* [SDL_GetRenderDriver](SDL_GetRenderDriver)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+* [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties.md)
+* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer.md)
+* [SDL_DestroyRenderer](SDL_DestroyRenderer.md)
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)
+* [SDL_GetRenderDriver](SDL_GetRenderDriver.md)
+* [SDL_GetRendererInfo](SDL_GetRendererInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

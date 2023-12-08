@@ -19,7 +19,7 @@ int SDL_FlushAudioStream(SDL_AudioStream *stream);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -37,13 +37,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_CreateAudioStream](SDL_CreateAudioStream.md)
+* [SDL_PutAudioStreamData](SDL_PutAudioStreamData.md)
+* [SDL_GetAudioStreamData](SDL_GetAudioStreamData.md)
+* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable.md)
+* [SDL_ClearAudioStream](SDL_ClearAudioStream.md)
+* [SDL_DestroyAudioStream](SDL_DestroyAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

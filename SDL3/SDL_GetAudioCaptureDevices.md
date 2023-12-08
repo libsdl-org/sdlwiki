@@ -19,18 +19,18 @@ SDL_AudioDeviceID* SDL_GetAudioCaptureDevices(int *count);
 ## Return Value
 
 Returns a 0 terminated array of device instance IDs which should be freed
-with [SDL_free](SDL_free)(), or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+with [SDL_free](SDL_free.md)(), or NULL on error; call
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Remarks
 
 This returns of list of available devices that record audio, like a
 microphone ("capture" devices). If you want devices that play sound,
 perhaps to speakers or headphones ("output" devices), use
-[SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)() instead.
+[SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices.md)() instead.
 
 This only returns a list of physical devices; it will not have any device
-IDs returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
+IDs returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)().
 
 ## Thread Safety
 
@@ -42,9 +42,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
-* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
+* [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)
+* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

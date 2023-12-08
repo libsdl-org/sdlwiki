@@ -21,17 +21,17 @@ int SDL_SetJoystickVirtualAxis(SDL_Joystick *joystick, int axis, Sint16 value);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Please note that values set here will not be applied until the next call to
-[SDL_UpdateJoysticks](SDL_UpdateJoysticks), which can either be called
+[SDL_UpdateJoysticks](SDL_UpdateJoysticks.md), which can either be called
 directly, or can be called indirectly through various other SDL APIs,
 including, but not limited to the following:
-[SDL_PollEvent](SDL_PollEvent), [SDL_PumpEvents](SDL_PumpEvents),
-[SDL_WaitEventTimeout](SDL_WaitEventTimeout),
-[SDL_WaitEvent](SDL_WaitEvent).
+[SDL_PollEvent](SDL_PollEvent.md), [SDL_PumpEvents](SDL_PumpEvents.md),
+[SDL_WaitEventTimeout](SDL_WaitEventTimeout.md),
+[SDL_WaitEvent](SDL_WaitEvent.md).
 
 Note that when sending trigger axes, you should scale the value to the full
 range of Sint16. For example, a trigger at rest would have the value of
@@ -42,5 +42,4 @@ range of Sint16. For example, a trigger at rest would have the value of
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

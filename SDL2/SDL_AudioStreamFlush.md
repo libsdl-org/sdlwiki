@@ -22,13 +22,12 @@ This function is available since SDL 2.0.7.
 
 ## Related Functions
 
-* [SDL_NewAudioStream](SDL_NewAudioStream)
-* [SDL_AudioStreamPut](SDL_AudioStreamPut)
-* [SDL_AudioStreamGet](SDL_AudioStreamGet)
-* [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable)
-* [SDL_AudioStreamClear](SDL_AudioStreamClear)
-* [SDL_FreeAudioStream](SDL_FreeAudioStream)
+* [SDL_NewAudioStream](SDL_NewAudioStream.md)
+* [SDL_AudioStreamPut](SDL_AudioStreamPut.md)
+* [SDL_AudioStreamGet](SDL_AudioStreamGet.md)
+* [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable.md)
+* [SDL_AudioStreamClear](SDL_AudioStreamClear.md)
+* [SDL_FreeAudioStream](SDL_FreeAudioStream.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

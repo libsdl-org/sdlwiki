@@ -35,5 +35,4 @@ If no channels with the specified tag are unused, this function returns -1.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

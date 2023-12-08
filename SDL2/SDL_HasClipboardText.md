@@ -12,8 +12,8 @@ SDL_bool SDL_HasClipboardText(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the clipboard has text, or
-[SDL_FALSE](SDL_FALSE) if it does not.
+Returns [SDL_TRUE](SDL_TRUE.md) if the clipboard has text, or
+[SDL_FALSE](SDL_FALSE.md) if it does not.
 
 ## Version
 
@@ -21,9 +21,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetClipboardText](SDL_GetClipboardText)
-* [SDL_SetClipboardText](SDL_SetClipboardText)
+* [SDL_GetClipboardText](SDL_GetClipboardText.md)
+* [SDL_SetClipboardText](SDL_SetClipboardText.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

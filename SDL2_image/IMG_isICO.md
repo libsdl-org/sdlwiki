@@ -31,7 +31,7 @@ basic i/o errors.
 This function will always attempt to seek the RWops back to where it
 started when this function was called, but it will not report any errors in
 doing so, but assuming seeking works, this means you can immediately use
-this with a different [IMG_isTYPE](IMG_isTYPE) function, or load the image
+this with a different [IMG_isTYPE](IMG_isTYPE.md) function, or load the image
 without further seeking.
 
 You do not need to call this function to load data; SDL_image can work to
@@ -43,24 +43,23 @@ This function is available since SDL_image 2.0.0.
 
 ## Related Functions
 
-* [IMG_isAVIF](IMG_isAVIF)
-* [IMG_isCUR](IMG_isCUR)
-* [IMG_isBMP](IMG_isBMP)
-* [IMG_isGIF](IMG_isGIF)
-* [IMG_isJPG](IMG_isJPG)
-* [IMG_isJXL](IMG_isJXL)
-* [IMG_isLBM](IMG_isLBM)
-* [IMG_isPCX](IMG_isPCX)
-* [IMG_isPNG](IMG_isPNG)
-* [IMG_isPNM](IMG_isPNM)
-* [IMG_isSVG](IMG_isSVG)
-* [IMG_isQOI](IMG_isQOI)
-* [IMG_isTIF](IMG_isTIF)
-* [IMG_isXCF](IMG_isXCF)
-* [IMG_isXPM](IMG_isXPM)
-* [IMG_isXV](IMG_isXV)
-* [IMG_isWEBP](IMG_isWEBP)
+* [IMG_isAVIF](IMG_isAVIF.md)
+* [IMG_isCUR](IMG_isCUR.md)
+* [IMG_isBMP](IMG_isBMP.md)
+* [IMG_isGIF](IMG_isGIF.md)
+* [IMG_isJPG](IMG_isJPG.md)
+* [IMG_isJXL](IMG_isJXL.md)
+* [IMG_isLBM](IMG_isLBM.md)
+* [IMG_isPCX](IMG_isPCX.md)
+* [IMG_isPNG](IMG_isPNG.md)
+* [IMG_isPNM](IMG_isPNM.md)
+* [IMG_isSVG](IMG_isSVG.md)
+* [IMG_isQOI](IMG_isQOI.md)
+* [IMG_isTIF](IMG_isTIF.md)
+* [IMG_isXCF](IMG_isXCF.md)
+* [IMG_isXPM](IMG_isXPM.md)
+* [IMG_isXV](IMG_isXV.md)
+* [IMG_isWEBP](IMG_isWEBP.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

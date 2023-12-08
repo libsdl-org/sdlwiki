@@ -12,8 +12,8 @@ SDL_bool SDL_HasWindowSurface(SDL_Window *window);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is a surface associated with the
-window, or [SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if there is a surface associated with the
+window, or [SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Version
 
@@ -21,8 +21,7 @@ This function is available since SDL 2.28.0.
 
 ## Related Functions
 
-* [SDL_GetWindowSurface](SDL_GetWindowSurface)
+* [SDL_GetWindowSurface](SDL_GetWindowSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

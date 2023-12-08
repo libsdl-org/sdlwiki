@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetMainReady
 
-Circumvent failure of [SDL_Init](SDL_Init)() when not using [SDL_main](SDL_main)() as an entry point.
+Circumvent failure of [SDL_Init](SDL_Init.md)() when not using [SDL_main](SDL_main.md)() as an entry point.
 
 ## Syntax
 
@@ -12,10 +12,10 @@ void SDL_SetMainReady(void);
 
 ## Remarks
 
-This function is defined in [SDL_main](SDL_main).h, along with the
-preprocessor rule to redefine main() as [SDL_main](SDL_main)(). Thus to
+This function is defined in [SDL_main](SDL_main.md).h, along with the
+preprocessor rule to redefine main() as [SDL_main](SDL_main.md)(). Thus to
 ensure that your main() function will not be changed it is necessary to
-define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
+define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED.md) before including SDL.h.
 
 ## Version
 
@@ -42,9 +42,7 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_Init](SDL_Init)
+* [SDL_Init](SDL_Init.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

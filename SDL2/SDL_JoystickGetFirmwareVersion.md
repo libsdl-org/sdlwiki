@@ -14,7 +14,7 @@ Uint16 SDL_JoystickGetFirmwareVersion(SDL_Joystick *joystick);
 
 |                  |                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------- |
-| **joystick**     | the [SDL_Joystick](SDL_Joystick) obtained from [SDL_JoystickOpen](SDL_JoystickOpen)() |
+| **joystick**     | the [SDL_Joystick](SDL_Joystick.md) obtained from [SDL_JoystickOpen](SDL_JoystickOpen.md)() |
 
 ## Return Value
 
@@ -29,5 +29,4 @@ If the firmware version isn't available this function returns 0.
 This function is available since SDL 2.24.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

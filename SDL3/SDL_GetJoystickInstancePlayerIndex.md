@@ -30,9 +30,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetJoystickPlayerIndex](SDL_GetJoystickPlayerIndex)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_GetJoystickPlayerIndex](SDL_GetJoystickPlayerIndex.md)
+* [SDL_OpenJoystick](SDL_OpenJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

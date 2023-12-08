@@ -22,7 +22,7 @@ Returns the newly created socket, or NULL if there was an error.
 
 ## Remarks
 
-`server` must be a socket returned by [SDLNet_TCP_Open](SDLNet_TCP_Open)
+`server` must be a socket returned by [SDLNet_TCP_Open](SDLNet_TCP_Open.md)
 with an address of INADDR_NONE or INADDR_ANY (a "server socket"). Other
 sockets do not accept connections.
 
@@ -31,5 +31,4 @@ sockets do not accept connections.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

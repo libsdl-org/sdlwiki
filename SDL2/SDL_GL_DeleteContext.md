@@ -22,8 +22,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GL_CreateContext](SDL_GL_CreateContext)
+* [SDL_GL_CreateContext](SDL_GL_CreateContext.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

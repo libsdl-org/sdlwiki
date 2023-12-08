@@ -15,11 +15,11 @@ SDL_GamepadBinding SDL_GetGamepadBindForAxis(SDL_Gamepad *gamepad, SDL_GamepadAx
 |                 |                                                                           |
 | --------------- | ------------------------------------------------------------------------- |
 | **gamepad**     | a gamepad                                                                 |
-| **axis**        | an axis enum value (one of the [SDL_GamepadAxis](SDL_GamepadAxis) values) |
+| **axis**        | an axis enum value (one of the [SDL_GamepadAxis](SDL_GamepadAxis.md) values) |
 
 ## Return Value
 
-Returns a [SDL_GamepadBinding](SDL_GamepadBinding) describing the bind. On
+Returns a [SDL_GamepadBinding](SDL_GamepadBinding.md) describing the bind. On
 failure (like the given Controller axis doesn't exist on the device), its
 `.bindType` will be
 [`SDL_GAMEPAD_BINDTYPE_NONE`](SDL_GAMEPAD_BINDTYPE_NONE).
@@ -30,8 +30,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadBindForButton](SDL_GetGamepadBindForButton)
+* [SDL_GetGamepadBindForButton](SDL_GetGamepadBindForButton.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

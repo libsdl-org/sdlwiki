@@ -20,7 +20,7 @@ int SDL_SyncWindow(SDL_Window *window);
 
 Returns 0 on success, a positive value if the operation timed out before
 the window was in the requested state, or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
+call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,13 +39,12 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowSize](SDL_SetWindowSize)
-* [SDL_SetWindowPosition](SDL_SetWindowPosition)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_RestoreWindow](SDL_RestoreWindow)
+* [SDL_SetWindowSize](SDL_SetWindowSize.md)
+* [SDL_SetWindowPosition](SDL_SetWindowPosition.md)
+* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)
+* [SDL_MinimizeWindow](SDL_MinimizeWindow.md)
+* [SDL_MaximizeWindow](SDL_MaximizeWindow.md)
+* [SDL_RestoreWindow](SDL_RestoreWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

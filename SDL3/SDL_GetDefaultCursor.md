@@ -24,7 +24,7 @@ Returns the default cursor on success or NULL on failure.
 
 ## Remarks
 
-You do not have to call [SDL_DestroyCursor](SDL_DestroyCursor)() on the
+You do not have to call [SDL_DestroyCursor](SDL_DestroyCursor.md)() on the
 return value, but it is safe to do so.
 
 ## Version
@@ -33,10 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
+* [SDL_CreateSystemCursor](SDL_CreateSystemCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

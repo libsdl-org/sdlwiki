@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetJoystickFromInstanceID
 
-Get the [SDL_Joystick](SDL_Joystick) associated with an instance ID, if it has been opened.
+Get the [SDL_Joystick](SDL_Joystick.md) associated with an instance ID, if it has been opened.
 
 ## Syntax
 
@@ -14,12 +14,12 @@ SDL_Joystick* SDL_GetJoystickFromInstanceID(SDL_JoystickID instance_id);
 
 |                     |                                                             |
 | ------------------- | ----------------------------------------------------------- |
-| **instance_id**     | the instance ID to get the [SDL_Joystick](SDL_Joystick) for |
+| **instance_id**     | the instance ID to get the [SDL_Joystick](SDL_Joystick.md) for |
 
 ## Return Value
 
-Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure or if
-it hasn't been opened yet; call [SDL_GetError](SDL_GetError)() for more
+Returns an [SDL_Joystick](SDL_Joystick.md) on success or NULL on failure or if
+it hasn't been opened yet; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -27,5 +27,4 @@ information.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

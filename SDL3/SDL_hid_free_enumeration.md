@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_hid_free_enumeration
 
-Free an enumeration Linked List 
+Free an enumeration Linked List
 
 ## Syntax
 
@@ -14,17 +14,16 @@ void SDL_hid_free_enumeration(SDL_hid_device_info *devs);
 
 |              |                                                                                            |
 | ------------ | ------------------------------------------------------------------------------------------ |
-| **devs**     | Pointer to a list of struct_device returned from [SDL_hid_enumerate](SDL_hid_enumerate)(). |
+| **devs**     | Pointer to a list of struct_device returned from [SDL_hid_enumerate](SDL_hid_enumerate.md)(). |
 
 ## Remarks
 
 This function frees a linked list created by
-[SDL_hid_enumerate](SDL_hid_enumerate)().
+[SDL_hid_enumerate](SDL_hid_enumerate.md)().
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -48,10 +48,10 @@ those details for you.
 
 This function attempts to guess the file format from incoming data. If the
 caller knows the format, or wants to force it, it should use
-[Mix_LoadMUSType_RW](Mix_LoadMUSType_RW)() instead.
+[Mix_LoadMUSType_RW](Mix_LoadMUSType_RW.md)() instead.
 
 When done with this music, the app should dispose of it with a call to
-[Mix_FreeMusic](Mix_FreeMusic)().
+[Mix_FreeMusic](Mix_FreeMusic.md)().
 
 ## Version
 
@@ -59,8 +59,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_FreeMusic](Mix_FreeMusic)
+* [Mix_FreeMusic](Mix_FreeMusic.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

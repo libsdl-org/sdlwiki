@@ -20,14 +20,14 @@ SDL_bool SDL_SetHint(const char *name,
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the hint was set, [SDL_FALSE](SDL_FALSE)
+Returns [SDL_TRUE](SDL_TRUE.md) if the hint was set, [SDL_FALSE](SDL_FALSE.md)
 otherwise.
 
 ## Remarks
 
 Hints will not be set if there is an existing override hint or environment
 variable that takes precedence. You can use
-[SDL_SetHintWithPriority](SDL_SetHintWithPriority)() to set the hint with
+[SDL_SetHintWithPriority](SDL_SetHintWithPriority.md)() to set the hint with
 override priority instead.
 
 ## Version
@@ -42,10 +42,8 @@ SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
+* [SDL_GetHint](SDL_GetHint.md)
+* [SDL_SetHintWithPriority](SDL_SetHintWithPriority.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

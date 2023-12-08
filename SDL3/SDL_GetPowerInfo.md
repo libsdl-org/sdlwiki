@@ -19,7 +19,7 @@ SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
 
 ## Return Value
 
-Returns an [SDL_PowerState](SDL_PowerState) enum representing the current
+Returns an [SDL_PowerState](SDL_PowerState.md) enum representing the current
 battery state.
 
 ## Remarks
@@ -62,6 +62,4 @@ if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryPower](CategoryPower)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryPower](CategoryPower.md)

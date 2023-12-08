@@ -20,7 +20,7 @@ int SDL_GetWindowDisplayIndex(SDL_Window * window);
 
 Returns the index of the display containing the center of the window on
 success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
-* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
+* [SDL_GetDisplayBounds](SDL_GetDisplayBounds.md)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

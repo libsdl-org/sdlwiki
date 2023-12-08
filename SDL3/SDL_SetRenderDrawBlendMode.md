@@ -15,12 +15,12 @@ int SDL_SetRenderDrawBlendMode(SDL_Renderer *renderer, SDL_BlendMode blendMode);
 |                   |                                                        |
 | ----------------- | ------------------------------------------------------ |
 | **renderer**      | the rendering context                                  |
-| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode) to use for blending |
+| **blendMode**     | the [SDL_BlendMode](SDL_BlendMode.md) to use for blending |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,17 +32,15 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
-* [SDL_RenderLine](SDL_RenderLine)
-* [SDL_RenderLines](SDL_RenderLines)
-* [SDL_RenderPoint](SDL_RenderPoint)
-* [SDL_RenderPoints](SDL_RenderPoints)
-* [SDL_RenderRect](SDL_RenderRect)
-* [SDL_RenderRects](SDL_RenderRects)
-* [SDL_RenderFillRect](SDL_RenderFillRect)
-* [SDL_RenderFillRects](SDL_RenderFillRects)
+* [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode.md)
+* [SDL_RenderLine](SDL_RenderLine.md)
+* [SDL_RenderLines](SDL_RenderLines.md)
+* [SDL_RenderPoint](SDL_RenderPoint.md)
+* [SDL_RenderPoints](SDL_RenderPoints.md)
+* [SDL_RenderRect](SDL_RenderRect.md)
+* [SDL_RenderRects](SDL_RenderRects.md)
+* [SDL_RenderFillRect](SDL_RenderFillRect.md)
+* [SDL_RenderFillRects](SDL_RenderFillRects.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

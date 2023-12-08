@@ -38,7 +38,7 @@ fly. Also, crucially, there are as many channels for chunks as the app can
 allocate, but SDL_mixer only offers a single "music" channel.
 
 When done with this music, the app should dispose of it with a call to
-[Mix_FreeMusic](Mix_FreeMusic)().
+[Mix_FreeMusic](Mix_FreeMusic.md)().
 
 ## Version
 
@@ -46,8 +46,7 @@ This function is available since SDL_mixer 2.0.0.
 
 ## Related Functions
 
-* [Mix_FreeMusic](Mix_FreeMusic)
+* [Mix_FreeMusic](Mix_FreeMusic.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

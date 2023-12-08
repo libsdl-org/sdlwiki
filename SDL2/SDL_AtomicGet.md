@@ -14,7 +14,7 @@ int SDL_AtomicGet(SDL_atomic_t *a);
 
 |           |                                                       |
 | --------- | ----------------------------------------------------- |
-| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t) variable |
+| **a**     | a pointer to an [SDL_atomic_t](SDL_atomic_t.md) variable |
 
 ## Return Value
 
@@ -31,8 +31,7 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_AtomicSet](SDL_AtomicSet)
+* [SDL_AtomicSet](SDL_AtomicSet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

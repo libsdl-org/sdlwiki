@@ -33,8 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_ThreadID](SDL_ThreadID)
+* [SDL_ThreadID](SDL_ThreadID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

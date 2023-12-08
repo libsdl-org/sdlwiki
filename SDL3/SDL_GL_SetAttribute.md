@@ -14,19 +14,19 @@ int SDL_GL_SetAttribute(SDL_GLattr attr, int value);
 
 |               |                                                                               |
 | ------------- | ----------------------------------------------------------------------------- |
-| **attr**      | an [SDL_GLattr](SDL_GLattr) enum value specifying the OpenGL attribute to set |
+| **attr**      | an [SDL_GLattr](SDL_GLattr.md) enum value specifying the OpenGL attribute to set |
 | **value**     | the desired value for the attribute                                           |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function sets the OpenGL attribute `attr` to `value`. The requested
 attributes should be set before creating an OpenGL window. You should use
-[SDL_GL_GetAttribute](SDL_GL_GetAttribute)() to check the values after
+[SDL_GL_GetAttribute](SDL_GL_GetAttribute.md)() to check the values after
 creating the OpenGL context, since the values obtained can differ from the
 requested ones.
 
@@ -68,10 +68,8 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 
 ## Related Functions
 
-* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
-* [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
+* [SDL_GL_GetAttribute](SDL_GL_GetAttribute.md)
+* [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

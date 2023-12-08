@@ -14,12 +14,12 @@ SDL_JoystickPowerLevel SDL_GetGamepadPowerLevel(SDL_Gamepad *gamepad);
 
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad.md)() |
 
 ## Return Value
 
 Returns the current battery level as
-[SDL_JoystickPowerLevel](SDL_JoystickPowerLevel) on success or
+[SDL_JoystickPowerLevel](SDL_JoystickPowerLevel.md) on success or
 [`SDL_JOYSTICK_POWER_UNKNOWN`](SDL_JOYSTICK_POWER_UNKNOWN) if it is unknown
 
 ## Version
@@ -27,5 +27,4 @@ Returns the current battery level as
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

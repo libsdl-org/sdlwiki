@@ -17,7 +17,7 @@ SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *
 
 |              |                                                                           |
 | ------------ | ------------------------------------------------------------------------- |
-| **rect**     | an [SDL_Rect](SDL_Rect) structure representing the rectangle to intersect |
+| **rect**     | an [SDL_Rect](SDL_Rect.md) structure representing the rectangle to intersect |
 | **X1**       | a pointer to the starting X-coordinate of the line                        |
 | **Y1**       | a pointer to the starting Y-coordinate of the line                        |
 | **X2**       | a pointer to the ending X-coordinate of the line                          |
@@ -25,8 +25,8 @@ SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if there is an intersection,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -41,5 +41,4 @@ coordinates saved in `X1`, `Y1`, `X2`, and/or `Y2` as necessary.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -24,9 +24,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
-* [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled)
+* [SDL_EnableScreenSaver](SDL_EnableScreenSaver.md)
+* [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

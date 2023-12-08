@@ -12,7 +12,7 @@ void SDL_LogResetPriorities(void);
 
 ## Remarks
 
-This is called by [SDL_Quit](SDL_Quit)().
+This is called by [SDL_Quit](SDL_Quit.md)().
 
 ## Version
 
@@ -20,9 +20,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
-* [SDL_LogSetPriority](SDL_LogSetPriority)
+* [SDL_LogSetAllPriority](SDL_LogSetAllPriority.md)
+* [SDL_LogSetPriority](SDL_LogSetPriority.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

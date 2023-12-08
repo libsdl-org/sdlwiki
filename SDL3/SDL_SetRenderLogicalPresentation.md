@@ -23,7 +23,7 @@ int SDL_SetRenderLogicalPresentation(SDL_Renderer *renderer, int w, int h, SDL_R
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,11 +32,11 @@ render target is created at the specified size and used for rendering and
 then copied to the output during presentation.
 
 You can disable logical coordinates by setting the mode to
-[SDL_LOGICAL_PRESENTATION_DISABLED](SDL_LOGICAL_PRESENTATION_DISABLED), and
+[SDL_LOGICAL_PRESENTATION_DISABLED](SDL_LOGICAL_PRESENTATION_DISABLED.md), and
 in that case you get the full pixel resolution of the output window.
 
 You can convert coordinates in an event into rendering coordinates using
-[SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)().
+[SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates.md)().
 
 ## Version
 
@@ -44,9 +44,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
-* [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
+* [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates.md)
+* [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

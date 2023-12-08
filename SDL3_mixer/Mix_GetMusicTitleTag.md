@@ -26,7 +26,7 @@ This returns format-specific metadata. Not all file formats supply this!
 
 If `music` is NULL, this will query the currently-playing music.
 
-Unlike this function, [Mix_GetMusicTitle](Mix_GetMusicTitle)() produce a
+Unlike this function, [Mix_GetMusicTitle](Mix_GetMusicTitle.md)() produce a
 string with the music's filename if a title isn't available, which might be
 preferable for some applications.
 
@@ -39,11 +39,10 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_GetMusicTitle](Mix_GetMusicTitle)
-* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
-* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
-* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
+* [Mix_GetMusicTitle](Mix_GetMusicTitle.md)
+* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag.md)
+* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag.md)
+* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

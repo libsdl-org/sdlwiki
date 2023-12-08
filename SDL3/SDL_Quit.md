@@ -13,7 +13,7 @@ void SDL_Quit(void);
 ## Remarks
 
 You should call this function even if you have already shutdown each
-initialized subsystem with [SDL_QuitSubSystem](SDL_QuitSubSystem)(). It is
+initialized subsystem with [SDL_QuitSubSystem](SDL_QuitSubSystem.md)(). It is
 safe to call this function even in the case of errors in initialization.
 
 You can use this function with atexit() to ensure that it is run when your
@@ -46,10 +46,8 @@ int main(int argc, char** argv) {
 
 ## Related Functions
 
-* [SDL_Init](SDL_Init)
-* [SDL_QuitSubSystem](SDL_QuitSubSystem)
+* [SDL_Init](SDL_Init.md)
+* [SDL_QuitSubSystem](SDL_QuitSubSystem.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryInit](CategoryInit.md)

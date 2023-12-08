@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_RWFromFile
 
-Use this function to create a new [SDL_RWops](SDL_RWops) structure for reading from and/or writing to a named file.
+Use this function to create a new [SDL_RWops](SDL_RWops.md) structure for reading from and/or writing to a named file.
 
 ## Syntax
 
@@ -19,8 +19,8 @@ SDL_RWops* SDL_RWFromFile(const char *file, const char *mode);
 
 ## Return Value
 
-Returns a pointer to the [SDL_RWops](SDL_RWops) structure that is created,
-or NULL on failure; call [SDL_GetError](SDL_GetError)() for more
+Returns a pointer to the [SDL_RWops](SDL_RWops.md) structure that is created,
+or NULL on failure; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -60,10 +60,10 @@ a text file.
 This function supports Unicode filenames, but they must be encoded in UTF-8
 format, regardless of the underlying operating system.
 
-As a fallback, [SDL_RWFromFile](SDL_RWFromFile)() will transparently open a
+As a fallback, [SDL_RWFromFile](SDL_RWFromFile.md)() will transparently open a
 matching filename in an Android app's `assets`.
 
-Closing the [SDL_RWops](SDL_RWops) will close the file handle SDL is
+Closing the [SDL_RWops](SDL_RWops.md) will close the file handle SDL is
 holding internally.
 
 ## Version
@@ -80,15 +80,13 @@ SDL_Surface *image = SDL_LoadBMP_RW(file, 1); /* 1 to automatically close the RW
 
 ## Related Functions
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWread](SDL_RWread)
-* [SDL_RWseek](SDL_RWseek)
-* [SDL_RWtell](SDL_RWtell)
-* [SDL_RWwrite](SDL_RWwrite)
+* [SDL_RWclose](SDL_RWclose.md)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem.md)
+* [SDL_RWFromMem](SDL_RWFromMem.md)
+* [SDL_RWread](SDL_RWread.md)
+* [SDL_RWseek](SDL_RWseek.md)
+* [SDL_RWtell](SDL_RWtell.md)
+* [SDL_RWwrite](SDL_RWwrite.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

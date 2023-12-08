@@ -21,10 +21,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
-* [SDL_GetVideoDriver](SDL_GetVideoDriver)
+* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers.md)
+* [SDL_GetVideoDriver](SDL_GetVideoDriver.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

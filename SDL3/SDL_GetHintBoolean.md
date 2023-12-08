@@ -35,11 +35,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHint](SDL_SetHint)
+* [SDL_GetHint](SDL_GetHint.md)
+* [SDL_SetHint](SDL_SetHint.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

@@ -14,11 +14,11 @@ SDL_AudioStatus SDL_GetAudioDeviceStatus(SDL_AudioDeviceID dev);
 
 |             |                                                                                               |
 | ----------- | --------------------------------------------------------------------------------------------- |
-| **dev**     | the ID of an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | the ID of an audio device previously opened with [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Return Value
 
-Returns the [SDL_AudioStatus](SDL_AudioStatus) of the specified audio
+Returns the [SDL_AudioStatus](SDL_AudioStatus.md) of the specified audio
 device.
 
 ## Version
@@ -27,8 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+* [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

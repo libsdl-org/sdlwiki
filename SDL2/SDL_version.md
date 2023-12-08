@@ -32,19 +32,18 @@ Represents the library's version as three levels:
 - minor revision (increments with backwards-compatible changes to the major revision), and
 - patchlevel (increments with fixes to the minor revision)
 
-The macro [SDL_VERSION](SDL_VERSION) can be used to populate this structure with information.
+The macro [SDL_VERSION](SDL_VERSION.md) can be used to populate this structure with information.
 
 ## Related Macros
 
-- [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
-- [SDL_VERSION](SDL_VERSION)
-- [SDL_VERSIONNUM](SDL_VERSIONNUM)
-- [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
+- [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION.md)
+- [SDL_VERSION](SDL_VERSION.md)
+- [SDL_VERSIONNUM](SDL_VERSIONNUM.md)
+- [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST.md)
 
 ## Related Functions
 
-- [SDL_GetVersion](SDL_GetVersion)
+- [SDL_GetVersion](SDL_GetVersion.md)
 
 ----
-[CategoryStruct](CategoryStruct), [CategoryVersion](CategoryVersion)
-
+[CategoryStruct](CategoryStruct.md), [CategoryVersion](CategoryVersion.md)

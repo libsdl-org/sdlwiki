@@ -16,14 +16,14 @@ SDL_Cursor* SDL_CreateColorCursor(SDL_Surface *surface,
 
 |                 |                                                                       |
 | --------------- | --------------------------------------------------------------------- |
-| **surface**     | an [SDL_Surface](SDL_Surface) structure representing the cursor image |
+| **surface**     | an [SDL_Surface](SDL_Surface.md) structure representing the cursor image |
 | **hot_x**       | the x position of the cursor hot spot                                 |
 | **hot_y**       | the y position of the cursor hot spot                                 |
 
 ## Return Value
 
 Returns the new cursor on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -97,10 +97,8 @@ exit:
 
 ## Related Functions
 
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_DestroyCursor](SDL_DestroyCursor)
+* [SDL_CreateCursor](SDL_CreateCursor.md)
+* [SDL_DestroyCursor](SDL_DestroyCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md)

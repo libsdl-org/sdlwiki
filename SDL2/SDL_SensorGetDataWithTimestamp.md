@@ -14,7 +14,7 @@ int SDL_SensorGetDataWithTimestamp(SDL_Sensor *sensor, Uint64 *timestamp, float 
 
 |                    |                                                                                                             |
 | ------------------ | ----------------------------------------------------------------------------------------------------------- |
-| **sensor**         | The [SDL_Sensor](SDL_Sensor) object to query                                                                |
+| **sensor**         | The [SDL_Sensor](SDL_Sensor.md) object to query                                                                |
 | **timestamp**      | A pointer filled with the timestamp in microseconds of the current sensor reading if available, or 0 if not |
 | **data**           | A pointer filled with the current sensor state                                                              |
 | **num_values**     | The number of values to write to data                                                                       |
@@ -32,5 +32,4 @@ The number of values and interpretation of the data is sensor dependent.
 This function is available since SDL 2.26.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

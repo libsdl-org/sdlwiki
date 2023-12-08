@@ -20,7 +20,7 @@ SDL_hid_device * SDL_hid_open(unsigned short vendor_id, unsigned short product_i
 
 ## Return Value
 
-Returns a pointer to a [SDL_hid_device](SDL_hid_device) object on success
+Returns a pointer to a [SDL_hid_device](SDL_hid_device.md) object on success
 or NULL on failure.
 
 ## Remarks
@@ -33,5 +33,4 @@ is opened.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,11 +19,11 @@ int SDL_GL_UnbindTexture(SDL_Texture *texture);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-See [SDL_GL_BindTexture](SDL_GL_BindTexture)() for examples on how to use
+See [SDL_GL_BindTexture](SDL_GL_BindTexture.md)() for examples on how to use
 these functions
 
 ## Version
@@ -32,10 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GL_BindTexture](SDL_GL_BindTexture)
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+* [SDL_GL_BindTexture](SDL_GL_BindTexture.md)
+* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

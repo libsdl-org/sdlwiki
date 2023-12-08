@@ -19,7 +19,7 @@ const char* SDL_GetTouchDeviceName(SDL_TouchID touchID);
 ## Return Value
 
 Returns touch device name, or NULL on error; call
-[SDL_GetError](SDL_GetError)() for more details.
+[SDL_GetError](SDL_GetError.md)() for more details.
 
 ## Remarks
 
@@ -30,5 +30,4 @@ You do not own the returned string, do not modify or free it.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

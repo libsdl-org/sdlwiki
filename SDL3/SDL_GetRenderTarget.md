@@ -39,10 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetRenderTarget](SDL_SetRenderTarget)
+* [SDL_SetRenderTarget](SDL_SetRenderTarget.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

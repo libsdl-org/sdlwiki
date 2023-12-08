@@ -18,7 +18,7 @@ char* SDL_GetGamepadInstanceMapping(SDL_JoystickID instance_id);
 
 ## Return Value
 
-Returns the mapping string. Must be freed with [SDL_free](SDL_free)().
+Returns the mapping string. Must be freed with [SDL_free](SDL_free.md)().
 Returns NULL if no mapping is available.
 
 ## Remarks
@@ -30,5 +30,4 @@ This can be called before any gamepads are opened.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

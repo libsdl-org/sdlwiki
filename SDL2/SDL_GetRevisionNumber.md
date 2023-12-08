@@ -5,7 +5,7 @@ Obsolete function, do not use.
 
 ## Deprecated
 
-Use [SDL_GetRevision](SDL_GetRevision)() instead; if SDL was carefully
+Use [SDL_GetRevision](SDL_GetRevision.md)() instead; if SDL was carefully
 built, it will return a git hash.
 
 ## Syntax
@@ -36,9 +36,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetRevision](SDL_GetRevision)
+* [SDL_GetRevision](SDL_GetRevision.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVersion](CategoryVersion.md)

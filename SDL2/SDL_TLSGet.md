@@ -19,7 +19,7 @@ void * SDL_TLSGet(SDL_TLSID id);
 ## Return Value
 
 Returns the value associated with the ID for the current thread or NULL if
-no value has been set; call [SDL_GetError](SDL_GetError)() for more
+no value has been set; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Version
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_TLSCreate](SDL_TLSCreate)
-* [SDL_TLSSet](SDL_TLSSet)
+* [SDL_TLSCreate](SDL_TLSCreate.md)
+* [SDL_TLSSet](SDL_TLSSet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

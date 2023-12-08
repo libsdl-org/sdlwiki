@@ -14,7 +14,7 @@ void SDL_SetEventEnabled(Uint32 type, SDL_bool enabled);
 
 |                 |                                                                   |
 | --------------- | ----------------------------------------------------------------- |
-| **type**        | the type of event; see [SDL_EventType](SDL_EventType) for details |
+| **type**        | the type of event; see [SDL_EventType](SDL_EventType.md) for details |
 | **enabled**     | whether to process the event or not                               |
 
 ## Version
@@ -23,8 +23,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_IsEventEnabled](SDL_IsEventEnabled)
+* [SDL_IsEventEnabled](SDL_IsEventEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

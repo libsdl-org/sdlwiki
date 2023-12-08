@@ -16,12 +16,12 @@ int SDL_GetWindowDisplayMode(SDL_Window * window,
 |                |                                                                                            |
 | -------------- | ------------------------------------------------------------------------------------------ |
 | **window**     | the window to query                                                                        |
-| **mode**       | an [SDL_DisplayMode](SDL_DisplayMode) structure filled in with the fullscreen display mode |
+| **mode**       | an [SDL_DisplayMode](SDL_DisplayMode.md) structure filled in with the fullscreen display mode |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -29,9 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode.md)
+* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

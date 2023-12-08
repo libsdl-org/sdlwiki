@@ -19,16 +19,16 @@ int SDL_GameControllerEventState(int state);
 ## Return Value
 
 Returns the same value passed to the function, with exception to -1
-([SDL_QUERY](SDL_QUERY)), which will return the current state.
+([SDL_QUERY](SDL_QUERY.md)), which will return the current state.
 
 ## Remarks
 
 If controller events are disabled, you must call
-[SDL_GameControllerUpdate](SDL_GameControllerUpdate)() yourself and check
+[SDL_GameControllerUpdate](SDL_GameControllerUpdate.md)() yourself and check
 the state of the controller when you want controller information.
 
 Any number can be passed to
-[SDL_GameControllerEventState](SDL_GameControllerEventState)(), but only
+[SDL_GameControllerEventState](SDL_GameControllerEventState.md)(), but only
 -1, 0, and 1 will have any effect. Other numbers will just be returned.
 
 ## Version
@@ -37,8 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickEventState](SDL_JoystickEventState)
+* [SDL_JoystickEventState](SDL_JoystickEventState.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

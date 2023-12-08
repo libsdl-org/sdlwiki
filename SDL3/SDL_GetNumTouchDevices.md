@@ -25,7 +25,7 @@ Returns the number of registered touch devices.
 ## Remarks
 
 On some platforms SDL first sees the touch device if it was actually used.
-Therefore [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)() may return 0
+Therefore [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices.md)() may return 0
 although devices are available. After using all devices at least once the
 number will be correct.
 
@@ -37,10 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetTouchDevice](SDL_GetTouchDevice)
+* [SDL_GetTouchDevice](SDL_GetTouchDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryEvents](CategoryEvents.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

@@ -41,9 +41,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_Send](SDLNet_UDP_Send)
-* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
+* [SDLNet_UDP_Send](SDLNet_UDP_Send.md)
+* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

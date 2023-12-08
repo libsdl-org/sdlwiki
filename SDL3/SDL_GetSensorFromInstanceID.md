@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetSensorFromInstanceID
 
-Return the [SDL_Sensor](SDL_Sensor) associated with an instance ID.
+Return the [SDL_Sensor](SDL_Sensor.md) associated with an instance ID.
 
 ## Syntax
 
@@ -18,12 +18,11 @@ SDL_Sensor* SDL_GetSensorFromInstanceID(SDL_SensorID instance_id);
 
 ## Return Value
 
-Returns an [SDL_Sensor](SDL_Sensor) object.
+Returns an [SDL_Sensor](SDL_Sensor.md) object.
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

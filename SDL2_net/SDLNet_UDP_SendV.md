@@ -31,7 +31,7 @@ Each packet will be updated with the status of the packet after it has been
 sent, -1 if the packet send failed.
 
 This function takes an array of packets but does not need to be allocated
-through [SDLNet_AllocPacketV](SDLNet_AllocPacketV); if you supply your own
+through [SDLNet_AllocPacketV](SDLNet_AllocPacketV.md); if you supply your own
 array of packets you allocated individually, that is okay.
 
 **Warning**: UDP is an _unreliable protocol_, which means we can report
@@ -56,8 +56,7 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
+* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

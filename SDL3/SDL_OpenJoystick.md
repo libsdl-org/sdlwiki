@@ -19,7 +19,7 @@ SDL_Joystick* SDL_OpenJoystick(SDL_JoystickID instance_id);
 ## Return Value
 
 Returns a joystick identifier or NULL if an error occurred; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -32,8 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CloseJoystick](SDL_CloseJoystick)
+* [SDL_CloseJoystick](SDL_CloseJoystick.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

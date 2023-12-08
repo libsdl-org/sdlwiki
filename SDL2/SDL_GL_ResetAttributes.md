@@ -16,9 +16,8 @@ This function is available since SDL 2.0.2.
 
 ## Related Functions
 
-* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
-* [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+* [SDL_GL_GetAttribute](SDL_GL_GetAttribute.md)
+* [SDL_GL_SetAttribute](SDL_GL_SetAttribute.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

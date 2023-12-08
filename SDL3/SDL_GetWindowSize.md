@@ -21,7 +21,7 @@ int SDL_GetWindowSize(SDL_Window *window, int *w, int *h);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -30,8 +30,8 @@ height value is not desired.
 
 The window pixel size may differ from its window coordinate size if the
 window is on a high pixel density display. Use
-[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or
-[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)() to get the real client
+[SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels.md)() or
+[SDL_GetRenderOutputSize](SDL_GetRenderOutputSize.md)() to get the real client
 area size in pixels.
 
 ## Version
@@ -40,11 +40,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
-* [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
-* [SDL_SetWindowSize](SDL_SetWindowSize)
+* [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize.md)
+* [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels.md)
+* [SDL_SetWindowSize](SDL_SetWindowSize.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

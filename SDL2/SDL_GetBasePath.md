@@ -14,7 +14,7 @@ char* SDL_GetBasePath(void);
 
 Returns an absolute path in UTF-8 encoding to the application data
 directory. NULL will be returned on error or when the platform doesn't
-implement this functionality, call [SDL_GetError](SDL_GetError)() for more
+implement this functionality, call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
@@ -26,11 +26,11 @@ startup and save the string if you need it.
 ".app" bundle, this function returns the Resource directory (e.g.
 MyApp.app/Contents/Resources/). This behaviour can be overridden by adding
 a property to the Info.plist file. Adding a string key with the name
-[SDL_FILESYSTEM_BASE_DIR_TYPE](SDL_FILESYSTEM_BASE_DIR_TYPE) with a
+[SDL_FILESYSTEM_BASE_DIR_TYPE](SDL_FILESYSTEM_BASE_DIR_TYPE.md) with a
 supported value will change the behaviour.
 
 Supported values for the
-[SDL_FILESYSTEM_BASE_DIR_TYPE](SDL_FILESYSTEM_BASE_DIR_TYPE) property
+[SDL_FILESYSTEM_BASE_DIR_TYPE](SDL_FILESYSTEM_BASE_DIR_TYPE.md) property
 (Given an application in /Applications/SDLApp/MyApp.app):
 
 - `resource`: bundle resource directory (the default). For example:
@@ -48,7 +48,7 @@ The returned path is guaranteed to end with a path separator ('\' on
 Windows, '/' on most other platforms).
 
 The pointer returned is owned by the caller. Please call
-[SDL_free](SDL_free)() on the pointer when done with it.
+[SDL_free](SDL_free.md)() on the pointer when done with it.
 
 ## Version
 
@@ -56,8 +56,7 @@ This function is available since SDL 2.0.1.
 
 ## Related Functions
 
-* [SDL_GetPrefPath](SDL_GetPrefPath)
+* [SDL_GetPrefPath](SDL_GetPrefPath.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

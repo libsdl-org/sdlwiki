@@ -20,7 +20,7 @@ void SDL_DestroyWindow(SDL_Window *window);
 
 If `window` is NULL, this function will return immediately after setting
 the SDL error message to "Invalid window". See
-[SDL_GetError](SDL_GetError)().
+[SDL_GetError](SDL_GetError.md)().
 
 ## Version
 
@@ -28,11 +28,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
+* [SDL_CreatePopupWindow](SDL_CreatePopupWindow.md)
+* [SDL_CreateWindow](SDL_CreateWindow.md)
+* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

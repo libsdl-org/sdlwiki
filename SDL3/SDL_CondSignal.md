@@ -19,7 +19,7 @@ int SDL_CondSignal(SDL_cond *cond);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,13 +27,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CondBroadcast](SDL_CondBroadcast)
-* [SDL_CondWait](SDL_CondWait)
-* [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
-* [SDL_CreateCond](SDL_CreateCond)
-* [SDL_DestroyCond](SDL_DestroyCond)
+* [SDL_CondBroadcast](SDL_CondBroadcast.md)
+* [SDL_CondWait](SDL_CondWait.md)
+* [SDL_CondWaitTimeout](SDL_CondWaitTimeout.md)
+* [SDL_CreateCond](SDL_CreateCond.md)
+* [SDL_DestroyCond](SDL_DestroyCond.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

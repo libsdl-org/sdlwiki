@@ -26,7 +26,7 @@ int SDL_RenderCopyExF(SDL_Renderer * renderer,
 | **dstrect**      | A pointer to the destination rectangle, or NULL for the entire rendering target.                                                                 |
 | **angle**        | An angle in degrees that indicates the rotation that will be applied to dstrect, rotating it in a clockwise direction                            |
 | **center**       | A pointer to a point indicating the point around which dstrect will be rotated (if NULL, rotation will be done around dstrect.w/2, dstrect.h/2). |
-| **flip**         | An [SDL_RendererFlip](SDL_RendererFlip) value stating which flipping actions should be performed on the texture                                  |
+| **flip**         | An [SDL_RendererFlip](SDL_RendererFlip.md) value stating which flipping actions should be performed on the texture                                  |
 
 ## Return Value
 
@@ -37,5 +37,4 @@ Return 0 on success, or -1 on error
 This function is available since SDL 2.0.10.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

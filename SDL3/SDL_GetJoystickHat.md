@@ -15,7 +15,7 @@ Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick,
 
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
-| **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
+| **joystick**     | an [SDL_Joystick](SDL_Joystick.md) structure containing joystick information |
 | **hat**          | the hat index to get the state from; indices start at index 0             |
 
 ## Return Value
@@ -42,8 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
+* [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

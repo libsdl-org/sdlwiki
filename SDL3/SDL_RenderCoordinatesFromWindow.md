@@ -23,7 +23,7 @@ int SDL_RenderCoordinatesFromWindow(SDL_Renderer *renderer, float window_x, floa
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -31,9 +31,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
-* [SDL_SetRenderScale](SDL_SetRenderScale)
+* [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation.md)
+* [SDL_SetRenderScale](SDL_SetRenderScale.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

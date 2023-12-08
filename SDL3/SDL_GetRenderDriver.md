@@ -14,7 +14,7 @@ const char* SDL_GetRenderDriver(int index);
 
 |               |                                                                                                                        |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| **index**     | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)() - 1 |
+| **index**     | the index of the rendering driver; the value ranges from 0 to [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)() - 1 |
 
 ## Return Value
 
@@ -40,8 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

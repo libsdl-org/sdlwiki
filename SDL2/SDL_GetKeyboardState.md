@@ -28,14 +28,14 @@ the caller.
 
 A array element with a value of 1 means that the key is pressed and a value
 of 0 means that it is not. Indexes into this array are obtained by using
-[SDL_Scancode](SDL_Scancode) values.
+[SDL_Scancode](SDL_Scancode.md) values.
 
-Use [SDL_PumpEvents](SDL_PumpEvents)() to update the state array.
+Use [SDL_PumpEvents](SDL_PumpEvents.md)() to update the state array.
 
 This function gives you the current state after all events have been
 processed, so if a key or button has been pressed and released before you
 process events, then the pressed state will never show up in the
-[SDL_GetKeyboardState](SDL_GetKeyboardState)() calls.
+[SDL_GetKeyboardState](SDL_GetKeyboardState.md)() calls.
 
 Note: This function doesn't take into account whether shift has been
 pressed or not.
@@ -46,9 +46,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_PumpEvents](SDL_PumpEvents)
-* [SDL_ResetKeyboard](SDL_ResetKeyboard)
+* [SDL_PumpEvents](SDL_PumpEvents.md)
+* [SDL_ResetKeyboard](SDL_ResetKeyboard.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

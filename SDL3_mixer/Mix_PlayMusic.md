@@ -30,14 +30,13 @@ when another music object is playing, the currently-playing music is halted
 and the new music will replace it.
 
 Please note that if the currently-playing music is in the process of fading
-out (via [Mix_FadeOutMusic](Mix_FadeOutMusic)()), this function will
+out (via [Mix_FadeOutMusic](Mix_FadeOutMusic.md)()), this function will
 *block* until the fade completes. If you need to avoid this, be sure to
-call [Mix_HaltMusic](Mix_HaltMusic)() before starting new music.
+call [Mix_HaltMusic](Mix_HaltMusic.md)() before starting new music.
 
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

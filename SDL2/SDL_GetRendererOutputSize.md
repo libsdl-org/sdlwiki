@@ -22,13 +22,13 @@ int SDL_GetRendererOutputSize(SDL_Renderer * renderer,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Due to high-dpi displays, you might end up with a rendering context that
 has more pixels than the window that contains it, so use this instead of
-[SDL_GetWindowSize](SDL_GetWindowSize)() to decide how much drawing area
+[SDL_GetWindowSize](SDL_GetWindowSize.md)() to decide how much drawing area
 you have.
 
 ## Version
@@ -37,8 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderer](SDL_GetRenderer)
+* [SDL_GetRenderer](SDL_GetRenderer.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

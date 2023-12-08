@@ -17,15 +17,15 @@ SDL_bool SDL_GetRectEnclosingPoints(const SDL_Point * points,
 
 |                |                                                                                  |
 | -------------- | -------------------------------------------------------------------------------- |
-| **points**     | an array of [SDL_Point](SDL_Point) structures representing points to be enclosed |
+| **points**     | an array of [SDL_Point](SDL_Point.md) structures representing points to be enclosed |
 | **count**      | the number of structures in the `points` array                                   |
-| **clip**       | an [SDL_Rect](SDL_Rect) used for clipping or NULL to enclose all points          |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the minimal enclosing rectangle |
+| **clip**       | an [SDL_Rect](SDL_Rect.md) used for clipping or NULL to enclose all points          |
+| **result**     | an [SDL_Rect](SDL_Rect.md) structure filled in with the minimal enclosing rectangle |
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if any points were enclosed or
-[SDL_FALSE](SDL_FALSE) if all the points were outside of the clipping
+Returns [SDL_TRUE](SDL_TRUE.md) if any points were enclosed or
+[SDL_FALSE](SDL_FALSE.md) if all the points were outside of the clipping
 rectangle.
 
 ## Remarks
@@ -38,5 +38,4 @@ considered.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

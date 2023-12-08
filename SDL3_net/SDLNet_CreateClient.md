@@ -19,12 +19,12 @@ SDLNet_StreamSocket * SDLNet_CreateClient(SDLNet_Address *address, Uint16 port);
 
 ## Return Value
 
-Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket), pending
+Returns a new [SDLNet_StreamSocket](SDLNet_StreamSocket.md), pending
 connection, or NULL on error; call SDL_GetError() for details.
 
 ## Remarks
 
-Each [SDLNet_StreamSocket](SDLNet_StreamSocket) represents a single
+Each [SDLNet_StreamSocket](SDLNet_StreamSocket.md) represents a single
 connection between systems. Usually, a client app will have one connection
 to a server app on a different computer, and the server app might have many
 connections from different clients. Each of these connections communicate
@@ -32,8 +32,8 @@ over a separate stream socket.
 
 Connecting is an asynchronous operation; this function does not block, and
 will return before the connection is complete. One has to then use
-[SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)() or
-[SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)() to see when the
+[SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected.md)() or
+[SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus.md)() to see when the
 operation has completed, and if it was successful.
 
 Once connected, you can read and write data to the returned socket. Stream
@@ -55,7 +55,7 @@ This function will fail if `address` is not finished resolving.
 
 When you are done with this connection (whether it failed to connect or
 not), you must dispose of it with
-[SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)().
+[SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket.md)().
 
 Unlike BSD sockets or WinSock, you specify the port as a normal integer;
 you do not have to byteswap it into "network order," as the library will
@@ -71,10 +71,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
-* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
-* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
+* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected.md)
+* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus.md)
+* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

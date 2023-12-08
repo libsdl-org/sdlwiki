@@ -22,7 +22,7 @@ int SDL_GetDisplayDPI(int displayIndex, float * ddpi, float * hdpi, float * vdpi
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -34,12 +34,12 @@ available or the `displayIndex` is out of range.
 
 **WARNING**: This reports the DPI that the hardware reports, and it is not
 always reliable! It is almost always better to use
-[SDL_GetWindowSize](SDL_GetWindowSize)() to find the window size, which
+[SDL_GetWindowSize](SDL_GetWindowSize.md)() to find the window size, which
 might be in logical points instead of pixels, and then
-[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)(),
-[SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)(),
-[SDL_Metal_GetDrawableSize](SDL_Metal_GetDrawableSize)(), or
-[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize)(), and compare the
+[SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize.md)(),
+[SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize.md)(),
+[SDL_Metal_GetDrawableSize](SDL_Metal_GetDrawableSize.md)(), or
+[SDL_GetRendererOutputSize](SDL_GetRendererOutputSize.md)(), and compare the
 two values to get an actual scaling value between the two. We will be
 rethinking how high-dpi details should be managed in SDL3 to make things
 more consistent, reliable, and clear.
@@ -50,8 +50,7 @@ This function is available since SDL 2.0.4.
 
 ## Related Functions
 
-* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
+* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

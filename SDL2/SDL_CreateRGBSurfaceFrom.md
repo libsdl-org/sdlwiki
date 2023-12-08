@@ -34,13 +34,13 @@ SDL_Surface* SDL_CreateRGBSurfaceFrom(void *pixels,
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function operates mostly like
-[SDL_CreateRGBSurface](SDL_CreateRGBSurface)(), except it does not allocate
+[SDL_CreateRGBSurface](SDL_CreateRGBSurface.md)(), except it does not allocate
 memory for the pixel data, instead the caller provides an existing buffer
 of data for the surface to use.
 
@@ -53,10 +53,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
-* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
-* [SDL_FreeSurface](SDL_FreeSurface)
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface.md)
+* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat.md)
+* [SDL_FreeSurface](SDL_FreeSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

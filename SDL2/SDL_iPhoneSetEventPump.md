@@ -14,14 +14,14 @@ void SDL_iPhoneSetEventPump(SDL_bool enabled);
 
 |                 |                                                                                     |
 | --------------- | ----------------------------------------------------------------------------------- |
-| **enabled**     | [SDL_TRUE](SDL_TRUE) to enable the event pump, [SDL_FALSE](SDL_FALSE) to disable it |
+| **enabled**     | [SDL_TRUE](SDL_TRUE.md) to enable the event pump, [SDL_FALSE](SDL_FALSE.md) to disable it |
 
 ## Remarks
 
 This function is only available on Apple iOS.
 
 This functions is also accessible using the macro
-[SDL_iOSSetEventPump](SDL_iOSSetEventPump)() since SDL 2.0.4.
+[SDL_iOSSetEventPump](SDL_iOSSetEventPump.md)() since SDL 2.0.4.
 
 ## Version
 
@@ -29,8 +29,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
+* [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

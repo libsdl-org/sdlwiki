@@ -13,7 +13,7 @@ void SDL_UnlockAudio(void);
 ## Remarks
 
 New programs might want to use
-[SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)() instead. This function is
+[SDL_UnlockAudioDevice](SDL_UnlockAudioDevice.md)() instead. This function is
 equivalent to calling...
 
 ```c
@@ -21,7 +21,7 @@ SDL_UnlockAudioDevice(1);
 ```
 
 ...and is only useful if you used the legacy
-[SDL_OpenAudio](SDL_OpenAudio)() function.
+[SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -29,9 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LockAudio](SDL_LockAudio)
-* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+* [SDL_LockAudio](SDL_LockAudio.md)
+* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

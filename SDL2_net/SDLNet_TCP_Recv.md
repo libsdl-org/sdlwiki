@@ -25,8 +25,8 @@ Returns number of bytes received, which might be less than `maxlen`.
 ## Remarks
 
 `sock` must be a valid socket that was created by
-[SDLNet_TCP_Open](SDLNet_TCP_Open) with a specific address, or
-[SDLNet_TCP_Accept](SDLNet_TCP_Accept).
+[SDLNet_TCP_Open](SDLNet_TCP_Open.md) with a specific address, or
+[SDLNet_TCP_Accept](SDLNet_TCP_Accept.md).
 
 Receive up to `maxlen` bytes of data over the non-server socket `sock`, and
 store them in the buffer pointed to by `data`.
@@ -39,7 +39,7 @@ Note that this will return the number of bytes available at the first
 moment the socket is able to see new data. If packets are coming in slowly
 from the network, this might be less data than you expect at a given time.
 
-This function may block! Use [SDLNet_CheckSockets](SDLNet_CheckSockets)()
+This function may block! Use [SDLNet_CheckSockets](SDLNet_CheckSockets.md)()
 to make sure there is data available before calling this function, if you
 want to avoid blocking.
 
@@ -49,9 +49,8 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_TCP_Send](SDLNet_TCP_Send)
-* [SDLNet_CheckSockets](SDLNet_CheckSockets)
+* [SDLNet_TCP_Send](SDLNet_TCP_Send.md)
+* [SDLNet_CheckSockets](SDLNet_CheckSockets.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

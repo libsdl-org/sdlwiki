@@ -16,15 +16,15 @@ int SDL_SetPaletteColors(SDL_Palette * palette,
 
 |                    |                                                                        |
 | ------------------ | ---------------------------------------------------------------------- |
-| **palette**        | the [SDL_Palette](SDL_Palette) structure to modify                     |
-| **colors**         | an array of [SDL_Color](SDL_Color) structures to copy into the palette |
+| **palette**        | the [SDL_Palette](SDL_Palette.md) structure to modify                     |
+| **colors**         | an array of [SDL_Color](SDL_Color.md) structures to copy into the palette |
 | **firstcolor**     | the index of the first palette entry to modify                         |
 | **ncolors**        | the number of entries to modify                                        |
 
 ## Return Value
 
 Returns 0 on success or a negative error code if not all of the colors
-could be set; call [SDL_GetError](SDL_GetError)() for more information.
+could be set; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -32,9 +32,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_AllocPalette](SDL_AllocPalette)
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+* [SDL_AllocPalette](SDL_AllocPalette.md)
+* [SDL_CreateRGBSurface](SDL_CreateRGBSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

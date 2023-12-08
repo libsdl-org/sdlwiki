@@ -19,5 +19,4 @@ Returns a pointer to the data or NULL if no data exists
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

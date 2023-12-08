@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_AllocFormat
 
-Create an [SDL_PixelFormat](SDL_PixelFormat) structure corresponding to a pixel format.
+Create an [SDL_PixelFormat](SDL_PixelFormat.md) structure corresponding to a pixel format.
 
 ## Syntax
 
@@ -14,12 +14,12 @@ SDL_PixelFormat * SDL_AllocFormat(Uint32 pixel_format);
 
 |                      |                                                              |
 | -------------------- | ------------------------------------------------------------ |
-| **pixel_format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+| **pixel_format**     | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) values |
 
 ## Return Value
 
-Returns the new [SDL_PixelFormat](SDL_PixelFormat) structure or NULL on
-failure; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_PixelFormat](SDL_PixelFormat.md) structure or NULL on
+failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,7 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_FreeFormat](SDL_FreeFormat)
+* [SDL_FreeFormat](SDL_FreeFormat.md)
 
 
 ## Example
@@ -56,5 +56,4 @@ printf("Amount of bytes: %i\n", pixel_format->BytesPerPixel);
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

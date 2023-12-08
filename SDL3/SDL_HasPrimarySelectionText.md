@@ -12,8 +12,8 @@ SDL_bool SDL_HasPrimarySelectionText(void);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the primary selection has text, or
-[SDL_FALSE](SDL_FALSE) if it does not.
+Returns [SDL_TRUE](SDL_TRUE.md) if the primary selection has text, or
+[SDL_FALSE](SDL_FALSE.md) if it does not.
 
 ## Version
 
@@ -21,9 +21,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
-* [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
+* [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText.md)
+* [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

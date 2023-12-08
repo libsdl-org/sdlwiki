@@ -14,22 +14,22 @@ int SDL_GetVersion(SDL_version * ver);
 
 |             |                                                                                |
 | ----------- | ------------------------------------------------------------------------------ |
-| **ver**     | the [SDL_version](SDL_version) structure that contains the version information |
+| **ver**     | the [SDL_version](SDL_version.md) structure that contains the version information |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If you are linking to SDL dynamically, then it is possible that the current
 version will be different than the version you compiled against. This
-function returns the current version, while [SDL_VERSION](SDL_VERSION)() is
+function returns the current version, while [SDL_VERSION](SDL_VERSION.md)() is
 a macro that tells you what version you compiled with.
 
 This function may be called safely at any time, even before
-[SDL_Init](SDL_Init)().
+[SDL_Init](SDL_Init.md)().
 
 ## Version
 
@@ -51,14 +51,12 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 
 ## Related Functions
 
-* [SDL_GetRevision](SDL_GetRevision)
+* [SDL_GetRevision](SDL_GetRevision.md)
 
 
 ## Related Macros
 
-:[SDL_VERSION](SDL_VERSION)
+:[SDL_VERSION](SDL_VERSION.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVersion](CategoryVersion.md)

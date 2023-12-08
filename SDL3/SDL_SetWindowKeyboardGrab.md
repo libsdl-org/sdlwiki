@@ -15,12 +15,12 @@ int SDL_SetWindowKeyboardGrab(SDL_Window *window, SDL_bool grabbed);
 |                 |                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------- |
 | **window**      | The window for which the keyboard grab mode should be set.                            |
-| **grabbed**     | This is [SDL_TRUE](SDL_TRUE) to grab keyboard, and [SDL_FALSE](SDL_FALSE) to release. |
+| **grabbed**     | This is [SDL_TRUE](SDL_TRUE.md) to grab keyboard, and [SDL_FALSE](SDL_FALSE.md) to release. |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -46,10 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowKeyboardGrab](SDL_GetWindowKeyboardGrab)
-* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+* [SDL_GetWindowKeyboardGrab](SDL_GetWindowKeyboardGrab.md)
+* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab.md)
+* [SDL_SetWindowGrab](SDL_SetWindowGrab.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

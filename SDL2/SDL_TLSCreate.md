@@ -25,9 +25,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_TLSGet](SDL_TLSGet)
-* [SDL_TLSSet](SDL_TLSSet)
+* [SDL_TLSGet](SDL_TLSGet.md)
+* [SDL_TLSSet](SDL_TLSSet.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

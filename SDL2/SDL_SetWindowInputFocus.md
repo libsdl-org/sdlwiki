@@ -19,11 +19,11 @@ int SDL_SetWindowInputFocus(SDL_Window * window);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-You almost certainly want [SDL_RaiseWindow](SDL_RaiseWindow)() instead of
+You almost certainly want [SDL_RaiseWindow](SDL_RaiseWindow.md)() instead of
 this function. Use this with caution, as you might give focus to a window
 that is completely obscured by other windows.
 
@@ -33,8 +33,7 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_RaiseWindow](SDL_RaiseWindow)
+* [SDL_RaiseWindow](SDL_RaiseWindow.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,7 +18,7 @@ memory should not be modified or freed by the application.
 ## Remarks
 
 This function gets all assertions triggered since the last call to
-[SDL_ResetAssertionReport](SDL_ResetAssertionReport)(), or the start of the
+[SDL_ResetAssertionReport](SDL_ResetAssertionReport.md)(), or the start of the
 program.
 
 The proper way to examine this data looks something like this:
@@ -54,9 +54,7 @@ while (item) {
 
 ## Related Functions
 
-* [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
+* [SDL_ResetAssertionReport](SDL_ResetAssertionReport.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAssertions](CategoryAssertions)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAssertions](CategoryAssertions.md)

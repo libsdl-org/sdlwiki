@@ -21,7 +21,7 @@ void RTF_Render(RTF_Context *ctx, SDL_Rect *rect, int yOffset);
 ## Remarks
 
 Rendering is done through the SDL_Renderer specified in
-[RTF_CreateContext](RTF_CreateContext).
+[RTF_CreateContext](RTF_CreateContext.md).
 
 The text is reflowed to match the width of the rectangle.
 
@@ -32,5 +32,4 @@ The rendering is offset up (and clipped) by yOffset pixels.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -15,12 +15,12 @@ int SDL_SetWindowIcon(SDL_Window *window, SDL_Surface *icon);
 |                |                                                                            |
 | -------------- | -------------------------------------------------------------------------- |
 | **window**     | the window to change                                                       |
-| **icon**       | an [SDL_Surface](SDL_Surface) structure containing the icon for the window |
+| **icon**       | an [SDL_Surface](SDL_Surface.md) structure containing the icon for the window |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -97,6 +97,4 @@ int main(int argc, char* argv[]){
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md)

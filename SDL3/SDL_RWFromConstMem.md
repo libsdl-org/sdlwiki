@@ -14,17 +14,17 @@ SDL_RWops* SDL_RWFromConstMem(const void *mem, size_t size);
 
 |              |                                                                          |
 | ------------ | ------------------------------------------------------------------------ |
-| **mem**      | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops) stream |
+| **mem**      | a pointer to a read-only buffer to feed an [SDL_RWops](SDL_RWops.md) stream |
 | **size**     | the buffer size, in bytes                                                |
 
 ## Return Value
 
-Returns a pointer to a new [SDL_RWops](SDL_RWops) structure, or NULL if it
-fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns a pointer to a new [SDL_RWops](SDL_RWops.md) structure, or NULL if it
+fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-This function sets up an [SDL_RWops](SDL_RWops) struct based on a memory
+This function sets up an [SDL_RWops](SDL_RWops.md) struct based on a memory
 area of a certain size. It assumes the memory area is not writable.
 
 Attempting to write to this RWops stream will report an error without
@@ -35,7 +35,7 @@ remain valid until you close the stream. Closing the stream will not free
 the original buffer.
 
 If you need to write to a memory buffer, you should use
-[SDL_RWFromMem](SDL_RWFromMem)() with a writable buffer of memory instead.
+[SDL_RWFromMem](SDL_RWFromMem.md)() with a writable buffer of memory instead.
 
 ## Version
 
@@ -54,15 +54,13 @@ SDL_Surface *img = SDL_LoadBMP_RW(rw, 1); /* Automatically frees the RWops struc
 
 ## Related Functions
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWread](SDL_RWread)
-* [SDL_RWseek](SDL_RWseek)
-* [SDL_RWtell](SDL_RWtell)
+* [SDL_RWclose](SDL_RWclose.md)
+* [SDL_RWFromConstMem](SDL_RWFromConstMem.md)
+* [SDL_RWFromFile](SDL_RWFromFile.md)
+* [SDL_RWFromMem](SDL_RWFromMem.md)
+* [SDL_RWread](SDL_RWread.md)
+* [SDL_RWseek](SDL_RWseek.md)
+* [SDL_RWtell](SDL_RWtell.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryIO](CategoryIO.md)

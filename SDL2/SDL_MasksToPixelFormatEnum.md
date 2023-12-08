@@ -26,7 +26,7 @@ Uint32 SDL_MasksToPixelFormatEnum(int bpp,
 
 ## Return Value
 
-Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
+Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) values
 
 ## Remarks
 
@@ -39,8 +39,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_PixelFormatEnumToMasks](SDL_PixelFormatEnumToMasks)
+* [SDL_PixelFormatEnumToMasks](SDL_PixelFormatEnumToMasks.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

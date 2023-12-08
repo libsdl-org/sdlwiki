@@ -23,12 +23,12 @@ int SDL_SetWindowBordered(SDL_Window *window, SDL_bool bordered);
 |                  |                                                                             |
 | ---------------- | --------------------------------------------------------------------------- |
 | **window**       | the window of which to change the border state                              |
-| **bordered**     | [SDL_FALSE](SDL_FALSE) to remove border, [SDL_TRUE](SDL_TRUE) to add border |
+| **bordered**     | [SDL_FALSE](SDL_FALSE.md) to remove border, [SDL_TRUE](SDL_TRUE.md) to add border |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -45,10 +45,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+* [SDL_GetWindowFlags](SDL_GetWindowFlags.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryVideo](CategoryVideo.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

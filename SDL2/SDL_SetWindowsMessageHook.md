@@ -14,7 +14,7 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 
 |                  |                                                                        |
 | ---------------- | ---------------------------------------------------------------------- |
-| **callback**     | The [SDL_WindowsMessageHook](SDL_WindowsMessageHook) function to call. |
+| **callback**     | The [SDL_WindowsMessageHook](SDL_WindowsMessageHook.md) function to call. |
 | **userdata**     | a pointer to pass to every iteration of `callback`                     |
 
 ## Version
@@ -22,5 +22,4 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 This function is available since SDL 2.0.4.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

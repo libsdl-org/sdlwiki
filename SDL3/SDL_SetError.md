@@ -54,10 +54,8 @@ if (errorCode < 0)
 
 ## Related Functions
 
-* [SDL_ClearError](SDL_ClearError)
-* [SDL_GetError](SDL_GetError)
+* [SDL_ClearError](SDL_ClearError.md)
+* [SDL_GetError](SDL_GetError.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryError](CategoryError.md)

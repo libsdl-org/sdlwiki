@@ -23,13 +23,13 @@ int SDL_SetCursor(SDL_Cursor * cursor);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function sets the currently active cursor to the specified one. If the
 cursor is currently visible, the change will be immediately represented on
-the display. [SDL_SetCursor](SDL_SetCursor)(NULL) can be used to force
+the display. [SDL_SetCursor](SDL_SetCursor.md)(NULL) can be used to force
 cursor redraw, if this is desired for any reason.
 
 ## Version
@@ -44,10 +44,8 @@ You can add your code example here
 
 ## Related Functions
 
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_GetCursor](SDL_GetCursor)
+* [SDL_CreateCursor](SDL_CreateCursor.md)
+* [SDL_GetCursor](SDL_GetCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMouse](CategoryMouse.md), [CategoryDraft](CategoryDraft.md)

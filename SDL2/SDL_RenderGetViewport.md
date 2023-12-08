@@ -16,7 +16,7 @@ void SDL_RenderGetViewport(SDL_Renderer * renderer,
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                     |
-| **rect**         | an [SDL_Rect](SDL_Rect) structure filled in with the current drawing area |
+| **rect**         | an [SDL_Rect](SDL_Rect.md) structure filled in with the current drawing area |
 
 ## Version
 
@@ -24,8 +24,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RenderSetViewport](SDL_RenderSetViewport)
+* [SDL_RenderSetViewport](SDL_RenderSetViewport.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,7 +19,7 @@ void SDL_UnlockAudioDevice(SDL_AudioDeviceID dev);
 ## Remarks
 
 This function should be paired with a previous
-[SDL_LockAudioDevice](SDL_LockAudioDevice)() call.
+[SDL_LockAudioDevice](SDL_LockAudioDevice.md)() call.
 
 ## Version
 
@@ -48,9 +48,7 @@ SDL_Delay(2000);  // callback runs for 2 seconds.
 
 ## Related Functions
 
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
+* [SDL_LockAudioDevice](SDL_LockAudioDevice.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

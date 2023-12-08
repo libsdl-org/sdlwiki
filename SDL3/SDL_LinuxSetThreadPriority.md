@@ -30,6 +30,4 @@ This uses setpriority() if possible, and RealtimeKit if available.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryLinux](CategoryLinux)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryLinux](CategoryLinux.md)

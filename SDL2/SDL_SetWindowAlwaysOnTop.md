@@ -16,7 +16,7 @@ void SDL_SetWindowAlwaysOnTop(SDL_Window * window,
 |                |                                                                                         |
 | -------------- | --------------------------------------------------------------------------------------- |
 | **window**     | The window of which to change the always on top state                                   |
-| **on_top**     | [SDL_TRUE](SDL_TRUE) to set the window always on top, [SDL_FALSE](SDL_FALSE) to disable |
+| **on_top**     | [SDL_TRUE](SDL_TRUE.md) to set the window always on top, [SDL_FALSE](SDL_FALSE.md) to disable |
 
 ## Remarks
 
@@ -30,8 +30,7 @@ This function is available since SDL 2.0.16.
 
 ## Related Functions
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+* [SDL_GetWindowFlags](SDL_GetWindowFlags.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

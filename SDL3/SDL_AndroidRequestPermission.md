@@ -18,8 +18,8 @@ SDL_bool SDL_AndroidRequestPermission(const char *permission);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the permission was granted,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the permission was granted,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -30,6 +30,4 @@ This blocks the calling thread until the permission is granted or denied.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAndroid](CategoryAndroid)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAndroid](CategoryAndroid.md)

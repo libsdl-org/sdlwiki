@@ -30,7 +30,7 @@ Return 0 on success, or -1 if the texture is not valid.
 
 ## Remarks
 
-You can use [SDL_UpdateTexture](SDL_UpdateTexture)() as long as your pixel
+You can use [SDL_UpdateTexture](SDL_UpdateTexture.md)() as long as your pixel
 data is a contiguous block of NV12/21 planes in the proper order, but this
 function is available if your pixel data is not contiguous.
 
@@ -39,5 +39,4 @@ function is available if your pixel data is not contiguous.
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -18,9 +18,9 @@ SDL_bool SDL_RenderGetIntegerScale(SDL_Renderer * renderer);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if integer scales are forced or
-[SDL_FALSE](SDL_FALSE) if not and on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE.md) if integer scales are forced or
+[SDL_FALSE](SDL_FALSE.md) if not and on failure; call
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,8 +28,7 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale)
+* [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

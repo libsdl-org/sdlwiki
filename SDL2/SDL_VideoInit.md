@@ -19,7 +19,7 @@ int SDL_VideoInit(const char *driver_name);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -28,16 +28,16 @@ the window manager, etc, and determines the available display modes and
 pixel formats, but does not initialize a window or graphics mode.
 
 If you use this function and you haven't used the
-[SDL_INIT_VIDEO](SDL_INIT_VIDEO) flag with either [SDL_Init](SDL_Init)() or
-[SDL_InitSubSystem](SDL_InitSubSystem)(), you should call
-[SDL_VideoQuit](SDL_VideoQuit)() before calling [SDL_Quit](SDL_Quit)().
+[SDL_INIT_VIDEO](SDL_INIT_VIDEO.md) flag with either [SDL_Init](SDL_Init.md)() or
+[SDL_InitSubSystem](SDL_InitSubSystem.md)(), you should call
+[SDL_VideoQuit](SDL_VideoQuit.md)() before calling [SDL_Quit](SDL_Quit.md)().
 
 It is safe to call this function multiple times.
-[SDL_VideoInit](SDL_VideoInit)() will call [SDL_VideoQuit](SDL_VideoQuit)()
+[SDL_VideoInit](SDL_VideoInit.md)() will call [SDL_VideoQuit](SDL_VideoQuit.md)()
 itself if the video subsystem has already been initialized.
 
-You can use [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)() and
-[SDL_GetVideoDriver](SDL_GetVideoDriver)() to find a specific
+You can use [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers.md)() and
+[SDL_GetVideoDriver](SDL_GetVideoDriver.md)() to find a specific
 `driver_name`.
 
 ## Version
@@ -46,11 +46,10 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
-* [SDL_GetVideoDriver](SDL_GetVideoDriver)
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_VideoQuit](SDL_VideoQuit)
+* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers.md)
+* [SDL_GetVideoDriver](SDL_GetVideoDriver.md)
+* [SDL_InitSubSystem](SDL_InitSubSystem.md)
+* [SDL_VideoQuit](SDL_VideoQuit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

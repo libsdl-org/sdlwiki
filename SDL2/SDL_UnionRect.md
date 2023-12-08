@@ -16,14 +16,13 @@ void SDL_UnionRect(const SDL_Rect * A,
 
 |                |                                                                                      |
 | -------------- | ------------------------------------------------------------------------------------ |
-| **A**          | an [SDL_Rect](SDL_Rect) structure representing the first rectangle                   |
-| **B**          | an [SDL_Rect](SDL_Rect) structure representing the second rectangle                  |
-| **result**     | an [SDL_Rect](SDL_Rect) structure filled in with the union of rectangles `A` and `B` |
+| **A**          | an [SDL_Rect](SDL_Rect.md) structure representing the first rectangle                   |
+| **B**          | an [SDL_Rect](SDL_Rect.md) structure representing the second rectangle                  |
+| **result**     | an [SDL_Rect](SDL_Rect.md) structure filled in with the union of rectangles `A` and `B` |
 
 ## Version
 
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

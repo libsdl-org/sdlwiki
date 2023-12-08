@@ -27,5 +27,4 @@ This returns static internal data; do not free or modify it!
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

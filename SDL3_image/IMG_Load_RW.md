@@ -50,13 +50,13 @@ with SDL_RWops: `IMG_Load("filename.jpg")` will call this function and
 manage those details for you, determining the file type from the filename's
 extension.
 
-There is also [IMG_LoadTyped_RW](IMG_LoadTyped_RW)(), which is equivalent
+There is also [IMG_LoadTyped_RW](IMG_LoadTyped_RW.md)(), which is equivalent
 to this function except a file extension (like "BMP", "JPG", etc) can be
 specified, in case SDL_image cannot autodetect the file format.
 
 If you are using SDL's 2D rendering API, there is an equivalent call to
 load images directly into an SDL_Texture for use by the GPU without using a
-software surface: call [IMG_LoadTexture_RW](IMG_LoadTexture_RW)() instead.
+software surface: call [IMG_LoadTexture_RW](IMG_LoadTexture_RW.md)() instead.
 
 When done with the returned surface, the app should dispose of it with a
 call to SDL_DestroySurface().
@@ -67,10 +67,9 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_Load](IMG_Load)
-* [IMG_LoadTyped_RW](IMG_LoadTyped_RW)
-* [SDL_DestroySurface](SDL_DestroySurface)
+* [IMG_Load](IMG_Load.md)
+* [IMG_LoadTyped_RW](IMG_LoadTyped_RW.md)
+* [SDL_DestroySurface](SDL_DestroySurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

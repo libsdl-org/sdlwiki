@@ -26,12 +26,11 @@ If the socket is a server socket, this function returns NULL.
 
 This returns a pointer to internal memory; you should not modify or free
 it, and should assume it's only valid until the socket is given to
-[SDLNet_TCP_Close](SDLNet_TCP_Close).
+[SDLNet_TCP_Close](SDLNet_TCP_Close.md).
 
 ## Version
 
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -27,13 +27,13 @@ The channel will halt after the 'ticks' milliseconds have elapsed, or
 remove the expiration if 'ticks' is -1.
 
 This overrides the value passed to the fourth parameter of
-[Mix_PlayChannelTimed](Mix_PlayChannelTimed)().
+[Mix_PlayChannelTimed](Mix_PlayChannelTimed.md)().
 
 Specifying a channel of -1 will set an expiration for _all_ channels.
 
 Any halted channels will have any currently-registered effects
 deregistered, and will call any callback specified by
-[Mix_ChannelFinished](Mix_ChannelFinished)() once the halt occurs.
+[Mix_ChannelFinished](Mix_ChannelFinished.md)() once the halt occurs.
 
 Note that this function does not block for the number of ticks requested;
 it just schedules the chunk to expire and notes the time for the mixer to
@@ -44,5 +44,4 @@ manage later, and returns immediately.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

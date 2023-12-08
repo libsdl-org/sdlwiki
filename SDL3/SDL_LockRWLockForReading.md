@@ -48,8 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_UnlockRWLock](SDL_UnlockRWLock)
+* [SDL_UnlockRWLock](SDL_UnlockRWLock.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

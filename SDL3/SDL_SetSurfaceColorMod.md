@@ -15,7 +15,7 @@ int SDL_SetSurfaceColorMod(SDL_Surface *surface,
 
 |                 |                                                       |
 | --------------- | ----------------------------------------------------- |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to update    |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to update    |
 | **r**           | the red color value multiplied into blit operations   |
 | **g**           | the green color value multiplied into blit operations |
 | **b**           | the blue color value multiplied into blit operations  |
@@ -23,7 +23,7 @@ int SDL_SetSurfaceColorMod(SDL_Surface *surface,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -39,10 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod)
-* [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod)
+* [SDL_GetSurfaceColorMod](SDL_GetSurfaceColorMod.md)
+* [SDL_SetSurfaceAlphaMod](SDL_SetSurfaceAlphaMod.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

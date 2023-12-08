@@ -28,7 +28,7 @@ be played.
 ## Remarks
 
 This will start the new sound playing, much like
-[Mix_PlayChannel](Mix_PlayChannel)() will, but will start the sound playing
+[Mix_PlayChannel](Mix_PlayChannel.md)() will, but will start the sound playing
 at silence and fade in to its normal volume over the specified number of
 milliseconds.
 
@@ -50,13 +50,12 @@ it just schedules the chunk to play and notes the maximum for the mixer to
 manage later, and returns immediately.
 
 A fading channel will change it's volume progressively, as if
-[Mix_Volume](Mix_Volume)() was called on it (which is to say: you probably
-shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
+[Mix_Volume](Mix_Volume.md)() was called on it (which is to say: you probably
+shouldn't call [Mix_Volume](Mix_Volume.md)() on a fading channel).
 
 ## Version
 
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

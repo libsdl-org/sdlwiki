@@ -21,13 +21,13 @@ void SDL_SetWindowsMessageHook(SDL_WindowsMessageHook callback, void *userdata);
 
 |                  |                                                                        |
 | ---------------- | ---------------------------------------------------------------------- |
-| **callback**     | The [SDL_WindowsMessageHook](SDL_WindowsMessageHook) function to call. |
+| **callback**     | The [SDL_WindowsMessageHook](SDL_WindowsMessageHook.md) function to call. |
 | **userdata**     | a pointer to pass to every iteration of `callback`                     |
 
 ## Remarks
 
-The callback may modify the message, and should return [SDL_TRUE](SDL_TRUE)
-if the message should continue to be processed, or [SDL_FALSE](SDL_FALSE)
+The callback may modify the message, and should return [SDL_TRUE](SDL_TRUE.md)
+if the message should continue to be processed, or [SDL_FALSE](SDL_FALSE.md)
 to prevent further processing.
 
 ## Version
@@ -35,7 +35,5 @@ to prevent further processing.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategorySystem](CategorySystem.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

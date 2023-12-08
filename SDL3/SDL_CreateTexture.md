@@ -15,8 +15,8 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, Uint32 format, int access
 |                  |                                                                            |
 | ---------------- | -------------------------------------------------------------------------- |
 | **renderer**     | the rendering context                                                      |
-| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum) |
-| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess)     |
+| **format**       | one of the enumerated values in [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) |
+| **access**       | one of the enumerated values in [SDL_TextureAccess](SDL_TextureAccess.md)     |
 | **w**            | the width of the texture in pixels                                         |
 | **h**            | the height of the texture in pixels                                        |
 
@@ -24,7 +24,7 @@ SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, Uint32 format, int access
 
 Returns a pointer to the created texture or NULL if no rendering context
 was active, the format was unsupported, or the width or height were out of
-range; call [SDL_GetError](SDL_GetError)() for more information.
+range; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -94,13 +94,11 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface.md)
+* [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties.md)
+* [SDL_DestroyTexture](SDL_DestroyTexture.md)
+* [SDL_QueryTexture](SDL_QueryTexture.md)
+* [SDL_UpdateTexture](SDL_UpdateTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryRender](CategoryRender.md)

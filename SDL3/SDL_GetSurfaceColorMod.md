@@ -16,7 +16,7 @@ int SDL_GetSurfaceColorMod(SDL_Surface *surface,
 
 |                 |                                                        |
 | --------------- | ------------------------------------------------------ |
-| **surface**     | the [SDL_Surface](SDL_Surface) structure to query      |
+| **surface**     | the [SDL_Surface](SDL_Surface.md) structure to query      |
 | **r**           | a pointer filled in with the current red color value   |
 | **g**           | a pointer filled in with the current green color value |
 | **b**           | a pointer filled in with the current blue color value  |
@@ -24,7 +24,7 @@ int SDL_GetSurfaceColorMod(SDL_Surface *surface,
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -32,10 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
-* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
+* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod.md)
+* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

@@ -14,7 +14,7 @@ const char* SDL_GetGamepadName(SDL_Gamepad *gamepad);
 
 |                 |                                                                                  |
 | --------------- | -------------------------------------------------------------------------------- |
-| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad)() |
+| **gamepad**     | a gamepad identifier previously returned by [SDL_OpenGamepad](SDL_OpenGamepad.md)() |
 
 ## Return Value
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetGamepadInstanceName](SDL_GetGamepadInstanceName)
-* [SDL_OpenGamepad](SDL_OpenGamepad)
+* [SDL_GetGamepadInstanceName](SDL_GetGamepadInstanceName.md)
+* [SDL_OpenGamepad](SDL_OpenGamepad.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

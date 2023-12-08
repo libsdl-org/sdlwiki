@@ -23,7 +23,7 @@ Returns the name of the audio device, or NULL on error.
 ## Remarks
 
 The string returned by this function is UTF-8 encoded. The caller should
-call [SDL_free](SDL_free) on the return value when done with it.
+call [SDL_free](SDL_free.md) on the return value when done with it.
 
 ## Thread Safety
 
@@ -45,11 +45,9 @@ for (i = 0; i < count; ++i) {
 
 ## Related Functions
 
-* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
-* [SDL_GetAudioCaptureDevices](SDL_GetAudioCaptureDevices)
-* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
+* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices.md)
+* [SDL_GetAudioCaptureDevices](SDL_GetAudioCaptureDevices.md)
+* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

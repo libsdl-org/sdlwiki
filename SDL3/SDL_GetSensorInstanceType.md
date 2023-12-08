@@ -18,7 +18,7 @@ SDL_SensorType SDL_GetSensorInstanceType(SDL_SensorID instance_id);
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType), or
+Returns the [SDL_SensorType](SDL_SensorType.md), or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `instance_id` is not valid
 
 ## Version
@@ -26,5 +26,4 @@ Returns the [SDL_SensorType](SDL_SensorType), or
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

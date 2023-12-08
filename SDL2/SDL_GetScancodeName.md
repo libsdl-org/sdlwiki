@@ -14,7 +14,7 @@ const char* SDL_GetScancodeName(SDL_Scancode scancode);
 
 |                  |                                                   |
 | ---------------- | ------------------------------------------------- |
-| **scancode**     | the desired [SDL_Scancode](SDL_Scancode) to query |
+| **scancode**     | the desired [SDL_Scancode](SDL_Scancode.md) to query |
 
 ## Return Value
 
@@ -23,7 +23,7 @@ have a name this function returns an empty string ("").
 
 ## Remarks
 
-See [SDL_Scancode](SDL_Scancode) for details.
+See [SDL_Scancode](SDL_Scancode.md) for details.
 
 **Warning**: The returned name is by design not stable across platforms,
 e.g. the name for [`SDL_SCANCODE_LGUI`](SDL_SCANCODE_LGUI) is "Left GUI"
@@ -41,9 +41,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
-* [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey.md)
+* [SDL_GetScancodeFromName](SDL_GetScancodeFromName.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

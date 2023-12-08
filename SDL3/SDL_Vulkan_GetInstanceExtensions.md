@@ -23,8 +23,8 @@ Returns An array of extension name strings on success, NULL on error.
 ## Remarks
 
 This should be called after either calling
-[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() or creating an
-[SDL_Window](SDL_Window) with the [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN)
+[SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary.md)() or creating an
+[SDL_Window](SDL_Window.md) with the [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN)
 flag.
 
 On return, the variable pointed to by `pCount` will be set to the number of
@@ -66,9 +66,7 @@ VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
 
 ## Related Functions
 
-* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryVulkan](CategoryVulkan.md)

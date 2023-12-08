@@ -23,7 +23,7 @@ Returns the number of bytes (not samples!) of queued audio.
 ## Remarks
 
 For playback devices: this is the number of bytes that have been queued for
-playback with [SDL_QueueAudio](SDL_QueueAudio)(), but have not yet been
+playback with [SDL_QueueAudio](SDL_QueueAudio.md)(), but have not yet been
 sent to the hardware.
 
 Once we've sent it to the hardware, this function can not decide the exact
@@ -40,7 +40,7 @@ application-supplied callback; calling this function on such a device
 always returns 0. You have to use the audio callback or queue audio, but
 not both.
 
-You should not call [SDL_LockAudio](SDL_LockAudio)() on the device before
+You should not call [SDL_LockAudio](SDL_LockAudio.md)() on the device before
 querying; SDL handles locking internally for this function.
 
 ## Version
@@ -49,10 +49,9 @@ This function is available since SDL 2.0.4.
 
 ## Related Functions
 
-* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
-* [SDL_QueueAudio](SDL_QueueAudio)
-* [SDL_DequeueAudio](SDL_DequeueAudio)
+* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio.md)
+* [SDL_QueueAudio](SDL_QueueAudio.md)
+* [SDL_DequeueAudio](SDL_DequeueAudio.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

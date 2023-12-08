@@ -17,21 +17,21 @@ SDL_TimerID SDL_AddTimer(Uint32 interval,
 |                  |                                                                                                   |
 | ---------------- | ------------------------------------------------------------------------------------------------- |
 | **interval**     | the timer delay, in milliseconds, passed to `callback`                                            |
-| **callback**     | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
+| **callback**     | the [SDL_TimerCallback](SDL_TimerCallback.md) function to call when the specified `interval` elapses |
 | **param**        | a pointer that is passed to `callback`                                                            |
 
 ## Return Value
 
 Returns a timer ID or 0 if an error occurs; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 If you use this function, you must pass [`SDL_INIT_TIMER`](SDL_INIT_TIMER)
-to [SDL_Init](SDL_Init)().
+to [SDL_Init](SDL_Init.md)().
 
 The callback function is passed the current timer interval and the user
-supplied parameter from the [SDL_AddTimer](SDL_AddTimer)() call and should
+supplied parameter from the [SDL_AddTimer](SDL_AddTimer.md)() call and should
 return the next timer interval. If the value returned from the callback is
 0, the timer is canceled.
 
@@ -43,8 +43,8 @@ callback. For example, if the callback took 250 ms to execute and returned
 iteration.
 
 Timing may be inexact due to OS scheduling. Be sure to note the current
-time with [SDL_GetTicks](SDL_GetTicks)() or
-[SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)() in case your
+time with [SDL_GetTicks](SDL_GetTicks.md)() or
+[SDL_GetPerformanceCounter](SDL_GetPerformanceCounter.md)() in case your
 callback needs to adjust for variances.
 
 ## Version
@@ -53,7 +53,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_RemoveTimer](SDL_RemoveTimer)
+* [SDL_RemoveTimer](SDL_RemoveTimer.md)
 
 
 ## Example
@@ -64,7 +64,7 @@ This function is available since SDL 2.0.0.
 Uint32 callback(Uint32 interval, void* name) {
 
     printf("Hello %s!\n", static_cast<char*>(name));
-       
+
     return 0;
 }
 
@@ -92,5 +92,4 @@ SDL_RemoveTimer(timerID);
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -21,7 +21,7 @@ int SDL_GL_BindTexture(SDL_Texture *texture, float *texw, float *texh);
 ## Return Value
 
 Returns 0 on success, or -1 if the operation is not supported; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -35,9 +35,9 @@ these values will actually be the pixel width and height used to create the
 texture, so this factor needs to be taken into account when providing
 texture coordinates to OpenGL.
 
-You need a renderer to create an [SDL_Texture](SDL_Texture), therefore you
+You need a renderer to create an [SDL_Texture](SDL_Texture.md), therefore you
 can only use this function with an implicit OpenGL context from
-[SDL_CreateRenderer](SDL_CreateRenderer)(), not with your own OpenGL
+[SDL_CreateRenderer](SDL_CreateRenderer.md)(), not with your own OpenGL
 context. If you need control over your OpenGL context, you need to write
 your own texture-loading methods.
 
@@ -51,9 +51,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
-* [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
+* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent.md)
+* [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

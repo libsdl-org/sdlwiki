@@ -36,12 +36,11 @@ have one tag per channel.
 You may not specify MAX_CHANNEL_POST for a channel.
 
 Note that this returns success and failure in the _opposite_ way from
-[Mix_GroupChannel](Mix_GroupChannel)(). We regret the API design mistake.
+[Mix_GroupChannel](Mix_GroupChannel.md)(). We regret the API design mistake.
 
 ## Version
 
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

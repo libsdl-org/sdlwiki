@@ -20,19 +20,19 @@ SDL_Surface* SDL_CreateRGBSurfaceWithFormatFrom
 | **height**     | the height of the surface                                                          |
 | **depth**      | the depth of the surface in bits                                                   |
 | **pitch**      | the pitch of the surface in bytes                                                  |
-| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
+| **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum.md) for the new surface's pixel format. |
 
 ## Return Value
 
-Returns the new [SDL_Surface](SDL_Surface) structure that is created or
-NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
+Returns the new [SDL_Surface](SDL_Surface.md) structure that is created or
+NULL if it fails; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function operates mostly like
-[SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)(), except instead of
+[SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom.md)(), except instead of
 providing pixel color masks, you provide it with a predefined format from
-[SDL_PixelFormatEnum](SDL_PixelFormatEnum).
+[SDL_PixelFormatEnum](SDL_PixelFormatEnum.md).
 
 No copy is made of the pixel data. Pixel data is not managed automatically;
 you must free the surface before you free the pixel data.
@@ -43,10 +43,9 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
-* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
-* [SDL_FreeSurface](SDL_FreeSurface)
+* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom.md)
+* [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat.md)
+* [SDL_FreeSurface](SDL_FreeSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -20,7 +20,7 @@ The returned value points to static, internal, read-only memory. Do not
 modify or free it. The pointer remains valid as long as the library is
 loaded by the system.
 
-This function can be safely called before [SDLNet_Init](SDLNet_Init)().
+This function can be safely called before [SDLNet_Init](SDLNet_Init.md)().
 
 ## Thread Safety
 
@@ -31,5 +31,4 @@ It is safe to call this function from any thread.
 This function is available since SDL_Net 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

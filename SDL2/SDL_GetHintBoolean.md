@@ -28,10 +28,8 @@ This function is available since SDL 2.0.5.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHint](SDL_SetHint)
+* [SDL_GetHint](SDL_GetHint.md)
+* [SDL_SetHint](SDL_SetHint.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryHints](CategoryHints.md)

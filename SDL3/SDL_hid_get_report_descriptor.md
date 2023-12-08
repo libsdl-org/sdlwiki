@@ -14,14 +14,14 @@ int SDL_hid_get_report_descriptor(SDL_hid_device *dev, unsigned char *buf, size_
 
 |                  |                                                               |
 | ---------------- | ------------------------------------------------------------- |
-| **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open)(). |
+| **dev**          | A device handle returned from [SDL_hid_open](SDL_hid_open.md)(). |
 | **buf**          | The buffer to copy descriptor into.                           |
 | **buf_size**     | The size of the buffer in bytes.                              |
 
 ## Return Value
 
 Returns the number of bytes actually copied, or -1 on error; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -33,5 +33,4 @@ to. The recommended size for a preallocated buffer is 4096 bytes.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,12 +14,12 @@ int SDL_PauseAudioDevice(SDL_AudioDeviceID dev);
 
 |             |                                                                 |
 | ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -36,7 +36,7 @@ audio streams. This might be useful while a game is paused, or a level is
 loading, etc.
 
 Physical devices can not be paused or unpaused, only logical devices
-created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() can be.
+created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() can be.
 
 ## Thread Safety
 
@@ -57,10 +57,8 @@ SDL_PlayAudioDevice(devid);  // audio callback starts running again.
 
 ## Related Functions
 
-* [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
-* [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
+* [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice.md)
+* [SDL_AudioDevicePaused](SDL_AudioDevicePaused.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryAudio](CategoryAudio.md)

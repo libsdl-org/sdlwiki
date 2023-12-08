@@ -20,16 +20,15 @@ void* SDL_GetWindowICCProfile(SDL_Window *window, size_t *size);
 ## Return Value
 
 Returns the raw ICC profile data on success or NULL on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
-Data returned should be freed with [SDL_free](SDL_free).
+Data returned should be freed with [SDL_free](SDL_free.md).
 
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

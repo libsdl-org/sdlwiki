@@ -19,14 +19,14 @@ SDL_Joystick* SDL_JoystickOpen(int device_index);
 ## Return Value
 
 Returns a joystick identifier or NULL if an error occurred; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 The `device_index` argument refers to the N'th joystick presently
 recognized by SDL on the system. It is **NOT** the same as the instance ID
 used to identify the joystick in future events. See
-[SDL_JoystickInstanceID](SDL_JoystickInstanceID)() for more details about
+[SDL_JoystickInstanceID](SDL_JoystickInstanceID.md)() for more details about
 instance IDs.
 
 The joystick subsystem must be initialized before a joystick can be opened
@@ -38,9 +38,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickClose](SDL_JoystickClose)
-* [SDL_JoystickInstanceID](SDL_JoystickInstanceID)
+* [SDL_JoystickClose](SDL_JoystickClose.md)
+* [SDL_JoystickInstanceID](SDL_JoystickInstanceID.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

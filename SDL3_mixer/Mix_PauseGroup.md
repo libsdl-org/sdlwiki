@@ -26,8 +26,8 @@ Pausing a channel will prevent further playback of the assigned chunk but
 will maintain the chunk's current mixing position. When resumed, this
 channel will continue to mix the chunk where it left off.
 
-A paused channel can be resumed by calling [Mix_Resume](Mix_Resume)() or
-[Mix_ResumeGroup](Mix_ResumeGroup)().
+A paused channel can be resumed by calling [Mix_Resume](Mix_Resume.md)() or
+[Mix_ResumeGroup](Mix_ResumeGroup.md)().
 
 A paused channel with an expiration will not expire while paused (the
 expiration countdown will be adjusted once resumed).
@@ -42,5 +42,4 @@ The default tag for a channel is -1.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

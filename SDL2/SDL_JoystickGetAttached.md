@@ -18,8 +18,8 @@ SDL_bool SDL_JoystickGetAttached(SDL_Joystick *joystick);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the joystick has been opened,
-[SDL_FALSE](SDL_FALSE) if it has not; call [SDL_GetError](SDL_GetError)()
+Returns [SDL_TRUE](SDL_TRUE.md) if the joystick has been opened,
+[SDL_FALSE](SDL_FALSE.md) if it has not; call [SDL_GetError](SDL_GetError.md)()
 for more information.
 
 ## Version
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickClose](SDL_JoystickClose)
-* [SDL_JoystickOpen](SDL_JoystickOpen)
+* [SDL_JoystickClose](SDL_JoystickClose.md)
+* [SDL_JoystickOpen](SDL_JoystickOpen.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

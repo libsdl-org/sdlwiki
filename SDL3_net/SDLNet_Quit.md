@@ -17,10 +17,10 @@ program.
 
 It is safe to call this multiple times; the library will only deinitialize
 once, when this function is called the same number of times as
-[SDLNet_Init](SDLNet_Init) was successfully called.
+[SDLNet_Init](SDLNet_Init.md) was successfully called.
 
 Once you have successfully deinitialized the library, it is safe to call
-[SDLNet_Init](SDLNet_Init) to reinitialize it for further use.
+[SDLNet_Init](SDLNet_Init.md) to reinitialize it for further use.
 
 ## Thread Safety
 
@@ -32,8 +32,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_Quit](SDLNet_Quit)
+* [SDLNet_Quit](SDLNet_Quit.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

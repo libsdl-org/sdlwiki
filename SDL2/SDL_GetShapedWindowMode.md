@@ -21,10 +21,10 @@ int SDL_GetShapedWindowMode(SDL_Window *window,SDL_WindowShapeMode *shape_mode);
 
 Return 0 if the window has a shape and, provided shape_mode was not NULL,
 shape_mode has been filled with the mode data,
-[SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW) if the
-[SDL_Window](SDL_Window) given is not a shaped window, or
-[SDL_WINDOW_LACKS_SHAPE](SDL_WINDOW_LACKS_SHAPE) if the
-[SDL_Window](SDL_Window) given is a shapeable window currently lacking a
+[SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW.md) if the
+[SDL_Window](SDL_Window.md) given is not a shaped window, or
+[SDL_WINDOW_LACKS_SHAPE](SDL_WINDOW_LACKS_SHAPE.md) if the
+[SDL_Window](SDL_Window.md) given is a shapeable window currently lacking a
 shape.
 
 ## Version
@@ -33,9 +33,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_WindowShapeMode](SDL_WindowShapeMode)
-* [SDL_SetWindowShape](SDL_SetWindowShape)
+* [SDL_WindowShapeMode](SDL_WindowShapeMode.md)
+* [SDL_SetWindowShape](SDL_SetWindowShape.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

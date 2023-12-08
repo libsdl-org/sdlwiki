@@ -19,7 +19,7 @@ void SDL_SetGamepadEventsEnabled(SDL_bool enabled);
 ## Remarks
 
 If gamepad events are disabled, you must call
-[SDL_UpdateGamepads](SDL_UpdateGamepads)() yourself and check the state of
+[SDL_UpdateGamepads](SDL_UpdateGamepads.md)() yourself and check the state of
 the gamepad when you want gamepad information.
 
 ## Version
@@ -28,8 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled)
+* [SDL_GamepadEventsEnabled](SDL_GamepadEventsEnabled.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

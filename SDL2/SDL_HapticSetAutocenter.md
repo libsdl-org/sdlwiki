@@ -15,20 +15,20 @@ int SDL_HapticSetAutocenter(SDL_Haptic * haptic,
 
 |                    |                                                             |
 | ------------------ | ----------------------------------------------------------- |
-| **haptic**         | the [SDL_Haptic](SDL_Haptic) device to set autocentering on |
+| **haptic**         | the [SDL_Haptic](SDL_Haptic.md) device to set autocentering on |
 | **autocenter**     | value to set autocenter to (0-100)                          |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 Autocenter should be between 0 and 100. Setting it to 0 will disable
 autocentering.
 
-Device must support the [SDL_HAPTIC_AUTOCENTER](SDL_HAPTIC_AUTOCENTER)
+Device must support the [SDL_HAPTIC_AUTOCENTER](SDL_HAPTIC_AUTOCENTER.md)
 feature.
 
 ## Version
@@ -37,8 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_HapticQuery](SDL_HapticQuery)
+* [SDL_HapticQuery](SDL_HapticQuery.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

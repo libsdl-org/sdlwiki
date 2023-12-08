@@ -26,8 +26,8 @@ new one), or -1 if the set is already full.
 
 Generally you don't want to call this generic function, but rather the
 specific, inline function that wraps it:
-[SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket)() or
-[SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket)().
+[SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket.md)() or
+[SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket.md)().
 
 This function will fail if you add a socket to the set when the set already
 has its maximum number of sockets added, but otherwise it will always
@@ -42,13 +42,12 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket)
-* [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket)
-* [SDLNet_DelSocket](SDLNet_DelSocket)
-* [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket)
-* [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket)
-* [SDLNet_CheckSockets](SDLNet_CheckSockets)
+* [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket.md)
+* [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket.md)
+* [SDLNet_DelSocket](SDLNet_DelSocket.md)
+* [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket.md)
+* [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket.md)
+* [SDLNet_CheckSockets](SDLNet_CheckSockets.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

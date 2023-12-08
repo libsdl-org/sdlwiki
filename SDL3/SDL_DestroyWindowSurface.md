@@ -19,7 +19,7 @@ int SDL_DestroyWindowSurface(SDL_Window *window);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -27,9 +27,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetWindowSurface](SDL_GetWindowSurface)
-* [SDL_HasWindowSurface](SDL_HasWindowSurface)
+* [SDL_GetWindowSurface](SDL_GetWindowSurface.md)
+* [SDL_HasWindowSurface](SDL_HasWindowSurface.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

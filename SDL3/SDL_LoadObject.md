@@ -19,7 +19,7 @@ void* SDL_LoadObject(const char *sofile);
 ## Return Value
 
 Returns an opaque pointer to the object handle or NULL if there was an
-error; call [SDL_GetError](SDL_GetError)() for more information.
+error; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -36,10 +36,8 @@ SDL_LoadObject("mylib.so");
 
 ## Related Functions
 
-* [SDL_LoadFunction](SDL_LoadFunction)
-* [SDL_UnloadObject](SDL_UnloadObject)
+* [SDL_LoadFunction](SDL_LoadFunction.md)
+* [SDL_UnloadObject](SDL_UnloadObject.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySharedObject](CategorySharedObject.md)

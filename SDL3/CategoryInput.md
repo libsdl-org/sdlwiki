@@ -17,7 +17,7 @@ Alternate Include File:  [http://hg.libsdl.org/SDL/file/default/include/SDL_mous
 
 ## Introduction
 
-This category contains functions for lowlevel SDL input device handling.  
+This category contains functions for lowlevel SDL input device handling.
 
 This covers individual devices, not the system cursor. If you just want to know when the user moves the pointer somewhere in your window, this is NOT the API you want. This one handles things like multi-touch, drawing tablets, and multiple, separate mice.
 
@@ -36,10 +36,10 @@ The other API is in [http://hg.libsdl.org/SDL/file/default/include/SDL_mouse.h S
 <<FullSearchCached(category:CategoryInput -CategoryEnum -CategoryStruct)>>
 
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_GetInputDeviceName](SDL_GetInputDeviceName)
-- [SDL_GetNumInputDevices](SDL_GetNumInputDevices)
-- [SDL_IsDeviceDisconnected](SDL_IsDeviceDisconnected)
-- [SDL_RedetectInputDevices](SDL_RedetectInputDevices)
+- [SDL_GetInputDeviceName](SDL_GetInputDeviceName.md)
+- [SDL_GetNumInputDevices](SDL_GetNumInputDevices.md)
+- [SDL_IsDeviceDisconnected](SDL_IsDeviceDisconnected.md)
+- [SDL_RedetectInputDevices](SDL_RedetectInputDevices.md)
 <!-- END CATEGORY LIST -->
 ----
-[CategoryCategory](CategoryCategory), [CategoryDraft](CategoryDraft)
+[CategoryCategory](CategoryCategory.md), [CategoryDraft](CategoryDraft.md)

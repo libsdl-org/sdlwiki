@@ -12,13 +12,13 @@ SDL_AudioStatus SDL_GetAudioStatus(void);
 
 ## Return Value
 
-Returns the [SDL_AudioStatus](SDL_AudioStatus) of the audio device opened
-by [SDL_OpenAudio](SDL_OpenAudio)().
+Returns the [SDL_AudioStatus](SDL_AudioStatus.md) of the audio device opened
+by [SDL_OpenAudio](SDL_OpenAudio.md)().
 
 ## Remarks
 
 New programs might want to use
-[SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus)() instead. This
+[SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus.md)() instead. This
 function is equivalent to calling...
 
 ```c
@@ -26,7 +26,7 @@ SDL_GetAudioDeviceStatus(1);
 ```
 
 ...and is only useful if you used the legacy
-[SDL_OpenAudio](SDL_OpenAudio)() function.
+[SDL_OpenAudio](SDL_OpenAudio.md)() function.
 
 ## Version
 
@@ -34,8 +34,7 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus)
+* [SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

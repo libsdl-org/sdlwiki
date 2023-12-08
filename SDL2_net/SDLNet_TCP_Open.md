@@ -26,7 +26,7 @@ If `ip->host` is INADDR_NONE or INADDR_ANY, this creates a local server
 socket on the given port, otherwise a TCP connection to the remote host and
 port is attempted. The address passed in should already be swapped to
 network byte order (addresses returned from
-[SDLNet_ResolveHost](SDLNet_ResolveHost)() are already in the correct
+[SDLNet_ResolveHost](SDLNet_ResolveHost.md)() are already in the correct
 form).
 
 ## Version
@@ -35,10 +35,9 @@ This function is available since SDL_net 2.0.0.
 
 ## Related Functions
 
-* [SDLNet_TCP_Close](SDLNet_TCP_Close)
-* [SDLNet_TCP_OpenServer](SDLNet_TCP_OpenServer)
-* [SDLNet_TCP_OpenClient](SDLNet_TCP_OpenClient)
+* [SDLNet_TCP_Close](SDLNet_TCP_Close.md)
+* [SDLNet_TCP_OpenServer](SDLNet_TCP_OpenServer.md)
+* [SDLNet_TCP_OpenClient](SDLNet_TCP_OpenClient.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

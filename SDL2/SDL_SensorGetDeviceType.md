@@ -18,7 +18,7 @@ SDL_SensorType SDL_SensorGetDeviceType(int device_index);
 
 ## Return Value
 
-Returns the [SDL_SensorType](SDL_SensorType), or
+Returns the [SDL_SensorType](SDL_SensorType.md), or
 [`SDL_SENSOR_INVALID`](SDL_SENSOR_INVALID) if `device_index` is out of
 range.
 
@@ -27,5 +27,4 @@ range.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

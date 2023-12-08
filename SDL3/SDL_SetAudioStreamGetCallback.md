@@ -28,7 +28,7 @@ This callback is called _before_ data is obtained from the stream, giving
 the callback the chance to add more on-demand.
 
 The callback can (optionally) call
-[SDL_PutAudioStreamData](SDL_PutAudioStreamData)() to add more audio to the
+[SDL_PutAudioStreamData](SDL_PutAudioStreamData.md)() to add more audio to the
 stream during this call; if needed, the request that triggered this
 callback will obtain the new data immediately.
 
@@ -62,8 +62,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
+* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -23,7 +23,7 @@ int SDL_SetWindowHitTest(SDL_Window * window,
 ## Return Value
 
 Returns 0 on success or -1 on error (including unsupported); call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -61,5 +61,4 @@ devoid of allocations, etc.
 This function is available since SDL 2.0.4.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -14,17 +14,17 @@ int SDL_UnpauseAudioDevice(SDL_AudioDeviceID dev);
 
 |             |                                                                 |
 | ----------- | --------------------------------------------------------------- |
-| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() |
+| **dev**     | a device opened by [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() |
 
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function unpauses audio processing for a given device that has
-previously been paused with [SDL_PauseAudioDevice](SDL_PauseAudioDevice)().
+previously been paused with [SDL_PauseAudioDevice](SDL_PauseAudioDevice.md)().
 Once unpaused, any bound audio streams will begin to progress again, and
 audio can be generated.
 
@@ -33,7 +33,7 @@ has to bind a stream before any audio will flow. Unpausing an unpaused
 device is a legal no-op.
 
 Physical devices can not be paused or unpaused, only logical devices
-created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice)() can be.
+created through [SDL_OpenAudioDevice](SDL_OpenAudioDevice.md)() can be.
 
 ## Thread Safety
 
@@ -45,9 +45,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_UnpauseAudioDevice](SDL_UnpauseAudioDevice)
-* [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)
+* [SDL_UnpauseAudioDevice](SDL_UnpauseAudioDevice.md)
+* [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

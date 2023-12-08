@@ -18,7 +18,7 @@ void SDL_GetRGBA(Uint32 pixel,
 |                |                                                                                    |
 | -------------- | ---------------------------------------------------------------------------------- |
 | **pixel**      | a pixel value                                                                      |
-| **format**     | an [SDL_PixelFormat](SDL_PixelFormat) structure describing the format of the pixel |
+| **format**     | an [SDL_PixelFormat](SDL_PixelFormat.md) structure describing the format of the pixel |
 | **r**          | a pointer filled in with the red component                                         |
 | **g**          | a pointer filled in with the green component                                       |
 | **b**          | a pointer filled in with the blue component                                        |
@@ -40,10 +40,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetRGB](SDL_GetRGB)
-* [SDL_MapRGB](SDL_MapRGB)
-* [SDL_MapRGBA](SDL_MapRGBA)
+* [SDL_GetRGB](SDL_GetRGB.md)
+* [SDL_MapRGB](SDL_MapRGB.md)
+* [SDL_MapRGBA](SDL_MapRGBA.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

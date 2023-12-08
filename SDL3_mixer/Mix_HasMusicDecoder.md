@@ -25,7 +25,7 @@ otherwise.
 
 This result can change between builds AND runs of the program, if external
 libraries that add functionality become available. You must successfully
-call [Mix_OpenAudio](Mix_OpenAudio)() before calling this function, as
+call [Mix_OpenAudio](Mix_OpenAudio.md)() before calling this function, as
 decoders are activated at device open time.
 
 Decoder names are arbitrary but also obvious, so you have to know what
@@ -38,9 +38,8 @@ This function is available since SDL_mixer 3.0.0
 
 ## Related Functions
 
-* [Mix_GetNumMusicDecoders](Mix_GetNumMusicDecoders)
-* [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
+* [Mix_GetNumMusicDecoders](Mix_GetNumMusicDecoders.md)
+* [Mix_GetMusicDecoder](Mix_GetMusicDecoder.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

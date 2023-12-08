@@ -36,16 +36,16 @@ packets are available, so you should check for a successful return and a
 non-NULL value in `*dgram` to decide if a new packet is available.
 
 You must pass received packets to
-[SDLNet_DestroyDatagram](SDLNet_DestroyDatagram) when you are done with
+[SDLNet_DestroyDatagram](SDLNet_DestroyDatagram.md) when you are done with
 them. If you want to save the sender's address past this time, it is safe
-to call [SDLNet_RefAddress](SDLNet_RefAddress)() on the address and hold
+to call [SDLNet_RefAddress](SDLNet_RefAddress.md)() on the address and hold
 onto the pointer, so long as you call
-[SDLNet_UnrefAddress](SDLNet_UnrefAddress)() on it when you are done with
+[SDLNet_UnrefAddress](SDLNet_UnrefAddress.md)() on it when you are done with
 it.
 
 Since datagrams can arrive from any address or port on the network without
 prior warning, this information is available in the
-[SDLNet_Datagram](SDLNet_Datagram) object that is provided by this
+[SDLNet_Datagram](SDLNet_Datagram.md) object that is provided by this
 function, and this is the only way to know who to reply to. Even if you
 aren't acting as a "server," packets can still arrive at your socket if
 someone sends one.
@@ -69,9 +69,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## Related Functions
 
-* [SDLNet_SendDatagram](SDLNet_SendDatagram)
-* [SDLNet_DestroyDatagram](SDLNet_DestroyDatagram)
+* [SDLNet_SendDatagram](SDLNet_SendDatagram.md)
+* [SDLNet_DestroyDatagram](SDLNet_DestroyDatagram.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

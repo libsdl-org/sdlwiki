@@ -19,7 +19,7 @@ int SDL_OpenURL(const char *url);
 ## Return Value
 
 Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -47,7 +47,5 @@ test it on every platform you target.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHeader](CategoryHeader)
+[CategoryAPI](CategoryAPI.md), [CategoryHeader](CategoryHeader.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

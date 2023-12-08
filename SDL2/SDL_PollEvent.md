@@ -14,7 +14,7 @@ int SDL_PollEvent(SDL_Event * event);
 
 |               |                                                                                               |
 | ------------- | --------------------------------------------------------------------------------------------- |
-| **event**     | the [SDL_Event](SDL_Event) structure to be filled with the next event from the queue, or NULL |
+| **event**     | the [SDL_Event](SDL_Event.md) structure to be filled with the next event from the queue, or NULL |
 
 ## Return Value
 
@@ -23,17 +23,17 @@ Returns 1 if there is a pending event or 0 if there are none available.
 ## Remarks
 
 If `event` is not NULL, the next event is removed from the queue and stored
-in the [SDL_Event](SDL_Event) structure pointed to by `event`. The 1
+in the [SDL_Event](SDL_Event.md) structure pointed to by `event`. The 1
 returned refers to this event, immediately stored in the SDL Event
 structure -- not an event to follow.
 
 If `event` is NULL, it simply returns 1 if there is an event in the queue,
 but will not remove it from the queue.
 
-As this function may implicitly call [SDL_PumpEvents](SDL_PumpEvents)(),
+As this function may implicitly call [SDL_PumpEvents](SDL_PumpEvents.md)(),
 you can only call this function in the thread that set the video mode.
 
-[SDL_PollEvent](SDL_PollEvent)() is the favored way of receiving system
+[SDL_PollEvent](SDL_PollEvent.md)() is the favored way of receiving system
 events since it can be done from the main loop and does not suspend the
 main loop while waiting on an event to be posted.
 
@@ -57,13 +57,12 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetEventFilter](SDL_GetEventFilter)
-* [SDL_PeepEvents](SDL_PeepEvents)
-* [SDL_PushEvent](SDL_PushEvent)
-* [SDL_SetEventFilter](SDL_SetEventFilter)
-* [SDL_WaitEvent](SDL_WaitEvent)
-* [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+* [SDL_GetEventFilter](SDL_GetEventFilter.md)
+* [SDL_PeepEvents](SDL_PeepEvents.md)
+* [SDL_PushEvent](SDL_PushEvent.md)
+* [SDL_SetEventFilter](SDL_SetEventFilter.md)
+* [SDL_WaitEvent](SDL_WaitEvent.md)
+* [SDL_WaitEventTimeout](SDL_WaitEventTimeout.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

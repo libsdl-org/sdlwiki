@@ -15,18 +15,18 @@ SDL_Surface* SDL_LoadBMP_RW(SDL_RWops *src, SDL_bool freesrc);
 |                 |                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **src**         | the data stream for the surface                                                                                     |
-| **freesrc**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_RWclose](SDL_RWclose)() on `src` before returning, even in the case of an error |
+| **freesrc**     | if [SDL_TRUE](SDL_TRUE.md), calls [SDL_RWclose](SDL_RWclose.md)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
-Returns a pointer to a new [SDL_Surface](SDL_Surface) structure or NULL if
-there was an error; call [SDL_GetError](SDL_GetError)() for more
+Returns a pointer to a new [SDL_Surface](SDL_Surface.md) structure or NULL if
+there was an error; call [SDL_GetError](SDL_GetError.md)() for more
 information.
 
 ## Remarks
 
 The new surface should be freed with
-[SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a
+[SDL_DestroySurface](SDL_DestroySurface.md)(). Not doing so will result in a
 memory leak.
 
 ## Version
@@ -58,11 +58,9 @@ SDL_DestroySurface(image);
 
 ## Related Functions
 
-* [SDL_DestroySurface](SDL_DestroySurface)
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
+* [SDL_DestroySurface](SDL_DestroySurface.md)
+* [SDL_LoadBMP](SDL_LoadBMP.md)
+* [SDL_SaveBMP_RW](SDL_SaveBMP_RW.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
-
-
+[CategoryAPI](CategoryAPI.md), [CategorySurface](CategorySurface.md)

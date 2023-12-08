@@ -18,9 +18,9 @@ SDL_Scancode SDL_GetScancodeFromName(const char *name);
 
 ## Return Value
 
-Returns the [SDL_Scancode](SDL_Scancode), or
+Returns the [SDL_Scancode](SDL_Scancode.md), or
 [`SDL_SCANCODE_UNKNOWN`](SDL_SCANCODE_UNKNOWN) if the name wasn't
-recognized; call [SDL_GetError](SDL_GetError)() for more information.
+recognized; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Version
 
@@ -28,10 +28,9 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_GetKeyFromName](SDL_GetKeyFromName)
-* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
-* [SDL_GetScancodeName](SDL_GetScancodeName)
+* [SDL_GetKeyFromName](SDL_GetKeyFromName.md)
+* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey.md)
+* [SDL_GetScancodeName](SDL_GetScancodeName.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

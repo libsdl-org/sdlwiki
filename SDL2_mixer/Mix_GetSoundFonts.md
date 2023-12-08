@@ -22,8 +22,8 @@ function:
 - If the boolean _SDL hint_ `"SDL_FORCE_SOUNDFONTS"` is set, AND the
   `"SDL_SOUNDFONTS"` _environment variable_ is also set, this function will
   return that environment variable regardless of whether
-  [Mix_SetSoundFounts](Mix_SetSoundFounts)() was ever called.
-- Otherwise, if [Mix_SetSoundFonts](Mix_SetSoundFonts)() was successfully
+  [Mix_SetSoundFounts](Mix_SetSoundFounts.md)() was ever called.
+- Otherwise, if [Mix_SetSoundFonts](Mix_SetSoundFonts.md)() was successfully
   called with a non-NULL path, this function will return the string passed
   to that function.
 - Otherwise, if the `"SDL_SOUNDFONTS"` variable is set, this function will
@@ -40,5 +40,4 @@ should not be modified or free'd by the caller.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

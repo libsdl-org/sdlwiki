@@ -20,7 +20,7 @@ int SDL_ShowCursor(int toggle);
 
 Returns [`SDL_ENABLE`](SDL_ENABLE) if the cursor is shown, or
 [`SDL_DISABLE`](SDL_DISABLE) if the cursor is hidden, or a negative error
-code on failure; call [SDL_GetError](SDL_GetError)() for more information.
+code on failure; call [SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
@@ -38,9 +38,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_SetCursor](SDL_SetCursor)
+* [SDL_CreateCursor](SDL_CreateCursor.md)
+* [SDL_SetCursor](SDL_SetCursor.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

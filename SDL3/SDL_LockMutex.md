@@ -61,6 +61,4 @@ SDL_DestroyMutex(mutex);
 <!-- # End Mutex Example -->
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
-
-
+[CategoryAPI](CategoryAPI.md), [CategoryMutex](CategoryMutex.md)

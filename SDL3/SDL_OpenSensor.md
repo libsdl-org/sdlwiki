@@ -18,7 +18,7 @@ SDL_Sensor* SDL_OpenSensor(SDL_SensorID instance_id);
 
 ## Return Value
 
-Returns an [SDL_Sensor](SDL_Sensor) sensor object, or NULL if an error
+Returns an [SDL_Sensor](SDL_Sensor.md) sensor object, or NULL if an error
 occurred.
 
 ## Version
@@ -26,5 +26,4 @@ occurred.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

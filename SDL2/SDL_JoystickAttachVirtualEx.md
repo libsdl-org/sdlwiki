@@ -19,5 +19,4 @@ Returns the joystick's device index, or -1 if an error occurred.
 This function is available since SDL 2.24.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

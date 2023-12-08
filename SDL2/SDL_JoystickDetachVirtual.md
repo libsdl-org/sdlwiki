@@ -14,7 +14,7 @@ int SDL_JoystickDetachVirtual(int device_index);
 
 |                      |                                                                                           |
 | -------------------- | ----------------------------------------------------------------------------------------- |
-| **device_index**     | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual)() |
+| **device_index**     | a value previously returned from [SDL_JoystickAttachVirtual](SDL_JoystickAttachVirtual.md)() |
 
 ## Return Value
 
@@ -25,5 +25,4 @@ Returns 0 on success, or -1 if an error occurred.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

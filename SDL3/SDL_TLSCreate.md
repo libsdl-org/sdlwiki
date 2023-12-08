@@ -57,11 +57,9 @@ void *GetMyThreadData(void)
 
 ## Related Functions
 
-* [SDL_TLSGet](SDL_TLSGet)
-* [SDL_TLSSet](SDL_TLSSet)
+* [SDL_TLSGet](SDL_TLSGet.md)
+* [SDL_TLSSet](SDL_TLSSet.md)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI.md), [CategoryThread](CategoryThread.md), [CategoryDraft](CategoryDraft.md)
 <!-- #See the Style Guide for instructions on editing the footer. -->
-
-

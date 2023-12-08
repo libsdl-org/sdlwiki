@@ -18,13 +18,13 @@ SDL_hid_device * SDL_hid_open_path(const char *path);
 
 ## Return Value
 
-Returns a pointer to a [SDL_hid_device](SDL_hid_device) object on success
+Returns a pointer to a [SDL_hid_device](SDL_hid_device.md) object on success
 or NULL on failure.
 
 ## Remarks
 
 The path name be determined by calling
-[SDL_hid_enumerate](SDL_hid_enumerate)(), or a platform-specific path name
+[SDL_hid_enumerate](SDL_hid_enumerate.md)(), or a platform-specific path name
 can be used (eg: /dev/hidraw0 on Linux).
 
 ## Version
@@ -32,5 +32,4 @@ can be used (eg: /dev/hidraw0 on Linux).
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

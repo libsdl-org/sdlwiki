@@ -27,8 +27,7 @@ This function is available since SDL 2.0.18.
 
 ## Related Functions
 
-* [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
+* [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

@@ -19,14 +19,14 @@ void SDLNet_DestroyDatagram(SDLNet_Datagram *dgram);
 ## Remarks
 
 You must pass packets received through
-[SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram) to this function when you
+[SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram.md) to this function when you
 are done with them. This will free resources used by this packet and unref
-its [SDLNet_Address](SDLNet_Address).
+its [SDLNet_Address](SDLNet_Address.md).
 
 If you want to save the sender's address from the packet past this time, it
-is safe to call [SDLNet_RefAddress](SDLNet_RefAddress)() on the address and
+is safe to call [SDLNet_RefAddress](SDLNet_RefAddress.md)() on the address and
 hold onto its pointer, so long as you call
-[SDLNet_UnrefAddress](SDLNet_UnrefAddress)() on it when you are done with
+[SDLNet_UnrefAddress](SDLNet_UnrefAddress.md)() on it when you are done with
 it.
 
 Once you call this function, the datagram pointer becomes invalid and
@@ -41,5 +41,4 @@ It is safe to call this function from any thread.
 This function is available since SDL_Net 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

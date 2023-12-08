@@ -15,11 +15,11 @@ int SDL_SaveDollarTemplate(SDL_GestureID gestureId,SDL_RWops *dst);
 |                   |                                     |
 | ----------------- | ----------------------------------- |
 | **gestureId**     | a gesture id                        |
-| **dst**           | a [SDL_RWops](SDL_RWops) to save to |
+| **dst**           | a [SDL_RWops](SDL_RWops.md) to save to |
 
 ## Return Value
 
-Returns 1 on success or 0 on failure; call [SDL_GetError](SDL_GetError)()
+Returns 1 on success or 0 on failure; call [SDL_GetError](SDL_GetError.md)()
 for more information.
 
 ## Version
@@ -28,9 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## Related Functions
 
-* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
-* [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
+* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates.md)
+* [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

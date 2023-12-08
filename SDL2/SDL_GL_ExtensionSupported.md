@@ -19,8 +19,8 @@ SDL_bool SDL_GL_ExtensionSupported(const char
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the extension is supported,
-[SDL_FALSE](SDL_FALSE) otherwise.
+Returns [SDL_TRUE](SDL_TRUE.md) if the extension is supported,
+[SDL_FALSE](SDL_FALSE.md) otherwise.
 
 ## Remarks
 
@@ -40,5 +40,4 @@ every time you need to know.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)

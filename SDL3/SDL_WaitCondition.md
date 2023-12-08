@@ -20,13 +20,13 @@ int SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
 ## Return Value
 
 Returns 0 when it is signaled or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+[SDL_GetError](SDL_GetError.md)() for more information.
 
 ## Remarks
 
 This function unlocks the specified `mutex` and waits for another thread to
-call [SDL_SignalCondition](SDL_SignalCondition)() or
-[SDL_BroadcastCondition](SDL_BroadcastCondition)() on the condition
+call [SDL_SignalCondition](SDL_SignalCondition.md)() or
+[SDL_BroadcastCondition](SDL_BroadcastCondition.md)() on the condition
 variable `cond`. Once the condition variable is signaled, the mutex is
 re-locked and the function returns.
 
@@ -35,7 +35,7 @@ recursively (more than once) is not supported and leads to undefined
 behavior.
 
 This function is the equivalent of calling
-[SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)() with a time length
+[SDL_WaitConditionTimeout](SDL_WaitConditionTimeout.md)() with a time length
 of -1.
 
 ## Version
@@ -44,12 +44,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BroadcastCondition](SDL_BroadcastCondition)
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
-* [SDL_CreateCondition](SDL_CreateCondition)
-* [SDL_DestroyCondition](SDL_DestroyCondition)
+* [SDL_BroadcastCondition](SDL_BroadcastCondition.md)
+* [SDL_SignalCondition](SDL_SignalCondition.md)
+* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout.md)
+* [SDL_CreateCondition](SDL_CreateCondition.md)
+* [SDL_DestroyCondition](SDL_DestroyCondition.md)
 
 ----
-[CategoryAPI](CategoryAPI)
-
+[CategoryAPI](CategoryAPI.md)
