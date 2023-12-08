@@ -31,6 +31,8 @@ relative mouse motion even if the mouse is at the edge of the window.
 
 This function will flush any pending mouse motion.
 
+You will need to use [SDL_GetRelativeMouseState](https://wiki.libsdl.org/SDL2/SDL_GetRelativeMouseState) the retrieve the relative mouse coordinates.
+
 ## Version
 
 This function is available since SDL 2.0.0.
