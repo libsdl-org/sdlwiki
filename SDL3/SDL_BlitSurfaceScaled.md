@@ -33,6 +33,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_BlitSurface](SDL_BlitSurface)
+* [SDL_SetSurfaceScaleMode](SDL_SetSurfaceScaleMode)
 
 ----
 [CategoryAPI](CategoryAPI)
