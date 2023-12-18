@@ -27,14 +27,14 @@ int SDL_SoftStretch(SDL_Surface *src,
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-**WARNING**: Please use [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)()
-instead.
-
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
+* [SDL_SetSurfaceScaleMode](SDL_SetSurfaceScaleMode)
 
 ----
 [CategoryAPI](CategoryAPI)
