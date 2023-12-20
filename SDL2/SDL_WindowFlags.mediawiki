@@ -1,4 +1,3 @@
-
 = SDL_WindowFlags =
 An enumeration of window states.
 
@@ -54,7 +53,7 @@ An enumeration of window states.
 |window has mouse captured (unrelated to INPUT_GRABBED, >= SDL 2.0.4)
 |-
 |SDL_WINDOW_ALWAYS_ON_TOP
-| window should always be above others (X11 only, >= SDL 2.0.5)
+| window should always be above others (>= SDL 2.0.5)
 |-
 |SDL_WINDOW_SKIP_TASKBAR
 |window should not be added to the taskbar (X11 only, >= SDL 2.0.5)
