@@ -257,6 +257,7 @@
 - [SDL_GetGamepadSensorData](SDL_GetGamepadSensorData)
 - [SDL_GetGamepadSensorDataRate](SDL_GetGamepadSensorDataRate)
 - [SDL_GetGamepadSerial](SDL_GetGamepadSerial)
+- [SDL_GetGamepadSteamHandle](SDL_GetGamepadSteamHandle)
 - [SDL_GetGamepadStringForAxis](SDL_GetGamepadStringForAxis)
 - [SDL_GetGamepadStringForButton](SDL_GetGamepadStringForButton)
 - [SDL_GetGamepadStringForType](SDL_GetGamepadStringForType)
