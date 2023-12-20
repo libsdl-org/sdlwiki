@@ -146,6 +146,7 @@
 * [[SDL_GameControllerGetSensorDataRate]]
 * [[SDL_GameControllerGetSensorDataWithTimestamp]]
 * [[SDL_GameControllerGetSerial]]
+* [[SDL_GameControllerGetSteamHandle]]
 * [[SDL_GameControllerGetStringForAxis]]
 * [[SDL_GameControllerGetStringForButton]]
 * [[SDL_GameControllerGetTouchpadFinger]]
