@@ -371,6 +371,7 @@
 - [SDL_SetTextureUserData](SDL_SetTextureUserData)
 - [SDL_SetWindowData](SDL_SetWindowData)
 - [SDL_SetWindowShape](SDL_SetWindowShape)
+- [SDL_SoftStretchLinear](SDL_SoftStretchLinear)
 - [SDL_Surface](SDL_Surface)
 - [SDL_Swap16](SDL_Swap16)
 - [SDL_Swap32](SDL_Swap32)
