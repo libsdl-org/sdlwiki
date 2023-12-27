@@ -60,7 +60,7 @@ follow these rules:
 - ...only use letters, numbers, and spaces. Avoid punctuation like "Game
   Name 2: Bad Guy's Revenge!" ... "Game Name 2" is sufficient.
 
-The returned path is guaranteed to end with a path separator ('\' on
+The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
 The pointer returned is owned by the caller. Please call
