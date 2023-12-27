@@ -44,7 +44,7 @@ Supported values for the
 directory of the application as it is uncommon to store resources outside
 the executable. As such it is not a writable directory.
 
-The returned path is guaranteed to end with a path separator ('\' on
+The returned path is guaranteed to end with a path separator ('\\' on
 Windows, '/' on most other platforms).
 
 The pointer returned is owned by the caller. Please call
