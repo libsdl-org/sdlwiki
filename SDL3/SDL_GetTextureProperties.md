@@ -53,6 +53,9 @@ With the opengl renderer:
   the GLuint texture associated with the U plane of a YUV texture
 - [`SDL_PROPERTY_TEXTURE_OPENGL_TEXTURE_V_NUMBER`](SDL_PROPERTY_TEXTURE_OPENGL_TEXTURE_V_NUMBER):
   the GLuint texture associated with the V plane of a YUV texture
+- [`SDL_PROPERTY_TEXTURE_OPENGL_TEXTURE_TARGET`](SDL_PROPERTY_TEXTURE_OPENGL_TEXTURE_TARGET):
+  the GLenum for the texture target (`GL_TEXTURE_2D`,
+  `GL_TEXTURE_RECTANGLE_ARB`, etc)
 - [`SDL_PROPERTY_TEXTURE_OPENGL_TEX_W_FLOAT`](SDL_PROPERTY_TEXTURE_OPENGL_TEX_W_FLOAT):
   the texture coordinate width of the texture (0.0 - 1.0)
 - [`SDL_PROPERTY_TEXTURE_OPENGL_TEX_H_FLOAT`](SDL_PROPERTY_TEXTURE_OPENGL_TEX_H_FLOAT):
@@ -68,6 +71,9 @@ With the opengles2 renderer:
   the GLuint texture associated with the U plane of a YUV texture
 - [`SDL_PROPERTY_TEXTURE_OPENGLES2_TEXTURE_V_NUMBER`](SDL_PROPERTY_TEXTURE_OPENGLES2_TEXTURE_V_NUMBER):
   the GLuint texture associated with the V plane of a YUV texture
+- [`SDL_PROPERTY_TEXTURE_OPENGLES2_TEXTURE_TARGET`](SDL_PROPERTY_TEXTURE_OPENGLES2_TEXTURE_TARGET):
+  the GLenum for the texture target (`GL_TEXTURE_2D`,
+  `GL_TEXTURE_EXTERNAL_OES`, etc)
 
 ## Version
 
