@@ -245,7 +245,6 @@
 - [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
 - [SDL_GetSurfaceScaleMode](SDL_GetSurfaceScaleMode)
 - [SDL_GetTextureDXGIResource](SDL_GetTextureDXGIResource)
-- [SDL_GetTextureRenderer](SDL_GetTextureRenderer)
 - [SDL_GetTextureUserData](SDL_GetTextureUserData)
 - [SDL_GetTouchDevice](SDL_GetTouchDevice)
 - [SDL_GetTouchName](SDL_GetTouchName)
