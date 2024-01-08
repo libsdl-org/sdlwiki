@@ -89,25 +89,36 @@ These are additional supported properties on macOS:
   the `(__unsafe_unretained)` NSView associated with the window, defaults
   to `[window contentView]`
 
+These are additional supported properties on Wayland:
+
+- [`SDL_PROPERTY_WINDOW_CREATE_WAYLAND_SURFACE_ROLE_CUSTOM_BOOLEAN`](SDL_PROPERTY_WINDOW_CREATE_WAYLAND_SURFACE_ROLE_CUSTOM_BOOLEAN)
+  - true if the application wants to use the Wayland surface for a custom
+  role and does not want it attached to an XDG toplevel window. See
+  docs/README-wayland.md for more information on using custom surfaces.
+- `SDL_PROPERTY_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN - true if
+  the application wants an associated `wl_egl_window` object to be created,
+  even if the window does not have the OpenGL property or flag set.
+
 These are additional supported properties on Windows:
 
-- [`SDL_PROPERTY_WINDOW_CREATE_WIN32_HWND_POINTER`](SDL_PROPERTY_WINDOW_CREATE_WIN32_HWND_POINTER):
+- `[SDL_PROPERTY_WINDOW_CREATE_WIN32_HWND_POINTER](SDL_PROPERTY_WINDOW_CREATE_WIN32_HWND_POINTER)`:
   the HWND associated with the window, if you want to wrap an existing
   window.
-- [`SDL_PROPERTY_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER`](SDL_PROPERTY_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER):
+- `[SDL_PROPERTY_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER](SDL_PROPERTY_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER)`:
   optional, another window to share pixel format with, useful for OpenGL
   windows
 
 These are additional supported properties with X11:
 
-- [`SDL_PROPERTY_WINDOW_CREATE_X11_WINDOW_NUMBER`](SDL_PROPERTY_WINDOW_CREATE_X11_WINDOW_NUMBER):
+- `[SDL_PROPERTY_WINDOW_CREATE_X11_WINDOW_NUMBER](SDL_PROPERTY_WINDOW_CREATE_X11_WINDOW_NUMBER)`:
   the X11 Window associated with the window, if you want to wrap an
   existing window.
 
 The window is implicitly shown if the "hidden" property is not set.
 
 Windows with the "tooltip" and "menu" properties are popup windows and have
-the behaviors and guidelines outlined in `SDL_CreatePopupWindow()`.
+the behaviors and guidelines outlined in
+`[SDL_CreatePopupWindow](SDL_CreatePopupWindow)()`.
 
 ## Version
 

@@ -85,8 +85,6 @@ Note: The `xdg_*` window objects do not internally persist across window
 show/hide calls. They will be null if the window is hidden and must be
 queried each time it is shown.
 
-- [`SDL_PROPERTY_WINDOW_WAYLAND_REGISTRY_POINTER`](SDL_PROPERTY_WINDOW_WAYLAND_REGISTRY_POINTER):
-  the wl_registry associated with the window
 - [`SDL_PROPERTY_WINDOW_WAYLAND_DISPLAY_POINTER`](SDL_PROPERTY_WINDOW_WAYLAND_DISPLAY_POINTER):
   the wl_display associated with the window
 - [`SDL_PROPERTY_WINDOW_WAYLAND_SURFACE_POINTER`](SDL_PROPERTY_WINDOW_WAYLAND_SURFACE_POINTER):
