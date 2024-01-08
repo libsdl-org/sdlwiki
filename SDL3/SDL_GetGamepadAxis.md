@@ -26,8 +26,13 @@ Returns axis state (including 0) on success or 0 (also) on failure; call
 
 The axis indices start at index 0.
 
-The state is a value ranging from -32768 to 32767. Triggers, however, range
-from 0 to 32767 (they never return a negative value).
+For thumbsticks, the state is a value ranging from -32768 (up/left) to
+32767 (down/right).
+
+Triggers range from 0 when released to 32767 when fully pressed, and never
+return a negative value. Note that this differs from the value reported by
+the lower-level [SDL_GetJoystickAxis](SDL_GetJoystickAxis)(), which
+normally uses the full range.
 
 ## Version
 
