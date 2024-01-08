@@ -417,6 +417,7 @@
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
 - [SDL_GetTextureDXGIResource](SDL_GetTextureDXGIResource)
 - [SDL_GetTextureProperties](SDL_GetTextureProperties)
+- [SDL_GetTextureRenderer](SDL_GetTextureRenderer)
 - [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
 - [SDL_GetTextureUserData](SDL_GetTextureUserData)
 - [SDL_GetThreadID](SDL_GetThreadID)
