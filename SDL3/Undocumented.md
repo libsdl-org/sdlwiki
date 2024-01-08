@@ -213,6 +213,8 @@
 - [SDL_Finger](SDL_Finger)
 - [SDL_FlashOperation](SDL_FlashOperation)
 - [SDL_GDKRunApp](SDL_GDKRunApp)
+- [SDL_GL_BindTexture](SDL_GL_BindTexture)
+- [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 - [SDL_GLattr](SDL_GLattr)
 - [SDL_GLcontextFlag](SDL_GLcontextFlag)
 - [SDL_GLprofile](SDL_GLprofile)
