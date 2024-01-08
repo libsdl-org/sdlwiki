@@ -27,54 +27,75 @@ range; call [SDL_GetError](SDL_GetError)() for more information.
 
 These are the supported properties:
 
-- "format" (number) - one of the enumerated values in
+- [`SDL_PROPERTY_TEXTURE_CREATE_FORMAT_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_FORMAT_NUMBER)
+  ("format"): one of the enumerated values in
   [SDL_PixelFormatEnum](SDL_PixelFormatEnum), defaults to the best RGBA
   format for the renderer
-- "access" (number) - one of the enumerated values in
+- [`SDL_PROPERTY_TEXTURE_CREATE_ACCESS_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_ACCESS_NUMBER)
+  ("access"): one of the enumerated values in
   [SDL_TextureAccess](SDL_TextureAccess), defaults to
   [SDL_TEXTUREACCESS_STATIC](SDL_TEXTUREACCESS_STATIC)
-- "width" (number) - the width of the texture in pixels, required
-- "height" (number) - the height of the texture in pixels, required
+- [`SDL_PROPERTY_TEXTURE_CREATE_WIDTH_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_WIDTH_NUMBER)
+  ("width"): the width of the texture in pixels, required
+- [`SDL_PROPERTY_TEXTURE_CREATE_HEIGHT_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_HEIGHT_NUMBER)
+  ("height"): the height of the texture in pixels, required
 
 With the direct3d11 renderer:
 
-- "d3d11.texture" (pointer) - the ID3D11Texture2D associated with the
-  texture, if you want to wrap an existing texture.
-- "d3d11.texture_u" (pointer) - the ID3D11Texture2D associated with the U
-  plane of a YUV texture, if you want to wrap an existing texture.
-- "d3d11.texture_v" (pointer) - the ID3D11Texture2D associated with the V
-  plane of a YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_POINTER)
+  ("d3d11.texture"): the ID3D11Texture2D associated with the texture, if
+  you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_U_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_U_POINTER)
+  ("d3d11.texture_u"): the ID3D11Texture2D associated with the U plane of a
+  YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_V_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D11_TEXTURE_V_POINTER)
+  ("d3d11.texture_v"): the ID3D11Texture2D associated with the V plane of a
+  YUV texture, if you want to wrap an existing texture.
 
 With the direct3d12 renderer:
 
-- "d3d12.texture" (pointer) - the ID3D12Resource associated with the
-  texture, if you want to wrap an existing texture.
-- "d3d12.texture_u" (pointer) - the ID3D12Resource associated with the U
-  plane of a YUV texture, if you want to wrap an existing texture.
-- "d3d12.texture_v" (pointer) - the ID3D12Resource associated with the V
-  plane of a YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_POINTER)
+  ("d3d12.texture"): the ID3D12Resource associated with the texture, if you
+  want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_U_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_U_POINTER)
+  ("d3d12.texture_u"): the ID3D12Resource associated with the U plane of a
+  YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_V_POINTER`](SDL_PROPERTY_TEXTURE_CREATE_D3D12_TEXTURE_V_POINTER)
+  ("d3d12.texture_v"): the ID3D12Resource associated with the V plane of a
+  YUV texture, if you want to wrap an existing texture.
 
 With the opengl renderer:
 
-- "opengl.texture" (number) - the GLuint texture associated with the
-  texture, if you want to wrap an existing texture.
-- "opengl.texture_uv" (number) - the GLuint texture associated with the UV
-  plane of an NV12 texture, if you want to wrap an existing texture.
-- "opengl.texture_u" (number) - the GLuint texture associated with the U
-  plane of a YUV texture, if you want to wrap an existing texture.
-- "opengl.texture_v" (number) - the GLuint texture associated with the V
-  plane of a YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_NUMBER)
+  ("opengl.texture"): the GLuint texture associated with the texture, if
+  you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_UV_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_UV_NUMBER)
+  ("opengl.texture_uv"): the GLuint texture associated with the UV plane of
+  an NV12 texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_U_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_U_NUMBER)
+  ("opengl.texture_u"): the GLuint texture associated with the U plane of a
+  YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_V_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGL_TEXTURE_V_NUMBER)
+  ("opengl.texture_v"): the GLuint texture associated with the V plane of a
+  YUV texture, if you want to wrap an existing texture.
 
 With the opengles2 renderer:
 
-- "opengles2.texture" (number) - the GLuint texture associated with the
-  texture, if you want to wrap an existing texture.
-- "opengles2.texture_uv" (number) - the GLuint texture associated with the
-  UV plane of an NV12 texture, if you want to wrap an existing texture.
-- "opengles2.texture_u" (number) - the GLuint texture associated with the U
-  plane of a YUV texture, if you want to wrap an existing texture.
-- "opengles2.texture_v" (number) - the GLuint texture associated with the V
-  plane of a YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER)
+  ("opengles2.texture"): the GLuint texture associated with the texture, if
+  you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER)
+  ("opengles2.texture"): the GLuint texture associated with the texture, if
+  you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_UV_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_UV_NUMBER)
+  ("opengles2.texture_uv"): the GLuint texture associated with the UV plane
+  of an NV12 texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_U_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_U_NUMBER)
+  ("opengles2.texture_u"): the GLuint texture associated with the U plane
+  of a YUV texture, if you want to wrap an existing texture.
+- [`SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_V_NUMBER`](SDL_PROPERTY_TEXTURE_CREATE_OPENGLES2_TEXTURE_V_NUMBER)
+  ("opengles2.texture_v"): the GLuint texture associated with the V plane
+  of a YUV texture, if you want to wrap an existing texture.
 
 ## Version
 
