@@ -25,18 +25,14 @@ Returns a valid property ID on success or 0 on failure; call
 
 The following read-only properties are provided by SDL:
 
-- [`SDL_PROPERTY_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D9_DEVICE_POINTER)
-  ("SDL.renderer.d3d9.device"): the IDirect3DDevice9 associated with the
-  renderer
-- [`SDL_PROPERTY_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D11_DEVICE_POINTER)
-  ("SDL.renderer.d3d11.device"): the ID3D11Device associated with the
-  renderer
-- [`SDL_PROPERTY_RENDERER_D3D12_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D12_DEVICE_POINTER)
-  ("SDL.renderer.d3d12.device"): the ID3D12Device associated with the
-  renderer
-- [`SDL_PROPERTY_RENDERER_D3D12_COMMAND_QUEUE_POINTER`](SDL_PROPERTY_RENDERER_D3D12_COMMAND_QUEUE_POINTER)
-  ("SDL.renderer.d3d12.command_queue"): the ID3D12CommandQueue associated
-  with the renderer /*
+- [`SDL_PROPERTY_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D9_DEVICE_POINTER):
+  the IDirect3DDevice9 associated with the renderer
+- [`SDL_PROPERTY_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D11_DEVICE_POINTER):
+  the ID3D11Device associated with the renderer
+- [`SDL_PROPERTY_RENDERER_D3D12_DEVICE_POINTER`](SDL_PROPERTY_RENDERER_D3D12_DEVICE_POINTER):
+  the ID3D12Device associated with the renderer
+- [`SDL_PROPERTY_RENDERER_D3D12_COMMAND_QUEUE_POINTER`](SDL_PROPERTY_RENDERER_D3D12_COMMAND_QUEUE_POINTER):
+  the ID3D12CommandQueue associated with the renderer
 
 ## Version
 
