@@ -21,7 +21,7 @@ If you are using home-grown Makefiles for your project, you can get the proper C
     SDL_LDFLAGS := $(shell sdl-config --libs)
 </syntaxhighlight>
 
-If you are using autoconf and automake for your project, you can copy the contents of '[https://hg.libsdl.org/SDL/file/SDL-1.2/sdl.m4 sdl.m4]' ([https://hg.libsdl.org/SDL/file/default/sdl2.m4 sdl2.m4]) into your acinclude.m4 file, and then add the following to your configure.in file (for SDL 1.2):
+If you are using autoconf and automake for your project, you can copy the contents of '[https://hg.libsdl.org/SDL/file/SDL-1.2/sdl.m4 sdl.m4]' ([https://github.com/libsdl-org/SDL/blob/SDL2/sdl2.m4 sdl2.m4]) into your acinclude.m4 file, and then add the following to your configure.in file (for SDL 1.2):
 
 <syntaxhighlight lang='m4'>
     dnl Check for SDL
