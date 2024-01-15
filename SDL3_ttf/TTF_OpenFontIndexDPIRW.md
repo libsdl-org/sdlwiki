@@ -12,14 +12,14 @@ TTF_Font * TTF_OpenFontIndexDPIRW(SDL_RWops *src, SDL_bool freesrc, int ptsize, 
 
 ## Function Parameters
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops to provide a font file's data.                               |
-| **freesrc**     | SDL_TRUE to close the RWops before returning, SDL_FALSE to leave it open. |
-| **ptsize**      | point size to use for the newly-opened font.                              |
-| **index**       | index of the face in the font file.                                       |
-| **hdpi**        | the target horizontal DPI.                                                |
-| **vdpi**        | the target vertical DPI.                                                  |
+|                 |                                                                                  |
+| --------------- | -------------------------------------------------------------------------------- |
+| **src**         | an SDL_RWops to provide a font file's data.                                      |
+| **freesrc**     | SDL_TRUE to close the RWops when the font is closed, SDL_FALSE to leave it open. |
+| **ptsize**      | point size to use for the newly-opened font.                                     |
+| **index**       | index of the face in the font file.                                              |
+| **hdpi**        | the target horizontal DPI.                                                       |
+| **vdpi**        | the target vertical DPI.                                                         |
 
 ## Return Value
 
@@ -33,9 +33,9 @@ Some .fon fonts will have several sizes embedded in the file, so the point
 size becomes the index of choosing which size. If the value is too high,
 the last indexed size will be the default.
 
-If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
-whether this function succeeds or not. SDL_ttf reads everything it needs
-from the RWops during this call in any case.
+If `freesrc` is SDL_TRUE the RWops will be automatically closed once the
+font is closed. Otherwise you should close the RWops yourself after closing
+the font.
 
 Some fonts have multiple "faces" included. The index specifies which face
 to use from the font file. Font files with only one face should specify
