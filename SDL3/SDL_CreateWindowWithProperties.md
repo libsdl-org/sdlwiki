@@ -98,6 +98,9 @@ These are additional supported properties on Wayland:
 - `SDL_PROPERTY_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN - true if
   the application wants an associated `wl_egl_window` object to be created,
   even if the window does not have the OpenGL property or flag set.
+- `[SDL_PROPERTY_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER](SDL_PROPERTY_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER)`
+  - the wl_surface associated with the window, if you want to wrap an
+  existing window. See docs/README-wayland.md for more information.
 
 These are additional supported properties on Windows:
 
