@@ -30,6 +30,10 @@ sure that all pending OS events are flushed, you can call
 [SDL_PumpEvents](SDL_PumpEvents)() on the main thread immediately before
 the flush call.
 
+If you have user events with custom data that needs to be freed, you should
+use [SDL_PeepEvents](SDL_PeepEvents)() to remove and clean up those events
+before calling this function.
+
 ## Version
 
 This function is available since SDL 3.0.0.
