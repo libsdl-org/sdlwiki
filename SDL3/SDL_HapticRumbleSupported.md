@@ -10,7 +10,7 @@ Check whether rumble is supported on a haptic device.
 ## Syntax
 
 ```c
-int SDL_HapticRumbleSupported(SDL_Haptic * haptic);
+int SDL_HapticRumbleSupported(SDL_Haptic *haptic);
 
 ```
 
@@ -43,9 +43,9 @@ if (SDL_HapticRumbleSupported(dev)) {
 
 ## Related Functions
 
-* [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
-* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
-* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
+* [SDL_InitHapticRumble](SDL_InitHapticRumble)
+* [SDL_PlayHapticRumble](SDL_PlayHapticRumble)
+* [SDL_StopHapticRumble](SDL_StopHapticRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

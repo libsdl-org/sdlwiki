@@ -10,9 +10,7 @@ Check to see if an effect is supported by a haptic device.
 ## Syntax
 
 ```c
-int SDL_HapticEffectSupported(SDL_Haptic * haptic,
-                              SDL_HapticEffect *
-                              effect);
+SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, SDL_HapticEffect *effect);
 
 ```
 
@@ -25,9 +23,8 @@ int SDL_HapticEffectSupported(SDL_Haptic * haptic,
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
-if it isn't, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE) if the effect is supported or
+[SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version
 
@@ -35,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HapticNewEffect](SDL_HapticNewEffect)
-* [SDL_HapticQuery](SDL_HapticQuery)
+* [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
+* [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
