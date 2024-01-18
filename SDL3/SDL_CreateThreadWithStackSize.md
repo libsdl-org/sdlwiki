@@ -52,10 +52,6 @@ few kilobytes instead. You generally need to specify a stack that is a
 multiple of the system's page size (in many cases, this is 4 kilobytes, but
 check your system documentation).
 
-In SDL 2.1, stack size will be folded into the original
-[SDL_CreateThread](SDL_CreateThread) function, but for backwards
-compatibility, this is currently a separate function.
-
 ## Version
 
 This function is available since SDL 3.0.0.
