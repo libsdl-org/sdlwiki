@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
+* [SDL_AtomicCompareAndSwapPointer](SDL_AtomicCompareAndSwapPointer)
 * [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
 
 ----
