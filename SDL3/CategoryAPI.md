@@ -199,6 +199,7 @@
 - [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
 - [SDL_GetCurrentDisplayOrientation](SDL_GetCurrentDisplayOrientation)
 - [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
+- [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
 - [SDL_GetCurrentVideoDriver](SDL_GetCurrentVideoDriver)
 - [SDL_GetCursor](SDL_GetCursor)
 - [SDL_GetDefaultAssertionHandler](SDL_GetDefaultAssertionHandler)
