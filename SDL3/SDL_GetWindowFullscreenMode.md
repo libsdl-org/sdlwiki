@@ -18,7 +18,8 @@ const SDL_DisplayMode* SDL_GetWindowFullscreenMode(SDL_Window *window);
 
 ## Return Value
 
-Returns a pointer to the fullscreen mode to use or NULL for desktop mode
+Returns a pointer to the exclusive fullscreen mode to use or NULL for
+borderless fullscreen desktop mode
 
 ## Version
 

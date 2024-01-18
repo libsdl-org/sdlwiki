@@ -24,8 +24,8 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-By default a window in fullscreen state uses fullscreen desktop mode, but a
-specific display mode can be set using
+By default a window in fullscreen state uses borderless fullscreen desktop
+mode, but a specific exclusive display mode can be set using
 [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)().
 
 On some windowing systems this request is asynchronous and the new
