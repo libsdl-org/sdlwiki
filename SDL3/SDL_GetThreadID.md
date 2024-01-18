@@ -6,7 +6,7 @@ Get the thread identifier for the specified thread.
 ## Syntax
 
 ```c
-SDL_threadID SDL_GetThreadID(SDL_Thread * thread);
+SDL_ThreadID SDL_GetThreadID(SDL_Thread * thread);
 
 ```
 
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_ThreadID](SDL_ThreadID)
+* [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
