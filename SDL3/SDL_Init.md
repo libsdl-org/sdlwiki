@@ -51,7 +51,7 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 - [`SDL_INIT_GAMEPAD`](SDL_INIT_GAMEPAD): gamepad subsystem; automatically
   initializes the joystick subsystem
 - [`SDL_INIT_EVENTS`](SDL_INIT_EVENTS): events subsystem
-- [`SDL_INIT_EVERYTHING`](SDL_INIT_EVERYTHING): all of the above subsystems
+- [`SDL_INIT_SENSOR`](SDL_INIT_SENSOR): sensor subsystem
 
 Subsystem initialization is ref-counted, you must call
 [SDL_QuitSubSystem](SDL_QuitSubSystem)() for each
