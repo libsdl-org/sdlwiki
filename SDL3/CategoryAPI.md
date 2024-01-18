@@ -689,6 +689,7 @@
 - [SDL_ReadS32LE](SDL_ReadS32LE)
 - [SDL_ReadS64BE](SDL_ReadS64BE)
 - [SDL_ReadS64LE](SDL_ReadS64LE)
+- [SDL_ReadSurfacePixel](SDL_ReadSurfacePixel)
 - [SDL_ReadU16BE](SDL_ReadU16BE)
 - [SDL_ReadU16LE](SDL_ReadU16LE)
 - [SDL_ReadU32BE](SDL_ReadU32BE)
