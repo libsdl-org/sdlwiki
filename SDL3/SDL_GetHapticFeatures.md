@@ -6,7 +6,7 @@ Get the haptic device's supported features in bitwise manner.
 ## Syntax
 
 ```c
-unsigned int SDL_GetHapticFeatures(SDL_Haptic *haptic);
+Uint32 SDL_GetHapticFeatures(SDL_Haptic *haptic);
 
 ```
 
