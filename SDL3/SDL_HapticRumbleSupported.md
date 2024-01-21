@@ -10,7 +10,7 @@ Check whether rumble is supported on a haptic device.
 ## Syntax
 
 ```c
-int SDL_HapticRumbleSupported(SDL_Haptic *haptic);
+SDL_bool SDL_HapticRumbleSupported(SDL_Haptic *haptic);
 
 ```
 
@@ -22,9 +22,8 @@ int SDL_HapticRumbleSupported(SDL_Haptic *haptic);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if effect is supported, [SDL_FALSE](SDL_FALSE)
-if it isn't, or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns [SDL_TRUE](SDL_TRUE) if the effect is supported or
+[SDL_FALSE](SDL_FALSE) if it isn't.
 
 ## Version
 
