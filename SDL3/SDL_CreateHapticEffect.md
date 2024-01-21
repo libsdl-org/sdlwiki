@@ -6,7 +6,7 @@ Create a new haptic effect on a specified device.
 ## Syntax
 
 ```c
-int SDL_CreateHapticEffect(SDL_Haptic *haptic, SDL_HapticEffect *effect);
+int SDL_CreateHapticEffect(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 
 ```
 

@@ -10,7 +10,7 @@ Check to see if an effect is supported by a haptic device.
 ## Syntax
 
 ```c
-SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, SDL_HapticEffect *effect);
+SDL_bool SDL_HapticEffectSupported(SDL_Haptic *haptic, const SDL_HapticEffect *effect);
 
 ```
 

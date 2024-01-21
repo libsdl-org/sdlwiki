@@ -6,7 +6,7 @@ Update the properties of an effect.
 ## Syntax
 
 ```c
-int SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, SDL_HapticEffect *data);
+int SDL_UpdateHapticEffect(SDL_Haptic *haptic, int effect, const SDL_HapticEffect *data);
 
 ```
 
