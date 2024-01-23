@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GamepadHasRumbleTriggers](SDL_GamepadHasRumbleTriggers)
+* [SDL_GetGamepadCaps](SDL_GetGamepadCaps)
 
 ----
 [CategoryAPI](CategoryAPI)

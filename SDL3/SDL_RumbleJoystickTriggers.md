@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_JoystickHasRumbleTriggers](SDL_JoystickHasRumbleTriggers)
+* [SDL_GetJoystickCaps](SDL_GetJoystickCaps)
 
 ----
 [CategoryAPI](CategoryAPI)

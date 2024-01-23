@@ -29,9 +29,16 @@ Returns 0 on success or a negative error code on failure; call
 An example of a joystick LED is the light on the back of a PlayStation 4's
 DualShock 4 controller.
 
+For joysticks with a single color LED, the maximum of the RGB values will
+be used as the LED brightness.
+
 ## Version
 
 This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_GetJoystickCaps](SDL_GetJoystickCaps)
 
 ----
 [CategoryAPI](CategoryAPI)
