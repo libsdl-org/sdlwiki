@@ -25,8 +25,6 @@ Returns a valid property ID on success or 0 on failure; call
 
 The following properties are understood by SDL:
 
-- [`SDL_PROPERTY_SURFACE_HDR_BOOLEAN`](SDL_PROPERTY_SURFACE_HDR_BOOLEAN):
-  true if this surface has HDR properties
 - [`SDL_PROPERTY_SURFACE_COLOR_PRIMARIES_NUMBER`](SDL_PROPERTY_SURFACE_COLOR_PRIMARIES_NUMBER):
   an [SDL_ColorPrimaries](SDL_ColorPrimaries) value describing the surface
   colorspace
