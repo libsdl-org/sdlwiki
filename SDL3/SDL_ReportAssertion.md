@@ -24,7 +24,7 @@ SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
 #ifndef SDL_AssertBreakpoint
 #if defined(ANDROID) && defined(assert)
 /* Define this as empty in case assert() is defined as SDL_assert */
-#define SDL_AssertBreakpoint() 
+#define SDL_AssertBreakpoint()
 #else
 #define SDL_AssertBreakpoint() SDL_TriggerBreakpoint()
 #endif
