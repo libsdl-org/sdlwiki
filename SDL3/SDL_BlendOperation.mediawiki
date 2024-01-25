@@ -43,7 +43,7 @@ Some renderers may not support all operations. See [[SDL_ComposeCustomBlendMode]
 
 == Version ==
 
-This enumeration is available since SDL 2.0.6.
+This enumeration is available since SDL 3.0.0.
 
 == Related Enumerations ==
 :[[SDL_BlendFactor]]
