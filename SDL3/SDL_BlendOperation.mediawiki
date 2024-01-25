@@ -1,11 +1,6 @@
-== Draft ==
-
-'''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_BlendOperation =
-An enumeration of blend operations used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().
 
+An enumeration of blend operations used when creating a custom blend mode with [[SDL_ComposeCustomBlendMode]]().
 
 == Values ==
 {|
@@ -19,13 +14,13 @@ An enumeration of blend operations used when creating a custom blend mode with [
 |subtractive operation
 |-
 | 
-|dst - src
+|src - dst
 |-
 |SDL_BLENDOPERATION_REV_SUBTRACT
 |reversed subtractive operation
 |-
 | 
-|src - dst
+|dst - src
 |-
 |SDL_BLENDOPERATION_MINIMUM
 |minimum operation
