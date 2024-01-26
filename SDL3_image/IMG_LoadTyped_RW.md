@@ -12,11 +12,11 @@ SDL_Surface * IMG_LoadTyped_RW(SDL_RWops *src, SDL_bool freesrc, const char *typ
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
-| **type**        | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).     |
+|                 |                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **src**         | an SDL_RWops that data will be read from.                                          |
+| **freesrc**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
+| **type**        | a filename extension that represent this data ("BMP", "GIF", "PNG", etc).          |
 
 ## Return Value
 
@@ -42,7 +42,7 @@ for the surface. You can enable RLE acceleration on the surface afterwards
 by calling: SDL_SetSurfaceColorKey(image, SDL_RLEACCEL,
 image->format->colorkey);
 
-If `freesrc` is non-zero, the RWops will be closed before returning,
+If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_image reads everything it needs
 from the RWops during this call in any case.
 

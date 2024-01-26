@@ -12,11 +12,11 @@ IMG_Animation * IMG_LoadAnimationTyped_RW(SDL_RWops *src, SDL_bool freesrc, cons
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
-| **type**        | a filename extension that represent this data ("GIF", etc).                   |
+|                 |                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------- |
+| **src**         | an SDL_RWops that data will be read from.                                          |
+| **freesrc**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
+| **type**        | a filename extension that represent this data ("GIF", etc).                        |
 
 ## Return Value
 
@@ -30,7 +30,7 @@ the image data, but may rely on the caller-provided type string for formats
 that it cannot autodetect. If `type` is NULL, SDL_image will rely solely on
 its ability to guess the format.
 
-If `freesrc` is non-zero, the RWops will be closed before returning,
+If `freesrc` is SDL_TRUE, the RWops will be closed before returning,
 whether this function succeeds or not. SDL_image reads everything it needs
 from the RWops during this call in any case.
 

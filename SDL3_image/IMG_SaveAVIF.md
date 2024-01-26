@@ -12,10 +12,11 @@ int IMG_SaveAVIF(SDL_Surface *surface, const char *file, int quality);
 
 ## Function Parameters
 
-|                 |                                              |
-| --------------- | -------------------------------------------- |
-| **surface**     | the SDL surface to save                      |
-| **file**        | path on the filesystem to write new file to. |
+|                 |                                                                   |
+| --------------- | ----------------------------------------------------------------- |
+| **surface**     | the SDL surface to save                                           |
+| **file**        | path on the filesystem to write new file to.                      |
+| **quality**     | the desired quality, ranging between 0 (lowest) and 100 (highest) |
 
 ## Return Value
 
