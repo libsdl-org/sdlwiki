@@ -54,6 +54,8 @@
 - [IMG_Quit](IMG_Quit)
 - [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)
 - [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)
+- [IMG_SaveAVIF](IMG_SaveAVIF)
+- [IMG_SaveAVIF_RW](IMG_SaveAVIF_RW)
 - [IMG_SaveJPG](IMG_SaveJPG)
 - [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
 - [IMG_SavePNG](IMG_SavePNG)
