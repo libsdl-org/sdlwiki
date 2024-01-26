@@ -1,12 +1,12 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_SavePNG
+# IMG_SaveAVIF
 
-Save an SDL_Surface into a PNG image file.
+Save an SDL_Surface into a AVIF image file.
 
 ## Syntax
 
 ```c
-int IMG_SavePNG(SDL_Surface *surface, const char *file);
+int IMG_SaveAVIF(SDL_Surface *surface, const char *file, int quality);
 
 ```
 
@@ -31,7 +31,7 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_SavePNG_RW](IMG_SavePNG_RW)
+* [IMG_SaveAVIF_RW](IMG_SaveAVIF_RW)
 
 ----
 [CategoryAPI](CategoryAPI)
