@@ -14,6 +14,10 @@ void SDL_StopTextInput(void);
 
 ```
 
+## Remarks
+
+Text input events are received by default.
+
 ## Version
 
 This function is available since SDL 3.0.0.
