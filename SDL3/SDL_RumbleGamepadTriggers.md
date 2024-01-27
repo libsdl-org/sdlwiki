@@ -38,10 +38,6 @@ the (more common) whole-gamepad rumble, use
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_GetGamepadCaps](SDL_GetGamepadCaps)
-
 ----
 [CategoryAPI](CategoryAPI)
 

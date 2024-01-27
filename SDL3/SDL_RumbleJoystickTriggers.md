@@ -38,10 +38,6 @@ want the (more common) whole-controller rumble, use
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_GetJoystickCaps](SDL_GetJoystickCaps)
-
 ----
 [CategoryAPI](CategoryAPI)
 

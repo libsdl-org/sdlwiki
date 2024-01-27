@@ -36,10 +36,6 @@ be used as the LED brightness.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_GetJoystickCaps](SDL_GetJoystickCaps)
-
 ----
 [CategoryAPI](CategoryAPI)
 
