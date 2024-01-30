@@ -31,6 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_GetRenderDrawColorFloat](SDL_GetRenderDrawColorFloat)
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----

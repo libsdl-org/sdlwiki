@@ -9,7 +9,7 @@ Render a list of triangles, optionally using a texture and indices into the vert
 int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
                        SDL_Texture *texture,
                        const float *xy, int xy_stride,
-                       const SDL_Color *color, int color_stride,
+                       const SDL_FColor *color, int color_stride,
                        const float *uv, int uv_stride,
                        int num_vertices,
                        const void *indices, int num_indices, int size_indices);
@@ -24,7 +24,7 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
 | **texture**          | (optional) The SDL texture to use.                                                                                    |
 | **xy**               | Vertex positions                                                                                                      |
 | **xy_stride**        | Byte size to move from one element to the next element                                                                |
-| **color**            | Vertex colors (as [SDL_Color](SDL_Color))                                                                             |
+| **color**            | Vertex colors (as [SDL_FColor](SDL_FColor))                                                                           |
 | **color_stride**     | Byte size to move from one element to the next element                                                                |
 | **uv**               | Vertex normalized texture coordinates                                                                                 |
 | **uv_stride**        | Byte size to move from one element to the next element                                                                |

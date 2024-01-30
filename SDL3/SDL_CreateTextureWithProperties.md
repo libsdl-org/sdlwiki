@@ -27,6 +27,13 @@ range; call [SDL_GetError](SDL_GetError)() for more information.
 
 These are the supported properties:
 
+- [`SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER):
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
+  colorspace, defaults to [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB) for
+  floating point textures, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for
+  10-bit textures, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
+  textures and [SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for
+  YUV textures.
 - [`SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER):
   one of the enumerated values in
   [SDL_PixelFormatEnum](SDL_PixelFormatEnum), defaults to the best RGBA

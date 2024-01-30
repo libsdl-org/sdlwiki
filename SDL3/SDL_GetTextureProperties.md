@@ -25,6 +25,10 @@ Returns a valid property ID on success or 0 on failure; call
 
 The following read-only properties are provided by SDL:
 
+- [`SDL_PROP_TEXTURE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_COLORSPACE_NUMBER):
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace used
+  by the texture
+
 With the direct3d11 renderer:
 
 - [`SDL_PROP_TEXTURE_D3D11_TEXTURE_POINTER`](SDL_PROP_TEXTURE_D3D11_TEXTURE_POINTER):

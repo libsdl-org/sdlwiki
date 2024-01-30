@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetTextureAlphaMod
+# SDL_GetTextureAlphaModFloat
 
 Get the additional alpha value multiplied into render copy operations.
 
 ## Syntax
 
 ```c
-int SDL_GetTextureAlphaMod(SDL_Texture *texture, Uint8 *alpha);
+int SDL_GetTextureAlphaModFloat(SDL_Texture *texture, float *alpha);
 
 ```
 
@@ -28,11 +28,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetTextureAlphaModFloat](SDL_GetTextureAlphaModFloat)
-* [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
-* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
+* [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
+* [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
+* [SDL_SetTextureAlphaModFloat](SDL_SetTextureAlphaModFloat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI)
 

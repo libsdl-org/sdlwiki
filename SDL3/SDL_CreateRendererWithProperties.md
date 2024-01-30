@@ -32,8 +32,23 @@ These are the supported properties:
   without a window
 - [`SDL_PROP_RENDERER_CREATE_NAME_STRING`](SDL_PROP_RENDERER_CREATE_NAME_STRING):
   the name of the rendering driver to use, if a specific one is desired
+- [`SDL_PROP_RENDERER_CREATE_INPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_CREATE_INPUT_COLORSPACE_NUMBER):
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
+  input colors, defaults to [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB)
+- [`SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER):
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
+  output to the display, defaults to
+  [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB)
+- [`SDL_PROP_RENDERER_CREATE_COLORSPACE_CONVERSION_BOOLEAN`](SDL_PROP_RENDERER_CREATE_COLORSPACE_CONVERSION_BOOLEAN):
+  true if you want conversion between the input colorspace and the output
+  colorspace, defaults to [SDL_TRUE](SDL_TRUE)
 - [`SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN`](SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN):
   true if you want present synchronized with the refresh rate
+
+Note that enabling colorspace conversion between sRGB input and sRGB output
+implies that the rendering is done in a linear colorspace for more correct
+blending results. If colorspace conversion is disabled, then input colors
+are passed directly through to the output.
 
 ## Version
 

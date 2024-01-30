@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetTextureColorMod
+# SDL_GetTextureColorModFloat
 
 Get the additional color value multiplied into render copy operations.
 
 ## Syntax
 
 ```c
-int SDL_GetTextureColorMod(SDL_Texture *texture, Uint8 *r, Uint8 *g, Uint8 *b);
+int SDL_GetTextureColorModFloat(SDL_Texture *texture, float *r, float *g, float *b);
 
 ```
 
@@ -30,11 +30,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
-* [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
-* [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
+* [SDL_GetTextureAlphaModFloat](SDL_GetTextureAlphaModFloat)
+* [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
+* [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI)
 
