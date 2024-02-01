@@ -45,6 +45,10 @@ The following properties are understood by SDL:
   playback sequence. MaxFALL is calculated by averaging the decoded
   luminance values of all the pixels within a frame. MaxFALL is usually
   much lower than MaxCLL.
+- [`SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING`](SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING):
+  the tone mapping operator used when converting between different
+  colorspaces. Currently this supports the form "*=N", where N is a
+  floating point scale factor applied in linear space.
 
 ## Version
 
