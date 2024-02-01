@@ -6,8 +6,7 @@ Set the RLE acceleration hint for a surface.
 ## Syntax
 
 ```c
-int SDL_SetSurfaceRLE(SDL_Surface *surface,
-                      int flag);
+int SDL_SetSurfaceRLE(SDL_Surface *surface, int flag);
 
 ```
 

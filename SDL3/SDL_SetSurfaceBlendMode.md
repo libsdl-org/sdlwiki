@@ -6,8 +6,7 @@ Set the blend mode used for blit operations.
 ## Syntax
 
 ```c
-int SDL_SetSurfaceBlendMode(SDL_Surface *surface,
-                            SDL_BlendMode blendMode);
+int SDL_SetSurfaceBlendMode(SDL_Surface *surface, SDL_BlendMode blendMode);
 
 ```
 

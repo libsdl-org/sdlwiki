@@ -6,9 +6,7 @@ Performs a fast blit from the source surface to the destination surface.
 ## Syntax
 
 ```c
-int SDL_BlitSurface
-    (SDL_Surface *src, const SDL_Rect *srcrect,
-     SDL_Surface *dst, SDL_Rect *dstrect);
+int SDL_BlitSurface(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, SDL_Rect *dstrect);
 
 ```
 

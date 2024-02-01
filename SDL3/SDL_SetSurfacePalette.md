@@ -6,8 +6,7 @@ Set the palette used by a surface.
 ## Syntax
 
 ```c
-int SDL_SetSurfacePalette(SDL_Surface *surface,
-                          SDL_Palette *palette);
+int SDL_SetSurfacePalette(SDL_Surface *surface, SDL_Palette *palette);
 
 ```
 

@@ -6,8 +6,7 @@ Get the additional alpha value used in blit operations.
 ## Syntax
 
 ```c
-int SDL_GetSurfaceAlphaMod(SDL_Surface *surface,
-                           Uint8 *alpha);
+int SDL_GetSurfaceAlphaMod(SDL_Surface *surface, Uint8 *alpha);
 
 ```
 

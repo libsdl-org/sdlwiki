@@ -6,8 +6,7 @@ Copy an existing surface to a new surface of the specified format.
 ## Syntax
 
 ```c
-SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface,
-                                const SDL_PixelFormat *format);
+SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface, const SDL_PixelFormat *format);
 
 ```
 

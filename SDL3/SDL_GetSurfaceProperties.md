@@ -27,7 +27,11 @@ The following properties are understood by SDL:
 
 - [`SDL_PROP_SURFACE_COLORSPACE_NUMBER`](SDL_PROP_SURFACE_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the surface
-  colorspace
+  colorspace, defaults to [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB) for
+  floating point formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for
+  10-bit formats, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
+  surfaces and [SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for
+  YUV textures.
 - [`SDL_PROP_SURFACE_MAXCLL_NUMBER`](SDL_PROP_SURFACE_MAXCLL_NUMBER):
   MaxCLL (Maximum Content Light Level) indicates the maximum light level of
   any single pixel (in cd/m2 or nits) of the entire playback sequence.

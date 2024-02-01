@@ -6,8 +6,7 @@ Perform a fast fill of a rectangle with a specific color.
 ## Syntax
 
 ```c
-int SDL_FillSurfaceRect
-    (SDL_Surface *dst, const SDL_Rect *rect, Uint32 color);
+int SDL_FillSurfaceRect(SDL_Surface *dst, const SDL_Rect *rect, Uint32 color);
 
 ```
 

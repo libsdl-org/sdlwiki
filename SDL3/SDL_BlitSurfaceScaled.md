@@ -6,11 +6,7 @@ Perform a scaled surface copy to a destination surface.
 ## Syntax
 
 ```c
-int SDL_BlitSurfaceScaled(SDL_Surface *src,
-                          const SDL_Rect *srcrect,
-                          SDL_Surface *dst,
-                          SDL_Rect *dstrect,
-                          SDL_ScaleMode scaleMode);
+int SDL_BlitSurfaceScaled(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, SDL_Rect *dstrect, SDL_ScaleMode scaleMode);
 
 ```
 

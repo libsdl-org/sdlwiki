@@ -6,8 +6,7 @@ Get the color key (transparent pixel) for a surface.
 ## Syntax
 
 ```c
-int SDL_GetSurfaceColorKey(SDL_Surface *surface,
-                    Uint32 *key);
+int SDL_GetSurfaceColorKey(SDL_Surface *surface, Uint32 *key);
 
 ```
 

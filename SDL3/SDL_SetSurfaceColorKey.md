@@ -6,8 +6,7 @@ Set the color key (transparent pixel) in a surface.
 ## Syntax
 
 ```c
-int SDL_SetSurfaceColorKey(SDL_Surface *surface,
-                    int flag, Uint32 key);
+int SDL_SetSurfaceColorKey(SDL_Surface *surface, int flag, Uint32 key);
 
 ```
 

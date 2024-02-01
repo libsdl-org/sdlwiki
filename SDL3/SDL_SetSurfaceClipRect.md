@@ -6,8 +6,7 @@ Set the clipping rectangle for a surface.
 ## Syntax
 
 ```c
-SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface,
-                         const SDL_Rect *rect);
+SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
 
 ```
 

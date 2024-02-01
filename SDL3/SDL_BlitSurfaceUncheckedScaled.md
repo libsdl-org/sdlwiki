@@ -6,11 +6,7 @@ Perform low-level surface scaled blitting only.
 ## Syntax
 
 ```c
-int SDL_BlitSurfaceUncheckedScaled(SDL_Surface *src,
-                                   const SDL_Rect *srcrect,
-                                   SDL_Surface *dst,
-                                   const SDL_Rect *dstrect,
-                                   SDL_ScaleMode scaleMode);
+int SDL_BlitSurfaceUncheckedScaled(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, const SDL_Rect *dstrect, SDL_ScaleMode scaleMode);
 
 ```
 

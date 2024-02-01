@@ -6,9 +6,7 @@ Perform low-level surface blitting only.
 ## Syntax
 
 ```c
-int SDL_BlitSurfaceUnchecked
-    (SDL_Surface *src, const SDL_Rect *srcrect,
-     SDL_Surface *dst, const SDL_Rect *dstrect);
+int SDL_BlitSurfaceUnchecked(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, const SDL_Rect *dstrect);
 
 ```
 

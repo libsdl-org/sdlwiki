@@ -6,8 +6,7 @@ Set an additional alpha value used in blit operations.
 ## Syntax
 
 ```c
-int SDL_SetSurfaceAlphaMod(SDL_Surface *surface,
-                           Uint8 alpha);
+int SDL_SetSurfaceAlphaMod(SDL_Surface *surface, Uint8 alpha);
 
 ```
 

@@ -6,11 +6,7 @@ Perform stretch blit between two surfaces of the same format.
 ## Syntax
 
 ```c
-int SDL_SoftStretch(SDL_Surface *src,
-                    const SDL_Rect *srcrect,
-                    SDL_Surface *dst,
-                    const SDL_Rect *dstrect,
-                    SDL_ScaleMode scaleMode);
+int SDL_SoftStretch(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface *dst, const SDL_Rect *dstrect, SDL_ScaleMode scaleMode);
 
 ```
 

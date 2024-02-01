@@ -6,8 +6,7 @@ Get the clipping rectangle for a surface.
 ## Syntax
 
 ```c
-int SDL_GetSurfaceClipRect(SDL_Surface *surface,
-                     SDL_Rect *rect);
+int SDL_GetSurfaceClipRect(SDL_Surface *surface, SDL_Rect *rect);
 
 ```
 

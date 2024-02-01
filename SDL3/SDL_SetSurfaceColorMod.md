@@ -6,8 +6,7 @@ Set an additional color value multiplied into blit operations.
 ## Syntax
 
 ```c
-int SDL_SetSurfaceColorMod(SDL_Surface *surface,
-                           Uint8 r, Uint8 g, Uint8 b);
+int SDL_SetSurfaceColorMod(SDL_Surface *surface, Uint8 r, Uint8 g, Uint8 b);
 
 ```
 
