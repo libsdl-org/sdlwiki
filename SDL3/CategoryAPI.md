@@ -77,6 +77,7 @@
 - [SDL_ConvertSurface](SDL_ConvertSurface)
 - [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
 - [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
+- [SDL_CopyProperties](SDL_CopyProperties)
 - [SDL_CreateAndBindAudioStream](SDL_CreateAndBindAudioStream)
 - [SDL_CreateAudioStream](SDL_CreateAudioStream)
 - [SDL_CreateColorCursor](SDL_CreateColorCursor)
