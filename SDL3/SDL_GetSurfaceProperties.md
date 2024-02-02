@@ -32,19 +32,6 @@ The following properties are understood by SDL:
   10-bit formats, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
   surfaces and [SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for
   YUV textures.
-- [`SDL_PROP_SURFACE_MAXCLL_NUMBER`](SDL_PROP_SURFACE_MAXCLL_NUMBER):
-  MaxCLL (Maximum Content Light Level) indicates the maximum light level of
-  any single pixel (in cd/m2 or nits) of the entire playback sequence.
-  MaxCLL is usually measured off the final delivered content after
-  mastering. If one uses the full light level of the HDR mastering display
-  and adds a hard clip at its maximum value, MaxCLL would be equal to the
-  peak luminance of the mastering monitor.
-- [`SDL_PROP_SURFACE_MAXFALL_NUMBER`](SDL_PROP_SURFACE_MAXFALL_NUMBER):
-  MaxFALL (Maximum Frame Average Light Level) indicates the maximum value
-  of the frame average light level (in cd/m2 or nits) of the entire
-  playback sequence. MaxFALL is calculated by averaging the decoded
-  luminance values of all the pixels within a frame. MaxFALL is usually
-  much lower than MaxCLL.
 - [`SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING`](SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING):
   the tone mapping operator used when converting between different
   colorspaces. Currently this supports the form "*=N", where N is a
