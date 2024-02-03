@@ -37,14 +37,12 @@ These are the supported properties:
   output to the display, defaults to
   [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB). The direct3d11 and direct3d12
   renderers support [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB), which is
-  a linear color space and supports HDR output.
+  a linear color space and supports HDR output. If you select
+  [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB), drawing still uses the sRGB
+  colorspace, but values can go beyond 1.0 and float (linear) format
+  textures can be used for HDR content.
 - [`SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN`](SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN):
   true if you want present synchronized with the refresh rate
-
-Note that enabling colorspace conversion between sRGB input and sRGB output
-implies that the rendering is done in a linear colorspace for more correct
-blending results. If colorspace conversion is disabled, then input colors
-are passed directly through to the output.
 
 ## Version
 
