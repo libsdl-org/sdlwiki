@@ -25,6 +25,17 @@ Returns a valid property ID on success or 0 on failure; call
 
 The following read-only properties are provided by SDL:
 
+- [`SDL_PROP_RENDERER_NAME_STRING`](SDL_PROP_RENDERER_NAME_STRING): the
+  name of the rendering driver
+- [`SDL_PROP_RENDERER_WINDOW_POINTER`](SDL_PROP_RENDERER_WINDOW_POINTER):
+  the window where rendering is displayed, if any
+- [`SDL_PROP_RENDERER_SURFACE_POINTER`](SDL_PROP_RENDERER_SURFACE_POINTER):
+  the surface where rendering is displayed, if this is a software renderer
+  without a window
+- [`SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER):
+  an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
+  output to the display, defaults to
+  [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB).
 - [`SDL_PROP_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D9_DEVICE_POINTER):
   the IDirect3DDevice9 associated with the renderer
 - [`SDL_PROP_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D11_DEVICE_POINTER):

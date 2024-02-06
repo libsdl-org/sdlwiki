@@ -25,13 +25,14 @@ Returns a valid rendering context or NULL if there was an error; call
 
 These are the supported properties:
 
+- [`SDL_PROP_RENDERER_CREATE_NAME_STRING`](SDL_PROP_RENDERER_CREATE_NAME_STRING):
+  the name of the rendering driver to use, if a specific one is desired
 - [`SDL_PROP_RENDERER_CREATE_WINDOW_POINTER`](SDL_PROP_RENDERER_CREATE_WINDOW_POINTER):
-  the window where rendering is displayed
+  the window where rendering is displayed, required if this isn't a
+  software renderer using a surface
 - [`SDL_PROP_RENDERER_CREATE_SURFACE_POINTER`](SDL_PROP_RENDERER_CREATE_SURFACE_POINTER):
   the surface where rendering is displayed, if you want a software renderer
   without a window
-- [`SDL_PROP_RENDERER_CREATE_NAME_STRING`](SDL_PROP_RENDERER_CREATE_NAME_STRING):
-  the name of the rendering driver to use, if a specific one is desired
 - [`SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
   output to the display, defaults to
