@@ -69,6 +69,12 @@ With the direct3d12 renderer:
   the ID3D12Resource associated with the V plane of a YUV texture, if you
   want to wrap an existing texture.
 
+With the metal renderer:
+
+- [`SDL_PROP_TEXTURE_CREATE_METAL_PIXELBUFFER_POINTER`](SDL_PROP_TEXTURE_CREATE_METAL_PIXELBUFFER_POINTER):
+  the CVPixelBufferRef associated with the texture, if you want to create a
+  texture from an existing pixel buffer.
+
 With the opengl renderer:
 
 - [`SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_NUMBER):
