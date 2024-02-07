@@ -724,6 +724,7 @@
 - [SDL_RenderFlush](SDL_RenderFlush)
 - [SDL_RenderGeometry](SDL_RenderGeometry)
 - [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+- [SDL_RenderGeometryRawFloat](SDL_RenderGeometryRawFloat)
 - [SDL_RenderGetD3D12Device](SDL_RenderGetD3D12Device)
 - [SDL_RenderLine](SDL_RenderLine)
 - [SDL_RenderLines](SDL_RenderLines)
