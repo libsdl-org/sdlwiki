@@ -7,7 +7,7 @@ A structure that contains system-dependent information about a window.
 {|
 |
 |
-| style="background-color: #EDEDED;" ''All Subsystems''
+| style="background-color: #EDEDED;" | ''All Subsystems''
 |-
 |[[SDL_version]]
 |'''version'''
@@ -17,13 +17,13 @@ A structure that contains system-dependent information about a window.
 |'''subsystem'''
 |the windowing system type; see [[#Remarks|Remarks]] for details
 |-
-| style="color: #808080;" int
-| style="color: #808080;" '''dummy'''
-| style="color: #808080;" unused (to help compilers when no specific system is available)
+| style="color: #808080;" | int
+| style="color: #808080;" | '''dummy'''
+| style="color: #808080;" | unused (to help compilers when no specific system is available)
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_WINDOWS''
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_WINDOWS''
 |-
 |HWND
 |'''win.window'''
@@ -39,7 +39,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)
 |-
 |IInspectable*
 |'''winrt.window'''
@@ -47,7 +47,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_X11''
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_X11''
 |-
 |Display*
 |'''x11.display'''
@@ -59,7 +59,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_DIRECTFB''
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_DIRECTFB''
 |-
 |IDirectFB*
 |'''dfb.dfb'''
@@ -75,7 +75,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_COCOA''
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_COCOA''
 |-
 |NSWindow*
 |'''cocoa.window'''
@@ -83,7 +83,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_UIKIT''
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_UIKIT''
 |-
 |UIWindow*
 |'''uikit.window'''
@@ -103,7 +103,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)
 |-
 |wl_display*
 |'''wl.display'''
@@ -119,7 +119,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_MIR'' (>= SDL 2.0.2)
 |-
 |MirConnection*
 |'''mir.connection'''
@@ -131,7 +131,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)
 |-
 |ANativeWindow*
 |'''android.window'''
@@ -143,7 +143,7 @@ A structure that contains system-dependent information about a window.
 |-
 |
 |
-| style="background-color: #EDEDED;" ''SDL_SYSWM_VIVANTE'' (>= SDL 2.0.5)
+| style="background-color: #EDEDED;" | ''SDL_SYSWM_VIVANTE'' (>= SDL 2.0.5)
 |-
 |EGLNativeDisplayType
 |'''vivante.display'''
