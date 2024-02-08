@@ -34,6 +34,9 @@ whole. This is currently only supported on Xbox One gamepads. If you want
 the (more common) whole-gamepad rumble, use
 [SDL_RumbleGamepad](SDL_RumbleGamepad)() instead.
 
+This function requires you to process SDL events or call
+[SDL_UpdateJoysticks](SDL_UpdateJoysticks)() to update rumble state.
+
 ## Version
 
 This function is available since SDL 3.0.0.

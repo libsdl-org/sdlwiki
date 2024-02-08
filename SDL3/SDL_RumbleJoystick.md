@@ -28,6 +28,9 @@ Returns 0, or -1 if rumble isn't supported on this joystick
 Each call to this function cancels any previous rumble effect, and calling
 it with 0 intensity stops any rumbling.
 
+This function requires you to process SDL events or call
+[SDL_UpdateJoysticks](SDL_UpdateJoysticks)() to update rumble state.
+
 ## Version
 
 This function is available since SDL 3.0.0.
