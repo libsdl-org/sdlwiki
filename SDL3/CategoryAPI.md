@@ -957,6 +957,7 @@
 - [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
 - [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
 - [SDL_WasInit](SDL_WasInit)
+- [SDL_WindowHasSurface](SDL_WindowHasSurface)
 - [SDL_WinRTGetDeviceFamily](SDL_WinRTGetDeviceFamily)
 - [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
 - [SDL_WinRTGetFSPathUTF8](SDL_WinRTGetFSPathUTF8)
