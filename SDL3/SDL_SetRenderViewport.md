@@ -29,6 +29,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetRenderViewport](SDL_GetRenderViewport)
+* [SDL_RenderViewportSet](SDL_RenderViewportSet)
 
 ----
 [CategoryAPI](CategoryAPI)
