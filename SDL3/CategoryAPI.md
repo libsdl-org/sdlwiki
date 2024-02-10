@@ -736,6 +736,7 @@
 - [SDL_RenderRects](SDL_RenderRects)
 - [SDL_RenderTexture](SDL_RenderTexture)
 - [SDL_RenderTextureRotated](SDL_RenderTextureRotated)
+- [SDL_RenderViewportSet](SDL_RenderViewportSet)
 - [SDL_ReportAssertion](SDL_ReportAssertion)
 - [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
 - [SDL_ResetHint](SDL_ResetHint)
