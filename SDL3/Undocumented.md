@@ -342,6 +342,7 @@
 - [SDL_HapticUnpause](SDL_HapticUnpause)
 - [SDL_HapticUpdateEffect](SDL_HapticUpdateEffect)
 - [SDL_HasRDTSC](SDL_HasRDTSC)
+- [SDL_HasWindowSurface](SDL_HasWindowSurface)
 - [SDL_HintPriority](SDL_HintPriority)
 - [SDL_HitTestResult](SDL_HitTestResult)
 - [SDL_IsAudioDevicePaused](SDL_IsAudioDevicePaused)

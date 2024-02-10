@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 ## Related Functions
 
 * [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
-* [SDL_HasWindowSurface](SDL_HasWindowSurface)
+* [SDL_WindowHasSurface](SDL_WindowHasSurface)
 * [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
 * [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 

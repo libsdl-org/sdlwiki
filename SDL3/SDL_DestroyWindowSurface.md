@@ -28,7 +28,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetWindowSurface](SDL_GetWindowSurface)
-* [SDL_HasWindowSurface](SDL_HasWindowSurface)
+* [SDL_WindowHasSurface](SDL_WindowHasSurface)
 
 ----
 [CategoryAPI](CategoryAPI)
