@@ -418,7 +418,6 @@
 - [SDL_SetSurfaceScaleMode](SDL_SetSurfaceScaleMode)
 - [SDL_SetTextureUserData](SDL_SetTextureUserData)
 - [SDL_SetWindowData](SDL_SetWindowData)
-- [SDL_SetWindowShape](SDL_SetWindowShape)
 - [SDL_SetYUVConversionMode](SDL_SetYUVConversionMode)
 - [SDL_SoftStretchLinear](SDL_SoftStretchLinear)
 - [SDL_Surface](SDL_Surface)

@@ -25,6 +25,11 @@ int SDL_SetPropertyWithCleanup(SDL_PropertiesID props, const char *name, void *v
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The cleanup function is also called if setting the property fails for any
+reason.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.

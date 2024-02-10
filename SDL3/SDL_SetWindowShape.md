@@ -1,39 +1,40 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetWindowShape
 
-Set the shape and parameters of a shaped window.
+Set the shape of a transparent window.
 
 ## Syntax
 
 ```c
-int SDL_SetWindowShape(SDL_Window *window,SDL_Surface *shape,SDL_WindowShapeMode *shape_mode);
+int SDL_SetWindowShape(SDL_Window *window, SDL_Surface *shape);
 
 ```
 
 ## Function Parameters
 
-|                    |                                                      |
-| ------------------ | ---------------------------------------------------- |
-| **window**         | The shaped window whose parameters should be set.    |
-| **shape**          | A surface encoding the desired shape for the window. |
-| **shape_mode**     | The parameters to set for the shaped window.         |
+|                |                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------- |
+| **window**     | the window                                                                            |
+| **shape**      | the surface representing the shape of the window, or NULL to remove any current shape |
 
 ## Return Value
 
-Returns 0 on success,
-[SDL_INVALID_SHAPE_ARGUMENT](SDL_INVALID_SHAPE_ARGUMENT) on an invalid
-shape argument, or [SDL_NONSHAPEABLE_WINDOW](SDL_NONSHAPEABLE_WINDOW) if
-the [SDL_Window](SDL_Window) given does not reference a valid shaped
-window.
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This sets the alpha channel of a transparent window and any fully
+transparent areas are also transparent to mouse clicks. If you are using
+something besides the SDL render API, then you are responsible for setting
+the alpha channel of the window yourself.
+
+The window must have been created with the
+[SDL_WINDOW_TRANSPARENT](SDL_WINDOW_TRANSPARENT) flag.
 
 ## Version
 
 This function is available since SDL 3.0.0.
-
-## Related Functions
-
-* [SDL_WindowShapeMode](SDL_WindowShapeMode)
-* [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
 
 ----
 [CategoryAPI](CategoryAPI)

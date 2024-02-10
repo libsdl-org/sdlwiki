@@ -25,6 +25,9 @@ Returns a valid property ID on success or 0 on failure; call
 
 The following read-only properties are provided by SDL:
 
+- [`SDL_PROP_WINDOW_SHAPE_POINTER`](SDL_PROP_WINDOW_SHAPE_POINTER): the
+  surface associated with a shaped window
+
 On Android:
 
 - [`SDL_PROP_WINDOW_ANDROID_WINDOW_POINTER`](SDL_PROP_WINDOW_ANDROID_WINDOW_POINTER):
