@@ -6,7 +6,7 @@ Get the version of SDL that is linked against your program.
 ## Syntax
 
 ```c
-int SDL_GetVersion(SDL_version * ver);
+int SDL_GetVersion(SDL_Version * ver);
 
 ```
 
@@ -14,7 +14,7 @@ int SDL_GetVersion(SDL_version * ver);
 
 |             |                                                                                |
 | ----------- | ------------------------------------------------------------------------------ |
-| **ver**     | the [SDL_version](SDL_version) structure that contains the version information |
+| **ver**     | the [SDL_Version](SDL_Version) structure that contains the version information |
 
 ## Return Value
 
