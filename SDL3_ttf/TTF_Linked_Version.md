@@ -6,7 +6,7 @@ Query the version of SDL_ttf that the program is linked against.
 ## Syntax
 
 ```c
-const SDL_version * TTF_Linked_Version(void);
+const SDL_Version * TTF_Linked_Version(void);
 
 ```
 
