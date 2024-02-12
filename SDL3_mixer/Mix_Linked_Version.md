@@ -6,7 +6,7 @@ Query the version of SDL_mixer that the program is linked against.
 ## Syntax
 
 ```c
-const SDL_version * Mix_Linked_Version(void);
+const SDL_Version * Mix_Linked_Version(void);
 
 ```
 
