@@ -6,7 +6,7 @@ This function gets the version of the dynamically linked SDL_image library.
 ## Syntax
 
 ```c
-const SDL_version * IMG_Linked_Version(void);
+const SDL_Version * IMG_Linked_Version(void);
 
 ```
 
