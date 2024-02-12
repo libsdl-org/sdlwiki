@@ -6,7 +6,7 @@ Query the verion of the SDL_net library in use at runtime.
 ## Syntax
 
 ```c
-const SDL_version * SDLNet_LinkedVersion(void);
+const SDL_Version * SDLNet_LinkedVersion(void);
 
 ```
 
