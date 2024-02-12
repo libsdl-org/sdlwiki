@@ -703,25 +703,42 @@ SDL_AddHintCallback() now returns a standard int result instead of void, returni
 Calling SDL_GetHint() with the name of the hint being changed from within a hint callback will now return the new value rather than the old value. The old value is still passed as a parameter to the hint callback.
 
 The following hints have been removed:
+* SDL_HINT_ACCELEROMETER_AS_JOYSTICK
 * SDL_HINT_GAMECONTROLLER_USE_BUTTON_LABELS - gamepad buttons are always positional
-* SDL_HINT_IDLE_TIMER_DISABLED - use SDL_DisableScreenSaver instead
+* SDL_HINT_IDLE_TIMER_DISABLED - use SDL_DisableScreenSaver() instead
 * SDL_HINT_IME_SUPPORT_EXTENDED_TEXT - the normal text editing event has extended text
 * SDL_HINT_MOUSE_RELATIVE_SCALING - mouse coordinates are no longer automatically scaled by the SDL renderer
 * SDL_HINT_RENDER_BATCHING - Render batching is always enabled, apps should call SDL_FlushRenderer() before calling into a lower-level graphics API.
 * SDL_HINT_RENDER_LOGICAL_SIZE_MODE - the logical size mode is explicitly set with SDL_SetRenderLogicalPresentation()
-* SDL_HINT_VIDEO_FOREIGN_WINDOW_OPENGL - replaced with the "opengl" property in SDL_CreateWindowWithProperties()
-* SDL_HINT_VIDEO_FOREIGN_WINDOW_VULKAN - replaced with the "vulkan" property in SDL_CreateWindowWithProperties()
+* SDL_HINT_RENDER_OPENGL_SHADERS - shaders are always used if they are available
+* SDL_HINT_RENDER_SCALE_QUALITY - textures now default to linear filtering, use SDL_SetTextureScaleMode(texture, SDL_SCALEMODE_NEAREST) if you want nearest pixel mode instead
+* SDL_HINT_VIDEO_EXTERNAL_CONTEXT - replaced with SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT in SDL_CreateWindowWithProperties()
+* SDL_HINT_THREAD_STACK_SIZE - the stack size can be specified using SDL_CreateThreadWithStackSize()
+* SDL_HINT_VIDEO_FOREIGN_WINDOW_OPENGL - replaced with SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN in SDL_CreateWindowWithProperties()
+* SDL_HINT_VIDEO_FOREIGN_WINDOW_VULKAN - replaced with SDL_PROP_WINDOW_CREATE_VULKAN_BOOLEAN in SDL_CreateWindowWithProperties()
 * SDL_HINT_VIDEO_HIGHDPI_DISABLED - high DPI support is always enabled
-* SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT - replaced with the "win32.pixel_format_hwnd" in SDL_CreateWindowWithProperties()
-* SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING - SDL now properly handles the 0x406D1388 Exception if no debugger intercepts it, preventing its propagation.
+* SDL_HINT_VIDEO_WINDOW_SHARE_PIXEL_FORMAT - replaced with SDL_PROP_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER in SDL_CreateWindowWithProperties()
 * SDL_HINT_VIDEO_X11_FORCE_EGL - use SDL_HINT_VIDEO_FORCE_EGL instead
 * SDL_HINT_VIDEO_X11_XINERAMA - Xinerama no longer supported by the X11 backend
 * SDL_HINT_VIDEO_X11_XVIDMODE - Xvidmode no longer supported by the X11 backend
+* SDL_HINT_WINDOWS_DISABLE_THREAD_NAMING - SDL now properly handles the 0x406D1388 Exception if no debugger intercepts it, preventing its propagation.
+* SDL_HINT_WINDOWS_NO_CLOSE_ON_ALT_F4 - replaced with SDL_HINT_WINDOWS_CLOSE_ON_ALT_F4, defaulting to SDL_TRUE
 * SDL_HINT_XINPUT_USE_OLD_JOYSTICK_MAPPING
 
 * Renamed hints SDL_HINT_VIDEODRIVER and SDL_HINT_AUDIODRIVER to SDL_HINT_VIDEO_DRIVER and SDL_HINT_AUDIO_DRIVER
 * Renamed environment variables SDL_VIDEODRIVER and SDL_AUDIODRIVER to SDL_VIDEO_DRIVER and SDL_AUDIO_DRIVER
 * The environment variables SDL_VIDEO_X11_WMCLASS and SDL_VIDEO_WAYLAND_WMCLASS have been removed and replaced with the unified hint SDL_HINT_APP_ID
+
+The following hints have been renamed:
+* SDL_HINT_ALLOW_TOPMOST => SDL_HINT_WINDOW_ALLOW_TOPMOST
+* SDL_HINT_DIRECTINPUT_ENABLED => SDL_HINT_JOYSTICK_DIRECTINPUT
+* SDL_HINT_GDK_TEXTINPUT_DEFAULT => SDL_HINT_GDK_TEXTINPUT_DEFAULT_TEXT
+* SDL_HINT_JOYSTICK_GAMECUBE_RUMBLE_BRAKE => SDL_HINT_JOYSTICK_HIDAPI_GAMECUBE_RUMBLE_BRAKE
+* SDL_HINT_LINUX_DIGITAL_HATS => SDL_HINT_JOYSTICK_LINUX_DIGITAL_HATS
+* SDL_HINT_LINUX_HAT_DEADZONES => SDL_HINT_JOYSTICK_LINUX_HAT_DEADZONES
+* SDL_HINT_LINUX_JOYSTICK_CLASSIC => SDL_HINT_JOYSTICK_LINUX_CLASSIC
+* SDL_HINT_LINUX_JOYSTICK_DEADZONES => SDL_HINT_JOYSTICK_LINUX_DEADZONES
+* SDL_HINT_PS2_DYNAMIC_VSYNC => SDL_HINT_RENDER_PS2_DYNAMIC_VSYNC
 
 ## SDL_init.h
 

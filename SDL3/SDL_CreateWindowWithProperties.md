@@ -29,6 +29,9 @@ These are the supported properties:
   true if the window should be always on top
 - [`SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN`](SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN):
   true if the window has no window decoration
+- [`SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN`](SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN):
+  true if the window will be used with an externally managed graphics
+  context.
 - [`SDL_PROP_WINDOW_CREATE_FOCUSABLE_BOOLEAN`](SDL_PROP_WINDOW_CREATE_FOCUSABLE_BOOLEAN):
   true if the window should accept keyboard input (defaults true)
 - [`SDL_PROP_WINDOW_CREATE_FULLSCREEN_BOOLEAN`](SDL_PROP_WINDOW_CREATE_FULLSCREEN_BOOLEAN):
@@ -91,7 +94,7 @@ These are additional supported properties on macOS:
 
 These are additional supported properties on Wayland:
 
-- [`SDL_PROP_WINDOW_CREATE_WAYLAND_SCALE_TO_DISPLAY`](SDL_PROP_WINDOW_CREATE_WAYLAND_SCALE_TO_DISPLAY)
+- [`SDL_PROP_WINDOW_CREATE_WAYLAND_SCALE_TO_DISPLAY_BOOLEAN`](SDL_PROP_WINDOW_CREATE_WAYLAND_SCALE_TO_DISPLAY_BOOLEAN)
   - true if the window should use forced scaling designed to produce 1:1
   pixel mapping if not flagged as being DPI-aware. This is intended to
   allow legacy applications to be displayed without desktop scaling being

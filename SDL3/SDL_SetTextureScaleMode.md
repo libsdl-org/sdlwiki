@@ -24,6 +24,9 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
+The default texture scale mode is
+[SDL_SCALEMODE_LINEAR](SDL_SCALEMODE_LINEAR).
+
 If the scale mode is not supported, the closest supported mode is chosen.
 
 ## Version
