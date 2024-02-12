@@ -6,7 +6,7 @@ Query the version of SDL_rtf that the program is linked against.
 ## Syntax
 
 ```c
-const SDL_version * RTF_Linked_Version(void);
+const SDL_Version * RTF_Linked_Version(void);
 
 ```
 
