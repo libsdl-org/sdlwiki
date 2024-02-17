@@ -554,6 +554,7 @@
 - [SDL_HasMMX](SDL_HasMMX)
 - [SDL_HasNEON](SDL_HasNEON)
 - [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
+- [SDL_HasProperty](SDL_HasProperty)
 - [SDL_HasRDTSC](SDL_HasRDTSC)
 - [SDL_HasRectIntersection](SDL_HasRectIntersection)
 - [SDL_HasRectIntersectionFloat](SDL_HasRectIntersectionFloat)
