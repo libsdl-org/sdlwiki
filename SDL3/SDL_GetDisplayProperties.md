@@ -31,6 +31,10 @@ The following read-only properties are provided by SDL:
   the luminance, in nits, that SDR white is rendered on this display. If
   this value is not set or is zero, the value 200 is a reasonable default
   when HDR is enabled.
+- [`SDL_PROP_DISPLAY_HDR_WHITE_LEVEL_FLOAT`](SDL_PROP_DISPLAY_HDR_WHITE_LEVEL_FLOAT):
+  the maximum luminance, in nits, of HDR content on this display. If this
+  value is not set or is zero, the value 400 is a reasonable default when
+  HDR is enabled.
 
 ## Version
 
