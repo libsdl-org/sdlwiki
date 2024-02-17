@@ -30,10 +30,6 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_GetProperty](SDL_GetProperty)
-
 ----
 [CategoryAPI](CategoryAPI)
 
