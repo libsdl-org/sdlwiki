@@ -144,7 +144,7 @@ https://wiki.libsdl.org/PageName
 Once your tutorial is complete and the page saved, follow the instructions above for [[#existing|Adding An Existing Tutorial]] to link your tutorial into the Tutorials page.
 
 
-~-[[#ToC|Return to Table of Contents]]-~
+~-[[https://wiki.libsdl.org/SDL3/#ToC|Return to Table of Contents]]-~
 
 
 
