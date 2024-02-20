@@ -23,6 +23,11 @@ int SDL_SetStringProperty(SDL_PropertiesID props, const char *name, const char *
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+This function makes a copy of the string; the caller does not have to
+preserve the data after this call completes.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
