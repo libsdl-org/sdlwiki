@@ -24,11 +24,11 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-The colorspace defaults to [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB) for
-floating point formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for
-10-bit formats, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
-surfaces and [SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for YUV
-textures.
+The colorspace defaults to
+[SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) for floating point
+formats, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit formats,
+[SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB surfaces and
+[SDL_COLORSPACE_BT709_FULL](SDL_COLORSPACE_BT709_FULL) for YUV textures.
 
 ## Version
 

@@ -29,9 +29,10 @@ These are the supported properties:
 
 - [`SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the texture
-  colorspace, defaults to [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB) for
-  floating point textures, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for
-  10-bit textures, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
+  colorspace, defaults to
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) for floating
+  point textures, [SDL_COLORSPACE_HDR10](SDL_COLORSPACE_HDR10) for 10-bit
+  textures, [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB) for other RGB
   textures and [SDL_COLORSPACE_JPEG](SDL_COLORSPACE_JPEG) for YUV textures.
 - [`SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER`](SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER):
   one of the enumerated values in
@@ -44,6 +45,19 @@ These are the supported properties:
   the width of the texture in pixels, required
 - [`SDL_PROP_TEXTURE_CREATE_HEIGHT_NUMBER`](SDL_PROP_TEXTURE_CREATE_HEIGHT_NUMBER):
   the height of the texture in pixels, required
+- [`SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT`](SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT):
+  for HDR10 and floating point textures, this defines the value of 100%
+  diffuse white, with higher values being displayed in the High Dynamic
+  Range headroom. This defaults to 100 for HDR10 textures and 1.0 for
+  floating point textures.
+- [`SDL_PROP_TEXTURE_CREATE_HDR_HEADROOM_FLOAT`](SDL_PROP_TEXTURE_CREATE_HDR_HEADROOM_FLOAT):
+  for HDR10 and floating point textures, this defines the maximum dynamic
+  range used by the content, in terms of the SDR white point. This would be
+  equivalent to maxCLL /
+  [SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT](SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT)
+  for HDR10 content. If this is defined, any values outside the range
+  supported by the display will be scaled into the available HDR headroom,
+  otherwise they are clipped.
 
 With the direct3d11 renderer:
 

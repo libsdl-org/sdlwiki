@@ -36,6 +36,18 @@ The following read-only properties are provided by SDL:
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
   output to the display, defaults to
   [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB).
+- [`SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN`](SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN):
+  true if the output colorspace is
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) and the renderer
+  is showing on a display with HDR enabled.
+- [`SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT`](SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT):
+  the value of SDR white in the
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. When
+  HDR is enabled, this value is automatically multiplied into the color
+  scale.
+- [`SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT`](SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT):
+  the additional high dynamic range that can be displayed, in terms of the
+  SDR white point. When HDR is not enabled, this will be 1.0.
 - [`SDL_PROP_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D9_DEVICE_POINTER):
   the IDirect3DDevice9 associated with the renderer
 - [`SDL_PROP_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D11_DEVICE_POINTER):

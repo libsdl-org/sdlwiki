@@ -28,6 +28,18 @@ The following read-only properties are provided by SDL:
 - [`SDL_PROP_TEXTURE_COLORSPACE_NUMBER`](SDL_PROP_TEXTURE_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace used
   by the texture
+- [`SDL_PROP_TEXTURE_SDR_WHITE_POINT_FLOAT`](SDL_PROP_TEXTURE_SDR_WHITE_POINT_FLOAT):
+  for HDR10 and floating point textures, this defines the value of 100%
+  diffuse white, with higher values being displayed in the High Dynamic
+  Range headroom. This defaults to 100 for HDR10 textures and 1.0 for other
+  textures.
+- [`SDL_PROP_TEXTURE_HDR_HEADROOM_FLOAT`](SDL_PROP_TEXTURE_HDR_HEADROOM_FLOAT):
+  for HDR10 and floating point textures, this defines the maximum dynamic
+  range used by the content, in terms of the SDR white point. If this is
+  defined, any values outside the range supported by the display will be
+  scaled into the available HDR headroom, otherwise they are clipped. This
+  defaults to 1.0 for SDR textures, 4.0 for HDR10 textures, and no default
+  for floating point textures.
 
 With the direct3d11 renderer:
 

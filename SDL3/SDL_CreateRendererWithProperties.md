@@ -36,12 +36,13 @@ These are the supported properties:
 - [`SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
   output to the display, defaults to
-  [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB). The direct3d11 and direct3d12
-  renderers support [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB), which is
-  a linear color space and supports HDR output. If you select
-  [SDL_COLORSPACE_SCRGB](SDL_COLORSPACE_SCRGB), drawing still uses the sRGB
-  colorspace, but values can go beyond 1.0 and float (linear) format
-  textures can be used for HDR content.
+  [SDL_COLORSPACE_SRGB](SDL_COLORSPACE_SRGB). The direct3d11, direct3d12,
+  and metal renderers support
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR), which is a
+  linear color space and supports HDR output. If you select
+  [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR), drawing still
+  uses the sRGB colorspace, but values can go beyond 1.0 and float (linear)
+  format textures can be used for HDR content.
 - [`SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN`](SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN):
   true if you want present synchronized with the refresh rate
 

@@ -6,7 +6,7 @@ Copy an existing surface to a new surface of the specified format and colorspace
 ## Syntax
 
 ```c
-SDL_Surface* SDL_ConvertSurfaceFormatAndColorspace(SDL_Surface *surface, Uint32 pixel_format, SDL_Colorspace colorspace);
+SDL_Surface* SDL_ConvertSurfaceFormatAndColorspace(SDL_Surface *surface, Uint32 pixel_format, SDL_Colorspace colorspace, SDL_PropertiesID props);
 
 ```
 
