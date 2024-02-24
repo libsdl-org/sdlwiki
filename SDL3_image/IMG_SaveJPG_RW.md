@@ -12,12 +12,12 @@ int IMG_SaveJPG_RW(SDL_Surface *surface, SDL_RWops *dst, int freedst, int qualit
 
 ## Function Parameters
 
-|                 |                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------- |
-| **freedst**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
-| **surface**     | the SDL surface to save                                                            |
-| **dst**         | the SDL_RWops to save the image data to.                                           |
-| **freedst**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open. |
+|                 |                                                                                     |
+| --------------- | ----------------------------------------------------------------------------------- |
+| **surface**     | the SDL surface to save                                                             |
+| **dst**         | the SDL_RWops to save the image data to.                                            |
+| **freedst**     | SDL_TRUE to close/free the SDL_RWops before returning, SDL_FALSE to leave it open.  |
+| **quality**     | [0; 33] is Lowest quality, [34; 66] is Middle quality, [67; 100] is Highest quality |
 
 ## Return Value
 
