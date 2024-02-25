@@ -194,6 +194,7 @@
 - [SDL_BlitScaled](SDL_BlitScaled)
 - [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
 - [SDL_CleanupEvent](SDL_CleanupEvent)
+- [SDL_ClearHints](SDL_ClearHints)
 - [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 - [SDL_CloseVideoCapture](SDL_CloseVideoCapture)
 - [SDL_Color](SDL_Color)
