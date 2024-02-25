@@ -39,15 +39,23 @@ The following read-only properties are provided by SDL:
 - [`SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN`](SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN):
   true if the output colorspace is
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) and the renderer
-  is showing on a display with HDR enabled.
+  is showing on a display with HDR enabled. This property can change
+  dynamically when
+  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  is sent.
 - [`SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT`](SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT):
   the value of SDR white in the
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR) colorspace. When
   HDR is enabled, this value is automatically multiplied into the color
-  scale.
+  scale. This property can change dynamically when
+  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  is sent.
 - [`SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT`](SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT):
   the additional high dynamic range that can be displayed, in terms of the
-  SDR white point. When HDR is not enabled, this will be 1.0.
+  SDR white point. When HDR is not enabled, this will be 1.0. This property
+  can change dynamically when
+  [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
+  is sent.
 - [`SDL_PROP_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D9_DEVICE_POINTER):
   the IDirect3DDevice9 associated with the renderer
 - [`SDL_PROP_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D11_DEVICE_POINTER):
