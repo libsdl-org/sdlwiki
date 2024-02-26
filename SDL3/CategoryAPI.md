@@ -921,6 +921,7 @@
 - [SDL_TextInputActive](SDL_TextInputActive)
 - [SDL_TextInputShown](SDL_TextInputShown)
 - [SDL_ThreadID](SDL_ThreadID)
+- [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TLSCleanup](SDL_TLSCleanup)
 - [SDL_TLSCreate](SDL_TLSCreate)
 - [SDL_TLSGet](SDL_TLSGet)
