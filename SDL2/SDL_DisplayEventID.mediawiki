@@ -18,4 +18,5 @@ Event subtype for display events
 |}
 
 ----
-[[CategoryEnum]], [[CategoryEvents]]
+[[CategoryEnum]], [[CategoryVideo]], [[CategoryEvents]]
+

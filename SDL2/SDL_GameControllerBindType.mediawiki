@@ -36,4 +36,5 @@ An enumeration of the different kinds of SDL_Joystick controls a [[SDL_GameContr
 :[[SDL_GameControllerGetBindForButton]]
 
 ----
-[[CategoryEnum]], [[CategoryHeader]], [[CategoryDraft]]
+[[CategoryEnum]], [[CategoryGameController]], [[CategoryDraft]]
+

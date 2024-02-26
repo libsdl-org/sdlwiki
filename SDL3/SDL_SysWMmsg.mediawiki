@@ -95,4 +95,5 @@ There are currently no Cocoa or UIKit window events.
 :[[SDL_version]]
 
 ----
-[[CategoryStruct]], [[CategorySWM]]
+[[CategoryStruct]], [[CategoryEvents]], [[CategorySWM]]
+

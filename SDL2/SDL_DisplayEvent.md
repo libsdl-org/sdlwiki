@@ -35,3 +35,6 @@ while (SDL_PollEvent(&ev) != 0) {
 ## Remarks
 [SDL_DisplayEvent](https://wiki.libsdl.org/SDL_DisplayEvent) is a member of the [SDL_Event](https://wiki.libsdl.org/SDL_Event) union and is used when an event of type SDL_DISPLAYEVENT is reported.  You would access it through the event's <code>display</code> field.
 
+----
+[CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)
+

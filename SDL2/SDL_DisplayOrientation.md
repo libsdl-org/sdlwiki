@@ -15,3 +15,7 @@ Enumeration of Display Orientations
 ## Related Functions
 
 [SDL_GetDisplayOrientation](https://wiki.libsdl.org/SDL_GetDisplayOrientation)
+
+----
+[CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)
+
