@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetUserFolder
 
-Finds the most suitable user folder for @p purpose, and returns its path in OS-specific notation.
+Finds the most suitable user folder for the specified purpose, and returns its path in OS-specific notation.
 
 ## Syntax
 

@@ -466,6 +466,7 @@
 - [SDL_TextureModulate](SDL_TextureModulate)
 - [SDL_ThreadID](SDL_ThreadID)
 - [SDL_ThreadPriority](SDL_ThreadPriority)
+- [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
 - [SDL_TriggerBreakpoint](SDL_TriggerBreakpoint)
 - [SDL_UIKitRunApp](SDL_UIKitRunApp)
