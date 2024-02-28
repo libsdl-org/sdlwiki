@@ -56,14 +56,38 @@ The following read-only properties are provided by SDL:
   can change dynamically when
   [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
   is sent.
+
+With the direct3d renderer:
+
 - [`SDL_PROP_RENDERER_D3D9_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D9_DEVICE_POINTER):
   the IDirect3DDevice9 associated with the renderer
+
+With the direct3d11 renderer:
+
 - [`SDL_PROP_RENDERER_D3D11_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D11_DEVICE_POINTER):
   the ID3D11Device associated with the renderer
+
+With the direct3d12 renderer:
+
 - [`SDL_PROP_RENDERER_D3D12_DEVICE_POINTER`](SDL_PROP_RENDERER_D3D12_DEVICE_POINTER):
   the ID3D12Device associated with the renderer
 - [`SDL_PROP_RENDERER_D3D12_COMMAND_QUEUE_POINTER`](SDL_PROP_RENDERER_D3D12_COMMAND_QUEUE_POINTER):
   the ID3D12CommandQueue associated with the renderer
+
+With the vulkan renderer:
+
+- [`SDL_PROP_RENDERER_VULKAN_INSTANCE_POINTER`](SDL_PROP_RENDERER_VULKAN_INSTANCE_POINTER):
+  the VkInstance associated with the renderer
+- [`SDL_PROP_RENDERER_VULKAN_SURFACE_NUMBER`](SDL_PROP_RENDERER_VULKAN_SURFACE_NUMBER):
+  the VkSurfaceKHR associated with the renderer
+- [`SDL_PROP_RENDERER_VULKAN_PHYSICAL_DEVICE_POINTER`](SDL_PROP_RENDERER_VULKAN_PHYSICAL_DEVICE_POINTER):
+  the VkPhysicalDevice associated with the renderer
+- [`SDL_PROP_RENDERER_VULKAN_DEVICE_POINTER`](SDL_PROP_RENDERER_VULKAN_DEVICE_POINTER):
+  the VkDevice associated with the renderer
+- [`SDL_PROP_RENDERER_VULKAN_GRAPHICS_QUEUE_FAMILY_INDEX_NUMBER`](SDL_PROP_RENDERER_VULKAN_GRAPHICS_QUEUE_FAMILY_INDEX_NUMBER):
+  the queue family index used for rendering
+- [`SDL_PROP_RENDERER_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER`](SDL_PROP_RENDERER_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER):
+  the queue family index used for presentation
 
 ## Version
 
