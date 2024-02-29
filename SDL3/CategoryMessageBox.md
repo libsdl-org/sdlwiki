@@ -1,6 +1,6 @@
 # Message boxes
 
-'''Include File(s):''' [http://hg.libsdl.org/SDL/file/default/include/SDL_messagebox.h SDL_messagebox.h]
+'''Include File(s):''' [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h)
 
 ## Introduction
 
