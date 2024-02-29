@@ -7,22 +7,22 @@
 |'''View the header'''
 |-
 |[[CategoryInit|Initialization and Shutdown]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL.h SDL.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL.h SDL.h]
 |-
 |[[CategoryHints|Configuration Variables]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_hints.h SDL_hints.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h SDL_hints.h]
 |-
 |[[CategoryError|Error Handling]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_error.h SDL_error.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_error.h SDL_error.h]
 |-
 |[[CategoryLog|Log Handling]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_log.h SDL_log.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_log.h SDL_log.h]
 |-
 |[[CategoryAssertions|Assertions]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_assert.h SDL_assert.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_assert.h SDL_assert.h]
 |-
 |[[CategoryVersion|Querying SDL Version]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_version.h SDL_version.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h SDL_version.h]
 |}
 
 
@@ -34,28 +34,28 @@
 |'''View the header'''
 |-
 |[[CategoryVideo|Display and Window Management]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_video.h SDL_video.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h SDL_video.h]
 |-
 |[[CategoryRender|2D Accelerated Rendering]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_render.h SDL_render.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h SDL_render.h]
 |-
 |[[CategoryPixels|Pixel Formats and Conversion Routines]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_pixels.h SDL_pixels.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h SDL_pixels.h]
 |-
 |[[CategoryRect|Rectangle Functions]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_rect.h SDL_rect.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h SDL_rect.h]
 |-
 |[[CategorySurface|Surface Creation and Simple Drawing]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_surface.h SDL_surface.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h SDL_surface.h]
 |-
 |[[CategorySWM|Platform-specific Window Management]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_syswm.h SDL_syswm.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_syswm.h SDL_syswm.h]
 |-
 |[[CategoryClipboard|Clipboard Handling]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_clipboard.h SDL_clipboard.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h SDL_clipboard.h]
 |-
 |[[CategoryVulkan|Vulkan Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_vulkan.h SDL_vulkan.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h SDL_vulkan.h]
 |-
 |[[CategoryMetal|Metal Support]]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL_metal.h SDL_metal.h]
@@ -69,22 +69,22 @@
 |'''View the header'''
 |-
 |[[CategoryEvents|Event Handling]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_events.h SDL_events.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h SDL_events.h]
 |-
 |[[CategoryKeyboard|Keyboard Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_keyboard.h SDL_keyboard.h]<br/>[https://github.com/libsdl-org/SDL/blob/main/include/SDL_keycode.h SDL_keycode.h]<br/>[https://github.com/libsdl-org/SDL/blob/main/include/SDL_scancode.h SDL_scancode.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h SDL_keyboard.h]<br/>[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keycode.h SDL_keycode.h]<br/>[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_scancode.h SDL_scancode.h]
 |-
 |[[CategoryMouse|Mouse Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_mouse.h SDL_mouse.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mouse.h SDL_mouse.h]
 |-
 |[[CategoryJoystick|Joystick Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_joystick.h SDL_joystick.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h SDL_joystick.h]
 |-
 |[[CategoryGamepad|Gamepad Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_gamecontroller.h SDL_gamecontroller.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamecontroller.h SDL_gamecontroller.h]
 |-
 |[[CategorySensor|Sensors]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_sensor.h SDL_sensor.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h SDL_sensor.h]
 |}
 
 
@@ -95,7 +95,7 @@
 |'''View the header'''
 |-
 |[[CategoryForceFeedback|Force Feedback Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_haptic.h SDL_haptic.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h SDL_haptic.h]
 |}
 
 
@@ -106,7 +106,7 @@
 |'''View the header'''
 |-
 |[[CategoryAudio|Audio Device Management, Playing and Recording]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_audio.h SDL_audio.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h SDL_audio.h]
 |}
 
 
@@ -117,13 +117,13 @@
 |'''View the header'''
 |-
 |[[CategoryThread|Thread Management]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_thread.h SDL_thread.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h SDL_thread.h]
 |-
 |[[CategoryMutex|Thread Synchronization Primitives]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_mutex.h SDL_mutex.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mutex.h SDL_mutex.h]
 |-
 |[[CategoryAtomic|Atomic Operations]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_atomic.h SDL_atomic.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_atomic.h SDL_atomic.h]
 |}
 
 
@@ -134,7 +134,7 @@
 |'''View the header'''
 |-
 |[[CategoryTimer|Timer Support]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_timer.h SDL_timer.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_timer.h SDL_timer.h]
 |}
 
 
@@ -145,10 +145,10 @@
 |'''View the header'''
 |-
 |[[CategoryFilesystem|Filesystem Paths]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_filesystem.h SDL_filesystem.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h SDL_filesystem.h]
 |-
 |[[CategoryIO|File I/O Abstraction]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_rwops.h SDL_rwops.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rwops.h SDL_rwops.h]
 |}
 
 
@@ -159,7 +159,7 @@
 |'''View the header'''
 |-
 |[[CategorySharedObject|Shared Object Loading and Function Lookup]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_loadso.h SDL_loadso.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h SDL_loadso.h]
 |}
 
 
@@ -170,16 +170,16 @@
 |'''View the header'''
 |-
 |[[CategoryPlatform|Platform Detection]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_platform.h SDL_platform.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h SDL_platform.h]
 |-
 |[[CategoryCPU|CPU Feature Detection]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_cpuinfo.h SDL_cpuinfo.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h SDL_cpuinfo.h]
 |-
 |[[CategoryEndian|Byte Order and Byte Swapping]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_endian.h SDL_endian.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h SDL_endian.h]
 |-
 |[[CategoryBits|Bit Manipulation]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_bits.h SDL_bits.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h SDL_bits.h]
 |}
 
 
@@ -190,7 +190,7 @@
 |'''View the header'''
 |-
 |[[CategoryPower|Power Management Status]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_power.h SDL_power.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_power.h SDL_power.h]
 |}
 
 
@@ -201,11 +201,12 @@
 |'''View the header'''
 |-
 |[[CategoryMessageBox|Message boxes]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_messagebox.h SDL_messagebox.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h SDL_messagebox.h]
 |-
 |[[CategorySystem|Platform-specific Functionality]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_system.h SDL_system.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h SDL_system.h]
 |-
 |[[CategoryStandard|Standard Library Functionality]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL_stdinc.h SDL_stdinc.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h]
+|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h SDL_stdinc.h]
 |}
