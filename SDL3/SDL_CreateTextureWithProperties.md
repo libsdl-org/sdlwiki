@@ -122,6 +122,12 @@ With the opengles2 renderer:
   the GLuint texture associated with the V plane of a YUV texture, if you
   want to wrap an existing texture.
 
+With the vulkan renderer:
+
+- [`SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER):
+  the VkImage with layout VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL
+  associated with the texture, if you want to wrap an existing texture.
+
 ## Version
 
 This function is available since SDL 3.0.0.

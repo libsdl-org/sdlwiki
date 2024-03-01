@@ -102,6 +102,11 @@ With the opengles2 renderer:
   the GLenum for the texture target (`GL_TEXTURE_2D`,
   `GL_TEXTURE_EXTERNAL_OES`, etc)
 
+With the vulkan renderer:
+
+- [`SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER`](SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER):
+  the VkImage associated with the texture
+
 ## Version
 
 This function is available since SDL 3.0.0.
