@@ -12,11 +12,12 @@ SDL_Surface* SDL_ConvertSurfaceFormatAndColorspace(SDL_Surface *surface, Uint32 
 
 ## Function Parameters
 
-|                      |                                                              |
-| -------------------- | ------------------------------------------------------------ |
-| **surface**          | the existing [SDL_Surface](SDL_Surface) structure to convert |
-| **pixel_format**     | the new pixel format                                         |
-| **colorspace**       | the new colorspace                                           |
+|                      |                                                                                |
+| -------------------- | ------------------------------------------------------------------------------ |
+| **surface**          | the existing [SDL_Surface](SDL_Surface) structure to convert                   |
+| **pixel_format**     | the new pixel format                                                           |
+| **colorspace**       | the new colorspace                                                             |
+| **props**            | an [SDL_PropertiesID](SDL_PropertiesID) with additional color properties, or 0 |
 
 ## Return Value
 

@@ -12,18 +12,20 @@ int SDL_ConvertPixelsAndColorspace(int width, int height, Uint32 src_format, SDL
 
 ## Function Parameters
 
-|                        |                                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------------- |
-| **width**              | the width of the block to copy, in pixels                                               |
-| **height**             | the height of the block to copy, in pixels                                              |
-| **src_format**         | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format          |
-| **src_colorspace**     | an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace of the `src` pixels |
-| **src**                | a pointer to the source pixels                                                          |
-| **src_pitch**          | the pitch of the source pixels, in bytes                                                |
-| **dst_format**         | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format          |
-| **dst_colorspace**     | an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace of the `dst` pixels |
-| **dst**                | a pointer to be filled in with new pixel data                                           |
-| **dst_pitch**          | the pitch of the destination pixels, in bytes                                           |
+|                        |                                                                                            |
+| ---------------------- | ------------------------------------------------------------------------------------------ |
+| **width**              | the width of the block to copy, in pixels                                                  |
+| **height**             | the height of the block to copy, in pixels                                                 |
+| **src_format**         | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `src` pixels format             |
+| **src_colorspace**     | an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace of the `src` pixels    |
+| **src_properties**     | an [SDL_PropertiesID](SDL_PropertiesID) with additional source color properties, or 0      |
+| **src**                | a pointer to the source pixels                                                             |
+| **src_pitch**          | the pitch of the source pixels, in bytes                                                   |
+| **dst_format**         | an [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value of the `dst` pixels format             |
+| **dst_colorspace**     | an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace of the `dst` pixels    |
+| **dst_properties**     | an [SDL_PropertiesID](SDL_PropertiesID) with additional destination color properties, or 0 |
+| **dst**                | a pointer to be filled in with new pixel data                                              |
+| **dst_pitch**          | the pitch of the destination pixels, in bytes                                              |
 
 ## Return Value
 
