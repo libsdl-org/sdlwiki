@@ -51,7 +51,6 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 - [`SDL_INIT_GAMECONTROLLER`](SDL_INIT_GAMECONTROLLER): controller
   subsystem; automatically initializes the joystick subsystem
 - [`SDL_INIT_EVENTS`](SDL_INIT_EVENTS): events subsystem
-- [`SDL_INIT_SENSOR`](SDL_INIT_SENSOR): sensor subsystem
 - [`SDL_INIT_EVERYTHING`](SDL_INIT_EVERYTHING): all of the above subsystems
 - [`SDL_INIT_NOPARACHUTE`](SDL_INIT_NOPARACHUTE): compatibility; this flag
   is ignored
