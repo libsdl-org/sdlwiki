@@ -466,6 +466,7 @@
 - [SDL_Texture](SDL_Texture)
 - [SDL_TextureAccess](SDL_TextureAccess)
 - [SDL_TextureModulate](SDL_TextureModulate)
+- [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_ThreadID](SDL_ThreadID)
 - [SDL_ThreadPriority](SDL_ThreadPriority)
 - [SDL_TimerCallback](SDL_TimerCallback)
