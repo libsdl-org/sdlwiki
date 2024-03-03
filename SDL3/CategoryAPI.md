@@ -920,6 +920,7 @@
 - [SDL_SyncWindow](SDL_SyncWindow)
 - [SDL_TextInputActive](SDL_TextInputActive)
 - [SDL_TextInputShown](SDL_TextInputShown)
+- [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_ThreadID](SDL_ThreadID)
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TLSCleanup](SDL_TLSCleanup)

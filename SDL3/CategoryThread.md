@@ -4,6 +4,7 @@
 - [SDL_GetThreadID](SDL_GetThreadID)
 - [SDL_GetThreadName](SDL_GetThreadName)
 - [SDL_SetThreadPriority](SDL_SetThreadPriority)
+- [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_ThreadID](SDL_ThreadID)
 - [SDL_ThreadPriority](SDL_ThreadPriority)
 - [SDL_TLSCreate](SDL_TLSCreate)
