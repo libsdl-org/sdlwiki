@@ -37,7 +37,7 @@ This function is available since SDL 2.0.0.
 ## Related Functions
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
+* [SDL_CreateWindowAndRenderer](SDL_CreateWindowAndRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
