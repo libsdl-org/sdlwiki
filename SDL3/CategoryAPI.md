@@ -8,6 +8,7 @@
 - [SDL_AddGamepadMappingsFromRW](SDL_AddGamepadMappingsFromRW)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_AddTimer](SDL_AddTimer)
+- [SDL_AddVulkanRenderSemaphores](SDL_AddVulkanRenderSemaphores)
 - [SDL_aligned_alloc](SDL_aligned_alloc)
 - [SDL_aligned_free](SDL_aligned_free)
 - [SDL_AllocateEventMemory](SDL_AllocateEventMemory)
