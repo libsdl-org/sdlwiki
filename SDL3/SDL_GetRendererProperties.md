@@ -88,6 +88,9 @@ With the vulkan renderer:
   the queue family index used for rendering
 - [`SDL_PROP_RENDERER_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER`](SDL_PROP_RENDERER_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER):
   the queue family index used for presentation
+- [`SDL_PROP_RENDERER_VULKAN_SWAPCHAIN_IMAGE_COUNT_NUMBER`](SDL_PROP_RENDERER_VULKAN_SWAPCHAIN_IMAGE_COUNT_NUMBER):
+  the number of swapchain images, or potential frames in flight, used by
+  the Vulkan renderer
 
 ## Version
 
