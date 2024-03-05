@@ -6,15 +6,15 @@ Get the Vulkan instance extensions needed for vkCreateInstance.
 ## Syntax
 
 ```c
-char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *pCount);
+char const* const* SDL_Vulkan_GetInstanceExtensions(int *count);
 
 ```
 
 ## Function Parameters
 
-|                |                                                                                 |
-| -------------- | ------------------------------------------------------------------------------- |
-| **pCount**     | A pointer to Uint32 that will be filled with the number of extensions returned. |
+|               |                                                                                 |
+| ------------- | ------------------------------------------------------------------------------- |
+| **count**     | A pointer to an int that will be filled with the number of extensions returned. |
 
 ## Return Value
 
@@ -27,7 +27,7 @@ This should be called after either calling
 [SDL_Window](SDL_Window) with the [`SDL_WINDOW_VULKAN`](SDL_WINDOW_VULKAN)
 flag.
 
-On return, the variable pointed to by `pCount` will be set to the number of
+On return, the variable pointed to by `count` will be set to the number of
 elements returned, suitable for using with
 VkInstanceCreateInfo::enabledExtensionCount, and the returned array can be
 used with VkInstanceCreateInfo::ppEnabledExtensionNames, for calling
