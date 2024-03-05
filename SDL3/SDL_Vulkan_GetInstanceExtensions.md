@@ -6,15 +6,15 @@ Get the Vulkan instance extensions needed for vkCreateInstance.
 ## Syntax
 
 ```c
-char const* const* SDL_Vulkan_GetInstanceExtensions(int *count);
+char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
 
 ```
 
 ## Function Parameters
 
-|               |                                                                                 |
-| ------------- | ------------------------------------------------------------------------------- |
-| **count**     | A pointer to an int that will be filled with the number of extensions returned. |
+|               |                                                             |
+| ------------- | ----------------------------------------------------------- |
+| **count**     | a pointer filled in with the number of extensions returned. |
 
 ## Return Value
 
