@@ -6,7 +6,7 @@ Get the human readable name of a pixel format.
 ## Syntax
 
 ```c
-const char* SDL_GetPixelFormatName(Uint32 format);
+const char* SDL_GetPixelFormatName(SDL_PixelFormatEnum format);
 
 ```
 

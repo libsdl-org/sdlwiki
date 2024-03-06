@@ -6,7 +6,7 @@ Create an [SDL_PixelFormat](SDL_PixelFormat) structure corresponding to a pixel 
 ## Syntax
 
 ```c
-SDL_PixelFormat * SDL_CreatePixelFormat(Uint32 pixel_format);
+SDL_PixelFormat * SDL_CreatePixelFormat(SDL_PixelFormatEnum pixel_format);
 
 ```
 

@@ -7,7 +7,7 @@ Allocate a new RGB surface with a specific pixel format and existing pixel data.
 
 ```c
 SDL_Surface* SDL_CreateSurfaceFrom
-    (void *pixels, int width, int height, int pitch, Uint32 format);
+    (void *pixels, int width, int height, int pitch, SDL_PixelFormatEnum format);
 
 ```
 
