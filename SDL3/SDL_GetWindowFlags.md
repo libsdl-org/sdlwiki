@@ -6,7 +6,7 @@ Get the window flags.
 ## Syntax
 
 ```c
-Uint32 SDL_GetWindowFlags(SDL_Window *window);
+SDL_WindowFlags SDL_GetWindowFlags(SDL_Window *window);
 
 ```
 

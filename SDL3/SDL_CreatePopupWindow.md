@@ -6,7 +6,7 @@ Create a child popup window of the specified parent window.
 ## Syntax
 
 ```c
-SDL_Window* SDL_CreatePopupWindow(SDL_Window *parent, int offset_x, int offset_y, int w, int h, Uint32 flags);
+SDL_Window* SDL_CreatePopupWindow(SDL_Window *parent, int offset_x, int offset_y, int w, int h, SDL_WindowFlags flags);
 
 ```
 

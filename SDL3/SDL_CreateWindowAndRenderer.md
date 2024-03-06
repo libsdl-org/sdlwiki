@@ -6,7 +6,7 @@ Create a window and default renderer.
 ## Syntax
 
 ```c
-int SDL_CreateWindowAndRenderer(int width, int height, Uint32 window_flags, SDL_Window **window, SDL_Renderer **renderer);
+int SDL_CreateWindowAndRenderer(int width, int height, SDL_WindowFlags window_flags, SDL_Window **window, SDL_Renderer **renderer);
 
 ```
 

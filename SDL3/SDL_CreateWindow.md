@@ -6,7 +6,7 @@ Create a window with the specified dimensions and flags.
 ## Syntax
 
 ```c
-SDL_Window* SDL_CreateWindow(const char *title, int w, int h, Uint32 flags);
+SDL_Window* SDL_CreateWindow(const char *title, int w, int h, SDL_WindowFlags flags);
 
 ```
 
