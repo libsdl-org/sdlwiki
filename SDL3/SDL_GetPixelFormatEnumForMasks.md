@@ -6,7 +6,7 @@ Convert a bpp value and RGBA masks to an enumerated pixel format.
 ## Syntax
 
 ```c
-Uint32 SDL_GetPixelFormatEnumForMasks(int bpp,
+SDL_PixelFormatEnum SDL_GetPixelFormatEnumForMasks(int bpp,
                                   Uint32 Rmask,
                                   Uint32 Gmask,
                                   Uint32 Bmask,
@@ -26,7 +26,9 @@ Uint32 SDL_GetPixelFormatEnumForMasks(int bpp,
 
 ## Return Value
 
-Returns one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
+Returns the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) value corresponding
+to the format masks, or [SDL_PIXELFORMAT_UNKNOWN](SDL_PIXELFORMAT_UNKNOWN)
+if there isn't a match.
 
 ## Remarks
 
