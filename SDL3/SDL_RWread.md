@@ -36,10 +36,6 @@ later.
 [SDL_RWops](SDL_RWops)'s `read` method appropriately, to simplify
 application development.
 
-It is an error to specify a negative `size`, but this parameter is signed
-so you definitely cannot overflow the return value on a successful run with
-enormous amounts of data.
-
 ## Version
 
 This function is available since SDL 3.0.0.
