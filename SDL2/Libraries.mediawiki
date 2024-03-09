@@ -51,7 +51,7 @@ SDL2, through [https://wiki.libsdl.org/SDL_RenderGeometry SDL_RenderGeometry], c
 
 Dear ImGUI:
 : [https://github.com/ocornut/imgui Dear ImGui website] 
-: [https://github.com/ocornut/imgui/tree/master/examples/example_sdl_sdlrenderer Example source code] 
+: [https://github.com/ocornut/imgui/tree/master/examples/example_sdl2_sdlrenderer2 Example source code] 
 
 Nuklear:
 : [https://github.com/Immediate-Mode-UI/Nuklear Nuklear website]
