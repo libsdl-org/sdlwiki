@@ -37,7 +37,7 @@ this can be used to query the current volume without making changes, as
 this function returns the previous (in this case, still-current) value.
 
 Note that the master volume does not affect any playing music; it is only
-applied when mixing chunks. Use [Mix_MusicVolume](Mix_MusicVolume)() for
+applied when mixing chunks. Use [Mix_VolumeMusic](Mix_VolumeMusic)() for
 that.\
 
 ## Version
