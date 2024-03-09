@@ -198,6 +198,7 @@ http://en.wikipedia.org/wiki/RGBA_color_space
 :[[SDL_GetRGBA]]
 :[[SDL_MapRGB]]
 :[[SDL_MapRGBA]]
-
+:[[SDL_AllocFormat]]
+:[[SDL_FreeFormat]]
 ----
 [[CategoryStruct]], [[CategoryPixels]]
