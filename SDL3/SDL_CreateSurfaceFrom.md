@@ -18,7 +18,7 @@ SDL_Surface* SDL_CreateSurfaceFrom
 | **pixels**     | a pointer to existing pixel data                                                   |
 | **width**      | the width of the surface                                                           |
 | **height**     | the height of the surface                                                          |
-| **pitch**      | the pitch of the surface in bytes                                                  |
+| **pitch**      | the number of bytes between each row, including padding                            |
 | **format**     | the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) for the new surface's pixel format. |
 
 ## Return Value
