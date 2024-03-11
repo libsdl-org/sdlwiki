@@ -6,8 +6,7 @@ Get the current state of an axis control on a joystick.
 ## Syntax
 
 ```c
-Sint16 SDL_GetJoystickAxis(SDL_Joystick *joystick,
-                           int axis);
+Sint16 SDL_GetJoystickAxis(SDL_Joystick *joystick, int axis);
 
 ```
 

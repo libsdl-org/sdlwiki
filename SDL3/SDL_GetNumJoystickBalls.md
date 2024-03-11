@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_GetJoystickButton
+# SDL_GetNumJoystickBalls
 
-Get the current state of a button on a joystick.
+Get the number of trackballs on a joystick.
 
 ## Syntax
 
 ```c
-Uint8 SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
+int SDL_GetNumJoystickBalls(SDL_Joystick *joystick);
 
 ```
 
@@ -15,11 +15,18 @@ Uint8 SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
 |                  |                                                                           |
 | ---------------- | ------------------------------------------------------------------------- |
 | **joystick**     | an [SDL_Joystick](SDL_Joystick) structure containing joystick information |
-| **button**       | the button index to get the state from; indices start at index 0          |
 
 ## Return Value
 
-Returns 1 if the specified button is pressed, 0 otherwise.
+Returns the number of trackballs on success or a negative error code on
+failure; call [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+Joystick trackballs have only relative motion events associated with them
+and their state cannot be polled.
+
+Most joysticks do not have trackballs.
 
 ## Version
 
@@ -27,7 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetNumJoystickButtons](SDL_GetNumJoystickButtons)
+* [SDL_GetJoystickBall](SDL_GetJoystickBall)
 
 ----
 [CategoryAPI](CategoryAPI)

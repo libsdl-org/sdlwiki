@@ -6,8 +6,7 @@ Get the initial state of an axis control on a joystick.
 ## Syntax
 
 ```c
-SDL_bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick,
-                           int axis, Sint16 *state);
+SDL_bool SDL_GetJoystickAxisInitialState(SDL_Joystick *joystick, int axis, Sint16 *state);
 
 ```
 

@@ -6,8 +6,7 @@ Get the current state of a POV hat on a joystick.
 ## Syntax
 
 ```c
-Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick,
-                         int hat);
+Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick, int hat);
 
 ```
 
