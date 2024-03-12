@@ -95,6 +95,13 @@ On non-Apple devices, SDL requires you to either not link to the Vulkan
 loader or link to a dynamic library version. This limitation may be removed
 in a future version of SDL.
 
+Additionally, a newly created window might not have mouse focus (but keyboard
+focus only). By default, SDL will ignore mouse clicks that activate a window,
+for its events queue thus a click in a newly created / out of focus window will
+not create an event.  
+Use `SDL_SetHint(SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH, "1");` to override this and
+to receive an event from [SDL_PollEvent](SDL_PollEvent)() in such case.
+
 ## Version
 
 This function is available since SDL 2.0.0.
