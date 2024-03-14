@@ -5,7 +5,7 @@
 
 = SDL Keycode Lookup Table =
 
-Keycodes for keys with printable characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their [[SDL_Scancode|scancode]] bitwise OR-ed with <code>1<<30</code> (0x40000000).
+Keycodes for keys with printable ASCII characters are represented by the character byte in parentheses. Keycodes without character representations are determined by their [[SDL_Scancode|scancode]] bitwise OR-ed with <code>1<<30</code> (0x40000000). The table below does not list all possible values for the SDL_Keycode type: it omits non-ASCII Unicode characters.
 
 {|
 |''Decimal Value''
