@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_ReadS64LE
 
-Use this function to read 64 bits of little-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
+Use this function to read 64 bits of little-endian data from an [SDL_IOStream](SDL_IOStream) and return in native format.
 
 ## Syntax
 
 ```c
-SDL_bool SDL_ReadS64LE(SDL_RWops *src, Sint64 *value);
+SDL_bool SDL_ReadS64LE(SDL_IOStream *src, Sint64 *value);
 
 ```
 

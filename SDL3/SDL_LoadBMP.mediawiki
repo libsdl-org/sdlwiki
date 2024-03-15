@@ -51,7 +51,7 @@ SDL_DestroySurface(image);
 == Related Functions ==
 
 :[[SDL_DestroySurface]]
-:[[SDL_LoadBMP_RW]]
+:[[SDL_LoadBMP_IO]]
 :[[SDL_SaveBMP]]
 
 ----

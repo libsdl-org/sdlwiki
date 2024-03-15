@@ -8,21 +8,21 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_WriteU8
 
-Use this function to write a byte to an [SDL_RWops](SDL_RWops).
+Use this function to write a byte to an [SDL_IOStream](SDL_IOStream).
 
 ## Syntax
 
 ```c
-SDL_bool SDL_WriteU8(SDL_RWops *dst, Uint8 value);
+SDL_bool SDL_WriteU8(SDL_IOStream *dst, Uint8 value);
 
 ```
 
 ## Function Parameters
 
-|               |                                        |
-| ------------- | -------------------------------------- |
-| **dst**       | the [SDL_RWops](SDL_RWops) to write to |
-| **value**     | the byte value to write                |
+|               |                                              |
+| ------------- | -------------------------------------------- |
+| **dst**       | the [SDL_IOStream](SDL_IOStream) to write to |
+| **value**     | the byte value to write                      |
 
 ## Return Value
 

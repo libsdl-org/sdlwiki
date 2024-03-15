@@ -1,20 +1,21 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_AddGamepadMappingsFromFile
+# SDL_AddGamepadMappingsFromIO
 
-Load a set of gamepad mappings from a file.
+Load a set of gamepad mappings from a seekable SDL data stream.
 
 ## Syntax
 
 ```c
-int SDL_AddGamepadMappingsFromFile(const char *file);
+int SDL_AddGamepadMappingsFromIO(SDL_IOStream *src, SDL_bool closeio);
 
 ```
 
 ## Function Parameters
 
-|              |                           |
-| ------------ | ------------------------- |
-| **file**     | the mappings file to load |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **src**         | the data stream for the mappings to be added                                                                        |
+| **closeio**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
 
 ## Return Value
 
@@ -33,6 +34,10 @@ Mappings not belonging to the current platform or with no platform field
 specified will be ignored (i.e. mappings for Linux will be ignored in
 Windows, etc).
 
+This function will load the text database entirely in memory before
+processing it, so take this into consideration if you are in a memory
+constrained environment.
+
 ## Version
 
 This function is available since SDL 3.0.0.
@@ -40,7 +45,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-* [SDL_AddGamepadMappingsFromIO](SDL_AddGamepadMappingsFromIO)
+* [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----

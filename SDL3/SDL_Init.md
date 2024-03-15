@@ -28,7 +28,7 @@ Returns 0 on success or a negative error code on failure; call
 interchangeably. Though for readability of your code
 [SDL_InitSubSystem](SDL_InitSubSystem)() might be preferred.
 
-The file I/O (for example: [SDL_RWFromFile](SDL_RWFromFile)) and threading
+The file I/O (for example: [SDL_IOFromFile](SDL_IOFromFile)) and threading
 ([SDL_CreateThread](SDL_CreateThread)) subsystems are initialized by
 default. Message boxes
 ([SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)) also attempt to work

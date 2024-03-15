@@ -56,7 +56,7 @@ This function is available since SDL 3.0.0.
 == Related Functions ==
 
 :[[SDL_LoadBMP]]
-:[[SDL_SaveBMP_RW]]
+:[[SDL_SaveBMP_IO]]
 
 ----
 [[CategoryAPI]], [[CategorySurface]]

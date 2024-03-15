@@ -8,21 +8,21 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_ReadU8
 
-Use this function to read a byte from an [SDL_RWops](SDL_RWops).
+Use this function to read a byte from an [SDL_IOStream](SDL_IOStream).
 
 ## Syntax
 
 ```c
-SDL_bool SDL_ReadU8(SDL_RWops *src, Uint8 *value);
+SDL_bool SDL_ReadU8(SDL_IOStream *src, Uint8 *value);
 
 ```
 
 ## Function Parameters
 
-|               |                                         |
-| ------------- | --------------------------------------- |
-| **src**       | the [SDL_RWops](SDL_RWops) to read from |
-| **value**     | a pointer filled in with the data read  |
+|               |                                               |
+| ------------- | --------------------------------------------- |
+| **src**       | the [SDL_IOStream](SDL_IOStream) to read from |
+| **value**     | a pointer filled in with the data read        |
 
 ## Return Value
 

@@ -1,0 +1,46 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_TellIO
+
+Determine the current read/write offset in an [SDL_IOStream](SDL_IOStream) data stream.
+
+## Syntax
+
+```c
+Sint64 SDL_TellIO(SDL_IOStream *context);
+
+```
+
+## Function Parameters
+
+|                 |                                                                                         |
+| --------------- | --------------------------------------------------------------------------------------- |
+| **context**     | an [SDL_IOStream](SDL_IOStream) data stream object from which to get the current offset |
+
+## Return Value
+
+Returns the current offset in the stream, or -1 if the information can not
+be determined.
+
+## Remarks
+
+[SDL_TellIO](SDL_TellIO) is actually a wrapper function that calls the
+[SDL_IOStream](SDL_IOStream)'s `seek` method, with an offset of 0 bytes
+from [`SDL_IO_SEEK_CUR`](SDL_IO_SEEK_CUR), to simplify application
+development.
+
+## Version
+
+This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_IOFromConstMem](SDL_IOFromConstMem)
+* [SDL_IOFromFile](SDL_IOFromFile)
+* [SDL_IOFromMem](SDL_IOFromMem)
+* [SDL_ReadIO](SDL_ReadIO)
+* [SDL_SeekIO](SDL_SeekIO)
+* [SDL_WriteIO](SDL_WriteIO)
+
+----
+[CategoryAPI](CategoryAPI)
+

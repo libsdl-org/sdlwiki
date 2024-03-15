@@ -44,7 +44,7 @@ When the application is done with the data returned in
 This is a convenience function that is effectively the same as:
 
 <syntaxhighlight lang='c'>
-SDL_LoadWAV_RW(SDL_RWFromFile(path, "rb"), 1, spec, audio_buf, audio_len);
+SDL_LoadWAV_IO(SDL_IOFromFile(path, "rb"), 1, spec, audio_buf, audio_len);
 </syntaxhighlight>
 
 Note that in SDL2, this was a preprocessor macro and not a real function.
@@ -76,7 +76,7 @@ if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
 == Related Functions ==
 
 :[[SDL_free]]
-:[[SDL_LoadWAV_RW]]
+:[[SDL_LoadWAV_IO]]
 
 ----
 [[CategoryAPI]], CategoryAudio

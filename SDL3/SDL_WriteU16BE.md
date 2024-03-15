@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_WriteU16BE
 
-Use this function to write 16 bits in native format to an [SDL_RWops](SDL_RWops) as big-endian data.
+Use this function to write 16 bits in native format to an [SDL_IOStream](SDL_IOStream) as big-endian data.
 
 ## Syntax
 
 ```c
-SDL_bool SDL_WriteU16BE(SDL_RWops *dst, Uint16 value);
+SDL_bool SDL_WriteU16BE(SDL_IOStream *dst, Uint16 value);
 
 ```
 

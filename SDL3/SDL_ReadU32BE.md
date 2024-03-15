@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_ReadU32BE
 
-Use this function to read 32 bits of big-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
+Use this function to read 32 bits of big-endian data from an [SDL_IOStream](SDL_IOStream) and return in native format.
 
 ## Syntax
 
 ```c
-SDL_bool SDL_ReadU32BE(SDL_RWops *src, Uint32 *value);
+SDL_bool SDL_ReadU32BE(SDL_IOStream *src, Uint32 *value);
 
 ```
 

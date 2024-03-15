@@ -1,0 +1,44 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_LoadBMP_IO
+
+Load a BMP image from a seekable SDL data stream.
+
+## Syntax
+
+```c
+SDL_Surface* SDL_LoadBMP_IO(SDL_IOStream *src, SDL_bool closeio);
+
+```
+
+## Function Parameters
+
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **src**         | the data stream for the surface                                                                                     |
+| **closeio**     | if [SDL_TRUE](SDL_TRUE), calls [SDL_CloseIO](SDL_CloseIO)() on `src` before returning, even in the case of an error |
+
+## Return Value
+
+Returns a pointer to a new [SDL_Surface](SDL_Surface) structure or NULL if
+there was an error; call [SDL_GetError](SDL_GetError)() for more
+information.
+
+## Remarks
+
+The new surface should be freed with
+[SDL_DestroySurface](SDL_DestroySurface)(). Not doing so will result in a
+memory leak.
+
+## Version
+
+This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_DestroySurface](SDL_DestroySurface)
+* [SDL_LoadBMP](SDL_LoadBMP)
+* [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
+
+----
+[CategoryAPI](CategoryAPI)
+
