@@ -98,6 +98,8 @@ queried each time it is shown.
   the xdg_surface associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_POINTER):
   the xdg_toplevel role associated with the window
+- '[SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_EXPORT_HANDLE_POINTER](SDL_PROP_WINDOW_WAYLAND_XDG_TOPLEVEL_EXPORT_HANDLE_POINTER)':
+  the export handle associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_POPUP_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_POPUP_POINTER):
   the xdg_popup role associated with the window
 - [`SDL_PROP_WINDOW_WAYLAND_XDG_POSITIONER_POINTER`](SDL_PROP_WINDOW_WAYLAND_XDG_POSITIONER_POINTER):
