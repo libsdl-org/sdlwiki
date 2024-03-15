@@ -44,7 +44,6 @@
 - [SDL_Rect](SDL_Rect)
 - [SDL_Renderer](SDL_Renderer)
 - [SDL_RendererInfo](SDL_RendererInfo)
-- [SDL_RWops](SDL_RWops)
 - [SDL_SensorEvent](SDL_SensorEvent)
 - [SDL_Surface](SDL_Surface)
 - [SDL_SysWMEvent](SDL_SysWMEvent)

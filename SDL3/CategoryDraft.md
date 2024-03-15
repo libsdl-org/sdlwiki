@@ -143,7 +143,6 @@
 - [SDL_PointInRect](SDL_PointInRect)
 - [SDL_ReadU8](SDL_ReadU8)
 - [SDL_Renderer](SDL_Renderer)
-- [SDL_RWsize](SDL_RWsize)
 - [SDL_Scancode](SDL_Scancode)
 - [SDL_ScancodeAndKeycode](SDL_ScancodeAndKeycode)
 - [SDL_SetCursor](SDL_SetCursor)

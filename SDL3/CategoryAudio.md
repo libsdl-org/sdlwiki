@@ -15,7 +15,6 @@
 - [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 - [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 - [SDL_LoadWAV](SDL_LoadWAV)
-- [SDL_LoadWAV_RW](SDL_LoadWAV_RW)
 - [SDL_LockAudioDevice](SDL_LockAudioDevice)
 - [SDL_MixAudioFormat](SDL_MixAudioFormat)
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
