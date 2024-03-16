@@ -1,0 +1,47 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_StorageReady
+
+Checks if the storage container is ready to use.
+
+## Syntax
+
+```c
+SDL_bool SDL_StorageReady(SDL_Storage *storage);
+
+```
+
+## Function Parameters
+
+|                 |                              |
+| --------------- | ---------------------------- |
+| **storage**     | a storage container to query |
+
+## Return Value
+
+Returns [SDL_TRUE](SDL_TRUE) if the container is ready,
+[SDL_FALSE](SDL_FALSE) otherwise
+
+## Remarks
+
+This function should be called in regular intervals until it returns
+[SDL_TRUE](SDL_TRUE) - however, it is not recommended to spinwait on this
+call, as the backend may depend on a synchronous message loop.
+
+## Version
+
+This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
+* [SDL_OpenUserStorage](SDL_OpenUserStorage)
+* [SDL_OpenStorage](SDL_OpenStorage)
+* [SDL_CloseStorage](SDL_CloseStorage)
+* [SDL_StorageFileSize](SDL_StorageFileSize)
+* [SDL_StorageReadFile](SDL_StorageReadFile)
+* [SDL_StorageWriteFile](SDL_StorageWriteFile)
+* [SDL_StorageSpaceRemaining](SDL_StorageSpaceRemaining)
+
+----
+[CategoryAPI](CategoryAPI)
+
