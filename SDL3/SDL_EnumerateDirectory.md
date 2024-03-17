@@ -1,0 +1,32 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_EnumerateDirectory
+
+Enumerate a directory.
+
+## Syntax
+
+```c
+int SDL_EnumerateDirectory(const char *path, SDL_EnumerateDirectoryCallback callback, void *userdata);
+
+```
+
+## Function Parameters
+
+|                  |                                                           |
+| ---------------- | --------------------------------------------------------- |
+| **path**         | the path of the directory to enumerate                    |
+| **callback**     | a function that is called for each entry in the directory |
+| **userdata**     | a pointer that is passed to `callback`                    |
+
+## Return Value
+
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
+
+## Version
+
+This function is available since SDL 3.0.0.
+
+----
+[CategoryAPI](CategoryAPI)
+

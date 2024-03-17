@@ -1,25 +1,26 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_OpenTitleStorage
+# SDL_GetStorageFileSize
 
-Opens up a read-only container for the application's filesystem.
+Query the size of a file within a storage container.
 
 ## Syntax
 
 ```c
-SDL_Storage* SDL_OpenTitleStorage(const char *override, SDL_PropertiesID props);
+int SDL_GetStorageFileSize(SDL_Storage *storage, const char *path, Uint64 *length);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                               |
-| ---------------- | ------------------------------------------------------------- |
-| **override**     | a path to override the backend's default title root           |
-| **props**        | a property list that may contain backend-specific information |
+|                 |                                               |
+| --------------- | --------------------------------------------- |
+| **storage**     | a storage container to query                  |
+| **path**        | the relative path of the file to query        |
+| **length**      | a pointer to be filled with the file's length |
 
 ## Return Value
 
-Returns a title storage container on success or NULL on failure; call
+Returns 0 if the file could be queried, a negative value otherwise; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
@@ -28,12 +29,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
 * [SDL_OpenUserStorage](SDL_OpenUserStorage)
 * [SDL_OpenStorage](SDL_OpenStorage)
-* [SDL_TitleStorageReady](SDL_TitleStorageReady)
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_StorageReady](SDL_StorageReady)
-* [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 * [SDL_ReadStorageFile](SDL_ReadStorageFile)
 * [SDL_WriteStorageFile](SDL_WriteStorageFile)
 * [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)

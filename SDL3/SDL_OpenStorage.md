@@ -40,10 +40,10 @@ This function is available since SDL 3.0.0.
 * [SDL_OpenUserStorage](SDL_OpenUserStorage)
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_StorageReady](SDL_StorageReady)
-* [SDL_StorageFileSize](SDL_StorageFileSize)
-* [SDL_StorageReadFile](SDL_StorageReadFile)
-* [SDL_StorageWriteFile](SDL_StorageWriteFile)
-* [SDL_StorageSpaceRemaining](SDL_StorageSpaceRemaining)
+* [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
+* [SDL_ReadStorageFile](SDL_ReadStorageFile)
+* [SDL_WriteStorageFile](SDL_WriteStorageFile)
+* [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
 
 ----
 [CategoryAPI](CategoryAPI)

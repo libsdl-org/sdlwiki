@@ -27,7 +27,7 @@ Returns a user storage container on success or NULL on failure; call
 
 While title storage can generally be kept open throughout runtime, user
 storage should only be opened when the client is ready to read/write files.
-This allows the backend to properly batch R/W operations and flush them
+This allows the backend to properly batch file operations and flush them
 when the container has been closed; ensuring safe and optimal save I/O.
 
 ## Version
@@ -40,10 +40,10 @@ This function is available since SDL 3.0.0.
 * [SDL_OpenStorage](SDL_OpenStorage)
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_StorageReady](SDL_StorageReady)
-* [SDL_StorageFileSize](SDL_StorageFileSize)
-* [SDL_StorageReadFile](SDL_StorageReadFile)
-* [SDL_StorageWriteFile](SDL_StorageWriteFile)
-* [SDL_StorageSpaceRemaining](SDL_StorageSpaceRemaining)
+* [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
+* [SDL_ReadStorageFile](SDL_ReadStorageFile)
+* [SDL_WriteStorageFile](SDL_WriteStorageFile)
+* [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
 
 ----
 [CategoryAPI](CategoryAPI)

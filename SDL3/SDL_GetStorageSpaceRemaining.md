@@ -1,12 +1,12 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_CloseStorage
+# SDL_GetStorageSpaceRemaining
 
-Closes and frees a storage container.
+Queries the remaining space in a storage container.
 
 ## Syntax
 
 ```c
-int SDL_CloseStorage(SDL_Storage *storage);
+Uint64 SDL_GetStorageSpaceRemaining(SDL_Storage *storage);
 
 ```
 
@@ -14,14 +14,11 @@ int SDL_CloseStorage(SDL_Storage *storage);
 
 |                 |                              |
 | --------------- | ---------------------------- |
-| **storage**     | a storage container to close |
+| **storage**     | a storage container to query |
 
 ## Return Value
 
-Returns 0 if the container was freed with no errors, a negative value
-otherwise; call [SDL_GetError](SDL_GetError)() for more information. Even
-if the function returns an error, the container data will be freed; the
-error is only for informational purposes.
+Returns the amount of remaining space, in bytes
 
 ## Version
 
@@ -32,11 +29,11 @@ This function is available since SDL 3.0.0.
 * [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
 * [SDL_OpenUserStorage](SDL_OpenUserStorage)
 * [SDL_OpenStorage](SDL_OpenStorage)
+* [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_StorageReady](SDL_StorageReady)
 * [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 * [SDL_ReadStorageFile](SDL_ReadStorageFile)
 * [SDL_WriteStorageFile](SDL_WriteStorageFile)
-* [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
 
 ----
 [CategoryAPI](CategoryAPI)

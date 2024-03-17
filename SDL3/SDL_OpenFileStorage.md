@@ -1,26 +1,31 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_OpenTitleStorage
+# SDL_OpenFileStorage
 
-Opens up a read-only container for the application's filesystem.
+Opens up a container for local filesystem storage.
 
 ## Syntax
 
 ```c
-SDL_Storage* SDL_OpenTitleStorage(const char *override, SDL_PropertiesID props);
+SDL_Storage* SDL_OpenFileStorage(const char *path);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                               |
-| ---------------- | ------------------------------------------------------------- |
-| **override**     | a path to override the backend's default title root           |
-| **props**        | a property list that may contain backend-specific information |
+|              |                                                                        |
+| ------------ | ---------------------------------------------------------------------- |
+| **path**     | the base path prepended to all storage paths, or NULL for no base path |
 
 ## Return Value
 
-Returns a title storage container on success or NULL on failure; call
+Returns a filesystem storage container on success or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+This is provided for development and tools. Portable applications should
+use [SDL_OpenTitleStorage](SDL_OpenTitleStorage)() for access to game data
+and [SDL_OpenUserStorage](SDL_OpenUserStorage)() for access to user data.
 
 ## Version
 
@@ -28,9 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenUserStorage](SDL_OpenUserStorage)
 * [SDL_OpenStorage](SDL_OpenStorage)
-* [SDL_TitleStorageReady](SDL_TitleStorageReady)
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_StorageReady](SDL_StorageReady)
 * [SDL_GetStorageFileSize](SDL_GetStorageFileSize)

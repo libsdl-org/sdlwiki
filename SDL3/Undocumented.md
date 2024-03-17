@@ -3,6 +3,7 @@
 ## Functions defined in the headers, but not in the wiki
 
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
+- [SDL_FileTimeToWindows](SDL_FileTimeToWindows)
 - [SDL_FlipSurface](SDL_FlipSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
@@ -434,6 +435,9 @@
 - [SDL_SoftStretchLinear](SDL_SoftStretchLinear)
 - [SDL_StartVideoCapture](SDL_StartVideoCapture)
 - [SDL_StopVideoCapture](SDL_StopVideoCapture)
+- [SDL_StorageFileSize](SDL_StorageFileSize)
+- [SDL_StorageReadFile](SDL_StorageReadFile)
+- [SDL_StorageSpaceRemaining](SDL_StorageSpaceRemaining)
 - [SDL_Surface](SDL_Surface)
 - [SDL_Swap16](SDL_Swap16)
 - [SDL_Swap32](SDL_Swap32)
