@@ -3,6 +3,7 @@
 ## Functions defined in the headers, but not in the wiki
 
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
+- [SDL_FileTimeFromWindows](SDL_FileTimeFromWindows)
 - [SDL_FileTimeToWindows](SDL_FileTimeToWindows)
 - [SDL_FlipSurface](SDL_FlipSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
