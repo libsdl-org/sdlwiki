@@ -22,10 +22,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_BroadcastCondition](SDL_BroadcastCondition)
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitCondition](SDL_WaitCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 * [SDL_CreateCondition](SDL_CreateCondition)
 
 ----

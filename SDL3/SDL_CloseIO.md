@@ -38,12 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_IOFromConstMem](SDL_IOFromConstMem)
-* [SDL_IOFromFile](SDL_IOFromFile)
-* [SDL_IOFromMem](SDL_IOFromMem)
-* [SDL_ReadIO](SDL_ReadIO)
-* [SDL_SeekIO](SDL_SeekIO)
-* [SDL_WriteIO](SDL_WriteIO)
+* [SDL_OpenIO](SDL_OpenIO)
 
 ----
 [CategoryAPI](CategoryAPI)

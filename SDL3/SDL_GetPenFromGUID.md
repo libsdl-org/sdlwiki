@@ -26,10 +26,6 @@ Returns A valid ::[SDL_PenID](SDL_PenID), or
 
 This function is available since SDL 3.0.0
 
-## Related Functions
-
-* [SDL_GUID](SDL_GUID)
-
 ----
 [CategoryAPI](CategoryAPI)
 

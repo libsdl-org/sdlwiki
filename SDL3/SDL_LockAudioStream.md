@@ -49,8 +49,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_UnlockAudioStream](SDL_UnlockAudioStream)
-* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
-* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
 
 ----
 [CategoryAPI](CategoryAPI)

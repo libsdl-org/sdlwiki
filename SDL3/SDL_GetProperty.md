@@ -46,7 +46,11 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
+* [SDL_GetFloatProperty](SDL_GetFloatProperty)
+* [SDL_GetNumberProperty](SDL_GetNumberProperty)
 * [SDL_GetPropertyType](SDL_GetPropertyType)
+* [SDL_GetStringProperty](SDL_GetStringProperty)
 * [SDL_HasProperty](SDL_HasProperty)
 * [SDL_SetProperty](SDL_SetProperty)
 

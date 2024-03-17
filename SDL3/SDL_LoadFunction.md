@@ -71,7 +71,6 @@ if (myFancyFunction != NULL) {
 ## Related Functions
 
 * [SDL_LoadObject](SDL_LoadObject)
-* [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
 [CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)

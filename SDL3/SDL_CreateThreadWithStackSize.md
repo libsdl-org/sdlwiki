@@ -6,8 +6,7 @@ Create a new thread with a specific stack size.
 ## Syntax
 
 ```c
-extern DECLSPEC SDL_Thread *SDLCALL
-SDL_CreateThreadWithStackSize(SDL_ThreadFunction fn, const char *name, const size_t stacksize, void *data);
+SDL_Thread * SDL_CreateThreadWithStackSize(SDL_ThreadFunction fn, const char *name, const size_t stacksize, void *data);
 
 ```
 
@@ -58,6 +57,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_CreateThread](SDL_CreateThread)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----

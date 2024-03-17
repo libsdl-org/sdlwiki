@@ -30,6 +30,11 @@ This can be called before any joysticks are opened.
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_GetJoystickType](SDL_GetJoystickType)
+* [SDL_GetJoysticks](SDL_GetJoysticks)
+
 ----
 [CategoryAPI](CategoryAPI)
 

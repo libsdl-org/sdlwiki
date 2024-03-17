@@ -29,6 +29,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
+* [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)

@@ -33,6 +33,8 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_DestroyPalette](SDL_DestroyPalette)
+* [SDL_SetPaletteColors](SDL_SetPaletteColors)
+* [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
 
 ----
 [CategoryAPI](CategoryAPI)

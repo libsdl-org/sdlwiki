@@ -34,6 +34,10 @@ The data should be freed with [SDL_free](SDL_free)().
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_LoadFile](SDL_LoadFile)
+
 ----
 [CategoryAPI](CategoryAPI)
 

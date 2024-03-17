@@ -31,10 +31,6 @@ until the specified thread is cleaned up by
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_CreateThread](SDL_CreateThread)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
 

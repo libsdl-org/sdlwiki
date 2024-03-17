@@ -46,10 +46,6 @@ If NULL is returned, the error may be obtained with
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_Folder](SDL_Folder)
-
 ----
 [CategoryAPI](CategoryAPI)
 

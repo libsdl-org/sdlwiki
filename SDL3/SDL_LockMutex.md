@@ -60,6 +60,11 @@ SDL_DestroyMutex(mutex);
 ```
 <!-- # End Mutex Example -->
 
+## Related Functions
+
+* [SDL_TryLockMutex](SDL_TryLockMutex)
+* [SDL_UnlockMutex](SDL_UnlockMutex)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 

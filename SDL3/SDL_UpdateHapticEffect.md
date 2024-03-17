@@ -36,7 +36,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DestroyHapticEffect](SDL_DestroyHapticEffect)
 * [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
 * [SDL_RunHapticEffect](SDL_RunHapticEffect)
 

@@ -41,6 +41,7 @@ This function is available since SDL 3.0.0.
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 * [SDL_AddGamepadMappingsFromIO](SDL_AddGamepadMappingsFromIO)
+* [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----

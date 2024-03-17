@@ -27,7 +27,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenHaptic](SDL_OpenHaptic)
 * [SDL_PlayHapticRumble](SDL_PlayHapticRumble)
 * [SDL_StopHapticRumble](SDL_StopHapticRumble)
 * [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)

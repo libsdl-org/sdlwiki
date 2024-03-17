@@ -36,11 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateSemaphore](SDL_CreateSemaphore)
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
 * [SDL_PostSemaphore](SDL_PostSemaphore)
 * [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
 * [SDL_WaitSemaphore](SDL_WaitSemaphore)
 
 ----

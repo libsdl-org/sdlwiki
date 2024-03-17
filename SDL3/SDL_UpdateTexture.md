@@ -44,9 +44,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_LockTexture](SDL_LockTexture)
 * [SDL_UnlockTexture](SDL_UnlockTexture)
+* [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
+* [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)

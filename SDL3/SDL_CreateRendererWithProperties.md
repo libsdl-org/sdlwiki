@@ -67,6 +67,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_CreateProperties](SDL_CreateProperties)
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 * [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)

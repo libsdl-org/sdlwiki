@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_AddGamepadMappingsFromIO
 
-Load a set of gamepad mappings from a seekable SDL data stream.
+Load a set of gamepad mappings from an [SDL_IOStream](SDL_IOStream).
 
 ## Syntax
 
@@ -46,6 +46,7 @@ This function is available since SDL 3.0.0.
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 * [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
+* [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----

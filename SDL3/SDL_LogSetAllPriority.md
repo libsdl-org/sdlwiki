@@ -22,6 +22,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_LogResetPriorities](SDL_LogResetPriorities)
 * [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----

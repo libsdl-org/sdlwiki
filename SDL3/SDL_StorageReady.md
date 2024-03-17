@@ -31,17 +31,6 @@ call, as the backend may depend on a synchronous message loop.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
-* [SDL_OpenUserStorage](SDL_OpenUserStorage)
-* [SDL_OpenStorage](SDL_OpenStorage)
-* [SDL_CloseStorage](SDL_CloseStorage)
-* [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
-* [SDL_ReadStorageFile](SDL_ReadStorageFile)
-* [SDL_WriteStorageFile](SDL_WriteStorageFile)
-* [SDL_GetStorageSpaceRemaining](SDL_GetStorageSpaceRemaining)
-
 ----
 [CategoryAPI](CategoryAPI)
 

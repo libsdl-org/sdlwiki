@@ -43,8 +43,6 @@ if (SDL_HapticRumbleSupported(dev)) {
 ## Related Functions
 
 * [SDL_InitHapticRumble](SDL_InitHapticRumble)
-* [SDL_PlayHapticRumble](SDL_PlayHapticRumble)
-* [SDL_StopHapticRumble](SDL_StopHapticRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

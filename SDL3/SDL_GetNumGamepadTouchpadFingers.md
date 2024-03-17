@@ -25,6 +25,11 @@ Returns number of supported simultaneous fingers
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_GetGamepadTouchpadFinger](SDL_GetGamepadTouchpadFinger)
+* [SDL_GetNumGamepadTouchpads](SDL_GetNumGamepadTouchpads)
+
 ----
 [CategoryAPI](CategoryAPI)
 

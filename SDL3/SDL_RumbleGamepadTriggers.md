@@ -41,6 +41,10 @@ This function requires you to process SDL events or call
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_RumbleGamepad](SDL_RumbleGamepad)
+
 ----
 [CategoryAPI](CategoryAPI)
 

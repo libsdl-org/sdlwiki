@@ -6,8 +6,7 @@ Create a new thread with a default stack size.
 ## Syntax
 
 ```c
-extern DECLSPEC SDL_Thread *SDLCALL
-SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
+SDL_Thread * SDL_CreateThread(SDL_ThreadFunction fn, const char *name, void *data);
 
 ```
 

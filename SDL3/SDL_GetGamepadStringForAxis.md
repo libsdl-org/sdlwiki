@@ -6,7 +6,7 @@ Convert from an [SDL_GamepadAxis](SDL_GamepadAxis) enum to a string.
 ## Syntax
 
 ```c
-const char* SDL_GetGamepadStringForAxis(SDL_GamepadAxis axis);
+const char * SDL_GetGamepadStringForAxis(SDL_GamepadAxis axis);
 
 ```
 

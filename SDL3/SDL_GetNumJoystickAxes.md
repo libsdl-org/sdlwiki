@@ -35,7 +35,9 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetJoystickAxis](SDL_GetJoystickAxis)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_GetNumJoystickBalls](SDL_GetNumJoystickBalls)
+* [SDL_GetNumJoystickButtons](SDL_GetNumJoystickButtons)
+* [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 
 ----
 [CategoryAPI](CategoryAPI)

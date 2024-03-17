@@ -48,8 +48,6 @@ This function is available since SDL 3.0.0.
 * [SDL_BroadcastCondition](SDL_BroadcastCondition)
 * [SDL_SignalCondition](SDL_SignalCondition)
 * [SDL_WaitCondition](SDL_WaitCondition)
-* [SDL_CreateCondition](SDL_CreateCondition)
-* [SDL_DestroyCondition](SDL_DestroyCondition)
 
 ----
 [CategoryAPI](CategoryAPI)

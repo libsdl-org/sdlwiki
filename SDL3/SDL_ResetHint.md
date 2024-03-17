@@ -33,8 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)
+* [SDL_ResetHints](SDL_ResetHints)
 
 ----
 [CategoryAPI](CategoryAPI)

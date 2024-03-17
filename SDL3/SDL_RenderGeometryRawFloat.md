@@ -45,7 +45,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_RenderGeometry](SDL_RenderGeometry)
-* [SDL_Vertex](SDL_Vertex)
+* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 
 ----
 [CategoryAPI](CategoryAPI)

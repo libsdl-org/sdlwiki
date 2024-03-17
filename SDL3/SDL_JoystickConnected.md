@@ -26,11 +26,6 @@ for more information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_CloseJoystick](SDL_CloseJoystick)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
-
 ----
 [CategoryAPI](CategoryAPI)
 

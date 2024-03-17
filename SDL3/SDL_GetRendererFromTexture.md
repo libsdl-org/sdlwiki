@@ -30,12 +30,6 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
-
 ----
 [CategoryAPI](CategoryAPI)
 

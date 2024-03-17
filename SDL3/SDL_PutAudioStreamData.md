@@ -44,12 +44,10 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
 * [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_FlushAudioStream](SDL_FlushAudioStream)
+* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
+* [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
 
 ----
 [CategoryAPI](CategoryAPI)

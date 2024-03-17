@@ -37,9 +37,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
 * [SDL_ConvertSurface](SDL_ConvertSurface)
-* [SDL_CreateSurface](SDL_CreateSurface)
+* [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
+* [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)

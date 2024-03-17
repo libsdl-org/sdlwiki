@@ -151,6 +151,8 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 
 ## Related Functions
 
+* [SDL_CreateColorCursor](SDL_CreateColorCursor)
+* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 * [SDL_DestroyCursor](SDL_DestroyCursor)
 * [SDL_SetCursor](SDL_SetCursor)
 

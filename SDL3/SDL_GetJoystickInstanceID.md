@@ -25,10 +25,6 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_OpenJoystick](SDL_OpenJoystick)
-
 ----
 [CategoryAPI](CategoryAPI)
 

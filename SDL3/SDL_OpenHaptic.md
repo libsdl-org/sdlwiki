@@ -41,10 +41,8 @@ This function is available since SDL 3.0.0.
 * [SDL_GetHaptics](SDL_GetHaptics)
 * [SDL_OpenHapticFromJoystick](SDL_OpenHapticFromJoystick)
 * [SDL_OpenHapticFromMouse](SDL_OpenHapticFromMouse)
-* [SDL_PauseHaptic](SDL_PauseHaptic)
 * [SDL_SetHapticAutocenter](SDL_SetHapticAutocenter)
 * [SDL_SetHapticGain](SDL_SetHapticGain)
-* [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
 ----
 [CategoryAPI](CategoryAPI)

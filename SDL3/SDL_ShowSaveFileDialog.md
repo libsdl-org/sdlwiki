@@ -42,10 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_DialogFileFilter](SDL_DialogFileFilter)
-* [SDL_DialogFileCallback](SDL_DialogFileCallback)
 * [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
-* [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
 [CategoryAPI](CategoryAPI)

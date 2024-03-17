@@ -28,6 +28,10 @@ If the product version isn't available this function returns 0.
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_GetJoystickInstanceProductVersion](SDL_GetJoystickInstanceProductVersion)
+
 ----
 [CategoryAPI](CategoryAPI)
 

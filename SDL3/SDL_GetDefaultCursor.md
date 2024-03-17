@@ -31,10 +31,6 @@ return value, but it is safe to do so.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->

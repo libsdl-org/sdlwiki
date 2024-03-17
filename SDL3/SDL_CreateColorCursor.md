@@ -98,7 +98,9 @@ exit:
 ## Related Functions
 
 * [SDL_CreateCursor](SDL_CreateCursor)
+* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 * [SDL_DestroyCursor](SDL_DestroyCursor)
+* [SDL_SetCursor](SDL_SetCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse)

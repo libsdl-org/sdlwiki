@@ -45,9 +45,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
 * [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
 
 ----

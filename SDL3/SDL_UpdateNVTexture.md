@@ -39,6 +39,11 @@ function is available if your pixel data is not contiguous.
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_UpdateTexture](SDL_UpdateTexture)
+* [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
+
 ----
 [CategoryAPI](CategoryAPI)
 

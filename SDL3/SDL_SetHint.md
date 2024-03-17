@@ -43,6 +43,7 @@ SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
 ## Related Functions
 
 * [SDL_GetHint](SDL_GetHint)
+* [SDL_ResetHint](SDL_ResetHint)
 * [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----

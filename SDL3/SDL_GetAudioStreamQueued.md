@@ -49,7 +49,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
 * [SDL_ClearAudioStream](SDL_ClearAudioStream)
 
 ----

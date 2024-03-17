@@ -27,6 +27,10 @@ Returns 0 on success, or -1 on error
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_RenderTextureRotated](SDL_RenderTextureRotated)
+
 ----
 [CategoryAPI](CategoryAPI)
 

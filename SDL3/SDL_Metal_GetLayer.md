@@ -24,10 +24,6 @@ Returns a pointer
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_Metal_CreateView](SDL_Metal_CreateView)
-
 ----
 [CategoryAPI](CategoryAPI)
 

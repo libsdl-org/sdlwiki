@@ -53,6 +53,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_CaptureMouse](SDL_CaptureMouse)
+* [SDL_GetMouseState](SDL_GetMouseState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)

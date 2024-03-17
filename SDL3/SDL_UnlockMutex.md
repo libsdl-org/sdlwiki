@@ -33,6 +33,11 @@ This function is available since SDL 3.0.0.
 
 <<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
 
+## Related Functions
+
+* [SDL_LockMutex](SDL_LockMutex)
+* [SDL_TryLockMutex](SDL_TryLockMutex)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
 

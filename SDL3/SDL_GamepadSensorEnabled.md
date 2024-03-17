@@ -26,6 +26,10 @@ Returns [SDL_TRUE](SDL_TRUE) if the sensor is enabled,
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_SetGamepadSensorEnabled](SDL_SetGamepadSensorEnabled)
+
 ----
 [CategoryAPI](CategoryAPI)
 

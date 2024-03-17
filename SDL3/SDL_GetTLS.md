@@ -28,7 +28,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTLS](SDL_CreateTLS)
 * [SDL_SetTLS](SDL_SetTLS)
 
 ----

@@ -33,14 +33,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
-* [SDL_RenderLine](SDL_RenderLine)
-* [SDL_RenderLines](SDL_RenderLines)
-* [SDL_RenderPoint](SDL_RenderPoint)
-* [SDL_RenderPoints](SDL_RenderPoints)
-* [SDL_RenderRect](SDL_RenderRect)
-* [SDL_RenderRects](SDL_RenderRects)
-* [SDL_RenderFillRect](SDL_RenderFillRect)
-* [SDL_RenderFillRects](SDL_RenderFillRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)

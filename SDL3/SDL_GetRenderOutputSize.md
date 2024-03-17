@@ -34,7 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetRenderer](SDL_GetRenderer)
+* [SDL_GetCurrentRenderOutputSize](SDL_GetCurrentRenderOutputSize)
 
 ----
 [CategoryAPI](CategoryAPI)

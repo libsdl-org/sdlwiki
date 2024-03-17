@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetGamepadPath](SDL_GetGamepadPath)
-* [SDL_OpenGamepad](SDL_OpenGamepad)
+* [SDL_GetGamepads](SDL_GetGamepads)
 
 ----
 [CategoryAPI](CategoryAPI)

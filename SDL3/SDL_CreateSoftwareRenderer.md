@@ -136,8 +136,6 @@ int main(int argc, char *argv[])
 
 ## Related Functions
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----

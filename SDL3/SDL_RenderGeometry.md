@@ -96,7 +96,6 @@ int main(int argc, char *argv[])
 ## Related Functions
 
 * [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-* [SDL_Vertex](SDL_Vertex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)

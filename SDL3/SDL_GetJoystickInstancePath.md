@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetJoystickPath](SDL_GetJoystickPath)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
+* [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
 [CategoryAPI](CategoryAPI)

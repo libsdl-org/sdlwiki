@@ -24,18 +24,6 @@ sets.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
-
-* [SDL_HasAVX](SDL_HasAVX)
-* [SDL_HasAVX2](SDL_HasAVX2)
-* [SDL_HasAVX512F](SDL_HasAVX512F)
-* [SDL_HasMMX](SDL_HasMMX)
-* [SDL_HasSSE](SDL_HasSSE)
-* [SDL_HasSSE2](SDL_HasSSE2)
-* [SDL_HasSSE3](SDL_HasSSE3)
-* [SDL_HasSSE41](SDL_HasSSE41)
-* [SDL_HasSSE42](SDL_HasSSE42)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
 

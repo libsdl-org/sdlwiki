@@ -70,8 +70,6 @@ SDL_DestroyMutex(mutex);
 
 ## Related Functions
 
-* [SDL_CreateMutex](SDL_CreateMutex)
-* [SDL_DestroyMutex](SDL_DestroyMutex)
 * [SDL_LockMutex](SDL_LockMutex)
 * [SDL_UnlockMutex](SDL_UnlockMutex)
 

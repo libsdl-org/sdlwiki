@@ -34,7 +34,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
-* [SDL_RenderTexture](SDL_RenderTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)

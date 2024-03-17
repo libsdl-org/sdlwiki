@@ -29,7 +29,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetJoystickInstanceName](SDL_GetJoystickInstanceName)
-* [SDL_OpenJoystick](SDL_OpenJoystick)
 
 ----
 [CategoryAPI](CategoryAPI)

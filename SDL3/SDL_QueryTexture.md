@@ -41,10 +41,6 @@ SDL_QueryTexture(source, NULL, NULL, &w, &h);
 
 ```
 
-## Related Functions
-
-* [SDL_CreateTexture](SDL_CreateTexture)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
 

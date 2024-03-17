@@ -26,10 +26,6 @@ all-zeroes GUID.
 
 This function is available since SDL 3.0.0
 
-## Related Functions
-
-* [SDL_PenForID](SDL_PenForID)
-
 ----
 [CategoryAPI](CategoryAPI)
 

@@ -48,6 +48,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
+* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 * [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----

@@ -42,12 +42,8 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateAudioStream](SDL_CreateAudioStream)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
 * [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
 
 ----
 [CategoryAPI](CategoryAPI)

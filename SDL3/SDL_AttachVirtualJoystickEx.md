@@ -25,6 +25,11 @@ Returns the joystick instance ID, or 0 if an error occurred; call
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)
+* [SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)
+
 ----
 [CategoryAPI](CategoryAPI)
 

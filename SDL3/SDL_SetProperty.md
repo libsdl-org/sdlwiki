@@ -34,7 +34,12 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetProperty](SDL_GetProperty)
+* [SDL_HasProperty](SDL_HasProperty)
+* [SDL_SetBooleanProperty](SDL_SetBooleanProperty)
+* [SDL_SetFloatProperty](SDL_SetFloatProperty)
+* [SDL_SetNumberProperty](SDL_SetNumberProperty)
 * [SDL_SetPropertyWithCleanup](SDL_SetPropertyWithCleanup)
+* [SDL_SetStringProperty](SDL_SetStringProperty)
 
 ----
 [CategoryAPI](CategoryAPI)

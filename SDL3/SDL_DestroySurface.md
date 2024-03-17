@@ -28,8 +28,6 @@ This function is available since SDL 3.0.0.
 
 * [SDL_CreateSurface](SDL_CreateSurface)
 * [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
 
 ----
 [CategoryAPI](CategoryAPI)

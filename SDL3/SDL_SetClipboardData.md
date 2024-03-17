@@ -42,8 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_ClipboardDataCallback](SDL_ClipboardDataCallback)
-* [SDL_SetClipboardData](SDL_SetClipboardData)
+* [SDL_ClearClipboardData](SDL_ClearClipboardData)
 * [SDL_GetClipboardData](SDL_GetClipboardData)
 * [SDL_HasClipboardData](SDL_HasClipboardData)
 

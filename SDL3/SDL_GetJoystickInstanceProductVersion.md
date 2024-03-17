@@ -30,6 +30,11 @@ isn't available this function returns 0.
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_GetJoystickProductVersion](SDL_GetJoystickProductVersion)
+* [SDL_GetJoysticks](SDL_GetJoysticks)
+
 ----
 [CategoryAPI](CategoryAPI)
 

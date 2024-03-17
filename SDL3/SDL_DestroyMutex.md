@@ -35,9 +35,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_CreateMutex](SDL_CreateMutex)
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_TryLockMutex](SDL_TryLockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)

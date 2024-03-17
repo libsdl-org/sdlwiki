@@ -134,8 +134,9 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
+* [SDL_CreateProperties](SDL_CreateProperties)
 * [SDL_CreateTexture](SDL_CreateTexture)
+* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 * [SDL_DestroyTexture](SDL_DestroyTexture)
 * [SDL_QueryTexture](SDL_QueryTexture)
 * [SDL_UpdateTexture](SDL_UpdateTexture)

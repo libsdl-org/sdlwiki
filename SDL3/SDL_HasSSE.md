@@ -25,11 +25,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_HasAltiVec](SDL_HasAltiVec)
-* [SDL_HasAVX](SDL_HasAVX)
-* [SDL_HasAVX2](SDL_HasAVX2)
-* [SDL_HasAVX512F](SDL_HasAVX512F)
-* [SDL_HasMMX](SDL_HasMMX)
 * [SDL_HasSSE2](SDL_HasSSE2)
 * [SDL_HasSSE3](SDL_HasSSE3)
 * [SDL_HasSSE41](SDL_HasSSE41)

@@ -29,6 +29,11 @@ This can be called before any gamepads are opened.
 
 This function is available since SDL 3.0.0.
 
+## Related Functions
+
+* [SDL_GetGamepads](SDL_GetGamepads)
+* [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
+
 ----
 [CategoryAPI](CategoryAPI)
 

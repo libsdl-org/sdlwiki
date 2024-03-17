@@ -44,7 +44,6 @@ You can add your code example here
 
 ## Related Functions
 
-* [SDL_CreateCursor](SDL_CreateCursor)
 * [SDL_GetCursor](SDL_GetCursor)
 
 ----

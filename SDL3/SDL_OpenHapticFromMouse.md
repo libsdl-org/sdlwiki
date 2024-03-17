@@ -21,7 +21,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_OpenHaptic](SDL_OpenHaptic)
+* [SDL_CloseHaptic](SDL_CloseHaptic)
 * [SDL_IsMouseHaptic](SDL_IsMouseHaptic)
 
 ----

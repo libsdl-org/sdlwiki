@@ -6,8 +6,7 @@ Allocate a new RGB surface with a specific pixel format.
 ## Syntax
 
 ```c
-SDL_Surface* SDL_CreateSurface
-    (int width, int height, SDL_PixelFormatEnum format);
+SDL_Surface* SDL_CreateSurface(int width, int height, SDL_PixelFormatEnum format);
 
 ```
 

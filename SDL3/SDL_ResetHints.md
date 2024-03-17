@@ -22,8 +22,6 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_SetHint](SDL_SetHint)
 * [SDL_ResetHint](SDL_ResetHint)
 
 ----

@@ -35,8 +35,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_AtomicCompareAndSwapPointer](SDL_AtomicCompareAndSwapPointer)
-* [SDL_AtomicGet](SDL_AtomicGet)
-* [SDL_AtomicSet](SDL_AtomicSet)
 
 ----
 [CategoryAPI](CategoryAPI)
