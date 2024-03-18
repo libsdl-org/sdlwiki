@@ -30,7 +30,7 @@ If music's title tag is missing or empty, the filename will be returned. If
 you'd rather have the actual metadata or nothing, use
 [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)() instead.
 
-Please note that if the music was loaded from an SDL_RWops instead of a
+Please note that if the music was loaded from an SDL_IOStream instead of a
 filename, the filename returned will be an empty string ("").
 
 This function never returns NULL! If no data is available, it will return

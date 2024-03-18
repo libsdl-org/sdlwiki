@@ -33,7 +33,7 @@ This function is available since SDL_mixer 3.0.0.
 ## Related Functions
 
 * [Mix_LoadWAV](Mix_LoadWAV)
-* [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
+* [Mix_LoadWAV_IO](Mix_LoadWAV_IO)
 * [Mix_QuickLoad_WAV](Mix_QuickLoad_WAV)
 * [Mix_QuickLoad_RAW](Mix_QuickLoad_RAW)
 

@@ -22,7 +22,7 @@ Returns a new chunk, or NULL on error.
 
 ## Remarks
 
-Unlike [Mix_LoadWAV_RW](Mix_LoadWAV_RW), this function has several
+Unlike [Mix_LoadWAV_IO](Mix_LoadWAV_IO), this function has several
 requirements, and unless you control all your audio data and know what
 you're doing, you should consider this function unsafe and not use it.
 
@@ -40,7 +40,7 @@ you're doing, you should consider this function unsafe and not use it.
 
 This function will do NO error checking! Be extremely careful here!
 
-(Seriously, use [Mix_LoadWAV_RW](Mix_LoadWAV_RW) instead.)
+(Seriously, use [Mix_LoadWAV_IO](Mix_LoadWAV_IO) instead.)
 
 If this function is successful, the provided memory buffer must remain
 available until [Mix_FreeChunk](Mix_FreeChunk)() is called on the returned
@@ -52,7 +52,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## Related Functions
 
-* [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
+* [Mix_LoadWAV_IO](Mix_LoadWAV_IO)
 * [Mix_FreeChunk](Mix_FreeChunk)
 
 ----
