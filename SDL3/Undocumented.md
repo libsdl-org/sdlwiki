@@ -435,6 +435,7 @@
 - [SDL_SetVideoCaptureSpec](SDL_SetVideoCaptureSpec)
 - [SDL_SetWindowData](SDL_SetWindowData)
 - [SDL_SetYUVConversionMode](SDL_SetYUVConversionMode)
+- [SDL_SizeIO](SDL_SizeIO)
 - [SDL_SoftStretchLinear](SDL_SoftStretchLinear)
 - [SDL_StartVideoCapture](SDL_StartVideoCapture)
 - [SDL_StopVideoCapture](SDL_StopVideoCapture)
