@@ -34,10 +34,10 @@ SDL_Texture in the most format that most reasonably represents the image
 data (but in many cases, this will just end up being 32-bit RGB or 32-bit
 RGBA).
 
-There is a separate function to read files from an SDL_RWops, if you need
-an i/o abstraction to provide data from anywhere instead of a simple
+There is a separate function to read files from an SDL_IOStream, if you
+need an i/o abstraction to provide data from anywhere instead of a simple
 filesystem read; that function is
-[IMG_LoadTexture_RW](IMG_LoadTexture_RW)().
+[IMG_LoadTexture_IO](IMG_LoadTexture_IO)().
 
 If you would rather decode an image to an SDL_Surface (a buffer of pixels
 in CPU memory), call [IMG_Load](IMG_Load)() instead.
@@ -51,8 +51,8 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_LoadTextureTyped_RW](IMG_LoadTextureTyped_RW)
-* [IMG_LoadTexture_RW](IMG_LoadTexture_RW)
+* [IMG_LoadTextureTyped_IO](IMG_LoadTextureTyped_IO)
+* [IMG_LoadTexture_IO](IMG_LoadTexture_IO)
 
 ----
 [CategoryAPI](CategoryAPI)

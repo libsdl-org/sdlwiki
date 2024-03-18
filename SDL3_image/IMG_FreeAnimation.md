@@ -27,8 +27,8 @@ This function is available since SDL_image 3.0.0.
 ## Related Functions
 
 * [IMG_LoadAnimation](IMG_LoadAnimation)
-* [IMG_LoadAnimation_RW](IMG_LoadAnimation_RW)
-* [IMG_LoadAnimationTyped_RW](IMG_LoadAnimationTyped_RW)
+* [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
+* [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
 
 ----
 [CategoryAPI](CategoryAPI)

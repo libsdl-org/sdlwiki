@@ -32,7 +32,7 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
-* [IMG_SaveJPG_RW](IMG_SaveJPG_RW)
+* [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 
 ----
 [CategoryAPI](CategoryAPI)

@@ -1,20 +1,21 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
-# IMG_Load
+# IMG_Load_IO
 
-Load an image from a filesystem path into a software surface.
+Load an image from an SDL data source into a software surface.
 
 ## Syntax
 
 ```c
-SDL_Surface * IMG_Load(const char *file);
+SDL_Surface * IMG_Load_IO(SDL_IOStream *src, SDL_bool closeio);
 
 ```
 
 ## Function Parameters
 
-|              |                                                 |
-| ------------ | ----------------------------------------------- |
-| **file**     | a path on the filesystem to load an image from. |
+|                 |                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------- |
+| **src**         | an SDL_IOStream that data will be read from.                                          |
+| **closeio**     | SDL_TRUE to close/free the SDL_IOStream before returning, SDL_FALSE to leave it open. |
 
 ## Return Value
 
@@ -40,13 +41,22 @@ for the surface. You can enable RLE acceleration on the surface afterwards
 by calling: SDL_SetSurfaceColorKey(image, SDL_RLEACCEL,
 image->format->colorkey);
 
-There is a separate function to read files from an SDL_IOStream, if you
-need an i/o abstraction to provide data from anywhere instead of a simple
-filesystem read; that function is [IMG_Load_IO](IMG_Load_IO)().
+If `closeio` is SDL_TRUE, `src` will be closed before returning, whether
+this function succeeds or not. SDL_image reads everything it needs from
+`src` during this call in any case.
+
+There is a separate function to read files from disk without having to deal
+with SDL_IOStream: `IMG_Load("filename.jpg")` will call this function and
+manage those details for you, determining the file type from the filename's
+extension.
+
+There is also [IMG_LoadTyped_IO](IMG_LoadTyped_IO)(), which is equivalent
+to this function except a file extension (like "BMP", "JPG", etc) can be
+specified, in case SDL_image cannot autodetect the file format.
 
 If you are using SDL's 2D rendering API, there is an equivalent call to
 load images directly into an SDL_Texture for use by the GPU without using a
-software surface: call [IMG_LoadTexture](IMG_LoadTexture)() instead.
+software surface: call [IMG_LoadTexture_IO](IMG_LoadTexture_IO)() instead.
 
 When done with the returned surface, the app should dispose of it with a
 call to SDL_DestroySurface().
@@ -57,8 +67,8 @@ This function is available since SDL_image 3.0.0.
 
 ## Related Functions
 
+* [IMG_Load](IMG_Load)
 * [IMG_LoadTyped_IO](IMG_LoadTyped_IO)
-* [IMG_Load_IO](IMG_Load_IO)
 * [SDL_DestroySurface](SDL_DestroySurface)
 
 ----

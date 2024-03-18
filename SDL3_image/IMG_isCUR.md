@@ -1,20 +1,20 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_isCUR
 
-Detect CUR image data on a readable/seekable SDL_RWops.
+Detect CUR image data on a readable/seekable SDL_IOStream.
 
 ## Syntax
 
 ```c
-int IMG_isCUR(SDL_RWops *src);
+int IMG_isCUR(SDL_IOStream *src);
 
 ```
 
 ## Function Parameters
 
-|             |                                                      |
-| ----------- | ---------------------------------------------------- |
-| **src**     | a seekable/readable SDL_RWops to provide image data. |
+|             |                                                         |
+| ----------- | ------------------------------------------------------- |
+| **src**     | a seekable/readable SDL_IOStream to provide image data. |
 
 ## Return Value
 
@@ -23,15 +23,15 @@ Returns non-zero if this is CUR data, zero otherwise.
 ## Remarks
 
 This function attempts to determine if a file is a given filetype, reading
-the least amount possible from the SDL_RWops (usually a few bytes).
+the least amount possible from the SDL_IOStream (usually a few bytes).
 
 There is no distinction made between "not the filetype in question" and
 basic i/o errors.
 
-This function will always attempt to seek the RWops back to where it
-started when this function was called, but it will not report any errors in
-doing so, but assuming seeking works, this means you can immediately use
-this with a different [IMG_isTYPE](IMG_isTYPE) function, or load the image
+This function will always attempt to seek `src` back to where it started
+when this function was called, but it will not report any errors in doing
+so, but assuming seeking works, this means you can immediately use this
+with a different [IMG_isTYPE](IMG_isTYPE) function, or load the image
 without further seeking.
 
 You do not need to call this function to load data; SDL_image can work to
