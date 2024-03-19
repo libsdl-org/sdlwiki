@@ -73,7 +73,7 @@ The following properties may be set at creation time by SDL:
   [SDL_IOStream](SDL_IOStream) is using to access the filesystem. If the
   program isn't running on Windows, or SDL used some other method to access
   the filesystem, this property will not be set.
-- [`SDL_PROP_IOSTREAM_STDIO_HANDLE_POINTER`](SDL_PROP_IOSTREAM_STDIO_HANDLE_POINTER):
+- [`SDL_PROP_IOSTREAM_STDIO_FILE_POINTER`](SDL_PROP_IOSTREAM_STDIO_FILE_POINTER):
   a pointer, that can be cast to a stdio `FILE *`, that this
   [SDL_IOStream](SDL_IOStream) is using to access the filesystem. If SDL
   used some other method to access the filesystem, this property will not
