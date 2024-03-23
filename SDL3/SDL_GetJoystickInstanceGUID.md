@@ -18,8 +18,8 @@ SDL_JoystickGUID SDL_GetJoystickInstanceGUID(SDL_JoystickID instance_id);
 
 ## Return Value
 
-Returns the GUID of the selected joystick. If called on an invalid index,
-this function returns a zero GUID
+Returns the GUID of the selected joystick. If called with an invalid
+instance_id, this function returns a zero GUID.
 
 ## Remarks
 

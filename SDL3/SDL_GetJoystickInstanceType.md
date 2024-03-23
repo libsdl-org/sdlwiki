@@ -19,8 +19,8 @@ SDL_JoystickType SDL_GetJoystickInstanceType(SDL_JoystickID instance_id);
 ## Return Value
 
 Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
-If called on an invalid index, this function returns
-[`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN)
+If called with an invalid instance_id, this function returns
+[`SDL_JOYSTICK_TYPE_UNKNOWN`](SDL_JOYSTICK_TYPE_UNKNOWN).
 
 ## Remarks
 

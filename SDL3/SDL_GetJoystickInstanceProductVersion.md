@@ -18,8 +18,8 @@ Uint16 SDL_GetJoystickInstanceProductVersion(SDL_JoystickID instance_id);
 
 ## Return Value
 
-Returns the product version of the selected joystick. If called on an
-invalid index, this function returns zero
+Returns the product version of the selected joystick. If called with an
+invalid instance_id, this function returns 0.
 
 ## Remarks
 

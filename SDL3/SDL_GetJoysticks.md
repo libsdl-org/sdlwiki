@@ -28,6 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Related Functions
 
+* [SDL_HasJoystick](SDL_HasJoystick)
 * [SDL_OpenJoystick](SDL_OpenJoystick)
 
 ----
