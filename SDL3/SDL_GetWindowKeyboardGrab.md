@@ -28,7 +28,6 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
-* [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI)

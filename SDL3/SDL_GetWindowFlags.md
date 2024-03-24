@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 * [SDL_MaximizeWindow](SDL_MaximizeWindow)
 * [SDL_MinimizeWindow](SDL_MinimizeWindow)
 * [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 * [SDL_ShowWindow](SDL_ShowWindow)
 
 ----

@@ -34,7 +34,6 @@ This function is available since SDL 3.0.0.
 
 * [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
 * [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI)
