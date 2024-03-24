@@ -30,6 +30,11 @@ free this surface.
 This surface will be invalidated if the window is resized. After resizing a
 window this function must be called again to return a valid surface.
 
+Note that on some platforms the pixels pointer of the surface may be
+modified after each call to
+[SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)(), so that the platform
+code can implement efficient double or triple buffering.
+
 You may not combine this with 3D or the rendering API on this window.
 
 This function is affected by
