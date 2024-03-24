@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
-int x, y;
+float x, y;
 Uint32 buttons;
 
 SDL_PumpEvents();  // make sure we have the latest mouse state.
