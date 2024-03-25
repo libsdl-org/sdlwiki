@@ -465,6 +465,7 @@
 - [SDL_TLSSet](SDL_TLSSet)
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
+- [SDL_TextInputShown](SDL_TextInputShown)
 - [SDL_Texture](SDL_Texture)
 - [SDL_TextureAccess](SDL_TextureAccess)
 - [SDL_TextureModulate](SDL_TextureModulate)
