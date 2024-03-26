@@ -6,7 +6,7 @@ Create a texture for a rendering context.
 ## Syntax
 
 ```c
-SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, Uint32 format, int access, int w, int h);
+SDL_Texture* SDL_CreateTexture(SDL_Renderer *renderer, SDL_PixelFormatEnum format, int access, int w, int h);
 
 ```
 
