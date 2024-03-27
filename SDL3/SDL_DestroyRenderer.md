@@ -22,6 +22,10 @@ If `renderer` is NULL, this function will return immediately after setting
 the SDL error message to "Invalid renderer". See
 [SDL_GetError](SDL_GetError)().
 
+Note that destroying a window implicitly destroys the associated renderer,
+so this should not be called if the window associated with the renderer has
+already been destroyed.
+
 ## Version
 
 This function is available since SDL 3.0.0.
