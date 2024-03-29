@@ -57,15 +57,15 @@ A union that contains structures for the different event types.
 |joystick device event data
 |-
 |[[SDL_GamepadAxisEvent]]
-|'''caxis'''
+|'''gaxis'''
 |game controller axis event data
 |-
 |[[SDL_GamepadButtonEvent]]
-|'''cbutton'''
+|'''gbutton'''
 |game controller button event data
 |-
 |[[SDL_GamepadDeviceEvent]]
-|'''cdevice'''
+|'''gdevice'''
 |game controller device event data
 |-
 |[[SDL_AudioDeviceEvent]]
