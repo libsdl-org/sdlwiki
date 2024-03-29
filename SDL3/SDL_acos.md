@@ -36,6 +36,10 @@ Domain: `-1 <= x <= 1`
 
 Range: `0 <= y <= Pi`
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

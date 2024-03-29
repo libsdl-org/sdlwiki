@@ -1,0 +1,36 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_strupr
+
+Convert a string to uppercase.
+
+## Syntax
+
+```c
+char* SDL_strupr(char *str);
+
+```
+
+## Remarks
+
+**WARNING**: Regardless of system locale, this will only convert ASCII
+values 'A' through 'Z' to uppercase.
+
+This function operates on a null-terminated string of bytes--even if it is
+malformed UTF-8!--and converts ASCII characters 'a' through 'z' to their
+uppercase equivalents in-place, returning the original `str` pointer.
+
+## Thread Safety
+
+It is safe to call this function from any thread.
+
+## Version
+
+This function is available since SDL 3.0.0.
+
+## Related Functions
+
+* [SDL_strlwr](SDL_strlwr)
+
+----
+[CategoryAPI](CategoryAPI)
+
