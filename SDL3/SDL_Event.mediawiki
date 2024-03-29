@@ -171,7 +171,7 @@ SDL_PushEvent(&user_event);
 |SDL_EVENT_GAMEPAD_ADDED<br/>SDL_EVENT_GAMEPAD_REMOVED<br/>SDL_EVENT_GAMEPAD_REMAPPED
 |[[SDL_GamepadDeviceEvent]]
 |'''gdevice'''
-|-dg
+|-
 |SDL_EVENT_DROP_FILE<br/>SDL_EVENT_DROP_TEXT<br/>SDL_EVENT_DROP_BEGIN<br/>SDL_EVENT_DROP_COMPLETE
 |[[SDL_DropEvent]]
 |'''drop'''
