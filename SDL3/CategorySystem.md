@@ -9,4 +9,5 @@
 - [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
 - [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
 - [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
+- [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 <!-- END CATEGORY LIST -->
