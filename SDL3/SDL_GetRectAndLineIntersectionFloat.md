@@ -3,6 +3,10 @@
 
 Calculate the intersection of a rectangle and line segment with float precision.
 
+## Header File
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

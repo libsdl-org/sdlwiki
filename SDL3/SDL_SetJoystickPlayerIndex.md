@@ -3,6 +3,10 @@
 
 Set the player index of an opened joystick.
 
+## Header File
+
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

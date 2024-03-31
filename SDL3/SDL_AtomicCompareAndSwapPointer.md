@@ -3,6 +3,10 @@
 
 Set a pointer to a new value if it is currently an old value.
 
+## Header File
+
+Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_atomic.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

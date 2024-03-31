@@ -3,6 +3,10 @@
 
 Return the [SDL_Sensor](SDL_Sensor) associated with an instance ID.
 
+## Header File
+
+Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

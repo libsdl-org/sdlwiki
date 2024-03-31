@@ -3,6 +3,10 @@
 
 Compatibility function to initialize the SDL library.
 
+## Header File
+
+Defined in [SDL_init.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

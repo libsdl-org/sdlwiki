@@ -3,6 +3,10 @@
 
 Get the instance ID of an opened camera.
 
+## Header File
+
+Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

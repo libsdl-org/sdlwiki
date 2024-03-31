@@ -463,6 +463,7 @@
 - [SDL_Window](SDL_Window)
 - [SDL_WindowEvent](SDL_WindowEvent)
 - [SDL_WindowFlags](SDL_WindowFlags)
+- [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 - [SDL_assert](SDL_assert)
 - [SDL_assert_paranoid](SDL_assert_paranoid)
 - [SDL_assert_release](SDL_assert_release)

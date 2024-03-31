@@ -3,6 +3,10 @@
 
 Get UTF-8 text from the primary selection, which must be freed with [SDL_free](SDL_free)().
 
+## Header File
+
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

@@ -3,6 +3,10 @@
 
 Set the current thread's value associated with a thread local storage ID.
 
+## Header File
+
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

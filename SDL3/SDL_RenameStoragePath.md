@@ -3,6 +3,10 @@
 
 Rename a file or directory in a writable storage container.
 
+## Header File
+
+Defined in [SDL_storage.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

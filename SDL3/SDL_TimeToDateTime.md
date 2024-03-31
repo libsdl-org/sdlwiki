@@ -3,6 +3,10 @@
 
 Converts an [SDL_Time](SDL_Time) in nanoseconds since the epoch to a calendar time in the [SDL_DateTime](SDL_DateTime) format.
 
+## Header File
+
+Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

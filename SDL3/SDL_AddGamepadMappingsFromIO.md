@@ -3,6 +3,10 @@
 
 Load a set of gamepad mappings from an [SDL_IOStream](SDL_IOStream).
 
+## Header File
+
+Defined in [SDL_gamepad.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

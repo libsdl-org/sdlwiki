@@ -3,6 +3,10 @@
 
 Gets a reference to the global async task queue handle for GDK, initializing if needed.
 
+## Header File
+
+Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

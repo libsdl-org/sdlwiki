@@ -3,6 +3,10 @@
 
 Determine the L1 cache line size of the CPU.
 
+## Header File
+
+Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

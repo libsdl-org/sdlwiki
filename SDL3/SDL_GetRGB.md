@@ -3,6 +3,10 @@
 
 Get RGB values from a pixel in the specified format.
 
+## Header File
+
+Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

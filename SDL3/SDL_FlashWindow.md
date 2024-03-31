@@ -3,6 +3,10 @@
 
 Request a window to demand attention from the user.
 
+## Header File
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

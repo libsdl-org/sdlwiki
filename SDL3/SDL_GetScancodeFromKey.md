@@ -7,6 +7,10 @@
 
 Get the scancode corresponding to the given key code according to the current keyboard layout.
 
+## Header File
+
+Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

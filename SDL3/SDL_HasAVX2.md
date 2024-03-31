@@ -10,6 +10,10 @@
 
 Determine whether the CPU has AVX2 features.
 
+## Header File
+
+Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

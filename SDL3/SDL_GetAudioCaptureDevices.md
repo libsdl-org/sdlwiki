@@ -3,6 +3,10 @@
 
 Get a list of currently-connected audio capture devices.
 
+## Header File
+
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

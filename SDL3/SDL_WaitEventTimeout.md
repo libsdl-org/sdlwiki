@@ -3,6 +3,10 @@
 
 Wait until the specified timeout (in milliseconds) for the next available event.
 
+## Header File
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

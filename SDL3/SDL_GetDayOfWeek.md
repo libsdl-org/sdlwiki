@@ -3,6 +3,10 @@
 
 Get the day of week for a calendar date.
 
+## Header File
+
+Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c

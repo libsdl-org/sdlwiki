@@ -3,6 +3,10 @@
 
 Perform a scaled blit to a destination surface, which may be of a different format.
 
+## Header File
+
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
 ## Syntax
 
 ```c
