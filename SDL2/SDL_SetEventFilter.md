@@ -3,6 +3,10 @@
 
 Set up a filter to process all events before they change internal state and are posted to the internal event queue.
 
+## Header File
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

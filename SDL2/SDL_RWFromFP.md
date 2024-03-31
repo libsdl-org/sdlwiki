@@ -3,6 +3,10 @@
 
 Use this function to create an [SDL_RWops](SDL_RWops) structure from a standard I/O file pointer (stdio.h's `FILE*`).
 
+## Header File
+
+Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

@@ -3,6 +3,10 @@
 
 Get the current thread's value associated with a thread local storage ID.
 
+## Header File
+
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_thread.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

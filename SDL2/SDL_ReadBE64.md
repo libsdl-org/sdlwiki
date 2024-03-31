@@ -3,6 +3,10 @@
 
 Use this function to read 64 bits of big-endian data from an [SDL_RWops](SDL_RWops) and return in native format.
 
+## Header File
+
+Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

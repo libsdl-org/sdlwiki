@@ -3,6 +3,10 @@
 
 Get a pointer to the backing CAMetalLayer for the given view.
 
+## Header File
+
+Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

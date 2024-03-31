@@ -3,6 +3,10 @@
 
 Free an [SDL_PixelFormat](SDL_PixelFormat) structure allocated by [SDL_AllocFormat](SDL_AllocFormat)().
 
+## Header File
+
+Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_pixels.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

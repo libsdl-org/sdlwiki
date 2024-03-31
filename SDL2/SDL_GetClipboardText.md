@@ -3,6 +3,10 @@
 
 Get UTF-8 text from the clipboard, which must be freed with [SDL_free](SDL_free)().
 
+## Header File
+
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_clipboard.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

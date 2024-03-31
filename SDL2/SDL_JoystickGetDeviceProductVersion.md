@@ -3,6 +3,10 @@
 
 Get the product version of a joystick, if available.
 
+## Header File
+
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

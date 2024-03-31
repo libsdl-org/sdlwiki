@@ -3,6 +3,10 @@
 
 Compose a custom blend mode for renderers.
 
+## Header File
+
+Defined in [SDL_blendmode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_blendmode.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

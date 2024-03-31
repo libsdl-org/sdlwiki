@@ -3,6 +3,10 @@
 
 Unlock a spin lock by setting it to 0.
 
+## Header File
+
+Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_atomic.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

@@ -3,6 +3,10 @@
 
 Free data previously allocated with [SDL_LoadWAV](SDL_LoadWAV)() or [SDL_LoadWAV_RW](SDL_LoadWAV_RW)().
 
+## Header File
+
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

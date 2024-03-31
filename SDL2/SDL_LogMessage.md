@@ -3,6 +3,10 @@
 
 Log a message with the specified category and priority.
 
+## Header File
+
+Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_log.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

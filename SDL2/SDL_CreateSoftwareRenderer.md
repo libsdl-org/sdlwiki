@@ -3,6 +3,10 @@
 
 Create a 2D software rendering context for a surface.
 
+## Header File
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

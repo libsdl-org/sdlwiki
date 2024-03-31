@@ -3,6 +3,10 @@
 
 Get the directory where the application was run from.
 
+## Header File
+
+Defined in [SDL_filesystem.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_filesystem.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

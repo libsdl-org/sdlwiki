@@ -3,6 +3,10 @@
 
 Use this function to create a new [SDL_RWops](SDL_RWops) structure for reading from and/or writing to a named file.
 
+## Header File
+
+Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

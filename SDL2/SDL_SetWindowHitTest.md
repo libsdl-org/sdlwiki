@@ -3,6 +3,10 @@
 
 Provide a callback that decides if a window region has special properties.
 
+## Header File
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

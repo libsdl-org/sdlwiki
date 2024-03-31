@@ -3,6 +3,10 @@
 
 Create a CAMetalLayer-backed NSView/UIView and attach it to the specified window.
 
+## Header File
+
+Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

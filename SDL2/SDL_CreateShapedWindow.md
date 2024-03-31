@@ -3,6 +3,10 @@
 
 Create a window that can be shaped with the specified position, dimensions, and flags.
 
+## Header File
+
+Defined in [SDL_shape.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_shape.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

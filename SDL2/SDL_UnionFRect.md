@@ -3,6 +3,10 @@
 
 Calculate the union of two rectangles with float precision.
 
+## Header File
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

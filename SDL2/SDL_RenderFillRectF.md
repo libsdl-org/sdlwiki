@@ -3,6 +3,10 @@
 
 Fill a rectangle on the current rendering target with the drawing color at subpixel precision.
 
+## Header File
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

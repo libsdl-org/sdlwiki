@@ -3,6 +3,10 @@
 
 Use this function to write 32 bits in native format to a [SDL_RWops](SDL_RWops) as big-endian data.
 
+## Header File
+
+Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

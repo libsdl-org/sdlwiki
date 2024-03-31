@@ -3,6 +3,10 @@
 
 Get the count per second of the high resolution counter.
 
+## Header File
+
+Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_timer.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

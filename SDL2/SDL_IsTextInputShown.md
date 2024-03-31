@@ -3,6 +3,10 @@
 
 Returns if an IME Composite or Candidate window is currently shown.
 
+## Header File
+
+Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_keyboard.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

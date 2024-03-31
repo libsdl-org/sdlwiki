@@ -3,6 +3,10 @@
 
 Let a thread clean up on exit without intervention.
 
+## Header File
+
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_thread.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

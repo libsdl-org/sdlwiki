@@ -3,6 +3,10 @@
 
 Open a sensor for use.
 
+## Header File
+
+Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_sensor.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

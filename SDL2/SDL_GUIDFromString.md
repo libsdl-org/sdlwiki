@@ -3,6 +3,10 @@
 
 Convert a GUID string into a ::[SDL_GUID](SDL_GUID) structure.
 
+## Header File
+
+Defined in [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_guid.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

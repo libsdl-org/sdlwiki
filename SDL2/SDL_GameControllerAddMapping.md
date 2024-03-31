@@ -3,6 +3,10 @@
 
 Add support for controllers that SDL is unaware of or to cause an existing controller to have a different binding.
 
+## Header File
+
+Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

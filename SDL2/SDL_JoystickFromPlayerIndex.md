@@ -3,6 +3,10 @@
 
 Get the [SDL_Joystick](SDL_Joystick) associated with a player index.
 
+## Header File
+
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

@@ -3,6 +3,10 @@
 
 Get the type of the given touch device.
 
+## Header File
+
+Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_touch.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

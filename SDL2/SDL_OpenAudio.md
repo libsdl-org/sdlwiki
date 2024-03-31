@@ -3,6 +3,10 @@
 
 This function is a legacy means of opening the audio device.
 
+## Header File
+
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

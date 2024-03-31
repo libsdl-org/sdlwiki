@@ -3,6 +3,10 @@
 
 Get the size of a window's underlying drawable in pixels (for use with setting viewport, scissor & etc).
 
+## Header File
+
+Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

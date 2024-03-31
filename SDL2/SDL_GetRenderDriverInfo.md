@@ -3,6 +3,10 @@
 
 Get info about a specific 2D rendering driver for the current display.
 
+## Header File
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

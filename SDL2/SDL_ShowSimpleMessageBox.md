@@ -3,6 +3,10 @@
 
 Display a simple modal message box.
 
+## Header File
+
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_messagebox.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

@@ -3,6 +3,10 @@
 
 Deregister the win32 window class from an [SDL_RegisterApp](SDL_RegisterApp) call.
 
+## Header File
+
+Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_main.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

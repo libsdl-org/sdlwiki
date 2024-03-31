@@ -3,6 +3,10 @@
 
 Set the blend mode for a texture, used by [SDL_RenderCopy](SDL_RenderCopy)().
 
+## Header File
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

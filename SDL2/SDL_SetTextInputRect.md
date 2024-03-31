@@ -3,6 +3,10 @@
 
 Set the rectangle used to type Unicode text inputs.
 
+## Header File
+
+Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_keyboard.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

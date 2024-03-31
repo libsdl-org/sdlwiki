@@ -3,6 +3,10 @@
 
 Free an enumeration Linked List 
 
+## Header File
+
+Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

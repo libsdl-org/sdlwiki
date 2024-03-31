@@ -3,6 +3,10 @@
 
 Stop the simple rumble on a haptic device.
 
+## Header File
+
+Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_haptic.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

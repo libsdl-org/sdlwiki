@@ -3,6 +3,10 @@
 
 Get the player index of a joystick, or -1 if it's not available This can be called before any joysticks are opened.
 
+## Header File
+
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c

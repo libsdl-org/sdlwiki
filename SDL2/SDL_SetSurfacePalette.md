@@ -3,6 +3,10 @@
 
 Set the palette used by a surface.
 
+## Header File
+
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
+
 ## Syntax
 
 ```c
