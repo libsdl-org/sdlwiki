@@ -10,7 +10,7 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-int SDL_QueryTexture(SDL_Texture *texture, Uint32 *format, int *access, int *w, int *h);
+int SDL_QueryTexture(SDL_Texture *texture, SDL_PixelFormatEnum *format, int *access, int *w, int *h);
 
 ```
 
