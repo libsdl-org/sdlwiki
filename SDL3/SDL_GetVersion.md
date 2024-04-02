@@ -42,8 +42,8 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-SDL_version compiled;
-SDL_version linked;
+SDL_Version compiled;
+SDL_Version linked;
 
 SDL_VERSION(&compiled);
 SDL_GetVersion(&linked);
