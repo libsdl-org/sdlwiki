@@ -21,7 +21,7 @@ extern DECLSPEC char **SDLCALL SDL_GlobStorageDirectory(SDL_Storage *storage, co
 | **storage**     | a storage container                                                               |
 | **path**        | the path of the directory to enumerate                                            |
 | **pattern**     | the pattern that files in the directory must match. Can be NULL.                  |
-| **flags**       | `SDL_GLOBDIR_*` bitflags that affect this search.                                 |
+| **flags**       | `SDL_GLOB_*` bitflags that affect this search.                                    |
 | **count**       | on return, will be set to the number of items in the returned array. Can be NULL. |
 
 ## Return Value
@@ -39,9 +39,8 @@ returned. Subdirectories are permitted, and are specified with a path
 separator of '/'. Wildcard characters '*' and '?' never match a path
 separator.
 
-`flags` may be set to
-[SDL_GLOBDIR_CASEINSENSITIVE](SDL_GLOBDIR_CASEINSENSITIVE) to make the
-pattern matching case-insensitive.
+`flags` may be set to [SDL_GLOB_CASEINSENSITIVE](SDL_GLOB_CASEINSENSITIVE)
+to make the pattern matching case-insensitive.
 
 The returned array is always NULL-terminated, for your iterating
 convenience, but if `count` is non-NULL, on return it will contain the
