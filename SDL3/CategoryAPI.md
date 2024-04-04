@@ -552,6 +552,8 @@
 - [SDL_GL_SwapWindow](SDL_GL_SwapWindow)
 - [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
+- [SDL_GlobDirectory](SDL_GlobDirectory)
+- [SDL_GlobStorageDirectory](SDL_GlobStorageDirectory)
 - [SDL_GUIDFromString](SDL_GUIDFromString)
 - [SDL_GUIDToString](SDL_GUIDToString)
 - [SDL_HapticClose](SDL_HapticClose)
