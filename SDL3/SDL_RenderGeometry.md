@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 {
   SDL_bool quit = SDL_FALSE;
   SDL_Window *window = SDL_CreateWindow("Triangle Example", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, 0);
-  SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL, SDL_RENDERER_ACCELERATED);
+  SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL, 0);
 
   SDL_Vertex vert[3];
 
