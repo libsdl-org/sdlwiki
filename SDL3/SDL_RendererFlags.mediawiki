@@ -1,24 +1,13 @@
-
 = SDL_RendererFlags =
 An enumeration of flags used when creating a rendering context.
 
 
 == Values ==
 {|
-|SDL_RENDERER_SOFTWARE
-|the renderer is a software fallback
-|-
-|SDL_RENDERER_ACCELERATED
-|the renderer uses hardware acceleration
-|-
 |SDL_RENDERER_PRESENTVSYNC
 |present is synchronized with the refresh rate
-|-
-|SDL_RENDERER_TARGETTEXTURE
-|the renderer supports rendering to texture
 |}
 
-Note that providing no flags gives priority to available SDL_RENDERER_ACCELERATED renderers.
 == Related Structures ==
 :[[SDL_RendererInfo]]
 
