@@ -125,7 +125,7 @@ This function is available since SDL 3.0.0.
 ## Related Functions
 
 * [SDL_GetProperty](SDL_GetProperty)
-* [SDL_SetProperty](SDL_SetProperty)
+* [SDL_GetNumberProperty](SDL_GetNumberProperty)
 
 ----
 [CategoryAPI](CategoryAPI)
