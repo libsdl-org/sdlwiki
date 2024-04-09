@@ -9,7 +9,7 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_acos
 
-Use this function to compute arc cosine of `x`.
+Compute the arc cosine of `x`.
 
 ## Header File
 
@@ -24,13 +24,13 @@ double SDL_acos(double x);
 
 ## Function Parameters
 
-|           |                                   |
-| --------- | --------------------------------- |
-| **x**     | floating point value, in radians. |
+|           |                      |
+| --------- | -------------------- |
+| **x**     | floating point value |
 
 ## Return Value
 
-Returns arc cosine of `x`.
+Returns arc cosine of `x`, in radians
 
 ## Remarks
 
@@ -39,6 +39,14 @@ The definition of `y = acos(x)` is `x = cos(y)`.
 Domain: `-1 <= x <= 1`
 
 Range: `0 <= y <= Pi`
+
+This function operates on double-precision floating point values, use
+[SDL_acosf](SDL_acosf) for single-precision floats.
+
+This function may use a different approximation across different versions,
+platforms and configurations. i.e, it can return a different value given
+the same input on different machines or operating systems, or if SDL is
+updated.
 
 ## Thread Safety
 
@@ -59,6 +67,12 @@ SDL_Log("Pi/2 - asin(0):\t%f", M_PI / 2 - SDL_asin(0));
 SDL_Log("acos(-(-1)):\t%f", SDL_acos(-(-1)));
 SDL_Log("Pi - acos(-1):\t%f", M_PI - SDL_acos(-1));
 ```
+
+## See Also
+
+* [SDL_acosf](SDL_acosf)
+* [SDL_asin](SDL_asin)
+* [SDL_cos](SDL_cos)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStandard](CategoryStandard), [CategoryDraft](CategoryDraft)
