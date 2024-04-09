@@ -3,6 +3,10 @@
 
 Query a font's current wrap alignment option.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,10 +36,10 @@ The wrap alignment option can be one of the following:
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_SetFontWrappedAlign](TTF_SetFontWrappedAlign)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Initialize SDL_ttf.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,10 +36,10 @@ pair your init and quit calls.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_Quit](TTF_Quit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Create a font from a file, using target resolutions (in DPI).
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -43,10 +47,10 @@ When done with the returned [TTF_Font](TTF_Font), use
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_CloseFont](TTF_CloseFont)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

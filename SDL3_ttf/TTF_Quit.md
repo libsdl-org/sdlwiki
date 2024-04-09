@@ -3,6 +3,10 @@
 
 Deinitialize SDL_ttf.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -31,5 +35,5 @@ function!
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

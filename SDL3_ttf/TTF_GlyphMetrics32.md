@@ -3,6 +3,10 @@
 
 Query the metrics (dimensions) of a font's 32-bit glyph.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -35,5 +39,5 @@ no reason not to use this function exclusively.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

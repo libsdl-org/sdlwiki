@@ -3,6 +3,10 @@
 
 Check if SDL_ttf is initialized.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -31,11 +35,11 @@ return a negative number.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_Init](TTF_Init)
 * [TTF_Quit](TTF_Quit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

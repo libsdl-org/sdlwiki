@@ -3,6 +3,10 @@
 
 Set a font's size dynamically.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -30,5 +34,5 @@ This clears already-generated glyphs, if any, from the cache.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

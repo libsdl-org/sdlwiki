@@ -3,6 +3,10 @@
 
 Render Latin1 text at LCD subpixel quality to a new ARGB surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -51,11 +55,11 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_RenderUTF8_LCD](TTF_RenderUTF8_LCD)
 * [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

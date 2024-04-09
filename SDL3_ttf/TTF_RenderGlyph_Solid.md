@@ -3,6 +3,10 @@
 
 Render a single 16-bit glyph at fast quality to a new 8-bit surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -50,10 +54,10 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

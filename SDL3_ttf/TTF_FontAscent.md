@@ -3,6 +3,10 @@
 
 Query the offset from the baseline to the top of a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -29,5 +33,5 @@ This is a positive value, relative to the baseline.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

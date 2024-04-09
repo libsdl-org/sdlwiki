@@ -3,6 +3,10 @@
 
 Dispose of a previously-created font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,7 +36,7 @@ this call, as well.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_OpenFont](TTF_OpenFont)
 * [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
@@ -45,5 +49,5 @@ This function is available since SDL_ttf 3.0.0.
 * [TTF_OpenFontIndexIO](TTF_OpenFontIndexIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

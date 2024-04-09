@@ -3,6 +3,10 @@
 
 Calculate the dimensions of a rendered string of UTF-8 text.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -34,10 +38,10 @@ This does not need to render the string to do this calculation.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_SizeUNICODE](TTF_SizeUNICODE)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

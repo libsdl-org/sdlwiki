@@ -3,6 +3,10 @@
 
 Render a single 32-bit glyph at LCD subpixel quality to a new ARGB surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -46,12 +50,12 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
 * [TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded)
 * [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

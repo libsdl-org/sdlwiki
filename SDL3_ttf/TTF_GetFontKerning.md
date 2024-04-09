@@ -3,6 +3,10 @@
 
 Query whether or not kerning is allowed for a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -25,5 +29,5 @@ Returns non-zero if kerning is enabled, zero otherwise.
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

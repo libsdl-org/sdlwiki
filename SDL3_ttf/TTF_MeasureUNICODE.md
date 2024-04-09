@@ -3,6 +3,10 @@
 
 Calculate how much of a UCS-2 string will fit in a given width.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -40,12 +44,12 @@ through the UTF-8 version of this function.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_MeasureText](TTF_MeasureText)
 * [TTF_MeasureUTF8](TTF_MeasureUTF8)
 * [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

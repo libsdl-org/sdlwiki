@@ -3,6 +3,10 @@
 
 Calculate the dimensions of a rendered string of Latin1 text.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -39,11 +43,11 @@ char *` will need UTF-8.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_SizeUTF8](TTF_SizeUTF8)
 * [TTF_SizeUNICODE](TTF_SizeUNICODE)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Query the metrics (dimensions) of a font's 16-bit glyph.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -38,10 +42,10 @@ beginning of time, more or less.
 
 This function is available since SDL_ttf 3.0.0.
 
-## Related Functions
+## See Also
 
 * [TTF_GlyphMetrics32](TTF_GlyphMetrics32)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

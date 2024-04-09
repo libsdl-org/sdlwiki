@@ -3,6 +3,10 @@
 
 Query a font's style name.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ of the font, when `font` is handed to [TTF_CloseFont](TTF_CloseFont)().
 This function is available since SDL_ttf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
