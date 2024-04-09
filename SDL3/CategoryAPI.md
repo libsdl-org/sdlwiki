@@ -104,7 +104,6 @@
 - [SDL_CompilerBarrier](SDL_CompilerBarrier)
 - [SDL_ComposeCustomBlendMode](SDL_ComposeCustomBlendMode)
 - [SDL_CondBroadcast](SDL_CondBroadcast)
-- [SDL_CondSignal](SDL_CondSignal)
 - [SDL_CondWait](SDL_CondWait)
 - [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
 - [SDL_ConvertAudioSamples](SDL_ConvertAudioSamples)

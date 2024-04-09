@@ -1,6 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_CondBroadcast](SDL_CondBroadcast)
-- [SDL_CondSignal](SDL_CondSignal)
 - [SDL_CondWait](SDL_CondWait)
 - [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
 - [SDL_CreateCond](SDL_CreateCond)
