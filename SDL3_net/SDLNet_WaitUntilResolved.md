@@ -3,6 +3,10 @@
 
 Block until an address is resolved.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -59,10 +63,10 @@ block on the same address simultaneously.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

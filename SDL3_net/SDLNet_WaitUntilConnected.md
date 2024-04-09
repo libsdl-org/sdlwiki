@@ -3,6 +3,10 @@
 
 Block until a stream socket has connected to a server.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -60,10 +64,10 @@ threads may access different socket at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

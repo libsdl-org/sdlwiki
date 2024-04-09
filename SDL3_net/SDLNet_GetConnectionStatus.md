@@ -3,6 +3,10 @@
 
 Check if a stream socket is connected, without blocking.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -53,10 +57,10 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

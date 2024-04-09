@@ -3,6 +3,10 @@
 
 Dispose of a previously-created datagram socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -37,12 +41,12 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)
 * [SDLNet_SendDatagram](SDLNet_SendDatagram)
 * [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

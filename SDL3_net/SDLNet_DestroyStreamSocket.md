@@ -3,6 +3,10 @@
 
 Dispose of a previously-created stream socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -41,7 +45,7 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_CreateClient](SDLNet_CreateClient)
 * [SDLNet_AcceptClient](SDLNet_AcceptClient)
@@ -49,5 +53,5 @@ This function is available since SDL_Net 3.0.0.
 * [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

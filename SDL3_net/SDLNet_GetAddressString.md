@@ -3,6 +3,10 @@
 
 Get a human-readable string from a resolved address.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -45,11 +49,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
 * [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

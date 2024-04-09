@@ -3,6 +3,10 @@
 
 Create a server, which listens for connections to accept.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -63,12 +67,12 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)
 * [SDLNet_AcceptClient](SDLNet_AcceptClient)
 * [SDLNet_DestroyServer](SDLNet_DestroyServer)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Block until all of a stream socket's pending data is sent.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -55,11 +59,11 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)
 * [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

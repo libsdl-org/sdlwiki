@@ -3,6 +3,10 @@
 
 Initialize the SDL_net library.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -31,10 +35,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_Quit](SDLNet_Quit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

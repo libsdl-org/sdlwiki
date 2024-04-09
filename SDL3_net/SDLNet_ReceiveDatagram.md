@@ -3,6 +3,10 @@
 
 Receive a new packet that a remote system sent to a datagram socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -67,11 +71,11 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_SendDatagram](SDLNet_SendDatagram)
 * [SDLNet_DestroyDatagram](SDLNet_DestroyDatagram)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

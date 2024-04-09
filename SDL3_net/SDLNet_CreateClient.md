@@ -3,6 +3,10 @@
 
 Begin connecting a socket as a client to a remote server.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -69,12 +73,12 @@ It is safe to call this function from any thread.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
 * [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
 * [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

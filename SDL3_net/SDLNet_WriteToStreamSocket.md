@@ -3,6 +3,10 @@
 
 Send bytes over a stream socket to a remote system.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -61,12 +65,12 @@ threads may access different sockets at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
 * [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
 * [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

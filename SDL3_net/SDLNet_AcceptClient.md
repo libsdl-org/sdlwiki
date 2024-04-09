@@ -3,6 +3,10 @@
 
 Create a stream socket for the next pending client connection.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -56,11 +60,11 @@ threads may access different servers at the same time without problems.
 
 This function is available since SDL_Net 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)
 * [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
