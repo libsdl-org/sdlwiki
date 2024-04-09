@@ -3,6 +3,10 @@
 
 Get a list of music decoders that this build of SDL_mixer provides.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -33,11 +37,11 @@ The pointers remain valid until you call
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
 * [Mix_HasMusicDecoder](Mix_HasMusicDecoder)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Assign several consecutive channels to the same tag.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -43,5 +47,5 @@ Note that this returns success and failure in the _opposite_ way from
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

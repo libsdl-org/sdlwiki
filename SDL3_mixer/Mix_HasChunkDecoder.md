@@ -3,6 +3,10 @@
 
 Check if a chunk decoder is available by name.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -36,11 +40,11 @@ capital letters (some example names are "AIFF", "VOC", "WAV").
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)
 * [Mix_GetChunkDecoder](Mix_GetChunkDecoder)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

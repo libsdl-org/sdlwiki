@@ -3,6 +3,10 @@
 
 Query the version of SDL_mixer that the program is linked against.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -27,5 +31,5 @@ This returns static internal data; do not free or modify it!
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

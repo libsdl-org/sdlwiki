@@ -3,6 +3,10 @@
 
 Add your own music player or additional mixer function.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -57,10 +61,10 @@ from a single function.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_SetPostMix](Mix_SetPostMix)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Play an audio chunk on a specific channel, fading in the audio.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -56,5 +60,5 @@ as they are using the macro, which was available since the dawn of time.
 This function is available since SDL_mixer 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

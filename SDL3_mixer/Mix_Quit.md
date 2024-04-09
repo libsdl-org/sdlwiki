@@ -3,6 +3,10 @@
 
 Deinitialize SDL_mixer.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -33,10 +37,10 @@ this isn't required, be aware of the risks of deviating from that behavior.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_Init](Mix_Init)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

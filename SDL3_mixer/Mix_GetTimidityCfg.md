@@ -3,6 +3,10 @@
 
 Get full path of a previously-specified Timidity config file.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -27,10 +31,10 @@ free'd by the caller.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_SetTimidityCfg](Mix_SetTimidityCfg)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

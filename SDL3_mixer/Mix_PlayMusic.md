@@ -3,6 +3,10 @@
 
 Play a new music object.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -39,5 +43,5 @@ call [Mix_HaltMusic](Mix_HaltMusic)() before starting new music.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Set the panning of a channel.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -59,11 +63,11 @@ inconsistency here.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_SetPosition](Mix_SetPosition)
 * [Mix_SetDistance](Mix_SetDistance)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

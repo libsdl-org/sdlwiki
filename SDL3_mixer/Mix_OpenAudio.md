@@ -3,6 +3,10 @@
 
 Open an audio device for playback.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -68,11 +72,11 @@ should close the audio with [Mix_CloseAudio](Mix_CloseAudio)().
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_CloseAudio](Mix_CloseAudio)
 * [Mix_QuerySpec](Mix_QuerySpec)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

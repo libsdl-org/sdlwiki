@@ -3,6 +3,10 @@
 
 Set the current position in the music stream, in seconds.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -32,5 +36,5 @@ number) and for WAV, OGG, FLAC, MP3, and MODPLUG music at the moment.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

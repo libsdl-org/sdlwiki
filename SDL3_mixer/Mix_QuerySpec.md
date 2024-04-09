@@ -3,6 +3,10 @@
 
 Find out what the actual audio device parameters are.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -35,10 +39,10 @@ If the audio device is not opened, this function will return 0.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_OpenAudio](Mix_OpenAudio)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

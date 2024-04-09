@@ -3,6 +3,10 @@
 
 Load a supported audio format into a chunk.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -55,11 +59,11 @@ which was available since the dawn of time.
 
 This function is available since SDL_mixer 3.0.0
 
-## Related Functions
+## See Also
 
 * [Mix_LoadWAV_IO](Mix_LoadWAV_IO)
 * [Mix_FreeChunk](Mix_FreeChunk)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

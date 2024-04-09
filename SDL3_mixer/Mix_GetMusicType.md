@@ -3,6 +3,10 @@
 
 Find out the format of a mixer music.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -30,5 +34,5 @@ MUS_NONE if nothing is currently playing).
 This function is available since SDL_mixer 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

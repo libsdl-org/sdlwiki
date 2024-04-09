@@ -3,6 +3,10 @@
 
 Get the copyright text for a music object.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -33,12 +37,12 @@ an empty string ("").
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
 * [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
 * [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

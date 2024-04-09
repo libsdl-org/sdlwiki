@@ -3,6 +3,10 @@
 
 Pause playing of a group of channels by arbitrary tag.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -42,5 +46,5 @@ The default tag for a channel is -1.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

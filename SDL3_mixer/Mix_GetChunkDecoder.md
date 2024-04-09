@@ -3,6 +3,10 @@
 
 Get a chunk decoder's name.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -35,10 +39,10 @@ decoders are activated at device open time.
 
 This function is available since SDL_mixer 3.0.0.
 
-## Related Functions
+## See Also
 
 * [Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Get the loop time length of music stream, in seconds.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -32,5 +36,5 @@ If NULL is passed, returns duration of current playing music.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Check if a music decoder is available by name.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -36,11 +40,11 @@ capital letters (some example names are "MOD", "MP3", "FLAC").
 
 This function is available since SDL_mixer 3.0.0
 
-## Related Functions
+## See Also
 
 * [Mix_GetNumMusicDecoders](Mix_GetNumMusicDecoders)
 * [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

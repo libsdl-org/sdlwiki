@@ -3,6 +3,10 @@
 
 Halt a channel after fading it out for a specified time.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -43,5 +47,5 @@ mixer to manage later, and returns immediately.
 This function is available since SDL_mixer 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
