@@ -7,11 +7,11 @@ SDL officially supports Windows, macOS, Linux, iOS, and Android. Support for oth
 
 SDL is written in C, works natively with C++, and there are bindings available for several other languages, including C# and Python.
 
-SDL 2.0 is distributed under the [https://www.libsdl.org/license.php zlib license]. This license allows you to use SDL freely in any software.
+SDL 3.0 is distributed under the [https://www.libsdl.org/license.php zlib license]. This license allows you to use SDL freely in any software.
 
 This is the SDL wiki; SDL's main website is [https://libsdl.org/ libsdl.org].
 
-This wiki is your portal to documentation and other resources for SDL 2.0.
+This wiki is your portal to documentation and other resources for SDL 3.0.
 
 == Using the SDL documentation Wiki ==
 
@@ -21,8 +21,16 @@ This wiki is your portal to documentation and other resources for SDL 2.0.
 *: How to download the source code to SDL.
 * [[Installation]]
 *: How to install SDL on your platform of choice and link your program against it.
-* API reference [[CategoryAPI|by Name]] or [[APIByCategory|by Category]]
+
+* API references
 *: The official documentation for the API.  Look here to find detailed information about the functions, structures, and enumerations.
+** [[CategoryAPI|API index]]
+*** [[CategoryAPIFunction|Functions]]
+*** [[CategoryAPIStruct|Structures]]
+*** [[CategoryAPIEnum|Enumerations]]
+** [[APIByCategory|API by category]]
+
+
 * [[Tutorials]]
 *: Want to learn about a feature in SDL you haven't used before?  Here's a great place to get started!
 * [[Articles]]
