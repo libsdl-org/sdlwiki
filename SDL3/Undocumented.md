@@ -2,8 +2,6 @@
 
 ## Functions defined in the headers, but not in the wiki
 
-- [SDL_DuplicateSurface](SDL_DuplicateSurface)
-- [SDL_FlipSurface](SDL_FlipSurface)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
