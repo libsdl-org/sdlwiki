@@ -1326,7 +1326,6 @@
 - [SDL_SwapBE16](SDL_SwapBE16)
 - [SDL_SwapBE32](SDL_SwapBE32)
 - [SDL_SwapBE64](SDL_SwapBE64)
-- [SDL_SwapFloat](SDL_SwapFloat)
 - [SDL_SwapFloatBE](SDL_SwapFloatBE)
 - [SDL_SwapFloatLE](SDL_SwapFloatLE)
 - [SDL_SwapLE16](SDL_SwapLE16)
@@ -1443,5 +1442,4 @@
 - [SDL_WriteU64LE](SDL_WriteU64LE)
 - [SDL_WriteU8](SDL_WriteU8)
 - [SDLFunctionTemplate](SDLFunctionTemplate)
-- [SGFunctions](SGFunctions)
 <!-- END CATEGORY LIST -->

@@ -13,5 +13,4 @@
 - [SDL_TextureModulate](SDL_TextureModulate)
 - [SDL_WindowFlags](SDL_WindowFlags)
 - [SDLEnumTemplate](SDLEnumTemplate)
-- [SGEnumerations](SGEnumerations)
 <!-- END CATEGORY LIST -->
