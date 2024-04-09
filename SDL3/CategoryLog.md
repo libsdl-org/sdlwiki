@@ -9,7 +9,6 @@
 - [SDL_LogInfo](SDL_LogInfo)
 - [SDL_LogMessage](SDL_LogMessage)
 - [SDL_LogMessageV](SDL_LogMessageV)
-- [SDL_LogPriority](SDL_LogPriority)
 - [SDL_LogResetPriorities](SDL_LogResetPriorities)
 - [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
 - [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)

@@ -1,0 +1,6 @@
+# CategoryAPIMacro
+
+<!-- BEGIN CATEGORY LIST -->
+- [SDL_NET_VERSION](SDL_NET_VERSION)
+<!-- END CATEGORY LIST -->
+

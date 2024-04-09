@@ -1,5 +1,4 @@
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_atomic_t](SDL_atomic_t)
 - [SDL_AtomicAdd](SDL_AtomicAdd)
 - [SDL_AtomicCAS](SDL_AtomicCAS)
 - [SDL_AtomicCASPtr](SDL_AtomicCASPtr)

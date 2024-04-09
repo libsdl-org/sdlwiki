@@ -1,9 +1,6 @@
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_AudioCVT](SDL_AudioCVT)
 - [SDL_AudioFormat](SDL_AudioFormat)
-- [SDL_AudioSpec](SDL_AudioSpec)
 - [SDL_AudioStatus](SDL_AudioStatus)
-- [SDL_AudioStream](SDL_AudioStream)
 - [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 - [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
 - [SDL_DequeueAudio](SDL_DequeueAudio)

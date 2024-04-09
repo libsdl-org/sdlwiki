@@ -1,7 +1,6 @@
-# CategoryAPI
+# CategoryAPIFunction
 
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_NET_VERSION](SDL_NET_VERSION)
 - [SDLNet_AcceptClient](SDLNet_AcceptClient)
 - [SDLNet_CompareAddresses](SDLNet_CompareAddresses)
 - [SDLNet_CreateClient](SDLNet_CreateClient)
