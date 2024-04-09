@@ -3,6 +3,10 @@
 
 Save an SDL_Surface into PNG image data, via an SDL_IOStream.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -34,10 +38,10 @@ this function succeeds or not.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_SavePNG](IMG_SavePNG)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

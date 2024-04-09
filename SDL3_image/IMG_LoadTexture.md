@@ -3,6 +3,10 @@
 
 Load an image from a filesystem path into a GPU texture.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -49,11 +53,11 @@ call to SDL_DestroyTexture().
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_LoadTextureTyped_IO](IMG_LoadTextureTyped_IO)
 * [IMG_LoadTexture_IO](IMG_LoadTexture_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

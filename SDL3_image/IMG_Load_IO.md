@@ -3,6 +3,10 @@
 
 Load an image from an SDL data source into a software surface.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -65,12 +69,12 @@ call to SDL_DestroySurface().
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_Load](IMG_Load)
 * [IMG_LoadTyped_IO](IMG_LoadTyped_IO)
 * [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

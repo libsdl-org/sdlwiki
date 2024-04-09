@@ -3,6 +3,10 @@
 
 Load a GIF animation directly.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -31,7 +35,7 @@ interface available here.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_LoadAnimation](IMG_LoadAnimation)
 * [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
@@ -39,5 +43,5 @@ This function is available since SDL_image 3.0.0.
 * [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

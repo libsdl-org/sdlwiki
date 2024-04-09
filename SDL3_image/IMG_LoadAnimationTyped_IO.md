@@ -1,7 +1,11 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # IMG_LoadAnimationTyped_IO
 
-Load an animation from an SDL datasource 
+Load an animation from an SDL datasource
+
+## Header File
+
+Defined in SDL_image.h
 
 ## Syntax
 
@@ -41,12 +45,12 @@ call to [IMG_FreeAnimation](IMG_FreeAnimation)().
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_LoadAnimation](IMG_LoadAnimation)
 * [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
 * [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

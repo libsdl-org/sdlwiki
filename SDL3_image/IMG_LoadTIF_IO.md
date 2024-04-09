@@ -3,6 +3,10 @@
 
 Load a TIFF image directly.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -31,7 +35,7 @@ interface available here.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_LoadAVIF_IO](IMG_LoadAVIF_IO)
 * [IMG_LoadICO_IO](IMG_LoadICO_IO)
@@ -53,5 +57,5 @@ This function is available since SDL_image 3.0.0.
 * [IMG_LoadWEBP_IO](IMG_LoadWEBP_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

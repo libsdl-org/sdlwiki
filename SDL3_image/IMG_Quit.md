@@ -3,6 +3,10 @@
 
 Deinitialize SDL_image.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -33,10 +37,10 @@ this isn't required, be aware of the risks of deviating from that behavior.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_Init](IMG_Init)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

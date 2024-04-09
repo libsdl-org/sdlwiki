@@ -3,6 +3,10 @@
 
 Detect SVG image data on a readable/seekable SDL_IOStream.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -41,7 +45,7 @@ determine file type in many cases in its standard load functions.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_isAVIF](IMG_isAVIF)
 * [IMG_isICO](IMG_isICO)
@@ -62,5 +66,5 @@ This function is available since SDL_image 3.0.0.
 * [IMG_isWEBP](IMG_isWEBP)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

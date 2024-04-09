@@ -3,6 +3,10 @@
 
 This function gets the version of the dynamically linked SDL_image library.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -20,5 +24,5 @@ it should NOT be used to fill a version structure, instead you should use
 the SDL_IMAGE_VERSION() macro.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

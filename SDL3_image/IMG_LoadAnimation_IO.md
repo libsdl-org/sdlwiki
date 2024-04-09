@@ -3,6 +3,10 @@
 
 Load an animation from an SDL_IOStream.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -34,10 +38,10 @@ call to [IMG_FreeAnimation](IMG_FreeAnimation)().
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

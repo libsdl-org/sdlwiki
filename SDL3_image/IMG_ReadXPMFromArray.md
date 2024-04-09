@@ -3,6 +3,10 @@
 
 Load an XPM image from a memory array.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -33,10 +37,10 @@ call to SDL_DestroySurface().
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_ReadXPMFromArrayToRGB888](IMG_ReadXPMFromArrayToRGB888)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

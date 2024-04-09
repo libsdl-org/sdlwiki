@@ -3,6 +3,10 @@
 
 Dispose of an [IMG_Animation](IMG_Animation) and free its resources.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -24,12 +28,12 @@ The provided `anim` pointer is not valid once this call returns.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_LoadAnimation](IMG_LoadAnimation)
 * [IMG_LoadAnimation_IO](IMG_LoadAnimation_IO)
 * [IMG_LoadAnimationTyped_IO](IMG_LoadAnimationTyped_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

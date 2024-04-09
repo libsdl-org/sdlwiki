@@ -3,6 +3,10 @@
 
 Save an SDL_Surface into JPEG image data, via an SDL_IOStream.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -35,10 +39,10 @@ this function succeeds or not.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_SaveJPG](IMG_SaveJPG)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

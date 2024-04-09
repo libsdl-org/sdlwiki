@@ -3,6 +3,10 @@
 
 Save an SDL_Surface into a JPEG image file.
 
+## Header File
+
+Defined in SDL_image.h
+
 ## Syntax
 
 ```c
@@ -30,10 +34,10 @@ If the file already exists, it will be overwritten.
 
 This function is available since SDL_image 3.0.0.
 
-## Related Functions
+## See Also
 
 * [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
