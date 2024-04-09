@@ -30,6 +30,6 @@ Returns the rendering context on success or NULL on failure; call
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

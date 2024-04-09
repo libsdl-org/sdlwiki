@@ -101,6 +101,6 @@ int main(int argc, char* argv[]){
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

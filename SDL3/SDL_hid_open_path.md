@@ -36,5 +36,5 @@ can be used (eg: /dev/hidraw0 on Linux).
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

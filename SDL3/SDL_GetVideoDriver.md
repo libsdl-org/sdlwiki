@@ -33,11 +33,11 @@ checked during initialization.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

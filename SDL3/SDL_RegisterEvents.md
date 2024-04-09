@@ -33,11 +33,11 @@ This function is available since SDL 3.0.0.
 
 <<Include([SDL_UserEvent](SDL_UserEvent), , , from="== Code Examples ==", to="== Remarks ==")>>
 
-## Related Functions
+## See Also
 
 * [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

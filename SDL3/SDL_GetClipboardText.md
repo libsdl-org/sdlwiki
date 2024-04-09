@@ -30,12 +30,12 @@ a copy of the clipboard's content.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasClipboardText](SDL_HasClipboardText)
 * [SDL_SetClipboardText](SDL_SetClipboardText)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryClipboard](CategoryClipboard)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)
 
 

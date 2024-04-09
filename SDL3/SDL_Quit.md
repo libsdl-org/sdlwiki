@@ -48,12 +48,12 @@ int main(int argc, char** argv) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Init](SDL_Init)
 * [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

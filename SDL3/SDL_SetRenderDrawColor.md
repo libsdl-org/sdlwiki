@@ -51,12 +51,12 @@ rectangle.h = 50;
 SDL_RenderFillRect(renderer, &rectangle);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
 * [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

@@ -46,7 +46,7 @@ callback set, the caller might need to manage extra locking.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ClearAudioStream](SDL_ClearAudioStream)
 * [SDL_FlushAudioStream](SDL_FlushAudioStream)
@@ -54,5 +54,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

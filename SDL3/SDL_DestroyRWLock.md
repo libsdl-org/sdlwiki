@@ -32,10 +32,10 @@ undefined behavior depending on the platform.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRWLock](SDL_CreateRWLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

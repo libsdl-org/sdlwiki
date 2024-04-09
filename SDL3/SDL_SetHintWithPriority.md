@@ -39,13 +39,13 @@ Environment variables are considered to have override priority.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_ResetHint](SDL_ResetHint)
 * [SDL_SetHint](SDL_SetHint)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

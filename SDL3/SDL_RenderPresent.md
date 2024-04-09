@@ -55,7 +55,7 @@ This function is available since SDL 3.0.0.
 
 Please refer to the code example in [SDL_RenderClear](SDL_RenderClear).
 
-## Related Functions
+## See Also
 
 * [SDL_RenderClear](SDL_RenderClear)
 * [SDL_RenderLine](SDL_RenderLine)
@@ -70,6 +70,6 @@ Please refer to the code example in [SDL_RenderClear](SDL_RenderClear).
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

@@ -31,11 +31,11 @@ Returns 0 if the file could be queried, a negative value otherwise; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ReadStorageFile](SDL_ReadStorageFile)
 * [SDL_StorageReady](SDL_StorageReady)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -34,11 +34,11 @@ If the blend mode is not supported, the closest supported mode is chosen.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

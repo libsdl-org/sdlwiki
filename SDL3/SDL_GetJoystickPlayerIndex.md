@@ -33,10 +33,10 @@ will not be able to supply this information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetJoystickPlayerIndex](SDL_SetJoystickPlayerIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

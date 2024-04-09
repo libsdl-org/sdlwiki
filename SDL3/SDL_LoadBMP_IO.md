@@ -37,12 +37,12 @@ memory leak.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DestroySurface](SDL_DestroySurface)
 * [SDL_LoadBMP](SDL_LoadBMP)
 * [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

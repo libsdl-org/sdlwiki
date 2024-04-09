@@ -35,11 +35,11 @@ SDL_ResetAssertionReport();
 printf("%p\n", SDL_GetAssertionReport());  // NULL.
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetAssertionReport](SDL_GetAssertionReport)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAssertions](CategoryAssertions)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssertions](CategoryAssertions)
 
 

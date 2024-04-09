@@ -99,7 +99,7 @@ exit:
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateCursor](SDL_CreateCursor)
 * [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
@@ -107,6 +107,6 @@ exit:
 * [SDL_SetCursor](SDL_SetCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 
 

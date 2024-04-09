@@ -32,6 +32,6 @@ call [SDL_GetError](SDL_GetError)() for more information.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
 
 

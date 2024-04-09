@@ -25,10 +25,10 @@ void SDL_SetLogOutputFunction(SDL_LogOutputFunction callback, void *userdata);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetLogOutputFunction](SDL_GetLogOutputFunction)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

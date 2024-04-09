@@ -1,0 +1,29 @@
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_MessageBoxData
+
+MessageBox structure containing title, text, window, etc.
+
+## Header File
+
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+
+## Syntax
+
+```c
+typedef struct SDL_MessageBoxData
+{
+    Uint32 flags;                       /**< ::SDL_MessageBoxFlags */
+    SDL_Window *window;                 /**< Parent window, can be NULL */
+    const char *title;                  /**< UTF-8 title */
+    const char *message;                /**< UTF-8 message text */
+
+    int numbuttons;
+    const SDL_MessageBoxButtonData *buttons;
+
+    const SDL_MessageBoxColorScheme *colorScheme;   /**< ::SDL_MessageBoxColorScheme, can be NULL to use system settings */
+} SDL_MessageBoxData;
+```
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+

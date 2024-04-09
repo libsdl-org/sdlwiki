@@ -29,7 +29,7 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickButton](SDL_GetJoystickButton)
 * [SDL_GetNumJoystickAxes](SDL_GetNumJoystickAxes)
@@ -37,5 +37,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

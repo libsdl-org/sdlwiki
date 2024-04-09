@@ -36,11 +36,11 @@ viewport is always reset when changing rendering targets.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderViewport](SDL_GetRenderViewport)
 * [SDL_SetRenderViewport](SDL_SetRenderViewport)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

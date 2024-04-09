@@ -42,10 +42,10 @@ https://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
 
 This function is available since SDL 2.0.3.
 
-## Related Functions
+## See Also
 
 * [SDL_WinRTGetFSPathUNICODE](SDL_WinRTGetFSPathUNICODE)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

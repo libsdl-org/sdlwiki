@@ -23,10 +23,10 @@ Returns [SDL_TRUE](SDL_TRUE) if a joystick is connected,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

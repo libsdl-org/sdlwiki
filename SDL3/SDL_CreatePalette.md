@@ -34,12 +34,12 @@ The palette entries are initialized to white.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyPalette](SDL_DestroyPalette)
 * [SDL_SetPaletteColors](SDL_SetPaletteColors)
 * [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

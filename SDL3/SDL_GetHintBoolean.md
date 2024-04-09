@@ -37,13 +37,13 @@ hint does not exist.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

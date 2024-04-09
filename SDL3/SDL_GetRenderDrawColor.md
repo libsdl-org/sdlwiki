@@ -33,12 +33,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawColorFloat](SDL_GetRenderDrawColorFloat)
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

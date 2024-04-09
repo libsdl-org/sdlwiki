@@ -35,11 +35,11 @@ objects.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowID](SDL_GetWindowID)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

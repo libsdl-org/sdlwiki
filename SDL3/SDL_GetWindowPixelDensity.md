@@ -35,10 +35,10 @@ would have a pixel density of 2.0.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowDisplayScale](SDL_GetWindowDisplayScale)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

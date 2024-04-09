@@ -29,10 +29,10 @@ Returns [SDL_TRUE](SDL_TRUE) if the joystick is haptic or
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenHapticFromJoystick](SDL_OpenHapticFromJoystick)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

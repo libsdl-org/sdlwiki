@@ -46,11 +46,11 @@ You can convert coordinates in an event into rendering coordinates using
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
 * [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

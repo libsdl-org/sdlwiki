@@ -28,10 +28,10 @@ Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickInstanceType](SDL_GetJoystickInstanceType)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

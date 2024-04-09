@@ -28,12 +28,12 @@ if (*error) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetError](SDL_GetError)
 * [SDL_SetError](SDL_SetError)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)
 
 

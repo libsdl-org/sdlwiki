@@ -39,13 +39,13 @@ destination surface, in case that would be important.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ConvertSurface](SDL_ConvertSurface)
 * [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
 * [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

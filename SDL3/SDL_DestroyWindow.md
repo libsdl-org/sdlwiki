@@ -33,13 +33,13 @@ the SDL error message to "Invalid window". See
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

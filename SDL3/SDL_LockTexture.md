@@ -46,12 +46,12 @@ and apply any changes.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockTextureToSurface](SDL_LockTextureToSurface)
 * [SDL_UnlockTexture](SDL_UnlockTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

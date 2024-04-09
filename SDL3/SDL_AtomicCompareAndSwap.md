@@ -36,10 +36,10 @@ it!***
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicCompareAndSwapPointer](SDL_AtomicCompareAndSwapPointer)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

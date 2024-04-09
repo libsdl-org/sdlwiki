@@ -27,13 +27,13 @@ This always returns false on CPUs that aren't using Intel instruction sets.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasAVX2](SDL_HasAVX2)
 * [SDL_HasAVX512F](SDL_HasAVX512F)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

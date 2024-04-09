@@ -70,11 +70,11 @@ SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
                          NULL);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_ShowMessageBox](SDL_ShowMessageBox)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

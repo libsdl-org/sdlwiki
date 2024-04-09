@@ -63,13 +63,13 @@ This function is available since SDL 3.0.0.
     SDL_PushEvent(&sdlevent);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_PeepEvents](SDL_PeepEvents)
 * [SDL_PollEvent](SDL_PollEvent)
 * [SDL_RegisterEvents](SDL_RegisterEvents)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

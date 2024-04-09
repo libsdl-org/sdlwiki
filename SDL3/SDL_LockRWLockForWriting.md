@@ -44,12 +44,12 @@ block until it can lock the mutex, and return with it locked.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
 * [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
 * [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

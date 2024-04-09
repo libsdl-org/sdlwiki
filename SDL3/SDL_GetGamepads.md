@@ -30,11 +30,11 @@ with [SDL_free](SDL_free)(), or NULL on error; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasGamepad](SDL_HasGamepad)
 * [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

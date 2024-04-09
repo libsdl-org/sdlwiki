@@ -34,11 +34,11 @@ available this function returns 0.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickVendor](SDL_GetJoystickVendor)
 * [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

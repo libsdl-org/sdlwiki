@@ -37,11 +37,11 @@ use.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetMouseInstanceName](SDL_GetMouseInstanceName)
 * [SDL_HasMouse](SDL_HasMouse)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

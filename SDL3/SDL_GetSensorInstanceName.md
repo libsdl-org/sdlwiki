@@ -29,5 +29,5 @@ Returns the sensor name, or NULL if `instance_id` is not valid
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -62,12 +62,12 @@ SDL_Thread *thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 SDL_DetachThread(thread);  /* will go away on its own upon completion. */
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateThread](SDL_CreateThread)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 
 

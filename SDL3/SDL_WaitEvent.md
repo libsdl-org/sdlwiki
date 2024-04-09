@@ -39,13 +39,13 @@ subsystem.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PollEvent](SDL_PollEvent)
 * [SDL_PushEvent](SDL_PushEvent)
 * [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

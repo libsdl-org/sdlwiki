@@ -52,13 +52,13 @@ vary.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_MinimizeWindow](SDL_MinimizeWindow)
 * [SDL_RestoreWindow](SDL_RestoreWindow)
 * [SDL_SyncWindow](SDL_SyncWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

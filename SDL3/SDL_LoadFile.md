@@ -37,10 +37,10 @@ The data should be freed with [SDL_free](SDL_free)().
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadFile_IO](SDL_LoadFile_IO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

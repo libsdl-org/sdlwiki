@@ -89,11 +89,11 @@ void InitializePrefPath() {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetBasePath](SDL_GetBasePath)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryFilesystem](CategoryFilesystem)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 
 

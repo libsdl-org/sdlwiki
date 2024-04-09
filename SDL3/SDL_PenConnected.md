@@ -27,14 +27,13 @@ corresponding pen is attached, or [SDL_FALSE](SDL_FALSE) otherwise.
 
 ## Remarks
 
-If a pen is detached, it will not show up for
-::[SDL_GetPens](SDL_GetPens)(). Other operations will still be available
-but may return default values.
+If a pen is detached, it will not show up for [SDL_GetPens](SDL_GetPens)().
+Other operations will still be available but may return default values.
 
 ## Version
 
 This function is available since SDL 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

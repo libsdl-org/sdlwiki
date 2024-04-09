@@ -30,12 +30,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 * [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
 * [SDL_SetTextureAlphaModFloat](SDL_SetTextureAlphaModFloat)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -30,5 +30,5 @@ Returns the data rate, or 0.0f if the data rate is not available.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

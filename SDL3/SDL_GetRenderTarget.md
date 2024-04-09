@@ -41,12 +41,12 @@ and is reported a NULL here.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderTarget](SDL_SetRenderTarget)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -43,11 +43,11 @@ SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param
 SDL_RemoveTimer(my_timer_id);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_AddTimer](SDL_AddTimer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
 

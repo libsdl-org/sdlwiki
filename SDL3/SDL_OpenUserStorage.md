@@ -38,7 +38,7 @@ when the container has been closed; ensuring safe and optimal save I/O.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
@@ -49,5 +49,5 @@ This function is available since SDL 3.0.0.
 * [SDL_WriteStorageFile](SDL_WriteStorageFile)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

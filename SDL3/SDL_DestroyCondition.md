@@ -24,10 +24,10 @@ void SDL_DestroyCondition(SDL_Condition *cond);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateCondition](SDL_CreateCondition)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

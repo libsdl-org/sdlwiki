@@ -29,7 +29,7 @@ void SDL_LogMessageV(int category,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Log](SDL_Log)
 * [SDL_LogCritical](SDL_LogCritical)
@@ -41,6 +41,6 @@ This function is available since SDL 3.0.0.
 * [SDL_LogWarn](SDL_LogWarn)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
 
 

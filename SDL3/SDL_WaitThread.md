@@ -90,12 +90,12 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateThread](SDL_CreateThread)
 * [SDL_DetachThread](SDL_DetachThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 
 

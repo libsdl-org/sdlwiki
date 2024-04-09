@@ -30,10 +30,10 @@ This should be called before [SDL_DestroyWindow](SDL_DestroyWindow), if
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Metal_CreateView](SDL_Metal_CreateView)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

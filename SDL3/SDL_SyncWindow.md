@@ -41,7 +41,7 @@ On windowing systems where changes are immediate, this does nothing.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetWindowSize](SDL_SetWindowSize)
 * [SDL_SetWindowPosition](SDL_SetWindowPosition)
@@ -51,5 +51,5 @@ This function is available since SDL 3.0.0.
 * [SDL_RestoreWindow](SDL_RestoreWindow)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

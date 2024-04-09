@@ -33,12 +33,12 @@ it!***
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicCompareAndSwapPointer](SDL_AtomicCompareAndSwapPointer)
 * [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 
 

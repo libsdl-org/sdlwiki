@@ -46,7 +46,7 @@ reasons you may not get the pixels back if you lock the texture afterward.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockTexture](SDL_LockTexture)
 * [SDL_UnlockTexture](SDL_UnlockTexture)
@@ -54,6 +54,6 @@ This function is available since SDL 3.0.0.
 * [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

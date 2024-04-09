@@ -30,11 +30,11 @@ closest to the center of the rect on success or 0 on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 * [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

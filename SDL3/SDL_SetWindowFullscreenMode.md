@@ -47,12 +47,12 @@ event will be emitted with the new mode dimensions.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 * [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 * [SDL_SyncWindow](SDL_SyncWindow)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

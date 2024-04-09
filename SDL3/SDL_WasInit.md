@@ -63,12 +63,12 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Init](SDL_Init)
 * [SDL_InitSubSystem](SDL_InitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

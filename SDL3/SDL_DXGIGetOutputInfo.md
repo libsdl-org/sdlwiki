@@ -45,7 +45,7 @@ DX11 device and swap chain.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -44,11 +44,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Init](SDL_Init)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

@@ -95,7 +95,7 @@ The following properties may be set at creation time by SDL:
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseIO](SDL_CloseIO)
 * [SDL_ReadIO](SDL_ReadIO)
@@ -104,5 +104,5 @@ This function is available since SDL 3.0.0.
 * [SDL_WriteIO](SDL_WriteIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_DestroyProperties
 
-Destroy a set of properties 
+Destroy a set of properties.
 
 ## Header File
 
@@ -34,10 +34,10 @@ other threads might be setting or getting values from these properties.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateProperties](SDL_CreateProperties)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -41,12 +41,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DelHintCallback](SDL_DelHintCallback)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

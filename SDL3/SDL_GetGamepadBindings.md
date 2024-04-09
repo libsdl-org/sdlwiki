@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetGamepadBindings
 
-Get the SDL joystick layer bindings for a gamepad 
+Get the SDL joystick layer bindings for a gamepad.
 
 ## Header File
 
@@ -32,5 +32,5 @@ freed with [SDL_free](SDL_free)(), or NULL on error; call
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

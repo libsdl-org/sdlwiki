@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_InitSubSystem](SDL_InitSubSystem)
 * [SDL_Quit](SDL_Quit)
@@ -95,6 +95,6 @@ int main(int argc, char* argv[])
 * [SDL_WasInit](SDL_WasInit)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

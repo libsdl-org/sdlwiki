@@ -97,11 +97,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

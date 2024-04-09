@@ -34,12 +34,12 @@ Returns [SDL_TRUE](SDL_TRUE) if the effect is supported or
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
 * [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
 
 

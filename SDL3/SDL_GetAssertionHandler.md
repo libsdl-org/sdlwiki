@@ -43,12 +43,12 @@ it is safe to pass a NULL pointer to this function to ignore it.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetAssertionHandler](SDL_SetAssertionHandler)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAssertions](CategoryAssertions)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssertions](CategoryAssertions)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

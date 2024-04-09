@@ -76,12 +76,12 @@ int main(int argc, char* argv[])
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
 * [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

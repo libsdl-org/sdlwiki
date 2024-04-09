@@ -23,10 +23,10 @@ Returns [SDL_TRUE](SDL_TRUE) if a keyboard is connected,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboards](SDL_GetKeyboards)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

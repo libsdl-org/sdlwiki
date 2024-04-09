@@ -45,11 +45,11 @@ stream-specific mutex while running.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetAudioStreamFrequencyRatio](SDL_GetAudioStreamFrequencyRatio)
 * [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

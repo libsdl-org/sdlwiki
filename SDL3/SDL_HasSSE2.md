@@ -27,7 +27,7 @@ This always returns false on CPUs that aren't using Intel instruction sets.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasSSE](SDL_HasSSE)
 * [SDL_HasSSE3](SDL_HasSSE3)
@@ -35,6 +35,6 @@ This function is available since SDL 3.0.0.
 * [SDL_HasSSE42](SDL_HasSSE42)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU)
 
 

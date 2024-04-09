@@ -126,7 +126,7 @@ This function is available since SDL 3.0.0.
 You can add your code example here
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 * [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
@@ -134,6 +134,6 @@ You can add your code example here
 * [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
 
 

@@ -52,7 +52,7 @@ promote your read-only lock to a write lock without unlocking first).
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyRWLock](SDL_DestroyRWLock)
 * [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
@@ -62,5 +62,5 @@ This function is available since SDL 3.0.0.
 * [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

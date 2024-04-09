@@ -35,11 +35,11 @@ errors such as `Blit combination not supported` may occur.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyPixelFormat](SDL_DestroyPixelFormat)
 * [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

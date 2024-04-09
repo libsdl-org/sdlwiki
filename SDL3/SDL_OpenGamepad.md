@@ -29,11 +29,11 @@ Returns a gamepad identifier or NULL if an error occurred; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseGamepad](SDL_CloseGamepad)
 * [SDL_IsGamepad](SDL_IsGamepad)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -35,12 +35,12 @@ This function is available since SDL 3.0.0.
 SDL_ShowWindow(window);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_HideWindow](SDL_HideWindow)
 * [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

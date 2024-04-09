@@ -32,12 +32,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
 * [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

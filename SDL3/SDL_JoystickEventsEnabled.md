@@ -29,10 +29,10 @@ of the joystick when you want joystick information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetJoystickEventsEnabled](SDL_SetJoystickEventsEnabled)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

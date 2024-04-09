@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_Error
 
-[SDL_Error](SDL_Error)() 
+Set an SDL error from a list of error codes.
 
 ## Header File
 
@@ -29,5 +29,5 @@ Returns unconditionally -1.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

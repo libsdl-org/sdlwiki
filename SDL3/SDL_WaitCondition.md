@@ -46,12 +46,12 @@ of -1.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BroadcastCondition](SDL_BroadcastCondition)
 * [SDL_SignalCondition](SDL_SignalCondition)
 * [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -23,10 +23,10 @@ Returns [SDL_TRUE](SDL_TRUE) if a gamepad is connected,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepads](SDL_GetGamepads)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

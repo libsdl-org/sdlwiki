@@ -38,11 +38,11 @@ running [SDL_UpdateHapticEffect](SDL_UpdateHapticEffect)().
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
 * [SDL_RunHapticEffect](SDL_RunHapticEffect)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

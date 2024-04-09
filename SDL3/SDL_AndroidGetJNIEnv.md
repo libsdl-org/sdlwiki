@@ -74,11 +74,11 @@ void showHome(void)
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
 
 

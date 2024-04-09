@@ -46,6 +46,6 @@ SDL_QueryTexture(source, NULL, NULL, &w, &h);
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

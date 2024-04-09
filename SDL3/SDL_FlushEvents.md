@@ -39,11 +39,11 @@ the flush call.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_FlushEvent](SDL_FlushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

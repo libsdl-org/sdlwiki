@@ -98,7 +98,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
 * [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
@@ -108,6 +108,6 @@ int main(int argc, char *argv[])
 * [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

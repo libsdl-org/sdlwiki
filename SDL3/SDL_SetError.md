@@ -56,12 +56,12 @@ if (errorCode < 0)
     SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_ClearError](SDL_ClearError)
 * [SDL_GetError](SDL_GetError)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)
 
 

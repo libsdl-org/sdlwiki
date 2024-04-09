@@ -30,11 +30,11 @@ information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderClipRect](SDL_GetRenderClipRect)
 * [SDL_SetRenderClipRect](SDL_SetRenderClipRect)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

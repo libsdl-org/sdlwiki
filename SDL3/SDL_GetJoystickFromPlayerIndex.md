@@ -29,11 +29,11 @@ Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickPlayerIndex](SDL_GetJoystickPlayerIndex)
 * [SDL_SetJoystickPlayerIndex](SDL_SetJoystickPlayerIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

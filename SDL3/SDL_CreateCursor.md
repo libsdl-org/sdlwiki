@@ -153,7 +153,7 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateColorCursor](SDL_CreateColorCursor)
 * [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
@@ -161,6 +161,6 @@ static SDL_Cursor *init_system_cursor(const char *image[])
 * [SDL_SetCursor](SDL_SetCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

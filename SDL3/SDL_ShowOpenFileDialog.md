@@ -46,11 +46,11 @@ don't yet exist.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 * [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

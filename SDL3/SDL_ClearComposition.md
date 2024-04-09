@@ -18,11 +18,11 @@ void SDL_ClearComposition(void);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_StartTextInput](SDL_StartTextInput)
 * [SDL_StopTextInput](SDL_StopTextInput)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

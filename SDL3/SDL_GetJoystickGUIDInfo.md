@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetJoystickGUIDInfo
 
-Get the device information encoded in a [SDL_JoystickGUID](SDL_JoystickGUID) structure 
+Get the device information encoded in a [SDL_JoystickGUID](SDL_JoystickGUID) structure.
 
 ## Header File
 
@@ -28,10 +28,10 @@ void SDL_GetJoystickGUIDInfo(SDL_JoystickGUID guid, Uint16 *vendor, Uint16 *prod
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

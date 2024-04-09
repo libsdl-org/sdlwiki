@@ -53,7 +53,7 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
        linked.major, linked.minor, linked.patch);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetRevision](SDL_GetRevision)
 
@@ -63,6 +63,6 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 :[SDL_VERSION](SDL_VERSION)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVersion](CategoryVersion)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVersion](CategoryVersion)
 
 

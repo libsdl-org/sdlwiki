@@ -59,11 +59,11 @@ check your system documentation).
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateThread](SDL_CreateThread)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

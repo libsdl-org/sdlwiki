@@ -132,13 +132,13 @@ int main(int argc, char* argv[]) {
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
 * [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

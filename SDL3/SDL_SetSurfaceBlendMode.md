@@ -36,11 +36,11 @@ existing data, the blendmode of the SOURCE surface should be set to
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetSurfaceBlendMode](SDL_GetSurfaceBlendMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

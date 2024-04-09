@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 * [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
@@ -105,6 +105,6 @@ int main(int argc, char *argv[])
 * [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

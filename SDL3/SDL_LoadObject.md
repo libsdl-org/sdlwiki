@@ -38,12 +38,12 @@ This function is available since SDL 3.0.0.
 SDL_LoadObject("mylib.so");
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_LoadFunction](SDL_LoadFunction)
 * [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
 
 

@@ -32,12 +32,12 @@ Returns 0 if the file was read, a negative value otherwise; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
 * [SDL_StorageReady](SDL_StorageReady)
 * [SDL_WriteStorageFile](SDL_WriteStorageFile)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

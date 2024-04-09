@@ -28,11 +28,11 @@ It is safe to pass NULL to this function.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateSurface](SDL_CreateSurface)
 * [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

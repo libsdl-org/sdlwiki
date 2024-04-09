@@ -122,11 +122,11 @@ On X11:
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetProperty](SDL_GetProperty)
 * [SDL_SetProperty](SDL_SetProperty)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

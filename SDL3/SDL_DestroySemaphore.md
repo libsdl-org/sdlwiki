@@ -33,11 +33,11 @@ This function is available since SDL 3.0.0.
 
 <<Include([SDL_CreateSemaphore](SDL_CreateSemaphore), , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
 
-## Related Functions
+## See Also
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 
 

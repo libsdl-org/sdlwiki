@@ -27,11 +27,11 @@ refers to data that is thread-specific.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTLS](SDL_GetTLS)
 * [SDL_SetTLS](SDL_SetTLS)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

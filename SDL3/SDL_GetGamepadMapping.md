@@ -36,7 +36,7 @@ Details about mappings are discussed with
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 * [SDL_GetGamepadInstanceMapping](SDL_GetGamepadInstanceMapping)
@@ -44,5 +44,5 @@ This function is available since SDL 3.0.0.
 * [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

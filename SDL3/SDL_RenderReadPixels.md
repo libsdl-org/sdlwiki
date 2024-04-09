@@ -40,6 +40,6 @@ called after rendering and before [SDL_RenderPresent](SDL_RenderPresent)().
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

@@ -31,6 +31,6 @@ SDL_Log("Number of logical CPU cores: %d", SDL_GetCPUCount());
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryCPU](CategoryCPU)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU)
 
 

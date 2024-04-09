@@ -47,11 +47,11 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
 * [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

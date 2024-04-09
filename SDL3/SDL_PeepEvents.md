@@ -58,13 +58,13 @@ This function is available since SDL 3.0.0.
 Add a code example here.
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_PollEvent](SDL_PollEvent)
 * [SDL_PumpEvents](SDL_PumpEvents)
 * [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

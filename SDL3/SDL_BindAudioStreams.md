@@ -55,12 +55,12 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BindAudioStreams](SDL_BindAudioStreams)
 * [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
 * [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

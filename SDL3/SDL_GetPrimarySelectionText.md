@@ -30,11 +30,11 @@ a copy of the primary selection's content.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
 * [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

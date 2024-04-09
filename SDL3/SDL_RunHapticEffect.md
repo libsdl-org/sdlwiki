@@ -39,12 +39,12 @@ to [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) instead.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHapticEffectStatus](SDL_GetHapticEffectStatus)
 * [SDL_StopHapticEffect](SDL_StopHapticEffect)
 * [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

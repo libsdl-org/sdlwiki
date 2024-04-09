@@ -23,10 +23,10 @@ Returns [SDL_TRUE](SDL_TRUE) if text input events are enabled else
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_StartTextInput](SDL_StartTextInput)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

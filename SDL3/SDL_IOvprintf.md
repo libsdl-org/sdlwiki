@@ -35,11 +35,11 @@ This function does formatted printing to the stream.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_IOprintf](SDL_IOprintf)
 * [SDL_WriteIO](SDL_WriteIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

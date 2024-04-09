@@ -42,13 +42,13 @@ area size in pixels.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
 * [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
 * [SDL_SetWindowSize](SDL_SetWindowSize)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

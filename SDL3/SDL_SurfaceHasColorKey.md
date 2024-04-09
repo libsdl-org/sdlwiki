@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SurfaceHasColorKey
 
-Returns whether the surface has a color key 
+Returns whether the surface has a color key.
 
 ## Header File
 
@@ -34,11 +34,11 @@ It is safe to pass a NULL `surface` here; it will return
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)
 * [SDL_GetSurfaceColorKey](SDL_GetSurfaceColorKey)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -39,12 +39,12 @@ program from the dynamic library using
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)
 * [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

@@ -128,11 +128,11 @@ main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
 

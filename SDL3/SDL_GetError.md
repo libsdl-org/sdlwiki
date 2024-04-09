@@ -59,12 +59,12 @@ if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
 ```
 Note: Although this example uses [SDL_Init](SDL_Init)(), [SDL_GetError](SDL_GetError)() provides an error message for any failed SDL operation which supports error reporting, see the wiki page for each particular SDL function.
 
-## Related Functions
+## See Also
 
 * [SDL_ClearError](SDL_ClearError)
 * [SDL_SetError](SDL_SetError)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)
 
 

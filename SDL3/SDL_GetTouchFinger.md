@@ -42,12 +42,12 @@ The returned resource is owned by SDL and should not be deallocated.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

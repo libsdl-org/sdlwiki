@@ -29,10 +29,10 @@ Returns [SDL_TRUE](SDL_TRUE) if the event is being processed,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetEventEnabled](SDL_SetEventEnabled)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

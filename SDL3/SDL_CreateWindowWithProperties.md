@@ -146,12 +146,12 @@ the behaviors and guidelines outlined in
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateProperties](SDL_CreateProperties)
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -32,5 +32,5 @@ Returns the day of year [0-365] if the date is valid, otherwise -1; call
 This function is available since SDL 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

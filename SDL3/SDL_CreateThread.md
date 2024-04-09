@@ -94,12 +94,12 @@ Thread counter: 9
 Thread returned value: 10
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 
 

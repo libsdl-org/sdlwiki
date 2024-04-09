@@ -37,7 +37,7 @@ thread, and doing so results in undefined behavior.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
 * [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
@@ -45,5 +45,5 @@ This function is available since SDL 3.0.0.
 * [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

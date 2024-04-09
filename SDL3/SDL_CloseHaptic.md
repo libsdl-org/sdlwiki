@@ -24,10 +24,10 @@ void SDL_CloseHaptic(SDL_Haptic *haptic);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenHaptic](SDL_OpenHaptic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

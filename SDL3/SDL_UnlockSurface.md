@@ -28,11 +28,11 @@ This function is available since SDL 3.0.0.
 
 <<Include([SDL_LockSurface](SDL_LockSurface), , , from="== Code Examples ==", to="== Remarks ==")>>
 
-## Related Functions
+## See Also
 
 * [SDL_LockSurface](SDL_LockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

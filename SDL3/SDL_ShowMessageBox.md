@@ -109,12 +109,12 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

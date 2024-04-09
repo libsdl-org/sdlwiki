@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetGamepadJoystick
 
-Get the underlying joystick from a gamepad 
+Get the underlying joystick from a gamepad.
 
 ## Header File
 
@@ -42,5 +42,5 @@ doing so will likely cause SDL to crash.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

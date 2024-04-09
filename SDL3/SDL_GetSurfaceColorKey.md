@@ -37,11 +37,11 @@ If the surface doesn't have color key enabled this function returns -1.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetSurfaceColorKey](SDL_SetSurfaceColorKey)
 * [SDL_SurfaceHasColorKey](SDL_SurfaceHasColorKey)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

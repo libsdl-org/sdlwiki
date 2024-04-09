@@ -45,12 +45,12 @@ This function also returns -1 if setting the opacity isn't supported.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowOpacity](SDL_GetWindowOpacity)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

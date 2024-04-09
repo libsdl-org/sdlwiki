@@ -54,13 +54,13 @@ this function is available if your pixel data is not contiguous.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
 * [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

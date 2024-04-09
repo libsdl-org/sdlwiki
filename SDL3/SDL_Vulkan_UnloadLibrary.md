@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_Vulkan_UnloadLibrary
 
-Unload the Vulkan library previously loaded by [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)() 
+Unload the Vulkan library previously loaded by [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)().
 
 ## Header File
 
@@ -18,11 +18,11 @@ void SDL_Vulkan_UnloadLibrary(void);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 
 

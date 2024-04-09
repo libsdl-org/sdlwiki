@@ -64,12 +64,12 @@ if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_PumpEvents](SDL_PumpEvents)
 * [SDL_ResetKeyboard](SDL_ResetKeyboard)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

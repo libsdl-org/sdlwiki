@@ -23,7 +23,7 @@ Returns a new condition variable or NULL on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BroadcastCondition](SDL_BroadcastCondition)
 * [SDL_SignalCondition](SDL_SignalCondition)
@@ -32,5 +32,5 @@ This function is available since SDL 3.0.0.
 * [SDL_DestroyCondition](SDL_DestroyCondition)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

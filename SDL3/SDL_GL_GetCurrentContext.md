@@ -31,12 +31,12 @@ Returns the currently active OpenGL context or NULL on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

@@ -34,11 +34,11 @@ This function requires an open joystick.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
 * [SDL_GetJoystickGUIDString](SDL_GetJoystickGUIDString)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_TimeFromWindows
 
-Converts a Windows FILETIME (100-nanosecond intervals since January 1, 1601) to an SDL time 
+Converts a Windows FILETIME (100-nanosecond intervals since January 1, 1601) to an SDL time.
 
 ## Header File
 
@@ -35,5 +35,5 @@ parameters.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -80,11 +80,11 @@ int main(int argc, char* argv[]){
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowTitle](SDL_GetWindowTitle)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

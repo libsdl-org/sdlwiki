@@ -30,7 +30,7 @@ Returns a title storage container on success or NULL on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseStorage](SDL_CloseStorage)
 * [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
@@ -38,5 +38,5 @@ This function is available since SDL 3.0.0.
 * [SDL_ReadStorageFile](SDL_ReadStorageFile)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

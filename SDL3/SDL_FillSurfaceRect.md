@@ -42,10 +42,10 @@ will fill based on the intersection of the clip rectangle and `rect`.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_FillSurfaceRects](SDL_FillSurfaceRects)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

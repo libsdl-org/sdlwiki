@@ -76,11 +76,11 @@ int main(int argc, char* argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

@@ -69,7 +69,7 @@ With the vulkan renderer:
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateProperties](SDL_CreateProperties)
 * [SDL_CreateRenderer](SDL_CreateRenderer)
@@ -78,5 +78,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -26,19 +26,15 @@ int SDL_StopHapticEffect(SDL_Haptic *haptic, int effect);
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
-## Remarks
-
-*
-
 ## Version
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RunHapticEffect](SDL_RunHapticEffect)
 * [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

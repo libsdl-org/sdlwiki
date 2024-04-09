@@ -44,11 +44,11 @@ will fill in with valid values later.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateSurface](SDL_CreateSurface)
 * [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

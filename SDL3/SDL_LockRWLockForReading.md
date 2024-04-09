@@ -50,12 +50,12 @@ block until it can lock the mutex, and return with it locked.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
 * [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
 * [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

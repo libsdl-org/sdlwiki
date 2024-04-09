@@ -31,12 +31,12 @@ the screensaver was enabled by default.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
 * [SDL_ScreenSaverEnabled](SDL_ScreenSaverEnabled)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

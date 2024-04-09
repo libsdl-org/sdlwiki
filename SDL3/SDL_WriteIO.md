@@ -48,12 +48,12 @@ enormous amounts of data.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_IOprintf](SDL_IOprintf)
 * [SDL_ReadIO](SDL_ReadIO)
 * [SDL_SeekIO](SDL_SeekIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

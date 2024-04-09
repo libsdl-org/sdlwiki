@@ -60,13 +60,13 @@ while (game_is_still_running) {
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PushEvent](SDL_PushEvent)
 * [SDL_WaitEvent](SDL_WaitEvent)
 * [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

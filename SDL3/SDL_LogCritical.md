@@ -26,7 +26,7 @@ void SDL_LogCritical(int category, SDL_PRINTF_FORMAT_STRING const char *fmt, ...
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Log](SDL_Log)
 * [SDL_LogDebug](SDL_LogDebug)
@@ -38,6 +38,6 @@ This function is available since SDL 3.0.0.
 * [SDL_LogWarn](SDL_LogWarn)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
 
 

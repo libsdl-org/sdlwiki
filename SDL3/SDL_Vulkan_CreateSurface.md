@@ -53,12 +53,12 @@ VkSurfaceKHR surface;
 if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) handle_error();
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

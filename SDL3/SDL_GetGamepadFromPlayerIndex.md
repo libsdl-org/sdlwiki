@@ -28,11 +28,11 @@ Returns the [SDL_Gamepad](SDL_Gamepad) associated with a player index.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepadPlayerIndex](SDL_GetGamepadPlayerIndex)
 * [SDL_SetGamepadPlayerIndex](SDL_SetGamepadPlayerIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

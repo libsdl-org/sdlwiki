@@ -24,10 +24,10 @@ void SDL_CloseGamepad(SDL_Gamepad *gamepad);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenGamepad](SDL_OpenGamepad)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

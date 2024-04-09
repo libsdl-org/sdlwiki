@@ -32,10 +32,10 @@ For XInput gamepads this returns the XInput user index.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetGamepadPlayerIndex](SDL_SetGamepadPlayerIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

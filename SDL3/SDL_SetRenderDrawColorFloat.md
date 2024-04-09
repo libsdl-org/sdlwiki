@@ -38,11 +38,11 @@ Set the color for drawing or filling rectangles, lines, and points, and for
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawColorFloat](SDL_GetRenderDrawColorFloat)
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

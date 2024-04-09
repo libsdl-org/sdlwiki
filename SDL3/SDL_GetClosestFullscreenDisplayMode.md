@@ -43,11 +43,11 @@ small, then NULL is returned.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplays](SDL_GetDisplays)
 * [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

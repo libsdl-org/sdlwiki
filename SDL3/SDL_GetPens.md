@@ -22,20 +22,20 @@ SDL_PenID* SDL_GetPens(int *count);
 
 ## Return Value
 
-Returns A 0 terminated array of ::[SDL_PenID](SDL_PenID) values, or NULL on
-error. The array must be freed with ::[SDL_free](SDL_free)(). On a NULL
-return, ::[SDL_GetError](SDL_GetError)() is set.
+Returns A 0 terminated array of [SDL_PenID](SDL_PenID) values, or NULL on
+error. The array must be freed with [SDL_free](SDL_free)(). On a NULL
+return, [SDL_GetError](SDL_GetError)() is set.
 
 ## Remarks
 
-Yields an array of ::[SDL_PenID](SDL_PenID) values. These identify and
-track pens throughout a session. To track pens across sessions (program
-restart), use ::[SDL_GUID](SDL_GUID) .
+Yields an array of [SDL_PenID](SDL_PenID) values. These identify and track
+pens throughout a session. To track pens across sessions (program restart),
+use [SDL_GUID](SDL_GUID) .
 
 ## Version
 
 This function is available since SDL 3.0.0
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

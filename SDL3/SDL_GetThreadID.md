@@ -80,11 +80,11 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryThread](CategoryThread)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 
 

@@ -31,13 +31,13 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
 * [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

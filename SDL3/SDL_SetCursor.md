@@ -46,11 +46,11 @@ This function is available since SDL 3.0.0.
 You can add your code example here
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetCursor](SDL_GetCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

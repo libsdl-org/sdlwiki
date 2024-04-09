@@ -35,11 +35,11 @@ that is all the information SDL has about the physical device.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GamepadHasButton](SDL_GamepadHasButton)
 * [SDL_GetGamepadAxis](SDL_GetGamepadAxis)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

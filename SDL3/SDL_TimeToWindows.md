@@ -31,5 +31,5 @@ This function fills in the two 32-bit values of the FILETIME structure.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

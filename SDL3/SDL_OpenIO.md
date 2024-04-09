@@ -37,11 +37,14 @@ etc.
 
 You must free the returned pointer with [SDL_CloseIO](SDL_CloseIO)().
 
+This function makes a copy of `iface` and the caller does not need to keep
+this data around after this call.
+
 ## Version
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseIO](SDL_CloseIO)
 * [SDL_IOFromConstMem](SDL_IOFromConstMem)
@@ -49,5 +52,5 @@ This function is available since SDL 3.0.0.
 * [SDL_IOFromMem](SDL_IOFromMem)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

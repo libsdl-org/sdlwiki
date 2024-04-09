@@ -85,13 +85,13 @@ glActiveTextureARB_ptr=(GL_ActiveTextureARB_Func) SDL_GL_GetProcAddress("glActiv
 glActiveTextureARB_ptr(GL_TEXTURE0_ARB);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
 * [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 * [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

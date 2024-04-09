@@ -23,11 +23,11 @@ Returns [`SDL_TRUE`](SDL_TRUE) if the cursor is being shown, or
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HideCursor](SDL_HideCursor)
 * [SDL_ShowCursor](SDL_ShowCursor)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

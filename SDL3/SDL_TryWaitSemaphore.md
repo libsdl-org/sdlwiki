@@ -37,12 +37,12 @@ returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PostSemaphore](SDL_PostSemaphore)
 * [SDL_WaitSemaphore](SDL_WaitSemaphore)
 * [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

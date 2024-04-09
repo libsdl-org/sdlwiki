@@ -89,12 +89,12 @@ int main(int argc, char *argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 * [SDL_CreateWindow](SDL_CreateWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryVideo](CategoryVideo)
 
 

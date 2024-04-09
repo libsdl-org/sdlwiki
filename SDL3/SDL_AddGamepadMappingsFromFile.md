@@ -41,7 +41,7 @@ Windows, etc).
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 * [SDL_AddGamepadMappingsFromIO](SDL_AddGamepadMappingsFromIO)
@@ -49,5 +49,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

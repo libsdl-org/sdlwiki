@@ -138,11 +138,11 @@ int main(int argc, char *argv[])
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

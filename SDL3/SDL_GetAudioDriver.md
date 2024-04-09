@@ -53,11 +53,11 @@ for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

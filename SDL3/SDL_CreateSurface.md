@@ -31,11 +31,11 @@ NULL if it fails; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateSurfaceFrom](SDL_CreateSurfaceFrom)
 * [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

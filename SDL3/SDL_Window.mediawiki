@@ -1,2 +1,0 @@
-SDL Window is a struct and this holds all of your display graphics. This interfaces your graphics and the OS window manager.
-SDL_Windows don't need to have an SDL_Renderer; they can use other graphics API directly or software rendering.

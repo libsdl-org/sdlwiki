@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetBooleanProperty
 
-Set a boolean property on a set of properties 
+Set a boolean property on a set of properties.
 
 ## Header File
 
@@ -35,10 +35,10 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

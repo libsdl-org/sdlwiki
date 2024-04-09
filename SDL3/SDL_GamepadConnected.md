@@ -30,5 +30,5 @@ currently connected, or [SDL_FALSE](SDL_FALSE) if not.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

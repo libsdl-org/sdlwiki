@@ -46,12 +46,12 @@ if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
 * [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

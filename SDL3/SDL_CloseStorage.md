@@ -31,7 +31,7 @@ error is only for informational purposes.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenFileStorage](SDL_OpenFileStorage)
 * [SDL_OpenStorage](SDL_OpenStorage)
@@ -39,5 +39,5 @@ This function is available since SDL 3.0.0.
 * [SDL_OpenUserStorage](SDL_OpenUserStorage)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

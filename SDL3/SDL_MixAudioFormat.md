@@ -74,6 +74,6 @@ void MyAudioCallback(void *udata, Uint8 *stream, int len)
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

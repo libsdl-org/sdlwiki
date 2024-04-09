@@ -72,12 +72,12 @@ if (status == 0) {
 SDL_DestroyMutex(mutex);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_LockMutex](SDL_LockMutex)
 * [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex), [CategoryDraft](CategoryDraft)
 
 

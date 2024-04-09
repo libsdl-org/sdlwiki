@@ -37,11 +37,11 @@ consider it actively in use.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboardInstanceName](SDL_GetKeyboardInstanceName)
 * [SDL_HasKeyboard](SDL_HasKeyboard)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -75,11 +75,11 @@ void InitializeDataPath() {
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetPrefPath](SDL_GetPrefPath)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryFilesystem](CategoryFilesystem)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 
 

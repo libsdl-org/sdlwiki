@@ -33,10 +33,10 @@ Call to unpause after [SDL_PauseHaptic](SDL_PauseHaptic)().
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PauseHaptic](SDL_PauseHaptic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

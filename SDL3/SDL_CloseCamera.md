@@ -29,11 +29,11 @@ reference `device` once this function is called.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenCameraWithSpec](SDL_OpenCameraWithSpec)
 * [SDL_OpenCamera](SDL_OpenCamera)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

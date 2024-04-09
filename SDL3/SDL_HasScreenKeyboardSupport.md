@@ -31,13 +31,13 @@ support or [SDL_FALSE](SDL_FALSE) if not.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_StartTextInput](SDL_StartTextInput)
 * [SDL_ScreenKeyboardShown](SDL_ScreenKeyboardShown)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

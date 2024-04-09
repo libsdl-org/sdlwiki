@@ -39,10 +39,10 @@ slower, better quality, only 32BPP.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

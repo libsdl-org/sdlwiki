@@ -29,10 +29,10 @@ is no path or the identifier passed is invalid.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepadInstancePath](SDL_GetGamepadInstancePath)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

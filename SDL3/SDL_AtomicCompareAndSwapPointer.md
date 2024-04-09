@@ -36,12 +36,12 @@ it!***
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
 * [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
 * [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

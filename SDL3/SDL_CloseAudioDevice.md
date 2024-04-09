@@ -49,11 +49,11 @@ if (devid > 0) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

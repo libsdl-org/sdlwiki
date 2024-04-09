@@ -34,11 +34,11 @@ This can be called before any haptic devices are opened.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHapticName](SDL_GetHapticName)
 * [SDL_OpenHaptic](SDL_OpenHaptic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

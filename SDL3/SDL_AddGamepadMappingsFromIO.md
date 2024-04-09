@@ -46,7 +46,7 @@ constrained environment.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
 * [SDL_AddGamepadMappingsFromFile](SDL_AddGamepadMappingsFromFile)
@@ -54,5 +54,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

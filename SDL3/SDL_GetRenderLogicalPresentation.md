@@ -38,10 +38,10 @@ the output size in pixels if a logical resolution is not enabled.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

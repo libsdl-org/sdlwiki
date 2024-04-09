@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetFloatProperty
 
-Get a floating point property on a set of properties 
+Get a floating point property on a set of properties.
 
 ## Header File
 
@@ -40,12 +40,12 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetPropertyType](SDL_GetPropertyType)
 * [SDL_HasProperty](SDL_HasProperty)
 * [SDL_SetFloatProperty](SDL_SetFloatProperty)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

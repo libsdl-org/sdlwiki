@@ -48,6 +48,6 @@ if (driver_name) {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

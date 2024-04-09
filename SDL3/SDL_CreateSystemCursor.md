@@ -45,12 +45,12 @@ cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
 SDL_SetCursor(cursor);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyCursor](SDL_DestroyCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

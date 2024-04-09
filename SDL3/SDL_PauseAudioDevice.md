@@ -59,12 +59,12 @@ SDL_Delay(5000);  // audio device plays silence for 5 seconds
 SDL_PlayAudioDevice(devid);  // audio callback starts running again.
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)
 * [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

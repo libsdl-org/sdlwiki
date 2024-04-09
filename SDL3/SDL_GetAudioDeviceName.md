@@ -47,13 +47,13 @@ for (i = 0; i < count; ++i) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
 * [SDL_GetAudioCaptureDevices](SDL_GetAudioCaptureDevices)
 * [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

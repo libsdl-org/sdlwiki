@@ -72,11 +72,11 @@ if (myFancyFunction != NULL) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_LoadObject](SDL_LoadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
 
 

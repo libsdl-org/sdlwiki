@@ -37,10 +37,10 @@ Once converted, the coordinates may be outside the rendering area.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderCoordinatesFromWindowCoordinates](SDL_GetRenderCoordinatesFromWindowCoordinates)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

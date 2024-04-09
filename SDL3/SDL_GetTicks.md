@@ -41,6 +41,6 @@ while (!quit) {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
 

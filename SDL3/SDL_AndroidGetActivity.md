@@ -77,12 +77,12 @@ void showHome(void)
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 

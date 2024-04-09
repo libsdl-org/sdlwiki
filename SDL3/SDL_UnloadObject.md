@@ -24,11 +24,11 @@ void SDL_UnloadObject(void *handle);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadObject](SDL_LoadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySharedObject](CategorySharedObject)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
 
 

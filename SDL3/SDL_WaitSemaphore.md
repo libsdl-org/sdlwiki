@@ -40,12 +40,12 @@ of -1.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PostSemaphore](SDL_PostSemaphore)
 * [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
 * [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

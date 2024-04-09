@@ -30,11 +30,11 @@ between values can be converted to times by using
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
 

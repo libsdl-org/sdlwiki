@@ -39,11 +39,11 @@ on that device.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseHaptic](SDL_CloseHaptic)
 * [SDL_IsJoystickHaptic](SDL_IsJoystickHaptic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

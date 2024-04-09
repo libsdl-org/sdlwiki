@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetProperty
 
-Get a property on a set of properties 
+Get a property on a set of properties.
 
 ## Header File
 
@@ -48,7 +48,7 @@ thread. If you need to avoid this, use
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
 * [SDL_GetFloatProperty](SDL_GetFloatProperty)
@@ -59,5 +59,5 @@ This function is available since SDL 3.0.0.
 * [SDL_SetProperty](SDL_SetProperty)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

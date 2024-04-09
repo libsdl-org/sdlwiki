@@ -38,12 +38,12 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CursorVisible](SDL_CursorVisible)
 * [SDL_HideCursor](SDL_HideCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
 
 

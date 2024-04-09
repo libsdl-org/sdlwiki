@@ -90,11 +90,11 @@ This function is available since SDL 3.0.0.
 SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

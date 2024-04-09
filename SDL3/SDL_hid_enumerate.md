@@ -46,10 +46,10 @@ can be set to "0" to enumerate all HID devices.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_hid_device_change_count](SDL_hid_device_change_count)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

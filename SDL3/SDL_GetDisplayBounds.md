@@ -44,12 +44,12 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)
 * [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

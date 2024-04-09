@@ -38,6 +38,6 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryIO](CategoryIO), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIO](CategoryIO), [CategoryDraft](CategoryDraft)
 
 

@@ -70,12 +70,12 @@ SDL_GL_GetAttribute(SDL_GL_BLUE_SIZE, &b);
 printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 * [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

@@ -68,11 +68,11 @@ VkInstance instance;
 VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVulkan](CategoryVulkan)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 
 

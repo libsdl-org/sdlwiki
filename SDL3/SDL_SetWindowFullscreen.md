@@ -48,13 +48,13 @@ denied by the windowing system.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 * [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
 * [SDL_SyncWindow](SDL_SyncWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

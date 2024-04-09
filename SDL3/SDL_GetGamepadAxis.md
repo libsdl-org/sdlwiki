@@ -42,11 +42,11 @@ normally uses the full range.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
 * [SDL_GetGamepadButton](SDL_GetGamepadButton)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

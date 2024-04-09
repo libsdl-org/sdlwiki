@@ -122,12 +122,12 @@ if (dev == 0) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
 * [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAudio](CategoryAudio)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 
 

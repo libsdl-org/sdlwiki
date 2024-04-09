@@ -80,7 +80,7 @@ surface = NULL;
 
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
@@ -88,6 +88,6 @@ surface = NULL;
 * [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

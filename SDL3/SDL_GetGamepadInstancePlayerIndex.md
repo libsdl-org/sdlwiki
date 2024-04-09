@@ -32,11 +32,11 @@ This can be called before any gamepads are opened.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepadPlayerIndex](SDL_GetGamepadPlayerIndex)
 * [SDL_GetGamepads](SDL_GetGamepads)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

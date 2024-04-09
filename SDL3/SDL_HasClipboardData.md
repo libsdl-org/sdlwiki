@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_HasClipboardData
 
-Query whether there is data in the clipboard for the provided mime type 
+Query whether there is data in the clipboard for the provided mime type.
 
 ## Header File
 
@@ -29,11 +29,11 @@ provided mime type, [SDL_FALSE](SDL_FALSE) if it does not.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetClipboardData](SDL_SetClipboardData)
 * [SDL_GetClipboardData](SDL_GetClipboardData)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

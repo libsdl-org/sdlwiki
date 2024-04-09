@@ -46,12 +46,12 @@ always either lock the rwlock and return 0, or return
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockRWLockForReading](SDL_LockRWLockForReading)
 * [SDL_TryLockRWLockForWriting](SDL_TryLockRWLockForWriting)
 * [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

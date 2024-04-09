@@ -31,12 +31,12 @@ There may be none if SDL was compiled without render support.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 * [SDL_GetRenderDriver](SDL_GetRenderDriver)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

@@ -71,7 +71,7 @@ SDL_DestroySemaphore(sem);
 ```
 <!-- # End Semaphore Example -->
 
-## Related Functions
+## See Also
 
 * [SDL_DestroySemaphore](SDL_DestroySemaphore)
 * [SDL_PostSemaphore](SDL_PostSemaphore)
@@ -81,6 +81,6 @@ SDL_DestroySemaphore(sem);
 * [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 
 

@@ -45,7 +45,7 @@ If you need to write to a memory buffer, you should use
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_IOFromMem](SDL_IOFromMem)
 * [SDL_CloseIO](SDL_CloseIO)
@@ -54,5 +54,5 @@ This function is available since SDL 3.0.0.
 * [SDL_TellIO](SDL_TellIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

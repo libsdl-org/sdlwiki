@@ -36,12 +36,12 @@ it!***
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicDecRef](SDL_AtomicDecRef)
 * [SDL_AtomicIncRef](SDL_AtomicIncRef)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAtomic](CategoryAtomic)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
 
 

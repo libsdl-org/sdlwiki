@@ -43,12 +43,12 @@ if color modulation is not supported.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureColorModFloat](SDL_GetTextureColorModFloat)
 * [SDL_SetTextureAlphaModFloat](SDL_SetTextureAlphaModFloat)
 * [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -56,12 +56,12 @@ SDL_UnlockSurface(surface);
 /* Surface is now unlocked */
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_MUSTLOCK](SDL_MUSTLOCK)
 * [SDL_UnlockSurface](SDL_UnlockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

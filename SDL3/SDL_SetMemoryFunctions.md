@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetMemoryFunctions
 
-Replace SDL's memory allocation functions with a custom set 
+Replace SDL's memory allocation functions with a custom set.
 
 ## Header File
 
@@ -36,5 +36,5 @@ Returns 0 on success or a negative error code on failure; call
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

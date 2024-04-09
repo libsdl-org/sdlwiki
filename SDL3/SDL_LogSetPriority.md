@@ -26,13 +26,13 @@ void SDL_LogSetPriority(int category,
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LogGetPriority](SDL_LogGetPriority)
 * [SDL_LogResetPriorities](SDL_LogResetPriorities)
 * [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryLog](CategoryLog)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
 
 

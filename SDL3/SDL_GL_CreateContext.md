@@ -61,12 +61,12 @@ SDL_GL_SwapWindow(window);
 SDL_GL_DeleteContext(glcontext);  
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GL_DeleteContext](SDL_GL_DeleteContext)
 * [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

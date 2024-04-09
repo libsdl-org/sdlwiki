@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GetMemoryFunctions
 
-Get the current set of SDL memory functions 
+Get the current set of SDL memory functions.
 
 ## Header File
 
@@ -31,5 +31,5 @@ void SDL_GetMemoryFunctions(SDL_malloc_func *malloc_func,
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

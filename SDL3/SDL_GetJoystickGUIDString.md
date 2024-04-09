@@ -35,12 +35,12 @@ You should supply at least 33 bytes for pszGUID.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickInstanceGUID](SDL_GetJoystickInstanceGUID)
 * [SDL_GetJoystickGUID](SDL_GetJoystickGUID)
 * [SDL_GetJoystickGUIDFromString](SDL_GetJoystickGUIDFromString)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

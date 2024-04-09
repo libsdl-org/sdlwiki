@@ -44,7 +44,7 @@ memory instead.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_IOFromConstMem](SDL_IOFromConstMem)
 * [SDL_CloseIO](SDL_CloseIO)
@@ -54,5 +54,5 @@ This function is available since SDL 3.0.0.
 * [SDL_WriteIO](SDL_WriteIO)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

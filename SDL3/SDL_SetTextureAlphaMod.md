@@ -40,13 +40,13 @@ if alpha modulation is not supported.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 * [SDL_SetTextureAlphaModFloat](SDL_SetTextureAlphaModFloat)
 * [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

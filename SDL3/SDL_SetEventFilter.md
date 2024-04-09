@@ -126,7 +126,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_AddEventWatch](SDL_AddEventWatch)
 * [SDL_SetEventEnabled](SDL_SetEventEnabled)
@@ -135,6 +135,6 @@ int main(int argc, char **argv)
 * [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 
 

@@ -28,11 +28,11 @@ Returns the amount of remaining space, in bytes
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_StorageReady](SDL_StorageReady)
 * [SDL_WriteStorageFile](SDL_WriteStorageFile)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -36,7 +36,7 @@ device and platform.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetJoystickAxis](SDL_GetJoystickAxis)
 * [SDL_GetNumJoystickBalls](SDL_GetNumJoystickBalls)
@@ -44,5 +44,5 @@ This function is available since SDL 3.0.0.
 * [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

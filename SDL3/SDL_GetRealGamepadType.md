@@ -29,10 +29,10 @@ Returns the gamepad type, or
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRealGamepadInstanceType](SDL_GetRealGamepadInstanceType)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

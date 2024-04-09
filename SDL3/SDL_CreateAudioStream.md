@@ -33,7 +33,7 @@ It is safe to call this function from any thread.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
 * [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
@@ -44,5 +44,5 @@ This function is available since SDL 3.0.0.
 * [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

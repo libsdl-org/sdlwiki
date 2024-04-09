@@ -35,13 +35,13 @@ the surface must be locked before directly accessing the pixels.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BlitSurface](SDL_BlitSurface)
 * [SDL_LockSurface](SDL_LockSurface)
 * [SDL_UnlockSurface](SDL_UnlockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategorySurface](CategorySurface)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 

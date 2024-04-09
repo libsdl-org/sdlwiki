@@ -34,10 +34,10 @@ The caller should not [SDL_free](SDL_free)() the returned string.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepadButtonFromString](SDL_GetGamepadButtonFromString)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

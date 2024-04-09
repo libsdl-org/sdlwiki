@@ -33,10 +33,10 @@ This function returns "" if the keyboard doesn't have a name.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboards](SDL_GetKeyboards)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

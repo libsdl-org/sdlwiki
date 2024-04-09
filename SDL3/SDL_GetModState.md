@@ -27,12 +27,12 @@ Returns an OR'd combination of the modifier keys for the keyboard. See
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboardState](SDL_GetKeyboardState)
 * [SDL_SetModState](SDL_SetModState)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

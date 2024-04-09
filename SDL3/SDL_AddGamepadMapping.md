@@ -50,11 +50,11 @@ This string shows an example of a valid mapping for a gamepad:
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGamepadMapping](SDL_GetGamepadMapping)
 * [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

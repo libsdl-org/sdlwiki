@@ -64,12 +64,12 @@ SDL_DestroyMutex(mutex);
 ```
 <!-- # End Mutex Example -->
 
-## Related Functions
+## See Also
 
 * [SDL_TryLockMutex](SDL_TryLockMutex)
 * [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryMutex](CategoryMutex)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 
 

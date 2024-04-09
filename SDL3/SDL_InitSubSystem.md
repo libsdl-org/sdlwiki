@@ -55,13 +55,13 @@ SDL_InitSubSystem(SDL_INIT_JOYSTICK);
 SDL_Quit();
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_Init](SDL_Init)
 * [SDL_Quit](SDL_Quit)
 * [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

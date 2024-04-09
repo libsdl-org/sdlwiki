@@ -78,7 +78,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
 * [SDL_WindowHasSurface](SDL_WindowHasSurface)
@@ -86,6 +86,6 @@ int main(int argc, char* argv[])
 * [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

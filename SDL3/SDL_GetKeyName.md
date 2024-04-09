@@ -40,13 +40,13 @@ details.
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyFromName](SDL_GetKeyFromName)
 * [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
 * [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
 
 

@@ -29,12 +29,12 @@ to "Invalid texture".
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 
 

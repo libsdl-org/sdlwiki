@@ -24,10 +24,10 @@ void SDL_CloseJoystick(SDL_Joystick *joystick);
 
 This function is available since SDL 3.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_OpenJoystick](SDL_OpenJoystick)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

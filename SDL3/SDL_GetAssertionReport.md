@@ -56,11 +56,11 @@ while (item) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAssertions](CategoryAssertions)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssertions](CategoryAssertions)
 
 
