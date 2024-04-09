@@ -12,10 +12,10 @@ Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ```c
 typedef struct SDL_Palette
 {
-    int ncolors;        /*< number of elements in `colors`. */
-    SDL_Color *colors;  /*< an array of colors, `ncolors` long. */
-    Uint32 version;     /*< internal use only, do not touch. */
-    int refcount;       /*< internal use only, do not touch. */
+    int ncolors;        /**< number of elements in `colors`. */
+    SDL_Color *colors;  /**< an array of colors, `ncolors` long. */
+    Uint32 version;     /**< internal use only, do not touch. */
+    int refcount;       /**< internal use only, do not touch. */
 } SDL_Palette;
 ```
 
