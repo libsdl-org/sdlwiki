@@ -1,6 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
 - [CategoryGamepad](CategoryGamepad)
-- [SDL_acos](SDL_acos)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 - [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
