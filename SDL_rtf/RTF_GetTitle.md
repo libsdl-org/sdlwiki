@@ -3,6 +3,10 @@
 
 Get the title of an RTF document.
 
+## Header File
+
+Defined in SDL_rtf.h
+
 ## Syntax
 
 ```c
@@ -31,5 +35,5 @@ until the [RTF_Context](RTF_Context) is freed.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Render the RTF document to a rectangle in an SDL_Renderer.
 
+## Header File
+
+Defined in SDL_rtf.h
+
 ## Syntax
 
 ```c
@@ -32,5 +36,5 @@ The rendering is offset up (and clipped) by yOffset pixels.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

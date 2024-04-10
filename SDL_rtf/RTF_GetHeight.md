@@ -3,6 +3,10 @@
 
 Get the height of an RTF render area given a certain width.
 
+## Header File
+
+Defined in SDL_rtf.h
+
 ## Syntax
 
 ```c
@@ -31,5 +35,5 @@ width of the clipping rectangle used for rendering later.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

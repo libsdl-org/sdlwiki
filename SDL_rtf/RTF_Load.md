@@ -3,6 +3,10 @@
 
 Set the text of an RTF context, with data loaded from a filename.
 
+## Header File
+
+Defined in SDL_rtf.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ text message corresponding to the error.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

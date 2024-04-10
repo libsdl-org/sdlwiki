@@ -3,6 +3,10 @@
 
 Create an RTF display context, with the given font engine.
 
+## Header File
+
+Defined in SDL_rtf.h
+
 ## Syntax
 
 ```c
@@ -31,5 +35,5 @@ Microsoft RTF format.
 This function is available since SDL_rtf 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
