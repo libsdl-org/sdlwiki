@@ -5,8 +5,6 @@
 - [SDL_LOG_CATEGORY](SDL_LOG_CATEGORY)
 - [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
-- [SDL_RendererFlip](SDL_RendererFlip)
 - [SDL_SensorType](SDL_SensorType)
-- [SDL_TextureModulate](SDL_TextureModulate)
 - [SDL_WindowFlags](SDL_WindowFlags)
 <!-- END CATEGORY LIST -->
