@@ -3,6 +3,12 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_ANDROID_EXTERNAL_STORAGE_READ](SDL_ANDROID_EXTERNAL_STORAGE_READ)
 - [SDL_arraysize](SDL_arraysize)
+- [SDL_assert](SDL_assert)
+- [SDL_assert_always](SDL_assert_always)
+- [SDL_assert_paranoid](SDL_assert_paranoid)
+- [SDL_assert_release](SDL_assert_release)
+- [SDL_AtomicDecRef](SDL_AtomicDecRef)
+- [SDL_AtomicIncRef](SDL_AtomicIncRef)
 - [SDL_BUTTON](SDL_BUTTON)
 - [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
 - [SDL_FALSE](SDL_FALSE)

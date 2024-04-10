@@ -1,6 +1,7 @@
 # CategoryAPIEnum
 
 <!-- BEGIN CATEGORY LIST -->
+- [SDL_AssertState](SDL_AssertState)
 - [SDL_BlendFactor](SDL_BlendFactor)
 - [SDL_BlendMode](SDL_BlendMode)
 - [SDL_BlendOperation](SDL_BlendOperation)

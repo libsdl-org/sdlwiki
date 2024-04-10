@@ -1,5 +1,4 @@
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_AssertState](SDL_AssertState)
 - [SDL_AudioFormat](SDL_AudioFormat)
 - [SDL_AudioStatus](SDL_AudioStatus)
 - [SDL_bool](SDL_bool)
@@ -12,5 +11,4 @@
 - [SDL_SensorType](SDL_SensorType)
 - [SDL_TextureModulate](SDL_TextureModulate)
 - [SDL_WindowFlags](SDL_WindowFlags)
-- [SDLEnumTemplate](SDLEnumTemplate)
 <!-- END CATEGORY LIST -->

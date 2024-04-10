@@ -1,6 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
 - [CategoryGamepad](CategoryGamepad)
-- [CategoryTemplate](CategoryTemplate)
 - [SDL_acos](SDL_acos)
 - [SDL_AddHintCallback](SDL_AddHintCallback)
 - [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
@@ -80,8 +79,5 @@
 - [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
 - [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
 - [SDL_WriteU8](SDL_WriteU8)
-- [SDLEnumTemplate](SDLEnumTemplate)
-- [SDLFunctionTemplate](SDLFunctionTemplate)
 - [SDLKeycodeLookup](SDLKeycodeLookup)
-- [SDLStructTemplate](SDLStructTemplate)
 <!-- END CATEGORY LIST -->

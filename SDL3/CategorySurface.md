@@ -1,5 +1,4 @@
 <!-- BEGIN CATEGORY LIST -->
-- [SDL_BlitScaled](SDL_BlitScaled)
 - [SDL_BlitSurface](SDL_BlitSurface)
 - [SDL_ConvertPixels](SDL_ConvertPixels)
 - [SDL_ConvertSurface](SDL_ConvertSurface)
