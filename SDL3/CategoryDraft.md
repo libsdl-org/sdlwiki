@@ -52,7 +52,6 @@
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 - [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
 - [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
-- [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)
 - [SDL_Keycode](SDL_Keycode)
 - [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_NumHaptics](SDL_NumHaptics)

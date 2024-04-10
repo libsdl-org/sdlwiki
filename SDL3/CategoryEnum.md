@@ -1,8 +1,6 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AudioFormat](SDL_AudioFormat)
-- [SDL_AudioStatus](SDL_AudioStatus)
 - [SDL_bool](SDL_bool)
-- [SDL_JoystickPowerLevel](SDL_JoystickPowerLevel)
 - [SDL_Keycode](SDL_Keycode)
 - [SDL_LOG_CATEGORY](SDL_LOG_CATEGORY)
 - [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
