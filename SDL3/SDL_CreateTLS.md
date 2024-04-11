@@ -27,6 +27,32 @@ refers to data that is thread-specific.
 
 This function is available since SDL 3.0.0.
 
+
+## Code Examples
+
+```c
+// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
+
+static SDL_SpinLock tls_lock;
+static SDL_TLSID thread_local_storage;
+void SetMyThreadData(void *value)
+{
+    if (!thread_local_storage) {
+        SDL_LockSpinlock(&tls_lock);
+        if (!thread_local_storage) {
+            thread_local_storage = SDL_CreateTLS();
+        }
+        SDL_UnlockSpinlock(&tls_lock);
+    }
+    SDL_SetTLS(thread_local_storage, value, 0);
+}
+void *GetMyThreadData(void)
+{
+    return SDL_GetTLS(thread_local_storage);
+}
+
+```
+
 ## See Also
 
 * [SDL_GetTLS](SDL_GetTLS)
