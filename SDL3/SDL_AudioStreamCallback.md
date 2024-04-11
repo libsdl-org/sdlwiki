@@ -38,6 +38,11 @@ a Put call triggering a Get callback, these values are always the same.
 Byte counts might be slightly overestimated due to buffering or resampling,
 and may change from call to call.
 
+This callback is not required to do anything. Generally this is useful for
+adding/reading data on demand, and the app will often put/get data as
+appropriate, but the system goes on with the data currently available to it
+if this callback does nothing.
+
 ## Thread Safety
 
 This callbacks may run from any thread, so if you need to protect shared
