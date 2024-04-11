@@ -1,8 +1,53 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_AudioSpec =
-A structure that contains the audio output format. It also contains a callback that is called when the audio device needs more data.
 
+The calculated values in this structure are calculated by [[SDL_OpenAudio]]().
+
+== Header File ==
+
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_AudioSpec
+{
+    int freq;                   /**< DSP frequency -- samples per second */
+    SDL_AudioFormat format;     /**< Audio data format */
+    Uint8 channels;             /**< Number of channels: 1 mono, 2 stereo */
+    Uint8 silence;              /**< Audio buffer silence value (calculated) */
+    Uint16 samples;             /**< Audio buffer size in sample FRAMES (total samples divided by channel count) */
+    Uint16 padding;             /**< Necessary for some compile environments */
+    Uint32 size;                /**< Audio buffer size in bytes (calculated) */
+    SDL_AudioCallback callback; /**< Callback that feeds the audio device (NULL to use SDL_QueueAudio()). */
+    void *userdata;             /**< Userdata passed to callback (ignored for NULL callbacks). */
+} SDL_AudioSpec;</syntaxhighlight>
+
+== Remarks ==
+
+For multi-channel audio, the default SDL channel mapping is: 2: FL FR
+(stereo) 3: FL FR LFE (2.1 surround) 4: FL FR BL BR (quad) 5: FL FR LFE BL
+BR (4.1 surround) 6: FL FR FC LFE SL SR (5.1 surround - last two can also
+be BL BR) 7: FL FR FC LFE BC SL SR (6.1 surround) 8: FL FR FC LFE BL BR SL
+SR (7.1 surround)
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+SDL_AudioSpec want, have;
+SDL_AudioDeviceID dev;
+
+SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
+want.freq = 48000;
+want.format = AUDIO_F32;
+want.channels = 2;
+want.samples = 4096;
+want.callback = MyAudioCallback;  // you wrote this function elsewhere.
+dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
+</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |int
 |'''freq'''
@@ -37,122 +82,7 @@ A structure that contains the audio output format. It also contains a callback t
 |a pointer that is passed to '''callback''' (otherwise ignored by SDL)
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-SDL_AudioSpec want, have;
-SDL_AudioDeviceID dev;
-
-SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
-want.freq = 48000;
-want.format = AUDIO_F32;
-want.channels = 2;
-want.samples = 4096;
-want.callback = MyAudioCallback;  // you wrote this function elsewhere.
-dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
-</syntaxhighlight>
-
-== Remarks ==
-This structure is used by [[SDL_OpenAudioDevice]]() and [[SDL_LoadWAV]](). While all fields are used by [[SDL_OpenAudioDevice]](), only '''freq''', '''format''', '''channels''', and '''samples''' are used by [[SDL_LoadWAV]]().
-
-'''freq''' specifies the number of sample frames sent to the sound device per second. The Nyquist Theorem states that the audio sampling frequency must be exactly twice the highest frequency represented in the audio. Humans can hear up to slightly under 20kHz, declining to 16kHz or lower as we age. Standard CD quality audio uses 44100. DVDs and the [https://opus-codec.org/ Opus audio codec] use 48000. Values higher than 48000 generally should not be used for playback purposes because they use more memory, use more CPU, and can cause other problems as explained in [https://people.xiph.org/~xiphmont/demo/neil-young.html this blog post by Chris Montgomery of Xiph].
-
-'''format''' specifies the size and type of each sample element and may be one of the following:
-{|
-|AUDIO_S8
-|signed 8-bit samples
-|-
-|AUDIO_U8
-|unsigned 8-bit samples
-|-
-|AUDIO_S16LSB
-|signed 16-bit samples in little-endian byte order
-|-
-|AUDIO_S16MSB
-|signed 16-bit samples in big-endian byte order
-|-
-|AUDIO_S16SYS
-|signed 16-bit samples in native byte order
-|-
-|AUDIO_S16
-|AUDIO_S16LSB
-|-
-|AUDIO_U16LSB
-|unsigned 16-bit samples in little-endian byte order
-|-
-|AUDIO_U16MSB
-|unsigned 16-bit samples in big-endian byte order
-|-
-|AUDIO_U16SYS
-|unsigned 16-bit samples in native byte order
-|-
-|AUDIO_U16
-|AUDIO_U16LSB
-|-
-|AUDIO_S32LSB
-|32-bit integer samples in little-endian byte order
-|-
-|AUDIO_S32MSB
-|32-bit integer samples in big-endian byte order
-|-
-|AUDIO_S32SYS
-|32-bit integer samples in native byte order
-|-
-|AUDIO_S32
-|AUDIO_S32LSB
-|-
-|AUDIO_F32LSB
-|32-bit floating point samples in little-endian byte order
-|-
-|AUDIO_F32MSB
-|32-bit floating point samples in big-endian byte order
-|-
-|AUDIO_F32SYS
-|32-bit floating point samples in native byte order
-|-
-|AUDIO_F32
-|AUDIO_F32LSB
-|}
-
-See [[SDL_AudioFormat]] for more info.
-
-'''channels''' specifies the number of output channels. As of SDL 2.0, supported values are 1 (mono), 2 (stereo), 4 (quad), and 6 (5.1).
-
-'''samples''' specifies a unit of audio data.  When used with [[SDL_OpenAudioDevice]]() this refers to the size of the audio buffer in sample frames. A sample frame is a chunk of audio data of the size specified in '''format''' multiplied by the number of channels. When the [[SDL_AudioSpec]] is used with [[SDL_LoadWAV]]() '''samples''' is set to 4096. This field's value must be a power of two.
-
-The values '''silence''' and '''size''' are calculated by [[SDL_OpenAudioDevice]]().
-
-Channel data is interleaved. Stereo samples are stored in left/right ordering. Quad is stored in front-left/front-right/rear-left/rear-right order. 5.1 is stored in front-left/front-right/center/low-freq/rear-left/rear-right ordering ("low-freq" is the ".1" speaker).
-
-<span id="callback"></span>
-The function prototype for '''callback''' is:
-<syntaxhighlight lang='c++'>
-void SDL_AudioCallback(void*  userdata,
-                       Uint8* stream,
-                       int    len)
-</syntaxhighlight>
-where its parameters are:
-{|
-|'''userdata'''
-|an application-specific parameter saved in the [[SDL_AudioSpec]] structure's '''userdata''' field
-|-
-|'''stream'''
-|a pointer to the audio data buffer filled in by SDL_AudioCallback()
-|-
-|'''len'''
-|the length of that buffer in bytes
-|}
-
-Once the callback returns, the buffer will no longer be valid.
-Stereo samples are stored in a LRLRLR ordering.
-
-The callback ''must'' completely initialize the buffer; as of SDL 2.0, this buffer is not initialized before the callback is called. If there is nothing to play, the callback should fill the buffer with silence.
-
-With SDL >= 2.0.4 you can choose to avoid callbacks and use [[SDL_QueueAudio]]() instead, if you like. Just open your audio device with a NULL callback.
-
-== Related Functions ==
-:[[SDL_LoadWAV]]
-:[[SDL_LoadWAV_RW]]
-:[[SDL_OpenAudioDevice]]
-
 ----
-[[CategoryStruct]], [[CategoryAudio]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryAudio]]
+
+

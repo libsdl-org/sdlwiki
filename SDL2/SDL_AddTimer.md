@@ -55,7 +55,7 @@ callback needs to adjust for variances.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RemoveTimer](SDL_RemoveTimer)
 
@@ -96,5 +96,5 @@ SDL_RemoveTimer(timerID);
 ```
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

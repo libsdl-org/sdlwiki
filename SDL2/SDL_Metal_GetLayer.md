@@ -18,10 +18,10 @@ void* SDL_Metal_GetLayer(SDL_MetalView view);
 
 This function is available since SDL 2.0.14.
 
-## Related Functions
+## See Also
 
 * [SDL_Metal_CreateView](SDL_Metal_CreateView)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

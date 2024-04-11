@@ -26,11 +26,11 @@ void SDL_RenderGetClipRect(SDL_Renderer * renderer,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
 * [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

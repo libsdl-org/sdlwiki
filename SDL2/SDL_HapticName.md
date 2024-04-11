@@ -34,10 +34,10 @@ found, this function returns NULL.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_NumHaptics](SDL_NumHaptics)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

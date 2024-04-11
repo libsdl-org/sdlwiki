@@ -34,10 +34,10 @@ the clip rectangle.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

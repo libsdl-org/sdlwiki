@@ -31,6 +31,6 @@ to retrieve more information on the failure.
 This function is available since SDL 2.0.3.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

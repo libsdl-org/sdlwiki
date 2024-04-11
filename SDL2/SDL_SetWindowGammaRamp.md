@@ -50,10 +50,10 @@ set will not follow the window if it is moved to another display.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowGammaRamp](SDL_GetWindowGammaRamp)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

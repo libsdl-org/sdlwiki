@@ -38,7 +38,7 @@ don't want to wait for it, and will return to it to try again later.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateMutex](SDL_CreateMutex)
 * [SDL_DestroyMutex](SDL_DestroyMutex)
@@ -46,5 +46,5 @@ This function is available since SDL 2.0.0.
 * [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -36,10 +36,10 @@ before replacing it with a function that will call that saved filter.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

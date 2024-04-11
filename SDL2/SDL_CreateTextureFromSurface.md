@@ -41,12 +41,12 @@ the pixel format of the texture.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_DestroyTexture](SDL_DestroyTexture)
 * [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

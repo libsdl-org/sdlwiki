@@ -41,11 +41,11 @@ change their size.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowSize](SDL_GetWindowSize)
 * [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

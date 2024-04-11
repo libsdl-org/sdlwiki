@@ -42,10 +42,10 @@ The display modes are sorted in this priority:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

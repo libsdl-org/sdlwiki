@@ -41,12 +41,12 @@ client area size in pixels.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)
 * [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
 * [SDL_SetWindowSize](SDL_SetWindowSize)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

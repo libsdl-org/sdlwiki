@@ -46,10 +46,10 @@ this function is available if your pixel data is not contiguous.
 
 This function is available since SDL 2.0.1.
 
-## Related Functions
+## See Also
 
 * [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -31,5 +31,5 @@ Returns [SDL_TRUE](SDL_TRUE) if the sensor is enabled,
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

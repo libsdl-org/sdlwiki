@@ -34,11 +34,11 @@ This can be called before any joysticks are opened.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickPath](SDL_JoystickPath)
 * [SDL_JoystickOpen](SDL_JoystickOpen)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

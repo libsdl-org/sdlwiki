@@ -1,8 +1,27 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_TextEditingEvent =
-A structure that contains keyboard text editing event information.
 
+Keyboard text editing event structure (event.edit.*)
+
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_TextEditingEvent
+{
+    Uint32 type;                                /**< ::SDL_TEXTEDITING */
+    Uint32 timestamp;                           /**< In milliseconds, populated using SDL_GetTicks() */
+    Uint32 windowID;                            /**< The window with keyboard focus, if any */
+    char text[SDL_TEXTEDITINGEVENT_TEXT_SIZE];  /**< The editing text */
+    Sint32 start;                               /**< The start cursor of selected editing text */
+    Sint32 length;                              /**< The length of selected editing text */
+} SDL_TextEditingEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -29,21 +48,16 @@ A structure that contains keyboard text editing event information.
 |the number of characters to edit from the start point
 |}
 
-== Remarks ==
-[[SDL_TextEditingEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_TEXTEDITING is reported.  You would access it through the event's <code>edit</code> field.
-
-There is a [[Tutorials-TextInput|tutorial]].
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 :[[SDL_TextInputEvent]]
 
-== Related Functions ==
-:[[SDL_StartTextInput]]
-:[[SDL_StopTextInput]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

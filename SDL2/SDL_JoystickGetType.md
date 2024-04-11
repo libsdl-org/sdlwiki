@@ -29,5 +29,5 @@ Returns the [SDL_JoystickType](SDL_JoystickType) of the selected joystick.
 This function is available since SDL 2.0.6.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,27 +1,24 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_SaveBMP =
-Use this function to save a surface to a BMP file.
 
+Save a surface to a file.
+
+== Header File ==
+
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_SaveBMP(SDL_Surface* surface,
-                const char*  file)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''surface'''
-|the [[SDL_Surface]] structure containing the image to be saved
-|-
-|'''file'''
-|the file to be saved to
-|}
+<syntaxhighlight lang='c'>
+#define SDL_SaveBMP(surface, file) \
+        SDL_SaveBMP_RW(surface, SDL_RWFromFile(file, "wb"), 1)</syntaxhighlight>
 
-== Return Value ==
-Returns 0 on success or a negative error code on failure; call [[SDL_GetError]]() for more information.
+== Remarks ==
+
+Convenience macro.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 
     ...
@@ -37,12 +34,7 @@ Returns 0 on success or a negative error code on failure; call [[SDL_GetError]](
     }
 </syntaxhighlight>
 
-== Remarks ==
-Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the BMP directly.  Other RGB formats with 8-bit or higher get converted to a 24-bit surface or, if they have an alpha mask or a colorkey, to a 32-bit surface before they are saved.  YUV and paletted 1-bit and 4-bit formats are not supported.
-
-== Related Functions ==
-:[[SDL_LoadBMP]]
-:[[SDL_SaveBMP_RW]]
-
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategorySurface]]
+
+

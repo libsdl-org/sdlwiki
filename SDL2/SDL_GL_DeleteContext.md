@@ -24,10 +24,10 @@ void SDL_GL_DeleteContext(SDL_GLContext context);
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_CreateContext](SDL_GL_CreateContext)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

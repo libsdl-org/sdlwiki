@@ -1,4 +1,5 @@
-<!-- # page was renamed from SDL_HINT_MAC_MOUSE_FOCUS_CLICKTHROUGH -->
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -6,33 +7,33 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH =
-A hint that specifies if mouse click events are sent when clicking to focus an SDL window.
 
+Allow mouse click events when clicking to focus an SDL window
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|no mouse click events are sent when clicking to focus
-|-
-|1
-|mouse click events are sent when clicking to focus
-|}
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+#define SDL_HINT_MOUSE_FOCUS_CLICKTHROUGH "SDL_MOUSE_FOCUS_CLICKTHROUGH"</syntaxhighlight>
+
+== Remarks ==
+
+This variable can be set to the following values: "0" - Ignore mouse clicks
+that activate a window "1" - Generate events for mouse clicks that activate
+a window
+
+By default SDL will ignore mouse clicks that activate a window
 
 == Default ==
+
 By default no mouse click events are sent when clicking to focus.
 
-
-
-== Version ==
-This hint is available since SDL 2.0.5.
-
-
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

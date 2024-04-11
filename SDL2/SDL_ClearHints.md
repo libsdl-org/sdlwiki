@@ -27,11 +27,11 @@ This function will be removed from the API the next time we rev the ABI.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ResetHints](SDL_ResetHints)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

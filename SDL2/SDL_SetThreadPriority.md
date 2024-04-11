@@ -36,5 +36,5 @@ an administrator account. Be prepared for this to fail.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

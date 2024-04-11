@@ -41,11 +41,11 @@ format of the surface will not change.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_MUSTLOCK](SDL_MUSTLOCK)
 * [SDL_UnlockSurface](SDL_UnlockSurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

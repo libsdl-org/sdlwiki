@@ -38,12 +38,12 @@ subsystem.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PollEvent](SDL_PollEvent)
 * [SDL_PumpEvents](SDL_PumpEvents)
 * [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

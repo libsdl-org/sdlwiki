@@ -1,80 +1,25 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_Renderer =
-A structure that contains a rendering state.
 
+A structure representing rendering state
 
+== Header File ==
 
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
 
+== Syntax ==
 
-== Related Functions ==
-:[[SDL_CreateRenderer]]
-:[[SDL_CreateSoftwareRenderer]]
-:[[SDL_CreateTexture]]
-:[[SDL_CreateTextureFromSurface]]
-:[[SDL_CreateWindowAndRenderer]]
-:[[SDL_DestroyRenderer]]
-:[[SDL_GetRenderDrawBlendMode]]
-:[[SDL_GetRenderDrawColor]]
-:[[SDL_GetRendererInfo]]
-:[[SDL_GetRendererOutputSize]]
-:[[SDL_GetRenderTarget]]
-:[[SDL_RenderClear]]
-:[[SDL_RenderCopy]]
-:[[SDL_RenderCopyEx]]
-:[[SDL_RenderCopyExF]]
-:[[SDL_RenderCopyF]]
-:[[SDL_RenderDrawLine]]
-:[[SDL_RenderDrawLineF]]
-:[[SDL_RenderDrawLines]]
-:[[SDL_RenderDrawLinesF]]
-:[[SDL_RenderDrawPoint]]
-:[[SDL_RenderDrawPointF]]
-:[[SDL_RenderDrawPoints]]
-:[[SDL_RenderDrawPointsF]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRectF]]
-:[[SDL_RenderDrawRects]]
-:[[SDL_RenderDrawRectsF]]
-:[[SDL_RenderFillRect]]
-:[[SDL_RenderFillRectF]]
-:[[SDL_RenderFillRects]]
-:[[SDL_RenderFillRectsF]]
-:[[SDL_RenderFlush]]
-:[[SDL_RenderGeometry]]
-:[[SDL_RenderGeometryRaw]]
-:[[SDL_RenderGetClipRect]]
-:[[SDL_RenderGetD3D11Device]]
-:[[SDL_RenderGetD3D12Device]]
-:[[SDL_RenderGetD3D9Device]]
-:[[SDL_RenderGetIntegerScale]]
-:[[SDL_RenderGetLogicalSize]]
-:[[SDL_RenderGetMetalCommandEncoder]]
-:[[SDL_RenderGetMetalLayer]]
-:[[SDL_RenderGetScale]]
-:[[SDL_RenderGetViewport]]
-:[[SDL_RenderGetWindow]]
-:[[SDL_RenderIsClipEnabled]]
-:[[SDL_RenderLogicalToWindow]]
-:[[SDL_RenderPresent]]
-:[[SDL_RenderReadPixels]]
-:[[SDL_RenderSetClipRect]]
-:[[SDL_RenderSetIntegerScale]]
-:[[SDL_RenderSetLogicalSize]]
-:[[SDL_RenderSetScale]]
-:[[SDL_RenderSetViewport]]
-:[[SDL_RenderSetVSync]]
-:[[SDL_RenderTargetSupported]]
-:[[SDL_RenderWindowToLogical]]
-:[[SDL_SetRenderDrawBlendMode]]
-:[[SDL_SetRenderDrawColor]]
-:[[SDL_SetRenderTarget]]
+<syntaxhighlight lang='c'>
+struct SDL_Renderer;</syntaxhighlight>
 
 ----
-[[CategoryStruct]], [[CategoryRender]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRender]], [[CategoryDraft]]
+
+

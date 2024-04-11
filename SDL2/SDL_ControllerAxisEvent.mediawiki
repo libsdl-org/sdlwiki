@@ -1,18 +1,37 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_ControllerAxisEvent =
-A structure that contains game controller axis motion event information.
 
+Game controller axis motion event structure (event.caxis.*)
 
+== Header File ==
 
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_ControllerAxisEvent
+{
+    Uint32 type;        /**< ::SDL_CONTROLLERAXISMOTION */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    SDL_JoystickID which; /**< The joystick instance id */
+    Uint8 axis;         /**< The controller axis (SDL_GameControllerAxis) */
+    Uint8 padding1;
+    Uint8 padding2;
+    Uint8 padding3;
+    Sint16 value;       /**< The axis value (range: -32768 to 32767) */
+    Uint16 padding4;
+} SDL_ControllerAxisEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -35,20 +54,16 @@ A structure that contains game controller axis motion event information.
 |the axis value (range: -32768 to 32767)
 |}
 
-
-
-== Remarks ==
-The directions "down" and "right" have positive values here.
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 
-== Related Functions ==
-:[[SDL_GameControllerEventState]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

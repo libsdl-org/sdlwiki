@@ -1,30 +1,20 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_LoadBMP =
 
-Load a BMP image from a file path.
+Load a surface from a file.
+
+== Header File ==
+
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_Surface* SDL_LoadBMP(const char* file)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''file'''
-|the file containing a BMP image
-|}
-
-== Return Value ==
-
-Returns a pointer to a new [[SDL_Surface]] structure or NULL if there was
-an error; call [[SDL_GetError]]() for more information.
+<syntaxhighlight lang='c'>
+#define SDL_LoadBMP(file)   SDL_LoadBMP_RW(SDL_RWFromFile(file, "rb"), 1)</syntaxhighlight>
 
 == Remarks ==
 
-The new surface should be freed with [[SDL_FreeSurface]](). Not doing so will
-result in a memory leak.
-
-SDL_LoadBMP is a pre-processor macro defined to call [[SDL_LoadBMP_RW]]() with
-an automatically closed file loaded by [[SDL_RWFromFile]]().
+Convenience macro.
 
 == Code Examples ==
 
@@ -44,12 +34,7 @@ if (!image) {
 SDL_FreeSurface(image);
 </syntaxhighlight>
 
-== Related Functions ==
-:[[SDL_FreeSurface]]
-:[[SDL_LoadBMP_RW]]
-:[[SDL_RWFromFile]]
-:[[SDL_SaveBMP]]
-
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategorySurface]]
+
 

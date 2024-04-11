@@ -35,5 +35,5 @@ resource leak.
 This function is available since SDL 2.0.1.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

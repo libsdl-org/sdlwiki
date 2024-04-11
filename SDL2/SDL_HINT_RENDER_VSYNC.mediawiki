@@ -1,22 +1,29 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_HINT_RENDER_VSYNC =
-A hint that specifies whether sync to vertical refresh is enabled or disabled in [[SDL_CreateRenderer]]() to avoid tearing.
 
+A variable controlling whether updates to the SDL screen surface should be synchronized with the vertical refresh, to avoid tearing.
 
-== Values ==
-{|
-|0
-|disable vsync
-|-
-|1
-|enable vsync
-|}
+== Header File ==
 
-== Default ==
-By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [[SDL_CreateRenderer]]().
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+#define SDL_HINT_RENDER_VSYNC               "SDL_RENDER_VSYNC"</syntaxhighlight>
 
 == Remarks ==
-[[SDL_HINT_RENDER_VSYNC]] overrides the SDL_RENDERER_PRESENTVSYNC flag in [[SDL_CreateRenderer]]().
+
+This variable can be set to the following values: "0" - Disable vsync "1" -
+Enable vsync
+
+By default SDL does not sync screen surface updates with vertical refresh.
+
+== Default ==
+
+By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [[SDL_CreateRenderer]]().
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]]
+
+

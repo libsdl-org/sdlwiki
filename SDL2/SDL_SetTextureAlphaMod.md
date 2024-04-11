@@ -41,11 +41,11 @@ if alpha modulation is not supported.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 * [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

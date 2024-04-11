@@ -31,11 +31,11 @@ doing. Please be careful using any sort of spinlock!***
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicLock](SDL_AtomicLock)
 * [SDL_AtomicTryLock](SDL_AtomicTryLock)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

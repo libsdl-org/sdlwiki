@@ -44,5 +44,5 @@ report data (16 bytes). In this example, the length passed in would be 17.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,8 +1,34 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_JoyHatEvent =
-A structure that contains joystick hat position change event information.
 
+Joystick hat position change event structure (event.jhat.*)
+
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_JoyHatEvent
+{
+    Uint32 type;        /**< ::SDL_JOYHATMOTION */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    SDL_JoystickID which; /**< The joystick instance id */
+    Uint8 hat;          /**< The joystick hat index */
+    Uint8 value;        /**< The hat position value.
+                         *   \sa ::SDL_HAT_LEFTUP ::SDL_HAT_UP ::SDL_HAT_RIGHTUP
+                         *   \sa ::SDL_HAT_LEFT ::SDL_HAT_CENTERED ::SDL_HAT_RIGHT
+                         *   \sa ::SDL_HAT_LEFTDOWN ::SDL_HAT_DOWN ::SDL_HAT_RIGHTDOWN
+                         *
+                         *   Note that zero means the POV is centered.
+                         */
+    Uint8 padding1;
+    Uint8 padding2;
+} SDL_JoyHatEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -25,39 +51,18 @@ A structure that contains joystick hat position change event information.
 |the new position of the hat; see [[#Remarks|Remarks]] for details
 |}
 
-== Remarks ==
-[[SDL_JoyHatEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYHATMOTION is reported.  You would access it through the event's <code>jhat</code> field.
-
-An SDL_JOYHATMOTION event occurs whenever a user moves a hat on the joystick.
-
-'''value''' may be one of the following:
-{|
-|SDL_HAT_LEFTUP
-|SDL_HAT_UP
-|SDL_HAT_RIGHTUP
-|-
-|SDL_HAT_LEFT
-|SDL_HAT_CENTERED
-|SDL_HAT_RIGHT
-|-
-|SDL_HAT_LEFTDOWN
-|SDL_HAT_DOWN
-|SDL_HAT_RIGHTDOWN
-|}
-Note that zero means the POV is centered. 
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyBallEvent]]
 :[[SDL_JoyButtonEvent]]
 
-== Related Functions ==
-:[[SDL_JoystickEventState]]
-:[[SDL_JoystickGetHat]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

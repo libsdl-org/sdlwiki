@@ -29,12 +29,12 @@ recognized; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
 * [SDL_GetKeyName](SDL_GetKeyName)
 * [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

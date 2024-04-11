@@ -24,5 +24,5 @@ call [SDL_GetError](SDL_GetError)() for more information.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -38,11 +38,11 @@ fullscreen that takes the size of the desktop; and 0 for windowed mode.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 * [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

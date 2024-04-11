@@ -26,10 +26,10 @@ void SDL_RenderGetViewport(SDL_Renderer * renderer,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderSetViewport](SDL_RenderSetViewport)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

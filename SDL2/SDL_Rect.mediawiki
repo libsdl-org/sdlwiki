@@ -1,8 +1,52 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_Rect =
-A structure that contains the definition of a rectangle, with the origin at the upper left.
+
+A rectangle, with the origin at the upper left (integer).
+
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_Rect
+{
+    int x, y;
+    int w, h;
+} SDL_Rect;</syntaxhighlight>
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+SDL_Rect srcrect;
+SDL_Rect dstrect;
+
+srcrect.x = 0;
+srcrect.y = 0;
+srcrect.w = 32;
+srcrect.h = 32;
+dstrect.x = 640/2;
+dstrect.y = 480/2;
+dstrect.w = 0;
+dstrect.h = 0;
+
+SDL_BlitSurface(src, &srcrect, dst, &dstrect);
+</syntaxhighlight>
+
+== See Also ==
+
+:[[SDL_RectEmpty]]
+:[[SDL_RectEquals]]
+:[[SDL_HasIntersection]]
+:[[SDL_IntersectRect]]
+:[[SDL_IntersectRectAndLine]]
+:[[SDL_UnionRect]]
+:[[SDL_EnclosePoints]]
 
 
 == Data Fields ==
+
 {|
 |int
 |'''x'''
@@ -21,39 +65,7 @@ A structure that contains the definition of a rectangle, with the origin at the 
 |the height of the rectangle
 |}
 
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-SDL_Rect srcrect;
-SDL_Rect dstrect;
-
-srcrect.x = 0;
-srcrect.y = 0;
-srcrect.w = 32;
-srcrect.h = 32;
-dstrect.x = 640/2;
-dstrect.y = 480/2;
-dstrect.w = 0;
-dstrect.h = 0;
-
-SDL_BlitSurface(src, &srcrect, dst, &dstrect);
-</syntaxhighlight>
-
-== Remarks ==
-An [[SDL_Rect]] defines a rectangular area of the screen.  It is used by [[SDL_BlitSurface]]() to define blitting regions and by several other video functions.
-
-== Related Functions ==
-:[[SDL_BlitSurface]]
-:[[SDL_EnclosePoints]]
-:[[SDL_GetDisplayBounds]]
-:[[SDL_HasIntersection]]
-:[[SDL_IntersectRect]]
-:[[SDL_LockTexture]]
-:[[SDL_RenderCopy]]
-:[[SDL_RenderDrawRect]]
-:[[SDL_RenderDrawRects]]
-:[[SDL_RenderReadPixels]]
-:[[SDL_UnionRect]]
-:[[SDL_UpdateTexture]]
-
 ----
-[[CategoryStruct]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRect]]
+
+

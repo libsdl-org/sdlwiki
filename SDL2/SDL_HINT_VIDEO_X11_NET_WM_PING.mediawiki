@@ -1,39 +1,40 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_VIDEO_X11_NET_WM_PING =
-A hint that specifies whether the X11 _NET_WM_PING protocol should be supported.
 
+A variable controlling whether the X11 _NET_WM_PING protocol should be supported.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|disable _NET_WM_PING
-|-
-|1
-|enable _NET_WM_PING
-|}
+== Syntax ==
 
-
-== Default ==
-By default SDL will use _NET_WM_PING, but for applications that know they will not always be able to respond to ping requests in a timely manner they can turn it off to avoid the window manager thinking the app is hung.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_VIDEO_X11_NET_WM_PING      "SDL_VIDEO_X11_NET_WM_PING"</syntaxhighlight>
 
 == Remarks ==
-The hint is checked in [[SDL_CreateWindow]]().
 
+This variable can be set to the following values: "0" - Disable
+_NET_WM_PING "1" - Enable _NET_WM_PING
 
-== Version ==
-This hint is available since SDL 2.0.4.
+By default SDL will use _NET_WM_PING, but for applications that know they
+will not always be able to respond to ping requests in a timely manner they
+can turn it off to avoid the window manager thinking the app is hung. The
+hint is checked in CreateWindow.
+
+== Default ==
+
+By default SDL will use _NET_WM_PING, but for applications that know they will not always be able to respond to ping requests in a timely manner they can turn it off to avoid the window manager thinking the app is hung.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

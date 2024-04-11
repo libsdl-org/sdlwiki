@@ -30,12 +30,12 @@ Mouse grab confines the mouse cursor to the window.
 
 This function is available since SDL 2.0.16.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
 * [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 * [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

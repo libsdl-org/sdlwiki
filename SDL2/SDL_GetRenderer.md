@@ -29,10 +29,10 @@ Returns the rendering context on success or NULL on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

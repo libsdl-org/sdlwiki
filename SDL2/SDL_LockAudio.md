@@ -30,12 +30,12 @@ SDL_LockAudioDevice(1);
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LockAudioDevice](SDL_LockAudioDevice)
 * [SDL_UnlockAudio](SDL_UnlockAudio)
 * [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

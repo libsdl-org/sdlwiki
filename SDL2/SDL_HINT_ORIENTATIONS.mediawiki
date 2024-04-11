@@ -1,32 +1,31 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_HINT_ORIENTATIONS =
-A hint that specifies a variable controlling which orientations are allowed on iOS.
 
+A variable controlling which orientations are allowed on iOS/Android.
 
-== Values ==
-{|
-|LandscapeLeft
-|top of device left
-|-
-|LandscapeRight
-|top of device right
-|-
-|Portrait
-|top of device up
-|-
-|PortraitUpsideDown
-|top of device down
-|}
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Default ==
-By default all orientations are allowed.
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+#define SDL_HINT_ORIENTATIONS "SDL_IOS_ORIENTATIONS"</syntaxhighlight>
+
+== Remarks ==
+
+In some circumstances it is necessary to be able to explicitly control
+which UI orientations are allowed.
+
+This variable is a space delimited list of the following values:
+"LandscapeLeft", "LandscapeRight", "Portrait" "PortraitUpsideDown"
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -36,15 +35,11 @@ int main(int argc, char* argv[])
 }
 </syntaxhighlight>
 
-== Remarks ==
-In some circumstances it is necessary to be able to explicitly control which UI orientations are allowed.
+== Default ==
 
-This variable is a space delimited list of the above values.
-
-```#!wiki comment
-Could this statement be reworded to be more clear esp. for non-English speakers?  Maybe - These values may be combined by using a space between them. Or - Separate multiple values by a space.
-```
-
+By default all orientations are allowed.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+
+

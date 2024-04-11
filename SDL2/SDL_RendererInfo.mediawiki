@@ -1,9 +1,27 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_RendererInfo =
-A structure that contains information on the capabilities of a render driver or the current render context.
 
+Information on the capabilities of a render driver or context.
+
+== Header File ==
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_RendererInfo
+{
+    const char *name;           /**< The name of the renderer */
+    Uint32 flags;               /**< Supported ::SDL_RendererFlags */
+    Uint32 num_texture_formats; /**< The number of available texture formats */
+    Uint32 texture_formats[16]; /**< The available texture formats */
+    int max_texture_width;      /**< The maximum texture width */
+    int max_texture_height;     /**< The maximum texture height */
+} SDL_RendererInfo;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |const char*
 |'''name'''
@@ -30,21 +48,14 @@ A structure that contains information on the capabilities of a render driver or 
 |the maximum texture height
 |}
 
-== Remarks ==
-<span id="flags"></span> '''flags''' may be 0 or a mask of any of the following [[SDL_RendererFlags]] values OR'd together:  <<Include(SDL_RendererFlags, , , from="== Values ==", to="== Code Examples ==")>>
-
-<span id="texture_formats"></span> '''texture_formats''' is an array of [[SDL_PixelFormatEnum]] values representing the available texture formats for the renderer <<Include(SDL_PixelFormatEnum, , , from="== Values ==", to="== Code Examples ==")>>
-
 == Related Enumerations ==
+
 :[[SDL_BlendMode]]
 :[[SDL_PixelFormatEnum]]
 :[[SDL_RendererFlags]]
 :[[SDL_TextureModulate]]
 
-== Related Functions ==
-:[[SDL_GetRenderDriverInfo]]
-:[[SDL_GetRendererInfo]]
-:[[SDL_RenderCopy]]
-
 ----
-[[CategoryStruct]], [[CategoryRender]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRender]]
+
+

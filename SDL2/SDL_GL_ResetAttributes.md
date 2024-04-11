@@ -18,11 +18,11 @@ void SDL_GL_ResetAttributes(void);
 
 This function is available since SDL 2.0.2.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 * [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

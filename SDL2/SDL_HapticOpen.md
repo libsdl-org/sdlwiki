@@ -39,7 +39,7 @@ autocenter will be disabled. To modify these values use
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticClose](SDL_HapticClose)
 * [SDL_HapticIndex](SDL_HapticIndex)
@@ -51,5 +51,5 @@ This function is available since SDL 2.0.0.
 * [SDL_HapticStopAll](SDL_HapticStopAll)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

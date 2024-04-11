@@ -30,10 +30,10 @@ information.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickPathForIndex](SDL_JoystickPathForIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

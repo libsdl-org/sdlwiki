@@ -1,18 +1,37 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_MessageBoxData =
-A structure that contains title, text, window and other data for a message box.
 
+MessageBox structure containing title, text, window, etc.
 
+== Header File ==
 
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_messagebox.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_MessageBoxData
+{
+    Uint32 flags;                       /**< ::SDL_MessageBoxFlags */
+    SDL_Window *window;                 /**< Parent window, can be NULL */
+    const char *title;                  /**< UTF-8 title */
+    const char *message;                /**< UTF-8 message text */
+
+    int numbuttons;
+    const SDL_MessageBoxButtonData *buttons;
+
+    const SDL_MessageBoxColorScheme *colorScheme;   /**< ::SDL_MessageBoxColorScheme, can be NULL to use system settings */
+} SDL_MessageBoxData;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 | Uint32                               
 | '''flags'''       
@@ -43,20 +62,16 @@ A structure that contains title, text, window and other data for a message box.
 | an [[SDL_MessageBoxColorScheme]], can be NULL to use system settings 
 |}
 
-
-
-== Remarks ==
-See [[SDL_ShowMessageBox]]() for a complete code example.
-
 == Related Enumerations ==
+
 :[[SDL_MessageBoxFlags]]
 
 == Related Structures ==
+
 :[[SDL_MessageBoxButtonData]]
 :[[SDL_MessageBoxColorScheme]]
 
-== Related Functions ==
-:[[SDL_ShowMessageBox]]
-
 ----
-[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+
+

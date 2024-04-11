@@ -29,11 +29,11 @@ Returns 1 if it has been opened, 0 if it hasn't or on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticIndex](SDL_HapticIndex)
 * [SDL_HapticOpen](SDL_HapticOpen)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,3 +1,5 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -5,36 +7,42 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_TICKS_PASSED =
-This macro compares 32 bit tick values provided by [[SDL_GetTicks]].  Because the [[SDL_GetTicks]] value is 32 bits in milliseconds, it will wrap approximately every 49 days.  This handles the rollover condition appropriately, ensuring that this is safe for events that happen significantly faster than every 49 days.
 
-To completely avoid edge cases associated with monotonically increasing time counts within a human lifespan, you're encouraged to use [[SDL_GetTicks64]] instead.  Do not use this macro with the output of [[SDL_GetTicks64]].
+Compare 32-bit SDL ticks values, and return true if <code>A</code> has passed <code>B</code>.
+
+== Header File ==
+
+Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_timer.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_TICKS_PASSED(A, B)
+
+<syntaxhighlight lang='c'>
+#define SDL_TICKS_PASSED(A, B)  ((Sint32)((B) - (A)) <= 0)</syntaxhighlight>
+
+== Remarks ==
+
+This should be used with results from [[SDL_GetTicks]](), as this macro
+attempts to deal with the 32-bit counter wrapping back to zero every ~49
+days, but should _not_ be used with [[SDL_GetTicks64]](), which does not
+have that problem.
+
+For example, with [[SDL_GetTicks]](), if you want to wait 100 ms, you could
+do this:
+
+<syntaxhighlight lang='c'>
+const Uint32 timeout = SDL_GetTicks() + 100;
+while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
+    // ... do work until timeout has elapsed
+}
 </syntaxhighlight>
 
-<!-- #Fill in the above syntax per the Style Guide, then delete this comment. -->
-
-
-== Function Parameters ==
-{|
-|'''A'''
-|the first ticks values
-|-
-|'''B'''
-|the second ticks values
-|}
-
-
-== Return Value ==
-Returns "true" if A has passed B.
-
+Note that this does not handle tick differences greater than 2^31 so take
+care when using the above kind of code with large timeout delays (tens of
+days).
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 /* if you want to wait 100 ms, you could do this: */
 Uint32 timeout = SDL_GetTicks() + 100;
@@ -43,12 +51,8 @@ while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
 }
 </syntaxhighlight>
 
-== Version ==
-This function is available since SDL 2.0.1.
-
-== Related Functions ==
-:[[SDL_GetTicks]]
-
 ----
-[[CategoryAPI]], [[CategoryTimer]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryTimer]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

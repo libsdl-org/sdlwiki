@@ -1,36 +1,37 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_VIDEO_X11_XRANDR =
-A hint that specifies whether the X11 XRandR extension should be used.
 
+A variable controlling whether the X11 XRandR extension should be used.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|disable XRandR
-|-
-|1
-|enable XRandR
-|}
+== Syntax ==
 
-
-== Default ==
-By default SDL will not use XRandR because of window manager issues.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_VIDEO_X11_XRANDR           "SDL_VIDEO_X11_XRANDR"</syntaxhighlight>
 
 == Remarks ==
-For details about the referenced window manager issues see the following message (and its thread) on the SDL mailing list: http://lists.libsdl.org/pipermail/sdl-libsdl.org/2012-October/651919.html
 
+This variable can be set to the following values: "0" - Disable XRandR "1"
+* Enable XRandR
+
+By default SDL will use XRandR.
+
+== Default ==
+
+By default SDL will not use XRandR because of window manager issues.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

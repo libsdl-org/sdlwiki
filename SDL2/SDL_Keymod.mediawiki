@@ -1,72 +1,44 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_Keymod =
-An enumeration of key modifier masks.
 
+Enumeration of valid key mods (possibly OR'd together).
 
-== Values ==
-{|
-|KMOD_NONE
-|0 (no modifier is applicable)
-|-
-|KMOD_LSHIFT
-|the left Shift key is down
-|-
-|KMOD_RSHIFT
-|the right Shift key is down
-|-
-|KMOD_LCTRL
-|the left Ctrl (Control) key is down
-|-
-|KMOD_RCTRL
-|the right Ctrl (Control) key is down
-|-
-|KMOD_LALT
-|the left Alt key is down
-|-
-|KMOD_RALT
-|the right Alt key is down
-|-
-|KMOD_LGUI
-|the left GUI key (often the Windows key) is down
-|-
-|KMOD_RGUI
-|the right GUI key (often the Windows key) is down
-|-
-|KMOD_NUM
-|the Num Lock key (may be located on an extended keypad) is down
-|-
-|KMOD_CAPS
-|the Caps Lock key is down
-|-
-|KMOD_MODE
-|the !AltGr key is down
-|-
-|KMOD_SCROLL
-|the Scroll Lock key is down (available since SDL 2.0.18)
-|-
-|KMOD_CTRL
-|(KMOD_LCTRL|KMOD_RCTRL)
-|-
-|KMOD_SHIFT
-|(KMOD_LSHIFT|KMOD_RSHIFT)
-|-
-|KMOD_ALT
-|(KMOD_LALT|KMOD_RALT)
-|-
-|KMOD_GUI
-|(KMOD_LGUI|KMOD_RGUI)
-|}
+== Header File ==
 
-== Remarks ==
-These may be OR'd together.
+Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_keycode.h), but apps should _only_ `#include "SDL.h"`!
 
-== Related Functions ==
-:[[SDL_GetModState]]
-:[[SDL_SetModState]]
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_Keymod
+{
+    KMOD_NONE = 0x0000,
+    KMOD_LSHIFT = 0x0001,
+    KMOD_RSHIFT = 0x0002,
+    KMOD_LCTRL = 0x0040,
+    KMOD_RCTRL = 0x0080,
+    KMOD_LALT = 0x0100,
+    KMOD_RALT = 0x0200,
+    KMOD_LGUI = 0x0400,
+    KMOD_RGUI = 0x0800,
+    KMOD_NUM = 0x1000,
+    KMOD_CAPS = 0x2000,
+    KMOD_MODE = 0x4000,
+    KMOD_SCROLL = 0x8000,
+
+    KMOD_CTRL = KMOD_LCTRL | KMOD_RCTRL,
+    KMOD_SHIFT = KMOD_LSHIFT | KMOD_RSHIFT,
+    KMOD_ALT = KMOD_LALT | KMOD_RALT,
+    KMOD_GUI = KMOD_LGUI | KMOD_RGUI,
+
+    KMOD_RESERVED = KMOD_SCROLL /* This is for source-level compatibility with SDL 2.0.0. */
+} SDL_Keymod;</syntaxhighlight>
 
 ----
-[[CategoryEnum]], [[CategoryKeyboard]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryKeyboard]], [[CategoryDraft]]
+
+

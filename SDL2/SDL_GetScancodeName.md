@@ -43,11 +43,11 @@ two-way mapping between strings and scancodes.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 * [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

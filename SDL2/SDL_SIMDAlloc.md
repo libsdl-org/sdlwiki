@@ -55,12 +55,12 @@ the system isn't out of memory, but you are not allowed to dereference it
 
 This function is available since SDL 2.0.10.
 
-## Related Functions
+## See Also
 
 * [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
 * [SDL_SIMDRealloc](SDL_SIMDRealloc)
 * [SDL_SIMDFree](SDL_SIMDFree)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -23,11 +23,11 @@ initialized.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 * [SDL_GetVideoDriver](SDL_GetVideoDriver)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

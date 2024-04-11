@@ -62,7 +62,7 @@ With two notable exceptions:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseAudio](SDL_CloseAudio)
 * [SDL_LockAudio](SDL_LockAudio)
@@ -70,5 +70,5 @@ This function is available since SDL 2.0.0.
 * [SDL_UnlockAudio](SDL_UnlockAudio)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -43,5 +43,5 @@ function is available if your pixel data is not contiguous.
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

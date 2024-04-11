@@ -1,16 +1,25 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_atomic_t =
-A structure representing an atomic integer value.
 
+A type representing an atomic integer value.
 
-== Data Fields ==
-{|
-|int
-|'''value'''
-|the atomic integer value
-|}
+== Header File ==
+
+Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_atomic.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_atomic_t {
+    int value;
+} SDL_atomic_t;</syntaxhighlight>
+
+== Remarks ==
+
+It is a struct so people don't accidentally use numeric operations on it.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 
 /* This is a simple fps counter program
@@ -72,17 +81,15 @@ quit:
 
 </syntaxhighlight>
 
-== Remarks ==
-[[SDL_atomic_t]] is a structure so people don't accidentally use numeric operations on it.  Instead, you should use the atomic operation functions to work with the integer value.  
+== Data Fields ==
 
-
-== Related Functions ==
-:[[SDL_AtomicAdd]]
-:[[SDL_AtomicCAS]]
-:[[SDL_AtomicDecRef]]
-:[[SDL_AtomicGet]]
-:[[SDL_AtomicIncRef]]
-:[[SDL_AtomicSet]]
+{|
+|int
+|'''value'''
+|the atomic integer value
+|}
 
 ----
-[[CategoryStruct]], [[CategoryAtomic]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryAtomic]]
+
+

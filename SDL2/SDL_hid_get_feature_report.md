@@ -39,5 +39,5 @@ in data[1].
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

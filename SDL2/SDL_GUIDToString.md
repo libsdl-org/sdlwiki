@@ -30,10 +30,10 @@ You should supply at least 33 bytes for pszGUID.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GUIDFromString](SDL_GUIDFromString)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

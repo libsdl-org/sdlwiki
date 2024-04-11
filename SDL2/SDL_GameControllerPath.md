@@ -35,10 +35,10 @@ takes a controller identifier instead of the (unstable) device index.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerPathForIndex](SDL_GameControllerPathForIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

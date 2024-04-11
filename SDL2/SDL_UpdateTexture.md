@@ -48,12 +48,12 @@ reasons you may not get the pixels back if you lock the texture afterward.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_LockTexture](SDL_LockTexture)
 * [SDL_UnlockTexture](SDL_UnlockTexture)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,14 +1,29 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_version
 
-A structure that contains information about the version of SDL in use.
+Information about the version of SDL in use.
 
-## Data Fields
+## Header File
 
-|       |           |                             |                                 |
-| ----- | --------- | --------------------------- |
-| Uint8 | **major** | major version               |
-| Uint8 | **minor** | minor version               |
-| Uint8 | **patch** | update version (patchlevel) |
+Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_version.h), but apps should _only_ `#include "SDL.h"`!
+
+## Syntax
+
+```c
+typedef struct SDL_version
+{
+    Uint8 major;        /**< major version */
+    Uint8 minor;        /**< minor version */
+    Uint8 patch;        /**< update version */
+} SDL_version;
+```
+
+## Remarks
+
+Represents the library's version as three levels: major revision
+(increments with massive changes, additions, and enhancements), minor
+revision (increments with backwards-compatible changes to the major
+revision), and patchlevel (increments with fixes to the minor revision).
 
 ## Code Examples
 
@@ -24,15 +39,19 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
        linked.major, linked.minor, linked.patch);
 ```
 
-## Remarks
+## See Also
 
-Represents the library's version as three levels:
+* [SDL_VERSION](SDL_VERSION)
+* [SDL_GetVersion](SDL_GetVersion)
 
-- major revision (increments with massive changes, additions, and enhancements)
-- minor revision (increments with backwards-compatible changes to the major revision), and
-- patchlevel (increments with fixes to the minor revision)
 
-The macro [SDL_VERSION](SDL_VERSION) can be used to populate this structure with information.
+## Data Fields
+
+|       |           |                             |                                 |
+| ----- | --------- | --------------------------- |
+| Uint8 | **major** | major version               |
+| Uint8 | **minor** | minor version               |
+| Uint8 | **patch** | update version (patchlevel) |
 
 ## Related Macros
 
@@ -41,10 +60,7 @@ The macro [SDL_VERSION](SDL_VERSION) can be used to populate this structure with
 - [SDL_VERSIONNUM](SDL_VERSIONNUM)
 - [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
 
-## Related Functions
-
-- [SDL_GetVersion](SDL_GetVersion)
-
 ----
-[CategoryStruct](CategoryStruct), [CategoryVersion](CategoryVersion)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVersion](CategoryVersion)
+
 

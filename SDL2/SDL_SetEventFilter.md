@@ -55,7 +55,7 @@ get passed through the event filter, but events pushed onto the queue with
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AddEventWatch](SDL_AddEventWatch)
 * [SDL_EventState](SDL_EventState)
@@ -64,5 +64,5 @@ This function is available since SDL 2.0.0.
 * [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

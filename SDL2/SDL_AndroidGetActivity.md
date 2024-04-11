@@ -35,10 +35,10 @@ https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

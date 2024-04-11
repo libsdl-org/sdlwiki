@@ -43,11 +43,11 @@ invalid next time any of several other SDL functions are called.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
 * [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

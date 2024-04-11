@@ -43,7 +43,7 @@ creating the texture.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 * [SDL_DestroyTexture](SDL_DestroyTexture)
@@ -51,5 +51,5 @@ This function is available since SDL 2.0.0.
 * [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

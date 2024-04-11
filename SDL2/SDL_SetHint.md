@@ -38,12 +38,12 @@ override priority instead.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

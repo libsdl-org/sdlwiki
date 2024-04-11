@@ -1,29 +1,25 @@
-<!-- # page was renamed from SDL_HINT_ACCEL_AS_JOY -->
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_HINT_ACCELEROMETER_AS_JOYSTICK =
-A hint that specifies whether the Android / iOS built-in accelerometer should be listed as a joystick device, rather than listing actual joysticks only.
 
+A variable controlling whether the Android / iOS built-in accelerometer should be listed as a joystick device.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|list only real joysticks and accept input from them
-|-
-|1
-|list real joysticks along with the accelerometer as if it were a 3 axis joystick (the default)
-|}
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+#define SDL_HINT_ACCELEROMETER_AS_JOYSTICK "SDL_ACCELEROMETER_AS_JOYSTICK"</syntaxhighlight>
 
-== Default ==
-By default SDL will list real joysticks along with the accelerometer as if it were a 3 axis joystick.
+== Remarks ==
 
+This variable can be set to the following values: "0" - The accelerometer
+is not listed as a joystick "1" - The accelerometer is available as a 3
+axis joystick (the default).
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL.h"
 
@@ -35,13 +31,12 @@ int main(int argc, char* argv[])
 
 </syntaxhighlight>
 
+== Default ==
 
-== Remarks ==
-The hint is supported for iOS since SDL 2.0.4.
-
-== Version ==
-This hint is available since SDL 2.0.2.
+By default SDL will list real joysticks along with the accelerometer as if it were a 3 axis joystick.
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

@@ -41,10 +41,10 @@ allocated through this function, so they can all be freed correctly with
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_FreeRW](SDL_FreeRW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

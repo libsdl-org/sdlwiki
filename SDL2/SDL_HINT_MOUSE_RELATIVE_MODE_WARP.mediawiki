@@ -1,31 +1,30 @@
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_HINT_MOUSE_RELATIVE_MODE_WARP =
-A hint that specifies whether relative mouse mode is implemented using mouse warping.
 
+A variable controlling whether relative mouse mode is implemented using mouse warping
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|relative mouse mode uses the raw input
-|-
-|1
-|relative mouse mode uses mouse warping
-|}
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+#define SDL_HINT_MOUSE_RELATIVE_MODE_WARP    "SDL_MOUSE_RELATIVE_MODE_WARP"</syntaxhighlight>
 
-== Default ==
+== Remarks ==
+
+This variable can be set to the following values: "0" - Relative mouse mode
+uses raw input "1" - Relative mouse mode uses mouse warping
+
 By default SDL will use raw input for relative mouse mode
 
+== Default ==
 
-
-== Version ==
-This hint is available since SDL 2.0.2.
+By default SDL will use raw input for relative mouse mode
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

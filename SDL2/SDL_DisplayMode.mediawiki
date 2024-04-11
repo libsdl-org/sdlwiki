@@ -1,32 +1,26 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_DisplayMode =
-A structure that contains the description of a display mode.
 
+The structure that defines a display mode
 
-== Data Fields ==
-{|
-|Uint32
-|'''format'''
-|one of the [[SDL_PixelFormatEnum]] values
-|-
-|int
-|'''w'''
-|width, in screen coordinates
-|-
-|int
-|'''h'''
-|height, in screen coordinates
-|-
-|int
-|'''refresh_rate'''
-|refresh rate (in Hz), or 0 for unspecified 
-|-
-|void*
-|'''driverdata'''
-|driver-specific data, initialize to 0
-|}
+== Header File ==
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_DisplayMode
+{
+    Uint32 format;              /**< pixel format */
+    int w;                      /**< width, in screen coordinates */
+    int h;                      /**< height, in screen coordinates */
+    int refresh_rate;           /**< refresh rate (or zero for unspecified) */
+    void *driverdata;           /**< driver-specific data, initialize to 0 */
+} SDL_DisplayMode;</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c'>
 static int display_in_use = 0; /* Only using first display */
 
@@ -57,14 +51,42 @@ for (i = 0; i < display_mode_count; ++i) {
 }
 </syntaxhighlight>
 
-== Related Functions ==
-:[[SDL_GetClosestDisplayMode]]
-:[[SDL_GetCurrentDisplayMode]]
-:[[SDL_GetDesktopDisplayMode]]
-:[[SDL_GetDisplayMode]]
+== See Also ==
+
 :[[SDL_GetNumDisplayModes]]
-:[[SDL_GetWindowDisplayMode]]
+:[[SDL_GetDisplayMode]]
+:[[SDL_GetDesktopDisplayMode]]
+:[[SDL_GetCurrentDisplayMode]]
+:[[SDL_GetClosestDisplayMode]]
 :[[SDL_SetWindowDisplayMode]]
+:[[SDL_GetWindowDisplayMode]]
+
+
+== Data Fields ==
+
+{|
+|Uint32
+|'''format'''
+|one of the [[SDL_PixelFormatEnum]] values
+|-
+|int
+|'''w'''
+|width, in screen coordinates
+|-
+|int
+|'''h'''
+|height, in screen coordinates
+|-
+|int
+|'''refresh_rate'''
+|refresh rate (in Hz), or 0 for unspecified 
+|-
+|void*
+|'''driverdata'''
+|driver-specific data, initialize to 0
+|}
 
 ----
-[[CategoryStruct]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryVideo]]
+
+

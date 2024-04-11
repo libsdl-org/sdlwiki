@@ -48,5 +48,5 @@ This function is currently only implemented for
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

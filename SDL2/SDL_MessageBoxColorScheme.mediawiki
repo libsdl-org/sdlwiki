@@ -1,32 +1,45 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_MessageBoxColorScheme =
-A structure that contains a set of colors to use for message box dialogs.
 
+A set of colors to use for message box dialogs
 
+== Header File ==
 
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_messagebox.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_MessageBoxColorScheme
+{
+    SDL_MessageBoxColor colors[SDL_MESSAGEBOX_COLOR_MAX];
+} SDL_MessageBoxColorScheme;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |[[SDL_MessageBoxColor]][5]
 |'''colors'''
 | 
 |}
 
-
-
 == Related Enumerations ==
+
 :[[SDL_MessageBoxColorType]]
 
 == Related Structures ==
+
 :[[SDL_MessageBoxColor]]
 :[[SDL_MessageBoxData]]
 
 ----
-[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+
+

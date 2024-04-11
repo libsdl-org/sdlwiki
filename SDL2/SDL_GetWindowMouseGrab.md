@@ -29,11 +29,11 @@ Returns [SDL_TRUE](SDL_TRUE) if mouse is grabbed, and
 
 This function is available since SDL 2.0.16.
 
-## Related Functions
+## See Also
 
 * [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 * [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

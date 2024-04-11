@@ -33,5 +33,5 @@ Returns the serial number of the joystick, or NULL if it is not available.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

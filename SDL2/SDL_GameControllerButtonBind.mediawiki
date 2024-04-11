@@ -1,18 +1,39 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerButtonBind =
-A structure that contains info on how a logical SDL_GameController button or axis is mapped to the underlying SDL_Joystick's button/axis/hat.
 
+Get the SDL joystick layer binding for this controller button/axis mapping
 
+== Header File ==
 
+Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_GameControllerButtonBind
+{
+    SDL_GameControllerBindType bindType;
+    union
+    {
+        int button;
+        int axis;
+        struct {
+            int hat;
+            int hat_mask;
+        } hat;
+    } value;
+
+} SDL_GameControllerButtonBind;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |[[SDL_GameControllerBindType]]
 |'''bindType'''
@@ -35,14 +56,12 @@ A structure that contains info on how a logical SDL_GameController button or axi
 |the mask you need to binary-& with the hat's value with (this probaly corresponds to '''one''' direction of the hat)
 |}
 
-
 == Related Enumerations ==
+
 :[[SDL_GameControllerBindType]]
 
-== Related Functions ==
-:[[SDL_GameControllerGetBindForAxis]]
-:[[SDL_GameControllerGetBindForButton]]
-
 ----
-[[CategoryStruct]], [[CategoryHeader]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryHeader]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

@@ -34,5 +34,5 @@ This can be called before any controllers are opened.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

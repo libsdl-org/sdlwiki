@@ -1,49 +1,40 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_SYSWM_TYPE =
-An enumeration of the various supported windowing subsystems.
 
+These are the various supported windowing subsystems
 
-== Values ==
-{|
-|SDL_SYSWM_UNKNOWN
-|
-|-
-|SDL_SYSWM_WINDOWS
-|Microsoft Windows
-|-
-|SDL_SYSWM_X11
-|X Window System
-|-
-|SDL_SYSWM_DIRECTFB
-|[https://en.wikipedia.org/wiki/DirectFB DirectFB]
-|-
-|SDL_SYSWM_COCOA
-|Apple Mac OS X
-|-
-|SDL_SYSWM_UIKIT
-|Apple iOS
-|-
-|SDL_SYSWM_WAYLAND
-|Wayland (>= SDL 2.0.2)
-|-
-|SDL_SYSWM_MIR
-|Mir (>= SDL 2.0.2)
-|-
-|SDL_SYSWM_WINRT
-|WinRT (>= SDL 2.0.3)
-|-
-|SDL_SYSWM_ANDROID
-|Android (>= SDL 2.0.4)
-|-
-|SDL_SYSWM_VIVANTE
-|Vivante (>= SDL 2.0.5)
-|}
+== Header File ==
+
+Defined in [SDL_syswm.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_syswm.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_SYSWM_TYPE
+{
+    SDL_SYSWM_UNKNOWN,
+    SDL_SYSWM_WINDOWS,
+    SDL_SYSWM_X11,
+    SDL_SYSWM_DIRECTFB,
+    SDL_SYSWM_COCOA,
+    SDL_SYSWM_UIKIT,
+    SDL_SYSWM_WAYLAND,
+    SDL_SYSWM_MIR,  /* no longer available, left for API/ABI compatibility. Remove in 2.1! */
+    SDL_SYSWM_WINRT,
+    SDL_SYSWM_ANDROID,
+    SDL_SYSWM_VIVANTE,
+    SDL_SYSWM_OS2,
+    SDL_SYSWM_HAIKU,
+    SDL_SYSWM_KMSDRM,
+    SDL_SYSWM_RISCOS
+} SDL_SYSWM_TYPE;</syntaxhighlight>
+
 == Related Structures ==
+
 :[[SDL_SysWMinfo]]
 :[[SDL_SysWMmsg]]
 
-== Related Functions ==
-:[[SDL_GetWindowWMInfo]]
-
 ----
-[[CategoryEnum]], [[CategorySWM]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategorySWM]]
+
+

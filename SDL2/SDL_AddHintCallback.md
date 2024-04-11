@@ -28,7 +28,7 @@ void SDL_AddHintCallback(const char *name,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DelHintCallback](SDL_DelHintCallback)
 
@@ -65,6 +65,6 @@ SDL_AddHintCallback(SDL_HINT_XINPUT_ENABLED, callback, const_cast<char*>("SDL"))
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

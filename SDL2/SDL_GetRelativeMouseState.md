@@ -38,10 +38,10 @@ initialization. You can pass NULL for either `x` or `y`.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetMouseState](SDL_GetMouseState)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

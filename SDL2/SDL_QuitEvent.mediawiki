@@ -1,20 +1,23 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_QuitEvent =
-A structure that contains the "quit requested" event.
 
+The "quit requested" event
 
-== Data Fields ==
-{|
-|Uint32
-|'''type'''
-|SDL_QUIT
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|}
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_QuitEvent
+{
+    Uint32 type;        /**< ::SDL_QUIT */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+} SDL_QuitEvent;</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_Event e;
 for (;;) {
@@ -26,16 +29,27 @@ for (;;) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-[[SDL_QuitEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_QUIT is reported.  You would access it through the event's <code>quit</code> field.
+== Data Fields ==
 
-Please refer to [[SDL_EventType#SDL_QUIT|the discussion of SDL_QUIT]] for more details.
+{|
+|Uint32
+|'''type'''
+|SDL_QUIT
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|}
 
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

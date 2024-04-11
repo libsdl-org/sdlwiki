@@ -46,12 +46,12 @@ constrained environment.
 
 This function is available since SDL 2.0.2.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
 * [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
 * [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

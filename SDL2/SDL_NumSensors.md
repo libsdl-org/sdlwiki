@@ -23,5 +23,5 @@ Returns the number of sensors detected.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

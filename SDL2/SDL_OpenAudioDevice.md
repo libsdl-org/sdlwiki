@@ -133,7 +133,7 @@ for `allowed_changes` and let SDL transparently handle any differences.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
 * [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
@@ -143,5 +143,5 @@ This function is available since SDL 2.0.0.
 * [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

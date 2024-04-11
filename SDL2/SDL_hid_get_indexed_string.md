@@ -32,5 +32,5 @@ Returns 0 on success and -1 on error.
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

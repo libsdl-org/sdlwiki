@@ -1,41 +1,43 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_THREAD_STACK_SIZE =
-A hint that specifies a variable specifying SDL's threads stack size in bytes or "0" for the backend's default size.
 
+A string specifying SDL's threads stack size in bytes or "0" for the backend's default size
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|use the backend's default threads stack size
-|-
-|X
-|use the provided positive threads stack size
-|}
+== Syntax ==
 
-
-== Default ==
-By default the backend's default threads stack size is used.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_THREAD_STACK_SIZE              "SDL_THREAD_STACK_SIZE"</syntaxhighlight>
 
 == Remarks ==
-Use this hint in case you need to set SDL's threads stack size to other than the default. This is specially useful if you build SDL against a non glibc libc library (such as musl) which provides a relatively small default thread stack size (a few kilobytes versus the default 8 MB glibc uses).
 
-Support for this hint is currently available only in the pthread, Windows (>= SDL 2.0.5), and PSP (>= SDL 2.0.5) backend.
+Use this hint in case you need to set SDL's threads stack size to other
+than the default. This is specially useful if you build SDL against a non
+glibc libc library (such as musl) which provides a relatively small default
+thread stack size (a few kilobytes versus the default 8MB glibc uses).
+Support for this hint is currently available only in the pthread, Windows,
+and PSP backend.
 
-== Version ==
+Instead of this hint, in 2.0.9 and later, you can use
+[[SDL_CreateThreadWithStackSize]](). This hint only works with the classic
+[[SDL_CreateThread]]().
 
-This hint is available since SDL 2.0.4.
+== Default ==
+
+By default the backend's default threads stack size is used.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

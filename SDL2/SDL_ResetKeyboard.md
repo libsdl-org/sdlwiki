@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_ResetKeyboard
 
-Clear the state of the keyboard 
+Clear the state of the keyboard
 
 ## Header File
 
@@ -22,10 +22,10 @@ This function will generate key up events for all pressed keys.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboardState](SDL_GetKeyboardState)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,59 +1,27 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_LogPriority =
-An enumeration of the predefined log priorities.
 
+The predefined log priorities
 
-== Values ==
-<!-- #The following content is included on <code>SDL_LogSetAllPriority, SDL_LogSetPriority, SDL_LogMessage, SDL_LogMessageV</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
-{|
-|SDL_LOG_PRIORITY_VERBOSE
-|
-|-
-|SDL_LOG_PRIORITY_DEBUG
-|
-|-
-|SDL_LOG_PRIORITY_INFO
-|
-|-
-|SDL_LOG_PRIORITY_WARN
-|
-|-
-|SDL_LOG_PRIORITY_ERROR
-|
-|-
-|SDL_LOG_PRIORITY_CRITICAL
-|
-|-
-|<row style="color: #808080;">SDL_NUM_LOG_PRIORITIES
-|(internal use)
-|}
-<!-- #End Include here. -->
+== Header File ==
 
-== Remarks ==
-<!-- # Start Include Default Priority -->
-The default log priorities are as follows:
-{|
-|<code>SDL_LOG_CATEGORY_APPLICATION</code>
-|<code>SDL_LOG_PRIORITY_INFO</code>
-|-
-|<code>SDL_LOG_CATEGORY_ASSERT</code>
-|<code>SDL_LOG_PRIORITY_WARN</code>
-|-
-|<code>SDL_LOG_CATEGORY_TEST</code>
-|<code>SDL_LOG_PRIORITY_VERBOSE</code>
-|-
-|everything else
-|<code>SDL_LOG_PRIORITY_CRITICAL</code>
-|}
-<!-- # End Include Default Priority -->
+Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_log.h), but apps should _only_ `#include "SDL.h"`!
 
-If you're debugging SDL you might want to call:
-    SDL_LogSetAllPriority(SDL_LOG_PRIORITY_WARN);
+== Syntax ==
 
-== Related Functions ==
-:[[SDL_LogMessage]]
-:[[SDL_LogMessageV]]
-:[[SDL_LogSetAllPriority]]
-:[[SDL_LogSetPriority]]
+<syntaxhighlight lang='c'>
+typedef enum SDL_LogPriority
+{
+    SDL_LOG_PRIORITY_VERBOSE = 1,
+    SDL_LOG_PRIORITY_DEBUG,
+    SDL_LOG_PRIORITY_INFO,
+    SDL_LOG_PRIORITY_WARN,
+    SDL_LOG_PRIORITY_ERROR,
+    SDL_LOG_PRIORITY_CRITICAL,
+    SDL_NUM_LOG_PRIORITIES
+} SDL_LogPriority;</syntaxhighlight>
 
 ----
-[[CategoryEnum]], [[CategoryLog]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryLog]]
+
+

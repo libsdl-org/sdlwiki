@@ -1,23 +1,31 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_ThreadPriority =
-An enumeration of the available thread priorities.
 
+The SDL thread priority.
 
-== Values ==
-<!-- #The following content is included on <code>SDL_SetThreadPriority</code>.  Any changes between these comments will be reflected there as well.  Please use caution when editing.  Start Include here. -->
-{|
-|SDL_THREAD_PRIORITY_LOW
-|for non-urgent, background processing
-|-
-|SDL_THREAD_PRIORITY_NORMAL
-|for general purpose processing (default)
-|-
-|SDL_THREAD_PRIORITY_HIGH
-|for timing-critical processing
-|}
-<!-- #End Include here. -->
-== Related Functions ==
-:[[SDL_SetThreadPriority]]
+== Header File ==
+
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_thread.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_ThreadPriority {
+    SDL_THREAD_PRIORITY_LOW,
+    SDL_THREAD_PRIORITY_NORMAL,
+    SDL_THREAD_PRIORITY_HIGH,
+    SDL_THREAD_PRIORITY_TIME_CRITICAL
+} SDL_ThreadPriority;</syntaxhighlight>
+
+== Remarks ==
+
+SDL will make system changes as necessary in order to apply the thread
+priority. Code which attempts to control thread state related to priority
+should be aware that calling [[SDL_SetThreadPriority]] may alter such
+state. [[SDL_HINT_THREAD_PRIORITY_POLICY]] can be used to control aspects
+of this behavior.
 
 ----
-[[CategoryEnum]], [[CategoryThread]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryThread]]
+
+

@@ -38,12 +38,12 @@ subsystems with [SDL_QuitSubSystem](SDL_QuitSubSystem)().
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_InitSubSystem](SDL_InitSubSystem)
 * [SDL_Quit](SDL_Quit)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryInit](CategoryInit)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 
 

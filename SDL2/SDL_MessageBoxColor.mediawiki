@@ -1,18 +1,29 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_MessageBoxColor =
-A structure that contains RGB value used in an [[SDL_MessageBoxColorScheme]].
 
+RGB value used in a message box color scheme
 
+== Header File ==
 
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_messagebox.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_MessageBoxColor
+{
+    Uint8 r, g, b;
+} SDL_MessageBoxColor;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint8
 |'''r'''
@@ -27,10 +38,11 @@ A structure that contains RGB value used in an [[SDL_MessageBoxColorScheme]].
 |the blue component in the range 0-255
 |}
 
-
-
 == Related Structures ==
+
 :[[SDL_MessageBoxColorScheme]]
 
 ----
-[[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryVideo]], [[CategoryDraft]]
+
+

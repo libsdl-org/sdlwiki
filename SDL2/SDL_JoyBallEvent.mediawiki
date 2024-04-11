@@ -1,9 +1,30 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_JoyBallEvent =
-A structure that contains joystick trackball motion event information.
 
+Joystick trackball motion event structure (event.jball.*)
+
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_JoyBallEvent
+{
+    Uint32 type;        /**< ::SDL_JOYBALLMOTION */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    SDL_JoystickID which; /**< The joystick instance id */
+    Uint8 ball;         /**< The joystick trackball index */
+    Uint8 padding1;
+    Uint8 padding2;
+    Uint8 padding3;
+    Sint16 xrel;        /**< The relative motion in the X direction */
+    Sint16 yrel;        /**< The relative motion in the Y direction */
+} SDL_JoyBallEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -30,25 +51,18 @@ A structure that contains joystick trackball motion event information.
 |the relative motion in the Y direction
 |}
 
-== Remarks ==
-[[SDL_JoyBallEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_JOYBALLMOTION is reported.  You would access it through the event's <code>jball</code> field.
-
-An SDL_JOYBALLMOTION event occurs when a user moves a trackball on the joystick.
-
-Trackballs only return relative motion. This is the change in position of the ball since it was last polled (last cycle of the event loop).
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 :[[SDL_JoyAxisEvent]]
 :[[SDL_JoyButtonEvent]]
 :[[SDL_JoyHatEvent]]
 
-== Related Functions ==
-:[[SDL_JoystickEventState]]
-:[[SDL_JoystickGetBall]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

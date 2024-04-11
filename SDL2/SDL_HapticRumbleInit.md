@@ -29,7 +29,7 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticOpen](SDL_HapticOpen)
 * [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
@@ -37,5 +37,5 @@ This function is available since SDL 2.0.0.
 * [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

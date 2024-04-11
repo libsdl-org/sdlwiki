@@ -40,12 +40,12 @@ on that device.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticClose](SDL_HapticClose)
 * [SDL_HapticOpen](SDL_HapticOpen)
 * [SDL_JoystickIsHaptic](SDL_JoystickIsHaptic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

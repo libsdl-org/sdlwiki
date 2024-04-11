@@ -34,5 +34,5 @@ Input API: https://partner.steamgames.com/doc/api/ISteamInput
 This function is available since SDL 2.30.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

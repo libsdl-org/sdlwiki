@@ -33,11 +33,11 @@ See [SDL_Keycode](SDL_Keycode) for details.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyName](SDL_GetKeyName)
 * [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,35 +1,38 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_IME_INTERNAL_EDITING =
-A hint that specifies whether certain IMEs should handle text editing internally instead of sending [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events.
 
+A variable to control whether certain IMEs should handle text editing internally instead of sending [[SDL_TEXTEDITING]] events.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|[[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text. (default)
-|-
-|1
-|If supported by the IME then [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are not sent, and text that is being composed will be rendered in its own UI.
-|}
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+#define SDL_HINT_IME_INTERNAL_EDITING "SDL_IME_INTERNAL_EDITING"</syntaxhighlight>
+
+== Remarks ==
+
+The variable can be set to the following values: "0" - [[SDL_TEXTEDITING]]
+events are sent, and it is the application's responsibility to render the
+text from these events and differentiate it somehow from committed text.
+(default) "1" - If supported by the IME then [[SDL_TEXTEDITING]] events are
+not sent, and text that is being composed will be rendered in its own UI.
 
 == Default ==
+
 By default [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
 
-
-
-== Version ==
-This hint is available since SDL 2.0.4.
-
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

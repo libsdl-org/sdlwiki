@@ -1,66 +1,42 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_WindowEventID =
-An enumeration of window events.
 
+Event subtype for window events
 
-== Values ==
-{|
-|SDL_WINDOWEVENT_NONE
-|(never used)
-|-
-|SDL_WINDOWEVENT_SHOWN
-|window has been shown
-|-
-|SDL_WINDOWEVENT_HIDDEN
-|window has been hidden
-|-
-|SDL_WINDOWEVENT_EXPOSED
-|window has been exposed and should be redrawn
-|-
-|SDL_WINDOWEVENT_MOVED
-|window has been moved to data1, data2
-|-
-|SDL_WINDOWEVENT_RESIZED
-|window has been resized to data1xdata2; this event is always preceded by SDL_WINDOWEVENT_SIZE_CHANGED
-|-
-|SDL_WINDOWEVENT_SIZE_CHANGED
-|window size has changed, either as a result of an API call or through the system or user changing the window size; this event is followed by SDL_WINDOWEVENT_RESIZED if the size was changed by an external event, i.e. the user or the window manager
-|-
-|SDL_WINDOWEVENT_MINIMIZED
-|window has been minimized
-|-
-|SDL_WINDOWEVENT_MAXIMIZED
-|window has been maximized
-|-
-|SDL_WINDOWEVENT_RESTORED
-|window has been restored to normal size and position
-|-
-|SDL_WINDOWEVENT_ENTER
-|window has gained mouse focus
-|-
-|SDL_WINDOWEVENT_LEAVE
-|window has lost mouse focus
-|-
-|SDL_WINDOWEVENT_FOCUS_GAINED
-|window has gained keyboard focus
-|-
-|SDL_WINDOWEVENT_FOCUS_LOST
-|window has lost keyboard focus
-|-
-|SDL_WINDOWEVENT_CLOSE
-|the window manager requests that the window be closed
-|-
-|SDL_WINDOWEVENT_TAKE_FOCUS
-|window is being offered a focus (should [[SDL_SetWindowInputFocus]]() on itself or a subwindow, or ignore) (>= SDL 2.0.5)
-|-
-|SDL_WINDOWEVENT_HIT_TEST
-|window had a hit test that wasn't SDL_HITTEST_NORMAL (>= SDL 2.0.5)
-|-
-|SDL_WINDOWEVENT_ICCPROF_CHANGED
-|The ICC profile of the window's display has changed (>= SDL 2.0.18)
-|-
-|SDL_WINDOWEVENT_DISPLAY_CHANGED
-|The window has been moved to display data1. (>= SDL 2.0.18)
-|}
+== Header File ==
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_WindowEventID
+{
+    SDL_WINDOWEVENT_NONE,           /**< Never used */
+    SDL_WINDOWEVENT_SHOWN,          /**< Window has been shown */
+    SDL_WINDOWEVENT_HIDDEN,         /**< Window has been hidden */
+    SDL_WINDOWEVENT_EXPOSED,        /**< Window has been exposed and should be
+                                         redrawn */
+    SDL_WINDOWEVENT_MOVED,          /**< Window has been moved to data1, data2
+                                     */
+    SDL_WINDOWEVENT_RESIZED,        /**< Window has been resized to data1xdata2 */
+    SDL_WINDOWEVENT_SIZE_CHANGED,   /**< The window size has changed, either as
+                                         a result of an API call or through the
+                                         system or user changing the window size. */
+    SDL_WINDOWEVENT_MINIMIZED,      /**< Window has been minimized */
+    SDL_WINDOWEVENT_MAXIMIZED,      /**< Window has been maximized */
+    SDL_WINDOWEVENT_RESTORED,       /**< Window has been restored to normal size
+                                         and position */
+    SDL_WINDOWEVENT_ENTER,          /**< Window has gained mouse focus */
+    SDL_WINDOWEVENT_LEAVE,          /**< Window has lost mouse focus */
+    SDL_WINDOWEVENT_FOCUS_GAINED,   /**< Window has gained keyboard focus */
+    SDL_WINDOWEVENT_FOCUS_LOST,     /**< Window has lost keyboard focus */
+    SDL_WINDOWEVENT_CLOSE,          /**< The window manager requests that the window be closed */
+    SDL_WINDOWEVENT_TAKE_FOCUS,     /**< Window is being offered a focus (should SetWindowInputFocus() on itself or a subwindow, or ignore) */
+    SDL_WINDOWEVENT_HIT_TEST,       /**< Window had a hit test that wasn't SDL_HITTEST_NORMAL. */
+    SDL_WINDOWEVENT_ICCPROF_CHANGED,/**< The ICC profile of the window's display has changed. */
+    SDL_WINDOWEVENT_DISPLAY_CHANGED /**< Window has been moved to display data1. */
+} SDL_WindowEventID;</syntaxhighlight>
 
 == Code Examples ==
 
@@ -124,12 +100,12 @@ int main(int argc, char *argv[])  {
   }
 }
 </syntaxhighlight>
+
 == Related Structures ==
+
 :[[SDL_WindowEvent]]
 
-== Related Functions ==
-:[[SDL_GetWindowFromID]]
-:[[SDL_GetWindowID]]
-
 ----
-[[CategoryEnum]], [[CategoryVideo]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryVideo]], [[CategoryEvents]]
+
+

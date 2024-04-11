@@ -40,11 +40,11 @@ for use.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickClose](SDL_JoystickClose)
 * [SDL_JoystickInstanceID](SDL_JoystickInstanceID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

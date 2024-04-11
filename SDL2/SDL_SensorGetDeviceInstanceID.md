@@ -29,5 +29,5 @@ Returns the sensor instance ID, or -1 if `device_index` is out of range.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

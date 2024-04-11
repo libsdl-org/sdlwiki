@@ -1,18 +1,35 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
-
-
 = SDL_AudioDeviceEvent =
-A structure that contains Audio device event information.
 
+Audio device event structure (event.adevice.*)
 
+== Header File ==
 
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_AudioDeviceEvent
+{
+    Uint32 type;        /**< ::SDL_AUDIODEVICEADDED, or ::SDL_AUDIODEVICEREMOVED */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    Uint32 which;       /**< The audio device index for the ADDED event (valid until next SDL_GetNumAudioDevices() call), SDL_AudioDeviceID for the REMOVED event */
+    Uint8 iscapture;    /**< zero if an output device, non-zero if a capture device. */
+    Uint8 padding1;
+    Uint8 padding2;
+    Uint8 padding3;
+} SDL_AudioDeviceEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -31,20 +48,15 @@ A structure that contains Audio device event information.
 |zero if an audio output device, non-zero if an audio capture device
 |}
 
-
-
-== Version ==
-This structure is available since SDL 2.0.4.
-
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 
-== Related Functions ==
-:[[SDL_GetNumAudioDevices]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]], [[CategoryDraft]]
+
+

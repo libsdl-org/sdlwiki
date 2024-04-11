@@ -30,12 +30,12 @@ the SDL error message to "Invalid window". See
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 
 

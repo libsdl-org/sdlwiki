@@ -1,41 +1,34 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_MAC_BACKGROUND_APP =
-A hint that specifies if the SDL app should not be forced to become a foreground process on Mac OS X.
 
+When set don't force the SDL app to become a foreground process
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|force the SDL app to become a foreground process (default)
-|-
-|1
-|do not force the SDL app to become a foreground process
-|}
+== Syntax ==
 
-
-== Default ==
-By default the SDL app will be forced to become a foreground process on Mac OS X.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_MAC_BACKGROUND_APP    "SDL_MAC_BACKGROUND_APP"</syntaxhighlight>
 
 == Remarks ==
+
 This hint only applies to Mac OS X.
 
+== Default ==
 
-== Version ==
-
-This hint is available since SDL 2.0.4.
-
+By default the SDL app will be forced to become a foreground process on Mac OS X.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

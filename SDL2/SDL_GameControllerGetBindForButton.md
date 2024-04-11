@@ -34,10 +34,10 @@ exist on the device), its `.bindType` will be
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerGetBindForAxis](SDL_GameControllerGetBindForAxis)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -24,7 +24,7 @@ void SDL_DestroyCond(SDL_cond * cond);
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CondBroadcast](SDL_CondBroadcast)
 * [SDL_CondSignal](SDL_CondSignal)
@@ -33,5 +33,5 @@ This function is available since SDL 2.0.0.
 * [SDL_CreateCond](SDL_CreateCond)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

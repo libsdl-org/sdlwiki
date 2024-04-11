@@ -35,11 +35,11 @@ is restricted to when the window has mouse focus.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
 * [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

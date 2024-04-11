@@ -1,13 +1,65 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
-
-
 = SDL_HapticCustom =
-A structure that contains a template for the SDL_HAPTIC_CUSTOM (a custom) effect.
+
+A structure containing a template for the ::[[SDL_HAPTIC_CUSTOM]] effect.
+
+== Header File ==
+
+Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_haptic.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_HapticCustom
+{
+    /* Header */
+    Uint16 type;            /**< ::SDL_HAPTIC_CUSTOM */
+    SDL_HapticDirection direction;  /**< Direction of the effect. */
+
+    /* Replay */
+    Uint32 length;          /**< Duration of the effect. */
+    Uint16 delay;           /**< Delay before starting the effect. */
+
+    /* Trigger */
+    Uint16 button;          /**< Button that triggers the effect. */
+    Uint16 interval;        /**< How soon it can be triggered again after button. */
+
+    /* Custom */
+    Uint8 channels;         /**< Axes to use, minimum of one. */
+    Uint16 period;          /**< Sample periods. */
+    Uint16 samples;         /**< Amount of samples. */
+    Uint16 *data;           /**< Should contain channels*samples items. */
+
+    /* Envelope */
+    Uint16 attack_length;   /**< Duration of the attack. */
+    Uint16 attack_level;    /**< Level at the start of the attack. */
+    Uint16 fade_length;     /**< Duration of the fade. */
+    Uint16 fade_level;      /**< Level at the end of the fade. */
+} SDL_HapticCustom;</syntaxhighlight>
+
+== Remarks ==
+
+This struct is exclusively for the ::[[SDL_HAPTIC_CUSTOM]] effect.
+
+A custom force feedback effect is much like a periodic effect, where the
+application can define its exact shape. You will have to allocate the data
+yourself. Data should consist of channels * samples Uint16 samples.
+
+If channels is one, the effect is rotated using the defined direction.
+Otherwise it uses the samples in data for the different axes.
+
+== See Also ==
+
+:[[SDL_HAPTIC_CUSTOM]]
+:[[SDL_HapticEffect]]
 
 
 == Data Fields ==
+
 {|
 |
 |
@@ -86,20 +138,12 @@ A structure that contains a template for the SDL_HAPTIC_CUSTOM (a custom) effect
 |level at the end of the fade
 |}
 
-== Remarks ==
-This struct is exclusively for the SDL_HAPTIC_CUSTOM effect.
-
-A custom force feedback effect is much like a periodic effect, where the application can define ''its'' exact shape. You will have to allocate the data yourself.
-<!-- <span style="color: green;">I think this should be a new paragraph or moved down to connect to the next one.</span> --> '''data''' should consist of '''channels''' * '''samples''' Uint16 samples. <!-- <span style="color: green;">This is basically repeated above. Is there a better way to say this and still be correct and readable to programmers but also to people who speak English?</span> -->
-
-If '''channels''' is 1, the effect is rotated using the defined direction. Otherwise it uses the samples in '''data''' for the different axes.
-
 == Related Structures ==
+
 :[[SDL_HapticDirection]]
 :[[SDL_HapticEffect]]
 
-== Related Functions ==
-:[[SDL_HapticNewEffect]]
-
 ----
-[[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryForceFeedback]], [[CategoryDraft]]
+
+

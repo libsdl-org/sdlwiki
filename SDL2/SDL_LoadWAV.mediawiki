@@ -1,35 +1,24 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_LoadWAV =
-Use this function to load a WAVE from a file.
 
+Loads a WAV from a file.
+
+== Header File ==
+
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_AudioSpec* SDL_LoadWAV(const char*    file,
-                           SDL_AudioSpec* spec,
-                           Uint8**        audio_buf,
-                           Uint32*        audio_len)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''file''' 
-|the name of the file to load 
-|-
-|'''spec''' 
-|an [[SDL_AudioSpec]] structure that will be filled in with the wave file's format details 
-|-
-|'''audio_buf''' 
-|the audio buffer 
-|-
-|'''audio_len''' 
-|the length of the audio buffer in bytes 
-|}
+<syntaxhighlight lang='c'>
+#define SDL_LoadWAV(file, spec, audio_buf, audio_len) \
+    SDL_LoadWAV_RW(SDL_RWFromFile(file, "rb"),1, spec,audio_buf,audio_len)</syntaxhighlight>
 
-== Return Value ==
-<<Include(SDL_LoadWAV_RW, , , from="== Return Value ==", to="== Code Examples")>>
+== Remarks ==
+
+Compatibility convenience function.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_AudioSpec wav_spec;
 Uint32 wav_length;
@@ -44,15 +33,7 @@ if (SDL_LoadWAV("test.wav", &wav_spec, &wav_buffer, &wav_length) == NULL) {
 }
 </syntaxhighlight>
 
-
-== Remarks ==
-SDL_LoadWAV is a convenience macro that calls [[SDL_LoadWAV_RW]]().
-
-This macro exists so you can pass a filename to [[SDL_LoadWAV_RW]]() without having to deal with the [[CategoryIO|RWops]] API.
-
-== Related Functions ==
-:[[SDL_FreeWAV]]
-:[[SDL_LoadWAV_RW]]
-
 ----
-[[CategoryAPI]], CategoryAudio
+[[CategoryAPI]], [[CategoryAPIMacro]], CategoryAudio
+
+

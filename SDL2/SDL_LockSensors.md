@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_LockSensors
 
-Locking for multi-threaded access to the sensor API 
+Locking for multi-threaded access to the sensor API
 
 ## Header File
 
@@ -28,5 +28,5 @@ will not be delivered.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

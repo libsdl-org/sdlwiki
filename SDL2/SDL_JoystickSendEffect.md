@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_JoystickSendEffect
 
-Send a joystick specific effect packet 
+Send a joystick specific effect packet
 
 ## Header File
 
@@ -31,5 +31,5 @@ Returns 0, or -1 if this joystick or driver doesn't support effect packets
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

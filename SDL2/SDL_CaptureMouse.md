@@ -64,10 +64,10 @@ causes problems for your app, you can disable auto capture by setting the
 
 This function is available since SDL 2.0.4.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

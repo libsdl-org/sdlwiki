@@ -29,5 +29,5 @@ Returns 0 on success, or -1 if an error occurred.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,23 +1,18 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_MUSTLOCK =
-Use this function to determine whether a surface must be locked for access.
 
+Evaluates to true if the surface needs to be locked before access.
+
+== Header File ==
+
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_MUSTLOCK(SDL_Surface* surface)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''surface'''
-|the [[SDL_Surface]] structure to query
-|}
-
-== Return Value ==
-Returns SDL_TRUE if the surface must be locked for access, SDL_FALSE if not.
-== Related Functions ==
-:[[SDL_LockSurface]]
+<syntaxhighlight lang='c'>
+#define SDL_MUSTLOCK(S) (((S)->flags & SDL_RLEACCEL) != 0)</syntaxhighlight>
 
 ----
-[[CategoryAPI]], [[CategorySurface]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategorySurface]]
+
+

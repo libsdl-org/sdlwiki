@@ -40,7 +40,7 @@ Set the color for drawing or filling rectangles, lines, and points, and for
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
 * [SDL_RenderClear](SDL_RenderClear)
@@ -54,5 +54,5 @@ This function is available since SDL 2.0.0.
 * [SDL_RenderFillRects](SDL_RenderFillRects)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

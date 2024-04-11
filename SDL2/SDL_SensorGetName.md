@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_SensorGetName
 
-Get the implementation dependent name of a sensor 
+Get the implementation dependent name of a sensor
 
 ## Header File
 
@@ -29,5 +29,5 @@ Returns the sensor name, or NULL if `sensor` is NULL.
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

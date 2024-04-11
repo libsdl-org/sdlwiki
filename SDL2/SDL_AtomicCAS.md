@@ -36,12 +36,12 @@ it!***
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AtomicCASPtr](SDL_AtomicCASPtr)
 * [SDL_AtomicGet](SDL_AtomicGet)
 * [SDL_AtomicSet](SDL_AtomicSet)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

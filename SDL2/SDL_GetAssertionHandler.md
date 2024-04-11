@@ -43,10 +43,10 @@ it is safe to pass a NULL pointer to this function to ignore it.
 
 This function is available since SDL 2.0.2.
 
-## Related Functions
+## See Also
 
 * [SDL_SetAssertionHandler](SDL_SetAssertionHandler)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

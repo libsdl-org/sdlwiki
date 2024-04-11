@@ -1,59 +1,41 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HitTestResult =
-An enumeration of possible return values from the [[SDL_SetWindowHitTest|SDL_HitTest]]() callback.
 
+Possible return values from the [[SDL_HitTest]] callback.
 
+== Header File ==
 
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
+== Syntax ==
 
-{|
-|SDL_HITTEST_NORMAL
-|region is normal and has no special properties
-|-
-|SDL_HITTEST_DRAGGABLE
-|region can drag entire window
-|-
-|SDL_HITTEST_RESIZE_TOPLEFT
-|region can resize top left window
-|-
-|SDL_HITTEST_RESIZE_TOP
-|region can resize top window
-|-
-|SDL_HITTEST_RESIZE_TOPRIGHT
-|region can resize top right window
-|-
-|SDL_HITTEST_RESIZE_RIGHT
-|region can resize right window
-|-
-|SDL_HITTEST_RESIZE_BOTTOMRIGHT
-|region can resize bottom right window
-|-
-|SDL_HITTEST_RESIZE_BOTTOM
-|region can resize bottom window
-|-
-|SDL_HITTEST_RESIZE_BOTTOMLEFT
-|region can resize bottom left window
-|-
-|SDL_HITTEST_RESIZE_LEFT
-|region can resize left window
-|}
+<syntaxhighlight lang='c'>
+typedef enum SDL_HitTestResult
+{
+    SDL_HITTEST_NORMAL,  /**< Region is normal. No special properties. */
+    SDL_HITTEST_DRAGGABLE,  /**< Region can drag entire window. */
+    SDL_HITTEST_RESIZE_TOPLEFT,
+    SDL_HITTEST_RESIZE_TOP,
+    SDL_HITTEST_RESIZE_TOPRIGHT,
+    SDL_HITTEST_RESIZE_RIGHT,
+    SDL_HITTEST_RESIZE_BOTTOMRIGHT,
+    SDL_HITTEST_RESIZE_BOTTOM,
+    SDL_HITTEST_RESIZE_BOTTOMLEFT,
+    SDL_HITTEST_RESIZE_LEFT
+} SDL_HitTestResult;</syntaxhighlight>
 
+== See Also ==
 
-
-== Version ==
-This enumeration is available since SDL 2.0.4.
-
-
-== Related Functions ==
-:[[SDL_SetWindowHitTest]]
+:[[SDL_HitTest]]
 
 ----
-[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
+
+

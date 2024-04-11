@@ -38,12 +38,12 @@ _also_ create a software renderer, but they are intended to be used with an
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 * [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

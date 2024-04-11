@@ -36,11 +36,11 @@ This function is equivalent to the SDL 1.2 API [SDL_Flip](SDL_Flip)().
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowSurface](SDL_GetWindowSurface)
 * [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

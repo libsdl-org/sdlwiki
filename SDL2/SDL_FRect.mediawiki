@@ -1,8 +1,49 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_FRect =
-A structure that contains the definition of a rectangle, with the origin at the upper left.
+
+A rectangle, with the origin at the upper left (floating point).
+
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_FRect
+{
+    float x;
+    float y;
+    float w;
+    float h;
+} SDL_FRect;</syntaxhighlight>
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+SDL_FRect rect;
+
+rect.x = 0.0;
+rect.y = 0.0;
+rect.w = 32.0;
+rect.h = 32.0;
+</syntaxhighlight>
+
+== See Also ==
+
+:[[SDL_FRectEmpty]]
+:[[SDL_FRectEquals]]
+:[[SDL_FRectEqualsEpsilon]]
+:[[SDL_HasIntersectionF]]
+:[[SDL_IntersectFRect]]
+:[[SDL_IntersectFRectAndLine]]
+:[[SDL_UnionFRect]]
+:[[SDL_EncloseFPoints]]
+:[[SDL_PointInFRect]]
 
 
 == Data Fields ==
+
 {|
 |float
 |'''x'''
@@ -21,32 +62,7 @@ A structure that contains the definition of a rectangle, with the origin at the 
 |the height of the rectangle
 |}
 
-== Version ==
-
-This function is available since SDL 2.0.10.
-
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-SDL_FRect rect;
-
-rect.x = 0.0;
-rect.y = 0.0;
-rect.w = 32.0;
-rect.h = 32.0;
-</syntaxhighlight>
-
-== Remarks ==
-An [[SDL_FRect]] defines a rectangular area of the screen.
-
-== Related Functions ==
-:[[SDL_EncloseFPoints]]
-:[[SDL_FRectEmpty]]
-:[[SDL_FRectEquals]]
-:[[SDL_HasIntersectionF]]
-:[[SDL_IntersectFRect]]
-:[[SDL_IntersectFRectAndLine]]
-:[[SDL_PointInFRect]]
-:[[SDL_UnionFRect]]
-
 ----
-[[CategoryStruct]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRect]]
+
+

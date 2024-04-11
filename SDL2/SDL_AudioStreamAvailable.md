@@ -24,7 +24,7 @@ even be zero. Add more data or flush the stream if you need the data now.
 
 This function is available since SDL 2.0.7.
 
-## Related Functions
+## See Also
 
 * [SDL_NewAudioStream](SDL_NewAudioStream)
 * [SDL_AudioStreamPut](SDL_AudioStreamPut)
@@ -34,5 +34,5 @@ This function is available since SDL 2.0.7.
 * [SDL_FreeAudioStream](SDL_FreeAudioStream)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

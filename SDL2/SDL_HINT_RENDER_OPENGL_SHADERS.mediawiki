@@ -1,18 +1,29 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_HINT_RENDER_OPENGL_SHADERS =
-A hint that specifies whether the OpenGL render driver uses shaders.
 
+A variable controlling whether the OpenGL render driver uses shaders if they are available.
 
-== Values ==
-{|
-|0
-|disable shaders
-|-
-|1
-|enable shaders, if they are available
-|}
+== Header File ==
+
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+#define SDL_HINT_RENDER_OPENGL_SHADERS      "SDL_RENDER_OPENGL_SHADERS"</syntaxhighlight>
+
+== Remarks ==
+
+This variable can be set to the following values: "0" - Disable shaders "1"
+* Enable shaders
+
+By default shaders are used if OpenGL supports them.
 
 == Default ==
+
 By default shaders are used if OpenGL supports them.
+
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]]
+
+

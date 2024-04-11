@@ -30,12 +30,12 @@ hint does not exist.
 
 This function is available since SDL 2.0.5.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

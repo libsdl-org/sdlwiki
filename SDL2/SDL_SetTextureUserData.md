@@ -30,10 +30,10 @@ Returns 0 on success, or -1 if the texture is not valid.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureUserData](SDL_GetTextureUserData)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

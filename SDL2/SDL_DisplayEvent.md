@@ -1,17 +1,30 @@
-# SDL_DisplayEvent 
-A structure that contains display state change event data
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+# SDL_DisplayEvent
 
-## Data Fields 
+Display state change event data (event.display.*)
 
-|        |           |                             |
-|--------|-----------|-----------------------------|
-| Uint32 | **type**      | SDL_DISPLAYEVENT            |
-| Uint32 | **timestamp** | Timestamp in milliseconds   |
-| Uint32 | **display**   | The associated display index|
-| Uint8  | **event**     | [SDL_DisplayEventID](https://wiki.libsdl.org/SDL_DisplayEventID) |
-| Sint32 | **data1** | Event associated data|
+## Header File
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+## Syntax
+
+```c
+typedef struct SDL_DisplayEvent
+{
+    Uint32 type;        /**< ::SDL_DISPLAYEVENT */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    Uint32 display;     /**< The associated display index */
+    Uint8 event;        /**< ::SDL_DisplayEventID */
+    Uint8 padding1;
+    Uint8 padding2;
+    Uint8 padding3;
+    Sint32 data1;       /**< event dependent data */
+} SDL_DisplayEvent;
+```
 
 ## Code Examples
+
 ```c++
 SDL_Event ev;
     
@@ -32,6 +45,16 @@ while (SDL_PollEvent(&ev) != 0) {
 }
 ```
 
-## Remarks
-[SDL_DisplayEvent](https://wiki.libsdl.org/SDL_DisplayEvent) is a member of the [SDL_Event](https://wiki.libsdl.org/SDL_Event) union and is used when an event of type SDL_DISPLAYEVENT is reported.  You would access it through the event's <code>display</code> field.
+## Data Fields
+
+|        |           |                             |
+|--------|-----------|-----------------------------|
+| Uint32 | **type**      | SDL_DISPLAYEVENT            |
+| Uint32 | **timestamp** | Timestamp in milliseconds   |
+| Uint32 | **display**   | The associated display index|
+| Uint8  | **event**     | [SDL_DisplayEventID](https://wiki.libsdl.org/SDL_DisplayEventID) |
+| Sint32 | **data1** | Event associated data|
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

@@ -1,9 +1,24 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_SysWMEvent =
-A structure that contains a video driver dependent system event.
 
+A video driver dependent system event (event.syswm.*) This event is disabled by default, you can enable it with [[SDL_EventState]]()
+
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_SysWMEvent
+{
+    Uint32 type;        /**< ::SDL_SYSWMEVENT */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    SDL_SysWMmsg *msg;  /**< driver dependent data, defined in SDL_syswm.h */
+} SDL_SysWMEvent;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -18,26 +33,17 @@ A structure that contains a video driver dependent system event.
 |driver dependent data, defined in SDL_syswm.h
 |}
 
-== Remarks ==
-This event is disabled by default.  You can enable it with [[SDL_EventState]]().  You are encouraged to avoid this if you can find a less platform-specific way to accomplish your goals.
-
-If you want to use this event you should include SDL_syswm.h and have access to the appropriate system headers.
-
-[[SDL_SysWMEvent]] is a member of the [[SDL_Event]] union and is used when an event of type SDL_SYSWMEVENT is reported. You would access it through the event's <code>syswm</code> field. 
-
-If you want to obtain system-specific information about the window manager you can fill in the <code>version</code> member of an [[SDL_SysWMinfo]] structure using the [[SDL_VERSION]]() macro found in SDL_version.h, and pass it to the function [[SDL_GetWindowWMInfo]]().
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_Event]]
 :[[SDL_SysWMinfo]]
 :[[SDL_SysWMmsg]]
 
-== Related Functions ==
-:[[SDL_EventState]]
-:[[SDL_GetWindowWMInfo]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

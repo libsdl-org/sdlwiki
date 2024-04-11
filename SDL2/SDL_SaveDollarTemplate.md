@@ -30,11 +30,11 @@ for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
 * [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

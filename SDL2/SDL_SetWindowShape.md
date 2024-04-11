@@ -34,11 +34,11 @@ window.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_WindowShapeMode](SDL_WindowShapeMode)
 * [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -41,10 +41,10 @@ want the (more common) whole-controller rumble, use
 
 This function is available since SDL 2.0.14.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerHasRumbleTriggers](SDL_GameControllerHasRumbleTriggers)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

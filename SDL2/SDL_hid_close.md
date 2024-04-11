@@ -25,5 +25,5 @@ void SDL_hid_close(SDL_hid_device *dev);
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

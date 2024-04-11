@@ -34,10 +34,10 @@ If the scale mode is not supported, the closest supported mode is chosen.
 
 This function is available since SDL 2.0.12.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

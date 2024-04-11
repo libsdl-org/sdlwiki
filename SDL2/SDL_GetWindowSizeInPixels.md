@@ -35,11 +35,11 @@ high-DPI support (Apple calls this "Retina"), and not disabled by the
 
 This function is available since SDL 2.26.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_GetWindowSize](SDL_GetWindowSize)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,21 +1,25 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_DisplayEventID =
+
 Event subtype for display events
 
+== Header File ==
 
-== Values ==
-{|
-|SDL_DISPLAYEVENT_NONE
-|Never used
-|-
-|SDL_DISPLAYEVENT_ORIENTATION
-|Display orientation has changed
-|-
-|SDL_DISPLAYEVENT_CONNECTED
-|Display has been added to the system
-|-
-|SDL_DISPLAYEVENT_DISCONNECTED
-|Display has been removed from the system
-|}
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_DisplayEventID
+{
+    SDL_DISPLAYEVENT_NONE,          /**< Never used */
+    SDL_DISPLAYEVENT_ORIENTATION,   /**< Display orientation has changed to data1 */
+    SDL_DISPLAYEVENT_CONNECTED,     /**< Display has been added to the system */
+    SDL_DISPLAYEVENT_DISCONNECTED,  /**< Display has been removed from the system */
+    SDL_DISPLAYEVENT_MOVED          /**< Display has changed position */
+} SDL_DisplayEventID;</syntaxhighlight>
 
 ----
-[[CategoryEnum]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryEvents]]
+
+

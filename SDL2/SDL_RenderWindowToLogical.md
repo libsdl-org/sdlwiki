@@ -35,7 +35,7 @@ and logical renderer size set
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGetScale](SDL_RenderGetScale)
 * [SDL_RenderSetScale](SDL_RenderSetScale)
@@ -43,5 +43,5 @@ This function is available since SDL 2.0.18.
 * [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -47,11 +47,11 @@ range.
 
 This function is available since SDL 2.0.5.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

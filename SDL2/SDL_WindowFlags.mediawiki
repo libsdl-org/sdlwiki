@@ -1,74 +1,48 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_WindowFlags =
-An enumeration of window states.
 
+The flags on a window
 
-== Values ==
-{|
-|SDL_WINDOW_FULLSCREEN
-|fullscreen window
-|-
-|SDL_WINDOW_FULLSCREEN_DESKTOP
-|fullscreen window at the current desktop resolution
-|-
-|SDL_WINDOW_OPENGL
-|window usable with OpenGL context
-|-
-|SDL_WINDOW_VULKAN
-|window usable with a Vulkan instance
-|-
-|SDL_WINDOW_SHOWN
-|window is visible
-|-
-|SDL_WINDOW_HIDDEN
-|window is not visible
-|-
-|SDL_WINDOW_BORDERLESS
-|no window decoration
-|-
-|SDL_WINDOW_RESIZABLE
-|window can be resized
-|-
-|SDL_WINDOW_MINIMIZED
-|window is minimized
-|-
-|SDL_WINDOW_MAXIMIZED
-|window is maximized
-|-
-|SDL_WINDOW_INPUT_GRABBED
-|window has grabbed input focus
-|-
-|SDL_WINDOW_INPUT_FOCUS
-|window has input focus
-|-
-|SDL_WINDOW_MOUSE_FOCUS
-|window has mouse focus
-|-
-|SDL_WINDOW_FOREIGN
-|window not created by SDL
-|-
-|SDL_WINDOW_ALLOW_HIGHDPI
-|window should be created in high-DPI mode if supported (>= SDL 2.0.1)
-|-
-|SDL_WINDOW_MOUSE_CAPTURE
-|window has mouse captured (unrelated to INPUT_GRABBED, >= SDL 2.0.4)
-|-
-|SDL_WINDOW_ALWAYS_ON_TOP
-| window should always be above others (>= SDL 2.0.5)
-|-
-|SDL_WINDOW_SKIP_TASKBAR
-|window should not be added to the taskbar (X11 only, >= SDL 2.0.5)
-|-
-|SDL_WINDOW_UTILITY
-|window should be treated as a utility window (X11 only, >= SDL 2.0.5)
-|-
-|SDL_WINDOW_TOOLTIP
-|window should be treated as a tooltip (X11 only, >= SDL 2.0.5)
-|-
-|SDL_WINDOW_POPUP_MENU
-|window should be treated as a popup menu (X11 only, >= SDL 2.0.5)
-|}
+== Header File ==
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_WindowFlags
+{
+    SDL_WINDOW_FULLSCREEN = 0x00000001,         /**< fullscreen window */
+    SDL_WINDOW_OPENGL = 0x00000002,             /**< window usable with OpenGL context */
+    SDL_WINDOW_SHOWN = 0x00000004,              /**< window is visible */
+    SDL_WINDOW_HIDDEN = 0x00000008,             /**< window is not visible */
+    SDL_WINDOW_BORDERLESS = 0x00000010,         /**< no window decoration */
+    SDL_WINDOW_RESIZABLE = 0x00000020,          /**< window can be resized */
+    SDL_WINDOW_MINIMIZED = 0x00000040,          /**< window is minimized */
+    SDL_WINDOW_MAXIMIZED = 0x00000080,          /**< window is maximized */
+    SDL_WINDOW_MOUSE_GRABBED = 0x00000100,      /**< window has grabbed mouse input */
+    SDL_WINDOW_INPUT_FOCUS = 0x00000200,        /**< window has input focus */
+    SDL_WINDOW_MOUSE_FOCUS = 0x00000400,        /**< window has mouse focus */
+    SDL_WINDOW_FULLSCREEN_DESKTOP = ( SDL_WINDOW_FULLSCREEN | 0x00001000 ),
+    SDL_WINDOW_FOREIGN = 0x00000800,            /**< window not created by SDL */
+    SDL_WINDOW_ALLOW_HIGHDPI = 0x00002000,      /**< window should be created in high-DPI mode if supported.
+                                                     On macOS NSHighResolutionCapable must be set true in the
+                                                     application's Info.plist for this to have any effect. */
+    SDL_WINDOW_MOUSE_CAPTURE    = 0x00004000,   /**< window has mouse captured (unrelated to MOUSE_GRABBED) */
+    SDL_WINDOW_ALWAYS_ON_TOP    = 0x00008000,   /**< window should always be above others */
+    SDL_WINDOW_SKIP_TASKBAR     = 0x00010000,   /**< window should not be added to the taskbar */
+    SDL_WINDOW_UTILITY          = 0x00020000,   /**< window should be treated as a utility window */
+    SDL_WINDOW_TOOLTIP          = 0x00040000,   /**< window should be treated as a tooltip */
+    SDL_WINDOW_POPUP_MENU       = 0x00080000,   /**< window should be treated as a popup menu */
+    SDL_WINDOW_KEYBOARD_GRABBED = 0x00100000,   /**< window has grabbed keyboard input */
+    SDL_WINDOW_VULKAN           = 0x10000000,   /**< window usable for Vulkan surface */
+    SDL_WINDOW_METAL            = 0x20000000,   /**< window usable for Metal view */
+
+    SDL_WINDOW_INPUT_GRABBED = SDL_WINDOW_MOUSE_GRABBED /**< equivalent to SDL_WINDOW_MOUSE_GRABBED for compatibility */
+} SDL_WindowFlags;</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 Uint32 flags = SDL_WINDOW_OPENGL | SDL_WINDOW_FULLSCREEN;
 SDL_Window * window = SDL_CreateWindow(
@@ -77,23 +51,11 @@ SDL_Window * window = SDL_CreateWindow(
 );
 </syntaxhighlight>
 
-== Remarks ==
-The SDL_WINDOW_OPENGL flag prepares your window for use with OpenGL, but you will still need to create an OpenGL context using [[SDL_GL_CreateContext]]() after window creation, before calling any OpenGL functions.
+== See Also ==
 
-On Apple's OS X you '''must''' set the NSHighResolutionCapable Info.plist property to YES, otherwise you will not receive a High DPI OpenGL canvas.
-
-== Version ==
-This enumeration is available since SDL 2.0.0.
-
-== Related Functions ==
-:[[SDL_CreateWindow]]
 :[[SDL_GetWindowFlags]]
-:[[SDL_HideWindow]]
-:[[SDL_MaximizeWindow]]
-:[[SDL_MinimizeWindow]]
-:[[SDL_SetWindowFullscreen]]
-:[[SDL_SetWindowGrab]]
-:[[SDL_ShowWindow]]
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryVideo]]
+
+

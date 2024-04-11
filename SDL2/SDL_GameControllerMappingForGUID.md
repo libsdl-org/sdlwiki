@@ -33,11 +33,11 @@ The returned string must be freed with [SDL_free](SDL_free)().
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
 * [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

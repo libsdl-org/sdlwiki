@@ -39,10 +39,10 @@ This function also returns -1 if an invalid window was provided.
 
 This function is available since SDL 2.0.5.
 
-## Related Functions
+## See Also
 
 * [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

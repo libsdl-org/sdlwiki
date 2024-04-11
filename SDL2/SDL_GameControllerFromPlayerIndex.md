@@ -34,11 +34,11 @@ instance id!
 
 This function is available since SDL 2.0.12.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerGetPlayerIndex](SDL_GameControllerGetPlayerIndex)
 * [SDL_GameControllerSetPlayerIndex](SDL_GameControllerSetPlayerIndex)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -43,5 +43,5 @@ will call it when initializing the video subsystem.
 This function is available since SDL 2.0.2.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

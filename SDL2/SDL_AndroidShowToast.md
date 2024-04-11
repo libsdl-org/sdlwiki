@@ -46,5 +46,5 @@ https://developer.android.com/reference/android/view/Gravity
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

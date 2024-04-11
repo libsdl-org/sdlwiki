@@ -42,12 +42,12 @@ If the surface has no alpha component, the alpha will be returned as 0xff
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRGB](SDL_GetRGB)
 * [SDL_MapRGB](SDL_MapRGB)
 * [SDL_MapRGBA](SDL_MapRGBA)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

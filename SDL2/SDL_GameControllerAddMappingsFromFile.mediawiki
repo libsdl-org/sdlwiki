@@ -1,3 +1,5 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
@@ -5,50 +7,31 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
 = SDL_GameControllerAddMappingsFromFile =
-Use this function to load a set of [[CategoryGameController|Game Controller]] mappings from a file, filtered by the current [[SDL_GetPlatform]]().
-A community sourced database of controllers is available [https://raw.github.com/gabomdq/SDL_GameControllerDB/master/gamecontrollerdb.txt here|target="_blank"] (on GitHub).
 
+Load a set of mappings from a file, filtered by the current [[SDL_GetPlatform]]()
 
+== Header File ==
 
+Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_GameControllerAddMappingsFromFile(const char* filename)
-</syntaxhighlight>
 
+<syntaxhighlight lang='c'>
+#define SDL_GameControllerAddMappingsFromFile(file)   SDL_GameControllerAddMappingsFromRW(SDL_RWFromFile(file, "rb"), 1)</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''filename'''
-|the name of the database you want to load
-|}
+== Remarks ==
 
-
-== Return Value ==
-<<Include(SDL_GameControllerAddMappingsFromRW, , , from="== Return Value ==", to="== Code Examples ==")>>
-
+Convenience macro.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 SDL_GameControllerAddMappingsFromFile("gamecontrollerdb.txt");
 </syntaxhighlight>
 
-
-== Remarks ==
-<<Include(SDL_GameControllerAddMappingsFromRW, , , from="== Remarks ==", to="== Version ==")>>
-
-
-== Version ==
-This function is available since SDL 2.0.2.
-
-== Related Functions ==
-:[[SDL_GameControllerAddMapping]]
-:[[SDL_GameControllerAddMappingsFromRW]]
-:[[SDL_GameControllerMappingForGUID]]
-
 ----
-[[CategoryAPI]], [[CategoryGameController]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryGameController]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

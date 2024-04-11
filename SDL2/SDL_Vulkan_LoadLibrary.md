@@ -61,11 +61,11 @@ library version.
 
 This function is available since SDL 2.0.6.
 
-## Related Functions
+## See Also
 
 * [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr)
 * [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

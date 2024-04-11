@@ -64,10 +64,10 @@ compatibility, this is currently a separate function.
 
 This function is available since SDL 2.0.9.
 
-## Related Functions
+## See Also
 
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

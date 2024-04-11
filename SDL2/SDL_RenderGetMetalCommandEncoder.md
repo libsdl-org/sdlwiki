@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_RenderGetMetalCommandEncoder
 
-Get the Metal command encoder for the current frame 
+Get the Metal command encoder for the current frame
 
 ## Header File
 
@@ -39,10 +39,10 @@ render targets, just the window's backbuffer. Check your return values!
 
 This function is available since SDL 2.0.8.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGetMetalLayer](SDL_RenderGetMetalLayer)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

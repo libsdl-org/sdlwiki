@@ -1,35 +1,36 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION =
-A hint that specifies whether the Apple TV remote's joystick axes will automatically match the rotation of the remote.
 
+A variable controlling whether the Apple TV remote's joystick axes will automatically match the rotation of the remote.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|remote orientation does not affect joystick axes
-|-
-|1
-|joystick axes are based on the orientation of the remote
-|}
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+#define SDL_HINT_APPLE_TV_REMOTE_ALLOW_ROTATION "SDL_APPLE_TV_REMOTE_ALLOW_ROTATION"</syntaxhighlight>
+
+== Remarks ==
+
+This variable can be set to the following values: "0" - Remote orientation
+does not affect joystick axes (the default). "1" - Joystick axes are based
+on the orientation of the remote.
 
 == Default ==
+
 By default remote orientation does not affect joystick axes.
 
-
-
-== Version ==
-This hint is available since SDL 2.0.5.
-
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

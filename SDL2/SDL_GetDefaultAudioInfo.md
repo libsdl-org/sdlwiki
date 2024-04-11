@@ -49,12 +49,12 @@ will be filled with either a dynamically-allocated UTF-8 string or NULL.
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
 * [SDL_GetAudioDeviceSpec](SDL_GetAudioDeviceSpec)
 * [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

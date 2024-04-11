@@ -1,8 +1,29 @@
-== SDL_FPoint ==
-Point structure like [[SDL_Point]], but uses float instead of int for coordinates
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+= SDL_FPoint =
+
+The structure that defines a point (floating point)
+
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_FPoint
+{
+    float x;
+    float y;
+} SDL_FPoint;</syntaxhighlight>
+
+== See Also ==
+
+:[[SDL_EncloseFPoints]]
+:[[SDL_PointInFRect]]
 
 
 == Data Fields ==
+
 {|
 |float
 |'''x'''
@@ -13,14 +34,13 @@ Point structure like [[SDL_Point]], but uses float instead of int for coordinate
 |the y coordinate of the point
 |}
 
-== Related Functions ==
-:[[SDL_RenderGeometry]]
-:[[SDL_PointInFRect]]
-
 == Related Structures ==
+
 :[[SDL_Vertex]]
 :[[SDL_FRect]]
 :[[SDL_Point]]
 
 ----
-[[CategoryStruct]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRect]]
+
+

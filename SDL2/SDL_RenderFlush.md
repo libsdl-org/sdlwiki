@@ -52,5 +52,5 @@ instead flushing them to the OS immediately.
 This function is available since SDL 2.0.10.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

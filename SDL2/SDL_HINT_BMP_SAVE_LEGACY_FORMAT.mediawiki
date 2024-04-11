@@ -1,47 +1,45 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_BMP_SAVE_LEGACY_FORMAT =
-A hint that specifies whether SDL should not use version 4 of the bitmap header when saving BMPs.
 
+Prevent SDL from using version 4 of the bitmap header when saving BMPs.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|version 4 of the bitmap header will be used when saving BMPs
-|-
-|1
-|version 4 of the bitmap header will not be used when saving BMPs
-|}
+== Syntax ==
 
-
-== Default ==
-By default SDL will use version 4 of the bitmap header when saving BMPs.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_BMP_SAVE_LEGACY_FORMAT "SDL_BMP_SAVE_LEGACY_FORMAT"</syntaxhighlight>
 
 == Remarks ==
-The bitmap header version 4 is required for proper alpha channel support and SDL will use it when required.  Should this not be desired, this hint can force the use of the 40 byte header version which is supported everywhere.
 
-If the hint is not set then surfaces with a colorkey or an alpha channel are saved to a 32-bit BMP file with an alpha mask.  SDL will use the bitmap header version 4 and set the alpha mask accordingly.  This is the default behavior since SDL 2.0.5.
+The bitmap header version 4 is required for proper alpha channel support
+and SDL will use it when required. Should this not be desired, this hint
+can force the use of the 40 byte header version which is supported
+everywhere.
 
-If the hint is set then surfaces with a colorkey or an alpha channel are saved to a 32-bit BMP file without an alpha mask.  The alpha channel data will be in the file, but applications are going to ignore it.  This was the default behavior before SDL 2.0.5.
+The variable can be set to the following values: "0" - Surfaces with a
+colorkey or an alpha channel are saved to a 32-bit BMP file with an alpha
+mask. SDL will use the bitmap header version 4 and set the alpha mask
+accordingly. "1" - Surfaces with a colorkey or an alpha channel are saved
+to a 32-bit BMP file without an alpha mask. The alpha channel data will be
+in the file, but applications are going to ignore it.
 
+The default value is "0".
 
-== Version ==
-This hint is available since SDL 2.0.5.
+== Default ==
 
-
-== Related Functions ==
-:[[SDL_SaveBMP]]
-:[[SDL_SaveBMP_RW]]
+By default SDL will use version 4 of the bitmap header when saving BMPs.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+
+

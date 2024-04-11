@@ -29,11 +29,11 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.28.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowSurface](SDL_GetWindowSurface)
 * [SDL_HasWindowSurface](SDL_HasWindowSurface)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

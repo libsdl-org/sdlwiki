@@ -1,40 +1,39 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_HINT_RENDER_DIRECT3D11_DEBUG =
-A hint that specifies a variable controlling whether to enable Direct3D 11+'s Debug Layer.
 
+A variable controlling whether to enable Direct3D 11+'s Debug Layer.
 
+== Header File ==
 
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
 
-== Values ==
-{|
-|0
-|disable Debug Layer use
-|-
-|1
-|enable Debug Layer use
-|}
+== Syntax ==
 
-
-== Default ==
-By default SDL does not use Direct3D Debug Layer.
-
-
+<syntaxhighlight lang='c'>
+#define SDL_HINT_RENDER_DIRECT3D11_DEBUG    "SDL_RENDER_DIRECT3D11_DEBUG"</syntaxhighlight>
 
 == Remarks ==
+
 This variable does not have any effect on the Direct3D 9 based renderer.
 
+This variable can be set to the following values: "0" - Disable Debug Layer
+use "1" - Enable Debug Layer use
 
-== Version ==
-This hint is available since SDL 2.0.3.
+By default, SDL does not use Direct3D Debug Layer.
 
+== Default ==
+
+By default SDL does not use Direct3D Debug Layer.
 
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

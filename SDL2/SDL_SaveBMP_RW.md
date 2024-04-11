@@ -40,11 +40,11 @@ not supported.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
 * [SDL_SaveBMP](SDL_SaveBMP)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

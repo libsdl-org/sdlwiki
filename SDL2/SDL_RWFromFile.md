@@ -75,7 +75,7 @@ holding internally.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RWclose](SDL_RWclose)
 * [SDL_RWFromConstMem](SDL_RWFromConstMem)
@@ -87,5 +87,5 @@ This function is available since SDL 2.0.0.
 * [SDL_RWwrite](SDL_RWwrite)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

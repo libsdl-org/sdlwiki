@@ -1,24 +1,27 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_TextureModulate =
-An enumeration of the texture channel modulation used in [[SDL_RenderCopy]]().
 
+The texture channel modulation used in [[SDL_RenderCopy]]().
 
-== Values ==
-{|
-|SDL_TEXTUREMODULATE_NONE
-|no modulation
-|-
-|SDL_TEXTUREMODULATE_COLOR
-|srcC = srcC * color
-|-
-|SDL_TEXTUREMODULATE_ALPHA
-|srcA = srcA * alpha
-|}
+== Header File ==
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_TextureModulate
+{
+    SDL_TEXTUREMODULATE_NONE = 0x00000000,     /**< No modulation */
+    SDL_TEXTUREMODULATE_COLOR = 0x00000001,    /**< srcC = srcC * color */
+    SDL_TEXTUREMODULATE_ALPHA = 0x00000002     /**< srcA = srcA * alpha */
+} SDL_TextureModulate;</syntaxhighlight>
+
 == Related Structures ==
+
 :[[SDL_RendererInfo]]
 
-== Related Functions ==
-:[[SDL_RenderCopy]]
-
 ----
-[[CategoryEnum]], [[CategoryRender]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryRender]]
+
+

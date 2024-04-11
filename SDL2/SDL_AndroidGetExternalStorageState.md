@@ -31,10 +31,10 @@ If external storage is currently unavailable, this will return 0.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

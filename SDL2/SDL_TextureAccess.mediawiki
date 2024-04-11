@@ -1,23 +1,23 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_TextureAccess =
-An enumeration of texture access patterns.
 
+The access pattern allowed for a texture.
 
-== Values ==
-{|
-|SDL_TEXTUREACCESS_STATIC
-|changes rarely, not lockable
-|-
-|SDL_TEXTUREACCESS_STREAMING
-|changes frequently, lockable
-|-
-|SDL_TEXTUREACCESS_TARGET
-|can be used as a render target
-|}
-== Related Functions ==
-:[[SDL_CreateTexture]]
-:[[SDL_LockTexture]]
-:[[SDL_QueryTexture]]
+== Header File ==
+
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_TextureAccess
+{
+    SDL_TEXTUREACCESS_STATIC,    /**< Changes rarely, not lockable */
+    SDL_TEXTUREACCESS_STREAMING, /**< Changes frequently, lockable */
+    SDL_TEXTUREACCESS_TARGET     /**< Texture can be used as a render target */
+} SDL_TextureAccess;</syntaxhighlight>
 
 ----
-[[CategoryEnum]], [[CategoryRender]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryRender]]
+
+

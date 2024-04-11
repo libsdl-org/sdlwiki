@@ -23,10 +23,10 @@ Returns the currently active OpenGL context or NULL on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,8 +1,67 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_Event =
-A union that contains structures for the different event types.
 
+General event structure
+
+== Header File ==
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef union SDL_Event
+{
+    Uint32 type;                            /**< Event type, shared with all events */
+    SDL_CommonEvent common;                 /**< Common event data */
+    SDL_DisplayEvent display;               /**< Display event data */
+    SDL_WindowEvent window;                 /**< Window event data */
+    SDL_KeyboardEvent key;                  /**< Keyboard event data */
+    SDL_TextEditingEvent edit;              /**< Text editing event data */
+    SDL_TextEditingExtEvent editExt;        /**< Extended text editing event data */
+    SDL_TextInputEvent text;                /**< Text input event data */
+    SDL_MouseMotionEvent motion;            /**< Mouse motion event data */
+    SDL_MouseButtonEvent button;            /**< Mouse button event data */
+    SDL_MouseWheelEvent wheel;              /**< Mouse wheel event data */
+    SDL_JoyAxisEvent jaxis;                 /**< Joystick axis event data */
+    SDL_JoyBallEvent jball;                 /**< Joystick ball event data */
+    SDL_JoyHatEvent jhat;                   /**< Joystick hat event data */
+    SDL_JoyButtonEvent jbutton;             /**< Joystick button event data */
+    SDL_JoyDeviceEvent jdevice;             /**< Joystick device change event data */
+    SDL_JoyBatteryEvent jbattery;           /**< Joystick battery event data */
+    SDL_ControllerAxisEvent caxis;          /**< Game Controller axis event data */
+    SDL_ControllerButtonEvent cbutton;      /**< Game Controller button event data */
+    SDL_ControllerDeviceEvent cdevice;      /**< Game Controller device event data */
+    SDL_ControllerTouchpadEvent ctouchpad;  /**< Game Controller touchpad event data */
+    SDL_ControllerSensorEvent csensor;      /**< Game Controller sensor event data */
+    SDL_AudioDeviceEvent adevice;           /**< Audio device event data */
+    SDL_SensorEvent sensor;                 /**< Sensor event data */
+    SDL_QuitEvent quit;                     /**< Quit request event data */
+    SDL_UserEvent user;                     /**< Custom event data */
+    SDL_SysWMEvent syswm;                   /**< System dependent window event data */
+    SDL_TouchFingerEvent tfinger;           /**< Touch finger event data */
+    SDL_MultiGestureEvent mgesture;         /**< Gesture event data */
+    SDL_DollarGestureEvent dgesture;        /**< Gesture event data */
+    SDL_DropEvent drop;                     /**< Drag and drop event data */
+
+    /* This is necessary for ABI compatibility between Visual C++ and GCC.
+       Visual C++ will respect the push pack pragma and use 52 bytes (size of
+       SDL_TextEditingEvent, the largest structure for 32-bit and 64-bit
+       architectures) for this union, and GCC will use the alignment of the
+       largest datatype within the union, which is 8 bytes on 64-bit
+       architectures.
+
+       So... we'll add padding to force the size to be 56 bytes for both.
+
+       On architectures where pointers are 16 bytes, this needs rounding up to
+       the next multiple of 16, 64, and on architectures where pointers are
+       even larger the size of SDL_UserEvent will dominate as being 3 pointers.
+    */
+    Uint8 padding[sizeof(void *) <= 8 ? 56 : sizeof(void *) == 16 ? 64 : 3 * sizeof(void *)];
+} SDL_Event;</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Uint32
 |'''type'''
@@ -109,170 +168,12 @@ A union that contains structures for the different event types.
 |drag and drop event data
 |}
 
-== Remarks ==
-The [[SDL_Event]] structure is the core of all event handling in SDL. [[SDL_Event]] is a union of all event structures used in SDL.  Using it is a simple matter of knowing which event type corresponds to which union member. The [[#table|table]] below lists these relationships.
-
-The [[SDL_Event]] structure has two uses:
-* [[#reading|Reading events from the event queue]]
-* [[#push|Placing events on the event queue]]
-
-<span id="reading"></span>
-~+'''Reading events from the event queue'''+~
-
-Reading events from the event queue is done with either [[SDL_PollEvent]]() or [[SDL_PeepEvents]](). We'll use [[SDL_PollEvent]]() and step through an example.
-
-First off, we create an empty [[SDL_Event]] structure.
-<syntaxhighlight lang='c++'>
-SDL_Event test_event;
-</syntaxhighlight>
-[[SDL_PollEvent]]() removes the next event from the event queue.  If there are no events on the queue it returns 0, otherwise it returns 1. We use a ```while``` loop to process each event in turn.
-<syntaxhighlight lang='c++'>
-while (SDL_PollEvent(&test_event)) {
-</syntaxhighlight>
-The [[SDL_PollEvent]]() function takes a pointer to an [[SDL_Event]] structure that is to be filled with event information. We know that if [[SDL_PollEvent]]() removes an event from the queue then the event information will be placed in our test_event structure, but we also know that the type of event will be placed in the '''type''' member of test_event. So to handle each event type separately we use a ```switch``` statement.
-<syntaxhighlight lang='c++'>
-  switch (test_event.type) {
-</syntaxhighlight>
-We need to know what kind of events we're looking for and the event types of those events. So let's assume we want to detect where the user is moving the mouse pointer within our application. We look through our event types and notice that SDL_MOUSEMOTION is, more than likely, the event we're looking for. Looking at the [[#table|table]] below tells us that SDL_MOUSEMOTION events are handled within the [[SDL_MouseMotionEvent]] structure which is the '''motion''' member of [[SDL_Event]]. We can check for the SDL_MOUSEMOTION event '''type''' within our ```switch``` statement like so:
-<syntaxhighlight lang='c++'>
-    case SDL_MOUSEMOTION:
-</syntaxhighlight>
-All we need to do now is read the information out of the '''motion''' member of test_event.
-<syntaxhighlight lang='c++'>
-      printf("We got a motion event.\n");
-      printf("Current mouse position is: (%d, %d)\n", test_event.motion.x, test_event.motion.y);
-      break;
-    default:
-      printf("Unhandled Event!\n");
-      break;
-  }
-}
-printf("Event queue empty.\n");
-</syntaxhighlight>
-
-
-<span id="push"></span>
-~+'''Placing events on the event queue'''+~
-
-It is also possible to push events onto the event queue and so use it as a two-way communication path. Both [[SDL_PushEvent]]() and [[SDL_PeepEvents]]() allow you to place events onto the event queue. This is usually used to place a SDL_USEREVENT on the event queue, however you could use it to post fake input events if you wished. Creating your own events is a simple matter of choosing the event type you want, setting the '''type''' member and filling the appropriate member structure with information.
-<syntaxhighlight lang='c++'>
-SDL_Event user_event;
-
-user_event.type = SDL_USEREVENT;
-user_event.user.code = 2;
-user_event.user.data1 = NULL;
-user_event.user.data2 = NULL;
-SDL_PushEvent(&user_event);
-</syntaxhighlight>
-
-<span id="table"></span>
-~+'''Relationships between event types and union members'''+~
-{|
-|''Event Type''
-|''Event Structure''
-|''SDL_Event Field''
-|-
-|SDL_AUDIODEVICEADDED<br/>SDL_AUDIODEVICEREMOVED
-|[[SDL_AudioDeviceEvent]]
-|'''adevice'''
-|-
-|SDL_CONTROLLERAXISMOTION
-|[[SDL_ControllerAxisEvent]]
-|'''caxis'''
-|-
-|SDL_CONTROLLERBUTTONDOWN<br/>SDL_CONTROLLERBUTTONUP
-|[[SDL_ControllerButtonEvent]]
-|'''cbutton'''
-|-
-|SDL_CONTROLLERDEVICEADDED<br/>SDL_CONTROLLERDEVICEREMOVED<br/>SDL_CONTROLLERDEVICEREMAPPED
-|[[SDL_ControllerDeviceEvent]]
-|'''cdevice'''
-|-
-|SDL_DOLLARGESTURE<br/>SDL_DOLLARRECORD
-|[[SDL_DollarGestureEvent]]
-|'''dgesture'''
-|-
-|SDL_DROPFILE<br/>SDL_DROPTEXT<br/>SDL_DROPBEGIN<br/>SDL_DROPCOMPLETE
-|[[SDL_DropEvent]]
-|'''drop'''
-|-
-|SDL_FINGERMOTION<br/>SDL_FINGERDOWN<br/>SDL_FINGERUP
-|[[SDL_TouchFingerEvent]]
-|'''tfinger'''
-|-
-|SDL_KEYDOWN<br/>SDL_KEYUP
-|[[SDL_KeyboardEvent]]
-|'''key'''
-|-
-|SDL_JOYAXISMOTION
-|[[SDL_JoyAxisEvent]]
-|'''jaxis'''
-|-
-|SDL_JOYBALLMOTION
-|[[SDL_JoyBallEvent]]
-|'''jball'''
-|-
-|SDL_JOYHATMOTION
-|[[SDL_JoyHatEvent]]
-|'''jhat'''
-|-
-|SDL_JOYBUTTONDOWN<br/>SDL_JOYBUTTONUP
-|[[SDL_JoyButtonEvent]]
-|'''jbutton'''
-|-
-|SDL_JOYDEVICEADDED<br/>SDL_JOYDEVICEREMOVED
-|[[SDL_JoyDeviceEvent]]
-|'''jdevice'''
-|-
-|SDL_MOUSEMOTION
-|[[SDL_MouseMotionEvent]]
-|'''motion'''
-|-
-|SDL_MOUSEBUTTONDOWN<br/>SDL_MOUSEBUTTONUP
-|[[SDL_MouseButtonEvent]]
-|'''button'''
-|-
-|SDL_MOUSEWHEEL
-|[[SDL_MouseWheelEvent]]
-|'''wheel'''
-|-
-|SDL_MULTIGESTURE
-|[[SDL_MultiGestureEvent]]
-|'''mgesture'''
-|-
-|SDL_QUIT
-|[[SDL_QuitEvent]]
-|'''quit'''
-|-
-|SDL_SYSWMEVENT
-|[[SDL_SysWMEvent]]
-|'''syswm'''
-|-
-|SDL_TEXTEDITING
-|[[SDL_TextEditingEvent]]
-|'''edit'''
-|-
-|SDL_TEXTINPUT
-|[[SDL_TextInputEvent]]
-|'''text'''
-|-
-|SDL_USEREVENT
-|[[SDL_UserEvent]]
-|'''user'''
-|-
-|SDL_WINDOWEVENT
-|[[SDL_WindowEvent]]
-|'''window'''
-|-
-|Other events
-|SDL_CommonEvent
-|none, use [[SDL_EventType|.type]]
-|}
-
 == Related Enumerations ==
+
 :[[SDL_EventType]]
 
 == Related Structures ==
+
 :[[SDL_AudioDeviceEvent]]
 :[[SDL_ControllerAxisEvent]]
 :[[SDL_ControllerButtonEvent]]
@@ -297,13 +198,7 @@ SDL_PushEvent(&user_event);
 :[[SDL_UserEvent]]
 :[[SDL_WindowEvent]]
 
-
-== Related Functions ==
-:[[SDL_PeepEvents]]
-:[[SDL_PollEvent]]
-:[[SDL_PushEvent]]
-:[[SDL_WaitEvent]]
-:[[SDL_WaitEventTimeout]]
-
 ----
-[[CategoryStruct]], [[CategoryEvents]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryEvents]]
+
+

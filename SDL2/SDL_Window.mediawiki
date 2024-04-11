@@ -1,2 +1,50 @@
-SDL Window is a struct and this holds all of your display graphics. This interfaces your graphics and the OS window manager.
-SDL_Windows don't need to have an SDL_Renderer; they can use other graphics API directly or software rendering.
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
+= SDL_Window =
+
+The type used to identify a window
+
+== Header File ==
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_Window SDL_Window;</syntaxhighlight>
+
+== See Also ==
+
+:[[SDL_CreateWindow]]
+:[[SDL_CreateWindowFrom]]
+:[[SDL_DestroyWindow]]
+:[[SDL_FlashWindow]]
+:[[SDL_GetWindowData]]
+:[[SDL_GetWindowFlags]]
+:[[SDL_GetWindowGrab]]
+:[[SDL_GetWindowKeyboardGrab]]
+:[[SDL_GetWindowMouseGrab]]
+:[[SDL_GetWindowPosition]]
+:[[SDL_GetWindowSize]]
+:[[SDL_GetWindowTitle]]
+:[[SDL_HideWindow]]
+:[[SDL_MaximizeWindow]]
+:[[SDL_MinimizeWindow]]
+:[[SDL_RaiseWindow]]
+:[[SDL_RestoreWindow]]
+:[[SDL_SetWindowData]]
+:[[SDL_SetWindowFullscreen]]
+:[[SDL_SetWindowGrab]]
+:[[SDL_SetWindowKeyboardGrab]]
+:[[SDL_SetWindowMouseGrab]]
+:[[SDL_SetWindowIcon]]
+:[[SDL_SetWindowPosition]]
+:[[SDL_SetWindowSize]]
+:[[SDL_SetWindowBordered]]
+:[[SDL_SetWindowResizable]]
+:[[SDL_SetWindowTitle]]
+:[[SDL_ShowWindow]]
+
+----
+[[CategoryAPI]], [[CategoryAPIStruct]]
+
+

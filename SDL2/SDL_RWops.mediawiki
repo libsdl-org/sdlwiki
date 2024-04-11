@@ -1,9 +1,128 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_RWops =
-A structure that provides an abstract interface to stream I/O. Applications can generally ignore the specifics of this structure's internals and treat them as opaque pointers. The details are important to lower-level code that might need to implement one of these, however.
 
+This is the read/write operation structure -- very basic.
+
+== Header File ==
+
+Defined in [SDL_rwops.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rwops.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_RWops
+{
+    /**
+     *  Return the size of the file in this rwops, or -1 if unknown
+     */
+    Sint64 (SDLCALL * size) (struct SDL_RWops * context);
+
+    /**
+     *  Seek to \c offset relative to \c whence, one of stdio's whence values:
+     *  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END
+     *
+     *  \return the final offset in the data stream, or -1 on error.
+     */
+    Sint64 (SDLCALL * seek) (struct SDL_RWops * context, Sint64 offset,
+                             int whence);
+
+    /**
+     *  Read up to \c maxnum objects each of size \c size from the data
+     *  stream to the area pointed at by \c ptr.
+     *
+     *  \return the number of objects read, or 0 at error or end of file.
+     */
+    size_t (SDLCALL * read) (struct SDL_RWops * context, void *ptr,
+                             size_t size, size_t maxnum);
+
+    /**
+     *  Write exactly \c num objects each of size \c size from the area
+     *  pointed at by \c ptr to data stream.
+     *
+     *  \return the number of objects written, or 0 at error or end of file.
+     */
+    size_t (SDLCALL * write) (struct SDL_RWops * context, const void *ptr,
+                              size_t size, size_t num);
+
+    /**
+     *  Close and free an allocated SDL_RWops structure.
+     *
+     *  \return 0 if successful or -1 on write error when flushing data.
+     */
+    int (SDLCALL * close) (struct SDL_RWops * context);
+
+    Uint32 type;
+    union
+    {
+#if defined(__ANDROID__)
+        struct
+        {
+            void *asset;
+        } androidio;
+#elif defined(__WIN32__) || defined(__GDK__)
+        struct
+        {
+            SDL_bool append;
+            void *h;
+            struct
+            {
+                void *data;
+                size_t size;
+                size_t left;
+            } buffer;
+        } windowsio;
+#endif
+
+#ifdef HAVE_STDIO_H
+        struct
+        {
+            SDL_bool autoclose;
+            FILE *fp;
+        } stdio;
+#endif
+        struct
+        {
+            Uint8 *base;
+            Uint8 *here;
+            Uint8 *stop;
+        } mem;
+        struct
+        {
+            void *data1;
+            void *data2;
+        } unknown;
+    } hidden;
+
+} SDL_RWops;</syntaxhighlight>
+
+== Code Examples ==
+
+<syntaxhighlight lang='c++'>
+SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
+if (io != NULL) {
+    char name[256];
+    if (io->read(io, name, sizeof (name), 1) > 0) {
+        printf("Hello, %s!\n", name);
+    }
+    io->close(io);
+}
+</syntaxhighlight>
+
+The following is functionally identical to the above example, but uses the recommended macro interface.
+
+<syntaxhighlight lang='c++'>
+SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
+if (io != NULL) {
+    char name[256];
+    if (SDL_RWread(io, name, sizeof (name), 1) > 0) {
+        printf("Hello, %s!\n", name);
+    }
+    SDL_RWclose(io);
+}
+</syntaxhighlight>
 
 == Data Fields ==
+
 {|
 |Sint64 (*)(SDL_RWops *)
 |'''size'''
@@ -34,135 +153,7 @@ A structure that provides an abstract interface to stream I/O. Applications can 
 |type-specific data; see [[#Hidden Union|Remarks]]
 |}
 
-
-== Code Examples ==
-<syntaxhighlight lang='c++'>
-SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
-if (io != NULL) {
-    char name[256];
-    if (io->read(io, name, sizeof (name), 1) > 0) {
-        printf("Hello, %s!\n", name);
-    }
-    io->close(io);
-}
-</syntaxhighlight>
-
-The following is functionally identical to the above example, but uses the recommended macro interface.
-
-<syntaxhighlight lang='c++'>
-SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
-if (io != NULL) {
-    char name[256];
-    if (SDL_RWread(io, name, sizeof (name), 1) > 0) {
-        printf("Hello, %s!\n", name);
-    }
-    SDL_RWclose(io);
-}
-</syntaxhighlight>
-
-
-== Remarks ==
-SDL_RWops is an abstraction over I/O. It provides interfaces to read, write and seek data in a stream, without the caller needing to know where the data is coming from.
-
-For example, a RWops might be fed by a memory buffer, or a file on disk, or a connection to a web server, without any changes to how the caller consumes the data.
-
-SDL provides some internal methods for reading from common stream types, like files and memory buffers, but this structure can be used by the application or third party libraries to implement whatever type of stream it pleases.
-
-Most of the fields of this structure are function pointers that are used as callbacks to implement the stream interface. All of them use SDLCALL calling convention.
-
-Please note that many of these function pointers used ints in SDL 1.2; to give them a better range, they have become Sint64 in SDL 2.0.
-
-Applications shouldn't have to care about the internals of this structure. They can treat it as an opaque data pointer and use the [[SDL_RWread]](), [[SDL_RWwrite]](), [[SDL_RWseek]](), [[SDL_RWtell]]() and [[SDL_RWclose]]() functions on them. Applications almost never create or modify these structures either, instead favoring creation functions like [[SDL_RWFromFile]](), [[SDL_RWFromMem]](), etc.
-
-Third-party libraries and special, low-level code may need to know how to properly implement this struct, however.
-
-=== Size Function ===
-'''size''' is a function pointer that reports the stream's total size in bytes. If the stream size can't be determined (either because it doesn't make sense for the stream type, or there was an error), this function returns -1.
-
-=== Seek Function ===
-'''seek''' is a function pointer that positions the next read/write operation in the stream. This seeks in byte offsets. If the stream can not seek (either because it doesn't make sense for the stream type, or there was an error), this function returns -1, otherwise it returns the new position.
-Seeking zero bytes from RW_SEEK_CUR is a common way to determine the current stream position.
-
-The final argument works like the standard fseek() "whence":
-{|
-|Identifier
-|Value
-|Explanation
-|-
-|RW_SEEK_SET
-|0
-|Seek from the beginning of data
-|-
-|RW_SEEK_CUR
-|1
-|Seek relative to current read point
-|-
-|RW_SEEK_END
-|2
-|Seek relative to the end of data
-|}
-
-=== Read Function ===
-'''read''' is a function pointer that reads from the stream. It reads up to num objects each of size bytes into the buffer pointer to by ptr. Returns the number of objects read, which may be less than requested. Returns 0 on error or EOF.
-
-=== Write Function ===
-'''write''' is a function pointer that writes to the stream. It writes exactly num objects each of size bytes from the buffer pointer to by ptr. Returns the number of objects written, which will be less than requested on error.
-
-=== Close Function ===
-'''close''' is a function pointer that cleans up the stream. It should release any resources used by the stream and free the SDL_RWops itself with [[SDL_FreeRW]](). This returns 0 on success, or -1 if the stream failed to flush to disk (or whereever). The SDL_RWops is no longer valid after this call, even if flushing the stream failed.
-
-=== Stream Type ===
-
-The '''type''' field is currently one of these values. An application can usually ignore this information.
-
-{|
-|Identifier
-|Value
-|Description
-|-
-|SDL_RWOPS_UNKNOWN
-|0
-|Unknown stream type or application-defined
-|-
-|SDL_RWOPS_WINFILE
-|1
-|Win32 file handle
-|-
-|SDL_RWOPS_STDFILE
-|2
-|stdio.h <code>FILE*</code>
-|-
-|SDL_RWOPS_JNIFILE
-|3
-|Android asset
-|-
-|SDL_RWOPS_MEMORY
-|4
-|Memory stream (read/write)
-|-
-|SDL_RWOPS_MEMORY_RO
-|5
-|Memory stream (read-only)
-|}
-
-Applications and libraries rolling their own RWops implementations should use SDL_RWOPS_UNKNOWN. All other values are currently reserved for SDL's internal use.
-
-=== Hidden Union ===
-
-Applications can ignore this union completely. All of the fields in this union are platform-specific and off-limits, used internally by SDL, with one exception. You may use the '''unknown''' struct to store your own RWops implementation's data, possibly cleaning it up during the '''close''' method. If your data doesn't fit in two pointers, use these pointers to hold an allocated structure that contains the real data.
-
-== Related Functions ==
-:[[SDL_AllocRW]]
-:[[SDL_FreeRW]]
-:[[SDL_RWclose]]
-:[[SDL_RWFromConstMem]]
-:[[SDL_RWFromFile]]
-:[[SDL_RWFromFP]]
-:[[SDL_RWFromMem]]
-:[[SDL_RWread]]
-:[[SDL_RWseek]]
-:[[SDL_RWtell]]
-:[[SDL_RWwrite]]
-
 ----
-[[CategoryStruct]], [[CategoryIO]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryIO]]
+
+

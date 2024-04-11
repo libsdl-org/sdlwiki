@@ -22,10 +22,10 @@ Returns a platform-specific count per second.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -34,11 +34,11 @@ otherwise operates exactly the same as [SDL_GetError](SDL_GetError)().
 
 This function is available since SDL 2.0.14.
 
-## Related Functions
+## See Also
 
 * [SDL_GetError](SDL_GetError)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryError](CategoryError)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)
 
 

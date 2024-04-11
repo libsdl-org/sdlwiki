@@ -24,13 +24,13 @@ normally with this change.
 
 This function is available since SDL 2.26.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)
 * [SDL_ResetHint](SDL_ResetHint)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryHints](CategoryHints)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
 

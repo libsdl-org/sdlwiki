@@ -1,38 +1,33 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_PowerState =
-An enumeration of the basic state of the system's power supply.
 
+The basic state for the system's power supply.
 
-== Values ==
-{|
-|SDL_POWERSTATE_UNKNOWN
-|cannot determine power status
-|-
-|SDL_POWERSTATE_ON_BATTERY
-|not plugged in, running on the battery
-|-
-|SDL_POWERSTATE_NO_BATTERY
-|plugged in, no battery available
-|-
-|SDL_POWERSTATE_CHARGING
-|plugged in, charging battery
-|-
-|SDL_POWERSTATE_CHARGED
-|plugged in, battery charged
-|}
+== Header File ==
+
+Defined in [SDL_power.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_power.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef enum SDL_PowerState
+{
+    SDL_POWERSTATE_UNKNOWN,      /**< cannot determine power status */
+    SDL_POWERSTATE_ON_BATTERY,   /**< Not plugged in, running on the battery */
+    SDL_POWERSTATE_NO_BATTERY,   /**< Plugged in, no battery available */
+    SDL_POWERSTATE_CHARGING,     /**< Plugged in, charging battery */
+    SDL_POWERSTATE_CHARGED       /**< Plugged in, battery charged */
+} SDL_PowerState;</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 if (SDL_GetPowerInfo(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
     printf("You should plug in your laptop before running this update.\n");
 }
 </syntaxhighlight>
 
-== Remarks ==
-Not all machines can have batteries at all, and not all platforms can report battery status. Those that do can still having minor moments of confusion about the state of the battery. As such, you should always be prepared to get an otherwise-unexpected SDL_POWERSTATE_UNKNOWN from [[SDL_GetPowerInfo]](). Also, batteries are fickle hardware: reported status can flicker between two states for no obvious reason on occasion.
-
-== Related Functions ==
-:[[SDL_GetPowerInfo]]
-
 ----
-[[CategoryEnum]], [[CategoryPower]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryPower]]
+
+

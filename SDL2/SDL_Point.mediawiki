@@ -1,20 +1,23 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_Point =
-A structure that defines a two dimensional point.
 
+The structure that defines a point (integer)
 
-== Data Fields ==
-{|
-|int
-|'''x'''
-|the x coordinate of the point
-|-
-|int
-|'''y'''
-|the y coordinate of the point
-|}
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+
+== Syntax ==
+
+<syntaxhighlight lang='c'>
+typedef struct SDL_Point
+{
+    int x;
+    int y;
+} SDL_Point;</syntaxhighlight>
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 // Example program:
 // Using SDL_Point in some places of your code
@@ -70,16 +73,29 @@ int main(int argc, char *argv[]) {
 }
 </syntaxhighlight>
 
-== Remarks ==
-An [[SDL_Point]] defines single two dimensional point. It can be used not only for points, but also for size.
-[[SDL_Point]] is used by [[SDL_EnclosePoints]]() to check if array of points is inside rectangle ([[SDL_Rect]]).
-You can also make your own functions using [[SDL_Point]] to simplify your code, it's very helpful.
+== See Also ==
+
+:[[SDL_EnclosePoints]]
+:[[SDL_PointInRect]]
+
+
+== Data Fields ==
+
+{|
+|int
+|'''x'''
+|the x coordinate of the point
+|-
+|int
+|'''y'''
+|the y coordinate of the point
+|}
 
 == Related Structures ==
+
 :[[SDL_Rect]]
 
-== Related Functions ==
-:[[SDL_EnclosePoints]]
-
 ----
-[[CategoryStruct]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryRect]]
+
+

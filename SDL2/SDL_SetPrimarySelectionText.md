@@ -29,11 +29,11 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.26.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
 * [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

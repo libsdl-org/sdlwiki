@@ -29,7 +29,7 @@ Returns a mask of the [SDL_WindowFlags](SDL_WindowFlags) associated with
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_HideWindow](SDL_HideWindow)
@@ -40,5 +40,5 @@ This function is available since SDL 2.0.0.
 * [SDL_ShowWindow](SDL_ShowWindow)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
