@@ -37,6 +37,39 @@ returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
 
 This function is available since SDL 3.0.0.
 
+
+
+## Code Examples
+
+```c
+// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
+
+SDL_AtomicInt done;
+SDL_Semaphore *sem;
+SDL_AtomicSet(&done, 0);
+sem = SDL_CreateSemaphore(0);
+.
+.
+Thread A:
+    while (!SDL_AtomicGet(&done)) {
+        add_data_to_queue();
+        SDL_PostSemaphore(sem);
+    }
+Thread B:
+    while (!SDL_AtomicGet(&done)) {
+        if (SDL_TryWaitSemaphore(sem) == 0 && data_available()) {
+            get_data_from_queue();
+        }
+        ... do other processing
+    }
+.
+.
+SDL_AtomicSet(&done, 1);
+SDL_PostSemaphore(sem);
+wait_for_threads();
+SDL_DestroySemaphore(sem);
+```
+
 ## See Also
 
 * [SDL_PostSemaphore](SDL_PostSemaphore)
