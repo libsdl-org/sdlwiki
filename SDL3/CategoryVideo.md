@@ -47,7 +47,6 @@
 - [SDL_GL_UnloadLibrary](SDL_GL_UnloadLibrary)
 - [SDL_HideWindow](SDL_HideWindow)
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
-- [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_MinimizeWindow](SDL_MinimizeWindow)
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 - [SDL_RestoreWindow](SDL_RestoreWindow)

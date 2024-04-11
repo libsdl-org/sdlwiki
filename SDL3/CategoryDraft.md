@@ -47,7 +47,6 @@
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 - [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
 - [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
-- [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
 - [SDL_PointInRect](SDL_PointInRect)
 - [SDL_ReadU8](SDL_ReadU8)

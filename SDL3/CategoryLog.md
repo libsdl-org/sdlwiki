@@ -1,6 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_Log](SDL_Log)
-- [SDL_LOG_CATEGORY](SDL_LOG_CATEGORY)
 - [SDL_LogCritical](SDL_LogCritical)
 - [SDL_LogDebug](SDL_LogDebug)
 - [SDL_LogError](SDL_LogError)

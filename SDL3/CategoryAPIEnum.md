@@ -35,6 +35,7 @@
 - [SDL_LogPriority](SDL_LogPriority)
 - [SDL_MatrixCoefficients](SDL_MatrixCoefficients)
 - [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)
+- [SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 - [SDL_MessageBoxFlags](SDL_MessageBoxFlags)
 - [SDL_MouseWheelDirection](SDL_MouseWheelDirection)
 - [SDL_PenAxis](SDL_PenAxis)
