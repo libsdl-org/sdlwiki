@@ -13,6 +13,10 @@ Defined in [SDL_properties.h](https://github.com/libsdl-org/SDL/blob/main/includ
 typedef Uint32 SDL_PropertiesID;
 ```
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

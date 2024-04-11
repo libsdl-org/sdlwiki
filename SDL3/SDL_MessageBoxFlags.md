@@ -24,6 +24,10 @@ typedef enum SDL_MessageBoxFlags
 
 If supported will display warning icon, etc.
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

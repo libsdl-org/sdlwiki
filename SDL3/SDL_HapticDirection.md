@@ -114,6 +114,10 @@ from the south means the user will have to pull the stick to counteract):
  direction.dir[0] = 9000; // Since we only have two axes we don't need more parameters.
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HAPTIC_POLAR](SDL_HAPTIC_POLAR)

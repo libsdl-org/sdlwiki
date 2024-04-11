@@ -17,6 +17,10 @@ typedef enum SDL_TimeFormat
 } SDL_TimeFormat;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_PROP_GLOBAL_SYSTEM_TIME_FORMAT_NUMBER](SDL_PROP_GLOBAL_SYSTEM_TIME_FORMAT_NUMBER)

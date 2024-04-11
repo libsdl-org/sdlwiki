@@ -13,6 +13,10 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/
 #define SDL_VIRTUAL_JOYSTICK_DESC_VERSION   1
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

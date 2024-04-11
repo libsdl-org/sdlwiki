@@ -13,6 +13,10 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_ANDROID_EXTERNAL_STORAGE_READ   0x01
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

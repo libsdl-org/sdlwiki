@@ -37,6 +37,10 @@ reported by [SDL_GetGamepadAxis](SDL_GetGamepadAxis)(). Note that this is
 not the same range that will be reported by the lower-level
 [SDL_GetJoystickAxis](SDL_GetJoystickAxis)().
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

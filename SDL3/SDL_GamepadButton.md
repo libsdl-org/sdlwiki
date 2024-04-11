@@ -63,6 +63,10 @@ should allow remapping actions based on user preferences.
 You can query the labels for the face buttons using
 [SDL_GetGamepadButtonLabel](SDL_GetGamepadButtonLabel)()
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

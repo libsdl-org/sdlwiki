@@ -13,6 +13,10 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL
 typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void);
 ```
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

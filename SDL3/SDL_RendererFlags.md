@@ -16,6 +16,10 @@ typedef enum SDL_RendererFlags
 } SDL_RendererFlags;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

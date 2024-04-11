@@ -23,6 +23,10 @@ typedef struct SDL_GamepadButtonEvent
 } SDL_GamepadButtonEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

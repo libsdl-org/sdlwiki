@@ -18,6 +18,10 @@ typedef enum SDL_ColorRange
 } SDL_ColorRange;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

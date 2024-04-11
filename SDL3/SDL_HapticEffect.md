@@ -86,6 +86,10 @@ Here we have an example of a constant effect evolution in time:
 Note either the attack_level or the fade_level may be above the actual
 effect level.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HapticConstant](SDL_HapticConstant)

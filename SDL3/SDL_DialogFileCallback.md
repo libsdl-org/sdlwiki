@@ -31,6 +31,10 @@ more than the size of the list (therefore the index of the terminating NULL
 entry) if no filter was selected, or -1 if the platform or method doesn't
 support fetching the selected filter or if an error occured.
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_DialogFileFilter](SDL_DialogFileFilter)

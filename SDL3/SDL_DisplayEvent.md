@@ -20,6 +20,10 @@ typedef struct SDL_DisplayEvent
 } SDL_DisplayEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

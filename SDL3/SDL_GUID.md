@@ -28,6 +28,10 @@ have the same GUID.
 GUIDs may be platform-dependent (i.e., the same device may report different
 GUIDs on different operating systems).
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

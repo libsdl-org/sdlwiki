@@ -24,6 +24,10 @@ typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
 Returns a value that can be reported through
 [SDL_WaitThread](SDL_WaitThread)().
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryThread](CategoryThread)
 

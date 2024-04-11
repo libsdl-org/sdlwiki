@@ -92,6 +92,10 @@ Examples:
     \|  \|  \|  \|  \|  \|  \|
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HAPTIC_SINE](SDL_HAPTIC_SINE)

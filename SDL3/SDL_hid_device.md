@@ -13,6 +13,10 @@ Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 struct SDL_hid_device;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

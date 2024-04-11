@@ -24,6 +24,10 @@ typedef struct SDL_GamepadTouchpadEvent
 } SDL_GamepadTouchpadEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

@@ -26,6 +26,10 @@ typedef struct SDL_PenTipEvent
 } SDL_PenTipEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

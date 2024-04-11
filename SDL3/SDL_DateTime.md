@@ -24,6 +24,10 @@ typedef struct SDL_DateTime
 } SDL_DateTime;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

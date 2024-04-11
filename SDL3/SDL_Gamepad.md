@@ -13,6 +13,10 @@ Defined in [SDL_gamepad.h](https://github.com/libsdl-org/SDL/blob/main/include/S
 struct SDL_Gamepad;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

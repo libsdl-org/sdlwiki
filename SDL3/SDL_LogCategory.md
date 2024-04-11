@@ -52,6 +52,10 @@ By default the application category is enabled at the INFO level, the
 assert category is enabled at the WARN level, test is enabled at the
 VERBOSE level and all other categories are enabled at the ERROR level.
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

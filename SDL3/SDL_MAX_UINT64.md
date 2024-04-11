@@ -13,6 +13,10 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_MAX_UINT64  ((Uint64)0xFFFFFFFFFFFFFFFFull)     /* 18446744073709551615 */
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

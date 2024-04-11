@@ -13,6 +13,10 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_HAPTIC_INFINITY   4294967295U
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_RunHapticEffect](SDL_RunHapticEffect)

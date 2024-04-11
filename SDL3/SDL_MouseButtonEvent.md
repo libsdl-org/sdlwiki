@@ -26,6 +26,10 @@ typedef struct SDL_MouseButtonEvent
 } SDL_MouseButtonEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

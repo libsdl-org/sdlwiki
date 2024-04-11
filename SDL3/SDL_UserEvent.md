@@ -30,6 +30,10 @@ application. The event can be pushed onto the event queue using
 completely up to the programmer; the only requirement is that '''type''' is
 a value obtained from [SDL_RegisterEvents](SDL_RegisterEvents)().
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## Code Examples
 
 ```c

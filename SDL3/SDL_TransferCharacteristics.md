@@ -34,6 +34,10 @@ typedef enum SDL_TransferCharacteristics
 } SDL_TransferCharacteristics;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

@@ -32,6 +32,10 @@ mean... (Unspecified bits are always zero).
 
 There are macros to query these bits.
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

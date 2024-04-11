@@ -18,6 +18,10 @@ typedef enum SDL_TextureAccess
 } SDL_TextureAccess;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

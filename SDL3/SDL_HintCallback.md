@@ -22,6 +22,10 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 | **oldValue**     | the previous hint value                                                       |
 | **newValue**     | the new value hint is to be set to                                            |
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

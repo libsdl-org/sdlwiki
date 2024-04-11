@@ -50,6 +50,10 @@ yourself. Data should consist of channels * samples Uint16 samples.
 If channels is one, the effect is rotated using the defined direction.
 Otherwise it uses the samples in data for the different axes.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)

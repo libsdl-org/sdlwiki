@@ -29,6 +29,10 @@ typedef enum SDL_InitFlags
 These are the flags which may be passed to [SDL_Init](SDL_Init)(). You
 should specify the subsystems which you will be using in your application.
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_Init](SDL_Init)

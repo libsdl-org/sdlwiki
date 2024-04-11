@@ -18,6 +18,10 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 This provides better compatibility across platforms and devices as SDL will
 guess the correct axis.
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HapticDirection](SDL_HapticDirection)

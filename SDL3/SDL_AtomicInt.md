@@ -17,6 +17,10 @@ typedef struct SDL_AtomicInt { int value; } SDL_AtomicInt;
 
 It is a struct so people don't accidentally use numeric operations on it.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

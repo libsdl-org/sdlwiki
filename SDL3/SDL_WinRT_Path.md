@@ -31,6 +31,10 @@ typedef enum SDL_WinRT_Path
 } SDL_WinRT_Path;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

@@ -13,6 +13,10 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL
 #define SDL_MUTEX_TIMEDOUT  1
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

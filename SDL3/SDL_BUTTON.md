@@ -19,6 +19,10 @@ Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL
 - Button 2: Middle mouse button
 - Button 3: Right mouse button
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

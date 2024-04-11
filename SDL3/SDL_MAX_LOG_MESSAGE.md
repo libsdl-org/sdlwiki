@@ -17,6 +17,10 @@ Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/
 
 As of 2.0.24 there is no limit to the length of SDL log messages.
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

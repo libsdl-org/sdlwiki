@@ -25,6 +25,10 @@ typedef enum SDL_HitTestResult
 } SDL_HitTestResult;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HitTest](SDL_HitTest)

@@ -21,6 +21,10 @@ They can be converted between POSIX time_t values with
 values with [SDL_TimeToWindows](SDL_TimeToWindows)() and
 [SDL_TimeFromWindows](SDL_TimeFromWindows)().
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

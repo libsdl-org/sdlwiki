@@ -46,6 +46,10 @@ augments in linear fashion. If you use attack and fade with a ramp the
 effects get added to the ramp effect making the effect become quadratic
 instead of linear.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)

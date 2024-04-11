@@ -13,6 +13,10 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/S
 #define SDL_MUSTLOCK(S) (((S)->flags & SDL_RLEACCEL) != 0)
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryAPI]], [[CategorySurface]]
 

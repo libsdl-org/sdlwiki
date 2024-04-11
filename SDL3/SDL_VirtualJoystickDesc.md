@@ -45,6 +45,10 @@ before passing it to
 [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)() All other
 elements of this structure are optional and can be left 0.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)

@@ -19,6 +19,10 @@ typedef enum SDL_ChromaLocation
 } SDL_ChromaLocation;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

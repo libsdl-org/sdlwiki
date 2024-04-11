@@ -13,6 +13,10 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL
 #define SDL_WINDOWPOS_CENTERED_MASK    0x2FFF0000u
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

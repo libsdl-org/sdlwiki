@@ -21,6 +21,10 @@ typedef struct SDL_JoyBatteryEvent
 } SDL_JoyBatteryEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

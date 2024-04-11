@@ -18,6 +18,10 @@ typedef struct SDL_MessageBoxButtonData
 } SDL_MessageBoxButtonData;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

@@ -13,6 +13,10 @@ Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3
 typedef int (SDLCALL *SDL_main_func)(int argc, char *argv[]);
 ```
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

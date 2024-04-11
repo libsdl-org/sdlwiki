@@ -13,6 +13,10 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_HAPTIC_CARTESIAN  1
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HapticDirection](SDL_HapticDirection)

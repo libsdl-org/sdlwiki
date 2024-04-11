@@ -20,6 +20,10 @@ immutable after being set through [SDL_CreateWindow](SDL_CreateWindow)(),
 some of it can be changed on existing windows by the app, and some of it
 might be altered by the user or system outside of the app's control.
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_GetWindowFlags](SDL_GetWindowFlags)

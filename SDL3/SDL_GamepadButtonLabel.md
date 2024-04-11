@@ -32,6 +32,10 @@ button prompts.
 For a complete set, you should look at the button and gamepad type and have
 a set of symbols that work well with your art style.
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

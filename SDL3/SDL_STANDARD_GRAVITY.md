@@ -32,6 +32,10 @@ held in front of you, the axes are defined as follows:
 
 The axis data is not changed when the device is rotated.
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_GetCurrentDisplayOrientation](SDL_GetCurrentDisplayOrientation)

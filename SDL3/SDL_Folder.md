@@ -75,6 +75,10 @@ The folders supported per platform are:
 
 Note that on macOS/iOS, the Videos folder is called "Movies".
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_GetUserFolder](SDL_GetUserFolder)

@@ -22,6 +22,10 @@ typedef enum SDL_LogPriority
 } SDL_LogPriority;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

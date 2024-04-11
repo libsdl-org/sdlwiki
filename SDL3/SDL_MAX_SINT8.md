@@ -13,6 +13,10 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_MAX_SINT8   ((Sint8)0x7F)           /* 127 */
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

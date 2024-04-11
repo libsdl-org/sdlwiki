@@ -13,6 +13,10 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 struct SDL_Renderer;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

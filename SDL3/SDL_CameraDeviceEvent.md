@@ -22,6 +22,10 @@ typedef struct SDL_CameraDeviceEvent
 } SDL_CameraDeviceEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

@@ -18,6 +18,10 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 Condition haptic effect that simulates a spring. Effect is based on the
 axes position.
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HapticCondition](SDL_HapticCondition)

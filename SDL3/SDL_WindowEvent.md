@@ -21,6 +21,10 @@ typedef struct SDL_WindowEvent
 } SDL_WindowEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

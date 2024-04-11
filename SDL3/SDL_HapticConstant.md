@@ -43,6 +43,10 @@ This struct is exclusively for the
 A constant effect applies a constant force in the specified direction to
 the joystick.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_HAPTIC_CONSTANT](SDL_HAPTIC_CONSTANT)

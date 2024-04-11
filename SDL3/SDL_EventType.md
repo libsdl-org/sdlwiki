@@ -196,6 +196,10 @@ typedef enum SDL_EventType
 } SDL_EventType;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

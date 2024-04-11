@@ -51,6 +51,10 @@ and a byte order given by the format. After encoding all pixels, any
 remaining bytes to reach the pitch are used as padding to reach a desired
 alignment, and have undefined contents.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

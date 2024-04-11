@@ -27,6 +27,10 @@ document").
 hyphens, underscores and periods. Alternatively, the whole string can be a
 single asterisk ("*"), which serves as an "All files" filter.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_DialogFileCallback](SDL_DialogFileCallback)

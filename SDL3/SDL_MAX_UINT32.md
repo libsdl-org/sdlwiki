@@ -13,6 +13,10 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_MAX_UINT32  ((Uint32)0xFFFFFFFFu)   /* 4294967295 */
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

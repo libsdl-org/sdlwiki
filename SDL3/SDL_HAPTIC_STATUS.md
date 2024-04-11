@@ -17,6 +17,10 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 
 Device supports querying effect status.
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ## See Also
 
 * [SDL_GetHapticEffectStatus](SDL_GetHapticEffectStatus)

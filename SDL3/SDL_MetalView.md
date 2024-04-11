@@ -13,6 +13,10 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL
 typedef void *SDL_MetalView;
 ```
 
+## Version
+
+This datatype is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

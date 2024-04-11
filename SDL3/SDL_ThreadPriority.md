@@ -27,6 +27,10 @@ may alter such state.
 [SDL_HINT_THREAD_PRIORITY_POLICY](SDL_HINT_THREAD_PRIORITY_POLICY) can be
 used to control aspects of this behavior.
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

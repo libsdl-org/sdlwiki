@@ -18,6 +18,10 @@ typedef struct SDL_ClipboardEvent
 } SDL_ClipboardEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

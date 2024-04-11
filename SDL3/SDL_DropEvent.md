@@ -28,6 +28,10 @@ typedef struct SDL_DropEvent
 The `data` is owned by SDL and should be copied if the application wants to
 hold onto it beyond the scope of handling this event. Do not free it!
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

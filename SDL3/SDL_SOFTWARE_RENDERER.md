@@ -13,6 +13,10 @@ Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 #define SDL_SOFTWARE_RENDERER   "software"
 ```
 
+## Version
+
+This macro is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

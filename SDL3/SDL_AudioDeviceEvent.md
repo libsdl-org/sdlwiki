@@ -23,6 +23,10 @@ typedef struct SDL_AudioDeviceEvent
 } SDL_AudioDeviceEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

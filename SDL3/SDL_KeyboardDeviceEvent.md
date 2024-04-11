@@ -19,6 +19,10 @@ typedef struct SDL_KeyboardDeviceEvent
 } SDL_KeyboardDeviceEvent;
 ```
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
 

@@ -18,6 +18,10 @@ typedef enum SDL_FlipMode
 } SDL_FlipMode;
 ```
 
+## Version
+
+This enum is available since SDL 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 
