@@ -31,7 +31,7 @@ prefers the default user and allows a sign-in UI.
 
 ## Version
 
-This function is available since SDL 2.28.0.
+This function is available since SDL 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

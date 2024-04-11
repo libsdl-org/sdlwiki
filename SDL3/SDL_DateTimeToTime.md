@@ -33,7 +33,7 @@ This function ignores the day_of_week member of the
 
 ## Version
 
-This function is available since SDL 3.0.0
+This function is available since SDL 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

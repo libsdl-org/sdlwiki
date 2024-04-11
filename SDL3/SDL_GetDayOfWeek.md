@@ -29,7 +29,7 @@ otherwise -1; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 
-This function is available since SDL 3.0.0
+This function is available since SDL 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
