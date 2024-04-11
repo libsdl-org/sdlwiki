@@ -37,8 +37,6 @@ returns [SDL_MUTEX_TIMEDOUT](SDL_MUTEX_TIMEDOUT).
 
 This function is available since SDL 3.0.0.
 
-
-
 ## Code Examples
 
 ```c

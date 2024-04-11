@@ -23,10 +23,7 @@ Returns a new condition variable or NULL on failure; call
 
 This function is available since SDL 3.0.0.
 
-
-
 ## Code Examples
-
 
 Typical use of condition variables:
 

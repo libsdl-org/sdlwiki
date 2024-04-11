@@ -47,10 +47,7 @@ behavior.
 
 This function is available since SDL 3.0.0.
 
-
-
 ## Code Examples
-
 
 ```c
 // BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
