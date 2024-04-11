@@ -1,41 +1,37 @@
+====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
+
 == Draft ==
 
 '''THIS PAGE IS A WORK IN PROGRESS''' ... Please make edits to this page to improve it!
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
-
-
 = SDL_MessageBoxColorType =
-An enumeration of positions inside the colors array of [[SDL_MessageBoxColorScheme]].
 
+An enumeration of indices inside the colors array of [[SDL_MessageBoxColorScheme]].
 
+== Header File ==
 
-== Values ==
-{|
-|SDL_MESSAGEBOX_COLOR_BACKGROUND
-| 
-|-
-|SDL_MESSAGEBOX_COLOR_TEXT
-| 
-|-
-|SDL_MESSAGEBOX_COLOR_BUTTON_BORDER
-| 
-|-
-|SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND
-| 
-|-
-|SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED
-| 
-|-
-|SDL_MESSAGEBOX_COLOR_MAX
-| 
-|}
+Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h), but apps should _only_ `#include <SDL3/SDL.h>`!
 
+== Syntax ==
 
+<syntaxhighlight lang='c'>
+typedef enum SDL_MessageBoxColorType
+{
+    SDL_MESSAGEBOX_COLOR_BACKGROUND,
+    SDL_MESSAGEBOX_COLOR_TEXT,
+    SDL_MESSAGEBOX_COLOR_BUTTON_BORDER,
+    SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND,
+    SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED,
+    SDL_MESSAGEBOX_COLOR_MAX                    /**< Size of the colors array of SDL_MessageBoxColorScheme. */
+} SDL_MessageBoxColorType;</syntaxhighlight>
 
 == Related Structures ==
+
 :[[SDL_MessageBoxColorScheme]] 
 
 ----
-[[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategoryVideo]], [[CategoryDraft]]
+
+
