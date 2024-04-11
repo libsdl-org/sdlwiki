@@ -27,7 +27,6 @@ refers to data that is thread-specific.
 
 This function is available since SDL 3.0.0.
 
-
 ## Code Examples
 
 ```c

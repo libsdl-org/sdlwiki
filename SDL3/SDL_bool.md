@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_FALSE
+# SDL_bool
 
-A boolean false.
+A boolean type: true or false.
 
 ## Header File
 
@@ -10,17 +10,18 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-#define SDL_FALSE 0
+typedef int SDL_bool;
 ```
 
 ## Version
 
-This macro is available since SDL 3.0.0.
+This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_bool](SDL_bool)
+* [SDL_TRUE](SDL_TRUE)
+* [SDL_FALSE](SDL_FALSE)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

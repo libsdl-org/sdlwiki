@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_FALSE
+# SDL_TRUE
 
-A boolean false.
+A boolean true.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-#define SDL_FALSE 0
+#define SDL_TRUE 1
 ```
 
 ## Version
