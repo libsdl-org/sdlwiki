@@ -207,6 +207,5 @@
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h SDL_system.h]
 |-
 |[[CategoryStandard|Standard Library Functionality]]
-|[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h]
 |[https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h SDL_stdinc.h]
 |}
