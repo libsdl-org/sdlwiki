@@ -29,6 +29,46 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
+
+
+## Code Examples
+
+```c
+
+// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
+
+SDL_bool condition = SDL_FALSE;
+SDL_Mutex *lock;
+SDL_Condition *cond;
+lock = SDL_CreateMutex();
+cond = SDL_CreateCondition();
+.
+.
+Thread A:
+    SDL_LockMutex(lock);
+    while (!condition) {
+        SDL_WaitCondition(cond, lock);
+    }
+    SDL_UnlockMutex(lock);
+Thread B:
+    SDL_LockMutex(lock);
+    while (!condition) {
+        SDL_WaitCondition(cond, lock);
+    }
+    SDL_UnlockMutex(lock);
+Thread C:
+    SDL_LockMutex(lock);
+    ...
+    condition = SDL_TRUE;
+    ...
+    SDL_BroadcastCondition(cond);
+    SDL_UnlockMutex(lock);
+.
+.
+SDL_DestroyCondition(cond);
+SDL_DestroyMutex(lock);
+```
+
 ## See Also
 
 * [SDL_SignalCondition](SDL_SignalCondition)
