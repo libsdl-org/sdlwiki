@@ -40,6 +40,41 @@ of -1.
 
 This function is available since SDL 3.0.0.
 
+
+## Code Examples
+
+```c
+// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
+
+#define NB_WAITER 10
+SDL_Semaphore *sem;
+// Increments the semaphore every 2s
+int poster_thread() {
+  for (int i = 0; i < NB_WAITER; i++) {
+    SDL_PostSemaphore(sem);
+    SDL_Delay(2 * 1000);
+  }
+  return 0;
+}
+int waiter_thread() {
+  int status;
+  status = SDL_WaitSemaphore(sem);
+  
+  if (status == 0) {
+    SDL_Log("Semaphore was decremented.\n");
+  } else {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "An error has occured while waiting: %s\n", SDL_GetError());
+  }
+  return 0;
+}
+int main() {
+  sem = SDL_CreateSemaphore(0);
+  create_and_wait_threads(); // 1 poster, 10 waiters
+  SDL_DestroySemaphore(sem);
+}
+
+```
+
 ## See Also
 
 * [SDL_PostSemaphore](SDL_PostSemaphore)
