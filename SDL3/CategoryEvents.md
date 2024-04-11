@@ -6,7 +6,6 @@
 - [SDL_FlushEvent](SDL_FlushEvent)
 - [SDL_FlushEvents](SDL_FlushEvents)
 - [SDL_GetEventFilter](SDL_GetEventFilter)
-- [SDL_GetNumTouchDevices](SDL_GetNumTouchDevices)
 - [SDL_GetNumTouchFingers](SDL_GetNumTouchFingers)
 - [SDL_GetTouchDevice](SDL_GetTouchDevice)
 - [SDL_GetTouchFinger](SDL_GetTouchFinger)
