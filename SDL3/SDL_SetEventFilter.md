@@ -50,6 +50,12 @@ Note: Events pushed onto the queue with [SDL_PushEvent](SDL_PushEvent)()
 get passed through the event filter, but events pushed onto the queue with
 [SDL_PeepEvents](SDL_PeepEvents)() do not.
 
+## Thread Safety
+
+SDL may call the filter callback at any time from any thread; the
+application is responsible for locking resources the callback touches that
+need to be protected.
+
 ## Version
 
 This function is available since SDL 3.0.0.

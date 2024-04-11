@@ -1,43 +1,52 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_TimerCallback
 
-The callback function for SDL_AddTimer.
+Function prototype for the timer callback function.
+
+## Header File
+
+Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_timer.h), but apps should _only_ `#include <SDL3/SDL.h>`!
 
 ## Syntax
 
 ```c
-Uint32 (*SDL_TimerCallback)(Uint32 interval, void *param);
-
+typedef Uint32 (SDLCALL *SDL_TimerCallback)(Uint32 interval, void *param);
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------- |
-| **interval**     | the timer delay, in milliseconds, passed by SDL_AddTimer                                          |
-| **param**        | a pointer that is passed by SDL_AddTimer                                                          |
+|                  |                                                                                                 |
+| ---------------- | ----------------------------------------------------------------------------------------------- |
+| **interval**     | the current callback time interval.                                                             |
+| **param**        | an arbitrary pointer provided by the app through [SDL_AddTimer](SDL_AddTimer), for its own use. |
 
 ## Return Value
 
-Returns the next timer interval. If 0, the timer is cancelled.
+Returns the new callback time interval, or 0 to disable further runs of the
+callback.
 
 ## Remarks
 
-See SDL_AddTimer
+The callback function is passed the current timer interval and returns the
+next timer interval, in milliseconds. If the returned value is the same as
+the one passed in, the periodic alarm continues, otherwise a new alarm is
+scheduled. If the callback returns 0, the periodic alarm is cancelled.
+
+## Thread Safety
+
+SDL may call this callback at any time from a background thread; the
+application is responsible for locking resources the callback touches that
+need to be protected.
 
 ## Version
 
-This function is available since SDL 3.0.0.
+This datatype is available since SDL 3.0.0.
 
-## Code Examples
-
-See SDL_AddTimer
-
-## Related Functions
+## See Also
 
 * [SDL_AddTimer](SDL_AddTimer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryTimer](CategoryTimer)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
 
 
