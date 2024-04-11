@@ -1,4 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
+- [SDL_BroadcastCondition](SDL_BroadcastCondition)
 - [SDL_CreateMutex](SDL_CreateMutex)
 - [SDL_CreateSemaphore](SDL_CreateSemaphore)
 - [SDL_DestroyMutex](SDL_DestroyMutex)
