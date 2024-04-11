@@ -1,7 +1,6 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 - [SDL_DelEventWatch](SDL_DelEventWatch)
-- [SDL_EventFilter](SDL_EventFilter)
 - [SDL_FilterEvents](SDL_FilterEvents)
 - [SDL_FlushEvent](SDL_FlushEvent)
 - [SDL_FlushEvents](SDL_FlushEvents)

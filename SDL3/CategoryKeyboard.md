@@ -9,7 +9,6 @@
 - [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 - [SDL_GetScancodeName](SDL_GetScancodeName)
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
-- [SDL_Keycode](SDL_Keycode)
 - [SDL_SetModState](SDL_SetModState)
 - [SDL_SetTextInputRect](SDL_SetTextInputRect)
 - [SDL_StartTextInput](SDL_StartTextInput)

@@ -71,5 +71,4 @@
 - [SDL_ShowWindow](SDL_ShowWindow)
 - [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
 - [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
-- [SDL_WindowFlags](SDL_WindowFlags)
 <!-- END CATEGORY LIST -->
