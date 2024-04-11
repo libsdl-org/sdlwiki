@@ -6,6 +6,8 @@
 - [Mix_ClearError](Mix_ClearError)
 - [Mix_CloseAudio](Mix_CloseAudio)
 - [Mix_EachSoundFont](Mix_EachSoundFont)
+- [Mix_EffectDone_t](Mix_EffectDone_t)
+- [Mix_EffectFunc_t](Mix_EffectFunc_t)
 - [Mix_ExpireChannel](Mix_ExpireChannel)
 - [Mix_FadeInChannel](Mix_FadeInChannel)
 - [Mix_FadeInChannelTimed](Mix_FadeInChannelTimed)
