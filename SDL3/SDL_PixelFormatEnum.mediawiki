@@ -1,7 +1,7 @@
-
 = SDL_PixelFormatEnum =
 An enumeration of pixel formats.
 
+Manual link: Defined in [https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h SDL_pixels.h], but apps should ''only'' '#include <SDL3/SDL.h>'!
 
 == Values ==
 === Pixel Format Macros ===
