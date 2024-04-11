@@ -278,4 +278,4 @@ The same applies to SDL_PIXELFORMAT_ARGB32, SDL_PIXELFORMAT_BGRA32 and SDL_PIXEL
 :[[SDL_RenderReadPixels]]
 
 ----
-[[CategoryEnum]], [[CategoryPixels]]
+[[CategoryEnum]], [[CategoryPixels]], [[CategoryDraft]]
