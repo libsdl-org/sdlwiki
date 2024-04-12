@@ -9,17 +9,94 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Checkout SDL3
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL
+        ref: main
+        path: external/SDL3
+    - name: Checkout SDL2
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL
+        ref: SDL2
+        path: external/SDL2
+    - name: Checkout SDL3_image
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_image
+        ref: main
+        path: external/SDL3_image
+    - name: Checkout SDL2_image
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_image
+        ref: SDL2
+        path: external/SDL2_image
+    - name: Checkout SDL3_mixer
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_mixer
+        ref: main
+        path: external/SDL3_mixer
+    - name: Checkout SDL2_mixer
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_mixer
+        ref: SDL2
+        path: external/SDL2_mixer
+    - name: Checkout SDL3_net
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_net
+        ref: main
+        path: external/SDL3_net
+    - name: Checkout SDL2_net
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_net
+        ref: SDL2
+        path: external/SDL2_net
+    - name: Checkout SDL3_ttf
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_ttf
+        ref: main
+        path: external/SDL3_ttf
+    - name: Checkout SDL2_ttf
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_ttf
+        ref: SDL2
+        path: external/SDL2_ttf
+    - name: Checkout SDL3_rtf
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_rtf
+        ref: main
+        path: external/SDL2_rtf
+    - name: Checkout SDL2_rtf
+      uses: actions/checkout@v4
+      with:
+        repository: libsdl-org/SDL_rtf
+        ref: SDL2
+        path: external/SDL2_rtf
     - name: Setup dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install pandoc
+        sudo apt-get install pandoc ninja-build
     - name: Configure CMake
       run: |
-        cmake -S .github -B build
-    - name: Run tests
+        cmake -S .github -B build -DUSE_FIND_PACKAGE=OFF -GNinja 
+    - name: Test markdown/mediawiki syntax
       run: |
         cd build
-        ctest --output-on-failure -j$(nproc)
+        ctest --output-on-failure -j$(nproc) -E example
+    - name: Build examples
+      if: ${{ always() }}
+      run: |
+        cd build
+        ctest --output-on-failure -j$(nproc) -R example
     - name: Upload artifacts
       if: ${{ always() }}
       uses: actions/upload-artifact@v4

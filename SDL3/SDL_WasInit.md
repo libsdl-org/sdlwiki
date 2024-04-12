@@ -38,18 +38,18 @@ Uint32 subsystem_init;
 subsystem_init = SDL_WasInit(SDL_INIT_AUDIO | SDL_INIT_VIDEO);
 
 if (subsystem_init & SDL_INIT_VIDEO) {
-    printf("Video is initialized.\n");
+    SDL_Log("Video is initialized.");
 } else {
-    printf("Video is not initialized.\n");
+    SDL_Log("Video is not initialized.");
 }
 ```
 ```c++
 /* Just check for one specific subsystem */
 
 if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
-    printf("Video is initialized.\n");
+    SDL_Log("Video is initialized.");
 } else {
-    printf("Video is not initialized.\n");
+    SDL_Log("Video is not initialized.");
 }
 ```
 ```c++
@@ -57,9 +57,9 @@ if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
 Uint32 subsystem_mask = SDL_INIT_VIDEO | SDL_INIT_AUDIO;
 
 if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
-    printf("Video and Audio initialized.\n");
+    SDL_Log("Video and Audio initialized.");
 } else {
-    printf("Video and Audio not initialized.\n");
+    SDL_Log("Video and Audio not initialized.");
 }
 ```
 
