@@ -19,6 +19,6 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/main/include/S
 This macro is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryVersion]]
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
 
