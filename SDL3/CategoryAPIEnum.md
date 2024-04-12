@@ -46,6 +46,7 @@
 - [SDL_RendererLogicalPresentation](SDL_RendererLogicalPresentation)
 - [SDL_ScaleMode](SDL_ScaleMode)
 - [SDL_Scancode](SDL_Scancode)
+- [SDL_SensorType](SDL_SensorType)
 - [SDL_SystemCursor](SDL_SystemCursor)
 - [SDL_SystemTheme](SDL_SystemTheme)
 - [SDL_TextureAccess](SDL_TextureAccess)
