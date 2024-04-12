@@ -18,6 +18,6 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/S
 This macro is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryAPI]], [[CategorySurface]]
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategorySurface]]
 
 
