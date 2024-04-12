@@ -27,7 +27,7 @@ This hint can be set anytime relative mode is not currently enabled.
 This hint is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryDefine]], [[CategoryHints]]
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryHints]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
 
 
