@@ -44,6 +44,6 @@ This function is available since SDL 3.0.0.
 * [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [[CategorySurface]]
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 
 
