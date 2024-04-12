@@ -6,9 +6,9 @@
 = SDL Scancode Lookup Table =
 
 {|
-|<span bgcolor="#EDEDED">''Decimal Value''</span>
-|<span bgcolor="#EDEDED">''Hexadecimal Value''</span>
-|<span bgcolor="#EDEDED">''SDL_Scancode Constant''</span>
+! style="color:EDEDED" | Decimal Value
+! style="color:EDEDED" | Hexadecimal Value
+! style="color:EDEDED" | SDL_Scancode Constant
 |-
 |0
 |0x000
@@ -974,5 +974,7 @@
 |0x11C
 |SDL_SCANCODE_APP2
 |}
+
 ----
+
 [[CategoryDraft]]
