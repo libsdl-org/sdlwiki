@@ -42,7 +42,15 @@ to [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)().
 This function is only available on Apple iOS.
 
 For more information see:
-https://github.com/libsdl-org/SDL/blob/main/docs/README-ios.md
+
+https://wiki.libsdl.org/SDL3/README/ios
+
+Note that if you use the "main callbacks" instead of a standard C `main`
+function, you don't have to use this API, as SDL will manage this for you.
+
+Details on main callbacks are here:
+
+https://wiki.libsdl.org/SDL3/README/main-functions
 
 ## Version
 
