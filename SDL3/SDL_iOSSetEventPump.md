@@ -7,7 +7,7 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-# SDL_iPhoneSetEventPump
+# SDL_iOSSetEventPump
 
 Use this function to enable or disable the SDL event pump on Apple iOS.
 
@@ -18,7 +18,7 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-void SDL_iPhoneSetEventPump(SDL_bool enabled);
+void SDL_iOSSetEventPump(SDL_bool enabled);
 
 ```
 
@@ -32,16 +32,18 @@ void SDL_iPhoneSetEventPump(SDL_bool enabled);
 
 This function is only available on Apple iOS.
 
-This functions is also accessible using the macro
-[SDL_iOSSetEventPump](SDL_iOSSetEventPump)() since SDL 2.0.4.
-
 ## Version
 
 This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
+* [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)
+
+
+## SDL_iPhoneSetEventPump
+
+Use this function to enable or disable the SDL event pump on Apple iOS.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
