@@ -24,8 +24,7 @@ Returns 0 on success or a negative error code on failure; call
 If you disable the screensaver, it is automatically re-enabled when SDL
 quits.
 
-The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2
-the screensaver was enabled by default.
+The screensaver is disabled by default.
 
 ## Version
 

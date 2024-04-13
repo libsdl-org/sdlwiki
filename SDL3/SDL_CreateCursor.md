@@ -59,9 +59,8 @@ If you want to have a color cursor, or create your cursor from an
 the cursor and draw your own as part of your game's rendering, but it will
 be bound to the framerate.
 
-Also, since SDL 2.0.0, [SDL_CreateSystemCursor](SDL_CreateSystemCursor)()
-is available, which provides twelve readily available system cursors to
-pick from.
+Also, [SDL_CreateSystemCursor](SDL_CreateSystemCursor)() is available,
+which provides several readily-available system cursors to pick from.
 
 ## Version
 

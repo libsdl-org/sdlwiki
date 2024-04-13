@@ -21,8 +21,7 @@ Returns [SDL_TRUE](SDL_TRUE) if the screensaver is enabled,
 
 ## Remarks
 
-The screensaver is disabled by default since SDL 2.0.2. Before SDL 2.0.2
-the screensaver was enabled by default.
+The screensaver is disabled by default.
 
 The default can also be changed using
 [`SDL_HINT_VIDEO_ALLOW_SCREENSAVER`](SDL_HINT_VIDEO_ALLOW_SCREENSAVER).

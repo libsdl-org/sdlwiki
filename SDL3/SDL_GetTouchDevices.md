@@ -32,8 +32,6 @@ On some platforms SDL first sees the touch device if it was actually used.
 Therefore the returned list might be empty, although devices are available.
 After using all devices at least once the number will be correct.
 
-This was fixed for Android in SDL 2.0.1.
-
 ## Version
 
 This function is available since SDL 3.0.0.
