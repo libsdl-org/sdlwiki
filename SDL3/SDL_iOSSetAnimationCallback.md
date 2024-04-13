@@ -7,9 +7,9 @@
 
 
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-# SDL_iPhoneSetAnimationCallback
+# SDL_iOSSetAnimationCallback
 
-Use this function to set the animation callback on Apple iOS.
+The function prototype for `callback` is:
 
 ## Header File
 
@@ -18,7 +18,7 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-int SDL_iPhoneSetAnimationCallback(SDL_Window * window, int interval, void (SDLCALL *callback)(void*), void *callbackParam);
+int SDL_iOSSetAnimationCallback(SDL_Window * window, int interval, void (SDLCALL *callback)(void*), void *callbackParam);
 
 ```
 
@@ -37,8 +37,6 @@ Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
-
-The function prototype for `callback` is:
 
 ```c
 void callback(void* callbackParam);
@@ -63,6 +61,11 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 * [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
+
+
+## SDL_iPhoneSetAnimationCallback
+
+Use this function to set the animation callback on Apple iOS.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
