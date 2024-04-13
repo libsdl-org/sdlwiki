@@ -6,8 +6,6 @@
 - [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 - [SDL_Direct3D9GetAdapterIndex](SDL_Direct3D9GetAdapterIndex)
 - [SDL_DXGIGetOutputInfo](SDL_DXGIGetOutputInfo)
-- [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
-- [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
 - [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
 - [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 <!-- END CATEGORY LIST -->
