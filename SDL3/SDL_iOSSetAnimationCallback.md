@@ -1,15 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_iOSSetAnimationCallback
 
-The function prototype for `callback` is:
+Use this function to set the animation callback on Apple iOS.
 
 ## Header File
 
@@ -38,21 +30,19 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
+The function prototype for `callback` is:
+
 ```c
 void callback(void* callbackParam);
 ```
 
 Where its parameter, `callbackParam`, is what was passed as `callbackParam`
-to [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)().
+to [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)().
 
 This function is only available on Apple iOS.
 
 For more information see:
 https://github.com/libsdl-org/SDL/blob/main/docs/README-ios.md
-
-This functions is also accessible using the macro
-[SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)() since SDL
-2.0.4.
 
 ## Version
 
@@ -60,14 +50,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
-
-
-## SDL_iPhoneSetAnimationCallback
-
-Use this function to set the animation callback on Apple iOS.
+* [SDL_iOSSetEventPump](SDL_iOSSetEventPump)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

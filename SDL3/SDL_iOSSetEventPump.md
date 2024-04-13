@@ -1,12 +1,4 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_iOSSetEventPump
 
 Use this function to enable or disable the SDL event pump on Apple iOS.
@@ -40,12 +32,6 @@ This function is available since SDL 3.0.0.
 
 * [SDL_iOSSetAnimationCallback](SDL_iOSSetAnimationCallback)
 
-
-## SDL_iPhoneSetEventPump
-
-Use this function to enable or disable the SDL event pump on Apple iOS.
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
