@@ -12,7 +12,6 @@ Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/
 ```c
 typedef struct SDL_VirtualJoystickDesc
 {
-    Uint16 version;     /**< `SDL_VIRTUAL_JOYSTICK_DESC_VERSION` */
     Uint16 type;        /**< `SDL_JoystickType` */
     Uint16 naxes;       /**< the number of axes on this joystick */
     Uint16 nbuttons;    /**< the number of buttons on this joystick */
@@ -33,17 +32,12 @@ typedef struct SDL_VirtualJoystickDesc
     int (SDLCALL *RumbleTriggers)(void *userdata, Uint16 left_rumble, Uint16 right_rumble); /**< Implements SDL_RumbleJoystickTriggers() */
     int (SDLCALL *SetLED)(void *userdata, Uint8 red, Uint8 green, Uint8 blue); /**< Implements SDL_SetJoystickLED() */
     int (SDLCALL *SendEffect)(void *userdata, const void *data, int size); /**< Implements SDL_SendJoystickEffect() */
-
 } SDL_VirtualJoystickDesc;
 ```
 
 ## Remarks
 
-The caller must zero the structure and then initialize the version with
-[`SDL_VIRTUAL_JOYSTICK_DESC_VERSION`](SDL_VIRTUAL_JOYSTICK_DESC_VERSION)
-before passing it to
-[SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)() All other
-elements of this structure are optional and can be left 0.
+All other elements of this structure are optional and can be left 0.
 
 ## Version
 
