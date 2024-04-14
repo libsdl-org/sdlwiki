@@ -46,7 +46,6 @@
 - [SDL_HasAVX2](SDL_HasAVX2)
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 - [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
-- [SDL_PointInRect](SDL_PointInRect)
 - [SDL_ReadU8](SDL_ReadU8)
 - [SDL_ScancodeAndKeycode](SDL_ScancodeAndKeycode)
 - [SDL_SetCursor](SDL_SetCursor)
