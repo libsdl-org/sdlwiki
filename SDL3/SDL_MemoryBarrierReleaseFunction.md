@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_MemoryBarrierReleaseFunction
 
-Memory barriers are designed to prevent reads and writes from being reordered by the compiler and being seen out of order on multi-core CPUs.
+Insert a memory release barrier.
 
 ## Header File
 
@@ -15,6 +15,9 @@ void SDL_MemoryBarrierReleaseFunction(void);
 ```
 
 ## Remarks
+
+Memory barriers are designed to prevent reads and writes from being
+reordered by the compiler and being seen out of order on multi-core CPUs.
 
 A typical pattern would be for thread A to write some data and a flag, and
 for thread B to read the flag and get the data. In this case you would
@@ -30,6 +33,12 @@ flag variable.
 
 For more information on these semantics, take a look at the blog post:
 http://preshing.com/20120913/acquire-and-release-semantics
+
+## Thread Safety
+
+Obviously this macro is safe to use from any thread at any time, but if you
+find yourself needing this, you are probably dealing with some very
+sensitive code; be careful!
 
 ## Version
 
