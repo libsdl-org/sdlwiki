@@ -13,9 +13,6 @@
 |[[FAQDevelopment|Development]] 
 |General questions about developing with SDL 
 |-
-|[[FAQLinux|Linux]] 
-|Questions regarding SDL on Linux 
-|-
 |[[FAQWindows|Windows]] 
 |Questions regarding SDL on Windows 
 |-
