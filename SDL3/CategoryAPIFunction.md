@@ -629,6 +629,7 @@
 - [SDL_MapRGB](SDL_MapRGB)
 - [SDL_MapRGBA](SDL_MapRGBA)
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
+- [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_MemoryBarrierReleaseFunction](SDL_MemoryBarrierReleaseFunction)
 - [SDL_Metal_CreateView](SDL_Metal_CreateView)
 - [SDL_Metal_DestroyView](SDL_Metal_DestroyView)

@@ -4,5 +4,4 @@
 - [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
 - [SDL_AtomicSet](SDL_AtomicSet)
 - [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
-- [SDL_CompilerBarrier](SDL_CompilerBarrier)
 <!-- END CATEGORY LIST -->
