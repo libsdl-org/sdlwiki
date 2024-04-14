@@ -1,15 +1,15 @@
-====== (This is the documentation for SDL3, which is under heavy development and the API is changing! [https://wiki.libsdl.org/SDL2/ SDL2] is the current stable version!) ======
-= SDL_SensorType =
+###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
+# SDL_SensorType
 
 The different sensors defined by SDL
 
-== Header File ==
+## Header File
 
 Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h), but apps should _only_ `#include <SDL3/SDL.h>`!
 
-== Syntax ==
+## Syntax
 
-<syntaxhighlight lang='c'>
+```c
 typedef enum SDL_SensorType
 {
     SDL_SENSOR_INVALID = -1,    /**< Returned for an invalid sensor */
@@ -20,9 +20,10 @@ typedef enum SDL_SensorType
     SDL_SENSOR_GYRO_L,          /**< Gyroscope for left Joy-Con controller */
     SDL_SENSOR_ACCEL_R,         /**< Accelerometer for right Joy-Con controller */
     SDL_SENSOR_GYRO_R           /**< Gyroscope for right Joy-Con controller */
-} SDL_SensorType;</syntaxhighlight>
+} SDL_SensorType;
+```
 
-== Remarks ==
+## Remarks
 
 Additional sensors may be available, using platform dependent semantics.
 
@@ -30,6 +31,5 @@ Hare are the additional Android sensors:
 https://developer.android.com/reference/android/hardware/SensorEvent.html#values
 
 ----
-[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryEnum]], [[CategorySensor]]
-
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 
