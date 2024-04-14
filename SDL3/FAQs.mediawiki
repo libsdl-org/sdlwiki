@@ -22,6 +22,4 @@
 |[[FAQMacOSX|Mac OS X]] 
 |Questions regarding SDL on Mac OS X 
 |-
-|[[FAQiOS|iOS]] 
-|Questions regarding SDL on iOS
 |}
