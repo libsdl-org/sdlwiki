@@ -37,8 +37,6 @@
 - [SDL_qsort_r](SDL_qsort_r)
 - [SDL_realloc](SDL_realloc)
 - [SDL_setenv](SDL_setenv)
-- [SDL_size_add_overflow_builtin](SDL_size_add_overflow_builtin)
-- [SDL_size_mul_overflow_builtin](SDL_size_mul_overflow_builtin)
 - [SDL_snprintf](SDL_snprintf)
 - [SDL_sscanf](SDL_sscanf)
 - [SDL_strcasestr](SDL_strcasestr)
