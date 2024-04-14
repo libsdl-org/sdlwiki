@@ -6,7 +6,7 @@ Very simply, Simple DirectMedia Layer, or SDL for short, is a library that allow
 ## What platforms are supported?
 The current version supports Windows, macOS, Linux, iOS, and Android.  SDL includes code for many other operating systems but they are not officially supported.  See [the page about Installation](Installation) for the most recent list.
 
-## What is the latest version? ==
+## What is the latest version?
 The latest stable version is SDL3. You can always get the very latest bleeding edge Git snapshot, which may be broken at any given time, from [the GitHub project page](https://github.com/libsdl-org/SDL).
 
 ## Where can I get it?
@@ -25,7 +25,7 @@ We run a Discourse server [here](https://discourse.libsdl.org/), which can be pu
 Yes, you can find people hanging out on the IRC server at irc.libera.chat on the channel #SDL
 
 ## Is there a Discord server?
-Yes, [https://discord.com/invite/BwpFGBWsv8 go here]!
+Yes, [go here](https://discord.com/invite/BwpFGBWsv8)!
 
 ## Is there an official logo?
 Yes, the official SDL logo was created by Arne Claus, and is available [here](https://www.libsdl.org/media/SDL_logo_b.png).
