@@ -44,8 +44,6 @@ This wiki is your portal to documentation and other resources for SDL 3.0.
 *: A few of the most commonly asked questions about using SDL are answered here.
 * [https://discourse.libsdl.org/ Forums]
 *: A great place to keep up with the latest news, help other users out, and ask questions.
-* [[Contributing]]
-*: Users wishing to contribute content to the wiki should follow the guidelines provided in this guide.
 
 We hope you find everything you are looking for and enjoy using SDL.  If anything is not addressed somewhere here, feel free to [https://github.com/libsdl-org/SDL/issues open an issue] or [https://github.com/libsdl-org/SDL/pulls submit a pull request].
 
