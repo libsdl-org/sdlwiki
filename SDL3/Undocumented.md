@@ -2,7 +2,6 @@
 
 ## Functions defined in the headers, but not in the wiki
 
-- [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
 - [SDL_OnApplicationDidEnterBackground](SDL_OnApplicationDidEnterBackground)
