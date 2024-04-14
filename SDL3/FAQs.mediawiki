@@ -12,11 +12,4 @@
 |-
 |[[FAQDevelopment|Development]] 
 |General questions about developing with SDL 
-|-
-|[[FAQWindows|Windows]] 
-|Questions regarding SDL on Windows 
-|-
-|[[FAQMacOSX|Mac OS X]] 
-|Questions regarding SDL on Mac OS X 
-|-
 |}
