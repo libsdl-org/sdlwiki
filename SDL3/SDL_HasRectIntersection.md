@@ -11,7 +11,7 @@ Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3
 
 ```c
 SDL_bool SDL_HasRectIntersection(const SDL_Rect * A,
-                             const SDL_Rect * B);
+                                 const SDL_Rect * B);
 
 ```
 
@@ -30,6 +30,10 @@ Returns [SDL_TRUE](SDL_TRUE) if there is an intersection,
 ## Remarks
 
 If either pointer is NULL the function will return [SDL_FALSE](SDL_FALSE).
+
+## Thread Safety
+
+It is safe to call this function from any thread.
 
 ## Version
 

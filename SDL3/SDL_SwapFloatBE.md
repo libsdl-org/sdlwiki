@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SwapFloatBE
 
-Swap a floating point value from bigendian to native format.
+Swap a floating point value from bigendian to native byte order.
 
 ## Header File
 
@@ -10,24 +10,24 @@ Defined in [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ## Syntax
 
 ```c
-#define SDL_SwapFloatBE(X) SwapOnlyIfNecessary(X)
+#define SDL_SwapFloatBE(x) SwapOnlyIfNecessary(x)
 ```
 
 ## Macro Parameters
 
-|           |                    |
-| --------- | ------------------ |
-| **X**     | the value to swap. |
+|           |                                             |
+| --------- | ------------------------------------------- |
+| **x**     | the value to swap, in bigendian byte order. |
 
 ## Return Value
 
-Returns the byte-swapped value.
+Returns `x` in native byte order.
 
 ## Remarks
 
-If this is running on a bigendian system, `X` is returned unchanged.
+If this is running on a bigendian system, `x` is returned unchanged.
 
-This macro never references `X` more than once, avoiding side effects.
+This macro never references `x` more than once, avoiding side effects.
 
 ## Version
 
