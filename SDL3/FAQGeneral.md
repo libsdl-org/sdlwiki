@@ -16,13 +16,13 @@ The latest stable version is SDL3. You can always get the very latest bleeding e
 You can send questions and feedback through the SDL [forums/mailing list](https://discourse.libsdl.org/) or using the _Feedback_ link (at the bottom of any wiki page).
 
 ## Where do I send bug reports / patches?
-You can submit bug reports to [SDL's GitHub issue tracker](https://github.com/libsdl-org/SDL/issues) and, if you like, [send patches as GitHub pull requests]https://github.com/libsdl-org/SDL/pulls).
+You can submit bug reports to [SDL's GitHub issue tracker](https://github.com/libsdl-org/SDL/issues) and, if you like, [send patches as GitHub pull requests](https://github.com/libsdl-org/SDL/pulls).
 
 ## Is there a mailing list?
 We run a Discourse server [here](https://discourse.libsdl.org/), which can be put in "Mailing List Mode," where you create an account on the website, flip a switch in the preferences, and then can interact exclusively through email thereafter.
 
 ## Is there an IRC channel?
-Yes, you can find people hanging out on the IRC server at irc.libera.chat on the channel #SDL
+Yes, you can find people hanging out on the IRC server at irc.libera.chat on the channel `#SDL`
 
 ## Is there a Discord server?
 Yes, [go here](https://discord.com/invite/BwpFGBWsv8)!
