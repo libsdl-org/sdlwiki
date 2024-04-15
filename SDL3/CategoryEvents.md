@@ -14,7 +14,6 @@
 - [SDL_PollEvent](SDL_PollEvent)
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_PushEvent](SDL_PushEvent)
-- [SDL_QuitRequested](SDL_QuitRequested)
 - [SDL_RegisterEvents](SDL_RegisterEvents)
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 - [SDL_WaitEvent](SDL_WaitEvent)

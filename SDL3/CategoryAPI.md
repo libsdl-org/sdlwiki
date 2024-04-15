@@ -1113,7 +1113,6 @@
 - [SDL_QueueAudio](SDL_QueueAudio)
 - [SDL_Quit](SDL_Quit)
 - [SDL_QuitEvent](SDL_QuitEvent)
-- [SDL_QuitRequested](SDL_QuitRequested)
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 - [SDL_ReadIO](SDL_ReadIO)
