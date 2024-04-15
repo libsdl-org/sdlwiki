@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_PutAudioStreamData
 
-Add data to be converted/resampled to the stream.
+Add data to the stream.
 
 ## Header File
 
@@ -33,7 +33,7 @@ This data must match the format/channels/samplerate specified in the latest
 call to [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat), or the format
 specified when creating the stream if it hasn't been changed.
 
-Note that this call simply queues unconverted data for later. This is
+Note that this call simply copies the unconverted data for later. This is
 different than SDL2, where data was converted during the Put call and the
 Get call would just dequeue the previously-converted data.
 
