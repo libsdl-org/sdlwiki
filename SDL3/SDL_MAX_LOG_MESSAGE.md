@@ -5,7 +5,7 @@ The maximum size of a log message prior to SDL 2.0.24.
 
 ## Header File
 
-Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_log.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_log.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 

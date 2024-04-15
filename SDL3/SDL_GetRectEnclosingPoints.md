@@ -5,7 +5,7 @@ Calculate a minimal rectangle enclosing a set of points.
 
 ## Header File
 
-Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Get The Serial Number String from a HID device.
 
 ## Header File
 
-Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hidapi.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hidapi.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 

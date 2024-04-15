@@ -5,7 +5,7 @@ This is a unique ID for a camera device for the time it is connected to the syst
 
 ## Header File
 
-Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 

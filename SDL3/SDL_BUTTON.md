@@ -5,7 +5,7 @@ Used as a mask when testing buttons in buttonstate.
 
 ## Header File
 
-Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mouse.h), but apps should _only_ `#include <SDL3/SDL.h>`!
+Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mouse.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 
