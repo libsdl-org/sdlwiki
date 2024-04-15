@@ -974,8 +974,8 @@
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_KeyboardDeviceEvent](SDL_KeyboardDeviceEvent)
 - [SDL_KeyboardEvent](SDL_KeyboardEvent)
-- [SDL_Keycode](SDL_Keycode)
 - [SDL_KeyCode](SDL_KeyCode)
+- [SDL_Keycode](SDL_Keycode)
 - [SDL_Keymod](SDL_Keymod)
 - [SDL_Keysym](SDL_Keysym)
 - [SDL_LinuxSetThreadPriority](SDL_LinuxSetThreadPriority)
@@ -1468,4 +1468,5 @@
 - [SDL_WriteU64BE](SDL_WriteU64BE)
 - [SDL_WriteU64LE](SDL_WriteU64LE)
 - [SDL_WriteU8](SDL_WriteU8)
+- [SDLK_UNKNOWN](SDLK_UNKNOWN)
 <!-- END CATEGORY LIST -->
