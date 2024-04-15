@@ -27,7 +27,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_IsEventEnabled](SDL_IsEventEnabled)
+* [SDL_EventEnabled](SDL_EventEnabled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
