@@ -16,7 +16,7 @@ This wiki is your portal to documentation and other resources for SDL 3.0.
 == Using the SDL documentation Wiki ==
 
 * [[Introduction]]
-*: An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 2.0!
+*: An introduction to the features in SDL 2.0.<br/>Includes a Migration Guide from 1.2 to 3.0!
 * [[SourceCode|Source Code]]
 *: How to download the source code to SDL.
 * [[Installation]]
