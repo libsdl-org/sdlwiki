@@ -1,25 +1,18 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_RectEmpty =
-Use this function to check whether a rectangle has no area.
 
+Returns true if the rectangle has no area.
+
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_RectEmpty(const SDL_Rect* r)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''r'''
-|the [[SDL_Rect]] structure representing the rectangle to check
-|}
-
-== Return Value ==
-Returns SDL_TRUE if the rectangle has no area or SDL_FALSE if it does; see [[#Remarks|Remarks]] for details.
-
-== Remarks ==
-If the rectangle defined by '''r''' is NULL or has a width or height <= 0 it has no area and this function returns SDL_TRUE.  If both width and height are > 0 the rectangle has area and this function returns SDL_FALSE.
-
+<syntaxhighlight lang='c'>
+SDL_FORCE_INLINE SDL_bool SDL_RectEmpty(const SDL_Rect *r);</syntaxhighlight>
 
 ----
-[[CategoryAPI]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryRect]]
+
+

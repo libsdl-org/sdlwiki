@@ -1,25 +1,34 @@
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_SwapFloat =
+
 Use this function to swap the byte order of a floating point value.
 
+== Header File ==
+
+Defined in [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_endian.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-float SDL_SwapFloat(float x)
 
-</syntaxhighlight>
+<syntaxhighlight lang='c'>
+SDL_FORCE_INLINE float SDL_SwapFloat(float x);</syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''x'''
 |the value to be swapped
 |}
 
 == Return Value ==
+
 Returns the swapped value.
-== Related Functions ==
+
+== See Also ==
+
 :[[SDL_SwapFloatBE]]
 :[[SDL_SwapFloatLE]]
 
 ----
-[[CategoryAPI]], [[CategoryEndian]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryEndian]]
+
+

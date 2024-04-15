@@ -1,31 +1,30 @@
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
-
-
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_MostSignificantBitIndex32 =
+
 Use this function to get the index of the most significant (set) bit in a
-32-bit number. This is also the same as the base 2 logarithm of the number.
 
+== Header File ==
 
-
+Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_bits.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-int SDL_MostSignificantBitIndex32(Uint32 x)
-</syntaxhighlight>
 
+<syntaxhighlight lang='c'>
+SDL_FORCE_INLINE int SDL_MostSignificantBitIndex32(Uint32 x);</syntaxhighlight>
 
 == Function Parameters ==
+
 {|
 |'''x'''
 |the number to find the MSB of
 |}
 
-
 == Return Value ==
+
 Returns the index of the most significant bit of x, or -1 if x is 0.
 
 == Code Examples ==
+
 <syntaxhighlight lang='c++'>
 #include "SDL_bits.h"
 
@@ -35,5 +34,7 @@ if (bitmask) {
 </syntaxhighlight>
 
 ----
-[[CategoryAPI]], [[CategoryBits]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryBits]]
 <!-- #See the Style Guide for instructions on editing the footer. -->
+
+

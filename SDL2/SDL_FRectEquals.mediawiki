@@ -1,27 +1,22 @@
+====== (This is the legacy documentation for stable SDL2, the current stable version; [https://wiki.libsdl.org/SDL3/ SDL3] is the current development version.) ======
 = SDL_FRectEquals =
-Use this function to check whether two rectangles are equal.
 
+Returns true if the two rectangles are equal, using a default epsilon.
+
+== Header File ==
+
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
 
 == Syntax ==
-<syntaxhighlight lang='c++'>
-SDL_bool SDL_FRectEquals(const SDL_FRect* a,
-                        const SDL_FRect* b)
-</syntaxhighlight>
 
-== Function Parameters ==
-{|
-|'''a'''
-|an [[SDL_FRect]] structure representing the first rectangle
-|-
-|'''b'''
-|an [[SDL_FRect]] structure representing the second rectangle
-|}
+<syntaxhighlight lang='c'>
+SDL_FORCE_INLINE SDL_bool SDL_FRectEquals(const SDL_FRect *a, const SDL_FRect *b);</syntaxhighlight>
 
-== Return Value ==
-Returns SDL_TRUE if the two rectangles are exactly the same, SDL_FALSE otherwise; see [[#Remarks|Remarks]] for details.  
+== Version ==
 
-== Remarks ==
-This function compares the width, height, and location (X and Y) values for each of the two rectangles and returns SDL_TRUE if all corresponding values are equal.  If any value does not match or either rectangle is NULL it returns SDL_FALSE.
+This function is available since SDL 2.0.22.
 
 ----
-[[CategoryAPI]], [[CategoryRect]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryRect]]
+
+

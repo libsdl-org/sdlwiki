@@ -4,6 +4,7 @@
 
 - [SDL_DuplicateSurface](SDL_DuplicateSurface)
 - [SDL_Error](SDL_Error)
+- [SDL_HasExactlyOneBitSet32](SDL_HasExactlyOneBitSet32)
 - [SDL_MemoryBarrierAcquireFunction](SDL_MemoryBarrierAcquireFunction)
 - [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
 - [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
@@ -72,8 +73,10 @@
 - [SDL_malloc](SDL_malloc)
 - [SDL_memcmp](SDL_memcmp)
 - [SDL_memcpy](SDL_memcpy)
+- [SDL_memcpy4](SDL_memcpy4)
 - [SDL_memmove](SDL_memmove)
 - [SDL_memset](SDL_memset)
+- [SDL_memset4](SDL_memset4)
 - [SDL_pow](SDL_pow)
 - [SDL_powf](SDL_powf)
 - [SDL_qsort](SDL_qsort)
@@ -134,4 +137,6 @@
 - [SDL_wcsncasecmp](SDL_wcsncasecmp)
 - [SDL_wcsncmp](SDL_wcsncmp)
 - [SDL_wcsstr](SDL_wcsstr)
+- [_SDL_size_add_overflow_builtin](_SDL_size_add_overflow_builtin)
+- [_SDL_size_mul_overflow_builtin](_SDL_size_mul_overflow_builtin)
 
