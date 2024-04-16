@@ -37,7 +37,7 @@ typedef struct SDL_VirtualJoystickDesc
 
 ## Remarks
 
-All other elements of this structure are optional and can be left 0.
+All elements of this structure are optional and can be left 0.
 
 ## Version
 
