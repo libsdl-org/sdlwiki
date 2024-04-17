@@ -34,15 +34,11 @@ to the stream. If this fails for any reason, it'll return less than `size`
 to demonstrate how far the write progressed. On success, it returns `num`.
 
 On error, this function still attempts to write as much as possible, so it
-might return a positive value less than the requested write size. If the
-function failed to write anything and there was an actual error, it will
-return -1. For streams that support non-blocking operation, if nothing was
-written because it would require blocking, this function returns -2 to
-distinguish that this is not an error and the caller can try again later.
+might return a positive value less than the requested write size.
 
-It is an error to specify a negative `size`, but this parameter is signed
-so you definitely cannot overflow the return value on a successful run with
-enormous amounts of data.
+The caller can use [SDL_GetIOStatus](SDL_GetIOStatus)() to determine if the
+problem is recoverable, such as a non-blocking write that can simply be
+retried later, or a fatal error.
 
 ## Version
 
@@ -53,6 +49,7 @@ This function is available since SDL 3.0.0.
 * [SDL_IOprintf](SDL_IOprintf)
 * [SDL_ReadIO](SDL_ReadIO)
 * [SDL_SeekIO](SDL_SeekIO)
+* [SDL_GetIOStatus](SDL_GetIOStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -30,11 +30,9 @@ Returns the number of bytes read, or 0 on end of file or other error.
 
 This function reads up `size` bytes from the data source to the area
 pointed at by `ptr`. This function may read less bytes than requested. It
-will return zero when the data stream is completely read, or -1 on error.
-For streams that support non-blocking operation, if nothing was read
-because it would require blocking, this function returns -2 to distinguish
-that this is not an error or end-of-file, and the caller can try again
-later.
+will return zero when the data stream is completely read, or on error. To
+determine if there was an error or all data was read, call
+[SDL_GetIOStatus](SDL_GetIOStatus)().
 
 ## Version
 
@@ -42,8 +40,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SeekIO](SDL_SeekIO)
 * [SDL_WriteIO](SDL_WriteIO)
+* [SDL_GetIOStatus](SDL_GetIOStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
