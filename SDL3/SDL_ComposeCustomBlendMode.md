@@ -111,12 +111,6 @@ factors do not have an effect in this case.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-You can add your code example here
-```
-
 ## See Also
 
 * [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)

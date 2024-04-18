@@ -19,15 +19,15 @@ Convenience macro.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 
-    ...
+    /* ... */
 
-    SDL_Surface *sfc = ...
+    SDL_Surface *sfc /* = ... */;
 
-    ...
+    /* ... */
   
-    if(SDL_SaveBMP(sfc, "somefile.bmp") != 0)
+    if (SDL_SaveBMP(sfc, "somefile.bmp") != 0)
     {
         // Error saving bitmap
         printf("SDL_SaveBMP failed: %s\n", SDL_GetError());

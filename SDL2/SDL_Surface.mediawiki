@@ -39,7 +39,7 @@ typedef struct SDL_Surface
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 /* This is meant to show how to edit a surface's pixels on the CPU, but
    normally you should use SDL_FillRect() to wipe a surface's contents. */
 void WipeSurface(SDL_Surface *surface)

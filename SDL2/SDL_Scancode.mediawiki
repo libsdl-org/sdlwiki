@@ -418,7 +418,9 @@ https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
+  extern SDL_Event *event;
+
   /* checks if a key is being remapped and prints what the remapping is */
   if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym)) {
     SDL_Log("Physical %s key acting as %s key",

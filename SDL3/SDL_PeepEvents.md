@@ -52,12 +52,6 @@ This function is thread-safe.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-Add a code example here.
-```
-
 ## See Also
 
 * [SDL_PollEvent](SDL_PollEvent)

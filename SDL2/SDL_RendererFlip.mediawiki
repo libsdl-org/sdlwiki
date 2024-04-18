@@ -19,7 +19,14 @@ typedef enum SDL_RendererFlip
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
+extern SDL_Renderer *renderer;
+extern SDL_Texture *texture;
+extern SDL_Rect srcrect;
+extern SDL_Rect dstrect;
+extern int angle;
+extern SDL_Point center;
+
 /* casts may be necessary for some compiler settings or languages (e.g. C++) */
 SDL_RendererFlip flip = SDL_FLIP_HORIZONTAL | SDL_FLIP_VERTICAL;
 
