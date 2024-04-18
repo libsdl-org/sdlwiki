@@ -16,7 +16,6 @@
 - [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 - [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
-- [SDL_GL_BindTexture](SDL_GL_BindTexture)
 - [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 - [SDL_LockTexture](SDL_LockTexture)
 - [SDL_QueryTexture](SDL_QueryTexture)

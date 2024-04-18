@@ -29,7 +29,6 @@
 - [SDL_GetWindowSize](SDL_GetWindowSize)
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
 - [SDL_GetWindowTitle](SDL_GetWindowTitle)
-- [SDL_GetWindowWMInfo](SDL_GetWindowWMInfo)
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
 - [SDL_GL_DeleteContext](SDL_GL_DeleteContext)
 - [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
