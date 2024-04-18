@@ -50,7 +50,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-#include "SDL.h"
+#include <SDL3/SDL.h>
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
 static int TestThread(void *ptr)

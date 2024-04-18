@@ -94,7 +94,7 @@ This function is available since SDL 3.0.0.
 // Example program:
 // Using SDL2 to create an application window
 
-#include "SDL.h"
+#include <SDL3/SDL.h>
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {

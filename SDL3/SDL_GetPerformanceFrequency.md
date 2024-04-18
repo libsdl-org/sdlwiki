@@ -25,7 +25,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
-#include "SDL.h"
+#include <SDL3/SDL.h>
 
 #define DEFAULT_RESOLUTION  1
 
