@@ -28,9 +28,11 @@ to [[SDLK_0]]...[[SDLK_9]] on AZERTY layouts.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
+  extern SDL_Event *event;
+
   //checks if a key is being remapped and prints what the remapping is
-  if(event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
+  if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
     printf("Physical %s key acting as %s key",
       SDL_GetScancodeName(event->key.keysym.scancode),
       SDL_GetKeyName(event->key.keysym.sym));

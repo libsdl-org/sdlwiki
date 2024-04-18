@@ -40,12 +40,6 @@ cursor redraw, if this is desired for any reason.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-You can add your code example here
-```
-
 ## See Also
 
 * [SDL_GetCursor](SDL_GetCursor)

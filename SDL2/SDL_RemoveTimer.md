@@ -41,27 +41,30 @@ This function is available since SDL 2.0.0.
 
 Uint32 callback(Uint32 interval, void* name) {
 
-    printf("Hello %s!\n", static_cast<char*>(name));
+    printf("Hello %s!\n", (const char*)name);
        
     return 0;
 }
 
-...
+/* ... */
 
 // Initialize timer
 
-if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) < 0)
+if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) < 0) {
+  SDL_Log("SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) failed: %s", SDL_GetError());
+}
 
-...
+/* ... */
 
 // Set timer to 1 second
 
-SDL_TimerID timerID = SDL_AddTimer(1000, callback, const_cast<char*>("SDL"));
+SDL_TimerID timerID = SDL_AddTimer(1000, callback, "SDL");
 
 // Main loop
 
+SDL_bool quit;
 while(!quit) {
-    ...
+    /* ... */
 }
 
 // Remove timer after main loop

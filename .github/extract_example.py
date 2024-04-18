@@ -14,6 +14,7 @@ RE_MARKDOWN_CODE = re.compile(r"^```([^\n]*)")
 
 
 def markdown_extract(path: Path):
+    results = []
     in_example_section = False
     in_example_block = False
     in_code_block = False
@@ -34,14 +35,19 @@ def markdown_extract(path: Path):
                         block_language = "c"
                     assert block_language in ("c", "c++", "output"), f"language is \"{block_language}\""
                 in_code_block = not in_code_block
+                was_in_example_block = in_example_block
                 in_example_block = in_code_block and block_language in ("c", "c++")
+                if was_in_example_block and not in_example_block:
+                    results.append((language, "".join(example_code_lines)))
+                    language = None
+                    example_code_lines = []
                 if in_example_block:
                     language = block_language
                 continue
             if in_example_block:
                 example_code_lines.append(line)
 
-    return language, "".join(example_code_lines)
+    return results
 
 
 RE_MEDIAWIKI_SECTION = re.compile(r"^==([^=]+)==")
@@ -50,6 +56,7 @@ RE_MEDIAWIKI_CODE_END = re.compile(r"^\s*</syntaxhighlight>")
 
 
 def mediawiki_extract(path: Path):
+    results = []
     in_example_section = False
     in_code_block = False
     language = None
@@ -70,13 +77,16 @@ def mediawiki_extract(path: Path):
                 in_code_block = True
                 continue
             if in_code_block:
-                if m:= RE_MEDIAWIKI_CODE_END.match(line):
+                if m := RE_MEDIAWIKI_CODE_END.match(line):
                     in_code_block = False
+                    results.append((language, "".join(example_code_lines)))
+                    language = None
+                    example_code_lines = []
                     continue
             if in_code_block:
                 example_code_lines.append(line)
 
-    return language, "".join(example_code_lines)
+    return results
 
 
 def headers_from_path(path: Path) -> list[str]:
@@ -110,51 +120,57 @@ def headers_from_path(path: Path) -> list[str]:
     return headers
 
 
-def extract_example(path: Path, docroot: Path, outdir: Path) -> Optional[Union[Path, int]]:
+def extract_example(path: Path, docroot: Path, outdir: Path) -> list[Optional[Union[Path, int]]]:
     if path.suffix == ".mediawiki":
-        language, example_code = mediawiki_extract(path)
+        examples = mediawiki_extract(path)
     elif path.suffix == ".md":
-        language, example_code = markdown_extract(path)
+        examples = markdown_extract(path)
     else:
         print(f"Invalid document \"{path}\"", file=sys.stderr)
         return 2
 
-    if not example_code or not language:
+    if not examples:
         print(f"No example code found in \"{path}\"", file=sys.stderr)
         return None
 
-    if "int argc" not in example_code:
-        example_code = "int main(int argc, char *argv[]) {\n (void)argc;\n (void)argv;\n" + example_code + " return 0;\n}\n"
+    outpaths = []
 
-    if "#include" not in example_code:
-        headers = headers_from_path(path)
-        if language == "c++":
+    for example_i, (language, example_code) in enumerate(examples):
+        if "int argc" not in example_code and "#include" not in example_code:
+            example_code = "int example_function(void) {\n" + example_code + " return 0;\n}\n"
+
+        if "#include" not in example_code:
+            headers = headers_from_path(path)
+            if language == "c++":
+                headers.extend([
+                    "iostream",
+                    "vector",
+                ])
             headers.extend([
-                "iostream",
-                "vector",
+                "stdio.h",
+                "stdlib.h",
             ])
-        headers.extend([
-            "stdio.h",
-            "stdlib.h",
-        ])
-        example_code = "\n".join(f"#include <{f}>" for f in headers) + "\n" + example_code
+            example_code = "\n".join(f"#include <{f}>" for f in headers) + "\n" + example_code
 
-    doc_relative = path.relative_to(docroot)
+        doc_relative = path.relative_to(docroot)
 
-    out_suffix = {
-        "c": ".c",
-        "c++": ".cpp",
-    }[language]
-    outpath = outdir / doc_relative
-    outpath = outpath.with_suffix(out_suffix)
+        out_suffix = {
+            "c": ".c",
+            "c++": ".cpp",
+        }[language]
+        outpath = outdir / doc_relative
+        if len(examples) > 1:
+            outpath = outpath.with_stem(outpath.stem + f"-{example_i + 1}")
+        outpath = outpath.with_suffix(out_suffix)
 
-    parent = outpath.parent
-    parent.mkdir(exist_ok=True)
+        parent = outpath.parent
+        parent.mkdir(exist_ok=True)
 
-    with outpath.open("w") as f:
-        f.write(example_code)
+        with outpath.open("w") as f:
+            f.write(example_code)
 
-    return outpath
+        outpaths.append(outpath)
+    return outpaths
 
 
 def main():
@@ -171,11 +187,14 @@ def main():
 
     cmake_example_paths = []
     rc = 0
-    for path, example_path in zip(args.doc, example_paths):
+    for example_path in example_paths:
         if example_path is None:
             continue
         if isinstance(example_path, Path):
             cmake_example_paths.append(str(example_path))
+            continue
+        if isinstance(example_path, list):
+            cmake_example_paths.extend(str(p) for p in example_path)
             continue
         if example_path == 2:
             rc = 2

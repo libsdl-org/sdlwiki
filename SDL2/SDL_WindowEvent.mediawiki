@@ -26,8 +26,8 @@ typedef struct SDL_WindowEvent
 == Code Examples ==
 
 <!-- #Example1 Start -->
-<syntaxhighlight lang='c++'>
-void PrintEvent(const SDL_Event * event)
+<syntaxhighlight lang='c'>
+void PrintEvent(const SDL_Event *event)
 {
     if (event->type == SDL_WINDOWEVENT) {
         switch (event->window.event) {

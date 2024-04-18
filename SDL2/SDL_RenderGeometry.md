@@ -45,6 +45,9 @@ This function is available since SDL 2.0.18.
 ## Example
 
 ```c
+SDL_Renderer *renderer;
+SDL_Texture *texture;
+
 // Create three vertices to render
 
 SDL_Vertex vertex_1 = {{10.5, 10.5}, {255, 0, 0, 255}, {1, 1}};

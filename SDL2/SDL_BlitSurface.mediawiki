@@ -28,7 +28,11 @@ If either \c srcrect or \c dstrect are NULL, the entire surface (\c src or
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
+extern SDL_Surface *surface;
+extern SDL_Rect source_rect;
+SDL_Surface *temp_surface;
+     
 SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 </syntaxhighlight>
 

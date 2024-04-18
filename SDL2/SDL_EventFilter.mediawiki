@@ -29,7 +29,7 @@ When used with [[SDL_AddEventWatch]], the return value is ignored.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 int MyEventFunction(void *userdata, SDL_Event *event) {
     // Do things with userdata and event
 

@@ -5,7 +5,7 @@ Use this function to get the index of the most significant (set) bit in a
 
 == Header File ==
 
-Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_bits.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_bits.h).
 
 == Syntax ==
 
@@ -25,11 +25,24 @@ Returns the index of the most significant bit of x, or -1 if x is 0.
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
+
+#include "SDL.h"
 #include "SDL_bits.h"
 
-if (bitmask) {
-    int index = SDL_MostSignificantBitIndex32(bitmask);
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    SDL_Log("Usage: %s <number", argv[0]);
+    return 1;
+  }
+  int bitmask = SDL_atoi(argv[1]);
+  if (bitmask < 0) {
+    SDL_Log("Number must be positive");
+    return 1;
+  }
+  int index = SDL_MostSignificantBitIndex32(bitmask);
+  SDL_Log("MSB index is %d", index);
+  return 0;
 }
 </syntaxhighlight>
 

@@ -40,28 +40,29 @@ This function is available since SDL 2.0.0.
 
 void callback(void* f_name, const char* name, const char* oldValue, const char* newValue) {
   if (newValue == (const char*)"1") {
-    printf("Hi %s\n", static_cast<char*>(f_name));
+    printf("Hi %s\n", (const char *)f_name);
   }
 }
 
-...
+/* ... */
 
 SDL_SetHint(SDL_HINT_XINPUT_ENABLED, "0");
 
-...
+/* ... */
 
 SDL_Init(SDL_INIT_EVERYTHING);
 
-...
+/* ... */
 
+SDL_Event event;
 while(SDL_PollEvent(&event) != 0)
 {
    // You can change hint here
 }
 
-...
+/* ... */
 
-SDL_AddHintCallback(SDL_HINT_XINPUT_ENABLED, callback, const_cast<char*>("SDL"));
+SDL_AddHintCallback(SDL_HINT_XINPUT_ENABLED, callback, "SDL");
 ```
 
 ----

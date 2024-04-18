@@ -33,9 +33,10 @@ SR (7.1 surround)
 
 == Code Examples ==
 
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_AudioSpec want, have;
 SDL_AudioDeviceID dev;
+extern void SDLCALL MyAudioCallback(void *userdata, Uint8 *stream, int len);
 
 SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
 want.freq = 48000;

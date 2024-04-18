@@ -58,18 +58,18 @@ article: http://en.wikipedia.org/wiki/RGBA_color_space
 == Code Examples ==
 
 8-bit pixel formats are the easiest to understand. Since it is an 8-bit format, we have 8 '''BitsPerPixel''' and 1 '''BytesPerPixel'''. Since '''BytesPerPixel''' is 1, all pixels are represented by a Uint8 which contains an index into <code>palette->colors</code>. So, to determine the color of a pixel in an 8-bit surface: we read the color index from <code>surface->pixels</code> and we use that index to read the [[SDL_Color]] structure from <code>surface->format->palette->colors</code>. Like so:
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 SDL_Surface *surface;
 SDL_PixelFormat *fmt;
 SDL_Color *color;
 Uint8 index;
 
-.
-.
+/* ... */
 
 /* Create surface */
-.
-.
+
+/* ... */
+
 fmt=surface->format;
 
 /* Check the bitdepth of the surface */
@@ -89,19 +89,18 @@ color=&fmt->palette->colors[index];
 SDL_UnlockSurface(surface);
 printf("Pixel Color-> Red: %d, Green: %d, Blue: %d. Index: %d\n",
           color->r, color->g, color->b, index);
-.
-.
+
 </syntaxhighlight>
 Pixel formats above 8-bit are an entirely different experience. They are considered to be "TrueColor" formats and the color information is stored in the pixels themselves, not in a palette. The '''mask''', '''shift''' and '''loss''' fields tell us how the color information is encoded. The '''mask''' fields allow us to isolate each color component, the '''shift''' fields tell us the number of bits to the right of each component in the pixel value and the '''loss''' fields tell us the number of bits lost from each component when packing 8-bit color component in a pixel.
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 /* Extracting color components from a 32-bit color value */
 SDL_PixelFormat *fmt;
 SDL_Surface *surface;
 Uint32 temp, pixel;
 Uint8 red, green, blue, alpha;
-.
-.
-.
+
+/* ... */
+
 fmt = surface->format;
 SDL_LockSurface(surface);
 pixel = *((Uint32*)surface->pixels);
@@ -132,9 +131,8 @@ temp = temp << fmt->Aloss;  /* Expand to a full 8-bit number */
 alpha = (Uint8)temp;
 
 printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha);
-.
-.
-.
+
+/* ... */
 </syntaxhighlight>
 
 == See Also ==

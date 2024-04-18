@@ -35,12 +35,16 @@ This function is available since SDL 2.0.10.
 ## Example
 
 ```c
+#define WIDTH  640
+#define HEIGHT 480
+
 // Calculate centre of the screen
 
 double x_centre = WIDTH / 2;
 double y_centre = HEIGHT / 2;
 
-...
+/* ... */
+SDL_Renderer *renderer;
 
 // Initialize three points of triangle
 
@@ -56,7 +60,7 @@ SDL_FPoint triangle[] = {
     c
 };
 
-...
+/* ... */
 
 // Set render color to white
 

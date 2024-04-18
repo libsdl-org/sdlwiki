@@ -42,19 +42,25 @@ This function is available since SDL 2.0.0.
 ## Example
 
 ```c
-SDL_Palette* palette = nullptr;
+SDL_Palette* palette = NULL;
 
-...
+/* ... */
 
-SDL_Init(SDL_EVERYTHING);
+SDL_Init(SDL_INIT_VIDEO);
+
+// Create window and renderer
+
+SDL_Window *window;
+SDL_Renderer *renderer;
+SDL_CreateWindowAndRenderer(640, 480, 0, &window, &renderer);
 
 // Create new palette with 4 colors
 
 palette = SDL_AllocPalette(4);
 
-if (palette == nullptr) printf( "Error: %s\n", SDL_GetError() );
+if (palette == NULL) printf( "Error: %s\n", SDL_GetError() );
 
-...
+/* ... */
 
 // Set green and blue of the first color in the palette to 0
 
@@ -63,12 +69,12 @@ palette->colors[0].b = 0;
 
 // Set render draw color to red
 
-SDL_SetRenderDrawColor(renderer, palette->colors[0].r, palette->colors[0].g, palette->colors.b, palette->colors[0].a);
+SDL_SetRenderDrawColor(renderer, palette->colors[0].r, palette->colors[0].g, palette->colors[0].b, palette->colors[0].a);
 
-...
+/* ... */
 
 SDL_FreePalette(palette);
-palette = nullptr;
+palette = NULL;
 ```
 
 ----

@@ -45,15 +45,15 @@ This function is available since SDL 2.0.0.
 ```c
 SDL_PixelFormat* pixel_format = NULL;
 
-...
+/* ... */
 
 SDL_Init(SDL_INIT_EVERYTHING);
 
-pixel_format = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA32)
+pixel_format = SDL_AllocFormat(SDL_PIXELFORMAT_RGBA32);
 
 if (pixel_format == NULL) printf( "Error: %s\n", SDL_GetError() );
 
-...
+/* ... */
 
 printf("Amount of bytes: %i\n", pixel_format->BytesPerPixel);
 

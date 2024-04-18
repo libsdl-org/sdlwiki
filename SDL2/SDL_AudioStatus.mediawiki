@@ -16,7 +16,7 @@ An enumeration of audio device states.
 |}
 
 == Code Examples ==
-<syntaxhighlight lang='c++'>
+<syntaxhighlight lang='c'>
 void printStatus(SDL_AudioDeviceID dev)
 {
     switch (SDL_GetAudioDeviceStatus(dev))
@@ -30,6 +30,16 @@ void printStatus(SDL_AudioDeviceID dev)
 
 // device starts paused
 SDL_AudioDeviceID dev;
+SDL_AudioSpec desired;
+SDL_AudioSpec obtained;
+extern void SDLCALL audio_callback(void *userdata, Uint8 * stream, int len);
+
+SDL_zero(desired);
+desired.freq = 44100;
+desired.format = AUDIO_F32SYS;
+desired.channels = 1;
+desired.samples = 4096;
+desired.callback = audio_callback;
 dev = SDL_OpenAudioDevice(NULL, 0, &desired, &obtained, 0);  
 if (dev != 0)
 {
