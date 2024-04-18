@@ -57,16 +57,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-/* Start the timer; the callback below will be executed after the delay */
-
-Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
-SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc, my_callback_param);
-
-...
-
-Uint32 my_callbackfunc(Uint32 interval, void *param)
-{
+```c
+Uint32 my_callbackfunc_1(Uint32 interval, void *param) {
     SDL_Event event;
     SDL_UserEvent userevent;
 
@@ -83,14 +75,23 @@ Uint32 my_callbackfunc(Uint32 interval, void *param)
     event.user = userevent;
 
     SDL_PushEvent(&event);
-    return(interval);
+    return interval;
 }
+
+int my_callback_param;
+
+/* Start the timer; the callback below will be executed after the delay */
+Uint32 delay = ((33 + 5) / 10) * 10;  /* To round it down to the nearest 10 ms */
+SDL_TimerID my_timer_id = SDL_AddTimer(delay, my_callbackfunc_1, &my_callback_param);
+
+/* ... */
 ```
 Note that it is possible to avoid the multithreading problems with SDL timers by giving to `userevent.data1` the address of a function you want to be executed and to `userevent.data2` its params, and then deal with it in the event loop.
-```c++
+```c
+void my_function(void *);
+
 /* with the same code as before: */
-Uint32 my_callbackfunc(Uint32 interval, void *param)
-{
+Uint32 my_callbackfunc_2(Uint32 interval, void *param) {
     SDL_Event event;
     SDL_UserEvent userevent;
 

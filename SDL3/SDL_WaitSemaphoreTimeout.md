@@ -43,27 +43,30 @@ This function is available since SDL 3.0.0.
 ```c
 // BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
 
+void add_data_to_queue(void);
+void get_data_from_queue(void);
+int data_available(void);
+void wait_for_threads(void);
+
 SDL_AtomicInt done;
 SDL_Semaphore *sem;
 SDL_AtomicSet(&done, 0);
 sem = SDL_CreateSemaphore(0);
-.
-.
-Thread A:
+
+Thread_A:
     while (!SDL_AtomicGet(&done)) {
         add_data_to_queue();
         SDL_PostSemaphore(sem);
     }
-Thread B:
+Thread_B:
     const Uint32 timeout = 1000; /* wake up every second */
     while (!SDL_AtomicGet(&done)) {
         if (SDL_WaitSemaphoreTimeout(sem, timeout) == 0 && data_available()) {
             get_data_from_queue();
         }
-        ... do other processing
+        /* ... do other processing */
     }
-.
-.
+
 SDL_AtomicSet(&done, 1);
 SDL_PostSemaphore(sem);
 wait_for_threads();

@@ -47,12 +47,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h"
+```c
 
 /* Variable declaration */
 void* myHandle = NULL;
-char* myFunctionName = "myFancyFunction";
+const char* myFunctionName = "myFancyFunction";
 void (*myFancyFunction)(int anInt);
 
 /* Dynamically load mylib.so */

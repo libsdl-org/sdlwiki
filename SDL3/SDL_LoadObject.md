@@ -31,8 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h"
+```c
 
 /* Dynamically load mylib.so */
 SDL_LoadObject("mylib.so");

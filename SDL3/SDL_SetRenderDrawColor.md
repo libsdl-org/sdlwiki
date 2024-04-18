@@ -41,13 +41,15 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
+SDL_Renderer *renderer;
 SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
-SDL_Rect rectangle;
 
-rectangle.x = 0;
-rectangle.y = 0;
-rectangle.w = 50;
-rectangle.h = 50;
+SDL_FRect rectangle;
+rectangle.x =  0.f;
+rectangle.y =  0.f;
+rectangle.w = 50.f;
+rectangle.h = 50.f;
+
 SDL_RenderFillRect(renderer, &rectangle);
 ```
 

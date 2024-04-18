@@ -61,7 +61,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
 void MyAudioCallback(void *udata, Uint8 *stream, int len)
 {

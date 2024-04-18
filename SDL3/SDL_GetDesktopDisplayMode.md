@@ -38,9 +38,10 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-SDL_DisplayMode dm;
-if (SDL_GetDesktopDisplayMode(0, &dm) != 0) {
+```c
+SDL_DisplayID display_id = SDL_GetPrimaryDisplay();
+const SDL_DisplayMode *display_mode = SDL_GetDesktopDisplayMode(display_id);
+if (display_mode == NULL) {
     SDL_Log("SDL_GetDesktopDisplayMode failed: %s", SDL_GetError());
     return 1;
 }

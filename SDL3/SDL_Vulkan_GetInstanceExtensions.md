@@ -45,27 +45,30 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-// Note: This sample uses C++17 features/syntax.
-// Get the required extension count
-unsigned int count;
-if (!SDL_Vulkan_GetInstanceExtensions(window, &count, nullptr)) handle_error();
+```c
+extern void handle_error(void);
+#ifndef VK_EXT_DEBUG_REPORT_EXTENSION_NAME
+#define VK_EXT_DEBUG_REPORT_EXTENSION_NAME "VK_EXT_debug_report"
+#endif
 
-std::vector<const char*> extensions = {
-    VK_EXT_DEBUG_REPORT_EXTENSION_NAME // Sample additional extension
-};
-size_t additional_extension_count = extensions.size();
-extensions.resize(additional_extension_count + count);
+int count_instance_extensions;
+const char * const *instance_extensions = SDL_Vulkan_GetInstanceExtensions(&count_instance_extensions);
 
-if (!SDL_Vulkan_GetInstanceExtensions(window, &count, extensions.data() + additional_extension_count)) handle_error();
+if (instance_extensions == NULL) { handle_error(); }
+
+Uint32 count_extensions = count_instance_extensions;
+const char **extensions = SDL_malloc(count_extensions * sizeof(const char *));
+extensions[0] = VK_EXT_DEBUG_REPORT_EXTENSION_NAME;
+SDL_memcpy(&extensions[1], instance_extensions, count_instance_extensions * sizeof(const char*)); 
 
 // Now we can make the Vulkan instance
 VkInstanceCreateInfo create_info = {};
-create_info.enabledExtensionCount = static_cast<uint32_t>(extensions.size());
-create_info.ppEnabledExtensionNames = extensions.data();
+create_info.enabledExtensionCount = count_extensions;
+create_info.ppEnabledExtensionNames = extensions;
 
 VkInstance instance;
-VkResult result = vkCreateInstance(&create_info, nullptr, &instance);
+VkResult result = vkCreateInstance(&create_info, NULL, &instance);
+SDL_free(extensions);
 ```
 
 ## See Also

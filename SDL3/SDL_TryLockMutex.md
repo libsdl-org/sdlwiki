@@ -50,12 +50,12 @@ This function is available since SDL 3.0.0.
 
 ```c
 int status;
-SDL_mutex *mutex;
+SDL_Mutex *mutex;
 
 mutex = SDL_CreateMutex();
 if (!mutex) {
   SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create mutex\n");
-  return;
+  return 1;
 }
 
 status = SDL_TryLockMutex(mutex);

@@ -40,8 +40,9 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1");
+```c
+/* Log most events (other than the really spammy ones) */
+SDL_SetHint(SDL_HINT_LOGGING, "2");
 ```
 
 ## See Also

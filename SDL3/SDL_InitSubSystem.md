@@ -35,12 +35,12 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 /* Separating Joystick and Video initialization. */
 SDL_Init(SDL_INIT_VIDEO);
 
 SDL_Window* window = SDL_CreateWindow("A Window",
-    SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480,
+    640, 480,
     SDL_WINDOW_FULLSCREEN);
 SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL, 0);
 

@@ -35,7 +35,7 @@ This function is available since SDL 3.0.0.
 /* Get init data on all the subsystems */
 Uint32 subsystem_init;
 
-subsystem_init = SDL_WasInit(SDL_INIT_EVERYTHING);
+subsystem_init = SDL_WasInit(SDL_INIT_AUDIO | SDL_INIT_VIDEO);
 
 if (subsystem_init & SDL_INIT_VIDEO) {
     printf("Video is initialized.\n");

@@ -38,7 +38,8 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-#include "SDL.h"
+#include <SDL3/SDL.h>
+#include <stdlib.h>
 
 // Very simple thread - counts 0 to 9 delaying 50ms between increments
 int TestThread(void *ptr)
@@ -46,7 +47,7 @@ int TestThread(void *ptr)
     int cnt;
 
     for (cnt = 0; cnt < 10; ++cnt) {
-        SDL_Log("\nThread counter: %d", cnt);
+        SDL_Log("Thread counter: %d", cnt);
         SDL_Delay(50);
     }
 
@@ -56,16 +57,16 @@ int TestThread(void *ptr)
 int main(int argc, char *argv[])
 {
     SDL_Thread   *thread;
-    SDL_threadID threadID;
+    SDL_ThreadID threadID;
     int          threadReturnValue;
 
-    SDL_Log("\nSimple SDL_CreateThread test:");
+    SDL_Log("Simple SDL_CreateThread test:");
 
     /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "\nSDL_CreateThread failed: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_CreateThread failed: %s\n", SDL_GetError());
         exit(-1);
     }
 
@@ -74,7 +75,7 @@ int main(int argc, char *argv[])
 
     /* Wait for the thread to complete and get the return code */
     SDL_WaitThread(thread, &threadReturnValue);
-    SDL_Log("\nThread returned value: %d", threadReturnValue);
+    SDL_Log("Thread returned value: %d", threadReturnValue);
 
     return 0;
 }

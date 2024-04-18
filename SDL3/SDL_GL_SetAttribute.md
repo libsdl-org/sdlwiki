@@ -50,16 +50,16 @@ SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE, 5);
 SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 16);
 SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 
-window = SDL_CreateWindow("OpenGL Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 480, SDL_WINDOW_OPENGL);
+window = SDL_CreateWindow("OpenGL Window", 640, 480, SDL_WINDOW_OPENGL);
 if (!window) {
     fprintf(stderr, "Couldn't create window: %s\n", SDL_GetError());
-    return;
+    return 1;
 }
 
 context = SDL_GL_CreateContext(window);
 if (!context) {
     fprintf(stderr, "Couldn't create context: %s\n", SDL_GetError());
-    return;
+    return 1;
 }
 
 int r, g, b;

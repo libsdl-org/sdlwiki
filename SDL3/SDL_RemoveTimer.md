@@ -31,7 +31,10 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
+extern void *my_callback_param;
+extern Uint32 SDLCALL my_callbackfunc(Uint32 interval, void *param);
+
 Uint32 delay = (33 / 10) * 10;  /* To round it down to the nearest 10 ms */
 
 /* ... */

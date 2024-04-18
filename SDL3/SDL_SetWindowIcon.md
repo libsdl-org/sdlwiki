@@ -32,19 +32,18 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-// Using SDL2 to set a window icon
+```c
 
-#include "SDL.h"
+#include <SDL3/SDL.h>
 
 int main(int argc, char* argv[]){
 
   SDL_Event e;
 
-  SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL2
+  SDL_Init(SDL_INIT_VIDEO);   // Initialize SDL3
 
   SDL_Window *window = SDL_CreateWindow(    // Open a new window
-    "SDL2 window icon demo", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, SDL_WINDOW_RESIZABLE
+    "SDL2 window icon demo", 640, 480, SDL_WINDOW_RESIZABLE
   );
 
   SDL_Surface *surface;     // Declare an SDL_Surface to be filled in with pixel data from an image file
@@ -82,7 +81,7 @@ int main(int argc, char* argv[]){
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff,
     0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff, 0x0fff
   };
-  surface = SDL_CreateRGBSurfaceFrom(pixels,16,16,16,16*2,0x0f00,0x00f0,0x000f,0xf000);
+  surface = SDL_CreateSurface(16, 16, SDL_PIXELFORMAT_ARGB4444);
 
   // The icon is attached to the window pointer
   SDL_SetWindowIcon(window, surface);

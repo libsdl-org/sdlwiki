@@ -39,12 +39,16 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-int i, count = SDL_GetNumAudioDevices(0);
+```c
+int count;
+SDL_AudioDeviceID *devices;
+devices = SDL_GetAudioOutputDevices(&count);
 
-for (i = 0; i < count; ++i) {
-    SDL_Log("Audio device %d: %s", i, SDL_GetAudioDeviceName(i, 0));
+for (int i = 0; i < count; ++i) {
+    SDL_Log("Audio device %d: %s", i, SDL_GetAudioDeviceName(devices[i]));
 }
+
+SDL_free(devices);
 ```
 
 ## See Also

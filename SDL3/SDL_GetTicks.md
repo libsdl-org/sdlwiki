@@ -25,7 +25,9 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
+int variable;
+SDL_bool quit = SDL_FALSE;
 unsigned int lastTime = 0, currentTime;
 while (!quit) {
   // do stuff

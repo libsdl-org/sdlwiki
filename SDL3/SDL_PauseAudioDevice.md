@@ -52,11 +52,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 extern SDL_AudioDeviceID devid;
 SDL_PauseAudioDevice(devid);  // audio callback is stopped when this returns.
 SDL_Delay(5000);  // audio device plays silence for 5 seconds
-SDL_PlayAudioDevice(devid);  // audio callback starts running again.
+SDL_ResumeAudioDevice(devid);  // audio callback starts running again.
 ```
 
 ## See Also

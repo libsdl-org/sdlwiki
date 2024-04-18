@@ -99,25 +99,20 @@ This function is available since SDL 3.0.0.
 
 ```c
 
-SDL_AudioSpec want, have;
+SDL_AudioSpec want;
 SDL_AudioDeviceID dev;
 
 SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
-want.freq = 48000;
-want.format = AUDIO_F32;
+want.format = SDL_AUDIO_F32;
 want.channels = 2;
-want.samples = 4096;
-want.callback = MyAudioCallback; /* you wrote this function elsewhere -- see SDL_AudioSpec for details */
+want.freq = 48000;
 
-dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
+dev = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &want);
 if (dev == 0) {
     SDL_Log("Failed to open audio: %s", SDL_GetError());
 } else {
-    if (have.format != want.format) { /* we let this one thing change. */
-        SDL_Log("We didn't get Float32 audio format.");
-    }
-    SDL_PauseAudioDevice(dev, 0); /* start audio playing. */
-    SDL_Delay(5000); /* let the audio callback play some sound for 5 seconds. */
+    SDL_ResumeAudioDevice(dev); /* start audio playing. */
+    SDL_Delay(5000);  // let device play for 5 seconds
     SDL_CloseAudioDevice(dev);
 }
 ```

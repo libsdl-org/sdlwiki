@@ -39,12 +39,12 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 extern SDL_AudioSpec want;
-SDL_AudioDeviceID devid = SDL_OpenAudioDevice(NULL, 0, &want, NULL, 0);
-if (devid > 0) {
-    SDL_PauseAudioDevice(devid, 0);
-    SDL_Delay(5000);  // let audio callback run for 5 seconds.
+SDL_AudioDeviceID devid = SDL_OpenAudioDevice(SDL_AUDIO_DEVICE_DEFAULT_OUTPUT, &want);
+if (devid != 0) {
+    SDL_ResumeAudioDevice(devid);
+    SDL_Delay(5000);  // let device play for 5 seconds
     SDL_CloseAudioDevice(devid);
 }
 ```

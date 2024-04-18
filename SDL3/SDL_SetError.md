@@ -44,14 +44,14 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_SetError("Something unexpected happened!");
 ```
-```c++
+```c
 int errorCode = 0;
-...
+/* ... */
 errorCode = -37;
-...
+/* ... */
 if (errorCode < 0)
     SDL_SetError("Something unexpected happened: Error Code %d", errorCode);
 ```

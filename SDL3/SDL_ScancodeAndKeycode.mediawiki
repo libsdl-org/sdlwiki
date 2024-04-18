@@ -1066,6 +1066,7 @@ Enumerations of the SDL physical (scancode) and virtual (keycode) key representa
 == Code Examples ==
 <syntaxhighlight lang='c++'>
   //checks if a key is being remapped and prints what the remapping is
+  extern SDL_Event *event;
   if(event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
     printf("Physical %s key acting as %s key",
       SDL_GetScancodeName(event->key.keysym.scancode),

@@ -35,11 +35,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 extern SDL_Haptic* dev;
 if (SDL_HapticRumbleSupported(dev)) {
-    SDL_HapticRumbleInit(dev);
-    SDL_HapticRumblePlay(dev, 1.0f, 3000);
+    SDL_InitHapticRumble(dev);
+    SDL_PlayHapticRumble(dev, 1.0f, 3000);
     SDL_Delay(3000);
 }
 ```

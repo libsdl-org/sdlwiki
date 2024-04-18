@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 // Using SDL2's SDL_GetCurrentDisplayMode()
 
-#include "SDL.h"
+#include <SDL3/SDL.h>
 
 int main(int argc, char* argv[])
 {
@@ -52,26 +52,28 @@ int main(int argc, char* argv[])
   SDL_DisplayMode current;
 
   SDL_Init(SDL_INIT_VIDEO);
+  
+  int count_displays;
+  SDL_DisplayID *displays = SDL_GetDisplays(&count_displays);
 
   // Get current display mode of all displays.
-  for(i = 0; i < SDL_GetNumVideoDisplays(); ++i){
+  for(i = 0; i < count_displays; i++){
 
-    int should_be_zero = SDL_GetCurrentDisplayMode(i, &current);
+    const SDL_DisplayMode *display_mode = SDL_GetCurrentDisplayMode(displays[i]);
 
-    if(should_be_zero != 0)
+    if (display_mode== NULL) {
       // In case of error...
       SDL_Log("Could not get display mode for video display #%d: %s", i, SDL_GetError());
-
-    else
+    } else {
       // On success, print the current display mode.
-      SDL_Log("Display #%d: current display mode is %dx%dpx @ %dhz.", i, current.w, current.h, current.refresh_rate);
-
+      SDL_Log("Display #%d: current display mode is %dx%dpx @ %dhz.", i, display_mode->w, display_mode->h, display_mode->refresh_rate);
+    }
   }
 
   // Clean up and exit the program.
+  SDL_free(displays);
   SDL_Quit();
   return 0;
-
 }
 
 ```

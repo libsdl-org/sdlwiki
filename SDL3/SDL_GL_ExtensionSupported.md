@@ -45,6 +45,8 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
+    extern void draw_to_the_screen_with_framebuffer_blit(void);
+    extern void draw_to_the_screen_with_a_textured_quad(void);
 
     if (SDL_GL_ExtensionSupported("GL_EXT_framebuffer_blit")) {
         draw_to_the_screen_with_framebuffer_blit();   // faster!

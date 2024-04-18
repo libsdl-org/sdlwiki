@@ -29,12 +29,12 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
-SDL_threadID threadID;
+SDL_ThreadID threadID;
 
 /* Retrieve our current thread identifier */
-threadID = SDL_ThreadID();
+threadID = SDL_GetCurrentThreadID();
 ```
 
 ## Related Functions
