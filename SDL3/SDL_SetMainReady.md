@@ -5,7 +5,7 @@ Circumvent failure of [SDL_Init](SDL_Init)() when not using [SDL_main](SDL_main)
 
 ## Header File
 
-Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h).
+Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h), but apps should use `#include <SDL3/SDL.h>`
 
 ## Syntax
 
