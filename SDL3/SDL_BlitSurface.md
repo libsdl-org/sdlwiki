@@ -86,7 +86,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
+SDL_Surface *surface;
+SDL_Rect source_rect;
+SDL_Surface *temp_surface;
+
 SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 ```
 

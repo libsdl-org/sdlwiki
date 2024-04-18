@@ -43,17 +43,20 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-/* Make the pixels pointer valid in the surface */
+```c
+void modify_surface(SDL_Surface *surface) {
 
-SDL_LockSurface(surface);
+  /* Make the pixels pointer valid in the surface */
 
-/* Surface is locked */
-/* Direct pixel access on surface here */
+  SDL_LockSurface(surface);
 
-SDL_UnlockSurface(surface);
+  /* Surface is locked */
+  /* Direct pixel access on surface here */
 
-/* Surface is now unlocked */
+  SDL_UnlockSurface(surface);
+
+  /* Surface is now unlocked */
+}
 ```
 
 ## See Also

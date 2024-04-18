@@ -47,10 +47,14 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
+extern void handle_error(void);
+
+SDL_Window *window;
+VkInstance instance;
 VkSurfaceKHR surface;
 
-if (!SDL_Vulkan_CreateSurface(window, instance, &surface)) handle_error();
+if (!SDL_Vulkan_CreateSurface(window, instance, NULL, &surface)) handle_error();
 ```
 
 ## See Also

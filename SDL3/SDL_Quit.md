@@ -30,19 +30,20 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h"
+```c
+#include <SDL3/SDL.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(int argc, char** argv) {
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-        fprintf(stderr, "Unable to initialize SDL:  %s\n", SDL_GetError());
+    if (SDL_Init(SDL_INIT_EVENTS) != 0) {
+        fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
         return 1;
     }
-    atexit(SDL_Quit);
 
     /* ... */
+
+    SDL_Quit();
 
     return 0;
 }

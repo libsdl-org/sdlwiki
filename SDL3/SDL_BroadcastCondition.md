@@ -40,29 +40,27 @@ SDL_Mutex *lock;
 SDL_Condition *cond;
 lock = SDL_CreateMutex();
 cond = SDL_CreateCondition();
-.
-.
-Thread A:
+
+Thread_A:
     SDL_LockMutex(lock);
     while (!condition) {
         SDL_WaitCondition(cond, lock);
     }
     SDL_UnlockMutex(lock);
-Thread B:
+Thread_B:
     SDL_LockMutex(lock);
     while (!condition) {
         SDL_WaitCondition(cond, lock);
     }
     SDL_UnlockMutex(lock);
-Thread C:
+Thread_C:
     SDL_LockMutex(lock);
-    ...
+    /* ... */
     condition = SDL_TRUE;
-    ...
+    /* ... */
     SDL_BroadcastCondition(cond);
     SDL_UnlockMutex(lock);
-.
-.
+
 SDL_DestroyCondition(cond);
 SDL_DestroyMutex(lock);
 ```

@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 // Window mode MUST include SDL_WINDOW_OPENGL for use with OpenGL.
 SDL_Window *window = SDL_CreateWindow(
-    "SDL2/OpenGL Demo", 0, 0, 640, 480, 
+    "SDL2/OpenGL Demo", 640, 480, 
     SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
   
 // Create an OpenGL context associated with the window.

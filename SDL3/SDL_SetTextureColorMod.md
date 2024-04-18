@@ -45,11 +45,13 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-...
+```c
+SDL_Renderer *renderer;
+SDL_Surface *loadedSurface;
+/* ... */
 SDL_Texture* pTexture = SDL_CreateTextureFromSurface( renderer, loadedSurface );
 SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
-...
+/* ... */
 ```
 
 ## See Also

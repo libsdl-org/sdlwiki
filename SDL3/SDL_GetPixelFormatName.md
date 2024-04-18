@@ -32,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-SDL_Surface* surface = ...; // a valid surface from wherever.
+```c
+SDL_Surface* surface; // a valid surface from wherever.
 SDL_PixelFormat* pixelFormat = surface->format;
 Uint32 pixelFormatEnum = pixelFormat->format;
 const char* surfacePixelFormatName = SDL_GetPixelFormatName(pixelFormatEnum);

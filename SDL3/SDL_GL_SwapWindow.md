@@ -40,9 +40,9 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
-SDL_Window* window = SDL_CreateWindow("SDL2/OpenGL Demo", 30, 30, 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
+SDL_Window* window = SDL_CreateWindow("SDL3/OpenGL Demo", 640, 480, SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE);
       
 /* Create an OpenGL context associated with the window. */
 SDL_GLContext glcontext = SDL_GL_CreateContext(window);

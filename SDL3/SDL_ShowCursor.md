@@ -29,10 +29,12 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 int main(int argc, char *argv[]) {
-    /* creates a blank cursor */
-    SDL_ShowCursor(SDL_DISABLE);
+    /* ... */
+    if (SDL_ShowCursor() < 0) {
+      SDL_Log("Failed to show the cursor");
+    }
     /* ... */
     return 0;
 }

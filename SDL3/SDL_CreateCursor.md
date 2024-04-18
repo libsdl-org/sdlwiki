@@ -68,7 +68,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 /* Stolen from the mailing list */
 /* Creates a new mouse cursor from an XPM */
 
@@ -117,7 +117,7 @@ static const char *arrow[] = {
   "0,0"
 };
 
-static SDL_Cursor *init_system_cursor(const char *image[])
+SDL_Cursor *init_system_cursor(const char *image[])
 {
   int i, row, col;
   Uint8 data[4*32];

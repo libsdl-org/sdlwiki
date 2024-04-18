@@ -31,8 +31,10 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h"
+```c
+#include <SDL3/SDL.h>
+
+extern void display_graph(void);
 
 /* ... */
 
@@ -49,7 +51,9 @@ int main(int argc, char **argv) {
 
     /* ... more console stuff ... */
 
-    if (sdl_initialized) SDL_Quit();
+    if (sdl_initialized) {
+        SDL_Quit();
+    }
     return 0;
 }
 ```

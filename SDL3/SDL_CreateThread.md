@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
-```c
+```output
 Output:
 Simple SDL_CreateThread test:
 Thread counter: 0

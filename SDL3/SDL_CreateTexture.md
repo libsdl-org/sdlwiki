@@ -37,7 +37,9 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
-#include "SDL.h"
+#include <SDL3/SDL.h>
+
+#include <stdlib.h>
 
 /* Moving Rectangle */
 int main(int argc, char *argv[])
@@ -46,7 +48,7 @@ int main(int argc, char *argv[])
         SDL_Renderer *renderer;
         SDL_Texture *texture;
         SDL_Event event;
-        SDL_Rect r;
+        SDL_FRect r;
 
         if (SDL_Init(SDL_INIT_VIDEO) < 0) {
                 SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s", SDL_GetError());
@@ -54,8 +56,6 @@ int main(int argc, char *argv[])
         }
 
         window = SDL_CreateWindow("SDL_CreateTexture",
-                        SDL_WINDOWPOS_UNDEFINED,
-                        SDL_WINDOWPOS_UNDEFINED,
                         1024, 768,
                         SDL_WINDOW_RESIZABLE);
 

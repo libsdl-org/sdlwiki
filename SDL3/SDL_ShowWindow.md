@@ -32,6 +32,8 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
+SDL_Window *window;
+
 SDL_ShowWindow(window);
 ```
 

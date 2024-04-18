@@ -42,30 +42,36 @@ This function is available since SDL 3.0.0.
 <!-- # Begin Semaphore Example -->
 Typical use of semaphores:
 ```c++
-SDL_atomic_t done;
-SDL_sem *sem;
+void add_data_to_queue(void);
+void get_data_to_queue(void);
+void get_data_from_queue(void);
+int data_available(void);
+void wait_for_threads(void);
+
+SDL_AtomicInt done;
+SDL_Semaphore *sem;
 
 SDL_AtomicSet(&done, 0);
 sem = SDL_CreateSemaphore(0);
-.
-.
-Thread A:
+
+
+Thread_A:
     while (!SDL_AtomicGet(&done)) {
         add_data_to_queue();
-        SDL_SemPost(sem);
+        SDL_PostSemaphore(sem);
     }
 
-Thread B:
+Thread_B:
     while (!SDL_AtomicGet(&done)) {
-        SDL_SemWait(sem);
+        SDL_WaitSemaphore(sem);
         if (data_available()) {
             get_data_from_queue();
         }
     }
-.
-.
+
+
 SDL_AtomicSet(&done, 1);
-SDL_SemPost(sem);
+SDL_PostSemaphore(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
 ```

@@ -43,22 +43,19 @@ This function is available since SDL 3.0.0.
 <!-- # Begin Mutex Example -->
 ```c
 int status;
-SDL_mutex *mutex;
+SDL_Mutex *mutex;
 
 mutex = SDL_CreateMutex();
 if (!mutex) {
   SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create mutex\n");
-  return;
+  return 1;
 }
 
-status = SDL_LockMutex(mutex);
+SDL_LockMutex(mutex);
 
-if (status == 0) {
-  SDL_Log("Locked mutex\n");
-  SDL_UnlockMutex(mutex);
-} else {
-  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't lock mutex\n");
-}
+SDL_Log("Locked mutex");
+  
+SDL_UnlockMutex(mutex);
 
 SDL_DestroyMutex(mutex);
 ```

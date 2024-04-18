@@ -37,6 +37,10 @@ This struct is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
+extern Sint32 my_event_code;
+extern void *significant_data;
+extern void *some_other_data;
+
 const Uint32 myEventType = SDL_RegisterEvents(1);
 if (myEventType != ((Uint32)-1)) {
     SDL_Event event;

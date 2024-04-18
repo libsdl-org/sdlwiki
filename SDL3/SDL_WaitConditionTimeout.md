@@ -50,37 +50,34 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-// BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
-
 SDL_bool condition = SDL_FALSE;
 SDL_Mutex *lock;
 SDL_Condition *cond;
 lock = SDL_CreateMutex();
 cond = SDL_CreateCondition();
-.
-.
-Thread A:
+
+Thread_A:
     const Uint32 timeout = 1000; /* wake up every second */
+    SDL_bool done = SDL_FALSE;
     while (!done) {
         SDL_LockMutex(lock);
-        while (!condition && WaitConditionTimeout(cond, lock, timeout) == 0) {
+        while (!condition && SDL_WaitConditionTimeout(cond, lock, timeout) == 0) {
             continue;
         }
         SDL_UnlockMutex(lock);
         if (condition) {
-            ...
+            /* ... */
         }
-        ... do some periodic work
+        /* ... do some periodic work */
     }
-Thread B:
+Thread_B:
     SDL_LockMutex(lock);
-    ...
+    /* ... */
     condition = SDL_TRUE;
-    ...
+    /* ... */
     SDL_SignalCondition(cond);
     SDL_UnlockMutex(lock);
-.
-.
+
 SDL_DestroyCondition(cond);
 SDL_DestroyMutex(lock);
 

@@ -44,29 +44,14 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c++
-Uint32 rmask, gmask, bmask, amask;
+SDL_Renderer *renderer;
 
-/* SDL interprets each pixel as a 32-bit number, so our masks must depend
-   on the endianness (byte order) of the machine */
-#if SDL_BYTEORDER == SDL_BIG_ENDIAN
-    rmask = 0xff000000;
-    gmask = 0x00ff0000;
-    bmask = 0x0000ff00;
-    amask = 0x000000ff;
-#else
-    rmask = 0x000000ff;
-    gmask = 0x0000ff00;
-    bmask = 0x00ff0000;
-    amask = 0xff000000;
-#endif
-
-SDL_Surface *surface = SDL_CreateRGBSurface(0, 640, 480, 32, rmask, gmask, bmask, amask);
+SDL_Surface *surface = SDL_CreateSurface(640, 480, SDL_PIXELFORMAT_RGBA8888);
 
 if (surface == NULL) {
     fprintf(stderr, "CreateRGBSurface failed: %s\n", SDL_GetError());
     exit(1);
 }
-
 
 SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, surface);
 
@@ -77,7 +62,6 @@ if (texture == NULL) {
 
 SDL_DestroySurface(surface);
 surface = NULL;
-
 ```
 
 ## See Also

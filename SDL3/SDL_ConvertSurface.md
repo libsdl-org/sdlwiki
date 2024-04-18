@@ -39,11 +39,12 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
-// SDL_Surface *input = ...;
+SDL_Surface *input;
+
 SDL_PixelFormat *format = SDL_CreatePixelFormat(SDL_PIXELFORMAT_RGBA32);
-SDL_Surface *output = SDL_ConvertSurface(input, format, 0);
+SDL_Surface *output = SDL_ConvertSurface(input, format);
 SDL_DestroyPixelFormat(format);
 
 ```

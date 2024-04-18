@@ -63,7 +63,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-#include "SDL.h"
+#include <SDL3/SDL.h>
 
 
 // Just a quick warning: this is a silly way to do things, but it
@@ -100,8 +100,7 @@ int main(int argc, char **argv)
     // Just get a window on the screen and clear it to black.
     // In real life, you should check these for errors!
     SDL_Init(SDL_INIT_VIDEO);
-    SDL_Window *window = SDL_CreateWindow("Hello SDL", SDL_WINDOWPOS_UNDEFINED,
-                                          SDL_WINDOWPOS_UNDEFINED, 640, 480, 0);
+    SDL_Window *window = SDL_CreateWindow("Hello SDL", 640, 480, 0);
     SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL, SDL_RENDERER_PRESENTVSYNC);
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);

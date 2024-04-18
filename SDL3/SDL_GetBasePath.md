@@ -60,11 +60,11 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
 char *data_path = NULL;
 
-void InitializeDataPath() {
+void InitializeDataPath(void) {
     char *base_path = SDL_GetBasePath();
     if (base_path) {
         data_path = base_path;

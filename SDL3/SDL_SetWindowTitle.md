@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 // dynamically setting a window title
 
 #include "SDL.h"
@@ -57,7 +57,7 @@ int main(int argc, char* argv[]){
 
   // Create a window.
   window = SDL_CreateWindow(
-    "This will surely be overwritten", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 320, 240, SDL_WINDOW_RESIZABLE
+    "This will surely be overwritten", 320, 240, SDL_WINDOW_RESIZABLE
   );
 
   // Enter the main loop. Press any key or hit the x to exit.

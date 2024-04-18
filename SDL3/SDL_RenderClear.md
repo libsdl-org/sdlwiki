@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h"
+```c
+#include <SDL3/SDL.h>
 
 int main(int argc, char* argv[])
 {
@@ -50,7 +50,6 @@ int main(int argc, char* argv[])
 
         /* Create the window where we will draw. */
         window = SDL_CreateWindow("SDL_RenderClear",
-                        SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                         512, 512,
                         0);
 

@@ -45,8 +45,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-#include "SDL.h" // include SDL header
+```c
+#include <SDL3/SDL.h> // include SDL header
 
 int main(int argc, char* argv[])
 {
@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
     SDL_Init(SDL_INIT_VIDEO); // init video
 
     // create the window like normal
-    window = SDL_CreateWindow("SDL2 Example", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 640, 480, 0);
+    window = SDL_CreateWindow("SDL2 Example", 640, 480, 0);
 
     // but instead of creating a renderer, we can draw directly to the screen
     screen = SDL_GetWindowSurface(window);

@@ -51,8 +51,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
-if (SDL_Init(SDL_INIT_EVERYTHING) < 0) {
+```c
+if (SDL_Init(SDL_INIT_VIDEO) < 0) {
     // Unrecoverable error, exit here.
     printf("SDL_Init failed: %s\n", SDL_GetError());
 }
