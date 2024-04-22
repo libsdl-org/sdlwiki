@@ -5,7 +5,7 @@ Calculate the intersection of two rectangles.
 
 ## Header File
 
-Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_rect.h)
 
 ## Syntax
 

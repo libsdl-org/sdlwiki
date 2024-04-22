@@ -5,7 +5,7 @@ Specifies whether [SDL_THREAD_PRIORITY_TIME_CRITICAL](SDL_THREAD_PRIORITY_TIME_C
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
 
 ## Syntax
 

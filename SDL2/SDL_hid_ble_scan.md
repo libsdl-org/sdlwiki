@@ -5,7 +5,7 @@ Start or stop a BLE scan on iOS and tvOS to pair Steam Controllers
 
 ## Header File
 
-Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h)
 
 ## Syntax
 

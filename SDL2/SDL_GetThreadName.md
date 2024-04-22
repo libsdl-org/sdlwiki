@@ -5,7 +5,7 @@ Get the thread name as it was specified in [SDL_CreateThread](SDL_CreateThread)(
 
 ## Header File
 
-Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_thread.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_thread.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Get the current assertion handler.
 
 ## Header File
 
-Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_assert.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_assert.h)
 
 ## Syntax
 

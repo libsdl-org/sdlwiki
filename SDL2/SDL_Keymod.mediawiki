@@ -9,7 +9,7 @@ Enumeration of valid key mods (possibly OR'd together).
 
 == Header File ==
 
-Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_keycode.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_keycode.h)
 
 == Syntax ==
 

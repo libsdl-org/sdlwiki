@@ -5,7 +5,7 @@ A variable controlling whether relative mouse mode constrains the mouse to the c
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ If set to "0" then never set the top most bit on a SDL Window, even if the video
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
 
 ## Syntax
 

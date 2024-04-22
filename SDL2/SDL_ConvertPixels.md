@@ -5,7 +5,7 @@ Copy a block of pixels of one format to another format.
 
 ## Header File
 
-Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h)
 
 ## Syntax
 

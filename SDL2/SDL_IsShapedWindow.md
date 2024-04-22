@@ -5,7 +5,7 @@ Return whether the given window is a shaped window.
 
 ## Header File
 
-Defined in [SDL_shape.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_shape.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_shape.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_shape.h)
 
 ## Syntax
 

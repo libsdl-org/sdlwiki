@@ -5,7 +5,7 @@ The number of elements in an array.
 
 ## Header File
 
-Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_stdinc.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_stdinc.h)
 
 ## Syntax
 

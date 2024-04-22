@@ -5,7 +5,7 @@ Initialize and launch an SDL/WinRT application.
 
 ## Header File
 
-Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_main.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_main.h)
 
 ## Syntax
 

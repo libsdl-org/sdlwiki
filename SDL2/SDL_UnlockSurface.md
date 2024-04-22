@@ -5,7 +5,7 @@ Release a surface after directly accessing the pixels.
 
 ## Header File
 
-Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h)
 
 ## Syntax
 

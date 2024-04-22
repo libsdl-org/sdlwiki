@@ -5,7 +5,7 @@ Get the names of the Vulkan instance extensions needed to create a surface with 
 
 ## Header File
 
-Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_vulkan.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_vulkan.h)
 
 ## Syntax
 

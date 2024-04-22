@@ -5,7 +5,7 @@ A handle to a CAMetalLayer-backed NSView (macOS) or UIView (iOS/tvOS).
 
 ## Header File
 
-Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_metal.h)
 
 ## Syntax
 

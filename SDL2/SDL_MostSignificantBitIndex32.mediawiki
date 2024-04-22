@@ -5,7 +5,7 @@ Use this function to get the index of the most significant (set) bit in a
 
 == Header File ==
 
-Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_bits.h).
+Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_bits.h)
 
 == Syntax ==
 

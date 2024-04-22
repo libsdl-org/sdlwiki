@@ -5,7 +5,7 @@ Get the current state of an opened sensor with the timestamp of the last update.
 
 ## Header File
 
-Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_sensor.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_sensor.h)
 
 ## Syntax
 

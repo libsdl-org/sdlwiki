@@ -5,7 +5,7 @@ Query whether or not the joystick at a given device index is virtual.
 
 ## Header File
 
-Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_joystick.h)
 
 ## Syntax
 

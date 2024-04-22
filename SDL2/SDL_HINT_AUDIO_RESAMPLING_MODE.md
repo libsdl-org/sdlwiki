@@ -5,7 +5,7 @@ A variable controlling speed/quality tradeoff of audio resampling.
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
 
 ## Syntax
 

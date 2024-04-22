@@ -5,7 +5,7 @@ Query whether the clipboard exists and contains a non-empty text string.
 
 ## Header File
 
-Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_clipboard.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_clipboard.h)
 
 ## Syntax
 

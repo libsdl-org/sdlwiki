@@ -10,7 +10,7 @@ built, it will return a git hash.
 
 ## Header File
 
-Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_version.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_version.h)
 
 ## Syntax
 

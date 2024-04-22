@@ -5,7 +5,7 @@ Determine whether the CPU has AltiVec features.
 
 ## Header File
 
-Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_cpuinfo.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_cpuinfo.h)
 
 ## Syntax
 

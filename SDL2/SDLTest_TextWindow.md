@@ -5,7 +5,7 @@ Data used for multi-line text output
 
 ## Header File
 
-Defined in [SDL_test_font.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_font.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_test_font.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_font.h)
 
 ## Syntax
 

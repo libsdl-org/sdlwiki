@@ -5,7 +5,7 @@ Get the size of the window's underlying drawable dimensions in pixels.
 
 ## Header File
 
-Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_vulkan.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_vulkan.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Upper limit of filters in [SDL_AudioCVT](SDL_AudioCVT)
 
 ## Header File
 
-Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_audio.h)
 
 ## Syntax
 

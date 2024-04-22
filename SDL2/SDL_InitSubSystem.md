@@ -5,7 +5,7 @@ Compatibility function to initialize the SDL library.
 
 ## Header File
 
-Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Log a message with [SDL_LOG_PRIORITY_INFO](SDL_LOG_PRIORITY_INFO).
 
 ## Header File
 
-Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_log.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_log.h)
 
 ## Syntax
 

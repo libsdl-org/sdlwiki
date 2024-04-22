@@ -5,7 +5,7 @@ Allocate a set of user-defined events, and return the beginning event number for
 
 ## Header File
 
-Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h)
 
 ## Syntax
 

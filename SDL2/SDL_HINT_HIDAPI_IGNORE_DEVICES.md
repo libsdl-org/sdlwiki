@@ -5,7 +5,7 @@ A variable containing a list of devices to ignore in [SDL_hid_enumerate](SDL_hid
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
 
 ## Syntax
 

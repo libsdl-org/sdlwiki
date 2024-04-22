@@ -5,7 +5,7 @@ Use this function to set the animation callback on Apple iOS.
 
 ## Header File
 
-Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_system.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_system.h)
 
 ## Syntax
 

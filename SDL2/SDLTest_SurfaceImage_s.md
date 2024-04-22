@@ -5,7 +5,7 @@ Type for test images.
 
 ## Header File
 
-Defined in [SDL_test_images.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_images.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_test_images.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_images.h)
 
 ## Syntax
 

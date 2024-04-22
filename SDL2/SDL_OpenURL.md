@@ -5,7 +5,7 @@ Open a URL/URI in the browser or other appropriate external application.
 
 ## Header File
 
-Defined in [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_misc.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_misc.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Read an Input report from a HID device with timeout.
 
 ## Header File
 
-Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h)
 
 ## Syntax
 

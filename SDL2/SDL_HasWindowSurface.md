@@ -5,7 +5,7 @@ Return whether the window has a surface associated with it.
 
 ## Header File
 
-Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h)
 
 ## Syntax
 

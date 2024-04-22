@@ -5,7 +5,7 @@ Clear any previous error message for this thread.
 
 ## Header File
 
-Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_error.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_error.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Force the rendering context to flush any pending commands to the underlying rend
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_render.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Get the USB vendor ID of an opened controller, if available.
 
 ## Header File
 
-Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_gamecontroller.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gamecontroller.h)
 
 ## Syntax
 

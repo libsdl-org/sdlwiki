@@ -5,7 +5,7 @@ Open a HID device using a Vendor ID (VID), Product ID (PID) and optionally a ser
 
 ## Header File
 
-Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hidapi.h)
 
 ## Syntax
 

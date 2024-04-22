@@ -5,7 +5,7 @@ Atomically increment a semaphore's value and wake waiting threads.
 
 ## Header File
 
-Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_mutex.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_mutex.h)
 
 ## Syntax
 

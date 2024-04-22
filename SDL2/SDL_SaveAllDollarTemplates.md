@@ -5,7 +5,7 @@ Save all currently loaded Dollar Gesture templates.
 
 ## Header File
 
-Defined in [SDL_gesture.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gesture.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_gesture.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_gesture.h)
 
 ## Syntax
 

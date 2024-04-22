@@ -5,7 +5,7 @@ Passes the assert.
 
 ## Header File
 
-Defined in [SDL_test_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_assert.h), but apps should _only_ `#include "SDL.h"`!
+Defined in [SDL_test_assert.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_test_assert.h)
 
 ## Syntax
 
