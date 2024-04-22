@@ -5,7 +5,7 @@ Get the index of the most significant (set) bit in a 32-bit number.
 
 ## Header File
 
-Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Create a piece of thread-local storage.
 
 ## Header File
 
-Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h)
 
 ## Syntax
 

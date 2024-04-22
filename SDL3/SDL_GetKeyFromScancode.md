@@ -9,7 +9,7 @@ Get the key code corresponding to the given scancode according to the current ke
 
 ## Header File
 
-Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h)
 
 ## Syntax
 

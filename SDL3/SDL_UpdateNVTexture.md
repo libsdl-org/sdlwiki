@@ -5,7 +5,7 @@ Update a rectangle within a planar NV12 or NV21 texture with new pixels.
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
 
 ## Syntax
 

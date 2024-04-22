@@ -5,7 +5,7 @@ Converts an [SDL_Time](SDL_Time) in nanoseconds since the epoch to a calendar ti
 
 ## Header File
 
-Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
 
 ## Syntax
 

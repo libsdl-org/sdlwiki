@@ -5,7 +5,7 @@ Set the SDL error message for the current thread.
 
 ## Header File
 
-Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_error.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_error.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_error.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ This macro will evaluate to true if compiled with SDL at least X.Y.Z.
 
 ## Header File
 
-Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
 
 ## Syntax
 

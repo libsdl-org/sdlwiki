@@ -5,7 +5,7 @@ Query the size of a file within a storage container.
 
 ## Header File
 
-Defined in [SDL_storage.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_storage.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h)
 
 ## Syntax
 

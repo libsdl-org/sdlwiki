@@ -5,7 +5,7 @@ Update the current state of the open sensors.
 
 ## Header File
 
-Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h)
 
 ## Syntax
 

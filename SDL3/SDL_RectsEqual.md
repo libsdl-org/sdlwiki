@@ -5,7 +5,7 @@ Determine whether two rectangles are equal.
 
 ## Header File
 
-Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
 
 ## Syntax
 

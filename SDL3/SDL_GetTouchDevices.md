@@ -5,7 +5,7 @@ Get a list of registered touch devices.
 
 ## Header File
 
-Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_touch.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_touch.h)
 
 ## Syntax
 

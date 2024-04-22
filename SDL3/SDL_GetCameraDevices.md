@@ -5,7 +5,7 @@ Get a list of currently connected camera devices.
 
 ## Header File
 
-Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)
 
 ## Syntax
 

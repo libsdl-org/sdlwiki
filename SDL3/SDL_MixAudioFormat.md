@@ -5,7 +5,7 @@ Mix audio data in a specified format.
 
 ## Header File
 
-Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)
 
 ## Syntax
 

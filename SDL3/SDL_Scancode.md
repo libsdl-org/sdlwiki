@@ -5,7 +5,7 @@ The SDL keyboard scancode representation.
 
 ## Header File
 
-Defined in [SDL_scancode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_scancode.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_scancode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_scancode.h)
 
 ## Syntax
 

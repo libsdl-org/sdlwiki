@@ -5,7 +5,7 @@ Lock a portion of the texture for **write-only** pixel access, and expose it as 
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
 
 ## Syntax
 

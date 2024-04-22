@@ -5,7 +5,7 @@ Destroy an existing [SDL_MetalView](SDL_MetalView) object.
 
 ## Header File
 
-Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_metal.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_metal.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Unload the Vulkan library previously loaded by [SDL_Vulkan_LoadLibrary](SDL_Vulk
 
 ## Header File
 
-Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h)
 
 ## Syntax
 

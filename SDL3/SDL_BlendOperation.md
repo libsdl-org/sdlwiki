@@ -5,7 +5,7 @@ The blend operation used when combining source and destination pixel components.
 
 ## Header File
 
-Defined in [SDL_blendmode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_blendmode.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_blendmode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_blendmode.h)
 
 ## Syntax
 

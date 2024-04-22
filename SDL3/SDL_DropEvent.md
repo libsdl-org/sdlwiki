@@ -5,7 +5,7 @@ An event used to drop text or request a file open by the system (event.drop.*)
 
 ## Header File
 
-Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h)
 
 ## Syntax
 

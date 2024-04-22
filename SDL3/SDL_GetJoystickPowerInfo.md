@@ -5,7 +5,7 @@ Get the battery state of a joystick.
 
 ## Header File
 
-Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
 
 ## Syntax
 

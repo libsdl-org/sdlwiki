@@ -5,7 +5,7 @@ Enumeration of valid key mods (possibly OR'd together).
 
 ## Header File
 
-Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keycode.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keycode.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ The color range, as described by https://www.itu.int/rec/R-REC-BT.2100-2-201807-
 
 ## Header File
 
-Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h)
 
 ## Syntax
 

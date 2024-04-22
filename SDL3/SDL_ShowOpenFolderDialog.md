@@ -5,7 +5,7 @@ Displays a dialog that lets the user select a folder on their filesystem.
 
 ## Header File
 
-Defined in [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_dialog.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_dialog.h)
 
 ## Syntax
 

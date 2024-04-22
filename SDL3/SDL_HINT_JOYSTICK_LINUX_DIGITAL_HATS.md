@@ -5,7 +5,7 @@ A variable controlling whether joysticks on Linux will always treat 'hat' axis i
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h)
 
 ## Syntax
 

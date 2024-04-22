@@ -5,7 +5,7 @@ The different sensors defined by SDL.
 
 ## Header File
 
-Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h)
 
 ## Syntax
 

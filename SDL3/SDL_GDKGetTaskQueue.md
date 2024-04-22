@@ -5,7 +5,7 @@ Gets a reference to the global async task queue handle for GDK, initializing if 
 
 ## Header File
 
-Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
 
 ## Syntax
 

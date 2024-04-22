@@ -5,7 +5,7 @@ Save a surface to a file.
 
 ## Header File
 
-Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)
 
 ## Syntax
 

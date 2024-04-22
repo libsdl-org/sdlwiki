@@ -5,7 +5,7 @@ Get the Vulkan instance extensions needed for vkCreateInstance.
 
 ## Header File
 
-Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_vulkan.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_vulkan.h)
 
 ## Syntax
 

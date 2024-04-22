@@ -5,7 +5,7 @@ An unsigned 32-bit integer type.
 
 ## Header File
 
-Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)
 
 ## Syntax
 

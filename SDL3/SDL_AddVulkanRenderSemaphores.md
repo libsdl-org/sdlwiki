@@ -5,7 +5,7 @@ Add a set of synchronization semaphores for the current frame.
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
 
 ## Syntax
 

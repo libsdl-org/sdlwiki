@@ -5,7 +5,7 @@ Query whether the primary selection exists and contains a non-empty text string.
 
 ## Header File
 
-Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h)
 
 ## Syntax
 

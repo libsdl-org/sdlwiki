@@ -5,7 +5,7 @@ Put UTF-8 text into the clipboard.
 
 ## Header File
 
-Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h)
 
 ## Syntax
 

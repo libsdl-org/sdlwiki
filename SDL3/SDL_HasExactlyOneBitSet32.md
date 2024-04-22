@@ -5,7 +5,7 @@ Determine if a unsigned 32-bit value has exactly one bit set.
 
 ## Header File
 
-Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_bits.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_bits.h)
 
 ## Syntax
 

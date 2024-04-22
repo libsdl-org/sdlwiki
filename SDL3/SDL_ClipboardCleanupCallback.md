@@ -5,7 +5,7 @@ Callback function that will be called when the clipboard is cleared, or new data
 
 ## Header File
 
-Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h)
 
 ## Syntax
 

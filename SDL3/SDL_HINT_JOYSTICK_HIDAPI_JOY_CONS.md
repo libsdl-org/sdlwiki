@@ -5,7 +5,7 @@ A variable controlling whether the HIDAPI driver for Nintendo Switch Joy-Cons sh
 
 ## Header File
 
-Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h), but apps should use `#include <SDL3/SDL.h>`
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h)
 
 ## Syntax
 
