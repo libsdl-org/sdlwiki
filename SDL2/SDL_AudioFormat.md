@@ -32,7 +32,6 @@ mean... (Unspecified bits are always zero).
 
 There are macros in SDL 2.0 and later to query these bits.
 
-
 ## Code Examples
 
 ```c++
