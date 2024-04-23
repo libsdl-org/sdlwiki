@@ -30,39 +30,16 @@ typedef struct SDL_MultiGestureEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_MULTIGESTURE
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|SDL_TouchID
-|'''touchId'''
-|the touch device id
-|-
-|float
-|'''dTheta'''
-|the amount that the fingers rotated during this motion, in radians
-|-
-|float
-|'''dDist'''
-|the amount that the fingers pinched during this motion
-|-
-|float
-|'''x'''
-|the normalized center of gesture
-|-
-|float
-|'''y'''
-|the normalized center of gesture
-|-
-|Uint16
-|'''numFingers'''
-|the number of fingers used in the gesture
-|}
+|             |                  |                                                                    |
+| ----------- | ---------------- | ------------------------------------------------------------------ |
+| Uint32      | '''type'''       | SDL_MULTIGESTURE                                                   |
+| Uint32      | '''timestamp'''  | timestamp of the event                                             |
+| SDL_TouchID | '''touchId'''    | the touch device id                                                |
+| float       | '''dTheta'''     | the amount that the fingers rotated during this motion, in radians |
+| float       | '''dDist'''      | the amount that the fingers pinched during this motion             |
+| float       | '''x'''          | the normalized center of gesture                                   |
+| float       | '''y'''          | the normalized center of gesture                                   |
+| Uint16      | '''numFingers''' | the number of fingers used in the gesture                          |
 
 ## Related Enumerations
 

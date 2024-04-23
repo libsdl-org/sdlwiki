@@ -84,11 +84,9 @@ quit:
 
 ## Data Fields
 
-{|
-|int
-|'''value'''
-|the atomic integer value
-|}
+|     |             |                          |
+| --- | ----------- | ------------------------ |
+| int | '''value''' | the atomic integer value |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryAtomic](CategoryAtomic)

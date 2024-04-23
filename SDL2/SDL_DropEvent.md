@@ -89,23 +89,12 @@ int main(int argc, char *argv[]) {
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|the event type; SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, or SDL_DROPCOMPLETE
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|char*
-|'''file'''
-|the file name, which should be freed with SDL_free(), is NULL on BEGIN/COMPLETE
-|-
-|Uint32
-|'''windowID'''
-|the window that was dropped on, if any
-|}
+|        |                 |                                                                                 |
+| ------ | --------------- | ------------------------------------------------------------------------------- |
+| Uint32 | '''type'''      | the event type; SDL_DROPFILE, SDL_DROPTEXT, SDL_DROPBEGIN, or SDL_DROPCOMPLETE  |
+| Uint32 | '''timestamp''' | timestamp of the event                                                          |
+| char*  | '''file'''      | the file name, which should be freed with SDL_free(), is NULL on BEGIN/COMPLETE |
+| Uint32 | '''windowID'''  | the window that was dropped on, if any                                          |
 
 ## Related Enumerations
 

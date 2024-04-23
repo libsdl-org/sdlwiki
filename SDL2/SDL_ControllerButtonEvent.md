@@ -31,27 +31,13 @@ typedef struct SDL_ControllerButtonEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_CONTROLLERBUTTONDOWN or SDL_CONTROLLERBUTTONUP
-|-
-|Uint32
-|'''timestamp'''
-|the timestamp of the event
-|-
-|SDL_JoystickID
-|'''which'''
-|the joystick instance id
-|-
-|Uint8
-|'''button'''
-|the controller button ([SDL_GameControllerButton](SDL_GameControllerButton))
-|-
-|Uint8
-|'''state'''
-|SDL_PRESSED or SDL_RELEASED
-|}
+|                |                 |                                                                              |
+| -------------- | --------------- | ---------------------------------------------------------------------------- |
+| Uint32         | '''type'''      | SDL_CONTROLLERBUTTONDOWN or SDL_CONTROLLERBUTTONUP                           |
+| Uint32         | '''timestamp''' | the timestamp of the event                                                   |
+| SDL_JoystickID | '''which'''     | the joystick instance id                                                     |
+| Uint8          | '''button'''    | the controller button ([SDL_GameControllerButton](SDL_GameControllerButton)) |
+| Uint8          | '''state'''     | SDL_PRESSED or SDL_RELEASED                                                  |
 
 ## Related Enumerations
 

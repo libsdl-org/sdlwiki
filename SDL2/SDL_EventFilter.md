@@ -47,13 +47,10 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 
 ## Definition Parameters
 
-{|
-|'''userdata'''
-|The data passed by the original call to [SDL_AddEventWatch](SDL_AddEventWatch)
-|-
-|'''event'''
-|The [SDL_Event](SDL_Event) representing the event
-|}
+|                |                                                                                |
+| -------------- | ------------------------------------------------------------------------------ |
+| '''userdata''' | The data passed by the original call to [SDL_AddEventWatch](SDL_AddEventWatch) |
+| '''event'''    | The [SDL_Event](SDL_Event) representing the event                              |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)

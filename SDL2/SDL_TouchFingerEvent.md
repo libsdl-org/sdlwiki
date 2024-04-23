@@ -27,47 +27,18 @@ typedef struct SDL_TouchFingerEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|SDL_TouchID
-|'''touchId'''
-|the touch device id
-|-
-|SDL_FingerID
-|'''fingerId'''
-|the finger id
-|-
-|float
-|'''x'''
-|the x-axis location of the touch event, normalized (0...1)
-|-
-|float
-|'''y'''
-|the y-axis location of the touch event, normalized (0...1)
-|-
-|float
-|'''dx'''
-|the distance moved in the x-axis, normalized (-1...1)
-|-
-|float
-|'''dy'''
-|the distance moved in the y-axis, normalized (-1...1)
-|-
-|float
-|'''pressure'''
-|the quantity of pressure applied, normalized (0...1)
-|-
-|Uint32
-|'''windowID'''
-|the window underneath the finger, if any
-|}
+|              |                 |                                                            |
+| ------------ | --------------- | ---------------------------------------------------------- |
+| Uint32       | '''type'''      | SDL_FINGERMOTION, SDL_FINGERDOWN, or SDL_FINGERUP          |
+| Uint32       | '''timestamp''' | timestamp of the event                                     |
+| SDL_TouchID  | '''touchId'''   | the touch device id                                        |
+| SDL_FingerID | '''fingerId'''  | the finger id                                              |
+| float        | '''x'''         | the x-axis location of the touch event, normalized (0...1) |
+| float        | '''y'''         | the y-axis location of the touch event, normalized (0...1) |
+| float        | '''dx'''        | the distance moved in the x-axis, normalized (-1...1)      |
+| float        | '''dy'''        | the distance moved in the y-axis, normalized (-1...1)      |
+| float        | '''pressure'''  | the quantity of pressure applied, normalized (0...1)       |
+| Uint32       | '''windowID'''  | the window underneath the finger, if any                   |
 
 ## Related Enumerations
 

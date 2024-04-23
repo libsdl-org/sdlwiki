@@ -27,19 +27,11 @@ typedef struct SDL_ControllerDeviceEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED
-|-
-|Uint32
-|'''timestamp'''
-|the timestamp of the event
-|-
-|Sint32
-|'''which'''
-|the joystick device index for the SDL_CONTROLLERDEVICEADDED event or instance id for the SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED event
-|}
+|        |                 |                                                                                                                                                            |
+| ------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Uint32 | '''type'''      | SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED                                                                     |
+| Uint32 | '''timestamp''' | the timestamp of the event                                                                                                                                 |
+| Sint32 | '''which'''     | the joystick device index for the SDL_CONTROLLERDEVICEADDED event or instance id for the SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED event |
 
 ## Related Enumerations
 

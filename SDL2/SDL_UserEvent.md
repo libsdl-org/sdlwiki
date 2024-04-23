@@ -41,31 +41,14 @@ if (myEventType != ((Uint32)-1)) {
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|value obtained from [SDL_RegisterEvents](SDL_RegisterEvents)()
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the associated window, if any
-|-
-|Sint32
-|'''code'''
-|user defined event code
-|-
-|void*
-|'''data1'''
-|user defined data pointer
-|-
-|void*
-|'''data2'''
-|user defined data pointer
-|}
+|        |                 |                                                                |
+| ------ | --------------- | -------------------------------------------------------------- |
+| Uint32 | '''type'''      | value obtained from [SDL_RegisterEvents](SDL_RegisterEvents)() |
+| Uint32 | '''timestamp''' | timestamp of the event                                         |
+| Uint32 | '''windowID'''  | the associated window, if any                                  |
+| Sint32 | '''code'''      | user defined event code                                        |
+| void*  | '''data1'''     | user defined data pointer                                      |
+| void*  | '''data2'''     | user defined data pointer                                      |
 
 ## Related Enumerations
 

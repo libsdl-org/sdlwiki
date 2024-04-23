@@ -124,35 +124,15 @@ if (io != NULL) {
 
 ## Data Fields
 
-{|
-|Sint64 (*)(SDL_RWops *)
-|'''size'''
-|callback that reports stream size; see Remarks
-|-
-|Sint64 (*)(SDL_RWops *, Sint64, int)
-|'''seek'''
-|callback that seeks in stream; see Remarks
-|-
-|size_t (*)(SDL_RWops *, void *, size_t, size_t)
-|'''read'''
-|callback that reads from the stream; see Remarks
-|-
-|size_t (*)(SDL_RWops *, const void *, size_t, size_t)
-|'''write'''
-|callback that writes to the stream; see Remarks
-|-
-|int (*)(SDL_RWops *)
-|'''close'''
-|callback that closes the stream; see Remarks
-|-
-|Uint32
-|'''type'''
-|type of stream; see Remarks
-|-
-|union
-|'''hidden'''
-|type-specific data; see Remarks
-|}
+|                                                       |              |                                                  |
+| ----------------------------------------------------- | ------------ | ------------------------------------------------ |
+| Sint64 (*)(SDL_RWops *)                               | '''size'''   | callback that reports stream size; see Remarks   |
+| Sint64 (*)(SDL_RWops *, Sint64, int)                  | '''seek'''   | callback that seeks in stream; see Remarks       |
+| size_t (*)(SDL_RWops *, void *, size_t, size_t)       | '''read'''   | callback that reads from the stream; see Remarks |
+| size_t (*)(SDL_RWops *, const void *, size_t, size_t) | '''write'''  | callback that writes to the stream; see Remarks  |
+| int (*)(SDL_RWops *)                                  | '''close'''  | callback that closes the stream; see Remarks     |
+| Uint32                                                | '''type'''   | type of stream; see Remarks                      |
+| union                                                 | '''hidden''' | type-specific data; see Remarks                  |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryIO](CategoryIO)

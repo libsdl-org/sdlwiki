@@ -26,43 +26,17 @@ typedef struct SDL_MouseMotionEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|the event type; SDL_MOUSEMOTION
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the window with mouse focus, if any
-|-
-|Uint32
-|'''which'''
-|the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details
-|-
-|Uint32
-|'''state'''
-|the state of the button; see Remarks for details
-|-
-|Sint32
-|'''x'''
-|X coordinate, relative to window
-|-
-|Sint32
-|'''y'''
-|Y coordinate, relative to window
-|-
-|Sint32
-|'''xrel'''
-|relative motion in the X direction
-|-
-|Sint32
-|'''yrel'''
-|relative motion in the Y direction
-|}
+|        |                 |                                                                      |
+| ------ | --------------- | -------------------------------------------------------------------- |
+| Uint32 | '''type'''      | the event type; SDL_MOUSEMOTION                                      |
+| Uint32 | '''timestamp''' | timestamp of the event                                               |
+| Uint32 | '''windowID'''  | the window with mouse focus, if any                                  |
+| Uint32 | '''which'''     | the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details |
+| Uint32 | '''state'''     | the state of the button; see Remarks for details                     |
+| Sint32 | '''x'''         | X coordinate, relative to window                                     |
+| Sint32 | '''y'''         | Y coordinate, relative to window                                     |
+| Sint32 | '''xrel'''      | relative motion in the X direction                                   |
+| Sint32 | '''yrel'''      | relative motion in the Y direction                                   |
 
 ## Related Enumerations
 

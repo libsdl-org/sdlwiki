@@ -33,35 +33,15 @@ typedef struct SDL_MessageBoxData
 
 ## Data Fields
 
-{|
-| Uint32                               
-| '''flags'''       
-| an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) 
-|-
-| SDL_Window*                          
-| '''window'''      
-| an parent window, can be NULL 
-|-
-| const char*                          
-| '''title'''       
-| an UTF-8 title 
-|-
-| const char*                          
-| '''message'''     
-| an UTF-8 message text 
-|-
-| int                                  
-| '''numbuttons'''  
-| the number of buttons 
-|-
-| const [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)*  
-| '''buttons'''     
-| an array of [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) with length of '''numbuttons''' 
-|-
-| const [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)* 
-| '''colorScheme''' 
-| an [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme), can be NULL to use system settings 
-|}
+|                                                                 |                     |                                                                                                    |
+| --------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------- |
+|  Uint32                                                         |  '''flags'''        |  an [SDL_MessageBoxFlags](SDL_MessageBoxFlags)                                                     |
+|  SDL_Window*                                                    |  '''window'''       |  an parent window, can be NULL                                                                     |
+|  const char*                                                    |  '''title'''        |  an UTF-8 title                                                                                    |
+|  const char*                                                    |  '''message'''      |  an UTF-8 message text                                                                             |
+|  int                                                            |  '''numbuttons'''   |  the number of buttons                                                                             |
+|  const [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)*    |  '''buttons'''      |  an array of [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) with length of '''numbuttons'''  |
+|  const [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)*  |  '''colorScheme'''  |  an [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme), can be NULL to use system settings     |
 
 ## Related Enumerations
 

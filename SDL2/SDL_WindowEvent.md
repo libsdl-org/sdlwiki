@@ -103,31 +103,14 @@ void PrintEvent(const SDL_Event *event)
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_WINDOWEVENT
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the associated window
-|-
-|Uint8
-|'''event'''
-|[SDL_WindowEventID](SDL_WindowEventID)
-|-
-|Sint32
-|'''data1'''
-|event dependent data
-|-
-|Sint32
-|'''data2'''
-|event dependent data
-|}
+|        |                 |                                        |
+| ------ | --------------- | -------------------------------------- |
+| Uint32 | '''type'''      | SDL_WINDOWEVENT                        |
+| Uint32 | '''timestamp''' | timestamp of the event                 |
+| Uint32 | '''windowID'''  | the associated window                  |
+| Uint8  | '''event'''     | [SDL_WindowEventID](SDL_WindowEventID) |
+| Sint32 | '''data1'''     | event dependent data                   |
+| Sint32 | '''data2'''     | event dependent data                   |
 
 ## Related Enumerations
 

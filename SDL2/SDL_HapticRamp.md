@@ -58,75 +58,25 @@ instead of linear.
 
 ## Data Fields
 
-{|
-|
-|
-|<bgcolor="#EDEDED">''Header''
-|-
-|Uint16
-|'''type'''
-|SDL_HAPTIC_RAMP
-|-
-|[SDL_HapticDirection](SDL_HapticDirection)
-|'''direction'''
-|direction of the effect
-|-
-|
-|
-|<bgcolor="#EDEDED">''Replay''
-|-
-|Uint32
-|'''length'''
-|duration of the effect
-|-
-|Uint16
-|'''delay'''
-|delay before starting the effect
-|-
-|
-|
-|<bgcolor="#EDEDED">''Trigger''
-|-
-|Uint16
-|'''button'''
-|button that triggers the effect
-|-
-|Uint16
-|'''interval'''
-|how soon it can be triggered again after '''button'''
-|-
-|
-|
-|<bgcolor="#EDEDED">''Ramp''
-|-
-|Sint16
-|'''start'''
-|beginning strength level
-|-
-|Sint16
-|'''end'''
-|ending strength level
-|-
-|
-|
-|<bgcolor="#EDEDED">''Envelope''
-|-
-|Uint16
-|'''attack_length'''
-|duration of the attack
-|-
-|Uint16
-|'''attack_level'''
-|level at the start of the attack
-|-
-|Uint16
-|'''fade_length'''
-|duration of the fade
-|-
-|Uint16
-|'''fade_level'''
-|level at the end of the fade
-|}
+|                                            |                     |                                                       |
+| ------------------------------------------ | ------------------- | ----------------------------------------------------- |
+|                                            |                     | <bgcolor="#EDEDED">''Header''                         |
+| Uint16                                     | '''type'''          | SDL_HAPTIC_RAMP                                       |
+| [SDL_HapticDirection](SDL_HapticDirection) | '''direction'''     | direction of the effect                               |
+|                                            |                     | <bgcolor="#EDEDED">''Replay''                         |
+| Uint32                                     | '''length'''        | duration of the effect                                |
+| Uint16                                     | '''delay'''         | delay before starting the effect                      |
+|                                            |                     | <bgcolor="#EDEDED">''Trigger''                        |
+| Uint16                                     | '''button'''        | button that triggers the effect                       |
+| Uint16                                     | '''interval'''      | how soon it can be triggered again after '''button''' |
+|                                            |                     | <bgcolor="#EDEDED">''Ramp''                           |
+| Sint16                                     | '''start'''         | beginning strength level                              |
+| Sint16                                     | '''end'''           | ending strength level                                 |
+|                                            |                     | <bgcolor="#EDEDED">''Envelope''                       |
+| Uint16                                     | '''attack_length''' | duration of the attack                                |
+| Uint16                                     | '''attack_level'''  | level at the start of the attack                      |
+| Uint16                                     | '''fade_length'''   | duration of the fade                                  |
+| Uint16                                     | '''fade_level'''    | level at the end of the fade                          |
 
 ## Related Structures
 

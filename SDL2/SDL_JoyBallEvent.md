@@ -26,31 +26,14 @@ typedef struct SDL_JoyBallEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_JOYBALLMOTION
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|SDL_JoystickID
-|'''which'''
-|the instance id of the joystick that reported the event
-|-
-|Uint8
-|'''ball'''
-|the index of the trackball that changed
-|-
-|Sint16
-|'''xrel'''
-|the relative motion in the X direction
-|-
-|Sint16
-|'''yrel'''
-|the relative motion in the Y direction
-|}
+|                |                 |                                                         |
+| -------------- | --------------- | ------------------------------------------------------- |
+| Uint32         | '''type'''      | SDL_JOYBALLMOTION                                       |
+| Uint32         | '''timestamp''' | timestamp of the event                                  |
+| SDL_JoystickID | '''which'''     | the instance id of the joystick that reported the event |
+| Uint8          | '''ball'''      | the index of the trackball that changed                 |
+| Sint16         | '''xrel'''      | the relative motion in the X direction                  |
+| Sint16         | '''yrel'''      | the relative motion in the Y direction                  |
 
 ## Related Enumerations
 

@@ -20,19 +20,11 @@ typedef struct SDL_Vertex
 
 ## Data Fields
 
-{|
-|SDL_FPoint
-|'''position'''
-|Vertex position, in SDL_Renderer coordinates
-|-
-|SDL_Color
-|'''color'''
-|Vertex color
-|-
-|SDL_FPoint
-|'''tex_coord'''
-|Normalized texture coordinates, if needed (Range from 0 to 1, i.ie for a 64x64px texture, beginning at 32x32px will be entered as 0.5,0,5)
-|}
+|            |                 |                                                                                                                                            |
+| ---------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| SDL_FPoint | '''position'''  | Vertex position, in SDL_Renderer coordinates                                                                                               |
+| SDL_Color  | '''color'''     | Vertex color                                                                                                                               |
+| SDL_FPoint | '''tex_coord''' | Normalized texture coordinates, if needed (Range from 0 to 1, i.ie for a 64x64px texture, beginning at 32x32px will be entered as 0.5,0,5) |
 
 ## Related Structures
 

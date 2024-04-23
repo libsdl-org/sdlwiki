@@ -77,83 +77,27 @@ Examples:
 
 ## Data Fields
 
-{|
-|
-|
-|<bgcolor="#EDEDED">''Header''
-|-
-|Uint16
-|'''type'''
-|the shape of the waves; <!-- one of the effects handled by this structure --> see Remarks for details
-|-
-|[SDL_HapticDirection](SDL_HapticDirection)
-|'''direction'''
-|direction of the effect (relative to the user)
-|-
-|
-|
-|<bgcolor="#EDEDED">''Replay''
-|-
-|Uint32
-|'''length'''
-|duration of the effect <!-- (is this the same as # of cycles? always in ms?) --> 
-|-
-|Uint16
-|'''delay'''
-|delay before starting the effect <!-- (ms?) --> 
-|-
-|
-|
-|<bgcolor="#EDEDED">''Trigger''
-|-
-|Uint16
-|'''button'''
-|button that triggers the effect
-|-
-|Uint16
-|'''interval'''
-|how soon it can be triggered again after '''button''' <!-- (ms?) (delay between individual waves or before the effect can be used again?) --> 
-|-
-|
-|
-|<bgcolor="#EDEDED">''Periodic''
-|-
-|Uint16
-|'''period'''
-|period of the wave <!-- (ms?) (like frequency, duration from start to start?) --> 
-|-
-|Sint16
-|'''magnitude'''
-|peak value; if negative, equivalent to 180 degrees extra phase shift <!-- (units?) (like amplitude?) --> 
-|-
-|Sint16
-|'''offset'''
-|mean value of the wave <!-- (what aspect of the wave is being offset from what other marker? Is this the distance between waves?) --> 
-|-
-|Uint16
-|'''phase'''
-|positive phase shift given by hundredth of a degree; see Remarks for details <!-- (Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) --> 
-|-
-|
-|
-|<bgcolor="#EDEDED">''Envelope''
-|-
-|Uint16
-|'''attack_length'''
-|duration of the attack <!-- (ms?) --> 
-|-
-|Uint16
-|'''attack_level'''
-|level at the start of the attack <!-- (units?) --> 
-|-
-|Uint16
-|'''fade_length'''
-|duration of the fade <!-- (ms?) --> 
-|-
-|Uint16
-|'''fade_level'''
-|level at the end of the fade <!-- (units?) --> 
-|}
+|                                            |                     |                                                                                                                                                                        |
+| ------------------------------------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|                                            |                     | <bgcolor="#EDEDED">''Header''                                                                                                                                          |
+| Uint16                                     | '''type'''          | the shape of the waves; <!-- one of the effects handled by this structure --> see Remarks for details                                                                  |
+| [SDL_HapticDirection](SDL_HapticDirection) | '''direction'''     | direction of the effect (relative to the user)                                                                                                                         |
+|                                            |                     | <bgcolor="#EDEDED">''Replay''                                                                                                                                          |
+| Uint32                                     | '''length'''        | duration of the effect <!-- (is this the same as # of cycles? always in ms?) -->                                                                                       |
+| Uint16                                     | '''delay'''         | delay before starting the effect <!-- (ms?) -->                                                                                                                        |
+|                                            |                     | <bgcolor="#EDEDED">''Trigger''                                                                                                                                         |
+| Uint16                                     | '''button'''        | button that triggers the effect                                                                                                                                        |
+| Uint16                                     | '''interval'''      | how soon it can be triggered again after '''button''' <!-- (ms?) (delay between individual waves or before the effect can be used again?) -->                          |
+|                                            |                     | <bgcolor="#EDEDED">''Periodic''                                                                                                                                        |
+| Uint16                                     | '''period'''        | period of the wave <!-- (ms?) (like frequency, duration from start to start?) -->                                                                                      |
+| Sint16                                     | '''magnitude'''     | peak value; if negative, equivalent to 180 degrees extra phase shift <!-- (units?) (like amplitude?) -->                                                               |
+| Sint16                                     | '''offset'''        | mean value of the wave <!-- (what aspect of the wave is being offset from what other marker? Is this the distance between waves?) -->                                  |
+| Uint16                                     | '''phase'''         | positive phase shift given by hundredth of a degree; see Remarks for details <!-- (Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) -->  |
+|                                            |                     | <bgcolor="#EDEDED">''Envelope''                                                                                                                                        |
+| Uint16                                     | '''attack_length''' | duration of the attack <!-- (ms?) -->                                                                                                                                  |
+| Uint16                                     | '''attack_level'''  | level at the start of the attack <!-- (units?) -->                                                                                                                     |
+| Uint16                                     | '''fade_length'''   | duration of the fade <!-- (ms?) -->                                                                                                                                    |
+| Uint16                                     | '''fade_level'''    | level at the end of the fade <!-- (units?) -->                                                                                                                         |
 
 ## Related Structures
 

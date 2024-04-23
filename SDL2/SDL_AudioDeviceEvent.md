@@ -31,23 +31,12 @@ typedef struct SDL_AudioDeviceEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_AUDIODEVICEADDED, or SDL_AUDIODEVICEREMOVED
-|-
-|Uint32
-|'''timestamp'''
-|the timestamp of the event
-|-
-|Uint32
-|'''which'''
-|the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event
-|-
-|Uint8
-|'''iscapture'''
-|zero if an audio output device, non-zero if an audio capture device
-|}
+|        |                 |                                                                                                                                                                                              |
+| ------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Uint32 | '''type'''      | SDL_AUDIODEVICEADDED, or SDL_AUDIODEVICEREMOVED                                                                                                                                              |
+| Uint32 | '''timestamp''' | the timestamp of the event                                                                                                                                                                   |
+| Uint32 | '''which'''     | the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event |
+| Uint8  | '''iscapture''' | zero if an audio output device, non-zero if an audio capture device                                                                                                                          |
 
 ## Related Enumerations
 

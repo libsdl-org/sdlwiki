@@ -64,43 +64,17 @@ while( SDL_PollEvent( &event ) )
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_MOUSEWHEEL
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the window with mouse focus, if any
-|-
-|Uint32
-|'''which'''
-|the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details
-|-
-|Sint32
-|'''x'''
-|the amount scrolled horizontally, positive to the right and negative to the left
-|-
-|Sint32
-|'''y'''
-|the amount scrolled vertically, positive away from the user and negative towards the user
-|-
-|Uint32
-|'''direction'''
-|SDL_MOUSEWHEEL_NORMAL or SDL_MOUSEWHEEL_FLIPPED; see Remarks for details (>= SDL 2.0.4)
-|-
-|float
-|'''preciseX'''
-|the amount scrolled horizontally, positive to the right and negative to the left, with float precision (added in 2.0.18)
-|-
-|float
-|'''preciseY'''
-|the amount scrolled vertically, positive away from the user and negative toward the user, with float precision (added in 2.0.18)
-|}
+|        |                 |                                                                                                                                  |
+| ------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| Uint32 | '''type'''      | SDL_MOUSEWHEEL                                                                                                                   |
+| Uint32 | '''timestamp''' | timestamp of the event                                                                                                           |
+| Uint32 | '''windowID'''  | the window with mouse focus, if any                                                                                              |
+| Uint32 | '''which'''     | the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details                                                             |
+| Sint32 | '''x'''         | the amount scrolled horizontally, positive to the right and negative to the left                                                 |
+| Sint32 | '''y'''         | the amount scrolled vertically, positive away from the user and negative towards the user                                        |
+| Uint32 | '''direction''' | SDL_MOUSEWHEEL_NORMAL or SDL_MOUSEWHEEL_FLIPPED; see Remarks for details (>= SDL 2.0.4)                                          |
+| float  | '''preciseX'''  | the amount scrolled horizontally, positive to the right and negative to the left, with float precision (added in 2.0.18)         |
+| float  | '''preciseY'''  | the amount scrolled vertically, positive away from the user and negative toward the user, with float precision (added in 2.0.18) |
 
 ## Related Enumerations
 

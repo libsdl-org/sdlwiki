@@ -25,11 +25,9 @@ typedef struct SDL_MessageBoxColorScheme
 
 ## Data Fields
 
-{|
-|[SDL_MessageBoxColor](SDL_MessageBoxColor)[5]
-|'''colors'''
-| 
-|}
+|                                               |              |   |
+| --------------------------------------------- | ------------ | - |
+| [SDL_MessageBoxColor](SDL_MessageBoxColor)[5] | '''colors''' |   |
 
 ## Related Enumerations
 

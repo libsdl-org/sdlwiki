@@ -23,31 +23,14 @@ typedef struct SDL_TextEditingEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_TEXTEDITING
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the window with keyboard focus, if any
-|-
-|char[32]
-|'''text'''
-|the null-terminated editing text in UTF-8 encoding
-|-
-|Sint32
-|'''start'''
-|the location to begin editing from
-|-
-|Sint32
-|'''length'''
-|the number of characters to edit from the start point
-|}
+|          |                 |                                                       |
+| -------- | --------------- | ----------------------------------------------------- |
+| Uint32   | '''type'''      | SDL_TEXTEDITING                                       |
+| Uint32   | '''timestamp''' | timestamp of the event                                |
+| Uint32   | '''windowID'''  | the window with keyboard focus, if any                |
+| char[32] | '''text'''      | the null-terminated editing text in UTF-8 encoding    |
+| Sint32   | '''start'''     | the location to begin editing from                    |
+| Sint32   | '''length'''    | the number of characters to edit from the start point |
 
 ## Related Enumerations
 

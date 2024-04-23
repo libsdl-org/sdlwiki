@@ -76,83 +76,27 @@ struct SDL_SysWMmsg
 
 ## Data Fields
 
-{|
-|
-|
-|<bgcolor="#EDEDED">''All Subsystems''
-|-
-|[SDL_version](SDL_version)
-|'''version'''
-|an [SDL_version](SDL_version) structure that contains the current SDL version
-|-
-|[SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
-|'''subsystem'''
-|the windowing system type; see Remarks for details
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''dummy'''
-|<style="color: #808080;">unused (to help compilers when no specific system is available)
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_WINDOWS''
-|-
-|HWND
-|'''win.hwnd'''
-|the window for the message
-|-
-|UINT
-|'''win.msg'''
-|the type of message
-|-
-|WPARAM
-|'''win.wParam'''
-|WORD message parameter
-|-
-|LPARAM
-|'''win.lParam'''
-|LONG message parameter
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_X11''
-|-
-|XEvent
-|'''x11.event'''
-|the native x11 event structure
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_DIRECTFB''
-|-
-|DFBEvent
-|'''dfb.event'''
-|the DirectFB event
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_COCOA''
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''cocoa.dummy'''
-|<style="color: #808080;">unused (>= SDL 2.0.4)
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_UIKIT''
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''uikit.dummy'''
-|<style="color: #808080;">unused (>= SDL 2.0.4)
-|-
-|
-|
-|<bgcolor="#EDEDED">''SDL_SYSWM_VIVANTE''
-|-
-|<style="color: #808080;">int
-|<style="color: #808080;">'''vivante.dummy'''
-|<style="color: #808080;">unused (>= SDL 2.0.5)
-|}
+|                                  |                                              |                                                                                          |
+| -------------------------------- | -------------------------------------------- | ---------------------------------------------------------------------------------------- |
+|                                  |                                              | <bgcolor="#EDEDED">''All Subsystems''                                                    |
+| [SDL_version](SDL_version)       | '''version'''                                | an [SDL_version](SDL_version) structure that contains the current SDL version            |
+| [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE) | '''subsystem'''                              | the windowing system type; see Remarks for details                                       |
+| <style="color: #808080;">int     | <style="color: #808080;">'''dummy'''         | <style="color: #808080;">unused (to help compilers when no specific system is available) |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_WINDOWS''                                                 |
+| HWND                             | '''win.hwnd'''                               | the window for the message                                                               |
+| UINT                             | '''win.msg'''                                | the type of message                                                                      |
+| WPARAM                           | '''win.wParam'''                             | WORD message parameter                                                                   |
+| LPARAM                           | '''win.lParam'''                             | LONG message parameter                                                                   |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_X11''                                                     |
+| XEvent                           | '''x11.event'''                              | the native x11 event structure                                                           |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_DIRECTFB''                                                |
+| DFBEvent                         | '''dfb.event'''                              | the DirectFB event                                                                       |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_COCOA''                                                   |
+| <style="color: #808080;">int     | <style="color: #808080;">'''cocoa.dummy'''   | <style="color: #808080;">unused (>= SDL 2.0.4)                                           |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_UIKIT''                                                   |
+| <style="color: #808080;">int     | <style="color: #808080;">'''uikit.dummy'''   | <style="color: #808080;">unused (>= SDL 2.0.4)                                           |
+|                                  |                                              | <bgcolor="#EDEDED">''SDL_SYSWM_VIVANTE''                                                 |
+| <style="color: #808080;">int     | <style="color: #808080;">'''vivante.dummy''' | <style="color: #808080;">unused (>= SDL 2.0.5)                                           |
 
 ## Related Enumerations
 

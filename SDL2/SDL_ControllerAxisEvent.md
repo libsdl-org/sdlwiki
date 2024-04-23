@@ -33,27 +33,13 @@ typedef struct SDL_ControllerAxisEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|SDL_CONTROLLERAXISMOTION
-|-
-|Uint32
-|'''timestamp'''
-|the timestamp of the event
-|-
-|SDL_JoystickID
-|'''which'''
-|the joystick instance id
-|-
-|Uint8
-|'''axis'''
-|the controller axis ([SDL_GameControllerAxis](SDL_GameControllerAxis))
-|-
-|Sint16
-|'''value'''
-|the axis value (range: -32768 to 32767)
-|}
+|                |                 |                                                                        |
+| -------------- | --------------- | ---------------------------------------------------------------------- |
+| Uint32         | '''type'''      | SDL_CONTROLLERAXISMOTION                                               |
+| Uint32         | '''timestamp''' | the timestamp of the event                                             |
+| SDL_JoystickID | '''which'''     | the joystick instance id                                               |
+| Uint8          | '''axis'''      | the controller axis ([SDL_GameControllerAxis](SDL_GameControllerAxis)) |
+| Sint16         | '''value'''     | the axis value (range: -32768 to 32767)                                |
 
 ## Related Enumerations
 

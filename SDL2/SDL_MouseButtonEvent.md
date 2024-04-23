@@ -27,43 +27,17 @@ typedef struct SDL_MouseButtonEvent
 
 ## Data Fields
 
-{|
-|Uint32
-|'''type'''
-|the event type; SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP
-|-
-|Uint32
-|'''timestamp'''
-|timestamp of the event
-|-
-|Uint32
-|'''windowID'''
-|the window with mouse focus, if any
-|-
-|Uint32
-|'''which'''
-|the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details
-|-
-|Uint8
-|'''button'''
-|the button that changed; see Remarks for details
-|-
-|Uint8
-|'''state'''
-|the state of the button; SDL_PRESSED or SDL_RELEASED
-|-
-|Uint8
-|'''clicks'''
-|1 for single-click, 2 for double-click, etc. (>= SDL 2.0.2)
-|-
-|Sint32
-|'''x'''
-|X coordinate, relative to window
-|-
-|Sint32
-|'''y'''
-|Y coordinate, relative to window
-|}
+|        |                 |                                                                      |
+| ------ | --------------- | -------------------------------------------------------------------- |
+| Uint32 | '''type'''      | the event type; SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP             |
+| Uint32 | '''timestamp''' | timestamp of the event                                               |
+| Uint32 | '''windowID'''  | the window with mouse focus, if any                                  |
+| Uint32 | '''which'''     | the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details |
+| Uint8  | '''button'''    | the button that changed; see Remarks for details                     |
+| Uint8  | '''state'''     | the state of the button; SDL_PRESSED or SDL_RELEASED                 |
+| Uint8  | '''clicks'''    | 1 for single-click, 2 for double-click, etc. (>= SDL 2.0.2)          |
+| Sint32 | '''x'''         | X coordinate, relative to window                                     |
+| Sint32 | '''y'''         | Y coordinate, relative to window                                     |
 
 ## Related Enumerations
 
