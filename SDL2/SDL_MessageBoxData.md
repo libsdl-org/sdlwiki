@@ -36,7 +36,7 @@ typedef struct SDL_MessageBoxData
 {|
 | Uint32                               
 | '''flags'''       
-| an [[SDL_MessageBoxFlags]] 
+| an [SDL_MessageBoxFlags](SDL_MessageBoxFlags) 
 |-
 | SDL_Window*                          
 | '''window'''      
@@ -54,23 +54,23 @@ typedef struct SDL_MessageBoxData
 | '''numbuttons'''  
 | the number of buttons 
 |-
-| const [[SDL_MessageBoxButtonData]]*  
+| const [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)*  
 | '''buttons'''     
-| an array of [[SDL_MessageBoxButtonData]] with length of '''numbuttons''' 
+| an array of [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) with length of '''numbuttons''' 
 |-
-| const [[SDL_MessageBoxColorScheme]]* 
+| const [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)* 
 | '''colorScheme''' 
-| an [[SDL_MessageBoxColorScheme]], can be NULL to use system settings 
+| an [SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme), can be NULL to use system settings 
 |}
 
 ## Related Enumerations
 
-:[[SDL_MessageBoxFlags]]
+[SDL_MessageBoxFlags](SDL_MessageBoxFlags)
 
 ## Related Structures
 
-:[[SDL_MessageBoxButtonData]]
-:[[SDL_MessageBoxColorScheme]]
+[SDL_MessageBoxButtonData](SDL_MessageBoxButtonData)
+[SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

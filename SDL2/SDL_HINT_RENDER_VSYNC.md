@@ -22,7 +22,7 @@ By default SDL does not sync screen surface updates with vertical refresh.
 
 ## Default
 
-By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [[SDL_CreateRenderer]]().
+By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [SDL_CreateRenderer](SDL_CreateRenderer)().
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

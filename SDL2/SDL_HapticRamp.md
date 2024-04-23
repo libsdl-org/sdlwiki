@@ -67,7 +67,7 @@ instead of linear.
 |'''type'''
 |SDL_HAPTIC_RAMP
 |-
-|[[SDL_HapticDirection]]
+|[SDL_HapticDirection](SDL_HapticDirection)
 |'''direction'''
 |direction of the effect
 |-
@@ -130,7 +130,7 @@ instead of linear.
 
 ## Related Structures
 
-:[[SDL_HapticDirection]]
+[SDL_HapticDirection](SDL_HapticDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

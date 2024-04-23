@@ -75,11 +75,11 @@ positive and which is negative.
 |-
 |Uint16
 |'''type'''
-|one of the effects handled by this structure; see [[#type|Remarks]] for details
+|one of the effects handled by this structure; see Remarks for details
 |-
-|<style="color: #808080;">[[SDL_HapticDirection]]
+|<style="color: #808080;">[SDL_HapticDirection](SDL_HapticDirection)
 |<style="color: #808080;">'''direction'''
-|<style="color: #808080;">direction of the effect - not used at the moment; see [[#direction|Remarks]] for details
+|<style="color: #808080;">direction of the effect - not used at the moment; see Remarks for details
 |-
 |
 |
@@ -137,7 +137,7 @@ positive and which is negative.
 
 ## Related Structures
 
-:[[SDL_HapticDirection]]
+[SDL_HapticDirection](SDL_HapticDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

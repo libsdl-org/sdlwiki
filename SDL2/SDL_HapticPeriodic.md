@@ -84,9 +84,9 @@ Examples:
 |-
 |Uint16
 |'''type'''
-|the shape of the waves; <!-- one of the effects handled by this structure --> see [[#type|Remarks]] for details
+|the shape of the waves; <!-- one of the effects handled by this structure --> see Remarks for details
 |-
-|[[SDL_HapticDirection]]
+|[SDL_HapticDirection](SDL_HapticDirection)
 |'''direction'''
 |direction of the effect (relative to the user)
 |-
@@ -132,7 +132,7 @@ Examples:
 |-
 |Uint16
 |'''phase'''
-|positive phase shift given by hundredth of a degree; see [[#phase|Remarks]] for details <!-- (Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) --> 
+|positive phase shift given by hundredth of a degree; see Remarks for details <!-- (Is this what creates the flat tops? What is the definition of a cycle, 1 sec?) --> 
 |-
 |
 |
@@ -157,7 +157,7 @@ Examples:
 
 ## Related Structures
 
-:[[SDL_HapticDirection]]
+[SDL_HapticDirection](SDL_HapticDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

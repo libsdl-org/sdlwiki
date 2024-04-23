@@ -109,11 +109,11 @@ int main(int argc, char *argv[]) {
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
+[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

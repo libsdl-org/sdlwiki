@@ -31,7 +31,7 @@ text that is being composed will be rendered in its own UI.
 
 ## Default
 
-By default [[SDL_TextEditingEvent|SDL_TEXTEDITING]] events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
+By default [SDL_TEXTEDITING](SDL_TextEditingEvent) events are sent, and it is the application's responsibility to render the text from these events and differentiate it somehow from committed text.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

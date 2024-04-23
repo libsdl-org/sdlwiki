@@ -32,8 +32,8 @@ typedef enum SDL_SYSWM_TYPE
 
 ## Related Structures
 
-:[[SDL_SysWMinfo]]
-:[[SDL_SysWMmsg]]
+[SDL_SysWMinfo](SDL_SysWMinfo)
+[SDL_SysWMmsg](SDL_SysWMmsg)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategorySWM](CategorySWM)

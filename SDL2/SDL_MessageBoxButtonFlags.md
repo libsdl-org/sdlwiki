@@ -26,7 +26,7 @@ typedef enum SDL_MessageBoxButtonFlags
 
 ## Related Structures
 
-:[[SDL_MessageBoxButtonData]] 
+[SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) 
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

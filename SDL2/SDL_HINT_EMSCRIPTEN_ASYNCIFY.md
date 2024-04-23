@@ -54,8 +54,8 @@ SDL pauses the application and gives back control to the browser automatically w
 
 * refreshing the software graphics context,
 * refreshing the GPU graphics context,
-* using [[SDL_Delay]],
-* polling events (through SDL_Delay), hence supporting [[SDL_WaitEvent]]
+* using [SDL_Delay](SDL_Delay),
+* polling events (through SDL_Delay), hence supporting [SDL_WaitEvent](SDL_WaitEvent)
 
 The SDL application hence can be ported to the web browser without any code change to the main loop (no [https://emscripten.org/docs/api_reference/emscripten.h.html#c.emscripten_set_main_loop emscripten_set_main_loop]), at the cost of a reasonable performance hit.
 

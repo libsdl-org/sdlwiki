@@ -81,13 +81,13 @@ struct SDL_SysWMmsg
 |
 |<bgcolor="#EDEDED">''All Subsystems''
 |-
-|[[SDL_version]]
+|[SDL_version](SDL_version)
 |'''version'''
-|an [[SDL_version]] structure that contains the current SDL version
+|an [SDL_version](SDL_version) structure that contains the current SDL version
 |-
-|[[SDL_SYSWM_TYPE]]
+|[SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
 |'''subsystem'''
-|the windowing system type; see [[#Remarks|Remarks]] for details
+|the windowing system type; see Remarks for details
 |-
 |<style="color: #808080;">int
 |<style="color: #808080;">'''dummy'''
@@ -156,11 +156,11 @@ struct SDL_SysWMmsg
 
 ## Related Enumerations
 
-:[[SDL_SYSWM_TYPE]]
+[SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
 
 ## Related Structures
 
-:[[SDL_version]]
+[SDL_version](SDL_version)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategorySWM](CategorySWM)

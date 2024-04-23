@@ -41,12 +41,12 @@ typedef struct SDL_TextInputEvent
 
 ## Related Enumerations
 
-: [[SDL_EventType]]
+: [SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-: [[SDL_Event]]
-: [[SDL_TextEditingEvent]]
+: [SDL_Event](SDL_Event)
+: [SDL_TextEditingEvent](SDL_TextEditingEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), CategoryStruct, CategoryEvents

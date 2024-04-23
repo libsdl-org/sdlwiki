@@ -30,11 +30,11 @@ typedef struct SDL_MessageBoxButtonData
 {|
 | Uint32      
 |'''flags'''    
-| one of the values from [[SDL_MessageBoxButtonFlags]] 
+| one of the values from [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags) 
 |-
 | int         
 |'''buttonid''' 
-| user defined button id (value returned via [[SDL_ShowMessageBox]]()) 
+| user defined button id (value returned via [SDL_ShowMessageBox](SDL_ShowMessageBox)()) 
 |-
 | const char* 
 |'''text'''     
@@ -43,11 +43,11 @@ typedef struct SDL_MessageBoxButtonData
 
 ## Related Enumerations
 
-:[[SDL_MessageBoxButtonFlags]]
+[SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)
 
 ## Related Structures
 
-:[[SDL_MessageBoxData]]
+[SDL_MessageBoxData](SDL_MessageBoxData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

@@ -28,7 +28,7 @@ handling for Alt+F4.
 
 ## Default
 
-By default SDL will generate an [[SDL_WindowEvent|SDL_WINDOWEVENT_CLOSE]] event for Alt+F4.
+By default SDL will generate an [SDL_WINDOWEVENT_CLOSE](SDL_WindowEvent) event for Alt+F4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

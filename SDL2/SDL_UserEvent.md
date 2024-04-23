@@ -44,7 +44,7 @@ if (myEventType != ((Uint32)-1)) {
 {|
 |Uint32
 |'''type'''
-|value obtained from [[SDL_RegisterEvents]]()
+|value obtained from [SDL_RegisterEvents](SDL_RegisterEvents)()
 |-
 |Uint32
 |'''timestamp'''
@@ -69,7 +69,7 @@ if (myEventType != ((Uint32)-1)) {
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

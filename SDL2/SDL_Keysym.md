@@ -22,17 +22,17 @@ typedef struct SDL_Keysym
 ## Data Fields
 
 {|
-|[[SDL_Scancode]]
+|[SDL_Scancode](SDL_Scancode)
 |'''scancode'''
-|SDL physical key code; see [[SDL_Scancode]] for details
+|SDL physical key code; see [SDL_Scancode](SDL_Scancode) for details
 |-
-|[[SDL_Keycode]]
+|[SDL_Keycode](SDL_Keycode)
 |'''sym'''
-|SDL virtual key code; see [[SDL_Keycode]] for details
+|SDL virtual key code; see [SDL_Keycode](SDL_Keycode) for details
 |-
 |Uint16
 |'''mod'''
-|current key modifiers; see [[SDL_Keymod]] for details
+|current key modifiers; see [SDL_Keymod](SDL_Keymod) for details
 |-
 |<span style="color:#808080;">Uint32</span>
 |<span style="color:#808080;">'''unused'''</span>
@@ -41,14 +41,14 @@ typedef struct SDL_Keysym
 
 ## Related Enumerations
 
-:[[SDL_Keycode]]
-:[[SDL_Keymod]]
-:[[SDL_Scancode]]
+[SDL_Keycode](SDL_Keycode)
+[SDL_Keymod](SDL_Keymod)
+[SDL_Scancode](SDL_Scancode)
 
 ## Related Structures
 
-:[[SDL_KeyboardEvent]]
-:[[SDL_TextInputEvent]]
+[SDL_KeyboardEvent](SDL_KeyboardEvent)
+[SDL_TextInputEvent](SDL_TextInputEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryKeyboard](CategoryKeyboard)

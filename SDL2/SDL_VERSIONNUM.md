@@ -16,8 +16,8 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ## Related Macros
 
-:[[SDL_COMPILEDVERSION]]
-:[[SDL_VERSION_ATLEAST]]
+[SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
+[SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

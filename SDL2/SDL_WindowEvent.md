@@ -118,7 +118,7 @@ void PrintEvent(const SDL_Event *event)
 |-
 |Uint8
 |'''event'''
-|[[SDL_WindowEventID]]
+|[SDL_WindowEventID](SDL_WindowEventID)
 |-
 |Sint32
 |'''data1'''
@@ -131,12 +131,12 @@ void PrintEvent(const SDL_Event *event)
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
-:[[SDL_WindowEventID]]
+[SDL_EventType](SDL_EventType)
+[SDL_WindowEventID](SDL_WindowEventID)
 
 ## Related Structures
 
-:[[SDL_Event]]
+[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryVideo](CategoryVideo)

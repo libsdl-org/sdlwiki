@@ -42,11 +42,11 @@ typedef struct SDL_MouseButtonEvent
 |-
 |Uint32
 |'''which'''
-|the mouse instance id, or SDL_TOUCH_MOUSEID; see [[SDL_MouseButtonEvent#Remarks|Remarks]] for details
+|the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details
 |-
 |Uint8
 |'''button'''
-|the button that changed; see [[SDL_MouseButtonEvent#Remarks|Remarks]] for details
+|the button that changed; see Remarks for details
 |-
 |Uint8
 |'''state'''
@@ -67,13 +67,13 @@ typedef struct SDL_MouseButtonEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_MouseMotionEvent]]
-:[[SDL_MouseWheelEvent]]
+[SDL_Event](SDL_Event)
+[SDL_MouseMotionEvent](SDL_MouseMotionEvent)
+[SDL_MouseWheelEvent](SDL_MouseWheelEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

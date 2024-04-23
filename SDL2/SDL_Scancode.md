@@ -432,7 +432,7 @@ https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 
 ## Related Enumerations
 
-:[[SDL_Keycode]]
+[SDL_Keycode](SDL_Keycode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

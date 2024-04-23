@@ -42,8 +42,8 @@ typedef struct SDL_SensorEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
-:[[SDL_SensorType]]
+[SDL_EventType](SDL_EventType)
+[SDL_SensorType](SDL_SensorType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

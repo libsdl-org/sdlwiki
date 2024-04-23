@@ -27,8 +27,8 @@ if (! SDL_VERSION_ATLEAST(2,0,0)) {
 
 ## Related Macros
 
-:[[SDL_COMPILEDVERSION]]
-:[[SDL_VERSIONNUM]]
+[SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
+[SDL_VERSIONNUM](SDL_VERSIONNUM)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

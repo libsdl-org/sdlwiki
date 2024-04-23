@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
 
 ## Related Structures
 
-:[[SDL_Rect]]
+[SDL_Rect](SDL_Rect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

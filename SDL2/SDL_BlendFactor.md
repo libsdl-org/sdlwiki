@@ -31,7 +31,7 @@ typedef enum SDL_BlendFactor
 
 ## Related Enumerations
 
-:[[SDL_BlendOperation]]
+[SDL_BlendOperation](SDL_BlendOperation)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)

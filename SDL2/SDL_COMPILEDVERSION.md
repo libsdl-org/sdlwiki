@@ -25,7 +25,7 @@ Deprecated, use [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST) or
 
 ## Related Macros
 
-:[[SDL_VERSIONNUM]]
+[SDL_VERSIONNUM](SDL_VERSIONNUM)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

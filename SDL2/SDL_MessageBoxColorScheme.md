@@ -26,19 +26,19 @@ typedef struct SDL_MessageBoxColorScheme
 ## Data Fields
 
 {|
-|[[SDL_MessageBoxColor]][5]
+|[SDL_MessageBoxColor](SDL_MessageBoxColor)[5]
 |'''colors'''
 | 
 |}
 
 ## Related Enumerations
 
-:[[SDL_MessageBoxColorType]]
+[SDL_MessageBoxColorType](SDL_MessageBoxColorType)
 
 ## Related Structures
 
-:[[SDL_MessageBoxColor]]
-:[[SDL_MessageBoxData]]
+[SDL_MessageBoxColor](SDL_MessageBoxColor)
+[SDL_MessageBoxData](SDL_MessageBoxData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

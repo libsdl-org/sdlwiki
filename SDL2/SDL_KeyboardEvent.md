@@ -46,18 +46,18 @@ typedef struct SDL_KeyboardEvent
 |'''repeat'''
 |non-zero if this is a key repeat
 |-
-|[[SDL_Keysym]]
+|[SDL_Keysym](SDL_Keysym)
 |'''keysym'''
-|the [[SDL_Keysym]] representing the key that was pressed or released
+|the [SDL_Keysym](SDL_Keysym) representing the key that was pressed or released
 |}
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
+[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

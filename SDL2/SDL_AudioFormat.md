@@ -32,8 +32,8 @@ printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
 
 ## Related Structures
 
-:[[SDL_AudioCVT]]
-:[[SDL_AudioSpec]]
+[SDL_AudioCVT](SDL_AudioCVT)
+[SDL_AudioSpec](SDL_AudioSpec)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryAudio](CategoryAudio)

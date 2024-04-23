@@ -49,10 +49,10 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 
 {|
 |'''userdata'''
-|The data passed by the original call to [[SDL_AddEventWatch]]
+|The data passed by the original call to [SDL_AddEventWatch](SDL_AddEventWatch)
 |-
 |'''event'''
-|The [[SDL_Event]] representing the event
+|The [SDL_Event](SDL_Event) representing the event
 |}
 
 ----

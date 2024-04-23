@@ -36,8 +36,8 @@ typedef struct SDL_Vertex
 
 ## Related Structures
 
-:[[SDL_FPoint]]
-:[[SDL_Color]]
+[SDL_FPoint](SDL_FPoint)
+[SDL_Color](SDL_Color)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct)

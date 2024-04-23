@@ -150,29 +150,29 @@ while (SDL_PollEvent(&e)) {
 
 ## Related Structures
 
-: [[SDL_JoyAxisEvent]]
-: [[SDL_JoyBallEvent]]
-: [[SDL_JoyButtonEvent]]
-: [[SDL_JoyHatEvent]]
-: [[SDL_JoyDeviceEvent]]
-: [[SDL_ControllerAxisEvent]]
-: [[SDL_ControllerButtonEvent]]
-: [[SDL_ControllerDeviceEvent]]
-: [[SDL_KeyboardEvent]]
-: [[SDL_MouseButtonEvent]]
-: [[SDL_MouseMotionEvent]]
-: [[SDL_MouseWheelEvent]]
-: [[SDL_QuitEvent]]
-: [[SDL_SysWMEvent]]
-: [[SDL_TextEditingEvent]]
-: [[SDL_TextInputEvent]]
-: [[SDL_UserEvent]]
-: [[SDL_WindowEvent]]
-: [[SDL_DropEvent]]
-: [[SDL_AudioDeviceEvent]]
-: [[SDL_TouchFingerEvent]]
-: [[SDL_DollarGestureEvent]]
-: [[SDL_MultiGestureEvent]]
+: [SDL_JoyAxisEvent](SDL_JoyAxisEvent)
+: [SDL_JoyBallEvent](SDL_JoyBallEvent)
+: [SDL_JoyButtonEvent](SDL_JoyButtonEvent)
+: [SDL_JoyHatEvent](SDL_JoyHatEvent)
+: [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)
+: [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
+: [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
+: [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+: [SDL_KeyboardEvent](SDL_KeyboardEvent)
+: [SDL_MouseButtonEvent](SDL_MouseButtonEvent)
+: [SDL_MouseMotionEvent](SDL_MouseMotionEvent)
+: [SDL_MouseWheelEvent](SDL_MouseWheelEvent)
+: [SDL_QuitEvent](SDL_QuitEvent)
+: [SDL_SysWMEvent](SDL_SysWMEvent)
+: [SDL_TextEditingEvent](SDL_TextEditingEvent)
+: [SDL_TextInputEvent](SDL_TextInputEvent)
+: [SDL_UserEvent](SDL_UserEvent)
+: [SDL_WindowEvent](SDL_WindowEvent)
+: [SDL_DropEvent](SDL_DropEvent)
+: [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
+: [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
+: [SDL_DollarGestureEvent](SDL_DollarGestureEvent)
+: [SDL_MultiGestureEvent](SDL_MultiGestureEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryEvents](CategoryEvents)

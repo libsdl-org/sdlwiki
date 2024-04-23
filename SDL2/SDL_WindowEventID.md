@@ -104,7 +104,7 @@ int main(int argc, char *argv[])  {
 
 ## Related Structures
 
-:[[SDL_WindowEvent]]
+[SDL_WindowEvent](SDL_WindowEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryEvents](CategoryEvents)

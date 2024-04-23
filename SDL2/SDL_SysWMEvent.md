@@ -29,20 +29,20 @@ typedef struct SDL_SysWMEvent
 |'''timestamp'''
 |timestamp of the event
 |-
-|[[SDL_SysWMmsg]]*
+|[SDL_SysWMmsg](SDL_SysWMmsg)*
 |'''msg'''
 |driver dependent data, defined in SDL_syswm.h
 |}
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_SysWMinfo]]
-:[[SDL_SysWMmsg]]
+[SDL_Event](SDL_Event)
+[SDL_SysWMinfo](SDL_SysWMinfo)
+[SDL_SysWMmsg](SDL_SysWMmsg)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

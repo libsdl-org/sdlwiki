@@ -68,7 +68,7 @@ for (i = 0; i < display_mode_count; ++i) {
 {|
 |Uint32
 |'''format'''
-|one of the [[SDL_PixelFormatEnum]] values
+|one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values
 |-
 |int
 |'''w'''

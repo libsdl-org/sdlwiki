@@ -65,9 +65,9 @@ void WipeSurface(SDL_Surface *surface)
 |<span style="color: rgb(128, 128, 128);">'''flags'''</span>
 |<span style="color: rgb(128, 128, 128);">(internal use)</span>
 |-
-|[[SDL_PixelFormat]]* 
+|[SDL_PixelFormat](SDL_PixelFormat)* 
 |'''format''' 
-|the format of the pixels stored in the surface; see [[SDL_PixelFormat]] for details (read-only) 
+|the format of the pixels stored in the surface; see [SDL_PixelFormat](SDL_PixelFormat) for details (read-only) 
 |-
 |int 
 |'''w, h''' 
@@ -79,7 +79,7 @@ void WipeSurface(SDL_Surface *surface)
 |-
 |void* 
 |'''pixels''' 
-|the pointer to the actual pixel data; see [[#Remarks|Remarks]] for details (read-write) 
+|the pointer to the actual pixel data; see Remarks for details (read-write) 
 |-
 |void* 
 |'''userdata''' 
@@ -93,9 +93,9 @@ void WipeSurface(SDL_Surface *surface)
 |<span style="color: rgb(128, 128, 128);">'''lock_data'''</span>
 |<span style="color: rgb(128, 128, 128);">used for surfaces that require locking (internal use)</span>
 |-
-|[[SDL_Rect]] 
+|[SDL_Rect](SDL_Rect) 
 |'''clip_rect''' 
-|an [[SDL_Rect]] structure used to clip blits to the surface which can be set by [[SDL_SetClipRect]]() (read-only) 
+|an [SDL_Rect](SDL_Rect) structure used to clip blits to the surface which can be set by [SDL_SetClipRect](SDL_SetClipRect)() (read-only) 
 |-
 |<span style="color: rgb(128, 128, 128);">SDL_BlitMap*</span>
 |<span style="color: rgb(128, 128, 128);">'''map'''</span>

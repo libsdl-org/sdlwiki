@@ -41,7 +41,7 @@ typedef struct SDL_MessageBoxColor
 
 ## Related Structures
 
-:[[SDL_MessageBoxColorScheme]]
+[SDL_MessageBoxColorScheme](SDL_MessageBoxColorScheme)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

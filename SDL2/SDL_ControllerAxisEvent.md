@@ -48,7 +48,7 @@ typedef struct SDL_ControllerAxisEvent
 |-
 |Uint8
 |'''axis'''
-|the controller axis ([[SDL_GameControllerAxis]])
+|the controller axis ([SDL_GameControllerAxis](SDL_GameControllerAxis))
 |-
 |Sint16
 |'''value'''
@@ -57,11 +57,11 @@ typedef struct SDL_ControllerAxisEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
+[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)

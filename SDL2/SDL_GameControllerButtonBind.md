@@ -36,21 +36,21 @@ typedef struct SDL_GameControllerButtonBind
 ## Data Fields
 
 {|
-|[[SDL_GameControllerBindType]]
+|[SDL_GameControllerBindType](SDL_GameControllerBindType)
 |'''bindType'''
 |What kind of control this maps to (button/axis/hat/not mapped)
 |-
 |int
 |'''button'''
-|The [[SDL_JoystickGetButton|SDL_Joystick button]] this maps to
+|The [SDL_Joystick button](SDL_JoystickGetButton) this maps to
 |-
 |int
 |'''axis'''
-|The [[SDL_JoystickGetAxis|SDL_Joystick axis]] this maps to
+|The [SDL_Joystick axis](SDL_JoystickGetAxis) this maps to
 |-
 |int
 |'''hat.hat'''
-|The [[SDL_JoystickGetHat|SDL_Joystick hat]] this maps to
+|The [SDL_Joystick hat](SDL_JoystickGetHat) this maps to
 |-
 |int
 |'''hat.hat_mask'''
@@ -59,7 +59,7 @@ typedef struct SDL_GameControllerButtonBind
 
 ## Related Enumerations
 
-:[[SDL_GameControllerBindType]]
+[SDL_GameControllerBindType](SDL_GameControllerBindType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryHeader](CategoryHeader), [CategoryDraft](CategoryDraft)

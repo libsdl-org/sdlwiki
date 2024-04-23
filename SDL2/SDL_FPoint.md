@@ -37,9 +37,9 @@ typedef struct SDL_FPoint
 
 ## Related Structures
 
-:[[SDL_Vertex]]
-:[[SDL_FRect]]
-:[[SDL_Point]]
+[SDL_Vertex](SDL_Vertex)
+[SDL_FRect](SDL_FRect)
+[SDL_Point](SDL_Point)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

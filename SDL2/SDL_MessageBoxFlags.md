@@ -33,7 +33,7 @@ If supported will display warning icon, etc.
 
 ## Related Structures
 
-:[[SDL_MessageBoxData]]
+[SDL_MessageBoxData](SDL_MessageBoxData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

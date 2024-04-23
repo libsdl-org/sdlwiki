@@ -127,31 +127,31 @@ if (io != NULL) {
 {|
 |Sint64 (*)(SDL_RWops *)
 |'''size'''
-|callback that reports stream size; see [[#Size Function|Remarks]]
+|callback that reports stream size; see Remarks
 |-
 |Sint64 (*)(SDL_RWops *, Sint64, int)
 |'''seek'''
-|callback that seeks in stream; see [[#Seek Function|Remarks]]
+|callback that seeks in stream; see Remarks
 |-
 |size_t (*)(SDL_RWops *, void *, size_t, size_t)
 |'''read'''
-|callback that reads from the stream; see [[#Read Function|Remarks]]
+|callback that reads from the stream; see Remarks
 |-
 |size_t (*)(SDL_RWops *, const void *, size_t, size_t)
 |'''write'''
-|callback that writes to the stream; see [[#Write Function|Remarks]]
+|callback that writes to the stream; see Remarks
 |-
 |int (*)(SDL_RWops *)
 |'''close'''
-|callback that closes the stream; see [[#Close Function|Remarks]]
+|callback that closes the stream; see Remarks
 |-
 |Uint32
 |'''type'''
-|type of stream; see [[#Stream Type|Remarks]]
+|type of stream; see Remarks
 |-
 |union
 |'''hidden'''
-|type-specific data; see [[#Hidden Union|Remarks]]
+|type-specific data; see Remarks
 |}
 
 ----

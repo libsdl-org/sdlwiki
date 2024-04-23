@@ -41,7 +41,7 @@ typedef struct SDL_Color
 
 ## Related Structures
 
-:[[SDL_Palette]]
+[SDL_Palette](SDL_Palette)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryPixels](CategoryPixels)

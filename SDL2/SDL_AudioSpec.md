@@ -53,15 +53,15 @@ dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 {|
 |int
 |'''freq'''
-|DSP frequency (samples per second); see [[#Remarks|Remarks]] for details
+|DSP frequency (samples per second); see Remarks for details
 |-
-|[[SDL_AudioFormat]]
+|[SDL_AudioFormat](SDL_AudioFormat)
 |'''format'''
-|audio data format; see [[#Remarks|Remarks]] for details
+|audio data format; see Remarks for details
 |-
 |Uint8
 |'''channels'''
-|number of separate sound channels: see [[#Remarks|Remarks]] for details
+|number of separate sound channels: see Remarks for details
 |-
 |Uint8
 |'''silence'''
@@ -69,7 +69,7 @@ dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 |-
 |Uint16
 |'''samples'''
-|audio buffer size in samples (power of 2); see [[#Remarks|Remarks]] for details
+|audio buffer size in samples (power of 2); see Remarks for details
 |-
 |Uint32
 |'''size'''
@@ -77,7 +77,7 @@ dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 |-
 |SDL_AudioCallback
 |'''callback'''
-|the function to call when the audio device needs more data; see [[#callback|Remarks]] for details
+|the function to call when the audio device needs more data; see Remarks for details
 |-
 |void*
 |'''userdata'''

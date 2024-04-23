@@ -41,7 +41,7 @@ to [SDLK_0](SDLK_0)...[SDLK_9](SDLK_9) on AZERTY layouts.
 
 ## Related Enumerations
 
-:[[SDL_Scancode]]
+[SDL_Scancode](SDL_Scancode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

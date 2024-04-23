@@ -49,19 +49,19 @@ typedef struct SDL_JoyHatEvent
 |-
 |Uint8
 |'''value'''
-|the new position of the hat; see [[#Remarks|Remarks]] for details
+|the new position of the hat; see Remarks for details
 |}
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_JoyAxisEvent]]
-:[[SDL_JoyBallEvent]]
-:[[SDL_JoyButtonEvent]]
+[SDL_Event](SDL_Event)
+[SDL_JoyAxisEvent](SDL_JoyAxisEvent)
+[SDL_JoyBallEvent](SDL_JoyBallEvent)
+[SDL_JoyButtonEvent](SDL_JoyButtonEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

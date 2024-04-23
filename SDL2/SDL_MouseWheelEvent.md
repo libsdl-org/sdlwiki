@@ -79,7 +79,7 @@ while( SDL_PollEvent( &event ) )
 |-
 |Uint32
 |'''which'''
-|the mouse instance id, or SDL_TOUCH_MOUSEID; see [[#Remarks|Remarks]] for details
+|the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details
 |-
 |Sint32
 |'''x'''
@@ -91,7 +91,7 @@ while( SDL_PollEvent( &event ) )
 |-
 |Uint32
 |'''direction'''
-|SDL_MOUSEWHEEL_NORMAL or SDL_MOUSEWHEEL_FLIPPED; see [[#Remarks|Remarks]] for details (>= SDL 2.0.4)
+|SDL_MOUSEWHEEL_NORMAL or SDL_MOUSEWHEEL_FLIPPED; see Remarks for details (>= SDL 2.0.4)
 |-
 |float
 |'''preciseX'''
@@ -104,13 +104,13 @@ while( SDL_PollEvent( &event ) )
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_MouseButtonEvent]]
-:[[SDL_MouseMotionEvent]]
+[SDL_Event](SDL_Event)
+[SDL_MouseButtonEvent](SDL_MouseButtonEvent)
+[SDL_MouseMotionEvent](SDL_MouseMotionEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

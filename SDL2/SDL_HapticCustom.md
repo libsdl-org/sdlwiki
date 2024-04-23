@@ -71,7 +71,7 @@ Otherwise it uses the samples in data for the different axes.
 |'''type'''
 |SDL_HAPTIC_CUSTOM
 |-
-|[[SDL_HapticDirection]]
+|[SDL_HapticDirection](SDL_HapticDirection)
 |'''direction'''
 |direction of the effect (relative to the user)
 |-
@@ -105,7 +105,7 @@ Otherwise it uses the samples in data for the different axes.
 |-
 |Uint8
 |'''channels'''
-|axes to use, minimum of 1; see [[#Remarks|Remarks]] for details
+|axes to use, minimum of 1; see Remarks for details
 |-
 |Uint16
 |'''period'''
@@ -117,7 +117,7 @@ Otherwise it uses the samples in data for the different axes.
 |-
 |Uint16*
 |'''data'''
-|should contain '''channels'''*'''samples''' items; see [[#Remarks|Remarks]] for details
+|should contain '''channels'''*'''samples''' items; see Remarks for details
 |-
 |
 |
@@ -142,8 +142,8 @@ Otherwise it uses the samples in data for the different axes.
 
 ## Related Structures
 
-:[[SDL_HapticDirection]]
-:[[SDL_HapticEffect]]
+[SDL_HapticDirection](SDL_HapticDirection)
+[SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

@@ -64,41 +64,41 @@ Common parts:
 {|
 |Uint16
 |'''type'''
-|effect type; see [[SDL_HapticPeriodic]] for details
+|effect type; see [SDL_HapticPeriodic](SDL_HapticPeriodic) for details
 |-
-|[[SDL_HapticConstant]]
+|[SDL_HapticConstant](SDL_HapticConstant)
 |'''constant'''
-|constant effect; see [[#Remarks|Remarks]] for details
+|constant effect; see Remarks for details
 |-
-|[[SDL_HapticPeriodic]]
+|[SDL_HapticPeriodic](SDL_HapticPeriodic)
 |'''periodic'''
-|periodic effect; see [[#Remarks|Remarks]] for details
+|periodic effect; see Remarks for details
 |-
-|[[SDL_HapticCondition]]
+|[SDL_HapticCondition](SDL_HapticCondition)
 |'''condition'''
-|condition effect; see [[#Remarks|Remarks]] for details
+|condition effect; see Remarks for details
 |-
-|[[SDL_HapticRamp]]
+|[SDL_HapticRamp](SDL_HapticRamp)
 |'''ramp'''
-|ramp effect; see [[#Remarks|Remarks]] for details
+|ramp effect; see Remarks for details
 |-
-|[[SDL_HapticLeftRight]]
+|[SDL_HapticLeftRight](SDL_HapticLeftRight)
 |'''leftright'''
-|left/right effect; see [[#Remarks|Remarks]] for details
+|left/right effect; see Remarks for details
 |-
-|[[SDL_HapticCustom]]
+|[SDL_HapticCustom](SDL_HapticCustom)
 |'''custom'''
-|custom effect; see [[#Remarks|Remarks]] for details
+|custom effect; see Remarks for details
 |}
 
 ## Related Structures
 
-:[[SDL_HapticCondition]]
-:[[SDL_HapticConstant]]
-:[[SDL_HapticCustom]]
-:[[SDL_HapticLeftRight]]
-:[[SDL_HapticPeriodic]]
-:[[SDL_HapticRamp]]
+[SDL_HapticCondition](SDL_HapticCondition)
+[SDL_HapticConstant](SDL_HapticConstant)
+[SDL_HapticCustom](SDL_HapticCustom)
+[SDL_HapticLeftRight](SDL_HapticLeftRight)
+[SDL_HapticPeriodic](SDL_HapticPeriodic)
+[SDL_HapticRamp](SDL_HapticRamp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

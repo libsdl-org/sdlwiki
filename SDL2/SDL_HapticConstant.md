@@ -64,7 +64,7 @@ the joystick.
 |'''type'''
 |SDL_HAPTIC_CONSTANT
 |-
-|[[SDL_HapticDirection]]
+|[SDL_HapticDirection](SDL_HapticDirection)
 |'''direction'''
 |direction of the effect
 |-

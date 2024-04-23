@@ -30,7 +30,7 @@ typedef struct SDL_RendererInfo
 |-
 |Uint32
 |'''flags'''
-|a mask of supported renderer flags; see [[#flags|Remarks]] for details
+|a mask of supported renderer flags; see Remarks for details
 |-
 |Uint32
 |'''num_texture_formats'''
@@ -38,7 +38,7 @@ typedef struct SDL_RendererInfo
 |-
 |Uint32[16]
 |'''texture_formats'''
-|the available texture formats; see [[#texture_formats|Remarks]] for details
+|the available texture formats; see Remarks for details
 |-
 |int
 |'''max_texture_width'''
@@ -51,10 +51,10 @@ typedef struct SDL_RendererInfo
 
 ## Related Enumerations
 
-:[[SDL_BlendMode]]
-:[[SDL_PixelFormatEnum]]
-:[[SDL_RendererFlags]]
-:[[SDL_TextureModulate]]
+[SDL_BlendMode](SDL_BlendMode)
+[SDL_PixelFormatEnum](SDL_PixelFormatEnum)
+[SDL_RendererFlags](SDL_RendererFlags)
+[SDL_TextureModulate](SDL_TextureModulate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRender](CategoryRender)

@@ -67,12 +67,12 @@ typedef struct SDL_DollarGestureEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_MultiGestureEvent]]
+[SDL_Event](SDL_Event)
+[SDL_MultiGestureEvent](SDL_MultiGestureEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)

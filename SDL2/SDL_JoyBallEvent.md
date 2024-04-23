@@ -54,14 +54,14 @@ typedef struct SDL_JoyBallEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
-:[[SDL_JoyAxisEvent]]
-:[[SDL_JoyButtonEvent]]
-:[[SDL_JoyHatEvent]]
+[SDL_Event](SDL_Event)
+[SDL_JoyAxisEvent](SDL_JoyAxisEvent)
+[SDL_JoyButtonEvent](SDL_JoyButtonEvent)
+[SDL_JoyHatEvent](SDL_JoyHatEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

@@ -68,136 +68,136 @@ typedef union SDL_Event
 |'''type'''
 |event type, shared with all events
 |-
-|[[SDL_CommonEvent]]
+|[SDL_CommonEvent](SDL_CommonEvent)
 |'''common'''
 |common event data
 |-
-|[[SDL_DisplayEvent]]
+|[SDL_DisplayEvent](SDL_DisplayEvent)
 |'''display'''
 |display event data
 |-
-|[[SDL_WindowEvent]]
+|[SDL_WindowEvent](SDL_WindowEvent)
 |'''window'''
 |window event data
 |-
-|[[SDL_KeyboardEvent]]
+|[SDL_KeyboardEvent](SDL_KeyboardEvent)
 |'''key'''
 |keyboard event data
 |-
-|[[SDL_TextEditingEvent]]
+|[SDL_TextEditingEvent](SDL_TextEditingEvent)
 |'''edit'''
 |text editing event data
 |-
-|[[SDL_TextInputEvent]]
+|[SDL_TextInputEvent](SDL_TextInputEvent)
 |'''text'''
 |text input event data
 |-
-|[[SDL_MouseMotionEvent]]
+|[SDL_MouseMotionEvent](SDL_MouseMotionEvent)
 |'''motion'''
 |mouse motion event data
 |-
-|[[SDL_MouseButtonEvent]]
+|[SDL_MouseButtonEvent](SDL_MouseButtonEvent)
 |'''button'''
 |mouse button event data
 |-
-|[[SDL_MouseWheelEvent]]
+|[SDL_MouseWheelEvent](SDL_MouseWheelEvent)
 |'''wheel'''
 |mouse wheel event data
 |-
-|[[SDL_JoyAxisEvent]]
+|[SDL_JoyAxisEvent](SDL_JoyAxisEvent)
 |'''jaxis'''
 |joystick axis event data
 |-
-|[[SDL_JoyBallEvent]]
+|[SDL_JoyBallEvent](SDL_JoyBallEvent)
 |'''jball'''
 |joystick ball event data
 |-
-|[[SDL_JoyHatEvent]]
+|[SDL_JoyHatEvent](SDL_JoyHatEvent)
 |'''jhat'''
 |joystick hat event data
 |-
-|[[SDL_JoyButtonEvent]]
+|[SDL_JoyButtonEvent](SDL_JoyButtonEvent)
 |'''jbutton'''
 |joystick button event data
 |-
-|[[SDL_JoyDeviceEvent]]
+|[SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)
 |'''jdevice'''
 |joystick device event data
 |-
-|[[SDL_ControllerAxisEvent]]
+|[SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
 |'''caxis'''
 |game controller axis event data
 |-
-|[[SDL_ControllerButtonEvent]]
+|[SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
 |'''cbutton'''
 |game controller button event data
 |-
-|[[SDL_ControllerDeviceEvent]]
+|[SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
 |'''cdevice'''
 |game controller device event data
 |-
-|[[SDL_AudioDeviceEvent]]
+|[SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
 |'''adevice'''
 |audio device event data (>= SDL 2.0.4)
 |-
-|[[SDL_QuitEvent]]
+|[SDL_QuitEvent](SDL_QuitEvent)
 |'''quit'''
 |quit request event data
 |-
-|[[SDL_UserEvent]]
+|[SDL_UserEvent](SDL_UserEvent)
 |'''user'''
 |custom event data
 |-
-|[[SDL_SysWMEvent]]
+|[SDL_SysWMEvent](SDL_SysWMEvent)
 |'''syswm'''
 |system dependent window event data
 |-
-|[[SDL_TouchFingerEvent]]
+|[SDL_TouchFingerEvent](SDL_TouchFingerEvent)
 |'''tfinger'''
 |touch finger event data
 |-
-|[[SDL_MultiGestureEvent]]
+|[SDL_MultiGestureEvent](SDL_MultiGestureEvent)
 |'''mgesture'''
 |multi finger gesture data
 |-
-|[[SDL_DollarGestureEvent]]
+|[SDL_DollarGestureEvent](SDL_DollarGestureEvent)
 |'''dgesture'''
 |multi finger gesture data
 |-
-|[[SDL_DropEvent]]
+|[SDL_DropEvent](SDL_DropEvent)
 |'''drop'''
 |drag and drop event data
 |}
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_AudioDeviceEvent]]
-:[[SDL_ControllerAxisEvent]]
-:[[SDL_ControllerButtonEvent]]
-:[[SDL_ControllerDeviceEvent]]
-:[[SDL_DollarGestureEvent]]
-:[[SDL_DropEvent]]
-:[[SDL_JoyAxisEvent]]
-:[[SDL_JoyBallEvent]]
-:[[SDL_JoyButtonEvent]]
-:[[SDL_JoyDeviceEvent]]
-:[[SDL_JoyHatEvent]]
-:[[SDL_KeyboardEvent]]
-:[[SDL_MouseButtonEvent]]
-:[[SDL_MouseMotionEvent]]
-:[[SDL_MouseWheelEvent]]
-:[[SDL_MultiGestureEvent]]
-:[[SDL_QuitEvent]]
-:[[SDL_SysWMEvent]]
-:[[SDL_TextEditingEvent]]
-:[[SDL_TextInputEvent]]
-:[[SDL_TouchFingerEvent]]
-:[[SDL_UserEvent]]
-:[[SDL_WindowEvent]]
+[SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
+[SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
+[SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
+[SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
+[SDL_DollarGestureEvent](SDL_DollarGestureEvent)
+[SDL_DropEvent](SDL_DropEvent)
+[SDL_JoyAxisEvent](SDL_JoyAxisEvent)
+[SDL_JoyBallEvent](SDL_JoyBallEvent)
+[SDL_JoyButtonEvent](SDL_JoyButtonEvent)
+[SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)
+[SDL_JoyHatEvent](SDL_JoyHatEvent)
+[SDL_KeyboardEvent](SDL_KeyboardEvent)
+[SDL_MouseButtonEvent](SDL_MouseButtonEvent)
+[SDL_MouseMotionEvent](SDL_MouseMotionEvent)
+[SDL_MouseWheelEvent](SDL_MouseWheelEvent)
+[SDL_MultiGestureEvent](SDL_MultiGestureEvent)
+[SDL_QuitEvent](SDL_QuitEvent)
+[SDL_SysWMEvent](SDL_SysWMEvent)
+[SDL_TextEditingEvent](SDL_TextEditingEvent)
+[SDL_TextInputEvent](SDL_TextInputEvent)
+[SDL_TouchFingerEvent](SDL_TouchFingerEvent)
+[SDL_UserEvent](SDL_UserEvent)
+[SDL_WindowEvent](SDL_WindowEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

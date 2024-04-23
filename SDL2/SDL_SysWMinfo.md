@@ -149,13 +149,13 @@ system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
 |
 | style="background-color: #EDEDED;" | ''All Subsystems''
 |-
-|[[SDL_version]]
+|[SDL_version](SDL_version)
 |'''version'''
-|an [[SDL_version]] structure that contains the current SDL version
+|an [SDL_version](SDL_version) structure that contains the current SDL version
 |-
-|[[SDL_SYSWM_TYPE]]
+|[SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
 |'''subsystem'''
-|the windowing system type; see [[#Remarks|Remarks]] for details
+|the windowing system type; see Remarks for details
 |-
 | style="color: #808080;" | int
 | style="color: #808080;" | '''dummy'''
@@ -235,7 +235,7 @@ system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
 |-
 |GLuint   
 |'''uikit.colorbuffer''' 
-|the GL view's color Renderbuffer Object; it must be bound when [[SDL_GL_SwapWindow]]() is called (>= SDL 2.0.4)
+|the GL view's color Renderbuffer Object; it must be bound when [SDL_GL_SwapWindow](SDL_GL_SwapWindow)() is called (>= SDL 2.0.4)
 |-
 |GLuint   
 |'''uikit.resolveFramebuffer''' 
@@ -296,11 +296,11 @@ system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
 
 ## Related Enumerations
 
-:[[SDL_SYSWM_TYPE]]
+[SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
 
 ## Related Structures
 
-:[[SDL_version]]
+[SDL_version](SDL_version)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategorySWM](CategorySWM)

@@ -42,7 +42,7 @@ typedef struct SDL_AudioDeviceEvent
 |-
 |Uint32
 |'''which'''
-|the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [[SDL_GetNumAudioDevices]]() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event
+|the audio device index for the SDL_AUDIODEVICEADDED event (valid until next [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)() call), SDL_AudioDeviceID for the SDL_AUDIODEVICEREMOVED event
 |-
 |Uint8
 |'''iscapture'''
@@ -51,11 +51,11 @@ typedef struct SDL_AudioDeviceEvent
 
 ## Related Enumerations
 
-:[[SDL_EventType]]
+[SDL_EventType](SDL_EventType)
 
 ## Related Structures
 
-:[[SDL_Event]]
+[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
