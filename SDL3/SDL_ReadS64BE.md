@@ -5,7 +5,7 @@ Use this function to read 64 bits of big-endian data from an [SDL_IOStream](SDL_
 
 ## Header File
 
-Defined in [SDL_iostream.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
+Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
 
 ## Syntax
 

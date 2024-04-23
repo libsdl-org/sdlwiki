@@ -5,7 +5,7 @@ Macro to determine SDL version program was compiled against.
 
 ## Header File
 
-Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
+Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
 
 ## Syntax
 

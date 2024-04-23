@@ -5,7 +5,7 @@ Look up the address of the named function in a shared object.
 
 ## Header File
 
-Defined in [SDL_loadso.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h)
+Defined in [<SDL3/SDL_loadso.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_loadso.h)
 
 ## Syntax
 

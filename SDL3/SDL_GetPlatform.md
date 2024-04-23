@@ -5,7 +5,7 @@ Get the name of the platform.
 
 ## Header File
 
-Defined in [SDL_platform.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h)
+Defined in [<SDL3/SDL_platform.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_platform.h)
 
 ## Syntax
 

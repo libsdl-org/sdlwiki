@@ -5,7 +5,7 @@ Get the current thread's value associated with a thread local storage ID.
 
 ## Header File
 
-Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h)
+Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h)
 
 ## Syntax
 

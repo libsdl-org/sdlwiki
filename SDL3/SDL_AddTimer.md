@@ -5,7 +5,7 @@ Call a callback function at a future time.
 
 ## Header File
 
-Defined in [SDL_timer.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_timer.h)
+Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_timer.h)
 
 ## Syntax
 

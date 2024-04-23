@@ -5,7 +5,7 @@ Swap a 16-bit value from bigendian to native byte order.
 
 ## Header File
 
-Defined in [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)
+Defined in [<SDL3/SDL_endian.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)
 
 ## Syntax
 

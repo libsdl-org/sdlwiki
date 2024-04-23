@@ -5,7 +5,7 @@ Get the ball axis change since the last poll.
 
 ## Header File
 
-Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
+Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
 
 ## Syntax
 

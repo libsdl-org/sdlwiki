@@ -5,7 +5,7 @@ Send a gamepad specific effect packet.
 
 ## Header File
 
-Defined in [SDL_gamepad.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h)
+Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h)
 
 ## Syntax
 

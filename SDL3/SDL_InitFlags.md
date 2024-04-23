@@ -5,7 +5,7 @@ Initialization flags for [SDL_Init](SDL_Init) and/or [SDL_InitSubSystem](SDL_Ini
 
 ## Header File
 
-Defined in [SDL_init.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h)
+Defined in [<SDL3/SDL_init.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h)
 
 ## Syntax
 

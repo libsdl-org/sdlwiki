@@ -5,7 +5,7 @@ Map an RGB triple to an opaque pixel value for a given pixel format.
 
 ## Header File
 
-Defined in [SDL_pixels.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h)
+Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pixels.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Copy an existing surface to a new surface of the specified format and colorspace
 
 ## Header File
 
-Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)
+Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)
 
 ## Syntax
 

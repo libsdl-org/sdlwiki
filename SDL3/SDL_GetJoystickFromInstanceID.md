@@ -5,7 +5,7 @@ Get the [SDL_Joystick](SDL_Joystick) associated with an instance ID, if it has b
 
 ## Header File
 
-Defined in [SDL_joystick.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
+Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
 
 ## Syntax
 

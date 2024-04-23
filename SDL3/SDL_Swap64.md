@@ -5,7 +5,7 @@ Byte-swap an unsigned 64-bit number.
 
 ## Header File
 
-Defined in [SDL_endian.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)
+Defined in [<SDL3/SDL_endian.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_endian.h)
 
 ## Syntax
 

@@ -9,7 +9,7 @@ Check to see if an effect is supported by a haptic device.
 
 ## Header File
 
-Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
+Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
 
 ## Syntax
 

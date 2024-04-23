@@ -5,7 +5,7 @@ Query an audio stream for its currently-bound device.
 
 ## Header File
 
-Defined in [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)
+Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Perform a scaled blit to a destination surface, which may be of a different form
 
 ## Header File
 
-Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)
+Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_surface.h)
 
 ## Syntax
 

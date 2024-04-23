@@ -5,7 +5,7 @@ Information about an assertion failure.
 
 ## Header File
 
-Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_assert.h)
+Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_assert.h)
 
 ## Syntax
 

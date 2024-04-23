@@ -5,7 +5,7 @@ Get a mask of the specified subsystems which are currently initialized.
 
 ## Header File
 
-Defined in [SDL_init.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h)
+Defined in [<SDL3/SDL_init.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h)
 
 ## Syntax
 

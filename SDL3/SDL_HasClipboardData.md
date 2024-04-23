@@ -5,7 +5,7 @@ Query whether there is data in the clipboard for the provided mime type.
 
 ## Header File
 
-Defined in [SDL_clipboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h)
+Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_clipboard.h)
 
 ## Syntax
 

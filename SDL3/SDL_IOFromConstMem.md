@@ -5,7 +5,7 @@ Use this function to prepare a read-only memory buffer for use with [SDL_IOStrea
 
 ## Header File
 
-Defined in [SDL_iostream.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
+Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Get an OpenGL function by name.
 
 ## Header File
 
-Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h)
+Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_video.h)
 
 ## Syntax
 

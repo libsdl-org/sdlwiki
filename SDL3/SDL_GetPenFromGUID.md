@@ -5,7 +5,7 @@ Retrieves an [SDL_PenID](SDL_PenID) for the given [SDL_GUID](SDL_GUID).
 
 ## Header File
 
-Defined in [SDL_pen.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pen.h)
+Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_pen.h)
 
 ## Syntax
 

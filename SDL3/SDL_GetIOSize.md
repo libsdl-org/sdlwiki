@@ -5,7 +5,7 @@ Use this function to get the size of the data stream in an [SDL_IOStream](SDL_IO
 
 ## Header File
 
-Defined in [SDL_iostream.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
+Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_iostream.h)
 
 ## Syntax
 

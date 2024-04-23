@@ -5,7 +5,7 @@ Set an atomic variable to a value.
 
 ## Header File
 
-Defined in [SDL_atomic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_atomic.h)
+Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_atomic.h)
 
 ## Syntax
 

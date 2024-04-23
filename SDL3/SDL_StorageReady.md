@@ -5,7 +5,7 @@ Checks if the storage container is ready to use.
 
 ## Header File
 
-Defined in [SDL_storage.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h)
+Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_storage.h)
 
 ## Syntax
 

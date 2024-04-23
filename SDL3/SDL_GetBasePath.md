@@ -5,7 +5,7 @@ Get the directory where the application was run from.
 
 ## Header File
 
-Defined in [SDL_filesystem.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h)
+Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h)
 
 ## Syntax
 

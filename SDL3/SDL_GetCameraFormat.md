@@ -5,7 +5,7 @@ Get the spec that a camera is using when generating images.
 
 ## Header File
 
-Defined in [SDL_camera.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)
+Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_camera.h)
 
 ## Syntax
 

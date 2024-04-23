@@ -5,7 +5,7 @@ Get the data rate (number of events per second) of a gamepad sensor.
 
 ## Header File
 
-Defined in [SDL_gamepad.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h)
+Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_gamepad.h)
 
 ## Syntax
 

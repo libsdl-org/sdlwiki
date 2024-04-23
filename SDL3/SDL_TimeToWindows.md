@@ -5,7 +5,7 @@ Converts an SDL time into a Windows FILETIME (100-nanosecond intervals since Jan
 
 ## Header File
 
-Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
+Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
 
 ## Syntax
 

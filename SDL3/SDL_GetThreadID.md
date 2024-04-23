@@ -5,7 +5,7 @@ Get the thread identifier for the specified thread.
 
 ## Header File
 
-Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h)
+Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_thread.h)
 
 ## Syntax
 

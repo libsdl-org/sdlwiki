@@ -5,7 +5,7 @@ This function converts a buffer or string between encodings in one pass, returni
 
 ## Header File
 
-Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)
+Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_stdinc.h)
 
 ## Syntax
 

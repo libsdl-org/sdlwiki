@@ -5,7 +5,7 @@ A structure holding a calendar date and time broken down into its components.
 
 ## Header File
 
-Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
+Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
 
 ## Syntax
 

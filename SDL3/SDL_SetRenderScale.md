@@ -5,7 +5,7 @@ Set the drawing scale for rendering on the current target.
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
+Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
 
 ## Syntax
 

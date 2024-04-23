@@ -5,7 +5,7 @@ Get the day of year for a calendar date.
 
 ## Header File
 
-Defined in [SDL_time.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
+Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_time.h)
 
 ## Syntax
 

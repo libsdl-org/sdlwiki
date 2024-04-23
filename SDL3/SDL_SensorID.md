@@ -5,7 +5,7 @@ This is a unique ID for a sensor for the time it is connected to the system, and
 
 ## Header File
 
-Defined in [SDL_sensor.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h)
+Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_sensor.h)
 
 ## Syntax
 

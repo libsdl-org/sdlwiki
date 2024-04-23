@@ -5,7 +5,7 @@ Report the alignment this system needs for SIMD allocations.
 
 ## Header File
 
-Defined in [SDL_cpuinfo.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h)
+Defined in [<SDL3/SDL_cpuinfo.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_cpuinfo.h)
 
 ## Syntax
 

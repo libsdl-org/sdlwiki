@@ -5,7 +5,7 @@ Return whether an explicit rectangle was set as the viewport.
 
 ## Header File
 
-Defined in [SDL_render.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
+Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_render.h)
 
 ## Syntax
 

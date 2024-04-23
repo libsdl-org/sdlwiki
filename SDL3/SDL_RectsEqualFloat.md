@@ -5,7 +5,7 @@ Determine whether two floating point rectangles are equal, within a default epsi
 
 ## Header File
 
-Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
+Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
 
 ## Syntax
 

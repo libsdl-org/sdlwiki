@@ -5,7 +5,7 @@ Register a win32 window class for SDL's use.
 
 ## Header File
 
-Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)
+Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)
 
 ## Syntax
 

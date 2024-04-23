@@ -5,7 +5,7 @@ Return whether a property exists in a set of properties.
 
 ## Header File
 
-Defined in [SDL_properties.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_properties.h)
+Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_properties.h)
 
 ## Syntax
 

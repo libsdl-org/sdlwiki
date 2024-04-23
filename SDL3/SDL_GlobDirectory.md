@@ -5,7 +5,7 @@ Enumerate a directory tree, filtered by pattern, and return a list.
 
 ## Header File
 
-Defined in [SDL_filesystem.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h)
+Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_filesystem.h)
 
 ## Syntax
 

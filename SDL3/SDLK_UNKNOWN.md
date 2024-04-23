@@ -5,7 +5,7 @@ A subset of possible virtual key values.
 
 ## Header File
 
-Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keycode.h)
+Defined in [<SDL3/SDL_keycode.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keycode.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Open a URL/URI in the browser or other appropriate external application.
 
 ## Header File
 
-Defined in [SDL_misc.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_misc.h)
+Defined in [<SDL3/SDL_misc.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_misc.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Try to lock a read/write lock _for reading_ without blocking.
 
 ## Header File
 
-Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mutex.h)
+Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mutex.h)
 
 ## Syntax
 

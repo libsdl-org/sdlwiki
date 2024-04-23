@@ -5,7 +5,7 @@ A rectangle, with the origin at the upper left (using floating point values).
 
 ## Header File
 
-Defined in [SDL_rect.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
+Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_rect.h)
 
 ## Syntax
 

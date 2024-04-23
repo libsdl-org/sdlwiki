@@ -5,7 +5,7 @@ Log a message with the specified category and priority.
 
 ## Header File
 
-Defined in [SDL_log.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_log.h)
+Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_log.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ See the official Android developer guide for more information: http://developer.
 
 ## Header File
 
-Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
+Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
 
 ## Syntax
 

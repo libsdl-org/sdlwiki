@@ -5,7 +5,7 @@ Run a specific filter function on the current event queue, removing any events f
 
 ## Header File
 
-Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h)
+Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h)
 
 ## Syntax
 

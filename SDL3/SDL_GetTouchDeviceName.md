@@ -5,7 +5,7 @@ Get the touch device name as reported from the driver.
 
 ## Header File
 
-Defined in [SDL_touch.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_touch.h)
+Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_touch.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Gets a reference to the default user handle for GDK.
 
 ## Header File
 
-Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
+Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_system.h)
 
 ## Syntax
 

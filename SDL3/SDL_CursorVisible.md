@@ -5,7 +5,7 @@ Return whether the cursor is currently being shown.
 
 ## Header File
 
-Defined in [SDL_mouse.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mouse.h)
+Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mouse.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Get an ASCII string representation for a given ::[SDL_GUID](SDL_GUID).
 
 ## Header File
 
-Defined in [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)
+Defined in [<SDL3/SDL_guid.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)
 
 ## Syntax
 

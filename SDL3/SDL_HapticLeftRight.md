@@ -5,7 +5,7 @@ A structure containing a template for a Left/Right effect.
 
 ## Header File
 
-Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
+Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
 
 ## Syntax
 

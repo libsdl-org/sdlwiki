@@ -5,7 +5,7 @@ Close a haptic device previously opened with [SDL_OpenHaptic](SDL_OpenHaptic)().
 
 ## Header File
 
-Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
+Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
 
 ## Syntax
 

@@ -5,7 +5,7 @@ Clear events of a range of types from the event queue.
 
 ## Header File
 
-Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h)
+Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_events.h)
 
 ## Syntax
 

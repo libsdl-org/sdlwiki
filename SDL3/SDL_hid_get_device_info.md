@@ -5,7 +5,7 @@ Get the device info from a HID device.
 
 ## Header File
 
-Defined in [SDL_hidapi.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hidapi.h)
+Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hidapi.h)
 
 ## Syntax
 

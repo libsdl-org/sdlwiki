@@ -9,7 +9,7 @@ Get a snapshot of the current state of the keyboard.
 
 ## Header File
 
-Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h)
+Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_keyboard.h)
 
 ## Syntax
 

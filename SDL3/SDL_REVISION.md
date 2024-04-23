@@ -5,7 +5,7 @@ This macro is a string describing the source at a particular point in developmen
 
 ## Header File
 
-Defined in [SDL_revision.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_revision.h)
+Defined in [<SDL3/SDL_revision.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_revision.h)
 
 ## Syntax
 

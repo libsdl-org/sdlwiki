@@ -5,7 +5,7 @@ An assertion test that is normally performed only in debug builds.
 
 ## Header File
 
-Defined in [SDL_assert.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_assert.h)
+Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_assert.h)
 
 ## Syntax
 

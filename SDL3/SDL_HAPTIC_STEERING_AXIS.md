@@ -5,7 +5,7 @@ Use this value to play an effect on the steering wheel axis.
 
 ## Header File
 
-Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
+Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_haptic.h)
 
 ## Syntax
 

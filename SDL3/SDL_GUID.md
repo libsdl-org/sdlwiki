@@ -5,7 +5,7 @@ An [SDL_GUID](SDL_GUID) is a 128-bit identifier for an input device that identif
 
 ## Header File
 
-Defined in [SDL_guid.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)
+Defined in [<SDL3/SDL_guid.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_guid.h)
 
 ## Syntax
 

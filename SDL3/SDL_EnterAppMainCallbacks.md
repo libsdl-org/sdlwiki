@@ -5,7 +5,7 @@ An entry point for SDL's use in [SDL_MAIN_USE_CALLBACKS](SDL_MAIN_USE_CALLBACKS)
 
 ## Header File
 
-Defined in [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)
+Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)
 
 ## Syntax
 

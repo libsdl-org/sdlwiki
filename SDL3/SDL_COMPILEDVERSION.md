@@ -5,7 +5,7 @@ This is the version number macro for the current SDL version.
 
 ## Header File
 
-Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
+Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
 
 ## Syntax
 

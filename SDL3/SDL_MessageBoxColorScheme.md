@@ -5,7 +5,7 @@ A set of colors to use for message box dialogs
 
 ## Header File
 
-Defined in [SDL_messagebox.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h)
+Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_messagebox.h)
 
 ## Syntax
 
