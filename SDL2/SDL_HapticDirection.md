@@ -70,11 +70,11 @@ direction.dir[0] = 9000; // Since we only have two axes we don't need more param
 
 ## Data Fields
 
-|        |            |                                                |
-| ------ | ---------- | ---------------------------------------------- |
-| Uint8  | '''type''' | the type of encoding; see Remarks for details  |
-| Sint32 | '''dir'''  | the encoded direction; see Remarks for details |
-<!-- <span style="color: green;">There was a [3] attached to '''dir''' but I thought I remembered that we aren't including those details here.  Is that right or should I put it back in because it's important?</span> -->
+|        |          |                                                |
+| ------ | -------- | ---------------------------------------------- |
+| Uint8  | **type** | the type of encoding; see Remarks for details  |
+| Sint32 | **dir**  | the encoded direction; see Remarks for details |
+<!-- <span style="color: green;">There was a [3] attached to **dir** but I thought I remembered that we aren't including those details here.  Is that right or should I put it back in because it's important?</span> -->
 
 ## Related Structures
 

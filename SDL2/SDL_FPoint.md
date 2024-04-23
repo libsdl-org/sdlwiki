@@ -25,10 +25,10 @@ typedef struct SDL_FPoint
 
 ## Data Fields
 
-|       |         |                               |
-| ----- | ------- | ----------------------------- |
-| float | '''x''' | the x coordinate of the point |
-| float | '''y''' | the y coordinate of the point |
+|       |       |                               |
+| ----- | ----- | ----------------------------- |
+| float | **x** | the x coordinate of the point |
+| float | **y** | the y coordinate of the point |
 
 ## Related Structures
 

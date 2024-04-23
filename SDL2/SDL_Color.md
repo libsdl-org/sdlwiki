@@ -21,12 +21,12 @@ typedef struct SDL_Color
 
 ## Data Fields
 
-|       |         |                                        |
-| ----- | ------- | -------------------------------------- |
-| Uint8 | '''r''' | the red component in the range 0-255   |
-| Uint8 | '''g''' | the green component in the range 0-255 |
-| Uint8 | '''b''' | the blue component in the range 0-255  |
-| Uint8 | '''a''' | the alpha component in the range 0-255 |
+|       |       |                                        |
+| ----- | ----- | -------------------------------------- |
+| Uint8 | **r** | the red component in the range 0-255   |
+| Uint8 | **g** | the green component in the range 0-255 |
+| Uint8 | **b** | the blue component in the range 0-255  |
+| Uint8 | **a** | the alpha component in the range 0-255 |
 
 ## Related Structures
 

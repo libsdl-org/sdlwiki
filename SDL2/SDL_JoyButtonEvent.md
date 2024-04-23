@@ -24,13 +24,13 @@ typedef struct SDL_JoyButtonEvent
 
 ## Data Fields
 
-|                |                 |                                                         |
-| -------------- | --------------- | ------------------------------------------------------- |
-| Uint32         | '''type'''      | the event type; SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP    |
-| Uint32         | '''timestamp''' | timestamp of the event                                  |
-| SDL_JoystickID | '''which'''     | the instance id of the joystick that reported the event |
-| Uint8          | '''button'''    | the index of the button that changed                    |
-| Uint8          | '''state'''     | the state of the button; SDL_PRESSED or SDL_RELEASED    |
+|                |               |                                                         |
+| -------------- | ------------- | ------------------------------------------------------- |
+| Uint32         | **type**      | the event type; SDL_JOYBUTTONDOWN or SDL_JOYBUTTONUP    |
+| Uint32         | **timestamp** | timestamp of the event                                  |
+| SDL_JoystickID | **which**     | the instance id of the joystick that reported the event |
+| Uint8          | **button**    | the index of the button that changed                    |
+| Uint8          | **state**     | the state of the button; SDL_PRESSED or SDL_RELEASED    |
 
 ## Related Enumerations
 

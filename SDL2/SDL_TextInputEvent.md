@@ -21,12 +21,12 @@ typedef struct SDL_TextInputEvent
 
 ## Data Fields
 
-|           |                 |                                                   |
-| --------- | --------------- | ------------------------------------------------- |
-| Uint32    | '''type'''      | SDL_TEXTINPUT                                     |
-| Uint32    | '''timestamp''' | timestamp of the event                            |
-| Uint32    | '''windowID'''  | the window with keyboard focus, if any            |
-| char[32]  | '''text'''      | the null-terminated input text in UTF-8 encoding  |
+|           |               |                                                   |
+| --------- | ------------- | ------------------------------------------------- |
+| Uint32    | **type**      | SDL_TEXTINPUT                                     |
+| Uint32    | **timestamp** | timestamp of the event                            |
+| Uint32    | **windowID**  | the window with keyboard focus, if any            |
+| char[32]  | **text**      | the null-terminated input text in UTF-8 encoding  |
 
 ## Related Enumerations
 

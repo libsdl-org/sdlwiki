@@ -27,11 +27,11 @@ typedef struct SDL_JoyDeviceEvent
 
 ## Data Fields
 
-|        |                 |                                                                                                                  |
-| ------ | --------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Uint32 | '''type'''      | SDL_JOYDEVICEADDED or SDL_JOYDEVICEREMOVED                                                                       |
-| Uint32 | '''timestamp''' | the timestamp of the event                                                                                       |
-| Sint32 | '''which'''     | the joystick device index for the SDL_JOYDEVICEADDED event or the instance id for the SDL_JOYDEVICEREMOVED event |
+|        |               |                                                                                                                  |
+| ------ | ------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Uint32 | **type**      | SDL_JOYDEVICEADDED or SDL_JOYDEVICEREMOVED                                                                       |
+| Uint32 | **timestamp** | the timestamp of the event                                                                                       |
+| Sint32 | **which**     | the joystick device index for the SDL_JOYDEVICEADDED event or the instance id for the SDL_JOYDEVICEREMOVED event |
 
 ## Related Enumerations
 

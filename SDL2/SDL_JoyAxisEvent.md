@@ -26,13 +26,13 @@ typedef struct SDL_JoyAxisEvent
 
 ## Data Fields
 
-|                |                 |                                                           |
-| -------------- | --------------- | --------------------------------------------------------- |
-| Uint32         | '''type'''      | SDL_JOYAXISMOTION                                         |
-| Uint32         | '''timestamp''' | timestamp of the event                                    |
-| SDL_JoystickID | '''which'''     | the instance id of the joystick that reported the event   |
-| Uint8          | '''axis'''      | the index of the axis that changed                        |
-| Sint16         | '''value'''     | the current position of the axis (range: -32768 to 32767) |
+|                |               |                                                           |
+| -------------- | ------------- | --------------------------------------------------------- |
+| Uint32         | **type**      | SDL_JOYAXISMOTION                                         |
+| Uint32         | **timestamp** | timestamp of the event                                    |
+| SDL_JoystickID | **which**     | the instance id of the joystick that reported the event   |
+| Uint8          | **axis**      | the index of the axis that changed                        |
+| Sint16         | **value**     | the current position of the axis (range: -32768 to 32767) |
 
 ## Related Enumerations
 

@@ -55,24 +55,24 @@ the joystick.
 
 ## Data Fields
 
-|                                            |                     |                                                 |
-| ------------------------------------------ | ------------------- | ----------------------------------------------- |
-|                                            |                     | <bgcolor="#EDEDED">''Header''                   |
-| Uint16                                     | '''type'''          | SDL_HAPTIC_CONSTANT                             |
-| [SDL_HapticDirection](SDL_HapticDirection) | '''direction'''     | direction of the effect                         |
-|                                            |                     | <bgcolor="#EDEDED">''Replay''                   |
-| Uint32                                     | '''length'''        | duration of the effect                          |
-| Uint16                                     | '''delay'''         | delay before starting the effect                |
-|                                            |                     | <bgcolor="#EDEDED">''Trigger''                  |
-| Uint16                                     | '''button'''        | button that triggers the effect                 |
-| Uint16                                     | '''interval'''      | how soon it can be triggered again after button |
-|                                            |                     | <bgcolor="#EDEDED">''Constant''                 |
-| Sint16                                     | '''level'''         | strength of the constant effect                 |
-|                                            |                     | <bgcolor="#EDEDED">''Envelope''                 |
-| Uint16                                     | '''attack_length''' | duration of the attack                          |
-| Uint16                                     | '''attack_level'''  | level at the start of the attack                |
-| Uint16                                     | '''fade_length'''   | duration of the fade                            |
-| Uint16                                     | '''fade_level'''    | level at the end of the fade                    |
+|                                            |                   |                                                 |
+| ------------------------------------------ | ----------------- | ----------------------------------------------- |
+|                                            |                   | <bgcolor="#EDEDED">''Header''                   |
+| Uint16                                     | **type**          | SDL_HAPTIC_CONSTANT                             |
+| [SDL_HapticDirection](SDL_HapticDirection) | **direction**     | direction of the effect                         |
+|                                            |                   | <bgcolor="#EDEDED">''Replay''                   |
+| Uint32                                     | **length**        | duration of the effect                          |
+| Uint16                                     | **delay**         | delay before starting the effect                |
+|                                            |                   | <bgcolor="#EDEDED">''Trigger''                  |
+| Uint16                                     | **button**        | button that triggers the effect                 |
+| Uint16                                     | **interval**      | how soon it can be triggered again after button |
+|                                            |                   | <bgcolor="#EDEDED">''Constant''                 |
+| Sint16                                     | **level**         | strength of the constant effect                 |
+|                                            |                   | <bgcolor="#EDEDED">''Envelope''                 |
+| Uint16                                     | **attack_length** | duration of the attack                          |
+| Uint16                                     | **attack_level**  | level at the start of the attack                |
+| Uint16                                     | **fade_length**   | duration of the fade                            |
+| Uint16                                     | **fade_level**    | level at the end of the fade                    |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

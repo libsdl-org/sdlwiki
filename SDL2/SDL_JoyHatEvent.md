@@ -30,13 +30,13 @@ typedef struct SDL_JoyHatEvent
 
 ## Data Fields
 
-|                |                 |                                                         |
-| -------------- | --------------- | ------------------------------------------------------- |
-| Uint32         | '''type'''      | SDL_JOYHATMOTION                                        |
-| Uint32         | '''timestamp''' | timestamp of the event                                  |
-| SDL_JoystickID | '''which'''     | the instance id of the joystick that reported the event |
-| Uint8          | '''hat'''       | the index of the hat that changed                       |
-| Uint8          | '''value'''     | the new position of the hat; see Remarks for details    |
+|                |               |                                                         |
+| -------------- | ------------- | ------------------------------------------------------- |
+| Uint32         | **type**      | SDL_JOYHATMOTION                                        |
+| Uint32         | **timestamp** | timestamp of the event                                  |
+| SDL_JoystickID | **which**     | the instance id of the joystick that reported the event |
+| Uint8          | **hat**       | the index of the hat that changed                       |
+| Uint8          | **value**     | the new position of the hat; see Remarks for details    |
 
 ## Related Enumerations
 

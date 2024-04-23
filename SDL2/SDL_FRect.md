@@ -45,12 +45,12 @@ rect.h = 32.0;
 
 ## Data Fields
 
-|       |         |                                                     |
-| ----- | ------- | --------------------------------------------------- |
-| float | '''x''' | the x location of the rectangle's upper left corner |
-| float | '''y''' | the y location of the rectangle's upper left corner |
-| float | '''w''' | the width of the rectangle                          |
-| float | '''h''' | the height of the rectangle                         |
+|       |       |                                                     |
+| ----- | ----- | --------------------------------------------------- |
+| float | **x** | the x location of the rectangle's upper left corner |
+| float | **y** | the y location of the rectangle's upper left corner |
+| float | **w** | the width of the rectangle                          |
+| float | **h** | the height of the rectangle                         |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

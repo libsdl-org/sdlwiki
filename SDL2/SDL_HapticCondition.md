@@ -68,24 +68,24 @@ positive and which is negative.
 
 ## Data Fields
 
-|                                                                     |                                          |                                                                                                    |
-| ------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------- |
-|                                                                     |                                          | <bgcolor="#EDEDED">''Header''                                                                      |
-| Uint16                                                              | '''type'''                               | one of the effects handled by this structure; see Remarks for details                              |
-| <style="color: #808080;">[SDL_HapticDirection](SDL_HapticDirection) | <style="color: #808080;">'''direction''' | <style="color: #808080;">direction of the effect - not used at the moment; see Remarks for details |
-|                                                                     |                                          | <bgcolor="#EDEDED">''Replay''                                                                      |
-| Uint32                                                              | '''length'''                             | duration of the effect                                                                             |
-| Uint16                                                              | '''delay'''                              | delay before starting the effect                                                                   |
-|                                                                     |                                          | <bgcolor="#EDEDED">''Trigger''                                                                     |
-| Uint16                                                              | '''button'''                             | button that triggers the effect                                                                    |
-| Uint16                                                              | '''interval'''                           | how soon it can be triggered again after button                                                    |
-|                                                                     |                                          | <bgcolor="#EDEDED">''Condition''                                                                   |
-| Uint16                                                              | '''right_sat'''                          | level when joystick is to the positive side; max 0xFFFF                                            |
-| Uint16                                                              | '''left_sat'''                           | level when joystick is to the negative side; max 0xFFFF                                            |
-| Sint16                                                              | '''right_coeff'''                        | how fast to increase the force towards the positive side                                           |
-| Sint16                                                              | '''left_coeff'''                         | how fast to increase the force towards the negative side                                           |
-| Uint16                                                              | '''deadband'''                           | size of the dead zone; max 0xFFFF: whole axis-range when 0-centered <!-- (units)? -->              |
-| Sint16                                                              | '''center'''                             | position of the dead zone                                                                          |
+|                                                                     |                                        |                                                                                                    |
+| ------------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------- |
+|                                                                     |                                        | <bgcolor="#EDEDED">''Header''                                                                      |
+| Uint16                                                              | **type**                               | one of the effects handled by this structure; see Remarks for details                              |
+| <style="color: #808080;">[SDL_HapticDirection](SDL_HapticDirection) | <style="color: #808080;">**direction** | <style="color: #808080;">direction of the effect - not used at the moment; see Remarks for details |
+|                                                                     |                                        | <bgcolor="#EDEDED">''Replay''                                                                      |
+| Uint32                                                              | **length**                             | duration of the effect                                                                             |
+| Uint16                                                              | **delay**                              | delay before starting the effect                                                                   |
+|                                                                     |                                        | <bgcolor="#EDEDED">''Trigger''                                                                     |
+| Uint16                                                              | **button**                             | button that triggers the effect                                                                    |
+| Uint16                                                              | **interval**                           | how soon it can be triggered again after button                                                    |
+|                                                                     |                                        | <bgcolor="#EDEDED">''Condition''                                                                   |
+| Uint16                                                              | **right_sat**                          | level when joystick is to the positive side; max 0xFFFF                                            |
+| Uint16                                                              | **left_sat**                           | level when joystick is to the negative side; max 0xFFFF                                            |
+| Sint16                                                              | **right_coeff**                        | how fast to increase the force towards the positive side                                           |
+| Sint16                                                              | **left_coeff**                         | how fast to increase the force towards the negative side                                           |
+| Uint16                                                              | **deadband**                           | size of the dead zone; max 0xFFFF: whole axis-range when 0-centered <!-- (units)? -->              |
+| Sint16                                                              | **center**                             | position of the dead zone                                                                          |
 <!-- <span style="color: green;">All of the Condition fields had a [3] that was left out. Should it be in?</span> -->
 
 ## Related Structures

@@ -27,11 +27,11 @@ typedef struct SDL_MessageBoxButtonData
 
 ## Data Fields
 
-|               |                 |                                                                                          |
-| ------------- | --------------- | ---------------------------------------------------------------------------------------- |
-|  Uint32       | '''flags'''     |  one of the values from [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)           |
-|  int          | '''buttonid'''  |  user defined button id (value returned via [SDL_ShowMessageBox](SDL_ShowMessageBox)())  |
-|  const char*  | '''text'''      |  the UTF-8 button text                                                                   |
+|               |               |                                                                                          |
+| ------------- | ------------- | ---------------------------------------------------------------------------------------- |
+|  Uint32       | **flags**     |  one of the values from [SDL_MessageBoxButtonFlags](SDL_MessageBoxButtonFlags)           |
+|  int          | **buttonid**  |  user defined button id (value returned via [SDL_ShowMessageBox](SDL_ShowMessageBox)())  |
+|  const char*  | **text**      |  the UTF-8 button text                                                                   |
 
 ## Related Enumerations
 

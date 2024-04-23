@@ -23,14 +23,14 @@ typedef struct SDL_RendererInfo
 
 ## Data Fields
 
-|             |                           |                                                             |
-| ----------- | ------------------------- | ----------------------------------------------------------- |
-| const char* | '''name'''                | the name of the renderer                                    |
-| Uint32      | '''flags'''               | a mask of supported renderer flags; see Remarks for details |
-| Uint32      | '''num_texture_formats''' | the number of available texture formats                     |
-| Uint32[16]  | '''texture_formats'''     | the available texture formats; see Remarks for details      |
-| int         | '''max_texture_width'''   | the maximum texture width                                   |
-| int         | '''max_texture_height'''  | the maximum texture height                                  |
+|             |                         |                                                             |
+| ----------- | ----------------------- | ----------------------------------------------------------- |
+| const char* | **name**                | the name of the renderer                                    |
+| Uint32      | **flags**               | a mask of supported renderer flags; see Remarks for details |
+| Uint32      | **num_texture_formats** | the number of available texture formats                     |
+| Uint32[16]  | **texture_formats**     | the available texture formats; see Remarks for details      |
+| int         | **max_texture_width**   | the maximum texture width                                   |
+| int         | **max_texture_height**  | the maximum texture height                                  |
 
 ## Related Enumerations
 

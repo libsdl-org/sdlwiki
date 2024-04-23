@@ -20,11 +20,11 @@ typedef struct SDL_SysWMEvent
 
 ## Data Fields
 
-|                               |                 |                                               |
-| ----------------------------- | --------------- | --------------------------------------------- |
-| Uint32                        | '''type'''      | SDL_SYSWMEVENT                                |
-| Uint32                        | '''timestamp''' | timestamp of the event                        |
-| [SDL_SysWMmsg](SDL_SysWMmsg)* | '''msg'''       | driver dependent data, defined in SDL_syswm.h |
+|                               |               |                                               |
+| ----------------------------- | ------------- | --------------------------------------------- |
+| Uint32                        | **type**      | SDL_SYSWMEVENT                                |
+| Uint32                        | **timestamp** | timestamp of the event                        |
+| [SDL_SysWMmsg](SDL_SysWMmsg)* | **msg**       | driver dependent data, defined in SDL_syswm.h |
 
 ## Related Enumerations
 

@@ -65,13 +65,13 @@ for (i = 0; i < display_mode_count; ++i) {
 
 ## Data Fields
 
-|        |                    |                                                              |
-| ------ | ------------------ | ------------------------------------------------------------ |
-| Uint32 | '''format'''       | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
-| int    | '''w'''            | width, in screen coordinates                                 |
-| int    | '''h'''            | height, in screen coordinates                                |
-| int    | '''refresh_rate''' | refresh rate (in Hz), or 0 for unspecified                   |
-| void*  | '''driverdata'''   | driver-specific data, initialize to 0                        |
+|        |                  |                                                              |
+| ------ | ---------------- | ------------------------------------------------------------ |
+| Uint32 | **format**       | one of the [SDL_PixelFormatEnum](SDL_PixelFormatEnum) values |
+| int    | **w**            | width, in screen coordinates                                 |
+| int    | **h**            | height, in screen coordinates                                |
+| int    | **refresh_rate** | refresh rate (in Hz), or 0 for unspecified                   |
+| void*  | **driverdata**   | driver-specific data, initialize to 0                        |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo)

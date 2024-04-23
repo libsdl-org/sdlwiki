@@ -22,12 +22,12 @@ typedef struct SDL_SensorEvent
 
 ## Data Fields
 
-|          |                 |                                                                                             |
-| -------- | --------------- | ------------------------------------------------------------------------------------------- |
-| Uint32   | '''type'''      | SDL_SENSORUPDATE                                                                            |
-| Uint32   | '''timestamp''' | In milliseconds, populated using SDL_GetTicks()                                             |
-| Sint32   | '''which'''     | The instance ID of the sensor                                                               |
-| float[6] | '''data'''      | Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData() |
+|          |               |                                                                                             |
+| -------- | ------------- | ------------------------------------------------------------------------------------------- |
+| Uint32   | **type**      | SDL_SENSORUPDATE                                                                            |
+| Uint32   | **timestamp** | In milliseconds, populated using SDL_GetTicks()                                             |
+| Sint32   | **which**     | The instance ID of the sensor                                                               |
+| float[6] | **data**      | Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData() |
 
 ## Related Enumerations
 

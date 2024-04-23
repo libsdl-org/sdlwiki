@@ -82,10 +82,10 @@ int main(int argc, char *argv[]) {
 
 ## Data Fields
 
-|     |         |                               |
-| --- | ------- | ----------------------------- |
-| int | '''x''' | the x coordinate of the point |
-| int | '''y''' | the y coordinate of the point |
+|     |       |                               |
+| --- | ----- | ----------------------------- |
+| int | **x** | the x coordinate of the point |
+| int | **y** | the y coordinate of the point |
 
 ## Related Structures
 

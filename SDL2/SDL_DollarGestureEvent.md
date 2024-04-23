@@ -29,16 +29,16 @@ typedef struct SDL_DollarGestureEvent
 
 ## Data Fields
 
-|               |                  |                                                                                                              |
-| ------------- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
-| Uint32        | '''type'''       | SDL_DOLLARGESTURE or SDL_DOLLARRECORD                                                                        |
-| Uint32        | '''timestamp'''  | timestamp of the event                                                                                       |
-| SDL_TouchID   | '''touchId'''    | the touch device id                                                                                          |
-| SDL_GestureID | '''gestureId'''  | the unique id of the closest gesture to the performed stroke                                                 |
-| Uint32        | '''numFingers''' | the number of fingers used to draw the stroke                                                                |
-| float         | '''error'''      | the difference between the gesture template and the actual performed gesture (lower error is a better match) |
-| float         | '''x'''          | the normalized center of gesture                                                                             |
-| float         | '''y'''          | the normalized center of gesture                                                                             |
+|               |                |                                                                                                              |
+| ------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
+| Uint32        | **type**       | SDL_DOLLARGESTURE or SDL_DOLLARRECORD                                                                        |
+| Uint32        | **timestamp**  | timestamp of the event                                                                                       |
+| SDL_TouchID   | **touchId**    | the touch device id                                                                                          |
+| SDL_GestureID | **gestureId**  | the unique id of the closest gesture to the performed stroke                                                 |
+| Uint32        | **numFingers** | the number of fingers used to draw the stroke                                                                |
+| float         | **error**      | the difference between the gesture template and the actual performed gesture (lower error is a better match) |
+| float         | **x**          | the normalized center of gesture                                                                             |
+| float         | **y**          | the normalized center of gesture                                                                             |
 
 <!-- <span style="color: green;">Worth changing touchId and gestureId to touchID and gestureID for consistency?</span> -->
 

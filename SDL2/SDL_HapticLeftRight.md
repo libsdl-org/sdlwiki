@@ -48,15 +48,15 @@ is high frequency, and the large (left) motor is low frequency.
 
 ## Data Fields
 
-|        |                       |                                       |
-| ------ | --------------------- | ------------------------------------- |
-|        |                       | <bgcolor="#EDEDED">''Header''         |
-| Uint16 | '''type'''            | SDL_HAPTIC_LEFTRIGHT                  |
-|        |                       | <bgcolor="#EDEDED">''Replay''         |
-| Uint32 | '''length'''          | duration of the effect                |
-|        |                       | <bgcolor="#EDEDED">''Rumble''         |
-| Uint16 | '''large_magnitude''' | control of the large controller motor |
-| Uint16 | '''small_magnitude''' | control of the small controller motor |
+|        |                     |                                       |
+| ------ | ------------------- | ------------------------------------- |
+|        |                     | <bgcolor="#EDEDED">''Header''         |
+| Uint16 | **type**            | SDL_HAPTIC_LEFTRIGHT                  |
+|        |                     | <bgcolor="#EDEDED">''Replay''         |
+| Uint32 | **length**          | duration of the effect                |
+|        |                     | <bgcolor="#EDEDED">''Rumble''         |
+| Uint16 | **large_magnitude** | control of the large controller motor |
+| Uint16 | **small_magnitude** | control of the small controller motor |
 
 ## Related Structures
 

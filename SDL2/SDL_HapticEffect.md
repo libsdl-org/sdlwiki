@@ -61,15 +61,15 @@ Common parts:
 
 ## Data Fields
 
-|                                            |                 |                                                                       |
-| ------------------------------------------ | --------------- | --------------------------------------------------------------------- |
-| Uint16                                     | '''type'''      | effect type; see [SDL_HapticPeriodic](SDL_HapticPeriodic) for details |
-| [SDL_HapticConstant](SDL_HapticConstant)   | '''constant'''  | constant effect; see Remarks for details                              |
-| [SDL_HapticPeriodic](SDL_HapticPeriodic)   | '''periodic'''  | periodic effect; see Remarks for details                              |
-| [SDL_HapticCondition](SDL_HapticCondition) | '''condition''' | condition effect; see Remarks for details                             |
-| [SDL_HapticRamp](SDL_HapticRamp)           | '''ramp'''      | ramp effect; see Remarks for details                                  |
-| [SDL_HapticLeftRight](SDL_HapticLeftRight) | '''leftright''' | left/right effect; see Remarks for details                            |
-| [SDL_HapticCustom](SDL_HapticCustom)       | '''custom'''    | custom effect; see Remarks for details                                |
+|                                            |               |                                                                       |
+| ------------------------------------------ | ------------- | --------------------------------------------------------------------- |
+| Uint16                                     | **type**      | effect type; see [SDL_HapticPeriodic](SDL_HapticPeriodic) for details |
+| [SDL_HapticConstant](SDL_HapticConstant)   | **constant**  | constant effect; see Remarks for details                              |
+| [SDL_HapticPeriodic](SDL_HapticPeriodic)   | **periodic**  | periodic effect; see Remarks for details                              |
+| [SDL_HapticCondition](SDL_HapticCondition) | **condition** | condition effect; see Remarks for details                             |
+| [SDL_HapticRamp](SDL_HapticRamp)           | **ramp**      | ramp effect; see Remarks for details                                  |
+| [SDL_HapticLeftRight](SDL_HapticLeftRight) | **leftright** | left/right effect; see Remarks for details                            |
+| [SDL_HapticCustom](SDL_HapticCustom)       | **custom**    | custom effect; see Remarks for details                                |
 
 ## Related Structures
 

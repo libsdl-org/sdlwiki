@@ -144,45 +144,45 @@ system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
 
 ## Data Fields
 
-|                                  |                                        |                                                                                                                                  |
-| -------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''All Subsystems''                                                                         |
-| [SDL_version](SDL_version)       | '''version'''                          | an [SDL_version](SDL_version) structure that contains the current SDL version                                                    |
-| [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE) | '''subsystem'''                        | the windowing system type; see Remarks for details                                                                               |
-|  style="color: #808080;" | int   |  style="color: #808080;" | '''dummy''' |  style="color: #808080;" | unused (to help compilers when no specific system is available)                                       |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WINDOWS''                                                                      |
-| HWND                             | '''win.window'''                       | the window handle                                                                                                                |
-| HDC                              | '''win.hdc'''                          | the window device context (>= SDL 2.0.4)                                                                                         |
-| HINSTANCE                        | '''win.hinstance'''                    | the window hinstance (>= SDL 2.0.6)                                                                                              |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)                                                         |
-| IInspectable*                    | '''winrt.window'''                     | the WinRT CoreWindow                                                                                                             |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_X11''                                                                          |
-| Display*                         | '''x11.display'''                      | the X11 display                                                                                                                  |
-| Window                           | '''x11.window'''                       | the X11 window                                                                                                                   |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_DIRECTFB''                                                                     |
-| IDirectFB*                       | '''dfb.dfb'''                          | the DirectFB main interface                                                                                                      |
-| IDirectFBWindow*                 | '''dfb.window'''                       | the DirectFB window handle                                                                                                       |
-| IDirectFBSurface*                | '''dfb.surface'''                      | the DirectFB client surface                                                                                                      |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_COCOA''                                                                        |
-| NSWindow*                        | '''cocoa.window'''                     | the Cocoa window                                                                                                                 |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_UIKIT''                                                                        |
-| UIWindow*                        | '''uikit.window'''                     | the UIKit window                                                                                                                 |
-| GLuint                           | '''uikit.framebuffer'''                | the GL view's Framebuffer Object; it must be bound when rendering to the screen using GL (>= SDL 2.0.4)                          |
-| GLuint                           | '''uikit.colorbuffer'''                | the GL view's color Renderbuffer Object; it must be bound when [SDL_GL_SwapWindow](SDL_GL_SwapWindow)() is called (>= SDL 2.0.4) |
-| GLuint                           | '''uikit.resolveFramebuffer'''         | the Framebuffer Object which holds the resolve color Renderbuffer, when MSAA is used (>= SDL 2.0.4)                              |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)                                                       |
-| wl_display*                      | '''wl.display'''                       | the Wayland display                                                                                                              |
-| wl_surface*                      | '''wl.surface'''                       | the Wayland surface                                                                                                              |
-| wl_shell_surface*                | '''wl.shell_surface'''                 | the Wayland shell_surface (window manager handle)                                                                                |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_MIR'' (>= SDL 2.0.2)                                                           |
-| MirConnection*                   | '''mir.connection'''                   | the Mir display server connection                                                                                                |
-| MirSurface*                      | '''mir.surface'''                      | the Mir surface                                                                                                                  |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)                                                       |
-| ANativeWindow*                   | '''android.window'''                   | the Android native window                                                                                                        |
-| EGLSurface                       | '''android.surface'''                  | the Android EGL surface                                                                                                          |
-|                                  |                                        |  style="background-color: #EDEDED;" | ''SDL_SYSWM_VIVANTE'' (>= SDL 2.0.5)                                                       |
-| EGLNativeDisplayType             | '''vivante.display'''                  | the Vivante EGL display type                                                                                                     |
-| EGLNativeWindowType              | '''vivante.window'''                   | the Vivante EGL window type                                                                                                      |
+|                                  |                                      |                                                                                                                                  |
+| -------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''All Subsystems''                                                                         |
+| [SDL_version](SDL_version)       | **version**                          | an [SDL_version](SDL_version) structure that contains the current SDL version                                                    |
+| [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE) | **subsystem**                        | the windowing system type; see Remarks for details                                                                               |
+|  style="color: #808080;" | int   |  style="color: #808080;" | **dummy** |  style="color: #808080;" | unused (to help compilers when no specific system is available)                                       |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WINDOWS''                                                                      |
+| HWND                             | **win.window**                       | the window handle                                                                                                                |
+| HDC                              | **win.hdc**                          | the window device context (>= SDL 2.0.4)                                                                                         |
+| HINSTANCE                        | **win.hinstance**                    | the window hinstance (>= SDL 2.0.6)                                                                                              |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WINRT'' (>= SDL 2.0.3)                                                         |
+| IInspectable*                    | **winrt.window**                     | the WinRT CoreWindow                                                                                                             |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_X11''                                                                          |
+| Display*                         | **x11.display**                      | the X11 display                                                                                                                  |
+| Window                           | **x11.window**                       | the X11 window                                                                                                                   |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_DIRECTFB''                                                                     |
+| IDirectFB*                       | **dfb.dfb**                          | the DirectFB main interface                                                                                                      |
+| IDirectFBWindow*                 | **dfb.window**                       | the DirectFB window handle                                                                                                       |
+| IDirectFBSurface*                | **dfb.surface**                      | the DirectFB client surface                                                                                                      |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_COCOA''                                                                        |
+| NSWindow*                        | **cocoa.window**                     | the Cocoa window                                                                                                                 |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_UIKIT''                                                                        |
+| UIWindow*                        | **uikit.window**                     | the UIKit window                                                                                                                 |
+| GLuint                           | **uikit.framebuffer**                | the GL view's Framebuffer Object; it must be bound when rendering to the screen using GL (>= SDL 2.0.4)                          |
+| GLuint                           | **uikit.colorbuffer**                | the GL view's color Renderbuffer Object; it must be bound when [SDL_GL_SwapWindow](SDL_GL_SwapWindow)() is called (>= SDL 2.0.4) |
+| GLuint                           | **uikit.resolveFramebuffer**         | the Framebuffer Object which holds the resolve color Renderbuffer, when MSAA is used (>= SDL 2.0.4)                              |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_WAYLAND'' (>= SDL 2.0.2)                                                       |
+| wl_display*                      | **wl.display**                       | the Wayland display                                                                                                              |
+| wl_surface*                      | **wl.surface**                       | the Wayland surface                                                                                                              |
+| wl_shell_surface*                | **wl.shell_surface**                 | the Wayland shell_surface (window manager handle)                                                                                |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_MIR'' (>= SDL 2.0.2)                                                           |
+| MirConnection*                   | **mir.connection**                   | the Mir display server connection                                                                                                |
+| MirSurface*                      | **mir.surface**                      | the Mir surface                                                                                                                  |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_ANDROID'' (>= SDL 2.0.4)                                                       |
+| ANativeWindow*                   | **android.window**                   | the Android native window                                                                                                        |
+| EGLSurface                       | **android.surface**                  | the Android EGL surface                                                                                                          |
+|                                  |                                      |  style="background-color: #EDEDED;" | ''SDL_SYSWM_VIVANTE'' (>= SDL 2.0.5)                                                       |
+| EGLNativeDisplayType             | **vivante.display**                  | the Vivante EGL display type                                                                                                     |
+| EGLNativeWindowType              | **vivante.window**                   | the Vivante EGL window type                                                                                                      |
 
 ## Related Enumerations
 

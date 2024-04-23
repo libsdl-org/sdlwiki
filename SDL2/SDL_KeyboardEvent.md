@@ -25,14 +25,14 @@ typedef struct SDL_KeyboardEvent
 
 ## Data Fields
 
-|                          |                 |                                                                                |
-| ------------------------ | --------------- | ------------------------------------------------------------------------------ |
-| Uint32                   | '''type'''      | the event type; SDL_KEYDOWN or SDL_KEYUP                                       |
-| Uint32                   | '''timestamp''' | timestamp of the event                                                         |
-| Uint32                   | '''windowID'''  | the window with keyboard focus, if any                                         |
-| Uint8                    | '''state'''     | the state of the key; SDL_PRESSED or SDL_RELEASED                              |
-| Uint8                    | '''repeat'''    | non-zero if this is a key repeat                                               |
-| [SDL_Keysym](SDL_Keysym) | '''keysym'''    | the [SDL_Keysym](SDL_Keysym) representing the key that was pressed or released |
+|                          |               |                                                                                |
+| ------------------------ | ------------- | ------------------------------------------------------------------------------ |
+| Uint32                   | **type**      | the event type; SDL_KEYDOWN or SDL_KEYUP                                       |
+| Uint32                   | **timestamp** | timestamp of the event                                                         |
+| Uint32                   | **windowID**  | the window with keyboard focus, if any                                         |
+| Uint8                    | **state**     | the state of the key; SDL_PRESSED or SDL_RELEASED                              |
+| Uint8                    | **repeat**    | non-zero if this is a key repeat                                               |
+| [SDL_Keysym](SDL_Keysym) | **keysym**    | the [SDL_Keysym](SDL_Keysym) representing the key that was pressed or released |
 
 ## Related Enumerations
 
