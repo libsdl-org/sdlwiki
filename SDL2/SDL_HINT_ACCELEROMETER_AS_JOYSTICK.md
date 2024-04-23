@@ -22,6 +22,6 @@ This variable can be set to the following values:
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
-<!-- #See the Style Guide for instructions on editing the footer. -->
+
 
 

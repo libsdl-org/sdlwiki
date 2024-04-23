@@ -58,4 +58,4 @@ This flag maps to GLX_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.
 
 ----
 [[CategoryEnum]], [[CategoryVideo]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
+

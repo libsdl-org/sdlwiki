@@ -27,7 +27,7 @@ typedef struct SDL_GameControllerButtonBind
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryHeader](CategoryHeader), [CategoryDraft](CategoryDraft)
-<!-- #See the Style Guide for instructions on editing the footer. -->
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryHeader](CategoryHeader)
+
 
 

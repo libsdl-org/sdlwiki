@@ -14,6 +14,6 @@ struct SDL_Texture;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), CategoryStruct, CategoryRender, [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), CategoryStruct, CategoryRender
 
 

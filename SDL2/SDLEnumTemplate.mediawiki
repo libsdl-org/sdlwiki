@@ -41,5 +41,5 @@ An enumeration of ******.
 <!-- #Remove this section if empty -->
 
 ----
-[[CategoryEnum]], [[CategoryHeader]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
+[[CategoryEnum]], [[CategoryHeader]]
+

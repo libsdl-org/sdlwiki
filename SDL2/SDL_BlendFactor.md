@@ -26,7 +26,7 @@ typedef enum SDL_BlendFactor
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender)
 
 <!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->
 

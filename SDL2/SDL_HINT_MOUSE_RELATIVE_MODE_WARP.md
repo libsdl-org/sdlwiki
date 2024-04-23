@@ -24,6 +24,6 @@ By default SDL will use raw input for relative mouse mode
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
-<!-- #See the Style Guide for instructions on editing the footer. -->
+
 
 

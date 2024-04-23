@@ -24,6 +24,6 @@ A special exception is the number keys at the top of the keyboard which map
 to [SDLK_0](SDLK_0)...[SDLK_9](SDLK_9) on AZERTY layouts.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard)
 
 

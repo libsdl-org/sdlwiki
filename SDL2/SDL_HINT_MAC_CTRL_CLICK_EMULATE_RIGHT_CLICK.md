@@ -20,6 +20,6 @@ event when on Mac.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
-<!-- #See the Style Guide for instructions on editing the footer. -->
+
 
 

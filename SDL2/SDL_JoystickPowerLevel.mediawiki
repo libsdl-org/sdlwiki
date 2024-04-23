@@ -47,4 +47,4 @@ This enumeration is available since SDL 2.0.4.
 
 
 ----
-[[CategoryEnum]], [[CategoryJoystick]], [[CategoryDraft]]
+[[CategoryEnum]], [[CategoryJoystick]]

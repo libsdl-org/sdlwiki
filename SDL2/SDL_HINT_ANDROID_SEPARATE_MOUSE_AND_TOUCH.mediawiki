@@ -36,5 +36,5 @@ This hint is available since SDL 2.0.4.
 
 This hint is '''removed''' since SDL 2.0.10.
 ----
-[[CategoryDefine]], [[CategoryHints]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
+[[CategoryDefine]], [[CategoryHints]]
+
