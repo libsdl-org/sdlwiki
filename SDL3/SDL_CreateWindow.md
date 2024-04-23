@@ -92,7 +92,7 @@ This function is available since SDL 3.0.0.
 
 ```c++
 // Example program:
-// Using SDL2 to create an application window
+// Using SDL3 to create an application window
 
 #include <SDL3/SDL.h>
 #include <stdio.h>
@@ -105,7 +105,7 @@ int main(int argc, char* argv[]) {
 
     // Create an application window with the following settings:
     window = SDL_CreateWindow(
-        "An SDL2 window",                  // window title
+        "An SDL3 window",                  // window title
         640,                               // width, in pixels
         480,                               // height, in pixels
         SDL_WINDOW_OPENGL                  // flags - see below
