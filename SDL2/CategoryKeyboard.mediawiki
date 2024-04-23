@@ -2,5 +2,4 @@
 * [[SDL_Keycode]]
 * [[SDL_Keymod]]
 * [[SDL_Keysym]]
-* [[SDL_Scancode]]
 <!-- END CATEGORY LIST -->

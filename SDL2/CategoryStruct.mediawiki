@@ -44,7 +44,6 @@
 * [[SDL_Palette]]
 * [[SDL_PixelFormat]]
 * [[SDL_Point]]
-* [[SDL_QuitEvent]]
 * [[SDL_Rect]]
 * [[SDL_Renderer]]
 * [[SDL_RendererInfo]]

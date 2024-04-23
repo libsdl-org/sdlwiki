@@ -24,6 +24,7 @@
 - [SDL_RendererFlip](SDL_RendererFlip)
 - [SDL_ScaleMode](SDL_ScaleMode)
 - [SDL_Scancode](SDL_Scancode)
+- [SDL_SensorType](SDL_SensorType)
 - [SDL_SystemCursor](SDL_SystemCursor)
 - [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE)
 - [SDL_TextureAccess](SDL_TextureAccess)

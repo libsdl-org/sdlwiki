@@ -21,7 +21,6 @@
 * [[SDL_MouseMotionEvent]]
 * [[SDL_MouseWheelEvent]]
 * [[SDL_MultiGestureEvent]]
-* [[SDL_QuitEvent]]
 * [[SDL_QuitRequested]]
 * [[SDL_SensorEvent]]
 * [[SDL_SysWMEvent]]
