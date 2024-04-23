@@ -241,7 +241,7 @@ SDL changed this. `SDL_EnableUNICODE()` is gone, and so is [SDL_Keysym](SDL_Keys
 
 The new event is [SDL_EVENT_TEXT_INPUT](SDL_EventType). This is triggered whenever there's new text entered by the user. Note that this text might be coming from keypresses, or it might be coming from some sort of IME (which is a fancy way of entering complicated, multi-character text). This event returns entire strings, which might be one char long, or several codepoints of multi-character data. This string is always in UTF-8 encoding.
 
-If all you care about is whether the user pressed a certain key, that's still [[SDL_EventType|SDL_EVENT_KEY_DOWN]], but we've split this system into two pieces since 1.2: [keycodes](SDL_Keycode) and [scancodes](SDL_Scancode).
+If all you care about is whether the user pressed a certain key, that's still [SDL_EVENT_KEY_DOWN](SDL_EventType), but we've split this system into two pieces since 1.2: [keycodes](SDL_Keycode) and [scancodes](SDL_Scancode).
 
 Scancodes are meant to be layout-independent. Think of this as "the user pressed the Q key as it would be on a US QWERTY keyboard" regardless of whether this is actually a European keyboard or a Dvorak keyboard or whatever. The scancode is always the same key position.
 
@@ -401,7 +401,7 @@ There have been, for many years, unofficial ports of SDL 1.2 to iOS and Android.
 
 First, there are certain events that only apply to mobile devices, or better said, apply to the way mobile device OSes tend to operate in a post-iPhone world. We originally tried to map these to the existing SDL events (such as "your application is going to the background" being treated like a desktop window losing focus), but there's a more urgent concern: most of these events need an immediate response, and if the app doesn't give one, the OS will kill your application.
 
-As such, we've added new SDL events for some Android and iOS specific details, but you should set up an SDL event filter to catch them as soon as the OS reports them, because waiting until your next [[SDL_PollEvent]]() loop will be too late.
+As such, we've added new SDL events for some Android and iOS specific details, but you should set up an SDL event filter to catch them as soon as the OS reports them, because waiting until your next [SDL_PollEvent](SDL_PollEvent)() loop will be too late.
 
 For example, there's SDL_EVENT_WILL_ENTER_BACKGROUND, which is iOS's `applicationWillResignActive`, and if you draw to the screen after this event arrives, iOS terminates your process. So you want to catch this immediately:
 
@@ -434,9 +434,9 @@ In addition, there are also Android and iOS specific functions, to let you acces
 
 `SDL_RWops` has been renamed [SDL_IOStream](SDL_IOStream). The interfaces are more like POSIX than stdio now, but the basic idea is the same.
 
-If you wrote your own [[SDL_RWops]] implementation, the function signatures have changed. Functions now use `Sint64` and `size_t` instead of `int` so they can work with large files. As a first step, you can just update your function signatures and keep working as before, but if you had bumped up against these limitations, you might be happy to have a solution. Calling applications should know that the return values have changed.
+If you wrote your own `SDL_RWops` implementation, the function signatures have changed. Functions now use `Sint64` and `size_t` instead of `int` so they can work with large files. As a first step, you can just update your function signatures and keep working as before, but if you had bumped up against these limitations, you might be happy to have a solution. Calling applications should know that the return values have changed.
 
-There is also a '''size''' method to RWops, now. It is called [[SDL_RWsize]](). This lets a RWops report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
+There is also a '''size''' method in [SDL_IOStream](SDL_IOStream), now. It is called `SDL_SizeIO`(). This lets an IOStream report the size of the stream without having to make the app seek to zero bytes from the end; in other words, you can report a total size for streams that can't seek. For streams that can't even do that, you can still return -1.
 
 The entire interface your IOStream needs to implement is detailed in (SDL_IOStreamInterface](SDL_IOStreamInterface). You provide this to [SDL_OpenIO](SDL_OpenIO) to generate an [SDL_IOStream](SDL_IOStream) that the app can use roughly like a 1.2 SDL_RWops. Please note that the function pointers are hidden in the final object, so you can't override them once created.
 
