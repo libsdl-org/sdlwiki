@@ -35,10 +35,11 @@ objects.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowFromID](SDL_GetWindowFromID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

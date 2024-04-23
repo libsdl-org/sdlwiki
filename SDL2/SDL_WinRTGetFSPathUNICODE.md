@@ -42,10 +42,11 @@ https://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
 
 This function is available since SDL 2.0.3.
 
-## See Also
+## Related Functions
 
 * [SDL_WinRTGetFSPathUTF8](SDL_WinRTGetFSPathUTF8)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

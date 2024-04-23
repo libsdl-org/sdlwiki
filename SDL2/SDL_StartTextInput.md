@@ -29,11 +29,12 @@ On some platforms using this function activates the screen keyboard.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetTextInputRect](SDL_SetTextInputRect)
 * [SDL_StopTextInput](SDL_StopTextInput)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

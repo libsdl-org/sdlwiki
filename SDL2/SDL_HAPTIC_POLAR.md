@@ -13,7 +13,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 #define SDL_HAPTIC_POLAR      0
 ```
 
-## See Also
+## Related Functions
 
 * [SDL_HapticDirection](SDL_HapticDirection)
 

@@ -34,7 +34,7 @@ otherwise operates exactly the same as [SDL_GetError](SDL_GetError)().
 
 This function is available since SDL 2.0.14.
 
-## See Also
+## Related Functions
 
 * [SDL_GetError](SDL_GetError)
 

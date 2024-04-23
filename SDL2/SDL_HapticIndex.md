@@ -29,11 +29,12 @@ on failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticOpen](SDL_HapticOpen)
 * [SDL_HapticOpened](SDL_HapticOpened)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

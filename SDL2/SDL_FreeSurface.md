@@ -28,7 +28,7 @@ It is safe to pass NULL to this function.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 * [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
@@ -37,4 +37,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

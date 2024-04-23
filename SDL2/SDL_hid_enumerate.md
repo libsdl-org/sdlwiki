@@ -41,10 +41,11 @@ devices will be returned.
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_hid_device_change_count](SDL_hid_device_change_count)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

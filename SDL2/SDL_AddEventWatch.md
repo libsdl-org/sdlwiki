@@ -44,7 +44,7 @@ user through [SDL_PeepEvents](SDL_PeepEvents)().
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_DelEventWatch](SDL_DelEventWatch)
 * [SDL_SetEventFilter](SDL_SetEventFilter)
@@ -66,4 +66,5 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

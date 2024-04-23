@@ -51,7 +51,7 @@ querying; SDL handles locking internally for this function.
 
 This function is available since SDL 2.0.4.
 
-## See Also
+## Related Functions
 
 * [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 * [SDL_QueueAudio](SDL_QueueAudio)
@@ -59,4 +59,5 @@ This function is available since SDL 2.0.4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

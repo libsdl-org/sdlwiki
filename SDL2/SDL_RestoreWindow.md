@@ -24,11 +24,12 @@ void SDL_RestoreWindow(SDL_Window * window);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_MaximizeWindow](SDL_MaximizeWindow)
 * [SDL_MinimizeWindow](SDL_MinimizeWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

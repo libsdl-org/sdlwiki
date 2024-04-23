@@ -28,10 +28,11 @@ Returns the title of the window in UTF-8 format or "" if there is no title.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowTitle](SDL_SetWindowTitle)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

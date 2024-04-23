@@ -37,10 +37,11 @@ If `result` is NULL then this function will return [SDL_FALSE](SDL_FALSE).
 
 This function is available since SDL 2.0.22.
 
-## See Also
+## Related Functions
 
 * [SDL_HasIntersectionF](SDL_HasIntersectionF)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

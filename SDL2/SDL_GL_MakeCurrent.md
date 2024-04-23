@@ -35,10 +35,11 @@ The context must have been created with a compatible window.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GL_CreateContext](SDL_GL_CreateContext)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

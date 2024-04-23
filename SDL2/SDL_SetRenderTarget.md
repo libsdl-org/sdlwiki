@@ -42,10 +42,11 @@ function with a NULL `texture`.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetRenderTarget](SDL_GetRenderTarget)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

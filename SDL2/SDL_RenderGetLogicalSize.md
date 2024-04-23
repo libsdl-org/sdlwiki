@@ -37,10 +37,11 @@ it returns the logical width and height that are set.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

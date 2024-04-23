@@ -32,10 +32,11 @@ bring the window to the front and keep the window above the rest.
 
 This function is available since SDL 2.0.16.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

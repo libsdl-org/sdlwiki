@@ -35,7 +35,7 @@ change.
 
 This function is available since SDL 2.24.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)

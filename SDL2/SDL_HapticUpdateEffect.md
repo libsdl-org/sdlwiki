@@ -40,7 +40,7 @@ running [SDL_HapticUpdateEffect](SDL_HapticUpdateEffect)().
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
 * [SDL_HapticNewEffect](SDL_HapticNewEffect)
@@ -48,4 +48,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

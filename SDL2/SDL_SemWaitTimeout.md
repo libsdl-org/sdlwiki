@@ -38,7 +38,7 @@ successful it will atomically decrement the semaphore value.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
 * [SDL_DestroySemaphore](SDL_DestroySemaphore)
@@ -49,4 +49,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

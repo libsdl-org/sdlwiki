@@ -29,10 +29,11 @@ Returns [SDL_TRUE](SDL_TRUE) if screen keyboard is shown or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

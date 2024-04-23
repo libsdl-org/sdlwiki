@@ -63,7 +63,7 @@ pick from.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreeCursor](SDL_FreeCursor)
 * [SDL_SetCursor](SDL_SetCursor)
@@ -71,4 +71,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

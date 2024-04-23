@@ -39,10 +39,11 @@ Any number can be passed to
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickEventState](SDL_JoystickEventState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

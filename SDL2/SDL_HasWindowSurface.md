@@ -23,10 +23,11 @@ window, or [SDL_FALSE](SDL_FALSE) otherwise.
 
 This function is available since SDL 2.28.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowSurface](SDL_GetWindowSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

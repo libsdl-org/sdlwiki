@@ -103,11 +103,12 @@ SDL_LoadWAV("sample.wav", &spec, &buf, &len);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreeWAV](SDL_FreeWAV)
 * [SDL_LoadWAV](SDL_LoadWAV)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

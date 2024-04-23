@@ -45,10 +45,11 @@ account for jitter.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickNumAxes](SDL_JoystickNumAxes)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

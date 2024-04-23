@@ -49,7 +49,7 @@ Prior to SDL 2.0.10, this function was a macro.
 
 This function is available since SDL 2.0.10.
 
-## See Also
+## Related Functions
 
 * [SDL_RWclose](SDL_RWclose)
 * [SDL_RWFromConstMem](SDL_RWFromConstMem)
@@ -62,4 +62,5 @@ This function is available since SDL 2.0.10.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

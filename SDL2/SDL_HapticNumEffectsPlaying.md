@@ -34,11 +34,12 @@ This is not supported on all platforms, but will always return a value.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticNumEffects](SDL_HapticNumEffects)
 * [SDL_HapticQuery](SDL_HapticQuery)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

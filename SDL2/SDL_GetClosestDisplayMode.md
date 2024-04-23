@@ -40,11 +40,12 @@ small, then NULL is returned.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetDisplayMode](SDL_GetDisplayMode)
 * [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

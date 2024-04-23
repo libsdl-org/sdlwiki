@@ -52,10 +52,11 @@ This functions is also accessible using the macro
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

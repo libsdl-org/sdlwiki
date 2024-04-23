@@ -40,11 +40,12 @@ The current state of the mouse cursor can be queried by passing
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateCursor](SDL_CreateCursor)
 * [SDL_SetCursor](SDL_SetCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -54,11 +54,12 @@ It is safe to pass NULL to this function; it is a no-op.
 
 This function is available since SDL 2.0.2.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateThread](SDL_CreateThread)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -37,10 +37,11 @@ this display can be retrieved using
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowBrightness](SDL_SetWindowBrightness)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

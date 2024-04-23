@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Periodic haptic effect that simulates saw tooth up waves.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticPeriodic](SDL_HapticPeriodic)
 

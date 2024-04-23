@@ -31,10 +31,11 @@ The window coordinate origin is the upper left of the display.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowPosition](SDL_GetWindowPosition)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

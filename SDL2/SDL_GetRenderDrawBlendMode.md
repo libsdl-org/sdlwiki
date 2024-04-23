@@ -31,10 +31,11 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

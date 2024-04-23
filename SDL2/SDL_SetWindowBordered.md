@@ -35,10 +35,11 @@ You can't change the border state of a fullscreen window.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

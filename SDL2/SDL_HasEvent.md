@@ -34,10 +34,11 @@ If you need to check for a range of event types, use
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HasEvents](SDL_HasEvents)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

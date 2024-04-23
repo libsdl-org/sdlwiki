@@ -34,10 +34,11 @@ The primary display (`displayIndex` zero) is always located at 0,0.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

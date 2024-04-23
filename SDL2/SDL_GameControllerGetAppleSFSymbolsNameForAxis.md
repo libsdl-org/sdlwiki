@@ -29,10 +29,11 @@ Returns the sfSymbolsName or NULL if the name can't be found
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerGetAppleSFSymbolsNameForButton](SDL_GameControllerGetAppleSFSymbolsNameForButton)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

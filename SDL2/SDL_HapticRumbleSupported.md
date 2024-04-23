@@ -30,7 +30,7 @@ if it isn't, or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
 * [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
@@ -38,4 +38,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

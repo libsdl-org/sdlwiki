@@ -40,7 +40,7 @@ This function is the equivalent of calling
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
 * [SDL_DestroySemaphore](SDL_DestroySemaphore)
@@ -52,4 +52,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -42,7 +42,7 @@ to an [SDL_Surface](SDL_Surface) and then close the file.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreeSurface](SDL_FreeSurface)
 * [SDL_RWFromFile](SDL_RWFromFile)
@@ -51,4 +51,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

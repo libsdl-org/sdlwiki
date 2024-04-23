@@ -53,11 +53,12 @@ may have swapped color channels.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 * [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

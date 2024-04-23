@@ -27,10 +27,11 @@ void SDL_RenderGetScale(SDL_Renderer * renderer,
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderSetScale](SDL_RenderSetScale)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

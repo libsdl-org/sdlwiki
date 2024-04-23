@@ -29,10 +29,11 @@ Returns a cursor on success or NULL on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreeCursor](SDL_FreeCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

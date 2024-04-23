@@ -35,11 +35,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
 * [SDL_HapticRunEffect](SDL_HapticRunEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

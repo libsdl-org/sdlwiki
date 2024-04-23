@@ -25,10 +25,11 @@ void SDL_CalculateGammaRamp(float gamma, Uint16 * ramp);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

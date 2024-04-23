@@ -24,7 +24,7 @@ void SDL_FreePalette(SDL_Palette * palette);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_AllocPalette](SDL_AllocPalette)
 
@@ -69,4 +69,5 @@ palette = NULL;
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

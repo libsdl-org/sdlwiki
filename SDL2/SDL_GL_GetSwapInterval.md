@@ -30,10 +30,11 @@ current context, this function will return 0 as a safe default.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GL_SetSwapInterval](SDL_GL_SetSwapInterval)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

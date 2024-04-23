@@ -30,7 +30,7 @@ recognized; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetKeyFromName](SDL_GetKeyFromName)
 * [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
@@ -38,4 +38,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

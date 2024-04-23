@@ -23,11 +23,12 @@ Returns the haptic device identifier or NULL on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticOpen](SDL_HapticOpen)
 * [SDL_MouseIsHaptic](SDL_MouseIsHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

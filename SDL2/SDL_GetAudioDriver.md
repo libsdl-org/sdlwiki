@@ -39,10 +39,11 @@ meant to be proper names.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

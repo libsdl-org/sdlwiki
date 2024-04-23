@@ -29,11 +29,12 @@ Returns [SDL_TRUE](SDL_TRUE) if keyboard is grabbed, and
 
 This function is available since SDL 2.0.16.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
 * [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

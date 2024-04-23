@@ -18,7 +18,7 @@ void SDL_ClearError(void);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetError](SDL_GetError)
 * [SDL_SetError](SDL_SetError)

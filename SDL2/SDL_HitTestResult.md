@@ -1,0 +1,42 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+## Draft
+
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+# SDL_HitTestResult
+
+Possible return values from the [SDL_HitTest](SDL_HitTest) callback.
+
+## Header File
+
+Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_video.h)
+
+## Syntax
+
+```c
+typedef enum SDL_HitTestResult
+{
+    SDL_HITTEST_NORMAL,  /**< Region is normal. No special properties. */
+    SDL_HITTEST_DRAGGABLE,  /**< Region can drag entire window. */
+    SDL_HITTEST_RESIZE_TOPLEFT,
+    SDL_HITTEST_RESIZE_TOP,
+    SDL_HITTEST_RESIZE_TOPRIGHT,
+    SDL_HITTEST_RESIZE_RIGHT,
+    SDL_HITTEST_RESIZE_BOTTOMRIGHT,
+    SDL_HITTEST_RESIZE_BOTTOM,
+    SDL_HITTEST_RESIZE_BOTTOMLEFT,
+    SDL_HITTEST_RESIZE_LEFT
+} SDL_HitTestResult;
+```
+
+## Related Functions
+
+* [SDL_HitTest](SDL_HitTest)
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)
+
+

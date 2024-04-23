@@ -45,7 +45,7 @@ The mutex must be locked before calling this function.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CondBroadcast](SDL_CondBroadcast)
 * [SDL_CondSignal](SDL_CondSignal)
@@ -55,4 +55,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

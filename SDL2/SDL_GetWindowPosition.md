@@ -32,10 +32,11 @@ in the `x` or `y` parameter.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowPosition](SDL_SetWindowPosition)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

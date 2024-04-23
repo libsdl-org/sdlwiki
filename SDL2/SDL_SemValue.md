@@ -28,10 +28,11 @@ Returns the current value of the semaphore.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

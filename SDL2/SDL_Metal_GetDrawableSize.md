@@ -27,11 +27,12 @@ void SDL_Metal_GetDrawableSize(SDL_Window* window, int *w,
 
 This function is available since SDL 2.0.14.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowSize](SDL_GetWindowSize)
 * [SDL_CreateWindow](SDL_CreateWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

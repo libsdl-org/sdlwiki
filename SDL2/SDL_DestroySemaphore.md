@@ -29,7 +29,7 @@ waiting on it.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateSemaphore](SDL_CreateSemaphore)
 * [SDL_SemPost](SDL_SemPost)
@@ -40,4 +40,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -47,10 +47,11 @@ and have a good reason to use this function, you probably want
 
 This function is available since SDL 2.0.4.
 
-## See Also
+## Related Functions
 
 * [SDL_CaptureMouse](SDL_CaptureMouse)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -58,10 +58,11 @@ The pointer returned is owned by the caller. Please call
 
 This function is available since SDL 2.0.1.
 
-## See Also
+## Related Functions
 
 * [SDL_GetPrefPath](SDL_GetPrefPath)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

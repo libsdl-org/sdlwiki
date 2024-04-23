@@ -40,10 +40,11 @@ This callback is NOT reset to SDL's internal handler upon
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

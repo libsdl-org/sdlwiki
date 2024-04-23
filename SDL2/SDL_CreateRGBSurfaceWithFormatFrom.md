@@ -45,7 +45,7 @@ you must free the surface before you free the pixel data.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
 * [SDL_CreateRGBSurfaceWithFormat](SDL_CreateRGBSurfaceWithFormat)
@@ -53,4 +53,5 @@ This function is available since SDL 2.0.5.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

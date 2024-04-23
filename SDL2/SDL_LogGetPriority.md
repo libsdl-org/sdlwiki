@@ -28,10 +28,11 @@ Returns the [SDL_LogPriority](SDL_LogPriority) for the requested category
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

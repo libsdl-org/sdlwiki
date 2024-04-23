@@ -45,11 +45,12 @@ Return 0 on success, or -1 if the operation is not supported
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderGeometry](SDL_RenderGeometry)
 * [SDL_Vertex](SDL_Vertex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

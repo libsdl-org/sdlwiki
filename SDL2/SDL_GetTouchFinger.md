@@ -34,10 +34,11 @@ The returned resource is owned by SDL and should not be deallocated.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RecordGesture](SDL_RecordGesture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

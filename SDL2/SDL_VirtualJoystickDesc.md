@@ -45,7 +45,7 @@ before passing it to
 [SDL_JoystickAttachVirtualEx](SDL_JoystickAttachVirtualEx)() All other
 elements of this structure are optional and can be left 0.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickAttachVirtualEx](SDL_JoystickAttachVirtualEx)
 

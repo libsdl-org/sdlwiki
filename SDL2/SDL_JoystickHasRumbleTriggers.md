@@ -29,10 +29,11 @@ Return [SDL_TRUE](SDL_TRUE) if the joystick has trigger rumble,
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickRumbleTriggers](SDL_JoystickRumbleTriggers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

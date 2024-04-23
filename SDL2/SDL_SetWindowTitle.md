@@ -30,10 +30,11 @@ This string is expected to be in UTF-8 encoding.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowTitle](SDL_GetWindowTitle)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -42,10 +42,11 @@ Unless you know what you're doing, you should be using
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_BlitSurface](SDL_BlitSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

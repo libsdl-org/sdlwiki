@@ -33,11 +33,12 @@ function returns.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetEventFilter](SDL_GetEventFilter)
 * [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -32,7 +32,7 @@ on the platform.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateMutex](SDL_CreateMutex)
 * [SDL_LockMutex](SDL_LockMutex)
@@ -41,4 +41,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

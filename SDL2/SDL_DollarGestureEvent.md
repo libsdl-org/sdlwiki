@@ -1,0 +1,80 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+## Draft
+
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_DollarGestureEvent
+
+Dollar Gesture Event (event.dgesture.*)
+
+## Header File
+
+Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_events.h)
+
+## Syntax
+
+```c
+typedef struct SDL_DollarGestureEvent
+{
+    Uint32 type;        /**< ::SDL_DOLLARGESTURE or ::SDL_DOLLARRECORD */
+    Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
+    SDL_TouchID touchId; /**< The touch device id */
+    SDL_GestureID gestureId;
+    Uint32 numFingers;
+    float error;
+    float x;            /**< Normalized center of gesture */
+    float y;            /**< Normalized center of gesture */
+} SDL_DollarGestureEvent;
+```
+
+## Data Fields
+
+{|
+|Uint32
+|'''type'''
+|SDL_DOLLARGESTURE or SDL_DOLLARRECORD
+|-
+|Uint32
+|'''timestamp'''
+|timestamp of the event
+|-
+|SDL_TouchID
+|'''touchId'''
+|the touch device id
+|-
+|SDL_GestureID
+|'''gestureId'''
+|the unique id of the closest gesture to the performed stroke
+|-
+|Uint32
+|'''numFingers'''
+|the number of fingers used to draw the stroke
+|-
+|float
+|'''error'''
+|the difference between the gesture template and the actual performed gesture (lower error is a better match)
+|-
+|float
+|'''x'''
+|the normalized center of gesture
+|-
+|float
+|'''y'''
+|the normalized center of gesture
+|}
+
+<!-- <span style="color: green;">Worth changing touchId and gestureId to touchID and gestureID for consistency?</span> -->
+
+## Related Enumerations
+
+:[[SDL_EventType]]
+
+## Related Structures
+
+:[[SDL_Event]]
+:[[SDL_MultiGestureEvent]]
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)
+
+

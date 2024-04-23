@@ -50,10 +50,11 @@ This function also returns -1 if getting the information is not supported.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowSize](SDL_GetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

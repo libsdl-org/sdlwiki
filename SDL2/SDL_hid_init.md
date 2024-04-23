@@ -34,10 +34,11 @@ Each call to this function should have a matching call to
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_hid_exit](SDL_hid_exit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

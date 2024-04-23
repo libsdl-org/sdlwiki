@@ -1,0 +1,151 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+## Draft
+
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+# SDL_HapticCustom
+
+A structure containing a template for the ::[SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM) effect.
+
+## Header File
+
+Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_haptic.h)
+
+## Syntax
+
+```c
+typedef struct SDL_HapticCustom
+{
+    /* Header */
+    Uint16 type;            /**< ::SDL_HAPTIC_CUSTOM */
+    SDL_HapticDirection direction;  /**< Direction of the effect. */
+
+    /* Replay */
+    Uint32 length;          /**< Duration of the effect. */
+    Uint16 delay;           /**< Delay before starting the effect. */
+
+    /* Trigger */
+    Uint16 button;          /**< Button that triggers the effect. */
+    Uint16 interval;        /**< How soon it can be triggered again after button. */
+
+    /* Custom */
+    Uint8 channels;         /**< Axes to use, minimum of one. */
+    Uint16 period;          /**< Sample periods. */
+    Uint16 samples;         /**< Amount of samples. */
+    Uint16 *data;           /**< Should contain channels*samples items. */
+
+    /* Envelope */
+    Uint16 attack_length;   /**< Duration of the attack. */
+    Uint16 attack_level;    /**< Level at the start of the attack. */
+    Uint16 fade_length;     /**< Duration of the fade. */
+    Uint16 fade_level;      /**< Level at the end of the fade. */
+} SDL_HapticCustom;
+```
+
+## Remarks
+
+This struct is exclusively for the ::[SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
+effect.
+
+A custom force feedback effect is much like a periodic effect, where the
+application can define its exact shape. You will have to allocate the data
+yourself. Data should consist of channels * samples Uint16 samples.
+
+If channels is one, the effect is rotated using the defined direction.
+Otherwise it uses the samples in data for the different axes.
+
+## Related Functions
+
+* [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
+* [SDL_HapticEffect](SDL_HapticEffect)
+
+
+## Data Fields
+
+{|
+|
+|
+|<bgcolor="#EDEDED">''Header''
+|-
+|Uint16
+|'''type'''
+|SDL_HAPTIC_CUSTOM
+|-
+|[[SDL_HapticDirection]]
+|'''direction'''
+|direction of the effect (relative to the user)
+|-
+|
+|
+|<bgcolor="#EDEDED">''Replay''
+|-
+|Uint32
+|'''length'''
+|duration of the effect
+|-
+|Uint16
+|'''delay'''
+|delay before starting the effect
+|-
+|
+|
+|<bgcolor="#EDEDED">''Trigger''
+|-
+|Uint16
+|'''button'''
+|button that triggers the effect
+|-
+|Uint16
+|'''interval'''
+|how soon it can be triggered again after '''button'''
+|-
+|
+|
+|<bgcolor="#EDEDED">''Custom''
+|-
+|Uint8
+|'''channels'''
+|axes to use, minimum of 1; see [[#Remarks|Remarks]] for details
+|-
+|Uint16
+|'''period'''
+|sample periods
+|-
+|Uint16
+|'''samples'''
+| amount (number) of samples
+|-
+|Uint16*
+|'''data'''
+|should contain '''channels'''*'''samples''' items; see [[#Remarks|Remarks]] for details
+|-
+|
+|
+|<bgcolor="#EDEDED">''Envelope''
+|-
+|Uint16
+|'''attack_length'''
+|duration of the attack
+|-
+|Uint16
+|'''attack_level'''
+|level at the start of the attack
+|-
+|Uint16
+|'''fade_length'''
+|duration of the fade
+|-
+|Uint16
+|'''fade_level'''
+|level at the end of the fade
+|}
+
+## Related Structures
+
+:[[SDL_HapticDirection]]
+:[[SDL_HapticEffect]]
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
+
+

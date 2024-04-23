@@ -35,10 +35,11 @@ corrupted textures, depending on the renderer in use.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LockTexture](SDL_LockTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -37,7 +37,7 @@ wake waiting threads and allow them to retry the wait operation.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_DestroySemaphore](SDL_DestroySemaphore)
 * [SDL_SemPost](SDL_SemPost)
@@ -48,4 +48,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

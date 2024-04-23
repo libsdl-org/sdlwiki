@@ -25,10 +25,11 @@ normally use [SDL_Quit](SDL_Quit)() or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_AudioInit](SDL_AudioInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

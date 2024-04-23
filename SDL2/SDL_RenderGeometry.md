@@ -36,7 +36,7 @@ Return 0 on success, or -1 if the operation is not supported
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 * [SDL_Vertex](SDL_Vertex)
@@ -77,4 +77,5 @@ SDL_RenderPresent(renderer);
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

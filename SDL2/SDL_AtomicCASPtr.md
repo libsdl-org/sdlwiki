@@ -36,7 +36,7 @@ it!***
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_AtomicCAS](SDL_AtomicCAS)
 * [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
@@ -44,4 +44,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

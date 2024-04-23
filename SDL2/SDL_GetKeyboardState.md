@@ -48,11 +48,12 @@ pressed or not.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_PumpEvents](SDL_PumpEvents)
 * [SDL_ResetKeyboard](SDL_ResetKeyboard)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

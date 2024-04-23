@@ -24,10 +24,11 @@ void SDL_HideWindow(SDL_Window * window);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_ShowWindow](SDL_ShowWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

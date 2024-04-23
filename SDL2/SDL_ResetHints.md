@@ -24,7 +24,7 @@ normally with this change.
 
 This function is available since SDL 2.26.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)

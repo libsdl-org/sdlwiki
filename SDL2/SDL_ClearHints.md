@@ -27,7 +27,7 @@ This function will be removed from the API the next time we rev the ABI.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_ResetHints](SDL_ResetHints)
 

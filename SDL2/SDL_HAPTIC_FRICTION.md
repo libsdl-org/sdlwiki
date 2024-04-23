@@ -18,7 +18,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 Condition haptic effect that simulates friction. Effect is based on the
 axes movement.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticCondition](SDL_HapticCondition)
 

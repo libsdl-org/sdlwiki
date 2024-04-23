@@ -36,11 +36,12 @@ Details about mappings are discussed with
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
 * [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

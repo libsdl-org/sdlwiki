@@ -30,10 +30,11 @@ Returns [SDL_TRUE](SDL_TRUE) if integer scales are forced or
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

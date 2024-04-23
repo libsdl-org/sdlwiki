@@ -33,7 +33,7 @@ In SDL2, this function and [SDL_Init](SDL_Init)() are interchangeable.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_Init](SDL_Init)
 * [SDL_Quit](SDL_Quit)

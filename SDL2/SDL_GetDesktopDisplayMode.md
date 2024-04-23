@@ -37,7 +37,7 @@ return the previous native display mode, and not the current display mode.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
 * [SDL_GetDisplayMode](SDL_GetDisplayMode)
@@ -50,4 +50,5 @@ SDL_video.h
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

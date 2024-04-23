@@ -29,10 +29,11 @@ does not have rumble support
 
 This function is available since SDL 2.0.18.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerRumble](SDL_GameControllerRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

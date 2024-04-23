@@ -33,11 +33,12 @@ Returns the new cursor on success or NULL on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateCursor](SDL_CreateCursor)
 * [SDL_FreeCursor](SDL_FreeCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

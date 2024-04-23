@@ -48,7 +48,7 @@ This function is affected by
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
 * [SDL_HasWindowSurface](SDL_HasWindowSurface)
@@ -57,4 +57,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

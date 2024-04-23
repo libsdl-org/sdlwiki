@@ -31,10 +31,11 @@ This was fixed for Android in SDL 2.0.1.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetTouchDevice](SDL_GetTouchDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -39,7 +39,7 @@ future blits, making them faster.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_AllocFormat](SDL_AllocFormat)
 * [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
@@ -47,4 +47,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

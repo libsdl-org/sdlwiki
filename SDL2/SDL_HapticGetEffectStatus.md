@@ -35,11 +35,12 @@ Device must support the [SDL_HAPTIC_STATUS](SDL_HAPTIC_STATUS) feature.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticRunEffect](SDL_HapticRunEffect)
 * [SDL_HapticStopEffect](SDL_HapticStopEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

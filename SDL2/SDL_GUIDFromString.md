@@ -34,10 +34,11 @@ will not be useful.
 
 This function is available since SDL 2.24.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GUIDToString](SDL_GUIDToString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

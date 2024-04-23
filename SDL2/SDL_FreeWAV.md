@@ -31,11 +31,12 @@ pointer.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LoadWAV](SDL_LoadWAV)
 * [SDL_LoadWAV_RW](SDL_LoadWAV_RW)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -33,7 +33,7 @@ SDL mutexes are reentrant.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_DestroyMutex](SDL_DestroyMutex)
 * [SDL_LockMutex](SDL_LockMutex)
@@ -42,4 +42,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -18,11 +18,12 @@ void SDL_EnableScreenSaver(void);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
 * [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -37,11 +37,12 @@ size is rounded down to the lower multiple.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderGetIntegerScale](SDL_RenderGetIntegerScale)
 * [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

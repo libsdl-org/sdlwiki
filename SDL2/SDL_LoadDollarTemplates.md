@@ -31,11 +31,12 @@ information.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
 * [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

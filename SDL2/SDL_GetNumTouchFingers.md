@@ -29,10 +29,11 @@ Returns the number of active fingers for a given touch device on success or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetTouchFinger](SDL_GetTouchFinger)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

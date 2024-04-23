@@ -33,10 +33,11 @@ it!***
 
 This function is available since SDL 2.0.2.
 
-## See Also
+## Related Functions
 
 * [SDL_AtomicSet](SDL_AtomicSet)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

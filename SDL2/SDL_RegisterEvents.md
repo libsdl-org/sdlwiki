@@ -37,10 +37,11 @@ Note, (Uint32)-1 means the maximum unsigned 32-bit integer value (or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_PushEvent](SDL_PushEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_hid_ble_scan
 
-Start or stop a BLE scan on iOS and tvOS to pair Steam Controllers
+Start or stop a BLE scan on iOS and tvOS to pair Steam Controllers 
 
 ## Header File
 
@@ -26,4 +26,5 @@ This function is available since SDL 2.0.18.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

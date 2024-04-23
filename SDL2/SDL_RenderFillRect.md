@@ -38,7 +38,7 @@ value is ignored unless blending is enabled with the appropriate call to
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderDrawLine](SDL_RenderDrawLine)
 * [SDL_RenderDrawLines](SDL_RenderDrawLines)
@@ -53,4 +53,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

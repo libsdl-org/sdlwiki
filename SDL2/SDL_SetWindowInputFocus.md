@@ -35,10 +35,11 @@ that is completely obscured by other windows.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

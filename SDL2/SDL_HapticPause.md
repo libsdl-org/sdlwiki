@@ -37,10 +37,11 @@ can cause all sorts of weird errors.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticUnpause](SDL_HapticUnpause)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

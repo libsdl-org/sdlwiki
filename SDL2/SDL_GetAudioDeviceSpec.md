@@ -42,11 +42,12 @@ count.
 
 This function is available since SDL 2.0.16.
 
-## See Also
+## Related Functions
 
 * [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
 * [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

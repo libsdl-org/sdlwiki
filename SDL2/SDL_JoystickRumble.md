@@ -36,10 +36,11 @@ it with 0 intensity stops any rumbling.
 
 This function is available since SDL 2.0.9.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickHasRumble](SDL_JoystickHasRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

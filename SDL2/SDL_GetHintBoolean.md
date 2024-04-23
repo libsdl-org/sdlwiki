@@ -30,7 +30,7 @@ hint does not exist.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)

@@ -41,11 +41,12 @@ SDL_CreateThreadWithStackSize(fn, name, 0, data);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
 * [SDL_WaitThread](SDL_WaitThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

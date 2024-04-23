@@ -24,10 +24,11 @@ void SDL_LogSetAllPriority(SDL_LogPriority priority);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

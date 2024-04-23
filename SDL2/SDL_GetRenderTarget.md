@@ -33,10 +33,11 @@ and is reported a NULL here.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetRenderTarget](SDL_SetRenderTarget)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

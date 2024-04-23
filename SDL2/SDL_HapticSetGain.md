@@ -39,10 +39,11 @@ linearly using [`SDL_HAPTIC_GAIN_MAX`](SDL_HAPTIC_GAIN_MAX) as the maximum.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticQuery](SDL_HapticQuery)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

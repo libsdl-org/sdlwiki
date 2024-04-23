@@ -41,7 +41,7 @@ the pixel format of the texture.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateTexture](SDL_CreateTexture)
 * [SDL_DestroyTexture](SDL_DestroyTexture)
@@ -49,4 +49,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

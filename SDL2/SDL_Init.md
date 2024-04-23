@@ -69,7 +69,7 @@ is already loaded then this call will increase the ref-count and return.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_InitSubSystem](SDL_InitSubSystem)
 * [SDL_Quit](SDL_Quit)

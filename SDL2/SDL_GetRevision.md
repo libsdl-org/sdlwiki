@@ -42,7 +42,7 @@ purposes. The string is not intended to be reliable in any way.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetVersion](SDL_GetVersion)
 

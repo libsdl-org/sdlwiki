@@ -29,10 +29,11 @@ Returns the read byte on success or 0 on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_WriteU8](SDL_WriteU8)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

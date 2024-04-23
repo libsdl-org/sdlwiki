@@ -40,11 +40,12 @@ enabled.
 
 This function is available since SDL 2.0.6.
 
-## See Also
+## Related Functions
 
 * [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 * [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -39,7 +39,7 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
        linked.major, linked.minor, linked.patch);
 ```
 
-## See Also
+## Related Functions
 
 * [SDL_VERSION](SDL_VERSION)
 * [SDL_GetVersion](SDL_GetVersion)

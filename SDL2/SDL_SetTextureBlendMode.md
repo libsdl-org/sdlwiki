@@ -36,11 +36,12 @@ and this function returns -1.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 * [SDL_RenderCopy](SDL_RenderCopy)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

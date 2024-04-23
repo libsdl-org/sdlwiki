@@ -43,10 +43,11 @@ normally uses the full range.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerGetButton](SDL_GameControllerGetButton)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

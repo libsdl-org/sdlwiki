@@ -37,10 +37,11 @@ This function also returns -1 if setting the opacity isn't supported.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowOpacity](SDL_GetWindowOpacity)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

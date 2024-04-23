@@ -36,7 +36,7 @@ This function can be called before any controllers are opened.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerName](SDL_GameControllerName)
 * [SDL_GameControllerOpen](SDL_GameControllerOpen)
@@ -44,4 +44,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

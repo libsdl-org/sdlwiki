@@ -29,10 +29,11 @@ This function should be paired with a previous
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LockAudioDevice](SDL_LockAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

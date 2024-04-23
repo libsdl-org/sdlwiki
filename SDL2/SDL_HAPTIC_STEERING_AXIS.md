@@ -18,7 +18,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 This provides better compatibility across platforms and devices as SDL will
 guess the correct axis.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticDirection](SDL_HapticDirection)
 

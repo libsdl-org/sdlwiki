@@ -58,10 +58,11 @@ are undefined once this function returns.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_BuildAudioCVT](SDL_BuildAudioCVT)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

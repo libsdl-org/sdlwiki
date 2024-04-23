@@ -50,11 +50,12 @@ The returned surface is freed internally after calling
 
 This function is available since SDL 2.0.12.
 
-## See Also
+## Related Functions
 
 * [SDL_LockTexture](SDL_LockTexture)
 * [SDL_UnlockTexture](SDL_UnlockTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

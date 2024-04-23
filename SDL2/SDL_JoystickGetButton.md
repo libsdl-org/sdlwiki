@@ -30,10 +30,11 @@ Returns 1 if the specified button is pressed, 0 otherwise.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_JoystickNumButtons](SDL_JoystickNumButtons)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

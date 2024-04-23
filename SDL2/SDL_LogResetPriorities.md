@@ -22,11 +22,12 @@ This is called by [SDL_Quit](SDL_Quit)().
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
 * [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

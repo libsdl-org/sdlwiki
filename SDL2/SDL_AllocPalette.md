@@ -34,7 +34,7 @@ The palette entries are initialized to white.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreePalette](SDL_FreePalette)
 
@@ -79,4 +79,5 @@ palette = NULL;
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

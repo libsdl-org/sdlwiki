@@ -35,7 +35,7 @@ errors such as `Blit combination not supported` may occur.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FreeFormat](SDL_FreeFormat)
 
@@ -61,4 +61,5 @@ printf("Amount of bytes: %i\n", pixel_format->BytesPerPixel);
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -37,11 +37,12 @@ change the window size when the window is not fullscreen, use
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 * [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

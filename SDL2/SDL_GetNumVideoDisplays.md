@@ -23,10 +23,11 @@ Returns a number >= 1 or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

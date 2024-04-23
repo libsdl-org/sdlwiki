@@ -37,11 +37,12 @@ SDL_PauseAudioDevice(1, pause_on);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetAudioStatus](SDL_GetAudioStatus)
 * [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

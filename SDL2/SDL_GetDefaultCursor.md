@@ -27,10 +27,11 @@ value, but it is safe to do so.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

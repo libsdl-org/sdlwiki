@@ -1,0 +1,66 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+## Draft
+
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+# SDL_HINT_EMSCRIPTEN_ASYNCIFY
+
+Disable giving back control to the browser automatically when running with asyncify
+
+## Header File
+
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
+
+## Syntax
+
+```c
+#define SDL_HINT_EMSCRIPTEN_ASYNCIFY   "SDL_EMSCRIPTEN_ASYNCIFY"
+```
+
+## Remarks
+
+With -s ASYNCIFY, SDL2 calls emscripten_sleep during operations such as
+refreshing the screen or polling events.
+
+This hint only applies to the emscripten platform
+
+The variable can be set to the following values: "0" - Disable
+emscripten_sleep calls (if you give back browser control manually or use
+asyncify for other purposes) "1" - Enable emscripten_sleep calls (the
+default)
+
+## Code Examples
+
+To disable the default behavior:  
+```c++
+SDL_SetHint(SDL_HINT_EMSCRIPTEN_ASYNCIFY, "0");
+//...
+SDL_Init(SDL_INIT_EVERYTHING);
+```
+
+With the default ```SDL_HINT_EMSCRIPTEN_ASYNCIFY=1```, to optimize performance, you'll typically want to make asyncify only instrument functions in the call path:
+```
+emcc ... -s ASYNCIFY=1 -s ASYNCIFY_WHITELIST='["main", "call_path_to_your_main_loop", "SDL_WaitEvent", "SDL_WaitEventTimeout", "SDL_Delay", "SDL_RenderPresent", "GLES2_RenderPresent", "SDL_GL_SwapWindow", "Emscripten_GLES_SwapWindow", "byn$$fpcast-emu$$Emscripten_GLES_SwapWindow", "SDL_UpdateWindowSurface", "SDL_UpdateWindowSurfaceRects", "Emscripten_UpdateWindowFramebuffer"]'
+```
+
+If you get a ```RuntimeError: unreachable executed```, then check the !JavaScript console and its stack trace to identify the missing function.
+
+## Default
+
+SDL pauses the application and gives back control to the browser automatically when the application is compiled with [https://emscripten.org/docs/porting/asyncify.html asyncify] support, by calling [https://emscripten.org/docs/api_reference/emscripten.h.html#pseudo-synchronous-functions emscripten_sleep] when:
+
+* refreshing the software graphics context,
+* refreshing the GPU graphics context,
+* using [[SDL_Delay]],
+* polling events (through SDL_Delay), hence supporting [[SDL_WaitEvent]]
+
+The SDL application hence can be ported to the web browser without any code change to the main loop (no [https://emscripten.org/docs/api_reference/emscripten.h.html#c.emscripten_set_main_loop emscripten_set_main_loop]), at the cost of a reasonable performance hit.
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+<!-- #See the Style Guide for instructions on editing the footer. -->
+
+

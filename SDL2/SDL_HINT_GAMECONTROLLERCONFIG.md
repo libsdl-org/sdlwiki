@@ -1,0 +1,42 @@
+###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
+
+## Draft
+
+**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
+
+
+<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
+# SDL_HINT_GAMECONTROLLERCONFIG
+
+A variable that lets you manually hint extra gamecontroller db entries.
+
+## Header File
+
+Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h)
+
+## Syntax
+
+```c
+#define SDL_HINT_GAMECONTROLLERCONFIG "SDL_GAMECONTROLLERCONFIG"
+```
+
+## Remarks
+
+The variable should be newline delimited rows of gamecontroller config
+data, see [SDL_gamecontroller](SDL_gamecontroller).h
+
+This hint must be set before calling
+[SDL_Init](SDL_Init)([SDL_INIT_GAMECONTROLLER](SDL_INIT_GAMECONTROLLER))
+You can update mappings after the system is initialized with
+[SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)() and
+[SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)()
+
+## Default
+
+By default no extra gamecontroller db entries are specified.
+
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)
+<!-- #See the Style Guide for instructions on editing the footer. -->
+
+

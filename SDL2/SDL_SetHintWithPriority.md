@@ -39,7 +39,7 @@ Environment variables are considered to have override priority.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetHint](SDL_GetHint)
 * [SDL_SetHint](SDL_SetHint)

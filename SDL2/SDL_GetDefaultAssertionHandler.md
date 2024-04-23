@@ -31,10 +31,11 @@ provide a different function.
 
 This function is available since SDL 2.0.2.
 
-## See Also
+## Related Functions
 
 * [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

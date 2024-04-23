@@ -23,11 +23,12 @@ support or [SDL_FALSE](SDL_FALSE) if not.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_StartTextInput](SDL_StartTextInput)
 * [SDL_IsScreenKeyboardShown](SDL_IsScreenKeyboardShown)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

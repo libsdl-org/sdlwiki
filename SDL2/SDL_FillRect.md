@@ -43,10 +43,11 @@ on the intersection of the clip rectangle and `rect`.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_FillRects](SDL_FillRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -26,11 +26,12 @@ the backing CAMetalLayer, call [SDL_Metal_GetLayer](SDL_Metal_GetLayer)().
 
 This function is available since SDL 2.0.12.
 
-## See Also
+## Related Functions
 
 * [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
 * [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

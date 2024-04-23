@@ -52,7 +52,7 @@ not conflict with other code that also wants its own custom event types.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_PeepEvents](SDL_PeepEvents)
 * [SDL_PollEvent](SDL_PollEvent)
@@ -60,4 +60,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

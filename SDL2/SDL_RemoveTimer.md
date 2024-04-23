@@ -29,7 +29,7 @@ Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_AddTimer](SDL_AddTimer)
 
@@ -74,4 +74,5 @@ SDL_RemoveTimer(timerID);
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

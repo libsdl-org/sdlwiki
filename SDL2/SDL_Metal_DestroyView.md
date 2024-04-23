@@ -24,10 +24,11 @@ This should be called before [SDL_DestroyWindow](SDL_DestroyWindow), if
 
 This function is available since SDL 2.0.12.
 
-## See Also
+## Related Functions
 
 * [SDL_Metal_CreateView](SDL_Metal_CreateView)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

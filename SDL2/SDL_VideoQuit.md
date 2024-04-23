@@ -22,10 +22,11 @@ This function closes all windows, and restores the original video mode.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_VideoInit](SDL_VideoInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

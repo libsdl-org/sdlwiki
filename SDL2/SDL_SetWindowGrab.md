@@ -37,11 +37,12 @@ other window loses its grab in favor of the caller's window.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetGrabbedWindow](SDL_GetGrabbedWindow)
 * [SDL_GetWindowGrab](SDL_GetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

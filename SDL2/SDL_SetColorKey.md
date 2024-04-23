@@ -45,11 +45,12 @@ horizontal runs of transparent pixels. See
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_BlitSurface](SDL_BlitSurface)
 * [SDL_GetColorKey](SDL_GetColorKey)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

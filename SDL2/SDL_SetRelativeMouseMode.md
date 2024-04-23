@@ -39,10 +39,11 @@ This function will flush any pending mouse motion.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetRelativeMouseMode](SDL_GetRelativeMouseMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

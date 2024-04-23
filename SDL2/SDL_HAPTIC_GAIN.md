@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Device supports setting the global gain.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticSetGain](SDL_HapticSetGain)
 

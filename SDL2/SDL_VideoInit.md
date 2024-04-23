@@ -48,7 +48,7 @@ You can use [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)() and
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
 * [SDL_GetVideoDriver](SDL_GetVideoDriver)
@@ -57,4 +57,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

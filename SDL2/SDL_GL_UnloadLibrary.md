@@ -18,10 +18,11 @@ void SDL_GL_UnloadLibrary(void);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

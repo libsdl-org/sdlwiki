@@ -48,7 +48,7 @@ luck and you should not rely on it to work next time.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RenderClear](SDL_RenderClear)
 * [SDL_RenderDrawLine](SDL_RenderDrawLine)
@@ -64,4 +64,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

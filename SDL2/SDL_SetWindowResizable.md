@@ -35,10 +35,11 @@ You can't change the resizable state of a fullscreen window.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -46,10 +46,11 @@ https://www.khronos.org/opengl/wiki/Swap_Interval#Adaptive_Vsync
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GL_GetSwapInterval](SDL_GL_GetSwapInterval)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -18,7 +18,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 Condition haptic effect that simulates inertia. Effect is based on the axes
 acceleration.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticCondition](SDL_HapticCondition)
 

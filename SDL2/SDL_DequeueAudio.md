@@ -66,11 +66,12 @@ dequeueing; SDL handles locking internally for this function.
 
 This function is available since SDL 2.0.5.
 
-## See Also
+## Related Functions
 
 * [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 * [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

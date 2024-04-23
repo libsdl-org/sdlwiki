@@ -36,7 +36,7 @@ other dynamically loaded code.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_Init](SDL_Init)
 * [SDL_QuitSubSystem](SDL_QuitSubSystem)

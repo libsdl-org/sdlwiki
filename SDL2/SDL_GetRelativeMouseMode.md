@@ -23,10 +23,11 @@ Returns [SDL_TRUE](SDL_TRUE) if relative mode is enabled or
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetRelativeMouseMode](SDL_SetRelativeMouseMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

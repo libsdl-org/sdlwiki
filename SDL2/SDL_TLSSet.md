@@ -42,11 +42,12 @@ where its parameter `value` is what was passed as `value` to
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_TLSCreate](SDL_TLSCreate)
 * [SDL_TLSGet](SDL_TLSGet)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

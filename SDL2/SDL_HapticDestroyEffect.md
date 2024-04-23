@@ -31,10 +31,11 @@ destroyed when the device is closed.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_HapticNewEffect](SDL_HapticNewEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

@@ -46,7 +46,7 @@ If you need to write to a memory buffer, you should use
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_RWclose](SDL_RWclose)
 * [SDL_RWFromConstMem](SDL_RWFromConstMem)
@@ -59,4 +59,5 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

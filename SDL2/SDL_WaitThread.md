@@ -47,11 +47,12 @@ afterward.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_CreateThread](SDL_CreateThread)
 * [SDL_DetachThread](SDL_DetachThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

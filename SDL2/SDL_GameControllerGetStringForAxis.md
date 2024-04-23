@@ -34,10 +34,11 @@ The caller should not [SDL_free](SDL_free)() the returned string.
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GameControllerGetAxisFromString](SDL_GameControllerGetAxisFromString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

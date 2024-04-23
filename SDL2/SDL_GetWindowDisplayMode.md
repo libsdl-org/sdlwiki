@@ -31,11 +31,12 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 * [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 

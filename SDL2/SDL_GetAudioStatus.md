@@ -36,10 +36,11 @@ SDL_GetAudioDeviceStatus(1);
 
 This function is available since SDL 2.0.0.
 
-## See Also
+## Related Functions
 
 * [SDL_GetAudioDeviceStatus](SDL_GetAudioDeviceStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+
 
