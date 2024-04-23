@@ -108,7 +108,7 @@ You can see that this maps pretty closely to 1.2. The difference is that you can
 
 Extra credit for letting users specify a display for the window: SDL2 also allows you to manage systems with multiple monitors. Don't worry about that right now, though.
 
-So now that your window is back on the screen, let's talk strategy. SDL2 still has [[SDL_Surface]], but what you want, if possible, is the new [[SDL_Texture]]. Surfaces are always in system RAM now, and are always operated on by the CPU, so we want to get away from there. SDL2 has a new rendering API. It's meant for use by simple 2D games, but most notably, it's meant to get all that software rendering into video RAM and onto the GPU. And even if you just want to use it to get your software renderer's work to the screen, it brings some very nice benefits: if possible, it will use OpenGL or Direct3D behind the scenes, which means you'll get faster blits, a working Steam Overlay, and scaling for free.
+So now that your window is back on the screen, let's talk strategy. SDL2 still has [SDL_Surface](SDL_Surface), but what you want, if possible, is the new [SDL_Texture](SDL_Texture). Surfaces are always in system RAM now, and are always operated on by the CPU, so we want to get away from there. SDL2 has a new rendering API. It's meant for use by simple 2D games, but most notably, it's meant to get all that software rendering into video RAM and onto the GPU. And even if you just want to use it to get your software renderer's work to the screen, it brings some very nice benefits: if possible, it will use OpenGL or Direct3D behind the scenes, which means you'll get faster blits, a working Steam Overlay, and scaling for free.
 
 The setup looks like this.
 
