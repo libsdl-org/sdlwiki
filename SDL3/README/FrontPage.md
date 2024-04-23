@@ -7,7 +7,6 @@
 - [emscripten](emscripten)
 - [gdk](gdk)
 - [git](git)
-- [hg](hg)
 - [highdpi](highdpi)
 - [ios](ios)
 - [kmsbsd](kmsbsd)
