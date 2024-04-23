@@ -17,24 +17,6 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 Convenience macro.
 
-## Code Examples
-
-```c++
-const char *image_path = "myimage.bmp";
-SDL_Surface *image = SDL_LoadBMP(image_path);
-
-/* Let the user know if the file failed to load */
-if (!image) {
-    printf("Failed to load image at %s: %s\n", image_path, SDL_GetError());
-    return 1;
-}
-
-/* Do something with image here. */
-
-/* Make sure to eventually release the surface resource */
-SDL_FreeSurface(image);
-```
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySurface](CategorySurface)
 

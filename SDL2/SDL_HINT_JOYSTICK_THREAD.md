@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - A separate thread
-is not used (the default) "1" - A separate thread is used for handling raw
-input messages
+This variable can be set to the following values:
+
+- "0": A separate thread is not used (the default)
+- "1": A separate thread is used for handling raw input messages
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

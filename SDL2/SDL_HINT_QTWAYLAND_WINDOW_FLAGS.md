@@ -20,7 +20,11 @@ For example, on Sailfish OS "OverridesSystemGestures" disables swipe
 gestures.
 
 This variable is a space-separated list of the following values (empty = no
-flags): "OverridesSystemGestures", "StaysOnTop", "BypassWindowManager"
+flags):
+
+- "OverridesSystemGestures"
+- "StaysOnTop"
+- "BypassWindowManager"
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

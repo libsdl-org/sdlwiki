@@ -28,12 +28,14 @@ ignores it by default as well.
 
 This variable can be set to the following values:
 
-"truncate" - Use the number of samples to truncate the wave data if the
-fact chunk is present and valid "strict" - Like "truncate", but raise an
-error if the fact chunk is invalid, not present for non-PCM formats, or if
-the data chunk doesn't have that many samples "ignorezero" - Like
-"truncate", but ignore fact chunk if the number of samples is zero "ignore"
-- Ignore fact chunk entirely (default)
+- "truncate": Use the number of samples to truncate the wave data if the
+  fact chunk is present and valid
+- "strict": Like "truncate", but raise an error if the fact chunk is
+  invalid, not present for non-PCM formats, or if the data chunk doesn't
+  have that many samples
+- "ignorezero": Like "truncate", but ignore fact chunk if the number of
+  samples is zero
+- "ignore": Ignore fact chunk entirely (default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

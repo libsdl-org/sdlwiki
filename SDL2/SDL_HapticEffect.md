@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_HapticEffect
 
 The generic template for any haptic effect.
@@ -32,13 +28,13 @@ typedef union SDL_HapticEffect
 All values max at 32767 (0x7FFF). Signed values also can be negative. Time
 values unless specified otherwise are in milliseconds.
 
-You can also pass ::[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY) to length
+You can also pass [SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY) to length
 instead of a 0-32767 value. Neither delay, interval, attack_length nor
-fade_length support ::[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY). Fade will
+fade_length support [SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY). Fade will
 also not be used since effect never ends.
 
-Additionally, the ::[SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP) effect does not
-support a duration of ::[SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY).
+Additionally, the [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP) effect does not
+support a duration of [SDL_HAPTIC_INFINITY](SDL_HAPTIC_INFINITY).
 
 Button triggers may not be supported on all devices, it is advised to not
 use them if possible. Buttons start at index 1 instead of index 0 like the
@@ -49,6 +45,47 @@ otherwise both values are used.
 
 Common parts:
 
+```c
+ // Replay - All effects have this
+ Uint32 length;        // Duration of effect (ms).
+ Uint16 delay;         // Delay before starting effect.
+
+ // Trigger - All effects have this
+ Uint16 button;        // Button that triggers effect.
+ Uint16 interval;      // How soon before effect can be triggered again.
+
+ // Envelope - All effects except condition effects have this
+ Uint16 attack_length; // Duration of the attack (ms).
+ Uint16 attack_level;  // Level at the start of the attack.
+ Uint16 fade_length;   // Duration of the fade out (ms).
+ Uint16 fade_level;    // Level at the end of the fade.
+```
+
+Here we have an example of a constant effect evolution in time:
+
+```
+ Strength
+ ^
+ |
+ |    effect level -->  _________________
+ |                     /                 \
+ |                    /                   \
+ |                   /                     \
+ |                  /                       \
+ | attack_level --> |                        \
+ |                  |                        |  <---  fade_level
+ |
+ +--------------------------------------------------> Time
+                    [--]                 [---]
+                    attack_length        fade_length
+
+ [------------------][-----------------------]
+ delay               length
+```
+
+Note either the attack_level or the fade_level may be above the actual
+effect level.
+
 ## See Also
 
 * [SDL_HapticConstant](SDL_HapticConstant)
@@ -57,28 +94,6 @@ Common parts:
 * [SDL_HapticRamp](SDL_HapticRamp)
 * [SDL_HapticLeftRight](SDL_HapticLeftRight)
 * [SDL_HapticCustom](SDL_HapticCustom)
-
-
-## Data Fields
-
-|                                            |               |                                                                       |
-| ------------------------------------------ | ------------- | --------------------------------------------------------------------- |
-| Uint16                                     | **type**      | effect type; see [SDL_HapticPeriodic](SDL_HapticPeriodic) for details |
-| [SDL_HapticConstant](SDL_HapticConstant)   | **constant**  | constant effect; see Remarks for details                              |
-| [SDL_HapticPeriodic](SDL_HapticPeriodic)   | **periodic**  | periodic effect; see Remarks for details                              |
-| [SDL_HapticCondition](SDL_HapticCondition) | **condition** | condition effect; see Remarks for details                             |
-| [SDL_HapticRamp](SDL_HapticRamp)           | **ramp**      | ramp effect; see Remarks for details                                  |
-| [SDL_HapticLeftRight](SDL_HapticLeftRight) | **leftright** | left/right effect; see Remarks for details                            |
-| [SDL_HapticCustom](SDL_HapticCustom)       | **custom**    | custom effect; see Remarks for details                                |
-
-## Related Structures
-
-[SDL_HapticCondition](SDL_HapticCondition)
-[SDL_HapticConstant](SDL_HapticConstant)
-[SDL_HapticCustom](SDL_HapticCustom)
-[SDL_HapticLeftRight](SDL_HapticLeftRight)
-[SDL_HapticPeriodic](SDL_HapticPeriodic)
-[SDL_HapticRamp](SDL_HapticRamp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

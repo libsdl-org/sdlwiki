@@ -44,22 +44,6 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 * [SDL_VERSION](SDL_VERSION)
 * [SDL_GetVersion](SDL_GetVersion)
 
-
-## Data Fields
-
-|       |           |                             |                                 |
-| ----- | --------- | --------------------------- |
-| Uint8 | **major** | major version               |
-| Uint8 | **minor** | minor version               |
-| Uint8 | **patch** | update version (patchlevel) |
-
-## Related Macros
-
-- [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
-- [SDL_VERSION](SDL_VERSION)
-- [SDL_VERSIONNUM](SDL_VERSIONNUM)
-- [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVersion](CategoryVersion)
 

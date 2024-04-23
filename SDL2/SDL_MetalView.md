@@ -13,6 +13,10 @@ Defined in [SDL_metal.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 typedef void *SDL_MetalView;
 ```
 
+## Remarks
+
+This can be cast directly to an NSView or UIView.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

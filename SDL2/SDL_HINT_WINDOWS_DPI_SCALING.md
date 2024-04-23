@@ -27,12 +27,14 @@ Setting this to "1" implicitly requests process DPI awareness (setting
 [SDL_WINDOWS_DPI_AWARENESS](SDL_WINDOWS_DPI_AWARENESS) is unnecessary), and
 forces [SDL_WINDOW_ALLOW_HIGHDPI](SDL_WINDOW_ALLOW_HIGHDPI) on all windows.
 
-This variable can be set to the following values: "0" - SDL coordinates
-equal Windows coordinates. No automatic window resizing when dragging
-between monitors with different scale factors (unless this is performed by
-Windows itself, which is the case when the process is DPI unaware). "1" -
-SDL coordinates are in DPI-scaled points. Automatically resize windows as
-needed on displays with non-100% scale factors.
+This variable can be set to the following values:
+
+- "0": SDL coordinates equal Windows coordinates. No automatic window
+  resizing when dragging between monitors with different scale factors
+  (unless this is performed by Windows itself, which is the case when the
+  process is DPI unaware).
+- "1": SDL coordinates are in DPI-scaled points. Automatically resize
+  windows as needed on displays with non-100% scale factors.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

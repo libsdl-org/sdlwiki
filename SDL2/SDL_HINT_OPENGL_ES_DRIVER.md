@@ -35,9 +35,10 @@ run time using [SDL_GL_GetProcAddress](SDL_GL_GetProcAddress)().
 This variable is ignored on most platforms because OpenGL ES is native or
 not supported.
 
-This variable can be set to the following values: "0" - Use ES profile of
-OpenGL, if available. (Default when not set.) "1" - Load OpenGL ES library
-using the default library names.
+This variable can be set to the following values:
+
+- "0": Use ES profile of OpenGL, if available. (Default when not set.)
+- "1": Load OpenGL ES library using the default library names.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

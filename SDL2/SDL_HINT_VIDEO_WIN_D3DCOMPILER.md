@@ -20,14 +20,12 @@ use two different sets of binaries, those compiled by the user from source
 or those provided by the Chrome browser. In the later case, these binaries
 require that SDL loads a DLL providing the shader compiler.
 
-This variable can be set to the following values: "d3dcompiler_46.dll" -
-default, best for Vista or later. "d3dcompiler_43.dll" - for XP support.
-"none" - do not load any library, useful if you compiled ANGLE from source
-and included the compiler in your binaries.
+This variable can be set to the following values:
 
-## Default
-
-By default "d3dcompiler_46.dll" will be used.
+- "d3dcompiler_46.dll: default, best for Vista or later.
+- "d3dcompiler_43.dll: for XP support.
+- "none": do not load any library, useful if you compiled ANGLE from source
+  and included the compiler in your binaries.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

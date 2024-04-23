@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_Keycode
 
 The SDL virtual key representation.
@@ -26,22 +22,6 @@ SDLK_* constant for those keys that do not generate characters.
 
 A special exception is the number keys at the top of the keyboard which map
 to [SDLK_0](SDLK_0)...[SDLK_9](SDLK_9) on AZERTY layouts.
-
-## Code Examples
-
-```c
-  extern SDL_Event *event;
-
-  //checks if a key is being remapped and prints what the remapping is
-  if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym))
-    printf("Physical %s key acting as %s key",
-      SDL_GetScancodeName(event->key.keysym.scancode),
-      SDL_GetKeyName(event->key.keysym.sym));
-```
-
-## Related Enumerations
-
-[SDL_Scancode](SDL_Scancode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Warping the mouse
-will not generate a motion event in relative mode "1" - Warping the mouse
-will generate a motion event in relative mode
+This variable can be set to the following values:
+
+- "0": Warping the mouse will not generate a motion event in relative mode
+- "1": Warping the mouse will generate a motion event in relative mode
 
 By default warping the mouse will not generate motion events in relative
 mode. This avoids the application having to filter out large relative

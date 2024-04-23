@@ -15,9 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - HIDAPI driver is
-not used "1" - HIDAPI driver is used for Steam Controllers, which requires
-Bluetooth access and may prompt the user for permission on iOS and Android.
+This variable can be set to the following values:
+
+- "0": HIDAPI driver is not used
+- "1": HIDAPI driver is used for Steam Controllers, which requires
+  Bluetooth access and may prompt the user for permission on iOS and
+  Android.
 
 The default is "0"
 

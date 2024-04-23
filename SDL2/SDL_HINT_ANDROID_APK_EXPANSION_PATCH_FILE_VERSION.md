@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_HINT_ANDROID_APK_EXPANSION_PATCH_FILE_VERSION
 
 Android APK expansion patch file version.
@@ -33,10 +26,6 @@ internal storage and assets.
 
 By default this hint is not set and the APK expansion files are not
 searched.
-
-## Default
-
-By default this hint is not set.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

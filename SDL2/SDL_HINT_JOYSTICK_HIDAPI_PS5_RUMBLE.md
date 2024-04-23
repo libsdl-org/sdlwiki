@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - extended reports
-are not enabled (the default) "1" - extended reports
+This variable can be set to the following values:
+
+- "0": extended reports are not enabled (the default)
+- "1": extended reports
 
 Extended input reports allow rumble on Bluetooth PS5 controllers, but break
 DirectInput handling for applications that don't use SDL.

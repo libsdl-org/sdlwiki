@@ -20,9 +20,11 @@ issued if the text would be truncated otherwise. Additionally
 [SDL_TextInputEvent](SDL_TextInputEvent) will be dispatched multiple times
 so that it is not truncated.
 
-The variable can be set to the following values: "0" - Legacy behavior.
-Text can be truncated, no heap allocations. (default) "1" - Modern
-behavior.
+The variable can be set to the following values:
+
+- "0": Legacy behavior. Text can be truncated, no heap allocations.
+  (default)
+- "1": Modern behavior.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

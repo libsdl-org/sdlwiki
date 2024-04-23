@@ -17,9 +17,9 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 This variable can be set to the following values:
 
-"0" - You'll call [SDL_JoystickUpdate](SDL_JoystickUpdate)() manually "1" -
-SDL will automatically call [SDL_JoystickUpdate](SDL_JoystickUpdate)()
-(default)
+- "0": You'll call [SDL_JoystickUpdate](SDL_JoystickUpdate)() manually
+- "1": SDL will automatically call
+  [SDL_JoystickUpdate](SDL_JoystickUpdate)() (default)
 
 This hint can be toggled on and off at runtime.
 

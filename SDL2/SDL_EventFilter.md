@@ -44,14 +44,6 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 * [SDL_SetEventFilter](SDL_SetEventFilter)
 * [SDL_AddEventWatch](SDL_AddEventWatch)
 
-
-## Definition Parameters
-
-|              |                                                                                |
-| ------------ | ------------------------------------------------------------------------------ |
-| **userdata** | The data passed by the original call to [SDL_AddEventWatch](SDL_AddEventWatch) |
-| **event**    | The [SDL_Event](SDL_Event) representing the event                              |
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)
 

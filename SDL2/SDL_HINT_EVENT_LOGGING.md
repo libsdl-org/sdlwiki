@@ -18,9 +18,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 This variable can be set to the following values, from least to most
 verbose:
 
-"0" - Don't log any events (default) "1" - Log most events (other than the
-really spammy ones). "2" - Include mouse and finger motion events. "3" -
-Include [SDL_SysWMEvent](SDL_SysWMEvent) events.
+- "0": Don't log any events (default)
+- "1": Log most events (other than the really spammy ones).
+- "2": Include mouse and finger motion events.
+- "3": Include [SDL_SysWMEvent](SDL_SysWMEvent) events.
 
 This is generally meant to be used to debug SDL itself, but can be useful
 for application developers that need better visibility into what is going

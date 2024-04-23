@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Use GLX "1" - Use
-EGL
+This variable can be set to the following values:
+
+- "0": Use GLX
+- "1": Use EGL
 
 By default SDL will use GLX when both are present.
 

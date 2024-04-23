@@ -18,10 +18,6 @@ typedef enum SDL_TextureModulate
 } SDL_TextureModulate;
 ```
 
-## Related Structures
-
-[SDL_RendererInfo](SDL_RendererInfo)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender)
 

@@ -26,11 +26,17 @@ typedef struct SDL_AudioSpec
 
 ## Remarks
 
-For multi-channel audio, the default SDL channel mapping is: 2: FL FR
-(stereo) 3: FL FR LFE (2.1 surround) 4: FL FR BL BR (quad) 5: FL FR LFE BL
-BR (4.1 surround) 6: FL FR FC LFE SL SR (5.1 surround - last two can also
-be BL BR) 7: FL FR FC LFE BC SL SR (6.1 surround) 8: FL FR FC LFE BL BR SL
-SR (7.1 surround)
+For multi-channel audio, the default SDL channel mapping is:
+
+```
+2:  FL  FR                          (stereo)
+3:  FL  FR LFE                      (2.1 surround)
+4:  FL  FR  BL  BR                  (quad)
+5:  FL  FR LFE  BL  BR              (4.1 surround)
+6:  FL  FR  FC LFE  SL  SR          (5.1 surround - last two can also be BL BR)
+7:  FL  FR  FC LFE  BC  SL  SR      (6.1 surround)
+8:  FL  FR  FC LFE  BL  BR  SL  SR  (7.1 surround)
+```
 
 ## Code Examples
 
@@ -47,19 +53,6 @@ want.samples = 4096;
 want.callback = MyAudioCallback;  // you wrote this function elsewhere.
 dev = SDL_OpenAudioDevice(NULL, 0, &want, &have, SDL_AUDIO_ALLOW_FORMAT_CHANGE);
 ```
-
-## Data Fields
-
-|                                    |              |                                                                                     |
-| ---------------------------------- | ------------ | ----------------------------------------------------------------------------------- |
-| int                                | **freq**     | DSP frequency (samples per second); see Remarks for details                         |
-| [SDL_AudioFormat](SDL_AudioFormat) | **format**   | audio data format; see Remarks for details                                          |
-| Uint8                              | **channels** | number of separate sound channels: see Remarks for details                          |
-| Uint8                              | **silence**  | audio buffer silence value (calculated)                                             |
-| Uint16                             | **samples**  | audio buffer size in samples (power of 2); see Remarks for details                  |
-| Uint32                             | **size**     | audio buffer size in bytes (calculated)                                             |
-| SDL_AudioCallback                  | **callback** | the function to call when the audio device needs more data; see Remarks for details |
-| void*                              | **userdata** | a pointer that is passed to **callback** (otherwise ignored by SDL)                 |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryAudio](CategoryAudio)

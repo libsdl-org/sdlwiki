@@ -15,13 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Relative motion is
-unaffected by DPI or renderer's logical size "1" - Relative motion is
-scaled according to DPI scaling and logical size
+This variable can be set to the following values:
 
-By default relative mouse deltas are affected by DPI and renderer scaling
-
-## Default
+- "0": Relative motion is unaffected by DPI or renderer's logical size
+- "1": Relative motion is scaled according to DPI scaling and logical size
 
 By default relative mouse deltas are affected by DPI and renderer scaling
 

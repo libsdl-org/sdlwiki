@@ -15,10 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Only map hat axis
-inputs to digital hat outputs if the input axes appear to actually be
-digital (the default) "1" - Always handle the input axes numbered ABS_HAT0X
-to ABS_HAT3Y as digital hats
+This variable can be set to the following values:
+
+- "0": Only map hat axis inputs to digital hat outputs if the input axes
+  appear to actually be digital (the default)
+- "1": Always handle the input axes numbered ABS_HAT0X to ABS_HAT3Y as
+  digital hats
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

@@ -21,9 +21,11 @@ games), which warp the mouse to the centre of the screen rather than using
 relative mouse motion. Note that relative mouse mode may have different
 mouse acceleration behaviour than pointer warps.
 
-This variable can be set to the following values: "0" - All mouse warps
-fail, as mouse warping is not available under wayland. "1" - Some mouse
-warps will be emulated by forcing relative mouse mode.
+This variable can be set to the following values:
+
+- "0": All mouse warps fail, as mouse warping is not available under
+  wayland.
+- "1": Some mouse warps will be emulated by forcing relative mouse mode.
 
 If not set, this is automatically enabled unless an application uses
 relative mouse mode directly.

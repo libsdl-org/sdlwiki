@@ -30,9 +30,10 @@ doesn't support.
 
 This hint must be set before initializing the video subsystem.
 
-This variable can be set to the following values: "0" - SDL will allow
-usage of the KMSDRM backend without DRM master "1" - SDL Will require DRM
-master to use the KMSDRM backend (default)
+This variable can be set to the following values:
+
+- "0": SDL will allow usage of the KMSDRM backend without DRM master
+- "1": SDL Will require DRM master to use the KMSDRM backend (default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

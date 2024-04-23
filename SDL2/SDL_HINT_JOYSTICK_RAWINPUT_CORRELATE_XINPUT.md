@@ -15,10 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - RAWINPUT driver
-will only use data from raw input APIs "1" - RAWINPUT driver will also pull
-data from XInput, providing better trigger axes, guide button presses, and
-rumble support for Xbox controllers
+This variable can be set to the following values:
+
+- "0": RAWINPUT driver will only use data from raw input APIs
+- "1": RAWINPUT driver will also pull data from XInput, providing better
+  trigger axes, guide button presses, and rumble support for Xbox
+  controllers
 
 The default is "1". This hint applies to any joysticks opened after setting
 the hint.

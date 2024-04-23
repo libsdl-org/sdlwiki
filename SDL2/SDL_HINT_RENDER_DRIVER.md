@@ -20,15 +20,18 @@ specifies the name of the preferred renderer. If the preferred renderer
 can't be initialized, the normal default renderer is used.
 
 This variable is case insensitive and can be set to the following values:
-"direct3d" "direct3d11" "direct3d12" "opengl" "opengles2" "opengles"
-"metal" "software"
+
+- "direct3d"
+- "direct3d11"
+- "direct3d12"
+- "opengl"
+- "opengles2"
+- "opengles"
+- "metal"
+- "software"
 
 The default varies by platform, but it's the first one in the list that is
 available on the current platform.
-
-## Default
-
-By default the first one in the list that is available on the current platform is chosen.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

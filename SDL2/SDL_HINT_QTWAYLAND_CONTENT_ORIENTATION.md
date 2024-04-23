@@ -25,8 +25,13 @@ This does not cause the window to be rotated or resized, the application
 needs to take care of drawing the content in the right orientation (the
 framebuffer is always in portrait mode).
 
-This variable can be one of the following values: "primary" (default),
-"portrait", "landscape", "inverted-portrait", "inverted-landscape"
+This variable can be one of the following values:
+
+- "primary" (default)
+- "portrait"
+- "landscape"
+- "inverted-portrait"
+- "inverted-landscape"
 
 Since SDL 2.0.22 this variable accepts a comma-separated list of values
 above.

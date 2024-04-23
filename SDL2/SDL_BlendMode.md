@@ -33,10 +33,6 @@ typedef enum SDL_BlendMode
 } SDL_BlendMode;
 ```
 
-## Related Structures
-
-[SDL_RendererInfo](SDL_RendererInfo)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)
 

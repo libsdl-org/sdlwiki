@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_MessageBoxButtonFlags
 
 Flags for [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData).
@@ -23,10 +16,6 @@ typedef enum SDL_MessageBoxButtonFlags
     SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT = 0x00000002   /**< Marks the default button when escape is hit */
 } SDL_MessageBoxButtonFlags;
 ```
-
-## Related Structures
-
-[SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) 
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

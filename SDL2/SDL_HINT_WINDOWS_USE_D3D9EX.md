@@ -27,9 +27,11 @@ https://docs.microsoft.com/en-us/windows/win32/direct3darticles/graphics-apis-in
 -
 https://docs.microsoft.com/en-us/windows/win32/direct3darticles/direct3d-9ex-improvements
 
-This variable can be set to the following values: "0" - Use the original
-Direct3D 9 API (default) "1" - Use the Direct3D 9Ex API on Vista and later
-(and fall back if D3D9Ex is unavailable)
+This variable can be set to the following values:
+
+- "0": Use the original Direct3D 9 API (default)
+- "1": Use the Direct3D 9Ex API on Vista and later (and fall back if D3D9Ex
+  is unavailable)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

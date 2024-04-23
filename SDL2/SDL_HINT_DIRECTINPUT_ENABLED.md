@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-# SDL_HINT_ALLOW_TOPMOST
+# SDL_HINT_DIRECTINPUT_ENABLED
 
-If set to "0" then never set the top most bit on a SDL Window, even if the video mode expects it.
+A variable that lets you disable the detection and use of DirectInput gamepad devices
 
 ## Header File
 
@@ -10,18 +10,15 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ## Syntax
 
 ```c
-#define SDL_HINT_ALLOW_TOPMOST "SDL_ALLOW_TOPMOST"
+#define SDL_HINT_DIRECTINPUT_ENABLED "SDL_DIRECTINPUT_ENABLED"
 ```
 
 ## Remarks
 
-This is a debugging aid for developers and not expected to be used by end
-users. The default is "1"
+The variable can be set to the following values:
 
-This variable can be set to the following values:
-
-- "0": don't allow topmost
-- "1": allow topmost
+- "0": Disable DirectInput detection (only uses XInput)
+- "1": Enable DirectInput detection (the default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

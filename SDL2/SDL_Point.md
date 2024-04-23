@@ -79,18 +79,6 @@ int main(int argc, char *argv[]) {
 * [SDL_EnclosePoints](SDL_EnclosePoints)
 * [SDL_PointInRect](SDL_PointInRect)
 
-
-## Data Fields
-
-|     |       |                               |
-| --- | ----- | ----------------------------- |
-| int | **x** | the x coordinate of the point |
-| int | **y** | the y coordinate of the point |
-
-## Related Structures
-
-[SDL_Rect](SDL_Rect)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)
 

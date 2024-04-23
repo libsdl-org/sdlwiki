@@ -15,14 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Disable vsync "1" -
-Enable vsync
+This variable can be set to the following values:
+
+- "0": Disable vsync
+- "1": Enable vsync
 
 By default SDL does not sync screen surface updates with vertical refresh.
-
-## Default
-
-By default SDL uses the SDL_RENDERER_PRESENTVSYNC flag passed into [SDL_CreateRenderer](SDL_CreateRenderer)().
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

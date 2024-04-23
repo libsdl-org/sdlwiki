@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - No forcing (the
-default) "1" - Extra level of forcing
+This variable can be set to the following values:
+
+- "0": No forcing (the default)
+- "1": Extra level of forcing
 
 At present, this is only an issue under MS Windows, which makes it nearly
 impossible to programmatically move a window to the foreground, for

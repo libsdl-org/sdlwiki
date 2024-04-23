@@ -33,10 +33,6 @@ This variable can be set to the following values: The address (as a string
 [SDL_CreateWindowFrom](SDL_CreateWindowFrom)() should share a pixel format
 with.
 
-## Default
-
-By default this hint is not set.
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 <!-- #See the Style Guide for instructions on editing the footer. -->

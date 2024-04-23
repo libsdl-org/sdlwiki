@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-The variable can be set to the following values: "0" - Do not scan for
-Steam Controllers "1" - Scan for Steam Controllers (the default)
+The variable can be set to the following values:
+
+- "0": Do not scan for Steam Controllers
+- "1": Scan for Steam Controllers (the default)
 
 The default value is "1". This hint must be set before initializing the
 joystick subsystem.

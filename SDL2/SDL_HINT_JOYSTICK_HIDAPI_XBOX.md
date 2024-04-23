@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - HIDAPI driver is
-not used "1" - HIDAPI driver is used
+This variable can be set to the following values:
+
+- "0": HIDAPI driver is not used
+- "1": HIDAPI driver is used
 
 The default is "0" on Windows, otherwise the value of
 [SDL_HINT_JOYSTICK_HIDAPI](SDL_HINT_JOYSTICK_HIDAPI)

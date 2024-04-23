@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Return unfiltered
-joystick axis values (the default) "1" - Return axis values with deadzones
-taken into account
+This variable can be set to the following values:
+
+- "0": Return unfiltered joystick axis values (the default)
+- "1": Return axis values with deadzones taken into account
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

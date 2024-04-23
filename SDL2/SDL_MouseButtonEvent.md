@@ -12,42 +12,18 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_MouseButtonEvent
 {
-    Uint32 type;        /**< ::SDL_MOUSEBUTTONDOWN or ::SDL_MOUSEBUTTONUP */
+    Uint32 type;        /**< SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP */
     Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
     Uint32 windowID;    /**< The window with mouse focus, if any */
     Uint32 which;       /**< The mouse instance id, or SDL_TOUCH_MOUSEID */
     Uint8 button;       /**< The mouse button index */
-    Uint8 state;        /**< ::SDL_PRESSED or ::SDL_RELEASED */
+    Uint8 state;        /**< SDL_PRESSED or SDL_RELEASED */
     Uint8 clicks;       /**< 1 for single-click, 2 for double-click, etc. */
     Uint8 padding1;
     Sint32 x;           /**< X coordinate, relative to window */
     Sint32 y;           /**< Y coordinate, relative to window */
 } SDL_MouseButtonEvent;
 ```
-
-## Data Fields
-
-|        |               |                                                                      |
-| ------ | ------------- | -------------------------------------------------------------------- |
-| Uint32 | **type**      | the event type; SDL_MOUSEBUTTONDOWN or SDL_MOUSEBUTTONUP             |
-| Uint32 | **timestamp** | timestamp of the event                                               |
-| Uint32 | **windowID**  | the window with mouse focus, if any                                  |
-| Uint32 | **which**     | the mouse instance id, or SDL_TOUCH_MOUSEID; see Remarks for details |
-| Uint8  | **button**    | the button that changed; see Remarks for details                     |
-| Uint8  | **state**     | the state of the button; SDL_PRESSED or SDL_RELEASED                 |
-| Uint8  | **clicks**    | 1 for single-click, 2 for double-click, etc. (>= SDL 2.0.2)          |
-| Sint32 | **x**         | X coordinate, relative to window                                     |
-| Sint32 | **y**         | Y coordinate, relative to window                                     |
-
-## Related Enumerations
-
-[SDL_EventType](SDL_EventType)
-
-## Related Structures
-
-[SDL_Event](SDL_Event)
-[SDL_MouseMotionEvent](SDL_MouseMotionEvent)
-[SDL_MouseWheelEvent](SDL_MouseWheelEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

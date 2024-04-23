@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Only front touchpad
-should generate mouse events. Default "1" - Only back touchpad should
-generate mouse events. "2" - Both touchpads should generate mouse events.
+This variable can be set to the following values:
+
+- "0": Only front touchpad should generate mouse events. Default
+- "1": Only back touchpad should generate mouse events.
+- "2": Both touchpads should generate mouse events.
 
 By default SDL will generate mouse events for all touch devices
 

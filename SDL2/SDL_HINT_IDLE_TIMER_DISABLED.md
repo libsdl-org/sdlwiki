@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_HINT_IDLE_TIMER_DISABLED
 
 A variable controlling whether the idle timer is disabled on iOS.
@@ -28,12 +24,10 @@ As of SDL 2.0.4, [SDL_EnableScreenSaver](SDL_EnableScreenSaver)() and
 [SDL_DisableScreenSaver](SDL_DisableScreenSaver)() accomplish the same
 thing on iOS. They should be preferred over this hint.
 
-This variable can be set to the following values: "0" - Enable idle timer
-"1" - Disable idle timer
+This variable can be set to the following values:
 
-## Default
-
-By default the idle timer is enabled.
+- "0": Enable idle timer
+- "1": Disable idle timer
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

@@ -12,32 +12,17 @@ Defined in [SDL_keyboard.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/
 ```c
 typedef struct SDL_Keysym
 {
-    SDL_Scancode scancode;      /**< SDL physical key code - see ::SDL_Scancode for details */
-    SDL_Keycode sym;            /**< SDL virtual key code - see ::SDL_Keycode for details */
+    SDL_Scancode scancode;      /**< SDL physical key code - see SDL_Scancode for details */
+    SDL_Keycode sym;            /**< SDL virtual key code - see SDL_Keycode for details */
     Uint16 mod;                 /**< current key modifiers */
     Uint32 unused;
 } SDL_Keysym;
 ```
 
-## Data Fields
+## Remarks
 
-|                                            |                                                |                                                                     |
-| ------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------------- |
-| [SDL_Scancode](SDL_Scancode)               | **scancode**                                   | SDL physical key code; see [SDL_Scancode](SDL_Scancode) for details |
-| [SDL_Keycode](SDL_Keycode)                 | **sym**                                        | SDL virtual key code; see [SDL_Keycode](SDL_Keycode) for details    |
-| Uint16                                     | **mod**                                        | current key modifiers; see [SDL_Keymod](SDL_Keymod) for details     |
-| <span style="color:#808080;">Uint32</span> | <span style="color:#808080;">**unused**</span> |                                                                     |
-
-## Related Enumerations
-
-[SDL_Keycode](SDL_Keycode)
-[SDL_Keymod](SDL_Keymod)
-[SDL_Scancode](SDL_Scancode)
-
-## Related Structures
-
-[SDL_KeyboardEvent](SDL_KeyboardEvent)
-[SDL_TextInputEvent](SDL_TextInputEvent)
+If you are looking for translated character input, see the
+[SDL_TEXTINPUT](SDL_TEXTINPUT) event.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryKeyboard](CategoryKeyboard)

@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Use
-/dev/input/event* "1" - Use /dev/input/js*
+This variable can be set to the following values:
+
+- "0": Use /dev/input/event*
+- "1": Use /dev/input/js*
 
 By default the /dev/input/event* interfaces are used
 

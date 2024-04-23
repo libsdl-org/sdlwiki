@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_HINT_WINRT_PRIVACY_POLICY_URL
 
 A URL to a WinRT app's privacy policy
@@ -46,10 +39,6 @@ for displaying a privacy policy link, and as such,
 [SDL_HINT_WINRT_PRIVACY_POLICY_URL](SDL_HINT_WINRT_PRIVACY_POLICY_URL) will
 not get used on that platform. Network-enabled phone apps should display
 their privacy policy through some other, in-app means.
-
-## Default
-
-By default this hint is not set.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

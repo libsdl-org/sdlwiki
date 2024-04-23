@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_MessageBoxFlags
 
 [SDL_MessageBox](SDL_MessageBox) flags.
@@ -30,10 +23,6 @@ typedef enum SDL_MessageBoxFlags
 ## Remarks
 
 If supported will display warning icon, etc.
-
-## Related Structures
-
-[SDL_MessageBoxData](SDL_MessageBoxData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

@@ -20,15 +20,6 @@ typedef enum SDL_PowerState
 } SDL_PowerState;
 ```
 
-## Code Examples
-
-```c++
-if (SDL_GetPowerInfo(NULL, NULL) == SDL_POWERSTATE_ON_BATTERY) {
-    printf("You should plug in your laptop before running this update.\n");
-}
-```
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryPower](CategoryPower)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

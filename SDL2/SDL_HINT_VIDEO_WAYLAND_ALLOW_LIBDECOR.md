@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - libdecor use is
-disabled. "1" - libdecor use is enabled (default).
+This variable can be set to the following values:
+
+- "0": libdecor use is disabled.
+- "1": libdecor use is enabled (default).
 
 libdecor is used over xdg-shell when xdg-decoration protocol is
 unavailable.

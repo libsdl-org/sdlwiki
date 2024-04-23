@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_BlendFactor
 
 The normalized factor used to multiply pixel components
@@ -28,10 +24,6 @@ typedef enum SDL_BlendFactor
     SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA = 0xA   /**< 1-dstA, 1-dstA, 1-dstA, 1-dstA */
 } SDL_BlendFactor;
 ```
-
-## Related Enumerations
-
-[SDL_BlendOperation](SDL_BlendOperation)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)

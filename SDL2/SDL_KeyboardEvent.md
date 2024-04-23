@@ -12,35 +12,16 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_KeyboardEvent
 {
-    Uint32 type;        /**< ::SDL_KEYDOWN or ::SDL_KEYUP */
+    Uint32 type;        /**< SDL_KEYDOWN or SDL_KEYUP */
     Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
     Uint32 windowID;    /**< The window with keyboard focus, if any */
-    Uint8 state;        /**< ::SDL_PRESSED or ::SDL_RELEASED */
+    Uint8 state;        /**< SDL_PRESSED or SDL_RELEASED */
     Uint8 repeat;       /**< Non-zero if this is a key repeat */
     Uint8 padding2;
     Uint8 padding3;
     SDL_Keysym keysym;  /**< The key that was pressed or released */
 } SDL_KeyboardEvent;
 ```
-
-## Data Fields
-
-|                          |               |                                                                                |
-| ------------------------ | ------------- | ------------------------------------------------------------------------------ |
-| Uint32                   | **type**      | the event type; SDL_KEYDOWN or SDL_KEYUP                                       |
-| Uint32                   | **timestamp** | timestamp of the event                                                         |
-| Uint32                   | **windowID**  | the window with keyboard focus, if any                                         |
-| Uint8                    | **state**     | the state of the key; SDL_PRESSED or SDL_RELEASED                              |
-| Uint8                    | **repeat**    | non-zero if this is a key repeat                                               |
-| [SDL_Keysym](SDL_Keysym) | **keysym**    | the [SDL_Keysym](SDL_Keysym) representing the key that was pressed or released |
-
-## Related Enumerations
-
-[SDL_EventType](SDL_EventType)
-
-## Related Structures
-
-[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

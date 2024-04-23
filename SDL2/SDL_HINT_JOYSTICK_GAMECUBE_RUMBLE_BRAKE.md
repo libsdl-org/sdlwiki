@@ -20,9 +20,10 @@ Stop is implemented by setting "low_frequency_rumble" to "0" and
 StopHard is implemented by setting both "low_frequency_rumble" and
 "high_frequency_rumble" to "0"
 
-This variable can be set to the following values: "0" - Normal rumble
-behavior is behavior is used (default) "1" - Proper GameCube controller
-rumble behavior is used
+This variable can be set to the following values:
+
+- "0": Normal rumble behavior is behavior is used (default)
+- "1": Proper GameCube controller rumble behavior is used
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

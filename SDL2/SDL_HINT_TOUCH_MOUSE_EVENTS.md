@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Touch events will
-not generate mouse events "1" - Touch events will generate mouse events
+This variable can be set to the following values:
+
+- "0": Touch events will not generate mouse events
+- "1": Touch events will generate mouse events
 
 By default SDL will generate mouse events for touch events
 

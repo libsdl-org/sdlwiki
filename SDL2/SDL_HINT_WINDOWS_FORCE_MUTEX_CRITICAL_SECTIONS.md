@@ -20,9 +20,11 @@ better performance, allocate no kernel ressources and use less memory. SDL
 will fall back to Critical Sections on older OS versions or if forced to by
 this hint.
 
-This variable can be set to the following values: "0" - Use SRW Locks when
-available. If not, fall back to Critical Sections. (default) "1" - Force
-the use of Critical Sections in all cases.
+This variable can be set to the following values:
+
+- "0": Use SRW Locks when available. If not, fall back to Critical
+  Sections. (default)
+- "1": Force the use of Critical Sections in all cases.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

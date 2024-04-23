@@ -29,9 +29,10 @@ Note: This also affects keyboard events: with mnemonics enabled, when a
 menu is opened from the keyboard, you will not receive a KEYUP event for
 the mnemonic key, and *might* not receive one for Alt.
 
-This variable can be set to the following values: "0" - Alt+mnemonic does
-nothing, no beeping. (default) "1" - Alt+mnemonic opens menus, invalid
-mnemonics produce a beep.
+This variable can be set to the following values:
+
+- "0": Alt+mnemonic does nothing, no beeping. (default)
+- "1": Alt+mnemonic opens menus, invalid mnemonics produce a beep.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

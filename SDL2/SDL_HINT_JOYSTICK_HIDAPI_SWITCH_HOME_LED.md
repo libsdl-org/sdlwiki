@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - home button LED is
-turned off "1" - home button LED is turned on
+This variable can be set to the following values:
+
+- "0": home button LED is turned off
+- "1": home button LED is turned on
 
 By default the Home button LED state is not changed. This hint can also be
 set to a floating point value between 0.0 and 1.0 which controls the

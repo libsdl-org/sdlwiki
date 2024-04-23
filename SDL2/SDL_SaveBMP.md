@@ -18,23 +18,6 @@ Defined in [SDL_surface.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 Convenience macro.
 
-## Code Examples
-
-```c
-
-    /* ... */
-
-    SDL_Surface *sfc /* = ... */;
-
-    /* ... */
-  
-    if (SDL_SaveBMP(sfc, "somefile.bmp") != 0)
-    {
-        // Error saving bitmap
-        printf("SDL_SaveBMP failed: %s\n", SDL_GetError());
-    }
-```
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySurface](CategorySurface)
 

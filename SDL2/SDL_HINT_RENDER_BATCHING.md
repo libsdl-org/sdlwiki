@@ -17,9 +17,9 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 This variable can be set to the following values:
 
-"0" - Don't use batching to make rendering more efficient. "1" - Use
-batching, but might cause problems if app makes its own direct OpenGL
-calls.
+- "0": Don't use batching to make rendering more efficient.
+- "1": Use batching, but might cause problems if app makes its own direct
+  OpenGL calls.
 
 Up to SDL 2.0.9, the render API would draw immediately when requested. Now
 it batches up draw requests and sends them all to the GPU only when forced

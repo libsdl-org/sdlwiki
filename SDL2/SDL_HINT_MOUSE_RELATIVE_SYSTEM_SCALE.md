@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Relative mouse
-motion will be unscaled (the default) "1" - Relative mouse motion will be
-scaled using the system mouse acceleration curve.
+This variable can be set to the following values:
+
+- "0": Relative mouse motion will be unscaled (the default)
+- "1": Relative mouse motion will be scaled using the system mouse
+  acceleration curve.
 
 If
 [SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE](SDL_HINT_MOUSE_RELATIVE_SPEED_SCALE)

@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Disable poll
-sentinels "1" - Enable poll sentinels
+This variable can be set to the following values:
+
+- "0": Disable poll sentinels
+- "1": Enable poll sentinels
 
 When polling for events, [SDL_PumpEvents](SDL_PumpEvents) is used to gather
 new events from devices. If a device keeps producing new events between

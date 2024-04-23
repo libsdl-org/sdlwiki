@@ -21,9 +21,11 @@ Using that and atomics to implement semaphores increases performance. SDL
 will fall back to Kernel Objects on older OS versions or if forced to by
 this hint.
 
-This variable can be set to the following values: "0" - Use Atomics and
-WaitOnAddress API when available. If not, fall back to Kernel Objects.
-(default) "1" - Force the use of Kernel Objects in all cases.
+This variable can be set to the following values:
+
+- "0": Use Atomics and WaitOnAddress API when available. If not, fall back
+  to Kernel Objects. (default)
+- "1": Force the use of Kernel Objects in all cases.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

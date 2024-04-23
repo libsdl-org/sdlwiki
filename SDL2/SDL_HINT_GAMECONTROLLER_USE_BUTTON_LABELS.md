@@ -17,15 +17,25 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 For example, on Nintendo Switch controllers, normally you'd get:
 
-(Y) (X) (B) (A)
+```
+     (Y)
+ (X)     (B)
+     (A)
+```
 
 but if this hint is set, you'll get:
 
-(X) (Y) (A) (B)
+```
+     (X)
+ (Y)     (A)
+     (B)
+```
 
-The variable can be set to the following values: "0" - Report the face
-buttons by position, as though they were on an Xbox controller. "1" -
-Report the face buttons by label instead of position
+The variable can be set to the following values:
+
+- "0": Report the face buttons by position, as though they were on an Xbox
+  controller.
+- "1": Report the face buttons by label instead of position
 
 The default value is "1". This hint may be set at any time.
 

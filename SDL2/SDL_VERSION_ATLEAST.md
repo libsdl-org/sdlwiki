@@ -16,20 +16,6 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
      (SDL_MAJOR_VERSION > X || SDL_MINOR_VERSION > Y || SDL_PATCHLEVEL >= Z))
 ```
 
-## Code Examples
-
-```c++
-if (! SDL_VERSION_ATLEAST(2,0,0)) {
-    SDL_Log("SDL_VERSION %i is less than 2.0.0", SDL_MAJOR_VERSION);
-    return 1;
-}
-```
-
-## Related Macros
-
-[SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
-[SDL_VERSIONNUM](SDL_VERSIONNUM)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 

@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - HIDAPI driver is
-not used "1" - HIDAPI driver is used
+This variable can be set to the following values:
+
+- "0": HIDAPI driver is not used
+- "1": HIDAPI driver is used
 
 This driver doesn't work with the dolphinbar, so the default is
 [SDL_FALSE](SDL_FALSE) for now.

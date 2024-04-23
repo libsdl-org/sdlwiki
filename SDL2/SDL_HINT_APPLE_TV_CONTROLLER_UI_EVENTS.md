@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_HINT_APPLE_TV_CONTROLLER_UI_EVENTS
 
 A variable controlling whether controllers used with the Apple TV generate UI events.
@@ -30,13 +23,10 @@ More information about properly making use of controllers for the Apple TV
 can be found here:
 https://developer.apple.com/tvos/human-interface-guidelines/remote-and-controllers/
 
-This variable can be set to the following values: "0" - Controller input
-does not generate UI events (the default). "1" - Controller input generates
-UI events.
+This variable can be set to the following values:
 
-## Default
-
-By default controller input does not generate UI events.
+- "0": Controller input does not generate UI events (the default).
+- "1": Controller input generates UI events.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

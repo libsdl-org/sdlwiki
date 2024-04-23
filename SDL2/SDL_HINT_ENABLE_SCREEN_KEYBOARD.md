@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-The variable can be set to the following values: "0" - Do not show the
-on-screen keyboard "1" - Show the on-screen keyboard
+The variable can be set to the following values:
+
+- "0": Do not show the on-screen keyboard
+- "1": Show the on-screen keyboard
 
 The default value is "1". This hint must be set before text input is
 activated.

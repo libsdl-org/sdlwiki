@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Return digital hat
-values based on unfiltered input axis values "1" - Return digital hat
-values with deadzones on the input axes taken into account (the default)
+This variable can be set to the following values:
+
+- "0": Return digital hat values based on unfiltered input axis values
+- "1": Return digital hat values with deadzones on the input axes taken
+  into account (the default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

@@ -22,20 +22,6 @@ typedef struct SDL_FPoint
 * [SDL_EncloseFPoints](SDL_EncloseFPoints)
 * [SDL_PointInFRect](SDL_PointInFRect)
 
-
-## Data Fields
-
-|       |       |                               |
-| ----- | ----- | ----------------------------- |
-| float | **x** | the x coordinate of the point |
-| float | **y** | the y coordinate of the point |
-
-## Related Structures
-
-[SDL_Vertex](SDL_Vertex)
-[SDL_FRect](SDL_FRect)
-[SDL_Point](SDL_Point)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)
 

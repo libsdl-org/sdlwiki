@@ -19,17 +19,6 @@ typedef struct SDL_FRect
 } SDL_FRect;
 ```
 
-## Code Examples
-
-```c++
-SDL_FRect rect;
-
-rect.x = 0.0;
-rect.y = 0.0;
-rect.w = 32.0;
-rect.h = 32.0;
-```
-
 ## See Also
 
 * [SDL_FRectEmpty](SDL_FRectEmpty)
@@ -41,16 +30,6 @@ rect.h = 32.0;
 * [SDL_UnionFRect](SDL_UnionFRect)
 * [SDL_EncloseFPoints](SDL_EncloseFPoints)
 * [SDL_PointInFRect](SDL_PointInFRect)
-
-
-## Data Fields
-
-|       |       |                                                     |
-| ----- | ----- | --------------------------------------------------- |
-| float | **x** | the x location of the rectangle's upper left corner |
-| float | **y** | the y location of the rectangle's upper left corner |
-| float | **w** | the width of the rectangle                          |
-| float | **h** | the height of the rectangle                         |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - SDL will manage
-graphics contexts that are attached to windows. "1" - Disable graphics
-context management on windows.
+This variable can be set to the following values:
+
+- "0": SDL will manage graphics contexts that are attached to windows.
+- "1": Disable graphics context management on windows.
 
 By default SDL will manage OpenGL contexts in certain situations. For
 example, on Android the context will be automatically saved and restored

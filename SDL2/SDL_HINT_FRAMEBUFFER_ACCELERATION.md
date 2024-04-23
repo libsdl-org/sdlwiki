@@ -19,17 +19,15 @@ SDL can try to accelerate the SDL screen surface by using streaming
 textures with a 3D rendering engine. This variable controls whether and how
 this is done.
 
-This variable can be set to the following values: "0" - Disable 3D
-acceleration "1" - Enable 3D acceleration, using the default renderer. "X"
-- Enable 3D acceleration, using X where X is one of the valid rendering
-drivers. (e.g. "direct3d", "opengl", etc.)
+This variable can be set to the following values:
+
+- "0": Disable 3D acceleration
+- "1": Enable 3D acceleration, using the default renderer.
+- "X": Enable 3D acceleration, using X where X is one of the valid
+  rendering drivers. (e.g. "direct3d", "opengl", etc.)
 
 By default SDL tries to make a best guess for each platform whether to use
 acceleration or not.
-
-## Default
-
-By default SDL tries to make a best guess whether to use acceleration or not on each platform.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

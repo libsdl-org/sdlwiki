@@ -21,15 +21,21 @@ exists to let SDL know that the app is prepared to handle said
 restrictions.
 
 On Linux, SDL will apply the following configuration to any thread that
-becomes realtime: * The SCHED_RESET_ON_FORK bit will be set on the
-scheduling policy, * An RLIMIT_RTTIME budget will be configured to the
-rtkit specified limit. * Exceeding this limit will result in the kernel
-sending SIGKILL to the app, * Refer to the man pages for more information.
+becomes realtime:
 
-This variable can be set to the following values: "0" - default platform
-specific behaviour "1" - Force
-[SDL_THREAD_PRIORITY_TIME_CRITICAL](SDL_THREAD_PRIORITY_TIME_CRITICAL) to a
-realtime scheduling policy
+- The SCHED_RESET_ON_FORK bit will be set on the scheduling policy.
+- An RLIMIT_RTTIME budget will be configured to the rtkit specified limit.
+- Exceeding this limit will result in the kernel sending SIGKILL to the
+  app.
+
+Refer to the man pages for more information.
+
+This variable can be set to the following values:
+
+- "0": default platform specific behaviour
+- "1": Force
+  [SDL_THREAD_PRIORITY_TIME_CRITICAL](SDL_THREAD_PRIORITY_TIME_CRITICAL) to
+  a realtime scheduling policy
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

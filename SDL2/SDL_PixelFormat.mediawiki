@@ -38,19 +38,15 @@ typedef struct SDL_PixelFormat
 Everything in the pixel format structure is read-only.
 
 A pixel format has either a palette or masks. If a palette is used
-'''Rmask''', '''Gmask''', '''Bmask''', and '''Amask''' will be 0.
-
-<span id="bytesperpixel"></span> The data types used to represent pixels
-are as follows: {| |__Bytes Per Pixel__ |__Related Data Types__ |- |1
-|Uint8 |- |2 |Uint16 |- |3 |tuple of Uint8 RGB values |- |4 |Uint32 |}
+<code>Rmask</code>, <code>Gmask</code>, <code>Bmask</code>, and
+<code>Amask</code> will be 0.
 
 An [[SDL_PixelFormat]] describes the format of the pixel data stored at the
 <code>pixels</code> field of an [[SDL_Surface]]. Every surface stores an
 [[SDL_PixelFormat]] in the <code>format</code> field.
 
 If you wish to do pixel level modifications on a surface, then
-understanding how SDL stores its color information is essential. See
-[[#Code Examples|Code Examples]] above for more information.
+understanding how SDL stores its color information is essential.
 
 For information on modern pixel color spaces, see the following Wikipedia
 article: http://en.wikipedia.org/wiki/RGBA_color_space

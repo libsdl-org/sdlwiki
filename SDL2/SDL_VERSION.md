@@ -52,11 +52,6 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 * [SDL_version](SDL_version)
 * [SDL_GetVersion](SDL_GetVersion)
 
-
-## Related Structures
-
-[SDL_version](SDL_version)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 

@@ -15,9 +15,11 @@ Defined in [SDL_stdinc.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ## Remarks
 
-e.g. #define LOG_ERROR(X)
-OutputDebugString([SDL_STRINGIFY_ARG](SDL_STRINGIFY_ARG)(__FUNCTION__) ": "
-X "\n")
+e.g:
+
+```c
+#define LOG_ERROR(X) OutputDebugString(SDL_STRINGIFY_ARG(__FUNCTION__) ": " X "\n")
+```
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

@@ -15,10 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Dispatching OpenGL
-context updates will block the dispatching thread until the main thread
-finishes processing (default). "1" - Dispatching OpenGL context updates
-will allow the dispatching thread to continue execution.
+This variable can be set to the following values:
+
+- "0": Dispatching OpenGL context updates will block the dispatching thread
+  until the main thread finishes processing (default).
+- "1": Dispatching OpenGL context updates will allow the dispatching thread
+  to continue execution.
 
 Generally you want the default, but if you have OpenGL code in a background
 thread on a Mac, and the main thread hangs because it's waiting for that

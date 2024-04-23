@@ -18,7 +18,7 @@ typedef struct SDL_RWops
     Sint64 (SDLCALL * size) (struct SDL_RWops * context);
 
     /**
-     *  Seek to \c offset relative to \c whence, one of stdio's whence values:
+     *  Seek to `offset` relative to `whence`, one of stdio's whence values:
      *  RW_SEEK_SET, RW_SEEK_CUR, RW_SEEK_END
      *
      *  \return the final offset in the data stream, or -1 on error.
@@ -27,8 +27,8 @@ typedef struct SDL_RWops
                              int whence);
 
     /**
-     *  Read up to \c maxnum objects each of size \c size from the data
-     *  stream to the area pointed at by \c ptr.
+     *  Read up to `maxnum` objects each of size `size` from the data
+     *  stream to the area pointed at by `ptr`.
      *
      *  \return the number of objects read, or 0 at error or end of file.
      */
@@ -36,8 +36,8 @@ typedef struct SDL_RWops
                              size_t size, size_t maxnum);
 
     /**
-     *  Write exactly \c num objects each of size \c size from the area
-     *  pointed at by \c ptr to data stream.
+     *  Write exactly `num` objects each of size `size` from the area
+     *  pointed at by `ptr` to data stream.
      *
      *  \return the number of objects written, or 0 at error or end of file.
      */
@@ -95,44 +95,6 @@ typedef struct SDL_RWops
 
 } SDL_RWops;
 ```
-
-## Code Examples
-
-```c++
-SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
-if (io != NULL) {
-    char name[256];
-    if (io->read(io, name, sizeof (name), 1) > 0) {
-        printf("Hello, %s!\n", name);
-    }
-    io->close(io);
-}
-```
-
-The following is functionally identical to the above example, but uses the recommended macro interface.
-
-```c++
-SDL_RWops *io = SDL_RWFromFile("username.txt", "rb");
-if (io != NULL) {
-    char name[256];
-    if (SDL_RWread(io, name, sizeof (name), 1) > 0) {
-        printf("Hello, %s!\n", name);
-    }
-    SDL_RWclose(io);
-}
-```
-
-## Data Fields
-
-|                                                       |            |                                                  |
-| ----------------------------------------------------- | ---------- | ------------------------------------------------ |
-| Sint64 (*)(SDL_RWops *)                               | **size**   | callback that reports stream size; see Remarks   |
-| Sint64 (*)(SDL_RWops *, Sint64, int)                  | **seek**   | callback that seeks in stream; see Remarks       |
-| size_t (*)(SDL_RWops *, void *, size_t, size_t)       | **read**   | callback that reads from the stream; see Remarks |
-| size_t (*)(SDL_RWops *, const void *, size_t, size_t) | **write**  | callback that writes to the stream; see Remarks  |
-| int (*)(SDL_RWops *)                                  | **close**  | callback that closes the stream; see Remarks     |
-| Uint32                                                | **type**   | type of stream; see Remarks                      |
-| union                                                 | **hidden** | type-specific data; see Remarks                  |
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryIO](CategoryIO)

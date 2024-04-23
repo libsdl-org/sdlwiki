@@ -14,10 +14,19 @@ Defined in [SDL_version.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
     ((X)*1000 + (Y)*100 + (Z))
 ```
 
-## Related Macros
+## Remarks
 
-[SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
-[SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST)
+```
+(1,2,3) -> (1203)
+```
+
+This assumes that there will never be more than 100 patchlevels.
+
+In versions higher than 2.9.0, the minor version overflows into the
+thousands digit: for example, 2.23.0 is encoded as 4300, and 2.255.99 would
+be encoded as 25799.
+
+This macro will not be available in SDL 3.x.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)

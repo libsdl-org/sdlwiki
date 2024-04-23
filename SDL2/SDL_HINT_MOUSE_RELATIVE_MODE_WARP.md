@@ -15,12 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Relative mouse mode
-uses raw input "1" - Relative mouse mode uses mouse warping
+This variable can be set to the following values:
 
-By default SDL will use raw input for relative mouse mode
-
-## Default
+- "0": Relative mouse mode uses raw input
+- "1": Relative mouse mode uses mouse warping
 
 By default SDL will use raw input for relative mouse mode
 

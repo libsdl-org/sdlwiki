@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - It will be using
-VSYNC as defined in the main flag. Default "1" - If VSYNC was previously
-enabled, then it will disable VSYNC if doesn't reach enough speed
+This variable can be set to the following values:
+
+- "0": It will be using VSYNC as defined in the main flag. Default
+- "1": If VSYNC was previously enabled, then it will disable VSYNC if
+  doesn't reach enough speed
 
 By default SDL does not enable the automatic VSYNC
 

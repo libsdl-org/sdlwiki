@@ -15,10 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Left and right
-Joy-Con controllers will not be combined and each will be a mini-gamepad
-"1" - Left and right Joy-Con controllers will be combined into a single
-controller (the default)
+This variable can be set to the following values:
+
+- "0": Left and right Joy-Con controllers will not be combined and each
+  will be a mini-gamepad
+- "1": Left and right Joy-Con controllers will be combined into a single
+  controller (the default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

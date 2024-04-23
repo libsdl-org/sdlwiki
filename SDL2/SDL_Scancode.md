@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_Scancode
 
 The SDL keyboard scancode representation.
@@ -411,30 +407,12 @@ typedef enum SDL_Scancode
 ## Remarks
 
 Values of this type are used to represent keyboard keys, among other places
-in the \link [SDL_Keysym](SDL_Keysym)::scancode key.keysym.scancode
-\endlink field of the [SDL_Event](SDL_Event) structure.
+in the [SDL_Keysym](SDL_Keysym)::scancode key.keysym.scancode field of the
+[SDL_Event](SDL_Event) structure.
 
 The values in this enumeration are based on the USB usage page standard:
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 
-## Code Examples
-
-```c
-  extern SDL_Event *event;
-
-  /* checks if a key is being remapped and prints what the remapping is */
-  if (event->key.keysym.scancode != SDL_GetScancodeFromKey(event->key.keysym.sym)) {
-    SDL_Log("Physical %s key acting as %s key",
-      SDL_GetScancodeName(event->key.keysym.scancode),
-      SDL_GetKeyName(event->key.keysym.sym));
-  }
-```
-
-## Related Enumerations
-
-[SDL_Keycode](SDL_Keycode)
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
 

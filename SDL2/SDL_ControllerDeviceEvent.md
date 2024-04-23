@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGStructures for details on editing this page*^*^*^*^* -->
 # SDL_ControllerDeviceEvent
 
 Controller device event structure (event.cdevice.*)
@@ -19,27 +12,11 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_ControllerDeviceEvent
 {
-    Uint32 type;        /**< ::SDL_CONTROLLERDEVICEADDED, ::SDL_CONTROLLERDEVICEREMOVED, ::SDL_CONTROLLERDEVICEREMAPPED, or ::SDL_CONTROLLERSTEAMHANDLEUPDATED */
+    Uint32 type;        /**< SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED, or SDL_CONTROLLERSTEAMHANDLEUPDATED */
     Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
     Sint32 which;       /**< The joystick device index for the ADDED event, instance id for the REMOVED or REMAPPED event */
 } SDL_ControllerDeviceEvent;
 ```
-
-## Data Fields
-
-|        |               |                                                                                                                                                            |
-| ------ | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Uint32 | **type**      | SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED                                                                     |
-| Uint32 | **timestamp** | the timestamp of the event                                                                                                                                 |
-| Sint32 | **which**     | the joystick device index for the SDL_CONTROLLERDEVICEADDED event or instance id for the SDL_CONTROLLERDEVICEREMOVED or SDL_CONTROLLERDEVICEREMAPPED event |
-
-## Related Enumerations
-
-[SDL_EventType](SDL_EventType)
-
-## Related Structures
-
-[SDL_Event](SDL_Event)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents), [CategoryDraft](CategoryDraft)

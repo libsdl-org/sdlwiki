@@ -18,10 +18,6 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 If present, holding ctrl while left clicking will generate a right click
 event when on Mac.
 
-## Default
-
-By default holding ctrl while left clicking will not generate a right click event when on Mac.
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 <!-- #See the Style Guide for instructions on editing the footer. -->

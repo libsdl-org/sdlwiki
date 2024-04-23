@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - WGI is not used "1"
-- WGI is used (the default)
+This variable can be set to the following values:
+
+- "0": WGI is not used
+- "1": WGI is used (the default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

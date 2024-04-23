@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-The variable can be set to the following values: "0" - The return key will
-be handled as a key event. This is the behaviour of SDL <= 2.0.3. (default)
-"1" - The return key will hide the keyboard.
+The variable can be set to the following values:
+
+- "0": The return key will be handled as a key event. This is the behaviour
+  of SDL <= 2.0.3. (default)
+- "1": The return key will hide the keyboard.
 
 The value of this hint is used at runtime, so it can be changed at any
 time.

@@ -15,10 +15,12 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Mouse events will
-not generate touch events (default for desktop platforms) "1" - Mouse
-events will generate touch events (default for mobile platforms, such as
-Android and iOS)
+This variable can be set to the following values:
+
+- "0": Mouse events will not generate touch events (default for desktop
+  platforms)
+- "1": Mouse events will generate touch events (default for mobile
+  platforms, such as Android and iOS)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

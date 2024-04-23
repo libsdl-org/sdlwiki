@@ -15,26 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - The accelerometer
-is not listed as a joystick "1" - The accelerometer is available as a 3
-axis joystick (the default).
+This variable can be set to the following values:
 
-## Code Examples
-
-```c++
-#include "SDL.h"
-
-int main(int argc, char* argv[])
-{
-    // This disables the use of gyroscopes as axis device
-    SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");
-}
-
-```
-
-## Default
-
-By default SDL will list real joysticks along with the accelerometer as if it were a 3 axis joystick.
+- "0": The accelerometer is not listed as a joystick
+- "1": The accelerometer is available as a 3 axis joystick (the default).
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)

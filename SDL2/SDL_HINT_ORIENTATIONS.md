@@ -1,8 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_HINT_ORIENTATIONS
 
 A variable controlling which orientations are allowed on iOS/Android.
@@ -23,22 +19,11 @@ In some circumstances it is necessary to be able to explicitly control
 which UI orientations are allowed.
 
 This variable is a space delimited list of the following values:
-"LandscapeLeft", "LandscapeRight", "Portrait" "PortraitUpsideDown"
 
-## Code Examples
-
-```c++
-#include "SDL.h"
-
-int main(int argc, char* argv[])
-{
-    SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight");
-}
-```
-
-## Default
-
-By default all orientations are allowed.
+- "LandscapeLeft"
+- "LandscapeRight"
+- "Portrait"
+- "PortraitUpsideDown"
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

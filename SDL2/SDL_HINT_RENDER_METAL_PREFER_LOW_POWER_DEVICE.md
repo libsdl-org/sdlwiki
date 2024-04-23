@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Use the prefered OS
-device "1" - Select a low power one
+This variable can be set to the following values:
+
+- "0": Use the prefered OS device
+- "1": Select a low power one
 
 By default the prefered OS device is used.
 

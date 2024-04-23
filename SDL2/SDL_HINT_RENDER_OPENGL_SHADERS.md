@@ -15,12 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Disable shaders "1"
-- Enable shaders
+This variable can be set to the following values:
 
-By default shaders are used if OpenGL supports them.
-
-## Default
+- "0": Disable shaders
+- "1": Enable shaders
 
 By default shaders are used if OpenGL supports them.
 

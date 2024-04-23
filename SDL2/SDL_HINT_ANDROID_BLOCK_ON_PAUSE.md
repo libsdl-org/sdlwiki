@@ -15,8 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-The variable can be set to the following values: "0" - Non blocking. "1" -
-Blocking. (default)
+The variable can be set to the following values:
+
+- "0": Non blocking.
+- "1": Blocking. (default)
 
 The value should be set before SDL is initialized.
 

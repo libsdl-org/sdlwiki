@@ -20,9 +20,10 @@ be set in production applications, as other libraries used by the
 application might use dbus under the hood and this cause cause crashes if
 they continue after [SDL_Quit](SDL_Quit)().
 
-This variable can be set to the following values: "0" - SDL will not call
-dbus_shutdown() on quit (default) "1" - SDL will call dbus_shutdown() on
-quit
+This variable can be set to the following values:
+
+- "0": SDL will not call dbus_shutdown() on quit (default)
+- "1": SDL will call dbus_shutdown() on quit
 
 This hint is available since SDL 2.30.0.
 

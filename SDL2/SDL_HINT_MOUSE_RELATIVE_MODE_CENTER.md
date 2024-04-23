@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Relative mouse mode
-constrains the mouse to the window "1" - Relative mouse mode constrains the
-mouse to the center of the window
+This variable can be set to the following values:
+
+- "0": Relative mouse mode constrains the mouse to the window
+- "1": Relative mouse mode constrains the mouse to the center of the window
 
 Constraining to the center of the window works better for FPS games and
 when the application is running over RDP. Constraining to the whole window

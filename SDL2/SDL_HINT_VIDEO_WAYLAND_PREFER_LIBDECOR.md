@@ -19,9 +19,10 @@ When this hint is set, libdecor will be used to provide window decorations,
 even if xdg-decoration is available. (Note that, by default, libdecor will
 use xdg-decoration itself if available).
 
-This variable can be set to the following values: "0" - libdecor is enabled
-only if server-side decorations are unavailable. "1" - libdecor is always
-enabled if available.
+This variable can be set to the following values:
+
+- "0": libdecor is enabled only if server-side decorations are unavailable.
+- "1": libdecor is always enabled if available.
 
 libdecor is used over xdg-shell when xdg-decoration protocol is
 unavailable.

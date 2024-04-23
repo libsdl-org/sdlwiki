@@ -15,9 +15,11 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Left and right
-Joy-Con controllers will not be in vertical mode (the default) "1" - Left
-and right Joy-Con controllers will be in vertical mode
+This variable can be set to the following values:
+
+- "0": Left and right Joy-Con controllers will not be in vertical mode (the
+  default)
+- "1": Left and right Joy-Con controllers will be in vertical mode
 
 This hint must be set before calling
 [SDL_Init](SDL_Init)([SDL_INIT_GAMECONTROLLER](SDL_INIT_GAMECONTROLLER))

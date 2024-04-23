@@ -1,11 +1,4 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGEnumerations for details on editing this page*^*^*^*^* -->
 # SDL_HINT_XINPUT_ENABLED
 
 A variable that lets you disable the detection and use of Xinput gamepad devices
@@ -22,21 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-The variable can be set to the following values: "0" - Disable XInput
-detection (only uses direct input) "1" - Enable XInput detection (the
-default)
+The variable can be set to the following values:
 
-## Code Examples
-
-```c++
-SDL_SetHint(SDL_HINT_XINPUT_ENABLED, "0");
-//...
-SDL_Init(SDL_INIT_EVERYTHING);
-```
-
-## Default
-
-By default Xinput gamepad devices are detected.
+- "0": Disable XInput detection (only uses direct input)
+- "1": Enable XInput detection (the default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - The mouse is not
-captured while mouse buttons are pressed "1" - The mouse is captured while
-mouse buttons are pressed
+This variable can be set to the following values:
+
+- "0": The mouse is not captured while mouse buttons are pressed
+- "1": The mouse is captured while mouse buttons are pressed
 
 By default the mouse is captured while mouse buttons are pressed so if the
 mouse is dragged outside the window, the application continues to receive

@@ -12,7 +12,7 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_JoyAxisEvent
 {
-    Uint32 type;        /**< ::SDL_JOYAXISMOTION */
+    Uint32 type;        /**< SDL_JOYAXISMOTION */
     Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
     SDL_JoystickID which; /**< The joystick instance id */
     Uint8 axis;         /**< The joystick axis index */
@@ -23,27 +23,6 @@ typedef struct SDL_JoyAxisEvent
     Uint16 padding4;
 } SDL_JoyAxisEvent;
 ```
-
-## Data Fields
-
-|                |               |                                                           |
-| -------------- | ------------- | --------------------------------------------------------- |
-| Uint32         | **type**      | SDL_JOYAXISMOTION                                         |
-| Uint32         | **timestamp** | timestamp of the event                                    |
-| SDL_JoystickID | **which**     | the instance id of the joystick that reported the event   |
-| Uint8          | **axis**      | the index of the axis that changed                        |
-| Sint16         | **value**     | the current position of the axis (range: -32768 to 32767) |
-
-## Related Enumerations
-
-[SDL_EventType](SDL_EventType)
-
-## Related Structures
-
-[SDL_Event](SDL_Event)
-[SDL_JoyBallEvent](SDL_JoyBallEvent)
-[SDL_JoyButtonEvent](SDL_JoyButtonEvent)
-[SDL_JoyHatEvent](SDL_JoyHatEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

@@ -1,11 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_HapticCustom
 
-A structure containing a template for the ::[SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM) effect.
+A structure containing a template for the [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM) effect.
 
 ## Header File
 
@@ -17,7 +13,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 typedef struct SDL_HapticCustom
 {
     /* Header */
-    Uint16 type;            /**< ::SDL_HAPTIC_CUSTOM */
+    Uint16 type;            /**< SDL_HAPTIC_CUSTOM */
     SDL_HapticDirection direction;  /**< Direction of the effect. */
 
     /* Replay */
@@ -44,7 +40,7 @@ typedef struct SDL_HapticCustom
 
 ## Remarks
 
-This struct is exclusively for the ::[SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
+This struct is exclusively for the [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
 effect.
 
 A custom force feedback effect is much like a periodic effect, where the
@@ -58,36 +54,6 @@ Otherwise it uses the samples in data for the different axes.
 
 * [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
 * [SDL_HapticEffect](SDL_HapticEffect)
-
-
-## Data Fields
-
-|                                            |                   |                                                                        |
-| ------------------------------------------ | ----------------- | ---------------------------------------------------------------------- |
-|                                            |                   | <bgcolor="#EDEDED">''Header''                                          |
-| Uint16                                     | **type**          | SDL_HAPTIC_CUSTOM                                                      |
-| [SDL_HapticDirection](SDL_HapticDirection) | **direction**     | direction of the effect (relative to the user)                         |
-|                                            |                   | <bgcolor="#EDEDED">''Replay''                                          |
-| Uint32                                     | **length**        | duration of the effect                                                 |
-| Uint16                                     | **delay**         | delay before starting the effect                                       |
-|                                            |                   | <bgcolor="#EDEDED">''Trigger''                                         |
-| Uint16                                     | **button**        | button that triggers the effect                                        |
-| Uint16                                     | **interval**      | how soon it can be triggered again after **button**                    |
-|                                            |                   | <bgcolor="#EDEDED">''Custom''                                          |
-| Uint8                                      | **channels**      | axes to use, minimum of 1; see Remarks for details                     |
-| Uint16                                     | **period**        | sample periods                                                         |
-| Uint16                                     | **samples**       |  amount (number) of samples                                            |
-| Uint16*                                    | **data**          | should contain **channels*****samples** items; see Remarks for details |
-|                                            |                   | <bgcolor="#EDEDED">''Envelope''                                        |
-| Uint16                                     | **attack_length** | duration of the attack                                                 |
-| Uint16                                     | **attack_level**  | level at the start of the attack                                       |
-| Uint16                                     | **fade_length**   | duration of the fade                                                   |
-| Uint16                                     | **fade_level**    | level at the end of the fade                                           |
-
-## Related Structures
-
-[SDL_HapticDirection](SDL_HapticDirection)
-[SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

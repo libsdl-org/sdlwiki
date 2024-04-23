@@ -46,16 +46,6 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 * [SDL_UnionRect](SDL_UnionRect)
 * [SDL_EnclosePoints](SDL_EnclosePoints)
 
-
-## Data Fields
-
-|     |       |                                                     |
-| --- | ----- | --------------------------------------------------- |
-| int | **x** | the x location of the rectangle's upper left corner |
-| int | **y** | the y location of the rectangle's upper left corner |
-| int | **w** | the width of the rectangle                          |
-| int | **h** | the height of the rectangle                         |
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)
 

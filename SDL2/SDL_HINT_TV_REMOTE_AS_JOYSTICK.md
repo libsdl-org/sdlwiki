@@ -15,9 +15,10 @@ Defined in [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 
 ## Remarks
 
-This variable can be set to the following values: "0" - Remotes send
-enter/escape/arrow key events "1" - Remotes are available as 2 axis, 2
-button joysticks (the default).
+This variable can be set to the following values:
+
+- "0": Remotes send enter/escape/arrow key events
+- "1": Remotes are available as 2 axis, 2 button joysticks (the default).
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

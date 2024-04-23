@@ -21,10 +21,10 @@ decodes until the first incomplete block, as most applications seem to do.
 
 This variable can be set to the following values:
 
-"verystrict" - Raise an error if the file is truncated "strict" - Like
-"verystrict", but the size of the RIFF chunk is ignored "dropframe" -
-Decode until the first incomplete sample frame "dropblock" - Decode until
-the first incomplete block (default)
+- "verystrict": Raise an error if the file is truncated
+- "strict": Like "verystrict", but the size of the RIFF chunk is ignored
+- "dropframe": Decode until the first incomplete sample frame
+- "dropblock": Decode until the first incomplete block (default)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

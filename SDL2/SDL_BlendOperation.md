@@ -20,10 +20,6 @@ typedef enum SDL_BlendOperation
 } SDL_BlendOperation;
 ```
 
-## Related Enumerations
-
-[SDL_BlendFactor](SDL_BlendFactor)
-
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)
 

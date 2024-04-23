@@ -21,11 +21,12 @@ reliably. If set to true, the back button will show up as an
 [SDL_KEYDOWN](SDL_KEYDOWN) / [SDL_KEYUP](SDL_KEYUP) pair with a keycode of
 [SDL_SCANCODE_AC_BACK](SDL_SCANCODE_AC_BACK).
 
-The variable can be set to the following values: "0" - Back button will be
-handled as usual for system. (default) "1" - Back button will be trapped,
-allowing you to handle the key press manually. (This will also let right
-mouse click work on systems where the right mouse button functions as
-back.)
+The variable can be set to the following values:
+
+- "0": Back button will be handled as usual for system. (default)
+- "1": Back button will be trapped, allowing you to handle the key press
+  manually. (This will also let right mouse click work on systems where the
+  right mouse button functions as back.)
 
 The value of this hint is used at runtime, so it can be changed at any
 time.

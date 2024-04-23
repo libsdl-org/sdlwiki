@@ -12,27 +12,13 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_SensorEvent
 {
-    Uint32 type;        /**< ::SDL_SENSORUPDATE */
+    Uint32 type;        /**< SDL_SENSORUPDATE */
     Uint32 timestamp;   /**< In milliseconds, populated using SDL_GetTicks() */
     Sint32 which;       /**< The instance ID of the sensor */
     float data[6];      /**< Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData() */
     Uint64 timestamp_us; /**< The timestamp of the sensor reading in microseconds, if the hardware provides this information. */
 } SDL_SensorEvent;
 ```
-
-## Data Fields
-
-|          |               |                                                                                             |
-| -------- | ------------- | ------------------------------------------------------------------------------------------- |
-| Uint32   | **type**      | SDL_SENSORUPDATE                                                                            |
-| Uint32   | **timestamp** | In milliseconds, populated using SDL_GetTicks()                                             |
-| Sint32   | **which**     | The instance ID of the sensor                                                               |
-| float[6] | **data**      | Up to 6 values from the sensor - additional values can be queried using SDL_SensorGetData() |
-
-## Related Enumerations
-
-[SDL_EventType](SDL_EventType)
-[SDL_SensorType](SDL_SensorType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)

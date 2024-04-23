@@ -28,15 +28,17 @@ coordinate = 1 pixel even on high-DPI displays.
 For more information, see:
 https://docs.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows
 
-This variable can be set to the following values: "" - Do not change the
-DPI awareness (default). "unaware" - Declare the process as DPI unaware.
-(Windows 8.1 and later). "system" - Request system DPI awareness. (Vista
-and later). "permonitor" - Request per-monitor DPI awareness. (Windows 8.1
-and later). "permonitorv2" - Request per-monitor V2 DPI awareness. (Windows
-10, version 1607 and later). The most visible difference from "permonitor"
-is that window title bar will be scaled to the visually correct size when
-dragging between monitors with different scale factors. This is the
-preferred DPI awareness level.
+This variable can be set to the following values:
+
+- "": Do not change the DPI awareness (default).
+- "unaware": Declare the process as DPI unaware. (Windows 8.1 and later).
+- "system": Request system DPI awareness. (Vista and later).
+- "permonitor": Request per-monitor DPI awareness. (Windows 8.1 and later).
+- "permonitorv2": Request per-monitor V2 DPI awareness. (Windows 10,
+  version 1607 and later). The most visible difference from "permonitor" is
+  that window title bar will be scaled to the visually correct size when
+  dragging between monitors with different scale factors. This is the
+  preferred DPI awareness level.
 
 If the requested DPI awareness is not available on the currently running
 OS, SDL will try to request the best available match.

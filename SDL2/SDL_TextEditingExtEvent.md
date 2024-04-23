@@ -12,7 +12,7 @@ Defined in [SDL_events.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 typedef struct SDL_TextEditingExtEvent
 {
-    Uint32 type;                                /**< ::SDL_TEXTEDITING_EXT */
+    Uint32 type;                                /**< SDL_TEXTEDITING_EXT */
     Uint32 timestamp;                           /**< In milliseconds, populated using SDL_GetTicks() */
     Uint32 windowID;                            /**< The window with keyboard focus, if any */
     char* text;                                 /**< The editing text, which should be freed with SDL_free(), and will not be NULL */

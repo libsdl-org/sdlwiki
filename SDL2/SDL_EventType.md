@@ -125,7 +125,7 @@ typedef enum SDL_EventType
     /* Internal events */
     SDL_POLLSENTINEL = 0x7F00, /**< Signals the end of an event poll cycle */
 
-    /** Events ::SDL_USEREVENT through ::SDL_LASTEVENT are for your use,
+    /** Events SDL_USEREVENT through SDL_LASTEVENT are for your use,
      *  and should be allocated with SDL_RegisterEvents()
      */
     SDL_USEREVENT    = 0x8000,
@@ -136,43 +136,6 @@ typedef enum SDL_EventType
     SDL_LASTEVENT    = 0xFFFF
 } SDL_EventType;
 ```
-
-## Code Examples
-
-```c++
-SDL_Event e;
-while (SDL_PollEvent(&e)) {
-    if (e.type == SDL_KEYDOWN) {
-        SDL_Log("User just pressed down a key!");
-    }
-}
-```
-
-## Related Structures
-
-: [SDL_JoyAxisEvent](SDL_JoyAxisEvent)
-: [SDL_JoyBallEvent](SDL_JoyBallEvent)
-: [SDL_JoyButtonEvent](SDL_JoyButtonEvent)
-: [SDL_JoyHatEvent](SDL_JoyHatEvent)
-: [SDL_JoyDeviceEvent](SDL_JoyDeviceEvent)
-: [SDL_ControllerAxisEvent](SDL_ControllerAxisEvent)
-: [SDL_ControllerButtonEvent](SDL_ControllerButtonEvent)
-: [SDL_ControllerDeviceEvent](SDL_ControllerDeviceEvent)
-: [SDL_KeyboardEvent](SDL_KeyboardEvent)
-: [SDL_MouseButtonEvent](SDL_MouseButtonEvent)
-: [SDL_MouseMotionEvent](SDL_MouseMotionEvent)
-: [SDL_MouseWheelEvent](SDL_MouseWheelEvent)
-: [SDL_QuitEvent](SDL_QuitEvent)
-: [SDL_SysWMEvent](SDL_SysWMEvent)
-: [SDL_TextEditingEvent](SDL_TextEditingEvent)
-: [SDL_TextInputEvent](SDL_TextInputEvent)
-: [SDL_UserEvent](SDL_UserEvent)
-: [SDL_WindowEvent](SDL_WindowEvent)
-: [SDL_DropEvent](SDL_DropEvent)
-: [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
-: [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
-: [SDL_DollarGestureEvent](SDL_DollarGestureEvent)
-: [SDL_MultiGestureEvent](SDL_MultiGestureEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryEvents](CategoryEvents)
