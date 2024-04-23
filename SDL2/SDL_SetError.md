@@ -42,7 +42,7 @@ if (error_code) {
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ClearError](SDL_ClearError)
 * [SDL_GetError](SDL_GetError)

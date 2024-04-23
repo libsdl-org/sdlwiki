@@ -44,7 +44,7 @@ other window loses its grab in favor of the caller's window.
 
 This function is available since SDL 2.0.16.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowKeyboardGrab](SDL_GetWindowKeyboardGrab)
 * [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
@@ -52,5 +52,4 @@ This function is available since SDL 2.0.16.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -24,11 +24,10 @@ void SDL_GameControllerClose(SDL_GameController *gamecontroller);
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerOpen](SDL_GameControllerOpen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

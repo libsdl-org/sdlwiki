@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_EnclosePoints](SDL_EnclosePoints)
 * [SDL_PointInRect](SDL_PointInRect)

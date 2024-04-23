@@ -27,11 +27,10 @@ should be called at the end of execution to avoid memory leaks.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_hid_init](SDL_hid_init)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

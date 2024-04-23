@@ -54,7 +54,7 @@ yourself. Data should consist of channels * samples Uint16 samples.
 If channels is one, the effect is rotated using the defined direction.
 Otherwise it uses the samples in data for the different axes.
 
-## Related Functions
+## See Also
 
 * [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
 * [SDL_HapticEffect](SDL_HapticEffect)

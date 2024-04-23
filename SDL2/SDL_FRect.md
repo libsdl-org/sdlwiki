@@ -30,7 +30,7 @@ rect.w = 32.0;
 rect.h = 32.0;
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_FRectEmpty](SDL_FRectEmpty)
 * [SDL_FRectEquals](SDL_FRectEquals)

@@ -38,7 +38,7 @@ Returns 0 on success, or -1 on error.
 
 This function is available since SDL 2.0.7.
 
-## Related Functions
+## See Also
 
 * [SDL_AudioStreamPut](SDL_AudioStreamPut)
 * [SDL_AudioStreamGet](SDL_AudioStreamGet)
@@ -49,5 +49,4 @@ This function is available since SDL 2.0.7.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

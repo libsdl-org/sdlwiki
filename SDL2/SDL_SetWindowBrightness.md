@@ -43,12 +43,11 @@ something similar.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowBrightness](SDL_GetWindowBrightness)
 * [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

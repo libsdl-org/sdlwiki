@@ -34,11 +34,10 @@ headers, but it can be safely cast to a `CAMetalLayer *`.
 
 This function is available since SDL 2.0.8.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGetMetalCommandEncoder](SDL_RenderGetMetalCommandEncoder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

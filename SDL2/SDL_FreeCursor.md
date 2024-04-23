@@ -31,7 +31,7 @@ Use this function to free cursor resources created with
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateColorCursor](SDL_CreateColorCursor)
 * [SDL_CreateCursor](SDL_CreateCursor)
@@ -39,5 +39,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

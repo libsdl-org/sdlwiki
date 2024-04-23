@@ -41,7 +41,7 @@ to [`SDL_HAPTIC_INFINITY`](SDL_HAPTIC_INFINITY) instead.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
 * [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
@@ -49,5 +49,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

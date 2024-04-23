@@ -31,11 +31,10 @@ This functions is also accessible using the macro
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_iPhoneSetAnimationCallback](SDL_iPhoneSetAnimationCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -26,8 +26,6 @@ defined as follows:
 
 This assumes that the source and destination rectangles are the same size.
 If either \c srcrect or \c dstrect are NULL, the entire surface (\c src or
-\c dst) is copied. The final blit rectangles are saved in \c srcrect and \c
-dstrect after all clipping is performed.
 
 ## Code Examples
 

@@ -29,11 +29,10 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

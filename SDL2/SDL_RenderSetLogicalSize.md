@@ -47,11 +47,10 @@ backend, it will be handled using the appropriate quality hints.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

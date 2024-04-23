@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_AudioStreamGet
 
-Get converted/resampled data from the stream 
+Get converted/resampled data from the stream
 
 ## Header File
 
@@ -30,7 +30,7 @@ Returns the number of bytes read from the stream, or -1 on error
 
 This function is available since SDL 2.0.7.
 
-## Related Functions
+## See Also
 
 * [SDL_NewAudioStream](SDL_NewAudioStream)
 * [SDL_AudioStreamPut](SDL_AudioStreamPut)
@@ -41,5 +41,4 @@ This function is available since SDL 2.0.7.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

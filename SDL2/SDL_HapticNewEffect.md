@@ -31,7 +31,7 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
 * [SDL_HapticRunEffect](SDL_HapticRunEffect)
@@ -39,5 +39,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

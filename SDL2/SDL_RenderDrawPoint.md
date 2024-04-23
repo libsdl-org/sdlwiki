@@ -38,7 +38,7 @@ instead.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderDrawLine](SDL_RenderDrawLine)
 * [SDL_RenderDrawLines](SDL_RenderDrawLines)
@@ -53,5 +53,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

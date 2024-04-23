@@ -36,11 +36,10 @@ normally use [SDL_Init](SDL_Init)() or
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AudioQuit](SDL_AudioQuit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -34,12 +34,11 @@ The `displayIndex` needs to be in the range from 0 to
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayMode](SDL_GetDisplayMode)
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -37,12 +37,11 @@ created and do not rely solely on
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticNumEffectsPlaying](SDL_HapticNumEffectsPlaying)
 * [SDL_HapticQuery](SDL_HapticQuery)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

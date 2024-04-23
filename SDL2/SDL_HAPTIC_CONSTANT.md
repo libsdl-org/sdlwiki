@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Constant haptic effect.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticCondition](SDL_HapticCondition)
 

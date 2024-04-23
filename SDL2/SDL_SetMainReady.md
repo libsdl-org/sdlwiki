@@ -25,7 +25,7 @@ define [SDL_MAIN_HANDLED](SDL_MAIN_HANDLED) before including SDL.h.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Init](SDL_Init)
 

@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GetTextureUserData
 
-Get the user-specified pointer associated with a texture 
+Get the user-specified pointer associated with a texture
 
 ## Header File
 
@@ -29,11 +29,10 @@ not valid.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_SetTextureUserData](SDL_SetTextureUserData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

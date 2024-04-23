@@ -39,7 +39,7 @@ int MyEventFunction(void *userdata, SDL_Event *event) {
 SDL_AddEventWatch(MyEventFunction, NULL);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_SetEventFilter](SDL_SetEventFilter)
 * [SDL_AddEventWatch](SDL_AddEventWatch)

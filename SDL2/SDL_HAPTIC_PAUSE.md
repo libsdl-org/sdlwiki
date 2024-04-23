@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Devices supports being paused.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticPause](SDL_HapticPause)
 * [SDL_HapticUnpause](SDL_HapticUnpause)

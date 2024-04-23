@@ -42,12 +42,11 @@ integer scaling factors.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderGetScale](SDL_RenderGetScale)
 * [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

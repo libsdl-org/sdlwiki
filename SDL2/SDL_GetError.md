@@ -49,7 +49,7 @@ application.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ClearError](SDL_ClearError)
 * [SDL_SetError](SDL_SetError)

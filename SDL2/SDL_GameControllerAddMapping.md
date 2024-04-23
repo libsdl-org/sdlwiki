@@ -46,12 +46,11 @@ This string shows an example of a valid mapping for a controller:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerMapping](SDL_GameControllerMapping)
 * [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

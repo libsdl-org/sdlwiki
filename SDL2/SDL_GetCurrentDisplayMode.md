@@ -37,7 +37,7 @@ return the current display mode, and not the previous native display mode.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
 * [SDL_GetDisplayMode](SDL_GetDisplayMode)
@@ -46,5 +46,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

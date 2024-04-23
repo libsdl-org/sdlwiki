@@ -41,11 +41,10 @@ the conversion wasn't possible.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_PixelFormatEnumToMasks](SDL_PixelFormatEnumToMasks)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

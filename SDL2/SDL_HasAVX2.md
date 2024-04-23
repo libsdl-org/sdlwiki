@@ -27,7 +27,7 @@ This always returns false on CPUs that aren't using Intel instruction sets.
 
 This function is available since SDL 2.0.4.
 
-## Related Functions
+## See Also
 
 * [SDL_Has3DNow](SDL_Has3DNow)
 * [SDL_HasAltiVec](SDL_HasAltiVec)
@@ -42,5 +42,4 @@ This function is available since SDL 2.0.4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_JoystickRumbleTriggers
 
-Start a rumble effect in the joystick's triggers 
+Start a rumble effect in the joystick's triggers
 
 ## Header File
 
@@ -41,11 +41,10 @@ want the (more common) whole-controller rumble, use
 
 This function is available since SDL 2.0.14.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickHasRumbleTriggers](SDL_JoystickHasRumbleTriggers)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

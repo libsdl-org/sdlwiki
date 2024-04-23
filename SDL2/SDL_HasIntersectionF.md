@@ -35,11 +35,10 @@ If either pointer is NULL the function will return [SDL_FALSE](SDL_FALSE).
 
 This function is available since SDL 2.0.22.
 
-## Related Functions
+## See Also
 
 * [SDL_IntersectRect](SDL_IntersectRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

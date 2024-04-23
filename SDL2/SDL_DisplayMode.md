@@ -52,7 +52,7 @@ for (i = 0; i < display_mode_count; ++i) {
 }
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
 * [SDL_GetDisplayMode](SDL_GetDisplayMode)

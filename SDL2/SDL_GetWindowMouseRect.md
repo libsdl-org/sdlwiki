@@ -29,11 +29,10 @@ if there isn't one.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_SetWindowMouseRect](SDL_SetWindowMouseRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

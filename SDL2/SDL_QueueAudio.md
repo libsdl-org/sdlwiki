@@ -66,12 +66,11 @@ from planar audio formats into a non-planar one (see
 
 This function is available since SDL 2.0.4.
 
-## Related Functions
+## See Also
 
 * [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
 * [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

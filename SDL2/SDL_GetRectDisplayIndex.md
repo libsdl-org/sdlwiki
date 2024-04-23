@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GetRectDisplayIndex
 
-Get the index of the display primarily containing a rect 
+Get the index of the display primarily containing a rect
 
 ## Header File
 
@@ -30,12 +30,11 @@ the center of the rect on success or a negative error code on failure; call
 
 This function is available since SDL 2.24.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -41,7 +41,7 @@ pixel color masks, you provide it with a predefined format from
 
 This function is available since SDL 2.0.5.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 * [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
@@ -49,5 +49,4 @@ This function is available since SDL 2.0.5.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

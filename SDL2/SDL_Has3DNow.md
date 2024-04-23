@@ -27,7 +27,7 @@ This always returns false on CPUs that aren't using AMD instruction sets.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HasAltiVec](SDL_HasAltiVec)
 * [SDL_HasAVX](SDL_HasAVX)
@@ -42,5 +42,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

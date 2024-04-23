@@ -22,12 +22,11 @@ Returns the window if input is grabbed or NULL otherwise.
 
 This function is available since SDL 2.0.4.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowGrab](SDL_GetWindowGrab)
 * [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -26,11 +26,10 @@ trigger_count of zero, and their always_ignore state will be false.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetAssertionReport](SDL_GetAssertionReport)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

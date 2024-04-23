@@ -72,7 +72,7 @@ these quirks without any platform-specific code, though:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_ExtensionSupported](SDL_GL_ExtensionSupported)
 * [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
@@ -80,5 +80,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

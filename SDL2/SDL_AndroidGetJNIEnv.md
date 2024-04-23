@@ -32,11 +32,10 @@ rationale being that the SDL headers can avoid including jni.h.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

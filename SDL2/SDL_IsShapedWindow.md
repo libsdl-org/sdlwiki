@@ -29,11 +29,10 @@ Return [SDL_TRUE](SDL_TRUE) if the window is a window that can be shaped,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateShapedWindow](SDL_CreateShapedWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -23,12 +23,11 @@ Returns [SDL_TRUE](SDL_TRUE) if the clipboard has text, or
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetClipboardText](SDL_GetClipboardText)
 * [SDL_SetClipboardText](SDL_SetClipboardText)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

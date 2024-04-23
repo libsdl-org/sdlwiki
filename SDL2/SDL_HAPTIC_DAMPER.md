@@ -18,7 +18,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 Condition haptic effect that simulates dampening. Effect is based on the
 axes velocity.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticCondition](SDL_HapticCondition)
 

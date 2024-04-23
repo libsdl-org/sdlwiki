@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Haptic effect for direct control over high/low frequency motors.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticLeftRight](SDL_HapticLeftRight)
 

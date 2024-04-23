@@ -36,4 +36,3 @@ This function is available since SDL 2.28.0.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
-

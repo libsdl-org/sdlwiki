@@ -33,12 +33,11 @@ if it isn't, or a negative error code on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticNewEffect](SDL_HapticNewEffect)
 * [SDL_HapticQuery](SDL_HapticQuery)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

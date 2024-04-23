@@ -62,12 +62,11 @@ for (int i = 0; i < count; ++i) { do_something_here(); }
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
 * [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

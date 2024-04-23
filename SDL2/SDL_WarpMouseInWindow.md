@@ -38,11 +38,10 @@ mouse when used over Microsoft Remote Desktop.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

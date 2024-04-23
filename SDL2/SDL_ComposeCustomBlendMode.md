@@ -116,7 +116,7 @@ factors do not have an effect in this case.
 
 This function is available since SDL 2.0.6.
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
 * [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
@@ -125,5 +125,4 @@ This function is available since SDL 2.0.6.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

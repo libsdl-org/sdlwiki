@@ -35,12 +35,11 @@ for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateRenderer](SDL_CreateRenderer)
 * [SDL_CreateWindow](SDL_CreateWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

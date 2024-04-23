@@ -40,7 +40,7 @@ end points. If you want to draw multiple, connecting lines use
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderDrawLines](SDL_RenderDrawLines)
 * [SDL_RenderDrawPoint](SDL_RenderDrawPoint)
@@ -55,5 +55,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

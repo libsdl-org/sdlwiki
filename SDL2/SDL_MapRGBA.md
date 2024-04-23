@@ -51,7 +51,7 @@ for an 8-bpp format).
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRGB](SDL_GetRGB)
 * [SDL_GetRGBA](SDL_GetRGBA)
@@ -59,5 +59,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

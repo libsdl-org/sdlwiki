@@ -61,11 +61,10 @@ and fall back to writing to stderr if you can.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_ShowMessageBox](SDL_ShowMessageBox)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

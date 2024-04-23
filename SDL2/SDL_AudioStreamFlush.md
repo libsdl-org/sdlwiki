@@ -24,7 +24,7 @@ input, so the complete output becomes available.
 
 This function is available since SDL 2.0.7.
 
-## Related Functions
+## See Also
 
 * [SDL_NewAudioStream](SDL_NewAudioStream)
 * [SDL_AudioStreamPut](SDL_AudioStreamPut)
@@ -35,5 +35,4 @@ This function is available since SDL 2.0.7.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

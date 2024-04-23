@@ -29,7 +29,7 @@ bottom ... top -Z ... +Z : farther ... closer
 
 The axis data is not changed when the phone is rotated.
 
-## Related Functions
+## See Also
 
 * [SDL_GetDisplayOrientation](SDL_GetDisplayOrientation)
 

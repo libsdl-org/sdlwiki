@@ -28,7 +28,7 @@ sets.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_Has3DNow](SDL_Has3DNow)
 * [SDL_HasAVX](SDL_HasAVX)
@@ -43,5 +43,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

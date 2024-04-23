@@ -31,7 +31,7 @@ cursor redraw, if this is desired for any reason.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateCursor](SDL_CreateCursor)
 * [SDL_GetCursor](SDL_GetCursor)
@@ -39,5 +39,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

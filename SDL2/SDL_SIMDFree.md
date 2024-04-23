@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_SIMDFree
 
-Deallocate memory obtained from [SDL_SIMDAlloc](SDL_SIMDAlloc) 
+Deallocate memory obtained from [SDL_SIMDAlloc](SDL_SIMDAlloc)
 
 ## Header File
 
@@ -38,12 +38,11 @@ function returns, and should be discarded.
 
 This function is available since SDL 2.0.10.
 
-## Related Functions
+## See Also
 
 * [SDL_SIMDAlloc](SDL_SIMDAlloc)
 * [SDL_SIMDRealloc](SDL_SIMDRealloc)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

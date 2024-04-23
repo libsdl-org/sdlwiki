@@ -29,12 +29,11 @@ Returns the number of saved templates on success or 0 on failure; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
 * [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

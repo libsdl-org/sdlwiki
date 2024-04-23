@@ -34,12 +34,11 @@ could be set; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AllocPalette](SDL_AllocPalette)
 * [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

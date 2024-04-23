@@ -46,7 +46,7 @@ The texture alpha is affected based on its alpha modulation set by
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RenderCopyEx](SDL_RenderCopyEx)
 * [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
@@ -55,5 +55,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

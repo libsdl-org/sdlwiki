@@ -13,7 +13,7 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 typedef struct SDL_Window SDL_Window;
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_CreateWindow](SDL_CreateWindow)
 * [SDL_CreateWindowFrom](SDL_CreateWindowFrom)

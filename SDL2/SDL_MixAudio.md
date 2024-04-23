@@ -39,11 +39,10 @@ legacy [SDL_OpenAudio](SDL_OpenAudio)() function.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_MixAudioFormat](SDL_MixAudioFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

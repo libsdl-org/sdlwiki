@@ -23,12 +23,11 @@ Returns an OR'd combination of the modifier keys for the keyboard. See
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyboardState](SDL_GetKeyboardState)
 * [SDL_SetModState](SDL_SetModState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

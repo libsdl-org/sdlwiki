@@ -1,7 +1,7 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_HasSurfaceRLE
 
-Returns whether the surface is RLE enabled 
+Returns whether the surface is RLE enabled
 
 ## Header File
 
@@ -34,11 +34,10 @@ It is safe to pass a NULL `surface` here; it will return
 
 This function is available since SDL 2.0.14.
 
-## Related Functions
+## See Also
 
 * [SDL_SetSurfaceRLE](SDL_SetSurfaceRLE)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -23,11 +23,10 @@ Returns [SDL_TRUE](SDL_TRUE) if the mouse is haptic or
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticOpenFromMouse](SDL_HapticOpenFromMouse)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

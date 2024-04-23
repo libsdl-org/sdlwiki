@@ -36,7 +36,7 @@ extern SDL_Surface *src, *dst;
 SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_RectEmpty](SDL_RectEmpty)
 * [SDL_RectEquals](SDL_RectEquals)

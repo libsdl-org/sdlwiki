@@ -34,11 +34,10 @@ resource to be allocated to track device change notifications.
 
 This function is available since SDL 2.0.18.
 
-## Related Functions
+## See Also
 
 * [SDL_hid_enumerate](SDL_hid_enumerate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

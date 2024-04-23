@@ -28,7 +28,7 @@ void SDL_DelHintCallback(const char *name,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AddHintCallback](SDL_AddHintCallback)
 

@@ -58,7 +58,7 @@ direction.type = SDL_HAPTIC_SPHERICAL; // Spherical encoding
 direction.dir[0] = 9000; // Since we only have two axes we don't need more parameters.
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_HAPTIC_POLAR](SDL_HAPTIC_POLAR)
 * [SDL_HAPTIC_CARTESIAN](SDL_HAPTIC_CARTESIAN)

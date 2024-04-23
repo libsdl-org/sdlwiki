@@ -43,7 +43,7 @@ buffer of memory instead.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_RWclose](SDL_RWclose)
 * [SDL_RWFromConstMem](SDL_RWFromConstMem)
@@ -57,5 +57,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -65,7 +65,7 @@ Displaced 100% of its period, same as 0, but 0 is preferred.
 
 Examples:
 
-## Related Functions
+## See Also
 
 * [SDL_HAPTIC_SINE](SDL_HAPTIC_SINE)
 * [SDL_HAPTIC_LEFTRIGHT](SDL_HAPTIC_LEFTRIGHT)

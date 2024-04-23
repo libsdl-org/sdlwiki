@@ -33,11 +33,10 @@ Return the window created, or NULL if window creation failed.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

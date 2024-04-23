@@ -48,7 +48,7 @@ This function always succeeds and thus returns void.
 
 This function is available since SDL 2.0.4.
 
-## Related Functions
+## See Also
 
 * [SDL_GetQueuedAudioSize](SDL_GetQueuedAudioSize)
 * [SDL_QueueAudio](SDL_QueueAudio)
@@ -56,5 +56,4 @@ This function is available since SDL 2.0.4.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

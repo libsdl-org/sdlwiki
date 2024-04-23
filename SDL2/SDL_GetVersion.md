@@ -34,7 +34,7 @@ This function may be called safely at any time, even before
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRevision](SDL_GetRevision)
 

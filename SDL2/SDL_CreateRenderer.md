@@ -32,7 +32,7 @@ Returns a valid rendering context or NULL if there was an error; call
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
 * [SDL_DestroyRenderer](SDL_DestroyRenderer)
@@ -41,5 +41,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

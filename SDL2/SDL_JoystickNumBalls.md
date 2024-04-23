@@ -36,11 +36,10 @@ Most joysticks do not have trackballs.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickGetBall](SDL_JoystickGetBall)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

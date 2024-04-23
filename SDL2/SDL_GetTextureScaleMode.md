@@ -30,11 +30,10 @@ Return 0 on success, or -1 if the texture is not valid.
 
 This function is available since SDL 2.0.12.
 
-## Related Functions
+## See Also
 
 * [SDL_SetTextureScaleMode](SDL_SetTextureScaleMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

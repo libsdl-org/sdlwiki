@@ -23,12 +23,11 @@ Returns [SDL_TRUE](SDL_TRUE) if the primary selection has text, or
 
 This function is available since SDL 2.26.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
 * [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

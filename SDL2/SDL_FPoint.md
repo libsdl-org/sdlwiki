@@ -17,7 +17,7 @@ typedef struct SDL_FPoint
 } SDL_FPoint;
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_EncloseFPoints](SDL_EncloseFPoints)
 * [SDL_PointInFRect](SDL_PointInFRect)

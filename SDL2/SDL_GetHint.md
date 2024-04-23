@@ -28,7 +28,7 @@ Returns the string value of a hint or NULL if the hint isn't set.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetHint](SDL_SetHint)
 * [SDL_SetHintWithPriority](SDL_SetHintWithPriority)

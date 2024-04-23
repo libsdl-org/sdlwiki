@@ -32,7 +32,7 @@ typedef enum SDL_HitTestResult
 } SDL_HitTestResult;
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_HitTest](SDL_HitTest)
 

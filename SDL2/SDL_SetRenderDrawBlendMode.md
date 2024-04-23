@@ -35,7 +35,7 @@ If the blend mode is not supported, the closest supported mode is chosen.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
 * [SDL_RenderDrawLine](SDL_RenderDrawLine)
@@ -49,5 +49,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

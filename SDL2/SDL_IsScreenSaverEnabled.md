@@ -31,12 +31,11 @@ The default can also be changed using
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
 * [SDL_EnableScreenSaver](SDL_EnableScreenSaver)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

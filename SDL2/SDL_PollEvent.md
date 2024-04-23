@@ -59,7 +59,7 @@ while (game_is_still_running) {
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetEventFilter](SDL_GetEventFilter)
 * [SDL_PeepEvents](SDL_PeepEvents)
@@ -70,5 +70,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

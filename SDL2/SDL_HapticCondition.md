@@ -56,7 +56,7 @@ the left terms refer to the negative side of the axis. Please refer to the
 ::[SDL_HapticDirection](SDL_HapticDirection) diagram for which side is
 positive and which is negative.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticDirection](SDL_HapticDirection)
 * [SDL_HAPTIC_SPRING](SDL_HAPTIC_SPRING)

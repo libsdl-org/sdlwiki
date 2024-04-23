@@ -31,12 +31,11 @@ rectangle is drawn into.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BlitSurface](SDL_BlitSurface)
 * [SDL_SetClipRect](SDL_SetClipRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

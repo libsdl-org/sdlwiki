@@ -38,12 +38,11 @@ requested ones.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
 * [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

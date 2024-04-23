@@ -36,7 +36,7 @@ details.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetKeyFromName](SDL_GetKeyFromName)
 * [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
@@ -44,5 +44,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

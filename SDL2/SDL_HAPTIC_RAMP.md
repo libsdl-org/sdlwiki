@@ -17,7 +17,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 Ramp haptic effect.
 
-## Related Functions
+## See Also
 
 * [SDL_HapticRamp](SDL_HapticRamp)
 

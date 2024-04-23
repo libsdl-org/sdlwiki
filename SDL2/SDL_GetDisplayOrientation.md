@@ -30,11 +30,10 @@ isn't available.
 
 This function is available since SDL 2.0.9.
 
-## Related Functions
+## See Also
 
 * [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

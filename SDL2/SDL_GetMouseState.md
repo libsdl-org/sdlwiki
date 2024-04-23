@@ -37,7 +37,7 @@ either `x` or `y`.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 * [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
@@ -45,5 +45,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

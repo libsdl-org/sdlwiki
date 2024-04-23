@@ -40,11 +40,10 @@ information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_MasksToPixelFormatEnum](SDL_MasksToPixelFormatEnum)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

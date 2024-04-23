@@ -37,7 +37,7 @@ components from pixel formats with less than 8-bits per RGB component
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetRGBA](SDL_GetRGBA)
 * [SDL_MapRGB](SDL_MapRGB)
@@ -45,5 +45,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

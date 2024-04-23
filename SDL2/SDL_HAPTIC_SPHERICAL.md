@@ -13,7 +13,7 @@ Defined in [SDL_haptic.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 #define SDL_HAPTIC_SPHERICAL  2
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_HapticDirection](SDL_HapticDirection)
 

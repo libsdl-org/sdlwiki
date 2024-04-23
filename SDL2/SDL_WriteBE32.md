@@ -34,11 +34,10 @@ specifies native format, and the data written will be in big-endian format.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_WriteLE32](SDL_WriteLE32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

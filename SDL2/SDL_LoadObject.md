@@ -29,12 +29,11 @@ error; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_LoadFunction](SDL_LoadFunction)
 * [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

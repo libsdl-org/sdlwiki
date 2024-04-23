@@ -33,11 +33,10 @@ function isn't officially deprecated.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_TICKS_PASSED](SDL_TICKS_PASSED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

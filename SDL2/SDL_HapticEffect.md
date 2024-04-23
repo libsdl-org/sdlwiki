@@ -49,7 +49,7 @@ otherwise both values are used.
 
 Common parts:
 
-## Related Functions
+## See Also
 
 * [SDL_HapticConstant](SDL_HapticConstant)
 * [SDL_HapticPeriodic](SDL_HapticPeriodic)

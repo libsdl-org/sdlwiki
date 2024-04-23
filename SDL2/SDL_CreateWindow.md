@@ -103,7 +103,7 @@ in a future version of SDL.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 * [SDL_DestroyWindow](SDL_DestroyWindow)

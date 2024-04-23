@@ -28,11 +28,10 @@ Returns [SDL_TRUE](SDL_TRUE) if supported or [SDL_FALSE](SDL_FALSE) if not.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_SetRenderTarget](SDL_SetRenderTarget)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

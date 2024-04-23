@@ -31,11 +31,10 @@ Your internal storage path is typically:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

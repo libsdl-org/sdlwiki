@@ -54,7 +54,7 @@ SDL_Window * window = SDL_CreateWindow(
 );
 ```
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowFlags](SDL_GetWindowFlags)
 

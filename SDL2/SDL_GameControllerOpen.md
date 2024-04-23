@@ -39,7 +39,7 @@ future controller events. The joystick's instance id
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GameControllerClose](SDL_GameControllerClose)
 * [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
@@ -47,5 +47,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

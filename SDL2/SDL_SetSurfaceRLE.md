@@ -36,7 +36,7 @@ the surface must be locked before directly accessing the pixels.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_BlitSurface](SDL_BlitSurface)
 * [SDL_LockSurface](SDL_LockSurface)
@@ -44,5 +44,4 @@ This function is available since SDL 2.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

@@ -33,11 +33,10 @@ always return 1, regardless of whether there actually are any devices.
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetTouchDevice](SDL_GetTouchDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

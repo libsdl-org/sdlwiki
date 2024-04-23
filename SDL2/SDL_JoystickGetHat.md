@@ -44,11 +44,10 @@ The returned value will be one of the following positions:
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_JoystickNumHats](SDL_JoystickNumHats)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 

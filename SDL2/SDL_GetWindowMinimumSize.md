@@ -27,12 +27,11 @@ void SDL_GetWindowMinimumSize(SDL_Window * window,
 
 This function is available since SDL 2.0.0.
 
-## Related Functions
+## See Also
 
 * [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
 * [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
-
 
