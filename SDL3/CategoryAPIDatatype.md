@@ -23,6 +23,7 @@
 - [SDL_MetalView](SDL_MetalView)
 - [SDL_PropertiesID](SDL_PropertiesID)
 - [SDL_SensorID](SDL_SensorID)
+- [SDL_SpinLock](SDL_SpinLock)
 - [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
