@@ -13,7 +13,7 @@ Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 typedef enum SDL_TimeFormat
 {
     SDL_TIME_FORMAT_24HR = 0, /**< 24 hour time */
-    SDL_TIME_FORMAT_12HR = 1, /**< 12 hour time */
+    SDL_TIME_FORMAT_12HR = 1  /**< 12 hour time */
 } SDL_TimeFormat;
 ```
 
