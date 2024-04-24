@@ -54,7 +54,7 @@ Returns assert state
 
 ## Remarks
 
-Use the [SDL_assert](SDL_assert)* macros.
+Use the [SDL_assert](SDL_assert)* macros instead.
 
 ## Version
 

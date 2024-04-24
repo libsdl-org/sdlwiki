@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_TriggerBreakpoint() __asm__ __volatile__ ( "int $3\n\t" )
+#define SDL_TriggerBreakpoint() TriggerABreakpointInAPlatformSpecificManner
 ```
 
 ## Remarks
