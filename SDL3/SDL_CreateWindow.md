@@ -95,7 +95,6 @@ This function is available since SDL 3.0.0.
 // Using SDL3 to create an application window
 
 #include <SDL3/SDL.h>
-#include <stdio.h>
 
 int main(int argc, char* argv[]) {
 
@@ -114,7 +113,7 @@ int main(int argc, char* argv[]) {
     // Check that the window was successfully created
     if (window == NULL) {
         // In the case that the window could not be made...
-        printf("Could not create window: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Could not create window: %s\n", SDL_GetError());
         return 1;
     }
 
