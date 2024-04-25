@@ -21,4 +21,3 @@ This hint only applies to Mac OS X.
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

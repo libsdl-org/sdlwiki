@@ -28,4 +28,3 @@ You can update mappings after the system is initialized with
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

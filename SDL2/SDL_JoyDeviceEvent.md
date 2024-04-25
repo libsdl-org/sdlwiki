@@ -22,4 +22,3 @@ typedef struct SDL_JoyDeviceEvent
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)
 
 
-

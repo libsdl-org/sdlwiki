@@ -23,4 +23,3 @@ all. The preprocessor define is left here for source compatibility.
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

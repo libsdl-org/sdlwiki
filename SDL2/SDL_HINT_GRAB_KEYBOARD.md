@@ -26,4 +26,3 @@ By default SDL will not grab the keyboard so system shortcuts still work.
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

@@ -30,4 +30,3 @@ typedef struct SDL_GameControllerButtonBind
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryHeader](CategoryHeader)
 
 
-

@@ -48,4 +48,3 @@ while (!SDL_TICKS_PASSED(SDL_GetTicks(), timeout)) {
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryTimer](CategoryTimer)
 
 
-

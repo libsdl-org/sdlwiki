@@ -26,4 +26,3 @@ By default relative mouse deltas are affected by DPI and renderer scaling
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

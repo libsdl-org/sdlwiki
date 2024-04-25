@@ -30,4 +30,3 @@ only works with the classic [SDL_CreateThread](SDL_CreateThread)().
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

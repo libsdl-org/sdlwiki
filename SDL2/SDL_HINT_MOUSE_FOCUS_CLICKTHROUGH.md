@@ -26,4 +26,3 @@ By default SDL will ignore mouse clicks that activate a window
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
 
 
-

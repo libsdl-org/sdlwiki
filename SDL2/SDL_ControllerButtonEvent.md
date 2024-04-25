@@ -26,4 +26,3 @@ typedef struct SDL_ControllerButtonEvent
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryEvents](CategoryEvents)
 
 
-

@@ -27,4 +27,3 @@ SDL_GameControllerAddMappingsFromFile("gamecontrollerdb.txt");
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryGameController](CategoryGameController)
 
 
-
