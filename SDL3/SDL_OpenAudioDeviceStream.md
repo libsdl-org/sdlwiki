@@ -35,7 +35,7 @@ resources and close the device.
 If all your app intends to do is provide a single source of PCM audio, this
 function allows you to do all your audio setup in a single call.
 
-This is intended to be a clean means to migrate apps from SDL2.
+This is also intended to be a clean means to migrate apps from SDL2.
 
 This function will open an audio device, create a stream and bind it.
 Unlike other methods of setup, the audio device will be closed when this
@@ -44,10 +44,9 @@ stream is destroyed, so the app can treat the returned
 audio playback.
 
 Also unlike other functions, the audio device begins paused. This is to map
-more closely to SDL2-style behavior, and since there is no extra step here
-to bind a stream to begin audio flowing. The audio device should be resumed
-with
-[SDL_ResumeAudioDevice](SDL_ResumeAudioDevice)([SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)(stream));
+more closely to SDL2-style behavior, since there is no extra step here to
+bind a stream to begin audio flowing. The audio device should be resumed
+with `SDL_ResumeAudioDevice(SDL_GetAudioStreamDevice(stream));`
 
 This function works with both playback and capture devices.
 

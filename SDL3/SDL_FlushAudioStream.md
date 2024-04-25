@@ -27,7 +27,7 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-It is legal to add more data to a stream after flushing, but there will be
+It is legal to add more data to a stream after flushing, but there may be
 audio gaps in the output. Generally this is intended to signal the end of
 input, so the complete output becomes available.
 

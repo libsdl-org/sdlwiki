@@ -16,9 +16,19 @@ void SDL_DestroyAudioStream(SDL_AudioStream *stream);
 
 ## Function Parameters
 
-|                |                          |
-| -------------- | ------------------------ |
-| **stream**     | The audio stream to free |
+|                |                              |
+| -------------- | ---------------------------- |
+| **stream**     | The audio stream to destroy. |
+
+## Remarks
+
+This will release all allocated data, including any audio that is still
+queued. You do not need to manually clear the stream first.
+
+If this stream was bound to an audio device, it is unbound during this
+call. If this stream was created with
+[SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream), the audio device
+that was opened alongside this stream's creation will be closed, too.
 
 ## Thread Safety
 

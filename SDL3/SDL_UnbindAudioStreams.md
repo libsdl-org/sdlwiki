@@ -25,8 +25,7 @@ void SDL_UnbindAudioStreams(SDL_AudioStream **streams, int num_streams);
 
 The streams being unbound do not all have to be on the same device. All
 streams on the same device will be unbound atomically (data will stop
-flowing through them all unbound streams on the same device at the same
-time).
+flowing through all unbound streams on the same device at the same time).
 
 Unbinding a stream that isn't bound to a device is a legal no-op.
 

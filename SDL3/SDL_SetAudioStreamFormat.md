@@ -37,6 +37,12 @@ format, and future calls to
 [SDL_PutAudioStreamData](SDL_PutAudioStreamData) must provide data in the
 new input formats.
 
+Data that was previously queued in the stream will still be operated on in
+the format that was current when it was added, which is to say you can put
+the end of a sound file in one format to a stream, change formats for the
+next sound file, and start putting that new data while the previous sound
+file is still queued, and everything will still play back correctly.
+
 ## Thread Safety
 
 It is safe to call this function from any thread, as it holds a

@@ -39,7 +39,7 @@ protect shared data during those callbacks, locking the stream guarantees
 that the callback is not running while the lock is held.
 
 As this is just a wrapper over [SDL_LockMutex](SDL_LockMutex) for an
-internal lock, it has all the same attributes (recursive locks are allowed,
+internal lock; it has all the same attributes (recursive locks are allowed,
 etc).
 
 ## Thread Safety

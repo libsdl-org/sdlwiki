@@ -28,9 +28,9 @@ int SDL_LoadWAV_IO(SDL_IOStream * src, SDL_bool closeio,
 
 ## Return Value
 
-Returns This function, if successfully called, returns 0. `audio_buf` will
-be filled with a pointer to an allocated buffer containing the audio data,
-and `audio_len` is filled with the length of that audio buffer in bytes.
+Returns 0 on success. `audio_buf` will be filled with a pointer to an
+allocated buffer containing the audio data, and `audio_len` is filled with
+the length of that audio buffer in bytes.
 
 This function returns -1 if the .WAV file cannot be opened, uses an unknown
 data format, or is corrupt; call [SDL_GetError](SDL_GetError)() for more
