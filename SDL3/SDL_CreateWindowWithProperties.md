@@ -114,9 +114,10 @@ These are additional supported properties on Wayland:
   - true if the application wants to use the Wayland surface for a custom
   role and does not want it attached to an XDG toplevel window. See
   docs/README-wayland.md for more information on using custom surfaces.
-- [`SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN`](SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN) - true if the
-  application wants an associated `wl_egl_window` object to be created,
-  even if the window does not have the OpenGL property or flag set.
+- [`SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN`](SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN)
+  - true if the application wants an associated `wl_egl_window` object to
+  be created, even if the window does not have the OpenGL property or flag
+  set.
 - [`SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER`](SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER)
   - the wl_surface associated with the window, if you want to wrap an
   existing window. See docs/README-wayland.md for more information.
