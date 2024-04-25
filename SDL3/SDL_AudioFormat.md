@@ -32,6 +32,7 @@ typedef Uint16 SDL_AudioFormat;
 #define SDL_AUDIO_S16    SDL_AUDIO_S16BE
 #define SDL_AUDIO_S32    SDL_AUDIO_S32BE
 #define SDL_AUDIO_F32    SDL_AUDIO_F32BE
+#endif
 ```
 
 ## Remarks
