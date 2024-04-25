@@ -11,6 +11,7 @@ Defined in [<SDL3/SDL_keycode.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 typedef Sint32 SDL_Keycode;
+
 #define SDLK_SCANCODE_MASK (1<<30)
 #define SDL_SCANCODE_TO_KEYCODE(X)  (X | SDLK_SCANCODE_MASK)
 #define SDLK_UNKNOWN    0
@@ -257,7 +258,6 @@ typedef Sint32 SDL_Keycode;
 #define SDLK_SOFTRIGHT  SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_SOFTRIGHT)
 #define SDLK_CALL   SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CALL)
 #define SDLK_ENDCALL    SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_ENDCALL)
-
 ```
 
 ## Remarks
