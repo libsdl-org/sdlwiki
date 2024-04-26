@@ -18,7 +18,7 @@ int TTF_SetFontScriptName(TTF_Font *font, const char *script);
 
 |                |                                                 |
 | -------------- | ----------------------------------------------- |
-| **font**       | the font to specify a direction for.            |
+| **font**       | the font to specify a script name for.          |
 | **script**     | null-terminated string of exactly 4 characters. |
 
 ## Return Value
