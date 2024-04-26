@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
   int done;
   SDL_Event event;
 
-  if (SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0) {
+  if (SDL_CreateWindowAndRenderer("Show a simple image", 0, 0, 0, &window, &renderer) < 0) {
     SDL_LogError(SDL_LOG_CATEGORY_APPLICATION,
         "SDL_CreateWindowAndRenderer() failed: %s", SDL_GetError());
     return(2);

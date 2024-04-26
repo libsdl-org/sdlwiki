@@ -86,7 +86,7 @@ Now that you understand how this works, you can also do this all in one step wit
 ```c
 SDL_Window *sdlWindow;
 SDL_Renderer *sdlRenderer;
-SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, &sdlWindow, &sdlRenderer);
+SDL_CreateWindowAndRenderer(title, 0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP, &sdlWindow, &sdlRenderer);
 ```
 
 Assuming these functions didn't fail (always check for NULLs!), you are ready to start drawing to the screen. Let's get started by clearing the screen to black.

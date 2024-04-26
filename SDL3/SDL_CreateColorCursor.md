@@ -50,7 +50,7 @@ main(int argc, char *argv[])
     if (SDL_Init(SDL_INIT_VIDEO) < 0) {
         goto exit;
     }
-    if (SDL_CreateWindowAndRenderer(640, 480, 0, &window, &renderer) < 0) {
+    if (SDL_CreateWindowAndRenderer("Hello SDL", 640, 480, 0, &window, &renderer) < 0) {
         goto exit;
     }
     surface = SDL_LoadBMP((1 < argc) ? argv[1] : "cursor.bmp");
