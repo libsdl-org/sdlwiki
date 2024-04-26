@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_CreateWindowAndRenderer(int width, int height, SDL_WindowFlags window_flags, SDL_Window **window, SDL_Renderer **renderer);
+int SDL_CreateWindowAndRenderer(const char *title, int width, int height, SDL_WindowFlags window_flags, SDL_Window **window, SDL_Renderer **renderer);
 
 ```
 
@@ -18,6 +18,7 @@ int SDL_CreateWindowAndRenderer(int width, int height, SDL_WindowFlags window_fl
 
 |                      |                                                                                  |
 | -------------------- | -------------------------------------------------------------------------------- |
+| **title**            | the title of the window, in UTF-8 encoding                                       |
 | **width**            | the width of the window                                                          |
 | **height**           | the height of the window                                                         |
 | **window_flags**     | the flags used to create the window (see [SDL_CreateWindow](SDL_CreateWindow)()) |
