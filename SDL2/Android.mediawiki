@@ -50,8 +50,12 @@ Notes:
 * application doesn't quit
 
 ==== Troubleshooting ====
+* <code>No matching variant of com.android.tools.build:gradle:8.1.1 was found.</code> Use jdk 17 (Dunno why it is written use jdk8 bellow
+
+* <code>Task with path 'externalNativeBuildDebug' not found in project ':app'</code>
 
 * use OpenJDK 8: execute <code>sudo update-alternatives --config java</code> and select jdk-8 as default; or use <code>JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 ./gradlew</code>
+
 * fixed in 2.0.9: in <code>/android-project/build.gradle</code> change (in BOTH places in the file code appears) from
 <syntaxhighlight lang='c'>
     repositories {
@@ -65,16 +69,20 @@ to
         google()
     }
 </syntaxhighlight>
+
 * <code>javax/xml/bind/annotation/XmlSchema, Could not initialize class com.android.sdklib.repository.AndroidSdkHandler</code>: check the Android Gradle Plugin version in <code>/android-project/build.gradle</code>, e.g.
 <code> classpath 'com.android.tools.build:gradle:3.1.0' </code>
+
 * You can customize the Gradle version in <code>/android-project/gradle/wrapper/gradle-wrapper.properties</code>:
 <code> distributionUrl=https\://services.gradle.org/distributions/gradle-4.9-all.zip </code>
+
 * You can customize your SDK/NDK versions in </code>android-project/app/build.gradle</code>:
 <syntaxhighlight lang='c'>
 android {
     buildToolsVersion "28.0.1"
     compileSdkVersion 28
 </syntaxhighlight>
+
 * You can customize your targets depending on the NDK version:
 <syntaxhighlight lang='c'>
 externalNativeBuild {
@@ -82,8 +90,11 @@ externalNativeBuild {
         arguments "APP_PLATFORM=android-14"
         abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
 </syntaxhighlight>
+
 * <code>ABIs [x86_64, arm64-v8a] are not supported for platform. Supported ABIs are [armeabi, armeabi-v7a, x86, mips]</code>: upgrade to NDK >= 10
+
 * Using ant (SDL <= 2.0.7): edit <code>build-scripts/androidbuild.sh</code>, find the <code>$ANDROID update project</code> line, and add <code>--target android-XX</code> to it (replace XX with your installed API number)
+
 * TODO: check how we can use the distro's gradle instead of executing stuff from the Internet - <code>apt install gradle libgradle-android-plugin-java</code>
 
 === SDL wrapper + SDL_image NDK module ===
