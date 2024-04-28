@@ -20,7 +20,7 @@ void SDL_StopTextInput(void);
 
 ## Remarks
 
-Text input events are received by default.
+Text input events are not received by default.
 
 ## Version
 
