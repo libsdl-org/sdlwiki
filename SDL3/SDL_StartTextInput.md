@@ -27,7 +27,7 @@ SDL window, and start emitting [SDL_TextInputEvent](SDL_TextInputEvent)
 ([SDL_EVENT_TEXT_EDITING](SDL_EVENT_TEXT_EDITING)) events. Please use this
 function in pair with [SDL_StopTextInput](SDL_StopTextInput)().
 
-Text input events are received by default.
+Text input events are not received by default.
 
 On some platforms using this function activates the screen keyboard.
 
