@@ -10,8 +10,13 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_arraysize(array)    (sizeof(array)/sizeof(array[0]))
+#define SDL_arraysize(array) (sizeof(array)/sizeof(array[0]))
 ```
+
+## Remarks
+
+NOTE: This macro double-evaluates the argument, so you should never have
+side effects in the parameter.
 
 ## Version
 
