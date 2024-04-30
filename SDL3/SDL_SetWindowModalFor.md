@@ -9,7 +9,7 @@
 <!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_SetWindowModalFor
 
-Set the window as a modal for another window.
+Set the window as a modal to a parent window.
 
 ## Header File
 
@@ -33,6 +33,15 @@ int SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
 
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
+
+## Remarks
+
+If the window is already modal to an existing window, it will be reparented
+to the new owner. Setting the parent window to null unparents the modal
+window and removes modal status.
+
+Setting a window as modal to a parent that is a descendent of the modal
+window results in undefined behavior.
 
 ## Version
 

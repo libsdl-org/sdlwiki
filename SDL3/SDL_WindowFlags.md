@@ -24,6 +24,7 @@ typedef Uint32 SDL_WindowFlags;
 #define SDL_WINDOW_INPUT_FOCUS          0x00000200U /**< window has input focus */
 #define SDL_WINDOW_MOUSE_FOCUS          0x00000400U /**< window has mouse focus */
 #define SDL_WINDOW_EXTERNAL             0x00000800U /**< window not created by SDL */
+#define SDL_WINDOW_MODAL                0x00001000U /**< window is modal */
 #define SDL_WINDOW_HIGH_PIXEL_DENSITY   0x00002000U /**< window uses high pixel density back buffer if possible */
 #define SDL_WINDOW_MOUSE_CAPTURE        0x00004000U /**< window has mouse captured (unrelated to MOUSE_GRABBED) */
 #define SDL_WINDOW_ALWAYS_ON_TOP        0x00008000U /**< window should always be above others */

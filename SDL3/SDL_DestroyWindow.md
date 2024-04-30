@@ -22,6 +22,9 @@ void SDL_DestroyWindow(SDL_Window *window);
 
 ## Remarks
 
+Any popups or modal windows owned by the window will be recursively
+destroyed as well.
+
 If `window` is NULL, this function will return immediately after setting
 the SDL error message to "Invalid window". See
 [SDL_GetError](SDL_GetError)().

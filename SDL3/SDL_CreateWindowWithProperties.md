@@ -54,13 +54,15 @@ These are the supported properties:
   true if the window will be used with Metal rendering
 - [`SDL_PROP_WINDOW_CREATE_MINIMIZED_BOOLEAN`](SDL_PROP_WINDOW_CREATE_MINIMIZED_BOOLEAN):
   true if the window should start minimized
+- [`SDL_PROP_WINDOW_CREATE_MODAL_BOOLEAN`](SDL_PROP_WINDOW_CREATE_MODAL_BOOLEAN):
+  true if the window is modal to its parent
 - [`SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN`](SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN):
   true if the window starts with grabbed mouse focus
 - [`SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN`](SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN):
   true if the window will be used with OpenGL rendering
 - [`SDL_PROP_WINDOW_CREATE_PARENT_POINTER`](SDL_PROP_WINDOW_CREATE_PARENT_POINTER):
   an [SDL_Window](SDL_Window) that will be the parent of this window,
-  required for windows with the "toolip" and "menu" properties
+  required for windows with the "toolip", "menu", and "modal" properties
 - [`SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN`](SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN):
   true if the window should be resizable
 - [`SDL_PROP_WINDOW_CREATE_TITLE_STRING`](SDL_PROP_WINDOW_CREATE_TITLE_STRING):
