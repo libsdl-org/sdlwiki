@@ -24,14 +24,14 @@ size_t SDL_WriteIO(SDL_IOStream *context, const void *ptr, size_t size);
 
 ## Return Value
 
-Returns the number of bytes written, which will be less than `num` on
+Returns the number of bytes written, which will be less than `size` on
 error; call [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
 
 This function writes exactly `size` bytes from the area pointed at by `ptr`
 to the stream. If this fails for any reason, it'll return less than `size`
-to demonstrate how far the write progressed. On success, it returns `num`.
+to demonstrate how far the write progressed. On success, it returns `size`.
 
 On error, this function still attempts to write as much as possible, so it
 might return a positive value less than the requested write size.
