@@ -24,7 +24,8 @@ Returns 0 on success or a negative error code on failure; call
 If you disable the screensaver, it is automatically re-enabled when SDL
 quits.
 
-The screensaver is disabled by default, but this may by changed by [SDL_HINT_VIDEO_ALLOW_SCREENSAVER](SDL_HINT_VIDEO_ALLOW_SCREENSAVER).
+The screensaver is disabled by default, but this may by changed by
+[SDL_HINT_VIDEO_ALLOW_SCREENSAVER](SDL_HINT_VIDEO_ALLOW_SCREENSAVER).
 
 ## Version
 
