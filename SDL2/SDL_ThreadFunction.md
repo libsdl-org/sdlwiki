@@ -11,6 +11,9 @@ Defined in [SDL_thread.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 
 ```c
 typedef int (SDLCALL * SDL_ThreadFunction) (void *data);
+
+
+#if (defined(__WIN32__) || defined(__GDK__)) && !defined(__WINRT__)
 ```
 
 ## Function Parameters

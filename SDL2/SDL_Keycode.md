@@ -11,6 +11,9 @@ Defined in [SDL_keycode.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/S
 
 ```c
 typedef Sint32 SDL_Keycode;
+
+#define SDLK_SCANCODE_MASK (1<<30)
+#define SDL_SCANCODE_TO_KEYCODE(X)  (X | SDLK_SCANCODE_MASK)
 ```
 
 ## Remarks
