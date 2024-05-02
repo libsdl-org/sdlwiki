@@ -12,6 +12,8 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 void SDL_iPhoneSetEventPump(SDL_bool enabled);
 
+
+#define SDL_iOSSetEventPump(enabled) SDL_iPhoneSetEventPump(enabled)
 ```
 
 ## Function Parameters

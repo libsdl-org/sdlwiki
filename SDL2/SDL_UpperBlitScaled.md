@@ -14,6 +14,8 @@ int SDL_UpperBlitScaled
     (SDL_Surface * src, const SDL_Rect * srcrect,
     SDL_Surface * dst, SDL_Rect * dstrect);
 
+
+#define SDL_BlitScaled SDL_UpperBlitScaled
 ```
 
 ## Remarks

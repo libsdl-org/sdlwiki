@@ -12,6 +12,7 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ```c
 int SDL_UnlockMutex(SDL_mutex * mutex) SDL_RELEASE(mutex);
 
+#define SDL_mutexV(m)   SDL_UnlockMutex(m)
 ```
 
 ## Function Parameters

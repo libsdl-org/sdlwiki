@@ -12,6 +12,8 @@ Defined in [SDL_system.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SD
 ```c
 int SDL_iPhoneSetAnimationCallback(SDL_Window * window, int interval, void (SDLCALL *callback)(void*), void *callbackParam);
 
+
+#define SDL_iOSSetAnimationCallback(window, interval, callback, callbackParam) SDL_iPhoneSetAnimationCallback(window, interval, callback, callbackParam)
 ```
 
 ## Function Parameters

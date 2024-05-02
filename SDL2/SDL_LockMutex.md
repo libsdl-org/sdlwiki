@@ -12,6 +12,7 @@ Defined in [SDL_mutex.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 ```c
 int SDL_LockMutex(SDL_mutex * mutex) SDL_ACQUIRE(mutex);
 
+#define SDL_mutexP(m)   SDL_LockMutex(m)
 ```
 
 ## Function Parameters
