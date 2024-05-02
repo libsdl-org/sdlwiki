@@ -12,6 +12,9 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ```c
 SDL_IOStream* SDL_IOFromDynamicMem(void);
 
+
+#define SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER    "SDL.iostream.dynamic.memory"
+#define SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER  "SDL.iostream.dynamic.chunksize"
 ```
 
 ## Return Value

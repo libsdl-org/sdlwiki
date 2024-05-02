@@ -12,6 +12,11 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ```c
 SDL_PropertiesID SDL_GetSurfaceProperties(SDL_Surface *surface);
 
+
+#define SDL_PROP_SURFACE_COLORSPACE_NUMBER                  "SDL.surface.colorspace"
+#define SDL_PROP_SURFACE_SDR_WHITE_POINT_FLOAT              "SDL.surface.SDR_white_point"
+#define SDL_PROP_SURFACE_HDR_HEADROOM_FLOAT                 "SDL.surface.HDR_headroom"
+#define SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING            "SDL.surface.tonemap"
 ```
 
 ## Function Parameters

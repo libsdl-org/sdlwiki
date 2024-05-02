@@ -12,6 +12,41 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ```c
 SDL_Window* SDL_CreateWindowWithProperties(SDL_PropertiesID props);
 
+
+#define SDL_PROP_WINDOW_CREATE_ALWAYS_ON_TOP_BOOLEAN               "always_on_top"
+#define SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN                  "borderless"
+#define SDL_PROP_WINDOW_CREATE_FOCUSABLE_BOOLEAN                   "focusable"
+#define SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN   "external_graphics_context"
+#define SDL_PROP_WINDOW_CREATE_FULLSCREEN_BOOLEAN                  "fullscreen"
+#define SDL_PROP_WINDOW_CREATE_HEIGHT_NUMBER                       "height"
+#define SDL_PROP_WINDOW_CREATE_HIDDEN_BOOLEAN                      "hidden"
+#define SDL_PROP_WINDOW_CREATE_HIGH_PIXEL_DENSITY_BOOLEAN          "high_pixel_density"
+#define SDL_PROP_WINDOW_CREATE_MAXIMIZED_BOOLEAN                   "maximized"
+#define SDL_PROP_WINDOW_CREATE_MENU_BOOLEAN                        "menu"
+#define SDL_PROP_WINDOW_CREATE_METAL_BOOLEAN                       "metal"
+#define SDL_PROP_WINDOW_CREATE_MINIMIZED_BOOLEAN                   "minimized"
+#define SDL_PROP_WINDOW_CREATE_MODAL_BOOLEAN                       "modal"
+#define SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN               "mouse_grabbed"
+#define SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN                      "opengl"
+#define SDL_PROP_WINDOW_CREATE_PARENT_POINTER                      "parent"
+#define SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN                   "resizable"
+#define SDL_PROP_WINDOW_CREATE_TITLE_STRING                        "title"
+#define SDL_PROP_WINDOW_CREATE_TRANSPARENT_BOOLEAN                 "transparent"
+#define SDL_PROP_WINDOW_CREATE_TOOLTIP_BOOLEAN                     "tooltip"
+#define SDL_PROP_WINDOW_CREATE_UTILITY_BOOLEAN                     "utility"
+#define SDL_PROP_WINDOW_CREATE_VULKAN_BOOLEAN                      "vulkan"
+#define SDL_PROP_WINDOW_CREATE_WIDTH_NUMBER                        "width"
+#define SDL_PROP_WINDOW_CREATE_X_NUMBER                            "x"
+#define SDL_PROP_WINDOW_CREATE_Y_NUMBER                            "y"
+#define SDL_PROP_WINDOW_CREATE_COCOA_WINDOW_POINTER                "cocoa.window"
+#define SDL_PROP_WINDOW_CREATE_COCOA_VIEW_POINTER                  "cocoa.view"
+#define SDL_PROP_WINDOW_CREATE_WAYLAND_SCALE_TO_DISPLAY_BOOLEAN    "wayland.scale_to_display"
+#define SDL_PROP_WINDOW_CREATE_WAYLAND_SURFACE_ROLE_CUSTOM_BOOLEAN "wayland.surface_role_custom"
+#define SDL_PROP_WINDOW_CREATE_WAYLAND_CREATE_EGL_WINDOW_BOOLEAN   "wayland.create_egl_window"
+#define SDL_PROP_WINDOW_CREATE_WAYLAND_WL_SURFACE_POINTER          "wayland.wl_surface"
+#define SDL_PROP_WINDOW_CREATE_WIN32_HWND_POINTER                  "win32.hwnd"
+#define SDL_PROP_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER     "win32.pixel_format_hwnd"
+#define SDL_PROP_WINDOW_CREATE_X11_WINDOW_NUMBER                   "x11.window"
 ```
 
 ## Function Parameters
