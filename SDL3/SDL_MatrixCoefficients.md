@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_MatrixCoefficients
 
-The matrix coefficients, as described by https://www.itu.int/rec/T-REC-H.273-201612-S/en
+The matrix coefficients.
 
 ## Header File
 
@@ -29,6 +29,10 @@ typedef enum SDL_MatrixCoefficients
     SDL_MATRIX_COEFFICIENTS_CUSTOM = 31
 } SDL_MatrixCoefficients;
 ```
+
+## Remarks
+
+These are as described by https://www.itu.int/rec/T-REC-H.273-201612-S/en
 
 ## Version
 

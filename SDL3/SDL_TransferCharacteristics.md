@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_TransferCharacteristics
 
-The transfer characteristics, as described by https://www.itu.int/rec/T-REC-H.273-201612-S/en
+The color transfer characteristics.
 
 ## Header File
 
@@ -33,6 +33,10 @@ typedef enum SDL_TransferCharacteristics
     SDL_TRANSFER_CHARACTERISTICS_CUSTOM = 31
 } SDL_TransferCharacteristics;
 ```
+
+## Remarks
+
+These are as described by https://www.itu.int/rec/T-REC-H.273-201612-S/en
 
 ## Version
 
