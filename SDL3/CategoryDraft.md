@@ -58,7 +58,6 @@
 - [SDL_SetWindowModalFor](SDL_SetWindowModalFor)
 - [SDL_SetWindowOpacity](SDL_SetWindowOpacity)
 - [SDL_SetWindowResizable](SDL_SetWindowResizable)
-- [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
 - [SDL_ShowCursor](SDL_ShowCursor)
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
 - [SDL_StartTextInput](SDL_StartTextInput)

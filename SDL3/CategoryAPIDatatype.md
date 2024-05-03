@@ -32,5 +32,6 @@
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
 - [SDL_WindowFlags](SDL_WindowFlags)
+- [SDL_WindowsMessageHook](SDL_WindowsMessageHook)
 <!-- END CATEGORY LIST -->
 
