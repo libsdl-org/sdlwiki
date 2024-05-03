@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-struct SDL_AudioStream;  /**< this is opaque to the outside world. */
+typedef struct SDL_AudioStream SDL_AudioStream;
 ```
 
 ## Remarks

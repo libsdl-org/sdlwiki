@@ -2,13 +2,6 @@
 
 ## Functions defined in the headers, but not in the wiki
 
-- [SDL_OnApplicationDidBecomeActive](SDL_OnApplicationDidBecomeActive)
-- [SDL_OnApplicationDidChangeStatusBarOrientation](SDL_OnApplicationDidChangeStatusBarOrientation)
-- [SDL_OnApplicationDidEnterBackground](SDL_OnApplicationDidEnterBackground)
-- [SDL_OnApplicationDidReceiveMemoryWarning](SDL_OnApplicationDidReceiveMemoryWarning)
-- [SDL_OnApplicationWillEnterForeground](SDL_OnApplicationWillEnterForeground)
-- [SDL_OnApplicationWillResignActive](SDL_OnApplicationWillResignActive)
-- [SDL_OnApplicationWillTerminate](SDL_OnApplicationWillTerminate)
 - [SDL_abs](SDL_abs)
 - [SDL_asprintf](SDL_asprintf)
 - [SDL_atof](SDL_atof)
