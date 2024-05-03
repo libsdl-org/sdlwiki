@@ -26,6 +26,7 @@
 - [SDL_itoa](SDL_itoa)
 - [SDL_lltoa](SDL_lltoa)
 - [SDL_ltoa](SDL_ltoa)
+- [SDL_main](SDL_main)
 - [SDL_malloc](SDL_malloc)
 - [SDL_memcmp](SDL_memcmp)
 - [SDL_memcpy](SDL_memcpy)
