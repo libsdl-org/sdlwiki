@@ -6,6 +6,7 @@
 - [SDL_AudioDeviceEvent](SDL_AudioDeviceEvent)
 - [SDL_AudioSpec](SDL_AudioSpec)
 - [SDL_AudioStream](SDL_AudioStream)
+- [SDL_BlitMap](SDL_BlitMap)
 - [SDL_Camera](SDL_Camera)
 - [SDL_CameraDeviceEvent](SDL_CameraDeviceEvent)
 - [SDL_CameraSpec](SDL_CameraSpec)

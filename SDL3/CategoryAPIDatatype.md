@@ -1,6 +1,7 @@
 # CategoryAPIDatatype
 
 <!-- BEGIN CATEGORY LIST -->
+- [SDL_AssertionHandler](SDL_AssertionHandler)
 - [SDL_AudioDeviceID](SDL_AudioDeviceID)
 - [SDL_AudioFormat](SDL_AudioFormat)
 - [SDL_AudioPostmixCallback](SDL_AudioPostmixCallback)
@@ -16,6 +17,7 @@
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_HapticID](SDL_HapticID)
 - [SDL_HintCallback](SDL_HintCallback)
+- [SDL_HitTest](SDL_HitTest)
 - [SDL_JoystickGUID](SDL_JoystickGUID)
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_KeyboardID](SDL_KeyboardID)
