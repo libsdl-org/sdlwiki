@@ -15,9 +15,9 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ## Remarks
 
-SDL does not define this macro, but will check if it is defined to any
-value in [SDL_main](SDL_main).h. If defined, SDL will expect the app to
-provide several functions: [SDL_AppInit](SDL_AppInit),
+SDL does not define this macro, but will check if it is defined when
+including `SDL_main.h`. If defined, SDL will expect the app to provide
+several functions: [SDL_AppInit](SDL_AppInit),
 [SDL_AppEvent](SDL_AppEvent), [SDL_AppIterate](SDL_AppIterate), and
 [SDL_AppQuit](SDL_AppQuit). The app should not provide a `main` function in
 this case, and doing so will likely cause the build to fail.
