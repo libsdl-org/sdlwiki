@@ -29,7 +29,7 @@ freed when the callback returns.
 The filter argument is the index of the filter that was selected, or one
 more than the size of the list (therefore the index of the terminating NULL
 entry) if no filter was selected, or -1 if the platform or method doesn't
-support fetching the selected filter or if an error occured.
+support fetching the selected filter.
 
 ## Version
 
