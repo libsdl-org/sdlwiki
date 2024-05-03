@@ -12,6 +12,16 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ```c
 Uint8 SDL_GetJoystickHat(SDL_Joystick *joystick, int hat);
 
+
+#define SDL_HAT_CENTERED    0x00
+#define SDL_HAT_UP          0x01
+#define SDL_HAT_RIGHT       0x02
+#define SDL_HAT_DOWN        0x04
+#define SDL_HAT_LEFT        0x08
+#define SDL_HAT_RIGHTUP     (SDL_HAT_RIGHT|SDL_HAT_UP)
+#define SDL_HAT_RIGHTDOWN   (SDL_HAT_RIGHT|SDL_HAT_DOWN)
+#define SDL_HAT_LEFTUP      (SDL_HAT_LEFT|SDL_HAT_UP)
+#define SDL_HAT_LEFTDOWN    (SDL_HAT_LEFT|SDL_HAT_DOWN)
 ```
 
 ## Function Parameters
@@ -27,17 +37,7 @@ Returns the current hat position.
 
 ## Remarks
 
-The returned value will be one of the following positions:
-
-- [`SDL_HAT_CENTERED`](SDL_HAT_CENTERED)
-- [`SDL_HAT_UP`](SDL_HAT_UP)
-- [`SDL_HAT_RIGHT`](SDL_HAT_RIGHT)
-- [`SDL_HAT_DOWN`](SDL_HAT_DOWN)
-- [`SDL_HAT_LEFT`](SDL_HAT_LEFT)
-- [`SDL_HAT_RIGHTUP`](SDL_HAT_RIGHTUP)
-- [`SDL_HAT_RIGHTDOWN`](SDL_HAT_RIGHTDOWN)
-- [`SDL_HAT_LEFTUP`](SDL_HAT_LEFTUP)
-- [`SDL_HAT_LEFTDOWN`](SDL_HAT_LEFTDOWN)
+The returned value will be one of the `SDL_HAT_*` values.
 
 ## Version
 

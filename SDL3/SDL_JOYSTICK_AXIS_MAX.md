@@ -1,25 +1,25 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_MUTEX_TIMEDOUT
+# SDL_JOYSTICK_AXIS_MAX
 
-Synchronization functions return this value if they time out.
+The largest value an [SDL_Joystick](SDL_Joystick)'s axis can report.
 
 ## Header File
 
-Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_mutex.h)
+Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_joystick.h)
 
 ## Syntax
 
 ```c
-#define SDL_MUTEX_TIMEDOUT  1
+#define SDL_JOYSTICK_AXIS_MAX   32767
 ```
-
-## Remarks
-
-Not all functions _can_ time out; some will block indefinitely.
 
 ## Version
 
 This macro is available since SDL 3.0.0.
+
+## See Also
+
+* [SDL_JOYSTICK_AXIS_MIN](SDL_JOYSTICK_AXIS_MIN)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
