@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # TTF_SetFontOutline
 
-Set a font's current outline.
+Set a font's current outline. The outline will grow inward and outward on the edges of the rendered text.
 
 ## Syntax
 
