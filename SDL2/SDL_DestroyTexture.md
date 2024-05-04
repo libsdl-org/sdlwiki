@@ -25,7 +25,7 @@ void SDL_DestroyTexture(SDL_Texture * texture);
 Passing NULL or an otherwise invalid texture will set the SDL error message
 to "Invalid texture".
 
-**WARNING**: Destroying a texture during the same frame in which it's being utilized flushes the GPU command queue, which is a very slow operation. If you want to destroy a texture that you created for a particular frame, consider calling this after SDL_RenderPresent().
+Destroying a texture during the same frame in which it's being utilized flushes the GPU command queue, which is a very slow operation. If you want to destroy a texture that you created for a particular frame, consider calling this after SDL_RenderPresent().
 
 ## Version
 
