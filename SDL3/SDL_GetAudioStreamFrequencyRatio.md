@@ -35,7 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
+- [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

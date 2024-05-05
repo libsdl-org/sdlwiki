@@ -26,7 +26,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ResetHint](SDL_ResetHint)
+- [SDL_ResetHint](SDL_ResetHint)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

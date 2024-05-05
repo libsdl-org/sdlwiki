@@ -35,7 +35,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_PauseHaptic](SDL_PauseHaptic)
+- [SDL_PauseHaptic](SDL_PauseHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

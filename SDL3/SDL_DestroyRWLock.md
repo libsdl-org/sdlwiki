@@ -34,7 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateRWLock](SDL_CreateRWLock)
+- [SDL_CreateRWLock](SDL_CreateRWLock)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

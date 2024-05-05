@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_TellIO](SDL_TellIO)
+- [SDL_TellIO](SDL_TellIO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,10 +33,10 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DialogFileCallback](SDL_DialogFileCallback)
-* [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
-* [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
-* [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+- [SDL_DialogFileCallback](SDL_DialogFileCallback)
+- [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
+- [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
+- [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

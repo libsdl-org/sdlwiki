@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LockSpinlock](SDL_LockSpinlock)
-* [SDL_UnlockSpinlock](SDL_UnlockSpinlock)
+- [SDL_LockSpinlock](SDL_LockSpinlock)
+- [SDL_UnlockSpinlock](SDL_UnlockSpinlock)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

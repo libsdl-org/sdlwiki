@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_UnlockProperties](SDL_UnlockProperties)
+- [SDL_UnlockProperties](SDL_UnlockProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

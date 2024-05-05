@@ -56,8 +56,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+- [SDL_UpdateNVTexture](SDL_UpdateNVTexture)
+- [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)

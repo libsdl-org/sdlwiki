@@ -37,8 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DestroyPixelFormat](SDL_DestroyPixelFormat)
-* [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
+- [SDL_DestroyPixelFormat](SDL_DestroyPixelFormat)
+- [SDL_SetPixelFormatPalette](SDL_SetPixelFormatPalette)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

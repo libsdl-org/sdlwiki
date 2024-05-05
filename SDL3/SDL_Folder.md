@@ -81,7 +81,7 @@ This enum is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetUserFolder](SDL_GetUserFolder)
+- [SDL_GetUserFolder](SDL_GetUserFolder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)

@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_BindAudioStreams](SDL_BindAudioStreams)
+- [SDL_BindAudioStreams](SDL_BindAudioStreams)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

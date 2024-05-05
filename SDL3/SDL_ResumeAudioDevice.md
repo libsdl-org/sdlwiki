@@ -49,8 +49,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+- [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
+- [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

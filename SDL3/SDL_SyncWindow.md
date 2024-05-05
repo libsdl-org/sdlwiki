@@ -43,12 +43,12 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetWindowSize](SDL_SetWindowSize)
-* [SDL_SetWindowPosition](SDL_SetWindowPosition)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_RestoreWindow](SDL_RestoreWindow)
+- [SDL_SetWindowSize](SDL_SetWindowSize)
+- [SDL_SetWindowPosition](SDL_SetWindowPosition)
+- [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+- [SDL_MinimizeWindow](SDL_MinimizeWindow)
+- [SDL_MaximizeWindow](SDL_MaximizeWindow)
+- [SDL_RestoreWindow](SDL_RestoreWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

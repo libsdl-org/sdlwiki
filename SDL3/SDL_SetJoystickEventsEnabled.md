@@ -32,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_JoystickEventsEnabled](SDL_JoystickEventsEnabled)
-* [SDL_UpdateJoysticks](SDL_UpdateJoysticks)
+- [SDL_JoystickEventsEnabled](SDL_JoystickEventsEnabled)
+- [SDL_UpdateJoysticks](SDL_UpdateJoysticks)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -56,8 +56,8 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
-* [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
+- [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
+- [SDL_SetAudioStreamPutCallback](SDL_SetAudioStreamPutCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)

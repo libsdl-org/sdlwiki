@@ -130,7 +130,7 @@ main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
+- [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

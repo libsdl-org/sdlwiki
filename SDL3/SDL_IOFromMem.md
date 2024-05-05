@@ -46,12 +46,12 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_IOFromConstMem](SDL_IOFromConstMem)
-* [SDL_CloseIO](SDL_CloseIO)
-* [SDL_ReadIO](SDL_ReadIO)
-* [SDL_SeekIO](SDL_SeekIO)
-* [SDL_TellIO](SDL_TellIO)
-* [SDL_WriteIO](SDL_WriteIO)
+- [SDL_IOFromConstMem](SDL_IOFromConstMem)
+- [SDL_CloseIO](SDL_CloseIO)
+- [SDL_ReadIO](SDL_ReadIO)
+- [SDL_SeekIO](SDL_SeekIO)
+- [SDL_TellIO](SDL_TellIO)
+- [SDL_WriteIO](SDL_WriteIO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

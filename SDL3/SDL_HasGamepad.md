@@ -25,7 +25,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepads](SDL_GetGamepads)
+- [SDL_GetGamepads](SDL_GetGamepads)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

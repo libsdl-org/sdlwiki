@@ -42,9 +42,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetPropertyType](SDL_GetPropertyType)
-* [SDL_HasProperty](SDL_HasProperty)
-* [SDL_SetNumberProperty](SDL_SetNumberProperty)
+- [SDL_GetPropertyType](SDL_GetPropertyType)
+- [SDL_HasProperty](SDL_HasProperty)
+- [SDL_SetNumberProperty](SDL_SetNumberProperty)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

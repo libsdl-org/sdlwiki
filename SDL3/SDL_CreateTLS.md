@@ -54,8 +54,8 @@ void *GetMyThreadData(void)
 
 ## See Also
 
-* [SDL_GetTLS](SDL_GetTLS)
-* [SDL_SetTLS](SDL_SetTLS)
+- [SDL_GetTLS](SDL_GetTLS)
+- [SDL_SetTLS](SDL_SetTLS)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

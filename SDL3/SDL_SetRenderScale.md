@@ -43,7 +43,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetRenderScale](SDL_GetRenderScale)
+- [SDL_GetRenderScale](SDL_GetRenderScale)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

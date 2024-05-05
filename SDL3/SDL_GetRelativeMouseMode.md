@@ -29,7 +29,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetRelativeMouseMode](SDL_SetRelativeMouseMode)
+- [SDL_SetRelativeMouseMode](SDL_SetRelativeMouseMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)

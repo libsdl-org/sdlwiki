@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_Metal_CreateView](SDL_Metal_CreateView)
+- [SDL_Metal_CreateView](SDL_Metal_CreateView)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -31,8 +31,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+- [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
+- [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -61,8 +61,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateThread](SDL_CreateThread)
-* [SDL_WaitThread](SDL_WaitThread)
+- [SDL_CreateThread](SDL_CreateThread)
+- [SDL_WaitThread](SDL_WaitThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

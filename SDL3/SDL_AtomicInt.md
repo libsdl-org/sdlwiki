@@ -38,10 +38,10 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
-* [SDL_AtomicGet](SDL_AtomicGet)
-* [SDL_AtomicSet](SDL_AtomicSet)
-* [SDL_AtomicAdd](SDL_AtomicAdd)
+- [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
+- [SDL_AtomicGet](SDL_AtomicGet)
+- [SDL_AtomicSet](SDL_AtomicSet)
+- [SDL_AtomicAdd](SDL_AtomicAdd)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

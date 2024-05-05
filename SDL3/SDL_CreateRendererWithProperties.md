@@ -71,11 +71,11 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateProperties](SDL_CreateProperties)
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_CreateProperties](SDL_CreateProperties)
+- [SDL_CreateRenderer](SDL_CreateRenderer)
+- [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
+- [SDL_DestroyRenderer](SDL_DestroyRenderer)
+- [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

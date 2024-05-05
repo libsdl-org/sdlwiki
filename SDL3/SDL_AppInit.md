@@ -65,9 +65,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AppIterate](SDL_AppIterate)
-* [SDL_AppEvent](SDL_AppEvent)
-* [SDL_AppQuit](SDL_AppQuit)
+- [SDL_AppIterate](SDL_AppIterate)
+- [SDL_AppEvent](SDL_AppEvent)
+- [SDL_AppQuit](SDL_AppQuit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

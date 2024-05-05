@@ -23,7 +23,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HapticCondition](SDL_HapticCondition)
+- [SDL_HapticCondition](SDL_HapticCondition)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

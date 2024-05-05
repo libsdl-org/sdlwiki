@@ -83,7 +83,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
+- [SDL_GetCurrentThreadID](SDL_GetCurrentThreadID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

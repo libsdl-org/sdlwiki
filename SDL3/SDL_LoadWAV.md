@@ -55,8 +55,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_free](SDL_free)
-* [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
+- [SDL_free](SDL_free)
+- [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), CategoryAudio

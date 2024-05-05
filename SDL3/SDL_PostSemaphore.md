@@ -31,9 +31,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+- [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+- [SDL_WaitSemaphore](SDL_WaitSemaphore)
+- [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

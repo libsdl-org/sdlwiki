@@ -35,11 +35,11 @@ This enum is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_Init](SDL_Init)
-* [SDL_Quit](SDL_Quit)
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_QuitSubSystem](SDL_QuitSubSystem)
-* [SDL_WasInit](SDL_WasInit)
+- [SDL_Init](SDL_Init)
+- [SDL_Quit](SDL_Quit)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_QuitSubSystem](SDL_QuitSubSystem)
+- [SDL_WasInit](SDL_WasInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)

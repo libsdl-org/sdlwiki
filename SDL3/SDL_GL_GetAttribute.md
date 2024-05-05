@@ -32,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
-* [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+- [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
+- [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

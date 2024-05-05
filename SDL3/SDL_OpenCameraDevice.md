@@ -71,8 +71,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetCameraDevices](SDL_GetCameraDevices)
-* [SDL_GetCameraFormat](SDL_GetCameraFormat)
+- [SDL_GetCameraDevices](SDL_GetCameraDevices)
+- [SDL_GetCameraFormat](SDL_GetCameraFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -44,7 +44,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_sqrtf](SDL_sqrtf)
+- [SDL_sqrtf](SDL_sqrtf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -41,7 +41,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
+- [SDL_AndroidGetExternalStorageState](SDL_AndroidGetExternalStorageState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)

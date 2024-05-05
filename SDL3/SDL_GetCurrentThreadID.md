@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetThreadID](SDL_GetThreadID)
+- [SDL_GetThreadID](SDL_GetThreadID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

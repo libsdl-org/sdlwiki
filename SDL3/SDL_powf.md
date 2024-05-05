@@ -48,9 +48,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_pow](SDL_pow)
-* [SDL_expf](SDL_expf)
-* [SDL_logf](SDL_logf)
+- [SDL_pow](SDL_pow)
+- [SDL_expf](SDL_expf)
+- [SDL_logf](SDL_logf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadStringForType](SDL_GetGamepadStringForType)
+- [SDL_GetGamepadStringForType](SDL_GetGamepadStringForType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

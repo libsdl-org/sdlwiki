@@ -41,12 +41,12 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CloseHaptic](SDL_CloseHaptic)
-* [SDL_GetHaptics](SDL_GetHaptics)
-* [SDL_OpenHapticFromJoystick](SDL_OpenHapticFromJoystick)
-* [SDL_OpenHapticFromMouse](SDL_OpenHapticFromMouse)
-* [SDL_SetHapticAutocenter](SDL_SetHapticAutocenter)
-* [SDL_SetHapticGain](SDL_SetHapticGain)
+- [SDL_CloseHaptic](SDL_CloseHaptic)
+- [SDL_GetHaptics](SDL_GetHaptics)
+- [SDL_OpenHapticFromJoystick](SDL_OpenHapticFromJoystick)
+- [SDL_OpenHapticFromMouse](SDL_OpenHapticFromMouse)
+- [SDL_SetHapticAutocenter](SDL_SetHapticAutocenter)
+- [SDL_SetHapticGain](SDL_SetHapticGain)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_OpenIO](SDL_OpenIO)
+- [SDL_OpenIO](SDL_OpenIO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

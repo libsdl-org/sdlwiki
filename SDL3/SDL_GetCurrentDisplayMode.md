@@ -80,8 +80,8 @@ int main(int argc, char* argv[])
 
 ## See Also
 
-* [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
-* [SDL_GetDisplays](SDL_GetDisplays)
+- [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
+- [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

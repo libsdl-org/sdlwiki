@@ -38,8 +38,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
-* [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
+- [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
+- [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

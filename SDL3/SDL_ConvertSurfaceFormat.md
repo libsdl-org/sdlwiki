@@ -41,9 +41,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ConvertSurface](SDL_ConvertSurface)
-* [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
-* [SDL_DestroySurface](SDL_DestroySurface)
+- [SDL_ConvertSurface](SDL_ConvertSurface)
+- [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
+- [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -45,8 +45,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_UpdateTexture](SDL_UpdateTexture)
-* [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
+- [SDL_UpdateTexture](SDL_UpdateTexture)
+- [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -62,9 +62,9 @@ SDL_Log("Pi - acos(-1):\t%f", SDL_PI_D - SDL_acos(-1));
 
 ## See Also
 
-* [SDL_acosf](SDL_acosf)
-* [SDL_asin](SDL_asin)
-* [SDL_cos](SDL_cos)
+- [SDL_acosf](SDL_acosf)
+- [SDL_asin](SDL_asin)
+- [SDL_cos](SDL_cos)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStandard](CategoryStandard)

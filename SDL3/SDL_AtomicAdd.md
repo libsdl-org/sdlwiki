@@ -38,8 +38,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AtomicDecRef](SDL_AtomicDecRef)
-* [SDL_AtomicIncRef](SDL_AtomicIncRef)
+- [SDL_AtomicDecRef](SDL_AtomicDecRef)
+- [SDL_AtomicIncRef](SDL_AtomicIncRef)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)

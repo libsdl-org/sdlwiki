@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HasRectIntersection](SDL_HasRectIntersection)
+- [SDL_HasRectIntersection](SDL_HasRectIntersection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

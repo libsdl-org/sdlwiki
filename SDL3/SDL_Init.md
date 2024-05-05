@@ -89,10 +89,10 @@ int main(int argc, char* argv[])
 
 ## See Also
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
-* [SDL_SetMainReady](SDL_SetMainReady)
-* [SDL_WasInit](SDL_WasInit)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_Quit](SDL_Quit)
+- [SDL_SetMainReady](SDL_SetMainReady)
+- [SDL_WasInit](SDL_WasInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

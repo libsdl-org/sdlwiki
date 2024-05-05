@@ -53,9 +53,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
-* [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
-* [SDL_UnlockRWLock](SDL_UnlockRWLock)
+- [SDL_LockRWLockForWriting](SDL_LockRWLockForWriting)
+- [SDL_TryLockRWLockForReading](SDL_TryLockRWLockForReading)
+- [SDL_UnlockRWLock](SDL_UnlockRWLock)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
+- [SDL_GetAssertionHandler](SDL_GetAssertionHandler)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssertions](CategoryAssertions)

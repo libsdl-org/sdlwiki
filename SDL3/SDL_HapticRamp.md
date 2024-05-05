@@ -52,8 +52,8 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)
-* [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)
+- [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

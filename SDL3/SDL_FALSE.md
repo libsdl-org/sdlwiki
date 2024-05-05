@@ -19,7 +19,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_bool](SDL_bool)
+- [SDL_bool](SDL_bool)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

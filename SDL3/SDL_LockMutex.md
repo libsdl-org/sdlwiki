@@ -63,8 +63,8 @@ SDL_DestroyMutex(mutex);
 
 ## See Also
 
-* [SDL_TryLockMutex](SDL_TryLockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
+- [SDL_TryLockMutex](SDL_TryLockMutex)
+- [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

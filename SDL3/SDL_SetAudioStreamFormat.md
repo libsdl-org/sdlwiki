@@ -54,8 +54,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)
-* [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
+- [SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)
+- [SDL_SetAudioStreamFrequencyRatio](SDL_SetAudioStreamFrequencyRatio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

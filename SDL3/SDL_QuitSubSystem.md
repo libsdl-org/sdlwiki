@@ -60,8 +60,8 @@ int main(int argc, char **argv) {
 
 ## See Also
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_Quit](SDL_Quit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

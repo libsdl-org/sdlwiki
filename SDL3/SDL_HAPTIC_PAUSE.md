@@ -23,8 +23,8 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_PauseHaptic](SDL_PauseHaptic)
-* [SDL_ResumeHaptic](SDL_ResumeHaptic)
+- [SDL_PauseHaptic](SDL_PauseHaptic)
+- [SDL_ResumeHaptic](SDL_ResumeHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

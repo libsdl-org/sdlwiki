@@ -140,7 +140,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
+- [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

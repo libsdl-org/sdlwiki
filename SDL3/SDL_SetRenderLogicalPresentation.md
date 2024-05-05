@@ -48,8 +48,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
-* [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
+- [SDL_ConvertEventToRenderCoordinates](SDL_ConvertEventToRenderCoordinates)
+- [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -75,8 +75,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AppInit](SDL_AppInit)
-* [SDL_AppIterate](SDL_AppIterate)
+- [SDL_AppInit](SDL_AppInit)
+- [SDL_AppIterate](SDL_AppIterate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -46,8 +46,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
-* [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
+- [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+- [SDL_GetAudioOutputDevices](SDL_GetAudioOutputDevices)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

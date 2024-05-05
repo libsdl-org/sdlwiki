@@ -61,8 +61,8 @@ Note: Although this example uses [SDL_Init](SDL_Init)(), [SDL_GetError](SDL_GetE
 
 ## See Also
 
-* [SDL_ClearError](SDL_ClearError)
-* [SDL_SetError](SDL_SetError)
+- [SDL_ClearError](SDL_ClearError)
+- [SDL_SetError](SDL_SetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

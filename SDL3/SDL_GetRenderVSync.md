@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetRenderVSync](SDL_SetRenderVSync)
+- [SDL_SetRenderVSync](SDL_SetRenderVSync)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

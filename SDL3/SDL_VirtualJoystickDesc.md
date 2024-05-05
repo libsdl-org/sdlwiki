@@ -45,7 +45,7 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
+- [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

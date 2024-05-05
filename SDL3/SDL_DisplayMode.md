@@ -28,11 +28,11 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
-* [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
-* [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
+- [SDL_GetFullscreenDisplayModes](SDL_GetFullscreenDisplayModes)
+- [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
+- [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
+- [SDL_SetWindowFullscreenMode](SDL_SetWindowFullscreenMode)
+- [SDL_GetWindowFullscreenMode](SDL_GetWindowFullscreenMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

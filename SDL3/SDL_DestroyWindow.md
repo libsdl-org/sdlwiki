@@ -35,9 +35,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
+- [SDL_CreatePopupWindow](SDL_CreatePopupWindow)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

@@ -78,7 +78,7 @@ This enum is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetCurrentDisplayOrientation](SDL_GetCurrentDisplayOrientation)
+- [SDL_GetCurrentDisplayOrientation](SDL_GetCurrentDisplayOrientation)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)

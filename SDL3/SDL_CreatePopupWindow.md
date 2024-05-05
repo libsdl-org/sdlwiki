@@ -70,10 +70,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
-* [SDL_DestroyWindow](SDL_DestroyWindow)
-* [SDL_GetWindowParent](SDL_GetWindowParent)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_CreateWindowWithProperties](SDL_CreateWindowWithProperties)
+- [SDL_DestroyWindow](SDL_DestroyWindow)
+- [SDL_GetWindowParent](SDL_GetWindowParent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

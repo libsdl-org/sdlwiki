@@ -39,8 +39,8 @@ SDL_ShowWindow(window);
 
 ## See Also
 
-* [SDL_HideWindow](SDL_HideWindow)
-* [SDL_RaiseWindow](SDL_RaiseWindow)
+- [SDL_HideWindow](SDL_HideWindow)
+- [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

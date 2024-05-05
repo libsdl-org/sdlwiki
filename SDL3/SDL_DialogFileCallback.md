@@ -37,10 +37,10 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DialogFileFilter](SDL_DialogFileFilter)
-* [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
-* [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
-* [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+- [SDL_DialogFileFilter](SDL_DialogFileFilter)
+- [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
+- [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
+- [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)

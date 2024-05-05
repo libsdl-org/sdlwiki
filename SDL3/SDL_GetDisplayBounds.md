@@ -46,8 +46,8 @@ if (SDL_GetDisplayBounds(0, &r) != 0) {
 
 ## See Also
 
-* [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)
-* [SDL_GetDisplays](SDL_GetDisplays)
+- [SDL_GetDisplayUsableBounds](SDL_GetDisplayUsableBounds)
+- [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

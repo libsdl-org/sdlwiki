@@ -28,9 +28,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LogGetPriority](SDL_LogGetPriority)
-* [SDL_LogResetPriorities](SDL_LogResetPriorities)
-* [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
+- [SDL_LogGetPriority](SDL_LogGetPriority)
+- [SDL_LogResetPriorities](SDL_LogResetPriorities)
+- [SDL_LogSetAllPriority](SDL_LogSetAllPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)

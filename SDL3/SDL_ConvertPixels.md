@@ -38,7 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ConvertPixelsAndColorspace](SDL_ConvertPixelsAndColorspace)
+- [SDL_ConvertPixelsAndColorspace](SDL_ConvertPixelsAndColorspace)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

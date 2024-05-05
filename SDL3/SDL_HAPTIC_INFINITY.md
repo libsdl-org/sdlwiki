@@ -19,7 +19,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RunHapticEffect](SDL_RunHapticEffect)
+- [SDL_RunHapticEffect](SDL_RunHapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

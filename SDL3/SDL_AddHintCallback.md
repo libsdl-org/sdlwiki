@@ -43,7 +43,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DelHintCallback](SDL_DelHintCallback)
+- [SDL_DelHintCallback](SDL_DelHintCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints), [CategoryDraft](CategoryDraft)

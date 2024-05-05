@@ -32,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GamepadHasButton](SDL_GamepadHasButton)
-* [SDL_GetGamepadAxis](SDL_GetGamepadAxis)
+- [SDL_GamepadHasButton](SDL_GamepadHasButton)
+- [SDL_GetGamepadAxis](SDL_GetGamepadAxis)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

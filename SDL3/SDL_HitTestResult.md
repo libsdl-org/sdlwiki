@@ -31,7 +31,7 @@ This enum is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HitTest](SDL_HitTest)
+- [SDL_HitTest](SDL_HitTest)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)

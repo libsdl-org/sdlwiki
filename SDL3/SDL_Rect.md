@@ -23,13 +23,13 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RectEmpty](SDL_RectEmpty)
-* [SDL_RectsEqual](SDL_RectsEqual)
-* [SDL_HasRectIntersection](SDL_HasRectIntersection)
-* [SDL_GetRectIntersection](SDL_GetRectIntersection)
-* [SDL_GetRectAndLineIntersection](SDL_GetRectAndLineIntersection)
-* [SDL_GetRectUnion](SDL_GetRectUnion)
-* [SDL_GetRectEnclosingPoints](SDL_GetRectEnclosingPoints)
+- [SDL_RectEmpty](SDL_RectEmpty)
+- [SDL_RectsEqual](SDL_RectsEqual)
+- [SDL_HasRectIntersection](SDL_HasRectIntersection)
+- [SDL_GetRectIntersection](SDL_GetRectIntersection)
+- [SDL_GetRectAndLineIntersection](SDL_GetRectAndLineIntersection)
+- [SDL_GetRectUnion](SDL_GetRectUnion)
+- [SDL_GetRectEnclosingPoints](SDL_GetRectEnclosingPoints)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

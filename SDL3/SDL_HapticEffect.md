@@ -92,12 +92,12 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HapticConstant](SDL_HapticConstant)
-* [SDL_HapticPeriodic](SDL_HapticPeriodic)
-* [SDL_HapticCondition](SDL_HapticCondition)
-* [SDL_HapticRamp](SDL_HapticRamp)
-* [SDL_HapticLeftRight](SDL_HapticLeftRight)
-* [SDL_HapticCustom](SDL_HapticCustom)
+- [SDL_HapticConstant](SDL_HapticConstant)
+- [SDL_HapticPeriodic](SDL_HapticPeriodic)
+- [SDL_HapticCondition](SDL_HapticCondition)
+- [SDL_HapticRamp](SDL_HapticRamp)
+- [SDL_HapticLeftRight](SDL_HapticLeftRight)
+- [SDL_HapticCustom](SDL_HapticCustom)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

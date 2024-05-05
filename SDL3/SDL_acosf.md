@@ -46,9 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_acos](SDL_acos)
-* [SDL_asinf](SDL_asinf)
-* [SDL_cosf](SDL_cosf)
+- [SDL_acos](SDL_acos)
+- [SDL_asinf](SDL_asinf)
+- [SDL_cosf](SDL_cosf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

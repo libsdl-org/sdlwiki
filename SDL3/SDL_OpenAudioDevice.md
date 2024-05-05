@@ -119,8 +119,8 @@ if (dev == 0) {
 
 ## See Also
 
-* [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
-* [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
+- [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
+- [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

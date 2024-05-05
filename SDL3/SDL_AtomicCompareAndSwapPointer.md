@@ -38,9 +38,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
-* [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
-* [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
+- [SDL_AtomicCompareAndSwap](SDL_AtomicCompareAndSwap)
+- [SDL_AtomicGetPtr](SDL_AtomicGetPtr)
+- [SDL_AtomicSetPtr](SDL_AtomicSetPtr)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

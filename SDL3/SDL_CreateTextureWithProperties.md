@@ -138,12 +138,12 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateProperties](SDL_CreateProperties)
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+- [SDL_CreateProperties](SDL_CreateProperties)
+- [SDL_CreateTexture](SDL_CreateTexture)
+- [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
+- [SDL_DestroyTexture](SDL_DestroyTexture)
+- [SDL_QueryTexture](SDL_QueryTexture)
+- [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

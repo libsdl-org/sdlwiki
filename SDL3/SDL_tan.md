@@ -44,11 +44,11 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_tanf](SDL_tanf)
-* [SDL_sin](SDL_sin)
-* [SDL_cos](SDL_cos)
-* [SDL_atan](SDL_atan)
-* [SDL_atan2](SDL_atan2)
+- [SDL_tanf](SDL_tanf)
+- [SDL_sin](SDL_sin)
+- [SDL_cos](SDL_cos)
+- [SDL_atan](SDL_atan)
+- [SDL_atan2](SDL_atan2)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -30,8 +30,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetHint](SDL_SetHint)
-* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
+- [SDL_SetHint](SDL_SetHint)
+- [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderLine](SDL_RenderLine)
+- [SDL_RenderLine](SDL_RenderLine)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

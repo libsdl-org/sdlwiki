@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
+- [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

@@ -71,8 +71,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AppInit](SDL_AppInit)
-* [SDL_AppEvent](SDL_AppEvent)
+- [SDL_AppInit](SDL_AppInit)
+- [SDL_AppEvent](SDL_AppEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

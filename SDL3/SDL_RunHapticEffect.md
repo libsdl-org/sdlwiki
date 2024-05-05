@@ -41,9 +41,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetHapticEffectStatus](SDL_GetHapticEffectStatus)
-* [SDL_StopHapticEffect](SDL_StopHapticEffect)
-* [SDL_StopHapticEffects](SDL_StopHapticEffects)
+- [SDL_GetHapticEffectStatus](SDL_GetHapticEffectStatus)
+- [SDL_StopHapticEffect](SDL_StopHapticEffect)
+- [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

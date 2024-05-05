@@ -42,11 +42,11 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_floorf](SDL_floorf)
-* [SDL_ceil](SDL_ceil)
-* [SDL_trunc](SDL_trunc)
-* [SDL_round](SDL_round)
-* [SDL_lround](SDL_lround)
+- [SDL_floorf](SDL_floorf)
+- [SDL_ceil](SDL_ceil)
+- [SDL_trunc](SDL_trunc)
+- [SDL_round](SDL_round)
+- [SDL_lround](SDL_lround)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

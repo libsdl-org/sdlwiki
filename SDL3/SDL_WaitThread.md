@@ -92,8 +92,8 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_CreateThread](SDL_CreateThread)
-* [SDL_DetachThread](SDL_DetachThread)
+- [SDL_CreateThread](SDL_CreateThread)
+- [SDL_DetachThread](SDL_DetachThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)

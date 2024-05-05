@@ -25,8 +25,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CursorVisible](SDL_CursorVisible)
-* [SDL_ShowCursor](SDL_ShowCursor)
+- [SDL_CursorVisible](SDL_CursorVisible)
+- [SDL_ShowCursor](SDL_ShowCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

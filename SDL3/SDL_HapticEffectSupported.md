@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
-* [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
+- [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
+- [SDL_GetHapticFeatures](SDL_GetHapticFeatures)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)

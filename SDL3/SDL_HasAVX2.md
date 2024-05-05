@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HasAVX](SDL_HasAVX)
-* [SDL_HasAVX512F](SDL_HasAVX512F)
+- [SDL_HasAVX](SDL_HasAVX)
+- [SDL_HasAVX512F](SDL_HasAVX512F)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU), [CategoryDraft](CategoryDraft)

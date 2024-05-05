@@ -23,7 +23,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_JOYSTICK_AXIS_MAX](SDL_JOYSTICK_AXIS_MAX)
+- [SDL_JOYSTICK_AXIS_MAX](SDL_JOYSTICK_AXIS_MAX)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

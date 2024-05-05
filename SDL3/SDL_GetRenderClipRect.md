@@ -32,8 +32,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderClipEnabled](SDL_RenderClipEnabled)
-* [SDL_SetRenderClipRect](SDL_SetRenderClipRect)
+- [SDL_RenderClipEnabled](SDL_RenderClipEnabled)
+- [SDL_SetRenderClipRect](SDL_SetRenderClipRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

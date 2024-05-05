@@ -55,8 +55,8 @@ SDL_RenderFillRect(renderer, &rectangle);
 
 ## See Also
 
-* [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
-* [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
+- [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
+- [SDL_SetRenderDrawColorFloat](SDL_SetRenderDrawColorFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

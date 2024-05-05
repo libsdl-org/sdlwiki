@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_hid_exit](SDL_hid_exit)
+- [SDL_hid_exit](SDL_hid_exit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

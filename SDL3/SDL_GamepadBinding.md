@@ -64,7 +64,7 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadBindings](SDL_GetGamepadBindings)
+- [SDL_GetGamepadBindings](SDL_GetGamepadBindings)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

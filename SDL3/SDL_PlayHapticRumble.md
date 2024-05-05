@@ -33,8 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_InitHapticRumble](SDL_InitHapticRumble)
-* [SDL_StopHapticRumble](SDL_StopHapticRumble)
+- [SDL_InitHapticRumble](SDL_InitHapticRumble)
+- [SDL_StopHapticRumble](SDL_StopHapticRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

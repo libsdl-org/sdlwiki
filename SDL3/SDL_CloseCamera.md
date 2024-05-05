@@ -31,8 +31,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_OpenCameraWithSpec](SDL_OpenCameraWithSpec)
-* [SDL_OpenCamera](SDL_OpenCamera)
+- [SDL_OpenCameraWithSpec](SDL_OpenCameraWithSpec)
+- [SDL_OpenCamera](SDL_OpenCamera)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,7 +33,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AtomicDecRef](SDL_AtomicDecRef)
+- [SDL_AtomicDecRef](SDL_AtomicDecRef)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

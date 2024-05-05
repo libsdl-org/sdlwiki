@@ -79,12 +79,12 @@ SDL_DestroySemaphore(sem);
 
 ## See Also
 
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+- [SDL_DestroySemaphore](SDL_DestroySemaphore)
+- [SDL_PostSemaphore](SDL_PostSemaphore)
+- [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+- [SDL_GetSemaphoreValue](SDL_GetSemaphoreValue)
+- [SDL_WaitSemaphore](SDL_WaitSemaphore)
+- [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

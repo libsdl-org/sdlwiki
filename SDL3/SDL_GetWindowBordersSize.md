@@ -58,7 +58,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+- [SDL_GetWindowSize](SDL_GetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo), [CategoryDraft](CategoryDraft)

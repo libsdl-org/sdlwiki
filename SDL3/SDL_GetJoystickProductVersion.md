@@ -34,7 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetJoystickInstanceProductVersion](SDL_GetJoystickInstanceProductVersion)
+- [SDL_GetJoystickInstanceProductVersion](SDL_GetJoystickInstanceProductVersion)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

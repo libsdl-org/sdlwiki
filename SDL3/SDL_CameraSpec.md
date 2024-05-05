@@ -31,8 +31,8 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetCameraDeviceSupportedFormats](SDL_GetCameraDeviceSupportedFormats)
-* [SDL_GetCameraFormat](SDL_GetCameraFormat)
+- [SDL_GetCameraDeviceSupportedFormats](SDL_GetCameraDeviceSupportedFormats)
+- [SDL_GetCameraFormat](SDL_GetCameraFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

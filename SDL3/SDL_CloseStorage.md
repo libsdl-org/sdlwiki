@@ -33,10 +33,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_OpenFileStorage](SDL_OpenFileStorage)
-* [SDL_OpenStorage](SDL_OpenStorage)
-* [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
-* [SDL_OpenUserStorage](SDL_OpenUserStorage)
+- [SDL_OpenFileStorage](SDL_OpenFileStorage)
+- [SDL_OpenStorage](SDL_OpenStorage)
+- [SDL_OpenTitleStorage](SDL_OpenTitleStorage)
+- [SDL_OpenUserStorage](SDL_OpenUserStorage)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -38,9 +38,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DestroySurface](SDL_DestroySurface)
-* [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
-* [SDL_SaveBMP](SDL_SaveBMP)
+- [SDL_DestroySurface](SDL_DestroySurface)
+- [SDL_LoadBMP_IO](SDL_LoadBMP_IO)
+- [SDL_SaveBMP](SDL_SaveBMP)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -47,9 +47,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DialogFileCallback](SDL_DialogFileCallback)
-* [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
-* [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
+- [SDL_DialogFileCallback](SDL_DialogFileCallback)
+- [SDL_ShowOpenFileDialog](SDL_ShowOpenFileDialog)
+- [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

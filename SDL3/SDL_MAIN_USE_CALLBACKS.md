@@ -32,10 +32,10 @@ This macro is used by the headers since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AppInit](SDL_AppInit)
-* [SDL_AppEvent](SDL_AppEvent)
-* [SDL_AppIterate](SDL_AppIterate)
-* [SDL_AppQuit](SDL_AppQuit)
+- [SDL_AppInit](SDL_AppInit)
+- [SDL_AppEvent](SDL_AppEvent)
+- [SDL_AppIterate](SDL_AppIterate)
+- [SDL_AppQuit](SDL_AppQuit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

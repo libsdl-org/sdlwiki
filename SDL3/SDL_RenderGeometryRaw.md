@@ -48,7 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderGeometry](SDL_RenderGeometry)
+- [SDL_RenderGeometry](SDL_RenderGeometry)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

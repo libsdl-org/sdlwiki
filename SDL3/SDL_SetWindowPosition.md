@@ -58,8 +58,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetWindowPosition](SDL_GetWindowPosition)
-* [SDL_SyncWindow](SDL_SyncWindow)
+- [SDL_GetWindowPosition](SDL_GetWindowPosition)
+- [SDL_SyncWindow](SDL_SyncWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

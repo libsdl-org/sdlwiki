@@ -39,8 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
-* [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
+- [SDL_GetSurfaceAlphaMod](SDL_GetSurfaceAlphaMod)
+- [SDL_SetSurfaceColorMod](SDL_SetSurfaceColorMod)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

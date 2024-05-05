@@ -24,7 +24,7 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AudioFormat](SDL_AudioFormat)
+- [SDL_AudioFormat](SDL_AudioFormat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

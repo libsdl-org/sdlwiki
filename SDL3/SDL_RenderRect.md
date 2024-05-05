@@ -31,7 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderRects](SDL_RenderRects)
+- [SDL_RenderRects](SDL_RenderRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

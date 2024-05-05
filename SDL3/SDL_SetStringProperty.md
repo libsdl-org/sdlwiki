@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetStringProperty](SDL_GetStringProperty)
+- [SDL_GetStringProperty](SDL_GetStringProperty)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -73,7 +73,7 @@ SDL_free(extensions);
 
 ## See Also
 
-* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+- [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

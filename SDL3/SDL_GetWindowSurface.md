@@ -80,10 +80,10 @@ int main(int argc, char* argv[])
 
 ## See Also
 
-* [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
-* [SDL_WindowHasSurface](SDL_WindowHasSurface)
-* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
-* [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
+- [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
+- [SDL_WindowHasSurface](SDL_WindowHasSurface)
+- [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
+- [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

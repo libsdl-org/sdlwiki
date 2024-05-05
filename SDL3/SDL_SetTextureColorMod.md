@@ -56,9 +56,9 @@ SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 
 ## See Also
 
-* [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
-* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
-* [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
+- [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
+- [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
+- [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

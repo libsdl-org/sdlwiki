@@ -37,8 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_IOprintf](SDL_IOprintf)
-* [SDL_WriteIO](SDL_WriteIO)
+- [SDL_IOprintf](SDL_IOprintf)
+- [SDL_WriteIO](SDL_WriteIO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -39,8 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_TryLockMutex](SDL_TryLockMutex)
+- [SDL_LockMutex](SDL_LockMutex)
+- [SDL_TryLockMutex](SDL_TryLockMutex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)

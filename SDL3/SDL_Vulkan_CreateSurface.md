@@ -59,7 +59,7 @@ if (!SDL_Vulkan_CreateSurface(window, instance, NULL, &surface)) handle_error();
 
 ## See Also
 
-* [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
+- [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)

@@ -50,13 +50,13 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
-* [SDL_GetFloatProperty](SDL_GetFloatProperty)
-* [SDL_GetNumberProperty](SDL_GetNumberProperty)
-* [SDL_GetPropertyType](SDL_GetPropertyType)
-* [SDL_GetStringProperty](SDL_GetStringProperty)
-* [SDL_HasProperty](SDL_HasProperty)
-* [SDL_SetProperty](SDL_SetProperty)
+- [SDL_GetBooleanProperty](SDL_GetBooleanProperty)
+- [SDL_GetFloatProperty](SDL_GetFloatProperty)
+- [SDL_GetNumberProperty](SDL_GetNumberProperty)
+- [SDL_GetPropertyType](SDL_GetPropertyType)
+- [SDL_GetStringProperty](SDL_GetStringProperty)
+- [SDL_HasProperty](SDL_HasProperty)
+- [SDL_SetProperty](SDL_SetProperty)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

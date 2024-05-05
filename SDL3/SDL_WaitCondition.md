@@ -48,9 +48,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_BroadcastCondition](SDL_BroadcastCondition)
-* [SDL_SignalCondition](SDL_SignalCondition)
-* [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
+- [SDL_BroadcastCondition](SDL_BroadcastCondition)
+- [SDL_SignalCondition](SDL_SignalCondition)
+- [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

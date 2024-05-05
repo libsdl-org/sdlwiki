@@ -33,8 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_StartTextInput](SDL_StartTextInput)
-* [SDL_ScreenKeyboardShown](SDL_ScreenKeyboardShown)
+- [SDL_StartTextInput](SDL_StartTextInput)
+- [SDL_ScreenKeyboardShown](SDL_ScreenKeyboardShown)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

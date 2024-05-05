@@ -40,7 +40,7 @@ The blit function should not be called on a locked surface.
 The blit semantics for surfaces with and without blending and colorkey are
 defined as follows:
 
-```c
+```
    RGBA->RGB:
      Source surface blend mode set to SDL_BLENDMODE_BLEND:
       alpha-blend (using the source alpha-channel and per-surface alpha)
@@ -96,7 +96,7 @@ SDL_BlitSurface(surface, &source_rect, temp_surface, NULL);
 
 ## See Also
 
-* [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
+- [SDL_BlitSurfaceScaled](SDL_BlitSurfaceScaled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

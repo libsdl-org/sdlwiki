@@ -57,9 +57,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_BindAudioStreams](SDL_BindAudioStreams)
-* [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
-* [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
+- [SDL_BindAudioStreams](SDL_BindAudioStreams)
+- [SDL_UnbindAudioStream](SDL_UnbindAudioStream)
+- [SDL_GetAudioStreamDevice](SDL_GetAudioStreamDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -39,8 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_isgraph](SDL_isgraph)
-* [SDL_isalnum](SDL_isalnum)
+- [SDL_isgraph](SDL_isgraph)
+- [SDL_isalnum](SDL_isalnum)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

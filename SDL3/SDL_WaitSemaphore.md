@@ -76,9 +76,9 @@ int main() {
 
 ## See Also
 
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
+- [SDL_PostSemaphore](SDL_PostSemaphore)
+- [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+- [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -37,8 +37,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
-* [SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)
+- [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
+- [SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

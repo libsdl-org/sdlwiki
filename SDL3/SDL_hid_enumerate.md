@@ -48,7 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_hid_device_change_count](SDL_hid_device_change_count)
+- [SDL_hid_device_change_count](SDL_hid_device_change_count)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

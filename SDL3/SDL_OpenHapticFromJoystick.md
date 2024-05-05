@@ -41,8 +41,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CloseHaptic](SDL_CloseHaptic)
-* [SDL_IsJoystickHaptic](SDL_IsJoystickHaptic)
+- [SDL_CloseHaptic](SDL_CloseHaptic)
+- [SDL_IsJoystickHaptic](SDL_IsJoystickHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

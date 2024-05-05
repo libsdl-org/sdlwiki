@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
+- [SDL_AndroidGetExternalStoragePath](SDL_AndroidGetExternalStoragePath)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem), [CategoryDraft](CategoryDraft), [CategoryAndroid](CategoryAndroid)

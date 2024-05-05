@@ -130,7 +130,7 @@ while (SDL_PollEvent (&event))
 
 ## See Also
 
-* [SDL_RemoveTimer](SDL_RemoveTimer)
+- [SDL_RemoveTimer](SDL_RemoveTimer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)

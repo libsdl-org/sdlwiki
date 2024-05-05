@@ -38,10 +38,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetJoystickAxis](SDL_GetJoystickAxis)
-* [SDL_GetNumJoystickBalls](SDL_GetNumJoystickBalls)
-* [SDL_GetNumJoystickButtons](SDL_GetNumJoystickButtons)
-* [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
+- [SDL_GetJoystickAxis](SDL_GetJoystickAxis)
+- [SDL_GetNumJoystickBalls](SDL_GetNumJoystickBalls)
+- [SDL_GetNumJoystickButtons](SDL_GetNumJoystickButtons)
+- [SDL_GetNumJoystickHats](SDL_GetNumJoystickHats)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

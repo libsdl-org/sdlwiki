@@ -35,8 +35,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
-* [SDL_SetRenderScale](SDL_SetRenderScale)
+- [SDL_SetRenderLogicalPresentation](SDL_SetRenderLogicalPresentation)
+- [SDL_SetRenderScale](SDL_SetRenderScale)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

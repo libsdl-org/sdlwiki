@@ -133,11 +133,11 @@ int main(int argc, char **argv)
 
 ## See Also
 
-* [SDL_AddEventWatch](SDL_AddEventWatch)
-* [SDL_SetEventEnabled](SDL_SetEventEnabled)
-* [SDL_GetEventFilter](SDL_GetEventFilter)
-* [SDL_PeepEvents](SDL_PeepEvents)
-* [SDL_PushEvent](SDL_PushEvent)
+- [SDL_AddEventWatch](SDL_AddEventWatch)
+- [SDL_SetEventEnabled](SDL_SetEventEnabled)
+- [SDL_GetEventFilter](SDL_GetEventFilter)
+- [SDL_PeepEvents](SDL_PeepEvents)
+- [SDL_PushEvent](SDL_PushEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

@@ -70,7 +70,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
+- [SDL_SetAudioStreamGetCallback](SDL_SetAudioStreamGetCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

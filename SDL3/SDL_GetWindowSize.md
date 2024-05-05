@@ -44,9 +44,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
-* [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
-* [SDL_SetWindowSize](SDL_SetWindowSize)
+- [SDL_GetRenderOutputSize](SDL_GetRenderOutputSize)
+- [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)
+- [SDL_SetWindowSize](SDL_SetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

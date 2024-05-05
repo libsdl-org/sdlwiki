@@ -50,8 +50,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DelEventWatch](SDL_DelEventWatch)
-* [SDL_SetEventFilter](SDL_SetEventFilter)
+- [SDL_DelEventWatch](SDL_DelEventWatch)
+- [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

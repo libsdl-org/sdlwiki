@@ -49,8 +49,8 @@ if (display_mode == NULL) {
 
 ## See Also
 
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_GetDisplays](SDL_GetDisplays)
+- [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
+- [SDL_GetDisplays](SDL_GetDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

@@ -33,8 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ReadStorageFile](SDL_ReadStorageFile)
-* [SDL_StorageReady](SDL_StorageReady)
+- [SDL_ReadStorageFile](SDL_ReadStorageFile)
+- [SDL_StorageReady](SDL_StorageReady)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

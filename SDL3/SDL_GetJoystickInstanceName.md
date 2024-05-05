@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetJoystickName](SDL_GetJoystickName)
-* [SDL_GetJoysticks](SDL_GetJoysticks)
+- [SDL_GetJoystickName](SDL_GetJoystickName)
+- [SDL_GetJoysticks](SDL_GetJoysticks)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

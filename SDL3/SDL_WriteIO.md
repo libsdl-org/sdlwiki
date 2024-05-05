@@ -46,10 +46,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_IOprintf](SDL_IOprintf)
-* [SDL_ReadIO](SDL_ReadIO)
-* [SDL_SeekIO](SDL_SeekIO)
-* [SDL_GetIOStatus](SDL_GetIOStatus)
+- [SDL_IOprintf](SDL_IOprintf)
+- [SDL_ReadIO](SDL_ReadIO)
+- [SDL_SeekIO](SDL_SeekIO)
+- [SDL_GetIOStatus](SDL_GetIOStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

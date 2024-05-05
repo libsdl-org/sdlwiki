@@ -38,10 +38,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
-* [SDL_GetGamepadInstanceMapping](SDL_GetGamepadInstanceMapping)
-* [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
-* [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
+- [SDL_AddGamepadMapping](SDL_AddGamepadMapping)
+- [SDL_GetGamepadInstanceMapping](SDL_GetGamepadInstanceMapping)
+- [SDL_GetGamepadMappingForGUID](SDL_GetGamepadMappingForGUID)
+- [SDL_SetGamepadMapping](SDL_SetGamepadMapping)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

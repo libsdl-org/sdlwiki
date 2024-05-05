@@ -58,7 +58,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_iOSSetEventPump](SDL_iOSSetEventPump)
+- [SDL_iOSSetEventPump](SDL_iOSSetEventPump)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

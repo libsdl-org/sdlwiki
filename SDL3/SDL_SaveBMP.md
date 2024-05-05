@@ -40,8 +40,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
+- [SDL_LoadBMP](SDL_LoadBMP)
+- [SDL_SaveBMP_IO](SDL_SaveBMP_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -41,7 +41,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetRectIntersection](SDL_GetRectIntersection)
+- [SDL_GetRectIntersection](SDL_GetRectIntersection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

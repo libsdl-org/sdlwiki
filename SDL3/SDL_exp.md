@@ -50,8 +50,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_expf](SDL_expf)
-* [SDL_log](SDL_log)
+- [SDL_expf](SDL_expf)
+- [SDL_log](SDL_log)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

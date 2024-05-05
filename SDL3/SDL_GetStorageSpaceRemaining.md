@@ -30,8 +30,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_StorageReady](SDL_StorageReady)
-* [SDL_WriteStorageFile](SDL_WriteStorageFile)
+- [SDL_StorageReady](SDL_StorageReady)
+- [SDL_WriteStorageFile](SDL_WriteStorageFile)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

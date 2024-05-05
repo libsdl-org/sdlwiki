@@ -43,7 +43,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_SetRenderTarget](SDL_SetRenderTarget)
+- [SDL_SetRenderTarget](SDL_SetRenderTarget)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender), [CategoryDraft](CategoryDraft)

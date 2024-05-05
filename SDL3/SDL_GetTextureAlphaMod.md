@@ -32,9 +32,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetTextureAlphaModFloat](SDL_GetTextureAlphaModFloat)
-* [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
-* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
+- [SDL_GetTextureAlphaModFloat](SDL_GetTextureAlphaModFloat)
+- [SDL_GetTextureColorMod](SDL_GetTextureColorMod)
+- [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

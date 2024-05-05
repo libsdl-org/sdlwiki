@@ -19,8 +19,8 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_TRUE](SDL_TRUE)
-* [SDL_FALSE](SDL_FALSE)
+- [SDL_TRUE](SDL_TRUE)
+- [SDL_FALSE](SDL_FALSE)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)

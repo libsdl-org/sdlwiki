@@ -23,7 +23,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HapticRamp](SDL_HapticRamp)
+- [SDL_HapticRamp](SDL_HapticRamp)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

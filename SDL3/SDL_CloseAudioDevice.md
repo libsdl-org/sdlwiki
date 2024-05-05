@@ -51,7 +51,7 @@ if (devid != 0) {
 
 ## See Also
 
-* [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
+- [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)

@@ -41,9 +41,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_ResetHint](SDL_ResetHint)
-* [SDL_SetHint](SDL_SetHint)
+- [SDL_GetHint](SDL_GetHint)
+- [SDL_ResetHint](SDL_ResetHint)
+- [SDL_SetHint](SDL_SetHint)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

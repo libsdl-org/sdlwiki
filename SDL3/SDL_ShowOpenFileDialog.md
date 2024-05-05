@@ -48,10 +48,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DialogFileCallback](SDL_DialogFileCallback)
-* [SDL_DialogFileFilter](SDL_DialogFileFilter)
-* [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
-* [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
+- [SDL_DialogFileCallback](SDL_DialogFileCallback)
+- [SDL_DialogFileFilter](SDL_DialogFileFilter)
+- [SDL_ShowSaveFileDialog](SDL_ShowSaveFileDialog)
+- [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

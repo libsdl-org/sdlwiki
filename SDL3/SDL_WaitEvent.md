@@ -41,9 +41,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_PushEvent](SDL_PushEvent)
-* [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+- [SDL_PollEvent](SDL_PollEvent)
+- [SDL_PushEvent](SDL_PushEvent)
+- [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

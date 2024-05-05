@@ -47,9 +47,9 @@ SDL_SetHint(SDL_HINT_LOGGING, "2");
 
 ## See Also
 
-* [SDL_GetHint](SDL_GetHint)
-* [SDL_ResetHint](SDL_ResetHint)
-* [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
+- [SDL_GetHint](SDL_GetHint)
+- [SDL_ResetHint](SDL_ResetHint)
+- [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)

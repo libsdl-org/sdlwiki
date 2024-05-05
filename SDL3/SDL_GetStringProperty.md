@@ -37,9 +37,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetPropertyType](SDL_GetPropertyType)
-* [SDL_HasProperty](SDL_HasProperty)
-* [SDL_SetStringProperty](SDL_SetStringProperty)
+- [SDL_GetPropertyType](SDL_GetPropertyType)
+- [SDL_HasProperty](SDL_HasProperty)
+- [SDL_SetStringProperty](SDL_SetStringProperty)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

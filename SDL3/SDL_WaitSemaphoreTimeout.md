@@ -76,9 +76,9 @@ SDL_DestroySemaphore(sem);
 
 ## See Also
 
-* [SDL_PostSemaphore](SDL_PostSemaphore)
-* [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
-* [SDL_WaitSemaphore](SDL_WaitSemaphore)
+- [SDL_PostSemaphore](SDL_PostSemaphore)
+- [SDL_TryWaitSemaphore](SDL_TryWaitSemaphore)
+- [SDL_WaitSemaphore](SDL_WaitSemaphore)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

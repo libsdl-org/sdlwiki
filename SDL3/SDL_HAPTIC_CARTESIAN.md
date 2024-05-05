@@ -19,7 +19,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HapticDirection](SDL_HapticDirection)
+- [SDL_HapticDirection](SDL_HapticDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

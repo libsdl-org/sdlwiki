@@ -31,8 +31,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadTouchpadFinger](SDL_GetGamepadTouchpadFinger)
-* [SDL_GetNumGamepadTouchpads](SDL_GetNumGamepadTouchpads)
+- [SDL_GetGamepadTouchpadFinger](SDL_GetGamepadTouchpadFinger)
+- [SDL_GetNumGamepadTouchpads](SDL_GetNumGamepadTouchpads)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

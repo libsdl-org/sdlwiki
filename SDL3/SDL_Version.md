@@ -31,8 +31,8 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_VERSION](SDL_VERSION)
-* [SDL_GetVersion](SDL_GetVersion)
+- [SDL_VERSION](SDL_VERSION)
+- [SDL_GetVersion](SDL_GetVersion)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

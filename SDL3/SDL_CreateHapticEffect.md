@@ -32,9 +32,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_DestroyHapticEffect](SDL_DestroyHapticEffect)
-* [SDL_RunHapticEffect](SDL_RunHapticEffect)
-* [SDL_UpdateHapticEffect](SDL_UpdateHapticEffect)
+- [SDL_DestroyHapticEffect](SDL_DestroyHapticEffect)
+- [SDL_RunHapticEffect](SDL_RunHapticEffect)
+- [SDL_UpdateHapticEffect](SDL_UpdateHapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

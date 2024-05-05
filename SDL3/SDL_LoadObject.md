@@ -39,8 +39,8 @@ SDL_LoadObject("mylib.so");
 
 ## See Also
 
-* [SDL_LoadFunction](SDL_LoadFunction)
-* [SDL_UnloadObject](SDL_UnloadObject)
+- [SDL_LoadFunction](SDL_LoadFunction)
+- [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)

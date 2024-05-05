@@ -44,7 +44,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetMouseState](SDL_GetMouseState)
+- [SDL_GetMouseState](SDL_GetMouseState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)

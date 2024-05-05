@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+- [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

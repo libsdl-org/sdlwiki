@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_fabs](SDL_fabs)
+- [SDL_fabs](SDL_fabs)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

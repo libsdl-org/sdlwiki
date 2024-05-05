@@ -44,7 +44,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AddTimer](SDL_AddTimer)
+- [SDL_AddTimer](SDL_AddTimer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)

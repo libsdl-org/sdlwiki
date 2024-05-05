@@ -34,7 +34,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadInstanceProduct](SDL_GetGamepadInstanceProduct)
+- [SDL_GetGamepadInstanceProduct](SDL_GetGamepadInstanceProduct)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

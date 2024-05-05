@@ -27,7 +27,7 @@ Returns an [SDL_HitTestResult](SDL_HitTestResult) value.
 
 ## See Also
 
-* [SDL_SetWindowHitTest](SDL_SetWindowHitTest)
+- [SDL_SetWindowHitTest](SDL_SetWindowHitTest)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)

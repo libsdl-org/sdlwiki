@@ -40,8 +40,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
-* [SDL_RunHapticEffect](SDL_RunHapticEffect)
+- [SDL_CreateHapticEffect](SDL_CreateHapticEffect)
+- [SDL_RunHapticEffect](SDL_RunHapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

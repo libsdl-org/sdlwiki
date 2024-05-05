@@ -48,9 +48,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_atan](SDL_atan)
-* [SDL_atan2f](SDL_atan2f)
-* [SDL_tanf](SDL_tanf)
+- [SDL_atan](SDL_atan)
+- [SDL_atan2f](SDL_atan2f)
+- [SDL_tanf](SDL_tanf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

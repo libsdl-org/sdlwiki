@@ -66,10 +66,10 @@ surface = NULL;
 
 ## See Also
 
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
+- [SDL_CreateTexture](SDL_CreateTexture)
+- [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
+- [SDL_DestroyTexture](SDL_DestroyTexture)
+- [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

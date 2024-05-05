@@ -30,7 +30,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetPreferredLocales](SDL_GetPreferredLocales)
+- [SDL_GetPreferredLocales](SDL_GetPreferredLocales)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

@@ -42,12 +42,12 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_trunc](SDL_trunc)
-* [SDL_fmodf](SDL_fmodf)
-* [SDL_ceilf](SDL_ceilf)
-* [SDL_floorf](SDL_floorf)
-* [SDL_roundf](SDL_roundf)
-* [SDL_lroundf](SDL_lroundf)
+- [SDL_trunc](SDL_trunc)
+- [SDL_fmodf](SDL_fmodf)
+- [SDL_ceilf](SDL_ceilf)
+- [SDL_floorf](SDL_floorf)
+- [SDL_roundf](SDL_roundf)
+- [SDL_lroundf](SDL_lroundf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

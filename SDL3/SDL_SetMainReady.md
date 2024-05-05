@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_Init](SDL_Init)
+- [SDL_Init](SDL_Init)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

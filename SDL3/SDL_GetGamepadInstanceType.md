@@ -34,9 +34,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadType](SDL_GetGamepadType)
-* [SDL_GetGamepads](SDL_GetGamepads)
-* [SDL_GetRealGamepadInstanceType](SDL_GetRealGamepadInstanceType)
+- [SDL_GetGamepadType](SDL_GetGamepadType)
+- [SDL_GetGamepads](SDL_GetGamepads)
+- [SDL_GetRealGamepadInstanceType](SDL_GetRealGamepadInstanceType)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

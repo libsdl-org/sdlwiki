@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadAxisFromString](SDL_GetGamepadAxisFromString)
+- [SDL_GetGamepadAxisFromString](SDL_GetGamepadAxisFromString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

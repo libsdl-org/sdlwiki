@@ -44,9 +44,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_cos](SDL_cos)
-* [SDL_acosf](SDL_acosf)
-* [SDL_sinf](SDL_sinf)
+- [SDL_cos](SDL_cos)
+- [SDL_acosf](SDL_acosf)
+- [SDL_sinf](SDL_sinf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

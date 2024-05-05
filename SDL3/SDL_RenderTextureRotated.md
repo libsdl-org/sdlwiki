@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderTexture](SDL_RenderTexture)
+- [SDL_RenderTexture](SDL_RenderTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

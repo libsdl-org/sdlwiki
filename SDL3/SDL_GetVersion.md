@@ -55,7 +55,7 @@ SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
 
 ## See Also
 
-* [SDL_GetRevision](SDL_GetRevision)
+- [SDL_GetRevision](SDL_GetRevision)
 
 
 ## Related Macros

@@ -36,9 +36,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_modff](SDL_modff)
-* [SDL_trunc](SDL_trunc)
-* [SDL_fmod](SDL_fmod)
+- [SDL_modff](SDL_modff)
+- [SDL_trunc](SDL_trunc)
+- [SDL_fmod](SDL_fmod)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

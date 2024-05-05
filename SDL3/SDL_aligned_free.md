@@ -20,7 +20,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_aligned_alloc](SDL_aligned_alloc)
+- [SDL_aligned_alloc](SDL_aligned_alloc)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

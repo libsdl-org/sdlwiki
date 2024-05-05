@@ -48,7 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RectsEqualEpsilon](SDL_RectsEqualEpsilon)
+- [SDL_RectsEqualEpsilon](SDL_RectsEqualEpsilon)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

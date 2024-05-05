@@ -33,8 +33,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
-* [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
+- [SDL_GamepadHasSensor](SDL_GamepadHasSensor)
+- [SDL_GamepadSensorEnabled](SDL_GamepadSensorEnabled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

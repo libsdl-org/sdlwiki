@@ -64,8 +64,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetCameraDevices](SDL_GetCameraDevices)
-* [SDL_OpenCameraDevice](SDL_OpenCameraDevice)
+- [SDL_GetCameraDevices](SDL_GetCameraDevices)
+- [SDL_OpenCameraDevice](SDL_OpenCameraDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

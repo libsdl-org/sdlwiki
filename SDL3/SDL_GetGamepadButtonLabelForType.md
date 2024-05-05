@@ -32,7 +32,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetGamepadButtonLabel](SDL_GetGamepadButtonLabel)
+- [SDL_GetGamepadButtonLabel](SDL_GetGamepadButtonLabel)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

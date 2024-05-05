@@ -39,8 +39,8 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_Version](SDL_Version)
-* [SDL_GetVersion](SDL_GetVersion)
+- [SDL_Version](SDL_Version)
+- [SDL_GetVersion](SDL_GetVersion)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

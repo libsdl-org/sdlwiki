@@ -36,8 +36,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetHapticName](SDL_GetHapticName)
-* [SDL_OpenHaptic](SDL_OpenHaptic)
+- [SDL_GetHapticName](SDL_GetHapticName)
+- [SDL_OpenHaptic](SDL_OpenHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

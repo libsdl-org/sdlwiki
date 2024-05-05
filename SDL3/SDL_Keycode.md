@@ -276,7 +276,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_KeyCode](SDL_KeyCode)
+- [SDL_KeyCode](SDL_KeyCode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)

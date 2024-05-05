@@ -38,8 +38,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetRenderViewport](SDL_GetRenderViewport)
-* [SDL_SetRenderViewport](SDL_SetRenderViewport)
+- [SDL_GetRenderViewport](SDL_GetRenderViewport)
+- [SDL_SetRenderViewport](SDL_SetRenderViewport)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

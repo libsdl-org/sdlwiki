@@ -46,9 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_ClearClipboardData](SDL_ClearClipboardData)
-* [SDL_GetClipboardData](SDL_GetClipboardData)
-* [SDL_HasClipboardData](SDL_HasClipboardData)
+- [SDL_ClearClipboardData](SDL_ClearClipboardData)
+- [SDL_GetClipboardData](SDL_GetClipboardData)
+- [SDL_HasClipboardData](SDL_HasClipboardData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -48,8 +48,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LockTextureToSurface](SDL_LockTextureToSurface)
-* [SDL_UnlockTexture](SDL_UnlockTexture)
+- [SDL_LockTextureToSurface](SDL_LockTextureToSurface)
+- [SDL_UnlockTexture](SDL_UnlockTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

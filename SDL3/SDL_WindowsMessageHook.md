@@ -61,8 +61,8 @@ SDL_SetWindowsMessageHook(MyMessageHook, NULL);
 
 ## See Also
 
-* [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
-* [SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP](SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP)
+- [SDL_SetWindowsMessageHook](SDL_SetWindowsMessageHook)
+- [SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP](SDL_HINT_WINDOWS_ENABLE_MESSAGELOOP)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryDefine](CategoryDefine), [CategorySystem](CategorySystem)

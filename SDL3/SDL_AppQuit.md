@@ -54,7 +54,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AppInit](SDL_AppInit)
+- [SDL_AppInit](SDL_AppInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -35,13 +35,13 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_FlushAudioStream](SDL_FlushAudioStream)
-* [SDL_ClearAudioStream](SDL_ClearAudioStream)
-* [SDL_ChangeAudioStreamOutput](SDL_ChangeAudioStreamOutput)
-* [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
+- [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+- [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
+- [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
+- [SDL_FlushAudioStream](SDL_FlushAudioStream)
+- [SDL_ClearAudioStream](SDL_ClearAudioStream)
+- [SDL_ChangeAudioStreamOutput](SDL_ChangeAudioStreamOutput)
+- [SDL_DestroyAudioStream](SDL_DestroyAudioStream)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

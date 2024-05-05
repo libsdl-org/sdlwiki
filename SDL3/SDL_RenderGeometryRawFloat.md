@@ -48,8 +48,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_RenderGeometry](SDL_RenderGeometry)
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+- [SDL_RenderGeometry](SDL_RenderGeometry)
+- [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

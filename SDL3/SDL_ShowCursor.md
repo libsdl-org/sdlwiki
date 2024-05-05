@@ -42,8 +42,8 @@ int main(int argc, char *argv[]) {
 
 ## See Also
 
-* [SDL_CursorVisible](SDL_CursorVisible)
-* [SDL_HideCursor](SDL_HideCursor)
+- [SDL_CursorVisible](SDL_CursorVisible)
+- [SDL_HideCursor](SDL_HideCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)

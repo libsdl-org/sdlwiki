@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
+- [SDL_GamepadHasAxis](SDL_GamepadHasAxis)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

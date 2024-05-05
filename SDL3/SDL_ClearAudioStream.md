@@ -40,10 +40,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
-* [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
-* [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
-* [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
+- [SDL_GetAudioStreamAvailable](SDL_GetAudioStreamAvailable)
+- [SDL_GetAudioStreamData](SDL_GetAudioStreamData)
+- [SDL_GetAudioStreamQueued](SDL_GetAudioStreamQueued)
+- [SDL_PutAudioStreamData](SDL_PutAudioStreamData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

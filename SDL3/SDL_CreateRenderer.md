@@ -100,12 +100,12 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-* [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
-* [SDL_GetRenderDriver](SDL_GetRenderDriver)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_CreateRendererWithProperties](SDL_CreateRendererWithProperties)
+- [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
+- [SDL_DestroyRenderer](SDL_DestroyRenderer)
+- [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+- [SDL_GetRenderDriver](SDL_GetRenderDriver)
+- [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

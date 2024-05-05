@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_strlwr](SDL_strlwr)
+- [SDL_strlwr](SDL_strlwr)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

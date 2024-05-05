@@ -42,9 +42,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetKeyFromName](SDL_GetKeyFromName)
-* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
-* [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
+- [SDL_GetKeyFromName](SDL_GetKeyFromName)
+- [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
+- [SDL_GetScancodeFromKey](SDL_GetScancodeFromKey)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

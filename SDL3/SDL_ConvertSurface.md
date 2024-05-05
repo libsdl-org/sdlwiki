@@ -51,10 +51,10 @@ SDL_DestroyPixelFormat(format);
 
 ## See Also
 
-* [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
-* [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
-* [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
-* [SDL_DestroySurface](SDL_DestroySurface)
+- [SDL_ConvertSurfaceFormat](SDL_ConvertSurfaceFormat)
+- [SDL_ConvertSurfaceFormatAndColorspace](SDL_ConvertSurfaceFormatAndColorspace)
+- [SDL_CreatePixelFormat](SDL_CreatePixelFormat)
+- [SDL_DestroySurface](SDL_DestroySurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)

@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HasEvents](SDL_HasEvents)
+- [SDL_HasEvents](SDL_HasEvents)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)

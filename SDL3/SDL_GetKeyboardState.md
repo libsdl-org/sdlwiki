@@ -66,8 +66,8 @@ if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
 
 ## See Also
 
-* [SDL_PumpEvents](SDL_PumpEvents)
-* [SDL_ResetKeyboard](SDL_ResetKeyboard)
+- [SDL_PumpEvents](SDL_PumpEvents)
+- [SDL_ResetKeyboard](SDL_ResetKeyboard)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)

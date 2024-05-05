@@ -25,8 +25,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
-* [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
+- [SDL_GetPrimarySelectionText](SDL_GetPrimarySelectionText)
+- [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

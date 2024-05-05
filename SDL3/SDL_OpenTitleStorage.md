@@ -32,10 +32,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_CloseStorage](SDL_CloseStorage)
-* [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
-* [SDL_OpenUserStorage](SDL_OpenUserStorage)
-* [SDL_ReadStorageFile](SDL_ReadStorageFile)
+- [SDL_CloseStorage](SDL_CloseStorage)
+- [SDL_GetStorageFileSize](SDL_GetStorageFileSize)
+- [SDL_OpenUserStorage](SDL_OpenUserStorage)
+- [SDL_ReadStorageFile](SDL_ReadStorageFile)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

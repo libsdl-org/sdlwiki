@@ -42,8 +42,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_scalbn](SDL_scalbn)
-* [SDL_powf](SDL_powf)
+- [SDL_scalbn](SDL_scalbn)
+- [SDL_powf](SDL_powf)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

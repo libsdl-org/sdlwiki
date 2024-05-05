@@ -52,8 +52,8 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_LockTexture](SDL_LockTexture)
-* [SDL_UnlockTexture](SDL_UnlockTexture)
+- [SDL_LockTexture](SDL_LockTexture)
+- [SDL_UnlockTexture](SDL_UnlockTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

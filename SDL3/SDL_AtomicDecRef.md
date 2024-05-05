@@ -34,7 +34,7 @@ This macro is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_AtomicIncRef](SDL_AtomicIncRef)
+- [SDL_AtomicIncRef](SDL_AtomicIncRef)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

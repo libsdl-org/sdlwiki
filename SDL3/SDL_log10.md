@@ -46,9 +46,9 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_log10f](SDL_log10f)
-* [SDL_log](SDL_log)
-* [SDL_pow](SDL_pow)
+- [SDL_log10f](SDL_log10f)
+- [SDL_log](SDL_log)
+- [SDL_pow](SDL_pow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

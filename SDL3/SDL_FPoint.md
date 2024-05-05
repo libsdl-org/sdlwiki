@@ -23,8 +23,8 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_GetRectEnclosingPointsFloat](SDL_GetRectEnclosingPointsFloat)
-* [SDL_PointInRectFloat](SDL_PointInRectFloat)
+- [SDL_GetRectEnclosingPointsFloat](SDL_GetRectEnclosingPointsFloat)
+- [SDL_PointInRectFloat](SDL_PointInRectFloat)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)

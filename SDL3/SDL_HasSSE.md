@@ -29,10 +29,10 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-* [SDL_HasSSE2](SDL_HasSSE2)
-* [SDL_HasSSE3](SDL_HasSSE3)
-* [SDL_HasSSE41](SDL_HasSSE41)
-* [SDL_HasSSE42](SDL_HasSSE42)
+- [SDL_HasSSE2](SDL_HasSSE2)
+- [SDL_HasSSE3](SDL_HasSSE3)
+- [SDL_HasSSE41](SDL_HasSSE41)
+- [SDL_HasSSE42](SDL_HasSSE42)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU)
