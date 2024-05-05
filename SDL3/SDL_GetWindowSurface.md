@@ -50,14 +50,14 @@ This function is available since SDL 3.0.0.
 
 int main(int argc, char* argv[])
 {
-    SDL_Surface *screen; // even with SDL2, we can still bring ancient code back
+    SDL_Surface *screen; // even with SDL3, we can still bring ancient code back
     SDL_Window *window;
     SDL_Surface *image;
 
     SDL_Init(SDL_INIT_VIDEO); // init video
 
     // create the window like normal
-    window = SDL_CreateWindow("SDL2 Example", 640, 480, 0);
+    window = SDL_CreateWindow("SDL3 Surface Example", 640, 480, 0);
 
     // but instead of creating a renderer, we can draw directly to the screen
     screen = SDL_GetWindowSurface(window);
