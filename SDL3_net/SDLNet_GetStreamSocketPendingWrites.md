@@ -52,8 +52,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
+- [SDLNet_WriteToStreamSocket](SDLNet_WriteToStreamSocket)
+- [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

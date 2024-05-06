@@ -18,7 +18,7 @@ int SDLNet_WaitUntilConnected(SDLNet_StreamSocket *sock, Sint32 timeout);
 
 |                 |                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| **address**     | The [SDLNet_Address](SDLNet_Address) object to wait on.                                                              |
+| **sock**        | The [SDLNet_StreamSocket](SDLNet_StreamSocket) object to wait on.                                                    |
 | **timeout**     | Number of milliseconds to wait for resolution to complete. -1 to wait indefinitely, 0 to check once without waiting. |
 
 ## Return Value
@@ -66,7 +66,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
+- [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

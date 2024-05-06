@@ -51,8 +51,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
-* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
+- [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
+- [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -60,10 +60,10 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
-* [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
-* [SDLNet_RefAddress](SDLNet_RefAddress)
-* [SDLNet_UnrefAddress](SDLNet_UnrefAddress)
+- [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)
+- [SDLNet_GetAddressStatus](SDLNet_GetAddressStatus)
+- [SDLNet_RefAddress](SDLNet_RefAddress)
+- [SDLNet_UnrefAddress](SDLNet_UnrefAddress)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

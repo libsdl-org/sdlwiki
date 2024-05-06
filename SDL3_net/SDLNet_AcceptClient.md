@@ -62,8 +62,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)
-* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
+- [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)
+- [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

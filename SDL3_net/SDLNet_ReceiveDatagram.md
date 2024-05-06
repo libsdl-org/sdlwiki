@@ -16,11 +16,10 @@ int SDLNet_ReceiveDatagram(SDLNet_DatagramSocket *sock, SDLNet_Datagram **dgram)
 
 ## Function Parameters
 
-|                |                                                   |
-| -------------- | ------------------------------------------------- |
-| **sock**       | the datagram socket to send data through          |
-| **buf**        | a pointer to the data to send as a single packet. |
-| **buflen**     | the size of the data to send, in bytes.           |
+|               |                                           |
+| ------------- | ----------------------------------------- |
+| **sock**      | the datagram socket to send data through  |
+| **dgram**     | a pointer to the datagram packet pointer. |
 
 ## Return Value
 
@@ -73,8 +72,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_SendDatagram](SDLNet_SendDatagram)
-* [SDLNet_DestroyDatagram](SDLNet_DestroyDatagram)
+- [SDLNet_SendDatagram](SDLNet_SendDatagram)
+- [SDLNet_DestroyDatagram](SDLNet_DestroyDatagram)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

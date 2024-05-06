@@ -19,7 +19,7 @@ SDLNet_StreamSocket * SDLNet_CreateClient(SDLNet_Address *address, Uint16 port);
 |                 |                                                |
 | --------------- | ---------------------------------------------- |
 | **address**     | the address of the remote server to connect to |
-| **the**         | port on the remote server to connect to        |
+| **port**        | the port on the remote server to connect to    |
 
 ## Return Value
 
@@ -75,9 +75,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
-* [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
-* [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
+- [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
+- [SDLNet_GetConnectionStatus](SDLNet_GetConnectionStatus)
+- [SDLNet_DestroyStreamSocket](SDLNet_DestroyStreamSocket)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

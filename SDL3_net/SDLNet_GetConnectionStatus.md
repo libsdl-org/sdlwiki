@@ -59,7 +59,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
+- [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

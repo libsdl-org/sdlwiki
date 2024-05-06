@@ -67,9 +67,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
-* [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)
+- [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
+- [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
+- [SDLNet_ReadFromStreamSocket](SDLNet_ReadFromStreamSocket)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

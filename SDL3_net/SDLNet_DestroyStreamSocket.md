@@ -47,10 +47,10 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_CreateClient](SDLNet_CreateClient)
-* [SDLNet_AcceptClient](SDLNet_AcceptClient)
-* [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
-* [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
+- [SDLNet_CreateClient](SDLNet_CreateClient)
+- [SDLNet_AcceptClient](SDLNet_AcceptClient)
+- [SDLNet_GetStreamSocketPendingWrites](SDLNet_GetStreamSocketPendingWrites)
+- [SDLNet_WaitUntilStreamSocketDrained](SDLNet_WaitUntilStreamSocketDrained)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

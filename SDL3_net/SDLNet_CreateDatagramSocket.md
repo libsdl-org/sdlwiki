@@ -16,10 +16,10 @@ SDLNet_DatagramSocket * SDLNet_CreateDatagramSocket(SDLNet_Address *addr, Uint16
 
 ## Function Parameters
 
-|                 |                                                                                           |
-| --------------- | ----------------------------------------------------------------------------------------- |
-| **address**     | the _local_ address to listen for connections on, or NULL.                                |
-| **the**         | port on the local address to listen for connections on, or zero for the system to decide. |
+|                 |                                                                                               |
+| --------------- | --------------------------------------------------------------------------------------------- |
+| **address**     | the _local_ address to listen for connections on, or NULL.                                    |
+| **port**        | the port on the local address to listen for connections on, or zero for the system to decide. |
 
 ## Return Value
 
@@ -80,8 +80,8 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)
-* [SDLNet_DestroyDatagramSocket](SDLNet_DestroyDatagramSocket)
+- [SDLNet_GetLocalAddresses](SDLNet_GetLocalAddresses)
+- [SDLNet_DestroyDatagramSocket](SDLNet_DestroyDatagramSocket)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

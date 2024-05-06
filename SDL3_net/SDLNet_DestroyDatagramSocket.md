@@ -43,9 +43,9 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)
-* [SDLNet_SendDatagram](SDLNet_SendDatagram)
-* [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
+- [SDLNet_CreateDatagramSocket](SDLNet_CreateDatagramSocket)
+- [SDLNet_SendDatagram](SDLNet_SendDatagram)
+- [SDLNet_ReceiveDatagram](SDLNet_ReceiveDatagram)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

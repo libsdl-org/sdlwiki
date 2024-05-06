@@ -40,7 +40,7 @@ This function is available since SDL_Net 3.0.0.
 
 ## See Also
 
-* [SDLNet_CreateServer](SDLNet_CreateServer)
+- [SDLNet_CreateServer](SDLNet_CreateServer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
