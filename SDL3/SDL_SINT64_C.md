@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_MAX_SINT64
+# SDL_SINT64_C
 
-A signed 64-bit integer type.
+Append the 64 bit integer suffix to an integer literal.
 
 ## Header File
 
@@ -10,12 +10,8 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_MAX_SINT64  SDL_SINT64_C(0x7FFFFFFFFFFFFFFF)   /* 9223372036854775807 */
+#define SDL_SINT64_C(c)  INT64_C(c)
 ```
-
-## Version
-
-This macro is available since SDL 3.0.0.
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
