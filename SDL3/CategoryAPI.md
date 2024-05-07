@@ -1117,6 +1117,7 @@
 - [SDL_OpenUserStorage](SDL_OpenUserStorage)
 - [SDL_OpenVideoCapture](SDL_OpenVideoCapture)
 - [SDL_OpenVideoCaptureWithSpec](SDL_OpenVideoCaptureWithSpec)
+- [SDL_OutOfMemory](SDL_OutOfMemory)
 - [SDL_Palette](SDL_Palette)
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
 - [SDL_PauseHaptic](SDL_PauseHaptic)
