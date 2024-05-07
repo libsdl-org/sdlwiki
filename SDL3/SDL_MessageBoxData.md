@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main
 ```c
 typedef struct SDL_MessageBoxData
 {
-    Uint32 flags;                       /**< ::SDL_MessageBoxFlags */
+    SDL_MessageBoxFlags flags;
     SDL_Window *window;                 /**< Parent window, can be NULL */
     const char *title;                  /**< UTF-8 title */
     const char *message;                /**< UTF-8 message text */

@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_init.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ## Syntax
 
 ```c
-void SDL_QuitSubSystem(Uint32 flags);
+void SDL_QuitSubSystem(SDL_InitFlags flags);
 
 ```
 

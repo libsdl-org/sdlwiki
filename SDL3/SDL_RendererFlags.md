@@ -10,16 +10,16 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-typedef enum SDL_RendererFlags
-{
-    SDL_RENDERER_PRESENTVSYNC = 0x00000004  /**< Present is synchronized with the refresh rate */
-} SDL_RendererFlags;
+typedef Uint32 SDL_RendererFlags;
+
+#define SDL_RENDERER_PRESENTVSYNC   0x00000004u /**< Present is synchronized with the refresh rate */
 ```
 
 ## Version
 
-This enum is available since SDL 3.0.0.
+This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
+
 

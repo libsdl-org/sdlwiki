@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_MessageBoxButtonFlags
 
-Flags for [SDL_MessageBoxButtonData](SDL_MessageBoxButtonData).
+[SDL_MessageBoxButtonData](SDL_MessageBoxButtonData) flags.
 
 ## Header File
 
@@ -10,17 +10,17 @@ Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-typedef enum SDL_MessageBoxButtonFlags
-{
-    SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT = 0x00000001,  /**< Marks the default button when return is hit */
-    SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT = 0x00000002   /**< Marks the default button when escape is hit */
-} SDL_MessageBoxButtonFlags;
+typedef Uint32 SDL_MessageBoxButtonFlags;
+
+#define SDL_MESSAGEBOX_BUTTON_RETURNKEY_DEFAULT 0x00000001u /**< Marks the default button when return is hit */
+#define SDL_MESSAGEBOX_BUTTON_ESCAPEKEY_DEFAULT 0x00000002u /**< Marks the default button when escape is hit */
 ```
 
 ## Version
 
-This enum is available since SDL 3.0.0.
+This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
+
 

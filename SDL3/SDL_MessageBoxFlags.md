@@ -10,14 +10,13 @@ Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-typedef enum SDL_MessageBoxFlags
-{
-    SDL_MESSAGEBOX_ERROR                 = 0x00000010,   /**< error dialog */
-    SDL_MESSAGEBOX_WARNING               = 0x00000020,   /**< warning dialog */
-    SDL_MESSAGEBOX_INFORMATION           = 0x00000040,   /**< informational dialog */
-    SDL_MESSAGEBOX_BUTTONS_LEFT_TO_RIGHT = 0x00000080,   /**< buttons placed left to right */
-    SDL_MESSAGEBOX_BUTTONS_RIGHT_TO_LEFT = 0x00000100    /**< buttons placed right to left */
-} SDL_MessageBoxFlags;
+typedef Uint32 SDL_MessageBoxFlags;
+
+#define SDL_MESSAGEBOX_ERROR                    0x00000010u /**< error dialog */
+#define SDL_MESSAGEBOX_WARNING                  0x00000020u /**< warning dialog */
+#define SDL_MESSAGEBOX_INFORMATION              0x00000040u /**< informational dialog */
+#define SDL_MESSAGEBOX_BUTTONS_LEFT_TO_RIGHT    0x00000080u /**< buttons placed left to right */
+#define SDL_MESSAGEBOX_BUTTONS_RIGHT_TO_LEFT    0x00000100u /**< buttons placed right to left */
 ```
 
 ## Remarks
@@ -26,8 +25,9 @@ If supported will display warning icon, etc.
 
 ## Version
 
-This enum is available since SDL 3.0.0.
+This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
+
 

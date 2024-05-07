@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-#define SDL_HAPTIC_SQUARE       (1<<2)
+#define SDL_HAPTIC_SQUARE       (1u<<2)
 ```
 
 ## Remarks
