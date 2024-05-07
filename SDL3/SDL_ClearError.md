@@ -10,9 +10,13 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_ClearError(void);
+int SDL_ClearError(void);
 
 ```
+
+## Return Value
+
+Returns 0
 
 ## Version
 
