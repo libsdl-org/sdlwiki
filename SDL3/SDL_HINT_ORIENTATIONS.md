@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_HINT_ORIENTATIONS "SDL_IOS_ORIENTATIONS"
+#define SDL_HINT_ORIENTATIONS "SDL_ORIENTATIONS"
 ```
 
 ## Remarks
