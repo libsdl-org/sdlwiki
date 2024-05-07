@@ -40,9 +40,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
+- [SDL_CreateRenderer](SDL_CreateRenderer)
+- [SDL_CreateWindowRenderer](SDL_CreateWindowRenderer)
+- [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

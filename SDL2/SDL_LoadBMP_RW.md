@@ -44,10 +44,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_FreeSurface](SDL_FreeSurface)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
+- [SDL_FreeSurface](SDL_FreeSurface)
+- [SDL_RWFromFile](SDL_RWFromFile)
+- [SDL_LoadBMP](SDL_LoadBMP)
+- [SDL_SaveBMP_RW](SDL_SaveBMP_RW)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

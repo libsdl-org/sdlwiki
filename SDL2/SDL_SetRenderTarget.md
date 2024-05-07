@@ -44,7 +44,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetRenderTarget](SDL_GetRenderTarget)
+- [SDL_GetRenderTarget](SDL_GetRenderTarget)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

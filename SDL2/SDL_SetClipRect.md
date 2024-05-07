@@ -41,8 +41,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_GetClipRect](SDL_GetClipRect)
+- [SDL_BlitSurface](SDL_BlitSurface)
+- [SDL_GetClipRect](SDL_GetClipRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -49,13 +49,13 @@ This function is available since SDL 2.0.10.
 
 ## See Also
 
-* [SDL_RWclose](SDL_RWclose)
-* [SDL_RWFromConstMem](SDL_RWFromConstMem)
-* [SDL_RWFromFile](SDL_RWFromFile)
-* [SDL_RWFromFP](SDL_RWFromFP)
-* [SDL_RWFromMem](SDL_RWFromMem)
-* [SDL_RWread](SDL_RWread)
-* [SDL_RWseek](SDL_RWseek)
+- [SDL_RWclose](SDL_RWclose)
+- [SDL_RWFromConstMem](SDL_RWFromConstMem)
+- [SDL_RWFromFile](SDL_RWFromFile)
+- [SDL_RWFromFP](SDL_RWFromFP)
+- [SDL_RWFromMem](SDL_RWFromMem)
+- [SDL_RWread](SDL_RWread)
+- [SDL_RWseek](SDL_RWseek)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

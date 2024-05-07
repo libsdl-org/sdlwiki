@@ -26,12 +26,12 @@ This function is available since SDL 2.0.7.
 
 ## See Also
 
-* [SDL_NewAudioStream](SDL_NewAudioStream)
-* [SDL_AudioStreamPut](SDL_AudioStreamPut)
-* [SDL_AudioStreamGet](SDL_AudioStreamGet)
-* [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable)
-* [SDL_AudioStreamClear](SDL_AudioStreamClear)
-* [SDL_FreeAudioStream](SDL_FreeAudioStream)
+- [SDL_NewAudioStream](SDL_NewAudioStream)
+- [SDL_AudioStreamPut](SDL_AudioStreamPut)
+- [SDL_AudioStreamGet](SDL_AudioStreamGet)
+- [SDL_AudioStreamAvailable](SDL_AudioStreamAvailable)
+- [SDL_AudioStreamClear](SDL_AudioStreamClear)
+- [SDL_FreeAudioStream](SDL_FreeAudioStream)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

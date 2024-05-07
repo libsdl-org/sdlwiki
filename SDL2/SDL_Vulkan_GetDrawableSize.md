@@ -37,9 +37,9 @@ This function is available since SDL 2.0.6.
 
 ## See Also
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+- [SDL_GetWindowSize](SDL_GetWindowSize)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

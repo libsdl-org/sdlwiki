@@ -40,8 +40,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_Quit](SDL_Quit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

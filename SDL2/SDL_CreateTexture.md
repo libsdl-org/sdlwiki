@@ -45,10 +45,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
-* [SDL_UpdateTexture](SDL_UpdateTexture)
+- [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
+- [SDL_DestroyTexture](SDL_DestroyTexture)
+- [SDL_QueryTexture](SDL_QueryTexture)
+- [SDL_UpdateTexture](SDL_UpdateTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -38,7 +38,7 @@ This function is available since SDL 2.0.9.
 
 ## See Also
 
-* [SDL_GameControllerHasRumble](SDL_GameControllerHasRumble)
+- [SDL_GameControllerHasRumble](SDL_GameControllerHasRumble)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

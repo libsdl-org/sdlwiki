@@ -31,8 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GameControllerClose](SDL_GameControllerClose)
-* [SDL_GameControllerOpen](SDL_GameControllerOpen)
+- [SDL_GameControllerClose](SDL_GameControllerClose)
+- [SDL_GameControllerOpen](SDL_GameControllerOpen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

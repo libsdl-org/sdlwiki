@@ -42,8 +42,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_JoystickClose](SDL_JoystickClose)
-* [SDL_JoystickInstanceID](SDL_JoystickInstanceID)
+- [SDL_JoystickClose](SDL_JoystickClose)
+- [SDL_JoystickInstanceID](SDL_JoystickInstanceID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

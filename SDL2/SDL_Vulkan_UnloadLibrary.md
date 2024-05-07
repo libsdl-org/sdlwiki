@@ -20,7 +20,7 @@ This function is available since SDL 2.0.6.
 
 ## See Also
 
-* [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
+- [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

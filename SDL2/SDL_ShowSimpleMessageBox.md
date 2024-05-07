@@ -63,7 +63,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ShowMessageBox](SDL_ShowMessageBox)
+- [SDL_ShowMessageBox](SDL_ShowMessageBox)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

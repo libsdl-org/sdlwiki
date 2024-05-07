@@ -38,8 +38,8 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
-* [SDL_Vertex](SDL_Vertex)
+- [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
+- [SDL_Vertex](SDL_Vertex)
 
 
 ## Example

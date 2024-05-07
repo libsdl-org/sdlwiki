@@ -48,8 +48,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GameControllerMapping](SDL_GameControllerMapping)
-* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+- [SDL_GameControllerMapping](SDL_GameControllerMapping)
+- [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

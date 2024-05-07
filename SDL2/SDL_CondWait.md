@@ -46,11 +46,11 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CondBroadcast](SDL_CondBroadcast)
-* [SDL_CondSignal](SDL_CondSignal)
-* [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
-* [SDL_CreateCond](SDL_CreateCond)
-* [SDL_DestroyCond](SDL_DestroyCond)
+- [SDL_CondBroadcast](SDL_CondBroadcast)
+- [SDL_CondSignal](SDL_CondSignal)
+- [SDL_CondWaitTimeout](SDL_CondWaitTimeout)
+- [SDL_CreateCond](SDL_CreateCond)
+- [SDL_DestroyCond](SDL_DestroyCond)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

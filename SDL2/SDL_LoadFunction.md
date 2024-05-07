@@ -48,8 +48,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LoadObject](SDL_LoadObject)
-* [SDL_UnloadObject](SDL_UnloadObject)
+- [SDL_LoadObject](SDL_LoadObject)
+- [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -21,15 +21,15 @@ typedef struct SDL_FRect
 
 ## See Also
 
-* [SDL_FRectEmpty](SDL_FRectEmpty)
-* [SDL_FRectEquals](SDL_FRectEquals)
-* [SDL_FRectEqualsEpsilon](SDL_FRectEqualsEpsilon)
-* [SDL_HasIntersectionF](SDL_HasIntersectionF)
-* [SDL_IntersectFRect](SDL_IntersectFRect)
-* [SDL_IntersectFRectAndLine](SDL_IntersectFRectAndLine)
-* [SDL_UnionFRect](SDL_UnionFRect)
-* [SDL_EncloseFPoints](SDL_EncloseFPoints)
-* [SDL_PointInFRect](SDL_PointInFRect)
+- [SDL_FRectEmpty](SDL_FRectEmpty)
+- [SDL_FRectEquals](SDL_FRectEquals)
+- [SDL_FRectEqualsEpsilon](SDL_FRectEqualsEpsilon)
+- [SDL_HasIntersectionF](SDL_HasIntersectionF)
+- [SDL_IntersectFRect](SDL_IntersectFRect)
+- [SDL_IntersectFRectAndLine](SDL_IntersectFRectAndLine)
+- [SDL_UnionFRect](SDL_UnionFRect)
+- [SDL_EncloseFPoints](SDL_EncloseFPoints)
+- [SDL_PointInFRect](SDL_PointInFRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

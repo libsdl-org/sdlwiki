@@ -25,8 +25,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_MouseIsHaptic](SDL_MouseIsHaptic)
+- [SDL_HapticOpen](SDL_HapticOpen)
+- [SDL_MouseIsHaptic](SDL_MouseIsHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

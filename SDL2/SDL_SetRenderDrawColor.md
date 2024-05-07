@@ -42,16 +42,16 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
-* [SDL_RenderClear](SDL_RenderClear)
-* [SDL_RenderDrawLine](SDL_RenderDrawLine)
-* [SDL_RenderDrawLines](SDL_RenderDrawLines)
-* [SDL_RenderDrawPoint](SDL_RenderDrawPoint)
-* [SDL_RenderDrawPoints](SDL_RenderDrawPoints)
-* [SDL_RenderDrawRect](SDL_RenderDrawRect)
-* [SDL_RenderDrawRects](SDL_RenderDrawRects)
-* [SDL_RenderFillRect](SDL_RenderFillRect)
-* [SDL_RenderFillRects](SDL_RenderFillRects)
+- [SDL_GetRenderDrawColor](SDL_GetRenderDrawColor)
+- [SDL_RenderClear](SDL_RenderClear)
+- [SDL_RenderDrawLine](SDL_RenderDrawLine)
+- [SDL_RenderDrawLines](SDL_RenderDrawLines)
+- [SDL_RenderDrawPoint](SDL_RenderDrawPoint)
+- [SDL_RenderDrawPoints](SDL_RenderDrawPoints)
+- [SDL_RenderDrawRect](SDL_RenderDrawRect)
+- [SDL_RenderDrawRects](SDL_RenderDrawRects)
+- [SDL_RenderFillRect](SDL_RenderFillRect)
+- [SDL_RenderFillRects](SDL_RenderFillRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,7 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AudioInit](SDL_AudioInit)
+- [SDL_AudioInit](SDL_AudioInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

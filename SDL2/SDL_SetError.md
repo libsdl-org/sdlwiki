@@ -44,8 +44,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ClearError](SDL_ClearError)
-* [SDL_GetError](SDL_GetError)
+- [SDL_ClearError](SDL_ClearError)
+- [SDL_GetError](SDL_GetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

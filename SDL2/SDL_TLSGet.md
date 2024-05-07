@@ -32,8 +32,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_TLSCreate](SDL_TLSCreate)
-* [SDL_TLSSet](SDL_TLSSet)
+- [SDL_TLSCreate](SDL_TLSCreate)
+- [SDL_TLSSet](SDL_TLSSet)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

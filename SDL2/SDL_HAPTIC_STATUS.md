@@ -19,7 +19,7 @@ Device supports querying effect status.
 
 ## See Also
 
-* [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
+- [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

@@ -32,7 +32,7 @@ This function is available since SDL 2.24.0.
 
 ## See Also
 
-* [SDL_GUIDFromString](SDL_GUIDFromString)
+- [SDL_GUIDFromString](SDL_GUIDFromString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

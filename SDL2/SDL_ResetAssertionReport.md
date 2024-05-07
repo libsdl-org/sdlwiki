@@ -28,7 +28,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetAssertionReport](SDL_GetAssertionReport)
+- [SDL_GetAssertionReport](SDL_GetAssertionReport)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

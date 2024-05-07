@@ -38,8 +38,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_WaitEvent](SDL_WaitEvent)
+- [SDL_PollEvent](SDL_PollEvent)
+- [SDL_WaitEvent](SDL_WaitEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

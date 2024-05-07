@@ -36,7 +36,7 @@ This function is available since SDL 2.0.14.
 
 ## See Also
 
-* [SDL_GetError](SDL_GetError)
+- [SDL_GetError](SDL_GetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

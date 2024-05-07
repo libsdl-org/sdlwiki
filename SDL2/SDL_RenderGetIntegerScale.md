@@ -32,7 +32,7 @@ This function is available since SDL 2.0.5.
 
 ## See Also
 
-* [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale)
+- [SDL_RenderSetIntegerScale](SDL_RenderSetIntegerScale)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

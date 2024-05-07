@@ -41,7 +41,7 @@ This function is available since SDL 2.0.8.
 
 ## See Also
 
-* [SDL_RenderGetMetalLayer](SDL_RenderGetMetalLayer)
+- [SDL_RenderGetMetalLayer](SDL_RenderGetMetalLayer)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -39,7 +39,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_SetWindowBrightness](SDL_SetWindowBrightness)
+- [SDL_SetWindowBrightness](SDL_SetWindowBrightness)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -32,7 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ReadU8](SDL_ReadU8)
+- [SDL_ReadU8](SDL_ReadU8)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

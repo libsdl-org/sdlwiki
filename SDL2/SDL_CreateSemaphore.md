@@ -39,12 +39,12 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_DestroySemaphore](SDL_DestroySemaphore)
-* [SDL_SemPost](SDL_SemPost)
-* [SDL_SemTryWait](SDL_SemTryWait)
-* [SDL_SemValue](SDL_SemValue)
-* [SDL_SemWait](SDL_SemWait)
-* [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
+- [SDL_DestroySemaphore](SDL_DestroySemaphore)
+- [SDL_SemPost](SDL_SemPost)
+- [SDL_SemTryWait](SDL_SemTryWait)
+- [SDL_SemValue](SDL_SemValue)
+- [SDL_SemWait](SDL_SemWait)
+- [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

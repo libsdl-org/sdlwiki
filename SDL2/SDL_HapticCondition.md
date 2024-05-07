@@ -56,12 +56,12 @@ positive and which is negative.
 
 ## See Also
 
-* [SDL_HapticDirection](SDL_HapticDirection)
-* [SDL_HAPTIC_SPRING](SDL_HAPTIC_SPRING)
-* [SDL_HAPTIC_DAMPER](SDL_HAPTIC_DAMPER)
-* [SDL_HAPTIC_INERTIA](SDL_HAPTIC_INERTIA)
-* [SDL_HAPTIC_FRICTION](SDL_HAPTIC_FRICTION)
-* [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HapticDirection](SDL_HapticDirection)
+- [SDL_HAPTIC_SPRING](SDL_HAPTIC_SPRING)
+- [SDL_HAPTIC_DAMPER](SDL_HAPTIC_DAMPER)
+- [SDL_HAPTIC_INERTIA](SDL_HAPTIC_INERTIA)
+- [SDL_HAPTIC_FRICTION](SDL_HAPTIC_FRICTION)
+- [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)

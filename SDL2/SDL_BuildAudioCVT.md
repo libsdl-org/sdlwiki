@@ -59,7 +59,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ConvertAudio](SDL_ConvertAudio)
+- [SDL_ConvertAudio](SDL_ConvertAudio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

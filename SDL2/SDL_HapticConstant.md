@@ -45,8 +45,8 @@ the joystick.
 
 ## See Also
 
-* [SDL_HAPTIC_CONSTANT](SDL_HAPTIC_CONSTANT)
-* [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HAPTIC_CONSTANT](SDL_HAPTIC_CONSTANT)
+- [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)

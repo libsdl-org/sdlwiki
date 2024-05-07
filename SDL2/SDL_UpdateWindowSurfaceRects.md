@@ -48,8 +48,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetWindowSurface](SDL_GetWindowSurface)
-* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
+- [SDL_GetWindowSurface](SDL_GetWindowSurface)
+- [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

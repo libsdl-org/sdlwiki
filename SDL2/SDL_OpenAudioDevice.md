@@ -135,12 +135,12 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
-* [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
-* [SDL_LockAudioDevice](SDL_LockAudioDevice)
-* [SDL_OpenAudio](SDL_OpenAudio)
-* [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
-* [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
+- [SDL_CloseAudioDevice](SDL_CloseAudioDevice)
+- [SDL_GetAudioDeviceName](SDL_GetAudioDeviceName)
+- [SDL_LockAudioDevice](SDL_LockAudioDevice)
+- [SDL_OpenAudio](SDL_OpenAudio)
+- [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
+- [SDL_UnlockAudioDevice](SDL_UnlockAudioDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

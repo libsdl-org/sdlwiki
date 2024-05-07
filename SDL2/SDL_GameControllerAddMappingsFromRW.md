@@ -48,9 +48,9 @@ This function is available since SDL 2.0.2.
 
 ## See Also
 
-* [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
-* [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
-* [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
+- [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)
+- [SDL_GameControllerAddMappingsFromFile](SDL_GameControllerAddMappingsFromFile)
+- [SDL_GameControllerMappingForGUID](SDL_GameControllerMappingForGUID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

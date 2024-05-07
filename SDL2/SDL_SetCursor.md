@@ -33,9 +33,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_GetCursor](SDL_GetCursor)
-* [SDL_ShowCursor](SDL_ShowCursor)
+- [SDL_CreateCursor](SDL_CreateCursor)
+- [SDL_GetCursor](SDL_GetCursor)
+- [SDL_ShowCursor](SDL_ShowCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

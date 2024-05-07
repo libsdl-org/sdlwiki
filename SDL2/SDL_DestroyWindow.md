@@ -32,8 +32,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_CreateWindowFrom](SDL_CreateWindowFrom)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

@@ -76,7 +76,7 @@ This function is available since SDL 2.0.1.
 
 ## See Also
 
-* [SDL_GetBasePath](SDL_GetBasePath)
+- [SDL_GetBasePath](SDL_GetBasePath)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

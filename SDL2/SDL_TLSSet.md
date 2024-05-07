@@ -44,8 +44,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_TLSCreate](SDL_TLSCreate)
-* [SDL_TLSGet](SDL_TLSGet)
+- [SDL_TLSCreate](SDL_TLSCreate)
+- [SDL_TLSGet](SDL_TLSGet)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

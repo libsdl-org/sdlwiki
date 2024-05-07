@@ -30,10 +30,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
-* [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
-* [SDL_LoadBMP](SDL_LoadBMP)
-* [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
+- [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+- [SDL_CreateRGBSurfaceFrom](SDL_CreateRGBSurfaceFrom)
+- [SDL_LoadBMP](SDL_LoadBMP)
+- [SDL_LoadBMP_RW](SDL_LoadBMP_RW)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

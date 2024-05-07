@@ -19,7 +19,7 @@ Device supports setting autocenter.
 
 ## See Also
 
-* [SDL_HapticSetAutocenter](SDL_HapticSetAutocenter)
+- [SDL_HapticSetAutocenter](SDL_HapticSetAutocenter)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

@@ -35,7 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ReadLE64](SDL_ReadLE64)
+- [SDL_ReadLE64](SDL_ReadLE64)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

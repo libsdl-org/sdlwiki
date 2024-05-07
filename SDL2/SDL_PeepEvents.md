@@ -56,9 +56,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_PumpEvents](SDL_PumpEvents)
-* [SDL_PushEvent](SDL_PushEvent)
+- [SDL_PollEvent](SDL_PollEvent)
+- [SDL_PumpEvents](SDL_PumpEvents)
+- [SDL_PushEvent](SDL_PushEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

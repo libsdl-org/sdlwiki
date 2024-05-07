@@ -25,9 +25,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_JoystickName](SDL_JoystickName)
-* [SDL_JoystickPath](SDL_JoystickPath)
-* [SDL_JoystickOpen](SDL_JoystickOpen)
+- [SDL_JoystickName](SDL_JoystickName)
+- [SDL_JoystickPath](SDL_JoystickPath)
+- [SDL_JoystickOpen](SDL_JoystickOpen)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

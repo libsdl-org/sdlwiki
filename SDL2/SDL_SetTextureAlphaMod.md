@@ -43,8 +43,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
-* [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
+- [SDL_GetTextureAlphaMod](SDL_GetTextureAlphaMod)
+- [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

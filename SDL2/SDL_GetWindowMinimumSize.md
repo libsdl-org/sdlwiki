@@ -29,8 +29,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
-* [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
+- [SDL_GetWindowMaximumSize](SDL_GetWindowMaximumSize)
+- [SDL_SetWindowMinimumSize](SDL_SetWindowMinimumSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -43,9 +43,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)
-* [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
-* [SDL_SetWindowSize](SDL_SetWindowSize)
+- [SDL_GL_GetDrawableSize](SDL_GL_GetDrawableSize)
+- [SDL_Vulkan_GetDrawableSize](SDL_Vulkan_GetDrawableSize)
+- [SDL_SetWindowSize](SDL_SetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

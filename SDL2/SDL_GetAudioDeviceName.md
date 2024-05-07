@@ -45,8 +45,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
-* [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
+- [SDL_GetNumAudioDevices](SDL_GetNumAudioDevices)
+- [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

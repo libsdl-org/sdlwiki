@@ -39,9 +39,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_GetDisplayMode](SDL_GetDisplayMode)
-* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
+- [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
+- [SDL_GetDisplayMode](SDL_GetDisplayMode)
+- [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

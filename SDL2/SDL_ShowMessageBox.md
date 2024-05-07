@@ -54,7 +54,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
+- [SDL_ShowSimpleMessageBox](SDL_ShowSimpleMessageBox)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

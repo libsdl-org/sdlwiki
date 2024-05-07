@@ -57,11 +57,11 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AddEventWatch](SDL_AddEventWatch)
-* [SDL_EventState](SDL_EventState)
-* [SDL_GetEventFilter](SDL_GetEventFilter)
-* [SDL_PeepEvents](SDL_PeepEvents)
-* [SDL_PushEvent](SDL_PushEvent)
+- [SDL_AddEventWatch](SDL_AddEventWatch)
+- [SDL_EventState](SDL_EventState)
+- [SDL_GetEventFilter](SDL_GetEventFilter)
+- [SDL_PeepEvents](SDL_PeepEvents)
+- [SDL_PushEvent](SDL_PushEvent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

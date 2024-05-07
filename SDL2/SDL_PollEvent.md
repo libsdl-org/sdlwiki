@@ -61,12 +61,12 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetEventFilter](SDL_GetEventFilter)
-* [SDL_PeepEvents](SDL_PeepEvents)
-* [SDL_PushEvent](SDL_PushEvent)
-* [SDL_SetEventFilter](SDL_SetEventFilter)
-* [SDL_WaitEvent](SDL_WaitEvent)
-* [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
+- [SDL_GetEventFilter](SDL_GetEventFilter)
+- [SDL_PeepEvents](SDL_PeepEvents)
+- [SDL_PushEvent](SDL_PushEvent)
+- [SDL_SetEventFilter](SDL_SetEventFilter)
+- [SDL_WaitEvent](SDL_WaitEvent)
+- [SDL_WaitEventTimeout](SDL_WaitEventTimeout)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

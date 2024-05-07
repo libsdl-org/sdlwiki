@@ -35,7 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetTouchDevice](SDL_GetTouchDevice)
+- [SDL_GetTouchDevice](SDL_GetTouchDevice)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

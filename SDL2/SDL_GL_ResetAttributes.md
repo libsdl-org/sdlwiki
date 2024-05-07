@@ -20,8 +20,8 @@ This function is available since SDL 2.0.2.
 
 ## See Also
 
-* [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
-* [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
+- [SDL_GL_GetAttribute](SDL_GL_GetAttribute)
+- [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

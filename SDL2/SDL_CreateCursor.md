@@ -65,9 +65,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_FreeCursor](SDL_FreeCursor)
-* [SDL_SetCursor](SDL_SetCursor)
-* [SDL_ShowCursor](SDL_ShowCursor)
+- [SDL_FreeCursor](SDL_FreeCursor)
+- [SDL_SetCursor](SDL_SetCursor)
+- [SDL_ShowCursor](SDL_ShowCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

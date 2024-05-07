@@ -116,12 +116,12 @@ from the south means the user will have to pull the stick to counteract):
 
 ## See Also
 
-* [SDL_HAPTIC_POLAR](SDL_HAPTIC_POLAR)
-* [SDL_HAPTIC_CARTESIAN](SDL_HAPTIC_CARTESIAN)
-* [SDL_HAPTIC_SPHERICAL](SDL_HAPTIC_SPHERICAL)
-* [SDL_HAPTIC_STEERING_AXIS](SDL_HAPTIC_STEERING_AXIS)
-* [SDL_HapticEffect](SDL_HapticEffect)
-* [SDL_HapticNumAxes](SDL_HapticNumAxes)
+- [SDL_HAPTIC_POLAR](SDL_HAPTIC_POLAR)
+- [SDL_HAPTIC_CARTESIAN](SDL_HAPTIC_CARTESIAN)
+- [SDL_HAPTIC_SPHERICAL](SDL_HAPTIC_SPHERICAL)
+- [SDL_HAPTIC_STEERING_AXIS](SDL_HAPTIC_STEERING_AXIS)
+- [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HapticNumAxes](SDL_HapticNumAxes)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)

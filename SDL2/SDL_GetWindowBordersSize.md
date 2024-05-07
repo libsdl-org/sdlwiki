@@ -52,7 +52,7 @@ This function is available since SDL 2.0.5.
 
 ## See Also
 
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+- [SDL_GetWindowSize](SDL_GetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

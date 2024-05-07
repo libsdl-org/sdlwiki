@@ -38,9 +38,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_LockSurface](SDL_LockSurface)
-* [SDL_UnlockSurface](SDL_UnlockSurface)
+- [SDL_BlitSurface](SDL_BlitSurface)
+- [SDL_LockSurface](SDL_LockSurface)
+- [SDL_UnlockSurface](SDL_UnlockSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

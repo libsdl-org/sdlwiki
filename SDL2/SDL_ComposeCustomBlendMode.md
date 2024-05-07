@@ -118,10 +118,10 @@ This function is available since SDL 2.0.6.
 
 ## See Also
 
-* [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
-* [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
-* [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
-* [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
+- [SDL_SetRenderDrawBlendMode](SDL_SetRenderDrawBlendMode)
+- [SDL_GetRenderDrawBlendMode](SDL_GetRenderDrawBlendMode)
+- [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
+- [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,7 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis)
+- [SDL_GameControllerGetAxis](SDL_GameControllerGetAxis)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

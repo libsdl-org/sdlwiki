@@ -56,7 +56,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
+- [SDL_iPhoneSetEventPump](SDL_iPhoneSetEventPump)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

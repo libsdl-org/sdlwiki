@@ -53,9 +53,9 @@ This function is available since SDL 2.0.4.
 
 ## See Also
 
-* [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
-* [SDL_QueueAudio](SDL_QueueAudio)
-* [SDL_DequeueAudio](SDL_DequeueAudio)
+- [SDL_ClearQueuedAudio](SDL_ClearQueuedAudio)
+- [SDL_QueueAudio](SDL_QueueAudio)
+- [SDL_DequeueAudio](SDL_DequeueAudio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

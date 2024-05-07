@@ -31,8 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
-* [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
+- [SDL_LoadDollarTemplates](SDL_LoadDollarTemplates)
+- [SDL_SaveDollarTemplate](SDL_SaveDollarTemplate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

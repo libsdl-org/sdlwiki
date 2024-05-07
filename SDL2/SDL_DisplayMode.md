@@ -54,13 +54,13 @@ for (i = 0; i < display_mode_count; ++i) {
 
 ## See Also
 
-* [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
-* [SDL_GetDisplayMode](SDL_GetDisplayMode)
-* [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
-* [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
-* [SDL_GetClosestDisplayMode](SDL_GetClosestDisplayMode)
-* [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
-* [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
+- [SDL_GetNumDisplayModes](SDL_GetNumDisplayModes)
+- [SDL_GetDisplayMode](SDL_GetDisplayMode)
+- [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
+- [SDL_GetCurrentDisplayMode](SDL_GetCurrentDisplayMode)
+- [SDL_GetClosestDisplayMode](SDL_GetClosestDisplayMode)
+- [SDL_SetWindowDisplayMode](SDL_SetWindowDisplayMode)
+- [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo)

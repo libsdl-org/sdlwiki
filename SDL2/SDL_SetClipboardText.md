@@ -31,8 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetClipboardText](SDL_GetClipboardText)
-* [SDL_HasClipboardText](SDL_HasClipboardText)
+- [SDL_GetClipboardText](SDL_GetClipboardText)
+- [SDL_HasClipboardText](SDL_HasClipboardText)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

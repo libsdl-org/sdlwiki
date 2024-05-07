@@ -49,7 +49,7 @@ This function is available since SDL 2.0.6.
 
 ## See Also
 
-* [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+- [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -26,8 +26,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HideWindow](SDL_HideWindow)
-* [SDL_RaiseWindow](SDL_RaiseWindow)
+- [SDL_HideWindow](SDL_HideWindow)
+- [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,9 +33,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateColorCursor](SDL_CreateColorCursor)
-* [SDL_CreateCursor](SDL_CreateCursor)
-* [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
+- [SDL_CreateColorCursor](SDL_CreateColorCursor)
+- [SDL_CreateCursor](SDL_CreateCursor)
+- [SDL_CreateSystemCursor](SDL_CreateSystemCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

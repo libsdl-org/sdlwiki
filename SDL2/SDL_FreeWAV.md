@@ -33,8 +33,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LoadWAV](SDL_LoadWAV)
-* [SDL_LoadWAV_RW](SDL_LoadWAV_RW)
+- [SDL_LoadWAV](SDL_LoadWAV)
+- [SDL_LoadWAV_RW](SDL_LoadWAV_RW)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

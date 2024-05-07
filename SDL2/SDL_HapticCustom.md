@@ -52,8 +52,8 @@ Otherwise it uses the samples in data for the different axes.
 
 ## See Also
 
-* [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
-* [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HAPTIC_CUSTOM](SDL_HAPTIC_CUSTOM)
+- [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)

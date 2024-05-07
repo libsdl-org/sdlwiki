@@ -34,10 +34,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
-* [SDL_DestroyRenderer](SDL_DestroyRenderer)
-* [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
-* [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
+- [SDL_DestroyRenderer](SDL_DestroyRenderer)
+- [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
+- [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

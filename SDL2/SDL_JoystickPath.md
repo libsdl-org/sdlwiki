@@ -32,7 +32,7 @@ This function is available since SDL 2.24.0.
 
 ## See Also
 
-* [SDL_JoystickPathForIndex](SDL_JoystickPathForIndex)
+- [SDL_JoystickPathForIndex](SDL_JoystickPathForIndex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

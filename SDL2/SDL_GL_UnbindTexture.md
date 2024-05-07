@@ -35,8 +35,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GL_BindTexture](SDL_GL_BindTexture)
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+- [SDL_GL_BindTexture](SDL_GL_BindTexture)
+- [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -40,7 +40,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetMouseState](SDL_GetMouseState)
+- [SDL_GetMouseState](SDL_GetMouseState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

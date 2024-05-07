@@ -41,8 +41,8 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 
 ## See Also
 
-* [SDL_SetEventFilter](SDL_SetEventFilter)
-* [SDL_AddEventWatch](SDL_AddEventWatch)
+- [SDL_SetEventFilter](SDL_SetEventFilter)
+- [SDL_AddEventWatch](SDL_AddEventWatch)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)

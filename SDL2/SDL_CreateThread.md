@@ -43,8 +43,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
-* [SDL_WaitThread](SDL_WaitThread)
+- [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
+- [SDL_WaitThread](SDL_WaitThread)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

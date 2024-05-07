@@ -32,9 +32,9 @@ This function is available since SDL 2.0.16.
 
 ## See Also
 
-* [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
-* [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+- [SDL_GetWindowMouseGrab](SDL_GetWindowMouseGrab)
+- [SDL_SetWindowKeyboardGrab](SDL_SetWindowKeyboardGrab)
+- [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -48,8 +48,8 @@ instead of linear.
 
 ## See Also
 
-* [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)
-* [SDL_HapticEffect](SDL_HapticEffect)
+- [SDL_HAPTIC_RAMP](SDL_HAPTIC_RAMP)
+- [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)

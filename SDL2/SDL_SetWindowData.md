@@ -38,7 +38,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetWindowData](SDL_GetWindowData)
+- [SDL_GetWindowData](SDL_GetWindowData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

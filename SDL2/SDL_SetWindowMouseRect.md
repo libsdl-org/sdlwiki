@@ -37,8 +37,8 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
-* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
+- [SDL_GetWindowMouseRect](SDL_GetWindowMouseRect)
+- [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -36,8 +36,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AllocPalette](SDL_AllocPalette)
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+- [SDL_AllocPalette](SDL_AllocPalette)
+- [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

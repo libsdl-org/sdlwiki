@@ -29,7 +29,7 @@ This function is available since SDL 2.0.9.
 
 ## See Also
 
-* [SDL_HasAVX](SDL_HasAVX)
+- [SDL_HasAVX](SDL_HasAVX)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -19,7 +19,7 @@ Device supports setting the global gain.
 
 ## See Also
 
-* [SDL_HapticSetGain](SDL_HapticSetGain)
+- [SDL_HapticSetGain](SDL_HapticSetGain)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

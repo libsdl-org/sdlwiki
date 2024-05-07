@@ -54,9 +54,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_PeepEvents](SDL_PeepEvents)
-* [SDL_PollEvent](SDL_PollEvent)
-* [SDL_RegisterEvents](SDL_RegisterEvents)
+- [SDL_PeepEvents](SDL_PeepEvents)
+- [SDL_PollEvent](SDL_PollEvent)
+- [SDL_RegisterEvents](SDL_RegisterEvents)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

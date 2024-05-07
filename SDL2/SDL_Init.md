@@ -71,10 +71,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_Quit](SDL_Quit)
-* [SDL_SetMainReady](SDL_SetMainReady)
-* [SDL_WasInit](SDL_WasInit)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_Quit](SDL_Quit)
+- [SDL_SetMainReady](SDL_SetMainReady)
+- [SDL_WasInit](SDL_WasInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

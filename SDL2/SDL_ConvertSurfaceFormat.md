@@ -43,9 +43,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AllocFormat](SDL_AllocFormat)
-* [SDL_ConvertSurface](SDL_ConvertSurface)
-* [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
+- [SDL_AllocFormat](SDL_AllocFormat)
+- [SDL_ConvertSurface](SDL_ConvertSurface)
+- [SDL_CreateRGBSurface](SDL_CreateRGBSurface)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

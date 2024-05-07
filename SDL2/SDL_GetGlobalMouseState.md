@@ -49,7 +49,7 @@ This function is available since SDL 2.0.4.
 
 ## See Also
 
-* [SDL_CaptureMouse](SDL_CaptureMouse)
+- [SDL_CaptureMouse](SDL_CaptureMouse)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

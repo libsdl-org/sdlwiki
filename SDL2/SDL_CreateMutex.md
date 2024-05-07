@@ -35,10 +35,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_DestroyMutex](SDL_DestroyMutex)
-* [SDL_LockMutex](SDL_LockMutex)
-* [SDL_TryLockMutex](SDL_TryLockMutex)
-* [SDL_UnlockMutex](SDL_UnlockMutex)
+- [SDL_DestroyMutex](SDL_DestroyMutex)
+- [SDL_LockMutex](SDL_LockMutex)
+- [SDL_TryLockMutex](SDL_TryLockMutex)
+- [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -31,7 +31,7 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_SetTextureUserData](SDL_SetTextureUserData)
+- [SDL_SetTextureUserData](SDL_SetTextureUserData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

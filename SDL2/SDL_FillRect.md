@@ -45,7 +45,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_FillRects](SDL_FillRects)
+- [SDL_FillRects](SDL_FillRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

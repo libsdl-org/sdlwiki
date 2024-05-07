@@ -55,8 +55,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
-* [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
+- [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
+- [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

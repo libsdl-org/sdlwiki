@@ -36,8 +36,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_WindowShapeMode](SDL_WindowShapeMode)
-* [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
+- [SDL_WindowShapeMode](SDL_WindowShapeMode)
+- [SDL_GetShapedWindowMode](SDL_GetShapedWindowMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

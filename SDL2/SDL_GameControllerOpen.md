@@ -41,9 +41,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GameControllerClose](SDL_GameControllerClose)
-* [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
-* [SDL_IsGameController](SDL_IsGameController)
+- [SDL_GameControllerClose](SDL_GameControllerClose)
+- [SDL_GameControllerNameForIndex](SDL_GameControllerNameForIndex)
+- [SDL_IsGameController](SDL_IsGameController)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

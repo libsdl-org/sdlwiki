@@ -37,7 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
+- [SDL_AndroidGetJNIEnv](SDL_AndroidGetJNIEnv)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

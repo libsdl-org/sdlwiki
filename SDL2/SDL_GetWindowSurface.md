@@ -50,10 +50,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
-* [SDL_HasWindowSurface](SDL_HasWindowSurface)
-* [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
-* [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
+- [SDL_DestroyWindowSurface](SDL_DestroyWindowSurface)
+- [SDL_HasWindowSurface](SDL_HasWindowSurface)
+- [SDL_UpdateWindowSurface](SDL_UpdateWindowSurface)
+- [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

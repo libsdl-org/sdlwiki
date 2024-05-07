@@ -53,9 +53,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetRGB](SDL_GetRGB)
-* [SDL_GetRGBA](SDL_GetRGBA)
-* [SDL_MapRGB](SDL_MapRGB)
+- [SDL_GetRGB](SDL_GetRGB)
+- [SDL_GetRGBA](SDL_GetRGBA)
+- [SDL_MapRGB](SDL_MapRGB)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

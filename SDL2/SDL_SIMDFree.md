@@ -40,8 +40,8 @@ This function is available since SDL 2.0.10.
 
 ## See Also
 
-* [SDL_SIMDAlloc](SDL_SIMDAlloc)
-* [SDL_SIMDRealloc](SDL_SIMDRealloc)
+- [SDL_SIMDAlloc](SDL_SIMDAlloc)
+- [SDL_SIMDRealloc](SDL_SIMDRealloc)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

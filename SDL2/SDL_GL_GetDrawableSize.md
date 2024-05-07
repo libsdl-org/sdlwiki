@@ -39,8 +39,8 @@ This function is available since SDL 2.0.1.
 
 ## See Also
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_GetWindowSize](SDL_GetWindowSize)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_GetWindowSize](SDL_GetWindowSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -35,7 +35,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_TICKS_PASSED](SDL_TICKS_PASSED)
+- [SDL_TICKS_PASSED](SDL_TICKS_PASSED)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

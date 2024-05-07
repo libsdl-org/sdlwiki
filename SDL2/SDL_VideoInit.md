@@ -50,10 +50,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
-* [SDL_GetVideoDriver](SDL_GetVideoDriver)
-* [SDL_InitSubSystem](SDL_InitSubSystem)
-* [SDL_VideoQuit](SDL_VideoQuit)
+- [SDL_GetNumVideoDrivers](SDL_GetNumVideoDrivers)
+- [SDL_GetVideoDriver](SDL_GetVideoDriver)
+- [SDL_InitSubSystem](SDL_InitSubSystem)
+- [SDL_VideoQuit](SDL_VideoQuit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

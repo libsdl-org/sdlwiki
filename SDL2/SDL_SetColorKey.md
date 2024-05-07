@@ -47,8 +47,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_GetColorKey](SDL_GetColorKey)
+- [SDL_BlitSurface](SDL_BlitSurface)
+- [SDL_GetColorKey](SDL_GetColorKey)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

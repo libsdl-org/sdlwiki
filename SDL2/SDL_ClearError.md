@@ -20,8 +20,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetError](SDL_GetError)
-* [SDL_SetError](SDL_SetError)
+- [SDL_GetError](SDL_GetError)
+- [SDL_SetError](SDL_SetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryError](CategoryError)

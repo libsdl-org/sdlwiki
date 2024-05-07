@@ -24,7 +24,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_VideoInit](SDL_VideoInit)
+- [SDL_VideoInit](SDL_VideoInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -47,7 +47,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GameControllerGetStringForAxis](SDL_GameControllerGetStringForAxis)
+- [SDL_GameControllerGetStringForAxis](SDL_GameControllerGetStringForAxis)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

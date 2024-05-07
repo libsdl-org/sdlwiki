@@ -56,7 +56,7 @@ SDL_Window * window = SDL_CreateWindow(
 
 ## See Also
 
-* [SDL_GetWindowFlags](SDL_GetWindowFlags)
+- [SDL_GetWindowFlags](SDL_GetWindowFlags)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)

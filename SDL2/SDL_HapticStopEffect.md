@@ -37,8 +37,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
-* [SDL_HapticRunEffect](SDL_HapticRunEffect)
+- [SDL_HapticDestroyEffect](SDL_HapticDestroyEffect)
+- [SDL_HapticRunEffect](SDL_HapticRunEffect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

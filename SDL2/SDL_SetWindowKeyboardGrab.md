@@ -46,9 +46,9 @@ This function is available since SDL 2.0.16.
 
 ## See Also
 
-* [SDL_GetWindowKeyboardGrab](SDL_GetWindowKeyboardGrab)
-* [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
+- [SDL_GetWindowKeyboardGrab](SDL_GetWindowKeyboardGrab)
+- [SDL_SetWindowMouseGrab](SDL_SetWindowMouseGrab)
+- [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

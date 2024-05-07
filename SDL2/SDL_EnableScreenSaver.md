@@ -20,8 +20,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
-* [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled)
+- [SDL_DisableScreenSaver](SDL_DisableScreenSaver)
+- [SDL_IsScreenSaverEnabled](SDL_IsScreenSaverEnabled)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

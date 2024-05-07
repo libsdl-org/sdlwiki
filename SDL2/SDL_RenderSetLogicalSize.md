@@ -49,7 +49,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
+- [SDL_RenderGetLogicalSize](SDL_RenderGetLogicalSize)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

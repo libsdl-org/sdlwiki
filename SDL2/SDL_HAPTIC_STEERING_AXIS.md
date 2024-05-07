@@ -20,7 +20,7 @@ guess the correct axis.
 
 ## See Also
 
-* [SDL_HapticDirection](SDL_HapticDirection)
+- [SDL_HapticDirection](SDL_HapticDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

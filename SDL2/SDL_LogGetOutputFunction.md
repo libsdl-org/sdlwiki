@@ -27,7 +27,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)
+- [SDL_LogSetOutputFunction](SDL_LogSetOutputFunction)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

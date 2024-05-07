@@ -32,9 +32,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
-* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
-* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
+- [SDL_HapticRumbleInit](SDL_HapticRumbleInit)
+- [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
+- [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

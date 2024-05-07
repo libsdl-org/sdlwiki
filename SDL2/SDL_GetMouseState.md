@@ -39,9 +39,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
-* [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
-* [SDL_PumpEvents](SDL_PumpEvents)
+- [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
+- [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
+- [SDL_PumpEvents](SDL_PumpEvents)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

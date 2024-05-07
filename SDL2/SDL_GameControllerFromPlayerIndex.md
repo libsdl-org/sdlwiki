@@ -36,8 +36,8 @@ This function is available since SDL 2.0.12.
 
 ## See Also
 
-* [SDL_GameControllerGetPlayerIndex](SDL_GameControllerGetPlayerIndex)
-* [SDL_GameControllerSetPlayerIndex](SDL_GameControllerSetPlayerIndex)
+- [SDL_GameControllerGetPlayerIndex](SDL_GameControllerGetPlayerIndex)
+- [SDL_GameControllerSetPlayerIndex](SDL_GameControllerSetPlayerIndex)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

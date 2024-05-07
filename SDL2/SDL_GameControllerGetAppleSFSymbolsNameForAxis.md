@@ -31,7 +31,7 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_GameControllerGetAppleSFSymbolsNameForButton](SDL_GameControllerGetAppleSFSymbolsNameForButton)
+- [SDL_GameControllerGetAppleSFSymbolsNameForButton](SDL_GameControllerGetAppleSFSymbolsNameForButton)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

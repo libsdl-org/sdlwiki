@@ -31,7 +31,7 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_GameControllerGetAppleSFSymbolsNameForAxis](SDL_GameControllerGetAppleSFSymbolsNameForAxis)
+- [SDL_GameControllerGetAppleSFSymbolsNameForAxis](SDL_GameControllerGetAppleSFSymbolsNameForAxis)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

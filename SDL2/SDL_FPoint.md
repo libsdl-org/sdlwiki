@@ -19,8 +19,8 @@ typedef struct SDL_FPoint
 
 ## See Also
 
-* [SDL_EncloseFPoints](SDL_EncloseFPoints)
-* [SDL_PointInFRect](SDL_PointInFRect)
+- [SDL_EncloseFPoints](SDL_EncloseFPoints)
+- [SDL_PointInFRect](SDL_PointInFRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

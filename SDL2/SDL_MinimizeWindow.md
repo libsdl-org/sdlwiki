@@ -26,8 +26,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_RestoreWindow](SDL_RestoreWindow)
+- [SDL_MaximizeWindow](SDL_MaximizeWindow)
+- [SDL_RestoreWindow](SDL_RestoreWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

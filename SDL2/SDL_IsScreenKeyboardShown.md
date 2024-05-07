@@ -31,7 +31,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
+- [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

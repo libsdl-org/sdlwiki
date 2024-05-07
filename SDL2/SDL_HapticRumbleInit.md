@@ -31,10 +31,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
-* [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
-* [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
+- [SDL_HapticOpen](SDL_HapticOpen)
+- [SDL_HapticRumblePlay](SDL_HapticRumblePlay)
+- [SDL_HapticRumbleStop](SDL_HapticRumbleStop)
+- [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

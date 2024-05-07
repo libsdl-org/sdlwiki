@@ -39,7 +39,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticUnpause](SDL_HapticUnpause)
+- [SDL_HapticUnpause](SDL_HapticUnpause)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

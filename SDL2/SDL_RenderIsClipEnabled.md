@@ -32,8 +32,8 @@ This function is available since SDL 2.0.4.
 
 ## See Also
 
-* [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
-* [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
+- [SDL_RenderGetClipRect](SDL_RenderGetClipRect)
+- [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

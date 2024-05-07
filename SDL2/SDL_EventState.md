@@ -44,7 +44,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetEventState](SDL_GetEventState)
+- [SDL_GetEventState](SDL_GetEventState)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

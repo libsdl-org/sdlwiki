@@ -42,9 +42,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticClose](SDL_HapticClose)
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_JoystickIsHaptic](SDL_JoystickIsHaptic)
+- [SDL_HapticClose](SDL_HapticClose)
+- [SDL_HapticOpen](SDL_HapticOpen)
+- [SDL_JoystickIsHaptic](SDL_JoystickIsHaptic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

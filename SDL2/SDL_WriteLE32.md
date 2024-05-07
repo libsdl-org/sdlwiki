@@ -37,7 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_WriteBE32](SDL_WriteBE32)
+- [SDL_WriteBE32](SDL_WriteBE32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

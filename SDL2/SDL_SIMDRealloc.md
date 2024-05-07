@@ -37,9 +37,9 @@ This function is available since SDL 2.0.14.
 
 ## See Also
 
-* [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
-* [SDL_SIMDAlloc](SDL_SIMDAlloc)
-* [SDL_SIMDFree](SDL_SIMDFree)
+- [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
+- [SDL_SIMDAlloc](SDL_SIMDAlloc)
+- [SDL_SIMDFree](SDL_SIMDFree)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

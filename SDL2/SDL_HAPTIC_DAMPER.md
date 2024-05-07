@@ -20,7 +20,7 @@ axes velocity.
 
 ## See Also
 
-* [SDL_HapticCondition](SDL_HapticCondition)
+- [SDL_HapticCondition](SDL_HapticCondition)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

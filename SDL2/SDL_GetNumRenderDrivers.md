@@ -33,8 +33,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateRenderer](SDL_CreateRenderer)
-* [SDL_GetRenderDriverInfo](SDL_GetRenderDriverInfo)
+- [SDL_CreateRenderer](SDL_CreateRenderer)
+- [SDL_GetRenderDriverInfo](SDL_GetRenderDriverInfo)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

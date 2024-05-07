@@ -39,8 +39,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_DestroyWindow](SDL_DestroyWindow)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)

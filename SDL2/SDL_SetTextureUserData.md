@@ -32,7 +32,7 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_GetTextureUserData](SDL_GetTextureUserData)
+- [SDL_GetTextureUserData](SDL_GetTextureUserData)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

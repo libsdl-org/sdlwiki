@@ -42,7 +42,7 @@ This function is available since SDL 2.0.4.
 
 ## See Also
 
-* [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
+- [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

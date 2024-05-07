@@ -34,7 +34,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
+- [SDL_AndroidGetActivity](SDL_AndroidGetActivity)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

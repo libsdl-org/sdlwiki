@@ -31,9 +31,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
-* [SDL_GetKeyName](SDL_GetKeyName)
-* [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
+- [SDL_GetKeyFromScancode](SDL_GetKeyFromScancode)
+- [SDL_GetKeyName](SDL_GetKeyName)
+- [SDL_GetScancodeFromName](SDL_GetScancodeFromName)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

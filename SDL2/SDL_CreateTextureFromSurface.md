@@ -43,9 +43,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateTexture](SDL_CreateTexture)
-* [SDL_DestroyTexture](SDL_DestroyTexture)
-* [SDL_QueryTexture](SDL_QueryTexture)
+- [SDL_CreateTexture](SDL_CreateTexture)
+- [SDL_DestroyTexture](SDL_DestroyTexture)
+- [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

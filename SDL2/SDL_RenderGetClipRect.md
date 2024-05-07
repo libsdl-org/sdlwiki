@@ -28,8 +28,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
-* [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
+- [SDL_RenderIsClipEnabled](SDL_RenderIsClipEnabled)
+- [SDL_RenderSetClipRect](SDL_RenderSetClipRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

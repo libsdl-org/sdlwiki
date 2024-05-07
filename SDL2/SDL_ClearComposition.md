@@ -20,8 +20,8 @@ This function is available since SDL 2.0.22.
 
 ## See Also
 
-* [SDL_StartTextInput](SDL_StartTextInput)
-* [SDL_StopTextInput](SDL_StopTextInput)
+- [SDL_StartTextInput](SDL_StartTextInput)
+- [SDL_StopTextInput](SDL_StopTextInput)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

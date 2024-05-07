@@ -63,8 +63,8 @@ This function is available since SDL 2.0.6.
 
 ## See Also
 
-* [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr)
-* [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary)
+- [SDL_Vulkan_GetVkInstanceProcAddr](SDL_Vulkan_GetVkInstanceProcAddr)
+- [SDL_Vulkan_UnloadLibrary](SDL_Vulkan_UnloadLibrary)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

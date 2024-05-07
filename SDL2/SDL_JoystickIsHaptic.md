@@ -32,7 +32,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticOpenFromJoystick](SDL_HapticOpenFromJoystick)
+- [SDL_HapticOpenFromJoystick](SDL_HapticOpenFromJoystick)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

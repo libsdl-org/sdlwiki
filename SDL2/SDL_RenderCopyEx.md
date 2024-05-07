@@ -58,10 +58,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_RenderCopy](SDL_RenderCopy)
-* [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
-* [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
-* [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
+- [SDL_RenderCopy](SDL_RenderCopy)
+- [SDL_SetTextureAlphaMod](SDL_SetTextureAlphaMod)
+- [SDL_SetTextureBlendMode](SDL_SetTextureBlendMode)
+- [SDL_SetTextureColorMod](SDL_SetTextureColorMod)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

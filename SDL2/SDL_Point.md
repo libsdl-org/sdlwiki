@@ -76,8 +76,8 @@ int main(int argc, char *argv[]) {
 
 ## See Also
 
-* [SDL_EnclosePoints](SDL_EnclosePoints)
-* [SDL_PointInRect](SDL_PointInRect)
+- [SDL_EnclosePoints](SDL_EnclosePoints)
+- [SDL_PointInRect](SDL_PointInRect)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)

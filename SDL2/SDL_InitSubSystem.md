@@ -35,9 +35,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_Init](SDL_Init)
-* [SDL_Quit](SDL_Quit)
-* [SDL_QuitSubSystem](SDL_QuitSubSystem)
+- [SDL_Init](SDL_Init)
+- [SDL_Quit](SDL_Quit)
+- [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)

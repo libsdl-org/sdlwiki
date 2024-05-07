@@ -26,7 +26,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LogSetPriority](SDL_LogSetPriority)
+- [SDL_LogSetPriority](SDL_LogSetPriority)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

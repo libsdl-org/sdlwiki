@@ -31,13 +31,13 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CreateWindow](SDL_CreateWindow)
-* [SDL_HideWindow](SDL_HideWindow)
-* [SDL_MaximizeWindow](SDL_MaximizeWindow)
-* [SDL_MinimizeWindow](SDL_MinimizeWindow)
-* [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
-* [SDL_SetWindowGrab](SDL_SetWindowGrab)
-* [SDL_ShowWindow](SDL_ShowWindow)
+- [SDL_CreateWindow](SDL_CreateWindow)
+- [SDL_HideWindow](SDL_HideWindow)
+- [SDL_MaximizeWindow](SDL_MaximizeWindow)
+- [SDL_MinimizeWindow](SDL_MinimizeWindow)
+- [SDL_SetWindowFullscreen](SDL_SetWindowFullscreen)
+- [SDL_SetWindowGrab](SDL_SetWindowGrab)
+- [SDL_ShowWindow](SDL_ShowWindow)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

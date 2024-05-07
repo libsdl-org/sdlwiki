@@ -60,7 +60,7 @@ This function is available since SDL 2.0.1.
 
 ## See Also
 
-* [SDL_GetPrefPath](SDL_GetPrefPath)
+- [SDL_GetPrefPath](SDL_GetPrefPath)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -64,10 +64,10 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_CloseAudio](SDL_CloseAudio)
-* [SDL_LockAudio](SDL_LockAudio)
-* [SDL_PauseAudio](SDL_PauseAudio)
-* [SDL_UnlockAudio](SDL_UnlockAudio)
+- [SDL_CloseAudio](SDL_CloseAudio)
+- [SDL_LockAudio](SDL_LockAudio)
+- [SDL_PauseAudio](SDL_PauseAudio)
+- [SDL_UnlockAudio](SDL_UnlockAudio)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

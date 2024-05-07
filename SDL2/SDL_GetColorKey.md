@@ -40,8 +40,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_BlitSurface](SDL_BlitSurface)
-* [SDL_SetColorKey](SDL_SetColorKey)
+- [SDL_BlitSurface](SDL_BlitSurface)
+- [SDL_SetColorKey](SDL_SetColorKey)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

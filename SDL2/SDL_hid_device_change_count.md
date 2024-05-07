@@ -36,7 +36,7 @@ This function is available since SDL 2.0.18.
 
 ## See Also
 
-* [SDL_hid_enumerate](SDL_hid_enumerate)
+- [SDL_hid_enumerate](SDL_hid_enumerate)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

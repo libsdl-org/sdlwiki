@@ -31,8 +31,8 @@ This function is available since SDL 2.24.0.
 
 ## See Also
 
-* [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
-* [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
+- [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
+- [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

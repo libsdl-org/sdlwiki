@@ -26,8 +26,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_LoadFunction](SDL_LoadFunction)
-* [SDL_LoadObject](SDL_LoadObject)
+- [SDL_LoadFunction](SDL_LoadFunction)
+- [SDL_LoadObject](SDL_LoadObject)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -105,8 +105,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_FreeWAV](SDL_FreeWAV)
-* [SDL_LoadWAV](SDL_LoadWAV)
+- [SDL_FreeWAV](SDL_FreeWAV)
+- [SDL_LoadWAV](SDL_LoadWAV)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -31,8 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_AtomicTryLock](SDL_AtomicTryLock)
-* [SDL_AtomicUnlock](SDL_AtomicUnlock)
+- [SDL_AtomicTryLock](SDL_AtomicTryLock)
+- [SDL_AtomicUnlock](SDL_AtomicUnlock)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

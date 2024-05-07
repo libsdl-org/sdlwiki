@@ -31,8 +31,8 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_HapticOpen](SDL_HapticOpen)
-* [SDL_HapticOpened](SDL_HapticOpened)
+- [SDL_HapticOpen](SDL_HapticOpen)
+- [SDL_HapticOpened](SDL_HapticOpened)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -33,7 +33,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)
+- [SDL_SetSurfaceBlendMode](SDL_SetSurfaceBlendMode)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

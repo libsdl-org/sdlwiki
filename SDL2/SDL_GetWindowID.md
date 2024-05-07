@@ -37,7 +37,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_GetWindowFromID](SDL_GetWindowFromID)
+- [SDL_GetWindowFromID](SDL_GetWindowFromID)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

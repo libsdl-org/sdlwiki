@@ -60,7 +60,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_BuildAudioCVT](SDL_BuildAudioCVT)
+- [SDL_BuildAudioCVT](SDL_BuildAudioCVT)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

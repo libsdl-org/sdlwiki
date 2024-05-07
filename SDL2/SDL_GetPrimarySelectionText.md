@@ -32,8 +32,8 @@ This function is available since SDL 2.26.0.
 
 ## See Also
 
-* [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
-* [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
+- [SDL_HasPrimarySelectionText](SDL_HasPrimarySelectionText)
+- [SDL_SetPrimarySelectionText](SDL_SetPrimarySelectionText)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

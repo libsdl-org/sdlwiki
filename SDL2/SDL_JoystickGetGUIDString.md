@@ -32,9 +32,9 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
-* [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
-* [SDL_JoystickGetGUIDFromString](SDL_JoystickGetGUIDFromString)
+- [SDL_JoystickGetDeviceGUID](SDL_JoystickGetDeviceGUID)
+- [SDL_JoystickGetGUID](SDL_JoystickGetGUID)
+- [SDL_JoystickGetGUIDFromString](SDL_JoystickGetGUIDFromString)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

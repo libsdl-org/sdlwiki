@@ -30,7 +30,7 @@ This function is available since SDL 2.0.0.
 
 ## See Also
 
-* [SDL_SetCursor](SDL_SetCursor)
+- [SDL_SetCursor](SDL_SetCursor)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
