@@ -177,8 +177,11 @@ You can set the environment variable "SDL_AUDIODRIVER" to the name of the driver
 |}
 
 == What environment variables are used by SDL? ==
-Mattias Engdegård has made a partial list of the environment variables that SDL may use. Keep in mind that these environment variables are not officially supported, and may change or go away at any time.
-ftp://ptah.lnf.kth.se/pub/misc/sdl-env-vars
+
+A complete list is available in [https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_hints.h SDL_hints.h].
+These can be set programmatically with SDL_SetHint, or specified as enviroment
+variables by the end-user.
+
 
 == Why does SDL disable my screensaver by default? ==
 Many applications using SDL are games or screensavers or media players where the user is either watching something for an extended period of time or using joystick input which generally does not prevent the screensaver from kicking on.
