@@ -90,7 +90,7 @@ As of SDL 2.0.3, the codebase still compiles on Cygwin and MingW32, but we expec
 
 On Windows, SDL does not depend on a C runtime at all, not even for malloc(). This means it's possible to build SDL with almost any Windows compiler and have it work with a program built with any other. Furthermore, it means that SDLmain (the small static .lib file that optionally provides WinMain()) does not force you to deal with Debug vs Release builds in your app, since it doesn't need either a Debug or Release C runtime. One .lib should work everywhere.
 
-Our buildbot tries to build for Win32 for each commit, and uploads successful Visual Studio 2010 builds to a public webserver. If you want to grab these, it can save you time, if you just want to use a bleeding-edge SDL2.dll without compiling one yourself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-visualstudio/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These builds should work with just about any Windows compiler. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unzip the archive, point your project at its "include" directory for headers, and link against SDL2.lib (and optionally, SDLmain.lib if you want SDL to provide a WinMain() that calls your standard Unix-like main() function). Distribute the SDL2.dll with your app's .exe file, and you're good to go!
+Binaries are built for official releases and can be found at [https://github.com/libsdl-org/SDL/releases The GitHub Page]
 
 === macOS ===
 
@@ -136,17 +136,11 @@ See [[Android|Building SDL2 for Android]].
 
 If you want to build SDL on your Raspberry Pi directly, just build it "the Unix way," as the RPi is, more or less, a standard Linux system. It can be built with X11 support, and also can do OpenGL ES rendering directly to the screen without an X server, to save resources. In theory, Wayland could also be supported, but at the time of this writing it doesn't configure/compile correctly (send patches!).
 
-Our buildbot tries to build for Raspberry Pi for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you time, especially if you're building on the RPi itself. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-raspberrypi/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. These are built with a cross-compiler, with some version of Raspbian in mind, but should work with almost any RPi distro and in a cross-compiler environment, too. We don't promise anything about the quality of these builds, though, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
-
-The actual shell script our buildbot uses to run the Raspberry Pi build is [https://github.com/libsdl-org/SDL/blob/main/build-scripts/raspberrypi-buildbot.sh build-scripts/raspberrypi-buildbot.sh] in the SDL source tree. It expects a cross-compiler in /opt/rpi-tools and a copy of the root filesystem from a RPi in /opt/rpi-sysroot. You can see some current quirks we work around in there (send patches!).
-
 === NaCL ===
 
 SDL can target Google Chrome's Native Client, aka "NaCL", which is, more or less, native binaries as web apps. We've tested with "PNaCL" specifically, but you can probably make this work with other compilers too.
 
 Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-nacl.md docs/README-nacl.md] for more details, including how to use our build scripts to generate an SDL build.
-
-Our buildbot tries to build for Native Client for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-nacl/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 === Emscripten ===
 
@@ -157,8 +151,6 @@ This port is generally built "the Unix way," but with a little wrapper script ov
 Please see [https://github.com/libsdl-org/SDL/blob/main/docs/README-emscripten.md docs/README-emscripten.md] for more details.
 
 Also note that Emscripten has a simple implementation of SDL 1.2's API built in. This is written by hand in JavaScript and is unrelated to the SDL codebase. The SDL2 port literally uses Emscripten to compile SDL's C code and link it to your app.
-
-Our buildbot tries to build with Emscripten for each commit, and uploads successful builds to a public webserver. If you want to grab these, it can save you some hassle. You can grab the prebuilt library [https://buildbot.libsdl.org/sdl-builds/sdl-emscripten/?C=M;O=D here] ... the number represents the Buildbot build number; the bigger the number, the newer the build. We don't promise anything about the quality of these builds, and welcome feedback to improve them. Unpack the tarball in the root of your filesystem and it'll install headers, libraries, and sdl2-config in /usr/local (or install wherever).
 
 
 === Nintendo Switch ===
@@ -176,7 +168,7 @@ We no longer have build environments for Windows 8 or Windows Phone. The Win32 t
 
 === QNX ===
 
-QNX is supported. Our buildbot compiles for QNX on ARM, ARM64, x86, and x86_64 on each commit. You can build for this platform "the unix way."
+QNX is supported. You can build for this platform "the unix way."
 
 
 === Ouya ===
@@ -186,7 +178,7 @@ SDL apps work on the Ouya! Just build like a standard Android application and si
 
 === IBM OS/2, eComStation and ArcaOS ===
 
-OS/2 is supported. Our buildbot compiles for OS/2 on each commit. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
+OS/2 is supported. You can build for this platform using OpenWatcom by running "wmake -f Makefile.os2" from the source directory.
 
 
 === RISC OS ===
