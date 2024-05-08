@@ -176,4 +176,5 @@ All of these still work with SDL2, which is an incompatible API, but an option i
 - OS/2
 - QNX
 - NaCL
+- Google Stadia
 
