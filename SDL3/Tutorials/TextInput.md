@@ -40,7 +40,8 @@ First, an example:
 ### Example
 
 ```c
-#include "SDL.h"
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 
 extern void InitVideo();
 extern void Redraw();
