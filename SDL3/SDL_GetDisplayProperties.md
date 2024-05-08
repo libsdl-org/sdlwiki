@@ -49,6 +49,14 @@ The following read-only properties are provided by SDL:
   [SDL_EVENT_DISPLAY_HDR_STATE_CHANGED](SDL_EVENT_DISPLAY_HDR_STATE_CHANGED)
   is sent.
 
+On KMS/DRM:
+
+- [`SDL_PROP_DISPLAY_KMSDRM_ORIENTATION_NUMBER`](SDL_PROP_DISPLAY_KMSDRM_ORIENTATION_NUMBER):
+  the "panel orientation" property for the display in degrees of clockwise
+  rotation. Note that this is provided only as a hint, and the application
+  is responsible for any coordinate transformations needed to conform to
+  the requested display orientation.
+
 ## Version
 
 This function is available since SDL 3.0.0.
