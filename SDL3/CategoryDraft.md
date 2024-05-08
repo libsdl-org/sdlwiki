@@ -45,9 +45,7 @@
 - [SDL_HapticRumbleSupported](SDL_HapticRumbleSupported)
 - [SDL_HasAVX2](SDL_HasAVX2)
 - [SDL_HasScreenKeyboardSupport](SDL_HasScreenKeyboardSupport)
-- [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
 - [SDL_ReadU8](SDL_ReadU8)
-- [SDL_ScancodeAndKeycode](SDL_ScancodeAndKeycode)
 - [SDL_SetCursor](SDL_SetCursor)
 - [SDL_SetModState](SDL_SetModState)
 - [SDL_SetRelativeMouseMode](SDL_SetRelativeMouseMode)
@@ -67,5 +65,4 @@
 - [SDL_WarpMouseGlobal](SDL_WarpMouseGlobal)
 - [SDL_WarpMouseInWindow](SDL_WarpMouseInWindow)
 - [SDL_WriteU8](SDL_WriteU8)
-- [SDLKeycodeLookup](SDLKeycodeLookup)
 <!-- END CATEGORY LIST -->

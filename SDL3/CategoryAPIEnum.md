@@ -44,6 +44,7 @@
 - [SDL_MouseWheelDirection](SDL_MouseWheelDirection)
 - [SDL_PenAxis](SDL_PenAxis)
 - [SDL_PenSubtype](SDL_PenSubtype)
+- [SDL_PixelFormatEnum](SDL_PixelFormatEnum)
 - [SDL_PowerState](SDL_PowerState)
 - [SDL_PropertyType](SDL_PropertyType)
 - [SDL_RendererFlags](SDL_RendererFlags)
