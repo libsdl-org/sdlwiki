@@ -33,7 +33,7 @@ Check back later.
 
 ## Audio
 
-- [Using SDL_AudioStream](Tutorials/AudioStream): A guide to the new audio stream API
+- [Using SDL_AudioStream](AudioStream): A guide to the new audio stream API
 
 ## Video
 
@@ -51,7 +51,7 @@ Check back later.
 
 ## Input
 
-- [Text Input](Tutorials/TextInput): Using SDL for text inputs with specific consideration for international users.
+- [Text Input](TextInput): Using SDL for text inputs with specific consideration for international users.
 
 ## Threads
 
