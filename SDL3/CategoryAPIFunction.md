@@ -213,6 +213,7 @@
 - [SDL_GetCurrentTime](SDL_GetCurrentTime)
 - [SDL_GetCurrentVideoDriver](SDL_GetCurrentVideoDriver)
 - [SDL_GetCursor](SDL_GetCursor)
+- [SDL_GetDateTimeLocalePreferences](SDL_GetDateTimeLocalePreferences)
 - [SDL_GetDayOfWeek](SDL_GetDayOfWeek)
 - [SDL_GetDayOfYear](SDL_GetDayOfYear)
 - [SDL_GetDaysInMonth](SDL_GetDaysInMonth)
