@@ -54,7 +54,8 @@ information about the functions, structures, enumerations and macros.
 - A few of the most commonly asked questions about using SDL are answered
   in the [FAQs](FAQs) section.
 - We have [forums/mailing lists](https://discourse.libsdl.org/) for talking
-  with other humans, and of course, [a Discord server](). Both are great places
+  with other humans, and of course,
+  [a Discord server](https://discord.gg/BwpFGBWsv8). Both are great places
   to keep up with the latest news, help other users out, and ask questions.
 
 ## Other stuff
