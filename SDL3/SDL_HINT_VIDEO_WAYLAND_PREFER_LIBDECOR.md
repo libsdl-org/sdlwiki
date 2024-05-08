@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_HINT_VIDEO_WAYLAND_PREFER_LIBDECOR
 
-A variable controlling whether the libdecor Wayland backend is preferred over native decrations.
+A variable controlling whether the libdecor Wayland backend is preferred over native decorations.
 
 ## Header File
 
