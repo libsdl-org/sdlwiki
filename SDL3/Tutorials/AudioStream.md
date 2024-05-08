@@ -26,7 +26,9 @@ Using SDL_AudioStream is pretty simple. First, you create one. Let's say you wan
 
 ```c
 // You put data at Sint16/mono/22050Hz, you get back data at Float32/stereo/48000Hz.
-SDL_AudioStream *stream = SDL_CreateAudioStream(AUDIO_S16, 1, 22050, AUDIO_F32, 2, 48000);
+const SDL_AudioSpec srcspec = { SDL_AUDIO_S16, 1, 22050 };
+const SDL_AudioSpec dstspec = { SDL_AUDIO_F32, 2, 48000 };
+SDL_AudioStream *stream = SDL_CreateAudioStream(&srcspec, &dstspec);
 if (stream == NULL) {
     printf("Uhoh, stream failed to create: %s\n", SDL_GetError());
 } else {
