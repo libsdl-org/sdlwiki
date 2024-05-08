@@ -88,4 +88,3 @@ SDL_DestroySemaphore(sem);
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
-

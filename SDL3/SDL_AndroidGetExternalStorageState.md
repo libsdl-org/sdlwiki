@@ -44,3 +44,4 @@ This function is available since SDL 3.0.0.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAndroid](CategoryAndroid)
 
+
