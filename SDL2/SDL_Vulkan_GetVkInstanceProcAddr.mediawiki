@@ -1,6 +1,5 @@
-
 = SDL_Vulkan_GetVkGetInstanceProcAddr =
-Use this function to get the address of the ```vkGetInstanceProcAddr``` function.
+Use this function to get the address of the <code>vkGetInstanceProcAddr</code> function.
 
 
 
