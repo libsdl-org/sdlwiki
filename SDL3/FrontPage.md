@@ -25,7 +25,6 @@ This wiki is your portal to documentation and other resources for SDL 3.0.
 
 ## Using the SDL documentation Wiki
 
-- [Introduction](Introduction): An introduction to the features in SDL 3.0.
 - [Source Code](SourceCode): How to download the source code to SDL.
 - [Installation](Installation): How to install SDL on your platform of choice
   and link your program against it.
