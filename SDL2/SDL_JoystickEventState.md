@@ -22,11 +22,9 @@ int SDL_JoystickEventState(int state);
 
 ## Return Value
 
-Returns 1 if enabled, 0 if disabled, or a negative error code on failure;
-call [SDL_GetError](SDL_GetError)() for more information.
-
-If `state` is [`SDL_QUERY`](SDL_QUERY) then the current state is returned,
-otherwise the new processing state is returned.
+Returns If `state` is [`SDL_QUERY`](SDL_QUERY) then the current state is
+returned, otherwise `state` is returned (even if it was not one of the
+allowed values).
 
 ## Remarks
 
@@ -38,6 +36,14 @@ It is recommended that you leave joystick event handling enabled.
 
 **WARNING**: Calling this function may delete all events currently in SDL's
 event queue.
+
+While `param` is meant to be one of [`SDL_QUERY`](SDL_QUERY),
+[`SDL_IGNORE`](SDL_IGNORE), or [`SDL_ENABLE`](SDL_ENABLE), this function
+accepts any value, with any non-zero value that isn't
+[`SDL_QUERY`](SDL_QUERY) being treated as [`SDL_ENABLE`](SDL_ENABLE).
+
+If SDL was built with events disabled (extremely uncommon!), this will do
+nothing and always return [`SDL_IGNORE`](SDL_IGNORE).
 
 ## Version
 
