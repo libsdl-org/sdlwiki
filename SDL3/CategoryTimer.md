@@ -1,9 +1,3 @@
 <!-- BEGIN CATEGORY LIST -->
 - [SDL_AddTimer](SDL_AddTimer)
-- [SDL_Delay](SDL_Delay)
-- [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
-- [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
-- [SDL_GetTicks](SDL_GetTicks)
-- [SDL_RemoveTimer](SDL_RemoveTimer)
-- [SDL_TimerCallback](SDL_TimerCallback)
 <!-- END CATEGORY LIST -->

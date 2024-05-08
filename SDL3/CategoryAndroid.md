@@ -9,5 +9,4 @@
 - [SDL_AndroidSendMessage](SDL_AndroidSendMessage)
 - [SDL_AndroidShowToast](SDL_AndroidShowToast)
 - [SDL_GetAndroidSDKVersion](SDL_GetAndroidSDKVersion)
-- [SDL_IsAndroidTV](SDL_IsAndroidTV)
 <!-- END CATEGORY LIST -->

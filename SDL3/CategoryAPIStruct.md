@@ -41,7 +41,6 @@
 - [SDL_HapticPeriodic](SDL_HapticPeriodic)
 - [SDL_HapticRamp](SDL_HapticRamp)
 - [SDL_hid_device](SDL_hid_device)
-- [SDL_hid_device_](SDL_hid_device_)
 - [SDL_hid_device_info](SDL_hid_device_info)
 - [SDL_IOStream](SDL_IOStream)
 - [SDL_IOStreamInterface](SDL_IOStreamInterface)
