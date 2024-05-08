@@ -33,19 +33,6 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-SDL_Texture* source;
-
-// loading etc ...
-
-int w, h;
-SDL_QueryTexture(source, NULL, NULL, &w, &h);
-
-```
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -1,11 +1,4 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
-
-
-<!-- #*^*^*^*^*See https://wiki.libsdl.org/SGFunctions for details on editing this page*^*^*^*^* -->
 # SDL_CaptureMouse
 
 Capture the mouse and to track input outside an SDL window.
@@ -77,7 +70,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse), [CategoryDraft](CategoryDraft)
-<!-- #See the Style Guide for instructions on editing the footer. -->
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

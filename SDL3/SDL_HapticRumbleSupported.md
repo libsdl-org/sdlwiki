@@ -1,8 +1,4 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_HapticRumbleSupported
 
 Check whether rumble is supported on a haptic device.
@@ -49,6 +45,5 @@ if (SDL_HapticRumbleSupported(dev)) {
 - [SDL_InitHapticRumble](SDL_InitHapticRumble)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryForceFeedback](CategoryForceFeedback), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

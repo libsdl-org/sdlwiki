@@ -58,6 +58,5 @@ This function is available since SDL 3.0.0.
 - [SDL_MapRGB](SDL_MapRGB)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

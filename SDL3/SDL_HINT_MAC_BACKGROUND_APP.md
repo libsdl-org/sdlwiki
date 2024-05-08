@@ -28,7 +28,5 @@ This hint should be set before applicationDidFinishLaunching() is called.
 This hint is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [[CategoryHints]], [[CategoryDraft]]
-<!-- #See the Style Guide for instructions on editing the footer. -->
-
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
 

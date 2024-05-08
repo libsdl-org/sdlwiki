@@ -35,6 +35,5 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

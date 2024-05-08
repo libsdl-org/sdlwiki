@@ -49,6 +49,5 @@ This function is available since SDL 3.0.0.
 - [SDL_MapRGBA](SDL_MapRGBA)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryPixels](CategoryPixels)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

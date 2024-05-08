@@ -38,6 +38,5 @@ This function is available since SDL 3.0.0.
 - [SDL_AtomicSet](SDL_AtomicSet)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

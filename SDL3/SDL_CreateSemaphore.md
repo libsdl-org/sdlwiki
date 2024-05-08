@@ -39,8 +39,8 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<!-- # Begin Semaphore Example -->
 Typical use of semaphores:
+
 ```c++
 void add_data_to_queue(void);
 void get_data_to_queue(void);
@@ -75,7 +75,6 @@ SDL_PostSemaphore(sem);
 wait_for_threads();
 SDL_DestroySemaphore(sem);
 ```
-<!-- # End Semaphore Example -->
 
 ## See Also
 
@@ -87,6 +86,6 @@ SDL_DestroySemaphore(sem);
 - [SDL_WaitSemaphoreTimeout](SDL_WaitSemaphoreTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
 

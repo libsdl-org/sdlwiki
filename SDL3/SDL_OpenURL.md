@@ -51,7 +51,5 @@ test it on every platform you target.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHeader](CategoryHeader)
-<!-- #See the Style Guide for instructions on editing the footer. -->
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -23,6 +23,5 @@ This function is available since SDL 3.0.0.
 - [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

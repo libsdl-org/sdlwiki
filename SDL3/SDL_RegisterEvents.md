@@ -29,15 +29,10 @@ there are not enough user-defined events left.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<<Include([SDL_UserEvent](SDL_UserEvent), , , from="== Code Examples ==", to="== Remarks ==")>>
-
 ## See Also
 
 - [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -38,6 +38,5 @@ This function is available since SDL 3.0.0.
 - [SDL_LogWarn](SDL_LogWarn)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

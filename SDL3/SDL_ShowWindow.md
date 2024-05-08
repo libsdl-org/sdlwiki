@@ -29,20 +29,11 @@ Returns 0 on success or a negative error code on failure; call
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-SDL_Window *window;
-
-SDL_ShowWindow(window);
-```
-
 ## See Also
 
 - [SDL_HideWindow](SDL_HideWindow)
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

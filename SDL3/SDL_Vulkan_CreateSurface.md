@@ -45,24 +45,10 @@ argument is passed directly to Vulkan and isn't used by SDL itself.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-extern void handle_error(void);
-
-SDL_Window *window;
-VkInstance instance;
-VkSurfaceKHR surface;
-
-if (!SDL_Vulkan_CreateSurface(window, instance, NULL, &surface)) handle_error();
-```
-
 ## See Also
 
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
-<!-- #See the Style Guide for instructions on editing the footer. -->
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

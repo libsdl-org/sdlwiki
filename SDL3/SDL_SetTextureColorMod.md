@@ -61,6 +61,5 @@ SDL_SetTextureColorMod( pTexture, 64, 64, 64 );
 - [SDL_SetTextureColorModFloat](SDL_SetTextureColorModFloat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

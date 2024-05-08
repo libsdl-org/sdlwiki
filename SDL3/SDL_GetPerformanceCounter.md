@@ -35,6 +35,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetPerformanceFrequency](SDL_GetPerformanceFrequency)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

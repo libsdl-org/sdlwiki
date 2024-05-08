@@ -138,6 +138,5 @@ int main(int argc, char* argv[]) {
 - [SDL_DestroyWindow](SDL_DestroyWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

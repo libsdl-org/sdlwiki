@@ -54,6 +54,5 @@ if (devid != 0) {
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

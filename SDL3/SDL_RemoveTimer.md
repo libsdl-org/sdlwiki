@@ -51,6 +51,5 @@ SDL_RemoveTimer(my_timer_id);
 - [SDL_AddTimer](SDL_AddTimer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

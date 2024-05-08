@@ -106,6 +106,5 @@ int main(int argc, char *argv[])
 - [SDL_RenderGeometryRaw](SDL_RenderGeometryRaw)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

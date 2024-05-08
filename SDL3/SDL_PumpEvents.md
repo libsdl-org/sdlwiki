@@ -42,6 +42,5 @@ This function is available since SDL 3.0.0.
 - [SDL_WaitEvent](SDL_WaitEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

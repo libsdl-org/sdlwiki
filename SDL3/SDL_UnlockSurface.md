@@ -24,15 +24,10 @@ void SDL_UnlockSurface(SDL_Surface *surface);
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<<Include([SDL_LockSurface](SDL_LockSurface), , , from="== Code Examples ==", to="== Remarks ==")>>
-
 ## See Also
 
 - [SDL_LockSurface](SDL_LockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

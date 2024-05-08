@@ -1,8 +1,4 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-
-## Draft
-
-**THIS PAGE IS A WORK IN PROGRESS** ... Please make edits to this page to improve it!
 # SDL_GetKeyboardState
 
 Get a snapshot of the current state of the keyboard.
@@ -52,24 +48,11 @@ pressed or not.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-const Uint8 *state = SDL_GetKeyboardState(NULL);
-if (state[SDL_SCANCODE_RETURN]) {
-    printf("<RETURN> is pressed.\n");
-}
-if (state[SDL_SCANCODE_RIGHT] && state[SDL_SCANCODE_UP]) {
-    printf("Right and Up Keys Pressed.\n");
-}
-```
-
 ## See Also
 
 - [SDL_PumpEvents](SDL_PumpEvents)
 - [SDL_ResetKeyboard](SDL_ResetKeyboard)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard), [CategoryDraft](CategoryDraft)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

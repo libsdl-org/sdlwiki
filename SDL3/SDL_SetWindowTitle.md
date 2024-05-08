@@ -85,6 +85,5 @@ int main(int argc, char* argv[]){
 - [SDL_GetWindowTitle](SDL_GetWindowTitle)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -41,6 +41,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_WasInit](SDL_WasInit)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

@@ -24,13 +24,6 @@ more than the number of physical cores.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c++
-SDL_Log("Number of logical CPU cores: %d", SDL_GetCPUCount());
-```
-
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPU](CategoryCPU)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -64,6 +64,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SyncWindow](SDL_SyncWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -40,6 +40,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetEventFilter](SDL_SetEventFilter)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -35,7 +35,6 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-<!-- # Begin Mutex Example -->
 ```c
 SDL_Mutex *mutex;
 
@@ -54,7 +53,6 @@ if (SDL_TryLockMutex(mutex) == 0) {
 
 SDL_DestroyMutex(mutex);
 ```
-<!-- # End Mutex Example -->
 
 ## See Also
 
@@ -64,6 +62,5 @@ SDL_DestroyMutex(mutex);
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

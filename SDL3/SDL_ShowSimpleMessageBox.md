@@ -75,6 +75,5 @@ SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
 - [SDL_ShowMessageBox](SDL_ShowMessageBox)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

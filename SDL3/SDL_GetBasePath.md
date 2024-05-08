@@ -80,6 +80,5 @@ void InitializeDataPath(void) {
 - [SDL_GetPrefPath](SDL_GetPrefPath)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

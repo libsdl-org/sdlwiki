@@ -34,6 +34,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

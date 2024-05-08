@@ -39,6 +39,5 @@ This function is available since SDL 3.0.0.
 - [SDL_HasEvents](SDL_HasEvents)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -28,6 +28,5 @@ If supported will display warning icon, etc.
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

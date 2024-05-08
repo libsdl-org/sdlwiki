@@ -38,35 +38,11 @@ block until it can lock the mutex, and return with it locked.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<!-- # Begin Mutex Example -->
-```c
-int status;
-SDL_Mutex *mutex;
-
-mutex = SDL_CreateMutex();
-if (!mutex) {
-  SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create mutex\n");
-  return 1;
-}
-
-SDL_LockMutex(mutex);
-
-SDL_Log("Locked mutex");
-  
-SDL_UnlockMutex(mutex);
-
-SDL_DestroyMutex(mutex);
-```
-<!-- # End Mutex Example -->
-
 ## See Also
 
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

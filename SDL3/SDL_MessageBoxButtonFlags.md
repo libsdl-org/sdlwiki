@@ -21,6 +21,5 @@ typedef Uint32 SDL_MessageBoxButtonFlags;
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAPIEnum](CategoryAPIEnum)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 

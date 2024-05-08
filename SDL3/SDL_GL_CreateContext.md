@@ -67,6 +67,5 @@ SDL_GL_DeleteContext(glcontext);
 - [SDL_GL_MakeCurrent](SDL_GL_MakeCurrent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

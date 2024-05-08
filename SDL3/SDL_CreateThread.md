@@ -78,7 +78,8 @@ int main(int argc, char *argv[])
     return 0;
 }
 ```
-```output
+
+```
 Output:
 Simple SDL_CreateThread test:
 Thread counter: 0
@@ -100,6 +101,5 @@ Thread returned value: 10
 - [SDL_WaitThread](SDL_WaitThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

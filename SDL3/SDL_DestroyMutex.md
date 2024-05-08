@@ -32,15 +32,10 @@ on the platform.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
-
 ## See Also
 
 - [SDL_CreateMutex](SDL_CreateMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

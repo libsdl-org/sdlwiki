@@ -96,6 +96,5 @@ int main(int argc, char *argv[])
 - [SDL_DetachThread](SDL_DetachThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

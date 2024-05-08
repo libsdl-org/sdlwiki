@@ -59,6 +59,5 @@ if ((buttons & SDL_BUTTON_LMASK) != 0) {
 - [SDL_GetRelativeMouseState](SDL_GetRelativeMouseState)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -29,6 +29,5 @@ This function is available since SDL 3.0.0.
 - [SDL_LoadObject](SDL_LoadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

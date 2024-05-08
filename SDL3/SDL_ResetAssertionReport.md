@@ -40,6 +40,5 @@ printf("%p\n", SDL_GetAssertionReport());  // NULL.
 - [SDL_GetAssertionReport](SDL_GetAssertionReport)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssertions](CategoryAssertions)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

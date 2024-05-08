@@ -29,20 +29,11 @@ error; call [SDL_GetError](SDL_GetError)() for more information.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-```c
-
-/* Dynamically load mylib.so */
-SDL_LoadObject("mylib.so");
-```
-
 ## See Also
 
 - [SDL_LoadFunction](SDL_LoadFunction)
 - [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

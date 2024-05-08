@@ -143,6 +143,5 @@ int main(int argc, char *argv[])
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

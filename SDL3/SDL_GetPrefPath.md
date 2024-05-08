@@ -94,6 +94,5 @@ void InitializePrefPath() {
 - [SDL_GetBasePath](SDL_GetBasePath)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

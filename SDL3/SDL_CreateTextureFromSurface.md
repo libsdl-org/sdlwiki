@@ -72,6 +72,5 @@ surface = NULL;
 - [SDL_QueryTexture](SDL_QueryTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

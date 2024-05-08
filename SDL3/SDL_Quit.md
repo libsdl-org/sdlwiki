@@ -55,6 +55,5 @@ int main(int argc, char** argv) {
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

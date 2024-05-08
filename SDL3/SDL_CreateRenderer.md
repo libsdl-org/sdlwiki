@@ -108,6 +108,5 @@ int main(int argc, char *argv[])
 - [SDL_GetRendererInfo](SDL_GetRendererInfo)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

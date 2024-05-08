@@ -29,10 +29,6 @@ waiting on it.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<<Include([SDL_CreateSemaphore](SDL_CreateSemaphore), , , from="## Begin Semaphore Example", to="## End Semaphore Example")>>
-
 ## See Also
 
 - [SDL_CreateSemaphore](SDL_CreateSemaphore)

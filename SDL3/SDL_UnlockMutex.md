@@ -33,16 +33,11 @@ thread, and doing so results in undefined behavior.
 
 This function is available since SDL 3.0.0.
 
-## Code Examples
-
-<<Include([SDL_CreateMutex](SDL_CreateMutex), , , from="## Begin Mutex Example", to="## End Mutex Example")>>
-
 ## See Also
 
 - [SDL_LockMutex](SDL_LockMutex)
 - [SDL_TryLockMutex](SDL_TryLockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -41,6 +41,5 @@ This function is available since SDL 3.0.0.
 - [SDL_AtomicGet](SDL_AtomicGet)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAtomic](CategoryAtomic)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
