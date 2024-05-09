@@ -1,10 +1,4 @@
 <!-- BEGIN CATEGORY LIST -->
 * [[SDL_GameControllerBindType]]
 * [[SDL_GameControllerButtonBind]]
-* [[SDLEnumTemplate]]
-* [[SDLFunctionTemplate]]
-* [[SDLStructTemplate]]
-* [[SGEnumerations]]
-* [[SGFunctions]]
-* [[SGStructures]]
 <!-- END CATEGORY LIST -->

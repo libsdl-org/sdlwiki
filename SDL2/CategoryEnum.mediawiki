@@ -34,6 +34,4 @@
 * [[SDL_ThreadPriority]]
 * [[SDL_WindowEventID]]
 * [[SDL_WindowFlags]]
-* [[SDLEnumTemplate]]
-* [[SGEnumerations]]
 <!-- END CATEGORY LIST -->

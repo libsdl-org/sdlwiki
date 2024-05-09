@@ -62,6 +62,4 @@
 * [[SDL_Vertex]]
 * [[SDL_VertexSolid]]
 * [[SDL_WindowEvent]]
-* [[SDLStructTemplate]]
-* [[SGStructures]]
 <!-- END CATEGORY LIST -->
