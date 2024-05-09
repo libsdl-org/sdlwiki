@@ -42,6 +42,8 @@ This datatype is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
+#include <SDL3/SDL.h>
+
 static const SDL_DialogFileFilter filters[] = {
     { "PNG images",  "png" },
     { "JPEG images", "jpg;jpeg" },
