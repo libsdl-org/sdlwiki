@@ -34,6 +34,41 @@ The caller should not [SDL_free](SDL_free)() the returned string.
 
 This function is available since SDL 2.0.0.
 
+## Code Examples
+
+```c
+#include "SDL.h"
+
+int main(int argc, char **argv)
+{
+    SDL_Event event;
+    int running = 1;
+
+    if (SDL_Init(SDL_INIT_GAMECONTROLLER) < 0) {
+        SDL_LogError(SDL_LOG_CATEGORY_APLLICATION, "Error while initializing SDL2 library : %s\n", SDL_GetError());
+        return EXIT_FAILURE;
+    }
+
+    while (running) {
+        while (SDL_PollEvent(&event) > 0) {
+            if (event.type == SDL_QUIT) {
+                running = 0;
+            }
+
+            if (event.type == SDL_CONTROLLERAXISMOTION) {
+                char const *axisName = SDL_GameControllerGetStringForAxis((SDL_GameControllerAxis) event.caxis.axis);
+                const int axisValue = event.caxis.value;
+                SDL_Log("Axis used : %s\tAxis value : %d\n", axisName, axisValue);
+            }
+        }
+    }
+
+    SDL_Quit();
+
+    return EXIT_SUCCESS;
+}
+```
+
 ## See Also
 
 - [SDL_GameControllerGetAxisFromString](SDL_GameControllerGetAxisFromString)
