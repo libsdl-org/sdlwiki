@@ -3,6 +3,10 @@
 
 Get number of tracks in music object.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -30,5 +34,5 @@ This only applies to GME music formats.
 This function is available since SDL_mixer 2.8.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

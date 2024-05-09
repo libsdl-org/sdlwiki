@@ -3,6 +3,10 @@
 
 Get the [Mix_Chunk](Mix_Chunk) currently associated with a mixer channel.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -29,5 +33,5 @@ You may not specify MAX_CHANNEL_POST or -1 for a channel.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

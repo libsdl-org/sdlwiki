@@ -3,6 +3,10 @@
 
 Find the "most recent" sample playing in a group of channels.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -32,10 +36,10 @@ If no channel with this tag is currently playing, this function returns -1.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_GroupOldest](Mix_GroupOldest)
+- [Mix_GroupOldest](Mix_GroupOldest)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

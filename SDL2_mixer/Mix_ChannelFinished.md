@@ -3,11 +3,18 @@
 
 Set a callback that runs when a channel has finished playing.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
 void Mix_ChannelFinished(void (SDLCALL *channel_finished)(int channel));
 
+
+
+#define MIX_CHANNEL_POST  (-2)
 ```
 
 ## Function Parameters
@@ -35,5 +42,5 @@ A NULL pointer will disable the callback.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

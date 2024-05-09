@@ -3,6 +3,10 @@
 
 Get the title for a music object, or its filename.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -40,13 +44,13 @@ an empty string ("").
 
 This function is available since SDL_mixer 2.6.0.
 
-## Related Functions
+## See Also
 
-* [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
-* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
-* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
-* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
+- [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
+- [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
+- [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
+- [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

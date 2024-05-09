@@ -3,6 +3,10 @@
 
 Free a music object.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -29,12 +33,12 @@ the fade completes. If you need to avoid this, be sure to call
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_LoadMUS](Mix_LoadMUS)
-* [Mix_LoadMUS_RW](Mix_LoadMUS_RW)
-* [Mix_LoadMUSType_RW](Mix_LoadMUSType_RW)
+- [Mix_LoadMUS](Mix_LoadMUS)
+- [Mix_LoadMUS_RW](Mix_LoadMUS_RW)
+- [Mix_LoadMUSType_RW](Mix_LoadMUSType_RW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

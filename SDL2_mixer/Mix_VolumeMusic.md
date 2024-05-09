@@ -3,6 +3,10 @@
 
 Set the volume for the music channel.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -40,5 +44,5 @@ attenuation).
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

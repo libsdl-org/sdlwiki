@@ -3,6 +3,10 @@
 
 Reserve the first channels for the application.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -43,5 +47,5 @@ By default, no channels are reserved.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Query the fading status of a channel.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -41,5 +45,5 @@ queried.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

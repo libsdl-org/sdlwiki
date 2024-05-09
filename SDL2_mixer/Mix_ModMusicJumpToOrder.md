@@ -3,6 +3,10 @@
 
 Jump to a given order in mod music.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -29,5 +33,5 @@ This only applies to MOD music formats.
 This function is available since SDL_mixer 2.6.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

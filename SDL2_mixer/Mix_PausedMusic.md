@@ -3,6 +3,10 @@
 
 Query whether the music stream is paused.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -18,11 +22,11 @@ Return 1 if music is paused, 0 otherwise.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_PauseMusic](Mix_PauseMusic)
-* [Mix_ResumeMusic](Mix_ResumeMusic)
+- [Mix_PauseMusic](Mix_PauseMusic)
+- [Mix_ResumeMusic](Mix_ResumeMusic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

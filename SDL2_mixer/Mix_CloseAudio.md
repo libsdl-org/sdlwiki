@@ -3,6 +3,10 @@
 
 Close the mixer, halting all playing audio.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -52,10 +56,10 @@ new format and the existing chunks will not be converted to match.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_Quit](Mix_Quit)
+- [Mix_Quit](Mix_Quit)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

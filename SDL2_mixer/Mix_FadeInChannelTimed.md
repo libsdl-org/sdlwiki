@@ -3,6 +3,10 @@
 
 Play an audio chunk on a specific channel, fading in the audio, for a maximum time.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -58,5 +62,5 @@ shouldn't call [Mix_Volume](Mix_Volume)() on a fading channel).
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

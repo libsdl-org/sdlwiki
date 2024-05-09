@@ -3,6 +3,10 @@
 
 Suspend or resume the whole audio output.
 
+== Header File ==
+
+Defined in SDL_mixer.h
+
 == Syntax ==
 
 <syntaxhighlight lang='c'>
@@ -21,6 +25,6 @@ void Mix_PauseAudio(int pause_on);
 This function is available since SDL_mixer 2.8.0.
 
 ----
-[[CategoryAPI]]
+[[CategoryAPI]], [[CategoryAPIFunction]]
 
 

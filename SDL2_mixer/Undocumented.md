@@ -4,7 +4,3 @@
 
 (none)
 
-## Functions defined in the wiki, but not in the headers
-
-(none)
-

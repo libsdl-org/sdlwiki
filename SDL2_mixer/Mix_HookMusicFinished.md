@@ -3,6 +3,10 @@
 
 Set a callback that runs when a music object has stopped playing.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -39,5 +43,5 @@ A NULL pointer will disable the callback.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

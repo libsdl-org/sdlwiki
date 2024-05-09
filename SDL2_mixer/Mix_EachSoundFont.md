@@ -3,6 +3,10 @@
 
 Iterate SoundFonts paths to use by supported MIDI backends.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -42,10 +46,10 @@ soundfont is acceptable for use.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_GetSoundFonts](Mix_GetSoundFonts)
+- [Mix_GetSoundFonts](Mix_GetSoundFonts)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

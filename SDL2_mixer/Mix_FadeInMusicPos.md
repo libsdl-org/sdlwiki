@@ -3,6 +3,10 @@
 
 Play a new music object, fading in the audio, from a starting position.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -56,5 +60,5 @@ To convert from milliseconds, divide by 1000.0.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

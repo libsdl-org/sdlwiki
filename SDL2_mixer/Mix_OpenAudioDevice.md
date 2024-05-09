@@ -3,6 +3,10 @@
 
 Open a specific audio device for playback.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -115,12 +119,12 @@ should dispose of the device with [Mix_CloseDevice](Mix_CloseDevice)().
 
 This function is available since SDL_mixer 2.0.2.
 
-## Related Functions
+## See Also
 
-* [Mix_OpenAudio](Mix_OpenAudio)
-* [Mix_CloseDevice](Mix_CloseDevice)
-* [Mix_QuerySpec](Mix_QuerySpec)
+- [Mix_OpenAudio](Mix_OpenAudio)
+- [Mix_CloseDevice](Mix_CloseDevice)
+- [Mix_QuerySpec](Mix_QuerySpec)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

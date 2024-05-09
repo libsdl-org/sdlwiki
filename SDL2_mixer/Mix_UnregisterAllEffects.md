@@ -3,11 +3,18 @@
 
 Explicitly unregister all special effect functions.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
 int Mix_UnregisterAllEffects(int channel);
 
+
+
+#define MIX_EFFECTSMAXSPEED  "MIX_EFFECTSMAXSPEED"
 ```
 
 ## Function Parameters
@@ -42,5 +49,5 @@ inconsistency here.
 This function is available since SDL_mixer 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

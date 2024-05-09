@@ -3,6 +3,10 @@
 
 Free an audio chunk.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -30,13 +34,13 @@ channel.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_LoadWAV](Mix_LoadWAV)
-* [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
-* [Mix_QuickLoad_WAV](Mix_QuickLoad_WAV)
-* [Mix_QuickLoad_RAW](Mix_QuickLoad_RAW)
+- [Mix_LoadWAV](Mix_LoadWAV)
+- [Mix_LoadWAV_RW](Mix_LoadWAV_RW)
+- [Mix_QuickLoad_WAV](Mix_QuickLoad_WAV)
+- [Mix_QuickLoad_RAW](Mix_QuickLoad_RAW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

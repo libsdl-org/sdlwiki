@@ -3,6 +3,10 @@
 
 Get a list of chunk decoders that this build of SDL_mixer provides.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -44,11 +48,11 @@ for (i = 0; i < total; i++) {
 }
 ```
 
-## Related Functions
+## See Also
 
-* [Mix_GetChunkDecoder](Mix_GetChunkDecoder)
-* [Mix_HasChunkDecoder](Mix_HasChunkDecoder)
+- [Mix_GetChunkDecoder](Mix_GetChunkDecoder)
+- [Mix_HasChunkDecoder](Mix_HasChunkDecoder)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

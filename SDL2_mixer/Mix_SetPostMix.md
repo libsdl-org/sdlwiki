@@ -3,6 +3,10 @@
 
 Set a function that is called after all mixing is performed.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -49,10 +53,10 @@ be prepared to handle them from a single function.
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_HookMusic](Mix_HookMusic)
+- [Mix_HookMusic](Mix_HookMusic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

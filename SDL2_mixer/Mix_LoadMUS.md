@@ -3,6 +3,10 @@
 
 Load a supported audio format into a music object.
 
+## Header File
+
+Defined in SDL_mixer.h
+
 ## Syntax
 
 ```c
@@ -44,10 +48,10 @@ When done with this music, the app should dispose of it with a call to
 
 This function is available since SDL_mixer 2.0.0.
 
-## Related Functions
+## See Also
 
-* [Mix_FreeMusic](Mix_FreeMusic)
+- [Mix_FreeMusic](Mix_FreeMusic)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
