@@ -34,7 +34,7 @@ This structure is most often used as a **NULL-terminated** array:
 ```c
 const SDL_DialogFileFilter filters[] = {
     { "PNG images",  "png" },
-    { "JPEG images", "jgp;jpeg" },
+    { "JPEG images", "jpg;jpeg" },
     { "All images",  "png;jpg;jpeg" },
     { "All files",   "*" },
     { NULL, NULL }
