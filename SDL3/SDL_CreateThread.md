@@ -77,22 +77,22 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-```
 
-```
-Output:
-Simple SDL_CreateThread test:
-Thread counter: 0
-Thread counter: 1
-Thread counter: 2
-Thread counter: 3
-Thread counter: 4
-Thread counter: 5
-Thread counter: 6
-Thread counter: 7
-Thread counter: 8
-Thread counter: 9
-Thread returned value: 10
+/*
+ * Output:
+ * Simple SDL_CreateThread test:
+ * Thread counter: 0
+ * Thread counter: 1
+ * Thread counter: 2
+ * Thread counter: 3
+ * Thread counter: 4
+ * Thread counter: 5
+ * Thread counter: 6
+ * Thread counter: 7
+ * Thread counter: 8
+ * Thread counter: 9
+ * Thread returned value: 10
+ */
 ```
 
 ## See Also

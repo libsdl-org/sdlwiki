@@ -45,6 +45,8 @@ This function is available since SDL 3.0.0.
 ```c
 // BEWARE: This code example was migrated from the SDL2 Wiki, by only updating the names.
 
+void create_and_wait_threads(void);
+
 #define NB_WAITER 10
 SDL_Semaphore *sem;
 // Increments the semaphore every 2s
