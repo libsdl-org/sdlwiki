@@ -115,7 +115,7 @@ main(int argc, char *argv[])
     now = SDL_GetPerformanceCounter();
     SDL_Log("1 million iterations of ticktock took %f ms", (double)((now - start)*1000) / SDL_GetPerformanceFrequency());
 
-    SDL_Log("Performance counter frequency: %"SDL_PRIu64"", (unsigned long long) SDL_GetPerformanceFrequency());
+    SDL_Log("Performance counter frequency: %" SDL_PRIu64, (unsigned long long) SDL_GetPerformanceFrequency());
     start32 = SDL_GetTicks();
     start = SDL_GetPerformanceCounter();
     SDL_Delay(1000);
