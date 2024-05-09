@@ -3,6 +3,10 @@
 
 Query a font's current outline.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -24,10 +28,10 @@ Returns the font's current outline value.
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_SetFontOutline](TTF_SetFontOutline)
+- [TTF_SetFontOutline](TTF_SetFontOutline)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

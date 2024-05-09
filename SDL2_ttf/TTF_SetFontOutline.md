@@ -3,6 +3,10 @@
 
 Set a font's current outline.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -21,10 +25,10 @@ void TTF_SetFontOutline(TTF_Font *font, int outline);
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_GetFontOutline](TTF_GetFontOutline)
+- [TTF_GetFontOutline](TTF_GetFontOutline)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

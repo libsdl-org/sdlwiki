@@ -3,6 +3,10 @@
 
 Query a font's current FreeType hinter setting.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -35,10 +39,10 @@ The hinter setting is a single value:
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_SetFontHinting](TTF_SetFontHinting)
+- [TTF_SetFontHinting](TTF_SetFontHinting)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

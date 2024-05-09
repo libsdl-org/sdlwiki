@@ -3,6 +3,10 @@
 
 Tell SDL_ttf whether UNICODE text is generally byteswapped.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -26,5 +30,5 @@ remainder of that string.
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

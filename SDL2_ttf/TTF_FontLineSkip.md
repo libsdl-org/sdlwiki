@@ -3,6 +3,10 @@
 
 Query the recommended spacing between lines of text for a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -25,5 +29,5 @@ Returns the font's recommended spacing.
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Check whether a glyph is provided by the font for a 32-bit codepoint.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ no reason not to use this function exclusively.
 This function is available since SDL_ttf 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Render word-wrapped Latin1 text at LCD subpixel quality to a new ARGB surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -50,11 +54,11 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 2.20.0.
 
-## Related Functions
+## See Also
 
-* [TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped)
-* [TTF_RenderUNICODE_LCD_Wrapped](TTF_RenderUNICODE_LCD_Wrapped)
+- [TTF_RenderUTF8_LCD_Wrapped](TTF_RenderUTF8_LCD_Wrapped)
+- [TTF_RenderUNICODE_LCD_Wrapped](TTF_RenderUNICODE_LCD_Wrapped)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

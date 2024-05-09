@@ -3,6 +3,10 @@
 
 Create a font from a file, using a specified face index.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -39,10 +43,10 @@ When done with the returned [TTF_Font](TTF_Font), use
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_CloseFont](TTF_CloseFont)
+- [TTF_CloseFont](TTF_CloseFont)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

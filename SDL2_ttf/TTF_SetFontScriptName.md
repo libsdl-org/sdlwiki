@@ -3,6 +3,10 @@
 
 Set script to be used for text shaping by a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -36,5 +40,5 @@ If SDL_ttf was not built with HarfBuzz support, this function returns -1.
 This function is available since SDL_ttf 2.20.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

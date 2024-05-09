@@ -3,6 +3,10 @@
 
 Calculate the dimensions of a rendered string of UCS-2 text.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -39,10 +43,10 @@ through the UTF-8 version of this function.
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_SizeUTF8](TTF_SizeUTF8)
+- [TTF_SizeUTF8](TTF_SizeUTF8)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

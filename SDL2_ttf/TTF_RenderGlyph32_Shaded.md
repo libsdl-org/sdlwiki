@@ -3,6 +3,10 @@
 
 Render a single 32-bit glyph at high quality to a new 8-bit surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -47,12 +51,12 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 2.0.18.
 
-## Related Functions
+## See Also
 
-* [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
-* [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
-* [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)
+- [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
+- [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
+- [TTF_RenderGlyph32_LCD](TTF_RenderGlyph32_LCD)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

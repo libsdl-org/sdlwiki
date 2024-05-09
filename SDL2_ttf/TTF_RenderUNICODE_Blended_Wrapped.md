@@ -3,6 +3,10 @@
 
 Render word-wrapped UCS-2 text at high quality to a new ARGB surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -48,10 +52,10 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 2.0.18.
 
-## Related Functions
+## See Also
 
-* [TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped)
+- [TTF_RenderUTF8_Blended_Wrapped](TTF_RenderUTF8_Blended_Wrapped)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

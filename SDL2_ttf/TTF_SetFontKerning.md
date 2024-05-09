@@ -3,6 +3,10 @@
 
 Set if kerning is allowed for a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -29,5 +33,5 @@ the word `kerning` as something that looks like `keming` for example).
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

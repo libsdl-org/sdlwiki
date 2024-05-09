@@ -3,6 +3,10 @@
 
 Query the version of the HarfBuzz library in use.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -27,5 +31,5 @@ If HarfBuzz is not available, the version reported is 0.0.0.
 This function is available since SDL_ttf 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

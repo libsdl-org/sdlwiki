@@ -3,6 +3,10 @@
 
 Set font size dynamically with target resolutions (in DPI).
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,5 +36,5 @@ This clears already-generated glyphs, if any, from the cache.
 This function is available since SDL_ttf 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

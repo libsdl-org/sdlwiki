@@ -3,6 +3,10 @@
 
 Calculate how much of a UTF-8 string will fit in a given width.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -35,12 +39,12 @@ This does not need to render the string to do this calculation.
 
 This function is available since SDL_ttf 2.0.18.
 
-## Related Functions
+## See Also
 
-* [TTF_MeasureText](TTF_MeasureText)
-* [TTF_MeasureUTF8](TTF_MeasureUTF8)
-* [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
+- [TTF_MeasureText](TTF_MeasureText)
+- [TTF_MeasureUTF8](TTF_MeasureUTF8)
+- [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

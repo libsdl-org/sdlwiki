@@ -17,6 +17,10 @@ one explicitly set, they will use the value specified here.
 
 The default value is `HB_SCRIPT_UNKNOWN`.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,10 +36,10 @@ Returns 0, or -1 if SDL_ttf is not compiled with HarfBuzz support.
 
 This function is available since SDL_ttf 2.0.18.
 
-## Related Functions
+## See Also
 
-* [TTF_SetFontScriptName](TTF_SetFontScriptName)
+- [TTF_SetFontScriptName](TTF_SetFontScriptName)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

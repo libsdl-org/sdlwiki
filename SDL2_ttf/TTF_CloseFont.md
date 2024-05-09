@@ -3,6 +3,10 @@
 
 Dispose of a previously-created font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -32,18 +36,18 @@ this call, as well.
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_OpenFont](TTF_OpenFont)
-* [TTF_OpenFontIndexDPIRW](TTF_OpenFontIndexDPIRW)
-* [TTF_OpenFontRW](TTF_OpenFontRW)
-* [TTF_OpenFontDPI](TTF_OpenFontDPI)
-* [TTF_OpenFontDPIRW](TTF_OpenFontDPIRW)
-* [TTF_OpenFontIndex](TTF_OpenFontIndex)
-* [TTF_OpenFontIndexDPI](TTF_OpenFontIndexDPI)
-* [TTF_OpenFontIndexDPIRW](TTF_OpenFontIndexDPIRW)
-* [TTF_OpenFontIndexRW](TTF_OpenFontIndexRW)
+- [TTF_OpenFont](TTF_OpenFont)
+- [TTF_OpenFontIndexDPIRW](TTF_OpenFontIndexDPIRW)
+- [TTF_OpenFontRW](TTF_OpenFontRW)
+- [TTF_OpenFontDPI](TTF_OpenFontDPI)
+- [TTF_OpenFontDPIRW](TTF_OpenFontDPIRW)
+- [TTF_OpenFontIndex](TTF_OpenFontIndex)
+- [TTF_OpenFontIndexDPI](TTF_OpenFontIndexDPI)
+- [TTF_OpenFontIndexDPIRW](TTF_OpenFontIndexDPIRW)
+- [TTF_OpenFontIndexRW](TTF_OpenFontIndexRW)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

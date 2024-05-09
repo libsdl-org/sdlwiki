@@ -3,6 +3,10 @@
 
 Check whether a glyph is provided by the font for a 16-bit codepoint.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -36,10 +40,10 @@ beginning of time, more or less.
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
+- [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

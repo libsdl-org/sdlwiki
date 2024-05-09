@@ -3,6 +3,10 @@
 
 Opens a font from an SDL_RWops with target resolutions (in DPI).
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -43,10 +47,10 @@ When done with the returned [TTF_Font](TTF_Font), use
 
 This function is available since SDL_ttf 2.0.18.
 
-## Related Functions
+## See Also
 
-* [TTF_CloseFont](TTF_CloseFont)
+- [TTF_CloseFont](TTF_CloseFont)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

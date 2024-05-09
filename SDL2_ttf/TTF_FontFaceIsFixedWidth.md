@@ -3,6 +3,10 @@
 
 Query whether a font is fixed-width.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ are more likely to not be fixed-width in most cases.
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Render Latin1 text at fast quality to a new 8-bit surface.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -50,11 +54,11 @@ You can render at other quality levels with
 
 This function is available since SDL_ttf 2.0.12.
 
-## Related Functions
+## See Also
 
-* [TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid)
-* [TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid)
+- [TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid)
+- [TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

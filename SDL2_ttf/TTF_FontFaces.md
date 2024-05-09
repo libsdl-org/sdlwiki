@@ -3,6 +3,10 @@
 
 Query the number of faces of a font.
 
+## Header File
+
+Defined in SDL_ttf.h
+
 ## Syntax
 
 ```c
@@ -25,5 +29,5 @@ Returns the number of FreeType font faces.
 This function is available since SDL_ttf 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
