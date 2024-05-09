@@ -34,7 +34,8 @@ support fetching the selected filter.
 ## Code Examples
 
 ```c
-static void SDLCALL callback(void* userdata, const char* const* files, int filter) {
+static void SDLCALL callback(void* userdata, const char* const* files, int filter)
+{
     if (!files) {
         SDL_Log("An error occured: %s\n", SDL_GetError());
         return;
