@@ -19,12 +19,12 @@ void SDL_MixAudioFormat(Uint8 * dst,
 
 ## Function Parameters
 
-|                |                                                                                                        |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| **dst**        | the destination for the mixed audio                                                                    |
-| **src**        | the source audio buffer to be mixed                                                                    |
-| **format**     | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format                 |
-| **len**        | the length of the audio buffer in bytes                                                                |
+|                |                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **dst**        | the destination for the mixed audio                                                                                                                                                               |
+| **src**        | the source audio buffer to be mixed                                                                                                                                                               |
+| **format**     | the [SDL_AudioFormat](SDL_AudioFormat) structure representing the desired audio format                                                                                                            |
+| **len**        | the length of the audio buffer in bytes                                                                                                                                                           |
 | **volume**     | ranges from -128 - ∞ (at -128, the volume is at 0%, at 0 - 100% and the higher the number, the bigger the %), and should be set to [SDL_MIX_MAXVOLUME](SDL_MIX_MAXVOLUME) for full audio volume |
 
 ## Remarks
