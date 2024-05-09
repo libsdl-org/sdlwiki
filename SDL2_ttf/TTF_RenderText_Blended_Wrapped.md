@@ -17,12 +17,12 @@ SDL_Surface * TTF_RenderText_Blended_Wrapped(TTF_Font *font,
 
 ## Function Parameters
 
-|                |                                                                                                                          |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **font**       | the font to render with.                                                                                                 |
-| **text**       | text to render, in Latin1 encoding.                                                                                      |
-| **fg**         | the foreground color for the text.                                                                                       |
-| **wrapLength** | the text is wrapped to multiple lines on line endings and on word boundaries if it extends beyond this value in pixels.  |
+|                    |                                                                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **font**           | the font to render with.                                                                                                |
+| **text**           | text to render, in Latin1 encoding.                                                                                     |
+| **fg**             | the foreground color for the text.                                                                                      |
+| **wrapLength**     | the text is wrapped to multiple lines on line endings and on word boundaries if it extends beyond this value in pixels. |
 
 ## Return Value
 
