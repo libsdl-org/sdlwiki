@@ -13,6 +13,10 @@ Defined in [SDL_video.h](https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL
 typedef void *SDL_GLContext;
 ```
 
+## See Also
+
+- [SDL_GL_CreateContext](SDL_GL_CreateContext)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 
