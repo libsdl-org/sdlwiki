@@ -45,7 +45,7 @@ int main(int argc, char **argv)
     int running = 1;
 
     if (SDL_Init(SDL_INIT_GAMECONTROLLER) < 0) {
-        SDL_LogError(SDL_LOG_CATEGORY_APLLICATION, "Error while initializing SDL2 library : %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Error while initializing SDL2 library : %s", SDL_GetError());
         return EXIT_FAILURE;
     }
 
@@ -58,7 +58,7 @@ int main(int argc, char **argv)
             if (event.type == SDL_CONTROLLERAXISMOTION) {
                 char const *axisName = SDL_GameControllerGetStringForAxis((SDL_GameControllerAxis) event.caxis.axis);
                 const int axisValue = event.caxis.value;
-                SDL_Log("Axis used : %s\tAxis value : %d\n", axisName, axisValue);
+                SDL_Log("Axis used : %s\tAxis value : %d", axisName, axisValue);
             }
         }
     }
