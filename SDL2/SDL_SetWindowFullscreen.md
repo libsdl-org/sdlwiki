@@ -34,6 +34,11 @@ fullscreen with a videomode change;
 [`SDL_WINDOW_FULLSCREEN_DESKTOP`](SDL_WINDOW_FULLSCREEN_DESKTOP) for "fake"
 fullscreen that takes the size of the desktop; and 0 for windowed mode.
 
+Note that for some renderers, this function may trigger an
+[SDL_RENDER_TARGETS_RESET](SDL_RENDER_TARGETS_RESET) event. Your
+application should be prepared to handle this event by reuploading
+textures!
+
 ## Version
 
 This function is available since SDL 2.0.0.
