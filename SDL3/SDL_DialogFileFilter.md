@@ -27,6 +27,10 @@ document").
 hyphens, underscores and periods. Alternatively, the whole string can be a
 single asterisk ("*"), which serves as an "All files" filter.
 
+## Version
+
+This struct is available since SDL 3.0.0.
+
 ## Code Examples
 
 This structure is most often used as a **NULL-terminated** array:
@@ -40,10 +44,6 @@ const SDL_DialogFileFilter filters[] = {
     { NULL, NULL }
 };
 ```
-
-## Version
-
-This struct is available since SDL 3.0.0.
 
 ## See Also
 
