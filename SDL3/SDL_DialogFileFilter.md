@@ -27,6 +27,20 @@ document").
 hyphens, underscores and periods. Alternatively, the whole string can be a
 single asterisk ("*"), which serves as an "All files" filter.
 
+## Code Examples
+
+This structure is most often used as a **NULL-terminated** array:
+
+```c
+const SDL_DialogFileFilter filters[] = {
+    { "PNG images",  "png" },
+    { "JPEG images", "jgp;jpeg" },
+    { "All images",  "png;jpg;jpeg" },
+    { "All files",   "*" },
+    { NULL, NULL }
+};
+```
+
 ## Version
 
 This struct is available since SDL 3.0.0.
