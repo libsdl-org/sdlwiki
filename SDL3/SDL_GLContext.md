@@ -17,6 +17,10 @@ typedef void *SDL_GLContext;
 
 This datatype is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_GL_CreateContext](SDL_GL_CreateContext)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
 
