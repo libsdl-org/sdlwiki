@@ -13,6 +13,14 @@ Defined in [<SDL3/SDL_dialog.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 typedef void(SDLCALL *SDL_DialogFileCallback)(void *userdata, const char * const *filelist, int filter);
 ```
 
+## Function Parameters
+
+|                  |                                                  |
+| ---------------- | ------------------------------------------------ |
+| **userdata**     | An app-provided pointer, for the callback's use. |
+| **filelist**     | The file(s) chosen by the user.                  |
+| **filter**       | Index of the selected filter.                    |
+
 ## Remarks
 
 The specific usage is described in each function.
