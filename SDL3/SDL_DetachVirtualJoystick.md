@@ -32,7 +32,6 @@ This function is available since SDL 3.0.0.
 ## See Also
 
 - [SDL_AttachVirtualJoystick](SDL_AttachVirtualJoystick)
-- [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -10,21 +10,15 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-SDL_JoystickID SDL_AttachVirtualJoystick(SDL_JoystickType type,
-                              int naxes,
-                              int nbuttons,
-                              int nhats);
+SDL_JoystickID SDL_AttachVirtualJoystick(const SDL_VirtualJoystickDesc *desc);
 
 ```
 
 ## Function Parameters
 
-|                  |                   |
-| ---------------- | ----------------- |
-| **type**         | type of joystick  |
-| **naxes**        | number of axes    |
-| **nbuttons**     | number of buttons |
-| **nhats**        | number of hats    |
+|              |                      |
+| ------------ | -------------------- |
+| **desc**     | Joystick description |
 
 ## Return Value
 
@@ -37,7 +31,6 @@ This function is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_AttachVirtualJoystickEx](SDL_AttachVirtualJoystickEx)
 - [SDL_DetachVirtualJoystick](SDL_DetachVirtualJoystick)
 
 ----
