@@ -1119,7 +1119,6 @@
 * [[SDL_Vulkan_GetDrawableSize]]
 * [[SDL_Vulkan_GetInstanceExtensions]]
 * [[SDL_Vulkan_GetVkGetInstanceProcAddr]]
-* [[SDL_Vulkan_GetVkInstanceProcAddr]]
 * [[SDL_Vulkan_LoadLibrary]]
 * [[SDL_Vulkan_UnloadLibrary]]
 * [[SDL_WaitEvent]]
