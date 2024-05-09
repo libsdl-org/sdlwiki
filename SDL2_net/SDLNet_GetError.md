@@ -3,6 +3,10 @@
 
 Get the latest error message from SDL_net.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -26,5 +30,5 @@ public API reports a failure, and should be ignored otherwise.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Set the percentage of simulated packet loss for packets sent on the socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -32,5 +36,5 @@ You probably don't want to use this function outside of local testing.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

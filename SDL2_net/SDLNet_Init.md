@@ -3,6 +3,10 @@
 
 Initialize SDL_net.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ must pair your init and quit calls.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

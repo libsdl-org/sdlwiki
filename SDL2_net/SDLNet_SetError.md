@@ -3,6 +3,10 @@
 
 Set an error message to be retrieved with [SDLNet_GetError](SDLNet_GetError).
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -27,5 +31,5 @@ message of your own in here.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Deinitialize SDL_net.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -24,5 +28,5 @@ Once you have as many quit calls as you have had successful calls to
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

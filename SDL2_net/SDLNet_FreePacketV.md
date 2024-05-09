@@ -3,6 +3,10 @@
 
 Free a UDP packet vector (array of packets).
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -31,10 +35,10 @@ than [SDLNet_AllocPacketV](SDLNet_AllocPacketV)().
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
+- [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

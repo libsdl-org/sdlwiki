@@ -3,6 +3,10 @@
 
 Remove a socket from a set of sockets to be checked for available data.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -39,15 +43,15 @@ nothing is removed from the set.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket)
-* [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket)
-* [SDLNet_AddSocket](SDLNet_AddSocket)
-* [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket)
-* [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket)
-* [SDLNet_CheckSockets](SDLNet_CheckSockets)
+- [SDLNet_TCP_DelSocket](SDLNet_TCP_DelSocket)
+- [SDLNet_UDP_DelSocket](SDLNet_UDP_DelSocket)
+- [SDLNet_AddSocket](SDLNet_AddSocket)
+- [SDLNet_TCP_AddSocket](SDLNet_TCP_AddSocket)
+- [SDLNet_UDP_AddSocket](SDLNet_UDP_AddSocket)
+- [SDLNet_CheckSockets](SDLNet_CheckSockets)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

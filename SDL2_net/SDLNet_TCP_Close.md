@@ -3,6 +3,10 @@
 
 Close a TCP network socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -29,5 +33,5 @@ Closing a socket will disconnect any communication and free its resources.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

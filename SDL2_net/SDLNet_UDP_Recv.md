@@ -3,6 +3,10 @@
 
 Receive a single packet from a UDP socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -39,11 +43,11 @@ not an error condition.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_UDP_Send](SDLNet_UDP_Send)
-* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
+- [SDLNet_UDP_Send](SDLNet_UDP_Send)
+- [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

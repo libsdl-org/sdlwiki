@@ -3,6 +3,10 @@
 
 Check a socket set for data availability.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -34,5 +38,5 @@ in milliseconds has elapsed, whichever occurs first.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

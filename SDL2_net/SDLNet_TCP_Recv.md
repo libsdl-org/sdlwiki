@@ -3,6 +3,10 @@
 
 Receive data from a non-server socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -47,11 +51,11 @@ want to avoid blocking.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_TCP_Send](SDLNet_TCP_Send)
-* [SDLNet_CheckSockets](SDLNet_CheckSockets)
+- [SDLNet_TCP_Send](SDLNet_TCP_Send)
+- [SDLNet_CheckSockets](SDLNet_CheckSockets)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

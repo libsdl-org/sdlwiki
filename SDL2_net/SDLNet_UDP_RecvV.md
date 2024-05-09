@@ -3,6 +3,10 @@
 
 Receive a vector of pending packets from a UDP socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -46,11 +50,11 @@ not an error condition.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_UDP_SendV](SDLNet_UDP_SendV)
-* [SDLNet_UDP_Recv](SDLNet_UDP_Recv)
+- [SDLNet_UDP_SendV](SDLNet_UDP_SendV)
+- [SDLNet_UDP_Recv](SDLNet_UDP_Recv)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

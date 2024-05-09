@@ -3,6 +3,10 @@
 
 Dispose of a UDP packet.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -25,11 +29,11 @@ completes, the packet's pointer is invalid and should not be used anymore.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_AllocPacket](SDLNet_AllocPacket)
-* [SDLNet_ResizePacket](SDLNet_ResizePacket)
+- [SDLNet_AllocPacket](SDLNet_AllocPacket)
+- [SDLNet_ResizePacket](SDLNet_ResizePacket)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

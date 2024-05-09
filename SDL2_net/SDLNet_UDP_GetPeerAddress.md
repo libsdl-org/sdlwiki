@@ -3,6 +3,10 @@
 
 Get the IP address of the remote system for a socket and channel.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -33,5 +37,5 @@ If the channel is not bound and not -1, this function returns NULL.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

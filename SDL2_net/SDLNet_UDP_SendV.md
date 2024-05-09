@@ -3,6 +3,10 @@
 
 Send a vector of packets to the the channels specified within the packet.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -54,10 +58,10 @@ and lower latency.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
+- [SDLNet_UDP_RecvV](SDLNet_UDP_RecvV)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

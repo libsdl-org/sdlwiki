@@ -3,6 +3,10 @@
 
 Unbind all addresses from the given channel.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -27,10 +31,10 @@ but SDL_net's UDP sockets also "bind" to a "channel" on top of that, with
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_UDP_Bind](SDLNet_UDP_Bind)
+- [SDLNet_UDP_Bind](SDLNet_UDP_Bind)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

@@ -3,6 +3,10 @@
 
 Allocate a socket set for use with [SDLNet_CheckSockets](SDLNet_CheckSockets)().
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -35,10 +39,10 @@ When done with a socket set, you can free it with
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_FreeSocketSet](SDLNet_FreeSocketSet)
+- [SDLNet_FreeSocketSet](SDLNet_FreeSocketSet)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

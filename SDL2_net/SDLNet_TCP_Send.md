@@ -3,6 +3,10 @@
 
 Send data over a non-server socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -43,10 +47,10 @@ This function may block!
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_TCP_Recv](SDLNet_TCP_Recv)
+- [SDLNet_TCP_Recv](SDLNet_TCP_Recv)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

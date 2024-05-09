@@ -3,6 +3,10 @@
 
 Free a set of sockets allocated by [SDLNet_AllocSocketSet](SDLNet_AllocSocketSet)().
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -30,5 +34,5 @@ which would still (at some future point) need to be closed with
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

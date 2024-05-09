@@ -3,6 +3,10 @@
 
 Bind an address to the requested channel on the UDP socket.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -41,10 +45,10 @@ to which all outbound packets on the channel are sent.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_UDP_Unbind](SDLNet_UDP_Unbind)
+- [SDLNet_UDP_Unbind](SDLNet_UDP_Unbind)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

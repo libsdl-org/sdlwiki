@@ -3,6 +3,10 @@
 
 Resolve an IP address to a host name in canonical form.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -28,5 +32,5 @@ pointer to a static buffer containing the hostname is returned.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

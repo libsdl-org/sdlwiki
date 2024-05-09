@@ -3,6 +3,10 @@
 
 Resolve a host name and port to an IP address in network form.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -34,5 +38,5 @@ will be INADDR_NONE, and the function will return -1.
 This function is available since SDL_net 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

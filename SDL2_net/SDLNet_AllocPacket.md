@@ -3,6 +3,10 @@
 
 Allocate a single UDP packet.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -36,12 +40,12 @@ You can allocate multiple packets at once with
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_ResizePacket](SDLNet_ResizePacket)
-* [SDLNet_FreePacket](SDLNet_FreePacket)
-* [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
+- [SDLNet_ResizePacket](SDLNet_ResizePacket)
+- [SDLNet_FreePacket](SDLNet_FreePacket)
+- [SDLNet_AllocPacketV](SDLNet_AllocPacketV)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

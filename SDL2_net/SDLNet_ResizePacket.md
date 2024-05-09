@@ -3,6 +3,10 @@
 
 Reallocate a UDP packet's payload space.
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -43,11 +47,11 @@ not realloc the existing data.
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_AllocPacket](SDLNet_AllocPacket)
-* [SDLNet_FreePacket](SDLNet_FreePacket)
+- [SDLNet_AllocPacket](SDLNet_AllocPacket)
+- [SDLNet_FreePacket](SDLNet_FreePacket)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 

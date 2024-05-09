@@ -3,6 +3,10 @@
 
 Allocate a UDP packet vector (array of packets).
 
+## Header File
+
+Defined in SDL_net.h
+
 ## Syntax
 
 ```c
@@ -34,10 +38,10 @@ packets from this function with [SDLNet_FreePacket](SDLNet_FreePacket).
 
 This function is available since SDL_net 2.0.0.
 
-## Related Functions
+## See Also
 
-* [SDLNet_FreePacketV](SDLNet_FreePacketV)
+- [SDLNet_FreePacketV](SDLNet_FreePacketV)
 
 ----
-[CategoryAPI](CategoryAPI)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
