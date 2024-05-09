@@ -35,6 +35,9 @@ There are a number of SDL tutorials available from different sources.
 * [https://glusoft.com/sdl2-tutorials/ SDL2 Tutorials]
 : A collection of SDL2 tutorials ranging from beginner to expert level.
 
+* [https://gigi.nullneuron.net/gigilabs/writing/sdl2-tutorials/ Gigi Labs SDL2 Tutorials]
+: A set of tutorials to cover the basics of several areas of SDL2.
+
 == Setup ==
 * [https://www.youtube.com/watch?v=wWGtuc5uqF4 How to setup Codeblocks mingw SDL2.0]
 : A video tutorial showing how to setup SDL 2.0 with codeblocks mingw32 compiler
