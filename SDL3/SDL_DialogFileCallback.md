@@ -17,11 +17,11 @@ typedef void(SDLCALL *SDL_DialogFileCallback)(void *userdata, const char * const
 
 The specific usage is described in each function.
 
-If filelist is... - `NULL`, an error occured. Details can be obtained with
-[SDL_GetError](SDL_GetError)(). - A pointer to `NULL`, the user either
-didn't choose any file or canceled the dialog. - A pointer to non-`NULL`,
-the user chose one or more files. The argument is a null-terminated list of
-pointers to C strings, each containing a path.
+If `filelist` is:
+
+- NULL, an error occured. Details can be obtained with [SDL_GetError](SDL_GetError)().
+- A pointer to NULL, the user either didn't choose any file or canceled the dialog.
+- A pointer to non-`NULL`, the user chose one or more files. The argument is a null-terminated list of pointers to C strings, each containing a path.
 
 The filelist argument does not need to be freed; it will automatically be
 freed when the callback returns.
@@ -31,37 +31,42 @@ more than the size of the list (therefore the index of the terminating NULL
 entry) if no filter was selected, or -1 if the platform or method doesn't
 support fetching the selected filter.
 
+
 ## Code Examples
 
 ```c
-static void SDLCALL callback(void* userdata, const char* const* files, int filter)
+static const SDL_DialogFileFilter filters[] = {
+    { "PNG images",  "png" },
+    { "JPEG images", "jpg;jpeg" },
+    { "All images",  "png;jpg;jpeg" },
+    { "All files",   "*" },
+    { NULL, NULL }
+};
+
+static void SDLCALL callback(void* userdata, const char* const* filelist, int filter)
 {
-    if (!files) {
-        SDL_Log("An error occured: %s\n", SDL_GetError());
+    if (!filelist) {
+        SDL_Log("An error occured: %s", SDL_GetError());
+        return;
+    } else if (!*filelist) {
+        SDL_Log("The user did not select any file.");
+        SDL_Log("Most likely, the dialog was canceled.");
         return;
     }
 
-    if (!*files) {
-        SDL_Log("The user did not select any file.\n");
-        SDL_Log("Most likely, the dialog was canceled.\n");
-        return;
-    }
-
-    while (*files) {
-        SDL_Log("Full path to selected file: '%s'\n", *files);
-        files++;
+    while (*filelist) {
+        SDL_Log("Full path to selected file: '%s'", *filelist);
+        filelist++;
     }
 
     if (filter == -1) {
         SDL_Log("The current platform does not support fetching "
-                "the selected filter.\n");
+                "the selected filter.");
+    } else if (filter < SDL_arraysize(filters)) {
+        SDL_Log("The filter selected by the user is '%s' (%s).",
+                filters[filter].pattern, filters[filter].name);
     } else {
-        if (filter < sizeof(filters) / sizeof(*filters)) {
-            SDL_Log("The filter selected by the user is '%s'.\n",
-                     filters[filter]);
-        } else {
-            SDL_Log("The user did not select any filter.\n");
-        }
+        SDL_Log("The user did not select any filter.");
     }
 }
 ```
