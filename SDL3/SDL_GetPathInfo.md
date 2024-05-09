@@ -14,7 +14,7 @@ int SDL_GetPathInfo(const char *path, SDL_PathInfo *info);
 
 
 
-#define SDL_GLOB_CASEINSENSITIVE (1 << 0)
+#define SDL_GLOB_CASEINSENSITIVE (1u << 0)
 ```
 
 ## Function Parameters

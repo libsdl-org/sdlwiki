@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-#define SDL_BUTTON(X)       (1 << ((X)-1))
+#define SDL_BUTTON(X)       (1u << ((X)-1))
 ```
 
 ## Remarks
