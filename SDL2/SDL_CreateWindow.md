@@ -29,7 +29,7 @@ SDL_Window * SDL_CreateWindow(const char *title,
 
 ## Return Value
 
-Returns the window that was created or NULL on failure; call
+Returns the [`SDL_Window`](SDL_Window) that was created or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
 ## Remarks
