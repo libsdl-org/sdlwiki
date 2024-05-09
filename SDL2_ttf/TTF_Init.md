@@ -39,6 +39,7 @@ This function is available since SDL_ttf 2.0.12.
 ## See Also
 
 - [TTF_Quit](TTF_Quit)
+- [TTF_WasInit](TTF_WasInit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
