@@ -1,4 +1,5 @@
 <!-- BEGIN CATEGORY LIST -->
+* [[IMG_Animation]]
 * [[IMG_FreeAnimation]]
 * [[IMG_Init]]
 * [[IMG_isAVIF]]
