@@ -46,7 +46,8 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 `flags` may be any of the following OR'd together:
 
 - [`SDL_INIT_TIMER`](SDL_INIT_TIMER): timer subsystem
-- [`SDL_INIT_AUDIO`](SDL_INIT_AUDIO): audio subsystem
+- [`SDL_INIT_AUDIO`](SDL_INIT_AUDIO): audio subsystem; automatically
+  initializes the events subsystem
 - [`SDL_INIT_VIDEO`](SDL_INIT_VIDEO): video subsystem; automatically
   initializes the events subsystem
 - [`SDL_INIT_JOYSTICK`](SDL_INIT_JOYSTICK): joystick subsystem;
@@ -55,7 +56,10 @@ Logging (such as [SDL_Log](SDL_Log)) works without initialization, too.
 - [`SDL_INIT_GAMEPAD`](SDL_INIT_GAMEPAD): gamepad subsystem; automatically
   initializes the joystick subsystem
 - [`SDL_INIT_EVENTS`](SDL_INIT_EVENTS): events subsystem
-- [`SDL_INIT_SENSOR`](SDL_INIT_SENSOR): sensor subsystem
+- [`SDL_INIT_SENSOR`](SDL_INIT_SENSOR): sensor subsystem; automatically
+  initializes the events subsystem
+- [`SDL_INIT_CAMERA`](SDL_INIT_CAMERA): camera subsystem; automatically
+  initializes the events subsystem
 
 Subsystem initialization is ref-counted, you must call
 [SDL_QuitSubSystem](SDL_QuitSubSystem)() for each
