@@ -89,6 +89,8 @@
 - [SDL_Version](SDL_Version)
 - [SDL_Vertex](SDL_Vertex)
 - [SDL_VirtualJoystickDesc](SDL_VirtualJoystickDesc)
+- [SDL_VirtualJoystickSensorDesc](SDL_VirtualJoystickSensorDesc)
+- [SDL_VirtualJoystickTouchpadDesc](SDL_VirtualJoystickTouchpadDesc)
 - [SDL_Window](SDL_Window)
 - [SDL_WindowEvent](SDL_WindowEvent)
 <!-- END CATEGORY LIST -->
