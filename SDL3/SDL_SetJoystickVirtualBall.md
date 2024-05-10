@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_SetJoystickVirtualButton
+# SDL_SetJoystickVirtualBall
 
-Set the state of a button on an opened virtual joystick.
+Generate ball motion on an opened virtual joystick.
 
 ## Header File
 
@@ -10,17 +10,18 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-int SDL_SetJoystickVirtualButton(SDL_Joystick *joystick, int button, Uint8 value);
+int SDL_SetJoystickVirtualBall(SDL_Joystick *joystick, int ball, Sint16 xrel, Sint16 yrel);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.                |
-| **button**       | the index of the button on the virtual joystick to update. |
-| **value**        | the new value for the specified button.                    |
+|                  |                                                          |
+| ---------------- | -------------------------------------------------------- |
+| **joystick**     | the virtual joystick on which to set state.              |
+| **ball**         | the index of the ball on the virtual joystick to update. |
+| **xrel**         | the relative motion on the X axis.                       |
+| **yrel**         | the relative motion on the Y axis.                       |
 
 ## Return Value
 

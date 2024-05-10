@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetJoystickVirtualHat
 
-Set values on an opened, virtual-joystick's hat.
+Set the state of a hat on an opened virtual joystick.
 
 ## Header File
 
@@ -16,11 +16,11 @@ int SDL_SetJoystickVirtualHat(SDL_Joystick *joystick, int hat, Uint8 value);
 
 ## Function Parameters
 
-|                  |                                                  |
-| ---------------- | ------------------------------------------------ |
-| **joystick**     | the virtual joystick on which to set state.      |
-| **hat**          | the specific hat on the virtual joystick to set. |
-| **value**        | the new value for the specified hat.             |
+|                  |                                                         |
+| ---------------- | ------------------------------------------------------- |
+| **joystick**     | the virtual joystick on which to set state.             |
+| **hat**          | the index of the hat on the virtual joystick to update. |
+| **value**        | the new value for the specified hat.                    |
 
 ## Return Value
 

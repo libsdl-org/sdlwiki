@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_SetJoystickVirtualAxis
 
-Set values on an opened, virtual-joystick's axis.
+Set the state of an axis on an opened virtual joystick.
 
 ## Header File
 
@@ -16,11 +16,11 @@ int SDL_SetJoystickVirtualAxis(SDL_Joystick *joystick, int axis, Sint16 value);
 
 ## Function Parameters
 
-|                  |                                                   |
-| ---------------- | ------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.       |
-| **axis**         | the specific axis on the virtual joystick to set. |
-| **value**        | the new value for the specified axis.             |
+|                  |                                                          |
+| ---------------- | -------------------------------------------------------- |
+| **joystick**     | the virtual joystick on which to set state.              |
+| **axis**         | the index of the axis on the virtual joystick to update. |
+| **value**        | the new value for the specified axis.                    |
 
 ## Return Value
 

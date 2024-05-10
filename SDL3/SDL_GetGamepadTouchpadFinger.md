@@ -16,15 +16,15 @@ int SDL_GetGamepadTouchpadFinger(SDL_Gamepad *gamepad, int touchpad, int finger,
 
 ## Function Parameters
 
-|                  |                            |
-| ---------------- | -------------------------- |
-| **gamepad**      | a gamepad                  |
-| **touchpad**     | a touchpad                 |
-| **finger**       | a finger                   |
-| **state**        | filled with state          |
-| **x**            | filled with x position     |
-| **y**            | filled with y position     |
-| **pressure**     | filled with pressure value |
+|                  |                                                                              |
+| ---------------- | ---------------------------------------------------------------------------- |
+| **gamepad**      | a gamepad                                                                    |
+| **touchpad**     | a touchpad                                                                   |
+| **finger**       | a finger                                                                     |
+| **state**        | filled with state                                                            |
+| **x**            | filled with x position, normalized 0 to 1, with the origin in the upper left |
+| **y**            | filled with y position, normalized 0 to 1, with the origin in the upper left |
+| **pressure**     | filled with pressure value                                                   |
 
 ## Return Value
 

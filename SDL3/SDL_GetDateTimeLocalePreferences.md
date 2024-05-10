@@ -21,6 +21,11 @@ int SDL_GetDateTimeLocalePreferences(SDL_DateFormat *dateFormat, SDL_TimeFormat 
 | **dateFormat**     | a pointer to the [SDL_DateFormat](SDL_DateFormat) to hold the returned date format, may be NULL |
 | **timeFormat**     | a pointer to the [SDL_TimeFormat](SDL_TimeFormat) to hold the returned time format, may be NULL |
 
+## Return Value
+
+Returns 0 on success or -1 on error; call [SDL_GetError](SDL_GetError)()
+for more information.
+
 ## Remarks
 
 This might be a "slow" call that has to query the operating system. It's

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_SetJoystickVirtualButton
+# SDL_SendJoystickVirtualSensorData
 
-Set the state of a button on an opened virtual joystick.
+Send a sensor update for an opened virtual joystick.
 
 ## Header File
 
@@ -10,17 +10,19 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-int SDL_SetJoystickVirtualButton(SDL_Joystick *joystick, int button, Uint8 value);
+int SDL_SendJoystickVirtualSensorData(SDL_Joystick *joystick, SDL_SensorType type, Uint64 sensor_timestamp, const float *data, int num_values);
 
 ```
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **joystick**     | the virtual joystick on which to set state.                |
-| **button**       | the index of the button on the virtual joystick to update. |
-| **value**        | the new value for the specified button.                    |
+|                          |                                                                      |
+| ------------------------ | -------------------------------------------------------------------- |
+| **joystick**             | the virtual joystick on which to set state.                          |
+| **type**                 | the type of the sensor on the virtual joystick to update.            |
+| **sensor_timestamp**     | a 64-bit timestamp in nanoseconds associated with the sensor reading |
+| **data**                 | the data associated with the sensor reading                          |
+| **num_values**           | the number of values pointed to by `data`                            |
 
 ## Return Value
 
