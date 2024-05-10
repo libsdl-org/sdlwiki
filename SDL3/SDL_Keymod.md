@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_keycode.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-typedef Uint32 SDL_Keymod;
+typedef Uint16 SDL_Keymod;
 
 #define SDL_KMOD_NONE   0x0000u /**< no modifier is applicable. */
 #define SDL_KMOD_LSHIFT 0x0001u /**< the left Shift key is down. */
