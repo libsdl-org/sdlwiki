@@ -47,8 +47,10 @@ These are the supported properties:
   [SDL_COLORSPACE_SRGB_LINEAR](SDL_COLORSPACE_SRGB_LINEAR), drawing still
   uses the sRGB colorspace, but values can go beyond 1.0 and float (linear)
   format textures can be used for HDR content.
-- [`SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN`](SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_BOOLEAN):
-  true if you want present synchronized with the refresh rate
+- [`SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_NUMBER`](SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_NUMBER):
+  non-zero if you want present synchronized with the refresh rate. This
+  property can take any value that is supported by
+  [SDL_SetRenderVSync](SDL_SetRenderVSync)() for the renderer.
 
 With the vulkan renderer:
 

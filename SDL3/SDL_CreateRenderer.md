@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name, SDL_RendererFlags flags);
+SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name);
 
 ```
 
@@ -20,7 +20,6 @@ SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name, SDL_Rend
 | -------------- | ------------------------------------------------------------------------------------------------------------------ |
 | **window**     | the window where rendering is displayed                                                                            |
 | **name**       | the name of the rendering driver to initialize, or NULL to initialize the first one supporting the requested flags |
-| **flags**      | 0, or one or more [SDL_RendererFlags](SDL_RendererFlags) OR'd together                                             |
 
 ## Return Value
 

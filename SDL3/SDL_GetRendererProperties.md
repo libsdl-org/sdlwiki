@@ -36,6 +36,10 @@ The following read-only properties are provided by SDL:
 - [`SDL_PROP_RENDERER_SURFACE_POINTER`](SDL_PROP_RENDERER_SURFACE_POINTER):
   the surface where rendering is displayed, if this is a software renderer
   without a window
+- [`SDL_PROP_RENDERER_VSYNC_NUMBER`](SDL_PROP_RENDERER_VSYNC_NUMBER): the
+  current vsync setting
+- [`SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER`](SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER):
+  the maximum texture width and height
 - [`SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER`](SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER):
   an [SDL_ColorSpace](SDL_ColorSpace) value describing the colorspace for
   output to the display, defaults to

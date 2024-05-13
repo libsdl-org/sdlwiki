@@ -16,10 +16,10 @@ int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
 ## Function Parameters
 
-|                  |                                                    |
-| ---------------- | -------------------------------------------------- |
-| **renderer**     | The renderer to toggle                             |
-| **vsync**        | 1 for on, 0 for off. All other values are reserved |
+|                  |                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **renderer**     | The renderer to toggle                                                                                                                                                                                                                                                                                                                             |
+| **vsync**        | the vertical refresh sync interval, 1 to synchronize present with every vertical refresh, 2 to synchronize present with every second vertical refresh, etc., or -1 for late swap tearing (adaptive vsync). Not every value is supported by every renderer, so you should check the return value to see whether the requested setting is supported. |
 
 ## Return Value
 
