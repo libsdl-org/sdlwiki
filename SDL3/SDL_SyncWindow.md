@@ -49,6 +49,7 @@ This function is available since SDL 3.0.0.
 - [SDL_MinimizeWindow](SDL_MinimizeWindow)
 - [SDL_MaximizeWindow](SDL_MaximizeWindow)
 - [SDL_RestoreWindow](SDL_RestoreWindow)
+- [SDL_HINT_VIDEO_SYNC_WINDOW_OPERATIONS](SDL_HINT_VIDEO_SYNC_WINDOW_OPERATIONS)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
