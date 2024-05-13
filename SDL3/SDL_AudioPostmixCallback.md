@@ -48,7 +48,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_SetAudioDevicePostmixCallback](SDL_SetAudioDevicePostmixCallback)
+- [SDL_SetAudioPostmixCallback](SDL_SetAudioPostmixCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
