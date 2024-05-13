@@ -31,7 +31,6 @@
 - [SDL_MessageBoxFlags](SDL_MessageBoxFlags)
 - [SDL_MetalView](SDL_MetalView)
 - [SDL_PropertiesID](SDL_PropertiesID)
-- [SDL_RendererFlags](SDL_RendererFlags)
 - [SDL_SensorID](SDL_SensorID)
 - [SDL_SpinLock](SDL_SpinLock)
 - [SDL_ThreadFunction](SDL_ThreadFunction)
