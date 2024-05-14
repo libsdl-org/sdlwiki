@@ -6,3 +6,5 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_bool]]
 <!-- END CATEGORY LIST -->
+* [[SDL_bool]]
+<!-- END CATEGORY LIST -->

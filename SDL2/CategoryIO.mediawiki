@@ -6,3 +6,5 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_RWops]]
 <!-- END CATEGORY LIST -->
+* [[SDL_RWops]]
+<!-- END CATEGORY LIST -->
