@@ -8,7 +8,3 @@
 * [[SDL_GameControllerAxis]]
 * [[SDL_GameControllerButton]]
 <!-- END CATEGORY LIST -->
-* [[SDL_GameControllerAddMappingsFromFile]]
-* [[SDL_GameControllerAxis]]
-* [[SDL_GameControllerButton]]
-<!-- END CATEGORY LIST -->

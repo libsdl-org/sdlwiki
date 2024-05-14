@@ -18,12 +18,3 @@
 * [[SDL_HapticPeriodic]]
 * [[SDL_HapticRamp]]
 <!-- END CATEGORY LIST -->
-* [[SDL_HapticCondition]]
-* [[SDL_HapticConstant]]
-* [[SDL_HapticCustom]]
-* [[SDL_HapticDirection]]
-* [[SDL_HapticEffect]]
-* [[SDL_HapticLeftRight]]
-* [[SDL_HapticPeriodic]]
-* [[SDL_HapticRamp]]
-<!-- END CATEGORY LIST -->

@@ -8,7 +8,3 @@
 * [[SDL_SysWMinfo]]
 * [[SDL_SysWMmsg]]
 <!-- END CATEGORY LIST -->
-* [[SDL_SYSWM_TYPE]]
-* [[SDL_SysWMinfo]]
-* [[SDL_SysWMmsg]]
-<!-- END CATEGORY LIST -->

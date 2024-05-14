@@ -4,5 +4,3 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_SensorType]]
 <!-- END CATEGORY LIST -->
-* [[SDL_SensorType]]
-<!-- END CATEGORY LIST -->

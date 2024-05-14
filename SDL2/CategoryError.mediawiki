@@ -10,8 +10,3 @@
 * [[SDL_GetErrorMsg]]
 * [[SDL_SetError]]
 <!-- END CATEGORY LIST -->
-* [[SDL_ClearError]]
-* [[SDL_GetError]]
-* [[SDL_GetErrorMsg]]
-* [[SDL_SetError]]
-<!-- END CATEGORY LIST -->

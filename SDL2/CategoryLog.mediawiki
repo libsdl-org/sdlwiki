@@ -6,6 +6,3 @@
 * [[SDL_LOG_CATEGORY]]
 * [[SDL_LogPriority]]
 <!-- END CATEGORY LIST -->
-* [[SDL_LOG_CATEGORY]]
-* [[SDL_LogPriority]]
-<!-- END CATEGORY LIST -->
