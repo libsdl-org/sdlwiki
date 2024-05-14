@@ -12,6 +12,8 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ```c
 extern DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const char *pattern, Uint32 flags, int *count);
 
+
+#define SDL_GLOB_CASEINSENSITIVE (1u << 0)
 ```
 
 ## Function Parameters
