@@ -1937,7 +1937,6 @@ probably want to look at these by category instead:
 - [SDLK_PRIOR](SDLK_PRIOR)
 - [SDLK_q](SDLK_q)
 - [SDLK_QUESTION](SDLK_QUESTION)
-- [SDLK_QUOTEDBL](SDLK_QUOTEDBL)
 - [SDLK_r](SDLK_r)
 - [SDLK_RALT](SDLK_RALT)
 - [SDLK_RCTRL](SDLK_RCTRL)
