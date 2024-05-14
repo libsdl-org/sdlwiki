@@ -51,7 +51,7 @@ static int TestThread(void *ptr)
     int cnt;
 
     for (cnt = 0; cnt < 10; ++cnt) {
-        SDL_Log("Thread counter: %d\n", cnt);
+        SDL_Log("Thread counter: %d", cnt);
         SDL_Delay(50);
     }
 
@@ -63,16 +63,16 @@ int main(int argc, char *argv[])
     SDL_Thread *thread;
     int         threadReturnValue;
 
-    SDL_Log("Simple SDL_CreateThread test:\n");
+    SDL_Log("Simple SDL_CreateThread test:");
 
     /* Simply create a thread */
     thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 
     if (NULL == thread) {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_CreateThread failed: %s\n", SDL_GetError());
+        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "SDL_CreateThread failed: %s", SDL_GetError());
     } else {
         SDL_WaitThread(thread, &threadReturnValue);
-        SDL_Log("Thread returned value: %d\n", threadReturnValue);
+        SDL_Log("Thread returned value: %d", threadReturnValue);
     }
 
     return 0;
