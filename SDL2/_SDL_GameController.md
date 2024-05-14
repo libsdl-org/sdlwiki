@@ -14,5 +14,5 @@ struct _SDL_GameController;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGameController](CategoryGameController)
 

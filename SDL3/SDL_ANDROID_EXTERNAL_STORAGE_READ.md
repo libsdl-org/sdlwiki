@@ -18,5 +18,5 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 This macro is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySystem](CategorySystem)
 

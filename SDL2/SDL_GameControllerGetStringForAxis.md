@@ -74,5 +74,5 @@ int main(int argc, char **argv)
 - [SDL_GameControllerGetAxisFromString](SDL_GameControllerGetAxisFromString)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

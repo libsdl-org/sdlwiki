@@ -39,5 +39,5 @@ This function is available since SDL 2.0.0.
 - [SDL_SemWaitTimeout](SDL_SemWaitTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

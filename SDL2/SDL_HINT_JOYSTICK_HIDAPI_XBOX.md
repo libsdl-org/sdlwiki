@@ -24,5 +24,5 @@ The default is "0" on Windows, otherwise the value of
 [SDL_HINT_JOYSTICK_HIDAPI](SDL_HINT_JOYSTICK_HIDAPI)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -23,5 +23,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_FALSE](SDL_FALSE)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryStdinc](CategoryStdinc)
 

@@ -30,5 +30,5 @@ failure; call [SDL_GetError](SDL_GetError)() for more information.
 This function is available since SDL 2.0.4.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

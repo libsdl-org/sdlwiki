@@ -25,5 +25,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_GlobStorageDirectory](SDL_GlobStorageDirectory)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryFilesystem](CategoryFilesystem)
 

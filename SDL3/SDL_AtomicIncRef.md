@@ -36,5 +36,5 @@ This macro is available since SDL 3.0.0.
 - [SDL_AtomicDecRef](SDL_AtomicDecRef)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAtomic](CategoryAtomic)
 

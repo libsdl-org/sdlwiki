@@ -42,7 +42,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
+- [TTF_GlyphIsProvided32](TTF_GlyphIsProvided32)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

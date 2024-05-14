@@ -31,6 +31,5 @@ On many systems you require special privileges to set high or time critical
 priority.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryThread](CategoryThread)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryThread](CategoryThread), [CategoryAPIEnum](CategoryAPIEnum), 
 

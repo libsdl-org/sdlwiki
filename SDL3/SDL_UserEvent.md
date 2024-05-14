@@ -54,5 +54,5 @@ if (myEventType != ((Uint32)-1)) {
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

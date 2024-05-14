@@ -15,7 +15,7 @@ Defined in SDL_mixer.h
 
 ## See Also
 
-* [Mix_GetError](Mix_GetError)
+- [Mix_GetError](Mix_GetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

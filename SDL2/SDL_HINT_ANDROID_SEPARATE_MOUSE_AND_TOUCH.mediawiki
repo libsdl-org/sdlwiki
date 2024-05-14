@@ -27,5 +27,5 @@ This hint is available since SDL 2.0.4.
 
 This hint is '''removed''' since SDL 2.0.10.
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryHints]]
 

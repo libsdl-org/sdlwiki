@@ -21,5 +21,5 @@ This variable can be set to the following values:
 - "1": A separate thread is used for handling raw input messages
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

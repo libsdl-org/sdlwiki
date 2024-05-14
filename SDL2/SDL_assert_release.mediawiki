@@ -14,7 +14,7 @@ void SDL_assert_release(condition)
 |}
 
 == Remarks ==
-This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssertions|Assertions Category page]] for details.
+This function is enabled by default.  It can be disabled by setting the SDL_ASSERT_LEVEL to 0.  See the [[CategoryAssert|Assertions Category page]] for details.
 
 One can set the environment variable "SDL_ASSERT" to one of several strings ("abort", "break", "retry", "ignore", "always_ignore") to force a default behavior, which may be desirable for automation purposes. If your platform requires GUI interfaces to happen on the main thread but you're debugging an assertion in a background thread, it might be desirable to set this to "break" so that your debugger takes control as soon as assert is triggered, instead of risking a bad UI interaction (deadlock, etc) in the application.
 
@@ -26,4 +26,4 @@ Note that the SDL_ASSERT environment variable is an ''environment variable'' and
 :[[SDL_assert_paranoid]]
 
 ----
-[[CategoryAPI]], [[CategoryAssertions]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryAssert]]

@@ -35,7 +35,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_SavePNG_IO](IMG_SavePNG_IO)
+- [IMG_SavePNG_IO](IMG_SavePNG_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

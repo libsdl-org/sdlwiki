@@ -31,5 +31,5 @@ Returns 0, or -1 if this joystick or driver doesn't support effect packets
 This function is available since SDL 2.0.16.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

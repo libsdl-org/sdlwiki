@@ -58,5 +58,5 @@ SDL_free(devices);
 - [SDL_GetDefaultAudioInfo](SDL_GetDefaultAudioInfo)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

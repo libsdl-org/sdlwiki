@@ -65,8 +65,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_SetPosition](Mix_SetPosition)
-* [Mix_SetDistance](Mix_SetDistance)
+- [Mix_SetPosition](Mix_SetPosition)
+- [Mix_SetDistance](Mix_SetDistance)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

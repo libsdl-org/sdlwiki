@@ -25,5 +25,5 @@ This variable can be set to the following values:
 By default SDL will not make the foreign window compatible with OpenGL.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -41,5 +41,5 @@ while (SDL_GetTicks64() < timeout) {
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 

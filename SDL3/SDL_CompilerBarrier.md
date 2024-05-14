@@ -33,5 +33,5 @@ sensitive code; be careful!
 This macro is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAtomic](CategoryAtomic)
 

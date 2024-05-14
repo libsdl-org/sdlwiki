@@ -18,5 +18,5 @@ typedef struct SDL_CommonEvent
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
 

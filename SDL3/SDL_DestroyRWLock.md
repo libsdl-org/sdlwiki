@@ -37,5 +37,5 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateRWLock](SDL_CreateRWLock)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

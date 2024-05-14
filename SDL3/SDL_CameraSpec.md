@@ -35,5 +35,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_GetCameraFormat](SDL_GetCameraFormat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryCamera](CategoryCamera)
 

@@ -44,5 +44,5 @@ If the requested DPI awareness is not available on the currently running
 OS, SDL will try to request the best available match.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

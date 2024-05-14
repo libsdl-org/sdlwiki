@@ -31,4 +31,3 @@ This macro will not be available in SDL 3.x.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
-

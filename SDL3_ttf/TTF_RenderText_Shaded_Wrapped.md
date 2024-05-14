@@ -57,8 +57,8 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped)
-* [TTF_RenderUNICODE_Shaded_Wrapped](TTF_RenderUNICODE_Shaded_Wrapped)
+- [TTF_RenderUTF8_Shaded_Wrapped](TTF_RenderUTF8_Shaded_Wrapped)
+- [TTF_RenderUNICODE_Shaded_Wrapped](TTF_RenderUNICODE_Shaded_Wrapped)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

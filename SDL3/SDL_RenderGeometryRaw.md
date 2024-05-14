@@ -51,5 +51,5 @@ This function is available since SDL 3.0.0.
 - [SDL_RenderGeometry](SDL_RenderGeometry)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

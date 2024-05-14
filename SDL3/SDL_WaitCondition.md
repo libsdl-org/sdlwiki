@@ -53,5 +53,5 @@ This function is available since SDL 3.0.0.
 - [SDL_WaitConditionTimeout](SDL_WaitConditionTimeout)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

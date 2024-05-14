@@ -34,5 +34,5 @@ This function is available since SDL 3.0.0.
 - [SDL_HasNEON](SDL_HasNEON)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

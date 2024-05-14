@@ -18,6 +18,6 @@ typedef enum SDL_MessageBoxButtonFlags
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryMessagebox](CategoryMessagebox), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 
 

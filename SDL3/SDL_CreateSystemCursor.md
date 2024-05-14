@@ -42,5 +42,5 @@ SDL_SetCursor(cursor);
 - [SDL_DestroyCursor](SDL_DestroyCursor)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

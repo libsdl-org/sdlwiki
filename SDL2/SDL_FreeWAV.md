@@ -37,5 +37,5 @@ This function is available since SDL 2.0.0.
 - [SDL_LoadWAV_RW](SDL_LoadWAV_RW)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

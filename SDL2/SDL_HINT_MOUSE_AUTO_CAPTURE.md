@@ -25,5 +25,5 @@ mouse is dragged outside the window, the application continues to receive
 mouse events until the button is released.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

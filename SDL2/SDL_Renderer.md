@@ -14,6 +14,5 @@ struct SDL_Renderer;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRender](CategoryRender)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender), [CategoryAPIStruct](CategoryAPIStruct), 
 

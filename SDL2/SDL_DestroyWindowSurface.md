@@ -35,5 +35,5 @@ This function is available since SDL 2.28.0.
 - [SDL_HasWindowSurface](SDL_HasWindowSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

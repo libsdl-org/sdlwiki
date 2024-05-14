@@ -36,5 +36,5 @@ This variable can be set to the following values:
 - "3" or "best": Use high quality resampling, if available
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

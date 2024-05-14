@@ -59,5 +59,5 @@ This function is available since SDL 3.0.0.
 - [SDL_CloseCamera](SDL_CloseCamera)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCamera](CategoryCamera)
 

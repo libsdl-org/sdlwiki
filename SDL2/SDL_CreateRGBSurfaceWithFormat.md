@@ -48,5 +48,5 @@ This function is available since SDL 2.0.5.
 - [SDL_FreeSurface](SDL_FreeSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

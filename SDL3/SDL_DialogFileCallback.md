@@ -96,5 +96,5 @@ static void SDLCALL callback(void* userdata, const char* const* filelist, int fi
 - [SDL_ShowOpenFolderDialog](SDL_ShowOpenFolderDialog)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryDialog](CategoryDialog)
 

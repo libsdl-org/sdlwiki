@@ -14,4 +14,4 @@ If the program is running under a debugger this function will trigger a breakpoi
 This isn't actually a function, but rather a macro. The intention is that the debugger will stop on exactly this line of code instead of somewhere inside the SDL library. As such, [[CategoryAssertions|the assertion facility]] uses this so that the debugger stops on the exact line of code where an [[SDL_assert]] failed.
 
 ----
-[[CategoryAPI]], [[CategoryAssertions]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryAssert]]

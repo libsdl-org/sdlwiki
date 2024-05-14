@@ -44,5 +44,5 @@ typedef enum SDL_hid_bus_type {
 This enum is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryHIDAPI](CategoryHIDAPI)
 

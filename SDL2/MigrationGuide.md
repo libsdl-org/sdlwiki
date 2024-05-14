@@ -44,7 +44,7 @@ These are the most important new features in SDL 2.0:
 - APIs for building robust GUI toolkits on top of SDL
 - Basic Drag'n'Drop support
 - Proper unicode input and IME support
-- [A really powerful assert macro](CategoryAssertions)
+- [A really powerful assert macro](CategoryAssert)
 - zlib license instead of LGPL.
 - Lots of old annoyances from 1.2 are gone
 - Many other things!

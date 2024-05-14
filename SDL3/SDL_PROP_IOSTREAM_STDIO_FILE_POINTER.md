@@ -3,3 +3,6 @@
 
 Please refer to [SDL_IOFromFile](SDL_IOFromFile) for details.
 
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+

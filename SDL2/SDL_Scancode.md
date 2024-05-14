@@ -414,5 +414,5 @@ The values in this enumeration are based on the USB usage page standard:
 https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryScancode](CategoryScancode)
 

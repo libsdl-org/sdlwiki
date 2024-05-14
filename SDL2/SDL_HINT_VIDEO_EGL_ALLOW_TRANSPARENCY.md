@@ -21,5 +21,5 @@ default SDL will try to enforce opaque composition. To override this
 behavior, you can set this hint to "1".
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

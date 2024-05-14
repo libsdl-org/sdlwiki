@@ -53,5 +53,5 @@ This function is available since SDL 2.0.0.
 - [SDL_DetachThread](SDL_DetachThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

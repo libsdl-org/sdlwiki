@@ -25,5 +25,5 @@ combined with an underscore, as is a common format: "en_GB". Locale is
 optional: "en". So you might have a list like this: "en_GB,jp,es_PT"
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

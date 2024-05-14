@@ -15,7 +15,7 @@ Defined in SDL_ttf.h
 
 ## See Also
 
-* [TTF_SetError](TTF_SetError)
+- [TTF_SetError](TTF_SetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

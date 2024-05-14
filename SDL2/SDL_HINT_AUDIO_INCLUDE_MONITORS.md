@@ -31,5 +31,5 @@ This hint is available since SDL 2.0.16. Before then, virtual devices are
 always ignored.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

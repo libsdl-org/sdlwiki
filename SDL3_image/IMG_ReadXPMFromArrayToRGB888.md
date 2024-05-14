@@ -39,7 +39,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)
+- [IMG_ReadXPMFromArray](IMG_ReadXPMFromArray)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -86,5 +86,5 @@ int main(int argc, char* argv[])
 - [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

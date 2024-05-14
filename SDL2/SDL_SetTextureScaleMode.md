@@ -39,5 +39,5 @@ This function is available since SDL 2.0.12.
 - [SDL_GetTextureScaleMode](SDL_GetTextureScaleMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

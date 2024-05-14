@@ -27,6 +27,5 @@ Instead of this hint, in 2.0.9 and later, you can use
 only works with the classic [SDL_CreateThread](SDL_CreateThread)().
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryDefine](CategoryDefine), [CategoryHints](CategoryHints)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints), [CategoryAPIMacro](CategoryAPIMacro), 
 

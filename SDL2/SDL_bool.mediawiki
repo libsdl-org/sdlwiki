@@ -17,4 +17,4 @@ An enumeration of boolean values.
 Every function, structure, class etc. will work with SDL_bool.
 
 ----
-[[CategoryEnum]], [[CategoryStandard]]
+[[CategoryAPI]], [[CategoryAPIEnum]]

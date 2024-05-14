@@ -33,5 +33,5 @@ GUIDs on different operating systems).
 This struct is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGUID](CategoryGUID)
 

@@ -33,5 +33,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetPreferredLocales](SDL_GetPreferredLocales)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryLocale](CategoryLocale)
 

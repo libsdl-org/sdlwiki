@@ -65,5 +65,5 @@ SDL_ResumeAudioDevice(devid);  // audio callback starts running again.
 - [SDL_AudioDevicePaused](SDL_AudioDevicePaused)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

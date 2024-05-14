@@ -76,5 +76,5 @@ printf("Red size: %d, Green size: %d, Blue size: %d\n", r, g, b);
 - [SDL_GL_ResetAttributes](SDL_GL_ResetAttributes)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

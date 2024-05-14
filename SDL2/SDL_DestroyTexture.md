@@ -35,5 +35,5 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

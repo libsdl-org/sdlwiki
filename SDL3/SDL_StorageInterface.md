@@ -60,5 +60,5 @@ implementations for many things you might expect to do with an
 This struct is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStorage](CategoryStorage)
 

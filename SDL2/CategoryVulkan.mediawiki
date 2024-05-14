@@ -1,3 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_Vulkan_GetVkInstanceProcAddr]]
-<!-- END CATEGORY LIST -->

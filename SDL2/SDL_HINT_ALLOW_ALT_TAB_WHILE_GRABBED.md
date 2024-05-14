@@ -26,5 +26,5 @@ The variable can be set to the following values:
 - "1": SDL will minimize your window when Alt+Tab is pressed (default)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

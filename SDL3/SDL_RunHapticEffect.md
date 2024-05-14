@@ -46,5 +46,5 @@ This function is available since SDL 3.0.0.
 - [SDL_StopHapticEffects](SDL_StopHapticEffects)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

@@ -24,5 +24,5 @@ The default is the value of
 [SDL_HINT_JOYSTICK_HIDAPI_XBOX](SDL_HINT_JOYSTICK_HIDAPI_XBOX)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

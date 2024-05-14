@@ -35,5 +35,5 @@ Data returned should be freed with [SDL_free](SDL_free).
 This function is available since SDL 2.0.18.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

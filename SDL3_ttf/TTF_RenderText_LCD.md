@@ -57,8 +57,8 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderUTF8_LCD](TTF_RenderUTF8_LCD)
-* [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD)
+- [TTF_RenderUTF8_LCD](TTF_RenderUTF8_LCD)
+- [TTF_RenderUNICODE_LCD](TTF_RenderUNICODE_LCD)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

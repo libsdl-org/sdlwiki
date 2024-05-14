@@ -35,5 +35,5 @@ This hint is available since SDL 2.0.22. Before then, you always get an
 [SDL_QUIT](SDL_QUIT) event when closing the final window.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

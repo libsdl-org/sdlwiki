@@ -135,4 +135,3 @@ while (SDL_PollEvent (&event))
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 
-

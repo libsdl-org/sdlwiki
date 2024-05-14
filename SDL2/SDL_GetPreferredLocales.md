@@ -61,5 +61,5 @@ updated copy of preferred locales.
 This function is available since SDL 2.0.14.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLocale](CategoryLocale)
 

@@ -44,5 +44,5 @@ This function is available since SDL 2.0.0.
 - [SDL_GetRenderer](SDL_GetRenderer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

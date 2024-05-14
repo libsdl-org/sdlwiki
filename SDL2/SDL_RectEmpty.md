@@ -16,4 +16,3 @@ SDL_FORCE_INLINE SDL_bool SDL_RectEmpty(const SDL_Rect *r);
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
 
-

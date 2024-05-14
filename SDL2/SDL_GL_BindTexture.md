@@ -59,5 +59,5 @@ This function is available since SDL 2.0.0.
 - [SDL_GL_UnbindTexture](SDL_GL_UnbindTexture)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

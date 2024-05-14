@@ -33,5 +33,5 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateSemaphore](SDL_CreateSemaphore)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

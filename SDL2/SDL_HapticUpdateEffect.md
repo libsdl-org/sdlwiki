@@ -47,5 +47,5 @@ This function is available since SDL 2.0.0.
 - [SDL_HapticRunEffect](SDL_HapticRunEffect)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

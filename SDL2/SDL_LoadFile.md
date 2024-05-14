@@ -41,5 +41,5 @@ Prior to SDL 2.0.10, this function was a macro wrapping around
 This function is available since SDL 2.0.10.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

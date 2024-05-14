@@ -46,5 +46,5 @@ This function is available since SDL 3.0.0.
 - [SDL_pow](SDL_pow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

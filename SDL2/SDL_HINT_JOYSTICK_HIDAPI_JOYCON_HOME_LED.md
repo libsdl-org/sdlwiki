@@ -25,5 +25,5 @@ set to a floating point value between 0.0 and 1.0 which controls the
 brightness of the Home button LED.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -68,5 +68,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_HapticEffect](SDL_HapticEffect)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

@@ -21,5 +21,5 @@ This variable can be set to the following values:
 - "1": Remotes are available as 2 axis, 2 button joysticks (the default).
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -30,7 +30,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_SetFontOutline](TTF_SetFontOutline)
+- [TTF_SetFontOutline](TTF_SetFontOutline)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

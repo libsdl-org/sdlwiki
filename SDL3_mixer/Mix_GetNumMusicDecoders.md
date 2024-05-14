@@ -39,8 +39,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
-* [Mix_HasMusicDecoder](Mix_HasMusicDecoder)
+- [Mix_GetMusicDecoder](Mix_GetMusicDecoder)
+- [Mix_HasMusicDecoder](Mix_HasMusicDecoder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

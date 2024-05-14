@@ -29,5 +29,5 @@ void SDL_UnionRect(const SDL_Rect * A,
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRect](CategoryRect)
 

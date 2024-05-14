@@ -23,5 +23,5 @@ typedef void (SDLCALL *SDL_HintCallback)(void *userdata, const char *name, const
 | **newValue**     | the new value hint is to be set to                                            |
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryHints](CategoryHints)
 

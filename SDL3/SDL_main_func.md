@@ -18,5 +18,5 @@ typedef int (SDLCALL *SDL_main_func)(int argc, char *argv[]);
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMain](CategoryMain)
 

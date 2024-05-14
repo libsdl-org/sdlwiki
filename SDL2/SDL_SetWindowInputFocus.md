@@ -40,5 +40,5 @@ This function is available since SDL 2.0.5.
 - [SDL_RaiseWindow](SDL_RaiseWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

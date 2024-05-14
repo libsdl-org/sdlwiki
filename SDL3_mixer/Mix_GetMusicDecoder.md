@@ -41,7 +41,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_GetNumMusicDecoders](Mix_GetNumMusicDecoders)
+- [Mix_GetNumMusicDecoders](Mix_GetNumMusicDecoders)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

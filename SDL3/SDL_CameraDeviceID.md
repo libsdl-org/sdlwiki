@@ -29,5 +29,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_GetCameraDevices](SDL_GetCameraDevices)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryCamera](CategoryCamera)
 

@@ -23,5 +23,5 @@ Returns the amount of RAM configured in the system in MiB.
 This function is available since SDL 2.0.1.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

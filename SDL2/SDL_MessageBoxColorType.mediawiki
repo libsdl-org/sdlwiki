@@ -30,4 +30,4 @@ An enumeration of positions inside the colors array of [[SDL_MessageBoxColorSche
 :[[SDL_MessageBoxColorScheme]] 
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryMessagebox]]

@@ -1,6 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_Color]]
-* [[SDL_Palette]]
-* [[SDL_PixelFormat]]
-* [[SDL_PixelFormatEnum]]
-<!-- END CATEGORY LIST -->

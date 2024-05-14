@@ -38,5 +38,5 @@ This function is available since SDL 3.0.0.
 - [SDL_LogVerbose](SDL_LogVerbose)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryLog](CategoryLog)
 

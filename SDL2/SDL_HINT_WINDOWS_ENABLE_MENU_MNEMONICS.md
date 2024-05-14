@@ -35,5 +35,5 @@ This variable can be set to the following values:
 - "1": Alt+mnemonic opens menus, invalid mnemonics produce a beep.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

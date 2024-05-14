@@ -67,5 +67,5 @@ SDL_Log("Pi - acos(-1):\t%f", SDL_PI_D - SDL_acos(-1));
 - [SDL_cos](SDL_cos)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

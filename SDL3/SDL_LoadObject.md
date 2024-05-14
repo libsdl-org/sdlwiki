@@ -35,5 +35,5 @@ This function is available since SDL 3.0.0.
 - [SDL_UnloadObject](SDL_UnloadObject)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySharedObject](CategorySharedObject)
 

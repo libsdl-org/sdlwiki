@@ -38,5 +38,5 @@ This variable can be set to the following values:
 - "ignore": Ignore fact chunk entirely (default)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

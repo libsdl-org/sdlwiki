@@ -56,5 +56,5 @@ This function is available since SDL 3.0.0.
 - [SDL_tan](SDL_tan)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

@@ -57,7 +57,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderUTF8_Shaded](TTF_RenderUTF8_Shaded)
+- [TTF_RenderUTF8_Shaded](TTF_RenderUTF8_Shaded)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

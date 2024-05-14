@@ -62,5 +62,5 @@ SDL_DestroyMutex(mutex);
 - [SDL_UnlockMutex](SDL_UnlockMutex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

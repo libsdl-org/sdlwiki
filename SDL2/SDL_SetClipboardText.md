@@ -35,5 +35,5 @@ This function is available since SDL 2.0.0.
 - [SDL_HasClipboardText](SDL_HasClipboardText)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryClipboard](CategoryClipboard)
 

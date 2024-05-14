@@ -33,5 +33,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetWindowTitle](SDL_SetWindowTitle)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -27,5 +27,5 @@ This variable can be set to the following values:
 - "dropblock": Decode until the first incomplete block (default)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

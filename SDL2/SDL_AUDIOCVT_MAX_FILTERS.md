@@ -21,5 +21,5 @@ The maximum number of [SDL_AudioFilter](SDL_AudioFilter) functions in
 the terminating NULL pointer.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryAudio](CategoryAudio)
 

@@ -22,5 +22,5 @@ This is just a standard [SDL_GUID](SDL_GUID) by a different name.
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryJoystick](CategoryJoystick)
 

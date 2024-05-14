@@ -62,5 +62,5 @@ SDL_Quit();
 - [SDL_QuitSubSystem](SDL_QuitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

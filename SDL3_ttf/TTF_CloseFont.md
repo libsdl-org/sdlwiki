@@ -38,15 +38,15 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_OpenFont](TTF_OpenFont)
-* [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
-* [TTF_OpenFontIO](TTF_OpenFontIO)
-* [TTF_OpenFontDPI](TTF_OpenFontDPI)
-* [TTF_OpenFontDPIIO](TTF_OpenFontDPIIO)
-* [TTF_OpenFontIndex](TTF_OpenFontIndex)
-* [TTF_OpenFontIndexDPI](TTF_OpenFontIndexDPI)
-* [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
-* [TTF_OpenFontIndexIO](TTF_OpenFontIndexIO)
+- [TTF_OpenFont](TTF_OpenFont)
+- [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
+- [TTF_OpenFontIO](TTF_OpenFontIO)
+- [TTF_OpenFontDPI](TTF_OpenFontDPI)
+- [TTF_OpenFontDPIIO](TTF_OpenFontDPIIO)
+- [TTF_OpenFontIndex](TTF_OpenFontIndex)
+- [TTF_OpenFontIndexDPI](TTF_OpenFontIndexDPI)
+- [TTF_OpenFontIndexDPIIO](TTF_OpenFontIndexDPIIO)
+- [TTF_OpenFontIndexIO](TTF_OpenFontIndexIO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

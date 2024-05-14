@@ -33,5 +33,5 @@ This function is available since SDL 2.0.14.
 - [SDL_CreateWindow](SDL_CreateWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)
 

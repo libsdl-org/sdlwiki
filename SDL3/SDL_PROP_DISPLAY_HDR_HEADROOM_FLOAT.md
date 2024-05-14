@@ -3,3 +3,6 @@
 
 Please refer to [SDL_GetDisplayProperties](SDL_GetDisplayProperties) for details.
 
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+

@@ -23,6 +23,6 @@ typedef enum SDL_RendererFlags
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender), [CategoryAPIEnum](CategoryAPIEnum), 
 
 

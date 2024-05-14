@@ -30,4 +30,3 @@ Deprecated, use [SDL_VERSION_ATLEAST](SDL_VERSION_ATLEAST) or
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
-

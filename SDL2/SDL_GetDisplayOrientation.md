@@ -35,5 +35,5 @@ This function is available since SDL 2.0.9.
 - [SDL_GetNumVideoDisplays](SDL_GetNumVideoDisplays)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

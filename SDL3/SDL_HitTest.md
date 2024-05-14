@@ -30,5 +30,5 @@ Returns an [SDL_HitTestResult](SDL_HitTestResult) value.
 - [SDL_SetWindowHitTest](SDL_SetWindowHitTest)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

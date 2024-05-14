@@ -67,5 +67,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_AUDIO_ISUNSIGNED](SDL_AUDIO_ISUNSIGNED)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

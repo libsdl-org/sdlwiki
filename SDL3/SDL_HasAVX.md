@@ -33,5 +33,5 @@ This function is available since SDL 3.0.0.
 - [SDL_HasAVX512F](SDL_HasAVX512F)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryCPUInfo](CategoryCPUInfo)
 

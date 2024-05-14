@@ -30,5 +30,5 @@ implemented. Currently supported the following drivers:
 - Raspberry Pi (raspberrypi)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -140,5 +140,5 @@ int main(int argc, char **argv)
 - [SDL_PushEvent](SDL_PushEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryEvents](CategoryEvents)
 

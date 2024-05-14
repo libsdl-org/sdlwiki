@@ -81,5 +81,5 @@ SDL_DestroySemaphore(sem);
 - [SDL_WaitSemaphore](SDL_WaitSemaphore)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

@@ -22,5 +22,5 @@ This macro is available since SDL 3.0.0.
 - [SDL_bool](SDL_bool)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryStdinc](CategoryStdinc)
 

@@ -38,5 +38,5 @@ This function is available since SDL 2.0.0.
 - [SDL_ReadBE16](SDL_ReadBE16)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

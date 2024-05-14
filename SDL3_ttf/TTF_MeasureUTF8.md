@@ -41,9 +41,9 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_MeasureText](TTF_MeasureText)
-* [TTF_MeasureUTF8](TTF_MeasureUTF8)
-* [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
+- [TTF_MeasureText](TTF_MeasureText)
+- [TTF_MeasureUTF8](TTF_MeasureUTF8)
+- [TTF_MeasureUNICODE](TTF_MeasureUNICODE)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

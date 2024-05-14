@@ -50,5 +50,5 @@ elements of this structure are optional and can be left 0.
 - [SDL_JoystickAttachVirtualEx](SDL_JoystickAttachVirtualEx)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryJoystick](CategoryJoystick)
 

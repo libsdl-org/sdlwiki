@@ -24,5 +24,5 @@ libdecor is used over xdg-shell when xdg-decoration protocol is
 unavailable.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

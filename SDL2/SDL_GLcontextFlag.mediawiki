@@ -57,5 +57,5 @@ This flag maps to GLX_CONTEXT_RESET_ISOLATION_BIT_ARB in the [http://www.opengl.
 :[[SDL_GL_SetAttribute]]
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryVideo]]
 

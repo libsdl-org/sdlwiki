@@ -39,7 +39,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_Init](Mix_Init)
+- [Mix_Init](Mix_Init)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

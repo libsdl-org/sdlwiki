@@ -19,7 +19,7 @@
 |[[CategoryLog|Log Handling]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_log.h SDL_log.h]
 |-
-|[[CategoryAssertions|Assertions]]
+|[[CategoryAssert|Assertions]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_assert.h SDL_assert.h]
 |-
 |[[CategoryVersion|Querying SDL Version]]
@@ -49,7 +49,7 @@
 |[[CategorySurface|Surface Creation and Simple Drawing]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_surface.h SDL_surface.h]
 |-
-|[[CategorySWM|Platform-specific Window Management]]
+|[[CategorySYSWM|Platform-specific Window Management]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_syswm.h SDL_syswm.h]
 |-
 |[[CategoryClipboard|Clipboard Handling]]
@@ -95,7 +95,7 @@
 |'''View information and functions related to...'''
 |'''View the header'''
 |-
-|[[CategoryForceFeedback|Force Feedback Support]]
+|[[CategoryHaptic|Force Feedback Support]]
 |[https://github.com/libsdl-org/SDL/blob/SDL2/include/SDL_haptic.h SDL_haptic.h]
 |}
 

@@ -15,4 +15,4 @@ Vertex structure
 :[[SDL_Vertex]]
 
 ----
-[[CategoryStruct]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryRender]]

@@ -27,5 +27,5 @@ This enum is available since SDL 3.0.0.
 - [SDL_GetDateTimeLocalePreferences](SDL_GetDateTimeLocalePreferences)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryTime](CategoryTime)
 

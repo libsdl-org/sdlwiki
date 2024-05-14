@@ -1,8 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_assert]]
-* [[SDL_assert_data]]
-* [[SDL_assert_paranoid]]
-* [[SDL_assert_release]]
-* [[SDL_AssertState]]
-* [[SDL_TriggerBreakpoint]]
-<!-- END CATEGORY LIST -->

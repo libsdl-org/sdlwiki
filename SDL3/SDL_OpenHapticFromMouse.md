@@ -29,5 +29,5 @@ This function is available since SDL 3.0.0.
 - [SDL_IsMouseHaptic](SDL_IsMouseHaptic)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

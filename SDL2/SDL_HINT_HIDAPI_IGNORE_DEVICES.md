@@ -19,5 +19,5 @@ For example, to ignore the Shanwan DS3 controller and any Valve controller,
 you might have the string "0x2563/0x0523,0x28de/0x0000"
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

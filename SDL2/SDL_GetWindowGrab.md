@@ -34,5 +34,5 @@ This function is available since SDL 2.0.0.
 - [SDL_SetWindowGrab](SDL_SetWindowGrab)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

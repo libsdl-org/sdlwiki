@@ -35,5 +35,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetRenderVSync](SDL_GetRenderVSync)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

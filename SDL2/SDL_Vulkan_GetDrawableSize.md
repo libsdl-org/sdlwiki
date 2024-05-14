@@ -42,5 +42,5 @@ This function is available since SDL 2.0.6.
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVulkan](CategoryVulkan)
 

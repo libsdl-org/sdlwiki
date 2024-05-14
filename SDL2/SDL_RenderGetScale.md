@@ -32,5 +32,5 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderSetScale](SDL_RenderSetScale)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

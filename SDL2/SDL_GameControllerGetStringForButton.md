@@ -39,5 +39,5 @@ This function is available since SDL 2.0.0.
 - [SDL_GameControllerGetButtonFromString](SDL_GameControllerGetButtonFromString)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGameController](CategoryGameController)
 

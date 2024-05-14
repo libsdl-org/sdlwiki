@@ -43,5 +43,5 @@ This function is available since SDL 3.0.0.
 - [SDL_HasMouse](SDL_HasMouse)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

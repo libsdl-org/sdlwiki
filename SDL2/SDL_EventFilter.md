@@ -47,4 +47,3 @@ SDL_AddEventWatch(MyEventFunction, NULL);
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)
 
-

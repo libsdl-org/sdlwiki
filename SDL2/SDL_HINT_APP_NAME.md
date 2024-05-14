@@ -31,5 +31,5 @@ Note that, for audio streams, this can be overridden with
 On targets where this is not supported, this hint does nothing.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

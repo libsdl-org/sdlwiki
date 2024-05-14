@@ -23,5 +23,5 @@ You should probably only use this for fullscreen windows, and you probably
 shouldn't even use it for that. But it's here if you want to try!
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

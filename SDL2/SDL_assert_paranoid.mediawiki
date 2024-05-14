@@ -25,4 +25,4 @@ Note that the SDL_ASSERT environment variable is an ''environment variable'' and
 :[[SDL_assert_release]]
 
 ----
-[[CategoryAPI]], [[CategoryAssertions]]
+[[CategoryAPI]], [[CategoryAPIFunction]], [[CategoryAssert]]

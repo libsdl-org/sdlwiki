@@ -35,5 +35,5 @@ This variable can be set to the following values:
 - "maximum": Search for chunks until the end of file (not recommended)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

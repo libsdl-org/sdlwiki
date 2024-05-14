@@ -31,5 +31,5 @@ This function is called by SDL when there is new text to be logged.
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryLog](CategoryLog)
 

@@ -60,8 +60,8 @@ This function is available since SDL_mixer 3.0.0
 
 ## See Also
 
-* [Mix_LoadWAV](Mix_LoadWAV)
-* [Mix_FreeChunk](Mix_FreeChunk)
+- [Mix_LoadWAV](Mix_LoadWAV)
+- [Mix_FreeChunk](Mix_FreeChunk)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -22,5 +22,5 @@ Haptic effect for direct control over high/low frequency motors.
 - [SDL_HapticLeftRight](SDL_HapticLeftRight)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

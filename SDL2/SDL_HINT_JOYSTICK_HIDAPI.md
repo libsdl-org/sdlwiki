@@ -24,5 +24,5 @@ This variable is the default for all drivers, but can be overridden by the
 hints for specific drivers below.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

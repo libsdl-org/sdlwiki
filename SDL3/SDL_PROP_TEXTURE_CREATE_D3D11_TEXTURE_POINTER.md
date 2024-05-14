@@ -3,3 +3,6 @@
 
 Please refer to [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties) for details.
 
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+

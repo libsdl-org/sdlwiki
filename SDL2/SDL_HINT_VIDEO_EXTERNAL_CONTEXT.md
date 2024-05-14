@@ -29,5 +29,5 @@ context, such as an externally managed OpenGL context or attaching a Vulkan
 surface to the window.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

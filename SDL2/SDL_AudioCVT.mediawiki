@@ -78,4 +78,4 @@ The [[SDL_AudioCVT]] structure is used to convert audio data between different f
 :[[SDL_ConvertAudio]]
 
 ----
-[[CategoryStruct]], [[CategoryAudio]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryAudio]]

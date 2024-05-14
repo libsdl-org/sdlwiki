@@ -143,6 +143,6 @@ When this structure is returned, it holds information about which low level
 system it is using, and will be one of [SDL_SYSWM_TYPE](SDL_SYSWM_TYPE).
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategorySWM](CategorySWM)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySYSWM](CategorySYSWM)
 
 

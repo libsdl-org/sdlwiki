@@ -49,5 +49,5 @@ This function is available since SDL 3.0.0.
 - [SDL_sin](SDL_sin)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

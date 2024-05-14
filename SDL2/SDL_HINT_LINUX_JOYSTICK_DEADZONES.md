@@ -21,5 +21,5 @@ This variable can be set to the following values:
 - "1": Return axis values with deadzones taken into account
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

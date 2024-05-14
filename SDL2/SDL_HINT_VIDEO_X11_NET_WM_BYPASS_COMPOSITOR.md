@@ -23,5 +23,5 @@ This variable can be set to the following values:
 By default SDL will use _NET_WM_BYPASS_COMPOSITOR
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

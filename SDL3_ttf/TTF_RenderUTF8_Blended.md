@@ -51,7 +51,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderUNICODE_Blended](TTF_RenderUNICODE_Blended)
+- [TTF_RenderUNICODE_Blended](TTF_RenderUNICODE_Blended)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

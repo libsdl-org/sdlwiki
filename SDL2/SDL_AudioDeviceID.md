@@ -22,5 +22,5 @@ A successful call to [SDL_OpenAudio](SDL_OpenAudio)() is always device id
 and when you don't care about multiple, specific, or capture devices.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

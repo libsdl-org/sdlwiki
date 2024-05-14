@@ -52,5 +52,5 @@ This function is available since SDL 2.0.4.
 - [SDL_CaptureMouse](SDL_CaptureMouse)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

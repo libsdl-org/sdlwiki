@@ -60,4 +60,4 @@ Opened devices are always PLAYING or PAUSED in normal circumstances. A failing d
 :[[SDL_GetAudioDeviceStatus]]
 
 ----
-[[CategoryEnum]], [[CategoryAudio]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryAudio]]

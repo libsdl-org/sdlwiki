@@ -29,4 +29,4 @@ This enumeration is returned by the callback function in [[SDL_SetAssertionHandl
 :[[SDL_SetAssertionHandler]]
 
 ----
-[[CategoryEnum]], [[CategoryAssertions]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryAssert]]

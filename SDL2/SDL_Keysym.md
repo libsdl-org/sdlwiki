@@ -25,6 +25,5 @@ If you are looking for translated character input, see the
 [SDL_TEXTINPUT](SDL_TEXTINPUT) event.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryKeyboard](CategoryKeyboard)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryKeyboard](CategoryKeyboard), [CategoryAPIStruct](CategoryAPIStruct), 
 

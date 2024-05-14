@@ -32,5 +32,5 @@ If this hint isn't set, the default log levels are equivalent to:
 "app=info,assert=warn,test=verbose,*=error"
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

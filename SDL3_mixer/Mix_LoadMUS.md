@@ -50,7 +50,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_FreeMusic](Mix_FreeMusic)
+- [Mix_FreeMusic](Mix_FreeMusic)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

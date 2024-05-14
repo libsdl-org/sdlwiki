@@ -54,7 +54,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_CloseFont](TTF_CloseFont)
+- [TTF_CloseFont](TTF_CloseFont)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

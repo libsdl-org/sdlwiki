@@ -36,5 +36,5 @@ This function is available since SDL 2.0.0.
 - [SDL_SaveAllDollarTemplates](SDL_SaveAllDollarTemplates)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryGesture](CategoryGesture)
 

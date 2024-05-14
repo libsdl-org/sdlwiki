@@ -29,5 +29,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_SetPaletteColors](SDL_SetPaletteColors)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryPixels](CategoryPixels)
 

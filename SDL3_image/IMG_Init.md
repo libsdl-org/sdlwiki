@@ -84,7 +84,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_Quit](IMG_Quit)
+- [IMG_Quit](IMG_Quit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

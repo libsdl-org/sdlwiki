@@ -56,7 +56,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
+- [TTF_RenderGlyph32_Blended](TTF_RenderGlyph32_Blended)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -25,5 +25,5 @@ You can update mappings after the system is initialized with
 [SDL_GameControllerAddMapping](SDL_GameControllerAddMapping)()
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

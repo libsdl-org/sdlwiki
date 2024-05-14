@@ -1,8 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_AudioCVT]]
-* [[SDL_AudioFormat]]
-* [[SDL_AudioSpec]]
-* [[SDL_AudioStatus]]
-* [[SDL_AudioStream]]
-* [[SDL_LoadWAV]]
-<!-- END CATEGORY LIST -->

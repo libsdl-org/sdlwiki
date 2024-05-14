@@ -22,5 +22,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_CreateWindow](SDL_CreateWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 

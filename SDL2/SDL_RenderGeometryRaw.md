@@ -51,5 +51,5 @@ This function is available since SDL 2.0.18.
 - [SDL_Vertex](SDL_Vertex)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

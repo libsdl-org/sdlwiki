@@ -56,7 +56,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
+- [TTF_RenderGlyph32_Solid](TTF_RenderGlyph32_Solid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

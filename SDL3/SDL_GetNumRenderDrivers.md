@@ -37,5 +37,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetRenderDriver](SDL_GetRenderDriver)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

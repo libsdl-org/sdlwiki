@@ -421,5 +421,5 @@ https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
 This enum is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryScancode](CategoryScancode)
 

@@ -44,6 +44,5 @@ This structure should be treated as read-only, except for `pixels`, which,
 if not NULL, contains the raw pixel data for the surface.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategorySurface](CategorySurface)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySurface](CategorySurface), [CategoryAPIStruct](CategoryAPIStruct), 
 

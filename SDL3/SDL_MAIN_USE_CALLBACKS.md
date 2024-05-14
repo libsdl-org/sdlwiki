@@ -38,5 +38,5 @@ This macro is used by the headers since SDL 3.0.0.
 - [SDL_AppQuit](SDL_AppQuit)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryMain](CategoryMain)
 

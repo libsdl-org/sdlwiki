@@ -1,6 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_atomic_t]]
-* [[SDL_AtomicDecRef]]
-* [[SDL_AtomicIncRef]]
-* [[SDL_CompilerBarrier]]
-<!-- END CATEGORY LIST -->

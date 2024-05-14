@@ -49,5 +49,5 @@ This function is available since SDL 2.0.0.
 - [SDL_SetWindowGammaRamp](SDL_SetWindowGammaRamp)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -29,5 +29,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_ComposeCustomBlendMode](SDL_ComposeCustomBlendMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryBlendmode](CategoryBlendmode)
 

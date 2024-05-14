@@ -30,5 +30,5 @@ Returns an [SDL_Joystick](SDL_Joystick) on success or NULL on failure; call
 This function is available since SDL 2.0.12.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

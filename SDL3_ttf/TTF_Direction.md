@@ -21,7 +21,7 @@ typedef enum TTF_Direction
 
 ## See Also
 
-* [TTF_SetFontDirection](TTF_SetFontDirection)
+- [TTF_SetFontDirection](TTF_SetFontDirection)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)

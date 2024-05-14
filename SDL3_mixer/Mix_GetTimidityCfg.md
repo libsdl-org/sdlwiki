@@ -33,7 +33,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_SetTimidityCfg](Mix_SetTimidityCfg)
+- [Mix_SetTimidityCfg](Mix_SetTimidityCfg)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

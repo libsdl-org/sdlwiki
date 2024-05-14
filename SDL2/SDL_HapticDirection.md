@@ -124,6 +124,6 @@ from the south means the user will have to pull the stick to counteract):
 - [SDL_HapticNumAxes](SDL_HapticNumAxes)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryForceFeedback](CategoryForceFeedback)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 
 

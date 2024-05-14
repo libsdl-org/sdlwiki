@@ -34,5 +34,5 @@ This enum is available since SDL 3.0.0.
 - [SDL_HitTest](SDL_HitTest)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 

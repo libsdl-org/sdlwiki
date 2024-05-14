@@ -32,5 +32,5 @@ default: "audio stream" or something similar.
 On targets where this is not supported, this hint does nothing.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

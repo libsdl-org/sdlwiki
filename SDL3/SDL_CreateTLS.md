@@ -58,5 +58,5 @@ void *GetMyThreadData(void)
 - [SDL_SetTLS](SDL_SetTLS)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

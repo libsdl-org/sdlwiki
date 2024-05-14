@@ -63,6 +63,5 @@ for (i = 0; i < display_mode_count; ++i) {
 - [SDL_GetWindowDisplayMode](SDL_GetWindowDisplayMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryVideo](CategoryVideo)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo), [CategoryAPIStruct](CategoryAPIStruct), 
 

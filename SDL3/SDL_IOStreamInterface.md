@@ -76,5 +76,5 @@ streams, via functions like [SDL_IOFromFile](SDL_IOFromFile)() and
 This struct is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryIOStream](CategoryIOStream)
 

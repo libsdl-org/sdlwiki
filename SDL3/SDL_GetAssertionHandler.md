@@ -48,5 +48,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetAssertionHandler](SDL_SetAssertionHandler)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssert](CategoryAssert)
 

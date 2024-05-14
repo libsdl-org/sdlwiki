@@ -50,5 +50,5 @@ int main(int argc, char *argv[])
 - [SDL_Init](SDL_Init)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

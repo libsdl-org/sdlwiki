@@ -21,5 +21,5 @@ The ID value starts at 0 and increments from there. The value -1 is an
 invalid ID.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryJoystick](CategoryJoystick)
 

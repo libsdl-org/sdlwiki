@@ -29,5 +29,5 @@ GUIDs may be platform-dependent (i.e., the same device may report different
 GUIDs on different operating systems).
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryGUID](CategoryGUID)
 

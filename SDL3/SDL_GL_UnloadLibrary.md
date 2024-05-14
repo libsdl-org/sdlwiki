@@ -23,5 +23,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GL_LoadLibrary](SDL_GL_LoadLibrary)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

@@ -40,7 +40,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_FreeAnimation](IMG_FreeAnimation)
+- [IMG_FreeAnimation](IMG_FreeAnimation)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

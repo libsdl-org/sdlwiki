@@ -34,4 +34,4 @@ Each pixel in an 8-bit surface is an index into the '''colors''' field of the [[
 :[[SDL_SetPaletteColors]]
 
 ----
-[[CategoryStruct]], [[CategoryPixels]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryPixels]]

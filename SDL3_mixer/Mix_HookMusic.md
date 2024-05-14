@@ -63,7 +63,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_SetPostMix](Mix_SetPostMix)
+- [Mix_SetPostMix](Mix_SetPostMix)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

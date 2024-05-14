@@ -55,8 +55,8 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_LoadTextureTyped_IO](IMG_LoadTextureTyped_IO)
-* [IMG_LoadTexture_IO](IMG_LoadTexture_IO)
+- [IMG_LoadTextureTyped_IO](IMG_LoadTextureTyped_IO)
+- [IMG_LoadTexture_IO](IMG_LoadTexture_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

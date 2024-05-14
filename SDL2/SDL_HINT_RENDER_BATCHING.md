@@ -37,5 +37,5 @@ goes to the GPU before your work begins. Not following this contract will
 result in undefined behavior.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

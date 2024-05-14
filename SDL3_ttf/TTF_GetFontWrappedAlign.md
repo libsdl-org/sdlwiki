@@ -38,7 +38,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_SetFontWrappedAlign](TTF_SetFontWrappedAlign)
+- [TTF_SetFontWrappedAlign](TTF_SetFontWrappedAlign)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

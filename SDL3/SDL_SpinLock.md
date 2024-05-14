@@ -32,5 +32,5 @@ Porting Note: The spin lock functions and type are required and can not be
 emulated because they are used in the atomic emulation code.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAtomic](CategoryAtomic)
 

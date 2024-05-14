@@ -41,5 +41,5 @@ This function is available since SDL 3.0.0.
 - [SDL_fmod](SDL_fmod)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdinc](CategoryStdinc)
 

@@ -27,5 +27,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetKeyboardState](SDL_GetKeyboardState)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryKeyboard](CategoryKeyboard)
 

@@ -45,5 +45,5 @@ if (SDL_HapticRumbleSupported(dev)) {
 - [SDL_InitHapticRumble](SDL_InitHapticRumble)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHaptic](CategoryHaptic)
 

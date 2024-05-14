@@ -24,5 +24,5 @@ Returns [SDL_TRUE](SDL_TRUE) if this is a Chromebook,
 This function is available since SDL 2.0.9.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySystem](CategorySystem)
 

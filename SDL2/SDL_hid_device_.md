@@ -14,5 +14,5 @@ struct SDL_hid_device_;
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHIDAPI](CategoryHIDAPI)
 

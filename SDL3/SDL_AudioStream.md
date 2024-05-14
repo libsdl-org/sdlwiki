@@ -40,5 +40,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_CreateAudioStream](SDL_CreateAudioStream)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryAudio](CategoryAudio)
 

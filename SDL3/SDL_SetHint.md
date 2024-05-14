@@ -52,5 +52,5 @@ SDL_SetHint(SDL_HINT_LOGGING, "2");
 - [SDL_SetHintWithPriority](SDL_SetHintWithPriority)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 

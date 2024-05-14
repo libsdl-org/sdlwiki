@@ -45,7 +45,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_SizeUTF8](TTF_SizeUTF8)
+- [TTF_SizeUTF8](TTF_SizeUTF8)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

@@ -41,5 +41,5 @@ This function is available since SDL 3.0.0.
 - [SDL_WriteIO](SDL_WriteIO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 

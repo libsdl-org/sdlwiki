@@ -43,4 +43,4 @@ This structure is filled in with information about the assertion and is used by 
 :[[SDL_GetAssertionReport]]
 
 ----
-[[CategoryStruct]], [[CategoryAssertions]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryAssert]]

@@ -27,5 +27,5 @@ This function is available since SDL 2.0.0.
 - [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryTimer](CategoryTimer)
 

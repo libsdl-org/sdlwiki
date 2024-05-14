@@ -84,5 +84,5 @@ This enum is available since SDL 3.0.0.
 - [SDL_GetUserFolder](SDL_GetUserFolder)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryFilesystem](CategoryFilesystem)
 

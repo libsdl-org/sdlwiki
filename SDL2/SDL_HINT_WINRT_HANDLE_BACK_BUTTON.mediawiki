@@ -51,5 +51,5 @@ This hint is available since SDL 2.0.3.
 
 
 ----
-[[CategoryDefine]], [[CategoryHints]]
+[[CategoryAPI]], [[CategoryAPIMacro]], [[CategoryHints]]
 

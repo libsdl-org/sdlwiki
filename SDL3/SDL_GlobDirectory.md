@@ -12,8 +12,6 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 ```c
 extern DECLSPEC char **SDLCALL SDL_GlobDirectory(const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 
-
-#define SDL_GLOB_CASEINSENSITIVE (1u << 0)
 ```
 
 ## Function Parameters
@@ -59,5 +57,5 @@ It is safe to call this function from any thread.
 This function is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 

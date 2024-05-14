@@ -1,6 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_GetInputDeviceName]]
-* [[SDL_GetNumInputDevices]]
-* [[SDL_IsDeviceDisconnected]]
-* [[SDL_RedetectInputDevices]]
-<!-- END CATEGORY LIST -->

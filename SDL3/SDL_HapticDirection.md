@@ -128,5 +128,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_GetNumHapticAxes](SDL_GetNumHapticAxes)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 

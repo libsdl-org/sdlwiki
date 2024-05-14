@@ -26,5 +26,5 @@ Returns an [SDL_AssertState](SDL_AssertState) value indicating how to
 handle the failure.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAssert](CategoryAssert)
 

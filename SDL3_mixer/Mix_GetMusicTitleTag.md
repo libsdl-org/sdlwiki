@@ -43,10 +43,10 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_GetMusicTitle](Mix_GetMusicTitle)
-* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
-* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
-* [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
+- [Mix_GetMusicTitle](Mix_GetMusicTitle)
+- [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
+- [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
+- [Mix_GetMusicCopyrightTag](Mix_GetMusicCopyrightTag)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

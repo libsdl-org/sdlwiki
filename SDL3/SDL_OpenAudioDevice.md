@@ -123,5 +123,5 @@ if (dev == 0) {
 - [SDL_GetAudioDeviceFormat](SDL_GetAudioDeviceFormat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

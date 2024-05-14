@@ -24,5 +24,5 @@ This function is available since SDL 2.0.2.
 - [SDL_GL_SetAttribute](SDL_GL_SetAttribute)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

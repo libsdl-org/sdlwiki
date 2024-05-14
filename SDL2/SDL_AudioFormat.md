@@ -50,6 +50,5 @@ printf("%d bits per sample\n", (int) SDL_AUDIO_BITSIZE(fmt));
 [SDL_AudioSpec](SDL_AudioSpec)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEnum](CategoryEnum), [CategoryAudio](CategoryAudio)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryAudio](CategoryAudio)
 

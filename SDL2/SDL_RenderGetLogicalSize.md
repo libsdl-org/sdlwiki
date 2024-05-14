@@ -42,5 +42,5 @@ This function is available since SDL 2.0.0.
 - [SDL_RenderSetLogicalSize](SDL_RenderSetLogicalSize)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

@@ -45,5 +45,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetClipboardData](SDL_SetClipboardData)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryClipboard](CategoryClipboard)
 

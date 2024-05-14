@@ -39,9 +39,9 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
-* [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
-* [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
+- [Mix_GetMusicTitleTag](Mix_GetMusicTitleTag)
+- [Mix_GetMusicArtistTag](Mix_GetMusicArtistTag)
+- [Mix_GetMusicAlbumTag](Mix_GetMusicAlbumTag)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

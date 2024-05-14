@@ -22,5 +22,5 @@ Device supports querying effect status.
 - [SDL_HapticGetEffectStatus](SDL_HapticGetEffectStatus)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

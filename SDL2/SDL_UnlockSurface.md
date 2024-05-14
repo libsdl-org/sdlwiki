@@ -29,5 +29,5 @@ This function is available since SDL 2.0.0.
 - [SDL_LockSurface](SDL_LockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

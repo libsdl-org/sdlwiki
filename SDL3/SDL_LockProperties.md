@@ -49,5 +49,5 @@ This function is available since SDL 3.0.0.
 - [SDL_UnlockProperties](SDL_UnlockProperties)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
 

@@ -28,5 +28,5 @@ This variable can be set to the following values:
 - "1": Force the use of Kernel Objects in all cases.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

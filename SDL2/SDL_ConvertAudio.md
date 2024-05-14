@@ -63,5 +63,5 @@ This function is available since SDL 2.0.0.
 - [SDL_BuildAudioCVT](SDL_BuildAudioCVT)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

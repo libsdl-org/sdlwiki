@@ -34,4 +34,4 @@ This enumeration is used in conjunction with [[SDL_GL_SetAttribute]]() and [[SDL
 :[[SDL_GL_SetAttribute]]
 
 ----
-[[CategoryEnum]], [[CategoryVideo]]
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategoryVideo]]

@@ -52,5 +52,5 @@ This function is available since SDL 3.0.0.
 - [SDL_HINT_VIDEO_SYNC_WINDOW_OPERATIONS](SDL_HINT_VIDEO_SYNC_WINDOW_OPERATIONS)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

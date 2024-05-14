@@ -28,5 +28,5 @@ This function is available since SDL 2.28.0.
 - [SDL_GetWindowSurface](SDL_GetWindowSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryVideo](CategoryVideo)
 

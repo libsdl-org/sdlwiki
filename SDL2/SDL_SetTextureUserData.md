@@ -35,5 +35,5 @@ This function is available since SDL 2.0.18.
 - [SDL_GetTextureUserData](SDL_GetTextureUserData)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
 

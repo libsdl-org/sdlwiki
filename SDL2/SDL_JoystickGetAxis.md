@@ -50,5 +50,5 @@ This function is available since SDL 2.0.0.
 - [SDL_JoystickNumAxes](SDL_JoystickNumAxes)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryJoystick](CategoryJoystick)
 

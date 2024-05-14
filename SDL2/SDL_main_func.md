@@ -14,5 +14,5 @@ typedef int (*SDL_main_func)(int argc, char *argv[]);
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryMain](CategoryMain)
 

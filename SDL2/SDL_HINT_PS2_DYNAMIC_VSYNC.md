@@ -24,5 +24,5 @@ This variable can be set to the following values:
 By default SDL does not enable the automatic VSYNC
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

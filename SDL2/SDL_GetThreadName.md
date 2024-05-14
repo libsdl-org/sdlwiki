@@ -40,5 +40,5 @@ This function is available since SDL 2.0.0.
 - [SDL_CreateThread](SDL_CreateThread)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

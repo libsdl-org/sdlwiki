@@ -69,5 +69,5 @@ if (SDL_WasInit(subsystem_mask) == subsystem_mask) {
 - [SDL_InitSubSystem](SDL_InitSubSystem)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryInit](CategoryInit)
 

@@ -18,5 +18,5 @@ typedef void *SDL_GLContext;
 - [SDL_GL_CreateContext](SDL_GL_CreateContext)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

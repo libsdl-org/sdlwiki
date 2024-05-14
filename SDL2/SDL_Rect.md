@@ -47,6 +47,5 @@ SDL_BlitSurface(src, &srcrect, dst, &dstrect);
 - [SDL_EnclosePoints](SDL_EnclosePoints)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)
-
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect), [CategoryAPIStruct](CategoryAPIStruct), 
 

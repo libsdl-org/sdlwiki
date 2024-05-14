@@ -89,7 +89,7 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_Quit](Mix_Quit)
+- [Mix_Quit](Mix_Quit)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

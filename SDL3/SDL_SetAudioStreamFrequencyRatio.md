@@ -51,5 +51,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetAudioStreamFormat](SDL_SetAudioStreamFormat)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

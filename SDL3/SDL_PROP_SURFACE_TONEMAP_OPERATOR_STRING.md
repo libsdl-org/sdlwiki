@@ -3,3 +3,6 @@
 
 Please refer to [SDL_GetSurfaceProperties](SDL_GetSurfaceProperties) for details.
 
+----
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+

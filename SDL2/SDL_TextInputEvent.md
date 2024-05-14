@@ -32,6 +32,6 @@ emoji "thumbs up" followed by a skin color), they may be split between
 events.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), CategoryStruct, CategoryEvents
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), CategoryAPIStruct, CategoryEvents
 
 

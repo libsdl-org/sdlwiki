@@ -53,5 +53,5 @@ typedef struct SDL_hid_device_info
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHIDAPI](CategoryHIDAPI)
 

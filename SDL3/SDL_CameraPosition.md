@@ -27,5 +27,5 @@ This enum is available since SDL 3.0.0.
 - [SDL_GetCameraDevicePosition](SDL_GetCameraDevicePosition)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryCamera](CategoryCamera)
 

@@ -69,5 +69,5 @@ This function is available since SDL 2.0.4.
 - [SDL_GetGlobalMouseState](SDL_GetGlobalMouseState)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMouse](CategoryMouse)
 

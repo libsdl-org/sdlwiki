@@ -74,5 +74,5 @@ http://msdn.microsoft.com/en-us/library/windowsphone/develop/jj247550(v=vs.105).
 This hint is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

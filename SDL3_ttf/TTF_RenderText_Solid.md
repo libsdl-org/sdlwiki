@@ -56,8 +56,8 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid)
-* [TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid)
+- [TTF_RenderUTF8_Solid](TTF_RenderUTF8_Solid)
+- [TTF_RenderUNICODE_Solid](TTF_RenderUNICODE_Solid)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

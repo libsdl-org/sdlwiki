@@ -65,5 +65,5 @@ void modify_surface(SDL_Surface *surface) {
 - [SDL_UnlockSurface](SDL_UnlockSurface)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategorySurface](CategorySurface)
 

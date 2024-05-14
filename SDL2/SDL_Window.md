@@ -46,5 +46,5 @@ typedef struct SDL_Window SDL_Window;
 - [SDL_ShowWindow](SDL_ShowWindow)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 

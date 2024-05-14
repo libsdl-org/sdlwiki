@@ -68,4 +68,3 @@ SDL_AddHintCallback(SDL_HINT_XINPUT_ENABLED, callback, "SDL");
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryHints](CategoryHints)
 
-

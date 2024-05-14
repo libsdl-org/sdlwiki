@@ -59,5 +59,5 @@ This function is available since SDL 3.0.0.
 - [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

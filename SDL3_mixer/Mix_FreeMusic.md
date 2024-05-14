@@ -35,9 +35,9 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_LoadMUS](Mix_LoadMUS)
-* [Mix_LoadMUS_IO](Mix_LoadMUS_IO)
-* [Mix_LoadMUSType_IO](Mix_LoadMUSType_IO)
+- [Mix_LoadMUS](Mix_LoadMUS)
+- [Mix_LoadMUS_IO](Mix_LoadMUS_IO)
+- [Mix_LoadMUSType_IO](Mix_LoadMUSType_IO)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

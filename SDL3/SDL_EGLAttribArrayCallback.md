@@ -18,5 +18,5 @@ typedef SDL_EGLAttrib *(SDLCALL *SDL_EGLAttribArrayCallback)(void);
 This datatype is available since SDL 3.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryVideo](CategoryVideo)
 

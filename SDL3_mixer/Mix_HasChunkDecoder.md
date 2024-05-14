@@ -42,8 +42,8 @@ This function is available since SDL_mixer 3.0.0.
 
 ## See Also
 
-* [Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)
-* [Mix_GetChunkDecoder](Mix_GetChunkDecoder)
+- [Mix_GetNumChunkDecoders](Mix_GetNumChunkDecoders)
+- [Mix_GetChunkDecoder](Mix_GetChunkDecoder)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

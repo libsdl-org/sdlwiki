@@ -26,5 +26,5 @@ This variable can be set to the following values:
 - "1": Proper GameCube controller rumble behavior is used
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

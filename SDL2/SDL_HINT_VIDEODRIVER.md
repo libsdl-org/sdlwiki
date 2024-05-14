@@ -34,5 +34,5 @@ This hint is available since SDL 2.0.22. Before then, you could set the
 environment variable to get the same effect.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

@@ -41,5 +41,5 @@ It is also an error to unlock a mutex that isn't locked at all.
 This function is available since SDL 2.0.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMutex](CategoryMutex)
 

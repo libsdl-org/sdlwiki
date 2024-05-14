@@ -57,6 +57,6 @@ SDL_GL_CreateContext(window);
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEnum](CategoryEnum), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo), [CategoryAPIEnum](CategoryAPIEnum), 
 
 

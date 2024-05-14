@@ -22,5 +22,5 @@ void SDL_GetOriginalMemoryFunctions(SDL_malloc_func *malloc_func,
 This function is available since SDL 2.24.0.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryStdInc](CategoryStdInc)
 

@@ -35,5 +35,5 @@ This function is available since SDL 3.0.0.
 - [SDL_SetTLS](SDL_SetTLS)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryThread](CategoryThread)
 

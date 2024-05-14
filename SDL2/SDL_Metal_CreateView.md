@@ -32,5 +32,5 @@ This function is available since SDL 2.0.12.
 - [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMetal](CategoryMetal)
 

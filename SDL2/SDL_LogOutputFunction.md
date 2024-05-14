@@ -27,5 +27,5 @@ typedef void (SDLCALL *SDL_LogOutputFunction)(void *userdata, int category, SDL_
 This function is called by SDL when there is new text to be logged.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryLog](CategoryLog)
 

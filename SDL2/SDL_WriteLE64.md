@@ -40,5 +40,5 @@ This function is available since SDL 2.0.0.
 - [SDL_WriteBE64](SDL_WriteBE64)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRWOPS](CategoryRWOPS)
 

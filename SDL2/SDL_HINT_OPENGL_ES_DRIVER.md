@@ -41,5 +41,5 @@ This variable can be set to the following values:
 - "1": Load OpenGL ES library using the default library names.
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

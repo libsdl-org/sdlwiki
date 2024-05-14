@@ -47,5 +47,5 @@ This function is available since SDL 2.0.0.
 - [SDL_ResetAssertionReport](SDL_ResetAssertionReport)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAssert](CategoryAssert)
 

@@ -58,7 +58,7 @@ This function is available since SDL_ttf 3.0.0.
 
 ## See Also
 
-* [TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded)
+- [TTF_RenderGlyph32_Shaded](TTF_RenderGlyph32_Shaded)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

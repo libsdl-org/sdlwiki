@@ -223,6 +223,5 @@ printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha
 :[[SDL_Surface]]
 
 ----
-[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryStruct]], [[CategoryPixels]]
-
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryPixels]]
 

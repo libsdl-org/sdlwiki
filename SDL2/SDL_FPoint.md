@@ -23,6 +23,6 @@ typedef struct SDL_FPoint
 - [SDL_PointInFRect](SDL_PointInFRect)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryRect](CategoryRect)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect), [CategoryAPIStruct](CategoryAPIStruct), 
 
 

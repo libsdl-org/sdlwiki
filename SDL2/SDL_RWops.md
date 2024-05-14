@@ -97,6 +97,6 @@ typedef struct SDL_RWops
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryStruct](CategoryStruct), [CategoryIO](CategoryIO)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRWOPS](CategoryRWOPS), [CategoryAPIStruct](CategoryAPIStruct), [CategoryIO](CategoryIO)
 
 

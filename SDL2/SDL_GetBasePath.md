@@ -63,5 +63,5 @@ This function is available since SDL 2.0.1.
 - [SDL_GetPrefPath](SDL_GetPrefPath)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryFilesystem](CategoryFilesystem)
 

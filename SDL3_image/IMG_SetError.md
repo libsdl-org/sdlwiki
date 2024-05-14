@@ -15,7 +15,7 @@ Defined in SDL_image.h
 
 ## See Also
 
-* [IMG_GetError](IMG_GetError)
+- [IMG_GetError](IMG_GetError)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)

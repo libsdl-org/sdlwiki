@@ -22,5 +22,5 @@ Periodic haptic effect that simulates triangular waves.
 - [SDL_HapticPeriodic](SDL_HapticPeriodic)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHaptic](CategoryHaptic)
 

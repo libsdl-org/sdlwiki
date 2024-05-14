@@ -75,5 +75,5 @@ This function is available since SDL 3.0.0.
 - [SDL_AppEvent](SDL_AppEvent)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryMain](CategoryMain)
 

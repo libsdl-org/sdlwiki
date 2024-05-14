@@ -44,5 +44,5 @@ This function is available since SDL 2.0.0.
 - [SDL_GetNumAudioDrivers](SDL_GetNumAudioDrivers)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryAudio](CategoryAudio)
 

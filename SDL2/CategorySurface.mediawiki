@@ -1,8 +1,0 @@
-<!-- BEGIN CATEGORY LIST -->
-* [[SDL_BlitScaled]]
-* [[SDL_BlitSurface]]
-* [[SDL_LoadBMP]]
-* [[SDL_MUSTLOCK]]
-* [[SDL_SaveBMP]]
-* [[SDL_Surface]]
-<!-- END CATEGORY LIST -->

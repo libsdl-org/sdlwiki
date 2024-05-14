@@ -42,5 +42,5 @@ This datatype is available since SDL 3.0.0.
 - [SDL_AddEventWatch](SDL_AddEventWatch)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype)
+[CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryEvents](CategoryEvents)
 

@@ -27,5 +27,5 @@ This struct is available since SDL 3.0.0.
 - [SDL_PointInRect](SDL_PointInRect)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRect](CategoryRect)
 

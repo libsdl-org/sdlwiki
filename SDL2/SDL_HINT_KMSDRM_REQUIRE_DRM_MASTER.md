@@ -36,5 +36,5 @@ This variable can be set to the following values:
 - "1": SDL Will require DRM master to use the KMSDRM backend (default)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 

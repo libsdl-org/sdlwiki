@@ -115,5 +115,5 @@ This function is available since SDL 3.0.0.
 - [SDL_GetTextureBlendMode](SDL_GetTextureBlendMode)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryBlendmode](CategoryBlendmode)
 

@@ -21,4 +21,3 @@ Convenience macro.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategorySurface](CategorySurface)
 
-

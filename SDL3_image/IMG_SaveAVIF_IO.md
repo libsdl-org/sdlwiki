@@ -41,7 +41,7 @@ This function is available since SDL_image 3.0.0.
 
 ## See Also
 
-* [IMG_SaveAVIF](IMG_SaveAVIF)
+- [IMG_SaveAVIF](IMG_SaveAVIF)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)

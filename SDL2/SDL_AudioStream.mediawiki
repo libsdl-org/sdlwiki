@@ -19,4 +19,4 @@ A tutorial on using audio stream is at [[Tutorials-AudioStream]].
 :[[SDL_FreeAudioStream]]
 
 ----
-[[CategoryStruct]], [[CategoryAudio]]
+[[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryAudio]]

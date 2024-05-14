@@ -42,5 +42,5 @@ This function is available since SDL 3.0.0.
 - [SDL_LoadFile_IO](SDL_LoadFile_IO)
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
+[CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryIOStream](CategoryIOStream)
 
