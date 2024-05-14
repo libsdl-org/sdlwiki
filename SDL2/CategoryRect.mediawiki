@@ -22,3 +22,14 @@
 * [[SDL_RectEmpty]]
 * [[SDL_RectEquals]]
 <!-- END CATEGORY LIST -->
+* [[SDL_FPoint]]
+* [[SDL_FRect]]
+* [[SDL_FRectEmpty]]
+* [[SDL_FRectEquals]]
+* [[SDL_Point]]
+* [[SDL_PointInFRect]]
+* [[SDL_PointInRect]]
+* [[SDL_Rect]]
+* [[SDL_RectEmpty]]
+* [[SDL_RectEquals]]
+<!-- END CATEGORY LIST -->

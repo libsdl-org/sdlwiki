@@ -24,3 +24,15 @@
 * [[CategorySystem]]
 * [[CategoryTemplate]]
 <!-- END CATEGORY LIST -->
+* [[CategoryClipboard]]
+* [[CategoryCPU]]
+* [[CategoryFilesystem]]
+* [[CategoryMessageBox]]
+* [[CategoryMetal]]
+* [[CategoryMouse]]
+* [[CategoryMutex]]
+* [[CategoryPlatform]]
+* [[CategorySharedObject]]
+* [[CategorySystem]]
+* [[CategoryTemplate]]
+<!-- END CATEGORY LIST -->

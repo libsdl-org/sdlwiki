@@ -4,3 +4,5 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_ThreadPriority]]
 <!-- END CATEGORY LIST -->
+* [[SDL_ThreadPriority]]
+<!-- END CATEGORY LIST -->
