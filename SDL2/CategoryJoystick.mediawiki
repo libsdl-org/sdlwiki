@@ -6,5 +6,3 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_JoystickPowerLevel]]
 <!-- END CATEGORY LIST -->
-* [[SDL_JoystickPowerLevel]]
-<!-- END CATEGORY LIST -->

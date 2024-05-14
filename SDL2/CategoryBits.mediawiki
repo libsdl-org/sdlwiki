@@ -6,5 +6,3 @@
 <!-- END CATEGORY LIST -->
 * [[SDL_MostSignificantBitIndex32]]
 <!-- END CATEGORY LIST -->
-* [[SDL_MostSignificantBitIndex32]]
-<!-- END CATEGORY LIST -->

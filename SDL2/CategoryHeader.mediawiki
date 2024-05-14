@@ -9,6 +9,3 @@
 * [[SDL_GameControllerBindType]]
 * [[SDL_GameControllerButtonBind]]
 <!-- END CATEGORY LIST -->
-* [[SDL_GameControllerBindType]]
-* [[SDL_GameControllerButtonBind]]
-<!-- END CATEGORY LIST -->

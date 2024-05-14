@@ -12,7 +12,3 @@
 * [[SDL_Keymod]]
 * [[SDL_Keysym]]
 <!-- END CATEGORY LIST -->
-* [[SDL_Keycode]]
-* [[SDL_Keymod]]
-* [[SDL_Keysym]]
-<!-- END CATEGORY LIST -->
