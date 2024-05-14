@@ -4,7 +4,7 @@
 
 | **View information and functions related to...** | **View the header**                                                                           |
 | ------------------------------------------------ | --------------------------------------------------------------------------------------------- |
-| [Application entry point](CategoryMain)          | [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)             |
+| [Application entry points](CategoryMain)         | [SDL_main.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_main.h)             |
 | [Initialization and Shutdown](CategoryInit)      | [SDL_init.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_init.h)             |
 | [Configuration Variables](CategoryHints)         | [SDL_hints.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_hints.h)           |
 | [Object Properties](CategoryProperties)          | [SDL_properties.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_properties.h) |
@@ -56,9 +56,9 @@
 
 ## Audio
 
-| **View information and functions related to...**                | **View the header**                                                                     |
-| --------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Audio Device Management, Playing and Recording](CategoryAudio) | [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)     |
+| **View information and functions related to...**       | **View the header**                                                                     |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| [Audio Playback, Recording, and Mixing](CategoryAudio) | [SDL_audio.h](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_audio.h)     |
 
 
 ## Threads
