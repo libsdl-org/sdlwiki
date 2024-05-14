@@ -16,6 +16,7 @@
 - [SDL_EGLDisplay](SDL_EGLDisplay)
 - [SDL_EventFilter](SDL_EventFilter)
 - [SDL_GLContext](SDL_GLContext)
+- [SDL_GlobFlags](SDL_GlobFlags)
 - [SDL_HapticID](SDL_HapticID)
 - [SDL_HintCallback](SDL_HintCallback)
 - [SDL_HitTest](SDL_HitTest)
