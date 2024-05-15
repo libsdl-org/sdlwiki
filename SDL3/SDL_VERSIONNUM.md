@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 #define SDL_VERSIONNUM(major, minor, patch) \
-    ((major) << 24 | (minor) << 8 | (patch) << 0)
+    ((major) * 1000000 + (minor) * 1000 + (patch))
 ```
 
 ## Macro Parameters
@@ -24,7 +24,7 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ## Remarks
 
-(1,2,3) becomes 0x1000203.
+(1,2,3) becomes 1002003.
 
 ## Version
 

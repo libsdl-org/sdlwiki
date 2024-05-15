@@ -10,27 +10,20 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-int SDL_GetVersion(SDL_Version * ver);
+int SDL_GetVersion(void);
 
 ```
 
-## Function Parameters
-
-|             |                                                                                |
-| ----------- | ------------------------------------------------------------------------------ |
-| **ver**     | the [SDL_Version](SDL_Version) structure that contains the version information |
-
 ## Return Value
 
-Returns 0 on success or a negative error code on failure; call
-[SDL_GetError](SDL_GetError)() for more information.
+Returns the version of the linked library.
 
 ## Remarks
 
 If you are linking to SDL dynamically, then it is possible that the current
 version will be different than the version you compiled against. This
-function returns the current version, while [SDL_VERSION](SDL_VERSION)() is
-a macro that tells you what version you compiled with.
+function returns the current version, while [SDL_VERSION](SDL_VERSION) is
+the version you compiled with.
 
 This function may be called safely at any time, even before
 [SDL_Init](SDL_Init)().

@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_VERSION_ATLEAST
+# SDL_VERSIONNUM_MAJOR
 
-This macro will evaluate to true if compiled with SDL at least X.Y.Z.
+This macro extracts the major version from a version number
 
 ## Header File
 
@@ -10,9 +10,18 @@ Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-#define SDL_VERSION_ATLEAST(X, Y, Z) \
-    (SDL_VERSION >= SDL_VERSIONNUM(X, Y, Z))
+#define SDL_VERSIONNUM_MAJOR(version) ((version) / 1000000)
 ```
+
+## Macro Parameters
+
+|                 |                     |
+| --------------- | ------------------- |
+| **version**     | the version number. |
+
+## Remarks
+
+1002003 becomes 1.
 
 ## Version
 
