@@ -5,7 +5,7 @@ The current version of SDL
 
 ## Header File
 
-Defined in [<SDL3/SDL.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL.h)
+Defined in [<SDL3/SDL_version.h>](https://github.com/libsdl-org/SDL/blob/main/include/SDL3/SDL_version.h)
 
 ## Syntax
 
@@ -14,5 +14,5 @@ Defined in [<SDL3/SDL.h>](https://github.com/libsdl-org/SDL/blob/main/include/SD
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro)
+[CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryVersion](CategoryVersion)
 
