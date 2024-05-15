@@ -12,14 +12,17 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 
+
+#define SDL_RENDERER_VSYNC_DISABLED 0
+#define SDL_RENDERER_VSYNC_ADAPTIVE (-1)
 ```
 
 ## Function Parameters
 
-|                  |                                                                                                                                                                                                                                                                                                                                                    |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **renderer**     | The renderer to toggle                                                                                                                                                                                                                                                                                                                             |
-| **vsync**        | the vertical refresh sync interval, 1 to synchronize present with every vertical refresh, 2 to synchronize present with every second vertical refresh, etc., or -1 for late swap tearing (adaptive vsync). Not every value is supported by every renderer, so you should check the return value to see whether the requested setting is supported. |
+|                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **renderer**     | The renderer to toggle                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| **vsync**        | the vertical refresh sync interval, 1 to synchronize present with every vertical refresh, 2 to synchronize present with every second vertical refresh, etc., [SDL_RENDERER_VSYNC_ADAPTIVE](SDL_RENDERER_VSYNC_ADAPTIVE) for late swap tearing (adaptive vsync), or [SDL_RENDERER_VSYNC_DISABLED](SDL_RENDERER_VSYNC_DISABLED) to disable. Not every value is supported by every renderer, so you should check the return value to see whether the requested setting is supported. |
 
 ## Return Value
 

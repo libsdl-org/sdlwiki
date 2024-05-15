@@ -16,10 +16,10 @@ int SDL_GetRenderVSync(SDL_Renderer *renderer, int *vsync);
 
 ## Function Parameters
 
-|                  |                                                               |
-| ---------------- | ------------------------------------------------------------- |
-| **renderer**     | The renderer to toggle                                        |
-| **vsync**        | an int filled with the current vertical refresh sync interval |
+|                  |                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **renderer**     | The renderer to toggle                                                                                                                    |
+| **vsync**        | an int filled with the current vertical refresh sync interval. See [SDL_SetRenderVSync](SDL_SetRenderVSync) for the meaning of the value. |
 
 ## Return Value
 
