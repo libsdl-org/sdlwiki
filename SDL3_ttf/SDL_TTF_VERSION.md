@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_ttf, a separate library from SDL.)
 # SDL_TTF_VERSION
 
-This macro can be used to fill a version structure with the compile-time version of the SDL_ttf library.
+This is the version number macro for the current SDL_ttf version.
 
 ## Header File
 
@@ -10,12 +10,8 @@ Defined in SDL_ttf.h
 ## Syntax
 
 ```c
-#define SDL_TTF_VERSION(X)                          \
-{                                                   \
-    (X)->major = SDL_TTF_MAJOR_VERSION;             \
-    (X)->minor = SDL_TTF_MINOR_VERSION;             \
-    (X)->patch = SDL_TTF_PATCHLEVEL;                \
-}
+#define SDL_TTF_VERSION \
+    SDL_VERSIONNUM(SDL_TTF_MAJOR_VERSION, SDL_TTF_MINOR_VERSION, SDL_TTF_MICRO_VERSION)
 ```
 
 ----
