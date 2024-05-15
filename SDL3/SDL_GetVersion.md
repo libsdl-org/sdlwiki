@@ -35,15 +35,18 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 ```c
-SDL_Version compiled;
-SDL_Version linked;
+const int compiled = SDL_VERSION;  /* hardcoded number from SDL headers */
+const int linked = SDL_GetVersion();  /* reported by linked SDL library */
 
-SDL_VERSION(&compiled);
-SDL_GetVersion(&linked);
-SDL_Log("We compiled against SDL version %u.%u.%u ...\n",
-       compiled.major, compiled.minor, compiled.patch);
-SDL_Log("But we are linking against SDL version %u.%u.%u.\n",
-       linked.major, linked.minor, linked.patch);
+SDL_Log("We compiled against SDL version %d.%d.%d ...\n",
+        SDL_VERSIONNUM_MAJOR(compiled),
+        SDL_VERSIONNUM_MINOR(compiled),
+        SDL_VERSIONNUM_MICRO(compiled));
+
+SDL_Log("But we are linking against SDL version %d.%d.%d.\n",
+        SDL_VERSIONNUM_MAJOR(linked),
+        SDL_VERSIONNUM_MINOR(linked),
+        SDL_VERSIONNUM_MICRO(linked));
 ```
 
 ## See Also

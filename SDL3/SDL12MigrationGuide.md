@@ -76,7 +76,7 @@ Notice how we didn't specify 640 or 480? Fullscreen desktop gives you the whole 
 Now we need a rendering context.
 
 ```c
-SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, NULL, 0);
+SDL_Renderer *renderer = SDL_CreateRenderer(sdlWindow, NULL);
 ```
 
 A renderer hides the details of how we draw into the window. This might be using Direct3D, OpenGL, Metal, or software surfaces behind the scenes, depending on what the system offers; your code doesn't change, regardless of what SDL chooses (although you _are_ welcome to force one kind of renderer or another). If you want to attempt to force sync-to-vblank to reduce tearing, you can use `SDL_RENDERER_PRESENTVSYNC` instead of zero for the third parameter. You shouldn't create a window with the `SDL_WINDOW_OPENGL` flag here. If [SDL_CreateRenderer](SDL_CreateRenderer)() decides it wants to use OpenGL, it'll update the window appropriately for you.

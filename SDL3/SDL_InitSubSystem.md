@@ -42,7 +42,7 @@ SDL_Init(SDL_INIT_VIDEO);
 SDL_Window* window = SDL_CreateWindow("A Window",
     640, 480,
     SDL_WINDOW_FULLSCREEN);
-SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL, 0);
+SDL_Renderer* renderer = SDL_CreateRenderer(window, NULL);
 
 /* Do Some Video stuff */
 

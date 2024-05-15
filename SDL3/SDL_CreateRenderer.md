@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
     win = SDL_CreateWindow("Hello World", width, height, 0);
 
-    renderer = SDL_CreateRenderer(win, NULL, 0);
+    renderer = SDL_CreateRenderer(win, NULL);
 
     bitmapSurface = SDL_LoadBMP("img/hello.bmp");
     bitmapTex = SDL_CreateTextureFromSurface(renderer, bitmapSurface);

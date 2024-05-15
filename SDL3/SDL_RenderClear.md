@@ -54,7 +54,7 @@ int main(int argc, char* argv[])
                         0);
 
         /* We must call SDL_CreateRenderer in order for draw calls to affect this window. */
-        renderer = SDL_CreateRenderer(window, NULL, 0);
+        renderer = SDL_CreateRenderer(window, NULL);
 
         /* Select the color for drawing. It is set to red here. */
         SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
