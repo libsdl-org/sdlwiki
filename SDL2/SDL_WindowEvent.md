@@ -27,6 +27,3 @@ typedef struct SDL_WindowEvent
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
 
-<!-- #Actually from the SDL_events.h header but listed in both categories for the wiki. -->
-
-

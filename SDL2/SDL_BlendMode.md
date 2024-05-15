@@ -36,6 +36,3 @@ typedef enum SDL_BlendMode
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo)
 
-<!-- #Actually from the SDL_blendmode.h header which does not have it's own category in this wiki. -->
-
-
