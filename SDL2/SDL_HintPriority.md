@@ -19,5 +19,5 @@ typedef enum SDL_HintPriority
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryHints](CategoryHints), [CategoryAPIEnum](CategoryAPIEnum), 
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryHints](CategoryHints)
 

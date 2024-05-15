@@ -77,4 +77,3 @@ struct SDL_SysWMmsg
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategorySYSWM](CategorySYSWM)
 
-

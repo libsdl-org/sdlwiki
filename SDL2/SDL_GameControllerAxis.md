@@ -38,6 +38,5 @@ that this is not the same range that will be reported by the lower-level
 [SDL_GetJoystickAxis](SDL_GetJoystickAxis)().
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGameController](CategoryGameController), [CategoryAPIEnum](CategoryAPIEnum), 
-
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryGameController](CategoryGameController)
 

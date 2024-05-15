@@ -76,5 +76,6 @@ The gyroscope axis data is not changed when the device is rotated.
 :[[SDL_GetDisplayOrientation]]
 
 ----
-[[CategoryAPI]], [[CategoryAPIEnum]], [[CategorySensor]], [[CategoryAPIEnum]], 
+[[CategoryAPI]], [[CategoryAPIEnum]], [[CategorySensor]]
+
 

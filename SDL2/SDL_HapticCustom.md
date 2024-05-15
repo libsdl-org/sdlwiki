@@ -58,4 +58,3 @@ Otherwise it uses the samples in data for the different axes.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 
-

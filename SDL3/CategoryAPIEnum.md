@@ -3,6 +3,7 @@
 These are all the enumeration datatypes in SDL, in alphabetic order. It
 might be easier to look at the Enums section [in a specific category](APIByCategory) instead.
 
+<!-- END CATEGORY DOCUMENTATION -->
 
 ## Enums
 

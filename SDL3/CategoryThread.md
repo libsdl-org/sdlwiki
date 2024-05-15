@@ -1,5 +1,9 @@
 # CategoryThread
 
+SDL thread management routines.
+
+<!-- END CATEGORY DOCUMENTATION -->
+
 This part of the SDL API handles management of threads, but an app also will
 need locks to manage thread safety. Those pieces are in [CategoryMutex](CategoryMutex).
 

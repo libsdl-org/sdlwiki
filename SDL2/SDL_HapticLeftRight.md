@@ -41,4 +41,3 @@ is high frequency, and the large (left) motor is low frequency.
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 
-

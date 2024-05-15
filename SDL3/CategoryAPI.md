@@ -3,6 +3,7 @@
 This is a list of _every_ public symbol in SDL, in alphabetic order. You
 probably want to look at the [API by category](APIByCategory) instead.
 
+<!-- END CATEGORY DOCUMENTATION -->
 
 ## Functions
 

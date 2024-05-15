@@ -22,5 +22,5 @@ typedef struct SDL_RendererInfo
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender), [CategoryAPIStruct](CategoryAPIStruct), 
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryRender](CategoryRender)
 

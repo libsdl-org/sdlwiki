@@ -225,3 +225,4 @@ printf("Pixel Color -> R: %d,  G: %d,  B: %d,  A: %d\n", red, green, blue, alpha
 ----
 [[CategoryAPI]], [[CategoryAPIStruct]], [[CategoryPixels]]
 
+

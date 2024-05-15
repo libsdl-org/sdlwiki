@@ -21,6 +21,6 @@ typedef enum SDL_DisplayEventID
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo), [CategoryAPIEnum](CategoryAPIEnum), [CategoryEvents](CategoryEvents)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryVideo](CategoryVideo), [CategoryEvents](CategoryEvents)
 
 

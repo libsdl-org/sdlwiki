@@ -126,4 +126,3 @@ from the south means the user will have to pull the stick to counteract):
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryHaptic](CategoryHaptic)
 
-

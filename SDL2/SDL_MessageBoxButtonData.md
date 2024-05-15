@@ -19,6 +19,6 @@ typedef struct SDL_MessageBoxButtonData
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryMessagebox](CategoryMessagebox), [CategoryAPIStruct](CategoryAPIStruct), [CategoryVideo](CategoryVideo)
+[CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryMessagebox](CategoryMessagebox), [CategoryVideo](CategoryVideo)
 
 

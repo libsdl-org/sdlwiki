@@ -21,5 +21,6 @@ typedef enum SDL_BlendOperation
 ```
 
 ----
-[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode), [CategoryAPIEnum](CategoryAPIEnum), [CategoryRender](CategoryRender)
+[CategoryAPI](CategoryAPI), [CategoryAPIEnum](CategoryAPIEnum), [CategoryBlendmode](CategoryBlendmode), [CategoryRender](CategoryRender)
+
 

@@ -1,4 +1,12 @@
-# CategoryAssert
+# CategoryCPUInfo
+
+CPU feature detection for SDL.
+
+These functions are largely concerned with reporting if the system has
+access to various SIMD instruction sets, but also has other important info
+to share, such as system RAM size and number of logical CPU cores.
+
+<!-- END CATEGORY DOCUMENTATION -->
 
 ## Functions
 

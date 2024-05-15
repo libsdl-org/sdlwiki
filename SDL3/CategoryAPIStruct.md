@@ -3,6 +3,7 @@
 These are all the structs/unions in SDL, in alphabetic order. It might be
 easier to look at the Structs section [in a specific category](APIByCategory) instead.
 
+<!-- END CATEGORY DOCUMENTATION -->
 
 ## Structs
 
