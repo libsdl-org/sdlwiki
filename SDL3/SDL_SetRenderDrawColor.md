@@ -40,7 +40,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_Renderer *renderer;
 SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 

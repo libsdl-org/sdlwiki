@@ -46,7 +46,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_main.h>
 

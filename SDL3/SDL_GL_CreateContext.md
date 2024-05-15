@@ -42,7 +42,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
 // Window mode MUST include SDL_WINDOW_OPENGL for use with OpenGL.
 SDL_Window *window = SDL_CreateWindow(

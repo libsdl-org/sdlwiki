@@ -28,7 +28,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_assert(1+1 == 3);  // trigger an assertion.
 printf("%p\n", SDL_GetAssertionReport());  // not NULL.
 SDL_ResetAssertionReport();

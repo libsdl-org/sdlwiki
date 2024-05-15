@@ -56,7 +56,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 extern int TestThread(void *ptr);
 SDL_Thread *thread = SDL_CreateThread(TestThread, "TestThread", (void *)NULL);
 SDL_DetachThread(thread);  /* will go away on its own upon completion. */

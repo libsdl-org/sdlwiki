@@ -41,7 +41,7 @@ This function is available since SDL 3.0.0.
 
 Typical use of semaphores:
 
-```c++
+```c
 void add_data_to_queue(void);
 void get_data_to_queue(void);
 void get_data_from_queue(void);

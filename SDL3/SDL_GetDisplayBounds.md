@@ -36,7 +36,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_Rect r;
 if (SDL_GetDisplayBounds(0, &r) != 0) {
     SDL_Log("SDL_GetDisplayBounds failed: %s", SDL_GetError());

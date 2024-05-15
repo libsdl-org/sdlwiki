@@ -48,7 +48,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 int secs, pct;
 if (SDL_GetPowerInfo(&secs, &pct) == SDL_POWERSTATE_ON_BATTERY) {
     printf("Battery is draining: ");

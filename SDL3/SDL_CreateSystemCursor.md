@@ -31,7 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_Cursor* cursor;
 cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
 SDL_SetCursor(cursor);

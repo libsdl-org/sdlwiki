@@ -45,7 +45,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 int i;
 
 for (i = 0; i < SDL_GetNumAudioDrivers(); ++i) {

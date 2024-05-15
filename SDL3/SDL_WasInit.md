@@ -31,7 +31,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 /* Get init data on all the subsystems */
 Uint32 subsystem_init;
 
@@ -43,7 +43,7 @@ if (subsystem_init & SDL_INIT_VIDEO) {
     SDL_Log("Video is not initialized.");
 }
 ```
-```c++
+```c
 /* Just check for one specific subsystem */
 
 if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
@@ -52,7 +52,7 @@ if (SDL_WasInit(SDL_INIT_VIDEO) != 0) {
     SDL_Log("Video is not initialized.");
 }
 ```
-```c++
+```c
 /* Check for two subsystems */
 Uint32 subsystem_mask = SDL_INIT_VIDEO | SDL_INIT_AUDIO;
 

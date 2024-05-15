@@ -39,7 +39,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 float x, y;
 Uint32 buttons;
 

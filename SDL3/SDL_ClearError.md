@@ -24,7 +24,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 const char *error = SDL_GetError();
 if (*error) {
   SDL_Log("SDL error: %s", error);

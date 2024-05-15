@@ -38,7 +38,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 
 // Using SDL2's SDL_GetCurrentDisplayMode()
 

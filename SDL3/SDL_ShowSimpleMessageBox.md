@@ -63,7 +63,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
                          "Missing file",
                          "File is missing. Please reinstall the program.",

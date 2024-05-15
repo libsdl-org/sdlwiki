@@ -45,7 +45,7 @@ This function is available since SDL 3.0.0.
 ## Code Examples
 
 The proper way to examine this data looks something like this:
-```c++
+```c
 const SDL_AssertData *item = SDL_GetAssertionReport();
 while (item) {
      printf("'%s', %s (%s:%d), triggered %u times, always ignore: %s.\n",

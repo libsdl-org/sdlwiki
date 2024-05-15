@@ -54,7 +54,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
     // Default Usage:
     SDL_Event sdlevent;
     sdlevent.type = SDL_EVENT_KEY_DOWN;

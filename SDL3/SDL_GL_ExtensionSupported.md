@@ -44,7 +44,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
     extern void draw_to_the_screen_with_framebuffer_blit(void);
     extern void draw_to_the_screen_with_a_textured_quad(void);
 

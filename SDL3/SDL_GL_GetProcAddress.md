@@ -74,7 +74,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 typedef void (APIENTRY * GL_ActiveTextureARB_Func)(unsigned int);
 GL_ActiveTextureARB_Func glActiveTextureARB_ptr = 0;
 

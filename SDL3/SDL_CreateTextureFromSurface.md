@@ -43,7 +43,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 SDL_Renderer *renderer;
 
 SDL_Surface *surface = SDL_CreateSurface(640, 480, SDL_PIXELFORMAT_RGBA8888);

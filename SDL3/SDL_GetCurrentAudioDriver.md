@@ -37,7 +37,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 const char* driver_name = SDL_GetCurrentAudioDriver();
 
 if (driver_name) {

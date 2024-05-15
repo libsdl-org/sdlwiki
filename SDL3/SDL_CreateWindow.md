@@ -90,7 +90,7 @@ This function is available since SDL 3.0.0.
 
 ## Code Examples
 
-```c++
+```c
 // Example program:
 // Using SDL3 to create an application window
 
