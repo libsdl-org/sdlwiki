@@ -18,6 +18,10 @@ int IMG_Version(void);
 
 Returns SDL_image version
 
+## Version
+
+This function is available since SDL_image 3.0.0.
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction)
 
