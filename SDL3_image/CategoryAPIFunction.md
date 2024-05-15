@@ -63,5 +63,6 @@
 - [IMG_SaveJPG_IO](IMG_SaveJPG_IO)
 - [IMG_SavePNG](IMG_SavePNG)
 - [IMG_SavePNG_IO](IMG_SavePNG_IO)
+- [IMG_Version](IMG_Version)
 <!-- END CATEGORY LIST -->
 

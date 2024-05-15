@@ -30,6 +30,7 @@
 - [SDLNet_SimulateDatagramPacketLoss](SDLNet_SimulateDatagramPacketLoss)
 - [SDLNet_SimulateStreamPacketLoss](SDLNet_SimulateStreamPacketLoss)
 - [SDLNet_UnrefAddress](SDLNet_UnrefAddress)
+- [SDLNet_Version](SDLNet_Version)
 - [SDLNet_WaitUntilConnected](SDLNet_WaitUntilConnected)
 - [SDLNet_WaitUntilInputAvailable](SDLNet_WaitUntilInputAvailable)
 - [SDLNet_WaitUntilResolved](SDLNet_WaitUntilResolved)

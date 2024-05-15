@@ -112,6 +112,7 @@
 - [Mix_StartTrack](Mix_StartTrack)
 - [Mix_UnregisterAllEffects](Mix_UnregisterAllEffects)
 - [Mix_UnregisterEffect](Mix_UnregisterEffect)
+- [Mix_Version](Mix_Version)
 - [Mix_Volume](Mix_Volume)
 - [Mix_VolumeChunk](Mix_VolumeChunk)
 - [Mix_VolumeMusic](Mix_VolumeMusic)
