@@ -29,6 +29,10 @@ This hint should be set before SDL is initialized.
 
 This hint is available since SDL 3.0.0.
 
+## See Also
+
+- [SDL_HINT_ROG_GAMEPAD_MICE_EXCLUDED](SDL_HINT_ROG_GAMEPAD_MICE_EXCLUDED)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIMacro](CategoryAPIMacro), [CategoryHints](CategoryHints)
 
