@@ -1,5 +1,7 @@
 # All READMEs available here
 
+- [CategoryStuff](CategoryStuff)
+- [CategoryWhatever](CategoryWhatever)
 - [android](android)
 - [cmake](cmake)
 - [contributing](contributing)
