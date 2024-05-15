@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_image, a separate library from SDL.)
 # SDL_IMAGE_MAJOR_VERSION
 
-Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL
+Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
 
 ## Header File
 
