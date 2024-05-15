@@ -11,4 +11,8 @@
 * [[RTF_Load_IO]]
 * [[RTF_Load_RW]]
 * [[RTF_Render]]
+* [[RTF_Version]]
+* [[SDL_RTF_MAJOR_VERSION]]
+* [[SDL_RTF_VERSION]]
+* [[SDL_RTF_VERSION_ATLEAST]]
 <!-- END CATEGORY LIST -->

@@ -12,5 +12,6 @@
 - [RTF_Load](RTF_Load)
 - [RTF_Load_IO](RTF_Load_IO)
 - [RTF_Render](RTF_Render)
+- [RTF_Version](RTF_Version)
 <!-- END CATEGORY LIST -->
 
