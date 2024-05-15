@@ -21,6 +21,12 @@ directory. NULL will be returned on error or when the platform doesn't
 implement this functionality, call [SDL_GetError](SDL_GetError)() for more
 information.
 
+The returned path is guaranteed to end with a path separator ('\\' on
+Windows, '/' on most other platforms).
+
+The pointer returned is owned by the caller. Please call
+[SDL_free](SDL_free)() on the pointer when done with it.
+
 ## Remarks
 
 This is not necessarily a fast call, so you should call this once near
@@ -48,11 +54,6 @@ Supported values for the
 directory of the application as it is uncommon to store resources outside
 the executable. As such it is not a writable directory.
 
-The returned path is guaranteed to end with a path separator ('\\' on
-Windows, '/' on most other platforms).
-
-The pointer returned is owned by the caller. Please call
-[SDL_free](SDL_free)() on the pointer when done with it.
 
 ## Version
 
