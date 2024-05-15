@@ -3,6 +3,7 @@
 - [android](android)
 - [cmake](cmake)
 - [contributing](contributing)
+- [documentation-rules](documentation-rules)
 - [dynapi](dynapi)
 - [emscripten](emscripten)
 - [gdk](gdk)
