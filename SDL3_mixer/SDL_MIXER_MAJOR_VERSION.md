@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_mixer, a separate library from SDL.)
 # SDL_MIXER_MAJOR_VERSION
 
-Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL
+Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
 
 ## Header File
 
