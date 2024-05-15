@@ -1,7 +1,7 @@
 ###### (This function is part of SDL_net, a separate library from SDL.)
-# SDL_NET_VERSION
+# SDL_NET_MAJOR_VERSION
 
-This is the version number macro for the current SDL_net version.
+Printable format: "%d.%d.%d", MAJOR, MINOR, MICRO
 
 ## Header File
 
@@ -10,8 +10,7 @@ Defined in SDL_net.h
 ## Syntax
 
 ```c
-#define SDL_NET_VERSION \
-    SDL_VERSIONNUM(SDL_NET_MAJOR_VERSION, SDL_NET_MINOR_VERSION, SDL_NET_MICRO_VERSION)
+#define SDL_NET_MAJOR_VERSION   3
 ```
 
 ----
