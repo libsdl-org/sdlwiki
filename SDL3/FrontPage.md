@@ -1,5 +1,7 @@
 # Simple DirectMedia Layer
 
+This is the SDL3 wiki. SDL2 is [over here](/SDL2)!
+
 ## What is it?
 
 Simple DirectMedia Layer is a cross-platform development library designed to
