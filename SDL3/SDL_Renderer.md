@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-struct SDL_Renderer;
+typedef struct SDL_Renderer SDL_Renderer;
 ```
 
 ## Version

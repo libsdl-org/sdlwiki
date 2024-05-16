@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-struct SDL_Texture;
+typedef struct SDL_Texture SDL_Texture;
 ```
 
 ## Version
