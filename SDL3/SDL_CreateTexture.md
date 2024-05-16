@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
         r.w = 100;
         r.h = 50;
 
-        renderer = SDL_CreateRenderer(window, NULL, 0);
+        renderer = SDL_CreateRenderer(window, NULL);
 
         texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_TARGET, 1024, 768);
 
