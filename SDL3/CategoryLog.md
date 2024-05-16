@@ -4,7 +4,7 @@ Simple log messages with categories and priorities.
 
 By default logs are quiet, but if you're debugging SDL you might want:
 
-[SDL_LogSetAllPriority](SDL_LogSetAllPriority)([SDL_LOG_PRIORITY_WARN](SDL_LOG_PRIORITY_WARN));
+[SDL_SetLogPriorities](SDL_SetLogPriorities)([SDL_LOG_PRIORITY_WARN](SDL_LOG_PRIORITY_WARN));
 
 Here's where the messages go on different platforms:
 

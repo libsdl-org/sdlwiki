@@ -302,7 +302,10 @@ SDL_Has3DNow() has been removed; there is no replacement.
 
 SDL_HasRDTSC() has been removed; there is no replacement. Don't use the RDTSC opcode in modern times, use SDL_GetPerformanceCounter and SDL_GetPerformanceFrequency instead.
 
-SDL_SIMDAlloc(), SDL_SIMDRealloc(), and SDL_SIMDFree() have been removed. You can use SDL_aligned_alloc() and SDL_aligned_free() with SDL_SIMDGetAlignment() to get the same functionality.
+SDL_SIMDAlloc(), SDL_SIMDRealloc(), and SDL_SIMDFree() have been removed. You can use SDL_aligned_alloc() and SDL_aligned_free() with SDL_GetSIMDAlignment() to get the same functionality.
+
+The following functions have been renamed:
+* SDL_SIMDGetAlignment() => SDL_GetSIMDAlignment()
 
 ## SDL_error.h
 
@@ -918,7 +921,11 @@ The following macros have been removed:
 
 The following functions have been renamed:
 * SDL_LogGetOutputFunction() => SDL_GetLogOutputFunction()
+* SDL_LogGetPriority() => SDL_GetLogPriority()
+* SDL_LogResetPriorities() => SDL_ResetLogPriorities()
+* SDL_LogSetAllPriority() => SDL_SetLogPriorities()
 * SDL_LogSetOutputFunction() => SDL_SetLogOutputFunction()
+* SDL_LogSetPriority() => SDL_SetLogPriority()
 
 ## SDL_main.h
 
