@@ -1,11 +1,7 @@
 # CategoryGUID
 
 A GUID is a 128-bit value that represents something that is uniquely
-identifiable by this value: because of the massive numeric space
-this many bits provide, they are intended to be "globally unique."
-
-SDL mostly uses these for identifying input devices reliably, but 
-there's no reason they can't be used for any number of other things.
+identifiable by this value: "globally unique."
 
 <!-- END CATEGORY DOCUMENTATION -->
 
