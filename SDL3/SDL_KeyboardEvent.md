@@ -12,12 +12,12 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef struct SDL_KeyboardEvent
 {
-    SDL_EventType type; /**< ::SDL_EVENT_KEY_DOWN or ::SDL_EVENT_KEY_UP */
+    SDL_EventType type; /**< SDL_EVENT_KEY_DOWN or SDL_EVENT_KEY_UP */
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_WindowID windowID; /**< The window with keyboard focus, if any */
     SDL_KeyboardID which;  /**< The keyboard instance id, or 0 if unknown or virtual */
-    Uint8 state;        /**< ::SDL_PRESSED or ::SDL_RELEASED */
+    Uint8 state;        /**< SDL_PRESSED or SDL_RELEASED */
     Uint8 repeat;       /**< Non-zero if this is a key repeat */
     Uint8 padding2;
     Uint8 padding3;

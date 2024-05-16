@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef struct SDL_MouseMotionEvent
 {
-    SDL_EventType type; /**< ::SDL_EVENT_MOUSE_MOTION */
+    SDL_EventType type; /**< SDL_EVENT_MOUSE_MOTION */
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_WindowID windowID; /**< The window with mouse focus, if any */

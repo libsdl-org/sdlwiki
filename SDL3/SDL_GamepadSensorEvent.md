@@ -12,11 +12,11 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ```c
 typedef struct SDL_GamepadSensorEvent
 {
-    SDL_EventType type; /**< ::SDL_EVENT_GAMEPAD_SENSOR_UPDATE */
+    SDL_EventType type; /**< SDL_EVENT_GAMEPAD_SENSOR_UPDATE */
     Uint32 reserved;
     Uint64 timestamp;   /**< In nanoseconds, populated using SDL_GetTicksNS() */
     SDL_JoystickID which; /**< The joystick instance id */
-    Sint32 sensor;      /**< The type of the sensor, one of the values of ::SDL_SensorType */
+    Sint32 sensor;      /**< The type of the sensor, one of the values of SDL_SensorType */
     float data[3];      /**< Up to 3 values from the sensor, as defined in SDL_sensor.h */
     Uint64 sensor_timestamp; /**< The timestamp of the sensor reading in nanoseconds, not necessarily synchronized with the system clock */
 } SDL_GamepadSensorEvent;

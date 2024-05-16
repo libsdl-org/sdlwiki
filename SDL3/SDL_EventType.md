@@ -180,7 +180,7 @@ typedef enum SDL_EventType
     /* Internal events */
     SDL_EVENT_POLL_SENTINEL = 0x7F00, /**< Signals the end of an event poll cycle */
 
-    /** Events ::SDL_EVENT_USER through ::SDL_EVENT_LAST are for your use,
+    /** Events SDL_EVENT_USER through SDL_EVENT_LAST are for your use,
      *  and should be allocated with SDL_RegisterEvents()
      */
     SDL_EVENT_USER    = 0x8000,

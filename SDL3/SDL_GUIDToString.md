@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_GUIDToString
 
-Get an ASCII string representation for a given ::[SDL_GUID](SDL_GUID).
+Get an ASCII string representation for a given [SDL_GUID](SDL_GUID).
 
 ## Header File
 
@@ -16,11 +16,11 @@ int SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
 
 ## Function Parameters
 
-|                 |                                                          |
-| --------------- | -------------------------------------------------------- |
-| **guid**        | the ::[SDL_GUID](SDL_GUID) you wish to convert to string |
-| **pszGUID**     | buffer in which to write the ASCII string                |
-| **cbGUID**      | the size of pszGUID                                      |
+|                 |                                                        |
+| --------------- | ------------------------------------------------------ |
+| **guid**        | the [SDL_GUID](SDL_GUID) you wish to convert to string |
+| **pszGUID**     | buffer in which to write the ASCII string              |
+| **cbGUID**      | the size of pszGUID                                    |
 
 ## Return Value
 
