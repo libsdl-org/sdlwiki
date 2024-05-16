@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
   SDL_bool quit = SDL_FALSE;
   SDL_Window *window = SDL_CreateWindow("Triangle Example", 800, 600, 0);
 
-  SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL, SDL_RENDERER_PRESENTVSYNC);
+  SDL_Renderer *renderer = SDL_CreateRenderer(window, NULL);
 
   #define vertLen 3
   SDL_Vertex vert[vertLen];
