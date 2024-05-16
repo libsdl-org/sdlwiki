@@ -14,6 +14,7 @@ to share, such as system RAM size and number of logical CPU cores.
 <!-- BEGIN CATEGORY LIST: CategoryCPUInfo, CategoryAPIFunction -->
 - [SDL_GetCPUCacheLineSize](SDL_GetCPUCacheLineSize)
 - [SDL_GetCPUCount](SDL_GetCPUCount)
+- [SDL_GetSIMDAlignment](SDL_GetSIMDAlignment)
 - [SDL_GetSystemRAM](SDL_GetSystemRAM)
 - [SDL_HasAltiVec](SDL_HasAltiVec)
 - [SDL_HasARMSIMD](SDL_HasARMSIMD)
@@ -29,7 +30,6 @@ to share, such as system RAM size and number of logical CPU cores.
 - [SDL_HasSSE3](SDL_HasSSE3)
 - [SDL_HasSSE41](SDL_HasSSE41)
 - [SDL_HasSSE42](SDL_HasSSE42)
-- [SDL_SIMDGetAlignment](SDL_SIMDGetAlignment)
 <!-- END CATEGORY LIST -->
 
 ## Datatypes
