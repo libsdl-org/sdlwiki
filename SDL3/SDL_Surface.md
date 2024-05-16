@@ -12,7 +12,7 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ```c
 typedef struct SDL_Surface
 {
-    Uint32 flags;               /**< Read-only */
+    SDL_SurfaceFlags flags;     /**< Read-only */
     SDL_PixelFormat *format;    /**< Read-only */
     int w, h;                   /**< Read-only */
     int pitch;                  /**< Read-only */
