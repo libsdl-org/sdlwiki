@@ -98,7 +98,6 @@ For multi-channel audio, the default SDL channel mapping is:
 <!-- BEGIN CATEGORY LIST: CategoryAudio, CategoryAPIStruct -->
 - [SDL_AudioSpec](SDL_AudioSpec)
 - [SDL_AudioStream](SDL_AudioStream)
-- [SDL_GUID](SDL_GUID)
 <!-- END CATEGORY LIST -->
 
 ## Enums
