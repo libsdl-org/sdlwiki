@@ -98,6 +98,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_PropertiesID](SDL_PropertiesID)
 - [SDL_SensorID](SDL_SensorID)
 - [SDL_SpinLock](SDL_SpinLock)
+- [SDL_SurfaceFlags](SDL_SurfaceFlags)
 - [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
