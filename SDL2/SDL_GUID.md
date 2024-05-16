@@ -1,7 +1,11 @@
 ###### (This is the legacy documentation for stable SDL2, the current stable version; [SDL3](https://wiki.libsdl.org/SDL3/) is the current development version.)
 # SDL_GUID
 
-An [SDL_GUID](SDL_GUID) is a 128-bit identifier for an input device that identifies that device across runs of SDL programs on the same platform.
+An [SDL_GUID](SDL_GUID) is a 128-bit identifier.
+
+This is an acronym for "Globally Unique ID."
+
+While a GUID can be used to assign a unique value to almost anything, in SDL these are largely used to identify input devices across runs of SDL programs on the same platform.
 
 ## Header File
 
