@@ -32,7 +32,8 @@ features:
 - It allows the default assertion handler to be controlled with environment
   variables, in case an automated script needs to control it.
 
-To use it: do a debug build and just sprinkle around tests to check your code!
+To use it: do a debug build and just sprinkle around tests to check your
+code!
 
 <!-- END CATEGORY DOCUMENTATION -->
 
