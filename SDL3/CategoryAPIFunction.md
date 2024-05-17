@@ -934,6 +934,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_UpdateWindowSurfaceRects](SDL_UpdateWindowSurfaceRects)
 - [SDL_UpdateYUVTexture](SDL_UpdateYUVTexture)
 - [SDL_Vulkan_CreateSurface](SDL_Vulkan_CreateSurface)
+- [SDL_Vulkan_DestroySurface](SDL_Vulkan_DestroySurface)
 - [SDL_Vulkan_GetInstanceExtensions](SDL_Vulkan_GetInstanceExtensions)
 - [SDL_Vulkan_GetVkGetInstanceProcAddr](SDL_Vulkan_GetVkGetInstanceProcAddr)
 - [SDL_Vulkan_LoadLibrary](SDL_Vulkan_LoadLibrary)
