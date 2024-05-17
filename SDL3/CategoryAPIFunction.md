@@ -644,6 +644,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_Metal_DestroyView](SDL_Metal_DestroyView)
 - [SDL_Metal_GetLayer](SDL_Metal_GetLayer)
 - [SDL_MinimizeWindow](SDL_MinimizeWindow)
+- [SDL_MixAudio](SDL_MixAudio)
 - [SDL_MixAudioFormat](SDL_MixAudioFormat)
 - [SDL_modf](SDL_modf)
 - [SDL_modff](SDL_modff)
