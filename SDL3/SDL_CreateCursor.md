@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_Cursor* SDL_CreateCursor(const Uint8 * data,
-                             const Uint8 * mask,
-                             int w, int h, int hot_x,
-                             int hot_y);
+                         const Uint8 * mask,
+                         int w, int h, int hot_x,
+                         int hot_y);
 
 ```
 

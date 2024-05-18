@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_RenderTextureRotated(SDL_Renderer *renderer, SDL_Texture *texture,
-                             const SDL_FRect *srcrect, const SDL_FRect *dstrect,
-                             const double angle, const SDL_FPoint *center,
-                             const SDL_FlipMode flip);
+                         const SDL_FRect *srcrect, const SDL_FRect *dstrect,
+                         const double angle, const SDL_FPoint *center,
+                         const SDL_FlipMode flip);
 
 ```
 

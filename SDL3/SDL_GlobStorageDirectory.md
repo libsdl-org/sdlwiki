@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 ## Syntax
 
 ```c
-extern DECLSPEC char **SDLCALL SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
+extern SDL_DECLSPEC char **SDLCALL SDL_GlobStorageDirectory(SDL_Storage *storage, const char *path, const char *pattern, SDL_GlobFlags flags, int *count);
 
 ```
 

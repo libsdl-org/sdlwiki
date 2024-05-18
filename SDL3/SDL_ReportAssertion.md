@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
-                                    const char *func,
-                                    const char *file, int line)
+                                const char *func,
+                                const char *file, int line)
 #ifdef __clang__
 #if __has_feature(attribute_analyzer_noreturn)
    __attribute__((analyzer_noreturn))

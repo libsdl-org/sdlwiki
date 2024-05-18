@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetPixelFormatPalette(SDL_PixelFormat * format,
-                              SDL_Palette *palette);
+                          SDL_Palette *palette);
 
 ```
 

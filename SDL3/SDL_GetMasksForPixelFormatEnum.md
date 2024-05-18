@@ -11,11 +11,11 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_bool SDL_GetMasksForPixelFormatEnum(SDL_PixelFormatEnum format,
-                                    int *bpp,
-                                    Uint32 * Rmask,
-                                    Uint32 * Gmask,
-                                    Uint32 * Bmask,
-                                    Uint32 * Amask);
+                                int *bpp,
+                                Uint32 * Rmask,
+                                Uint32 * Gmask,
+                                Uint32 * Bmask,
+                                Uint32 * Amask);
 
 ```
 

@@ -11,7 +11,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_LoadWAV(const char *path, SDL_AudioSpec * spec,
-                Uint8 ** audio_buf, Uint32 * audio_len);
+            Uint8 ** audio_buf, Uint32 * audio_len);
 
 ```
 

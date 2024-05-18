@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_GetRGBA(Uint32 pixel,
-                 const SDL_PixelFormat * format,
-                 Uint8 * r, Uint8 * g, Uint8 * b,
-                 Uint8 * a);
+             const SDL_PixelFormat * format,
+             Uint8 * r, Uint8 * g, Uint8 * b,
+             Uint8 * a);
 
 ```
 

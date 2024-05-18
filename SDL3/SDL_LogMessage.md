@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_LogMessage(int category,
-                    SDL_LogPriority priority,
-                    SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(3);
+                SDL_LogPriority priority,
+                SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(3);
 
 ```
 

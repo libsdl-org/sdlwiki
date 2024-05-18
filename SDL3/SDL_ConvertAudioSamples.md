@@ -11,11 +11,11 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_ConvertAudioSamples(const SDL_AudioSpec *src_spec,
-                            const Uint8 *src_data,
-                            int src_len,
-                            const SDL_AudioSpec *dst_spec,
-                            Uint8 **dst_data,
-                            int *dst_len);
+                        const Uint8 *src_data,
+                        int src_len,
+                        const SDL_AudioSpec *dst_spec,
+                        Uint8 **dst_data,
+                        int *dst_len);
 
 ```
 

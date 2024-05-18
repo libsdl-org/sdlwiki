@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_SetAudioStreamFormat(SDL_AudioStream *stream,
-                             const SDL_AudioSpec *src_spec,
-                             const SDL_AudioSpec *dst_spec);
+                         const SDL_AudioSpec *src_spec,
+                         const SDL_AudioSpec *dst_spec);
 
 ```
 

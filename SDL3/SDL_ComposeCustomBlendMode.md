@@ -11,11 +11,11 @@ Defined in [<SDL3/SDL_blendmode.h>](https://github.com/libsdl-org/SDL/blob/main/
 
 ```c
 SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
-                                         SDL_BlendFactor dstColorFactor,
-                                         SDL_BlendOperation colorOperation,
-                                         SDL_BlendFactor srcAlphaFactor,
-                                         SDL_BlendFactor dstAlphaFactor,
-                                         SDL_BlendOperation alphaOperation);
+                                     SDL_BlendFactor dstColorFactor,
+                                     SDL_BlendOperation colorOperation,
+                                     SDL_BlendFactor srcAlphaFactor,
+                                     SDL_BlendFactor dstAlphaFactor,
+                                     SDL_BlendOperation alphaOperation);
 
 ```
 

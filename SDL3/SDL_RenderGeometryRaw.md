@@ -11,12 +11,12 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
-                       SDL_Texture *texture,
-                       const float *xy, int xy_stride,
-                       const SDL_Color *color, int color_stride,
-                       const float *uv, int uv_stride,
-                       int num_vertices,
-                       const void *indices, int num_indices, int size_indices);
+                   SDL_Texture *texture,
+                   const float *xy, int xy_stride,
+                   const SDL_Color *color, int color_stride,
+                   const float *uv, int uv_stride,
+                   int num_vertices,
+                   const void *indices, int num_indices, int size_indices);
 
 ```
 

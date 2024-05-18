@@ -11,10 +11,10 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_UpdateYUVTexture(SDL_Texture *texture,
-                         const SDL_Rect *rect,
-                         const Uint8 *Yplane, int Ypitch,
-                         const Uint8 *Uplane, int Upitch,
-                         const Uint8 *Vplane, int Vpitch);
+                     const SDL_Rect *rect,
+                     const Uint8 *Yplane, int Ypitch,
+                     const Uint8 *Uplane, int Upitch,
+                     const Uint8 *Vplane, int Vpitch);
 
 ```
 

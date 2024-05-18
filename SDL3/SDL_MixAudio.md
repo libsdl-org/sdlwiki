@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_MixAudio(Uint8 * dst,
-                 const Uint8 * src,
-                 SDL_AudioFormat format,
-                 Uint32 len, float volume);
+             const Uint8 * src,
+             SDL_AudioFormat format,
+             Uint32 len, float volume);
 
 ```
 

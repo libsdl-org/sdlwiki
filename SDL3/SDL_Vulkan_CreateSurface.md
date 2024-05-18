@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
-                                  VkInstance instance,
-                                  const struct VkAllocationCallbacks *allocator,
-                                  VkSurfaceKHR* surface);
+                              VkInstance instance,
+                              const struct VkAllocationCallbacks *allocator,
+                              VkSurfaceKHR* surface);
 
 ```
 

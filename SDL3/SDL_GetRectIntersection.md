@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 SDL_bool SDL_GetRectIntersection(const SDL_Rect * A,
-                           const SDL_Rect * B,
-                           SDL_Rect * result);
+                       const SDL_Rect * B,
+                       SDL_Rect * result);
 
 ```
 

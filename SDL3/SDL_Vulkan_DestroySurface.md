@@ -11,8 +11,8 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_Vulkan_DestroySurface(VkInstance instance,
-                               VkSurfaceKHR surface,
-                               const struct VkAllocationCallbacks *allocator);
+                           VkSurfaceKHR surface,
+                           const struct VkAllocationCallbacks *allocator);
 
 ```
 

@@ -11,9 +11,9 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 SDL_bool SDL_GetRectEnclosingPoints(const SDL_Point * points,
-                           int count,
-                           const SDL_Rect * clip,
-                           SDL_Rect * result);
+                       int count,
+                       const SDL_Rect * clip,
+                       SDL_Rect * result);
 
 ```
 
