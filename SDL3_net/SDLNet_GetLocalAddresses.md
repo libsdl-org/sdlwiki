@@ -10,7 +10,7 @@ Defined in SDL_net.h
 ## Syntax
 
 ```c
-extern DECLSPEC SDLNet_Address **SDLCALL SDLNet_GetLocalAddresses(int *num_addresses);
+extern SDL_DECLSPEC SDLNet_Address **SDLCALL SDLNet_GetLocalAddresses(int *num_addresses);
 
 ```
 
