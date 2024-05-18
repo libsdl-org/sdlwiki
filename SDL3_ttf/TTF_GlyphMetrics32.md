@@ -11,8 +11,8 @@ Defined in SDL_ttf.h
 
 ```c
 int TTF_GlyphMetrics32(TTF_Font *font, Uint32 ch,
-int *minx, int *maxx,
-int *miny, int *maxy, int *advance);
+                        int *minx, int *maxx,
+                        int *miny, int *maxy, int *advance);
 
 ```
 
