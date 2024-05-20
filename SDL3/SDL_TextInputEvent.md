@@ -25,7 +25,9 @@ typedef struct SDL_TextInputEvent
 The `text` is owned by SDL and should be copied if the application wants to
 hold onto it beyond the scope of handling this event.
 
-This event will never be delivered unless text input is enabled by calling SDL_StartTextInput(). Text input is disabled by default!
+This event will never be delivered unless text input is enabled by calling
+[SDL_StartTextInput](SDL_StartTextInput)(). Text input is disabled by
+default!
 
 ## Version
 
@@ -33,8 +35,8 @@ This struct is available since SDL 3.0.0.
 
 ## See Also
 
-- SDL_StartTextInput
-- SDL_StopTextInput
+- [SDL_StartTextInput](SDL_StartTextInput)
+- [SDL_StopTextInput](SDL_StopTextInput)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents)
