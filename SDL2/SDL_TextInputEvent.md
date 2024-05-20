@@ -31,6 +31,15 @@ there are several codepoints that go together into a single glyph (like an
 emoji "thumbs up" followed by a skin color), they may be split between
 events.
 
+This event will never be delivered unless text input is enabled by calling
+[SDL_StartTextInput](SDL_StartTextInput)(). Text input is enabled by
+default on desktop platforms, and disabled by default on mobile platforms!
+
+## See Also
+
+- [SDL_StartTextInput](SDL_StartTextInput)
+- [SDL_StopTextInput](SDL_StopTextInput)
+
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIStruct](CategoryAPIStruct), [CategoryEvents](CategoryEvents), CategoryAPIStruct, CategoryEvents
 
