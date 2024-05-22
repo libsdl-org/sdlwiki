@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
 # SDL_ThreadFunction
 
-The function passed to [SDL_CreateThread](SDL_CreateThread)().
+The function passed to [SDL_CreateThread](SDL_CreateThread)() as the new thread's entry point.
 
 ## Header File
 

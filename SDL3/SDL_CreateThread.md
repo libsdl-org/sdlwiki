@@ -30,11 +30,24 @@ more information.
 
 ## Remarks
 
-This is equivalent to calling:
+This is a convenience function, equivalent to calling
+[SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties) with the
+following properties set:
 
-```c
-SDL_CreateThreadWithStackSize(fn, name, 0, data);
-```
+- [`SDL_PROP_THREAD_CREATE_ENTRY_FUNCTION_POINTER`](SDL_PROP_THREAD_CREATE_ENTRY_FUNCTION_POINTER):
+  `fn`
+- [`SDL_PROP_THREAD_CREATE_NAME_STRING`](SDL_PROP_THREAD_CREATE_NAME_STRING):
+  `name`
+- `SDL_PROP_THREAD_CREATE_USERDATA_POINTER: `data`
+
+Note that this "function" is actually a macro that calls an internal
+function with two extra parameters not listed here; they are hidden through
+preprocessor macros and are needed to support various C runtimes at the
+point of the function call. Language bindings that aren't using the C
+headers will need to deal with this.
+
+Usually, apps should just call this function the same way on every platform
+and let the macros hide the details.
 
 ## Version
 
@@ -97,7 +110,7 @@ int main(int argc, char *argv[])
 
 ## See Also
 
-- [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
+- [SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties)
 - [SDL_WaitThread](SDL_WaitThread)
 
 ----

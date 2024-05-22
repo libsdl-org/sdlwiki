@@ -2,6 +2,8 @@
 
 ## Functions defined in the headers, but not in the wiki
 
+- [SDL_CreateThreadRuntime](SDL_CreateThreadRuntime)
+- [SDL_CreateThreadWithPropertiesRuntime](SDL_CreateThreadWithPropertiesRuntime)
 - [SDL_abs](SDL_abs)
 - [SDL_asprintf](SDL_asprintf)
 - [SDL_atof](SDL_atof)
