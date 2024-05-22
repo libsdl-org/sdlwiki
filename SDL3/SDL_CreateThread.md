@@ -38,7 +38,7 @@ following properties set:
   `fn`
 - [`SDL_PROP_THREAD_CREATE_NAME_STRING`](SDL_PROP_THREAD_CREATE_NAME_STRING):
   `name`
-- `SDL_PROP_THREAD_CREATE_USERDATA_POINTER: `data`
+- [`SDL_PROP_THREAD_CREATE_USERDATA_POINTER`](SDL_PROP_THREAD_CREATE_USERDATA_POINTER): `data`
 
 Note that this "function" is actually a macro that calls an internal
 function with two extra parameters not listed here; they are hidden through
