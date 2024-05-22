@@ -41,7 +41,7 @@ the function was invoked on.
 The chosen file may or may not already exist.
 
 On Linux, dialogs may require XDG Portals, which requires DBus, which
-requires and event-handling loop. Apps that do not use SDL to handle events
+requires an event-handling loop. Apps that do not use SDL to handle events
 should add a call to [SDL_PumpEvents](SDL_PumpEvents) in their main loop.
 
 ## Version
