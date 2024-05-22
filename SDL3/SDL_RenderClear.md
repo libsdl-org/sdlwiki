@@ -28,7 +28,7 @@ Returns 0 on success or a negative error code on failure; call
 ## Remarks
 
 This function clears the entire rendering target, ignoring the viewport and
-the clip rectangle.
+the clip rectangle. Note, that clearing will also set/fill all pixels of the rendering target to current renderer draw color, so make sure to invoke [SDL_SetRenderDrawColor](SDL_SetRenderDrawColor)() when needed.
 
 ## Version
 
