@@ -40,6 +40,10 @@ should have multiple semaphores that are used for synchronization. Querying
 [SDL_PROP_RENDERER_VULKAN_SWAPCHAIN_IMAGE_COUNT_NUMBER](SDL_PROP_RENDERER_VULKAN_SWAPCHAIN_IMAGE_COUNT_NUMBER)
 will give you the maximum number of semaphores you'll need.
 
+## Thread Safety
+
+It is **NOT** safe to call this function from two threads at once.
+
 ## Version
 
 This function is available since SDL 3.0.0.

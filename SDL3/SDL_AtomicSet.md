@@ -32,6 +32,10 @@ This function also acts as a full memory barrier.
 ***Note: If you don't know what this function is for, you shouldn't use
 it!***
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

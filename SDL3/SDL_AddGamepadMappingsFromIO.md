@@ -42,6 +42,10 @@ This function will load the text database entirely in memory before
 processing it, so take this into consideration if you are in a memory
 constrained environment.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

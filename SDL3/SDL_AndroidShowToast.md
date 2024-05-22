@@ -42,6 +42,10 @@ have a preference:
 
 https://developer.android.com/reference/android/view/Gravity
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

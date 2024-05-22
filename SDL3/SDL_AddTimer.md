@@ -51,6 +51,10 @@ time with [SDL_GetTicksNS](SDL_GetTicksNS)() or
 [SDL_GetPerformanceCounter](SDL_GetPerformanceCounter)() in case your
 callback needs to adjust for variances.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

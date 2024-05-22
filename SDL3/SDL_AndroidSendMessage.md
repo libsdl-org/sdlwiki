@@ -30,6 +30,10 @@ Returns 0 on success or a negative error code on failure; call
 
 Override "boolean onUnhandledMessage(Message msg)" to handle the message.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -37,6 +37,10 @@ Mappings not belonging to the current platform or with no platform field
 specified will be ignored (i.e. mappings for Linux will be ignored in
 Windows, etc).
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

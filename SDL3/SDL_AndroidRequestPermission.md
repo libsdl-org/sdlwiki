@@ -46,6 +46,10 @@ will NOT be called, but this should only happen in catastrophic conditions,
 like memory running out. Normally there will be a yes or no to the request
 through the callback.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

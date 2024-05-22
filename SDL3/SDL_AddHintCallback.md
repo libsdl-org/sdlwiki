@@ -29,6 +29,10 @@ int SDL_AddHintCallback(const char *name,
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+It is **NOT** safe to call this function from two threads at once.
+
 ## Version
 
 This function is available since SDL 3.0.0.

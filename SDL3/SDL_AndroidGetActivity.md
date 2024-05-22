@@ -31,6 +31,10 @@ DeleteLocalRef() functions of the Java native interface:
 
 https://docs.oracle.com/javase/1.5.0/docs/guide/jni/spec/functions.html
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -28,6 +28,10 @@ The prototype of the function in SDL's code actually declare a void* return
 type, even if the implementation returns a pointer to a JNIEnv. The
 rationale being that the SDL headers can avoid including jni.h.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

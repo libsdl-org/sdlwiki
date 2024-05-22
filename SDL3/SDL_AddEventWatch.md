@@ -44,6 +44,10 @@ events by a filter callback set with
 [SDL_SetEventFilter](SDL_SetEventFilter)(), nor for events posted by the
 user through [SDL_PeepEvents](SDL_PeepEvents)().
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

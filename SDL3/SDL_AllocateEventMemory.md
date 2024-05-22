@@ -30,6 +30,10 @@ Returns a pointer to the memory allocated or NULL on failure; call
 You can use this to allocate memory for user events that will be
 automatically freed after the event is processed.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.
