@@ -111,6 +111,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_CreateTextureFromSurface](SDL_CreateTextureFromSurface)
 - [SDL_CreateTextureWithProperties](SDL_CreateTextureWithProperties)
 - [SDL_CreateThread](SDL_CreateThread)
+- [SDL_CreateThreadWithProperties](SDL_CreateThreadWithProperties)
 - [SDL_CreateThreadWithStackSize](SDL_CreateThreadWithStackSize)
 - [SDL_CreateTLS](SDL_CreateTLS)
 - [SDL_CreateWindow](SDL_CreateWindow)

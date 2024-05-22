@@ -92,6 +92,7 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_TextEditingEvent](SDL_TextEditingEvent)
 - [SDL_TextInputEvent](SDL_TextInputEvent)
 - [SDL_Texture](SDL_Texture)
+- [SDL_Thread](SDL_Thread)
 - [SDL_TouchFingerEvent](SDL_TouchFingerEvent)
 - [SDL_UserEvent](SDL_UserEvent)
 - [SDL_Version](SDL_Version)
