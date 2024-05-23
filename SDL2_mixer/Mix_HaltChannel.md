@@ -22,7 +22,7 @@ int Mix_HaltChannel(int channel);
 
 ## Return Value
 
-Returns 0 on success, or -1 on error.
+Returns zero, regardless of whether on success or not.
 
 ## Remarks
 
