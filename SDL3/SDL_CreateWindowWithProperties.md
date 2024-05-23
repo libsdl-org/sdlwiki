@@ -135,13 +135,17 @@ Windows with the "tooltip" and "menu" properties are popup windows and have
 the behaviors and guidelines outlined in
 [SDL_CreatePopupWindow](SDL_CreatePopupWindow)().
 
-If this window is being created to be used with an SDL_Renderer, you should
-not add a graphics API specific property (`SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN`, 
-etc), as SDL will handle that internally when it chooses a renderer. However, SDL might
-need to recreate your window at that point, which may cause the window to
-appear briefly, and then flicker as it is recreated. The correct approach to
-this is to create the window with the `SDL_PROP_WINDOW_CREATE_HIDDEN_BOOLEAN` property
-set to true, then create the renderer, then show the window with SDL_ShowWindow().
+If this window is being created to be used with an
+[SDL_Renderer](SDL_Renderer), you should not add a graphics API specific
+property
+([`SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN`](SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN),
+etc), as SDL will handle that internally when it chooses a renderer.
+However, SDL might need to recreate your window at that point, which may
+cause the window to appear briefly, and then flicker as it is recreated.
+The correct approach to this is to create the window with the
+[`SDL_PROP_WINDOW_CREATE_HIDDEN_BOOLEAN`](SDL_PROP_WINDOW_CREATE_HIDDEN_BOOLEAN)
+property set to true, then create the renderer, then show the window with
+[SDL_ShowWindow](SDL_ShowWindow)().
 
 ## Version
 
