@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 ## Syntax
 
 ```c
-int SDL_SetPropertyWithCleanup(SDL_PropertiesID props, const char *name, void *value, void (SDLCALL *cleanup)(void *userdata, void *value), void *userdata);
+int SDL_SetPropertyWithCleanup(SDL_PropertiesID props, const char *name, void *value, SDL_CleanupPropertyCallback cleanup, void *userdata);
 
 ```
 
@@ -34,6 +34,13 @@ Returns 0 on success or a negative error code on failure; call
 The cleanup function is also called if setting the property fails for any
 reason.
 
+For simply setting basic data types, like numbers, bools, or strings, use
+[SDL_SetNumberProperty](SDL_SetNumberProperty),
+[SDL_SetBooleanProperty](SDL_SetBooleanProperty), or
+[SDL_SetStringProperty](SDL_SetStringProperty) instead, as those functions
+will handle cleanup on your behalf. This function is only for more complex,
+custom data.
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
@@ -46,6 +53,7 @@ This function is available since SDL 3.0.0.
 
 - [SDL_GetProperty](SDL_GetProperty)
 - [SDL_SetProperty](SDL_SetProperty)
+- [SDL_CleanupPropertyCallback](SDL_CleanupPropertyCallback)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryProperties](CategoryProperties)
