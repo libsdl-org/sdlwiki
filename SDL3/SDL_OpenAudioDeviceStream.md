@@ -19,7 +19,7 @@ SDL_AudioStream* SDL_OpenAudioDeviceStream(SDL_AudioDeviceID devid, const SDL_Au
 |                  |                                                                                                                                                                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **devid**        | an audio device to open, or [SDL_AUDIO_DEVICE_DEFAULT_OUTPUT](SDL_AUDIO_DEVICE_DEFAULT_OUTPUT) or [SDL_AUDIO_DEVICE_DEFAULT_CAPTURE](SDL_AUDIO_DEVICE_DEFAULT_CAPTURE).                                                                                               |
-| **spec**         | the audio stream's data format. Required.                                                                                                                                                                                                                             |
+| **spec**         | the audio stream's data format. Can be NULL.                                                                                                                                                                                                                          |
 | **callback**     | A callback where the app will provide new data for playback, or receive new data for capture. Can be NULL, in which case the app will need to call [SDL_PutAudioStreamData](SDL_PutAudioStreamData) or [SDL_GetAudioStreamData](SDL_GetAudioStreamData) as necessary. |
 | **userdata**     | App-controlled pointer passed to callback. Can be NULL. Ignored if callback is NULL.                                                                                                                                                                                  |
 
@@ -52,7 +52,10 @@ This function works with both playback and capture devices.
 
 The `spec` parameter represents the app's side of the audio stream. That
 is, for recording audio, this will be the output format, and for playing
-audio, this will be the input format.
+audio, this will be the input format. If spec is NULL, the system will
+choose the format, and the app can use
+[SDL_GetAudioStreamFormat](SDL_GetAudioStreamFormat)() to obtain this
+information later.
 
 If you don't care about opening a specific audio device, you can (and
 probably _should_), use
@@ -65,6 +68,10 @@ One can optionally provide a callback function; if NULL, the app is
 expected to queue audio data for playback (or unqueue audio data if
 capturing). Otherwise, the callback will begin to fire once the device is
 unpaused.
+
+Destroying the returned stream with
+[SDL_DestroyAudioStream](SDL_DestroyAudioStream) will also close the audio
+device associated with this stream.
 
 ## Thread Safety
 

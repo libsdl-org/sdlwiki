@@ -16,9 +16,9 @@ SDL_AudioDeviceID* SDL_GetAudioOutputDevices(int *count);
 
 ## Function Parameters
 
-|               |                                                         |
-| ------------- | ------------------------------------------------------- |
-| **count**     | a pointer filled in with the number of devices returned |
+|               |                                                                           |
+| ------------- | ------------------------------------------------------------------------- |
+| **count**     | a pointer filled in with the number of devices returned. NULL is allowed. |
 
 ## Return Value
 
@@ -35,6 +35,9 @@ audio, like a microphone ("capture" devices), use
 
 This only returns a list of physical devices; it will not have any device
 IDs returned by [SDL_OpenAudioDevice](SDL_OpenAudioDevice)().
+
+If this function returns NULL, to signify an error, `*count` will be set to
+zero.
 
 ## Thread Safety
 
