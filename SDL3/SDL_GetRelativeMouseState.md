@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-Uint32 SDL_GetRelativeMouseState(float *x, float *y);
+SDL_MouseButtonFlags SDL_GetRelativeMouseState(float *x, float *y);
 
 ```
 

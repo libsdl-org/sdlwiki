@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-Uint32 SDL_GetPenCapabilities(SDL_PenID instance_id, SDL_PenCapabilityInfo *capabilities);
+SDL_PenCapabilityFlags SDL_GetPenCapabilities(SDL_PenID instance_id, SDL_PenCapabilityInfo *capabilities);
 
 ```
 
