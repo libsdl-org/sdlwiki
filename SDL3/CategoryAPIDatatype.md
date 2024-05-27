@@ -98,6 +98,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_MessageBoxFlags](SDL_MessageBoxFlags)
 - [SDL_MetalView](SDL_MetalView)
 - [SDL_MouseButtonFlags](SDL_MouseButtonFlags)
+- [SDL_NSTimerCallback](SDL_NSTimerCallback)
 - [SDL_PenCapabilityFlags](SDL_PenCapabilityFlags)
 - [SDL_PropertiesID](SDL_PropertiesID)
 - [SDL_SensorID](SDL_SensorID)
