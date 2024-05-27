@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_bool SDL_RemoveTimer(SDL_TimerID id);
+int SDL_RemoveTimer(SDL_TimerID id);
 
 ```
 
@@ -22,8 +22,8 @@ SDL_bool SDL_RemoveTimer(SDL_TimerID id);
 
 ## Return Value
 
-Returns [SDL_TRUE](SDL_TRUE) if the timer is removed or
-[SDL_FALSE](SDL_FALSE) if the timer wasn't found.
+Returns 0 on success or a negative error code on failure; call
+[SDL_GetError](SDL_GetError)() for more information.
 
 ## Version
 

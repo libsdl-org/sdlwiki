@@ -10,9 +10,7 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-SDL_TimerID SDL_AddTimer(Uint32 interval,
-                     SDL_TimerCallback callback,
-                     void *param);
+SDL_TimerID SDL_AddTimer(Uint32 interval, SDL_TimerCallback callback, void *userdata);
 
 ```
 
@@ -22,7 +20,7 @@ SDL_TimerID SDL_AddTimer(Uint32 interval,
 | ---------------- | ------------------------------------------------------------------------------------------------- |
 | **interval**     | the timer delay, in milliseconds, passed to `callback`                                            |
 | **callback**     | the [SDL_TimerCallback](SDL_TimerCallback) function to call when the specified `interval` elapses |
-| **param**        | a pointer that is passed to `callback`                                                            |
+| **userdata**     | a pointer that is passed to `callback`                                                            |
 
 ## Return Value
 
@@ -39,7 +37,8 @@ supplied parameter from the [SDL_AddTimer](SDL_AddTimer)() call and should
 return the next timer interval. If the value returned from the callback is
 0, the timer is canceled.
 
-The callback is run on a separate thread.
+The callback is run on a separate thread, and for short timeouts can
+potentially be called before this function returns.
 
 Timers take into account the amount of time it took to execute the
 callback. For example, if the callback took 250 ms to execute and returned
@@ -134,6 +133,7 @@ while (SDL_PollEvent (&event))
 
 ## See Also
 
+- [SDL_AddTimerNS](SDL_AddTimerNS)
 - [SDL_RemoveTimer](SDL_RemoveTimer)
 
 ----

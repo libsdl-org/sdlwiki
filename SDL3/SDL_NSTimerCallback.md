@@ -1,7 +1,7 @@
 ###### (This is the documentation for SDL3, which is under heavy development and the API is changing! [SDL2](https://wiki.libsdl.org/SDL2/) is the current stable version!)
-# SDL_TimerCallback
+# SDL_NSTimerCallback
 
-Function prototype for the millisecond timer callback function.
+Function prototype for the nanosecond timer callback function.
 
 ## Header File
 
@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-typedef Uint32 (SDLCALL *SDL_TimerCallback)(void *userdata, SDL_TimerID timerID, Uint32 interval);
+typedef Uint64 (SDLCALL *SDL_NSTimerCallback)(void *userdata, SDL_TimerID timerID, Uint64 interval);
 ```
 
 ## Function Parameters
@@ -29,7 +29,7 @@ callback.
 ## Remarks
 
 The callback function is passed the current timer interval and returns the
-next timer interval, in milliseconds. If the returned value is the same as
+next timer interval, in nanoseconds. If the returned value is the same as
 the one passed in, the periodic alarm continues, otherwise a new alarm is
 scheduled. If the callback returns 0, the periodic alarm is cancelled.
 
@@ -45,7 +45,7 @@ This datatype is available since SDL 3.0.0.
 
 ## See Also
 
-- [SDL_AddTimer](SDL_AddTimer)
+- [SDL_AddTimerNS](SDL_AddTimerNS)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIDatatype](CategoryAPIDatatype), [CategoryTimer](CategoryTimer)
