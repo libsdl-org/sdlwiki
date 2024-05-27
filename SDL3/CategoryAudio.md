@@ -67,7 +67,6 @@ For multi-channel audio, the default SDL channel mapping is:
 - [SDL_LoadWAV_IO](SDL_LoadWAV_IO)
 - [SDL_LockAudioStream](SDL_LockAudioStream)
 - [SDL_MixAudio](SDL_MixAudio)
-- [SDL_MixAudioFormat](SDL_MixAudioFormat)
 - [SDL_OpenAudioDevice](SDL_OpenAudioDevice)
 - [SDL_OpenAudioDeviceStream](SDL_OpenAudioDeviceStream)
 - [SDL_PauseAudioDevice](SDL_PauseAudioDevice)
