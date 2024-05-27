@@ -19,10 +19,10 @@ int SDL_SetWindowSurfaceVSync(SDL_Window *window, int vsync);
 
 ## Function Parameters
 
-|                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **window**     | the window                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **vsync**      | the vertical refresh sync interval, 1 to synchronize present with every vertical refresh, 2 to synchronize present with every second vertical refresh, etc., [SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE](SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE) for late swap tearing (adaptive vsync), or [SDL_WINDOW_SURFACE_VSYNC_DISABLED](SDL_WINDOW_SURFACE_VSYNC_DISABLED) to disable. Not every value is supported by every driver, so you should check the return value to see whether the requested setting is supported. |
+|                |                                     |
+| -------------- | ----------------------------------- |
+| **window**     | the window.                         |
+| **vsync**      | the vertical refresh sync interval. |
 
 ## Return Value
 
@@ -33,6 +33,14 @@ Returns 0 on success or a negative error code on failure; call
 
 When a window surface is created, vsync defaults to
 [SDL_WINDOW_SURFACE_VSYNC_DISABLED](SDL_WINDOW_SURFACE_VSYNC_DISABLED).
+
+The `vsync` parameter can be 1 to synchronize present with every vertical
+refresh, 2 to synchronize present with every second vertical refresh, etc.,
+[SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE](SDL_WINDOW_SURFACE_VSYNC_ADAPTIVE) for
+late swap tearing (adaptive vsync), or
+[SDL_WINDOW_SURFACE_VSYNC_DISABLED](SDL_WINDOW_SURFACE_VSYNC_DISABLED) to
+disable. Not every value is supported by every driver, so you should check
+the return value to see whether the requested setting is supported.
 
 ## Version
 
