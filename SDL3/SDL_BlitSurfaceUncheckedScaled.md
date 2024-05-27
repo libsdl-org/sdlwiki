@@ -36,7 +36,8 @@ assuming the input rectangles have already been clipped.
 
 ## Thread Safety
 
-The same destination surface should not be used from two threads at once. It is safe to use the same source surface from multiple threads.
+The same destination surface should not be used from two threads at once.
+It is safe to use the same source surface from multiple threads.
 
 ## Version
 
