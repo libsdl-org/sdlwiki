@@ -349,7 +349,7 @@ SDL_AudioStream *stream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_OUT
 if (!stream) {
     /* oh no, we failed, report an error and quit. */
 }
-SDL_UnpauseAudioDevice(SDL_GetAudioStreamDevice(stream));
+SDL_UnpauseAudioDeviceStream(stream);
 
 /* at the end of the program ... */
 SDL_DestroyAudioStream(stream);
