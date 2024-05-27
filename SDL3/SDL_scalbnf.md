@@ -36,6 +36,10 @@ Range: `-INF <= y <= INF`
 This function operates on single-precision floating point values, use
 [SDL_scalbn](SDL_scalbn) for double-precision floats.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

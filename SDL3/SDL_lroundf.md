@@ -37,6 +37,10 @@ This function operates on single-precision floating point values, use
 [SDL_lroundf](SDL_lroundf) for double-precision floats. To get the result
 as a floating-point type, use [SDL_roundf](SDL_roundf),
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

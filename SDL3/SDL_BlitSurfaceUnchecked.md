@@ -33,6 +33,10 @@ Returns 0 on success or a negative error code on failure; call
 This is a semi-private blit function and it performs low-level surface
 blitting, assuming the input rectangles have already been clipped.
 
+## Thread Safety
+
+The same destination surface should not be used from two threads at once. It is safe to use the same source surface from multiple threads.
+
 ## Version
 
 This function is available since SDL 3.0.0.

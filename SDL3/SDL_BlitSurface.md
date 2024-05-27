@@ -80,6 +80,10 @@ defined as follows:
       source color key.
 ```
 
+## Thread Safety
+
+The same destination surface should not be used from two threads at once. It is safe to use the same source surface from multiple threads.
+
 ## Version
 
 This function is available since SDL 3.0.0.

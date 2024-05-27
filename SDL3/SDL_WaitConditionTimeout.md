@@ -43,6 +43,10 @@ The mutex must be locked before calling this function. Locking the mutex
 recursively (more than once) is not supported and leads to undefined
 behavior.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -30,6 +30,10 @@ Returns the fractional part of `x`
 This function operates on double-precision floating point values, use
 [SDL_modff](SDL_modff) for single-precision floats.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

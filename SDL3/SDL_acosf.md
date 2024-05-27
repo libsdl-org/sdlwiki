@@ -40,6 +40,10 @@ platforms and configurations. i.e, it can return a different value given
 the same input on different machines or operating systems, or if SDL is
 updated.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

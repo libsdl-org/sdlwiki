@@ -36,6 +36,10 @@ Range: `-INF <= y <= INF`, y integer
 This function operates on single-precision floating point values, use
 [SDL_ceil](SDL_ceil) for double-precision floats.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -36,6 +36,10 @@ Range: `-y <= z <= y`
 This function operates on double-precision floating point values, use
 [SDL_fmodf](SDL_fmodf) for single-precision floats.
 
+## Thread Safety
+
+It is safe to call this function from any thread.
+
 ## Version
 
 This function is available since SDL 3.0.0.

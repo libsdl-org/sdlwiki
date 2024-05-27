@@ -29,6 +29,10 @@ int SDL_BlitSurfaceScaled(SDL_Surface *src, const SDL_Rect *srcrect, SDL_Surface
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Thread Safety
+
+The same destination surface should not be used from two threads at once. It is safe to use the same source surface from multiple threads.
+
 ## Version
 
 This function is available since SDL 3.0.0.
