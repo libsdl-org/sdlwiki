@@ -29,6 +29,11 @@ int SDL_SetRenderVSync(SDL_Renderer *renderer, int vsync);
 Returns 0 on success or a negative error code on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+When a renderer is created, vsync defaults to
+[SDL_RENDERER_VSYNC_DISABLED](SDL_RENDERER_VSYNC_DISABLED).
+
 ## Version
 
 This function is available since SDL 3.0.0.
