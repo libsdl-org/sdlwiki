@@ -22,11 +22,9 @@ int SDL_AppIterate(void *appstate);
 
 ## Return Value
 
-Returns [SDL_MAIN_CALLBACK_EXIT_FAILURE](SDL_MAIN_CALLBACK_EXIT_FAILURE) to
-terminate with an error,
-[SDL_MAIN_CALLBACK_EXIT_SUCCESS](SDL_MAIN_CALLBACK_EXIT_SUCCESS) to
-terminate with success,
-[SDL_MAIN_CALLBACK_CONTINUE](SDL_MAIN_CALLBACK_CONTINUE) to continue.
+Returns [SDL_APP_FAILURE](SDL_APP_FAILURE) to terminate with an error,
+[SDL_APP_SUCCESS](SDL_APP_SUCCESS) to terminate with success,
+[SDL_APP_CONTINUE](SDL_APP_CONTINUE) to continue.
 
 ## Remarks
 
@@ -56,17 +54,15 @@ The `appstate` parameter is an optional pointer provided by the app during
 [SDL_AppInit](SDL_AppInit)(). If the app never provided a pointer, this
 will be NULL.
 
-If this function returns
-[SDL_MAIN_CALLBACK_CONTINUE](SDL_MAIN_CALLBACK_CONTINUE), the app will
+If this function returns [SDL_APP_CONTINUE](SDL_APP_CONTINUE), the app will
 continue normal operation, receiving repeated calls to
 [SDL_AppIterate](SDL_AppIterate) and [SDL_AppEvent](SDL_AppEvent) for the
 life of the program. If this function returns
-[SDL_MAIN_CALLBACK_EXIT_FAILURE](SDL_MAIN_CALLBACK_EXIT_FAILURE), SDL will
-call [SDL_AppQuit](SDL_AppQuit) and terminate the process with an exit code
-that reports an error to the platform. If it returns
-[SDL_MAIN_CALLBACK_EXIT_SUCCESS](SDL_MAIN_CALLBACK_EXIT_SUCCESS), SDL calls
-[SDL_AppQuit](SDL_AppQuit) and terminates with an exit code that reports
-success to the platform.
+[SDL_APP_FAILURE](SDL_APP_FAILURE), SDL will call
+[SDL_AppQuit](SDL_AppQuit) and terminate the process with an exit code that
+reports an error to the platform. If it returns
+[SDL_APP_SUCCESS](SDL_APP_SUCCESS), SDL calls [SDL_AppQuit](SDL_AppQuit)
+and terminates with an exit code that reports success to the platform.
 
 ## Thread Safety
 
