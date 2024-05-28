@@ -29,9 +29,6 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-NULL can safely be passed as the `w` or `h` parameter if the width or
-height value is not desired.
-
 The window pixel size may differ from its window coordinate size if the
 window is on a high pixel density display. Use
 [SDL_GetWindowSizeInPixels](SDL_GetWindowSizeInPixels)() or

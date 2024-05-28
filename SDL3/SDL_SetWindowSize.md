@@ -29,9 +29,6 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-NULL can safely be passed as the `w` or `h` parameter if the width or
-height value is not desired.
-
 If, at the time of this request, the window in a fixed-size state, such as
 maximized or fullscreen, the request will be deferred until the window
 exits this state and becomes resizable again.
