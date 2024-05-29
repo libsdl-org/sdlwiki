@@ -228,6 +228,7 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetDaysInMonth](SDL_GetDaysInMonth)
 - [SDL_GetDefaultAssertionHandler](SDL_GetDefaultAssertionHandler)
 - [SDL_GetDefaultCursor](SDL_GetDefaultCursor)
+- [SDL_GetDefaultKeyFromScancode](SDL_GetDefaultKeyFromScancode)
 - [SDL_GetDesktopDisplayMode](SDL_GetDesktopDisplayMode)
 - [SDL_GetDisplayBounds](SDL_GetDisplayBounds)
 - [SDL_GetDisplayContentScale](SDL_GetDisplayContentScale)
