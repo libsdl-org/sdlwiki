@@ -33,7 +33,7 @@ This function is available since SDL 3.0.0.
 
 ```c
 SDL_Cursor* cursor;
-cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_HAND);
+cursor = SDL_CreateSystemCursor(SDL_SYSTEM_CURSOR_POINTER);
 SDL_SetCursor(cursor);
 ```
 
