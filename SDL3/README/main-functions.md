@@ -142,7 +142,7 @@ int SDL_AppInit(void **appstate, int argc, char **argv);
 
 This will be called _once_ before anything else. argc/argv work like they
 always do. If this returns SDL_APP_CONTINUE, the app runs. If it returns
-SDL_APP_FAILURE, the app calls SDL_AppQuit and terminates with an exit 
+SDL_APP_FAILURE, the app calls SDL_AppQuit and terminates with an exit
 code that reports an error to the platform. If it returns SDL_APP_SUCCESS,
 the app calls SDL_AppQuit and terminates with an exit code that reports
 success to the platform. This function should not go into an infinite
@@ -172,7 +172,7 @@ SDL_APP_SUCCESS, the app calls SDL_AppQuit and terminates with an exit code
 that reports success to the platform. If it returns SDL_APP_CONTINUE, then
 SDL_AppIterate will be called again at some regular frequency. The platform
 may choose to run this more or less (perhaps less in the background, etc),
-or it might just call this function in a loop as fast as possible. You do 
+or it might just call this function in a loop as fast as possible. You do
 not check the  event queue in this function (SDL_AppEvent exists for that).
 
 Next:
