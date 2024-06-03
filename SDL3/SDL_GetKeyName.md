@@ -32,6 +32,8 @@ it. If the key doesn't have a name, this function returns an empty string
 See [SDL_Scancode](SDL_Scancode) and [SDL_Keycode](SDL_Keycode) for
 details.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

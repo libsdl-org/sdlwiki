@@ -32,8 +32,10 @@ initialized by default; the drivers that seem more reasonable to choose
 first (as far as the SDL developers believe) are earlier in the list.
 
 The names of drivers are all simple, low-ASCII identifiers, like "alsa",
-"coreaudio" or "xaudio2". These never have Unicode characters, and are not
+"coreaudio" or "wasapi". These never have Unicode characters, and are not
 meant to be proper names.
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Thread Safety
 

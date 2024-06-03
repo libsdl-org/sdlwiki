@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-const char * SDL_AndroidGetInternalStoragePath(void);
+const char* SDL_AndroidGetInternalStoragePath(void);
 
 ```
 
@@ -26,6 +26,8 @@ applications.
 
 Your internal storage path is typically:
 `/data/data/your.app.package/files`.
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

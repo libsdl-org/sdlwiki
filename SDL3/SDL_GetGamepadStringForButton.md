@@ -28,7 +28,7 @@ specified. The string returned is of the format used by
 
 ## Remarks
 
-The caller should not [SDL_free](SDL_free)() the returned string.
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

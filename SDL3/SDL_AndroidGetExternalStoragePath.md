@@ -28,6 +28,8 @@ to by other applications.
 Your external storage path is typically:
 `/storage/sdcard0/Android/data/your.app.package/files`.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

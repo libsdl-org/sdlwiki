@@ -24,6 +24,10 @@ const char* SDL_GetSensorInstanceName(SDL_SensorID instance_id);
 
 Returns the sensor name, or NULL if `instance_id` is not valid
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

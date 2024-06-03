@@ -29,6 +29,8 @@ have a name this function returns an empty string ("").
 
 See [SDL_Scancode](SDL_Scancode) for details.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 **Warning**: The returned name is by design not stable across platforms,
 e.g. the name for [`SDL_SCANCODE_LGUI`](SDL_SCANCODE_LGUI) is "Left GUI"
 under Linux but "Left Windows" under Microsoft Windows, and some scancodes

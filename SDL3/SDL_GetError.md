@@ -18,10 +18,7 @@ const char* SDL_GetError(void);
 
 Returns a message with information about the specific error that occurred,
 or an empty string if there hasn't been an error message set since the last
-call to [SDL_ClearError](SDL_ClearError)(). The message is only applicable
-when an SDL function has signaled an error. You must check the return
-values of SDL function calls to determine when to appropriately call
-[SDL_GetError](SDL_GetError)().
+call to [SDL_ClearError](SDL_ClearError)().
 
 ## Remarks
 
@@ -42,8 +39,10 @@ string applies.
 Error strings are set per-thread, so an error set in a different thread
 will not interfere with the current thread's operation.
 
-The returned string is internally allocated and must not be freed by the
-application.
+The returned string does **NOT** follow the
+[SDL_GetStringRule](SDL_GetStringRule)! The pointer is valid until the
+current thread's error string is changed, so the caller should make a copy
+if the string is to be used after calling into SDL again.
 
 ## Version
 

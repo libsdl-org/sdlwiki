@@ -29,6 +29,12 @@ Returns the name of the video driver with the given **index**.
 The video drivers are presented in the order in which they are normally
 checked during initialization.
 
+The names of drivers are all simple, low-ASCII identifiers, like "cocoa",
+"x11" or "windows". These never have Unicode characters, and are not meant
+to be proper names.
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

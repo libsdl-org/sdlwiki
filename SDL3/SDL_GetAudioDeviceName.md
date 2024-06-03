@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-char* SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
+const char* SDL_GetAudioDeviceName(SDL_AudioDeviceID devid);
 
 ```
 
@@ -26,8 +26,7 @@ Returns the name of the audio device, or NULL on error.
 
 ## Remarks
 
-The string returned by this function is UTF-8 encoded. The caller should
-call [SDL_free](SDL_free) on the return value when done with it.
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Thread Safety
 

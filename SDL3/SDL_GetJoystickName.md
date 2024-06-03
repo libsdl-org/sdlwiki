@@ -26,6 +26,10 @@ Returns the name of the selected joystick. If no name can be found, this
 function returns NULL; call [SDL_GetError](SDL_GetError)() for more
 information.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

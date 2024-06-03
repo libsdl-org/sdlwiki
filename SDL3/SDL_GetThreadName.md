@@ -27,9 +27,7 @@ NULL if it doesn't have a name.
 
 ## Remarks
 
-This is internal memory, not to be freed by the caller, and remains valid
-until the specified thread is cleaned up by
-[SDL_WaitThread](SDL_WaitThread)().
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

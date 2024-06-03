@@ -29,6 +29,8 @@ Returns the name of the selected mouse, or NULL on failure; call
 
 This function returns "" if the mouse doesn't have a name.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

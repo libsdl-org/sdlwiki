@@ -24,6 +24,10 @@ const char * SDL_GetHint(const char *name);
 
 Returns the string value of a hint or NULL if the hint isn't set.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

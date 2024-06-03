@@ -24,6 +24,10 @@ const char* SDL_GetSensorName(SDL_Sensor *sensor);
 
 Returns the sensor name, or NULL if `sensor` is NULL.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -26,6 +26,10 @@ Returns the human readable name of the specified pixel format or
 [`SDL_PIXELFORMAT_UNKNOWN`](SDL_PIXELFORMAT_UNKNOWN) if the format isn't
 recognized.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

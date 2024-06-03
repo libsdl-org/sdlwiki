@@ -38,6 +38,8 @@ MSDN, at the URL:
 
 https://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

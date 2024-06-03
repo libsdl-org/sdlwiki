@@ -23,6 +23,7 @@
 - [psp](psp)
 - [raspberrypi](raspberrypi)
 - [riscos](riscos)
+- [strings](strings)
 - [touch](touch)
 - [versions](versions)
 - [visualc](visualc)

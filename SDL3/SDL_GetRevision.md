@@ -35,6 +35,8 @@ will return an empty string.
 You shouldn't use this function for anything but logging it for debugging
 purposes. The string is not intended to be reliable in any way.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

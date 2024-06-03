@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_platform.h>](https://github.com/libsdl-org/SDL/blob/main/i
 ## Syntax
 
 ```c
-const char * SDL_GetPlatform (void);
+const char * SDL_GetPlatform(void);
 
 ```
 
@@ -28,6 +28,8 @@ Here are the names returned for some (but not all) supported platforms:
 - "Linux"
 - "iOS"
 - "Android"
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

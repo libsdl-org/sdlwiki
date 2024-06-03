@@ -27,6 +27,10 @@ const char* SDL_GetStringProperty(SDL_PropertiesID props, const char *name, cons
 Returns the value of the property, or `default_value` if it is not set or
 not a string property.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Thread Safety
 
 It is safe to call this function from any thread.

@@ -30,6 +30,10 @@ The pointer is managed by the SDL pen subsystem and must not be
 deallocated. The pointer remains valid until SDL is shut down. Returns NULL
 on error (cf. [SDL_GetError](SDL_GetError)())
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

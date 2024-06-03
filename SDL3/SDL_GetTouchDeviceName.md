@@ -27,7 +27,7 @@ Returns touch device name, or NULL on error; call
 
 ## Remarks
 
-You do not own the returned string, do not modify or free it.
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

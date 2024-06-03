@@ -35,8 +35,7 @@ The names of drivers are all simple, low-ASCII identifiers, like "opengl",
 "direct3d12" or "metal". These never have Unicode characters, and are not
 meant to be proper names.
 
-The returned value points to a static, read-only string; do not modify or
-free it!
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
 
 ## Version
 

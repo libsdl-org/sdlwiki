@@ -19,6 +19,14 @@ const char* SDL_GetCurrentVideoDriver(void);
 Returns the name of the current video driver or NULL if no driver has been
 initialized.
 
+## Remarks
+
+The names of drivers are all simple, low-ASCII identifiers, like "cocoa",
+"x11" or "windows". These never have Unicode characters, and are not meant
+to be proper names.
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

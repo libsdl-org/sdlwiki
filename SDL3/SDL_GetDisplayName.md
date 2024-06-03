@@ -25,6 +25,10 @@ const char* SDL_GetDisplayName(SDL_DisplayID displayID);
 Returns the name of a display or NULL on failure; call
 [SDL_GetError](SDL_GetError)() for more information.
 
+## Remarks
+
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -30,6 +30,8 @@ information.
 
 This can be called before any joysticks are opened.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Version
 
 This function is available since SDL 3.0.0.

@@ -35,6 +35,8 @@ The names of drivers are all simple, low-ASCII identifiers, like "v4l2",
 "coremedia" or "android". These never have Unicode characters, and are not
 meant to be proper names.
 
+The returned string follows the [SDL_GetStringRule](SDL_GetStringRule).
+
 ## Thread Safety
 
 It is safe to call this function from any thread.
