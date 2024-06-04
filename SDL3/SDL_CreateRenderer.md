@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
 - [SDL_GetNumRenderDrivers](SDL_GetNumRenderDrivers)
 - [SDL_GetRenderDriver](SDL_GetRenderDriver)
-- [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_GetRendererName](SDL_GetRendererName)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)

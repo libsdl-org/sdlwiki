@@ -77,7 +77,7 @@ This function is available since SDL 3.0.0.
 - [SDL_CreateRenderer](SDL_CreateRenderer)
 - [SDL_CreateSoftwareRenderer](SDL_CreateSoftwareRenderer)
 - [SDL_DestroyRenderer](SDL_DestroyRenderer)
-- [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_GetRendererName](SDL_GetRendererName)
 
 ----
 [CategoryAPI](CategoryAPI), [CategoryAPIFunction](CategoryAPIFunction), [CategoryRender](CategoryRender)
