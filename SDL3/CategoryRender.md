@@ -53,6 +53,7 @@ details: https://github.com/libsdl-org/SDL/issues/986
 - [SDL_GetRenderer](SDL_GetRenderer)
 - [SDL_GetRendererFromTexture](SDL_GetRendererFromTexture)
 - [SDL_GetRendererInfo](SDL_GetRendererInfo)
+- [SDL_GetRendererName](SDL_GetRendererName)
 - [SDL_GetRendererProperties](SDL_GetRendererProperties)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)
 - [SDL_GetRenderMetalCommandEncoder](SDL_GetRenderMetalCommandEncoder)
