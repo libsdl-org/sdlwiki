@@ -38,10 +38,9 @@ If `filelist` is:
 The filelist argument does not need to be freed; it will automatically be
 freed when the callback returns.
 
-The filter argument is the index of the filter that was selected, or one
-more than the size of the list (therefore the index of the terminating NULL
-entry) if no filter was selected, or -1 if the platform or method doesn't
-support fetching the selected filter.
+The filter argument is the index of the filter that was selected, or -1 if
+no filter was selected or if the platform or method doesn't support
+fetching the selected filter.
 
 ## Version
 
