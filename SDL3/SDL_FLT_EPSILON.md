@@ -1,0 +1,1 @@
+Internal SDL epsilon constant, used for comparing float numbers. Equals by default to platform-defined [FLT_EPSILON](https://en.cppreference.com/w/cpp/header/cfloat) constant. Otherwise, uses a constant of ` 1.1920928955078125e-07F` or `0x0.000002p0`
