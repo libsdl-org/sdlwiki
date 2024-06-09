@@ -36,6 +36,8 @@ might be easier to look at the Enums section [in a specific category](APIByCateg
 - [SDL_hid_bus_type](SDL_hid_bus_type)
 - [SDL_HintPriority](SDL_HintPriority)
 - [SDL_HitTestResult](SDL_HitTestResult)
+- [SDL_IOStatus](SDL_IOStatus)
+- [SDL_IOWhence](SDL_IOWhence)
 - [SDL_JoystickConnectionState](SDL_JoystickConnectionState)
 - [SDL_JoystickType](SDL_JoystickType)
 - [SDL_LogCategory](SDL_LogCategory)
