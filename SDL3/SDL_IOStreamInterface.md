@@ -25,7 +25,7 @@ typedef struct SDL_IOStreamInterface
      *
      *  \return the final offset in the data stream, or -1 on error.
      */
-    Sint64 (SDLCALL *seek)(void *userdata, Sint64 offset, int whence);
+    Sint64 (SDLCALL *seek)(void *userdata, Sint64 offset, SDL_IOWhence whence);
 
     /**
      *  Read up to `size` bytes from the data stream to the area pointed

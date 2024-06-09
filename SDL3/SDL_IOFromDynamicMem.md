@@ -22,14 +22,15 @@ if it fails; call [SDL_GetError](SDL_GetError)() for more information.
 ## Remarks
 
 This supports the following properties to provide access to the memory and
-control over allocations: -
-[`SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER`](SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER):
-a pointer to the internal memory of the stream. This can be set to NULL to
-transfer ownership of the memory to the application, which should free the
-memory with [SDL_free](SDL_free)(). If this is done, the next operation on
-the stream must be [SDL_CloseIO](SDL_CloseIO)(). -
-[`SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER`](SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER):
-memory will be allocated in multiples of this size, defaulting to 1024.
+control over allocations:
+
+- [`SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER`](SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER):
+  a pointer to the internal memory of the stream. This can be set to NULL
+  to transfer ownership of the memory to the application, which should free
+  the memory with [SDL_free](SDL_free)(). If this is done, the next
+  operation on the stream must be [SDL_CloseIO](SDL_CloseIO)().
+- [`SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER`](SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER):
+  memory will be allocated in multiples of this size, defaulting to 1024.
 
 ## Version
 
