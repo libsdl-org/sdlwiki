@@ -15,6 +15,7 @@
 - [SDL_GLContext](SDL_GLContext)
 - [SDL_HintCallback](SDL_HintCallback)
 - [SDL_HitTest](SDL_HitTest)
+- [SDL_JoystickGUID](SDL_JoystickGUID)
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_Keycode](SDL_Keycode)
 - [SDL_LogOutputFunction](SDL_LogOutputFunction)

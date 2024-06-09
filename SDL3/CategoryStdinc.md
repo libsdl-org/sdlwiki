@@ -116,6 +116,7 @@ runtime equivalents, but with an SDL_ prefix.
 <!-- BEGIN CATEGORY LIST: CategoryStdinc, CategoryAPIMacro -->
 - [SDL_arraysize](SDL_arraysize)
 - [SDL_FALSE](SDL_FALSE)
+- [SDL_FLT_EPSILON](SDL_FLT_EPSILON)
 - [SDL_MAX_SINT16](SDL_MAX_SINT16)
 - [SDL_MAX_SINT32](SDL_MAX_SINT32)
 - [SDL_MAX_SINT64](SDL_MAX_SINT64)
