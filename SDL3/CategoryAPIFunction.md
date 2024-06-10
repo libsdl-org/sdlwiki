@@ -410,7 +410,6 @@ to look at the Functions section [in a specific category](APIByCategory) instead
 - [SDL_GetRenderDriver](SDL_GetRenderDriver)
 - [SDL_GetRenderer](SDL_GetRenderer)
 - [SDL_GetRendererFromTexture](SDL_GetRendererFromTexture)
-- [SDL_GetRendererInfo](SDL_GetRendererInfo)
 - [SDL_GetRendererName](SDL_GetRendererName)
 - [SDL_GetRendererProperties](SDL_GetRendererProperties)
 - [SDL_GetRenderLogicalPresentation](SDL_GetRenderLogicalPresentation)

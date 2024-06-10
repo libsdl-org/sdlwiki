@@ -82,7 +82,6 @@ easier to look at the Structs section [in a specific category](APIByCategory) in
 - [SDL_QuitEvent](SDL_QuitEvent)
 - [SDL_Rect](SDL_Rect)
 - [SDL_Renderer](SDL_Renderer)
-- [SDL_RendererInfo](SDL_RendererInfo)
 - [SDL_RWLock](SDL_RWLock)
 - [SDL_Semaphore](SDL_Semaphore)
 - [SDL_SensorEvent](SDL_SensorEvent)

@@ -56,7 +56,6 @@ to look at the Macros section [in a specific category](APIByCategory) instead.
 - [SDL_BUTTON_X2](SDL_BUTTON_X2)
 - [SDL_BUTTON_X2MASK](SDL_BUTTON_X2MASK)
 - [SDL_CACHELINE_SIZE](SDL_CACHELINE_SIZE)
-- [SDL_COMPILEDVERSION](SDL_COMPILEDVERSION)
 - [SDL_CompilerBarrier](SDL_CompilerBarrier)
 - [SDL_CPUPauseInstruction](SDL_CPUPauseInstruction)
 - [SDL_DONTFREE](SDL_DONTFREE)
