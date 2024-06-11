@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 ## Syntax
 
 ```c
-void SDL_LogCritical(int category, SDL_PRINTF_FORMAT_STRING const char *fmt, ...) SDL_PRINTF_VARARG_FUNC(2);
+void SDL_LogCritical(int category, const char *fmt, ...);
 
 ```
 
