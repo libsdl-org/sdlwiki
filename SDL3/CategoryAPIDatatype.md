@@ -108,6 +108,7 @@ look at the Datatypes section [in a specific category](APIByCategory) instead.
 - [SDL_ThreadID](SDL_ThreadID)
 - [SDL_TimerCallback](SDL_TimerCallback)
 - [SDL_TimerID](SDL_TimerID)
+- [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback)
 - [SDL_TLSID](SDL_TLSID)
 - [SDL_WindowFlags](SDL_WindowFlags)
 - [SDL_WindowsMessageHook](SDL_WindowsMessageHook)

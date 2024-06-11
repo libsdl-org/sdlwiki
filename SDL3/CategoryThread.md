@@ -33,6 +33,7 @@ need locks to manage thread safety. Those pieces are in [CategoryMutex](Category
 <!-- BEGIN CATEGORY LIST: CategoryThread, CategoryAPIDatatype -->
 - [SDL_ThreadFunction](SDL_ThreadFunction)
 - [SDL_ThreadID](SDL_ThreadID)
+- [SDL_TLSDestructorCallback](SDL_TLSDestructorCallback)
 - [SDL_TLSID](SDL_TLSID)
 <!-- END CATEGORY LIST -->
 
