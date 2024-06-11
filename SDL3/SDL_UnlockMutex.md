@@ -10,7 +10,7 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 ## Syntax
 
 ```c
-void SDL_UnlockMutex(SDL_Mutex *mutex) SDL_RELEASE(mutex);
+void SDL_UnlockMutex(SDL_Mutex *mutex);
 
 ```
 
