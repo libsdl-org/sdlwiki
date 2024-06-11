@@ -10,17 +10,17 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 ## Syntax
 
 ```c
-int SDL_SetTLS(SDL_TLSID id, const void *value, void (SDLCALL *destructor)(void*));
+int SDL_SetTLS(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destructor);
 
 ```
 
 ## Function Parameters
 
-|                    |                                                            |
-| ------------------ | ---------------------------------------------------------- |
-| **id**             | the thread local storage ID                                |
-| **value**          | the value to associate with the ID for the current thread  |
-| **destructor**     | a function called when the thread exits, to free the value |
+|                    |                                                                          |
+| ------------------ | ------------------------------------------------------------------------ |
+| **id**             | the thread local storage ID                                              |
+| **value**          | the value to associate with the ID for the current thread                |
+| **destructor**     | a function called when the thread exits, to free the value. Can be NULL. |
 
 ## Return Value
 
@@ -29,14 +29,11 @@ Returns 0 on success or a negative error code on failure; call
 
 ## Remarks
 
-The function prototype for `destructor` is:
+Note that replacing a value from a previous call to this function on the
+same thread does _not_ call the previous value's destructor!
 
-```c
-void destructor(void *value)
-```
-
-where its parameter `value` is what was passed as `value` to
-[SDL_SetTLS](SDL_SetTLS)().
+`destructor` can be NULL; it is assumed that `value` does not need to be
+cleaned up if so.
 
 ## Version
 
