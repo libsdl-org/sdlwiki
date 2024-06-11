@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_AudioDeviceID* SDL_GetAudioOutputDevices(int *count);
-
 ```
 
 ## Function Parameters

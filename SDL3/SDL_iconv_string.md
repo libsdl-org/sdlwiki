@@ -14,7 +14,6 @@ char* SDL_iconv_string(const char *tocode,
                    const char *fromcode,
                    const char *inbuf,
                    size_t inbytesleft);
-
 ```
 
 ## Version

@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 SDL_bool SDL_SetHintWithPriority(const char *name,
                              const char *value,
                              SDL_HintPriority priority);
-
 ```
 
 ## Function Parameters

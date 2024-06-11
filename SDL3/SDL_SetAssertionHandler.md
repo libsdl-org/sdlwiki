@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 void SDL_SetAssertionHandler(
                 SDL_AssertionHandler handler,
                 void *userdata);
-
 ```
 
 ## Function Parameters

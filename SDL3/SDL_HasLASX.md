@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_cpuinfo.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_bool SDL_HasLASX(void);
-
 ```
 
 ## Return Value

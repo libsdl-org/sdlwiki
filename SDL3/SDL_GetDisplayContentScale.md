@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 float SDL_GetDisplayContentScale(SDL_DisplayID displayID);
-
 ```
 
 ## Function Parameters

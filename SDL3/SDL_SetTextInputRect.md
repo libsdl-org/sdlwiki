@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 int SDL_SetTextInputRect(const SDL_Rect *rect);
-
 ```
 
 ## Function Parameters

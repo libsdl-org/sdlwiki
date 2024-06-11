@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_bool SDL_SetSurfaceClipRect(SDL_Surface *surface, const SDL_Rect *rect);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetTLS(SDL_TLSID id, const void *value, SDL_TLSDestructorCallback destructor);
-
 ```
 
 ## Function Parameters

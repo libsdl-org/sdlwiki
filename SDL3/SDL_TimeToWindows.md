@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 void SDL_TimeToWindows(SDL_Time ticks, Uint32 *dwLowDateTime, Uint32 *dwHighDateTime);
-
 ```
 
 ## Function Parameters

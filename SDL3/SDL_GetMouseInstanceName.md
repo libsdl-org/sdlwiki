@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 const char* SDL_GetMouseInstanceName(SDL_MouseID instance_id);
-
 ```
 
 ## Function Parameters

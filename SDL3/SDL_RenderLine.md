@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_RenderLine(SDL_Renderer *renderer, float x1, float y1, float x2, float y2);
-
 ```
 
 ## Function Parameters

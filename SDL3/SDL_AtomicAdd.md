@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_AtomicAdd(SDL_AtomicInt *a, int v);
-
 ```
 
 ## Function Parameters

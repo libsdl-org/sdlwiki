@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_Camera* SDL_OpenCameraDevice(SDL_CameraDeviceID instance_id, const SDL_CameraSpec *spec);
-
 ```
 
 ## Function Parameters

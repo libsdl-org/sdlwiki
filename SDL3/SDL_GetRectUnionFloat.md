@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 int SDL_GetRectUnionFloat(const SDL_FRect * A,
                 const SDL_FRect * B,
                 SDL_FRect * result);
-
 ```
 
 ## Function Parameters

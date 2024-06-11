@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_Renderer * SDL_CreateRenderer(SDL_Window *window, const char *name);
-
 ```
 
 ## Function Parameters

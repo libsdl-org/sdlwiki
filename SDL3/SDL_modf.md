@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 double SDL_modf(double x, double *y);
-
 ```
 
 ## Function Parameters

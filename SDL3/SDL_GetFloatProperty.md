@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 float SDL_GetFloatProperty(SDL_PropertiesID props, const char *name, float default_value);
-
 ```
 
 ## Function Parameters

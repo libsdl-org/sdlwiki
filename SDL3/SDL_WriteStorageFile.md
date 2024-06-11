@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 int SDL_WriteStorageFile(SDL_Storage *storage, const char *path, const void *source, Uint64 length);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 const SDL_AssertData * SDL_GetAssertionReport(void);
-
 ```
 
 ## Return Value

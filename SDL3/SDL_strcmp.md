@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_strcmp(const char *str1, const char *str2);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_Surface* SDL_ConvertSurface(SDL_Surface *surface, const SDL_PixelFormat *format);
-
 ```
 
 ## Function Parameters

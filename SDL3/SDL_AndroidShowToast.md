@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_AndroidShowToast(const char* message, int duration, int gravity, int xoffset, int yoffset);
-
 ```
 
 ## Function Parameters

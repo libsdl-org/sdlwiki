@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_DisplayID SDL_GetDisplayForPoint(const SDL_Point *point);
-
 ```
 
 ## Function Parameters

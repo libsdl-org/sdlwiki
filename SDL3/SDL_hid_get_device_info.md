@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_hid_device_info * SDL_hid_get_device_info(SDL_hid_device *dev);
-
 ```
 
 ## Function Parameters

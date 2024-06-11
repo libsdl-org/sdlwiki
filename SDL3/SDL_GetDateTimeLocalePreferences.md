@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_GetDateTimeLocalePreferences(SDL_DateFormat *dateFormat, SDL_TimeFormat *timeFormat);
-
 ```
 
 ## Function Parameters

@@ -16,7 +16,6 @@ SDL_bool SDL_GetMasksForPixelFormatEnum(SDL_PixelFormatEnum format,
                                 Uint32 * Gmask,
                                 Uint32 * Bmask,
                                 Uint32 * Amask);
-
 ```
 
 ## Function Parameters

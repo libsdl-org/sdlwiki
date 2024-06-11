@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 void SDL_SetModState(SDL_Keymod modstate);
-
 ```
 
 ## Function Parameters

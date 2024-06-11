@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 int SDL_GetRectUnion(const SDL_Rect * A,
                const SDL_Rect * B,
                SDL_Rect * result);
-
 ```
 
 ## Function Parameters

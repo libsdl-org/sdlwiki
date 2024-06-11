@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_hid_init(void);
-
 ```
 
 ## Return Value

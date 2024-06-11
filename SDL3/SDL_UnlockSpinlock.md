@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_UnlockSpinlock(SDL_SpinLock *lock);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_hid_get_indexed_string(SDL_hid_device *dev, int string_index, wchar_t *string, size_t maxlen);
-
 ```
 
 ## Function Parameters

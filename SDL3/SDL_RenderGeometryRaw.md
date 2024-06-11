@@ -17,7 +17,6 @@ int SDL_RenderGeometryRaw(SDL_Renderer *renderer,
                    const float *uv, int uv_stride,
                    int num_vertices,
                    const void *indices, int num_indices, int size_indices);
-
 ```
 
 ## Function Parameters

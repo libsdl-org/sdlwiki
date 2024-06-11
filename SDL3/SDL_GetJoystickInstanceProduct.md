@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 Uint16 SDL_GetJoystickInstanceProduct(SDL_JoystickID instance_id);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 int SDL_SendGamepadEffect(SDL_Gamepad *gamepad, const void *data, int size);
-
 ```
 
 ## Function Parameters

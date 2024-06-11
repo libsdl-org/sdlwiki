@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_ReleaseCameraFrame(SDL_Camera *camera, SDL_Surface *frame);
-
 ```
 
 ## Function Parameters

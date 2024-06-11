@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_time.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_GetDayOfYear(int year, int month, int day);
-
 ```
 
 ## Function Parameters

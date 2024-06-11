@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 SDL_AssertState SDL_ReportAssertion(SDL_AssertData *data,
                                 const char *func,
                                 const char *file, int line);
-
 ```
 
 ## Function Parameters

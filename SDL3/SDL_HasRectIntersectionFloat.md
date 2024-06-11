@@ -12,7 +12,6 @@ Defined in [<SDL3/SDL_rect.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 ```c
 SDL_bool SDL_HasRectIntersectionFloat(const SDL_FRect * A,
                           const SDL_FRect * B);
-
 ```
 
 ## Function Parameters

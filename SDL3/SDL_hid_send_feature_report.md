@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_hid_send_feature_report(SDL_hid_device *dev, const unsigned char *data, size_t length);
-
 ```
 
 ## Function Parameters

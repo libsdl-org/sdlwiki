@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 
 ```c
 int SDL_SetPrimarySelectionText(const char *text);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_PlayHapticRumble(SDL_Haptic *haptic, float strength, Uint32 length);
-
 ```
 
 ## Function Parameters

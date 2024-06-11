@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_IOStream* SDL_OpenIO(const SDL_IOStreamInterface *iface, void *userdata);
-
 ```
 
 ## Function Parameters

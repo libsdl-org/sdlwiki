@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_UnlockTexture(SDL_Texture *texture);
-
 ```
 
 ## Function Parameters

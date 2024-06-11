@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 const char * SDL_AndroidGetExternalStoragePath(void);
-
 ```
 
 ## Return Value

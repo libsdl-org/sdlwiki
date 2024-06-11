@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_bool SDL_ReadS64BE(SDL_IOStream *src, Sint64 *value);
-
 ```
 
 ## Function Parameters

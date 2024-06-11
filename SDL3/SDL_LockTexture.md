@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 int SDL_LockTexture(SDL_Texture *texture,
                 const SDL_Rect *rect,
                 void **pixels, int *pitch);
-
 ```
 
 ## Function Parameters

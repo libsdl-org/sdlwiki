@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_RestoreWindow(SDL_Window *window);
-
 ```
 
 ## Function Parameters

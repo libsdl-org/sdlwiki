@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 SDL_GUID SDL_GetPenGUID(SDL_PenID instance_id);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetRenderColorScale(SDL_Renderer *renderer, float scale);
-
 ```
 
 ## Function Parameters

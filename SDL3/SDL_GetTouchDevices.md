@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_TouchID* SDL_GetTouchDevices(int *count);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetThreadPriority(SDL_ThreadPriority priority);
-
 ```
 
 ## Function Parameters

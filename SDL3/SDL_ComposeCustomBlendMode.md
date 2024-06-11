@@ -16,7 +16,6 @@ SDL_BlendMode SDL_ComposeCustomBlendMode(SDL_BlendFactor srcColorFactor,
                                      SDL_BlendFactor srcAlphaFactor,
                                      SDL_BlendFactor dstAlphaFactor,
                                      SDL_BlendOperation alphaOperation);
-
 ```
 
 ## Function Parameters

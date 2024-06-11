@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_mouse.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_CaptureMouse(SDL_bool enabled);
-
 ```
 
 ## Function Parameters

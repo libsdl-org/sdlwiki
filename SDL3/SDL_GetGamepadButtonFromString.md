@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_GamepadButton SDL_GetGamepadButtonFromString(const char *str);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_bool SDL_ReadU32LE(SDL_IOStream *src, Uint32 *value);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 char const* const* SDL_Vulkan_GetInstanceExtensions(Uint32 *count);
-
 ```
 
 ## Function Parameters

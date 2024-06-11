@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_bool SDL_WriteS64BE(SDL_IOStream *dst, Sint64 value);
-
 ```
 
 ## Function Parameters

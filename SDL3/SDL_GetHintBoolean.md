@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_bool SDL_GetHintBoolean(const char *name, SDL_bool default_value);
-
 ```
 
 ## Function Parameters

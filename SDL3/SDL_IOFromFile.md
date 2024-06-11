@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_IOStream* SDL_IOFromFile(const char *file, const char *mode);
-
 ```
 
 ## Function Parameters

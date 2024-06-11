@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_pen.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 Uint32 SDL_GetPenStatus(SDL_PenID instance_id, float *x, float *y, float *axes, size_t num_axes);
-
 ```
 
 ## Function Parameters

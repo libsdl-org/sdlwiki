@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_SetEventEnabled(Uint32 type, SDL_bool enabled);
-
 ```
 
 ## Function Parameters

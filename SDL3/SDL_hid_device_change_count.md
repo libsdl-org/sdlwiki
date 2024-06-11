@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 Uint32 SDL_hid_device_change_count(void);
-
 ```
 
 ## Return Value

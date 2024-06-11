@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 float SDL_powf(float x, float y);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hints.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 const char * SDL_GetHint(const char *name);
-
 ```
 
 ## Function Parameters

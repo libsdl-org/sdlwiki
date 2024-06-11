@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_MALLOC void* SDL_aligned_alloc(size_t alignment, size_t size);
-
 ```
 
 ## Function Parameters

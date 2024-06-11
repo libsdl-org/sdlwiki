@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 int SDL_SetSurfaceColorKey(SDL_Surface *surface, int flag, Uint32 key);
-
 ```
 
 ## Function Parameters

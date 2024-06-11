@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_timer.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 void SDL_Delay(Uint32 ms);
-
 ```
 
 ## Function Parameters

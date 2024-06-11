@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 float SDL_scalbnf(float x, int n);
-
 ```
 
 ## Function Parameters

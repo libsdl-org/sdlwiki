@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_DestroyPalette(SDL_Palette * palette);
-
 ```
 
 ## Function Parameters

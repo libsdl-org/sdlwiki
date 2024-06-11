@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_isalpha(int x);
-
 ```
 
 ## Function Parameters

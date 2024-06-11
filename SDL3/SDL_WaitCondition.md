@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_WaitCondition(SDL_Condition *cond, SDL_Mutex *mutex);
-
 ```
 
 ## Function Parameters

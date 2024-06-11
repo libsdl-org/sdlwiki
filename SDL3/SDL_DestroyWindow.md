@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 void SDL_DestroyWindow(SDL_Window *window);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetRenderViewport(SDL_Renderer *renderer, const SDL_Rect *rect);
-
 ```
 
 ## Function Parameters

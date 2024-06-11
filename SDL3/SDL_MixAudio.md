@@ -14,7 +14,6 @@ int SDL_MixAudio(Uint8 * dst,
              const Uint8 * src,
              SDL_AudioFormat format,
              Uint32 len, float volume);
-
 ```
 
 ## Function Parameters

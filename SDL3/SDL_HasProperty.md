@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 SDL_bool SDL_HasProperty(SDL_PropertiesID props, const char *name);
-
 ```
 
 ## Function Parameters

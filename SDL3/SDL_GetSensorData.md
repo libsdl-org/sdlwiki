@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_GetSensorData(SDL_Sensor *sensor, float *data, int num_values);
-
 ```
 
 ## Function Parameters

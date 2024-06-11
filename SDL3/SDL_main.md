@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_main(int argc, char *argv[]);
-
 ```
 
 ## Remarks

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_touch.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 const char* SDL_GetTouchDeviceName(SDL_TouchID touchID);
-
 ```
 
 ## Function Parameters

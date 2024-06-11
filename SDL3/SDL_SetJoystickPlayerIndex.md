@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 int SDL_SetJoystickPlayerIndex(SDL_Joystick *joystick, int player_index);
-
 ```
 
 ## Function Parameters

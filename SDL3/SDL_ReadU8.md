@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_bool SDL_ReadU8(SDL_IOStream *src, Uint8 *value);
-
 ```
 
 ## Function Parameters

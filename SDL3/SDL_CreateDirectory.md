@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_filesystem.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 int SDL_CreateDirectory(const char *path);
-
 ```
 
 ## Function Parameters

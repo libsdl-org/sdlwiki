@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_SetWindowMaximumSize(SDL_Window *window, int max_w, int max_h);
-
 ```
 
 ## Function Parameters

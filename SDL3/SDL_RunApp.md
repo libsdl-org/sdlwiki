@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_main.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_RunApp(int argc, char* argv[], SDL_main_func mainFunction, void * reserved);
-
 ```
 
 ## Function Parameters

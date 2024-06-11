@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_AtomicGet(SDL_AtomicInt *a);
-
 ```
 
 ## Function Parameters

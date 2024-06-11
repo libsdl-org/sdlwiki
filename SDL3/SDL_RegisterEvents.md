@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 Uint32 SDL_RegisterEvents(int numevents);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 
 ```c
 void* SDL_GetClipboardData(const char *mime_type, size_t *size);
-
 ```
 
 ## Function Parameters

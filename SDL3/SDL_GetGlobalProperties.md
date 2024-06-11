@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 SDL_PropertiesID SDL_GetGlobalProperties(void);
-
 ```
 
 ## Return Value

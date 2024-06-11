@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_SensorID* SDL_GetSensors(int *count);
-
 ```
 
 ## Function Parameters

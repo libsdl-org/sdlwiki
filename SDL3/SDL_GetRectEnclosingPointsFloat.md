@@ -14,7 +14,6 @@ SDL_bool SDL_GetRectEnclosingPointsFloat(const SDL_FPoint * points,
                         int count,
                         const SDL_FRect * clip,
                         SDL_FRect * result);
-
 ```
 
 ## Function Parameters

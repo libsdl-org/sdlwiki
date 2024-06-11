@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_pixels.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 int SDL_SetPaletteColors(SDL_Palette * palette,
                      const SDL_Color * colors,
                      int firstcolor, int ncolors);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_platform.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 const char * SDL_GetPlatform(void);
-
 ```
 
 ## Return Value

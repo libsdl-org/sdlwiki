@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_SetWindowBordered(SDL_Window *window, SDL_bool bordered);
-
 ```
 
 ## Function Parameters

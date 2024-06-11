@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_misc.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_OpenURL(const char *url);
-
 ```
 
 ## Function Parameters

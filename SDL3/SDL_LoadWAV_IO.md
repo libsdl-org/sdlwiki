@@ -13,7 +13,6 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 int SDL_LoadWAV_IO(SDL_IOStream * src, SDL_bool closeio,
                SDL_AudioSpec * spec, Uint8 ** audio_buf,
                Uint32 * audio_len);
-
 ```
 
 ## Function Parameters

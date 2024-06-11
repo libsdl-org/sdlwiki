@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_Vulkan_LoadLibrary(const char *path);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_camera.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 char * SDL_GetCameraDeviceName(SDL_CameraDeviceID instance_id);
-
 ```
 
 ## Function Parameters

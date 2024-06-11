@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_dialog.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_ShowOpenFileDialog(SDL_DialogFileCallback callback, void *userdata, SDL_Window *window, const SDL_DialogFileFilter *filters, int nfilters, const char *default_location, SDL_bool allow_many);
-
 ```
 
 ## Function Parameters

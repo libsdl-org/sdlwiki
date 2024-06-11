@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_bool SDL_StorageReady(SDL_Storage *storage);
-
 ```
 
 ## Function Parameters

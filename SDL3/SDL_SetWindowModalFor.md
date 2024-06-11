@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_SetWindowModalFor(SDL_Window *modal_window, SDL_Window *parent_window);
-
 ```
 
 ## Function Parameters

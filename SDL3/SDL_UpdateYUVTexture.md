@@ -15,7 +15,6 @@ int SDL_UpdateYUVTexture(SDL_Texture *texture,
                      const Uint8 *Yplane, int Ypitch,
                      const Uint8 *Uplane, int Upitch,
                      const Uint8 *Vplane, int Vpitch);
-
 ```
 
 ## Function Parameters

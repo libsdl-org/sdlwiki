@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_GetRenderVSync(SDL_Renderer *renderer, int *vsync);
-
 ```
 
 ## Function Parameters

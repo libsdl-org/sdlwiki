@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_vulkan.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_FunctionPointer SDL_Vulkan_GetVkGetInstanceProcAddr(void);
-
 ```
 
 ## Return Value

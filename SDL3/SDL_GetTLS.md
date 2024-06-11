@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void * SDL_GetTLS(SDL_TLSID id);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_sensor.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_GetSensorNonPortableType(SDL_Sensor *sensor);
-
 ```
 
 ## Function Parameters

@@ -14,7 +14,6 @@ SDL_bool SDL_GetRectAndLineIntersectionFloat(const SDL_FRect *
                                rect, float *X1,
                                float *Y1, float *X2,
                                float *Y2);
-
 ```
 
 ## Function Parameters

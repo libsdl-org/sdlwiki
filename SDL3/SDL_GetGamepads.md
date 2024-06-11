@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_JoystickID* SDL_GetGamepads(int *count);
-
 ```
 
 ## Function Parameters

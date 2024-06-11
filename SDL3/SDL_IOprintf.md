@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 size_t SDL_IOprintf(SDL_IOStream *context, const char *fmt, ...);
-
 ```
 
 ## Function Parameters

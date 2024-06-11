@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 int SDL_ReadStorageFile(SDL_Storage *storage, const char *path, void *destination, Uint64 length);
-
 ```
 
 ## Function Parameters

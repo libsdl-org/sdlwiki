@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_hid_free_enumeration(SDL_hid_device_info *devs);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 void SDL_UnlockSurface(SDL_Surface *surface);
-
 ```
 
 ## Function Parameters

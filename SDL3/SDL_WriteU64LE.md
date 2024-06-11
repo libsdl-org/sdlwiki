@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 SDL_bool SDL_WriteU64LE(SDL_IOStream *dst, Uint64 value);
-
 ```
 
 ## Function Parameters

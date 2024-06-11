@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 Sint64 SDL_GetIOSize(SDL_IOStream *context);
-
 ```
 
 ## Function Parameters

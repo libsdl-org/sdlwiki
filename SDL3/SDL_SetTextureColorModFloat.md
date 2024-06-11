@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_render.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_SetTextureColorModFloat(SDL_Texture *texture, float r, float g, float b);
-
 ```
 
 ## Function Parameters

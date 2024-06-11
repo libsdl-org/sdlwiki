@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 SDL_LogPriority SDL_GetLogPriority(int category);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 int SDL_wcsncasecmp(const wchar_t *str1, const wchar_t *str2, size_t maxlen);
-
 ```
 
 ## Function Parameters

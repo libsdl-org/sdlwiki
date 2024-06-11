@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_gamepad.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 const char* SDL_GetGamepadInstancePath(SDL_JoystickID instance_id);
-
 ```
 
 ## Function Parameters

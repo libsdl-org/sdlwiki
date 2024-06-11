@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_hidapi.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_hid_device * SDL_hid_open_path(const char *path);
-
 ```
 
 ## Function Parameters

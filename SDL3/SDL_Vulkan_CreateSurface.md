@@ -14,7 +14,6 @@ SDL_bool SDL_Vulkan_CreateSurface(SDL_Window *window,
                               VkInstance instance,
                               const struct VkAllocationCallbacks *allocator,
                               VkSurfaceKHR* surface);
-
 ```
 
 ## Function Parameters

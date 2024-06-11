@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_stdinc.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 char* SDL_strlwr(char *str);
-
 ```
 
 ## Function Parameters

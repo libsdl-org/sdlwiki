@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 const char* SDL_GetStringProperty(SDL_PropertiesID props, const char *name, const char *default_value);
-
 ```
 
 ## Function Parameters

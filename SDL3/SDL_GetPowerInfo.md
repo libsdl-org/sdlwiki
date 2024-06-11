@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_power.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_PowerState SDL_GetPowerInfo(int *seconds, int *percent);
-
 ```
 
 ## Function Parameters

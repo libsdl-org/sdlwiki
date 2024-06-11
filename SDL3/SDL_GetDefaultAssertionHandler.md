@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_assert.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_AssertionHandler SDL_GetDefaultAssertionHandler(void);
-
 ```
 
 ## Return Value

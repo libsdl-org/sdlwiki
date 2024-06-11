@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_surface.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_Surface* SDL_CreateSurface(int width, int height, SDL_PixelFormatEnum format);
-
 ```
 
 ## Function Parameters

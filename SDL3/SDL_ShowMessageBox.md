@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_messagebox.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 int SDL_ShowMessageBox(const SDL_MessageBoxData *messageboxdata, int *buttonid);
-
 ```
 
 ## Function Parameters

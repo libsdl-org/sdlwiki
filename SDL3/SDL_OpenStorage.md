@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_storage.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 SDL_Storage* SDL_OpenStorage(const SDL_StorageInterface *iface, void *userdata);
-
 ```
 
 ## Function Parameters

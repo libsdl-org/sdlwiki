@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 Uint8 SDL_GetJoystickButton(SDL_Joystick *joystick, int button);
-
 ```
 
 ## Function Parameters

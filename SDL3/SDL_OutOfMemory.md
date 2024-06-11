@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_error.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_OutOfMemory(void);
-
 ```
 
 ## Return Value

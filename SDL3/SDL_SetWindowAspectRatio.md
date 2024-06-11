@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_video.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_SetWindowAspectRatio(SDL_Window *window, float min_aspect, float max_aspect);
-
 ```
 
 ## Function Parameters

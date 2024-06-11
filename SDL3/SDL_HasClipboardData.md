@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_clipboard.h>](https://github.com/libsdl-org/SDL/blob/main/
 
 ```c
 SDL_bool SDL_HasClipboardData(const char *mime_type);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_cpuinfo.h>](https://github.com/libsdl-org/SDL/blob/main/in
 
 ```c
 int SDL_GetCPUCount(void);
-
 ```
 
 ## Return Value

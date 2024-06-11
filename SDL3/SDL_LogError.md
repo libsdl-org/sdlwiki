@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_log.h>](https://github.com/libsdl-org/SDL/blob/main/includ
 
 ```c
 void SDL_LogError(int category, const char *fmt, ...);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 SDL_Mutex* SDL_CreateMutex(void);
-
 ```
 
 ## Return Value

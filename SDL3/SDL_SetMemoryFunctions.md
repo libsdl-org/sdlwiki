@@ -14,7 +14,6 @@ int SDL_SetMemoryFunctions(SDL_malloc_func malloc_func,
                        SDL_calloc_func calloc_func,
                        SDL_realloc_func realloc_func,
                        SDL_free_func free_func);
-
 ```
 
 ## Function Parameters

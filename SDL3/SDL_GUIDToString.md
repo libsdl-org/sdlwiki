@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_guid.h>](https://github.com/libsdl-org/SDL/blob/main/inclu
 
 ```c
 int SDL_GUIDToString(SDL_GUID guid, char *pszGUID, int cbGUID);
-
 ```
 
 ## Function Parameters

@@ -14,7 +14,6 @@ SDL_bool SDL_GetRectEnclosingPoints(const SDL_Point * points,
                        int count,
                        const SDL_Rect * clip,
                        SDL_Rect * result);
-
 ```
 
 ## Function Parameters

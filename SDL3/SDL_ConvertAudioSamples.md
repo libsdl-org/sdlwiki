@@ -16,7 +16,6 @@ int SDL_ConvertAudioSamples(const SDL_AudioSpec *src_spec,
                         const SDL_AudioSpec *dst_spec,
                         Uint8 **dst_data,
                         int *dst_len);
-
 ```
 
 ## Function Parameters

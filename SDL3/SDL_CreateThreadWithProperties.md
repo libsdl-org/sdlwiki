@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_thread.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_Thread * SDL_CreateThreadWithProperties(SDL_PropertiesID props);
-
 ```
 
 ## Function Parameters

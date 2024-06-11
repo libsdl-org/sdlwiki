@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_atomic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_bool SDL_AtomicCompareAndSwapPointer(void **a, void *oldval, void *newval);
-
 ```
 
 ## Function Parameters

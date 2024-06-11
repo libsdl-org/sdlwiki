@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_locale.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_Locale * SDL_GetPreferredLocales(void);
-
 ```
 
 ## Return Value

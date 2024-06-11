@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_mutex.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_WaitSemaphoreTimeout(SDL_Semaphore *sem, Sint32 timeoutMS);
-
 ```
 
 ## Function Parameters

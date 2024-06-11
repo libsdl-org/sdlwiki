@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_metal.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 void SDL_Metal_DestroyView(SDL_MetalView view);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_haptic.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 const char* SDL_GetHapticInstanceName(SDL_HapticID instance_id);
-
 ```
 
 ## Function Parameters

@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 size_t SDL_ReadIO(SDL_IOStream *context, void *ptr, size_t size);
-
 ```
 
 ## Function Parameters

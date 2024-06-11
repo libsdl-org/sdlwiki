@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_properties.h>](https://github.com/libsdl-org/SDL/blob/main
 
 ```c
 int SDL_CopyProperties(SDL_PropertiesID src, SDL_PropertiesID dst);
-
 ```
 
 ## Function Parameters

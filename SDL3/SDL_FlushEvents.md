@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_events.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_FlushEvents(Uint32 minType, Uint32 maxType);
-
 ```
 
 ## Function Parameters

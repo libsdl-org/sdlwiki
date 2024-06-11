@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 void SDL_SetX11EventHook(SDL_X11EventHook callback, void *userdata);
-
 ```
 
 ## Function Parameters

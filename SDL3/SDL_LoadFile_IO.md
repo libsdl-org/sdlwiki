@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_iostream.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 void* SDL_LoadFile_IO(SDL_IOStream *src, size_t *datasize, SDL_bool closeio);
-
 ```
 
 ## Function Parameters

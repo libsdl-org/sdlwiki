@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_joystick.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 int SDL_SendJoystickEffect(SDL_Joystick *joystick, const void *data, int size);
-
 ```
 
 ## Function Parameters

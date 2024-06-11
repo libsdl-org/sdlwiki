@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_audio.h>](https://github.com/libsdl-org/SDL/blob/main/incl
 
 ```c
 int SDL_GetSilenceValueForFormat(SDL_AudioFormat format);
-
 ```
 
 ## Function Parameters

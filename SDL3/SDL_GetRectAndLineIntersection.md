@@ -14,7 +14,6 @@ SDL_bool SDL_GetRectAndLineIntersection(const SDL_Rect *
                               rect, int *X1,
                               int *Y1, int *X2,
                               int *Y2);
-
 ```
 
 ## Function Parameters

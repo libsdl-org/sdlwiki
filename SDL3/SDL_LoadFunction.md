@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_loadso.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 SDL_FunctionPointer SDL_LoadFunction(void *handle, const char *name);
-
 ```
 
 ## Function Parameters

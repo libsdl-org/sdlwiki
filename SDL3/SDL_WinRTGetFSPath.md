@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_system.h>](https://github.com/libsdl-org/SDL/blob/main/inc
 
 ```c
 const char * SDL_WinRTGetFSPath(SDL_WinRT_Path pathType);
-
 ```
 
 ## Function Parameters

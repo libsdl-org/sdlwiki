@@ -11,7 +11,6 @@ Defined in [<SDL3/SDL_keyboard.h>](https://github.com/libsdl-org/SDL/blob/main/i
 
 ```c
 const char* SDL_GetScancodeName(SDL_Scancode scancode);
-
 ```
 
 ## Function Parameters
