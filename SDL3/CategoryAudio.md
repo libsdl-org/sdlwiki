@@ -21,17 +21,20 @@ SDL also provides a simple .WAV loader in [SDL_LoadWAV](SDL_LoadWAV) (and
 [SDL_LoadWAV_IO](SDL_LoadWAV_IO) if you aren't reading from a file) as a
 basic means to load sound data into your program.
 
-For multi-channel audio, the default SDL channel mapping is:
+For multi-channel audio, data is interleaved (one sample for each channel,
+then repeat). The SDL channel order is:
 
-```
-2:  FL  FR                          (stereo)
-3:  FL  FR LFE                      (2.1 surround)
-4:  FL  FR  BL  BR                  (quad)
-5:  FL  FR LFE  BL  BR              (4.1 surround)
-6:  FL  FR  FC LFE  SL  SR          (5.1 surround - last two can also be BL BR)
-7:  FL  FR  FC LFE  BC  SL  SR      (6.1 surround)
-8:  FL  FR  FC LFE  BL  BR  SL  SR  (7.1 surround)
-```
+- Stereo: FL, FR
+- 2.1 surround: FL, FR, LFE
+- Quad: FL, FR, BL, BR
+- 4.1 surround: FL, FR, LFE, BL, BR
+- 5.1 surround: FL, FR, FC, LFE, SL, SR (last two can also be BL BR)
+- 6.1 surround: FL, FR, FC, LFE, BC, SL, SR
+- 5.1 surround: FL, FR, FC, LFE, BL, BR, SL, SR
+
+This is the same order as DirectSound expects, but applied to all
+platforms; SDL will swizzle the channels as necessary if a platform expects
+something different.
 
 <!-- END CATEGORY DOCUMENTATION -->
 
