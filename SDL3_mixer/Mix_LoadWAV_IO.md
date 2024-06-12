@@ -5,25 +5,24 @@ Load a supported audio format into a chunk.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_LoadWAV_IO(SDL_IOStream *src, SDL_bool closeio);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **src**         | an SDL_IOStream that data will be read from.                                     |
-| **closeio**     | SDL_TRUE to close the SDL_IOStream before returning, SDL_FALSE to leave it open. |
+|                |             |                                                                                  |
+| -------------- | ----------- | -------------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream that data will be read from.                                     |
+| SDL_bool       | **closeio** | SDL_TRUE to close the SDL_IOStream before returning, SDL_FALSE to leave it open. |
 
 ## Return Value
 
-Returns a new chunk, or NULL on error.
+([Mix_Chunk](Mix_Chunk) *) Returns a new chunk, or NULL on error.
 
 ## Remarks
 

@@ -5,25 +5,24 @@ Query whether a particular channel is paused.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_Paused(int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                    |
-| --------------- | -------------------------------------------------- |
-| **channel**     | the channel to query, or -1 to query all channels. |
+|     |             |                                                    |
+| --- | ----------- | -------------------------------------------------- |
+| int | **channel** | the channel to query, or -1 to query all channels. |
 
 ## Return Value
 
-Return 1 if channel paused, 0 otherwise. If `channel` is -1, returns the
-number of paused channels.
+(int) Return 1 if channel paused, 0 otherwise. If `channel` is -1, returns
+the number of paused channels.
 
 ## Remarks
 

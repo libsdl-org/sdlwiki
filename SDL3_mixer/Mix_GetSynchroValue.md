@@ -5,18 +5,17 @@ This function does nothing, do not use.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GetSynchroValue(void);
-
 ```
 
 ## Return Value
 
-Returns -1.
+(int) Returns -1.
 
 ## Remarks
 

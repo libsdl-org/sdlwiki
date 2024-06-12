@@ -5,24 +5,23 @@ Run an external command as the music stream.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetMusicCMD(const char *command);
-
 ```
 
 ## Function Parameters
 
-|                 |         |
-| --------------- | ------- |
-| **command**     | command |
+|              |             |         |
+| ------------ | ----------- | ------- |
+| const char * | **command** | command |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error
+(int) Returns 0 if successful, -1 on error
 
 ## Remarks
 

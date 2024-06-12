@@ -5,20 +5,19 @@ Free an audio chunk.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 void Mix_FreeChunk(Mix_Chunk *chunk);
-
 ```
 
 ## Function Parameters
 
-|               |                    |
-| ------------- | ------------------ |
-| **chunk**     | the chunk to free. |
+|                          |           |                    |
+| ------------------------ | --------- | ------------------ |
+| [Mix_Chunk](Mix_Chunk) * | **chunk** | the chunk to free. |
 
 ## Remarks
 

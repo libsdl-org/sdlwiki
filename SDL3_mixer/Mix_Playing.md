@@ -5,25 +5,24 @@ Check the playing status of a specific channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_Playing(int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |         |
-| --------------- | ------- |
-| **channel**     | channel |
+|     |             |         |
+| --- | ----------- | ------- |
+| int | **channel** | channel |
 
 ## Return Value
 
-Returns non-zero if channel is playing, zero otherwise. If `channel` is -1,
-return the total number of channel playings.
+(int) Returns non-zero if channel is playing, zero otherwise. If `channel`
+is -1, return the total number of channel playings.
 
 ## Remarks
 

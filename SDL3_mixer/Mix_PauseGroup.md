@@ -5,24 +5,23 @@ Pause playing of a group of channels by arbitrary tag.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_PauseGroup(int tag);
-
 ```
 
 ## Function Parameters
 
-|             |                                                          |
-| ----------- | -------------------------------------------------------- |
-| **tag**     | an arbitrary value, assigned to channels, to search for. |
+|     |         |                                                          |
+| --- | ------- | -------------------------------------------------------- |
+| int | **tag** | an arbitrary value, assigned to channels, to search for. |
 
 ## Return Value
 
-Returns zero, whether any channels were halted or not.
+(int) Returns zero, whether any channels were halted or not.
 
 ## Remarks
 

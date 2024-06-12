@@ -5,25 +5,24 @@ Check if a music decoder is available by name.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 SDL_bool Mix_HasMusicDecoder(const char *name);
-
 ```
 
 ## Function Parameters
 
-|              |                            |
-| ------------ | -------------------------- |
-| **name**     | the decoder name to query. |
+|              |          |                            |
+| ------------ | -------- | -------------------------- |
+| const char * | **name** | the decoder name to query. |
 
 ## Return Value
 
-Returns SDL_TRUE if a decoder by that name is available, SDL_FALSE
-otherwise.
+(SDL_bool) Returns SDL_TRUE if a decoder by that name is available,
+SDL_FALSE otherwise.
 
 ## Remarks
 

@@ -5,20 +5,19 @@ Resume a particular channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 void Mix_Resume(int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                             |
-| --------------- | ----------------------------------------------------------- |
-| **channel**     | the channel to resume, or -1 to resume all paused channels. |
+|     |             |                                                             |
+| --- | ----------- | ----------------------------------------------------------- |
+| int | **channel** | the channel to resume, or -1 to resume all paused channels. |
 
 ## Remarks
 

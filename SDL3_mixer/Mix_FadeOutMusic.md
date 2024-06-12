@@ -5,25 +5,24 @@ Halt the music stream after fading it out for a specified time.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeOutMusic(int ms);
-
 ```
 
 ## Function Parameters
 
-|            |                                                            |
-| ---------- | ---------------------------------------------------------- |
-| **ms**     | number of milliseconds to fade before halting the channel. |
+|     |        |                                                            |
+| --- | ------ | ---------------------------------------------------------- |
+| int | **ms** | number of milliseconds to fade before halting the channel. |
 
 ## Return Value
 
-Returns non-zero if music was scheduled to fade, zero otherwise. If no
-music is currently playing, this returns zero.
+(int) Returns non-zero if music was scheduled to fade, zero otherwise. If
+no music is currently playing, this returns zero.
 
 ## Remarks
 

@@ -5,24 +5,23 @@ Reserve the first channels for the application.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_ReserveChannels(int num);
-
 ```
 
 ## Function Parameters
 
-|             |                                                        |
-| ----------- | ------------------------------------------------------ |
-| **num**     | number of channels to reserve, starting at index zero. |
+|     |         |                                                        |
+| --- | ------- | ------------------------------------------------------ |
+| int | **num** | number of channels to reserve, starting at index zero. |
 
 ## Return Value
 
-Returns the number of reserved channels.
+(int) Returns the number of reserved channels.
 
 ## Remarks
 

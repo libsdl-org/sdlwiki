@@ -5,25 +5,24 @@ Load a raw audio data from memory as quickly as possible.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_QuickLoad_RAW(Uint8 *mem, Uint32 len);
-
 ```
 
 ## Function Parameters
 
-|             |                                                 |
-| ----------- | ----------------------------------------------- |
-| **mem**     | memory buffer containing raw PCM data.          |
-| **len**     | length of buffer pointed to by `mem`, in bytes. |
+|         |         |                                                 |
+| ------- | ------- | ----------------------------------------------- |
+| Uint8 * | **mem** | memory buffer containing raw PCM data.          |
+| Uint32  | **len** | length of buffer pointed to by `mem`, in bytes. |
 
 ## Return Value
 
-Returns a new chunk, or NULL on error.
+([Mix_Chunk](Mix_Chunk) *) Returns a new chunk, or NULL on error.
 
 ## Remarks
 

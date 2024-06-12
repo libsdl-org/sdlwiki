@@ -5,24 +5,23 @@ Finds the first available channel in a group of channels.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GroupAvailable(int tag);
-
 ```
 
 ## Function Parameters
 
-|             |                                                          |
-| ----------- | -------------------------------------------------------- |
-| **tag**     | an arbitrary value, assigned to channels, to search for. |
+|     |         |                                                          |
+| --- | ------- | -------------------------------------------------------- |
+| int | **tag** | an arbitrary value, assigned to channels, to search for. |
 
 ## Return Value
 
-Returns first available channel, or -1 if none are available.
+(int) Returns first available channel, or -1 if none are available.
 
 ## Remarks
 

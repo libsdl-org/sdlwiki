@@ -5,26 +5,26 @@ Explicitly unregister a special effect function.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_UnregisterEffect(int channel, Mix_EffectFunc_t f);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **channel**     | the channel to unregister an effect on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **f**           | effect the callback stop calling in future mixing iterations.                    |
+|                                      |             |                                                                                  |
+| ------------------------------------ | ----------- | -------------------------------------------------------------------------------- |
+| int                                  | **channel** | the channel to unregister an effect on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| [Mix_EffectFunc_t](Mix_EffectFunc_t) | **f**       | effect the callback stop calling in future mixing iterations.                    |
 
 ## Return Value
 
-Returns zero if error (no such channel or effect), nonzero if removed.
-Error messages can be retrieved from [Mix_GetError](Mix_GetError)().
+(int) Returns zero if error (no such channel or effect), nonzero if
+removed. Error messages can be retrieved from
+[Mix_GetError](Mix_GetError)().
 
 ## Remarks
 

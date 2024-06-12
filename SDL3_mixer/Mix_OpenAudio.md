@@ -5,25 +5,24 @@ Open an audio device for playback.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_OpenAudio(SDL_AudioDeviceID devid, const SDL_AudioSpec *spec);
-
 ```
 
 ## Function Parameters
 
-|               |                                                         |
-| ------------- | ------------------------------------------------------- |
-| **devid**     | the device name to open, or 0 for a reasonable default. |
-| **spec**      | the audio format you'd like SDL_mixer to work in.       |
+|                       |           |                                                         |
+| --------------------- | --------- | ------------------------------------------------------- |
+| SDL_AudioDeviceID     | **devid** | the device name to open, or 0 for a reasonable default. |
+| const SDL_AudioSpec * | **spec**  | the audio format you'd like SDL_mixer to work in.       |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

@@ -5,28 +5,27 @@ Register a special effect function.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_RegisterEffect(int chan, Mix_EffectFunc_t f, Mix_EffectDone_t d, void *arg);
-
 ```
 
 ## Function Parameters
 
-|              |                                                                                |
-| ------------ | ------------------------------------------------------------------------------ |
-| **chan**     | the channel to register an effect to, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **f**        | effect the callback to run when more of this channel is to be mixed.           |
-| **d**        | effect done callback                                                           |
-| **arg**      | argument                                                                       |
+|                                      |          |                                                                                |
+| ------------------------------------ | -------- | ------------------------------------------------------------------------------ |
+| int                                  | **chan** | the channel to register an effect to, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| [Mix_EffectFunc_t](Mix_EffectFunc_t) | **f**    | effect the callback to run when more of this channel is to be mixed.           |
+| [Mix_EffectDone_t](Mix_EffectDone_t) | **d**    | effect done callback                                                           |
+| void *                               | **arg**  | argument                                                                       |
 
 ## Return Value
 
-Returns zero if error (no such channel), nonzero if added. Error messages
-can be retrieved from [Mix_GetError](Mix_GetError)().
+(int) Returns zero if error (no such channel), nonzero if added. Error
+messages can be retrieved from [Mix_GetError](Mix_GetError)().
 
 ## Remarks
 

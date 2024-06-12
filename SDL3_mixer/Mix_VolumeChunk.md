@@ -5,26 +5,25 @@ Set the volume for a specific chunk.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_VolumeChunk(Mix_Chunk *chunk, int volume);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                 |
-| -------------- | ------------------------------------------------------------------------------- |
-| **chunk**      | the chunk whose volume to adjust.                                               |
-| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+|                          |            |                                                                                 |
+| ------------------------ | ---------- | ------------------------------------------------------------------------------- |
+| [Mix_Chunk](Mix_Chunk) * | **chunk**  | the chunk whose volume to adjust.                                               |
+| int                      | **volume** | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
 
 ## Return Value
 
-Returns the previous volume. If the specified volume is -1, this returns
-the current volume. If `chunk` is NULL, this returns -1.
+(int) Returns the previous volume. If the specified volume is -1, this
+returns the current volume. If `chunk` is NULL, this returns -1.
 
 ## Remarks
 

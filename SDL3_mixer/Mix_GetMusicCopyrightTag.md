@@ -5,24 +5,23 @@ Get the copyright text for a music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char* Mix_GetMusicCopyrightTag(const Mix_Music *music);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                     |
-| ------------- | ------------------------------------------------------------------- |
-| **music**     | the music object to query, or NULL for the currently-playing music. |
+|                                |           |                                                                     |
+| ------------------------------ | --------- | ------------------------------------------------------------------- |
+| const [Mix_Music](Mix_Music) * | **music** | the music object to query, or NULL for the currently-playing music. |
 
 ## Return Value
 
-Returns the music's copyright text if available, or "".
+(const char *) Returns the music's copyright text if available, or "".
 
 ## Remarks
 

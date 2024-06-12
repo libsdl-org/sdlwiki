@@ -5,28 +5,27 @@ Play an audio chunk on a specific channel, fading in the audio.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeInChannel(int channel, Mix_Chunk *chunk, int loops, int ms);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **channel**     | the channel on which to play the new chunk, or -1 to find any available.         |
-| **chunk**       | the new chunk to play.                                                           |
-| **loops**       | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
-| **ms**          | the number of milliseconds to spend fading in.                                   |
+|                          |             |                                                                                  |
+| ------------------------ | ----------- | -------------------------------------------------------------------------------- |
+| int                      | **channel** | the channel on which to play the new chunk, or -1 to find any available.         |
+| [Mix_Chunk](Mix_Chunk) * | **chunk**   | the new chunk to play.                                                           |
+| int                      | **loops**   | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| int                      | **ms**      | the number of milliseconds to spend fading in.                                   |
 
 ## Return Value
 
-Returns which channel was used to play the sound, or -1 if sound could not
-be played.
+(int) Returns which channel was used to play the sound, or -1 if sound
+could not be played.
 
 ## Remarks
 

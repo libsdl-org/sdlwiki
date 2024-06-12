@@ -5,18 +5,17 @@ Query whether the music stream is paused.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_PausedMusic(void);
-
 ```
 
 ## Return Value
 
-Return 1 if music is paused, 0 otherwise.
+(int) Return 1 if music is paused, 0 otherwise.
 
 ## Version
 

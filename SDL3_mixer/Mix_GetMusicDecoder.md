@@ -5,24 +5,23 @@ Get a music decoder's name.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char * Mix_GetMusicDecoder(int index);
-
 ```
 
 ## Function Parameters
 
-|               |                             |
-| ------------- | --------------------------- |
-| **index**     | index of the music decoder. |
+|     |           |                             |
+| --- | --------- | --------------------------- |
+| int | **index** | index of the music decoder. |
 
 ## Return Value
 
-Returns the music decoder's name.
+(const char *) Returns the music decoder's name.
 
 ## Remarks
 

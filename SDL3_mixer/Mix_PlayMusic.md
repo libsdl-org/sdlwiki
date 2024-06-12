@@ -5,25 +5,24 @@ Play a new music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_PlayMusic(Mix_Music *music, int loops);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                           |
-| ------------- | ------------------------------------------------------------------------- |
-| **music**     | the new music object to schedule for mixing.                              |
-| **loops**     | the number of loops to play the music for (0 means "play once and stop"). |
+|                          |           |                                                                           |
+| ------------------------ | --------- | ------------------------------------------------------------------------- |
+| [Mix_Music](Mix_Music) * | **music** | the new music object to schedule for mixing.                              |
+| int                      | **loops** | the number of loops to play the music for (0 means "play once and stop"). |
 
 ## Return Value
 
-Returns zero on success, -1 on error.
+(int) Returns zero on success, -1 on error.
 
 ## Remarks
 

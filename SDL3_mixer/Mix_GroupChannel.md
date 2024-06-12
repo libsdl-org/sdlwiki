@@ -5,25 +5,24 @@ Assign a tag to a channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GroupChannel(int which, int tag);
-
 ```
 
 ## Function Parameters
 
-|               |                                         |
-| ------------- | --------------------------------------- |
-| **which**     | the channel to set the tag on.          |
-| **tag**       | an arbitrary value to assign a channel. |
+|     |           |                                         |
+| --- | --------- | --------------------------------------- |
+| int | **which** | the channel to set the tag on.          |
+| int | **tag**   | an arbitrary value to assign a channel. |
 
 ## Return Value
 
-Returns non-zero on success, zero on error (no such channel).
+(int) Returns non-zero on success, zero on error (no such channel).
 
 ## Remarks
 

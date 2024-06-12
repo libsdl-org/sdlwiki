@@ -5,24 +5,23 @@ Find the "oldest" sample playing in a group of channels.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GroupOldest(int tag);
-
 ```
 
 ## Function Parameters
 
-|             |                                                              |
-| ----------- | ------------------------------------------------------------ |
-| **tag**     | an arbitrary value, assigned to channels, to search through. |
+|     |         |                                                              |
+| --- | ------- | ------------------------------------------------------------ |
+| int | **tag** | an arbitrary value, assigned to channels, to search through. |
 
 ## Return Value
 
-Returns the "oldest" sample playing in a group of channels
+(int) Returns the "oldest" sample playing in a group of channels
 
 ## Remarks
 

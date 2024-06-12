@@ -5,28 +5,27 @@ Play an audio chunk on a specific channel for a maximum time.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_PlayChannelTimed(int channel, Mix_Chunk *chunk, int loops, int ticks);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                  |
-| --------------- | -------------------------------------------------------------------------------- |
-| **channel**     | the channel on which to play the new chunk.                                      |
-| **chunk**       | the new chunk to play.                                                           |
-| **loops**       | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
-| **ticks**       | the maximum number of milliseconds of this chunk to mix for playback.            |
+|                          |             |                                                                                  |
+| ------------------------ | ----------- | -------------------------------------------------------------------------------- |
+| int                      | **channel** | the channel on which to play the new chunk.                                      |
+| [Mix_Chunk](Mix_Chunk) * | **chunk**   | the new chunk to play.                                                           |
+| int                      | **loops**   | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| int                      | **ticks**   | the maximum number of milliseconds of this chunk to mix for playback.            |
 
 ## Return Value
 
-Returns which channel was used to play the sound, or -1 if sound could not
-be played.
+(int) Returns which channel was used to play the sound, or -1 if sound
+could not be played.
 
 ## Remarks
 

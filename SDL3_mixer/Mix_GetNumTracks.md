@@ -5,24 +5,23 @@ Get number of tracks in music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GetNumTracks(Mix_Music *music);
-
 ```
 
 ## Function Parameters
 
-|               |                   |
-| ------------- | ----------------- |
-| **music**     | the music object. |
+|                          |           |                   |
+| ------------------------ | --------- | ----------------- |
+| [Mix_Music](Mix_Music) * | **music** | the music object. |
 
 ## Return Value
 
-Returns number of tracks if successful, or -1 if failed or isn't
+(int) Returns number of tracks if successful, or -1 if failed or isn't
 implemented.
 
 ## Remarks

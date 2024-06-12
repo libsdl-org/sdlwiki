@@ -5,24 +5,23 @@ Set full path of the Timidity config file.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetTimidityCfg(const char *path);
-
 ```
 
 ## Function Parameters
 
-|              |                                 |
-| ------------ | ------------------------------- |
-| **path**     | path to a Timidity config file. |
+|              |          |                                 |
+| ------------ | -------- | ------------------------------- |
+| const char * | **path** | path to a Timidity config file. |
 
 ## Return Value
 
-Returns 1 if successful, 0 on error
+(int) Returns 1 if successful, 0 on error
 
 ## Remarks
 

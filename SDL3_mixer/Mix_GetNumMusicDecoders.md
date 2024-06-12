@@ -5,18 +5,17 @@ Get a list of music decoders that this build of SDL_mixer provides.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GetNumMusicDecoders(void);
-
 ```
 
 ## Return Value
 
-Returns number of music decoders available.
+(int) Returns number of music decoders available.
 
 ## Remarks
 

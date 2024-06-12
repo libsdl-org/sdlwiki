@@ -5,24 +5,23 @@ Dynamically change the number of channels managed by the mixer.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_AllocateChannels(int numchans);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                    |
-| ---------------- | ------------------------------------------------------------------ |
-| **numchans**     | the new number of channels, or < 0 to query current channel count. |
+|     |              |                                                                    |
+| --- | ------------ | ------------------------------------------------------------------ |
+| int | **numchans** | the new number of channels, or < 0 to query current channel count. |
 
 ## Return Value
 
-Returns the new number of allocated channels.
+(int) Returns the new number of allocated channels.
 
 ## Remarks
 

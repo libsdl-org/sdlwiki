@@ -5,26 +5,25 @@ Iterate SoundFonts paths to use by supported MIDI backends.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
-int Mix_EachSoundFont(int (SDLCALL *function)(const char*, void*), void *data);
-
+int Mix_EachSoundFont(Mix_EachSoundFontCallback function, void *data);
 ```
 
 ## Function Parameters
 
-|                  |                                                             |
-| ---------------- | ----------------------------------------------------------- |
-| **function**     | the callback function to call once per path.                |
-| **data**         | a pointer to pass to the callback for its own personal use. |
+|                                                        |              |                                                             |
+| ------------------------------------------------------ | ------------ | ----------------------------------------------------------- |
+| [Mix_EachSoundFontCallback](Mix_EachSoundFontCallback) | **function** | the callback function to call once per path.                |
+| void *                                                 | **data**     | a pointer to pass to the callback for its own personal use. |
 
 ## Return Value
 
-Returns non-zero if callback ever returned non-zero, 0 on error or the
-callback never returned non-zero.
+(int) Returns non-zero if callback ever returned non-zero, 0 on error or
+the callback never returned non-zero.
 
 ## Remarks
 

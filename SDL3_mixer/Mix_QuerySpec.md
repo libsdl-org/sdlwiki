@@ -5,26 +5,25 @@ Find out what the actual audio device parameters are.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_QuerySpec(int *frequency, Uint16 *format, int *channels);
-
 ```
 
 ## Function Parameters
 
-|                   |                                                                    |
-| ----------------- | ------------------------------------------------------------------ |
-| **frequency**     | On return, will be filled with the audio device's frequency in Hz. |
-| **format**        | On return, will be filled with the audio device's format.          |
-| **channels**      | On return, will be filled with the audio device's channel count.   |
+|          |               |                                                                    |
+| -------- | ------------- | ------------------------------------------------------------------ |
+| int *    | **frequency** | On return, will be filled with the audio device's frequency in Hz. |
+| Uint16 * | **format**    | On return, will be filled with the audio device's format.          |
+| int *    | **channels**  | On return, will be filled with the audio device's channel count.   |
 
 ## Return Value
 
-Returns 1 if the audio device has been opened, 0 otherwise.
+(int) Returns 1 if the audio device has been opened, 0 otherwise.
 
 ## Remarks
 

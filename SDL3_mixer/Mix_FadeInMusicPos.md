@@ -5,27 +5,26 @@ Play a new music object, fading in the audio, from a starting position.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeInMusicPos(Mix_Music *music, int loops, int ms, double position);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                                  |
-| ---------------- | -------------------------------------------------------------------------------- |
-| **music**        | the new music object to play.                                                    |
-| **loops**        | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
-| **ms**           | the number of milliseconds to spend fading in.                                   |
-| **position**     | the start position within the music, in seconds, where playback should start.    |
+|                          |              |                                                                                  |
+| ------------------------ | ------------ | -------------------------------------------------------------------------------- |
+| [Mix_Music](Mix_Music) * | **music**    | the new music object to play.                                                    |
+| int                      | **loops**    | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| int                      | **ms**       | the number of milliseconds to spend fading in.                                   |
+| double                   | **position** | the start position within the music, in seconds, where playback should start.    |
 
 ## Return Value
 
-Returns zero on success, -1 on error.
+(int) Returns zero on success, -1 on error.
 
 ## Remarks
 

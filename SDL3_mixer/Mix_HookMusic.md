@@ -5,21 +5,20 @@ Add your own music player or additional mixer function.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
-void Mix_HookMusic(void (SDLCALL *mix_func)(void *udata, Uint8 *stream, int len), void *arg);
-
+void Mix_HookMusic(Mix_MixCallback mix_func, void *arg);
 ```
 
 ## Function Parameters
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **mix_func**     | the callback function to become the new post-mix callback. |
-| **arg**          | a pointer that is passed, untouched, to the callback.      |
+|                                    |              |                                                            |
+| ---------------------------------- | ------------ | ---------------------------------------------------------- |
+| [Mix_MixCallback](Mix_MixCallback) | **mix_func** | the callback function to become the new post-mix callback. |
+| void *                             | **arg**      | a pointer that is passed, untouched, to the callback.      |
 
 ## Remarks
 

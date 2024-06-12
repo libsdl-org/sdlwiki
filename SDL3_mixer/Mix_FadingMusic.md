@@ -5,18 +5,18 @@ Query the fading status of the music stream.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Fading Mix_FadingMusic(void);
-
 ```
 
 ## Return Value
 
-Returns the current fading status of the music stream.
+([Mix_Fading](Mix_Fading)) Returns the current fading status of the music
+stream.
 
 ## Remarks
 

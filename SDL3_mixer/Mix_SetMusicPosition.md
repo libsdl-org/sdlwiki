@@ -5,24 +5,23 @@ Set the current position in the music stream, in seconds.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL3_mixer/SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/main/include/SDL3_mixer/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetMusicPosition(double position);
-
 ```
 
 ## Function Parameters
 
-|                  |                                             |
-| ---------------- | ------------------------------------------- |
-| **position**     | the new position, in seconds (as a double). |
+|        |              |                                             |
+| ------ | ------------ | ------------------------------------------- |
+| double | **position** | the new position, in seconds (as a double). |
 
 ## Return Value
 
-Returns 0 if successful, or -1 if it failed or not implemented.
+(int) Returns 0 if successful, or -1 if it failed or not implemented.
 
 ## Remarks
 
