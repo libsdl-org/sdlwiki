@@ -5,21 +5,20 @@ Set a font's current hinter setting.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 void TTF_SetFontHinting(TTF_Font *font, int hinting);
-
 ```
 
 ## Function Parameters
 
-|                 |                                          |
-| --------------- | ---------------------------------------- |
-| **font**        | the font to set a new hinter setting on. |
-| **hinting**     | the new hinter setting.                  |
+|                        |             |                                          |
+| ---------------------- | ----------- | ---------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font**    | the font to set a new hinter setting on. |
+| int                    | **hinting** | the new hinter setting.                  |
 
 ## Remarks
 

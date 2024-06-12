@@ -5,27 +5,27 @@ Create a font from an SDL_IOStream, using a specified face index.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 TTF_Font * TTF_OpenFontIndexIO(SDL_IOStream *src, SDL_bool closeio, int ptsize, long index);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                              |
-| --------------- | ---------------------------------------------------------------------------- |
-| **src**         | an SDL_IOStream to provide a font file's data.                               |
-| **closeio**     | SDL_TRUE to close `src` when the font is closed, SDL_FALSE to leave it open. |
-| **ptsize**      | point size to use for the newly-opened font.                                 |
-| **index**       | index of the face in the font file.                                          |
+|                |             |                                                                              |
+| -------------- | ----------- | ---------------------------------------------------------------------------- |
+| SDL_IOStream * | **src**     | an SDL_IOStream to provide a font file's data.                               |
+| SDL_bool       | **closeio** | SDL_TRUE to close `src` when the font is closed, SDL_FALSE to leave it open. |
+| int            | **ptsize**  | point size to use for the newly-opened font.                                 |
+| long           | **index**   | index of the face in the font file.                                          |
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
+error.
 
 ## Remarks
 

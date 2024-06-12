@@ -5,27 +5,26 @@ Calculate the dimensions of a rendered string of Latin1 text.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 int TTF_SizeText(TTF_Font *font, const char *text, int *w, int *h);
-
 ```
 
 ## Function Parameters
 
-|              |                                                   |
-| ------------ | ------------------------------------------------- |
-| **font**     | the font to query.                                |
-| **text**     | text to calculate, in Latin1 encoding.            |
-| **w**        | will be filled with width, in pixels, on return.  |
-| **h**        | will be filled with height, in pixels, on return. |
+|                        |          |                                                   |
+| ---------------------- | -------- | ------------------------------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to query.                                |
+| const char *           | **text** | text to calculate, in Latin1 encoding.            |
+| int *                  | **w**    | will be filled with width, in pixels, on return.  |
+| int *                  | **h**    | will be filled with height, in pixels, on return. |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

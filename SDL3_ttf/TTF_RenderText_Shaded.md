@@ -5,28 +5,28 @@ Render Latin1 text at high quality to a new 8-bit surface.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 SDL_Surface * TTF_RenderText_Shaded(TTF_Font *font,
                 const char *text, SDL_Color fg, SDL_Color bg);
-
 ```
 
 ## Function Parameters
 
-|              |                                     |
-| ------------ | ----------------------------------- |
-| **font**     | the font to render with.            |
-| **text**     | text to render, in Latin1 encoding. |
-| **fg**       | the foreground color for the text.  |
-| **bg**       | the background color for the text.  |
+|                        |          |                                     |
+| ---------------------- | -------- | ----------------------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to render with.            |
+| const char *           | **text** | text to render, in Latin1 encoding. |
+| SDL_Color              | **fg**   | the foreground color for the text.  |
+| SDL_Color              | **bg**   | the background color for the text.  |
 
 ## Return Value
 
-Returns a new 8-bit, palettized surface, or NULL if there was an error.
+(SDL_Surface *) Returns a new 8-bit, palettized surface, or NULL if there
+was an error.
 
 ## Remarks
 

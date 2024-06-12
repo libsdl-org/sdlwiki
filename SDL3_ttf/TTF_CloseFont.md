@@ -5,20 +5,19 @@ Dispose of a previously-created font.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 void TTF_CloseFont(TTF_Font *font);
-
 ```
 
 ## Function Parameters
 
-|              |                         |
-| ------------ | ----------------------- |
-| **font**     | the font to dispose of. |
+|                        |          |                         |
+| ---------------------- | -------- | ----------------------- |
+| [TTF_Font](TTF_Font) * | **font** | the font to dispose of. |
 
 ## Remarks
 

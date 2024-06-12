@@ -5,24 +5,23 @@ Query a font's style name.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 const char * TTF_FontFaceStyleName(const TTF_Font *font);
-
 ```
 
 ## Function Parameters
 
-|              |                    |
-| ------------ | ------------------ |
-| **font**     | the font to query. |
+|                              |          |                    |
+| ---------------------------- | -------- | ------------------ |
+| const [TTF_Font](TTF_Font) * | **font** | the font to query. |
 
 ## Return Value
 
-Returns the font's style name.
+(const char *) Returns the font's style name.
 
 ## Remarks
 

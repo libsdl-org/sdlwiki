@@ -5,25 +5,25 @@ Create a font from a file, using a specified point size.
 
 ## Header File
 
-Defined in SDL_ttf.h
+Defined in [<SDL3_ttf/SDL_ttf.h>](https://github.com/libsdl-org/SDL_ttf/blob/main/include/SDL3_ttf/SDL_ttf.h)
 
 ## Syntax
 
 ```c
 TTF_Font * TTF_OpenFont(const char *file, int ptsize);
-
 ```
 
 ## Function Parameters
 
-|                |                                              |
-| -------------- | -------------------------------------------- |
-| **file**       | path to font file.                           |
-| **ptsize**     | point size to use for the newly-opened font. |
+|              |            |                                              |
+| ------------ | ---------- | -------------------------------------------- |
+| const char * | **file**   | path to font file.                           |
+| int          | **ptsize** | point size to use for the newly-opened font. |
 
 ## Return Value
 
-Returns a valid [TTF_Font](TTF_Font), or NULL on error.
+([TTF_Font](TTF_Font) *) Returns a valid [TTF_Font](TTF_Font), or NULL on
+error.
 
 ## Remarks
 
