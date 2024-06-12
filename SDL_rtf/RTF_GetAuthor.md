@@ -5,24 +5,23 @@ Get the author of an RTF document.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 const char * RTF_GetAuthor(RTF_Context *ctx);
-
 ```
 
 ## Function Parameters
 
-|             |                           |
-| ----------- | ------------------------- |
-| **ctx**     | the RTF context to query. |
+|                              |         |                           |
+| ---------------------------- | ------- | ------------------------- |
+| [RTF_Context](RTF_Context) * | **ctx** | the RTF context to query. |
 
 ## Return Value
 
-Returns the document author in UTF-8 encoding.
+(const char *) Returns the document author in UTF-8 encoding.
 
 ## Remarks
 

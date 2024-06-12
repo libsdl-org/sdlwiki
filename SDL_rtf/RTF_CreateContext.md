@@ -5,25 +5,25 @@ Create an RTF display context, with the given font engine.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 RTF_Context * RTF_CreateContext(SDL_Renderer *renderer, RTF_FontEngine *fontEngine);
-
 ```
 
 ## Function Parameters
 
-|                    |                                            |
-| ------------------ | ------------------------------------------ |
-| **renderer**       | an SDL renderer to use for drawing.        |
-| **fontEngine**     | the font engine to use for rendering text. |
+|                                    |                |                                            |
+| ---------------------------------- | -------------- | ------------------------------------------ |
+| SDL_Renderer *                     | **renderer**   | an SDL renderer to use for drawing.        |
+| [RTF_FontEngine](RTF_FontEngine) * | **fontEngine** | the font engine to use for rendering text. |
 
 ## Return Value
 
-Returns a new RTF display context, or NULL on error.
+([RTF_Context](RTF_Context) *) Returns a new RTF display context, or NULL
+on error.
 
 ## Remarks
 

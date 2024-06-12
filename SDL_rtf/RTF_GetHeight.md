@@ -5,25 +5,24 @@ Get the height of an RTF render area given a certain width.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 int RTF_GetHeight(RTF_Context *ctx, int width);
-
 ```
 
 ## Function Parameters
 
-|               |                                             |
-| ------------- | ------------------------------------------- |
-| **ctx**       | the RTF context to query.                   |
-| **width**     | the width, in pixels, to use for text flow. |
+|                              |           |                                             |
+| ---------------------------- | --------- | ------------------------------------------- |
+| [RTF_Context](RTF_Context) * | **ctx**   | the RTF context to query.                   |
+| int                          | **width** | the width, in pixels, to use for text flow. |
 
 ## Return Value
 
-Returns the height, in pixels, of an RTF render area.
+(int) Returns the height, in pixels, of an RTF render area.
 
 ## Remarks
 

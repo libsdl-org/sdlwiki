@@ -5,25 +5,24 @@ Set the text of an RTF context, with data loaded from a filename.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 int RTF_Load(RTF_Context *ctx, const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                      |
-| ------------ | ------------------------------------ |
-| **ctx**      | the RTF context to update.           |
-| **file**     | the file path to load RTF data from. |
+|                              |          |                                      |
+| ---------------------------- | -------- | ------------------------------------ |
+| [RTF_Context](RTF_Context) * | **ctx**  | the RTF context to update.           |
+| const char *                 | **file** | the file path to load RTF data from. |
 
 ## Return Value
 
-Returns 0 on success, -1 on failure.
+(int) Returns 0 on success, -1 on failure.
 
 ## Remarks
 

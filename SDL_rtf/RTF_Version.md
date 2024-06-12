@@ -5,18 +5,17 @@ This function gets the version of the dynamically linked SDL_rtf library.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 int RTF_Version(void);
-
 ```
 
 ## Return Value
 
-Returns SDL_rtf version
+(int) Returns SDL_rtf version
 
 ## Version
 

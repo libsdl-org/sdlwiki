@@ -5,22 +5,21 @@ Render the RTF document to a rectangle in an SDL_Renderer.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 void RTF_Render(RTF_Context *ctx, SDL_Rect *rect, int yOffset);
-
 ```
 
 ## Function Parameters
 
-|                 |                                           |
-| --------------- | ----------------------------------------- |
-| **ctx**         | the RTF context render to.                |
-| **rect**        | the area to render text into.             |
-| **yOffset**     | offset up (and clip) by this many pixels. |
+|                              |             |                                           |
+| ---------------------------- | ----------- | ----------------------------------------- |
+| [RTF_Context](RTF_Context) * | **ctx**     | the RTF context render to.                |
+| SDL_Rect *                   | **rect**    | the area to render text into.             |
+| int                          | **yOffset** | offset up (and clip) by this many pixels. |
 
 ## Remarks
 

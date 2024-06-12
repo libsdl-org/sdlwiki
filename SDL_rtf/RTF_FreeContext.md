@@ -5,20 +5,19 @@ Free an RTF display context.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 void RTF_FreeContext(RTF_Context *ctx);
-
 ```
 
 ## Function Parameters
 
-|             |                          |
-| ----------- | ------------------------ |
-| **ctx**     | the RTF context to free. |
+|                              |         |                          |
+| ---------------------------- | ------- | ------------------------ |
+| [RTF_Context](RTF_Context) * | **ctx** | the RTF context to free. |
 
 ## Remarks
 

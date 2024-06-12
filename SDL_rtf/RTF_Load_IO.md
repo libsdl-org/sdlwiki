@@ -5,26 +5,25 @@ Set the text of an RTF context, with data loaded from an SDL_IOStream.
 
 ## Header File
 
-Defined in SDL_rtf.h
+Defined in [<SDL3_rtf/SDL_rtf.h>](https://github.com/libsdl-org/SDL_rtf/blob/main/include/SDL3_rtf/SDL_rtf.h)
 
 ## Syntax
 
 ```c
 int RTF_Load_IO(RTF_Context *ctx, SDL_IOStream *src, int closeio);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **ctx**         | the RTF context to update.                        |
-| **src**         | the SDL_IOStream to load RTF data from.           |
-| **closeio**     | non-zero to close/free `src`, zero to leave open. |
+|                              |             |                                                   |
+| ---------------------------- | ----------- | ------------------------------------------------- |
+| [RTF_Context](RTF_Context) * | **ctx**     | the RTF context to update.                        |
+| SDL_IOStream *               | **src**     | the SDL_IOStream to load RTF data from.           |
+| int                          | **closeio** | non-zero to close/free `src`, zero to leave open. |
 
 ## Return Value
 
-Returns 0 on success, -1 on failure.
+(int) Returns 0 on success, -1 on failure.
 
 ## Remarks
 
