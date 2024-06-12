@@ -5,20 +5,19 @@ Set a callback that runs when a music object has stopped playing.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
-void Mix_HookMusicFinished(void (SDLCALL *music_finished)(void));
-
+void Mix_HookMusicFinished(Mix_MusicFinishedCallback music_finished);
 ```
 
 ## Function Parameters
 
-|                        |                                                                 |
-| ---------------------- | --------------------------------------------------------------- |
-| **music_finished**     | the callback function to become the new notification mechanism. |
+|                                                        |                    |                                                                 |
+| ------------------------------------------------------ | ------------------ | --------------------------------------------------------------- |
+| [Mix_MusicFinishedCallback](Mix_MusicFinishedCallback) | **music_finished** | the callback function to become the new notification mechanism. |
 
 ## Remarks
 

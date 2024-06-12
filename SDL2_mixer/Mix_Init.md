@@ -5,24 +5,23 @@ Initialize SDL_mixer.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_Init(int flags);
-
 ```
 
 ## Function Parameters
 
-|               |                                      |
-| ------------- | ------------------------------------ |
-| **flags**     | initialization flags, OR'd together. |
+|     |           |                                      |
+| --- | --------- | ------------------------------------ |
+| int | **flags** | initialization flags, OR'd together. |
 
 ## Return Value
 
-Returns all currently initialized flags.
+(int) Returns all currently initialized flags.
 
 ## Remarks
 

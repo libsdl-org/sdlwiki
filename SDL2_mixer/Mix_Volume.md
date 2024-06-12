@@ -5,27 +5,26 @@ Set the volume for a specific channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_Volume(int channel, int volume);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                 |
-| --------------- | ------------------------------------------------------------------------------- |
-| **channel**     | the channel on set/query the volume on, or -1 for all channels.                 |
-| **volume**      | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+|     |             |                                                                                 |
+| --- | ----------- | ------------------------------------------------------------------------------- |
+| int | **channel** | the channel on set/query the volume on, or -1 for all channels.                 |
+| int | **volume**  | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
 
 ## Return Value
 
-Returns the previous volume. If the specified volume is -1, this returns
-the current volume. If `channel` is -1, this returns the average of all
-channels.
+(int) Returns the previous volume. If the specified volume is -1, this
+returns the current volume. If `channel` is -1, this returns the average of
+all channels.
 
 ## Remarks
 

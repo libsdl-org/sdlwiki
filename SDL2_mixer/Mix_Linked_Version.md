@@ -5,18 +5,17 @@ Query the version of SDL_mixer that the program is linked against.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const SDL_version * Mix_Linked_Version(void);
-
 ```
 
 ## Return Value
 
-Returns a pointer to the version information.
+(const SDL_version *) Returns a pointer to the version information.
 
 ## Remarks
 

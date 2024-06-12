@@ -5,18 +5,17 @@ Get SoundFonts paths to use by supported MIDI backends.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char* Mix_GetSoundFonts(void);
-
 ```
 
 ## Return Value
 
-Returns semicolon-separated list of sound font paths.
+(const char *) Returns semicolon-separated list of sound font paths.
 
 ## Remarks
 

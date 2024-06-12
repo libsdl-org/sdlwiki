@@ -5,24 +5,23 @@ Set SoundFonts paths to use by supported MIDI backends.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetSoundFonts(const char *paths);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                  |
-| ------------- | -------------------------------------------------------------------------------- |
-| **paths**     | Paths on the filesystem where SoundFonts are available, separated by semicolons. |
+|              |           |                                                                                  |
+| ------------ | --------- | -------------------------------------------------------------------------------- |
+| const char * | **paths** | Paths on the filesystem where SoundFonts are available, separated by semicolons. |
 
 ## Return Value
 
-Returns 1 if successful, 0 on error (out of memory).
+(int) Returns 1 if successful, 0 on error (out of memory).
 
 ## Remarks
 

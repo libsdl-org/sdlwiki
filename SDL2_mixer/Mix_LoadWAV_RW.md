@@ -5,25 +5,24 @@ Load a supported audio format into a chunk.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_LoadWAV_RW(SDL_RWops *src, int freesrc);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+|             |             |                                                                               |
+| ----------- | ----------- | ----------------------------------------------------------------------------- |
+| SDL_RWops * | **src**     | an SDL_RWops that data will be read from.                                     |
+| int         | **freesrc** | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
 
 ## Return Value
 
-Returns a new chunk, or NULL on error.
+([Mix_Chunk](Mix_Chunk) *) Returns a new chunk, or NULL on error.
 
 ## Remarks
 

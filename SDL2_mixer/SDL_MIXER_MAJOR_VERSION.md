@@ -5,7 +5,7 @@ Printable format: "%d.%d.%d", MAJOR, MINOR, PATCHLEVEL
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 

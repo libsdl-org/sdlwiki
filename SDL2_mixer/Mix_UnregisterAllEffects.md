@@ -5,7 +5,7 @@ Explicitly unregister all special effect functions.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
@@ -19,14 +19,15 @@ int Mix_UnregisterAllEffects(int channel);
 
 ## Function Parameters
 
-|                 |                                                                                    |
-| --------------- | ---------------------------------------------------------------------------------- |
-| **channel**     | the channel to unregister all effects on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+|     |             |                                                                                    |
+| --- | ----------- | ---------------------------------------------------------------------------------- |
+| int | **channel** | the channel to unregister all effects on, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
 
 ## Return Value
 
-Returns zero if error (no such channel), nonzero if all effects removed.
-Error messages can be retrieved from [Mix_GetError](Mix_GetError)().
+(int) Returns zero if error (no such channel), nonzero if all effects
+removed. Error messages can be retrieved from
+[Mix_GetError](Mix_GetError)().
 
 ## Remarks
 

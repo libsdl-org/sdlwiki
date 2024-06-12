@@ -5,25 +5,24 @@ Cause a channel to reverse its stereo.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetReverseStereo(int channel, int flip);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                        |
-| --------------- | ---------------------------------------------------------------------- |
-| **channel**     | The mixer channel to reverse, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **flip**        | non-zero to reverse stereo, zero to disable this effect.               |
+|     |             |                                                                        |
+| --- | ----------- | ---------------------------------------------------------------------- |
+| int | **channel** | The mixer channel to reverse, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| int | **flip**    | non-zero to reverse stereo, zero to disable this effect.               |
 
 ## Return Value
 
-Returns zero if error (no such channel or
+(int) Returns zero if error (no such channel or
 [Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if reversing
 effect is enabled. Note that an audio device in mono mode is a no-op, but
 this call will return successful in that case. Error messages can be

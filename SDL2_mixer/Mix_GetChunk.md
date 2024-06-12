@@ -5,24 +5,24 @@ Get the [Mix_Chunk](Mix_Chunk) currently associated with a mixer channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_GetChunk(int channel);
-
 ```
 
 ## Function Parameters
 
-|                 |                       |
-| --------------- | --------------------- |
-| **channel**     | the channel to query. |
+|     |             |                       |
+| --- | ----------- | --------------------- |
+| int | **channel** | the channel to query. |
 
 ## Return Value
 
-Returns the associated chunk, if any, or NULL if it's an invalid channel.
+([Mix_Chunk](Mix_Chunk) *) Returns the associated chunk, if any, or NULL if
+it's an invalid channel.
 
 ## Remarks
 

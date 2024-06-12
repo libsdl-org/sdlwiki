@@ -5,26 +5,25 @@ Set the position of a channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetPosition(int channel, Sint16 angle, Uint8 distance);
-
 ```
 
 ## Function Parameters
 
-|                  |                                                                         |
-| ---------------- | ----------------------------------------------------------------------- |
-| **channel**      | The mixer channel to position, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **angle**        | angle, in degrees. North is 0, and goes clockwise.                      |
-| **distance**     | distance; 0 is the listener, 255 is maxiumum distance away.             |
+|        |              |                                                                         |
+| ------ | ------------ | ----------------------------------------------------------------------- |
+| int    | **channel**  | The mixer channel to position, or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| Sint16 | **angle**    | angle, in degrees. North is 0, and goes clockwise.                      |
+| Uint8  | **distance** | distance; 0 is the listener, 255 is maxiumum distance away.             |
 
 ## Return Value
 
-Returns zero if error (no such channel or
+(int) Returns zero if error (no such channel or
 [Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if position
 effect is enabled. Error messages can be retrieved from
 [Mix_GetError](Mix_GetError)().

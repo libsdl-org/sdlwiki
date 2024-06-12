@@ -5,25 +5,24 @@ Change the expiration delay for a particular channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_ExpireChannel(int channel, int ticks);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                                     |
-| --------------- | ----------------------------------------------------------------------------------- |
-| **channel**     | the channel to change the expiration time on.                                       |
-| **ticks**       | number of milliseconds from now to let channel play before halting, -1 to not halt. |
+|     |             |                                                                                     |
+| --- | ----------- | ----------------------------------------------------------------------------------- |
+| int | **channel** | the channel to change the expiration time on.                                       |
+| int | **ticks**   | number of milliseconds from now to let channel play before halting, -1 to not halt. |
 
 ## Return Value
 
-Returns the number of channels that changed expirations.
+(int) Returns the number of channels that changed expirations.
 
 ## Remarks
 

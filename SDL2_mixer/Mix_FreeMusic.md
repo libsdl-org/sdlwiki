@@ -5,20 +5,19 @@ Free a music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 void Mix_FreeMusic(Mix_Music *music);
-
 ```
 
 ## Function Parameters
 
-|               |                           |
-| ------------- | ------------------------- |
-| **music**     | the music object to free. |
+|                          |           |                           |
+| ------------------------ | --------- | ------------------------- |
+| [Mix_Music](Mix_Music) * | **music** | the music object to free. |
 
 ## Remarks
 

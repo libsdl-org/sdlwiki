@@ -5,24 +5,23 @@ Jump to a given order in mod music.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_ModMusicJumpToOrder(int order);
-
 ```
 
 ## Function Parameters
 
-|               |       |
-| ------------- | ----- |
-| **order**     | order |
+|     |           |       |
+| --- | --------- | ----- |
+| int | **order** | order |
 
 ## Return Value
 
-Returns 0 if successful, or -1 if failed or isn't implemented.
+(int) Returns 0 if successful, or -1 if failed or isn't implemented.
 
 ## Remarks
 

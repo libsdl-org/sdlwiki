@@ -5,25 +5,24 @@ Halt a playing group of channels by arbitrary tag, after fading them out for a s
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeOutGroup(int tag, int ms);
-
 ```
 
 ## Function Parameters
 
-|             |                                                          |
-| ----------- | -------------------------------------------------------- |
-| **tag**     | an arbitrary value, assigned to channels, to search for. |
-| **ms**      | number of milliseconds to fade before halting the group. |
+|     |         |                                                          |
+| --- | ------- | -------------------------------------------------------- |
+| int | **tag** | an arbitrary value, assigned to channels, to search for. |
+| int | **ms**  | number of milliseconds to fade before halting the group. |
 
 ## Return Value
 
-Returns the number of channels that were scheduled for fading.
+(int) Returns the number of channels that were scheduled for fading.
 
 ## Remarks
 

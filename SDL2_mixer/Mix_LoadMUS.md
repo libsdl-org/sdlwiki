@@ -5,24 +5,23 @@ Load a supported audio format into a music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Music * Mix_LoadMUS(const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                            |
-| ------------ | ------------------------------------------ |
-| **file**     | a file path from where to load music data. |
+|              |          |                                            |
+| ------------ | -------- | ------------------------------------------ |
+| const char * | **file** | a file path from where to load music data. |
 
 ## Return Value
 
-Returns a new music object, or NULL on error.
+([Mix_Music](Mix_Music) *) Returns a new music object, or NULL on error.
 
 ## Remarks
 

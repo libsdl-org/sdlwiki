@@ -5,25 +5,24 @@ Set the master volume for all channels.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_MasterVolume(int volume);
-
 ```
 
 ## Function Parameters
 
-|                |                                                                                 |
-| -------------- | ------------------------------------------------------------------------------- |
-| **volume**     | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
+|     |            |                                                                                 |
+| --- | ---------- | ------------------------------------------------------------------------------- |
+| int | **volume** | the new volume, between 0 and [MIX_MAX_VOLUME](MIX_MAX_VOLUME), or -1 to query. |
 
 ## Return Value
 
-Returns the previous volume. If the specified volume is -1, this returns
-the current volume.
+(int) Returns the previous volume. If the specified volume is -1, this
+returns the current volume.
 
 ## Remarks
 

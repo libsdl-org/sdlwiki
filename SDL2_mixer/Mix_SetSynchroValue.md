@@ -5,24 +5,23 @@ This function does nothing, do not use.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetSynchroValue(int value);
-
 ```
 
 ## Function Parameters
 
-|               |                            |
-| ------------- | -------------------------- |
-| **value**     | this parameter is ignored. |
+|     |           |                            |
+| --- | --------- | -------------------------- |
+| int | **value** | this parameter is ignored. |
 
 ## Return Value
 
-Returns -1.
+(int) Returns -1.
 
 ## Remarks
 

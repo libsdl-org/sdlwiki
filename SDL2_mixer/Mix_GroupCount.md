@@ -5,24 +5,23 @@ Returns the number of channels in a group.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GroupCount(int tag);
-
 ```
 
 ## Function Parameters
 
-|             |                                                          |
-| ----------- | -------------------------------------------------------- |
-| **tag**     | an arbitrary value, assigned to channels, to search for. |
+|     |         |                                                          |
+| --- | ------- | -------------------------------------------------------- |
+| int | **tag** | an arbitrary value, assigned to channels, to search for. |
 
 ## Return Value
 
-Returns the number of channels assigned the specified tag.
+(int) Returns the number of channels assigned the specified tag.
 
 ## Remarks
 

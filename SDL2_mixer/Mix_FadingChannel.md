@@ -5,24 +5,24 @@ Query the fading status of a channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Fading Mix_FadingChannel(int which);
-
 ```
 
 ## Function Parameters
 
-|               |                       |
-| ------------- | --------------------- |
-| **which**     | the channel to query. |
+|     |           |                       |
+| --- | --------- | --------------------- |
+| int | **which** | the channel to query. |
 
 ## Return Value
 
-Returns the current fading status of the channel.
+([Mix_Fading](Mix_Fading)) Returns the current fading status of the
+channel.
 
 ## Remarks
 

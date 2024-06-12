@@ -5,24 +5,23 @@ Get the title for a music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char* Mix_GetMusicTitleTag(const Mix_Music *music);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                     |
-| ------------- | ------------------------------------------------------------------- |
-| **music**     | the music object to query, or NULL for the currently-playing music. |
+|                                |           |                                                                     |
+| ------------------------------ | --------- | ------------------------------------------------------------------- |
+| const [Mix_Music](Mix_Music) * | **music** | the music object to query, or NULL for the currently-playing music. |
 
 ## Return Value
 
-Returns the music's title if available, or "".
+(const char *) Returns the music's title if available, or "".
 
 ## Remarks
 

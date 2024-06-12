@@ -5,12 +5,12 @@ Set a callback that runs when a channel has finished playing.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
-void Mix_ChannelFinished(void (SDLCALL *channel_finished)(int channel));
+void Mix_ChannelFinished(Mix_ChannelFinishedCallback channel_finished);
 
 
 
@@ -19,9 +19,9 @@ void Mix_ChannelFinished(void (SDLCALL *channel_finished)(int channel));
 
 ## Function Parameters
 
-|                          |                                                                 |
-| ------------------------ | --------------------------------------------------------------- |
-| **channel_finished**     | the callback function to become the new notification mechanism. |
+|                                                            |                      |                                                                 |
+| ---------------------------------------------------------- | -------------------- | --------------------------------------------------------------- |
+| [Mix_ChannelFinishedCallback](Mix_ChannelFinishedCallback) | **channel_finished** | the callback function to become the new notification mechanism. |
 
 ## Remarks
 

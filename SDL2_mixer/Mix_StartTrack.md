@@ -5,25 +5,24 @@ Start a track in music object.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_StartTrack(Mix_Music *music, int track);
-
 ```
 
 ## Function Parameters
 
-|               |                                                 |
-| ------------- | ----------------------------------------------- |
-| **music**     | the music object.                               |
-| **track**     | the track number to play. 0 is the first track. |
+|                          |           |                                                 |
+| ------------------------ | --------- | ----------------------------------------------- |
+| [Mix_Music](Mix_Music) * | **music** | the music object.                               |
+| int                      | **track** | the track number to play. 0 is the first track. |
 
 ## Return Value
 
-Returns 0 if successful, or -1 if failed or isn't implemented.
+(int) Returns 0 if successful, or -1 if failed or isn't implemented.
 
 ## Remarks
 

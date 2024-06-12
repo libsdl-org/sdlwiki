@@ -5,18 +5,17 @@ Get full path of a previously-specified Timidity config file.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char* Mix_GetTimidityCfg(void);
-
 ```
 
 ## Return Value
 
-Returns the previously-specified path, or NULL if not set.
+(const char *) Returns the previously-specified path, or NULL if not set.
 
 ## Remarks
 

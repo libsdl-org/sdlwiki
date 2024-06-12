@@ -5,24 +5,23 @@ Get a chunk decoder's name.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 const char * Mix_GetChunkDecoder(int index);
-
 ```
 
 ## Function Parameters
 
-|               |                             |
-| ------------- | --------------------------- |
-| **index**     | index of the chunk decoder. |
+|     |           |                             |
+| --- | --------- | --------------------------- |
+| int | **index** | index of the chunk decoder. |
 
 ## Return Value
 
-Returns the chunk decoder's name.
+(const char *) Returns the chunk decoder's name.
 
 ## Remarks
 

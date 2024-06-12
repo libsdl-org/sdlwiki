@@ -5,18 +5,17 @@ Halt playing of the music stream.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_HaltMusic(void);
-
 ```
 
 ## Return Value
 
-Returns zero, regardless of whether any music was halted.
+(int) Returns zero, regardless of whether any music was halted.
 
 ## Remarks
 

@@ -5,18 +5,17 @@ Get a pointer to the user data for the current music hook.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 void * Mix_GetMusicHookData(void);
-
 ```
 
 ## Return Value
 
-Returns pointer to the user data previously passed to
+(void *) Returns pointer to the user data previously passed to
 [Mix_HookMusic](Mix_HookMusic).
 
 ## Remarks

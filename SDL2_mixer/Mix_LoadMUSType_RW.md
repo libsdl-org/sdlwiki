@@ -5,26 +5,25 @@ Load an audio format into a music object, assuming a specific format.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Music * Mix_LoadMUSType_RW(SDL_RWops *src, Mix_MusicType type, int freesrc);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| **src**         | an SDL_RWops that data will be read from.                                     |
-| **type**        | the type of audio data provided by `src`.                                     |
-| **freesrc**     | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
+|                                |             |                                                                               |
+| ------------------------------ | ----------- | ----------------------------------------------------------------------------- |
+| SDL_RWops *                    | **src**     | an SDL_RWops that data will be read from.                                     |
+| [Mix_MusicType](Mix_MusicType) | **type**    | the type of audio data provided by `src`.                                     |
+| int                            | **freesrc** | non-zero to close/free the SDL_RWops before returning, zero to leave it open. |
 
 ## Return Value
 
-Returns a new music object, or NULL on error.
+([Mix_Music](Mix_Music) *) Returns a new music object, or NULL on error.
 
 ## Remarks
 

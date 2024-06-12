@@ -5,26 +5,25 @@ Set the panning of a channel.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_SetPanning(int channel, Uint8 left, Uint8 right);
-
 ```
 
 ## Function Parameters
 
-|                 |                                                                   |
-| --------------- | ----------------------------------------------------------------- |
-| **channel**     | The mixer channel to pan or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
-| **left**        | Volume of stereo left channel, 0 is silence, 255 is full volume.  |
-| **right**       | Volume of stereo right channel, 0 is silence, 255 is full volume. |
+|       |             |                                                                   |
+| ----- | ----------- | ----------------------------------------------------------------- |
+| int   | **channel** | The mixer channel to pan or [MIX_CHANNEL_POST](MIX_CHANNEL_POST). |
+| Uint8 | **left**    | Volume of stereo left channel, 0 is silence, 255 is full volume.  |
+| Uint8 | **right**   | Volume of stereo right channel, 0 is silence, 255 is full volume. |
 
 ## Return Value
 
-Returns zero if error (no such channel or
+(int) Returns zero if error (no such channel or
 [Mix_RegisterEffect](Mix_RegisterEffect)() fails), nonzero if panning
 effect enabled.
 

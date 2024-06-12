@@ -5,24 +5,23 @@ Get a music object's duration, in seconds.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 double Mix_MusicDuration(Mix_Music *music);
-
 ```
 
 ## Function Parameters
 
-|               |                            |
-| ------------- | -------------------------- |
-| **music**     | the music object to query. |
+|                          |           |                            |
+| ------------------------ | --------- | -------------------------- |
+| [Mix_Music](Mix_Music) * | **music** | the music object to query. |
 
 ## Return Value
 
-Returns music duration in seconds, or -1.0 on error.
+(double) Returns music duration in seconds, or -1.0 on error.
 
 ## Remarks
 

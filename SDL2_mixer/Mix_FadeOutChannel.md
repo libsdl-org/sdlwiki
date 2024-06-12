@@ -5,25 +5,24 @@ Halt a channel after fading it out for a specified time.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeOutChannel(int which, int ms);
-
 ```
 
 ## Function Parameters
 
-|               |                                                            |
-| ------------- | ---------------------------------------------------------- |
-| **which**     | the channel to fade out.                                   |
-| **ms**        | number of milliseconds to fade before halting the channel. |
+|     |           |                                                            |
+| --- | --------- | ---------------------------------------------------------- |
+| int | **which** | the channel to fade out.                                   |
+| int | **ms**    | number of milliseconds to fade before halting the channel. |
 
 ## Return Value
 
-Returns the number of channels scheduled to fade.
+(int) Returns the number of channels scheduled to fade.
 
 ## Remarks
 

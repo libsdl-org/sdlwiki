@@ -5,18 +5,17 @@ Check the playing status of the music stream.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_PlayingMusic(void);
-
 ```
 
 ## Return Value
 
-Returns non-zero if music is playing, zero otherwise.
+(int) Returns non-zero if music is playing, zero otherwise.
 
 ## Remarks
 

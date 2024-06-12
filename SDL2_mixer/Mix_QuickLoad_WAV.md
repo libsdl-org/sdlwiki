@@ -5,24 +5,23 @@ Load a WAV file from memory as quickly as possible.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_QuickLoad_WAV(Uint8 *mem);
-
 ```
 
 ## Function Parameters
 
-|             |                                         |
-| ----------- | --------------------------------------- |
-| **mem**     | memory buffer containing of a WAV file. |
+|         |         |                                         |
+| ------- | ------- | --------------------------------------- |
+| Uint8 * | **mem** | memory buffer containing of a WAV file. |
 
 ## Return Value
 
-Returns a new chunk, or NULL on error.
+([Mix_Chunk](Mix_Chunk) *) Returns a new chunk, or NULL on error.
 
 ## Remarks
 

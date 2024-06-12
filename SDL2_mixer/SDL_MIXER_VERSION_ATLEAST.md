@@ -5,7 +5,7 @@ This macro will evaluate to true if compiled with SDL_mixer at least X.Y.Z.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 

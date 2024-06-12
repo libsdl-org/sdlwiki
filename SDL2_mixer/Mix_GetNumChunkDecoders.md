@@ -5,18 +5,17 @@ Get a list of chunk decoders that this build of SDL_mixer provides.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_GetNumChunkDecoders(void);
-
 ```
 
 ## Return Value
 
-Returns number of chunk decoders available.
+(int) Returns number of chunk decoders available.
 
 ## Remarks
 

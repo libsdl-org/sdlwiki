@@ -5,29 +5,28 @@ Open a specific audio device for playback.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_OpenAudioDevice(int frequency, Uint16 format, int channels, int chunksize, const char* device, int allowed_changes);
-
 ```
 
 ## Function Parameters
 
-|                         |                                                                              |
-| ----------------------- | ---------------------------------------------------------------------------- |
-| **frequency**           | the frequency to playback audio at (in Hz).                                  |
-| **format**              | audio format, one of SDL's AUDIO_* values.                                   |
-| **channels**            | number of channels (1 is mono, 2 is stereo, etc).                            |
-| **chunksize**           | audio buffer size in sample FRAMES (total samples divided by channel count). |
-| **device**              | the device name to open, or NULL to choose a reasonable default.             |
-| **allowed_changes**     | Allow change flags (see SDL_AUDIO_ALLOW_* flags)                             |
+|              |                     |                                                                              |
+| ------------ | ------------------- | ---------------------------------------------------------------------------- |
+| int          | **frequency**       | the frequency to playback audio at (in Hz).                                  |
+| Uint16       | **format**          | audio format, one of SDL's AUDIO_* values.                                   |
+| int          | **channels**        | number of channels (1 is mono, 2 is stereo, etc).                            |
+| int          | **chunksize**       | audio buffer size in sample FRAMES (total samples divided by channel count). |
+| const char * | **device**          | the device name to open, or NULL to choose a reasonable default.             |
+| int          | **allowed_changes** | Allow change flags (see SDL_AUDIO_ALLOW_* flags)                             |
 
 ## Return Value
 
-Returns 0 if successful, -1 on error.
+(int) Returns 0 if successful, -1 on error.
 
 ## Remarks
 

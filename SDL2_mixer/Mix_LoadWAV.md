@@ -5,24 +5,23 @@ Load a supported audio format into a chunk.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 Mix_Chunk * Mix_LoadWAV(const char *file);
-
 ```
 
 ## Function Parameters
 
-|              |                                        |
-| ------------ | -------------------------------------- |
-| **file**     | the filesystem path to load data from. |
+|              |          |                                        |
+| ------------ | -------- | -------------------------------------- |
+| const char * | **file** | the filesystem path to load data from. |
 
 ## Return Value
 
-Returns a new chunk, or NULL on error.
+([Mix_Chunk](Mix_Chunk) *) Returns a new chunk, or NULL on error.
 
 ## Remarks
 

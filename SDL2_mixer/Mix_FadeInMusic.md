@@ -5,26 +5,25 @@ Play a new music object, fading in the audio.
 
 ## Header File
 
-Defined in SDL_mixer.h
+Defined in [<SDL_mixer.h>](https://github.com/libsdl-org/SDL_mixer/blob/SDL2/include/SDL_mixer.h)
 
 ## Syntax
 
 ```c
 int Mix_FadeInMusic(Mix_Music *music, int loops, int ms);
-
 ```
 
 ## Function Parameters
 
-|               |                                                                                  |
-| ------------- | -------------------------------------------------------------------------------- |
-| **music**     | the new music object to play.                                                    |
-| **loops**     | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
-| **ms**        | the number of milliseconds to spend fading in.                                   |
+|                          |           |                                                                                  |
+| ------------------------ | --------- | -------------------------------------------------------------------------------- |
+| [Mix_Music](Mix_Music) * | **music** | the new music object to play.                                                    |
+| int                      | **loops** | the number of times the chunk should loop, -1 to loop (not actually) infinitely. |
+| int                      | **ms**    | the number of milliseconds to spend fading in.                                   |
 
 ## Return Value
 
-Returns zero on success, -1 on error.
+(int) Returns zero on success, -1 on error.
 
 ## Remarks
 
