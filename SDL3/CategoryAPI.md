@@ -1011,6 +1011,7 @@ probably want to look at the [API by category](APIByCategory) instead.
 - [SDL_HintCallback](SDL_HintCallback)
 - [SDL_HitTest](SDL_HitTest)
 - [SDL_InitFlags](SDL_InitFlags)
+- [SDL_iOSAnimationCallback](SDL_iOSAnimationCallback)
 - [SDL_JoystickGUID](SDL_JoystickGUID)
 - [SDL_JoystickID](SDL_JoystickID)
 - [SDL_KeyboardID](SDL_KeyboardID)
